@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementConfigurationSettingOccurrence
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d339ba6fce600c578ce4aa180a509ec685ca2216
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f75a0a4b55c0f9fbfe254952e353fa7a034a3af5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816916"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020387"
 ---
 # <a name="devicemanagementconfigurationsettingoccurrence-resource-type"></a>тип ресурса deviceManagementConfigurationSettingOccurrence
 
@@ -28,7 +28,7 @@ ms.locfileid: "58816916"
 |minDeviceOccurrence|Int32|Минимальный параметр времени можно установить на устройстве. Параметр MinDeviceOccurrence 0 означает необязательный|
 |maxDeviceOccurrence|Int32|Максимальный параметр времени можно установить на устройстве. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

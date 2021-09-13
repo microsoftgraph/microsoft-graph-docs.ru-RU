@@ -1,16 +1,16 @@
 ---
 title: 'orgContact: getMemberGroups'
 description: Верни все группы, в которые входит организационный контакт.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7fc8f9a62656cace7a4dd3e02182a8a2bc454464
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: a1b78e44243e11b503a65d327467d3e24f1c02c1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761651"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105022"
 ---
 # <a name="orgcontact-getmembergroups"></a>orgContact: getMemberGroups
 
@@ -18,19 +18,19 @@ ms.locfileid: "50761651"
 
 Верни все группы, в [которые входит](../resources/orgcontact.md) организационный контакт. Проверка промежуточная, в отличие от считывания свойства навигации **memberOf** (возвращаются только группы, для которых пользователь является непосредственным членом).
 
-Эта функция поддерживает Microsoft 365 и другие типы групп, которые предусмотрены в Azure Active Directory (Azure AD). Максимальное количество групп, которые может вернуть каждый запрос, — 2046. 
+Эта функция поддерживает Microsoft 365 и другие типы групп, Azure Active Directory Azure AD. Максимальное количество групп, которые может вернуть каждый запрос, — 2046. 
 
 >[!NOTE]
->Группы Microsoft 365 не могут содержать группы. Членство в группе Microsoft 365 всегда является прямым.
+>Microsoft 365 группы не могут содержать группы. Членство в группе Microsoft 365 всегда является прямым.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | OrgContact.Read.All и Group.Read.All, Directory.Read.All |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | OrgContact.Read.All и Group.Read.All, Directory.Read.All |
+|Делегированные (рабочая или учебная учетная запись) | OrgContact.Read.All и Group.Read.All, Directory.Read.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | OrgContact.Read.All и Group.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ POST /contacts/{id}/getMemberGroups
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean|Установите `false` для . Возвращение лишь защищенных групп поддерживается только для пользователей.|
+|securityEnabledOnly|Boolean|Установите значение `false`. Возвращение лишь защищенных групп поддерживается только для пользователей.|
 
 ## <a name="response"></a>Отклик
 

@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: checkMemberGroups'
 description: Проверка участия в указанном списке групп. Возвращает из списка те группы, в которых указанный субъект-служба состоит напрямую или транзитивно.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 81708212bc108f6902a26b8f3b2ca7c7bdd220d0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: fe9f1c354a2033a6953c4232dee85ebf2e43cb23
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053855"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053266"
 ---
 # <a name="serviceprincipal-checkmembergroups"></a>servicePrincipal: checkMemberGroups
 

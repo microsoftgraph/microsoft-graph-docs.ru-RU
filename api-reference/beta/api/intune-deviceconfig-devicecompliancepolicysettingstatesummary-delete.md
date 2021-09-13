@@ -2,15 +2,15 @@
 title: Удаление объекта deviceCompliancePolicySettingStateSummary
 description: Удаляет объект deviceCompliancePolicySettingStateSummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c05368711b30db6b2987bb534ee52e0662874903
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 84b36e23a7c8a770297c2c85aa61cf19299446c0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800956"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59031028"
 ---
 # <a name="delete-devicecompliancepolicysettingstatesummary"></a>Удаление объекта deviceCompliancePolicySettingStateSummary
 
@@ -29,7 +29,7 @@ ms.locfileid: "58800956"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ DELETE /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceComp
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

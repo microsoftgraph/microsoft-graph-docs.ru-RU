@@ -1,15 +1,15 @@
 ---
 title: Создание и отправка уведомления из службы приложений
 description: 'Настройте свою службу приложений для отправки уведомлений, ориентированных на пользователя, в разные клиенты через Microsoft Graph. '
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: notifications
 author: merzink
-ms.openlocfilehash: 11cceb203b654113e16c2b7a1e9f461ea1bbac27342b15626754ccd5c6ccdbd2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 24cac26e548d5f05724ee38559f6ef3bb4801277
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54174726"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062322"
 ---
 # <a name="create-and-send-a-notification-from-your-app-service"></a>Создание и отправка уведомления из службы приложений
 

@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Видео
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Ресурс Video — это единая структура, объединяющая элементы данных, связанные с видео.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: be2c9c87be0bb7d36b5af6f1feb6dc1c8a16365d1fe062b40e65b10e026e6884
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d46949bf48455fbb74a99891a80984bdedb460fb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230405"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134271"
 ---
 # <a name="video-resource-type"></a>Тип ресурса video
 

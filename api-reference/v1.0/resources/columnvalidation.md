@@ -2,15 +2,15 @@
 author: swapnil1993
 title: тип ресурса columnValidation
 description: Содержит данные, которые проверяют значения столбцов.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 5a92f15d4f8decf07f6791ee704f38f49d91fe00
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: a2c5b464b7f08fcd1de078b94b5ca1b039b6a6f9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696810"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062791"
 ---
 # <a name="columnvalidation-resource-type"></a>тип ресурса columnValidation
 
@@ -28,7 +28,7 @@ ms.locfileid: "58696810"
 В формулах SharePoint используется синтаксис, похожий на синтаксис формул в Excel.
 Дополнительные сведения см. [в примере распространенных формул в SharePoint списках.][SPFormulas]
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже приводится представление JSON ресурса **columnValidation.**
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.columnValidation"} -->

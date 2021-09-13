@@ -1,16 +1,16 @@
 ---
 title: тип ресурса serviceUserAgent
 description: Тип serviceUserAgent
-localization_priority: Normal
+ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: bb8880b130c763599d75c5542725f1bb0fe850bad532693a62ee73ff25ffbfb3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7421be4deaee6dad2d8b9177a43b09a27683b465
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243632"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113793"
 ---
 # <a name="serviceuseragent-resource-type"></a>тип ресурса serviceUserAgent
 
@@ -23,7 +23,7 @@ ms.locfileid: "54243632"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |applicationVersion|String|Определяет версию программного обеспечения приложения, используемого этой конечной точкой.|
-|headerValue|String|Значение заглавной точки пользователя-агента, сообщаемого этой конечной точкой.|
+|headerValue|Строка|Значение заглавной точки пользователя-агента, сообщаемого этой конечной точкой.|
 |role|microsoft.graph.callRecords.serviceRole|Определяет роль службы, используемой этой конечной точкой. Возможные значения: `unknown` `customBot` , , , `skypeForBusinessMicrosoftTeamsGateway` `skypeForBusinessAudioVideoMcu` `skypeForBusinessApplicationSharingMcu` `skypeForBusinessCallQueues` `skypeForBusinessAutoAttendant` `mediationServer` `mediationServerCloudConnectorEdition` `exchangeUnifiedMessagingService` `mediaController` `conferencingAnnouncementService` `conferencingAttendant` `audioTeleconferencerController` `skypeForBusinessUnifiedCommunicationApplicationPlatform` `responseGroupServiceAnnouncementService` `gateway` `skypeTranslator` `skypeForBusinessAttendant` `responseGroupService` `voicemail` `unknownFutureValue` .|
 
 ## <a name="json-representation"></a>Представление JSON

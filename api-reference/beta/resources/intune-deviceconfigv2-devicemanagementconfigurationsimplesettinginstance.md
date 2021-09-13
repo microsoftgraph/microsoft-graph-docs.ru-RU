@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementConfigurationSimpleSettingInstance
 description: Простой экземпляр параметра
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a1a963bc7696062f8cdcc8bc351e78735ac1ff15
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 579e500b099835f006e7b12876b22c1be56a5908
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817399"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030363"
 ---
 # <a name="devicemanagementconfigurationsimplesettinginstance-resource-type"></a>тип ресурса deviceManagementConfigurationSimpleSettingInstance
 

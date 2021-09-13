@@ -2,15 +2,15 @@
 title: Список scopedMembers для роли каталога
 description: Извлечение списка объектов scopedRoleMembership для роли каталога.
 author: abhijeetsinha
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a31144a19d465584f3a26d3772f63dff97e76823
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 91d3db549bb9a629b1e9819d544522cd4d1556ae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208077"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046290"
 ---
 # <a name="list-scopedmembers-for-a-directory-role"></a>Список scopedMembers для роли каталога
 
@@ -24,7 +24,7 @@ ms.locfileid: "53208077"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

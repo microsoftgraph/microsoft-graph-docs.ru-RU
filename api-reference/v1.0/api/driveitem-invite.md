@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Отправка приглашения для доступа к элементу
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 description: Отправляет приглашение общего доступа для driveItem.
 doc_type: apiPageType
-ms.openlocfilehash: bbd7d4226cd4c289019dd5bcc6abd863f2be7688
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 05a1502363244b0ee438a4a1afb05e967ad7890d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473849"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026659"
 ---
 # <a name="send-a-sharing-invitation"></a>Отправка приглашения к совместному использованию
 
@@ -68,8 +68,8 @@ POST /users/{userId}/drive/items/{itemId}/invite
 | requireSignIn    | Boolean                        | Указывает, должен ли получатель приглашения выполнить вход, чтобы просмотреть элемент, к которому предоставлен общий доступ.
 | sendInvitation   | Boolean                        | Если указано значение true, получателю отправляется [ссылка совместного доступа][]. В противном случае разрешение предоставляется напрямую без отправки уведомления.
 | roles            | Collection(String)             | Указывает роли, которые необходимо предоставить получателям приглашения к совместному использованию.
-| expirationDateTime | DateTimeOffset                       | Укажите dateTime, по истечении которого истекает срок действия разрешения. Доступно на персональных учетных записях OneDrive для бизнеса, SharePoint и Премиум OneDrive.
-| password           | Строка                         | Пароль, установленный на приглашении создателем. Необязательный и только OneDrive Personal.
+| expirationDateTime | DateTimeOffset                       | Укажите dateTime, по истечении которого истекает срок действия разрешения. Доступно на OneDrive для бизнеса, SharePoint и премиум-OneDrive учетных записей.
+| password           | Строка                         | Пароль, установленный на приглашении создателем. Необязательный и OneDrive только личный.
 
 ## <a name="example"></a>Пример
 
@@ -160,7 +160,7 @@ Content-type: application/json
 
 ## <a name="error-responses"></a>Ответы с ошибками
 
-Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
+Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Отклики ошибок][error-response].
 
 
 [driveRecipient]: ../resources/driverecipient.md

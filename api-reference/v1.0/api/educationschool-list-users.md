@@ -2,15 +2,15 @@
 title: Список пользователей образовательных учреждений
 description: Получение списка пользователей в учебном заведении.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d37bec88be07f9dba3e91d44558508ce82004c74
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 394ec23de3bb70b295a8542bea3f052cc7eb9921
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232006"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046213"
 ---
 # <a name="list-users-of-an-educationschool"></a>Список пользователей образовательных учреждений
 
@@ -26,7 +26,7 @@ ms.locfileid: "52232006"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Приложение                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+| Для приложений                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/v1.0/education/schools/{school-id}/users
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

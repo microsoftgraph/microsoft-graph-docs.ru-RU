@@ -2,15 +2,15 @@
 title: Создание пользователя
 description: Создание объекта user.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c58c3893a0ba41efcc9252a5ff9ad5934279ec9e
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 7868e3d2c1f1b868ae1cf46dc2c221ac9a40ac85
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258844"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079339"
 ---
 # <a name="create-user"></a>Создание пользователя
 
@@ -27,7 +27,7 @@ ms.locfileid: "58258844"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

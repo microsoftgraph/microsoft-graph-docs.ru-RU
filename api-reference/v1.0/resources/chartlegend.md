@@ -2,15 +2,15 @@
 title: Тип ресурса ChartLegend
 description: Представляет легенду в диаграмме.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: dbb95979e30143bf1c078edebf85c1e70c06e95e7c9818ec051602d394a48331
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9b79f437e2c739c675533e9178ddcbb3da21b922
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121300"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049678"
 ---
 # <a name="chartlegend-resource-type"></a>Тип ресурса ChartLegend
 
@@ -33,12 +33,12 @@ ms.locfileid: "54121300"
 |position|string|Представляет расположение легенды на диаграмме. Допустимые значения: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.|
 |visible|boolean|Логическое значение, представляющее видимость объекта ChartLegend.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |format|[WorkbookChartLegendFormat](chartlegendformat.md)|Представляет форматирование легенды диаграммы, включая заливку и шрифт. Только для чтения.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

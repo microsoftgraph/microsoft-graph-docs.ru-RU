@@ -2,15 +2,15 @@
 title: Перечисление объектов deviceAndAppManagementRoleAssignment
 description: Список свойств и связей объектов deviceAndAppManagementRoleAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7646ea4c7e344e46eb6c7bb123f3538627bbfe31e57ab6ce1b4c20baa3163db6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e04490b7fcb7cdd6d43876cdde7e7337cf4aebe5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245536"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019897"
 ---
 # <a name="list-deviceandappmanagementroleassignments"></a>Перечисление объектов deviceAndAppManagementRoleAssignment
 
@@ -27,7 +27,7 @@ ms.locfileid: "54245536"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
+|Для приложений|DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +41,7 @@ GET /deviceManagement/roleAssignments
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

@@ -2,15 +2,15 @@
 title: Get riskDetection
 description: Ознакомьтесь с свойствами и отношениями объекта riskDetection.
 author: cloudhandler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 86dacb17a3f123daa5f60c249d02aa0725a2421e63d1a9bd9aa33af977ebe672
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1acc4b34144d77f5713b9d7c34812b8e98e487b3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147226"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067747"
 ---
 # <a name="get-riskdetection"></a>Get riskDetection
 Пространство имен: microsoft.graph
@@ -27,7 +27,7 @@ ms.locfileid: "54147226"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskEvent.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | IdentityRiskEvent.Read.All |
+|Для приложений | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

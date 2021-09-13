@@ -1,22 +1,22 @@
 ---
-title: Удаление Воркфорцеинтегратион
-description: Удаление экземпляра объекта Воркфорцеинтегратион.
-localization_priority: Normal
+title: Удаление рабочей силыИнтеграция
+description: Удаление экземпляра рабочей силыИнтеграция.
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6d13f2ba5a67d56547daa05e3595d155a260fbb2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0294009c5b4b573968c0284430219b3fc29134ce
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967746"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029173"
 ---
-# <a name="delete-workforceintegration"></a>Удаление Воркфорцеинтегратион
+# <a name="delete-workforceintegration"></a>Удаление рабочей силыИнтеграция
 
 Пространство имен: microsoft.graph
 
-Удаление экземпляра объекта [воркфорцеинтегратион](../resources/workforceintegration.md).
+Удаление экземпляра [рабочей силыИнтеграция](../resources/workforceintegration.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,11 +24,11 @@ ms.locfileid: "47967746"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Воркфорцеинтегратион. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | WorkforceIntegration.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ DELETE /teamwork/workforceIntegrations/{workforceIntegrationId}
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

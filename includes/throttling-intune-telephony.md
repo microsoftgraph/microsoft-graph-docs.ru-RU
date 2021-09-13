@@ -1,14 +1,14 @@
 ---
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: 4388d8aa88d21c49baca718cd18eaf6198b41db8fbc3c49023b59024b96c042f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1ce097f98f3ec5dbb5e04ceed8328f5733b6c132
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196806"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035880"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
@@ -19,5 +19,8 @@ ms.locfileid: "54196806"
 | POST, PUT, DELETE, PATCH | 200 запросов за 20 секунд | 100 запросов за 20 секунд |
 | Любой | 2000 запросов за 20 секунд | 1000 запросов за 20 секунд |
 
-Указанные выше ограничения действуют для следующих ресурсов:  
-embeddedSIMActivationCodePool, embeddedSIMActivationCodePoolAssignment, embeddedSIMDeviceState.
+Указанные выше ограничения действуют для следующих ресурсов:
+
+| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                            |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> [embeddedSIMActivationCodePool](/graph/api/resources/embeddedsimactivationcodepool)  <li> [embeddedSIMActivationCodePoolAssignment](/graph/api/resources/embeddedsimactivationcodepoolassignment) <li> [embeddedSIMDeviceState](/graph/api/resources/embeddedsimdevicestate) </ul> |

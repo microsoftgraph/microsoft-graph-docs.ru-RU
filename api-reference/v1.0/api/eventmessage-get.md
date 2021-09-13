@@ -1,16 +1,16 @@
 ---
 title: Получение объекта eventMessage
 description: расширйте параметр **свойства навигации** событий, чтобы получить связанное событие в календаре участника.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4dc549c39c5113e972485fab647b5c4363b6ca14
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3f2545a287b2385573cf7f61791ecbb4f518fcfc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048745"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080123"
 ---
 # <a name="get-eventmessage"></a>Получение объекта eventMessage
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_lAAA=
 ---
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "get_eventmessage",

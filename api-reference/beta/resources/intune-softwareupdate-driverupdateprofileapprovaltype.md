@@ -2,15 +2,15 @@
 title: тип enum driverUpdateProfileApprovalType
 description: Тип переумыка для представления типа утверждения профиля обновления драйвера.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: dba6d0f21ebb8f86c00b0cc55181ee27d4cf0938
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 34bd584a82f24ea8a5a1930dda5bf42b92a5c423
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821650"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029929"
 ---
 # <a name="driverupdateprofileapprovaltype-enum-type"></a>тип enum driverUpdateProfileApprovalType
 

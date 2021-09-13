@@ -1,16 +1,16 @@
 ---
 title: Получение фотографии
 description: Получение указанного объекта profilePhoto или его метаданных (свойств profilePhoto).
-localization_priority: Priority
+ms.localizationpriority: high
 author: kevinbellinger
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: cb97f04a311956337403b4900abda00c9acf9fbcc9c6083511616ec39056989a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 855d8f72dcbc1804a07dd84ae3788693131ed8ca
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235879"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104805"
 ---
 # <a name="get-photo"></a>Получение фотографии
 
@@ -30,11 +30,29 @@ ms.locfileid: "54235879"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
+### <a name="to-retrieve-the-profile-photo-of-a-user"></a>Для получения фотографии профиля пользователя
+
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Для ресурса **user**:<br/>User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All<br /><br />Для ресурса **group**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Для ресурса **contact**:<br />Contacts.Read, Contacts.ReadWrite |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-|Для приложения                        | Для ресурса **user**:<br/>User.Read.All, User.ReadWrite.All<br /><br />Для ресурса **group**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Для ресурса **contact**:<br />Contacts.Read, Contacts.ReadWrite |
+|Делегированные (рабочая или учебная учетная запись)      |   User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All           |
+|Делегированные (личная учетная запись Майкрософт)      |   Не поддерживается.            |
+|Для приложений      |    User.Read.All, User.ReadWrite.All           |
+
+### <a name="to-retrieve-the-profile-photo-of-a-group"></a>Для получения фотографии профиля группы
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись)      |   Group.Read.All, Group.ReadWrite.All           |
+|Делегированные (личная учетная запись Майкрософт)      |   Не поддерживается.            |
+|Для приложений      |    Group.Read.All, Group.ReadWrite.All           |
+
+### <a name="to-retrieve-the-profile-photo-of-a-contact"></a>Для получения фотографии профиля контакта
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись)      |   Contacts.Read, Contacts.ReadWrite           |
+|Делегированные (личная учетная запись Майкрософт)      |   Не поддерживается.            |
+|Для приложений      |    Contacts.Read, Contacts.ReadWrite           |
 
 > **Примечание.** В настоящее время существует [известная проблема](/graph/known-issues#groups) с доступом к фотографиям группы с помощью разрешений для приложений.
 

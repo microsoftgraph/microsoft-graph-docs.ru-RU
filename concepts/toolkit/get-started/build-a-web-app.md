@@ -1,14 +1,14 @@
 ---
 title: Создание веб-приложения с помощью Microsoft Graph Toolkit
 description: Знакомство с разработкой веб-приложений с помощью Microsoft Graph Toolkit
-localization_priority: Normal
+ms.localizationpriority: medium
 author: elisenyang
-ms.openlocfilehash: 9890a042ce08533ce17c014a0815f1f63dbfdd46739f4f4af284bf87706124d4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 22f5e81f8c382694389ddcffbe5e0f8a77fa55a9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54236859"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103839"
 ---
 # <a name="build-a-web-application-with-the-microsoft-graph-toolkit"></a>Создание веб-приложения с помощью Microsoft Graph Toolkit
 
@@ -16,7 +16,7 @@ ms.locfileid: "54236859"
 
 Начало работы с Microsoft Graph Toolkit включает:
 1. Добавление Microsoft Graph Toolkit в проект.
-2. Инициализация поставщика MSAL 2.0.
+2. Инициализация поставщика MSAL2.
 3. Добавление компонентов.
 4. Тестирование приложения.
 
@@ -38,11 +38,11 @@ npm install @microsoft/mgt
 
 ---
 
-## <a name="initialize-the-msal-20-provider"></a>Инициализация поставщика MSAL 2.0
-Поставщики Microsoft Graph Toolkit обеспечивают проверку подлинности и доступ к Microsoft Graph для компонентов. Дополнительные сведения см. в статье [Использование поставщиков](../providers/providers.md). Поставщик [MSAL 2.0](../providers/msal2.md) использует msal-browser для регистрации пользователей и приобретения маркеров. Этот поставщик можно инициализировать в HTML или JavaScript.
+## <a name="initialize-the-msal2-provider"></a>Инициализация поставщика MSAL2
+Поставщики Microsoft Graph Toolkit обеспечивают проверку подлинности и доступ к Microsoft Graph для компонентов. Дополнительные сведения см. в статье [Использование поставщиков](../providers/providers.md). Поставщик [MSAL2 использует](../providers/msal2.md) msal-browser для регистрации пользователей и приобретения маркеров. Этот поставщик можно инициализировать в HTML или JavaScript.
 
-> **Примечание.** Если вы в настоящее время используете поставщика MSAL и хотите обновить до поставщика MSAL 2.0, выполните указанные [здесь действия.](../providers/msal2.md#migrating-from-msal-provider-to-msal-2-provider)
-Если вы хотите использовать собственную проверку подлинности, используйте поставщика прокси-серверов на месте поставщика MSAL 2.0. [](../providers/proxy.md)
+> **Примечание.** Если вы в настоящее время используете поставщика MSAL и хотите обновить ее до поставщика MSAL2, выполните указанные [здесь действия.](../providers/msal2.md#migrating-from-msal-provider-to-msal2-provider)
+Если вы хотите использовать собственную проверку подлинности, используйте поставщика прокси-серверов [на](../providers/proxy.md) месте поставщика MSAL2.
 
 Чтобы инициализировать поставщика, можно использовать HTML-код или JavaScript. 
 
@@ -65,16 +65,16 @@ Providers.globalProvider = new Msal2Provider({
 
 ---
 
-Идентификатор клиента — это единственное свойство, которое требуется для инициализации поставщика, но вы можете настроить дополнительные параметры. Полный список см. в [списке Msal 2.0 Provider](../providers/msal2.md).
+Идентификатор клиента — это единственное свойство, которое требуется для инициализации поставщика, но вы можете настроить дополнительные параметры. Полный список см. в [списке MSAL2 Provider.](../providers/msal2.md)
 
 ### <a name="creating-an-appclient-id"></a>Создание идентификатора клиента/приложения
 Чтобы получить идентификатор клиента, вам нужно [зарегистрировать свое приложение](./add-aad-app-registration.md) в Azure AD.
 
 ## <a name="add-components"></a>Добавление компонентов
-После инициализации поставщика MSAL 2.0 можно начать использовать любой из набор средств компонентов.
+После инициализации поставщика MSAL2 можно начать использовать любой из набор средств компонентов.
 
 # <a name="html"></a>[HTML](#tab/HTML)
-Ниже приведен рабочий пример с использованием загрузчика Microsoft Graph Toolkit, поставщика MSAL, инициализированного в HTML, и компонента входа в систему:
+Ниже приводится полный рабочий пример с использованием mgt-loader, поставщика MSAL2, инициализированного в HTML-коде, и компонента Login:
 
 ```html
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
@@ -82,7 +82,7 @@ Providers.globalProvider = new Msal2Provider({
 <mgt-login></mgt-login>
 ```
 
-Это пример с использованием модулей ES6, поставщика MSAL 2.0, инициализированного в HTML-коде, и компонента Login:
+Это пример с помощью модулей ES6, поставщика MSAL2, инициализированного в HTML-коде, и компонента Login:
 
 ```html
 <script type="module" src="node_modules/@microsoft/mgt/dist/es6/index.js"></script>
@@ -91,7 +91,7 @@ Providers.globalProvider = new Msal2Provider({
 ```
 
 # <a name="javascript"></a>[JavaScript](#tab/JavaScript)
-Это пример с помощью модулей ES6, поставщика MSAL 2.0, инициализированного в JavaScript, и компонента Login:
+Это пример с помощью модулей ES6, поставщика MSAL2, инициализированного в JavaScript, и компонента Login:
 
 ```javascript
 import { Providers, Msal2Provider } from '@microsoft/mgt';

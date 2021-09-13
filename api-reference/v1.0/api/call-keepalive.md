@@ -2,15 +2,15 @@
 title: 'call: keepAlive'
 description: Сделайте запрос на этот API каждые 15-45 минут, чтобы убедиться, что текущий вызов остается в живых.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a2561e33810264587951ae3b20a19507bf6e6abf
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: a26b0b6cf2f9a3da8c19175bfbfffffd3276247b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788124"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053765"
 ---
 # <a name="call-keepalive"></a>call: keepAlive
 
@@ -45,7 +45,7 @@ POST /communications/calls/{id}/keepAlive
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -2,15 +2,15 @@
 title: Delete mobileAppContent
 description: Удаляет объект mobileAppContent.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: db25bdb10cb8fca08c0009381af01117e6e7f078fd2d4309aece5b3a26e6ed4f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7f61e130bc95ceacd0b7c6f532ab418257cc8115
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54234304"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079983"
 ---
 # <a name="delete-mobileappcontent"></a>Delete mobileAppContent
 
@@ -27,7 +27,7 @@ ms.locfileid: "54234304"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobi
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

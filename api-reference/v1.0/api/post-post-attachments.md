@@ -1,24 +1,24 @@
 ---
 title: Добавление вложения
-description: Добавление вложения при создании записи группы.
+description: Добавление вложения при создании групповой публикации.
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 912506552c71bf1e6424f5af42ca4ddb46cd311a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6b1429a105553e53c0653673858acf2c538c8c03
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964319"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085310"
 ---
 # <a name="add-attachment"></a>Добавление вложения
 
 Пространство имен: microsoft.graph
 
-Добавление [вложения](../resources/attachment.md) при создании записи группы.
+Добавление [вложения](../resources/attachment.md) при создании групповой публикации.
 
-Эта операция ограничит размер вложения, которое можно добавить в течение 4 МБ.
+Эта операция ограничивает размер вложения, который можно добавить до 4 МБ.
 
 Допустимые типы вложений:
 
@@ -38,7 +38,7 @@ ms.locfileid: "48964319"
 |Для приложений | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
-Включите вложение при создании [записи](../resources/post.md) в [conversationThread](../resources/conversationthread.md) группы. Указать родительскую [беседу](../resources/conversation.md) необязательно.
+Включай вложение при создании [столба](../resources/post.md) в [беседеThread](../resources/conversationthread.md) группы. Указание родительского [разговора необязательно.](../resources/conversation.md)
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -51,20 +51,20 @@ POST /groups/{id}/conversations/{id}/threads/{id}/reply
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите объект JSON, включающий параметр **POST** .
+В теле запроса укажи объект JSON, который включает параметр **post.**
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|post|[post](../resources/post.md)|Новая запись, с которой отправляются ответы, которые включают одно или несколько вложений в коллекцию [вложений](../resources/attachment.md) .|
+|post|[post](../resources/post.md)|Новая почта, с которой будет отвечать, включает одно или несколько вложений в коллекцию [вложений.](../resources/attachment.md)|
 
 ## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `202 Accepted`. Он не возвращает тело отклика.
 
 ## <a name="examples"></a>Примеры
-### <a name="example-1-include-a-file-attachment"></a>Пример 1: включение вложенного файла
+### <a name="example-1-include-a-file-attachment"></a>Пример 1. Вложение файла
 #### <a name="request"></a>Запрос
-Ниже приведен пример запроса, включающего файл в качестве вложения при создании записи.
+Вот пример запроса, который включает файл в качестве вложения при создании сообщения.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -118,10 +118,10 @@ Content-type: application/json
 HTTP/1.1 202 Accpted
 ```
 
-### <a name="example-2-include-an-item-attachment"></a>Пример 2: включение вложения элемента
+### <a name="example-2-include-an-item-attachment"></a>Пример 2. Включить вложение элемента
 
 #### <a name="request"></a>Запрос
-Ниже приведен пример запроса, включающего событие в виде вложения при создании записи.
+Вот пример запроса, который включает событие в качестве вложения при создании столба.
 
 <!-- {
   "blockType": "request",
@@ -173,11 +173,11 @@ Content-type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="example-3-include-a-reference-attachment"></a>Пример 3: включение вложения ссылки
+### <a name="example-3-include-a-reference-attachment"></a>Пример 3. Включаем вложение ссылки
 
 #### <a name="request"></a>Запрос
-Ниже приведен пример запроса, включающего вложение ссылки при создании записи.
-Вложение указывает на папку в OneDrive.
+Вот пример запроса, который включает ссылку вложения при создании сообщения.
+Вложение указывает на папку на OneDrive.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

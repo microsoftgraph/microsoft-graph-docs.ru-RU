@@ -2,15 +2,15 @@
 title: Обновление complianceManagementPartner
 description: Обновление свойств объекта complianceManagementPartner.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c3633dc2927dcb48c5dedc26f74fc9f1efa0dce
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ef7f751531610601a66f4fcc4121b02e33ff5a86
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788004"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020555"
 ---
 # <a name="update-compliancemanagementpartner"></a>Обновление complianceManagementPartner
 
@@ -27,9 +27,9 @@ ms.locfileid: "58788004"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/complianceManagementPartners/{complianceManagementPartne
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,14 +53,14 @@ PATCH /deviceManagement/complianceManagementPartners/{complianceManagementPartne
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Id объекта|
+|id|String|Id объекта|
 |lastHeartbeatDateTime|DateTimeOffset|Timestamp последнего сердцебиения после администратора, направленного партнеру по управлению соответствием|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера этого клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
-|displayName|Строка|Отображаемое имя партнера|
+|displayName|String|Отображаемое имя партнера|
 |macOsOnboarded|Boolean|Партнер, на борту для устройств Mac.|
-|WindowsOnboarded|Логический|Партнер, на борту Windows устройств.|
+|WindowsOnboarded|Boolean|Партнер, на борту Windows устройств.|
 |AndroidOnboarded|Boolean|Партнер, на борту для android-устройств.|
-|iosOnboarded|Логический|Партнер, на борту для устройств ios.|
+|iosOnboarded|Boolean|Партнер, на борту для устройств ios.|
 |macOsEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства Mac через партнера.|
 |windowsEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые Windows устройства через партнера.|
 |AndroidEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства Android через партнера.|
@@ -68,7 +68,7 @@ PATCH /deviceManagement/complianceManagementPartners/{complianceManagementPartne
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код ответа и обновленный объект `200 OK` [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) в тексте ответа.
 
 ## <a name="example"></a>Пример

@@ -1,22 +1,22 @@
 ---
-title: Удаление delegatedPermissionClassification
-description: Удаление делегированной классификации разрешений из директора-службы API.
-localization_priority: Normal
+title: Удаление делегированияPermissionClassification
+description: Удаление делегированной классификации разрешений из основной службы API.
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: decce0d0a9e3f6915676cb7151da0d43ddff3067
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 135b1fb92560c989a3db193127796cf6a2c13443
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133100"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110142"
 ---
-# <a name="delete-delegatedpermissionclassification"></a>Удаление delegatedPermissionClassification
+# <a name="delete-delegatedpermissionclassification"></a>Удаление делегированияPermissionClassification
 
 Пространство имен: microsoft.graph
 
-Удаляет [делегированную классификацию,](../resources/delegatedPermissionClassification.md) которая ранее была настроена для делегирования разрешений.
+Удаляет [делегированнуюPermissionClassification,](../resources/delegatedPermissionClassification.md) которая ранее была назначена для делегирования разрешения.
 
 ## <a name="permissions"></a>Разрешения
 

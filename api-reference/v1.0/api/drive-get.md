@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Получение ресурса Drive
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 description: Получение свойств и связей ресурса Drive.
 doc_type: apiPageType
-ms.openlocfilehash: b9f2bdd93c331126ce1155344b44e59802e475b1
-ms.sourcegitcommit: b0194231721c68053a0be6d8eb46687574eb8d71
+ms.openlocfilehash: 84cc50aca94170fb6cd81b5ff41d255380496566
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50292653"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140894"
 ---
 # <a name="get-drive"></a>Получение ресурса Drive
 
@@ -103,7 +103,7 @@ GET /users/{idOrUserPrincipalName}/drive
 
 | Имя параметра | Значение  | Описание                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _idOrUserPrincipalName_     | строка | Обязательный. Идентификатор объекта пользователя, которому принадлежит хранилище OneDrive. |
+| _idOrUserPrincipalName_     | строка | Обязательный. Идентификатор объекта пользователя, которому принадлежит OneDrive. |
 
 ## <a name="get-the-document-library-associated-with-a-group"></a>Получение библиотеки документов, связанной с группой
 
@@ -179,7 +179,7 @@ GET /sites/{siteId}/drive
 
 | Имя параметра | Значение  | Описание                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _siteId_       | строка | Обязательный. Идентификатор для сайта, который содержит библиотеку документов. |
+| _siteId_       | строка | Обязательный. Идентификатор сайта, содержащего библиотеку документов. |
 
 ## <a name="get-a-drive-by-id"></a>Получение диска с использованием его идентификатора
 
@@ -265,6 +265,6 @@ Content-type: application/json
   "section": "documentation",
   "suppressions": [
   ],
-  "tocPath": "Drives/Get drive"
+  "tocPath&quot;: &quot;Drives/Get drive"
 } -->
 
