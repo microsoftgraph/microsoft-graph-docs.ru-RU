@@ -2,15 +2,15 @@
 title: тип enum windowsDefenderApplicationControlSupplementalPolicyStatuses
 description: Значения enum для различных статусов развертывания дополнительных политик WindowsDefenderApplicationControl.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b8ef128d422e27ff747fda91eea6ee3ef046e963
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fe8ed534f64188691f8e4cfd8e26322291f0f821
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805684"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057196"
 ---
 # <a name="windowsdefenderapplicationcontrolsupplementalpolicystatuses-enum-type"></a>тип enum windowsDefenderApplicationControlSupplementalPolicyStatuses
 

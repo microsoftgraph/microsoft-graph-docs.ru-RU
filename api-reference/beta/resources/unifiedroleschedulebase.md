@@ -2,15 +2,15 @@
 title: тип ресурса unifiedRoleScheduleBase
 description: Базовое свойство унифицированных расписаний ролей, объединяющих унифицированные графики назначения ролей и унифицированные графики прав на роль
 author: shauliu1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 5f6839ce6c5cf567d1c1a5c71aa494ee43c86858
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: b65d7d41feccfa8336ea347936433da2437f0f6b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454173"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050882"
 ---
 # <a name="unifiedroleschedulebase-resource-type"></a>тип ресурса unifiedRoleScheduleBase
 

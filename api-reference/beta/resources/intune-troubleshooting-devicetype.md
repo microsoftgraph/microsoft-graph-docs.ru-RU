@@ -2,15 +2,15 @@
 title: Тип enum deviceType
 description: Тип устройства.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 925781ea7aa7f618ce806f742e97d11d0e57c994
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 3b72d1a3087c83d490098295c3fe6785a0c47673
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263606"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057252"
 ---
 # <a name="devicetype-enum-type"></a>Тип enum deviceType
 
@@ -24,9 +24,9 @@ ms.locfileid: "58263606"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |настольный компьютер|0|Рабочий стол.|
-|windowsRT|1 |WindowsRT.|
+|windowsRT|1|WindowsRT.|
 |winMO6|2|WinMO6.|
-|Nokia|3 |Nokia.|
+|Nokia|3|Nokia.|
 |WindowsPhone|4 |Windows телефон.|
 |mac|5 |Mac.|
 |winCE|6 |WinCE.|
@@ -34,9 +34,9 @@ ms.locfileid: "58263606"
 |iPhone|8 |iPhone.|
 |iPad|9 |iPad.|
 |iPod|10 |iPodTouch.|
-|Android|11 |Android.|
+|Android|11|Android.|
 |iSocConsumer|12 |iSocConsumer.|
-|unix|13 |Unix.|
+|unix|13|Unix.|
 |macMDM|14 |Клиент Mac OS X с помощью встроенного агента MDM.|
 |holoLens|15 |Представление модных Windows 10 очки.|
 |surfaceHub|16 |Устройство Surface HUB.|

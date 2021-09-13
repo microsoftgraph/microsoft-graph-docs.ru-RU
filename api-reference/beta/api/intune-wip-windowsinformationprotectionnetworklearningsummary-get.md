@@ -2,15 +2,15 @@
 title: Получение windowsInformationProtectionNetworkLearningSummary
 description: Чтение свойств и связей объекта windowsInformationProtectionNetworkLearningSummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bdb223a21c0ca735c532666f339ba9311e9a2dd7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e4d0011570e09b36c06a77e6dc867a7f1dc61100
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801888"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051770"
 ---
 # <a name="get-windowsinformationprotectionnetworklearningsummary"></a>Получение windowsInformationProtectionNetworkLearningSummary
 
@@ -29,7 +29,7 @@ ms.locfileid: "58801888"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

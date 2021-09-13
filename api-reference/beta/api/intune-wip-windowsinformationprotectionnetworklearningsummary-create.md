@@ -2,15 +2,15 @@
 title: Создание объекта windowsInformationProtectionNetworkLearningSummary
 description: Создание объекта windowsInformationProtectionNetworkLearningSummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 04556b8486a9ef4c8f160073f28bbafb5f5d62e9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4b759aeb22783807c9cff934372b53d8a29c6840
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783605"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051791"
 ---
 # <a name="create-windowsinformationprotectionnetworklearningsummary"></a>Создание объекта windowsInformationProtectionNetworkLearningSummary
 
@@ -29,7 +29,7 @@ ms.locfileid: "58783605"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +53,7 @@ POST /deviceManagement/windowsInformationProtectionNetworkLearningSummaries
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта WindowsInformationProtectionNetworkLearningSummary.|
+|id|String|Уникальный идентификатор объекта WindowsInformationProtectionNetworkLearningSummary.|
 |url|String|URL-адрес веб-сайта|
 |deviceCount|Int32|Количество устройств|
 

@@ -2,15 +2,15 @@
 title: тип переименовки remoteAction
 description: Поддерживает удаленные действия Intune.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 435cc6f118c8e9126d4feb60a8d74fed1898db9b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 70e7d5ac0734f791f79915524565012393b6f90d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790880"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081089"
 ---
 # <a name="remoteaction-enum-type"></a>тип переименовки remoteAction
 
@@ -36,7 +36,7 @@ ms.locfileid: "58790880"
 |rebootNow|8 |Пользователь инициирует действие для перезагрузки Windows устройства.|
 |recoverPasscode|9 |Пользователь инициирует действие по сбросу пин-кода для паспорта для работы на устройстве windows phone.|
 |cleanWindowsDevice|10 |Пользователь инициирует действие по очистке устройства Windows.|
-|logoutSharedAppleDeviceActiveUser|11 |Пользователь инициирует действие для входа текущего пользователя на совместное устройство Apple.|
+|logoutSharedAppleDeviceActiveUser|11|Пользователь инициирует действие для входа текущего пользователя на совместное устройство Apple.|
 |quickScan|12 |Пользователь инициирует действие для быстрого сканирования на устройстве.|
 |fullScan|13|Пользователь инициирует действие для запуска полного сканирования на устройстве.|
 |windowsDefenderUpdateSignatures|14 |Пользователь инициирует действие по обновлению подписей вредоносных программ на устройстве.|

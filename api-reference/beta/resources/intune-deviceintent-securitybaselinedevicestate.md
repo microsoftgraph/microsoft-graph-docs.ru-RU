@@ -2,15 +2,15 @@
 title: тип ресурсов securityBaselineDeviceState
 description: Сводка базового состояния соответствия требованиям безопасности базового уровня безопасности для устройства.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 99dae7127ff0074fd660ed90bf0467fc8e6f5986
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f960ec9f9a0b56b8a28cda555cf78514cebb0bbb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805733"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051253"
 ---
 # <a name="securitybaselinedevicestate-resource-type"></a>тип ресурсов securityBaselineDeviceState
 
@@ -34,8 +34,8 @@ ms.locfileid: "58805733"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор сущности|
-|managedDeviceId|Строка|ID устройства Intune|
+|id|String|Уникальный идентификатор сущности|
+|managedDeviceId|String|ID устройства Intune|
 |deviceDisplayName|String|Отображение имени устройства|
 |userPrincipalName|String|"User Principal Name" (Имя участника-пользователя);|
 |state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Состояние соответствия базовым требованиям безопасности. Возможные значения: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|

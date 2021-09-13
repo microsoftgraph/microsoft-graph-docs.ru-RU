@@ -2,15 +2,15 @@
 title: тип ресурса groupPolicyCategory
 description: Объект категории сохраняет категорию определения групповой политики
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f26e83fef905525bc9218d850dcb8ef416430233
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bd728c056576e31b37a4c105c62186f97e789fa1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802455"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080963"
 ---
 # <a name="grouppolicycategory-resource-type"></a>тип ресурса groupPolicyCategory
 
@@ -31,7 +31,7 @@ ms.locfileid: "58802455"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Строковой id имени отображения категории|
+|displayName|String|Строковой id имени отображения категории|
 |isRoot|Логический|Определяет, является ли категория корневой.|
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|

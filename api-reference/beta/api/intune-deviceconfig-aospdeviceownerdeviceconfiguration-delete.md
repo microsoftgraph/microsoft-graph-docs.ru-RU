@@ -2,15 +2,15 @@
 title: Удаление aospDeviceOwnerDeviceConfiguration
 description: Удаляет aospDeviceOwnerDeviceConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 75c7256c47aa8241a3f8a096b549601c63059915
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 426204efae0296d9a444434f175e25865404bdfd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788873"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055327"
 ---
 # <a name="delete-aospdeviceownerdeviceconfiguration"></a>Удаление aospDeviceOwnerDeviceConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "58788873"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

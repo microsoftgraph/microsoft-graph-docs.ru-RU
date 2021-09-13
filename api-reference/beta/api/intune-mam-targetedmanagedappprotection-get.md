@@ -2,15 +2,15 @@
 title: Получение объекта targetedManagedAppProtection
 description: Чтение свойств и связей объекта targetedManagedAppProtection.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cab1fdb65d41cb4cdb0a938bda48b3bb78a7b49d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a1d7f55a0229e546458de557035a70cfebbb0b0e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798520"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082160"
 ---
 # <a name="get-targetedmanagedappprotection"></a>Получение объекта targetedManagedAppProtection
 
@@ -29,7 +29,7 @@ ms.locfileid: "58798520"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

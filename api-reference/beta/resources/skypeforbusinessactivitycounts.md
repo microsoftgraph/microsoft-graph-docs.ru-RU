@@ -1,16 +1,16 @@
 ---
 title: тип ресурса skypeForBusinessActivityCounts
 description: Ниже указано представление ресурса в формате JSON.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
 author: kszb
-ms.openlocfilehash: a95d184ae4b21ee6cdd21ab8cf567e5835d1fdf3e6e09162dc48baaf0f5c1b1b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8591596604e53d077f2f966dc794c7f346f42c9b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54136235"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074551"
 ---
 # <a name="skypeforbusinessactivitycounts-resource-type"></a>тип ресурса skypeForBusinessActivityCounts
 
@@ -25,7 +25,7 @@ ms.locfileid: "54136235"
 | участие      | Int64  |
 | reportRefreshDate | Дата   |
 | reportDate        | Дата   |
-| reportPeriod      | Строка |
+| reportPeriod      | String |
 
 ## <a name="json-representation"></a>Представление JSON
 

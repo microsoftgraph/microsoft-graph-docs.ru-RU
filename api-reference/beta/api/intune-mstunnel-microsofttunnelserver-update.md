@@ -2,15 +2,15 @@
 title: Обновление microsoftTunnelServer
 description: Обновление свойств объекта microsoftTunnelServer.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d80b6e95570ce359b3f82cebe101f161e9076b91
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bf7cf0b8023919819186d876bcf0e8c095a59152
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787078"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59041705"
 ---
 # <a name="update-microsofttunnelserver"></a>Обновление microsoftTunnelServer
 
@@ -29,7 +29,7 @@ ms.locfileid: "58787078"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,12 +53,12 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTu
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Id MicrosoftTunnelServer|
-|displayName|Строка|Имя отображения MicrosoftTunnelServer|
+|id|String|Id MicrosoftTunnelServer|
+|displayName|String|Имя отображения MicrosoftTunnelServer|
 |tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|Состояние здоровья MicrosoftTunnelServer. Возможные значения: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`.|
 |lastCheckinDateTime|DateTimeOffset|При последней регистрации в MicrosoftTunnelServer|
-|agentImageDigest|Строка|Дайджест текущего образа агента, запущенного на этом сервере |
-|serverImageDigest|Строка|Дайджест текущего изображения сервера, запущенного на этом сервере |
+|agentImageDigest|String|Дайджест текущего образа агента, запущенного на этом сервере |
+|serverImageDigest|String|Дайджест текущего изображения сервера, запущенного на этом сервере |
 
 
 

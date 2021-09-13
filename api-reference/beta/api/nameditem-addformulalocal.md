@@ -1,16 +1,16 @@
 ---
 title: Add Named Item FormulaLocal
 description: Добавляет новое имя в определенную коллекцию, применяя языковой стандарт пользователя для формулы.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ''
 author: ruoyingl
-ms.openlocfilehash: 24773d20df7640ad50263cfbc2f395b0bc8cfa77
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 405bf6bbf638f27f825086ecb2fa8329b7903094
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052140"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59058288"
 ---
 # <a name="add-named-item-formulalocal"></a>Add Named Item FormulaLocal
 
@@ -23,7 +23,7 @@ ms.locfileid: "52052140"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Files.ReadWrite, Sites.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Sites.Read.All |
+|Для приложений | Sites.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -96,7 +96,7 @@ Content-length: 54
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

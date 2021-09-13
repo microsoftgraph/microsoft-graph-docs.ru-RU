@@ -2,15 +2,15 @@
 title: Get androidDeviceOwnerScepCertificateProfile
 description: Чтение свойств и связей объекта androidDeviceOwnerScepCertificateProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 27866490e0b37bc62bb3267f918a3058c7520a10
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5a4766fc0291a16c440eb5400f66b4e53c184674
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806483"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59048852"
 ---
 # <a name="get-androiddeviceownerscepcertificateprofile"></a>Get androidDeviceOwnerScepCertificateProfile
 

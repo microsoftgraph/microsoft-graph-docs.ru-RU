@@ -2,15 +2,15 @@
 title: Создание userExperienceAnalyticsResourcePerformance
 description: Создание нового объекта userExperienceAnalyticsResourcePerformance.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 485ea3606227de39ec27de9bac4ec5b0a2872bbe
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a6d228a002ce71e42bb580c38152f3ccfb395744
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798569"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052225"
 ---
 # <a name="create-userexperienceanalyticsresourceperformance"></a>Создание userExperienceAnalyticsResourcePerformance
 
@@ -29,7 +29,7 @@ ms.locfileid: "58798569"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +53,7 @@ POST /deviceManagement/userExperienceAnalyticsResourcePerformance
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор сущности производительности ресурсов аналитики пользовательских интерфейсов.|
+|id|String|Уникальный идентификатор сущности производительности ресурсов аналитики пользовательских интерфейсов.|
 |deviceId|String|ID устройства.|
 |deviceName|String|Имя устройства.|
 |model|String|Модель устройства аналитики пользовательских интерфейсов.|

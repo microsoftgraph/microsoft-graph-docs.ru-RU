@@ -2,15 +2,15 @@
 title: Get AndroidForWorkGeneralDeviceConfiguration
 description: Чтение свойств и связей объекта AndroidForWorkGeneralDeviceConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d6473a4bfaca00ee5b3fd006103c06d4bc392a4c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1d27c0ac6964b1a5a7201169b70dc7b6658bafc8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816060"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59048782"
 ---
 # <a name="get-androidforworkgeneraldeviceconfiguration"></a>Get AndroidForWorkGeneralDeviceConfiguration
 

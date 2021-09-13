@@ -2,15 +2,15 @@
 title: тип ресурса userExperienceAnalyticsMetricHistory
 description: Метрическая история аналитики пользовательского опыта.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0a62e2dbcfe55154ee5d264498bceaf37ef48a9d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b0d63d65992a1034587b63b96d2c694701de93dc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782947"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054368"
 ---
 # <a name="userexperienceanalyticsmetrichistory-resource-type"></a>тип ресурса userExperienceAnalyticsMetricHistory
 
@@ -34,10 +34,10 @@ ms.locfileid: "58782947"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор метрики аналитики пользовательского опыта.|
+|id|String|Уникальный идентификатор метрики аналитики пользовательского опыта.|
 |deviceId|String|ID устройства аналитики пользовательского интерфейса.|
 |metricDateTime|DateTimeOffset|Время даты даты аналитики пользовательского интерфейса.|
-|metricType|Строка|Тип метрики аналитики пользовательского опыта.|
+|metricType|String|Тип метрики аналитики пользовательского опыта.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

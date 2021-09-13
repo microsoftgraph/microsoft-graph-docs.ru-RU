@@ -2,15 +2,15 @@
 title: Update groupPolicyCategory
 description: Обновление свойств объекта groupPolicyCategory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aec5223d000abbdaef7cb1e99eb5f5a27b4380f2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a723d55e1b4609163d4c5f14ce2e88019247fc06
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789757"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034402"
 ---
 # <a name="update-grouppolicycategory"></a>Update groupPolicyCategory
 
@@ -29,7 +29,7 @@ ms.locfileid: "58789757"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -56,9 +56,9 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Строковой id имени отображения категории|
-|isRoot|Логический|Определяет, является ли категория корневой.|
-|id|Строка|Ключ объекта.|
+|displayName|String|Строковой id имени отображения категории|
+|isRoot|Boolean|Определяет, является ли категория корневой.|
+|id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 

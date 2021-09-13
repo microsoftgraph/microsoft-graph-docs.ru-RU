@@ -2,15 +2,15 @@
 title: Тип ресурса deviceCompliancePolicy
 description: 'Это базовый класс для политик обеспечения соответствия требованиям. Такие политики предназначаются для определенной платформы. Отдельные политики обеспечения соответствия требованиям наследуются от этого класса. '
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5b929d340fcd6ec7f2a0878420fa3453ad2b3b6d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 420850a079d74834d77181ad45782a39a377444a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792563"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039170"
 ---
 # <a name="devicecompliancepolicy-resource-type"></a>Тип ресурса deviceCompliancePolicy
 
@@ -37,12 +37,12 @@ ms.locfileid: "58792563"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
+|id|String|Ключ объекта.|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|description|Строка|Указанное администратором описание конфигурации устройства.|
+|description|String|Указанное администратором описание конфигурации устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|displayName|Строка|Указанное администратором имя конфигурации устройства.|
+|displayName|String|Указанное администратором имя конфигурации устройства.|
 |version|Int32|Версия конфигурации устройства.|
 
 ## <a name="relationships"></a>Связи

@@ -1,22 +1,22 @@
 ---
-title: Удаление Календарпермиссион
-description: Удаление Календарпермиссион.
-localization_priority: Normal
+title: Удаление calendarPermission
+description: Удаление calendarPermission.
+ms.localizationpriority: medium
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 57f6d2bd9859c08d531fdee783c7c05c32032205
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6be5fe8431364f12be8e034930d80b0acf87adb8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959888"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052764"
 ---
-# <a name="delete-calendarpermission"></a>Удаление Календарпермиссион
+# <a name="delete-calendarpermission"></a>Удаление calendarPermission
 
 Пространство имен: microsoft.graph
 
-Удаление Календарпермиссион.
+Удаление calendarPermission.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -29,19 +29,19 @@ ms.locfileid: "48959888"
 |Для приложений | Calendars.ReadWrite |
 ## <a name="http-request"></a>HTTP-запрос
 
-Удаление указанных разрешений для основного календаря пользователя:
+Удаление указанных разрешений основного календаря пользователя:
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/{id}/calendar/calendarPermissions/{id}
 ```
 
-Удаление указанных разрешений для календаря группы:
+Удаление указанных разрешений группового календаря:
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}/calendar/calendarPermissions/{id}
 ```
 
-Удаление указанных разрешений для календаря пользователя, содержащего идентифицированное событие:
+Удалите указанные разрешения пользовательского календаря, который содержит указанное событие:
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/{id}/events/{id}/calendar/calendarPermissions/{id}

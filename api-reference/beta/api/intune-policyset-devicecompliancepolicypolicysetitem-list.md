@@ -2,15 +2,15 @@
 title: Список устройствCompliancePolicyPolicySetItems
 description: Список свойств и связей объектов deviceCompliancePolicyPolicySetItem.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a9afc440ecf8b25f2cbaab64165b17bb4c7c1d78
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b31614fa6aea7b3159c39958a7e17fcaf13c55a6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806742"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054914"
 ---
 # <a name="list-devicecompliancepolicypolicysetitems"></a>Список устройствCompliancePolicyPolicySetItems
 

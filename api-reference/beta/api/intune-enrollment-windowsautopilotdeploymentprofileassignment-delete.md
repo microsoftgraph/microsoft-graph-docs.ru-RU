@@ -2,15 +2,15 @@
 title: Удаление windowsAutopilotDeploymentProfileAssignment
 description: Удаляет windowsAutopilotDeploymentProfileAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 591211329e6966b25af8f8d21bc60118b79e0eb3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c21598d7b800795875d4d2a511c269125929ebc8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783066"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082369"
 ---
 # <a name="delete-windowsautopilotdeploymentprofileassignment"></a>Удаление windowsAutopilotDeploymentProfileAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "58783066"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

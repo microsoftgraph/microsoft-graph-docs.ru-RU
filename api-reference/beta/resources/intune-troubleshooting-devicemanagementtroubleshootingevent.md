@@ -2,15 +2,15 @@
 title: Тип ресурса deviceManagementTroubleshootingEvent
 description: Событие, представляющее общий сбой.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fbb340f8505f042451ab11224ec97845beb5c8c2
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: ad5513f6872297f792ea19b913ae32089004e251
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58253434"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057301"
 ---
 # <a name="devicemanagementtroubleshootingevent-resource-type"></a>Тип ресурса deviceManagementTroubleshootingEvent
 

@@ -2,15 +2,15 @@
 title: Создание deviceManagementDomainJoinConnector
 description: Создайте новый объект deviceManagementDomainJoinConnector.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: afadbd6fdffb4e91eac789cfc35fc975e5ba6653
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fd668d47e651a1519c7d1cb54145028fdf0c1179
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785845"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052078"
 ---
 # <a name="create-devicemanagementdomainjoinconnector"></a>Создание deviceManagementDomainJoinConnector
 
@@ -29,7 +29,7 @@ ms.locfileid: "58785845"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,8 +53,8 @@ POST /deviceManagement/domainJoinConnectors
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для представления соединитетеля.|
-|displayName|Строка|Имя отображения соединитетеля.|
+|id|String|Уникальный идентификатор для представления соединитетеля.|
+|displayName|String|Имя отображения соединитетеля.|
 |lastConnectionDateTime|DateTimeOffset|Последний раз соединитель связывался с Intune.|
 |state|[deviceManagementDomainJoinConnectorState](../resources/intune-odj-devicemanagementdomainjoinconnectorstate.md)|Состояние соединитетеля. Возможные значения: `active`, `error`, `inactive`.|
 |version|String|Версия соединитетеля.|

@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementExportJob
 description: Объект, представляющий задание по экспорту отчета
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 29f56794b23a508e3ffecdf6d380ac918b469625
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 465585e32d349537314fa73ca7bbe6ba52daa286
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784774"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039429"
 ---
 # <a name="devicemanagementexportjob-resource-type"></a>тип ресурса deviceManagementExportJob
 
@@ -34,12 +34,12 @@ ms.locfileid: "58784774"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для этого объекта|
-|reportName|Строка|Имя отчета|
-|filter|Строка|Фильтры, применяемые в отчете|
-|select|Коллекция String|Столбцы, выбранные из отчета|
+|id|String|Уникальный идентификатор для этого объекта|
+|reportName|String|Имя отчета|
+|filter|String|Фильтры, применяемые в отчете|
+|select|Коллекция объектов string|Столбцы, выбранные из отчета|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Формат экспортируемого отчета. Возможные значения: `csv`, `pdf`.|
-|snapshotId|Строка|Снимок — это идентифицируемый подмножество наборов данных, представленных в ReportName. Здесь можно использовать id sessionId или CachedReportConfiguration. Если задана sessionId, фильтр, выберите и OrderBy применяются к данным, представленным sessionId. Фильтр, выбор и OrderBy нельзя указать вместе с id CachedReportConfiguration.|
+|snapshotId|String|Снимок — это идентифицируемый подмножество наборов данных, представленных в ReportName. Здесь можно использовать id sessionId или CachedReportConfiguration. Если задана sessionId, фильтр, выберите и OrderBy применяются к данным, представленным sessionId. Фильтр, выбор и OrderBy нельзя указать вместе с id CachedReportConfiguration.|
 |ЛокализацияТип|[deviceManagementExportJobLocalizationType](../resources/intune-reporting-devicemanagementexportjoblocalizationtype.md)|Настройка локализации запрашиваемого задания экспорта. Возможные значения: `localizedValuesAsAdditionalColumn`, `replaceLocalizableValues`.|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Состояние задания экспорта. Возможные значения: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |url|String|Временное расположение экспортируемого отчета|

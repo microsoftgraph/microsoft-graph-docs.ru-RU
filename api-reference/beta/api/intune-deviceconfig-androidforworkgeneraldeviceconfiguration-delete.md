@@ -2,15 +2,15 @@
 title: Удаление androidForWorkGeneralDeviceConfiguration
 description: Удаляет androidForWorkGeneralDeviceConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 57b050809ebeb974b6915be7f5378e15989f638c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 56f34d4d15500172656d49101a9e05d0748500f3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793720"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59048817"
 ---
 # <a name="delete-androidforworkgeneraldeviceconfiguration"></a>Удаление androidForWorkGeneralDeviceConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "58793720"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

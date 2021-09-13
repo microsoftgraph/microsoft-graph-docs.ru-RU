@@ -2,15 +2,15 @@
 title: тип ресурса androidDeviceOwnerEnrollmentProfile
 description: Профиль регистрации, используемый для регистрации Enterprise устройств с помощью облачного управления Google.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d94b751d5d7ef9ea8a72351bac45b40ecc3135e7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f88410522f63b289a2b2d6f55a2a1ebf85b46b5e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788719"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057658"
 ---
 # <a name="androiddeviceownerenrollmentprofile-resource-type"></a>тип ресурса androidDeviceOwnerEnrollmentProfile
 
@@ -39,7 +39,7 @@ ms.locfileid: "58788719"
 |accountId|String|GUID клиента, которому принадлежит профиль регистрации.|
 |id|String|Уникальный GUID профиля регистрации.|
 |displayName|String|Отображаемое имя для профиля регистрации.|
-|description|Строка|Описание профиля регистрации.|
+|description|String|Описание профиля регистрации.|
 |enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|Режим регистрации устройств, которые используют этот профиль регистрации. Возможные значения: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`.|
 |enrollmentTokenType|[androidDeviceOwnerEnrollmentTokenType](../resources/intune-androidforwork-androiddeviceownerenrollmenttokentype.md)|Тип маркера регистрации для профиля регистрации. Возможные значения: `default`, `corporateOwnedDedicatedDeviceWithAzureADSharedMode`.|
 |createdDateTime|DateTimeOffset|Дата и время создания профиля регистрации.|
@@ -50,7 +50,7 @@ ms.locfileid: "58788719"
 |enrolledDeviceCount|Int32|Общее количество устройств с Android, зарегистрированных через этот профиль регистрации.|
 |qrCodeContent|String|Строка, используемая для создания QR-кода маркера.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Строка, используемая для создания QR-кода маркера.|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity.|
 
 ## <a name="relationships"></a>Связи
 Нет

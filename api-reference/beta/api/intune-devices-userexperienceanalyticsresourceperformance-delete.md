@@ -2,15 +2,15 @@
 title: Удаление userExperienceAnalyticsResourcePerformance
 description: Удаляет пользователяExperienceAnalyticsResourcePerformance.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 515baf7e8162d56ac275d1b17a993d611349e31b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a55936c0edca1dbb94e600dcbf88d303cdb44701
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784333"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052218"
 ---
 # <a name="delete-userexperienceanalyticsresourceperformance"></a>Удаление userExperienceAnalyticsResourcePerformance
 
@@ -29,7 +29,7 @@ ms.locfileid: "58784333"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

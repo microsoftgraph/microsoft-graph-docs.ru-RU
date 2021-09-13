@@ -2,15 +2,15 @@
 title: Обновление deviceManagementScriptAssignment
 description: Обновление свойств объекта deviceManagementScriptAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b9e2fa7f73b186d43bd9b270fc3876e6bda14277
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dc21e031bf12fa3b594cf00de24caceda8dc3c01
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58754865"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59042279"
 ---
 # <a name="update-devicemanagementscriptassignment"></a>Обновление deviceManagementScriptAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "58754865"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,7 +55,7 @@ PATCH /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttribute
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта группового назначения скрипта управления устройствами. Это свойство доступно только для чтения.|
+|id|String|Ключ объекта группового назначения скрипта управления устройствами. Это свойство доступно только для чтения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Id группы Azure Active Directory, на который мы нацелим сценарий.|
 
 

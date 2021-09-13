@@ -2,15 +2,15 @@
 title: Обновление объекта windowsInformationProtectionNetworkLearningSummary
 description: Обновление свойств объекта windowsInformationProtectionNetworkLearningSummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0dee9095a403c98cc4cabeb76189f58a1f19f866
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a1bbe892f98e801d1c67b18ed9d3784b2ef14bf7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804052"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051700"
 ---
 # <a name="update-windowsinformationprotectionnetworklearningsummary"></a>Обновление объекта windowsInformationProtectionNetworkLearningSummary
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{wi
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта WindowsInformationProtectionNetworkLearningSummary.|
+|id|String|Уникальный идентификатор объекта WindowsInformationProtectionNetworkLearningSummary.|
 |url|String|URL-адрес веб-сайта|
 |deviceCount|Int32|Количество устройств|
 

@@ -2,15 +2,15 @@
 title: тип enum windows10EditionType
 description: Windows 10 Тип издания.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5f88ca6e10631837c560400cc6b884e0baf97743
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4e409f78fbf74e3ad307d6f57f131d8448b78757
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791862"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057364"
 ---
 # <a name="windows10editiontype-enum-type"></a>тип enum windows10EditionType
 
@@ -25,7 +25,7 @@ Windows 10 Тип издания.
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|windows10Enterprise|0|Windows 10 Корпоративная|
+|windows10Enterprise|0|Windows 10 Корпоративная|
 |windows10EnterpriseN|1|Windows 10 EnterpriseN|
 |windows10Education|2|Windows 10 для образовательных учреждений|
 |windows10EducationN|3|Windows 10 EducationN|
@@ -36,7 +36,7 @@ Windows 10 Тип издания.
 |windows10ProfessionalEducation|8 |Windows 10 Professional образования|
 |windows10ProfessionalEducationN|9 |Windows 10 Professional EducationN|
 |windows10ProfessionalWorkstation|10 |Windows 10 Professional рабочих станций|
-|windows10ProfessionalWorkstationN|11 |Windows 10 Professional для рабочих станций N|
+|windows10ProfessionalWorkstationN|11|Windows 10 Professional для рабочих станций N|
 |notConfigured|12 |NotConfigured|
 |windows10Home|13|Windows 10 Домашняя|
 |windows10HomeChina|14 |Windows 10 Домашняя Китай|

@@ -2,15 +2,15 @@
 title: тип ресурса appleAppListItem
 description: Представляет приложение в списке управляемых приложений Apple
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2111e8e8403b312c17a7c9e2c6dad62c857d4282
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 91a43ee845998535331804936becb6596ee7e2bd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796266"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075601"
 ---
 # <a name="appleapplistitem-resource-type"></a>тип ресурса appleAppListItem
 

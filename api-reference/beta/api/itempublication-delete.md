@@ -1,22 +1,22 @@
 ---
-title: Удаление Итемпубликатион
-description: Удаляет объект Итемпубликатион.
-localization_priority: Normal
+title: Удаление itemPublication
+description: Удаляет объект itemPublication.
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 6e63ef86de454e63f6b90f4b9bf4ea79cfeb1222
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 99983f9f663c3d896d22df57a8f90c8fc0b84491
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969897"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59076448"
 ---
-# <a name="delete-itempublication"></a>Удаление Итемпубликатион
+# <a name="delete-itempublication"></a>Удаление itemPublication
 
 Пространство имен: microsoft.graph
 
-Удаляет объект [итемпубликатион](../resources/itempublication.md) .
+Удаляет объект [itemPublication.](../resources/itempublication.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,8 +24,8 @@ ms.locfileid: "48969897"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All |
 | Для приложений                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос

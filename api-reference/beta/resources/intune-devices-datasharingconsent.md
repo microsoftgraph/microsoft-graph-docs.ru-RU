@@ -2,15 +2,15 @@
 title: тип ресурса dataSharingConsent
 description: Сведения о согласии на обмен данными.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 06d712ffa94b4308c7234b45ffba5d0ab6c05423
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 92c012f994c3e5aa3630f05632d48df764a432d7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791132"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057329"
 ---
 # <a name="datasharingconsent-resource-type"></a>тип ресурса dataSharingConsent
 
@@ -26,22 +26,22 @@ ms.locfileid: "58791132"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[List dataSharingConsents](../api/intune-devices-datasharingconsent-list.md)|[коллекция dataSharingConsent](../resources/intune-devices-datasharingconsent.md)|Список свойств и связей объектов [dataSharingConsent.](../resources/intune-devices-datasharingconsent.md)|
-|[Get dataSharingConsent](../api/intune-devices-datasharingconsent-get.md)|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md);|Чтение свойств и связей объекта [dataSharingConsent.](../resources/intune-devices-datasharingconsent.md)|
-|[Создание dataSharingConsent](../api/intune-devices-datasharingconsent-create.md)|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md);|Создание нового [объекта dataSharingConsent.](../resources/intune-devices-datasharingconsent.md)|
+|[Get dataSharingConsent](../api/intune-devices-datasharingconsent-get.md)|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)|Чтение свойств и связей объекта [dataSharingConsent.](../resources/intune-devices-datasharingconsent.md)|
+|[Создание dataSharingConsent](../api/intune-devices-datasharingconsent-create.md)|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)|Создание нового [объекта dataSharingConsent.](../resources/intune-devices-datasharingconsent.md)|
 |[Удаление dataSharingConsent](../api/intune-devices-datasharingconsent-delete.md)|Нет|Удаляет [dataSharingConsent](../resources/intune-devices-datasharingconsent.md).|
-|[Обновление dataSharingConsent](../api/intune-devices-datasharingconsent-update.md)|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md);|Обновление свойств объекта [dataSharingConsent.](../resources/intune-devices-datasharingconsent.md)|
-|[Действие consentToDataSharing](../api/intune-devices-datasharingconsent-consenttodatasharing.md)|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md);|Н/Д|
+|[Обновление dataSharingConsent](../api/intune-devices-datasharingconsent-update.md)|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)|Обновление свойств объекта [dataSharingConsent.](../resources/intune-devices-datasharingconsent.md)|
+|[Действие consentToDataSharing](../api/intune-devices-datasharingconsent-consenttodatasharing.md)|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md)|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|ID согласия для общего доступа к данным|
-|serviceDisplayName|Строка|Имя отображения потока работы службы|
-|termsUrl|Строка|TermsUrl для согласия на обмен данными|
-|granted|Логический|Предоставлено состояние для согласия на обмен данными|
+|serviceDisplayName|String|Имя отображения потока работы службы|
+|termsUrl|String|TermsUrl для согласия на обмен данными|
+|granted|Логическое|Предоставлено состояние для согласия на обмен данными|
 |grantDateTime|DateTimeOffset|Для этой учетной записи было предоставлено согласие на время|
 |grantedByUpn|String|Upn пользователя, который предоставил согласие для этой учетной записи|
-|grantedByUserId|Строка|UserId пользователя, который предоставил согласие для этой учетной записи|
+|grantedByUserId|String|UserId пользователя, который предоставил согласие для этой учетной записи|
 
 ## <a name="relationships"></a>Связи
 Нет

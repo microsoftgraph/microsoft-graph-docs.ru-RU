@@ -2,15 +2,15 @@
 title: тип ресурса win32LobAppMsiInformation
 description: Содержит свойства приложения MSI для приложения Win32.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 99357d35a95df626d305ce234f115cd41d6f1005
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 37b85ce62126f850ed609acf885ad546386c5458
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783997"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057525"
 ---
 # <a name="win32lobappmsiinformation-resource-type"></a>тип ресурса win32LobAppMsiInformation
 
@@ -27,7 +27,7 @@ ms.locfileid: "58783997"
 |:---|:---|:---|
 |productCode|String|Код продукта MSI.|
 |productVersion|String|Версия продукта MSI.|
-|upgradeCode|Строка|Код обновления MSI.|
+|upgradeCode|String|Код обновления MSI.|
 |requiresReboot|Логический|Требуется ли приложению MSI перезагрузить машину для завершения установки.|
 |packageType|[win32LobAppMsiPackageType](../resources/intune-apps-win32lobappmsipackagetype.md)|Тип пакета MSI. Возможные значения: `perMachine`, `perUser`, `dualPurpose`.|
 |productName|String|Имя продукта MSI.|

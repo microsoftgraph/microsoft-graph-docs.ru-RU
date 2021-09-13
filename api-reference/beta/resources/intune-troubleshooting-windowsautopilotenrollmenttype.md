@@ -2,15 +2,15 @@
 title: тип enum windowsAutopilotEnrollmentType
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4e2c5eac9235da32cfef718985bb67cd8f967627
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 366ee2bc0a931ac95ba200b8f4d6fdba500c5019
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58250908"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054228"
 ---
 # <a name="windowsautopilotenrollmenttype-enum-type"></a>тип enum windowsAutopilotEnrollmentType
 
@@ -24,9 +24,9 @@ ms.locfileid: "58250908"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Пока не задокументировано.|
-|azureADJoinedWithAutopilotProfile|1 |Пока не задокументировано.|
+|azureADJoinedWithAutopilotProfile|1|Пока не задокументировано.|
 |offlineDomainJoined|2|Пока не задокументировано.|
-|azureADJoinedUsingDeviceAuthWithAutopilotProfile|3 |Пока не задокументировано.|
+|azureADJoinedUsingDeviceAuthWithAutopilotProfile|3|Пока не задокументировано.|
 |azureADJoinedUsingDeviceAuthWithoutAutopilotProfile|4 |Пока не задокументировано.|
 |azureADJoinedWithOfflineAutopilotProfile|5 |Пока не задокументировано.|
 |azureADJoinedWithWhiteGlove|6 |Пока не задокументировано.|

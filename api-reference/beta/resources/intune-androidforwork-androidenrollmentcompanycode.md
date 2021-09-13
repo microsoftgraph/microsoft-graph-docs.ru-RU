@@ -2,15 +2,15 @@
 title: тип ресурса androidEnrollmentCompanyCode
 description: Класс для хранения специальных данных регистрации, используемых для регистрации с помощью API управления Android в Google, таких как содержимое кода Token, URL и QR.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e6e15d4720b9f29e9b548004127760a2ba3b0135
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cef755a70e0dcb237196891d88a89aecad85015c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799833"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057644"
 ---
 # <a name="androidenrollmentcompanycode-resource-type"></a>тип ресурса androidEnrollmentCompanyCode
 
@@ -25,7 +25,7 @@ ms.locfileid: "58799833"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|enrollmentToken|Строка|Маркер регистрации, используемый пользователем для регистрации устройства.|
+|enrollmentToken|String|Маркер регистрации, используемый пользователем для регистрации устройства.|
 |qrCodeContent|String|Строка, используемая для создания QR-кода маркера.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Созданный код QR для маркера.|
 

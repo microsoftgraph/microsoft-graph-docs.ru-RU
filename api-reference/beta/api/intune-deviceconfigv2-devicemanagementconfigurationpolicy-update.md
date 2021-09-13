@@ -2,15 +2,15 @@
 title: Обновление deviceManagementConfigurationPolicy
 description: Обновление свойств объекта deviceManagementConfigurationPolicy.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d0baf78d706a7ca586771f176636db74ff4f7ffb
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9633dfbb8f3ffd84a6b7eae2ccdd905a486650c7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821573"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055173"
 ---
 # <a name="update-devicemanagementconfigurationpolicy"></a>Обновление deviceManagementConfigurationPolicy
 
@@ -63,7 +63,7 @@ PATCH /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySe
 |lastModifiedDateTime|DateTimeOffset|Политика последней даты и времени изменения. Это свойство доступно только для чтения.|
 |settingCount|Int32|Количество параметров. Это свойство доступно только для чтения.|
 |creationSource|String|Источник создания политики|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity.|
 |isAssigned|Boolean|Состояние назначения политики. Это свойство доступно только для чтения.|
 |templateReference|[deviceManagementConfigurationPolicyTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicytemplatereference.md)|Справочные сведения по шаблонам|
 

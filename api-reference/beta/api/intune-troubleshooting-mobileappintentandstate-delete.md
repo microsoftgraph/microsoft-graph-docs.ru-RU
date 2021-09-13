@@ -2,15 +2,15 @@
 title: Удаление mobileAppIntentAndState
 description: Удаляет mobileAppIntentAndState.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8b60d1ff2af01823d2cfdf54d7bc28e24b966626
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 7a7e9e463b60d25384d2753657d676d4bc7a519f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266368"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59047984"
 ---
 # <a name="delete-mobileappintentandstate"></a>Удаление mobileAppIntentAndState
 
@@ -27,7 +27,7 @@ ms.locfileid: "58266368"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +41,7 @@ DELETE /users/{usersId}/mobileAppIntentAndStates/{mobileAppIntentAndStateId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

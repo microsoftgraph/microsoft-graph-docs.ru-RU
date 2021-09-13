@@ -2,15 +2,15 @@
 title: тип ресурса intuneBrandingProfile
 description: Эта сущность содержит данные, используемые при настройке внешнего вида Корпоративный портал приложений, а также веб-портала конечного пользователя.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c156ced8cd69864412e299b90173dfead4279c07
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 280584694d5aa73cf412f7572f1d0f9aba28612c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792542"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054172"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>тип ресурса intuneBrandingProfile
 
@@ -35,10 +35,10 @@ ms.locfileid: "58792542"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ профиля|
-|имя профиля|Строка|Имя профиля|
-|profileDescription|Строка|Описание профиля|
-|isDefaultProfile|Логический|Boolean, который представляет, используется ли профиль как по умолчанию или нет|
+|id|String|Ключ профиля|
+|имя профиля|String|Имя профиля|
+|profileDescription|String|Описание профиля|
+|isDefaultProfile|Логическое|Boolean, который представляет, используется ли профиль как по умолчанию или нет|
 |createdDateTime|DateTimeOffset|Время создания BrandingProfile|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения BrandingProfile|
 |displayName|String|Имя компании или организации, отображаемая конечным пользователям|
@@ -55,18 +55,18 @@ ms.locfileid: "58792542"
 |onlineSupportSiteUrl|String|URL-адрес сайта it-справки компании/организации|
 |onlineSupportSiteName|String|Отображение имени сайта it-справки компании/организации|
 |privacyUrl|String|URL-адрес политики конфиденциальности компании и организации|
-|customPrivacyMessage|Строка|Текстовые комментарии относительно того, к чему администратор не имеет доступа на устройстве|
-|customCanSeePrivacyMessage|Строка|Текстовые комментарии относительно доступа администратора к устройству|
-|customCantSeePrivacyMessage|Строка|Текстовые комментарии относительно того, к чему администратор не имеет доступа на устройстве|
+|customPrivacyMessage|String|Текстовые комментарии относительно того, к чему администратор не имеет доступа на устройстве|
+|customCanSeePrivacyMessage|String|Текстовые комментарии относительно доступа администратора к устройству|
+|customCantSeePrivacyMessage|String|Текстовые комментарии относительно того, к чему администратор не имеет доступа на устройстве|
 |isRemoveDeviceDisabled|Логический|Boolean, который представляет, отключил ли администратор действие "Удалить устройство" на корпоративных устройствах.|
 |isFactoryResetDisabled|Логический|Boolean, который представляет, отключил ли администратор действие "Сброс фабрики" на корпоративных устройствах.|
 |companyPortalBlockedActions|[коллекция companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md)|Коллекция заблокированных действий на портале компании в зависимости от типов владения платформой и устройствами.|
-|showAzureADEnterpriseApps|Логический|Boolean, который указывает, будут ли Enterprise AzureAD приложения будут показаны в Корпоративный портал|
-|showOfficeWebApps|Логический|Boolean, который указывает, Office веб-приложения будут показаны в Корпоративный портал|
+|showAzureADEnterpriseApps|Логическое|Boolean, который указывает, будут ли Enterprise AzureAD приложения будут показаны в Корпоративный портал|
+|showOfficeWebApps|Логическое|Boolean, который указывает, Office веб-приложения будут показаны в Корпоративный портал|
 |sendDeviceOwnershipChangePushNotification|Логический|Boolean, который указывает, отправляется ли пользователям push-уведомление при смене типа владения устройствами с личного на корпоративный.|
 |enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|Настраиваемый поток регистрации устройств, отображаемый конечному пользователю. Возможные значения: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
-|отключениеClientTelemetry|Логический|Применяется к телеметрии, отправленной от всех клиентов в службу Intune. При отключении все упреждающие предупреждения о неполадок в клиенте отключаются, а параметры телеметрии отображаются неактивными или скрытыми для пользователя устройства.|
-|roleScopeTagIds|Коллекция String|Список тегов области, присвоенных профилю брендинга|
+|отключениеClientTelemetry|Логическое|Применяется к телеметрии, отправленной от всех клиентов в службу Intune. При отключении все упреждающие предупреждения о неполадок в клиенте отключаются, а параметры телеметрии отображаются неактивными или скрытыми для пользователя устройства.|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области, присвоенных профилю брендинга|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

@@ -2,15 +2,15 @@
 title: тип enum deviceManangementIntentValueType
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e5eee83a61d65e2e828c40a815e376ae501141d8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fc26ec284cb66a0704910022cb3a168974a5501f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786329"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054402"
 ---
 # <a name="devicemanangementintentvaluetype-enum-type"></a>тип enum deviceManangementIntentValueType
 
@@ -27,7 +27,7 @@ ms.locfileid: "58786329"
 |:---|:---|:---|
 |integer|0|Значение параметра — это integer|
 |boolean|1|Значение параметра — boolean|
-|string|2|Значение параметра — строка|
+|String|2|Значение параметра — строка|
 |сложный|3|Значение параметра — это сложный объект|
 |.|4 |Значение параметра — это коллекция|
 |abstractComplex|5 |Значение параметра — это абстрактный сложный объект|

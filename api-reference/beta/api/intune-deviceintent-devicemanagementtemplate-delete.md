@@ -2,15 +2,15 @@
 title: Удаление deviceManagementTemplate
 description: Удаляет устройствоManagementTemplate.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1da7d01665f5f8762330e19fb11be4761d2b7529
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9ce53b5e0b77486b718cd4d3395f1271785257ab
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784620"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055047"
 ---
 # <a name="delete-devicemanagementtemplate"></a>Удаление deviceManagementTemplate
 
@@ -29,7 +29,7 @@ ms.locfileid: "58784620"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

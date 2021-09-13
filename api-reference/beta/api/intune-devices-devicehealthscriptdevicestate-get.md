@@ -2,15 +2,15 @@
 title: Get deviceHealthScriptDeviceState
 description: Чтение свойств и связей объекта deviceHealthScriptDeviceState.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d2e3e7e2eddfe9591e98af922637b3a9bfea40ce
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0e3b1e04abd577f9cbd60fa7c259306da14f7746
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815983"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052330"
 ---
 # <a name="get-devicehealthscriptdevicestate"></a>Get deviceHealthScriptDeviceState
 

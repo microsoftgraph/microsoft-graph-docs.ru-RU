@@ -2,15 +2,15 @@
 title: тип ресурса windowsAutopilotDeploymentProfile
 description: Windows Autopilot Deployment Профиль
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 36fed1e15acd0f3e8a2524ab01dc8e7fd3d80e21
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 18185ef266511aa10e11fe2f5343069fc4d5d4c1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787211"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051085"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>тип ресурса windowsAutopilotDeploymentProfile
 
@@ -35,17 +35,17 @@ Windows Autopilot Deployment Профиль
 |:---|:---|:---|
 |id|String|Ключ профиля|
 |displayName|String|Имя профиля|
-|description|Строка|Описание профиля|
+|description|String|Описание профиля|
 |language|String|Язык, настроенный на устройстве|
 |createdDateTime|DateTimeOffset|Время создания профиля|
 |lastModifiedDateTime|DateTimeOffset|Последнее изменение профиля|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|Параметр "Вне параметров работы с полем"|
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|Параметр состояния регистрации|
-|extractHardwareHash|Boolean|HardwareHash Extraction для профиля|
+|extractHardwareHash|Логический|HardwareHash Extraction для профиля|
 |deviceNameTemplate|String|Шаблон, используемый для имени устройства АвтоПилот. Это может быть пользовательский текст, который также может содержать либо серийный номер устройства, либо случайный генерируемый номер. Общая длина текста, генерируемого шаблоном, может быть не более 15 символов.|
 |deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|Тип устройства AutoPilot, к который применим этот профиль. Возможные значения: `windowsPc`, `surfaceHub2`.|
-|enableWhiteGlove|Boolean|Включить белую перчатку автопилота для профиля.|
-|roleScopeTagIds|Коллекция String|Теги области для профиля.|
+|enableWhiteGlove|Логическое|Включить белую перчатку автопилота для профиля.|
+|roleScopeTagIds|Коллекция объектов string|Теги области для профиля.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

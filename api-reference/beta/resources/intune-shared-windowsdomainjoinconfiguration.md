@@ -2,15 +2,15 @@
 title: тип ресурса windowsDomainJoinConfiguration
 description: Windows Конфигурация устройства Domain Join.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9c929dfa6ceb79d249845a868305f6a9307c48c3cff9af98d81e011d54c44aed
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a061a2254625253a599b078f1b3aceb7cf0013e3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160879"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051057"
 ---
 # <a name="windowsdomainjoinconfiguration-resource-type"></a>тип ресурса windowsDomainJoinConfiguration
 
@@ -36,18 +36,18 @@ Windows Конфигурация устройства Domain Join.
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |**Конфигурация устройств**|
-|activeDirectoryDomainName|Строка|Доменное имя Active Directory для пользования.|
+|activeDirectoryDomainName|String|Доменное имя Active Directory для пользования.|
 |computerNameStaticPrefix|String|Исправленная префикс, которая будет использоваться для имени компьютера.|
 |computerNameSuffixRandomCharCount|Int32|Динамически созданные символы, используемые в качестве суффикса для имени компьютера. Допустимые значения от 3 до 14|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|organizationalUnit|Строка|Организационное подразделение (OU), в котором будет создана учетная запись компьютера. Если этот параметр NULL, хорошо известный контейнер объектов компьютера будет использоваться как опубликованный в домене.|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|organizationalUnit|String|Организационное подразделение (OU), в котором будет создана учетная запись компьютера. Если этот параметр NULL, хорошо известный контейнер объектов компьютера будет использоваться как опубликованный в домене.|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|supportsScopeTags|Логическое|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 
 ## <a name="relationships"></a>Связи
@@ -85,7 +85,6 @@ Windows Конфигурация устройства Domain Join.
   "activeDirectoryDomainName": "String"
 }
 ```
-
 
 
 

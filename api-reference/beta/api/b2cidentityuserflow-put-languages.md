@@ -2,15 +2,15 @@
 title: Создание языков
 description: Создание настраиваемого языка в потоке пользователей Azure AD B2C.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1aa49de8c9e32952921413ca64325b39e0dff5fc
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 5f07f92b898656b06e4eea367ecd396a81ccd645
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50944653"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049461"
 ---
 # <a name="create-languages"></a>Создание языков
 
@@ -28,12 +28,12 @@ ms.locfileid: "50944653"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Application|IdentityUserFlow.ReadWrite.All|
+|Для приложений|IdentityUserFlow.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока внешних пользователей удостоверений
+* Администратор внешних Flow удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -61,7 +61,7 @@ PUT /identity/b2cUserFlows/{id}/languages/{id}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор языка. Это поле — тег языкового [ID RFC 5646,](https://tools.ietf.org/html/rfc5646) который должен быть документированным языковым ИД. Если оно предоставлено в теле запроса, оно должно соответствовать identifer, предоставленного в URL-адресе запроса.|
+|id|String|Идентификатор языка. Это поле — тег языкового [ID RFC 5646,](https://tools.ietf.org/html/rfc5646) который должен быть документированным языковым ИД. Если оно предоставлено в теле запроса, оно должно соответствовать identifer, предоставленного в URL-адресе запроса.|
 |isEnabled|Boolean|Указывает, включен ли язык в потоке пользователей. Если это не предусмотрено в запросе, для isEnabled будет установлено "true".|
 
 ## <a name="response"></a>Отклик
@@ -114,7 +114,7 @@ Content-Type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

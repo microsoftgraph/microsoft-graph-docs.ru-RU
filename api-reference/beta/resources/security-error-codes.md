@@ -2,15 +2,15 @@
 title: Ответы Graph API безопасности
 description: Ошибки в API Graph безопасности возвращаются с помощью стандартного кода состояния частичного контента HTTP 206 и доставляются через предупреждающий заголовок.
 author: preetikr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: ff8ef9380df104e0bfb552d941c660ff2c2e6e4654842940cf6b3826510def42
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 674ccf9817d01f48a0db40906ba2cfd656ff3dfe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212985"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080571"
 ---
 # <a name="microsoft-graph-security-api-error-responses"></a>Ответы Graph API безопасности
 

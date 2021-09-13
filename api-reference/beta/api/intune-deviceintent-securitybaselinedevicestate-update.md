@@ -2,15 +2,15 @@
 title: Обновление securityBaselineDeviceState
 description: Обновление свойств объекта securityBaselineDeviceState.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f8a6cd4cbf704542e8cd14ff4680656b373c323e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 977fb5ef3960f856ad61080f8790b022dcaa880a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800893"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055033"
 ---
 # <a name="update-securitybaselinedevicestate"></a>Обновление securityBaselineDeviceState
 
@@ -29,7 +29,7 @@ ms.locfileid: "58800893"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,8 +53,8 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.s
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор сущности|
-|managedDeviceId|Строка|ID устройства Intune|
+|id|String|Уникальный идентификатор сущности|
+|managedDeviceId|String|ID устройства Intune|
 |deviceDisplayName|String|Отображение имени устройства|
 |userPrincipalName|String|"User Principal Name" (Имя участника-пользователя);|
 |state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Состояние соответствия базовым требованиям безопасности. Возможные значения: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|

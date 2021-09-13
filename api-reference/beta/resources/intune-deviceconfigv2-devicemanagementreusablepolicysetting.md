@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementReusablePolicySetting
 description: Graph модели для повторного параметров
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 27f286b5a26d761f4cc36ab3623fa3683837405a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 799fdc402bde4401a823a2d720e822a9001a04d9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782954"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051309"
 ---
 # <a name="devicemanagementreusablepolicysetting-resource-type"></a>тип ресурса deviceManagementReusablePolicySetting
 
@@ -35,10 +35,10 @@ Graph модели для повторного параметров
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|система, генерируемая многоярусным и настраиваемым id.|
-|displayName|Строка|имя отображения для повторного параметров, предоставленное пользователем.|
-|description|Строка|повторное описание параметра, предоставленное пользователем.|
-|settingDefinitionId|Строка|параметр определения, связанный с этим многопользоваемым параметром.|
+|id|String|система, генерируемая многоярусным и настраиваемым id.|
+|displayName|String|имя отображения для повторного параметров, предоставленное пользователем.|
+|description|String|повторное описание параметра, предоставленное пользователем.|
+|settingDefinitionId|String|параметр определения, связанный с этим многопользоваемым параметром.|
 |settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|экземпляр конфигурации повторного параметров|
 |createdDateTime|DateTimeOffset|дата и время создания параметров повторного параметров. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|дата и время последнего изменения параметра повторного параметров. Это свойство доступно только для чтения.|

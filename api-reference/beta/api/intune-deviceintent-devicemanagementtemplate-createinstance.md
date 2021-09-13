@@ -2,15 +2,15 @@
 title: Действие createInstance
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c1b997fa18512757c0cfbaee1d5bf4cc2fd52c03
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 274c1d48b9c52414c16d372da9b20663ba246b24
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784627"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055061"
 ---
 # <a name="createinstance-action"></a>Действие createInstance
 
@@ -29,7 +29,7 @@ ms.locfileid: "58784627"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,8 +54,8 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{devi
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Н/Д|
-|description|Строка|Пока не задокументировано.|
+|displayName|String|Н/Д|
+|description|String|Пока не задокументировано.|
 |settingsDelta|[коллекция deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Пока не задокументировано.|
 |roleScopeTagIds|Коллекция строк|Н/Д|
 

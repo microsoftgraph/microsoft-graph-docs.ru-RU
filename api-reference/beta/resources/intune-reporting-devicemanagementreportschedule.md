@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementReportSchedule
 description: Объект, представляющий расписание доставки отчетов
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9ed97e1cebfec55a6ec9420ab818f208873daa2a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3f0a75f233880345d72e5d7dedcee033d8e1097d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800347"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039331"
 ---
 # <a name="devicemanagementreportschedule-resource-type"></a>тип ресурса deviceManagementReportSchedule
 
@@ -34,18 +34,18 @@ ms.locfileid: "58800347"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для этого объекта|
-|reportScheduleName|Строка|Имя расписания|
+|id|String|Уникальный идентификатор для этого объекта|
+|reportScheduleName|String|Имя расписания|
 |subject|String|Тема запланированных отчетов, которые будут доставлены|
-|электронные письма|Коллекция String|Сообщения электронной почты, на которые доставляются запланированные отчеты|
+|электронные письма|Коллекция объектов string|Сообщения электронной почты, на которые доставляются запланированные отчеты|
 |recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|Частота доставки отчетов по расписанию. Возможные значения: `none`, `daily`, `weekly`, `monthly`.|
 |startDateTime|DateTimeOffset|Время начала доставки запланированных отчетов|
 |endDateTime|DateTimeOffset|Время окончания доставки запланированных отчетов|
 |userId|String|Id пользователя, создавшего отчет|
-|reportName|Строка|Имя отчета|
-|filter|Строка|Фильтры, применяемые в отчете|
-|select|Коллекция String|Столбцы, выбранные из отчета|
-|orderBy|Коллекция String|Порядок столбцов в отчете|
+|reportName|String|Имя отчета|
+|filter|String|Фильтры, применяемые в отчете|
+|select|Коллекция объектов string|Столбцы, выбранные из отчета|
+|orderBy|Коллекция объектов string|Порядок столбцов в отчете|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Формат запланированного отчета. Возможные значения: `csv`, `pdf`.|
 
 ## <a name="relationships"></a>Связи

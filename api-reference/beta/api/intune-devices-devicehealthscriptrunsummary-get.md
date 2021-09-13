@@ -2,15 +2,15 @@
 title: Get deviceHealthScriptRunSummary
 description: Чтение свойств и связей объекта deviceHealthScriptRunSummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ccfed8f0969c84e793cfa441ee467436d9a3eb42
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bb6fe22f7d880c42a5f45b9b4454e20104a76dda
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819986"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070722"
 ---
 # <a name="get-devicehealthscriptrunsummary"></a>Get deviceHealthScriptRunSummary
 
@@ -29,7 +29,7 @@ ms.locfileid: "58819986"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

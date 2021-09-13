@@ -2,15 +2,15 @@
 title: тип ресурса userExperienceAnalyticsWorkFromAnywhereDevicesSummary
 description: Аналитика пользовательского интерфейса Work From Anywhere metrics devices summary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ffcda6267262de61773d22344d3995279f7d092c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c3f34ed09d9012f13987aed291ff632f16d064c6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783927"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046885"
 ---
 # <a name="userexperienceanalyticsworkfromanywheredevicessummary-resource-type"></a>тип ресурса userExperienceAnalyticsWorkFromAnywhereDevicesSummary
 

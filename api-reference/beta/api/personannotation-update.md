@@ -2,15 +2,15 @@
 title: Обновление personAnnotation
 description: Обновление свойств объекта personAnnotation.
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: a86467b01d6072f4a14dad6fc5d1a6838249899b
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 343fb581ec1e2a6b202a4430b3945bbb9c606969
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774168"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051693"
 ---
 # <a name="update-personannotation"></a>Обновление personAnnotation
 Пространство имен: microsoft.graph

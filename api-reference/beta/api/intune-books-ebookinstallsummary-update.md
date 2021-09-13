@@ -2,15 +2,15 @@
 title: Update eBookInstallSummary
 description: Обновление свойств объекта eBookInstallSummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c2fe35ae06bb25e842e1354c6f8dec766fba1ee8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9a6754561c19e198bdfe228f898ff43739354143
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817581"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049097"
 ---
 # <a name="update-ebookinstallsummary"></a>Update eBookInstallSummary
 

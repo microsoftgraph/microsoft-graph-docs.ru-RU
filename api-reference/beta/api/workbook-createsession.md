@@ -2,15 +2,15 @@
 title: Создание сеанса
 description: 'Создание нового сеанса книги. '
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0a93a602d5f10e3b99b18ed310bdf4c933dcf8aa
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 8175bc48847aaa4349b6b2b1f44950b396bdaa3b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50578819"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59076140"
 ---
 # <a name="create-session"></a>Создание сеанса
 

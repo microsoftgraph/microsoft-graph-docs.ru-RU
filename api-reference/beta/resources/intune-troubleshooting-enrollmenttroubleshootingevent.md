@@ -2,15 +2,15 @@
 title: Тип ресурса enrollmentTroubleshootingEvent
 description: Событие, представляющее сбой при регистрации.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a0dd5ce4c385af2015476bc4359cc8f9cb70ea24
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: b3d6c8298c3efc10986b0b06ad69b5b288df43cb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58258035"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057245"
 ---
 # <a name="enrollmenttroubleshootingevent-resource-type"></a>Тип ресурса enrollmentTroubleshootingEvent
 

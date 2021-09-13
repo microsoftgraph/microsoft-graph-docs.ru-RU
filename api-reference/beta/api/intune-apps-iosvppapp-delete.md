@@ -2,15 +2,15 @@
 title: Delete iosVppApp
 description: Удаляет объект iosVppApp.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ee8343e3668a3d96fb444ce78edd5620701b44aa
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4889956a2c192ed846a56bf4818e2950783e8136
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58769196"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055453"
 ---
 # <a name="delete-iosvppapp"></a>Delete iosVppApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "58769196"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

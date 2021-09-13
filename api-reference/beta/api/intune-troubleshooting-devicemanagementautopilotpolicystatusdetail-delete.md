@@ -2,15 +2,15 @@
 title: Удаление deviceManagementAutopilotPolicyStatusDetail
 description: Удаляет устройствоManagementAutopilotPolicyStatusDetail.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a9d8016115950ea86dc04274ce73c630e550716
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: e9ad23e512cb7e192a239f2da9a62ca94913d84f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265828"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59058442"
 ---
 # <a name="delete-devicemanagementautopilotpolicystatusdetail"></a>Удаление deviceManagementAutopilotPolicyStatusDetail
 
@@ -27,7 +27,7 @@ ms.locfileid: "58265828"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +41,7 @@ DELETE /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/poli
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

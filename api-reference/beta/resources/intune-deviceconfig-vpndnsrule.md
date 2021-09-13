@@ -2,15 +2,15 @@
 title: тип ресурса vpnDnsRule
 description: Определение правила VPN DNS.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1277bb254a9485bc2adc26859185adfe5d22ad5b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e034016fe3a6eff5d84db1421e5e6e80d1f70be3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793875"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081215"
 ---
 # <a name="vpndnsrule-resource-type"></a>тип ресурса vpnDnsRule
 
@@ -26,10 +26,10 @@ ms.locfileid: "58793875"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |name|String|Имя.|
-|серверы|Коллекция String|Серверы.|
-|proxyServerUri|Строка|Прокси-сервер Uri.|
-|autoTrigger|Логический|Автоматически подключайтесь к VPN при подключении устройства к этому домену: False по умолчанию.|
-|стойкий|Логический|Сохранение этого правила активным даже при не подключении VPN: False по умолчанию|
+|серверы|Коллекция объектов string|Серверы.|
+|proxyServerUri|String|Прокси-сервер Uri.|
+|autoTrigger|Boolean|Автоматически подключайтесь к VPN при подключении устройства к этому домену: False по умолчанию.|
+|стойкий|Логическое|Сохранение этого правила активным даже при не подключении VPN: False по умолчанию|
 
 ## <a name="relationships"></a>Связи
 Нет

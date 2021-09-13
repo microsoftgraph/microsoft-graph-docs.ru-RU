@@ -2,15 +2,15 @@
 title: тип ресурса deviceConfigurationGroupAssignment
 description: Назначение группы конфигурации устройства.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a379e082f8ad77b16357aaddaeb2ed05c3089547
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5793f60303716a57ed98bf315b7112e89c1251cb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803295"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051442"
 ---
 # <a name="deviceconfigurationgroupassignment-resource-type"></a>тип ресурса deviceConfigurationGroupAssignment
 
@@ -34,9 +34,9 @@ ms.locfileid: "58803295"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |targetGroupId|String|Id группы AAD, на который ориентирована конфигурация устройства.|
-|excludeGroup|Boolean|Указывает, следует ли исключить эту группу. По умолчанию, которые следует включить в группу|
+|excludeGroup|Логическое|Указывает, следует ли исключить эту группу. По умолчанию, которые следует включить в группу|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

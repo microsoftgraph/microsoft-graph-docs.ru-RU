@@ -2,15 +2,15 @@
 title: Создание androidDeviceOwnerVpnConfiguration
 description: Создайте новый объект androidDeviceOwnerVpnConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 209d7954e70f597605e35540d3e4d3a4a64aff27
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 221133861bc868be85ec30f3c7511072e5d44e87
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794660"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59048831"
 ---
 # <a name="create-androiddeviceownervpnconfiguration"></a>Создание androidDeviceOwnerVpnConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "58794660"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,29 +54,29 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|supportsScopeTags|Логическое|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость к выпуску ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Метод проверки подлинности. Унаследовано от [VPNConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md). Возможные значения: `certificate`, `usernameAndPassword`, `sharedSecret`, `derivedCredential`, `azureAD`.|
-|connectionName|Строка|Имя подключения, отображаемая пользователю. Унаследованный от [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
+|connectionName|String|Имя подключения, отображаемая пользователю. Унаследованный от [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
 |role|String|Роль при наборе типа подключения к Pulse Secure. Унаследованный от [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
-|realm|Строка|Realm, когда тип подключения за установлен в Pulse Secure. Унаследованный от [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
+|realm|String|Realm, когда тип подключения за установлен в Pulse Secure. Унаследованный от [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
 |серверы|[коллекция vpnServer](../resources/intune-deviceconfig-vpnserver.md)|Список VPN-серверов в сети. Убедитесь, что конечные пользователи могут получить доступ к этим сетевым расположениям. Эта коллекция может содержать не более 500 элементов. Унаследованный от [vpnConfiguration](../resources/intune-deviceconfig-vpnconfiguration.md)|
 |connectionType|[androidVpnConnectionType](../resources/intune-deviceconfig-androidvpnconnectiontype.md)|Тип подключения. Возможные значения: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`, `microsoftTunnel`, `netMotionMobility`, `microsoftProtect`.|
 |proxyServer|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|Прокси-сервер.|
-|targetedPackageIds|Коллекция String|Целевые ID-адресов пакета приложений.|
+|targetedPackageIds|Коллекция объектов string|Целевые ID-адресов пакета приложений.|
 |targetedMobileApps|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Целевые мобильные приложения. Эта коллекция может содержать не более 500 элементов.|
-|alwaysOn|Логический|Включить или не включить всегда на VPN-подключение.|
-|alwaysOnLockdown|Логический|Если включено всегда подключение к VPN, следует ли заблокировать сетевой трафик при отключении ЭТОГО VPN.|
-|microsoftTunnelSiteId|Строка|Microsoft Tunnel сайта.|
+|alwaysOn|Логическое|Включить или не включить всегда на VPN-подключение.|
+|alwaysOnLockdown|Логическое|Если включено всегда подключение к VPN, следует ли заблокировать сетевой трафик при отключении ЭТОГО VPN.|
+|microsoftTunnelSiteId|String|Microsoft Tunnel сайта.|
 |customData|Коллекция [keyValue](../resources/intune-deviceconfig-keyvalue.md)|Настраиваемые данные для определения пар ключей и значений, определенных поставщику VPN. Эта коллекция может содержать не более 25 элементов.|
 |customKeyValueData|Коллекция [keyValuePair](../resources/intune-deviceconfig-keyvaluepair.md)|Настраиваемые данные для определения пар ключей и значений, определенных поставщику VPN. Эта коллекция может содержать не более 25 элементов.|
 

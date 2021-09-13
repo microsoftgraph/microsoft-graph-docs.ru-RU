@@ -2,15 +2,15 @@
 title: Обновление deviceManagementStringSettingInstance
 description: Обновление свойств объекта deviceManagementStringSettingInstance.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8c8a38f9d6afb96436e9a6751b525fbdcc523790
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a9268b10189162a174bc7a80588a16114dbe5c01
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803667"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055110"
 ---
 # <a name="update-devicemanagementstringsettinginstance"></a>Обновление deviceManagementStringSettingInstance
 
@@ -56,7 +56,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|ID экземпляра параметра, унаследованный от [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|id|String|ID экземпляра параметра, унаследованный от [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
 |definitionId|String|ID определения параметра для этого экземпляра, унаследованный от [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
 |valueJson|String|Представление JSON значения, унаследованной от [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
 |value|String|Значение строки|

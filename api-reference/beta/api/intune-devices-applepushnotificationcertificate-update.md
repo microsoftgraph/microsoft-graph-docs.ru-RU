@@ -2,15 +2,15 @@
 title: Обновление объекта applePushNotificationCertificate
 description: Обновление свойств объекта applePushNotificationCertificate.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a35c7f1369344fd194258ef924daf700cac7fa30
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 550571c0d00ce5bd72a58be84f9ad9a03fb7c78f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797733"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054991"
 ---
 # <a name="update-applepushnotificationcertificate"></a>Обновление объекта applePushNotificationCertificate
 
@@ -29,7 +29,7 @@ ms.locfileid: "58797733"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,14 +53,14 @@ PATCH /deviceManagement/applePushNotificationCertificate
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор сертификата|
+|id|String|Уникальный идентификатор сертификата|
 |appleIdentifier|String|Идентификатор Apple Id учетной записи, используемой для создания MDM Push Certificate.|
 |topicIdentifier|String|Идентификатор темы.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сертификата push-уведомлений Apple.|
 |expirationDateTime|DateTimeOffset|Дата и время окончания срока действия для сертификата push-уведомлений Apple.|
-|certificateUploadStatus|Строка|Состояние загрузки сертификата.|
-|certificateUploadFailureReason|Строка|Причина сбой загрузки сертификата.|
-|certificateSerialNumber|Строка|Серийный номер сертификата. Это свойство доступно только для чтения.|
+|certificateUploadStatus|String|Состояние загрузки сертификата.|
+|certificateUploadFailureReason|String|Причина сбой загрузки сертификата.|
+|certificateSerialNumber|String|Серийный номер сертификата. Это свойство доступно только для чтения.|
 |certificate|String|Пока не задокументировано.|
 
 

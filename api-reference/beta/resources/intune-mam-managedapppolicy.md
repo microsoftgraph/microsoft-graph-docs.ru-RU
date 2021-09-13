@@ -2,15 +2,15 @@
 title: Тип ресурса managedAppPolicy
 description: Ресурс ManagedAppPolicy представляет базовый тип политик для определенных платформ.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0e03efcfdc49f41ee52c401ff7a70a8734cb3a3c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bc10be26a13b8f6d72a53ea327c468b3712d28fd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821096"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068910"
 ---
 # <a name="managedapppolicy-resource-type"></a>Тип ресурса managedAppPolicy
 
@@ -33,14 +33,14 @@ ms.locfileid: "58821096"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|String|Отображаемое имя политики.|
-|description|String|Описание политики.|
+|description|Строка|Описание политики.|
 |createdDateTime|DateTimeOffset|Дата и время создания политики.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики.|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
+|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity.|
 |id|String|Ключ объекта.|
 |version|String|Версия объекта.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

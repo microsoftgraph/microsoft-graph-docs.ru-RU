@@ -2,15 +2,15 @@
 title: Обновление deviceManagementAutopilotEvent
 description: Обновление свойств объекта deviceManagementAutopilotEvent.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6aa00754dbf99bb687b29f9d04fcedbaaa2827a
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 726c1a5c4f0075f6de4882d84778b4dc6d30d348
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58253497"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051784"
 ---
 # <a name="update-devicemanagementautopilotevent"></a>Обновление deviceManagementAutopilotEvent
 
@@ -27,7 +27,7 @@ ms.locfileid: "58253497"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +41,7 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -63,7 +63,7 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 |windowsAutopilotDeploymentProfileDisplayName|String|Имя профиля автопилота.|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Состояние регистрации, как "Регистрация", "Сбой". Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |windows10EnrollmentCompletionPageConfigurationDisplayName|String|Имя профиля страницы состояния регистрации|
-|windows10EnrollmentCompletionPageConfigurationId|Строка|ID профиля страницы состояния регистрации|
+|windows10EnrollmentCompletionPageConfigurationId|String|ID профиля страницы состояния регистрации|
 |deploymentState|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Состояние развертывания, такое как Success, Failure, InProgress, SuccessWithTimeout. Возможные значения: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
 |deviceSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Состояние развертывания для этапа установки устройства состояния страницы регистрации. Возможные значения: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
 |accountSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Состояние развертывания для этапа настройки учетной записи страницы состояния регистрации. Возможные значения: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
@@ -77,7 +77,7 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 |deploymentEndDateTime|DateTimeOffset|Время окончания развертывания.|
 |targetedAppCount|Int32|Количество целевых приложений.|
 |targetedPolicyCount|Int32|Количество целевых политик.|
-|enrollmentFailureDetails|Строка|Сведения о сбое регистрации.|
+|enrollmentFailureDetails|String|Сведения о сбое регистрации.|
 
 
 

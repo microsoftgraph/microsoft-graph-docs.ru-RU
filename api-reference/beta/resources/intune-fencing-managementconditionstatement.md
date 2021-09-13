@@ -2,15 +2,15 @@
 title: тип ресурса managementConditionStatement
 description: Заявление об условиях управления — это группа условий управления, которые позволяют/отключать конфигурации устройств и приложений при условии, что все условия управления выполнены.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 367739eb54144b29fc0d109174f2d89108418d0b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6a4223de89f7c7dfaf79e5f0bd2494d354654506
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58769483"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063967"
 ---
 # <a name="managementconditionstatement-resource-type"></a>тип ресурса managementConditionStatement
 
@@ -37,7 +37,7 @@ ms.locfileid: "58769483"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для утверждения условий управления. Созданное в системе значение, назначенное при его создания.|
-|displayName|Строка|Администратор определил имя заявления об условиях управления.|
+|displayName|String|Администратор определил имя заявления об условиях управления.|
 |description|Строка|Администратор определил описание инструкции по состоянию управления.|
 |createdDateTime|DateTimeOffset|Время создания заявления об условиях управления. Сгенерированная сторона службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения состояния управления. Обновленная сторона службы.|
@@ -46,7 +46,7 @@ ms.locfileid: "58769483"
 |applicablePlatforms|[коллекция devicePlatformType](../resources/intune-fencing-deviceplatformtype.md)|Применимые платформы для этого утверждения условий управления.
 Это рассчитывается из поиска условий управления, связанных с утверждением условий управления и поиска пересечения применимых платформ.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |managementConditions|[коллекция managementCondition](../resources/intune-fencing-managementcondition.md)|Условия управления, связанные с утверждением условий управления.|

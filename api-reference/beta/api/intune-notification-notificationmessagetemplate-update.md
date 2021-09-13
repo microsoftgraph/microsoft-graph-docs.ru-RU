@@ -2,15 +2,15 @@
 title: Обновление объекта notificationMessageTemplate
 description: Обновление свойств объекта notificationMessageTemplate.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4bfd4fb8a6a5e196f88170c7d0b7b03fe15ebc93
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a39f354426d23f5361c215707f65d86648a72290
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805130"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052085"
 ---
 # <a name="update-notificationmessagetemplate"></a>Обновление объекта notificationMessageTemplate
 
@@ -53,12 +53,12 @@ PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplat
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|displayName|Строка|Отображаемое имя для шаблона сообщения уведомления.|
+|displayName|String|Отображаемое имя для шаблона сообщения уведомления.|
 |defaultLocale|String|Языковой стандарт по умолчанию, который используется, если запрошенный языковой стандарт недоступен.|
 |brandingOptions|[notificationTemplateBrandingOptions](../resources/intune-notification-notificationtemplatebrandingoptions.md)|Параметры фирменной символики шаблона сообщения. Фирменная символика определяется в консоли администрирования Intune. Возможные значения: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`, `includeCompanyPortalLink`.|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity.|
 
 
 

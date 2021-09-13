@@ -2,15 +2,15 @@
 title: Список deviceManagementBooleanSettingInstances
 description: Список свойств и связей объектов deviceManagementBooleanSettingInstance.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5878c12a3fefd364e94d5ca8f0ba6c9220efa62a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 69086dacfd3d2e8a1ed072238b03298680470429
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820627"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082734"
 ---
 # <a name="list-devicemanagementbooleansettinginstances"></a>Список deviceManagementBooleanSettingInstances
 

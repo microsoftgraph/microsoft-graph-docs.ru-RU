@@ -2,15 +2,15 @@
 title: тип ресурса redirectSingleSignOnExtension
 description: Представляет одноместный Sign-On Apple.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e0b78b7c642fa2a541ef76361d79579cc15ef8d1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 47084540ab278c9e4f4014b4e7fd4be50c7af3fa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806672"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054410"
 ---
 # <a name="redirectsinglesignonextension-resource-type"></a>тип ресурса redirectSingleSignOnExtension
 
@@ -28,10 +28,10 @@ ms.locfileid: "58806672"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|extensionIdentifier|Строка|Получает или задает пакетный ID расширения приложения, который выполняет SSO для указанных URL-адресов.|
-|teamIdentifier|Строка|Получает или задает командный ID расширения приложения, которое выполняет SSO для указанных URL-адресов.|
+|extensionIdentifier|String|Получает или задает пакетный ID расширения приложения, который выполняет SSO для указанных URL-адресов.|
+|teamIdentifier|String|Получает или задает командный ID расширения приложения, которое выполняет SSO для указанных URL-адресов.|
 |конфигурации|[коллекция keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|Получает или задает список пар значений ключей, используемых для настройки профилей типа учетных данных. Эта коллекция может содержать не более 500 элементов.|
-|urlPrefixes|Коллекция String|Один или несколько префиксов URL-адресов поставщиков удостоверений, от имени которых расширение приложения выполняет один вход. URL-адреса должны начинаться с http:// или https://. Все префиксы URL-адресов должны быть уникальными для всех профилей.|
+|urlPrefixes|Коллекция объектов string|Один или несколько префиксов URL-адресов поставщиков удостоверений, от имени которых расширение приложения выполняет один вход. URL-адреса должны начинаться с http:// или https://. Все префиксы URL-адресов должны быть уникальными для всех профилей.|
 
 ## <a name="relationships"></a>Связи
 Нет

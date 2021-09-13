@@ -2,15 +2,15 @@
 title: Создание AndroidManagedStoreWebApp
 description: Создание нового объекта AndroidManagedStoreWebApp.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d1ebdecbba2d2960a6c9a2f86e22bbac760012a5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f8e95b240a3c647cbb5c440047277f30d9c1d977
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793777"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077974"
 ---
 # <a name="create-androidmanagedstorewebapp"></a>Создание AndroidManagedStoreWebApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "58793777"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,9 +53,9 @@ POST /deviceAppManagement/mobileApps
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|description|Строка|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|id|String|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|description|String|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
@@ -69,7 +69,7 @@ POST /deviceAppManagement/mobileApps
 |uploadState|Int32|Состояние загрузки. Возможные значения: 0 - `Not Ready` , 1 - `Ready` , 2 - `Processing` . Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Унаследованный от [mobileApp](../resources/intune-shared-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложению по крайней мере одна группа. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|roleScopeTagIds|Коллекция String|Список ids тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|roleScopeTagIds|Коллекция объектов string|Список ids тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |dependentAppCount|Int32|Общее число зависимостей, которые имеет детское приложение. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |supersedingAppCount|Int32|Общее число приложений, которые это приложение прямо или косвенно перемежает. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |supersededAppCount|Int32|Общее число приложений, которые это приложение прямо или косвенно вымежает. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
@@ -78,10 +78,10 @@ POST /deviceAppManagement/mobileApps
 |usedLicenseCount|Int32|Количество используемых лицензий VPP. Унаследованный от [AndroidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |totalLicenseCount|Int32|Общее количество лицензий VPP. Унаследованный от [AndroidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |appStoreUrl|String|URL-адрес приложения Play for Work Store. Унаследованный от [AndroidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
-|isPrivate|Логический|Указывает, доступно ли приложение только пользователям данного предприятия. Унаследованный от [AndroidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
-|isSystemApp|Логический|Указывает, является ли приложение предустановленным системным приложением. Унаследованный от [AndroidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|isPrivate|Boolean|Указывает, доступно ли приложение только пользователям данного предприятия. Унаследованный от [AndroidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|isSystemApp|Boolean|Указывает, является ли приложение предустановленным системным приложением. Унаследованный от [AndroidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 |appTracks|[коллекция AndroidManagedStoreAppTrack](../resources/intune-apps-androidmanagedstoreapptrack.md)|Отслеживает, которые видны этому предприятию. Унаследованный от [AndroidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
-|supportsOemConfig|Логический|Поддерживает ли это приложение политику OEMConfig. Унаследованный от [AndroidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
+|supportsOemConfig|Логическое|Поддерживает ли это приложение политику OEMConfig. Унаследованный от [AndroidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|
 
 
 

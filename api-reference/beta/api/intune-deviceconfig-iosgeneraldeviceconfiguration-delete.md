@@ -2,15 +2,15 @@
 title: Delete iosGeneralDeviceConfiguration
 description: Удаляет объект iosGeneralDeviceConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d18f20472f1c9d2b7b2f763c13980938c934b695
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cc36a88ea69c65021305de5c06b1552b6040c501
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790579"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034935"
 ---
 # <a name="delete-iosgeneraldeviceconfiguration"></a>Delete iosGeneralDeviceConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "58790579"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

@@ -2,15 +2,15 @@
 title: тип ресурса appleUserInitiatedEnrollmentProfile
 description: Ресурс enrollmentProfile представляет коллекцию конфигураций, которые должны быть предоставлены для предварительной регистрации, чтобы включить регистрацию определенных устройств, удостоверения которых были предварительно постановлены. Для применения конфигураций профиля при регистрации соответствующего устройства этому типу профиля назначены предустановки устройств.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6d852f5d2bcb4397c14adc0a98f1e8b23c161d76
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f9fd4060d2f5606326744522e0a9e519714ee28f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820858"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081012"
 ---
 # <a name="appleuserinitiatedenrollmentprofile-resource-type"></a>тип ресурса appleUserInitiatedEnrollmentProfile
 

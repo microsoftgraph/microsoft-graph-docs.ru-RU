@@ -2,15 +2,15 @@
 title: тип enum adminConsentState
 description: Состояние согласия администратора.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8af1a2d4961ba8937975ba0e4b6d8a650138a000
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d454bad7522e290f358168faebcd7b5bc54209a1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797256"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068951"
 ---
 # <a name="adminconsentstate-enum-type"></a>тип enum adminConsentState
 

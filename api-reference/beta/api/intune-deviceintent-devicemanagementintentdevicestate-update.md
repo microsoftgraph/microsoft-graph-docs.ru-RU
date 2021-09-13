@@ -2,15 +2,15 @@
 title: Обновление deviceManagementIntentDeviceState
 description: Обновление свойств объекта deviceManagementIntentDeviceState.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ae32de31b2764e4ac984ec8f8742ca0f2f9dc33b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4461867e66b76d54fdca6f8984e7403e705fbd6c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798015"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59048432"
 ---
 # <a name="update-devicemanagementintentdevicestate"></a>Обновление deviceManagementIntentDeviceState
 
@@ -29,7 +29,7 @@ ms.locfileid: "58798015"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +53,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/deviceStates/{deviceM
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|The ID|
+|id|String|The ID|
 |userPrincipalName|String|Основное имя пользователя, которое сообщается на устройстве|
 |userName|String|Имя пользователя, которое сообщается на устройстве|
 |deviceDisplayName|String|Имя устройства, которое сообщается|

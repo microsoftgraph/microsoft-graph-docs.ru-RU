@@ -2,15 +2,15 @@
 title: Удаление deviceManagementConfigurationPolicyPolicySetItem
 description: Удаляет устройствоManagementConfigurationPolicyPolicySetItem.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 79addb35d09b7d5aef663d3a4339d15c301753b5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3bee80fbdab230c7573049dc843cd2d5efd77be9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788740"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59041586"
 ---
 # <a name="delete-devicemanagementconfigurationpolicypolicysetitem"></a>Удаление deviceManagementConfigurationPolicyPolicySetItem
 
@@ -29,7 +29,7 @@ ms.locfileid: "58788740"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

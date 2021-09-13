@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementAutopilotEvent
 description: Представляет событие потока автопилота.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d438723ab14cb9fd47828bbaba3b45ccbf5f7f13
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 60457bbd831d792915c7e3f43443e1dfaf0bc84e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266802"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051022"
 ---
 # <a name="devicemanagementautopilotevent-resource-type"></a>тип ресурса deviceManagementAutopilotEvent
 
@@ -43,8 +43,8 @@ ms.locfileid: "58266802"
 |userPrincipalName|String|Имя пользователя, используемая для регистрации устройства.|
 |windowsAutopilotDeploymentProfileDisplayName|String|Имя профиля автопилота.|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Состояние регистрации, как "Регистрация", "Сбой". Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|windows10EnrollmentCompletionPageConfigurationDisplayName|Строка|Имя профиля страницы состояния регистрации|
-|windows10EnrollmentCompletionPageConfigurationId|Строка|ID профиля страницы состояния регистрации|
+|windows10EnrollmentCompletionPageConfigurationDisplayName|String|Имя профиля страницы состояния регистрации|
+|windows10EnrollmentCompletionPageConfigurationId|String|ID профиля страницы состояния регистрации|
 |deploymentState|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Состояние развертывания, такое как Success, Failure, InProgress, SuccessWithTimeout. Возможные значения: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
 |deviceSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Состояние развертывания для этапа установки устройства состояния страницы регистрации. Возможные значения: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
 |accountSetupStatus|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Состояние развертывания для этапа настройки учетной записи страницы состояния регистрации. Возможные значения: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`, `notAttempted`, `disabled`.|
@@ -58,7 +58,7 @@ ms.locfileid: "58266802"
 |deploymentEndDateTime|DateTimeOffset|Время окончания развертывания.|
 |targetedAppCount|Int32|Количество целевых приложений.|
 |targetedPolicyCount|Int32|Количество целевых политик.|
-|enrollmentFailureDetails|Строка|Сведения о сбое регистрации.|
+|enrollmentFailureDetails|String|Сведения о сбое регистрации.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

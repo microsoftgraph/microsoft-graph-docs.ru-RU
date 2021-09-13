@@ -2,15 +2,15 @@
 title: тип ресурса windowsDefenderApplicationControlSupplementalPolicy
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d5d8e0ccfdf23a16c4fa713cb75a30299bb4e269
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e20f4c9a868d842f5de915f1491d2a9f4428888e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800340"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039016"
 ---
 # <a name="windowsdefenderapplicationcontrolsupplementalpolicy-resource-type"></a>тип ресурса windowsDefenderApplicationControlSupplementalPolicy
 
@@ -37,13 +37,13 @@ ms.locfileid: "58800340"
 |:---|:---|:---|
 |id|String|Ключ для дополнительной политики WindowsDefenderApplicationControl.|
 |displayName|String|Отображение имени дополнительной политики WindowsDefenderApplicationControl.|
-|description|Строка|Описание дополнительной политики WindowsDefenderApplicationControl.|
+|description|String|Описание дополнительной политики WindowsDefenderApplicationControl.|
 |содержимое|В двоичном формате|Контент дополнительной политики WindowsDefenderApplicationControl в формате byte array.|
-|contentFileName|Строка|Имя файла дополнительного контента политики WindowsDefenderApplicationControl.|
+|contentFileName|String|Имя файла дополнительного контента политики WindowsDefenderApplicationControl.|
 |version|String|Версия дополнительной политики WindowsDefenderApplicationControl.|
 |creationDateTime|DateTimeOffset|Дата и время отправки дополнительной политики WindowsDefenderApplicationControl.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения политики дополнительных приложений WindowsDefenderApplicationControl.|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого объекта дополнительной политики WindowsDefenderApplicationControl.|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого объекта дополнительной политики WindowsDefenderApplicationControl.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

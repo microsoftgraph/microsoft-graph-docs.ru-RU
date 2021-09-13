@@ -2,15 +2,15 @@
 title: Обновление устройстваHealthScriptDeviceState
 description: Обновление свойств объекта deviceHealthScriptDeviceState.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f204831de5ae743e2c7d8621efd2af16e0ee959c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 84afe17183b25fc476b9be63e50acb4e3f45ef2c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815976"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052260"
 ---
 # <a name="update-devicehealthscriptdevicestate"></a>Обновление устройстваHealthScriptDeviceState
 
@@ -53,18 +53,18 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunStat
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ состояния состояния скрипта устройства для устройства. Это свойство доступно только для чтения.|
+|id|String|Ключ состояния состояния скрипта устройства для устройства. Это свойство доступно только для чтения.|
 |detectionState|[runState](../resources/intune-devices-runstate.md)|Состояние обнаружения из последнего выполнения скрипта для здоровья устройств. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |lastStateUpdateDateTime|DateTimeOffset|Последний период выполнения скрипта для здоровья устройств|
 |expectedStateUpdateDateTime|DateTimeOffset|Следующий период, когда ожидается выполнение сценария состояния устройства|
 |lastSyncDateTime|DateTimeOffset|Последний раз, когда расширение управления Intune синхронизировали с Intune|
-|preRemediationDetectionScriptOutput|Строка|Выход сценария обнаружения перед исправлением|
-|preRemediationDetectionScriptError|Строка|Ошибка из сценария обнаружения перед исправлением|
-|remediationScriptError|Строка|Выход ошибки сценария восстановления|
-|postRemediationDetectionScriptOutput|Строка|Вывод скрипта обнаружения после устранения|
-|postRemediationDetectionScriptError|Строка|Ошибка из сценария обнаружения после устранения|
+|preRemediationDetectionScriptOutput|String|Выход сценария обнаружения перед исправлением|
+|preRemediationDetectionScriptError|String|Ошибка из сценария обнаружения перед исправлением|
+|remediationScriptError|String|Выход ошибки сценария восстановления|
+|postRemediationDetectionScriptOutput|String|Вывод скрипта обнаружения после устранения|
+|postRemediationDetectionScriptError|String|Ошибка из сценария обнаружения после устранения|
 |remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|Состояние исправлений из последнего выполнения скрипта для здоровья устройств. Возможные значения: `unknown`, `skipped`, `success`, `remediationFailed`, `scriptError`.|
-|assignmentFilterIds|Коллекция String|Список ids фильтра назначения, используемых для оценки применимости скрипта для здоровья|
+|assignmentFilterIds|Коллекция объектов string|Список ids фильтра назначения, используемых для оценки применимости скрипта для здоровья|
 
 
 

@@ -2,15 +2,15 @@
 title: Перечисление объектов iosVppEBook
 description: Список свойств и связей объектов iosVppEBook.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e03fcd5cbc429b307dd1a36800a8b6507faffa80
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b6593a836324553c1a8a7bc2e3ae59ab1f7d0c4a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818191"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049012"
 ---
 # <a name="list-iosvppebooks"></a>Перечисление объектов iosVppEBook
 

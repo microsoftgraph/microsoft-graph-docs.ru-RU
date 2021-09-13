@@ -2,15 +2,15 @@
 title: Обновление userExperienceAnalyticsResourcePerformance
 description: Обновление свойств объекта userExperienceAnalyticsResourcePerformance.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ac54b87e36d0d39f0f744c85ef5102e561161511
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 105f3f77d18cbc2ed292b5d641d5185211f4ca47
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784599"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077022"
 ---
 # <a name="update-userexperienceanalyticsresourceperformance"></a>Обновление userExperienceAnalyticsResourcePerformance
 
@@ -29,7 +29,7 @@ ms.locfileid: "58784599"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +53,7 @@ PATCH /deviceManagement/userExperienceAnalyticsResourcePerformance/{userExperien
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор сущности производительности ресурсов аналитики пользовательских интерфейсов.|
+|id|String|Уникальный идентификатор сущности производительности ресурсов аналитики пользовательских интерфейсов.|
 |deviceId|String|ID устройства.|
 |deviceName|String|Имя устройства.|
 |model|String|Модель устройства аналитики пользовательских интерфейсов.|

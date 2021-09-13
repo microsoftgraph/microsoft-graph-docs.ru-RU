@@ -2,15 +2,15 @@
 title: Создание windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
 description: Создайте новый объект WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatus.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4043dd153ef083dd02c5a2b96c15e6f14ad29f90
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7f5ce634cdfd451eef59e581708416c21b318286
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784515"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59047816"
 ---
 # <a name="create-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus"></a>Создание windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
 
@@ -29,7 +29,7 @@ ms.locfileid: "58784515"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +53,7 @@ POST /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationCo
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |deviceName|String|Имя устройства.|
 |deviceId|String|ID устройства.|
 |lastSyncDateTime|DateTimeOffset|Дата последней синхронизации.|
@@ -62,7 +62,7 @@ POST /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationCo
 |deploymentStatus|[windowsDefenderApplicationControlSupplementalPolicyStatuses](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicystatuses.md)|Состояние развертывания политики. Возможные значения: `unknown`, `success`, `tokenError`, `notAuthorizedByToken`, `policyNotFound`.|
 |userName|String|Имя пользователя этого устройства.|
 |userPrincipalName|String|Имя главного пользователя.|
-|policyVersion|Строка|Человеческая читаемая версия дополнительной политики WindowsDefenderApplicationControl.|
+|policyVersion|String|Человеческая читаемая версия дополнительной политики WindowsDefenderApplicationControl.|
 
 
 

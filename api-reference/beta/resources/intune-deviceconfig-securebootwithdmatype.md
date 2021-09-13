@@ -2,15 +2,15 @@
 title: тип enum secureBootWithDMAType
 description: Возможные значения безопасной загрузки с помощью DMA
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 86b67ab1bbf492cdc3dab8fefc70f2e721eace08
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b3749bd31d1ede95778d996ef4ddb3654ccdc1dc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791876"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057455"
 ---
 # <a name="securebootwithdmatype-enum-type"></a>тип enum secureBootWithDMAType
 

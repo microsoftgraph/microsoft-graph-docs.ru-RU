@@ -2,15 +2,15 @@
 title: Создать importedWindowsAutopilotDeviceIdentity
 description: Создать новый объект importedWindowsAutopilotDeviceIdentity.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 23d1457b856ae50eaf48bbbb9855fbd5d211a70a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dbba2adca2ffa1e827cadeffd9ea61a3b42eda1c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791342"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082461"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>Создать importedWindowsAutopilotDeviceIdentity
 
@@ -29,7 +29,7 @@ ms.locfileid: "58791342"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,14 +53,14 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentities
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|GUID объекта|
-|groupTag|Строка|Тег группы устройства Windows автопилота.|
+|id|String|GUID объекта|
+|groupTag|String|Тег группы устройства Windows автопилота.|
 |serialNumber|Строка|Серийный номер устройства Windows Autopilot.|
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
-|importId|Строка|Импорт Id устройства Windows автопилота.|
+|importId|String|Импорт Id устройства Windows автопилота.|
 |hardwareIdentifier|Двоичный|Аппаратный большой двоичный объект (BLOB) устройства Windows Autopilot.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Текущее состояние импортированного устройства.|
-|assignedUserPrincipalName|Строка|UPN пользователя, на которое будет назначено устройство|
+|assignedUserPrincipalName|String|UPN пользователя, на которое будет назначено устройство|
 
 
 

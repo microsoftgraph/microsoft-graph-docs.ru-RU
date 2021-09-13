@@ -2,15 +2,15 @@
 title: Тип ресурса rolePermission
 description: Содержит набор ResourceActions, определяющий разрешенные и не разрешенные разрешения для каждой роли.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 23e0105ee67fdf26d0edf97a3074281150b98745
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6deb8611561d38de66c998cc373a8e5aa3556d3a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58757869"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039576"
 ---
 # <a name="rolepermission-resource-type"></a>Тип ресурса rolePermission
 
@@ -25,7 +25,7 @@ ms.locfileid: "58757869"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|actions|Коллекция String|Разрешенные действия|
+|actions|Коллекция объектов string|Разрешенные действия|
 |resourceActions|Коллекция объектов [resourceAction](../resources/intune-rbac-resourceaction.md)|Действия ресурса, каждый из которых содержит набор разрешенных и не разрешенных разрешений.|
 
 ## <a name="relationships"></a>Связи

@@ -2,15 +2,15 @@
 title: тип enum deviceEnrollmentType
 description: Возможные способы добавления мобильного устройства в управление.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 38ef6bde17bb005b9e08c9ba957ff6c4ee0a4fd5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 632f0b3557cf6b78394a2a70cdcafefb52893905
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803260"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057280"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>тип enum deviceEnrollmentType
 
@@ -36,7 +36,7 @@ ms.locfileid: "58803260"
 |windowsBulkAzureDomainJoin|8 |Windows 10 Azure AD Join.|
 |windowsCoManagement|9 |Windows 10 Co-Management с помощью autoPilot или групповой политики.|
 |windowsAzureADJoinUsingDeviceAuth|10 |Windows 10 Azure AD Join с помощью auth устройства.|
-|appleUserEnrollment|11 |Устройство, управляемое регистрацией пользователей Apple|
+|appleUserEnrollment|11|Устройство, управляемое регистрацией пользователей Apple|
 |appleUserEnrollmentWithServiceAccount|12 |Устройство, управляемое регистрацией пользователей Apple с учетной записью службы|
 |azureAdJoinUsingAzureVmExtension|14 |Регистрация Azure AD Join при условии обеспечения azure VM|
 |AndroidEnterpriseDedicatedDevice|15 |Выделенное устройство Enterprise Android|

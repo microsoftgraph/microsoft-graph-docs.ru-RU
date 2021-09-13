@@ -2,15 +2,15 @@
 title: hasPayloadLinkResultItem type
 description: Класс, содержащий результат действия HasPayloadLinks.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 123177d4935ea7aec924345d27134f7ad779a625
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ad490d3d9574fa42f9dddb4c3bba92934b02287d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785691"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080760"
 ---
 # <a name="haspayloadlinkresultitem-resource-type"></a>hasPayloadLinkResultItem type
 
@@ -25,9 +25,9 @@ ms.locfileid: "58785691"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|payloadId|Строка|Ключ полезной нагрузки в формате Guid.|
-|hasLink|Логический|Указать, есть ли у полезной нагрузки ссылки или нет.|
-|error|Строка|Сведения об исключении указывают, была ли проверка этого элемента успешной или нет. Пустая строка без ошибок.|
+|payloadId|String|Ключ полезной нагрузки в формате Guid.|
+|hasLink|Логическое|Указать, есть ли у полезной нагрузки ссылки или нет.|
+|error|String|Сведения об исключении указывают, была ли проверка этого элемента успешной или нет. Пустая строка без ошибок.|
 |sources|[коллекция deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Причина, по которой происходит ссылка.|
 
 ## <a name="relationships"></a>Связи

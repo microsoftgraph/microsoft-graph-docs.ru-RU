@@ -2,15 +2,15 @@
 title: тип ресурса userAppInstallStatus
 description: Содержит свойства для состояния установки для пользователя.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b08f7e875365d7817fa2e1cc77e0f5edf1d6a486
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ee0488490b022d7a1e26ac532cac4613d0d06b1c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821699"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59047172"
 ---
 # <a name="userappinstallstatus-resource-type"></a>тип ресурса userAppInstallStatus
 

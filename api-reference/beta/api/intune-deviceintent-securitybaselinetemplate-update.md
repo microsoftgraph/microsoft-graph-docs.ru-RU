@@ -2,15 +2,15 @@
 title: Обновление securityBaselineTemplate
 description: Обновление свойств объекта securityBaselineTemplate.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4474707ee582f8591767bf7dd3a70a0824a205d0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0d7d51e40b96e2dfbb889f5676d8ebca5bfffcc5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815822"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59042512"
 ---
 # <a name="update-securitybaselinetemplate"></a>Обновление securityBaselineTemplate
 

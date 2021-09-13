@@ -1,16 +1,16 @@
 ---
 title: Обновление itemAddress
 description: Обновление свойств объекта itemAddress.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 6b761de97ba3c39917f42c0bb110c949f5e6185b
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 0b5a7d032dbaa1da0a86f567c392529dd6944a48
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774659"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59058365"
 ---
 # <a name="update-itemaddress"></a>Обновление itemAddress
 Пространство имен: microsoft.graph
@@ -23,8 +23,8 @@ ms.locfileid: "50774659"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All |
-| Делегированное (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All |
 | Для приложений                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос

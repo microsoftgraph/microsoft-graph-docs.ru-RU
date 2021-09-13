@@ -2,15 +2,15 @@
 title: Get windows10DeviceFirmwareConfigurationInterface
 description: Чтение свойств и связей объекта Windows10DeviceFirmwareConfigurationInterface.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 53e566703a4017d531fe6e0417ee49dc57d7b8a9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ccde1d108601672ca3326943e71c005c0e530315
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805579"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59048600"
 ---
 # <a name="get-windows10devicefirmwareconfigurationinterface"></a>Get windows10DeviceFirmwareConfigurationInterface
 

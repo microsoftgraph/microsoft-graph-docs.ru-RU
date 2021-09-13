@@ -2,15 +2,15 @@
 title: Удаление deviceManagementConfigurationPolicyAssignment
 description: Удаляет устройствоManagementConfigurationPolicyAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fa1d95d2d0600c6c8f30c77a9c4b5dee2df09951
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 63f3b2ebb1fb6c8259e46e5d0574193b68dbdc1d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790068"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59042531"
 ---
 # <a name="delete-devicemanagementconfigurationpolicyassignment"></a>Удаление deviceManagementConfigurationPolicyAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "58790068"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

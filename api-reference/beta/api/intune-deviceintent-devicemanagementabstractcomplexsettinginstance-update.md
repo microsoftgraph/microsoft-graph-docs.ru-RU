@@ -2,15 +2,15 @@
 title: Обновление deviceManagementAbstractComplexSettingInstance
 description: Обновление свойств объекта deviceManagementAbstractComplexSettingInstance.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 81920fcbfd87aa616cf649414fab837ee56f5cb3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7df00597e319aed9dddbf121d7e362343f5bd09c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803176"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59042515"
 ---
 # <a name="update-devicemanagementabstractcomplexsettinginstance"></a>Обновление deviceManagementAbstractComplexSettingInstance
 
@@ -29,7 +29,7 @@ ms.locfileid: "58803176"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -57,9 +57,9 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|ID экземпляра параметра, унаследованный от [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|definitionId|Строка|ID определения параметра для этого экземпляра, унаследованный от [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|valueJson|Строка|Представление JSON значения, унаследованной от [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|implementationId|Строка|ID определения для выбранной реализации этого сложного параметра|
+|definitionId|String|ID определения параметра для этого экземпляра, унаследованный от [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|valueJson|String|Представление JSON значения, унаследованной от [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|implementationId|String|ID определения для выбранной реализации этого сложного параметра|
 
 
 

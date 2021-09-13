@@ -2,15 +2,15 @@
 title: тип ресурса securityBaselineContributingPolicy
 description: Базовое состояние соответствия требованиям безопасности параметра для устройства
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 92f49ce93e49524c3a9925e561cae57ca1c49f3d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a5de4d9ee9ebe2f302067084bbbd7d0ed243ca54
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803793"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051246"
 ---
 # <a name="securitybaselinecontributingpolicy-resource-type"></a>тип ресурса securityBaselineContributingPolicy
 
@@ -25,8 +25,8 @@ ms.locfileid: "58803793"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|sourceId|Строка|Уникальный идентификатор политики|
-|displayName|Строка|Имя политики|
+|sourceId|String|Уникальный идентификатор политики|
+|displayName|String|Имя политики|
 |sourceType|[securityBaselinePolicySourceType](../resources/intune-deviceintent-securitybaselinepolicysourcetype.md)|Авторство источника политики. Возможные значения: `deviceConfiguration`, `deviceIntent`.|
 
 ## <a name="relationships"></a>Связи

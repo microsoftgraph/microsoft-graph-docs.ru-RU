@@ -2,15 +2,15 @@
 title: Создание deviceShellScript
 description: Создание нового объекта deviceShellScript.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a03fd82dffbabeacc55aa50991962641c40bd30f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 218dbf0aaf761a90426b50c28226e3cd60fb0173
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799621"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59042230"
 ---
 # <a name="create-deviceshellscript"></a>Создание deviceShellScript
 
@@ -29,7 +29,7 @@ ms.locfileid: "58799621"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,16 +55,16 @@ POST /deviceManagement/deviceShellScripts
 |:---|:---|:---|
 |executionFrequency|Длительность|Интервал для запуска скрипта. Если сценарий не определен, он будет работать один раз|
 |retryCount|Int32|Количество случаев повторного и повторного и повторного повторного и повторного списания сценария|
-|blockExecutionNotifications|Логический|Не уведомляет пользователя о выполнении сценария|
+|blockExecutionNotifications|Логическое|Не уведомляет пользователя о выполнении сценария|
 |id|String|Уникальный идентификатор для сценария управления устройствами.|
 |displayName|String|Имя сценария управления устройствами.|
-|description|Строка|Необязательное описание сценария управления устройствами.|
+|description|String|Необязательное описание сценария управления устройствами.|
 |scriptContent|В двоичном формате|Содержимое скрипта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сценария управления устройствами. Это свойство доступно только для чтения.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
 |fileName|String|Имя файла скрипта.|
-|roleScopeTagIds|Коллекция String|Список ID-тегов области для этого экземпляра PowerShellScript.|
+|roleScopeTagIds|Коллекция объектов string|Список ID-тегов области для этого экземпляра PowerShellScript.|
 
 
 

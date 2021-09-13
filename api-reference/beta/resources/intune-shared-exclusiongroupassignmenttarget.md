@@ -2,15 +2,15 @@
 title: Тип ресурса exclusionGroupAssignmentTarget
 description: Представляет группу, которую следует исключить из назначения.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fd44717cdf1b9295747b02d63928b91e9e873754
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0f66403eb361013933e3d144967e943f8fc53ae6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803435"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046605"
 ---
 # <a name="exclusiongroupassignmenttarget-resource-type"></a>Тип ресурса exclusionGroupAssignmentTarget
 
@@ -28,7 +28,7 @@ ms.locfileid: "58803435"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|deviceAndAppManagementAssignmentFilterId|Строка|Id фильтра для целевого назначения. Унаследованный от [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|
+|deviceAndAppManagementAssignmentFilterId|String|Id фильтра для целевого назначения. Унаследованный от [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|
 |deviceAndAppManagementAssignmentFilterType|[deviceAndAppManagementAssignmentFilterType](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|Тип фильтра целевого назначения, то есть исключить или включить. Наследуется [от deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md). Возможные значения: `none`, `include`, `exclude`.|
 |groupId|String|Идентификатор группы-объекта назначения. Наследуется от ресурса [groupAssignmentTarget](../resources/intune-shared-groupassignmenttarget.md)|
 

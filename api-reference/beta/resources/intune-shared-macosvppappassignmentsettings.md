@@ -2,15 +2,15 @@
 title: тип ресурса macOsVppAppAssignmentSettings
 description: Содержит свойства, используемые для назначения мобильного приложения Mac VPP группе.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d61c5c35c00984ac9c111243bc189c19f7a70259
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 983b92a2d8d7b1d64a424ee766f5a47c5ed38c6a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783444"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054235"
 ---
 # <a name="macosvppappassignmentsettings-resource-type"></a>тип ресурса macOsVppAppAssignmentSettings
 
@@ -29,7 +29,7 @@ ms.locfileid: "58783444"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |useDeviceLicensing|Boolean|Указывает, используется ли лицензирование устройств.|
-|uninstallOnDeviceRemoval|Логический|Следует ли удалить приложение при удалении устройства из Intune.|
+|uninstallOnDeviceRemoval|Логическое|Следует ли удалить приложение при удалении устройства из Intune.|
 
 ## <a name="relationships"></a>Связи
 Нет

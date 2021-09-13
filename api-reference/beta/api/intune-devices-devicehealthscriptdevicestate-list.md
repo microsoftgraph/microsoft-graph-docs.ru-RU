@@ -2,15 +2,15 @@
 title: List deviceHealthScriptDeviceStates
 description: Список свойств и связей объектов deviceHealthScriptDeviceState.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 073f5ad929967ffb24a2fa0afe48574eee45afb8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bc5bc558937349382f48a9c74896d3ba2e3a7f0d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821005"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052316"
 ---
 # <a name="list-devicehealthscriptdevicestates"></a>List deviceHealthScriptDeviceStates
 

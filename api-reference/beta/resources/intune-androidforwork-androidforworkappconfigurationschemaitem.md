@@ -2,15 +2,15 @@
 title: Тип ресурса androidForWorkAppConfigurationSchemaItem
 description: Один элемент конфигурации в схеме настраиваемой конфигурации Android for Work.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2e06a28fbd41887373d5935b3bdaed89cd775eb8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2516dda64636693bb80c778a501234d6dd0e73fa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795894"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057637"
 ---
 # <a name="androidforworkappconfigurationschemaitem-resource-type"></a>Тип ресурса androidForWorkAppConfigurationSchemaItem
 
@@ -26,8 +26,8 @@ ms.locfileid: "58795894"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |schemaItemKey|String|Уникальный ключ, используемый приложением для определения элемента.|
-|displayName|Строка|Понятное человеку имя.|
-|description|Строка|Описание компонентов приложения, которыми управляет элемент.|
+|displayName|String|Понятное человеку имя.|
+|description|String|Описание компонентов приложения, которыми управляет элемент.|
 |defaultBoolValue|Boolean|Значение по умолчанию для элементов логического типа, если указано разработчиком приложения.|
 |defaultIntValue|Int32|Значение по умолчанию для элементов целочисленного типа, если указано разработчиком приложения.|
 |defaultStringValue|String|Значение по умолчанию для элементов строкового типа, если указано разработчиком приложения.|

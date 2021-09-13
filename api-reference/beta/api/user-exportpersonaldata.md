@@ -1,16 +1,16 @@
 ---
 title: 'пользователь: exportPersonalData'
 description: Представляет запрос на операцию политики данных, сделанный администратором компании для экспорта данных пользователя организации.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: c829ead807e87c3a11289beeb5edb122cce40ac2
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 7065fdced15ff04ff6e82a437378c217a486c94d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786098"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054711"
 ---
 # <a name="user-exportpersonaldata"></a>пользователь: exportPersonalData
 
@@ -25,7 +25,7 @@ ms.locfileid: "52786098"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  User.Export.All и User.Read.All  |
 |Делегированные (личная учетная запись Майкрософт) |  Неприменимо  |
-|Приложение | User.Export.All и User.Read.All |
+|Для приложений | User.Export.All и User.Read.All |
 
 >**Примечание:** Экспорт может выполняться администратором компании только при делегировании разрешения.
 
@@ -38,7 +38,7 @@ POST /users/{id}/exportPersonalData
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание |
 |:---------------|:----------|
-| Авторизация  | Bearer {token}|
+| Authorization  | Bearer {token}|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
@@ -52,7 +52,7 @@ POST /users/{id}/exportPersonalData
 
 | Имя       | Описание |
 |:---------------|:----------|
-| Расположение  | URL-адрес для проверки состояния запроса. |
+| Location  | URL-адрес для проверки состояния запроса. |
 | Retry-After  | Период времени в секундах. Производитель запросов должен ждать этого долго после отправки запроса для проверки состояния. |
 
 

@@ -2,15 +2,15 @@
 title: Получение объекта applePushNotificationCertificate
 description: Чтение свойств и связей объекта applePushNotificationCertificate.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2df4db4b9d83110240f354cf7e90fbf2eca4857f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2067055e3872f21fc53ddf28642e7359900d367f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787099"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055005"
 ---
 # <a name="get-applepushnotificationcertificate"></a>Получение объекта applePushNotificationCertificate
 
@@ -29,7 +29,7 @@ ms.locfileid: "58787099"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

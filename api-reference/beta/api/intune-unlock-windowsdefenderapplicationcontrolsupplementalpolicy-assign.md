@@ -2,15 +2,15 @@
 title: Действие assign
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ec977b79949acb47fedfb262632759cb2a997f2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 03f8a76f851c081c55b1ecc13b623e0a89f9ebb3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804584"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054851"
 ---
 # <a name="assign-action"></a>Действие назначения
 

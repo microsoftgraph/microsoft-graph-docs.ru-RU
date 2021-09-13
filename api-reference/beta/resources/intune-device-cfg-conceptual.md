@@ -2,14 +2,14 @@
 title: Конфигурация устройства в Microsoft Intune - API Microsoft Gaaph
 description: Списки microsoft Graph API для конечных точек Intune (REST), определяемых для настройки устройств для организации-клиента.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 3535decf70b34650d6ff3e381949e9fd01d60f23
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cd98835baf70f760929bb19c840ed01cc57d0589
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798127"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051463"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Конфигурация устройства в Microsoft Intune
 

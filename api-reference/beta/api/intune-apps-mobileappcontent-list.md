@@ -2,15 +2,15 @@
 title: Перечисление объектов mobileAppContent
 description: Список свойств и связей объектов mobileAppContent.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b4827906b2bdbdfd97605d0ac3ffeae3efffc753
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b6ff04635cf60880394b6bc0c791ad0f650a447d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58822070"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055418"
 ---
 # <a name="list-mobileappcontents"></a>Перечисление объектов mobileAppContent
 

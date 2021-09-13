@@ -2,15 +2,15 @@
 title: тип ресурса macOSSoftwareUpdateStateSummary
 description: Сводка состояния состояния программного обеспечения MacOS для устройства и пользователя
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bc9ea010e664ab2cd2094dfca69152455cd61d9d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e3fd5d64da64e19a259f5c123f02d79ddce0afbc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784844"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59054459"
 ---
 # <a name="macossoftwareupdatestatesummary-resource-type"></a>тип ресурса macOSSoftwareUpdateStateSummary
 
@@ -35,10 +35,10 @@ ms.locfileid: "58784844"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|displayName|Строка|Понятное для человека имя обновления программного обеспечения|
+|displayName|String|Понятное для человека имя обновления программного обеспечения|
 |productKey|String|Ключ продукта обновления программного обеспечения.|
 |updateCategory|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|Категория обновления программного обеспечения. Возможные значения: `critical`, `configurationDataFile`, `firmware`, `other`.|
-|updateVersion|Строка|Версия обновления программного обеспечения|
+|updateVersion|String|Версия обновления программного обеспечения|
 |state|[macOSSoftwareUpdateState](../resources/intune-deviceconfig-macossoftwareupdatestate.md)|Состояние обновления программного обеспечения. Возможные значения: `success` `downloading` , , , , , `downloaded` , `installing` , `idle` `available` `scheduled` `downloadFailed` `downloadInsufficientSpace` , `downloadInsufficientPower` `downloadInsufficientNetwork` `installInsufficientSpace` `installInsufficientPower` `installFailed` `commandFailed` , .|
 |lastUpdatedDateTime|DateTimeOffset|Последний раз, когда отчет для этого устройства и ключ продукта был обновлен.|
 

@@ -2,15 +2,15 @@
 title: тип ресурса securityBaselineCategoryStateSummary
 description: Сводка состояния соответствия требованиям безопасности для базового уровня безопасности учетной записи.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bc0bb04e7545ade025b3659a921ccb34237a0290
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ab4ed7a5d2b8c32114fc6e222f5a605a2bc7e059
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801474"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051281"
 ---
 # <a name="securitybaselinecategorystatesummary-resource-type"></a>тип ресурса securityBaselineCategoryStateSummary
 
@@ -44,7 +44,7 @@ ms.locfileid: "58801474"
 |errorCount|Int32|Количество устройств с ошибками, унаследованных от [securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)|
 |conflictCount|Int32|Количество конфликтных устройств, унаследованных от [securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)|
 |notApplicableCount|Int32|Количество не применимых устройств, унаследованных от [securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)|
-|displayName|Строка|Имя категории|
+|displayName|String|Имя категории|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -2,15 +2,15 @@
 title: тип комплекса ресурсов targetResource — API Graph Microsoft
 description: Определяет тип API Graph API для объекта targetResource, который поддерживает деятельность организации аудита (клиента) журналов аудита.
 author: cloudhandler
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: afcb3ecec2df719393fbadd033b6f1c85af447c9ea901356a71480bc17a67a74
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 566db033d6d62ac584ee2057f172d5330f12b8a3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54244248"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053870"
 ---
 # <a name="targetresource-resource-type"></a>тип ресурса targetResource
 
@@ -23,9 +23,9 @@ ms.locfileid: "54244248"
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|Строка|Указывает уникальный ID ресурса.|
-|displayName|Строка|Указывает видимое имя, определенное для ресурса. Обычно указывается, когда создается ресурс.|
-|type|Строка|Описывает тип ресурса.  Примеры значений включают `Application` `Group` , и `ServicePrincipal` `User` .|
+|id|String|Указывает уникальный ID ресурса.|
+|displayName|String|Указывает видимое имя, определенное для ресурса. Обычно указывается, когда создается ресурс.|
+|type|String|Описывает тип ресурса.  Примеры значений включают `Application` `Group` , и `ServicePrincipal` `User` .|
 |userPrincipalName|String|При **наборе** типа включается имя пользователя, которое `User` инициировало действие; для других `null` типов.|
 |groupType|groupType|При **наборе** типа указывается тип `Group` группы.  Возможные значения: `unifiedGroups` `azureAD` , и `unknownFutureValue`|
 |modifiedProperties|[измененная коллекцияProperty](modifiedproperty.md)|Указывает имя, старое значение и новое значение каждого измененного атрибута. Значения свойств зависят от **типа операции.**|
