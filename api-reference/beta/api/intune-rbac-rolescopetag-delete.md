@@ -2,15 +2,15 @@
 title: Удаление roleScopeTag
 description: Удаляет рольScopeTag.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 182418c59a53942805dc645b9dd81576a6e25cc6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0c7dcb7a239d7e13e5c246cb5e4b9513131c5a84
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782583"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064975"
 ---
 # <a name="delete-rolescopetag"></a>Удаление roleScopeTag
 
@@ -29,7 +29,7 @@ ms.locfileid: "58782583"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementRBAC.ReadWrite.All|
+|Для приложений|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

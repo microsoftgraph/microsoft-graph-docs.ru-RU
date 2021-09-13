@@ -2,14 +2,14 @@
 title: Коды ошибок для книг и API диаграмм в Microsoft Graph
 description: Списки и описания кодов ошибок и сообщений для книг и API диаграмм в Microsoft Graph.
 author: grangeryy
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
-ms.openlocfilehash: 43aeb851cd5f458c2dda971938e0d0b6fa193c85d35ba0bac54edbc904acf964
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cadcbb4ad64d6d441c09e9deb331dfe28edf5d18
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225589"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143449"
 ---
 # <a name="error-codes-for-workbooks-and-charts-apis-in-microsoft-graph"></a>Коды ошибок для книг и API диаграмм в Microsoft Graph
 

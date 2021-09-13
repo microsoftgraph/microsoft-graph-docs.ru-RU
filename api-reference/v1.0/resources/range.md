@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Range
 description: Объект Range представляет собой набор из одной или нескольких смежных ячеек, например ячейку, строку, столбец, блок ячеек и т. д.
-localization_priority: Priority
+ms.localizationpriority: high
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 7a43f93ccb9c73a321d26b7fda8a37faccecaa5fb2c23ddca3c276b48b12e140
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8b10d79efe47d7744e3b275497d24ef9a601b4f2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205178"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143792"
 ---
 # <a name="range-resource-type"></a>Тип ресурса Range
 

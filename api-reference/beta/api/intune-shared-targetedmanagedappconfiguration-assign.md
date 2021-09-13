@@ -2,15 +2,15 @@
 title: Действие assign
 description: Пока не задокументировано.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5059bbf8e213d1fcf1442c850e07fd4d95bf52ba
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1e8da816091e32e38ac6f06e17dd84828df379ea
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799551"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064744"
 ---
 # <a name="assign-action"></a>Действие назначения
 
@@ -30,7 +30,7 @@ ms.locfileid: "58799551"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Управление мобильным приложением (MAM)** | DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application||
+|Для приложений||
 | &nbsp; &nbsp; **Управление мобильным приложением (MAM)** | DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос

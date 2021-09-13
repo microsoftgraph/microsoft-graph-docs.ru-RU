@@ -1,16 +1,16 @@
 ---
 title: " тип ресурса averageComparativeScore"
 description: Этот ресурс содержит различные оценки, основанные на различных областях (например, среднее по вертикали отрасли, среднее по размеру места в компании и так далее) и категории управления (Identity, Data, Device, Apps, Infrastructure).
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 7a09d3b2c6457063457eee4a4bfbe3d1f88823f8864f66ac4a1ea690e33c77e6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4c563d8754ba5afb1c4fe89d237f978d886f9eab
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54210150"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064611"
 ---
 #  <a name="averagecomparativescore-resource-type"></a>тип ресурса averageComparativeScore
 
@@ -20,7 +20,7 @@ ms.locfileid: "54210150"
 
 |Свойство |Тип |Описание |
 |:--|:--|:--|
-|   основы   |   Строка  |   Тип области (AllTenants, TotalSeats, IndustryTypes).  |
+|   основы   |   String  |   Тип области (AllTenants, TotalSeats, IndustryTypes).  |
 |   averageScore    |   Двойное с плавающей точкой  | Средний балл в пределах указанной основы. |
 |   deviceScore |   Двойное с плавающей точкой  | Средний балл в пределах указанной основы. |
 |   dataScore   |   Двойное с плавающей точкой  | Средний балл в пределах указанной основы. |

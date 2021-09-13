@@ -2,15 +2,15 @@
 title: Get userAppInstallStatus
 description: Чтение свойств и связей объекта userAppInstallStatus.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9ca2336f7492e479d12d5e298c2b44ae7c57247e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b1e022cd1dc88912745982a43b8b2561daad5195
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815892"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021353"
 ---
 # <a name="get-userappinstallstatus"></a>Get userAppInstallStatus
 
@@ -46,7 +46,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallSt
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

@@ -2,15 +2,15 @@
 title: Обновление complianceManagementPartner
 description: Обновление свойств объекта complianceManagementPartner.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 82908cc7b0019992f9529263c3fb10647815bc6cb32efa3515749a1408b27577
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a66cb48e2dceebc1254f31ca818e695be20a00c9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225820"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146949"
 ---
 # <a name="update-compliancemanagementpartner"></a>Обновление complianceManagementPartner
 
@@ -27,7 +27,7 @@ ms.locfileid: "54225820"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,10 +41,10 @@ PATCH /deviceManagement/complianceManagementPartners/{complianceManagementPartne
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса поставляем представление JSON для объекта [complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)
 
 В следующей таблице показаны свойства, необходимые при создании [complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)
@@ -55,9 +55,9 @@ PATCH /deviceManagement/complianceManagementPartners/{complianceManagementPartne
 |lastHeartbeatDateTime|DateTimeOffset|Timestamp последнего сердцебиения после администратора, направленного партнеру по управлению соответствием|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера этого клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |displayName|String|Отображаемое имя партнера|
-|macOsOnboarded|Логический|Партнер, на борту для устройств Mac.|
-|AndroidOnboarded|Логическое|Партнер, на борту для android-устройств.|
-|iosOnboarded|Логическое|Партнер, на борту для устройств ios.|
+|macOsOnboarded|Boolean|Партнер, на борту для устройств Mac.|
+|AndroidOnboarded|Boolean|Партнер, на борту для android-устройств.|
+|iosOnboarded|Логический|Партнер, на борту для устройств ios.|
 |macOsEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства Mac через партнера.|
 |AndroidEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства Android через партнера.|
 |iosEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства ios через партнера.|

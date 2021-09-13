@@ -1,16 +1,16 @@
 ---
 title: Обновление организационных свойств
 description: Обновление свойств объекта organizationalBrandingProperties.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: AlexanderMars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d869b4734cade9e40ab2fafaec94d42e3e29b65f
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 24b1668a73d351dfdc0533cadbc079581c892f60
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786666"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085394"
 ---
 # <a name="update-organizationalbrandingproperties"></a>Обновление организационных свойств
 
@@ -41,7 +41,7 @@ PUT /organization/{tenant id}/branding/{property name}
 |:-----------|:-----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json. Обязательный.  |
-| Content-Language  | Locale. Необязательный параметр.  |
+| Content-Language  | Locale. Необязательно.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -54,7 +54,7 @@ PUT /organization/{tenant id}/branding/{property name}
 |bannerLogo|Stream|На странице входного знака отображается баннерная версия логотипа вашей компании. .png или .jpg не превышает 36x245px. Рекомендуется использовать прозрачное изображение без обивки вокруг логотипа.|
 |signInPageText|String|Текст, который отображается в нижней части окна для регистрации. С помощью этого можно сообщить дополнительные сведения, например номер телефона в службу поддержки или юридический отчет. Этот текст должен быть unicode и не превышать 1024 символов.|
 |squareLogo|Stream|Квадратная версия логотипа вашей компании. Это отображается в Windows 10(OOBE) и когда Windows автопилот включен для развертывания. .png или .jpg размером не более 240x240px и не более 10 кб. Рекомендуется использовать прозрачное изображение без обивки вокруг логотипа.|
-|usernameHintText|String|Строка, отображаемая в виде подсказки в текстовом ящике имени пользователя на экране знака. Этот текст должен быть Unicode без ссылок или кода и не может превышать 64 символов.|
+|usernameHintText|Строка|Строка, отображаемая в виде подсказки в текстовом ящике имени пользователя на экране знака. Этот текст должен быть Unicode без ссылок или кода и не может превышать 64 символов.|
 
 Свойство **id** игнорируется при проходе.
 
@@ -104,7 +104,7 @@ Content-Type: application/json
 ---
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -137,7 +137,7 @@ Content-Type: image/jpeg
 ```
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -169,7 +169,7 @@ Content-Language: fr
 ```
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -224,7 +224,7 @@ Content-Language: fr
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

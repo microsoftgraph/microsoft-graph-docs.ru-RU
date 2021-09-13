@@ -2,14 +2,14 @@
 title: Обзор записей вызовов
 description: Записи вызовов дают представление о звонках и собраниях, которые происходят в вашей организации.
 author: williamlooney
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
-ms.openlocfilehash: 81ba052abf90caeb89be38f7e7a5e3a1d3af5814
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: eb471bedc5156e537015eeb8de0d68483eaff7ad
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791791"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136189"
 ---
 # <a name="call-records-overview"></a>Обзор записей вызовов
 

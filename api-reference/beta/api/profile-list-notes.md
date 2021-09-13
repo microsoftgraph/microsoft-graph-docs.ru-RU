@@ -1,21 +1,21 @@
 ---
-title: Список заметок
-description: Получение Персонаннотатионс из свойства навигации Notes.
+title: Заметки списка
+description: Получите personAnnotations из свойства навигации примечаний.
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 2d7318a5804cc1a66ba9b37851000cb6096ca0f9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 425e799afb3ecbcecc3ae1822e33af76e67e902b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980740"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064632"
 ---
-# <a name="list-notes"></a>Список заметок
+# <a name="list-notes"></a>Заметки списка
 Пространство имен: microsoft.graph
 
-Получение списка объектов [персонаннотатион](../resources/personinterest.md) из [профиля](../resources/profile.md)пользователя.
+Извлечение списка [объектов personAnnotation](../resources/personinterest.md) из профиля [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -23,9 +23,9 @@ ms.locfileid: "48980740"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Для приложения                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
+| Делегированные (рабочая или учебная учетная запись)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Для приложений                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,14 +40,14 @@ GET /users/{id | userPrincipalName}/profile/notes
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает следующие параметры запроса OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 |Имя            |Значение    |Описание                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |Разрешает отклик только на те объекты, которые содержат заданные условия.                                                                                             |
-|$orderby        |строка   |По умолчанию объекты в отклике сортируются по значению createdDateTime в запросе. Вы можете изменить порядок ответа с помощью параметра *$OrderBy* .|
+|$filter         |string   |Ограничивает ответ только теми объектами, которые содержат указанные критерии.                                                                                             |
+|$orderby        |строка   |По умолчанию объекты в ответе сортируют по их созданному значениюDateTime в запросе. Вы можете изменить порядок ответа с помощью *параметра $orderby.*|
 |$select         |string   |Список разделенных запятыми свойств, которые необходимо включить в отклик. Для оптимизации производительности выбирайте только необходимые свойства.                                        |
-|$skip           |int      |Пропустите первые n результатов, которые удобно использовать для разбиения на страницы.                                                                                                                                |
+|$skip           |int      |Пропустить первые n результаты, полезные для paging.                                                                                                                                |
 |$top            |int      |Количество возвращаемых результатов.                                                                                                                                           |
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -60,7 +60,7 @@ GET /users/{id | userPrincipalName}/profile/notes
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [персонаннотатион](../resources/personannotation.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [personAnnotation](../resources/personannotation.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 

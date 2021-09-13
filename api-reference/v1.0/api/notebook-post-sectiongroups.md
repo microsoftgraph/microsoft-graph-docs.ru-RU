@@ -2,15 +2,15 @@
 title: Создание sectionGroup
 description: Создайте новую группу разделов в указанной записной книжке.
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 612f81dd835a96fceeeb895c8170279341d89903
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d50a9c03d44dfcb983b8bf92b8006383530ddd08
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028521"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016017"
 ---
 # <a name="create-sectiongroup"></a>Создание sectionGroup
 
@@ -47,7 +47,7 @@ POST /sites/{id}/onenote/notebooks/{id}/sectionGroups
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [sectionGroup](../resources/sectiongroup.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект sectionGroup](../resources/sectiongroup.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

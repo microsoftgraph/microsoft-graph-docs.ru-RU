@@ -2,15 +2,15 @@
 title: Тип ресурса ChartDataLabelFormat
 description: Инкапсулирует свойства формата для меток данных диаграммы.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 53588495de69590618e1e3c34c2bad0edad68445a4b54061229fcec28d21aa3a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b9a0816d521194000e9b553f24b5580f89352015
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212209"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126851"
 ---
 # <a name="chartdatalabelformat-resource-type"></a>Тип ресурса ChartDataLabelFormat
 
@@ -25,7 +25,7 @@ ms.locfileid: "54212209"
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |fill|[WorkbookChartFill](chartfill.md)|Представляет формат заливки для текущей метки данных диаграммы. Только для чтения.|

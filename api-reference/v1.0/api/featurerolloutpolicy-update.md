@@ -1,16 +1,16 @@
 ---
 title: Обновление функцииRolloutPolicy
 description: Обновление свойств объекта featurerolloutpolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7341363806e9429cf29726585267be9536c6be9c
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 825575bc55dc1f1e6b8e00ce8cc0a2b39849b91c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51201301"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046066"
 ---
 # <a name="update-featurerolloutpolicy"></a>Обновление featurerolloutpolicy
 
@@ -48,7 +48,7 @@ PATCH /policies/featureRolloutPolicies/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|description|Строка|Описание этой политики.|
+|description|String|Описание этой политики.|
 |displayName|Строка|Имя отображения для этой политики.|
 |isAppliedToOrganization|Boolean|Указывает, следует ли применять эту политику выкатки функций ко всей организации.|
 |isEnabled|Boolean|Указывает, включена ли выкатка функций.|

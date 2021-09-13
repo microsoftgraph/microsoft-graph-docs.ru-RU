@@ -2,15 +2,15 @@
 title: Получить accessReviewScheduleDefinition
 description: Ознакомьтесь с свойствами и отношениями объекта accessReviewScheduleDefinition.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b7eb33d56831e330883d833c3117187b7cc12b1c
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 0a9de3d181bd42a843ba941dcc61d2bec13bf51e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208664"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008540"
 ---
 # <a name="get-accessreviewscheduledefinition"></a>Получить accessReviewScheduleDefinition
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "53208664"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.Read.All, AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Для приложений|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
 Чтобы вызвать этот API, входив в каталог, пользователь должен также быть в роли каталога, которая позволяет ему читать обзор доступа, или пользователь может быть назначен в качестве рецензента в обзоре доступа.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviewsv2-root.md)
 
@@ -154,7 +154,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные материалы
 
 - [Создание accessReviewScheduleDefinition](accessreviewscheduledefinition-post.md)
 - [Список accessReviewScheduleDefinition](accessreviewscheduledefinition-list.md)

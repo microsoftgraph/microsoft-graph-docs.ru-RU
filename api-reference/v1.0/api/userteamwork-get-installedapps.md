@@ -3,14 +3,14 @@ title: Получить установленное приложение для �
 description: Извлечение приложения, установленного в личном поле указанного пользователя.
 author: AkJo
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0c714decf64b140c4f440ac671e2db50c0893a29
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: 97c59700889bcdb14b7023d175feca10d20ed67e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696179"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143934"
 ---
 # <a name="get-installed-app-for-user"></a>Получить установленное приложение для пользователя
 

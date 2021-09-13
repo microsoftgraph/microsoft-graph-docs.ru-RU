@@ -2,15 +2,15 @@
 title: Тип ресурса iosCustomConfiguration
 description: В этой статье описаны объявляемые методы, свойства и связи, которые предоставляются ресурсом iosCustomConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dfbaea810675d6946bc82ff1b15d340cead54e226b5a231e28fe138c9c241c54
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1eac2c740838742953725f8c423aa9b8acf690d5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235641"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146844"
 ---
 # <a name="ioscustomconfiguration-resource-type"></a>Тип ресурса iosCustomConfiguration
 

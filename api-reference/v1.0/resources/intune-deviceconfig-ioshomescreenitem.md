@@ -2,15 +2,15 @@
 title: Тип ресурса iosHomeScreenItem
 description: Представляет элемент на начальном экране iOS
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a6e333d5bb71fadb197c096da6a1e651533c34978e9bfdbcdb6e3aa4d970b89f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3f468368e9fe0fb92727c0d6e7d2ca61dcec38dd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130220"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136441"
 ---
 # <a name="ioshomescreenitem-resource-type"></a>Тип ресурса iosHomeScreenItem
 
@@ -23,9 +23,9 @@ ms.locfileid: "54130220"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Имя приложения|
+|displayName|Строка|Имя приложения|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

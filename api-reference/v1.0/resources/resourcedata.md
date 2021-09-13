@@ -1,16 +1,16 @@
 ---
 title: тип ресурса resourceData
 description: Представляет данные resouce, присоединенные к уведомлению об изменении, отправленным абоненту.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: b2be1539226ac619b15e61cc7da55d3a9c844f9a47e0e60dcf6ff80914d1a12a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4fef5e2564cbad29a3b998d11b2f4870663e7a7e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169349"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094088"
 ---
 # <a name="resourcedata-resource-type"></a>тип ресурса resourceData
 
@@ -37,7 +37,7 @@ ms.locfileid: "54169349"
 
 > **Примечание:** Значение, `id` предоставляемого **в resourceData,** допустимо на момент сгенерировании уведомления об изменении. Некоторые действия, например перенос сообщения в другую папку, могут привести к неодержительным действиям при обработке `id` уведомления об изменении.
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

@@ -2,15 +2,15 @@
 title: Удаление deviceLogCollectionResponse
 description: Удаляет устройствоLogCollectionResponse.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ec1b5175af04ecda8cea2c94fe2334d6efdaa9fe
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 834ac6703d441f21283ac747d62e0f901b9c45b3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819965"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065479"
 ---
 # <a name="delete-devicelogcollectionresponse"></a>Удаление deviceLogCollectionResponse
 

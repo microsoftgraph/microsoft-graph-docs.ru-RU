@@ -1,16 +1,16 @@
 ---
 title: Список oAuth2PermissionGrants
 description: Получение списка объектов oauth2PermissionGrant, представляющих делегированную дотации разрешений.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 3936c820e939032b456b60f8bd591c298ebc3c44
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 8df9941078ba6642769a9bec85cc96a1bc9f0ba9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231957"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015954"
 ---
 # <a name="list-oauth2permissiongrants"></a>Перечисление oauth2PermissionGrants
 
@@ -19,7 +19,7 @@ ms.locfileid: "52231957"
 Получение списка [объектов oAuth2PermissionGrant,](../resources/oauth2permissiongrant.md) представляющих делегированную лицензию, выданную для клиентских приложений для доступа к API от имени пользователей, входиющих в нее.
 
 > [!NOTE]
-> Этот запрос может иметь задержки репликации для делегирования разрешений, которые были недавно созданы, обновлены или удалены. При указании фильтра эта задержка будет сведена `clientId` к минимуму.
+> При запросе могут происходить задержки репликации для предоставленных делегированных разрешений, которые были недавно созданы, обновлены или удалены. При указании фильтра эта задержка будет сведена `clientId` к минимуму.
 
 ## <a name="permissions"></a>Разрешения
 

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса chatMessageHostedContent
 description: Содержимое, которое было организовано в сообщении чата
-localization_priority: Normal
+ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 946a1974540adf0539e85519bc75c637c1469347d411b48b686378339eb0f48a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5d414e83e2de99aefbd264784adcad2ca90a8a40
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192574"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094389"
 ---
 # <a name="chatmessagehostedcontent-resource-type"></a>тип ресурса chatMessageHostedContent
 
@@ -43,9 +43,9 @@ chatMessageHostedContent происходит из [teamworkHostedContent](teamw
 
 | Имя свойства                     | Тип   | Описание
 |:----------------------------------|:-------|:--------------------------------
-| @microsoft.graph.temporaryId      | Строка | Только для записи. Представляет временный ИД для размещенного контента при отправке сообщения для ссылки на размещаемую информацию в **отправленных ресурсах chatMessage.**|
+| @microsoft.graph.temporaryId      | string | Только для записи. Представляет временный ИД для размещенного контента при отправке сообщения для ссылки на размещаемую информацию в **отправленных ресурсах chatMessage.**|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

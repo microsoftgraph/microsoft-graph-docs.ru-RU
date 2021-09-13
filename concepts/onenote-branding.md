@@ -2,18 +2,18 @@
 title: 'Правила использования фирменной символики для разработчиков API OneNote '
 description: " "
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
-ms.openlocfilehash: c745fd304e01efe2ce3804c08befab682cec4b1369e41d9b334bda006361c50b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9054db1303c0cbe82eb868ebc1c7de6a7f4b17a4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124099"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59066928"
 ---
 # <a name="branding-guidelines-for-onenote-api-developers"></a>Правила использования фирменной символики для разработчиков API OneNote 
  
-**Область применения**: пользовательские записные книжки в OneDrive | корпоративные записные книжки в Microsoft 365
+**Область применения**: пользовательские записные книжки в OneDrive | корпоративные записные книжки в Microsoft 365
 
 Следуйте инструкциям, приведенным в этой статье, чтобы наилучшим образом интегрировать торговую марку OneNote в ваш продукт, а также соблюсти требования к фирменной символике OneNote.
 

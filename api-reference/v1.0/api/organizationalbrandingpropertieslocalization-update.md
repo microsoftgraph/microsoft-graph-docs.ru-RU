@@ -1,16 +1,16 @@
 ---
 title: Обновление локализованных свойств организационногобрендинга
 description: Обновление свойств объекта организационныхбрандингов для определенной локализации.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: AlexanderMars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7959f0805d9dc42720f5036a62f41737f45ed5db
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: e62a9c7632a7942a31ec7a78cb77c0c9744dc512
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787802"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072892"
 ---
 # <a name="update-localized-organizationalbrandingproperties"></a>Обновление локализованных свойств организационногобрендинга
 
@@ -41,7 +41,7 @@ PUT /organization/{tenant id}/branding/localizations/{locale}
 |:-----------|:-----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json. Обязательный.  |
-| Content-Language  | Locale. Необязательный параметр.  |
+| Content-Language  | Locale. Необязательно.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -54,8 +54,8 @@ PUT /organization/{tenant id}/branding/localizations/{locale}
 |bannerLogo|Stream|На странице входного знака отображается баннерная версия логотипа вашей компании. .png или .jpg не превышает 36x245px. Рекомендуется использовать прозрачное изображение без обивки вокруг логотипа.|
 |signInPageText|String|Текст, который отображается в нижней части окна для регистрации. С помощью этого можно сообщить дополнительные сведения, например номер телефона в службу поддержки или юридический отчет. Этот текст должен быть unicode и не превышать 1024 символов.|
 |squareLogo|Stream|Квадратная версия логотипа вашей компании. Это отображается в Windows 10(OOBE) и когда Windows автопилот включен для развертывания. .png или .jpg размером не более 240x240px и не более 10 кб. Рекомендуется использовать прозрачное изображение без обивки вокруг логотипа.|
-|usernameHintText|String|Строка, отображаемая в виде подсказки в текстовом ящике имени пользователя на экране знака. Этот текст должен быть Unicode без ссылок или кода и не может превышать 64 символов.|
-|id|String|Locale для обновления брендинга для|
+|usernameHintText|Строка|Строка, отображаемая в виде подсказки в текстовом ящике имени пользователя на экране знака. Этот текст должен быть Unicode без ссылок или кода и не может превышать 64 символов.|
+|id|Строка|Locale для обновления брендинга для|
 
 
 ## <a name="response"></a>Отклик
@@ -106,7 +106,7 @@ Content-Type: image/jpeg
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -161,7 +161,7 @@ Content-Type: application/json
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -196,7 +196,7 @@ Content-Type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

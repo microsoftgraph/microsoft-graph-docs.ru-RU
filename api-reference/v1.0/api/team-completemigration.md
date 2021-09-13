@@ -1,16 +1,16 @@
 ---
 title: 'команда: completeMigration'
 description: Выполните миграцию внешних сообщений, удалив режим миграции из группы.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3faec85b08d8d0ed340f29985574d05a804c061f
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 6175babac52ce09338041dfbf69dda41814a0ec4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51507930"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084946"
 ---
 # <a name="team-completemigration"></a>команда: completeMigration
 

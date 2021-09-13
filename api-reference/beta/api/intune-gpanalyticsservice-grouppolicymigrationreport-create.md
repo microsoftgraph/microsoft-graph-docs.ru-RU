@@ -2,15 +2,15 @@
 title: Создание groupPolicyMigrationReport
 description: Создайте новый объект GroupPolicyMigrationReport.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 83e7186cfed8314a015d4ef080b9f9e6e8f5e0c6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5306fe772bc36c9de10a74227ce04f626ce82b81
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793451"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065213"
 ---
 # <a name="create-grouppolicymigrationreport"></a>Создание groupPolicyMigrationReport
 
@@ -29,7 +29,7 @@ ms.locfileid: "58793451"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +53,7 @@ POST /deviceManagement/groupPolicyMigrationReports
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Пока не задокументировано.|
+|id|String|Пока не задокументировано.|
 |groupPolicyObjectId|Guid|GUID объекта групповой политики из контента GPO Xml|
 |displayName|Строка|Имя объекта групповой политики из контента GPO Xml|
 |ouDistinguishedName|Строка|Отличительное имя OU.|
@@ -62,7 +62,7 @@ POST /deviceManagement/groupPolicyMigrationReports
 |groupPolicyCreatedDateTime|DateTimeOffset|Дата и время создания GroupPolicyMigrationReport.|
 |groupPolicyLastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения GroupPolicyMigrationReport.|
 |migrationReadiness|[groupPolicyMigrationReadiness](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md)|Покрытие Intune для связанного объекта групповой политики. Возможные значения: `none`, `partial`, `complete`, `error`, `notApplicable`.|
-|targetedInActiveDirectory|Логический|Свойство Targeted in AD из GPO Xml Content|
+|targetedInActiveDirectory|Boolean|Свойство Targeted in AD из GPO Xml Content|
 |totalSettingsCount|Int32|Общее число групповых политик Параметры из GPO-файла.|
 |supportedSettingsCount|Int32|Количество групповых политик Параметры поддерживается Intune.|
 |supportedSettingsPercent|Int32|Процент групповой политики Параметры поддерживается Intune.|

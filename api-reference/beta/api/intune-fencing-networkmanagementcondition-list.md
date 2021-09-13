@@ -2,15 +2,15 @@
 title: Список networkManagementConditions
 description: Список свойств и связей объектов networkManagementCondition.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4cf46597b20f7e5e61e8fb68b4c8cd0cfe00532c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2f3d761aeef24420f3c717ae7ccbbc88c4098ea5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804920"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065220"
 ---
 # <a name="list-networkmanagementconditions"></a>Список networkManagementConditions
 

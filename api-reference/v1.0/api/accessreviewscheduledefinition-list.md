@@ -2,15 +2,15 @@
 title: Список accessReviewScheduleDefinitions
 description: Получите список объектов accessReviewScheduleDefinition и их свойств.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 34c58be8c3fa0c580e91a74baee2ddafbed3e738
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 0d1c3ef815253dfe8166ef100f15e83a55b320e9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208714"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056930"
 ---
 # <a name="list-accessreviewscheduledefinitions"></a>Список accessReviewScheduleDefinitions
 Пространство имен: microsoft.graph
@@ -27,7 +27,7 @@ ms.locfileid: "53208714"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.Read.All, AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Для приложений|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
  В роли каталога должен также быть подписан пользователь, который позволяет им читать обзор доступа. См. роль [обзора доступа и проверки авторизации разрешений приложений.](../resources/accessreviewsv2-root.md#role-and-application-permission-authorization-checks)
 

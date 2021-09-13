@@ -1,29 +1,29 @@
 ---
 title: Вывод ресурса
-description: Получение двоичных данных объекта ресурса файла или изображения.
-localization_priority: Normal
+description: Извлечение двоичных данных объекта ресурса файла или изображения.
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: b9eb6eb3d69cf89819ece38675893607c042e86b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b0a10b7d16517d39bf15bf460de9930346ab1701
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038237"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067761"
 ---
 # <a name="get-resource"></a>Вывод ресурса
 
 Пространство имен: microsoft.graph
 
-Получение двоичных данных объекта [ресурса](../resources/resource.md) файла или изображения.
+Извлечение двоичных данных объекта ресурса файла или [изображения.](../resources/resource.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Notes. Read, Notes. ReadWrite, Notes. Read. ALL, Notes. ReadWrite. ALL    |
-|Делегированные (личная учетная запись Майкрософт) | Notes. Read, Notes. ReadWrite    |
+|Делегированные (рабочая или учебная учетная запись) | Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
+|Делегированные (личная учетная запись Майкрософт) | Notes.Read, Notes.ReadWrite    |
 |Для приложений | Notes.Read.All, Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -40,14 +40,14 @@ GET /sites/{id}/onenote/resources/{id}/content
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и двоичные данные изображения или файла в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и двоичные данные изображения или файла `200 OK` в тексте ответа.
 
-Note: изображения не отображаются непосредственно в браузере, так как им требуется авторизация для их извлечения, как и остальная часть контента страницы.
+Примечание. Изображения не будут отрисовки непосредственно в браузере, так как для их получения требуется авторизация, как и остальная часть контента страницы.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

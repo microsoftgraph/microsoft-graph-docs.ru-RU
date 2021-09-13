@@ -1,16 +1,16 @@
 ---
 title: тип ресурсов educationPointsOutcome
 description: EducationOutcome, который дает числовую оценку.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: a5c35216015038252b52b4f16819d4dabf552ff19faf8f5be0d75bade52122af
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 87751e7b59f883e5d317bcc16e5d97c141faff98
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178481"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044722"
 ---
 # <a name="educationpointsoutcome-resource-type"></a>тип ресурсов educationPointsOutcome
 
@@ -31,7 +31,7 @@ ms.locfileid: "54178481"
 |points|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|Числовая оценка, предоставленная преподавателем для этого задания.|
 |publishedPoints|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|Копия свойства точек, которое будет сделано после выпуска класса для учащегося.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Нет
 
