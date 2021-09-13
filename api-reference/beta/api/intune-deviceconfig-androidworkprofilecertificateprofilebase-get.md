@@ -2,15 +2,15 @@
 title: Get AndroidWorkProfileCertificateProfileBase
 description: Чтение свойств и связей объекта AndroidWorkProfileCertificateProfileBase.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 39e553432e85b61314f149d0f817a9fa24785cc1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 10685ef33d0e6a075e8410551e2c9a5b4669ec66
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791721"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59093262"
 ---
 # <a name="get-androidworkprofilecertificateprofilebase"></a>Get AndroidWorkProfileCertificateProfileBase
 
@@ -29,7 +29,7 @@ ms.locfileid: "58791721"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

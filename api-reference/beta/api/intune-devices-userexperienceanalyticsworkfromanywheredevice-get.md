@@ -2,15 +2,15 @@
 title: Get userExperienceAnalyticsWorkFromAnywhereDevice
 description: Чтение свойств и связей объекта userExperienceAnalyticsWorkFromAnywhereDevice.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a20696dcfb793591e36b283e65bff21821bb2f5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 95d27d7a639f8d108772219f8b82c8dd2edc30fa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817238"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59087963"
 ---
 # <a name="get-userexperienceanalyticsworkfromanywheredevice"></a>Get userExperienceAnalyticsWorkFromAnywhereDevice
 

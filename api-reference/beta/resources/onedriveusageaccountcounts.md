@@ -1,16 +1,16 @@
 ---
 title: тип ресурса oneDriveUsageAccountCounts
 description: Ниже указано представление ресурса в формате JSON.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: b96454b436f67ed5045fc3c3f9e72630c93c858fb2042bada90b7559869a84ba
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b17e5edc14f2296e15328e5dbf57663daf02830c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54195011"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085898"
 ---
 # <a name="onedriveusageaccountcounts-resource-type"></a>тип ресурса oneDriveUsageAccountCounts
 
@@ -21,7 +21,7 @@ ms.locfileid: "54195011"
 | Свойство          | Тип   |
 | :---------------- | :----- |
 | reportRefreshDate | Дата   |
-| siteType          | Строка |
+| siteType          | String |
 | total             | Int64  |
 | active            | Int64  |
 | reportDate        | Дата   |

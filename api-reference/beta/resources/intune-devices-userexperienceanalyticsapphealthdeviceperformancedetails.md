@@ -2,15 +2,15 @@
 title: тип ресурса userExperienceAnalyticsAppHealthDevicePerformanceDetails
 description: Объект аналитики производительности устройства пользовательского интерфейса содержит сведения о производительности устройства.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4e6905faac844f91925f875e893d710e7a8286e5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 128628505c68938426416e4cbfd2dc8b6913031f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817378"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086255"
 ---
 # <a name="userexperienceanalyticsapphealthdeviceperformancedetails-resource-type"></a>тип ресурса userExperienceAnalyticsAppHealthDevicePerformanceDetails
 

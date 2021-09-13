@@ -2,15 +2,15 @@
 title: тип ресурса windowsKioskAppBase
 description: Базовый класс для типа приложений
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7fbaf7faec0e233963cbf82dc571c6baea00906c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f104fb09d0861a502f657535751ab1ae242ef721
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815626"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086674"
 ---
 # <a name="windowskioskappbase-resource-type"></a>тип ресурса windowsKioskAppBase
 
@@ -28,7 +28,7 @@ ms.locfileid: "58815626"
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|Размер плитки приложения для начала макета. Возможные значения: `hidden`, `small`, `medium`, `wide`, `large`.|
 |name|String|Представляет удобное имя приложения|
 |appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|Тип приложения. Возможные значения: `unknown`, `store`, `desktop`, `aumId`.|
-|autoLaunch|Логический|Разрешить автоматическое запуск приложения в режиме киоска с несколькими приложениями|
+|autoLaunch|Логическое|Разрешить автоматическое запуск приложения в режиме киоска с несколькими приложениями|
 
 ## <a name="relationships"></a>Связи
 Нет

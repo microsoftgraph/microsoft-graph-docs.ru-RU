@@ -2,15 +2,15 @@
 title: тип ресурса assignmentFilterEvaluationSummary
 description: Представляем сводку результатов для оценки фильтра назначения
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 385486f6ecfdff12ea406bca53b92fbc087007e9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 47b38a462439d0b23ae2bfb51f56a41c3e272699
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799144"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100969"
 ---
 # <a name="assignmentfilterevaluationsummary-resource-type"></a>тип ресурса assignmentFilterEvaluationSummary
 
@@ -25,9 +25,9 @@ ms.locfileid: "58799144"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|assignmentFilterId|Строка|Уникальный идентификатор для объекта фильтра назначения|
+|assignmentFilterId|String|Уникальный идентификатор для объекта фильтра назначения|
 |assignmentFilterLastModifiedDateTime|DateTimeOffset|Время последнего изменения фильтра назначения.|
-|assignmentFilterDisplayName|Строка|Имя администратора для фильтра назначения.|
+|assignmentFilterDisplayName|String|Имя администратора для фильтра назначения.|
 |assignmentFilterPlatform|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|Платформа, для которой создается фильтр назначения. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |assessmentResult|[assignmentFilterEvaluationResult](../resources/intune-policyset-assignmentfilterevaluationresult.md)|Результат оценки фильтра назначения. Возможные значения: `unknown`, `match`, `notMatch`, `inconclusive`, `failure`, `notEvaluated`.|
 |assessmentDateTime|DateTimeOffset|Был оценен фильтр назначения времени.|

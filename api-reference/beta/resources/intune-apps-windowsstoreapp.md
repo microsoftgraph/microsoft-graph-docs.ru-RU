@@ -2,15 +2,15 @@
 title: тип ресурса windowsStoreApp
 description: Содержит свойства и унаследованные свойства для приложений Windows Store.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6a14c955969fafab3c6462d0dd91110ce4b03b76
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1fe01d10c960d9844d382bc0024d1f186aefca93
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804570"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091855"
 ---
 # <a name="windowsstoreapp-resource-type"></a>тип ресурса windowsStoreApp
 
@@ -29,17 +29,17 @@ ms.locfileid: "58804570"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список windowsStoreApps](../api/intune-apps-windowsstoreapp-list.md)|[коллекция windowsStoreApp](../resources/intune-apps-windowsstoreapp.md)|Список свойств и связей объектов [WindowsStoreApp.](../resources/intune-apps-windowsstoreapp.md)|
-|[Получить WindowsStoreApp](../api/intune-apps-windowsstoreapp-get.md)|[WindowsStoreApp](../resources/intune-apps-windowsstoreapp.md)|Чтение свойств и связей объекта [WindowsStoreApp.](../resources/intune-apps-windowsstoreapp.md)|
-|[Создание WindowsStoreApp](../api/intune-apps-windowsstoreapp-create.md)|[WindowsStoreApp](../resources/intune-apps-windowsstoreapp.md)|Создание нового [объекта WindowsStoreApp.](../resources/intune-apps-windowsstoreapp.md)|
+|[Получить WindowsStoreApp](../api/intune-apps-windowsstoreapp-get.md)|[windowsStoreApp](../resources/intune-apps-windowsstoreapp.md)|Чтение свойств и связей объекта [WindowsStoreApp.](../resources/intune-apps-windowsstoreapp.md)|
+|[Создание WindowsStoreApp](../api/intune-apps-windowsstoreapp-create.md)|[windowsStoreApp](../resources/intune-apps-windowsstoreapp.md)|Создание нового [объекта WindowsStoreApp.](../resources/intune-apps-windowsstoreapp.md)|
 |[Удаление WindowsStoreApp](../api/intune-apps-windowsstoreapp-delete.md)|Нет|Удаляет [windowsStoreApp](../resources/intune-apps-windowsstoreapp.md).|
-|[Обновление WindowsStoreApp](../api/intune-apps-windowsstoreapp-update.md)|[WindowsStoreApp](../resources/intune-apps-windowsstoreapp.md)|Обновление свойств объекта [WindowsStoreApp.](../resources/intune-apps-windowsstoreapp.md)|
+|[Обновление WindowsStoreApp](../api/intune-apps-windowsstoreapp-update.md)|[windowsStoreApp](../resources/intune-apps-windowsstoreapp.md)|Обновление свойств объекта [WindowsStoreApp.](../resources/intune-apps-windowsstoreapp.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|id|String|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|description|Строка|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|description|String|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
@@ -53,7 +53,7 @@ ms.locfileid: "58804570"
 |uploadState|Int32|Состояние загрузки. Возможные значения: 0 - `Not Ready` , 1 - `Ready` , 2 - `Processing` . Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Унаследованный от [mobileApp](../resources/intune-shared-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложению по крайней мере одна группа. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|roleScopeTagIds|Коллекция String|Список ids тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|roleScopeTagIds|Коллекция объектов string|Список ids тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |dependentAppCount|Int32|Общее число зависимостей, которые имеет детское приложение. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |supersedingAppCount|Int32|Общее число приложений, которые это приложение прямо или косвенно перемежает. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |supersededAppCount|Int32|Общее число приложений, которые это приложение прямо или косвенно вымежает. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|

@@ -2,15 +2,15 @@
 title: Тип ресурса ndesConnector
 description: Объект, представляючий соединителя OnPrem Ndes.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 392862f8bf8853195743b741727485de383fc62c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 222c675d66fc400c83161377def32420ad81d3fa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799509"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091652"
 ---
 # <a name="ndesconnector-resource-type"></a>Тип ресурса ndesConnector
 
@@ -26,18 +26,18 @@ ms.locfileid: "58799509"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список ndesConnectors](../api/intune-deviceconfig-ndesconnector-list.md)|[Коллекция ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|Список свойств и связей объектов [ndesConnector.](../resources/intune-deviceconfig-ndesconnector.md)|
-|[Get ndesConnector](../api/intune-deviceconfig-ndesconnector-get.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md).|Чтение свойств и связей объекта [ndesConnector.](../resources/intune-deviceconfig-ndesconnector.md)|
-|[Создание ndesConnector](../api/intune-deviceconfig-ndesconnector-create.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md).|Создайте новый [объект ndesConnector.](../resources/intune-deviceconfig-ndesconnector.md)|
+|[Get ndesConnector](../api/intune-deviceconfig-ndesconnector-get.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|Чтение свойств и связей объекта [ndesConnector.](../resources/intune-deviceconfig-ndesconnector.md)|
+|[Создание ndesConnector](../api/intune-deviceconfig-ndesconnector-create.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|Создайте новый [объект ndesConnector.](../resources/intune-deviceconfig-ndesconnector.md)|
 |[Удаление ndesConnector](../api/intune-deviceconfig-ndesconnector-delete.md)|Нет|Удаляет [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md).|
-|[Обновление ndesConnector](../api/intune-deviceconfig-ndesconnector-update.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md).|Обновление свойств объекта [ndesConnector.](../resources/intune-deviceconfig-ndesconnector.md)|
+|[Обновление ndesConnector](../api/intune-deviceconfig-ndesconnector-update.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|Обновление свойств объекта [ndesConnector.](../resources/intune-deviceconfig-ndesconnector.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ соединиттеля NDES.|
+|id|String|Ключ соединиттеля NDES.|
 |lastConnectionDateTime|DateTimeOffset|Последнее время подключения для соединитетеля Ndes|
 |state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Состояние соединитетеля Ndes. Возможные значения: `none`, `active`, `inactive`.|
-|displayName|Строка|Дружеское имя соединиттеля Ndes.|
+|displayName|String|Дружеское имя соединиттеля Ndes.|
 
 ## <a name="relationships"></a>Связи
 Нет

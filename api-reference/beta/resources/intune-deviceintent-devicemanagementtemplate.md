@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementTemplate
 description: Сущность, представляюая определенный набор параметров устройств
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e830e4d879b3cf3a096e9919ad75c0e3966dc21e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 434f62be55ebd1fef116d07e27fd9fcb7541d009
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819012"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086395"
 ---
 # <a name="devicemanagementtemplate-resource-type"></a>тип ресурса deviceManagementTemplate
 

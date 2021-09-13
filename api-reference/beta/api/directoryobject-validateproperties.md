@@ -1,22 +1,22 @@
 ---
 title: 'directoryObject: проверка Свойств'
 description: Проверка соответствия отображаемого имени или почтового псевдонима группы Microsoft 365 политикам именования.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 699175bfd3d51deb07d64722a7196fcf9dcc8880
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: ede7c76c1db63ed0c1c52d4ed7aab4eb6a91561d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436836"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59083658"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject: проверка Свойств
 
 Пространство имен: microsoft.graph
 
-Проверка соответствия отображаемого имени или почтового псевдонима группы Microsoft 365 политикам именования.  Клиенты могут использовать этот API, чтобы определить, допустимо  ли имя или псевдоним почты перед попыткой создать группу Microsoft 365. Для проверки свойств существующей группы используйте функцию [validateProperties](group-validateproperties.md) для групп.
+Проверка соответствия отображаемого имени или почтового псевдонима группы Microsoft 365 политикам именования.  Клиенты могут использовать этот API, чтобы определить, допустимо  ли имя или псевдоним почты перед попыткой создания Microsoft 365 группы. Для проверки свойств существующей группы используйте функцию [validateProperties](group-validateproperties.md) для групп.
 
 Следующие проверки выполняются для свойств отображения имени и ником почты: 
 1. Проверка политики имен префикса и суффикса
@@ -59,7 +59,7 @@ POST /directoryObjects/validateProperties
 
 ## <a name="response"></a>Отклик
 
-В случае успешной проверки и без ошибок проверки метод возвращает `204 No Content` код ответа. В тексте отклика не возвращается никаких данных.
+В случае успешной проверки и без ошибок проверки метод возвращает `204 No Content` код ответа. Метод не возвращает данные в теле отклика.
 
 Если запрос недействителен, метод возвращает `400 Bad Request` код ответа. Сообщение об ошибке с сведениями о недействительности запроса возвращается в тексте ответа.
 

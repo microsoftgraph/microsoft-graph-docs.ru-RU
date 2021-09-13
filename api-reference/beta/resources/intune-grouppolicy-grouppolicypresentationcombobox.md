@@ -2,15 +2,15 @@
 title: тип ресурса groupPolicyPresentationComboBox
 description: Представляет элемент comboBox ADMX и текстовый элемент ADMX.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d431d96d3747ce1d9ea764ca924c596391224fa3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2a873e9dceb08e16166d1d48dca0b801ce42bd02
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58810269"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086016"
 ---
 # <a name="grouppolicypresentationcombobox-resource-type"></a>тип ресурса groupPolicyPresentationComboBox
 
@@ -37,12 +37,12 @@ ms.locfileid: "58810269"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|подпись|Строка|Локализованная текстовая метка для любого объекта презентации. По умолчанию это значение пусто. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|id|Строка|Ключ объекта. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|подпись|String|Локализованная текстовая метка для любого объекта презентации. По умолчанию это значение пусто. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|id|String|Ключ объекта. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|defaultValue|Строка|Локализованная строка по умолчанию, отображаемая в поле комбо. По умолчанию это значение пусто.|
-|предложения|Коллекция String|Локализованные строки, перечисленные в выпадаемом списке комбо-окна. По умолчанию это значение пусто.|
-|обязательно|Логический|Указывает, должно ли значение быть задано для параметра. Значение по умолчанию  false.|
+|defaultValue|String|Локализованная строка по умолчанию, отображаемая в поле комбо. По умолчанию это значение пусто.|
+|предложения|Коллекция объектов string|Локализованные строки, перечисленные в выпадаемом списке комбо-окна. По умолчанию это значение пусто.|
+|обязательно|Логическое|Указывает, должно ли значение быть задано для параметра. Значение по умолчанию  false.|
 |maxLength|Int64|Неподписаный целый ряд, который указывает максимальное количество текстовых символов для параметра. Значение по умолчанию — 1023.|
 
 ## <a name="relationships"></a>Связи

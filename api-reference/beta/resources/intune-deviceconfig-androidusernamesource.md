@@ -2,15 +2,15 @@
 title: тип enum androidUsernameSource
 description: Источник имени пользователя Android.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b81a254bedad8690498840892f39a803cc2a608d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ba20640f614f717d2486e07c832e384574358d63
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791545"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115543"
 ---
 # <a name="androidusernamesource-enum-type"></a>тип enum androidUsernameSource
 
@@ -26,7 +26,7 @@ ms.locfileid: "58791545"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |username|0|Имя пользователя.|
-|userPrincipalName|1|Имя участника-пользователя.|
+|userPrincipalName.|1|Имя участника-пользователя.|
 |samAccountName|2|Имя учетной записи пользователя Sam.|
 |primarySmtpAddress|3|Основной адрес SMTP.|
 

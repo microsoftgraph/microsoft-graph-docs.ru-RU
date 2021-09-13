@@ -2,15 +2,15 @@
 title: updateLanguageFiles action
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4a55184f0da2db786ce9faade7a48eeac5286a20
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1619b235d14079028eb9c1686c0715cfc3f700a9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805137"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59096951"
 ---
 # <a name="updatelanguagefiles-action"></a>updateLanguageFiles action
 

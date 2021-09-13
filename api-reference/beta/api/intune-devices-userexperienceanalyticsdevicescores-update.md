@@ -2,15 +2,15 @@
 title: Обновление userExperienceAnalyticsDeviceScores
 description: Обновление свойств объекта userExperienceAnalyticsDeviceScores.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d2c7f86403af7d0093930a37f9298f075c3bc79
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 576bbb767eeceacaf2a9e70d3fefcb147c4bc546
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819944"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097308"
 ---
 # <a name="update-userexperienceanalyticsdevicescores"></a>Обновление userExperienceAnalyticsDeviceScores
 

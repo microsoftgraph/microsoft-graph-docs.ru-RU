@@ -2,15 +2,15 @@
 title: Создание windowsInformationProtectionWipeAction
 description: Создание нового объекта windowsInformationProtectionWipeAction.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 055f9f63f7e42673ef34150f9addec50b3c5d0bd
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 38848c913618e49be5bdd0a096699ccfd7cef6d0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804633"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59092835"
 ---
 # <a name="create-windowsinformationprotectionwipeaction"></a>Создание windowsInformationProtectionWipeAction
 
@@ -53,12 +53,12 @@ POST /deviceAppManagement/windowsInformationProtectionWipeActions
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |status|[actionState](../resources/intune-shared-actionstate.md)|Wipe action status. Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|targetedUserId|Строка|Объект UserId, на который нацелено это действие стирки.|
+|targetedUserId|String|Объект UserId, на который нацелено это действие стирки.|
 |targetedDeviceRegistrationId|String|Объект DeviceRegistrationId, нацеленный этим действием на стирку.|
-|targetedDeviceName|Строка|Целевое имя устройства.|
-|targetedDeviceMacAddress|Строка|Адрес Mac целевого устройства.|
+|targetedDeviceName|String|Целевое имя устройства.|
+|targetedDeviceMacAddress|String|Адрес Mac целевого устройства.|
 |lastCheckInDateTime|DateTimeOffset|Время последней проверки устройства, на которое было нацелено это действие стирки.|
 
 

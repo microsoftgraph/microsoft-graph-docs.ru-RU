@@ -2,15 +2,15 @@
 title: Список androidWorkProfilePkcsCertificateProfiles
 description: Список свойств и связей объектов AndroidWorkProfilePkcsCertificateProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e29e6e39e3164bb40c42ebb401e282da0bb992fe
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6a02ad65cf190cc47fbc14ac5bcf290f9801ec3d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788628"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59088474"
 ---
 # <a name="list-androidworkprofilepkcscertificateprofiles"></a>Список androidWorkProfilePkcsCertificateProfiles
 
@@ -29,7 +29,7 @@ ms.locfileid: "58788628"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

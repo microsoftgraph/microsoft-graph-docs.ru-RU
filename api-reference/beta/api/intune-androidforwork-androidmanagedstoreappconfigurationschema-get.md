@@ -2,15 +2,15 @@
 title: Get AndroidManagedStoreAppConfigurationSchema
 description: Ознакомьтесь с свойствами и отношениями объекта AndroidManagedStoreAppConfigurationSchema.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fb0d179ca48d17b51d40acbd315fcce2cc1fa4ba
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 79760f3df5c71a4a58367c2eb81a05780a32baf9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796133"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59083294"
 ---
 # <a name="get-androidmanagedstoreappconfigurationschema"></a>Get AndroidManagedStoreAppConfigurationSchema
 
@@ -29,7 +29,7 @@ ms.locfileid: "58796133"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

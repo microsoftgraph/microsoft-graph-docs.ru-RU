@@ -2,15 +2,15 @@
 title: Создание microsoftTunnelSite
 description: Создайте новый объект microsoftTunnelSite.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c55eb63c5eee5b0d5488824b35fca0f9d90405d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ec24b6fb069300d85fee5b0d7dbf26e8f42548ee
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804626"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59096895"
 ---
 # <a name="create-microsofttunnelsite"></a>Создание microsoftTunnelSite
 
@@ -53,17 +53,17 @@ POST /deviceManagement/microsoftTunnelSites
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Id MicrosoftTunnelSite|
-|displayName|Строка|Имя отображения MicrosoftTunnelSite|
-|description|Строка|Описание MicrosoftTunnelSite|
-|publicAddress|Строка|Имя или IP-адрес общественного домена MicrosoftTunnelSite|
+|id|String|Id MicrosoftTunnelSite|
+|displayName|String|Имя отображения MicrosoftTunnelSite|
+|description|String|Описание MicrosoftTunnelSite|
+|publicAddress|String|Имя или IP-адрес общественного домена MicrosoftTunnelSite|
 |upgradeWindowUtcOffsetInMinutes|Int32|Зона времени сайта, представленная в качестве минутного смещения от UTC|
 |upgradeWindowStartTime|TimeOfDay|Время запуска окна обновления сайта|
 |upgradeWindowEndTime|TimeOfDay|Время окончания дня окна обновления сайта|
 |upgradeAutomatically|Логический|Параметр автоматического обновления сайта. True для автоматических обновлений, false для ручного управления|
-|upgradeAvailable|Логический|True, если доступно обновление|
-|internalNetworkProbeUrl|Строка|URL-адрес зонда внутреннего доступа к сети MicrosoftTunnelSite|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
+|upgradeAvailable|Логическое|True, если доступно обновление|
+|internalNetworkProbeUrl|String|URL-адрес зонда внутреннего доступа к сети MicrosoftTunnelSite|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity.|
 
 
 

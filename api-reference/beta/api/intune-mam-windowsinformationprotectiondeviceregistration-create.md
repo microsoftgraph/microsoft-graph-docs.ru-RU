@@ -2,15 +2,15 @@
 title: Создание windowsInformationProtectionDeviceRegistration
 description: Создание нового объекта windowsInformationProtectionDeviceRegistration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ea007cee7a6ce90c36602b31262cbccfc4107dbc
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c322453fc482f58d9551d82a34aa3473080dbb65
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784305"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59087759"
 ---
 # <a name="create-windowsinformationprotectiondeviceregistration"></a>Создание windowsInformationProtectionDeviceRegistration
 
@@ -29,7 +29,7 @@ ms.locfileid: "58784305"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,12 +53,12 @@ POST /deviceAppManagement/windowsInformationProtectionDeviceRegistrations
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |userId|String|UserId, связанный с этой записью регистрации устройства.|
 |deviceRegistrationId|Строка|Идентификатор устройства для записи регистрации устройства.|
 |deviceName|String|Имя устройства.|
 |deviceType|String|Тип устройства, например, Windows ноутбук vs Windows телефон.|
-|deviceMacAddress|Строка|Адрес Mac устройства.|
+|deviceMacAddress|String|Адрес Mac устройства.|
 |lastCheckInDateTime|DateTimeOffset|Время последней проверки устройства.|
 
 

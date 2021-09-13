@@ -2,15 +2,15 @@
 title: Обновление WindowsManagementApp
 description: Обновление свойств объекта WindowsManagementApp.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 088c139a302f07ef4ec954d8401b4e6c77775255
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 88f7655a9819da4afb9b7a64665ecf912b208c26
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790530"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59087893"
 ---
 # <a name="update-windowsmanagementapp"></a>Обновление WindowsManagementApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "58790530"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,10 +53,10 @@ PATCH /deviceAppManagement/windowsManagementApp
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для приложения Windows управления|
-|availableVersion|Строка|Windows доступной версии приложения для управления.|
+|id|String|Уникальный идентификатор для приложения Windows управления|
+|availableVersion|String|Windows доступной версии приложения для управления.|
 |managedInstaller|[managedInstallerStatus](../resources/intune-devices-managedinstallerstatus.md)|Состояние управляемого установщика. Возможные значения: `disabled`, `enabled`.|
-|managedInstallerConfiguredDateTime|Строка|Настроено время даты управляемого установщика|
+|managedInstallerConfiguredDateTime|String|Настроено время даты управляемого установщика|
 
 
 

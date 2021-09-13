@@ -2,15 +2,15 @@
 title: Список appleUserInitiatedEnrollmentProfiles
 description: Список свойств и связей объектов appleUserInitiatedEnrollmentProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 508b3952c7fde1480a666156fcb853c56ddd9a12
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 850ee974d729c643d94b4080e4e71f2338331888
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793994"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59116649"
 ---
 # <a name="list-appleuserinitiatedenrollmentprofiles"></a>Список appleUserInitiatedEnrollmentProfiles
 
@@ -29,7 +29,7 @@ ms.locfileid: "58793994"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

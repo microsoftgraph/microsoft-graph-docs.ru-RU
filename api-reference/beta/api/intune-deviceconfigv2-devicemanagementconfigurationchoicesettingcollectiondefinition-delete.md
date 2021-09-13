@@ -2,15 +2,15 @@
 title: Удаление deviceManagementConfigurationChoiceSettingCollectionDefinition
 description: Удаляет устройствоManagementConfigurationChoiceSettingCollectionDefinition.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7df729d0dd40c33593354e0cf69e4c31a253df0a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 56c2455c3e0f5e103ddac75be56499826efe6373
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798639"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097420"
 ---
 # <a name="delete-devicemanagementconfigurationchoicesettingcollectiondefinition"></a>Удаление deviceManagementConfigurationChoiceSettingCollectionDefinition
 
@@ -29,7 +29,7 @@ ms.locfileid: "58798639"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

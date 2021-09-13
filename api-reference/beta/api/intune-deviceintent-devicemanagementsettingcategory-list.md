@@ -2,15 +2,15 @@
 title: Список deviceManagementSettingCategories
 description: Список свойств и связей объектов deviceManagementSettingCategory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 56b0eb75e14a5685d2638d507c6d264f0f37a815
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6e9fd98ac9789d76a4877a6034ef660dd5523437
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58765346"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59088082"
 ---
 # <a name="list-devicemanagementsettingcategories"></a>Список deviceManagementSettingCategories
 
@@ -29,7 +29,7 @@ ms.locfileid: "58765346"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

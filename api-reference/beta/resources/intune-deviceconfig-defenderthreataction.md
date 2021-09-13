@@ -2,15 +2,15 @@
 title: тип enum defenderThreatAction
 description: Действие защитника по умолчанию для решения обнаруженных угроз вредоносных программ.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: aedaa09cad5882ad4ab3f544f0476cd478ed2a1e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f533b3f9d751d52523c1fc2cb316604fa40827dc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805445"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59120229"
 ---
 # <a name="defenderthreataction-enum-type"></a>тип enum defenderThreatAction
 

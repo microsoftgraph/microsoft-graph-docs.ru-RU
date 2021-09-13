@@ -2,15 +2,15 @@
 title: тип enum androidDeviceOwnerKioskCustomizationSystemNavigation
 description: Enum, представляющий возможные значения для навигации системы настройки киоска.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1d4e2ea963413316f090a23a9a3c4b9e59575339
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7abbffd5ad0a400ba9f4e07d6234d0f7e0d32c46
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820935"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59106590"
 ---
 # <a name="androiddeviceownerkioskcustomizationsystemnavigation-enum-type"></a>тип enum androidDeviceOwnerKioskCustomizationSystemNavigation
 

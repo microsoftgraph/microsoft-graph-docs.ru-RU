@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementSettingCategory
 description: Объект, представляющий категорию параметра
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e5bb023319284c4d1a455f9cac98c2b62f227129
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7dd0e8d84dbe5f55f6c6e24764d5cddabe036174
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797263"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091435"
 ---
 # <a name="devicemanagementsettingcategory-resource-type"></a>тип ресурса deviceManagementSettingCategory
 
@@ -34,9 +34,9 @@ ms.locfileid: "58797263"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|ID категории|
+|id|String|ID категории|
 |displayName|String|Имя категории|
-|hasRequiredSetting|Логический|Категория содержит требуемую настройку верхнего уровня|
+|hasRequiredSetting|Логическое|Категория содержит требуемую настройку верхнего уровня|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

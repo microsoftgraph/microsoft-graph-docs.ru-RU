@@ -2,15 +2,15 @@
 title: тип enum windowsUserAccountControlSettings
 description: Возможные значения для Windows параметров управления учетной записью пользователя.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 369a67136b4ff92d01af7ebd06e8f06b74825ff2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 609b136e873e1c4046310b36255d42a28e5ec7ad
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803800"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59095411"
 ---
 # <a name="windowsuseraccountcontrolsettings-enum-type"></a>тип enum windowsUserAccountControlSettings
 

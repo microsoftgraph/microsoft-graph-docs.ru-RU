@@ -2,15 +2,15 @@
 title: тип ресурса androidScepCertificateProfile
 description: Профиль сертификата SCEP для Android
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bc3202dc5439b75bf249be25e2ccdd8b251ba613
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4247337e590ea4aee6b523c8bdd02e9ff44867b0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796883"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59120355"
 ---
 # <a name="androidscepcertificateprofile-resource-type"></a>тип ресурса androidScepCertificateProfile
 
@@ -29,24 +29,24 @@ ms.locfileid: "58796883"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список androidScepCertificateProfiles](../api/intune-deviceconfig-androidscepcertificateprofile-list.md)|[коллекция androidScepCertificateProfile](../resources/intune-deviceconfig-androidscepcertificateprofile.md)|Список свойств и связей [объектов AndroidScepCertificateProfile.](../resources/intune-deviceconfig-androidscepcertificateprofile.md)|
-|[Get AndroidScepCertificateProfile](../api/intune-deviceconfig-androidscepcertificateprofile-get.md)|[AndroidScepCertificateProfile](../resources/intune-deviceconfig-androidscepcertificateprofile.md)|Чтение свойств и связей [объекта AndroidScepCertificateProfile.](../resources/intune-deviceconfig-androidscepcertificateprofile.md)|
-|[Создание androidScepCertificateProfile](../api/intune-deviceconfig-androidscepcertificateprofile-create.md)|[AndroidScepCertificateProfile](../resources/intune-deviceconfig-androidscepcertificateprofile.md)|Создайте новый [объект AndroidScepCertificateProfile.](../resources/intune-deviceconfig-androidscepcertificateprofile.md)|
+|[Get AndroidScepCertificateProfile](../api/intune-deviceconfig-androidscepcertificateprofile-get.md)|[androidScepCertificateProfile](../resources/intune-deviceconfig-androidscepcertificateprofile.md)|Чтение свойств и связей [объекта AndroidScepCertificateProfile.](../resources/intune-deviceconfig-androidscepcertificateprofile.md)|
+|[Создание androidScepCertificateProfile](../api/intune-deviceconfig-androidscepcertificateprofile-create.md)|[androidScepCertificateProfile](../resources/intune-deviceconfig-androidscepcertificateprofile.md)|Создайте новый [объект AndroidScepCertificateProfile.](../resources/intune-deviceconfig-androidscepcertificateprofile.md)|
 |[Удаление AndroidScepCertificateProfile](../api/intune-deviceconfig-androidscepcertificateprofile-delete.md)|Нет|Удаляет [androidScepCertificateProfile](../resources/intune-deviceconfig-androidscepcertificateprofile.md).|
-|[Обновление androidScepCertificateProfile](../api/intune-deviceconfig-androidscepcertificateprofile-update.md)|[AndroidScepCertificateProfile](../resources/intune-deviceconfig-androidscepcertificateprofile.md)|Обновление свойств объекта [AndroidScepCertificateProfile.](../resources/intune-deviceconfig-androidscepcertificateprofile.md)|
+|[Обновление androidScepCertificateProfile](../api/intune-deviceconfig-androidscepcertificateprofile-update.md)|[androidScepCertificateProfile](../resources/intune-deviceconfig-androidscepcertificateprofile.md)|Обновление свойств объекта [AndroidScepCertificateProfile.](../resources/intune-deviceconfig-androidscepcertificateprofile.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|supportsScopeTags|Логическое|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость к выпуску ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |renewalThresholdPercentage|Int32|Процент порогового значения обновления сертификата. Допустимые значения от 1 до 99, унаследованные от [AndroidCertificateProfileBase](../resources/intune-deviceconfig-androidcertificateprofilebase.md)|
 |subjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Формат имени субъекта сертификата. Унаследовано от [androidCertificateProfileBase.](../resources/intune-deviceconfig-androidcertificateprofilebase.md) Возможные значения: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
@@ -54,12 +54,12 @@ ms.locfileid: "58796883"
 |certificateValidityPeriodValue|Int32|Значение для срока действия сертификата. Унаследованный от [androidCertificateProfileBase](../resources/intune-deviceconfig-androidcertificateprofilebase.md)|
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-shared-certificatevalidityperiodscale.md)|Масштаб для срока действия сертификата. Унаследовано от [androidCertificateProfileBase.](../resources/intune-deviceconfig-androidcertificateprofilebase.md) Возможные значения: `days`, `months`, `years`.|
 |extendedKeyUsages|[расширенная коллекцияKeyUsage](../resources/intune-shared-extendedkeyusage.md)|Параметры расширенного использования ключей (EKU). Эта коллекция может содержать не более 500 элементов. Унаследованный от [androidCertificateProfileBase](../resources/intune-deviceconfig-androidcertificateprofilebase.md)|
-|scepServerUrls|Коллекция String|URL-адрес сервера SCEP Server (s)|
-|subjectNameFormatString|Строка|Настраиваемый формат для использования с SubjectNameFormat = Custom. Пример: CN={{EmailAddress},E={EmailAddress}},OU=Enterprise Users,O=Contoso Corporation, L=Redmond,ST=WA,C=US|
+|scepServerUrls|Коллекция объектов string|URL-адрес сервера SCEP Server (s)|
+|subjectNameFormatString|String|Настраиваемый формат для использования с SubjectNameFormat = Custom. Пример: CN={{EmailAddress},E={EmailAddress}},OU=Enterprise Users,O=Contoso Corporation, L=Redmond,ST=WA,C=US|
 |keyUsage|[keyUsages](../resources/intune-shared-keyusages.md)|Использование ключей SCEP. Возможные значения: `keyEncipherment`, `digitalSignature`.|
 |keySize|[keySize](../resources/intune-shared-keysize.md)|Размер ключа SCEP. Возможные значения: `size1024`, `size2048`, `size4096`.|
 |hashAlgorithm|[hashAlgorithms](../resources/intune-shared-hashalgorithms.md)|Алгоритм хаширования SCEP. Возможные значения: `sha1`, `sha2`.|
-|subjectAlternativeNameFormatString|Строка|Настраиваемая строка, определяемая атрибутом AAD.|
+|subjectAlternativeNameFormatString|String|Настраиваемая строка, определяемая атрибутом AAD.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

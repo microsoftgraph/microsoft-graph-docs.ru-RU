@@ -2,14 +2,14 @@
 title: Регистрация корпоративных устройств с помощью Intune - Microsoft Graph API
 description: Перечисляет API Graph Microsoft для конечных точек Intune (REST), которые регистрировать устройства для организации-клиента.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 537e3ef3c6ef22e3acc5fef2c5a6fe7f2ca074cf
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 46be1dedc9d9b50f92959ef90c0d76a3353ca7f3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791118"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091246"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Регистрация корпоративных устройств с помощью Intune
 

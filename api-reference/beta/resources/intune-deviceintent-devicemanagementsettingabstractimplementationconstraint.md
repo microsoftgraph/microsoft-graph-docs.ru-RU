@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementSettingAbstractImplementationConstraint
 description: Ограничение, которое обеспечивает выполнение типа AbstractComplex, имеет или заданной для определенного значения
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d46768defd5b5245a662002b3a65e8a34e61bf5c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f90e142981b3f0f964d2ebe90db62522571219a1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821131"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091470"
 ---
 # <a name="devicemanagementsettingabstractimplementationconstraint-resource-type"></a>тип ресурса deviceManagementSettingAbstractImplementationConstraint
 
@@ -28,7 +28,7 @@ ms.locfileid: "58821131"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|allowedAbstractImplementationDefinitionIds|Коллекция String|Список значений, которые не настроены для параметра|
+|allowedAbstractImplementationDefinitionIds|Коллекция объектов string|Список значений, которые не настроены для параметра|
 
 ## <a name="relationships"></a>Связи
 Нет

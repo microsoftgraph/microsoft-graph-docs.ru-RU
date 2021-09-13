@@ -2,15 +2,15 @@
 title: Get userExperienceAnalyticsDeviceScores
 description: Чтение свойств и связей объекта userExperienceAnalyticsDeviceScores.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8c6c8b68cc38b1dae7bc2331901368365567ae33
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bfadc60d1e285d3079ced976ca2da5f05a94de48
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819951"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097315"
 ---
 # <a name="get-userexperienceanalyticsdevicescores"></a>Get userExperienceAnalyticsDeviceScores
 

@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementConfigurationSettingValueTemplateReference
 description: Настройка справочной информации шаблона значений
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 19360005b1076256898454be1d5463e21d67fa25
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9e08b43175b1f685a8883f63769bd91e974744f1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804843"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091505"
 ---
 # <a name="devicemanagementconfigurationsettingvaluetemplatereference-resource-type"></a>тип ресурса deviceManagementConfigurationSettingValueTemplateReference
 
@@ -25,8 +25,8 @@ ms.locfileid: "58804843"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|settingValueTemplateId|Строка|Настройка id шаблона значений|
-|useTemplateDefault|Логический|Указывает, следует ли обновлять значение параметра политики, чтобы соответствовать значению параметра шаблона по умолчанию|
+|settingValueTemplateId|String|Настройка id шаблона значений|
+|useTemplateDefault|Логическое|Указывает, следует ли обновлять значение параметра политики, чтобы соответствовать значению параметра шаблона по умолчанию|
 
 ## <a name="relationships"></a>Связи
 Нет
