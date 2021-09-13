@@ -2,15 +2,15 @@
 title: Обновление userExperienceAnalyticsImpactingProcess
 description: Обновление свойств объекта userExperienceAnalyticsImpactingProcess.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0dc619edca7b53d40f149b529b4323d03d3e5bee
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6d1643c7d15962fc7b108f7a49592d1483f9b5bf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798239"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070533"
 ---
 # <a name="update-userexperienceanalyticsimpactingprocess"></a>Обновление userExperienceAnalyticsImpactingProcess
 
@@ -53,11 +53,11 @@ PATCH /deviceManagement/userExperienceAnalyticsImpactingProcess/{userExperienceA
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта аналитики пользовательского интерфейса, который оказывает влияние на процесс.|
+|id|String|Уникальный идентификатор объекта аналитики пользовательского интерфейса, который оказывает влияние на процесс.|
 |deviceId|String|Уникальный идентификатор влияемого устройства.|
 |category|String|Категория воздействия процесса.|
-|processName|Строка|Имя процесса.|
-|description|Строка|Описание процесса.|
+|processName|String|Имя процесса.|
+|description|String|Описание процесса.|
 |publisher|String|Издатель процесса.|
 |impactValue|Двойное с плавающей точкой|Значение влияния процесса. Допустимые значения от 0 до 1.79769313486232E+308|
 

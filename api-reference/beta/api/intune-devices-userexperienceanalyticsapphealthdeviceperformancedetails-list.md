@@ -2,15 +2,15 @@
 title: Список userExperienceAnalyticsAppHealthDevicePerformanceDetailses
 description: Список свойств и связей объектов userExperienceAnalyticsAppHealthDevicePerformanceDetails.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1def97dde4e0387af6a4e47514fc2139eff4c54f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d8699c85714e6ea0678afa8becddfa77d88f6d94
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790537"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59059114"
 ---
 # <a name="list-userexperienceanalyticsapphealthdeviceperformancedetailses"></a>Список userExperienceAnalyticsAppHealthDevicePerformanceDetailses
 
@@ -29,7 +29,7 @@ ms.locfileid: "58790537"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

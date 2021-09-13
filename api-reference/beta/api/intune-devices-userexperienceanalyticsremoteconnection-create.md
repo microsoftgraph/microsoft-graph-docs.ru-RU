@@ -2,15 +2,15 @@
 title: Создание userExperienceAnalyticsRemoteConnection
 description: Создание нового объекта userExperienceAnalyticsRemoteConnection.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5f662539af2c26724ec49da1f35fcf4416277337
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b918a4e540230d7fd6a6f6cd7cfab6cd985d1be6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798611"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59059016"
 ---
 # <a name="create-userexperienceanalyticsremoteconnection"></a>Создание userExperienceAnalyticsRemoteConnection
 
@@ -29,7 +29,7 @@ ms.locfileid: "58798611"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +53,7 @@ POST /deviceManagement/userExperienceAnalyticsRemoteConnection
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта удаленного подключения для аналитики пользовательского интерфейса.|
+|id|String|Уникальный идентификатор объекта удаленного подключения для аналитики пользовательского интерфейса.|
 |deviceId|String|ID устройства.|
 |deviceName|String|Имя устройства.|
 |model|String|Модель устройства аналитики пользовательских интерфейсов.|

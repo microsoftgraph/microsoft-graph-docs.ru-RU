@@ -2,15 +2,15 @@
 title: Обновление userExperienceAnalyticsAppHealthDevicePerformanceDetails
 description: Обновление свойств объекта userExperienceAnalyticsAppHealthDevicePerformanceDetails.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8bd833f11d9af961b0e078675ff5615bddde67a0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fbe20355eade7920acf46b8243df1c3218650f5a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818900"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59059100"
 ---
 # <a name="update-userexperienceanalyticsapphealthdeviceperformancedetails"></a>Обновление userExperienceAnalyticsAppHealthDevicePerformanceDetails
 
@@ -55,9 +55,9 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthDevicePerformanceDetails
 |:---|:---|:---|
 |id|String|Уникальный идентификатор объекта производительности устройства для аналитики пользовательского интерфейса.|
 |eventDateTime|DateTimeOffset|Время события.|
-|eventType|String|Тип события.|
+|eventType|Строка|Тип события.|
 |appDisplayName|String|Удобное имя приложения, для которого произошло событие.|
-|appPublisher|String|Издатель приложения.|
+|appPublisher|Строка|Издатель приложения.|
 |appVersion|String|Версия приложения.|
 |deviceId|String|ID устройства.|
 |deviceDisplayName|String|Имя устройства.|

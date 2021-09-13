@@ -2,15 +2,15 @@
 title: Удаление импортируемого объектаDeviceId
 description: Удаляет импортируемуюDeviceIdentity.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b2bf3e58cca2dd505b4b8e22d4847ccbdb2e4bf
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 27bf32e140a7527e913bc89b8b18569e94b057b7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782772"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070253"
 ---
 # <a name="delete-importeddeviceidentity"></a>Удаление импортируемого объектаDeviceId
 
@@ -29,7 +29,7 @@ ms.locfileid: "58782772"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

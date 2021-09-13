@@ -2,15 +2,15 @@
 title: Обновление неподтвершеннойGroupPolicyExtension
 description: Обновление свойств неподтвершенного объектаGroupPolicyExtension.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cbdfde26c51247d5774c4f5ae2c28d20fa919fac
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dda846759610dba36de25b406e6d1cf654689908
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800844"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59058967"
 ---
 # <a name="update-unsupportedgrouppolicyextension"></a>Обновление неподтвершеннойGroupPolicyExtension
 
@@ -29,7 +29,7 @@ ms.locfileid: "58800844"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,9 +53,9 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Пока не задокументировано.|
+|id|Строка|Пока не задокументировано.|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|Настройка области неподтверченного расширения. Возможные значения: `unknown`, `device`, `user`.|
-|namespaceUrl|Строка|Url-адрес пространства имен неподтверченного расширения.|
+|namespaceUrl|String|Url-адрес пространства имен неподтверченного расширения.|
 |extensionType|Строка|ExtensionType неподтверченного расширения.|
 |nodeName|Строка|Имя узла неподтверченного расширения.|
 

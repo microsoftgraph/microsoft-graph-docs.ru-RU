@@ -2,15 +2,15 @@
 title: Создание userExperienceAnalyticsModelScores
 description: Создание нового объекта userExperienceAnalyticsModelScores.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 99ba277ae4cd0594f88dfa5cbfd9668ebb7dd680
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4e94973df76858b18e6e14427fded96aaa809abc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796568"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070351"
 ---
 # <a name="create-userexperienceanalyticsmodelscores"></a>Создание userExperienceAnalyticsModelScores
 
@@ -29,7 +29,7 @@ ms.locfileid: "58796568"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +53,7 @@ POST /deviceManagement/userExperienceAnalyticsModelScores
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор модели аналитики пользовательского интерфейса засмеяет объект.|
+|id|String|Уникальный идентификатор модели аналитики пользовательского интерфейса засмеяет объект.|
 |model|String|Уникальный идентификатор оценки моделей аналитики пользовательских интерфейсов: модель устройства.|
 |manufacturer|String|Уникальный идентификатор оценки моделей аналитики пользовательских интерфейсов: производитель устройств.|
 |modelDeviceCount|Int64|Количество устройств модели аналитики пользовательских интерфейсов. Допустимые значения -9.2237203685478E+18 до 9.22337203685478E+18|

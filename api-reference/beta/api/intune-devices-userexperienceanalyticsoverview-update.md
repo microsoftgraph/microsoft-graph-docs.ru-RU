@@ -2,15 +2,15 @@
 title: Обновление userExperienceAnalyticsOverview
 description: Обновление свойств объекта userExperienceAnalyticsOverview.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c01eb6cfbbb89d8d08b3c43f13bd0ba4edf50acb
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b4d3f3b0ca442508660a4aa391a7511f0c16a922
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820592"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070288"
 ---
 # <a name="update-userexperienceanalyticsoverview"></a>Обновление userExperienceAnalyticsOverview
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/userExperienceAnalyticsOverview
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор обзора аналитики пользовательских интерфейсов.|
+|id|Строка|Уникальный идентификатор обзора аналитики пользовательских интерфейсов.|
 |overallScore|Int32|Общая оценка аналитики пользовательского опыта.|
 |deviceBootPerformanceOverallScore|Int32|Общая оценка производительности загрузки устройства для аналитики пользовательского интерфейса.|
 |bestPracticesOverallScore|Int32|Анализ пользовательских интерфейсов позволяет опытом работы с общим показателем.|

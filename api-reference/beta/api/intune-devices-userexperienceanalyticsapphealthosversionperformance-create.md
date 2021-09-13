@@ -2,15 +2,15 @@
 title: Создание userExperienceAnalyticsAppHealthOSVersionPerformance
 description: Создание нового объекта userExperienceAnalyticsAppHealthOSVersionPerformance.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ff6935b08976d162bc8f69ff71e1c43d0c0ea07
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 284487155ee2667f95e0b489e18c856b13becb7f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818634"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59059051"
 ---
 # <a name="create-userexperienceanalyticsapphealthosversionperformance"></a>Создание userExperienceAnalyticsAppHealthOSVersionPerformance
 
@@ -53,13 +53,13 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthOSVersionPerformance
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта производительности версии оси для пользовательского интерфейса аналитики оси.|
+|id|Строка|Уникальный идентификатор объекта производительности версии оси для пользовательского интерфейса аналитики оси.|
 |osVersion|String|Версия ОС, установленная на устройстве.|
-|osBuildNumber|String|Номер сборки ОС, установленный на устройстве.|
+|osBuildNumber|Строка|Номер сборки ОС, установленный на устройстве.|
 |activeDeviceCount|Int32|Количество активных устройств для версии ОС. Допустимые значения 2147483648 2147483647|
 |meanTimeToFailureInMinutes|Int32|Время сбоя для версии ОС в минутах. Допустимые значения 2147483648 2147483647|
 |osVersionAppHealthScore|Двойное с плавающей точкой|Оценка состояния здоровья приложения в версии ОС. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
-|osVersionAppHealthStatus|String|Общее состояние состояния здоровья приложения в версии ОС.|
+|osVersionAppHealthStatus|Строка|Общее состояние состояния здоровья приложения в версии ОС.|
 
 
 
