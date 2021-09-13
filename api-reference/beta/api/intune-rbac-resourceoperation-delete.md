@@ -2,15 +2,15 @@
 title: Удаление resourceOperation
 description: Удаление объекта resourceOperation.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6d3cd1c84c7964d92c4a0caef6d5d7af62f042bc
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 93b68ab1d657f8f79539181942b607e345e325c4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802819"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141510"
 ---
 # <a name="delete-resourceoperation"></a>Удаление resourceOperation
 
@@ -29,7 +29,7 @@ ms.locfileid: "58802819"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementRBAC.ReadWrite.All|
+|Для приложений|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

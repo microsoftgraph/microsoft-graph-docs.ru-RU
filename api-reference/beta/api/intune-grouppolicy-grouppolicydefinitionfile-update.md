@@ -2,15 +2,15 @@
 title: Update groupPolicyDefinitionFile
 description: Обновление свойств объекта groupPolicyDefinitionFile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a98bc2553feb2ab71be42eb9e3009cb8cf2f780
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b5ab3988b32239ea490a1a0245f11ebb804ab3c2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804101"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124733"
 ---
 # <a name="update-grouppolicydefinitionfile"></a>Update groupPolicyDefinitionFile
 
@@ -55,14 +55,14 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Локализованное удобное имя файла ADMX.|
-|description|Строка|Локализованное описание параметров политики в файле ADMX. По умолчанию это значение пусто.|
-|languageCodes|Коллекция String|Поддерживаемые языковые коды для файла ADMX.|
-|targetPrefix|Строка|Указывает логическое имя, которое ссылается на пространство имен в файле ADMX.|
-|targetNamespace|Строка|Указывает URI, используемую для определения пространства имен в файле ADMX.|
+|displayName|String|Локализованное удобное имя файла ADMX.|
+|description|String|Локализованное описание параметров политики в файле ADMX. По умолчанию это значение пусто.|
+|languageCodes|Коллекция объектов string|Поддерживаемые языковые коды для файла ADMX.|
+|targetPrefix|String|Указывает логическое имя, которое ссылается на пространство имен в файле ADMX.|
+|targetNamespace|String|Указывает URI, используемую для определения пространства имен в файле ADMX.|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
-|изменение|Строка|Версия изменения, связанная с файлом.|
-|id|Строка|Ключ объекта.|
+|изменение|String|Версия изменения, связанная с файлом.|
+|id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 

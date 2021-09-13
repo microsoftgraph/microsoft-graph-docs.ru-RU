@@ -2,15 +2,15 @@
 title: Обновление устройстваConfigurationGroupAssignment
 description: Обновление свойств объекта deviceConfigurationGroupAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d300dfa9ac752a2fd8469b324cd86090133b9e46
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d12f95beaa1aa1c894aaef3e7ebfb40c28345eac
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794646"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133571"
 ---
 # <a name="update-deviceconfigurationgroupassignment"></a>Обновление устройстваConfigurationGroupAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "58794646"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -62,8 +62,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|targetGroupId|Строка|Id группы AAD, на который ориентирована конфигурация устройства.|
+|id|String|Ключ объекта.|
+|targetGroupId|String|Id группы AAD, на который ориентирована конфигурация устройства.|
 |excludeGroup|Логический|Указывает, следует ли исключить эту группу. По умолчанию, которые следует включить в группу|
 
 

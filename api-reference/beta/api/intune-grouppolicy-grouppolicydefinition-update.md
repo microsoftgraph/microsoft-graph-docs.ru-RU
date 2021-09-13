@@ -2,15 +2,15 @@
 title: Update groupPolicyDefinition
 description: Обновление свойств объекта groupPolicyDefinition.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dca978af3e29d381af9f09a0c16ff9585854108a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 958e6a03b5f2e3e8c6700d7228782ba08f4a4dbf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804115"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124751"
 ---
 # <a name="update-grouppolicydefinition"></a>Update groupPolicyDefinition
 
@@ -60,12 +60,12 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Определяет тип групп, к которые можно применить политику. Возможные значения: `user`, `machine`.|
-|displayName|Строка|Имя локализованной политики.|
-|explainText|Строка|Локализованный текст объяснения или справки, связанные с политикой. По умолчанию это значение пусто.|
-|categoryPath|Строка|Путь к локализованным полным категориям для политики.|
-|supportedOn|Строка|Локализованная строка, используемая для указания того, на какую операционную систему или версию приложения влияет политика.|
+|displayName|String|Имя локализованной политики.|
+|explainText|String|Локализованный текст объяснения или справки, связанные с политикой. По умолчанию это значение пусто.|
+|categoryPath|String|Путь к локализованным полным категориям для политики.|
+|supportedOn|String|Локализованная строка, используемая для указания того, на какую операционную систему или версию приложения влияет политика.|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
-|hasRelatedDefinitions|Логический|Означает, есть ли связанные определения с этим определением или нет.|
+|hasRelatedDefinitions|Логическое|Означает, есть ли связанные определения с этим определением или нет.|
 |groupPolicyCategoryId|Guid|ID категории родительской категории|
 |minDeviceCspVersion|String|Минимальная требуемая версия CSP для конфигурации устройства в этом определении|
 |minUserCspVersion|String|Минимальная требуемая версия CSP для конфигурации пользователя в этом определении|

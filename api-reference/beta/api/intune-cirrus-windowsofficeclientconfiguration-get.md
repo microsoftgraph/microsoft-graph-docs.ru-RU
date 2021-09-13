@@ -1,16 +1,16 @@
 ---
 title: Получить windowsOfficeClientConfiguration
 description: Получите определенный объект политики безопасности windowsOfficeClientConfiguration.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 853b2cb3f4032a10c6970cd32cf77d9a147b7a8d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cbb983007a12fde8a6a2ab78f824173125c973f3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792168"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126445"
 ---
 # <a name="get-windowsofficeclientconfiguration"></a>Получить windowsOfficeClientConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "58792168"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

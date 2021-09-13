@@ -2,15 +2,15 @@
 title: Создание учетной записи
 description: Создайте новый объект учетной записи.
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 308f2a1e4087fcbb07efb08be8fc1e4cba7d819f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 979cbf81654a20cae80aba601c278867ad7ffc1f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441026"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126152"
 ---
 # <a name="create-account"></a>Создание учетной записи
 Пространство имен: microsoft.graph

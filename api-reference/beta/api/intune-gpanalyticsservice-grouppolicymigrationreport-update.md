@@ -2,15 +2,15 @@
 title: Update groupPolicyMigrationReport
 description: Обновление свойств объекта groupPolicyMigrationReport.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 737f6d8be140ec1723295e6f8cdb8809b9bdcca4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 44c63d97cd4d8606e8b03ef2dbba600d701f12ba
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807064"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59121706"
 ---
 # <a name="update-grouppolicymigrationreport"></a>Update groupPolicyMigrationReport
 
@@ -53,10 +53,10 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Пока не задокументировано.|
+|id|String|Пока не задокументировано.|
 |groupPolicyObjectId|Guid|GUID объекта групповой политики из контента GPO Xml|
-|displayName|Строка|Имя объекта групповой политики из контента GPO Xml|
-|ouDistinguishedName|Строка|Отличительное имя OU.|
+|displayName|String|Имя объекта групповой политики из контента GPO Xml|
+|ouDistinguishedName|String|Отличительное имя OU.|
 |createdDateTime|DateTimeOffset|Дата и время создания GroupPolicyMigrationReport.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения GroupPolicyMigrationReport.|
 |groupPolicyCreatedDateTime|DateTimeOffset|Дата и время создания GroupPolicyMigrationReport.|

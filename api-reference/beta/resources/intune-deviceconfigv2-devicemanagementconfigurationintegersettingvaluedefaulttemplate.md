@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationIntegerSettingValueDefaultTemplate resource type
 description: Шаблон по умолчанию параметра "Integer Setting Value"
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 105d400b051c0322d72e711871ae8801a07d25ce
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0afe1b5cd05a6c9a14b4d7a40807c8d27480cf21
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815591"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128881"
 ---
 # <a name="devicemanagementconfigurationintegersettingvaluedefaulttemplate-resource-type"></a>deviceManagementConfigurationIntegerSettingValueDefaultTemplate resource type
 

@@ -2,15 +2,15 @@
 title: Обновление dataSharingConsent
 description: Обновление свойств объекта dataSharingConsent.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 074f8c3901f07b05652526e81a1006f01c83fd88
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2f2d73c20e9beaeb66be8af759888eb086e04764
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819993"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122007"
 ---
 # <a name="update-datasharingconsent"></a>Обновление dataSharingConsent
 
@@ -56,7 +56,7 @@ PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 |id|String|ID согласия для общего доступа к данным|
 |serviceDisplayName|String|Имя отображения потока работы службы|
 |termsUrl|String|TermsUrl для согласия на обмен данными|
-|granted|Логический|Предоставлено состояние для согласия на обмен данными|
+|granted|Логическое|Предоставлено состояние для согласия на обмен данными|
 |grantDateTime|DateTimeOffset|Для этой учетной записи было предоставлено согласие на время|
 |grantedByUpn|String|Upn пользователя, который предоставил согласие для этой учетной записи|
 |grantedByUserId|String|UserId пользователя, который предоставил согласие для этой учетной записи|

@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementEnumValue
 description: Сведения об определении для значения enum
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4deb1cbd4acc38dd57c3a02dd3d53e75d6672ee6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 52ed3ef5a158976a4b50936942d22cd1d70eb97e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793570"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137975"
 ---
 # <a name="devicemanagementenumvalue-resource-type"></a>тип ресурса deviceManagementEnumValue
 
@@ -26,7 +26,7 @@ ms.locfileid: "58793570"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |значение|String|Текст необработанных значений в переименовку|
-|displayName|Строка|Отображение имени для этого значения в переуме|
+|displayName|String|Отображение имени для этого значения в переуме|
 
 ## <a name="relationships"></a>Связи
 Нет

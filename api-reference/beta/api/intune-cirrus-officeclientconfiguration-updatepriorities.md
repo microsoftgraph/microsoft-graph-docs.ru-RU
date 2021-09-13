@@ -1,16 +1,16 @@
 ---
 title: Действие updatePriorities
 description: Обновление приоритетов политики.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a52f44bdcba78376e72fbf019beb7f1f6efab15
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 50123c332cd32acf3c9af44bfc6a6468d44d2da2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787769"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133809"
 ---
 # <a name="updatepriorities-action"></a>Действие updatePriorities
 
@@ -29,7 +29,7 @@ ms.locfileid: "58787769"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +53,7 @@ POST /officeConfiguration/clientConfigurations/microsoft.management.services.api
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|officeConfigurationPolicyIds|Коллекция String|Список ids политики конфигурации office|
+|officeConfigurationPolicyIds|Коллекция объектов string|Список ids политики конфигурации office|
 |officeConfigurationPriorities|Коллекция Int32|Список приоритетов конфигурации офиса|
 
 

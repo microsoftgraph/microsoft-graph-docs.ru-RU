@@ -2,15 +2,15 @@
 title: тип ресурса cartToClassAssociation
 description: CartToClassAssociation для связывания тележек устройств с классами.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 421f00600febc567f10b754e86e061aa5e57fa29
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 10050d3cb9bcc73549244f07077f4c4b7de97bf3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58779139"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127481"
 ---
 # <a name="carttoclassassociation-resource-type"></a>тип ресурса cartToClassAssociation
 
@@ -38,10 +38,10 @@ CartToClassAssociation для связывания тележек устройс
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |version|Int32|Версия CartToClassAssociation.|
-|displayName|Строка|Указанное администратором имя конфигурации устройства.|
-|description|Строка|Администратор предоставил описание CartToClassAssociation.|
-|deviceCartIds|Коллекция String|Идентификаторы тележек устройств, связанных с классами.|
-|classroomIds|Коллекция String|Идентификаторы классов, связанных с тележками устройств.|
+|displayName|String|Указанное администратором имя конфигурации устройства.|
+|description|String|Администратор предоставил описание CartToClassAssociation.|
+|deviceCartIds|Коллекция объектов string|Идентификаторы тележек устройств, связанных с классами.|
+|classroomIds|Коллекция объектов string|Идентификаторы классов, связанных с тележками устройств.|
 
 ## <a name="relationships"></a>Связи
 Нет

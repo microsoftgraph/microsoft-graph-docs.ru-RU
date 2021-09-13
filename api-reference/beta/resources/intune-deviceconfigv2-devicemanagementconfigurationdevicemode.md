@@ -2,15 +2,15 @@
 title: тип enum deviceManagementConfigurationDeviceMode
 description: Описывает применимость для режима, в который находится устройство
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 65d538e1d8e26ee88a1ed05d8f0565eedd881071
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 666b3b930f63305ec17007d7b9eb2230c867c8f6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807665"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128916"
 ---
 # <a name="devicemanagementconfigurationdevicemode-enum-type"></a>тип enum deviceManagementConfigurationDeviceMode
 

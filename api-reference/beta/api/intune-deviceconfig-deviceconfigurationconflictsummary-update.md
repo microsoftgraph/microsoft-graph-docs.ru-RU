@@ -2,15 +2,15 @@
 title: Обновление устройстваConfigurationConflictSummary
 description: Обновление свойств объекта deviceConfigurationConflictSummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f09a732e9a4a5c247510869d5a3aff9bc528c903
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6e20c052cd41ed5d2da772f4c73df16ac25a917f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806448"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133613"
 ---
 # <a name="update-deviceconfigurationconflictsummary"></a>Обновление устройстваConfigurationConflictSummary
 
@@ -55,7 +55,7 @@ PATCH /deviceManagement/deviceConfigurationConflictSummary/{deviceConfigurationC
 |:---|:---|:---|
 |conflictingDeviceConfigurations|Коллекция [settingSource](../resources/intune-deviceconfig-settingsource.md)|Набор политик в конфликте с заданным параметром|
 |id|String|ID для этого набора конфликтующих политик. Этот id — это ids всех политик в ConflictingDeviceConfigurations в лексикографическом порядке, разделенных подчеркиваниями.|
-|contributingSettings|Коллекция String|Набор параметров в конфликте с заданными политиками|
+|contributingSettings|Коллекция объектов string|Набор параметров в конфликте с заданными политиками|
 |deviceCheckinsImpacted|Int32|Количество проверок, на которое влияют конфликтующие политики и параметры|
 
 

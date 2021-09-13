@@ -2,15 +2,15 @@
 title: действие клона
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 106f2597cf2530de1378201a756633426cb6bb1a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ca224b69a31a27dac0208ca0749facab9dfe9ddb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807113"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142231"
 ---
 # <a name="clone-action"></a>действие клона
 
