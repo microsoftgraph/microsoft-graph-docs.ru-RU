@@ -2,15 +2,15 @@
 author: daspek
 title: тип ресурса itemActivity
 description: Объект itemActivity предоставляет сведения о действии, которое произошло на элементе.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 7fd7e75a7083f864ac8fbb24eae6bee3b4a41fcbf2f020fb671304c4bbe0ddce
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2a22b78e517e3faf064073033ec1b4b9c582055d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192245"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089349"
 ---
 # <a name="itemactivity-resource-type"></a>тип ресурса itemActivity
 
@@ -29,7 +29,7 @@ ms.locfileid: "54192245"
 
 | Свойство | Тип                    | Описание
 |:---------|:------------------------|:----------------------------------------
-| id       | строка                  | Уникальный идентификатор действия. Только для чтения.
+| id       | string                  | Уникальный идентификатор действия. Только для чтения.
 | доступ   | [accessAction][]        | Был доступ к элементу.
 | actor    | [identitySet][]         | Удостоверение, выполнившее действие. Только для чтения.
 | activityDateTime    | DateTimeOffset | Сведения о том, когда было выполнено действие. Только для чтения.

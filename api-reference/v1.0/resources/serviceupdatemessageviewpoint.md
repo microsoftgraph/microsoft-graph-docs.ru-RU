@@ -2,15 +2,15 @@
 title: тип ресурса serviceUpdateMessageViewpoint
 description: Представляет данные точек представления пользователей для службыUpdateMessage".
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 57d5bf64069d0799514eafc78fbfb5d221ccf82b
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 080d739d2111d383c5e5d7cf8ec3ec510e1cb5ba
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58250893"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108767"
 ---
 # <a name="serviceupdatemessageviewpoint-resource-type"></a>тип ресурса serviceUpdateMessageViewpoint
 
@@ -22,10 +22,10 @@ ms.locfileid: "58250893"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |isArchived|Boolean|Указывает, архивировать ли сообщение пользователь.|
-|isFavorited|Логический|Указывает, отметил ли пользователь сообщение как избранное.|
+|isFavorited|Boolean|Указывает, отметил ли пользователь сообщение как избранное.|
 |isRead|Boolean|Указывает, читал ли пользователь сообщение.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

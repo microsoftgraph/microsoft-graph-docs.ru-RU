@@ -2,15 +2,15 @@
 title: тип ресурса accessReviewReviewerScope
 description: Представляет, кто будет рассматривать обзор доступа.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 573e6934250ab6a932922185776b20af92f6f0615f8ede33e87d26e1944386c4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6caa29f5d1e4745a0f82fab43424a99e4d25ec2b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121433"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072563"
 ---
 # <a name="accessreviewreviewerscope-resource-type"></a>тип ресурса accessReviewReviewerScope
 
@@ -25,12 +25,12 @@ AccessReviewReviewerScope определяет, кто будет рассмат
 | :-------------------------| :---------- | :---------- |
 | Запрос | String | Запрос, определяющий, кто будет рецензентом. Примеры см. в таблице. |
 | queryType | String | Тип запроса. Примеры включают `MicrosoftGraph` и `ARM` . |
-| queryRoot | String | В сценарии, в котором рецензенты должны быть указаны динамически, это свойство используется для указать относительный источник запроса. Это свойство требуется только в том случае, если указан относительный запрос, `./manager` например. Возможное значение: `decisions` . |
+| queryRoot | Строка | В сценарии, в котором рецензенты должны быть указаны динамически, это свойство используется для указать относительный источник запроса. Это свойство требуется только в том случае, если указан относительный запрос, `./manager` например. Возможное значение: `decisions` . |
 
 Дополнительные возможности настройки для рецензентов см. в обзоре Назначение рецензентов определению обзора доступа с помощью [API microsoft Graph.](/graph/accessreviews-reviewers-concept)
 
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

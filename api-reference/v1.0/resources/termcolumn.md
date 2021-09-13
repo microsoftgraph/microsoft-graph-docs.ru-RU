@@ -2,15 +2,15 @@
 author: swapnil1993
 title: тип ресурсов termColumn
 description: Ресурс termColumn указывает, что значения столбца содержат данные таксономии.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 38fa6fe4fdb7b08f93287305e43dddb4ec6d9331
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: d89d389b78c4c8dc1a370722a5b40c7cff794d3d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696780"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128041"
 ---
 # <a name="termcolumn-resource-type"></a>тип ресурсов termColumn
 

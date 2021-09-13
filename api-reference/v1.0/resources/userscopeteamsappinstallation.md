@@ -2,15 +2,15 @@
 title: тип ресурса userScopeTeamsAppInstallation
 description: Представляет teamsApp, установленный в личной области пользователя.
 author: AkJo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 46532e7808e30359c82448287fcdbcf0dd87a75421fdff7012e77792f02d0212
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e0ebe4544d419c7cdf4ea72c79b2e76fc231d004
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211830"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136259"
 ---
 # <a name="userscopeteamsappinstallation-resource-type"></a>тип ресурса userScopeTeamsAppInstallation
 
@@ -37,9 +37,9 @@ ms.locfileid: "54211830"
 
 | Свойство            | Тип     | Описание |
 |:------------------- |:-------- |:----------- |
-| id                  | строка   | Уникальный ID (не Teams ID приложения). |
+| id                  | string   | Уникальный ID (не Teams ID приложения). |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь   | Тип    | Описание |
 |:---------------|:--------|:----------|

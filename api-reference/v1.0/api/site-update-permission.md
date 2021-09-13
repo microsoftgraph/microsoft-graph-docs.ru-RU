@@ -2,15 +2,15 @@
 title: Обновление разрешения
 description: Обновление объекта разрешений на сайте.
 author: BarrySh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 6908e6d8667157de28a678f657827210abcf320d
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 72fb7f6c2356805b9b7e6e6575e9ca3b94672828
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473614"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118896"
 ---
 # <a name="update-permission"></a>Обновление разрешения
 Пространство имен: microsoft.graph

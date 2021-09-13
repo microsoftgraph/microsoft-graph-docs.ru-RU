@@ -1,16 +1,16 @@
 ---
 title: 'user: getMemberObjects'
 description: Возвращение всех групп, ролей каталога и административных подразделений, в которых состоит пользователь. Это транзитивная проверка.
-localization_priority: Priority
+ms.localizationpriority: high
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8a140e0cde1497e864b82b54af398c285952b3ae
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 03837d79ff7ec6c1182bb75912353cb93b89491e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055675"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021871"
 ---
 # <a name="user-getmemberobjects"></a>user: getMemberObjects
 
@@ -87,7 +87,7 @@ Content-length: 33
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

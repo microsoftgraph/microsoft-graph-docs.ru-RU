@@ -1,16 +1,16 @@
 ---
 title: Get orgContact
 description: Извлечение свойств объекта orgContact.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f3702f51779bfb42d794aa011bc671b5b7dd99d3
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 59e0e9c1903cc0dd864c3eb61399f69f86339251
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761655"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105036"
 ---
 # <a name="get-orgcontact"></a>Get orgContact
 

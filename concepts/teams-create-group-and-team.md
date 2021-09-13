@@ -2,14 +2,14 @@
 title: Создание команд и управление участниками с помощью Microsoft Graph
 description: 'Создание группы, включающей команду, состоит из следующих действий: '
 author: hachandr
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9c4eeda4530e7e16c2d6cbf8cc252050f660ab74
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: e236a243a9348e8fde024ce2893d5c92b8429f72
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453634"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071639"
 ---
 # <a name="creating-teams-and-managing-members-using-microsoft-graph"></a>Создание команд и управление участниками с помощью Microsoft Graph
 

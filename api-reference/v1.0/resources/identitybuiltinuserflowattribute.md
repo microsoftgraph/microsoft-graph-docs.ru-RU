@@ -2,15 +2,15 @@
 title: identityBuiltInUserFlowAttribute type
 description: Представляет встроенный атрибут потока пользователей в Azure Active Directory клиентах, который можно использовать в потоке пользователей самостоятельной регистрации.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: fe1bf972ecef5275492661562116f6ae5bcef73188c9aba87ca7146d8d144625
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ba728475ea83c7497022412ac59bf047d8f7b57a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126650"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098960"
 ---
 # <a name="identitybuiltinuserflowattribute-resource-type"></a>identityBuiltInUserFlowAttribute type
 
@@ -30,7 +30,7 @@ ms.locfileid: "54126650"
 |userFlowAttributeType|identityUserFlowAttributeType|Тип атрибута потока пользователей. Это автоматически настроенный атрибут только для чтения. Значение для этого свойства будет `builtIn` . Наследуется [от identityUserFlowAttribute](../resources/identityuserflowattribute.md). Только для чтения.|
 |dataType|identityUserFlowAttributeDataType|Тип данных атрибута потока пользователей. Это свойство нельзя изменить после создания атрибута потока пользователей. Поддерживаемые значения для **dataType**: `string`, `boolean`, `int64`, `stringCollection`, `dateTime`. Наследуется [от identityUserFlowAttribute](../resources/identityuserflowattribute.md). Только для чтения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

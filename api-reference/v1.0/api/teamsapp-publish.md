@@ -1,25 +1,25 @@
 ---
 title: Публикация teamsapp
-description: 'Публикация приложения в каталоге приложений Microsoft Teams. '
+description: 'Публикация приложения в каталоге Microsoft Teams приложений. '
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1d746d4733301d8fcace84a0dba82a9a7234f320
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: f0938ab284ae9338b8d3c210820e207b4c164802
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50948683"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104672"
 ---
 # <a name="publish-teamsapp"></a>Публикация teamsapp
 
 Пространство имен: microsoft.graph
 
-Публикация приложения [в](../resources/teamsapp.md) каталоге приложений Microsoft Teams.
+Публикация [приложения в](../resources/teamsapp.md) каталоге Microsoft Teams приложений.
 В частности, этот API публикует приложение в каталог организации (каталог приложений клиента); созданный ресурс будет иметь **значение свойства distributionMethod** `organization` в .
 
-Свойство **requiresReview** позволяет любому пользователю отправлять приложение для проверки администратором. Администраторы могут утверждать или отклонить эти приложения с помощью этого API или центра администрирования Microsoft Teams.
+Свойство **requiresReview** позволяет любому пользователю отправлять приложение для проверки администратором. Администраторы могут утверждать или отклонить эти приложения с помощью этого API или Microsoft Teams центра администрирования.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,7 +47,7 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 
 |Свойство|Тип|Описание|
 |----|----|----|
-|requiresReview| Boolean | Этот необязательный параметр запроса запускает процесс проверки приложения. Пользователи с привилегиями администратора могут отправлять приложения без запуска проверки. Если пользователи хотят запросить отзыв перед публикацией, они должны `requiresReview` задать . `true` Пользователь, у которого есть привилегии администратора, может не устанавливать и не устанавливать значение, и приложение будет считаться утвержденным и будет `requiresReview` `false`  публиковаться мгновенно.|
+|requiresReview| Логический | Этот необязательный параметр запроса запускает процесс проверки приложения. Пользователи с привилегиями администратора могут отправлять приложения без запуска проверки. Если пользователи хотят запросить отзыв перед публикацией, они должны `requiresReview` задать . `true` Пользователь, у которого есть привилегии администратора, может не устанавливать и не устанавливать значение, и приложение будет считаться утвержденным и будет `requiresReview` `false`  публиковаться мгновенно.|
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -58,7 +58,7 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса включите полезной нагрузкой манифест Teams zip. Дополнительные сведения см. [в материале Create an app package.](/microsoftteams/platform/concepts/apps/apps-package)
+В теле запроса включите полезное Teams почтовый манифест. Дополнительные сведения см. [в материале Create an app package.](/microsoftteams/platform/concepts/apps/apps-package)
 
 Каждое приложение в каталоге приложений должно иметь уникальный ID манифеста.
 
@@ -94,7 +94,7 @@ Content-length: 244
 
 
 ---
-Сведения о создании почтового файла приложения Microsoft Teams см. в статью [Создание пакета приложений.](/microsoftteams/platform/concepts/apps/apps-package)
+Сведения о создании почтового файла Microsoft Teams приложения см. в статью [Создание пакета приложений.](/microsoftteams/platform/concepts/apps/apps-package)
 
 #### <a name="response"></a>Отклик
 
@@ -117,7 +117,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog"></a>Пример 2. Отправка нового приложения для проверки в каталог приложений организации
+### <a name="example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog"></a>Пример 2. Upload приложение для проверки в каталоге приложений организации
 
 #### <a name="request"></a>Запрос
 

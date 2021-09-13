@@ -1,16 +1,16 @@
 ---
 title: тип ресурса conditionalAccessSGrantControls
 description: Представляет элементы управления грантами, которые необходимо выполнить для выполнения политики.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 6bd2c8dbcd6a57b9f97d810e5691cb2c705c67d2cf322a7b3d26369aa57489dd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d4e1b01338011e41994347beeeaeb2c7d53fbb16
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54223636"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104224"
 ---
 # <a name="conditionalaccessgrantcontrols-resource-type"></a>тип ресурса conditionalAccessSGrantControls
 
@@ -22,9 +22,9 @@ ms.locfileid: "54223636"
 
 | Свойство | Тип | Описание |
 |:-------- |:---- |:----------- |
-| operator | String | Определяет связь элементов управления грантами. Возможные значения: `AND` , `OR` . |
+| operator | Строка | Определяет связь элементов управления грантами. Возможные значения: `AND` , `OR` . |
 | builtInControls | коллекция conditionalAccessGrantControl | Список значений встроенных элементов управления, необходимых политике. Возможные значения: `block` , , , , , `mfa` `compliantDevice` `domainJoinedDevice` `approvedApplication` `compliantApplication` `passwordChange` `unknownFutureValue` . |
-| customAuthenticationFactors | Коллекция строк | Список пользовательских ID-элементов элементов управления, необходимых политике. Дополнительные сведения см. в [специальном элементе управления.](/azure/active-directory/conditional-access/controls) |
+| customAuthenticationFactors | Коллекция String | Список пользовательских ID-элементов элементов управления, необходимых политике. Дополнительные сведения см. в [специальном элементе управления.](/azure/active-directory/conditional-access/controls) |
 | termsOfUse | Коллекция String | Список [условий использования](/graph/api/resources/agreement) ID, необходимых политике. |
 
 ### <a name="special-considerations-when-using-passwordchange-as-a-control"></a>Особые соображения при использовании `passwordChange` в качестве управления
@@ -36,7 +36,7 @@ ms.locfileid: "54223636"
 - Политика должна быть ориентирована `all` на приложения, а не исключать любые приложения.
 - Политика не может содержать любое другое условие, кроме `users` `applications` , и `userRiskLevels` .
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

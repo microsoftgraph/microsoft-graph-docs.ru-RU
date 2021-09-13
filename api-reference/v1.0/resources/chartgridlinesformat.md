@@ -2,15 +2,15 @@
 title: Тип ресурса ChartGridlinesFormat
 description: Инкапсулирует свойства формата для линий сетки диаграммы.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 7446f47f5248a06b93652899b049532c8bb287e1f60e3f7fc87fa475e65fd3f5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9da7a448db9df28802cb1903408083034439788e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54252083"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044736"
 ---
 # <a name="chartgridlinesformat-resource-type"></a>Тип ресурса ChartGridlinesFormat
 
@@ -25,13 +25,13 @@ ms.locfileid: "54252083"
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |line|[WorkbookChartLineFormat](chartlineformat.md)|Представляет форматирование линий диаграммы. Только для чтения.|
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

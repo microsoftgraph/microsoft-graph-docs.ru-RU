@@ -1,16 +1,16 @@
 ---
 title: Upload для назначений и представлений для образования с помощью API microsoft Graph
 description: Узнайте, как загрузить файл на назначение или ресурс отправки с помощью API образования в Microsoft Graph.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 0d7c60fbb88c6c6eec9f4748f2921a800f20b99e2248d6f6c26cad188591721c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 055d454f0ca58dab5c51687fa7b311a30828ac15
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54151797"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137387"
 ---
 # <a name="upload-files-for-education-assignments-and-submissions-using-the-microsoft-graph-api"></a>Upload для назначений и представлений для образования с помощью API microsoft Graph
 
@@ -18,7 +18,7 @@ ms.locfileid: "54151797"
 
 В этой статье описывается использование API образования в Microsoft Graph для отправки файлов в папку назначения или отправки.
 
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Предварительные условия
 
 Прежде чем загружать файлы, SharePoint папку, в которую можно загрузить файлы [](/graph/api/resources/educationassignment) для данного учебного назначения или ресурса [submisstion.](/graph/api/resources/educationsubmission) 
 

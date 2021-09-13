@@ -2,15 +2,15 @@
 title: Обновление educationSchool
 description: Обновление свойств объекта educationSchool.
 author: mlafleur
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e6c53b2b9b5934559a352378ee5316618ae69abe
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: cae56a4aef0111dd12f2968a7c1b8f0f7ed52f7d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231873"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046186"
 ---
 # <a name="update-educationschool"></a>Обновление educationSchool
 
@@ -26,7 +26,7 @@ ms.locfileid: "52231873"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Приложение                            | EduRoster.ReadWrite.All                     |
+| Для приложений                            | EduRoster.ReadWrite.All                     |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,9 +51,9 @@ PATCH /education/schools/{id}
 | Свойство             | Тип                                               | Описание                                                                                                                                                           |
 | :------------------- | :------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | displayName          | Строка                                             | Отображаемое имя учебного заведения. Унаследованный от [educationOrganization](../resources/educationorganization.md).                                                            |
-| description          | Строка                                             | Описание учебного заведения. Унаследованный от [educationOrganization](../resources/educationorganization.md).                                                             |
+| description          | String                                             | Описание учебного заведения. Унаследованный от [educationOrganization](../resources/educationorganization.md).                                                             |
 | externalSource       | educationExternalSource                            | Источник, из которых была создана эта организация. Унаследованный от [educationOrganization](../resources/educationorganization.md). Возможные значения: `sis`, `manual`. |
-| externalSourceDetail | Строка                                             | Имя внешнего источника, из которого были созданы эти ресурсы.                                                                                                    |
+| externalSourceDetail | String                                             | Имя внешнего источника, из которого были созданы эти ресурсы.                                                                                                    |
 | principalEmail       | String                                             | Адрес электронной почты директора.                                                                                                                                       |
 | principalName        | String                                             | Имя директора.                                                                                                                                                |
 | externalPrincipalId  | String                                             | Идентификатор директора в системе синхронизации.                                                                                                                                    |
@@ -113,7 +113,7 @@ Content-length: 292
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

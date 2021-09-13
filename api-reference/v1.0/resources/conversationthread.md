@@ -2,15 +2,15 @@
 title: Тип ресурса conversationThread
 description: conversationThread — это коллекция экземпляров post.
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: b87bf7e4f2ad3ff8f23f65ee0990da45ca590f89
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: b559ce1ee1d6f0a79734e65b3a491a047fbb9cd8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513008"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029096"
 ---
 # <a name="conversationthread-resource-type"></a>Тип ресурса conversationThread
 
@@ -28,7 +28,7 @@ conversationThread — это коллекция экземпляров [post](p
 |[Создание цепочки](../api/group-post-threads.md) | [conversationThread](conversationthread.md) |Создание беседы путем создания цепочки. В группе создаются беседа, цепочка беседы и запись.|
 |[Получение conversationThread](../api/conversationthread-get.md) | [conversationThread](conversationthread.md) |Получение определенной цепочки, принадлежащей группе. |
 |[Обновление](../api/conversationthread-update.md) | [conversationThread](conversationthread.md)  |Обновление объекта conversationThread. |
-|[удаление](../api/conversationthread-delete.md); | Нет. |Удаление объекта conversationThread. |
+|[удаление](../api/conversationthread-delete.md); | Нет |Удаление объекта conversationThread. |
 |[Ответ](../api/conversationthread-reply.md)|Нет|Создание ответа для этой цепочки с помощью создания сущности Post.|
 |[Список сущностей Post](../api/conversationthread-list-posts.md) |Коллекция [post](post.md)| Получение записей для указанной цепочки. |
 

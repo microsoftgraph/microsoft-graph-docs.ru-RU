@@ -2,15 +2,15 @@
 title: Вывод сообщения
 description: Получение свойств и связей объекта message.
 author: abheek-das
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: faef3fd45e331012b642624361c9fc03e35d9a97
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4943632eb304300b4adc16de61167dc12cb1121e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52035381"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110272"
 ---
 # <a name="get-message"></a>Вывод сообщения
 
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhMGAAA=
 ---
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "get_message",

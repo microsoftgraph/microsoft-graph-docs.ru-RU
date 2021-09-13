@@ -2,15 +2,15 @@
 title: тип ресурса educationSubmission
 description: Представление представляет ресурсы, которые человек (или группа) включит для назначения, и результаты (например, оценки или отзывы), связанные с отправкой.
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 301aa5daab5b89291c8b12cda64b9d79e1ae3279ffb6abbdff41d1f75ba63670
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8b309c887d431fd4b4f23fc6418965e5857d468e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155150"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123631"
 ---
 # <a name="educationsubmission-resource-type"></a>тип ресурса educationSubmission
 
@@ -43,14 +43,14 @@ ms.locfileid: "54155150"
 |получатель;|[educationSubmissionRecipient](educationsubmissionrecipient.md)|Кто этому представлению назначено.|
 |returnedBy|[identitySet](identityset.md)|Пользователь, переместивший состояние этой отправки в возвращенный.|
 |returnedDateTime|DateTimeOffset|Момент, когда отправка была возвращена. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|resourcesFolderUrl|String|Папка, в которой необходимо хранить все ресурсы файла для этой отправки.|
+|resourcesFolderUrl|Строка|Папка, в которой необходимо хранить все ресурсы файла для этой отправки.|
 |status|string| Только для чтения. Возможные значения: `working`, `submitted`, `released`, `returned`.|
 |submittedBy|[identitySet](identityset.md)|Пользователь, переместивший ресурс в состояние отправленного.|
 |submittedDateTime|DateTimeOffset|Момент времени, когда отправка была перенесена в состояние отправленного. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |unsubmittedBy|[identitySet](identityset.md)|Пользователь, переместивший ресурс из отправленного в рабочее состояние.|
 |unsubmittedDateTime|DateTimeOffset|Момент времени, когда отправка была перенесена из представленного в рабочее состояние. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |resources|[коллекция educationSubmissionResource](educationsubmissionresource.md)| Допускается значение null.|

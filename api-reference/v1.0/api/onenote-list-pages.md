@@ -2,15 +2,15 @@
 title: Список страниц
 description: Извлечение списка объектов страницы.
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 754a14703f02bfe5e9ef92d28ae67beb4e0365f1b5882f0074aca918fd3ea724
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f928dcb7a03ab4966c91ec55f3744a21c7091009
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218935"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015912"
 ---
 # <a name="list-pages"></a>Список страниц
 

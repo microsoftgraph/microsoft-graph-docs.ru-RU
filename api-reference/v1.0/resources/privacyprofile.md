@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса privacyProfile
 description: Представляет профиль конфиденциальности организации, который включает URL-адрес заявления о конфиденциальности и сведения о контактном лице, к которому можно обращаться по вопросам, касающимся этого заявления.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jumaodhiss
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 027fd6b7d2fb9baeafe5a31fb125a75e2f4b25b6408fdf51e9c88a5cbc791639
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 26b4899d01f37307158220059791ff6edac8322d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54174901"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036006"
 ---
 # <a name="privacyprofile-resource-type"></a>Тип ресурса privacyProfile
 

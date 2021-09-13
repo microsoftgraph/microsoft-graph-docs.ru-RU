@@ -1,16 +1,16 @@
 ---
 title: Список планов
 description: Получение списка объектов **plannerplan**.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 7a5f4d7fb86a87c2fd2ec865a8e4e95ead6205c1
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a9a42ecf7023c9647bfb5d194df812be45ec2136
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52035241"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104933"
 ---
 # <a name="list-plans"></a>Список планов
 
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/v1.0/planner/plans
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

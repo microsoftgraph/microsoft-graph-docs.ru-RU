@@ -1,14 +1,14 @@
 ---
 title: Стилизация компонентов в microsoft Graph набор средств
 description: Используйте пользовательские свойства CSS для изменения стилей компонентов Microsoft Graph набор средств microsoft.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: beth-panx
-ms.openlocfilehash: 437bad7f8a8e76d04f277f0796e7b44b98cac0b8f3f32e7787352d7c3cd9c8f2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8447517a10bf61c78c1a7c668b6430c616f40fa8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54221077"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129567"
 ---
 # <a name="styling-components-in-the-microsoft-graph-toolkit"></a>Стилизация компонентов в microsoft Graph набор средств
 

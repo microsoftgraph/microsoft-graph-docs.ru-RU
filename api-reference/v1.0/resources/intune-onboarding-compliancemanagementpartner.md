@@ -2,15 +2,15 @@
 title: тип ресурсов complianceManagementPartner
 description: Партнер по управлению соответствием требованиям для всех платформ
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9e3fb791b1f9e71dd2ac55ff2d528b57770982ceba917540af2c18c7c2a2bdc6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 08bfcc9b0d2d36b2948abe4348ca1bea62faa9a4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192329"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148237"
 ---
 # <a name="compliancemanagementpartner-resource-type"></a>тип ресурсов complianceManagementPartner
 
@@ -36,9 +36,9 @@ ms.locfileid: "54192329"
 |lastHeartbeatDateTime|DateTimeOffset|Timestamp последнего сердцебиения после администратора, направленного партнеру по управлению соответствием|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера этого клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |displayName|String|Отображаемое имя партнера|
-|macOsOnboarded|Логическое|Партнер, на борту для устройств Mac.|
-|AndroidOnboarded|Логическое|Партнер, на борту для android-устройств.|
-|iosOnboarded|Логическое|Партнер, на борту для устройств ios.|
+|macOsOnboarded|Логический|Партнер, на борту для устройств Mac.|
+|AndroidOnboarded|Boolean|Партнер, на борту для android-устройств.|
+|iosOnboarded|Логический|Партнер, на борту для устройств ios.|
 |macOsEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства Mac через партнера.|
 |AndroidEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства Android через партнера.|
 |iosEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства ios через партнера.|

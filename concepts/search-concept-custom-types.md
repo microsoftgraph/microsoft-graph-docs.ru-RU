@@ -2,20 +2,18 @@
 title: Используйте API Поиск (Майкрософт) в Microsoft Graph для поиска пользовательских типов
 description: Вы можете использовать API Поиск (Майкрософт) для импорта внешних данных через [ресурс externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) и запуска поисковых запросов на этом внешнем контенте.
 author: nmoreau
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 9ffe24dbb1bd6d6154edacb7ce515cae5987b0bd0308be517acc8dcced0cd1e7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 53716d886f586207fce607234d3cae993fc38794
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121354"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127908"
 ---
 # <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors-preview"></a>Используйте API Поиск (Майкрософт) для поиска пользовательских типов, импортируемых с помощью соединителов Microsoft Graph (предварительный просмотр) 
 
 Используйте API Поиск (Майкрософт) для поиска по контенту, который будет проиндексироваться соединиттелями [Microsoft Graph.](/microsoftsearch/connectors-overview) Содержимое импортируется либо [](/microsoftsearch/connectors-gallery) через встроенные соединители, предоставляемые Корпорацией Майкрософт, либо через настраиваемые соединители, реализованные с помощью API Graph соединителов [Microsoft.](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
-
-[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 

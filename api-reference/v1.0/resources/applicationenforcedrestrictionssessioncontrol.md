@@ -1,16 +1,16 @@
 ---
 title: тип ресурса applicationEnforcedRestrictionsSessionControl
 description: Управление сеансами для применения ограничений приложения.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: eabfdcc57439e2d254acc9ae5eeec2f613197f669f2ff68cd2ecf8bbc6bc98cb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e685fa8f97497530553a79c85c5b4c6b8177f105
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54252160"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079003"
 ---
 # <a name="applicationenforcedrestrictionssessioncontrol-resource-type"></a>тип ресурса applicationEnforcedRestrictionsSessionControl
 
@@ -24,7 +24,7 @@ ms.locfileid: "54252160"
 |:-------------|:------------|:------------|
 |isEnabled     |Boolean      | Указывает, включено или нет управление сеансом. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

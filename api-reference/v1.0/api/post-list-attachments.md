@@ -2,15 +2,15 @@
 title: Список вложений
 description: Получение списка объектов attachment, вложенных в запись.
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 581080cb2177e13df8518958a1a6b312d7d7aeaa
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 51056de2d302b1128c15f1d29cdc2c506d46cc29
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053925"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085380"
 ---
 # <a name="list-attachments"></a>Список вложений
 
@@ -24,7 +24,7 @@ ms.locfileid: "52053925"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Group.Read.All, Group.ReadWrite.All |
+|Для приложений | Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 Получите вложения для [публикации](../resources/post.md) в [беседеThread](../resources/conversationthread.md) группы. Указание родительского [разговора необязательно.](../resources/conversation.md)
@@ -37,7 +37,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
-В частности, можно использовать параметр $expand запроса, чтобы включить все вложения столба в линию с остальными свойствами столба. Например:
+В частности, можно использовать параметр $expand запроса, чтобы включить все вложения столба в линию с остальными свойствами столба. Примеры:
 
 <!-- { "blockType": "ignored" } -->
 ```
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/groups/1848753d-185d-4c08-a4e4-6ee40521d115
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "post_get_attachments_v1",

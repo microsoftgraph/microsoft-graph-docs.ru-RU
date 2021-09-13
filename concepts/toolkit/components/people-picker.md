@@ -1,14 +1,14 @@
 ---
 title: Компонент "Выбор людей"
 description: Веб-компонент mgt-people-picker можно использовать для поиска указанного количества людей и отображать список результатов с помощью Microsoft Graph.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: elisenyang
-ms.openlocfilehash: 8c42a4dbdf6881a86794594e13ec6e799fbbd8ac556a499bef868926a7d49e56
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 277a8423ef018d5663fa6aaae94e384554914686
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216297"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103853"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>Компонент "Выбор людей" в Microsoft Graph Toolkit
 
@@ -71,6 +71,13 @@ ms.locfileid: "54216297"
     ```javascript
     // id = Microsoft graph User "id"
     document.querySelector('mgt-people-picker').selectUsersById(["id","id"])
+    ```
+
+- С помощью метода, который принимает массив ids группы microsoft graph, чтобы найти группу `selectGroupsById()` (ы) с связанными пользователями. [](/graph/api/resources/group)
+
+    ```javascript
+    // groupid = Microsoft graph group "id"
+    document.querySelector('mgt-people-picker').selectGroupsById(["groupid","groupid"])
     ```
 
 ## <a name="events"></a>События
@@ -139,7 +146,7 @@ mgt-people-picker {
 
 Этот компонент использует следующие API и разрешения Microsoft Graph.
 
-| Конфигурация | Разрешение | API
+| Настройка | Разрешение | API
 | --- | ---------- | ------- |
 | `group-id` set | People.Read, User.Read.All | [/groups/\${groupId}/members](/graph/api/group-list-members) |
 | `type` установлено `Person` или `any` | People.Read | [/me/people](/graph/api/user-list-people) |

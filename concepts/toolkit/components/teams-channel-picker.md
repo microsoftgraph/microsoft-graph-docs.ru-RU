@@ -1,14 +1,14 @@
 ---
 title: Компонент выбора каналов Microsoft Teams в Microsoft Graph Toolkit
 description: Вы можете использовать компонент mgt-teams-channel-picker, чтобы в Microsoft Graph искать каналы и команды, связанные с пользователем.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: vogtn
-ms.openlocfilehash: d3e35e5ee45943f5d1e81e1cbd96a4e3497dbf790b8feb7b082bb68c5f6281f2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5e44218da3f2ec1e0e2b36cfd9137bb91e189b6d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251605"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129665"
 ---
 # <a name="microsoft-teams-channel-picker-component-in-the-microsoft-graph-toolkit"></a>Компонент выбора каналов Microsoft Teams в Microsoft Graph Toolkit
 

@@ -1,16 +1,16 @@
 ---
 title: Функция ListRolloutPolicies
 description: Извлечение списка объектов featureRolloutPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9e3c3a3b8e9f8914c29701eac9e6b48e26d4f283
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c80a38b5dece8ea820fffdfb581033ff886c70ea
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054023"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046115"
 ---
 # <a name="list-featurerolloutpolicies"></a>Функция ListRolloutPolicies
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/policies/featureRolloutPolicies
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

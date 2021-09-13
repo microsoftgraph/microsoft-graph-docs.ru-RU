@@ -2,15 +2,15 @@
 title: тип ресурса todoTaskList
 description: Список в Microsoft To Do, содержащий один или несколько ресурсов todoTask.
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 7e0b51647ed53a7e1f7500f3322c840f7476218f0c99888de7c700fb36c4820e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 24d98f5fa351db7aed56a637eee2d606d42fb504
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124012"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134292"
 ---
 # <a name="todotasklist-resource-type"></a>тип ресурса todoTaskList
 
@@ -40,22 +40,22 @@ ms.locfileid: "54124012"
 |:---|:---|:---|
 |displayName|String|Имя списка задач.|
 |id|String| Идентификатор списка задач, уникальный в почтовом ящике пользователя. Только для чтения. Унаследованный от [сущности](entity.md)|
-|isOwner|Логическое| True, если пользователь является владельцем данного списка задач.|
+|isOwner|Boolean| True, если пользователь является владельцем данного списка задач.|
 |IsShared|Boolean| True, если список задач совместно с другими пользователями|
 |wellknownListName|wellknownListName| Свойство, указывающее имя списка, если данный список хорошо известен. Возможные значения: `none`, `defaultList`, `flaggedEmails`, `unknownFutureValue`.|
 
 ### <a name="wellknownlistname-values"></a>значения wellknownListName
 |Member|Описание|
 |:---|:---|
-|нет| Созданный пользователем список.|
+|Нет| Созданный пользователем список.|
 |defaultList| Встроенный список **задач.**|
 |flaggedEmails| Встроенный список **электронной почты с флагами.** Задачи из помеченных электронных почт присутствуют в этом списке.|
 |unknownFutureValue| Эволюционирующее значение sentinel. Не следует использовать.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|extensions|Коллекция объектов [extension](extension.md)| Коллекция открытых расширений, определенных для списка задач. Допускается значение null.|
+|extensions|Коллекция [extension](extension.md)| Коллекция открытых расширений, определенных для списка задач. Допускается значение null.|
 |tasks|Коллекция [todoTask](todotask.md)|Задачи в этом списке задач. Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON

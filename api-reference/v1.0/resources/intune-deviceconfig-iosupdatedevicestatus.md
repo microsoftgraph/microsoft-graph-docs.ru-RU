@@ -2,15 +2,15 @@
 title: Тип ресурса iosUpdateDeviceStatus
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ba1aebef5a3e1d083f51f245b8151ce7a9c86642fb4660b2de09cf93731ccf78
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0ac992036f37b9b4c622e2bfc01310d2c2e8e1fc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189557"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148118"
 ---
 # <a name="iosupdatedevicestatus-resource-type"></a>Тип ресурса iosUpdateDeviceStatus
 

@@ -2,15 +2,15 @@
 title: 'workbookPivotTable: refresh'
 description: Обновляет сводную таблицу.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: fbbeb36dbd78538e1a23a3d007f355205450a90e
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 4f615d2db039ecb2f1b400d21d40f33adfe36af9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50577648"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104502"
 ---
 # <a name="workbookpivottable-refresh"></a>workbookPivotTable: refresh
 

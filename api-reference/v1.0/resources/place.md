@@ -1,16 +1,16 @@
 ---
 title: тип ресурса
 description: Представляет место. Это базовый тип для комнаты или roomList.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: a9e062bc2571f7496aab6d589d5556f309cde1a9228b0f1f1b25eba86a417515
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 351430fa75abf9e49fb82d69aa854fe57efcefdd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54174915"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044469"
 ---
 # <a name="place-resource-type"></a>тип ресурса
 
@@ -49,10 +49,10 @@ Exchange Online администраторы могут организовыва
 | address        | [physicalAddress](physicaladdress.md)             | Адрес улицы. |
 | displayName    | String                                            | Имя, связанное с местом. |
 | geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Указывает расположение места в широте, долготе и (необязательно) координатах высоты. |
-| id             | String                                            | Уникальный идентификатор для этого места. Только для чтения. |
+| id             | Строка                                            | Уникальный идентификатор для этого места. Только для чтения. |
 | phone          | String                                            | Номер телефона в этом месте. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

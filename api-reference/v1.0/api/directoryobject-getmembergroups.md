@@ -1,18 +1,18 @@
 ---
-title: Вывод групп элементов
+title: 'directoryObject: getMemberGroups'
 description: Возвращает все группы, в которых состоит указанный пользователь, группа или объект каталога. Это транзитивная функция.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 399868d281b5e4a6eac7ead0ed31209236a26f7f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e2ccb4e0810199cc95510c632b97ed21e86fcd0e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051489"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147502"
 ---
-# <a name="get-member-groups"></a>Вывод групп пользователя
+# <a name="directoryobject-getmembergroups"></a>directoryObject: getMemberGroups
 
 Пространство имен: microsoft.graph
 
@@ -28,10 +28,13 @@ ms.locfileid: "52051489"
 |Для приложений | User.Read.All и GroupMember.Read.All, User.Read.All и Group.Read.All, Directory.Read.All |
 
 Используйте руководство по следующим сценариям, чтобы определить, какие типы разрешений использовать:
-- Используйте разрешения User.Read и GroupMember.Read.All или User.Read и Group.Read.All для получения членства в группах для пользователя, вступив в группу.
-- Используйте user.ReadBasic.All и GroupMember.Read.All, User.Read.All и GroupMember.Read.All, User.ReadBasic.All и Group.Read.All или User.Read.All и Group.Read.All для получения членства в группе для любого пользователя.
-- Чтобы получить членство в группе, используйте разрешение GroupMember.Read.All или Group.Read.All.
-- Используйте разрешение Directory.Read.All для получения членства в группе для объекта каталога.
+
+| Сценарий | Разрешения на использование |
+|:-|:-|
+| Для получения членства в группе для пользователя, вписаного в группу | Используйте один из следующих наборов разрешений: <br/> <li> **User.Read** и **GroupMember.Read.All** <li>**User.Read** и **Group.Read.All** |
+| Для получения членства в группе для любого пользователя | Используйте один из следующих наборов разрешений: <br/> <li> **User.ReadBasic.All** и **GroupMember.Read.All** <li>**User.Read.All** и **GroupMember.Read.All** <li>**User.ReadBasic.All** и **Group.Read.All** <li>**User.Read.All** и **Group.Read.All** |
+| Чтобы получить членство в группе для группы | Используйте разрешение **GroupMember.Read.All** или **Group.Read.All.** |
+| Чтобы получить членство в группе для объекта каталога | Используйте **разрешение Directory.Read.All.** |
 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -48,12 +51,12 @@ POST /directoryObjects/{id}/getMemberGroups
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type   | string  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Логическое| Значение **true** указывает, что должны быть возвращены только группы безопасности, в которых состоит объект. Значение **false** указывает, что должны быть возвращены все группы и роли каталога, участником которых является объект. **Примечание**. Вызвать функцию для пользователя можно, только если для параметра задано значение **true**. |
+|securityEnabledOnly|Boolean| `true` чтобы указать, что должны возвращаться только группы безопасности, в которые входит объект; чтобы указать, что все роли групп и каталогов, в которые входит объект, `false` должны быть возвращены. **Примечание.** Функция может быть вызвана пользователю только в том случае, если параметр `true` . |
 
 ## <a name="response"></a>Отклик
 
@@ -97,7 +100,7 @@ Content-type: application/json
 
 
 ##### <a name="response"></a>Отклик
-Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

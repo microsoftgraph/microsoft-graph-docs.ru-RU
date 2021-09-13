@@ -1,16 +1,16 @@
 ---
 title: тип ресурса workforceIntegrationEncryption
 description: Объект шифрования, определяющий протокол и секрет для интеграции рабочей силы.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8a05111fb561fe806b8b590eef321e3b7fcc9ebcd9054d2d8e5f7853e6d0c88b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2400a85e4177c6890424ff57e3619d86feb455c7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180455"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139389"
 ---
 # <a name="workforceintegrationencryption-resource-type"></a>тип ресурса workforceIntegrationEncryption
 

@@ -2,15 +2,15 @@
 title: 'accessReviewInstance: остановка'
 description: Остановите активный в настоящее время accessReviewInstance.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 08b9974b1b496a3ff50048d72dbb65659758658e
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 475db1e293a14881605e9e28a6596bbd53bd6705
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211054"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008568"
 ---
 # <a name="accessreviewinstance-stop"></a>accessReviewInstance: остановка
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "53211054"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|AccessReview.ReadWrite.All|
+|Для приложений|AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

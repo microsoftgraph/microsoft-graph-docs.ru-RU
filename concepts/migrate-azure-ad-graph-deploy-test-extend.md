@@ -1,15 +1,15 @@
 ---
 title: Развертывание, тестирование и расширение перенесенных приложений
-description: 'Описывает, как перенести Azure Active Directory приложения (Azure AD) для использования API Microsoft Graph (REST); в этом рассмотрен шаг 3: развертывание, тестирование и расширение.'
+description: 'Описывает, как перенести Azure Active Directory (Azure AD) Graph приложения для использования API Microsoft Graph (REST); в этом рассмотрен шаг 3: развертывание, тестирование и расширение.'
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: c950e8fe97fd6a7e5a269824b1745af08b256c6795bbebb9186f105550233e1b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ec5b9b80ed42e1701619cca9153d7562b663d08f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163534"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59135979"
 ---
 # <a name="deploy-test-and-extend"></a>Развертывание, тестирование и расширение
 
@@ -30,24 +30,12 @@ ms.locfileid: "54163534"
 3.  **Изучение нового значения**
 
     Теперь, когда вы перешли на Microsoft Graph, вам никогда не было проще разблокировать множество наборов данных и функций, которые теперь находятся у вас под рукой. 
-    Microsoft Graph поддерживает множество новых наборов данных и функций Azure AD, недоступных в Azure AD Graph, включая: 
-
-    - [Microsoft 365 группового управления](./office365-groups-concept-overview.md)
-    - [Внешние приглашения пользователей](/graph/api/resources/invitation)
-    - Возможность восстановления пользователей и [Microsoft 365 групп](/graph/api/resources/directory) после удаления
-    - [Уведомления webhook для пользователей и групп](./webhooks.md?toc=.%252fref%252ftoc.json)
-    - Функции управления удостоверением, такие как:
-      - [Привилегированное управление удостоверениями](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta&preserve-view=true) (PIM) для повышения пользователей до привилегированных ролей только при необходимости и в течение ограниченного периода времени
-      - [Обзоры](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) доступа для одновентных или повторяющихся обзоров доступа для проверки прав доступа пользователя
-      - [Условия использования, позволяющие](/graph/api/resources/agreement) организациям представлять информацию для юридических или нормативных требований, например уведомлений об отказе от ответственности.
-    - Функции безопасности, такие как:
-      - [События с риском для идентификации](/graph/api/resources/riskdetection)
-      - [Рискованные пользователи](/graph/api/resources/riskyuser)
-    - [Клиентские библиотеки и примеры,](/graph/sdks/sdks-overview) доступные на многих других платформах и языках. SDKs Graph Microsoft предоставляют обнаруживаемый интерфейс для легкого доступа к данным при прозрачной обработке приобретения маркеров, обработки повторной обработки из-за ошибок и регулирования, безопасной обработки перенаправления и сериализации моделей и десериализации.
+    Корпорация Майкрософт Graph поддерживает множество новых наборов Azure Active Directory (Azure AD) и функций, недоступных в Azure Active Directory (Azure AD) Graph.
 
     Microsoft Graph предоставляет доступ к многим дополнительным службам, чем только Azure Active Directory. Это шлюз [API для Microsoft 365 служб.](./index.yml)
     Регулярно проверяйте новые наборы данных и возможности.  
 
+    - См. [основные службы и функции в Microsoft Graph.](overview-major-services.md)
     - Взгляните на некоторые решения [партнеров.](https://developer.microsoft.com/graph/partners)
     - Ознакомьтесь [с блогом microsoft Graph для](https://developer.microsoft.com/graph/blogs) последних новостей о microsoft Graph и некоторых отличных сериях обучения.
     - В [статье changelog](/graph/changelog) обобщаются обновления службы и документов. После этих обновлений вы сможете отслеживать новые API, введенные в /бета-версию (предварительный просмотр), и те, которые повышены до v1.0 (GA).  Эти новые API могут предоставить новые возможности для добавления дополнительных значений и новых функций в приложения.  
@@ -57,10 +45,10 @@ ms.locfileid: "54163534"
 Если в процессе миграции возникают проблемы или требуется помощь, вы можете:
 
 - Снова [просмотрите контрольный](migrate-azure-ad-graph-planning-checklist.md) список
-- Публикация вопросов [в Microsoft Q&A](/answers/topics/microsoft-graph-applications.html) 
+- Публикация вопросов [в Microsoft Graph на Q&A](/answers/topics/microsoft-graph-applications.html) 
 - Просмотрите Graph microsoft, чтобы сравнить и сравнить с существующим кодом приложения:
-  - **Приложения, которые используют API REST:** изучить быстрые запуски и [примеры,](https://developer.microsoft.com/graph/get-started)выбрав платформу выбора и выполнить быстрый запуск или поиск соответствующего примера
-  - **Приложение, которое использует клиентскую** библиотеку .NET: обзор [консоли-csharp-snippets-sample](https://github.com/microsoftgraph/console-csharp-snippets-sample) and/or [dotnetcore-console-sample](https://github.com/microsoftgraph/dotnetcore-console-sample)
+  - **Приложения, которые используют API REST:** изучите быстрые запуски и [примеры,](https://developer.microsoft.com/graph/get-started)выберите платформу выбора и запустите быстрый запуск или поиск подходящего примера
+  - **Приложение, которое использует клиентскую** библиотеку .NET: обзор [консоли-csharp-snippets-sample](https://github.com/microsoftgraph/console-csharp-snippets-sample) или [dotnetcore-console-sample](https://github.com/microsoftgraph/dotnetcore-console-sample)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

@@ -1,16 +1,16 @@
 ---
 title: Создание offerShiftRequest
 description: Создание экземпляра offerShiftRequest.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3d6cc8615d35190376a409af5efbd794a1b55f2d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: de073275c73fd3a40aea6dda0814a9ac3584f748
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049494"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056293"
 ---
 # <a name="create-offershiftrequest"></a>Создание offerShiftRequest
 
@@ -43,7 +43,7 @@ POST /teams/{teamId}/schedule/offerShiftRequests
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 Предоставление нового [объекта offerShiftRequest](../resources/offershiftrequest.md) в теле запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -97,7 +97,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

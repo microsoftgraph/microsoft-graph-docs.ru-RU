@@ -1,16 +1,16 @@
 ---
 title: тип ресурса workbookApplication
 description: Представляет приложение Excel, которое управляет книгой.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: a8cb375493b018d2d6f277f2cbc7944e9d662f018e301eec551bd3b5ab648368
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3663ba238ac0ab7a2346786d775b16326ddf0193
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251696"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139473"
 ---
 # <a name="workbookapplication-resource-type"></a>тип ресурса workbookApplication
 
@@ -31,7 +31,7 @@ ms.locfileid: "54251696"
 |:---------------|:--------|:----------|
 |calculationMode|string|Возвращает режим вычисления, который используется в книге. Возможные значения: `Automatic`, `AutomaticExceptTables`, `Manual`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 

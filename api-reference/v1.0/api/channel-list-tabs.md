@@ -1,18 +1,18 @@
 ---
-title: Список вкладок на канале
+title: Перечисление вкладок в канале
 description: 'Извлечение списка вкладок в указанном канале в группе. '
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a5754c443d323dc67b0500f7ad6f198921ed887d
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 8e59f54eef9167b8a4f09a15e7fd0583cf20b3de
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202245"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105659"
 ---
-# <a name="list-tabs-in-channel"></a>Список вкладок на канале
+# <a name="list-tabs-in-channel"></a>Перечисление вкладок в канале
 
 Пространство имен: microsoft.graph
 
@@ -55,7 +55,7 @@ GET /teams/{id}/channels/{id}/tabs
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-list-all-the-tabs-in-the-channel-along-with-associated-teams-app"></a>Пример 1. Список всех вкладок в канале вместе со связанным приложением Teams
+### <a name="example-1-list-all-the-tabs-in-the-channel-along-with-associated-teams-app"></a>Пример 1. Список всех вкладок в канале вместе с связанным Teams приложением
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 

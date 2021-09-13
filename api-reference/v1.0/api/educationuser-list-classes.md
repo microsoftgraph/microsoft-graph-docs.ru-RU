@@ -1,16 +1,16 @@
 ---
 title: Список классов educationUser
 description: 'Получение списка объектов курсов. Примечание. Если используется делегированный маркер, участники могут видеть сведения только о своих курсах. '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6530d0fd060381a0e2f3281f23cad60f98b2dfef
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 1c5d94f418bfdf5c88fc6a5cb3bd6001eeb17cbf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52475432"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114626"
 ---
 # <a name="list-classes-of-an-educationuser"></a>Список классов educationUser
 
@@ -20,14 +20,14 @@ ms.locfileid: "52475432"
 
 <!-- Please verify the revision to the delegated token text. -->
 
-## <a name="permissions"></a>Разрешения:
+## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EduRoster.ReadBasic  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Приложение | EduRoster.Read.All, EduRoster.ReadWrite.All | 
+|Для приложений | EduRoster.Read.All, EduRoster.ReadWrite.All | 
 
 > [!NOTE]
 > Примечание. Если используется делегированный маркер, участники могут видеть сведения только о своих курсах.
@@ -38,7 +38,7 @@ ms.locfileid: "52475432"
 GET /education/me/classes
 GET /education/users/{id}/classes
 ```
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/v1.0/education/me/classes
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

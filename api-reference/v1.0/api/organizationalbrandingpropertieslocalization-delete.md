@@ -1,16 +1,16 @@
 ---
 title: Удаление локализованных организационных свойствBrandingProperties
 description: Удаление организационных свойств для определенной локализации.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: AlexanderMars
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9eec9da6dc6628819f9fc76be92a37f78e474113
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 7eb1ad05341c7c5652edf7ef564a74a167cb24b9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682434"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099366"
 ---
 # <a name="delete-localized-organizationalbrandingproperties"></a>Удаление локализованных организационных свойствBrandingProperties
 

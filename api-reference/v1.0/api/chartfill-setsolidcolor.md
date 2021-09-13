@@ -2,15 +2,15 @@
 title: 'ChartFill: setSolidColor'
 description: Задает заливку одним цветом для элемента диаграммы.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e2b0b99cd3ac431b15257b3698fc050822989e93
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 5b0272ba79e2005d665344a604aa1850cfa79edf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50573721"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056776"
 ---
 # <a name="chartfill-setsolidcolor"></a>ChartFill: setSolidColor
 

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса conditionalAccessUsers
 description: Представляет пользователей, группы и роли, включенные в область политики и исключенные из нее.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 9f9930d1d1ac1b5d355699b893bfbf59f047162d1d0c0f39d0303a98b889ab7f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0b4c3298f233fbd47838b9eeaf12230445c0f6cc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229306"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084582"
 ---
 # <a name="conditionalaccessusers-resource-type"></a>тип ресурса conditionalAccessUsers
 
@@ -22,14 +22,14 @@ ms.locfileid: "54229306"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| includeUsers | Коллекция строк | Пользовательские ИД в области политики, если явно не исключены, `None` или `All` или или `GuestsOrExternalUsers` . |
+| includeUsers | Коллекция String | Пользовательские ИД в области политики, если явно не исключены, `None` или `All` или или `GuestsOrExternalUsers` . |
 | excludeUsers | Коллекция String | Пользовательские ИД, исключенные из области политики и/или `GuestsOrExternalUsers` . |
 | includeGroups | Коллекция String | Групповые ID в области политики, если явно не исключены, или `All` . |
-| excludeGroups | Коллекция строк | Групповые ID исключены из области политики. |
+| excludeGroups | Коллекция String | Групповые ID исключены из области политики. |
 | includeRoles | Коллекция String | Role IDs in scope of policy unless explicitly excluded, or `All` . |
 | excludeRoles | Коллекция String | ID роли, исключенные из области политики. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

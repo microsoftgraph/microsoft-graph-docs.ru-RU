@@ -2,15 +2,15 @@
 title: Обзор социальной и рабочей аналитики в Microsoft Graph
 description: Сотни миллионов пользователей облачных служб Microsoft 365 составляют часть ядра Microsoft Graph. Службы Microsoft Graph управляют данными пользователей, защищают их и при наличии необходимых разрешений предоставляют к ним доступ, чтобы стимулировать работу и креатив в компаниях. Среди всех данных пользователя, доступных в Microsoft Graph, особый интерес представляют данные о его социальных взаимодействиях.
 author: simonhult
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: bb8862b6be2b942c99554df5d547db56c068a6cce1ea855e7df6617afd292cc7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3107e7dbfcc54e1a2b9c76bdf35cecf1e80ef527
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121336"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103944"
 ---
 # <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Обзор социальной и рабочей аналитики в Microsoft Graph
 

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса openShiftChangeRequest
 description: Представляет запрос на утверждение открытой смены в расписании.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 0a6f34e566caa2ff623eb3a66ebf8584b1adeb764dd1e7918bc34f1dbd8455a3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ed6769b32a26625fe82a4fd51445ad71f8d213a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229110"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071982"
 ---
 # <a name="openshiftchangerequest-resource-type"></a>тип ресурса openShiftChangeRequest
 
@@ -22,9 +22,9 @@ ms.locfileid: "54229110"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список](../api/openshiftchangerequest-list.md) | Коллекция [openShiftChangeRequest](openshiftchangerequest.md) | Список свойств и связей **объектов openShiftChangeRequest** в группе. |
+| [Перечисление](../api/openshiftchangerequest-list.md) | Коллекция [openShiftChangeRequest](openshiftchangerequest.md) | Список свойств и связей **объектов openShiftChangeRequest** в группе. |
 | [Создание](../api/openshiftchangerequest-post.md) | [openShiftChangeRequest](openshiftchangerequest.md) | Создайте экземпляр **объекта openShiftChangeRequest.** |
-| [Получение](../api/openshiftchangerequest-get.md) | [openShiftChangeRequest](openshiftchangerequest.md) | Ознакомьтесь с свойствами и отношениями объекта **openShiftChangeRequest.** |
+| [получение](../api/openshiftchangerequest-get.md); | [openShiftChangeRequest](openshiftchangerequest.md) | Ознакомьтесь с свойствами и отношениями объекта **openShiftChangeRequest.** |
 |[Утвердить](../api/openshiftchangerequest-approve.md)|Нет|Утверждение запроса на изменение с открытой сменой.|
 |[Отклонение](../api/openshiftchangerequest-decline.md)|Нет| Отклонение запроса на изменение с открытой сменой.|
 
@@ -32,9 +32,9 @@ ms.locfileid: "54229110"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|openShiftId|String| ID для открытой смены.|
+|openShiftId|Строка| ID для открытой смены.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 
