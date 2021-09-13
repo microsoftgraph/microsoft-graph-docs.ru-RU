@@ -2,15 +2,15 @@
 title: Магазин обновлений
 description: Обновление свойств объекта магазина.
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: b1c4e0f7b6993dd69a227957047b30e07914c37c
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 0ecdf18da98696edebef6eeb6574e86e43c2a23e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58515023"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015661"
 ---
 # <a name="update-store"></a>Магазин обновлений
 Пространство имен: microsoft.graph.termStore
@@ -50,7 +50,7 @@ PATCH sites/{site-id}/termStore
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |defaultLanguageTag|Строка|Язык по умолчанию [microsoft.graph.termstore.store](../resources/termstore-store.md).|
-|LanguageTags|Коллекция объектов string|Доступные языки в [microsoft.graph.termstore.store](../resources/termstore-store.md).|
+|LanguageTags|Коллекция String|Доступные языки в [microsoft.graph.termstore.store](../resources/termstore-store.md).|
 
 
 
@@ -62,6 +62,8 @@ PATCH sites/{site-id}/termStore
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_store"
@@ -76,6 +78,24 @@ Content-length: 133
   "defaultLanguageTag": "en-US"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-store-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-store-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-store-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-store-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.

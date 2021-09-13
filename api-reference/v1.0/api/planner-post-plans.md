@@ -1,16 +1,16 @@
 ---
 title: Создание объекта plannerPlan
 description: Используйте этот API, чтобы создать объект **plannerPlan**.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 4874597fcc302b0ab06efbd04c26e1d7976871c7
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d307959eabe35ce86deebb4fbd06e9927f0576f2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52035192"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104910"
 ---
 # <a name="create-plannerplan"></a>Создание объекта plannerPlan
 
@@ -99,7 +99,7 @@ Content-length: 381
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

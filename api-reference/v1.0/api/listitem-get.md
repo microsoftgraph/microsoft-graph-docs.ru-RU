@@ -2,15 +2,15 @@
 author: JeremyKelley
 title: Получение ресурса listItem
 description: Возвращает метаданные элемента в списке SharePoint.
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 9700f6b18271cc73b0a51d06dc7f8fccdebecb10
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: e1b983e92cc20792fb1bce785acf4c0de5adb6f9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473744"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110377"
 ---
 # <a name="get-listitem"></a>Получение ресурса listItem
 

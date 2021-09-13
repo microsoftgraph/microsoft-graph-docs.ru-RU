@@ -2,15 +2,15 @@
 title: Создание объекта Contact
 description: Добавление контакта в корневую папку с контактами или конечную точку контактов другой папки с контактами.
 author: kevinbellinger
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 318f72b56c057c13cb4e3a96a969a164f97b3007
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 55acfc5e144f7d76bf42f847cd6a3828079dd4a0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52031501"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099184"
 ---
 # <a name="create-contact"></a>Создание объекта Contact
 
@@ -95,7 +95,7 @@ Content-type: application/json
 Предоставьте в тексте запроса описание объекта [contact](../resources/contact.md) в формате JSON.
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

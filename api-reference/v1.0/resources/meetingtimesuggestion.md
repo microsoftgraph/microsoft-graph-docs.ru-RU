@@ -1,16 +1,16 @@
 ---
 title: Тип ресурсов meetingTimeSuggestion
 description: 'Предложение собрания, которое включает сведения, такие как время собрания, вероятность посещения, индивидуальный '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: d023d77d987ff75d124f70fe805565c3a9a0c05082fe78ae48493fa9c578d344
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ce0fec16e243120ff55739aa390c3232c42a0a89
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163714"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118049"
 ---
 # <a name="meetingtimesuggestion-resource-type"></a>Тип ресурсов meetingTimeSuggestion
 

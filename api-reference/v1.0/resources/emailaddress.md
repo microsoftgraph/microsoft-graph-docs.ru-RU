@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса emailAddress
 description: Имя и электронный адрес контакта или получателя сообщения.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: aa6280f341cce92ccd5ada8e4950fd490c7e7921c5e61b26f796383cb947093e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 111c2c3b2be02512c66b4786fa17151c749dfd49
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184902"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126823"
 ---
 # <a name="emailaddress-resource-type"></a>Тип ресурса emailAddress
 

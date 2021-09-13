@@ -1,18 +1,18 @@
 ---
-title: Delete todoTaskList
+title: Удаление todoTaskList
 description: Удаляет объект todoTaskList.
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7881513af6f97f96f212854d9e994de19e234dc6
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 1584946d179f3508d71ccfa58214f4a036b684bd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874265"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062852"
 ---
-# <a name="delete-todotasklist"></a>Delete todoTaskList
+# <a name="delete-todotasklist"></a>Удаление todoTaskList
 Пространство имен: microsoft.graph
 
 Удаляет объект [todoTaskList.](../resources/todotasklist.md)
@@ -23,7 +23,7 @@ ms.locfileid: "49874265"
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Tasks.Read|
-|Делегированное (личная учетная запись Майкрософт)|Tasks.Read|
+|Делегированные (личная учетная запись Майкрософт)|Tasks.Read|
 |Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос

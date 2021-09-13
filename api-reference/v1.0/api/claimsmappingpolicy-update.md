@@ -1,16 +1,16 @@
 ---
 title: Update claimsmappingpolicy
 description: Обновление свойств объекта claimsMappingPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: paulgarn
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5db62e1c9905939ab5a05600a90dd482d5e0820a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1942310afed1ead09bef8c6bb02fbff0b2f45a64
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052462"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59119599"
 ---
 # <a name="update-claimsmappingpolicy"></a>Update claimsmappingpolicy
 
@@ -50,8 +50,8 @@ PATCH /policies/claimsMappingPolicies/{id}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |определение|Коллекция String| Коллекция строк, содержащая строку JSON, определяемую правилами и настройками этой политики.  Обязательный.|
-|description|String| Описание этой политики.|
-|displayName|String| Отображение имени для этой политики. Обязательный.|
+|description|Строка| Описание этой политики.|
+|displayName|String| Отображение имени для этой политики. Обязательное.|
 |isOrganizationDefault|Логический|Если заданной для true, активирует эту политику. Для одного типа политики может быть много политик, но только одна может быть активирована по умолчанию организации. Необязательный, значение по умолчанию является ложным.|
 
 ## <a name="response"></a>Отклик
@@ -75,11 +75,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/{id}
 Content-type: application/json
 
 {
-  "definition": [
-    "definition-value"
-  ],
-  "displayName": "displayName-value",
-  "isOrganizationDefault": true
+    "displayName": "UpdateClaimsPolicy"
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
@@ -105,26 +101,13 @@ Content-type: application/json
 
 Ниже приведен пример ответа.
 
-> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
-
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.claimsMappingPolicy"
+  "truncated": true
 } -->
 
 ```http
 HTTP/1.1 204 No Content
-Content-type: application/json
-
-{
-  "definition": [
-    "definition-value"
-  ],
-  "displayName": "displayName-value",
-  "isOrganizationDefault": true,
-  "id": "id-value"
-}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

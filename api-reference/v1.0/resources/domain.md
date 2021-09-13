@@ -2,15 +2,15 @@
 title: тип ресурса домена
 description: Представляет домен, связанный с клиентом.
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: c832ba7b8d16964df53d9530f5aab0113afcd00f422bd701530cd4088b06f178
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: da0241057123a55882900e3d1a34a66640c814b6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141814"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099044"
 ---
 # <a name="domain-resource-type"></a>тип ресурса домена
 
@@ -50,20 +50,20 @@ ms.locfileid: "54141814"
 
 | Свойство   | Тип | Описание |
 |:---------------|:--------|:----------|
-|authenticationType|String| Указывает настроенный тип проверки подлинности для домена. Значение либо `Managed` или `Federated` . `Managed` указывает на облачный управляемый домен, в котором Azure AD выполняет проверку подлинности пользователей. `Federated` указывает, что проверка подлинности передается поставщику удостоверений, например локальной службе Active Directory клиента с помощью служб Федерации Active Directory. Это свойство является только для чтения и не является недействительным. |
-|availabilityStatus|String| Это свойство всегда за `null` исключением случаев, когда [используется](../api/domain-verify.md) действие проверки. Когда используется [действие](../api/domain-verify.md) проверки, **объект домена** возвращается в ответ. Свойство **availabilityStatus** объекта **домена** в ответе либо `AvailableImmediately` или `EmailVerifiedDomainTakeoverScheduled` .|
-|id|String| Полное имя домена. Ключ, неуменяемый, не nullable, уникальный. |
-|isAdminManaged|Логическое| Значение свойства в том случае, если управление записями DNS домена делегировано `false` Microsoft 365. В противном случае значение `true` . Не является недействительным |
+|authenticationType|Строка| Указывает настроенный тип проверки подлинности для домена. Значение либо `Managed` или `Federated` . `Managed` указывает на облачный управляемый домен, в котором Azure AD выполняет проверку подлинности пользователей. `Federated` указывает, что проверка подлинности передается поставщику удостоверений, например локальной службе Active Directory клиента с помощью служб Федерации Active Directory. Это свойство является только для чтения и не является недействительным. |
+|availabilityStatus|Строка| Это свойство всегда за `null` исключением случаев, когда [используется](../api/domain-verify.md) действие проверки. Когда используется [действие](../api/domain-verify.md) проверки, **объект домена** возвращается в ответ. Свойство **availabilityStatus** объекта **домена** в ответе либо `AvailableImmediately` или `EmailVerifiedDomainTakeoverScheduled` .|
+|id|Строка| Полное имя домена. Ключ, неуменяемый, не nullable, уникальный. |
+|isAdminManaged|Boolean| Значение свойства в том случае, если управление записями DNS домена делегировано `false` Microsoft 365. В противном случае значение `true` . Не является недействительным |
 |isDefault|Boolean| `true` если это домен по умолчанию, используемый для создания пользователя. Существует только один домен по умолчанию для одной компании. Не является недействительным |
 |isInitial|Boolean| `true` если это начальный домен, созданный Microsoft Online Services (companyname.onmicrosoft.com). На одну компанию имеется только один начальный домен. Не является недействительным |
 |isRoot|Логический| `true` если домен является проверенным корневым доменом. В `false` противном случае, если домен является поддоменом или непроверенным. Не является недействительным |
 |isVerified|Логический| `true` если домен завершил проверку владения доменом. Не является недействительным |
 |passwordNotificationWindowInDays|Int32|Указывает количество дней до получения пользователем уведомления о том, что срок действия пароля истекает. Если свойство не установлено, будет использоваться значение по умолчанию в 14 дней.|
 |passwordValidityPeriodInDays|Int32| Указывает продолжительность действия пароля перед его сменой. Если свойство не установлено, будет использоваться значение по умолчанию в 90 дней. |
-|supportedServices|Коллекция строк| Возможности, присвоенные домену. Может включать `0` или `1` более следующих значений: `Email` , , , , , , , `Sharepoint` , `EmailInternalRelayOnly` `OfficeCommunicationsOnline` `SharePointDefaultDomain` `FullRedelegation` `SharePointPublic` `OrgIdAuthentication` `Yammer` `Intune` . Значения, которые можно добавить или удалить с Graph API: `Email` `OfficeCommunicationsOnline` , `Yammer` . Не является недействительным|
+|supportedServices|Коллекция String| Возможности, присвоенные домену. Может включать `0` или `1` более следующих значений: `Email` , , , , , , , `Sharepoint` , `EmailInternalRelayOnly` `OfficeCommunicationsOnline` `SharePointDefaultDomain` `FullRedelegation` `SharePointPublic` `OrgIdAuthentication` `Yammer` `Intune` . Значения, которые можно добавить или удалить с Graph API: `Email` `OfficeCommunicationsOnline` , `Yammer` . Не является недействительным|
 |state|[domainState](domainstate.md)| Состояние асинхронных операций, запланированных для домена. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Связи между доменом и другими объектами в каталоге, такими как его записи проверки и записи конфигурации служб, подвергаются воздействию с помощью свойств навигации. Эти отношения можно прочитать, нацелив эти свойства навигации в запросах.
 

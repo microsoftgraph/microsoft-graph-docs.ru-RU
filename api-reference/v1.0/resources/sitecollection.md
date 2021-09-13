@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: SiteCollection
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 description: Ресурс siteCollection предоставляет больше сведений о семействе веб-сайтов.
 doc_type: resourcePageType
-ms.openlocfilehash: 196958674462095b8b47f82d07ac4fa7a885243b240473444c30b24014578c18
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8260970575a225b5a7fea415c783293a917e0b72
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251745"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123043"
 ---
 # <a name="sitecollection-resource"></a>Ресурс SiteCollection
 
@@ -45,7 +45,7 @@ ms.locfileid: "54251745"
 | Имя свойства        | Тип     | Описание
 |:---------------------|:---------|:---------------------------------------------------
 | **hostname**         | строка   | Имя узла для семейства веб-сайтов. Только для чтения.
-| **dataLocationCode** | Строка   | Код географического региона для того, где находится эта коллекция сайтов. Только для чтения.
+| **dataLocationCode** | string   | Код географического региона для того, где находится эта коллекция сайтов. Только для чтения.
 | **root**             | [root][] | При этом указывается, что это корневой набор сайтов в SharePoint. Только для чтения.
 
 [root]: root.md

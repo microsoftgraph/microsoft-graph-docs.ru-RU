@@ -1,16 +1,16 @@
 ---
 title: Microsoft 365 отчеты активных пользователей
 description: Вы можете использовать отчеты Microsoft 365 активных пользователей, чтобы узнать, сколько лицензий на продукты используются отдельными лицами в вашей организации, и узнать, какие пользователи используют какие продукты. Эти отчеты помогут администраторам определить редко используемые продукты или выявить пользователей, которым, возможно, необходимо дополнительное обучение или информация.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 7d7e36e69c8819cfe7ddc862208c9a7eb21e99d63fada80a4ad425777a6c56a8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: da908b20bf182ac45b5deb29da1c04c0207382fc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169412"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094221"
 ---
 # <a name="microsoft-365-active-users-reports"></a>Microsoft 365 отчеты активных пользователей
 

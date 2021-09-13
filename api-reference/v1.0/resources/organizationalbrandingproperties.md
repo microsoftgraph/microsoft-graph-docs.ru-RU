@@ -1,16 +1,16 @@
 ---
 title: тип ресурса organizationalBrandingProperties
 description: Содержит сведения о брендинге организации.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: AlexanderMars
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: b815f5f1c75842939526a008e960444d475e5e54f9ce94abe16706c5c387851e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: db4dc3d52ad9bf3f1ff2c66443c7c909cbad9dd4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135052"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032295"
 ---
 # <a name="organizationalbrandingproperties-resource-type"></a>тип ресурса organizationalBrandingProperties
 
@@ -30,9 +30,9 @@ ms.locfileid: "54135052"
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
 | [Создание](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Создание организационного брендинга с помощью объекта organizationalBrandingProperties. |
-| [Получение](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Чтение свойств и связей объекта organizationalBrandingProperties. |
+| [получение](../api/organizationalbrandingproperties-get.md); | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Чтение свойств и связей объекта organizationalBrandingProperties. |
 | [Обновление](../api/organizationalbrandingproperties-update.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Обновление объекта organizationalBrandingProperties. |
-| [Удаление](../api/organizationalbrandingproperties-delete.md) | Нет | Удаление объекта organizationalBrandingProperties. |
+| [удаление](../api/organizationalbrandingproperties-delete.md); | Нет | Удаление объекта organizationalBrandingProperties. |
 
 ## <a name="properties"></a>Свойства
 
@@ -41,10 +41,10 @@ ms.locfileid: "54135052"
 |backgroundColor|String| Цвет, который будет отображаться на месте фонового изображения в подключениях с низкой пропускной способностью. Здесь рекомендуется использовать основной цвет логотипа баннера или цвета организации. Укажите это в hexadecimal (например, белый #FFFFFF). |
 |backgroundImage|Stream| Изображение, которое отображается в качестве фона знака на странице. .png или .jpg не больше 1920x1080 и меньше 300kb. Меньшее изображение уменьшит требования к пропускной способности и сделает загрузку страниц более высокой. |
 |bannerLogo|Stream| На странице входного знака отображается баннерная версия логотипа вашей компании. .png или .jpg не превышает 36x245px. Рекомендуется использовать прозрачное изображение без обивки вокруг логотипа. |
-|id|String| Это id, унаследованный от microsoft.graph.entity, — это локал, указывающий стандарт ISO 639 для языка, например английский — "en-ru" или "ru". Если мы обналичим функциональность с несколькими фирменными марками для одного локального уровня, это можно изменить. Обратите внимание, что id для default/branding всегда является "und" до тех пор, пока у нас нет однотонов без ключей. Только для чтения. |
-|signInPageText|String| Текст, который отображается в нижней части окна для регистрации. С помощью этого можно сообщить дополнительные сведения, например номер телефона в службу поддержки или юридический отчет. Этот текст должен быть unicode и не превышать 1024 символов. |
+|id|Строка| Это id, унаследованный от microsoft.graph.entity, — это локал, указывающий стандарт ISO 639 для языка, например английский — "en-ru" или "ru". Если мы обналичим функциональность с несколькими фирменными марками для одного локального уровня, это можно изменить. Обратите внимание, что id для default/branding всегда является "und" до тех пор, пока у нас нет однотонов без ключей. Только для чтения. |
+|signInPageText|Строка| Текст, который отображается в нижней части окна для регистрации. С помощью этого можно сообщить дополнительные сведения, например номер телефона в службу поддержки или юридический отчет. Этот текст должен быть unicode и не превышать 1024 символов. |
 |squareLogo|Stream| Квадратная версия логотипа вашей компании. Это отображается в Windows 10(OOBE) и когда Windows автопилот включен для развертывания. .png или .jpg размером не более 240x240px и не более 10 кб. Рекомендуется использовать прозрачное изображение без обивки вокруг логотипа. |
-|usernameHintText|String| Строка, отображаемая в виде подсказки в текстовом ящике имени пользователя на экране знака. Этот текст должен быть Unicode без ссылок или кода и не может превышать 64 символов. |
+|usernameHintText|Строка| Строка, отображаемая в виде подсказки в текстовом ящике имени пользователя на экране знака. Этот текст должен быть Unicode без ссылок или кода и не может превышать 64 символов. |
 
 ## <a name="relationships"></a>Связи
 

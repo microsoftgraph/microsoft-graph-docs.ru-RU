@@ -1,16 +1,16 @@
 ---
 title: Вывод календаря
 description: 'Получение свойств и связей объекта calendar. Это может быть календарь для ресурса user '
-localization_priority: Priority
+ms.localizationpriority: high
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6cb3331d61e2cf20c7cff617557da7ba7674b888
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c782b4d259f6926c7066e9cdfc956e7db430622a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052539"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125451"
 ---
 # <a name="get-calendar"></a>Вывод календаря
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/me/calendar
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

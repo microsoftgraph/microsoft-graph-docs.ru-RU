@@ -2,15 +2,15 @@
 title: тип ресурса userConsentRequest
 description: Запрос, созданный пользователем на использование приложения, требующее доступа к организационным данным, несанкционированный для предоставления согласия для себя.
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 0b7c69fb636efae5bd6e1a4ca71c9ba1b2943c20346262de20017ddea3da5849
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f4fd22b99e0d55a4caed31daed9d35e1ff345d6e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196504"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59083959"
 ---
 # <a name="userconsentrequest-resource-type"></a>тип ресурса userConsentRequest
 
@@ -30,16 +30,16 @@ ms.locfileid: "54196504"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|approvalId|String|Id утверждения. Это значение равно значению `id` .|
+|approvalId|Строка|Id утверждения. Это значение равно значению `id` .|
 |completedDateTime|DateTimeOffset|Дата и время, когда **состояние** запроса было отмечено как `Completed` . Сведения о времени и дате представлены в формате ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |createdBy|[identitySet](../resources/identityset.md)|Пользователь, создавший запрос.|
 |createdDateTime|DateTimeOffset|Дата и время создания запроса. Сведения о времени и дате представлены в формате ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Поддерживает `$filter` `eq` (только) и `$orderby` .|
-|customData|String|Свободное текстовое поле для определения настраиваемой информации для запроса согласия пользователя. Не используется.|
+|customData|Строка|Свободное текстовое поле для определения настраиваемой информации для запроса согласия пользователя. Не используется.|
 |id|String|Идентификатор запроса. |
-|reason|String|Обоснование пользователем необходимости доступа к приложению. Поддерживает `$filter` `eq` (только) и `$orderby` .  |
+|reason|Строка|Обоснование пользователем необходимости доступа к приложению. Поддерживает `$filter` `eq` (только) и `$orderby` .  |
 |status|String|Состояние запроса на согласие приложения пользователя. Возможные значения: `Initializing` , `InProgress` и `Completed` . Поддерживает `$filter` `eq` (только) и `$orderby` . |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 |Связь|Тип|Описание|
 |:---|:---|:---|

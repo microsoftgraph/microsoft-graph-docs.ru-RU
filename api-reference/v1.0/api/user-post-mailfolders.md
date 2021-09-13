@@ -1,16 +1,16 @@
 ---
 title: Создание объекта MailFolder
 description: С помощью этого API можно создать папку почты в корневой папке почтового ящика пользователя.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a60f7166337933a3ee8897f9817c6adb148bd05c
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: c750b9ffe1c0bfdc40e96542aa881b2a5378e2bc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629401"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099177"
 ---
 # <a name="create-mailfolder"></a>Создание объекта MailFolder
 
@@ -46,8 +46,8 @@ POST /users/{id | userPrincipalName}/mailFolders
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|Строка|Отображаемое имя новой папки.|
-|isHidden|Логический|Указывает, скрыта ли новая папка. Значение по умолчанию — `false`. Настройка свойства необязательна. После набора невозможно обновить это свойство. Дополнительные сведения см. в [папках "Скрытая почта"](../resources/mailfolder.md#hidden-mail-folders)|
+|displayName|String|Отображаемое имя новой папки.|
+|isHidden|Логический|Указывает, скрыта ли новая папка. Значение по умолчанию — `false`. Настройка свойства необязательна. После набора невозможно обновить это свойство. Дополнительные сведения см. в [папках "Скрытая почта"](../resources/mailfolder.md#hidden-mail-folders)|
 
 ## <a name="response"></a>Отклик
 

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса apiApplication
 description: Указывает параметры приложения веб-API.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 2d1b6df789f5ea472f60210a9f290f968c10a6bc1ccb7f3d481dc5ce4e6dbad8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ecd0c4991f1f81e1e9623fec7d43038e663f7dbd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54223741"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094487"
 ---
 # <a name="apiapplication-resource-type"></a>тип ресурса apiApplication
 

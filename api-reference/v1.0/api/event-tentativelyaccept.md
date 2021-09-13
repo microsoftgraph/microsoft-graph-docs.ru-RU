@@ -2,15 +2,15 @@
 title: 'event: tentativelyAccept'
 description: Принятие под вопросом указанного события в календаре пользователя.
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 17d7261c55af1290c1e67efe8f422f1f75c25d51
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f832948af4d7bb1d1ff3bcae2a6059afb9ef2726
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448272"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59095145"
 ---
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 

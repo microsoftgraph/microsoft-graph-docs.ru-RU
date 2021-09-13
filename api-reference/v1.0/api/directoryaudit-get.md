@@ -1,16 +1,16 @@
 ---
 title: Получение directoryAudit
 description: Описывает метод получения ресурса directoryAudit из API Microsoft Graph.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: d29dbae8dbbc33f73d2d2cd4e61715fb5a36f5c5
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 766feedea9f514e9629adeac1930bdfe991b2b71
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579526"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038057"
 ---
 # <a name="get-directoryaudit"></a>Получение directoryAudit
 
@@ -26,7 +26,10 @@ ms.locfileid: "53579526"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
-|Приложение | AuditLog.Read.All и Directory.Read.All |
+|Для приложений | AuditLog.Read.All и Directory.Read.All |
+
+> [!IMPORTANT]
+> Этот API имеет [известные](/graph/known-issues#azure-ad-activity-reports) проблемы и в настоящее время требует согласия на оба **auditLog.Read.All** и **Directory.Read.All** разрешений.
 
 ## <a name="http-request"></a>HTTP-запрос
 

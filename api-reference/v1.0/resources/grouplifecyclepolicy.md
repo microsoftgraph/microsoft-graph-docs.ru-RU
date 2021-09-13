@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса groupLifecyclePolicy
 description: Представляет политику жизненного цикла для Microsoft 365 группы.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: d87a6690687eb0696bbe4afbef57ddffdbfc921358173ce18e0cc8b3d2fd696e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2a927f172074e8a889589c9c0b475be78868ca62
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152735"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062679"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>Тип ресурса groupLifecyclePolicy
 
@@ -35,7 +35,7 @@ ms.locfileid: "54152735"
 |:---------------|:--------|:----------|
 |alternateNotificationEmails|String| Список адресов электронной почты для отправки уведомлений о группах без владельцев. Можно указать несколько адресов электронной почты, разделив их точкой с запятой. |
 |groupLifetimeInDays|Int32| Количество дней до истечения срока действия группы. После продления группа будет оставаться активной в течение указанного количества дней. |
-|id|String| Уникальный идентификатор политики. Только для чтения.|
+|id|Строка| Уникальный идентификатор политики. Только для чтения.|
 |managedGroupTypes|String| Тип группы, к которому применяется политика истечения срока действия. Возможные значения — **All**, **Selected** и **None**. |
 
 ## <a name="relationships"></a>Связи

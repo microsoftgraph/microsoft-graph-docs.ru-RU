@@ -1,16 +1,16 @@
 ---
 title: Обновление oAuth2PermissionGrant
 description: Обновление свойств oAuth2PermissionGrant, представляющего делегированную лицензию.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: fd75e020e69888c81cf4a9c53c180585ace73c7e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 95418534651d7c29dfd2aa2c6c4e27b888b86d4f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441776"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062903"
 ---
 # <a name="update-a-delegated-permission-grant-oauth2permissiongrant"></a>Обновление делегированного разрешения (oAuth2PermissionGrant)
 

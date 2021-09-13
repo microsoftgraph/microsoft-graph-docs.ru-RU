@@ -2,15 +2,15 @@
 title: Удаление канала
 description: Удалите канал.
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9ee64e96e9dde7ac3d3b2026b63d9685126204f6
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 0820cd980826a200195e5f7ef62fba3befd92ca9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51202634"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59131002"
 ---
 # <a name="delete-channel"></a>Удаление канала
 

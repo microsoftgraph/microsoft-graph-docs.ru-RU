@@ -1,16 +1,16 @@
 ---
 title: Список timeOffRequest
 description: Извлечение списка объектов timeOffRequest в команде.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8784cacb090a1c5a877cc7d4aa1142c50661cfa9
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 911e9d6ccc5be7d87d9fba36977da2f85eab5b21
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053792"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049832"
 ---
 # <a name="list-timeoffrequest"></a>Список timeOffRequest
 
@@ -26,7 +26,7 @@ ms.locfileid: "52053792"
 |:---------------------------------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Schedule.Read.All, Schedule.ReadWrite.All |
+|Для приложений | Schedule.Read.All, Schedule.ReadWrite.All |
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами. в настоящее время только в закрытом предварительном просмотре и недоступны для общего пользования.
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timeOffRequests
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Пакет
-localization_priority: Normal
+ms.localizationpriority: medium
 description: " или коллекция элементов, которые следует рассматривать как коллекцию, а не отдельные элементы."
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 09a335605e4a7ed258f27c120b9fdb4ecb95a59a42ccbf0a52866c5338f25d99
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cf4a0ec97c328bb10aa51800c7ec18b4a8512286
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54138495"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094123"
 ---
 # <a name="package-resource-type"></a>Тип ресурса Package
 

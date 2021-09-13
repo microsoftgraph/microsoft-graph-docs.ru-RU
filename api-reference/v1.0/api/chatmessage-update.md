@@ -3,14 +3,14 @@ title: Обновление chatMessage
 description: Обновление свойства policyViolation для chatMessage.
 author: RamjotSingh
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: dc4afbd651bb6d4c498240dd49bac56a586446b2
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 53a3eb63de9fbdb5741bfe76f3ff8aed99563d54
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582629"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022781"
 ---
 # <a name="update-chatmessage"></a>Обновление chatMessage
 
@@ -53,7 +53,7 @@ PATCH /chats/{chatThread-id}/messages/{message-id}
 
 ### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса на обновление свойства **policyViolation** в сообщении канала Microsoft Teams.
+Ниже приводится пример запроса на обновление свойства **policyViolation** в сообщении Microsoft Teams канала.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

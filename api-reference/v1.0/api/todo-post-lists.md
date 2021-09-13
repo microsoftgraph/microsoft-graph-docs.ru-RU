@@ -1,21 +1,21 @@
 ---
 title: Создание todoTaskList
-description: Создание объекта lists.
+description: Создайте новый объект списков.
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 528afb009fe125e3dfac343edb622bb7f9c70b9c
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 55870cb92aea78855844d8dd3bd3ae3ac2ef7bf0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873831"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049818"
 ---
 # <a name="create-todotasklist"></a>Создание todoTaskList
 Пространство имен: microsoft.graph
 
-Создание объекта lists.
+Создайте новый объект списков.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -23,7 +23,7 @@ ms.locfileid: "49873831"
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
-|Делегированное (личная учетная запись Майкрософт)|Tasks.ReadWrite|
+|Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
 |Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -44,17 +44,17 @@ POST /users/{id|userPrincipalName}/todo/lists
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажу представление объекта [todoTaskList](../resources/todotasklist.md) в JSON.
+В теле запроса поставляем представление JSON объекта [todoTaskList.](../resources/todotasklist.md)
 
 В следующей таблице показаны свойства, необходимые при создании [todoTaskList.](../resources/todotasklist.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Поле, указывающее заголовок списка задач.|
+|displayName|Строка|Поле, указывающее название списка задач.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `201 Created` [todoTaskList](../resources/todotasklist.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект todoTaskList](../resources/todotasklist.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

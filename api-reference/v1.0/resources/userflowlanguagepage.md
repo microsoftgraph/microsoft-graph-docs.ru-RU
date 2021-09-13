@@ -2,15 +2,15 @@
 title: тип ресурса userFlowLanguagePage
 description: Определяет строки, которые показаны пользователям во время потока пользователей.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 0f25fd015168be97d3c737df73c11dd337191607cfca81f8fdeaca79b58398cb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3c8367b29b857d7b1bce9dc5815ede5b74f5c025
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230412"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136315"
 ---
 # <a name="userflowlanguagepage-resource-type"></a>тип ресурса userFlowLanguagePage
 
@@ -32,7 +32,7 @@ ms.locfileid: "54230412"
 |:---|:---|:---|
 |id|String|Идентификатор страницы userFlowLanguage.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

@@ -2,15 +2,15 @@
 title: Получение смены
 description: Получите смену по ID.
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e4754e86ecaae0c39c519362c25ba08a49a5cbfb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: dda5cb5199608d7547e4cce21c1c6c384adaf527
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054415"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118962"
 ---
 # <a name="get-shift"></a>Получение смены
 
@@ -27,7 +27,7 @@ ms.locfileid: "52054415"
 |:---------------------------------------|:-------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                 |
-| Приложение                            | Schedule.Read.All, Schedule.ReadWrite.All                                      |
+| Для приложений                            | Schedule.Read.All, Schedule.ReadWrite.All                                      |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts/{shiftId}
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

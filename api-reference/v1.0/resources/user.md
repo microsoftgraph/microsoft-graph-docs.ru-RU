@@ -2,15 +2,15 @@
 title: Тип ресурса user
 description: Представляет учетную запись пользователя Azure AD. Наследуется от directoryObject.
 author: jpettere
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: d568586cf65679aa66fb05a20a8efe863bc24960
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: b292d072ad0322e46bb9bd9da6a62da2af1d3518
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514373"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59083987"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -57,7 +57,7 @@ ms.locfileid: "58514373"
 | [Список объектов contactFolder](../api/user-list-contactfolders.md)                                  | Коллекция [contactFolder](contactfolder.md)                                     | Получение коллекции папок контактов в папке контактов по умолчанию для вошедшего пользователя.                                                                                                                                             |
 | **Объекты каталога**                                                                      |                                                                                  |                                                                                                                                                                                                                                     |
 | [assignLicense](../api/user-assignlicense.md)                                              | [user](user.md)                                                                  | Добавление или удаление подписок пользователя. Вы также можете включать и отключать отдельные планы, связанные с подпиской.                                                                                                            |
-| [checkMemberGroups](../api/user-checkmembergroups.md)                                      | Коллекция строк                                                                | Проверка членства в списке групп. Это транзитивная проверка.                                                                                                                                                                  |
+| [checkMemberGroups](../api/user-checkmembergroups.md)                                      | Коллекция String                                                                | Проверка членства в списке групп. Это транзитивная проверка.                                                                                                                                                                  |
 | [checkMemberObjects](../api/user-checkmemberobjects.md)                                    | Коллекция String                                                                | Проверка участия в списке группы, роли каталога или объектах административных единиц. Эта функция транзитивна.                                                                                                                |
 | [exportPersonalData](../api/user-exportpersonaldata.md)                                    | Нет                                                                             | Отправка запроса операции политики данных, направленного администратором компании для экспорта данных пользователя организации.                                                                                                                   |
 | [getByIds](../api/directoryobject-getbyids.md)                                             | Коллекция String                                                                | Возвращает объекты каталогов, указанные в списке идентификаторов.                                                                                                                                                                           |
@@ -284,7 +284,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |people|Коллекция [person](person.md)| Люди, которые являются релевантными для пользователя. Только для чтения. Допускается значение NULL.
 |photo|[profilePhoto](profilephoto.md)| Фотография профиля пользователя. Только для чтения.|
 |planner|[plannerUser](planneruser.md)| Точка входа в ресурс Планировщик, который может существовать для пользователя. Только для чтения.|
-|registeredDevices|Коллекция [directoryObject](directoryobject.md)|Устройства, зарегистрированные для пользователя. Только для чтения. Допускается значение null. Поддерживает `$expand`.|
+|registeredDevices|Коллекция [directoryObject](directoryobject.md)|Устройства, зарегистрированные для пользователя. Только для чтения. Допускается значение null. Поддержка `$expand`.|
 |todo|[todo](todo.md)|Представляет службы To Do, доступные пользователю. |
 
 ## <a name="json-representation"></a>Представление JSON

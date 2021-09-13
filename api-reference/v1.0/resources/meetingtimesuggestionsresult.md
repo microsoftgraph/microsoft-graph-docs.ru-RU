@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса meetingTimeSuggestionsResult
 description: Коллекция предложений (если они есть) или причина их отсутствия.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 441ba167cdc90128ec63403bfe389de68de6c56d1c506c9479e5c9ffa433a64c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9be5a0b8aaba8488c298c7179cca214b1f14ae50
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230440"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113583"
 ---
 # <a name="meetingtimesuggestionsresult-resource-type"></a>Тип ресурса meetingTimeSuggestionsResult
 
@@ -28,7 +28,7 @@ ms.locfileid: "54230440"
 | organisUnavailable | Для параметра **isOrganizerOptional** задано значение false, но организатор недоступен в запрашиваемый период времени. |
 | unknown | Причина отсутствия предложений неизвестна.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже показано представление JSON ресурса.
 

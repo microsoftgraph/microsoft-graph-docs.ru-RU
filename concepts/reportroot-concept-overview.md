@@ -1,16 +1,16 @@
 ---
 title: Обзор API отчетов Microsoft Graph
 description: API отчетов Microsoft Graph позволяют получить представление о действиях ресурсов приложений и клиента.
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: reports
 author: sarahwxy
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 106505521418b4cfc41199f3b9f9c9aa46263d67d4d6f46e803f01ac0740383a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4c2f8877cf8252e63bc06002db4bbb0596004447
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54174719"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113499"
 ---
 # <a name="microsoft-graph-reports-api-overview"></a>Обзор API отчетов Microsoft Graph
 

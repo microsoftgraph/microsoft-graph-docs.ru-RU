@@ -1,16 +1,16 @@
 ---
 title: Список swapShiftsChangeRequest
 description: Извлечение списка объектов swapShiftsChangeRequest в команде.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 07133fdb48b8e2e707f5b81a7ba886c9b2a55c03
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e6ca36c1ca8dbe10118b47fa8ec77477e6f406a9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055759"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118876"
 ---
 # <a name="list-swapshiftschangerequest"></a>Список swapShiftsChangeRequest
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/swapShiftsChangeReq
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

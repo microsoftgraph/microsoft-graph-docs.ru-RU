@@ -1,14 +1,14 @@
 ---
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: 2f6c6bb712382e43923de674ee7c27ee182397ba46c34748f1b54b35cd4a5c87
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2722470bf37497401a502e17c3902c20f545fe4d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196821"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035901"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
@@ -20,4 +20,7 @@ ms.locfileid: "54196821"
 | Любой | 2000 запросов за 20 секунд | 1000 запросов за 20 секунд |
 
 Указанные выше ограничения действуют для следующих ресурсов:  
-windowsFeatureUpdateCatalogItem, windowsFeatureUpdateProfile, windowsFeatureUpdateProfileAssignment, windowsQualityUpdateCatalogItem, windowsQualityUpdateProfile, windowsQualityUpdateProfileAssignment, windowsUpdateCatalogItem.
+
+| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                            |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> [windowsFeatureUpdateCatalogItem](/graph/api/resources/windowsfeatureupdatecatalogitem) <li> [windowsFeatureUpdateProfile](/graph/api/resources/windowsfeatureupdateprofile) <li> [windowsFeatureUpdateProfileAssignment](/graph/api/resources/windowsfeatureupdateprofileassignment) <li> [windowsQualityUpdateCatalogItem](/graph/api/resources/windowsqualityupdatecatalogitem) <li> [windowsQualityUpdateProfile](/graph/api/resources/windowsqualityupdateprofile) <li> [windowsQualityUpdateProfileAssignment](/graph/api/resources/windowsqualityupdateprofileassignment) <li> [windowsUpdateCatalogItem](/graph/api/resources/windowsupdatecatalogitem)  </ul> |

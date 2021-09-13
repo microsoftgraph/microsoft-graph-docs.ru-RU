@@ -2,14 +2,14 @@
 title: Настройка встроенных типов вкладок в Microsoft Teams
 description: Создание или настройка вкладки Microsoft Teams с помощью API Microsoft Graph
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2decc60c3315ef6f324d35afce2ff10617c85e716ec7282215053c478ef729b3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7bb8438cbbfe54143a72ada3375b41e766a2b751
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225722"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59083875"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Настройка встроенных типов вкладок в Microsoft Teams
 
@@ -106,7 +106,7 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 Вики-вкладки не поддерживают конфигурацию с помощью Microsoft Graph.
 Обратите внимание, однако, что настраивать не так много — на неконфигурированной вкладке вики первый пользователь просто должен выбрать вкладку **Настройка,** чтобы настроить ее.
 
-## <a name="planner-tabs"></a>Вкладки планировщика
+## <a name="planner-tabs"></a>Вкладки Планировщика
 
 Для вкладок Planner `teamsAppId` это `com.microsoft.teamspace.tab.planner` . Конфигурация не поддерживается.
 

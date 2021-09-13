@@ -2,15 +2,15 @@
 title: Тип ресурса educationTeacher
 description: Дополнительные сведения, добавляемые в объект educationUser, который присутствует, когда значение параметра primaryRole для пользователя — `teacher`.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: c96e3301966f4089df2f973d4e8906b9fb010ffb2f9cd2eda81c8c543395ff2b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 68c6cde2b3e7027e94c9d1ce818eea46778b5d6c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141737"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118689"
 ---
 # <a name="teacher-resource-type"></a>Тип ресурса Teacher
 
@@ -25,7 +25,7 @@ ms.locfileid: "54141737"
 | externalId    | String | Идентификатор преподавателя в исходной системе. |
 | teacherNumber | String | Номер преподавателя.                         |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

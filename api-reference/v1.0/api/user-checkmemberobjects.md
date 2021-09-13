@@ -1,16 +1,16 @@
 ---
 title: 'пользователь: checkMemberObjects'
 description: Проверка членства в списке ролей группы или каталога для указанного объекта пользователя.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 04b33659a0677dbae6afdd930e898247bf407990
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 668bc5d2e7b11ed6b781f689ff0d4868de892b21
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054317"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090021"
 ---
 # <a name="user-checkmemberobjects"></a>пользователь: checkMemberObjects
 
@@ -104,7 +104,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса rubricQuality
 description: Качество рубрики.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 6230732caf190bc255f63e7eee79af6971d3e4a805f1ead94332c13b6115555b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f75b873d37acfa23b7c60a9cd435948b73c0eb7a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211852"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117769"
 ---
 # <a name="rubricquality-resource-type"></a>тип ресурса rubricQuality
 
@@ -26,9 +26,9 @@ ms.locfileid: "54211852"
 |:-------------|:------------|:------------|
 |criteria|[rubricCriterion](rubriccriterion.md) collection|Набор критериев для этого качества рубрики.|
 |description|[itemBody](itembody.md)|Описание этого качества рубрики.|
-|displayName|String|Имя этого качества рубрики.|
-|qualityId|String|ID этого ресурса.|
-|weight|Одинарное|Если есть, то числовой вес для этого качества.  Весы должны добавить до 100.|
+|displayName|Строка|Имя этого качества рубрики.|
+|qualityId|Строка|ID этого ресурса.|
+|weight|Один|Если есть, то числовой вес для этого качества.  Весы должны добавить до 100.|
 
 ## <a name="json-representation"></a>Представление JSON
 

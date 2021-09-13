@@ -2,15 +2,15 @@
 title: тип ресурса riskDetection
 description: обнаружение рисков
 author: cloudhandler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 855d8b34da6c8cc24bd01f448164dc0b0b68b521d40c78bc6a3b06b95235423c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a8818799c24bfffaf8ddb0494d5a13c45d2fb15e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54154884"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103993"
 ---
 # <a name="riskdetection-resource-type"></a>тип ресурса riskDetection
 
@@ -35,7 +35,7 @@ Azure AD непрерывно [](riskyuser.md) оценивает риски п�
 |:---|:---|:---|
 |действие|activityType|Указывает тип активности, с чем связан обнаруженный риск. . Возможные значения: `signin`, `user`, `unknownFutureValue`.|
 |activityDateTime|DateTimeOffset|Дата и время возникновения рискованных действий. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, полночь UTC 1 января 2014 г. выглядит так: `2014-01-01T00:00:00Z`|
-|additionalInfo|String|Дополнительные сведения, связанные с обнаружением рисков в формате JSON.|
+|additionalInfo|Строка|Дополнительные сведения, связанные с обнаружением рисков в формате JSON.|
 |correlationId|String|Корреляция ID входного знака, связанного с обнаружением риска. Это свойство, если обнаружение риска не связано `null` с входом.|
 |detectedDateTime|DateTimeOffset|Дата и время обнаружения риска. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, полночь UTC 1 января 2014 г. выглядит так: `2014-01-01T00:00:00Z`|
 |detectionTimingType|riskDetectionTimingType|Сроки обнаружения риска (в режиме реального времени и в автономном режиме). Возможные значения: `notDefined`, `realtime`, `nearRealtime`, `offline`, `unknownFutureValue`.|
@@ -43,9 +43,9 @@ Azure AD непрерывно [](riskyuser.md) оценивает риски п�
 |ipAddress|String|Предоставляет IP-адрес клиента, откуда возник риск.|
 |lastUpdatedDateTime|DateTimeOffset|Дата и время последнего обновления обнаружения рисков. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, полночь UTC 1 января 2014 г. выглядит так: `2014-01-01T00:00:00Z`|
 |location|[signInLocation](../resources/signinlocation.md)|Расположение входного знака.|
-|requestId|String|Запрос iD входного знака, связанного с обнаружением рисков. Это свойство является null, если обнаружение риска не связано с входом.|
+|requestId|Строка|Запрос iD входного знака, связанного с обнаружением рисков. Это свойство является null, если обнаружение риска не связано с входом.|
 |riskDetail|riskDetail|Сведения об обнаружении риска. Возможные значения: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.|
-|riskEventType|String|Тип обнаруженного события риска. Возможные `unlikelyTravel` значения: `anonymizedIPAddress` , `maliciousIPAddress` , , , , , , , , `unfamiliarFeatures` и `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence` `generic` `adminConfirmedUserCompromised` `mcasImpossibleTravel` `mcasSuspiciousInboxManipulationRules` `investigationsThreatIntelligenceSigninLinked` `maliciousIPAddressValidCredentialsBlockedIP` `unknownFutureValue` . Если обнаружение риска является обнаружением премиум-класса, покажут `generic`|
+|riskEventType|Строка|Тип обнаруженного события риска. Возможные `unlikelyTravel` значения: `anonymizedIPAddress` , `maliciousIPAddress` , , , , , , , , `unfamiliarFeatures` и `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence` `generic` `adminConfirmedUserCompromised` `mcasImpossibleTravel` `mcasSuspiciousInboxManipulationRules` `investigationsThreatIntelligenceSigninLinked` `maliciousIPAddressValidCredentialsBlockedIP` `unknownFutureValue` . Если обнаружение риска является обнаружением премиум-класса, покажут `generic`|
 |riskLevel|riskLevel|Уровень обнаруженного риска. Возможные значения: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
 |riskState|riskState|Состояние обнаруженного рискованного пользователя или входной записи. Возможные значения: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |source|String|Источник обнаружения рисков. Например, `activeDirectory`. |
@@ -54,7 +54,7 @@ Azure AD непрерывно [](riskyuser.md) оценивает риски п�
 |userId|String|Уникальный идентификатор пользователя.|
 |userPrincipalName|String|Имя участника-пользователя.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

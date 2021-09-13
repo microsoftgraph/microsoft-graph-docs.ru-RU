@@ -1,16 +1,16 @@
 ---
 title: Назначение типа ресурса tokenLifetimePolicy
-description: Назначьте tokenLifetimePolicy приложению.
-localization_priority: Normal
+description: Назначение tokenLifetimePolicy приложению.
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 1d32530e70e1e08bda153ec83c459722eee0da1b
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: d28121acb9930881c0a61d4bea63c39432e076b0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131770"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063582"
 ---
 # <a name="assign-tokenlifetimepolicy"></a>Назначение типа ресурса tokenLifetimePolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "50131770"
 
 
 
-[Назначьте tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) [приложению.](../resources/application.md)
+Назначение [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) [приложению.](../resources/application.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "50131770"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All и Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy.Read.All и Application.ReadWrite.OwnedBy, Policy.Read.All и Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.All |
+| Для приложений                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +47,7 @@ POST /applications/{id}/tokenLifetimePolicies/$ref
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укавите идентификатор объекта [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) (используя свойство), который должен быть назначен приложению или `@odata.id` основному приложению или службе.
+В теле запроса укажи идентификатор объекта [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) (с помощью свойства), который должен быть назначен директору `@odata.id` приложения или службы.
 
 ## <a name="response"></a>Отклик
 

@@ -3,14 +3,14 @@ title: 'teamsAppInstallation в личной области: обновлени�
 description: Обновление установки приложения в личной области пользователя
 author: akjo
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7dc29124b00f4c72ff00c00a72069b39c5a65e2a
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 82abdb5d7d2b8f50082fa285fe46442dec9eeb43
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060538"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113884"
 ---
 # <a name="teamsappinstallation-in-personal-scope-upgrade"></a>teamsAppInstallation в личной области: обновление
 
@@ -26,7 +26,7 @@ ms.locfileid: "53060538"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
+|Для приложений | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

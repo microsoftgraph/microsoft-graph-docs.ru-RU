@@ -2,14 +2,14 @@
 title: Перечисление всех команд в Microsoft Teams для организации
 description: 'Чтобы перечислить все команды '
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: e2a8e451cc44ef38effabb5a9061e8185a582a3d32a418d2cac40cb5c2a431c0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a49f991b930ca8b5b7bb466716f30c66d32ba107
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225686"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062301"
 ---
 # <a name="list-all-teams-in-microsoft-teams-for-an-organization"></a>Перечисление всех команд в Microsoft Teams для организации
 

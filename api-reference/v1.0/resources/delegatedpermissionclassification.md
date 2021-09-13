@@ -1,16 +1,16 @@
 ---
 title: тип ресурса delegatedPermissionClassification
 description: Используется для указания классификации делегированного разрешения.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: a7842eb4efdd54f63743a786b0be28990dee609a27fa960bfa38ac2e476921ed
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 088fd0264abebaec5e4bf4d9af14bbb4031de1e4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146995"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118752"
 ---
 # <a name="delegatedpermissionclassification-resource-type"></a>тип ресурса delegatedPermissionClassification
 

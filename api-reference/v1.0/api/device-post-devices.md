@@ -2,15 +2,15 @@
 title: Создание устройства
 description: Создание и регистрация нового устройства в организации.
 author: spunukol
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ec6e482a760b4a190dae62cd80833e1c0233ee90
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: c534fa314da47a6d3a7580c4c9d19bd863b123e4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531252"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050630"
 ---
 # <a name="create-device"></a>Создание устройства
 
@@ -38,7 +38,7 @@ POST /devices
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type | строка | application/json |
+| Content-Type | string | application/json |
 
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [device](../resources/device.md) в формате JSON.

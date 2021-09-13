@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса responseStatus
 description: Состояние ответа к приглашению на собрание.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 89334764afa8a94c13c8c48111eb279e970b30cb
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: e1b2861386fc32589d35d6354345b1ba24471d98
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514555"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108872"
 ---
 # <a name="responsestatus-resource-type"></a>Тип ресурса responseStatus
 

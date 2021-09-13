@@ -1,16 +1,16 @@
 ---
 title: 'пользователь: exportPersonalData'
 description: Представляет запрос на операцию политики данных, сделанный администратором компании для экспорта данных пользователя организации.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 56e42bbde7df9ea08405616eaab1342ac654e8eb
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 5a1a31684aadd660ff2d85a21db5a6a710cc629a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787725"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090007"
 ---
 # <a name="user-exportpersonaldata"></a>пользователь: exportPersonalData
 
@@ -40,19 +40,19 @@ POST /users/{id}/exportPersonalData
 |:---------------|:----------|
 | Авторизация  | Bearer {token}|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|storageLocation|String|Это URL-адрес подписи общего доступа (SAS) к учетной записи служба хранилища Azure, куда следует экспортировать данные.|
+|storageLocation|Строка|Это URL-адрес подписи общего доступа (SAS) к учетной записи служба хранилища Azure, куда следует экспортировать данные.|
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `202 Accepted`. Метод не возвращает данные в теле отклика. Ответ содержит следующие заглавные главы ответов.
 
 | Имя       | Описание|
 |:---------------|:----------|
-| Расположение  | URL-адрес для проверки состояния запроса. |
+| Location  | URL-адрес для проверки состояния запроса. |
 | Retry-After  | Период времени в секундах. Производитель запросов должен ждать этого долго после отправки запроса для проверки состояния. |
 
 ## <a name="example"></a>Пример

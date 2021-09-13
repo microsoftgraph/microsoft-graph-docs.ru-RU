@@ -4,13 +4,13 @@ description: API записей звонков Microsoft Graph позволяе�
 author: williamlooney
 doc_type: conceptualPageType
 ms.prod: cloud-communications
-localization_priority: Priority
-ms.openlocfilehash: 6af5d297c7a04b8c28321fed4cc106d2981ac0e4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.localizationpriority: high
+ms.openlocfilehash: 7a672ae93421fe886cab06e13bb449d75f09659b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799446"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104357"
 ---
 # <a name="working-with-the-call-records-api-in-microsoft-graph"></a>Работа с API записей звонков в Microsoft Graph
 

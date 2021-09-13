@@ -1,16 +1,16 @@
 ---
 title: тип ресурса ipNamedLocation
 description: Представляет расположение Azure Active Directory, определенное диапазонами IP. Именуемые расположения — это настраиваемые правила, определяемые расположениями сети, которые затем можно использовать в политике условного доступа.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 930db24ef40a68bb00f5724762652dfd1d75c1702d6af61be878a04cc68f1b94
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f8e2763b5b10b64a1e7e22807a31f24a7303d13a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246726"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084379"
 ---
 # <a name="ipnamedlocation-resource-type"></a>тип ресурса ipNamedLocation
 
@@ -35,13 +35,13 @@ ms.locfileid: "54246726"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет дату создания и время расположения с помощью формата ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. Наследуется [от namedLocation](../resources/namedLocation.md).|
-|displayName|String|Понятное человеку имя расположения.|
-|id|String|Идентификатор объекта namedLocation. Только для чтения. Наследуется [от namedLocation](../resources/namedLocation.md).|
-|ipRanges|Коллекция объектов [ipRange](iprange.md)|Список диапазонов IP-адресов в формате CIDR IPv4 (например, 1.2.3.4/32) или любого допустимого формата IPv6 от IETF RFC596.|
-|isTrusted|Логический|True, если это расположение явно доверяется.|
+|displayName|String|Понятное человеку имя расположения. Обязательный.|
+|id|Строка|Идентификатор объекта namedLocation. Только для чтения. Наследуется [от namedLocation](../resources/namedLocation.md).|
+|ipRanges|Коллекция объектов [ipRange](iprange.md)|Список диапазонов IP-адресов в формате CIDR IPv4 (например, 1.2.3.4/32) или любого допустимого формата IPv6 от IETF RFC596. Обязательный.|
+|isTrusted|Логический|`true` если это расположение явно доверяется. Необязательное. Значение по умолчанию — `false`.|
 |modifiedDateTime|DateTimeOffset|Тип Timestamp представляет последнюю измененную дату и время расположения с помощью формата ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. Наследуется [от namedLocation](../resources/namedLocation.md).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 
@@ -67,6 +67,12 @@ ms.locfileid: "54246726"
   "modifiedDateTime": "String (timestamp)"
 }
 ```
+
+## <a name="see-also"></a>См. также
+
++ [Что такое условный доступ?](/azure/active-directory/conditional-access/overview)
++ [Использование условия расположения в политике условного доступа](/azure/active-directory/conditional-access/location-condition)
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

@@ -2,15 +2,15 @@
 title: Создание команды из группы
 description: Создание команды в группе.
 author: nkramer
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 11ecce195d6a93d5384f67fef2bb23f6cf34d6c8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bb13102b623be0486bde451d1e5394d7a7bd402e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051230"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109936"
 ---
 # <a name="create-team-from-group"></a>Создание команды из группы
 
@@ -110,7 +110,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

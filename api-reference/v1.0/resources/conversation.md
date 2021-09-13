@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса conversation
 description: Беседа — коллекция цепочек, содержащих записи. Все цепочки и записи в беседе имеют одинаковую тему.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: b15d4fd7d3ed1688fd27fed7a101fb0d9aed37ba
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: ff4788784a8895031795df40e96e50d9a6ba99df
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513610"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113702"
 ---
 # <a name="conversation-resource-type"></a>Тип ресурса conversation
 
@@ -41,7 +41,7 @@ ms.locfileid: "58513610"
 |topic|String|Тема беседы. Это свойство можно задать при создании беседы, но его невозможно обновить.|
 |uniqueSenders|Коллекция String|Все пользователи, которые отправили сообщение в эту беседу.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |threads|Коллекция [conversationThread](conversationthread.md)|Коллекция всех цепочек в беседе. Свойство навигации. Только для чтения. Допускается значение null.|

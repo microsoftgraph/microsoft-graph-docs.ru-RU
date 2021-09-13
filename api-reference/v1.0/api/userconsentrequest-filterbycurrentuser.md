@@ -2,15 +2,15 @@
 title: 'userConsentRequest: filterByCurrentUser'
 description: Извлечение объектов userConsentRequest, для которых текущий пользователь является рецензентом.
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: e30d94934f0ccce140610a8ee713e16aff83c3d6
-ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
+ms.openlocfilehash: faa503e162dd3f59b2307616f8f8703488372261
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698083"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109595"
 ---
 # <a name="userconsentrequest-filterbycurrentuser"></a>userConsentRequest: filterByCurrentUser
 
@@ -45,7 +45,7 @@ GET /identityGovernance/appConsent/appConsentRequests/{id}/userConsentRequests/f
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|on|consentRequestFilterByCurrentUserOptions|Фильтр для запроса объектов userConsentRequest для объекта appConsentRequest, для которого текущий пользователь является рецензентом. Разрешено значение `reviewer` . Обязательный.|
+|on|consentRequestFilterByCurrentUserOptions|Фильтр для запроса объектов userConsentRequest для объекта appConsentRequest, для которого текущий пользователь является рецензентом. Разрешено значение `reviewer` . Обязательное.|
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса extensionSchemaProperty
 description: Ресурс **extensionSchemaProperty** используется для задания имени и типа свойства в качестве части определения schemaExtension.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 493b42da4fc73d7bf0e37bb0be6f80be3754e20441568bb11d371c996819e8b4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 76f1c32857eb2912c5db85896277f0b80b4e1e0a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141702"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123498"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>Тип ресурса extensionSchemaProperty
 
@@ -23,18 +23,18 @@ ms.locfileid: "54141702"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |name|String| Имя строго типизированного свойства, определенного в качестве части расширения схемы.|
-|type|String| Тип свойства, определенного в качестве части расширения схемы.  Разрешенные значения: *Binary, Boolean, DateTime, Integer* или *String*.  Дополнительные сведения см. в приведенной ниже таблице.|
+|type|Строка| Тип свойства, определенного в качестве части расширения схемы.  Разрешенные значения: *Binary, Boolean, DateTime, Integer* или *String*.  Дополнительные сведения см. в приведенной ниже таблице.|
 
 #### <a name="supported-property-data-types"></a>Поддерживаемые типы данных свойств
 При определении свойства в расширении схемы поддерживаются следующие типы данных:
 
 | Тип свойства | Примечания |
 |-------------|------------|
-| Binary | Не более 256 байт. |
+| Binary | Не более 256 байт. |
 | Boolean | Не поддерживается для ресурсов contact, message, event и post. |
-| DateTime | Должен быть указан в формате ISO 8601. Данные времени будут храниться в формате UTC. |
+| DateTime | Должен быть указан в формате ISO 8601. Данные времени будут храниться в формате UTC. |
 | Целое число | 32-разрядное значение. Не поддерживается для ресурсов contact, message, event и post. |
-| String | Не более 256 символов |
+| String | Не более 256 символов |
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

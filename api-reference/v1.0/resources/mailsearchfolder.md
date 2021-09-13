@@ -1,16 +1,16 @@
 ---
 title: тип ресурса mailSearchFolder
 description: MailSearchFolder — это виртуальная папка в почтовом ящике пользователя, которая содержит все элементы электронной почты, совпадающие с указанными критериями поиска. mailSearchFolder наследует от mailFolder.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 85d64d007f8a74f1475156a48dd3c281c591678838ca19f4644b1df3eec4c038
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 077ba877c80987456278bec654b3622da2b1ecc3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141492"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036132"
 ---
 # <a name="mailsearchfolder-resource-type"></a>тип ресурса mailSearchFolder
 
@@ -37,7 +37,7 @@ ms.locfileid: "54141492"
 | [Получить папку поиска](../api/mailfolder-get.md) | [mailSearchFolder](mailsearchfolder.md) | Получите указанную папку поиска. |
 | [Обновление папки поиска](../api/mailsearchfolder-update.md) | [mailSearchFolder](mailsearchfolder.md) | Обновление указанной папки поиска. |
 | [Удаление папки поиска](../api/mailfolder-delete.md) | Нет | Удаление указанной папки поиска. |
-| [Список всех сообщений в папке поиска](../api/mailfolder-list-messages.md) | Коллекция [message](message.md) | Список всех сообщений в указанной папке поиска. |
+| [Список всех сообщений в папке поиска](../api/mailfolder-list-messages.md) | Коллекция объектов [message](message.md) | Список всех сообщений в указанной папке поиска. |
 
 ## <a name="properties"></a>Свойства
 
@@ -45,8 +45,8 @@ ms.locfileid: "54141492"
 |:---------------|:--------|:----------|
 | isSupported | Логический | Указывает, является ли папка поиска редактируемой с помощью API REST. |
 | includeNestedFolders | Логический | Указывает, как должна проходить иерархия папок почтовых ящиков в поиске. `true` означает, что следует сделать глубокий поиск, чтобы включить детские папки в иерархию каждой папки, явно указанной в **sourceFolderIds**. `false`означает неглубокий поиск только каждой из папок, явно указанных в **sourceFolderIds.** |
-| sourceFolderIds | Коллекция строк | Папки почтовых ящиков, которые необходимо добыть. |
-| filterQuery | String | Запрос OData для фильтрации сообщений. |
+| sourceFolderIds | Коллекция String | Папки почтовых ящиков, которые необходимо добыть. |
+| filterQuery | Строка | Запрос OData для фильтрации сообщений. |
 
 ## <a name="json-representation"></a>Представление JSON
 

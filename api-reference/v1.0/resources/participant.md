@@ -2,15 +2,15 @@
 title: тип ресурса участника
 description: Представляет тип участника.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 3bada1be911bda02e49229a20793289b61934f74
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: a10b3d532ef49904d1fd09cef6690584dfce7e12
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367144"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104084"
 ---
 # <a name="participant-resource-type"></a>тип ресурса участника
 
@@ -23,7 +23,7 @@ ms.locfileid: "58367144"
 | Метод                                                 | Возвращаемый тип                                                 | Описание                                    |
 |:-------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------|
 | [Участник списка](../api/participant-get.md)          | [participant](participant.md)                               | Извлечение списка **объектов-участников** вызова. |
-| [Получение участника](../api/participant-get.md)           | [участник](participant.md)                               | Чтение свойств **объекта-участника.** |
+| [Получение участника](../api/participant-get.md)           | [participant](participant.md)                               | Чтение свойств **объекта-участника.** |
 | [Удаление участника](../api/participant-delete.md)         | Нет   | Удаление участника вызова.                  |
 | [Приглашение](../api/participant-invite.md)                 | [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md)                        | Приглашайте участника на вызов.              |
 | [Отключение звука участника](../api/participant-mute.md)         | [muteParticipantOperation](muteparticipantoperation.md)     | Отключить участника вызова.                  |
@@ -35,12 +35,12 @@ ms.locfileid: "58367144"
 | id                   | String                                   | ID участника.                                          |
 | info                 | [participantInfo](participantinfo.md)    | Сведения о участнике.                          |
 | isInLobby            | Логический                                  | `true` если участник находится в вестибюле.                          |
-| isMuted              | Логический                                  | `true` если участник отключен (клиент или сервер отключен).    |
+| isMuted              | Boolean                                  | `true` если участник отключен (клиент или сервер отключен).    |
 | mediaStreams         | [коллекция mediaStream](mediastream.md) | Список потоков мультимедиа.                                   |
 | метаданные             | Строка                                   | BLOB данных, предоставляемых участником реестра.     |
 | recordingInfo        | [recordingInfo](recordinginfo.md)        | Сведения о том, имеет ли участник возможность записи. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

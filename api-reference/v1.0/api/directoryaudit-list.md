@@ -1,16 +1,16 @@
 ---
 title: Перечисление directoryAudits
 description: Описывает метод списка ресурса directoryAudit (сущности) из API Microsoft Graph.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 8105ba2dd072ce5ed540a1a44df59f27c05ea56d
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 7dcf6aeeb5a9053503de9f43d0945f77d2fe7788
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579220"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038078"
 ---
 # <a name="list-directoryaudits"></a>Перечисление directoryAudits
 
@@ -26,7 +26,10 @@ ms.locfileid: "53579220"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | AuditLog.Read.All и Directory.Read.All    |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Приложение                            | AuditLog.Read.All и Directory.Read.All    |
+| Для приложений                            | AuditLog.Read.All и Directory.Read.All    |
+
+> [!IMPORTANT]
+> Этот API имеет [известные](/graph/known-issues#azure-ad-activity-reports) проблемы и в настоящее время требует согласия на оба **auditLog.Read.All** и **Directory.Read.All** разрешений.
 
 ## <a name="http-request"></a>HTTP-запрос
 

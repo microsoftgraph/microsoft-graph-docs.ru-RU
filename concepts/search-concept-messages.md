@@ -2,14 +2,14 @@
 title: Используйте API Поиск (Майкрософт) в Microsoft Graph для поиска сообщений
 description: Вы можете использовать API Поиск (Майкрософт) для поиска сведений в сообщениях электронной почты, возврата сообщений, заданной по релевантности, и отрисовки выделенного опыта поиска.
 author: knightsu
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 1edc75cab2192fd000a29e565869e2534ecf4032540fbe3073b1b2dccdd39d76
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a4dadd4db51acf2e99e69d4d206526100187ba27
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165520"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103937"
 ---
 # <a name="use-the-microsoft-search-api-to-search-outlook-messages"></a>Используйте API Поиск (Майкрософт) для поиска Outlook сообщений
 

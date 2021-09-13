@@ -1,16 +1,16 @@
 ---
 title: тип ресурса informationalUrl
 description: Основные сведения о профиле приложения.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: e0c60cdde2d636321f3777b4b41bdf11bfe1da69d3303169f4fce1a3a71b3acc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c0f2fa7a71c4512336ada081bd65cd731b3d3165
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178391"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129889"
 ---
 # <a name="informationalurl-resource-type"></a>тип ресурса informationalUrl
 
@@ -22,10 +22,10 @@ ms.locfileid: "54178391"
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|logoUrl|String|CDN URL-адрес логотипа приложения только для чтения.|
-|marketingUrl|String| Ссылка на страницу маркетинга приложения. Пример: https://www.contoso.com/app/marketing |
-|privacyStatementUrl|String| Ссылка на заявление о конфиденциальности приложения. Пример: https://www.contoso.com/app/privacy |
-|supportUrl|String| Ссылка на страницу поддержки приложения. Пример: https://www.contoso.com/app/support |
+|logoUrl|Строка|CDN URL-адрес логотипа приложения только для чтения.|
+|marketingUrl|Строка| Ссылка на страницу маркетинга приложения. Пример: https://www.contoso.com/app/marketing |
+|privacyStatementUrl|Строка| Ссылка на заявление о конфиденциальности приложения. Пример: https://www.contoso.com/app/privacy |
+|supportUrl|Строка| Ссылка на страницу поддержки приложения. Пример: https://www.contoso.com/app/support |
 |termsOfServiceUrl|String| Ссылка на условия службы приложения. Пример: https://www.contoso.com/app/termsofservice |
 
 ## <a name="json-representation"></a>Представление JSON

@@ -1,17 +1,17 @@
 ---
-title: Запросить различия между Azure AD Graph Microsoft Graph
-description: Описывает, как Graph Microsoft отличаются от запросов Azure AD, что помогает перенести приложения в новую службу..
+title: Запросить различия между Azure Active Directory (Azure AD) Graph и Microsoft Graph
+description: Описывает, как Graph Microsoft отличаются от Azure Active Directory (Azure AD) Graph, что помогает перенести приложения в более новую службу..
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 7a127393a6f0daf7743384b95b30e7ed7a1a16ff97522c4cad3b7d2317599b0c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2b253ee68cd0de691d173ebdeefadbe084c5dbc0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129626"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078562"
 ---
-# <a name="request-differences-between-azure-ad-graph-and-microsoft-graph"></a>Запросить различия между Azure AD Graph Microsoft Graph
+# <a name="request-differences-between-azure-active-directory-azure-ad-graph-and-microsoft-graph"></a>Запросить различия между Azure Active Directory (Azure AD) Graph и Microsoft Graph
 
 Эта статья является *частью шага 1: просмотрите различия API* процесса переноса [приложений.](migrate-azure-ad-graph-planning-checklist.md)
 
@@ -100,7 +100,7 @@ https://graph.microsoft.com/v1.0/me/?$select=displayName,streetAddress,city,stat
 
 Чтобы узнать больше о:
 
-- Свойства по умолчанию для пользователя см. в [записи пользователей](/graph/api/resources/users?view=graph-rest-1.0)
+- Свойства по умолчанию для пользователя см. в [записи пользователей](/graph/api/resources/users)
 - Параметр `$select` и другие поддерживаемые параметры запроса ODATA см. в руб. Параметры использования запросов [для настройки ответов.](./query-parameters.md)
 - Эти и другие рекомендуемые оптимизации см. в [рекомендациях.](./best-practices-concept.md)
 

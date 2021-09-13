@@ -1,16 +1,16 @@
 ---
 title: Get claimsMappingPolicy
 description: Извлечение свойств и связей объекта claimsMappingPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: paulgarn
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 74ab898eaf2d8d2985df7ebb4ebdb4a76f8afa43
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 87d064127453d59ac1212b993305f3fa7a389ecb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050565"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016752"
 ---
 # <a name="get-claimsmappingpolicy"></a>Get claimsMappingPolicy
 
@@ -27,6 +27,9 @@ ms.locfileid: "52050565"
 | Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
+
+> [!IMPORTANT]
+> Этот метод имеет [известные проблемы разрешений и](/graph/known-issues#claims-mapping-policy) может требовать согласия на оба разрешения.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -90,7 +93,7 @@ GET https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/{id}
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -105,12 +108,15 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "definition": [
-    "definition-value"
-  ],
-  "displayName": "displayName-value",
-  "isOrganizationDefault": true,
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/claimsMappingPolicies/$entity",
+    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/8782712b-4368-4bc2-84d9-d47cd0146621/Microsoft.DirectoryServices.ClaimsMappingPolicy",
+    "id": "8782712b-4368-4bc2-84d9-d47cd0146621",
+    "deletedDateTime": null,
+    "definition": [
+        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\":[{\"Source\":\"user\",\"ID\":\"extensionattribute1\"},{\"Source\":\"transformation\",\"ID\":\"DataJoin\",\"TransformationId\":\"JoinTheData\",\"JwtClaimType\":\"JoinedData\"}],\"ClaimsTransformations\":[{\"ID\":\"JoinTheData\",\"TransformationMethod\":\"Join\",\"InputClaims\":[{\"ClaimTypeReferenceId\":\"extensionattribute1\",\"TransformationClaimType\":\"string1\"}], \"InputParameters\": [{\"ID\":\"string2\",\"Value\":\"sandbox\"},{\"ID\":\"separator\",\"Value\":\".\"}],\"OutputClaims\":[{\"ClaimTypeReferenceId\":\"DataJoin\",\"TransformationClaimType\":\"outputClaim\"}]}]}}"
+    ],
+    "displayName": "UpdateClaimsPolicy",
+    "isOrganizationDefault": false
 }
 ```
 

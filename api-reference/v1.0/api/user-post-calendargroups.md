@@ -2,15 +2,15 @@
 title: Создание объекта CalendarGroup
 description: С помощью этого API можно создать экземпляр CalendarGroup.
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c310cf484bc3dd5908dd23f5a262881a31dc098d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f737c405b8376b81875eacda83c5e3c1a590f625
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054303"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099219"
 ---
 # <a name="create-calendargroup"></a>Создание объекта CalendarGroup
 
@@ -84,7 +84,7 @@ Content-type: application/json
 
 Предоставьте в тексте запроса описание объекта [calendarGroup](../resources/calendargroup.md) в формате JSON.
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,16 +1,16 @@
 ---
 title: secureScoreControlProfile type
 description: Представляет безопасную оценку клиента на данные управления. По умолчанию он возвращает все элементы управления для клиента и может явно тянуть отдельные элементы управления.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: cfb05d70e098a1483827783d2e3e3755f3b9393c619133ea8a547b8d39bfe988
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 856ed0ca50a2aadb6945f5213de2f4b0f9ac286a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184489"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084106"
 ---
 # <a name="securescorecontrolprofile-resource-type"></a>secureScoreControlProfile type
 
@@ -35,21 +35,21 @@ ms.locfileid: "54184489"
 |id|String|GUID или уникальный идентификатор, созданный поставщиком. Только для чтения. Обязательный.|
 |azureTenantId|String|Строка GUID для ID клиента.|
 |actionType|String|Тип действия управления (Config, Review, Behaviour).|
-|actionUrl|String|URL-адрес, в котором можно использовать управление. |
-|controlCategory|String|Категория действия управления (Identity, Data, Device, Apps, Infrastructure).|
+|actionUrl|Строка|URL-адрес, в котором можно использовать управление. |
+|controlCategory|Строка|Категория действия управления (Identity, Data, Device, Apps, Infrastructure).|
 |title|String|Название управления.|
-|deprecated|Логический|Флаг, чтобы указать, амортизации управления.|
-|implementationCost|String|Затраты ресурсов на неопроверяющий контроль (низкий, умеренный, высокий).|
+|deprecated|Boolean|Флаг, чтобы указать, амортизации управления.|
+|implementationCost|Строка|Затраты ресурсов на неопроверяющий контроль (низкий, умеренный, высокий).|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения объекта профилей управления. Тип Timestamp представляет дату и время| 
 |maxScore|Двойное с плавающей точкой|максимальная достижимая оценка для управления.|
 |rank|Int32|Рейтинг управления стеком Майкрософт.|
-|исправление|String|Описание того, что поможет исправлению этого управления.|
-|remediationImpact|String|Описание влияния на пользователей исправлений.|
+|исправление|Строка|Описание того, что поможет исправлению этого управления.|
+|remediationImpact|Строка|Описание влияния на пользователей исправлений.|
 |service|String|Служба, которая владеет управлением (Exchange, Sharepoint, Azure AD).|
 |угрозы|Коллекция String|Список угроз, которые устраняет управление (accountBreach, dataDeletion, dataExfiltration, dataSpillage,
 elevationOfPrivilege, maliciousInsider, passwordCracking, phishingOrWhaling,spoofing).|
-|tier|String|Уровень управления (Core, Defense in Depth, Advanced.)   |
-|userImpact|String|Влияние пользователя на реализацию управления (низкий, умеренный, высокий).   |
+|tier|Строка|Уровень управления (Core, Defense in Depth, Advanced.)   |
+|userImpact|Строка|Влияние пользователя на реализацию управления (низкий, умеренный, высокий).   |
 |complianceInformation|[коллекция complianceInformation](complianceinformation.md)|Сбор сведений о соответствии требованиям, связанных с безопасным управлением счетами|
 |controlStateUpdates|[secureScoreControlStateUpdate](securescorecontrolstateupdate.md) collection|Флаг, чтобы указать, где у клиента отмечено управление (проигнорировано, thirdParty, рассмотрено) (поддерживает [обновление).](../api/securescorecontrolprofile-update.md)|
 |vendorInformation|[securityVendorInformation](securityvendorinformation.md)|Сложный тип, содержащий сведения о поставщике продукта и службы безопасности, поставщике и подпрограмме (например, vendor=Microsoft; provider=SecureScore). Обязательный.|

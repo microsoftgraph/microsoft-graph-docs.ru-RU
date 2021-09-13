@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса userIdentity
 description: В контексте журнала аудита Azure AD это представляет сведения пользователей, которые инициировали или пострадали от действий аудита.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dhanyahk
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 37fe5dce01b14735b791ed86954afc25a6ea4bcf369227c4b99868b2ecf36b29
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 621574365bc8c14508eb87dc55df60f1fd9a3f08
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230398"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136301"
 ---
 # <a name="useridentity-resource-type"></a>Тип ресурса userIdentity
 
@@ -22,7 +22,7 @@ ms.locfileid: "54230398"
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| displayName | String | Отображаемое имя удостоверения. Обратите внимание, что это может быть не всегда доступно или в курсе.    |
+| displayName | Строка | Отображаемое имя удостоверения. Обратите внимание, что это может быть не всегда доступно или в курсе.    |
 | id          | String | Уникальный идентификатор удостоверения.  |
 | ipAddress   | String| Указывает IP-адрес клиента, используемый пользователем для выполнения действия (только журнал аудита).|
 | userPrincipalName | String  | Атрибут userPrincipalName пользователя. |

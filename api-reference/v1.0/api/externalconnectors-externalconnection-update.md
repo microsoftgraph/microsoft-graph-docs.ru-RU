@@ -2,15 +2,15 @@
 title: Обновление externalConnection
 description: Обновление свойств объекта externalConnection.
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 80241a86ce79917bf437634dfd9d91fe23018984
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 5e7afbb9084aa6e9a62924bd3ec33a29eaad70e1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579958"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022600"
 ---
 # <a name="update-externalconnection"></a>Обновление externalConnection
 
@@ -25,7 +25,7 @@ ms.locfileid: "53579958"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | ExternalConnection.ReadWrite.OwnedBy |
+| Для приложений                            | ExternalConnection.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,7 +50,7 @@ PATCH /connections/{connectionsId}
 | Свойство      | Тип                                           | Описание |
 |:--------------|:-----------------------------------------------|:------------|
 | configuration | [microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md) | Указывает дополнительные ID-адреса приложений, которые разрешены для управления подключением и индексации контента в подключении. |
-| description   | String                                         | Описание подключения, отображаемого в Центр администрирования Microsoft 365. |
+| description   | Строка                                         | Описание подключения, отображаемого в Центр администрирования Microsoft 365. |
 | name          | String                                         | Отображает имя подключения, отображаемого в Центр администрирования Microsoft 365. Максимальная длина 128 символов. |
 
 

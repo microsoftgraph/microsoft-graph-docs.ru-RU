@@ -2,15 +2,15 @@
 title: тип ресурса windowsHelloForBusinessAuthenticationMethod
 description: Представление экземпляра Windows Hello для бизнеса, зарегистрированного для пользователя. Windows Hello для бизнеса — это метод проверки подлинности.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 9381749d42a61a8704a54434cf233dea8ad69240538de0022157656f522f1292
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 619733961a54f2b8489d3eacc40a6ca060921ab9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196469"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139466"
 ---
 # <a name="windowshelloforbusinessauthenticationmethod-resource-type"></a>тип ресурса windowsHelloForBusinessAuthenticationMethod
 
@@ -31,11 +31,11 @@ ms.locfileid: "54196469"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Дата и время регистрации этого Windows Hello для бизнеса.|
-|displayName|String|Имя устройства, на котором Windows Hello для бизнеса|
-|id|String|Уникальный идентификатор для этого метода проверки подлинности. Унаследованный от [проверки подлинностиMethod](../resources/authenticationmethod.md)|
+|displayName|Строка|Имя устройства, на котором Windows Hello для бизнеса|
+|id|Строка|Уникальный идентификатор для этого метода проверки подлинности. Унаследованный от [проверки подлинностиMethod](../resources/authenticationmethod.md)|
 |keyStrength|authenticationMethodKeyStrength|Ключевая сила этого Windows Hello для бизнеса. Возможные значения: `normal`, `weak`, `unknown`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |device;|[device](../resources/device.md)|Зарегистрированное устройство, на котором Windows Hello для бизнеса.|

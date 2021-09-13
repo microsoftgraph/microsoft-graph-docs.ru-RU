@@ -1,16 +1,16 @@
 ---
 title: 'orgContact: checkMemberGroups'
 description: Проверка участия в указанном списке групп. Возвращает из списка те групповые ИД, у которых организационный контакт имеет прямое или транзитное членство.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5bdafc5ecaf7e2f95017267bf35ff140994bfb1d
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: f57d181dd1d053ac08140d9fb72be169e24e976e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761362"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59119326"
 ---
 # <a name="orgcontact-checkmembergroups"></a>orgContact: checkMemberGroups
 
@@ -18,10 +18,10 @@ ms.locfileid: "50761362"
 
 Проверка участия в указанном списке групп. Возвращает из списка те групповые ИД, у которых организационный контакт [имеет](../resources/orgcontact.md) прямое или транзитное членство.
 
-В одном запросе можно проверять до 20 групп. Эта функция поддерживает Microsoft 365 и другие типы групп, которые предусмотрены в Azure Active Directory (Azure AD).
+В одном запросе можно проверять до 20 групп. Эта функция поддерживает Microsoft 365 и другие типы групп, Azure Active Directory Azure AD.
 
 >[!NOTE]
->Группы Microsoft 365 не могут содержать группы. Членство в группе Microsoft 365 всегда является прямым.
+>Microsoft 365 группы не могут содержать группы. Членство в группе Microsoft 365 всегда является прямым.
 
 
 ## <a name="permissions"></a>Разрешения
@@ -29,9 +29,9 @@ ms.locfileid: "50761362"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | OrgContact.Read.All и Group.Read.All, Directory.Read.All |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | OrgContact.Read.All и Group.Read.All, Directory.Read.All |
+|Делегированные (рабочая или учебная учетная запись) | OrgContact.Read.All и Group.Read.All, Directory.Read.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | OrgContact.Read.All и Group.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +50,7 @@ POST /contacts/{id}/checkMemberGroups
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|groupIds|Коллекция строк | Список групп, которые необходимо проверить. |
+|groupIds|Коллекция String | Список групп, которые необходимо проверить. |
 
 ## <a name="response"></a>Отклик
 

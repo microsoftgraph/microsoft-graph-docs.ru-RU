@@ -1,16 +1,16 @@
 ---
 title: тип ресурса namedLocation
 description: Это базовый класс, который представляет расположение Azure Active Directory имени. Именуемые расположения — это настраиваемые правила, определяемые расположениями сети, которые затем можно использовать в политике условного доступа.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 5083e526fcf1d9c4a6b844faa4584f7193144f0a813a53fa3e8446411e6d47f3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 01825465c415ef3a769812896dbc80105c50ed68
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152364"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084274"
 ---
 # <a name="namedlocation-resource-type"></a>тип ресурса namedLocation
 
@@ -32,10 +32,10 @@ ms.locfileid: "54152364"
 |:-------------|:------------|:------------|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет дату создания и время расположения с помощью формата ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
 |displayName|String|Понятное человеку имя расположения.|
-|id|String|Идентификатор объекта namedLocation. Только для чтения.|
+|id|Строка|Идентификатор объекта namedLocation. Только для чтения.|
 |modifiedDateTime|DateTimeOffset|Тип Timestamp представляет последнюю измененную дату и время расположения с помощью формата ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 
@@ -60,6 +60,11 @@ ms.locfileid: "54152364"
   "modifiedDateTime": "String (timestamp)"
 }
 ```
+
+## <a name="see-also"></a>См. также
+
++ [Что такое условный доступ?](/azure/active-directory/conditional-access/overview)
++ [Использование условия расположения в политике условного доступа](/azure/active-directory/conditional-access/location-condition)
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

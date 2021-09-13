@@ -2,15 +2,15 @@
 title: тип ресурса riskyUserHistoryItem
 description: рискованный элемент истории пользователей
 author: cloudhandler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: c83f35d9d8d187fd3a3bb64d727261431e3b13700735c4ad618f0a01b80fc1ce
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fa835aebf8ab5d1f4e5517ded131d7ac470927ae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189389"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108865"
 ---
 # <a name="riskyuserhistoryitem-resource-type"></a>тип ресурса riskyUserHistoryItem
 
@@ -31,9 +31,9 @@ ms.locfileid: "54189389"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |действие|[riskUserActivity](../resources/riskuseractivity.md)|Действие, связанное с изменением уровня риска пользователя.|
-|id|String|Унаследованный от [сущности](../resources/entity.md)|
+|id|Строка|Унаследованный от [сущности](../resources/entity.md)|
 |initiatedBy|String|ID субъекта, который делает операцию.|
-|isDeleted|Логический| Унаследованный от [riskyUser](../resources/riskyuser.md)|
+|isDeleted|Boolean| Унаследованный от [riskyUser](../resources/riskyuser.md)|
 |isProcessing|Логический| Унаследованный от [riskyUser](../resources/riskyuser.md)|
 |riskDetail|riskDetail|Унаследованный от [riskyUser](../resources/riskyuser.md). Возможные значения: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.|
 |riskLastUpdatedDateTime|DateTimeOffset|Унаследованный от [riskyUser](../resources/riskyuser.md)|
@@ -43,7 +43,7 @@ ms.locfileid: "54189389"
 |userId|String|ID пользователя.|
 |userPrincipalName|String|Рискованное основное имя пользователя. Унаследованный от [riskyUser](../resources/riskyuser.md)|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |история|[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) collection| Унаследованный от [riskyUser](../resources/riskyuser.md)|

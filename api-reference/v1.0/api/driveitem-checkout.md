@@ -1,22 +1,22 @@
 ---
 author: learafa
-description: Извлеките ресурс driveItem, чтобы другие пользователи не могли редактировать документ, а ваши изменения будут видны, пока они не будут возвращены.
-title: 'driveItem: Checkout'
-localization_priority: Normal
+description: Ознакомьтесь с ресурсом driveItem, чтобы предотвратить редактирование документа другими, а изменения не будут видны до тех пор, пока документ не будет зарегистрирован.
+title: 'driveItem: проверка'
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 60b9f5de40f925354a0513c1b467295bf24ccb85
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fd10f488467047e4d5df3048b86fd98b21158f26
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009900"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063463"
 ---
-# <a name="driveitem-checkout"></a>driveItem: Checkout
+# <a name="driveitem-checkout"></a>driveItem: проверка
 
 Пространство имен: microsoft.graph
 
-Извлеките ресурс **driveItem** , чтобы другие пользователи не могли редактировать документ, и не допускают изменения, пока не будет [возвращено](driveitem-checkin.md)задокументированное значение.
+Ознакомьтесь с **ресурсом driveItem,** чтобы не допустить редактирования документа другими и не допустить, чтобы изменения были видны до тех пор, пока документ не будет [зарегистрирован.](driveitem-checkin.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,13 +40,13 @@ POST /sites/{siteId}/drive/items/{itemId}/checkout
 POST /users/{userId}/drive/items/{itemId}/checkout
 ```
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха вызов API возвращает `204 No content` .
+В случае успешной работы возвращается вызов `204 No content` API.
 
 ## <a name="example"></a>Пример
 

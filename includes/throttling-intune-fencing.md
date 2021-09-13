@@ -1,14 +1,14 @@
 ---
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: 24c8e2481b93d4631cce3d2136f05d6ca833c65446c5a02523203ee846a6e642
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b0cb0945ae5f4573acac98d4af24e48124231b06
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196779"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035848"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
@@ -20,4 +20,7 @@ ms.locfileid: "54196779"
 | Любой | 2000 запросов за 20 секунд | 1000 запросов за 20 секунд |
 
 Указанные выше ограничения действуют для следующих ресурсов:  
-circularGeofenceManagementCondition, locationManagementCondition, managementCondition, managementConditionStatement, networkIPv4ConfigurationManagementCondition, networkIPv6ConfigurationManagementCondition, networkManagementCondition.
+
+| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> [circularGeofenceManagementCondition](/graph/api/resources/circulargeofencemanagementcondition) <li> [locationManagementCondition](/graph/api/resources/locationmanagementcondition) <li> [managementCondition](/graph/api/resources/managementcondition) <li> [managementConditionStatement](/graph/api/resources/managementconditionstatement) <li> [networkIPv4ConfigurationManagementCondition](/graph/api/resources/networkipv4configurationmanagementcondition) <li> [networkIPv6ConfigurationManagementCondition](/graph/api/resources/networkipv6configurationmanagementcondition) <li> [networkManagementCondition](/graph/api/resources/networkmanagementcondition) </ul> |

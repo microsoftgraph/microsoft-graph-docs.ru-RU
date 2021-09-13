@@ -1,16 +1,16 @@
 ---
 title: Получение educationClass
 description: Извлечение класса из системы
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 76393b5d6e80fc00a78c0f4344ee4d567c880afe
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 7fc653b85ed40f059ed46d2b858155f8db5efb87
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52475009"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114675"
 ---
 # <a name="get-educationclass"></a>Получение educationClass
 
@@ -18,14 +18,14 @@ ms.locfileid: "52475009"
 
 Получение курса из системы. Курс — это универсальная группа со специальным свойством, которое указывает системе на то, что эта группа представляет собой курс. Участники группы представляют учащихся; Администраторы групп представляют преподавателей в классе. Если вы используете делегированный маркер, пользователь увидит только курсы, участником которых является.
 
-## <a name="permissions"></a>Разрешения:
+## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EduRoster.ReadBasic  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается  |
-|Приложение | EduRoster.Read.All, EduRoster.ReadWrite.All | 
+|Для приложений | EduRoster.Read.All, EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

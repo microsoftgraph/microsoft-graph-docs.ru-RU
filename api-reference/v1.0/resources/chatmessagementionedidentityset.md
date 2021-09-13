@@ -2,15 +2,15 @@
 title: тип ресурса chatMessageMentionedIdentitySet
 description: Представляет ресурс, @mentioned в сообщении в чате или канале.
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: bf19b34143935f66ab835cd12a47881bc0b1b1b2aa1f960d1d35f4be3d2ed41a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9ca4ebbe6b5c508aa6ec2ea0480eae2f66634b76
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238155"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109411"
 ---
 # <a name="chatmessagementionedidentityset-resource-type"></a>тип ресурса chatMessageMentionedIdentitySet
 
@@ -29,7 +29,7 @@ ms.locfileid: "54238155"
 |device;|[identity](../resources/identity.md)|Наследуется от [identitySet](../resources/identityset.md). Не используется, так как не поддерживается для @mention устройств.|
 |пользователь|[identity](../resources/identity.md)|Наследуется от [identitySet](../resources/identityset.md). Если присутствует, представляет пользователя @mentioned в [сообщении](../resources/chatmessage.md).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

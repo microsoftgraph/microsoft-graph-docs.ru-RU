@@ -1,20 +1,20 @@
 ---
-title: Удаление Календарпермиссион
-description: Удаление Календарпермиссион.
-localization_priority: Normal
+title: Удаление calendarPermission
+description: Удаление calendarPermission.
+ms.localizationpriority: medium
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 893d4e1cd902f85581f6517a72f91ab65f162b53
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8b41476575c187d85bcd1d393886b5185cca2731
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044104"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050770"
 ---
-# <a name="delete-calendarpermission"></a>Удаление Календарпермиссион
+# <a name="delete-calendarpermission"></a>Удаление calendarPermission
 
-Удаление Календарпермиссион.
+Удаление calendarPermission.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,19 +27,19 @@ ms.locfileid: "48044104"
 |Для приложений | Calendars.ReadWrite |
 ## <a name="http-request"></a>HTTP-запрос
 
-Удаление указанных разрешений для основного календаря пользователя:
+Удаление указанных разрешений основного календаря пользователя:
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/{id}/calendar/calendarPermissions/{id}
 ```
 
-Удаление указанных разрешений для календаря группы:
+Удаление указанных разрешений группового календаря:
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}/calendar/calendarPermissions/{id}
 ```
 
-Удаление указанных разрешений для календаря пользователя, содержащего идентифицированное событие:
+Удалите указанные разрешения пользовательского календаря, который содержит указанное событие:
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/{id}/events/{id}/calendar/calendarPermissions/{id}
@@ -49,9 +49,9 @@ DELETE /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

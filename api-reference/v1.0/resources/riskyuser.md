@@ -2,15 +2,15 @@
 title: тип ресурса riskyUser
 description: элемент рискованных пользователей
 author: cloudhandler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d54cab6905142282890f60042802c9f8060330bbffb5923505b5bae1a6cd9b45
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8d01e80acf9f05061cf69998d6ba94c444b67dd1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235305"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078618"
 ---
 # <a name="riskyuser-resource-type"></a>тип ресурса riskyUser
 
@@ -36,17 +36,17 @@ ms.locfileid: "54235305"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный ID пользователя в опасности.|
-|isDeleted|Логическое|Указывает, удален ли пользователь. Возможные значения: `true`, `false`.|
-|isProcessing|Логическое|Указывает, обрабатывается ли приложением рискованное состояние пользователя.|
+|id|Строка|Уникальный ID пользователя в опасности.|
+|isDeleted|Логический|Указывает, удален ли пользователь. Возможные значения: `true`, `false`.|
+|isProcessing|Логический|Указывает, обрабатывается ли приложением рискованное состояние пользователя.|
 |riskDetail|riskDetail|Сведения об обнаружении риска. Возможные значения: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.|
-|riskLastUpdatedDateTime|DateTimeOffset|Дата и время последнего обновления рискованного пользователя.  Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
+|riskLastUpdatedDateTime|DateTimeOffset|Дата и время последнего обновления рискованного пользователя.  Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |riskLevel|riskLevel|Уровень обнаруженного рискованного пользователя. Возможные значения: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
 |riskState|riskState|Состояние риска пользователя. Возможные значения: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |userDisplayName|String|Рискованное имя отображения пользователя.|
 |userPrincipalName|String|Рискованное основное имя пользователя.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |история|[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) collection|   Действие, связанное с изменением уровня риска пользователя|

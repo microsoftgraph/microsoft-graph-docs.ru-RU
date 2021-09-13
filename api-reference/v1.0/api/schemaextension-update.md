@@ -1,16 +1,16 @@
 ---
 title: Обновление schemaExtension
 description: Обновление свойств в определении указанной схемыExtension.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 4e3fbf4c9acd3512031ca29dd502e225ece2f133
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 2cfe89bb5ece2c691976e21a81bcbe33680713a1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788054"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099280"
 ---
 # <a name="update-schemaextension"></a>Обновление schemaExtension
 
@@ -52,16 +52,16 @@ PATCH /schemaExtensions/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type   | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
 |description|String|Описание расширения схемы.|
-|properties|Коллекция [extensionSchemaProperty](../resources/extensionschemaproperty.md)|Коллекция типов и имен свойств, составляющих определение расширения схемы. Разрешены только изменения добавок. |
+|properties|Коллекция [extensionSchemaProperty](../resources/extensionschemaproperty.md)|Коллекция имен и типов свойств, составляющих определение расширения схемы. Разрешены только изменения добавок. |
 |status|String|Состояние жизненного цикла расширения схемы. Начальное состояние при создании — **InDevelopment**. Возможные переходы состояния из **InDevelopment** в **доступные и** **доступные** **для deprecated**.|
-|targetTypes|Коллекция String|Набор типов Microsoft Graph (поддерживающих расширения), к которым можно применить это расширение схемы.  Разрешены только изменения добавок.|
+|targetTypes|Коллекция String|Набор типов Microsoft Graph (поддерживающих расширения), к которым можно применить это расширение схемы.  Разрешены только изменения добавок.|
 
 ## <a name="response"></a>Отклик
 

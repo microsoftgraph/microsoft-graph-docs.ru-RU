@@ -1,16 +1,16 @@
 ---
 title: тип ресурса registryKeyState
 description: Содержит сведения об изменениях ключей реестра, связанных с оповещением, и о процессе изменения ключей реестра.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: fa801fb0cc3e89acbd753d13337b8186449bb20dd5c70bb9a9707b9ede64c932
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dff818881dbbaa2fe079a34850894251cb689bf3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211873"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044274"
 ---
 # <a name="registrykeystate-resource-type"></a>тип ресурса registryKeyState
 
@@ -24,16 +24,16 @@ ms.locfileid: "54211873"
 |:-------------|:------------|:------------|
 |hive|registryHive|[Ульй Windows реестра:](/windows/desktop/sysinfo/registry-hives) <ul><li>HKEY_CURRENT_CONFIG</li> <li>HKEY_CURRENT_USER</li> <li>HKEY_LOCAL_MACHINE\SAM</li> <li>HKEY_LOCAL_MACHINE\Security</li> <li>HKEY_LOCAL_MACHINE\Software</li> <li>HKEY_LOCAL_MACHINE\System</li> <li>HKEY_USERS \\ . По умолчанию.</li></ul> Возможные значения: `unknown`, `currentConfig`, `currentUser`, `localMachineSam`, `localMachineSecurity`, `localMachineSoftware`, `localMachineSystem`, `usersDefault`.|
 |ключа|String|Ключ текущего (то есть измененного) реестра (исключает HIVE).|
-|oldKey|String|Предыдущий (то есть перед измененным) ключом реестра (исключает HIVE).|
+|oldKey|Строка|Предыдущий (то есть перед измененным) ключом реестра (исключает HIVE).|
 |oldValueData|String|Предыдущие (то есть до изменения) данные ключевого значения реестра (содержимое).|
 |oldValueName|String|Предыдущее (то есть перед измененным) имя ключевого значения реестра.|
 |операция|registryOperation|Операция, изменивла имя и/или значение ключа реестра. Возможные значения: `unknown`, `create`, `modify`, `delete`.|
 |processId|Int32|Процесс ID (PID) процесса, который изменил ключ реестра (сведения о процессе будут отображаться в коллекции процессов оповещения).|
-|valueData|String|Текущие (то есть измененные) данные о ключевом значении реестра (содержимое).|
-|valueName|String|Имя ключевого значения текущего (то есть измененного) реестра|
+|valueData|Строка|Текущие (то есть измененные) данные о ключевом значении реестра (содержимое).|
+|valueName|Строка|Имя ключевого значения текущего (то есть измененного) реестра|
 |valueType|registryValueType|[Тип ключевого значения реестра](/windows/desktop/sysinfo/registry-value-types) <ul><li>REG_BINARY</li> <li>REG_DWORD</li> <li>REG_DWORD_LITTLE_ENDIAN</li> <li>REG_DWORD_BIG_ENDIAN</li><li>REG_EXPAND_SZ</li> <li>REG_LINK</li> <li>REG_MULTI_SZ</li> <li>REG_NONE</li> <li>REG_QWORD</li> <li>REG_QWORD_LITTLE_ENDIAN</li> <li>REG_SZ</li></ul> Возможные значения: `unknown`, `binary`, `dword`, `dwordLittleEndian`, `dwordBigEndian`, `expandSz`, `link`, `multiSz`, `none`, `qword`, `qwordlittleEndian`, `sz`.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

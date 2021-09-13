@@ -1,16 +1,16 @@
 ---
 title: 'calendar: getSchedule'
 description: Получение сведений о доступности коллекции пользователей, списков рассылки или ресурсов для определенного периода времени.
-localization_priority: Priority
+ms.localizationpriority: high
 author: tariq-sharif
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 267da79cf32f55de94b6d23fd87125c415973f03
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3a6d0fb91584b6158d354f4d880fafe4f6775ed0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054611"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125422"
 ---
 # <a name="calendar-getschedule"></a>calendar: getSchedule
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,15 +2,15 @@
 title: Тип ресурса recordOperation
 description: Этот тип ресурса содержит сведения, связанные с аудиозаписью.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: e655765044e7ed54746efda17e4e2e1c5129d0e6ca4bbf4a692d45817034f9f7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3611eb65f879ab6b70dbe65d9fb1769da6e5dd11
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202142"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094102"
 ---
 # <a name="recordoperation-resource-type"></a>Тип ресурса recordOperation
 
@@ -23,13 +23,13 @@ ms.locfileid: "54202142"
 | Свойство                       | Тип                        | Описание                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | clientContext                  | String                      | Уникальная строка Client Context. Максимальное ограничение — 256 шаров.                                                                                                                               |
-| id                             | String                      | ID операции сервера. Только для чтения.                                                                                              |
-| recordingAccessToken           | String                      | Маркер доступа, необходимый для получения записи.                                                                                              |
-| recordingLocation              | String                      | Расположение, в котором находится запись.                                                                                                      |
+| id                             | Строка                      | ID операции сервера. Только для чтения.                                                                                              |
+| recordingAccessToken           | Строка                      | Маркер доступа, необходимый для получения записи.                                                                                              |
+| recordingLocation              | Строка                      | Расположение, в котором находится запись.                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | Сведения о результате.  Только для чтения.                                                                                              |
 | status                         | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения.                                                |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

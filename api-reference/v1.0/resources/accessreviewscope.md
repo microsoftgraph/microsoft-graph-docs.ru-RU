@@ -2,15 +2,15 @@
 title: тип ресурса accessReviewScope
 description: Представляет объекты, которые необходимо просмотреть в обзоре доступа.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 99e13b08a08f81294588b1eceee09dca888b362f
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 9c3eb624f63240d98733d972c82df2591b43076c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58366619"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084694"
 ---
 # <a name="accessreviewscope-resource-type"></a>тип ресурса accessReviewScope
 

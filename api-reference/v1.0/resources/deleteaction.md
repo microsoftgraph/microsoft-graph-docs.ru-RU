@@ -2,15 +2,15 @@
 author: daspek
 title: тип ресурса deleteAction
 description: Объект deleteAction предоставляет сведения об удалении элемента.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: c57e9e430cb9f08ee4feca7345551a9a175c974c338d8a538c98a77b8ac5a32b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e11bf7783bc9c59fe5779c9605acbb4c9e1fb451
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178487"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104238"
 ---
 # <a name="deleteaction-resource-type"></a>тип ресурса deleteAction
 
@@ -27,7 +27,7 @@ ms.locfileid: "54178487"
 | Имя свойства | Тип   | Описание
 |:--------------|:-------|:----------------------------------------------------
 | name          | string | Имя элемента, который был удален.
-| objectType    | Строка | `File` или `Folder` , в зависимости от типа удаленного элемента.
+| objectType    | string | `File` или `Folder` , в зависимости от типа удаленного элемента.
 
 
 ## <a name="json-representation"></a>Представление JSON

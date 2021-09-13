@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: SharingLink
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Ресурс SharingLink группирует связанные ссылками элементы данных в единую структуру.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0f3af451817cbae0c4d4930b035792482e06afac07de77f1b4ff1c975d431a06
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5333d397af2627537017de1f90e193e6442fcac5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54237539"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032218"
 ---
 # <a name="sharinglink-resource-type"></a>Тип ресурса SharingLink
 
@@ -49,7 +49,7 @@ ms.locfileid: "54237539"
 | application | [identity][]  | Приложение, с которым сопоставлена ссылка.
 | type        | String        | Тип созданной ссылки.
 | scope       | String        | Область ссылки, представленная этим разрешением. Значение `anonymous` указывает, что ссылку может использовать любой пользователь, значение `organization` указывает, что ссылку могут использовать только пользователи, выполнившие вход в один и тот же клиент.
-| preventsDownload | Логическое       | Если это верно, пользователь может использовать эту ссылку только для просмотра элемента в Интернете и не может использовать его для скачивания содержимого элемента. Только для OneDrive для бизнеса и SharePoint.
+| preventsDownload | Boolean       | Если это верно, пользователь может использовать эту ссылку только для просмотра элемента в Интернете и не может использовать его для скачивания содержимого элемента. Только для OneDrive для бизнеса и SharePoint.
 | webHtml     | String        | Для ссылок `embed` это свойство содержит HTML-код элемента `<iframe>`, который внедряет элемент на веб-страницу.
 | webUrl      | String        | URL-адрес, который открывает элемент в браузере на веб-сайте OneDrive.
 
@@ -59,7 +59,7 @@ ms.locfileid: "54237539"
 
 В таблице ниже определены возможные значения свойства **type**.
 
-| Значение   | Роль    | Описание
+| Значение   | Role    | Описание
 |:--------|:--------|:---------------------------------------------------------
 | `view`  | `read`  | Ссылка для совместного доступа на просмотр, разрешающая доступ только для чтения.
 | `edit`  | `write` | Ссылка для редактирования, разрешающая доступ для чтения и записи.

@@ -2,16 +2,16 @@
 author: daspek
 ms.date: 09/12/2017
 title: columnLink
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Ресурс columnLink для объекта contentType связывает ресурс columnDefinition сайта с соответствующим типом контента.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c14edb1baf1b586e193f26df60f74d6d9b846aeae3f0eb2a4d6eb2422581313a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1ad2a7397c18ad8be17a5e5bb27c25ecc84dffa6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124523"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113723"
 ---
 # <a name="columnlink-resource-type"></a>Тип ресурса ColumnLink
 
@@ -40,8 +40,8 @@ ms.locfileid: "54124523"
 
 | Имя свойства | Тип   | Описание
 |:--------------|:-------|:----------------------------------------------------
-| **id**        | строка | Уникальный идентификатор столбца.
-| **name**      | строка | Имя столбца в этом типе контента.
+| **id**        | string | Уникальный идентификатор столбца.
+| **name**      | string | Имя столбца в этом типе контента.
 
 <!-- {
   "type": "#page.annotation",

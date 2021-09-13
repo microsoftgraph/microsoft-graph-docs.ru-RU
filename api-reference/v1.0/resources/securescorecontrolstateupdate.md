@@ -1,16 +1,16 @@
 ---
 title: secureScoreControlStateUpdate type
 description: Этот ресурс содержит историю состояния управления, обновляемого пользователем (состояния управления включают Default, Ignored, ThirdParty, Reviewed).
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 3268b5f537b8538173031b3367ff0e13d2873a906dfe01a5b6d6562070812d56
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1e896d1b63a9b6024b62e5d7ada95049e2f717f1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146365"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084092"
 ---
 #  <a name="securescorecontrolstateupdate-resource-type"></a>secureScoreControlStateUpdate type
 
@@ -25,7 +25,7 @@ ms.locfileid: "54146365"
 |assignedTo|String|Назначает управление пользователю, который будет принимать действие. |
 |comment|String|Предоставляет необязательный комментарий по поводу управления. |
 |state|String|Состояние управления, которое можно изменить с помощью команды PATCH (например, игнорируется, thirdParty). |
-|updatedBy|String|ID пользователя, обновившего состояние клиента. |
+|updatedBy|Строка|ID пользователя, обновившего состояние клиента. |
 |updatedDateTime|DateTimeOffset|Время обновления состояния управления. |
 
 ## <a name="json-representation"></a>Представление JSON

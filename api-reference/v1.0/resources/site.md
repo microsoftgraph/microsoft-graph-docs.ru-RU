@@ -2,15 +2,15 @@
 author: JeremyKelley
 title: Ресурс site
 description: Ресурс site предоставляет метаданные и связи для сайта SharePoint.
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 4d37a68ae495a783bbf0a25793a49ff8aefcb141
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: a7e6770fe6fb721772c12fdccb2420247ef4a658
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514548"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123050"
 ---
 # <a name="site-resource"></a>Ресурс site
 
@@ -82,7 +82,7 @@ ms.locfileid: "58514548"
 * `/sites/root`. Корневой сайт клиента.
 * `/groups/{group-id}/sites/root`. Сайт группы для ресурса group.
   
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь      | Тип                                             | Описание
 |:------------------|:-------------------------------------------------|:----------------------

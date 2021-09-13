@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса контракта
 description: Представляет существующее партнерство, которое клиент-партнер имеет с клиентом-клиентом.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 82ca68723aaefceaa2ed852bd663822bfb0830ab20a97d62e7b155f850671621
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f909b2b861f2b0c6da8f5f3c9a918599922fbac6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243597"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049550"
 ---
 # <a name="contract-resource-type"></a>Тип ресурса контракта
 
@@ -28,10 +28,10 @@ ms.locfileid: "54243597"
 ## <a name="properties"></a>Свойства
 | Свойство   | Тип | Описание |
 |:---------------|:--------|:----------|
-|contractType|String|Тип контракта. Возможные значения:  `SyndicationPartner` , `BreadthPartner` , `ResellerPartner` . Дополнительные сведения см. в [таблице ниже](#contracttype-values).|
+|contractType|Строка|Тип контракта. Возможные значения:  `SyndicationPartner` , `BreadthPartner` , `ResellerPartner` . Дополнительные сведения см. в [таблице ниже](#contracttype-values).|
 |customerId|Guid|Уникальный идентификатор клиента клиента, на который ссылается это партнерство. Соответствует свойству id ресурса организации клиента клиента. |
-|defaultDomainName|String|Копия доменного имени клиента по умолчанию. Копия будет выполнена после того, как будет установлено партнерство с клиентом. Он не обновляется автоматически, если меняется имя домена клиента по умолчанию.|
-|displayName|String|Копия отображаемого имени клиента. Копия будет выполнена после того, как будет установлено партнерство с клиентом. Оно не обновляется автоматически, если меняется имя отображения клиента.|
+|defaultDomainName|Строка|Копия доменного имени клиента по умолчанию. Копия будет выполнена после того, как будет установлено партнерство с клиентом. Он не обновляется автоматически, если меняется имя домена клиента по умолчанию.|
+|displayName|Строка|Копия отображаемого имени клиента. Копия будет выполнена после того, как будет установлено партнерство с клиентом. Оно не обновляется автоматически, если меняется имя отображения клиента.|
 |id|String| Уникальный идентификатор для партнерства. Клавиша, только для чтения |
 
 ### <a name="contracttype-values"></a>значения contractType

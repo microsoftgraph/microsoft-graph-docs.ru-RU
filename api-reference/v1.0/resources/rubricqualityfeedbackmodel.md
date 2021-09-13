@@ -1,16 +1,16 @@
 ---
 title: rubricQualityFeedbackModel type
 description: Обратная связь, связанная с определенным качеством образованияRubric.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: d5874873a9d1f4f2d12a998fa9ebd7b113489b7a46ae0bbf49585bc0ec227336
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0ca3a8877573751187f251b0a179498c44c0add8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141352"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117755"
 ---
 # <a name="rubricqualityfeedbackmodel-resource-type"></a>rubricQualityFeedbackModel type
 
@@ -23,7 +23,7 @@ ms.locfileid: "54141352"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |feedback|[itemBody](itembody.md)|Конкретные отзывы по одному качеству этой рубрики.|
-|qualityId|String|ID [рубрикQuality,](rubricquality.md) с чем связана эта обратная связь.|
+|qualityId|Строка|ID [рубрикQuality,](rubricquality.md) с чем связана эта обратная связь.|
 
 ## <a name="json-representation"></a>Представление JSON
 

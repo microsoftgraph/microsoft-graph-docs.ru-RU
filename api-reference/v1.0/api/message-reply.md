@@ -1,16 +1,16 @@
 ---
 title: 'message: reply'
 description: 'Ответ отправилю сообщения в формате JSON или MIME. '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c0b39d15f5c77fe141f4a75bb3beb7ac0852a255
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 044f5493b7a7c91f1be0a755261f3cc34af50aa2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52869921"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016108"
 ---
 # <a name="message-reply"></a>message: reply
 
@@ -50,8 +50,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/reply
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Обязательный |
-| Content-Type | string  | Характер данных в теле объекта. Обязательный <br/> Используйте `application/json` для объекта JSON и `text/plain` для содержимого MIME. |
+| Authorization  | string  | Bearer {token}. Обязательна |
+| Content-Type | string  | Характер данных в теле объекта. Обязательна <br/> Используйте `application/json` для объекта JSON и `text/plain` для содержимого MIME. |
 
 ## <a name="request-body"></a>Текст запроса
 При использовании формата JSON укажи объект JSON в теле запроса со следующими параметрами.

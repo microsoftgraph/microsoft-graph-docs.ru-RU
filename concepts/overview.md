@@ -2,14 +2,14 @@
 title: Обзор Microsoft Graph
 description: Microsoft Graph открывает доступ к данным и средствам искусственного интеллекта в Microsoft 365. С помощью единой модели программируемости Microsoft Graph можно работать с колоссальным объемом данных в Microsoft 365, Enterprise Mobility + Security и Windows 10.
 author: angelgolfer-ms
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 23c53876dc00260ab076094cf1ec849410badf53
-ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
+ms.openlocfilehash: 4f96d2d867fc7eaf02da50d500af5acf5bc30b42
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697382"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139074"
 ---
 # <a name="overview-of-microsoft-graph"></a>Обзор Microsoft Graph
 

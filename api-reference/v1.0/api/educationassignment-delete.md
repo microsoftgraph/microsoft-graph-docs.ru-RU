@@ -2,15 +2,15 @@
 title: Удаление educationAssignment
 description: Удаление существующего назначения. Удалить назначения могут только преподаватели в классе.
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 683ecb684765710d1072b94a8557863156a55a5e
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 2d679a13a3a90853e246616930c0dc5e834fe9f8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991432"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100220"
 ---
 # <a name="delete-educationassignment"></a>Удаление educationAssignment
 
@@ -28,7 +28,7 @@ ms.locfileid: "52991432"
 | :------------------------------------- | :------------------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                          |
-| Приложение                            | Не поддерживается.                                          |
+| Для приложений                            | Не поддерживается.                                          |
 
 ## <a name="http-request"></a>HTTP-запрос
 

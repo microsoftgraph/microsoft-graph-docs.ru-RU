@@ -2,15 +2,15 @@
 title: тип ресурса plannerBucket
 description: ) для задач в плане в Microsoft 365. Он содержится в планировщикеPlan и может иметь коллекцию plannerTasks.
 author: TarkanSevilmis
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: ee603f0c19c32e26abd4a18a17b3055815460930a63dcad306c00f8e2ba89f84
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 46360d413f676e6420f28b94b5ba91ec9237e681
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54154926"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129848"
 ---
 # <a name="plannerbucket-resource-type"></a>тип ресурса plannerBucket
 
@@ -24,21 +24,21 @@ ms.locfileid: "54154926"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта plannerBucket](../api/plannerbucket-get.md) | [plannerBucket](plannerbucket.md); |Чтение свойств и связей **объекта plannerBucket.**|
+|[Получение объекта plannerBucket](../api/plannerbucket-get.md) | [plannerBucket](plannerbucket.md) |Чтение свойств и связей **объекта plannerBucket.**|
 |[Перечисление plannerTasks](../api/plannerbucket-list-tasks.md) |Коллекция [plannerTask](plannertask.md)| Получение коллекции объектов **plannerTask**.|
-|[Создание](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md);   | Создание нового **объекта plannerBucket.** |
-|[Обновление](../api/plannerbucket-update.md) | [plannerBucket](plannerbucket.md);   |Объект **Update plannerBucket.** |
-|[Удаление](../api/plannerbucket-delete.md) | Нет |Удаление **объекта plannerBucket.** |
+|[Создание](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md)   | Создание нового **объекта plannerBucket.** |
+|[Обновление](../api/plannerbucket-update.md) | [plannerBucket](plannerbucket.md)   |Объект **Update plannerBucket.** |
+|[удаление](../api/plannerbucket-delete.md); | Нет |Удаление **объекта plannerBucket.** |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Только для чтения. ID из ведра. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
+|id|String| Только для чтения. ID из ведра. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
 |name|String|Имя сегмента.|
 |orderHint|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](planner-order-hint-format.md).|
 |planId|Строка|Запланируйте ID, к которому принадлежит ведро.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |tasks|Коллекция объектов [plannerTask](plannertask.md)| Только для чтения. Допускается значение null. Коллекция задач в ведре.|

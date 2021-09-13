@@ -2,14 +2,14 @@
 title: Поток данных API безопасности Microsoft Graph
 description: API безопасности Microsoft Graph объединяет в федерацию запросы ко всем поставщикам услуг в экосистеме безопасности Microsoft Graph. Она основана на согласии поставщика услуг безопасности, предоставляемом приложением, как показано на схеме ниже. Рабочий процесс получения согласия относится только к сторонним поставщикам услуг.
 author: preetikr
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: security
-ms.openlocfilehash: 79c7733c5e22aa25dcb31dca2558f07082d03681d795aa161c208f350040f690
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2741e302aab63d37fb289aef63d49850cb79ce39
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230256"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59093934"
 ---
 # <a name="microsoft-graph-security-api-data-flow"></a>Поток данных API безопасности Microsoft Graph
 

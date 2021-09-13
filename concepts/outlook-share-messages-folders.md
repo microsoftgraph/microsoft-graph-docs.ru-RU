@@ -2,14 +2,14 @@
 title: Получение сообщений Outlook в общей или делегированной папке
 description: Пользователи Outlook могут делиться почтовыми папками и предоставлять права на чтение, создание, изменение и удаление отдельных папок. Outlook также позволяет клиенту делегировать другому пользователю действовать от имени клиента.
 author: abheek-das
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 1687c6ca82c4188f4001e2cf4c472af9e39387f38746bb1e3726620f2af6859d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c2798e01d29badc1d3228692d02caca1ab89fa87
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54233660"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071751"
 ---
 # <a name="get-outlook-messages-in-a-shared-or-delegated-folder"></a>Получение сообщений Outlook в общей или делегированной папке
 

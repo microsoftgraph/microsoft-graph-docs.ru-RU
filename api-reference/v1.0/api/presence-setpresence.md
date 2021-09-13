@@ -2,15 +2,15 @@
 title: 'присутствие: setPresence'
 description: Установите сведения о присутствии для сеанса присутствия приложения пользователя.
 author: jsandoval-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 71ee6d63f2dfc8664705412c0bc257959094040e
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 599df25182e17bf031933eeb44474608bb5473c6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514035"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085226"
 ---
 # <a name="presence-setpresence"></a>присутствие: setPresence
 
@@ -41,7 +41,7 @@ ms.locfileid: "58514035"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Приложение                            | Presence.ReadWrite.All                      |
+| Для приложений                            | Presence.ReadWrite.All                      |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -60,9 +60,9 @@ POST /users/{userId}/presence/setPresence
 
 | Параметр          | Тип     | Описание                                                                                            |
 | :----------------- | :------- | :----------------------------------------------------------------------------------------------------- |
-| sessionId          | Строка   | ID сеанса присутствия приложения.                                                          |
-| availability       | Строка   | Сведения о базовом присутствии.                                                                         |
-| действие           | Строка   | Дополнительные сведения о доступности.                                                          |
+| sessionId          | string   | ID сеанса присутствия приложения.                                                          |
+| availability       | string   | Сведения о базовом присутствии.                                                                         |
+| действие           | string   | Дополнительные сведения о доступности.                                                          |
 | expirationDuration | duration | Срок действия сеанса присутствия приложения. Значение представлено в формате ISO 8601 для длительности.</p>Если это не предусмотрено, по умолчанию будет применяться 5-минутный срок действия. |
 
 > [!IMPORTANT]

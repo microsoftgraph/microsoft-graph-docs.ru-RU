@@ -1,16 +1,16 @@
 ---
 title: Присоединение educationRubric к educationAssignment
 description: Прикрепить существующий объект educationRubric к educationAssignment.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 51c2cf968f1064b3e8bbe8cb157cb95f8e46d959
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: a2b9b4428153c0f05bea254e8a41d2a2cf64a766
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52992502"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020100"
 ---
 # <a name="attach-educationrubric-to-an-assignment"></a>Присоединение educationRubric к назначению
 
@@ -93,7 +93,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
