@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getEmailActivityUserDetail'
 description: Узнайте, какие действия пользователи выполняли с электронной почтой.
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 6aa1fd3fb777f7f966d49b3604e5d7e2414dcf1281a4a0bf2068a23f207139b7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 351d0373f223444352226618a4c4f9b0ae8a4860
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54199783"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053387"
 ---
 # <a name="reportroot-getemailactivityuserdetail"></a>reportRoot: getEmailActivityUserDetail
 
@@ -58,7 +58,7 @@ GET /reports/getEmailActivityUserDetail(date={date_value})
 | Имя          | Описание                              |
 | :------------ | :--------------------------------------- |
 | Авторизация | Bearer {token}. Обязательный.                |
-| If-None-Match | Если этот заголовок запроса включен, а указанный eTag совпадает с текущим тегом файла, то будет возвращен код ответа `304 Not Modified`. Необязательное. |
+| If-None-Match | Если этот заголовок запроса включен, а указанный eTag совпадает с текущим тегом файла, то будет возвращен код отклика `304 Not Modified`. Необязательное. |
 
 ## <a name="response"></a>Отклик
 

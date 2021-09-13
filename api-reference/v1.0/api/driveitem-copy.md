@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Копирование файла или папки
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 description: Асинхронно создает копию элемента driveItem (включая все дочерние элементы) в новом родительском элементе или с новым именем.
 doc_type: apiPageType
-ms.openlocfilehash: 697f52cae983802af2a6c0a2bf39774873f82e46
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: bdbb412b01a2d8e3703f36e1929d376e660752c3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239599"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100255"
 ---
 # <a name="copy-a-driveitem"></a>Копирование ресурса DriveItem
 

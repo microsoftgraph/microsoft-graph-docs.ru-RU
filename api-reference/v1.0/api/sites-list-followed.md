@@ -2,15 +2,15 @@
 author: learafa
 description: Перечисление сайтов, отслеживаемых вошедшим пользователем.
 title: Перечисление отслеживаемых сайтов
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: SharePoint
 doc_type: apiPageType
-ms.openlocfilehash: 4520d428511601ad2fa17c4d993a6ab373566eb0
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 3213043cd020dafb13871b348f768ce4d0e2d212
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473681"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118901"
 ---
 # <a name="list-followed-sites"></a>Перечисление отслеживаемых сайтов
 

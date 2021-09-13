@@ -2,15 +2,15 @@
 title: Тип ресурса omaSetting
 description: Определение параметра OMA.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1b3fb5f064450dd2a8f9f0f2b5d79a52e5dfe884177f66c1a0daf13f22b41745
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9d1d030e060410c660eb03a14c00d3a4f5b441e1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54237994"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118329"
 ---
 # <a name="omasetting-resource-type"></a>Тип ресурса omaSetting
 
@@ -23,11 +23,11 @@ ms.locfileid: "54237994"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя.|
+|displayName|Строка|Отображаемое имя.|
 |description|String|Описание.|
 |omaUri|String|OMA.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -1,16 +1,16 @@
 ---
 title: Назначение типа ресурса homeRealmDiscoveryPolicy
-description: Назначьте homeRealmDiscoveryPolicy servicePrincipal.
-localization_priority: Normal
+description: Назначение homeRealmDiscoveryPolicy службеPrincipal.
+ms.localizationpriority: medium
 author: hpsin
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8a361503ad29fbaf4fae198b3c3843f07d0fc5fd
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 57d306bd880082c19cac409299120ad97f8a3284
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128703"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032501"
 ---
 # <a name="assign-homerealmdiscoverypolicy"></a>Назначение типа ресурса homeRealmDiscoveryPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "50128703"
 
 
 
-[Назначьте homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) [servicePrincipal.](../resources/serviceprincipal.md)
+Назначение [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) [службеPrincipal](../resources/serviceprincipal.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "50128703"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All и Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy.Read.All и Application.ReadWrite.OwnedBy, Policy.Read.All и Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.All |
+| Для приложений                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +47,7 @@ POST /servicePrincipals/{id}/homeRealmDiscoveryPolicies/$ref
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укавите идентификатор объекта [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) (используя свойство), который должен быть назначен основному `@odata.id` объекту-службе.
+В теле запроса укажи идентификатор объекта [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) (с помощью свойства), который должен быть назначен `@odata.id` директору службы.
 
 ## <a name="response"></a>Отклик
 

@@ -1,16 +1,16 @@
 ---
 title: signInStatus resource type
 description: Предоставляет состояние входного знака (Успешность или сбой) входного знака
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 350ed66245164b5745d7b6f0bc962ebab5b1b4e46e8d7fc6b9a5c45b17ccc3a1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 87181dd2ec911d2ebaa613dd4bc7ad4d46182a2d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54222674"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139585"
 ---
 # <a name="signinstatus-resource-type"></a>signInStatus resource type
 
@@ -22,7 +22,7 @@ ms.locfileid: "54222674"
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|additionalDetails|String|Предоставляет дополнительные сведения о действии для входов|
+|additionalDetails|Строка|Предоставляет дополнительные сведения о действии для входов|
 |errorCode|Int32|Предоставляет код ошибки в 5-6 цифр, созданный во время сбоя при входе. Ознакомьтесь со [списком кодов и сообщений об ошибках.](/azure/active-directory/active-directory-reporting-activity-sign-ins-errors)|
 |failureReason|String|Предоставляет сообщение об ошибке или причину сбоя для соответствующей активности регистрации. Ознакомьтесь со [списком кодов и сообщений об ошибках.](/azure/active-directory/active-directory-reporting-activity-sign-ins-errors)|
 

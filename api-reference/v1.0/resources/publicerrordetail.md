@@ -2,15 +2,15 @@
 title: тип ресурса publicErrorDetail
 description: Представляет сведения об ошибке.
 author: AkJo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 123655f1f75d9d05ec95d1e9e0c15815c341aa11fffb72c6f59c34bf1572bd8b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3965fd862fee8e4e571055bdc37ade80909c9e97
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54138348"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104070"
 ---
 # <a name="publicerrordetail-resource-type"></a>тип ресурса publicErrorDetail
 
@@ -23,9 +23,9 @@ ms.locfileid: "54138348"
 |:---|:---|:---|
 |code|String|Код ошибки.|
 |message|String|Сообщение об ошибке.|
-|target|String|Целевое значение ошибки.|
+|target|Строка|Целевое значение ошибки.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

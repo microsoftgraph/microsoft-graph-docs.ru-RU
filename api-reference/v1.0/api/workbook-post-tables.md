@@ -2,15 +2,15 @@
 title: Создание таблицы
 description: С помощью этого API можно создать объект Table.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: ab4674681587033226cad5315668bd62c5ad8a9d819f8b0f5f4cc227316ce6c4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8cfd8b0d3af851519239f17847ea854093837dfe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54158000"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118780"
 ---
 # <a name="create-table"></a>Создание таблицы
 

@@ -1,16 +1,16 @@
 ---
 title: 'message: createReplyAll'
 description: Создайте черновик для ответа отправителю и всем получателям указанного сообщения в формате JSON или MIME.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2d1b3970995db5e3d678e0e1b6daeef6a72ee40b
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 010376e64e118e417b1ac8530afa6ccb6df8e739
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870418"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110279"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
@@ -52,7 +52,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyA
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание| 
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Обязательный |
+| Authorization  | string  | Bearer {token}. Обязательна |
 | Content-Type | string  | Характер данных в теле объекта. <br/> Используйте `application/json` для объекта JSON и `text/plain` для содержимого MIME. |
 
 ## <a name="request-body"></a>Текст запроса

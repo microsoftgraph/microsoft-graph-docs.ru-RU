@@ -1,17 +1,17 @@
 ---
 author: JeremyKelley
 ms.date: 09/10/2017
-title: Доступ к общим элементами
-localization_priority: Normal
+title: Доступ к общим пунктам
+ms.localizationpriority: medium
 description: Вы можете получить доступ к общим элементам DriveItem или коллекции общих элементов, используя параметр shareId или URL-адрес для совместного доступа.
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 1685a402df438155ce377f6493e6ba1766b10914
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: bdb3cad31818423117c13f20f89067471fc16c1f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238732"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085114"
 ---
 # <a name="accessing-shared-driveitems"></a>Доступ к общим элементам DriveItem
 
@@ -65,16 +65,16 @@ string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+'
 
 | Имя       | Тип   | Описание                                                    |
 |:-----------|:-------|:---------------------------------------------------------------|
-| **Prefer** | string | Необязательный параметр. Установите одно из `prefer` значений, задокументированных ниже.  |
+| **Prefer** | string | Необязательно. Установите одно из `prefer` значений, задокументированных ниже.  |
 
-### <a name="prefer-header-values"></a>Предпочитать значения в загонах
+### <a name="prefer-header-values"></a>Предпочитать значения загона
 
 | Имя                          | Описание                                                                                             |
 |:------------------------------|:--------------------------------------------------------------------------------------------------------|
-| redeemSharingLink             | Если **shareIdOrEncodedSharingUrl** является ссылкой для общего доступа, предоставление вызываемой вызываемой ссылке длительного доступа к элементу    |
-| redeemSharingLinkIfNecessary  | То же, что и redeemSharingLink, но доступ предоставляется только в течение этого запроса |
+| redeemSharingLink             | Если **shareIdOrEncodedSharingUrl** является ссылкой общего доступа, предоставить звониму надежный доступ к элементу.    |
+| redeemSharingLinkIfNecessary  | То же, что и redeemSharingLink, но доступ гарантируется только на время этого запроса. |
 
-RedeemSharingLink должен считаться эквивалентом переходу вызывателя по ссылке для общего доступа в браузере (принимая жест общего доступа), тогда как redeemSharingLinkIfNecessary предназначен для сценариев, в которых целью является просто обзор метаданных ссылки.
+redeemSharingLink следует считать эквивалентным переходу вызываемого пользователя на ссылку общего доступа к браузеру (принимая жест общего доступа), в то время как redeemSharingLinkIfNecessary предназначен для сценариев, в которых цель состоит в том, чтобы просто заглянуть в метаданные ссылки.
 
 ## <a name="response"></a>Ответ
 
@@ -252,7 +252,7 @@ Content-Type: application/json
 
 ## <a name="error-responses"></a>Ответы с ошибками
 
-Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
+Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Отклики ошибок][error-response].
 
 ## <a name="remarks"></a>Замечания
 

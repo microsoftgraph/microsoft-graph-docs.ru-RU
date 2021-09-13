@@ -2,15 +2,15 @@
 title: тип ресурса apiAuthenticationConfigurationBase
 description: Представляет базовый тип конфигурации проверки подлинности, используемой для вызова API.
 author: nickgmicrosoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: c897bc970fc4527a03593a72e1ea760ab78fc696a75180e0e718a81ab90455ee
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3e3086ac90eabc15527a84f9c215659def06b7ea
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54150047"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094480"
 ---
 # <a name="apiauthenticationconfigurationbase-resource-type"></a>тип ресурса apiAuthenticationConfigurationBase
 
@@ -28,7 +28,7 @@ ms.locfileid: "54150047"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

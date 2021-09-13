@@ -2,15 +2,15 @@
 title: тип ресурса domainState
 description: Представляет состояние асинхронных операций, запланированных в домене.
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 3d2140d0b0067ec576433b442446472d0a6af80fd4152131ea79d384a8d623c0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d69beb993de7bc6e87d5945e321b89e1007c6910
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218802"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123729"
 ---
 # <a name="domainstate-resource-type"></a>тип ресурса domainState
 
@@ -23,7 +23,7 @@ ms.locfileid: "54218802"
 | Свойство   | Тип | Описание |
 |:---------------|:--------|:----------|
 | lastActionDateTime | DateTimeOffset | Timestamp для последнего действия. Значение обновляется, когда запланирована операция, начинается асинхронная задача и когда операция завершается. |
-| операция | String | Тип асинхронной операции. Значения могут быть *ForceDelete или* *Проверка* |
+| операция | Строка | Тип асинхронной операции. Значения могут быть *ForceDelete или* *Проверка* |
 | status | String | Текущее состояние операции. <br> *Запланированный* . Операция была запланирована, но не началась. <br> *InProgress* — задача запущена и находится в процессе выполнения. <br> *Failed* - Operation has failed. |
 
 ## <a name="json-representation"></a>Представление JSON

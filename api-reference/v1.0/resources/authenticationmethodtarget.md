@@ -2,15 +2,15 @@
 title: тип ресурса authenticationMethodTarget
 description: Коллекция пользователей или групп, включенная для использования метода проверки подлинности в рамках политики метода проверки подлинности.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ff64481140678055f8bab28f2ff4aa443689b11eec8a14d17648cf800a179996
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: efb7371c68a7e9deee9e176ebf2a69e70930e4e9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124565"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126956"
 ---
 # <a name="authenticationmethodtarget-resource-type"></a>тип ресурса authenticationMethodTarget
 
@@ -23,11 +23,11 @@ ms.locfileid: "54124565"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Объект Id пользователя или группы Azure AD.|
-|isRegistrationRequired|Логическое|Определяет, принудит ли пользователь зарегистрировать метод проверки подлинности.|
+|isRegistrationRequired|Логический|Определяет, принудит ли пользователь зарегистрировать метод проверки подлинности.|
 |targetType|authenticationMethodTargetType|Возможные значения: `user`, `group`.|
-|useForSignIn|Логическое|Определяет, можно ли использовать метод проверки подлинности для входов в Azure AD.|
+|useForSignIn|Логический|Определяет, можно ли использовать метод проверки подлинности для входов в Azure AD.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

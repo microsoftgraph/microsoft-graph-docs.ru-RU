@@ -1,16 +1,16 @@
 ---
 title: Удаление b2xIdentityUserFlow
 description: Удаление объекта b2xIdentityUserFlow.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 48ef3fcceb0e98b71c1beaaee2d552bec8549d26
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: dcff39771dc6cff7e9fb6ffc67f60a806a456c79
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51922025"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090805"
 ---
 # <a name="delete-b2xidentityuserflow"></a>Удаление b2xIdentityUserFlow
 
@@ -31,7 +31,7 @@ ms.locfileid: "51922025"
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока внешних пользователей удостоверений
+* Администратор внешних Flow удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 

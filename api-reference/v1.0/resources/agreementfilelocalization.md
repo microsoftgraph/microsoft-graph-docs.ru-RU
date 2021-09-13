@@ -1,16 +1,16 @@
 ---
 title: тип ресурса agreementFileLocalization
 description: Представляет локализованный файл политики соглашения об использовании в Azure Active Directory Azure AD.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 6a1e68914d6e8d12d6777505036a0132ceac151685c5a5723d0581434cbe7b0b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 065067eea31f5b1a8ab05436d2ab98c9f3c4efb8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169692"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089922"
 ---
 # <a name="agreementfilelocalization-resource-type"></a>тип ресурса agreementFileLocalization
 
@@ -23,11 +23,11 @@ ms.locfileid: "54169692"
 |:-------------|:------------|:------------|
 |fileData|[agreementFileData](agreementfiledata.md)|Данные, которые представляют условия использования документа PDF. Только для чтения.|
 |fileName|String|Имя файла соглашения (например, TOU.pdf). Только для чтения.|
-|id|String|Идентификатор объекта agreementFileLocalization. Только для чтения.|
+|id|Строка|Идентификатор объекта agreementFileLocalization. Только для чтения.|
 |isDefault|Boolean| Если ни один из языков не соответствует предпочтениям клиента, указывает, что это файл соглашения по умолчанию. Если ни один из файлов не помечен как по умолчанию, первый из них рассматривается как по умолчанию. Только для чтения.|
 |language|String|Язык файла соглашения в формате languagecode2-country/regioncode2. languagecode2 — это код из двух букв более низкого уровня, полученный из ISO 639-1. country/regioncode2 является производным от ISO 3166 и обычно состоит из двух верхних букв или языкового тега BCP-47 (например, en-US). Только для чтения.|
-|isMajorVersion|Логический|Указывает, является ли файл соглашения основным обновлением версии. Обновления основных версий недействительны для принятия соглашения на соответствующем языке. |
-|createdDateTime|DateTimeOffset|Время даты, представляющее момент создания файла. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z".|
+|isMajorVersion|Boolean|Указывает, является ли файл соглашения основным обновлением версии. Обновления основных версий недействительны для принятия соглашения на соответствующем языке. |
+|createdDateTime|DateTimeOffset|Время даты, представляющее момент создания файла. Тип Timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, полночь UTC 1 января 2014 `2014-01-01T00:00:00Z` г. — это .|
 |displayName|String|Локализованное отображение имени файла политики соглашения. Локализованное имя отображения отображается конечным пользователям, которые просматривают соглашение.
 
 ## <a name="json-representation"></a>Представление JSON

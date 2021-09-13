@@ -1,16 +1,16 @@
 ---
 title: 'user: delta'
 description: Создавайте, обновляйте или удаляйте пользователей без необходимости полного чтения всей коллекции пользователей.
-localization_priority: Priority
+ms.localizationpriority: high
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 732904ae00f35944175b491e879f439dbec883c8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f213e26c3a7d145c59c45b825671cddf71b00f69
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055710"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090035"
 ---
 # <a name="user-delta"></a>user: delta
 

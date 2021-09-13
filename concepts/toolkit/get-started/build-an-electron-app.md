@@ -1,14 +1,14 @@
 ---
 title: Использование microsoft Graph набор средств с электронным
 description: Начало работы с помощью microsoft Graph набор средств в приложении Electron.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: amrutha95
-ms.openlocfilehash: 4c415d7d99981f3bd3e10180d46a142e5f80231ed7d5222a64faaf7942a05044
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d7bb3f9d31dbe399b52e33ab3eed086c1f161324
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54157902"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089258"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-electron"></a>Использование microsoft Graph набор средств с электронным
 

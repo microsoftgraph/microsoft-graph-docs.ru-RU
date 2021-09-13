@@ -1,16 +1,16 @@
 ---
 title: тип ресурса conditionalAccessPolicy
 description: Представляет политику Azure Active Directory доступа. Политики условного доступа — это настраиваемые правила, определяемые сценарием доступа.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 1d7e21da89155fa174e4396b4807b2cde4f0b2bf18ae0e2bc19fbfcdf819279f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7d5818f4bca8aec154eaafa8288df548b530644d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231875"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109257"
 ---
 # <a name="conditionalaccesspolicy-resource-type"></a>тип ресурса conditionalAccessPolicy
 
@@ -32,11 +32,11 @@ ms.locfileid: "54231875"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|conditions|[conditionalAccessConditionSet](conditionalaccessconditionset.md)| Указывает правила, которые необходимо соблюдать для применения политики. Обязательный элемент. |
+|conditions|[conditionalAccessConditionSet](conditionalaccessconditionset.md)| Указывает правила, которые необходимо соблюдать для применения политики. Обязательный. |
 |createdDateTime|DateTimeOffset| Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Readonly. |
 |displayName|String| Указывает имя отображения объекта conditionalAccessPolicy. |
 |grantControls|[conditionalAccessGrantControls](conditionalaccessgrantcontrols.md)| Указывает элементы управления грантами, которые необходимо выполнить для выполнения политики. |
-|id|String| Указывает идентификатор объекта conditionalAccessPolicy. Только для чтения.|
+|id|Строка| Указывает идентификатор объекта conditionalAccessPolicy. Только для чтения.|
 |modifiedDateTime| DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Readonly. |
 |sessionControls|[conditionalAccessSessionControls](conditionalaccesssessioncontrols.md)| Указывает элементы управления сеансами, которые применяются после регистрации. |
 |state|conditionalAccessPolicyState| Указывает состояние объекта conditionalAccessPolicy. Возможные значения: `enabled`, `disabled`, `enabledForReportingButNotEnforced`. Обязательный. |

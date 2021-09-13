@@ -1,27 +1,27 @@
 ---
-title: Перенос приложений Azure AD Graph .NET в Microsoft Graph
-description: Описывает, как перенести приложения API Azure Active Directory (Azure AD) в API Microsoft Graph API.
+title: Перенос Azure Active Directory (Azure AD) Graph приложений .NET в Microsoft Graph
+description: Описывает, как перенести приложения Azure Active Directory (Azure AD) Graph API в API Microsoft Graph API.
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: f4c85cd926ee75b7442ece4f6b113d63eb525937bc51550601d56dd41f83fc9d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b774b14ffc480ca889392c31b2090c7578dfa207
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163499"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59135965"
 ---
 # <a name="migrate-net-client-library-use-to-microsoft-graph"></a>Перенос использования клиентской библиотеки .NET в Microsoft Graph
 
 Эта статья является *частью шага 3: просмотрите* сведения о процессе переноса [приложений.](migrate-azure-ad-graph-planning-checklist.md)
 
-Если ваше приложение в настоящее время использует клиентскую библиотеку Azure AD Graph, переключиться на клиентскую библиотеку [Microsoft Graph .NET.](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
+Если ваше приложение в настоящее время использует Azure Active Directory (Azure AD) Graph клиентской библиотеке, переключиться на клиентскую библиотеку [Microsoft Graph .NET.](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
 
 >ПРИМЕЧАНИЕ. Клиентская библиотека Microsoft Graph .NET поддерживается только для платформа .NET Framework 4.5 и .NET Standard 1.1.  Однако для получения последних сведений о поддержке обратитесь в клиентскую библиотеку Microsoft Graph .NET.
 
 Здесь мы посмотрим на некоторые общие действия по переносу в клиентскую библиотеку Microsoft Graph .NET:
 
-- Создание клиента microsoft Graph с помощью маркера доступа (который можно приобрести с помощью ADAL или MSAL)
+- Создание клиента microsoft Graph с помощью маркера доступа (который можно приобрести с помощью библиотеки проверки подлинности Azure Active Directory (ADAL) или Microsoft Authentication Library (MSAL))
 - Как сформулировать запросы
 - Использование строителей запросов
 - Обработка коллекций и paging  

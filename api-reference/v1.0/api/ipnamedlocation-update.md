@@ -1,16 +1,16 @@
 ---
 title: Обновление ipnamedlocation
 description: Обновление свойств объекта ipNamedLocation.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: aaaacbda839d3296be0621b3294b85ddbe3c63b4
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 527b44473920cf35880664a09ac2bee0eb1e89e1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786673"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105050"
 ---
 # <a name="update-ipnamedlocation"></a>Обновление ipNamedlocation
 
@@ -47,11 +47,13 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
+Необходимо указать **@odata.type** как `#microsoft.graph.ipNamedLocation` .
+
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|String|Понятное человеку имя расположения.|
+|displayName|Строка|Понятное человеку имя расположения.|
 |ipRanges|Коллекция объектов [ipRange](../resources/iprange.md)|Список диапазонов IP-адресов в формате CIDR IPv4 (1.2.3.4/32) или любого допустимого формата IPv6 от IETF RFC5962.|
-|isTrusted|Boolean|Значение, если `true` это расположение явно доверяется.|
+|isTrusted|Логический|Значение, если `true` это расположение явно доверяется.|
 
 ## <a name="response"></a>Отклик
 
@@ -108,7 +110,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

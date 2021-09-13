@@ -2,15 +2,15 @@
 title: тип ресурса externalItem
 description: Элемент, добавленный к подключению microsoft Graph.
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 74fbabcb749be4e388f3fe335b57857e76a73616885558700779ccd52c0c929e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e50a494898faa377123e96238dee0bf1109d798d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212090"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123449"
 ---
 # <a name="externalitem-resource-type"></a>тип ресурса externalItem
 
@@ -29,9 +29,9 @@ ms.locfileid: "54212090"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|acl|[коллекция microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md)|Массив записей управления доступом. Каждая запись указывает доступ, предоставленный пользователю или группе. Обязательный элемент.|
-|содержимое|[microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md)|Простое текстовое представление содержимого элемента. Текст в этом свойстве индексироваться с полным текстом. Необязательно.|
-|id|String|Уникальный ID элемента, предоставленного разработчиком, в пределах элемента, содержащего [externalConnection.](externalconnectors-externalconnection.md) Должно быть альфа-числом и не более 128 символов. Обязательный элемент.|
+|acl|[коллекция microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md)|Массив записей управления доступом. Каждая запись указывает доступ, предоставленный пользователю или группе. Обязательное.|
+|содержимое|[microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md)|Простое текстовое представление содержимого элемента. Текст в этом свойстве индексироваться с полным текстом. Необязательное.|
+|id|Строка|Уникальный ID элемента, предоставленного разработчиком, в пределах элемента, содержащего [externalConnection.](externalconnectors-externalconnection.md) Должно быть альфа-числом и не более 128 символов. Обязательный.|
 |properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|Пакет свойств со свойствами элемента. Свойства должны соответствовать [схеме,](externalconnectors-schema.md) определенной для [externalConnection.](externalconnectors-externalconnection.md) Обязательный.|
 
 ## <a name="relationships"></a>Связи

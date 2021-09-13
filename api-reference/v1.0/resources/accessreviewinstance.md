@@ -2,15 +2,15 @@
 title: тип ресурсов accessReviewInstance
 description: Представляет собой повторение `accessReviewScheduleDefinition` .
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 67b1357c842060cbec260949106dbd3d75a923ea
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: f77e5ae6d16b96fff2586b5b2bd920d01737196d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262419"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59025673"
 ---
 # <a name="accessreviewinstance-resource-type"></a>тип ресурсов accessReviewInstance
 

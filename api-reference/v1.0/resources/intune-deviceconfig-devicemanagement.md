@@ -2,15 +2,15 @@
 title: Тип ресурса deviceManagement
 description: Одноэлементный объект, служащий контейнером для всех функций управления устройствами.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 217bf13f98470ef1fe1b0dbb08a9efa3579b562db2546fc96f7ac993e88b730a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b8b4373dbbb4679b70c80bd2661b0a11b8dbfc2c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175111"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128286"
 ---
 # <a name="devicemanagement-resource-type"></a>Тип ресурса deviceManagement
 
@@ -29,11 +29,11 @@ ms.locfileid: "54175111"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор.|
+|id|Строка|Уникальный идентификатор.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Параметры уровня учетной записи.|
 |intuneAccountId|Guid|Id учетной записи Intune для данного клиента|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |deviceConfigurations|Коллекция [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|Конфигурации устройств.|

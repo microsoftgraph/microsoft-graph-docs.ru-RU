@@ -1,16 +1,16 @@
 ---
 title: Get conditionalAccessPolicy
 description: Извлечение свойств и связей объекта conditionalAccessPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ea30ec58da82c43e6aaa567aba0fe28c754c2f62
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 564af0b33def93e9103ee2205537e9327b43719c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039883"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029642"
 ---
 # <a name="get-conditionalaccesspolicy"></a>Get conditionalAccessPolicy
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies/{id}
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

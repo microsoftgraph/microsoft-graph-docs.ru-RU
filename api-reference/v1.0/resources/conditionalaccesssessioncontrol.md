@@ -1,16 +1,16 @@
 ---
 title: тип ресурса conditionalAccessSessionControl
 description: Базовый тип управления сеансом.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 5c3b3ccd1829abeba85ee12661224b2866541a08bbc5dc29cfcb27ea7fb7aac2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8c32bdd34baeeb6b034c24795e8ddb87d3dd5bb6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160095"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084596"
 ---
 # <a name="conditionalaccesssessioncontrol-resource-type"></a>тип ресурса conditionalAccessSessionControl
 
@@ -24,7 +24,7 @@ ms.locfileid: "54160095"
 |:-------------|:------------|:------------|
 |isEnabled     |Boolean      | Указывает, включено ли управление сеансом. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

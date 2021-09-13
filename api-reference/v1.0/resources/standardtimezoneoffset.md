@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса standardTimeZoneOffset
 description: Определяет, когда в часовом поясе осуществляется переход с летнего времени на стандартное.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 2e5675a4b63a4842b8470f0631a1819e5dd63570a9a2252448b52abb883b8de4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 343c178c9e124a06edf7cce503bde5cffd2a7d27
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180462"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136336"
 ---
 # <a name="standardtimezoneoffset-resource-type"></a>Тип ресурса standardTimeZoneOffset
 

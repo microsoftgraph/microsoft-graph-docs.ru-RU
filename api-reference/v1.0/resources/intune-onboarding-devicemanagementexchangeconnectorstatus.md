@@ -2,15 +2,15 @@
 title: тип enum deviceManagementExchangeConnectorStatus
 description: Текущее состояние Exchange соединители.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ec4baa60b897fa70b089520bf991cd9451ffda3615188c2425d1850400531ab6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eb9d4e87dacd0fe31c18e04468ef3a833e86ccfa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175006"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089419"
 ---
 # <a name="devicemanagementexchangeconnectorstatus-enum-type"></a>тип enum deviceManagementExchangeConnectorStatus
 
@@ -23,7 +23,7 @@ ms.locfileid: "54175006"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|нет|0|Нет соединитетеля.|
+|Нет|0|Нет соединитетеля.|
 |connectionPending|1|Ожидание подключения к Exchange среды.|
 |подключено|2|Подключение к Exchange среде|
 |отключено|3|Отключено от Exchange среды|

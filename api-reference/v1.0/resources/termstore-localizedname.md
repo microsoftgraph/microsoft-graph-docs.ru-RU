@@ -2,15 +2,15 @@
 title: тип ресурса localizedName
 description: Представляет локализованное имя, используемого в магазине терминов, которое определяет имя на локализованном языке.
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: resourcePageType
-ms.openlocfilehash: eb515cea31fd092d2040edddcff806355829ab79
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: e4ef39aff45906c70195a92dfe6c4cabe87385e8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58515050"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128048"
 ---
 # <a name="localizedname-resource-type"></a>тип ресурса localizedName
 
@@ -21,10 +21,10 @@ ms.locfileid: "58515050"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|LanguageTag|Строка|Тег языка для метки.|
+|LanguageTag|String|Тег языка для метки.|
 |name|String|Имя на локализованных языках.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON
@@ -44,7 +44,7 @@ ms.locfileid: "58515050"
 
 [microsoft.graph.termStore.localizedLabel]: termstore-localizedlabel.md
 [microsoft.graph.termstore.store]: termstore-store.md
-[магазин]: ../resources/termstore-store.md
+[store]: ../resources/termstore-store.md
 [локализованнаяLabel]: ../resources/termstore-localizedlabel.md
 
 <!--

@@ -1,16 +1,16 @@
 ---
 title: 'приложение: дельта'
 description: Создайте, обновим или удаляйте приложения без полного чтения всей коллекции ресурсов.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 0a2b3c31ef83bbfdb47416309ab083dab86b4946
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9227c353807e136630d82c2792d6672a411ee136
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050614"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074523"
 ---
 # <a name="application-delta"></a>приложение: дельта
 

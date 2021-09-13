@@ -2,15 +2,15 @@
 title: Тип ресурса directoryAudit
 description: Представляет элементы аудита каталога и его коллекцию.
 author: SarahBar
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 83ac3a1df7162d680d6fa0b17955a0746e6d986ed847372ccbeb020123573afa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c542f020e7b67866239dbc0ef8a5612d8f0e5be5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130361"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089832"
 ---
 # <a name="directoryaudit-resource-type"></a>Тип ресурса directoryAudit
 
@@ -41,7 +41,7 @@ ms.locfileid: "54130361"
 | resultReason        | String                                              | Указывает причину сбоя, если **результат** `failure` или `timeout` .                                                                                                                                                                                                                                 |
 | targetResources     | Коллекция [targetResource](targetresource.md)      | Указывает, какой ресурс был изменен в результате действия. Тип целевого ресурса может быть `User` , , , , , или `Device` `Directory` `App` `Role` `Group` `Policy` `Other` .                                                                                                                   |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Нет
 

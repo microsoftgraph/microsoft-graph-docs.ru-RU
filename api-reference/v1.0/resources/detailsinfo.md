@@ -1,16 +1,16 @@
 ---
 title: detailsInfo resource type
 description: Пакет свойств, который может содержать любую информацию о связанном удостоверении или системе.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: e5beb5d281186b16acfa38087b6ee2d9ed3f0058f972aaeba2941467c545f523
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f755e7014e1a381697874e3e8da1afe72fa51fe0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130382"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104217"
 ---
 # <a name="detailsinfo-resource-type"></a>detailsInfo resource type
 
@@ -21,7 +21,7 @@ ms.locfileid: "54130382"
 ## <a name="properties"></a>Свойства
 Ресурс **detailsInfo** — это строка JSON, которая содержит дополнительные свойства, такие как **ApplicationId,** **ObjectId** и **UPN.** Набор свойств зависит от типа ресурса, который будет создан. [В примере list provisioningObjectSummary.](../api/provisioningobjectsummary-list.md)
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

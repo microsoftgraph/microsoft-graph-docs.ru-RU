@@ -1,16 +1,16 @@
 ---
 title: тип ресурса signInLocation
 description: Предоставляет город, штат и страну/регион, откуда произошла входная программа.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: fb22cf430ec3bffd04150398600beae5af4c41579f00f3cf49196587efb9f44b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 826daa833829b8ca9da9f4844827b308c8843044
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124159"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139599"
 ---
 # <a name="signinlocation-resource-type"></a>тип ресурса signInLocation
 

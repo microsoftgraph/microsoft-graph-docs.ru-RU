@@ -2,15 +2,15 @@
 title: Создание объекта termsAndConditionsAcceptanceStatus
 description: Создание объекта termsAndConditionsAcceptanceStatus.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6240314b4ad7a3b6ec94bb4fa9edbd63f0b176f72299fccd626c5657f946e211
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d049819ecd8e2951b223fe2ad6db659f29d95e76
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238624"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114353"
 ---
 # <a name="create-termsandconditionsacceptancestatus"></a>Создание объекта termsAndConditionsAcceptanceStatus
 
@@ -27,7 +27,7 @@ ms.locfileid: "54238624"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +41,7 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatu
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

@@ -2,15 +2,15 @@
 title: тип enum win32LobAppPowerShellScriptRuleOperationType
 description: Содержит весь поддерживаемый тип обнаружения выходных данных Powershell Script.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8b0561982db3d4678c2976b3db10a9fbed0a6f86acf5214a75882605be40858f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f2491953bafb9a2a26e0ecf1f288d992c59304f3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182513"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109019"
 ---
 # <a name="win32lobapppowershellscriptruleoperationtype-enum-type"></a>тип enum win32LobAppPowerShellScriptRuleOperationType
 
@@ -24,12 +24,12 @@ ms.locfileid: "54182513"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Не настроен.|
-|Строка|1|Тип выходных данных — строка.|
+|string|1|Тип выходных данных — строка.|
 |dateTime|2|Тип выходных данных — это время даты.|
 |integer|3|Тип выходных данных является наборным.|
 |float|4 |Тип данных вывода плавает.|
 |version|5 |Тип выходных данных — это версия.|
-|логический|6 |Тип данных вывода является boolean.|
+|boolean|6 |Тип данных вывода является boolean.|
 
 
 

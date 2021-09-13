@@ -1,16 +1,16 @@
 ---
 title: Обновление календаря
 description: 'Обновление свойств объекта calendar. Это может быть календарь для ресурса user '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c80bd086fd67a0e6d47cb13ddcfbfdb10a20d6ad
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3e136b16173f26b62418a74b6528024f151ab27b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052518"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038456"
 ---
 # <a name="update-calendar"></a>Обновление календаря
 
@@ -98,7 +98,7 @@ Content-type: application/json
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

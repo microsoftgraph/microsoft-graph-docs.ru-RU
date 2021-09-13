@@ -1,16 +1,16 @@
 ---
 title: Удаление educationRubric из educationAssignment
 description: Удаление educationRubric из educationAssignment
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b35e71df638a6285eff614f89a2a728c115011a1
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 163c829a2fd2aa88b9bfd5731ccab18070afca14
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991124"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090658"
 ---
 # <a name="delete-educationrubric-from-educationassignment"></a>Удаление educationRubric из educationAssignment
 

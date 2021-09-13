@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: addKey'
 description: Добавление учетных данных ключа объекту servicePrincipal.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: bda31627efafa60b261ec7f182618d546d7bed07
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: 337f7d3faea189e66476932792f91455f96b38bd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490415"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113947"
 ---
 # <a name="serviceprincipal-addkey"></a>servicePrincipal: addKey
 
@@ -114,7 +114,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

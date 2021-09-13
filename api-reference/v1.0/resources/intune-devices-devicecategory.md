@@ -2,15 +2,15 @@
 title: Тип ресурса deviceCategory
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d455d1788cdb9f992201228be3ca6fbad67bd45cf5637795f2539b2fd7f0f84f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 451109faf24b78e572c3534595d92a524206cad8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192406"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098778"
 ---
 # <a name="devicecategory-resource-type"></a>Тип ресурса deviceCategory
 
@@ -31,7 +31,7 @@ ms.locfileid: "54192406"
 |:---|:---|:---|
 |id|String|Уникальный идентификатор категории устройства. Только для чтения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

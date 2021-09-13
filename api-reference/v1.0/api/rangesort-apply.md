@@ -2,15 +2,15 @@
 title: 'RangeSort: apply'
 description: Выполнение операции сортировки.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 23e71091a9758fd3cef821985c7443e07a3945b6
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 3ba03bbdf26dc54cde7355fba7767cdc5f230d20
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50573903"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59119263"
 ---
 # <a name="rangesort-apply"></a>RangeSort: apply
 

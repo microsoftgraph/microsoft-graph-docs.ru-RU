@@ -2,15 +2,15 @@
 title: Удаление владельца
 description: Удаление владельца из службыPrincipals.
 author: sureshja
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: db723a3dc0cfd3890e87690a6b1c232c594c7aa8
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 6bd008288a8d43f8319b604689f87b0c7b506b2b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787135"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110132"
 ---
 # <a name="remove-owner"></a>Удаление владельца
 
@@ -38,7 +38,7 @@ DELETE /servicePrincipals/{id}/owners/{id}/$ref
 |:---- |:---------- |
 | Авторизация | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса укажи идентификатор объекта каталога, назначенного в качестве владельца.
 
 ## <a name="response"></a>Отклик
@@ -88,7 +88,7 @@ Content-length: 30
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

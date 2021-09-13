@@ -2,15 +2,15 @@
 title: тип ресурса resourceReference
 description: Сложный тип, содержащий свойства Аналитика.
 author: simonhult
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 7ade1e86fc601d1f00a16136a8610634934d0b4faf7b377a85ff55cf65fab671
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c7694aa2c9a487a3e07ce99d9850445de26c3acb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152623"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123365"
 ---
 # <a name="resourcereference-resource-type"></a>тип ресурса resourceReference
 
@@ -41,5 +41,5 @@ ms.locfileid: "54152623"
 | ------------- |-----------| -------------|
 | webUrl        | String    | URL-адрес, ведущий к ссылке элемента. |
 | id            | String    | Уникальный идентификатор элемента.           |
-| type          | String    | Значение строки, которое можно использовать для классификации элемента, например "microsoft.graph.driveItem". |
+| type          | Строка    | Значение строки, которое можно использовать для классификации элемента, например "microsoft.graph.driveItem". |
 

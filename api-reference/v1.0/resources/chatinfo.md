@@ -2,15 +2,15 @@
 title: тип ресурса chatInfo
 description: Сведения о сообщении в Microsoft Teams.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5ae704998bab3015c265d96c188dbcf8eba4729c4df3a1b8a72f3d5076a7f8b6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bc548c9f107232368b43aaeb154db2cf5e2cc517
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180882"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109432"
 ---
 # <a name="chatinfo-resource-type"></a>тип ресурса chatInfo
 
@@ -22,8 +22,8 @@ ms.locfileid: "54180882"
 
 | Свойство            | Тип    | Описание|
 |:--------------------|:--------|:-----------|
-| messageId           | String  | Уникальный идентификатор сообщения в Microsoft Teams канале. |
-| replyChainMessageId | String  | ID ответного сообщения. |
+| messageId           | Строка  | Уникальный идентификатор сообщения в Microsoft Teams канале. |
+| replyChainMessageId | Строка  | ID ответного сообщения. |
 | threadId            | String  | Уникальный идентификатор для потока в Microsoft Teams. |
 
 ## <a name="json-representation"></a>Представление JSON

@@ -1,14 +1,14 @@
 ---
 title: Компонент пользователя в Microsoft Graph Toolkit
 description: Компонент пользователя используется для отображения пользователя или контакта с помощью его фотографии, имени и/или адреса электронной почты.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: 8bd610d6bb7b90d45c01d1eaffaaa6ca8cf220b1631558f09a4275acd5a35a4d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0cb5c1306a9cec54df6ab6a9d3cbd1aa0995a64a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54154821"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103846"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Компонент пользователя в Microsoft Graph Toolkit
 
@@ -211,7 +211,7 @@ MgtPerson.config.useContactApis = false;
 
 Этот элемент управления использует следующие API и разрешения Microsoft Graph.
 
-| Конфигурация | Разрешение | API |
+| Настройка | Разрешение | API |
 | ------------- | ---------- | --- |
 | `personDetails` установить без изображения, `fetchImage` установить , установить , `true` извлекаемого `avatarType` человека является контакт и `photo` `useContactApis` установить `true` | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) |
 | `personDetails` установить без изображения, установить , установить и лицо не является `fetchImage` `true` `avatarType` `photo` контактом или `useContactApis` установлено, чтобы `false` | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |

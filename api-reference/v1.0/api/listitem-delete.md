@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/11/2017
 title: Удаление записи из списка SharePoint
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 description: Удаление элемента из списка.
 doc_type: apiPageType
-ms.openlocfilehash: e1210a5e3c107cad2b54194c27893f73341cb6a2
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 16c3ab6d52b341fe7ce44ab826a910c760c51952
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238787"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037427"
 ---
 # <a name="delete-an-item-from-a-list"></a>Удаление элемента из списка
 

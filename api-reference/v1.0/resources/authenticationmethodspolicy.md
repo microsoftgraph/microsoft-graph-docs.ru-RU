@@ -2,15 +2,15 @@
 title: тип ресурса authenticationMethodsPolicy
 description: Определяет методы проверки подлинности и пользователей, которые могут использовать их для регистрации и выполнения многофакторной проверки подлинности (MFA).
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: e704d7584aad0b2309863743f58663f0c04b23ab2fee99b8c21f7e9e2b210bad
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9abab0af31a67465db9989b42186759b12f746bb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124572"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126963"
 ---
 # <a name="authenticationmethodspolicy-resource-type"></a>тип ресурса authenticationMethodsPolicy
 
@@ -27,13 +27,13 @@ ms.locfileid: "54124572"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|description|String|Описание политики. Только для чтения.|
+|description|Строка|Описание политики. Только для чтения.|
 |displayName|String|Имя политики. Только для чтения.|
 |id|String|Идентификатор политики. Наследуется от [сущности](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего обновления политики. Только для чтения.|
-|policyVersion|String|Версия используемой политики. Только для чтения.|
+|policyVersion|Строка|Версия используемой политики. Только для чтения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |authenticationMethodConfigurations|[коллекция authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md)|Представляет параметры для каждого метода проверки подлинности.|

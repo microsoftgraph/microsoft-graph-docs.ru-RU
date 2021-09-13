@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса itemBody
 description: Представляет свойства основного текста элемента, например сообщения, события или записи группы.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 577fcb34d3d8d3ba251d5e198abd8f0a1f3bf6d26ee1a56be3e1cb0bd3c29dfc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 44c48b916a625ce00a30474583fa45b2c1d37e3d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130074"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084309"
 ---
 # <a name="itembody-resource-type"></a>Тип ресурса itemBody
 

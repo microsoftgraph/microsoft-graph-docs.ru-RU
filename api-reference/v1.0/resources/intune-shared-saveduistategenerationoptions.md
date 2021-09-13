@@ -2,15 +2,15 @@
 title: savedUIStateGenerationOptions enum type
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: dac42c0f8bda115f8474b006046b65f96d0b9b15eaa98bfab3cd051db8e925dd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b557cec81872991829145105ca5f28b72a44337d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155024"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084456"
 ---
 # <a name="saveduistategenerationoptions-enum-type"></a>savedUIStateGenerationOptions enum type
 
@@ -23,7 +23,7 @@ ms.locfileid: "54155024"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|нет|0|Пока не задокументировано.|
+|Нет|0|Пока не задокументировано.|
 |omitSilverlightPolicyReferences|1|Пока не задокументировано.|
 
 

@@ -2,15 +2,15 @@
 title: Тип ресурса windowsMobileMSI
 description: Содержит свойства, в том числе унаследованные, для бизнес-приложений, к которым применяется MSI Windows Mobile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3010a29d98d4fcdc142a891d2018152a9cbe330b7deb0aa21cc90a2c101ffd65
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 30aa37496ae4fa25817e858ef416202ce56791b2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130249"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118490"
 ---
 # <a name="windowsmobilemsi-resource-type"></a>Тип ресурса windowsMobileMSI
 
@@ -36,7 +36,7 @@ ms.locfileid: "54130249"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |description|String|Описание приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -57,7 +57,7 @@ ms.locfileid: "54130249"
 |productVersion|String|Версия бизнес-приложения, к которому применяется MSI Windows Mobile.|
 |ignoreVersionDetection|Boolean|Логическое значение, позволяющее разрешить или запретить поиск установленного приложения по его версии. Задайте значение true для бизнес-приложений, к которым применяется MSI Windows Mobile и функция самостоятельного обновления.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |categories|Коллекция [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|

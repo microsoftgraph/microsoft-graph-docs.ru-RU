@@ -2,15 +2,15 @@
 title: тип ресурса incomingContext
 description: Представляет контекст, связанный с входящий вызов.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8f7409048acb19e36446b257ed32acceff76d5783f3cf4050620de3da5e11314
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 80f300fc4f3cf051466b37c4445272444fdc71bc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231791"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123358"
 ---
 # <a name="incomingcontext-resource-type"></a>тип ресурса incomingContext
 
@@ -22,8 +22,8 @@ ms.locfileid: "54231791"
 
 | Свойство              | Тип                          | Описание                                                             |
 |:----------------------|:------------------------------|:------------------------------------------------------------------------|
-| sourceParticipantId   | String                        | ID участника, который вызвал входящий вызов. Только для чтения.  |
-| observedParticipantId | String                        | ID участника, который находится под наблюдением. Только для чтения.         |
+| sourceParticipantId   | Строка                        | ID участника, который вызвал входящий вызов. Только для чтения.  |
+| observedParticipantId | Строка                        | ID участника, который находится под наблюдением. Только для чтения.         |
 | onBehalfOf            | [identitySet](identityset.md) | Удостоверение, которое происходит от имени вызова.                   |
 | переносчик            | [identitySet](identityset.md) | Удостоверение, которое передало вызов.                                 |
 

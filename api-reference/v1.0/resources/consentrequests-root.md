@@ -1,16 +1,16 @@
 ---
 title: Azure Active Directory запросов на согласие
 description: Используйте запросы на согласие Azure AD для управления процессом запроса для пользователей, пытающихся получить доступ к приложениям, для которых требуется согласие администратора.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: psignoret
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: fc687460d397c4f8048607e1a1434ae48a7505d3af06590995dd2f47a08340d1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 796a0101d4c0b0649e7cd9cfbaf9ec4c556cdede
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212122"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049671"
 ---
 # <a name="azure-active-directory-consent-requests"></a>Azure Active Directory запросов на согласие
 
@@ -49,7 +49,7 @@ Azure Active Directory (Azure AD) помогают управлять проце
 
 Для управления рабочий процессом запросов или чтения списка запросов требуются следующие роли каталога.
 
-| Операция | Делегированные разрешения | Роль требуемого каталога вызываемого пользователя |
+| Эксплуатация | Делегированные разрешения | Роль требуемого каталога вызываемого пользователя |
 |:------------------|:------------|:--------------------------------------------|
 | Чтение | ConsentRequest.Read.All, ConsentRequest.ReadWrite.All | Глобальный администратор, глобальный читатель, администратор облачных приложений и администратор приложений |
 

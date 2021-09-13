@@ -2,15 +2,15 @@
 title: Тип ресурса roleAssignment
 description: Ресурс назначения роли. Назначения ролей объединяют определение роли с участниками и областями. Одной роли может соответствовать одно или несколько назначений. Это относится как к пользовательским, так и ко встроенным ролям.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fc474f933a558eb0d7ab5894b29ca926a06e2d9b5edde968b7379275400f9077
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 24d37379db351f059b6309d3d86223ae1bb5512d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205236"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126802"
 ---
 # <a name="roleassignment-resource-type"></a>Тип ресурса roleAssignment
 
@@ -34,10 +34,10 @@ ms.locfileid: "54205236"
 |:---|:---|:---|
 |id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
 |displayName|String|Отображаемое или понятное имя назначения роли.|
-|description|String|Описание назначения роли.|
+|description|Строка|Описание назначения роли.|
 |resourceScopes|Коллекция String|Список идентификаторов групп безопасности с элементами области применения ролей.  Эти идентификаторы берутся из Azure Active Directory.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |roleDefinition|[roleDefinition](../resources/intune-rbac-roledefinition.md)|Определение роли, частью которого является это назначение.|

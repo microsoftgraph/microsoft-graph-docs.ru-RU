@@ -1,24 +1,22 @@
 ---
 title: Методы List
 description: Извлечение списка объектов метода проверки подлинности.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1054c0ef4605b21c9f90f57332ef8bf43dc70d6596c3203ed99aeaea7ff5258a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 762a0fe0bd68778120e0057c72b33e5c8c94e1de
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54232379"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100458"
 ---
 # <a name="list-methods"></a>Методы List
 
 Пространство имен: microsoft.graph
 
-Извлечение списка объектов метода [проверки подлинности.](../resources/authenticationmethod.md)
-
-> **Примечание:** Возвращаются только методы, поддерживаемые в v1.0.
+Извлечение списка объектов метода [проверки подлинности.](../resources/authenticationmethod.md) Этот API возвращает только методы проверки подлинности, поддерживаемые в этой версии API. Обзор [API методов проверки подлинности Azure AD](../resources/authenticationmethods-overview.md) см. в списке поддерживаемых в настоящее время методов.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -38,7 +36,7 @@ ms.locfileid: "54232379"
 |:---------------------------------------|:-------------------------|:-----------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Для приложений                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
 Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 * Глобальный администратор
@@ -86,7 +84,7 @@ GET https://graph.microsoft.com/v1.0/me/authentication/methods
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

@@ -1,15 +1,15 @@
 ---
 title: 'Партнерство с API Graph безопасности Microsoft — возможности партнеров по технологиям '
 description: 'В этой статье описываются возможности партнерских партнеров, включенные API Graph безопасности Майкрософт, и она предназначена для того, чтобы помочь менеджерам продуктов и роли в разработке бизнеса понять пути инвестиций и получить представление о предложениях о ценности партнеров. '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 7338cbd91f5d520486e26f29de06e2365ec959d1d6264fe462c6d7d7465446f2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5789d5b4b678f3a80f3cd3b96f7d072b35f7970c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54121293"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59093892"
 ---
 # <a name="partnering-with-the-microsoft-graph-security-api--technology-partner-opportunities"></a>Партнерство с API безопасности microsoft Graph — возможности партнеров по технологиям
 

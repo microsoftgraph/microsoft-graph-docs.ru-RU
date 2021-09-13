@@ -2,15 +2,15 @@
 title: Обновление объекта mobileAppContent
 description: Обновление свойств объекта mobileAppContent.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4d8e26532d4db062a37f27cee9ebf75fd64e093d7184e4f7ec19bf9d9761a539
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2b5656e123fa0bca58f2c709b4aa0911d8b0cf47
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54170064"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079913"
 ---
 # <a name="update-mobileappcontent"></a>Обновление объекта mobileAppContent
 
@@ -27,7 +27,7 @@ ms.locfileid: "54170064"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobil
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobil
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Версия контента приложения.|
+|id|Строка|Версия контента приложения.|
 
 
 

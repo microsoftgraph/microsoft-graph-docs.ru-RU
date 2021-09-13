@@ -1,14 +1,14 @@
 ---
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: 4a6a03e00157ca58d965c370d4273524d861fedf9bc197ba0d40b719ab65bccc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dc7692d7c463d6eea872662ab35e5fe2783ca72d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196761"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035830"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
@@ -19,5 +19,8 @@ ms.locfileid: "54196761"
 | POST, PUT, DELETE, PATCH | 200 запросов за 20 секунд | 100 запросов за 20 секунд |
 | Любой | 2000 запросов за 20 секунд | 1000 запросов за 20 секунд |
 
-Указанные выше ограничения действуют для следующих ресурсов:  
-termsAndConditions, termsAndConditionsAcceptanceStatus, termsAndConditionsAssignment, termsAndConditionsGroupAssignment.
+Указанные выше ограничения действуют для следующих ресурсов:
+  
+| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                            |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> [termsAndConditions](/graph/api/resources/termsandconditions); <li> [termsAndConditionsAcceptanceStatus](/graph/api/resources/termsandconditionsacceptancestatus); <li> [termsAndConditionsAssignment](/graph/api/resources/termsandconditionsassignment); <li> [termsAndConditionsGroupAssignment](/graph/api/resources/termsandconditionsgroupassignment). </ul> |

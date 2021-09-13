@@ -2,15 +2,15 @@
 title: Замена timeOff
 description: Замените существующий объект timeOff.
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b05916566f366793e683e413b3dd44076f2f76a5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: de1744c5b0570f8bb2833190522acef894a0093f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051216"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104651"
 ---
 # <a name="replace-timeoff"></a>Замена timeOff
 
@@ -111,7 +111,7 @@ Prefer: return=representation
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

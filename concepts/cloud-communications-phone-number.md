@@ -2,14 +2,14 @@
 title: Управление номерами телефонов для ботов
 description: В этой статье описывается создание бота, который можно достичь с помощью номера телефона.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
-ms.openlocfilehash: 4f9215c0416001cd69d3fb4ad0728d0e858221fe1f06957e3251d0a253a7f791
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7ef62359d658ce848f922b5d2e083e7e952ddbcc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246452"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136147"
 ---
 # <a name="manage-phone-numbers-for-bots"></a>Управление номерами телефонов для ботов 
 

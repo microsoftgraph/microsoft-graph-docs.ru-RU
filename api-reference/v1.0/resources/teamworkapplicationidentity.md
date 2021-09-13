@@ -2,15 +2,15 @@
 title: тип ресурса teamworkApplicationIdentity
 description: Представляет приложение в Microsoft Teams.
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 78f5a4c681cae391037c6dc73d7d102d94dda6ce9c349fe6d5eeeed3fd9f3d8d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: af3f0205bf53137791414c2e4777877220ed6ca5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249120"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113527"
 ---
 # <a name="teamworkapplicationidentity-resource-type"></a>тип ресурса teamworkApplicationIdentity
 
@@ -25,10 +25,10 @@ ms.locfileid: "54249120"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |applicationIdentityType|teamworkApplicationIdentityType| Тип ссылаемого приложения. Возможные значения: `aadApplication` `bot` , , , , , `tenantBot` `office365Connector` и `outgoingWebhook` `unknownFutureValue` .|
-|displayName|String|Унаследованный от [удостоверения](../resources/identity.md). Отображение имени приложения. Необязательно.|
-|id|String|Унаследованный от [удостоверения](../resources/identity.md). ID приложения.|
+|displayName|String|Унаследованный от [удостоверения](../resources/identity.md). Отображение имени приложения. Необязательное.|
+|id|Строка|Унаследованный от [удостоверения](../resources/identity.md). ID приложения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

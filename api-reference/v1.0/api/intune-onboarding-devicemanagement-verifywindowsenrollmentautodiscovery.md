@@ -2,15 +2,15 @@
 title: Функция verifyWindowsEnrollmentAutoDiscovery
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e46135fe05d3fd2a0353f109095c34e018d01d5f1e46d37c4bc0b8057f8c5bbd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d46e7c2e49b61916fa933ef3850628d520ad3db1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160291"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099590"
 ---
 # <a name="verifywindowsenrollmentautodiscovery-function"></a>Функция verifyWindowsEnrollmentAutoDiscovery
 
@@ -27,7 +27,7 @@ ms.locfileid: "54160291"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +41,7 @@ GET /deviceManagement/verifyWindowsEnrollmentAutoDiscovery
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

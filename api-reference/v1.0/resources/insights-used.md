@@ -2,15 +2,15 @@
 title: тип ресурса usedInsight
 description: Представление документов, используемых конкретным пользователем. Сведения возвращают наиболее релевантные документы, которые пользователь просматривал или модифицировал.
 author: simonhult
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 6c1933231c9294daf4cccfeeba41ecd71582e3fe4324e28121f40b444c848e34
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4163fa241a31b259e87c312b90f07ed05893f682
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230692"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036489"
 ---
 # <a name="usedinsight-resource-type"></a>тип ресурса usedInsight
 
@@ -31,7 +31,7 @@ ms.locfileid: "54230692"
 
 | Свойство              | Тип                      | Описание  |
 | -------------         |---------------            | -------------|
-| id                    | String                    | Уникальный идентификатор отношения. Только для чтения.        |
+| id                    | Строка                    | Уникальный идентификатор отношения. Только для чтения.        |
 | lastUsed              | [usageDetails](insights-usagedetails.md)              | Сведения о том, когда элемент был в последний раз просмотрен или изменен пользователем. Только для чтения.      |
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | Свойства, которые можно использовать для визуализации документа в вашем опыте. Только для чтения      |
 | resourceReference     | [resourceReference](insights-resourcereference.md)                      | Справочные свойства используемого документа, например URL-адрес и тип документа. Только для чтения     |

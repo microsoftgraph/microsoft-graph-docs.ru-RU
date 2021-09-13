@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса assignedPlan
 description: Свойство **assignedPlans** объектов user и organization представляет собой коллекцию объектов **assignedPlan**.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 443b7c161a1d1742ec01b7b39537c07de2b25c781ed22e13ac5a8ad122e0cdd9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fefb2f204af1f3f64d7b23968722c13fdc36a51b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218837"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123806"
 ---
 # <a name="assignedplan-resource-type"></a>Тип ресурса assignedPlan
 
@@ -33,7 +33,7 @@ ms.locfileid: "54218837"
 
 | Member | Описание  |
 |:---------------|:--------|
-| Включено | Доступно для нормального использования. |
+| Включен | Доступно для нормального использования. |
 | Предупреждение | Доступно для нормального использования, но находится в льготном периоде. |
 | Suspended | Недоступны, но все данные, связанные с этой возможностью, должны быть сохранены. |
 | Deleted | Недоступные и любые данные, связанные с этой возможностью, могут быть удалены. |

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса multiValueLegacyExtendedProperty
 description: Расширенное свойство, содержащее коллекцию значений.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ba6f9db15fe16f3924fed26a02dabd690a98e867bc0f178fba532faaaba9fa03
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 48e333f4109170281dce075d6106075f3afa666d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192196"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032309"
 ---
 # <a name="multivaluelegacyextendedproperty-resource-type"></a>Тип ресурса multiValueLegacyExtendedProperty
 
@@ -30,7 +30,7 @@ ms.locfileid: "54192196"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|строка|Идентификатор свойства. Только для чтения.|
+|id|string|Идентификатор свойства. Только для чтения.|
 |значение|Коллекция строк|Коллекция значений свойств.|
 
 ## <a name="relationships"></a>Связи

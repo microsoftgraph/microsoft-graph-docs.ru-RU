@@ -1,16 +1,16 @@
 ---
 title: Получение объекта signIn
 description: Описывает метод получения ресурса signIn (сущности) из API Microsoft Graph.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 6c5e3f215409e065ce6548e59827beb8ae1eafdf
-ms.sourcegitcommit: 8a9be6f65f62f29973508d82e0348d4142c18f23
+ms.openlocfilehash: 4597962082c4043f63a3e7596b1b33297778a27a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53129465"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130211"
 ---
 # <a name="get-signin"></a>Получение объекта signIn
 
@@ -26,7 +26,10 @@ ms.locfileid: "53129465"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
-|Приложение | AuditLog.Read.All и Directory.Read.All |
+|Для приложений | AuditLog.Read.All и Directory.Read.All |
+
+> [!IMPORTANT]
+> Этот API имеет [известные](/graph/known-issues#azure-ad-activity-reports) проблемы и в настоящее время требует согласия на оба **auditLog.Read.All** и **Directory.Read.All** разрешений.
 
 Приложения должны быть [правильно зарегистрированы в](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) Azure AD.
 
@@ -34,7 +37,7 @@ ms.locfileid: "53129465"
 + Глобальный администратор
 + Глобальный читатель
 + Читатель отчетов
-+ "Администратор безопасности"
++ Администратор безопасности
 + Оператор безопасности
 + Читатель сведений о безопасности
 

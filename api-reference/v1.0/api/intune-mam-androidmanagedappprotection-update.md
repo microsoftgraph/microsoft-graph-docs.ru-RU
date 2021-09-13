@@ -3,15 +3,15 @@ title: >
   Обновление androidManagedAppProtection
 description: Обновление свойств объекта androidManagedAppProtection.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f8a488cdf016182111a811a03649214a0944fd60b632b9bbfbfa3098140c3c5a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3776daf9bf56517b5c436eaeae41091cebd6d41f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54187149"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130694"
 ---
 # <a name="update-androidmanagedappprotection"></a>Обновление androidManagedAppProtection
 
@@ -29,7 +29,7 @@ ms.locfileid: "54187149"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtec
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,7 +54,7 @@ PATCH /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtec
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|String|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|description|String|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|description|Строка|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |id|String|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
@@ -93,7 +93,7 @@ PATCH /deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtec
 |deployedAppCount|Int32|Количество приложений, к которым применена текущая политика.|
 |minimumRequiredPatchVersion|String|Определите самый старый уровень обновления для системы безопасности Android, необходимый для безопасного доступа к приложению.|
 |minimumWarningPatchVersion|String|Определите самый старый уровень обновления для системы безопасности Android, рекомендуемый для безопасного доступа к приложению.|
-|customBrowserPackageId|String|Уникальный идентификатор предпочтительного настраиваемого браузера для открытия веб-ссылки на Android. Когда это свойство настроено, managedBrowserToOpenLinksRequired должно быть верным.|
+|customBrowserPackageId|Строка|Уникальный идентификатор предпочтительного настраиваемого браузера для открытия веб-ссылки на Android. Когда это свойство настроено, managedBrowserToOpenLinksRequired должно быть верным.|
 |customBrowserDisplayName|String|Удобное имя предпочтительного настраиваемого браузера для открытия веб-ссылки на Android. Когда это свойство настроено, managedBrowserToOpenLinksRequired должно быть верным.|
 
 

@@ -2,15 +2,15 @@
 title: Создание страницы
 description: Создание новой OneNote страницы в разделе по умолчанию записной книжки по умолчанию.
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 53f770410fe130d3ec723a975701246bd28388840d92343904941f03698e4e3d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 14a2947e95b57b58c84daa0732b9c198f0ab4a1c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225799"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032624"
 ---
 # <a name="create-page"></a>Создание страницы
 
@@ -18,7 +18,7 @@ ms.locfileid: "54225799"
 
 Создание новой OneNote страницы в разделе по умолчанию записной книжки по умолчанию.
 
-Чтобы создать страницу в другом разделе в записной книжке по умолчанию, можно использовать параметр `sectionName` запроса.  Пример: `../onenote/pages?sectionName=My%20section`.
+Чтобы создать страницу в другом разделе в записной книжке по умолчанию, можно использовать параметр `sectionName` запроса.  Пример: `../onenote/pages?sectionName=My%20section`
 
 Операция используется только для создания страниц в записной книжке текущего пользователя `POST /onenote/pages` по умолчанию. Если вы нацелены на другие записные книжки, можно создать страницы [в указанном разделе.](../api/section-post-pages.md)  
 

@@ -1,16 +1,16 @@
 ---
 title: Отправка chatMessage в канал
 description: Создание нового chatMessage в указанном канале.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 444729528c0ff97feed650f240e6d4e8e70dd921
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 184e90a11e4da1778c9a34de6f0e8c7282e0ce86
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208486"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130995"
 ---
 # <a name="send-chatmessage-in-channel"></a>Отправка chatMessage в канале
 
@@ -107,7 +107,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -212,7 +212,7 @@ POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

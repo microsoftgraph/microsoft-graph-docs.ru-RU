@@ -1,16 +1,16 @@
 ---
 title: Get educationRubric attached to educationAssignment
 description: Получите educationRubric, присоединенный к educationAssignment, если оно существует.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 1220d9814b304b14885ec3ff3f1eb60660d5325c
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: fad96bacff87a36008facdc5ae0b0587af268592
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58366633"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130951"
 ---
 # <a name="get-educationrubric-attached-to-educationassignment"></a>Get educationRubric attached to educationAssignment
 
@@ -26,7 +26,7 @@ ms.locfileid: "58366633"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
+| Для приложений                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

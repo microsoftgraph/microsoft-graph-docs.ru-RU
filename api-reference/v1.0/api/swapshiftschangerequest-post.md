@@ -1,16 +1,16 @@
 ---
 title: Создание swapshiftRequest
 description: Создание экземпляра swapShiftsChangeRequest.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6133678b10930db013fc3e2a62be43b7412f98d33828cfedcc228f0ef33aa698
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e3780c41da48220889b09170a07bd5ed59f50ef5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238253"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59025995"
 ---
 # <a name="create-swapshiftschangerequest"></a>Создание swapShiftsChangeRequest
 
@@ -26,7 +26,7 @@ ms.locfileid: "54238253"
 |:---------------------------------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Schedule.ReadWrite.All |
+|Для приложений | Schedule.ReadWrite.All |
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 
@@ -80,7 +80,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

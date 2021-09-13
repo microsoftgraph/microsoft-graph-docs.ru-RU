@@ -2,15 +2,15 @@
 title: Тип ресурса managedDevice
 description: Устройства, которые управляются или предварительно регистрируются с помощью Intune
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 827a683ac5eb481d5b40509619c8360a012358d5
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 3203b99766c861f4a7b89401ef3c0cc14383fa2f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264495"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118308"
 ---
 # <a name="manageddevice-resource-type"></a>Тип ресурса managedDevice
 
@@ -105,7 +105,7 @@ ms.locfileid: "58264495"
 |ethernetMacAddress|Строка|Mac Ethernet. Это свойство доступно только для чтения.|
 |physicalMemoryInBytes|Int64|Общая память в bytes. Это свойство доступно только для чтения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |deviceCategory|[deviceCategory](../resources/intune-devices-devicecategory.md)|Категория устройства|

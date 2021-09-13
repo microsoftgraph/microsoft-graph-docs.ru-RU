@@ -2,25 +2,25 @@
 title: Удаление объекта MailFolder
 description: Удалите указанный mailFolder.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 50a33046e9f3e0006a5dbc419f303ecf6aedb185
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 79711704ac42d90c2f7b02cfd17ff63df397b7b6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133303"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067957"
 ---
 # <a name="delete-mailfolder"></a>Удаление объекта MailFolder
 
 Пространство имен: microsoft.graph
 
-Удалите указанный [mailFolder.](../resources/mailfolder.md) Папка может быть [mailSearchFolder.](../resources/mailsearchfolder.md)
+Удаление указанного [mailFolder](../resources/mailfolder.md). Папка может быть [mailSearchFolder](../resources/mailsearchfolder.md).
 
-Вы можете указать папку почты по ее ИД или по ее известному [имени,](../resources/mailfolder.md)если она существует.
+Вы можете указать папку почты по ее [](../resources/mailfolder.md)ИД папки или по имени известной папки, если она существует.
 
->**Примечание** Возможно, вам не удастся удалить элементы из папки удаления элементов для восстановления (представленные известным именем `recoverableitemsdeletions` папки). Дополнительные [сведения см. в](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) статьях "Хранение удаленных элементов" и "Очистка [удаленных](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) элементов".
+>**Примечание** Возможно, вы не сможете удалить элементы в папке удаления элементов(представлена известным именем `recoverableitemsdeletions` папки). Дополнительные [сведения см. в](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) статье [Хранение](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) удаленных элементов и очистка удаленных элементов.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

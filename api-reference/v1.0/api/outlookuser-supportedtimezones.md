@@ -1,16 +1,16 @@
 ---
 title: 'outlookUser: supportedTimeZones'
 description: Получение списка поддерживаемых часовых поясов, которые настроены на сервере почтовых ящиков пользователя.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 53bdd461051f2a137c0a9b04b82a0d9acc254065
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: c30f9ca7b16d1831b67ab30d5d3c8aa57988df34
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128304"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090259"
 ---
 # <a name="outlookuser-supportedtimezones"></a>outlookUser: supportedTimeZones
 

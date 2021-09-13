@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса сеанса
 description: Тип сеанса
-localization_priority: Normal
+ms.localizationpriority: medium
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8aa0874f0f6853d49472ff756b152aee06f7504fa42a4141c110d10830ae27aa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c8afac51a3e1709c5aafd4314045c36d8b34184b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155185"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113786"
 ---
 # <a name="session-resource-type"></a>Тип ресурса сеанса
 
@@ -29,7 +29,7 @@ ms.locfileid: "54155185"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|строка|Уникальный идентификатор для сеанса. Только для чтения.|
+|id|string|Уникальный идентификатор для сеанса. Только для чтения.|
 |вызываемая|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|Конечная точка, которая инициировала сеанс.|
 |вызываемая|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|Конечная точка, которая ответила на сеанс.|
 |failureInfo|[microsoft.graph.callRecords.failureInfo](callrecords-failureinfo.md)|Сведения о сбоях, связанных с сеансом, в случае сбоя сеанса.|
@@ -38,7 +38,7 @@ ms.locfileid: "54155185"
 |endDateTime|DateTimeOffset|Время UTC, когда последний пользователь покинул сеанс. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|

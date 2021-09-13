@@ -1,16 +1,16 @@
 ---
 title: тип ресурса scopedRoleMembership
 description: В членстве с объемной ролью описывается членство пользователя в роли каталога, которая далее передается в административный блок (AU).  Это обеспечивает механизм, позволяющий администратору компании в масштабе клиента делегировать административные привилегии пользователю для управления пользователями и группами в подмножестве организации (подмножество, определяемого АС).
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: directory-management
 author: abhijeetsinha
-ms.openlocfilehash: 1a05a741ecc14050d76ca2f414accf13cc3a41f0d80447e521cc74745a1bc3f1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7da1297b03b875a423fb135a2e8c1bab611041a5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54159815"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035943"
 ---
 # <a name="scopedrolemembership-resource-type"></a>тип ресурса scopedRoleMembership
 
@@ -24,9 +24,9 @@ ms.locfileid: "54159815"
 ## <a name="properties"></a>Свойства
 | Свойство   | Тип | Описание |
 |:---------------|:--------|:----------|
-|administrativeUnitId|Строка|Уникальный идентификатор для административного подразделения, в котором роль каталога|
-|id|строка| Уникальный идентификатор для членства в scoped-role. Только для чтения.|
-|roleId|Строка| Уникальный идентификатор роли каталога, в котором находится член.|
+|administrativeUnitId|string|Уникальный идентификатор для административного подразделения, в котором роль каталога|
+|id|string| Уникальный идентификатор для членства в scoped-role. Только для чтения.|
+|roleId|string| Уникальный идентификатор роли каталога, в котором находится член.|
 |roleMemberInfo|[identity](identity.md)| Сведения о удостоверениях членов ролей. Представляет пользователя, который входит в эту область действия.|
 
 ## <a name="relationships"></a>Связи

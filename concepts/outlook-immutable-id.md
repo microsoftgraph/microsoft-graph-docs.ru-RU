@@ -2,14 +2,14 @@
 title: Получение неизменяемых идентификаторов для ресурсов Outlook
 description: Неизменяемые идентификаторы позволяют вашему приложению получить идентификатор для элемента Outlook, который не изменяется в течение всего времени существования элемента.
 author: abheek-das
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: efbfa8ed49d741265d67364d7ac0eeb1824681d6d384df8273e45b55017bbbb3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dbb03ebc6397152b4b9ae9e5e260a0567f477a08
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126047"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59135895"
 ---
 # <a name="get-immutable-identifiers-for-outlook-resources"></a>Получение неизменяемых идентификаторов для ресурсов Outlook
 

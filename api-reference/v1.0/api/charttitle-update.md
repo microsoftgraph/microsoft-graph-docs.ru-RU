@@ -2,15 +2,15 @@
 title: Обновление объекта ChartTitle
 description: Обновление свойств объекта charttitle.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 84f7f6f074469f11986044575ccf45282ff4d581
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 85cf796a1b329934fa2e47b4cfc27dcdfce7085a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054093"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105489"
 ---
 # <a name="update-charttitle"></a>Обновление объекта ChartTitle
 
@@ -89,7 +89,7 @@ Content-length: 64
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса publicClientApplication
 description: Указывает параметры для не веб-приложения или веб-Api. (например, мобильный или другой общедоступный клиент, например установленное приложение, запущенное на настольном устройстве)
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: b8172eb64c1f54e33f8b5775a9234a7a30a42b641b68dd328c2fef5355fb9688
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a5769d2fcbc01114b9a79a6eb3bad21c65566663
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54228997"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067054"
 ---
 # <a name="publicclientapplication-resource-type"></a>тип ресурса publicClientApplication
 
@@ -24,7 +24,7 @@ ms.locfileid: "54228997"
 |:---------------|:--------|:----------|
 |redirectUris|Коллекция String| Указывает URL-адреса, куда отправляются маркеры пользователей для регистрации, или URL-адреса перенаправления, куда отправляются коды авторизации OAuth 2.0 и маркеры доступа. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {

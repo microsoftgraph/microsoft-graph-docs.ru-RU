@@ -2,15 +2,15 @@
 title: Тип ресурса calendarGroup
 description: Группа календарей пользователей.
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: bceac8ed16809ad99fcf479997b754a2e1c6af143e6413222531708752d342f8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ca67a29dd6c48119442423570a08b66dd5a83f9b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147009"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129966"
 ---
 # <a name="calendargroup-resource-type"></a>Тип ресурса calendarGroup
 
@@ -26,7 +26,7 @@ ms.locfileid: "54147009"
 | [Создание группы календарей](../api/user-post-calendargroups.md) | [Calendar](calendar.md)            | Создание группы календарей.                                  |
 | [Получение группы календарей](../api/calendargroup-get.md)           | [calendarGroup](calendargroup.md)  | Чтение свойств и связей, принадлежащих объекту группы календарей. |
 | [Обновление](../api/calendargroup-update.md)                    | [calendarGroup](calendargroup.md)  | Обновление объекта calendarGroup.                                  |
-| [Удаление](../api/calendargroup-delete.md)                    | Нет                               | Удаление объекта calendarGroup.                                  |
+| [удаление](../api/calendargroup-delete.md);                    | Нет                               | Удаление объекта calendarGroup.                                  |
 | [Список календарей](../api/calendargroup-list-calendars.md)    | Коллекция [Calendar](calendar.md) | Список календарей в группе календарей.                           |
 | [Создание объекта Calendar](../api/calendargroup-post-calendars.md)   | [Calendar](calendar.md)            | Создание календаря в группе календарей.                    |
 
@@ -39,7 +39,7 @@ ms.locfileid: "54147009"
 | classId   | Guid   | Идентификатор класса. Только для чтения.                                                                                                                                                                          |
 | id        | Строка | Уникальный идентификатор группы. Только для чтения.                                                                                                                                                                 |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип                               | Описание                                                                    |
 | :----------- | :--------------------------------- | :----------------------------------------------------------------------------- |

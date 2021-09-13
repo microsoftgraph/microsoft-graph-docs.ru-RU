@@ -2,15 +2,15 @@
 title: Добавление участника
 description: Используйте этот API для добавления участника (пользователя или группы) в административное подразделение.
 author: DougKirschner
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4b744c9ebce925277d09cae0b49272c6e4d01598
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 67673cfb503c52fcf443ab6f4d374e515645aeb3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210432"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128328"
 ---
 # <a name="add-a-member"></a>Добавление участника
 
@@ -28,7 +28,7 @@ ms.locfileid: "53210432"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | AdministrativeUnit.ReadWrite.All |
+|Для приложений | AdministrativeUnit.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
