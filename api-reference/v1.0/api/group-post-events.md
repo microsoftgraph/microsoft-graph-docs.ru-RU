@@ -2,15 +2,15 @@
 title: Создание события
 description: Этот API используется для создания события.
 author: Jordanndahl
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 424db3298e42e53cb9e861584e15be95d28cc878
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: cb4d147b4f7141f71df5ed9821fbcfddb2679080
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681972"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074272"
 ---
 # <a name="create-event"></a>Создание события
 
@@ -108,7 +108,7 @@ Content-type: application/json
 Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

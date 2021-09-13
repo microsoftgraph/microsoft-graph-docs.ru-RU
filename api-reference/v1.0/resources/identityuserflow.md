@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса UserFlow
 description: Представляет поток пользователей удостоверений, включенный во встроенное путешествие по проверке подлинности.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: f721bac7c187aaaed9474b129abfe8cda3954bf5ee7ac1ca98f685f16818408f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f2cf68cf056f694c33052e23f9c78db2573c3424
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152651"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067362"
 ---
 # <a name="userflow-resource-type"></a>Тип ресурса UserFlow
 

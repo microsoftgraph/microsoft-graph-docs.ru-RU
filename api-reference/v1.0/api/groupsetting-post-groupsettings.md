@@ -1,16 +1,16 @@
 ---
 title: Создание параметра группы
 description: Создайте новый параметр на основе шаблонов, доступных в groupSettingTemplates.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: aa85af1c52ee2d62de000873806c34ea61a3a501
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 6734fbf028ff52dcd7e614ad18edfaa0815a9fc6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514736"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056594"
 ---
 # <a name="create-a-group-setting"></a>Создание параметра группы
 
@@ -27,7 +27,7 @@ ms.locfileid: "58514736"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Directory.ReadWrite.All |
+|Для приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

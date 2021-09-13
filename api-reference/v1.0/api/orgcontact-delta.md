@@ -1,16 +1,16 @@
 ---
 title: 'orgContact: delta'
 description: Создайте новые, обновленные или удаленные организационные контакты без выполнения полного чтения всей коллекции.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d970701c23cdd065c6eb5976d7f55111d0d932da
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 888252dd014fa2217699a4b271215c94bc7bcb42
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051328"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022102"
 ---
 # <a name="orgcontact-delta"></a>orgContact: delta
 

@@ -1,16 +1,16 @@
 ---
 title: 'группа: проверкаProperties'
 description: Проверка соответствия отображаемого имени или почтового псевдонима группы Microsoft 365 политикам именования.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a9d39c99e63607ded7ecaa194c7002f32cf36890
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: abeca2f5459d0d298bf98d7218ec4ad9acb963fa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680530"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074019"
 ---
 # <a name="group-validateproperties"></a>группа: проверкаProperties
 
@@ -53,7 +53,7 @@ POST /groups/{id}/validateProperties
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|String| Отображаемого имени группы для проверки. Свойство не требуется по отдельности. Однако требуется по крайней мере одно свойство **(displayName** или **mailNickname).** |
+|displayName|Строка| Отображаемого имени группы для проверки. Свойство не требуется по отдельности. Однако требуется по крайней мере одно свойство **(displayName** или **mailNickname).** |
 |mailNickname|String| Имя почты группы для проверки. Свойство не требуется по отдельности. Однако требуется по крайней мере одно свойство **(displayName** или **mailNickname).** |
 |onBehalfOfUserId|Guid| ID пользователя, который должен выдать себя при вызове API. Результаты проверки для **атрибутов и ролей onBehalfOfUserId.** |
 

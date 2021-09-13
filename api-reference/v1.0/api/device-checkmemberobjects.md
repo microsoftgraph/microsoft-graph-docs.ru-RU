@@ -1,16 +1,16 @@
 ---
 title: 'устройство: checkMemberObjects'
 description: Проверьте членство в списке групп или ролей каталога для указанного объекта устройства.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: spunukol
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 267096f20f47fdbd43f5c5fa857d6cd7e3634c32
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9a5f7942ab09bea00aac4f66aa295aa1640e536d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052441"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063484"
 ---
 # <a name="device-checkmemberobjects"></a>устройство: checkMemberObjects
 
@@ -24,9 +24,9 @@ ms.locfileid: "52052441"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (рабочая или учебная учетная запись)     | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Directory.Read.All, Directory.ReadWrite.All |
+| Для приложений                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -103,7 +103,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

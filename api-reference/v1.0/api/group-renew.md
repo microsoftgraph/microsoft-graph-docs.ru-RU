@@ -1,16 +1,16 @@
 ---
 title: 'group: renew'
 description: Обновление, продлевающее срок действия группы. Когда группа обновляется, срок ее действия продляется на количество дней, определенное политикой.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 05fde82e6ae9bc3e3d7662e140605391ab08abdb
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: e0a8817f46a1a2d004ee4bcf9328e506311582a8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787767"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074262"
 ---
 # <a name="group-renew"></a>group: renew
 
@@ -41,7 +41,7 @@ POST /groups/{id}/renew
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

@@ -2,15 +2,15 @@
 title: Обновление вкладки в чате
 description: Обновление свойств указанной вкладки в чате.
 author: subray
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ac9781e0d8fd5137366d93c8fbf49bc946e6c51c
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ca2a8b92468c4190af4b81f75900727cd003a8df
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50950004"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022970"
 ---
 # <a name="update-tab-in-chat"></a>Обновление вкладки в чате
 

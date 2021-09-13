@@ -2,14 +2,14 @@
 title: Получение расписания доступности пользователей и ресурсов
 description: Общим сценарием на рабочем месте или в учебном заведении является просмотр доступности пользователя для собрания или доступности команды, помещения или оборудования в некоторый период времени.
 author: tariq-sharif
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 865b67e40dbf11f9e6d4a2d8b0cf92e49353d0257c7605a8fc998d9e134e080f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2a7a4fdfb61e5a769836bf8e85b06d1baabe0c63
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54157909"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139060"
 ---
 # <a name="get-freebusy-schedule-of-users-and-resources"></a>Получение расписания доступности пользователей и ресурсов
 

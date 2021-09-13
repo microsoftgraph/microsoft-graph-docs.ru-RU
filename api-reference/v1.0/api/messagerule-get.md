@@ -2,15 +2,15 @@
 title: Получение правила
 description: Получение свойств и связей объекта messageRule.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2472b52089e230436a6a117535e0a13576586efa
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f626ac2fa991d01ba0e4b124273c5dfb869390fc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054548"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072990"
 ---
 # <a name="get-rule"></a>Получение правила
 

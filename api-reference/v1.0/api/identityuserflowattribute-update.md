@@ -1,16 +1,16 @@
 ---
 title: Обновление identityUserFlowAttribute
 description: Обновление свойств identityUserFlowAttribute.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 35eb1ceae69d2118187b48e91f395f042bbf0c3c
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: a402fb254ca4cd98a8aa3f8be8ec7e27c3fc9d5a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920815"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045692"
 ---
 # <a name="update-identityuserflowattribute"></a>Обновление identityUserFlowAttribute
 
@@ -31,7 +31,7 @@ ms.locfileid: "51920815"
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор атрибутов потока внешних удостоверений пользователей
+* Администратор атрибутов внешних Flow удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -56,7 +56,7 @@ PATCH /identity/userFlowAttributes/{id}
 
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
-|description|Строка|Описание атрибута потока пользователей. Он отображается пользователю во время регистрации.|
+|description|String|Описание атрибута потока пользователей. Он отображается пользователю во время регистрации.|
 
 ## <a name="response"></a>Отклик
 

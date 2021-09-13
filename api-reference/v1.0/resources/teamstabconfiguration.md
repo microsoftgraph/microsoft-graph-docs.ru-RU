@@ -2,15 +2,15 @@
 title: тип ресурса teamsTabConfiguration (Open Type)
 description: Параметры, определяя содержимое вкладки.
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7a1af503a2ba4788f22d3c7d7a76b968d1d66c167c3138ef316d056abf2f800b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 90d9d51cffec818a601e8b7efddb4b77b1c2dc3d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196489"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052862"
 ---
 # <a name="teamstabconfiguration-resource-type-open-type"></a>тип ресурса teamsTabConfiguration (Open Type)
 
@@ -26,7 +26,7 @@ ms.locfileid: "54196489"
 |Свойство|Тип|Описание|
 |-|-|-|
 |  entityId   |   string |  Идентификатор для объекта, принимающего поставщика вкладок.     |
-|  contentUrl |   string |  URL-адрес, используемый для отрисовки содержимого вкладок в Teams. Обязательный элемент.    |
+|  contentUrl |   string |  URL-адрес, используемый для отрисовки содержимого вкладок в Teams. Обязательный.    |
 |  removeUrl  |   строка |  Url-адрес Teams клиентом при удалении вкладки с помощью Teams клиента.     |
 |  websiteUrl |   string |  URL-адрес для показа содержимого вкладок за пределами Teams.     |
 

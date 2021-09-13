@@ -2,15 +2,15 @@
 title: Удаление беседы
 description: Удаление беседы.
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a908ffa0a0384476c3e9e45fed82ca43d98d30c4
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 0e3c2718d0e7c9bef32bd3bdd42367f42a1dd58a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513715"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016675"
 ---
 # <a name="delete-conversation"></a>Удаление беседы
 

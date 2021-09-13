@@ -1,20 +1,26 @@
 ---
 title: Поставщик MSAL
-description: Поставщик MSAL использует MSAL.js для регистрации пользователей и приобретения маркеров для использования в Microsoft Graph
-localization_priority: Normal
+description: Поставщик MSAL использует MSAL.js для регистрации пользователей и приобретения маркеров для использования в Microsoft Graph.
+ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: dc994e404767c390011c35f93a6e1a4ee6a9b41fef9dc25d0cddcc4fb25a722a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5c9c3d8fc416f08b0386335aa518076e256fe0ad
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54204941"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143554"
 ---
 # <a name="msal-provider"></a>Поставщик MSAL
 
-Поставщик MSAL [использует](https://github.com/AzureAD/microsoft-authentication-library-for-js)MSAL.jsдля регистрации пользователей и приобретения маркеров для использования в Microsoft Graph.
+Поставщик MSAL использует [msal.js](https://github.com/AzureAD/microsoft-authentication-library-for-js) для регистрации пользователей и приобретения маркеров для использования в Microsoft Graph.
 
 Дополнительные дополнительные новости см. [в см. в руберсе "Поставщики услуг".](./providers.md)
+
+## <a name="difference-between-msal2-provider-and-msal-provider"></a>Разница между поставщиком MSAL2 и поставщиком MSAL
+Хотя использование аналогично, поставщик MSAL и поставщик MSAL2 построены на разных потоках OAuth. Поставщик MSAL построен на msal.js, которая реализует неявный грант OAuth2.0 [Flow.](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) Поставщик MSAL2 построен на [msal-браузере,](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser)который реализует код авторизации OAuth 2.0 [](/azure/active-directory/develop/v2-oauth2-auth-code-flow) Flow с PKCE.
+Поскольку код авторизации Flow считается более безопасным, чем неявный грант Flow для веб-приложений, мы рекомендуем использовать поставщика MSAL2 над msAL Provider. Сведения о проблемах безопасности, связанных с неявным потоком грантов, см. в материале [Недостатки неявного потока.](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6)
+
+Все новые приложения должны использовать поставщика MSAL2 по мере возможности. Сведения о миграции см. [в msAL2 Provider.](./msal2.md)
 
 ## <a name="get-started"></a>Начало работы
 
@@ -36,7 +42,7 @@ ms.locfileid: "54204941"
 
 | Атрибут    | Описание                                                                                                                                                                                                                                                           |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| client-id    | Строковая ID клиента (см. статью Создание ID приложения/клиента). Обязательный элемент.                                                                                                                                                                                                           |
+| client-id    | Строковая ID клиента (см. статью Создание ID приложения/клиента). Обязательное.                                                                                                                                                                                                           |
 | тип входа   | Переумеление между `redirect` и по умолчанию является `popup` `redirect` значением . Необязательно.                                                                                                                                                                                   |
 | scopes       | Строки с разделителями-запятыми для областей, которым пользователь должен предоставить согласие при входе. Необязательный.                                                                                                                                                                                     |
 | authority    | Строка Authority — по умолчанию является общим органом. Для однотенантного приложения используйте идентификатор клиента или имя клиента. Например, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` или `https://login.microsoftonline.com/[your-tenant-id]`. Необязательный. |

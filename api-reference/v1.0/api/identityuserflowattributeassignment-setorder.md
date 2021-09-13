@@ -2,15 +2,15 @@
 title: 'identityUserFlowAttributeAssignment: setOrder'
 description: Задайте порядок сбора удостоверенийUserFlowAttributeAssignments в потоке пользователей.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: dc9e539b56d44bcfedf5818b7be6126421fedd96
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 5214f4b43d89180659ca5236fd83cf673c63a382
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920655"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045625"
 ---
 # <a name="identityuserflowattributeassignment-setorder"></a>identityUserFlowAttributeAssignment: setOrder
 

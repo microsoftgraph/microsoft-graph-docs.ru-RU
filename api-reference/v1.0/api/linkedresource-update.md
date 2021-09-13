@@ -2,15 +2,15 @@
 title: Обновление linkedResource
 description: Обновление свойств объекта linkedResource.
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b41e4d3948ccca6f58c1ab701367f4432b489551
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 1bb6ee51b81eb9d76cb125c8848a65deb27e3cb6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873810"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019771"
 ---
 # <a name="update-linkedresource"></a>Обновление linkedResource
 Пространство имен: microsoft.graph
@@ -23,7 +23,7 @@ ms.locfileid: "49873810"
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
-|Делегированное (личная учетная запись Майкрософт)|Tasks.ReadWrite|
+|Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
 |Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -44,17 +44,17 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/l
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажу представление объекта [linkedResource](../resources/linkedresource.md) в JSON.
+В теле запроса поставляем представление JSON объекта [linkedResource.](../resources/linkedresource.md)
 
 В следующей таблице показаны свойства, необходимые при обновлении [linkedResource.](../resources/linkedresource.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Созданный сервером ИД для связанного объекта Inherited from [entity](../resources/entity.md)|
+|id|Строка|Server generated Id for the linked entity Inherited from [entity](../resources/entity.md)|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [linkedResource](../resources/linkedresource.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект linkedResource](../resources/linkedresource.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

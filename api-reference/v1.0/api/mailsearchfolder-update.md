@@ -1,16 +1,16 @@
 ---
 title: Обновление mailSearchFolder
 description: Обновим свойства объекта mailSearchFolder.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 590a886b73dd0adc5f08f895028e2848ed84fb60
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3ebe53470bc202d418b63f166ec81e5c6faaf73d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52035388"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037420"
 ---
 # <a name="update-mailsearchfolder"></a>Обновление mailSearchFolder
 
@@ -45,7 +45,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| displayName | String | Имя отображения [почтыFolder](../resources/mailfolder.md).|
+| displayName | Строка | Имя отображения [почтыFolder](../resources/mailfolder.md).|
 | includeNestedFolders | Логический | Как должна проходить иерархия папок почтовых ящиков. `true` означает, что глубокий поиск должен быть сделан, а значит, неглубокий `false` поиск должен быть сделан вместо. |
 | sourceFolderIds | Коллекция String | Папки почтовых ящиков, которые необходимо добыть. |
 | filterQuery | String | Запрос OData для фильтрации сообщений. |
@@ -92,7 +92,7 @@ Content-type: application/json
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

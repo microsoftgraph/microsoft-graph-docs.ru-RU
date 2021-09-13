@@ -2,15 +2,15 @@
 title: Список fido2AuthenticationMethod
 description: Извлечение списка объектов fido2AuthenticationMethod и их свойств.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2d556654059c3ae1a52b240b084882be064f30d11338042f8e28c970f7eb72ec
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7f95f81827f394962b8844bc367fb322e0ff1915
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54170092"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046003"
 ---
 # <a name="list-fido2authenticationmethod"></a>Список fido2AuthenticationMethod
 Пространство имен: microsoft.graph
@@ -35,7 +35,7 @@ ms.locfileid: "54170092"
 |:---------------------------------------|:-------------------------|:-----------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Для приложений                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
 Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 * Глобальный администратор
@@ -60,7 +60,7 @@ GET /users/{id | userPrincipalName}/authentication/fido2Methods
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Authorization|Bearer {token}|
+|Авторизация|Bearer {token}|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/v1.0/me/authentication/fido2Methods
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

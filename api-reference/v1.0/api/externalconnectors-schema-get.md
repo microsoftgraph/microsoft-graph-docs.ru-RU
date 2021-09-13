@@ -2,15 +2,15 @@
 title: Получение схемы
 description: Ознакомьтесь с свойствами и отношениями объекта схемы.
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 32d51980069ef74bed0d3c72f7a2d112d2f1a1f7
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 0e9725e77b727c455364fae0bcb068118e4a9cc3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580679"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046123"
 ---
 # <a name="get-schema"></a>Получение схемы
 Пространство имен: microsoft.graph.externalConnectors
@@ -26,7 +26,7 @@ ms.locfileid: "53580679"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Неприменимо|
 |Делегированные (личная учетная запись Майкрософт)|Неприменимо|
-|Приложение| ExternalConnection.ReadWrite.OwnedBy|
+|Для приложений| ExternalConnection.ReadWrite.OwnedBy|
 
 ## <a name="http-request"></a>HTTP-запрос
 

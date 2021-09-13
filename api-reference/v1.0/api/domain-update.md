@@ -2,15 +2,15 @@
 title: Обновление домена
 description: Обновление свойств объекта домена.
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fc400d4790326e79d8ad8dea387d6027baf8f1de
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: f4fcd8c12a70bfb0608bf9d2a6cad7a7334bb90e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787305"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056686"
 ---
 # <a name="update-domain"></a>Обновление домена
 
@@ -27,7 +27,7 @@ ms.locfileid: "52787305"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Domain.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Domain.ReadWrite.All |
 
@@ -46,7 +46,7 @@ PATCH /domains/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса укажи значения для обновляемой области. Существующие свойства, не включенные в тело запроса, будут поддерживать прежние значения или пересчитываться на основе изменений в других значениях свойств. Для лучшей производительности включаем только измененные значения.
 

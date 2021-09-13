@@ -2,15 +2,15 @@
 title: Удаление accessReviewScheduleDefinition
 description: Удаляет объект accessReviewScheduleDefinition.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 976d8efe286f698aec8ecaf737d921569ad5842d
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: b668c3e0049dae750ec49e2e956726e68207eddc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210482"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033070"
 ---
 # <a name="delete-accessreviewscheduledefinition"></a>Удаление accessReviewScheduleDefinition
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "53210482"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)| AccessReview.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| AccessReview.ReadWrite.All |
+|Для приложений| AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

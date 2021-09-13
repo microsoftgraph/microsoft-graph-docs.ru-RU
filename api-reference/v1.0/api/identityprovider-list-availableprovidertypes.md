@@ -1,16 +1,16 @@
 ---
 title: Список доступныхProviderTypes
 description: Извлечение всех доступных типов поставщика удостоверений в каталоге.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: b39f614b0f59aa5589c9642e132950e991b20c23
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 22b9c5e93f7c84e14eb4d1d1b9c808d377f6b432
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580641"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073877"
 ---
 # <a name="list-availableprovidertypes-deprecated"></a>Список доступныхProviderTypes (обесценив)
 Пространство имен: microsoft.graph
@@ -27,7 +27,7 @@ ms.locfileid: "53580641"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
+|Для приложений|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/identityProviders/availableProviderTypes
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

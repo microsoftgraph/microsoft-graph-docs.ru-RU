@@ -1,14 +1,14 @@
 ---
 title: Компонент Person-Card в Microsoft Graph Toolkit
 description: Компонент Person-Card для просмотра дополнительных сведений, относящихся к пользователю.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: vogtn
-ms.openlocfilehash: 5f7232470edc576ae97fa745d4af523ec8f5e5af994b565b12c44667fecb5a8f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2b9c1397de586da884166f7d149ff23388e0fa4b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245361"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129700"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Компонент Person-Card в Microsoft Graph Toolkit
 
@@ -133,7 +133,7 @@ TeamsHelper.microsoftTeamsLib = microsoftTeams;
 
 Из компонента инициируются следующие события.
 
-Событие | Когда он излучается | Настраиваемые данные | Отмена | Пузыри | Работает с настраиваемой шаблонной
+Событие | Когда он излучается | Данные пользователя. | @cancelable | Пузыри | Работает с настраиваемой шаблонной
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
 `expanded` | Пользователь открыл расширенный раздел сведений карты | Нет | Нет | Да | Да, если не переопределить шаблон по умолчанию
 
@@ -165,7 +165,7 @@ mgt-person {
 
 Этот элемент управления Person-Card использует следующие API и разрешения Microsoft Graph.
 
-| Конфигурация | Разрешение | API | Section |
+| Настройка | Разрешение | API | Section |
 | --- | ---------- | ------- | --------- |
 | `personDetails` установить с `id` пользователем, но без электронной почты, или `userId` установить, или `personQuery` установить `me` | User.ReadBasic.All | [/users/{id}](/graph/api/user-list-people), [/users/{id}/photo/$value](/graph/api/profilephoto-get) | По умолчанию |
 | `personQuery` значение, отличаее от `me` | People.Read | [/me/people/?$search=](/graph/api/user-list-people) | По умолчанию |

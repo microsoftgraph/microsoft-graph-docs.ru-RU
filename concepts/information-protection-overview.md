@@ -2,14 +2,14 @@
 title: Microsoft Information Protection метки
 description: Microsoft Information Protection помогает организациям классифицировать, маркировать и защищать данные на основе Office 365 меток безопасности и соответствия требованиям.
 author: tommoser
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: security
-ms.openlocfilehash: dafa396b5c0d7a27400ddee5c6bb2965dd4abb1d83ccb5f9deef0f71283e1a02
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 20eb8b54d71e390f3a61f05117855d379a225321
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54237420"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136070"
 ---
 # <a name="information-protection-overview"></a>Обзор защиты информации
 

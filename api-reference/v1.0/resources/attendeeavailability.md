@@ -1,16 +1,16 @@
 ---
 title: Тип ресурсов attendeeAvailability
 description: Доступность участника.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 3bcb4e113e1b0c5c132a8f152f59293930376b085fdeb3a0baf6c14af2bb274e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d03653e84d5c58318d12e53255cdf5edbfff9178
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238197"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067544"
 ---
 # <a name="attendeeavailability-resource-type"></a>Тип ресурсов attendeeAvailability
 
@@ -18,7 +18,7 @@ ms.locfileid: "54238197"
 
 Доступность участника.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже показано представление JSON ресурса.
 

@@ -2,15 +2,15 @@
 title: Обновление educationAssignmentSettings
 description: Обновление свойств объекта educationAssignmentSettings.
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7c251885de43022f8e3065c7004dab33d4fa78a8
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 514a78995215ad1b803e10deeec04c368f0d66af
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52992979"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074467"
 ---
 # <a name="update-educationassignmentsettings"></a>Обновление educationAssignmentSettings
 Пространство имен: microsoft.graph

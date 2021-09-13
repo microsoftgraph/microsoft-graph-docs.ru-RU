@@ -2,15 +2,15 @@
 title: Список экземпляров
 description: Получите ресурсы accessReviewInstance из свойства навигации экземпляров.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4cf4701e99754e80e59700fcf7542c5496812430
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 948741089d6608ab28bd5e85657aa4017f1b370d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208623"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008526"
 ---
 # <a name="list-instances"></a>экземпляры списков;
 Пространство имен: microsoft.graph
@@ -27,7 +27,7 @@ ms.locfileid: "53208623"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.Read.All, AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Для приложений|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

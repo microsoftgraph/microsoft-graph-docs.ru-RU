@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Изменение разрешений общего доступа
-localization_priority: Normal
+ms.localizationpriority: medium
 description: В этой статье рассказывается, как обновить свойства разрешения на общий доступ путем обновления ресурса разрешения.
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 1c3b8c4fdd9b0306aef909525c87facde6bdc6de
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 60d59547d77d30c9be267cf2d880a8c4f3917e78
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240388"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072835"
 ---
 # <a name="update-sharing-permission"></a>Обновление разрешения на общий доступ
 
@@ -60,13 +60,13 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 | Тип разрешения        | Свойство | Тип              | Описание                   |
 |:-----------------------|:---------|:------------------|:------------------------------|
-| Пользователь                   | roles    | Набор строк | Массив типов разрешений. |
-| Анонимная ссылка для общего доступа | expirationDateTime | DateTimeOffset | Формат yyyy-MM-ddTHH:mm:ssZ dateTimeOffset в течение срока действия разрешения. |
+| User                   | roles    | Набор строк | Массив типов разрешений. |
+| Анонимный обмен ссылкой | expirationDateTime | DateTimeOffset | Формат yyyy-MM-ddTHH:mm:ssZ dateTimeOffset на время действия разрешения. |
 
-### <a name="remarks"></a>Примечания
+### <a name="remarks"></a>Замечания
 Неподтверченные изменения разрешений включают следующие:
-- Организационные ссылки для общего доступа
-- Ссылки для общего доступа людей
+- Ссылки на организационный общий доступ
+- Люди, которые делятся ссылками
 
 ## <a name="response"></a>Отклик
 
@@ -129,9 +129,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="error-responses"></a>Отклики с ошибками
+## <a name="error-responses"></a>Ответы с ошибками
 
-Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
+Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Отклики ошибок][error-response].
 
 [error-response]: /graph/errors
 

@@ -1,14 +1,14 @@
 ---
 title: Использование SDKs Graph Майкрософт для пакетных запросов
 description: Содержит инструкции по созданию пакета запросов API с помощью SDKs Graph Microsoft.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: d8e44f6ed2c1fe03f81150eb8dbf07140c2da513d9a6d9c192559a56362a8e43
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a8a1d2b7e4d214edbdef2424539030ab52d46442
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146155"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129728"
 ---
 # <a name="use-the-microsoft-graph-sdks-to-batch-requests"></a>Использование SDKs Graph Майкрософт для пакетных запросов
 

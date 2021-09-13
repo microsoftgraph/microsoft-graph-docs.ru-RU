@@ -2,14 +2,14 @@
 title: Упорядочение сообщений Outlook
 description: В Outlook пользователи могут упорядочивать свои сообщения по собственному усмотрению. Можно оставить все сообщения в одной папке "Входящие" или упорядочить их в древовидной структуре вложенных папок в соответствии со своими потребностями. Кроме того, можно легко выполнять поиск, фильтровать и сортировать сообщения.
 author: abheek-das
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 45722dd08178598213343a9e0b03ec3aa41e3f63ea58c0a2f524bcc09a887ae1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d9ec0c94bdba01ec32723467c80b1f48bff71ab6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54250219"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071849"
 ---
 # <a name="organize-outlook-messages"></a>Упорядочение сообщений Outlook
 

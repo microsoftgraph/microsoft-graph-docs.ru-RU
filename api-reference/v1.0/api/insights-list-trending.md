@@ -2,15 +2,15 @@
 title: Список "Популярные"
 description: Расчетные данные, возвращающие список элементов, популярных в окружении пользователя.
 author: simonhult
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: db5392cebe5762fb0e77f92860d0f2633c96c8712536f5d0a86d32909caed394
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6dcc77bc0b92870986bbff201979a1bfac04330c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54187387"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016592"
 ---
 # <a name="list-trending"></a>Список "Популярные"
 

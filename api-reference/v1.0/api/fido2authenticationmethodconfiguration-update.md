@@ -2,15 +2,15 @@
 title: Обновление fido2AuthenticationMethodConfiguration
 description: Обновление свойств объекта fido2AuthenticationMethodConfiguration.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d6001f93ef63654aff4e97299e9101f6e5b08865
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 6a5451329209448349b9cb246086ad9b1fe2a755
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468018"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045980"
 ---
 # <a name="update-fido2authenticationmethodconfiguration"></a>Обновление fido2AuthenticationMethodConfiguration
 Пространство имен: microsoft.graph

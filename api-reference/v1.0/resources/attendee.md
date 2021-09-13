@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса attendee
 description: Участник события. Это может быть человек или ресурс (например конференц-зал или оборудование), настроенный в качестве ресурса на сервере Exchange Server клиента.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e0cdbda6cf48e472e1178e8b22ba6b81b889fa60a270e2917e86a63cb1fcdbdf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a518a39aa507173f0190a14bc947e11c3f7a90ce
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163903"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067558"
 ---
 # <a name="attendee-resource-type"></a>Тип ресурса attendee
 
@@ -26,9 +26,9 @@ ms.locfileid: "54163903"
 |emailAddress|[emailAddress](emailaddress.md)|Включает имя и SMTP-адрес участника.|
 |proposedNewTime|[timeSlot](timeslot.md)|Альтернативные даты и времени, предложенные участникам для запроса на собрание, чтобы начать и закончить. Если участник не предложил другой раз, то это свойство не включено в ответ на событие GET.|
 |status|[ResponseStatus](responsestatus.md)|Ответ участника (нет, принято, отклонено и т. д.) на событие, а также дата и время отправки ответа.|
-|type|String|Тип участника: `required`, `optional`, `resource`.|
+|type|Строка|Тип участника: `required`, `optional`, `resource`.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

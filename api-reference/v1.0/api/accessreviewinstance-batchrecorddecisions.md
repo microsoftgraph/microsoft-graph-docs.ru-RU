@@ -2,15 +2,15 @@
 title: 'accessReviewInstance: batchRecordDecisions'
 description: Позволяет рецензентам просмотреть все accessReviewInstanceDecisionItems пакетами.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8793838a67199a5d5d752e6865c2f8e3c97b262e
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 69ebef36a28629a1d4dabf4d55699c61a12c04b4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210629"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033142"
 ---
 # <a name="accessreviewinstance-batchrecorddecisions"></a>accessReviewInstance: batchRecordDecisions
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "53210629"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|AccessReview.ReadWrite.All|
+|Для приложений|AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,9 +49,9 @@ POST /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefiniti
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|решение|String|Решение о доступе для проверяемого объекта. Возможные значения: `Approve`, `Deny`, `NotReviewed`, `DontKnow`. Обязательно.|
-|обоснование|String|Контекст обзора, предоставленного администраторам. Требуется, **если обоснованиеRequiredOnApproval** свойства параметров **accessReviewScheduleDefinition** является `true` .|
-|principalId|String|В этом пакете будут рассмотрены все **accessReviewInstanceDecisionItems** с соответствием **значениям principalId.** Если они не будут предоставлены, **все accessReviewInstanceDecisionItems** будут рассмотрены.|
+|решение|Строка|Решение о доступе для проверяемого объекта. Возможные значения: `Approve`, `Deny`, `NotReviewed`, `DontKnow`. Обязательный.|
+|обоснование|Строка|Контекст обзора, предоставленного администраторам. Требуется, **если обоснованиеRequiredOnApproval** свойства параметров **accessReviewScheduleDefinition** является `true` .|
+|principalId|Строка|В этом пакете будут рассмотрены все **accessReviewInstanceDecisionItems** с соответствием **значениям principalId.** Если они не будут предоставлены, **все accessReviewInstanceDecisionItems** будут рассмотрены.|
 |resourceId|String|В этом пакете будут рассмотрены все **accessReviewInstanceDecisionItems** с соответствием **resourceId.** Если они не будут предоставлены, **все accessReviewInstanceDecisionItems** будут рассмотрены.|
 
 ## <a name="response"></a>Ответ

@@ -2,15 +2,15 @@
 title: Создание externalConnection
 description: Создайте новый объект externalConnection.
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 47603c008f94cdf27227e3ae5e6419283d3e3424
-ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
+ms.openlocfilehash: 30b0719359cce26658357915c6256402a4573169
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697473"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022515"
 ---
 # <a name="create-externalconnection"></a>Создание externalConnection
 Пространство имен: microsoft.graph.externalConnectors
@@ -51,9 +51,9 @@ POST /external/connections
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|ID подключения. Обязательно.|
+|id|String|ID подключения. Обязательное.|
 |name|String|Имя подключения. Обязательный.|
-|description|String|Описание подключения. Обязательно.|
+|description|Строка|Описание подключения. Обязательное.|
 |configuration|[microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md)|Конфигурации подключения. Необязательный параметр.|
 
 

@@ -2,15 +2,15 @@
 author: daspek
 title: Get itemAnalytics
 description: Получите itemAnalytics о представлениях, которые произошли в этом ресурсе.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 25965acd48ca69b68f0715d9e075a5e71d5d1529
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 58a1f0fc04885c855c4ccffe78b4d467bd8eab42
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471691"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019806"
 ---
 # <a name="get-itemanalytics"></a>Get itemAnalytics
 

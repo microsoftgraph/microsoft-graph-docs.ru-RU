@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов identityProvider
 description: Получите коллекцию ресурсов поставщика удостоверений, настроенных для клиента и полученных из identityProviderBase.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: f121e8ad12345b1a224cfd362b4c23779ac60f5e
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: b83620f6b8dc54f13d776ca22ec6f6650d6285fe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58668032"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045770"
 ---
 # <a name="list-identityproviders"></a>Перечисление объектов identityProvider
 Пространство имен: microsoft.graph
@@ -29,7 +29,7 @@ ms.locfileid: "58668032"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
+|Для приложения|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 

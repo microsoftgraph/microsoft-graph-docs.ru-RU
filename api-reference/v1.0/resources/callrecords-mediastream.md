@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса mediaStream
 description: Тип mediaStream
-localization_priority: Normal
+ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 2ffa02db859321c09cf329e6404dcb5d065f5a688b19291548205f15858f39ad
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ead756447a5733c5d062daa2099ab36198c84c58
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54252104"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049748"
 ---
 # <a name="mediastream-resource-type"></a>Тип ресурса mediaStream
 
@@ -45,11 +45,11 @@ ms.locfileid: "54252104"
 |postForwardErrorCorrectionPacketLossRate|Двойное с плавающей точкой|Скорость потери пакетов после того, как FEC была применена, агрегирована во всех видеопотоках и кодеках.|
 |startDateTime|DateTimeOffset|Время UTC при запущении потока. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |streamDirection|microsoft.graph.callRecords.mediaStreamDirection|Указывает направление потока мультимедиа. Возможные значения: `callerToCallee`, `calleeToCaller`.|
-|streamId|String|Уникальный идентификатор для потока.|
-|wasMediaBypassed|Логическое|True, если поток мультимедиа обошел сервер-посредник и пошел прямо между клиентом и PSTN Gateway/PBX, ложным в противном случае.|
+|streamId|Строка|Уникальный идентификатор для потока.|
+|wasMediaBypassed|Логический|True, если поток мультимедиа обошел сервер-посредник и пошел прямо между клиентом и PSTN Gateway/PBX, ложным в противном случае.|
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

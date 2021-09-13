@@ -1,15 +1,15 @@
 ---
 title: Использование функций книг в Excel с помощью Microsoft Graph
 description: 'Вы можете вызвать любую функцию книги, используя следующий синтаксис: `POST /me/drive/root/workbook/functions/{function-name}`. Укажите аргументы функции в теле запроса с помощью объекта JSON. Система возвращает `value`, полученное в результате выполнения функции, и все строки `error` в объекте результата выполнения функции. Если значение `error` равно `null`, это свидетельствует об успешном выполнении функции.'
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 39b93c633951ffe8997a66132a830673459776963d5d537c61aa67fb29a41fe0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 629f0d79503b89080c48c57ec83989060f794647
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205165"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143582"
 ---
 # <a name="use-workbook-functions-in-excel-with-microsoft-graph"></a>Использование функций книг в Excel с помощью Microsoft Graph
 

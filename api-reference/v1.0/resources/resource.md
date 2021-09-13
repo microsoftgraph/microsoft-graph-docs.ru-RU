@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса OneNoteResource
 description: 'Изображение или другой ресурс файла на OneNote странице. '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 39945f3086c8470dcbccc9d11a242d71df2a99dfd99977f147b2fcd180d69d24
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f0f290329135f828ac36d5e5d805c515f2d9a207
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218417"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055852"
 ---
 # <a name="onenoteresource-resource-type"></a>Тип ресурса OneNoteResource
 
@@ -72,7 +72,7 @@ GET ../onenote/pages/{id}/content
 | содержимое              | Поток          | Поток контента
 | contentUrl           | String (URL)    | URL-адрес для скачивания контента
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 

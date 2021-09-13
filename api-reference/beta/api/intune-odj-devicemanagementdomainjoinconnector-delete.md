@@ -2,15 +2,15 @@
 title: Удаление deviceManagementDomainJoinConnector
 description: Удаляет устройствоManagementDomainJoinConnector.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f31ddad6909ffbdde390ad40f7f11af92e2c388a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ad11f05f4144bc7d41aafa825a16197fdc7db1a0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790229"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018007"
 ---
 # <a name="delete-devicemanagementdomainjoinconnector"></a>Удаление deviceManagementDomainJoinConnector
 
@@ -29,7 +29,7 @@ ms.locfileid: "58790229"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ DELETE /deviceManagement/domainJoinConnectors/{deviceManagementDomainJoinConnect
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

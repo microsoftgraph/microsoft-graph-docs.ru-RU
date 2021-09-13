@@ -1,16 +1,16 @@
 ---
 title: Обновление рабочей силыИнтеграция
 description: Обновление свойств объекта workforceIntegration.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5efd624bf4a8104465e7663a41b758ec8661a2eb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c0e2a8329b1b80252a881471031bc2b775c4e9c5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52031522"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044834"
 ---
 # <a name="update-workforceintegration"></a>Обновление рабочей силыИнтеграция
 
@@ -51,9 +51,9 @@ PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |apiVersion|Int32|Версия API для URL-адреса обратного вызова. Начните с 1.|
-|displayName|String|Имя интеграции рабочей силы.|
+|displayName|Строка|Имя интеграции рабочей силы.|
 |шифрование|workforceIntegrationEncryption|Ресурс шифрования интеграции рабочей силы. |
-|isActive|Логический|Указывает, является ли эта интеграция рабочей силы активной и доступной в настоящее время.|
+|isActive|Boolean|Указывает, является ли эта интеграция рабочей силы активной и доступной в настоящее время.|
 |supportedEntities|string| Возможные значения: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. Если выбрано несколько значений, все значения должны начинаться с первой буквы в верхнем шкафу.|
 |url|String| URL-адрес интеграции рабочей силы для вызовов из службы переноса. |
 
@@ -113,7 +113,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -164,7 +164,7 @@ PATCH https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/{workforce
 ```
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 ```
 HTTP/1.1 200 OK
 Content-type: application/json

@@ -2,15 +2,15 @@
 title: Запланировать развертывание с Windows службы обновления для бизнеса
 description: При развертывании обновления с помощью службы развертывания можно запланировать развертывание, чтобы устройства получали обновление в будущем.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: ac30d812294f9c05f7a32748d8b2094d700a816aec50c07553032499b3010f71
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cb73aad6ab0aa850088e7e5e72c3cc096bb74b50
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225617"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117509"
 ---
 # <a name="schedule-a-deployment-using-the-windows-update-for-business-deployment-service"></a>Запланировать развертывание с Windows службы обновления для бизнеса
 

@@ -2,15 +2,15 @@
 title: Создание приложения
 description: Создайте новое приложение.
 author: sureshja
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
-ms.openlocfilehash: 10d4dcff72e26e274e88b85c5e06a5ecda1de6f0
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: 45c06212c1c791d10f28e4c3b5f43d5c8720dc1f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490541"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023040"
 ---
 # <a name="create-application"></a>Создание приложения
 
@@ -29,7 +29,7 @@ ms.locfileid: "58490541"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Application.ReadWrite.All |
-|Приложение | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+|Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -89,7 +89,7 @@ Content-length: 67
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

@@ -2,15 +2,15 @@
 title: Удаление fido2AuthenticationMethodConfiguration
 description: Удаление объекта fido2AuthenticationMethodConfiguration.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9718be65a374e4bd6dc55121a63f1c4040744f8b
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 96cb2a93b517ce86b91917bfc55771586f06e8f5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469362"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046017"
 ---
 # <a name="delete-fido2authenticationmethodconfiguration"></a>Удаление fido2AuthenticationMethodConfiguration
 Пространство имен: microsoft.graph

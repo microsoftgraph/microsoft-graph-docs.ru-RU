@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Удаление доступа к элементу
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Отмена доступа к ресурсу DriveItem.
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: c21c3685aa2471026e5d7ff9e10e6f84370c4673
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ffe87066c4a1d99b6458629fcbbc58318585b636
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945112"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072843"
 ---
 # <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>Удаление разрешения на общий доступ для файла или папки
 
@@ -92,7 +92,7 @@ DELETE /me/drive/items/{item-id}/permissions/{perm-id}
 HTTP/1.1 204 No Content
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Замечания
 
 * [Диски](../resources/drive.md), у которых для свойства **driveType** задано значение `personal` (личное хранилище OneDrive), не могут создавать и изменять разрешения в корневом ресурсе DriveItem. 
 

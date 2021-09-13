@@ -1,21 +1,21 @@
 ---
-title: Различия в функциях между Azure AD Graph Microsoft Graph
-description: Описывает различия между API Azure Active Directory Azure AD и API microsoft Graph, чтобы помочь вам быстро и легко перенести приложения.
+title: Различия между Azure Active Directory Azure AD и Graph microsoft Graph
+description: Описывает различия между Azure Active Directory (Azure AD) Graph API и API microsoft Graph, чтобы помочь быстро и легко перенести приложения.
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: aafa0ab718bf050b6575205f702bf81a614b9cac14216d360134166d331ec319
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a615429eb3887970b00df211f592ec01f2009f23
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163546"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139151"
 ---
-# <a name="feature-differences-between-azure-ad-graph-and-microsoft-graph"></a>Различия в функциях между Azure AD Graph Microsoft Graph
+# <a name="feature-differences-between-azure-active-directory-azure-ad-graph-and-microsoft-graph"></a>Различия между Azure Active Directory Azure AD и Graph microsoft Graph
 
 Эта статья является *частью шага 1: просмотрите различия API* процесса переноса [приложений.](migrate-azure-ad-graph-planning-checklist.md)
 
-Многие функции в Microsoft Graph аналогично их аналогам Azure AD Graph. Однако некоторые из них были изменены и/или улучшены. Здесь вы узнаете, как адаптировать приложения, чтобы воспользоваться этими различиями.  Часто изменения незначительны, но стоит усилий.
+Многие функции в Microsoft Graph аналогично их аналогам Azure AD Graph. Однако некоторые из них были изменены или улучшены. Здесь вы узнаете, как адаптировать приложения, чтобы воспользоваться этими различиями.  Часто изменения незначительны, но стоит усилий.
 
 В этой статье исследуется, как Graph Microsoft:
 
@@ -28,7 +28,7 @@ ms.locfileid: "54163546"
 Если ваше приложение использует расширения каталогов Azure AD Graph, вы можете продолжать использовать те же основные API (с url-адресами microsoft Graph запроса), чтобы:
 
 - Управление определениями свойств расширения с помощью свойства **extensionProperties** на ресурсе [application][/graph/api/resources/application?view=graph-rest-v1.0).
-- Получите доступные свойства расширения с помощью [действия getAvailableExtensionProperties.](/graph/api/directoryobject-getavailableextensionproperties?view=graph-rest-v1.0)
+- Получите доступные свойства расширения с помощью [действия getAvailableExtensionProperties.](/graph/api/directoryobject-getavailableextensionproperties)
 - Чтение значений расширения с помощью GET и `$select`
 - Поиск по значениям расширения с помощью GET и `$filter`
 - Обновление значений расширения с помощью PATCH

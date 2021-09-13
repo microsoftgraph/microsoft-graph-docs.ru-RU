@@ -1,16 +1,16 @@
 ---
 title: Получение callRecord
 description: Извлечение свойств и связей объекта callrecord.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: dc4a309e68f0fd05d99298194a30637014de5f70
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 02551df1d778e3b8bdbb082805b6cde38f325278
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52035864"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016787"
 ---
 # <a name="get-callrecord"></a>Получение callRecord
 
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -186,7 +186,7 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}?$expand=ses
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. Если список сеансов усечен, для получения следующей страницы сеансов будет предоставлено `sessions@odata.nextLink` значение.
+Ниже приведен пример отклика. Если список сеансов усечен, для получения следующей страницы сеансов будет предоставлено `sessions@odata.nextLink` значение.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

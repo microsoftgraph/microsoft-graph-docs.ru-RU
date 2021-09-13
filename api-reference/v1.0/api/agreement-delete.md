@@ -1,16 +1,16 @@
 ---
 title: Удаление соглашения
 description: Удаление объекта соглашения.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 3afecd702e5c0e674e301f94cb6f8ec1cd95a8df
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 79bd38eb6cf472d4ea1dcbdac555a6ae9ea1f3ce
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52040156"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068391"
 ---
 # <a name="delete-agreement"></a>Удаление соглашения
 

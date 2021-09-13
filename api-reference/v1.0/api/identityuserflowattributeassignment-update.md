@@ -2,15 +2,15 @@
 title: Обновление identityUserFlowAttributeAssignment
 description: Обновление свойств объекта userAttributeAssignments.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d0835b4f3c3fc24496cdde75ddb9d6684691c600
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: be77108813bdd94679e663547d1e62230b8a9001
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920611"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045611"
 ---
 # <a name="update-identityuserflowattributeassignment"></a>Обновление identityUserFlowAttributeAssignment
 

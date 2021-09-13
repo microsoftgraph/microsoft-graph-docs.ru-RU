@@ -1,14 +1,14 @@
 ---
 title: Создание условий для работы на разных устройствах с помощью API веб-канала активности
 description: Если вы используете действия, эти возможности Майкрософт могут стимулировать работу с вашим приложением. Вы также можете показывать действия в своем приложении, чтобы пользователи могли возвращаться к задачам, которые они выполняли, на любом устройстве и любой платформе, включая Windows, Android и iOS.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: project-rome
-ms.openlocfilehash: c447d91aa981b729372cb9e4b790b5b03de756bd08f493e00f7acd1c46ba2eff
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4e820a4aeb5e99de709a1cb7d9f40bd5c38c200c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182303"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136210"
 ---
 # <a name="using-the-activity-feed-api-in-microsoft-graph-to-enable-cross-device-experiences"></a>Создание условий для работы на разных устройствах с помощью API веб-канала активности
 

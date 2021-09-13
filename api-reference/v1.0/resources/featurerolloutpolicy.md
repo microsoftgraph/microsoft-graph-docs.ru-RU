@@ -1,16 +1,16 @@
 ---
 title: тип ресурса featureRolloutPolicy
 description: Представляет политику выкатки функций, связанную с объектом каталога.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 517ee0b3b24b7bde2e651aff704b729798da64a75f3377990c87df2be84f3cec
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e40682cf794dea6a2102df23a865578b957d77f6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146876"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062728"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>тип ресурса featureRolloutPolicy
 
@@ -61,16 +61,16 @@ ms.locfileid: "54146876"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|description|String|Описание этой политики выкатки функций.|
+|description|Строка|Описание этой политики выкатки функций.|
 |displayName|String|Имя отображения для этой политики выкатки функций.|
 |функция|stagedFeatureName| Возможные значения: `passthroughAuthentication`, `seamlessSso`, `passwordHashSync`, `emailAsAlternateId`, `unknownFutureValue`.|
 |id|String| Только для чтения.|
-|isAppliedToOrganization|Логическое|Указывает, следует ли применять эту политику выкатки функций ко всей организации.|
+|isAppliedToOrganization|Логический|Указывает, следует ли применять эту политику выкатки функций ко всей организации.|
 |isEnabled|Boolean|Указывает, включена ли выкатка функций.|
 
 ### <a name="stagedfeaturename-values"></a>значения stagedFeatureName 
 
-|Member|
+|Элемент|
 |:---|
 |passthroughAuthentication|
 |seamlessSso|
@@ -78,13 +78,13 @@ ms.locfileid: "54146876"
 |emailAsAlternateId|
 |unknownFutureValue|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
 |appliesTo|Коллекция [directoryObject](directoryobject.md)| Допускается значение null. Указывает список directoryObjects, для которые включена функция.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

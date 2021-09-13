@@ -2,15 +2,15 @@
 title: тип ресурса microsoftTunnelSite
 description: Сущность, представляюая Microsoft Tunnel сайт
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7ac94541351c417b8f6ec3d49cc66898557ab3cf
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c89b5c3fecd2c20b48d4134476f7c45b0a69a344
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817651"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017326"
 ---
 # <a name="microsofttunnelsite-resource-type"></a>тип ресурса microsoftTunnelSite
 
@@ -37,13 +37,13 @@ ms.locfileid: "58817651"
 |:---|:---|:---|
 |id|String|Id MicrosoftTunnelSite|
 |displayName|String|Имя отображения MicrosoftTunnelSite|
-|description|String|Описание MicrosoftTunnelSite|
-|publicAddress|String|Имя или IP-адрес общественного домена MicrosoftTunnelSite|
+|description|Строка|Описание MicrosoftTunnelSite|
+|publicAddress|Строка|Имя или IP-адрес общественного домена MicrosoftTunnelSite|
 |upgradeWindowUtcOffsetInMinutes|Int32|Зона времени сайта, представленная в качестве минутного смещения от UTC|
 |upgradeWindowStartTime|TimeOfDay|Время запуска окна обновления сайта|
 |upgradeWindowEndTime|TimeOfDay|Время окончания дня окна обновления сайта|
 |upgradeAutomatically|Логический|Параметр автоматического обновления сайта. True для автоматических обновлений, false для ручного управления|
-|upgradeAvailable|Логический|True, если доступно обновление|
+|upgradeAvailable|Boolean|True, если доступно обновление|
 |internalNetworkProbeUrl|String|URL-адрес зонда внутреннего доступа к сети MicrosoftTunnelSite|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
 

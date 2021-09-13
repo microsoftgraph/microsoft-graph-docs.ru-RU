@@ -1,14 +1,14 @@
 ---
 title: Настраиваемый поставщик
 description: Создайте настраиваемый поставщик, чтобы включить проверку подлинности и доступ к Microsoft Graph для компонентов Microsoft Graph Toolkit при наличии существующего кода проверки подлинности в вашем приложении.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: 4327bea637043fa8280bf6c39f55cdb8a0333b1c529f4994e9c8273ff0e3d99b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: be470ed25acccb3fcdd1499b0048a33dae7c5d13
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54204928"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143573"
 ---
 # <a name="custom-provider"></a>Настраиваемый поставщик
 

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса conversationMember
 description: Представляет пользователя в беседе.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akjo
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 73d7e7526c870887edbade4555b3a699e458183f3b3753176574448525997105
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 52b71c62e203bb1adba7c14f9bf72681ff4464a3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155171"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067481"
 ---
 # <a name="conversationmember-resource-type"></a>Тип ресурса conversationMember
 

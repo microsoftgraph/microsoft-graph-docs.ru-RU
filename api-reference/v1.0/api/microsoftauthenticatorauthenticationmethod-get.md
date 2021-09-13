@@ -2,15 +2,15 @@
 title: Get microsoftAuthenticatorAuthenticationMethod
 description: Ознакомьтесь с свойствами и отношениями объекта MicrosoftAuthenticatorAuthenticationMethod.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d8391c84ea9aff2d1177976a2815e530e07fee51
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: b373215106daec467660a5ea3eaacc9f7cc4ce04
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469201"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072960"
 ---
 # <a name="get-microsoftauthenticatorauthenticationmethod"></a>Get microsoftAuthenticatorAuthenticationMethod
 Пространство имен: microsoft.graph

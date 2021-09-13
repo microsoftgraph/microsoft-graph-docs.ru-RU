@@ -1,16 +1,16 @@
 ---
 title: Обновление объекта FormatProtection
 description: Обновление свойств объекта FormatProtection.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: ac306c94da49aae3b9a5f295f1ec8390d6027365
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 908625b2c9c01447cc14ad86153870f5f44370d1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048738"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045926"
 ---
 # <a name="update-formatprotection"></a>Обновление объекта FormatProtection
 
@@ -91,7 +91,7 @@ Content-length: 45
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

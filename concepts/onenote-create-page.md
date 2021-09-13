@@ -2,14 +2,14 @@
 title: Создание страниц OneNote
 description: " Корпоративная записная книжка в Microsoft 365"
 author: jewan-microsoft
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: onenote
-ms.openlocfilehash: 4bfd49759e7503992592492b17775e1d7ffb54015434dcca4a628afc0779550b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1cf01dfdaccb403c9d5a06228441a144d737df88
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165576"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59066900"
 ---
 # <a name="create-onenote-pages"></a>Создание страниц OneNote
 

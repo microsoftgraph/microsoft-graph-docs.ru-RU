@@ -1,16 +1,16 @@
 ---
 title: Обновление conditionalaccesspolicy
 description: Обновление свойств объекта conditionalAccessPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c82bfd9d5c911068653527128b36c9e3578d189b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: ce716d5e52ecb684b393cc56c50211392fff73e5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50442119"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029635"
 ---
 # <a name="update-conditionalaccesspolicy"></a>Обновление conditionalaccesspolicy
 
@@ -29,7 +29,7 @@ ms.locfileid: "50442119"
 | Для приложений                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess и Application.Read.All |
 
 > [!NOTE]
-> Этот API имеет [известные проблемы, связанные](/graph/known-issues#permissions) с разрешениями.
+> Этот API имеет [известные проблемы, связанные](/graph/known-issues##conditional-access-policy) с разрешениями.
 
 ## <a name="http-request"></a>HTTP-запрос
 

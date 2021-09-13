@@ -1,16 +1,16 @@
 ---
 title: 'group: addFavorite'
 description: Добавление группы в список избранных групп текущего пользователя. Поддерживается только для групп Microsoft 365.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4705fce7fa1a38b3233e855ba96443ca0b6cdd0f
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 723faf0ac6ffd4e9db08e68095bf4ef62bbfcc02
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679857"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045912"
 ---
 # <a name="group-addfavorite"></a>group: addFavorite
 

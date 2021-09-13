@@ -2,14 +2,14 @@
 title: Руководство по регулированию Microsoft Graph
 description: Регулирование позволяет ограничить количество одновременных вызовов службы, чтобы предотвратить перегрузку ресурсов. Служба Microsoft Graph предназначена для обработки большого количества запросов. Регулирование помогает поддерживать оптимальную производительность и надежность службы Microsoft Graph, если выполняется слишком много запросов.
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 7ea2c6211fb0077d9dda055d1326a420e260e51e
-ms.sourcegitcommit: c541d3eceafda4812e2c0c029c95ddfb92ef58b3
+ms.openlocfilehash: 3290c1fee3921d0c367496871a5753eb1afc5fbc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53726749"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035797"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Руководство по регулированию Microsoft Graph
 
@@ -121,52 +121,16 @@ Microsoft Graph позволяет получать доступ к данным
 
 #### <a name="outlook-service-resources"></a>Ресурсы службы Outlook
 
-Службой Outlook представляются нижеперечисленные ресурсы.
+| API                                                      | Ресурсы      |
+|------------------------------------------------------------|-----------------|
+| API поиска (предварительная версия)                  | <li>[Внешний элемент (Поиск Майкрософт)](/graph/api/resources/externalitem) |
+| API профиля                                      | <li>[Фотография](/graph/api/resources/profilephoto)   |
+| API календаря | <li>[event](/graph/api/resources/event) <li> [eventMessage](/graph/api/resources/eventmessage) <li> [calendar](/graph/api/resources/calendar) <li>  [calendarGroup](/graph/api/resources/calendargroup) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment) <li> [place (предварительный просмотр)](/graph/api/resources/place)   |
+| API почты                                      | <li>[message](/graph/api/resources/message) <li>  [message](/graph/api/resources/message) <li> [mailFolder](/graph/api/resources/mailfolder) <li> [mailSearchFolder](/graph/api/resources/mailsearchfolder) <li> [messageRule](/graph/api/resources/messagerule) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment)|
+| API для управления личными контактами | <li>[contact](/graph/api/resources/contact) <li> [contactFolder](/graph/api/resources/contactfolder) <li> [outlookCategory](/graph/api/resources/outlookcategory)|
+| Социальная и рабочая аналитика | <li>[person](/graph/api/resources/person) |
+| API задач из списка дел (предварительная версия) | <li>[outlookTask](/graph/api/resources/outlooktask) <li> [outlookTaskFolder](/graph/api/resources/outlooktaskfolder) <li>[outlookTaskGroup](/graph/api/resources/outlooktaskgroup) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment)|
 
-##### <a name="search-api-resources-preview"></a>Ресурсы API поиска (предварительная версия)
-
-- [Внешний элемент (Поиск Майкрософт)](/graph/api/resources/externalitem?view=graph-rest-beta)
-
-##### <a name="profile-api-resources"></a>Ресурсы API профиля
-
-- [Фотография](/graph/api/resources/profilephoto?view=graph-rest-1.0)
-
-##### <a name="calendar-api-resources"></a>Ресурсы API календаря
-
-- [event](/graph/api/resources/event)
-- [eventMessage](/graph/api/resources/eventmessage)
-- [calendar](/graph/api/resources/calendar)
-- [calendarGroup](/graph/api/resources/calendargroup)
-- [outlookCategory](/graph/api/resources/outlookcategory)
-- [attachment](/graph/api/resources/attachment)
-- [place (предварительный просмотр)](/graph/api/resources/place)
-
-##### <a name="mail-api-resources"></a>Ресурсы API почты
-
-- [message](/graph/api/resources/message)
-- [mailFolder](/graph/api/resources/mailfolder)
-- [mailSearchFolder](/graph/api/resources/mailsearchfolder)
-- [messageRule](/graph/api/resources/messagerule)
-- [outlookCategory](/graph/api/resources/outlookcategory)
-- [attachment](/graph/api/resources/attachment)
-
-##### <a name="personal-contacts-api-resources"></a>Ресурсы API для управления личными контактами
-
-- [contact](/graph/api/resources/contact)
-- [contactFolder](/graph/api/resources/contactfolder)
-- [outlookCategory](/graph/api/resources/outlookcategory)
-
-##### <a name="social-and-workplace-intelligence-resources"></a>Ресурсы социальной и рабочей аналитики
-
-- [person](/graph/api/resources/person)
-
-##### <a name="to-do-tasks-api-preview-resources"></a>Ресурсы API задач из списка дел (предварительный просмотр)
-
-- [outlookTask](/graph/api/resources/outlooktask)
-- [outlookTaskFolder](/graph/api/resources/outlooktaskfolder)
-- [outlookTaskGroup](/graph/api/resources/outlooktaskgroup)
-- [outlookCategory](/graph/api/resources/outlookcategory)
-- [attachment](/graph/api/resources/attachment)
 
 ### <a name="cloud-communication-service-limits"></a>Ограничения службы облачного взаимодействия
 
@@ -183,12 +147,13 @@ Microsoft Graph позволяет получать доступ к данным
 | Частота запросов | 120 запросов в 1 минуту и 400 запросов в 1 час | 240 запросов в 1 минуту и 800 запросов в 1 час |
 | Параллельные запросы | 5 параллельных запросов | 20 параллельных запросов |
 
-Указанные выше ограничения действуют для следующих ресурсов:  
-onenote, notebook, sectionGroup, onenoteSection, onenotePage, onenoteResource, onenoteOperation
+Указанные выше ограничения действуют для следующих ресурсов:
 
-Дополнительные сведения о рекомендациях см. в статье [Регулирование в API OneNote и как его избежать](https://developer.microsoft.com/ru-RU/office/blogs/onenote-api-throttling-and-how-to-avoid-it/).  
+[!INCLUDE [Onenote throttling documentation](../includes/throttling-onenote.md)]
 
-> **Примечание.** Перечисленные выше ресурсы не возвращают заголовок `Retry-After` в откликах `429 Too Many Requests`.
+Дополнительные сведения о рекомендациях см. в статье [Регулирование в API OneNote и как его избежать](https://developer.microsoft.com/en-us/office/blogs/onenote-api-throttling-and-how-to-avoid-it/).
+
+**Примечание.** Перечисленные выше ресурсы не возвращают заголовок `Retry-After` в откликах `429 Too Many Requests`.
 
 ### <a name="project-rome-service-limits"></a>Ограничения службы Project Rome
 
@@ -197,8 +162,11 @@ onenote, notebook, sectionGroup, onenoteSection, onenotePage, onenoteResource, o
 | GET          | 400 запросов в течение 5 минут и 12000 запросов в течение 1 дня |
 | POST, PUT, PATCH, DELETE | 100 запросов в течение 5 минут и 8000 запросов в течение 1 дня |
 
-Указанные выше ограничения действуют для следующих ресурсов:  
-activityHistoryItem, userActivity
+Указанные выше ограничения действуют для следующих ресурсов:
+
+| <!-- fake header--> |
+|--|
+| <ul> <li> [activityHistoryItem](/graph/api/resources/activityhistoryitem) <li> [userActivity](/graph/api/resources/useractivity) </ul>|
 
 ### <a name="microsoft-teams-service-limits"></a>Ограничения службы Microsoft Teams
 
@@ -226,50 +194,13 @@ activityHistoryItem, userActivity
 
 См. Также [ограничения Microsoft Teams](/graph/api/resources/teams-api-overview#microsoft-teams-limits) и [требования к опросу](/graph/api/resources/teams-api-overview#polling-requirements).
 
-Указанные выше ограничения действуют для следующих ресурсов:  
-aadUserConversationMember, appCatalogs, changeTrackedEntity, channel, chatMessage, chatMessageHostedContent, conversationMember, offerShiftRequest, openShift, openShiftChangeRequest, schedule, scheduleChangeRequest, schedulingGroup, shift, shiftPreferences, swapShiftsChangeRequest, team, teamsApp, teamsAppDefinition, teamsAppInstallation, teamsAsyncOperation, teamsTab, teamsTemplate, teamwork, timeOff, timeOffReason, timeOffRequest, userSettings, workforceIntegration.
+[!INCLUDE [Teams throttling documentation](../includes/throttling-teams.md)]
 
 ### <a name="identity-and-access-service-limits"></a>Ограничения службы удостоверения и доступа
 
-Эти ограничения службы действуют для следующих объектов:
+Ограничения служб в этом разделе применяются к следующим объектам.
 
-- [Объект каталога](/graph/api/resources/directoryobject)
-- [Свойство расширения](/graph/api/resources/extensionproperty)
-- [Административная единица](/graph/api/resources/administrativeunit)
-- [Приложение](/graph/api/resources/application)
-- [Назначение ролей приложения](/graph/api/resources/approleassignment)
-- [Настройка проверки подлинности на основе сертификата](/graph/api/resources/certificatebasedauthconfiguration)
-- [Контакты организации](/graph/api/resources/orgcontact)
-- [Устройство](/graph/api/resources/device)
-- [Ссылка партнера на объект каталога](/graph/api/resources/directoryobjectpartnerreference)
-- [Роль каталога](/graph/api/resources/directoryrole)
-- [Шаблон для ролей каталога](/graph/api/resources/directoryroletemplate)
-- [Домен](/graph/api/resources/domain)
-- [DNS-запись домена](/graph/api/resources/domaindnsrecord)
-- [DNS-запись CNAME домена](/graph/api/resources/domaindnscnamerecord)
-- [DNS-запись MX домена](/graph/api/resources/domaindnsmxrecord)
-- [DNS-запись SRV домена](/graph/api/resources/domaindnssrvrecord)
-- [DNS-запись TXT домена](/graph/api/resources/domaindnstxtrecord)
-- [Недоступная запись DNS домена](/graph/api/resources/domaindnsunavailablerecord)
-- [Конечная точка](/graph/api/resources/endpoint)
-- [Свойство расширения](/graph/api/resources/extensionproperty)
-- [Сведения о лицензии](/graph/api/resources/licensedetails)
-- [Группа](/graph/api/resources/group)
-- [Политика времени ожидания на основании активности](/graph/api/resources/activitybasedtimeoutpolicy)
-- [Политика сопоставления утверждений](/graph/api/resources/claimsmappingpolicy)
-- [Политика обнаружения домашней области](/graph/api/resources/homerealmdiscoverypolicy)
-- [Политика выпуска маркеров](/graph/api/resources/tokenissuancepolicy)
-- [Политика времени существования маркера](/graph/api/resources/tokenlifetimepolicy)
-- [Основа политики](/graph/api/resources/policybase)
-- [Политика STS](/graph/api/resources/stspolicy)
-- [Соглашение](/graph/api/resources/contract)
-- [Субъект-служба](/graph/api/resources/serviceprincipal)
-- [Подписанная единица SKU](/graph/api/resources/subscribedsku)
-- [Предоставление разрешения OAuth2](/graph/api/resources/oauth2permissiongrant)
-- [Организация](/graph/api/resources/organization)
-- [Пользователь](/graph/api/resources/user)
-- [Параметр группы](/graph/api/resources/groupsetting)
-- [Шаблон параметров группы](/graph/api/resources/groupsettingtemplate)
+[!INCLUDE [Identity and access throttling documentation](../includes/throttling-identity-and-access.md)]
 
 #### <a name="pattern"></a>Шаблон
 
@@ -357,7 +288,18 @@ aadUserConversationMember, appCatalogs, changeTrackedEntity, channel, chatMessag
   - WriteLimitExceeded — регулирование вызвано превышением ограничения на запись.
   - ResourceUnitLimitExceeded — регулирование вызвано превышением ограничения для выделенного ресурса.
 
-### <a name="information-protection"></a>Защита информации
+### <a name="identity-and-access-reports-service-limits"></a>Ограничения службы отчетов удостоверений и доступа
+
+| Тип запроса | Ограничение на клиента для всех приложений | Ограничение на приложение по клиенту |
+| ------------ | ----------------------------- | ------------------------ |
+| POST, PUT, DELETE, PATCH | 200 запросов за 20 секунд | 100 запросов за 20 секунд |
+| Любой | 2000 запросов за 20 секунд | 1000 запросов за 20 секунд |
+
+Указанные выше ограничения действуют для следующих ресурсов:
+
+[!INCLUDE [Azure AD identity and access reports throttling documentation](../includes/throttling-aad-reports.md)]
+
+### <a name="information-protection-service-limits"></a>Ограничения службы защиты информации
 
 Указанные ниже ограничения применяются к любому запросу в `/informationProtection`.
 
@@ -365,8 +307,7 @@ aadUserConversationMember, appCatalogs, changeTrackedEntity, channel, chatMessag
 |---------------------------|-------------------------------------------------------------|------------------------------------------------------|
 | POST                      | 150 запросов в течение 15 минут и 10000 запросов в течение 24 часов | 1 запрос в течение 15 минут и 3 запроса в течение 24 часов |
 
-Указанные выше ограничения действуют для следующих ресурсов:  
-threatAssessmentRequest, threatAssessmentResult, mailAssessmentRequest, emailFileAssessmentRequest, fileAssessmentRequest, urlAssessmentRequest.
+[!INCLUDE [Information protection throttling documentation](../includes/throttling-information-protection.md)]
 
 ### <a name="identity-protection-and-conditional-access-service-limits"></a>Ограничения в отношении защиты удостоверений и службы условного доступа
 
@@ -374,8 +315,8 @@ threatAssessmentRequest, threatAssessmentResult, mailAssessmentRequest, emailFil
 | ------------ | ------- |
 | Любой | 1 запрос в секунду |
 
-Указанные выше ограничения действуют для следующих ресурсов:  
-riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocation, ipNamedLocation, conditionalAccessPolicy.
+[!INCLUDE [Information protection throttling documentation](../includes/throttling-identityprotection-ca.md)]
+
 
 > **Примечание.** Перечисленные выше ресурсы не возвращают заголовок `Retry-After` в откликах `429 Too Many Requests`.
 
@@ -388,8 +329,12 @@ riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocat
 | 10 000 запросов API в течение 10-минутного периода                  | Конечные точки версии 1.0 и бета-версии |
 | 4 параллельных запроса                                      | Конечные точки версии 1.0 и бета-версии   |
 
-Указанные выше ограничения действуют для следующих ресурсов:  
-people, trending, usedinsight, sharedInsight.
+Указанные выше ограничения действуют для следующих ресурсов:
+
+| <!-- fake header--> |
+|--|
+| <ul> <li> [people](/graph/api/resources/people) <li> [sharedInsight](/graph/api/resources/sharedinsight) <li> [trending](/graph/api/resources/trending)  <li> [usedInsight](/graph/api/resources/usedinsight) </ul>|
+
 
 ### <a name="microsoft-graph-reports-service-limits"></a>Ограничения службы отчетов Microsoft Graph
 
@@ -402,7 +347,8 @@ people, trending, usedinsight, sharedInsight.
 
 Указанные выше ограничения применяются по отдельности к каждому API отчетов. Например, запрос к API отчетов о действиях пользователей Microsoft Teams и запрос к API отчетов о действиях пользователей Outlook в течение 10 минут будут рассматриваться как 1 запрос из 14 для каждого API, а не 2 запроса из 14 для обоих.
 
-Указанные выше ограничения применяются для ресурса **report**.  
+Указанные выше ограничения применяются к всем ресурсам [отчетов об использовании](/graph/api/resources/report).
+
 
 ### <a name="invitation-manager-service-limits"></a>Ограничения службы диспетчера приглашений
 
@@ -429,21 +375,22 @@ people, trending, usedinsight, sharedInsight.
 | ------------ | ------------------------ |
 | Любой          | 455 запросов в течение 10 секунд |
 
-Указанные выше ограничения действуют для следующих ресурсов: openTypeExtension, schemaExtension, administrativeUnit, contact, device, event, group, message, organization, post и user.
+Указанные выше ограничения действуют для следующих ресурсов:[!INCLUDE [Open and schema extensions throttling documentation](../includes/throttling-extensions.md)]
+
 
 ### <a name="files-and-lists-service-limits"></a>Ограничения службы для файлов и списков
 
 Ограничения службы для OneDrive, OneDrive для бизнеса и SharePoint Online недоступны. Подробнее см. в статье [Почему нельзя просто назвать точные пределы регулирования?](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online#why-cant-you-just-tell-me-the-exact-throttling-limits).
 
-Сведения, приведенные в этой статье, относятся к следующим ресурсам:  
-baseItem, baseItemVersion, columnDefinition, columnLink, contentType, drive, driveItem, driveItemVersion, fieldValueSet, itemActivity, itemActivityStat, itemAnalytics, list, listItem, listItemVersion, permission, sharedDriveItem, site и thumbnailSet.
+Сведения, приведенные в этой статье, относятся к следующим ресурсам:
+
+[!INCLUDE [Files and lists throttling documentation](../includes/throttling-files-and-lists.md)]
 
 ### <a name="tasks-and-plans-service-limits"></a>Ограничения службы для задач и планов
 
 Ограничения службы для Планировщика недоступны.
 
-Сведения, приведенные в этой статье, относятся к следующим ресурсам:  
-planner, plannerAssignedToTaskBoardTaskFormat, plannerBucket, plannerBucketTaskBoardTaskFormat, plannerGroup, plannerPlan, plannerPlanDetails, plannerProgressTaskBoardTaskFormat, plannerTask, plannerTaskDetails и plannerUser.
+Сведения, указанные выше, относятся к следующим ресурсам: [!INCLUDE [Tasks and plans throttling documentation](../includes/throttling-tasks-and-plans.md)]
 
 ### <a name="identity-and-access-data-policy-operation-service-limits"></a>Ограничения службы операций с политикой данных удостоверений и доступа
 
@@ -452,7 +399,11 @@ planner, plannerAssignedToTaskBoardTaskFormat, plannerBucket, plannerBucketTaskB
 | POST для `exportPersonalData` | 1000 запросов в день по любой теме и 100 запросов по теме в день |
 | Любой другой запрос | 10000 запросов в час |
 
-Указанные выше ограничения действуют для следующих ресурсов: dataPolicyOperation.
+Указанные выше ограничения действуют для следующих ресурсов:
+
+| <!-- fake header--> |
+|--|
+| <ul> <li> [dataPolicyOperation](/graph/api/resources/datapolicyoperation) </ul>|
 
 > **Примечание.** Перечисленные выше ресурсы не возвращают заголовок `Retry-After` в откликах `429 Too Many Requests`.
 
@@ -479,7 +430,7 @@ planner, plannerAssignedToTaskBoardTaskFormat, plannerBucket, plannerBucketTaskB
 [!INCLUDE [Intune bundles throttling documentation](../includes/throttling-intune-bundles.md)]
 [!INCLUDE [Intune chromebook sync throttling documentation](../includes/throttling-intune-chromebook-sync.md)]
 [!INCLUDE [Intune company terms throttling documentation](../includes/throttling-intune-company-terms.md)]
-[!INCLUDE [Intune device config V2 throttling documentation](../includes/throttling-intune-device-config-v2.md)]
+[!INCLUDE [Intune device config v2 throttling documentation](../includes/throttling-intune-device-config-v2.md)]
 [!INCLUDE [Intune device configuration throttling documentation](../includes/throttling-intune-device-configuration.md)]
 [!INCLUDE [Intune device enrollment throttling documentation](../includes/throttling-intune-device-enrollment.md)]
 [!INCLUDE [Intune device intent throttling documentation](../includes/throttling-intune-device-intent.md)]
@@ -494,7 +445,6 @@ planner, plannerAssignedToTaskBoardTaskFormat, plannerBucket, plannerBucketTaskB
 [!INCLUDE [Intune partner integration throttling documentation](../includes/throttling-intune-partner-integration.md)]
 [!INCLUDE [Intune rbac throttling documentation](../includes/throttling-intune-rbac.md)]
 [!INCLUDE [Intune remote assistance throttling documentation](../includes/throttling-intune-remote-assistance.md)]
-[!INCLUDE [Intune reporting throttling documentation](../includes/throttling-intune-reporting.md)]
 [!INCLUDE [Intune telephony throttling documentation](../includes/throttling-intune-telephony.md)]
 [!INCLUDE [Intune TEM throttling documentation](../includes/throttling-intune-tem.md)]
 [!INCLUDE [Intune troubleshooting throttling documentation](../includes/throttling-intune-troubleshooting.md)]
@@ -524,8 +474,10 @@ planner, plannerAssignedToTaskBoardTaskFormat, plannerBucket, plannerBucketTaskB
 |---------------------------|------------------------------|----------------------------|
 | Любой         | 500 запросов за 10 секунд   | 1000 запросов за 10 секунд
 |Любой          | 15 000 запросов за 3600 секунд|30 000 запросов за 3600 секунд|
-| GET me/задание  | 50 запросов за 10 секунд | 150 запросов за 10 секунд |  
+| GET me/задание  | 50 запросов за 10 секунд | 150 запросов за 10 секунд |
 
-Предыдущие ограничения действуют для следующих ресурсов: [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest)
-[educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest)
-[educationResource](/graph/api/resources/educationresource?view=graph-rest)
+Указанные выше ограничения действуют для следующих ресурсов:
+
+| <!-- fake header--> |
+|--|
+| <ul> <li> [educationAssignment](/graph/api/resources/educationassignment) <li> [educationSubmission](/graph/api/resources/educationsubmission) <li> [trending](/graph/api/resources/trending)  <li> [educationResource](/graph/api/resources/educationresource) </ul>|

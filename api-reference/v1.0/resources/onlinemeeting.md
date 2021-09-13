@@ -2,15 +2,15 @@
 title: Тип ресурса onlineMeeting
 description: Содержит сведения о собрании.
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 4c0930a48d0586a5b6c8b128e1f25102e20bf773
-ms.sourcegitcommit: ac0e544853ce8476d76dc321e0d34e4b668b7651
+ms.openlocfilehash: f951d5274454e31643acb008488ceffe51451a64
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "58350991"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072017"
 ---
 # <a name="onlinemeeting-resource-type"></a>Тип ресурса onlineMeeting
 
@@ -34,20 +34,22 @@ ms.locfileid: "58350991"
 | :-------------------- | :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)                       | Указывает, кто может быть презентовщиком на собрании. Возможные значения перечислены в следующей таблице.                          |
 | allowAttendeeToEnableCamera     | Логический                       | Указывает, могут ли участники включить камеру.                          |
-| allowAttendeeToEnableMic     | Логический                       | Указывает, могут ли участники включить микрофон.                          |
+| allowAttendeeToEnableMic     | Boolean                       | Указывает, могут ли участники включить микрофон.                          |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Указывает режим чата собраний. |
-| allowTeamworkReactions | Логический | Указывает, Teams для собрания включены ли Teams реакции. |
+| allowTeamworkReactions | Boolean | Указывает, Teams для собрания включены ли Teams реакции. |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | Сведения о доступе к телефону для собрания в Интернете. Только для чтения.                                                   |
+| broadcastSettings              | [broadcastMeetingSettings](broadcastMeetingSettings.md)                      | Параметры, связанных с живым событием.                                                                  |
 | chatInfo              | [chatInfo](chatinfo.md)                       | Сведения о чате, связанные с этой онлайн-встречей.                                                                  |
-| creationDateTime      | DateTime                                      | Время создания собрания в UTC. Только для чтения.                                                                               |
-| endDateTime           | DateTime                                      | Время окончания собрания в UTC.                                                                                               |
+| creationDateTime      | Даты и время                                      | Время создания собрания в UTC. Только для чтения.                                                                               |
+| endDateTime           | Даты и время                                      | Время окончания собрания в UTC.                                                                                               |
 | id                    | String                                        | ID по умолчанию, связанный с онлайн-собранием. Только для чтения.                                                              |
+| isBroadcast  | Логический                                       | Указывает, является ли это событием в прямом эфире.                  |
 | isEntryExitAnnounced  | Логический                                       | Указывает, следует ли объявлять, когда звонители присоединяются или уходят.                                                                     |
 | joinInformation       | [itemBody](itembody.md)                       | Сведения о присоединиться в варианте языка и языка, указанные в `Accept-Language` заглавной странице HTTP запроса. Только для чтения. |
 | joinWebUrl            | Строка                                        | URL-адрес присоединиться к собранию в Интернете. Только для чтения.                                                                             |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Указывает, какие участники могут обойти вестибюль собрания.                                                               |
 | participants          | [meetingParticipants](meetingparticipants.md) | Участники, связанные с онлайн-собранием.  Это включает организатора и участников.                       |
-| startDateTime         | DateTime                                      | Время начала собрания в UTC.                                                                                             |
+| startDateTime         | Даты и время                                      | Время начала собрания в UTC.                                                                                             |
 | subject               | String                                        | Тема собрания в Интернете.                                                                                         |
 | videoTeleconferenceId | Строка                                        | ID видеоконференции. Только для чтения.                                                                                  |
 
@@ -56,7 +58,7 @@ ms.locfileid: "58350991"
 | Значение              | Описание                                                   |
 | ------------------ | ------------------------------------------------------------- |
 | все           | Каждый — это презентер (это параметр по умолчанию).             |
-| organization       | Каждый в организации организатора — это презентер.          |
+| organization;       | Каждый в организации организатора — это презентер.          |
 | roleIsPresenter    | Только участники, роль которых является презентатором, являются участниками. |
 | organizer          | Только организатор — это презентер.                           |
 | unknownFutureValue | Unknow future value.                                          |
@@ -97,6 +99,8 @@ ms.locfileid: "58350991"
   "isEntryExitAnnounced": "Boolean",
   "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
   "allowedPresenters": "String",
+  "isBroadcast": "Boolean",
+  "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastSettings"},
   "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
   "allowTeamworkReactions": "Boolean",
   "allowAttendeeToEnableMic": "Boolean",
