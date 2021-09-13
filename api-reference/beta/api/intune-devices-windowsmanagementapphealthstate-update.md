@@ -2,15 +2,15 @@
 title: Обновление windowsManagementAppHealthState
 description: Обновление свойств объекта windowsManagementAppHealthState.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0ba8364a396a26e2cdb5ade4a7f6d586959251ca
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: af254521e32ab284d4c3f1406ee1c0368d52cf96
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821846"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097091"
 ---
 # <a name="update-windowsmanagementapphealthstate"></a>Обновление windowsManagementAppHealthState
 

@@ -2,15 +2,15 @@
 title: Действие enableLostMode
 description: Включить потерянный режим
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6700548cc221116fdc3394edb2d77212ad0b1dde
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 84ba7b5d3e95ed2b065e2cda3c5a4f04d430f9d5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786448"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59088026"
 ---
 # <a name="enablelostmode-action"></a>Действие enableLostMode
 
@@ -29,7 +29,7 @@ ms.locfileid: "58786448"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.PriviligedOperation.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.PriviligedOperation.All|
+|Для приложений|DeviceManagementManagedDevices.PriviligedOperation.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

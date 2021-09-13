@@ -2,15 +2,15 @@
 title: Получить androidForWorkMobileAppConfiguration
 description: Чтение свойств и связей объекта AndroidForWorkMobileAppConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e51963e610c52825e04aa6ae903a5a82800459cb
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ade684b4968b179d6dcdf5eb82a1c3ae601907f4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799187"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59088922"
 ---
 # <a name="get-androidforworkmobileappconfiguration"></a>Получить androidForWorkMobileAppConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "58799187"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

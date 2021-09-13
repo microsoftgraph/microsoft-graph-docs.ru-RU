@@ -2,15 +2,15 @@
 title: Создание политикиSetAssignment
 description: Создание нового объекта policySetAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e96ad5675e1ff610624798c761cdb863b9fb2f15
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fb7f83a8872c3da422616af6f50260a1d33fd0c5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796315"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59116467"
 ---
 # <a name="create-policysetassignment"></a>Создание политикиSetAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "58796315"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +53,7 @@ POST /deviceAppManagement/policySets/{policySetId}/assignments
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Клавиша PolicySetAssignment.|
+|id|String|Клавиша PolicySetAssignment.|
 |lastModifiedDateTime|DateTimeOffset|Последнее измененное время policySetAssignment.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Целевая группа PolicySetAssignment|
 

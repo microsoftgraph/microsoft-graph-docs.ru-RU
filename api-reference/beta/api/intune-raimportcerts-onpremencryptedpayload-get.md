@@ -2,15 +2,15 @@
 title: Get onPremEncryptedPayload
 description: Чтение свойств и связей объекта onPremEncryptedPayload.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 77bd03fe86e958589d0af8a0aba2408d506ef1e0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 445b4671fdd2f08cf140fc6f364aabc275528885
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816291"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59132633"
 ---
 # <a name="get-onpremencryptedpayload"></a>Get onPremEncryptedPayload
 

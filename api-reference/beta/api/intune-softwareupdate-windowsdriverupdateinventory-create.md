@@ -2,15 +2,15 @@
 title: Создание windowsDriverUpdateInventory
 description: Создание нового объекта WindowsDriverUpdateInventory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 62ef5afd14750065be3ebbdd883b5a0eb0dac8ef
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ae8ea34598bb8c908de22687707f1db20413b78c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792162"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138605"
 ---
 # <a name="create-windowsdriverupdateinventory"></a>Создание windowsDriverUpdateInventory
 
@@ -29,7 +29,7 @@ ms.locfileid: "58792162"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,12 +53,12 @@ POST /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|ID драйвера.|
+|id|String|ID драйвера.|
 |name|String|Имя водителя.|
 |version|String|Версия драйвера.|
 |manufacturer|String|Производитель драйвера.|
 |releaseDateTime|DateTimeOffset|Время выпуска драйвера.|
-|driverClass|Строка|Класс драйвера.|
+|driverClass|String|Класс драйвера.|
 |applicableDeviceCount|Int32|Количество устройств, для которых применим этот драйвер.|
 |approvalStatus|[driverApprovalStatus](../resources/intune-softwareupdate-driverapprovalstatus.md)|Состояние утверждения для этого драйвера. Возможные значения: `needsReview`, `declined`, `approved`, `suspended`.|
 |category|[driverCategory](../resources/intune-softwareupdate-drivercategory.md)|Категория для этого драйвера. Возможные значения: `recommended`, `previouslyApproved`, `other`.|

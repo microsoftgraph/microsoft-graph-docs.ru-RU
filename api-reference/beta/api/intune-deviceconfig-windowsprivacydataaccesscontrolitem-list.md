@@ -2,15 +2,15 @@
 title: Список windowsPrivacyDataAccessControlItems
 description: Список свойств и связей объектов windowsPrivacyDataAccesssControlItem.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e54204f4a931fc5cb80b4b9af64bee829d0b9cd0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 494d421bc7c4c3c485b5f437e0bc026993fdffc8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787724"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103111"
 ---
 # <a name="list-windowsprivacydataaccesscontrolitems"></a>Список windowsPrivacyDataAccessControlItems
 
@@ -29,7 +29,7 @@ ms.locfileid: "58787724"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

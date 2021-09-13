@@ -2,15 +2,15 @@
 title: Списки политикSets
 description: Список свойств и связей объектов policySet.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 15435a1aa85af86dbb351133b6c01b35a215512c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b96e47ddc09bbc50c358f4e2179f6b691e3f6ef2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819747"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59107535"
 ---
 # <a name="list-policysets"></a>Списки политикSets
 

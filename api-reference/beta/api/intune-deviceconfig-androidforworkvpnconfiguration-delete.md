@@ -2,15 +2,15 @@
 title: Удаление androidForWorkVpnConfiguration
 description: Удаляет androidForWorkVpnConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c52093eee49e402e9e25f3103bbacb4f90ebbef7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4ef0ebca9d10883b68f5671bdcd46f267232b973
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804787"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103363"
 ---
 # <a name="delete-androidforworkvpnconfiguration"></a>Удаление androidForWorkVpnConfiguration
 

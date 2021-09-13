@@ -2,15 +2,15 @@
 title: Тип ресурса windowsInformationProtectionResourceCollection
 description: Коллекция ресурсов Windows Information Protection
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 67c2248e15557f77dbcc6456fe5d5070915e2197
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7585411dae100f3c27c2a706a83a476dee3dab57
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785110"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115326"
 ---
 # <a name="windowsinformationprotectionresourcecollection-resource-type"></a>Тип ресурса windowsInformationProtectionResourceCollection
 
@@ -25,7 +25,7 @@ ms.locfileid: "58785110"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображаемое имя|
+|displayName|String|Отображаемое имя|
 |resources|Коллекция строк|Коллекция ресурсов|
 
 ## <a name="relationships"></a>Связи

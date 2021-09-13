@@ -2,15 +2,15 @@
 title: Удаление intuneBrandingProfile
 description: Удаляет intuneBrandingProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c10c5d85d413aa0a1069d85b98b1d1f32d3e382d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6dd96d0b18b1a1c4553989560fd4a94769b1b7ac
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789722"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59092422"
 ---
 # <a name="delete-intunebrandingprofile"></a>Удаление intuneBrandingProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "58789722"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

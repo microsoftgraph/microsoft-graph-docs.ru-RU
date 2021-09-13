@@ -2,15 +2,15 @@
 title: тип ресурса mobileAppProvisioningConfigGroupAssignment
 description: Содержит свойства, используемые для назначения конфигурации подготовка приложений для группы.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a5232a4236960a923a58123ce94f48daaf2b3173
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 181da0c58e26c1ea9b814d5ec9b05d82a80a4396
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798436"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124226"
 ---
 # <a name="mobileappprovisioningconfiggroupassignment-resource-type"></a>тип ресурса mobileAppProvisioningConfigGroupAssignment
 
@@ -34,8 +34,8 @@ ms.locfileid: "58798436"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|targetGroupId|Строка|ID группы AAD, в которой ориентирована конфигурация подготовка приложений.|
-|id|Строка|Ключ объекта.|
+|targetGroupId|String|ID группы AAD, в которой ориентирована конфигурация подготовка приложений.|
+|id|String|Ключ объекта.|
 
 ## <a name="relationships"></a>Связи
 Нет

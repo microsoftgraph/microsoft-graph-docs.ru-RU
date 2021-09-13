@@ -2,15 +2,15 @@
 title: тип ресурса userExperienceAnalyticsInsight
 description: Анализ пользовательских интерфейсов — это рекомендация по улучшению показателей аналитики пользовательских интерфейсов.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7d0d5baaded847858ef91725ff52d8cc1e1d8e02
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5e2dfcc6da42943743043674ce17a5619a59bf1f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794401"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147873"
 ---
 # <a name="userexperienceanalyticsinsight-resource-type"></a>тип ресурса userExperienceAnalyticsInsight
 
@@ -25,8 +25,8 @@ ms.locfileid: "58794401"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|userExperienceAnalyticsMetricId|Строка|Уникальный идентификатор аналитики пользовательского интерфейса.|
-|insightId|Строка|Уникальный идентификатор аналитики пользовательского интерфейса.|
+|userExperienceAnalyticsMetricId|String|Уникальный идентификатор аналитики пользовательского интерфейса.|
+|insightId|String|Уникальный идентификатор аналитики пользовательского интерфейса.|
 |values|[коллекция userExperienceAnalyticsInsightValue](../resources/intune-devices-userexperienceanalyticsinsightvalue.md)|Значение аналитики пользовательского интерфейса.|
 |severity|[userExperienceAnalyticsInsightSeverity](../resources/intune-devices-userexperienceanalyticsinsightseverity.md)|Значение аналитики пользовательского интерфейса. Возможные значения: `none`, `informational`, `warning`, `error`.|
 

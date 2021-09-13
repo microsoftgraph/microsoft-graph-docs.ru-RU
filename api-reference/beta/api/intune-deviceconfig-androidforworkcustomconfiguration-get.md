@@ -2,15 +2,15 @@
 title: Get AndroidForWorkCustomConfiguration
 description: Чтение свойств и связей объекта AndroidForWorkCustomConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2f55899db819e448c8a18410bbb6048a84f881bb
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1e1c01936dac1875a4ebaef6b1e94848f15c07e1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806896"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108522"
 ---
 # <a name="get-androidforworkcustomconfiguration"></a>Get AndroidForWorkCustomConfiguration
 

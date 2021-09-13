@@ -1,16 +1,16 @@
 ---
 title: Обновление itemPublication
 description: Обновление свойств объекта itemPublication.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: bf715534a5af58136f91b7567fa675d85c174696
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 750be9d2841bb7b9fc60440b1658f55937c0c129
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50770383"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59087445"
 ---
 # <a name="update-itempublication"></a>Обновление itemPublication
 
@@ -56,7 +56,7 @@ PATCH /users/{id | userPrincipalName}/profile/publications/{id}
 |displayName    |String      |Название публикации.                         |
 |вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |publishedDate  |Дата        |Дата публикации.      |
-|publisher      |String      |Публикация или издатель для публикации.     |
+|publisher      |String      |Публикация или Publisher для публикации.     |
 |source|[personDataSource](../resources/persondatasource.md)|Где значения возникли, если синхронизированы с другой службы. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |thumbnailUrl   |String      |URL-адрес, ссылающийся на эскиз публикации.   |
 |webUrl         |String      |URL-адрес, ссылающийся на публикацию.                  |

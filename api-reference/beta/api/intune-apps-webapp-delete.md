@@ -2,15 +2,15 @@
 title: Delete webApp
 description: Удаляет объект webApp.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cd0758d4a683a27366359d926f9610349a9020ed
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dce1dd1867a4bad50b1b705421ddca239fbe4b71
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784732"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133907"
 ---
 # <a name="delete-webapp"></a>Delete webApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "58784732"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

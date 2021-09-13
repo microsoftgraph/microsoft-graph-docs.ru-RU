@@ -2,15 +2,15 @@
 title: тип enum androidManagedStoreAppConfigurationSchemaItemDataType
 description: Тип данных для элемента конфигурации в пользовательской схеме конфигурации приложения Android
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c32d43ced47d236c45dc5a0fbae8074013e39e1a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ffae1039f3be92c8a0e5b645ccc795b183658f83
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784263"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136658"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitemdatatype-enum-type"></a>тип enum androidManagedStoreAppConfigurationSchemaItemDataType
 
@@ -27,7 +27,7 @@ ms.locfileid: "58784263"
 |:---|:---|:---|
 |логический|0|Пока не задокументировано.|
 |integer|1|Пока не задокументировано.|
-|string|2|Пока не задокументировано.|
+|String|2|Пока не задокументировано.|
 |выбор|3|Пока не задокументировано.|
 |multiselect|4 |Пока не задокументировано.|
 |bundle|5 |Пока не задокументировано.|

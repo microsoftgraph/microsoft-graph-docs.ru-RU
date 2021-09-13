@@ -1,16 +1,16 @@
 ---
 title: тип ресурса logonUser
 description: Содержит сведения о входе пользователя в этот хост
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 20a5f4ab827a09fd6254f3cbe8a590eb20fd76223eb8f24445fbe3b52a5f3ea5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c7c696850acfa66d4dfbbc345f518234c4698aac
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54193484"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59120040"
 ---
 # <a name="logonuser-resource-type"></a>тип ресурса logonUser
 
@@ -22,13 +22,13 @@ ms.locfileid: "54193484"
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|accountDomain|Строка|Домен учетной записи пользователя, используемый для логона.|
-|имя учетной записи|Строка|Имя учетной записи учетной записи пользователя, используемой для логона.|
-|accountType|Строка|Тип учетной записи пользователя, Windows определение. Возможные значения: `unknown`, `standard`, `power`, `administrator`.|
+|accountDomain|String|Домен учетной записи пользователя, используемый для логона.|
+|имя учетной записи|String|Имя учетной записи учетной записи пользователя, используемой для логона.|
+|accountType|String|Тип учетной записи пользователя, Windows определение. Возможные значения: `unknown`, `standard`, `power`, `administrator`.|
 |firstSeenDateTime|DateTimeOffset|DateTime, в котором произошел самый ранний логотип этой учетной записи пользователя (период, определяемый поставщиком). Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |lastSeenDateTime|DateTimeOffset|DateTime, в котором произошел последний логотип этой учетной записи пользователя. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |logonId|String|ID логотипа пользователя.|
-|logonTypes|Коллекция String|Коллекция типов логотипов, наблюдаемых для входа в систему пользователя с первого до последнего вида. Возможные значения: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
+|logonTypes|Коллекция объектов string|Коллекция типов логотипов, наблюдаемых для входа в систему пользователя с первого до последнего вида. Возможные значения: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
 
 ## <a name="json-representation"></a>Представление JSON
 

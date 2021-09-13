@@ -2,15 +2,15 @@
 title: Удаление windowsDomainJoinConfiguration
 description: Удаляет windowsDomainJoinConfiguration.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a4e9179de85dbb90276bc22478af4e496098915a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e8c328dcbe83bf927ebe5e65f75187e366f91b91
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784018"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59132311"
 ---
 # <a name="delete-windowsdomainjoinconfiguration"></a>Удаление windowsDomainJoinConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "58784018"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application||
+|Для приложений||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос

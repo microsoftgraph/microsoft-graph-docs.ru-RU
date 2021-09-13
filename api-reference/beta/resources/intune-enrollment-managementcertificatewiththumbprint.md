@@ -2,15 +2,15 @@
 title: managementCertificateWithThumbprint resource type
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 817a3f25b71be2dbacb40e367df7a5bee12f11d1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 41ea533001a895ac47a2bc9acc1b43f19ae5eba0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785390"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140964"
 ---
 # <a name="managementcertificatewiththumbprint-resource-type"></a>managementCertificateWithThumbprint resource type
 
@@ -25,7 +25,7 @@ ms.locfileid: "58785390"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|отпечатки пальцев|Строка|Отпечатки пальцев сертификата управления|
+|отпечатки пальцев|String|Отпечатки пальцев сертификата управления|
 |certificate|String|Сертификат управления с закодированной кодированной базой 64|
 
 ## <a name="relationships"></a>Связи

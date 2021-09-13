@@ -2,15 +2,15 @@
 title: Список устройствComanagementAuthorityConfigurations
 description: Список свойств и связей объектов deviceComanagementAuthorityConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fb22b4ac26ed97a56b45b168b66b355de43f7072
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: df4bfc589e4344cfcc7e2dbf55837f928bf79cf7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787976"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59116537"
 ---
 # <a name="list-devicecomanagementauthorityconfigurations"></a>Список устройствComanagementAuthorityConfigurations
 
@@ -29,7 +29,7 @@ ms.locfileid: "58787976"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

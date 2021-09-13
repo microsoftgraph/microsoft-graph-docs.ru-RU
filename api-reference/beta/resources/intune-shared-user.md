@@ -2,15 +2,15 @@
 title: Тип ресурса user
 description: Представляет объект пользователя Azure Active Directory.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c703474195aa9a3d3b2a84f3b71ffdf47398dd8cd7b319685d0d77f1f6d24f93
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2f6baa00d76571e6c8160015a87c90f09f6d61ec
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54209793"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115186"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -42,13 +42,13 @@ ms.locfileid: "54209793"
 |[exportDeviceAndAppManagementData](../api/intune-shared-user-exportdeviceandappmanagementdata.md)|[deviceAndAppManagementData](../resources/intune-onboarding-deviceandappmanagementdata.md);|Пока не задокументировано.|
 |[функция getEffectiveDeviceEnrollmentConfigurations](../api/intune-shared-user-geteffectivedeviceenrollmentconfigurations.md)|Коллекция объектов [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|Пока не задокументировано.|
 |**Устранение неполадок**|
-|[функция getManagedDevicesWithAppFailures](../api/intune-shared-user-getmanageddeviceswithappfailures.md)|Коллекция String|Извлекает список устройств с сбойными приложениями.|
+|[функция getManagedDevicesWithAppFailures](../api/intune-shared-user-getmanageddeviceswithappfailures.md)|Коллекция объектов string|Извлекает список устройств с сбойными приложениями.|
 
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор пользователя.|
+|id|String|Уникальный идентификатор пользователя.|
 |**Адаптация**|
 |deviceEnrollmentLimit|Int32|Максимальное количество устройств, которые разрешено зарегистрировать пользователю. Допустимые значения: 5 или 1000.|
 
@@ -80,7 +80,6 @@ ms.locfileid: "54209793"
   "id": "String (identifier)"
 }
 ```
-
 
 
 

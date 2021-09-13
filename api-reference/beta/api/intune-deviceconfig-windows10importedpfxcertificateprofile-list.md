@@ -2,15 +2,15 @@
 title: Список windows10ImportedPFXCertificateProfiles
 description: Список свойств и связей объектов Windows10ImportedPFXCertificateProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 204ef332b0e75ab83e1ee5a57d14d3fcf057cc80
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d06114d2c46ac8d35bbaf570b14ba076d006dee7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793219"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59093115"
 ---
 # <a name="list-windows10importedpfxcertificateprofiles"></a>Список windows10ImportedPFXCertificateProfiles
 
@@ -29,7 +29,7 @@ ms.locfileid: "58793219"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

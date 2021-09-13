@@ -2,15 +2,15 @@
 title: Список androidWorkProfileCustomConfigurations
 description: Список свойств и связей объектов AndroidWorkProfileCustomConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 48743f89047c148789a1d68761999e3a3fe8e151
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 236cd29157dbe92c68578ecb486843872890312b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58814625"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098092"
 ---
 # <a name="list-androidworkprofilecustomconfigurations"></a>Список androidWorkProfileCustomConfigurations
 

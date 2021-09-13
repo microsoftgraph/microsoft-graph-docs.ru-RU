@@ -2,15 +2,15 @@
 title: Получение объекта windowsDefenderAdvancedThreatProtectionConfiguration
 description: Чтение свойств и связей объекта windowsDefenderAdvancedThreatProtectionConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b4d853a28c8590d5c3a1aef176ac24f005c76efb
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bb2cdf610db3177709bd76c1a9eb19fbf1f783a8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816860"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097455"
 ---
 # <a name="get-windowsdefenderadvancedthreatprotectionconfiguration"></a>Получение объекта windowsDefenderAdvancedThreatProtectionConfiguration
 

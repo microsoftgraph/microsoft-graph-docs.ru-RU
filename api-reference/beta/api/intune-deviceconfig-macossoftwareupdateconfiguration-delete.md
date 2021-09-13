@@ -2,15 +2,15 @@
 title: Удаление macOSSoftwareUpdateConfiguration
 description: Удаляет macOSSoftwareUpdateConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 990861a77fa36dc6e404f2bddd051cc899423e28
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d1b1b550ab6e14dc67eac133421087f1ae344691
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816881"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097630"
 ---
 # <a name="delete-macossoftwareupdateconfiguration"></a>Удаление macOSSoftwareUpdateConfiguration
 

@@ -2,15 +2,15 @@
 title: Удаление deviceManagementConfigurationSettingGroupDefinition
 description: Удаляет устройствоManagementConfigurationSettingGroupDefinition.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3ab341ff27c1adcdf30b5922be53dcfb4459e82c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: eff5273ad683a4f56c00b73a119944fcc3cdd8fe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816396"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108263"
 ---
 # <a name="delete-devicemanagementconfigurationsettinggroupdefinition"></a>Удаление deviceManagementConfigurationSettingGroupDefinition
 

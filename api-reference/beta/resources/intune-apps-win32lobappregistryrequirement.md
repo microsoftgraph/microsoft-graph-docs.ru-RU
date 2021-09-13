@@ -2,15 +2,15 @@
 title: тип ресурса win32LobAppRegistryRequirement
 description: Содержит свойства реестра для обнаружения приложения Win32
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 79635640146382baf77aec3858f0dffacfd5ec5f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 84424faafc897cb601764d4f2256e409db945d89
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787885"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59120474"
 ---
 # <a name="win32lobappregistryrequirement-resource-type"></a>тип ресурса win32LobAppRegistryRequirement
 
@@ -29,10 +29,10 @@ ms.locfileid: "58787885"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Оператор обнаружения, унаследованный от [win32LobAppRequirement.](../resources/intune-apps-win32lobapprequirement.md) Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|detectionValue|Строка|Значение обнаружения, унаследованные от [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|
+|detectionValue|String|Значение обнаружения, унаследованные от [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|
 |check32BitOn64System|Логический|Значение, указывающее, является ли этот путь реестра для проверки 32-битного приложения в 64-битной системе|
-|keyPath|Строка|Путь ключа реестра для обнаружения приложения Win32 Line of Business (LoB)|
-|valueName|Строка|Имя значения реестра|
+|keyPath|String|Путь ключа реестра для обнаружения приложения Win32 Line of Business (LoB)|
+|valueName|String|Имя значения реестра|
 |detectionType|[win32LobAppRegistryDetectionType](../resources/intune-apps-win32lobappregistrydetectiontype.md)|Тип обнаружения данных реестра. Возможные значения: `notConfigured`, `exists`, `doesNotExist`, `string`, `integer`, `version`.|
 
 ## <a name="relationships"></a>Связи

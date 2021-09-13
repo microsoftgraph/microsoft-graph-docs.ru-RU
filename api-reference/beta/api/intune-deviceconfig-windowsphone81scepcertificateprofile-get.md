@@ -2,15 +2,15 @@
 title: Получить windowsPhone81SCEPCertificateProfile
 description: Чтение свойств и связей объекта WindowsPhone81SCEPCertificateProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c99313f54efb66c34dc2b0e70bc13e719868cc93
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 667df501e582b096aaaf8d9c989c0cef63dbdd6a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58814478"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125178"
 ---
 # <a name="get-windowsphone81scepcertificateprofile"></a>Получить windowsPhone81SCEPCertificateProfile
 

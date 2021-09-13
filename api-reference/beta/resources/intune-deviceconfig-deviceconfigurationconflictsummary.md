@@ -2,15 +2,15 @@
 title: тип ресурса deviceConfigurationConflictSummary
 description: Сводка конфликтов для набора политик конфигурации устройств.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b1a4dc4da3b20fb268eafeb3826acbe9ad93a113
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bc01628379b57b30db2bfc7f72241d7f8b39871e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819194"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086857"
 ---
 # <a name="deviceconfigurationconflictsummary-resource-type"></a>тип ресурса deviceConfigurationConflictSummary
 
@@ -36,7 +36,7 @@ ms.locfileid: "58819194"
 |:---|:---|:---|
 |conflictingDeviceConfigurations|Коллекция [settingSource](../resources/intune-deviceconfig-settingsource.md)|Набор политик в конфликте с заданным параметром|
 |id|String|ID для этого набора конфликтующих политик. Этот id — это ids всех политик в ConflictingDeviceConfigurations в лексикографическом порядке, разделенных подчеркиваниями.|
-|contributingSettings|Коллекция String|Набор параметров в конфликте с заданными политиками|
+|contributingSettings|Коллекция объектов string|Набор параметров в конфликте с заданными политиками|
 |deviceCheckinsImpacted|Int32|Количество проверок, на которое влияют конфликтующие политики и параметры|
 
 ## <a name="relationships"></a>Связи

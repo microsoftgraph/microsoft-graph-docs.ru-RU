@@ -2,15 +2,15 @@
 title: тип ресурса groupPolicyOperation
 description: Объект представляет операцию групповой политики.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d22fa172cf3052d1fcd1327a52a5cd1d49780c33
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ad6ee2f261c14a4a1ad7548561ac6487d2745223
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802448"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086101"
 ---
 # <a name="grouppolicyoperation-resource-type"></a>тип ресурса groupPolicyOperation
 
@@ -36,7 +36,7 @@ ms.locfileid: "58802448"
 |:---|:---|:---|
 |operationType|[groupPolicyOperationType](../resources/intune-grouppolicy-grouppolicyoperationtype.md)|Тип операции групповой политики. Возможные значения: `none`, `upload`, `uploadNewVersion`, `addLanguageFiles`, `removeLanguageFiles`, `updateLanguageFiles`, `remove`.|
 |operationStatus|[groupPolicyOperationStatus](../resources/intune-grouppolicy-grouppolicyoperationstatus.md)|Состояние операции групповой политики. Возможные значения: `unknown`, `inProgress`, `success`, `failed`.|
-|statusDetails|Строка|Подробное состояние состояния операции групповой политики.|
+|statusDetails|String|Подробное состояние состояния операции групповой политики.|
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 

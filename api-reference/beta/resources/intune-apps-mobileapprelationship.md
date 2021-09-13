@@ -2,15 +2,15 @@
 title: тип ресурса mobileAppRelationship
 description: Описывает связь между двумя мобильными приложениями.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0fac38e910e4889759a07d9b38eac2ee116d0904
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6e3a355b2eab4c70349156a921d508f33705c65c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799826"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124156"
 ---
 # <a name="mobileapprelationship-resource-type"></a>тип ресурса mobileAppRelationship
 
@@ -31,11 +31,11 @@ ms.locfileid: "58799826"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|ID сущности отношений.|
-|targetId|Строка|ID приложения целевого мобильного приложения.|
-|targetDisplayName|Строка|Имя отображения целевого мобильного приложения.|
-|targetDisplayVersion|Строка|Отображаемая версия целевого мобильного приложения.|
-|targetPublisher|Строка|Издатель целевого мобильного приложения.|
+|id|String|ID сущности отношений.|
+|targetId|String|ID приложения целевого мобильного приложения.|
+|targetDisplayName|String|Имя отображения целевого мобильного приложения.|
+|targetDisplayVersion|String|Отображаемая версия целевого мобильного приложения.|
+|targetPublisher|String|Издатель целевого мобильного приложения.|
 |targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|Тип отношений, указывающий, является ли цель родителем или ребенком. Возможные значения: `child`, `parent`.|
 
 ## <a name="relationships"></a>Связи
