@@ -2,15 +2,15 @@
 title: тип ресурса userExperienceAnalyticsImpactingProcess
 description: Аналитика пользовательского интерфейса оказывает влияние на объект процесса.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fe90734826416aca89065c47568ce9e68d085753
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d61d647db49c61960afdd15d9401138f465d662a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794408"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125696"
 ---
 # <a name="userexperienceanalyticsimpactingprocess-resource-type"></a>тип ресурса userExperienceAnalyticsImpactingProcess
 
@@ -34,11 +34,11 @@ ms.locfileid: "58794408"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта аналитики пользовательского интерфейса, который оказывает влияние на процесс.|
+|id|String|Уникальный идентификатор объекта аналитики пользовательского интерфейса, который оказывает влияние на процесс.|
 |deviceId|String|Уникальный идентификатор влияемого устройства.|
 |category|String|Категория воздействия процесса.|
-|processName|Строка|Имя процесса.|
-|description|Строка|Описание процесса.|
+|processName|String|Имя процесса.|
+|description|String|Описание процесса.|
 |publisher|String|Издатель процесса.|
 |impactValue|Двойное с плавающей точкой|Значение влияния процесса. Допустимые значения от 0 до 1.79769313486232E+308|
 

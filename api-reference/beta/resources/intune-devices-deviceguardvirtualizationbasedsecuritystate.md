@@ -2,15 +2,15 @@
 title: тип enum deviceGuardVirtualizationBasedSecurityState
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f8a2871189630206c8ef5d83c510fbdd96a61132
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 029667d272c9cfc7213a693dd9228598df143a2c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793563"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59144338"
 ---
 # <a name="deviceguardvirtualizationbasedsecuritystate-enum-type"></a>тип enum deviceGuardVirtualizationBasedSecurityState
 
@@ -25,7 +25,7 @@ ms.locfileid: "58793563"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|запуск|0|Работает|
+|запуск|0|Выполняется|
 |rebootRequired|1|Root required|
 |require64BitArchitecture|2|Требуется 64-битная архитектура|
 |notLicensed|3|Не лицензировано|

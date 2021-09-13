@@ -2,15 +2,15 @@
 title: тип ресурса mobileAppAppIntentAndStateDetail
 description: Намерение мобильного приложения и установка состояния для данного устройства.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6f0bb527af5e155ecb55558e890e551eb15b9791
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 92f3e301e16b14f7a1aac1ed9dc27a60d53b2850
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256649"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100892"
 ---
 # <a name="mobileappintentandstatedetail-resource-type"></a>тип ресурса mobileAppAppIntentAndStateDetail
 
@@ -24,7 +24,7 @@ ms.locfileid: "58256649"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |applicationId|String|Идентификатор MobieApp.|
-|displayName|Строка|Название приложения, которое предоставил или импортировал администратор.|
+|displayName|String|Название приложения, которое предоставил или импортировал администратор.|
 |mobileAppIntent|[mobileAppIntent](../resources/intune-troubleshooting-mobileappintent.md);|Намерение мобильного приложения. Возможные значения: `available`, `notAvailable`, `requiredInstall`, `requiredUninstall`, `requiredAndAvailableInstall`, `availableInstallWithoutEnrollment`, `exclude`.|
 |displayVersion|String|Читаемая для человека версия приложения|
 |installState|[resultantAppState](../resources/intune-troubleshooting-resultantappstate.md)|Состояние установки приложения. Возможные значения: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|

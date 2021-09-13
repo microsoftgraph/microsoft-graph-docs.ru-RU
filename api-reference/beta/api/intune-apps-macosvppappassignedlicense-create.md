@@ -2,15 +2,15 @@
 title: Создание macOsVppAppAssignedLicense
 description: Создание нового объекта macOsVppAppAssignedLicense.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dd9cb5a68ea0904f1c1abc7e2838bae22bbc2e07
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: efed95c5850688e1b72a3bf5d2c616deeccec665
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793742"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127880"
 ---
 # <a name="create-macosvppappassignedlicense"></a>Создание macOsVppAppAssignedLicense
 
@@ -29,7 +29,7 @@ ms.locfileid: "58793742"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,8 +53,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.macOsVppApp/a
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|userEmailAddress|Строка|Адрес электронной почты пользователя.|
+|id|String|Ключ объекта.|
+|userEmailAddress|String|Адрес электронной почты пользователя.|
 |userId|String|Идентификатор пользователя.|
 |userName|String|Имя пользователя.|
 |userPrincipalName|String|Имя участника-пользователя.|

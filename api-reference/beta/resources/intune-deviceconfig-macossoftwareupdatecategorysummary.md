@@ -2,15 +2,15 @@
 title: тип ресурса macOSSoftwareUpdateCategorySummary
 description: Сводный отчет об обновлении программного обеспечения MacOS для устройства и пользователя
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 17f9c532d3f5297bdf239324fd637b18ac1b7138
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0f8d084eccf6e253c258f7ddd14c1c09feaa1ad2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790908"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59095565"
 ---
 # <a name="macossoftwareupdatecategorysummary-resource-type"></a>тип ресурса macOSSoftwareUpdateCategorySummary
 
@@ -34,8 +34,8 @@ ms.locfileid: "58790908"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|displayName|Строка|Имя отчета|
+|id|String|Ключ объекта.|
+|displayName|String|Имя отчета|
 |deviceId|String|ID устройства.|
 |userId|String|Идентификатор пользователя.|
 |updateCategory|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|Тип обновления программного обеспечения. Возможные значения: `critical`, `configurationDataFile`, `firmware`, `other`.|

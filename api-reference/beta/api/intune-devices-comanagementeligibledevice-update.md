@@ -2,15 +2,15 @@
 title: Обновление comanagementEligibleDevice
 description: Обновление свойств объекта comanagementEligibleDevice.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c4483bda19f1436a51afffa7d389e7e3b64a5d3a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: eeddddce85e0853bd4e0c8e15e624dc450902702
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792346"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122105"
 ---
 # <a name="update-comanagementeligibledevice"></a>Обновление comanagementEligibleDevice
 
@@ -29,7 +29,7 @@ ms.locfileid: "58792346"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,15 +53,15 @@ PATCH /deviceManagement/comanagementEligibleDevices/{comanagementEligibleDeviceI
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный ID для устройства|
+|id|String|Уникальный ID для устройства|
 |deviceName|String|DeviceName|
 |deviceType|[deviceType](../resources/intune-devices-devicetype.md)|DeviceType. Возможные значения: `desktop` `windowsRT` , `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `chromeOS` `linux` `blackberry` `palm` , `unknown` `cloudPC` , .|
 |clientRegistrationStatus|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|ClientRegistrationStatus. Возможные значения: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.|
 |ownerType|[ownerType](../resources/intune-shared-ownertype.md)|OwnerType. Возможные значения: `unknown`, `company`, `personal`.|
 |managementAgents|[managementAgentType](../resources/intune-devices-managementagenttype.md)|ManagementAgents. Возможные значения: `eas` `mdm` , , , , , `easMdm` , `intuneClient` , `easIntuneClient` `configurationManagerClient` `configurationManagerClientMdm` `configurationManagerClientMdmEas` `unknown` `jamf` `googleCloudDevicePolicyController` `microsoft365ManagedMdm` `msSense` `intuneAosp` .|
 |managementState|[managementState](../resources/intune-devices-managementstate.md)|ManagementState. Возможные значения: `managed`, `retirePending`, `retireFailed`, `wipePending`, `wipeFailed`, `unhealthy`, `deletePending`, `retireIssued`, `wipeIssued`, `wipeCanceled`, `retireCanceled`, `discovered`.|
-|referenceId|Строка|ReferenceId|
-|mdmStatus|Строка|MDMStatus|
+|referenceId|String|ReferenceId|
+|mdmStatus|String|MDMStatus|
 |osVersion|String|OSVersion|
 |serialNumber|String|SerialNumber|
 |manufacturer|String|Производитель|
@@ -69,7 +69,7 @@ PATCH /deviceManagement/comanagementEligibleDevices/{comanagementEligibleDeviceI
 |osDescription|String|OSDescription|
 |entitySource|Int32|EntitySource|
 |userId|String|ИД пользователя|
-|upn|Строка|UPN|
+|upn|String|Имя участника-пользователя|
 |userEmail|String|Электронный адрес пользователя|
 |userName|String|Имя пользователя|
 |status|[comanagementEligibleType](../resources/intune-devices-comanagementeligibletype.md)|ComanagementEligibleStatus. Возможные значения: `comanaged`, `eligible`, `eligibleButNotAzureAdJoined`, `needsOsUpdate`, `ineligible`.|

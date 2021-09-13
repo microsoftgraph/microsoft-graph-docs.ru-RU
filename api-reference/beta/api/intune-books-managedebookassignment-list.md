@@ -2,15 +2,15 @@
 title: Перечисление объектов managedEBookAssignment
 description: Список свойств и связей объектов managedEBookAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c6a5dab8601fc62bc06e0a70c972e8286dddc216
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 83c53083a6fdca69f5001a0dcda2734352c7673b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805971"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122693"
 ---
 # <a name="list-managedebookassignments"></a>Перечисление объектов managedEBookAssignment
 

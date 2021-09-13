@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementScriptGroupAssignment
 description: Содержит свойства, используемые для назначения скрипта управления устройствами группе.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a94aef0f0a7b8f9bf323cae5a61b80aa972eb4ef
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1f1a023ba87b62c143c4a7bb39aabee4015789d9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801790"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125967"
 ---
 # <a name="devicemanagementscriptgroupassignment-resource-type"></a>тип ресурса deviceManagementScriptGroupAssignment
 
@@ -34,8 +34,8 @@ ms.locfileid: "58801790"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта группового назначения скрипта управления устройствами. Это свойство доступно только для чтения.|
-|targetGroupId|Строка|Id группы Azure Active Directory, на который мы нацелим сценарий.|
+|id|String|Ключ объекта группового назначения скрипта управления устройствами. Это свойство доступно только для чтения.|
+|targetGroupId|String|Id группы Azure Active Directory, на который мы нацелим сценарий.|
 
 ## <a name="relationships"></a>Связи
 Нет

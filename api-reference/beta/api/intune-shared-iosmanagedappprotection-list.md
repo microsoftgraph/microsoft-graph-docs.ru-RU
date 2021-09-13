@@ -2,15 +2,15 @@
 title: Перечисление объектов iosManagedAppProtection
 description: Перечисление свойств и связей объектов iosManagedAppProtection.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 65750a08372ffb738d7a6a89314574f34c9954cf
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3e6ed11f988dcafe53932ec84375431c23fe8d8f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58762286"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59121069"
 ---
 # <a name="list-iosmanagedappprotections"></a>Перечисление объектов iosManagedAppProtection
 
@@ -31,7 +31,7 @@ ms.locfileid: "58762286"
 | &nbsp; &nbsp; **Управление мобильным приложением (MAM)** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application||
+|Для приложений||
 | &nbsp; &nbsp; **Управление мобильным приложением (MAM)** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 

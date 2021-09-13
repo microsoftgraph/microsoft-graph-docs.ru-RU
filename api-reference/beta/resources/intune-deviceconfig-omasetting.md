@@ -2,15 +2,15 @@
 title: Тип ресурса omaSetting
 description: Определение параметра OMA.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 67a33c9d4cb1791e5d5de870805738dcd58f9cd5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fc811056217cb537cd3c02095c6551663ad5eb98
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805417"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59111070"
 ---
 # <a name="omasetting-resource-type"></a>Тип ресурса omaSetting
 
@@ -25,10 +25,10 @@ ms.locfileid: "58805417"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображаемое имя.|
-|description|Строка|Описание.|
+|displayName|String|Отображаемое имя.|
+|description|String|Описание.|
 |omaUri|String|OMA.|
-|secretReferenceValueId|Строка|ReferenceId для поисков секрета для расшифровки. Это свойство доступно только для чтения.|
+|secretReferenceValueId|String|ReferenceId для поисков секрета для расшифровки. Это свойство доступно только для чтения.|
 |isEncrypted|Boolean|Указывает, зашифровано ли поле значений. Это свойство доступно только для чтения.|
 
 ## <a name="relationships"></a>Связи

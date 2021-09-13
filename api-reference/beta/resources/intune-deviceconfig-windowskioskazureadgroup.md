@@ -2,15 +2,15 @@
 title: тип ресурса windowsKioskAzureADGroup
 description: Класс, используемый для определения группы AzureAD для конфигурации киоска
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 00d8be0cc4b469c8d361c5bdcfae822a6d279157
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c888ad3d14c522813d4959040b1c67b0dbb53777
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802483"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086659"
 ---
 # <a name="windowskioskazureadgroup-resource-type"></a>тип ресурса windowsKioskAzureADGroup
 
@@ -28,7 +28,7 @@ ms.locfileid: "58802483"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображает имя группы AzureAD, которая будет заблокирована в этой конфигурации киоска|
+|displayName|String|Отображает имя группы AzureAD, которая будет заблокирована в этой конфигурации киоска|
 |groupId|String|ID группы AzureAD, которая будет заблокирована в этой конфигурации киоска|
 
 ## <a name="relationships"></a>Связи

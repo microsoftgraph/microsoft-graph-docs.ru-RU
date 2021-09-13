@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementTemplateSettingCategory
 description: Объект, представляющий категорию параметра шаблона
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f919182e6b1aa37d4f0fd9420630cef8a585321e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cdcc998b69b413b685c09a58ce05bae06d5b385f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788957"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086393"
 ---
 # <a name="devicemanagementtemplatesettingcategory-resource-type"></a>тип ресурса deviceManagementTemplateSettingCategory
 
@@ -37,9 +37,9 @@ ms.locfileid: "58788957"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|ID категории, унаследованный от [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
+|id|String|ID категории, унаследованный от [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 |displayName|String|Имя категории, унаследованные от [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
-|hasRequiredSetting|Логический|Категория содержит обязательный параметр верхнего уровня, унаследованный от [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
+|hasRequiredSetting|Логическое|Категория содержит обязательный параметр верхнего уровня, унаследованный от [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

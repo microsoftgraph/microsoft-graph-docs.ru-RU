@@ -1,19 +1,19 @@
 ---
 title: Обновление содержимого страниц OneNote
-description: " Корпоративная записная книжка в Microsoft 365"
+description: " Корпоративная записная книжка в Microsoft 365"
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
-ms.openlocfilehash: 089f0034c5b3cf6ef3a5ab7984c83cb3b7ea00d34b51e7ff14b17af3343e0197
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 06594d0c5f584330b16d523e4f7dc2e8de4be080
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54123921"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103979"
 ---
 # <a name="update-onenote-page-content"></a>Обновление содержимого страниц OneNote
 
-**Область применения**: пользовательские записные книжки в OneDrive | корпоративные записные книжки в Microsoft 365
+**Область применения**: пользовательские записные книжки в OneDrive | корпоративные записные книжки в Microsoft 365
 
 
 Чтобы обновить содержимое страницы OneNote, необходимо отправить запрос PATCH в конечную точку *content* страницы:
@@ -442,8 +442,8 @@ Content-Type: image/png
 | Данные запроса | Описание |  
 |------|------|  
 | Протокол | Все запросы используют протокол SSL/TLS для HTTPS. |  
-| Заголовок Authorization | <p>`Bearer {token}`, где `{token}` — действительный маркер доступа OAuth 2.0 для зарегистрированного приложения.</p><p>Если он отсутствует или является недействительным, запрос завершится ошибкой с кодом состояния 401. См. статью [Проверка подлинности и разрешения](permissions-reference.md).</p> |  
-| Заголовок Content-Type | <p>`application/json` для массива объектов изменений JSON, отправленного либо непосредственно в тексте сообщения, либо в обязательной части Commands [составных запросов](#multipart-request-with-binary-content).</p><p>Составные запросы необходимы при отправке двоичных данных и используют тип контента `multipart/form-data; boundary=part-boundary`, где `{part-boundary}` — это строка, обозначающая начало и конец каждой части данных.</p> |  
+| Заголовок Authorization | <p>`Bearer {token}`, где `{token}` — действительный маркер доступа OAuth 2.0 для зарегистрированного приложения.</p><p>Если он отсутствует или является недействительным, запрос завершится ошибкой с кодом состояния 401. См. статью [Проверка подлинности и разрешения](permissions-reference.md).</p> |  
+| Заголовок Content-Type | <p>`application/json` для массива объектов изменений JSON, отправленного либо непосредственно в тексте сообщения, либо в обязательной части Commands [составных запросов](#multipart-request-with-binary-content).</p><p>Составные запросы необходимы при отправке двоичных данных и используют тип контента `multipart/form-data; boundary=part-boundary`, где `{part-boundary}` — это строка, обозначающая начало и конец каждой части данных.</p> |  
 
 <br/> 
 

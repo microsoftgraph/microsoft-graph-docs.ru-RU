@@ -2,15 +2,15 @@
 title: тип ресурса windowsPackageInformation
 description: Содержит свойства для сведений о пакете для Windows бизнес-приложения.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8070f21ed0ab197ff5c4df273753220747521dc5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f80f45b8f7b3b3b1398ccc8918929ccb5334d7b3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58752037"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091904"
 ---
 # <a name="windowspackageinformation-resource-type"></a>тип ресурса windowsPackageInformation
 
@@ -26,9 +26,9 @@ ms.locfileid: "58752037"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Архитектура Windows, для которой может работать это приложение. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
-|displayName|Строка|Имя отображения.|
+|displayName|String|Имя отображения.|
 |identityName|String|Имя удостоверения.|
-|identityPublisher|Строка|Удостоверение Publisher.|
+|identityPublisher|String|Удостоверение Publisher.|
 |identityResourceIdentifier|String|Идентификатор ресурса Identity.|
 |identityVersion|String|Версия удостоверения.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, которое представляет минимальную применимую версию операционной системы.|

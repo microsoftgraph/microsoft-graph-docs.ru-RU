@@ -2,15 +2,15 @@
 title: Обновление appleUserInitiatedEnrollmentProfile
 description: Обновление свойств объекта appleUserInitiatedEnrollmentProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 81f35149c0d786361f1bfc4aa1e2c96de46e9aea
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e63e8f3647b508c3bf6919c1b5189ec1b7a8a1a9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792318"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124912"
 ---
 # <a name="update-appleuserinitiatedenrollmentprofile"></a>Обновление appleUserInitiatedEnrollmentProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "58792318"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,9 +55,9 @@ PATCH /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiated
 |:---|:---|:---|
 |defaultEnrollmentType|[appleUserInitiatedEnrollmentType](../resources/intune-enrollment-appleuserinitiatedenrollmenttype.md)|Тип регистрации профиля по умолчанию. Возможные значения: `unknown`, `device`, `user`.|
 |availableEnrollmentTypeOptions|[коллекция appleOwnerTypeEnrollmentType](../resources/intune-enrollment-appleownertypeenrollmenttype.md)|Список доступных параметров типа регистрации|
-|id|Строка|GUID объекта|
-|displayName|Строка|Имя профиля|
-|description|Строка|Описание профиля|
+|id|String|GUID объекта|
+|displayName|String|Имя профиля|
+|description|String|Описание профиля|
 |priority|Int32|Приоритет, 0 — самый высокий|
 |платформа|[devicePlatformType](../resources/intune-enrollment-deviceplatformtype.md)|Платформа устройства. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |createdDateTime|DateTimeOffset|Время создания профиля|

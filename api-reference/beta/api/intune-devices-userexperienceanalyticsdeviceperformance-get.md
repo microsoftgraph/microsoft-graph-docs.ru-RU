@@ -2,15 +2,15 @@
 title: Get userExperienceAnalyticsDevicePerformance
 description: Чтение свойств и связей объекта userExperienceAnalyticsDevicePerformance.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2586a9da78db5cfe44c1ecef9e143b7c0a83e0f3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2c21ac24cf917d0115bfe87cc79c6fb061981e66
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819278"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59121783"
 ---
 # <a name="get-userexperienceanalyticsdeviceperformance"></a>Get userExperienceAnalyticsDevicePerformance
 

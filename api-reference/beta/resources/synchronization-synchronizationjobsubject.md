@@ -2,15 +2,15 @@
 title: тип ресурса синхронизацииJobSubject
 description: Представляет объекты, которые будут представлены во время предварительной провизии по запросу.
 author: ArvindHarinder1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: c7dea31898cb0bfb521367042401be7c583c60c2868d4805682c9d0e707fc898
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1f4de7d4c3d518b795d739a80403903842d16a16
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54226114"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090965"
 ---
 # <a name="synchronizationjobsubject-resource-type"></a>тип ресурса синхронизацииJobSubject
 
@@ -22,7 +22,7 @@ ms.locfileid: "54226114"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |objectId|String|Идентификатор объекта, к которому должна применяться синхронизацияJob.|
-|objectTypeName|Строка|Тип объекта, к которому должна применяться синхронизацияJob.|
+|objectTypeName|String|Тип объекта, к которому должна применяться синхронизацияJob.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

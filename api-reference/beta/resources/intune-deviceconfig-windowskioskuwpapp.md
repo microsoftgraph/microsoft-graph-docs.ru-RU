@@ -2,15 +2,15 @@
 title: тип ресурса windowsKioskUWPApp
 description: Базовый класс для типа приложений
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0f33a7800e055ec885cf03a467b1216b310fa6e7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9ef0294701a660219a1c74119cc2af2912a315df
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797537"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105974"
 ---
 # <a name="windowskioskuwpapp-resource-type"></a>тип ресурса windowsKioskUWPApp
 
@@ -32,9 +32,9 @@ ms.locfileid: "58797537"
 |name|String|Представляет удобное имя приложения, унаследованной от [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|Тип приложения, унаследованный от [windowsKioskAppBase.](../resources/intune-deviceconfig-windowskioskappbase.md) Возможные значения: `unknown`, `store`, `desktop`, `aumId`.|
 |autoLaunch|Логический|Разрешить автоматическое запуск приложения в режиме киоска с несколькими приложениями, унаследованных от [windowsKioskAppBase.](../resources/intune-deviceconfig-windowskioskappbase.md)|
-|appUserModelId|Строка|Это единственный ID модели пользователя приложения (AUMID), который будет доступен для запуска использования в режиме киоска|
+|appUserModelId|String|Это единственный ID модели пользователя приложения (AUMID), который будет доступен для запуска использования в режиме киоска|
 |appId|String|Это ссылается на приложение Intune, которое будет ориентировано на те же назначения, что и конфигурация киоска|
-|containedAppId|Строка|Это ссылается на содержалось приложение из приложения Intune|
+|containedAppId|String|Это ссылается на содержалось приложение из приложения Intune|
 
 ## <a name="relationships"></a>Связи
 Нет

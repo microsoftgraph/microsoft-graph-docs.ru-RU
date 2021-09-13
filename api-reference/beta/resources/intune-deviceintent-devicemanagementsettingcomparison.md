@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementSettingComparison
 description: Объект, представляющий результат сравнения параметра
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0794e5ceadb46bf46bec11d96304c3f5c368766b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5a2f9dca86529821f24840e209ef10c25014d27b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817091"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091407"
 ---
 # <a name="devicemanagementsettingcomparison-resource-type"></a>тип ресурса deviceManagementSettingComparison
 

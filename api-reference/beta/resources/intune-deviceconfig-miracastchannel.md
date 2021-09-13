@@ -2,15 +2,15 @@
 title: тип enum miracastChannel
 description: Возможные значения для Miracast канала.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a679b9e7a2d6dd9f468a85270968de218d0a3cd2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e89b0b87cbd1e065c9122d1d410b6c56fd031ec5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784235"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086745"
 ---
 # <a name="miracastchannel-enum-type"></a>тип enum miracastChannel
 
@@ -36,7 +36,7 @@ ms.locfileid: "58784235"
 |восемь|8 |Восемь.|
 |девять|9 |Девять.|
 |десять|10 |Десять.|
-|11|11 |Одиннадцать.|
+|11|11|Одиннадцать.|
 |thirtySix|36|Тридцать шесть.|
 |сорок|40|Сорок.|
 |fortyFour|44|Сорок четыре.|

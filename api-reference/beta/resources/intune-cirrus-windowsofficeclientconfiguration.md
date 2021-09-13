@@ -1,16 +1,16 @@
 ---
 title: тип ресурса windowsOfficeClientConfiguration
 description: Объект, описывая параметры политики office для Windows.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0efc041c5a90480c3048d6b7fe173cd714354ab3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 542effabbd82a000c02e1da5e86705532c11bbb2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818016"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101872"
 ---
 # <a name="windowsofficeclientconfiguration-resource-type"></a>тип ресурса windowsOfficeClientConfiguration
 

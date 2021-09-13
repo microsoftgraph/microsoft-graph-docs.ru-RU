@@ -2,15 +2,15 @@
 title: Перечисление объектов deviceEnrollmentLimitConfiguration
 description: Список свойств и связей объектов deviceEnrollmentLimitConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e2da22dc7bf31274e05105ad8b0a9d16c70b3689
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 42710facdd2e2d412a5ccd7237ee0ba6215b39fb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805123"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59121341"
 ---
 # <a name="list-deviceenrollmentlimitconfigurations"></a>Перечисление объектов deviceEnrollmentLimitConfiguration
 

@@ -2,15 +2,15 @@
 title: Update auditEvent
 description: Обновление свойств объекта auditEvent.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: be6f614a740188c6c16b675dad7456a124dd3559
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 43b5180950f20fd2c2ef5b53d7615fabd9d4f2b8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798372"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113072"
 ---
 # <a name="update-auditevent"></a>Update auditEvent
 
@@ -29,7 +29,7 @@ ms.locfileid: "58798372"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,8 +53,8 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|displayName|Строка|Отображаемое имя события.|
+|id|String|Ключ объекта.|
+|displayName|String|Отображаемое имя события.|
 |componentName|String|Имя компонента.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Пользователь AAD и приложение, связанные с событием аудита.|
 |activity|String|Понятное имя действия.|

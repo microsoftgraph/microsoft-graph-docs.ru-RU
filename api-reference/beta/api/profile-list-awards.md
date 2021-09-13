@@ -1,22 +1,22 @@
 ---
-title: Список вознаграждений
-description: Получение коллекции Персонавардс из свойства навигации "награды".
-localization_priority: Normal
+title: Награды списка
+description: Получите коллекцию personAwards из свойства навигации awards.
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 5e35a4a16fb1d7d58544dc7a1c32e432ed567b86
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 21fbb99e5aec6d7d3ac45935ac283de131f7d4a0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980810"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59092296"
 ---
-# <a name="list-awards"></a>Список вознаграждений
+# <a name="list-awards"></a>Награды списка
 
 Пространство имен: microsoft.graph
 
-Получение списка объектов [персонавард](../resources/personaward.md) из [профиля](../resources/profile.md)пользователя.
+Извлечение списка [объектов personAward](../resources/personaward.md) из профиля [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "48980810"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Для приложения                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
+| Делегированные (рабочая или учебная учетная запись)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Для приложений                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,14 +41,14 @@ GET /users/{id | userPrincipalName}/profile/awards
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает следующие параметры запроса OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 |Имя            |Значение    |Описание                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |Разрешает отклик только на те объекты, которые содержат заданные условия.                                                                                             |
-|$orderby        |строка   |По умолчанию объекты в отклике сортируются по значению createdDateTime в запросе. Вы можете изменить порядок ответа с помощью параметра *$OrderBy* .|
+|$filter         |string   |Ограничивает ответ только теми объектами, которые содержат указанные критерии.                                                                                             |
+|$orderby        |строка   |По умолчанию объекты в ответе сортируют по их созданному значениюDateTime в запросе. Вы можете изменить порядок ответа с помощью *параметра $orderby.*|
 |$select         |string   |Список разделенных запятыми свойств, которые необходимо включить в отклик. Для оптимизации производительности выбирайте только необходимые свойства.                                        |
-|$skip           |int      |Пропустите первые n результатов, которые удобно использовать для разбиения на страницы.                                                                                                                                |
+|$skip           |int      |Пропустить первые n результаты, полезные для paging.                                                                                                                                |
 |$top            |int      |Количество возвращаемых результатов.                                                                                                                                           |
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -61,7 +61,7 @@ GET /users/{id | userPrincipalName}/profile/awards
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [персонавард](../resources/personaward.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объектов personAward](../resources/personaward.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

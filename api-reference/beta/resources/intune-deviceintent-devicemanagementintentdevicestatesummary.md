@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementIntentDeviceStateSummary
 description: Сущность, представляюая сводку состояния устройства для намерения
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0945dcadf4879a326d2ecb1cf3c8e135774ad4a2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: db0b72aa612e1866e11fe5887759ca417149bcd9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58759367"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137919"
 ---
 # <a name="devicemanagementintentdevicestatesummary-resource-type"></a>тип ресурса deviceManagementIntentDeviceStateSummary
 
@@ -31,7 +31,7 @@ ms.locfileid: "58759367"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|The ID|
+|id|String|The ID|
 |conflictCount|Int32|Количество устройств в конфликте|
 |errorCount|Int32|Количество устройств с ошибками.|
 |failedCount|Int32|Число устройств со сбоями.|

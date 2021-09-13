@@ -2,15 +2,15 @@
 title: Действие sendCustomNotificationToCompanyPortal
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a4fd29c528300e095d28b58028e9b8a5e895d615
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c9583adfc9f74a7ae60b0af5413f7913de8178b7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786798"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59102950"
 ---
 # <a name="sendcustomnotificationtocompanyportal-action"></a>Действие sendCustomNotificationToCompanyPortal
 
@@ -29,7 +29,7 @@ ms.locfileid: "58786798"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

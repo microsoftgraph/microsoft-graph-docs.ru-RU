@@ -2,15 +2,15 @@
 title: Список пользователейExperienceAnalyticsDeviceStartupProcesses
 description: Список свойств и связей объектов userExperienceAnalyticsDeviceStartupProcess.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1bc57005ff6675ee76a1aa31be1873a02d93105e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dfcfad99124b3ef7dbd613a5db1a456b7f4b4feb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797032"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097203"
 ---
 # <a name="list-userexperienceanalyticsdevicestartupprocesses"></a>Список пользователейExperienceAnalyticsDeviceStartupProcesses
 
@@ -29,7 +29,7 @@ ms.locfileid: "58797032"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

@@ -2,15 +2,15 @@
 title: Удаление groupPolicyPresentationTextBox
 description: Удаляет группуPolicyPresentationTextBox.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9fe069304f845fbe71366abec4534469c9b34985
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 42f1f71d3ac2df33bd90de3c1882d8334ba52e7e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804913"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59112191"
 ---
 # <a name="delete-grouppolicypresentationtextbox"></a>Удаление groupPolicyPresentationTextBox
 

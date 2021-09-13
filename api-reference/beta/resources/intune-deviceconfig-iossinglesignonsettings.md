@@ -2,15 +2,15 @@
 title: тип ресурса iosSingleSignOnSettings
 description: Параметры проверки подлинности iOS Kerberos для одного входного знака
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 828117ad95c9e1de2815046d6877f5378528f788
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1f3d6ba266287e087ac9464ac99bc90d1505bb53
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804528"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59131331"
 ---
 # <a name="iossinglesignonsettings-resource-type"></a>тип ресурса iosSingleSignOnSettings
 
@@ -26,10 +26,10 @@ ms.locfileid: "58804528"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |allowedAppsList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список идентификаторов приложений, которые разрешены для использования этого входа. Если это поле опущено, вход применяется ко всем приложениям на устройстве. Эта коллекция может содержать не более 500 элементов.|
-|allowedUrls|Коллекция String|Список URL-адресов HTTP, которые необходимо соединять для использования этого входа. С помощью iOS 9.0 или более поздней системы можно использовать символы под диктовки.|
-|displayName|Строка|Отображение имени параметров входа, показанных на приемном устройстве.|
-|kerberosPrincipalName|Строка|Основное имя Kerberos. Если не предоставлено, пользователю будет предложено одно во время установки профиля.|
-|kerberosRealm|Строка|Имя области Kerberos. Деликатный.|
+|allowedUrls|Коллекция объектов string|Список URL-адресов HTTP, которые необходимо соединять для использования этого входа. С помощью iOS 9.0 или более поздней системы можно использовать символы под диктовки.|
+|displayName|String|Отображение имени параметров входа, показанных на приемном устройстве.|
+|kerberosPrincipalName|String|Основное имя Kerberos. Если не предоставлено, пользователю будет предложено одно во время установки профиля.|
+|kerberosRealm|String|Имя области Kerberos. Деликатный.|
 
 ## <a name="relationships"></a>Связи
 Нет
