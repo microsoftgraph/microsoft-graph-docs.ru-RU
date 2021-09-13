@@ -2,15 +2,15 @@
 title: Создание managedAllDeviceCertificateState
 description: Создайте новый объект managedAllDeviceCertificateState.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4413d57e02c3d4e13200c1d7d1db05920dd27cd1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 569e877091eabd53e9addeb22c02c5660d942ac9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805165"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097595"
 ---
 # <a name="create-managedalldevicecertificatestate"></a>Создание managedAllDeviceCertificateState
 
@@ -53,18 +53,18 @@ POST /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Отзови статус. Возможные значения: `none`, `pending`, `issued`, `failed`, `revoked`.|
 |certificateRevokeStatusLastChangeDateTime|DateTimeOffset|Время последнего изменения состояния отвода|
-|managedDeviceDisplayName|Строка|Имя отображения устройства|
+|managedDeviceDisplayName|String|Имя отображения устройства|
 |userPrincipalName|String|Имя субъекта-пользователя|
 |certificateExpirationDateTime|DateTimeOffset|Дата истечения срока действия сертификата|
-|certificateIssuerName|Строка|Издатель|
-|certificateThumbprint|Строка|Thumbprint|
-|certificateSerialNumber|Строка|Серийный номер|
-|certificateSubjectName|Строка|Имя субъекта сертификата|
+|certificateIssuerName|String|Издатель|
+|certificateThumbprint|String|Thumbprint|
+|certificateSerialNumber|String|Серийный номер|
+|certificateSubjectName|String|Имя субъекта сертификата|
 |certificateKeyUsages|Int32|Использование ключей|
-|certificateExtendedKeyUsages|Строка|Расширенное использование ключей|
+|certificateExtendedKeyUsages|String|Расширенное использование ключей|
 |certificateIssuanceDateTime|DateTimeOffset|Дата выпуска|
 
 

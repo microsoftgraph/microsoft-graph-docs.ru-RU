@@ -2,15 +2,15 @@
 title: managedDeviceMobileAppConfigurationSettingState resource type
 description: Состояние настройки конфигурации мобильного приложения для управляемого устройства для данного устройства.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d40de92661ac13f3c499678fc78177e3d33ac9d6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b6f1d7adc13274414f289ac0f37b3eaa88250a88
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807302"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086787"
 ---
 # <a name="manageddevicemobileappconfigurationsettingstate-resource-type"></a>managedDeviceMobileAppConfigurationSettingState resource type
 
@@ -37,7 +37,7 @@ ms.locfileid: "58807302"
 |userPrincipalName|String|Имя участника-пользователя.|
 |sources|Коллекция [settingSource](../resources/intune-deviceconfig-settingsource.md)|Соответствующие политики|
 |currentValue|String|Текущее значение параметра на устройстве|
-|settingInstanceId|Строка|SettingInstanceId|
+|settingInstanceId|String|SettingInstanceId|
 
 ## <a name="relationships"></a>Связи
 Нет

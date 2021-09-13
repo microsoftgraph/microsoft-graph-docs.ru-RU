@@ -2,15 +2,15 @@
 title: Удаление windowsAutopilotDeviceIdentity
 description: Удаляет объект windowsAutopilotDeviceIdentity.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 03b8f59778ed5ec65b9d170ee4daa823f40264c6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 82574600210b63be034e59b08e814e7bb1844fd0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782660"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59132759"
 ---
 # <a name="delete-windowsautopilotdeviceidentity"></a>Удаление windowsAutopilotDeviceIdentity
 
@@ -29,7 +29,7 @@ ms.locfileid: "58782660"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

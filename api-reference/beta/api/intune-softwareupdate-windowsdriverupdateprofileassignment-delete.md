@@ -2,15 +2,15 @@
 title: Удаление windowsDriverUpdateProfileAssignment
 description: Удаляет windowsDriverUpdateProfileAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 008933aaf310777ff04f570ef864be3f63fbf67b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4759d6cc9280f7702b61ad6d20e7d685c25d3cf8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806654"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138479"
 ---
 # <a name="delete-windowsdriverupdateprofileassignment"></a>Удаление windowsDriverUpdateProfileAssignment
 

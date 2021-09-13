@@ -2,15 +2,15 @@
 title: Get deviceManagementComplexSettingDefinition
 description: Чтение свойств и связей объекта deviceManagementComplexSettingDefinition.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c340e59aa05513c2a0adae63be63db45e0e6e1fe
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3ba5a6eb6479a008274c505120f0df39a78dfc2e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801320"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133164"
 ---
 # <a name="get-devicemanagementcomplexsettingdefinition"></a>Get deviceManagementComplexSettingDefinition
 
@@ -29,7 +29,7 @@ ms.locfileid: "58801320"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

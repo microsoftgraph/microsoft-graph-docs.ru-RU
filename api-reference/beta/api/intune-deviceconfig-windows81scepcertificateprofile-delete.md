@@ -2,15 +2,15 @@
 title: Удаление windows81SCEPCertificateProfile
 description: Удаляет windows81SCEPCertificateProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ba8624f98f5690de1c1f4cc88dbdb329b7c32fce
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e69d8b4b927b1439bd12e140566dfa66e440c396
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803169"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097532"
 ---
 # <a name="delete-windows81scepcertificateprofile"></a>Удаление windows81SCEPCertificateProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "58803169"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

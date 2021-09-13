@@ -2,15 +2,15 @@
 title: тип ресурса groupPolicyPresentationValue
 description: Объект базового значения презентации, который сохраняет значение для одной презентации групповой политики.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7ffd062e43e62c28c01cb0314233c8a97f6ab437
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8783cce5c6175a18cbc490743479ca5e1c8eb17b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803484"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085982"
 ---
 # <a name="grouppolicypresentationvalue-resource-type"></a>тип ресурса groupPolicyPresentationValue
 
@@ -36,7 +36,7 @@ ms.locfileid: "58803484"
 |:---|:---|:---|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

@@ -2,15 +2,15 @@
 title: Создание vulnerableManagedDevice
 description: Создайте новый объект vulnerableManagedDevice.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 483e55e078c2a00671ba7e87119bff38e3354f7c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5893e068d8c2d08354dc72c5488e80650a0c8760
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803709"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59092660"
 ---
 # <a name="create-vulnerablemanageddevice"></a>Создание vulnerableManagedDevice
 
@@ -55,7 +55,7 @@ POST ** Collection URI for microsoft.management.services.api.vulnerableManagedDe
 |:---|:---|:---|
 |id|String|Ключ сущности и ID устройства AAD.|
 |managedDeviceId|String|ID управляемого устройства Intune.|
-|displayName|Строка|Имя устройства.|
+|displayName|String|Имя устройства.|
 |lastSyncDateTime|DateTimeOffset|Последняя дата синхронизации.|
 
 

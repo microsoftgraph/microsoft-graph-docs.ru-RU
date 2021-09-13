@@ -2,15 +2,15 @@
 title: тип ресурса bitLockerRecoveryOptions
 description: Параметры восстановления BitLocker.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fc20c8f23a05a872f7dcd3ebf00d8e496bf31b24
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7c9798225a4d9cb6fe44221a7030e6836803ff51
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807309"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146725"
 ---
 # <a name="bitlockerrecoveryoptions-resource-type"></a>тип ресурса bitLockerRecoveryOptions
 
@@ -28,10 +28,10 @@ ms.locfileid: "58807309"
 |blockDataRecoveryAgent|Логический|Указывает, следует ли блокировать агент восстановления данных на основе сертификатов.|
 |recoveryPasswordUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Указывает, разрешено ли пользователям создавать 48-значный пароль восстановления для фиксированного или системного диска. Возможные значения: `blocked`, `required`, `allowed`, `notConfigured`.|
 |recoveryKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Указывает, разрешено ли пользователям создавать 256-битный ключ восстановления для фиксированного или системного диска. Возможные значения: `blocked`, `required`, `allowed`, `notConfigured`.|
-|hideRecoveryOptions|Логический|Указывает, следует ли разрешить показ параметров восстановления в мастере установки BitLocker для фиксированного или системного диска.|
-|enableRecoveryInformationSaveToStore|Логический|Указывает, следует ли разрешить хранение данных о восстановлении BitLocker в AD DS.|
+|hideRecoveryOptions|Логическое|Указывает, следует ли разрешить показ параметров восстановления в мастере установки BitLocker для фиксированного или системного диска.|
+|enableRecoveryInformationSaveToStore|Логическое|Указывает, следует ли разрешить хранение данных о восстановлении BitLocker в AD DS.|
 |recoveryInformationToStore|[bitLockerRecoveryInformationType](../resources/intune-deviceconfig-bitlockerrecoveryinformationtype.md)|Настройте, какие части данных восстановления BitLocker хранятся в AD DS. Возможные значения: `passwordAndKey`, `passwordOnly`.|
-|enableBitLockerAfterRecoveryInformationToStore|Логический|Указывает, следует ли включить BitLocker до хранения сведений о восстановлении в AD DS.|
+|enableBitLockerAfterRecoveryInformationToStore|Логическое|Указывает, следует ли включить BitLocker до хранения сведений о восстановлении в AD DS.|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -2,15 +2,15 @@
 title: тип ресурса deviceComplianceScriptError
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c8c08d5675648e64c2f2cf31e3bdebe84a21e00c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fce626ca9c21dbeec46312b06f9af903e54d1265
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801159"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086864"
 ---
 # <a name="devicecompliancescripterror-resource-type"></a>тип ресурса deviceComplianceScriptError
 

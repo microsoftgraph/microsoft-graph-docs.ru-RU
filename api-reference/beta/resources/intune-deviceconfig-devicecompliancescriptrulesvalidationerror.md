@@ -2,15 +2,15 @@
 title: тип enum deviceComplianceScriptRulesValidationError
 description: Код ошибки для проверки правил.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8fe71b72d1a20110787b98887c2ddeb13535cf09
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4c3c03c3f39e9a85cf073e5f997637d885ebfd74
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785180"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115508"
 ---
 # <a name="devicecompliancescriptrulesvalidationerror-enum-type"></a>тип enum deviceComplianceScriptRulesValidationError
 
@@ -36,7 +36,7 @@ ms.locfileid: "58785180"
 |operatorNotSupported|8 |Оператор не поддерживает ошибку.|
 |datatypeMissing|9 |Ошибка типа данных.|
 |datatypeNotSupported|10 |Тип данных, не поддерживаемый ошибкой.|
-|operatorDataTypeCombinationNotSupported|11 |Сочетание типа данных оператора не поддерживает ошибку.|
+|operatorDataTypeCombinationNotSupported|11|Сочетание типа данных оператора не поддерживает ошибку.|
 |moreInfoUriMissing|12 |Дополнительные сведения об ошибке urlmissing.|
 |moreInfoUriInvalid|13|Дополнительные сведения о недействительной ошибке URL-адреса.|
 |moreInfoUriTooLarge|14 |Дополнительные сведения о большой ошибке ltoo.|

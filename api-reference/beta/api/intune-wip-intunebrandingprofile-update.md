@@ -2,15 +2,15 @@
 title: Обновление intuneBrandingProfile
 description: Обновление свойств объекта intuneBrandingProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 598bef1456c51a5bff726ffe4af062f276c1055b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b97b1c5bb2f652270360d123ca5aadc7833f9ec1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806126"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59102411"
 ---
 # <a name="update-intunebrandingprofile"></a>Обновление intuneBrandingProfile
 
@@ -53,13 +53,13 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ профиля|
-|имя профиля|Строка|Имя профиля|
-|profileDescription|Строка|Описание профиля|
-|isDefaultProfile|Логический|Boolean, который представляет, используется ли профиль как по умолчанию или нет|
+|id|String|Ключ профиля|
+|имя профиля|String|Имя профиля|
+|profileDescription|String|Описание профиля|
+|isDefaultProfile|Логическое|Boolean, который представляет, используется ли профиль как по умолчанию или нет|
 |createdDateTime|DateTimeOffset|Время создания BrandingProfile|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения BrandingProfile|
-|displayName|Строка|Имя компании или организации, отображаемая конечным пользователям|
+|displayName|String|Имя компании или организации, отображаемая конечным пользователям|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Основной цвет темы, используемый в Корпоративный портал приложениях и веб-портале|
 |showLogo|Boolean|Boolean, который представляет, показаны ли изображения логотипа, предоставленные администратором, или нет.|
 |showDisplayNameNextToLogo|Boolean|Boolean, который представляет, будет ли отображаться имя дисплея, предоставленное администратором, рядом с изображением логотипа или нет.|
@@ -73,18 +73,18 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 |onlineSupportSiteUrl|String|URL-адрес сайта it-справки компании/организации|
 |onlineSupportSiteName|String|Отображение имени сайта it-справки компании/организации|
 |privacyUrl|String|URL-адрес политики конфиденциальности компании и организации|
-|customPrivacyMessage|Строка|Текстовые комментарии относительно того, к чему администратор не имеет доступа на устройстве|
-|customCanSeePrivacyMessage|Строка|Текстовые комментарии относительно доступа администратора к устройству|
-|customCantSeePrivacyMessage|Строка|Текстовые комментарии относительно того, к чему администратор не имеет доступа на устройстве|
+|customPrivacyMessage|String|Текстовые комментарии относительно того, к чему администратор не имеет доступа на устройстве|
+|customCanSeePrivacyMessage|String|Текстовые комментарии относительно доступа администратора к устройству|
+|customCantSeePrivacyMessage|String|Текстовые комментарии относительно того, к чему администратор не имеет доступа на устройстве|
 |isRemoveDeviceDisabled|Логический|Boolean, который представляет, отключил ли администратор действие "Удалить устройство" на корпоративных устройствах.|
-|isFactoryResetDisabled|Логический|Boolean, который представляет, отключил ли администратор действие "Сброс фабрики" на корпоративных устройствах.|
+|isFactoryResetDisabled|Логическое|Boolean, который представляет, отключил ли администратор действие "Сброс фабрики" на корпоративных устройствах.|
 |companyPortalBlockedActions|[коллекция companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md)|Коллекция заблокированных действий на портале компании в зависимости от типов владения платформой и устройствами.|
-|showAzureADEnterpriseApps|Логический|Boolean, который указывает, будут ли Enterprise AzureAD приложения будут показаны в Корпоративный портал|
+|showAzureADEnterpriseApps|Логическое|Boolean, который указывает, будут ли Enterprise AzureAD приложения будут показаны в Корпоративный портал|
 |showOfficeWebApps|Логический|Boolean, который указывает, Office веб-приложения будут показаны в Корпоративный портал|
 |sendDeviceOwnershipChangePushNotification|Логический|Boolean, который указывает, отправляется ли пользователям push-уведомление при смене типа владения устройствами с личного на корпоративный.|
 |enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|Настраиваемый поток регистрации устройств, отображаемый конечному пользователю. Возможные значения: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
-|отключениеClientTelemetry|Логический|Применяется к телеметрии, отправленной от всех клиентов в службу Intune. При отключении все упреждающие предупреждения о неполадок в клиенте отключаются, а параметры телеметрии отображаются неактивными или скрытыми для пользователя устройства.|
-|roleScopeTagIds|Коллекция String|Список тегов области, присвоенных профилю брендинга|
+|отключениеClientTelemetry|Логическое|Применяется к телеметрии, отправленной от всех клиентов в службу Intune. При отключении все упреждающие предупреждения о неполадок в клиенте отключаются, а параметры телеметрии отображаются неактивными или скрытыми для пользователя устройства.|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области, присвоенных профилю брендинга|
 
 
 

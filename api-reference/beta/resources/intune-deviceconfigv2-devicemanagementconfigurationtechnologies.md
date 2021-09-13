@@ -2,15 +2,15 @@
 title: тип enum deviceManagementConfigurationTechnologies
 description: Описывает, какую технологию можно развернуть с помощью этого параметра
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d79bf933623e94d48013d3259326fdd45a9115bf
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d7766d88b7670a4cd0a96a3e4a52a462478a9a41
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806238"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148188"
 ---
 # <a name="devicemanagementconfigurationtechnologies-enum-type"></a>тип enum deviceManagementConfigurationTechnologies
 

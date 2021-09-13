@@ -2,15 +2,15 @@
 title: Обновление userPFXCertificate
 description: Обновление свойств объекта userPFXCertificate.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ac33c79e9c853c4dd19ae768bde2a69ade86752f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5887b90927933101b4a0cd64cd27eea134319bf6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788284"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59107458"
 ---
 # <a name="update-userpfxcertificate"></a>Обновление userPFXCertificate
 
@@ -29,7 +29,7 @@ ms.locfileid: "58788284"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,17 +53,17 @@ PATCH /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для сертификата PFX.|
-|отпечатки пальцев|Строка|Отпечатки sha-1 сертификата PFX.|
+|id|String|Уникальный идентификатор для сертификата PFX.|
+|отпечатки пальцев|String|Отпечатки sha-1 сертификата PFX.|
 |intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Предназначение сертификата с точки зрения развертывания. Возможные значения: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
 |userPrincipalName|String|Имя пользователя сертификата PFX.|
 |startDateTime|DateTimeOffset|Дата начала действия сертификата.|
 |expirationDateTime|DateTimeOffset|Срок действия сертификата.|
-|providerName|Строка|Поставщик криптографии, используемый для шифрования этого blob.|
-|keyName|Строка|Имя ключа (в пределах поставщика), используемого для шифрования blob.|
+|providerName|String|Поставщик криптографии, используемый для шифрования этого blob.|
+|keyName|String|Имя ключа (в пределах поставщика), используемого для шифрования blob.|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Схема заполнения, используемая поставщиком при шифровании и расшифровке. Возможные значения: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
 |зашифрованныйPfxBlob|В двоичном формате|Зашифрованный BLOB PFX.|
-|зашифрованныйPfxPassword|Строка|Зашифрованный пароль PFX.|
+|зашифрованныйPfxPassword|String|Зашифрованный пароль PFX.|
 |createdDateTime|DateTimeOffset|Дата и время импорта этого сертификата PFX.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения этого сертификата PFX.|
 

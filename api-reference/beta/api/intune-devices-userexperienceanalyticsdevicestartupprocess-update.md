@@ -2,15 +2,15 @@
 title: Обновление userExperienceAnalyticsDeviceStartupProcess
 description: Обновление свойств объекта userExperienceAnalyticsDeviceStartupProcess.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c9951add8211ab2f3ac3cb7edc18438177126e2c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 566110a6441273c6027ca1f7853ccb968fb16396
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797025"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097196"
 ---
 # <a name="update-userexperienceanalyticsdevicestartupprocess"></a>Обновление userExperienceAnalyticsDeviceStartupProcess
 
@@ -29,7 +29,7 @@ ms.locfileid: "58797025"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,9 +53,9 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceStartupProcesses/{userExper
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор процесса запуска устройства аналитики пользовательского интерфейса.|
-|managedDeviceId|Строка|ID устройства аналитики пользовательского интерфейса.|
-|processName|Строка|Имя процесса запуска устройства для аналитики пользовательского интерфейса.|
+|id|String|Уникальный идентификатор процесса запуска устройства аналитики пользовательского интерфейса.|
+|managedDeviceId|String|ID устройства аналитики пользовательского интерфейса.|
+|processName|String|Имя процесса запуска устройства для аналитики пользовательского интерфейса.|
 |productName|String|Имя продукта процесса запуска устройства для аналитики пользовательского интерфейса.|
 |publisher|String|Издатель процесса запуска устройства для аналитики пользовательских интерфейсов.|
 |startupImpactInMs|Int32|Влияние процесса запуска устройства для аналитики пользовательских интерфейсов в миллисекунд.|

@@ -2,15 +2,15 @@
 title: Создание managedEBookCategory
 description: Создайте новый объект managedEBookCategory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 97e79be537d24fc4d1de877a7ffc650383944842
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 57170dc1fe781e0f2bdd5ec77de71f63f51da63a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785635"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103636"
 ---
 # <a name="create-managedebookcategory"></a>Создание managedEBookCategory
 
@@ -29,7 +29,7 @@ ms.locfileid: "58785635"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,7 +55,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/categories
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|displayName|Строка|Имя категории электронных книг.|
+|displayName|String|Имя категории электронных книг.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения managedEBookCategory.|
 
 

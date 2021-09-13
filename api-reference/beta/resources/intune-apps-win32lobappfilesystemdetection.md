@@ -2,15 +2,15 @@
 title: тип ресурса win32LobAppFileSystemDetection
 description: Содержит путь файла или папки для обнаружения приложения Win32
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2019ed6f54ea5a9924665fa5b7ee746b7fb8a866
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 732ce5845c6b4965f28b8afca6526b17964622d0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797305"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127621"
 ---
 # <a name="win32lobappfilesystemdetection-resource-type"></a>тип ресурса win32LobAppFileSystemDetection
 
@@ -29,11 +29,11 @@ ms.locfileid: "58797305"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |path|String|Путь файла или папки для обнаружения приложения Win32 Line of Business (LoB)|
-|fileOrFolderName|Строка|Имя файла или папки для обнаружения приложения Win32 Line of Business (LoB)|
-|check32BitOn64System|Логический|Значение, указывающее, является ли этот файл или папка для проверки 32-битного приложения в 64-битной системе|
+|fileOrFolderName|String|Имя файла или папки для обнаружения приложения Win32 Line of Business (LoB)|
+|check32BitOn64System|Логическое|Значение, указывающее, является ли этот файл или папка для проверки 32-битного приложения в 64-битной системе|
 |detectionType|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|Тип обнаружения файловой системы. Возможные значения: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`, `doesNotExist`.|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Оператор обнаружения файлов или папок. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|detectionValue|Строка|Значение обнаружения файла или папки|
+|detectionValue|String|Значение обнаружения файла или папки|
 
 ## <a name="relationships"></a>Связи
 Нет

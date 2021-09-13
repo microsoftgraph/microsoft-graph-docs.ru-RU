@@ -2,15 +2,15 @@
 title: тип ресурса deviceHealthScriptTimeSchedule
 description: Базовый тип расписания скрипта для скрипта для здоровья устройств.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 972dc1eef8532974694baedb793a3b1a2473e716
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b56f208d466a237def9a7916192abfcae7d0f2d6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796217"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59144219"
 ---
 # <a name="devicehealthscripttimeschedule-resource-type"></a>тип ресурса deviceHealthScriptTimeSchedule
 
@@ -29,7 +29,7 @@ ms.locfileid: "58796217"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |interval|Int32|X значение каждые х часов для почасового расписания, каждые х дней для ежедневного расписания, каждые х недель для еженедельного расписания, каждые х месяцев для ежемесячного расписания. Допустимые значения от 1 до 23, унаследованные от [устройстваHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|
-|useUtc|Логический|Указать, является ли время Utc или клиент локальным.|
+|useUtc|Логическое|Указать, является ли время Utc или клиент локальным.|
 |time|TimeOfDay|В какое время планируется запустить сценарий. Эта коллекция может содержать не более 20 элементов.|
 
 ## <a name="relationships"></a>Связи

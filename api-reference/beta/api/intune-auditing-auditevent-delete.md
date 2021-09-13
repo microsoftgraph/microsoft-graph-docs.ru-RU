@@ -2,15 +2,15 @@
 title: Delete auditEvent
 description: Удаляет объект auditEvent.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: afc2711541332a219461b823dcb0224edc1399b4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4c02a847610f87a4e36bdd9a4ed4c5667471141a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783430"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117363"
 ---
 # <a name="delete-auditevent"></a>Delete auditEvent
 
@@ -29,7 +29,7 @@ ms.locfileid: "58783430"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

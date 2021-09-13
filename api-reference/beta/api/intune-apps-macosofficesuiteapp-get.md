@@ -2,15 +2,15 @@
 title: Get macOSOfficeSuiteApp
 description: Чтение свойств и связей объекта macOSOfficeSuiteApp.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 03999ad7406afd8a68b047aeae29a3eb11818a52
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 179541aa68b76d51f87ce61715f78d49ec9f6584
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815920"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108662"
 ---
 # <a name="get-macosofficesuiteapp"></a>Get macOSOfficeSuiteApp
 

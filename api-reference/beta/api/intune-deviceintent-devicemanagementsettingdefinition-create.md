@@ -2,15 +2,15 @@
 title: Создание deviceManagementSettingDefinition
 description: Создание нового объекта deviceManagementSettingDefinition.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 45107731d63cbd86691d15043cce8d296820b4e3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bcc18929e9401fa360efff0ac976a7c3a6e8cc76
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783087"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59088061"
 ---
 # <a name="create-devicemanagementsettingdefinition"></a>Создание deviceManagementSettingDefinition
 
@@ -29,7 +29,7 @@ ms.locfileid: "58783087"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -56,16 +56,16 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|ID определения параметра|
+|id|String|ID определения параметра|
 |valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|Тип данных значения. Возможные значения: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
-|displayName|Строка|Имя отображения параметра|
-|isTopLevel|Boolean|Если параметр верхнего уровня, его можно настроить без необходимости завернутой в коллекцию или сложный параметр|
-|description|Строка|Описание параметра|
-|placeholderText|Строка|Текст placeholder в качестве примера допустимого ввода|
+|displayName|String|Имя отображения параметра|
+|isTopLevel|Логическое|Если параметр верхнего уровня, его можно настроить без необходимости завернутой в коллекцию или сложный параметр|
+|description|String|Описание параметра|
+|placeholderText|String|Текст placeholder в качестве примера допустимого ввода|
 |documentationUrl|String|URL-адрес для настройки документации|
 |headerTitle|String|заголовок параметра представляет категорию/раздел параметра/параметров|
-|headerSubtitle|Строка|субтитры заголовок параметра для получения дополнительных сведений о категории/разделе|
-|keywords|Коллекция String|Ключевые слова, связанные с параметром|
+|headerSubtitle|String|субтитры заголовок параметра для получения дополнительных сведений о категории/разделе|
+|keywords|Коллекция объектов string|Ключевые слова, связанные с параметром|
 |ограничения|[коллекция deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)|Коллекция ограничений для значения параметра|
 |зависимости|[коллекция deviceManagementSettingDependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md)|Коллекция зависимостей от других параметров|
 

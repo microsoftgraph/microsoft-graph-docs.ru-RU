@@ -2,15 +2,15 @@
 title: действие createCopy
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2813975e711b4131009147ba456989bed1b31607
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 69d37a726a8a0528745a03b8c129f24edb2adefe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804731"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59088243"
 ---
 # <a name="createcopy-action"></a>действие createCopy
 
@@ -54,8 +54,8 @@ POST /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySet
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Н/Д|
-|description|Строка|Пока не задокументировано.|
+|displayName|String|Н/Д|
+|description|String|Пока не задокументировано.|
 
 
 

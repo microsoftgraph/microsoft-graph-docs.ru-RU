@@ -2,15 +2,15 @@
 title: Удаление mobileAppInstallStatus
 description: Удаляет mobileAppInstallStatus.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 09ac672a9b7a38f59d869250b33d7e90d3b56ce1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e739ecc3a747890d363084aa0ab870c007d159f1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784144"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59088593"
 ---
 # <a name="delete-mobileappinstallstatus"></a>Удаление mobileAppInstallStatus
 
@@ -29,7 +29,7 @@ ms.locfileid: "58784144"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

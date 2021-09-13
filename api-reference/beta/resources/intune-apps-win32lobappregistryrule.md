@@ -2,15 +2,15 @@
 title: тип ресурса win32LobAppRegistryRule
 description: Сложный тип для хранения данных правил реестра для приложения LOB Win32.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a7bf08b8a22ee8ce94de69bc57a9afb587b9bcfc
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fef395842a81e84e31321e4bb7518229101cd0f7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783990"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59131464"
 ---
 # <a name="win32lobappregistryrule-resource-type"></a>тип ресурса win32LobAppRegistryRule
 
@@ -30,11 +30,11 @@ ms.locfileid: "58783990"
 |:---|:---|:---|
 |ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|Тип правила, указывающий цель правила. Унаследованный от [win32LobAppRule](../resources/intune-apps-win32lobapprule.md). Возможные значения: `detection`, `requirement`.|
 |check32BitOn64System|Логический|Значение, указывающее, следует ли искать 32-битный реестр в 64-битных системах.|
-|keyPath|Строка|Полный путь записи реестра, содержащей значение для обнаружения.|
-|valueName|Строка|Имя значения реестра для обнаружения.|
+|keyPath|String|Полный путь записи реестра, содержащей значение для обнаружения.|
+|valueName|String|Имя значения реестра для обнаружения.|
 |operationType|[win32LobAppRegistryRuleOperationType](../resources/intune-apps-win32lobappregistryruleoperationtype.md)|Тип операции реестра. Возможные значения: `notConfigured`, `exists`, `doesNotExist`, `string`, `integer`, `version`.|
 |operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|Оператор обнаружения реестра. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|comparisonValue|Строка|Значение сравнения реестра.|
+|comparisonValue|String|Значение сравнения реестра.|
 
 ## <a name="relationships"></a>Связи
 Нет

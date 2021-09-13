@@ -2,15 +2,15 @@
 title: Список androidEnterpriseWiFiConfigurations
 description: Список свойств и связей объектов AndroidEnterpriseWiFiConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ca42cc0d6054dc8bd8399261b2d8733a634a87e2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4e1aff3f4b0017b8763b9887caf3667b3218680d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801748"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117210"
 ---
 # <a name="list-androidenterprisewificonfigurations"></a>Список androidEnterpriseWiFiConfigurations
 
@@ -29,7 +29,7 @@ ms.locfileid: "58801748"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

@@ -2,15 +2,15 @@
 title: Список windows10EnrollmentCompletionPageConfigurations
 description: Список свойств и связей объектов Windows10EnrollmentCompletionPageConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7029093af6fb3f04de05f0ef93f266a142cd7538
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c868df11fffb77c9b1e4be40e2d8208b0026e3d3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786055"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59107639"
 ---
 # <a name="list-windows10enrollmentcompletionpageconfigurations"></a>Список windows10EnrollmentCompletionPageConfigurations
 
@@ -29,7 +29,7 @@ ms.locfileid: "58786055"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

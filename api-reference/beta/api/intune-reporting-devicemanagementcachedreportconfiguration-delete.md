@@ -2,15 +2,15 @@
 title: Удаление deviceManagementCachedReportConfiguration
 description: Удаляет устройствоManagementCachedReportConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a6a6ad4fcebbcbb6a81e0a19d40bd3851ff28117
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 35c7fb4ce8184022222c2ae8020b886b557952b2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798148"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59096384"
 ---
 # <a name="delete-devicemanagementcachedreportconfiguration"></a>Удаление deviceManagementCachedReportConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "58798148"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

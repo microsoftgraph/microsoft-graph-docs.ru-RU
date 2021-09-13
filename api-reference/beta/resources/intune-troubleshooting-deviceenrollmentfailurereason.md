@@ -2,15 +2,15 @@
 title: тип enum deviceEnrollmentFailureReason
 description: Категории отказов верхнего уровня для регистрации.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7f47c4903c17d8c99408449d32b83a38a7389204
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 39c422f50c1ff68cabdc12eed92855167347bbab
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266809"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100941"
 ---
 # <a name="deviceenrollmentfailurereason-enum-type"></a>тип enum deviceEnrollmentFailureReason
 
@@ -24,9 +24,9 @@ ms.locfileid: "58266809"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Значение по умолчанию, причина сбоя неизвестна.|
-|проверка подлинности|1 |Сбой проверки подлинности|
+|проверка подлинности|1|Сбой проверки подлинности|
 |авторизация|2|Вызов был аутентификацией, но не разрешен для регистрации.|
-|accountValidation|3 |Не удалось проверить учетную запись для регистрации. (Учетная запись заблокирована, регистрация не включена)|
+|accountValidation|3|Не удалось проверить учетную запись для регистрации. (Учетная запись заблокирована, регистрация не включена)|
 |userValidation|4 |Пользователь не может быть проверен. (Пользователь не существует, отсутствует лицензия)|
 |deviceNotSupported|5 |Устройство не поддерживается для управления мобильными устройствами.|
 |inMaintenance|6 |Учетная запись находится в обслуживании.|
@@ -34,7 +34,7 @@ ms.locfileid: "58266809"
 |featureNotSupported|8 |Функция(ы), используемая этой учетной записью, не поддерживается.|
 |enrollmentRestrictionsEnforced|9 |Ограничения регистрации, настроенные администратором, заблокировали эту регистрацию.|
 |clientDisconnected|10 |Клиент, отовремя отсев или регистрация, был прерван enduser.|
-|userAbandonment|11 |Регистрация была отменена enduser. (Enduser начал работать на борту, но не удалось выполнить его своевременно)|
+|userAbandonment|11|Регистрация была отменена enduser. (Enduser начал работать на борту, но не удалось выполнить его своевременно)|
 
 
 

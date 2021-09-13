@@ -2,15 +2,15 @@
 title: Обновление remoteAssistanceSettings
 description: Обновление свойств объекта remoteAssistanceSettings.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cd6c91aceddb9548c516e3166dc79201f5ace744
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 056ba18203dad1ff0e59297959e18459a5b879d9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807001"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59096433"
 ---
 # <a name="update-remoteassistancesettings"></a>Обновление remoteAssistanceSettings
 
@@ -53,9 +53,9 @@ PATCH /deviceManagement/remoteAssistanceSettings
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор параметров удаленной помощи|
+|id|String|Идентификатор параметров удаленной помощи|
 |remoteAssistanceState|[remoteAssistanceState](../resources/intune-remoteassistance-remoteassistancestate.md)|Текущее состояние удаленной помощи для учетной записи. Возможные значения: неКонфигурационные, отключенные, включенные. Этот параметр настраивается администратором. Параметры удаленной помощи, которые еще не настроены администратором, имеют состояние notConfigured. Возвращается по умолчанию. Возможные значения: `notConfigured`, `disabled`, `enabled`.|
-|allowSessionsToUnenrolledDevices|Логический| Указывает, разрешены ли сеансы для незавершенных устройств для учетной записи. Этот параметр настраивается администратором. Значение по умолчанию является ложным.|
+|allowSessionsToUnenrolledDevices|Логическое| Указывает, разрешены ли сеансы для незавершенных устройств для учетной записи. Этот параметр настраивается администратором. Значение по умолчанию является ложным.|
 
 
 
