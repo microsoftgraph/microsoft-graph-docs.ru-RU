@@ -2,15 +2,15 @@
 title: тип ресурса assignmentFilterStatusDetails
 description: Представляем сведения о состоянии для устройства и полезной нагрузки и всех связанных с ними прикладных фильтров.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fb1df335c7fbf1c0a4c6e79150c56c920e80db87
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f35e732e1500c8fd9a1281ca1ca88b54c173cf52
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789560"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074978"
 ---
 # <a name="assignmentfilterstatusdetails-resource-type"></a>тип ресурса assignmentFilterStatusDetails
 
@@ -25,8 +25,8 @@ ms.locfileid: "58789560"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|managedDeviceId|Строка|Уникальный идентификатор для объекта устройства.|
-|payloadId|Строка|Уникальный идентификатор для объекта полезной нагрузки.|
+|managedDeviceId|String|Уникальный идентификатор для объекта устройства.|
+|payloadId|String|Уникальный идентификатор для объекта полезной нагрузки.|
 |userId|String|Уникальный идентификатор для объекта UserId. Может быть null|
 |свойства устройств|Коллекция [keyValuePair](../resources/intune-policyset-keyvaluepair.md)|Свойства устройства, используемые для оценки фильтра во время регистрации устройства.|
 |evalutionSummaries|[assignmentFilterEvaluationSummary](../resources/intune-policyset-assignmentfilterevaluationsummary.md) collection|Сводки результатов оценки для каждого фильтра, связанного с устройством и полезной нагрузкой|

@@ -2,15 +2,15 @@
 title: тип enum remoteAssistanceState
 description: Состояние удаленной помощи для учетной записи
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1802fb743c33648025cf1c62727317ae0110fed2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ee67be86f9b3144ba8a002814637939f4fe7bdc4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818261"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039478"
 ---
 # <a name="remoteassistancestate-enum-type"></a>тип enum remoteAssistanceState
 

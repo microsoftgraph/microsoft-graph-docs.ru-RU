@@ -2,15 +2,15 @@
 title: тип ресурса userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
 description: Объект производительности приложения для аналитики пользовательского интерфейса содержит сведения о производительности приложения в версии ОС.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bbd3a4c570d3904430b2cd1c4a45755d2f7b9077
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 62c0fc4ec2ca220a4544664be567d0f7aedf8629
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788439"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081040"
 ---
 # <a name="userexperienceanalyticsapphealthappperformancebyosversion-resource-type"></a>тип ресурса userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
 
@@ -34,9 +34,9 @@ ms.locfileid: "58788439"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта производительности версии версии пользовательского интерфейса для аналитики приложений.|
+|id|String|Уникальный идентификатор объекта производительности версии версии пользовательского интерфейса для аналитики приложений.|
 |osVersion|String|Версия ос приложения.|
-|osBuildNumber|Строка|Число сборки ос приложения.|
+|osBuildNumber|String|Число сборки ос приложения.|
 |activeDeviceCount|Int32|Количество устройств, на которых приложение было активным. Допустимые значения 2147483648 2147483647|
 |appName|String|Имя приложения.|
 |appDisplayName|String|Удобное имя приложения.|

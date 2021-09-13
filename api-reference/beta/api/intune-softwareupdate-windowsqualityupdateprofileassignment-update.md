@@ -2,15 +2,15 @@
 title: Обновление windowsQualityUpdateProfileAssignment
 description: Обновление свойств объекта windowsQualityUpdateProfileAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 513c2bebc8e4b400fbc069df61afeed56ee3b4b2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dde4e905e27b6e0bb6bf313979e3bca945f6c53f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807351"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59041264"
 ---
 # <a name="update-windowsqualityupdateprofileassignment"></a>Обновление windowsQualityUpdateProfileAssignment
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/windowsQualityUpdateProfiles/{windowsQualityUpdateProfil
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор сущности|
+|id|String|Идентификатор сущности|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения, на которую назначен профиль обновления качества.|
 
 

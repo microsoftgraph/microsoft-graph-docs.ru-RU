@@ -2,15 +2,15 @@
 title: тип enum managementAgentType
 description: Тип агента управления.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f1593d4f25a3da7f631c69e105dc8652453e01f6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 47bfb0c7f7e1f59832b00c1ab7efcf2d3a556e52
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815045"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040065"
 ---
 # <a name="managementagenttype-enum-type"></a>тип enum managementAgentType
 
@@ -32,7 +32,7 @@ ms.locfileid: "58815045"
 |easIntuneClient|5 |Устройство является двойным управляемым клиентом EAS и Intune.|
 |configurationManagerClient|8 |Устройство управляется диспетчером конфигурации.|
 |configurationManagerClientMdm|10 |Устройство управляется диспетчером конфигурации и MDM.|
-|configurationManagerClientMdmEas|11 |Устройство управляется диспетчером конфигурации, MDM и Eas.|
+|configurationManagerClientMdmEas|11|Устройство управляется диспетчером конфигурации, MDM и Eas.|
 |unknown|16 |Неизвестный тип агента управления.|
 |jamf|32|Атрибуты устройства извлекаются из Jamf.|
 |googleCloudDevicePolicyController|64|Устройство управляется cloudDPC От Google.|

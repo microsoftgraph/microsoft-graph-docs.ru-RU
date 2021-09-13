@@ -2,15 +2,15 @@
 title: Get groupPolicyConfigurationAssignment
 description: Чтение свойств и связей объекта groupPolicyConfigurationAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 23ddbd187b7143bb99cfce36c0cc4da02ce7ec6c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b5fad678f6b67de86a4477879b224df07e4b5150
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804143"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59076896"
 ---
 # <a name="get-grouppolicyconfigurationassignment"></a>Get groupPolicyConfigurationAssignment
 

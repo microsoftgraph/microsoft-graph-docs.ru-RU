@@ -2,15 +2,15 @@
 title: тип ресурса microsoftTunnelConfiguration
 description: Сущность, представляюая коллекцию параметров Microsoft Tunnel
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 64e28c3747c8e1000a69f58bd7e4a27f144ebd84
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a5e6ee3f7e14078b2fe5e345d362d0f0d5c9200b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790628"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080934"
 ---
 # <a name="microsofttunnelconfiguration-resource-type"></a>тип ресурса microsoftTunnelConfiguration
 
@@ -34,19 +34,19 @@ ms.locfileid: "58790628"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Id MicrosoftTunnelConfiguration|
-|displayName|Строка|Имя отображения MicrosoftTunnelConfiguration|
-|description|Строка|Описание MicrosoftTunnelConfiguration|
+|id|String|Id MicrosoftTunnelConfiguration|
+|displayName|String|Имя отображения MicrosoftTunnelConfiguration|
+|description|String|Описание MicrosoftTunnelConfiguration|
 |сеть|String|Подсеть, которая будет использоваться для выделения виртуального адреса для клиентов|
-|dnsServers|Коллекция String|DNS-серверы, которые будут использоваться клиентами|
-|defaultDomainSuffix|Строка|Приложение домена по умолчанию, которое будет использоваться клиентами|
-|routesInclude|Коллекция String|Маршруты, которые будут маршрутить сервер|
-|routesExclude|Коллекция String|Подмышы маршрутов, которые не будут маршрутиться сервером|
-|splitDNS|Коллекция String|Домены, которые будут разрешены с помощью предоставленных dns-серверов|
+|dnsServers|Коллекция объектов string|DNS-серверы, которые будут использоваться клиентами|
+|defaultDomainSuffix|String|Приложение домена по умолчанию, которое будет использоваться клиентами|
+|routesInclude|Коллекция объектов string|Маршруты, которые будут маршрутить сервер|
+|routesExclude|Коллекция объектов string|Подмышы маршрутов, которые не будут маршрутиться сервером|
+|splitDNS|Коллекция объектов string|Домены, которые будут разрешены с помощью предоставленных dns-серверов|
 |listenPort|Int32|Порт, который будут прослушивать TCP и UPD на сервере|
 |advancedSettings|Коллекция [keyValuePair](../resources/intune-mstunnel-keyvaluepair.md)|Дополнительные параметры, которые могут быть применены к серверу|
 |lastUpdateDateTime|DateTimeOffset|При последнем обновлении MicrosoftTunnelConfiguration|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity.|
 
 ## <a name="relationships"></a>Связи
 Нет

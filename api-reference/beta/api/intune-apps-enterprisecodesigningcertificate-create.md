@@ -2,15 +2,15 @@
 title: Создание enterpriseCodeSigningCertificate
 description: Создание нового объекта enterpriseCodeSigningCertificate.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c14cc0a2d049969bddfa4e4bb50cf6c5ef8792d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cbbb35f29013b58838b3e6a57f616fee79a73dc5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818515"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071331"
 ---
 # <a name="create-enterprisecodesigningcertificate"></a>Создание enterpriseCodeSigningCertificate
 

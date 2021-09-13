@@ -2,15 +2,15 @@
 title: тип ресурса timeSeriesParameter
 description: Параметр передается в GetHealthMetricTimeSeries при запросе серии моментального снимка.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: da593d882a0ab4fb4681c06bbb1c40cbb03a86ba
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3110404b04bbea136bc242ab52fd87cdb9f502a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58762996"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080669"
 ---
 # <a name="timeseriesparameter-resource-type"></a>тип ресурса timeSeriesParameter
 
@@ -25,7 +25,7 @@ ms.locfileid: "58762996"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|metricName|Строка|Имя метрик, для которой запрашивается серия времени.|
+|metricName|String|Имя метрик, для которой запрашивается серия времени.|
 |startDateTime|DateTimeOffset|Время начала запрашиваемой серии.|
 |endDateTime|DateTimeOffset|Время окончания запрашиваемой серии. Необязательный; если не указано, используется текущее время.|
 

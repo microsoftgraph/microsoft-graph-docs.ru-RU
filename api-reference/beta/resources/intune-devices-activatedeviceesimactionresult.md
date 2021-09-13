@@ -2,15 +2,15 @@
 title: activateDeviceEsimActionResult type
 description: Активация результата действия eSIM устройства
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 918557f9ea1ea098d98b1710a7f4beeb84bd5574
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 635cb38fbb454c294981d0f758fec6cffcfd7852
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786637"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068999"
 ---
 # <a name="activatedeviceesimactionresult-resource-type"></a>activateDeviceEsimActionResult type
 
@@ -34,7 +34,7 @@ ms.locfileid: "58786637"
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
 |carrierUrl|Строка|Url-адрес carrier для активации eSIM устройства |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

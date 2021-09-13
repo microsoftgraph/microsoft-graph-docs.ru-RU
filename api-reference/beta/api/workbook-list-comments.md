@@ -1,16 +1,16 @@
 ---
 title: Список книгКомменты
 description: Извлечение списка объектов workbookComments.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d704ee34d54c2b4369b544f8886f69fc6286e15b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9e4cf47a1b590b5bd5d84c37abcd8545d90c5c4d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52036169"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59076126"
 ---
 # <a name="list-workbookcomments"></a>Список книгКомменты
 
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/drive/items/{id}/workbook/comments
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

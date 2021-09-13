@@ -2,15 +2,15 @@
 title: Тип ресурса deviceEnrollmentConfiguration
 description: Базовый класс конфигурации регистрации устройств
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3f4095db44b1b32c3c1adb5792dab99167909c41
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d34bfee039fa8d4a030ee5078d73974b9d05f7b3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792556"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039149"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>Тип ресурса deviceEnrollmentConfiguration
 
@@ -38,7 +38,7 @@ ms.locfileid: "58792556"
 |:---|:---|:---|
 |id|String|Уникальный идентификатор учетной записи|
 |displayName|String|Отображающее имя конфигурации регистрации устройства|
-|description|Строка|Описание конфигурации регистрации устройства|
+|description|String|Описание конфигурации регистрации устройства|
 |priority|Int32|Приоритет используется, когда пользователь существует в нескольких группах, которые назначены конфигурации регистрации. Пользователи подчиняются только конфигурации с наименьшим значением приоритета.|
 |createdDateTime|DateTimeOffset|Создано время даты в UTC конфигурации регистрации устройства|
 |lastModifiedDateTime|DateTimeOffset|Последнее измененное время даты в UTC конфигурации регистрации устройства|

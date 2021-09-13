@@ -2,15 +2,15 @@
 title: действие getHealthMetricTimeSeries
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 86de9d7f567c2aed982546e4d1f857259033288d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 67e3d2822ac03c95885dfa44d7298f5325052fd0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805910"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59041726"
 ---
 # <a name="gethealthmetrictimeseries-action"></a>действие getHealthMetricTimeSeries
 

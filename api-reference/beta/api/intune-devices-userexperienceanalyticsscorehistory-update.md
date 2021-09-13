@@ -2,15 +2,15 @@
 title: Обновление userExperienceAnalyticsScoreHistory
 description: Обновление свойств объекта userExperienceAnalyticsScoreHistory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8aba95d9b79ed29162869b139b1968047661e42c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 19b0c60db719e35d516cb048d69c7dd76fdd1dde
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792339"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59076987"
 ---
 # <a name="update-userexperienceanalyticsscorehistory"></a>Обновление userExperienceAnalyticsScoreHistory
 
@@ -29,7 +29,7 @@ ms.locfileid: "58792339"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +53,7 @@ PATCH /deviceManagement/userExperienceAnalyticsScoreHistory/{userExperienceAnaly
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор процесса запуска устройства аналитики пользовательского интерфейса.|
+|id|String|Уникальный идентификатор процесса запуска устройства аналитики пользовательского интерфейса.|
 |startupDateTime|DateTimeOffset|Время запуска устройства аналитики пользовательского интерфейса.|
 |overallScore|Int32|Общая оценка аналитики пользовательского опыта. Оценка будет в диапазоне 0-100, 100 является идеальным показателем. Допустимые значения: от 0 до 100|
 |startupScore|Int32|Оценка запуска устройства аналитики пользовательских интерфейсов. Оценка будет в диапазоне 0-100, 100 является идеальным показателем.|

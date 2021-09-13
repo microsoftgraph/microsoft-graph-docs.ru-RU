@@ -2,15 +2,15 @@
 title: Создание androidDeviceOwnerEnrollmentProfile
 description: Создайте новый объект androidDeviceOwnerEnrollmentProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 94f9e856413c44cf375ba9ec3360e44ecd820f37
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 89fd5f481b8c6275d8a209e42c39d31c26a226fc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817644"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071401"
 ---
 # <a name="create-androiddeviceownerenrollmentprofile"></a>Создание androidDeviceOwnerEnrollmentProfile
 
@@ -67,7 +67,7 @@ POST /deviceManagement/androidDeviceOwnerEnrollmentProfiles
 |enrolledDeviceCount|Int32|Общее количество устройств с Android, зарегистрированных через этот профиль регистрации.|
 |qrCodeContent|String|Строка, используемая для создания QR-кода маркера.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Строка, используемая для создания QR-кода маркера.|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity.|
 
 
 

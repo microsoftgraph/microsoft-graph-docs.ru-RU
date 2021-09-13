@@ -2,15 +2,15 @@
 title: тип ресурса unifiedRoleManagementPolicyRuleTarget
 description: УнифицированнаяRoleManagementPolicyRuleTarget указывает цель, связанную с политикой управления ролью.
 author: shauliu1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 5efeaacbcc6b8f74d1b1ab7ee9a83cce139721ed
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: c4d7bfb6744c3272e9237590b4d17c5e1d79b0f9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453620"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074446"
 ---
 # <a name="unifiedrolemanagementpolicyruletarget-resource-type"></a>тип ресурса unifiedRoleManagementPolicyRuleTarget
 
@@ -23,12 +23,12 @@ ms.locfileid: "58453620"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |вызываемая|String|Вызываемая цель правила политики. Допустимые значения: `None` `Admin` , `EndUser` .|
-|enforcedSettings|Коллекция строк|Список параметров, которые применяются и не могут быть переопределены в детских сферах. Используйте `All` для всех параметров.|
-|inheritableSettings|Коллекция строк|Список параметров, которые могут наследоваться по детским сферам. Используйте `All` для всех параметров.|
+|enforcedSettings|Коллекция String|Список параметров, которые применяются и не могут быть переопределены в детских сферах. Используйте `All` для всех параметров.|
+|inheritableSettings|Коллекция String|Список параметров, которые могут наследоваться по детским сферам. Используйте `All` для всех параметров.|
 |уровень|String|Уровень целевого показателя правила политики. Допустимые значения: `Eligibility` , `Assignment` .    |
-|operations|Коллекция строк|Операции для целевой цели правила политики. Допустимые значения: `All` , , , , , `Activate` `Deactivate` `Assign` `Update` `Remove` `Extend` `Renew` .|
+|operations|Коллекция String|Операции для целевой цели правила политики. Допустимые значения: `All` , , , , , `Activate` `Deactivate` `Assign` `Update` `Remove` `Extend` `Renew` .|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |targetObjects|Коллекция [directoryObject](../resources/directoryobject.md)|Коллекция пользователей, групп и servicePrincipals, которые находятся в области политики. Если не указано, все объекты находятся в области политики.|

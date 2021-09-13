@@ -2,16 +2,16 @@
 title: Внешние соединители, которые окружались значениями
 description: Значения Graph внешних соединителях Microsoft
 doc_type: enumPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 ms.author: emzho
 author: emzho
-ms.openlocfilehash: 31a7025c1459964e483196f419fdba448a608fa3a7ce6f77e47eb635dcc7224f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 39922c98f3d6ce27c8be01a6b5a8ffbb67bd7705
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54203346"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040584"
 ---
 # <a name="external-connectors-enum-values"></a>Внешние соединители, которые окружались значениями
 
@@ -29,8 +29,8 @@ ms.locfileid: "54203346"
 
 | Элемент
 |:--------------
-| user
-| group
+| пользователь
+| group;
 | все
 | everyoneExceptGuests
 | externalGroup
@@ -63,8 +63,8 @@ ms.locfileid: "54203346"
 
 | Элемент
 |:--------------
-| user
-| group
+| пользователь
+| group;
 | unknownFutureValue
 
 
@@ -107,7 +107,7 @@ ms.locfileid: "54203346"
 
 | Элемент
 |:--------------
-| string
+| String
 | int64
 | double
 | dateTime

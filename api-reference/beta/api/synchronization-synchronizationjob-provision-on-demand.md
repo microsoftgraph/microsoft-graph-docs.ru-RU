@@ -1,30 +1,30 @@
 ---
-title: 'synchronizationJob: provisionOnDemand'
-description: Выберите пользователя и подберем учетную запись по запросу.
+title: 'синхронизацияJob: provisionOnDemand'
+description: Выберите пользователя и укакать учетную запись по требованию.
 author: ArvindHarinder1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 3e1007dfd7bce9ff64f54651104de943348c10dc
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: f3db21462738b29393c46dab6fa8823562ce7c77
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240565"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040928"
 ---
-# <a name="synchronizationjob-provisionondemand"></a>synchronizationJob: provisionOnDemand
+# <a name="synchronizationjob-provisionondemand"></a>синхронизацияJob: provisionOnDemand
 
 Пространство имен: microsoft.graph
 
-Выберите пользователя и подберем учетную запись по запросу.
+Выберите пользователя и укакать учетную запись по требованию.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
-|Делегированное (личная учетная запись Майкрософт) |Не поддерживается. |
+|Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
+|Делегированные (личная учетная запись Майкрософт) |Не поддерживается. |
 |Для приложений                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -50,13 +50,13 @@ POST /servicePrincipals/{servicePrincipalsId}/synchronization/jobs/{synchronizat
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|parameters|[Коллекция synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md)|Представляет объекты, которые будут быть выполнены с выполнением правил синхронизации. Ресурс в основном используется для предоставления по требованию. |
+|parameters|[коллекция synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md)|Представляет объекты, которые будут оформлены, и правила синхронизации выполнены. Этот ресурс используется в основном для обеспечения по требованию. |
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код `200 OK` отклика и строкуKeyStringValuePair.
+В случае успешной работы этот метод возвращает код ответа и `200 OK` строкуKeyStringValuePair.
 
 ## <a name="examples"></a>Примеры
 

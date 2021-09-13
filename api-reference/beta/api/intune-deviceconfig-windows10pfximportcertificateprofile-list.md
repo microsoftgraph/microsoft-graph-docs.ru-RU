@@ -2,15 +2,15 @@
 title: Список windows10PFXImportCertificateProfiles
 description: Список свойств и связей объектов Windows10PFXImportCertificateProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c87a810353b189ba635aa34628d5d68e54724c78
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8b7e9c8e1316a9869cba7b6543b4cc6d20871999
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806847"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070911"
 ---
 # <a name="list-windows10pfximportcertificateprofiles"></a>Список windows10PFXImportCertificateProfiles
 

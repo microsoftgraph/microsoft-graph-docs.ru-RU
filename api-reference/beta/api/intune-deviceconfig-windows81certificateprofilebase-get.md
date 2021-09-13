@@ -2,15 +2,15 @@
 title: Get windows81CertificateProfileBase
 description: Чтение свойств и связей объекта Windows81CertificateProfileBase.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7ad7b77cd100b268c937b3123bb778ae44cd9584
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fd0b30b4f78afb45eaddb80824d0f424e6e70b21
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788866"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077351"
 ---
 # <a name="get-windows81certificateprofilebase"></a>Get windows81CertificateProfileBase
 
@@ -29,7 +29,7 @@ ms.locfileid: "58788866"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

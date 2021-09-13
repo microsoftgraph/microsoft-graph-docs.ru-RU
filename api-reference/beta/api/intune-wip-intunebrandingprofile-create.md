@@ -2,15 +2,15 @@
 title: Создание intuneBrandingProfile
 description: Создайте новый объект intuneBrandingProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ce308e77d81ba13897fe6412316d1d46db63eadf
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d723017d414758ecb88a4b8ef1f6c28165d98102
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791244"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59041243"
 ---
 # <a name="create-intunebrandingprofile"></a>Создание intuneBrandingProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "58791244"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,13 +53,13 @@ POST /deviceManagement/intuneBrandingProfiles
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ профиля|
-|имя профиля|Строка|Имя профиля|
-|profileDescription|Строка|Описание профиля|
+|id|String|Ключ профиля|
+|имя профиля|String|Имя профиля|
+|profileDescription|String|Описание профиля|
 |isDefaultProfile|Логический|Boolean, который представляет, используется ли профиль как по умолчанию или нет|
 |createdDateTime|DateTimeOffset|Время создания BrandingProfile|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения BrandingProfile|
-|displayName|Строка|Имя компании или организации, отображаемая конечным пользователям|
+|displayName|String|Имя компании или организации, отображаемая конечным пользователям|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Основной цвет темы, используемый в Корпоративный портал приложениях и веб-портале|
 |showLogo|Boolean|Boolean, который представляет, показаны ли изображения логотипа, предоставленные администратором, или нет.|
 |showDisplayNameNextToLogo|Boolean|Boolean, который представляет, будет ли отображаться имя дисплея, предоставленное администратором, рядом с изображением логотипа или нет.|
@@ -73,18 +73,18 @@ POST /deviceManagement/intuneBrandingProfiles
 |onlineSupportSiteUrl|String|URL-адрес сайта it-справки компании/организации|
 |onlineSupportSiteName|String|Отображение имени сайта it-справки компании/организации|
 |privacyUrl|String|URL-адрес политики конфиденциальности компании и организации|
-|customPrivacyMessage|Строка|Текстовые комментарии относительно того, к чему администратор не имеет доступа на устройстве|
-|customCanSeePrivacyMessage|Строка|Текстовые комментарии относительно доступа администратора к устройству|
-|customCantSeePrivacyMessage|Строка|Текстовые комментарии относительно того, к чему администратор не имеет доступа на устройстве|
+|customPrivacyMessage|String|Текстовые комментарии относительно того, к чему администратор не имеет доступа на устройстве|
+|customCanSeePrivacyMessage|String|Текстовые комментарии относительно доступа администратора к устройству|
+|customCantSeePrivacyMessage|String|Текстовые комментарии относительно того, к чему администратор не имеет доступа на устройстве|
 |isRemoveDeviceDisabled|Логический|Boolean, который представляет, отключил ли администратор действие "Удалить устройство" на корпоративных устройствах.|
-|isFactoryResetDisabled|Логический|Boolean, который представляет, отключил ли администратор действие "Сброс фабрики" на корпоративных устройствах.|
+|isFactoryResetDisabled|Логическое|Boolean, который представляет, отключил ли администратор действие "Сброс фабрики" на корпоративных устройствах.|
 |companyPortalBlockedActions|[коллекция companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md)|Коллекция заблокированных действий на портале компании в зависимости от типов владения платформой и устройствами.|
-|showAzureADEnterpriseApps|Логический|Boolean, который указывает, будут ли Enterprise AzureAD приложения будут показаны в Корпоративный портал|
+|showAzureADEnterpriseApps|Логическое|Boolean, который указывает, будут ли Enterprise AzureAD приложения будут показаны в Корпоративный портал|
 |showOfficeWebApps|Логический|Boolean, который указывает, Office веб-приложения будут показаны в Корпоративный портал|
 |sendDeviceOwnershipChangePushNotification|Логический|Boolean, который указывает, отправляется ли пользователям push-уведомление при смене типа владения устройствами с личного на корпоративный.|
 |enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|Настраиваемый поток регистрации устройств, отображаемый конечному пользователю. Возможные значения: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
-|отключениеClientTelemetry|Логический|Применяется к телеметрии, отправленной от всех клиентов в службу Intune. При отключении все упреждающие предупреждения о неполадок в клиенте отключаются, а параметры телеметрии отображаются неактивными или скрытыми для пользователя устройства.|
-|roleScopeTagIds|Коллекция String|Список тегов области, присвоенных профилю брендинга|
+|отключениеClientTelemetry|Логическое|Применяется к телеметрии, отправленной от всех клиентов в службу Intune. При отключении все упреждающие предупреждения о неполадок в клиенте отключаются, а параметры телеметрии отображаются неактивными или скрытыми для пользователя устройства.|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области, присвоенных профилю брендинга|
 
 
 

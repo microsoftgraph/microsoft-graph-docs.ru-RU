@@ -2,15 +2,15 @@
 title: Получить windowsPhone81AppX
 description: Чтение свойств и связей объекта WindowsPhone81AppX.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ce9d4a73e3c2b2dab04c1fb4a9a7a7f3da55a18
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ee320364e10151db6d42335d47f16231d1c1fd46
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800305"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077869"
 ---
 # <a name="get-windowsphone81appx"></a>Получить windowsPhone81AppX
 
@@ -29,7 +29,7 @@ ms.locfileid: "58800305"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

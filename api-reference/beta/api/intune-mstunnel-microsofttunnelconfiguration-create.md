@@ -2,15 +2,15 @@
 title: Создание microsoftTunnelConfiguration
 description: Создайте новый объект microsoftTunnelConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 133cef46fdd3519f6de20d4d4061171958adcdac
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 942f9268327d521c3fe3698ebe31d1c956d6d2a9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785299"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034311"
 ---
 # <a name="create-microsofttunnelconfiguration"></a>Создание microsoftTunnelConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "58785299"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,19 +53,19 @@ POST /deviceManagement/microsoftTunnelConfigurations
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Id MicrosoftTunnelConfiguration|
-|displayName|Строка|Имя отображения MicrosoftTunnelConfiguration|
-|description|Строка|Описание MicrosoftTunnelConfiguration|
-|сеть|Строка|Подсеть, которая будет использоваться для выделения виртуального адреса для клиентов|
-|dnsServers|Коллекция String|DNS-серверы, которые будут использоваться клиентами|
-|defaultDomainSuffix|Строка|Приложение домена по умолчанию, которое будет использоваться клиентами|
-|routesInclude|Коллекция String|Маршруты, которые будут маршрутить сервер|
-|routesExclude|Коллекция String|Подмышы маршрутов, которые не будут маршрутиться сервером|
-|splitDNS|Коллекция String|Домены, которые будут разрешены с помощью предоставленных dns-серверов|
+|id|String|Id MicrosoftTunnelConfiguration|
+|displayName|String|Имя отображения MicrosoftTunnelConfiguration|
+|description|String|Описание MicrosoftTunnelConfiguration|
+|сеть|String|Подсеть, которая будет использоваться для выделения виртуального адреса для клиентов|
+|dnsServers|Коллекция объектов string|DNS-серверы, которые будут использоваться клиентами|
+|defaultDomainSuffix|String|Приложение домена по умолчанию, которое будет использоваться клиентами|
+|routesInclude|Коллекция объектов string|Маршруты, которые будут маршрутить сервер|
+|routesExclude|Коллекция объектов string|Подмышы маршрутов, которые не будут маршрутиться сервером|
+|splitDNS|Коллекция объектов string|Домены, которые будут разрешены с помощью предоставленных dns-серверов|
 |listenPort|Int32|Порт, который будут прослушивать TCP и UPD на сервере|
 |advancedSettings|Коллекция [keyValuePair](../resources/intune-mstunnel-keyvaluepair.md)|Дополнительные параметры, которые могут быть применены к серверу|
 |lastUpdateDateTime|DateTimeOffset|При последнем обновлении MicrosoftTunnelConfiguration|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity.|
 
 
 

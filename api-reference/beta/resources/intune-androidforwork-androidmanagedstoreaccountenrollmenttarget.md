@@ -2,15 +2,15 @@
 title: тип enum androidManagedStoreAccountEnrollmentTarget
 description: Тип таргетинга для управления устройствами Android для работы для учетной записи
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 48de3cc207fc8d215faaa03f626b1b1427b067b2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dd62cbf92fef0162fa61eca7de6e0f86ce068ef5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806707"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040542"
 ---
 # <a name="androidmanagedstoreaccountenrollmenttarget-enum-type"></a>тип enum androidManagedStoreAccountEnrollmentTarget
 

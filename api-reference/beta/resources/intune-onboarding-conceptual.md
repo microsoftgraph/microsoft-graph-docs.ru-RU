@@ -1,15 +1,15 @@
 ---
 title: На борту управляемых устройств с intune — API Graph Microsoft
 description: Перечислены API Graph Microsoft для конечных точек Intune (REST), используемый для бортовых (настраивать и инициализировать) устройств для организации-клиента.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: f71757ef2d59b1e188079d02a3ad86a44c208cfa
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7f0955ad5ddad757dc4b189eafff925670e0590e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786300"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039744"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Регистрация устройств для управления в Intune
 

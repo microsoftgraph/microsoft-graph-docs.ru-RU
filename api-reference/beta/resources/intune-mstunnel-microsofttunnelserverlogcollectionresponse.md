@@ -2,15 +2,15 @@
 title: тип ресурса microsoftTunnelServerLogCollectionResponse
 description: Объект, который хранит состояние коллекции журнала сервера.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8a504cbdcf8bdbec0a41a5442b7b72a327e05026
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 99c788005d51c68e35684e62c906d60122a3625c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783192"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039736"
 ---
 # <a name="microsofttunnelserverlogcollectionresponse-resource-type"></a>тип ресурса microsoftTunnelServerLogCollectionResponse
 
@@ -35,12 +35,12 @@ ms.locfileid: "58783192"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный ID объекта|
+|id|String|Уникальный ID объекта|
 |status|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|Состояние коллекции журналов. Возможные значения: `pending`, `completed`, `failed`.|
 |startDateTime|DateTimeOffset|Время начала собранных журналов |
 |endDateTime|DateTimeOffset|Время окончания собранных журналов|
 |sizeInBytes|Int64|Размер журналов в bytes|
-|serverId|Строка|ID сервера, на который запрашивается коллекция журналов|
+|serverId|String|ID сервера, на который запрашивается коллекция журналов|
 |requestDateTime|DateTimeOffset|Время запроса коллекции журналов|
 |expiryDateTime|DateTimeOffset|Время истечения срока действия коллекции журналов|
 

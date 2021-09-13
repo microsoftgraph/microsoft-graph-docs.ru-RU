@@ -2,15 +2,15 @@
 title: Удаление deviceManagementScriptPolicySetItem
 description: Удаляет устройствоManagementScriptPolicySetItem.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 19e3d21295fb3887465ebba43d2e44e785d3730e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cd56e89ad12d6feaea7804fcf6b1f4158e1e6fd2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803330"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59076686"
 ---
 # <a name="delete-devicemanagementscriptpolicysetitem"></a>Удаление deviceManagementScriptPolicySetItem
 
@@ -29,7 +29,7 @@ ms.locfileid: "58803330"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

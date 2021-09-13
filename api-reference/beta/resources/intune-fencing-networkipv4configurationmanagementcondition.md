@@ -2,15 +2,15 @@
 title: тип ресурса networkIPv4ConfigurationManagementCondition
 description: Можно определить условия управления на основе конфигурации IPv4, которые срабатывает при обнаружении устройства определенных параметров IP-сети. Условия управления IP-конфигурами будут считаться TRUE только при активном подключении к сети.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5a25b306dd4dbe2480b1366dd1d2e1eb276bacc2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6216fa38b0bd8505195cf99050d4a4167acb24e6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799453"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063960"
 ---
 # <a name="networkipv4configurationmanagementcondition-resource-type"></a>тип ресурса networkIPv4ConfigurationManagementCondition
 
@@ -37,19 +37,19 @@ ms.locfileid: "58799453"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для состояния управления. Созданное в системе значение, назначенное при его создания. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|id|String|Уникальный идентификатор для состояния управления. Созданное в системе значение, назначенное при его создания. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |uniqueName|Строка|Уникальное имя для состояния управления. Используется в выражениях условий управления. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|displayName|Строка|Администратор определил имя условия управления. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|description|Строка|Администратор определил описание условия управления. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|displayName|String|Администратор определил имя условия управления. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|description|String|Администратор определил описание условия управления. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |createdDateTime|DateTimeOffset|Время создания условия управления. Сгенерированная сторона службы. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения условия управления. Обновленная сторона службы. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |eTag|String|ETag состояния управления. Обновленная сторона службы. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |applicablePlatforms|[коллекция devicePlatformType](../resources/intune-fencing-deviceplatformtype.md)|Применимые платформы для этого условия управления. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|ipV4Prefix|Строка|Подсеть IPv4, к которая должна быть подключена. например, 10.0.0.0/8|
-|ipV4Gateway|Строка|Адрес шлюза IPv4. например, 10.0.0.0|
-|ipV4DHCPServer|Строка|Адрес IPv4 сервера DHCP для адаптер.|
-|ipV4DNSServerList|Коллекция String|Серверы DNS IPv4, настроенные для адаптеров.|
-|dnsSuffixList|Коллекция String|Допустимые Суффиксы DNS для текущей сети. например, seattle.contoso.com|
+|ipV4Prefix|String|Подсеть IPv4, к которая должна быть подключена. например, 10.0.0.0/8|
+|ipV4Gateway|String|Адрес шлюза IPv4. например, 10.0.0.0|
+|ipV4DHCPServer|String|Адрес IPv4 сервера DHCP для адаптер.|
+|ipV4DNSServerList|Коллекция объектов string|Серверы DNS IPv4, настроенные для адаптеров.|
+|dnsSuffixList|Коллекция объектов string|Допустимые Суффиксы DNS для текущей сети. например, seattle.contoso.com|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса deviceManagement
 description: 'Ресурс deviceManagement представляет контейнер, содержимое которого зависит от рабочего процесса, в том числе:  '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c5d6a6d09515c4717c0c45442e80875e5a340968
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c1562f91f3728830f4d220063651d03823c052eb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815472"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039135"
 ---
 # <a name="devicemanagement-resource-type"></a>Тип ресурса deviceManagement
 
@@ -39,7 +39,7 @@ ms.locfileid: "58815472"
 - Удаленный доступ
 - Партнеры удаленной помощи
 - Политики управления доступом на основе ролей (RBAC)
-- Reporting
+- Отчеты
 - Партнеры по управлению телекоммуникационными ресурсами
 - События устранения неполадок
 - Windows Сводки по защите информации
@@ -67,7 +67,7 @@ ms.locfileid: "58815472"
 |id|String|Уникальный идентификатор, связанный с устройством.|
 |**Конфигурация устройств**|
 |intuneAccountId|Guid|ID учетной записи Intune для данного клиента|
-|legacyPcManangementEnabled|Логический|Свойство, чтобы включить для этой учетной записи управление устаревшим КОМПЬЮТЕРом без MDM. Это свойство доступно только для чтения.|
+|legacyPcManangementEnabled|Логическое|Свойство, чтобы включить для этой учетной записи управление устаревшим КОМПЬЮТЕРом без MDM. Это свойство доступно только для чтения.|
 |maximumDepTokens|Int32|Максимальное количество маркеров DEP, разрешенных для каждого клиента.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Параметры уровня учетной записи.|
 |**Управление устройствами**|
@@ -117,7 +117,7 @@ ms.locfileid: "58815472"
 |deviceConfigurationDeviceStateSummaries|[deviceConfigurationDeviceStateSummary](../resources/intune-deviceconfig-deviceconfigurationdevicestatesummary.md)|Общие сведения о состоянии конфигурации устройства для этой учетной записи.|
 |deviceConfigurationRestrictedAppsViolations|[коллекция restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md)|Ограничение нарушений приложений для этой учетной записи.|
 |deviceConfigurations|Коллекция [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|Конфигурации устройств.|
-|deviceConfigurationUserStateSummaries|[deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md);|Сводка состояния состояния конфигурации устройства для этой учетной записи.|
+|deviceConfigurationUserStateSummaries|[deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md)|Сводка состояния состояния конфигурации устройства для этой учетной записи.|
 |iosUpdateStatuses|Коллекция [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md)|Состояния установки обновления программного обеспечения IOS для этой учетной записи.|
 |ndesConnectors|[Коллекция ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|Коллекция соединители Ndes для этой учетной записи.|
 |softwareUpdateStatusSummary|[softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md)|Общие сведения о состоянии обновления программного обеспечения.|
@@ -172,7 +172,7 @@ ms.locfileid: "58815472"
 |Объекты deviceManagementPartner|Коллекция объектов [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md)|Список партнеров по управлению устройствами, настроенных с помощью клиента.|
 |Объекты exchangeConnector|Коллекция объектов [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md)|Список соединителей Exchange, настроенных с помощью клиента.|
 |exchangeOnPremisesPolicies|[коллекция deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)|Список политик Exchange Premisis, настроенных клиентом.|
-|exchangeOnPremisesPolicy|[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)|Политика, контролируемая доступом мобильных устройств к Exchange On Premises|
+|exchangeOnPremisesPolicy|[deviceManagementExchangeOnpremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)|Политика, контролируемая доступом мобильных устройств к Exchange On Premises|
 |Объекты mobileThreatDefenseConnector|Коллекция объектов [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md)|Список соединителей Mobile Threat Defense, настроенных с помощью клиента.|
 |**Набор политик**|
 |deviceManagementScripts|[коллекция deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|Список сценариев управления устройствами, связанных с клиентом.|

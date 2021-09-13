@@ -2,15 +2,15 @@
 title: Список mobileAppProvisioningConfigGroupAssignments
 description: Список свойств и связей объектов mobileAppProvisioningConfigGroupAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 66f44351fcdc0884a60692a0cc88068e1e3b3d33
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0367078dd62c20f0e1d7a660d303c81e189671a1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800312"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035173"
 ---
 # <a name="list-mobileappprovisioningconfiggroupassignments"></a>Список mobileAppProvisioningConfigGroupAssignments
 
@@ -29,7 +29,7 @@ ms.locfileid: "58800312"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

@@ -2,15 +2,15 @@
 title: Обновление macOSSoftwareUpdateStateSummary
 description: Обновление свойств объекта macOSSoftwareUpdateStateSummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 82dcae148099204b599e31e05e583dd061f3d422
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8261e3720fb6347d15af9719a6d3bc3bc1f152ea
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804192"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071002"
 ---
 # <a name="update-macossoftwareupdatestatesummary"></a>Обновление macOSSoftwareUpdateStateSummary
 
@@ -53,11 +53,11 @@ PATCH /deviceManagement/macOSSoftwareUpdateAccountSummaries/{macOSSoftwareUpdate
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|displayName|Строка|Понятное для человека имя обновления программного обеспечения|
+|id|String|Ключ объекта.|
+|displayName|String|Понятное для человека имя обновления программного обеспечения|
 |productKey|String|Ключ продукта обновления программного обеспечения.|
 |updateCategory|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|Категория обновления программного обеспечения. Возможные значения: `critical`, `configurationDataFile`, `firmware`, `other`.|
-|updateVersion|Строка|Версия обновления программного обеспечения|
+|updateVersion|String|Версия обновления программного обеспечения|
 |state|[macOSSoftwareUpdateState](../resources/intune-deviceconfig-macossoftwareupdatestate.md)|Состояние обновления программного обеспечения. Возможные значения: `success` `downloading` , , , , , `downloaded` , `installing` , `idle` `available` `scheduled` `downloadFailed` `downloadInsufficientSpace` , `downloadInsufficientPower` `downloadInsufficientNetwork` `installInsufficientSpace` `installInsufficientPower` `installFailed` `commandFailed` , .|
 |lastUpdatedDateTime|DateTimeOffset|Последний раз, когда отчет для этого устройства и ключ продукта был обновлен.|
 

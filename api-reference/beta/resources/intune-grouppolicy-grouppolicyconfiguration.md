@@ -2,15 +2,15 @@
 title: тип ресурса groupPolicyConfiguration
 description: Объект конфигурации групповой политики содержит настроенные значения для одного или более определений групповой политики.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 699facf5b5e91a41a15105b2a59e00e95433f5ed
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e46f23dc14427b9f4c7feb55f9538b010574b508
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800368"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063897"
 ---
 # <a name="grouppolicyconfiguration-resource-type"></a>тип ресурса groupPolicyConfiguration
 
@@ -37,13 +37,13 @@ ms.locfileid: "58800368"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|displayName|Строка|Пользователь предоставил имя объекта ресурса.|
-|description|Строка|Пользователь предоставил описание объекта ресурса.|
+|displayName|String|Пользователь предоставил имя объекта ресурса.|
+|description|String|Пользователь предоставил описание объекта ресурса.|
 |roleScopeTagIds|Коллекция String|Список тегов области для конфигурации.|
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |definitionValues|[коллекция groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)|Список значений определения групповой политики включенной или отключенной для конфигурации.|

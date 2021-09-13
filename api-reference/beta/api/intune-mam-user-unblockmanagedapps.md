@@ -2,15 +2,15 @@
 title: действие unblockManagedApps
 description: Разблокирует пользователя управляемого приложения из-за регистрации приложения.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 08a497c4051cd24973fe34b323b771eeafb5ae0c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 669f8dc7e06f237c9f875305851fc6f8474837aa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58814079"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082076"
 ---
 # <a name="unblockmanagedapps-action"></a>действие unblockManagedApps
 

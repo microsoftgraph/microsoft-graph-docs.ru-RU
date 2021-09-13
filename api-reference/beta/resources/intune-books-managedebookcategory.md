@@ -2,15 +2,15 @@
 title: тип ресурсов managedEBookCategory
 description: Содержит свойства для одной категории электронных книг Intune.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6b228c410565fe18d9f3b124e7fc176380d9c2b6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9a89d22928d496d3dd5e2b3f22058950b8013be1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794865"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081495"
 ---
 # <a name="managedebookcategory-resource-type"></a>тип ресурсов managedEBookCategory
 
@@ -35,7 +35,7 @@ ms.locfileid: "58794865"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|displayName|Строка|Имя категории электронных книг.|
+|displayName|String|Имя категории электронных книг.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения managedEBookCategory.|
 
 ## <a name="relationships"></a>Связи

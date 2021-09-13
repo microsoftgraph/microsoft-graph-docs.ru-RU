@@ -2,15 +2,15 @@
 title: тип ресурса userExperienceAnalyticsAppHealthDeviceModelPerformance
 description: Объект производительности модели модели пользовательского интерфейса содержит сведения о производительности модели устройства.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: acc48d4f29b7030ae9c8e49fb5ea17be3d995601
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 71d8815d699af333a67ba0487138aa6052a72c07
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790131"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081047"
 ---
 # <a name="userexperienceanalyticsapphealthdevicemodelperformance-resource-type"></a>тип ресурса userExperienceAnalyticsAppHealthDeviceModelPerformance
 
@@ -34,13 +34,13 @@ ms.locfileid: "58790131"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта производительности модели пользовательского интерфейса для аналитики устройств.|
+|id|String|Уникальный идентификатор объекта производительности модели пользовательского интерфейса для аналитики устройств.|
 |deviceModel|String|Имя модели устройства.|
-|deviceManufacturer|Строка|Имя производителя устройства.|
+|deviceManufacturer|String|Имя производителя устройства.|
 |activeDeviceCount|Int32|Количество активных устройств для модели. Допустимые значения 2147483648 2147483647|
 |meanTimeToFailureInMinutes|Int32|Время сбоя для устройства модели в минутах. Допустимые значения 2147483648 2147483647|
 |modelAppHealthScore|Двойное с плавающей точкой|Оценка состояния здоровья приложения модели устройства. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
-|modelAppHealthStatus|Строка|Общее состояние состояния здоровья приложения модели устройства.|
+|modelAppHealthStatus|String|Общее состояние состояния здоровья приложения модели устройства.|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -2,15 +2,15 @@
 title: Тип ресурса deviceEnrollmentPlatformRestriction
 description: Ограничения на регистрацию для определенных платформ
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: baba1686c4b44a5eb1d6b48559a2b459da3e6d37
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7863eb4e0926490acfd9f064a7b21c719ab3f923
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801068"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039716"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>Тип ресурса deviceEnrollmentPlatformRestriction
 
@@ -29,8 +29,8 @@ ms.locfileid: "58801068"
 |personalDeviceEnrollmentBlocked|Boolean|Указывает, блокируется ли регистрация личных устройств|
 |osMinimumVersion|String|Минимальная поддерживаемая версия ОС|
 |osMaximumVersion|String|Максимальная поддерживаемая версия ОС|
-|blockedManufacturers|Коллекция String|Коллекция заблокированных производителей.|
-|blockedSkus|Коллекция String|Коллекция заблокированных skus.|
+|blockedManufacturers|Коллекция объектов string|Коллекция заблокированных производителей.|
+|blockedSkus|Коллекция объектов string|Коллекция заблокированных skus.|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -2,15 +2,15 @@
 title: Создание groupPolicyOperation
 description: Создайте новый объект groupPolicyOperation.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: add3c8bdacfd4bff56fea488f38ff1638afab267
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ecf3904e3dce8c5a643e1662d233b9d8d9c1dde9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805873"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082237"
 ---
 # <a name="create-grouppolicyoperation"></a>Создание groupPolicyOperation
 
@@ -55,8 +55,8 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |:---|:---|:---|
 |operationType|[groupPolicyOperationType](../resources/intune-grouppolicy-grouppolicyoperationtype.md)|Тип операции групповой политики. Возможные значения: `none`, `upload`, `uploadNewVersion`, `addLanguageFiles`, `removeLanguageFiles`, `updateLanguageFiles`, `remove`.|
 |operationStatus|[groupPolicyOperationStatus](../resources/intune-grouppolicy-grouppolicyoperationstatus.md)|Состояние операции групповой политики. Возможные значения: `unknown`, `inProgress`, `success`, `failed`.|
-|statusDetails|Строка|Подробное состояние состояния операции групповой политики.|
-|id|Строка|Ключ объекта.|
+|statusDetails|String|Подробное состояние состояния операции групповой политики.|
+|id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 

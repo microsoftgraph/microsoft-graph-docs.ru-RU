@@ -2,15 +2,15 @@
 title: Получить macOSVpnConfiguration
 description: Чтение свойств и связей объекта macOSVpnConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e1b115f49704a0327157a2b3fe112a947a1edeaa
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8c9f9e762b5f8063e2ec6cd87f4de414764975b7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785040"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034836"
 ---
 # <a name="get-macosvpnconfiguration"></a>Получить macOSVpnConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "58785040"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

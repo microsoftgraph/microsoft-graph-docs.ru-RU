@@ -2,15 +2,15 @@
 title: тип ресурса securityBaselineStateSummary
 description: Сводка состояния соответствия базовой безопасности для базового уровня безопасности учетной записи.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 732ea052ec544c88abdfb14f7f40085ff6fe8f2e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 962fc60b94cda4407283f9b6609f03b79d378e27
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782079"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069007"
 ---
 # <a name="securitybaselinestatesummary-resource-type"></a>тип ресурса securityBaselineStateSummary
 
@@ -31,7 +31,7 @@ ms.locfileid: "58782079"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта.|
+|id|String|Уникальный идентификатор объекта.|
 |secureCount|Int32|Количество защищенных устройств|
 |notSecureCount|Int32|Число небезопасных устройств|
 |unknownCount|Int32|Количество неизвестных устройств.|
@@ -39,7 +39,7 @@ ms.locfileid: "58782079"
 |conflictCount|Int32|Количество конфликтующих устройств.|
 |notApplicableCount|Int32|Количество неприменимых устройств.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -1,16 +1,16 @@
 ---
 title: Get dataPolicyOperation
 description: Извлечение свойств объекта dataPolicyOperation.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c96cf23c137c0b518d0b9819a52a23631b1cd488
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 67051f881ba3ef92c596a8e4175bde61f8c7d670
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046995"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078254"
 ---
 # <a name="get-datapolicyoperation"></a>Get dataPolicyOperation
 

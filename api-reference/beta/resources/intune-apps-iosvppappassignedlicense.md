@@ -2,15 +2,15 @@
 title: тип ресурса iosVppAppAssignedLicense
 description: Назначение лицензии программы покупки тома iOS. Этот класс не поддерживает операции создания, удаления и обновления.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a40d788a632ab9d746dba774388e9ab9df4323d9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fac0e129a81e54dadb1fe4d12ebcdea1e7e4ca39
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820550"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081502"
 ---
 # <a name="iosvppappassignedlicense-resource-type"></a>тип ресурса iosVppAppAssignedLicense
 

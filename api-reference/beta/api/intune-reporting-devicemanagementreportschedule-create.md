@@ -2,15 +2,15 @@
 title: Создание deviceManagementReportSchedule
 description: Создание нового объекта deviceManagementReportSchedule.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cc7e7161a9f8104656100283e8f615f3f544c3ae
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 538949256285830c93d8b6361f32207925014ebe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816136"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59076609"
 ---
 # <a name="create-devicemanagementreportschedule"></a>Создание deviceManagementReportSchedule
 
@@ -56,15 +56,15 @@ POST /deviceManagement/reports/reportSchedules
 |id|String|Уникальный идентификатор для этого объекта|
 |reportScheduleName|String|Имя расписания|
 |subject|String|Тема запланированных отчетов, которые будут доставлены|
-|электронные письма|Коллекция String|Сообщения электронной почты, на которые доставляются запланированные отчеты|
+|электронные письма|Коллекция объектов string|Сообщения электронной почты, на которые доставляются запланированные отчеты|
 |recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|Частота доставки отчетов по расписанию. Возможные значения: `none`, `daily`, `weekly`, `monthly`.|
 |startDateTime|DateTimeOffset|Время начала доставки запланированных отчетов|
 |endDateTime|DateTimeOffset|Время окончания доставки запланированных отчетов|
 |userId|String|Id пользователя, создавшего отчет|
 |reportName|String|Имя отчета|
 |filter|String|Фильтры, применяемые в отчете|
-|select|Коллекция String|Столбцы, выбранные из отчета|
-|orderBy|Коллекция String|Порядок столбцов в отчете|
+|select|Коллекция объектов string|Столбцы, выбранные из отчета|
+|orderBy|Коллекция объектов string|Порядок столбцов в отчете|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Формат запланированного отчета. Возможные значения: `csv`, `pdf`.|
 
 

@@ -2,15 +2,15 @@
 title: тип enum deviceManagementExchangeAccessLevel
 description: Уровень доступа в Exchange.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b5bd8f059a5ef348cf1773d0163ba4b812538146
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7961924986625ed1ea79d471ba0d620705c19820
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803232"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080942"
 ---
 # <a name="devicemanagementexchangeaccesslevel-enum-type"></a>тип enum deviceManagementExchangeAccessLevel
 

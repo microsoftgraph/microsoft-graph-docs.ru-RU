@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementDerivedCredentialSettings
 description: Пока не задокументировано.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ed387c590b519984e0da4bb28862d8086612a612
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fbb1afc3ba5ee98c2267eb0434e5230e4402b110
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805011"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039072"
 ---
 # <a name="devicemanagementderivedcredentialsettings-resource-type"></a>тип ресурса deviceManagementDerivedCredentialSettings
 
@@ -39,7 +39,7 @@ ms.locfileid: "58805011"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для производных учетных данных|
+|id|String|Уникальный идентификатор для производных учетных данных|
 
 ## <a name="relationships"></a>Связи
 Нет

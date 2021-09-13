@@ -2,15 +2,15 @@
 title: Удаление windows10PkcsCertificateProfile
 description: Удаляет windows10PkcsCertificateProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 25fd69dac5f38cc17e266984249978591e98fc2f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0ffae82312bec457008263d9914c4670f0b86ea6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806840"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070869"
 ---
 # <a name="delete-windows10pkcscertificateprofile"></a>Удаление windows10PkcsCertificateProfile
 

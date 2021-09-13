@@ -2,15 +2,15 @@
 title: тип ресурса userExperienceAnalyticsAppHealthAppPerformanceByAppVersion
 description: Объект производительности приложения для аналитики пользовательских интерфейсов содержит сведения о производительности приложения в версии приложения.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ccb78ad49628bb58dc19f623d7e63642e5836233
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5aa63fc58cb8fe9d5647a7363029413a8c8550a6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788460"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081061"
 ---
 # <a name="userexperienceanalyticsapphealthappperformancebyappversion-resource-type"></a>тип ресурса userExperienceAnalyticsAppHealthAppPerformanceByAppVersion
 
@@ -34,11 +34,11 @@ ms.locfileid: "58788460"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта производительности приложения для аналитики пользовательского интерфейса.|
-|appVersion|Строка|Версия приложения.|
+|id|String|Уникальный идентификатор объекта производительности приложения для аналитики пользовательского интерфейса.|
+|appVersion|String|Версия приложения.|
 |appName|String|Имя приложения.|
 |appDisplayName|String|Удобное имя приложения.|
-|appPublisher|Строка|Издатель приложения.|
+|appPublisher|String|Издатель приложения.|
 |appUsageDuration|Int32|Общее время использования приложения в минутах. Допустимые значения 2147483648 2147483647|
 |appCrashCount|Int32|Количество сбоей для приложения. Допустимые значения 2147483648 2147483647|
 |meanTimeToFailureInMinutes|Int32|Время сбоя для приложения в минутах. Допустимые значения 2147483648 2147483647|

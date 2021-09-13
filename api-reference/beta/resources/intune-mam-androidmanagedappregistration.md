@@ -2,15 +2,15 @@
 title: Тип ресурса androidManagedAppRegistration
 description: Представляет собой сведения о синхронизации управляемого приложения Android для определенного пользователя. Ресурс ManagedAppRegistration представляет собой сведения об управляемом приложении, используемом членом организации.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f7ff5eafe930d11f1b571b447b502db6aeb62f84
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 49d1606257835512e4bcb24e5b5304cea718cd1d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793318"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075279"
 ---
 # <a name="androidmanagedappregistration-resource-type"></a>Тип ресурса androidManagedAppRegistration
 
@@ -44,16 +44,16 @@ ms.locfileid: "58793318"
 |deviceType|String|Тип устройства узла. Наследуется от объекта [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
 |deviceTag|String|Тег, который создан с использованием пакета SDK для управления приложениями и позволяет связать приложения, размещенные на одном устройстве. Мы не гарантируем, что приложения будут связаны во всех состояниях. Наследуется от объекта [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
 |deviceName|String|Имя устройства узла. Наследуется от объекта [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
-|managedDeviceId|Строка|Идентификатор управляемого устройства хост-устройства. Значение может быть пустым даже при управляемом устройстве хост-устройства. Наследуется от объекта [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
+|managedDeviceId|String|Идентификатор управляемого устройства хост-устройства. Значение может быть пустым даже при управляемом устройстве хост-устройства. Наследуется от объекта [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
 |azureADDeviceId|String|Идентификатор Azure Active Directory устройства хост-устройства. Значение может быть пустым даже при регистрации Azure Active Directory устройства. Наследуется от объекта [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
 |deviceModel|String|Модель устройства для текущей регистрации приложений, унаследованной от [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|deviceManufacturer|Строка|Производитель устройств для текущей регистрации приложений, унаследованных от [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|deviceManufacturer|String|Производитель устройств для текущей регистрации приложений, унаследованных от [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |flaggedReasons|[коллекция managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)|Нуль или более причин, по которым помечается регистрация приложения Пример: приложение запускается на рутованном устройстве. Наследуется от [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
 |userId|String|Идентификатор пользователя, к которому относится эта регистрация приложения. Наследуется от объекта [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|Идентификатор пакета приложения. Наследуется от объекта [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
 |id|String|Ключ объекта. Наследуется от объекта [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
 |version|String|Версия объекта. Наследуется от объекта [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
-|patchVersion|Строка|Версия патча для текущей регистрации android-приложений|
+|patchVersion|String|Версия патча для текущей регистрации android-приложений|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

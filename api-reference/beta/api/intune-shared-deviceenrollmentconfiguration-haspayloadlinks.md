@@ -2,15 +2,15 @@
 title: действие hasPayloadLinks
 description: Пока не задокументировано.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 763cc1fd8ea9bed4f27fcfdbdf840fec8e0bf47b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7ee9a87309e597a957a24f05b0d827b38a54b622
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789370"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59076574"
 ---
 # <a name="haspayloadlinks-action"></a>действие hasPayloadLinks
 
@@ -30,7 +30,7 @@ ms.locfileid: "58789370"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application||
+|Для приложений||
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос

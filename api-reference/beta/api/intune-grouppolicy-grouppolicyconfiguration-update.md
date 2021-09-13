@@ -2,15 +2,15 @@
 title: Update groupPolicyConfiguration
 description: Обновление свойств объекта groupPolicyConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1ac923662c83d18178ac4c91e9fac490e94b0df8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 940e3b0dd1816a4fc12df74be254e23d8ba06b26
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786111"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082258"
 ---
 # <a name="update-grouppolicyconfiguration"></a>Update groupPolicyConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "58786111"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,9 +55,9 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |displayName|String|Пользователь предоставил имя объекта ресурса.|
-|description|Строка|Пользователь предоставил описание объекта ресурса.|
-|roleScopeTagIds|Коллекция String|Список тегов области для конфигурации.|
-|id|Строка|Ключ объекта.|
+|description|String|Пользователь предоставил описание объекта ресурса.|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области для конфигурации.|
+|id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 

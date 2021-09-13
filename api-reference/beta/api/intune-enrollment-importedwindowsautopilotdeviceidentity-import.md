@@ -2,15 +2,15 @@
 title: действие импорта
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e9e9060b05ebd10f635ce9b90cc3d3ed5f5a92a1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3fdac868dd5de7777b0f65724ac84681a1388f3e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806805"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082433"
 ---
 # <a name="import-action"></a>действие импорта
 

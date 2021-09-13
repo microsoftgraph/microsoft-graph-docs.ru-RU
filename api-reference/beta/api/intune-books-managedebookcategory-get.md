@@ -2,15 +2,15 @@
 title: УправлениеEBookCategory
 description: Чтение свойств и связей объекта managedEBookCategory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 32ef7691e3deb4d6b378a508488e0b8cc4c8ec96
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: df7afc76b9b2d61cdcba4bc404bcc007ac091a81
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815885"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077750"
 ---
 # <a name="get-managedebookcategory"></a>УправлениеEBookCategory
 

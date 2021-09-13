@@ -2,15 +2,15 @@
 title: тип ресурса assignmentFilterValidationResult
 description: Представляет результат API проверки.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9612d33c1e838eb5effaea555d8453b8acf6c1fe
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 69006f9582b5f9a1c2172b3d2fa2f43b07998985
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807246"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074915"
 ---
 # <a name="assignmentfiltervalidationresult-resource-type"></a>тип ресурса assignmentFilterValidationResult
 
@@ -25,7 +25,7 @@ ms.locfileid: "58807246"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|isValidRule|Логический|Индикатор для допустимой или недействительной нормы.|
+|isValidRule|Boolean|Индикатор для допустимой или недействительной нормы.|
 
 ## <a name="relationships"></a>Связи
 Нет

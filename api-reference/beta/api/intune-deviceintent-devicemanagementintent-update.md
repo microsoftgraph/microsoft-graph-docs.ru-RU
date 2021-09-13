@@ -2,15 +2,15 @@
 title: Обновление deviceManagementIntent
 description: Обновление свойств объекта deviceManagementIntent.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cf39707f420628ee029ae11e1ae4f48904807179
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 077638e55ce8eb2d06f6fff54289dee06c04ade6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787437"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077197"
 ---
 # <a name="update-devicemanagementintent"></a>Обновление deviceManagementIntent
 
@@ -29,7 +29,7 @@ ms.locfileid: "58787437"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,13 +53,13 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|ID намерения|
-|displayName|Строка|Имя отображения, заданное пользователю|
-|description|Строка|Описание пользователя|
+|id|String|ID намерения|
+|displayName|String|Имя отображения, заданное пользователю|
+|description|String|Описание пользователя|
 |isAssigned|Boolean|Означает, назначены ли намерения пользователям|
 |lastModifiedDateTime|DateTimeOffset|Когда намерение было изменено в последний раз|
-|templateId|Строка|ID шаблона, который был создан из (если таково)|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
+|templateId|String|ID шаблона, который был создан из (если таково)|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity.|
 
 
 

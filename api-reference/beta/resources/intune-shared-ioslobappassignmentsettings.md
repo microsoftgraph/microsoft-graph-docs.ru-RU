@@ -2,15 +2,15 @@
 title: Тип ресурса iosLobAppAssignmentSettings
 description: Содержит свойства, используемые при назначении бизнес-приложения для iOS группе.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7f55daece7b7676c06e24b58b77ad73aa7c64b12
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 960830aaf3e74c6e9dbdff977997dba8e8e41e6b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58769385"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074712"
 ---
 # <a name="ioslobappassignmentsettings-resource-type"></a>Тип ресурса iosLobAppAssignmentSettings
 
@@ -30,7 +30,7 @@ ms.locfileid: "58769385"
 |:---|:---|:---|
 |vpnConfigurationId|String|ИД конфигурации VPN, применяемой к этому приложению.|
 |**Приложения**|
-|uninstallOnDeviceRemoval|Логический|Следует ли удалить приложение при удалении устройства из Intune.|
+|uninstallOnDeviceRemoval|Логическое|Следует ли удалить приложение при удалении устройства из Intune.|
 
 ## <a name="relationships"></a>Связи
 Нет

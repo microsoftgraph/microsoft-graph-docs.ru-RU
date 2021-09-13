@@ -2,15 +2,15 @@
 title: Удаление microsoftTunnelConfiguration
 description: Удаляет microsoftTunnelConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7a2158dd758d1dd5dcea4a444d7765d1207a515e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 99694ef40c5d1e8194368891f3a174e0fc3fbe1d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785292"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034297"
 ---
 # <a name="delete-microsofttunnelconfiguration"></a>Удаление microsoftTunnelConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "58785292"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

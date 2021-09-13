@@ -2,15 +2,15 @@
 title: Список androidWorkProfileGmailEasConfigurations
 description: Список свойств и связей объектов AndroidWorkProfileGmailEasConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 61ed017462165760e54afa74aa4894f674f66c64
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 36231d3dfb403f7312db31807e8805d83efa99fe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802917"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034970"
 ---
 # <a name="list-androidworkprofilegmaileasconfigurations"></a>Список androidWorkProfileGmailEasConfigurations
 
@@ -29,7 +29,7 @@ ms.locfileid: "58802917"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

@@ -2,15 +2,15 @@
 title: тип ресурса macOSAppleEventReceiver
 description: Представляет процесс, который может получать уведомление о событии Apple.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 14f68bfa31c41b96e2a2dd160fa732d2c38e9b2f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a325bed4eca6ca554f391f1127cf454ea50d774a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58810653"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081334"
 ---
 # <a name="macosappleeventreceiver-resource-type"></a>тип ресурса macOSAppleEventReceiver
 
@@ -25,10 +25,10 @@ ms.locfileid: "58810653"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|codeRequirement|Строка|Требование кода для приложения или двоичного приложения, которое получает событие Apple.|
-|идентификатор|Строка|Набор ID пути приложения или файла процесса или исполняемого, который получает событие Apple.|
+|codeRequirement|String|Требование кода для приложения или двоичного приложения, которое получает событие Apple.|
+|идентификатор|String|Набор ID пути приложения или файла процесса или исполняемого, который получает событие Apple.|
 |identifierType|[macOSProcessIdentifierType](../resources/intune-deviceconfig-macosprocessidentifiertype.md)|Используйте ID пакета для приложения или пути для процесса или исполняемого, который получает событие Apple. Возможные значения: `bundleID`, `path`.|
-|разрешено|Логический|Разрешить или заблокировать это приложение от получения событий Apple.|
+|разрешено|Boolean|Разрешить или заблокировать это приложение от получения событий Apple.|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -2,15 +2,15 @@
 title: Тип кода ошибки
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: eb640c3a969ca556dc75f5d34cf5be794c6c7595
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: eb36d42bb7008d71d37fa8e1a21409c75ac3b2a3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797221"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080767"
 ---
 # <a name="errorcode-enum-type"></a>Тип кода ошибки
 

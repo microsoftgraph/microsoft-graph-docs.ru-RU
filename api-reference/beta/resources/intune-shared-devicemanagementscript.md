@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementScript
 description: Intune предоставит клиенту возможность запускать свои скрипты Powershell на зарегистрированных устройствах Windows 10 Azure Active Directory. Сценарий можно запускать один раз или периодически.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ee7f52df72be0f014bd3b6ad8c08264b20477b2d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 12dfae8bfe0a4d005e0871a7ca91d91301f87624
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790110"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039065"
 ---
 # <a name="devicemanagementscript-resource-type"></a>тип ресурса deviceManagementScript
 
@@ -40,15 +40,15 @@ Intune предоставит клиенту возможность запуск
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для сценария управления устройствами.|
 |displayName|String|Имя сценария управления устройствами.|
-|description|Строка|Необязательное описание сценария управления устройствами.|
+|description|String|Необязательное описание сценария управления устройствами.|
 |scriptContent|В двоичном формате|Содержимое скрипта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сценария управления устройствами. Это свойство доступно только для чтения.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|enforceSignatureCheck|Boolean|Указать, нужно ли проверять подпись скрипта.|
+|enforceSignatureCheck|Логическое|Указать, нужно ли проверять подпись скрипта.|
 |fileName|String|Имя файла скрипта.|
-|roleScopeTagIds|Коллекция String|Список ID-тегов области для этого экземпляра PowerShellScript.|
-|runAs32Bit|Логический|Значение, указывающее, должен ли скрипт PowerShell работать как 32-битный|
+|roleScopeTagIds|Коллекция объектов string|Список ID-тегов области для этого экземпляра PowerShellScript.|
+|runAs32Bit|Логическое|Значение, указывающее, должен ли скрипт PowerShell работать как 32-битный|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

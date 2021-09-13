@@ -2,15 +2,15 @@
 title: Удаление androidTrustedRootCertificate
 description: Удаляет androidTrustedRootCertificate.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b5a36e06069294b71ef74eba1bb5bd313e75315c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c067d5a486a8087ed6d02927ed28f926dd87ab2e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798337"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59083014"
 ---
 # <a name="delete-androidtrustedrootcertificate"></a>Удаление androidTrustedRootCertificate
 
@@ -29,7 +29,7 @@ ms.locfileid: "58798337"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

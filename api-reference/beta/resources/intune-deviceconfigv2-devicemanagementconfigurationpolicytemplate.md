@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementConfigurationPolicyTemplate
 description: Шаблон политики конфигурации управления устройствами
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3ce1cfb858def6957224528cb5cd7a89b0336871
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6dea6ef789ff7e889b8b76f39fb27169f14623e4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794744"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069021"
 ---
 # <a name="devicemanagementconfigurationpolicytemplate-resource-type"></a>тип ресурса deviceManagementConfigurationPolicyTemplate
 
@@ -34,17 +34,17 @@ ms.locfileid: "58794744"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ документа шаблона, состоящего из BaseId и Version. Автоматически созданный.|
-|baseId|Строка|Идентификатор базы шаблонов|
+|id|String|Ключ документа шаблона, состоящего из BaseId и Version. Автоматически созданный.|
+|baseId|String|Идентификатор базы шаблонов|
 |version|Int32|Версия шаблона. Допустимые значения от 1 до 2147483647. Это свойство доступно только для чтения.|
-|displayName|Строка|Имя отображения шаблона|
-|description|Строка|Описание шаблона|
-|displayVersion|Строка|Описание версии шаблона|
+|displayName|String|Имя отображения шаблона|
+|description|String|Описание шаблона|
+|displayVersion|String|Описание версии шаблона|
 |lifecycleState|[deviceManagementTemplateLifecycleState](../resources/intune-deviceconfigv2-devicemanagementtemplatelifecyclestate.md)|Указать текущее состояние жизненного цикла шаблона. Возможные значения: `invalid`, `draft`, `active`, `superseded`, `deprecated`, `retired`.|
 |платформы|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Платформы для этого шаблона. Возможные значения: `none`, `macOS`, `windows10X`, `windows10`.|
 |технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Технологии для этого шаблона. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`.|
 |templateFamily|[deviceManagementConfigurationTemplateFamily](../resources/intune-deviceconfigv2-devicemanagementconfigurationtemplatefamily.md)|TemplateFamily для этого шаблона. Возможные значения: `none`, `endpointSecurityAntivirus`, `endpointSecurityDiskEncryption`, `endpointSecurityFirewall`, `endpointSecurityEndpointDetectionAndResponse`, `endpointSecurityAttackSurfaceReduction`, `endpointSecurityAccountProtection`, `endpointSecurityApplicationControl`.|
-|allowUnmanagedSettings|Логический|Разрешить неугодные шаблоны параметров|
+|allowUnmanagedSettings|Boolean|Разрешить неугодные шаблоны параметров|
 |settingTemplateCount|Int32|Количество шаблонов параметров. Допустимые значения от 0 до 2147483647. Это свойство доступно только для чтения.|
 
 ## <a name="relationships"></a>Связи

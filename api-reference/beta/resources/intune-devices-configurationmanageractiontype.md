@@ -2,15 +2,15 @@
 title: тип enum configurationManagerActionType
 description: Тип действия клиента Configuration Manager
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3308ae8369458d44f128863b4afd3ab83a07b8f4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 104bc95a7fdd7c9ad77786f0358a21054a972b5b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818091"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040262"
 ---
 # <a name="configurationmanageractiontype-enum-type"></a>тип enum configurationManagerActionType
 

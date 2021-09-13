@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementCachedReportConfiguration
 description: Объект, представляющий конфигурацию кэшного отчета
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ff8d125f6703b1984eb9369bcfa3cd9b75b12249
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1eab917cfba35a38ce5e19b99c6b56505a1f053f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793791"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039443"
 ---
 # <a name="devicemanagementcachedreportconfiguration-resource-type"></a>тип ресурса deviceManagementCachedReportConfiguration
 
@@ -35,11 +35,11 @@ ms.locfileid: "58793791"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для этого объекта|
-|reportName|Строка|Имя отчета|
-|filter|Строка|Фильтры, применяемые при создании отчета.|
-|select|Коллекция String|Столбцы, выбранные из отчета|
-|orderBy|Коллекция String|Порядок столбцов в отчете|
-|метаданные|Строка|Метаданные, управляемые вызывателями, связанные с отчетом|
+|reportName|String|Имя отчета|
+|filter|String|Фильтры, применяемые при создании отчета.|
+|select|Коллекция объектов string|Столбцы, выбранные из отчета|
+|orderBy|Коллекция объектов string|Порядок столбцов в отчете|
+|метаданные|String|Метаданные, управляемые вызывателями, связанные с отчетом|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Состояние кэшного отчета. Возможные значения: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |lastRefreshDateTime|DateTimeOffset|Время последнего обновления кэшного отчета|
 |expirationDateTime|DateTimeOffset|Время истечения срока действия кэш-отчета|

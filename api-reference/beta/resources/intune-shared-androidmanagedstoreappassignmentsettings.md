@@ -2,15 +2,15 @@
 title: тип ресурса androidManagedStoreAssignmentSettings
 description: Содержит свойства, используемые для назначения мобильного приложения Android Managed Store группе.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 18e5c8db52c2191c6db3332b7423c749b7d466c4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 18b1b52ac92fee819a7e4f7e690df850947f2a5b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789553"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039205"
 ---
 # <a name="androidmanagedstoreappassignmentsettings-resource-type"></a>тип ресурса androidManagedStoreAssignmentSettings
 
@@ -28,7 +28,7 @@ ms.locfileid: "58789553"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|AndroidManagedStoreAppTrackIds|Коллекция String|ID дорожки, чтобы включить для этого назначения приложения.|
+|AndroidManagedStoreAppTrackIds|Коллекция объектов string|ID дорожки, чтобы включить для этого назначения приложения.|
 
 ## <a name="relationships"></a>Связи
 Нет

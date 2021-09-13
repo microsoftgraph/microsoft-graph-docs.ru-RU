@@ -2,15 +2,15 @@
 title: тип enum androidDeviceOwnerVirtualHomeButtonType
 description: Режим киоска владельцев устройств Android управляется типом домашнего экрана виртуальной домашней кнопки.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a2db06bec2913b6efafe55c3744f4e30a1f0d199
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a7014ff2ef608c992173d9e7faa4b861fc86a49c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820928"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081431"
 ---
 # <a name="androiddeviceownervirtualhomebuttontype-enum-type"></a>тип enum androidDeviceOwnerVirtualHomeButtonType
 

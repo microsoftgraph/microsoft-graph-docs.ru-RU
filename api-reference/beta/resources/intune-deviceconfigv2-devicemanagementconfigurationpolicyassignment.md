@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementConfigurationPolicyAssignment
 description: Объект DeviceManagementConfigurationPolicyAssignment назначает группе AAD определенную группу DeviceManagementConfigurationPolicy.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 848e1829f22128d11893f13ed02d299381ff3676
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 184d209ef0c2454c79d499594c985656f7bb41bd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792584"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075356"
 ---
 # <a name="devicemanagementconfigurationpolicyassignment-resource-type"></a>тип ресурса deviceManagementConfigurationPolicyAssignment
 
@@ -34,7 +34,7 @@ ms.locfileid: "58792584"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ назначения.|
+|id|String|Ключ назначения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения для DeviceManagementConfigurationPolicy.|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Источник назначения для политики соответствия требованиям устройств, прямой или пакетной или политикиSet. Возможные значения: `direct`, `policySets`.|
 |sourceId|String|Идентификатор источника назначения.|

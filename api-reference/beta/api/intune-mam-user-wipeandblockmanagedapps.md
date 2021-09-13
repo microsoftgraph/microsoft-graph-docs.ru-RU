@@ -2,15 +2,15 @@
 title: wipeAndBlockManagedApps action
 description: Блокирует пользователя управляемого приложения из-за регистрации приложения.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: eae8145ccb53da62fcbe979fb2caf07421b97b4b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7ab954f87d339db6845877c4cbe799e0c160d5f1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803344"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082048"
 ---
 # <a name="wipeandblockmanagedapps-action"></a>wipeAndBlockManagedApps action
 
@@ -29,7 +29,7 @@ ms.locfileid: "58803344"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
