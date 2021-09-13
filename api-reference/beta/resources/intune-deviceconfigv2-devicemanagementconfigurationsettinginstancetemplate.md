@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementConfigurationSettingInstanceTemplate
 description: Настройка шаблона экземпляра
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b4ebc516dc521c022a5b5a5e9eeb460dec3e4497
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 13da26610afbfcdc0c44d8724c661ab6ba4effb8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782114"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148412"
 ---
 # <a name="devicemanagementconfigurationsettinginstancetemplate-resource-type"></a>тип ресурса deviceManagementConfigurationSettingInstanceTemplate
 
@@ -25,8 +25,8 @@ ms.locfileid: "58782114"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|settingInstanceTemplateId|Строка|Настройка кода шаблона экземпляра|
-|settingDefinitionId|Строка|Настройка Id определения|
+|settingInstanceTemplateId|String|Настройка кода шаблона экземпляра|
+|settingDefinitionId|String|Настройка Id определения|
 |isRequired|Boolean|Указывает, должна ли политика указать этот параметр.|
 
 ## <a name="relationships"></a>Связи

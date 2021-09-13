@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementConfigurationSettingInstanceTemplateReference
 description: Настройка справочной информации шаблона экземпляра
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b69b9639c4ec591e2a21dfe1e83bb004f856a993
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c4990ef6219ba6f15a3af5eb76a290cc007b7b43
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784809"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148405"
 ---
 # <a name="devicemanagementconfigurationsettinginstancetemplatereference-resource-type"></a>тип ресурса deviceManagementConfigurationSettingInstanceTemplateReference
 
@@ -25,7 +25,7 @@ ms.locfileid: "58784809"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|settingInstanceTemplateId|Строка|Настройка кода шаблона экземпляра|
+|settingInstanceTemplateId|String|Настройка кода шаблона экземпляра|
 
 ## <a name="relationships"></a>Связи
 Нет
