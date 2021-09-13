@@ -2,14 +2,14 @@
 title: Планирование повторных встреч, как повторяющихся событий в Outlook
 description: Повторяющиеся события — важная составляющая работы с календарями в Outlook. Будь то еженедельная личная встреча с руководителем или обзорное совещание для всего отдела, проходящее во второй вторник каждого месяца, повторяющиеся события достаточно создать один раз, и сервер автоматически продолжит серию.
 author: harini84
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: dccb42e0e4363eee23bc675154716abde6ffa44dba7abaf64ad7720eceb0e36d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 29aeef98cbc0e9d33df26a0c54bb568317ebb790
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54165562"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071786"
 ---
 # <a name="schedule-repeating-appointments-as-recurring-events-in-outlook"></a>Планирование повторных встреч как повторяющихся событий в Outlook
 

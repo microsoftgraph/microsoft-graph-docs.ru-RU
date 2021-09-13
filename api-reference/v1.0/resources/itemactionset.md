@@ -2,15 +2,15 @@
 author: daspek
 title: Тип ресурса ItemActionSet
 description: Объект itemActionSet предоставляет сведения о действиях, которые произошли в рамках действия элемента.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 56a6e4ed3400be921dafcfd418a5bcb98b2e6e865939a93f22d06661a8df470c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 665ffbe2a34eeeb40735ba539c10eae00b5f0e0d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130109"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089363"
 ---
 # <a name="itemactionset-resource-type"></a>тип ресурса itemActionSet
 

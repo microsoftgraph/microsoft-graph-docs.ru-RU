@@ -1,16 +1,16 @@
 ---
 title: тип ресурсов provisioningSystem
 description: Представляет систему, в которую пользователь был предварительно или из нее.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 4676a5010b71b7bec5ab01350bb84a69b9dd00158c6622bf208e82a479fab868
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b39cccfaf8dd3d064a3065707a96b955f3cd2b22
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184517"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078711"
 ---
 # <a name="provisioningsystem-resource-type"></a>тип ресурсов provisioningSystem
 
@@ -23,7 +23,7 @@ ms.locfileid: "54184517"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|подробности|[detailsInfo](detailsinfo.md)|Сведения о системе.|
+|details|[detailsInfo](detailsinfo.md)|Сведения о системе.|
 |displayName|String|Имя системы, в которую пользователь был предварительно или из нее.|
 |id|String|Идентификатор системы, в которую пользователь был предварительно или из нее.|
 

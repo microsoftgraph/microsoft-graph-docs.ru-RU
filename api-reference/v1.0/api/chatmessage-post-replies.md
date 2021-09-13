@@ -2,15 +2,15 @@
 title: Отправка ответов на сообщение в канале
 description: Ответ на существующее сообщение в канале.
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9adb02bff41fb74dc593fbdd20ee0a67be4819e0
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 2bec99d23c9e32d4bcf41cf364b47dce473f214c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667964"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038309"
 ---
 # <a name="send-replies-to-a-message-in-a-channel"></a>Отправка ответов на сообщение в канале
 

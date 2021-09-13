@@ -2,15 +2,15 @@
 title: ускоренный тип ресурсаWindowsQualityUpdateSettings
 description: Сложный тип для хранения параметров ускоренного обновления качества, таких как дата выпуска и дни до принудительной перезагрузки.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 55328cb788ab1994eec2ec7e0f8984577b7b9a3b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 127a5ec4e1650cdd4e24787e24757b05732284d3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805277"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029922"
 ---
 # <a name="expeditedwindowsqualityupdatesettings-resource-type"></a>ускоренный тип ресурсаWindowsQualityUpdateSettings
 
@@ -28,7 +28,7 @@ ms.locfileid: "58805277"
 |qualityUpdateRelease|Строка|Дата выпуска для определения обновления качества.|
 |daysUntilForcedReboot|Int32|Количество дней после установки, которые принудительные перезагрузки произойдет.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

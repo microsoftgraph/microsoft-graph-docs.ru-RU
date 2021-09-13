@@ -2,15 +2,15 @@
 title: Получение windowsPhone81CustomConfiguration
 description: Считывание свойств и связей объекта windowsPhone81CustomConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dda01f21546055ed915caf9c7a8d6a59c25bb0d8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: df1ba52198a1dce45ba4b425cc9d5c821fd1781d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821026"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018420"
 ---
 # <a name="get-windowsphone81customconfiguration"></a>Получение windowsPhone81CustomConfiguration
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

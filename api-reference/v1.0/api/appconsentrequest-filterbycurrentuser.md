@@ -2,15 +2,15 @@
 title: 'appConsentRequest: filterByCurrentUser'
 description: Извлечение объектов appConsentRequest, для которых текущий пользователь является рецензентом.
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c17e44b27b135eec034eb66399d5ce5163a5928f
-ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
+ms.openlocfilehash: 1ebcaea80e1b9e451329b167f014042ccdbb447f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697959"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016983"
 ---
 # <a name="appconsentrequest-filterbycurrentuser"></a>appConsentRequest: filterByCurrentUser
 
@@ -45,7 +45,7 @@ GET /identityGovernance/appConsent/appConsentRequests/filterByCurrentUser(on='pa
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|on|consentRequestFilterByCurrentUserOptions|Фильтр для запроса объектов appConsentRequest, для которых текущий пользователь является рецензентом. Разрешено значение `reviewer` . Обязательный.|
+|on|consentRequestFilterByCurrentUserOptions|Фильтр для запроса объектов appConsentRequest, для которых текущий пользователь является рецензентом. Разрешено значение `reviewer` . Обязательное.|
 
 ## <a name="query-parameters"></a>Параметры запроса
 

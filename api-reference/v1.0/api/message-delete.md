@@ -1,24 +1,24 @@
 ---
 title: Удаление сообщения
-description: Удаление сообщения в почтовом ящике указанного пользователя или удаление связи сообщения.
-localization_priority: Normal
+description: Удалите сообщение в указанном почтовом ящике пользователя или удалите связь сообщения.
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c890d5574b60069de6ac305786e6e146d633a131
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 123963c1aaa515fa8b5ffb1811cff6c634b8f9f0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130573"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062991"
 ---
 # <a name="delete-message"></a>Удаление сообщения
 
 Пространство имен: microsoft.graph
 
-Удаление сообщения в почтовом ящике указанного пользователя или удаление связи сообщения.
+Удалите сообщение в указанном почтовом ящике пользователя или удалите связь сообщения.
 
->**Примечание** Вы можете не иметь возможности удалять элементы в папке удаления элементов для восстановления (представленные известным [именем папки).](../resources/mailfolder.md) `recoverableitemsdeletions` Дополнительные [сведения см. в](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) статьях "Хранение удаленных элементов" и "Очистка удаленных элементов". [](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items)
+>**Примечание** Возможно, вы не сможете удалить элементы в папке удаления элементов(представлена известным именем [папки).](../resources/mailfolder.md) `recoverableitemsdeletions` Дополнительные [сведения см. в](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) статье [Хранение](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) удаленных элементов и очистка удаленных элементов.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 07/07/2020
 title: Поиск файлов
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 description: Поиск элементов, соответствующих запросу, в иерархии элементов.
 doc_type: apiPageType
-ms.openlocfilehash: 8cf0095d504f88fbce75aa65c7d733ccf04392d0
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 88b75446b0d88e05db6c4ba9d586067d164207c5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240215"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053653"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>Поиск элементов DriveItem на диске
 
@@ -29,6 +29,8 @@ ms.locfileid: "50240215"
 |Делегированные (рабочая или учебная учетная запись) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
 |Для приложений | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+
+>**Примечание.** Этот метод не поддерживает разрешение приложений Sites.Selected.
 
 ## <a name="http-request"></a>HTTP-запрос
 

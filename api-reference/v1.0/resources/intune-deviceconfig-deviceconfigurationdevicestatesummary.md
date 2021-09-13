@@ -2,15 +2,15 @@
 title: Тип ресурса deviceConfigurationDeviceStateSummary
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cbafacb1550935cf67455add1ce2674cf580a755cf895507610c477a64f7de33
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 172266c3c46cba9ce6766f474af8f8c5640f1d98
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169531"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148370"
 ---
 # <a name="deviceconfigurationdevicestatesummary-resource-type"></a>Тип ресурса deviceConfigurationDeviceStateSummary
 

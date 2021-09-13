@@ -1,16 +1,16 @@
 ---
 title: тип ресурса certificateBasedAuthConfiguration
 description: Представляет коллекцию органов сертификации.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 2d46c8df25b46b62a0c987042178261a8b31a3c43ff8c542c8fc1234b2ed9d21
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 53e56f78508131e3a08e7896095a7f986346fba2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163847"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104259"
 ---
 # <a name="certificatebasedauthconfiguration-resource-type"></a>тип ресурса certificateBasedAuthConfiguration
 
@@ -44,9 +44,9 @@ ms.locfileid: "54163847"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |certificateAuthorities|[коллекция certificateAuthority](certificateauthority.md)|Коллекция органов сертификации, создав цепочку надежных сертификатов.|
-|id|String|Уникальный идентификатор конфигурации auth на основе сертификата. Только для чтения.|
+|id|Строка|Уникальный идентификатор конфигурации auth на основе сертификата. Только для чтения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Нет,
 

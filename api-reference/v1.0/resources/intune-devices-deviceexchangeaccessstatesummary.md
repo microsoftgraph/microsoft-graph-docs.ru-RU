@@ -2,15 +2,15 @@
 title: Тип ресурса deviceExchangeAccessStateSummary
 description: Сводка по состоянию доступа к Exchange для устройств
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5b9f22f1b49fd081716272ac3b58a030fb95d3ca39b0072a9702398533ef72fd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9bcdab27f9ba4b6d43dcbc679967b2bec53bb900
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54237679"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098771"
 ---
 # <a name="deviceexchangeaccessstatesummary-resource-type"></a>Тип ресурса deviceExchangeAccessStateSummary
 
@@ -29,7 +29,7 @@ ms.locfileid: "54237679"
 |unknownDeviceCount|Int32|Общее количество устройств с состоянием доступа к Exchange "Неизвестно".|
 |unavailableDeviceCount|Int32|Общее количество устройств, для которых не найдены сведения о состоянии доступа к Exchange.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

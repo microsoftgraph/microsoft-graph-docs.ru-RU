@@ -1,16 +1,16 @@
 ---
 title: тип ресурса teamGuestSettings
 description: Параметры для настройки того, могут ли гости создавать, изменять или удалять каналы в команде.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8b8c0a47135af606d2bfb83d190bd88d6af4ad65356c99096563f76053f9a9ec
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 769930b28366b9918a92b9839331a421db5ff79a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146358"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134341"
 ---
 # <a name="teamguestsettings-resource-type"></a>тип ресурса teamGuestSettings
 
@@ -24,7 +24,7 @@ ms.locfileid: "54146358"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |allowCreateUpdateChannels|Логический|Если установлено, что это так, гости могут добавлять и обновлять каналы.|
-|allowDeleteChannels|Логическое|Если установлено, что это так, гости могут удалять каналы.|
+|allowDeleteChannels|Логический|Если установлено, что это так, гости могут удалять каналы.|
 
 ## <a name="json-representation"></a>Представление JSON
 

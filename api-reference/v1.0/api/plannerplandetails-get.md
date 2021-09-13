@@ -1,16 +1,16 @@
 ---
 title: Получение объекта plannerPlanDetails
 description: Получение свойств и связей объекта **plannerplandetails**.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: fa2d8845ab8e8c6b34c02673efe7052dd72aede3
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c75bdaace4441af7f073b87484c190f1b767d44c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049466"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007770"
 ---
 # <a name="get-plannerplandetails"></a>Получение объекта plannerPlanDetails
 
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/planner/plans/{plan-id}/details
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

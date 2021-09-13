@@ -2,15 +2,15 @@
 title: Тип ресурса windowsUpdateScheduledInstall
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cc699c5ff639cb3f0ffd124da4e20d8ee98713ca0100fbafa59b16e436a0b559
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 535259eb7fabb3b68e0cf9e76ba081c87e569703
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216688"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067131"
 ---
 # <a name="windowsupdatescheduledinstall-resource-type"></a>Тип ресурса windowsUpdateScheduledInstall
 
@@ -29,7 +29,7 @@ ms.locfileid: "54216688"
 |scheduledInstallDay|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Запланированный день установки в неделю. Возможные значения: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
 |scheduledInstallTime|TimeOfDay|Время дня, на которое запланирована установка|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

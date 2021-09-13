@@ -2,15 +2,15 @@
 title: тип ресурса windowsIdentityProtectionConfiguration
 description: Эта сущность содержит описания объявленных методов, свойств и связей, Windows Hello для бизнеса.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 06581f0c59bc5c0b41f4b21a546425c4d032fc18
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9f1c93098f56b4753b247c89ab11664b6e3a1ef0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58759514"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026996"
 ---
 # <a name="windowsidentityprotectionconfiguration-resource-type"></a>тип ресурса windowsIdentityProtectionConfiguration
 
@@ -37,19 +37,19 @@ ms.locfileid: "58759514"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|supportsScopeTags|Boolean|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость к выпуску ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |useSecurityKeyForSignin|Boolean|Значение Boolean, используемее для Windows Hello ключа безопасности в качестве учетных данных с логотипом.|
-|enhancedAntiSpoofingForFacialFeaturesEnabled|Boolean|Значение Boolean, используемого для обеспечения расширенного анти-спуфинга для распознавания лицевых функций Windows Hello проверки подлинности.|
+|enhancedAntiSpoofingForFacialFeaturesEnabled|Логический|Значение Boolean, используемого для обеспечения расширенного анти-спуфинга для распознавания лицевых функций Windows Hello проверки подлинности.|
 |pinMinimumLength|Int32|Значение Integer, которое задает минимальное количество символов, необходимых для Windows Hello для бизнес-ПИН-кода. Допустимые значения : от 4 до 127 включительно и меньше или меньше значения, установленного для максимального ПИН-кода. Допустимые значения от 4 до 127|
 |pinMaximumLength|Int32|Значение Integer, которое задает максимальное количество символов, разрешенных для пин-кода работы. Допустимые значения от 4 до 127 включительно и больше или равны значению, за набором для минимального ПИН-кода. Допустимые значения от 4 до 127|
 |pinUppercaseCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Это значение настраивает использование символов верхнего регистра в пин-Windows Hello для бизнеса. Возможные значения: `blocked`, `required`, `allowed`, `notConfigured`.|
@@ -57,10 +57,10 @@ ms.locfileid: "58759514"
 |pinSpecialCharactersUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Управление возможностью использования специальных символов в Windows Hello для бизнеса PIN-код. Возможные значения: `blocked`, `required`, `allowed`, `notConfigured`.|
 |pinExpirationInDays|Int32|Значение integer указывает период (в днях), который ПИН-код можно использовать до того, как система потребует от пользователя его изменить. Допустимые значения : от 0 до 730 включительно. Допустимые значения: от 0 до 730.|
 |pinPreviousBlockCount|Int32|Контролирует возможность предотвращения использования пользователями прошлых ПИН-данных. Это должно быть установлено между 0 и 50 включительно, и текущий ПИН-код пользователя включен в это число. Если установлено 0, предыдущие ПИН-данные не сохраняются. История ПИН-кода не сохраняется с помощью сброса ПИН-кода. Допустимые значения: от 0 до 50.|
-|pinRecoveryEnabled|Логический|Значение Boolean, которое позволяет пользователю изменять ПИН-код с помощью Windows Hello службы восстановления ПИН-кода для бизнеса.|
+|pinRecoveryEnabled|Boolean|Значение Boolean, которое позволяет пользователю изменять ПИН-код с помощью Windows Hello службы восстановления ПИН-кода для бизнеса.|
 |securityDeviceRequired|Boolean|Управление, необходимо ли требовать доверенный модуль платформы (TPM) для Windows Hello для бизнеса. TPM предоставляет дополнительные преимущества безопасности в том, что данные, хранимые на нем, не могут использоваться на других устройствах. Если установлено false, все устройства могут Windows Hello для бизнеса, даже если нет необходимого TPM.|
 |unlockWithBiometricsEnabled|Boolean|Управление использованием биометрических жестов, таких как лицо и отпечатки пальцев, в качестве альтернативы Windows Hello для бизнеса PIN-код.  Если установлено false, биометрические жесты не допускаются. Пользователи по-прежнему должны настраивать ПИН-код в качестве резервного копирования в случае сбоев.|
-|useCertificatesForOnPremisesAuthEnabled|Логический|Значение Boolean, Windows Hello для бизнеса использовать сертификаты для проверки подлинности локального ресурса.|
+|useCertificatesForOnPremisesAuthEnabled|Boolean|Значение Boolean, Windows Hello для бизнеса использовать сертификаты для проверки подлинности локального ресурса.|
 |windowsHelloForBusinessBlocked|Boolean|Значение Boolean, Windows Hello для бизнеса как метод для подписания в Windows.|
 
 ## <a name="relationships"></a>Связи

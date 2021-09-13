@@ -1,16 +1,16 @@
 ---
 title: Предоставление appRoleAssignment пользователю
 description: Предоставление назначения роли приложения пользователю.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: users
 author: psignoret
-ms.openlocfilehash: c79435d1399af2b50f4d394c709031fd160a893b
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: f7f7150e6ccef0251f1f416a983b70a3fd5b3f93
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53578730"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099212"
 ---
 # <a name="grant-an-approleassignment-to-a-user"></a>Предоставление appRoleAssignment пользователю
 
@@ -28,9 +28,9 @@ ms.locfileid: "53578730"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.Read.All и AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | User.Read.All и AppRoleAssignment.ReadWrite.All |
+|Для приложений | AppRoleAssignment.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

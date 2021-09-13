@@ -2,15 +2,15 @@
 title: Обновление объекта tableRow
 description: Обновление свойств объекта tablerow.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 778bf21d48775fbbb5f8c590f581972488fdeb47
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0b96107a1c416a7be5849896d6a34a57721b7ae2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054373"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59025897"
 ---
 # <a name="update-tablerow"></a>Обновление объекта tableRow
 
@@ -37,7 +37,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -88,7 +88,7 @@ Content-length: 45
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

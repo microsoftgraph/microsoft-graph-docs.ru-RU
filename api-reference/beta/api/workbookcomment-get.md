@@ -1,16 +1,16 @@
 ---
 title: Get workbookComment
 description: Получите свойства и связи объекта книги.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 132925396dd9f8e9acebfd2192b58d090d6d80b5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: acf2ba79dee898dafcc2f7afd9f3f45f68caab75
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049571"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027368"
 ---
 # <a name="get-workbookcomment"></a>Get workbookComment
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/drive/items/{id}/workbook/comments/{id}
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

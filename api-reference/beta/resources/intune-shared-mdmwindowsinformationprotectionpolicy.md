@@ -2,15 +2,15 @@
 title: Тип ресурса mdmWindowsInformationProtectionPolicy
 description: Политика для Windows Information Protection с MDM
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b7b86c5c852607d1619c2de53476e3cdf0ca726b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b87054c76b7eaece6fe26a420f8304612cae4d5e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815458"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023313"
 ---
 # <a name="mdmwindowsinformationprotectionpolicy-resource-type"></a>Тип ресурса mdmWindowsInformationProtectionPolicy
 
@@ -44,7 +44,7 @@ ms.locfileid: "58815458"
 |description|String|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |version|String|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune-mam-windowsinformationprotectionenforcementlevel.md)|Уровень правоприменения WIP. См. определение Enum для поддерживаемых значений, унаследованных от [windowsInformationProtection.](../resources/intune-mam-windowsinformationprotection.md) Возможные значения: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt`, `encryptAuditAndBlock`.|
 |enterpriseDomain|String|Основной домен предприятия. Наследуется от объекта [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md).|
@@ -69,7 +69,7 @@ ms.locfileid: "58815458"
 |smbAutoEncryptedFileExtensions|Коллекция [windowsInformationProtectionResourceCollection](../resources/intune-mam-windowsinformationprotectionresourcecollection.md)|Задает список расширений. Файлы с этими расширениями шифруются при копировании из общей папки SMB в пределах предприятия. Наследуется от объекта [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md).|
 |isAssigned|Boolean|Указывает, развернута ли политика в группах включения. Наследуется от [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |**Управление мобильным приложением (MAM)**|

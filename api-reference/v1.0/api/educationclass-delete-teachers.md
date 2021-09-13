@@ -2,15 +2,15 @@
 title: 'Удаление преподавателя из educationClass '
 description: Удаление преподавателя для курса.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fa58d3f20e73b603e4a04c2da204870d0b7a10e0
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 6d632f0fc7105936251160156ca8cc9f06a02ec8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52783689"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105365"
 ---
 # <a name="remove-teacher-from-educationclass"></a>Удаление преподавателя из educationClass
 Пространство имен: microsoft.graph
@@ -36,7 +36,7 @@ DELETE /education/classes/{id}/teachers/{userId}/$ref
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 

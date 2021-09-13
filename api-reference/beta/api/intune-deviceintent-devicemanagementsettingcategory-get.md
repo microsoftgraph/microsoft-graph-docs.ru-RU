@@ -2,15 +2,15 @@
 title: Get deviceManagementSettingCategory
 description: Чтение свойств и связей объекта deviceManagementSettingCategory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cb170b1f32937cc9c6613981a673958b7ddc0ee3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a1eb68831f24bae68123bec179854a1c92accfd6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58822014"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59024581"
 ---
 # <a name="get-devicemanagementsettingcategory"></a>Get deviceManagementSettingCategory
 
@@ -46,7 +46,7 @@ GET /deviceManagement/categories/{deviceManagementSettingCategoryId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

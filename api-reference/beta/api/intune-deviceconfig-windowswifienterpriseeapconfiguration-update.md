@@ -2,15 +2,15 @@
 title: Обновление windowsWifiEnterpriseEAPConfiguration
 description: Обновление свойств объекта WindowsWifiEnterpriseEAPConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 831eab3f244e7c9c396771fe2aa83e953db2b94e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 03d30f0a77805852683f0dde21b18abc21f50566
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821888"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034780"
 ---
 # <a name="update-windowswifienterpriseeapconfiguration"></a>Обновление windowsWifiEnterpriseEAPConfiguration
 
@@ -71,9 +71,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |meteredConnectionLimit|[meteredConnectionLimitType](../resources/intune-deviceconfig-meteredconnectionlimittype.md)|Укажите тип ограничения дозы подключения для подключения Wi-Fi. Унаследовано от [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md). Возможные значения: `unrestricted`, `fixed`, `variable`.|
 |ssid|String|Укажите SSID подключения Wi-Fi. Унаследованный от [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |networkName|String|Укажите имя конфигурации сети. Унаследованный от [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
-|connectAutomatically|Логический|Укажите, должно ли подключение Wi-Fi подключаться автоматически при диапазоне. Унаследованный от [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
-|connectToPreferredNetwork|Логический|Укажите, должно ли подключение Wi-Fi подключаться к более предпочтительным сетям при уже подключении к этой.  Требуется, чтобы ConnectAutomatically был правдивым. Унаследованный от [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
-|connectWhenNetworkNameIsHidden|Логический|Укажите, следует ли подключать подключение к Wi-Fi автоматически, даже если SSID не транслируется. Унаследованный от [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|connectAutomatically|Boolean|Укажите, должно ли подключение Wi-Fi подключаться автоматически при диапазоне. Унаследованный от [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|connectToPreferredNetwork|Boolean|Укажите, должно ли подключение Wi-Fi подключаться к более предпочтительным сетям при уже подключении к этой.  Требуется, чтобы ConnectAutomatically был правдивым. Унаследованный от [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
+|connectWhenNetworkNameIsHidden|Boolean|Укажите, следует ли подключать подключение к Wi-Fi автоматически, даже если SSID не транслируется. Унаследованный от [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |proxySetting|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Укажите параметр прокси для Wi-Fi конфигурации, унаследованной от [windowsWifiConfiguration.](../resources/intune-deviceconfig-windowswificonfiguration.md) Возможные значения: `none`, `manual`, `automatic`.|
 |proxyManualAddress|String|Укажите IP-адрес прокси-сервера. Унаследованный от [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
 |proxyManualPort|Int32|Укажите порт для прокси-сервера. Унаследованный от [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|
@@ -83,25 +83,25 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |maximumAuthenticationTimeoutInSeconds|Int32|Укажите максимальное время проверки подлинности (в секундах).  Допустимый диапазон: 1-120|
 |userBasedVirtualLan|Логический|Указывает, следует ли изменять виртуальный LAN-интерфейс, используемый устройством на основе учетных данных пользователя. Нельзя использовать, если для NetworkSingleSignOnType установлено отключение.|
 |promptForAdditionalAuthenticationCredentials|Логический|Укажите, должно ли подключение Wi-Fi подсказать дополнительные учетные данные проверки подлинности.|
-|enablePairwiseMasterKeyCaching|Логический|Укажите, должно ли подключение Wi-Fi включить кэшинг ключей в парной области.|
+|enablePairwiseMasterKeyCaching|Boolean|Укажите, должно ли подключение Wi-Fi включить кэшинг ключей в парной области.|
 |maximumPairwiseMasterKeyCacheTimeInMinutes|Int32|Укажите максимальное время кэша мастер-ключа парной стрелки (в минутах).  Допустимый диапазон: 5-1440|
 |maximumNumberOfPairwiseMasterKeysInCache|Int32|Укажите максимальное количество ключей в кэше с парной стрелкой.  Допустимый диапазон: 1-255|
-|enablePreAuthentication|Логический|Укажите, должна ли быть включена предварительная проверка подлинности.|
+|enablePreAuthentication|Boolean|Укажите, должна ли быть включена предварительная проверка подлинности.|
 |maximumPreAuthenticationAttempts|Int32|Укажите максимальные попытки предварительной проверки подлинности.  Допустимый диапазон: 1-16|
 |eapType|[eapType](../resources/intune-deviceconfig-eaptype.md)|Extensible Authentication Protocol (EAP). Указывает тип протокола EAP на конечной точке Wi-Fi (маршрутизатор). Возможные значения: `eapTls`, `leap`, `eapSim`, `eapTtls`, `peap`, `eapFast`.|
-|trustedServerCertificateNames|Коллекция String|Укажите имена доверенных сертификатов сервера.|
+|trustedServerCertificateNames|Коллекция строк|Укажите имена доверенных сертификатов сервера.|
 |authenticationMethod|[wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod.md)|Укажите метод проверки подлинности. Возможные значения: `certificate`, `usernameAndPassword`, `derivedCredential`.|
 |innerAuthenticationProtocolForEAPTTLS|[nonEapAuthenticationMethodForEapTtlsType](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|Укажите внутренний протокол проверки подлинности для TTLS EAP. Возможные значения: `unencryptedPassword`, `challengeHandshakeAuthenticationProtocol`, `microsoftChap`, `microsoftChapVersionTwo`.|
 |outerIdentityPrivacyTemporaryValue|String|Укажите строку для замены имен пользователей для конфиденциальности при использовании EAP TTLS или PEAP.|
-|requireCryptographicBinding|Boolean|Укажите, следует ли включить криптографическую привязку при выборе типа EAP в качестве PEAP.|
+|requireCryptographicBinding|Логический|Укажите, следует ли включить криптографическую привязку при выборе типа EAP в качестве PEAP.|
 |performServerValidation|Логический|Укажите, следует ли включить проверку удостоверения сервера путем проверки сертификата при выборе типа EAP в качестве PEAP.|
-|disableUserPromptForServerValidation|Логический|Укажите, следует ли запретить пользователю авторизировать новые серверы для доверенных органов сертификации при выборе типа EAP в качестве PEAP.|
+|disableUserPromptForServerValidation|Boolean|Укажите, следует ли запретить пользователю авторизировать новые серверы для доверенных органов сертификации при выборе типа EAP в качестве PEAP.|
 |authenticationPeriodInSeconds|Int32|Укажите количество секунд, которые клиент должен ждать после попытки проверки подлинности перед сбоем. Допустимый диапазон 1-3600.|
 |authenticationRetryDelayPeriodInSeconds|Int32|Укажите количество секунд между неудачной проверкой подлинности и следующей попыткой проверки подлинности. Допустимый диапазон 1-3600.|
 |eapolStartPeriodInSeconds|Int32|Укажите количество секунд, которые необходимо подождать перед отправкой начните сообщение EAPOL (Extensible Authentication Protocol over LAN). Допустимый диапазон 1-3600.|
 |maximumEAPOLStartMessages|Int32|Задано максимальное число протоколов проверки подлинности EAPOL (Extensible Authentication Protocol over LAN) Start messages to be sent before returning failure. Допустимый диапазон 1-100.|
 |maximumAuthenticationFailures|Int32|Укажите максимально допустимые сбои проверки подлинности для набора учетных данных. Допустимый диапазон 1-100.|
-|cacheCredentials|Логический|Укажите, следует ли кэшизировать учетные данные пользователей на устройстве, чтобы пользователям не нужно было постоянно вводить их при каждом подключении.|
+|cacheCredentials|Boolean|Укажите, следует ли кэшизировать учетные данные пользователей на устройстве, чтобы пользователям не нужно было постоянно вводить их при каждом подключении.|
 |authenticationType|[wifiAuthenticationType](../resources/intune-deviceconfig-wifiauthenticationtype.md)|Укажите, следует ли проверить подлинность пользователя, устройства или использовать гостевую проверку подлинности (нет). Если вы используете проверку подлинности сертификатов, убедитесь, что тип сертификата соответствует типу проверки подлинности. Возможные значения: `none`, `user`, `machine`, `machineOrUser`, `guest`.|
 
 

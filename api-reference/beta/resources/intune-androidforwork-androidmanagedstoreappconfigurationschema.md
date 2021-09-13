@@ -2,15 +2,15 @@
 title: тип ресурса androidManagedStoreAppConfigurationSchema
 description: Схема с описанием настраиваемой конфигурации приложения для Android.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ccb2a5af080368518368493dd9f31934e6a95d95
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5445f0bec409f823c1c4fad1586448a76d11180b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801215"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030545"
 ---
 # <a name="androidmanagedstoreappconfigurationschema-resource-type"></a>тип ресурса androidManagedStoreAppConfigurationSchema
 
@@ -34,12 +34,12 @@ ms.locfileid: "58801215"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта, которому соответствует имя пакета Android для схемы приложений.|
+|id|String|Ключ объекта, которому соответствует имя пакета Android для схемы приложений.|
 |exampleJson|Binary|Массив байтов в кодировке UTF8, содержащий образец соответствующей схеме строки JSON, который иллюстрирует настройку приложения.|
 |schemaItems|[коллекция androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)|Коллекция элементов, каждый из которых представляет параметр конфигурации с именем в схеме. Он содержит только конфигурацию корневого уровня.|
 |nestedSchemaItems|[коллекция androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)|Коллекция элементов, каждый из которых представляет параметр конфигурации с именем в схеме. Он содержит плоский список всех конфигураций.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

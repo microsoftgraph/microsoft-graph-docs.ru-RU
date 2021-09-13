@@ -2,15 +2,15 @@
 title: тип ресурса sharingDetail
 description: 'Сложный тип, содержащий свойства общих элементов. '
 author: simonhult
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 341bef801b8ee8a7cfc8b5176f4984251209db9e4aff05de9d983b8e06cb61fb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 96840e801e7789c287dad26e014797013039a6a5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124467"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094291"
 ---
 # <a name="sharingdetail-resource-type"></a>тип ресурса sharingDetail
 
@@ -18,7 +18,7 @@ ms.locfileid: "54124467"
 
 Сложный тип, содержащий свойства [элементов sharedInsight.](insights-shared.md) 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже показано представление JSON ресурса.
 <!-- {
   "blockType": "resource",
@@ -41,8 +41,8 @@ ms.locfileid: "54124467"
 
 | Свойство              | Тип          | Описание  |
 | -------------         |-----------    | -------------|
-| sharedDateTime        | DateTimeOffset| Дата и время последнего общего делиться файлом. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`. Только для чтения.  |
-| sharingSubject        | String          | Тема, с которой был общий документ. |
+| sharedDateTime        | DateTimeOffset| Дата и время последнего общего делиться файлом. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.  |
+| sharingSubject        | Строка          | Тема, с которой был общий документ. |
 | sharingType             | String        | Определяет способ общего делиться документом с помощью "Link", "Attachment", "Group", "Site".     |
 | sharedBy                | [insightIdentity](insights-insightidentity.md)      | Пользователь, который поделился документом.  |
 | sharingReference        | [resourceReference](insights-resourcereference.md)      |  |

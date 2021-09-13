@@ -2,14 +2,14 @@
 title: 'Получение добавочных изменений для событий в представлении календаря '
 description: 'Представление календаря — это коллекция событий в диапазоне дат и времени из календаря по умолчанию (../me/calendarview) '
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 78a27c86623f5a608894bcbe69849b0568b18c1d0423adb046e887d7f2204519
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 37d7231962fbf025064bba96594b019506b69794
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54177914"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142434"
 ---
 # <a name="get-incremental-changes-to-events-in-a-calendar-view"></a>Получение добавочных изменений для событий в представлении календаря 
 

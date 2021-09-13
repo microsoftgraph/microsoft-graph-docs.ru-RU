@@ -2,15 +2,15 @@
 title: Get windowsManagementApp
 description: Чтение свойств и связей объекта WindowsManagementApp.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 05dc4a0c815c8b216e6c0d094d7e02a80395e25b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c983af416a665b442dadd4abda96f33434ca2900
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796336"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030762"
 ---
 # <a name="get-windowsmanagementapp"></a>Get windowsManagementApp
 
@@ -27,9 +27,9 @@ ms.locfileid: "58796336"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,13 +46,13 @@ GET /deviceAppManagement/windowsManagementApp
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика и `200 OK` [объект WindowsManagementApp](../resources/intune-devices-windowsmanagementapp.md) в тексте ответа.
 
 ## <a name="example"></a>Пример

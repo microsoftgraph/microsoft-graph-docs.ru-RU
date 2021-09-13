@@ -2,15 +2,15 @@
 title: Список вложений
 description: Получение списка объектов вложений.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0e9b5a8537fc4e3a673a76573782dc70721229d8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f24a2ef3cf62b13dd5319ee9a4399aa125c24cb6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052413"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59095131"
 ---
 # <a name="list-attachments"></a>Список вложений
 
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "eventmessage_get_attachments_v1",

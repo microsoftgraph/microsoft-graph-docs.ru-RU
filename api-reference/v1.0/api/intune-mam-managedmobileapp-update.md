@@ -2,15 +2,15 @@
 title: Обновление объекта managedMobileApp
 description: Обновление свойств объекта managedMobileApp.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 28405374a30d9b821a5240ff2dfedda4c9f4d65752fcfdec2caa4667aeee0745
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e426899df5cf3d7eaa27b8e6c8d85c2907343718
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249512"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032778"
 ---
 # <a name="update-managedmobileapp"></a>Обновление объекта managedMobileApp
 
@@ -27,7 +27,7 @@ ms.locfileid: "54249512"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,7 +55,7 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|Идентификатор приложения с типом его операционной системы.|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |version|String|Версия объекта.|
 
 

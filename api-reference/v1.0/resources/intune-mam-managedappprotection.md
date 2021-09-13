@@ -2,15 +2,15 @@
 title: Тип ресурса managedAppProtection
 description: Политика, используемая для настройки расширенных параметров управления для определенного набора приложений.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3a540a854a11c5398f0be47e09b3ce6ecb02463619f601f32b66b83f01554121
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4d83fe815a9c6ead2183054bf34a9e679bbb71a0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135122"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098715"
 ---
 # <a name="managedappprotection-resource-type"></a>Тип ресурса managedAppProtection
 
@@ -34,7 +34,7 @@ ms.locfileid: "54135122"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|String|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|description|String|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|description|Строка|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |id|String|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
@@ -67,7 +67,7 @@ ms.locfileid: "54135122"
 |minimumWarningAppVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение.|
 |managedBrowser|[managedBrowserType](../resources/intune-mam-managedbrowsertype.md)|Указывает, в каких управляемых браузерах (ы) необходимо открыть ссылки в Интернете. Когда это свойство настроено, managedBrowserToOpenLinksRequired должно быть верным. Возможные значения: `notConfigured`, `microsoftEdge`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

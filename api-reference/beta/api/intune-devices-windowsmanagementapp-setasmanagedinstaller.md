@@ -2,15 +2,15 @@
 title: действие setAsManagedInstaller
 description: Настройка состояния управляемого установщика для клиента вызываемого
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 66572337c11c695d78e9fe8e4afd0e5b9ed83a69
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ae19d9a9efe04c953a1c38a6a8322f79f1f3fdbc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783360"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020709"
 ---
 # <a name="setasmanagedinstaller-action"></a>действие setAsManagedInstaller
 
@@ -27,9 +27,9 @@ ms.locfileid: "58783360"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,13 +43,13 @@ POST /deviceAppManagement/windowsManagementApp/setAsManagedInstaller
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример

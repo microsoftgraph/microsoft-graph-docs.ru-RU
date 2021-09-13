@@ -2,15 +2,15 @@
 title: Перечисление объектов windowsPhone81GeneralConfiguration
 description: Список свойств и связей объектов windowsPhone81GeneralConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f0473e118dd10a288c83bd312db3795ae27e0633c2cfc51ce58145ce30757f38
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e626e091fb976ce9ac281f9718126ab257eab1b4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54185133"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099639"
 ---
 # <a name="list-windowsphone81generalconfigurations"></a>Перечисление объектов windowsPhone81GeneralConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "54185133"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +41,7 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

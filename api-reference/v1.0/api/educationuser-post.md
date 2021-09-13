@@ -2,15 +2,15 @@
 title: Создание educationUser
 description: Создание нового объекта educationUser.
 author: mlafleur
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b26e0530fd4beea6d2f604fa46f891e154fefa61
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 9ee99053863896e5ec063a1a5f477a4e1fdfd7c5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232286"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100213"
 ---
 # <a name="create-educationuser"></a>Создание educationUser
 
@@ -26,7 +26,7 @@ ms.locfileid: "52232286"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Приложение                            | EduRoster.ReadWrite.All                     |
+| Для приложений                            | EduRoster.ReadWrite.All                     |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -62,9 +62,9 @@ POST /education/users
 | department           | String                                                             | Название отдела, в котором работает пользователь. Поддерживает параметр $filter.                                                                                                                                                                                                                                                                                      |
 | displayName          | String                                                             | Имя пользователя, отображаемое в адресной книге. Обычно это сочетание имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. Поддерживает параметры $filter и $orderby.                                                                                      |
 | externalSource       | educationExternalSource                                            | Источник для создания пользователя. Возможные значения: `sis`, `manual`.                                                                                                                                                                                                                                                                                     |
-| externalSourceDetail | Строка                                                             | Имя внешнего источника, из которого были созданы эти ресурсы.                                                                                                                                                                                                                                                                                          |
-| givenName            | String                                                             | Простое имя пользователя. Поддерживает параметр $filter.                                                                                                                                                                                                                                                                                                  |
-| mail                 | String                                                             | SMTP-адрес пользователя, например "victor@contoso.onmicrosoft.com". Только для чтения. Поддерживает параметр $filter.                                                                                                                                                                                                                                                    |
+| externalSourceDetail | String                                                             | Имя внешнего источника, из которого были созданы эти ресурсы.                                                                                                                                                                                                                                                                                          |
+| givenName;            | String                                                             | Простое имя пользователя. Поддерживает параметр $filter.                                                                                                                                                                                                                                                                                                  |
+| почта;                 | String                                                             | SMTP-адрес пользователя, например "victor@contoso.onmicrosoft.com". Только для чтения. Поддерживает параметр $filter.                                                                                                                                                                                                                                                    |
 | mailingAddress       | [physicalAddress](../resources/physicaladdress.md)                 | Почтовый адрес пользователя.                                                                                                                                                                                                                                                                                                                                       |
 | mailNickname         | String                                                             | Почтовый псевдоним для пользователя. Это свойство должно быть указано при создании пользователя. Поддерживает параметр $filter.                                                                                                                                                                                                                                                      |
 | middleName           | String                                                             | Отчество пользователя.                                                                                                                                                                                                                                                                                                                                    |
@@ -91,6 +91,8 @@ POST /education/users
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_educationuser_from_"
@@ -165,6 +167,24 @@ Content-length: 1585
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationuser-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationuser-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-educationuser-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-educationuser-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

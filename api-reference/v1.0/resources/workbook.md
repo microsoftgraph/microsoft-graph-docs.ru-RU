@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса workbook
 description: Объект верхнего уровня, содержащий связанные объекты книг, такие как листы, таблицы и диапазоны.
-localization_priority: Priority
+ms.localizationpriority: high
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 18c6694f01c9cd3441d59935ad399372ffbb4c6b831a542a2e00a9eb2e6902f8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ded7bceefb0cebdfaf45b16a88de3f4f0a9d5244
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251717"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134208"
 ---
 # <a name="workbook-resource-type"></a>Тип ресурса workbook
 
@@ -41,7 +41,7 @@ ms.locfileid: "54251717"
 
 [Функции Excel](#functions): вызов функции книги с использованием синтаксиса `POST /me/drive/root/workbook/functions/{function-name}` и предоставление аргументов функции в основном тексте с помощью объекта JSON. Результирующее `value` функции и любые строки `error` возвращаются в объекте результата функции. Если значение `error` равно `null`, это свидетельствует об успешном выполнении функции. 
 
-Полный список поддерживаемых функций см. [здесь](https://support.office.com/ru-RU/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Имена определенных параметров и типы данных см. в сигнатуре функции.
+Полный список поддерживаемых функций см. [здесь](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Имена определенных параметров и типы данных см. в сигнатуре функции.
 
 _Важные примечания._ 
 * Входной параметр range предоставляется с использованием объекта range вместо строки адреса range.  
@@ -60,7 +60,7 @@ _Важные примечания._
 
 =ВПР(искомое значение, диапазон с искомым значением, номер столбца в диапазоне с возвращаемым значением, необязательное значение TRUE для указания приблизительного значения или FALSE для указания точного совпадения)
 
-(См. документацию по [функции ВПР в Excel](https://support.office.com/ru-RU/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1).)
+(См. документацию по [функции ВПР в Excel](https://support.office.com/en-us/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1).)
 
 В приведенном ниже примере показано, как вызывать функцию `vlookup` и передавать эти параметры с помощью REST API для Excel.
 
@@ -103,7 +103,7 @@ content-type: application/json;odata.metadata
 
 =МЕДИАНА(A2:A6)
 
-(См. документацию по [функции МЕДИАНА в Excel](https://support.office.com/ru-RU/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2).)
+(См. документацию по [функции МЕДИАНА в Excel](https://support.office.com/en-us/article/MEDIAN-function-d0916313-4753-414c-8537-ce85bdd967d2).)
 
 В приведенном ниже примере показано, как вызывать функцию `median` и один или несколько диапазонов входных значений с помощью REST API для Excel. 
 

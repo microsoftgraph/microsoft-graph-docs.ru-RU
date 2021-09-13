@@ -2,15 +2,15 @@
 title: Перечисление категорий
 description: Список всех категорий, связанных с этим назначением.
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c5ece16448dd047fb263149682352cdc8ea400b4
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 000d3511973da64a12dfd14ed33a2c591d5babde
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367165"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130897"
 ---
 # <a name="list-categories"></a>Перечисление категорий
 
@@ -25,7 +25,7 @@ ms.locfileid: "58367165"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Приложение | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All | 
+|Для приложений | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

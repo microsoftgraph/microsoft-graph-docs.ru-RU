@@ -2,15 +2,15 @@
 title: Обновление объекта managedDeviceMobileAppConfigurationDeviceSummary
 description: Обновление свойств объекта managedDeviceMobileAppConfigurationDeviceSummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f631788c877ae074498c6e1dcd856a352d4b8ddd079f1871db1ed894d114cd66
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6dd9aec32ac06d07d2280a6249f769777041e60b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175940"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073774"
 ---
 # <a name="update-manageddevicemobileappconfigurationdevicesummary"></a>Обновление объекта managedDeviceMobileAppConfigurationDeviceSummary
 
@@ -27,7 +27,7 @@ ms.locfileid: "54175940"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +41,7 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,7 +51,7 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |pendingCount|Int32|Количество ожидающих устройств.|
 |notApplicableCount|Int32|Количество неприменимых устройств.|
 |successCount|Int32|Количество успешных устройств.|

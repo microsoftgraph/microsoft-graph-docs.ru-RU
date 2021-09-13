@@ -2,15 +2,15 @@
 title: тип ресурса deviceComplianceScriptDeviceState
 description: Содержит свойства для состояния выполнения устройства скрипта соответствия требованиям.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1a4c10878089d9d5cac4ccf43b0ebcebaca0427d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8143fc208811da51994cfc7f9d09e3c1304808f9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788179"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033583"
 ---
 # <a name="devicecompliancescriptdevicestate-resource-type"></a>тип ресурса deviceComplianceScriptDeviceState
 
@@ -34,18 +34,18 @@ ms.locfileid: "58788179"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ состояния состояния скрипта устройства устройства. Это свойство доступно только для чтения.|
+|id|String|Ключ состояния состояния скрипта устройства устройства. Это свойство доступно только для чтения.|
 |detectionState|[runState](../resources/intune-devices-runstate.md)|Состояние обнаружения из последнего выполнения скрипта соответствия требованиям устройства. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |lastStateUpdateDateTime|DateTimeOffset|Последний период выполнения сценария соответствия требованиям устройства|
 |expectedStateUpdateDateTime|DateTimeOffset|Следующий период выполнения сценария соответствия требованиям к устройству|
 |lastSyncDateTime|DateTimeOffset|Последний раз, когда расширение управления Intune синхронизировали с Intune|
-|scriptOutput|Строка|Выход сценария обнаружения|
-|scriptError|Строка|Ошибка из сценария обнаружения|
+|scriptOutput|String|Выход сценария обнаружения|
+|scriptError|String|Ошибка из сценария обнаружения|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|managedDevice|[managedDevice](../resources/intune-devices-manageddevice.md);|Управляемое устройство, на котором выполнен сценарий соответствия требованиям устройства|
+|managedDevice|[managedDevice](../resources/intune-devices-manageddevice.md)|Управляемое устройство, на котором выполнен сценарий соответствия требованиям устройства|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

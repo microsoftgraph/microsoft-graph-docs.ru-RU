@@ -2,15 +2,15 @@
 title: Перечисление объектов iosUpdateDeviceStatus
 description: Список свойств и связей объектов iosUpdateDeviceStatus.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b5d92b46a8e406b41bd4f8d430d1a8c4cef68d0c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bb70e74ddc69b705051b752f8eedfe064d19228f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821054"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59028242"
 ---
 # <a name="list-iosupdatedevicestatuses"></a>Перечисление объектов iosUpdateDeviceStatus
 
@@ -27,8 +27,8 @@ ms.locfileid: "58821054"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,13 +43,13 @@ GET /deviceManagement/iosUpdateStatuses
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

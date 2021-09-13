@@ -2,15 +2,15 @@
 title: Создание deviceManagementConfigurationSimpleSettingCollectionDefinition
 description: Создание нового объекта deviceManagementConfigurationSimpleSettingCollectionDefinition.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 77280e9493c2fdeb248c2eb52f55f57fa96294fb
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 118e20c849f18c5655521441b57a2096c7317ff5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820014"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034689"
 ---
 # <a name="create-devicemanagementconfigurationsimplesettingcollectiondefinition"></a>Создание deviceManagementConfigurationSimpleSettingCollectionDefinition
 
@@ -46,7 +46,7 @@ POST /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurati
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

@@ -2,15 +2,15 @@
 title: Тип ресурса notificationMessageTemplate
 description: Сообщения уведомлений отправляются пользователям, которые не отвечают политикам соответствия требованиям, определяемым администратором. Администраторы выбирают уведомления и настраивают их в консоли администрирования Intune, используя страницу создания политики соответствия требованиям в разделе "Действия для несоответствия". Используйте объект notificationMessageTemplate, чтобы создать собственные настраиваемые уведомления, которые могут выбрать администраторы во время настройки действий в случае несоответствия требованиям.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a91c46e1ee315f68ff028583bd563752b5f12115
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 571c91b48501b1deb88c9aec199cfe73c8ec612b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804493"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017291"
 ---
 # <a name="notificationmessagetemplate-resource-type"></a>Тип ресурса notificationMessageTemplate
 

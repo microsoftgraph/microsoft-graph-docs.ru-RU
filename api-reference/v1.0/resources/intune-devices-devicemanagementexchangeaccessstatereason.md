@@ -2,15 +2,15 @@
 title: тип enum deviceManagementExchangeAccessStateReason
 description: Причина Exchange доступа к состоянию устройства.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ee0bf43c6a6a0141128f48da43fc8d4e5570e0acd7bdb85de715011435765be8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e8925575994c840bde24ec1f00dd679867179caa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202289"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148293"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>тип enum deviceManagementExchangeAccessStateReason
 
@@ -23,7 +23,7 @@ ms.locfileid: "54202289"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|нет|0|Причина состояния доступа, обнаруженная в Exchange|
+|Нет|0|Причина состояния доступа, обнаруженная в Exchange|
 |unknown|1|Причина состояния неизвестного доступа|
 |exchangeGlobalRule|2|Состояние доступа, Exchange глобальное правило|
 |exchangeIndividualRule|3|Состояние доступа, определяемая Exchange индивидуальным правилом|
@@ -37,7 +37,7 @@ ms.locfileid: "54202289"
 |unknownLocation|12 |Состояние доступа из-за неизвестного расположения|
 |mfaRequired|13|Состояние доступа из-за проблемы с MFA|
 |azureADBlockDueToAccessPolicy|14 |Состояние доступа отозвано политикой доступа AAD|
-|compromisedPassword|15|Состояние доступа отозвано с помощью скомпрометированного пароля|
+|compromisedPassword|15 |Состояние доступа отозвано с помощью скомпрометированного пароля|
 |deviceNotKnownWithManagedApp|16 |Доступ к состояниям, отозванным из-за проблемы управляемого приложения|
 
 

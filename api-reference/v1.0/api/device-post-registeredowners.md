@@ -2,15 +2,15 @@
 title: Создание объекта registeredOwner
 description: Добавление пользователя в качестве зарегистрированного владельца устройства.
 author: spunukol
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0beb4340f4e616d7b006a02e8441067302810f8e
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: d3a9002f6c2bed816198b35817fd9b76cea15ff8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531343"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029621"
 ---
 # <a name="create-registeredowner"></a>Создание объекта registeredOwner
 

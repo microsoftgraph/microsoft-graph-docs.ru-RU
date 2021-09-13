@@ -2,15 +2,15 @@
 title: Удаление notificationMessageTemplate
 description: Удаление объекта notificationMessageTemplate.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 28cf5e1147244b1364813358d96ab23e14ae9a7f011c6db86ef6e39ee469f10d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3cec9fff9c3347f91b4c42f55586fd0006d5f120
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155619"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147026"
 ---
 # <a name="delete-notificationmessagetemplate"></a>Удаление notificationMessageTemplate
 
@@ -27,7 +27,7 @@ ms.locfileid: "54155619"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,10 +41,10 @@ DELETE /deviceManagement/notificationMessageTemplates/{notificationMessageTempla
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

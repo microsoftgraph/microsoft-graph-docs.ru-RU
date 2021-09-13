@@ -1,16 +1,16 @@
 ---
 title: List identityUserFlowAttributes
 description: Извлечение списка объектов identityUserFlowAttribute.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: dd49333a59e1283965aa24ced0a7e9960386d5c0
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: a58260c3f81642d2e152526341028aae1f857f34
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920884"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045702"
 ---
 # <a name="list-identityuserflowattributes"></a>List identityUserFlowAttributes
 
@@ -31,7 +31,7 @@ ms.locfileid: "51920884"
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор атрибута потока внешних удостоверений
+* Администратор атрибута пользователя внешней Flow удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 

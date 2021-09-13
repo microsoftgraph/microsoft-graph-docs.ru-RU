@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса changeNotification
 description: Представляет уведомление об изменении, отправленного абоненту.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: resourcePageType
 ms.prod: change-notifications
-ms.openlocfilehash: 3823bb7e35c021b35e48e38c0974293d8463ea44ebfef8447ea9120c24d8b3d7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2d0563a77710b5553f9ace2d58a8c695259a81cf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189914"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104252"
 ---
 # <a name="changenotification-resource-type"></a>Тип ресурса changeNotification
 
@@ -28,18 +28,18 @@ ms.locfileid: "54189914"
 
 | Свойство | Тип | Описание |
 |:---------|:-----|:------------|
-| changeType | changeType | Указывает тип изменения, которое поднимет уведомление об изменении. Поддерживаемые значения: `created`, `updated`, `deleted`. Обязательный элемент. |
-| clientState | строка | Значение свойства **clientState,** отправленного в запросе подписки (если таково). Максимальная длина: 255 символов. Клиент может проверить, пришло ли уведомление об изменении из службы, сравнивая значения свойства **clientState.** Значение свойства **clientState,** отправленного с подпиской, сравнивается со значением свойства **clientState,** полученного с каждым уведомлением об изменении. Необязательно. |
-| encryptedContent | [changeNotificationEncryptedContent](changenotificationencryptedcontent.md) | (Предварительный просмотр) Зашифрованное содержимое, прикрепленное с уведомлением об изменении. Только если **шифрованиеCertificate** и **includeResourceData** было определено во время запроса подписки и если ресурс поддерживает его. Необязательно. |
-| id | строка | Уникальный ID для уведомления. Необязательно. |
-| lifecycleEvent | lifecycleEventType| Тип уведомления жизненного цикла, если текущее уведомление является уведомлением жизненного цикла. Необязательно. Поддерживаемые значения `missed` : `subscriptionRemoved` , `reauthorizationRequired` . |
-| resource | строка | URI ресурса, излучающего уведомление об изменении относительно `https://graph.microsoft.com` . Обязательный элемент. |
-| resourceData | [resourceData](resourcedata.md) | Содержимое этого свойства зависит от типа связанного с ним ресурса. Обязательный элемент. |
-| subscriptionExpirationDateTime | DateTimeOffset | Время окончания срока действия подписки. Обязательный элемент. |
+| changeType | changeType | Указывает тип изменения, которое поднимет уведомление об изменении. Поддерживаемые значения: `created`, `updated`, `deleted`. Обязательный. |
+| clientState | string | Значение свойства **clientState,** отправленного в запросе подписки (если таково). Максимальная длина: 255 символов. Клиент может проверить, пришло ли уведомление об изменении из службы, сравнивая значения свойства **clientState.** Значение свойства **clientState,** отправленного с подпиской, сравнивается со значением свойства **clientState,** полученного с каждым уведомлением об изменении. Необязательное. |
+| encryptedContent | [changeNotificationEncryptedContent](changenotificationencryptedcontent.md) | (Предварительный просмотр) Зашифрованное содержимое, прикрепленное с уведомлением об изменении. Только если **шифрованиеCertificate** и **includeResourceData** было определено во время запроса подписки и если ресурс поддерживает его. Необязательное. |
+| id | string | Уникальный ID для уведомления. Необязательное. |
+| lifecycleEvent | lifecycleEventType| Тип уведомления жизненного цикла, если текущее уведомление является уведомлением жизненного цикла. Необязательное. Поддерживаемые значения `missed` : `subscriptionRemoved` , `reauthorizationRequired` . |
+| resource | string | URI ресурса, излучающего уведомление об изменении относительно `https://graph.microsoft.com` . Обязательное. |
+| resourceData | [resourceData](resourcedata.md) | Содержимое этого свойства зависит от типа связанного с ним ресурса. Обязательное. |
+| subscriptionExpirationDateTime | DateTimeOffset | Время окончания срока действия подписки. Обязательный. |
 | subscriptionId | GUID | Уникальный идентификатор подписки, которая породила уведомление. |
 | tenantId | GUID | Уникальный идентификатор клиента, из которого возникло уведомление об изменении. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

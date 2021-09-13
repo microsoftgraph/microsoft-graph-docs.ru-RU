@@ -2,14 +2,14 @@
 title: Автоматизация создания, отправки и обработки сообщений
 description: В Microsoft Graph электронные письма представлены ресурсом message.
 author: abheek-das
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 8935bb03fbb7d1cea9c3072d2f7aafb545215880991806125f87173a10d1db94
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: efca1dd5a53aac584e4956b794b1c3e30916327b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54157916"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032099"
 ---
 # <a name="automate-creating-sending-and-processing-messages"></a>Автоматизация создания, отправки и обработки сообщений
 

@@ -2,15 +2,15 @@
 title: Создание объекта windowsDefenderAdvancedThreatProtectionConfiguration
 description: Создание объекта windowsDefenderAdvancedThreatProtectionConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ddfdd078ef3e2dcf4d13fb6dcfab71c88c975504461205d0a1bbd6d39b13c021
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d081ff36863c2ec4d5105b4b7e6b76164a0f9053
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54197319"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59144085"
 ---
 # <a name="create-windowsdefenderadvancedthreatprotectionconfiguration"></a>Создание объекта windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "54197319"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,10 +41,10 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта windowsDefenderAdvancedThreatProtectionConfiguration в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта windowsDefenderAdvancedThreatProtectionConfiguration.

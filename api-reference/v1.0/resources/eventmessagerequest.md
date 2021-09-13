@@ -2,15 +2,15 @@
 title: тип ресурса eventMessageRequest
 description: Сообщение, представляю которое представляет запрос на собрание.
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 6098c56cdc263b8623cce2b30756c30f68dbd9ddafe59c879a5026385971a957
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1ef00be1e8f5a9881c62bbc11f79555334abfd04
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243590"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067411"
 ---
 # <a name="eventmessagerequest-resource-type"></a>тип ресурса eventMessageRequest
 
@@ -106,10 +106,10 @@ ms.locfileid: "54243590"
 |id|String|Только для чтения.|
 |importance|String| Важность сообщения: `Low`, `Normal`, `High`.|
 |inferenceClassification|String| Возможные значения: `Focused`, `Other`.|
-|isDelegated|Логическое|True, если ответ запроса на собрание доступен делегату, ложный в противном случае. Значение по умолчанию: false.|
+|isDelegated|Boolean|True, если ответ запроса на собрание доступен делегату, ложный в противном случае. Значение по умолчанию: false.|
 |isDeliveryReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |isDraft|Логическое|Указывает, является ли сообщение черновиком. Сообщение считается черновиком, если оно еще не отправлено.|
-|isOutOfDate|Логическое|Указывает, был ли этот запрос собрания устарел по более недавнему запросу.|
+|isOutOfDate|Логический|Указывает, был ли этот запрос собрания устарел по более недавнему запросу.|
 |isRead|Boolean|Указывает, прочитано ли сообщение.|
 |isReadReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сообщения.|
@@ -117,7 +117,7 @@ ms.locfileid: "54243590"
 |meetingMessageType|String| Тип сообщения о событии: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTentativelyAccepted`, `meetingDeclined`.|
 |parentFolderId|String|Уникальный идентификатор родительского ресурса mailFolder для сообщения.|
 |previousEndDateTime|[DateTimeTimeZone](datetimetimezone.md)| Если обновление собрания изменяет время окончания собрания, это свойство указывает предыдущее время окончания собрания.|
-|previousLocation|[Расположение](location.md)| Если обновление собрания изменяет расположение собрания, это свойство указывает предыдущее расположение собрания.|
+|previousLocation|[Location](location.md)| Если обновление собрания изменяет расположение собрания, это свойство указывает предыдущее расположение собрания.|
 |previousStartDateTime|[DateTimeTimeZone](datetimetimezone.md)| Если обновление собрания изменяет время начала собрания, это свойство указывает предыдущее время начала собрания.|
 |receivedDateTime|DateTimeOffset|Дата и время получения сообщения.|
 |recurrence|[PatternedRecurrence](patternedrecurrence.md)|Шаблон повторения запрашиваемого собрания.|
@@ -128,7 +128,7 @@ ms.locfileid: "54243590"
 |startDateTime|[DateTimeTimeZone](datetimetimezone.md)|Время начала запрашиваемого собрания.|
 |subject|String|Тема сообщения.|
 |toRecipients|Коллекция [recipient](recipient.md)|Получатели сообщения, указанные в поле "Кому".|
-|type|String|Тип запрашиваемого собрания: `singleInstance` `occurence` , , `exception` `seriesMaster` .|
+|type|Строка|Тип запрашиваемого собрания: `singleInstance` `occurence` , , `exception` `seriesMaster` .|
 |uniqueBody|[itemBody](itembody.md)|Часть текста сообщения, которая является уникальной для текущего сообщения.|
 |webLink|String|URL-адрес для открытия сообщения в Outlook в Интернете.<br><br>Чтобы изменить способ отображения сообщения, можно добавить аргумент ispopout в конце URL-адреса. Если аргумент ispopout отсутствует или для него задано значение 1, то сообщение откроется во всплывающем окне. Если для аргумента ispopout задано значение 0, то в браузере сообщение будет отображаться в области просмотра Outlook в Интернете.<br><br>Сообщение откроется в браузере, если вы вошли в свой почтовый ящик с помощью Outlook в Интернете. Если вход с помощью браузера еще не выполнен, вам будет предложено войти.<br><br>Доступ к этому URL-адресу невозможно получить из объекта iFrame.|
 
@@ -137,7 +137,7 @@ ms.locfileid: "54243590"
 |:---------------|:--------|:----------|
 |attachments|Коллекция [attachment](attachment.md) |Коллекция вложений [fileAttachment,](fileattachment.md) [itemAttachment](itemattachment.md)и [referenceAttachment](referenceattachment.md) для сообщения. Только для чтения. Допускается значение null.|
 |event|[event](event.md)| Событие, связанное с сообщением о событии. Для участников или ресурсов помещений предполагается, что помощник по ведению календаря настроен для автоматического обновления события в календаре, если поступают сообщения с приглашением на собрание. Свойство навигации.  Только для чтения.|
-|extensions|Коллекция объектов [extension](extension.md)| Коллекция открытых расширений, определенных для сообщения о событии. Только для чтения. Допускается значение null.|
+|extensions|Коллекция [extension](extension.md)| Коллекция открытых расширений, определенных для сообщения о событии. Только для чтения. Допускается значение null.|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для eventMessage. Только для чтения. Допускается значение null.|
 |singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для eventMessage. Только для чтения. Допускается значение null.|
 
@@ -148,7 +148,7 @@ ms.locfileid: "54243590"
 |:---------------|:--------|:----------|
 |[Получение объекта eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Считывание свойств и отношений объекта eventMessage.|
 |[Обновление](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Обновление объекта eventMessage.|
-|[Удаление](../api/eventmessage-delete.md) | Нет |Удаление объекта eventMessage.|
+|[удаление](../api/eventmessage-delete.md); | Нет |Удаление объекта eventMessage.|
 |[copy](../api/message-copy.md)|[message](message.md)|Копирование сообщения в папку.|
 |[createForward](../api/message-createforward.md)|[message](message.md)|Создание черновика пересылаемого сообщения. После этого вы сможете [обновить](../api/message-update.md) или [отправить](../api/message-send.md) черновик.|
 |[createReply](../api/message-createreply.md)|[message](message.md)|Создание черновика ответного сообщения. После этого вы сможете [обновить](../api/message-update.md) или [отправить](../api/message-send.md) черновик.|

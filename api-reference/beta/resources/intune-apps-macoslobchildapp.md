@@ -2,15 +2,15 @@
 title: тип ресурса macOSLobChildApp
 description: Содержит свойства Приложения MacOS LOB в пакете пакетов
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d9518d975247f0ed3399524ca7c6d98839cadea9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8a590ffdc3cb9e8d0a01724c9b6f2c37841817f5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804885"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020457"
 ---
 # <a name="macoslobchildapp-resource-type"></a>тип ресурса macOSLobChildApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "58804885"
 |buildNumber|String|Число сборки приложения MacOS Line of Business (LoB).|
 |versionNumber|String|Номер версии приложения MacOS Line of Business (LoB).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

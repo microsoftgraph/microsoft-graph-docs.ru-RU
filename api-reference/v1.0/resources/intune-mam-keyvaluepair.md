@@ -2,15 +2,15 @@
 title: Тип ресурса keyValuePair
 description: Пара "ключ-значение" для хранения пользовательских настроек
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 605e6cedcad0c94e9a929d17953e13bc8e5bc8999bc4f1e4ec19093045f291dd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bd569a4d41b1d85f81cea86886a80467b9b67ea8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230538"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089447"
 ---
 # <a name="keyvaluepair-resource-type"></a>Тип ресурса keyValuePair
 
@@ -26,7 +26,7 @@ ms.locfileid: "54230538"
 |name|String|Имя для этой пары "ключ-значение"|
 |value|String|Значение для этой пары "ключ-значение"|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -1,3 +1,12 @@
+---
+ms.localizationpriority: medium
+ms.openlocfilehash: 726484cb0f6cd3e91b77dc6f89e800f8546b6f42
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59289683"
+---
 <!-- markdownlint-disable MD002 MD041 -->
 
 В этом разделе мы будем строить первое приложение ASP.NET для обработки Подключение к данным Microsoft Graph экспортируемых данных.
@@ -15,13 +24,13 @@
 
     1. Введите **EmailMetrics** для имени проекта.
     1. Выберите **платформа .NET Framework 4.7.2 для** параметра framework.
-    1. Нажмите **Создать**.
+    1. Нажмите кнопку **Создать**.
 
     > [!IMPORTANT]
     > Убедитесь, что вы вводите точно такое же имя для Visual Studio Project, указанного в этом инструкции быстрого запуска. Имя проекта Visual Studio становится частью пространства имен в коде. Для кода в этих инструкциях важно, чтобы пространство имен совпадало с именем проекта Visual Studio, указанным в этих инструкциях. Если ввести другое имя проекта, код не будет компилироваться, пока вы не настроите все пространства имен в соответствии с именем, которое вы указали для проекта Visual Studio при его создании.
 
     1. В **диалоговом ASP.NET веб-приложения** выберите MVC.
-    1. Нажмите **Создать**.
+    1. Нажмите кнопку **Создать**.
 
     ![Снимок экрана интерфейса Visual Studio, показывающий параметры выбора веб-приложения Model-View-Controller (MVC) ASP.NET.](images/data-connect-vs-create-app-mvc.png)
 
@@ -42,7 +51,7 @@
     ![Снимок экрана интерфейса Visual Studio настройки служба хранилища Azure, на котором выбрана учетная запись подписки и хранилища.](images/data-connect-vs-configure-az-storage.png)
 
 1. **Предостанав служба хранилища Azure подключения** имя **AzureStorageConnectionString** и выберите **Далее**.
-1. Нажмите **Готово**.
+1. Нажмите кнопку **Готово**.
 
     ![Снимок экрана интерфейса Visual Studio, показывающий сводку Configure служба хранилища Azure.](images/data-connect-vs-configure-sa-summary.png)
 

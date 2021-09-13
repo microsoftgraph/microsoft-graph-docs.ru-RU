@@ -1,3 +1,12 @@
+---
+ms.localizationpriority: medium
+ms.openlocfilehash: c36ed01a3d913a487864bfa2b77c13c707d0299f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59289684"
+---
 <!-- markdownlint-disable MD002 MD041 -->
 
 Следующим шагом является использование фабрики данных Azure для создания конвейера для извлечения данных из Microsoft 365 в учетную запись служба хранилища Azure с помощью Подключение к данным Microsoft Graph.

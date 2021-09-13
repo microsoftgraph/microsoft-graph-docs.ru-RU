@@ -2,15 +2,15 @@
 title: Get iosManagedAppRegistration
 description: Чтение свойств и связей объекта iosManagedAppRegistration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f0a50a7a26504af7c5d6989d08703a75113513bd5628da76de2dfc17dad9bd79
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 80c2fe1460df9005dd6258d5305116186bed407f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243933"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063218"
 ---
 # <a name="get-iosmanagedappregistration"></a>Get iosManagedAppRegistration
 
@@ -27,7 +27,7 @@ ms.locfileid: "54243933"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

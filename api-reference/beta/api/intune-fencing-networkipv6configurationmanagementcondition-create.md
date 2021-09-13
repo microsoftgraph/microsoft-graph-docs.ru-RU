@@ -2,15 +2,15 @@
 title: Создание networkIPv6ConfigurationManagementCondition
 description: Создайте новый объект networkIPv6ConfigurationManagementCondition.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9bf1ca4bb8da722ac8bf371317b9544a8d70ce0c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cf5ef5f73128a762b97d2d503e6de0a94c91c225
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797642"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034493"
 ---
 # <a name="create-networkipv6configurationmanagementcondition"></a>Создание networkIPv6ConfigurationManagementCondition
 
@@ -29,7 +29,7 @@ ms.locfileid: "58797642"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,13 +57,13 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 |id|String|Уникальный идентификатор для состояния управления. Созданное в системе значение, назначенное при его создания. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |uniqueName|Строка|Уникальное имя для состояния управления. Используется в выражениях условий управления. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |displayName|String|Администратор определил имя условия управления. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|description|Строка|Администратор определил описание условия управления. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|description|String|Администратор определил описание условия управления. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |createdDateTime|DateTimeOffset|Время создания условия управления. Сгенерированная сторона службы. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения условия управления. Обновленная сторона службы. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |eTag|String|ETag состояния управления. Обновленная сторона службы. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |applicablePlatforms|[коллекция devicePlatformType](../resources/intune-fencing-deviceplatformtype.md)|Применимые платформы для этого условия управления. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md). Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
-|ipV6Prefix|Строка|Подсеть IPv6, к которая должна быть подключена. например, 2001:db8::/32|
-|ipV6Gateway|Строка|Адрес шлюза IPv6. например, 2001:db8::1|
+|ipV6Prefix|String|Подсеть IPv6, к которая должна быть подключена. например, 2001:db8::/32|
+|ipV6Gateway|String|Адрес шлюза IPv6. например, 2001:db8::1|
 |ipV6DNSServerList|Коллекция String|DNS-серверы IPv6, настроенные для адаптеров.|
 |dnsSuffixList|Коллекция String|Допустимые Суффиксы DNS для текущей сети. например, seattle.contoso.com|
 

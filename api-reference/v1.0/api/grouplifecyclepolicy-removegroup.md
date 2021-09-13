@@ -2,15 +2,15 @@
 title: 'groupLifecyclePolicy: removeGroup'
 description: Удаляет группу из политики жизненного цикла.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: bb77073840584c7a53cba0e1c6ff2dd6692a4a6b12a606e450fde1ac114a9a02
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d2f99cdd2608d2b72585de1161278b1ce4bd8cd3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245788"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073977"
 ---
 # <a name="grouplifecyclepolicy-removegroup"></a>groupLifecyclePolicy: removeGroup
 
@@ -26,7 +26,7 @@ ms.locfileid: "54245788"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Directory.ReadWrite.All |
+|Для приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

@@ -2,15 +2,15 @@
 title: Get deviceManagementReusablePolicySetting
 description: Чтение свойств и связей объекта deviceManagementReusablePolicySetting.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b3dee8693a6fc4ec4ed9f0ca17f518022f555b22
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 39bbe18417b25c8d2826167cc819c050fa9e47b9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791672"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018371"
 ---
 # <a name="get-devicemanagementreusablepolicysetting"></a>Get deviceManagementReusablePolicySetting
 
@@ -27,9 +27,9 @@ ms.locfileid: "58791672"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,13 +46,13 @@ GET /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySett
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика и `200 OK` [объект deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md) в теле ответа.
 
 ## <a name="example"></a>Пример

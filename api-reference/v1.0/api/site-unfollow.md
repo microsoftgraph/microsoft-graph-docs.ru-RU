@@ -2,15 +2,15 @@
 author: learafa
 title: Прекращение отслеживания сайта
 description: Unfollow a user's site
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: daacd9a7ce66b337ba97c6c7c0953825e13b7ea5
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: ccc8ba3e812e5bb8824ea0932c00ea8d85765cfc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786652"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118907"
 ---
 # <a name="unfollow-site"></a>Прекращение отслеживания сайта 
 
@@ -36,7 +36,7 @@ Unfollow a user's [site](../resources/site.md) or multiple sites.
 POST /users/{user-id}/followedSites/remove
 ```
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса поставляем массив объектов JSON с параметром id, указанным в таблице ниже. 
 

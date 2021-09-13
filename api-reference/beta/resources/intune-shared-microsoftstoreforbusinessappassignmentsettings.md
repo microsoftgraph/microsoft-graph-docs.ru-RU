@@ -2,15 +2,15 @@
 title: Тип ресурса microsoftStoreForBusinessAppAssignmentSettings
 description: Содержит свойства, используемые при назначении мобильного приложения Microsoft Store для бизнеса группе.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fada43d7b5eede0c06016d3b51f316ab23b56d3c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 57728dd3e5e3fef3dc271a6c4e7103f8cab70ddc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799122"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023334"
 ---
 # <a name="microsoftstoreforbusinessappassignmentsettings-resource-type"></a>Тип ресурса microsoftStoreForBusinessAppAssignmentSettings
 

@@ -2,15 +2,15 @@
 title: Получение объекта servicePrincipal
 description: Получение свойств и связей объекта serviceprincipal.
 author: sureshja
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 70b8802cb25cd7d731d48d5eededaaf188204155
-ms.sourcegitcommit: a2d81138de2a0404e611fbb535679199477ef3d5
+ms.openlocfilehash: f0946da403754db4cb9edf5ec2f42ed0e9428d1e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52813043"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110111"
 ---
 # <a name="get-serviceprincipal"></a>Получение объекта servicePrincipal
 
@@ -41,7 +41,7 @@ GET /servicePrincipals/{id}
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -2,15 +2,15 @@
 title: тип ресурса macOSLobApp
 description: Содержит свойства и унаследованные свойства для Приложения MacOS LOB.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6ba9bae6e18b154a38830dbe0f4d452ed43633a0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 13ca73a59c9c617d112bf5da409b971bf089da9e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804045"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020478"
 ---
 # <a name="macoslobapp-resource-type"></a>тип ресурса macOSLobApp
 
@@ -29,17 +29,17 @@ ms.locfileid: "58804045"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список macOSLobApps](../api/intune-apps-macoslobapp-list.md)|[коллекция macOSLobApp](../resources/intune-apps-macoslobapp.md)|Список свойств и связей объектов [macOSLobApp.](../resources/intune-apps-macoslobapp.md)|
-|[Получить macOSLobApp](../api/intune-apps-macoslobapp-get.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md).|Чтение свойств и связей объекта [macOSLobApp.](../resources/intune-apps-macoslobapp.md)|
-|[Создание macOSLobApp](../api/intune-apps-macoslobapp-create.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md).|Создание нового [объекта macOSLobApp.](../resources/intune-apps-macoslobapp.md)|
+|[Получить macOSLobApp](../api/intune-apps-macoslobapp-get.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md)|Чтение свойств и связей объекта [macOSLobApp.](../resources/intune-apps-macoslobapp.md)|
+|[Создание macOSLobApp](../api/intune-apps-macoslobapp-create.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md)|Создание нового [объекта macOSLobApp.](../resources/intune-apps-macoslobapp.md)|
 |[Удаление macOSLobApp](../api/intune-apps-macoslobapp-delete.md)|Нет|Удаляет [macOSLobApp](../resources/intune-apps-macoslobapp.md).|
-|[Обновление macOSLobApp](../api/intune-apps-macoslobapp-update.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md).|Обновление свойств объекта [macOSLobApp.](../resources/intune-apps-macoslobapp.md)|
+|[Обновление macOSLobApp](../api/intune-apps-macoslobapp-update.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md)|Обновление свойств объекта [macOSLobApp.](../resources/intune-apps-macoslobapp.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|description|Строка|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|id|String|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|description|String|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
@@ -69,9 +69,9 @@ ms.locfileid: "58804045"
 |md5HashChunkSize|Int32|Размер куска для hash MD5|
 |md5Hash|Коллекция String|Коды hash MD5|
 |ignoreVersionDetection|Boolean|Логическое значение, позволяющее разрешить или запретить поиск установленного приложения по его версии. Установите это для приложений macOS Line of Business (LoB), которые используют функцию самостоятельного обновления.|
-|installAsManaged|Логический|A boolean to control whether the app will be installed as managed (requires macOS 11.0 and other PKG restrictions).|
+|installAsManaged|Boolean|A boolean to control whether the app will be installed as managed (requires macOS 11.0 and other PKG restrictions).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |categories|Коллекция [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|

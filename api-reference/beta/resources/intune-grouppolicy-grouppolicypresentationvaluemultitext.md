@@ -2,15 +2,15 @@
 title: тип ресурса groupPolicyPresentationValueMultiText
 description: Объект представляет строковое значение многостройной презентации текстового окна в определении политики.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1ce7fcb8a0f219cda0b6aa2797855376a81b7095
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 31977668f31e1928750d4d75274f20b4741689ed
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800024"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033498"
 ---
 # <a name="grouppolicypresentationvaluemultitext-resource-type"></a>тип ресурса groupPolicyPresentationValueMultiText
 
@@ -39,7 +39,7 @@ ms.locfileid: "58800024"
 |:---|:---|:---|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Унаследованный от [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Унаследованный от [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
-|id|Строка|Ключ объекта. Унаследованный от [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
+|id|String|Ключ объекта. Унаследованный от [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |values|Коллекция String|Коллекция непустых строк для связанной презентации.|
 
 ## <a name="relationships"></a>Связи

@@ -2,15 +2,15 @@
 title: Тип ресурса deviceConfigurationDeviceStatus
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d5d322a7c7f0cea28703b3ec4218c9dd891ae9e91bdaa1d98b5a72d7cd9517bf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 826f398f5cae55c0b01d991c1297c01411dc976c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54175205"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148363"
 ---
 # <a name="deviceconfigurationdevicestatus-resource-type"></a>Тип ресурса deviceConfigurationDeviceStatus
 

@@ -2,15 +2,15 @@
 title: тип ресурса deviceHealthScriptAssignment
 description: Содержит свойства, используемые для назначения скрипта управления устройствами группе.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d9c52e56badf0161a7a20b441c743f42e8b83c33
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5ae4954314224db4bd65278e95ed8f0e7a8ec9b8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784466"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017389"
 ---
 # <a name="devicehealthscriptassignment-resource-type"></a>тип ресурса deviceHealthScriptAssignment
 
@@ -34,7 +34,7 @@ ms.locfileid: "58784466"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта назначения скрипта для скрипта устройства. Это свойство доступно только для чтения.|
+|id|String|Ключ объекта назначения скрипта для скрипта устройства. Это свойство доступно только для чтения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Группа Azure Active Directory, на которые мы нацелим сценарий|
 |runRemediationScript|Boolean|Определите, нужно ли запускать только сценарий обнаружения или запускать сценарий обнаружения и сценарий восстановления.|
 |runSchedule|[deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|Расписание запуска скрипта для целевой группы|

@@ -1,14 +1,14 @@
 ---
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: msgraph
 ms.topic: include
-ms.openlocfilehash: b6ad2566d019a6d9fb8ecb90f83b594de4ea6eb2ebc18e58cfd896732a6e1520
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fb19f1f83b02b95138f9ae9333e0ef6635c4f5e0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54196776"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035854"
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
@@ -20,4 +20,7 @@ ms.locfileid: "54196776"
 | Любой | 2000 запросов за 20 секунд | 1000 запросов за 20 секунд |
 
 Указанные выше ограничения действуют для следующих ресурсов:  
-deviceManagementDerivedCredentialSettings, deviceManagementResourceAccessProfileAssignment, deviceManagementResourceAccessProfileBase, windows10XCertificateProfile, windows10XSCEPCertificateProfile, windows10XTrustedRootCertificate, windows10XVpnConfiguration, windows10XWifiConfiguration.
+
+| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                            |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> [deviceManagementDerivedCredentialSettings](/graph/api/resources/devicemanagementderivedcredentialsettings) <li> [deviceManagementResourceAccessProfileAssignment](/graph/api/resources/devicemanagementresourceaccessprofileassignment) <li> [deviceManagementResourceAccessProfileBase](/graph/api/resources/devicemanagementresourceaccessprofilebase) <li> [windows10XCertificateProfile](/graph/api/resources/windows10xcertificateprofile) <li> [windows10XSCEPCertificateProfile](/graph/api/resources/windows10xscepcertificateprofile) <li> [windows10XTrustedRootCertificate](/graph/api/resources/windows10xtrustedrootcertificate) <li> [windows10XVpnConfiguration](/graph/api/resources/windows10xvpnconfiguration) <li> [windows10XWifiConfiguration](/graph/api/resources/windows10xwificonfiguration) </ul> |

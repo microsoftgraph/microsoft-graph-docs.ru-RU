@@ -1,16 +1,16 @@
 ---
 title: Перечисление сегментов
 description: Получение списка объектов **plannerbucket**, содержащихся в объекте plannerPlan.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 4330d1a7175287443777443e20f1bf2a15e45fae
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6c56ce536d1e2b56550e271fe64070596bf6ba44
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053946"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007817"
 ---
 # <a name="list-buckets"></a>Перечисление сегментов
 

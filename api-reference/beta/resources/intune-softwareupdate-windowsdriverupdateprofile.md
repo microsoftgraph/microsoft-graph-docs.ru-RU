@@ -2,15 +2,15 @@
 title: тип ресурса windowsDriverUpdateProfile
 description: Windows Профиль обновления драйвера
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2aaf86c9470836316b8cc1f9eb2cf519fac72f71
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8837992e47e44dc24a7d49518866d9427d6082e3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797773"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029894"
 ---
 # <a name="windowsdriverupdateprofile-resource-type"></a>тип ресурса windowsDriverUpdateProfile
 
@@ -43,9 +43,9 @@ Windows Профиль обновления драйвера
 |deploymentDeferralInDays|Int32|Параметры отсрочки развертывания в днях, применимые только при автоматическом утверждении ApprovalType.|
 |createdDateTime|DateTimeOffset|Время создания профиля.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения профиля.|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого объекта обновления драйвера.|
+|roleScopeTagIds|Коллекция строк|Список тегов области для этого объекта обновления драйвера.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|[коллекция windowsDriverUpdateProfileAssignment](../resources/intune-softwareupdate-windowsdriverupdateprofileassignment.md)|Список групповых назначений профиля.|

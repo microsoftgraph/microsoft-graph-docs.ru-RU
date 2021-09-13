@@ -2,15 +2,15 @@
 title: Удаление fido2AuthenticationMethod
 description: Удаляет объект fido2AuthenticationMethod.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a13120fcb629d484915d1b7d3f0f96e2d8774642
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 1d14d275cb669321f32b5a11566dae56e124de0e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51506875"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046052"
 ---
 # <a name="delete-fido2authenticationmethod"></a>Удаление fido2AuthenticationMethod
 Пространство имен: microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "51506875"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 ### <a name="permissions-acting-on-self"></a>Разрешения, действующие на себя
 

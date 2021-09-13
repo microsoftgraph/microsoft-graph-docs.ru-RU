@@ -2,15 +2,15 @@
 title: Список объектов conversationMember
 description: Получение списка участников чата или канала.
 author: akjo
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 859eadec943eb9eeb4ea70643ce60e61e007da0c
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 8e760ab10cfa95de9a4c31561021b4f1143ad57b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060601"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050693"
 ---
 # <a name="list-conversationmembers"></a>Список объектов conversationMember
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/chats/{id}/members
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

@@ -2,15 +2,15 @@
 title: Get userExperienceAnalyticsAppHealthAppPerformanceByAppVersion
 description: Ознакомьтесь с свойствами и отношениями объекта userExperienceAnalyticsAppHealthAppPerformanceByAppVersion.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 30aecf4783e02050bf4e443f76c7ac3adfd06719
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 01ce0f5830ad70a686b3bf5dc7c456a3e0343fd5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787689"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027829"
 ---
 # <a name="get-userexperienceanalyticsapphealthappperformancebyappversion"></a>Get userExperienceAnalyticsAppHealthAppPerformanceByAppVersion
 
@@ -27,9 +27,9 @@ ms.locfileid: "58787689"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,13 +46,13 @@ GET /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceByAp
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успеха этот метод возвращает код ответа и `200 OK` [объект userExperienceAnalyticsAppHealthAppPerformanceByAppVersion](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md) в тексте ответа.
 
 ## <a name="example"></a>Пример

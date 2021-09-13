@@ -2,15 +2,15 @@
 title: Get deviceComplianceActionItem
 description: Чтение свойств и связей объекта deviceComplianceActionItem.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 584f669be5a93a1cdc13536fa7912da8f06fda3a382397aea12a5c51bbf72a3d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6691bd4e6db64cb3a10e6f566449cdfedbfac58a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245746"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037728"
 ---
 # <a name="get-devicecomplianceactionitem"></a>Get deviceComplianceActionItem
 
@@ -27,7 +27,7 @@ ms.locfileid: "54245746"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/schedu
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

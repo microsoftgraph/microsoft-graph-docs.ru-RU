@@ -2,15 +2,15 @@
 title: тип ресурса teamworkConversationIdentity
 description: Представляет беседу в Microsoft Teams.
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: fe6315b6546d603c203fad878c291f61e1f8394fc56acba4cfdf788ee86a2856
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2a463f37152b6d2108ac6ca04d9971cb908d6ba4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249113"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055831"
 ---
 # <a name="teamworkconversationidentity-resource-type"></a>тип ресурса teamworkConversationIdentity
 
@@ -25,9 +25,9 @@ ms.locfileid: "54249113"
 |:---|:---|:---|
 |conversationIdentityType|teamworkConversationIdentityType|Тип беседы. Возможные значения: `team`, `channel`, `chat` и `unknownFutureValue`.|
 |displayName|String|Унаследованный от [удостоверения](../resources/identity.md). Отображение имени беседы. Необязательно.|
-|id|String|Унаследованный от [удостоверения](../resources/identity.md). ID беседы.|
+|id|Строка|Унаследованный от [удостоверения](../resources/identity.md). ID беседы.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

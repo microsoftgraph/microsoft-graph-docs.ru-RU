@@ -2,15 +2,15 @@
 title: тип ресурса retireScheduledManagedDevice
 description: ManagedDevices, запланированные к отставку
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1cdbb9009ae55f003e727f949b1d5abe0aad1c6d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2ae915cf471217c7b053428b376f485e3c04aa1f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821139"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017424"
 ---
 # <a name="retirescheduledmanageddevice-resource-type"></a>тип ресурса retireScheduledManagedDevice
 
@@ -26,15 +26,15 @@ ManagedDevices, запланированные к отставку
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|managedDeviceId|String|Управляемый deviceId|
+|managedDeviceId|Строка|Управляемый deviceId|
 |managedDeviceName|String|Имя управляемого устройства|
 |deviceType|[deviceType](../resources/intune-deviceconfig-devicetype.md)|Тип управляемого устройства. Возможные значения: `desktop` `windowsRT` , `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `cloudPC` `blackberry` `palm` . `unknown`|
 |complianceState|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Управляемое устройство ComplianceStatus. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |retireAfterDateTime|DateTimeOffset|Управляемые устройства уйдут после даты|
 |managementAgent|[managementAgentType](../resources/intune-deviceconfig-managementagenttype.md)|Управление управляемыми устройствамиAgentType. Возможные значения: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`, `windowsManagementCloudApi`.|
-|ownerType|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md).|Управляемое устройство ManagedDeviceOwnerType. Возможные значения: `unknown`, `company`, `personal`.|
-|deviceCompliancePolicyName|String|Имя политики соответствия требованиям устройств|
-|deviceCompliancePolicyId|String|Политика соответствия требованиям устройств|
+|ownerType|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md)|Управляемое устройство ManagedDeviceOwnerType. Возможные значения: `unknown`, `company`, `personal`.|
+|deviceCompliancePolicyName|Строка|Имя политики соответствия требованиям устройств|
+|deviceCompliancePolicyId|Строка|Политика соответствия требованиям устройств|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
 
 ## <a name="relationships"></a>Связи

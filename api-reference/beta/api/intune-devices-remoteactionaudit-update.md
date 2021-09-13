@@ -2,15 +2,15 @@
 title: Обновление remoteActionAudit
 description: Обновление свойств объекта remoteActionAudit.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9cb05be4d3c8efdabddc6b0f66566f8d33cffc2b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 645a42455bee74be486b43bd700c32fd48fd4bee
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805144"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027934"
 ---
 # <a name="update-remoteactionaudit"></a>Обновление remoteActionAudit
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/remoteActionAudits/{remoteActionAuditId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,16 +53,16 @@ PATCH /deviceManagement/remoteActionAudits/{remoteActionAuditId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Report Id.|
+|id|String|Report Id.|
 |deviceDisplayName|String|Имя устройства Intune.|
 |userName|String|\[deprecated \] Please use InitiatedByUserPrincipalName instead.|
-|initiatedByUserPrincipalName|Строка|Пользователь, который инициировал действие устройства, формат upN.|
+|initiatedByUserPrincipalName|String|Пользователь, который инициировал действие устройства, формат upN.|
 |action|[remoteAction](../resources/intune-devices-remoteaction.md)|Имя действия. Возможные значения: `unknown` `factoryReset` , , `removeCompanyData` `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser` `quickScan` `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown` `rotateBitLockerKeys` `rotateFileVaultKey` `getFileVaultKey` . `setDeviceName` `activateDeviceEsim`|
 |requestDateTime|DateTimeOffset|Время, когда действие было выдано, дано в UTC.|
-|deviceOwnerUserPrincipalName|Строка|Upn владельца устройства.|
-|deviceIMEI|Строка|IMEI устройства.|
+|deviceOwnerUserPrincipalName|String|Upn владельца устройства.|
+|deviceIMEI|String|IMEI устройства.|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Состояние действия. Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|managedDeviceId|Строка|Цель действия.|
+|managedDeviceId|String|Цель действия.|
 
 
 

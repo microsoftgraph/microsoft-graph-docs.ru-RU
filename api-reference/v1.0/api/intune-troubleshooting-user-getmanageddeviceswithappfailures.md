@@ -2,15 +2,15 @@
 title: функция getManagedDevicesWithAppFailures
 description: Извлечение списка устройств с сбойными приложениями
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 158ddfe4e4c3e309c35b67b121ddb4a61f7680f6
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 057c903ddd37ba8c202f7a6dd0d1944c93d3bf46
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263164"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130547"
 ---
 # <a name="getmanageddeviceswithappfailures-function"></a>функция getManagedDevicesWithAppFailures
 
@@ -27,7 +27,7 @@ ms.locfileid: "58263164"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

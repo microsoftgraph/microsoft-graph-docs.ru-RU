@@ -2,15 +2,15 @@
 title: Get groupPolicyUploadedCategory
 description: Чтение свойств и связей объекта groupPolicyUploadedCategory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c2126ffc070938545944539222b387f9cb32a1aa
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f1bde5af7cfb3e5a9b9a6895d7199fa228743b11
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807036"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018098"
 ---
 # <a name="get-grouppolicyuploadedcategory"></a>Get groupPolicyUploadedCategory
 
@@ -49,7 +49,7 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

@@ -2,15 +2,15 @@
 title: тип ресурса microsoftAuthenticatorAuthenticationMethod
 description: Представление приложения Microsoft Authenticator, зарегистрированного на пользователя. Microsoft Authenticator является методом проверки подлинности.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 61f263b45b8e353622f06e6912f0659e2a8e147fabe208d8ea9ea2b94f555884
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ea3614af67720c9c35a641a3f6729eabf98d5dd8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211943"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134502"
 ---
 # <a name="microsoftauthenticatorauthenticationmethod-resource-type"></a>тип ресурса microsoftAuthenticatorAuthenticationMethod
 
@@ -31,12 +31,12 @@ ms.locfileid: "54211943"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Дата и время регистрации этого приложения. Это свойство является null, если устройство не зарегистрировано для Телефон вход.|
-|displayName|String|Имя устройства, на котором зарегистрировано это приложение.|
-|id|String|Уникальный идентификатор для этого метода проверки подлинности. Унаследованный от [проверки подлинностиMethod](../resources/authenticationmethod.md)|
+|displayName|Строка|Имя устройства, на котором зарегистрировано это приложение.|
+|id|Строка|Уникальный идентификатор для этого метода проверки подлинности. Унаследованный от [проверки подлинностиMethod](../resources/authenticationmethod.md)|
 |deviceTag|String|Теги, содержащие метаданные приложений.|
-|phoneAppVersion|String|Числовая версия этого экземпляра Authenticator приложения.|
+|phoneAppVersion|Строка|Числовая версия этого экземпляра Authenticator приложения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |device;|[device](../resources/device.md)|Зарегистрированное устройство, на котором Microsoft Authenticator находится. Это свойство является null, если устройство не зарегистрировано для Телефон вход.|

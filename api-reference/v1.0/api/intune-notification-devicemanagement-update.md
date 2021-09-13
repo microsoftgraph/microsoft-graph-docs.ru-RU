@@ -2,15 +2,15 @@
 title: Обновление объекта deviceManagement
 description: Обновление свойств объекта deviceManagement.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 18caaa15da7458fd82d3347bda15ed787d7d9a2a34290a36b8a3c5832ac7f323
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 157115ef768e36dcd9e314e486809f7ad12466b6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202723"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147068"
 ---
 # <a name="update-devicemanagement"></a>Обновление объекта deviceManagement
 
@@ -27,7 +27,7 @@ ms.locfileid: "54202723"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,10 +41,10 @@ PATCH /deviceManagement
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [deviceManagement](../resources/intune-notification-devicemanagement.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [deviceManagement](../resources/intune-notification-devicemanagement.md).

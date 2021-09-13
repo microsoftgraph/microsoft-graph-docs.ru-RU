@@ -2,14 +2,14 @@
 title: Добавление пользовательских данных в ресурсы с помощью расширений
 description: Microsoft Graph предоставляет одну конечную точку API для доступа к наглядным и аналитическим данным о пользователях с помощью ряда ресурсов, например user и message. Теперь существует способ дополнить Microsoft Graph, используя собственные данные приложения. Вы можете добавить специальные свойства в ресурсы Microsoft Graph, и при этом не потребуется внешнее хранилище данных.
 author: dkershaw10
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 411e73a84e3b96cd0053e7f9cbff5f2842e8851c44d29d8826e17b1636c84ed0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e042ca2ea4a0b8f01eeb56621dfb77af970d00e0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146190"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127915"
 ---
 # <a name="add-custom-data-to-resources-using-extensions"></a>Добавление пользовательских данных в ресурсы с помощью расширений
 

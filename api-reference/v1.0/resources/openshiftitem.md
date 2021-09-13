@@ -1,16 +1,16 @@
 ---
 title: тип ресурса openShiftItem
 description: Представляет одно количество открытой смены.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: d6c0a25ff8384b1312153cf19fa88f118aca9c9838057cba759ca60c3032a5a0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c89f72081d02cd7a745e971f6533bd1663502295
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152350"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071989"
 ---
 # <a name="openshiftitem-resource-type"></a>тип ресурса openShiftItem
 
@@ -24,7 +24,7 @@ ms.locfileid: "54152350"
 |:-------------|:------------|:------------|
 |openSlotCount|Int32| Количество слотов для данной открытой смены.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

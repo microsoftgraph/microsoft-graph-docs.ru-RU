@@ -2,15 +2,15 @@
 title: тип enum automaticUpdateMode
 description: Возможные значения для режима автоматического обновления.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 32fd3240f72ee48b3550e23530ede460d0756b077329359d9d522e942f7aba84
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e3a076fcc88cb64ddeebddcb7f97c3e77c2b34ec
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249309"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136483"
 ---
 # <a name="automaticupdatemode-enum-type"></a>тип enum automaticUpdateMode
 

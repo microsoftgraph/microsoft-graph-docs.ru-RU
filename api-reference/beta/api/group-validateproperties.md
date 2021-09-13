@@ -1,16 +1,16 @@
 ---
 title: 'группа: проверкаProperties'
 description: Проверка того, Microsoft 365 или псевдоним почты группы соответствует политикам именования.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6f41ee4f9ae52133d3c7611b52b42997480dfc40
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 978dd1f718b0da49043b5f16872b8552e4139516
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681223"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59025211"
 ---
 # <a name="group-validateproperties"></a>группа: проверкаProperties
 
@@ -32,7 +32,7 @@ ms.locfileid: "52681223"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Group.Read.All, Group.ReadWrite.All |
+|Для приложений | Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

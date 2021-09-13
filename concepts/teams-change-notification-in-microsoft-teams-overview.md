@@ -2,15 +2,15 @@
 title: Уведомления об изменениях ресурсов Microsoft Teams с использованием Microsoft Graph
 description: Узнайте, как получать уведомления об изменениях (создание, обновление и удаление) ресурсов в Microsoft Teams с помощью API Microsoft Graph
 author: anandab-msft
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 7d9973d81a01edc3571502099d2498aabbb611a6636882a04716a324a1201eee
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 821c45642ecd50154f8d618496264657b98160b8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129577"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138941"
 ---
 # <a name="change-notifications-for-microsoft-teams-resources-using-microsoft-graph"></a>Уведомления об изменениях ресурсов Microsoft Teams с использованием Microsoft Graph
 

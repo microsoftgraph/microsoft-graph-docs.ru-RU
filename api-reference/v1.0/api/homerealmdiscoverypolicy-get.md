@@ -1,16 +1,16 @@
 ---
 title: Get homeRealmDiscoveryPolicy
 description: Извлечение свойств и связей объекта homeRealmDiscoveryPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hpsin
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: bdd96dbd20429e0175f2d075f5e0abf6a95b764c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 14e610e207888779d5747fb2d2fbec72160635e4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039596"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045905"
 ---
 # <a name="get-homerealmdiscoverypolicy"></a>Get homeRealmDiscoveryPolicy
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/v1.0/policies/homeRealmDiscoveryPolicies/{id}
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

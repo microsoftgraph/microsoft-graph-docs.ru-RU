@@ -2,15 +2,15 @@
 title: Get userExperienceAnalyticsAppHealthApplicationPerformance
 description: Чтение свойств и связей объекта userExperienceAnalyticsAppHealthApplicationPerformance.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: db60e6222a978d92c30f09e2ff55c2d7bdaa2e1c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f394191044bf13acbe92e0d8d2df50cd9d62b952
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58754837"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027892"
 ---
 # <a name="get-userexperienceanalyticsapphealthapplicationperformance"></a>Get userExperienceAnalyticsAppHealthApplicationPerformance
 
@@ -29,7 +29,7 @@ ms.locfileid: "58754837"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,13 +46,13 @@ GET /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance/{us
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успеха этот метод возвращает код ответа и `200 OK` [объект userExperienceAnalyticsAppHealthApplicationPerformance](../resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md) в тексте ответа.
 
 ## <a name="example"></a>Пример

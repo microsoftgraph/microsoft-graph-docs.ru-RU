@@ -2,15 +2,15 @@
 title: 'TableColumn: delete'
 description: Удаляет столбец из таблицы.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 8f9eb7e63d73ca89638bfcc89cbd37be6ce2efea
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 1ab38c1928aba81c0b63353d2cab245027aeb389
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773419"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044869"
 ---
 # <a name="tablecolumn-delete"></a>TableColumn: delete
 
@@ -38,7 +38,7 @@ DELETE /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|nam
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса

@@ -2,15 +2,15 @@
 title: Тип ресурса shiftItem
 description: shiftItem представляет версию ресурса shift.
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 97891ada6a9587f6ef679bdc13d58564ab407cc623c6c3b339fc7f4e289894c9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8d66206d127c5de8bd23b6d1f363359d9eff03ee
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189319"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032176"
 ---
 # <a name="shiftitem-resource-type"></a>Тип ресурса shiftItem
 
@@ -23,7 +23,7 @@ ms.locfileid: "54189319"
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
 | notes               | string                  | Заметки о переносе `shiftItem` для .      |
 | displayName               | string                  | Метка переноса `shiftItem` . |
-| startDateTime               | DateTimeOffset                  | Дата и время начала для ресурса `shiftItem`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Обязательный элемент. |
+| startDateTime               | DateTimeOffset                  | Дата и время начала для ресурса `shiftItem`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Обязательный. |
 | endDateTime               | DateTimeOffset                 | Дата и время окончания для ресурса `shiftItem`. Обязательный элемент. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. |
 | theme | scheduleEntityTheme   |  Поддерживаемые цвета: белый, синий, зеленый, фиолетовый, розовый, желтый, серый, темно-синий, темно-зеленый, темно-фиолетовый, темно-розовый, темно-желтый. |
 | activities    | Коллекция [shiftActivity](shiftactivity.md)   | Добавочная часть ресурса shift, содержащая сведения о том, где и когда находится сотрудник во время своей смены. Например, выполняет задание, на плановом перерыве или на обеде. Обязательный элемент. |

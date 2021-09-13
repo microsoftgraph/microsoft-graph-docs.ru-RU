@@ -2,15 +2,15 @@
 title: Создание iosEasEmailProfileConfiguration
 description: Создайте новый объект iosEasEmailProfileConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a4eb4e5be77f47911b4e42994ad2213cb64c2286
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9272c51fff4fc5bd43dc40508e735ee4cc5e9d13
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805943"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018623"
 ---
 # <a name="create-ioseasemailprofileconfiguration"></a>Создание iosEasEmailProfileConfiguration
 
@@ -27,8 +27,8 @@ ms.locfileid: "58805943"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -63,39 +63,39 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |usernameSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|Атрибут username, который выбирается из AAD и вводится в этот профиль перед установкой на устройстве. Наследуется [от easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md). Возможные значения: `userPrincipalName`, `primarySmtpAddress`.|
 |usernameAADSource|[usernameSource](../resources/intune-deviceconfig-usernamesource.md);|Имя поля AAD, которое будет использоваться для получения имени пользователя для профиля электронной почты. Наследуется [от easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md). Возможные значения: `userPrincipalName`, `primarySmtpAddress`, `samAccountName`.|
 |userDomainNameSource|[domainNameSource](../resources/intune-deviceconfig-domainnamesource.md);|Атрибут UserDomainname, который выбирается из AAD и вводится в этот профиль перед установкой на устройстве. Наследуется [от easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md). Возможные значения: `fullDomainName`, `netBiosDomainName`.|
 |customDomainName|String|Настраиваемая ценность доменного имени, используемая при создании профиля электронной почты перед установкой на устройстве. Унаследовано от [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)|
-|имя учетной записи|Строка|Имя учетной записи.|
+|имя учетной записи|String|Имя учетной записи.|
 |authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|Метод проверки подлинности для этого профиля электронной почты. Возможные значения: `usernameAndPassword`, `certificate`, `derivedCredential`.|
-|blockMovingMessagesToOtherEmailAccounts|Логический|Указывает, следует ли блокировать перемещение сообщений на другие учетные записи электронной почты.|
-|blockSendingEmailFromThirdPartyApps|Логический|Указывает, следует ли блокировать отправку электронной почты из сторонних приложений.|
-|blockSyncingRecentlyUsedEmailAddresses|Логический|Указывает, следует ли блокировать синхронизацию недавно используемых адресов электронной почты, например , при записи новой электронной почты.|
+|blockMovingMessagesToOtherEmailAccounts|Boolean|Указывает, следует ли блокировать перемещение сообщений на другие учетные записи электронной почты.|
+|blockSendingEmailFromThirdPartyApps|Boolean|Указывает, следует ли блокировать отправку электронной почты из сторонних приложений.|
+|blockSyncingRecentlyUsedEmailAddresses|Boolean|Указывает, следует ли блокировать синхронизацию недавно используемых адресов электронной почты, например , при записи новой электронной почты.|
 |durationOfEmailToSync|[emailSyncDuration](../resources/intune-deviceconfig-emailsyncduration.md)|Продолжительность времени электронной почты должна быть синхронизирована. . Возможные значения: `userDefined`, `oneDay`, `threeDays`, `oneWeek`, `twoWeeks`, `oneMonth`, `unlimited`.|
 |emailAddressSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|Атрибут электронной почты, который выбирается из AAD и вводится в этот профиль перед установкой на устройстве. Возможные значения: `userPrincipalName`, `primarySmtpAddress`.|
 |easServices|[easServices](../resources/intune-deviceconfig-easservices.md)|Exchange синхронизировать данные. Возможные значения: `none` `calendars` , , , `contacts` , `email` `notes` `reminders` .|
-|easServicesUserOverrideEnabled|Логический|Разрешить пользователям изменять параметры синхронизации.|
+|easServicesUserOverrideEnabled|Boolean|Разрешить пользователям изменять параметры синхронизации.|
 |hostName|String|Exchange( URL-адрес), к которое подключается приложение почты.|
-|requireSmime|Логический|Указывает, следует ли использовать сертификат S/MIME.|
-|smimeEnablePerMessageSwitch|Логический|Указывает, следует ли разрешить незашифрованные сообщения электронной почты.|
-|smimeEncryptByDefaultEnabled|Логический|Если установлено значение true S/MIME- шифрование включено по умолчанию.|
-|smimeSigningEnabled|Логический|Если для этой учетной записи включено правильное подписание S/MIME|
-|smimeSigningUserOverrideEnabled|Логический|Если установлено, что это так, пользователь может отключить вход или отключение подписи S/MIME.|
+|requireSmime|Boolean|Указывает, следует ли использовать сертификат S/MIME.|
+|smimeEnablePerMessageSwitch|Boolean|Указывает, следует ли разрешить незашифрованные сообщения электронной почты.|
+|smimeEncryptByDefaultEnabled|Boolean|Если установлено значение true S/MIME- шифрование включено по умолчанию.|
+|smimeSigningEnabled|Boolean|Если для этой учетной записи включено правильное подписание S/MIME|
+|smimeSigningUserOverrideEnabled|Boolean|Если установлено, что это так, пользователь может отключить вход или отключение подписи S/MIME.|
 |smimeEncryptByDefaultUserOverrideEnabled|Boolean|Если установлено значение true, пользователь может настроить шифрование по умолчанию.|
-|smimeSigningCertificateUserOverrideEnabled|Логический|Если установлено, что это так, пользователь может выбрать идентификатор подписи.|
+|smimeSigningCertificateUserOverrideEnabled|Boolean|Если установлено, что это так, пользователь может выбрать идентификатор подписи.|
 |smimeEncryptionCertificateUserOverrideEnabled|Boolean|Если установлено верно, пользователь может выбрать идентификатор шифрования S/MIME. |
 |requireSsl|Boolean|Указывает, следует ли использовать SSL.|
-|useOAuth|Логический|Указывает, следует ли подключению использовать OAuth для проверки подлинности.|
+|useOAuth|Boolean|Указывает, следует ли подключению использовать OAuth для проверки подлинности.|
 |signingCertificateType|[emailCertificateType](../resources/intune-deviceconfig-emailcertificatetype.md)|Подписание типа сертификата для этого профиля электронной почты. Возможные значения: `none`, `certificate`, `derivedCredential`.|
 |encryptionCertificateType|[emailCertificateType](../resources/intune-deviceconfig-emailcertificatetype.md)|Тип сертификата шифрования для этого профиля электронной почты. Возможные значения: `none`, `certificate`, `derivedCredential`.|
 |perAppVPNProfileId|String|ID профиля политики VPN Per-App для доступа к электронным письмам от родного клиента почты|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект iosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md) в тексте ответа.
 
 ## <a name="example"></a>Пример

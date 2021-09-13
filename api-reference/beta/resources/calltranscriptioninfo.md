@@ -2,15 +2,15 @@
 title: тип ресурса callTranscriptionInfo
 description: Представляет одно событие DTMF.
 author: rzhang
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 27571ad09d6fe29c511b0efa59939dc65074235f9c0c2d4137251687068c47f0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1597d86fa37e55ec8c5a205a24688c101c8838e0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54200798"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023831"
 ---
 # <a name="calltranscriptioninfo-resource-type"></a>тип ресурса callTranscriptionInfo
 
@@ -23,7 +23,7 @@ ms.locfileid: "54200798"
 | Свойство       | Тип    | Описание|
 |:---------------|:--------|:----------|
 | state | String | Возможные значения: `notStarted`, `active`, `inactive`. |
-| lastModifiedDateTime | DateTime | Время изменения состояния в UTC. |
+| lastModifiedDateTime | Даты и время | Время изменения состояния в UTC. |
 
 ## <a name="json-representation"></a>Представление JSON
 

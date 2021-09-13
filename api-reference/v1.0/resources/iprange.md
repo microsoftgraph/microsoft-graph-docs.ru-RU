@@ -1,22 +1,24 @@
 ---
 title: Тип ресурса ipRange
 description: Базовый класс диапазона IP для представления диапазонов адресов IPV4 и IPV6.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: c8781ea0a739662fdfbe1c9db46139edd7c8e23e67b973179b38862deec2694c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b0bb1aba5e0a8f26e12aa8d8f1e273dd58617f68
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246705"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089384"
 ---
 # <a name="iprange-resource-type"></a>Тип ресурса ipRange
 
 Пространство имен: microsoft.graph
 
-Базовый класс диапазона IP для представления диапазонов адресов IPV4 и IPV6.
+Абстрактный тип диапазона IP, из которого получены типы ресурсов [iPv4CidrRange](ipv4cidrrange.md) и [iPv6CidrRange](ipv6cidrrange.md) для настройки [объектов ipNamedLocation.](ipnamedlocation.md)
+
+Производный [тип iPv4CidrRange](ipv4cidrrange.md) используется для настройки диапазонов адресов IPv4, а производный [тип iPv6CidrRange](ipv6cidrrange.md) используется для настройки диапазонов адресов IPv6.
 
 ## <a name="properties"></a>Свойства
 
@@ -36,6 +38,7 @@ ms.locfileid: "54246705"
 
 ```json
 {
+    "@odata.type": "#microsoft.graph.ipRange"
 }
 ```
 

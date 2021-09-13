@@ -2,15 +2,15 @@
 title: Обновление администрирования
 description: Обновление свойств объекта administrativeUnit.
 author: DougKirschner
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0921bc6366d34278d23701d11ddb21bf0793d219
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: f9ac818cc3f65de72938f6afb276cd08cb33f930
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208213"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056902"
 ---
 # <a name="update-administrativeunit"></a>Обновление администрирования
 
@@ -25,7 +25,7 @@ ms.locfileid: "53208213"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | AdministrativeUnit.ReadWrite.All |
+|Для приложений | AdministrativeUnit.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

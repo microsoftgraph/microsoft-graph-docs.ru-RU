@@ -2,15 +2,15 @@
 title: тип ресурса iosAvailableUpdateVersion
 description: Сведения о версии обновления в iOS
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 886659126fb83c7112e3f5d7d20349ca8c11e855
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5ee887ea5e8e53b65ac0f83da331f6f8cb774f71
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805270"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029943"
 ---
 # <a name="iosavailableupdateversion-resource-type"></a>тип ресурса iosAvailableUpdateVersion
 
@@ -28,9 +28,9 @@ ms.locfileid: "58805270"
 |productVersion|String|Версия обновления.|
 |postingDateTime|DateTimeOffset|Дата публикации обновления.|
 |expirationDateTime|DateTimeOffset|Срок действия обновления.|
-|supportedDevices|Коллекция String|Список поддерживаемых устройств для обновления.|
+|supportedDevices|Коллекция строк|Список поддерживаемых устройств для обновления.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

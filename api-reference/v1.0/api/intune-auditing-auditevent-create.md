@@ -2,15 +2,15 @@
 title: Создание объекта auditEvent
 description: Создание объекта auditEvent.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a72a48bff7879c024bce4ba140bcecc8bcf23112f9b57bf80f0820074525449c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9464aa2e919768f9f85433645949f225720893cd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130935"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056482"
 ---
 # <a name="create-auditevent"></a>Создание объекта auditEvent
 
@@ -27,7 +27,7 @@ ms.locfileid: "54130935"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +41,7 @@ POST /deviceManagement/auditEvents
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -52,7 +52,7 @@ POST /deviceManagement/auditEvents
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|displayName|String|Отображаемое имя события.|
+|displayName|Строка|Отображаемое имя события.|
 |componentName|String|Имя компонента.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Пользователь AAD и приложение, связанные с событием аудита.|
 |activity|String|Понятное имя действия.|

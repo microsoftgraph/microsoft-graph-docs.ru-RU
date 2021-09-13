@@ -2,15 +2,15 @@
 title: тип ресурса dataPolicyOperation
 description: Представляет собой операцию по отправке политики данных. Он содержит необходимые сведения для отслеживания состояния операции. Например, администратор компании может отправить запрос на операцию политики данных для экспорта данных компании сотрудника, а затем отслеживать этот запрос.
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: c96650636e385eeddeecd9ab8c22ff2ee986108deadf973b2cfed9973134c6a2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 212c21a2019581c20ce18474183f6e075e1af367
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178530"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099051"
 ---
 # <a name="datapolicyoperation-resource-type"></a>тип ресурса dataPolicyOperation
 
@@ -32,14 +32,14 @@ ms.locfileid: "54178530"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |completedDateTime|DateTimeOffset|Представляет, когда запрос на эту операцию политики данных был выполнен во время UTC с помощью формата ISO 8601. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Null до завершения операции.|
-|id|String| Уникальный ключ для этой операции. |
+|id|Строка| Уникальный ключ для этой операции. |
 |status|dataPolicyOperationStatus| Возможные значения: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`.|
-|storageLocation|String|Расположение URL-адреса, куда экспортируются данные для запросов на экспорт.|
+|storageLocation|Строка|Расположение URL-адреса, куда экспортируются данные для запросов на экспорт.|
 |userId|String|ID для пользователя, на котором выполняется операция.|
 |submittedDateTime|DateTimeOffset|Представляет при отправке запроса на эту операцию данных во время UTC с помощью формата ISO 8601. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |progress|String|Указывает ход операции.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 

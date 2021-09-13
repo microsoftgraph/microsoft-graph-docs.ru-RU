@@ -88,7 +88,7 @@ items:
         displayname: 'Migration, Azure AD Graph'
         items:
           - name: Обзор
-            href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph%252fapi%252f1.0
+            href: /graph/migrate-azure-ad-graph-overview
           - name: Контрольный список для переноса приложений
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
           - name: 1. Проверка различий
@@ -159,44 +159,88 @@ items:
         items:
           - name: Обзор
             href: /graph/toolkit/get-started/overview?context=graph/api/1.0
+          - name: /graph/toolkit для React
+            href: /graph/toolkit/get-started/mgt-react?context=graph/api/1.0
+          - name: /graph/toolkit для SPFx
+            href: /graph/toolkit/get-started/mgt-spfx?context=graph/api/1.0
+      - name: Создание первого приложения
+        items:
+          - name: Регистрация приложения Azure AD
+            href: /graph/toolkit/get-started/add-aad-app-registration?context=graph/api/1.0
           - name: Создание веб-приложения (JavaScript)
             href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/1.0
+          - name: Создание веб-приложения (React)
+            href: /graph/toolkit/get-started/use-/graph/toolkit-with-react?context=graph/api/1.0
+          - name: Создание веб-приложения (Angular)
+            href: /graph/toolkit/get-started/use-/graph/toolkit-with-angular?context=graph/api/1.0
           - name: Создание веб-части SharePoint
             href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/1.0
-          - name: Создание вкладки Microsoft Teams
+          - name: Создание вкладки Teams
             href: /graph/toolkit/get-started/build-a-microsoft-teams-tab?context=graph/api/1.0
-          - name: Использование набора средств с помощью React
-            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/1.0
-          - name: Использование набора средств с помощью Angular
-            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/1.0
+          - name: Создание вкладки Teams с помощью SSO
+            href: /graph/toolkit/get-started/build-a-microsoft-teams-sso-tab?context=graph/api/1.0
+          - name: Создание приложения Electron
+            href: /graph/toolkit/get-started/build-an-electron-app?context=graph/api/1.0
+      - name: Поставщики
+        items:
+          - name: Использование поставщиков
+            href: /graph/toolkit/providers/providers?context=graph/api/1.0
+          - name: Поставщик MSAL
+            href: /graph/toolkit/providers/msal?context=graph/api/1.0
+          - name: Поставщик MSAL2
+            href: /graph/toolkit/providers/msal2?context=graph/api/1.0
+          - name: Поставщик SharePoint
+            href: /graph/toolkit/providers/sharepoint?context=graph/api/1.0
+          - name: Teams поставщика
+            href: /graph/toolkit/providers/teams?context=graph/api/1.0
+          - name: Teams Поставщик MSAL2
+            href: /graph/toolkit/providers/teams-msal2?context=graph/api/1.0
+          - name: Поставщик Electron
+            href: /graph/toolkit/providers/electron?context=graph/api/1.0
+          - name: Поставщик прокси
+            href: /graph/toolkit/providers/proxy?context=graph/api/1.0
+          - name: Настраиваемый поставщик
+            href: /graph/toolkit/providers/custom?context=graph/api/1.0
       - name: Компоненты
         items:
           - name: Вход
             href: /graph/toolkit/components/login?context=graph/api/1.0
+          - name: Получение
+            href: /graph/toolkit/components/get?context=graph/api/1.0
           - name: Пользователь
             href: /graph/toolkit/components/person?context=graph/api/1.0
           - name: Люди
             href: /graph/toolkit/components/people?context=graph/api/1.0
-          - name: Повестка
+          - name: Карточка контакта
+            href: /graph/toolkit/components/person-card?context=graph/api/1.0
+          - name: Выбор людей
+            href: /graph/toolkit/components/people-picker?context=graph/api/1.0
+          - name: Средство выбора каналов Teams
+            href: /graph/toolkit/components/teams-channel-picker?context=graph/api/1.0
+          - name: Повестка дня
             href: /graph/toolkit/components/agenda?context=graph/api/1.0
-          - name: Задачи
+          - name: Задачи Планировщика
             href: /graph/toolkit/components/tasks?context=graph/api/1.0
-      - name: Поставщики
+          - name: Задачи To-Do
+            href: /graph/toolkit/components/todo?context=graph/api/1.0
+          - name: Файл
+            href: /graph/toolkit/components/file?context=graph/api/1.0
+          - name: Список файлов
+            href: /graph/toolkit/components/file-list?context=graph/api/1.0
+      - name: Настройка компонентов
         items:
-          - name: Использование поставщиков
-            href: /graph/toolkit/providers?context=graph/api/1.0
-          - name: Поставщик MSAL
-            href: /graph/toolkit/providers/msal?context=graph/api/1.0
-          - name: Поставщик SharePoint
-            href: /graph/toolkit/providers/sharepoint?context=graph/api/1.0
-          - name: Поставщик Microsoft Teams
-            href: /graph/toolkit/providers/teams?context=graph/api/1.0
-          - name: Настраиваемый поставщик
-            href: /graph/toolkit/providers/custom?context=graph/api/1.0
-      - name: Компоненты стиля
-        href: /graph/toolkit/style?context=graph/api/1.0
-      - name: Компоненты создания шаблонов
-        href: /graph/toolkit/templates?context=graph/api/1.0
+          - name: Компоненты стиля
+            href: /graph/toolkit/customize-components/style?context=graph/api/1.0
+          - name: Компоненты создания шаблонов
+            href: /graph/toolkit/customize-components/templates?context=graph/api/1.0
+          - name: Обработка событий
+            href: /graph/toolkit/customize-components/events?context=graph/api/1.0
+          - name: Кэширование вызовов Microsoft Graph в компонентах
+            href: /graph/toolkit/customize-components/cache?context=graph/api/1.0
+          - name: Компоненты локализации
+            href: /graph/toolkit/customize-components/localization?context=graph/api/1.0
+          - name: Поддержка направления текста справа налево
+            href: /graph/toolkit/customize-components/right-to-left?context=graph/api/1.0
   - name: Ресурсы
     items:
       - name: Рекомендации
@@ -4592,6 +4636,33 @@ items:
                         href: api/subscribedsku-list.md
                       - name: Вывод объекта SubscribedSku
                         href: api/subscribedsku-get.md
+              - name: Управление ролью
+                href: resources/rolemanagement.md
+                items:
+                  - name: Определение ролей
+                    href: resources/unifiedroledefinition.md
+                    items:
+                      - name: Перечисление
+                        href: api/rbacapplication-list-roledefinitions.md
+                      - name: Создание
+                        href: api/rbacapplication-post-roledefinitions.md
+                      - name: Получение
+                        href: api/unifiedroledefinition-get.md
+                      - name: Обновление
+                        href: api/unifiedroledefinition-update.md
+                      - name: Delete
+                        href: api/unifiedroledefinition-delete.md
+                  - name: Назначение ролей
+                    href: resources/unifiedroleassignment.md
+                    items:
+                      - name: Перечисление
+                        href: api/rbacapplication-list-roleassignments.md
+                      - name: Создание
+                        href: api/rbacapplication-post-roleassignments.md
+                      - name: Получение
+                        href: api/unifiedroleassignment-get.md
+                      - name: Удаление
+                        href: api/unifiedroleassignment-delete.md
           - name: Удостоверение и вход
             items:
               - name: Политика потоков проверки подлинности
@@ -5801,7 +5872,7 @@ items:
                     href: api/externalconnectors-externalgroup-delete.md
               - name: Внешний член группы
                 items:
-                  - name: Удостоверение
+                  - name: Identity
                     href: resources/externalconnectors-identity.md
                   - name: Создание удостоверений для участника
                     href: api/externalconnectors-externalgroup-post-members.md
@@ -6044,7 +6115,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Создание плана
@@ -6410,7 +6481,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Получение открытого расширения
                 href: api/opentypeextension-get.md
-          - name: Сдвиги
+          - name: Смены
             items:
               - name: Shift
                 href: resources/shift.md

@@ -2,15 +2,15 @@
 title: Добавление участника роли каталога
 description: С помощью этого API можно создать участника роли каталога.
 author: abhijeetsinha
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: cfb6a722b50e16f3a0e51dbad5705409a1d96009
-ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.openlocfilehash: 534a7f73ad4c9a961c44f26c8465005b9ca43ee7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53118695"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046234"
 ---
 # <a name="add-directory-role-member"></a>Добавление участника роли каталога
 
@@ -27,7 +27,7 @@ ms.locfileid: "53118695"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | RoleManagement.ReadWrite.Directory |
+|Для приложений | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ POST /directoryRoles/roleTemplateId={roleTemplateId}/members/$ref
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `204 No Content`.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="examples"></a>Примеры
 

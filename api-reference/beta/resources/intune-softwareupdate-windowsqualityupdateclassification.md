@@ -2,15 +2,15 @@
 title: тип enum windowsQualityUpdateClassification
 description: Windows классификации обновлений качества
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 28ba933528f4d96c05ee3abb80fb93e56f31e762
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8d42a0cf7e6f5e5a9777ad0d08a2990afd8b91af
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787204"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029817"
 ---
 # <a name="windowsqualityupdateclassification-enum-type"></a>тип enum windowsQualityUpdateClassification
 

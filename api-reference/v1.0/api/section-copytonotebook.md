@@ -1,16 +1,16 @@
 ---
 title: 'раздел: copyToNotebook'
 description: Копирует раздел в определенный блокнот.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 9b47c5fcde327c879683293af8255511af827cbd
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 481e816070e43ea0694f0a98d6e586a80d56a062
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787548"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079222"
 ---
 # <a name="section-copytonotebook"></a>раздел: copyToNotebook
 
@@ -46,7 +46,7 @@ POST /groups/{id}/onenote/sections/{id}/copyToNotebook
 |:---------------|:--------|:----------|
 |groupId|String|ID группы для копирования. Используйте только при копировании в Microsoft 365 группу.|
 |id|String|Обязательный. ID записной книжки назначения. |
-|переименоватьAs|String|Имя копии. По умолчанию имя существующего элемента. |
+|переименоватьAs|Строка|Имя копии. По умолчанию имя существующего элемента. |
 
 ## <a name="response"></a>Отклик
 

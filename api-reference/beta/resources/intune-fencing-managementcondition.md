@@ -2,15 +2,15 @@
 title: тип ресурса managementCondition
 description: Условия управления — это события, которые можно запускать динамически, такие как гео-заборы, заборы времени и сетевые заборы.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 79f0c0ef1c2c6525114ce4d7f58615c6c168539b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8db902ca0f5b0fb00a72e9fd8eee8af02d2c8cab
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786966"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030258"
 ---
 # <a name="managementcondition-resource-type"></a>тип ресурса managementCondition
 
@@ -32,16 +32,16 @@ ms.locfileid: "58786966"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для состояния управления. Созданное в системе значение, назначенное при его создания.|
+|id|String|Уникальный идентификатор для состояния управления. Созданное в системе значение, назначенное при его создания.|
 |uniqueName|Строка|Уникальное имя для состояния управления. Используется в выражениях условий управления.|
-|displayName|Строка|Администратор определил имя условия управления.|
-|description|Строка|Администратор определил описание условия управления.|
+|displayName|String|Администратор определил имя условия управления.|
+|description|String|Администратор определил описание условия управления.|
 |createdDateTime|DateTimeOffset|Время создания условия управления. Сгенерированная сторона службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения условия управления. Обновленная сторона службы.|
 |eTag|String|ETag состояния управления. Обновленная сторона службы.|
 |applicablePlatforms|[коллекция devicePlatformType](../resources/intune-fencing-deviceplatformtype.md)|Применимые платформы для этого условия управления.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |managementConditionStatements|[коллекция managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Утверждения условий управления, связанные с состоянием управления.|

@@ -1,21 +1,21 @@
 ---
 title: Создание заметок
-description: Создание нового объекта Notes.
+description: Создайте новый объект notes.
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 6dfe558a746d463b91de426a4e3f416dc8619d71
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 65d0fa5f95d5563936e864d0959029aa92063e4c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974734"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020548"
 ---
-# <a name="create-personannotation"></a>Создание Персонаннотатион
+# <a name="create-personannotation"></a>Создание personAnnotation
 Пространство имен: microsoft.graph
 
-Создание нового объекта [персонаннотатион](../resources/personannotation.md) в [профиле](../resources/profile.md)пользователя.
+Создание нового [объекта personAnnotation](../resources/personannotation.md) в профиле [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -23,8 +23,8 @@ ms.locfileid: "48974734"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All |
 | Для приложений                            | User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,21 +45,21 @@ POST /users/{id | userPrincipalName}/profile/notes
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [персонаннотатион](../resources/personannotation.md) в формате JSON.
+В теле запроса поставляем JSON-представление [объекта personAnnotation.](../resources/personannotation.md)
 
-В следующей таблице приведены свойства, которые можно задать в новом объекте [персонаннотатион](../resources/personannotation.md) в [профиле](../resources/profile.md)пользователя.
+В следующей таблице показаны свойства, которые можно установить в новом объекте [personAnnotation](../resources/personannotation.md) в профиле [пользователя.](../resources/profile.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|описаны|[itemBody](../resources/itembody.md)|Содержит подробные сведения о самом заметке.|
-|displayName|String|Содержит понятное имя для заметки.|
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|allowedAudiences|Строка|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|подробные|[itemBody](../resources/itembody.md)|Содержит сведения о самой заметке.|
+|displayName|String|Содержит удобное имя для заметки.|
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Где значения возникли, если синхронизированы с другой службы. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [персонаннотатион](../resources/personannotation.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект personAnnotation](../resources/personannotation.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
