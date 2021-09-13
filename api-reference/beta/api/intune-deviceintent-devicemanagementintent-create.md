@@ -2,15 +2,15 @@
 title: Создание deviceManagementIntent
 description: Создание нового объекта deviceManagementIntent.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cbc2af6ee43284fc037088c6ef0b0e8219cbfe53
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 290fb01080dfe3a1df6ac5bbc9f7164fbed715bc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817252"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124989"
 ---
 # <a name="create-devicemanagementintent"></a>Создание deviceManagementIntent
 
@@ -59,7 +59,7 @@ POST /deviceManagement/intents
 |isAssigned|Boolean|Означает, назначены ли намерения пользователям|
 |lastModifiedDateTime|DateTimeOffset|Когда намерение было изменено в последний раз|
 |templateId|String|ID шаблона, который был создан из (если таково)|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity.|
 
 
 

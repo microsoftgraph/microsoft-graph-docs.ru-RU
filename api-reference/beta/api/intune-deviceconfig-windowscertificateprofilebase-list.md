@@ -2,15 +2,15 @@
 title: Список windowsCertificateProfileBases
 description: Список свойств и связей объектов WindowsCertificateProfileBase.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 574089aeb0f8f2e91f84c855d859c1e68d31a43e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3034299e9abce934f347cd36569948c3e6985fbb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816032"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133312"
 ---
 # <a name="list-windowscertificateprofilebases"></a>Список windowsCertificateProfileBases
 

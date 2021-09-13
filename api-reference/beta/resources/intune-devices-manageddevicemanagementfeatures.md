@@ -2,15 +2,15 @@
 title: managedDeviceManagementFeatures enum type
 description: Функции управления устройствами.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2bad15794fae5f5db3c34e7d8193771fe6d05886
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 47d71894674a44c304f4309235f3f12aa6080b55
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817385"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137813"
 ---
 # <a name="manageddevicemanagementfeatures-enum-type"></a>managedDeviceManagementFeatures enum type
 
