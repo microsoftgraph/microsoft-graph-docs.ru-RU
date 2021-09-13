@@ -2,15 +2,15 @@
 title: тип ресурса excludedApps
 description: Содержит свойства для исключенных приложений Office365.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1ac91ac42018c5fc687a0b89d7496c1fdc15c97d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2025df58d8ff6387fb217ec2d19e7f6d34df2499
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783598"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064569"
 ---
 # <a name="excludedapps-resource-type"></a>тип ресурса excludedApps
 
@@ -25,23 +25,23 @@ ms.locfileid: "58783598"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|доступ|Логический|Значение, если ms Office доступ должен быть исключен или нет.|
+|доступ|Boolean|Значение, если ms Office доступ должен быть исключен или нет.|
 |bing|Логический|Значение, если Поиск (Майкрософт) по умолчанию, должно быть исключено или нет.|
-|Excel|Логический|Значение, если ms Office Excel следует исключить или нет.|
-|groove|Логический|Значение, если ms Office OneDrive для бизнеса - Groove, должно быть исключено или нет.|
-|infoPath|Логический|Значение, если ms Office InfoPath, должно быть исключено или нет.|
+|Excel|Boolean|Значение, если ms Office Excel следует исключить или нет.|
+|groove|Boolean|Значение, если ms Office OneDrive для бизнеса - Groove, должно быть исключено или нет.|
+|infoPath|Boolean|Значение, если ms Office InfoPath, должно быть исключено или нет.|
 |lync|Boolean|Значение для если ms Office Skype для бизнеса - Lync следует исключить или нет.|
 |oneDrive|Boolean|Значение для того, следует Office OneDrive ms или нет.|
 |oneNote|Логический|Значение для того, следует Office OneNote ms или нет.|
 |outlook|Boolean|Значение для того, следует Office Outlook ms или нет.|
-|powerPoint|Логический|Значение для того, следует Office PowerPoint ms или нет.|
+|powerPoint|Boolean|Значение для того, следует Office PowerPoint ms или нет.|
 |publisher|Boolean|Значение, если ms Office Publisher следует исключить или нет.|
 |sharePointDesigner|Логический|Значение, если ms Office SharePointDesigner, должно быть исключено или нет.|
 |teams|Boolean|Значение, если ms Office Teams следует исключить или нет.|
 |visio|Логический|Значение, если ms Office Visio, должно быть исключено или нет.|
-|слово|Boolean|Значение, если ms Office Word, должно быть исключено или нет.|
+|слово|Логический|Значение, если ms Office Word, должно быть исключено или нет.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

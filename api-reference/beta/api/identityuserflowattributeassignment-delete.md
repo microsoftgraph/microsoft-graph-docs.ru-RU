@@ -2,15 +2,15 @@
 title: Удаление userAttributeAssignment
 description: Удаление объекта identityUserFlowAttributeAssignment.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9c4e54cdc248e88833d50d89ef6051925d3391db
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 5c51918ca552f4ccce49b87d043f503ace5b7a0f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435184"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59066291"
 ---
 # <a name="delete-userattributeassignment"></a>Удаление userAttributeAssignment
 
@@ -26,7 +26,7 @@ ms.locfileid: "50435184"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|IdentityUserFlow.ReadWrite.All|
+|Для приложений|IdentityUserFlow.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,7 +46,7 @@ DELETE /identity/b2xUserFlows/{id}/userAttributeAssignments/{id}
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

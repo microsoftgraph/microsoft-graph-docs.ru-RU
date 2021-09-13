@@ -2,15 +2,15 @@
 title: тип ресурса mobileAppIntentAndState
 description: Намерение MobileApp и установка состояния для данного устройства.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d8e5b3c8eb1e221adffcd79f65884c688067d1ba
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 40d555aacab29757622bb6e82d5358eb0c89ed42
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255942"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023264"
 ---
 # <a name="mobileappintentandstate-resource-type"></a>тип ресурса mobileAppIntentAndState
 

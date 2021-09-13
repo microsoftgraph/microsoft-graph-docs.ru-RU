@@ -2,15 +2,15 @@
 title: тип ресурса windowsFeatureUpdateProfile
 description: Windows Профиль обновления функций
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9fc087d72f6b2e5198ea42141be9914510175e1e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8de71467651f732732b3eaaa3dfd88a79eaaf121
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793528"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029873"
 ---
 # <a name="windowsfeatureupdateprofile-resource-type"></a>тип ресурса windowsFeatureUpdateProfile
 
@@ -35,14 +35,14 @@ Windows Профиль обновления функций
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор объекта.|
-|displayName|Строка|Имя отображения профиля.|
-|description|Строка|Описание профиля, указанного пользователем.|
-|featureUpdateVersion|Строка|Версия обновления функций, которая будет развернута на устройствах, на которые ориентирован этот профиль. Версия может быть любой поддерживаемой версией, например 1709, 1803 или 1809 и так далее.|
+|id|String|Идентификатор объекта.|
+|displayName|String|Имя отображения профиля.|
+|description|String|Описание профиля, указанного пользователем.|
+|featureUpdateVersion|String|Версия обновления функций, которая будет развернута на устройствах, на которые ориентирован этот профиль. Версия может быть любой поддерживаемой версией, например 1709, 1803 или 1809 и так далее.|
 |createdDateTime|DateTimeOffset|Время создания профиля.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения профиля.|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого объекта обновления функций.|
-|deployableContentDisplayName|Строка|Удобное отображаемое имя развернутого контента профиля обновления качества|
+|deployableContentDisplayName|String|Удобное отображаемое имя развернутого контента профиля обновления качества|
 |endOfSupportDate|DateTimeOffset|Последняя поддерживаемая дата обновления функций|
 
 ## <a name="relationships"></a>Связи

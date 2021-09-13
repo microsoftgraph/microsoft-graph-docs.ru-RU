@@ -2,15 +2,15 @@
 title: Создание userExperienceAnalyticsDeviceStartupProcessPerformance
 description: Создание нового объекта userExperienceAnalyticsDeviceStartupProcessPerformance.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 379d4d91bce25ffad81c7b6bdfbd1371e034e159
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c80d02049fa745c248b8d0ec3610029cd49f8e0c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797018"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030839"
 ---
 # <a name="create-userexperienceanalyticsdevicestartupprocessperformance"></a>Создание userExperienceAnalyticsDeviceStartupProcessPerformance
 
@@ -29,7 +29,7 @@ ms.locfileid: "58797018"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupProcessPerformance
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,8 +53,8 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupProcessPerformance
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор производительности процесса запуска устройства для аналитики пользовательского интерфейса.|
-|processName|Строка|Имя процесса запуска устройства для аналитики пользовательского интерфейса.|
+|id|String|Уникальный идентификатор производительности процесса запуска устройства для аналитики пользовательского интерфейса.|
+|processName|String|Имя процесса запуска устройства для аналитики пользовательского интерфейса.|
 |productName|String|Имя продукта процесса запуска устройства для аналитики пользовательского интерфейса.|
 |publisher|String|Издатель процесса запуска устройства для аналитики пользовательских интерфейсов.|
 |deviceCount|Int64|Процесс запуска устройства аналитики пользовательских интерфейсов суммирован.|

@@ -2,15 +2,15 @@
 title: Создание deviceConfigurationGroupAssignment
 description: Создайте новый объект deviceConfigurationGroupAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c6378556f6f5ada92bcd3caa969b433cc57073ae
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 988ada1ca070c5261763fa487f8212aaad9121ae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804415"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018665"
 ---
 # <a name="create-deviceconfigurationgroupassignment"></a>Создание deviceConfigurationGroupAssignment
 
@@ -52,7 +52,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -62,8 +62,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|targetGroupId|Строка|Id группы AAD, на который ориентирована конфигурация устройства.|
+|id|String|Ключ объекта.|
+|targetGroupId|String|Id группы AAD, на который ориентирована конфигурация устройства.|
 |excludeGroup|Логический|Указывает, следует ли исключить эту группу. По умолчанию, которые следует включить в группу|
 
 

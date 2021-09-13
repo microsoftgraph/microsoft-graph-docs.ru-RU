@@ -2,15 +2,15 @@
 title: Тип ресурса deviceCompliancePolicySettingState
 description: Состояние параметров политики соответствия требованиям для определенного устройства.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7000ea2f35a49c9c0f025c456fee61e47bf3d030
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0d4f45f6d50f6f264301c8b8fa4caf637d8907b5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819201"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023600"
 ---
 # <a name="devicecompliancepolicysettingstate-resource-type"></a>Тип ресурса deviceCompliancePolicySettingState
 

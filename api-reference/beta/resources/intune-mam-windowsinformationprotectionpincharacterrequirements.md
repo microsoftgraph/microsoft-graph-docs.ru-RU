@@ -2,15 +2,15 @@
 title: тип enum windowsInformationProtectionPinCharacterRequirements
 description: Требования к символам пин-кода
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a067e90fc913659c6f4080b71d9899136e209bba
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6f1bad2c10600244578c561f3dcb61846137512c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817315"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59023432"
 ---
 # <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a>тип enum windowsInformationProtectionPinCharacterRequirements
 

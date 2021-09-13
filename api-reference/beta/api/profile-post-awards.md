@@ -1,22 +1,22 @@
 ---
-title: Создание премий
-description: Создание нового объекта премий.
-localization_priority: Normal
+title: Создание наград
+description: Создайте новый объект награды.
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: c7745c6b31678bfbf793a0897edcfb6606953d42
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 829d3a5fb1ddb4ef14d7e6896881131782ffc36d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964551"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027458"
 ---
-# <a name="create-personaward"></a>Создание Персонавард
+# <a name="create-personaward"></a>Создание personAward
 
 Пространство имен: microsoft.graph
 
-Создание нового объекта [персонавард](../resources/personaward.md) в [профиле](../resources/profile.md)пользователя.
+Создание нового [объекта personAward](../resources/personaward.md) в профиле [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,8 +24,8 @@ ms.locfileid: "48964551"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All |
 | Для приложений                            | User.ReadWrite.All                            |
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,25 +45,25 @@ POST /users/{id | userPrincipalName}/profile/awards
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [персонавард](../resources/personaward.md) в формате JSON.
+В теле запроса поставляем JSON-представление [объекта personAward.](../resources/personaward.md)
 
-В следующей таблице приведены свойства, которые можно задать при создании нового объекта [персонавард](../resources/personaward.md) в [профиле](../resources/profile.md)пользователя.
+В следующей таблице показаны свойства, которые можно задать при создании нового [объекта personAward](../resources/personaward.md) в профиле [пользователя.](../resources/profile.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|description|String|Дескприптион вознаграждения или почетной грамоты. |
-|displayName|String|Название вознаграждения или соблюдается. |
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|иссуеддате|Дата|Дата предоставления вознаграждения или почетной грамоты. |
-|иссуингаусорити|String|Орган, которому предоставлена премия или соблюдается.  |
-|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|thumbnailUrl|String|URL-адрес, ссылающийся на эскиз вознаграждения или соблюдается.  |
-|webUrl|String|URL-адрес, ссылающийся на награду или соблюдать. |
+|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|description|String|Descpription of the award or honor. |
+|displayName|String|Имя награды или чести. |
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|issuedDate|Дата|Дата, в которую была предоставлена награда или честь. |
+|issuingAuthority|String|Орган, который предоставил награду или честь.  |
+|source|[personDataSource](../resources/persondatasource.md)|Где значения возникли, если синхронизированы с другой службы. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|thumbnailUrl|String|URL-адрес, ссылающийся на эскиз награды или чести.  |
+|webUrl|String|URL-адрес, ссылающийся на награду или честь. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [персонавард](../resources/personaward.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект personAward](../resources/personaward.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

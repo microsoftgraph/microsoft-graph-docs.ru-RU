@@ -1,3 +1,12 @@
+---
+ms.localizationpriority: medium
+ms.openlocfilehash: 04ba810183228e3834069d9bfa620fe3c71fdb12
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59289670"
+---
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
 Создайте вертикали поиска и типы результатов для настройки результатов поиска в Microsoft SharePoint, Microsoft Office и Поиск (Майкрософт) в Bing, чтобы пользователям было проще находить сведения, которые они могут видеть.

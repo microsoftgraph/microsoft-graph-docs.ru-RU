@@ -2,15 +2,15 @@
 title: Обновление устройстваHealthScript
 description: Обновление свойств объекта deviceHealthScript.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 957ee54711a741884f2c2bad074696bd4d12f686
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0045342651b13ce7dc90eb9aee9f6aed92c1c6ec
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791356"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59028004"
 ---
 # <a name="update-devicehealthscript"></a>Обновление устройстваHealthScript
 
@@ -27,9 +27,9 @@ ms.locfileid: "58791356"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,23 +57,23 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 |publisher|String|Имя издателя скриптов для здоровья устройств|
 |version|String|Версия сценария состояния устройства|
 |displayName|String|Имя сценария состояния устройства|
-|description|Строка|Описание сценария состояния устройства|
+|description|String|Описание сценария состояния устройства|
 |detectionScriptContent|В двоичном формате|Все содержимое сценария powershell обнаружения|
 |remediationScriptContent|В двоичном формате|Все содержимое сценария powershell исправлений|
 |createdDateTime|DateTimeOffset|Время создания скрипта здоровья устройства. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Время изменения скрипта здоровья устройства. Это свойство доступно только для чтения.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|enforceSignatureCheck|Логический|Указать, нужно ли проверять подпись скрипта|
+|enforceSignatureCheck|Boolean|Указать, нужно ли проверять подпись скрипта|
 |runAs32Bit|Boolean|Указать, должен ли сценарий PowerShell работать как 32-битный|
 |roleScopeTagIds|Коллекция String|Список ID-тегов области для скрипта здоровья устройств|
-|isGlobalScript|Логический|Определяет, является ли это microsoft Proprietary Script. Несвободные скрипты являются только для чтения|
-|highestAvailableVersion|Строка|Самая доступная версия для сценария Microsoft Proprietary|
+|isGlobalScript|Boolean|Определяет, является ли это microsoft Proprietary Script. Несвободные скрипты являются только для чтения|
+|highestAvailableVersion|String|Самая доступная версия для сценария Microsoft Proprietary|
 |detectionScriptParameters|[коллекция deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|Список объектов ComplexType DetectionScriptParameters.|
 |remediationScriptParameters|[коллекция deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|Список объектов ComplexType RemediationScriptParameters.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успеха этот метод возвращает код отклика и обновленный `200 OK` [объект deviceHealthScript](../resources/intune-devices-devicehealthscript.md) в тексте ответа.
 
 ## <a name="example"></a>Пример

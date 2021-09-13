@@ -2,15 +2,15 @@
 title: Удаление объекта managedDeviceMobileAppConfigurationUserStatus
 description: Удаляет объект managedDeviceMobileAppConfigurationUserStatus.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 41e04c4280c2274eb8b21cf7264034dd400e40ab
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2514cdd8c1c2e21d8fca729687f99e330d99cb31
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790607"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021360"
 ---
 # <a name="delete-manageddevicemobileappconfigurationuserstatus"></a>Удаление объекта managedDeviceMobileAppConfigurationUserStatus
 
@@ -29,7 +29,7 @@ ms.locfileid: "58790607"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ DELETE /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvis
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

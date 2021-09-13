@@ -2,15 +2,15 @@
 title: тип ресурса groupPolicyUploadedCategory
 description: Объект категории сохраняет категорию определения групповой политики
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bc1a97c16cf3d5ca132d2c78233c6627a1fae2a2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c28e048c5d6daeda4b3da72d47a6b6f3916f0097
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791812"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59030251"
 ---
 # <a name="grouppolicyuploadedcategory-resource-type"></a>тип ресурса groupPolicyUploadedCategory
 
@@ -42,7 +42,7 @@ ms.locfileid: "58791812"
 |id|String|Ключ объекта. Унаследованный от [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Унаследованный от [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |родитель|[groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|Родительская категория, наследуемая [из groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
