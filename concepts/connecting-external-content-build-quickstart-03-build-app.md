@@ -1,3 +1,12 @@
+---
+ms.localizationpriority: medium
+ms.openlocfilehash: 5fb7ccc1c9e44db77f2ba199a556d229292cf7a4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59289669"
+---
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
 На этом этапе будет создаваться консольное приложение .NET Core. После этого создадим новое подключение, зарегистрируйте схему и синхронизируйте элементы.
@@ -768,7 +777,7 @@ private static async Task RegisterSchemaAsync()
 1. В **Graph** Microsoft откройте файл MicrosoftGraphHelper.cs и добавьте следующий код после метода **Конструктора.**
 
 ```c
-#region PushData   
+#region PushData
 
         public async Task AddOrUpdateItem(string connectionId, ExternalItem item)
         {

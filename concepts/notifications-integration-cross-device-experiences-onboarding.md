@@ -1,15 +1,15 @@
 ---
 title: 'Внедрение использования разных устройств для уведомлений Microsoft Graph '
 description: Зарегистрируйте свое приложение в Центре разработки для Windows, чтобы разрешить клиентам вашего приложения получать на разных устройствах уведомления, отправленные с помощью Microsoft Graph.
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: notifications
 author: merzink
-ms.openlocfilehash: 1a3b55583ff2d945207b3f49f15ff055b033ec2c1420c950fe2238d7964cd768
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 15cb37515a7658078b909b801f8ecc3cceafc9cb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169160"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59066942"
 ---
 # <a name="onboarding-to-cross-device-experiences-for-microsoft-graph-notifications"></a>Внедрение использования разных устройств для уведомлений Microsoft Graph
 

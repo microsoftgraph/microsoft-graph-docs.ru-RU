@@ -1,16 +1,16 @@
 ---
 title: тип ресурса authenticationMethod
 description: Представляет метод проверки подлинности, зарегистрированный пользователем.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 082ae6530ad429df632ba851483a2d3edf16c49778ac22effaaaf01f897be6a0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 92c504bf5cbbec90c11bb51c6d8e19a67e4d7cfb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160080"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127047"
 ---
 # <a name="authenticationmethod-resource-type"></a>тип ресурса authenticationMethod
 
@@ -33,7 +33,7 @@ ms.locfileid: "54160080"
 |:-------------|:------------|:------------|
 |id|String| Идентификатор этого экземпляра метода проверки подлинности, зарегистрированного для этого пользователя. Только для чтения. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

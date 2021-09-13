@@ -1,22 +1,22 @@
 ---
 title: тип ресурса iPv6CidrRange
 description: Представляет диапазон IPv6 с помощью нотации CIDR.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 785df5cc15d1d052c987083fac9763982c64142309b5b361785be918803483fe
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d36d19d3d0d10da58a3223c146be542c9f57878c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182428"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062483"
 ---
 # <a name="ipv6cidrrange-resource-type"></a>тип ресурса iPv6CidrRange
 
 Пространство имен: microsoft.graph
 
-Представляет диапазон IPv6 с помощью нотации CIDR.
+Представляет диапазон IPv6 с помощью нотации бесклассовой маршрутизации между доменами (CIDR).
 
 Наследуется от ресурса [ipRange](../resources/iprange.md)
 
@@ -24,9 +24,9 @@ ms.locfileid: "54182428"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|cidrAddress|String|Адрес IPv6 в нотации CIDR|
+|cidrAddress|String|Адрес IPv6 в нотации CIDR. Значение null не допускается.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -41,6 +41,7 @@ ms.locfileid: "54182428"
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.iPv6CidrRange", 
   "cidrAddress": "String"
 }
 ```

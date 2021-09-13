@@ -1,16 +1,16 @@
 ---
 title: тип ресурса averageComparativeScore
 description: Содержит различные оценки, основанные на различных областях.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 2041a366fcf37ff8a850fb8d6fd41e9c3fd6002a17916d41718588674a30a3e6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eb78b045105725d8151d229525396fd205cd427f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147023"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089853"
 ---
 #  <a name="averagecomparativescore-resource-type"></a>тип ресурса averageComparativeScore
 
@@ -22,7 +22,7 @@ ms.locfileid: "54147023"
 
 |Свойство |Тип |Описание |
 |:--|:--|:--|
-|основы|String|Тип области. Допустимые значения: `AllTenants`, `TotalSeats`, `IndustryTypes`.|
+|основы|Строка|Тип области. Допустимые значения: `AllTenants`, `TotalSeats`, `IndustryTypes`.|
 |averageScore|Двойное с плавающей точкой|Средний балл в пределах указанной основы.|
 
 ## <a name="json-representation"></a>Представление JSON

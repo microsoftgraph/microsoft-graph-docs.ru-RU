@@ -1,16 +1,16 @@
 ---
 title: Обновление параметров почтового ящика пользователя
 description: Обновление одного или нескольких параметров почтового ящика пользователя. Это относится к параметрам автоматических ответов (автоматического уведомления пользователей после получения электронных сообщений от них), языковых стандартов (языка и страны или региона), часового пояса и рабочего времени.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f703560c561360379df793cc36582b3f141e48d8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7c7ce3bd23414159ed82967267d1b37018e6a003
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050208"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067655"
 ---
 # <a name="update-user-mailbox-settings"></a>Обновление параметров почтового ящика пользователя
 
@@ -231,7 +231,7 @@ Content-Type: application/json
 ---
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "update_mailboxsettings_2",

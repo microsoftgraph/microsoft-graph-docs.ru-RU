@@ -2,15 +2,15 @@
 title: тип ресурса fido2KeyRestrictions
 description: Представляет основные ограничения, которые применяются в рамках политики методов проверки подлинности ключей безопасности FIDO2.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 29ec1327da2104ba14fcfb73cd4374453417f8c2c2f5cb1b10012131918f9baa
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 37b9e2c7a66b3ce9a43c08560f5e5f4a8e0acc2e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149942"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036531"
 ---
 # <a name="fido2keyrestrictions-resource-type"></a>тип ресурса fido2KeyRestrictions
 
@@ -23,7 +23,7 @@ ms.locfileid: "54149942"
 |:---|:---|:---|
 |aaGuids|Коллекция String|Коллекция GUID Authenticator проверки. AADGUID определяет ключевые типы и производителей.|
 |enforcementType|fido2RestrictionEnforcementType|Тип правоприменения. Возможные значения: `allow`, `block`.|
-|isEnforced|Логическое|Определяет, включено ли правоприменительных ключевых элементов.|
+|isEnforced|Логический|Определяет, включено ли правоприменительных ключевых элементов.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

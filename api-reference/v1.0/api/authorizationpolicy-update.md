@@ -1,16 +1,16 @@
 ---
 title: Обновление авторизации
 description: Обновление свойств объекта authorizationPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 76ce049fc30ae48a03e18dae92cad63f6fb80f14
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 072e6f82a26fd234547207a86b17f335f48854b0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788131"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114801"
 ---
 # <a name="update-authorizationpolicy"></a>Обновление авторизацииPolicy
 
@@ -51,11 +51,11 @@ PATCH /policies/authorizationPolicy
 |:-------------|:------------|:------------|
 |allowedToSignUpEmailBasedSubscriptions|Boolean| Указывает, могут ли пользователи подписываться на подписки на основе электронной почты. |
 |allowedToUseSSPR|Boolean| Указывает, можно ли использовать Self-Serve сброса пароля пользователями клиента. |
-|allowEmailVerifiedUsersToJoinOrganization|Boolean| Указывает, может ли пользователь присоединиться к клиенту по проверке электронной почты. |
+|allowEmailVerifiedUsersToJoinOrganization|Логический| Указывает, может ли пользователь присоединиться к клиенту по проверке электронной почты. |
 |allowInvitesFrom|allowInvitesFrom|Указывает, кто может приглашать внешних пользователей в организацию. Возможные значения: `none`, `adminsAndGuestInviters`, `adminsGuestInvitersAndAllMembers`, `everyone`.  `everyone` — это параметр по умолчанию для всех облачных сред, за исключением правительства США. Дополнительные значения см. в этой [таблице.](../resources/authorizationpolicy.md#allowinvitesfrom-values) |
 |blockMsolPowerShell|Boolean| Чтобы отключить использование MSOL PowerShell, установите это свойство `true` . Это также отключит доступ пользователей к конечной точке устаревшей службы, используемой MSOL PowerShell. Это не влияет на azure AD Подключение Microsoft Graph. |
 |defaultUserRolePermissions|[defaultUserRolePermissions](../resources/defaultuserrolepermissions.md)| Указывает определенные настраиваемые разрешения для роли пользователя по умолчанию. |
-|description|String| Описание этой политики.|
+|description|Строка| Описание этой политики.|
 |displayName|String| Отображение имени для этой политики. |
 |guestUserRoleId|Guid| Представляет шаблон roleId для роли, которая должна быть предоставлена гостевому пользователю. В настоящее время поддерживаются следующие роли: User `a0b1b346-4d3e-4e8b-98f8-753987be4970` (), Guest User `10dae51f-b6af-4016-8d66-8c2a99b929b3` () и Restricted Guest User `2af84b1e-32c8-42b7-82bc-daa82404023b` (). |
 
@@ -107,7 +107,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response"
@@ -158,7 +158,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response"
@@ -211,7 +211,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response"
@@ -262,7 +262,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response"
@@ -315,7 +315,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response"

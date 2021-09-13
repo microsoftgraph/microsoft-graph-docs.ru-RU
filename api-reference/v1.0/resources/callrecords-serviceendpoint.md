@@ -1,16 +1,16 @@
 ---
 title: тип ресурса serviceEndpoint
 description: Тип serviceEndpoint
-localization_priority: Normal
+ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: dc51a13e8c244c8c4564dab9cf18dc5b28a450947c0ced8889aea8d6511d39a9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c692da0024e1c518d4d55f42438a57637bbcd452
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216947"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113807"
 ---
 # <a name="serviceendpoint-resource-type"></a>тип ресурса serviceEndpoint
 
@@ -24,7 +24,7 @@ ms.locfileid: "54216947"
 |:-------------|:------------|:------------|
 |userAgent|[microsoft.graph.callRecords.userAgent](callrecords-useragent.md)|Пользователь-агент, о чем сообщает эта конечная точка.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

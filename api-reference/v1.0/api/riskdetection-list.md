@@ -2,15 +2,15 @@
 title: Список riskDetections
 description: Получите список объектов riskDetection и их свойств.
 author: cloudhandler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 996305683c7af96a61c8ca10cba36bef51935e38d15f37b9c5d604c44528e442
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a1473c492b5c2bad1fd2d9b42cb6788b9ab958f8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126790"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067733"
 ---
 # <a name="list-riskdetections"></a>Список riskDetections
 Пространство имен: microsoft.graph
@@ -27,7 +27,7 @@ ms.locfileid: "54126790"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskEvent.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | IdentityRiskEvent.Read.All |
+|Для приложений | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

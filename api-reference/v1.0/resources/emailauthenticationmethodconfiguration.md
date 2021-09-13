@@ -2,15 +2,15 @@
 title: тип ресурса emailAuthenticationMethodConfiguration
 description: Представляет политику методов проверки подлинности OTP электронной почты
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: cd05c9fdbfaa15a24419635e529dcbc82d72a4234fc16c70c0d8a617d17ae729
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 869f76311ee13503c61ad469b98012e62f2a5c3a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54212132"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123617"
 ---
 # <a name="emailauthenticationmethodconfiguration-resource-type"></a>тип ресурса emailAuthenticationMethodConfiguration
 
@@ -30,11 +30,11 @@ ms.locfileid: "54212132"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор политики метода проверки подлинности. Унаследованный от [проверки подлинностиMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
+|id|Строка|Идентификатор политики метода проверки подлинности. Унаследованный от [проверки подлинностиMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
 |state|authenticationMethodState|Указывает, включен этот метод проверки подлинности или нет. Возможные значения: `enabled`, `disabled`.|
 |allowExternalIdToUseEmailOtp|externalEmailOtpState|Определяет, является ли OTP электронной почты для внешних пользователей для проверки подлинности. Возможные значения: `default`, `enabled`, `disabled`, `unknownFutureValue`. Клиенты в состоянии, которое не использует общедоступный предварительный просмотр, автоматически будут иметь включенную OTP-почту начиная с октября `default` 2021 г.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 |Связь|Тип|Описание|
 |:---|:---|:---|

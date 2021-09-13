@@ -2,15 +2,15 @@
 title: тип ресурса терминов
 description: Определяет сущность терминов в магазине терминов.
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: resourcePageType
-ms.openlocfilehash: 5a8c429a20ed533c6de8fb11bb13aa877e2c41be
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 570a4a365b86a48859608798ba3eb5be9958cd1e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514980"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084036"
 ---
 # <a name="term-resource-type"></a>тип ресурса терминов
 
@@ -29,19 +29,19 @@ ms.locfileid: "58514980"
 |[Создание термина](../api/termstore-term-post.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md)|Создание нового объекта терминов в магазине [терминов.]|
 |[Получить термин](../api/termstore-term-get.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md)|Ознакомьтесь с свойствами и отношениями объекта терминов в магазине [терминов.]|
 |[Термин Update](../api/termstore-term-update.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md)|Обновление свойств объекта терминов в магазине [терминов.]|
-|[Удаление термина](../api/termstore-term-delete.md)|Нет.|Удаление объекта терминов в магазине [терминов.]|
+|[Удаление термина](../api/termstore-term-delete.md)|Нет|Удаление объекта терминов в магазине [терминов.]|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Дата и время создания терминов. Только для чтения.|
 |описания|[коллекция microsoft.graph.termStore.localizedDescription](../resources/termstore-localizeddescription.md)|Описание термина, который зависит от languageTag.|
-|id|Строка|Уникальный идентификатор термина. Только для чтения.|
+|id|String|Уникальный идентификатор термина. Только для чтения.|
 |метки|[коллекция microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md)|Метки метаданных для термина.|
 |lastModifiedDateTime|DateTimeOffset|Последняя дата и время изменения срока. Только для чтения.|
 |properties|[коллекция microsoft.graph.keyValue](../resources/keyvalue.md)|Коллекция свойств в термине.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |children|[коллекция microsoft.graph.termStore.term](../resources/termstore-term.md)|Дети текущего срока.|
@@ -82,7 +82,7 @@ ms.locfileid: "58514980"
 }
 ```
 
-[магазин]: ../resources/termstore-store.md
+[store]: ../resources/termstore-store.md
 [set]: ../resources/termstore-set.md
 [term]: ../resources/termstore-term.md
 [group]: ../resources/termstore-group.md

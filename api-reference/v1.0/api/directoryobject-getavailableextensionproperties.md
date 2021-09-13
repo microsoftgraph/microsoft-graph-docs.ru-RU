@@ -2,15 +2,15 @@
 title: 'directoryObject: getAvailableExtensionProperties'
 description: Получение полного или отфильтрованного списка свойств расширения каталога, которые зарегистрированы в каталоге.
 author: sureshja
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0464228669013360ad71eb24d214c4810bdb4c43
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: df52eb8c578ed5a8dd6741cb2263ff1a307e44b5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434414"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033023"
 ---
 # <a name="directoryobject-getavailableextensionproperties"></a>directoryObject: getAvailableExtensionProperties
 Пространство имен: microsoft.graph

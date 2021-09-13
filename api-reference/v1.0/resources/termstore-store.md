@@ -2,15 +2,15 @@
 title: тип ресурса хранения
 description: Представляет хранилище терминов таксономии.
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: resourcePageType
-ms.openlocfilehash: 840e22fc3031787cbc550f0ee0e32d5e6243bed9
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: c94c0edb6589bd467676ac42294ead8416e829df
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514983"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084043"
 ---
 # <a name="store-resource-type"></a>тип ресурса хранения
 
@@ -32,9 +32,9 @@ ms.locfileid: "58514983"
 |:---|:---|:---|
 |defaultLanguageTag | Строка | Язык по умолчанию магазина терминов.|
 |id|Строка | Уникальный идентификатор магазина терминов. Только для чтения.|
-|LanguageTags | Коллекция объектов string | Список языков для магазина терминов.|
+|LanguageTags | Коллекция String | Список языков для магазина терминов.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |groups |[коллекция microsoft.graph.termStore.group](../resources/termstore-group.md) | Коллекция всех групп, доступных в магазине терминов.|

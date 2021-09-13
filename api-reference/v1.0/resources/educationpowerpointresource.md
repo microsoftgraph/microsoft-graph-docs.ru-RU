@@ -1,16 +1,16 @@
 ---
 title: тип ресурсов educationPowerPointResource
 description: Подкласс educationResource.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 7b06c124de0c4b040fe3a56f52f1b67c9c89d7e736381bb3c8ea4eb92e7cc452
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0ae36004fdb4673cf5025790442a418cb0dad8c6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163812"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036622"
 ---
 # <a name="educationpowerpointresource-resource-type"></a>тип ресурсов educationPowerPointResource
 

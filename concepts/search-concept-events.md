@@ -2,14 +2,14 @@
 title: Используйте API Поиск (Майкрософт) в Microsoft Graph для поиска событий календаря
 description: Вы можете искать в собственном календаре пользователя.
 author: knightsu
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 277c46e6298aa532d300b23fcba707c678e38e035007d2ef63fa249951afa633
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: de2e5ed0ccb015ae6566acf04664ed1885c61924
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54171975"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094009"
 ---
 # <a name="use-the-microsoft-search-api-to-search-calendar-events"></a>Используйте API Поиск (Майкрософт) для поиска событий календаря
 

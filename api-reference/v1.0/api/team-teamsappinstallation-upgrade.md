@@ -2,15 +2,15 @@
 title: 'teamsAppInstallation в команде: обновление'
 description: Обновление установки приложения в команде
 author: akjo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4c3df922e9fc15238bb5531fc38a935f613b1c98
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 6e3be0833e58f046efcd6460b64aa3a5a702d937
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060023"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109908"
 ---
 # <a name="teamsappinstallation-in-team-upgrade"></a>teamsAppInstallation в команде: обновление
 
@@ -26,7 +26,7 @@ ms.locfileid: "53060023"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadWriteForTeam, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | TeamsAppInstallation.ReadWriteForTeam.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Для приложений | TeamsAppInstallation.ReadWriteForTeam.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

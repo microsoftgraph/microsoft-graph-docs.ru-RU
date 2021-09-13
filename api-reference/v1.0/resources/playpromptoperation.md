@@ -2,15 +2,15 @@
 title: тип ресурса playPromptOperation
 description: Операция playPrompt для получения результата действия playPrompt.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ab75f0346bf0739a08e2608d1348ccf52030982fb0a75e0d0670f20debc362fe
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2925224545b1615c87a9deac161c6d8b9429c545
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251852"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019232"
 ---
 # <a name="playpromptoperation-resource-type"></a>тип ресурса playPromptOperation
 
@@ -22,7 +22,7 @@ ms.locfileid: "54251852"
 
 | Свойство            | Тип                        | Описание|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
-| clientContext       | String                      | Уникальная строка Client Context. Максимальное ограничение — 256 шаров.                              |
+| clientContext       | Строка                      | Уникальная строка Client Context. Максимальное ограничение — 256 шаров.                              |
 | id                  | String                      | Только для чтения.                                                                         |
 | resultInfo          | [resultInfo](resultinfo.md) | Сведения о результате. Только для чтения.                                |
 | status              | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`.               |

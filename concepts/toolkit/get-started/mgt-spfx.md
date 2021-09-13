@@ -1,14 +1,14 @@
 ---
 title: Библиотека SharePoint Framework для Microsoft Graph Toolkit
 description: Используйте библиотеку SharePoint Framework microsoft Graph набор средств для использования Microsoft Graph набор средств в SharePoint Framework решениях.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: waldekmastykarz
-ms.openlocfilehash: 6d2f354dd8913fe7cf5807bae05dde803ad74aae78243ae9bc64b5d2afd70e96
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 37f2570606b62de12f81e779fdcd4c33cb586f2c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249036"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032092"
 ---
 # <a name="sharepoint-framework-library-for-microsoft-graph-toolkit"></a>Библиотека SharePoint Framework для Microsoft Graph Toolkit
 
@@ -104,7 +104,7 @@ export default class MgtReact extends React.Component<IMgtReactProps, {}> {
 > 
 > Не импортируйте из других пакетов Microsoft Graph набор средств (), чтобы избежать упаковки собственной копии инструментария и столкновения с `@microsoft/mgt-*` общей библиотекой.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные материалы
 
 * [Создание веб-части SharePoint с помощью Microsoft Graph Toolkit](./build-a-sharepoint-web-part.md)
 * [Сведения о поставщиках проверки подлинности](../providers/providers.md)

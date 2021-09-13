@@ -1,16 +1,16 @@
 ---
 title: тип ресурса userFeedback
 description: Тип userFeedback.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 4f38484219f33432aa5f4c215869c5f6df33aba133d38bcc79ce4f52a28eb2c1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 830b279c4021ec08677a4a5ebaf637bc73b7beaf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180889"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084666"
 ---
 # <a name="userfeedback-resource-type"></a>тип ресурса userFeedback
 
@@ -23,7 +23,7 @@ ms.locfileid: "54180889"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |оценка|microsoft.graph.callRecords.userFeedbackRating|Оценка, предоставляемая пользователем этой конечной точки, о качестве этого сеанса. Возможные значения: `notRated`, `bad`, `poor`, `fair`, `good`, `excellent`, `unknownFutureValue`.|
-|текст|String|Текст обратной связи, предоставленный пользователем этой конечной точки для сеанса.|
+|текст|Строка|Текст обратной связи, предоставленный пользователем этой конечной точки для сеанса.|
 |маркеры|[microsoft.graph.callRecords.feedbackTokenSet](callrecords-feedbacktokenset.md)|Набор маркеров обратной связи, предоставленных пользователем этой конечной точки для сеанса. Это набор свойств Boolean. Имена свойств не следует использовать, так как они могут изменяться в зависимости от того, какие маркеры предлагаются пользователю.|
 
 ## <a name="json-representation"></a>Представление JSON

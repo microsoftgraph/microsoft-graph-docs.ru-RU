@@ -2,15 +2,15 @@
 title: Создание externalItem
 description: Создание нового externalItem.
 author: snlraju-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 7f337f21ec4a6c8069b598e756f1b3ff5327814e
-ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
+ms.openlocfilehash: db4aaef48be86ea0525f6ef2d1353b768c9d90a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697459"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022354"
 ---
 # <a name="create-externalitem"></a>Создание externalItem
 
@@ -50,10 +50,10 @@ POST /connections/{connectionsId}/items
 
 |Свойство|Тип| Описание|
 |:---|:---|:---|
-|id|String|ID элемента. Обязательно.|
-|properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|Свойства элемента. Объект `properties` должен содержать по крайней мере одно свойство. Все `DateTime` свойства типа должны быть в формате ISO 8601. Обязательно.|
-|содержимое|[microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md)|Внешний контент элемента. Необязательный параметр.|
-|acl|[коллекция microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md)|Список управления доступом. Обязательно.|
+|id|String|ID элемента. Обязательное.|
+|properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|Свойства элемента. Объект `properties` должен содержать по крайней мере одно свойство. Все `DateTime` свойства типа должны быть в формате ISO 8601. Обязательный.|
+|содержимое|[microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md)|Внешний контент элемента. Необязательно.|
+|acl|[коллекция microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md)|Список управления доступом. Обязательное.|
 
 Свойства на объекте должны использовать указанные типы в полезной `externalItem` нагрузке в следующих сценариях:
 

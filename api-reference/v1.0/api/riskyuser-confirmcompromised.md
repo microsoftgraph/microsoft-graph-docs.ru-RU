@@ -2,15 +2,15 @@
 title: 'riskyUser: confirmCompromised'
 description: Подтверждение скомпрометации пользователя
 author: cloudhandler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 743279c5bc7b79b7da3f508d9f8fc1cc89a434aaf052421915a5952f57912e84
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 31c43888008b08c6332b00321fc33db0261c5569
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124656"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067726"
 ---
 # <a name="riskyuser-confirmcompromised"></a>riskyUser: confirmCompromised
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "54124656"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskyUser.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | IdentityRiskyUser.ReadWrite.All |
+|Для приложений | IdentityRiskyUser.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

@@ -1,16 +1,16 @@
 ---
 title: Удаление вложения
 description: Удаление вложения из данных календаря о событии, сообщения почты или записи группы.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: db7f6282644443d459bba1655ecd01bce1955382
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f2cc17127e12a516efbd635521d8857555d92d58
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434932"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068377"
 ---
 # <a name="delete-attachment"></a>Удаление вложения
 

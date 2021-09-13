@@ -1,16 +1,16 @@
 ---
 title: 'educationClass: delta'
 description: Получите новые или обновленные классы, в том числе изменения членства, без выполнения полного чтения всей коллекции классов.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e9d1611ff27616eb825f0f27c9f7fcd5ceb8f0bd
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: aed767ea0e4cd9ca2542f3ef34692ca8cc4d1536
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52475041"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114682"
 ---
 # <a name="educationclass-delta"></a>educationClass: delta
 
@@ -18,7 +18,7 @@ ms.locfileid: "52475041"
 
 Получите новые или обновленные классы, в том числе изменения членства, без выполнения полного чтения всей коллекции классов. Подробные [сведения см. в запросе Use Delta.](/graph/delta-query-overview)
 
-## <a name="permissions"></a>Разрешения:
+## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -26,7 +26,7 @@ ms.locfileid: "52475041"
 | :------------------------------------- | :----------------------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic, EduRoster.Read или EduRoster.ReadWrite              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                           |
-| Приложение                            | EduRoster.ReadBasic.All, EduRoster.Read.All или EduRoster.WriteWrite.All |
+| Для приложений                            | EduRoster.ReadBasic.All, EduRoster.Read.All или EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

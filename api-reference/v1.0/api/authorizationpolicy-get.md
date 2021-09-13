@@ -1,16 +1,16 @@
 ---
 title: Get authorizationPolicy
 description: Извлечение свойств и связей объекта authorizationPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: cd73fae2b0ec7e16e39e0210ffeb891b7955d734c920ac52cc6f2f906bdcf2b8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ff9c46876ac2c3f7605ed93f905d392142cb1a51
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54167690"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038463"
 ---
 # <a name="get-authorizationpolicy"></a>Get authorizationPolicy
 
@@ -26,7 +26,7 @@ ms.locfileid: "54167690"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All, Policy.ReadWrite.Authorization |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Policy.Read.All, Policy.ReadWrite.Authorization |
+| Для приложений                            | Policy.Read.All, Policy.ReadWrite.Authorization |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

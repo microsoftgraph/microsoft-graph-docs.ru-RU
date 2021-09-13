@@ -1,16 +1,16 @@
 ---
 title: List applicationTemplates
 description: Получение списка объектов applicationtemplate.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 7d8a80b6f2cee8726f50cf32a7c5c6efa5e947c6
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 77b83a279bf513877ee3ac18ee6f4ed7efae8a5e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50775146"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125447"
 ---
 # <a name="list-applicationtemplates"></a>List applicationTemplates
 
@@ -24,9 +24,9 @@ ms.locfileid: "50775146"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированное (рабочая или учебная учетная запись)     | Отсутствуют.                                       |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Приложение                            | Отсутствуют.                                       |
+| Делегированные (рабочая или учебная учетная запись)     | Нет.                                       |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Для приложений                            | Нет.                                       |
 
 Дополнительные разрешения не требуются для вызова этого API, если приложение имеет допустимый маркер доступа для вызова Microsoft Graph.
 
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/v1.0/applicationTemplates
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

@@ -1,26 +1,26 @@
 ---
 title: List teamsApp
-description: Приложения List Teams, опубликованные в каталоге приложений клиента.
+description: Список Teams приложений, опубликованных в каталоге приложений клиента.
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 975200e5221091f70f8e3f97ee5a6359903620b7
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: a2c922de0e900bfccefa7bdbedabb88f08afabf7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774920"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016997"
 ---
 # <a name="list-teamsapp"></a>List teamsApp
 
 Пространство имен: microsoft.graph
 
-Список [приложений](../resources/teamsapp.md) из каталога приложений Microsoft Teams.
-К ним относятся приложения из магазина Microsoft Teams, а также приложения из каталога приложений организации (каталог приложений клиента). Чтобы получить приложения только из каталога приложений организации, укажите в запросе `organization` **рассылкуMethod.**
+Список [приложений](../resources/teamsapp.md) из Microsoft Teams приложения.
+Это включает приложения из Microsoft Teams магазина, а также приложения из каталога приложений организации (каталог приложений клиента). Чтобы получить приложения только из каталога приложений организации, укажите в запросе `organization` **рассылкуMethod.**
 
 > [!NOTE]
-> Ресурс `id` **teamsApp** создается сервером и не является таким же, как указанный в `id` манифесте приложения Teams. Предоставленный разработчиком в рамках манифеста приложения Teams штампуется как ресурс `id` `externalId` **teamsApp.**
+> Ресурс `id` **teamsApp** создается на сервере и не является таким же, как указанный в манифесте `id` Teams приложения. Предоставленная разработчиком в рамках манифеста Teams приложения штампуется как ресурс `id` `externalId` **teamsApp.**
 
 ## <a name="permissions"></a>Разрешения
 
@@ -189,9 +189,9 @@ Content-Type: application/json
   ]
 }
 ```
-### <a name="example-3-find-application-based-on-the-teams-app-manifest-id"></a>Пример 3. Поиск приложения на основе ID манифеста приложения Teams.
+### <a name="example-3-find-application-based-on-the-teams-app-manifest-id"></a>Пример 3. Поиск приложения на основе Teams манифеста приложения.
 
-В следующем примере перечислены приложения, которые соответствуют "id", указанному в манифесте приложения Teams. В этом примере идентификатор манифеста приложения Teams — 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.
+В следующем примере перечислены приложения, которые соответствуют "id", указанному в манифесте Teams приложения. В этом примере идентификатор манифеста приложения Teams — 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.
 
 #### <a name="request"></a>Запрос
 

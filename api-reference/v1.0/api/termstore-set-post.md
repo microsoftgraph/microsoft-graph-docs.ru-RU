@@ -2,15 +2,15 @@
 title: Создание набора
 description: Создайте новый объект набора.
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: afe4208ecd516b8be3e273719f94417659ce425e
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 980a6b37cf6e315a8fcb482c6c06080c8eaf595c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513920"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109733"
 ---
 # <a name="create-set"></a>Создание набора
 Пространство имен: microsoft.graph.termStore

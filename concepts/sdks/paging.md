@@ -1,14 +1,14 @@
 ---
 title: Страница через коллекцию с помощью SDKs Graph Microsoft
 description: Содержит инструкции по созданию запросов Graph API Майкрософт с помощью SDKs Graph Microsoft.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: c0a291e71553f0e0c922756b4bfaa6ff86d6ae6cbbace9936eda3cad6d3124b4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ab76add730b0465ff7ef186f929573f6a360a1ce
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54174705"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113457"
 ---
 # <a name="page-through-a-collection-using-the-microsoft-graph-sdks"></a>Страница через коллекцию с помощью SDKs Graph Microsoft
 

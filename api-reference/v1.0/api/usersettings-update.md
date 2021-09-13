@@ -2,15 +2,15 @@
 title: Обновление параметров
 description: 'Обновление свойств объекта settings. '
 author: jpettere
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 862df73bbc3a8a76a2068c667dd0385cfb1e0053625d3295becaca925f5c2881
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9da4b635c92f82e4983da164218013ac96009734
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54214819"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143918"
 ---
 # <a name="update-settings"></a>Обновление параметров
 
@@ -56,7 +56,7 @@ PATCH /users/{id | userPrincipalName}/settings/
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 

@@ -1,15 +1,15 @@
 ---
 title: Управление сеансами и хранением данных в Excel с помощью Microsoft Graph
 description: Если приложению нужно вызывать API Excel более одного или двух раз, необходимо создать сеанс и передавать его ИД с каждым запросом. Наличие ИД сеанса в запросах гарантирует максимально эффективное использование API Excel.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 89ff7ed3d925e9457b21da45ff08b8f1583386131709f3ed33e65f91ac402f6a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fc3639b76fbfca470a1b6a4d9e51b4ad783eccc2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169188"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136077"
 ---
 # <a name="manage-sessions-and-persistence-in-excel-with-microsoft-graph"></a>Управление сеансами и хранением данных в Excel с помощью Microsoft Graph
 

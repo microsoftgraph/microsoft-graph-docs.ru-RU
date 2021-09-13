@@ -1,16 +1,16 @@
 ---
 title: Создание conditionalAccessPolicy
 description: Создайте новый conditionalAccessPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 60ffa83de871400c49aff07f8508d562e786c73c
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ea92dc2a045195ad87f79175eba4d82e38fadd41
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50964081"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147831"
 ---
 # <a name="create-conditionalaccesspolicy"></a>Создание conditionalAccessPolicy
 
@@ -62,7 +62,7 @@ POST /identity/conditionalAccess/policies
 ### <a name="example-1-require-mfa-to-access-exchange-online-outside-of-trusted-locations"></a>Пример 1. Требовать от MFA доступа к Exchange Online за пределами надежных местоположений
 
 #### <a name="request"></a>Запрос
-В следующем примере показан распространенный запрос на требование многофакторной проверки подлинности для доступа к Exchange Online от современных клиентов проверки подлинности за пределами надежных мест для определенной группы.
+В следующем примере показан распространенный запрос на требование многофакторной проверки подлинности для доступа к Exchange Online клиентов современной проверки подлинности за пределами надежных мест для определенной группы.
 
 >**Примечание:** Перед использованием этой операции необходимо настроить доверенные расположения.
 
@@ -569,10 +569,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-require-mfa-to-exchange-online-from-non-compliant-devices"></a>Пример 4. Требовать от MFA exchange Online с устройств, не совместимых с соответствием требованиям.
+### <a name="example-4-require-mfa-to-exchange-online-from-non-compliant-devices"></a>Пример 4. Требовать от MFA Exchange Online с устройств, не совместимых с соответствием требованиям
 
 #### <a name="request"></a>Запрос
-В следующем примере показан запрос на требование mFA к Exchange Online с устройств, не совместимых с соответствием требованиям.
+В следующем примере показан запрос на требование обязать MFA Exchange Online с не совместимых устройств.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

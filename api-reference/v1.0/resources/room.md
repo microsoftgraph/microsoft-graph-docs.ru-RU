@@ -1,16 +1,16 @@
 ---
 title: тип ресурса комнаты
 description: Указывает свойства комнаты в клиенте.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 051fcfc0f9a5211ae2210eee6c7942d9b7d9efd6b334ea6491a406982e9224a1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d676dbcd36760bc14edb38b35f6f93573f03b9b5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246600"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117776"
 ---
 # <a name="room-resource-type"></a>тип ресурса комнаты
 
@@ -32,19 +32,19 @@ ms.locfileid: "54246600"
 | Свойство               | Тип                                              | Описание |
 |:-----------------------|:--------------------------------------------------|:--|
 | address                | [physicalAddress](physicaladdress.md)             | Адрес улицы комнаты. |
-| audioDeviceName        | String                                            | Указывает имя звукового устройства в комнате. |
+| audioDeviceName        | Строка                                            | Указывает имя звукового устройства в комнате. |
 | bookingType            | [bookingType](#bookingtype-values)                | Тип комнаты. Возможные значения , `standard` и `reserved` . |
 | здание               | String                                            | Указывает имя здания или номер здания, в который находится комната. |
 | емкость               | Int32                                             | Указывает емкость комнаты. |
 | displayName            | String                                            | Имя, связанное с комнатой. |
-| displayDeviceName      | String                                            | Указывает имя отображаемого устройства в комнате. |
+| displayDeviceName      | Строка                                            | Указывает имя отображаемого устройства в комнате. |
 | emailAddress           | String                                            | Адрес электронной почты комнаты. |
 | floorLabel             | String                                            | Указывает описательный метку для пола, например P. |
 | floorNumber            | Int32                                             | Указывает номер пола, на который находится номер. |
 | geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Указывает расположение комнаты в широте, долготе и необязательных координатах высоты. |
-| id                     | String                                            | Уникальный идентификатор для комнаты. Только для чтения. |
+| id                     | Строка                                            | Уникальный идентификатор для комнаты. Только для чтения. |
 | isWheelChairAccessible | Логический                                           | Указывает, доступна ли комната для инвалидных колясок. |
-| label                  | String                                            | Указывает описательный метку для комнаты, например номер или имя. |
+| подпись                  | String                                            | Указывает описательный метку для комнаты, например номер или имя. |
 | nickname               | String                                            | Указывает псевдоним для комнаты, например " conf room". |
 | phone                  | String                                            | Номер телефона комнаты. |
 | tags                   | Коллекция String                                 | Указывает дополнительные функции комнаты, например, такие сведения, как тип представления или тип мебели. |
@@ -57,7 +57,7 @@ ms.locfileid: "54246600"
 | стандартный | Комната доступна и может быть зарезервирована. Это значение используется по умолчанию. |
 | зарезервировано | Номер доступен только с первого прибытого, сначала обслуживаемого. Его нельзя зарезервировать.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

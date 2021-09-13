@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса assignedLicense
 description: Представляет лицензию, назначенную пользователю. Свойство **assignedLicenses** объекта user представляет собой коллекцию объектов **assignedLicense**.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: db2d164f076722abd2006408147c4dda3d3df128578d030b8454b7ed6395fba4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0c48842eec48d2f644cc927385d5ecd9924fcdb5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141849"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123841"
 ---
 # <a name="assignedlicense-resource-type"></a>Тип ресурса assignedLicense
 

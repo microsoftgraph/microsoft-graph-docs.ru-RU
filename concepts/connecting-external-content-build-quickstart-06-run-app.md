@@ -1,3 +1,12 @@
+---
+ms.localizationpriority: medium
+ms.openlocfilehash: 37aff56957c52c05145546c4df4d5f017e50f5f9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59289672"
+---
 <!-- markdownlint-disable MD002 MD025 MD041 -->
 
 На этом шаге вы создайте и запустите образец. Этот пример кода создаст новое подключение, зарегистрирует схему, а затем вытолкирует элементы изApplianceParts.csvв это соединение. [](https://github.com/microsoftgraph/msgraph-search-connector-sample/blob/master/ApplianceParts.csv)
