@@ -2,15 +2,15 @@
 title: тип ресурса win32LobAppFileSystemRule
 description: Сложный тип для хранения данных правил файлов или папок для приложения LOB Win32.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f04af0ddb3ec005dc69a560c89f22e865ceeb23b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d95da930022085f157be0141e9d8a3cd54b35a31
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787633"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127544"
 ---
 # <a name="win32lobappfilesystemrule-resource-type"></a>тип ресурса win32LobAppFileSystemRule
 
@@ -30,11 +30,11 @@ ms.locfileid: "58787633"
 |:---|:---|:---|
 |ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|Тип правила, указывающий цель правила. Унаследованный от [win32LobAppRule](../resources/intune-apps-win32lobapprule.md). Возможные значения: `detection`, `requirement`.|
 |path|String|Путь к файлу или папке.|
-|fileOrFolderName|Строка|Имя файла или папки.|
+|fileOrFolderName|String|Имя файла или папки.|
 |check32BitOn64System|Логический|Значение, указывающее, следует ли расширять переменные среды в 32-битной среде на 64-битных системах.|
 |operationType|[win32LobAppFileSystemOperationType](../resources/intune-apps-win32lobappfilesystemoperationtype.md)|Тип операции файловой системы. Возможные значения: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`, `doesNotExist`.|
 |operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|Оператор обнаружения файлов или папок. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|comparisonValue|Строка|Значение сравнения файла или папки.|
+|comparisonValue|String|Значение сравнения файла или папки.|
 
 ## <a name="relationships"></a>Связи
 Нет

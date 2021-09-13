@@ -2,15 +2,15 @@
 title: тип ресурса windowsPrivacyDataAccessControlItem
 description: Укажите уровень управления доступом в каждой категории данных конфиденциальности
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5667c2172f6cd633dd688ce104704c4f997449f8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 623e5a363921b1586c131b822d814d8ddf65b9f1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795201"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105911"
 ---
 # <a name="windowsprivacydataaccesscontrolitem-resource-type"></a>тип ресурса windowsPrivacyDataAccessControlItem
 
@@ -37,7 +37,7 @@ ms.locfileid: "58795201"
 |id|String|Ключ WindowsPrivacyDataAccessControlItem.|
 |accessLevel|[windowsPrivacyDataAccessLevel](../resources/intune-deviceconfig-windowsprivacydataaccesslevel.md)|Это указывает уровень доступа к категории данных конфиденциальности, которой будет предоставлено указанное приложение. Возможные значения: `notConfigured`, `forceAllow`, `forceDeny`, `userInControl`.|
 |dataCategory|[windowsPrivacyDataCategory](../resources/intune-deviceconfig-windowsprivacydatacategory.md)|Это указывает на категорию данных конфиденциальности, к которой будет применяться определенный контроль доступа. Возможные значения: `notConfigured` `accountInfo` , , , , , `appsRunInBackground` , , , `calendar` `callHistory` , , `camera` `contacts` `diagnosticsInfo` `email` , `location` `messaging` `microphone` `motion` `notifications` `phone` `radios` `tasks` `syncWithDevices` `trustedDevices` .|
-|appPackageFamilyName|Строка|Имя семейства пакета приложения Windows. При наборе уровень доступа применяется к указанному приложению.|
+|appPackageFamilyName|String|Имя семейства пакета приложения Windows. При наборе уровень доступа применяется к указанному приложению.|
 |appDisplayName|String|Имя семейства пакета приложения Windows. При наборе уровень доступа применяется к указанному приложению.|
 
 ## <a name="relationships"></a>Связи

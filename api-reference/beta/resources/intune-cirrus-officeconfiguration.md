@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса officeConfiguration
 description: Одноэлементный объект, служащий контейнером для всех функций управления устройствами.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 58e1aea2e6b8a03f69e63948675e4f4b7a9b6ebf
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bd5720a577d8f45b22d146648a7ab205b2b38c17
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820529"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59111336"
 ---
 # <a name="officeconfiguration-resource-type"></a>Тип ресурса officeConfiguration
 

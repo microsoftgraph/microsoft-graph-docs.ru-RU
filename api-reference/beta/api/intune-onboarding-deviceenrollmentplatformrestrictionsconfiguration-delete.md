@@ -2,15 +2,15 @@
 title: Удаление объекта deviceEnrollmentPlatformRestrictionsConfiguration
 description: Удаляет объект deviceEnrollmentPlatformRestrictionsConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4fc47c15950e657f41a5b8e64a4b1d66c22e4849
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bc8ad6855f862eef5b43ba2585339c0cb9b71be0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806770"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59107703"
 ---
 # <a name="delete-deviceenrollmentplatformrestrictionsconfiguration"></a>Удаление объекта deviceEnrollmentPlatformRestrictionsConfiguration
 

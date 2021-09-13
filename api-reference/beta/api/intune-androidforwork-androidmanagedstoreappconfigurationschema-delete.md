@@ -2,15 +2,15 @@
 title: Удаление androidManagedStoreAppConfigurationSchema
 description: Удаляет androidManagedStoreAppConfigurationSchema.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f36496bacc2e0c25103d96cca5eea16ca250d53e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 90355af1a075551bfbb2e26bd16321b3ee75bb59
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796140"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59083287"
 ---
 # <a name="delete-androidmanagedstoreappconfigurationschema"></a>Удаление androidManagedStoreAppConfigurationSchema
 
@@ -29,7 +29,7 @@ ms.locfileid: "58796140"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

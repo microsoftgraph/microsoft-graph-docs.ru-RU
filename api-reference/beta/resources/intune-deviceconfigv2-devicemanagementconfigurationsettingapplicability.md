@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementConfigurationSettingApplicability
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 978182491e4f9eafe73dada1c2c83c86c56d3397
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fb0b9c7fc6943e9a3caa7c499cdba9be3f2bde8c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807281"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148202"
 ---
 # <a name="devicemanagementconfigurationsettingapplicability-resource-type"></a>тип ресурса deviceManagementConfigurationSettingApplicability
 
@@ -25,7 +25,7 @@ ms.locfileid: "58807281"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|description|Строка|описание параметра|
+|description|String|описание параметра|
 |платформа|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Параметр платформы можно применить. Возможные значения: `none`, `macOS`, `windows10X`, `windows10`.|
 |deviceMode|[deviceManagementConfigurationDeviceMode](../resources/intune-deviceconfigv2-devicemanagementconfigurationdevicemode.md)|Режим устройства, на который можно применить параметр. Возможные значения: `none`, `kiosk`.|
 |технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Какие технологические каналы этот параметр можно развернуть. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`.|

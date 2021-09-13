@@ -2,15 +2,15 @@
 title: тип enum discoverySource
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2e7d53c6e1a7db5ad683fb4b748c60577314740d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f1e268279329b8eeb0efd0bd1983a09e46750918
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783206"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141104"
 ---
 # <a name="discoverysource-enum-type"></a>тип enum discoverySource
 

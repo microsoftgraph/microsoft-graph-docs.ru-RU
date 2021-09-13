@@ -2,15 +2,15 @@
 title: тип ресурсов importedAppleDeviceIdentity
 description: Ресурс importedAppleDeviceIdentity представляет собой импортируемый идентификатор устройства устройства Apple.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3f70ab03b99e9dbe7a0ebe75920f3670ee6e2ae4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f0e66ebabdfd4466d187778313644c83e5dfb542
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817070"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141076"
 ---
 # <a name="importedappledeviceidentity-resource-type"></a>тип ресурсов importedAppleDeviceIdentity
 
@@ -41,7 +41,7 @@ ms.locfileid: "58817070"
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|Профиль времени регистрации был назначен устройству|
 |isSupervised|Boolean|Указывает, контролируется ли устройство Apple. Дополнительные сведения можно получить по: https://support.apple.com/en-us/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md);|Источник обнаружения устройств Apple. Возможные значения: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
-|isDeleted|Логический|Указывает, удалено ли устройство из Apple Business Manager|
+|isDeleted|Логическое|Указывает, удалено ли устройство из Apple Business Manager|
 |createdDateTime|DateTimeOffset|Время создания даты устройства|
 |lastContactedDateTime|DateTimeOffset|Время последней контактной даты устройства|
 |description|String|Описание устройства|

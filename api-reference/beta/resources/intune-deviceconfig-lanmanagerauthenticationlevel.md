@@ -2,15 +2,15 @@
 title: тип enum lanManagerAuthenticationLevel
 description: Возможные значения для LanManagerAuthenticationLevel
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 059000a40c2d1cd1cade2a668f09c9fdaf30ee17
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ff913766f41dfa3ec1a53c3a1ba37fc94cbc2b23
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58812391"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127091"
 ---
 # <a name="lanmanagerauthenticationlevel-enum-type"></a>тип enum lanManagerAuthenticationLevel
 

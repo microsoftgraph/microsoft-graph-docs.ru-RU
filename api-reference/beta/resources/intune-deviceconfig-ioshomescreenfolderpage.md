@@ -2,15 +2,15 @@
 title: Тип ресурса iosHomeScreenFolderPage
 description: Страница для папки, содержащей приложения и веб-клипы на домашнем экране.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3b72ce408f748b9c79163c5993c4c13ddf0b1615
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8c2ab79ac9fd460638d4530240362ffe9536a542
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786987"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59111189"
 ---
 # <a name="ioshomescreenfolderpage-resource-type"></a>Тип ресурса iosHomeScreenFolderPage
 
@@ -25,7 +25,7 @@ ms.locfileid: "58786987"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя страницы папки|
+|displayName|String|Имя страницы папки|
 |apps|Коллекция [iosHomeScreenApp](../resources/intune-deviceconfig-ioshomescreenapp.md)|Список приложений и веб-клипов, которые будут отображаться на странице в папке. Эта коллекция может содержать не более 500 элементов.|
 
 ## <a name="relationships"></a>Связи

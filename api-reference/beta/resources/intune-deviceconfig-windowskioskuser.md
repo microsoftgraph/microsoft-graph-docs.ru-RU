@@ -2,15 +2,15 @@
 title: тип ресурса windowsKioskUser
 description: Базовый класс пользователя, используемый для идентификации данных учетной записи для конфигурации киоска
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9876b1c48b265adca8d5c7cfc72eedfa5b5ae18b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f0496c7e81fa90c9ed55d3aec3c06d226f62124c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791146"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105981"
 ---
 # <a name="windowskioskuser-resource-type"></a>тип ресурса windowsKioskUser
 

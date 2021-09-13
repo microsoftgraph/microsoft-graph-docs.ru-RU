@@ -2,15 +2,15 @@
 title: Создание enrollmentProfile
 description: Создайте новый объект enrollmentProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dcc5934fcf10665aac92ac0c861134814b49d773
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dc1eb9e169d0a890e3f0d821512c6bb168fa1c13
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795685"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59092982"
 ---
 # <a name="create-enrollmentprofile"></a>Создание enrollmentProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "58795685"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,13 +53,13 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|GUID объекта|
-|displayName|Строка|Имя профиля|
-|description|Строка|Описание профиля|
-|requiresUserAuthentication|Логический|Указывает, требует ли профиль проверки подлинности пользователя|
-|configurationEndpointUrl|Строка|URL-адрес конечной точки конфигурации для регистрации|
-|enableAuthenticationViaCompanyPortal|Логический|Указывает на проверку подлинности с помощью помощника установки Apple вместо Корпоративный портал.|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|Логический|Указывает, что Корпоративный портал требуется на устройствах, зарегистрированных помощником установки|
+|id|String|GUID объекта|
+|displayName|String|Имя профиля|
+|description|String|Описание профиля|
+|requiresUserAuthentication|Логическое|Указывает, требует ли профиль проверки подлинности пользователя|
+|configurationEndpointUrl|String|URL-адрес конечной точки конфигурации для регистрации|
+|enableAuthenticationViaCompanyPortal|Логическое|Указывает на проверку подлинности с помощью помощника установки Apple вместо Корпоративный портал.|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Логическое|Указывает, что Корпоративный портал требуется на устройствах, зарегистрированных помощником установки|
 
 
 

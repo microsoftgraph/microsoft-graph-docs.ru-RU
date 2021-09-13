@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementReports
 description: Объект Singleton, который выступает в качестве контейнера для всех функциональных возможностей отчетов.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 243fd6d317f5fe081feb8193cdfec7df9f2ec720
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cbcffd77d9002477c2f20fc54f8909e60cc2c70b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795846"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086136"
 ---
 # <a name="devicemanagementreports-resource-type"></a>тип ресурса deviceManagementReports
 
@@ -32,7 +32,7 @@ ms.locfileid: "58795846"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для этого объекта|
+|id|String|Уникальный идентификатор для этого объекта|
 
 ## <a name="relationships"></a>Связи
 Нет

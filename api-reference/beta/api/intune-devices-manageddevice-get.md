@@ -2,15 +2,15 @@
 title: Получение managedDevice
 description: Чтение свойств и связей объекта managedDevice.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f605d83e4e822cc872737bf97e0f058064ef4bb1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: efd13b7be4b7c39a0029587353bc82c948412391
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820998"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59112435"
 ---
 # <a name="get-manageddevice"></a>Получение managedDevice
 

@@ -2,15 +2,15 @@
 title: Список macOSTrustedRootCertificates
 description: Список свойств и связей объектов macOSTrustedRootCertificate.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dd049935e93c8bc9ebeb5e494b219f2cc614c6f2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8d2493083ef06c8ae968d51806cfdddad5b166e4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58774734"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59116943"
 ---
 # <a name="list-macostrustedrootcertificates"></a>Список macOSTrustedRootCertificates
 
@@ -29,7 +29,7 @@ ms.locfileid: "58774734"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

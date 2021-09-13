@@ -2,15 +2,15 @@
 title: тип ресурса macOSPrivacyAccessControlItem
 description: Представляет параметры конфиденциальности для каждого процесса.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 158729518b47be682e00bea9d77b8a7308c9d4b1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 90e73831f6dd3b8163a1c0d9c11b7944c9623958
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789638"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091715"
 ---
 # <a name="macosprivacyaccesscontrolitem-resource-type"></a>тип ресурса macOSPrivacyAccessControlItem
 
@@ -25,15 +25,15 @@ ms.locfileid: "58789638"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображение имени приложения, процесса или исполняемого.|
-|идентификатор|Строка|ID пакета или путь приложения, процесса или исполняемого.|
+|displayName|String|Отображение имени приложения, процесса или исполняемого.|
+|идентификатор|String|ID пакета или путь приложения, процесса или исполняемого.|
 |identifierType|[macOSProcessIdentifierType](../resources/intune-deviceconfig-macosprocessidentifiertype.md)|Для идентификации приложения используется идентификация пакета. Путь используется для определения процесса или выполнения. Возможные значения: `bundleID`, `path`.|
-|codeRequirement|Строка|Введите требование кода, которое можно получить с командой "codeign -display-r-" в приложении Терминал. Включай все после '=>'.|
-|staticCodeValidation|Логический|Статически проверяет требование кода. Используйте этот параметр, если процесс недействителен для динамической подписи кода.|
+|codeRequirement|String|Введите требование кода, которое можно получить с командой "codeign -display-r-" в приложении Терминал. Включай все после '=>'.|
+|staticCodeValidation|Логическое|Статически проверяет требование кода. Используйте этот параметр, если процесс недействителен для динамической подписи кода.|
 |blockCamera|Логический|Блокировка доступа к приложению камеры.|
 |blockMicrophone|Логический|Блокировка доступа к микрофону.|
-|blockScreenCapture|Логический|Блокировка приложения от захвата содержимого дисплея системы. Требуется macOS 10.15 или более поздней.|
-|blockListenEvent|Boolean|Блокирование приложения или процесса прослушивания событий с устройств ввода, таких как мышь, клавиатура и трекпад. Требуется macOS 10.15 или более поздней.|
+|blockScreenCapture|Логическое|Блокировка приложения от захвата содержимого дисплея системы. Требуется macOS 10.15 или более поздней.|
+|blockListenEvent|Логическое|Блокирование приложения или процесса прослушивания событий с устройств ввода, таких как мышь, клавиатура и трекпад. Требуется macOS 10.15 или более поздней.|
 |speechRecognition|[включить](../resources/intune-shared-enablement.md)|Разрешить или заблокировать доступ к объекту распознавания речи системы. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |доступность|[включить](../resources/intune-shared-enablement.md)|Разрешить приложению или процессу управлять Mac с помощью подсистемы доступности. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |addressBook|[включить](../resources/intune-shared-enablement.md)|Разрешить или заблокировать доступ к контактной информации, управляемой контактами. Возможные значения: `notConfigured`, `enabled`, `disabled`.|

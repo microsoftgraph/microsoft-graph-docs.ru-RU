@@ -2,15 +2,15 @@
 title: тип enum appLogDecryptionAlgorithm
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 000ed81fc388f24da2c7f299516505b1d71bcca0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 10405daf97f518c46412938a8e8a6dab58fe35a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787857"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086290"
 ---
 # <a name="applogdecryptionalgorithm-enum-type"></a>тип enum appLogDecryptionAlgorithm
 

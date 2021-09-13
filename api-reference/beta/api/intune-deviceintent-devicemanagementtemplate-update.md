@@ -2,15 +2,15 @@
 title: Обновление deviceManagementTemplate
 description: Обновление свойств объекта deviceManagementTemplate.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1a4aeb8e88d6c081e75c75898f32b1e39a27c4db
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 746406b352a4498eafad872c115f0542ccfaaefc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784970"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59116796"
 ---
 # <a name="update-devicemanagementtemplate"></a>Обновление deviceManagementTemplate
 
@@ -29,7 +29,7 @@ ms.locfileid: "58784970"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,10 +54,10 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{dev
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|ID шаблона|
-|displayName|Строка|Имя отображения шаблона|
-|description|Строка|Описание шаблона|
-|versionInfo|Строка|Сведения о версии шаблона|
+|id|String|ID шаблона|
+|displayName|String|Имя отображения шаблона|
+|description|String|Описание шаблона|
+|versionInfo|String|Сведения о версии шаблона|
 |isDeprecated|Логический|Шаблон обесценив или нет. Намерения не могут быть созданы из шаблона с законтятой расшифровкой.|
 |intentCount|Int32|Количество намерений, созданных из этого шаблона.|
 |templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|Тип шаблона. Возможные значения: `securityBaseline`, `specializedDevices`, `advancedThreatProtectionSecurityBaseline`, `deviceConfiguration`, `custom`, `securityTemplate`, `microsoftEdgeSecurityBaseline`, `microsoftOffice365ProPlusSecurityBaseline`, `deviceCompliance`, `deviceConfigurationForOffice365`, `cloudPC`, `firewallSharedSettings`.|

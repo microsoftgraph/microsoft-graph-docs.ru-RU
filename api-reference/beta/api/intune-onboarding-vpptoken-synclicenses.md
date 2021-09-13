@@ -2,15 +2,15 @@
 title: Действие syncLicenses
 description: Синхронизирует лицензии, связанные с конкретным appleVolumePurchaseProgramToken
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 34f93633c52588e7c4aaf9730233bc7ea7a36c5f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ecc73cd9bb40211753cd6ee38d38f26fb38d737a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819754"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59107689"
 ---
 # <a name="synclicenses-action"></a>Действие syncLicenses
 

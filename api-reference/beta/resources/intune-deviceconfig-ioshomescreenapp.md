@@ -2,15 +2,15 @@
 title: Тип ресурса iosHomeScreenApp
 description: Представляет значок приложения на начальном экране
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1f15a902849b56f371adfad7fbea6cde4797ebef
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ad3ce128696524f7157010a3271a2b3ebdc34c11
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789328"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59111203"
 ---
 # <a name="ioshomescreenapp-resource-type"></a>Тип ресурса iosHomeScreenApp
 
@@ -28,9 +28,9 @@ ms.locfileid: "58789328"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя приложения. Наследуется от [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|
+|displayName|String|Имя приложения. Наследуется от [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|
 |bundleID|String|BundleID приложения, если isWebClip является ложным или URL-адрес веб-клипа, если isWebClip является правдой.|
-|isWebClip|Логический|Если это так, то url-адрес веб-клипа будет обрабатываться как URL-адрес.|
+|isWebClip|Логическое|Если это так, то url-адрес веб-клипа будет обрабатываться как URL-адрес.|
 
 ## <a name="relationships"></a>Связи
 Нет

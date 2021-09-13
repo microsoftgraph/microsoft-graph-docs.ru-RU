@@ -2,15 +2,15 @@
 title: функция getEncryptionPublicKey
 description: Получите общедоступный ключ для шифрования маркера программы регистрации устройств Apple
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d7f7990eda281072d143108190c22a93082582bb
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 300a9857579e06c387cdb10bfd23f7e0950e5a74
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796721"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59132850"
 ---
 # <a name="getencryptionpublickey-function"></a>функция getEncryptionPublicKey
 
@@ -29,7 +29,7 @@ ms.locfileid: "58796721"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

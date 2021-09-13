@@ -2,15 +2,15 @@
 title: Обновление userExperienceAnalyticsBaseline
 description: Обновление свойств объекта userExperienceAnalyticsBaseline.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 87f1eacc5c9f65f302117f1e39d84e22fcd2bf36
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: de7031fad1a6e5698dc52c857be8562f243a5cfe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803379"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59102747"
 ---
 # <a name="update-userexperienceanalyticsbaseline"></a>Обновление userExperienceAnalyticsBaseline
 
@@ -29,7 +29,7 @@ ms.locfileid: "58803379"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,7 +54,7 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор базовой базы аналитики пользовательского интерфейса.|
-|displayName|Строка|Имя базовой базы аналитики пользовательского интерфейса.|
+|displayName|String|Имя базовой базы аналитики пользовательского интерфейса.|
 |overallScore|Int32|Общая оценка базовой базы аналитики пользовательских интерфейсов.|
 |isBuiltIn|Boolean|Означает, является ли текущий базовый уровень коммерческим медианым или настраиваемой базовой базой.|
 |createdDateTime|DateTimeOffset|Дата создания настраиваемой базовой линии.|

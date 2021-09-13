@@ -1,16 +1,16 @@
 ---
 title: тип ресурса office365ServicesUserCounts
 description: Ниже указано представление ресурса в формате JSON.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 5e243e77595e361e271a8ecde3c36ba82ed85ba4c404154f7b0947bba762f145
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6470804a26a35b1aaf8411d5c0d5fddd2a3e0bbf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229418"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59095327"
 ---
 # <a name="office365servicesusercounts-resource-type"></a>тип ресурса office365ServicesUserCounts
 
@@ -35,7 +35,7 @@ ms.locfileid: "54229418"
 | teamsInactive            | Int64  | Количество неактивных пользователей на Microsoft Teams.     |
 | office365Active          | Int64  | Количество активных пользователей на Microsoft 365.   |
 | office365Inactive        | Int64  | Количество неактивных пользователей в Microsoft 365.     |
-| reportPeriod             | Строка | Количество дней, которые охватывает отчет.    |
+| reportPeriod             | String | Количество дней, которые охватывает отчет.    |
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -2,15 +2,15 @@
 title: Действие assignResourceAccountToDevice
 description: Назначает учетную запись ресурса устройствам Автопилота.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5b7cd2135cce2be24968b4bc05dc040606e433af
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8df238df745777ddb2c54b870bc999ecc176f993
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803625"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59132766"
 ---
 # <a name="assignresourceaccounttodevice-action"></a>Действие assignResourceAccountToDevice
 

@@ -2,15 +2,15 @@
 title: Get windowsQualityUpdateCatalogItem
 description: Чтение свойств и связей объекта WindowsQualityUpdateCatalogItem.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7c35b25b02488106357b47e51106754af0a97b64
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9501e8a24e9a1537a07cecccc33e3517ec18215a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58772767"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59120978"
 ---
 # <a name="get-windowsqualityupdatecatalogitem"></a>Get windowsQualityUpdateCatalogItem
 
@@ -29,7 +29,7 @@ ms.locfileid: "58772767"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

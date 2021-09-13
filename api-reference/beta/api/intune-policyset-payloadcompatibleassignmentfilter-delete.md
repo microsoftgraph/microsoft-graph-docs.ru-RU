@@ -2,15 +2,15 @@
 title: Удаление полезной нагрузкиCompatibleAssignmentFilter
 description: Удаляет полезноеloadCompatibleAssignmentFilter.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 73f136301ec403164a4da1b25dd2d832afe1f446
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 34487454a101fe366e7349a5626531eb9d86d1bb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785495"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59107612"
 ---
 # <a name="delete-payloadcompatibleassignmentfilter"></a>Удаление полезной нагрузкиCompatibleAssignmentFilter
 
@@ -29,7 +29,7 @@ ms.locfileid: "58785495"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

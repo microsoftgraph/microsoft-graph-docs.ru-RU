@@ -2,15 +2,15 @@
 title: тип ресурса win32LobAppPowerShellScriptDetection
 description: Содержит свойства скрипта PowerShell для обнаружения приложения Win32
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: de13f32fcf4c45c89154fe25b96909193c10522e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c611f83d591805a7f728989edcd222f5ea690146
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804878"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59111385"
 ---
 # <a name="win32lobapppowershellscriptdetection-resource-type"></a>тип ресурса win32LobAppPowerShellScriptDetection
 
@@ -30,7 +30,7 @@ ms.locfileid: "58804878"
 |:---|:---|:---|
 |enforceSignatureCheck|Логический|Значение, указывающее, выполняется ли проверка подписи|
 |runAs32Bit|Логический|Значение, указывающее, должен ли этот скрипт работать как 32-битный|
-|scriptContent|Строка|Кодированное содержимое скрипта base64 для обнаружения приложения Win32 Line of Business (LoB)|
+|scriptContent|String|Кодированное содержимое скрипта base64 для обнаружения приложения Win32 Line of Business (LoB)|
 
 ## <a name="relationships"></a>Связи
 Нет

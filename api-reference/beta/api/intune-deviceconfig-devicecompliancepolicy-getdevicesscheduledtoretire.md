@@ -2,15 +2,15 @@
 title: действие getDevicesScheduledToRetire
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 65f44a09288eda4c40f057fe7bc7e31de78905ab
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cfab154e970f6d03ecfa37e528ec88544eb24fa3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804423"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103237"
 ---
 # <a name="getdevicesscheduledtoretire-action"></a>действие getDevicesScheduledToRetire
 

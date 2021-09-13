@@ -2,15 +2,15 @@
 title: Удаление restrictedAppsViolation
 description: Удаляет ограничениеAppsViolation.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7b1836ca4b77812c918dc9f197e7ab7e7e531bfd
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e93c08905dde846ad6b9de2105415964c3081dff
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806854"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59112596"
 ---
 # <a name="delete-restrictedappsviolation"></a>Удаление restrictedAppsViolation
 

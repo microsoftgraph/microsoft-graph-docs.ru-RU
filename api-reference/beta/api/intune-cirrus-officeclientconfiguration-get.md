@@ -1,16 +1,16 @@
 ---
 title: Получить officeClientConfiguration
 description: Получите определенную политику.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 102ddcb1a5f8379a14b5e575504050cf7d46aea4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8c2e973b97f42b32f1ca604242acb38b7d475be8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786159"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117265"
 ---
 # <a name="get-officeclientconfiguration"></a>Получить officeClientConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "58786159"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

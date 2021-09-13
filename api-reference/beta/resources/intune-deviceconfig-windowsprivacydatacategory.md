@@ -2,15 +2,15 @@
 title: тип enum windowsPrivacyDataCategory
 description: Windows для доступа к данным конфиденциальности.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bae6c1ea277738940907e08986325e59ee7bcd79
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1883e1518526945def0ae8bbd982fa71276c68a0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787288"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105904"
 ---
 # <a name="windowsprivacydatacategory-enum-type"></a>тип enum windowsPrivacyDataCategory
 
@@ -36,7 +36,7 @@ Windows для доступа к данным конфиденциальност
 |email|8 |Разрешайте приложениям получать доступ и отправлять электронную почту. Добавлено в Windows 10 версии 1607.|
 |location|9 |Позвольте приложениям получить доступ к точным данным расположения пользователя устройства. Добавлено в Windows 10 версии 1607.|
 |обмен сообщениями|10 |Разрешайте приложениям читать или отправлять сообщения, текстовые сообщения или MMS. Добавлено в Windows 10 версии 1607.|
-|микрофон|11 |Разрешайте приложениям использовать микрофон на устройстве пользователя. Добавлено в Windows 10 версии 1607.|
+|микрофон|11|Разрешайте приложениям использовать микрофон на устройстве пользователя. Добавлено в Windows 10 версии 1607.|
 |движение|12 |Позвольте приложениям использовать данные движения, созданные на пользователе устройства. Добавлено в Windows 10 версии 1607.|
 |уведомления|13|Позвольте приложениям получать доступ к уведомлениям пользователя. Добавлено в Windows 10 версии 1607.|
 |phone|14 |Разрешайте приложениям получать доступ к данным телефона и звонить по телефону. Добавлено в Windows 10 версии 1607.|

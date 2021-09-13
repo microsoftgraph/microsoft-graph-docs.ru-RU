@@ -2,15 +2,15 @@
 title: Обновление groupPolicyPresentationValue
 description: Обновление свойств объекта groupPolicyPresentationValue.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 605a2ab9d349c35af8cff28492bd2e8ef46a0a91
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f117de90679297a46bf4a699ca52551d4fc8aa53
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805866"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59107780"
 ---
 # <a name="update-grouppolicypresentationvalue"></a>Обновление groupPolicyPresentationValue
 
@@ -55,7 +55,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |:---|:---|:---|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 
 
 

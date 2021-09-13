@@ -2,15 +2,15 @@
 title: тип ресурса groupPolicyDefinitionFile
 description: Объект представляет XML-файл ADMX (Административный шаблон). Файл ADMX содержит коллекцию определений групповой политики и их расположения по категориям. Файл определения групповой политики также содержит языки, поддерживаемые языковыми файлами ADML (Административный шаблон).
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 887c1b3b8b744e45b265fedff2bd2b5fd767fe4b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 884d2239eda3a86ed625fc2f7c1fa82e1bebd11a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796196"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086129"
 ---
 # <a name="grouppolicydefinitionfile-resource-type"></a>тип ресурса groupPolicyDefinitionFile
 
@@ -31,14 +31,14 @@ ms.locfileid: "58796196"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Локализованное удобное имя файла ADMX.|
-|description|Строка|Локализованное описание параметров политики в файле ADMX. По умолчанию это значение пусто.|
-|languageCodes|Коллекция String|Поддерживаемые языковые коды для файла ADMX.|
-|targetPrefix|Строка|Указывает логическое имя, которое ссылается на пространство имен в файле ADMX.|
-|targetNamespace|Строка|Указывает URI, используемую для определения пространства имен в файле ADMX.|
+|displayName|String|Локализованное удобное имя файла ADMX.|
+|description|String|Локализованное описание параметров политики в файле ADMX. По умолчанию это значение пусто.|
+|languageCodes|Коллекция объектов string|Поддерживаемые языковые коды для файла ADMX.|
+|targetPrefix|String|Указывает логическое имя, которое ссылается на пространство имен в файле ADMX.|
+|targetNamespace|String|Указывает URI, используемую для определения пространства имен в файле ADMX.|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
-|изменение|Строка|Версия изменения, связанная с файлом.|
-|id|Строка|Ключ объекта.|
+|изменение|String|Версия изменения, связанная с файлом.|
+|id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 ## <a name="relationships"></a>Связи

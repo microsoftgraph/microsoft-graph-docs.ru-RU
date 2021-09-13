@@ -2,15 +2,15 @@
 title: Список androidForWorkVpnConfigurations
 description: Список свойств и связей объектов AndroidForWorkVpnConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 51f1e972f1358bac553c8d6ee1a3492ef06a99dd
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1e62e48a04789708b1c69fae10842a38dc5da26d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804983"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103342"
 ---
 # <a name="list-androidforworkvpnconfigurations"></a>Список androidForWorkVpnConfigurations
 
