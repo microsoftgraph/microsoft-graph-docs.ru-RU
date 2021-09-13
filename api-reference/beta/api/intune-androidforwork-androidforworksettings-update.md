@@ -2,15 +2,15 @@
 title: Update androidForWorkSettings
 description: Обновление свойств объекта androidForWorkSettings.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cee986c4e16fe88b768489cf791344310822114f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 89f32d84e516066aed7284bc778669ddc68b58bf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816727"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103825"
 ---
 # <a name="update-androidforworksettings"></a>Update androidForWorkSettings
 
@@ -62,7 +62,7 @@ PATCH /deviceManagement/androidForWorkSettings
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения параметров Android for Work|
 |enrollmentTarget|[AndroidForWorkEnrollmentTarget](../resources/intune-androidforwork-androidforworkenrollmenttarget.md)|Указывает, какие пользователи могут зачислить устройства в управление устройствами Android для работы. Возможные значения: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|Коллекция строк|Указывает, какие группы AAD могут регистрировать устройства для управления с помощью Android for Work, если для параметра enrollmentTarget задано значение Targeted.|
-|deviceOwnerManagementEnabled|Логический|Указывает, работает ли эта учетная запись для управления владельцем android-устройств с помощью CloudDPC.|
+|deviceOwnerManagementEnabled|Логическое|Указывает, работает ли эта учетная запись для управления владельцем android-устройств с помощью CloudDPC.|
 
 
 

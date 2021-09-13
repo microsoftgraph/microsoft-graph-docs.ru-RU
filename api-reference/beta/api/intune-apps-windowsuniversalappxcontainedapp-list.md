@@ -2,15 +2,15 @@
 title: Список windowsUniversalAppXContainedApps
 description: Список свойств и связей объектов WindowsUniversalAppXContainedApp.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4328b6a93efcd112f6d48517afa0a790b8f7083b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c39817c6c7df0b9b500c01c8e2b773059e72aa18
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816221"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59083189"
 ---
 # <a name="list-windowsuniversalappxcontainedapps"></a>Список windowsUniversalAppXContainedApps
 

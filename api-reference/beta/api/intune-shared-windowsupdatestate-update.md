@@ -2,15 +2,15 @@
 title: Обновление windowsUpdateState
 description: Обновление свойств объекта WindowsUpdateState.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 91a086fe3ab6a1b5932dff53a700a268f6cab40c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a32c93de0c652800eac00279d39ff60c5947c488
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791925"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138612"
 ---
 # <a name="update-windowsupdatestate"></a>Обновление windowsUpdateState
 
@@ -31,7 +31,7 @@ ms.locfileid: "58791925"
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp; &nbsp; **Обновление программного обеспечения** | DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application||
+|Для приложений||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp; &nbsp; **Обновление программного обеспечения** | DeviceManagementConfiguration.ReadWrite.All|
 
@@ -57,14 +57,14 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Это Id объекта.|
+|id|String|Это Id объекта.|
 |deviceId|String|ID устройства.|
 |userId|String|ID пользователя.|
 |deviceDisplayName|String|Имя отображения устройства.|
 |userPrincipalName|String|Имя основного пользователя.|
 |status|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Windows udpate. Возможные значения: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
-|qualityUpdateVersion|Строка|Версия обновления качества устройства.|
-|featureUpdateVersion|Строка|Текущая версия обновления функций устройства.|
+|qualityUpdateVersion|String|Версия обновления качества устройства.|
+|featureUpdateVersion|String|Текущая версия обновления функций устройства.|
 |lastScanDateTime|DateTimeOffset|Время даты успешного Windows агента обновления.|
 |lastSyncDateTime|DateTimeOffset|Последний раз, когда устройство синхронизируется с Microsoft Intune.|
 

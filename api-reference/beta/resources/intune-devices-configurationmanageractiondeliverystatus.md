@@ -2,15 +2,15 @@
 title: тип enum configurationManagerActionDeliveryStatus
 description: Состояние доставки действия устройства Configuration Manager
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 21de2d20718c6f1b3b0fca8199f7b6a59dcb648c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e776d03e4d785191ff3463bae125d786250ee22d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794737"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59111007"
 ---
 # <a name="configurationmanageractiondeliverystatus-enum-type"></a>тип enum configurationManagerActionDeliveryStatus
 

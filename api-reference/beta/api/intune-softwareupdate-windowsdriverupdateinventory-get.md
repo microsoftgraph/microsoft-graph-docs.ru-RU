@@ -2,15 +2,15 @@
 title: Получить windowsDriverUpdateInventory
 description: Чтение свойств и связей объекта WindowsDriverUpdateInventory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6612a3fb3accf72fb0a02c2b0270b00f1e892987
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 45f44d15284e71aac7e9df9b790505de8ff67a83
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816340"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138528"
 ---
 # <a name="get-windowsdriverupdateinventory"></a>Получить windowsDriverUpdateInventory
 

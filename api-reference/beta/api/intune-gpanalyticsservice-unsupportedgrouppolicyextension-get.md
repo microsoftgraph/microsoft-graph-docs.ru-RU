@@ -2,15 +2,15 @@
 title: Получить неподтвершеннуюGroupPolicyExtension
 description: Чтение свойств и связей неподтвершенного объектаGroupPolicyExtension.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 94df90b1612d0da1b2eb3ef6754b3c70465d7bad
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 28d4371f38e4f965ea4cb1037789ba486e78dc25
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791594"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59087846"
 ---
 # <a name="get-unsupportedgrouppolicyextension"></a>Получить неподтвершеннуюGroupPolicyExtension
 
@@ -29,7 +29,7 @@ ms.locfileid: "58791594"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

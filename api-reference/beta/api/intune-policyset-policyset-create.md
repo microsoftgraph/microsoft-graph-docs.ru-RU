@@ -2,15 +2,15 @@
 title: Создание policySet
 description: Создание нового объекта policySet.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a9737ca826ca5530b915c75285fb4ea3506382f9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a8192f0d8ffa78b91c3f8d31d721a2d4cfdcee1d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784921"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59121132"
 ---
 # <a name="create-policyset"></a>Создание policySet
 
@@ -29,7 +29,7 @@ ms.locfileid: "58784921"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -57,11 +57,11 @@ POST /deviceAppManagement/policySets
 |createdDateTime|DateTimeOffset|Время создания PolicySet.|
 |lastModifiedDateTime|DateTimeOffset|Последнее измененное время в PolicySet.|
 |displayName|String|DisplayName of the PolicySet.|
-|description|Строка|Описание PolicySet.|
+|description|String|Описание PolicySet.|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Проверка/присвоение состояния PolicySet. Возможные значения: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Код ошибки, если таковое произошло. Возможные значения: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|guidedDeploymentTags|Коллекция String|Теги управляемого развертывания|
-|roleScopeTags|Коллекция String|RoleScopeTags of the PolicySet|
+|guidedDeploymentTags|Коллекция объектов string|Теги управляемого развертывания|
+|roleScopeTags|Коллекция объектов string|RoleScopeTags of the PolicySet|
 
 
 

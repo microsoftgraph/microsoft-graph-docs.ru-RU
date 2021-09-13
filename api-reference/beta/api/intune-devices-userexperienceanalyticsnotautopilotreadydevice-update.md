@@ -2,15 +2,15 @@
 title: Обновление userExperienceAnalyticsNotAutopilotReadyDevice
 description: Обновление свойств объекта userExperienceAnalyticsNotAutopilotReadyDevice.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a6f2987c85c6322c2b3d0447f0cb59806d91bff4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7e0eb200c25fa2d1bdf025e91b037a4fea6c8e4d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798618"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142189"
 ---
 # <a name="update-userexperienceanalyticsnotautopilotreadydevice"></a>Обновление userExperienceAnalyticsNotAutopilotReadyDevice
 
@@ -29,7 +29,7 @@ ms.locfileid: "58798618"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,16 +53,16 @@ PATCH /deviceManagement/userExperienceAnalyticsNotAutopilotReadyDevice/{userExpe
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор устройства intune аналитики пользовательского интерфейса.|
+|id|String|Уникальный идентификатор устройства intune аналитики пользовательского интерфейса.|
 |deviceName|String|Имя устройства intune.|
 |serialNumber|String|Серийный номер устройства intune.|
 |manufacturer|String|Производитель устройства intune.|
 |model|String|Модель устройства intune.|
-|managedBy|Строка|Устройство intune управляется.|
-|autoPilotRegistered|Логический|Автопилотрегистер устройства intune.|
+|managedBy|String|Устройство intune управляется.|
+|autoPilotRegistered|Логическое|Автопилотрегистер устройства intune.|
 |autoPilotProfileAssigned|Логический|Автопилот Устройства intuneProfileAssigned.|
 |azureAdRegistered|Логический|Устройство intune azureAdRegistered.|
-|azureAdJoinType|Строка|Azure Ad ad для устройства intune присоединяется кType.|
+|azureAdJoinType|String|Azure Ad ad для устройства intune присоединяется кType.|
 
 
 

@@ -2,15 +2,15 @@
 title: тип ресурса androidDeviceOwnerGlobalProxyDirect
 description: Глобальный прокси-сервер владельца Android Device Direct.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: af5a53d35ce552e0c9a5b04c25d03f000bff3385
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6f1c3e169492176e2420af46c85fbd3c596c5b77
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58813651"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148041"
 ---
 # <a name="androiddeviceownerglobalproxydirect-resource-type"></a>тип ресурса androidDeviceOwnerGlobalProxyDirect
 
@@ -28,9 +28,9 @@ ms.locfileid: "58813651"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|host|Строка|Имя хоста|
+|host|String|Имя хоста|
 |порт|Int32|Порт|
-|excludedHosts|Коллекция String|Исключенные хосты|
+|excludedHosts|Коллекция объектов string|Исключенные хосты|
 
 ## <a name="relationships"></a>Связи
 Нет

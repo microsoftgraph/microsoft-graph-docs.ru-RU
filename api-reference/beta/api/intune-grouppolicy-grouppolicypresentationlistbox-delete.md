@@ -2,15 +2,15 @@
 title: Удаление groupPolicyPresentationListBox
 description: Удаляет группуPolicyPresentationListBox.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: be3c983c35b2312cb9252eae2429a9a7feff9eaa
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6ed8478100104b4169257b2263dce2963f4faef1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806784"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59092926"
 ---
 # <a name="delete-grouppolicypresentationlistbox"></a>Удаление groupPolicyPresentationListBox
 

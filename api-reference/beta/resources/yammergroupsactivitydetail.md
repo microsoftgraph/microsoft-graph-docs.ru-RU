@@ -1,16 +1,16 @@
 ---
 title: тип ресурса yammerGroupsActivityDetail
 description: Ниже указано представление ресурса в формате JSON.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 7c3b10b7b96c40ae7b7404eee2c9af99ea4bc2d602c93f9f6c68ef2ed7ad8cbe
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1cb26b450d5007caf42521a2265c25a57c8d7793
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54176087"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128475"
 ---
 # <a name="yammergroupsactivitydetail-resource-type"></a>тип ресурса yammerGroupsActivityDetail
 
@@ -21,12 +21,12 @@ ms.locfileid: "54176087"
 | Свойство           | Тип    |
 | :----------------- | :------ |
 | reportRefreshDate  | Дата    |
-| groupDisplayName   | Строка  |
+| groupDisplayName   | String  |
 | isDeleted          | Логический |
-| ownerPrincipalName | Строка  |
+| ownerPrincipalName | String  |
 | lastActivityDate   | Дата    |
 | groupType          | String  |
-| office365Connected | Логический |
+| office365Connected | Логическое |
 | memberCount        | Int64   |
 | postedCount        | Int64   |
 | readCount          | Int64   |

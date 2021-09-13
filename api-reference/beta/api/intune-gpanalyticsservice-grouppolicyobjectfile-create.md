@@ -2,15 +2,15 @@
 title: Создание groupPolicyObjectFile
 description: Создайте новый объект groupPolicyObjectFile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bb03c4a0233b96f8d8aa9f7cda37078742470438
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f61b8459b716673dde30bcea4aacabd6286c8801
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804668"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59121713"
 ---
 # <a name="create-grouppolicyobjectfile"></a>Создание groupPolicyObjectFile
 
@@ -53,9 +53,9 @@ POST /deviceManagement/groupPolicyObjectFiles
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Пока не задокументировано.|
+|id|String|Пока не задокументировано.|
 |groupPolicyObjectId|Guid|GUID объекта групповой политики из контента GPO Xml|
-|ouDistinguishedName|Строка|Отличительное имя OU.|
+|ouDistinguishedName|String|Отличительное имя OU.|
 |createdDateTime|DateTimeOffset|Дата и время, в которые была впервые загружена GroupPolicy.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения GroupPolicyObjectFile.|
 |content|String|Контент объекта групповой политики.|

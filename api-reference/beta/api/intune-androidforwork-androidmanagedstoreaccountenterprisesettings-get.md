@@ -2,15 +2,15 @@
 title: Get androidManagedStoreAccountEnterpriseSettings
 description: Чтение свойств и связей объекта AndroidManagedStoreAccountEnterpriseSettings.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f8cea0c9db6042225c70cb3a8bf0d184afda63f2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d58ad036fd9ca6f630c587e06ddafde9b1c536c3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804472"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103783"
 ---
 # <a name="get-androidmanagedstoreaccountenterprisesettings"></a>Get androidManagedStoreAccountEnterpriseSettings
 

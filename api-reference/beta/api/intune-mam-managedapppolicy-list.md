@@ -2,15 +2,15 @@
 title: Перечисление объектов managedAppPolicy
 description: Список свойств и связей объектов managedAppPolicy.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 93c79a2f390c46502434baf4b458c948afc7574c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f5d276da54b0f00ba8c28d83cadda08c1005be09
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803099"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59121552"
 ---
 # <a name="list-managedapppolicies"></a>Перечисление объектов managedAppPolicy
 
@@ -29,7 +29,7 @@ ms.locfileid: "58803099"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
