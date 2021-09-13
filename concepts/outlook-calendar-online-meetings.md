@@ -2,14 +2,14 @@
 title: Включение события в виде собрания по сети в календарь Outlook
 description: В организации, которая поддерживает поставщиков собраний по сети, администраторы могут настроить календари Outlook для поддержки собраний, использующих этих поставщиков.
 author: juforan
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 337cc8e89b40a40a41b336ddd178eb97a3ced8c5abe90e211fce74e779b4bca2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8eb53027cb85a7d5d658cf98ce4744344bfc87aa
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54240577"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59066872"
 ---
 # <a name="enable-an-event-as-an-online-meeting-in-an-outlook-calendar"></a>Включение события в виде собрания по сети в календарь Outlook 
 

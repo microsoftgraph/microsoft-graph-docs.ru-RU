@@ -1,16 +1,16 @@
 ---
 title: Создание делегированияПермиссия
 description: Классифицировать разрешение, добавив делегированнуюПермиссию к директору службы API.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: adf21db353939dedd926792ddd0d3b7205e1ec2e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a804ef6ee195ad451c64919b10d17f74df29e95a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050313"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032504"
 ---
 # <a name="create-delegatedpermissionclassification"></a>Создание делегированияПермиссия
 
@@ -94,7 +94,7 @@ Content-Type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

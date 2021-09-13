@@ -2,15 +2,15 @@
 title: Обзор аналитики элементов в Microsoft Graph
 description: Обзор функций аналитики элементов и ее персонализации на уровне пользователя
 author: simonhult
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 0733e572035d07a0960d00dc8d80921c8674d382a0ff6a18fab5cb66507d6ca9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1f68d3066acaf8499bc9645547be584e47373932
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230324"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021423"
 ---
 # <a name="overview-of-item-insights"></a>Обзор аналитики элементов
 Аналитика элементов — это ориентированные на пользователя рекомендации для вас и для тех, с кем вы работаете, основанные на вашей совместной работе в Microsoft 365.
@@ -64,7 +64,7 @@ Microsoft 365 — это всемирное облако для продукти
 ![отключенная аналитика элементов в карточке профиля](images/disabled-item-insights-in-persona-card.PNG)
 * Функции, показывающие актуальное для вас содержимое, заблокированы для вас и недоступны для других в таких интерфейсах как раздел **Обзор** Delve и Outlook Mobile. Отсутствие аналитики об актуальном для вас содержимом также влияет на релевантность персонализированных результатов Поиска (Майкрософт), поскольку он не может использовать актуальное для вас содержимое в качестве сигналов для определения релевантности.
 ![отключенная аналитика элементов в Delve](images/disabled-item-insights-in-delve.PNG)
-* Отключение аналитики элементов приведет к прекращению расчета и показа [рекомендуемого времени собраний](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1?ui=en-US&rs=en-US&ad=US) пользователю в его карточке профиля. 
+* Отключение аналитики элементов приведет к прекращению расчета и показа [рекомендуемого времени собраний](https://support.microsoft.com/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1) пользователю в его карточке профиля. 
 * Для пользователя, который отключил аналитику элементов, запрос поиска ресурсов по категориям [актуальные](/graph/api/resources/insights-trending) и[используемые](/graph/api/resources/insights-used) в Microsoft Graph API возвращает `HTTP 403 Forbidden`.
 
 ## <a name="api-reference"></a>Справочные материалы по API

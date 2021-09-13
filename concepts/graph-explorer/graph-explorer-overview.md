@@ -1,14 +1,14 @@
 ---
 title: Используйте Graph Explorer, чтобы попробовать API Graph Microsoft
 description: Используйте Graph Explorer, чтобы попробовать API microsoft Graph на примере клиента по умолчанию, чтобы изучить возможности, или войти в собственный клиент и использовать его в качестве средства создания образцов для выполнения сценариев приложений.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: bettirosengugi
-ms.openlocfilehash: e5b6f31af1b4773b208180214f4691c276a4674deb72ab4af7e44ef5b6cb4075
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 10929ab2a8dfccc54ccf7cab93e0274716b4aad8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54134829"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59014323"
 ---
 # <a name="use-graph-explorer-to-try-microsoft-graph-apis"></a>Используйте Graph Explorer, чтобы попробовать API Graph Microsoft
 

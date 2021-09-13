@@ -1,13 +1,13 @@
 ---
 title: Поиск времени для проведения собрания в календаре Outlook
 description: 'В организации или учебном заведении поиск времени и места для проведения собрания часто влечет за собой дополнительные расходы. Приложения Microsoft Graph могут использовать '
-localization_priority: Priority
-ms.openlocfilehash: 3b14f90c124eb48670f55f5871f01f4ed0afb10baf77f22612befbe2520c6cf1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.localizationpriority: high
+ms.openlocfilehash: b8a33e5e8f44a3af500a1424216116df5324bdc5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54159884"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021402"
 ---
 # <a name="find-possible-meeting-times-on-the-outlook-calendar"></a>Поиск времени для проведения собрания в календаре Outlook
 

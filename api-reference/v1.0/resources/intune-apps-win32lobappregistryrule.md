@@ -2,15 +2,15 @@
 title: тип ресурса win32LobAppRegistryRule
 description: Сложный тип для хранения данных правил реестра для приложения LOB Win32.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c88346a755174af041e716c92e2d88e13d63d6463dd9b732e8ee6647e455e995
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e96b06d6e8f5ca9836b9bc624e01c9aa6aa49e05
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152609"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021696"
 ---
 # <a name="win32lobappregistryrule-resource-type"></a>тип ресурса win32LobAppRegistryRule
 

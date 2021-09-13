@@ -2,15 +2,15 @@
 title: 'accessReviewInstanceDecisionItem: filterByCurrentUser'
 description: Извлекает все объекты accessReviewInstanceDecisionItem в accessReviewInstance, для которых вызываемая пользователь является рецензентом.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2c9aa068d760710c49e8eb4c4d329328239f8462
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: b1d6cea00fb3a1a004d299b903908c4b956833da
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210879"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008575"
 ---
 # <a name="accessreviewinstancedecisionitem-filterbycurrentuser"></a>accessReviewInstanceDecisionItem: filterByCurrentUser
 Пространство имен: microsoft.graph
@@ -27,7 +27,7 @@ ms.locfileid: "53210879"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.Read.All, AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Для приложений|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

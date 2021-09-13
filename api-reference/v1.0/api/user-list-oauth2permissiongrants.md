@@ -1,16 +1,16 @@
 ---
 title: Перечисление oauth2PermissionGrants
 description: Извлечение списка объектов oAuth2PermissionGrant, представляющих предоставленные делегированные разрешения.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 412fd819e460b83eaed8ad789bd3a3ded6aa58d6
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: a613781a777b8f2a2168ea45e85e6b7ea88cfca5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232083"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019435"
 ---
 # <a name="list-oauth2permissiongrants"></a>Перечисление oauth2PermissionGrants
 

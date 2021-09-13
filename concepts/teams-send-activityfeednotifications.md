@@ -2,14 +2,14 @@
 title: Отправка уведомлений о канале активности пользователям в Microsoft Teams
 description: Отправка уведомлений о канале активности пользователям в Microsoft Teams с помощью Teams приложения и microsoft graph.
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: f90349e232737a7d9ca9e3932c34b12c4317a22f
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 50b02872a72cea158acdae5cc6e9c9e8b109be16
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667880"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035572"
 ---
 # <a name="send-activity-feed-notifications-to-users-in-microsoft-teams"></a>Отправка уведомлений о канале активности пользователям в Microsoft Teams
 

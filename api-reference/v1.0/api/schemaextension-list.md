@@ -1,16 +1,16 @@
 ---
 title: Перечисление schemaExtensions
 description: 'Получите список объектов схемыExtension, созданных любыми приложениями, которые принадлежат вам в текущем клиенте (это может быть '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 32ce5aea57fe4becee644d500cba043460ab825d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1c6d76afca09ae025eac25bac6656a56be9953f4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038959"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019589"
 ---
 # <a name="list-schemaextensions"></a>Перечисление schemaExtensions
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/v1.0/schemaExtensions?$filter=id%20eq%20'graphle
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

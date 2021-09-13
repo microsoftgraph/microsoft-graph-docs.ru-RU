@@ -1,22 +1,22 @@
 ---
 title: Создание раздела
-description: Создание нового Оненотесектион в указанной записной книжке.
+description: Создайте новую onenoteSection в указанной записной книжке.
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 2a3e8ff5f7635729e7419959b410e39ab7539802
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9b520d9781599b17f9d000fbde2c1dac428394fc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028519"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016003"
 ---
 # <a name="create-section"></a>Создание раздела
 
 Пространство имен: microsoft.graph
 
-Создание нового [оненотесектион](../resources/section.md) в указанной записной книжке.
+Создайте новую [onenoteSection](../resources/section.md) в указанной записной книжке.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -47,7 +47,7 @@ POST /sites/{id}/onenote/notebooks/{id}/sections
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [оненотесектион](../resources/section.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `201 Created` [onenoteSection](../resources/section.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

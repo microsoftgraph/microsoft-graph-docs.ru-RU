@@ -2,22 +2,24 @@
 title: Получение объекта DirectoryObject
 description: Получение свойств и связей объекта directoryObject.
 author: keylimesoda
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ae93f6b665a8b4d6ce4ccb1c039302575e18a8f7
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7e2bd9cf5553d4053f87cc753b434f11d9f1bcb8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051503"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020135"
 ---
 # <a name="get-directoryobject"></a>Получение объекта DirectoryObject
 
 Пространство имен: microsoft.graph
 
 Получение свойств и связей объекта directoryObject.
+
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -31,9 +33,10 @@ ms.locfileid: "52051503"
 ```http
 GET /directoryObjects/{id}
 ```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+
+
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
@@ -44,8 +47,10 @@ GET /directoryObjects/{id}
 ## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [directoryObject](../resources/directoryobject.md) в тексте отклика.
+
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+
+### <a name="request"></a>Запрос
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -74,8 +79,10 @@ GET https://graph.microsoft.com/v1.0/directoryObjects/{id}
 
 ---
 
-##### <a name="response"></a>Отклик
-Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика. 
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -86,7 +93,20 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects/$entity",
+    "@odata.type": "#microsoft.graph.user",
+    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0/Microsoft.DirectoryServices.User",
+    "id": "6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0",
+    "businessPhones": [],
+    "displayName": "Conf Room Adams",
+    "givenName": null,
+    "jobTitle": null,
+    "mail": "Adams@Contoso.com",
+    "mobilePhone": null,
+    "officeLocation": null,
+    "preferredLanguage": null,
+    "surname": null,
+    "userPrincipalName": "Adams@Contoso.com"
 }
 ```
 

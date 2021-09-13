@@ -2,15 +2,15 @@
 title: Обновление группы
 description: Обновление свойств объекта group.
 author: Jordanndahl
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7064d412b776f33c30b87dde34d79a167aa6a636
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: 8b2b41797945f8747efbd9078c26f092052da7a4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53317093"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074047"
 ---
 # <a name="update-group"></a>Update group
 
@@ -52,8 +52,6 @@ PATCH /groups/{id}
 |autoSubscribeNewMembers|Логический|Значение по умолчанию: `false`. Указывает, будут ли новые участники группы автоматически подписаны на получение уведомлений по электронной почте. **AutoSubscribeNewMembers** не может быть `true`, если в группе установлено `false` для **subscriptionEnabled**.|
 |description|String|Необязательное описание для группы. |
 |displayName|String|Отображаемое имя для группы. Это свойство необходимо при создании группы. Оно не может быть удалено во время обновления. |
-|groupTypes|Коллекция String|Задает тип группы и участие в ней.  <br><br>Если коллекция содержит объект **Unified**, эта группа является группой Microsoft 365. В противном случае она является группой безопасности.  <br><br>Если коллекция включает объект **DynamicMembership**, то в этой группе используется динамическое членство. В противном случае членство является статическим. |
-|mailEnabled|Boolean|Указывает, включена ли для этой группы поддержка почты.|
 |mailNickname|String|Почтовый псевдоним для группы. Это свойство должно быть указано при создании группы. |
 |securityEnabled|Логический|Указывает, является ли эта группа группой безопасности. |
 |visibility|String|Определяет видимость группы Microsoft 365. Возможные значения: **Private** (закрытая), **Public** (общедоступная) или пустое значение (оно обрабатывается как **Public**).|

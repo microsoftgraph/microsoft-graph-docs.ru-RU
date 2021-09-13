@@ -2,15 +2,15 @@
 title: Создание цепочки
 description: 'Создание цепочки в указанной беседе. '
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8b91b07db4f467c261782dbd0d758d8a690abe20
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: 2680c02ab7eee1babce54b67cab579955e72f449
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531245"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068292"
 ---
 # <a name="create-thread"></a>Создание цепочки беседы
 

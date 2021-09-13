@@ -2,15 +2,15 @@
 title: тип ресурса configurationManagerCollectionAssignmentTarget
 description: Представляет назначение коллекции диспетчера конфигурации.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b0bc49cb342990c21437e5ff18196db2e40f1f56a3660864ef014dbf9c1f4831
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d33b97fdfefa5042d73b9a0a8ef2f2481052535a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146456"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036272"
 ---
 # <a name="configurationmanagercollectionassignmenttarget-resource-type"></a>тип ресурса configurationManagerCollectionAssignmentTarget
 
@@ -26,7 +26,7 @@ ms.locfileid: "54146456"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|collectionId|String|Ид коллекции, который является объектом назначения.|
+|collectionId|Строка|Ид коллекции, который является объектом назначения.|
 
 ## <a name="relationships"></a>Связи
 Нет

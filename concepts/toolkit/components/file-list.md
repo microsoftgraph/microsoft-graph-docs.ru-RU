@@ -1,18 +1,18 @@
 ---
 title: Компонент списка файлов в microsoft Graph набор средств
 description: Компонент списка файлов используется для отображения списка файлов, показывая их значок и имя
-localization_priority: Normal
+ms.localizationpriority: medium
 author: beth-panx
-ms.openlocfilehash: 615adf1c889f3d4e86150e4ca2ba54713beb870cb074f6718376c4475b11fe71
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1f3aea2c4d012cd4627167523540fcfeaaaf7651
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54134765"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035348"
 ---
 # <a name="file-list-component-in-the-microsoft-graph-toolkit"></a>Компонент списка файлов в microsoft Graph набор средств
 
-Компонент Списка файлов [](/graph/api/resources/onedrive) отображает список нескольких папок и файлов с помощью имени файла или папки, значка и других свойств, которые вы указываете. Этот компонент использует [компонент mgt-file.](./file.md) Вы можете указать определенный диск или сайт, отобразить список файлов, основанный на типе insight (трендовые, используемые или общие), или предоставить запросы в настраиваемый список файлов.
+Компонент Списка файлов [](/graph/api/resources/onedrive) отображает список нескольких папок и файлов с помощью имени файла или папки, значка и других свойств, которые вы указываете. Этот компонент использует [компонент mgt-file.](./file.md) Вы можете указать определенный диск или сайт, отобразить список файлов, основанный на типе insight (трендовые, используемые или общие), или предоставить запросы в настраиваемый список файлов. Компонент также предоставляет возможность разрешить пользователям загружать файлы в указанное расположение в One Drive или SharePoint.
 
 ## <a name="example"></a>Пример
 
@@ -30,16 +30,20 @@ ms.locfileid: "54134765"
 | --------- | -------- | ----------- |
 | файл-список-запрос | fileListQuery | Полный запрос или путь к диску или сайту, содержащий список отрисовки файлов. |
 | файл-запросы | fileQueries | Массив файлового запроса, отрисовываемого компонентом. |
-| нет | files | Массив файлов для получения или набора списка файлов, отрисовываний компонентом. Используйте это для доступа к файлам, загруженным компонентом. Установите это значение для загрузки собственных файлов. |
+| Нет | files | Массив файлов для получения или набора списка файлов, отрисовываний компонентом. Используйте это для доступа к файлам, загруженным компонентом. Установите это значение для загрузки собственных файлов. |
 | тип insight | insightType | Установите для демонстрации трендовых, используемых или общих файлов пользователя. |
 | drive-id | driveId | ID диска, к которой принадлежит папка. Также необходимо предоставить либо `item-id` `item-path` . |
 | group-id | groupId | ID группы, которой принадлежит папка. Также необходимо предоставить либо `item-id` `item-path` . |
 | site-id | siteId | ID сайта, к которой принадлежит папка. Также необходимо предоставить либо `{item-id}` `{item-path}` . `{list-id}`Укай, если вы ссылаетесь на файл из определенного списка. |
 | item-id | itemId | ID папки. Запрос по умолчанию `/me/drive/items` . Предоставление `{drive-id}` , или запрос `{group-id}` `{site-id}` `{user-id}` определенного расположения. |
 | путь элемента | itemPath | Путь элемента папки (относительно корневого). Запрос по умолчанию `/me/drive/root` . Предоставление `{drive-id}` , или запрос `{group-id}` `{site-id}` `{user-id}` определенного расположения. |
-| размер страницы | pageSize | Значение числа, чтобы указать максимальное количество файлов, которые необходимо отрисовки на каждой странице. |
+| размер страницы | pageSize | Значение числа, чтобы указать максимальное количество файлов, которые необходимо отрисовки на каждой странице. **Примечание:** `page-size` не поддерживается `insight-type` . |
 | расширения файлов | fileExtensions | Массив расширений файлов, используемых для фильтрации файлов для показа. |
-| кнопка hide-more-files-button | hideMoreFilesButton | A boolean to indicate whether to show a button to render more files. |
+| кнопка hide-more-files-button | hideMoreFilesButton | Boolean, чтобы указать, следует ли показывать кнопку, чтобы отрисовывать больше файлов. |
+| загрузка файлов с помощью enable-file | enableFileUpload | Boolean, чтобы включить или отключить функции загрузки файлов. Значение по умолчанию — `false`.  |
+| исключенные расширения файлов | excludedFileExtensions | Строковая массива расширений файлов, которые будут исключены из загрузки файлов. Должен также установить `enable-file-upload` атрибут `true` . |
+| max-file-size | maxFileSize | Число, представляющее максимальный размер загрузки файла (KB). Должен также установить `enable-file-upload` атрибут `true` . |
+| max-upload-file | maxUploadFile | Число, представляющее максимальное количество файлов, разрешенных к отправке. По умолчанию значение — `10` файлы. Должен также установить `enable-file-upload` атрибут `true` . |
 
 В следующем примере изменяется поведение компонента для получения списка файлов из определенного запроса.
 
@@ -69,6 +73,30 @@ ms.locfileid: "54134765"
 
 ```html
 <mgt-file-list insight-type="shared"></mgt-file-list>
+```
+
+В следующем примере включается функция загрузки файлов.
+
+```html
+<mgt-file-list enable-file-upload></mgt-file-list>
+```
+
+В следующем примере максимальное число файлов, которые можно загрузить, ограничивается 5.
+
+```html
+<mgt-file-list max-upload-file="5" enable-file-upload></mgt-file-list>
+```
+
+В следующем примере максимальный размер файла может быть загружен до 10000 КБ.
+
+```html
+<mgt-file-list max-file-size="10000" enable-file-upload></mgt-file-list>
+```
+
+В следующем примере исключается отправка файлов с расширениями файлов ".doc .pdf".
+
+```html
+<mgt-file-list excluded-file-extensions=".doc,.pdf" enable-file-upload></mgt-file-list>
 ```
 
 ## <a name="methods"></a>Методы
@@ -107,6 +135,15 @@ mgt-file-list {
   --show-more-button-padding: 6px;
   --show-more-button-border-bottom-right-radius: 4px;
   --show-more-button-border-bottom-left-radius: 4px;
+
+  --file-upload-border: 4px dotted #ffbdc3;
+  --file-upload-background-color: rgba(255, 0, 0, 0.1);
+  --file-upload-button-float: left;
+  --file-upload-button-color: #323130;
+  --file-upload-button-background-color: #fef8dd;
+  --file-upload-dialog-content-background-color: #ffe7c7;
+  --file-upload-dialog-primarybutton-background-color: #ffe7c7;
+  --file-upload-dialog-primarybutton-color: #323130;
 }
 ```
 
@@ -114,19 +151,30 @@ mgt-file-list {
 
 ## <a name="microsoft-graph-apis-and-permissions"></a>Страница "Разрешения API и приложений Microsoft Graph"
 
-| Конфигурация | Permissions | API |
+| Настройка | Разрешения | API |
 | ------------- | ----------------- | --- |
 | По умолчанию (не предоставлены идентификаторы или запросы) | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/root/children` |
-| Предоставление `{drive-id}` И `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /drives/{drive-id}/items/{item-id}/children` |
+| Предоставление `enable-file-upload` | Files.Read, Files.Read.All, Sites.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All | `GET /me/drive/root/children` <br /> `PUT /me/drive/root:/{filename}:/content` <br /> `POST /me/drive/root:/{filename}:/createUploadSession` |
+| Предоставление `{drive-id}` И `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /drives/{drive-id}/items/{item-id}/children`|
+| Предоставление `{drive-id}` и `{item-id}` и `enable-file-upload` | Files.Read, Files.Read.All, Sites.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All | `GET /drives/{drive-id}/items/{item-id}/children` <br /> `PUT /drives/{drive-id}/items/{item-id}:/{filename}:/content` <br /> `POST /drives/{drive-id}/items/{item-id}:/{filename}:/createUploadSession` |
 | Предоставление `{group-id}` И `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /groups/{group-id}/drive/items/{item-id}/children` |
+| Предоставление `{group-id}` и `{item-id}` и `enable-file-upload` | Files.Read, Files.Read.All, Sites.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All | `GET /groups/{group-id}/drive/items/{item-id}/children` <br /> `PUT /groups/{group-id}/drive/items/{item-id}:/{filename}:/content` <br /> `POST /groups/{group-id}/drive/items/{item-id}:/{filename}:/createUploadSession` |
 | Предоставление ТОЛЬКО `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/items/{item-id}/children` |
+| Предоставление ТОЛЬКО `{item-id}` И `enable-file-upload` | Files.Read, Files.Read.All, Sites.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All | `GET /me/drive/items/{item-id}/children` <br /> `PUT /me/drive/items/{item-id}:/{filename}:/content` <br /> `POST /me/drive/items/{item-id}:/{filename}:/createUploadSession` |
 | Предоставление `{site-id}` И `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /sites/{site-id}/drive/items/{item-id}/children` |
-| Pprovide `{user-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /users/{user-id}/drive/items/{item-id}/children` |
+| Предоставление `{site-id}` и `{item-id}` и `enable-file-upload` | Files.Read, Files.Read.All, Sites.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All | `GET /sites/{site-id}/drive/items/{item-id}/children` <br /> `PUT /sites/{site-id}/drive/items/{item-id}:/{filename}:/content` <br /> `POST /sites/{site-id}/drive/items/{item-id}:/{filename}:/createUploadSession` |
+| Предоставление `{user-id}` И `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /users/{user-id}/drive/items/{item-id}/children` |
+| Предоставление `{user-id}` и `{item-id}` и `enable-file-upload` | Files.Read, Files.Read.All, Sites.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All | `GET /users/{user-id}/drive/items/{item-id}/children` <br /> `PUT /users/{user-id}/drive/items/{item-id}:/{filename}:/content` <br /> `POST /users/{user-id}/drive/items/{item-id}:/{filename}:/createUploadSession` |
 | Предоставление `{drive-id}` И `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /drives/{drive-id}/root:/{item-path}:/children` |
+| Предоставление `{drive-id}` и `{item-path}` и `enable-file-upload` | Files.Read, Files.Read.All, Sites.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All | `GET /drives/{drive-id}/root:/{item-path}:/children` <br /> `PUT /drives/{drive-id}/root:/{item-path}/{filename}:/content` <br /> `POST /drives/{drive-id}/root:/{item-path}/{filename}:/createUploadSession` |
 | Предоставление `{group-id}` И `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /groups/{group-id}/root:/{item-path}:/children` |
+| Предоставление `{group-id}` и `{item-path}` и `enable-file-upload` | Files.Read, Files.Read.All, Sites.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All | `GET /groups/{group-id}/root:/{item-path}:/children` <br /> `PUT /groups/{group-id}/root:/{item-path}/{filename}:/content` <br /> `POST /groups/{group-id}/root:/{item-path}/{filename}:/createUploadSession` |
 | Предоставление `{site-id}` И `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /sites/{site-id}/root:/{item-path}:/children` |
+| Предоставление `{site-id}` и `{item-path}` и `enable-file-upload` | Files.Read, Files.Read.All, Sites.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All | `GET /sites/{site-id}/root:/{item-path}:/children` <br /> `PUT /sites/{site-id}/root:/{item-path}/{filename}:/content` <br /> `POST /sites/{site-id}/root:/{item-path}/{filename}:/createUploadSession` |
 | Предоставление `{user-id}` И `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /users/{user-id}/root:/{item-path}:/children` |
+| Предоставление `{user-id}` и `{item-path}` и `enable-file-upload` | Files.Read, Files.Read.All, Sites.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All | `GET /users/{user-id}/root:/{item-path}:/children` <br /> `PUT /users/{user-id}/root:/{item-path}/{filename}:/content` <br /> `POST /users/{user-id}/root:/{item-path}/{filename}:/createUploadSession` |
 | Предоставление только `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/root:/{item-path}:/children` |
+| Предоставление только `{item-path}` И `enable-file-upload` | Files.Read, Files.Read.All, Sites.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All | `GET /me/drive/root:/{item-path}:/children` <br /> `PUT /me/drive/root:/{item-path}/{filename}:/content` <br /> `POST /me/drive/root:/{item-path}/{filename}:/createUploadSession` |
 | `insight-type` настроена на трендовую | Sites.Read.All | `GET /me/insights/trending` |
 | Обеспечить `{user-id or upn}` и `insight-type` установить для `trending` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/trending` |
 | `insight-type` установлено, что `used` | Sites.Read.All | `GET /me/insights/used` |

@@ -2,15 +2,15 @@
 title: Тип ресурса MuteParticipantOperation
 description: Описывает формат ответа операции отключить участника вызова.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 15d845c6de9e5b40abd3648e6dddfcf5e2e6c334e0acb3d23204b0a79c7ee1f6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f0ea6efd4b90e95b5515497725ece37e69326bff
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211866"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032288"
 ---
 # <a name="muteparticipantoperation-resource-type"></a>Тип ресурса MuteParticipantOperation
 
@@ -22,8 +22,8 @@ ms.locfileid: "54211866"
 
 | Свойство                       | Тип                        | Описание                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| clientContext                  | String                      | Уникальная строка контекста клиента. Может иметь не более 256 символов.                                                                               |
-| id                             | String                      | ID операции сервера. Только для чтения.                                                                                            |
+| clientContext                  | Строка                      | Уникальная строка контекста клиента. Может иметь не более 256 символов.                                                                               |
+| id                             | Строка                      | ID операции сервера. Только для чтения.                                                                                            |
 | resultInfo                     | [resultInfo](resultinfo.md) | Сведения о результате.  Только для чтения.                                                                                            |
 | status                         | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения.                                                 |
 

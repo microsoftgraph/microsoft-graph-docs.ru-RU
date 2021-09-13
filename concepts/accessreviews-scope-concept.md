@@ -2,15 +2,15 @@
 title: Настройка области обзора доступа с помощью API microsoft Graph
 description: Узнайте, как использовать API обзоров доступа в Microsoft Graph для просмотра доступа к ресурсам Azure AD.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: d820996945b0d03f3f11f1052d246f33a9a05595
-ms.sourcegitcommit: b7e01a1331abe5f5c9aa2828d93dad08229573f1
+ms.openlocfilehash: bbd290d3be3acdbff45f3bb8739dca4ba86ecb4a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58336644"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136217"
 ---
 # <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>Настройка области обзора доступа с помощью API microsoft Graph
 
@@ -73,10 +73,24 @@ API обзоров доступа Azure [AD](/graph/api/resources/accessreviewsv
     "queryType": "MicrosoftGraph"
 }
 ```
-
 Поскольку этот обзор применяется во всех Microsoft 365 группах, настройте **экземплярEnumerationScope,** чтобы указать Microsoft 365 группы для проверки.
+    
+### <a name="example-4-review-of-all-guest-users-assigned-to-all-teams"></a>Пример 4. Обзор всех гостевых пользователей, назначенных всем Teams
 
-### <a name="example-4-review-access-of-all-inactive-guest-users-to-all-groups"></a>Пример 4. Просмотр доступа всех неактивных гостевых пользователей ко всем группам
+```http
+"instanceEnumerationScope": {
+    "query": "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')",
+    "queryType": "MicrosoftGraph"
+},
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')",
+    "queryType": "MicrosoftGraph"
+}
+    
+Because this review is applied on all Teams-enabled Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Teams-enabled Microsoft 365 groups to review.
+
+### Example 5: Review access of all inactive guest users to all groups
 
 ```http
 "scope": {
@@ -89,7 +103,7 @@ API обзоров доступа Azure [AD](/graph/api/resources/accessreviewsv
 
 Поскольку этот обзор применяется к неактивным пользователям, используйте ресурс **accessReviewInactiveUsersQueryScope** и укажите свойство **типа @odata.type** со значением `#microsoft.graph.accessReviewInactiveUsersQueryScope` .
 
-### <a name="example-5-review-of-all-inactive-guest-users-assigned-to-all-teams"></a>Пример 5. Обзор всех неактивных гостевых пользователей, назначенных всем группам
+### <a name="example-6-review-of-all-inactive-guest-users-assigned-to-all-teams"></a>Пример 6. Обзор всех неактивных гостевых пользователей, назначенных всем группам
 
 ```http
 "instanceEnumerationScope": {
@@ -106,7 +120,7 @@ API обзоров доступа Azure [AD](/graph/api/resources/accessreviewsv
 
 Поскольку этот обзор применяется для всех групп, настройте **свойство instanceEnumerationScope,** чтобы указать все группы.
 
-### <a name="example-6-review-of-entitlement-management-access-package-assignment"></a>Пример 6. Обзор назначения пакета доступа к управлению правами
+### <a name="example-7-review-of-entitlement-management-access-package-assignment"></a>Пример 7. Обзор назначения пакета доступа к управлению правами
 
 ```http
 "scope": {
@@ -116,7 +130,7 @@ API обзоров доступа Azure [AD](/graph/api/resources/accessreviewsv
 }
 ```
 
-### <a name="example-7-review-of-all-service-principals-assigned-to-a-privileged-role-all-active-and-eligible-assignments-included"></a>Пример 7. Обзор всех директоров служб, присвоенных привилегированной роли (все активные и подходящие назначения, включенные)
+### <a name="example-8-review-of-all-service-principals-assigned-to-a-privileged-role"></a>Пример 8. Обзор всех директоров служб, присвоенных привилегированной роли
 
 ```http
 "scope": {
@@ -126,7 +140,7 @@ API обзоров доступа Azure [AD](/graph/api/resources/accessreviewsv
 }
 ```
     
-### <a name="example-8-review-of-all-users-assigned-to-a-privileged-role-all-active-and-eligible-assignments-included"></a>Пример 8. Обзор всех пользователей, назначенных на привилегированную роль (все активные и подходящие назначения, включенные)
+### <a name="example-9-review-of-all-users-assigned-to-a-privileged-role-all-active-and-eligible-assignments-included"></a>Пример 9. Обзор всех пользователей, назначенных привилегированной роли (все активные и подходящие назначения, включенные)
 
 ```http
 "scope": {
@@ -136,7 +150,7 @@ API обзоров доступа Azure [AD](/graph/api/resources/accessreviewsv
 }
 ```
     
-### <a name="example-9-review-of-all-users-with-eligible-assignment-to-a-privileged-role"></a>Пример 9. Обзор всех пользователей с подходящим назначением на привилегированную роль
+### <a name="example-10-review-of-all-users-with-eligible-assignment-to-a-privileged-role"></a>Пример 10. Обзор всех пользователей с подходящим назначением на привилегированную роль
 
 ```http
 "scope": {
@@ -146,7 +160,7 @@ API обзоров доступа Azure [AD](/graph/api/resources/accessreviewsv
 }
 ```
     
-### <a name="example-10-review-of-all-users-with-active-assignment-to-a-privileged-role"></a>Пример 10. Обзор всех пользователей с активным назначением на привилегированную роль
+### <a name="example-11-review-of-all-users-with-active-assignment-to-a-privileged-role"></a>Пример 11. Обзор всех пользователей с активным назначением на привилегированную роль
 
 ```http
 "scope": {

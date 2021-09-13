@@ -1,16 +1,16 @@
 ---
 title: Общие ресурсы в Microsoft Intune
 description: Эти конечные точки используются в нескольких API Graph Microsoft для рабочего процесса Intune.  Намерения, цели и разрешения, необходимые для использования данного ресурса, зависят от конкретного рабочего процесса и контекста данного вызова.  Кроме того, некоторые методы, свойства и действия поддерживаются только для определенных процессов.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 17b635a37ea7d4842d3acc303124112bcecaebf06252735a79d9c6d03fe1a347
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6fff0906628aa7fc04d9f581ab197e6130e99ad5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184545"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036286"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Общие ресурсы в Microsoft Intune
 

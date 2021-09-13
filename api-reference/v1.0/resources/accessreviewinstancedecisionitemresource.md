@@ -2,15 +2,15 @@
 title: accessReviewInstanceDecisionItemResource type
 description: Представляет ресурс, связанный с элементом решения.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 6693b849651fa8b96fbe08880052bf1cdd9a77f5d892fccb171307e05033494b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3c51c0a4edf32bd090f78a6a921d0a246c0d33ed
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178635"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59025631"
 ---
 # <a name="accessreviewinstancedecisionitemresource-resource-type"></a>accessReviewInstanceDecisionItemResource type
 
@@ -22,8 +22,8 @@ ms.locfileid: "54178635"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|String|Отображение имени ресурса|
-|id|String|Идентификатор ресурса|
-|type|String|Тип ресурса. Типы включают: `Group` , , , , `ServicePrincipal` `DirectoryRole` `AzureRole` `AccessPackageAssignmentPolicy` .|
+|id|Строка|Идентификатор ресурса|
+|type|Строка|Тип ресурса. Типы включают: `Group` , , , , `ServicePrincipal` `DirectoryRole` `AzureRole` `AccessPackageAssignmentPolicy` .|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

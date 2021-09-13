@@ -2,15 +2,15 @@
 title: Список appConsentRequests
 description: Извлечение объектов appConsentRequest и их свойств
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 82013c90f4a90be14bf6ba57750bf8cafc62e4e0
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 307a761eb10d331155a134da2a2f2f5f6138f32b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508190"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016934"
 ---
 # <a name="list-appconsentrequests"></a>Список appConsentRequests
 Пространство имен: microsoft.graph
@@ -25,7 +25,7 @@ ms.locfileid: "51508190"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All.|
+|Для приложений|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

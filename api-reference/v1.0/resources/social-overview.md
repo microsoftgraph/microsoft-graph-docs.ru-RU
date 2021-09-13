@@ -2,15 +2,15 @@
 title: Интегрирование аналитики о людях в приложение с помощью Microsoft Graph API
 description: Microsoft Graph позволяет получить доступ к полезным сведениям о людях и документах, с которыми они взаимодействуют.
 author: simonhult
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: 2920776505d99e14bcbf2c56d05a1d6ed7022b75a79564a108f1992d25464082
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4d78275f1a2a7489233d49ce950cd349efe1dea9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189291"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032148"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-people-intelligence-in-an-app"></a>Интегрирование аналитики о людях в приложение с помощью Microsoft Graph API
 

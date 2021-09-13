@@ -2,15 +2,15 @@
 title: Клонировать команду
 description: Создайте копию команды. Эта операция также создает копию соответствующей группы.
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c4ef55620c8b13c001312ca391e553da60551a6a
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 4c336f137fc71850207d7d25b6a75a038fc03ecd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787445"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036881"
 ---
 # <a name="clone-a-team"></a>Клонировать команду
 
@@ -54,7 +54,7 @@ POST /teams/{id}/clone
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
@@ -111,7 +111,7 @@ Content-Type: application/json
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример ответа. Примечание: показанный здесь объект ответа может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response"
 } -->

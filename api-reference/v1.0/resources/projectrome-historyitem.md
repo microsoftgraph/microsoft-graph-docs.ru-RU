@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса historyItem
 description: Представляет элемент истории для действий в приложении. Действия пользователей представляют собой одно предназначение в вашем приложении , например, телешоу, документ или текущую кампанию в видеоигре. Когда пользователь участвует в этом действии, взаимодействие запечатлено как элемент истории, который указывает время начала и окончания этого действия. По мере повторного вовлечения пользователя в это действие с течением времени для одного пользователя записывают несколько элементов истории.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: project-rome
 author: ailae
 doc_type: resourcePageType
-ms.openlocfilehash: 7e845158dce7b8b3d0ea74eff673e179cda19b78e74d5a20512ea2c786fa1796
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 63c99a470c71b572763de4d38cf2c16f4a202a7b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246628"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59028788"
 ---
 # <a name="historyitem-resource-type"></a>Тип ресурса historyItem
 
@@ -36,7 +36,7 @@ ms.locfileid: "54246628"
 |createdDateTime | DateTimeOffset | Набор сервера. DateTime в UTC, когда объект был создан на сервере.|
 |lastModifiedDateTime | DateTimeOffset | Набор сервера. DateTime в UTC, когда объект был изменен на сервере.|
 |id | String | Обязательный. GUID, заданный клиентом для **объекта historyItem.**|
-|startedDateTime | DateTimeOffset | Обязательный элемент. UTC DateTime при **запусках historyItem** (сеанса активности). Необходимый для истории временной шкалы.|
+|startedDateTime | DateTimeOffset | Обязательное. UTC DateTime при **запусках historyItem** (сеанса активности). Необходимый для истории временной шкалы.|
 |lastActiveDateTime | DateTimeOffset | Необязательно. UTC DateTime, когда сеанс **historyItem** (сеанс активности) в последний раз понимался как активный или завершенный , если нет, **состояние historyItem** должно быть текущим.|
 |expirationDateTime | DateTimeOffset | Необязательно. UTC DateTime, когда **historyItem** будет проходить жесткое удаление. Может быть установлен клиентом.|
 |activeDurationSeconds | int | Необязательный параметр. Продолжительность активного вовлечения пользователей. если не поставляется, это рассчитывается из **startedDateTime** и **lastActiveDateTime**.|

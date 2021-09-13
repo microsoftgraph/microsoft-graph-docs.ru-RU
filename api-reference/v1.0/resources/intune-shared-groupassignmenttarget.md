@@ -2,15 +2,15 @@
 title: Тип ресурса groupAssignmentTarget
 description: Представляет ресурс, назначенный группе.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 80daf70ef2e55f162c5e38fcd78135691df0b5159ffaf93b55929b0cf16fa3e5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2e6809c6604f126dfb54710d91a0f5b5cd08a64a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152399"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015506"
 ---
 # <a name="groupassignmenttarget-resource-type"></a>Тип ресурса groupAssignmentTarget
 

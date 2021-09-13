@@ -1,16 +1,16 @@
 ---
 title: тип ресурса feedbackTokenSet
 description: Тип feedbackTokenSet
-localization_priority: Normal
+ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 054b77c64f61bd100db45ce6ed83772fd6e1fd2c0d502a4e6f578058ec8f097f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2422c0d00e85d1cb6d7d6cf5934d4e498e796013
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205936"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59025561"
 ---
 # <a name="feedbacktokenset-resource-type"></a>тип ресурса feedbackTokenSet
 

@@ -1,16 +1,16 @@
 ---
 title: Использование API Поиска (Майкрософт) для запросов данных
 description: С помощью API поиска приложения могут искать данные Microsoft 365 в контексте пользователя, прошедшего проверку подлинности.
-localization_priority: Priority
+ms.localizationpriority: high
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: e4ed171846772eaae142c1806a3710cb2e6ae6af9e860f3def8d96689c436d8a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e7d2ce6d2eb973eb68b4cbe14754c374eec9bd3c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163707"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035614"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Использование API Поиска (Майкрософт) для запросов данных
 

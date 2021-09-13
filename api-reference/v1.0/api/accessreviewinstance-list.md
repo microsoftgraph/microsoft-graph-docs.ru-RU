@@ -2,15 +2,15 @@
 title: Список accessReviewInstances
 description: Получите список объектов accessReviewInstance и их свойств.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 60b5ba7e35acfb72f033f90cd37d4fd32c8a3d8b
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 4c30315872b7b5f884a8912bfe327eb43c4e06b9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210579"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008603"
 ---
 # <a name="list-accessreviewinstances"></a>Список accessReviewInstances
 Пространство имен: microsoft.graph
@@ -27,7 +27,7 @@ ms.locfileid: "53210579"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.Read.All, AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Для приложений|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

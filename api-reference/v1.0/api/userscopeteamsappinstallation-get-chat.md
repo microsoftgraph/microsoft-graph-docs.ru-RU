@@ -3,14 +3,14 @@ title: Получите чат 1:1 между указанным пользов�
 description: Извлечение чата один на один между указанным пользователем и Teams приложением.
 author: AkJo
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 61f5aa005e58280bb20c54e8ef1ef92f92d85050
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: 5bf8d55f4c8a4c4581dc7cdc30aa8f2c8cc74801
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696228"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021815"
 ---
 # <a name="get-one-on-one-chat-between-the-specified-user-and-teams-app"></a>Получите один-на-один чат между указанным пользователем и Teams приложением
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/users/f32b83bb-4fc8-4db7-b7f5-76cdbbb8aa1c/
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

@@ -2,15 +2,15 @@
 title: тип ресурса serviceAnnouncementBase
 description: Это абстрактный базовый тип для serviceHealthIssue и serviceUpdateMessage.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f5f1beb5918833703fbbff48ba991b850bcd1ceb
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 8ea4ddaed2a3ea67833be103da58f703957f2373
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266907"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019141"
 ---
 # <a name="serviceannouncementbase-resource-type"></a>тип ресурса serviceAnnouncementBase
 
@@ -21,7 +21,7 @@ ms.locfileid: "58266907"
 Наследует от [объекта](../resources/entity.md).
 
 ## <a name="methods"></a>Методы
-Отсутствуют.
+Нет.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|

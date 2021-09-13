@@ -2,15 +2,15 @@
 title: checkMemberGroups
 description: Проверка участия в указанном списке групп. Возвращает из списка те группы, в которых
 author: Jordanndahl
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 35ea75115595c0ee0cf6c2f57be5507ccd950d87
-ms.sourcegitcommit: f645c2db38fe6354422a96b54569af53cd65b967
+ms.openlocfilehash: 371aa2dceeb2316b1470cf9e2bf2e3de6916ffa5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58409020"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036871"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 

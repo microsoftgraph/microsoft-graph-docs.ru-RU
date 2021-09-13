@@ -2,15 +2,15 @@
 title: Обновление объекта deviceCategory
 description: Обновление свойств объекта deviceCategory.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b38d78f760598c86acb75f602f9d62fe3bf1814
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d975ec8a0fdd5cc5f8987bba3858fb4ee9634e92
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816615"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017782"
 ---
 # <a name="update-devicecategory"></a>Обновление объекта deviceCategory
 
@@ -62,7 +62,7 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -75,7 +75,7 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 |:---|:---|:---|
 |id|String|Уникальный идентификатор категории устройства. Только для чтения.|
 |**Адаптация**|
-|description|String|Необязательное описание категории устройств.|
+|description|Строка|Необязательное описание категории устройств.|
 |displayName|String|Отображаемое имя категории устройств.|
 
 ## <a name="response"></a>Отклик

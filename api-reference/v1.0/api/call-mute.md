@@ -2,15 +2,15 @@
 title: 'вызов: отключить'
 description: Позволяет приложению отключить себя.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 016fbd3dbad85dfaf9eb0b09d840532ce27a1c01
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 6472f8ff0470d83b0ceaee38b04c24a33aaa2b71
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52784936"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016878"
 ---
 # <a name="call-mute"></a>вызов: отключить
 

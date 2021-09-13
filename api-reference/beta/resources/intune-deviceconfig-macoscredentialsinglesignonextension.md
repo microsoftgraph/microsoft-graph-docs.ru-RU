@@ -2,15 +2,15 @@
 title: тип ресурса macOSCredentialSingleSignOnExtension
 description: Представляет профиль одноместного Sign-On типа учетных данных для устройств macOS.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 99279d9a8578976b54e173cca7fed07d10ae03c5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 977001fe40fe4138d06300b05d88d37db8c0498c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783535"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017466"
 ---
 # <a name="macoscredentialsinglesignonextension-resource-type"></a>тип ресурса macOSCredentialSingleSignOnExtension
 
@@ -31,7 +31,7 @@ ms.locfileid: "58783535"
 |extensionIdentifier|Строка|Получает или задает пакетный ID расширения приложения, который выполняет SSO для указанных URL-адресов.|
 |teamIdentifier|Строка|Получает или задает командный ID расширения приложения, которое выполняет SSO для указанных URL-адресов.|
 |домены|Коллекция String|Получает или задает список хостов или доменных имен, для которых расширение приложения выполняет SSO.|
-|realm|Строка|Получает или задает имя области, чувствительной к делу, для этого профиля.|
+|realm|String|Получает или задает имя области, чувствительной к делу, для этого профиля.|
 |конфигурации|[коллекция keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|Получает или задает список пар значений ключей, используемых для настройки профилей типа учетных данных. Эта коллекция может содержать не более 500 элементов.|
 
 ## <a name="relationships"></a>Связи

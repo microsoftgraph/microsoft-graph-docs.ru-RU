@@ -2,14 +2,14 @@
 title: Входной и выходной HTML-код на страницах OneNote
 description: 'HTML-код, определяющий содержимое и структуру страницы при создании или обновлении страницы OneNote, называется *входным HTML-кодом*. '
 author: jewan-microsoft
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: onenote
-ms.openlocfilehash: 0d1aec43ad96c5d076f08928d554e639afc6f7164fde258235161ccf1433cfa3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 63898d10a7901ae9a3fd764de0550423a7482a38
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54123954"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035551"
 ---
 # <a name="input-and-output-html-in-onenote-pages"></a>Входной и выходной HTML-код на страницах OneNote
 
@@ -60,7 +60,7 @@ API OneNote в Microsoft Graph заключают все содержимое о
 
 - Атрибут **data-absolute-enabled** входного элемента body отсутствует или имеет значение **fals** e. В этом случае все содержимое основного текста помещается в разделитель по умолчанию.
 
-- Для входного атрибута **data-absolute-enabled** элемента body задано значение **true**, но входной HTML-код содержит непосредственные дочерние элементы **div**, **img** или **object** без [абсолютного положения](onenote-abs-pos.md). В этом случае непосредственные дочерние элементы  **div**, **img** или **object** без [абсолютного положения](onenote-abs-pos.md) помещаются в элементы div по умолчанию.
+- Для входного атрибута **data-absolute-enabled** элемента body задано значение **true**, но входной HTML-код содержит непосредственные дочерние элементы&nbsp;**div**, **img** или **object** без [абсолютного положения](onenote-abs-pos.md). В этом случае непосредственные дочерние элементы &nbsp;**div**, **img** или **object** без [абсолютного положения](onenote-abs-pos.md) помещаются в элементы div по умолчанию.
 
 
 #### <a name="output-attributes"></a>Выходные атрибуты
@@ -530,22 +530,22 @@ API OneNote в Microsoft Graph поддерживают перечисленны
 
 <table id="simpletable">
 <tr>
-<td id="simplecell"><b></td>
-<td id="simplecell"><i></td>
-<td id="simplecell"><u></td>
+<td id="simplecell">&lt;b&gt;</td>
+<td id="simplecell">&lt;i&gt;</td>
+<td id="simplecell">&lt;u&gt;</td>
 </tr>
 <tr>
-<td id="simplecell"><em></td>
-<td id="simplecell"><strong></td>
-<td id="simplecell"><strike></td>
+<td id="simplecell">&lt;em&gt;</td>
+<td id="simplecell">&lt;strong&gt;</td>
+<td id="simplecell">&lt;strike&gt;</td>
 </tr>
 <tr>
-<td id="simplecell"><sup></td>
-<td id="simplecell"><sub></td>
-<td id="simplecell"><del></td>
+<td id="simplecell">&lt;sup&gt;</td>
+<td id="simplecell">&lt;sub&gt;</td>
+<td id="simplecell">&lt;del&gt;</td>
 </tr>
 <tr>
-<td id="simplecell"><cite></td>
+<td id="simplecell">&lt;cite&gt;</td>
 <td id="simplecell">&nbsp;</td>
 <td id="simplecell">&nbsp;</td>
 </tr>

@@ -2,15 +2,15 @@
 title: Список решений
 description: Получите ресурсы accessReviewInstanceDecisionItem из свойства навигации решений.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 116c2c1b6bb4da87673c204536226c20990696cf
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: b700cdea1e10bf6110fc706fab6c3da7ca104290
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53209803"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033093"
 ---
 # <a name="list-decisions"></a>Список решений
 Пространство имен: microsoft.graph
@@ -27,7 +27,7 @@ ms.locfileid: "53209803"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.Read.All, AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Для приложений|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

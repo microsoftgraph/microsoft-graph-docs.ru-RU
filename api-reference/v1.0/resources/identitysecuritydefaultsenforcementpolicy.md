@@ -1,16 +1,16 @@
 ---
 title: тип ресурса identitySecurityDefaultsEnforcementPolicy
 description: Представляет политику Azure Active Directory безопасности по умолчанию. По умолчанию в безопасности содержатся преднастройные параметры безопасности, защищающие от распространенных атак.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: rohinigoyal1
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d2e3c4af8bbb7dbac35f2a28a4704010b6c6d50542d2c5de9bd1cad3cb443a90
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 07dcd2efc5fa7f83c10993293cd23c740003ef0b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238092"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032379"
 ---
 # <a name="identitysecuritydefaultsenforcementpolicy-resource-type"></a>тип ресурса identitySecurityDefaultsEnforcementPolicy
 
@@ -24,16 +24,16 @@ ms.locfileid: "54238092"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Получение](../api/identitysecuritydefaultsenforcementpolicy-get.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | Ознакомьтесь с свойствами **объекта identitySecurityDefaultsEnforcementPolicy.** |
+| [получение](../api/identitysecuritydefaultsenforcementpolicy-get.md); | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | Ознакомьтесь с свойствами **объекта identitySecurityDefaultsEnforcementPolicy.** |
 | [Обновление](../api/identitysecuritydefaultsenforcementpolicy-update.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | Обновление **объекта identitySecurityDefaultsEnforcementPolicy.** |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|description|String|Описание этой политики. Только для чтения.|
+|description|Строка|Описание этой политики. Только для чтения.|
 |displayName|String|Отображение имени для этой политики. Только для чтения.|
-|id|String|Идентификатор для этой политики. Только для чтения.|
+|id|Строка|Идентификатор для этой политики. Только для чтения.|
 |isEnabled|Boolean|Если установлено `true` значение , Azure Active Directory по умолчанию безопасности включен для клиента.|
 
 ## <a name="relationships"></a>Связи

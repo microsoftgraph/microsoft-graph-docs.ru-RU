@@ -2,14 +2,14 @@
 title: 'Добавление пользовательских данных в группы с помощью расширений схемы '
 description: 'В этой статье рассматривается пример использования *расширений схемы*. '
 author: dkershaw10
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 4c698a00ebf4579b0e2da085c617d408840bc837a74dad421fff92b31e211dc4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9a84499f8b967b57a82187ee467a1eedd445764b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54159826"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59066921"
 ---
 # <a name="add-custom-data-to-groups-using-schema-extensions"></a>Добавление пользовательских данных в группы с помощью расширений схемы 
 

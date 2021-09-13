@@ -2,15 +2,15 @@
 title: тип ресурсов integerRange
 description: Представляет инклюзивный диапазон наборов, описанных двумя границами Int64.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 6af69a7184a88d8540b45b35a58875b5d2934712fa0915bb0d1e59df2623697d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 31661802fa198790e4d30f2da58ac11c86f19b6e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146862"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036482"
 ---
 # <a name="integerrange-resource-type"></a>тип ресурсов integerRange
 
@@ -21,7 +21,7 @@ ms.locfileid: "54146862"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|начать|Int64|Инклюзивная нижняя граница диапазона integer.|
+|start|Int64|Инклюзивная нижняя граница диапазона integer.|
 |end|Int64|Инклюзивная верхняя граница диапазона integer.|
 
 ## <a name="json-representation"></a>Представление JSON

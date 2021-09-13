@@ -1,16 +1,16 @@
 ---
 title: Список применяетсяTo
 description: Получите список объектов directoryObject, к которые был применен объект claimsMappingPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: paulgarn
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2259ca86f1a6667c9881b87d3156be7b2248d6f2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 60e56f82302845dbb4d9aad6f6384be56c1dfa60
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050558"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016696"
 ---
 # <a name="list-appliesto"></a>Список применяетсяTo
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/{id}/applies
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -107,12 +107,26 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "id": "id-value",
-      "deletedDateTime": "datetime-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.servicePrincipal",
+            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/335601aa-9c79-48a3-a9f7-d2a6ac9cb730/Microsoft.DirectoryServices.ServicePrincipal",
+            "id": "335601aa-9c79-48a3-a9f7-d2a6ac9cb730",
+            "accountEnabled": true,
+            "createdDateTime": "2021-08-12T07:28:18Z",
+            "appDisplayName": "My App",
+            "appId": "e4d924fc-d18d-4e69-9a17-7095f311bf17",
+            "appOwnerOrganizationId": "84841066-274d-4ec0-a5c1-276be684bdd3",
+            "displayName": "My App",
+            "publisherName": "Contoso",
+            "servicePrincipalNames": [
+                "e4d924fc-d18d-4e69-9a17-7095f311bf17"
+            ],
+            "servicePrincipalType": "Application",
+            "signInAudience": "AzureADMyOrg"
+        }
+    ]
 }
 ```
 

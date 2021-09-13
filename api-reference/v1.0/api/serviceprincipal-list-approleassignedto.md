@@ -1,16 +1,16 @@
 ---
 title: Список объектов appRoleAssignment, предоставленных субъект-службе
 description: Получение списка назначенных ролей приложения, предоставленных субъект-службе.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 9a9cfd5330d21fe8e8199c9a7fec58c8bb470e7d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0179cd6cf85c64f7b72f137218b9de1973e1d5f8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049431"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022053"
 ---
 # <a name="list-approleassignments-granted-for-a-service-principal"></a>Список объектов appRoleAssignment, предоставленных субъект-службе
 

@@ -2,14 +2,14 @@
 title: Просмотр изменений библиотеки проверки подлинности приложений
 description: Описывает, как обновить использование библиотеки проверки подлинности для переноса приложения из приложений API Azure Active Directory (Azure AD) в API Microsoft Graph API.
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: f1b502c3d72fd194b809e355f09e43154ff5a4f27569c0fc534fcbfc55f11123
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9dfd24bb1bf956ee762c0419bce4866816fdc35e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163502"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59135972"
 ---
 # <a name="review-app-authentication-library-changes"></a>Просмотр изменений библиотеки проверки подлинности приложений
 
@@ -56,5 +56,5 @@ var scopes = new string[] { "https://graph.microsoft.com/.default" };
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Узнайте [о различиях](migrate-azure-ad-graph-client-libraries.md) клиентской библиотеки .NET между Azure AD Graph и Microsoft Graph.
+- Узнайте [о различиях](migrate-azure-ad-graph-client-libraries.md) клиентской библиотеки .NET между Azure Active Directory (Azure AD) Graph Microsoft Graph.
 - Снова [просмотрите контрольный](migrate-azure-ad-graph-planning-checklist.md) список.

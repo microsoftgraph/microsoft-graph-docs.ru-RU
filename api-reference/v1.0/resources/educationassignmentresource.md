@@ -1,16 +1,16 @@
 ---
 title: тип ресурса educationAssignmentResource
 description: Объект оболочки, который хранит ресурсы, связанные с назначением.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: f1686ebac67e5f8865328e90d77607851fa6de20
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 671ef56a579eeeba7c2f013310e9034aac7c4dae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367032"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036727"
 ---
 # <a name="educationassignmentresource-resource-type"></a>тип ресурса educationAssignmentResource
 
@@ -26,12 +26,12 @@ ms.locfileid: "58367032"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Get educationAssignmentResource](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |Чтение свойств и связей объекта **educationAssignmentResource.**|
-|[Удаление](../api/educationassignmentresource-delete.md) | Нет |Удаление **объекта educationAssignmentResource.** |
+|[удаление](../api/educationassignmentresource-delete.md); | Нет |Удаление **объекта educationAssignmentResource.** |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Логический|Указывает, следует ли скопировать этот ресурс для каждого студента для изменения и отправки. Обязательно|
+|distributeForStudentWork|Boolean|Указывает, следует ли скопировать этот ресурс для каждого студента для изменения и отправки. Обязательна|
 |id|Строка| ID этого ресурса. Только для чтения.|
 |resource|[educationResource](educationresource.md)|Объект resource, связанный с этим назначением.|
 

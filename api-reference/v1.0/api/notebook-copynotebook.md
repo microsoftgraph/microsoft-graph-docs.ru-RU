@@ -1,16 +1,16 @@
 ---
 title: 'блокнот: copyNotebook'
 description: Копирует записную книжку в папку Notebooks в библиотеке документов назначения. Папка создается, если ее нет.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: f46e65f200e87d0f39ef5e9307ee199de5595fb1
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 85b6a312ac17e45381cc8a8c6e39e623ef0386ef
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787459"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016077"
 ---
 # <a name="notebook-copynotebook"></a>блокнот: copyNotebook
 
@@ -46,7 +46,7 @@ POST /groups/{id}/onenote/notebooks/{id}/copyNotebook
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |groupId|String|ID группы для копирования. Используйте только при копировании в Microsoft 365 группу.|
-|переименоватьAs|String|Имя копии. По умолчанию имя существующего элемента. |
+|переименоватьAs|Строка|Имя копии. По умолчанию имя существующего элемента. |
 
 ## <a name="response"></a>Отклик
 

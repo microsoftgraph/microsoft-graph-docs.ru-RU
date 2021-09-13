@@ -2,15 +2,15 @@
 title: тип ресурса educationCategory
 description: Категория, которую можно применить к назначениям.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 1b8454265c7c01b7e9a27653e06e0d383d0e7f944f451adc55e5688faecaa79a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b4bd1220e65b2c855d4698cbe24f1d4d8d9f6ac7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130368"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59025568"
 ---
 # <a name="educationcategory-resource-type"></a>тип ресурса educationCategory
 
@@ -32,7 +32,7 @@ ms.locfileid: "54130368"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|String|Уникальный идентификатор для категории.|
-|displayName|String|Уникальный идентификатор для категории.|
+|displayName|Строка|Уникальный идентификатор для категории.|
 
 ## <a name="json-representation"></a>Представление JSON
 

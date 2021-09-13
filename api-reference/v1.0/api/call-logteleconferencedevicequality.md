@@ -1,16 +1,16 @@
 ---
 title: 'call: logTeleconferenceDeviceQuality'
 description: Запись в журнал данных о качестве устройств для видеоконференций.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a6cbacb3ce97ca1b9b09b12e0185757d5c8392ac
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: a94f4334780b3b8f25a33ab52321179a7caddb40
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786049"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016892"
 ---
 # <a name="call-logteleconferencedevicequality"></a>call: logTeleconferenceDeviceQuality
 
@@ -44,10 +44,10 @@ POST /communications/calls/logTeleconferenceDeviceQuality
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | User-Agent    | Описывает имя и версию вызываемого приложения. Сведения будут всплыть в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 

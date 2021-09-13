@@ -2,15 +2,15 @@
 title: Добавление educationUser в educationSchool
 description: Добавление пользователя в учебное заведение.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ee59a78c572344f105d4826c4312626e85c3b25e
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 6e6529a629af0aca480a6dc3deb1e013ee88404d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52783633"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020023"
 ---
 # <a name="add-educationuser-to-an-educationschool"></a>Добавление educationUser в educationSchool
 
@@ -38,7 +38,7 @@ POST /education/schools/{id}/users/$ref
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса предоставьте описание объекта [educationUser](../resources/educationuser.md) в формате JSON.
 
 

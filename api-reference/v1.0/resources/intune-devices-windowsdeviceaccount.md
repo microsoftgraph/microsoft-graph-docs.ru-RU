@@ -2,15 +2,15 @@
 title: Тип ресурса windowsDeviceAccount
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a5ccafb436f2fcbb7a5d149888eef3a69f87b8f44a86891243d5ceae03dc8dd5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f219be981eab1e1387018ba22183b3689faa8698
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152476"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019330"
 ---
 # <a name="windowsdeviceaccount-resource-type"></a>Тип ресурса windowsDeviceAccount
 

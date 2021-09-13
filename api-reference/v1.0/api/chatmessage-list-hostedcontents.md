@@ -1,16 +1,16 @@
 ---
 title: Список hostedContents
 description: Извлечение списка объектов chatMessageHostedContent из сообщения.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cc6f5bcd883cc6f289444f253be29c12efcce2c0
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: 44726a579cf7a30865348ae8a71ef89d1363aee8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971393"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022844"
 ---
 # <a name="list-hostedcontents"></a>Список hostedContents
 
@@ -113,7 +113,7 @@ GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание:** `contentBytes` и `contentType` всегда настроены на нуль.
 
@@ -181,7 +181,7 @@ GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание:** `contentBytes` и `contentType` всегда настроены на нуль.
 
@@ -249,7 +249,7 @@ GET https://graph.microsoft.com/v1.0/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание:** `contentBytes` и `contentType` всегда настроены на нуль.
 
