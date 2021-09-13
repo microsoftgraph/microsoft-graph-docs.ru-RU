@@ -2,15 +2,15 @@
 title: getPolicyNonComplianceSummaryReport action
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1e9fbb354fcbaca5abc7f5e36fe0c37a31c7069d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2c01189321e7ce0ead2f56f8b815f7525aebc7e8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817154"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59102544"
 ---
 # <a name="getpolicynoncompliancesummaryreport-action"></a>getPolicyNonComplianceSummaryReport action
 

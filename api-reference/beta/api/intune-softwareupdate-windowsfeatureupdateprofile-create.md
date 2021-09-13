@@ -2,15 +2,15 @@
 title: Создание windowsFeatureUpdateProfile
 description: Создайте новый объект windowsFeatureUpdateProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 23060e6f6fa7f15023f6aa14f11cc785f00c5af1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 396535cd01b85ebc24ecb0427f582301f98561c8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792248"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59107339"
 ---
 # <a name="create-windowsfeatureupdateprofile"></a>Создание windowsFeatureUpdateProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "58792248"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,14 +53,14 @@ POST /deviceManagement/windowsFeatureUpdateProfiles
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор объекта.|
-|displayName|Строка|Имя отображения профиля.|
-|description|Строка|Описание профиля, указанного пользователем.|
-|featureUpdateVersion|Строка|Версия обновления функций, которая будет развернута на устройствах, на которые ориентирован этот профиль. Версия может быть любой поддерживаемой версией, например 1709, 1803 или 1809 и так далее.|
+|id|String|Идентификатор объекта.|
+|displayName|String|Имя отображения профиля.|
+|description|String|Описание профиля, указанного пользователем.|
+|featureUpdateVersion|String|Версия обновления функций, которая будет развернута на устройствах, на которые ориентирован этот профиль. Версия может быть любой поддерживаемой версией, например 1709, 1803 или 1809 и так далее.|
 |createdDateTime|DateTimeOffset|Время создания профиля.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения профиля.|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого объекта обновления функций.|
-|deployableContentDisplayName|Строка|Удобное отображаемое имя развернутого контента профиля обновления качества|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого объекта обновления функций.|
+|deployableContentDisplayName|String|Удобное отображаемое имя развернутого контента профиля обновления качества|
 |endOfSupportDate|DateTimeOffset|Последняя поддерживаемая дата обновления функций|
 
 

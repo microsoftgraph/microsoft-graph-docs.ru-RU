@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementIntent
 description: Сущность, которая представляет намерение применить параметры к устройству
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 465abb5a003817f596eb70067b8ac6b5a28e94e7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9fc62b48b702a015d3d30e373d8eab5b2ba14369
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58759437"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137968"
 ---
 # <a name="devicemanagementintent-resource-type"></a>тип ресурса deviceManagementIntent
 
@@ -40,12 +40,12 @@ ms.locfileid: "58759437"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|ID намерения|
-|displayName|Строка|Имя отображения, заданное пользователю|
-|description|Строка|Описание пользователя|
+|displayName|String|Имя отображения, заданное пользователю|
+|description|String|Описание пользователя|
 |isAssigned|Boolean|Означает, назначены ли намерения пользователям|
 |lastModifiedDateTime|DateTimeOffset|Когда намерение было изменено в последний раз|
 |templateId|String|ID шаблона, который был создан из (если таково)|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

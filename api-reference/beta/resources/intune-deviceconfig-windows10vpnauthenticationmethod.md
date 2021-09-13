@@ -2,15 +2,15 @@
 title: тип enum windows10VpnAuthenticationMethod
 description: Windows 10 Типы VPN-подключений.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 67679d3e840aa3d12eabf6b3d38871af054109c7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3936a8d082b20b454bd8c84218e589319be071f8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795860"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086689"
 ---
 # <a name="windows10vpnauthenticationmethod-enum-type"></a>тип enum windows10VpnAuthenticationMethod
 

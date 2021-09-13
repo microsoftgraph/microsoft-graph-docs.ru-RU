@@ -2,15 +2,15 @@
 title: Обновление userExperienceAnalyticsDeviceStartupProcessPerformance
 description: Обновление свойств объекта userExperienceAnalyticsDeviceStartupProcessPerformance.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ca5d080e8667349ade20020d91bb05f969eff62e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2443a15980dac7d20f6dcbbb8a07510ae4f28f5a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796990"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097182"
 ---
 # <a name="update-userexperienceanalyticsdevicestartupprocessperformance"></a>Обновление userExperienceAnalyticsDeviceStartupProcessPerformance
 
@@ -29,7 +29,7 @@ ms.locfileid: "58796990"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,8 +53,8 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceStartupProcessPerformance/{
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор производительности процесса запуска устройства для аналитики пользовательского интерфейса.|
-|processName|Строка|Имя процесса запуска устройства для аналитики пользовательского интерфейса.|
+|id|String|Уникальный идентификатор производительности процесса запуска устройства для аналитики пользовательского интерфейса.|
+|processName|String|Имя процесса запуска устройства для аналитики пользовательского интерфейса.|
 |productName|String|Имя продукта процесса запуска устройства для аналитики пользовательского интерфейса.|
 |publisher|String|Издатель процесса запуска устройства для аналитики пользовательских интерфейсов.|
 |deviceCount|Int64|Процесс запуска устройства аналитики пользовательских интерфейсов суммирован.|

@@ -2,15 +2,15 @@
 title: deliveryOptimizationBandwidthAbsolute resource type
 description: Ограничения пропускной способности в килобайтах в секунду.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2e184d3175cfc3643a7de870b0fdbd4be3af0949
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a8d625892c0d8651de284037d5a2ba4158a3b34a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791209"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147992"
 ---
 # <a name="deliveryoptimizationbandwidthabsolute-resource-type"></a>deliveryOptimizationBandwidthAbsolute resource type
 

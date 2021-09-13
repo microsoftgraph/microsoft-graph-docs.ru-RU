@@ -2,15 +2,15 @@
 title: тип enum deviceManagementConfigurationTemplateFamily
 description: Описывает объект TemplateFamily для объекта Template
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5a4544dfbd9f87114d7e1cc83102a88aaa1a2c1d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5f89437d7f9e053371698febc4867b8c384763e1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791848"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148181"
 ---
 # <a name="devicemanagementconfigurationtemplatefamily-enum-type"></a>тип enum deviceManagementConfigurationTemplateFamily
 
@@ -27,7 +27,7 @@ ms.locfileid: "58791848"
 |:---|:---|:---|
 |Нет|0|По умолчанию для семейства шаблонов, когда политика не связана с шаблоном|
 |endpointSecurityAntivirus|10 |Семейство шаблонов для endpointSecurityAntivirus, которое управляет дискретной группой параметров антивируса для управляемых устройств|
-|endpointSecurityDiskEncryption|11 |Семейство шаблонов для EndpointSecurityDiskEncryption, которое предоставляет параметры, которые актуальны для встроенного метода шифрования устройств, таких как FileVault или BitLocker|
+|endpointSecurityDiskEncryption|11|Семейство шаблонов для EndpointSecurityDiskEncryption, которое предоставляет параметры, которые актуальны для встроенного метода шифрования устройств, таких как FileVault или BitLocker|
 |endpointSecurityFirewall|12 |Семейство шаблонов для EndpointSecurityFirewall, которое помогает настроить встроенный брандмауэр устройств для устройств с macOS и Windows 10|
 |endpointSecurityEndpointDetectionAndResponse|13|Семейство шаблонов для EndpointSecurityEndpointDetectionAndResponse, которое упрощает управление настройками EDR и бортовых устройств в Microsoft Defender для endpoint|
 |endpointSecurityAttackSurfaceReduction|14 |Семейство шаблонов для EndpointSecurityAttackSurfaceReduction, которое помогает уменьшить поверхности атак, минимизируя места, в которых ваша организация уязвима для киберугроз и атак|

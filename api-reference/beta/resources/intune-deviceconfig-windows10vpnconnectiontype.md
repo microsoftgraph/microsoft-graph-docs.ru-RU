@@ -2,15 +2,15 @@
 title: тип enum windows10VpnConnectionType
 description: Типы VPN-подключений.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0746cd4dbd76e4ec436660818b75b027edb018e6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b9a4cbc1815017e0a7484f3c84c0cbecfcf1c937
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784221"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086696"
 ---
 # <a name="windows10vpnconnectiontype-enum-type"></a>тип enum windows10VpnConnectionType
 

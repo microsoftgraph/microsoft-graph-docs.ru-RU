@@ -2,15 +2,15 @@
 title: тип ресурса windowsKioskWin32App
 description: KioskModeApp v4 для поддержки приложений Win32
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c8cd69ca7399e83e4a262ab017327de22cb3ba26
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c940e7c8d2e7c161ed1fbeff5a3ff02039f55205
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805396"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105925"
 ---
 # <a name="windowskioskwin32app-resource-type"></a>тип ресурса windowsKioskWin32App
 
@@ -32,11 +32,11 @@ KioskModeApp v4 для поддержки приложений Win32
 |name|String|Представляет удобное имя приложения, унаследованной от [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|Тип приложения, унаследованный от [windowsKioskAppBase.](../resources/intune-deviceconfig-windowskioskappbase.md) Возможные значения: `unknown`, `store`, `desktop`, `aumId`.|
 |autoLaunch|Логический|Разрешить автоматическое запуск приложения в режиме киоска с несколькими приложениями, унаследованных от [windowsKioskAppBase.](../resources/intune-deviceconfig-windowskioskappbase.md)|
-|classicAppPath|Строка|Это классическийapppath, используемый приложением v4 Win32 в режиме киоска|
+|classicAppPath|String|Это классическийapppath, используемый приложением v4 Win32 в режиме киоска|
 |edgeNoFirstRun|Логический|Edge first run flag for Edge kiosk mode|
 |edgeKioskIdleTimeoutMinutes|Int32|Время ожидания в киоске Edge в минутах для режима киоска Edge. Допустимые значения от 0 до 1440|
 |edgeKioskType|[windowsEdgeKioskType](../resources/intune-deviceconfig-windowsedgekiosktype.md)|Тип edge-киоска для режима киоска Edge. Возможные значения: `publicBrowsing`, `fullScreen`.|
-|edgeKiosk|Строка|Edge kiosk (URL) для режима киоска Edge|
+|edgeKiosk|String|Edge kiosk (URL) для режима киоска Edge|
 
 ## <a name="relationships"></a>Связи
 Нет

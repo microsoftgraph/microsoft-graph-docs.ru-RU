@@ -2,15 +2,15 @@
 title: Обновление windowsDriverUpdateInventory
 description: Обновление свойств объекта WindowsDriverUpdateInventory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 94ce5b0e5e5975ae669212a37a4e7f26f8567575
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 90abc5dec10bed9998cf988783f4cdb9c67fef89
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801404"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138514"
 ---
 # <a name="update-windowsdriverupdateinventory"></a>Обновление windowsDriverUpdateInventory
 
@@ -29,7 +29,7 @@ ms.locfileid: "58801404"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,12 +53,12 @@ PATCH /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileI
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|ID драйвера.|
+|id|String|ID драйвера.|
 |name|String|Имя водителя.|
 |version|String|Версия драйвера.|
 |manufacturer|String|Производитель драйвера.|
 |releaseDateTime|DateTimeOffset|Время выпуска драйвера.|
-|driverClass|Строка|Класс драйвера.|
+|driverClass|String|Класс драйвера.|
 |applicableDeviceCount|Int32|Количество устройств, для которых применим этот драйвер.|
 |approvalStatus|[driverApprovalStatus](../resources/intune-softwareupdate-driverapprovalstatus.md)|Состояние утверждения для этого драйвера. Возможные значения: `needsReview`, `declined`, `approved`, `suspended`.|
 |category|[driverCategory](../resources/intune-softwareupdate-drivercategory.md)|Категория для этого драйвера. Возможные значения: `recommended`, `previouslyApproved`, `other`.|

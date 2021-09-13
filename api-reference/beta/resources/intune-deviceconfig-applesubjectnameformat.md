@@ -2,15 +2,15 @@
 title: тип enum appleSubjectNameFormat
 description: Параметры формата subject Name для устройств Apple.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 47312c52ca9828f5c40bfd1b0075f8e6b459de9d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 177dca7a2029761655406cfdde97a7aff7a942bb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818802"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59106352"
 ---
 # <a name="applesubjectnameformat-enum-type"></a>тип enum appleSubjectNameFormat
 

@@ -2,15 +2,15 @@
 title: Удаление userExperienceAnalyticsDeviceStartupHistory
 description: Удаляет пользователяExperienceAnalyticsDeviceStartupHistory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 528f7d90c843856d36db29d8e1ec30c197c370ef
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2c5f5d62eb7543e621a2ff9a2134b0d4ce47cc4d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790551"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097273"
 ---
 # <a name="delete-userexperienceanalyticsdevicestartuphistory"></a>Удаление userExperienceAnalyticsDeviceStartupHistory
 
@@ -29,7 +29,7 @@ ms.locfileid: "58790551"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

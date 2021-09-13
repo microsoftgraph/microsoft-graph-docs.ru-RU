@@ -2,15 +2,15 @@
 title: Обновление deviceManagementConfigurationSettingDefinition
 description: Обновление свойств объекта deviceManagementConfigurationSettingDefinition.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 46270705a9543f79a07f05c39ca1666e9c2cb19c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cae559080a9d9b789342a59edf1dc54e5eac18cc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804171"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097392"
 ---
 # <a name="update-devicemanagementconfigurationsettingdefinition"></a>Обновление deviceManagementConfigurationSettingDefinition
 
@@ -58,10 +58,10 @@ PATCH /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurat
 |:---|:---|:---|
 |применимость|[deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|Сведения о том, какие параметры устройства применимы к|
 |accessTypes|[deviceManagementConfigurationSettingAccessTypes](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingaccesstypes.md)|Режим доступа к режиму чтения и записи параметра. Возможные значения: `none`, `add`, `copy`, `delete`, `get`, `replace`, `execute`.|
-|keywords|Коллекция String|Маркеры для поиска параметров на|
-|infoUrls|Коллекция String|Список ссылок, дополнительные сведения о параметре можно найти по адресу|
+|keywords|Коллекция объектов string|Маркеры для поиска параметров на|
+|infoUrls|Коллекция объектов string|Список ссылок, дополнительные сведения о параметре можно найти по адресу|
 |возникновение|[deviceManagementConfigurationSettingOccurrence](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingoccurrence.md)|Указывает, требуется ли параметр или нет.|
-|baseUri|Строка|Базовый путь CSP|
+|baseUri|String|Базовый путь CSP|
 |offsetUri|String|Смещение пути CSP из базы|
 |rootDefinitionId|String|Определение корневого параметра, если это параметр ребенка.|
 |categoryId|String|Указывает группу области, в которой параметр настроен в указанном поставщике служб конфигурации (CSP)|
@@ -70,7 +70,7 @@ PATCH /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurat
 |visibility|[deviceManagementConfigurationSettingVisibility](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvisibility.md)|Настройка области видимости для UX. Возможные значения: `none`, `settingsCatalog`, `template`.|
 |referredSettingInformationList|[коллекция deviceManagementConfigurationReferredSettingInformation](../resources/intune-deviceconfigv2-devicemanagementconfigurationreferredsettinginformation.md)|Список переданных сведений о параметрах.|
 |id|String|Идентификатор элемента|
-|description|Строка|Описание элемента|
+|description|String|Описание элемента|
 |helpText|String|Справка текста элемента|
 |name|String|Имя элемента|
 |displayName|String|Отображение имени элемента|

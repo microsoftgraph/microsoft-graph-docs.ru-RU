@@ -2,15 +2,15 @@
 title: Обновление groupPolicyPresentationTextBox
 description: Обновление свойств объекта groupPolicyPresentationTextBox.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 65cb87a10f13316b1bea244ceae841b2915b2645
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ef381cf37175a64421ae3f310624c093a5c56c95
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815794"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59112161"
 ---
 # <a name="update-grouppolicypresentationtextbox"></a>Обновление groupPolicyPresentationTextBox
 
@@ -58,7 +58,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |id|String|Ключ объекта. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |defaultValue|String|Локализованная строка по умолчанию, отображаемая в текстовом окне. По умолчанию это значение пусто.|
-|обязательно|Логический|Требование ввести значение в текстовом окне. Значение по умолчанию − ложь.|
+|обязательно|Логическое|Требование ввести значение в текстовом окне. Значение по умолчанию − ложь.|
 |maxLength|Int64|Неподписаный целый ряд, который указывает максимальное количество текстовых символов. Значение по умолчанию — 1023.|
 
 

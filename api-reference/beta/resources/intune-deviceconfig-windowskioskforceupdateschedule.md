@@ -2,15 +2,15 @@
 title: тип ресурса windowsKioskForceUpdateSchedule
 description: Windows 10 расписания принудительного обновления для устройств Киоска.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c152afe00d8614b0196b86fc954515f153d8169e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 417ca7a81b14c51f1f9876618dc68e5b65f961c1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801103"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086514"
 ---
 # <a name="windowskioskforceupdateschedule-resource-type"></a>тип ресурса windowsKioskForceUpdateSchedule
 
@@ -29,7 +29,7 @@ Windows 10 расписания принудительного обновлен�
 |recurrence|[windows10AppsUpdateRecurrence](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|Расписание повторения. Возможные значения: `none`, `daily`, `weekly`, `monthly`.|
 |dayofWeek|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md)|День недели. Возможные значения: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
 |dayofMonth|Int32|День месяца. Допустимые значения от 1 до 31|
-|runImmediatelyIfAfterStartDateTime|Логический|Если верно, выполняет задачу немедленно, если StartDateTime находится в прошлом, то в другом случае выполняется при следующем повторе.|
+|runImmediatelyIfAfterStartDateTime|Логическое|Если верно, выполняет задачу немедленно, если StartDateTime находится в прошлом, то в другом случае выполняется при следующем повторе.|
 
 ## <a name="relationships"></a>Связи
 Нет

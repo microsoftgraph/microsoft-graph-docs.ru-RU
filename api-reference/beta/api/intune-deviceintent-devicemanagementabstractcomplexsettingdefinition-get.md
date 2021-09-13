@@ -2,15 +2,15 @@
 title: Get deviceManagementAbstractComplexSettingDefinition
 description: Чтение свойств и связей объекта deviceManagementAbstractComplexSettingDefinition.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ba04030e04813a7d80723274fc4b6a3265e982e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bfc389ba89312754c0c24363a183f937a090a376
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806378"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133214"
 ---
 # <a name="get-devicemanagementabstractcomplexsettingdefinition"></a>Get deviceManagementAbstractComplexSettingDefinition
 

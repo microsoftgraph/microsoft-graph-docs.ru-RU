@@ -2,15 +2,15 @@
 title: тип ресурса teamworkActivityTopic
 description: Представляет тему уведомления о канале действий.
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: fe34a16382d3a2e806fd0c95fe9d09d55c3e2dbea4f3cea1e7d861f05f9af1b4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0438234e1e771fc822cf2f5d5742ffa14cf72e36
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54185469"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123904"
 ---
 # <a name="teamworkactivitytopic-resource-type"></a>тип ресурса teamworkActivityTopic
 

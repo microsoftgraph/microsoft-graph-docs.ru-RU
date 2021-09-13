@@ -2,15 +2,15 @@
 title: Список macOSSoftwareUpdateCategorySummaries
 description: Список свойств и связей объектов macOSSoftwareUpdateCategorySummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e8d902dfbc8f3c564a42fcf364390e77d7566e5d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d95e69b9d5c504f9f82ab933bd3e9ccca64b9e5e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789146"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59112736"
 ---
 # <a name="list-macossoftwareupdatecategorysummaries"></a>Список macOSSoftwareUpdateCategorySummaries
 
@@ -29,7 +29,7 @@ ms.locfileid: "58789146"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
