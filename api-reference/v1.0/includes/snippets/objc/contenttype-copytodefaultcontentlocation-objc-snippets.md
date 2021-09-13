@@ -1,25 +1,32 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 3b1e6c8375dd3a08a4d9f61d5b14e461bfdab9b1f017e18affec4d2294b677d4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5fde4ac40ecce5a88fb76ddd7bde3e24c4581cba
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57430462"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147653"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/drive/items/{id}/workbook/names/{name}/range/clear"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/sites/{siteId}/contentTypes/{contentTypeId}/copyToDefaultContentLocation"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
-NSString *applyTo = @"applyTo-value";
-payloadDictionary[@"applyTo"] = applyTo;
+MSGraphItemReference *sourceFile = [[MSGraphItemReference alloc] init];
+MSGraphSharepointIds *sharepointIds = [[MSGraphSharepointIds alloc] init];
+[sharepointIds setListId:@"e2ecf63b-b0fd-48f7-a54a-d8c15479e3b0"];
+[sharepointIds setListItemId:@"2"];
+[sourceFile setSharepointIds:sharepointIds];
+payloadDictionary[@"sourceFile"] = sourceFile;
+
+NSString *destinationFileName = @"newname.txt";
+payloadDictionary[@"destinationFileName"] = destinationFileName;
 
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];
 [urlRequest setHTTPBody:data];

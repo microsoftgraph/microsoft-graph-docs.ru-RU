@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса RangeFont
 description: Этот объект представляет атрибуты шрифта (имя, размер, цвет и т. д.) для объекта.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 3754449b328f8b6d1217970b352cc11b28e998cf2e1b4f931c0f106eb97dc1ed
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 760883a43ef534dc52ab69a098f9d9f688d46172
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152268"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143708"
 ---
 # <a name="rangefont-resource-type"></a>Тип ресурса RangeFont
 

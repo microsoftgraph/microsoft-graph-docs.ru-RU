@@ -2,15 +2,15 @@
 title: Тип ресурса managedAppOperation
 description: Представляет операцию, примененную к регистрации приложения.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3a1f8e98ec5abea6b692ea4933bfa9244218ffb7a8be642a2e4b1f5584d5324d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 01036699ccafdc177faa8b9abf2192604cc86766
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184629"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142567"
 ---
 # <a name="managedappoperation-resource-type"></a>Тип ресурса managedAppOperation
 

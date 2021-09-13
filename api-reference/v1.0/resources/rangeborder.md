@@ -2,15 +2,15 @@
 title: Тип ресурса RangeBorder
 description: Представляет границу объекта.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: ad8cbd941b1af5a3a694be308ea2b5c0065a5e05b2f58b02c98c5e8d7bc26398
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3fe1c55ca1cac12ac5514c8b703be4d85254044f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246621"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143785"
 ---
 # <a name="rangeborder-resource-type"></a>Тип ресурса RangeBorder
 
@@ -32,7 +32,7 @@ ms.locfileid: "54246621"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |color|string|HTML-код, представляющий цвет линии границы в виде #RRGGBB (например, FFA500) или в виде ключевого слова (например, orange).|
-|id|строка|Представляет идентификатор границы. Возможные значения: `EdgeTop` `EdgeBottom` , , , , , , `EdgeLeft` `EdgeRight` `InsideVertical` `InsideHorizontal` `DiagonalDown` `DiagonalUp` . Только для чтения.|
+|id|string|Представляет идентификатор границы. Возможные значения: `EdgeTop` `EdgeBottom` , , , , , , `EdgeLeft` `EdgeRight` `InsideVertical` `InsideHorizontal` `DiagonalDown` `DiagonalUp` . Только для чтения.|
 |sideIndex|string|Постоянное значение, указывающее определенную сторону границы. Возможные значения: `EdgeTop` `EdgeBottom` , , , , , , `EdgeLeft` `EdgeRight` `InsideVertical` `InsideHorizontal` `DiagonalDown` `DiagonalUp` . Только для чтения.|
 |style|string|Одна из констант стиля линии, определяющая стиль линии границы. Возможные значения: `None` `Continuous` , , , , , , `Dash` `DashDot` `DashDotDot` `Dot` `Double` `SlantDashDot` .|
 |weight|string|Определяет толщину границы вокруг диапазона. Допустимые значения: `Hairline`, `Thin`, `Medium`, `Thick`.|

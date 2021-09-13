@@ -2,15 +2,15 @@
 title: Удаление объекта windowsInformationProtectionPolicy
 description: Удаляет объект windowsInformationProtectionPolicy.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a5ed70b6be3444c07a4ba77e0290b4ff1abccbbc3c309b94f283dbd13289eb78
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 73bc87ecdbc5ef85d92cbccbd9b1e0c8ca1b1a6d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54252321"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147110"
 ---
 # <a name="delete-windowsinformationprotectionpolicy"></a>Удаление объекта windowsInformationProtectionPolicy
 
@@ -27,7 +27,7 @@ ms.locfileid: "54252321"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,10 +41,10 @@ DELETE /deviceAppManagement/windowsInformationProtectionPolicies/{windowsInforma
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

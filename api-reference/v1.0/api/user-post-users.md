@@ -2,15 +2,15 @@
 title: Создание пользователя
 description: С помощью этого API можно создать объект User.
 author: jpettere
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 88cc987d63914f3c6fa6b361e6536f3ceb2629d9
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 8bc2b64751364ca70fc185e62683baedf1fe2136
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912028"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143953"
 ---
 # <a name="create-user"></a>Создание пользователя
 

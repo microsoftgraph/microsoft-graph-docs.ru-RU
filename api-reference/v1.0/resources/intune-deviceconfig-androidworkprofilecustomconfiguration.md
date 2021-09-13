@@ -2,15 +2,15 @@
 title: тип ресурса androidWorkProfileCustomConfiguration
 description: Настраиваемая конфигурация профиля работы Android
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 966e092393ac2f705cbc57b1157730352e224dec3bc1709fcee5ee32014878f2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 50d9ad9c45503276441979360a9c206a246230f0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238064"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139858"
 ---
 # <a name="androidworkprofilecustomconfiguration-resource-type"></a>тип ресурса androidWorkProfileCustomConfiguration
 

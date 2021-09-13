@@ -1,16 +1,16 @@
 ---
 title: Список openShiftChangeRequests
 description: Извлечение списка объектов openShiftChangeRequest в команде.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ff8bbd602ac4b4e65ca57f7268749fafef8eb1ed
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 144edd07af0825e7f00a046b25076ee6aa75f2ab
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039302"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085444"
 ---
 # <a name="list-openshiftchangerequests"></a>Список openShiftChangeRequests
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/v1.0/teams/{id}/schedule/openShiftChangeRequests
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

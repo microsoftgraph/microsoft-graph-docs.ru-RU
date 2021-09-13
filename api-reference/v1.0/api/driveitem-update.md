@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Обновление файла или папки
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 description: Обновление метаданных ресурса DriveItem по идентификатору или пути.
 doc_type: apiPageType
-ms.openlocfilehash: 01456ff44b20641b13b2718c20e87ae601ef764f
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 4af377c0f03436fa6364c347dce985f84fae3711
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240194"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037987"
 ---
 # <a name="update-driveitem-properties"></a>Обновление свойств ресурса DriveItem
 
@@ -53,8 +53,7 @@ PATCH /users/{user-id}/drive/items/{item-id}
 
 Укажите в тексте запроса значения обновляемых свойств.
 
-Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств.
-Для достижения максимальной оптимальной производительности в приложении не следует указывать свойства, которые не были изменены.
+Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения максимальной оптимальной производительности в приложении не следует указывать свойства, которые не были изменены.
 
 ## <a name="response"></a>Отклик
 

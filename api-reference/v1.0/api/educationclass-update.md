@@ -2,15 +2,15 @@
 title: Update educationClass
 description: Обновление свойств курса.
 author: mlafleur
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5340a05df5068942c2f895c9858e2f5cd280e24a
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 3e32688d0dd469b3d91df102dabb20e0f19bcea8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231964"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147432"
 ---
 # <a name="update-educationclass"></a>Update educationClass
 
@@ -43,14 +43,14 @@ PATCH /education/classes/{id}
 
 | Свойство             | Тип                                               | Описание                                                        |
 | :------------------- | :------------------------------------------------- | :----------------------------------------------------------------- |
-| displayName          | Строка                                             | Название курса.                                                 |
+| displayName          | String                                             | Название курса.                                                 |
 | mailNickname         | String                                             | Почтовое имя для отправки почты всем участникам, если это возможно.    |
-| description          | Строка                                             | Описание курса.                                          |
+| description          | String                                             | Описание курса.                                          |
 | createdBy            | [identitySet](../resources/identityset.md)         | Объект, который создал курс.                                       |
 | classCode            | String                                             | Код курса, используемый учебным заведением для идентификации курса.               |
 | externalId           | String                                             | Идентификатор курса из системы синхронизации.                           |
 | externalSource       | educationExternalSource                            | Способ создания этого курса. Возможные значения: `sis` , `manual`   |
-| externalSourceDetail | Строка                                             | Имя внешнего источника, из которого были созданы эти ресурсы. |
+| externalSourceDetail | String                                             | Имя внешнего источника, из которого были созданы эти ресурсы. |
 | оценка                | String                                             | Уровень класса.                                          |
 | term                 | [educationTerm](../resources/educationterm.md)     | Срок для этого курса.                                               |
 
@@ -94,7 +94,7 @@ Content-length: 224
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
