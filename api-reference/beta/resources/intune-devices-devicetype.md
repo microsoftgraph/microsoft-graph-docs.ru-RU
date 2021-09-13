@@ -2,15 +2,15 @@
 title: Тип enum deviceType
 description: Тип устройства.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b0745f21f35e889f9ea035bd41fb1254ec69c0a3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9721fa0001fd388fb885d7cf150022027cf9b4f1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818984"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125843"
 ---
 # <a name="devicetype-enum-type"></a>Тип enum deviceType
 
@@ -36,7 +36,7 @@ ms.locfileid: "58818984"
 |iPhone|8 |iPhone.|
 |iPad|9 |iPad.|
 |iPod|10 |iPodTouch.|
-|Android|11 |Android.|
+|Android|11|Android.|
 |iSocConsumer|12 |iSocConsumer.|
 |unix|13|Unix.|
 |macMDM|14 |Клиент Mac OS X с помощью встроенного агента MDM.|

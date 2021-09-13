@@ -2,15 +2,15 @@
 title: Создание depOnboardingSetting
 description: Создайте новый объект depOnboardingSetting.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f3f804b849140902a36b95694060924f03d6fc8f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6949a4dccaf15fd40b2e4cc32438f761e4e6c0ae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802609"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124870"
 ---
 # <a name="create-deponboardingsetting"></a>Создание depOnboardingSetting
 
@@ -29,7 +29,7 @@ ms.locfileid: "58802609"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +53,7 @@ POST /deviceManagement/depOnboardingSettings
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|UUID объекта.|
+|id|String|UUID объекта.|
 |appleIdentifier|String|ID Apple, используемый для получения текущего маркера.|
 |tokenExpirationDateTime|DateTimeOffset|По истечении срока действия маркера.|
 |lastModifiedDateTime|DateTimeOffset|Когда служба была на борту.|
@@ -62,10 +62,10 @@ POST /deviceManagement/depOnboardingSettings
 |shareTokenWithSchoolDataSyncService|Логический|Включено ли совместное использование маркеров Dep с Синхронизация сведений о школе службой.|
 |lastSyncErrorCode|Int32|Код ошибки, сообщаемой Apple во время последней синхронизации dep.|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md);|Получает или задает тип маркера Dep. Возможные значения: `none`, `dep`, `appleSchoolManager`.|
-|tokenName|Строка|Friendly Name for Dep Token|
+|tokenName|String|Friendly Name for Dep Token|
 |syncedDeviceCount|Int32|Получает синхронизированное количество устройств|
-|dataSharingConsentGranted|Логический|Согласие, предоставленное для обмена данными с службой Apple Dep|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
+|dataSharingConsentGranted|Логическое|Согласие, предоставленное для обмена данными с службой Apple Dep|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity.|
 
 
 

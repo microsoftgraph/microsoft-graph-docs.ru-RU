@@ -2,15 +2,15 @@
 title: Удаление iosScepCertificateProfile
 description: Удаляет iosScepCertificateProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b6a2bc4a5e45591082104f93677a55aacc92051f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cbf763cdd2deb553f8f21412aa3fbd5703414e31
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817294"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143169"
 ---
 # <a name="delete-iosscepcertificateprofile"></a>Удаление iosScepCertificateProfile
 

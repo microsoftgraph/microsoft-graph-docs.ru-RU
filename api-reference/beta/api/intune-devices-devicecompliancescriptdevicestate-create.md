@@ -2,15 +2,15 @@
 title: Создание deviceComplianceScriptDeviceState
 description: Создание нового объекта deviceComplianceScriptDeviceState.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a8b31205c4f551c7ca50c5169fcbb24d0b259ab
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: efc1b776f48a116dab9ac506d2980378dd894ba4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807099"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108214"
 ---
 # <a name="create-devicecompliancescriptdevicestate"></a>Создание deviceComplianceScriptDeviceState
 
@@ -58,8 +58,8 @@ POST /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/device
 |lastStateUpdateDateTime|DateTimeOffset|Последний период выполнения сценария соответствия требованиям устройства|
 |expectedStateUpdateDateTime|DateTimeOffset|Следующий период выполнения сценария соответствия требованиям к устройству|
 |lastSyncDateTime|DateTimeOffset|Последний раз, когда расширение управления Intune синхронизировали с Intune|
-|scriptOutput|Строка|Выход сценария обнаружения|
-|scriptError|Строка|Ошибка из сценария обнаружения|
+|scriptOutput|String|Выход сценария обнаружения|
+|scriptError|String|Ошибка из сценария обнаружения|
 
 
 

@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementSettingFileConstraint
 description: Ограничение, принудательное выполнение расширения файла, приемлемо для данного параметра
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 63db39cac736e22f219bcf0953ff287d5dc9078c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 44ed7289dce896803c1efae057807310ff76c561
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818092"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134894"
 ---
 # <a name="devicemanagementsettingfileconstraint-resource-type"></a>тип ресурса deviceManagementSettingFileConstraint
 
@@ -28,7 +28,7 @@ ms.locfileid: "58818092"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|supportedExtensions|Коллекция String|Допустимые расширения файлов для загрузки для этого параметра|
+|supportedExtensions|Коллекция объектов string|Допустимые расширения файлов для загрузки для этого параметра|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -2,15 +2,15 @@
 title: Get deviceManagementIntent
 description: Чтение свойств и связей объекта deviceManagementIntent.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b985310f770dd39600c3a27fad688193fefd4d77
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c3ee27c8da1314359b5b89bff1212b7a05e134eb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785908"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124961"
 ---
 # <a name="get-devicemanagementintent"></a>Get deviceManagementIntent
 
@@ -29,7 +29,7 @@ ms.locfileid: "58785908"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

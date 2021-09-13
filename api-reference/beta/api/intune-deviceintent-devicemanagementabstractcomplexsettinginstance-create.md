@@ -2,15 +2,15 @@
 title: Создание deviceManagementAbstractComplexSettingInstance
 description: Создание нового объекта deviceManagementAbstractComplexSettingInstance.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 37d312e216febf0049616830d23a4db33cccc928
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b6fded1430c8d393f97d8a07976fbb849701bfd6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820000"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133200"
 ---
 # <a name="create-devicemanagementabstractcomplexsettinginstance"></a>Создание deviceManagementAbstractComplexSettingInstance
 

@@ -2,15 +2,15 @@
 title: Удаление macOSPkcsCertificateProfile
 description: Удаляет macOSPkcsCertificateProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7e56f89a1d0e2dee03251ed04586539cfa209d16
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 71d749f6533223aa40aac32186a732dedfbd5eda
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791700"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59135741"
 ---
 # <a name="delete-macospkcscertificateprofile"></a>Удаление macOSPkcsCertificateProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "58791700"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

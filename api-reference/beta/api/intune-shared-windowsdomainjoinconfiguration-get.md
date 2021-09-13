@@ -2,15 +2,15 @@
 title: Получить windowsDomainJoinConfiguration
 description: Чтение свойств и связей объекта windowsDomainJoinConfiguration.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d4888e964c31b567f471ef914bb41ab938e8a066
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: eeae40e9ef0ee9b8cad53165852ef6c6a4bff510
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795909"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59132318"
 ---
 # <a name="get-windowsdomainjoinconfiguration"></a>Получить windowsDomainJoinConfiguration
 
@@ -32,7 +32,7 @@ ms.locfileid: "58795909"
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 | &nbsp;&nbsp; **Регистрация** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application||
+|Для приложений||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 | &nbsp;&nbsp; **Регистрация** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 

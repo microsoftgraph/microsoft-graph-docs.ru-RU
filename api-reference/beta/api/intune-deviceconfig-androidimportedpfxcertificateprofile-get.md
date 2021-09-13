@@ -2,15 +2,15 @@
 title: Get androidImportedPFXCertificateProfile
 description: Чтение свойств и связей объекта androidImportedPFXCertificateProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c5d604caa293618e52cc9a28634228ec9beac69a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 87223e5b9a3b6639401f1f69a31f63088238ef58
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58822042"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137240"
 ---
 # <a name="get-androidimportedpfxcertificateprofile"></a>Get androidImportedPFXCertificateProfile
 

@@ -2,15 +2,15 @@
 title: тип ресурса userExperienceAnalyticsDevicePerformance
 description: Объект пользовательской аналитики производительности устройств содержит сведения о производительности загрузки устройств.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1cef96408d71093d530f122ff67e9353e91339e5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c79bbd7b12c82fec38cacf6835c5dd7675ad8558
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818065"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125815"
 ---
 # <a name="userexperienceanalyticsdeviceperformance-resource-type"></a>тип ресурса userExperienceAnalyticsDevicePerformance
 

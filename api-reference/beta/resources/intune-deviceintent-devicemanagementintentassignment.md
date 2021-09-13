@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementIntentAssignment
 description: Объект назначения намерения
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6d74e15f0f1213cd86c35760c814afab4b3326ef
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8cc2ef384439c11d8be7a21ffc4965cd49d056ca
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795194"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137961"
 ---
 # <a name="devicemanagementintentassignment-resource-type"></a>тип ресурса deviceManagementIntentAssignment
 
@@ -34,7 +34,7 @@ ms.locfileid: "58795194"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|ID назначения|
+|id|String|ID назначения|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения|
 
 ## <a name="relationships"></a>Связи

@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementConfigurationCategory
 description: Политика конфигурации управления устройствами
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 60850512e44de514892fcd998962e7a37197d343
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c36cbd2ce5d2b4f47852fcd7946ac97f11c3ab35
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784830"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126004"
 ---
 # <a name="devicemanagementconfigurationcategory-resource-type"></a>тип ресурса deviceManagementConfigurationCategory
 
@@ -34,17 +34,17 @@ ms.locfileid: "58784830"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор элемента|
-|description|Строка|Описание элемента|
-|helpText|Строка|Справка текста элемента|
+|id|String|Идентификатор элемента|
+|description|String|Описание элемента|
+|helpText|String|Справка текста элемента|
 |name|String|Имя элемента|
-|displayName|Строка|Отображение имени элемента|
+|displayName|String|Отображение имени элемента|
 |платформы|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Типы платформ, которые имеются в этой категории. Возможные значения: `none`, `macOS`, `windows10X`, `windows10`.|
 |технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Типы технологий, которые имеют параметры в категории. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`.|
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Указывает, что категория содержит параметры, используемые для соответствия требованиям или конфигурации. Возможные значения: `none`, `configuration`.|
-|parentCategoryId|Строка|Родительский id категории.|
-|rootCategoryId|Строка|Корневой id категории.|
-|childCategoryIds|Коллекция String|Список детских ids этой категории.|
+|parentCategoryId|String|Родительский id категории.|
+|rootCategoryId|String|Корневой id категории.|
+|childCategoryIds|Коллекция объектов string|Список детских ids этой категории.|
 
 ## <a name="relationships"></a>Связи
 Нет

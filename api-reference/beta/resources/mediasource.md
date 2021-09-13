@@ -2,15 +2,15 @@
 author: MarcMroz
 description: Ресурс mediaSource содержит метаданные об источнике элемента диска мультимедиа (аудио или видео).
 title: Тип ресурса mediaSource
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 32e9fc10fe9795af0393e67b2ce2e2eef827ee7a12140c37e129180589bbe359
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fac36dbd1112289e289b6f74ce16e5a971076e60
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54193414"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124114"
 ---
 # <a name="mediasource-resouce-type"></a>тип resouce mediaSource
 

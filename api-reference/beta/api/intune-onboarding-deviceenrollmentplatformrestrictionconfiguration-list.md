@@ -2,15 +2,15 @@
 title: Список устройствEnrollmentPlatformRestrictionConfigurations
 description: Список свойств и связей объектов deviceEnrollmentPlatformRestrictionConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 17407f10e9ebd3addcf6a8aeceba244818442e4f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d8dabb2e3e31d16cc42279f45c9f50e2e0100c01
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804073"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59121356"
 ---
 # <a name="list-deviceenrollmentplatformrestrictionconfigurations"></a>Список устройствEnrollmentPlatformRestrictionConfigurations
 

@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementConfigurationDependentOn
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6a19f2b7ffe20954bf34cb01ffb0889c0294f56d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f216b43ae577d670763a3fe3c2b26f3a14d84072
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784501"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128951"
 ---
 # <a name="devicemanagementconfigurationdependenton-resource-type"></a>тип ресурса deviceManagementConfigurationDependentOn
 
@@ -25,8 +25,8 @@ ms.locfileid: "58784501"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|dependentOn|Строка|Идентификатор родительского параметра и параметра родительского параметра, зависящих от|
-|parentSettingId|Строка|Идентификатор родительского или родительского идентификатора параметров, зависящих от|
+|dependentOn|String|Идентификатор родительского параметра и параметра родительского параметра, зависящих от|
+|parentSettingId|String|Идентификатор родительского или родительского идентификатора параметров, зависящих от|
 
 ## <a name="relationships"></a>Связи
 Нет

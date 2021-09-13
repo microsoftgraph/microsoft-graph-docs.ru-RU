@@ -1,16 +1,16 @@
 ---
 title: тип ресурса yammerActivityUserDetail
 description: Ниже указано представление ресурса в формате JSON.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 5f257632052959b189fb216419ac83211190f2e19c536a924f2d03a318589ab0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e1145e8eea4dbe11a467d2e4dbd704f5ec66e229
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249694"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128566"
 ---
 # <a name="yammeractivityuserdetail-resource-type"></a>тип ресурса yammerActivityUserDetail
 
@@ -22,14 +22,14 @@ ms.locfileid: "54249694"
 | :---------------- | :---------------- |
 | reportRefreshDate | Дата              |
 | userPrincipalName | String            |
-| displayName       | Строка            |
-| userState         | Строка            |
+| displayName       | String            |
+| userState         | String            |
 | stateChangeDate   | Дата              |
 | lastActivityDate  | Дата              |
 | postedCount       | Int64             |
 | readCount         | Int64             |
 | likedCount        | Int64             |
-| assignedProducts  | Коллекция String |
+| assignedProducts  | Коллекция объектов string |
 | reportPeriod      | String            |
 
 ## <a name="json-representation"></a>Представление JSON

@@ -2,15 +2,15 @@
 title: тип ресурса deviceHealthScriptRunSummary
 description: Содержит свойства для сводки запуска скрипта управления устройствами.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 511c953f9c2d9ca9f126d433eb7477fc816759e0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3c8e001772e886d1d9d5fa0835d8ace5e30c560e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806224"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124135"
 ---
 # <a name="devicehealthscriptrunsummary-resource-type"></a>тип ресурса deviceHealthScriptRunSummary
 
@@ -31,7 +31,7 @@ ms.locfileid: "58806224"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ скрипта для службы службы устройств запустите объект сводки. Это свойство доступно только для чтения.|
+|id|String|Ключ скрипта для службы службы устройств запустите объект сводки. Это свойство доступно только для чтения.|
 |noIssueDetectedDeviceCount|Int32|Количество устройств, для которых сценарий обнаружения не нашел проблемы и устройство является здоровым|
 |issueDetectedDeviceCount|Int32|Количество устройств, для которых скрипт обнаружения обнаружил проблему|
 |detectionScriptErrorDeviceCount|Int32|Количество устройств, на которых при выполнении скрипта обнаружения произошла ошибка и не была завершена|

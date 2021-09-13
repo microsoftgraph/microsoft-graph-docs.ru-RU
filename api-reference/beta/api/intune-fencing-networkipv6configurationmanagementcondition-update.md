@@ -2,15 +2,15 @@
 title: Обновление networkIPv6ConfigurationManagementCondition
 description: Обновление свойств объекта networkIPv6ConfigurationManagementCondition.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 439c0fe5aa508e745c9c86b352a812bf6be9329e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: aede9ca84aed0d80d8ffc6285c155dac55b2403b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789420"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138745"
 ---
 # <a name="update-networkipv6configurationmanagementcondition"></a>Обновление networkIPv6ConfigurationManagementCondition
 
@@ -29,7 +29,7 @@ ms.locfileid: "58789420"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -57,15 +57,15 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 |id|String|Уникальный идентификатор для состояния управления. Созданное в системе значение, назначенное при его создания. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |uniqueName|Строка|Уникальное имя для состояния управления. Используется в выражениях условий управления. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |displayName|String|Администратор определил имя условия управления. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|description|Строка|Администратор определил описание условия управления. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|description|String|Администратор определил описание условия управления. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |createdDateTime|DateTimeOffset|Время создания условия управления. Сгенерированная сторона службы. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения условия управления. Обновленная сторона службы. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |eTag|String|ETag состояния управления. Обновленная сторона службы. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |applicablePlatforms|[коллекция devicePlatformType](../resources/intune-fencing-deviceplatformtype.md)|Применимые платформы для этого условия управления. Унаследованный от [managementCondition](../resources/intune-fencing-managementcondition.md). Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
-|ipV6Prefix|Строка|Подсеть IPv6, к которая должна быть подключена. например, 2001:db8::/32|
-|ipV6Gateway|Строка|Адрес шлюза IPv6. например, 2001:db8::1|
-|ipV6DNSServerList|Коллекция String|DNS-серверы IPv6, настроенные для адаптеров.|
-|dnsSuffixList|Коллекция String|Допустимые Суффиксы DNS для текущей сети. например, seattle.contoso.com|
+|ipV6Prefix|String|Подсеть IPv6, к которая должна быть подключена. например, 2001:db8::/32|
+|ipV6Gateway|String|Адрес шлюза IPv6. например, 2001:db8::1|
+|ipV6DNSServerList|Коллекция объектов string|DNS-серверы IPv6, настроенные для адаптеров.|
+|dnsSuffixList|Коллекция объектов string|Допустимые Суффиксы DNS для текущей сети. например, seattle.contoso.com|
 
 
 

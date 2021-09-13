@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса fileHash
 description: Содержит конфиденциальную информацию о хеше файла (криптографии и конфиденциальном расположении).
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 27b076a449e97d194262cb67393f25ebd9ef512d09c3d9fb41639cd18c7012ce
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e9ccd1839e7d73ed430e4de77b431a307ec5b089
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224931"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141223"
 ---
 # <a name="filehash-resource-type"></a>Тип ресурса fileHash
 
@@ -23,7 +23,7 @@ ms.locfileid: "54224931"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |hashType|[enum fileHashType](filehashtypeenumtype.md)|Тип hash файла. Возможные значения: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.|
-|hashValue|Строка|Значение hash файла.|
+|hashValue|String|Значение hash файла.|
 
 ## <a name="json-representation"></a>Представление JSON
 

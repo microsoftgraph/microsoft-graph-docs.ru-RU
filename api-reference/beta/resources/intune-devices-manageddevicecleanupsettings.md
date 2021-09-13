@@ -2,15 +2,15 @@
 title: тип ресурса managedDeviceCleanupSettings
 description: Определите правило, когда администратор хочет очистить устройства.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 716474849f38e62eeacedbd299290e50d8cf15fd
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d072d69ec6206fdadc2fc0d96bebf8a852da8b94
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820893"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137808"
 ---
 # <a name="manageddevicecleanupsettings-resource-type"></a>тип ресурса managedDeviceCleanupSettings
 

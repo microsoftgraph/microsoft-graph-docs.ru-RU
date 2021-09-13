@@ -2,15 +2,15 @@
 title: Обязанности списка
 description: Получите personResponsibilities из свойства навигации ответственности.
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 33e2155f436364cc5f7be25c55ec2086c04572ad
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2217963f97fe4f8e264bfad6d03ad23e101303c6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50441061"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143092"
 ---
 # <a name="list-responsibilities"></a>Обязанности списка
 Пространство имен: microsoft.graph
@@ -25,7 +25,7 @@ ms.locfileid: "50441061"
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Приложение                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
+| Для приложений                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -55,7 +55,7 @@ GET /users/{id | userPrincipalName}/responsibilities
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

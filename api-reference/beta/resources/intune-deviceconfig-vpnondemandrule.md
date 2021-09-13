@@ -2,15 +2,15 @@
 title: тип ресурса vpnOnDemandRule
 description: Определение правила VPN по требованию.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4bcf5b6331777600bb847dc2aad4a921c2745702
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cd9999ee2fdae94c21848535e39dc93f88949839
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815101"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146102"
 ---
 # <a name="vpnondemandrule-resource-type"></a>тип ресурса vpnOnDemandRule
 
@@ -25,13 +25,13 @@ ms.locfileid: "58815101"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ssids|Коллекция String|Идентификаторы набора сетевых служб (SSID).|
-|dnsSearchDomains|Коллекция String|Домены поиска DNS.|
-|probeUrl|Строка|URL-адрес для зонда. Если этот URL-адрес успешно извлечен (возврат кода состояния HTTP 200) без перенаправления, это правило совпадает.|
+|ssids|Коллекция объектов string|Идентификаторы набора сетевых служб (SSID).|
+|dnsSearchDomains|Коллекция объектов string|Домены поиска DNS.|
+|probeUrl|String|URL-адрес для зонда. Если этот URL-адрес успешно извлечен (возврат кода состояния HTTP 200) без перенаправления, это правило совпадает.|
 |action|[VPNOnDemandRuleConnectionAction](../resources/intune-deviceconfig-vpnondemandruleconnectionaction.md)|Действие. Возможные значения: `connect`, `evaluateConnection`, `ignore`, `disconnect`.|
 |domainAction|[VPNOnDemandRuleConnectionDomainAction](../resources/intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)|Действие домена (применимо только при оценке подключения Action). Возможные значения: `connectIfNeeded`, `neverConnect`.|
-|домены|Коллекция String|Домены (применимы только при оценке подключения Action).|
-|probeRequiredUrl|Строка|Url-адрес Probe Required (применим только при оценке подключения Action и подключения DomainAction).|
+|домены|Коллекция объектов string|Домены (применимы только при оценке подключения Action).|
+|probeRequiredUrl|String|Url-адрес Probe Required (применим только при оценке подключения Action и подключения DomainAction).|
 
 ## <a name="relationships"></a>Связи
 Нет

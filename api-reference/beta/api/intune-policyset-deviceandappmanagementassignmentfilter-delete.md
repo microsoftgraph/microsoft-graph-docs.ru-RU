@@ -2,15 +2,15 @@
 title: Удаление устройстваAndAppManagementAssignmentFilter
 description: Удаляет устройствоAndAppManagementAssignmentFilter.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d90d732bef78017cd0f52e3b0f5b981e38a0e66b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2389c34dfebf018b7246f3e2f845070eaeeba0c3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805480"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59124632"
 ---
 # <a name="delete-deviceandappmanagementassignmentfilter"></a>Удаление устройстваAndAppManagementAssignmentFilter
 

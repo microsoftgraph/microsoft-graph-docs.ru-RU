@@ -2,15 +2,15 @@
 title: Функция getManagedAppPolicies
 description: Получает ограничения для определенного пользователя.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fd04b5453a8c6f32f010ff1af2db09c9285bc929
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 27b08e68d0968960ccfac62355b2ca9c58bad339
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793063"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59132473"
 ---
 # <a name="getmanagedapppolicies-function"></a>Функция getManagedAppPolicies
 
@@ -31,7 +31,7 @@ ms.locfileid: "58793063"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application||
+|Для приложений||
 | &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос

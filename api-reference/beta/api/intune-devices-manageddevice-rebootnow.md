@@ -2,15 +2,15 @@
 title: Действие rebootNow
 description: Перезагрузка устройства
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1739d4c911240e6aad8dea948e4f4e285054ed93
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 367c59d01c65331d52a320a4d910ef5bc2951208
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820984"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59121818"
 ---
 # <a name="rebootnow-action"></a>Действие rebootNow
 

@@ -2,15 +2,15 @@
 title: тип enum meteredConnectionLimitType
 description: Ограничение на дозу подключения Параметры.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bdcf918042c22cced461430e55870bcad7aab04a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5c5d7ffa61f771c664d6fcd987e4b4d67c9e0e47
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821678"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146648"
 ---
 # <a name="meteredconnectionlimittype-enum-type"></a>тип enum meteredConnectionLimitType
 

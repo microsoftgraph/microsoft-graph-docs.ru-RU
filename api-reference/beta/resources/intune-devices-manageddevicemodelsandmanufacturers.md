@@ -2,15 +2,15 @@
 title: тип ресурса managedDeviceModelsAndManufacturers
 description: Модели и производство meatadata для управляемых устройств в учетной записи
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 300fbc2dc03a4a8394449cc8a6575378feea1cc2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1b560cb95766d3216b566d33cfe00db2689c6efd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820886"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137800"
 ---
 # <a name="manageddevicemodelsandmanufacturers-resource-type"></a>тип ресурса managedDeviceModelsAndManufacturers
 
@@ -25,8 +25,8 @@ ms.locfileid: "58820886"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|deviceModels|Коллекция String|Список моделей управляемых устройств в учетной записи|
-|deviceManufacturers|Коллекция String|Список производителей управляемых устройств в учетной записи|
+|deviceModels|Коллекция объектов string|Список моделей управляемых устройств в учетной записи|
+|deviceManufacturers|Коллекция объектов string|Список производителей управляемых устройств в учетной записи|
 
 ## <a name="relationships"></a>Связи
 Нет

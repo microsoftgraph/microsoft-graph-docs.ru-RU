@@ -2,15 +2,15 @@
 title: тип enum deviceManagementConfigurationWindowsSkus
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: eccdee087d0b801b9cbd17c18ce97c5e32a51b93
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f9fad7039a6e3cefe55b7f037e04a82dcb49a49c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806644"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148167"
 ---
 # <a name="devicemanagementconfigurationwindowsskus-enum-type"></a>тип enum deviceManagementConfigurationWindowsSkus
 
@@ -36,7 +36,7 @@ ms.locfileid: "58806644"
 |iot|8 |Пока не задокументировано.|
 |iotEnterprise|9 |Пока не задокументировано.|
 |holoLens|10 |Пока не задокументировано.|
-|holoLensEnterprise|11 |Пока не задокументировано.|
+|holoLensEnterprise|11|Пока не задокументировано.|
 |holographicForBusiness|12 |Пока не задокументировано.|
 |windowsMultiSession|13|Пока не задокументировано.|
 |surfaceHub|14 |Пока не задокументировано.|

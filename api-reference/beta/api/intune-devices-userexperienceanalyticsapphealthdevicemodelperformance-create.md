@@ -2,15 +2,15 @@
 title: Создание userExperienceAnalyticsAppHealthDeviceModelPerformance
 description: Создайте новый объект userExperienceAnalyticsAppHealthDeviceModelPerformance.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 87acf4fdfb3fe8680c51f8e3ea8cba95289606c7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8b4af784a758d383359e8a5d636a81b516b3c620
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819958"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59102824"
 ---
 # <a name="create-userexperienceanalyticsapphealthdevicemodelperformance"></a>Создание userExperienceAnalyticsAppHealthDeviceModelPerformance
 

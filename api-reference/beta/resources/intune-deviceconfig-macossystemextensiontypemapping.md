@@ -2,15 +2,15 @@
 title: тип ресурса macOSSystemExtensionTypeMapping
 description: Представляет сопоставление между идентификаторами группы для расширений системы macOS и типами расширения системы.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4ae89a8d47026faf68fc44bdd6c88428b9f2d222
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fc2ff377d081c478a23f419c29b3f773f0c9c021
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782478"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59131289"
 ---
 # <a name="macossystemextensiontypemapping-resource-type"></a>тип ресурса macOSSystemExtensionTypeMapping
 
@@ -25,7 +25,7 @@ ms.locfileid: "58782478"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|teamIdentifier|Строка|Получает или задает идентификатор группы, используемый для подписи расширения системы.|
+|teamIdentifier|String|Получает или задает идентификатор группы, используемый для подписи расширения системы.|
 |allowedTypes|[macOSSystemExtensionType](../resources/intune-deviceconfig-macossystemextensiontype.md)|Получает или задает допустимые типы расширения системы macOS. Возможные значения: `driverExtensionsAllowed`, `networkExtensionsAllowed`, `endpointSecurityExtensionsAllowed`.|
 
 ## <a name="relationships"></a>Связи

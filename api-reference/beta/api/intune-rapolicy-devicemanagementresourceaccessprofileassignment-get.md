@@ -2,15 +2,15 @@
 title: Get deviceManagementResourceAccessProfileAssignment
 description: Чтение свойств и связей объекта deviceManagementResourceAccessProfileAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 15ce2e9332cfcf8b818f3182448f8ba3474ec528
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fb9e8f708d49fd3a9045454397f2a2b6fd32db9b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820746"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59135517"
 ---
 # <a name="get-devicemanagementresourceaccessprofileassignment"></a>Get deviceManagementResourceAccessProfileAssignment
 

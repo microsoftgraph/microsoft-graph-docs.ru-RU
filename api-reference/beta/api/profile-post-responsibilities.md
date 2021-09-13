@@ -2,15 +2,15 @@
 title: Создание обязанностей
 description: Создание объекта новых обязанностей.
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 086bc8af800c70a9282a04606f82818a135d65de
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 4202dbcfd268ac7e77a1d6e02865b0ed4a4b2774
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50440967"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141412"
 ---
 # <a name="create-personresponsibility"></a>Создание personResponsibility
 Пространство имен: microsoft.graph
@@ -52,7 +52,7 @@ POST /users/{id | userPrincipalName}/responsibilities
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|collaborationTags|Коллекция строк|Содержит теги сценариев работы, которые пользователь связал с интересом. Допустимые значения в коллекции: `askMeAbout` , `ableToMentor` , `wantsToLearn` `wantsToImprove` .|
+|collaborationTags|Коллекция объектов string|Содержит теги сценариев работы, которые пользователь связал с интересом. Допустимые значения в коллекции: `askMeAbout` , `ableToMentor` , `wantsToLearn` `wantsToImprove` .|
 |description|String|Описание ответственности.|
 |displayName|String|Содержит удобное имя для ответственности. |
 |вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|

@@ -2,15 +2,15 @@
 title: Delete detectedApp
 description: Удаляет объект detectedApp.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 47ed0a6cbecdbdc94555de10dc765c4fe957a88f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c5cdaa3575b79532de0bddb5512081d66ecd8312
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796749"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108242"
 ---
 # <a name="delete-detectedapp"></a>Delete detectedApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "58796749"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

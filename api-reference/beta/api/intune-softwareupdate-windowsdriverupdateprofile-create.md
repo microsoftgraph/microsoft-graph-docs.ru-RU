@@ -2,15 +2,15 @@
 title: Создание windowsDriverUpdateProfile
 description: Создайте новый объект WindowsDriverUpdateProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 69747cab460a77d36af5244ae04601d1917e1eb3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d50d9d5ce7be2e1932a2a603f0b5d388073374b0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801401"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138500"
 ---
 # <a name="create-windowsdriverupdateprofile"></a>Создание windowsDriverUpdateProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "58801401"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,16 +53,16 @@ POST /deviceManagement/windowsDriverUpdateProfiles
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|ID политики Intune.|
-|displayName|Строка|Имя отображения для профиля.|
-|description|Строка|Описание профиля, указанного пользователем.|
+|id|String|ID политики Intune.|
+|displayName|String|Имя отображения для профиля.|
+|description|String|Описание профиля, указанного пользователем.|
 |approvalType|[driverUpdateProfileApprovalType](../resources/intune-softwareupdate-driverupdateprofileapprovaltype.md)|Тип утверждения профиля обновления драйвера. Например, ручное или автоматическое утверждение. Возможные значения: `manual`, `automatic`.|
 |deviceReporting|Int32|Количество устройств, сообщив об этом профиле|
 |newUpdates|Int32|Количество новых обновлений драйвера, доступных для этого профиля.|
 |deploymentDeferralInDays|Int32|Параметры отсрочки развертывания в днях, применимые только при автоматическом утверждении ApprovalType.|
 |createdDateTime|DateTimeOffset|Время создания профиля.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения профиля.|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого объекта обновления драйвера.|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого объекта обновления драйвера.|
 
 
 

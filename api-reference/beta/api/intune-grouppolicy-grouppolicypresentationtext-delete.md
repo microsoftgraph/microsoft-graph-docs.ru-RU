@@ -2,15 +2,15 @@
 title: Удаление groupPolicyPresentationText
 description: Удаляет группуPolicyPresentationText.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a2b684911327072facc7214fc98c220c2493d768
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e69273f52ae66d376ce90854446d2a4da46d660d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819937"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59112225"
 ---
 # <a name="delete-grouppolicypresentationtext"></a>Удаление groupPolicyPresentationText
 

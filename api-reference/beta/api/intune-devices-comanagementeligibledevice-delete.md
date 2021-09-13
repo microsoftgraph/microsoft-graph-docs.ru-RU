@@ -2,15 +2,15 @@
 title: Удаление comanagementEligibleDevice
 description: Удаляет comanagementEligibleDevice.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f4809dbf8f5b2af66e91298888aa488c43243ed6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2037c40f0a8f164322b7e04780a6ed24f1af681d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805151"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122140"
 ---
 # <a name="delete-comanagementeligibledevice"></a>Удаление comanagementEligibleDevice
 

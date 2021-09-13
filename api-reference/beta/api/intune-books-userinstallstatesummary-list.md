@@ -2,15 +2,15 @@
 title: Перечисление объектов userInstallStateSummary
 description: Список свойств и связей объектов userInstallStateSummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: eaf91875bc2e12b251db6688041b1ef37b177ef4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 61c2a32f21789628bff668b30bff7a217253c36d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788901"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133851"
 ---
 # <a name="list-userinstallstatesummaries"></a>Перечисление объектов userInstallStateSummary
 
@@ -29,7 +29,7 @@ ms.locfileid: "58788901"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

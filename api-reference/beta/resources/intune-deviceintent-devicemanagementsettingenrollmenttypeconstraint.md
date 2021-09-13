@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementSettingEnrollmentTypeConstraint
 description: Ограничение, которое обеспечивает соблюдение типов регистрации, примененных к параметру
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7150ffb7be4f829a47c4924c423866ee5e08dae1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dbc0cc62fefad3ddd6411a964edceafc486ab9f9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783220"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134915"
 ---
 # <a name="devicemanagementsettingenrollmenttypeconstraint-resource-type"></a>тип ресурса deviceManagementSettingEnrollmentTypeConstraint
 
@@ -28,7 +28,7 @@ ms.locfileid: "58783220"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|enrollmentTypes|Коллекция String|Список типов регистрации|
+|enrollmentTypes|Коллекция объектов string|Список типов регистрации|
 
 ## <a name="relationships"></a>Связи
 Нет

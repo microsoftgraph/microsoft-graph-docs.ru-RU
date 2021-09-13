@@ -2,15 +2,15 @@
 title: Удаление windowsKioskConfiguration
 description: Удаляет windowsKioskConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cdf614fdd0ad8dd1f8862644f347b2f067eed174
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e0950544bb2ca85aaec77f4316aa9aa4a1734735
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806833"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122504"
 ---
 # <a name="delete-windowskioskconfiguration"></a>Удаление windowsKioskConfiguration
 

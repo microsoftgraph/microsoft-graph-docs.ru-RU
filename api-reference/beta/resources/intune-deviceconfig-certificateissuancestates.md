@@ -2,15 +2,15 @@
 title: тип переопечатки certificateIssuanceStates
 description: Параметры состояния выдачи сертификатов.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8f3439f53269bc6126d098016805dd541ad4ad58
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0d4dd08d3068052562098d407ef13d007d6de8a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797298"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127467"
 ---
 # <a name="certificateissuancestates-enum-type"></a>тип переопечатки certificateIssuanceStates
 
@@ -36,7 +36,7 @@ ms.locfileid: "58797298"
 |issuePending|8 |Пока не задокументировано.|
 |выдан|9 |Пока не задокументировано.|
 |responseProcessingFailed|10 |Пока не задокументировано.|
-|responsePending|11 |Пока не задокументировано.|
+|responsePending|11|Пока не задокументировано.|
 |enrollmentSucceeded|12 |Пока не задокументировано.|
 |enrollmentNotNeeded|13|Пока не задокументировано.|
 |отменено|14 |Пока не задокументировано.|

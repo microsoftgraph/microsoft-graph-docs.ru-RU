@@ -2,15 +2,15 @@
 title: функция getRoleScopeTagsByIds
 description: Пока не задокументировано.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 190085587a79ab4dee4b51347ac006738ed41a32
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5a032d7bb4480b2416aa8905e194976ff032f50b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787934"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59132619"
 ---
 # <a name="getrolescopetagsbyids-function"></a>функция getRoleScopeTagsByIds
 
@@ -29,7 +29,7 @@ ms.locfileid: "58787934"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Управление доступом на основе ролей (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application||
+|Для приложений||
 | &nbsp; &nbsp; **Управление доступом на основе ролей (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос

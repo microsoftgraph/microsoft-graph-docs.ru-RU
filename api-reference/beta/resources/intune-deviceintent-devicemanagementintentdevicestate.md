@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementIntentDeviceState
 description: Объект, представляют состояние устройства для намерения
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5a1eec4f8073a3ad0032483bbfe60a9d71280238
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cca33420504e14c4452cde88f47a8ab4f6282b6f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792577"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137954"
 ---
 # <a name="devicemanagementintentdevicestate-resource-type"></a>тип ресурса deviceManagementIntentDeviceState
 
@@ -34,7 +34,7 @@ ms.locfileid: "58792577"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|The ID|
+|id|String|The ID|
 |userPrincipalName|String|Основное имя пользователя, которое сообщается на устройстве|
 |userName|String|Имя пользователя, которое сообщается на устройстве|
 |deviceDisplayName|String|Имя устройства, которое сообщается|

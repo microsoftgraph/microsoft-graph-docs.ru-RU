@@ -2,15 +2,15 @@
 title: Создание dataSharingConsent
 description: Создание нового объекта dataSharingConsent.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9edf5a73e49615599b8e6a25c6299fb8c08abcb7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: efad8570c1170748cac027ef778352a16bbe4da0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797376"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122091"
 ---
 # <a name="create-datasharingconsent"></a>Создание dataSharingConsent
 
@@ -29,7 +29,7 @@ ms.locfileid: "58797376"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,13 +53,13 @@ POST /deviceManagement/dataSharingConsents
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|ID согласия для общего доступа к данным|
-|serviceDisplayName|Строка|Имя отображения потока работы службы|
-|termsUrl|Строка|TermsUrl для согласия на обмен данными|
-|granted|Логический|Предоставлено состояние для согласия на обмен данными|
+|id|String|ID согласия для общего доступа к данным|
+|serviceDisplayName|String|Имя отображения потока работы службы|
+|termsUrl|String|TermsUrl для согласия на обмен данными|
+|granted|Логическое|Предоставлено состояние для согласия на обмен данными|
 |grantDateTime|DateTimeOffset|Для этой учетной записи было предоставлено согласие на время|
-|grantedByUpn|Строка|Upn пользователя, который предоставил согласие для этой учетной записи|
-|grantedByUserId|Строка|UserId пользователя, который предоставил согласие для этой учетной записи|
+|grantedByUpn|String|Upn пользователя, который предоставил согласие для этой учетной записи|
+|grantedByUserId|String|UserId пользователя, который предоставил согласие для этой учетной записи|
 
 
 

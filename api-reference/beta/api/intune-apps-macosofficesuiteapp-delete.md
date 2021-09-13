@@ -2,15 +2,15 @@
 title: Удаление объекта macOSOfficeSuiteApp
 description: Удаляет объект macOSOfficeSuiteApp.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 15abe006ac872f28b9fb7aa0c884a1c6f82fd2e8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 72d20cc774f0ededc136295649c54be94739490e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787549"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122786"
 ---
 # <a name="delete-macosofficesuiteapp"></a>Удаление объекта macOSOfficeSuiteApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "58787549"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

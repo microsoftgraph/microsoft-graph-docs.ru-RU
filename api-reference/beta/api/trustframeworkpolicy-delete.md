@@ -1,16 +1,16 @@
 ---
 title: Удаление trustFrameworkPolicy
 description: Эта операция удаляет существующий объект trustFrameworkPolicy из клиента Azure AD B2C.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0ebca87f50af1d4db6c4b6053bcabcaf9aa672d3
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 988e6783e3f7c7edf7cf4adbd8702d4e2431c9d3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50444954"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141293"
 ---
 # <a name="delete-trustframeworkpolicy"></a>Удаление trustFrameworkPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "50444954"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Policy.ReadWrite.TrustFramework|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение|Policy.ReadWrite.TrustFramework|
+|Для приложений|Policy.ReadWrite.TrustFramework|
 
 Рабочая или учебная учетная запись должна быть глобальным администратором клиента.
 
@@ -45,7 +45,7 @@ DELETE /trustFramework/policies/{id}
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

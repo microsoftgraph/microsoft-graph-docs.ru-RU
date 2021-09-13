@@ -2,15 +2,15 @@
 title: List groupPolicyPresentationValues
 description: Список свойств и связей объектов groupPolicyPresentationValue.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 33276b1e694012aff1a9b8532aeefaa05b43b26a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a87dfe57214ddfb6516d5102f4040e4ac48d3c56
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58814198"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59107794"
 ---
 # <a name="list-grouppolicypresentationvalues"></a>List groupPolicyPresentationValues
 

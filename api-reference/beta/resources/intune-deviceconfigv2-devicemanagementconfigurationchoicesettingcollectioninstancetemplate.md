@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementConfigurationChoiceSettingCollectionInstanceTemplate
 description: Шаблон экземпляра параметра выбор коллекции
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d27e119d1dba2fa1e03c49da3c3d3191fc564ae2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 601780e1d882a34b04bbb4dabc21390eda7ed0f9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799467"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129049"
 ---
 # <a name="devicemanagementconfigurationchoicesettingcollectioninstancetemplate-resource-type"></a>тип ресурса deviceManagementConfigurationChoiceSettingCollectionInstanceTemplate
 
@@ -28,11 +28,11 @@ ms.locfileid: "58799467"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|settingInstanceTemplateId|Строка|Настройка кода шаблона экземпляра, унаследованный от [deviceManagementConfigurationSettingInstanceTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplate.md)|
-|settingDefinitionId|Строка|Параметр Определения Id, унаследованный от [deviceManagementConfigurationSettingInstanceTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplate.md)|
+|settingInstanceTemplateId|String|Настройка кода шаблона экземпляра, унаследованный от [deviceManagementConfigurationSettingInstanceTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplate.md)|
+|settingDefinitionId|String|Параметр Определения Id, унаследованный от [deviceManagementConfigurationSettingInstanceTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplate.md)|
 |isRequired|Boolean|Указывает, должна ли политика указать этот параметр. Унаследованный от [deviceManagementConfigurationSettingInstanceTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplate.md)|
 |choiceSettingCollectionValueTemplate|[коллекция deviceManagementConfigurationChoiceSettingValueTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingvaluetemplate.md)|Шаблон значения параметра выбор коллекции|
-|allowUnmanagedValues|Логический|Связанная политика может при добавлении значений, которые не присутствуют в шаблоне.|
+|allowUnmanagedValues|Логическое|Связанная политика может при добавлении значений, которые не присутствуют в шаблоне.|
 
 ## <a name="relationships"></a>Связи
 Нет

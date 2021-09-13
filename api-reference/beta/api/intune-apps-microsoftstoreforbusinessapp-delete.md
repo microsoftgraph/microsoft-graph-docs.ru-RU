@@ -2,15 +2,15 @@
 title: Удаление объекта microsoftStoreForBusinessApp
 description: Удаляет объект microsoftStoreForBusinessApp.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0caf06f9128eba6005e7702ffe3639c6651f2bec
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 147826709479af9ce0cd8688139bc88c727dca1a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803211"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125304"
 ---
 # <a name="delete-microsoftstoreforbusinessapp"></a>Удаление объекта microsoftStoreForBusinessApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "58803211"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

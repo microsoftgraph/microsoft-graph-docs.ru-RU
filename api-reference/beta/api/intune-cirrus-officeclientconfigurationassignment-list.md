@@ -1,16 +1,16 @@
 ---
 title: Список officeClientConfigurationAssignments
 description: Список свойств и связей объектов officeClientConfigurationAssignment.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2de9a38686f65c77b96b60cc4ba72248679e3f85
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 70a0acc67aa0e8682817d1f0145a63954ad1d660
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819083"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133802"
 ---
 # <a name="list-officeclientconfigurationassignments"></a>Список officeClientConfigurationAssignments
 

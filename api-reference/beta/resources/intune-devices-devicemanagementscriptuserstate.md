@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementScriptUserState
 description: Содержит свойства для состояния запуска пользователя скрипта управления устройствами.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7ce60e5369fd93cd6721b56d15906203aee804f8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 683084b1505c91718e10661e8605c6c8fa7003b7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802987"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125968"
 ---
 # <a name="devicemanagementscriptuserstate-resource-type"></a>тип ресурса deviceManagementScriptUserState
 
@@ -34,7 +34,7 @@ ms.locfileid: "58802987"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ пользовательского состояния скрипта управления устройствами. Это свойство доступно только для чтения.|
+|id|String|Ключ пользовательского состояния скрипта управления устройствами. Это свойство доступно только для чтения.|
 |successDeviceCount|Int32|Количество устройств успешности для определенного пользователя.|
 |errorDeviceCount|Int32|Количество устройств ошибки для определенного пользователя.|
 |userPrincipalName|String|Имя принципа пользователя конкретного пользователя.|

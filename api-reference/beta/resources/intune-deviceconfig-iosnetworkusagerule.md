@@ -2,15 +2,15 @@
 title: Тип ресурса iosNetworkUsageRule
 description: Благодаря правилам использования сети предприятия могут определять, как управляемые приложения используют сети, например мобильные сети.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 80d051c8b22023e101a73437bb1d6d3adec2c0be
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 644f3fa1663b16239cd0fd639dd0471a849a058a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803015"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127341"
 ---
 # <a name="iosnetworkusagerule-resource-type"></a>Тип ресурса iosNetworkUsageRule
 

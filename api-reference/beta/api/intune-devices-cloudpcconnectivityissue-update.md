@@ -2,15 +2,15 @@
 title: Обновление cloudPCConnectivityIssue
 description: Обновление свойств объекта cloudPCConnectivityIssue.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b1e86835a77a4599e85a8fddb24c15ef4fc5e0a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bb557c94ae51cb015a80c0fea10b07997321c7f5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796371"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122161"
 ---
 # <a name="update-cloudpcconnectivityissue"></a>Обновление cloudPCConnectivityIssue
 
@@ -29,7 +29,7 @@ ms.locfileid: "58796371"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,13 +53,13 @@ PATCH /deviceManagement/cloudPCConnectivityIssues/{cloudPCConnectivityIssueId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта событий событий для аналитики пользовательского интерфейса.|
+|id|String|Уникальный идентификатор объекта событий событий для аналитики пользовательского интерфейса.|
 |deviceId|String|Устройство Intune устройства, с которое связано подключение.|
 |errorCode|String|Код ошибки проблемы подключения.|
 |errorDateTime|DateTimeOffset|Время начала подключения. Время отображается в формате ISO 8601 и времени скоординированного универсального времени (UTC).|
 |userId|String|Уникальный id пользователя, который инициализирует подключение.|
 |errorDescription|String|Подробное описание того, что пошло не так.|
-|recommendedAction|Строка|Рекомендуемое действие для устранения соответствующей ошибки.|
+|recommendedAction|String|Рекомендуемое действие для устранения соответствующей ошибки.|
 
 
 

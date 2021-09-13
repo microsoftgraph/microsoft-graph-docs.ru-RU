@@ -2,15 +2,15 @@
 title: Get AndroidForWorkScepCertificateProfile
 description: Чтение свойств и связей объекта AndroidForWorkScepCertificateProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ec9405d361bedb892fb450e77e18e4c574cdbfc0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3ef1950144eac417b158fd0372ecfd840cfc6352
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798716"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122665"
 ---
 # <a name="get-androidforworkscepcertificateprofile"></a>Get AndroidForWorkScepCertificateProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "58798716"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

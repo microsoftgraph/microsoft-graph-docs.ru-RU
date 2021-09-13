@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementIntentDeviceSettingStateSummary
 description: Объект, представляю который представляет сводку состояния устройства для намерения
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 37b16fe8e6095b1ab957e30b00b870560f33ae26
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7926c1eb2598e3970bb657971e2fab890cb174af
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803520"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137947"
 ---
 # <a name="devicemanagementintentdevicesettingstatesummary-resource-type"></a>тип ресурса deviceManagementIntentDeviceSettingStateSummary
 
@@ -34,7 +34,7 @@ ms.locfileid: "58803520"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|The ID|
+|id|String|The ID|
 |settingName|String|Имя параметра|
 |compliantCount|Int32|Количество устройств, соответствующих требованиям.|
 |conflictCount|Int32|Количество устройств в конфликте|

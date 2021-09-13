@@ -2,15 +2,15 @@
 title: Перечисление объектов iosCustomConfiguration
 description: Список свойств и связей объектов iosCustomConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 94942cfcd8bdc19247552b1a5257f8de693b0697
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 97bfba38994482df899162fe21f24cf470982576
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795405"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143323"
 ---
 # <a name="list-ioscustomconfigurations"></a>Перечисление объектов iosCustomConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "58795405"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

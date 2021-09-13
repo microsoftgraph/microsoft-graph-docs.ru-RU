@@ -2,15 +2,15 @@
 title: тип ресурса windowsKioskVisitor
 description: Класс, используемый для идентификации учетной записи киоска посетителей
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 38f37f434b508c06665c0d50697535602518d6f4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: de259b7fcc2105f24233a745d21d6c515aa3c207
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797530"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105932"
 ---
 # <a name="windowskioskvisitor-resource-type"></a>тип ресурса windowsKioskVisitor
 

@@ -2,15 +2,15 @@
 title: тип ресурса deviceHealthScriptIntegerParameter
 description: Свойства параметра скрипта Integer.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fda0fe9a937867ea2f61bdd0d0a2bec491ba7515
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: de488a0a84b94f554863d63bbc80482d9ce6da2f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58751939"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59144324"
 ---
 # <a name="devicehealthscriptintegerparameter-resource-type"></a>тип ресурса deviceHealthScriptIntegerParameter
 
@@ -29,7 +29,7 @@ ms.locfileid: "58751939"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |name|String|Имя парама, унаследованной от [устройстваHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
-|description|Строка|Описание парама, унаследованной от [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
+|description|String|Описание парама, унаследованной от [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
 |isRequired|Boolean|Требуется ли перенаследование парама с [устройстваHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
 |applyDefaultValueWhenNotAssigned|Логический|Применение defaultValue при не назначении унаследованных от [deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|
 |defaultValue|Int32|Значение по умолчанию параметра Integer. Допустимые значения 2147483648 2147483647|

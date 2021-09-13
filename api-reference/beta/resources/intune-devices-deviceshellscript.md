@@ -2,15 +2,15 @@
 title: Тип ресурса deviceShellScript
 description: Intune предоставит клиенту возможность запускать свои скрипты Shell на зарегистрированных устройствах Mac OS. Сценарий можно запускать один раз или периодически.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1615cf8e8292f39c13bfd019e71803dd86303c2c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cc3553e5b2ca63f7d202b1cf197429815363780e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785124"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125829"
 ---
 # <a name="deviceshellscript-resource-type"></a>Тип ресурса deviceShellScript
 
@@ -37,16 +37,16 @@ Intune предоставит клиенту возможность запуск
 |:---|:---|:---|
 |executionFrequency|Длительность|Интервал для запуска скрипта. Если сценарий не определен, он будет работать один раз|
 |retryCount|Int32|Количество случаев повторного и повторного и повторного повторного и повторного списания сценария|
-|blockExecutionNotifications|Boolean|Не уведомляет пользователя о выполнении сценария|
+|blockExecutionNotifications|Логическое|Не уведомляет пользователя о выполнении сценария|
 |id|String|Уникальный идентификатор для сценария управления устройствами.|
-|displayName|Строка|Имя сценария управления устройствами.|
-|description|Строка|Необязательное описание сценария управления устройствами.|
+|displayName|String|Имя сценария управления устройствами.|
+|description|String|Необязательное описание сценария управления устройствами.|
 |scriptContent|В двоичном формате|Содержимое скрипта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сценария управления устройствами. Это свойство доступно только для чтения.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
 |fileName|String|Имя файла скрипта.|
-|roleScopeTagIds|Коллекция String|Список ID-тегов области для этого экземпляра PowerShellScript.|
+|roleScopeTagIds|Коллекция объектов string|Список ID-тегов области для этого экземпляра PowerShellScript.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

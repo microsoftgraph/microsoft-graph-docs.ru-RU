@@ -2,15 +2,15 @@
 title: тип enum managedDeviceRemoteAction
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a8da1d5d85ce5e3c5444b41a1f655672bf799647
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 119af695547ac4e79805dcfd2b15a346b03a10d8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788943"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137758"
 ---
 # <a name="manageddeviceremoteaction-enum-type"></a>тип enum managedDeviceRemoteAction
 
@@ -36,7 +36,7 @@ ms.locfileid: "58788943"
 |setDeviceName|8 |Пока не задокументировано.|
 |syncDevice|9 |Пока не задокументировано.|
 |deprovision|10 |Имя действия deprovision.|
-|отключение|11 |Имя действия отключения.|
+|отключение|11|Имя действия отключения.|
 |reenable|12 |Имя повторного действия.|
 |moveDeviceToOrganizationalUnit|13|Имя действия moveDevicesToOU.|
 |activateDeviceEsim|14 |Имя действия для активации eSIM на устройстве.|

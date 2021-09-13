@@ -2,15 +2,15 @@
 title: Удаление iosImportedPFXCertificateProfile
 description: Удаляет iosImportedPFXCertificateProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1130cea45182075f5de4bdff8f4b753e1e64b2ae
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e94335456b62a44fdeec2080b38bd40feb7dbf82
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804402"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143218"
 ---
 # <a name="delete-iosimportedpfxcertificateprofile"></a>Удаление iosImportedPFXCertificateProfile
 

@@ -2,15 +2,15 @@
 title: List deviceAppManagementTasks
 description: Список свойств и связей объектов deviceAppManagementTask.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c9084c5cefc29b6c13a1b14c7439195fa0d3beb4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2baa7dbebf2f1cc17429eb74c0adf63946a9df8a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788298"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141881"
 ---
 # <a name="list-deviceappmanagementtasks"></a>List deviceAppManagementTasks
 
@@ -29,7 +29,7 @@ ms.locfileid: "58788298"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

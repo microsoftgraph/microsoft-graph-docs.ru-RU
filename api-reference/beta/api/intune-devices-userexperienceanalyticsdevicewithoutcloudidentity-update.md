@@ -2,15 +2,15 @@
 title: Обновление userExperienceAnalyticsDeviceWithoutCloudIdentity
 description: Обновление свойств объекта userExperienceAnalyticsDeviceWithoutCloudIdentity.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8d2461a222e3cf71aca448f1610ffe8fe3ffd775
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2868c769e7d358d674920b9c09acdb674470b993
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804360"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59132934"
 ---
 # <a name="update-userexperienceanalyticsdevicewithoutcloudidentity"></a>Обновление userExperienceAnalyticsDeviceWithoutCloudIdentity
 
@@ -53,9 +53,9 @@ PATCH /deviceManagement/userExperienceAnalyticsDevicesWithoutCloudIdentity/{user
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор устройства для клиентской аналитики пользовательского интерфейса.|
+|id|String|Уникальный идентификатор устройства для клиентской аналитики пользовательского интерфейса.|
 |deviceName|String|Клиент прикрепит имя устройства.|
-|azureAdDeviceId|Строка|Azure Active Directory Id устройства|
+|azureAdDeviceId|String|Azure Active Directory Id устройства|
 
 
 
