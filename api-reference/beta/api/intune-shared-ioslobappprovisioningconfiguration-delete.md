@@ -2,15 +2,15 @@
 title: Удаление iosLobAppProvisioningConfiguration
 description: Удаляет iosLobAppProvisioningConfiguration.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: eac52c23061e63c6d301ae8d0533ce50693b4b24
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 056f9da089fdc3a1f48a93e5ed947f00aab37b6a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794499"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59116264"
 ---
 # <a name="delete-ioslobappprovisioningconfiguration"></a>Удаление iosLobAppProvisioningConfiguration
 
@@ -31,7 +31,7 @@ ms.locfileid: "58794499"
 | &nbsp; &nbsp; **Приложения** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application||
+|Для приложений||
 | &nbsp; &nbsp; **Приложения** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementApps.ReadWrite.All|
 

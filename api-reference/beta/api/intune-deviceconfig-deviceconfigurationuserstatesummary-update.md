@@ -2,15 +2,15 @@
 title: Обновление устройстваConfigurationUserStateSummary
 description: Обновление свойств объекта deviceConfigurationUserStateSummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9bd2fa3aba1a7ef39ed63214dc3c6e1b6f321cb2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 888f7b7e831c88d8ffa5db1345c3fa3f25c0e9ee
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805614"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133480"
 ---
 # <a name="update-deviceconfigurationuserstatesummary"></a>Обновление устройстваConfigurationUserStateSummary
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/deviceConfigurationUserStateSummaries
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |unknownUserCount|Int32|Число неизвестных пользователей|
 |notApplicableUserCount|Int32|Число не применимых пользователей|
 |compliantUserCount|Int32|Количество совместимых пользователей|

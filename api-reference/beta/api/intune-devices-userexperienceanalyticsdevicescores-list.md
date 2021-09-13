@@ -2,15 +2,15 @@
 title: Список userExperienceAnalyticsDeviceScoreses
 description: Список свойств и связей объектов userExperienceAnalyticsDeviceScores.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 897a5add8e43275fcdc9198a02668ff83f97caa9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bdf4506c7a73045ecbec7aa43820989e3681ec6d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821853"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59102726"
 ---
 # <a name="list-userexperienceanalyticsdevicescoreses"></a>Список userExperienceAnalyticsDeviceScoreses
 

@@ -2,15 +2,15 @@
 author: MarcMroz
 description: Медиаресум содержит метаданные о элементе диска мультимедиа (аудио или видео).
 title: тип медиаресумов
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 5b25d24ffb566e4c7030a02ee03f691ad397553bfb8dea599877c588a1f60cdb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3dd985c7259088f41412ea5d579c1e49d99acf4c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224266"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59091204"
 ---
 # <a name="media-resouce-type"></a>тип повторного окантовки мультимедиа
 
@@ -23,7 +23,7 @@ ms.locfileid: "54224266"
 
 | Свойство                 | Тип                  | Описание                                                                                                   |
 | :----------------------- | :-------------------- | :------------------------------------------------------------------------------------------------------------ 
-| **isTranscriptionShown** | Логический               | Если файл имеет стенограмму, этот параметр управляет, если закрытые подписи /транскрипция для файла мультимедиа должны быть показаны людям во время просмотра. Read-Write.                                                    |
+| **isTranscriptionShown** | Логическое               | Если файл имеет стенограмму, этот параметр управляет, если закрытые подписи /транскрипция для файла мультимедиа должны быть показаны людям во время просмотра. Read-Write.                                                    |
 | **mediaSource**          | [mediaSource](mediaSource.md)         | Сведения об источнике мультимедиа. Только для чтения.                                                             | 
 
 

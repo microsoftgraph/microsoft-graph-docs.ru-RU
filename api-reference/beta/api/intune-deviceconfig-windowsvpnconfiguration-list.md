@@ -2,15 +2,15 @@
 title: Список windowsVpnConfigurations
 description: Список свойств и связей объектов WindowsVpnConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7f9dae346c3767ee5fc74633fc81345702fdbeba
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c5317b16bbe22ee9c3f9a6a0fcba51f84cc2497c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794639"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59116894"
 ---
 # <a name="list-windowsvpnconfigurations"></a>Список windowsVpnConfigurations
 
@@ -29,7 +29,7 @@ ms.locfileid: "58794639"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

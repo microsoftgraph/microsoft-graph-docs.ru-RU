@@ -2,15 +2,15 @@
 title: Обновление enterpriseCodeSigningCertificate
 description: Обновление свойств объекта enterpriseCodeSigningCertificate.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b9992c4bb52275e2e8b21691ec2800f000d1aa49
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c56c628adac69b83ca708695b568bd0d9d6efd03
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818507"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103664"
 ---
 # <a name="update-enterprisecodesigningcertificate"></a>Обновление enterpriseCodeSigningCertificate
 

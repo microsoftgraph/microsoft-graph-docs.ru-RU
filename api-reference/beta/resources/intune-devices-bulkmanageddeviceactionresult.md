@@ -2,15 +2,15 @@
 title: bulkManagedDeviceActionResult resource type
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 181f916d65c785dec25fb2d0f2b946af4e810a35
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 02a4d6537c8ab76f1045f4453af94255133370b3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785131"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59120124"
 ---
 # <a name="bulkmanageddeviceactionresult-resource-type"></a>bulkManagedDeviceActionResult resource type
 
@@ -25,10 +25,10 @@ ms.locfileid: "58785131"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|successfulDeviceIds|Коллекция String|Успешные устройства|
-|failedDeviceIds|Коллекция String|Сбой устройств|
-|notFoundDeviceIds|Коллекция String|Не найденные устройства|
-|notSupportedDeviceIds|Коллекция String|Не поддерживаемые устройства|
+|successfulDeviceIds|Коллекция объектов string|Успешные устройства|
+|failedDeviceIds|Коллекция объектов string|Сбой устройств|
+|notFoundDeviceIds|Коллекция объектов string|Не найденные устройства|
+|notSupportedDeviceIds|Коллекция объектов string|Не поддерживаемые устройства|
 
 ## <a name="relationships"></a>Связи
 Нет

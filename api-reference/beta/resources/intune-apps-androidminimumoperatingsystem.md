@@ -2,15 +2,15 @@
 title: Тип ресурса androidMinimumOperatingSystem
 description: Содержит свойства для минимальной версии операционной системы, необходимой для мобильного приложения Android.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9f77577b7cb0596fafb79d109a562957a47336c2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b3444ad607908e4c37b1751b5f5a8f3755ea6e7b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820557"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115627"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>Тип ресурса androidMinimumOperatingSystem
 
@@ -34,8 +34,8 @@ ms.locfileid: "58820557"
 |v5_0|Boolean|Версия 5.0 или выше.|
 |v5_1|Boolean|Версия 5.1 или выше.|
 |v6_0|Логический|Версия 6.0 или более поздней версии.|
-|v7_0|Boolean|Версия 7.0 или более поздней версии.|
-|v7_1|Логический|Версия 7.1 или более поздней версии.|
+|v7_0|Логический|Версия 7.0 или более поздней версии.|
+|v7_1|Логическое|Версия 7.1 или более поздней версии.|
 |v8_0|Boolean|Версия 8.0 или выше.|
 |v8_1|Boolean|Версия 8.1 или более поздней версии.|
 |v9_0|Boolean|Версия 9.0 или выше.|

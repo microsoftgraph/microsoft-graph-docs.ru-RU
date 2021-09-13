@@ -1,16 +1,16 @@
 ---
 title: Обновление personAward
 description: Обновление свойств объекта personAward.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: f1724f0b623c1e2b9b6ea57933509121b72c32cf
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 956a44d63438803fe9d74d66d5efc3fdce768280
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774098"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141461"
 ---
 # <a name="update-personaward"></a>Обновление personAward
 

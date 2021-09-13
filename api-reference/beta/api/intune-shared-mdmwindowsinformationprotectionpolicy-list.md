@@ -2,15 +2,15 @@
 title: Перечисление объектов mdmWindowsInformationProtectionPolicy
 description: Перечисление свойств и связей объектов mdmWindowsInformationProtectionPolicy.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e506e86575fd8aed60591cd5144915f5e3a0c16b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c6eefac3341c74d489264d170275a08e7daf8259
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804325"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59107367"
 ---
 # <a name="list-mdmwindowsinformationprotectionpolicies"></a>Перечисление объектов mdmWindowsInformationProtectionPolicy
 

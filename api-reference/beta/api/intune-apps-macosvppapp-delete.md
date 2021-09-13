@@ -2,15 +2,15 @@
 title: Удаление macOsVppApp
 description: Удаляет macOsVppApp.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d906da4eb532586ba8d25b21b84f06d210389457
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 76194e4e0b078ce8abbcae0f1f8f56da0d4d3cb7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800319"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59088747"
 ---
 # <a name="delete-macosvppapp"></a>Удаление macOsVppApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "58800319"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

@@ -2,15 +2,15 @@
 title: Список windowsAutopilotDeviceIdentities
 description: Список свойств и связей объектов windowsAutopilotDeviceIdentity.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 63efe91c5a05b41c599c03675e1ffaeb0c2cecce
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4c2ad8f0ba6efd30c4d03cfd00f75a6445a63b9c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803898"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59132731"
 ---
 # <a name="list-windowsautopilotdeviceidentities"></a>Список windowsAutopilotDeviceIdentities
 
@@ -29,7 +29,7 @@ ms.locfileid: "58803898"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

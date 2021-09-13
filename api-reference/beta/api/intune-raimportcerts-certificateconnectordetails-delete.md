@@ -2,15 +2,15 @@
 title: Удаление сертификатаConnectorDetails
 description: Удаляет сертификатConnectorDetails.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5364c2898122e16a1ff0d83c017a84c6cd9404d5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3114ccb345cf87235f2b82c90cb8fb9a1c4f08c7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816345"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59111973"
 ---
 # <a name="delete-certificateconnectordetails"></a>Удаление сертификатаConnectorDetails
 

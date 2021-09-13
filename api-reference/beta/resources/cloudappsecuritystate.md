@@ -1,16 +1,16 @@
 ---
 title: тип ресурсов cloudAppSecurityState
 description: Содержит сведения о облачном приложении (destinationServiceName, destinationServiceIp).
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: f5b82357d91889aada97c835fcab2c327c05fe143988a9ed3bf47ee293687770
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 80011803b1e73a4b0377d739c6f0d0b21e38eeb7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54253770"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126074"
 ---
 # <a name="cloudappsecuritystate-resource-type"></a>тип ресурсов cloudAppSecurityState
 
@@ -22,9 +22,9 @@ ms.locfileid: "54253770"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|destinationServiceIp|Строка|IP-адрес адреса подключения к облачному приложению/службе.|
-|destinationServiceName|Строка|Имя облачного приложения/службы (например, "Salesforce", "DropBox" и т.д.).|
-|riskScore|Строка|Оценка риска, генерируемая поставщиком и рассчитанная для облачного приложения/службы. Рекомендуемый диапазон значений 0-1, который приравнивается к проценту.|
+|destinationServiceIp|String|IP-адрес адреса подключения к облачному приложению/службе.|
+|destinationServiceName|String|Имя облачного приложения/службы (например, "Salesforce", "DropBox" и т.д.).|
+|riskScore|String|Оценка риска, генерируемая поставщиком и рассчитанная для облачного приложения/службы. Рекомендуемый диапазон значений 0-1, который приравнивается к проценту.|
 
 ## <a name="json-representation"></a>Представление JSON
 

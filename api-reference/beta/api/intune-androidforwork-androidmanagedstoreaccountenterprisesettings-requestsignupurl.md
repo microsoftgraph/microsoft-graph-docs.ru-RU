@@ -2,15 +2,15 @@
 title: Действие requestSignupUrl
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c40aa84a84c2a56f82b3051cc6ff4f16f0aa9e8b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6ac12260ba2cac278d8a1da104aa6a3082f68e00
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804465"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103720"
 ---
 # <a name="requestsignupurl-action"></a>Действие requestSignupUrl
 

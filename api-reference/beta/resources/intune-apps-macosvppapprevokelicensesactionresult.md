@@ -2,15 +2,15 @@
 title: тип ресурса macOsVppAppRevokeLicensesActionResult
 description: Определяет результаты действий в приложениях Vpp MacOS, содержит унаследованные свойства для ActionResult.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b43a7f23c16ceb300db95a2924938df3b0a70526
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8044581eaf8ae41e7b3353f599c5f2a68c50964a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789694"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129133"
 ---
 # <a name="macosvppapprevokelicensesactionresult-resource-type"></a>тип ресурса macOsVppAppRevokeLicensesActionResult
 
@@ -26,7 +26,7 @@ ms.locfileid: "58789694"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |userId|String|UserId, связанный с действием.|
-|managedDeviceId|Строка|DeviceId, связанный с действием.|
+|managedDeviceId|String|DeviceId, связанный с действием.|
 |totalLicensesCount|Int32|Количество лицензий, для которых была предпринята попытка отзыва.|
 |failedLicensesCount|Int32|Количество лицензий, для которых отозвался сбой.|
 |actionFailureReason|[vppTokenActionFailureReason](../resources/intune-shared-vpptokenactionfailurereason.md)|Причина отказа от отзыва лицензий. Возможные значения: `none`, `appleFailure`, `internalError`, `expiredVppToken`, `expiredApplePushNotificationCertificate`.|

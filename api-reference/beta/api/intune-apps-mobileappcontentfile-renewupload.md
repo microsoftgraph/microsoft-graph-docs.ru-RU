@@ -2,15 +2,15 @@
 title: Действие renewUpload
 description: Обновляет универсальный код ресурса SAS для отправки файла приложения.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e4ca05c6b67356c94809345e947f1993fa546529
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9847176be5ccb75734a70d258c2ca936f2760074
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820148"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59083266"
 ---
 # <a name="renewupload-action"></a>Действие renewUpload
 

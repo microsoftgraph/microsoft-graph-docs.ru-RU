@@ -2,15 +2,15 @@
 title: type enum administratorConfiguredDeviceComplianceState
 description: Состояние соответствия требованиям к устройству, настроенное администратором,
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d8cf78004ce729ddcff541944ebda195699cd69e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b9b3dda8ccf343a63aa8dc96d60a58fc08d409ae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785775"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148069"
 ---
 # <a name="administratorconfigureddevicecompliancestate-enum-type"></a>type enum administratorConfiguredDeviceComplianceState
 

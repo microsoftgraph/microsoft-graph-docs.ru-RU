@@ -2,15 +2,15 @@
 title: тип ресурса deviceHealthScriptParameter
 description: Базовые свойства параметра скрипта.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ddfd8eb3d251060961429c511114a7ebc1dd7286
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 65102807cee2d369e658f2c0de1ffc9822380015
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793819"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59144303"
 ---
 # <a name="devicehealthscriptparameter-resource-type"></a>тип ресурса deviceHealthScriptParameter
 
@@ -26,9 +26,9 @@ ms.locfileid: "58793819"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |name|String|Имя парама|
-|description|Строка|Описание парама|
+|description|String|Описание парама|
 |isRequired|Boolean|Требуется ли парам|
-|applyDefaultValueWhenNotAssigned|Boolean|Применение defaultValue при не назначении|
+|applyDefaultValueWhenNotAssigned|Логическое|Применение defaultValue при не назначении|
 
 ## <a name="relationships"></a>Связи
 Нет

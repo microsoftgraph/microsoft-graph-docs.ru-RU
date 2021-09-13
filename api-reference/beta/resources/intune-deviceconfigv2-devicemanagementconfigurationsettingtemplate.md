@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementConfigurationSettingTemplate
 description: Шаблон параметра
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 78499c007ae2e2e7659fe49bd91ada31e6230197
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e59dcabfd6dfc86ff0e8aea1034135aa2d45539c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804283"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101214"
 ---
 # <a name="devicemanagementconfigurationsettingtemplate-resource-type"></a>тип ресурса deviceManagementConfigurationSettingTemplate
 
@@ -34,7 +34,7 @@ ms.locfileid: "58804283"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ этого шаблона параметра в шаблоне политики, который содержит его. Автоматически созданный.|
+|id|String|Ключ этого шаблона параметра в шаблоне политики, который содержит его. Автоматически созданный.|
 |settingInstanceTemplate|[deviceManagementConfigurationSettingInstanceTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplate.md)|Настройка шаблона экземпляра|
 
 ## <a name="relationships"></a>Связи

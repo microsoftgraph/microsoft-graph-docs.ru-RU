@@ -2,15 +2,15 @@
 title: тип ресурса groupPolicyPresentationDropdownList
 description: Представляет элемент dropdownList ADMX и элемент списка ADMX.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9fe4410f0f6d433b62874a5d8ddc6d8ef4e13712
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 703690c2ee30baae912558158bfc90e9bc825bda
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817056"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085995"
 ---
 # <a name="grouppolicypresentationdropdownlist-resource-type"></a>тип ресурса groupPolicyPresentationDropdownList
 
@@ -42,7 +42,7 @@ ms.locfileid: "58817056"
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |defaultItem|[groupPolicyPresentationDropdownListItem](../resources/intune-grouppolicy-grouppolicypresentationdropdownlistitem.md)|Локализованное значение строки, определяющие выбор списка элементов по умолчанию.|
 |элементы|[коллекция groupPolicyPresentationDropdownListItem](../resources/intune-grouppolicy-grouppolicypresentationdropdownlistitem.md)|Представляет набор локализованных имен отображения и связанных с ними значений.|
-|обязательно|Boolean|Требование ввести значение в поле параметра. Значение по умолчанию  false.|
+|обязательно|Логическое|Требование ввести значение в поле параметра. Значение по умолчанию  false.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

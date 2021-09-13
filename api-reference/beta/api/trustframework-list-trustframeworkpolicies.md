@@ -1,16 +1,16 @@
 ---
 title: Список trustFrameworkPolicies
 description: В этой операции перечислены все объекты trustFrameworkPolicy в клиенте Azure AD B2C.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 872c26dd3b129fd47bb779ee3c10faf1419670af
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e721fd299724526ad51eba565a66380d6e9ebb38
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50443316"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59111574"
 ---
 # <a name="list-trustframeworkpolicies"></a>Список trustFrameworkPolicies
 
@@ -28,7 +28,7 @@ ms.locfileid: "50443316"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Policy.Read.All, Policy.ReadWrite.TrustFramework|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение|Policy.Read.All, Policy.ReadWrite.TrustFramework|
+|Для приложений|Policy.Read.All, Policy.ReadWrite.TrustFramework|
 
 Рабочая или учебная учетная запись должна быть глобальным администратором клиента.
 
@@ -48,7 +48,7 @@ GET /trustFramework/policies/
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

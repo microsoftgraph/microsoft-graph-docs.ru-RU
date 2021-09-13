@@ -2,15 +2,15 @@
 title: Обновление объекта defaultManagedAppProtection
 description: Обновляет свойства объекта defaultManagedAppProtection.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b4ed80781bfeab97ad36e36e57d794236cfc73ff
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 943e3c40b8d5dfcfab1f883e40480640e98db726
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804906"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59096923"
 ---
 # <a name="update-defaultmanagedappprotection"></a>Обновление объекта defaultManagedAppProtection
 
@@ -53,11 +53,11 @@ PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtec
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|description|Строка|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|displayName|String|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|description|String|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |id|String|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |version|String|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |periodOfflineBeforeAccessCheck|Duration|Время до проверки доступа, когда устройство не подключено к Интернету. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
@@ -82,15 +82,15 @@ PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtec
 |printBlocked|Boolean|Указывает, разрешена ли печать из управляемых приложений. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |fingerprintBlocked|Boolean|Указывает, можно ли использовать сканер отпечатков пальцев вместо ПИН-кода, если для параметра PinRequired установлено значение True. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |disableAppPinIfDevicePinIsSet|Boolean|Указывает, обязательно ли использовать ПИН-код приложения, если установлен ПИН-код устройства. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|maximumRequiredOsVersion|Строка|Версии, размером больше указанной версии, заблокируют доступ к данным компании управляемому приложению. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|maximumWarningOsVersion|Строка|Версии, размером больше указанной версии, заблокируют доступ к данным компании управляемому приложению. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|maximumWipeOsVersion|Строка|Версии, размером больше указанной версии, заблокируют доступ к данным компании управляемому приложению. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|maximumRequiredOsVersion|String|Версии, размером больше указанной версии, заблокируют доступ к данным компании управляемому приложению. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|maximumWarningOsVersion|String|Версии, размером больше указанной версии, заблокируют доступ к данным компании управляемому приложению. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|maximumWipeOsVersion|String|Версии, размером больше указанной версии, заблокируют доступ к данным компании управляемому приложению. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumRequiredOsVersion|String|В более старых версиях управляемое приложение не сможет получить доступ к данным компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumWarningOsVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение о невозможности получить доступ к данным компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumRequiredAppVersion|String|В более старых версиях управляемое приложение не сможет получить доступ к данным компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumWarningAppVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|minimumWipeOsVersion|Строка|Версии, менее или равные указанной версии, стирают управляемое приложение и связанные с ним данные компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|minimumWipeAppVersion|Строка|Версии, менее или равные указанной версии, стирают управляемое приложение и связанные с ним данные компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|minimumWipeOsVersion|String|Версии, менее или равные указанной версии, стирают управляемое приложение и связанные с ним данные компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|minimumWipeAppVersion|String|Версии, менее или равные указанной версии, стирают управляемое приложение и связанные с ним данные компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет управляемое поведение приложения, блок или стирка, когда устройство либо коренится, либо jailbroken, если устройствоComplianceRequired настроено на верность. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `block`, `wipe`, `warn`.|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет управляемое поведение приложения, блок или стирка, основываясь на максимальном количестве попыток повторного повторного действия пин-кода. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `block`, `wipe`, `warn`.|
 |pinRequiredInsteadOfBiometricTimeout|Длительность|Времяпрепровия в минутах для пин-кода приложения, а не биометрического пароля, наследуемого из [управляемогоAppProtection](../resources/intune-mam-managedappprotection.md)|
@@ -100,7 +100,7 @@ PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtec
 |managedBrowser|[managedBrowserType](../resources/intune-mam-managedbrowsertype.md)|Указывает, в каких управляемых браузерах (ы) необходимо открыть ссылки в Интернете. Когда это свойство настроено, managedBrowserToOpenLinksRequired должно быть верным. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `notConfigured`, `microsoftEdge`.|
 |maximumAllowedDeviceThreatLevel|[managedAppDeviceThreatLevel](../resources/intune-mam-managedappdevicethreatlevel.md)|Максимальный допустимый уровень угрозы устройства, как сообщается в приложении MTD, унаследованной от [управляемогоAppProtection.](../resources/intune-mam-managedappprotection.md) Возможные значения: `notConfigured`, `secured`, `low`, `medium`, `high`.|
 |mobileThreatDefenseRemediationAction|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет, какие действия необходимо принять, если порог угрозы для защиты от мобильных угроз не установлен. Warn не является поддерживаемой ценностью для этого свойства, унаследованной от [управляемогоAppProtection.](../resources/intune-mam-managedappprotection.md) Возможные значения: `block`, `wipe`, `warn`.|
-|blockDataIngestionIntoOrganizationDocuments|Логический|Указывает, может ли пользователь приносить данные в документы орг. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|blockDataIngestionIntoOrganizationDocuments|Логическое|Указывает, может ли пользователь приносить данные в документы орг. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |allowedDataIngestionLocations|[коллекция managedAppDataIngestionLocation](../resources/intune-mam-managedappdataingestionlocation.md)|Разрешенные места хранения управляемых данных. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `oneDriveForBusiness`, `sharePoint`, `camera`.|
 |appActionIfUnableToAuthenticateUser|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|При наборе будет указано, какие действия необходимо принять в случае, если пользователь не может проверить, так как маркер проверки подлинности является недействительным. Это происходит, когда пользователь удаляется или отключен в AAD. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `block`, `wipe`, `warn`.|
 |dialerRestrictionLevel|[managedAppPhoneNumberRedirectLevel](../resources/intune-mam-managedappphonenumberredirectlevel.md)|Классы приложений-дозвонищ, которые могут открывать телефонный номер. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `allApps`, `managedApps`, `customApp`, `blocked`.|
@@ -117,38 +117,38 @@ PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtec
 |exemptedAppPackages|Коллекция [keyValuePair](../resources/intune-mam-keyvaluepair.md)|Пакеты android-приложений в этом списке будут освобождены от политики и смогут получать данные из управляемых приложений. (только для Android).|
 |faceIdBlocked|Boolean|Указывает, можно ли использовать FaceID вместо ПИН-кода, если для параметра PinRequired установлено значение True. (только для iOS)|
 |minimumWipeSdkVersion|String|В более старых версиях управляемое приложение не сможет получить доступ к данным компании.|
-|minimumWipePatchVersion|Строка|Уровень исправлений для безопасности Android меньше указанного значения или равного ему, стирает управляемое приложение и связанные с ним данные компании. (только для Android).|
-|allowedIosDeviceModels|Строка|Семиколон разделенный список моделей устройств, разрешенных в качестве строки, для управляемого приложения для работы. (только для iOS)|
+|minimumWipePatchVersion|String|Уровень исправлений для безопасности Android меньше указанного значения или равного ему, стирает управляемое приложение и связанные с ним данные компании. (только для Android).|
+|allowedIosDeviceModels|String|Семиколон разделенный список моделей устройств, разрешенных в качестве строки, для управляемого приложения для работы. (только для iOS)|
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемого приложения, блок или стирка, если указанная модель устройства не разрешена. (только для iOS). Возможные значения: `block`, `wipe`, `warn`.|
-|allowedAndroidDeviceManufacturers|Строка|Семиколон разделенный список производителей устройств разрешено, как строка, для управляемого приложения для работы. (только для Android).|
+|allowedAndroidDeviceManufacturers|String|Семиколон разделенный список производителей устройств разрешено, как строка, для управляемого приложения для работы. (только для Android).|
 |appActionIfAndroidDeviceManufacturerNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемого приложения, блок или вытирать, если указанному производителю устройств не разрешено. (только для Android). Возможные значения: `block`, `wipe`, `warn`.|
 |thirdPartyKeyboardsBlocked|Логический|Определяет, разрешены ли сторонние клавиатуры при доступе к управляемому приложению. (только для iOS)|
-|filterOpenInToOnlyManagedApps|Логический|Определяет, поддерживается ли операция с открытыми файлами из управляемого приложения в выбранные расположения файлов. Этот параметр применяется только в том случае, если для AllowedOutboundDataTransferDestinations задан параметр ManagedApps и DisableProtectionOfManagedOutboundOpenInData, заданный false. (только для iOS)|
-|disableProtectionOfManagedOutboundOpenInData|Логический|Отключение защиты данных, переданных другим приложениям с помощью параметра IOS OpenIn. Этот параметр может быть true только в том случае, если для allowedOutboundDataTransferDestinations установлено управлениеApps. (только для iOS)|
+|filterOpenInToOnlyManagedApps|Логическое|Определяет, поддерживается ли операция с открытыми файлами из управляемого приложения в выбранные расположения файлов. Этот параметр применяется только в том случае, если для AllowedOutboundDataTransferDestinations задан параметр ManagedApps и DisableProtectionOfManagedOutboundOpenInData, заданный false. (только для iOS)|
+|disableProtectionOfManagedOutboundOpenInData|Логическое|Отключение защиты данных, переданных другим приложениям с помощью параметра IOS OpenIn. Этот параметр может быть true только в том случае, если для allowedOutboundDataTransferDestinations установлено управлениеApps. (только для iOS)|
 |protectInboundDataFromUnknownSources|Логический|Защита входящих данных из неизвестного источника. Этот параметр может быть true только в том случае, если значение AllowedInboundDataTransferSources задано для AllApps. (только для iOS)|
 |requiredAndroidSafetyNetDeviceAttestationType|[androidManagedAppSafetyNetDeviceAttestationType](../resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)|Определяет требование проверки безопасности устройства Android для управляемого приложения для работы. Возможные значения: `none`, `basicIntegrity`, `basicIntegrityAndDeviceCertification`.|
 |appActionIfAndroidSafetyNetDeviceAttestationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемых приложений, предупреждать или блокировать, если указанное требование проверки безопасности Android SafetyNet сбой. Возможные значения: `block`, `wipe`, `warn`.|
 |requiredAndroidSafetyNetAppsVerificationType|[androidManagedAppSafetyNetAppsVerificationType](../resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md)|Определяет требование проверки приложений для Android SafetyNet для управляемого приложения для работы. Возможные значения: `none`, `enabled`.|
 |appActionIfAndroidSafetyNetAppsVerificationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемых приложений, предупреждать или блокировать, если указанное требование проверки приложений Для Android не работает. Возможные значения: `block`, `wipe`, `warn`.|
-|customBrowserProtocol|Строка|Пользовательский протокол браузера для открытия веб-ссылок на iOS. (только для iOS)|
-|customBrowserPackageId|Строка|Уникальный идентификатор настраиваемого браузера для открытия веб-ссылок на Android. (только для Android).|
-|customBrowserDisplayName|Строка|Удобное имя предпочтительного настраиваемого браузера для открытия веб-ссылки на Android. (только для Android).|
-|minimumRequiredCompanyPortalVersion|Строка|Минимальная версия портала Компании, которая должна быть установлена на устройстве или доступе к приложению, будет заблокирована|
-|minimumWarningCompanyPortalVersion|Строка|Минимальная версия портала Компании, которая должна быть установлена на устройстве или пользователь получит предупреждение|
-|minimumWipeCompanyPortalVersion|Строка|Минимальная версия портала Компании, которая должна быть установлена на устройстве или данные компании в приложении, будут уничтожены.|
-|allowedAndroidDeviceModels|Коллекция String|Список моделей устройств, разрешенных в качестве строки для работы управляемого приложения. (Только для Android)|
+|customBrowserProtocol|String|Пользовательский протокол браузера для открытия веб-ссылок на iOS. (только для iOS)|
+|customBrowserPackageId|String|Уникальный идентификатор настраиваемого браузера для открытия веб-ссылок на Android. (только для Android).|
+|customBrowserDisplayName|String|Удобное имя предпочтительного настраиваемого браузера для открытия веб-ссылки на Android. (только для Android).|
+|minimumRequiredCompanyPortalVersion|String|Минимальная версия портала Компании, которая должна быть установлена на устройстве или доступе к приложению, будет заблокирована|
+|minimumWarningCompanyPortalVersion|String|Минимальная версия портала Компании, которая должна быть установлена на устройстве или пользователь получит предупреждение|
+|minimumWipeCompanyPortalVersion|String|Минимальная версия портала Компании, которая должна быть установлена на устройстве или данные компании в приложении, будут уничтожены.|
+|allowedAndroidDeviceModels|Коллекция объектов string|Список моделей устройств, разрешенных в качестве строки для работы управляемого приложения. (Только для Android)|
 |appActionIfAndroidDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемого приложения, блок или стирка, если указанная модель устройства не разрешена. (Только для Android). Возможные значения: `block`, `wipe`, `warn`.|
-|customDialerAppProtocol|Строка|Протокол пользовательского приложения-дозвонщика, чтобы щелкнуть для открытия номера телефона на iOS, например Skype:.|
+|customDialerAppProtocol|String|Протокол пользовательского приложения-дозвонщика, чтобы щелкнуть для открытия номера телефона на iOS, например Skype:.|
 |customDialerAppPackageId|String|PackageId настраиваемого приложения-дозвонщика, чтобы щелкнуть, чтобы открыть номер телефона на Android.|
-|customDialerAppDisplayName|Строка|Удобное имя настраиваемого приложения-дозвонщика, чтобы щелкнуть для открытия номера телефона на Android.|
-|biometricAuthenticationBlocked|Boolean|Указывает, разрешено ли использование биометрической проверки подлинности на месте пин-кода, если для PinRequired установлен параметр True. (Только для Android)|
+|customDialerAppDisplayName|String|Удобное имя настраиваемого приложения-дозвонщика, чтобы щелкнуть для открытия номера телефона на Android.|
+|biometricAuthenticationBlocked|Логическое|Указывает, разрешено ли использование биометрической проверки подлинности на месте пин-кода, если для PinRequired установлен параметр True. (Только для Android)|
 |requiredAndroidSafetyNetEvaluationType|[androidManagedAppSafetyNetEvaluationType](../resources/intune-mam-androidmanagedappsafetynetevaluationtype.md)|Определяет тип оценки Android SafetyNet для управляемого приложения для работы. (Только для Android). Возможные значения: `basic`, `hardwareBacked`.|
 |blockAfterCompanyPortalUpdateDeferralInDays|Int32|Максимальное количество дней, Корпоративный портал может быть отложено на устройстве или доступ к приложению будет заблокирован.|
 |warnAfterCompanyPortalUpdateDeferralInDays|Int32|Максимальное количество дней Корпоративный портал обновления может быть отложено на устройстве или пользователь получит предупреждение|
 |wipeAfterCompanyPortalUpdateDeferralInDays|Int32|Максимальное количество дней Корпоративный портал может быть отложено на устройстве или данные компании в приложении будут уничтожены|
-|deviceLockRequired|Логический|Определяет, требуется ли какой-либо блокировки на устройстве. (только для Android)|
+|deviceLockRequired|Логическое|Определяет, требуется ли какой-либо блокировки на устройстве. (только для Android)|
 |appActionIfDeviceLockNotSet|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемого приложения, предупреждающее, блокировка или стирка, если блокировка экрана требуется на устройстве, но не установлена. (только для Android). Возможные значения: `block`, `wipe`, `warn`.|
-|connectToVpnOnLaunch|Логический|Следует ли приложению подключаться к настроенной VPN при запуске (только для Android).|
+|connectToVpnOnLaunch|Логическое|Следует ли приложению подключаться к настроенной VPN при запуске (только для Android).|
 
 
 

@@ -2,15 +2,15 @@
 title: Действие sendTestMessage
 description: Отправляет проверочное сообщение, используя указанный объект notificationMessageTemplate в языковом стандарте по умолчанию.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7afee803765391cacc091d7658ae634f7a98daec
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6112020d1deeeacaaf33c5356d89e40c2f51ef2f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805831"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59107731"
 ---
 # <a name="sendtestmessage-action"></a>Действие sendTestMessage
 

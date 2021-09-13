@@ -1,16 +1,16 @@
 ---
 title: Удаление windowsOfficeClientConfiguration
 description: Удаление определенной политики, не влияемой на безопасность.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2804a82c84c87c18ce480e4d6fc4a1406231dcab
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 45c30241df49c01479e4298f34b61640d8e2df6b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785023"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117237"
 ---
 # <a name="delete-windowsofficeclientconfiguration"></a>Удаление windowsOfficeClientConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "58785023"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

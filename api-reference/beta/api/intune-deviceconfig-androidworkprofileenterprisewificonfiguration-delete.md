@@ -2,15 +2,15 @@
 title: Удаление androidWorkProfileEnterpriseWiFiConfiguration
 description: Удаляет androidWorkProfileEnterpriseWiFiConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f168425d4187d8b93f3d0dbde78229be5e5c5e3b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dd54cade65f11d9e15e3a60a6e9f6c5ae0317de4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806476"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103314"
 ---
 # <a name="delete-androidworkprofileenterprisewificonfiguration"></a>Удаление androidWorkProfileEnterpriseWiFiConfiguration
 
