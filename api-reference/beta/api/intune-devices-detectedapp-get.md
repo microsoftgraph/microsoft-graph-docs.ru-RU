@@ -2,15 +2,15 @@
 title: Get detectedApp
 description: Получение свойств и связей объекта detectedApp.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 65793c305894dffed5e2455a99d2c9683c94fc82
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a6a9d6ab97c03e32ad4d946d635e376f8c99923b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805544"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59116768"
 ---
 # <a name="get-detectedapp"></a>Get detectedApp
 

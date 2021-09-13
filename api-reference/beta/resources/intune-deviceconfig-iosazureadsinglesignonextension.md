@@ -2,15 +2,15 @@
 title: тип ресурса iosAzureAdSingleSignOnExtension
 description: Представляет профиль одноместного Sign-On Azure AD для устройств с iOS.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4182c369b81b0fbf1c66550a671e9c74c88936f2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: db51aeebee2709af56a248226b7c16e1795f444f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796869"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115487"
 ---
 # <a name="iosazureadsinglesignonextension-resource-type"></a>тип ресурса iosAzureAdSingleSignOnExtension
 
@@ -28,8 +28,8 @@ ms.locfileid: "58796869"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|enableSharedDeviceMode|Логический|Включает или отключает общий режим устройства.|
-|bundleIdAccessControlList|Коллекция String|Необязательный список дополнительных ИД пакетов, разрешенных для использования расширения AAD для одного входного знака.|
+|enableSharedDeviceMode|Логическое|Включает или отключает общий режим устройства.|
+|bundleIdAccessControlList|Коллекция объектов string|Необязательный список дополнительных ИД пакетов, разрешенных для использования расширения AAD для одного входного знака.|
 |конфигурации|[коллекция keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|Получает или задает список пар значений ключей, используемых для настройки профилей типа учетных данных. Эта коллекция может содержать не более 500 элементов.|
 
 ## <a name="relationships"></a>Связи

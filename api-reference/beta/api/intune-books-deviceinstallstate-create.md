@@ -2,15 +2,15 @@
 title: Создание объекта deviceInstallState
 description: Создание объекта deviceInstallState.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 71b98058dfed21afcf16587165fd356e8d3ee2ae
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3616d5ddaf721aa1a2b5f0de3c3689f4148dffdd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817588"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113051"
 ---
 # <a name="create-deviceinstallstate"></a>Создание объекта deviceInstallState
 

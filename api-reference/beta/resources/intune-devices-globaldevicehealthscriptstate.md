@@ -2,15 +2,15 @@
 title: тип enum globalDeviceHealthScriptState
 description: Указывает, включены ли глобальные скрипты для здоровья устройств и находятся ли они в состоянии
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1701bb38964b901e4240e1d69f077838b1d88e48
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f3ff0083781781752bb98f5cda9c00e4c7e6f42c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818977"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125836"
 ---
 # <a name="globaldevicehealthscriptstate-enum-type"></a>тип enum globalDeviceHealthScriptState
 

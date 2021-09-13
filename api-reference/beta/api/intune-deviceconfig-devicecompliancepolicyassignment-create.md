@@ -2,15 +2,15 @@
 title: Создание объекта deviceCompliancePolicyAssignment
 description: Создание объекта deviceCompliancePolicyAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 90082bf7a18cd786da85f713ea2c78cc16e5786d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 339eb67bae5f4cee3a9063beef2d53fc9e42a3c0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818942"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122574"
 ---
 # <a name="create-devicecompliancepolicyassignment"></a>Создание объекта deviceCompliancePolicyAssignment
 

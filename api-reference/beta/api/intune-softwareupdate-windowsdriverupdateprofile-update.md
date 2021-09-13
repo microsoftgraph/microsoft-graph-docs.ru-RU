@@ -2,15 +2,15 @@
 title: Обновление windowsDriverUpdateProfile
 description: Обновление свойств объекта WindowsDriverUpdateProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cb9f89e1c90e746bda4650bc29d779f2583cbf28
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2dd5a6344a6c6ac09ce250fd436fb729f2e7c357
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816337"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138465"
 ---
 # <a name="update-windowsdriverupdateprofile"></a>Обновление windowsDriverUpdateProfile
 
@@ -53,16 +53,16 @@ PATCH /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileI
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|ID политики Intune.|
+|id|String|ID политики Intune.|
 |displayName|String|Имя отображения для профиля.|
-|description|Строка|Описание профиля, указанного пользователем.|
+|description|String|Описание профиля, указанного пользователем.|
 |approvalType|[driverUpdateProfileApprovalType](../resources/intune-softwareupdate-driverupdateprofileapprovaltype.md)|Тип утверждения профиля обновления драйвера. Например, ручное или автоматическое утверждение. Возможные значения: `manual`, `automatic`.|
 |deviceReporting|Int32|Количество устройств, сообщив об этом профиле|
 |newUpdates|Int32|Количество новых обновлений драйвера, доступных для этого профиля.|
 |deploymentDeferralInDays|Int32|Параметры отсрочки развертывания в днях, применимые только при автоматическом утверждении ApprovalType.|
 |createdDateTime|DateTimeOffset|Время создания профиля.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения профиля.|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого объекта обновления драйвера.|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого объекта обновления драйвера.|
 
 
 

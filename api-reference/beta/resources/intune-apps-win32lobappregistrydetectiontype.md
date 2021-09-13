@@ -2,15 +2,15 @@
 title: тип enum win32LobAppRegistryDetectionType
 description: Содержит все поддерживаемые типы обнаружения данных реестра.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: eef9aa85790b211024beb5fa9bcc7be2e9a5ad24
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6871c15c6a6dd0ce429dd4f78e25727e6928ccc3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784522"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59120446"
 ---
 # <a name="win32lobappregistrydetectiontype-enum-type"></a>тип enum win32LobAppRegistryDetectionType
 
@@ -28,7 +28,7 @@ ms.locfileid: "58784522"
 |notConfigured|0|Не настроен.|
 |существует|1|Указанный ключ реестра или значение существует.|
 |doesNotExist|2|Указанного ключа или значения реестра не существует.|
-|string|3|Тип значения строки.|
+|String|3|Тип значения строки.|
 |integer|4 |Тип значения Integer.|
 |version|5 |Тип значения версии.|
 

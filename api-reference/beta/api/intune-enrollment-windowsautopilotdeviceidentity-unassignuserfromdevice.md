@@ -2,15 +2,15 @@
 title: Действие unassignUserFromDevice
 description: Отписка пользователя с устройства Автопилота.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fa78388dc43a382213ea55743b9c178e612245ca
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d3fe8fc0d1867d9e95bb06a6bd30949eb22e41a6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821825"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59132738"
 ---
 # <a name="unassignuserfromdevice-action"></a>Действие unassignUserFromDevice
 

@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementEnumConstraint
 description: Ограничение, которое обеспечивает соблюдение значения параметра, из разрешенного набора строк
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 663ddf69f7b46b9029f5d5ff0b83ee6b84ccd9b6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ea8277c94d6b0f75de36ae658db29c9957e35ad8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785138"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137982"
 ---
 # <a name="devicemanagementenumconstraint-resource-type"></a>тип ресурса deviceManagementEnumConstraint
 

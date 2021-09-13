@@ -2,15 +2,15 @@
 title: Обновление deviceComplianceScriptDeviceState
 description: Обновление свойств объекта deviceComplianceScriptDeviceState.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2234de0f6eeb9a5a80ccaba0f6922e888b24b6a2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 242eb97a5e3083d1c4e37d61a52b22cf36eae755
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58822007"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108172"
 ---
 # <a name="update-devicecompliancescriptdevicestate"></a>Обновление deviceComplianceScriptDeviceState
 

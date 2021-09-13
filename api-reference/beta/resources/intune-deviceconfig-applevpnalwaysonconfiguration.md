@@ -2,15 +2,15 @@
 title: тип ресурса appleVpnAlwaysOnConfiguration
 description: Всегда на конфигурации VPN для MacOS и iOS IKEv2
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 38b574bd07e4797a14de2e6061cf45e638ca2b98
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 142b963b39501e06786284a265b5c7dd220537ce
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787008"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59106345"
 ---
 # <a name="applevpnalwaysonconfiguration-resource-type"></a>тип ресурса appleVpnAlwaysOnConfiguration
 
@@ -26,15 +26,15 @@ ms.locfileid: "58787008"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |tunnelConfiguration|[vpnTunnelConfigurationType](../resources/intune-deviceconfig-vpntunnelconfigurationtype.md)|Определяет, к каким подключениям применяется определенная конфигурация туннеля. Возможные значения: `wifiAndCellular`, `cellular`, `wifi`.|
-|userToggleEnabled|Логический|Разрешить пользователю для настройки VPN с помощью пользовательского интерфейса|
+|userToggleEnabled|Логическое|Разрешить пользователю для настройки VPN с помощью пользовательского интерфейса|
 |voicemailExceptionAction|[vpnServiceExceptionAction](../resources/intune-deviceconfig-vpnserviceexceptionaction.md)|Определите, будет ли служба голосовой почты освобождена от подключения к VPN всегда. Возможные значения: `forceTrafficViaVPN`, `allowTrafficOutside`, `dropTraffic`.|
 |airPrintExceptionAction|[vpnServiceExceptionAction](../resources/intune-deviceconfig-vpnserviceexceptionaction.md)|Определите, будет ли служба AirPrint освобождена от подключения к VPN всегда. Возможные значения: `forceTrafficViaVPN`, `allowTrafficOutside`, `dropTraffic`.|
 |cellularExceptionAction|[vpnServiceExceptionAction](../resources/intune-deviceconfig-vpnserviceexceptionaction.md)|Определите, будет ли служба сотовой связи освобождена от подключения к VPN всегда. Возможные значения: `forceTrafficViaVPN`, `allowTrafficOutside`, `dropTraffic`.|
 |allowAllCaptiveNetworkPlugins|Логический|Указывает, следует ли разрешать трафик из всех подключенных сетевых плагинов за пределами VPN|
 |allowedCaptiveNetworkPlugins|[specifiedCaptiveNetworkPlugins](../resources/intune-deviceconfig-specifiedcaptivenetworkplugins.md)|Определяет, разрешены ли все, некоторые или никакие несвойные сетевые приложения|
-|allowCaptiveWebSheet|Логический|Определяет, разрешен ли трафик из приложения Websheet за пределами VPN|
+|allowCaptiveWebSheet|Логическое|Определяет, разрешен ли трафик из приложения Websheet за пределами VPN|
 |natKeepAliveIntervalInSeconds|Int32|Указывает, как часто в секундах отправлять пакет для сохраняемого перевода сетевых адресов через VPN|
-|natKeepAliveOffloadEnable|Логический|Включить аппаратную разгрузку сигналов nat keepalive, когда устройство спит|
+|natKeepAliveOffloadEnable|Логическое|Включить аппаратную разгрузку сигналов nat keepalive, когда устройство спит|
 
 ## <a name="relationships"></a>Связи
 Нет

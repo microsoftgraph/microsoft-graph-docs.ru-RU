@@ -2,15 +2,15 @@
 title: Тип ресурса iosWebContentFilterBase
 description: Представляет базовый тип базового параметра фильтра веб-контента iOS. Пустая и абстрактная база. Вызываемая должна использовать один из производных типов для конфигураций.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3afe5a226e69e0813687f248e14b0d26a6911961
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a9900d9fd3a0de6e7ec40cf39fd97ba9c6e6900c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796862"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127243"
 ---
 # <a name="ioswebcontentfilterbase-resource-type"></a>Тип ресурса iosWebContentFilterBase
 

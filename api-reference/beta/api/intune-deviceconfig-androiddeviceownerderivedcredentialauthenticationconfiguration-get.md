@@ -2,15 +2,15 @@
 title: Get androidDeviceOwnerDerivedCredentialAuthenticationConfiguration
 description: Чтение свойств и связей объекта AndroidDeviceOwnerDerivedCredentialAuthenticationConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b9d2b921336fa6346ce88d72d4a7a0d725453319
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8e88e5b7bd7e6d840e4c4ad0b7c94e8327140ccf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787190"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108613"
 ---
 # <a name="get-androiddeviceownerderivedcredentialauthenticationconfiguration"></a>Get androidDeviceOwnerDerivedCredentialAuthenticationConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "58787190"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

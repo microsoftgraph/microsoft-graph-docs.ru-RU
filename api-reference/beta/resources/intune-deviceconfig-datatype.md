@@ -2,15 +2,15 @@
 title: тип enum dataType
 description: Типы данных для правил.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 11647abeae11186c8bbaa6748b6711c749e9fc01
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ca9b1afcf40585dae9f7d3e11525ba43ab5bad0a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795893"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146697"
 ---
 # <a name="datatype-enum-type"></a>тип enum dataType
 
@@ -29,14 +29,14 @@ ms.locfileid: "58795893"
 |boolean|1|Тип данных Boolean.|
 |int64|2|Тип данных Int64.|
 |double|3|Двойной тип данных.|
-|string|4 |Тип строки данных.|
+|String|4 |Тип строки данных.|
 |dateTime|5 |Тип данных DateTime.|
 |version|6 |Тип данных версии.|
 |base64|7 |Тип данных Base64.|
 |xml|8 |Тип данных Xml.|
 |booleanArray|9 |Тип данных массива Boolean.|
 |int64Array|10 |Тип данных массива Int64.|
-|doubleArray|11 |Тип данных с двойным массивом.|
+|doubleArray|11|Тип данных с двойным массивом.|
 |stringArray|12 |Тип данных массива строк.|
 |dateTimeArray|13|Тип данных массива DateTime.|
 |versionArray|14 |Тип данных массива версий.|

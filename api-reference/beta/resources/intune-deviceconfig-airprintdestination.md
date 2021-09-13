@@ -2,15 +2,15 @@
 title: тип ресурса airPrintDestination
 description: Представляет пункт назначения AirPrint.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 978bbd3d5f7cb8527cb2079d20a48bf4fb678126
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ad603ab29c7914ccb16845ceeddda89581a40568
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783591"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59095697"
 ---
 # <a name="airprintdestination-resource-type"></a>тип ресурса airPrintDestination
 
@@ -26,9 +26,9 @@ ms.locfileid: "58783591"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |ipAddress|String|IP-адрес назначения AirPrint.|
-|resourcePath|Строка|Путь ресурсов, связанный с принтером. Это соответствует параметру RP записи _ipps.tcp Bonjour. Например: принтеры/Canon_MG5300_series, принтеры/Xerox_Phaser_7600, ipp/print, Epson_IPP_Printer.|
+|resourcePath|String|Путь ресурсов, связанный с принтером. Это соответствует параметру RP записи _ipps.tcp Bonjour. Например: принтеры/Canon_MG5300_series, принтеры/Xerox_Phaser_7600, ipp/print, Epson_IPP_Printer.|
 |порт|Int32|Порт прослушивания назначения AirPrint. Если этот ключ не указан, AirPrint будет использовать порт по умолчанию. Доступна в iOS 11.0 и более поздней.|
-|forceTls|Логический|Если верное подключение AirPrint обеспечивается безопасностью транспортного слоя (TLS). Значение по умолчанию: false. Доступна в iOS 11.0 и более поздней.|
+|forceTls|Логическое|Если верное подключение AirPrint обеспечивается безопасностью транспортного слоя (TLS). Значение по умолчанию: false. Доступна в iOS 11.0 и более поздней.|
 
 ## <a name="relationships"></a>Связи
 Нет

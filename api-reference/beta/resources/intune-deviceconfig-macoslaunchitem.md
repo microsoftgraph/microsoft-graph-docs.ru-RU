@@ -2,15 +2,15 @@
 title: тип ресурса macOSLaunchItem
 description: Представляет приложение в списке элементов запуска macOS
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3450832825bf6c6696b0395879b8c3a79e4bec3c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c000ac1bb9240eaad505a6d50d34b58cba4dc13a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789645"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146683"
 ---
 # <a name="macoslaunchitem-resource-type"></a>тип ресурса macOSLaunchItem
 
@@ -26,7 +26,7 @@ ms.locfileid: "58789645"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |path|String|Путь к элементу запуска.|
-|скрыть|Логический|Следует ли скрывать элемент из списка пользователей и групп.|
+|скрыть|Логическое|Следует ли скрывать элемент из списка пользователей и групп.|
 
 ## <a name="relationships"></a>Связи
 Нет

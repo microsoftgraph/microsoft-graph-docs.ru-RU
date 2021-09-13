@@ -2,15 +2,15 @@
 title: тип ресурса userExperienceAnalyticsDeviceWithoutCloudIdentity
 description: Устройство аналитики пользовательского интерфейса без облачной идентификации.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a9183bc6dbe81155f174bd11a1b5e7c1a25859cf
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f0a82e3f5ba5589fb60d75a22aaf62b4a3d35504
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794422"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125717"
 ---
 # <a name="userexperienceanalyticsdevicewithoutcloudidentity-resource-type"></a>тип ресурса userExperienceAnalyticsDeviceWithoutCloudIdentity
 
@@ -36,7 +36,7 @@ ms.locfileid: "58794422"
 |:---|:---|:---|
 |id|String|Уникальный идентификатор устройства для клиентской аналитики пользовательского интерфейса.|
 |deviceName|String|Клиент прикрепит имя устройства.|
-|azureAdDeviceId|Строка|Azure Active Directory Id устройства|
+|azureAdDeviceId|String|Azure Active Directory Id устройства|
 
 ## <a name="relationships"></a>Связи
 Нет

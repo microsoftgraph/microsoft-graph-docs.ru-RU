@@ -1,16 +1,16 @@
 ---
 title: Обновление officeClientConfigurationAssignment
 description: Обновление свойств объекта officeClientConfigurationAssignment.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4364c08c86af4a5594212724c1743d7dc4404608
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bdd11710c357bdd09c128ca0f98988f3aac2e659
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785031"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133760"
 ---
 # <a name="update-officeclientconfigurationassignment"></a>Обновление officeClientConfigurationAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "58785031"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|**TODO: Определение областей **|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|**TODO: Определение областей **|
+|Для приложений|**TODO: Определение областей **|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

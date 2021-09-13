@@ -2,15 +2,15 @@
 title: Get windowsMobileMSI
 description: Чтение свойств и связей объекта windowsMobileMSI.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fa2f803e8d3f37a756e9513b0dc919b8aa764fdb
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1642323483a026bcba57fbfa2f43820f03f70824
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816235"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113135"
 ---
 # <a name="get-windowsmobilemsi"></a>Get windowsMobileMSI
 

@@ -2,15 +2,15 @@
 title: тип ресурса userExperienceAnalyticsDeviceStartupHistory
 description: Объект истории запуска устройства для аналитики пользовательских интерфейсов содержит сведения об истории производительности загрузки устройств.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8ffc994a7f6be02a361ea21422bfefccf31352aa
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c911b1dd9c111b9f2279edf2c42a0b11fc731716
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797249"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59125787"
 ---
 # <a name="userexperienceanalyticsdevicestartuphistory-resource-type"></a>тип ресурса userExperienceAnalyticsDeviceStartupHistory
 
@@ -34,7 +34,7 @@ ms.locfileid: "58797249"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор истории запуска устройства аналитики пользовательского интерфейса.|
+|id|String|Уникальный идентификатор истории запуска устройства аналитики пользовательского интерфейса.|
 |deviceId|String|ID устройства аналитики пользовательского интерфейса.|
 |startTime|DateTimeOffset|Время запуска загрузки устройства для аналитики пользовательского интерфейса.|
 |coreBootTimeInMs|Int32|Основное время загрузки устройства для аналитики пользовательского интерфейса в миллисекунд.|
@@ -46,11 +46,11 @@ ms.locfileid: "58797249"
 |responsiveDesktopTimeInMs|Int32|Аналитика пользовательского интерфейса реагирует на время рабочего стола в миллисекунд.|
 |totalLoginTimeInMs|Int32|Общее время входа устройства аналитики пользовательского интерфейса в миллисекунд.|
 |isFirstLogin|Логический|Устройство аналитики пользовательского интерфейса сначала входит в систему.|
-|isFeatureUpdate|Логический|Запись загрузки устройства для аналитики пользовательского интерфейса — это обновление функций.|
+|isFeatureUpdate|Логическое|Запись загрузки устройства для аналитики пользовательского интерфейса — это обновление функций.|
 |operatingSystemVersion|String|Версия операционной системы записи операционной системы для аналитики пользовательского интерфейса устройства.|
 |restartCategory|[userExperienceAnalyticsOperatingSystemRestartCategory](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|Категория перезапуска ОС. Возможные значения: `unknown`, `restartWithUpdate`, `restartWithoutUpdate`, `blueScreen`, `shutdownWithUpdate`, `shutdownWithoutUpdate`, `longPowerButtonPress`, `bootError`, `update`.|
-|restartStopCode|Строка|Код остановки перезапуска ОС. Здесь показан код проверки ошибок, который можно использовать для проверки причины синего экрана.|
-|restartFaultBucket|Строка|Ковш перезапуска неисправности ОС. Ведро неисправностей используется для поиска дополнительных сведений о сбое системы.|
+|restartStopCode|String|Код остановки перезапуска ОС. Здесь показан код проверки ошибок, который можно использовать для проверки причины синего экрана.|
+|restartFaultBucket|String|Ковш перезапуска неисправности ОС. Ведро неисправностей используется для поиска дополнительных сведений о сбое системы.|
 
 ## <a name="relationships"></a>Связи
 Нет

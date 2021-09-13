@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementSettingDependency
 description: Сведения о зависимости для параметра
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d0782cb99bcd3f1777a024242574d844dee670e0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a55cee5eeda11cb7dcc911e49fbfdaa1a1a6db8a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804017"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134929"
 ---
 # <a name="devicemanagementsettingdependency-resource-type"></a>тип ресурса deviceManagementSettingDependency
 
@@ -25,7 +25,7 @@ ms.locfileid: "58804017"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|definitionId|Строка|ID определения параметра зависит от|
+|definitionId|String|ID определения параметра зависит от|
 |ограничения|[коллекция deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)|Коллекция ограничений для значения параметра зависимостей|
 
 ## <a name="relationships"></a>Связи

@@ -2,15 +2,15 @@
 title: Удаление AndroidScepCertificateProfile
 description: Удаляет androidScepCertificateProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 187ce9302acff89da2945842dbd54ca72fb3e54b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dae9256b92008b659cc3501c91e44dc9ca6bf683
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804976"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59083133"
 ---
 # <a name="delete-androidscepcertificateprofile"></a>Удаление AndroidScepCertificateProfile
 

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса deviceDetail
 description: Указывает сведения об устройстве, связанные с устройством, используемым для регистрации.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: spunukol
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 00859ab80f022464be57b38cc62e9ab1a6c1b5a4444f7d066ffd7c06d84a63e8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a53c22d62462b02325594722d7be9ba4fc5a671c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54213440"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101977"
 ---
 # <a name="devicedetail-resource-type"></a>Тип ресурса deviceDetail
 
@@ -23,7 +23,7 @@ ms.locfileid: "54213440"
 |:---------------|:--------|:----------|
 |Обозреватель|String|Указывает сведения браузера, используемые для регистрации.|
 |deviceId|String|Относится к UniqueID устройства, используемого для регистрации.|
-|displayName|Строка|Ссылается на имя устройства, используемого для регистрации.|
+|displayName|String|Ссылается на имя устройства, используемого для регистрации.|
 |isCompliant|Boolean|Указывает, является ли устройство совместимым или нет.|
 |isManaged|Boolean|Указывает, управляется устройство или нет.|
 |operatingSystem|String|Указывает имя и версию ОС, используемые для регистрации.|

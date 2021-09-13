@@ -2,15 +2,15 @@
 title: Создание roleScopeTag
 description: Создайте новый объект roleScopeTag.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bac2c26dd32f6ddb36c16595f10940f6a35f8595
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9b92a55380f624b2ab722c633c372d80dc3637b5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791939"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59096467"
 ---
 # <a name="create-rolescopetag"></a>Создание roleScopeTag
 
@@ -29,7 +29,7 @@ ms.locfileid: "58791939"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementRBAC.ReadWrite.All|
+|Для приложений|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,9 +54,9 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Это свойство доступно только для чтения и создается автоматически. Это свойство доступно только для чтения.|
-|displayName|Строка|Отображение или дружеское имя тега Область ролей.|
-|description|Строка|Описание тега Область ролей.|
+|id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически. Это свойство доступно только для чтения.|
+|displayName|String|Отображение или дружеское имя тега Область ролей.|
+|description|String|Описание тега Область ролей.|
 |isBuiltIn|Boolean|Описание тега Область ролей. Это свойство доступно только для чтения.|
 
 

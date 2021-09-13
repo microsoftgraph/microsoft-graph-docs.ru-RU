@@ -2,15 +2,15 @@
 title: Удаление officeSuiteApp
 description: Удаляет officeSuiteApp.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ea2f82ee1bfd2731b3364ad7bf831fc3f9ce960d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5c7f72144bbb1ff18b2ad2164b48b694ec7c62f4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797861"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59135881"
 ---
 # <a name="delete-officesuiteapp"></a>Удаление officeSuiteApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "58797861"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

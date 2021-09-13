@@ -2,15 +2,15 @@
 title: Обновление deviceManagementConfigurationSetting
 description: Обновление свойств объекта deviceManagementConfigurationSetting.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1299ef4249a7ab2b1787c2bd9239c8a61b33a886
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 178213765dcd615d71bb11dd42163f2a040c6420
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797383"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59108312"
 ---
 # <a name="update-devicemanagementconfigurationsetting"></a>Обновление deviceManagementConfigurationSetting
 

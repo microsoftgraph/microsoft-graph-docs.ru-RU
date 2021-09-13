@@ -2,15 +2,15 @@
 title: тип ресурса enrollmentProfile
 description: Ресурс enrollmentProfile представляет коллекцию конфигураций, которые должны быть предоставлены для предварительной регистрации, чтобы включить регистрацию определенных устройств, удостоверения которых были предварительно постановлены. Для применения конфигураций профиля при регистрации соответствующего устройства этому типу профиля назначены предустановки устройств.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: eb5dc9a6d759e6f8a72097777b87d80a5dd33f5c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bae158fb33e4d1fccc4e5b4b6fd527b0d17cc9df
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799791"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141090"
 ---
 # <a name="enrollmentprofile-resource-type"></a>тип ресурса enrollmentProfile
 
@@ -31,19 +31,19 @@ ms.locfileid: "58799791"
 |[Удаление enrollmentProfile](../api/intune-enrollment-enrollmentprofile-delete.md)|Нет|Удаляет [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md).|
 |[Обновление enrollmentProfile](../api/intune-enrollment-enrollmentprofile-update.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md);|Обновление свойств объекта [enrollmentProfile.](../resources/intune-enrollment-enrollmentprofile.md)|
 |[Действие setDefaultProfile](../api/intune-enrollment-enrollmentprofile-setdefaultprofile.md)|Нет|Н/Д|
-|[функция exportMobileConfig](../api/intune-enrollment-enrollmentprofile-exportmobileconfig.md)|Строка|Экспорт конфигурации мобильной связи|
+|[функция exportMobileConfig](../api/intune-enrollment-enrollmentprofile-exportmobileconfig.md)|String|Экспорт конфигурации мобильной связи|
 |[Действие updateDeviceProfileAssignment](../api/intune-enrollment-enrollmentprofile-updatedeviceprofileassignment.md)|Нет|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|GUID объекта|
-|displayName|Строка|Имя профиля|
-|description|Строка|Описание профиля|
-|requiresUserAuthentication|Boolean|Указывает, требует ли профиль проверки подлинности пользователя|
-|configurationEndpointUrl|Строка|URL-адрес конечной точки конфигурации для регистрации|
-|enableAuthenticationViaCompanyPortal|Boolean|Указывает на проверку подлинности с помощью помощника установки Apple вместо Корпоративный портал.|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|Логический|Указывает, что Корпоративный портал требуется на устройствах, зарегистрированных помощником установки|
+|id|String|GUID объекта|
+|displayName|String|Имя профиля|
+|description|String|Описание профиля|
+|requiresUserAuthentication|Логический|Указывает, требует ли профиль проверки подлинности пользователя|
+|configurationEndpointUrl|String|URL-адрес конечной точки конфигурации для регистрации|
+|enableAuthenticationViaCompanyPortal|Логический|Указывает на проверку подлинности с помощью помощника установки Apple вместо Корпоративный портал.|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Логическое|Указывает, что Корпоративный портал требуется на устройствах, зарегистрированных помощником установки|
 
 ## <a name="relationships"></a>Связи
 Нет

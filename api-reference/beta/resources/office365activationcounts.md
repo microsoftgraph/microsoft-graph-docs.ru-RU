@@ -1,16 +1,16 @@
 ---
 title: тип ресурса office365ActivationCounts
 description: Ниже указано представление ресурса в формате JSON.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 39e679da134120377f17dab520c332dc54aab328ef924b65212f5145279a8402
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 33a39a394b5b82bfb3ba0b5d33dc91320307bb73
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54176325"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59115151"
 ---
 # <a name="office365activationcounts-resource-type"></a>тип ресурса office365ActivationCounts
 
@@ -21,7 +21,7 @@ ms.locfileid: "54176325"
 | Свойство          | Тип   | Описание                              |
 | :---------------- | :----- | ---------------------------------------- |
 | reportRefreshDate | Дата   | Последняя дата контента.          |
-| productType       | Строка | Тип продукта, например "Microsoft 365 ProPlus" или "Project клиент". |
+| productType       | String | Тип продукта, например "Microsoft 365 ProPlus" или "Project клиент". |
 | Windows           | Int64  | Активация рассчитывается на Windows. Этот номер включает каждую активацию на любом Windows компьютере. |
 | mac               | Int64  | Активация рассчитывается на ОС Mac.          |
 | Android           | Int64  | Активация рассчитывается на устройстве Android.  |

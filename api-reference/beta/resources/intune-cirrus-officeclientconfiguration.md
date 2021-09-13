@@ -1,16 +1,16 @@
 ---
 title: тип ресурса officeClientConfiguration
 description: Office Конфигурация клиента.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c380efedce9db2ff161f99b36dc72c758a3014e8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: cacf0d4624b984e02a4051d9b8b166ecece7a38e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801022"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127516"
 ---
 # <a name="officeclientconfiguration-resource-type"></a>тип ресурса officeClientConfiguration
 
@@ -33,11 +33,11 @@ Office Конфигурация клиента.
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Id политики конфигурации клиента office.|
+|id|String|Id политики конфигурации клиента office.|
 |userPreferencePayload|Stream|Параметры параметров JSON строки в двоичном формате, эти значения могут быть переопределены пользователем.|
 |policyPayload|Stream|Параметры JSON строки JSON в двоичном формате, эти значения не могут быть изменены пользователем.|
-|description|Строка|Пока не задокументировано.|
-|displayName|Строка|Администратор предоставил описание политики конфигурации клиента office.|
+|description|String|Пока не задокументировано.|
+|displayName|String|Администратор предоставил описание политики конфигурации клиента office.|
 |lastModifiedDateTime|Даты и время|Последний измененный штамп даты политики.|
 |priority|Int32|Значение приоритета должно быть уникальным значением для каждой политики клиента и использоваться для разрешения конфликтов, более низкие значения означают высокий приоритет.|
 |userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Сводка регистрации пользователя для политики.|

@@ -2,15 +2,15 @@
 title: тип ресурса androidManagedStoreAccountEnterpriseSettings
 description: Enterprise для учетной записи управляемого магазина Android.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e55fd9dd68fcc0673b591e45c1ff4c240d752031
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f06f7d042977605214a286ec76ec4fd9c5ee88ca
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806987"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101914"
 ---
 # <a name="androidmanagedstoreaccountenterprisesettings-resource-type"></a>тип ресурса androidManagedStoreAccountEnterpriseSettings
 
@@ -32,7 +32,7 @@ Enterprise для учетной записи управляемого мага�
 |[completeSignup action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-completesignup.md)|Нет|Н/Д|
 |[Действие syncApps](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-syncapps.md)|Нет|Н/Д|
 |[Действие unbind](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-unbind.md)|Нет|Н/Д|
-|[Действие createGooglePlayWebToken](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-creategoogleplaywebtoken.md)|Строка|Создает веб-маркер, используемый в встраивомом компоненте.|
+|[Действие createGooglePlayWebToken](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-creategoogleplaywebtoken.md)|String|Создает веб-маркер, используемый в встраивомом компоненте.|
 |[Действие setAndroidDeviceOwnerFullyManagedEnrollmentState](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-setandroiddeviceownerfullymanagedenrollmentstate.md)|Нет|Задает Значение AndroidManagedStoreAccountEnterpriseSettings AndroidDeviceOwnerFullyManagedEnrollmentEnabled.|
 
 ## <a name="properties"></a>Свойства
@@ -47,10 +47,10 @@ Enterprise для учетной записи управляемого мага�
 |lastModifiedDateTime|DateTimeOffset|Время последней модификации для корпоративных параметров Android|
 |enrollmentTarget|[AndroidManagedStoreAccountEnrollmentTarget](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|Указывает, какие пользователи могут записать устройства в управление Enterprise устройств. Возможные значения: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|Коллекция строк|Указывает, какие группы AAD могут регистрировать устройства для управления с помощью Android for Work, если для параметра enrollmentTarget задано значение Targeted.|
-|deviceOwnerManagementEnabled|Логический|Указывает, работает ли эта учетная запись для управления владельцем android-устройств с помощью CloudDPC.|
+|deviceOwnerManagementEnabled|Логическое|Указывает, работает ли эта учетная запись для управления владельцем android-устройств с помощью CloudDPC.|
 |companyCodes|[коллекция androidEnrollmentCompanyCode](../resources/intune-androidforwork-androidenrollmentcompanycode.md)|Коды компании для AndroidManagedStoreAccountEnterpriseSettings|
-|androidDeviceOwnerFullyManagedEnrollmentEnabled|Boolean|Коды компании для AndroidManagedStoreAccountEnterpriseSettings|
-|managedGooglePlayInitialScopeTagIds|Коллекция String|Начальные теги области для приложений MGP|
+|androidDeviceOwnerFullyManagedEnrollmentEnabled|Логическое|Коды компании для AndroidManagedStoreAccountEnterpriseSettings|
+|managedGooglePlayInitialScopeTagIds|Коллекция объектов string|Начальные теги области для приложений MGP|
 
 ## <a name="relationships"></a>Связи
 Нет

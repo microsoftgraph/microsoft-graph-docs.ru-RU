@@ -2,15 +2,15 @@
 title: тип ресурса userExperienceAnalyticsAppHealthOSVersionPerformance
 description: Объект для аналитики пользовательского интерфейса оси содержит сведения о производительности версии ОС.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 56d846fccc9904d5f3f6d1a168fc638648dc7680
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d554e02b1fa3eabeea5448c494dd3da787b7c05f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806042"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086269"
 ---
 # <a name="userexperienceanalyticsapphealthosversionperformance-resource-type"></a>тип ресурса userExperienceAnalyticsAppHealthOSVersionPerformance
 
@@ -34,13 +34,13 @@ ms.locfileid: "58806042"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта производительности версии оси для пользовательского интерфейса аналитики оси.|
+|id|String|Уникальный идентификатор объекта производительности версии оси для пользовательского интерфейса аналитики оси.|
 |osVersion|String|Версия ОС, установленная на устройстве.|
-|osBuildNumber|Строка|Номер сборки ОС, установленный на устройстве.|
+|osBuildNumber|String|Номер сборки ОС, установленный на устройстве.|
 |activeDeviceCount|Int32|Количество активных устройств для версии ОС. Допустимые значения 2147483648 2147483647|
 |meanTimeToFailureInMinutes|Int32|Время сбоя для версии ОС в минутах. Допустимые значения 2147483648 2147483647|
 |osVersionAppHealthScore|Двойное с плавающей точкой|Оценка состояния здоровья приложения в версии ОС. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
-|osVersionAppHealthStatus|Строка|Общее состояние состояния здоровья приложения в версии ОС.|
+|osVersionAppHealthStatus|String|Общее состояние состояния здоровья приложения в версии ОС.|
 
 ## <a name="relationships"></a>Связи
 Нет

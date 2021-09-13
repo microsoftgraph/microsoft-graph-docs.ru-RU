@@ -2,15 +2,15 @@
 title: List groupPolicyPresentationComboBoxes
 description: Список свойств и связей объектов groupPolicyPresentationComboBox.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d232f62ef061df2e635a101cb0a2526599a8b4d5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 08a1b59e3868c1500f95d5d3c82f2cb6ea1ac7ed
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816361"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59092961"
 ---
 # <a name="list-grouppolicypresentationcomboboxes"></a>List groupPolicyPresentationComboBoxes
 
