@@ -2,15 +2,15 @@
 title: Тип ресурса auditActor
 description: Класс, содержащий свойства субъекта аудита.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b94cfecfa00378832c58ef048454eb9cbf98edb4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 258624d97663da9b25ee6552e7eb3430191c135b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784865"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146802"
 ---
 # <a name="auditactor-resource-type"></a>Тип ресурса auditActor
 
@@ -25,7 +25,7 @@ ms.locfileid: "58784865"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|type|Строка|Тип субъекта.|
+|type|String|Тип субъекта.|
 |userPermissions|Коллекция строк|Список разрешений пользователей во время аудита.|
 |applicationId|String|ИД приложения AAD.|
 |applicationDisplayName|String|Имя приложения.|
@@ -34,8 +34,8 @@ ms.locfileid: "58784865"
 |ipAddress|String|IP-адрес.|
 |userId|String|ИД пользователя.|
 |userRoleScopeTags|[Коллекция roleScopeTagInfo](../resources/intune-auditing-rolescopetaginfo.md)|Список тегов области пользователей при выполнении аудита.|
-|remoteTenantId|Строка|Удаленный ID клиента|
-|remoteUserId|Строка|Удаленный пользовательский id|
+|remoteTenantId|String|Удаленный ID клиента|
+|remoteUserId|String|Удаленный пользовательский id|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -2,15 +2,15 @@
 title: unsupportedDeviceConfiguration resource type
 description: UnsupportedDeviceConfiguration используется, когда объект не может быть отображен в другой подтип устройстваКонфигурации, совместимый с моделью.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8c7255073186eeb8ac220c74aa4c52a7b1ead1a4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2e32c70743e2b63cc70e089ba13efaccf7cc1d24
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816958"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146592"
 ---
 # <a name="unsupporteddeviceconfiguration-resource-type"></a>unsupportedDeviceConfiguration resource type
 
@@ -29,18 +29,18 @@ UnsupportedDeviceConfiguration используется, когда объект
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список неподдерживаемойDeviceConfigurations](../api/intune-deviceconfig-unsupporteddeviceconfiguration-list.md)|[коллекция unsupportedDeviceConfiguration](../resources/intune-deviceconfig-unsupporteddeviceconfiguration.md)|Список свойств и связей [неподдерживаемогоDeviceConfiguration](../resources/intune-deviceconfig-unsupporteddeviceconfiguration.md) объектов.|
-|[Получить неподдерживаемуюDeviceConfiguration](../api/intune-deviceconfig-unsupporteddeviceconfiguration-get.md)|[unsupportedDeviceConfiguration](../resources/intune-deviceconfig-unsupporteddeviceconfiguration.md);|Чтение свойств и связей объекта [unsupportedDeviceConfiguration.](../resources/intune-deviceconfig-unsupporteddeviceconfiguration.md)|
-|[Создание неподдерживаемойDeviceConfiguration](../api/intune-deviceconfig-unsupporteddeviceconfiguration-create.md)|[unsupportedDeviceConfiguration](../resources/intune-deviceconfig-unsupporteddeviceconfiguration.md);|Создайте [новый объект unsupportedDeviceConfiguration.](../resources/intune-deviceconfig-unsupporteddeviceconfiguration.md)|
+|[Получить неподдерживаемуюDeviceConfiguration](../api/intune-deviceconfig-unsupporteddeviceconfiguration-get.md)|[unsupportedDeviceConfiguration](../resources/intune-deviceconfig-unsupporteddeviceconfiguration.md)|Чтение свойств и связей объекта [unsupportedDeviceConfiguration.](../resources/intune-deviceconfig-unsupporteddeviceconfiguration.md)|
+|[Создание неподдерживаемойDeviceConfiguration](../api/intune-deviceconfig-unsupporteddeviceconfiguration-create.md)|[unsupportedDeviceConfiguration](../resources/intune-deviceconfig-unsupporteddeviceconfiguration.md)|Создайте [новый объект unsupportedDeviceConfiguration.](../resources/intune-deviceconfig-unsupporteddeviceconfiguration.md)|
 |[Удаление неподдерживаемойDeviceConfiguration](../api/intune-deviceconfig-unsupporteddeviceconfiguration-delete.md)|Нет|Удаляет [неподдерживаемуюDeviceConfiguration](../resources/intune-deviceconfig-unsupporteddeviceconfiguration.md).|
-|[Обновление неподдерживаемойDeviceConfiguration](../api/intune-deviceconfig-unsupporteddeviceconfiguration-update.md)|[unsupportedDeviceConfiguration](../resources/intune-deviceconfig-unsupporteddeviceconfiguration.md);|Обновление свойств объекта [unsupportedDeviceConfiguration.](../resources/intune-deviceconfig-unsupporteddeviceconfiguration.md)|
+|[Обновление неподдерживаемойDeviceConfiguration](../api/intune-deviceconfig-unsupporteddeviceconfiguration-update.md)|[unsupportedDeviceConfiguration](../resources/intune-deviceconfig-unsupporteddeviceconfiguration.md)|Обновление свойств объекта [unsupportedDeviceConfiguration.](../resources/intune-deviceconfig-unsupporteddeviceconfiguration.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|supportsScopeTags|Логическое|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость к выпуску ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|

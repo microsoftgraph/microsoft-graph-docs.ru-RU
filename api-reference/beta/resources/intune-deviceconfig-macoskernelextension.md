@@ -2,15 +2,15 @@
 title: тип ресурса macOSKernelExtension
 description: Представляет определенное расширение ядра macOS. Расширение ядра macOS можно описать идентификатором группы и идентификатором пакета.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 281fcab335fc5638c3d376d086bc3d7de6e07aac
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8f430f83dbd166ee93f9e0ebfc4baa4ddb9f39db
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789652"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59095572"
 ---
 # <a name="macoskernelextension-resource-type"></a>тип ресурса macOSKernelExtension
 
@@ -25,7 +25,7 @@ ms.locfileid: "58789652"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|teamIdentifier|Строка|Идентификатор группы, который использовался для подписи расширения ядра.|
+|teamIdentifier|String|Идентификатор группы, который использовался для подписи расширения ядра.|
 |bundleId|String|Bundle ID расширения ядра.|
 
 ## <a name="relationships"></a>Связи

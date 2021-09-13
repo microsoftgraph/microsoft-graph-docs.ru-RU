@@ -2,15 +2,15 @@
 title: Создание userExperienceAnalyticsDeviceStartupProcess
 description: Создание нового объекта userExperienceAnalyticsDeviceStartupProcess.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 95b0a022c71ef805a81e6399427f59523951073b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 52ff897c348657b5862ed9bf41d531691cd55439
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797046"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59097210"
 ---
 # <a name="create-userexperienceanalyticsdevicestartupprocess"></a>Создание userExperienceAnalyticsDeviceStartupProcess
 
@@ -29,7 +29,7 @@ ms.locfileid: "58797046"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,9 +53,9 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupProcesses
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор процесса запуска устройства аналитики пользовательского интерфейса.|
-|managedDeviceId|Строка|ID устройства аналитики пользовательского интерфейса.|
-|processName|Строка|Имя процесса запуска устройства для аналитики пользовательского интерфейса.|
+|id|String|Уникальный идентификатор процесса запуска устройства аналитики пользовательского интерфейса.|
+|managedDeviceId|String|ID устройства аналитики пользовательского интерфейса.|
+|processName|String|Имя процесса запуска устройства для аналитики пользовательского интерфейса.|
 |productName|String|Имя продукта процесса запуска устройства для аналитики пользовательского интерфейса.|
 |publisher|String|Издатель процесса запуска устройства для аналитики пользовательских интерфейсов.|
 |startupImpactInMs|Int32|Влияние процесса запуска устройства для аналитики пользовательских интерфейсов в миллисекунд.|

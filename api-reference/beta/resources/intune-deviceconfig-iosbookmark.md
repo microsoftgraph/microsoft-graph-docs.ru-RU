@@ -2,15 +2,15 @@
 title: Тип ресурса iosBookmark
 description: Закладки URL-адресов iOS
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ee61f1b0b45d735c6c738db6220d84b3cc962b6b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2df99ad3410864cc6bae922a6c8dafac4f022f2e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788235"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086850"
 ---
 # <a name="iosbookmark-resource-type"></a>Тип ресурса iosBookmark
 
@@ -26,8 +26,8 @@ ms.locfileid: "58788235"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |url|String|URL-адрес, разрешенный для доступа|
-|bookmarkFolder|Строка|Папка, в которую должна быть добавлена закладка в Safari|
-|displayName|Строка|Имя отображения закладки|
+|bookmarkFolder|String|Папка, в которую должна быть добавлена закладка в Safari|
+|displayName|String|Имя отображения закладки|
 
 ## <a name="relationships"></a>Связи
 Нет

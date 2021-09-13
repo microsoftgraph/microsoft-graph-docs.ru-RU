@@ -2,15 +2,15 @@
 title: тип enum deviceManagementTemplateType
 description: Тип шаблона
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3e50a950819198766d5e6d0a1372010d69ebfa39
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 337ea607bbc14822d5efe470c3347fe5033a5175
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793840"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086381"
 ---
 # <a name="devicemanagementtemplatetype-enum-type"></a>тип enum deviceManagementTemplateType
 
@@ -36,7 +36,7 @@ ms.locfileid: "58793840"
 |deviceCompliance|8 |Шаблон соответствия требованиям устройств|
 |deviceConfigurationForOffice365|9 |Конфигурация устройства для Microsoft Office 365 параметров|
 |cloudPC|10 |Windows 365 базовый шаблон безопасности|
-|firewallSharedSettings|11 |Шаблоны общих объектов брандмауэра для параметров ссылок|
+|firewallSharedSettings|11|Шаблоны общих объектов брандмауэра для параметров ссылок|
 
 
 

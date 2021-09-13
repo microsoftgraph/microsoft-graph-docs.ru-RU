@@ -2,15 +2,15 @@
 title: тип enum vpnProviderType
 description: Тип поставщика для VPN-приложения.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 180cd0ad739f67520e16945cf2e135a5c9ad88c4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ea1443948fd043ee5d2a5fe6e1d68c6469cddfc2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819719"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101347"
 ---
 # <a name="vpnprovidertype-enum-type"></a>тип enum vpnProviderType
 

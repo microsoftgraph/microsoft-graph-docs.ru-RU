@@ -2,14 +2,14 @@
 title: Управление устройствами в Microsoft Intune - API Graph Microsoft
 description: Списки microsoft Graph API для конечных точек Intune (REST), которые определяют управление устройствами для организации-клиента.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 3aeb6909415d3f97d1f906b7b5af5a95b262e7c9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3dffdd3e1b0fe50ac190fbbf3d9a60cf350d3efe
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788488"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59120404"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 

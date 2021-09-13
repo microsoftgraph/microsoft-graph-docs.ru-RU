@@ -2,15 +2,15 @@
 title: Создание groupPolicyPresentationValue
 description: Создайте новый объект GroupPolicyPresentationValue.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fcd880baed7b57f625221e15c148e97eed25443f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 28ad01812e758ce94828d4d5bbab37887c57cb44
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798534"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59112160"
 ---
 # <a name="create-grouppolicypresentationvalue"></a>Создание groupPolicyPresentationValue
 
@@ -29,7 +29,7 @@ ms.locfileid: "58798534"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,7 +55,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |:---|:---|:---|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 
 
 

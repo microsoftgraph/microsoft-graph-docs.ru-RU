@@ -2,15 +2,15 @@
 title: createDeviceLogCollectionRequest action
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f67df15ce223e11b39ac7661d1c3dcf775036691
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e8544c2bf899b3eac6dd28c0e04d6cb5aff77e31
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815815"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59112463"
 ---
 # <a name="createdevicelogcollectionrequest-action"></a>createDeviceLogCollectionRequest action
 

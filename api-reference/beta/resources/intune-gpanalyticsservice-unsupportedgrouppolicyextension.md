@@ -2,15 +2,15 @@
 title: тип ресурса unsupportedGroupPolicyExtension
 description: Расширение групповой политики без поддержки.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 133a6b5605f7a8efe880eb71d3354ba59623152b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e4c0493854e17204cf9e81231565ccd50d1bf3c2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785705"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086143"
 ---
 # <a name="unsupportedgrouppolicyextension-resource-type"></a>тип ресурса unsupportedGroupPolicyExtension
 
@@ -34,11 +34,11 @@ ms.locfileid: "58785705"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Пока не задокументировано.|
+|id|String|Пока не задокументировано.|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|Настройка области неподтверченного расширения. Возможные значения: `unknown`, `device`, `user`.|
-|namespaceUrl|Строка|Url-адрес пространства имен неподтверченного расширения.|
-|extensionType|Строка|ExtensionType неподтверченного расширения.|
-|nodeName|Строка|Имя узла неподтверченного расширения.|
+|namespaceUrl|String|Url-адрес пространства имен неподтверченного расширения.|
+|extensionType|String|ExtensionType неподтверченного расширения.|
+|nodeName|String|Имя узла неподтверченного расширения.|
 
 ## <a name="relationships"></a>Связи
 Нет

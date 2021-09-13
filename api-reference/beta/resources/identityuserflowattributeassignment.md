@@ -2,15 +2,15 @@
 title: тип ресурса identityUserFlowAttributeAssignment
 description: IdentityUserFlowAttributeAssignments используются для сбора определенных identityUserFlowAttributes в потоке пользователей.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: a414878e96198443402df7a0c86699e31f8bb690c1157a85ab33118fc8457bc3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d4635d551d9773ad3b45783b1058d9a03d8fcb31
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54245242"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59106786"
 ---
 # <a name="identityuserflowattributeassignment-resource-type"></a>тип ресурса identityUserFlowAttributeAssignment
 
@@ -32,8 +32,8 @@ IdentityUserFlowAttributeAssignments используются для сбора 
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор identityUserFlowAttributeAssignment. Этот идентификатор неуменяем после создания. Это свойство только для чтения.|
-|displayName|Строка|Отображение имени identityUserFlowAttribute в потоке пользователей.|
+|id|String|Идентификатор identityUserFlowAttributeAssignment. Этот идентификатор неуменяем после создания. Это свойство только для чтения.|
+|displayName|String|Отображение имени identityUserFlowAttribute в потоке пользователей.|
 |isOptional|Логический|Определяет, является ли identityUserFlowAttribute необязательным. `true` означает, что пользователю не нужно предоставлять значение. `false` означает, что пользователь не может завершить регистрацию без предоставления значения.|
 |requiresVerification|Логический|Определяет, требуется ли проверка identityUserFlowAttribute. Это используется только для проверки номера телефона или адреса электронной почты пользователя.|
 |userAttributeValues|[коллекция userAttributeValuesItem](../resources/userattributevaluesitem.md)|Параметры ввода атрибута потока пользователя. Применимо только в том случае, если userInputType `radioSingleSelect` является `dropdownSingleSelect` , или `checkboxMultiSelect` .|

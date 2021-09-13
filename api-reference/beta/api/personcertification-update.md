@@ -1,16 +1,16 @@
 ---
 title: Обновление personCertification
 description: Обновление свойств объекта personCertification.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: ac176cccb93d7cfce617c30aa7be27c4d061f393
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: eadaf0997d673fff4c3e4ca10f439be2c7577762
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774581"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59120796"
 ---
 # <a name="update-personcertification"></a>Обновление personCertification
 Пространство имен: microsoft.graph

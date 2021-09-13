@@ -2,15 +2,15 @@
 title: Обновление macOSSoftwareUpdateCategorySummary
 description: Обновление свойств объекта macOSSoftwareUpdateCategorySummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6bda443ef5caffbec068274b5109c88f8651022c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d23d6ba472ce270ee97d073270c6a95740f9213c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816417"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59112715"
 ---
 # <a name="update-macossoftwareupdatecategorysummary"></a>Обновление macOSSoftwareUpdateCategorySummary
 
@@ -53,8 +53,8 @@ PATCH /deviceManagement/macOSSoftwareUpdateAccountSummaries/{macOSSoftwareUpdate
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|displayName|Строка|Имя отчета|
+|id|String|Ключ объекта.|
+|displayName|String|Имя отчета|
 |deviceId|String|ID устройства.|
 |userId|String|Идентификатор пользователя.|
 |updateCategory|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|Тип обновления программного обеспечения. Возможные значения: `critical`, `configurationDataFile`, `firmware`, `other`.|

@@ -2,15 +2,15 @@
 title: Создание объекта deviceCategory
 description: Создание объекта deviceCategory.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 388461d6d7fdd230e83b1db149346c05012f6ffa
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8688bd9435766bfafe33b1e371f3a0812a7b4ce7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816116"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59096321"
 ---
 # <a name="create-devicecategory"></a>Создание объекта deviceCategory
 

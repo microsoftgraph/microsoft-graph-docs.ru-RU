@@ -2,15 +2,15 @@
 title: Обновить VPP токен
 description: Обновление свойств объекта VPP токен.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 030a5467659edfa2754819bb20b1e44e28e6de4a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3fe82371ed0fdd12f6452cecce98248101738e32
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787962"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59116509"
 ---
 # <a name="update-vpptoken"></a>Обновить VPP токен
 
@@ -29,7 +29,7 @@ ms.locfileid: "58787962"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -66,11 +66,11 @@ PATCH /deviceAppManagement/vppTokens/{vppTokenId}
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Текущее состояние последней синхронизации приложения, инициированной с помощью токена Apple Volume Purchase Program. Возможные значения: `none`, `inProgress`, `completed`, `failed`. Возможные значения: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Логическое|Автоматически обновятся все приложения, не только для токена VPP.|
 |countryOrRegion|Строка|Автоматически обновятся все приложения, не только для токена VPP.|
-|dataSharingConsentGranted|Логический|Согласие на обмен данными с программой покупки тома Apple.|
-|displayName|Строка|Администратор указал имя, удобное для маркеров.|
-|locationName|Строка|Расположение маркера, возвращенного из VPP Apple.|
-|claimTokenManagementFromExternalMdm|Логический|Согласие администратора на разрешение требовать управления маркерами из внешнего MDM.|
-|roleScopeTagIds|Коллекция String|ID-теги области ролей, присвоенные этому объекту.|
+|dataSharingConsentGranted|Логическое|Согласие на обмен данными с программой покупки тома Apple.|
+|displayName|String|Администратор указал имя, удобное для маркеров.|
+|locationName|String|Расположение маркера, возвращенного из VPP Apple.|
+|claimTokenManagementFromExternalMdm|Логическое|Согласие администратора на разрешение требовать управления маркерами из внешнего MDM.|
+|roleScopeTagIds|Коллекция объектов string|ID-теги области ролей, присвоенные этому объекту.|
 
 
 

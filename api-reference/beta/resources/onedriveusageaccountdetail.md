@@ -1,16 +1,16 @@
 ---
 title: тип ресурса oneDriveUsageAccountDetail
 description: Ниже указано представление ресурса в формате JSON.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: 210728ee77bb013a4894156aef79d35248e7d2f32eed129baf8905655f192f5a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 56ac17d80338f37fa0026c06887bbbc10e9e1272
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155976"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085884"
 ---
 # <a name="onedriveusageaccountdetail-resource-type"></a>тип ресурса oneDriveUsageAccountDetail
 
@@ -21,16 +21,16 @@ ms.locfileid: "54155976"
 | Свойство                | Тип    |
 | :---------------------- | :------ |
 | reportRefreshDate       | Дата    |
-| siteUrl                 | Строка  |
-| ownerDisplayName        | Строка  |
-| ownerPrincipalName      | Строка  |
-| isDeleted               | Логический |
+| siteUrl                 | String  |
+| ownerDisplayName        | String  |
+| ownerPrincipalName      | String  |
+| isDeleted               | Логическое |
 | lastActivityDate        | Дата    |
 | fileCount               | Int64   |
 | activeFileCount         | Int64   |
 | storageUsedInBytes      | Int64   |
 | storageAllocatedInBytes | Int64   |
-| reportPeriod            | Строка  |
+| reportPeriod            | String  |
 
 ## <a name="json-representation"></a>Представление JSON
 

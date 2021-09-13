@@ -2,15 +2,15 @@
 title: Get deviceAppManagement
 description: Чтение свойств и связей объекта deviceAppManagement.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0d0e210e760fa0fc709eb41bf8800d48ebb6cac7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 63d3f21639ce33dd7e8a2fe53f8fa02482f2e801
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785215"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59096356"
 ---
 # <a name="get-deviceappmanagement"></a>Get deviceAppManagement
 
@@ -32,7 +32,7 @@ ms.locfileid: "58785215"
 | &nbsp;&nbsp; **Приложения,** **книги,** **onboarding,** **интеграция партнеров** или **набор политик** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.ReadW.All |
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application| |
+|Для приложений| |
 | &nbsp;&nbsp; **Приложения,** **книги,** **onboarding,** **интеграция партнеров** или **набор политик** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.ReadW.All |
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 

@@ -2,15 +2,15 @@
 title: тип ресурса macOSSystemExtension
 description: Представляет определенное расширение системы macOS.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a2927adc3df1092efd78eb3fbf9eef97d082509a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7d88b72d155a6d83757befe30c83a0c1c941c788
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799229"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59106156"
 ---
 # <a name="macossystemextension-resource-type"></a>тип ресурса macOSSystemExtension
 
@@ -25,7 +25,7 @@ ms.locfileid: "58799229"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|teamIdentifier|Строка|Получает или задает идентификатор группы, который использовался для подписи расширения системы.|
+|teamIdentifier|String|Получает или задает идентификатор группы, который использовался для подписи расширения системы.|
 |bundleId|String|Получает или задает идентификатор пакета расширения системы.|
 
 ## <a name="relationships"></a>Связи

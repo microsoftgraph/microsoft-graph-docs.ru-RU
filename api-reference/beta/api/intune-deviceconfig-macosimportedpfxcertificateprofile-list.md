@@ -2,15 +2,15 @@
 title: Список macOSImportedPFXCertificateProfiles
 description: Список свойств и связей объектов macOSImportedPFXCertificateProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f769453df41a34474253df23120493ac8db130d0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ac8025b852fed20fee298fba5c791f92a54b94c8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796420"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59135762"
 ---
 # <a name="list-macosimportedpfxcertificateprofiles"></a>Список macOSImportedPFXCertificateProfiles
 
@@ -29,7 +29,7 @@ ms.locfileid: "58796420"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

@@ -2,15 +2,15 @@
 title: тип ресурса windowsKioskDesktopApp
 description: Базовый класс для типа приложений
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6af178603f33bb851e33c9fcbdc6ed8d444a63cd
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1264789f771be245ef62b3328b27f5211464f0c2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805410"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086528"
 ---
 # <a name="windowskioskdesktopapp-resource-type"></a>тип ресурса windowsKioskDesktopApp
 
@@ -31,10 +31,10 @@ ms.locfileid: "58805410"
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|Размер плитки приложения для макета старта, унаследованный от [windowsKioskAppBase.](../resources/intune-deviceconfig-windowskioskappbase.md) Возможные значения: `hidden`, `small`, `medium`, `wide`, `large`.|
 |name|String|Представляет удобное имя приложения, унаследованной от [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|Тип приложения, унаследованный от [windowsKioskAppBase.](../resources/intune-deviceconfig-windowskioskappbase.md) Возможные значения: `unknown`, `store`, `desktop`, `aumId`.|
-|autoLaunch|Логический|Разрешить автоматическое запуск приложения в режиме киоска с несколькими приложениями, унаследованных от [windowsKioskAppBase.](../resources/intune-deviceconfig-windowskioskappbase.md)|
+|autoLaunch|Логическое|Разрешить автоматическое запуск приложения в режиме киоска с несколькими приложениями, унаследованных от [windowsKioskAppBase.](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |path|String|Определение пути настольного приложения|
-|desktopApplicationId|Строка|Определение DesktopApplicationID приложения|
-|desktopApplicationLinkPath|Строка|Определение DesktopApplicationLinkPath приложения|
+|desktopApplicationId|String|Определение DesktopApplicationID приложения|
+|desktopApplicationLinkPath|String|Определение DesktopApplicationLinkPath приложения|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -2,15 +2,15 @@
 title: тип ресурса appLogCollectionRequest
 description: Объект AppLogCollectionRequest.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bd6c56f04570a42809b1168090be8f8f6609ebfe
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e2cd37ecd109720bf5a564c64d480037a9bd72fc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790159"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59086311"
 ---
 # <a name="applogcollectionrequest-resource-type"></a>тип ресурса appLogCollectionRequest
 
@@ -35,10 +35,10 @@ ms.locfileid: "58790159"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор. Это userId_DeviceId_AppId id.|
+|id|String|Уникальный идентификатор. Это userId_DeviceId_AppId id.|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Состояние загрузки журнала. Возможные значения: `pending`, `completed`, `failed`.|
-|errorMessage|Строка|Сообщение об ошибке, если таково сообщение во время процесса загрузки|
-|customLogFolders|Коллекция String|Список папок журнала. |
+|errorMessage|String|Сообщение об ошибке, если таково сообщение во время процесса загрузки|
+|customLogFolders|Коллекция объектов string|Список папок журнала. |
 |completedDateTime|DateTimeOffset|Время, в течение которого запрос журнала загрузки достиг состояния терминала|
 
 ## <a name="relationships"></a>Связи

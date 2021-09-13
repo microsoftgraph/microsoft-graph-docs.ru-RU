@@ -2,15 +2,15 @@
 title: тип ресурса iosWebContentFilterSpecificWebsitesAccess
 description: Представляет тип параметра фильтра веб-контента iOS, который устанавливает URL-закладки в встроенный браузер iOS. Пример сценария в классе, где преподаватели хотели бы, чтобы учащиеся переориентировали веб-сайты через закладки браузера, настроенные на их устройствах iOS, и не имеют доступа к другим сайтам.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dbf2aeedc5ab9584cf65f00f665e1ba1340a9c15
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 39fcc4e17ef33fa3f96964f169ec4e2010b0f038
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785754"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59095600"
 ---
 # <a name="ioswebcontentfilterspecificwebsitesaccess-resource-type"></a>тип ресурса iosWebContentFilterSpecificWebsitesAccess
 
