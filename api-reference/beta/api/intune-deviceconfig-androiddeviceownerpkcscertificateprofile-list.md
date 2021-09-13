@@ -2,15 +2,15 @@
 title: Список androidDeviceOwnerPkcsCertificateProfiles
 description: Список свойств и связей объектов AndroidDeviceOwnerPkcsCertificateProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bfc51dd7c7081c7dc930ae042eb1854e31ad6e32
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ae116b79ab11082b43f6c6f67f63731ab0f5bcb9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805207"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59048922"
 ---
 # <a name="list-androiddeviceownerpkcscertificateprofiles"></a>Список androidDeviceOwnerPkcsCertificateProfiles
 

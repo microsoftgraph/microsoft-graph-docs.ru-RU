@@ -2,15 +2,15 @@
 title: Update groupPolicyPresentationValueText
 description: Обновление свойств объекта groupPolicyPresentationValueText.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c2cdadb01b7dad8ef15e270a98e70297517570b3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b275dffbfcc577cabc984ab024558e6dafbbc1db
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807057"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59076868"
 ---
 # <a name="update-grouppolicypresentationvaluetext"></a>Update groupPolicyPresentationValueText
 

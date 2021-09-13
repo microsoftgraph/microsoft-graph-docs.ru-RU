@@ -2,15 +2,15 @@
 title: Create androidForWorkEnrollmentProfile
 description: Создание объекта androidForWorkEnrollmentProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ed9de9cab1ed75a61c5a34f832e14e91ebb6360d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 443a9538b921aefe0fbf0a6891abad0ed56d4d06
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784172"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078030"
 ---
 # <a name="create-androidforworkenrollmentprofile"></a>Create androidForWorkEnrollmentProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "58784172"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,9 +54,9 @@ POST /deviceManagement/androidForWorkEnrollmentProfiles
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |accountId|String|GUID клиента, которому принадлежит профиль регистрации.|
-|id|Строка|Уникальный GUID профиля регистрации.|
-|displayName|Строка|Отображаемое имя для профиля регистрации.|
-|description|Строка|Описание профиля регистрации.|
+|id|String|Уникальный GUID профиля регистрации.|
+|displayName|String|Отображаемое имя для профиля регистрации.|
+|description|String|Описание профиля регистрации.|
 |createdDateTime|DateTimeOffset|Дата и время создания профиля регистрации.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения профиля регистрации.|
 |tokenValue|String|Значение последнего созданного маркера для этого профиля регистрации.|

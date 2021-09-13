@@ -2,15 +2,15 @@
 title: тип ресурса mobileContainedApp
 description: Абстрактный класс, представляю содержащийся в приложении mobileApp, действующий в качестве пакета.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c5eb1f5e94ec45d6da289529f2982cd3cbab23c7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 281100ad8f91bc8872cba5228a1d6a9a24a42167
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787640"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075846"
 ---
 # <a name="mobilecontainedapp-resource-type"></a>тип ресурса mobileContainedApp
 
@@ -26,12 +26,12 @@ ms.locfileid: "58787640"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список mobileContainedApps](../api/intune-apps-mobilecontainedapp-list.md)|[коллекция mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|Список свойств и связей объектов [mobileContainedApp.](../resources/intune-apps-mobilecontainedapp.md)|
-|[Get mobileContainedApp](../api/intune-apps-mobilecontainedapp-get.md)|[mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md);|Чтение свойств и связей объекта [mobileContainedApp.](../resources/intune-apps-mobilecontainedapp.md)|
+|[Get mobileContainedApp](../api/intune-apps-mobilecontainedapp-get.md)|[mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|Чтение свойств и связей объекта [mobileContainedApp.](../resources/intune-apps-mobilecontainedapp.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 
 ## <a name="relationships"></a>Связи
 Нет

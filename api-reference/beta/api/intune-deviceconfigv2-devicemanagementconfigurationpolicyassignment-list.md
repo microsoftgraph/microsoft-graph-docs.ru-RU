@@ -2,15 +2,15 @@
 title: Список deviceManagementConfigurationPolicyAssignments
 description: Список свойств и связей объектов deviceManagementConfigurationPolicyAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e0fc2d6d94f223cebcde9a79eeb565476ededb6c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9e8626a8064008718a465933ea51fe5535519dc4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788039"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077309"
 ---
 # <a name="list-devicemanagementconfigurationpolicyassignments"></a>Список deviceManagementConfigurationPolicyAssignments
 
@@ -29,7 +29,7 @@ ms.locfileid: "58788039"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

@@ -2,15 +2,15 @@
 title: тип ресурса userAttributeValuesItem
 description: Используется для заполнения значений атрибута потока пользователей в потоке пользователей при выборе нескольких выборов.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 1780e37b8be9952d314f2a95a89975814ffac3483199ae72eb608d1426aa84cd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3468ed1545c8be12f906182f34f5260897f461ba
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54145077"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057000"
 ---
 # <a name="userattributevaluesitem-resource-type"></a>тип ресурса userAttributeValuesItem
 

@@ -2,15 +2,15 @@
 title: тип ресурса remoteAssistanceReporting
 description: Ресурсы RemoteAssistanceReporting представляют метаданные данной полезной нагрузки отчетов о удаленной помощи
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d5442ce93f5e7697ed577835ddd437252396e67b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7793b8ef8bffa33e5d2e77de9fd102b9d0c59288
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805358"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039464"
 ---
 # <a name="remoteassistancereporting-resource-type"></a>тип ресурса remoteAssistanceReporting
 
@@ -25,23 +25,23 @@ ms.locfileid: "58805358"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для сеанса и для полезной нагрузки отчетов каждого сеанса|
+|id|String|Уникальный идентификатор для сеанса и для полезной нагрузки отчетов каждого сеанса|
 |startDateTime|DateTimeOffset|Время начала сеанса|
 |endDateTime|DateTimeOffset|Время окончания сеанса|
 |remoteAssistanceSessionType|[remoteAssistanceSessionType](../resources/intune-remoteassistance-remoteassistancesessiontype.md)|Тип сеанса удаленной помощи, который был проведен. Возможные значения: `viewOnly`, `fullControl`, `elevation`. Возможные значения: `viewOnly`, `fullControl`, `elevation`.|
-|helperEmail|Строка|Электронная почта входа, используемая помощником для создания сеанса|
-|helperTenantId|Строка|ID клиента для помощника|
-|helperFirstName|Строка|Имя помощника|
-|helperLastName|Строка|Фамилия помощника|
-|helperDeviceAadId|Строка|AAD-Id устройства помощника|
-|helperDeviceName|Строка|Имя устройства помощника|
+|helperEmail|String|Электронная почта входа, используемая помощником для создания сеанса|
+|helperTenantId|String|ID клиента для помощника|
+|helperFirstName|String|Имя помощника|
+|helperLastName|String|Фамилия помощника|
+|helperDeviceAadId|String|AAD-Id устройства помощника|
+|helperDeviceName|String|Имя устройства помощника|
 |helperEnrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Состояние регистрации intune устройства помощника. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|sharerEmail|Строка|Электронная почта входа, используемая sharer для создания сеанса|
-|sharerTenantId|Строка|ID клиента для sharer|
-|sharerFirstName|Строка|Имя sharer|
-|sharerLastName|Строка|Фамилия sharer|
-|sharerDeviceAadId|Строка|AAD-Id устройства Sharer|
-|sharerDeviceName|Строка|Имя устройства sharer|
+|sharerEmail|String|Электронная почта входа, используемая sharer для создания сеанса|
+|sharerTenantId|String|ID клиента для sharer|
+|sharerFirstName|String|Имя sharer|
+|sharerLastName|String|Фамилия sharer|
+|sharerDeviceAadId|String|AAD-Id устройства Sharer|
+|sharerDeviceName|String|Имя устройства sharer|
 |sharerEnrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Состояние регистрации intune устройства sharer. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 
 ## <a name="relationships"></a>Связи

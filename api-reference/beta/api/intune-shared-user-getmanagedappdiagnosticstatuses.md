@@ -2,15 +2,15 @@
 title: Функция getManagedAppDiagnosticStatuses
 description: Получает состояние диагностической проверки для определенного пользователя.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 14d00a9b5104e4c98a70504407fe51e528630b5b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e79b374d4767c847426c19c5586c6ac97a12a165
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58753374"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59051813"
 ---
 # <a name="getmanagedappdiagnosticstatuses-function"></a>Функция getManagedAppDiagnosticStatuses
 
@@ -29,7 +29,7 @@ ms.locfileid: "58753374"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application||
+|Для приложений||
 | &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос

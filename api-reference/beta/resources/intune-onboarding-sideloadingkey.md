@@ -2,15 +2,15 @@
 title: тип ресурса sideLoadingKey
 description: Объект SideLoadingKey необходим для Windows 8 и 8.1 устройств для intall Line of Business Apps для клиента.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 651815aea6e64b4fa53f0a4d22127050c5f3b488
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dc902bb1a6b1549f13e718c37db41321e0e1cbd5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792570"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046724"
 ---
 # <a name="sideloadingkey-resource-type"></a>тип ресурса sideLoadingKey
 
@@ -34,12 +34,12 @@ ms.locfileid: "58792570"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный ID side Loading Key.|
+|id|String|Уникальный ID side Loading Key.|
 |value|String|Ключевое значение side Loading — это значение 5x5, разделенное hiphens.|
-|displayName|Строка|Имя клавиши боковой загрузки, отображаемой администраторам ITPro.|
-|description|Строка|Описание клавиши боковой загрузки, отображаемой администраторам ITPro..|
+|displayName|String|Имя клавиши боковой загрузки, отображаемой администраторам ITPro.|
+|description|String|Описание клавиши боковой загрузки, отображаемой администраторам ITPro..|
 |totalActivation|Int32|Полная активация клавиши боковой загрузки, отображаемая администраторам ITPro.|
-|lastUpdatedDateTime|Строка|Клавиша side Loading Last Updated Date, отображаемая администраторам ITPro.|
+|lastUpdatedDateTime|String|Клавиша side Loading Last Updated Date, отображаемая администраторам ITPro.|
 
 ## <a name="relationships"></a>Связи
 Нет

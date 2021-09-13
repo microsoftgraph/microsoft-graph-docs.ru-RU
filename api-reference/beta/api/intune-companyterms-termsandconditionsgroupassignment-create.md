@@ -2,15 +2,15 @@
 title: Создание терминовAndConditionsGroupAssignment
 description: Создайте новый объект TermsAndConditionsGroupAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d99500e9886d289df6171c441a00b0715b7d34b7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4764f0986444423848829cf4e952f5d99159a237
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793269"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077687"
 ---
 # <a name="create-termsandconditionsgroupassignment"></a>Создание терминовAndConditionsGroupAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "58793269"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,8 +53,8 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignment
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта.|
-|targetGroupId|Строка|Уникальный идентификатор группы, для&C.|
+|id|String|Уникальный идентификатор объекта.|
+|targetGroupId|String|Уникальный идентификатор группы, для&C.|
 
 
 

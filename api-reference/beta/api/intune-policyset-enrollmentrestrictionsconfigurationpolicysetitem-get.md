@@ -2,15 +2,15 @@
 title: Получить enrollmentRestrictionsConfigurationPolicySetItem
 description: Чтение свойств и связей объекта enrollmentRestrictionsConfigurationPolicySetItem.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c448426da5b1bbf0ce5cead5dd279bc1b0217d5a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ed400412287514eea0e82e6c9ee98ade4b175266
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805466"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034227"
 ---
 # <a name="get-enrollmentrestrictionsconfigurationpolicysetitem"></a>Получить enrollmentRestrictionsConfigurationPolicySetItem
 

@@ -2,15 +2,15 @@
 title: тип ресурсов microsoftTunnelHealthThreshold
 description: Сущность, представляюная пороговые значения для здоровья метрики здоровья.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 179ea255198d1febbd2defeeac13316e583b9271
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6661fac1b2096f4164d81ce111032a0bb551dfdc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805352"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59057294"
 ---
 # <a name="microsofttunnelhealththreshold-resource-type"></a>тип ресурсов microsoftTunnelHealthThreshold
 
@@ -34,7 +34,7 @@ ms.locfileid: "58805352"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Имя метрик|
+|id|String|Имя метрик|
 |healthyThreshold|Int64|Пороговое значение для здоровья|
 |unhealthyThreshold|Int64|Порог для неработоспособного|
 |defaultHealthyThreshold|Int64|Пороговое значение по умолчанию для того, чтобы быть здоровым|

@@ -2,15 +2,15 @@
 title: тип ресурса userExperienceAnalyticsWindows10DevicesSummary
 description: Аналитика пользовательских интерфейсов работает из любой Windows 10 устройств.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: beeded0dfecec5f8c596e22a20c2352679a9fadc
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 101e764a1b5c6abd937d10a4b40642234a0f8dd3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797495"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046892"
 ---
 # <a name="userexperienceanalyticswindows10devicessummary-resource-type"></a>тип ресурса userExperienceAnalyticsWindows10DevicesSummary
 

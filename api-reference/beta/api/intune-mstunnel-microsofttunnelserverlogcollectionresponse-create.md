@@ -2,15 +2,15 @@
 title: Создание microsoftTunnelServerLogCollectionResponse
 description: Создайте новый объект microsoftTunnelServerLogCollectionResponse.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5202b524398f0794ee9477942821fbf0657aff5a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a5d0e3ec207d97fd3a7d9c54aed9504f504490ab
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802280"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59041698"
 ---
 # <a name="create-microsofttunnelserverlogcollectionresponse"></a>Создание microsoftTunnelServerLogCollectionResponse
 
@@ -29,7 +29,7 @@ ms.locfileid: "58802280"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
