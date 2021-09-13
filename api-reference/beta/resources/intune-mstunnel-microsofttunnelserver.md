@@ -2,15 +2,15 @@
 title: тип ресурсов microsoftTunnelServer
 description: Объект, Microsoft Tunnel представляю
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2e20964b09e613c02c0e2483d10aece0439b765a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b7869ad1f32e791180d8e671422580d406b13615
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783199"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068665"
 ---
 # <a name="microsofttunnelserver-resource-type"></a>тип ресурсов microsoftTunnelServer
 
@@ -37,14 +37,14 @@ ms.locfileid: "58783199"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Id MicrosoftTunnelServer|
+|id|String|Id MicrosoftTunnelServer|
 |displayName|Строка|Имя отображения MicrosoftTunnelServer|
 |tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|Состояние здоровья MicrosoftTunnelServer. Возможные значения: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`.|
 |lastCheckinDateTime|DateTimeOffset|При последней регистрации в MicrosoftTunnelServer|
 |agentImageDigest|Строка|Дайджест текущего образа агента, запущенного на этом сервере |
 |serverImageDigest|Строка|Дайджест текущего изображения сервера, запущенного на этом сервере |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

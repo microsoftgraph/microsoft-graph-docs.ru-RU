@@ -2,15 +2,15 @@
 title: Обновление groupPolicyPresentation
 description: Обновление свойств объекта groupPolicyPresentation.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f407c8f8d5be7769ff3ff41d303e16dc3b17b2fe
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 322e0b158305b39a2aac822965f1a0c7a4527cfb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789027"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070158"
 ---
 # <a name="update-grouppolicypresentation"></a>Обновление groupPolicyPresentation
 
@@ -29,7 +29,7 @@ ms.locfileid: "58789027"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,7 +54,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|подпись|Строка|Локализованная текстовая метка для любого объекта презентации. По умолчанию это значение пусто.|
+|подпись|String|Локализованная текстовая метка для любого объекта презентации. По умолчанию это значение пусто.|
 |id|Строка|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 

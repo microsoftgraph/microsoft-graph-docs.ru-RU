@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Json
 description: Представляет данные, возвращаемые в формате JSON.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
 author: ruoyingl
-ms.openlocfilehash: ae365a098baca0829055d968816d94e812d6fe26ad4ad7713ecb2000dcb61aec
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2f24b3d9806179e877e581554ac25141063a8b9f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248322"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068515"
 ---
 # <a name="json-resource-type"></a>Тип ресурса Json
 
@@ -21,7 +21,7 @@ ms.locfileid: "54248322"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

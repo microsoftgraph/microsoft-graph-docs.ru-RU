@@ -2,15 +2,15 @@
 title: Обновление устройстваAndAppManagementAssignmentFilter
 description: Обновление свойств объекта deviceAndAppManagementAssignmentFilter.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c140f5c31464f729d4728dbdcfbe83b128164ae8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a51bded23b9170b1488e04b1e65aa72f704c164d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820241"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065052"
 ---
 # <a name="update-deviceandappmanagementassignmentfilter"></a>Обновление устройстваAndAppManagementAssignmentFilter
 
@@ -57,7 +57,7 @@ PATCH /deviceManagement/assignmentFilters/{deviceAndAppManagementAssignmentFilte
 |createdDateTime|DateTimeOffset|Время создания фильтра назначения.|
 |lastModifiedDateTime|DateTimeOffset|Последнее измененное время фильтра назначения.|
 |displayName|String|DisplayName фильтра назначения.|
-|description|String|Описание фильтра назначения.|
+|description|Строка|Описание фильтра назначения.|
 |платформа|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|Тип платформы устройств, на которых будет применяться фильтр назначения. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |правило|String|Определение правила фильтра назначения.|
 |roleScopeTags|Коллекция String|RoleScopeTags фильтра назначения.|

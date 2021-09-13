@@ -2,15 +2,15 @@
 title: Список встроенныхSIMActivationCodePools
 description: Список свойств и связей встроенных объектовSIMActivationCodePool.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4866adf47584615be6baf0bc4a9df55ca56762ea
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d79af29212ba293fff4d0815538087c77af0d7d7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804703"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065325"
 ---
 # <a name="list-embeddedsimactivationcodepools"></a>Список встроенныхSIMActivationCodePools
 

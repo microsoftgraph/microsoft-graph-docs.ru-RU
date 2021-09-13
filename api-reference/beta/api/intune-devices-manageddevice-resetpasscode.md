@@ -2,15 +2,15 @@
 title: Действие resetPasscode
 description: Сброс секретного кода
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 158952f8af6dcfa726b881946c3a3baed888d83b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3c87275986532a34a9ff4beeb31ba8ebcd895005
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58809737"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070659"
 ---
 # <a name="resetpasscode-action"></a>Действие resetPasscode
 

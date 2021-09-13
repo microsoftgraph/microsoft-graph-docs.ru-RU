@@ -2,15 +2,15 @@
 title: Создание deviceHealthScript
 description: Создайте новый объект deviceHealthScript.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ade3ccd31369588da3c183e85de9682e4930885
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ef1fb1b3434e2e317a161c0964b76809dfbb7e22
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58814842"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59059135"
 ---
 # <a name="create-devicehealthscript"></a>Создание deviceHealthScript
 
@@ -66,8 +66,8 @@ POST /deviceManagement/deviceHealthScripts
 |enforceSignatureCheck|Логический|Указать, нужно ли проверять подпись скрипта|
 |runAs32Bit|Boolean|Указать, должен ли сценарий PowerShell работать как 32-битный|
 |roleScopeTagIds|Коллекция String|Список ID-тегов области для скрипта здоровья устройств|
-|isGlobalScript|Логический|Определяет, является ли это microsoft Proprietary Script. Несвободные скрипты являются только для чтения|
-|highestAvailableVersion|Строка|Самая доступная версия для сценария Microsoft Proprietary|
+|isGlobalScript|Boolean|Определяет, является ли это microsoft Proprietary Script. Несвободные скрипты являются только для чтения|
+|highestAvailableVersion|String|Самая доступная версия для сценария Microsoft Proprietary|
 |detectionScriptParameters|[коллекция deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|Список объектов ComplexType DetectionScriptParameters.|
 |remediationScriptParameters|[коллекция deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md)|Список объектов ComplexType RemediationScriptParameters.|
 

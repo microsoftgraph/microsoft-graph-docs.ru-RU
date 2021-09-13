@@ -2,15 +2,15 @@
 title: тип ресурса macOsLobAppAssignmentSettings
 description: Содержит свойства, используемые для назначения приложения Mac LOB группе.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3b09a76ead5818616a67d0ce057ea2c466e76582
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 03707af3798adabb1a1d83c789e9986c0e5076f8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797214"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068559"
 ---
 # <a name="macoslobappassignmentsettings-resource-type"></a>тип ресурса macOsLobAppAssignmentSettings
 
@@ -28,9 +28,9 @@ ms.locfileid: "58797214"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|uninstallOnDeviceRemoval|Логический|Следует ли удалить приложение при удалении устройства из Intune.|
+|uninstallOnDeviceRemoval|Boolean|Следует ли удалить приложение при удалении устройства из Intune.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

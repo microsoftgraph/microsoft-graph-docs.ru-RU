@@ -2,15 +2,15 @@
 title: Получение объекта localizedNotificationMessage
 description: Чтение свойств и связей объекта localizedNotificationMessage.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 551d730139d8ccfc65a213e53c247256e58ec7a3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 36b116e3c0081a20815ef57f95f194b81e78d006
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821972"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065115"
 ---
 # <a name="get-localizednotificationmessage"></a>Получение объекта localizedNotificationMessage
 

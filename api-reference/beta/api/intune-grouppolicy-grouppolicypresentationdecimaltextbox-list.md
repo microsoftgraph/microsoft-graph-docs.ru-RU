@@ -2,15 +2,15 @@
 title: List groupPolicyPresentationDecimalTextBoxes
 description: Список свойств и связей объектов groupPolicyPresentationDecimalTextBox.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e07afae4e4d279da053ebd6ab8dd73e468dd7363
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9c015a1083926525ba262cd8df3b6c8d3bed7b41
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806315"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070141"
 ---
 # <a name="list-grouppolicypresentationdecimaltextboxes"></a>List groupPolicyPresentationDecimalTextBoxes
 

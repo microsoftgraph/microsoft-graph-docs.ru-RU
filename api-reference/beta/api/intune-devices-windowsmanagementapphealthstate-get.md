@@ -2,15 +2,15 @@
 title: Get windowsManagementAppHealthState
 description: Чтение свойств и связей объекта WindowsManagementAppHealthState.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3de7d5c178c34bd90ffe78a024a72a658d6fc78c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 59943833ad7620b8562e324a06ab0d8b8a5c9bcc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821531"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065353"
 ---
 # <a name="get-windowsmanagementapphealthstate"></a>Get windowsManagementAppHealthState
 

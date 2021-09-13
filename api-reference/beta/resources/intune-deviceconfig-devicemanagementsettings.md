@@ -2,15 +2,15 @@
 title: Тип ресурса deviceManagementSettings
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3329b4e7f3412d62acafdb6a82b5838c9dd93f02
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 52cfd12bc068926903e37b1a823ac9d58a48f2a2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785418"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069259"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>Тип ресурса deviceManagementSettings
 
@@ -33,10 +33,10 @@ ms.locfileid: "58785418"
 |derivedCredentialProvider|[derivedCredentialProviderType](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|Поставщик производных учетных данных для использования для этой учетной записи. Возможные значения: `notConfigured`, `entrustDataCard`, `purebred`, `xTec`, `intercede`.|
 |derivedCredentialUrl|Строка|URI самообслуживаемого поставщика учетных данных.|
 |androidDeviceAdministratorEnrollmentEnabled|Логический|Свойство, определяющее, включена ли регистрация администратора устройства Android для этой учетной записи.|
-|ignoreDevicesForUnsupportedSettingsEnabled|Boolean|Свойство для определения того, следует ли игнорировать неподтверченные параметры соответствия определенным моделям устройств.|
-|enableLogCollection|Логический|Определяет, должна ли функция коллекции журналов быть доступной для использования.|
+|ignoreDevicesForUnsupportedSettingsEnabled|Логический|Свойство для определения того, следует ли игнорировать неподтверченные параметры соответствия определенным моделям устройств.|
+|enableLogCollection|Boolean|Определяет, должна ли функция коллекции журналов быть доступной для использования.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -2,15 +2,15 @@
 title: Создание объекта androidManagedAppRegistration
 description: Создание объекта androidManagedAppRegistration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0a4f1095d34252c41eff6ff0c0f14b4cd5894978
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 26cb767ae744866da8924c7e0206e1aae5e02dc9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818858"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065150"
 ---
 # <a name="create-androidmanagedappregistration"></a>Создание объекта androidManagedAppRegistration
 
@@ -29,7 +29,7 @@ ms.locfileid: "58818858"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -64,13 +64,13 @@ POST /deviceAppManagement/managedAppRegistrations
 |managedDeviceId|String|Идентификатор управляемого устройства хост-устройства. Значение может быть пустым даже при управляемом устройстве хост-устройства. Наследуется от объекта [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
 |azureADDeviceId|String|Идентификатор Azure Active Directory устройства хост-устройства. Значение может быть пустым даже при регистрации Azure Active Directory устройства. Наследуется от объекта [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
 |deviceModel|String|Модель устройства для текущей регистрации приложений, унаследованной от [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|deviceManufacturer|String|Производитель устройств для текущей регистрации приложений, унаследованных от [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|deviceManufacturer|Строка|Производитель устройств для текущей регистрации приложений, унаследованных от [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |flaggedReasons|[коллекция managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)|Нуль или более причин, по которым помечается регистрация приложения (например, приложение, запущенное на корневом устройстве, унаследовано от [управляемогоAppRegistration](../resources/intune-mam-managedappregistration.md). Возможные значения: `none`, `rootedDevice`, `androidBootloaderUnlocked`, `androidFactoryRomModified`.|
 |userId|String|Идентификатор пользователя, к которому относится эта регистрация приложения. Наследуется от объекта [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|Идентификатор пакета приложения. Наследуется от объекта [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
 |id|String|Ключ объекта. Наследуется от объекта [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
 |version|String|Версия объекта. Наследуется от объекта [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
-|patchVersion|String|Версия патча для текущей регистрации android-приложений|
+|patchVersion|Строка|Версия патча для текущей регистрации android-приложений|
 
 
 

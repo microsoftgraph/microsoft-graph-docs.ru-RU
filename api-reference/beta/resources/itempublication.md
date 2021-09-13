@@ -1,16 +1,16 @@
 ---
 title: тип ресурса itemPublication
 description: тип ресурса itemPublication
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 5cdc4a741205be696e584100d1ce6900052a951354481cc0dceffb7d1e19464b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ca37abe9d30ad7a0b24f76388acf72076e92e9e3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248291"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068531"
 ---
 # <a name="itempublication-resource-type"></a>тип ресурса itemPublication
 
@@ -47,7 +47,7 @@ ms.locfileid: "54248291"
 |thumbnailUrl   |Строка      |URL-адрес, ссылающийся на эскиз публикации.   |
 |webUrl         |String      |URL-адрес, ссылающийся на публикацию.                  |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

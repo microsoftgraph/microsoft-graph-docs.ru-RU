@@ -2,15 +2,15 @@
 title: Обновление userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
 description: Обновление свойств объекта userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ce97538fc74d6dcb99062d685c83864f109d6ef
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 899c3b3adbeacaea58ac1e2035e383d3cacd41cf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816979"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070589"
 ---
 # <a name="update-userexperienceanalyticsapphealthappperformancebyappversiondeviceid"></a>Обновление userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
 
@@ -59,8 +59,8 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceBy
 |processedDateTime|DateTimeOffset|Дата и время последнего вычисления статистики.|
 |appName|String|Имя приложения.|
 |appDisplayName|String|Удобное имя приложения.|
-|appPublisher|String|Издатель приложения.|
-|appVersion|String|Версия приложения.|
+|appPublisher|Строка|Издатель приложения.|
+|appVersion|Строка|Версия приложения.|
 |appCrashCount|Int32|Количество сбоей для приложения. Допустимые значения 2147483648 2147483647|
 
 

@@ -2,15 +2,15 @@
 title: Создание configManagerCollection
 description: Создайте новый объект configManagerCollection.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c5ef016fba9ed8c32e0333f85f15ca7944b392c4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 945a4bedf5a0680b001307a0d829cebc606c6812
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783353"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070022"
 ---
 # <a name="create-configmanagercollection"></a>Создание configManagerCollection
 
@@ -29,7 +29,7 @@ ms.locfileid: "58783353"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,11 +53,11 @@ POST /deviceManagement/configManagerCollections
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ для коллекции ConfigManager.|
-|displayName|Строка|The DisplayName.|
-|collectionIdentifier|Строка|Идентификатор коллекции в SCCM.|
-|hierarchyName|Строка|Имя иерархии.|
-|hierarchyIdentifier|Строка|Идентификатор иерархии.|
+|id|String|Ключ для коллекции ConfigManager.|
+|displayName|String|The DisplayName.|
+|collectionIdentifier|String|Идентификатор коллекции в SCCM.|
+|hierarchyName|String|Имя иерархии.|
+|hierarchyIdentifier|String|Идентификатор иерархии.|
 |createdDateTime|DateTimeOffset|Дата создания.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения.|
 

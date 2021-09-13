@@ -2,15 +2,15 @@
 title: Тип ресурса termsAndConditionsAcceptanceStatus
 description: Объект termsAndConditionsAcceptanceStatus представляет состояние принятия определенной политики условий для заданного пользователя. Чтобы получить доступ к корпоративному порталу, пользователям нужно принять последнюю версию условий.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9b242e16eb2d890f133f60f028b523fc3acd3f66
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 42bcf4b2b8aaaf82369b0cbf47cd7a6487c06fcd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58813658"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069357"
 ---
 # <a name="termsandconditionsacceptancestatus-resource-type"></a>Тип ресурса termsAndConditionsAcceptanceStatus
 
@@ -40,7 +40,7 @@ ms.locfileid: "58813658"
 |acceptedDateTime|DateTimeOffset|Дата и время последнего принятия условий пользователем.|
 |userPrincipalName|String|UserPrincipalName пользователя, который принял этот термин.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |termsAndConditions|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Ссылка для перехода к назначенным условиям.|

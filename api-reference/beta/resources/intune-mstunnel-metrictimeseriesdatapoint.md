@@ -2,15 +2,15 @@
 title: тип ресурса metricTimeSeriesDataPoint
 description: Точка данных серии "Метрики"
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4939450d7cc4a8a42d804a3ccbceb4bfc9fdb297
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c550f145d99b82307f1ec3ed88040ff1c2357609
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800107"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068699"
 ---
 # <a name="metrictimeseriesdatapoint-resource-type"></a>тип ресурса metricTimeSeriesDataPoint
 
@@ -28,7 +28,7 @@ ms.locfileid: "58800107"
 |dateTime|DateTimeOffset|Время точки данных метрических рядов времени|
 |значение|Int64|Значение точки данных метрических рядов времени|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -2,15 +2,15 @@
 title: Список androidDeviceOwnerImportedPFXCertificateProfiles
 description: Список свойств и связей объектов androidDeviceOwnerImportedPFXCertificateProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a20ee1a0a7fa1c2f6b50a8d4ae222d0f44fc3443
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3177c86e78bccfb76d718061e2336aea2a8166d0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58768643"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065962"
 ---
 # <a name="list-androiddeviceownerimportedpfxcertificateprofiles"></a>Список androidDeviceOwnerImportedPFXCertificateProfiles
 
@@ -29,7 +29,7 @@ ms.locfileid: "58768643"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

@@ -2,15 +2,15 @@
 title: Обновление mobileAppSupersedence
 description: Обновление свойств объекта mobileAppSupersedence.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2c69d3f6223696df3919fbd9e86b25d3235a2a34
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 285f8dbd09defb08a4985793e677440522e2a137
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786244"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59061909"
 ---
 # <a name="update-mobileappsupersedence"></a>Обновление mobileAppSupersedence
 
@@ -29,7 +29,7 @@ ms.locfileid: "58786244"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

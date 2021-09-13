@@ -1,16 +1,16 @@
 ---
 title: тип ресурса officeClientCheckinStatus
 description: Объект, описывая статистику регистрации клиента.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ae27c35842188bf3e1ce63f0906ab799867ca9a0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 416b7f20477109718ab8b2efd26190050d910fda
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794986"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064429"
 ---
 # <a name="officeclientcheckinstatus-resource-type"></a>тип ресурса officeClientCheckinStatus
 
@@ -27,14 +27,14 @@ ms.locfileid: "58794986"
 |userPrincipalName|String|Имя основного пользователя с помощью устройства.|
 |deviceName|String|Имя устройства при попытке регистрации.|
 |devicePlatform|Строка|Платформа устройства, пытаемаяся проверить регистрацию.|
-|devicePlatformVersion|Строка|Версия платформы устройства при попытке регистрации.|
-|wasSuccessful|Логический|Если последняя проверка прошла успешно.|
+|devicePlatformVersion|String|Версия платформы устройства при попытке регистрации.|
+|wasSuccessful|Boolean|Если последняя проверка прошла успешно.|
 |userId|String|Идентификатор пользователя с помощью устройства.|
 |checkinDateTime|DateTimeOffset|Последнее время регистрации устройства в UTC.|
 |errorMessage|Строка|Сообщение об ошибке, связанное с последней проверкой.|
-|appliedPolicies|Коллекция String|Список политик, доставленных на устройство в качестве последней проверки.|
+|appliedPolicies|Коллекция строк|Список политик, доставленных на устройство в качестве последней проверки.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -2,15 +2,15 @@
 title: Удаление mobileAppSupersedence
 description: Удаляет mobileAppSupersedence.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 61592b2295cb16a293a893e68c5f7bf3f91c8411
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 82fe8c9baa864ae0166ce47f46481ca5606d9136
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799973"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59061958"
 ---
 # <a name="delete-mobileappsupersedence"></a>Удаление mobileAppSupersedence
 
@@ -29,7 +29,7 @@ ms.locfileid: "58799973"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

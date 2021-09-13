@@ -2,15 +2,15 @@
 title: Создание userExperienceAnalyticsMetricHistory
 description: Создание нового объекта userExperienceAnalyticsMetricHistory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bed1f382d116b34fdad12e3fd5d6782a15626054
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c34b75726bea910d8dca1691beca5b056a651b83
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801278"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070435"
 ---
 # <a name="create-userexperienceanalyticsmetrichistory"></a>Создание userExperienceAnalyticsMetricHistory
 
@@ -29,7 +29,7 @@ ms.locfileid: "58801278"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,10 +54,10 @@ POST /deviceManagement/userExperienceAnalyticsDeviceMetricHistory
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор метрики аналитики пользовательского опыта.|
+|id|String|Уникальный идентификатор метрики аналитики пользовательского опыта.|
 |deviceId|String|ID устройства аналитики пользовательского интерфейса.|
 |metricDateTime|DateTimeOffset|Время даты даты аналитики пользовательского интерфейса.|
-|metricType|Строка|Тип метрики аналитики пользовательского опыта.|
+|metricType|String|Тип метрики аналитики пользовательского опыта.|
 
 
 

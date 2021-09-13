@@ -2,15 +2,15 @@
 title: Обновление deviceManagementDomainJoinConnector
 description: Обновление свойств объекта deviceManagementDomainJoinConnector.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 15d595fb08fa5e88f1820f6d3bd55c5b55a503c7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 95095857e77e5aa27e413690ebbe7253407745ae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788305"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070085"
 ---
 # <a name="update-devicemanagementdomainjoinconnector"></a>Обновление deviceManagementDomainJoinConnector
 
@@ -29,7 +29,7 @@ ms.locfileid: "58788305"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +53,7 @@ PATCH /deviceManagement/domainJoinConnectors/{deviceManagementDomainJoinConnecto
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для представления соединитетеля.|
+|id|String|Уникальный идентификатор для представления соединитетеля.|
 |displayName|Строка|Имя отображения соединитетеля.|
 |lastConnectionDateTime|DateTimeOffset|Последний раз соединитель связывался с Intune.|
 |state|[deviceManagementDomainJoinConnectorState](../resources/intune-odj-devicemanagementdomainjoinconnectorstate.md)|Состояние соединитетеля. Возможные значения: `active`, `error`, `inactive`.|

@@ -2,15 +2,15 @@
 title: Обновление userExperienceAnalyticsAppHealthDeviceModelPerformance
 description: Обновление свойств объекта userExperienceAnalyticsAppHealthDeviceModelPerformance.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3af5d2059ffd22d1d40d83560a21b88e28dc69d2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7e8907e33d0bc52efbbb0d5d973ffa7491f0f4fb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788817"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065437"
 ---
 # <a name="update-userexperienceanalyticsapphealthdevicemodelperformance"></a>Обновление userExperienceAnalyticsAppHealthDeviceModelPerformance
 
@@ -29,7 +29,7 @@ ms.locfileid: "58788817"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -59,7 +59,7 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthDeviceModelPerformance/{
 |activeDeviceCount|Int32|Количество активных устройств для модели. Допустимые значения 2147483648 2147483647|
 |meanTimeToFailureInMinutes|Int32|Время сбоя для устройства модели в минутах. Допустимые значения 2147483648 2147483647|
 |modelAppHealthScore|Двойное с плавающей точкой|Оценка состояния здоровья приложения модели устройства. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
-|modelAppHealthStatus|String|Общее состояние состояния здоровья приложения модели устройства.|
+|modelAppHealthStatus|Строка|Общее состояние состояния здоровья приложения модели устройства.|
 
 
 

@@ -2,15 +2,15 @@
 title: расширенный тип ресурсовThreatProtectionOnboardingDeviceSettingState
 description: Состояние onboarding ATP для данного устройства.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9569a285bd418143985f1c4f8649f1a00f16caaf
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1a07551110431a54fbfcefaae472b4ccc780a449
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818823"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064415"
 ---
 # <a name="advancedthreatprotectiononboardingdevicesettingstate-resource-type"></a>расширенный тип ресурсовThreatProtectionOnboardingDeviceSettingState
 
@@ -48,7 +48,7 @@ ms.locfileid: "58818823"
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Состояние соответствия параметру. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время истечения льготного периода соответствия требования для устройства|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

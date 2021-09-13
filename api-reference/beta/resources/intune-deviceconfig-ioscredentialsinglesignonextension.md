@@ -2,15 +2,15 @@
 title: тип ресурса iosCredentialSingleSignOnExtension
 description: Представляет профиль одноместного Sign-On типа учетных данных для устройств iOS.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5bdb66dde22cf65fd0ece96b56259eb3f090e094
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8d356b901f3fbc2d912c2d29c028c29d9aa083f6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786371"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069168"
 ---
 # <a name="ioscredentialsinglesignonextension-resource-type"></a>тип ресурса iosCredentialSingleSignOnExtension
 
@@ -30,11 +30,11 @@ ms.locfileid: "58786371"
 |:---|:---|:---|
 |extensionIdentifier|Строка|Получает или задает пакетный ID расширения приложения, который выполняет SSO для указанных URL-адресов.|
 |teamIdentifier|Строка|Получает или задает командный ID расширения приложения, которое выполняет SSO для указанных URL-адресов.|
-|домены|Коллекция String|Получает или задает список хостов или доменных имен, для которых расширение приложения выполняет SSO.|
-|realm|Строка|Получает или задает имя области, чувствительной к делу, для этого профиля.|
+|домены|Коллекция строк|Получает или задает список хостов или доменных имен, для которых расширение приложения выполняет SSO.|
+|realm|String|Получает или задает имя области, чувствительной к делу, для этого профиля.|
 |конфигурации|[коллекция keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|Получает или задает список пар значений ключей, используемых для настройки профилей типа учетных данных. Эта коллекция может содержать не более 500 элементов.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

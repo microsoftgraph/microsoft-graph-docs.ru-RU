@@ -1,16 +1,16 @@
 ---
 title: " тип ресурса certificationControl"
 description: Этот ресурс содержит данные сертификации соответствия требованиям, связанные с безопасным управлением счетами.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: ae7634ed168870bd03282a9a20dc9cba536db0635d750d07d17407f85a9e8c8e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6f436e2b9e8ebbea1ff03cdcadb024b4dae1ef6c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54164358"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069518"
 ---
 #  <a name="certificationcontrol-resource-type"></a>тип ресурса certificationControl
 

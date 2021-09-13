@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementUserRightsLocalUserOrGroup
 description: Представляет сведения для локального пользователя или группы, используемые для настройки прав пользователей.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9ba33bcdad7e4418b02a90f1fdfbd0b4c9d18e1d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bb8dd01d090c5d0aaef133b5e5b6367f5acdd278
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783248"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069231"
 ---
 # <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>тип ресурса deviceManagementUserRightsLocalUserOrGroup
 
@@ -29,7 +29,7 @@ ms.locfileid: "58783248"
 |description|Строка|Описание администратором этого локального пользователя или группы.|
 |securityIdentifier|String|Идентификатор безопасности этого локального пользователя или группы (например, S-1-5-32-544).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

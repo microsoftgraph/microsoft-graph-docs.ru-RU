@@ -2,15 +2,15 @@
 title: тип ресурса singleSignOnExtension
 description: Представляет одноместный Sign-On Apple.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b7b77304f1651a4982a3fbc40780c079ae47b7d8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 04b40f11236816b7c31ebc9038f09995a8a6f95b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803281"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069126"
 ---
 # <a name="singlesignonextension-resource-type"></a>тип ресурса singleSignOnExtension
 
@@ -26,7 +26,7 @@ ms.locfileid: "58803281"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

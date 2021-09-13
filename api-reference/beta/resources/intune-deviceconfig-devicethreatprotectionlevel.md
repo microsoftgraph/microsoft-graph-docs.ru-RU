@@ -2,15 +2,15 @@
 title: тип enum deviceThreatProtectionLevel
 description: Уровни защиты от угроз устройств для API защиты от угроз устройств.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f5fbc688f1620f1df6dc8b049883bba92579f015
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: caab5473a2da9b3a4cd020fd2d6a3827e27db873
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799516"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069252"
 ---
 # <a name="devicethreatprotectionlevel-enum-type"></a>тип enum deviceThreatProtectionLevel
 

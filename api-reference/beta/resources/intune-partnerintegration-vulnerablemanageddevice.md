@@ -2,15 +2,15 @@
 title: vulnerableManagedDevice resource type
 description: Эта сущность представляет устройство, связанное с задачей.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e0859608857a903424ef6a112cf96adb9585045a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2e6b498248d3143c6313ba97b839f7f6918a3af1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795152"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068650"
 ---
 # <a name="vulnerablemanageddevice-resource-type"></a>vulnerableManagedDevice resource type
 
@@ -34,12 +34,12 @@ ms.locfileid: "58795152"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ сущности и ID устройства AAD.|
+|id|String|Ключ сущности и ID устройства AAD.|
 |managedDeviceId|Строка|ID управляемого устройства Intune.|
 |displayName|Строка|Имя устройства.|
 |lastSyncDateTime|DateTimeOffset|Последняя дата синхронизации.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

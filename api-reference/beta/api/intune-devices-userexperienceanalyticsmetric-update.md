@@ -2,15 +2,15 @@
 title: Обновление userExperienceAnalyticsMetric
 description: Обновление свойств объекта userExperienceAnalyticsMetric.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8abd25e29e6c19c3a87757e9845fcce95549ebb1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a72523528dabd899d37637cfc81ddaa6eb0a52d6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801285"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070448"
 ---
 # <a name="update-userexperienceanalyticsmetric"></a>Обновление userExperienceAnalyticsMetric
 
@@ -29,7 +29,7 @@ ms.locfileid: "58801285"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -57,7 +57,7 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор метрики аналитики пользовательских интерфейсов.|
+|id|Строка|Уникальный идентификатор метрики аналитики пользовательских интерфейсов.|
 |значение|Двойное с плавающей точкой|Значение метрики аналитики пользовательских интерфейсов.|
 |unit|Строка|Единица метрики аналитики пользовательского опыта.|
 

@@ -2,15 +2,15 @@
 title: Get userExperienceAnalyticsCategory
 description: Чтение свойств и связей объекта userExperienceAnalyticsCategory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fc9fe89186c53248e9a2faba108b539c978c5a6f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 69350fb1aff749345560ea1c3e4d7484a656642a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786174"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065416"
 ---
 # <a name="get-userexperienceanalyticscategory"></a>Get userExperienceAnalyticsCategory
 
@@ -29,7 +29,7 @@ ms.locfileid: "58786174"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

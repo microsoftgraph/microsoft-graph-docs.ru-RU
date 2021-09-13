@@ -2,15 +2,15 @@
 title: deviceManagementConfigurationIntegerSettingValueDefinitionTemplate type
 description: Шаблон определения значения параметра integer
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6aa5571402ccddf6cf5524e2e2486caffcc550c7
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 1a39f6c3224487c826cbfd8dcabf6e4cb629b665
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820725"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59069035"
 ---
 # <a name="devicemanagementconfigurationintegersettingvaluedefinitiontemplate-resource-type"></a>deviceManagementConfigurationIntegerSettingValueDefinitionTemplate type
 
@@ -28,7 +28,7 @@ ms.locfileid: "58820725"
 |minValue|Int32|Параметр "Integer", устанавливая минимальное значение. Допустимые значения 2147483648 2147483647|
 |maxValue|Int32|Параметр "Integer", устанавливая максимальное значение. Допустимые значения 2147483648 2147483647|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -2,15 +2,15 @@
 title: Список windowsPhoneEASEmailProfileConfigurations
 description: Список свойств и связей объектов WindowsPhoneEASEmailProfileConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 693ac9bded5ace5a58ed056a65fb1e557e582f67
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 17307d43b5f04a4ed5057ee02ccca944174cd547
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800914"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59059198"
 ---
 # <a name="list-windowsphoneeasemailprofileconfigurations"></a>Список windowsPhoneEASEmailProfileConfigurations
 
@@ -29,7 +29,7 @@ ms.locfileid: "58800914"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

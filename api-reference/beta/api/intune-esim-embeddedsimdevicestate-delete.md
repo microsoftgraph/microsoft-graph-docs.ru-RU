@@ -2,15 +2,15 @@
 title: Удаление встроенных элементовSIMDeviceState
 description: Удаляет встроенныйSIMDeviceState.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a11b6b513ba91722c189f2b11b1401e46da393de
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f2e4cd8c8157517bc181c6b1ba35d6b4c087afe9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785866"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065311"
 ---
 # <a name="delete-embeddedsimdevicestate"></a>Удаление встроенных элементовSIMDeviceState
 
@@ -29,7 +29,7 @@ ms.locfileid: "58785866"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

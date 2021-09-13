@@ -2,15 +2,15 @@
 title: Удаление circularGeofenceManagementCondition
 description: Удаляет циркулярGeofenceManagementCondition.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 87417b1b8c160b57ec064afe3b6a5e0070643c14
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 9e9c4e0b072fa39cd615c830e5b84f5e974648e9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788810"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59065262"
 ---
 # <a name="delete-circulargeofencemanagementcondition"></a>Удаление circularGeofenceManagementCondition
 
@@ -29,7 +29,7 @@ ms.locfileid: "58788810"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

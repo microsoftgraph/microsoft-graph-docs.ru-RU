@@ -2,15 +2,15 @@
 title: тип ресурса deviceCompliancePolicyScript
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1fc8ccaef0add979ccb3459c3664ae8915d4713f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d53e7a8b107e822e2d0e2d4da0d0e62380bd8222
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58778061"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59064366"
 ---
 # <a name="devicecompliancepolicyscript-resource-type"></a>тип ресурса deviceCompliancePolicyScript
 
@@ -28,7 +28,7 @@ ms.locfileid: "58778061"
 |deviceComplianceScriptId|Строка|Id скрипта соответствия требованиям устройств.|
 |rulesContent|В двоичном формате|Json правил.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

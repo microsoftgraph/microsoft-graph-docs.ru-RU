@@ -2,15 +2,15 @@
 title: Список импортируемыхDeviceIdentityResults
 description: Список свойств и связей импортируемых объектовDeviceIdentityResult.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: db8de5c6786633fb0fd66dbf8a27985d417aa76e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 647a53c30ac4eda6c952b9828900a5bc4f1133a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58780259"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59070183"
 ---
 # <a name="list-importeddeviceidentityresults"></a>Список импортируемыхDeviceIdentityResults
 
@@ -29,7 +29,7 @@ ms.locfileid: "58780259"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
