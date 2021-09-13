@@ -2,15 +2,15 @@
 title: Обновление windowsFeatureUpdateProfile
 description: Обновление свойств объекта windowsFeatureUpdateProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b8b1ccdd3d55e8ff34fe8e7fc866eafe295327f1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: aa3f82101eba61f07745aa528dcab52b92e481fb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817455"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59041327"
 ---
 # <a name="update-windowsfeatureupdateprofile"></a>Обновление windowsFeatureUpdateProfile
 
@@ -59,7 +59,7 @@ PATCH /deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfil
 |featureUpdateVersion|String|Версия обновления функций, которая будет развернута на устройствах, на которые ориентирован этот профиль. Версия может быть любой поддерживаемой версией, например 1709, 1803 или 1809 и так далее.|
 |createdDateTime|DateTimeOffset|Время создания профиля.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения профиля.|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого объекта обновления функций.|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого объекта обновления функций.|
 |deployableContentDisplayName|String|Удобное отображаемое имя развернутого контента профиля обновления качества|
 |endOfSupportDate|DateTimeOffset|Последняя поддерживаемая дата обновления функций|
 

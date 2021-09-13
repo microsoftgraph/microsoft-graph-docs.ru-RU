@@ -2,15 +2,15 @@
 title: тип ресурса userPFXCertificate
 description: Объект, инкапсулирует всю информацию, необходимую для сертификатов PFX пользователя.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 92764f6fd5fa717698ae2ed629a80e9035274888
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e293370df72fee56ffe94cfdfac8b869bc73be1f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58757897"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080662"
 ---
 # <a name="userpfxcertificate-resource-type"></a>тип ресурса userPFXCertificate
 
@@ -34,17 +34,17 @@ ms.locfileid: "58757897"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для сертификата PFX.|
-|отпечатки пальцев|Строка|Отпечатки sha-1 сертификата PFX.|
+|id|String|Уникальный идентификатор для сертификата PFX.|
+|отпечатки пальцев|String|Отпечатки sha-1 сертификата PFX.|
 |intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Предназначение сертификата с точки зрения развертывания. Возможные значения: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
 |userPrincipalName|String|Имя пользователя сертификата PFX.|
 |startDateTime|DateTimeOffset|Дата начала действия сертификата.|
 |expirationDateTime|DateTimeOffset|Срок действия сертификата.|
-|providerName|Строка|Поставщик криптографии, используемый для шифрования этого blob.|
-|keyName|Строка|Имя ключа (в пределах поставщика), используемого для шифрования blob.|
+|providerName|String|Поставщик криптографии, используемый для шифрования этого blob.|
+|keyName|String|Имя ключа (в пределах поставщика), используемого для шифрования blob.|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Схема заполнения, используемая поставщиком при шифровании и расшифровке. Возможные значения: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
 |зашифрованныйPfxBlob|В двоичном формате|Зашифрованный BLOB PFX.|
-|зашифрованныйPfxPassword|Строка|Зашифрованный пароль PFX.|
+|зашифрованныйPfxPassword|String|Зашифрованный пароль PFX.|
 |createdDateTime|DateTimeOffset|Дата и время импорта этого сертификата PFX.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения этого сертификата PFX.|
 

@@ -2,15 +2,15 @@
 title: Get windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary
 description: Read properties and relationships of the windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary object.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 804982c1d048198a57681791a94b7542823b617e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 09eb1dd98a0998999cae00b6688e1ab77bb5993d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805088"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59047725"
 ---
 # <a name="get-windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary"></a>Get windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary
 

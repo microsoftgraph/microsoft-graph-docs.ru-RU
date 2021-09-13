@@ -2,15 +2,15 @@
 title: groupPolicyPresentationValueDecimal resource type
 description: Объект представляет неподписаное целое значение десятичной презентации текстового окна в определении политики.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ba3fe72e1ee4912a6094c97960cec1d75f7e906c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: feeb282e3d776eebc9959a0277d3a2bc8bd39135
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791104"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59068902"
 ---
 # <a name="grouppolicypresentationvaluedecimal-resource-type"></a>groupPolicyPresentationValueDecimal resource type
 

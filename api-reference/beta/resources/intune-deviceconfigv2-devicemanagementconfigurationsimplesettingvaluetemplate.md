@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementConfigurationSimpleSettingValueTemplate
 description: Шаблон простого параметра значения
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9cfc0372493b7b8a9fadf80167e08579acfcbf20
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 91bdbab579b49852b2680f041f241cdffa5ee1a3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815087"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040283"
 ---
 # <a name="devicemanagementconfigurationsimplesettingvaluetemplate-resource-type"></a>тип ресурса deviceManagementConfigurationSimpleSettingValueTemplate
 
@@ -25,7 +25,7 @@ ms.locfileid: "58815087"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|settingValueTemplateId|Строка|Настройка кода шаблона значений|
+|settingValueTemplateId|String|Настройка кода шаблона значений|
 
 ## <a name="relationships"></a>Связи
 Нет

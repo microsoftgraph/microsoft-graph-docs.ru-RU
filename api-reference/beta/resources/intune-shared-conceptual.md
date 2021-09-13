@@ -1,15 +1,15 @@
 ---
 title: Общие ресурсы в Microsoft Intune - API Graph Microsoft
 description: Перечислены API Graph Microsoft для конечных точек Intune (REST), которые поддерживают несколько процессов для организации-клиента.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 672672edd0955070c4df6a4a90c78c5c5b7329ce
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 86a4466538c88ca758cb91ff541e880b8722cd69
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816438"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074810"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Общие ресурсы в Microsoft Intune
 

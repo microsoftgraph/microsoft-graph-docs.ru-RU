@@ -2,15 +2,15 @@
 title: Создание объекта importedAppleDeviceIdentity
 description: Создание нового объекта importedAppleDeviceIdentity.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6229fbbc0e32bb7e8549c627ae2dae659a794350
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d7e2ba321afa8ce8c4c871dbff15048ed66e522a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794562"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082502"
 ---
 # <a name="create-importedappledeviceidentity"></a>Создание объекта importedAppleDeviceIdentity
 
@@ -29,7 +29,7 @@ ms.locfileid: "58794562"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,16 +53,16 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAp
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |serialNumber|String|Серийный номер устройства|
-|requestedEnrollmentProfileId|Строка|Администратор ID профиля регистрации намерен примениться к устройству во время следующей регистрации|
+|requestedEnrollmentProfileId|String|Администратор ID профиля регистрации намерен примениться к устройству во время следующей регистрации|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|Профиль времени регистрации был назначен устройству|
 |isSupervised|Boolean|Указывает, контролируется ли устройство Apple. Дополнительные сведения можно получить по: https://support.apple.com/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md);|Источник обнаружения устройств Apple. Возможные значения: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
-|isDeleted|Логический|Указывает, удалено ли устройство из Apple Business Manager|
+|isDeleted|Логическое|Указывает, удалено ли устройство из Apple Business Manager|
 |createdDateTime|DateTimeOffset|Время создания даты устройства|
 |lastContactedDateTime|DateTimeOffset|Время последней контактной даты устройства|
-|description|Строка|Описание устройства|
+|description|String|Описание устройства|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Состояние устройства в Intune. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |платформа|[платформа](../resources/intune-enrollment-platform.md)|Платформа устройства. Возможные значения: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 

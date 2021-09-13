@@ -2,15 +2,15 @@
 title: Тип ресурса roleScopeTagInfo
 description: Класс, содержащий свойства объекта Тег области ролей.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4e51821246e273dcff8f387f8bdb571f74a64a4e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3a3d3a5461b01ad5a0a0688bb02e7b1080c97746
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801867"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075783"
 ---
 # <a name="rolescopetaginfo-resource-type"></a>Тип ресурса roleScopeTagInfo
 
@@ -25,8 +25,8 @@ ms.locfileid: "58801867"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя отображения тегов области.|
-|roleScopeTagId|Строка|ID тега области.|
+|displayName|String|Имя отображения тегов области.|
+|roleScopeTagId|String|ID тега области.|
 
 ## <a name="relationships"></a>Связи
 Нет

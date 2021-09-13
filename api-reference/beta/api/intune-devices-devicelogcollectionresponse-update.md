@@ -2,15 +2,15 @@
 title: Обновление deviceLogCollectionResponse
 description: Обновление свойств объекта deviceLogCollectionResponse.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f1c634be673f8feb04471726c1a6b46eee450039
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 09002a9c3fc05fa9ca727d0a681999b30c661641
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805922"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59042405"
 ---
 # <a name="update-devicelogcollectionresponse"></a>Обновление deviceLogCollectionResponse
 
@@ -53,13 +53,13 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор в виде tenantId_deviceId_requestId|
+|id|String|Уникальный идентификатор в виде tenantId_deviceId_requestId|
 |status|String|Состояние запроса на коллекцию журналов|
 |managedDeviceId|Guid|Id устройства|
 |errorCode|Int64|Код ошибки, если таковое есть. Допустимые значения -9.2237203685478E+18 до 9.22337203685478E+18|
 |requestedDateTimeUTC|DateTimeOffset|DateTime запроса|
 |receivedDateTimeUTC|DateTimeOffset|DateTime, в который был получен запрос|
-|initiatedByUserPrincipalName|Строка|UpN для тех, кто инициировал запрос|
+|initiatedByUserPrincipalName|String|UpN для тех, кто инициировал запрос|
 |expirationDateTimeUTC|DateTimeOffset|DateTime истечения срока действия журналов|
 |size|Двойное с плавающей точкой|Размер журналов. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
 

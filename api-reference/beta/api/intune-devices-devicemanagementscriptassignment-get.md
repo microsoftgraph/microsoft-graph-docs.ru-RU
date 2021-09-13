@@ -2,15 +2,15 @@
 title: Get deviceManagementScriptAssignment
 description: Чтение свойств и связей объекта deviceManagementScriptAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8d624db585d524399887f066c6ee15aab6d7e56e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8b66f8bb72aaf5e4402b768aa6589fdcab4dbfa6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805537"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59042335"
 ---
 # <a name="get-devicemanagementscriptassignment"></a>Get deviceManagementScriptAssignment
 

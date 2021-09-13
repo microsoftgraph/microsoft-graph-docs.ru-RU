@@ -2,15 +2,15 @@
 title: тип ресурса policySetItem
 description: Класс, содержащий свойства, используемые для элемента PolicySet.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9570eac23c7ba0bdd186f4e0da3902b71ec2d413
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 05647e77adc9c6d0b9b65cebbdf2c2890c10e0c5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58803225"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074859"
 ---
 # <a name="policysetitem-resource-type"></a>тип ресурса policySetItem
 
@@ -31,15 +31,15 @@ ms.locfileid: "58803225"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Клавиша PolicySetItem.|
+|id|String|Клавиша PolicySetItem.|
 |createdDateTime|DateTimeOffset|Время создания PolicySetItem.|
 |lastModifiedDateTime|DateTimeOffset|Последнее измененное время политикиSetItem.|
-|payloadId|Строка|PayloadId of the PolicySetItem.|
+|payloadId|String|PayloadId of the PolicySetItem.|
 |itemType|String|policySetType policySetItem.|
-|displayName|Строка|DisplayName of the PolicySetItem.|
+|displayName|String|DisplayName of the PolicySetItem.|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Состояние PolicySetItem. Возможные значения: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Код ошибки, если таковое произошло. Возможные значения: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|guidedDeploymentTags|Коллекция String|Теги управляемого развертывания|
+|guidedDeploymentTags|Коллекция объектов string|Теги управляемого развертывания|
 
 ## <a name="relationships"></a>Связи
 Нет

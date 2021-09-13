@@ -2,15 +2,15 @@
 title: Удаление pfxRecryptionRequest
 description: Удаляет pfxRecryptionRequest.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c27156496198e71bb4f762e6953b95882609145c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c9a19bdd46ee341ee5e9c2fd094302a90be53039
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783024"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034199"
 ---
 # <a name="delete-pfxrecryptionrequest"></a>Удаление pfxRecryptionRequest
 
@@ -29,7 +29,7 @@ ms.locfileid: "58783024"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

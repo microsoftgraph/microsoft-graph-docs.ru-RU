@@ -1,16 +1,16 @@
 ---
 title: тип ресурса sharePointSiteUsageFileCounts
 description: Ниже указано представление ресурса в формате JSON.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: 5c42d91509508ec4b149a55aab1d2b37016701684b2da0e411e47c333d12a4df
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ebe4eb3b7f357d45de6afd2efc662a8ba80c6d20
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246084"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038792"
 ---
 # <a name="sharepointsiteusagefilecounts-resource-type"></a>тип ресурса sharePointSiteUsageFileCounts
 
@@ -21,7 +21,7 @@ ms.locfileid: "54246084"
 | Свойство          | Тип   |
 | :---------------- | :----- |
 | reportRefreshDate | Дата   |
-| siteType          | Строка |
+| siteType          | String |
 | total             | Int64  |
 | active            | Int64  |
 | reportDate        | Дата   |

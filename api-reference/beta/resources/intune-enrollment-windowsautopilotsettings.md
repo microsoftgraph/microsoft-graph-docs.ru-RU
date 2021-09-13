@@ -2,15 +2,15 @@
 title: тип ресурса windowsAutopilotSettings
 description: Ресурс windowsAutopilotSettings представляет собой Windows учетную запись автопилота для синхронизации данных с Windows службой синхронизации данных устройств.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 624da686f5c1676cb223a5bb685f36805ac316cc
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d79155c3642eee237fd4bda53ecb6650f5cfbe7e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818788"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039961"
 ---
 # <a name="windowsautopilotsettings-resource-type"></a>тип ресурса windowsAutopilotSettings
 

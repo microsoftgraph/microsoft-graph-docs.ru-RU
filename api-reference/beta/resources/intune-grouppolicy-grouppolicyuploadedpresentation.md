@@ -2,15 +2,15 @@
 title: тип ресурса groupPolicyUploadedPresentation
 description: Базовая сущность для отображения любых дополнительных параметров в определении групповой политики.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8c5a5de6229c37c61128b134fe2340b9bcdb9eba
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: acaf9f6bfc440327ed7c2b08b0e00cea36ffef9d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817329"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046752"
 ---
 # <a name="grouppolicyuploadedpresentation-resource-type"></a>тип ресурса groupPolicyUploadedPresentation
 

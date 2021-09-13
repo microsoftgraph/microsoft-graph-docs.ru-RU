@@ -2,15 +2,15 @@
 title: Создание userExperienceAnalyticsNotAutopilotReadyDevice
 description: Создание нового объекта userExperienceAnalyticsNotAutopilotReadyDevice.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 723c9f671db89d0ae7e0238ed11a332f62fdb989
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: c96995d78d5cd29e9354bdfc98a89a31cb1ae48d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795972"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077120"
 ---
 # <a name="create-userexperienceanalyticsnotautopilotreadydevice"></a>Создание userExperienceAnalyticsNotAutopilotReadyDevice
 
@@ -29,7 +29,7 @@ ms.locfileid: "58795972"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,16 +53,16 @@ POST /deviceManagement/userExperienceAnalyticsNotAutopilotReadyDevice
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор устройства intune аналитики пользовательского интерфейса.|
+|id|String|Уникальный идентификатор устройства intune аналитики пользовательского интерфейса.|
 |deviceName|String|Имя устройства intune.|
 |serialNumber|String|Серийный номер устройства intune.|
 |manufacturer|String|Производитель устройства intune.|
 |model|String|Модель устройства intune.|
-|managedBy|Строка|Устройство intune управляется.|
+|managedBy|String|Устройство intune управляется.|
 |autoPilotRegistered|Логический|Автопилотрегистер устройства intune.|
 |autoPilotProfileAssigned|Логический|Автопилот Устройства intuneProfileAssigned.|
 |azureAdRegistered|Логический|Устройство intune azureAdRegistered.|
-|azureAdJoinType|Строка|Azure Ad ad для устройства intune присоединяется кType.|
+|azureAdJoinType|String|Azure Ad ad для устройства intune присоединяется кType.|
 
 
 

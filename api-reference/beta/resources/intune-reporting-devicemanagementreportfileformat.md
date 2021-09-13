@@ -2,15 +2,15 @@
 title: тип enum deviceManagementReportFileFormat
 description: Возможные значения для формата файла отчета
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 50ff770230066023dea334a03ed105d182208a4d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 859db1525ea6965128975ebb1996bccb642cb87d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796175"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039359"
 ---
 # <a name="devicemanagementreportfileformat-enum-type"></a>тип enum deviceManagementReportFileFormat
 

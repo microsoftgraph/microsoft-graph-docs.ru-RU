@@ -2,15 +2,15 @@
 title: Удаление appLogCollectionRequest
 description: Удаляет appLogCollectionRequest.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b5d602616a3d24f8b9939d21a2872eed2026703d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7758b59c888eddad02de8baa7af629fb74719502
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787717"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59042433"
 ---
 # <a name="delete-applogcollectionrequest"></a>Удаление appLogCollectionRequest
 
@@ -29,7 +29,7 @@ ms.locfileid: "58787717"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

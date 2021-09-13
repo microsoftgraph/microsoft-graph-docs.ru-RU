@@ -2,15 +2,15 @@
 title: Get deviceCompliancePolicySettingStateSummary
 description: Чтение свойств и связей объекта deviceCompliancePolicySettingStateSummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ea22f486dd6d3ab88dee1a588998c16432ce0387
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3145fe272cd18ef2ae59264685483f7dad459254
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819320"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59034928"
 ---
 # <a name="get-devicecompliancepolicysettingstatesummary"></a>Get deviceCompliancePolicySettingStateSummary
 

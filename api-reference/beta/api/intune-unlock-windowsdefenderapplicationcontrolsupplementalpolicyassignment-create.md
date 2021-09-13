@@ -2,15 +2,15 @@
 title: Создание windowsDefenderApplicationControlSupplementalPolicyAssignment
 description: Создайте новый объект WindowsDefenderApplicationControlSupplementalPolicyAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: db669195fd6d94d9df8525c042b513f2e4e9ba6f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: edfcc77441a545cb53795fd42d7e51be690ac2c8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58813904"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59047872"
 ---
 # <a name="create-windowsdefenderapplicationcontrolsupplementalpolicyassignment"></a>Создание windowsDefenderApplicationControlSupplementalPolicyAssignment
 
@@ -53,7 +53,7 @@ POST /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationCo
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Целевое назначение группы, определенное администратором.|
 
 

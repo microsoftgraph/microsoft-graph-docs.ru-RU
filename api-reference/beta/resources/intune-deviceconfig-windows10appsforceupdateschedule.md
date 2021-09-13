@@ -2,15 +2,15 @@
 title: тип ресурса windows10AppsForceUpdateSchedule
 description: Windows 10 расписания принудительного обновления приложений
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 62827d5fc1a99a04189dfa5d2817297df9766318
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2d76d071c0a840a0977a477cc42c7d96af2c7d07
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58800048"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040381"
 ---
 # <a name="windows10appsforceupdateschedule-resource-type"></a>тип ресурса windows10AppsForceUpdateSchedule
 
@@ -27,7 +27,7 @@ Windows 10 расписания принудительного обновлен�
 |:---|:---|:---|
 |startDateTime|DateTimeOffset|Время начала перезапуска силы.|
 |recurrence|[windows10AppsUpdateRecurrence](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|Расписание повторения. Возможные значения: `none`, `daily`, `weekly`, `monthly`.|
-|runImmediatelyIfAfterStartDateTime|Логический|Если верно, выполняет задачу немедленно, если StartDateTime находится в прошлом, то в другом случае выполняется при следующем повторе.|
+|runImmediatelyIfAfterStartDateTime|Логическое|Если верно, выполняет задачу немедленно, если StartDateTime находится в прошлом, то в другом случае выполняется при следующем повторе.|
 
 ## <a name="relationships"></a>Связи
 Нет

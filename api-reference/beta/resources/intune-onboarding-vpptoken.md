@@ -2,15 +2,15 @@
 title: Тип ресурса vppToken
 description: Вы приобрели несколько лицензий для приложений для iOS по программе корпоративных покупок Apple Volume Purchase Program для бизнеса или образовательных учреждений. Это включает настройку учетной записи Apple VPP с веб-сайта Apple и передачу токена Apple VPP для бизнеса или образовательных учреждений в Intune. Затем вы можете синхронизировать данные корпоративных покупок с помощью Intune и отслеживать использование приложения, приобретенного по программе корпоративных покупок. Вы можете передать несколько токенов Apple VPP для бизнеса или образовательных учреждений.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5b4660469cc421493b1aa2729612d3e9be1908a2
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3723be31160f6a6d884de97c03797e56afdfbc74
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816445"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046696"
 ---
 # <a name="vpptoken-resource-type"></a>Тип ресурса vppToken
 
@@ -51,11 +51,11 @@ ms.locfileid: "58816445"
 |lastSyncStatus|[vppTokenSyncStatus](../resources/intune-onboarding-vpptokensyncstatus.md)|Текущее состояние последней синхронизации приложения, инициированной с помощью токена Apple Volume Purchase Program. Возможные значения: `none`, `inProgress`, `completed`, `failed`. Возможные значения: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Логическое|Автоматически обновятся все приложения, не только для токена VPP.|
 |countryOrRegion|Строка|Автоматически обновятся все приложения, не только для токена VPP.|
-|dataSharingConsentGranted|Логический|Согласие на обмен данными с программой покупки тома Apple.|
+|dataSharingConsentGranted|Логическое|Согласие на обмен данными с программой покупки тома Apple.|
 |displayName|String|Администратор указал имя, удобное для маркеров.|
 |locationName|String|Расположение маркера, возвращенного из VPP Apple.|
-|claimTokenManagementFromExternalMdm|Логический|Согласие администратора на разрешение требовать управления маркерами из внешнего MDM.|
-|roleScopeTagIds|Коллекция String|ID-теги области ролей, присвоенные этому объекту.|
+|claimTokenManagementFromExternalMdm|Логическое|Согласие администратора на разрешение требовать управления маркерами из внешнего MDM.|
+|roleScopeTagIds|Коллекция объектов string|ID-теги области ролей, присвоенные этому объекту.|
 
 ## <a name="relationships"></a>Связи
 Нет

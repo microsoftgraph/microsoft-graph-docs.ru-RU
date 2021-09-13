@@ -2,15 +2,15 @@
 title: Список userAttributeAssignments
 description: Получите ресурсы identityUserFlowAttributeAssignment из свойства навигации userAttributeAssignments.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4264daf12c7374da798e03312c705435d90cb875
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 3b698dbbfebb102daef8120843aaba02602c338a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50944565"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044197"
 ---
 # <a name="list-userattributeassignments"></a>Список userAttributeAssignments
 
@@ -26,7 +26,7 @@ ms.locfileid: "50944565"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
+|Для приложений|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

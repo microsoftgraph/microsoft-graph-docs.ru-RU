@@ -2,15 +2,15 @@
 title: Перечисление объектов androidStoreApp
 description: Список свойств и связей объектов androidStoreApp.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 37524653b474addff854504cf6c30305ba0c9838
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3e14839a4b56baf0190fbecab1951968e16226c6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816720"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59077946"
 ---
 # <a name="list-androidstoreapps"></a>Перечисление объектов androidStoreApp
 

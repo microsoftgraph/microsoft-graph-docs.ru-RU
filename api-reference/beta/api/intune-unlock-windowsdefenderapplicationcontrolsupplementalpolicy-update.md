@@ -2,15 +2,15 @@
 title: Обновление windowsDefenderApplicationControlSupplementalPolicy
 description: Обновление свойств объекта WindowsDefenderApplicationControlSupplementalPolicy.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2aec5b211388fe563d5dc8f59cfafa28c86a3a82
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a53b4f9a9a1460cf5c58d0fecf62eb55b1e58cd2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793049"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59047886"
 ---
 # <a name="update-windowsdefenderapplicationcontrolsupplementalpolicy"></a>Обновление windowsDefenderApplicationControlSupplementalPolicy
 
@@ -29,7 +29,7 @@ ms.locfileid: "58793049"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,14 +55,14 @@ PATCH /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationC
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ для дополнительной политики WindowsDefenderApplicationControl.|
-|displayName|Строка|Отображение имени дополнительной политики WindowsDefenderApplicationControl.|
-|description|Строка|Описание дополнительной политики WindowsDefenderApplicationControl.|
+|displayName|String|Отображение имени дополнительной политики WindowsDefenderApplicationControl.|
+|description|String|Описание дополнительной политики WindowsDefenderApplicationControl.|
 |содержимое|В двоичном формате|Контент дополнительной политики WindowsDefenderApplicationControl в формате byte array.|
 |contentFileName|String|Имя файла дополнительного контента политики WindowsDefenderApplicationControl.|
 |version|String|Версия дополнительной политики WindowsDefenderApplicationControl.|
 |creationDateTime|DateTimeOffset|Дата и время отправки дополнительной политики WindowsDefenderApplicationControl.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения политики дополнительных приложений WindowsDefenderApplicationControl.|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого объекта дополнительной политики WindowsDefenderApplicationControl.|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого объекта дополнительной политики WindowsDefenderApplicationControl.|
 
 
 

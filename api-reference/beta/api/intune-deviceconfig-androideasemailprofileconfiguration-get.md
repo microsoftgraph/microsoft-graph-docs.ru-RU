@@ -2,15 +2,15 @@
 title: Get androidEasEmailProfileConfiguration
 description: Чтение свойств и связей объекта androidEasEmailProfileConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 794780e879067522fce5774e6b9f82d59672f78f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6ad8d072f5c27cae0eb03ea67e3c3a68884dd7b2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783150"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59043084"
 ---
 # <a name="get-androideasemailprofileconfiguration"></a>Get androidEasEmailProfileConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "58783150"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

@@ -2,15 +2,15 @@
 title: Создание deviceManagementScriptUserState
 description: Создайте новый объект deviceManagementScriptUserState.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 564f4b94168f193ab8d6dbb27c0fd98a25d5edbc
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8a62486736e5f67b5e8a94e6d6d1f7ac3e92f6ea
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783724"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59042286"
 ---
 # <a name="create-devicemanagementscriptuserstate"></a>Создание deviceManagementScriptUserState
 
@@ -29,7 +29,7 @@ ms.locfileid: "58783724"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,7 +55,7 @@ POST /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeS
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ пользовательского состояния скрипта управления устройствами. Это свойство доступно только для чтения.|
+|id|String|Ключ пользовательского состояния скрипта управления устройствами. Это свойство доступно только для чтения.|
 |successDeviceCount|Int32|Количество устройств успешности для определенного пользователя.|
 |errorDeviceCount|Int32|Количество устройств ошибки для определенного пользователя.|
 |userPrincipalName|String|Имя принципа пользователя конкретного пользователя.|

@@ -2,15 +2,15 @@
 title: Update managementConditionStatement
 description: Обновление свойств объекта managementConditionStatement.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 40f67a21030c071f724545469e0d3b4e42289482
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 7988e5666ce1a777267b6c1e2584e3cbd2fd8ccc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797663"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59042020"
 ---
 # <a name="update-managementconditionstatement"></a>Update managementConditionStatement
 
@@ -29,7 +29,7 @@ ms.locfileid: "58797663"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,9 +54,9 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для утверждения условий управления. Созданное в системе значение, назначенное при его создания.|
-|displayName|Строка|Администратор определил имя заявления об условиях управления.|
-|description|Строка|Администратор определил описание инструкции по состоянию управления.|
+|id|String|Уникальный идентификатор для утверждения условий управления. Созданное в системе значение, назначенное при его создания.|
+|displayName|String|Администратор определил имя заявления об условиях управления.|
+|description|String|Администратор определил описание инструкции по состоянию управления.|
 |createdDateTime|DateTimeOffset|Время создания заявления об условиях управления. Сгенерированная сторона службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения состояния управления. Обновленная сторона службы.|
 |выражение|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|Выражение заявления об условиях управления, используемое для оценки активации или отключения заявления об условиях управления.|

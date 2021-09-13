@@ -2,15 +2,15 @@
 title: Действие revokeAllLicenses
 description: Отзывать назначенную лицензию на устройство VPP iOS для данного приложения.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 36e421b8439fe68369a192bfe3cb246e4c3b18c1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8e3f2098241ea2f860965359ba6a169e4dc0b446
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785663"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59043301"
 ---
 # <a name="revokedevicelicense-action"></a>Действие revokeAllLicenses
 
@@ -29,7 +29,7 @@ ms.locfileid: "58785663"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,8 +55,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|managedDeviceId|Строка|DeviceId, для которого будет отозвана назначенная лицензия приложения|
-|notifyManagedDevices|Логический|Boolean, который указывает, следует ли отправить уведомление об отводе на устройство|
+|managedDeviceId|String|DeviceId, для которого будет отозвана назначенная лицензия приложения|
+|notifyManagedDevices|Логическое|Boolean, который указывает, следует ли отправить уведомление об отводе на устройство|
 
 
 

@@ -2,15 +2,15 @@
 title: тип ресурса groupPolicyPresentationMultiTextBox
 description: Представляет элемент ADMX multiTextBox и элемент ADMX multiText.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e70182d1412bb1b422587d9440fe420e3c71ef2c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 957cd32c2ebdbb808ba90e31a9d013957f1366c6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817336"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039786"
 ---
 # <a name="grouppolicypresentationmultitextbox-resource-type"></a>тип ресурса groupPolicyPresentationMultiTextBox
 
@@ -40,7 +40,7 @@ ms.locfileid: "58817336"
 |подпись|String|Локализованная текстовая метка для любого объекта презентации. По умолчанию это значение пусто. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|Ключ объекта. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|обязательно|Boolean|Требование ввести значение в текстовом окне. Значение по умолчанию − ложь.|
+|обязательно|Логическое|Требование ввести значение в текстовом окне. Значение по умолчанию − ложь.|
 |maxLength|Int64|Неподписаный целый ряд, который указывает максимальное количество текстовых символов. Значение по умолчанию — 1023.|
 |maxStrings|Int64|Неподписаный целый ряд, который указывает максимальное количество строк. Значение по умолчанию: 0.|
 

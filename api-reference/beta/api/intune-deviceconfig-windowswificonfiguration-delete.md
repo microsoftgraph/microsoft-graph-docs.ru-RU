@@ -2,15 +2,15 @@
 title: Удаление windowsWifiConfiguration
 description: Удаляет windowsWifiConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 02decba405a3cb6d6403b3574d82dd7f9275549d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6650d2adce8180c1b82264dbc3179f4cfd3a80af
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804941"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082762"
 ---
 # <a name="delete-windowswificonfiguration"></a>Удаление windowsWifiConfiguration
 

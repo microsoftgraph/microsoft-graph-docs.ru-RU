@@ -2,15 +2,15 @@
 title: функция getComanagementEligibleDevicesSummary
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b3e7e8e3fa2583aea3381615df04d8f2d65d7e03
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 67f7a4af113329b31f3b07ca5dbf2b710a29b2d6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816643"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59042377"
 ---
 # <a name="getcomanagementeligibledevicessummary-function"></a>функция getComanagementEligibleDevicesSummary
 

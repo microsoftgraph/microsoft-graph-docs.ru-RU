@@ -2,15 +2,15 @@
 title: тип ресурса configurationManagerCollectionAssignmentTarget
 description: Представляет назначение коллекции диспетчера конфигурации.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fe6061e1edd4c5bf1105bae54b0b1f3ce89af956
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d3a7bb9ba8880f38c2f161e88fcc8363ee137107
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818254"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074761"
 ---
 # <a name="configurationmanagercollectionassignmenttarget-resource-type"></a>тип ресурса configurationManagerCollectionAssignmentTarget
 

@@ -2,15 +2,15 @@
 title: тип ресурса edgeHomeButtonOpensCustomURL
 description: Показать кнопку "Домой"; Нажатие кнопки home загружает определенный URL-адрес.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2090e9e0b0e660428f4f7284f4a5e076d4d7fb9b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: aad0f6d889771b6e72401cf99cf14db5e24212ba
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791538"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040437"
 ---
 # <a name="edgehomebuttonopenscustomurl-resource-type"></a>тип ресурса edgeHomeButtonOpensCustomURL
 
@@ -28,7 +28,7 @@ ms.locfileid: "58791538"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|homeButtonCustomURL|Строка|Определенный URL-адрес для загрузки.|
+|homeButtonCustomURL|String|Определенный URL-адрес для загрузки.|
 
 ## <a name="relationships"></a>Связи
 Нет

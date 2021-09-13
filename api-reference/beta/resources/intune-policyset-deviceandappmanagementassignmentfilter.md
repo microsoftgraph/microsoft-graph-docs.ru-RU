@@ -2,15 +2,15 @@
 title: тип ресурса deviceAndAppManagementAssignmentFilter
 description: Класс, содержащий свойства, используемые для фильтра назначения.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a21edb65043744659b6797470fd19bf475625076
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e8ba1b2161934a4a5fb4c8b5447208e77842855a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796841"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046703"
 ---
 # <a name="deviceandappmanagementassignmentfilter-resource-type"></a>тип ресурса deviceAndAppManagementAssignmentFilter
 
@@ -39,14 +39,14 @@ ms.locfileid: "58796841"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ фильтра назначения.|
+|id|String|Ключ фильтра назначения.|
 |createdDateTime|DateTimeOffset|Время создания фильтра назначения.|
 |lastModifiedDateTime|DateTimeOffset|Последнее измененное время фильтра назначения.|
-|displayName|Строка|DisplayName фильтра назначения.|
-|description|Строка|Описание фильтра назначения.|
+|displayName|String|DisplayName фильтра назначения.|
+|description|String|Описание фильтра назначения.|
 |платформа|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|Тип платформы устройств, на которых будет применяться фильтр назначения. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
-|правило|Строка|Определение правила фильтра назначения.|
-|roleScopeTags|Коллекция String|RoleScopeTags фильтра назначения.|
+|правило|String|Определение правила фильтра назначения.|
+|roleScopeTags|Коллекция объектов string|RoleScopeTags фильтра назначения.|
 
 ## <a name="relationships"></a>Связи
 Нет

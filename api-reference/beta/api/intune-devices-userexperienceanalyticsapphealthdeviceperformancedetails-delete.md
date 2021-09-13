@@ -2,15 +2,15 @@
 title: Удаление userExperienceAnalyticsAppHealthDevicePerformanceDetails
 description: Удаляет пользователяExperienceAnalyticsAppHealthDevicePerformanceDetails.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c61331b527b3cd69e20d43189ce907344a1be3a9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4a96f0d535fc4ec2fe433f17db8948d39cc3853f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58818641"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082587"
 ---
 # <a name="delete-userexperienceanalyticsapphealthdeviceperformancedetails"></a>Удаление userExperienceAnalyticsAppHealthDevicePerformanceDetails
 

@@ -1,16 +1,16 @@
 ---
 title: Список windowsOfficeClientConfigurations
 description: Список свойств и связей объектов WindowsOfficeClientConfiguration.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c22fa525769bf77917b6a42d4f2119666b3c592b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2ee02ffb2fb1963e65a65fa654c839b519ce4d7a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58808542"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59043252"
 ---
 # <a name="list-windowsofficeclientconfigurations"></a>Список windowsOfficeClientConfigurations
 

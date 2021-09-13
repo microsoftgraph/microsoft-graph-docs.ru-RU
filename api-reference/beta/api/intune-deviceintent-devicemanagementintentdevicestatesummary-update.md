@@ -2,15 +2,15 @@
 title: Обновление deviceManagementIntentDeviceStateSummary
 description: Обновление свойств объекта deviceManagementIntentDeviceStateSummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a5cf6c13b3e1fc2a886109dfe0a8a111942ca817
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 36d15b1c5568b3e10982bf34bec48704ea77beee
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795993"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59048411"
 ---
 # <a name="update-devicemanagementintentdevicestatesummary"></a>Обновление deviceManagementIntentDeviceStateSummary
 
@@ -29,7 +29,7 @@ ms.locfileid: "58795993"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +53,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/deviceStateSummary
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|The ID|
+|id|String|The ID|
 |conflictCount|Int32|Количество устройств в конфликте|
 |errorCount|Int32|Количество устройств с ошибками.|
 |failedCount|Int32|Число устройств со сбоями.|

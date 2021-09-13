@@ -2,15 +2,15 @@
 title: тип ресурса vppTokenLicenseSummary
 description: Сводка лицензий для данного приложения в маркере.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 916891d0bd87796007805850cb54bc04cb9dad6d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b442f7968c84f465a86e4ef1a0fc43353a957ac8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789893"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046717"
 ---
 # <a name="vpptokenlicensesummary-resource-type"></a>тип ресурса vppTokenLicenseSummary
 
@@ -25,7 +25,7 @@ ms.locfileid: "58789893"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|vppTokenId|Строка|Идентификатор маркера VPP.|
+|vppTokenId|String|Идентификатор маркера VPP.|
 |appleId|String|Идентификатор Apple ID, связанный с заданным токеном Apple Volume Purchase Program.|
 |organizationName|Строка|Организация, связанная с маркером программы покупки томов Apple.|
 |availableLicenseCount|Int32|Количество доступных лицензий VPP.|

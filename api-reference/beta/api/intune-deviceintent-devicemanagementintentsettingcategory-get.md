@@ -2,15 +2,15 @@
 title: Get deviceManagementIntentSettingCategory
 description: Чтение свойств и связей объекта deviceManagementIntentSettingCategory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 12f188e3c14848e8ecedbfe6fa492a4c6c38eaa5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bcbb11bac7e608a29b55ad11b94ddcec1299b076
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801699"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082706"
 ---
 # <a name="get-devicemanagementintentsettingcategory"></a>Get deviceManagementIntentSettingCategory
 
@@ -29,7 +29,7 @@ ms.locfileid: "58801699"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

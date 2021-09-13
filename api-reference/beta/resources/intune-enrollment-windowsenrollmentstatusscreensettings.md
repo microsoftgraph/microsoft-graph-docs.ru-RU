@@ -2,15 +2,15 @@
 title: тип ресурса windowsEnrollmentStatusScreenSettings
 description: Параметр состояния регистрации
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 98de649856d89d0dfaa484a3abcf816463241743
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f7578f25bf3ed2ed8b47d6cb7c039fd6bda7b89a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58797242"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039898"
 ---
 # <a name="windowsenrollmentstatusscreensettings-resource-type"></a>тип ресурса windowsEnrollmentStatusScreenSettings
 
@@ -27,11 +27,11 @@ ms.locfileid: "58797242"
 |:---|:---|:---|
 |hideInstallationProgress|Логический|Показать пользователю или скрыть ход установки|
 |allowDeviceUseBeforeProfileAndAppInstallComplete|Логический|Разрешить или заблокировать использование устройства перед завершением установки профиля и приложения|
-|blockDeviceSetupRetryByUser|Логический|Разрешить пользователю повторно повторить установку при сбое установки|
-|allowLogCollectionOnInstallFailure|Логический|Разрешить или заблокировать коллекцию журналов при сбое установки|
-|customErrorMessage|Строка|Настройка настраиваемой ошибки для демонстрации при сбое установки|
+|blockDeviceSetupRetryByUser|Логическое|Разрешить пользователю повторно повторить установку при сбое установки|
+|allowLogCollectionOnInstallFailure|Логическое|Разрешить или заблокировать коллекцию журналов при сбое установки|
+|customErrorMessage|String|Настройка настраиваемой ошибки для демонстрации при сбое установки|
 |installProgressTimeoutInMinutes|Int32|Установите время выполнения установки за несколько минут|
-|allowDeviceUseOnInstallFailure|Логический|Разрешить пользователю продолжить использование устройства при сбое установки|
+|allowDeviceUseOnInstallFailure|Логическое|Разрешить пользователю продолжить использование устройства при сбое установки|
 
 ## <a name="relationships"></a>Связи
 Нет

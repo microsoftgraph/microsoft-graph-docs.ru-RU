@@ -2,14 +2,14 @@
 title: Управление сертификатами доступа к ресурсам в Intune - API Graph Microsoft
 description: Перечислены Graph API Microsoft для конечных точек Intune (REST), которые управляют сертификатами доступа к ресурсам для организации-клиента.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: cb1414b424562779e204afe0461c345b59ba1721d263fbcd7f65138a129e62bd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 559ad309a4963cada7ee722bcf4172b4ed8ea30c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249708"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039317"
 ---
 # <a name="manage-resource-access-certificates-in-intune"></a>Управление сертификатами доступа к ресурсам в Intune
 

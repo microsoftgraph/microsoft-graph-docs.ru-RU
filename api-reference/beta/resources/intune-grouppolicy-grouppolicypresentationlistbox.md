@@ -2,15 +2,15 @@
 title: тип ресурса groupPolicyPresentationListBox
 description: Представляет элемент ADMX listBox и элемент списка ADMX.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c9c5e121d08bb9cf362f75810dd014c5edb476af
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 01eb53e7053fcc2209cafb70ac925b109fb340a1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801467"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59046836"
 ---
 # <a name="grouppolicypresentationlistbox-resource-type"></a>тип ресурса groupPolicyPresentationListBox
 
@@ -37,10 +37,10 @@ ms.locfileid: "58801467"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|подпись|Строка|Локализованная текстовая метка для любого объекта презентации. По умолчанию это значение пусто. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|подпись|String|Локализованная текстовая метка для любого объекта презентации. По умолчанию это значение пусто. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|Ключ объекта. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Унаследованный от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|explicitValue|Логический|Если этот параметр указан верно, пользователь должен указать значение подкайки реестра и имя подкайки реестра. В поле списка показаны два столбца: один для имени и один для данных. Значение по умолчанию  false.|
+|explicitValue|Логическое|Если этот параметр указан верно, пользователь должен указать значение подкайки реестра и имя подкайки реестра. В поле списка показаны два столбца: один для имени и один для данных. Значение по умолчанию  false.|
 |valuePrefix|String|Н/Д|
 
 ## <a name="relationships"></a>Связи

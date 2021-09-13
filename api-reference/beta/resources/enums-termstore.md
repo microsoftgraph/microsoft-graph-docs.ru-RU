@@ -2,15 +2,15 @@
 title: значения переумыка termstore
 description: Значения Graph termstore
 doc_type: enumPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: Sharepoint
 author: mohitpcad
-ms.openlocfilehash: 854a8106ba3056b4387062d042b90e9fcacbe621d4cf442b83a1f50a6b3b12de
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 22c563e250fd732bd90301b345e99606d81d1b7a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54203318"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040570"
 ---
 # <a name="microsoft-graph-termstore-enumeration-values"></a>Значения Graph termstore
 

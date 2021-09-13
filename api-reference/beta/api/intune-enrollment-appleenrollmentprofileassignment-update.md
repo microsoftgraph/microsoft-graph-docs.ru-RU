@@ -2,15 +2,15 @@
 title: Обновление appleEnrollmentProfileAssignment
 description: Обновление свойств объекта appleEnrollmentProfileAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 98457987eb2708d9b63243d01eb120885e8521d1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a2751ebbadb87f5a74dfd94d094ba2f0ec1a75e1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804353"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59082501"
 ---
 # <a name="update-appleenrollmentprofileassignment"></a>Обновление appleEnrollmentProfileAssignment
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiated
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ назначения.|
+|id|String|Ключ назначения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения для пользователя Apple, инициированного профилем развертывания.|
 
 

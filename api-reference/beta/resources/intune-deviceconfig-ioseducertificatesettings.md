@@ -2,15 +2,15 @@
 title: тип ресурса iosEduCertificateSettings
 description: Доверенные сертификаты Root и PFX для iOS EDU.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f2f30468edbb0e09bc641b932d5bb216f22bd74d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4d97070415d65f8193bcf69bbcf771cd59684ff4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794106"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59047151"
 ---
 # <a name="ioseducertificatesettings-resource-type"></a>тип ресурса iosEduCertificateSettings
 
@@ -26,10 +26,10 @@ ms.locfileid: "58794106"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |trustedRootCertificate|В двоичном формате|Надежный корневой сертификат.|
-|certFileName|Строка|Имя файла для отображения в пользовательском интерфейсе.|
-|certificationAuthority|Строка|Сертификационный орган PKCS.|
-|certificationAuthorityName|Строка|Имя органа сертификации PKCS.|
-|certificateTemplateName|Строка|Имя шаблона шаблона сертификата PKCS.|
+|certFileName|String|Имя файла для отображения в пользовательском интерфейсе.|
+|certificationAuthority|String|Сертификационный орган PKCS.|
+|certificationAuthorityName|String|Имя органа сертификации PKCS.|
+|certificateTemplateName|String|Имя шаблона шаблона сертификата PKCS.|
 |renewalThresholdPercentage|Int32|Процент порогового значения обновления сертификата. Допустимые значения от 1 до 99|
 |certificateValidityPeriodValue|Int32|Значение для срока действия сертификата.|
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-shared-certificatevalidityperiodscale.md)|Масштаб для срока действия сертификата. Возможные значения: `days`, `months`, `years`.|

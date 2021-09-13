@@ -2,15 +2,15 @@
 author: MarcMroz
 description: DriveItemSource содержит метаданные об источнике приложения, в которое был создан элемент диска.
 title: тип ресурса driveItemSource
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 98076060791424e7f84a4bee32c12a3eca1238003b413d0b0c53ce18c97a21d2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eada8fa22672a80d712ef78be5cc3d44ac354216
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54206916"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59047459"
 ---
 # <a name="driveitemsource-resource-type"></a>тип ресурса driveItemSource
 
@@ -23,7 +23,7 @@ ms.locfileid: "54206916"
 | Свойство                 | Тип                       | Описание                                                                                      |
 | :----------------------- | :------------------------  | :----------------------------------------------------------------------------------------------- |
 | **application**          | driveItemSourceApplication | Значение переумерия, которое указывает на источник приложения, в котором был создан файл.              |
-| **externalId**           | string                     | Внешний идентификатор элемента диска из источника.                                      |
+| **externalId**           | String                     | Внешний идентификатор элемента диска из источника.                                      |
 
 ### <a name="driveitemsourceapplication-values"></a>значения driveItemSourceApplication
 

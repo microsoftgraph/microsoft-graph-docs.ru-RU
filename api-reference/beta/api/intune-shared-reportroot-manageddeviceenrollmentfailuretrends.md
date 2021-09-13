@@ -2,15 +2,15 @@
 title: функция managedDeviceEnrollmentFailureTrends
 description: Метаданные для отчета о тенденциях отказа регистрации
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8137ccd0df7649463751f97b212c1ff53fa0cf12
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f4e2964d09a07c87bff1a53d216e7ed718e768bd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788509"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59041404"
 ---
 # <a name="manageddeviceenrollmentfailuretrends-function"></a>функция managedDeviceEnrollmentFailureTrends
 
@@ -29,7 +29,7 @@ ms.locfileid: "58788509"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Устранение неполадок** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application||
+|Для приложений||
 | &nbsp; &nbsp; **Устранение неполадок** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос

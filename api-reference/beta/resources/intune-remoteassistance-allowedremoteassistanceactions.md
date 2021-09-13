@@ -1,5 +1,5 @@
 ---
-заголовок: описание "allowedRemoteAssistanceActions enum type": "Список флагов, указывающий, может ли помощник установить экран просмотра", "Взять полный контроль" и "Повышение" с помощью устройства или sharer" автора: "dougeby" localization_priority: Normal ms.prod: "intune" doc_type: enumPageType
+заголовок: описание "allowedRemoteAssistanceActions enum type": "Список флагов, указывающий, может ли помощник установить экран просмотра", "Взять полный контроль" и "Повышение" с помощью устройства или sharer автора: "dougeby" ms.localizationpriority: medium ms.prod: "intune" doc_type: enumPageType
 ---
 
 # <a name="allowedremoteassistanceactions-enum-type"></a>допустимый тип enumRemoteAssistanceActions

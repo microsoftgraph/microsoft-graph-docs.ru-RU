@@ -2,15 +2,15 @@
 title: тип enum ratingGermanyMoviesType
 description: Метки рейтинга фильмов в Германии
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ae06c976cb50e56e877cadac1ff5b60a471c3d4f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3f75c6ef55daa927bf467cca1dafb4c43f6a1f84
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58819117"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081292"
 ---
 # <a name="ratinggermanymoviestype-enum-type"></a>тип enum ratingGermanyMoviesType
 

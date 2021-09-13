@@ -2,15 +2,15 @@
 title: Get deviceManagementSettingInstance
 description: Чтение свойств и связей объекта deviceManagementSettingInstance.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d6c6f1f48c71a6747c879d452da9ab57ab9c1448
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 329ab40cce2e4fcc71e1aadd5eacf2a3d8dd8159
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58792065"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59048369"
 ---
 # <a name="get-devicemanagementsettinginstance"></a>Get deviceManagementSettingInstance
 
@@ -29,7 +29,7 @@ ms.locfileid: "58792065"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

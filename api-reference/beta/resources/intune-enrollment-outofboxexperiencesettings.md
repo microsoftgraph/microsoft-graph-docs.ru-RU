@@ -2,15 +2,15 @@
 title: тип ресурса outOfBoxExperienceSettings
 description: Параметр "Вне параметров работы с полем"
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 229564ad320b2d2a2dfce92f1979d23ca12acda6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e0caab818558ef9519b2a107b8c8dbecfe6fc71c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787570"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040003"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>тип ресурса outOfBoxExperienceSettings
 
@@ -25,12 +25,12 @@ ms.locfileid: "58787570"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|hidePrivacySettings|Логический|Показ или сокрытие параметров конфиденциальности пользователю|
+|hidePrivacySettings|Логическое|Показ или сокрытие параметров конфиденциальности пользователю|
 |hideEULA|Логический|Показать пользователю или скрыть EULA|
 |userType|[windowsUserType](../resources/intune-enrollment-windowsusertype.md)|Тип пользователя. Возможные значения: `administrator`, `standard`.|
 |deviceUsageType|[windowsDeviceUsageType](../resources/intune-enrollment-windowsdeviceusagetype.md).|AAD присоединяется к типу проверки подлинности. Возможные значения: `singleUser`, `shared`.|
-|skipKeyboardSelectionPage|Логический|Если установлено, то пропустить страницу выбора клавиатуры, если за установлен язык и область|
-|hideEscapeLink|Логический|Если установлено, что это так, пользователь не может начать все сначала с другой учетной записи при входе в компанию.|
+|skipKeyboardSelectionPage|Логическое|Если установлено, то пропустить страницу выбора клавиатуры, если за установлен язык и область|
+|hideEscapeLink|Логическое|Если установлено, что это так, пользователь не может начать все сначала с другой учетной записи при входе в компанию.|
 
 ## <a name="relationships"></a>Связи
 Нет

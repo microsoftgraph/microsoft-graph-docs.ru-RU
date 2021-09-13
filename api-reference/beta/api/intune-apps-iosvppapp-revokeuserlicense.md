@@ -2,15 +2,15 @@
 title: Действие revokeAllLicenses
 description: Отзывать назначенную лицензию пользователя IOS VPP для данного приложения.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c3022b5f721eff6dba2c7634133a7c0888077d5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 67de1120dfb5ea0bb3d8c0ed531652d4f49a4123
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815927"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59043294"
 ---
 # <a name="revokeuserlicense-action"></a>Действие revokeAllLicenses
 

@@ -1,29 +1,29 @@
 ---
-title: 'synchronization: acquireAccessToken'
-description: Получение маркера доступа OAuth для авторизации службы предоставления Azure AD для предоставления пользователям доступа к приложению
+title: 'синхронизация: acquireAccessToken'
+description: Приобретение маркера OAuth Access для авторизации службы подготовка Azure AD для обеспечения пользователей приложением
 author: ArvindHarinder1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 52933139560b117e0a5311a17907b9037825bd99
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: e3fd33635fe7a3bc3faed116705583c5a6c299a9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50239466"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040997"
 ---
 # <a name="acquireaccesstoken"></a>acquireAccessToken
 Пространство имен: microsoft.graph
 
-Получение маркера доступа OAuth для авторизации службы подготовка Azure AD для предоставления пользователей в приложении.
+Приобрети маркер OAuth Access для авторизации службы подготовка Azure AD для обеспечения пользователей приложением.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|Directory.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|Directory.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Application.ReadWrite.OwnedBy, Directory.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -50,7 +50,7 @@ POST /servicePrincipals/{servicePrincipalsId}/synchronization/acquireAccessToken
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|credentials|[Коллекция synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)|Представляет одно значение секрета.|
+|учетные данные|[синхронизацияSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md) коллекция|Представляет одно секретное значение.|
 
 
 

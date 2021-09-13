@@ -2,15 +2,15 @@
 title: Условия спискаAndConditionsGroupAssignments
 description: Список свойств и связей объектов TermsAndConditionsGroupAssignment.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0c2940f01c573cc1cd7d1e684f7aedf3c7bb787e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a51805cc40b234a3bdf40dcf07381dc0d3cca1e7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805242"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59043196"
 ---
 # <a name="list-termsandconditionsgroupassignments"></a>Условия спискаAndConditionsGroupAssignments
 

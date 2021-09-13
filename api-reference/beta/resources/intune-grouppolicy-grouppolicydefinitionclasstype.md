@@ -2,15 +2,15 @@
 title: тип enum groupPolicyDefinitionClassType
 description: Тип определения групповой политики.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 594d6f02dfa615ba049c391a28bf425dfb30c89f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: be9989cb45525e3a7f749008002e33050baf31f4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817350"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59039842"
 ---
 # <a name="grouppolicydefinitionclasstype-enum-type"></a>тип enum groupPolicyDefinitionClassType
 

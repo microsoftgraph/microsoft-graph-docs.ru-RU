@@ -2,15 +2,15 @@
 title: Тип ресурса configurationManagerClientEnabledFeatures
 description: Включенные клиентом функции диспетчера конфигураций
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d11ef90945348554e8cdbb99ffaba87e49619dc1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 81edc6197345b61e087506bb3067f059f0e9eee6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804829"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59040227"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>Тип ресурса configurationManagerClientEnabledFeatures
 
@@ -31,8 +31,8 @@ ms.locfileid: "58804829"
 |deviceConfiguration|Boolean|Управляет ли Intune конфигурацией устройства|
 |compliancePolicy|Boolean|Управляется ли Intune политикой соответствия требованиям|
 |windowsUpdateForBusiness|Boolean|Управляет ли Intune Центром обновления Windows для бизнеса|
-|endpointProtection|Boolean|Управляется ли Endpoint Protection intune|
-|officeApps|Логический|Управляется ли Office intune|
+|endpointProtection|Логическое|Управляется ли Endpoint Protection intune|
+|officeApps|Логическое|Управляется ли Office intune|
 
 ## <a name="relationships"></a>Связи
 Нет

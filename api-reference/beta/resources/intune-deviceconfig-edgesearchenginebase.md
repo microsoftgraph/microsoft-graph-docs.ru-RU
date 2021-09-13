@@ -2,15 +2,15 @@
 title: Тип ресурса edgeSearchEngineBase
 description: Позволяет ИТ-администраторам устанавливать поисковую систему по умолчанию для управляемых с помощью системы MDM устройств. Пользователи могут переопределять эту настройку и изменять поисковую систему по умолчанию, если не установлена политика AllowSearchEngineCustomization.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 430c2b01225372a73c0a640f4dd9013c7bb5e50c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f93b60a530534fc65d74c40cc997c863560c35f4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783241"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075510"
 ---
 # <a name="edgesearchenginebase-resource-type"></a>Тип ресурса edgeSearchEngineBase
 

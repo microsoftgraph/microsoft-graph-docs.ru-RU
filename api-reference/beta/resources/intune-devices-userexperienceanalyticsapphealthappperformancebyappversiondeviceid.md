@@ -2,15 +2,15 @@
 title: тип ресурса userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
 description: Объект производительности приложения для аналитики пользовательского интерфейса содержит производительность приложения по id-устройству версии приложения.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0f44c1ed07957e75200543e1487386acc642e4c5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a730dc54bcd7095f21bf503cbf341dfd66187880
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788446"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59081054"
 ---
 # <a name="userexperienceanalyticsapphealthappperformancebyappversiondeviceid-resource-type"></a>тип ресурса userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
 
@@ -34,14 +34,14 @@ ms.locfileid: "58788446"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта производительности приложения для аналитики пользовательского интерфейса.|
+|id|String|Уникальный идентификатор объекта производительности приложения для аналитики пользовательского интерфейса.|
 |deviceId|String|ID устройства.|
 |deviceDisplayName|String|Имя устройства.|
 |processedDateTime|DateTimeOffset|Дата и время последнего вычисления статистики.|
 |appName|String|Имя приложения.|
 |appDisplayName|String|Удобное имя приложения.|
-|appPublisher|Строка|Издатель приложения.|
-|appVersion|Строка|Версия приложения.|
+|appPublisher|String|Издатель приложения.|
+|appVersion|String|Версия приложения.|
 |appCrashCount|Int32|Количество сбоей для приложения. Допустимые значения 2147483648 2147483647|
 
 ## <a name="relationships"></a>Связи

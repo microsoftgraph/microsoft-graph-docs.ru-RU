@@ -2,15 +2,15 @@
 title: тип переуступки managedAppPhoneNumberRedirectLevel
 description: Классы приложений, которые могут щелкнуть для открытия номера телефона, для телефонных звонков или отправки текстовых сообщений.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8f0f01e85ee970435dc857bb1f50cd2fb0352799
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 21d13f05d3ef5116772803e92852e0128bec8c9e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783458"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59075034"
 ---
 # <a name="managedappphonenumberredirectlevel-enum-type"></a>тип переуступки managedAppPhoneNumberRedirectLevel
 

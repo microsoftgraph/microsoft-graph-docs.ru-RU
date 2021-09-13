@@ -2,15 +2,15 @@
 title: тип ресурса assignmentFilterSupportedProperty
 description: Представляет сведения о свойстве, поддерживаемом при разработке правила AssignmentFilter.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b8b8a5bc422c2d663d74ea7dc93b7353f10e65d3
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 339f220b9508487735e2473133e61c2682263c05
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786609"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074950"
 ---
 # <a name="assignmentfiltersupportedproperty-resource-type"></a>тип ресурса assignmentFilterSupportedProperty
 
@@ -28,9 +28,9 @@ ms.locfileid: "58786609"
 |dataType|String|Тип данных указанного свойства.|
 |isCollection|Логический|Указывает, является ли свойство типом коллекции или нет.|
 |name|String|Имя свойства.|
-|propertyRegexConstraint|Строка|Строка Regex для проверки значения свойства.|
+|propertyRegexConstraint|String|Строка Regex для проверки значения свойства.|
 |supportedOperators|[коллекция assignmentFilterOperator](../resources/intune-policyset-assignmentfilteroperator.md)|Список всех поддерживаемых операторов в этом свойстве.|
-|supportedValues|Коллекция String|Список всех поддерживаемых значений для этого правильного, пустого, если все поддерживается.|
+|supportedValues|Коллекция объектов string|Список всех поддерживаемых значений для этого правильного, пустого, если все поддерживается.|
 
 ## <a name="relationships"></a>Связи
 Нет
