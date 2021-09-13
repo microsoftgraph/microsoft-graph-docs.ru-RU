@@ -1,16 +1,16 @@
 ---
 title: Перечисление orgContacts
 description: Извлечение списка организационных контактов для этой организации.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d0c9cfb72040cb5922e672e8dd233dda8fef279b19702314fd175f91ebac9284
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d8c795920e3c7d0d4b2643278bcd7e30fac59c0f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57203363"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037385"
 ---
 # <a name="list-orgcontacts"></a>Перечисление orgContacts
 
@@ -25,7 +25,7 @@ ms.locfileid: "57203363"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All |
+|Для приложений | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

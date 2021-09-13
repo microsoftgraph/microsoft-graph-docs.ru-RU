@@ -1,22 +1,27 @@
 ---
 title: Поставщик Microsoft Teams
 description: Используйте поставщика Teams в своей вкладке Microsoft Teams для упрощения проверки подлинности и доступа Microsoft Graph ко всем компонентам.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: 3ede17c756a5b8af009f03555041d2a1c08a1b0d8c6d0671522273aa445afbad
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c26df2772b974288eaba2bb239a46790f7229f0b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54208645"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126529"
 ---
 # <a name="microsoft-teams-provider"></a>Поставщик Microsoft Teams
 
-Используйте поставщика Teams в своей вкладке Microsoft Teams для упрощения проверки подлинности и доступа Microsoft Graph ко всем компонентам.
+Используйте teamsProvider в вкладке Microsoft Teams для облегчения проверки подлинности и доступа microsoft Graph ко всем компонентам.
 
 Дополнительные сведения о поставщиках проверки подлинности см. в статье [Поставщики](./providers.md).
 
 >**Совет**. Сведения о том, как приступить к созданию приложения Microsoft Teams с помощью поставщика Teams, см. в руководстве по началу работы [Создание вкладки Microsoft Teams](../get-started/build-a-microsoft-teams-tab.md).
+
+### <a name="difference-between-teams-provider-and-teams-msal2-provider"></a>Разница между Teams и Teams msAL2 Provider
+В отличие от TeamsProvider, Teams msAL2 Provider поддерживает Sign-On (SSO) и строится на вершине [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) для проверки подлинности на стороне клиента. [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) реализует код авторизации OAuth 2.0 [Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow) PKCE. Код авторизации Flow считается более безопасным, чем неявный грант Flow для веб-приложений, поэтому мы рекомендуем использовать Teams поставщика MSAL2 через Teams Provider. Сведения о проблемах безопасности, связанных с неявным потоком грантов, см. в материале [Недостатки неявного потока.](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6)
+
+Все новые приложения должны использовать поставщик Teams MSAL2 по мере возможности. См. [Teams msAL2 Provider](./teams-msal2.md) для документации по миграции.
 
 ## <a name="get-started"></a>Начало работы
 

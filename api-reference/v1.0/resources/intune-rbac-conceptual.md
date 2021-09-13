@@ -1,16 +1,16 @@
 ---
 title: Управление доступом на основе ролей в Microsoft Intune
 description: 'Управление доступом на основе ролей в Intune определяет, кто может выполнять действия с объектами Intune и вносить изменения в управляемые приложения, устройства и сведения о пользователях.   '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: e127ee4653f10b680cb785eaceec814d9f75eb031f9e63bb6b33c2614fe8bc9f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0d4b871bf827f4a9c723f8c57ddcaf9740864910
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205271"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044477"
 ---
 # <a name="role-based-access-control-in-microsoft-intune"></a>Управление доступом на основе ролей в Microsoft Intune
 

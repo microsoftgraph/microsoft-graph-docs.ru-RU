@@ -1,24 +1,24 @@
 ---
 title: Тип ресурса directory (удаленные элементы)
 description: . Удаленные элементы можно восстановить в течение 30 дней. Через 30 дней элементы удаляются без возможности восстановления.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: d4a68680c62fd97229190bac921a22246e01b79f
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 9f337a8a516dbd1bc3bd772a52f74000d412c071
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695296"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072556"
 ---
-# <a name="directory-resource-type-deleted-items"></a>Тип ресурса directory (удаленные элементы)
+# <a name="directory-resource-type"></a>Тип ресурса каталога
 
 Пространство имен: microsoft.graph
 
 Представляет удаленный элемент в каталоге. После удаления элемент добавляется в "контейнер" удаленных элементов. Удаленные элементы можно восстановить в течение 30 дней. Через 30 дней элементы удаляются без возможности восстановления.
 
-В настоящее время функции удаленных элементов поддерживаются только для [приложений,](application.md) [групповых и](group.md) [пользовательских](user.md) ресурсов.
+В настоящее время функции удаленных элементов поддерживаются только для [приложений,](application.md) [групповых](group.md)и [пользовательских](user.md) ресурсов.
 
 Наследует от [объекта](entity.md).
 
@@ -37,10 +37,10 @@ ms.locfileid: "58695296"
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|id|String| Уникальный идентификатор объекта; например, `12345678-9abc-def0-1234-56789abcde` . Ключ. Значение null не допускается. Только для чтения. Наследуется от [сущности](entity.md).|
+|id|Строка| Уникальный идентификатор объекта; например, `12345678-9abc-def0-1234-56789abcde` . Ключ. Значение null не допускается. Только для чтения. Наследуется от [сущности](entity.md).|
 
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
@@ -53,28 +53,14 @@ ms.locfileid: "58695296"
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
+  "keyProperty":"id",
+  "optionalProperties": [],
   "@odata.type": "microsoft.graph.directory"
 }-->
 
 ```json
 {
-}
-```
-
-## <a name="example"></a>Пример
-
-<!--{"blockType": "request"}-->
-```http
-GET https://graph.microsoft.com/v1.0/directory
-```
-
-<!--{"blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.directory"}-->
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
+  "@odata.type": "#microsoft.graph.directory"
 }
 ```
 

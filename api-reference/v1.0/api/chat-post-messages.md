@@ -1,16 +1,16 @@
 ---
 title: Отправка сообщения в чате
 description: Отправка нового сообщения в чате.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 905f064c6133e04076f9506839d37e5048204d7c
-ms.sourcegitcommit: fe1b4d098af604cc34596f595e799911ea672532
+ms.openlocfilehash: bf0ec71500109f768c5e83171d9c468140980ce2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51612010"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022949"
 ---
 # <a name="send-message-in-a-chat"></a>Отправка сообщения в чате
 

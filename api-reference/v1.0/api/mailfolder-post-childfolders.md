@@ -2,15 +2,15 @@
 title: Создание дочерней папки
 description: С помощью этого API можно создать дочернюю папку почты.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4d8d43e4bb3840fa248ab6b1f1109dc2061ff695
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 2f5cd821c8b78a76b85640c8748432ff9d50519f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629142"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053485"
 ---
 # <a name="create-child-folder"></a>Создание дочерней папки
 
@@ -54,8 +54,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
-|displayName|Строка|Отображаемое имя новой папки.|
-|isHidden|Логический|Указывает, скрыта ли новая папка. Значение по умолчанию — `false`. Настройка свойства необязательна. После набора невозможно обновить это свойство. Дополнительные сведения см. в [папках "Скрытая почта"](../resources/mailfolder.md#hidden-mail-folders)|
+|displayName|String|Отображаемое имя новой папки.|
+|isHidden|Логический|Указывает, скрыта ли новая папка. Значение по умолчанию — `false`. Настройка свойства необязательна. После набора невозможно обновить это свойство. Дополнительные сведения см. в [папках "Скрытая почта"](../resources/mailfolder.md#hidden-mail-folders)|
 
 ## <a name="response"></a>Отклик
 

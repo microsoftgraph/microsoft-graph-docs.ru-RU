@@ -2,15 +2,15 @@
 title: Получение educationSchool
 description: Ознакомьтесь с свойствами и отношениями объекта educationSchool.
 author: mlafleur
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3ec682a7674bc24eca3d168e3f92b3d3c05f3bda
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: 016333f6d5ee367377ff8cd9332969142c165843
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474913"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050581"
 ---
 # <a name="get-educationschool"></a>Получение educationSchool
 
@@ -18,7 +18,7 @@ ms.locfileid: "52474913"
 
 Ознакомьтесь с свойствами и отношениями объекта [educationSchool.](../resources/educationschool.md)
 
-## <a name="permissions"></a>Разрешения:
+## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -26,7 +26,7 @@ ms.locfileid: "52474913"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic                         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Приложение                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+| Для приложений                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -39,7 +39,7 @@ ms.locfileid: "52474913"
 GET /education/schools/{educationSchoolId}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
 Этот метод поддерживает те же параметры запроса OData, что [и Get User.](../api/user-get.md#optional-query-parameters) Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 

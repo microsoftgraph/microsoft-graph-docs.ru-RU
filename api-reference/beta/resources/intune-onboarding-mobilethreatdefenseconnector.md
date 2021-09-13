@@ -2,15 +2,15 @@
 title: Тип ресурса mobileThreatDefenseConnector
 description: Объект, представляющий подключение к партнеру по Mobile Threat Defense.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2392e2a867c8882990f28cfbe62839a4cf0d45d4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b1b5cfb8a075547b737d10b1e543f9ffa8c04966
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793549"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017200"
 ---
 # <a name="mobilethreatdefenseconnector-resource-type"></a>Тип ресурса mobileThreatDefenseConnector
 
@@ -34,23 +34,23 @@ ms.locfileid: "58793549"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Пока не задокументировано.|
+|id|String|Пока не задокументировано.|
 |lastHeartbeatDateTime|DateTimeOffset|Дата и время последнего подтверждения соединения, полученные от партнера по синхронизации данных|
 |partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|Синхронизация данных Состояние партнера для этой учетной записи. Возможные значения: `unavailable`, `available`, `enabled`, `unresponsive`.|
-|AndroidMobileApplicationManagementEnabled|Логический|Для Android установите, следует ли использовать данные партнера синхронизации данных во время оценок управления мобильными приложениями (MAM). Для оценки управления мобильными приложениями (MAM) может быть включен только один партнер на платформе.|
-|iosMobileApplicationManagementEnabled|Boolean|Для IOS получите или установите, следует ли использовать данные партнера синхронизации данных во время оценок управления мобильными приложениями (MAM). Для оценки управления мобильными приложениями (MAM) может быть включен только один партнер на платформе.|
+|AndroidMobileApplicationManagementEnabled|Boolean|Для Android установите, следует ли использовать данные партнера синхронизации данных во время оценок управления мобильными приложениями (MAM). Для оценки управления мобильными приложениями (MAM) может быть включен только один партнер на платформе.|
+|iosMobileApplicationManagementEnabled|Логический|Для IOS получите или установите, следует ли использовать данные партнера синхронизации данных во время оценок управления мобильными приложениями (MAM). Для оценки управления мобильными приложениями (MAM) может быть включен только один партнер на платформе.|
 |androidEnabled|Логическое|Для ОС Android следует указать в настройках, необходимо ли использовать данные партнера по синхронизации данных в ходе оценки соответствия требованиям|
 |iosEnabled|Логическое|Для ОС IOS следует получить или задать настройки, необходимо ли использовать данные партнера по синхронизации данных в ходе оценок соответствия требованиям|
 |windowsEnabled|Логический|Чтобы Windows, получите или установите, следует ли использовать данные партнера синхронизации данных во время оценки соответствия требованиям.|
-|macEnabled|Boolean|Для Mac получите или установите, следует ли использовать данные партнера синхронизации данных во время оценки соответствия требованиям.|
+|macEnabled|Логический|Для Mac получите или установите, следует ли использовать данные партнера синхронизации данных во время оценки соответствия требованиям.|
 |androidDeviceBlockedOnMissingPartnerData|Логическое|Для ОС Android следует указать, необходимо ли Intune получать данные от партнера по синхронизации данных, прежде чем отметить устройство как соответствующее требованиям|
 |iosDeviceBlockedOnMissingPartnerData|Логическое|Для ОС IOS следует указать, необходимо ли Intune получать данные от партнера по синхронизации данных, прежде чем отметить устройство как соответствующее требованиям|
 |windowsDeviceBlockedOnMissingPartnerData|Логический|Для Windows установите, должен ли Intune получать данные от партнера синхронизации данных до маркировки устройства, удовлетворяемой требованиям.|
 |macDeviceBlockedOnMissingPartnerData|Логический|Для Mac получите или установите, должен ли Intune получать данные от партнера по синхронизации данных до маркировки устройства, удовлетворяемой требованиям.|
 |partnerUnsupportedOsVersionBlocked|Логическое|Получение или задание настроек, следует ли блокировать устройства на включенных платформах, которые не соответствуют минимальным требованиям к версии партнера по синхронизации данных|
 |partnerUnresponsivenessThresholdInDays|Int32|Получает или задает количество дней устойчивости к отсутствию отклика для клиента при этой интеграции партнера.|
-|allowPartnerToCollectIOSApplicationMetadata|Логический|Для устройств IOS администратор может настроить, может ли партнер синхронизации данных также собирать метаданные об установленных приложениях из Intune.|
-|MicrosoftDefenderForEndpointAttachEnabled|Boolean|При TRUE включено управление профилем конфигурации через Microsoft Defender для конечной точки. При FALSE управление профилем конфигурации с помощью Microsoft Defender для конечной точки отключено.|
+|allowPartnerToCollectIOSApplicationMetadata|Boolean|Для устройств IOS администратор может настроить, может ли партнер синхронизации данных также собирать метаданные об установленных приложениях из Intune.|
+|MicrosoftDefenderForEndpointAttachEnabled|Логический|При TRUE включено управление профилем конфигурации через Microsoft Defender для конечной точки. При FALSE управление профилем конфигурации с помощью Microsoft Defender для конечной точки отключено.|
 
 ## <a name="relationships"></a>Связи
 Нет

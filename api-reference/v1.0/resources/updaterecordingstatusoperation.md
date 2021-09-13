@@ -2,15 +2,15 @@
 title: тип ресурса updateRecordingStatusOperation
 description: Описывает формат ответа действия записи обновления.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c79e97e3befcbce6b324cbaf2ac822edd9de49e1871deee815a27a4c0c62c4a3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1f377ac39ec8e216b883f644f086f888b025ef8c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141282"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062413"
 ---
 # <a name="updaterecordingstatusoperation-resource-type"></a>тип ресурса updateRecordingStatusOperation
 
@@ -27,7 +27,7 @@ ms.locfileid: "54141282"
 | resultInfo          | [resultInfo](resultinfo.md) | Сведения о результате. Только для чтения.                                                 |
 | status              | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`.               |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

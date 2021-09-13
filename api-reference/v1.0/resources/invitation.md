@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса invitation
 description: Представляет приглашение, используемое для добавления внешних пользователей в организацию.
-localization_priority: Priority
+ms.localizationpriority: high
 author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 86946a61024739f0722ddab5cba007b51c81c75d
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 6299bc5d43f3af49e672761f666694ef62828280
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58260795"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084442"
 ---
 # <a name="invitation-resource-type"></a>Тип ресурса invitation
 

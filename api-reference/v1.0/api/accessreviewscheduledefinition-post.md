@@ -1,16 +1,16 @@
 ---
 title: Создание accessReviewScheduleDefinition
 description: Создайте новый объект accessReviewScheduleDefinition.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 55d3ef44de2874aea30f087e057bd3a4cb0b8045
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 06b8435e2f087f09346a0eed8834b874f420b11e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367214"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017074"
 ---
 # <a name="create-accessreviewscheduledefinition"></a>Создание accessReviewScheduleDefinition
 
@@ -26,7 +26,7 @@ ms.locfileid: "58367214"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение                            | AccessReview.ReadWrite.All |
+|Для приложений                            | AccessReview.ReadWrite.All |
 
 При входе пользователь должен также быть в роли каталога, что позволяет им создавать обзор доступа.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviewsv2-root.md)
 
@@ -48,10 +48,10 @@ POST /identityGovernance/accessReviews/definitions
 
 | Свойство | Тип | Описание |
 |:-------------|:------------|:------------|
-| displayName | String | Имя серии обзоров доступа. Обязательный атрибут.|
-| descriptionForAdmins | string | Контекст обзора, предоставленного администраторам. Обязательный атрибут. |
-  descriptionForReviewers | string | Контекст обзора, предоставленного рецензентам. Обязательный атрибут. |
-| область | [accessReviewScope](../resources/accessreviewscope.md) |  Определяет объекты, доступ к которым просматривается. Просмотрите [accessReviewScope и](../resources/accessreviewscope.md) узнайте, как настроить область определения обзора [доступа.](/graph/accessreviews-scope-concept) Обязательный атрибут.| 
+| displayName | String | Имя серии обзоров доступа. Обязательный.|
+| descriptionForAdmins | String | Контекст обзора, предоставленного администраторам. Обязательное. |
+  descriptionForReviewers | String | Контекст обзора, предоставляемого рецензентам в уведомлениях электронной почты. Уведомления электронной почты поддерживают до 256 символов. Обязательное. |
+| область | [accessReviewScope](../resources/accessreviewscope.md) |  Определяет объекты, доступ к которым просматривается. Просмотрите [accessReviewScope и](../resources/accessreviewscope.md) узнайте, как настроить область определения обзора [доступа.](/graph/accessreviews-scope-concept) Обязательный.| 
 | instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | В случае проверки всех групп определяется область, в которой будут рассмотрены группы. Просмотрите [accessReviewScope и](../resources/accessreviewscope.md) узнайте, как настроить область определения обзора [доступа.](/graph/accessreviews-scope-concept)| 
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| Параметры для серии обзоров доступа. Здесь определяется повторяемость. См. [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
 | рецензенты | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection | Определяет, кто такие рецензенты. Если нет указаны, обзор является самообнаверяемой (пользователи просматривают собственный доступ). Примеры вариантов назначения рецензентов см. в примере Назначение рецензентов определению обзора доступа с помощью [API microsoft Graph.](/graph/accessreviews-reviewers-concept)  |

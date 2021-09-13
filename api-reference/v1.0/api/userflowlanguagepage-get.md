@@ -2,15 +2,15 @@
 title: Get userFlowLanguagePage
 description: Чтение значений в объекте userFlowLanguagePage для языка в потоке пользователей.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: bf35e829e0c5f8cc9df6af502962aab4a6a4a83b
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: d816cf5a5fc91a24263f13a8b32a55dcf5024923
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920479"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021829"
 ---
 # <a name="get-userflowlanguagepage"></a>Get userFlowLanguagePage
 
@@ -31,7 +31,7 @@ ms.locfileid: "51920479"
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока внешних пользователей удостоверений
+* Администратор внешних Flow удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 

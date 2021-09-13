@@ -2,14 +2,14 @@
 title: Устранение ошибок авторизации в Microsoft Graph
 description: Узнайте, как устранить ошибки авторизации в Microsoft Graph 401 и 403.
 author: davidmu1
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: applications
-ms.openlocfilehash: 98afbd06b1b04f2a0e046bf85dbcbecd49eedac760b702178a542f2511d9f0c1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f3b6c4eee7bc99e755af2d071de7f1c4a1b075a3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180364"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59083917"
 ---
 # <a name="resolve-microsoft-graph-authorization-errors"></a>Устранение ошибок авторизации в Microsoft Graph
 

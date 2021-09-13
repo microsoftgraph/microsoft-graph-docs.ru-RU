@@ -1,16 +1,16 @@
 ---
 title: Создание соглашения
 description: Создание нового объекта соглашения.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: c72ff9b7dace7847ddc65416ca3876545dd0c03b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f978b9599b2427dc06173636cd19ead373f8c56d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52040128"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017046"
 ---
 # <a name="create-agreement"></a>Создание соглашения
 
@@ -34,7 +34,7 @@ POST /identityGovernance/termsOfUse/agreements
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Описание |
 |:-------------|:------------|
-| Authorization | Носитель \{токен\}. Обязательный. |
+| Авторизация | Носитель \{токен\}. Обязательный. |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -45,7 +45,7 @@ POST /identityGovernance/termsOfUse/agreements
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |displayName|String|Отображение имени соглашения.|
-|isViewingBeforeAcceptanceRequired|Boolean|Указывает, должен ли пользователь расширять и просматривать соглашение перед принятием.|
+|isViewingBeforeAcceptanceRequired|Логический|Указывает, должен ли пользователь расширять и просматривать соглашение перед принятием.|
 |fileName|String|Имя файла соглашения (например, TOU.pdf).|
 |isDefault|Boolean|Указывает, является ли это файл соглашения по умолчанию, если язык соответствует предпочтениям клиента. Если ни один из файлов не помечен как по умолчанию, первый из них рассматривается как по умолчанию.|
 |language|String|Язык файла соглашения в формате languagecode2-country/regioncode2. languagecode2 — это код из двух букв более низкого уровня, полученный из ISO 639-1. country/regioncode2 является производным от ISO 3166 и обычно состоит из двух верхних букв или языкового тега BCP-47 (например, en-US).|

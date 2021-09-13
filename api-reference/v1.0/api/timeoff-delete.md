@@ -2,15 +2,15 @@
 title: Удаление timeOff
 description: Удаление экземпляра timeOff из расписания.
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4a10dbde99b62cebf99f82c9ac67743943f83a63
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 5f32ce9d6eb734795384a09961f664b5fecf4ac5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787719"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049951"
 ---
 # <a name="delete-timeoff"></a>Удаление timeOff
 
@@ -44,7 +44,7 @@ DELETE /teams/{teamId}/schedule/timesOff/{timeOffId}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -1,14 +1,14 @@
 ---
 title: Upload больших файлов с помощью SDKs Graph Microsoft
 description: Предоставляет рекомендации по отправке больших файлов с помощью SDKs Graph Microsoft.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: 4d78c8be73f154f206d62ae8a52c0c2c8dc5ab4c
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: 7baac0871a189a4dc7f3965b8459314fd2b32615
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490506"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142378"
 ---
 # <a name="upload-large-files-using-the-microsoft-graph-sdks"></a>Upload больших файлов с помощью SDKs Graph Microsoft
 

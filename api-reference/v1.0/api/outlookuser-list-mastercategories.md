@@ -2,15 +2,15 @@
 title: Перечисление категорий Outlook
 description: Получение всех категорий, определенных для пользователя.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8359af0e1e6803e27d2790dcf9e8dde063c9204e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 05a86cd4cb653fb455a73bbb400a8d64f3478aa2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054527"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037294"
 ---
 # <a name="list-outlook-categories"></a>Перечисление категорий Outlook
 
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/v1.0/me/outlook/masterCategories
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

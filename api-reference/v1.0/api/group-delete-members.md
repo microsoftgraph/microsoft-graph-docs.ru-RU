@@ -1,16 +1,16 @@
 ---
 title: Удаление участника
 description: С помощью этого API можно удалить участника из группы через свойство навигации **members**.
-localization_priority: Priority
+ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0ea7e6b00dcf73468f63684ab6f116c380cb0504
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: cd5621126f94952ce749f77616c03a8b4040d6c0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58397035"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016619"
 ---
 # <a name="remove-member"></a>Удаление участника
 

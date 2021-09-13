@@ -1,17 +1,17 @@
 ---
-title: Различия свойств между Azure AD Graph Microsoft Graph
+title: Различия свойств между Azure Active Directory (Azure AD) Graph и Microsoft Graph
 description: Описывает различия свойств между ресурсами Azure AD Graph (сущностями) и microsoft Graph, чтобы помочь соответствующим образом перенести приложения.
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 6e630882afb7cc4e6423e5c46c76447f23e9a6ad
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: f060a59ff26e8d8279c3ac4e1e83fde0f7ff25ec
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789546"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098421"
 ---
-# <a name="property-differences-between-azure-ad-graph-and-microsoft-graph"></a>Различия свойств между Azure AD Graph Microsoft Graph
+# <a name="property-differences-between-azure-active-directory-azure-ad-graph-and-microsoft-graph"></a>Различия свойств между Azure Active Directory (Azure AD) Graph и Microsoft Graph
 
 Эта статья является *частью шага 1: просмотрите различия API* процесса переноса [приложений.](migrate-azure-ad-graph-planning-checklist.md)
 
@@ -27,7 +27,7 @@ ms.locfileid: "58789546"
 
 ## <a name="user-property-differences"></a>Различия свойств пользователя
 
-|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br>свойство|Comments|
+|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br>свойство|Комментарии|
 |---|---|---|
 | **deletedTimestamp**| &nbsp; - &nbsp; **бета-версия deletedDateTime** <br> v1.0 &nbsp; - &nbsp; **deletedDateTime** | |
 | **dirSyncEnabled** | &nbsp; - &nbsp; **бета-версия onPremisesSyncEnabled** <br> v1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled** | |
@@ -47,7 +47,7 @@ ms.locfileid: "58789546"
 
 ## <a name="group-property-differences"></a>Различия свойств группы
 
-|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Comments|
+|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
 | **dirSyncEnabled** | &nbsp; - &nbsp; **бета-версия onPremisesSyncEnabled** <br> v1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled** | |
 | **immutableId** | &nbsp; - &nbsp; **бета-версия onPremisesImmutableId** <br> v1.0 &nbsp; - &nbsp; **onPremisesImmutableId** | |
@@ -56,7 +56,7 @@ ms.locfileid: "58789546"
 
 ## <a name="application-property-differences"></a>Различия свойств приложений
 
-| Azure AD Graph <br>(v1.6) свойство | Microsoft Graph<br> свойство                                                                                                                          | Comments                                                                                                                                                                                                                                                                                                                     |
+| Azure AD Graph <br>(v1.6) свойство | Microsoft Graph<br> свойство                                                                                                                          | Комментарии                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **acceptMappedClaims**             | &nbsp; - &nbsp; **бета-api/acceptMappedClaims** <br> v1.0 &nbsp; - &nbsp; **api/acceptMappedClaims**                                                       | acceptMappedClaims теперь является частью нового ресурса API.                                                                                                                                                                                                                                                                      |
 | **availableToOtherTenants**        | &nbsp; - &nbsp; **бета-версия signInAudience** <br> v1.0 &nbsp; - &nbsp; **signInAudience**                                                                      | Значение по умолчанию для доступныхToOtherTenants (имеется в виду) в то время как для `false` `AzureADMyOrg` signInAudience `AzureADandPersonalMicrosoftAccount` является .                                                                                                                                                                                                                                                                                                                              |
@@ -79,7 +79,7 @@ ms.locfileid: "58789546"
 
 ## <a name="approleassignment-differences"></a>Различия appRoleAssignment
 
-|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Comments|
+|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
 | **creationTimestamp** | &nbsp; - &nbsp; **бета-созданиеTimestamp** <br> v1.0 &nbsp; - &nbsp; **createdDateTime** | |
 | **id** | &nbsp; - &nbsp; **бета-приложениеRoleId** <br> v1.0 &nbsp; - &nbsp; **appRoleId** | |
@@ -88,10 +88,10 @@ ms.locfileid: "58789546"
 
 Ресурс Azure AD Graph Contact переименован в orgContact в Microsoft Graph.  Вот различия свойств:
 
-|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Comments|
+|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
 | **city** | &nbsp; - &nbsp; **бета-адреса (город)** <br> v1.0 &nbsp; - &nbsp; **адреса (город)**  | Свойство city является частью коллекции ресурсов адресов. |
-| **country** | &nbsp; - &nbsp; **бета-адреса** &nbsp; **(countryOrRegion)**<br> v1.0 &nbsp; - &nbsp; **адреса** &nbsp; **(countryOrRegion)**  | Свойство countryOrRegion является частью коллекции ресурсов адресов. |
+| **страна** | &nbsp; - &nbsp; **бета-адреса** &nbsp; **(countryOrRegion)**<br> v1.0 &nbsp; - &nbsp; **адреса** &nbsp; **(countryOrRegion)**  | Свойство countryOrRegion является частью коллекции ресурсов адресов. |
 | **dirSyncEnabled** | &nbsp; - &nbsp; **бета-версия onPremisesSyncEnabled** <br> v1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled**   | |
 | **facsimileTelephoneNumber** | &nbsp; - &nbsp; **бета-телефоны** &nbsp; **(businessFax)** <br> v1.0 &nbsp; - &nbsp; **телефоны** &nbsp; **(businessFax)** | Теперь часть коллекции телефонов, которая поддерживает мобильные, бизнес и businessFax. |
 | **physicalDeliveryOfficeName** | beta &nbsp; - &nbsp; **officeLocation** <br> v1.0 &nbsp; - &nbsp; **officeLocation** | |
@@ -105,13 +105,13 @@ ms.locfileid: "58789546"
 
 ## <a name="contract-property-differences"></a>Различия свойств контрактов
 
-|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Comments|
+|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
 | **customerContextId** | beta &nbsp; - &nbsp; **customerId** <br> v1.0 &nbsp; - &nbsp; **customerId**  |  |
 
 ## <a name="device-property-differences"></a>Различия свойств устройства
 
-|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Comments|
+|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
 | **approximateLastLogonTimestamp** | &nbsp; - &nbsp; **бета-версия приблизительнымLastSignInDateTime** <br> v1.0 &nbsp; - &nbsp; **approximateLastSignInDateTime** |  |
 | **complianceExpiryTime** | &nbsp; - &nbsp; **бета-соответствиеExpirationDateTime** <br> v1.0 &nbsp; - &nbsp; **complianceExpirationDateTime** |  |
@@ -127,13 +127,13 @@ ms.locfileid: "58789546"
 
 Ресурс Azure AD Graph directoryObjectReference переименован в directoryObjectPartnerReference в Microsoft Graph.  Вот различия свойств:
 
-|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Comments|
+|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
 | **externalContextId** | beta &nbsp; - &nbsp; **externalPartnerTenantId** <br> v1.0 &nbsp; - &nbsp; **externalPartnerTenantId** |  |
 
 ## <a name="domain-property-differences"></a>Различия свойств домена
 
-|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Comments|
+|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
 | **name** | &nbsp; - &nbsp; **бета-версия** <br> v1.0 &nbsp; - &nbsp; **id** | В Graph Microsoft уникальный идентификатор (id) содержит доменное имя; свойство `name` не существует. |
 | **forceDeleteState** |  состояние &nbsp; - &nbsp; **бета-версии** <br> состояние v1.0 &nbsp; - &nbsp;  | В Azure AD Graph существуют отдельные свойства forceDelete и состояния домена.  В microsoft Graph все состояния домена обрабатываются свойством состояния. |
@@ -141,7 +141,7 @@ ms.locfileid: "58789546"
 
 ## <a name="oauth2permissionsgrant-property-differences"></a>Различия свойств OAuth2PermissionsGrant
 
-|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Comments|
+|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
 | **expiryTime** | beta &nbsp; - &nbsp; **expiryTime** <br> v1.0 &nbsp; - &nbsp; _Удален_ | Это свойство не используется и удаляется в Microsoft Graph v1.0. |
 | **startTime** | &nbsp; - &nbsp; **бета-версия startTime** <br> v1.0 &nbsp; - &nbsp; _Удален_  | Это свойство не используется и удаляется в Microsoft Graph v1.0. |
@@ -154,7 +154,7 @@ ms.locfileid: "58789546"
 
 Ресурс Azure AD Graph ServiceEndpoint переименован в конечную точку в Microsoft Graph.
 
-|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Comments|
+|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
 | **serviceId** | beta &nbsp; - &nbsp; **providerId**<br> v1.0 &nbsp; - &nbsp; **providerId** | |
 | **serviceName** | beta &nbsp; - &nbsp; **providerName**<br> v1.0 &nbsp; - &nbsp; **providerName** | |
@@ -162,7 +162,7 @@ ms.locfileid: "58789546"
 
 ## <a name="serviceprincipal-property-differences"></a>Различия свойств ServicePrincipal
 
-|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Comments|
+|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
 | **appOwnerTenantId** | бета &nbsp; - &nbsp; **appOwnerOrganizationId** <br> v1.0 &nbsp; - &nbsp; **appOwnerOrganizationId** | Переименовано. |
 | **informationalUrls**| сведения о &nbsp; - &nbsp; **бета-версии** <br> сведения о v1.0 &nbsp; - &nbsp;  | |
@@ -175,7 +175,7 @@ ms.locfileid: "58789546"
 
 Ресурс Azure AD Graph TenantDetails переименован в организацию в Microsoft Graph.  Вот различия свойств:
 
-|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Comments|
+|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
 | **companyLastDirSyncTime** | &nbsp; - &nbsp; **бета-версия наPremisesLastSyncDateTime** <br> v1.0 &nbsp; - &nbsp; **onPremisesLastSyncDateTime** |  |
 | **dirSyncEnabled** | &nbsp; - &nbsp; **бета-версия onPremisesSyncEnabled** <br> v1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled** |  |
@@ -190,7 +190,7 @@ ms.locfileid: "58789546"
 
 Azure AD Graph CertificateAuthorityInformation переименована в **certificateAuthority** в Microsoft Graph. Ниже приводится различие свойств.
 
-|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Comments|
+|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
 | **authorityType** | &nbsp; - &nbsp; **бета-версия isRootAuthority**<br> v1.0 &nbsp; - &nbsp; **isRootAuthority** | Тип этого свойства также изменился в Boolean. Ранее это свойство должно было быть задавалось как "RootAuthority" или "IntermediateAuthority". Настройка true нового **свойства** эквивалентна "RootAuthority". |
 | **crlDistributionPoint** | &nbsp; - &nbsp; **бета-сертификатRevocationListUrl** <br> v1.0 &nbsp; - &nbsp; **certificateRevocationListUrl** | |

@@ -2,15 +2,15 @@
 title: 'accessReviewInstance: filterByCurrentUser'
 description: Извлечение всех объектов accessReviewInstance для данного рецензента.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6d32cf12ed95c34cc82dd40a05e928f4069c1f51
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 4725764f31252568ce1946cbcdbd5c95797a6381
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53209852"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033100"
 ---
 # <a name="accessreviewinstance-filterbycurrentuser"></a>accessReviewInstance: filterByCurrentUser
 Пространство имен: microsoft.graph
@@ -27,7 +27,7 @@ ms.locfileid: "53209852"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.Read.All, AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Для приложений|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

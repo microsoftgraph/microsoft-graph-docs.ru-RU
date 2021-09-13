@@ -2,15 +2,15 @@
 author: swapnil1993
 title: 'contentType: публикация'
 description: Публикация типа контента, присутствуют на сайте концентратора типов контента.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: ba8bae58685785423181f007a2f9777a4c6d2198
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: e96c9c26e66514633b69693d9e06d9e0a8d4c063
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696739"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038275"
 ---
 # <a name="contenttype-publish"></a>contentType: публикация
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "58696739"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.FullControl.All    |
 |Делегированные (личная учетная запись Майкрософт) | Sites.FullControl.All    |
-|Приложение | Sites.FullControl.All |
+|Для приложений | Sites.FullControl.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -55,6 +55,8 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/publish
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contenttype_publish"
@@ -63,6 +65,24 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/publish
 ```http
 POST https://graph.microsoft.com/v1.0/sites/{siteId}/contentTypes/{contentTypeId}/publish
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/contenttype-publish-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/contenttype-publish-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/contenttype-publish-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/contenttype-publish-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

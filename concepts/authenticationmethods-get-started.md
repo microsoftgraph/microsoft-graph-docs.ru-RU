@@ -2,14 +2,14 @@
 title: Начало работы с API способов проверки подлинности в Microsoft Graph
 description: AP способов проверки подлинности в Microsoft Graph с помощью программных средств позволяет организациям управлять способами проверки подлинности пользователей, регистрировать пользователей для выполнения многофакторной проверки подлинности (MFA) и выполнять самостоятельный сброс пароля (SSPR).
 author: mmcla
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 8750f56db54c1dd5c2ef8708ccd1f3b873c9ea0328517743b881f7502f299f89
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bfd0167e0237a35dc6fd19a43e917d7c8899cf0d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251661"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122917"
 ---
 # <a name="get-started-with-the-microsoft-graph-authentication-methods-api"></a>Начало работы с API способов проверки подлинности в Microsoft Graph
 

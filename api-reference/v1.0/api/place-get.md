@@ -1,16 +1,16 @@
 ---
 title: Получить место
 description: Извлечение свойств и связей объекта place.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: eb36b9b79f6058644da8529ba353a613e97726b7
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 422fa035f320378c8369d09571bf1836d5dc3e0a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054002"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59007875"
 ---
 # <a name="get-place"></a>Получить место
 
@@ -33,7 +33,7 @@ ms.locfileid: "52054002"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Place.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-| Приложение                            | Place.Read.All |
+| Для приложений                            | Place.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

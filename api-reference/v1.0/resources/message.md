@@ -2,15 +2,15 @@
 title: Тип ресурса message
 description: Сообщение в mailFolder.
 author: abheek-das
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 172156bf63c045370e58c63a8933bcf3575a522408868d658a01683a67e1c0e7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1bb567cac7a49f31973b2bc42aa506863064cba2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54237649"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067124"
 ---
 # <a name="message-resource-type"></a>Тип ресурса message
 

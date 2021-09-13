@@ -2,15 +2,15 @@
 title: Создание чата
 description: Создайте новый объект чата.
 author: bhartono
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fe357cf37a0d1e4b5625c7550ce02b88a462a04b
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 226d2a3a0c4a41ceec56dab7395b65c21b2343c6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50960125"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022921"
 ---
 # <a name="create-chat"></a>Создание чата
 Пространство имен: microsoft.graph

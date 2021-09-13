@@ -1,16 +1,16 @@
 ---
 title: Обновление identitySecurityDefaultsEnforcementPolicy
 description: Обновление свойств объекта identitySecurityDefaultsEnforcementPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: rohinigoyal1
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 110c74817316f9fb88b4f343b85d61b81ef9a726
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: cebbbc815a799aec8fff3e962677f45d6544d31c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52783619"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045758"
 ---
 # <a name="update-identitysecuritydefaultsenforcementpolicy"></a>Обновление identitySecurityDefaultsEnforcementPolicy
 

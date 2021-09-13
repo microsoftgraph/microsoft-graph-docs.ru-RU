@@ -2,15 +2,15 @@
 title: тип ресурса win32LobApp
 description: Содержит свойства и унаследованные свойства для приложений Win32.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f5e9af31d8bddaeea5ec2edc9465f1cf0e3d47c68ff739ef7945415cc74f8024
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 928200f65cd9388b2ed8cf8091c3479e02f57ab4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126538"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072444"
 ---
 # <a name="win32lobapp-resource-type"></a>тип ресурса win32LobApp
 
@@ -36,7 +36,7 @@ ms.locfileid: "54126538"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |description|String|Описание приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -52,8 +52,8 @@ ms.locfileid: "54126538"
 |committedContentVersion|String|Внутренняя версия подтвержденного содержимого. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |fileName|String|Имя основного файла бизнес-приложения. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |size|Int64|Общий размер, включая все отправленные файлы. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
-|installCommandLine|String|Командная строка для установки этого приложения|
-|uninstallCommandLine|String|Командная строка, чтобы удалить это приложение|
+|installCommandLine|Строка|Командная строка для установки этого приложения|
+|uninstallCommandLine|Строка|Командная строка, чтобы удалить это приложение|
 |applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Архитектура Windows, которая поддерживается этим приложением. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`.|
 |minimumFreeDiskSpaceInMB|Int32|Значение минимального свободного пространства диска, необходимого для установки этого приложения.|
 |minimumMemoryInMB|Int32|Значение минимальной физической памяти, необходимой для установки этого приложения.|
@@ -63,8 +63,8 @@ ms.locfileid: "54126538"
 |installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|Возможность установки этого приложения.|
 |returnCodes|[коллекция win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md)|Коды возврата для поведения после установки.|
 |msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|Сведения о MSI, если это приложение Win32 является приложением MSI.|
-|setupFilePath|String|Относительный путь файла установки в зашифрованном пакете Win32LobApp.|
-|minimumSupportedWindowsRelease|String|Значение для минимального поддерживаемых выпусков windows.|
+|setupFilePath|Строка|Относительный путь файла установки в зашифрованном пакете Win32LobApp.|
+|minimumSupportedWindowsRelease|Строка|Значение для минимального поддерживаемых выпусков windows.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

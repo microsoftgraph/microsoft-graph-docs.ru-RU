@@ -1,16 +1,16 @@
 ---
 title: Получение объекта plannerProgressTaskBoardTaskFormat
 description: Получение свойств и связей объекта **plannerProgressTaskBoardTaskFormat**.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 91dff00b708ca8893292dc75c0af3032d9087f0d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a13129fd3add48153166eb5154d9e10c10c6be64
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039120"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037210"
 ---
 # <a name="get-plannerprogresstaskboardtaskformat"></a>Получение объекта plannerProgressTaskBoardTaskFormat
 
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/progressTaskBoardFo
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

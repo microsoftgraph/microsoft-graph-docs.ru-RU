@@ -2,15 +2,15 @@
 title: Создание правила
 description: 'Создает объект messageRule, определяя набор условий и действий. '
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fc840b12296b7a308fde8e5af4e39e025fd53a80
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ac029d29ab88d4b6e5cd7168c75e6c95bdd4ff03
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055927"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079311"
 ---
 # <a name="create-rule"></a>Создание правила
 
@@ -50,7 +50,7 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 |:--------|:-------|:----------|
 |actions|[messageRuleActions](../resources/messageruleactions.md)|Действия, применимые к сообщению при выполнении соответствующих условий (если таковые имеются). Обязательный.|
 |conditions|[messageRulePredicates](../resources/messagerulepredicates.md)|Условия, выполнение которых активирует соответствующие действия для указанного правила. Необязательное свойство.|
-|displayName| String  | Отображаемое имя правила. Обязательный.|
+|displayName| Строка  | Отображаемое имя правила. Обязательный.|
 |exceptions| [messageRulePredicates](../resources/messagerulepredicates.md)| Представляет условия исключения для правила. Необязательное свойство. |
 |isEnabled | Boolean | Указывает, включено ли применение правила к сообщениям. Необязательное свойство. |
 |sequence| Int32 | Определяет последовательность выполнения правила среди прочих правил. Обязательный.|
@@ -114,7 +114,7 @@ Content-type: application/json
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

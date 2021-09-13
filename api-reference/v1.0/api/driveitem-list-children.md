@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Создание списка содержимого папки
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 description: Получение коллекции ресурсов DriveItem, являющихся дочерними элементами ресурса DriveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 8938cccdb0a8b2f1de76327d968aaceba1aedee0
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: d9acc9d0fd087c39aac5a71336c9ee2ccf2b4d21
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50240285"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59063456"
 ---
 # <a name="list-children-of-a-driveitem"></a>Создание списка дочерних элементов ресурса driveItem
 
@@ -125,10 +125,9 @@ GET /drives/{drive-id}/items/{item-id}/children
 GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
 ```
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает список элементов в коллекции дочерних элементов для целевого элемента.
-Коллекция дочерних элементов будет состоять из ресурсов [driveItem][item-resource].
+При успешном выполнении этот метод возвращает список элементов в коллекции дочерних элементов для целевого элемента. Коллекция дочерних элементов будет состоять из ресурсов [driveItem][item-resource].
 
 <!-- { "blockType": "response", 
        "@odata.type": "Collection(microsoft.graph.driveItem)", 

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса teamMemberSettings
 description: Параметры для настройки того, могут ли участники выполнять определенные действия, например создавать каналы и добавлять ботов в команде.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 0383392f47c7f386e20860ad83ba090ce9ebe7244e62e19397525dcf7835c0dd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 215efff423e417d83f2416021b877c8d0c08897e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189284"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049496"
 ---
 # <a name="teammembersettings-resource-type"></a>тип ресурса teamMemberSettings
 
@@ -24,13 +24,13 @@ ms.locfileid: "54189284"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |allowCreatePrivateChannels|Логический|Если установлено, что это так, участники могут добавлять и обновлять частные каналы.|
-|allowCreateUpdateChannels|Логическое|Если установлено, что это так, участники могут добавлять и обновлять каналы.|
-|allowDeleteChannels|Логическое|Если установлено, что это так, участники могут удалять каналы.|
+|allowCreateUpdateChannels|Boolean|Если установлено, что это так, участники могут добавлять и обновлять каналы.|
+|allowDeleteChannels|Логический|Если установлено, что это так, участники могут удалять каналы.|
 |allowAddRemoveApps|Логический|Если установлено, что это так, участники могут добавлять и удалять приложения.|
-|allowCreateUpdateRemoveTabs|Логическое|Если установлено true, участники могут добавлять, обновлять и удалять вкладки. |
-|allowCreateUpdateRemoveConnectors|Логическое|Если установлено верно, участники могут добавлять, обновлять и удалять соединители.|
+|allowCreateUpdateRemoveTabs|Логический|Если установлено true, участники могут добавлять, обновлять и удалять вкладки. |
+|allowCreateUpdateRemoveConnectors|Логический|Если установлено верно, участники могут добавлять, обновлять и удалять соединители.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

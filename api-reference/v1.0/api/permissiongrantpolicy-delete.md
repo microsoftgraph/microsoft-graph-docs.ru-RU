@@ -1,16 +1,16 @@
 ---
 title: Удаление permissionGrantPolicy
 description: Удаление объекта permissionGrantPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 3eef514fd9d10f734f8991776813815013a5b5b4
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: edc20cd628588214a1436a5e66731a4b161d4388
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787557"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072780"
 ---
 # <a name="delete-permissiongrantpolicy"></a>Удаление permissionGrantPolicy
 
@@ -42,7 +42,7 @@ DELETE /policies/permissionGrantPolicies/{id}
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

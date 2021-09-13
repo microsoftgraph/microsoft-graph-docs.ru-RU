@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: SharedDriveItem
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Ресурс sharedDriveItem возвращается при использовании API Shares для доступа к общему driveItem.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: da14e18c21f122646c7b7b86f3bc9e5401a60d8882762c4e4e096beecfda2cd6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e425d8d243722ffa29b9ffcedfaae566508d8f57
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251752"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59066998"
 ---
 # <a name="shareddriveitem-resource-type"></a>Тип ресурса SharedDriveItem
 
@@ -51,7 +51,7 @@ ms.locfileid: "54251752"
 
 | Свойство | Тип                          | Описание                                                      |
 | :------- | :---------------------------- | :--------------------------------------------------------------- |
-| id       | String                        | Уникальный идентификатор для общего ресурса, к которому предоставляется доступ.              |
+| id       | Строка                        | Уникальный идентификатор для общего ресурса, к которому предоставляется доступ.              |
 | name     | String                        | Отображаемое имя общего элемента.                             |
 | owner    | [IdentitySet](identityset.md) | Сведения о владельце общего элемента, ставшего объектом ссылки. |
 

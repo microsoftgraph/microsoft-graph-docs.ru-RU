@@ -1,15 +1,15 @@
 ---
 title: 'Интеграция с уведомлениями Microsoft Graph '
 description: 'Уведомления — один из наиболее эффективных способов взаимодействия с пользователями вашего приложения. Вы можете интегрировать в свои приложения уведомления Microsoft Graph с помощью нескольких простых действий.  '
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: notifications
 author: merzink
-ms.openlocfilehash: 8dc5ef886106ca4d966e0a94ae2915040cfb5d1f1ea66d041d136db5bb7951e0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8d3e2fe8d7c208cd2c4f0c7f55ba68a79a3d3713
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149534"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59066907"
 ---
 # <a name="integrate-with-microsoft-graph-notifications"></a>Интеграция с уведомлениями Microsoft Graph
 

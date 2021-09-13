@@ -3,14 +3,14 @@ title: Добавление участника в чат
 description: Добавьте conversationMember в чат.
 author: bhartono
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: f326c9d9c46d9de7b66ffccc10c44eef1b0ffa0b
-ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
+ms.openlocfilehash: 81504dcacd2c18f072b55395922988779cf7dfea
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430013"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038386"
 ---
 # <a name="add-member-to-a-chat"></a>Добавление участника в чат
 
@@ -26,7 +26,7 @@ ms.locfileid: "53430013"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)| ChatMember.ReadWrite, Chat.ReadWrite |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| ChatMember.ReadWrite.All, Chat.ReadWrite.All |
+|Для приложений| ChatMember.ReadWrite.All, Chat.ReadWrite.All |
 
 <!-- { "blockType": "ignored"} -->
 ```http

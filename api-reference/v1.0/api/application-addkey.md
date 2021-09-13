@@ -1,16 +1,16 @@
 ---
 title: 'приложение: addKey'
 description: Добавление учетных данных ключа в приложение.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 2194af555769d8eb5423a5c08a59926cb3e004f4
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c96de52426a85e6ffd50ddea77d9197795d416e5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958789"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016955"
 ---
 # <a name="application-addkey"></a>приложение: addKey
 
@@ -29,9 +29,9 @@ ms.locfileid: "50958789"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Отсутствуют.  |
+|Делегированные (рабочая или учебная учетная запись) | Нет.  |
 |Делегированные (личная учетная запись Майкрософт) | Нет.    |
-|Приложение | Отсутствуют. |
+|Приложение | Нет. |
 
 > [!NOTE] 
 > Приложение не нуждается в специальном разрешении для сверки собственных ключей.

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса plannerBucketTaskBoardTaskFormat
 description: Ресурс **plannerBucketTaskBoardTaskFormat** представляет сведения, используемые для правильного отрисовки задачи в представлении "Ведерки" доски задач (представление, организованное задачами в ведрах, на которые они назначены). Каждая задача будет иметь один **объект plannerBucketTaskBoardTaskFormat,** связанный с ним.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 38e159858591f7e1725c455e07162f9e0f10bbd1f8fc8d8bcfe974e952c95ae6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 809622d656a56b4f21c0660515602ab468c1f5e7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178118"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044323"
 ---
 # <a name="plannerbuckettaskboardtaskformat-resource-type"></a>тип ресурса plannerBucketTaskBoardTaskFormat
 
@@ -29,10 +29,10 @@ ms.locfileid: "54178118"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Только для чтения. ID ресурса. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
+|id|String| Только для чтения. ID ресурса. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
 |orderHint|String|Указание, используемое для расположения задач в окне "Сегмент" доски задачи. Формат определяется, как описано [здесь](planner-order-hint-format.md).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

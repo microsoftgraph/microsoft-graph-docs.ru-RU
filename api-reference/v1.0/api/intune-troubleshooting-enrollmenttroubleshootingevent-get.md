@@ -2,15 +2,15 @@
 title: Get enrollmentTroubleshootingEvent
 description: Чтение свойств и связей объекта enrollmentTroubleshootingEvent.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1762b0aea8a1d64e409b019c1bcc2b2bad31be42
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 5cb93bda19abd12c4eb00f16e6e26bf9eb17f75d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265821"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079423"
 ---
 # <a name="get-enrollmenttroubleshootingevent"></a>Get enrollmentTroubleshootingEvent
 
@@ -27,7 +27,7 @@ ms.locfileid: "58265821"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

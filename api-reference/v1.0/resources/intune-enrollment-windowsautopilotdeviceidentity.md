@@ -2,15 +2,15 @@
 title: тип ресурса windowsAutopilotDeviceIdentity
 description: Ресурс windowsAutopilotDeviceIdentity представляет собой устройство Windows автопилота.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e8ba8c7914369b6b512cfaa2838baa51399345cba8dd7b7579d88d1f320c8305
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bd481a0b527e9665e145a48a23b41b6a2aab24f6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178278"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59028921"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>тип ресурса windowsAutopilotDeviceIdentity
 
@@ -35,21 +35,21 @@ ms.locfileid: "54178278"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|GUID объекта|
-|groupTag|String|Тег группы устройства Windows автопилота.|
-|purchaseOrderIdentifier|String|Покупка идентификатора заказа устройства Windows автопилота.|
+|groupTag|Строка|Тег группы устройства Windows автопилота.|
+|purchaseOrderIdentifier|Строка|Покупка идентификатора заказа устройства Windows автопилота.|
 |serialNumber|Строка|Серийный номер устройства Windows Autopilot.|
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
 |manufacturer|String|Oem производитель устройства Windows автопилота.|
 |model|String|Имя модели устройства Windows автопилота.|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Состояние регистрации intune устройства Windows автопилота. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`.|
 |lastContactedDateTime|DateTimeOffset|Intune Last Contacted Date Time of the Windows автопилота.|
-|addressableUserName|String|Адресное имя пользователя.|
+|addressableUserName|Строка|Адресное имя пользователя.|
 |userPrincipalName|String|Имя главного пользователя.|
 |resourceName|String|Имя ресурса.|
-|skuNumber|String|Номер SKU|
-|systemFamily|String|Семейство system|
-|azureActiveDirectoryDeviceId|String|AAD Device ID - to be deprecated|
-|managedDeviceId|String|Управляемый ID устройства|
+|skuNumber|Строка|Номер SKU|
+|systemFamily|Строка|Семейство system|
+|azureActiveDirectoryDeviceId|Строка|AAD Device ID - to be deprecated|
+|managedDeviceId|Строка|Управляемый ID устройства|
 |displayName|String|"Display Name" (Отображаемое имя);|
 
 ## <a name="relationships"></a>Связи

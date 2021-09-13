@@ -2,15 +2,15 @@
 title: Обновление todoTask
 description: Обновление свойств объекта todoTask.
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bc3b5fc228d2c553dec3469825f74dfe4a5298ea
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 9c85d7e5e58c75b3f07cceb3b4fe6bf0242fb2ec
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874279"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59079059"
 ---
 # <a name="update-todotask"></a>Обновление todoTask
 Пространство имен: microsoft.graph
@@ -23,7 +23,7 @@ ms.locfileid: "49874279"
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
-|Делегированное (личная учетная запись Майкрософт)|Tasks.ReadWrite|
+|Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
 |Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -44,13 +44,13 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажу представление объекта [todoTask](../resources/todotask.md) в JSON.
+В теле запроса поставляем представление JSON объекта [todoTask.](../resources/todotask.md)
 
-В следующей таблице показаны свойства, необходимые при создании [объекта todoTask.](../resources/todotask.md)
+В следующей таблице показаны свойства, необходимые при создании [todoTask.](../resources/todotask.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор задачи. Наследуется [от объекта](../resources/entity.md)|
+|id|String|Уникальный идентификатор задачи. Унаследованный от [сущности](../resources/entity.md)|
 |body|[itemBody](../resources/itembody.md)|Текст задачи, который обычно содержит сведения о задаче. Обратите внимание, что поддерживается только тип HTML.|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата в указанном часовом поясе, когда задача была завершена.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата в указанном часовом поясе, когда задача должна быть завершена.|
@@ -59,16 +59,16 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|Расписание повторения задачи.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата и время появления напоминания о задаче.|
 |status|taskStatus|Указывает состояние или ход выполнения задачи. Возможные значения: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
-|title|String|Краткое описание задачи.|
+|title|Строка|Краткое описание задачи.|
 |createdDateTime|DateTimeOffset|Дата и время создания задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса.|
-|bodyLastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения тела задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса.|
+|bodyLastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения тела задач. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса.|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [todoTask](../resources/todotask.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект todoTask](../resources/todotask.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

@@ -2,15 +2,15 @@
 title: Список классов образовательных учреждений
 description: Получение списка курсов учебного заведения.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: cbd644e5994f8039a29c16f0463445d92500a865
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: ed08fe72a70afdf9066073439ac90c6b3fe739d6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232034"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050553"
 ---
 # <a name="list-classes-of-an-educationschool"></a>Список классов образовательных учреждений
 
@@ -26,7 +26,7 @@ ms.locfileid: "52232034"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic                         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Приложение                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+| Для приложений                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/v1.0/education/schools/{school-id}/classes
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

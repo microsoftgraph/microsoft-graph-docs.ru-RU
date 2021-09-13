@@ -2,14 +2,14 @@
 title: Наилучшие методы использования уведомлений Microsoft Teams каналов активности
 description: В этой статье приводится практика и примеры работы с уведомлениями о канале активности в Microsoft Graph.
 author: KirtiPereira
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: teamwork
-ms.openlocfilehash: e36c5df9314c09fb78b0a76a014c874156d91b404978a60201f44aaddc1c40f9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1be6c8e007de42dc014b6b457beae895bb59245b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54177716"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138948"
 ---
 # <a name="best-practices-for-using-microsoft-teams-activity-feed-notifications"></a>Наилучшие методы использования уведомлений Microsoft Teams каналов активности
 

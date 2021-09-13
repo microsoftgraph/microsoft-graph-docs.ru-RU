@@ -2,15 +2,15 @@
 title: API защиты удостоверений
 description: тип ресурса identityProtectionRoot
 author: cloudhandler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: f4766138275b034f2fd5dc1980c9bb266b667cf4f68a2a437a2512fccac750e5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 23a356597092a6bf7f75de3cf359c2026979489b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230713"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056083"
 ---
 # <a name="identityprotectionroot-resource-type"></a>тип ресурса identityProtectionRoot
 
@@ -33,8 +33,8 @@ Operation | URL-адрес
 Get risky users | [GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers](https://developer.microsoft.com/graph/graph-explorer?request=identityProtection/riskyUsers&version=v1.0)
 ОБНАРУЖЕНИЕ рисков GET | [GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections](https://developer.microsoft.com/graph/graph-explorer?request=identityProtection/riskDetections&version=v1.0)
 Get a user's risk history | [GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/{riskyUserId}/history](https://developer.microsoft.com/graph/graph-explorer?request=identityProtection/riskyUsers/{riskyUserId}/history&version=v1.0)
-ПОДТВЕРЖДЕНИЕ пользователя в качестве скомпрометированного | [Поместить https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/confirmCompromised](https://developer.microsoft.com/graph/graph-explorer?request=/identityProtection/riskyUsers/confirmCompromised&version=v1.0)
-УВОЛЬНЕНИЕ рискованного пользователя | [Поместить https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/dismiss](https://developer.microsoft.com/graph/graph-explorer?request=/identityProtection/riskyUsers/dismiss&version=v1.0)
+ПОДТВЕРЖДЕНИЕ пользователя в качестве скомпрометированного | [ПОМЕСТИТЬ https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/confirmCompromised](https://developer.microsoft.com/graph/graph-explorer?request=/identityProtection/riskyUsers/confirmCompromised&version=v1.0)
+УВОЛЬНЕНИЕ рискованного пользователя | [ПОМЕСТИТЬ https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/dismiss](https://developer.microsoft.com/graph/graph-explorer?request=/identityProtection/riskyUsers/dismiss&version=v1.0)
 
 Дополнительные рекомендации и дополнительные сведения см. в инструкциях по выявлению и исправлению рисков с помощью [API Graph Microsoft.](/graph/tutorial-riskdetection-api)
 

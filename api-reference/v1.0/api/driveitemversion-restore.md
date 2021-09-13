@@ -1,16 +1,16 @@
 ---
 title: Восстановление предыдущей версии ресурса DriveItem
 description: Восстановление предыдущей версии ресурса DriveItem в качестве текущей версии. При этом будет создана новая версия с тем же содержимым, что и в предыдущей версии, но будут сохранены все существующие версии файла.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: apiPageType
-ms.openlocfilehash: c9d41a99b55052dd95abb737a5097043b0a05aeb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2b1f4a82b990ff8226dc8fd36f0e5d5180388b4c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057627"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037966"
 ---
 # <a name="restore-a-previous-version-of-a-driveitem"></a>Восстановление предыдущей версии ресурса DriveItem
 

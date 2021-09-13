@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса listItemVersion
 description: Ресурс **listItemVersion** представляет предыдущую версию ресурса ListItem.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: resourcePageType
-ms.openlocfilehash: 59f7672c0569c3965bf7b473ca1584f77fc4694bd0a06dfc46374d4f7c8826ed
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3b8881ed9e2fbf13176562f25397e5596a25257a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54163721"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062469"
 ---
 # <a name="listitemversion-resource-type"></a>Тип ресурса listItemVersion
 
@@ -56,13 +56,13 @@ ms.locfileid: "54163721"
 
 |      Имя свойства       |                         Тип                         |                               Описание                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
-| **id**                   | строка                                               | Идентификатор версии. Только для чтения.                                       |
+| **id**                   | string                                               | Идентификатор версии. Только для чтения.                                       |
 | **lastModifiedBy**;       | [IdentitySet](../resources/identityset.md)           | Удостоверение пользователя, который последним изменил версию. Только для чтения.        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Дата и время последнего изменения версии. Только для чтения.                 |
 | **published**            | [PublicationFacet](../resources/publicationfacet.md) | Указывает состояние публикации конкретной версии. Только для чтения. |
 
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 В таблице ниже определены связи между ресурсом **driveItemVersion** и другими ресурсами.
 

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса displayNameLocalization
 description: Предоставляет администратору возможность настроить строку, используемую в совместном Microsoft 365.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: a45c64d8cb80d94a702cfd4be57012949a7c86e3
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: c20e4a9478c25a785253f47e86cb0f84db649e0f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696736"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072549"
 ---
 # <a name="displaynamelocalization-resource-type"></a>тип ресурса displayNameLocalization
 
@@ -20,10 +20,10 @@ ms.locfileid: "58696736"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName   |String       | Если это поле присутствует, то значение этого поля содержит строку **displayName,** заданной для языка, присутствуют в **поле languageTag.**|
-|LanguageTag   |String       | Предоставляет языковой культурный код и удобное имя языка, на который было предоставлено поле **displayName.**                  |
+|displayName   |Строка       | Если это поле присутствует, то значение этого поля содержит строку **displayName,** заданной для языка, присутствуют в **поле languageTag.**|
+|LanguageTag   |Строка       | Предоставляет языковой культурный код и удобное имя языка, на который было предоставлено поле **displayName.**                  |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

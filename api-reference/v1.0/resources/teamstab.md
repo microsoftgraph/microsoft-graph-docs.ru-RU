@@ -1,16 +1,16 @@
 ---
 title: тип ресурса teamsTab
 description: 'TeamsTab — это вкладка, закрепленная (присоединенная) к каналу в команде. '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: AkJo
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e77c6c20705856700717a0312178c5d9fe330df349293920293ebc54019a7409
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 66dfa63b09463fac67b95bf4e635d90ffa4348a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231464"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59066977"
 ---
 # <a name="teamstab-resource-type"></a>тип ресурса teamsTab
 
@@ -35,7 +35,7 @@ TeamsTab — это [вкладка,](../resources/teamstab.md) закрепле
 
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
-|  id              |   строка                  |  Идентификатор, уникальный для определенного экземпляра вкладки канала. Только чтение.     |
+|  id              |   string                  |  Идентификатор, уникальный для определенного экземпляра вкладки канала. Только чтение.     |
 |  displayName            |   string                  |  Имя вкладки.     |
 |  webUrl          |   string                  |  URL-адрес глубокой ссылки экземпляра вкладки. Только для чтения.     |
 |  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  Контейнер для настраиваемой настройки, примененной к вкладке. Вкладка считается настроенной только после заданной настройки этого свойства.     |

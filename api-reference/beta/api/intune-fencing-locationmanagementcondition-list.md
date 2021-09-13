@@ -2,15 +2,15 @@
 title: Расположение спискаManagementConditions
 description: Список свойств и связей объектов locationManagementCondition.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e3d2dd9eb3ff330a223dd7db3f45b6bd3bf333f8
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8abc218a7f388ccf01e803846ebb0d535b5a6a3c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804689"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018196"
 ---
 # <a name="list-locationmanagementconditions"></a>Расположение спискаManagementConditions
 
@@ -44,7 +44,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

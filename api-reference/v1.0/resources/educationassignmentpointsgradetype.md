@@ -1,16 +1,16 @@
 ---
 title: тип ресурсов educationAssignmentPointsGradeType
 description: Тип ресурса, используемый с **свойством assignments.grading.** Это подкласс educationAssignmentGradeType.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 344ee57fcf08cad2c39020a60f5264b75f23404863c2709e3706eda2fd3e234f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5c2a59a9f34d2be02415021ece777021dacb34bb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231819"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036748"
 ---
 # <a name="educationassignmentpointsgradetype-resource-type"></a>тип ресурсов educationAssignmentPointsGradeType
 
@@ -23,7 +23,7 @@ ms.locfileid: "54231819"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|maxPoints|Одинарное| Max указывает возможное для этого назначения.  |
+|maxPoints|Один| Max указывает возможное для этого назначения.  |
 
 ## <a name="json-representation"></a>Представление JSON
 

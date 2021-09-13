@@ -2,15 +2,15 @@
 title: тип ресурса commsOperation
 description: Состояние некоторых длительных операций.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: dd924966c34d39ceb26e7b92077f01f085f9f6779896db439c1ae6c7a57eae9c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 37283084060d555957f6de7a476b87ba6b32a84c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130389"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036769"
 ---
 # <a name="commsoperation-resource-type"></a>тип ресурса commsOperation
 
@@ -28,7 +28,7 @@ ms.locfileid: "54130389"
 
 | Свойство           | Тип                        | Описание                                                                     |
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
-| clientContext      | String                      | Уникальная строка Client Context. Максимальное ограничение — 256 шаров.                           |
+| clientContext      | Строка                      | Уникальная строка Client Context. Максимальное ограничение — 256 шаров.                           |
 | id                 | String                      | ID операции. Только для чтения.                                                    |
 | resultInfo         | [resultInfo](resultinfo.md) | Сведения о результате. Только для чтения.                                              |
 | status             | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения. |

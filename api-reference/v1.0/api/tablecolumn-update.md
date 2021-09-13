@@ -2,15 +2,15 @@
 title: Обновление объекта TableColumn
 description: Обновление свойств объекта tablecolumn.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: dc69cc73bcc39dd2014ffa2d6074c8f601dd5d8d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 89ff9eb66424ee494fc9abeee8c63f06df3ff4e7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050278"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021955"
 ---
 # <a name="update-tablecolumn"></a>Обновление объекта TableColumn
 
@@ -37,7 +37,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -91,7 +91,7 @@ Content-length: 81
 > Если необходимо обновить несколько полей столбца, сделайте **значения** строки массива в запросе. Пример: `"values": [["a"], [1], [2], [3]]`.
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

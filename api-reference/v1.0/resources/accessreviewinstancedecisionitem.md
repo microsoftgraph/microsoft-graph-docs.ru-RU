@@ -2,15 +2,15 @@
 title: accessReviewInstanceDecisionItem type
 description: Представляет решение о accessReviewInstance.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 8bc952692ffed03237ed2444ac05b617ab0d40a9
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 7fa385df5d0b57a79d5c41e9c00908b63a6b242f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367088"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59025645"
 ---
 # <a name="accessreviewinstancedecisionitem-resource-type"></a>accessReviewInstanceDecisionItem type
 

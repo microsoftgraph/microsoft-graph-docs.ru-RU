@@ -1,28 +1,28 @@
 ---
 title: Удаление страницы
-description: Удаление страницы OneNote.
-localization_priority: Normal
+description: Удалите OneNote страницу.
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 696513aab1be4ed8089ed4280b6e55f3798382d1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 991301f9385f622e6260154c8e9aadce8b269a70
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087070"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045065"
 ---
 # <a name="delete-page"></a>Удаление страницы
 
 Пространство имен: microsoft.graph
 
-Удаление страницы OneNote.
+Удалите OneNote страницу.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Notes. ReadWrite, Notes. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Notes.ReadWrite, Notes.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Notes.ReadWrite    |
 |Для приложений | Notes.ReadWrite.All |
 

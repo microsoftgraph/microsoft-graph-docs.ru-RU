@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Синхронизация содержимого ресурса drive
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 description: С помощью этого метода приложение может отслеживать изменения drive и соответствующих дочерних элементов.
 doc_type: apiPageType
-ms.openlocfilehash: bcf638e5217768012a7e361ebed3cd760ac079c0
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 93a88baa4db9ea48ebed18a0b8ad2cfb184448af
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911314"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59038015"
 ---
 # <a name="track-changes-for-a-drive"></a>Отслеживание изменений для Drive
 
@@ -273,9 +273,8 @@ Content-type: application/json
     
     | Тип операции | Свойства, опущенные запросом изменений |
     |---------|----------|
-    | Создание или изменение | `ctag`, `lastModifiedBy` |
-    | Удаление | `ctag`, `lastModifiedBy`, `name` |
-
+    | Создание или изменение | `ctag` |
+    | Удаление | `ctag`, `name` |
 
     **OneDrive (для потребителей)**
     

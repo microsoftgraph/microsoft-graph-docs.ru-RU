@@ -1,22 +1,22 @@
 ---
 title: Вывод записной книжки
-description: Получение свойств и связей объекта записной книжки.
+description: Извлечение свойств и связей объекта записной книжки.
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 21082e138a55a64e8d633fed663aeb91e09ce7f0
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 3112a1d88651e3ddb02a8d191ee16eced0a9f6c7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458978"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016080"
 ---
 # <a name="get-notebook"></a>Вывод записной книжки
 
 Пространство имен: microsoft.graph
 
-Получение свойств и связей объекта [записной книжки](../resources/notebook.md) .
+Извлечение свойств и связей объекта [записной книжки.](../resources/notebook.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -35,7 +35,7 @@ GET /groups/{id}/onenote/notebooks/{id}
 GET /sites/{id}/onenote/notebooks/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `select` `expand` [параметры запросов OData](/graph/query-parameters) и для настройки отклика.
+Этот метод поддерживает параметры `select` `expand` [запроса oData и OData](/graph/query-parameters) для настройки ответа.
 
 Допустимые значения `expand` для записных книжек: `sections` и `sectionGroups`.
 
@@ -50,7 +50,7 @@ GET /sites/{id}/onenote/notebooks/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [Notebook](../resources/notebook.md) в теле отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` объект [записной](../resources/notebook.md) книжки в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

@@ -2,15 +2,15 @@
 title: Получить iosMobileAppConfiguration
 description: Чтение списка свойств и связей объекта iosMobileAppConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 445ac487726afaaeb33ba42cb1a217b22a6e65b35b88458bd665b6e623bb30ad
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2c7c6c003f17c3851f4cfdc376a0cc77dd099346
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54250758"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056545"
 ---
 # <a name="get-iosmobileappconfiguration"></a>Получить iosMobileAppConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "54250758"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

@@ -2,15 +2,15 @@
 title: Тип ресурса auditResource
 description: Класс, содержащий свойства ресурса аудита.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d381f8f9d25da07ce5ab52d05a90add1519e3e2fa695caf8a94b50b9bb1bc7bb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6ab3393193e6bf2c6011deb32a68a5482464ec9a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184818"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029040"
 ---
 # <a name="auditresource-resource-type"></a>Тип ресурса auditResource
 
@@ -23,9 +23,9 @@ ms.locfileid: "54184818"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя.|
+|displayName|Строка|Отображаемое имя.|
 |modifiedProperties|Коллекция [auditProperty](../resources/intune-auditing-auditproperty.md)|Список измененных свойств.|
-|type|String|Тип ресурса аудита.|
+|type|Строка|Тип ресурса аудита.|
 |resourceId|String|ИД ресурса аудита.|
 
 ## <a name="relationships"></a>Связи

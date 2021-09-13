@@ -2,15 +2,15 @@
 author: swapnil1993
 title: тип ресурса contentApprovalStatusColumn
 description: Указывает, что столбец содержит сведения о состоянии утверждения элемента.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: db10748596a980e1f26964ced2488bf6d2f06f39
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: a84b7e30a4413b551fe93fa77f716887ded46874
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697144"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049543"
 ---
 # <a name="contentapprovalstatuscolumn-resource-type"></a>тип ресурса contentApprovalStatusColumn
 
@@ -19,7 +19,7 @@ ms.locfileid: "58697144"
 Представляет столбец утверждения состояния контента в SharePoint.
 ## <a name="properties"></a>Свойства
 
-Нет
+Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON
 

@@ -2,15 +2,15 @@
 title: тип ресурсов complianceManagementPartner
 description: Партнер по управлению соответствием требованиям для всех платформ
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 40383df26775e880f45b5f79013c945fe091c87a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fc3e4ebd5009a410942cbfe6324bed259bf964a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801460"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017242"
 ---
 # <a name="compliancemanagementpartner-resource-type"></a>тип ресурсов complianceManagementPartner
 
@@ -34,14 +34,14 @@ ms.locfileid: "58801460"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Id объекта|
+|id|String|Id объекта|
 |lastHeartbeatDateTime|DateTimeOffset|Timestamp последнего сердцебиения после администратора, направленного партнеру по управлению соответствием|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера этого клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |displayName|Строка|Отображаемое имя партнера|
-|macOsOnboarded|Логический|Партнер, на борту для устройств Mac.|
-|WindowsOnboarded|Логический|Партнер, на борту Windows устройств.|
+|macOsOnboarded|Boolean|Партнер, на борту для устройств Mac.|
+|WindowsOnboarded|Boolean|Партнер, на борту Windows устройств.|
 |AndroidOnboarded|Логический|Партнер, на борту для android-устройств.|
-|iosOnboarded|Логический|Партнер, на борту для устройств ios.|
+|iosOnboarded|Boolean|Партнер, на борту для устройств ios.|
 |macOsEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства Mac через партнера.|
 |windowsEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые Windows устройства через партнера.|
 |AndroidEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства Android через партнера.|

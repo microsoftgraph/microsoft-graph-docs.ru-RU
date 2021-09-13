@@ -1,14 +1,14 @@
 ---
 title: Навигация по SDK Graph PowerShell
 description: SDK Graph PowerShell содержит большое количество команд. Узнайте, как найти нужные команды для того, чего вы хотите достичь.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jasonjoh
-ms.openlocfilehash: 40e441d620e72283f5c376422ebdc121cc461cb31d6bee8506a833ed4331b291
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2c231ca186e9274a09500247827141cbf03e0e7c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230279"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139039"
 ---
 # <a name="navigating-the-microsoft-graph-powershell-sdk"></a>Навигация по SDK Graph PowerShell
 
@@ -28,7 +28,7 @@ API Graph Microsoft является огромным и постоянно ра
 |-------------|--------------|---|
 | GET         | Получение          | `Get-MgUser` [Справочные материалы по API](/graph/api/user-get?view=graph-rest-1.0&preserve-view=true) |
 | POST        | Новое          | `New-MgUserMessage` [Справочные материалы по API](/graph/api/user-post-messages?view=graph-rest-1.0&preserve-view=true) |
-| PUT         | Новое          | `New-MgTeam` [Справочные материалы по API](/graph/api/team-put-teams?view=graph-rest-1.0&preserve-view=true) |
+| PUT         | Новая          | `New-MgTeam` [Справочные материалы по API](/graph/api/team-put-teams?view=graph-rest-1.0&preserve-view=true) |
 | PATCH       | Update       | `Update-MgUserEvent` [Справочные материалы по API](/graph/api/event-update?view=graph-rest-1.0&preserve-view=true) |
 | DELETE      | Удалить       | `Remove-MgDriveItem` [Справочные материалы по API](/graph/api/driveitem-delete?view=graph-rest-1.0&preserve-view=true) |
 

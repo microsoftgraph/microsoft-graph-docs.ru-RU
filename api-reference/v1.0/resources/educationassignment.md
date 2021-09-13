@@ -1,16 +1,16 @@
 ---
 title: тип ресурса educationAssignment
 description: Ресурс **educationAssignment** представляет задачу или единицу работы, назначенную учащемуся или члену группы в классе в рамках их обучения.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 0d0862be39ca7dbaffe60b57294d407808e6c8329f9c8bd837f55b7a2bd52918
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 932a11e32514b8ee8a3ab6a7c3f2280f61b530a5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230797"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59021724"
 ---
 # <a name="educationassignment-resource-type"></a>тип ресурса educationAssignment
 
@@ -31,9 +31,9 @@ API назначения выставляются в пространстве и
 |[Создание ресурса задания](../api/educationassignment-post-resource.md) |[educationAssignmentResource](educationassignmentresource.md)| Создайте **новое образованиеAssignmentResource,** разместив в коллекции ресурсов.|
 |[Получение задания](../api/educationassignment-get.md) | [educationAssignment](educationassignment.md) |Чтение свойств и связей объекта **educationAssignment.**|
 |[Обновление](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md) |Обновление **объекта educationAssignment.** |
-|[Удаление](../api/educationassignment-delete.md) | Нет |Удаление **объекта educationAssignment.** |
-|[Публикация](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|Изменение состояния объекта **educationAssignment** с черновика на опубликованный.|
-|[Настройка папки ресурсов назначения](../api/educationassignment-setupresourcesfolder.md)| Строка| Создание папки SharePoint (в заранее определенном расположении) для отправки файлов в качестве ресурсов назначения|
+|[удаление](../api/educationassignment-delete.md); | Нет |Удаление **объекта educationAssignment.** |
+|[публикация](../api/educationassignment-publish.md);|[educationAssignment](educationassignment.md)|Изменение состояния объекта **educationAssignment** с черновика на опубликованный.|
+|[Настройка папки ресурсов назначения](../api/educationassignment-setupresourcesfolder.md)| string| Создание папки SharePoint (в заранее определенном расположении) для отправки файлов в качестве ресурсов назначения|
 |[Список ресурсов](../api/educationassignment-list-resources.md) |[коллекция educationAssignmentResource](educationassignmentresource.md)| Получите **коллекцию объектов educationAssignmentResource.**|
 |[Отправки списков](../api/educationassignment-list-submissions.md) |[коллекция educationSubmission](educationsubmission.md)| Получите **коллекцию объектов educationSubmission.**|
 |[Перечисление категорий](../api/educationassignment-list-categories.md) |[коллекция educationCategory](educationcategory.md)| Получите **коллекцию объектов educationCategory.**|
@@ -46,26 +46,26 @@ API назначения выставляются в пространстве и
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|String| Только для чтения.|
-|addedStudentAction|String|Необязательное поле для управления поведением назначения для студентов, добавленных после публикации назначения. Если не указано, значение по `none` умолчанию. В настоящее время поддерживает только два значения: `none` или `assignIfOpen` .|
-|allowLateSubmissions|Логическое| Определяет, могут ли студенты отправлять их после даты. Если это свойство не указано во время создания, оно по умолчанию указывает значение true. |
-|allowStudentsToAddResourcesToSubmission|Логическое| Определяет, могут ли учащиеся добавлять собственные ресурсы в отправку или изменять только ресурсы, добавленные преподавателем. |
+|addedStudentAction|Строка|Необязательное поле для управления поведением назначения для студентов, добавленных после публикации назначения. Если не указано, значение по `none` умолчанию. В настоящее время поддерживает только два значения: `none` или `assignIfOpen` .|
+|allowLateSubmissions|Логический| Определяет, могут ли студенты отправлять их после даты. Если это свойство не указано во время создания, оно по умолчанию указывает значение true. |
+|allowStudentsToAddResourcesToSubmission|Boolean| Определяет, могут ли учащиеся добавлять собственные ресурсы в отправку или изменять только ресурсы, добавленные преподавателем. |
 |assignDateTime|DateTimeOffset|Дата, когда назначение должно стать активным.  Если в будущем назначение не отображается учащемуся до этой даты.  Тип **Timestamp** представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |assignTo|[educationAssignmentRecipient](educationassignmentrecipient.md)| Какие пользователи или весь класс должны получать объект отправки после публикации назначения. |
 |assignedDateTime|DateTimeOffset|Момент публикации задания для учащихся и его назначение указывается на временной шкале учащихся.  Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|classId|String| Класс, которому принадлежит это назначение. |
+|classId|Строка| Класс, которому принадлежит это назначение. |
 |closeDateTime|DateTimeOffset| Дата закрытия назначения для отправки. Это необязательное поле, которое может быть недействительным, если назначение не позволяет использоватьLateSubmissions или когда closeDateTime является таким же, как dueDateTime. Но если указано, то closeDateTime должен быть больше или равен dueDateTime. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |createdBy|[identitySet](identityset.md)| Кто создал назначение. |
 |createdDateTime|DateTimeOffset|Момент создания назначения.  Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|displayName|String|Имя назначения.|
+|displayName|Строка|Имя назначения.|
 |dueDateTime|DateTimeOffset|Дата назначения учащихся.  Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |классификация|[educationAssignmentGradeType](educationassignmentgradetype.md)|Оценка назначения. |
 |инструкции|[itemBody](itembody.md)| Инструкции по назначению.  Это вместе с именем отображения сообщает студенту, что делать. |
 |lastModifiedBy|[identitySet](identityset.md)| Кто последнее изменение назначения. |
 |lastModifiedDateTime|DateTimeOffset|Момент, когда назначение было изменено в последний раз.  Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|notificationChannelUrl|String|Необязательное поле для указания URL-адреса [канала для](channel.md) публикации уведомления о публикации назначения. Если не указано или не указано значение null, по умолчанию передается `General` каналу. Это поле применяется только к назначениям, где **значение assignTo** — [educationAssignmentClassRecipient](educationassignmentclassrecipient.md). Обновление **уведомленияChannelUrl** не допускается после публикации назначения.|
+|notificationChannelUrl|Строка|Необязательное поле для указания URL-адреса [канала для](channel.md) публикации уведомления о публикации назначения. Если не указано или не указано значение null, по умолчанию передается `General` каналу. Это поле применяется только к назначениям, где **значение assignTo** — [educationAssignmentClassRecipient](educationassignmentclassrecipient.md). Обновление **уведомленияChannelUrl** не допускается после публикации назначения.|
 |status|string| Состояние **назначения**.  Это значение не может быть исправлено.  Возможные значения: `draft`, `scheduled`, `published`, `assigned`.|
 |webUrl|string| URL-адрес глубокой ссылки для данного назначения.|
-|resourcesFolderUrl|Строка| URL-адрес папки, в котором хранятся все ресурсы файла для этого назначения.|
+|resourcesFolderUrl|string| URL-адрес папки, в котором хранятся все ресурсы файла для этого назначения.|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|

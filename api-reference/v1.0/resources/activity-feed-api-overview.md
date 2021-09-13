@@ -1,16 +1,16 @@
 ---
 title: Использование API REST API ленты действий
 description: 'API ленты действий можно использовать в Microsoft Graph для возобновления действий пользователя на устройствах и платформах. Запросы API каналов активности выполняются от имени пользователя с помощью делегирования разрешений и разрешений на действия пользователей, которые можно использовать в личных или работах и учетных записях школы. '
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: project-rome
 author: ailae
 doc_type: conceptualPageType
-ms.openlocfilehash: 82724552fffb7b9d9832fa5d131dde145eeed22e76cbb4afde2d25e08399ea7c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 37b4a7113d0f52155d6fa8a96167600cf9a33a86
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178628"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056118"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>Использование API REST API ленты действий
 

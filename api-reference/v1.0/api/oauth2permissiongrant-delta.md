@@ -1,16 +1,16 @@
 ---
 title: 'oauth2permissiongrant: дельта'
 description: Получить заново созданные, обновленные или удаленные oauth2permissiongrants без выполнения полного чтения всей коллекции ресурсов.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: psignoret
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d8abc221be2e66bd82ece75eae6ee9615113a159
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 23b4e38d5ea91d2b66507ed5e2f98e3f2a218290
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513939"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59015975"
 ---
 # <a name="oauth2permissiongrant-delta"></a>oauth2permissiongrant: дельта
 

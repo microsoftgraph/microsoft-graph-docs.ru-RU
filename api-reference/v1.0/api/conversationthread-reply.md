@@ -1,16 +1,16 @@
 ---
 title: 'conversationThread: reply'
-description: 'Ответ на цепочку в беседе группы и добавление в нее новой записи. Вы можете указать родительскую беседу. '
+description: 'Ответ на цепочку в беседе группы и добавление в нее новой записи. Можно указать родительский разговор '
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 20dbb5c9734777ba127419c4fbcb1602131467ff
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7b24a61222f0a26b330f5528c52d7ff156f46d5c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009984"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050623"
 ---
 # <a name="conversationthread-reply"></a>conversationThread: reply
 

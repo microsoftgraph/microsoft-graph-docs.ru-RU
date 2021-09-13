@@ -2,15 +2,15 @@
 title: Список externalConnections
 description: Получите список объектов externalConnection и их свойств.
 author: mecampos
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 57d1f56496b380f38bfd4bc8bc7d46381578e758
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 4091ed003361341dd001914a571d308efe91d0a8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579993"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022602"
 ---
 # <a name="list-externalconnections"></a>Список externalConnections
 Пространство имен: microsoft.graph.externalConnectors
@@ -26,7 +26,7 @@ ms.locfileid: "53579993"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Неприменимо|
 |Делегированные (личная учетная запись Майкрософт)|Неприменимо|
-|Приложение| ExternalConnection.ReadWrite.OwnedBy|
+|Для приложений| ExternalConnection.ReadWrite.OwnedBy|
 
 ## <a name="http-request"></a>HTTP-запрос
 

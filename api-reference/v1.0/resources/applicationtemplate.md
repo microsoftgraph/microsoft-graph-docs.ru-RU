@@ -1,16 +1,16 @@
 ---
 title: тип ресурса applicationTemplate
 description: Представляет приложение в галерее приложений Azure AD
-localization_priority: Normal
+ms.localizationpriority: medium
 author: luleonpla
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: f9ec36c667bdf4e253b0b8bcc555e77bf7659e554a115f1f7ec39b7b22f3f8f6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9080a41c1ec4e503e064e406ee4e884654618100
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155199"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078982"
 ---
 # <a name="applicationtemplate-resource-type"></a>тип ресурса applicationTemplate
 
@@ -31,16 +31,16 @@ ms.locfileid: "54155199"
 | Свойство                   | Тип              | Описание                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | :------------------------- | :---------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | categories                 | Коллекция String | Список категорий для приложения. Поддерживаемые значения могут быть: `Collaboration` `Business Management` , `Consumer` `Content management` `CRM` `Data services` `Developer services` `E-commerce` `Education` `ERP` `Finance` , и `Health` `Human resources` `IT infrastructure` `Mail` `Management` `Marketing` `Media` `Productivity` `Project management` `Telecommunications` `Tools` `Travel` `Web design & hosting` . |
-| description                | String            | Описание приложения.                                                                                                                                                                                                                                                                                                                                                                                                               |
+| description                | Строка            | Описание приложения.                                                                                                                                                                                                                                                                                                                                                                                                               |
 | displayName                | String            | Имя приложения.                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| homePageUrl                | String            | URL-адрес домашней страницы приложения.                                                                                                                                                                                                                                                                                                                                                                                                           |
-| id                         | String            | Уникальный идентификатор для приложения. Только для чтения.                                                                                                                                                                                                                                                                                                                                                                                               |
-| logoUrl                    | String            | URL-адрес для получения логотипа для этого приложения.                                                                                                                                                                                                                                                                                                                                                                                                   |
+| homePageUrl                | Строка            | URL-адрес домашней страницы приложения.                                                                                                                                                                                                                                                                                                                                                                                                           |
+| id                         | Строка            | Уникальный идентификатор для приложения. Только для чтения.                                                                                                                                                                                                                                                                                                                                                                                               |
+| logoUrl                    | Строка            | URL-адрес для получения логотипа для этого приложения.                                                                                                                                                                                                                                                                                                                                                                                                   |
 | publisher                  | String            | Имя издателя для этого приложения.                                                                                                                                                                                                                                                                                                                                                                                                 |
-| supportedProvisioningTypes | Коллекция строк | Список режимов подготовка, поддерживаемых этим приложением. Единственным допустимым значением `sync` является .                                                                                                                                                                                                                                                                                                                                                   |
+| supportedProvisioningTypes | Коллекция String | Список режимов подготовка, поддерживаемых этим приложением. Единственным допустимым значением `sync` является .                                                                                                                                                                                                                                                                                                                                                   |
 | supportedSingleSignOnModes | Коллекция String | Список режимов единой регистрации, поддерживаемых этим приложением. Поддерживаемые значения: `oidc`, `password`, `saml` и `notSupported`.                                                                                                                                                                                                                                                                                                            |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

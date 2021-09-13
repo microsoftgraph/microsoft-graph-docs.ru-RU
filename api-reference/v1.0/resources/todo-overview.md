@@ -2,15 +2,15 @@
 title: Использование API Microsoft To Do
 description: API Microsoft Graph можно использовать для создания приложения, подключающегося к задачам в Microsoft To Do.
 author: avijityadav
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: e5e28602f2a8c3b057984af75d06e5f8cbde20de822f39dca146ccc1e6dc981e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e24dfe413f46c4d8e4cc65dd6327ff17ef8d7927
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189179"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071863"
 ---
 # <a name="use-the-microsoft-to-do-api"></a>Использование API Microsoft To Do
 

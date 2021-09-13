@@ -1,16 +1,16 @@
 ---
 title: тип ресурса scheduleItem
 description: Элемент, описывая доступность пользователя, соответствующего фактическому событию в календаре по умолчанию пользователя. Этот элемент также применяется к ресурсу (комната или оборудование).
-localization_priority: Normal
+ms.localizationpriority: medium
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c097bb722e69c25e4709f1ef5465eb5d603e1f6a96591a94f799009a9c97c51c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 86dc2c44f93635bd38363984d7dda8debe21147f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216639"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035971"
 ---
 # <a name="scheduleitem-resource-type"></a>тип ресурса scheduleItem
 
@@ -22,8 +22,8 @@ ms.locfileid: "54216639"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |end |[dateTimeTimeZone](datetimetimezone.md) |Дата, время и часовой пояс, который заканчивается соответствующим событием. |
-|isPrivate |Логическое |Чувствительность соответствующего события. True, если событие помечено `private` , ложное в противном случае. Необязательно.|
-|расположение |String | Расположение, в котором проводится или посещается соответствующее событие. Необязательно.|
+|isPrivate |Логический |Чувствительность соответствующего события. True, если событие помечено `private` , ложное в противном случае. Необязательно.|
+|location |Строка | Расположение, в котором проводится или посещается соответствующее событие. Необязательно.|
 |начать |[dateTimeTimeZone](datetimetimezone.md) |Дата, время и часовой пояс, в который начинается соответствующее событие. |
 |status |freeBusyStatus | Состояние доступности пользователя или ресурса во время соответствующего события. Допустимые значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`. |
 |subject |String | Строка субъекта соответствующего события. Необязательно.|

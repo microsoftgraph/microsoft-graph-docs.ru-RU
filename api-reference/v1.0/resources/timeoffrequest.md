@@ -1,16 +1,16 @@
 ---
 title: тип ресурса timeOffRequest
 description: Представляет тип запроса на перенос, чтобы занять время.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 90124b48f69dbaa053c6facd7a2bb84e5d427be0c20bdbc9017bfa8e3a800ebc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b7bde8033680b6da30def7182e93e5672504475d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124019"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019099"
 ---
 # <a name="timeoffrequest-resource-type"></a>тип ресурса timeOffRequest
 
@@ -22,9 +22,9 @@ ms.locfileid: "54124019"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Получение](../api/timeoffrequest-get.md) | [timeOffRequest](timeoffrequest.md) | Ознакомьтесь с свойствами и отношениями объекта **timeOffRequest.** |
-| [Список](../api/timeoffrequest-list.md) | [коллекция timeOffRequest](timeoffrequest.md) | Получите список объектов **timeOffRequest** в этом расписании.|
-| [Удаление](../api/timeoffrequest-delete.md) | Нет | Удаление **объекта timeOffRequest.** |
+| [получение](../api/timeoffrequest-get.md); | [timeOffRequest](timeoffrequest.md) | Ознакомьтесь с свойствами и отношениями объекта **timeOffRequest.** |
+| [Перечисление](../api/timeoffrequest-list.md) | [коллекция timeOffRequest](timeoffrequest.md) | Получите список объектов **timeOffRequest** в этом расписании.|
+| [удаление](../api/timeoffrequest-delete.md); | Нет | Удаление **объекта timeOffRequest.** |
 | [Утвердить](../api/timeoffrequest-approve.md)|Нет|Утверждение запроса на время.|
 | [Отклонение](../api/timeoffrequest-decline.md)|Нет|Отклонение запроса на время.|
 
@@ -32,8 +32,8 @@ ms.locfileid: "54124019"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|endDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|startDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|endDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
+|startDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
 |timeOffReasonId|String|Причина простоя.|
 
 ## <a name="relationships"></a>Связи

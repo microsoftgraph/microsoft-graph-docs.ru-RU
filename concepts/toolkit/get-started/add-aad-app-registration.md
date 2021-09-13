@@ -1,14 +1,14 @@
 ---
 title: Создание приложения Azure Active Directory
 description: Создание регистрации приложения Azure Active Directory для связи с Microsoft 365
-localization_priority: Normal
+ms.localizationpriority: medium
 author: waldekmastykarz
-ms.openlocfilehash: 4038b1dbdd124923f949cc48c4ebda75106365d74bd97dfee87466a58c34ea28
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 21a298874beb7cc3c67bc807b4c51fce42a39564
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54159668"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078527"
 ---
 # <a name="create-an-azure-active-directory-app-to-use-with-the-microsoft-graph-toolkit"></a>Создание приложения Azure Active Directory для использования с Microsoft Graph Toolkit
 
@@ -26,10 +26,12 @@ Microsoft Graph — это API, используемый для подключе
 1. В верхнем меню нажмите кнопку **Новая регистрация**.
 1. Введите имя приложения; например, `My M365 app` .
 1. Для параметра [Поддерживаемые типы учетных записей](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app) выберите **Учетные записи в любом каталоге организации (любой каталог Azure AD — мультитенантный) и персональные учетные записи Майкрософт (например, Skype, Xbox)**.
-1. В поле **Перенаправление URI** в отсеве выберите приложение для одной страницы **(SPA)** и в поле URL-адрес введите `http://localhost:3000` . Примечание. Если вы используете поставщика MSAL, а не поставщика MSAL 2.0, вам потребуется выбрать **Веб** вместо **SPA.**
+1. Для поля **URI перенаправления:**
+    - При использовании или выборе приложения для одной страницы (SPA) и в поле `Msal2Provider` `TeamsMsal2Provider` URL-адрес введите URL-адрес перенаправления (и/или при  `http://localhost` локальном тестировании). 
+    - Если вы используете или выберите Веб и в поле URL-адрес, введите URL-адрес перенаправления `MsalProvider` `TeamsProvider` (и/или при  `http://localhost` локальном тестировании). 
 1. Подтвердите изменения, нажав кнопку **Зарегистрировать**.
 
-## <a name="enable-oauth-implicit-flow-only-for-msal-10-provider"></a>Включить неявный поток OAuth (только для поставщика MSAL 1.0)
+## <a name="enable-oauth-implicit-flow-only-for-msalprovider-and-teamsprovider"></a>Включить неявный поток OAuth (только для MsalProvider и TeamsProvider)
 
 В большинстве случаев вы будете использовать Microsoft Graph Toolkit в клиентских приложениях, содержащих только клиентский код. Так как клиентские приложения не могут безопасно сохранять секреты, вам потребуется использовать [неявный поток OAuth](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow?WT.mc_id=m365-10340-wmastyka), в котором предполагается удостоверение приложения на основе его идентификатора и URL-адреса.
 

@@ -2,15 +2,15 @@
 title: Обновление identityApiConnector
 description: Обновление свойств объекта identityApiConnector.
 author: nickgmicrosoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 09733c849f99c2928ba7c2cc3b1702f411952cd7
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 5b41679d67ddbc44d908523f9d8c40cef8007dce
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921619"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073906"
 ---
 # <a name="update-identityapiconnector"></a>Обновление identityApiConnector
 
@@ -31,7 +31,7 @@ ms.locfileid: "51921619"
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока внешних пользователей удостоверений
+* Администратор внешних Flow удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -130,7 +130,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-changing-api-connector-to-use-client-certificate-authentication"></a>Пример 2. Изменение соединителя API для использования проверки подлинности сертификата клиента
 
-Это переоценит все предыдущие параметры проверки подлинностиConfiguration. Чтобы изменению с базовой проверки подлинности на проверку подлинности сертификатов, используйте эту функцию. Чтобы добавить дополнительные сертификаты в список сертификатов, используйте метод [Upload client certificate.](../api/identityapiconnector-uploadclientcertificate.md) При использовании этого метода последующие операции соединителя API "Get" или "List" будут иметь тип `authenticationConfiguration` [microsoft.graph.clientCertificateAuthentication.](../resources/clientcertificateauthentication.md)
+Это переоценит все предыдущие параметры проверки подлинностиConfiguration. Чтобы изменению с базовой проверки подлинности на проверку подлинности сертификатов, используйте эту функцию. Чтобы добавить дополнительные сертификаты в список сертификатов, используйте метод [Upload клиентского](../api/identityapiconnector-uploadclientcertificate.md) сертификата. При использовании этого метода последующие операции соединителя API "Get" или "List" будут иметь тип `authenticationConfiguration` [microsoft.graph.clientCertificateAuthentication.](../resources/clientcertificateauthentication.md)
 
 #### <a name="request"></a>Запрос
 

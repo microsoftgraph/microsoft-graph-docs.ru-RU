@@ -2,15 +2,15 @@
 title: Get todoTask
 description: Ознакомьтесь с свойствами и отношениями объекта todoTask.
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bef6d2bb290435b354fcb52a4ddb4a303da802a0
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 847b129e15671ae5b55b63a112e8c6ea3717fdda
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50963487"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049804"
 ---
 # <a name="get-todotask"></a>Get todoTask
 Пространство имен: microsoft.graph

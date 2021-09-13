@@ -2,14 +2,14 @@
 title: Использование параметра запроса $search в Microsoft Graph
 description: Microsoft Graph поддерживает параметр запроса OData $search для ограничения результатов запроса с помощью условия поиска.
 author: mumbi-o
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 4655d94e868ae5125d9bf12da989906aeb47bae8b62005d51ae3efed741ba790
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f6cb8f9d8fe1a1c8b14872f5979dabed2eff4717
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54177746"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59093976"
 ---
 # <a name="use-the-search-query-parameter-to-match-a-search-criterion"></a>Использование параметра поискового запроса для сопоставления с условием поиска
 

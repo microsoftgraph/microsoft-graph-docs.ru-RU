@@ -2,15 +2,15 @@
 title: Тип ресурса deviceComplianceScheduledActionForRule
 description: Запланированное действие для правила
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4ce1c6fa2ce8e77ffbca97c255474cd887e167b40409c6e00ca21bd11edf47ba
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d9db57c5607fc6486ed4acc4eac455e9cc241dc3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178383"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072304"
 ---
 # <a name="devicecompliancescheduledactionforrule-resource-type"></a>Тип ресурса deviceComplianceScheduledActionForRule
 
@@ -32,7 +32,7 @@ ms.locfileid: "54178383"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |ruleName|String|Имя правила, к которому применяется это запланированное действие.|
 
 ## <a name="relationships"></a>Связи

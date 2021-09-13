@@ -1,13 +1,13 @@
 ---
 title: Сообщения об ошибках и типы ресурсов Microsoft Graph
 description: В этой статье описаны некоторые ошибки, которые могут возвращаться в ответах Microsoft Graph.
-localization_priority: Priority
-ms.openlocfilehash: 1f29f178161f322ac9e5d1096d54e12d9bebb833b1934499e192782d974ad089
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.localizationpriority: high
+ms.openlocfilehash: c5b1dcc6a6540580483b4bf668c5c7ae9f28676c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54177767"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136119"
 ---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Сообщения об ошибках и типы ресурсов Microsoft Graph
 

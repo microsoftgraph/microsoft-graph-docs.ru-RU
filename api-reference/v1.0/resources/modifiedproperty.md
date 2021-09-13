@@ -1,16 +1,16 @@
 ---
 title: тип ресурса modifiedProperty
 description: Указывает все свойства измененного ресурса Azure AD, включая старые и новые значения.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dhanyahk
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 9b1c520ac4be4e0c0957fe2b9f4f833f4065a19a2ed76ecd3166a46f7e50de6c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4c74e492b50435b7911952ffe32107008db11330
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192210"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067075"
 ---
 # <a name="modifiedproperty-resource-type"></a>тип ресурса modifiedProperty
 
@@ -22,11 +22,11 @@ ms.locfileid: "54192210"
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|String|Указывает имя свойства измененного целевого атрибута.|
+|displayName|Строка|Указывает имя свойства измененного целевого атрибута.|
 |newValue|String|Указывает обновленное значение для правильности.|
 |oldValue|String|Указывает предыдущее значение (перед обновлением) для свойства.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

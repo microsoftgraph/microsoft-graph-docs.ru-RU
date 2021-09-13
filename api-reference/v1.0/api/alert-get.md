@@ -1,22 +1,22 @@
 ---
 title: Получение оповещения
-description: " Получение свойств и связей объекта Alert."
+description: " Извлечение свойств и связей объекта оповещения."
 author: preetikr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 19d371bb2b61ae33c310251420e88df67b53a4df
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2ee372c3f4bbbe68ec874520261a15440f2e391a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992855"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017025"
 ---
 # <a name="get-alert"></a>Получение оповещения
 
 Пространство имен: microsoft.graph
 
- Получение свойств и связей объекта [Alert](../resources/alert.md) .
+ Извлечение свойств и связей объекта [оповещения.](../resources/alert.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -42,13 +42,13 @@ GET /security/alerts/{alert_id}
 |:----------|:----------|
 | Авторизация  | Bearer {код}. Обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **Alert** в тексте отклика. Если от поставщика возвращается код состояния, отличный от 2xx или 404, или истекло время ожидания поставщика, откликом будет код состояния `206 Partial Content` с ответом поставщика в заголовке предупреждения. Дополнительные сведения см. в статье [Ответы с ошибками Microsoft Graph Security API](../resources/security-error-codes.md).
+В случае успешной работы этот метод возвращает код отклика и `200 OK` объект оповещения в тексте ответа.  Если от поставщика возвращается код состояния, отличный от 2xx или 404, или истекло время ожидания поставщика, откликом будет код состояния `206 Partial Content` с ответом поставщика в заголовке предупреждения. Дополнительные сведения см. в статье [Ответы с ошибками Microsoft Graph Security API](../resources/security-error-codes.md).
 
 ## <a name="example"></a>Пример
 

@@ -2,21 +2,21 @@
 title: Создание записной книжки
 description: Создание записной книжки OneNote.
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: f6adea8f324d856e8b22c778f25f3c304d450532
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 0ff912cdefa30d7c38e9e82419ba6989ae3e9e98
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51509084"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022095"
 ---
 # <a name="create-notebook"></a>Создание записной книжки
 
 Пространство имен: microsoft.graph
 
-Создание новой записной [](../resources/notebook.md)книжки OneNote.
+Создание нового OneNote [записной книжки](../resources/notebook.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 

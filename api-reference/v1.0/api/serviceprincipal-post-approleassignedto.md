@@ -1,16 +1,16 @@
 ---
 title: Предоставление appRoleAssignment субъекту-службе
 description: Предоставляйте назначение роли приложения субъекту-службе.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: bda33fd1ae7fed99bf440f604208a7eef3afabf7
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: a9dfbf660d19ff1d903374e748089b9b3386d74a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667796"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019554"
 ---
 # <a name="grant-an-approleassignment-for-a-service-principal"></a>Предоставление appRoleAssignment субъекту-службе
 
@@ -32,7 +32,7 @@ ms.locfileid: "58667796"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | AppRoleAssignment.ReadWrite.All и Application.Read.All, AppRoleAssignment.ReadWrite.All и Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.AllAll    |
+|Делегированные (рабочая или учебная учетная запись) | AppRoleAssignment.ReadWrite.All и Application.Read.All, AppRoleAssignment.ReadWrite.All и Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | AppRoleAssignment.ReadWrite.All и Application.Read.All, AppRoleAssignment.ReadWrite.All и Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All |
 

@@ -2,15 +2,15 @@
 title: Тип ресурса ChartDataLabels
 description: Представляет коллекцию всех меток данных в точке диаграммы.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 2ad59daf46d6b6f13c7e95ac206b6525b771b3a39f8aa4612af357ee2e634de8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4a705e27893b0bb2f873fa09e3a07e705aab0823
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54252090"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049713"
 ---
 # <a name="chartdatalabels-resource-type"></a>Тип ресурса ChartDataLabels
 
@@ -38,12 +38,12 @@ ms.locfileid: "54252090"
 |showSeriesName|boolean|Логическое значение, которое указывает, отображается ли имя ряда для меток данных.|
 |showValue|boolean|Логическое значение, которое указывает, отображается ли значение метки данных.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |format|[КнигаChartDataLabelFormat](chartdatalabelformat.md)|Представляет формат меток данных диаграммы, включая форматирование заливки и шрифтов. Только для чтения.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

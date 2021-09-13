@@ -1,16 +1,16 @@
 ---
 title: тип ресурса plannerExternalReference
 description: Ресурс **plannerExternalReference представляет** метаданные ссылки (вложения, такие как файл, URL-адрес). Это значение пар значения свойства в объекте externalReferences.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: cb856a9d147874428ab7e4d3e4169eba8bf1c028a80df4d0b6a459dc8bd1f430
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 225a4fb53875629eab093586193bf569d31693c4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54251873"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019274"
 ---
 # <a name="plannerexternalreference-resource-type"></a>тип ресурса plannerExternalReference
 
@@ -26,8 +26,8 @@ ms.locfileid: "54251873"
 |alias|String|Псевдоним имени для описания ссылки.|
 |lastModifiedBy|[identitySet](identityset.md)|Только для чтения. Пользовательский ID, с помощью которого он был изменен в последний раз.|
 |lastModifiedDateTime|DateTimeOffset|Только для чтения. Дата и время последнего изменения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|previewPriority|String|Используется для задания порядка относительного приоритета, в котором ссылка будет показана в качестве предварительного просмотра задачи.|
-|type|String|Используется для описания типа ссылки. Типы включают: `PowerPoint` `Word` , , , `Excel` `Other` .|
+|previewPriority|Строка|Используется для задания порядка относительного приоритета, в котором ссылка будет показана в качестве предварительного просмотра задачи.|
+|type|Строка|Используется для описания типа ссылки. Типы включают: `PowerPoint` `Word` , , , `Excel` `Other` .|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

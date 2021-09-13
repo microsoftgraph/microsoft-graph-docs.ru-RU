@@ -1,16 +1,16 @@
 ---
 title: Удаление permissionGrantConditionSet из исключения коллекции разрешенийGrantPolicy
 description: Удаляет исключенный набор условий из политики предоставления разрешений.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 7cdcf9cb5a4888d9700202fd719afb8a8f8eb073
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 48cd558f6a02067834b258838b7641a55b9bec8e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50448119"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072794"
 ---
 # <a name="delete-permissiongrantconditionset-from-excludes-collection-of-permissiongrantpolicy"></a>Удаление permissionGrantConditionSet из исключения коллекции разрешенийGrantPolicy
 

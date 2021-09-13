@@ -2,15 +2,15 @@
 title: Тип ресурса approvalStage
 description: Объект approvalStage, связанный с userConsentRequest.
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 49629542b36d7724b17406c14d925844873c8c964334c71b5eec81451376783c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 69e90233a5b9ae0221e7016ebdd255058ea95cad
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147114"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067607"
 ---
 # <a name="approvalstage-resource-type"></a>Тип ресурса approvalStage
 
@@ -22,11 +22,11 @@ ms.locfileid: "54147114"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|assignedToMe|Логическое|Указывает, назначен ли этап пользователю вызова для проверки. Только для чтения.|
-|displayName|String|Метка, предоставленная создателем политики для определения стадии утверждения. Только для чтения.|
+|assignedToMe|Логический|Указывает, назначен ли этап пользователю вызова для проверки. Только для чтения.|
+|displayName|Строка|Метка, предоставленная создателем политики для определения стадии утверждения. Только для чтения.|
 |id|String|Идентификатор стадии, связанной с объектом утверждения. Только для чтения.|
-|обоснование|String|Обоснование, связанное с решением стадии утверждения.|
-|reviewResult|String|Результат этой записи утверждения. Возможные значения: `NotReviewed` , `Approved` , `Denied` .|
+|обоснование|Строка|Обоснование, связанное с решением стадии утверждения.|
+|reviewResult|Строка|Результат этой записи утверждения. Возможные значения: `NotReviewed` , `Approved` , `Denied` .|
 |reviewedBy|[userIdentity](useridentity.md) | Идентификатор рецензента. Только для чтения.|
 |reviewedDateTime|DateTimeOffset|Дата и время записи решения. Сведения о времени и дате представлены в формате ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
 |status|String|Состояние сцены. Возможные значения: `InProgress` `Initializing` , , `Completed` `Expired` . Только для чтения.|

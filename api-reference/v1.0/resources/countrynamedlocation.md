@@ -1,16 +1,16 @@
 ---
 title: тип ресурса countryNamedLocation
 description: Представляет расположение Azure Active Directory, определенное странами и регионами. Именуемые расположения — это настраиваемые правила, определяемые расположениями сети, которые затем можно использовать в политике условного доступа.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 2952e5b391adf12d53b32d1f545fd1c92c623233
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: 9b1fc9867e1447cb955aa85670cb88931fb6f52b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58397070"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053135"
 ---
 # <a name="countrynamedlocation-resource-type"></a>тип ресурса countryNamedLocation
 
@@ -34,15 +34,15 @@ ms.locfileid: "58397070"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|countriesAndRegions|Коллекция String|Список стран и/или регионов в формате двух букв, заданный ISO 3166-2.|
-|countryLookupMethod|countryLookupMethodType|Определяет, какой метод используется для определения страны, в которой находится пользователь. Возможные значения: `clientIpAddress` и `authenticatorAppGps`. Примечание. `authenticatorAppGps` Еще не поддерживается в Microsoft Cloud for US Government.|
+|countriesAndRegions|Коллекция String|Список стран и/или регионов в формате двух букв, заданный ISO 3166-2. Обязательный.|
+|countryLookupMethod|countryLookupMethodType|Определяет, какой метод используется для определения страны, в которой находится пользователь. Возможные значения `clientIpAddress` ( по умолчанию) и `authenticatorAppGps` . Примечание. `authenticatorAppGps` Еще не поддерживается в Microsoft Cloud for US Government.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет дату создания и время расположения с помощью формата ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. Наследуется [от namedLocation](../resources/namedLocation.md).|
-|displayName|Строка|Понятное человеку имя расположения. Наследуется [от namedLocation](../resources/namedLocation.md).|
+|displayName|Строка|Понятное человеку имя расположения. Обязательный. Наследуется [от namedLocation](../resources/namedLocation.md).|
 |id|String|Идентификатор объекта namedLocation. Только для чтения. Наследуется [от namedLocation](../resources/namedLocation.md).|
-|includeUnknownCountriesAndRegions|Логический|Верно, если IP-адреса, которые не относятся к стране или региону, должны быть включены в именоваемом расположении.|
+|includeUnknownCountriesAndRegions|Boolean|`true` если IP-адреса, которые не относятся к стране или региону, должны быть включены в именоваемом расположении. Необязательное. Значение по умолчанию — `false`.|
 |modifiedDateTime|DateTimeOffset|Тип Timestamp представляет последнюю измененную дату и время расположения с помощью формата ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. Наследуется [от namedLocation](../resources/namedLocation.md).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 
@@ -69,6 +69,12 @@ ms.locfileid: "58397070"
   "modifiedDateTime": "String (timestamp)"
 }
 ```
+
+## <a name="see-also"></a>См. также
+
++ [Что такое условный доступ?](/azure/active-directory/conditional-access/overview)
++ [Использование условия расположения в политике условного доступа](/azure/active-directory/conditional-access/location-condition)
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

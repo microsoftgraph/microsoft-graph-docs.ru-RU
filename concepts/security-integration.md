@@ -2,14 +2,14 @@
 title: Интеграция решений по обеспечению безопасности с помощью Microsoft Graph Security API
 description: Все возможности, описанные в этой статье, позволяют подключаться к Microsoft Graph Security API. Эти возможности позволяют работать с данными в едином формате в разных поддерживаемых решениях поставщиков безопасности партнеров и Майкрософт с помощью единой интеграции.
 author: preetikr
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: security
-ms.openlocfilehash: 7f54a86d254222c4b7f3f4269f57e420727cc5625e9085e8fcbab506dd943028
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d083cdcbf6bd1cfaa717b5b88682cdbd0ed57398
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54168992"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59093899"
 ---
 # <a name="security-solution-integrations-using-the-microsoft-graph-security-api"></a>Интеграция решений по обеспечению безопасности с помощью Microsoft Graph Security API
 

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса appliedConditionalAccessPolicy
 description: Указывает атрибуты, связанные с примененной политикой условного доступа или политиками, которые вызываются соответствующей активностью входов.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: a8d27d1db94b85bc78fcb58b7ba08f54499302ac901fe7ade0b59e87da30469e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 140402be929fc6d0d906b084251e21bab80f1a24
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126692"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078968"
 ---
 # <a name="appliedconditionalaccesspolicy-resource-type"></a>тип ресурса appliedConditionalAccessPolicy
 
@@ -22,13 +22,13 @@ ms.locfileid: "54126692"
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|displayName|String|Ссылается на имя политики условного доступа (например: "Require MFA for Salesforce").|
-|enforcedGrantControls|Коллекция строк|Относится к средствам управления грантами, которые применяются в политике условного доступа (пример: "Требуется многофакторная проверка подлинности").|
+|displayName|Строка|Ссылается на имя политики условного доступа (например: "Require MFA for Salesforce").|
+|enforcedGrantControls|Коллекция String|Относится к средствам управления грантами, которые применяются в политике условного доступа (пример: "Требуется многофакторная проверка подлинности").|
 |enforcedSessionControls|Коллекция String|Относится к средствам управления сеансами, которые применяются в политике условного доступа (пример: "Требуется принудительное управление приложениями").|
 |id|String|Идентификатор политики условного доступа.|
 |result|appliedConditionalAccessPolicyResult| Указывает результат срабатываемой политики ЦС. Возможные значения: , ( Политика не применяется, так как условия политики не были выполнены), (Это связано с политикой в состоянии `success` `failure` `notApplied` `notEnabled` отключения), `unknown` , `unknownFutureValue` .|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

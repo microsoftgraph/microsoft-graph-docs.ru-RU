@@ -1,16 +1,16 @@
 ---
 title: Удаление schemaExtension
 description: Удаление определения расширения схемы.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 79fd5d4d2f71ea20018462ac4cb364f47b2d898c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f363d49d5d102470bcdef74f5832935e2c986f4f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015570"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019603"
 ---
 # <a name="delete-schemaextension"></a>Удаление schemaExtension
 
@@ -27,12 +27,12 @@ ms.locfileid: "48015570"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
 > [!NOTE]
-> Кроме того, для делегированного процесса вошедшего в систему пользователя можно удалить только schemaExtensions, которыми они владеют (где свойство **owner** объекта schemaExtension — это `appId` приложение, которому принадлежит вошедшего пользователь).
+> Кроме того, для делегирования потока подписанный пользователь может удалять только собственные схемыExtensions (где свойством владельца схемыExtension является приложение, которое принадлежит подписанного  `appId` пользователя).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ DELETE /schemaExtensions/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
