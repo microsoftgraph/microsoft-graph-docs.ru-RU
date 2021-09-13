@@ -2,15 +2,15 @@
 title: Создание беседы
 description: 'Создание беседы путем включения цепочки и записи. '
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5c0a4f1191d98b04c25e446b33ea2405593fa627
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 8b774dbb778e5dd7334ff527f846268bea4e6b58
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514744"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022422"
 ---
 # <a name="create-conversation"></a>Создание беседы
 
@@ -106,7 +106,7 @@ Content-type: application/json
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

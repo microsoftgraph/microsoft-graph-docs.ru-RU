@@ -2,15 +2,15 @@
 title: тип ресурсов pstnCallLogRow
 description: Представляет строку данных в журнале вызовов для общедоступных телефонных сетей коммутатора (PSTN).
 author: williamlooney
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 13de229380dfdbb81a229bd683a9bbfad2068c6e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2a4d14df3b46e4a31d74b2f3a0cf2e111e7d1bc0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58817535"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113821"
 ---
 # <a name="pstncalllogrow-resource-type"></a>тип ресурсов pstnCallLogRow
 
@@ -31,12 +31,12 @@ ms.locfileid: "58817535"
 |callDurationSource|microsoft.graph.callRecords.pstnCallDurationSource|Источник данных о продолжительности вызова. Если при вызове используется сторонний оператор связи через программу операторов Подключение, оператор может предоставить собственные данные о продолжительности вызова. В этом случае значение свойства `operator` . В противном случае значение `microsoft` .|
 |calleeNumber|Строка|Номер, набраный [в формате E.164.](https://en.wikipedia.org/wiki/E.164)|
 |callerNumber|Строка|Номер, который получил вызов для входящие вызовы или номер, набраный для исходящие вызовы. Формат E.164.|
-|callId|Строка|Идентификатор вызова. Не гарантируется уникальность.|
+|callId|String|Идентификатор вызова. Не гарантируется уникальность.|
 |callType|String|Был ли вызов исходящие или входящие вызовы PSTN и тип вызова, например вызов, размещенный пользователем или аудиоконференции.|
 |заряд|Двойное с плавающей точкой|Сумма денег или стоимость звонка, который взимается с вашей учетной записи.|
-|conferenceId|String|ID аудиоконференции.|
+|conferenceId|Строка|ID аудиоконференции.|
 |connectionCharge|Двойное с плавающей точкой|Цена платы за подключение.|
-|валюта|String|Тип валюты, используемой для расчета стоимости вызова[(ISO 4217).](https://en.wikipedia.org/wiki/ISO_4217)|
+|валюта|Строка|Тип валюты, используемой для расчета стоимости вызова[(ISO 4217).](https://en.wikipedia.org/wiki/ISO_4217)|
 |destinationContext|Строка|Был ли вызов внутренним (в пределах страны или региона) или международным (за пределами страны или региона) в зависимости от расположения пользователя.|
 |destinationName|Строка|Страна или регион, набрана.|
 |duration|Int32|Сколько времени вызов был подключен, в секундах.|
@@ -44,15 +44,15 @@ ms.locfileid: "58817535"
 |id|Строка|Уникальный идентификатор вызовов. GUID.|
 |inventoryType|String|Тип номера телефона пользователя, например служба бесплатного номера.|
 |licenseCapability|Строка|Лицензия, используемая для вызова.|
-|operator|Строка|Оператор связи, предоставлял службы PSTN для этого вызова. Это может быть Корпорация Майкрософт или сторонний оператор через программу [операторов Подключение.](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/introducing-operator-connect-and-more-teams-calling-updates/ba-p/2176398)|
+|operator|String|Оператор связи, предоставлял службы PSTN для этого вызова. Это может быть Корпорация Майкрософт или сторонний оператор через программу [операторов Подключение.](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/introducing-operator-connect-and-more-teams-calling-updates/ba-p/2176398)|
 |startDateTime|DateTimeOffset|Время начала вызова.|
-|tenantCountryCode|String|Код страны клиента [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
-|useCountryCode|String|Код страны пользователя [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
+|tenantCountryCode|Строка|Код страны клиента [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
+|useCountryCode|Строка|Код страны пользователя [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
 |userDisplayName|String|Отображаемое имя пользователя.|
 |userId|String|Вызов ID пользователя в Graph. GUID. Эта и другие сведения о пользователях будут null/empty для типов вызовов ботов (ucap_in, ucap_out).|
 |userPrincipalName|String|UserPrincipalName (имя регистрации) в Azure Active Directory. Это обычно то же самое, что и SIP-адрес пользователя, и может быть таким же, как и адрес электронной почты пользователя.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

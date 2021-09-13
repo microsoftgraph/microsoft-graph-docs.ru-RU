@@ -2,15 +2,15 @@
 title: Обновление microsoftTunnelSite
 description: Обновление свойств объекта microsoftTunnelSite.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 671f5b986430a4a4a2a6ccf9fe753afe8cb9e0d6
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 8610d6076793a8fc9485ec0f302e37a9152098d4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785523"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027619"
 ---
 # <a name="update-microsofttunnelsite"></a>Обновление microsoftTunnelSite
 
@@ -27,9 +27,9 @@ ms.locfileid: "58785523"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,21 +53,21 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Id MicrosoftTunnelSite|
-|displayName|Строка|Имя отображения MicrosoftTunnelSite|
-|description|Строка|Описание MicrosoftTunnelSite|
-|publicAddress|Строка|Имя или IP-адрес общественного домена MicrosoftTunnelSite|
+|id|String|Id MicrosoftTunnelSite|
+|displayName|String|Имя отображения MicrosoftTunnelSite|
+|description|String|Описание MicrosoftTunnelSite|
+|publicAddress|String|Имя или IP-адрес общественного домена MicrosoftTunnelSite|
 |upgradeWindowUtcOffsetInMinutes|Int32|Зона времени сайта, представленная в качестве минутного смещения от UTC|
 |upgradeWindowStartTime|TimeOfDay|Время запуска окна обновления сайта|
 |upgradeWindowEndTime|TimeOfDay|Время окончания дня окна обновления сайта|
-|upgradeAutomatically|Логический|Параметр автоматического обновления сайта. True для автоматических обновлений, false для ручного управления|
+|upgradeAutomatically|Boolean|Параметр автоматического обновления сайта. True для автоматических обновлений, false для ручного управления|
 |upgradeAvailable|Boolean|True, если доступно обновление|
-|internalNetworkProbeUrl|Строка|URL-адрес зонда внутреннего доступа к сети MicrosoftTunnelSite|
+|internalNetworkProbeUrl|String|URL-адрес зонда внутреннего доступа к сети MicrosoftTunnelSite|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успеха этот метод возвращает код отклика и `200 OK` обновленный [объект microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md) в тексте ответа.
 
 ## <a name="example"></a>Пример

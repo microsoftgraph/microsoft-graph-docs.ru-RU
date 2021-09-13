@@ -2,15 +2,15 @@
 title: тип ресурса variableManagementConditionExpression
 description: Оценивает состояние состояния состояния управления как выражение Boolean.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 417908e82257bb823d8d4e93d0c96cb846c5e5ed
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 46ee87a0c988f5fa651de190928c308135967cf3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58782940"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026870"
 ---
 # <a name="variablemanagementconditionexpression-resource-type"></a>тип ресурса variableManagementConditionExpression
 
@@ -28,7 +28,7 @@ ms.locfileid: "58782940"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|managementConditionId|Строка|ID состояния управления, используемый для оценки выражения.|
+|managementConditionId|String|ID состояния управления, используемый для оценки выражения.|
 
 ## <a name="relationships"></a>Связи
 Нет

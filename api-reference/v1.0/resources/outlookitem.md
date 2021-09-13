@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса outlookItem
-description: Ниже этот ресурс представлен в формате JSON.
+description: Ниже представлено описание ресурса в формате JSON.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 5f06bdc5b554d3ebc4e0d5d733db08d946b4c8615e965961dcef9d826c794009
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 944636042fac6f285eed11381b361f83634ef997
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54138502"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113562"
 ---
 # <a name="outlookitem-resource-type"></a>Тип ресурса outlookItem
 
@@ -45,11 +45,11 @@ ms.locfileid: "54138502"
 |:---------------|:--------|:----------|
 |categories|Коллекция String|Категории, связанные с элементом|
 |changeKey|String|Определяет версию элемента. Каждый раз, когда элемент изменяется, изменяется и changeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта. Только для чтения.|
-|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
 |id|String| Только для чтения.|
-|lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

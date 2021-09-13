@@ -2,15 +2,15 @@
 title: Создание cartToClassAssociation
 description: Создайте новый объект cartToClassAssociation.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2782ae7fc30dc5ae85801f500c7837556faec4ed
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 864b863bea71c4a1dc7d5d9876b5125b0bf2c334
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785369"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59031161"
 ---
 # <a name="create-carttoclassassociation"></a>Создание cartToClassAssociation
 
@@ -27,9 +27,9 @@ ms.locfileid: "58785369"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/cartToClassAssociations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,18 +53,18 @@ POST /deviceManagement/cartToClassAssociations
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |version|Int32|Версия CartToClassAssociation.|
-|displayName|Строка|Указанное администратором имя конфигурации устройства.|
-|description|Строка|Администратор предоставил описание CartToClassAssociation.|
+|displayName|String|Указанное администратором имя конфигурации устройства.|
+|description|String|Администратор предоставил описание CartToClassAssociation.|
 |deviceCartIds|Коллекция String|Идентификаторы тележек устройств, связанных с классами.|
 |classroomIds|Коллекция String|Идентификаторы классов, связанных с тележками устройств.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) в теле отклика.
 
 ## <a name="example"></a>Пример

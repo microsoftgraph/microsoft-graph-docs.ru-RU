@@ -2,15 +2,15 @@
 title: Создание deviceManagementSettingCategory
 description: Создание нового объекта deviceManagementSettingCategory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c8c38241f15a7255fb50687513b1773ed8809110
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4da721ae023a168c32462a8547cd3d9731ac725f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804717"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018350"
 ---
 # <a name="create-devicemanagementsettingcategory"></a>Создание deviceManagementSettingCategory
 
@@ -27,8 +27,8 @@ ms.locfileid: "58804717"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,7 +43,7 @@ POST /deviceManagement/categories
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,12 +54,12 @@ POST /deviceManagement/categories
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|ID категории|
-|displayName|Строка|Имя категории|
-|hasRequiredSetting|Логический|Категория содержит требуемую настройку верхнего уровня|
+|displayName|String|Имя категории|
+|hasRequiredSetting|Boolean|Категория содержит требуемую настройку верхнего уровня|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика и `201 Created` [объект deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md) в теле ответа.
 
 ## <a name="example"></a>Пример

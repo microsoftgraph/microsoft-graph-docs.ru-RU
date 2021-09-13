@@ -2,15 +2,15 @@
 title: Список deviceManagementIntentUserStates
 description: Список свойств и связей объектов deviceManagementIntentUserState.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 26f59d62a00dd429d33e46700720f31a85f081f5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: afd52f1b8a56f4e6823885869a744349575a9bd8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58814891"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020786"
 ---
 # <a name="list-devicemanagementintentuserstates"></a>Список deviceManagementIntentUserStates
 
@@ -27,8 +27,8 @@ ms.locfileid: "58814891"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,13 +43,13 @@ GET /deviceManagement/intents/{deviceManagementIntentId}/userStates
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [deviceManagementIntentUserState](../resources/intune-deviceintent-devicemanagementintentuserstate.md) в теле ответа.
 
 ## <a name="example"></a>Пример

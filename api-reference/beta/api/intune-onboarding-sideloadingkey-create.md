@@ -2,15 +2,15 @@
 title: Создание sideLoadingKey
 description: Создайте новый объект sideLoadingKey.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3875103a6ac0e347983b58b74d5be64e9181ec68
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 249a57d10c4e7640b76ed7052906cc0c4b396a87
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785509"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027577"
 ---
 # <a name="create-sideloadingkey"></a>Создание sideLoadingKey
 
@@ -27,9 +27,9 @@ ms.locfileid: "58785509"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceAppManagement/sideLoadingKeys
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,16 +53,16 @@ POST /deviceAppManagement/sideLoadingKeys
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный ID side Loading Key.|
+|id|String|Уникальный ID side Loading Key.|
 |value|String|Ключевое значение side Loading — это значение 5x5, разделенное hiphens.|
-|displayName|Строка|Имя клавиши боковой загрузки, отображаемой администраторам ITPro.|
-|description|Строка|Описание клавиши боковой загрузки, отображаемой администраторам ITPro..|
+|displayName|String|Имя клавиши боковой загрузки, отображаемой администраторам ITPro.|
+|description|String|Описание клавиши боковой загрузки, отображаемой администраторам ITPro..|
 |totalActivation|Int32|Полная активация клавиши боковой загрузки, отображаемая администраторам ITPro.|
-|lastUpdatedDateTime|Строка|Клавиша side Loading Last Updated Date, отображаемая администраторам ITPro.|
+|lastUpdatedDateTime|String|Клавиша side Loading Last Updated Date, отображаемая администраторам ITPro.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) в тексте ответа.
 
 ## <a name="example"></a>Пример

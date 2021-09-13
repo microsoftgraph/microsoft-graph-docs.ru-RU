@@ -2,15 +2,15 @@
 title: Тип ресурса deviceOperatingSystemSummary
 description: Общие сведения об операционной системе устройства.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3457894e43c1aed78d953c25ef862e08cc5c2ff1aee19ef43aa86aee8e02dc9c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0f7e5a39d8c6108450775ad723c791b148aa7d25
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205663"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59148279"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>Тип ресурса deviceOperatingSystemSummary
 

@@ -2,15 +2,15 @@
 title: Создание groupPolicyConfiguration
 description: Создайте новый объект groupPolicyConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4268478704419a9a0da1af591e8e070d76223b4f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 5733141b82196bc7f374c931d6b95b7415a9687e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806791"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59027689"
 ---
 # <a name="create-grouppolicyconfiguration"></a>Создание groupPolicyConfiguration
 
@@ -43,7 +43,7 @@ POST /deviceManagement/groupPolicyConfigurations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,15 +54,15 @@ POST /deviceManagement/groupPolicyConfigurations
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|displayName|Строка|Пользователь предоставил имя объекта ресурса.|
-|description|Строка|Пользователь предоставил описание объекта ресурса.|
+|displayName|String|Пользователь предоставил имя объекта ресурса.|
+|description|String|Пользователь предоставил описание объекта ресурса.|
 |roleScopeTagIds|Коллекция String|Список тегов области для конфигурации.|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md) в тексте ответа.
 
 ## <a name="example"></a>Пример

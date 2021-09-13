@@ -2,15 +2,15 @@
 title: тип enum resultantAppState
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4a7c55aee7a02e955a7ee2cba894c2a3b0e05e69
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 75997989e0f4ed4ac2d74a6607e8b79b540498ac
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58259472"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020191"
 ---
 # <a name="resultantappstate-enum-type"></a>тип enum resultantAppState
 
@@ -23,13 +23,13 @@ ms.locfileid: "58259472"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|установлено|1 |Приложение установлено без ошибок|
+|установлено|1|Приложение установлено без ошибок|
 |не удалось|2|Приложение не удалось установить.|
-|notInstalled|3 |Приложение не установлено.|
+|notInstalled|3|Приложение не установлено.|
 |uninstallFailed|4 |Приложение не удалось удалить.|
 |pendingInstall|5 |Установка приложения продолжается.|
 |unknown|99|Состояние приложения неизвестно.|
-|notApplicable|–1|Приложение не применимо.|
+|notApplicable|-1|Приложение не применимо.|
 
 
 

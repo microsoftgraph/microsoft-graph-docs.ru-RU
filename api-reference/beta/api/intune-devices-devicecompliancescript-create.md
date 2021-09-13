@@ -2,15 +2,15 @@
 title: Создание deviceComplianceScript
 description: Создайте новый объект deviceComplianceScript.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c1a3b9636682745fc62735cc62ab336531071538
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0ca9b2dd3e94853d85dd70cabcbf55542618d496
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58789097"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018329"
 ---
 # <a name="create-devicecompliancescript"></a>Создание deviceComplianceScript
 
@@ -27,9 +27,9 @@ ms.locfileid: "58789097"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceComplianceScripts
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,18 +57,18 @@ POST /deviceManagement/deviceComplianceScripts
 |publisher|String|Имя издателя сценариев соответствия требованиям устройств|
 |version|String|Версия сценария соответствия требованиям устройства|
 |displayName|String|Имя сценария соответствия требованиям устройства|
-|description|Строка|Описание сценария соответствия требованиям устройства|
+|description|String|Описание сценария соответствия требованиям устройства|
 |detectionScriptContent|В двоичном формате|Все содержимое сценария powershell обнаружения|
 |createdDateTime|DateTimeOffset|Время создания сценария соответствия требованиям устройства. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Время изменения сценария соответствия требованиям устройства. Это свойство доступно только для чтения.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|enforceSignatureCheck|Логический|Указать, нужно ли проверять подпись скрипта|
-|runAs32Bit|Логический|Указать, должен ли сценарий PowerShell работать как 32-битный|
+|enforceSignatureCheck|Boolean|Указать, нужно ли проверять подпись скрипта|
+|runAs32Bit|Boolean|Указать, должен ли сценарий PowerShell работать как 32-битный|
 |roleScopeTagIds|Коллекция String|Список ID-тегов области для сценария соответствия требованиям к устройству|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного использования этот метод возвращает код отклика и `201 Created` [объект deviceComplianceScript](../resources/intune-devices-devicecompliancescript.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

@@ -6,11 +6,11 @@ ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
 ms.openlocfilehash: 679dd185f9994c3db01fa2283f1b33a169182c97
-ms.sourcegitcommit: cb90b32fba5f03aaffe1de30886513083d8113db
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "58850202"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59024819"
 ---
 # <a name="get-macosscepcertificateprofile"></a>Get macOSScepCertificateProfile
 

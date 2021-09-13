@@ -1,16 +1,16 @@
 ---
 title: Обновление tokenlifetimepolicy
 description: Обновление свойств объекта tokenLifetimePolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 50c4d0c5befa52443e6b7a850de95c2cb04d9cad
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b9d979d59b9bf7eeda27031dc6473f60363633d0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52033680"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130050"
 ---
 # <a name="update-tokenlifetimepolicy"></a>Обновление tokenlifetimepolicy
 
@@ -52,9 +52,9 @@ PATCH /policies/tokenLifetimePolicies/{id}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |определение|Коллекция String| Коллекция строк, содержащая строку JSON, определяемую правилами и настройками этой политики.  Обязательный.|
-|description|String| Описание этой политики.|
-|displayName|String| Отображение имени для этой политики. Обязательный.|
-|isOrganizationDefault|Логический|Если заданной для true, активирует эту политику. Для одного типа политики может быть много политик, но только одна может быть активирована по умолчанию организации. Необязательный, значение по умолчанию является ложным.|
+|description|Строка| Описание этой политики.|
+|displayName|String| Отображение имени для этой политики. Обязательное.|
+|isOrganizationDefault|Boolean|Если заданной для true, активирует эту политику. Для одного типа политики может быть много политик, но только одна может быть активирована по умолчанию организации. Необязательный, значение по умолчанию является ложным.|
 
 ## <a name="response"></a>Отклик
 
@@ -106,7 +106,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

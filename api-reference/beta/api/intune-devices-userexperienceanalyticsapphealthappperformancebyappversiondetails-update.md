@@ -2,15 +2,15 @@
 title: Обновление userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
 description: Обновление свойств объекта userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 49c751e486ead24f62f815664c3acdbb281686dc
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a7476b37753b0d6afa2bfaa19aac05e7f1202c18
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58784949"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020723"
 ---
 # <a name="update-userexperienceanalyticsapphealthappperformancebyappversiondetails"></a>Обновление userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
 
@@ -27,9 +27,9 @@ ms.locfileid: "58784949"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceBy
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,19 +53,19 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceBy
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта производительности приложения для аналитики пользовательского интерфейса.|
+|id|String|Уникальный идентификатор объекта производительности приложения для аналитики пользовательского интерфейса.|
 |deviceCountWithCrashes|Int32|Общее число устройств, которые сообщили об одном или нескольких сбоях приложения для этого приложения и версии. Допустимые значения 2147483648 2147483647|
-|isMostUsedVersion|Логический|Является ли версия приложения наиболее используемой версией для этого приложения.|
-|isLatestUsedVersion|Логический|Является ли версия приложения последней версией для используемого приложения.|
+|isMostUsedVersion|Boolean|Является ли версия приложения наиболее используемой версией для этого приложения.|
+|isLatestUsedVersion|Boolean|Является ли версия приложения последней версией для используемого приложения.|
 |appName|String|Имя приложения.|
 |appDisplayName|String|Удобное имя приложения.|
-|appPublisher|Строка|Издатель приложения.|
-|appVersion|Строка|Версия приложения.|
+|appPublisher|String|Издатель приложения.|
+|appVersion|String|Версия приложения.|
 |appCrashCount|Int32|Количество сбоей для приложения. Допустимые значения 2147483648 2147483647|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успеха этот метод возвращает код ответа и обновленный объект `200 OK` [userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondetails.md) в тексте ответа.
 
 ## <a name="example"></a>Пример

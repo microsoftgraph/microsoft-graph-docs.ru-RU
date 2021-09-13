@@ -1,22 +1,22 @@
 ---
-title: Список sectionGroups
-description: Получение списка групп разделов из указанной записной книжки.
+title: Раздел ListGroups
+description: Извлечение списка групп разделов из указанной записной книжки.
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 1e959112edb6d2e1b6b97e4098f5517e8704b1b2
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 3fb9cea468f3e1f7bfa8156312f122b1633f810d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458971"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016045"
 ---
-# <a name="list-sectiongroups"></a>Список sectionGroups
+# <a name="list-sectiongroups"></a>Раздел ListGroups
 
 Пространство имен: microsoft.graph
 
-Получение списка [групп разделов](../resources/sectiongroup.md) из указанной записной книжки.
+Извлечение списка [групп разделов](../resources/sectiongroup.md) из указанной записной книжки.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -39,7 +39,7 @@ GET /sites/{id}/onenote/notebooks/{id}/sectionGroups
 
 По умолчанию используется порядок сортировки `name asc`.
 
-Запрос по умолчанию разворачивает `parentNotebook` и выбирает `id` `displayName` свойства, и `self` . Допустимые `expand` значения для групп разделов: `sections` ,, `sectionGroups` `parentNotebook` и `parentSectionGroup` .
+Запрос по умолчанию расширяется и выбирает его свойства и `parentNotebook` `id` `displayName` `self` свойства. `expand`Допустимые значения для групп разделов : , и `sections` `sectionGroups` `parentNotebook` `parentSectionGroup` .
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
@@ -52,7 +52,7 @@ GET /sites/{id}/onenote/notebooks/{id}/sectionGroups
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [sectionGroup](../resources/sectiongroup.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [sectionGroup](../resources/sectiongroup.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

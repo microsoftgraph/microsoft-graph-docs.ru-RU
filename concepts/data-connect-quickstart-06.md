@@ -1,3 +1,12 @@
+---
+ms.localizationpriority: medium
+ms.openlocfilehash: e436d95637255e52b5028c8b3b80f5f7aab6e1e5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59289681"
+---
 <!-- markdownlint-disable MD002 MD041 -->
 
 Администратор Microsoft 365 может утверждать или отказывать в запросах на согласие. Это можно сделать через центр Microsoft 365 Admin или программным путем с помощью PowerShell.

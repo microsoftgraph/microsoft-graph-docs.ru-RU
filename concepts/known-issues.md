@@ -2,13 +2,13 @@
 title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph.
 author: MSGraphDocsVTeam
-localization_priority: Priority
-ms.openlocfilehash: e6ef743a04d7b3edce53ef1a13d59b7f090c0c05
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.localizationpriority: high
+ms.openlocfilehash: c783cb4c277b4a711b8d9b146587f6856a4743b4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58397077"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062406"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -17,6 +17,28 @@ ms.locfileid: "58397077"
 Чтобы сообщить об известных проблемах, перейдите на[поддержки Microsoft Graph](https://developer.microsoft.com/graph/support).
 
 Сведения о последних обновлениях API в Microsoft Graph см. в [журнале изменений Microsoft Graph](changelog.md).
+
+## <a name="application-and-service-principal-apis"></a>API приложений и субъектов-служб
+
+Скоро в объекты [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) и [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) будут внесены изменения. Ниже приведено краткое описание текущих ограничений и возможностей API, находящихся в разработке.
+
+Текущие ограничения:
+
+* Некоторые свойства application (такие как appRoles и addIns) будут доступны только после внесения всех изменений.
+* Регистрировать можно только мультитенантные приложения.
+* Обновлять можно только приложения, зарегистрированные после первоначального обновления бета-версии.
+* Пользователи Azure Active Directory могут регистрировать приложения и добавлять владельцев.
+* Поддержка протоколов OpenID Connect и OAuth.
+* Невозможно назначение политик приложению.
+* Не выполняются операции с ownedObjects, для которых требуется код appId (например, users/{id|userPrincipalName}/ownedObjects/{id}/...).
+
+В разработке:
+
+* Возможность регистрировать однотенантные приложения.
+* Обновления объекта servicePrincipal.
+* Перевод существующих приложений Azure AD на обновленную модель.
+* Поддержка appRoles, предварительно авторизованные клиенты, необязательные утверждения, утверждения членства в группе и брендинг.
+* Пользователи учетной записи Майкрософт (MSA) могут регистрировать приложения.
 
 ## <a name="bookings"></a>Bookings
 
@@ -134,10 +156,6 @@ GET /me/calendars/{id}/events
     New-AzureADServicePrincipal -AppId 00000003-0000-0000-c000-000000000000
     ```
 ## <a name="contacts"></a>Контакты
-
-### <a name="organization-contacts-available-in-only-beta"></a>Контакты организации доступны только в бета-версии
-
-В настоящее время поддерживаются только личные контакты. В настоящее время контакты организации не поддерживаются в версии `/v1.0`, но их можно найти в версии `/beta`.
 
 ### <a name="default-contacts-folder"></a>Папка контактов по умолчанию
 
@@ -265,34 +283,20 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 
 Если вызвать запрос [DELETE /groups/{id}/owners](/graph/api/group-delete-owners.md) для группы, связанной с [командой](/graph/api/resources/team.md), пользователь также удаляется из списка /groups/{id}/members. Чтобы устранить эту проблему, удалите пользователя из владельцев и участников, подождать 10 секунд и снова добавить его к участникам.
 
-## <a name="identity-and-access--application-and-service-principal-apis"></a>Удостоверение и доступ | API приложений и субъектов-служб
+## <a name="identity-and-access"></a>Удостоверение и доступ
 
-Скоро в объекты [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) и [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) будут внесены изменения. Ниже приведено краткое описание текущих ограничений и возможностей API, находящихся в разработке.
+### <a name="conditional-access-policy"></a>Политика условного доступа
 
-Текущие ограничения:
+API [conditionalAccessPolicy](/graph/api/resources/conditionalaccesspolicy) в настоящее время требует согласия на разрешение **Policy.Read.All** для вызова методов POST и PATCH. В дальнейшем разрешение **Policy.ReadWrite.ConditionalAccess** позволит читать политики из каталога.
 
-* Некоторые свойства application (такие как appRoles и addIns) будут доступны только после внесения всех изменений.
-* Регистрировать можно только мультитенантные приложения.
-* Обновлять можно только приложения, зарегистрированные после первоначального обновления бета-версии.
-* Пользователи Azure Active Directory могут регистрировать приложения и добавлять владельцев.
-* Поддержка протоколов OpenID Connect и OAuth.
-* Невозможно назначение политик приложению.
-* Не выполняются операции с ownedObjects, для которых требуется код appId (например, users/{id|userPrincipalName}/ownedObjects/{id}/...).
+### <a name="claims-mapping-policy"></a>Политика сопоставления утверждений
 
-В разработке:
+API [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy) может требовать согласия на разрешения **Policy.Read.All** и **Policy.ReadWrite.ConditionalAccess** для методов `LIST /policies/claimsMappingPolicies` и `GET /policies/claimsMappingPolicies/{id}` следующим образом:
 
-* Возможность регистрировать однотенантные приложения.
-* Обновления объекта servicePrincipal.
-* Перевод существующих приложений Azure AD на обновленную модель.
-* Поддержка appRoles, предварительно авторизованные клиенты, необязательные утверждения, утверждения членства в группе и брендинг.
-* Пользователи учетной записи Майкрософт (MSA) могут регистрировать приложения.
-* Поддержка протоколов SAML и WsFed.
++ Если в операции LIST нет объектов claimsMappingPolicy для получения, для вызова этого метода достаточно любого разрешения.
++ Если имеются объекты claimsMappingPolicy для получения, ваше приложение должно предоставить согласие на оба разрешения. В противном случае возвращается ошибка `403 Forbidden`.
 
-## <a name="identity-and-access--conditional-access"></a>Удостоверение и доступ | Условный доступ
-
-### <a name="permissions"></a>Разрешения
-
-В настоящее время для вызова API POST и PATCH требуется разрешение Policy.Read.All. В дальнейшем разрешение Policy.ReadWrite.ConditionalAccess позволит читать политики из каталога.
+В будущем для вызова обоих методов будет достаточно любого разрешения.
 
 ## <a name="json-batching"></a>Пакетная обработка JSON
 
@@ -338,6 +342,30 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 ### <a name="get-messages-returns-chats-in-microsoft-teams"></a>При использовании запроса GET для сообщений возвращаются также чаты в Microsoft Teams
 
 В конечных точках версии 1 и бета-версии данные отклика для `GET /users/id/messages` включают чаты Microsoft Teams, не входящие в область группы или канала. Тема этих сообщений чата: "IM".
+
+## <a name="reports"></a>Отчеты
+
+### <a name="azure-ad-activity-reports"></a>Отчеты о действиях Azure AD
+
+Если у вас есть действительная лицензия Azure AD Premium и вы вызываете API отчетов о действиях Azure AD [directoryAudit](/graph/api/resources/directoryaudit), [signIn](/graph/api/resources/signin) или [provisioning](/graph/api/resources/provisioningobjectsummary), по-прежнему может возникнуть сообщение об ошибке, аналогичное указанному ниже.
+
+```json
+{
+    "error": {
+        "code": "Authentication_RequestFromNonPremiumTenantOrB2CTenant",
+        "message": "Neither tenant is B2C or tenant doesn't have premium license",
+        "innerError": {
+            "date": "2021-09-02T17:15:30",
+            "request-id": "73badd94-c0ca-4b09-a3e6-20c1f5f9a307",
+            "client-request-id": "73badd94-c0ca-4b09-a3e6-20c1f5f9a307"
+        }
+    }
+}
+```
+Эта ошибка также может возникнуть при получении свойства **signInActivity** ресурса [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true), например `https://graph.microsoft.com/beta/users?$select=signInActivity`.
+
+Эта ошибка вызвана периодическими сбоями проверки лицензий. Мы работаем над их устранением. В качестве временного решения добавьте разрешение **Directory.Read.All**. Это временное решение не потребуется, когда проблема будет устранена.
+
 
 ## <a name="teamwork-microsoft-teams"></a>Работа в команде (Microsoft Teams)
 

@@ -2,15 +2,15 @@
 title: Обновление cartToClassAssociation
 description: Обновление свойств объекта cartToClassAssociation.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: edc1c3939e8ad317aabca39f9876d5c7be13f751
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 67928d0aeb72310a9230b90792c598944ee31f02
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58793706"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59031091"
 ---
 # <a name="update-carttoclassassociation"></a>Обновление cartToClassAssociation
 
@@ -27,9 +27,9 @@ ms.locfileid: "58793706"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,18 +53,18 @@ PATCH /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |version|Int32|Версия CartToClassAssociation.|
-|displayName|Строка|Указанное администратором имя конфигурации устройства.|
-|description|Строка|Администратор предоставил описание CartToClassAssociation.|
+|displayName|String|Указанное администратором имя конфигурации устройства.|
+|description|String|Администратор предоставил описание CartToClassAssociation.|
 |deviceCartIds|Коллекция String|Идентификаторы тележек устройств, связанных с классами.|
 |classroomIds|Коллекция String|Идентификаторы классов, связанных с тележками устройств.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешной работы этот метод возвращает код ответа и обновленный `200 OK` [объект cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) в тексте ответа.
 
 ## <a name="example"></a>Пример

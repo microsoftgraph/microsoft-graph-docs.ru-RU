@@ -1,14 +1,14 @@
 ---
 title: Локализация компонентов Microsoft Graph Toolkit
 description: Используйте LocalizationHelper для локализации компонентов Microsoft Graph Toolkit.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: vogtn
-ms.openlocfilehash: 0aeb18b5606c761b9e4e853509bd4ef0dc58682259c3bb0522b65047ed40cf7c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f3cba31d7b02370d30e1caa128a671534f9e4cae
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54123893"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129581"
 ---
 # <a name="localizing-the-microsoft-graph-toolkit-components"></a>Локализация компонентов Microsoft Graph Toolkit
 

@@ -2,15 +2,15 @@
 title: Создание неподтвердимойGroupPolicyExtension
 description: Создайте новый объект UnsupportedGroupPolicyExtension.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6ea39cfba314c1f6b68f9b09f3e1418de978cae5
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 98fd00744ae068f55319321cbe853af9cce3582f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802595"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020604"
 ---
 # <a name="create-unsupportedgrouppolicyextension"></a>Создание неподтвердимойGroupPolicyExtension
 
@@ -27,9 +27,9 @@ ms.locfileid: "58802595"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,13 +55,13 @@ POST /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId
 |:---|:---|:---|
 |id|String|Пока не задокументировано.|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|Настройка области неподтверченного расширения. Возможные значения: `unknown`, `device`, `user`.|
-|namespaceUrl|Строка|Url-адрес пространства имен неподтверченного расширения.|
-|extensionType|Строка|ExtensionType неподтверченного расширения.|
-|nodeName|Строка|Имя узла неподтверченного расширения.|
+|namespaceUrl|String|Url-адрес пространства имен неподтверченного расширения.|
+|extensionType|String|ExtensionType неподтверченного расширения.|
+|nodeName|String|Имя узла неподтверченного расширения.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешной работы этот метод возвращает код ответа и неподтвердимый `201 Created` [объектGroupPolicyExtension](../resources/intune-gpanalyticsservice-unsupportedgrouppolicyextension.md) в тексте ответа.
 
 ## <a name="example"></a>Пример

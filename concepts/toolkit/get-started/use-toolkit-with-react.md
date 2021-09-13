@@ -1,14 +1,14 @@
 ---
 title: Использование Microsoft Graph Toolkit с React
 description: Начало использования Microsoft Graph Toolkit в приложении React
-localization_priority: Normal
+ms.localizationpriority: medium
 author: waldekmastykarz
-ms.openlocfilehash: d7bf063a869e756554fa280406dfee3b5a569607f39bdd1763e15086dd2f29b2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 464542cc85b9baab8c13a68a788d28d557effcde
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54132958"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59089236"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-react"></a>Использование Microsoft Graph Toolkit с React
 
@@ -45,7 +45,7 @@ cd my-m365-app
 npm i @microsoft/mgt-react
 ```
 
-Установите и пакет npm, который содержит `mgt-msal2-provider` `mgt-element` поставщика auth MSAL 2.0.
+Установите и пакет npm, который содержит `mgt-msal2-provider` `mgt-element` поставщика auth MSAL2.
 
 ```Command Line
 npm i @microsoft/mgt-element @microsoft/mgt-msal2-provider
@@ -76,7 +76,7 @@ npm start
 Теперь настройте поставщика проверки подлинности, который должен использовать Microsoft Graph Toolkit. В этом случае будет использоваться MSAL, который по умолчанию подходит для создания автономных приложений. Если вы используете какие-либо точки расширения в Microsoft 365, например Teams или SharePoint, то необходимо будет выбрать [других поставщиков](../providers/providers.md).
 
 >[!NOTE] 
->Если вы в настоящее время используете поставщика MSAL и хотите обновить поставщика MSAL 2, выполните действия в статье [поставщика MSAL 2.](../providers/msal2.md#migrating-from-msal-provider-to-msal-2-provider)
+>Если вы в настоящее время используете поставщика MSAL и хотите обновить ее до поставщика MSAL2, выполните действия в статье [MSAL2 Provider.](../providers/msal2.md#migrating-from-msal-provider-to-msal2-provider)
 
 1. Откройте в редакторе кода файл **src/index.** и добавьте в список операций импорта следующее:
 

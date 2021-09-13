@@ -2,15 +2,15 @@
 title: тип ресурса mobileAppTroubleshootingAppPolicyCreationHistory
 description: Элемент history, содержащийся в событии устранения неполадок мобильных приложений.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d3b3cefea47e18fb33658dd026a6f23323f3c924
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 3bdf3edf75a8f22941c079f109c46960249f4296
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58253139"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59020247"
 ---
 # <a name="mobileapptroubleshootingapppolicycreationhistory-resource-type"></a>тип ресурса mobileAppTroubleshootingAppPolicyCreationHistory
 

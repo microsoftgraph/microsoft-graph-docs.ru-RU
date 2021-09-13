@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса recentNotebook
 description: Недавно открытая записная книжка OneNote. Ресурс **recentNotebook** похож на ресурс notebook, но имеет меньше свойств.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 40a9b71dbf32aebb169b621c9defacc75c0209be8f22afb7f2063675ac0d913d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 63338c7501b7783ff7c32d6f2f2c54122c9e9154
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54135031"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143680"
 ---
 # <a name="recentnotebook-resource-type"></a>Тип ресурса recentNotebook
 

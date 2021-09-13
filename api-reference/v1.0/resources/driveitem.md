@@ -2,15 +2,15 @@
 author: JeremyKelley
 title: Тип ресурса driveItem
 description: Элемент — это основная модель данных в API OneDrive. Любое содержимое является элементом.
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: c7e611b40ab2d0f770760bbedcbddaea8d0c3eecbd6efcd1c437a1ab1a9ef326
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1113752f33fe5cf1773359b940e15083a449a253
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54182569"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094354"
 ---
 # <a name="driveitem-resource-type"></a>Тип ресурса driveItem
 
@@ -36,6 +36,37 @@ ms.locfileid: "54182569"
 
 >**Примечание.** В OneDrive для бизнеса и библиотеках документов SharePoint свойство **cTag** не возвращается, если у ресурса **driveItem** есть аспект [folder][].
 
+## <a name="methods"></a>Методы
+
+| Метод                                                   | Возвращаемый тип | Описание
+|:---------------------------------------------------------|:------------|:------------
+| [Получение элемента](../api/driveitem-get.md)                      | driveItem |Получение метаданных для DriveItem в объекте Drive.
+| [Получение аналитики][]                                        | [itemAnalytics][] | Получение аналитических данных для ресурса. 
+| [Получение действий по интервалу][]                           | [itemActivityStat][] | Получение коллекции объектов itemActivityStat в пределах указанного интервала времени.
+| [Список дочерних элементов](../api/driveitem-list-children.md)       | коллекция ресурсов driveItem | Возвращает коллекцию DriveItems в дочерних элементах ресурса DriveItem.
+| [Список версий](../api/driveitem-list-versions.md)       | коллекция объектов [DriveItemVersion][] | Извлекает версии файла для объекта Drive текущего пользователя.
+| [Создание элемента](../api/driveitem-post-children.md)         | driveItem | Создает ресурс driveItem на указанном диске.
+| [Обновление элемента](../api/driveitem-update.md)                | driveItem | Обновляет ресурс driveItem на диске.
+| [Отправка содержимого](../api/driveitem-put-content.md)        | driveItem | Отправляет содержимое в ресурс driveItem.
+| [Скачивание содержимого](../api/driveitem-get-content.md)      | URL-адрес скачивания | Скачивает содержимое ресурса driveItem.
+| [Скачивание файла в определенном формате][download-format]         | URL-адрес скачивания | Скачивает содержимое ресурса driveItem с определенным форматом.
+| [Удаление элемента](../api/driveitem-delete.md)                | Содержимое отсутствует | Удаляет ресурс driveItem.
+| [Перемещение элемента](../api/driveitem-move.md)                    | driveItem | Перемещение ресурса DriveItem в новый родительский элемент.
+| [Копирование элемента](../api/driveitem-copy.md)                    | сведения о том, как [следить за процессом](/graph/long-running-actions-overview) копирования | Создает копию ресурса driveItem (включая все дочерние элементы).
+| [Поиск элементов](../api/driveitem-search.md)               | коллекция ресурсов driveItem | Поиск элементов, соответствующих запросу, в иерархии элементов.
+| [Перечисление изменений на диске](../api/driveitem-delta.md)     | разностная ссылка | Перечисление всех изменений на диске.
+| [Отслеживание элемента](../api/driveitem-follow.md)                | driveItem  | Отслеживание ресурса driveItem.
+| [Отмена отслеживания элемента](../api/driveitem-unfollow.md)            | Содержимое отсутствует | Отмена отслеживания ресурса driveItem.
+| [Перечисление эскизов](../api/driveitem-list-thumbnails.md)   | коллекция ресурсов driveItem | Перечисление ресурсов driveItem с их эскизами. 
+| [Создание ссылки совместного доступа](../api/driveitem-createlink.md)    | Ссылка совместного доступа | Создание ссылки совместного доступа к ресурсу driveItem.
+| [Добавление разрешений](../api/driveitem-invite.md)            | коллекция объектов [разрешений][] | Отправляет приглашение к совместному доступу пользователю.
+| [Список разрешений](../api/driveitem-list-permissions.md) | коллекция объектов [разрешений][] | Извлекает коллекцию разрешений для ресурса driveItem.
+| [Удаление разрешения](../api/permission-delete.md)         | Содержимое отсутствует | Удаляет разрешение из ресурса driveItem.
+| [Получение канала WebSocket][getWebSocket]                    | [subscription][] | Получает уведомления об изменениях почти в режиме реального времени для диска с использованием socket.io.
+| [Предварительный просмотр элемента][item-preview]                             | объект JSON | Получение внедряемых URL-адресов с небольшим сроком действия для элемента, чтобы создать временный предварительный просмотр.
+| [Регистрация](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
+| [Выписка](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
+
 ## <a name="properties"></a>Свойства
 
 | Свойство             | Тип               | Описание
@@ -56,6 +87,7 @@ ms.locfileid: "54182569"
 | lastModifiedBy       | [identitySet][]    | Идентификатор пользователя, устройства или приложения, внесшего последние изменения в элемент. Только для чтения.
 | lastModifiedDateTime | DateTimeOffset     | Дата и время последнего изменения элемента. Только для чтения.
 | location             | [geoCoordinates][] | Метаданные местоположения, если в роли элемента выступают данные о местоположении. Только для чтения.
+| malware              | [malware][]        | Метаданные вредоносной программы, если обнаружено, что элемент содержит вредоносную программу. Только для чтения.
 | name                 | String             | Имя элемента (имя и расширение файла). Чтение и запись.
 | package              | [package][]        | В случае наличия указывает, что этот элемент — пакет, а не папка или файл. Пакеты обрабатываются как файлы в одном контексте, и как папки — в другом. Только для чтения.
 | parentReference      | [itemReference][]  | Сведения о родительском элементе, если элемент выступает в роли родительского элемента. Чтение и запись.
@@ -134,6 +166,7 @@ ms.locfileid: "54182569"
   "folder": { "@odata.type": "microsoft.graph.folder" },
   "image": { "@odata.type": "microsoft.graph.image" },
   "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
+  "malware": { "@odata.type": "microsoft.graph.malware" },
   "package": { "@odata.type": "microsoft.graph.package" },
   "pendingOperations": { "@odata.type": "microsoft.graph.pendingOperations" },
   "photo": { "@odata.type": "microsoft.graph.photo" },
@@ -177,37 +210,6 @@ ms.locfileid: "54182569"
 }
 ```
 
-## <a name="methods"></a>Методы
-
-| Метод                                                   | Возвращаемый тип | Описание
-|:---------------------------------------------------------|:------------|:------------
-| [Получение элемента](../api/driveitem-get.md)                      | driveItem |Получение метаданных для DriveItem в объекте Drive.
-| [Получение аналитики][]                                        | [itemAnalytics][] | Получение аналитических данных для ресурса. 
-| [Получение действий по интервалу][]                           | [itemActivityStat][] | Получение коллекции объектов itemActivityStat в пределах указанного интервала времени.
-| [Список дочерних элементов](../api/driveitem-list-children.md)       | коллекция ресурсов driveItem | Возвращает коллекцию DriveItems в дочерних элементах ресурса DriveItem.
-| [Список версий](../api/driveitem-list-versions.md)       | коллекция объектов [DriveItemVersion][] | Извлекает версии файла для объекта Drive текущего пользователя.
-| [Создание элемента](../api/driveitem-post-children.md)         | driveItem | Создает ресурс driveItem на указанном диске.
-| [Обновление элемента](../api/driveitem-update.md)                | driveItem | Обновляет ресурс driveItem на диске.
-| [Отправка содержимого](../api/driveitem-put-content.md)        | driveItem | Отправляет содержимое в ресурс driveItem.
-| [Скачивание содержимого](../api/driveitem-get-content.md)      | URL-адрес скачивания | Скачивает содержимое ресурса driveItem.
-| [Скачивание файла в определенном формате][download-format]         | URL-адрес скачивания | Скачивает содержимое ресурса driveItem с определенным форматом.
-| [Удаление элемента](../api/driveitem-delete.md)                | Содержимое отсутствует | Удаляет ресурс driveItem.
-| [Перемещение элемента](../api/driveitem-move.md)                    | driveItem | Перемещение ресурса DriveItem в новый родительский элемент.
-| [Копирование элемента](../api/driveitem-copy.md)                    | сведения о том, как [следить за процессом](/graph/long-running-actions-overview) копирования | Создает копию ресурса driveItem (включая все дочерние элементы).
-| [Поиск элементов](../api/driveitem-search.md)               | коллекция ресурсов driveItem | Поиск элементов, соответствующих запросу, в иерархии элементов.
-| [Перечисление изменений на диске](../api/driveitem-delta.md)     | разностная ссылка | Перечисление всех изменений на диске.
-| [Отслеживание элемента](../api/driveitem-follow.md)                | driveItem  | Отслеживание ресурса driveItem.
-| [Отмена отслеживания элемента](../api/driveitem-unfollow.md)            | Содержимое отсутствует | Отмена отслеживания ресурса driveItem.
-| [Перечисление эскизов](../api/driveitem-list-thumbnails.md)   | коллекция ресурсов driveItem | Перечисление ресурсов driveItem с их эскизами. 
-| [Создание ссылки совместного доступа](../api/driveitem-createlink.md)    | Ссылка совместного доступа | Создание ссылки совместного доступа к ресурсу driveItem.
-| [Добавление разрешений](../api/driveitem-invite.md)            | коллекция объектов [разрешений][] | Отправляет приглашение к совместному доступу пользователю.
-| [Список разрешений](../api/driveitem-list-permissions.md) | коллекция объектов [разрешений][] | Извлекает коллекцию разрешений для ресурса driveItem.
-| [Удаление разрешения](../api/permission-delete.md)         | Содержимое отсутствует | Удаляет разрешение из ресурса driveItem.
-| [Получение канала WebSocket][getWebSocket]                    | [subscription][] | Получает уведомления об изменениях почти в режиме реального времени для диска с использованием socket.io.
-| [Предварительный просмотр элемента][item-preview]                             | объект JSON | Получение внедряемых URL-адресов с небольшим сроком действия для элемента, чтобы создать временный предварительный просмотр.
-| [Регистрация](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
-| [Выписка](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
-
 [item-preview]: ../api/driveitem-preview.md
 [Получение аналитики]: ../api/itemanalytics-get.md
 [Получение действий по интервалу]: ../api/itemactivitystat-getactivitybyinterval.md
@@ -230,6 +232,7 @@ ms.locfileid: "54182569"
 [itemReference]: itemreference.md
 [geoCoordinates]: geocoordinates.md
 [listItem]: listitem.md
+[malware]: malware.md
 [package]: package.md
 [permission]: permission.md
 [pendingOperations]: pendingoperations.md

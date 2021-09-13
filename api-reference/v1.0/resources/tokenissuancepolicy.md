@@ -1,16 +1,16 @@
 ---
 title: тип ресурса tokenIssuancePolicy
 description: Представляет политику, определяемую характеристиками маркеров SAML, выданных Azure AD.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: luleonpla
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 93a21caa135ec38e87b3194e99440421e897b67955a6b34fec46641d5b841ce4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9fe2a87e0b56a54ef198152cd7f7e37941a8b572
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54134919"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143673"
 ---
 # <a name="tokenissuancepolicy-resource-type"></a>тип ресурса tokenIssuancePolicy
 
@@ -44,7 +44,7 @@ ms.locfileid: "54134919"
 |id|String| Уникальный идентификатор для этой политики. Только для чтения.|
 |определение|Коллекция String| Коллекция строк, содержащая строку JSON, определяемую правилами и настройками этой политики. Дополнительные сведения о схеме JSON для этого свойства см. ниже. Обязательный.|
 |description|String| Описание этой политики.|
-|displayName|String| Отображение имени для этой политики. Обязательный элемент.|
+|displayName|String| Отображение имени для этой политики. Обязательно.|
 |isOrganizationDefault|Логический|Игнорируйте это свойство. Политика выдачи маркеров может применяться только к директорам служб и не может быть установлена глобально для организации.|
 
 

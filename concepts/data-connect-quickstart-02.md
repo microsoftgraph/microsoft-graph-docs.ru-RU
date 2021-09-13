@@ -1,3 +1,12 @@
+---
+ms.localizationpriority: medium
+ms.openlocfilehash: 83869d63084f19e8c93e61dc0d4524a53217c30c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59289680"
+---
 <!-- markdownlint-disable MD002 MD041 -->
 
 Перед использованием Подключение к данным Microsoft Graph в первый раз необходимо настроить Microsoft 365 клиента. Это включает включение службы и настройку группы безопасности с разрешениями на утверждение запросов на извлечение данных.
@@ -16,7 +25,7 @@
 1. Откройте браузер и перейдите на [портал Microsoft 365 Admin.](https://admin.microsoft.com/)
 
 1. На боковой панели навигации выберите **Active Groups**.
-  
+
     ![Снимок экрана, на котором показаны активные группы в Центр администрирования Microsoft 365.](images/data-connect-m365-act-grp.png)
 
 1. Выберите **кнопку Добавить группу.**
