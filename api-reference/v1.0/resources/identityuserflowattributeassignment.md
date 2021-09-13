@@ -2,15 +2,15 @@
 title: тип ресурса identityUserFlowAttributeAssignment
 description: Представляет, как атрибуты собираются в потоке пользователей удостоверений.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: c36e7bc9f9140230efce055b340a20777ba3cebf85126dc43fb8ad8f950abd62
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7be5352030ed56b6d4112ed3409f7969606b5020
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54230706"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129903"
 ---
 # <a name="identityuserflowattributeassignment-resource-type"></a>тип ресурса identityUserFlowAttributeAssignment
 
@@ -32,14 +32,14 @@ ms.locfileid: "54230706"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор identityUserFlowAttributeAssignment. Этот идентификатор неуменяем после создания. Это свойство только для чтения.|
-|displayName|String|Отображение имени identityUserFlowAttribute в потоке пользователей.|
-|isOptional|Логическое|Определяет, является ли identityUserFlowAttribute необязательным. `true` означает, что пользователю не нужно предоставлять значение. `false` означает, что пользователь не может завершить регистрацию без предоставления значения.|
-|requiresVerification|Логическое|Определяет, требуется ли проверка identityUserFlowAttribute. Это используется только для проверки номера телефона или адреса электронной почты пользователя.|
+|id|Строка|Идентификатор identityUserFlowAttributeAssignment. Этот идентификатор неуменяем после создания. Это свойство только для чтения.|
+|displayName|Строка|Отображение имени identityUserFlowAttribute в потоке пользователей.|
+|isOptional|Логический|Определяет, является ли identityUserFlowAttribute необязательным. `true` означает, что пользователю не нужно предоставлять значение. `false` означает, что пользователь не может завершить регистрацию без предоставления значения.|
+|requiresVerification|Логический|Определяет, требуется ли проверка identityUserFlowAttribute. Это используется только для проверки номера телефона или адреса электронной почты пользователя.|
 |userAttributeValues|[коллекция userAttributeValuesItem](../resources/userattributevaluesitem.md)|Параметры ввода атрибута потока пользователя. Применимо только в том случае, если userInputType `radioSingleSelect` является `dropdownSingleSelect` , или `checkboxMultiSelect` .|
 |userInputType|identityUserFlowAttributeInputType|Тип ввода атрибута потока пользователя. Возможные значения: `textBox`, `dateTimeDropdown`, `radioSingleSelect`, `dropdownSingleSelect`, `emailBox`, `checkboxMultiSelect`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 |Связь|Тип|Описание|
 |:---|:---|:---|

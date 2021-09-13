@@ -1,16 +1,16 @@
 ---
 title: Добавление участника
 description: Добавление члена в группу Microsoft 365 или группу безопасности (в том числе с включенной поддержкой почты) с помощью свойства навигации **members**.
-localization_priority: Priority
+ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6de0f96ac026516293d1d407b4fc74b641d6aff4
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: efb7fbb29b33551edcbc33d86b63193fa7658a19
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58397119"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59074292"
 ---
 # <a name="add-member"></a>Добавление участника
 

@@ -2,15 +2,15 @@
 title: Список участников канала
 description: Список участников канала.
 author: akjo
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dd59e40abbd24a80af11fa4bcde48ecbbe3def98
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 5c88b973857d8c994e14c4ace2bc502dd37a65d2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060019"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090770"
 ---
 # <a name="list-members-of-a-channel"></a>Список участников канала
 

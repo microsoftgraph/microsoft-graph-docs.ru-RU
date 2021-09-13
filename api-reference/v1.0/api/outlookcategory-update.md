@@ -1,16 +1,16 @@
 ---
 title: Обновление категории Outlook
 description: 'Обновление перезаписываемого свойства **color** указанного объекта outlookCategory. Невозможно изменить **свойство displayName** '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4ca7f779344a73baf52822b667995ccfaefb87b0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 83fb0f69cd6a6e3e614eb841819a03dc83476f9b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053988"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037322"
 ---
 # <a name="update-outlook-category"></a>Обновление категории Outlook
 
@@ -88,7 +88,7 @@ Content-length: 30
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,15 +2,15 @@
 title: Удаление androidWorkProfileGeneralDeviceConfiguration
 description: Удаляет androidWorkProfileGeneralDeviceConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b98e1f01919077e6a7d19b5808f4c69a3bb7f270f611b8ef7ffde97cb969053
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b6419dcb6fd2213bc41ba2529c437b7aaaf04697
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54209345"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59037770"
 ---
 # <a name="delete-androidworkprofilegeneraldeviceconfiguration"></a>Удаление androidWorkProfileGeneralDeviceConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "54209345"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +41,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

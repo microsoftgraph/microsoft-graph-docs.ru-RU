@@ -2,15 +2,15 @@
 title: Получить присутствие
 description: Получите сведения о присутствии пользователя.
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 427a6140eb12b83d8195c55b68375e4d170449b6
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 976173ebd61c032ed45c8f6f06efc383f629e5f3
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896601"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085254"
 ---
 # <a name="get-presence"></a>Получить присутствие
 
@@ -25,7 +25,7 @@ ms.locfileid: "52896601"
 | :-------------- | :----------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Presence.Read, Presence.Read.All      |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                        |
-| Приложение                            | Не поддерживается.                        |
+| Для приложений                            | Не поддерживается.                        |
 
 > **Примечание:** Максимальная скорость запроса для этого API — 1500 запросов API в течение 30 секунд на каждого клиента.
 
@@ -43,7 +43,7 @@ GET /communications/presences
 | Авторизация | Bearer {токен}. Обязательный. |
 
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

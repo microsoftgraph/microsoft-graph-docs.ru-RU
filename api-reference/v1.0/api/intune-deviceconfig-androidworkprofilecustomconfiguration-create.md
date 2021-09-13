@@ -2,15 +2,15 @@
 title: Создание androidWorkProfileCustomConfiguration
 description: Создайте новый объект AndroidWorkProfileCustomConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 943b007125dbd438008dd580666f123ee8c6a883467966962b2ac635dafa2394
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1a4a89ba9af675e63bb7200857d064305e02e426
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54187289"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140334"
 ---
 # <a name="create-androidworkprofilecustomconfiguration"></a>Создание androidWorkProfileCustomConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "54187289"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,10 +41,10 @@ POST /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса предоставляем представление JSON для объекта AndroidWorkProfileCustomConfiguration.
 
 В следующей таблице показаны свойства, необходимые при создании androidWorkProfileCustomConfiguration.

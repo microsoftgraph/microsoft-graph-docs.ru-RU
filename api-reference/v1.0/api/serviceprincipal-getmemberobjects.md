@@ -1,22 +1,22 @@
 ---
 title: 'servicePrincipal: getMemberObjects'
-description: Получение списка групп и ролей каталога, в которых участвует субъект-служба. Это транзитивная проверка.
-localization_priority: Priority
+description: Получение списка групп и ролей каталога, в которых участвует субъект-служба.
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: b6da812b03bedcb78c43ae581e3aab99dfb2961f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6fbd6646201a37198334f748d5580591714f9f03
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050334"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110048"
 ---
 # <a name="serviceprincipal-getmemberobjects"></a>servicePrincipal: getMemberObjects
 
 Пространство имен: microsoft.graph
 
-Получение списка групп и ролей каталога, в которых участвует [servicePrincipal](../resources/serviceprincipal.md).  Это транзитивная проверка.
+Получение списка групп и ролей каталога, в которых участвует [servicePrincipal](../resources/serviceprincipal.md). Это транзитивная проверка.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

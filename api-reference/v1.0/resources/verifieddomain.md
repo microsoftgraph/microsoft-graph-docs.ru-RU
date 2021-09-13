@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса verifiedDomain
 description: Задает домен клиента. Свойство **verifiedDomains** объекта organization представляет собой коллекцию объектов **VerifiedDomain**.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jumaodhiss
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: d92a342ff1b275f0df7bc8d56cd8920466b3c5c681c65ade65d4c6736fc43b9d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1dca2c01b1ced34b78f4de21a5ded8bbb560d955
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211816"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139563"
 ---
 # <a name="verifieddomain-resource-type"></a>Тип ресурса verifiedDomain
 

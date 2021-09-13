@@ -2,15 +2,15 @@
 title: Добавление вкладки в чат
 description: 'Добавляет (пин-коды) вкладку в указанный чат. '
 author: subray
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1056a2b04a684102b52f8544724cf0e8c6be1404
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: e0d8fd822996dc5a7e69862482310be59cdfbef4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50960070"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59022935"
 ---
 # <a name="add-tab-to-chat"></a>Добавление вкладки в чат
 

@@ -2,15 +2,15 @@
 title: Тип ресурса SubscribeToToneOperation
 description: Описывает формат ответа при создании подписки для получения тона DTMF.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: bcae95f7c711ee1853885e851b7f281e7f6597bd70ccd808722f75b67141a6be
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 00ebfa20b1af8ed7aaf7e713a835aa719b2f30bf
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169258"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134467"
 ---
 # <a name="subscribetotoneoperation-resource-type"></a>Тип ресурса SubscribeToToneOperation
 
@@ -23,10 +23,10 @@ ms.locfileid: "54169258"
 | Свойство                       | Тип                        | Описание                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | clientContext                  | String                      | Клиентский контекст.                                                                                                                               |
-| id                             | String                      | ID операции сервера. Только для чтения.                                                                                             |
+| id                             | Строка                      | ID операции сервера. Только для чтения.                                                                                             |
 | status                         | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения.                                                 |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса workbookOperation
 description: Представляет состояние длительных операций с книгами.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: fe2cb3a1b899fb1aa9cef1fdc863a7d4432ead8877fed92bb0a53e40b62dd455
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0ec98d72f56eb2f066f221a0c7aadc389d01109b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54221147"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134166"
 ---
 # <a name="workbookoperation-resource-type"></a>тип ресурса workbookOperation
 
@@ -31,9 +31,9 @@ ms.locfileid: "54221147"
 |status|String| Текущее состояние операции. Возможные значения: `NotStarted`, `Running`, `Completed`, `Failed`.|
 |id|String| ID операции. Только для чтения.|
 |error|[workbookOperationError](workbookoperationerror.md)| Ошибка, возвращаемая операцией.|
-|resourceLocation|String| Ресурс URI для результата.|
+|resourceLocation|Строка| Ресурс URI для результата.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Нет
 

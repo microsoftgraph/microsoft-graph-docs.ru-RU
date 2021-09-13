@@ -2,15 +2,15 @@
 title: тип ресурсов auditLogRoot
 description: Содержит различные типы журналов аудита. Эти ресурсы возвращают однотонный ресурс auditLog. Он не содержит никаких полезных свойств.
 author: dhanyahk
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 363d3a0c3aafbbd5b3d53914748dfdb1fd432b1b
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 8658b8abd03f88b1427a8001d51ba142748f1c91
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50759729"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127075"
 ---
 # <a name="auditlogroot-resource-type"></a>тип ресурсов auditLogRoot
 
@@ -40,7 +40,7 @@ ms.locfileid: "50759729"
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже показано представление ресурса в формате JSON.
+Ниже представлено описание ресурса в формате JSON.
 
 <!--{
   "blockType": "resource",

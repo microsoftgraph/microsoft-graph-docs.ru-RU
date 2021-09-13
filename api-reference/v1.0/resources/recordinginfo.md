@@ -2,15 +2,15 @@
 title: тип ресурса recordingInfo
 description: Представляет сведения о записи для участника.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: aea3bcbcae882ff58f664f325efdfa9490773bde7d746af3a5341d6e0f288ef6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 54e230ca6844d974cf918325aab48e898d87e08b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54134982"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59078653"
 ---
 # <a name="recordinginfo-resource-type"></a>тип ресурса recordingInfo
 
@@ -23,7 +23,7 @@ ms.locfileid: "54134982"
 | Свойство        | Тип    | Описание|
 |:----------------|:--------|:----------|
 | initiator     | [identitySet](identitySet.md) | Удостоверения инициатора записи. |
-| recordingStatus | String | Возможные значения: `unknown` `notRecording` , , , или `recording` `failed` . |
+| recordingStatus | Строка | Возможные значения: `unknown` `notRecording` , , , или `recording` `failed` . |
 
 ## <a name="json-representation"></a>Представление JSON
 

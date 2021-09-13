@@ -2,15 +2,15 @@
 title: Создание educationSubmissionResource
 description: Добавьте ресурс в список ресурсов отправки.
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 552f37dfb9894bc8312ceaf0094f8c78c2d652e6
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 80b79b9a838776f1825e1e0f37b0537ee5295c54
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514577"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140775"
 ---
 # <a name="create-educationsubmissionresource"></a>Создание educationSubmissionResource
 
@@ -45,7 +45,7 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса поставляем представление JSON ресурса. Поддерживаемые [типы: educationExcelResource,](../resources/educationexcelresource.md) [educationFileResource,](../resources/educationfileresource.md) [educationLinkResource,](../resources/educationlinkresource.md) [educationPowerPointResource](../resources/educationpowerpointresource.md) и [educationWordResource.](../resources/educationwordresource.md)
 
 
@@ -96,7 +96,7 @@ Content-length: 1097
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

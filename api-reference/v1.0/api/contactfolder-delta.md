@@ -1,16 +1,16 @@
 ---
 title: 'contactFolder: delta'
 description: Получение набора папок контактов, которые были добавлены в почтовый ящик пользователя или удалены из него.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6126287711e042abb03705b01cf0fcd70e9fb69e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: fb8425eb7cfdbe3061a3abc2c419799378e797ac
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048794"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147773"
 ---
 # <a name="contactfolder-delta"></a>contactFolder: delta
 

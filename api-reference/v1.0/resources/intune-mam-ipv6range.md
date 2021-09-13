@@ -2,15 +2,15 @@
 title: Тип ресурса iPv6Range
 description: Определение диапазона IPv6.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 204d6dd4dfddbf7f1653cb0da14ba64b5dfe14b214328d98a4e187ffd402cd00
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 03e42ae8f9e996084739384a17a8d5c30df2bf45
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149781"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118105"
 ---
 # <a name="ipv6range-resource-type"></a>Тип ресурса iPv6Range
 
@@ -29,7 +29,7 @@ ms.locfileid: "54149781"
 |lowerAddress|String|Нижний адрес.|
 |upperAddress|String|Верхний адрес.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

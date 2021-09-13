@@ -1,16 +1,16 @@
 ---
 title: 'пользователь: changePassword'
 description: Обновление собственного пароля.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 2adf91adb5eab959dc981f0532c4017e838852ab
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 7d7990beabcfc03df677c6f4c15c9ae5f82171b4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53441713"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090049"
 ---
 # <a name="user-changepassword"></a>пользователь: changePassword
 
@@ -44,8 +44,8 @@ POST /me/changePassword
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-| currentPassword | String | Текущий пароль.|
-| newPassword | String | Новый пароль.|
+| currentPassword | Строка | Текущий пароль.|
+| newPassword | Строка | Новый пароль.|
 
 ## <a name="response"></a>Отклик
 

@@ -1,16 +1,16 @@
 ---
 title: Список сообщений
 description: Получение сообщений в почтовом ящике пользователя, выполнившего вход (в том числе сообщений в папках "Удаленные" и "Несрочные").
-localization_priority: Priority
+ms.localizationpriority: high
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ad594f12603668d0684523a25cd708be8b61eae8
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 398642777da6426278e2292cef252ea44b893809
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473964"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072667"
 ---
 # <a name="list-messages"></a>Список сообщений
 

@@ -2,15 +2,15 @@
 title: тип ресурса directRoutingLogRow
 description: Представляет строку данных в журнале вызовов прямой маршрутики.
 author: williamlooney
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b88634f3f6ab5d78852ca242a4d67265d267094d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3632d9305f82149a6711f48c8105fa5519353489
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58808046"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59025603"
 ---
 # <a name="directroutinglogrow-resource-type"></a>тип ресурса directRoutingLogRow
 
@@ -30,7 +30,7 @@ ms.locfileid: "58808046"
 |:---|:---|:---|
 |callEndSubReason|Int32| Помимо кодов SIP Корпорация Майкрософт имеет собственные подкоды, которые указывают на конкретную проблему.|
 |callType|Строка| Тип и направление вызова.|
-|calleeNumber|Строка| Номер пользователя или бота, который получил вызов. [Формат E.164,](https://en.wikipedia.org/wiki/E.164) но может включать дополнительные данные.|
+|calleeNumber|String| Номер пользователя или бота, который получил вызов. [Формат E.164,](https://en.wikipedia.org/wiki/E.164) но может включать дополнительные данные.|
 |callerNumber|Строка| Номер пользователя или бота, который сделал вызов. [Формат E.164,](https://en.wikipedia.org/wiki/E.164) но может включать дополнительные данные.|
 |correlationId|String|Идентификатор для вызова, который можно использовать при вызове службы поддержки Майкрософт. GUID.|
 |duration|Int32| Длительность вызова в секундах.|
@@ -38,7 +38,7 @@ ms.locfileid: "58808046"
 |failureDateTime|DateTimeOffset| Существует только для неудавшихся (не полностью установленных) вызовов.|
 |finalSipCodePhrase|Строка| Описание кода SIP и подкода Майкрософт.|
 |finalSipCode|Int32| Код, с которым завершился вызов, [RFC 3261](https://tools.ietf.org/html/rfc3261).|
-|id|Строка|Уникальный идентификатор вызовов. GUID.|
+|id|String|Уникальный идентификатор вызовов. GUID.|
 |inviteDateTime|DateTimeOffset| Когда было отправлено начальное приглашение.|
 |mediaBypassEnabled|Логический| Указывает, включен ли магистраль для обхода мультимедиа или нет.|
 |mediaPathLocation|Строка| Центр обработки данных, используемый для пути мультимедиа при вызове без обхода.|

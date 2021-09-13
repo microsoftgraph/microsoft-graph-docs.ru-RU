@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса educationClass
 description: 'Представляет курс в учебном заведении. Ресурс **educationClass** соответствует группе Microsoft 365 и имеет один и тот же ID. Учащиеся — постоянные участники курса, а преподаватели являются владельцами и обладают соответствующими правами. Чтобы решения для Office работали правильно, преподаватели должны быть включены как в коллекцию teachers, так и в коллекцию members.  '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mlafleur
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 3d1d6eb24e9d9b21ed8e828488ae306ec5c4bae549e51ecf0e69d63c5319e3a5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dfe36d8068d0a9fa8d2c9f6c8d38b504ee9c83c5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160060"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084561"
 ---
 # <a name="educationclass-resource-type"></a>Тип ресурса educationClass
 
@@ -52,7 +52,7 @@ ms.locfileid: "54160060"
 
 | Связь | Тип                                                          | Описание                                               |
 | :----------- | :------------------------------------------------------------ | :-------------------------------------------------------- |
-| group        | [group](../resources/group.md)                                | Объект Microsoft 365 группы.                |
+| group;        | [group](../resources/group.md)                                | Объект Microsoft 365 группы.                |
 | members      | Коллекция [educationUser](../resources/educationuser.md)     | Все пользователи для этого курса. Допускается значение NULL.                         |
 | schools      | Коллекция [educationSchool](../resources/educationschool.md) | Все учебные заведения, с которыми сопоставлен этот курс. Допускается значение NULL. |
 | teachers     | Коллекция [educationUser](../resources/educationuser.md)     | Все преподаватели для этого курса. Допускается значение null.                      |

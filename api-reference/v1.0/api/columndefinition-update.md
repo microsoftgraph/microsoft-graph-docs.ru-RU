@@ -2,15 +2,15 @@
 author: swapnil1993
 title: Обновление столбцаDefinition
 description: Обновление сайта, списка или столбца типа контента.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 97a43044473b6b8e3a2136a3075771861b58725a
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 1c7d7fda5676f88aa0d1c546417f05fe5983c538
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696779"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080137"
 ---
 # <a name="update-columndefinition"></a>Обновление столбцаDefinition
 Пространство имен: microsoft.graph
@@ -29,7 +29,7 @@ ms.locfileid: "58696779"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.Manage.All, Sites.FullControl.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение | Sites.Manage.All, Sites.FullControl.All |
+|Для приложений | Sites.Manage.All, Sites.FullControl.All |
 
   
 

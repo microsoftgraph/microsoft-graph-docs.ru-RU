@@ -1,16 +1,16 @@
 ---
 title: тип ресурса employeeOrgData
 description: Представляет данные организации, связанные с пользователем.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: users
 author: cmmdesai
-ms.openlocfilehash: e1fbbc82a4b3d9875b5e277c87d59877e162c5555b0bb2d5dcf6b0124d9227af
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8a0ee00ed1165eddd69a212419292a7690514238
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180868"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123610"
 ---
 # <a name="employeeorgdata-resource-type"></a>тип ресурса employeeOrgData
 
@@ -21,7 +21,7 @@ ms.locfileid: "54180868"
 ## <a name="properties"></a>Свойства
 | Свойство       | Тип    |Описание|
 |:---------------|:--------|:----------|
-| division | String | Имя подразделения, в котором работает пользователь. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter`. |
+| division | Строка | Имя подразделения, в котором работает пользователь. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter`. |
 | costCenter | String | Центр затрат, связанный с пользователем. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter`. |
 
 ## <a name="json-representation"></a>Представление JSON

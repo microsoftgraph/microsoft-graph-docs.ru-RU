@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 7dbcc62351df8cae8e354d60ea99cda25f32c45e
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d6cfb6cf359f8c21b41ed3aecb568637f9e529b7f4f5f8d1ccb46bbb5c2f952e
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50982188"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57366803"
 ---
 ```java
 

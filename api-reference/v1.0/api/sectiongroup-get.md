@@ -1,22 +1,22 @@
 ---
-title: Получение sectionGroup
-description: Получение свойств и связей объекта sectionGroup.
-localization_priority: Normal
+title: Get sectionGroup
+description: Извлечение свойств и связей объекта sectionGroup.
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 0e15caf09b1955bb583a63e767856ac03684ff16
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 9189f017eacc5531cbfcff41709f64175b3970f7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458901"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085135"
 ---
-# <a name="get-sectiongroup"></a>Получение sectionGroup
+# <a name="get-sectiongroup"></a>Get sectionGroup
 
 Пространство имен: microsoft.graph
 
-Получение свойств и связей объекта [sectionGroup](../resources/sectiongroup.md) .
+Извлечение свойств и связей объекта [sectionGroup.](../resources/sectiongroup.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -37,7 +37,7 @@ GET /sites/{id}/onenote/sectionGroups/{id}
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
-Запрос по умолчанию разворачивает `parentNotebook` и выбирает `id` `name` свойства, и `self` . Допустимые `expand` значения для групп разделов — `parentNotebook` и `parentSectionGroup` .
+Запрос по умолчанию расширяется и выбирает его свойства и `parentNotebook` `id` `name` `self` свойства. `expand`Допустимые значения для групп разделов и `parentNotebook` `parentSectionGroup` .
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|

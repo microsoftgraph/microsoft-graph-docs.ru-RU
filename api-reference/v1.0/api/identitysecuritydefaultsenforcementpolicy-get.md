@@ -1,16 +1,16 @@
 ---
 title: Get identitySecurityDefaultsEnforcementPolicy
 description: Извлечение свойств и связей объекта identitysecuritydefaultsenforcementpolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: rohinigoyal1
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8d4f85522374444183d06fd0715bc24ba937d678
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c02cdef2366f006b6aed1abc866bdfb04bf583e7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051384"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045771"
 ---
 # <a name="get-identitysecuritydefaultsenforcementpolicy"></a>Get identitySecurityDefaultsEnforcementPolicy
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/policies/identitySecurityDefaultsEnforcemen
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

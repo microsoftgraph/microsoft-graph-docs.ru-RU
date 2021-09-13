@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса dateTimeTimeZone
 description: Описывает дату, время и часовой пояс для определенного момента.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: resourcePageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: bfbd81bc08720e0974c34529502009dcff2a28b714327c09b71e3343d6042023
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 164394182d86cadb16df3bcfa96dc12645765b63
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124530"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59029068"
 ---
 # <a name="datetimetimezone-resource-type"></a>Тип ресурса dateTimeTimeZone
 

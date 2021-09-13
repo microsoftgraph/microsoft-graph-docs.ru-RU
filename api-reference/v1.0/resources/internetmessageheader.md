@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса internetMessageHeader
 description: 'Пара значений ключа, которая представляет заглавную статью интернет-сообщений, определяемую RFC5322, которая обеспечивает '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a1b3fbc979c8374b8f4c48b96ebe5dfc31b22cc5dd2849f686528d1a4e84cf06
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d51cfd902c4f4de189c76894a4821cb852220c9e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218697"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137625"
 ---
 # <a name="internetmessageheader-resource-type"></a>Тип ресурса internetMessageHeader
 

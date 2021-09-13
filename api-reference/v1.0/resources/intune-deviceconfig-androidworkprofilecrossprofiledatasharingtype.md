@@ -2,15 +2,15 @@
 title: тип enum androidWorkProfileCrossProfileDataSharingType
 description: Тип совместного доступа к данным профилей профилей android work.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a717091ed42e5632a1ed1f58c970b8e9ea3ad7a6de335cf25d531c27f072fb76
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d10b03041cf9344b6d35d729fd128848f9781445
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216786"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139900"
 ---
 # <a name="androidworkprofilecrossprofiledatasharingtype-enum-type"></a>тип enum androidWorkProfileCrossProfileDataSharingType
 

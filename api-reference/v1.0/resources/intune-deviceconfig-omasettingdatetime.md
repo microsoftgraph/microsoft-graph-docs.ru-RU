@@ -2,15 +2,15 @@
 title: Тип ресурса omaSettingDateTime
 description: Определение даты и времени параметра OMA.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ce1bd6a29a577c50cbe76e560019e4f9c65a534a0791db3bd5e650b9bc99bac7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fac8f51adfba47910b8527489ef8b745f67ba8b9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218599"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59146823"
 ---
 # <a name="omasettingdatetime-resource-type"></a>Тип ресурса omaSettingDateTime
 

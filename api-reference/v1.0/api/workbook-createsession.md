@@ -2,15 +2,15 @@
 title: 'книга: createSession'
 description: Создание нового сеанса книги.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f931313e09068892ebbe167ecb85d5577a148f92
-ms.sourcegitcommit: ceb192c3a41feb74cd720ddf2f0119c48bf1189b
+ms.openlocfilehash: 7fcb8f22338bfda0ae0a7ecef7566dce7af8196c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50575058"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130006"
 ---
 # <a name="workbook-createsession"></a>книга: createSession
 

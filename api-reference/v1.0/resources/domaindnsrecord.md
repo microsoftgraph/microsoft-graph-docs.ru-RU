@@ -1,16 +1,16 @@
 ---
 title: тип ресурса domainDnsRecord
 description: Объект DomainDnsRecord используется для вручия записей DNS.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: cffbc9210d16027a804eb7c48192b05f1fd2b13f1df7a2f4c377a0bc0faf6327
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fdd8dd884b19803aede0109a9c5c95bb3abe8585
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141772"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123798"
 ---
 # <a name="domaindnsrecord-resource-type"></a>тип ресурса domainDnsRecord
 
@@ -25,13 +25,13 @@ ms.locfileid: "54141772"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|String| Уникальный идентификатор, присвоенный этому объекту. Не является недействительным, только для чтения.|
-|isOptional|Логическое| Если эта запись является ложной, она должна быть настроена клиентом на хост DNS, чтобы Microsoft Online Services правильно работать с доменом. |
-|label|String| Значение, используемого при настройке имени записи DNS в хосте DNS. |
+|isOptional|Логический| Если эта запись является ложной, она должна быть настроена клиентом на хост DNS, чтобы Microsoft Online Services правильно работать с доменом. |
+|подпись|Строка| Значение, используемого при настройке имени записи DNS в хосте DNS. |
 |recordType|String| Указывает, какой тип записи DNS представляет этот объект.</br></br>Значение может быть одним из следующих: *CName*, *Mx*, *Srv*, *Txt*</br></br>Key |
 |supportedService|String| Microsoft Online Service или функция, зависимая от этой записи DNS.</br></br>Может быть одним из следующих значений: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*|
 |ttl|Int32| Значение, используемого при настройке свойства "время на жизнь" записи DNS в хосте DNS. Не является недействительным |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -1,3 +1,12 @@
+---
+ms.localizationpriority: medium
+ms.openlocfilehash: a31594b0add328d1515eeb4965334be724b02a05
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59289677"
+---
 <!-- markdownlint-disable MD002 MD041 -->
 
 В этом упражнении вы создадим, запустите и утвердите конвейер Azure Data Factory для извлечения данных из Microsoft 365 в служба хранилища Azure Blob для дополнительной обработки.

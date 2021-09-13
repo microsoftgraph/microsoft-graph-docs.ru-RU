@@ -1,17 +1,17 @@
 ---
 author: JeremyKelley
 ms.date: 09/10/2017
-title: Quota
-localization_priority: Normal
+title: Квота
+ms.localizationpriority: medium
 description: Ресурс quota предоставляет сведения об ограничениях дискового пространства в ресурсе Drive.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 36a88274fa2652d315ee7e69b1829268a4745b5f60cd2b07c295ec8b1f53ee53
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 71f0f29c4ab6979f7154940e9007665d020b7f68
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216660"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143812"
 ---
 # <a name="quota-resource-type"></a>Тип ресурса quota
 

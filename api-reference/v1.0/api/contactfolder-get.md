@@ -2,15 +2,15 @@
 title: Получение объекта contactFolder
 description: Получение папки контактов с помощью ее идентификатора.
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0658417489505cbb6179c1be1b9a39ec4dc3b343
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a35ad2374d284d43f596616df1acca455b13f641
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039862"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147775"
 ---
 # <a name="get-contactfolder"></a>Получение объекта contactFolder
 
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

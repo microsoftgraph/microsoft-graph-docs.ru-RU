@@ -2,15 +2,15 @@
 title: тип ресурса educationSubmissionIndividualRecipient
 description: 'Подкласс educationSubmissionRecipient, который указывает, что представление назначено человеку в классе.  '
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 0de23919cf6e4ada2a1530f5dc87977a60890912ff276fe3ab1acaed30815909
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e67acc0787df384de6cd6a5b308154a08cc2fd0f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205873"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123624"
 ---
 # <a name="educationsubmissionindividualrecipient-resource-type"></a>тип ресурса educationSubmissionIndividualRecipient
 

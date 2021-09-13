@@ -2,15 +2,15 @@
 title: Создание identityApiConnector
 description: Создание нового объекта identityApiConnector.
 author: nickgmicrosoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8cdebdaa8ed86e6d6d60ad07c987b2152baf6737
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 56a918bccf37edff4a53cc18cc6c12ec9232bd8a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920366"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59045835"
 ---
 # <a name="create-identityapiconnector"></a>Создание identityApiConnector
 
@@ -31,7 +31,7 @@ ms.locfileid: "51920366"
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока внешних пользователей удостоверений
+* Администратор внешних Flow удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -59,7 +59,7 @@ POST /identity/apiConnectors
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка| Имя соединитетеля API. |
+|displayName|String| Имя соединитетеля API. |
 |targetUrl|Строка| URL-адрес конечной точки API для вызова. |
 |проверка подлинностиКонфигурация|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|Объект, описывая сведения о конфигурации проверки подлинности для вызова API. [Поддерживается базовая](../resources/basicauthentication.md) проверка подлинности и [клиентский сертификат PKCS 12.](../resources/pkcs12certificate.md)|
 

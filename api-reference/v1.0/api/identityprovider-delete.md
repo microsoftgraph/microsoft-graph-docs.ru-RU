@@ -1,16 +1,16 @@
 ---
 title: Удаление identityProvider
 description: Удаление существующего объекта identityProvider
-localization_priority: Priority
+ms.localizationpriority: high
 author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 748385919f1c70954366834478e507d95917811e
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: fa584ec588bcea797cb343435e024863b6a1c546
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580662"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114423"
 ---
 # <a name="delete-identityprovider-deprecated"></a>Удаление identityProvider (не рекомендуется)
 Пространство имен: microsoft.graph

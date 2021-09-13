@@ -2,15 +2,15 @@
 title: Удаление устройства
 description: Удаление зарегистрированного устройства.
 author: spunukol
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9aa477f6b5ef1505a6fe8b26a0afc980d0adc04e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: fe73c6c8e083d3021e31dff1721e2d68b2594f73
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434617"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59114689"
 ---
 # <a name="delete-device"></a>Удаление устройства
 
@@ -24,7 +24,7 @@ ms.locfileid: "50434617"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All |
+|Делегированные (рабочая или учебная учетная запись) | Device.ReadWrite.All, Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -48,7 +48,7 @@ DELETE /devices/{id}
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -77,7 +77,7 @@ DELETE https://graph.microsoft.com/v1.0/devices/{id}
 
 ---
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",

@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Перемещение файла или папки
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 description: Чтобы переместить ресурс DriveItem в новый родительский элемент, веб-приложению требуется обновить элемент parentReference из DriveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 9465ac1ad39781ee330d134c763c8189e89d208f
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 39259976b5c09bcae53963bd651a9420b558ac9f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50516754"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59140817"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>Перемещение ресурса DriveItem в новую папку
 

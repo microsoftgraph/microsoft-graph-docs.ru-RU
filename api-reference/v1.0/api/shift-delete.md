@@ -2,15 +2,15 @@
 title: Удаление смены
 description: Удаление переноса из расписания.
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6c1db199016bcd8d81d7c4209240f854a218d53d
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 3a4e0070d56ba2004355f82d0b13db78fe1d61d2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787753"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118955"
 ---
 # <a name="delete-shift"></a>Удаление смены
 
@@ -42,7 +42,7 @@ DELETE /teams/{teamId}/schedule/shifts/{shiftId}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

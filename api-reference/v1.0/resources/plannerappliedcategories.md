@@ -1,16 +1,16 @@
 ---
 title: тип ресурса plannerAppliedCategories
 description: Ресурс **AppliedCategoriesCollection** представляет коллекцию категорий (или меток), которые были применены к задаче. Это часть объекта plannerTask.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 1a7513ed9746cb73a08882f3b9c9167ef5336e281bf21fa7f359c80541232c81
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7095c2f2069b89009c9f8cdbe5908812dd03620f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246656"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59044400"
 ---
 # <a name="plannerappliedcategories-resource-type"></a>тип ресурса plannerAppliedCategories
 
@@ -23,9 +23,9 @@ ms.locfileid: "54246656"
 ## <a name="properties"></a>Свойства
 Свойства открытого типа могут быть определены клиентом. В этом случае, однако, клиент должен предоставить , , , и / или как свойства с их значениями быть `category1` `category2` `category3` `category4` `category5` `category6` `true` boolean, когда соответствующие категории применяются к задаче. Пример показан ниже. Если они не применяются, свойства автоматически удаляются, устанавливая их значения в `false` boolean. 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
-Ниже этот ресурс представлен в формате JSON.
+Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",

@@ -2,15 +2,15 @@
 title: 'serviceUpdateMessage: markRead'
 description: Пометить список сообщений об обновлении службы в качестве чтения для подписанного пользователя.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 857c04e33e9a8ce2f833cacd55b0a80c4167522b
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: c83e4e6c58db14bbb5d51c78138254bdae80fc2d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266360"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59119060"
 ---
 # <a name="serviceupdatemessage-markread"></a>serviceUpdateMessage: markRead
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "58266360"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|ServiceMessageViewpoint.Write|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается|
+|Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
 

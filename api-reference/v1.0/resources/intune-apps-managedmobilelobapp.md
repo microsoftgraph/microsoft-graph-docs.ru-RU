@@ -2,15 +2,15 @@
 title: Тип ресурса managedMobileLobApp
 description: Абстрактный базовый класс, содержащий свойства для всех управляемых мобильных бизнес-приложений.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c57bf5d87e7081863c07e49fb682b831d8c645f109a82717529a538684b2ad1b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 436e4b65a900fe7ad8c5933dad23e46a04f47ca7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130263"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123232"
 ---
 # <a name="managedmobilelobapp-resource-type"></a>Тип ресурса managedMobileLobApp
 

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса userAgent
 description: Тип userAgent
-localization_priority: Normal
+ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 3a32c74957d0d0a2c41323c1f76d4e990897d61948892821e2d56154eceec271
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a4154992fd6e187b54a3a794b770e7c53966ce52
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189921"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113737"
 ---
 # <a name="useragent-resource-type"></a>тип ресурса userAgent
 
@@ -24,7 +24,7 @@ ms.locfileid: "54189921"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |applicationVersion|String|Определяет версию программного обеспечения приложения, используемого этой конечной точкой.|
-|headerValue|String|Значение заглавной точки пользователя-агента, сообщаемого этой конечной точкой.|
+|headerValue|Строка|Значение заглавной точки пользователя-агента, сообщаемого этой конечной точкой.|
 
 ## <a name="json-representation"></a>Представление JSON
 

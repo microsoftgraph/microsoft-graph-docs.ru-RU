@@ -2,15 +2,15 @@
 title: тип ресурсов educationLinkResource
 description: Подкласс educationResource.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 75bf61ce0ce48c2419d1a6c732030d3048fb7445d1d70a12bd76b1d2d0b6650f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1429ef21a8ff96ed1afdce14e2590ee4ce937f6e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184916"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036636"
 ---
 # <a name="educationlinkresource-resource-type"></a>тип ресурсов educationLinkResource
 
@@ -24,7 +24,7 @@ ms.locfileid: "54184916"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|link|String|URL-адрес ресурса.|
+|link|Строка|URL-адрес ресурса.|
 
 ## <a name="json-representation"></a>Представление JSON
 

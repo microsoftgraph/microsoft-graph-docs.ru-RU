@@ -1,16 +1,16 @@
 ---
 title: тип ресурса conditionalAccessApplications
 description: Представляет приложения и действия пользователей, включенные и исключенные из области политики.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 54bf29579240514b5b5d224e54c6246638c703083df6ab230a44bf66a9c47c69
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bd1b478b3bb77617d132a38217e43e4b053a2772
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54223643"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084617"
 ---
 # <a name="conditionalaccessapplications-resource-type"></a>тип ресурса conditionalAccessApplications
 
@@ -24,9 +24,9 @@ ms.locfileid: "54223643"
 |:-------------|:------------|:------------|
 | includeApplications | Коллекция String | Список ID приложений, к который применяется политика, если явно не исключено (в исключенииApplications). Также можно установить `All` . |
 | excludeApplications | Коллекция String | Список ID приложений явно исключен из политики. |
-| includeUserActions | Коллекция строк | Действия пользователя, которые необходимо включить. Поддерживаемые значения `urn:user:registersecurityinfo` и `urn:user:registerdevice` |
+| includeUserActions | Коллекция String | Действия пользователя, которые необходимо включить. Поддерживаемые значения `urn:user:registersecurityinfo` и `urn:user:registerdevice` |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

@@ -2,15 +2,15 @@
 title: Ответы Graph API безопасности
 description: Ошибки в API Graph безопасности возвращаются с помощью стандартного кода состояния частичного контента HTTP 206 и доставляются через предупреждающий заголовок.
 author: preetikr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: 1ec7f0846c0de3674f36cbe0c9a0499ad72481692679e73784a8aafb53387cc2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 329b3e9da2276631963f763e756560aa8f9fdc70
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205207"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137506"
 ---
 # <a name="microsoft-graph-security-api-error-responses"></a>Ответы Graph API безопасности
 
@@ -27,7 +27,7 @@ API Graph безопасности — это федератная служба,
 {Vendor}/{Provider}/{StatusCode}/{LatencyInMs}
 ```
 
-Этот предостережение отправляется клиентам только в том случае, если один из поставщиков данных возвращает код ошибки, не 2xx или 404. Например,
+Этот предостережение отправляется клиентам только в том случае, если один из поставщиков данных возвращает код ошибки, не 2xx или 404. Примеры:
 
 - HttpStatusCode.Forbidden (403) может быть возвращен, если доступ к ресурсу не предоставлен.
 - Если поставщик разовое время, в загоне предупреждения возвращается httpStatusCode.GatewayTimeout (504).

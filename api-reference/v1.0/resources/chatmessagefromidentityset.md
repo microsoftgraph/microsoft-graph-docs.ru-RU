@@ -2,15 +2,15 @@
 title: тип ресурса chatMessageFromIdentitySet
 description: Представляет отправитель сообщения в чате или канале.
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 58f5654dc8019950134c25cdc50529b29032d8870462d46a46481b489f4ba15a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1f9b06063976e336a3e316c4ef5ca2c6ce9de622
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192581"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094423"
 ---
 # <a name="chatmessagefromidentityset-resource-type"></a>тип ресурса chatMessageFromIdentitySet
 
@@ -28,7 +28,7 @@ ms.locfileid: "54192581"
 |device;|[identity](../resources/identity.md)|Наследуется от [identitySet](../resources/identityset.md). Не используется.|
 |пользователь|[identity](../resources/identity.md)|Наследуется от [identitySet](../resources/identityset.md). Если присутствует, представляет пользователя, отправив сообщение.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

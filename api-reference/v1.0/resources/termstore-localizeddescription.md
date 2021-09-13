@@ -2,15 +2,15 @@
 title: локализованный тип ресурсаDescription
 description: Представляет локализованное описание, используемое для описания термина в магазине терминов.
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: resourcePageType
-ms.openlocfilehash: ea44c35e4b8f7dd5eb1eadc7cbb6e4861a402b4d
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 856b0632e0ed1d167d45be55437c4fee97d99e4e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58515055"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084064"
 ---
 # <a name="localizeddescription-resource-type"></a>локализованный тип ресурсаDescription
 
@@ -25,7 +25,7 @@ ms.locfileid: "58515055"
 |description|Строка|Описание на локализованных языках.|
 |LanguageTag|Строка|Тег языка для метки.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

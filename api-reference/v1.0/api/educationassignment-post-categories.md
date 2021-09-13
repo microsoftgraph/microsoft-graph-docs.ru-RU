@@ -1,16 +1,16 @@
 ---
 title: Создание educationCategories
 description: Добавление существующей системы educationCategory в educationAssignment
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: daf3999953439e383dd5da6b71907aa963b2a13c
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 50190e1138f18f916d2420e6e8dc8b884a4a8bd0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991394"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105386"
 ---
 # <a name="create-educationcategories"></a>Создание educationCategories
 

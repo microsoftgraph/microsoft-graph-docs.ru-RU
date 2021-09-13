@@ -2,15 +2,15 @@
 author: swapnil1993
 title: 'contentType: associateWithHubSites'
 description: Связывать тип контента со списком сайтов-концентраторов.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: ae0cfe842b77b58134b127202e559711220f5aa3
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 759a2265cfd0d8a470ba6619acb7b8b1478cebb6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696712"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147679"
 ---
 # <a name="contenttype-associatewithhubsites"></a>contentType: associateWithHubSites
 
@@ -32,7 +32,7 @@ ms.locfileid: "58696712"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.Manage.All, Sites.FullControl.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение | Sites.Manage.All, Sites.FullControl.All |
+|Для приложений | Sites.Manage.All, Sites.FullControl.All |
 
   
 
@@ -59,7 +59,7 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/associateWithHubSites
 
 |Параметр|Тип|Описание|
 |-|-|-|
-|hubSiteUrls| Коллекция (строка) |Список канонических URL-адресов сайтов-концентраторов, на которых необходимо применять тип контента. Обязательный элемент.|
+|hubSiteUrls| Коллекция (строка) |Список канонических URL-адресов сайтов-концентраторов, на которых необходимо применять тип контента. Обязательно.|
 |propagateToExistingLists| Логический |Если типы контента будут применяться в существующих списках на сайтах концентратора; в противном случае он будет применяться только к вновь `true` созданным спискам.|
 
 ## <a name="response"></a>Ответ
@@ -70,6 +70,8 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/associateWithHubSites
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "contenttype_associatewithhubsites"
@@ -86,6 +88,24 @@ Content-Type: application/json
    "propagateToExistingLists":false
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/contenttype-associatewithhubsites-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/contenttype-associatewithhubsites-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/contenttype-associatewithhubsites-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/contenttype-associatewithhubsites-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ---
 
 

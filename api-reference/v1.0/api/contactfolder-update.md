@@ -2,15 +2,15 @@
 title: Обновление объекта contactFolder
 description: Обновление свойств объекта contactFolder.
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b0dca141622a784702a2a2153774d8564d4ccc55
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c0b67c1b74ae7d5b429eec5c8636e0ad27618ca6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52035717"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147733"
 ---
 # <a name="update-contactfolder"></a>Обновление объекта contactFolder
 
@@ -87,7 +87,7 @@ Content-length: 84
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

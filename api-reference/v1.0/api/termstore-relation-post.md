@@ -2,15 +2,15 @@
 title: Создание связи
 description: Создайте новый объект связи.
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 67bcc4f166e960eea1bce786d7dd8b3cda7fa873
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 635af5f08c21a8596047ce9fe61e27bef85d5d33
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58513921"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084848"
 ---
 # <a name="create-relation"></a>Создание связи
 Пространство имен: microsoft.graph.termStore

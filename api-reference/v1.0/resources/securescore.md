@@ -1,16 +1,16 @@
 ---
 title: тип ресурса secureScore
 description: Представляет безопасную оценку клиента в день подсчета данных на уровне клиента и управления.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: fbc942784813545f5d276addbd4581cf30ea82c8c2d8d6cf17d5f3ef3fbc7246
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 01499bbd755739310bc309656379bde278401544
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180483"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59084127"
 ---
 # <a name="securescore-resource-type"></a>тип ресурса secureScore
 
@@ -37,7 +37,7 @@ ms.locfileid: "54180483"
 |   activeUserCount |   Int32   |   Активный учет пользователей данного клиента.  |
 |   createdDateTime |   DateTimeOffset  |   Дата создания объекта.  |
 |   currentScore    |   Двойное с плавающей точкой  |   Текущая оценка клиента в указанную дату.    |
-|   enabledServices |   Коллекция строк   |   Службы, предоставляемые Корпорацией Майкрософт для клиента (например, Exchange, Skype, Sharepoint).   |
+|   enabledServices |   Коллекция String   |   Службы, предоставляемые Корпорацией Майкрософт для клиента (например, Exchange, Skype, Sharepoint).   |
 |   licensedUserCount   |   Int32   |   Количество лицензированных пользователей данного клиента.    |
 |   maxScore |  Двойное с плавающей точкой  |   Максимально возможный балл клиента в указанную дату.    |
 |   averageComparativeScores |  [коллекция averageComparativeScore](averagecomparativescore.md)    |Средняя оценка по различным сферам (например, в среднем по отрасли, в среднем по местам) и категории управления (Identity, Data, Device, Apps, Infrastructure) в пределах области. |

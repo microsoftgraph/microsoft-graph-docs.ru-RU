@@ -1,16 +1,16 @@
 ---
 title: тип ресурса plannerChecklistItems
 description: Ресурс **plannerChecklistItemCollection** представляет коллекцию элементов контрольного списка для задачи. Это открытый тип. Это часть объекта сведений о задачах. Значение в паре свойство-значение — это объект checklistItem.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: f465adf89e9cb344013e30edccf03513f8fb96065e676ffb78d7cb8fa13f14ac
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2badca7f220c3686e0064bf3624934d2d1d1a08c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178075"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129853"
 ---
 # <a name="plannerchecklistitems-resource-type"></a>тип ресурса plannerChecklistItems
 
@@ -24,7 +24,7 @@ ms.locfileid: "54178075"
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже этот ресурс представлен в формате JSON.
+Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",

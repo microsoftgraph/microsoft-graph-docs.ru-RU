@@ -2,15 +2,15 @@
 title: 'educationSchool: delta'
 description: Создайте новые или обновленные школы, не выполняя полное чтение всей школьной коллекции.
 author: mlafleur
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5f77334e3149dd963a0a2092faae5aa11bd8bd9a
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: c940ad7024d1c1371f5d7a7002fac97b9632bf3f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474936"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147383"
 ---
 # <a name="educationschool-delta"></a>educationSchool: delta
 
@@ -18,7 +18,7 @@ ms.locfileid: "52474936"
 
 Создайте новые или обновленные школы, не выполняя полное чтение всей школьной коллекции. Подробные [сведения см. в запросе Use Delta.](/graph/delta-query-overview)
 
-## <a name="permissions"></a>Разрешения:
+## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -26,7 +26,7 @@ ms.locfileid: "52474936"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic                         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Приложение                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+| Для приложений                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,13 +45,13 @@ GET /education/schools/delta
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы эта функция возвращает код отклика и `200 OK` [коллекцию educationSchool](../resources/educationschool.md) в тексте ответа. Отклик также содержит URL-адрес `nextLink` или `deltaLink`.
+В случае успешной работы эта функция возвращает код отклика и `200 OK` [коллекцию educationSchool](../resources/educationschool.md) в тексте ответа. Оклик также содержит URL-адрес `nextLink` или `deltaLink`.
 
 - Если возвращается URL-адрес `nextLink`, это означает, что во время сеанса получены не все страницы данных. Приложение продолжает отправлять запросы, используя URL-адрес `nextLink`, пока в ответ не будет включен URL-адрес `deltaLink`.
 - Если возвращается URL-адрес `deltaLink`, это означает, что больше нет данных о текущем состоянии ресурса. Сохраните и используйте `deltaLink` URL-адрес, чтобы узнать об изменениях в ресурсе в будущем.

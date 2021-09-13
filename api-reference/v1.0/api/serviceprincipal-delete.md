@@ -1,22 +1,22 @@
 ---
 title: Удалить servicePrincipal
 description: Удаление servicePrincipal.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 8c73778adc2f4e7bf4f933ca1775656e1d7ce2fc
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: fb898596825767707b680014eb9a4ba2608883f7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134626"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110125"
 ---
 # <a name="delete-serviceprincipal"></a>Удалить servicePrincipal
 
 Пространство имен: microsoft.graph
 
-Удаление объекта [servicePrincipal.](../resources/serviceprincipal.md)
+Удаление [объекта servicePrincipal.](../resources/serviceprincipal.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

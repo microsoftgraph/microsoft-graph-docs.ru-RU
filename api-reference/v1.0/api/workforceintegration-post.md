@@ -1,16 +1,16 @@
 ---
 title: Создание рабочей силыИнтеграция
 description: Создание нового объекта workforceIntegration.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2eee6b620bcd22e571a2b526d4a43e70fe91416a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ecaf8ae0b99c517f63ce6cb800d44a4627d46dc7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055647"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143946"
 ---
 # <a name="create-workforceintegration"></a>Создание рабочей силыИнтеграция
 

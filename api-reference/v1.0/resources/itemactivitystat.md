@@ -2,15 +2,15 @@
 author: daspek
 title: тип ресурса itemActivityStat
 description: Объект ItemActivityStat предоставляет сведения о действиях, которые произошли на элементе.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 8fe252948bc717584204ec9be0c34cd23e5799d1bf382ef9aa45b28cfc21d6ca
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 97702f31f8b6125b06d3c34eba9eda596604422c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54130088"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59113667"
 ---
 # <a name="itemactivitystat-resource-type"></a>тип ресурса itemActivityStat
 
@@ -23,7 +23,7 @@ ms.locfileid: "54130088"
 | Свойство         | Тип                    | Описание
 |:-----------------|:------------------------|:----------------------------------------
 | incompleteData   | [incompleteData][]      | Указывает, что статистика в этом интервале основана на неполных данных. Только для чтения.
-| isTrending       | Логическое                 | Указывает, является ли элемент "трендом". Только для чтения.
+| isTrending       | Логический                 | Указывает, является ли элемент "трендом". Только для чтения.
 | startDateTime    | DateTimeOffset          | Когда начинается интервал. Только для чтения.
 | endDateTime      | DateTimeOffset          | Когда интервал заканчивается. Только для чтения.
 | create           | [itemActionStat][]      | Статистика создания **действий** в этом интервале. Только для чтения.

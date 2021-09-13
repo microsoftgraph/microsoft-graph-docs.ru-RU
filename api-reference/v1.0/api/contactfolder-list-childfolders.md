@@ -2,15 +2,15 @@
 title: Список childFolders
 description: Получение коллекции дочерних папок для указанной папки с контактами.
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 805903a3a8b04b5f83428edea379d32a4a0fde7a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e8f9df352806b4f810192b029ccf06ebe136ec24
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048787"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59147761"
 ---
 # <a name="list-childfolders"></a>Список childFolders
 
@@ -39,7 +39,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}/childFolders
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,22 +1,22 @@
 ---
 author: learafa
-description: Возврат извлеченного ресурса driveItem, который делает версию документа доступной другим пользователям.
+description: Проверьте проверенный ресурс driveItem, который делает версию документа доступной для других.
 title: 'driveItem: checkin'
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: d6b38b5418b29bd9e86e664c95299a159a82c0f4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6c98cf8ced988a769b12726b5d2b8a0f60f33c05
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009921"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090665"
 ---
 # <a name="driveitem-checkin"></a>driveItem: checkin
 
 Пространство имен: microsoft.graph
 
-Возврат извлеченного ресурса **driveItem** , который делает версию документа доступной другим пользователям.
+Проверьте проверенный **ресурс driveItem,** который делает версию документа доступной для других.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,19 +40,19 @@ POST /sites/{siteId}/drive/items/{itemId}/checkin
 POST /users/{userId}/drive/items/{itemId}/checkin
 ```
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 
 |   Имя    | Значение  |                                                Описание                                                |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------- |
-| checkInAs | string | Необязательный параметр. Состояние документа после завершения операции возврата. Может иметь значение `published` либо значение может быть не указано. |
+| checkInAs | string | Необязательно. Состояние документа после завершения операции регистрации. Может иметь значение `published` либо значение может быть не указано. |
 | comment   | string | Комментарий к возврату, сопоставленный с версией.                                                   |
 
 ## <a name="response"></a>Отклик
 
-В случае успеха вызов API возвращает `204 No content` .
+В случае успешной работы возвращается вызов `204 No content` API.
 
 ## <a name="example"></a>Пример
 

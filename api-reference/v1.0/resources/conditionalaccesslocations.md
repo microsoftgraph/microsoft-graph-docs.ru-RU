@@ -1,16 +1,16 @@
 ---
 title: тип ресурса conditionalAccessLocations
 description: Представляет расположения, включенные и исключенные из области политики.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: e2ad772d4e41e9244b126b8df4e0052d27a3a3d20ae9db7a974b4765eb0d190d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 68804b5728fd058d2502ac041a24c3a218692b93
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205929"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109249"
 ---
 # <a name="conditionalaccesslocations-resource-type"></a>тип ресурса conditionalAccessLocations
 
@@ -23,13 +23,13 @@ ms.locfileid: "54205929"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 | includeLocations | Коллекция String | Определения местоположения в области политики, если явно не исключены, `All` или `AllTrusted` . |
-| excludeLocations | Коллекция строк | ИД расположения исключены из области политики. |
+| excludeLocations | Коллекция String | ИД расположения исключены из области политики. |
 
 ## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

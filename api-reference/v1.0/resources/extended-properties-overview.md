@@ -1,16 +1,16 @@
 ---
 title: Общие сведения о расширенных свойствах Outlook
 description: 'Расширенные свойства позволяют хранить пользовательские данные и специально служат в качестве резервного механизма для приложений, чтобы получать доступ '
-localization_priority: Priority
+ms.localizationpriority: high
 author: abheek-das
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: f751abd400bf74d4c672edd2e4922f99de28b8373ab5b219eb7c56f4e8cd2e45
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4cc8e9460c21aa2e3a07b1ad9faada50a98df5e4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141730"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59123526"
 ---
 # <a name="outlook-extended-properties-overview"></a>Общие сведения о расширенных свойствах Outlook
 

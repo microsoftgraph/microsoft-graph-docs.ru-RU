@@ -2,13 +2,13 @@
 title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
-localization_priority: Priority
-ms.openlocfilehash: ea4df31ae070991725b3e2dcbe75cc9e428082b1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.localizationpriority: high
+ms.openlocfilehash: 8935a5e0cc075fb88ea39fa6390be49a52a68f25
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58786265"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133977"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 

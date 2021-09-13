@@ -2,15 +2,15 @@
 title: Получение домена
 description: Извлечение свойств и связей объекта домена.
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5ff05e7df119afe6d858453d65a3db29de8ee0d8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 17b1e2b9220e4a9d8ba657b327c774121adf05e2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052427"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59056704"
 ---
 # <a name="get-domain"></a>Получение домена
 
@@ -25,9 +25,9 @@ ms.locfileid: "52052427"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All    |
+|Делегированные (рабочая или учебная учетная запись) | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All |
+|Для приложений | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
 
