@@ -2,15 +2,15 @@
 title: Удаление deviceManagementConfigurationSettingTemplate
 description: Удаляет устройствоManagementConfigurationSettingTemplate.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b58595249ffd12164ddd23de86e9deb4b8115a18
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 63c9649303d0f995e89ad1949068ef9684e20df6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791370"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59122280"
 ---
 # <a name="delete-devicemanagementconfigurationsettingtemplate"></a>Удаление deviceManagementConfigurationSettingTemplate
 
@@ -29,7 +29,7 @@ ms.locfileid: "58791370"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

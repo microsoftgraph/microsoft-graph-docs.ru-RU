@@ -1,16 +1,16 @@
 ---
 title: Создание trustFrameworkPolicy
 description: Эта операция создает новый объект trustFrameworkPolicy в клиенте Azure AD B2C.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7c0b298926eb3c8adfc9f7bae1694a4c73159564fca0cb8bc1ca7c7ce75ed42e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: fff0d38394adccfbac85bd32b10a41f1b9911a4c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54203521"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59102131"
 ---
 # <a name="create-trustframeworkpolicy"></a>Создание trustFrameworkPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "54203521"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Policy.ReadWrite.TrustFramework|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение|Policy.ReadWrite.TrustFramework|
+|Для приложений|Policy.ReadWrite.TrustFramework|
 
 Рабочая или учебная учетная запись должна быть глобальным администратором клиента.
 

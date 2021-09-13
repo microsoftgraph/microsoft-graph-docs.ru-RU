@@ -2,15 +2,15 @@
 title: Получить windowsDriverUpdateProfile
 description: Чтение свойств и связей объекта WindowsDriverUpdateProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: abc09d1f37b4fdbd5ce2f973c29d3e479fd5ffec
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: a54318f9ed226bd118adeb0bbe536257810af745
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58805904"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138493"
 ---
 # <a name="get-windowsdriverupdateprofile"></a>Получить windowsDriverUpdateProfile
 

@@ -2,15 +2,15 @@
 title: Get deviceManagementAutopilotPolicyStatusDetail
 description: Чтение свойств и связей объекта deviceManagementAutopilotPolicyStatusDetail.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9bc95867a10d59e2c33005ccffcec3d67c22ef11
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 6ecf8a1950f77060eff546251443264b4c632470
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58264719"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59132185"
 ---
 # <a name="get-devicemanagementautopilotpolicystatusdetail"></a>Get deviceManagementAutopilotPolicyStatusDetail
 
@@ -27,7 +27,7 @@ ms.locfileid: "58264719"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ GET /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policyS
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

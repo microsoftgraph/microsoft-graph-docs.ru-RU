@@ -2,15 +2,15 @@
 title: Перечисление объектов androidCustomConfiguration
 description: Перечисление свойств и связей объектов androidCustomConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 68dc8ad09b35ecc98d973e0b7bc422162036dc0a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 400ad7720f401d93eac2dacaa6097bb39916d91a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795075"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098184"
 ---
 # <a name="list-androidcustomconfigurations"></a>Перечисление объектов androidCustomConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "58795075"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

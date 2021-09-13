@@ -2,15 +2,15 @@
 title: функция getLicensesForApp
 description: Пока не задокументировано.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 00b336aaf160b58e287dd1d4e2a9a552e75f8603
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e33f53d98f72a9adda79176179ad875762f6d9de
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58815948"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59092702"
 ---
 # <a name="getlicensesforapp-function"></a>функция getLicensesForApp
 

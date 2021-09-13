@@ -2,15 +2,15 @@
 title: Тип ресурса hardwareInformation
 description: Сведения о оборудовании данного устройства.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a01c6b27d57947d14ba907a0d2dcf662b5e57f79
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 852806fafba9437c88d538b6491457afed82d47a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799798"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101234"
 ---
 # <a name="hardwareinformation-resource-type"></a>Тип ресурса hardwareInformation
 
@@ -34,29 +34,29 @@ ms.locfileid: "58799798"
 |model|String|Модель устройства|
 |phoneNumber|String|Номер телефона устройства|
 |subscriberCarrier|String|Оператор абонента устройства|
-|cellularTechnology|Строка|Клеточная технология устройства|
-|wifiMac|Строка|Mac-адрес WiFi устройства|
-|operatingSystemLanguage|Строка|Язык операционной системы устройства|
+|cellularTechnology|String|Клеточная технология устройства|
+|wifiMac|String|Mac-адрес WiFi устройства|
+|operatingSystemLanguage|String|Язык операционной системы устройства|
 |isSupervised|Boolean|Контролируемый режим устройства|
 |isEncrypted|Boolean|Состояние шифрования устройства|
-|batterySerialNumber|Строка|Серийный номер текущего аккумулятора устройства|
+|batterySerialNumber|String|Серийный номер текущего аккумулятора устройства|
 |batteryHealthPercentage|Int32|Процент состояния текущего аккумулятора устройства. Допустимые значения: от 0 до 100|
 |batteryChargeCycles|Int32|Количество циклов заряда текущего аккумулятора устройства прошло. Допустимые значения от 0 до 2147483647|
-|isSharedDevice|Логический|Общие iPad|
+|isSharedDevice|Логическое|Общие iPad|
 |sharedDeviceCachedUsers|[sharedAppleDeviceUser](../resources/intune-devices-sharedappledeviceuser.md) collection|Все пользователи на совместном устройстве Apple|
-|tpmSpecificationVersion|Строка|Строка, которая указывает версию спецификации.|
-|operatingSystemEdition|Строка|Строка, заданная в выпуске ОС.|
-|deviceFullQualifiedDomainName|Строка|Возвращает полностью квалифицированное доменное имя устройства (если таково). Если устройство не присоединилось к домену, оно возвращает пустую строку. |
+|tpmSpecificationVersion|String|Строка, которая указывает версию спецификации.|
+|operatingSystemEdition|String|Строка, заданная в выпуске ОС.|
+|deviceFullQualifiedDomainName|String|Возвращает полностью квалифицированное доменное имя устройства (если таково). Если устройство не присоединилось к домену, оно возвращает пустую строку. |
 |deviceGuardVirtualizationBasedSecurityHardwareRequirementState|[deviceGuardVirtualizationBasedSecurityHardwareRequirementState](../resources/intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)|Состояние требований к оборудованию безопасности на основе виртуализации. Возможные значения: `meetHardwareRequirements`, `secureBootRequired`, `dmaProtectionRequired`, `hyperVNotSupportedForGuestVM`, `hyperVNotAvailable`.|
 |deviceGuardVirtualizationBasedSecurityState|[deviceGuardVirtualizationBasedSecurityState](../resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md)|Состояние безопасности на основе виртуализации. . Возможные значения: `running`, `rebootRequired`, `require64BitArchitecture`, `notLicensed`, `notConfigured`, `doesNotMeetHardwareRequirements`, `other`.|
 |deviceGuardLocalSystemAuthorityCredentialGuardState|[deviceGuardLocalSystemAuthorityCredentialGuardState](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|Состояние охраны учетных данных местного управления системы (LSA). . Возможные значения: `running`, `rebootRequired`, `notLicensed`, `notConfigured`, `virtualizationBasedSecurityNotRunning`.|
-|osBuildNumber|Строка|Номер сборки операционной системы на устройстве Android|
+|osBuildNumber|String|Номер сборки операционной системы на устройстве Android|
 |operatingSystemProductType|Int32|Int, который указывает Windows productType операционной системы. Дополнительные сведения здесь https://go.microsoft.com/fwlink/?linkid=2126950 . Допустимые значения от 0 до 2147483647|
-|ipAddressV4|Строка|IPAddressV4|
-|subnetAddress|Строка|SubnetAddress|
-|esimIdentifier|Строка|идентификатор eSIM|
-|systemManagementBIOSVersion|Строка|Версия BIOS, как сообщает SMBIOS|
-|tpmManufacturer|Строка|Идентифицирующие сведения, уникальные имена производителя TPM|
+|ipAddressV4|String|IPAddressV4|
+|subnetAddress|String|SubnetAddress|
+|esimIdentifier|String|идентификатор eSIM|
+|systemManagementBIOSVersion|String|Версия BIOS, как сообщает SMBIOS|
+|tpmManufacturer|String|Идентифицирующие сведения, уникальные имена производителя TPM|
 |tpmVersion|String|Версия TPM, указанная производителем|
 
 ## <a name="relationships"></a>Связи

@@ -2,15 +2,15 @@
 title: Обновление устройстваAppManagementTask
 description: Обновление свойств объекта deviceAppManagementTask.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a29705b5f420674f5f8ccc167fb05b607a4f9541
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0df0293cff0da5d079142f71ffe2d2f6c516a554
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58785824"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59141874"
 ---
 # <a name="update-deviceappmanagementtask"></a>Обновление устройстваAppManagementTask
 
@@ -29,7 +29,7 @@ ms.locfileid: "58785824"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,14 +54,14 @@ PATCH /deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ сущности.|
-|displayName|Строка|Имя.|
-|description|Строка|Описание.|
+|displayName|String|Имя.|
+|description|String|Описание.|
 |createdDateTime|DateTimeOffset|Дата создания.|
 |dueDateTime|DateTimeOffset|Срок действия.|
 |category|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|Категория. Возможные значения: `unknown`, `advancedThreatProtection`.|
 |priority|[deviceAppManagementTaskPriority](../resources/intune-partnerintegration-deviceappmanagementtaskpriority.md)|Приоритет. Возможные значения: `none`, `high`, `low`.|
-|creator|Строка|Адрес электронной почты создателя.|
-|creatorNotes|Строка|Заметки от создателя.|
+|creator|String|Адрес электронной почты создателя.|
+|creatorNotes|String|Заметки от создателя.|
 |assignedTo|String|Имя или электронная почта администратора этой задачи назначены.|
 |status|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|Состояние. Возможные значения: `unknown`, `pending`, `active`, `completed`, `rejected`.|
 

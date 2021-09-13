@@ -1,16 +1,16 @@
 ---
 title: trustFrameworkPolicy
 description: В политике платформы доверия Azure AD B2C называются настраиваемые политики. В этом описаны операции, доступные для объекта trustFrameworkPolicy для клиента.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d51cbda73ca41d58795ef09c23cc1e644e59f60e8d0833f692ebcfb396489e98
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2f84f1ef4c391c81a720d5f0f76adae144e04677
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54241221"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100521"
 ---
 # <a name="trustframeworkpolicy-resource-type"></a>тип ресурса trustFrameworkPolicy
 

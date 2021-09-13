@@ -2,15 +2,15 @@
 title: Get AndroidForWorkImportedPFXCertificateProfile
 description: Чтение свойств и связей объекта AndroidForWorkImportedPFXCertificateProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e0924e317d86ad93141e4ba2491dd99df8358e3e
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4c19663f079ff2158f1ad587596d91c6305e5c92
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798730"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59098127"
 ---
 # <a name="get-androidforworkimportedpfxcertificateprofile"></a>Get AndroidForWorkImportedPFXCertificateProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "58798730"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

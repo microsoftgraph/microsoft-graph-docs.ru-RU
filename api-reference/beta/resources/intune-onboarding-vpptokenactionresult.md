@@ -2,15 +2,15 @@
 title: тип ресурса vppTokenActionResult
 description: Состояние действия, выполняемого с помощью маркера Apple Volume Purchase Program.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7c95eee5af4ce94e80c0f6ca086e686c68c8ab33
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 77130397eb020e291dcc4aea8d77fe48d2673883
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58791805"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101207"
 ---
 # <a name="vpptokenactionresult-resource-type"></a>тип ресурса vppTokenActionResult
 

@@ -2,15 +2,15 @@
 title: Get groupPolicyPresentationListBox
 description: Чтение свойств и связей объекта groupPolicyPresentationListBox.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3ecd4a6d8b0411ee530f0754003c020fa6014f4d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 33c55d221b56182901ba81d76caa360c64e8eaed
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806308"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59092898"
 ---
 # <a name="get-grouppolicypresentationlistbox"></a>Get groupPolicyPresentationListBox
 

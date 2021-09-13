@@ -2,15 +2,15 @@
 title: тип ресурса bitLockerSystemDrivePolicy
 description: Базовые политики шифрования BitLocker.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 76078d65bf96d2b2ec9207661a746250da97997f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fc18eac1aca5f78af3379e5f22de575b5fa35133
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58794858"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127530"
 ---
 # <a name="bitlockersystemdrivepolicy-resource-type"></a>тип ресурса bitLockerSystemDrivePolicy
 
@@ -34,9 +34,9 @@ ms.locfileid: "58794858"
 |startupAuthenticationTpmPinAndKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Указывает, разрешены ли пин-код и ключ для запуска TPM. Возможные значения: `blocked`, `required`, `allowed`, `notConfigured`.|
 |minimumPinLength|Int32|Указывает минимальную длину пин-кода запуска. Допустимые значения от 4 до 20|
 |recoveryOptions|[bitLockerRecoveryOptions](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md);|Позволяет восстановить диски зашифрованной операционной системы BitLocker при отсутствии необходимой информации о ключе запуска. Этот параметр политики применяется при включке BitLocker.|
-|prebootRecoveryEnableMessageAndUrl|Логический|Включить сообщение о восстановлении перед загрузкой и URL-адрес. Если требуетсяStartupAuthentication является ложным, это значение не влияет.|
-|prebootRecoveryMessage|Строка|Определяет настраиваемые сообщения восстановления.|
-|prebootRecoveryUrl|Строка|Определяет настраиваемый URL-адрес восстановления.|
+|prebootRecoveryEnableMessageAndUrl|Логическое|Включить сообщение о восстановлении перед загрузкой и URL-адрес. Если требуетсяStartupAuthentication является ложным, это значение не влияет.|
+|prebootRecoveryMessage|String|Определяет настраиваемые сообщения восстановления.|
+|prebootRecoveryUrl|String|Определяет настраиваемый URL-адрес восстановления.|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -2,15 +2,15 @@
 title: Обновление userExperienceAnalyticsRemoteConnection
 description: Обновление свойств объекта userExperienceAnalyticsRemoteConnection.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 64b0b7653c914463b854217d1966ece664f2bc2b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: dddd0f331ce75738fcaee1e0c229e39fbb895771
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798576"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142112"
 ---
 # <a name="update-userexperienceanalyticsremoteconnection"></a>Обновление userExperienceAnalyticsRemoteConnection
 
@@ -29,7 +29,7 @@ ms.locfileid: "58798576"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,11 +53,11 @@ PATCH /deviceManagement/userExperienceAnalyticsRemoteConnection/{userExperienceA
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта удаленного подключения для аналитики пользовательского интерфейса.|
+|id|String|Уникальный идентификатор объекта удаленного подключения для аналитики пользовательского интерфейса.|
 |deviceId|String|ID устройства.|
 |deviceName|String|Имя устройства.|
 |model|String|Модель устройства аналитики пользовательских интерфейсов.|
-|virtualNetwork|Строка|Виртуальная сеть аналитики пользовательских интерфейсов.|
+|virtualNetwork|String|Виртуальная сеть аналитики пользовательских интерфейсов.|
 |manufacturer|String|Производитель аналитики пользовательских интерфейсов.|
 |deviceCount|Int32|Количество удаленных подключений. Допустимые значения от 0 до 2147483647|
 |cloudPcRoundTripTime|Двойное с плавающей точкой|Время круговой оконечности устройства облачного ПК. Допустимые значения от 0 до 1.79769313486232E+308|

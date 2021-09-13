@@ -2,15 +2,15 @@
 title: тип ресурса синхронизацииJobApplicationParameters
 description: Представляет объекты, которые должны быть предварительно оформлены, и правила, выполненные во время подготовка по запросу.
 author: ArvindHarinder1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 5d8ac5a51842d76f5c72eb2bba1d03fe1479eb30f57c498a1dcdb326f4c1ff51
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: aeaae3419307787c019402d5b8ddf8268f1f9605
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54224252"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59090961"
 ---
 # <a name="synchronizationjobapplicationparameters-resource-type"></a>тип ресурса синхронизацииJobApplicationParameters
 

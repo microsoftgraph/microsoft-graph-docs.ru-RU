@@ -1,16 +1,16 @@
 ---
 title: Обновление itemPatent
 description: Обновление свойств объекта itemPatent.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 92044e1a5e4edb7bbb422571543f6b11ed3e70dd
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: eebe95bdd6eec5fb7336d0f5bf423dee5307439e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777799"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59087459"
 ---
 # <a name="update-itempatent"></a>Обновление itemPatent
 
@@ -55,7 +55,7 @@ PATCH /users/{id | userPrincipalName}/profile/patents/{id}
 |description|String|Descpription патента или подачи. |
 |displayName|String|Название патента или подачи. |
 |вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
-|isPending        |Boolean     |Указывает, что патент находится в стадии ожидания.        |
+|isPending        |Логическое     |Указывает, что патент находится в стадии ожидания.        |
 |issuedDate       |Дата        |Дата предоставления патента.   |
 |issuingAuthority |String      |Орган, выдав патент.     |
 |число           |String      |Номер патента.                      |

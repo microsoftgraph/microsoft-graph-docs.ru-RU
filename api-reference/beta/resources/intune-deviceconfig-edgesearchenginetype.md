@@ -2,15 +2,15 @@
 title: тип enum edgeSearchEngineType
 description: Позволяет ИТ-администратору устанавливать предопределяемую поисковую движок по умолчанию для MDM-Controlled устройств
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 51d84da7886d11dd51c31f3568514e5b05566ea0
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: ea649c67a1aeadbabadb8d8358c5450d26d775e8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58787302"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101529"
 ---
 # <a name="edgesearchenginetype-enum-type"></a>тип enum edgeSearchEngineType
 

@@ -2,15 +2,15 @@
 title: Delete androidStoreApp
 description: Удаляет объект androidStoreApp.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c3d042197e63efa7d532c877ad6374a6e9354763
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fea0dbeaf5031927f8a89d7ed1f9ceaa62f8e156
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820199"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59088810"
 ---
 # <a name="delete-androidstoreapp"></a>Delete androidStoreApp
 

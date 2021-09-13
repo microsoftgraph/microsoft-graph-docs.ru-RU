@@ -2,15 +2,15 @@
 title: тип ресурса deviceHealthScriptRunOnceSchedule
 description: Сценарий состояния устройства запустится один раз.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c51150e9299a44495c517e8f78a4e67de3ce47c1
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 04028c3510c3b6ab3c1d888b5fb228540b9dbc56
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58802476"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59144296"
 ---
 # <a name="devicehealthscriptrunonceschedule-resource-type"></a>тип ресурса deviceHealthScriptRunOnceSchedule
 
@@ -29,7 +29,7 @@ ms.locfileid: "58802476"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |interval|Int32|X значение каждые х часов для почасового расписания, каждые х дней для ежедневного расписания, каждые х недель для еженедельного расписания, каждые х месяцев для ежемесячного расписания. Допустимые значения от 1 до 23, унаследованные от [устройстваHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|
-|useUtc|Логический|Указать, является ли время Utc или клиент локальным. Унаследованный от [deviceHealthScriptTimeSchedule](../resources/intune-devices-devicehealthscripttimeschedule.md)|
+|useUtc|Логическое|Указать, является ли время Utc или клиент локальным. Унаследованный от [deviceHealthScriptTimeSchedule](../resources/intune-devices-devicehealthscripttimeschedule.md)|
 |time|TimeOfDay|В какое время планируется запустить сценарий. Эта коллекция может содержать не более 20 элементов. Унаследованный от [deviceHealthScriptTimeSchedule](../resources/intune-devices-devicehealthscripttimeschedule.md)|
 |date|Date|Дата запуска сценария. Эта коллекция может содержать не более 20 элементов.|
 

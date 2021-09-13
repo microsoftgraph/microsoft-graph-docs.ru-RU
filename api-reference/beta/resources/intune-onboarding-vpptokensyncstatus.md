@@ -2,15 +2,15 @@
 title: тип enum vppTokenSyncStatus
 description: Возможные состояния синхронизации, связанные с маркером программы покупки тома Apple.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a45767f8da04ffa612fc5ca99ffe825c2d4e954f
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d6149d596b4a44d10585d34559af8e400597d1ea
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58769476"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101179"
 ---
 # <a name="vpptokensyncstatus-enum-type"></a>тип enum vppTokenSyncStatus
 

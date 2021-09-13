@@ -2,15 +2,15 @@
 title: тип ресурса appleVppTokenTroubleshootingEvent
 description: Событие, представляющее событие устранения неполадок маркера Apple Vpp.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: db643665397cc4ee29362d6f6be23dfc232e3997
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: e5d660a692eb4f41a9e9e56da1183e547b9d16cc
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262160"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100927"
 ---
 # <a name="applevpptokentroubleshootingevent-resource-type"></a>тип ресурса appleVppTokenTroubleshootingEvent
 

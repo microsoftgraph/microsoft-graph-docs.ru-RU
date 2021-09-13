@@ -2,15 +2,15 @@
 title: тип ресурса kerberosSingleSignOnExtension
 description: Представляет профиль расширения типа Kerberos Sign-On.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4ea40cd23325b826913bb53f14191c39b189a162
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: fbac237df1c2d4a1b466d675751b67b71c1ba94e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58801131"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59127229"
 ---
 # <a name="kerberossinglesignonextension-resource-type"></a>тип ресурса kerberosSingleSignOnExtension
 
@@ -28,12 +28,12 @@ ms.locfileid: "58801131"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|realm|Строка|Получает или задает имя области, чувствительной к делу, для этого профиля.|
-|домены|Коллекция String|Получает или задает список хостов или доменных имен, для которых расширение приложения выполняет SSO.|
-|blockAutomaticLogin|Логический|Включает или отключает использование Keychain.|
-|cacheName|Строка|Получает или задает имя универсальных служб безопасности кэша Kerberos для использования для этого профиля.|
-|credentialBundleIdAccessControlList|Коллекция String|Получает или задает список ID-пакетов приложений, разрешенных для доступа к билету на предоставление билетов Kerberos.|
-|domainRealms|Коллекция String|Получает или задает список областей для настраиваемого сопоставления доменных областей. Области чувствительны к делу.|
+|realm|String|Получает или задает имя области, чувствительной к делу, для этого профиля.|
+|домены|Коллекция объектов string|Получает или задает список хостов или доменных имен, для которых расширение приложения выполняет SSO.|
+|blockAutomaticLogin|Логическое|Включает или отключает использование Keychain.|
+|cacheName|String|Получает или задает имя универсальных служб безопасности кэша Kerberos для использования для этого профиля.|
+|credentialBundleIdAccessControlList|Коллекция объектов string|Получает или задает список ID-пакетов приложений, разрешенных для доступа к билету на предоставление билетов Kerberos.|
+|domainRealms|Коллекция объектов string|Получает или задает список областей для настраиваемого сопоставления доменных областей. Области чувствительны к делу.|
 |isDefaultRealm|Логический|Если значение true, область этого профиля будет выбрана по умолчанию. Необходимо, если настроено несколько профилей типа Kerberos.|
 |passwordBlockModification|Логический|Включает или отключает изменения пароля.|
 |passwordExpirationDays|Int32|Переопределяет срок действия пароля по умолчанию за несколько дней. Для большинства доменов это значение вычисляется автоматически.|
@@ -43,12 +43,12 @@ ms.locfileid: "58801131"
 |passwordPreviousPasswordBlockCount|Int32|Получает или задает количество предыдущих паролей для блокировки.|
 |passwordMinimumLength|Int32|Получает или задает минимальную длину пароля.|
 |passwordMinimumAgeDays|Int32|Получает или задает минимальное количество дней, пока пользователь не сможет изменить пароль снова.|
-|passwordRequirementsDescription|Строка|Получает или задает описание требований к сложности пароля.|
-|requireUserPresence|Логический|Получает или задает, требуется ли проверка подлинности через Touch ID, Face ID или пароль для доступа к записи keychain.|
-|activeDirectorySiteCode|Строка|Получает или задает сайт Active Directory.|
-|passwordEnableLocalSync|Логический|Включает или отключает синхронизацию паролей. Это не повлияет на пользователей, входив в систему с мобильной учетной записью на macOS.|
-|blockActiveDirectorySiteAutoDiscovery|Логический|Включает или отключает возможность автоматического определения имени сайта расширения Kerberos.|
-|passwordChangeUrl|Строка|Получает или задает URL-адрес, на который будет отправлен пользователь при инициале изменения пароля.|
+|passwordRequirementsDescription|String|Получает или задает описание требований к сложности пароля.|
+|requireUserPresence|Логическое|Получает или задает, требуется ли проверка подлинности через Touch ID, Face ID или пароль для доступа к записи keychain.|
+|activeDirectorySiteCode|String|Получает или задает сайт Active Directory.|
+|passwordEnableLocalSync|Логическое|Включает или отключает синхронизацию паролей. Это не повлияет на пользователей, входив в систему с мобильной учетной записью на macOS.|
+|blockActiveDirectorySiteAutoDiscovery|Логическое|Включает или отключает возможность автоматического определения имени сайта расширения Kerberos.|
+|passwordChangeUrl|String|Получает или задает URL-адрес, на который будет отправлен пользователь при инициале изменения пароля.|
 
 ## <a name="relationships"></a>Связи
 Нет

@@ -2,15 +2,15 @@
 title: Обновление MicrosoftStoreForBusinessContainedApp
 description: Обновление свойств объекта MicrosoftStoreForBusinessContainedApp.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ab185572db75b331d2fbe5a00f39575fa60a98bd
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 2ddb68744ba1da5b286f60c0175e58ca6aa6323f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58795482"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59133942"
 ---
 # <a name="update-microsoftstoreforbusinesscontainedapp"></a>Обновление MicrosoftStoreForBusinessContainedApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "58795482"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,8 +55,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnive
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Унаследованный от [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
-|appUserModelId|Строка|ID модели пользователя приложения, содержатого приложения MicrosoftStoreForBusinessApp.|
+|id|String|Ключ объекта. Унаследованный от [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
+|appUserModelId|String|ID модели пользователя приложения, содержатого приложения MicrosoftStoreForBusinessApp.|
 
 
 

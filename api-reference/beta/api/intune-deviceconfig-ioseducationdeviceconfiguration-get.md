@@ -2,15 +2,15 @@
 title: Get iosEducationDeviceConfiguration
 description: Чтение свойств и связей объекта iosEducationDeviceConfiguration.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cf28afb2fca5c917805fb6f2b31f891e89ccb71c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 71bf93f5e7068420a6b67b440d7c5d80544fb1b2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58798302"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59088467"
 ---
 # <a name="get-ioseducationdeviceconfiguration"></a>Get iosEducationDeviceConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "58798302"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

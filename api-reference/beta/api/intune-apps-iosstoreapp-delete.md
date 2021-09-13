@@ -2,15 +2,15 @@
 title: Удаление объекта iosStoreApp
 description: Удаляет объект iosStoreApp.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: be3bbf9130718a82f57c255ef7b8a42d9bbeffcd
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: bad3689e63cf08a27b540f36304bc125db7bc1be
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58796119"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59088768"
 ---
 # <a name="delete-iosstoreapp"></a>Удаление объекта iosStoreApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "58796119"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

@@ -2,15 +2,15 @@
 title: Получить intuneBrandingProfile
 description: Чтение свойств и связей объекта intuneBrandingProfile.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f0f88fd94b1cf34a31a248f45313d41c1017b41c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: d87412b0cc892ebbdd9bb7933475d44d1ddadd24
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58790201"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59092408"
 ---
 # <a name="get-intunebrandingprofile"></a>Получить intuneBrandingProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "58790201"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

@@ -2,15 +2,15 @@
 title: Получить windowsAutopilotDeploymentProfile
 description: Чтение свойств и связей объекта windowsAutopilotDeploymentProfile.
 author: rolyon
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e636cc2ae63818e3e5cd3d348dbbd33f4d4c9a84
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 6e0c75c19a6fcf00a4800baec86c6e81401a9840
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58806714"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59132374"
 ---
 # <a name="get-windowsautopilotdeploymentprofile"></a>Получить windowsAutopilotDeploymentProfile
 

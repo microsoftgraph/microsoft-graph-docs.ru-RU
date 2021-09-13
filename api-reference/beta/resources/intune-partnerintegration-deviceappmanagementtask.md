@@ -2,15 +2,15 @@
 title: тип ресурса deviceAppManagementTask
 description: Задача управления приложениями для устройств.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a84e0f0cff73990e955b6f46df2595ebe5771d3b
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: aaa21f40405bcbe2524854537f3e78a93e8dfb0c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58799994"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59101081"
 ---
 # <a name="deviceappmanagementtask-resource-type"></a>тип ресурса deviceAppManagementTask
 
@@ -37,13 +37,13 @@ ms.locfileid: "58799994"
 |:---|:---|:---|
 |id|String|Ключ сущности.|
 |displayName|String|Имя.|
-|description|Строка|Описание.|
+|description|String|Описание.|
 |createdDateTime|DateTimeOffset|Дата создания.|
 |dueDateTime|DateTimeOffset|Срок действия.|
 |category|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|Категория. Возможные значения: `unknown`, `advancedThreatProtection`.|
 |priority|[deviceAppManagementTaskPriority](../resources/intune-partnerintegration-deviceappmanagementtaskpriority.md)|Приоритет. Возможные значения: `none`, `high`, `low`.|
-|creator|Строка|Адрес электронной почты создателя.|
-|creatorNotes|Строка|Заметки от создателя.|
+|creator|String|Адрес электронной почты создателя.|
+|creatorNotes|String|Заметки от создателя.|
 |assignedTo|String|Имя или электронная почта администратора этой задачи назначены.|
 |status|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|Состояние. Возможные значения: `unknown`, `pending`, `active`, `completed`, `rejected`.|
 

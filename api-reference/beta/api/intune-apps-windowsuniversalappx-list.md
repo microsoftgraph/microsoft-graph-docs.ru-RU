@@ -2,15 +2,15 @@
 title: Перечисление объектов windowsUniversalAppX
 description: Список свойств и связей объектов windowsUniversalAppX.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3361c57eef03c63bb61f03293f727a92aeb61365
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 675a431f04d4fb6caea7059ca9a8ec70a2a953e5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58788102"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59093353"
 ---
 # <a name="list-windowsuniversalappxs"></a>Перечисление объектов windowsUniversalAppX
 
@@ -29,7 +29,7 @@ ms.locfileid: "58788102"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

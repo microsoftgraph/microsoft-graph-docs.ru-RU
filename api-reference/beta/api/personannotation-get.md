@@ -1,21 +1,21 @@
 ---
-title: Получение Персонаннотатион
-description: Чтение свойств и связей объекта Персонаннотатион.
+title: Get personAnnotation
+description: Ознакомьтесь с свойствами и отношениями объекта personAnnotation.
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 2d13769f6b9493d049496bbebd895e6516427266
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b2ed0b884040547a8c791dbe84be78efb2950a70
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968406"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59138311"
 ---
-# <a name="get-personannotation"></a>Получение Персонаннотатион
+# <a name="get-personannotation"></a>Get personAnnotation
 Пространство имен: microsoft.graph
 
-Считывание свойств и связей объекта [персонаннотатион](../resources/personannotation.md) из [профиля](../resources/profile.md)пользователя.
+Ознакомьтесь с свойствами и отношениями [объекта personAnnotation](../resources/personannotation.md) из профиля [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -23,9 +23,9 @@ ms.locfileid: "48968406"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Для приложения                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
+| Делегированные (рабочая или учебная учетная запись)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Для приложений                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,7 @@ GET /users/{id | userPrincipalName}/profile/notes/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$select` параметр запроса. Укажите список свойств, которые необходимо включить в ответ, разделяя их запятыми. Для обеспечения оптимальной производительности следует выбирать только подмножество нужных свойств.
+Этот метод поддерживает параметр `$select` запроса. Укажите список свойств, которые необходимо включить в ответ, разделив их запятой. Для оптимальной производительности выберите только подмножество необходимых свойств.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -52,7 +52,7 @@ GET /users/{id | userPrincipalName}/profile/notes/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [персонаннотатион](../resources/personannotation.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект personAnnotation](../resources/personannotation.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

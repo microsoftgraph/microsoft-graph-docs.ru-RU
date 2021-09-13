@@ -2,15 +2,15 @@
 title: Обновление unmanagedDeviceDiscoveryTask
 description: Обновление свойств объекта unmanagedDeviceDiscoveryTask.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6d53d429f9a60cfd4b44c765061957390d41744c
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 93788707a3b33e661225adf3decdbdb8a5882653
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816783"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59121160"
 ---
 # <a name="update-unmanageddevicediscoverytask"></a>Обновление unmanagedDeviceDiscoveryTask
 
