@@ -2,15 +2,15 @@
 title: Список defaultPages
 description: Получите ресурсы userFlowLanguagePage из свойства навигации defaultPages.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7ae6d3610cb3e4af5b99c2ff0873215a4375c251da3e003097cd733408d0bc66
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 95cdc55308c5a9a9be951935a014846a84cf9886
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54252202"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109544"
 ---
 # <a name="list-defaultpages"></a>Список defaultPages
 
@@ -26,7 +26,7 @@ ms.locfileid: "54252202"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
+|Для приложений|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/identity/b2cUserFlows/B2X_1_Partner/languag
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

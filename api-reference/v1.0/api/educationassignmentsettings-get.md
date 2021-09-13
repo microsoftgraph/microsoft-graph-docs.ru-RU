@@ -2,15 +2,15 @@
 title: Get educationAssignmentSettings
 description: Ознакомьтесь с свойствами и отношениями объекта educationAssignmentSettings.
 author: sharad-sharma-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 265bb848d9ad7647f39e0b293934479bcaeb3455
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 8edbd2ff5dfd8aa9b50f1d350793eb3df4dcf010
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367277"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130887"
 ---
 # <a name="get-educationassignmentsettings"></a>Get educationAssignmentSettings
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "58367277"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
+|Для приложений| EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

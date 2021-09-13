@@ -2,16 +2,16 @@
 author: JeremyKelley
 ms.date: 09/10/2017
 title: Получение разрешения
-localization_priority: Normal
+ms.localizationpriority: medium
 description: В этой статье рассказывается, как возвратить действующее разрешение на общий доступ для конкретного ресурса разрешения.
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 3fb5c236faa4d5b16d00cc583b7d0173cbd7d56f
-ms.sourcegitcommit: 0ca0a1e2810701c2392e5c685e984fbfb6785579
+ms.openlocfilehash: 001740e709ee07a466be382c1a9363f1bd892e9d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53151505"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59072818"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>Получение разрешения на общий доступ для файла или папки
 
@@ -45,7 +45,7 @@ GET /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
 GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
 Этот метод поддерживает [параметр запроса $select](/graph/query-parameters) для формирования отклика.
 

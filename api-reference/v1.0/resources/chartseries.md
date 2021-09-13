@@ -2,15 +2,15 @@
 title: Тип ресурса ChartSeries
 description: Представляет ряд в диаграмме.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 216cf0615326856db8926bf87a9a0514b26f1f3fac3bc9386ab26a2d1e5f166d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7e3b9ceac73f724ef520f1fdfc22f01c636d1f51
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54231882"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109467"
 ---
 # <a name="chartseries-resource-type"></a>Тип ресурса ChartSeries
 
@@ -35,7 +35,7 @@ ms.locfileid: "54231882"
 |:---------------|:--------|:----------|
 |name|string|Представляет имя ряда в диаграмме.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |format|[WorkbookChartSeriesFormat](chartseriesformat.md)|Представляет форматирование ряда диаграммы, включая формат заливки и линий. Только для чтения.|

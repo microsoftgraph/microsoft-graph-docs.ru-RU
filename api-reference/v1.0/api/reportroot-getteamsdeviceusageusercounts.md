@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getTeamsDeviceUsageUserCounts'
 description: Получение сведений о количестве уникальных пользователей Microsoft Teams в день с сортировкой по типам устройств.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: d3725157cd128746306f043348758384e50596f843682e39fc0c3db36b25f935
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ce12fdd6e2103fa996a70804123310fc020e783f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54186904"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050070"
 ---
 # <a name="reportroot-getteamsdeviceusageusercounts"></a>reportRoot: getTeamsDeviceUsageUserCounts
 
@@ -44,7 +44,7 @@ GET /reports/getTeamsDeviceUsageUserCounts(period='{period_value}')
 
 | Параметр | Тип   | Описание                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
+| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -68,7 +68,7 @@ CSV-файл содержит столбцы со следующими заго�
 - "Mac";
 - "Windows";
 - "Report Date" (Дата отчета);
-- Report Period (отчетный период)
+- "Report Period" (Отчетный период).
 
 ## <a name="example"></a>Пример
 

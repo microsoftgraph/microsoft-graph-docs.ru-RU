@@ -1,16 +1,16 @@
 ---
 title: Создание или замена действия
 description: Создайте новое или замените существующее пользовательское действие для приложения. Если вы хотите создать пользовательскую активность и связанные с ней **historyItems** в одном запросе, можно использовать глубокую вставка.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: b7f8f7b3259002dedeed089a7182ad6cacc1985e8660a0667fa4141b7b884f43
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bba0e48dd71cf03fcdfdaf62033c04d7bf68f86e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54160179"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104749"
 ---
 # <a name="create-or-replace-an-activity"></a>Создание или замена действия
 
@@ -110,7 +110,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
     "blockType": "ignored",

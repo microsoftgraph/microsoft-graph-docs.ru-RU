@@ -2,15 +2,15 @@
 title: Тип ресурса windowsInformationProtectionAppLockerFile
 description: Файл AppLocker для Windows Information Protection
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a735a008481938ac91ede5a96d5f948b3e43f30dae3ec61b6b1fdf34221d7f42
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bc04132c94f08ae0634461386c1a2217fcad794e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178215"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052967"
 ---
 # <a name="windowsinformationprotectionapplockerfile-resource-type"></a>Тип ресурса windowsInformationProtectionAppLockerFile
 
@@ -32,13 +32,13 @@ ms.locfileid: "54178215"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Понятное имя|
+|displayName|Строка|Понятное имя|
 |fileHash|String|Хэш SHA256 для файла|
 |file|Binary|Файл в виде массива байтов|
 |id|String|Ключ объекта.|
 |version|String|Версия объекта.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

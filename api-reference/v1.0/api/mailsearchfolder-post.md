@@ -1,16 +1,16 @@
 ---
 title: Создание mailSearchFolder
 description: Используйте этот API для создания нового mailSearchFolder в указанном почтовом ящике пользователя.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4201ffeaa0bc065a68024c04885d0b32e0a9c421
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bc26b117139fc35ccc025f400d5bcc4de0e99ce4
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039519"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026247"
 ---
 # <a name="create-mailsearchfolder"></a>Создание mailSearchFolder
 
@@ -53,8 +53,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
 | @odata.type | String | Тип создаемой папки. Установите "microsoft.graph.mailSearchFolder". |
-| displayName | String | Отображаемое имя новой папки.|
-| includeNestedFolders | Логический | Указывает, как должна проходить иерархия папок почтовых ящиков в поиске. `true` означает, что следует сделать глубокий поиск, чтобы включить детские папки в иерархию каждой папки, явно указанной в **sourceFolderIds**. `false`означает неглубокий поиск только каждой из папок, явно указанных в **sourceFolderIds.** |
+| displayName | Строка | Отображаемое имя новой папки.|
+| includeNestedFolders | Boolean | Указывает, как должна проходить иерархия папок почтовых ящиков в поиске. `true` означает, что следует сделать глубокий поиск, чтобы включить детские папки в иерархию каждой папки, явно указанной в **sourceFolderIds**. `false`означает неглубокий поиск только каждой из папок, явно указанных в **sourceFolderIds.** |
 | sourceFolderIds | Коллекция String | Папки почтовых ящиков, которые необходимо добыть. |
 | filterQuery | String | Запрос OData для фильтрации сообщений. |
 
@@ -109,7 +109,7 @@ Content-length: 159
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

@@ -2,14 +2,14 @@
 title: Используйте API Поиск (Майкрософт) в Microsoft Graph для запроса исправлений орфографии
 description: Вы можете использовать API Поиск (Майкрософт) для получения предложения орфографии или изменения орфографии для поиска запроса.
 author: nmoreau
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 0ba5d3fa36deec56cc1cd2e0aef77c27a921f6a52d81257cf5b39ef524a394df
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: a16c1e0a69e202ca34c1c52c176a15c0b5da7e88
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54233653"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071730"
 ---
 # <a name="use-the-microsoft-search-api-in-microsoft-graph-to-request-spelling-correction-preview"></a>Используйте API Поиск (Майкрософт) в Microsoft Graph для запроса исправления орфографии (предварительный просмотр)
 

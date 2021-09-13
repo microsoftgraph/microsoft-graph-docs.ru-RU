@@ -3,14 +3,14 @@ title: тип ресурса chatMessagePolicyViolation
 description: Представляет нарушение политики в сообщении чата. Нарушения политики обычно устанавливаются приложением для предотвращения потери данных (DLP).
 author: RamjotSingh
 doc_type: resourcePageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: c9e6e7eeeabc4914e8be23ca6da3ccc7c963a01f881e847c200284c2ed30f36f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 95476a8e11548348b8723e938143558013dd7a8e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169671"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109404"
 ---
 # <a name="chatmessagepolicyviolation-resource-type"></a>тип ресурса chatMessagePolicyViolation
 
@@ -21,7 +21,7 @@ ms.locfileid: "54169671"
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
 |dlpAction|**chatMessagePolicyViolationDlpActionType**|Действия, принятые поставщиком DLP в сообщении с конфиденциальным контентом. Поддерживаемые значения: <li>Нет</li><li>NotifySender . Информируйте отправитель о нарушении, но позвольте читателям прочитать сообщение.</li><li>BlockAccess . Блокировать чтение сообщения читателями.</li><li>BlockAccessExternal . Блокировать чтение сообщения пользователями за пределами организации, позволяя пользователям в организации читать сообщение.</li>|
-|justificationText|Строка|Текст обоснования, предоставляемый отправитель сообщения при переопределения нарушения политики.|
+|justificationText|string|Текст обоснования, предоставляемый отправитель сообщения при переопределения нарушения политики.|
 |policyTip|[chatMessagePolicyViolationPolicyTip](chatmessagepolicyviolationpolicytip.md)|Сведения для отображения отправилю сообщения о том, почему сообщение было помечено как нарушение. |
 |userAction|**chatMessagePolicyViolationUserActionType**|Указывает действие пользователя на сообщение, заблокированное поставщиком DLP. Поддерживаемые значения: <li>Нет</li><li>Override</li><li>ReportFalsePositive</li>Когда поставщик DLP обновляет сообщение для блокировки конфиденциального контента, userAction не требуется.|
 |verdictDetails|**chatMessagePolicyViolationVerdictDetailsType**|Указывает, какие действия может принять отправитель в ответ на нарушение политики. Поддерживаемые значения: <li>Нет</li><li>AllowFalsePositiveOverride — позволяет отправителю объявить политикуViolation ошибкой в приложении DLP и его правилах, а также разрешить читателям снова видеть сообщение, если dlpAction его спрятал.</li><li>AllowOverrideWithoutJustification — позволяет отправителю перезахотрить нарушение DLP и разрешить читателям видеть сообщение снова, если dlpAction спрятал его, не ая при этом объяснений. </li><li>AllowOverrideWithJustification — позволяет отправителю перезахотрить нарушение DLP и разрешить читателям снова видеть сообщение, если dlpAction спрятал его, после предоставления объяснений для этого.</li>AllowOverrideWithoutJustification и AllowOverrideWithJustification являются взаимоисключающими.|

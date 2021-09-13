@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getSkypeForBusinessParticipantActivityUserCounts'
 description: Отслеживайте динамику использования по количеству уникальных пользователей и типу конференций, в которых участвовали сотрудники организации (обмен мгновенными сообщениями, аудио, видео, общий доступ к приложениям, веб-конференции, конференции с телефонным подключением и присоединением обратным звонком через стороннюю службу).
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 80c9ce4dc80c73e1618456537fb43c1bb139dc40c2cf26434d4662dad0365de2
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f902b36b429bf80661e44e93cb44c71d38adad62
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54138572"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59050154"
 ---
 # <a name="reportroot-getskypeforbusinessparticipantactivityusercounts"></a>reportRoot: getSkypeForBusinessParticipantActivityUserCounts
 
@@ -47,14 +47,14 @@ GET /reports/getSkypeForBusinessParticipantActivityUserCounts(period='{period_va
 
 | Параметр | Тип   | Описание                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
+| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя          | Описание                              |
 | :------------ | :--------------------------------------- |
 | Авторизация | Bearer {token}. Обязательный.                |
-| If-None-Match | Если этот заголовок запроса включен, а указанный eTag совпадает с текущим тегом файла, то будет возвращен код отклика `304 Not Modified`. Необязательный параметр. |
+| If-None-Match | Если этот заголовок запроса включен, а указанный eTag совпадает с текущим тегом файла, то будет возвращен код отклика `304 Not Modified`. Необязательное. |
 
 ## <a name="response"></a>Отклик
 

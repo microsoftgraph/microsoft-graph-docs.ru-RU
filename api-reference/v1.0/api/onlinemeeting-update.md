@@ -2,15 +2,15 @@
 title: Обновление onlineMeeting
 description: Обновление свойств собрания в Интернете.
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 0912e44d402b77fb09266376e8430c76d10265e1
-ms.sourcegitcommit: ac0e544853ce8476d76dc321e0d34e4b668b7651
+ms.openlocfilehash: cda8c7fb4fb6fc8902d53a96d4c2cad443dd9604
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "58350998"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085485"
 ---
 # <a name="update-onlinemeeting"></a>Обновление onlineMeeting
 
@@ -66,17 +66,17 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 
 | Свойство                    | Тип                                                       | Описание                                                                         | Применяется к на ходу собраний?    |
 |-----------------------------|------------------------------------------------------------|-------------------------------------------------------------------------------------|------------------------------|
-| startDateTime               | DateTime                                                   | Время начала собрания в UTC.                                                      | Нет                           |
-| endDateTime                 | DateTime                                                   | Время окончания собрания в UTC.                                                        | Нет                           |
+| startDateTime               | Даты и время                                                   | Время начала собрания в UTC.                                                      | Нет                           |
+| endDateTime                 | Даты и время                                                   | Время окончания собрания в UTC.                                                        | Нет                           |
 | subject                     | String                                                     | Тема собрания в Интернете.                                                  | Нет                           |
 | participants                | [meetingParticipants](../resources/meetingparticipants.md) | Участники, связанные с онлайн-собранием. Обновления могут быть только у участников. | Нет                           |
 | isEntryExitAnnounced        | Логический                                                    | Следует ли объявлять о том, когда звонители присоединяются или уходят.                              | Да                          |
 | lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbyBypassSettings.md) | Указывает, какие участники могут обойти вестибюль собрания.                          | Да                          |
 | allowedPresenters           | onlineMeetingPresenters                                    | Указывает, кто может быть презентовщиком на собрании.                                      | Да, за исключением случаев, когда значение `roleIsPresenter` |
-| allowAttendeeToEnableCamera | Логический                                                    | Указывает, могут ли участники включить камеру.                               | Да                          |
+| allowAttendeeToEnableCamera | Boolean                                                    | Указывает, могут ли участники включить камеру.                               | Да                          |
 | allowAttendeeToEnableMic    | Логический                                                    | Указывает, могут ли участники включить микрофон.                           | Да                          |
 | allowMeetingChat            | meetingChatMode                                            | Указывает режим чата собраний.                                                 | Да                          |
-| allowTeamworkReactions      | Логический                                                    | Указывает, Teams для собрания включены ли Teams реакции.                      | Да                          |
+| allowTeamworkReactions      | Boolean                                                    | Указывает, Teams для собрания включены ли Teams реакции.                      | Да                          |
 
 > [!NOTE]
 > Список возможных значений для **allowedPresenters** и **allowMeetingChat** см. [в onlineMeeting.](../resources/onlinemeeting.md)

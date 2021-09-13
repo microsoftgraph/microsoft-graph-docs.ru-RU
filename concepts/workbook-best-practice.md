@@ -2,14 +2,14 @@
 title: Лучшие практики для Excel API в Microsoft Graph
 description: Перечислить лучшие практики и примеры Excel API в Microsoft Graph
 author: grangeryy
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
-ms.openlocfilehash: 2427d56fa8a95581a737fb04a3199219c6d7ba647583aa4dabd6cb898ed91984
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 17833cacc58ddc431e1488826391e5eb36ee06b8
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54225596"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59142343"
 ---
 # <a name="best-practices-for-working-with-the-excel-api-in-microsoft-graph"></a>Наилучшие методы работы с API Excel Microsoft Graph
 

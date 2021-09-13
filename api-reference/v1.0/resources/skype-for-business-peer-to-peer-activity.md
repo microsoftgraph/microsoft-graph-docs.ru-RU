@@ -1,16 +1,16 @@
 ---
 title: Отчеты об активности в одноранговых сеансах Skype для бизнеса
 description: Эти отчеты позволяют получить подробные сведения об активности в одноранговых сеансах Skype для бизнеса в организации. Эти данные могут пригодиться при проведении анализа, планировании и принятии других бизнес-решений для организации.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: 51ac74472b18059c00caf4ab488d5dcbc77bed8b9b09d5fbf627f995268eb7f8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 49652b69e0639bc8fcd5caac0324ce467d6c2977
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202114"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136434"
 ---
 # <a name="skype-for-business-peer-to-peer-activity-reports"></a>Отчеты об активности в одноранговых сеансах Skype для бизнеса
 

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса educationAssignmentIndividualRecipient
 description: Используется внутри свойства assignment.assignTo.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 4d5f01d3532e6b0022c10947ea36b19c2152fb36409a27cf58898006f5f016ef
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 5e8038aafd8271ffbd4dc92b12fd236c1f7a9923
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54202429"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109145"
 ---
 # <a name="educationassignmentindividualrecipient-resource-type"></a>тип ресурса educationAssignmentIndividualRecipient
 
@@ -23,7 +23,7 @@ ms.locfileid: "54202429"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|recipients|Коллекция строк|Коллекция ID-адресов получателей.|
+|recipients|Коллекция String|Коллекция ID-адресов получателей.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -2,15 +2,15 @@
 title: Обновление educationUser
 description: Обновление свойств объекта educationUser.
 author: mlafleur
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f3cf8d98f3446c93e89451a2d2c262bc431328e0
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 8a7b7be0b41d3402d6ed339a5ecaad3949f99203
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52232055"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100210"
 ---
 # <a name="update-educationuser"></a>Обновление educationUser
 
@@ -25,7 +25,7 @@ ms.locfileid: "52232055"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Приложение | EduRoster.ReadWrite.All |
+|Для приложений | EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -52,9 +52,9 @@ PATCH /education/users/{id}
 | department           | String                                                             | Название отдела, в котором работает пользователь. Поддерживает параметр $filter.                                                                                                                                                                                                                                                                                      |
 | displayName          | String                                                             | Имя пользователя, отображаемое в адресной книге. Обычно это сочетание имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. Поддерживает параметры $filter и $orderby.                                                                                      |
 | externalSource       | educationExternalSource                                            | Источник для создания пользователя. Возможные значения: `sis`, `manual`.                                                                                                                                                                                                                                                                                     |
-| externalSourceDetail | Строка                                                             | Имя внешнего источника, из которого были созданы эти ресурсы.                                                                                                                                                                                                                                                                                          |
-| givenName            | String                                                             | Простое имя пользователя. Поддерживает параметр $filter.                                                                                                                                                                                                                                                                                                  |
-| mail                 | String                                                             | SMTP-адрес пользователя, например "victor@contoso.onmicrosoft.com". Только для чтения. Поддерживает параметр $filter.                                                                                                                                                                                                                                                    |
+| externalSourceDetail | String                                                             | Имя внешнего источника, из которого были созданы эти ресурсы.                                                                                                                                                                                                                                                                                          |
+| givenName;            | String                                                             | Простое имя пользователя. Поддерживает параметр $filter.                                                                                                                                                                                                                                                                                                  |
+| почта;                 | String                                                             | SMTP-адрес пользователя, например "victor@contoso.onmicrosoft.com". Только для чтения. Поддерживает параметр $filter.                                                                                                                                                                                                                                                    |
 | mailingAddress       | [physicalAddress](../resources/physicaladdress.md)                 | Почтовый адрес пользователя.                                                                                                                                                                                                                                                                                                                                       |
 | mailNickname         | String                                                             | Почтовый псевдоним для пользователя. Это свойство должно быть указано при создании пользователя. Поддерживает параметр $filter.                                                                                                                                                                                                                                                      |
 | middleName           | String                                                             | Отчество пользователя.                                                                                                                                                                                                                                                                                                                                    |
@@ -115,7 +115,7 @@ Content-length: 508
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

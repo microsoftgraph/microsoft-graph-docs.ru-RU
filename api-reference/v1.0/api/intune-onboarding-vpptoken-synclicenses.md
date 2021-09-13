@@ -2,15 +2,15 @@
 title: Действие syncLicenses
 description: Синхронизирует лицензии, связанные с конкретным appleVolumePurchaseProgramToken
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0bcf1f225b011f235bfa820d191775f1d1349382acbffdc79e49c02471c70001
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4fbf45b8cfd28568e9d5d5436bc58743556f69d0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54187037"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026387"
 ---
 # <a name="synclicenses-action"></a>Действие syncLicenses
 
@@ -27,7 +27,7 @@ ms.locfileid: "54187037"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +41,7 @@ POST /deviceAppManagement/vppTokens/{vppTokenId}/syncLicenses
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

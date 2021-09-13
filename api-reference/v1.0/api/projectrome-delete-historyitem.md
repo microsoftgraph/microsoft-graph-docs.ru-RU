@@ -1,22 +1,22 @@
 ---
 title: Удаление historyItem
-description: Удаление существующего элемента журнала для существующего действия пользователя.
-localization_priority: Normal
+description: Удаление существующего элемента истории для существующей активности пользователя.
+ms.localizationpriority: medium
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: abc5a24b83ec964d7601bd08a9d0bfb5477267fd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fbcee28fdf2ac2683b45139e367f2617279d4d09
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051748"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59104791"
 ---
 # <a name="delete-a-historyitem"></a>Удаление historyItem
 
 Пространство имен: microsoft.graph
 
-Удаление существующего элемента журнала для существующего действия пользователя.
+Удаление существующего элемента истории для существующей активности пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -43,13 +43,13 @@ DELETE /me/activities/{id}/historyItems/{id}
 |:----|:-----|:-----------|
 |Authorization | string | Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
-Текст запроса отсутствует.
+Нет тела запроса.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `204 No Content` код отклика, если элемент History был удален.
+В случае успешной работы этот метод возвращает код ответа, если элемент `204 No Content` истории был удален.
 
 ## <a name="example"></a>Пример
 

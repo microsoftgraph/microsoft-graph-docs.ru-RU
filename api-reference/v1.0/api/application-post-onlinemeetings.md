@@ -2,15 +2,15 @@
 title: Создание объекта onlineMeeting
 description: Создание собрания по сети от имени пользователя, указанного в тексте запроса.
 author: mkhribech
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 00cb4cedca7085b4673ade851d47d50340404c2c
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: a5c6848b257964474a590901b092affcdfe627e7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896594"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008442"
 ---
 # <a name="create-onlinemeeting"></a>Создание объекта onlineMeeting
 
@@ -67,9 +67,11 @@ POST /users/{userId}/onlineMeetings
 
 ## <a name="examples"></a>Примеры 
 
+### <a name="example-1-create-an-online-meeting-with-user-token"></a>Пример 1. Создание собрания по сети с помощью маркера пользователя
+
 В приведенном ниже примере показано, как создать собрание по сети с помощью маркера пользователя.
 
-### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -104,8 +106,7 @@ Content-Type: application/json
 
 ---
 
-
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 
@@ -162,6 +163,108 @@ Content-Type: application/json
     }  
 ```
 
+### <a name="example-2-create-a-live-event-with-user-token"></a>Пример 2. Создание трансляции с использованием маркера пользователя
+
+<!-- {
+  "blockType": "request",
+  "name": "create-live-event-user-token"
+}-->
+#### <a name="request"></a>Запрос
+
+```http
+POST https://graph.microsoft.com/beta/me/onlineMeetings
+Content-Type: application/json
+
+{
+  "subject":"User Token Live Event",
+  "startDateTime":"2021-08-20T14:00:34.2444915+00:00",
+  "endDateTime":"2021-08-20T15:00:34.2464912+00:00",
+  "isBroadcast": true,
+  "broadcastSettings": {
+    "allowedAudience": "everyone",
+    "isRecordingEnabled": true,
+    "isAttendeeReportEnabled": true
+  }
+}
+```
+
+#### <a name="response"></a>Отклик
+
+> **Примечание.** Объект отклика, показанный здесь, сокращен для удобочитаемости. 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onlineMeeting"
+} -->
+```json
+{
+  "id": "(redacted)",
+  "creationDateTime": "2020-12-02T14:30:34.2444915Z",
+  "startDateTime": "2021-08-20T14:00:34.2444915Z",
+  "endDateTime": "2021-08-20T15:00:34.2464912Z",
+  "joinWebUrl": "(redacted)",
+  "subject": "User Token Live Event",
+  "autoAdmittedUsers": "EveryoneInCompany",
+  "isEntryExitAnnounced": true,
+  "allowedPresenters": "organization",
+  "videoTeleconferenceId": "(redacted)",
+  "participants": {
+    "organizer": {
+      "upn": "(redacted)",
+      "role": "producer",
+      "identity": {
+        "user": {
+          "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+          "displayName": null,
+          "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+          "identityProvider": "AAD"
+        }
+      }
+    },
+    "attendees": [
+      {
+        "upn": "(redacted)",
+        "role": "producer",
+        "identity": {
+          "user": {
+            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+            "displayName": null,
+            "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+            "identityProvider": "AAD"
+          }
+        }
+      }
+    ],
+    "producers": [
+      {
+        "upn": "(redacted)",
+        "role": "producer",
+        "identity": {
+          "user": {
+            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+            "displayName": null,
+            "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+            "identityProvider": "AAD"
+          }
+        }
+      }
+    ],
+    "contributors": []
+  },
+  "lobbyBypassSettings": {
+    "scope": "organization",
+    "isDialInBypassEnabled": false
+  },
+  "isBroadcast": true,
+  "broadcastSettings": {
+    "allowedAudience": "organization",
+    "isRecordingEnabled": true,
+    "isAttendeeReportEnabled": true
+  }
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -175,4 +278,3 @@ Content-Type: application/json
   ]
 }
 -->
-

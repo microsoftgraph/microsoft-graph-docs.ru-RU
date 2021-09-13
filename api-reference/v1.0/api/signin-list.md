@@ -1,16 +1,16 @@
 ---
 title: Перечисление входов
 description: Описывает метод списка ресурса signIn (сущности) из API Microsoft Graph.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 15581f8b14979c89b7ec913e5d24ee3fb591345d
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: 5aa455af30927df4e983d2374f456f442af71b86
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490429"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59130204"
 ---
 # <a name="list-signins"></a>Перечисление входов
 
@@ -28,7 +28,10 @@ ms.locfileid: "58490429"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
-|Приложение | AuditLog.Read.All и Directory.Read.All  |
+|Для приложений | AuditLog.Read.All и Directory.Read.All  |
+
+> [!IMPORTANT]
+> Этот API имеет [известные](/graph/known-issues#azure-ad-activity-reports) проблемы и в настоящее время требует согласия на оба **auditLog.Read.All** и **Directory.Read.All** разрешений.
 
 Приложения должны быть [правильно зарегистрированы в](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) Azure AD.
 

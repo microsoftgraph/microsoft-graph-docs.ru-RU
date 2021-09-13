@@ -2,15 +2,15 @@
 title: тип ресурса groupPolicyConfigurationAssignment
 description: Объект назначения конфигурации групповой политики назначает одну или несколько групп AAD определенной конфигурации групповой политики.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a5eb13ad3c1fb92d9f70e69a6fe432533d4f0c3d
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 20f3401a78209ddb55fd363ada3d79f0cc986371
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804269"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017354"
 ---
 # <a name="grouppolicyconfigurationassignment-resource-type"></a>тип ресурса groupPolicyConfigurationAssignment
 
@@ -34,7 +34,7 @@ ms.locfileid: "58804269"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Тип групп был ориентирован на конфигурацию групповой политики.|
 

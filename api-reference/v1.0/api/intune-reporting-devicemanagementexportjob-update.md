@@ -2,15 +2,15 @@
 title: Обновление deviceManagementExportJob
 description: Обновление свойств объекта deviceManagementExportJob.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e8a510a2dbe9d80305e04d729f3aae718918194114f80e08cb14bfb26010f089
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dba16096e180368101b2bd6283066538c371c9b0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249428"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59099471"
 ---
 # <a name="update-devicemanagementexportjob"></a>Обновление deviceManagementExportJob
 
@@ -27,7 +27,7 @@ ms.locfileid: "54249428"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +41,7 @@ PATCH /deviceManagement/reports/exportJobs/{deviceManagementExportJobId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,10 +53,10 @@ PATCH /deviceManagement/reports/exportJobs/{deviceManagementExportJobId}
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для этого объекта|
 |reportName|String|Имя отчета|
-|filter|String|Фильтры, применяемые в отчете|
-|select|Коллекция строк|Столбцы, выбранные из отчета|
+|filter|Строка|Фильтры, применяемые в отчете|
+|select|Коллекция String|Столбцы, выбранные из отчета|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Формат экспортируемого отчета. Возможные значения: `csv`, `pdf`.|
-|snapshotId|String|Снимок — это идентифицируемый подмножество наборов данных, представленных в ReportName. Здесь можно использовать id sessionId или CachedReportConfiguration. Если задана sessionId, фильтр, выберите и OrderBy применяются к данным, представленным sessionId. Фильтр, выбор и OrderBy нельзя указать вместе с id CachedReportConfiguration.|
+|snapshotId|Строка|Снимок — это идентифицируемый подмножество наборов данных, представленных в ReportName. Здесь можно использовать id sessionId или CachedReportConfiguration. Если задана sessionId, фильтр, выберите и OrderBy применяются к данным, представленным sessionId. Фильтр, выбор и OrderBy нельзя указать вместе с id CachedReportConfiguration.|
 |ЛокализацияТип|[deviceManagementExportJobLocalizationType](../resources/intune-reporting-devicemanagementexportjoblocalizationtype.md)|Настройка локализации запрашиваемого задания экспорта. Возможные значения: `localizedValuesAsAdditionalColumn`, `replaceLocalizableValues`.|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Состояние задания экспорта. Возможные значения: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |url|String|Временное расположение экспортируемого отчета|

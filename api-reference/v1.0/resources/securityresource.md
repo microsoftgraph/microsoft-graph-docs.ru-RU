@@ -1,16 +1,16 @@
 ---
 title: тип ресурсов securityResource
 description: Представляет ресурсы, связанные с оповещением.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 49eb0b1fae46653e9cf538339b3b4b412a8d8f80674702b0151efec5c03a60a5
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7baee1075570c88a117c1fabbf8ab9d17302f071
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54152238"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134488"
 ---
 # <a name="securityresource-resource-type"></a>тип ресурсов securityResource
 
@@ -22,7 +22,7 @@ ms.locfileid: "54152238"
 
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|resource|String|Имя ресурса, связанного с текущим оповещением. **Обязательное поле**.|
+|resource|Строка|Имя ресурса, связанного с текущим оповещением. **Обязательное поле**.|
 |resourceType|[securityResourceType](#securityresourcetype-values)|Представляет тип ресурсов безопасности, связанных с оповещением. Возможные значения: `attacked`, `related`.|
 
 ### <a name="securityresourcetype-values"></a>значения securityResourceType

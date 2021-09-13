@@ -3,21 +3,23 @@ author: JeremyKelley
 ms.date: 09/10/2017
 title: Поиск сайтов
 description: Поиск сайтов, соответствующих указанным ключевым словам, в клиенте SharePoint.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 52c3fe2489b994c826506e8e4425ed508873ecbd
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 78132ed16539ebf1c0b2085e019f40ad6c19b977
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50238486"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59118885"
 ---
 # <a name="search-for-sites"></a>Поиск сайтов
 
 Пространство имен: microsoft.graph
 
-Поиск сайтов, которые [][] соответствуют предоставленным ключевым словам, в клиенте SharePoint.
+Поиск по клиенту SharePoint [сайтов, которые][] соответствуют предоставленным ключевым словам.
+
+Единственное свойство, которое работает для **сортировки, создаетсяDateTime**. Фильтр поиска — это бесплатный текстовый поиск, использующий несколько свойств при поиске результатов поиска.
 
 [сайтов]: ../resources/site.md
 
@@ -31,36 +33,42 @@ ms.locfileid: "50238486"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.
 |Для приложений                            | Sites.Read.All, Sites.ReadWrite.All
 
+>**Примечание:** Этот метод не поддерживает разрешение приложения Sites.Selected.
+
 ## <a name="http-request"></a>HTTP-запрос
 
+<!-- { "blockType": "ignored" } -->
 
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "search-sites", "scopes": "sites.readwrite.all", "tags": "service.sharepoint" } -->
-
-```msgraph-interactive
+``` http
 GET /sites?search={query}
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/search-sites-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/search-sites-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+## <a name="request-headers"></a>Заголовки запросов
+|Имя|Описание|
+|:---|:---|
+|Авторизация|Bearer {токен}. Обязательный.|
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/search-sites-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/search-sites-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` сайта в тексте отклика. [](../resources/site.md)
+
+## <a name="examples"></a>Примеры
+
+### <a name="request"></a>Запрос
+<!-- {
+  "blockType": "request",
+  "name": "list_permission"
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/sites?search={query}
+```
+
+### <a name="response"></a>Отклик
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
 ```http
@@ -88,7 +96,6 @@ Content-type: application/json
   ]
 }
 ```
->**Примечание.** Единственное свойство, которое работает для **сортировки, — createdDateTime.** Фильтр поиска — это поиск с бесплатным текстом, использующий несколько свойств при запросе результатов поиска.
 
 <!-- {
   "type": "#page.annotation",
@@ -99,4 +106,3 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
-

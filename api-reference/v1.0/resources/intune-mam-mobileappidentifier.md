@@ -2,15 +2,15 @@
 title: Тип ресурса mobileAppIdentifier
 description: Идентификатор мобильного приложения.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1151de2fce7e4a3e6c3cb31440756eec39df37f3a9e762e1d0a0e49dffb23ce9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 32af153be4ecc8f32fdf1c30115579568fa2e606
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246761"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59036370"
 ---
 # <a name="mobileappidentifier-resource-type"></a>Тип ресурса mobileAppIdentifier
 

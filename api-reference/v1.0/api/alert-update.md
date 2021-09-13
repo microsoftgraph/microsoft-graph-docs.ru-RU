@@ -1,16 +1,16 @@
 ---
 title: Обновление оповещения
 description: Обновление свойства редактируемого **оповещения** в любом интегрированном решении, чтобы синхронизировать состояние оповещений и назначения между решениями. Этот метод обновляет любое решение, которое имеет запись ссылаемого ID оповещения.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 005ac06ab2c4783f22a7eef0ddca85e771245fbc
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: bb91b6585cc43a2294ed776be64415771a9cc3cd
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52784971"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017011"
 ---
 # <a name="update-alert"></a>Обновление оповещения
 
@@ -43,9 +43,9 @@ PATCH /security/alerts/{alert_id}
 | Имя          | Описание              |
 |:--------------|:-------------------------|
 | Авторизация | Bearer {код}. Обязательно. |
-| Prefer        | return=representation. Необязательный параметр.   |
+| Prefer        | return=representation. Необязательно.   |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса поставляем представление JSON значений для соответствующих полей, которые должны быть обновлены. Тело должно **содержать** свойство **vendorInformation** с допустимым и `provider` `vendor` полями. В следующей таблице перечислены поля, которые можно обновить для оповещения. Значения для существующих свойств, не включенных в тело запроса, не изменятся. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
@@ -61,7 +61,7 @@ PATCH /security/alerts/{alert_id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`.
 
 Если используется необязательный заголовок запроса, метод возвращает код ответа и обновленный объект оповещения `200 OK` в тексте [](../resources/alert.md) ответа.
 

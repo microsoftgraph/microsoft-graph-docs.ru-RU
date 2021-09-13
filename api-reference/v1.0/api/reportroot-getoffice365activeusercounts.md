@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getOffice365ActiveUserCounts'
 description: Получение количества активных пользователей за каждый день отчетного периода по продукту.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 24435622d66b8cf37ba38f60ec7d1ce15acf908e14065e3e4e13e768dcb069b1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b38d0f158a4430c4fa8091a8e21deda2517b8ad6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147324"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110160"
 ---
 # <a name="reportroot-getoffice365activeusercounts"></a>reportRoot: getOffice365ActiveUserCounts
 
@@ -47,7 +47,7 @@ GET /reports/getOffice365ActiveUserCounts(period='{period_value}')
 
 | Параметр | Тип   | Описание                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
+| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -72,7 +72,7 @@ CSV-файл содержит столбцы со следующими заго�
 - Yammer
 - Teams
 - Report Date (Дата отчета)
-- Report Period (отчетный период)
+- "Report Period" (Отчетный период).
 
 ## <a name="example"></a>Пример
 

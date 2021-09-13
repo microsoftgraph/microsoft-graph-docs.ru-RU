@@ -1,16 +1,16 @@
 ---
 title: тип ресурса plannerOrderHintsByAssignee
 description: '**PlannerOrderHintsByAssignee** — это ресурс, содержащий подсказки по заказу для назначенцев на ресурсе plannerTask, чтобы указать порядок задачи в назначенной для просмотра доски задач.'
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 9ddfe9f30387d66e6a55da680eb176d5d20f8e33e44f6f827e84efe687d29e92
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cfe6e1ac1bd0611eac9a2a39ce89814374371d19
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54146334"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019239"
 ---
 # <a name="plannerorderhintsbyassignee-resource-type"></a>тип ресурса plannerOrderHintsByAssignee
 

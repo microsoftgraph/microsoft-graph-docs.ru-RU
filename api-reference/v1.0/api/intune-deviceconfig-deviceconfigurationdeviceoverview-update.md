@@ -2,15 +2,15 @@
 title: Обновление объекта deviceConfigurationDeviceOverview
 description: Обновление свойств объекта deviceConfigurationDeviceOverview.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7a73d9232a2105e3facb8e2778bd786c0bba1e1379553eb0876038369e29e1fc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: cc1ea3188c8aa7c6b9b6100929b6384e29f2e3d1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238519"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105225"
 ---
 # <a name="update-deviceconfigurationdeviceoverview"></a>Обновление объекта deviceConfigurationDeviceOverview
 
@@ -27,7 +27,7 @@ ms.locfileid: "54238519"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +41,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatu
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,7 +51,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatu
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |pendingCount|Int32|Количество ожидающих устройств.|
 |notApplicableCount|Int32|Количество неприменимых устройств.|
 |successCount|Int32|Количество успешных устройств.|

@@ -1,15 +1,15 @@
 ---
 title: API ретрансляции устройств в Microsoft Graph (ознакомительная версия)
 description: 'Ежедневно людям приходится взаимодействовать с несколькими устройствами. Зачастую пользователи начинают работать или развлекаться на одном устройстве и продолжают на другом. Чтобы удовлетворить потребности пользователей, ваши приложения должны без проблем работать на разных устройствах и платформах. '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: davidmu1
 ms.prod: cross-device-experiences
-ms.openlocfilehash: 09714f33d9260d5af0f3268482f860d617aa67185e301656cb61e0564b9d2a74
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: aa307f518cbd2ffd98aedb4737960da031f0b23a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54237560"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59137415"
 ---
 # <a name="device-relay-api-in-microsoft-graph-preview"></a>API ретрансляции устройств в Microsoft Graph (ознакомительная версия)
 

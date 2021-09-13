@@ -1,16 +1,16 @@
 ---
 title: Список, присвоенный homeRealmDiscoveryPolicies
 description: Список homeRealmDiscoveryPolicies, которые назначены директору службы.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hpsin
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 56c7e23c6bca817b5b35a3ec1646c479d20e972d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ff74bbff694e457c8e435cb579c3a68cfc1dea85
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054443"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032526"
 ---
 # <a name="list-assigned-homerealmdiscoverypolicy"></a>Список, присвоенный homeRealmDiscoveryPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "52054443"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
+| Для приложений                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/homeRealmDiscoveryPo
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

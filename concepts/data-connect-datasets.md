@@ -2,14 +2,14 @@
 title: Наборы данных, регионы и приемники, поддерживаемые подключением к данным Microsoft Graph
 description: Описаны поддерживаемые наборы данных и типы конечных хранилищ, которые можно использовать с подключением к данным Microsoft Graph.
 author: fercobo-msft
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: ed9ca7093bc7acaa9dd5609caa70868c769e9ea2
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 8e0aeffc6529737dbd89f759e8a9261d9989cad7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58250871"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139179"
 ---
 # <a name="datasets-regions-and-sinks-supported-by-microsoft-graph-data-connect"></a>Наборы данных, регионы и приемники, поддерживаемые подключением к данным Microsoft Graph
 

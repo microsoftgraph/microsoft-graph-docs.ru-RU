@@ -1,16 +1,16 @@
 ---
 title: тип ресурса certificateAuthority
 description: Представляет полномочия сертификата.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 4aa2ecb3c3d16ad942458da190247f1d6f6cb87babc926c97c95605d21d5418d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 067eeea8a341525f77427f518b02a07de38a05a1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235683"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59067488"
 ---
 # <a name="certificateauthority-resource-type"></a>тип ресурса certificateAuthority
 
@@ -22,12 +22,12 @@ ms.locfileid: "54235683"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|certificate|Двоичный|Обязательный элемент. Кодированная строка base64, представляющая общедоступный сертификат.|
-|certificateRevocationListUrl|String|URL-адрес списка отзыва сертификата.|
-|deltaCertificateRevocationListUrl|String|URL-адрес содержит список всех отозванных сертификатов с момента создания полного списка отзыва сертификатов.|
-|isRootAuthority|Логическое|Обязательный элемент. **верно,** если доверенный сертификат является корневым **органом,** ложным, если доверенный сертификат является промежуточным органом.|
-|эмитент|String|Эмитент сертификата, вычисляемого из **значения сертификата.** Только для чтения. |
-|issuerSki|String|Идентификатор ключа субъекта сертификата, вычисляемого из **значения сертификата.** Только для чтения.|
+|certificate|Двоичный|Обязательное. Кодированная строка base64, представляющая общедоступный сертификат.|
+|certificateRevocationListUrl|Строка|URL-адрес списка отзыва сертификата.|
+|deltaCertificateRevocationListUrl|Строка|URL-адрес содержит список всех отозванных сертификатов с момента создания полного списка отзыва сертификатов.|
+|isRootAuthority|Boolean|Обязательное. **верно,** если доверенный сертификат является корневым **органом,** ложным, если доверенный сертификат является промежуточным органом.|
+|эмитент|Строка|Эмитент сертификата, вычисляемого из **значения сертификата.** Только для чтения. |
+|issuerSki|Строка|Идентификатор ключа субъекта сертификата, вычисляемого из **значения сертификата.** Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -2,15 +2,15 @@
 title: Получить accessReviewInstance
 description: Ознакомьтесь с свойствами и отношениями объекта accessReviewInstance.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 62d18407a457de2c335656800c12d2b311ea90b6
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 91ccf2cec525f11bca9e5c610046e94f91089c1f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211000"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59033107"
 ---
 # <a name="get-accessreviewinstance"></a>Получить accessReviewInstance
 Пространство имен: microsoft.graph
@@ -25,7 +25,7 @@ ms.locfileid: "53211000"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.Read.All, AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Для приложений|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

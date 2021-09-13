@@ -3,14 +3,14 @@ title: тип ресурса chatMessagePolicyViolationPolicyTip
 description: Представляет свойства подсказки политики на объекте chatMessagePolicyViolation. Советы по политике предоставляют отправительу сведения о нарушении политики.
 author: RamjotSingh
 doc_type: resourcePageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4373475c4219c05b1bdf7ea741c0ed6526253d234da916e0760a3ed46fee3312
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 732ad01c49e23e84428922e08c9001c7a1dec34f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54169664"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109390"
 ---
 # <a name="chatmessagepolicytip-resource-type"></a>тип ресурса chatMessagePolicyTip
 
@@ -21,8 +21,8 @@ ms.locfileid: "54169664"
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|complianceUrl|Строка|URL-адрес, который пользователь может посетить, чтобы прочитать о политиках предотвращения потери данных для организации. (т. е. политики о том, что пользователи не должны говорить в чатах)|
-|generalText|Строка|Пояснительный текст, показанный отправителю сообщения.|
+|complianceUrl|string|URL-адрес, который пользователь может посетить, чтобы прочитать о политиках предотвращения потери данных для организации. (т. е. политики о том, что пользователи не должны говорить в чатах)|
+|generalText|string|Пояснительный текст, показанный отправителю сообщения.|
 |matchedConditionDescriptions|string collection|Список неправильных данных в сообщении, обнаруженном приложением для предотвращения потери данных. Каждое приложение DLP определяет свои условия, примеры включают "Номер кредитной карты" и "Номер социального обеспечения".|
 
 ## <a name="json-representation"></a>Представление JSON

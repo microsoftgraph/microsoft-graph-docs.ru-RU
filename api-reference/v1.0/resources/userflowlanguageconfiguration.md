@@ -2,15 +2,15 @@
 title: тип ресурса userFlowLanguageConfiguration
 description: Позволяет потоку пользователей поддерживать несколько языков.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: b40df72429bdc1b23bbb9426ae9b9f78154257491ba3c715d57c0804b226df98
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9af22f309ca7c93043d90ef8c0583686d7cf24f2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54221154"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59136322"
 ---
 # <a name="userflowlanguageconfiguration-resource-type"></a>тип ресурса userFlowLanguageConfiguration
 
@@ -32,11 +32,11 @@ ms.locfileid: "54221154"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор языка. Это поле — тег языкового [ID RFC 5646,](https://tools.ietf.org/html/rfc5646) который должен быть документированным языковым ИД.|
+|id|Строка|Идентификатор языка. Это поле — тег языкового [ID RFC 5646,](https://tools.ietf.org/html/rfc5646) который должен быть документированным языковым ИД.|
 |isEnabled|Boolean|Указывает, включен ли язык в потоке пользователей.|
-|displayName|String|Отображаемая языковая фамилия. Это свойство доступно только для чтения.|
+|displayName|Строка|Отображаемая языковая фамилия. Это свойство доступно только для чтения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 |Связь|Тип|Описание|
 |:---|:---|:---|

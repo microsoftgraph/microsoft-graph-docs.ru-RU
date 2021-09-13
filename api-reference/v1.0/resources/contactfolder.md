@@ -2,15 +2,15 @@
 title: Тип ресурса contactFolder
 description: Папка, содержащая контакты.
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 2501a97d21026ffe9cba907729822c2c72b0912b6ebfc20cb6591637089a2960
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0efa0da17b0c7c72f04443c119868e670f5bce0c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54184923"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59049643"
 ---
 # <a name="contactfolder-resource-type"></a>Тип ресурса contactFolder
 
@@ -27,7 +27,7 @@ ms.locfileid: "54184923"
 |:---------------|:--------|:----------|
 |[Получение contactFolder](../api/contactfolder-get.md) | [contactFolder](contactfolder.md) |Получение папки с контактами с помощью идентификатора папки контактов.|
 |[Обновление](../api/contactfolder-update.md) | [contactFolder](contactfolder.md) |Обновление объекта contactFolder. |
-|[Удаление](../api/contactfolder-delete.md) | Нет |Удаление объекта contactFolder. |
+|[удаление](../api/contactfolder-delete.md); | Нет |Удаление объекта contactFolder. |
 |[Список экземпляров childFolders](../api/contactfolder-list-childfolders.md) |Коллекция [ContactFolder](contactfolder.md)| Получение коллекции дочерних папок для указанной папки с контактами.|
 |[Создание дочернего элемента contactFolder](../api/contactfolder-post-childfolders.md) |[ContactFolder](contactfolder.md)| Создание дочернего элемента contactFolder для указанной папки.|
 |[delta](../api/contact-delta.md)|Коллекция [contact](contact.md)| Получение набора папок контактов, которые были добавлены в почтовый ящик пользователя или удалены из него.|
@@ -45,7 +45,7 @@ ms.locfileid: "54184923"
 |id|String|Уникальный идентификатор папки с контактами. Только для чтения.|
 |parentFolderId|String|Идентификатор родительской папки для папки.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |childFolders|Коллекция [ContactFolder](contactfolder.md)|Коллекция дочерних папок в папке. Свойство навигации. Только для чтения. Допускается значение null.|
@@ -53,7 +53,7 @@ ms.locfileid: "54184923"
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для contactFolder. Только для чтения. Допускается значение null.|
 |singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для contactFolder. Только для чтения. Допускается значение null.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже этот ресурс представлен в формате JSON.
 
@@ -99,7 +99,7 @@ ms.locfileid: "54184923"
 
 ## <a name="see-also"></a>См. также
 
-- [Отслеживание изменений данных Microsoft Graph с помощью разностного запроса](/graph/delta-query-overview)
+- [Отслеживание изменений данных Microsoft Graph с помощью запроса изменений](/graph/delta-query-overview)
 - [Получение добавочных изменений сообщений в папке](/graph/delta-query-messages)
 
 

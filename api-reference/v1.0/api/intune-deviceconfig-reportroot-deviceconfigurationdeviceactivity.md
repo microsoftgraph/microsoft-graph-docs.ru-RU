@@ -2,15 +2,15 @@
 title: Функция deviceConfigurationDeviceActivity
 description: Метаданные для отчета о работе устройств
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6a9c9efe502379ebd31d28775c99e194166b616ef93e15363381ab17ed0e138d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 668156942398bec27681df0b19965e5c4ed57d19
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54192903"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073291"
 ---
 # <a name="deviceconfigurationdeviceactivity-function"></a>Функция deviceConfigurationDeviceActivity
 
@@ -27,7 +27,7 @@ ms.locfileid: "54192903"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +41,7 @@ GET /reports/deviceConfigurationDeviceActivity
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

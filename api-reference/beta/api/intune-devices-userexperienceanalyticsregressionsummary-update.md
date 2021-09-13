@@ -2,15 +2,15 @@
 title: Обновление userExperienceAnalyticsRegressionSummary
 description: Обновление свойств объекта userExperienceAnalyticsRegressionSummary.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 59ccdbef035d8f8b8fd1aaad49657a99425f4aa9
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 3f5b5a86c0e54941dec24f00985303e6f3c04294
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816389"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018273"
 ---
 # <a name="update-userexperienceanalyticsregressionsummary"></a>Обновление userExperienceAnalyticsRegressionSummary
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsRegressionSummary
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ PATCH /deviceManagement/userExperienceAnalyticsRegressionSummary
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор сводки регрессии аналитики пользовательского интерфейса.|
+|id|Строка|Уникальный идентификатор сводки регрессии аналитики пользовательского интерфейса.|
 
 
 

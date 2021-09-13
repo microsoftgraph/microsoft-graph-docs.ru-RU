@@ -1,16 +1,16 @@
 ---
 title: Получение schemaExtension
 description: Получите свойства указанного определения схемыExtension.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: cd8252475954df778156ecdfd780179a04444192
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6e5153f93a8f0f643493545b85b13f7df5c65bd2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038973"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019596"
 ---
 # <a name="get-schemaextension"></a>Получение schemaExtension
 
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/schemaExtensions/graphlearn_test
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

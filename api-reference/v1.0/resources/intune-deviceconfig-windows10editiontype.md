@@ -2,15 +2,15 @@
 title: тип enum windows10EditionType
 description: Windows 10 Тип издания.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5f050bd422e02a7f9bd11720770b71fc2c5f6855dc54ba88639768347d4aba9b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dfca0aa06e20c77061ecdb93eec0a04f694e6920
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180637"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062651"
 ---
 # <a name="windows10editiontype-enum-type"></a>тип enum windows10EditionType
 
@@ -23,7 +23,7 @@ Windows 10 Тип издания.
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|windows10Enterprise|0|Windows 10 Корпоративная|
+|windows10Enterprise|0|Windows 10 Корпоративная|
 |windows10EnterpriseN|1|Windows 10 EnterpriseN|
 |windows10Education|2|Windows 10 для образовательных учреждений|
 |windows10EducationN|3|Windows 10 EducationN|

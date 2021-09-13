@@ -2,15 +2,15 @@
 title: Действие setMobileDeviceManagementAuthority
 description: Задание центра управления мобильными устройствами
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5f36dcb26da9e13998daceae1c69d3efb9ed305e6f6bbb4b4477ecadf4f3d61e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f1c2b4032d78f6d513ab2c5345b86bad88925e29
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243828"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59119284"
 ---
 # <a name="setmobiledevicemanagementauthority-action"></a>Действие setMobileDeviceManagementAuthority
 
@@ -27,7 +27,7 @@ ms.locfileid: "54243828"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +41,7 @@ POST /organization/{organizationId}/setMobileDeviceManagementAuthority
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

@@ -1,16 +1,16 @@
 ---
 title: 'post: forward'
-description: 'Переадресация публикации получателю. Вы можете указать родительский сеанс связи и поток в запросе, '
-localization_priority: Normal
+description: 'Переадресация публикации получателю. В запросе можно указать родительский разговор и поток, '
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2e6219fc3b1d0815a14322a72711e7c887188374
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8695b1f93c3b68861ba467f0327ba4b61fea11a6
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020589"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59085324"
 ---
 # <a name="post-forward"></a>post: forward
 
@@ -39,7 +39,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/forward
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

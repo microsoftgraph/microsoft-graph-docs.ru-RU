@@ -1,16 +1,16 @@
 ---
 title: тип ресурса plannerProgressTaskBoardTaskFormat
 description: Ресурс **plannerProgressTaskBoardTaskFormat** представляет сведения, используемые для правильного отрисовки задачи в представлении Progress of the Task Board (представление, организованное состоянием поля PercentComplete на объекте задачи, с столбцами для not Started, In Progress и Complete). Каждая задача будет иметь один **объект plannerProgressTaskBoardTaskFormat,** связанный с ним.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 9715fb55187a3d48ea8d21f5bd088dbfb2e08f189ed9c96e66e747c100a1272f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0288b8c5ef99f4e72f019c6ffaee15bfe1022348
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218438"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59052939"
 ---
 # <a name="plannerprogresstaskboardtaskformat-resource-type"></a>тип ресурса plannerProgressTaskBoardTaskFormat
 
@@ -29,10 +29,10 @@ ms.locfileid: "54218438"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Только для чтения. ID ресурса. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
+|id|String| Только для чтения. ID ресурса. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
 |orderHint|String|Указание, используемое для расположения задачи в окне "Ход выполнения" доски задач. Формат определяется, как описано [здесь](planner-order-hint-format.md).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

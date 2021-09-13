@@ -2,15 +2,15 @@
 title: 'cloudCommunications: getPresencesByUserId'
 description: Получите сведения о присутствии для нескольких пользователей.
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 33a57e99e97deae7a919a19f9cd49fca5775f964
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 09cb97f5b9723ae2f44fb80b77f5d567156fc4bb
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896650"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59080204"
 ---
 # <a name="cloudcommunications-getpresencesbyuserid"></a>cloudCommunications: getPresencesByUserId
 
@@ -25,7 +25,7 @@ ms.locfileid: "52896650"
 | :-------------- | :----------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Presence.Read.All                         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                         |
-| Приложение                            | Не поддерживается.                                  |
+| Для приложений                            | Не поддерживается.                                  |
 
 > **Примечание.**
 > * В запросе API поддерживается не более 650 пользовательских ИД.
@@ -99,7 +99,7 @@ Content-Type: application/json
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приводится пример отклика.
+Ниже показан пример отклика.
 
 > **Примечание:** Объекты отклика могут быть сокращены для читаемости. При фактическом вызове будут возвращены все свойства.
 

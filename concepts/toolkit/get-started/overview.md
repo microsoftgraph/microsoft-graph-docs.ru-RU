@@ -1,14 +1,14 @@
 ---
 title: Начало работы с microsoft Graph набор средств
 description: Начало работы с помощью microsoft Graph набор средств в приложении.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: elisenyang
-ms.openlocfilehash: 0fc7e189dca2585720e5be31546426ccbcd46482a77121c92d5ee4970bc9e92b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 00e4bdf2f7c4561ea67ed1917edbe2290df2950d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54214784"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032078"
 ---
 # <a name="getting-started-with-the-microsoft-graph-toolkit"></a>Начало работы с microsoft Graph набор средств
 
@@ -79,11 +79,15 @@ Microsoft Graph набор средств состоит из нескольки
 
 - <b>@micosoft/mgt-msal2-provider</b>
 
-    [`@micosoft/mgt-msal2-provider`](../providers/msal2.md) содержит `Msal2Provider` и `mgt-msal2-provider` компонент. Поставщик MSAL использует msal-browser для проверки подлинности в веб-приложениях и PWAs.
+    [`@micosoft/mgt-msal2-provider`](../providers/msal2.md) содержит `Msal2Provider` и `mgt-msal2-provider` компонент. Поставщик MSAL2 использует msal-browser для проверки подлинности в веб-приложениях и PWAs.
 
 -  <b>@microsoft/mgt-teams-provider</b>
 
     [`@microsoft/mgt-teams-provider`](../providers/teams.md) содержит `TeamsProvider` и `mgt-teams-provider` компонент. Поставщик Microsoft Teams включает проверку подлинности в Microsoft Teams вкладке.
+
+-  <b>@microsoft/mgt-teams-msal2-provider</b>
+
+    [`@microsoft/mgt-teams-msal2-provider`](../providers/teams.md) содержит `TeamsMsal2Provider` и `mgt-teams-msal2-provider` компонент. Поставщик Microsoft Teams MSAL2 включает проверку подлинности в Microsoft Teams вкладке.
 
 - <b>@microsoft/mgt-sharepoint-provider</b>
 

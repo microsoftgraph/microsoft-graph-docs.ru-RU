@@ -1,16 +1,16 @@
 ---
 title: Создание b2xIdentityUserFlow
 description: Создайте новый объект b2xIdentityUserFlow.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 3711f7e607085096d28125cad94b86ea796b5044
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 09bb79e8d21aead6fd0ff126cc7c92ad8eaf9ced
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920337"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59016640"
 ---
 # <a name="create-b2xidentityuserflow"></a>Создание b2xIdentityUserFlow
 
@@ -31,7 +31,7 @@ ms.locfileid: "51920337"
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока внешних пользователей удостоверений
+* Администратор внешних Flow удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -57,7 +57,7 @@ POST /identity/b2xUserFlows
 |id|String|Обязательный. Имя пользовательского потока. После создания имя будет предварительно заранее. `B2X_1`|
 |userFlowType|Строка|Обязательный. Тип пользовательского потока, который вы создаете. Это значение всегда будет `signUpOrSignIn` .|
 |userFlowTypeVersion|С плавающей запятой|Обязательный. Версия пользовательского потока. Это значение всегда будет 1.|
-|apiConnectorConfiguration|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|Необязательный атрибут. Настройка для включения соединителя API с целью использования в составе пользовательского потока.|
+|apiConnectorConfiguration|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|Необязательно. Настройка для включения соединителя API с целью использования в составе пользовательского потока.|
 
 ## <a name="response"></a>Отклик
 

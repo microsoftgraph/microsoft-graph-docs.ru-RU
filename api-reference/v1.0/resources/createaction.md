@@ -2,15 +2,15 @@
 author: daspek
 title: тип ресурса createAction
 description: Объект createAction предоставляет сведения о создании элемента.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 4869683401b1db6c9d11176abb28f92839d1fa6e85d428530ae3586c27c867ad
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6eb987697e1f04b69e61382d2440d435a88cc21f
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54238141"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59053114"
 ---
 # <a name="createaction-resource-type"></a>тип ресурса createAction
 

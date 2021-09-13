@@ -2,15 +2,15 @@
 title: тип ресурса serviceHealthIssuePost
 description: Представляет историческую должность в проблеме со здоровьем службы.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: a53f09c6fc32de1c65e52e2554aa89b634f2b0e3
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 3216f0a4510b6dd66a0ce5c7a96834dbf289b378
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58266900"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126676"
 ---
 # <a name="servicehealthissuepost-resource-type"></a>тип ресурса serviceHealthIssuePost
 
@@ -25,7 +25,7 @@ ms.locfileid: "58266900"
 |description|[itemBody](../resources/itembody.md)|Содержимое сообщения о проблеме службы.|
 |postType|postType|Тип столба исторической публикации службы. Возможные значения: `regular`, `quick`, `strategic`, `unknownFutureValue`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

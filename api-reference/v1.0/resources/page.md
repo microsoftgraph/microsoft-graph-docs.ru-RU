@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса страницы
 description: Страница в записной OneNote.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 77cadf00585c18a5ab0c8d87a09861c7806676fcad55beac033bc0a5a6d3b255
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f2a21f47d0e29930cf4012f4a2713b372cd77d2c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54180574"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59117979"
 ---
 # <a name="page-resource-type"></a>Тип ресурса страницы
 
@@ -53,7 +53,7 @@ ms.locfileid: "54180574"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |содержимое|Поток|HTML-контент страницы.|
-|contentUrl|String|URL-адрес HTML-контента страницы.  Только для чтения.|
+|contentUrl|Строка|URL-адрес HTML-контента страницы.  Только для чтения.|
 |createdByAppId|String|Уникальный идентификатор приложения, создавшего страницу. Только для чтения.|
 |createdDateTime|DateTimeOffset|Дата и время создания страницы. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
 |id|String|Уникальный идентификатор страницы.  Только для чтения.|
@@ -61,10 +61,10 @@ ms.locfileid: "54180574"
 |уровень|Int32|Уровень отступа страницы. Только для чтения.|
 |links|[PageLinks](pagelinks.md)|Ссылки для открытия страницы. Ссылка `oneNoteClientURL` открывает страницу в родном клиенте OneNote, если она установлена. Ссылка `oneNoteWebUrl` открывает страницу в OneNote в Интернете. Только для чтения.|
 |порядок|Int32|Порядок страницы в родительском разделе. Только для чтения.|
-|self|String|Конечная точка, в которой можно получить сведения о странице. Только для чтения.|
-|title|String|Заголовок страницы. |
+|self|Строка|Конечная точка, в которой можно получить сведения о странице. Только для чтения.|
+|title|Строка|Заголовок страницы. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |parentNotebook|[Notebook](notebook.md)|Блокнот, содержащий страницу.  Только для чтения.|

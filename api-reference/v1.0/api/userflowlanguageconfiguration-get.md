@@ -2,15 +2,15 @@
 title: Get userFlowLanguageConfiguration
 description: Ознакомьтесь с свойствами и отношениями объекта userFlowLanguageConfiguration.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a2f17c309e104738a1bae4fd7e599fd8efa28355
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: abe65315b1ee8a3409e14a93492753cd6612ead1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920585"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59109551"
 ---
 # <a name="get-userflowlanguageconfiguration"></a>Get userFlowLanguageConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "51920585"
 
 Ознакомьтесь с свойствами и отношениями [объекта userFlowLanguageConfiguration.](../resources/userflowlanguageconfiguration.md) Эти объекты представляют язык, доступный в потоке пользователей.
 
-**Примечание:** Настройка языка включена по умолчанию в [потоках пользователей Azure Active Directory.](../resources/b2xidentityuserflow.md)
+**Примечание:** Настройка языка включена по умолчанию в [Azure Active Directory потоках пользователей.](../resources/b2xidentityuserflow.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -33,7 +33,7 @@ ms.locfileid: "51920585"
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока внешних пользователей удостоверений
+* Администратор внешних Flow удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 

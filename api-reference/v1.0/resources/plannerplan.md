@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса plannerPlan
 description: Ресурс **plannerPlan** представляет план в Microsoft 365. План может принадлежать группе. Он содержит коллекцию объектов plannerTask. Кроме того, он может содержать коллекцию объектов plannerBucket. Каждому объекту plan соответствует объект details, который может содержать дополнительные сведения о плане. Дополнительные сведения об отношениях, которыми связаны группы, планы и задачи, см. в статье "Планировщик".
-localization_priority: Priority
+ms.localizationpriority: high
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: b5b27469f08caf764031030a88c35d2f976a5dd3f420cdf6221ab858f2ccd137
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f4ef9cd3bcefcbc9edd06bedc1b48388b8efca57
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54243322"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59129833"
 ---
 # <a name="plannerplan-resource-type"></a>Тип ресурса plannerPlan
 
@@ -43,7 +43,7 @@ ms.locfileid: "54243322"
 |details|[plannerPlanDetails](plannerplandetails.md)| Только для чтения. Допускает значение null. Дополнительные сведения о плане.|
 |tasks|Коллекция объектов [plannerTask](plannertask.md)| Только для чтения. Допускает значение null. Коллекция задач в плане.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

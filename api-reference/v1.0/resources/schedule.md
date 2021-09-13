@@ -2,15 +2,15 @@
 title: тип ресурса
 description: Коллекция schedulingGroups, shifts, timeOffReasons и timesOff в команде.
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType_
-ms.openlocfilehash: b7ad28acfc03726d9645afce686b327d6d5414b9755f6f01791e21b544a5d8e4
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 446a82c5cf0298c074710cbce6b88fb376b04507
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54189347"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59035985"
 ---
 # <a name="schedule-resource-type"></a>тип ресурса
 
@@ -29,16 +29,16 @@ ms.locfileid: "54189347"
 ## <a name="properties"></a>Свойства
 |Имя                   |Тип           |Описание                                                                                                                                      |
 |-----------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id                    |строка  |ID расписания.|
-| enabled               |Boolean    | Указывает, включено ли расписание для группы. Обязательный элемент.|
-| timeZone              |string  | Указывает часовой пояс группы расписания с помощью формата базы данных tz. Обязательный элемент.|
+| id                    |string  |ID расписания.|
+| enabled               |Boolean    | Указывает, включено ли расписание для группы. Обязательный.|
+| timeZone              |string  | Указывает часовой пояс группы расписания с помощью формата базы данных tz. Обязательное.|
 | provisionStatus       |operationStatus    | Состояние подготовка расписания. Возможные значения `notStarted` , `running` , `completed` `failed` . |
-| provisionStatusCode   |Строка  | Дополнительные сведения о том, почему подготовка расписания не удалась. |
-| timeClockEnabled                  |Логический  | Указывает, включены ли часы времени для расписания.             |
-| openShiftsEnabled                 |Логическое  | Указывает, включены ли открытые смены для расписания.             | 
-| swapShiftsRequestsEnabled                 |Логическое| Указывает, включены ли запросы на смены для расписания.             |
-| offerShiftRequestsEnabled                 |Логическое  | Указывает, включены ли запросы на перенос предложения для расписания.             | 
-| timeOffRequestsEnabled                    |Логическое | Указывает, включены ли запросы на время для расписания.             | 
+| provisionStatusCode   |string  | Дополнительные сведения о том, почему подготовка расписания не удалась. |
+| timeClockEnabled                  |Boolean  | Указывает, включены ли часы времени для расписания.             |
+| openShiftsEnabled                 |Логический  | Указывает, включены ли открытые смены для расписания.             | 
+| swapShiftsRequestsEnabled                 |Логический| Указывает, включены ли запросы на смены для расписания.             |
+| offerShiftRequestsEnabled                 |Логический  | Указывает, включены ли запросы на перенос предложения для расписания.             | 
+| timeOffRequestsEnabled                    |Логический | Указывает, включены ли запросы на время для расписания.             | 
 
 
 
@@ -48,7 +48,7 @@ ms.locfileid: "54189347"
 | сдвиги   | Коллекция [shift](shift.md)  | Изменения в расписании. |
 | timesOff   |[коллекция timeOff](timeoff.md)  | Случаи отключения времени в расписании. |
 | timeOffReasons   |[коллекция timeOffReason](timeoffreason.md)  | Набор причин для отключки в расписании. |
-| schedulingGroups   |Коллекция объектов [schedulingGroup](schedulinggroup.md)  | Логическая группировка пользователей в расписании (обычно по роли). |
+| schedulingGroups   |Коллекция [schedulingGroup](schedulinggroup.md)  | Логическая группировка пользователей в расписании (обычно по роли). |
 | openshifts   |[коллекция openShift](openshift.md) | Набор открытых смен в группе планирования в расписании. |
 | workforceintegrations   |[коллекция workforceIntegration](workforceintegration.md)  | Пример интеграции рабочей силы в одну команду с исходящие потоки данных в синхронных уведомлениях об изменениях (для поддерживаемых сущностям). |
 | swapshiftchangerequests   |[коллекция swapShiftsChangeRequest](swapshiftschangerequest.md)  | Запросы на замену для сдвигов в расписании. |

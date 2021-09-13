@@ -1,16 +1,16 @@
 ---
 author: daspek
 title: Получить конечную точку websocket
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 description: Позволяет получать уведомления об изменениях в режиме реального времени для диска с socket.io.
 doc_type: apiPageType
-ms.openlocfilehash: 3c937a9d51073ca89148c9ff8a3b51c8f32d30c5
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 5150b6a8504ed19caa9c06cff781a199a4bbe0a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50626218"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019463"
 ---
 # <a name="get-websocket-endpoint"></a>Получить конечную точку websocket
 

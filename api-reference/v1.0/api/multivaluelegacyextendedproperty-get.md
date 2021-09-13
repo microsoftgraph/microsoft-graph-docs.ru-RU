@@ -1,16 +1,16 @@
 ---
 title: Получение объекта multiValueLegacyExtendedProperty
 description: expand'.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 9fe5cfa98a97db07ab1dac6ce03504d5f768651da93404dda3e4b4eee798b75f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: c3e75e6f7bd88b9bfc005fb87d0a7f44209651c9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54250380"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59110188"
 ---
 # <a name="get-multivaluelegacyextendedproperty"></a>Получение объекта multiValueLegacyExtendedProperty
 
@@ -40,7 +40,7 @@ ms.locfileid: "54250380"
 ## <a name="permissions"></a>Разрешения
 В зависимости от ресурса, с который вы получаете расширенное свойство, и от запрашиваемого типа разрешений (делегирования или приложения), разрешение, указанное в следующей таблице, является минимальным, необходимым для вызова этого API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Приложение |
+| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Для приложений |
 |:-----|:-----|:-----|:-----|
 | [calendar](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
@@ -124,7 +124,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueEx
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
+При успешном выполнении этот метод возвращает код отклика `200 OK`.
 
 Основной текст отклика содержит объект, который представляет запрошенный экземпляр ресурса, дополненный соответствующим объектом [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md).
 

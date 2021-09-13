@@ -3,15 +3,15 @@ author: swapnil1993
 ms.date: 08/30/2020
 title: Создание столбцаDefinition в списке
 description: Создание столбца списка.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 0ce2325afc67a21958ba3bb92f59ff41298ceec9
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 37cd5f715b6aba512a9a3e400e50766dbfcd3b4b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696773"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105029"
 ---
 # <a name="create-a-columndefinition-in-a-list"></a>Создание столбцаDefinition в списке
 Пространство имен: microsoft.graph
@@ -28,7 +28,7 @@ ms.locfileid: "58696773"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.Manage.All, Sites.FullControl.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение | Sites.Manage.All, Sites.FullControl.All |
+|Для приложений | Sites.Manage.All, Sites.FullControl.All |
 
   
 

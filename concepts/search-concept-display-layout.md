@@ -3,14 +3,14 @@ ms.author: yiwenwang
 title: Используйте API Поиск (Майкрософт) в Microsoft Graph для отрисовки макета отображения
 description: Используйте API Поиск (Майкрософт) в Microsoft Graph для отображения результатов поиска по-разному.
 author: yiwenwang
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: a78f7be7b28e97e96d781b43c23c456e756e99405eb16260daed584753fe5753
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 704a6c0f728a38d7141f71a0431b6941498f6ad0
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129570"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59103958"
 ---
 # <a name="use-the-microsoft-search-api-in-microsoft-graph-to-render-display-layout-preview"></a>Используйте API Поиск (Майкрософт) в Microsoft Graph для отображения макета (предварительного просмотра)
 

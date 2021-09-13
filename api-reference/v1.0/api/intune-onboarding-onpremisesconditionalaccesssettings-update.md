@@ -2,15 +2,15 @@
 title: Обновление объекта onPremisesConditionalAccessSettings
 description: Обновляет свойства объекта onPremisesConditionalAccessSettings.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 72936ace2916d2bb82a7297d1d4d157f9c9920a51ecb3ec281c363c73d3b6b30
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 620f43ad0950e6cf45d854e2064ad27653b375f1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54197200"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59119382"
 ---
 # <a name="update-onpremisesconditionalaccesssettings"></a>Обновление объекта onPremisesConditionalAccessSettings
 
@@ -27,7 +27,7 @@ ms.locfileid: "54197200"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +41,7 @@ PATCH /deviceManagement/conditionalAccessSettings
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,7 +51,7 @@ PATCH /deviceManagement/conditionalAccessSettings
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Н/Д|
+|id|Строка|Н/Д|
 |enabled|Boolean|Указывает, включен ли в этой организации условный доступ к локальной среде|
 |includedGroups|Коллекция объектов Guid|Группы пользователей, для которых включается условный доступ к локальной среде. У всех пользователей в этих группах должны быть управляемые мобильные устройства, соответствующие требованиям для доступа к почте.|
 |excludedGroups|Коллекция объектов Guid|Группы пользователей, на которые не распространяется условный доступ к локальной среде. На всех пользователей из этих группах не будет распространяться политика условного доступа.|

@@ -2,15 +2,15 @@
 title: тип ресурса teamworkBot
 description: Бот в Microsoft Teams экосистеме.
 author: AkJo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: ccfbb82cace0f9bc38eeb3a5e49a185b12abc99376497bb900e0f150bc39b5c6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0f2c558bc5453f3cf8a880f1935b3f891ba097f7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54249106"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59055838"
 ---
 # <a name="teamworkbot-resource-type"></a>тип ресурса teamworkBot
 
@@ -28,7 +28,7 @@ ms.locfileid: "54249106"
 |:---|:---|:---|
 |id|String|ID бота, связанного с [определенными группамиAppDefinition.](../resources/teamsappdefinition.md) Это значение обычно является GUID.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

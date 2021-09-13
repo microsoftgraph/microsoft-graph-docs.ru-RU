@@ -2,15 +2,15 @@
 title: Список приложений в каталоге
 description: Список приложений, установленных в чате.
 author: subray
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3a277c2c9d3e78243fa640ff95d3047f9df2d542
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 80ed9a2b3db08d9b037a6d03d145413d086830ce
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958543"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100339"
 ---
 # <a name="list-apps-in-chat"></a>Список приложений в каталоге
 

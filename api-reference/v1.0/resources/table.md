@@ -2,15 +2,15 @@
 title: Тип ресурса Table
 description: Представляет таблицу Excel.
 author: lumine2008
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: d9ca66d078181f3786a8f58c4f0ed2653ba9163a425fcae01bd11952a61182a8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1e1d386af6f1b073f039e911668249224005acf5
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54126258"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134418"
 ---
 # <a name="table-resource-type"></a>Тип ресурса Table
 
@@ -55,7 +55,7 @@ ms.locfileid: "54126258"
 |showFilterButton|Boolean|Указывает, видны ли кнопки фильтрации в верхней части заголовков столбцов. Это свойство можно использовать, только если таблица содержит строку заголовков.   |
 |legacyId|String|Устаревший идентификатор, используемый в старых клиентах Excel. Значение идентификатора остается прежним, даже если переименовать таблицу. Это свойство должно интерпретироваться как непрозрачное строковое значение и не должно преобразовываться в любой другой тип. Только для чтения.   |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |columns|Коллекция [WorkbookTableColumn](workbooktablecolumn.md)|Представляет коллекцию всех столбцов в таблице. Только для чтения.|

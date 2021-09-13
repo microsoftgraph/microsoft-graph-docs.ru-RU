@@ -1,16 +1,16 @@
 ---
 title: Список исключает коллекцию разрешенийGrantPolicy
 description: Извлечение списка наборов условий, в которых описываются условия, при которых событие предоставления разрешений исключается в политике предоставления разрешений.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 17687f0f9437f67cea107bbaeca99fef44c3cd34
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a2c76b758baf8d71c3be447617212bc6744c8c5a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051300"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59032610"
 ---
 # <a name="list-excludes-collection-of-permissiongrantpolicy"></a>Список исключает коллекцию разрешенийGrantPolicy
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/policies/permissionGrantPolicies/microsoft-
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

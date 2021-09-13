@@ -2,14 +2,14 @@
 title: Получение уведомлений об изменениях разными способами
 description: Уведомления об изменениях можно получать с помощью разных технологий, включая веб-перехватчики и концентраторы событий Azure.
 author: Jumaodhiss
-localization_priority: Priority
+ms.localizationpriority: high
 ms.custom: graphiamtop20, devx-track-azurecli
-ms.openlocfilehash: 025ae3d77e4cfb9bb819cdb0b9b27c3b3bb388cc8d5d4d7f8a1cde04308ec3fd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 59caceb3b56853b9bc4d20fa97cfc035b1a3ea0c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216527"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59134068"
 ---
 # <a name="get-change-notifications-delivered-in-different-ways"></a>Получение уведомлений об изменениях разными способами
 
@@ -166,7 +166,7 @@ echo "Notification Url:\n${notificationUrl}"
 
 ### <a name="what-happens-if-the-microsoft-graph-change-tracking-application-is-missing"></a>Что произойдет, если приложение для отслеживания изменений в Microsoft Graph отсутствует?
 
-Возможно, в вашем клиенте нет субъекта-службы **отслеживания изменений в Microsoft Graph**. Это зависит от того, когда был создан клиент и от административных операций. Чтобы устранить эту проблему, выполните [следующий запрос](https://developer.microsoft.com/ru-RU/graph/graph-explorer?request=servicePrincipals&method=POST&version=v1.0&GraphUrl=https://graph.microsoft.com&requestBody=eyJhcHBJZCI6IjBiZjMwZjNiLTRhNTItNDhkZi05YTgyLTIzNDkxMGM0YTA4NiJ9) в [проводнике Microsoft Graph](https://developer.microsoft.com/ru-RU/graph/graph-explorer).
+Возможно, в вашем клиенте нет субъекта-службы **отслеживания изменений в Microsoft Graph**. Это зависит от того, когда был создан клиент и от административных операций. Чтобы устранить эту проблему, выполните [следующий запрос](https://developer.microsoft.com/en-us/graph/graph-explorer?request=servicePrincipals&method=POST&version=v1.0&GraphUrl=https://graph.microsoft.com&requestBody=eyJhcHBJZCI6IjBiZjMwZjNiLTRhNTItNDhkZi05YTgyLTIzNDkxMGM0YTA4NiJ9) в [проводнике Microsoft Graph](https://developer.microsoft.com/en-us/graph/graph-explorer).
 
 Подробности запроса:
 

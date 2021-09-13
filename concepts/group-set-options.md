@@ -2,13 +2,13 @@
 title: Настройка параметров поведения и подготовки групп Microsoft 365
 description: Ресурс group в Microsoft Graph позволяет задать определенное поведение и подготовить ресурсы при создании групп Microsoft 365.
 author: Jordanndahl
-localization_priority: Priority
-ms.openlocfilehash: 7809160bf34a6a24c0c2058a9e509e000b655875d8ee6dfaeebfbf97a0fcead7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.localizationpriority: high
+ms.openlocfilehash: fb7de5a435b781d7b1a6aefd899420476b4ac468
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54216499"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126585"
 ---
 # <a name="set-microsoft-365-group-behaviors-and-provisioning-options-preview"></a>Настройка параметров поведения и подготовки групп Microsoft 365 (предварительная версия)
 

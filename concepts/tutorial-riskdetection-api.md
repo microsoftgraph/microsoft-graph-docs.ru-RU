@@ -2,14 +2,14 @@
 title: Руководство. Определение и исправление риска с помощью API Graph Microsoft
 description: Узнайте, как выявлять и устранять риски с помощью API Graph Microsoft.
 author: davidmu1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 60690454c9b3b7adfc7ac256cb3e3a5ff72b6d3336404b6beefe421bb2eea8e1
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4c1f901199e1d5a1d68694e80522c5180810cf2d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54221008"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59143498"
 ---
 # <a name="tutorial-identify-and-remediate-risks-using-microsoft-graph-apis"></a>Руководство. Определение и устранение рисков с помощью API Graph Microsoft
 
@@ -19,7 +19,7 @@ Azure AD Identity Protection предоставляет организациям
 
 >**Примечание:** Объекты отклика, показанные в этом руководстве, могут быть сокращены для чтения. 
 
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Предварительные условия
 
 Чтобы успешно завершить этот учебник, убедитесь, что у вас есть необходимые предпосылки:
 

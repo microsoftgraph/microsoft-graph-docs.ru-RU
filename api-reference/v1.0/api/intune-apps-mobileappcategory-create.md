@@ -2,15 +2,15 @@
 title: Создание объекта mobileAppCategory
 description: Создание объекта mobileAppCategory.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 44bc3737eea1f4b2b256b381059e404dd025cb0044f9f0b416f471f856bb086f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9704a08921a32534239c10d37e9a24669d40ac4c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54147667"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59073655"
 ---
 # <a name="create-mobileappcategory"></a>Создание объекта mobileAppCategory
 
@@ -27,7 +27,7 @@ ms.locfileid: "54147667"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -42,7 +42,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/categories
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/categories
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|displayName|String|Имя категории приложений.|
+|displayName|Строка|Имя категории приложений.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта mobileAppCategory.|
 
 

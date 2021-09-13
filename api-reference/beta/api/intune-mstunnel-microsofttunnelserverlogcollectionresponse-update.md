@@ -2,15 +2,15 @@
 title: Обновление microsoftTunnelServerLogCollectionResponse
 description: Обновление свойств объекта microsoftTunnelServerLogCollectionResponse.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fda6bf3bbc6cb19f3ddf2264284db840941f636a
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: b2abbe7f801848a7ce8f6108b048a32b9bf0f345
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58820571"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59018028"
 ---
 # <a name="update-microsofttunnelserverlogcollectionresponse"></a>Обновление microsoftTunnelServerLogCollectionResponse
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/microsoftTunnelServerLogCollectionResponses/{microsoftTu
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,12 +53,12 @@ PATCH /deviceManagement/microsoftTunnelServerLogCollectionResponses/{microsoftTu
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный ID объекта|
+|id|Строка|Уникальный ID объекта|
 |status|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|Состояние коллекции журналов. Возможные значения: `pending`, `completed`, `failed`.|
 |startDateTime|DateTimeOffset|Время начала собранных журналов |
 |endDateTime|DateTimeOffset|Время окончания собранных журналов|
 |sizeInBytes|Int64|Размер журналов в bytes|
-|serverId|String|ID сервера, на который запрашивается коллекция журналов|
+|serverId|Строка|ID сервера, на который запрашивается коллекция журналов|
 |requestDateTime|DateTimeOffset|Время запроса коллекции журналов|
 |expiryDateTime|DateTimeOffset|Время истечения срока действия коллекции журналов|
 

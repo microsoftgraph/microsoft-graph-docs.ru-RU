@@ -2,15 +2,15 @@
 title: Список вкладок в чате
 description: 'Извлечение списка вкладок в указанном чате. '
 author: subray
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1ddf7286d0e806665bbe3eacd1b9cf134fcc1e53
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: a6f62f337d529ed8e0fd872afb27024522a854a2
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50954915"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59100311"
 ---
 # <a name="list-tabs-in-chat"></a>Список вкладок в чате
 
@@ -56,7 +56,7 @@ GET /chats/{chat-id}/tabs
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-list-all-the-tabs-in-the-chat-along-with-associated-teams-app"></a>Пример 1. Список всех вкладок в чате вместе со связанным приложением Teams
+### <a name="example-1-list-all-the-tabs-in-the-chat-along-with-associated-teams-app"></a>Пример 1. Список всех вкладок в чате вместе с связанным Teams приложением
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -251,7 +251,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>См. также
 
-- [Список вкладок на канале](channel-list-tabs.md)
+- [Перечисление вкладок в канале](channel-list-tabs.md)
 - 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

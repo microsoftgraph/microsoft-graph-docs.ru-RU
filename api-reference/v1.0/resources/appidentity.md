@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса appIdentity
 description: Указывает удостоверение приложения, которое выполнило действие или было изменено. Включает id приложения, имя, главный ИД службы и имя. Этот ресурс называется API directoryAudit
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 0d9347ecf3571b89843c6e2b83454d6ae45b5b65405ba66914227a994abc0fb7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8259ab10f798e3e50d9d7eaec5fbd9aecb3719df
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155213"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59062819"
 ---
 # <a name="appidentity-resource-type"></a>Тип ресурса appIdentity
 
@@ -24,7 +24,7 @@ ms.locfileid: "54155213"
 |:---------------|:--------|:----------|
 |appId|String|Обозначает уникальный идентификатор GUID, представляющий идентификатор приложения в Azure Active Directory.|
 |displayName|String|Ссылается на имя приложения, отображаемую на портале Azure.|
-|servicePrincipalId|String|Ссылается на уникальный GUID с указанием основного id службы в Azure Active Directory для соответствующего приложения.|
+|servicePrincipalId|Строка|Ссылается на уникальный GUID с указанием основного id службы в Azure Active Directory для соответствующего приложения.|
 |servicePrincipalName|String|Ссылается на имя главного клиента службы — имя приложения в клиенте. |
 
 ## <a name="json-representation"></a>Представление JSON

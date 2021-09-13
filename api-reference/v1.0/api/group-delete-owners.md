@@ -1,16 +1,16 @@
 ---
 title: Удаление владельца группы
 description: Используйте этот API, чтобы удалить владельца из группы Microsoft 365, группы безопасности или группы безопасности с поддержкой почты через свойство навигации владельцев.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ad92fd54ce0b8f59dce8f7fd03a0d25e50abc2f4
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: 714f7006da4cd97daf8e38c541c0ee1c304a5af1
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384023"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59105332"
 ---
 # <a name="remove-group-owner"></a>Удаление владельца группы
 
@@ -18,7 +18,7 @@ ms.locfileid: "58384023"
 
 Используйте этот API, чтобы удалить владельца из группы Microsoft 365, группы безопасности или группы безопасности с поддержкой почты через свойство навигации владельцев. После того как владельцы назначены группе, последний владелец группы не может быть удален. 
 
-> **Примечание:** Когда этот API называется, пользователь также удаляется из списка /groups/{id}/members. Чтобы обойти это, удалите пользователя как у владельцев, так и у участников, затем подождите 10 секунд, а затем добавьте их обратно в члены. См. [известные проблемы](/graph/known-issues#removing-a-group-owner-also-removes-the-user-as-a-group-member).
+> **Примечание:** Проблемы, с которыми сталкиваются при удалении владельца группы, связанной с [группой,](/graph/api/resources/team.md)см. [в ссылке Known Issues.](/graph/known-issues#removing-a-group-owner-also-removes-the-user-as-a-group-member)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -87,6 +87,11 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/{id}/$ref
 ```http
 HTTP/1.1 204 No Content
 ```
+
+## <a name="see-also"></a>См. также
+- [Добавление участника в команду](team-post-members.md)
+- [Обновление роли участника в группе](team-update-members.md)
+- [Удаление участника из чата](team-delete-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

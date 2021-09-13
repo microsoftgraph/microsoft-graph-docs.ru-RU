@@ -2,15 +2,15 @@
 title: тип ресурса связи
 description: Представляет связь между терминами в магазине терминов.
 author: vishriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: resourcePageType
-ms.openlocfilehash: 9b4ccd5ed062fa36cdb16dbec0d8b2631f991b12
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 88276a66949a55f0ee953f556977a2380ed415d9
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58515056"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59128034"
 ---
 # <a name="relation-resource-type"></a>тип ресурса связи
 
@@ -37,7 +37,7 @@ ms.locfileid: "58515056"
 |id|Строка|ID связи.|
 |Отношение|microsoft.graph.termStore.relationType|Тип связи. Возможные значения: `pin`, `reuse`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |fromTerm|[microsoft.graph.termStore.term](../resources/termstore-term.md)|Срок [отношения.] Термин, от которого определяются отношения. *Null* value would indicate the relation is directly with the [set.] |
@@ -66,7 +66,7 @@ ms.locfileid: "58515056"
 [microsoft.graph.termStore.set]: termstore-set.md
 [microsoft.graph.termStore.relations]: termstore-relation.md
 [microsoft.graph.termStore.relation]: termstore-relation.md
-[магазин]: ../resources/termstore-store.md
+[store]: ../resources/termstore-store.md
 [термин]: ../resources/termstore-term.md
 [set]: ../resources/termstore-set.md
 

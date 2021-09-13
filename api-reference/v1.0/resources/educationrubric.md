@@ -1,16 +1,16 @@
 ---
 title: тип ресурса educationRubric
 description: Рубрика классификации, которую можно прикрепить к назначению.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 946641cdaa3c7276d3119baa8e2f1921522a7ba11c2f16a1d9b9d31aeb654e06
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: bf5565aa6862b66f59f5b75a4c9b8ae177049d34
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54124502"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126837"
 ---
 # <a name="educationrubric-resource-type"></a>тип ресурса educationRubric
 
@@ -34,16 +34,16 @@ ms.locfileid: "54124502"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |createdBy|[identitySet](identityset.md)|Пользователь, создавший этот ресурс.|
-|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
 |description|[itemBody](itembody.md)|Описание этой рубрики.|
-|displayName|String|Название этой рубрики.|
+|displayName|Строка|Название этой рубрики.|
 |классификация|[educationAssignmentGradeType](educationassignmentgradetype.md)|Тип классификации этой рубрики — null для неочковой рубрики или [educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md) для рубрики точек.|
 |lastModifiedBy|[identitySet](identityset.md)|Последний пользователь, который изменит ресурс.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения ресурса.  Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |уровни|[коллекция rubricLevel](rubriclevel.md)|Коллекция уровней, в которые состоит эта рубрика.|
 |качества|[rubricQuality](rubricquality.md) collection|Коллекция качеств, из которых состоит эта рубрика.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Нет
 

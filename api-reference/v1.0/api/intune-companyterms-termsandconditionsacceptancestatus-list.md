@@ -2,15 +2,15 @@
 title: Перечисление объектов termsAndConditionsAcceptanceStatus
 description: Список свойств и связей объектов termsAndConditionsAcceptanceStatus.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 009e052c2470376dfbf6e40a0e90c67cfc5b979d9ccd2ec69e38024f9a83f184
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8c650d6b8bc0229396df6c1d64b9a7ce45d5041e
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54167529"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59026555"
 ---
 # <a name="list-termsandconditionsacceptancestatuses"></a>Перечисление объектов termsAndConditionsAcceptanceStatus
 
@@ -27,7 +27,7 @@ ms.locfileid: "54167529"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,7 +41,7 @@ GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatus
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

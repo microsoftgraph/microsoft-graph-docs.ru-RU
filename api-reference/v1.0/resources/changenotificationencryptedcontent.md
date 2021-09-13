@@ -1,16 +1,16 @@
 ---
 title: тип ресурса changeNotificationEncryptedContent
 description: Объект changeNotificationEncryptedContent представляет зашифрованные данные, присоединенные к уведомлению об изменении.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: baywet
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 01815c47312b33f9ca3d4dfa3d96df063219628ec28fab7d45066268a39a3f53
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3ca826bd2790fef77dd78f183a34fc306f28e47b
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54246908"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59126949"
 ---
 # <a name="changenotificationencryptedcontent-resource-type"></a>тип ресурса changeNotificationEncryptedContent
 
@@ -24,11 +24,11 @@ ms.locfileid: "54246908"
 
 | Свойство | Тип | Описание |
 |:---------|:-----|:------------|
-| data | Строка | Зашифрованные данные с кодом Base64, которые создают полный ресурс, повторно задав его в качестве JSON. Данные шифруются с помощью набора `dataKey` `AES/CBC/PKCS5PADDING` шифров. |
-| dataSignature | Строка | Хэш HMAC-SHA256 с кодом Base64 для целей проверки. |
-| dataKey | Строка | Симметричный ключ с кодом Base64, созданный корпорацией Майкрософт Graph для шифрования значения данных и создания подписи данных. Этот ключ шифруется с общедоступным ключом сертификата, который был предоставлен во время подписки. Его необходимо расшифровать с помощью закрытого ключа сертификата, прежде чем его можно будет использовать для расшифровки данных или проверки подписи. Этот ключ шифруется следующим набором шифров: `RSA/ECB/OAEPWithSHA1AndMGF1Padding` . |
+| data | string | Зашифрованные данные с кодом Base64, которые создают полный ресурс, повторно задав его в качестве JSON. Данные шифруются с помощью набора `dataKey` `AES/CBC/PKCS5PADDING` шифров. |
+| dataSignature | string | Хэш HMAC-SHA256 с кодом Base64 для целей проверки. |
+| dataKey | string | Симметричный ключ с кодом Base64, созданный корпорацией Майкрософт Graph для шифрования значения данных и создания подписи данных. Этот ключ шифруется с общедоступным ключом сертификата, который был предоставлен во время подписки. Его необходимо расшифровать с помощью закрытого ключа сертификата, прежде чем его можно будет использовать для расшифровки данных или проверки подписи. Этот ключ шифруется следующим набором шифров: `RSA/ECB/OAEPWithSHA1AndMGF1Padding` . |
 | encryptionCertificateId | string | ID сертификата, используемого для шифрования `dataKey` . |
-| encryptionCertificateThumbprint | Строка | Hexadecimal representation of the thumbprint of the certificate used to encrypt the `dataKey` . |
+| encryptionCertificateThumbprint | string | Hexadecimal representation of the thumbprint of the certificate used to encrypt the `dataKey` . |
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -2,15 +2,15 @@
 title: Тип ресурса intuneBrand
 description: Ресурс intuneBrand содержит данные, которые используются для настройки внешнего вида приложения "Корпоративный портал" и веб-портала пользователя.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a30454de5ab8ccbe577c10ceddbe887a0f10a9eb
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 75e6d8101247517e5b86f256d7cf3c8faf11ee01
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58816452"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59017228"
 ---
 # <a name="intunebrand-resource-type"></a>Тип ресурса intuneBrand
 
@@ -25,7 +25,7 @@ ms.locfileid: "58816452"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Название компании или организации, которое отображается пользователям.|
+|displayName|Строка|Название компании или организации, которое отображается пользователям.|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Основной цвет темы, который используется в приложениях "Корпоративный портал" и на веб-портале.|
 |showLogo|Boolean|Логическое значение, которое определяет, отображаются ли предоставленные администратором изображения логотипов.|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Изображение с логотипом на светлом фоне, которое отображается в приложениях "Корпоративный портал".|
@@ -41,15 +41,15 @@ ms.locfileid: "58816452"
 |onlineSupportSiteUrl|String|URL-адрес сайта ИТ-службы технической поддержки компании или организации.|
 |onlineSupportSiteName|String|Отображаемое имя сайта ИТ-службы технической поддержки компании или организации.|
 |privacyUrl|String|URL-адрес страницы с политикой конфиденциальности компании или организации.|
-|customPrivacyMessage|String|Пользовательское сообщение о конфиденциальности, используемом для объяснения того, что организация не может видеть или делать на управляемых устройствах.|
-|customCantSeePrivacyMessage|String|Пользовательское сообщение о конфиденциальности, используемом для объяснения того, что организация не может видеть или делать на управляемых устройствах.|
+|customPrivacyMessage|Строка|Пользовательское сообщение о конфиденциальности, используемом для объяснения того, что организация не может видеть или делать на управляемых устройствах.|
+|customCantSeePrivacyMessage|Строка|Пользовательское сообщение о конфиденциальности, используемом для объяснения того, что организация не может видеть или делать на управляемых устройствах.|
 |customCanSeePrivacyMessage|String|Пользовательское сообщение о конфиденциальности, используемом для объяснения того, что организация может видеть и делать на управляемых устройствах.|
-|isRemoveDeviceDisabled|Логический|Boolean, который представляет, отключил ли администратор действие "Удалить устройство" на корпоративных устройствах.|
-|isFactoryResetDisabled|Boolean|Boolean, который представляет, отключил ли администратор действие "Сброс фабрики" на корпоративных устройствах.|
+|isRemoveDeviceDisabled|Boolean|Boolean, который представляет, отключил ли администратор действие "Удалить устройство" на корпоративных устройствах.|
+|isFactoryResetDisabled|Логический|Boolean, который представляет, отключил ли администратор действие "Сброс фабрики" на корпоративных устройствах.|
 |companyPortalBlockedActions|[коллекция companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md)|Коллекция заблокированных действий на портале компании в зависимости от типов владения платформой и устройствами.|
 |showAzureADEnterpriseApps|Логический|Boolean, который указывает, будут ли Enterprise AzureAD приложения будут показаны в Корпоративный портал|
-|showOfficeWebApps|Логический|Boolean, который указывает, Office веб-приложения будут показаны в Корпоративный портал|
-|sendDeviceOwnershipChangePushNotification|Логический|Boolean, который указывает, отправляется ли пользователям push-уведомление при смене типа владения устройствами с личного на корпоративный.|
+|showOfficeWebApps|Boolean|Boolean, который указывает, Office веб-приложения будут показаны в Корпоративный портал|
+|sendDeviceOwnershipChangePushNotification|Boolean|Boolean, который указывает, отправляется ли пользователям push-уведомление при смене типа владения устройствами с личного на корпоративный.|
 |enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|Настраиваемый поток регистрации устройств, отображаемый конечному пользователю. Возможные значения: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
 |отключениеClientTelemetry|Boolean|Применяется к телеметрии, отправленной от всех клиентов в службу Intune. При отключении все упреждающие предупреждения о неполадок в клиенте отключаются, а параметры телеметрии отображаются неактивными или скрытыми для пользователя устройства.|
 

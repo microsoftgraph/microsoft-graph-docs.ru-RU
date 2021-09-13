@@ -1,14 +1,14 @@
 ---
 title: Интеграция приложения iOS с клиентским пакетом SDK для уведомления пользователей
 description: Интеграция приложения iOS с клиентским пакетом SDK уведомления пользователей.
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: notifications
-ms.openlocfilehash: efe4505e0c56e37150f8066f9571c06f2b41797e04c1f671bb790bb27adb00b0
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 0a73626317195320a274430f32607f13b9920505
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54211733"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59066935"
 ---
 # <a name="integrate-your-ios-app-with-the-client-side-sdk-for-user-notifications"></a>Интеграция приложения iOS с клиентским пакетом SDK для уведомления пользователей
 

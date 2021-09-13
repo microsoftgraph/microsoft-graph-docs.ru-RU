@@ -1,16 +1,16 @@
 ---
 title: Использование Microsoft Graph Security API
 description: Microsoft Graph Security API обеспечивает единый интерфейс и схему интеграции с решениями безопасности от корпорации Майкрософт и партнеров экосистемы.
-localization_priority: Priority
+ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: 18d9ce963e5378ebc571763a2a395c992ff8bf6154f7ea692afeec5cbdb58dae
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4876c633409b71c7ae4f60cbe10dcab095c89e25
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54141331"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59139634"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Использование Microsoft Graph Security API
 

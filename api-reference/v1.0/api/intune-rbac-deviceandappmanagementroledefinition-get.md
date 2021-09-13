@@ -2,15 +2,15 @@
 title: Получение deviceAndAppManagementRoleDefinition
 description: Считывание свойств и связей объекта deviceAndAppManagementRoleDefinition.
 author: dougeby
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f12523ce257d4b1b056f0b3350a90c85da10c5666f3ce00b32bb827aa9f403bd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8fcfca404c49748d851e8846f30721f4e83dd1a7
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54240815"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59019862"
 ---
 # <a name="get-deviceandappmanagementroledefinition"></a>Получение deviceAndAppManagementRoleDefinition
 
@@ -27,7 +27,7 @@ ms.locfileid: "54240815"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
+|Для приложений|DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -45,7 +45,7 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAs
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

@@ -2,15 +2,15 @@
 title: 'accessReviewInstance: sendReminder'
 description: Отправляет напоминание рецензентам активного доступаReviewInstance.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 00608ba03cbf3106b9707fc0e236328f2dfd1e65
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 4e55cb609b813da7718abc84beb91934402d272a
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210965"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59008596"
 ---
 # <a name="accessreviewinstance-sendreminder"></a>accessReviewInstance: sendReminder
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "53210965"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|AccessReview.ReadWrite.All|
+|Для приложений|AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
