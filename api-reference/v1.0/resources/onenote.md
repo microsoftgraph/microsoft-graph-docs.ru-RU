@@ -2,15 +2,15 @@
 title: Тип ресурса onenote
 description: Точка входа для ресурсов OneNote.
 author: jewan-microsoft
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 5280edcec076a924afa5648ee6841d7659ad54da10a491dc15a4ba86fbb2640e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1780905c022494e4903d4b6a0348fd3af55c2017
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54154954"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59094172"
 ---
 # <a name="onenote-resource-type"></a>Тип ресурса onenote
 
