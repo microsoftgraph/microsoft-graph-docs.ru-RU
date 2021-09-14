@@ -2,15 +2,15 @@
 title: Получение уведомлений об изменениях сообщений в каналах и чатах Teams с помощью Microsoft Graph
 description: Уведомления об изменениях позволяют прослушивать изменения в сообщениях канала или чата
 author: RamjotSingh
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 82474e8fc13cb1a9dc4d8cc582a9a7aea4f32198
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 40b6643e5d1b5008730212ff5239ea9de55f151c
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667810"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59071709"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>Получение уведомлений об изменениях сообщений в каналах и чатах Teams с помощью Microsoft Graph
 
@@ -257,6 +257,39 @@ Content-Type: application/json
 }
 ```
 
+## <a name="subscribe-to-changes-at-the-user-level"></a>Подписка на изменения на уровне пользователя
+
+Чтобы отслеживать сообщения во всех чатах, в которые входит определенный пользователь, можно создать подписку на уведомления об изменениях на уровне пользователя. Для этого подпишитесь на `/users/{user-id}/chats/getAllMessages`. Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление как в *делегированном* режиме, так и в режиме *только для приложений*. 
+
+Подписки на сообщения чата на уровне пользователя также поддерживают поиск на основе ключевых слов с помощью параметра запроса `$search`.
+
+> **Примечание.** В дальнейшем корпорация Майкрософт может потребовать у вас или ваших клиентов оплаты дополнительных сборов на основе количества данных, доступ к которым получен через API-интерфейс.
+
+### <a name="permissions"></a>Разрешения
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              | Поддерживается в версии |
+|:--------------------|:---------------------------------------------------------|:---------------------|
+|Делегированные (рабочая или учебная учетная запись) | Chat.Read, Chat.ReadWrite | Бета |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    | Не поддерживается. |
+|Для приложения | Chat.Read.All, Chat.ReadWrite.All | бета |
+
+### <a name="example-subscribe-to-messages-across-all-chats-a-particular-user-is-part-of"></a>Пример. Подписка на сообщения во всех чатах, в которые входит определенный пользователь
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-Type: application/json
+
+{
+  "changeType": "created,updated,deleted",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "resource": "/users/{user-id}/chats/getAllMessages",
+  "includeResourceData": true,
+  "encryptionCertificate": "{base64encodedCertificate}",
+  "encryptionCertificateId": "{customId}",
+  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
+  "clientState": "{secretClientState}"
+}
+```
 ## <a name="notification-payloads"></a>Полезные данные уведомлений
 
 В зависимости от вашей подписки вы можете получать уведомление с данными ресурсов или без них. Подписка с данными ресурсов позволяет получать полезные данные вместе с уведомлением, устраняя необходимость обратного вызова и получения содержимого.
