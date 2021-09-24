@@ -2,22 +2,24 @@
 title: Get educationAssignmentDefaults
 description: Ознакомьтесь с свойствами и отношениями объекта educationAssignmentDefaults.
 author: dipakboyed
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 29921d6a6ce0cab55b45d09fca06408a5edcd714
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 024794e6a18ecd6c9e9f1d7f6ad71a5f638ed258
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367186"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507410"
 ---
 # <a name="get-educationassignmentdefaults"></a>Get educationAssignmentDefaults
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ознакомьтесь с свойствами и отношениями объекта [educationAssignmentDefaults.](../resources/educationassignmentdefaults.md) Это по умолчанию назначения класса, которые соблюдаются новыми назначениями, созданными в классе. Звонители могут продолжать указывать настраиваемые значения для каждого создания назначения, если они не хотят поведения по умолчанию.
+Ознакомьтесь с свойствами и отношениями объекта [educationAssignmentDefaults.](../resources/educationassignmentdefaults.md) 
+
+Это по умолчанию назначения класса, которые соблюдаются новыми [назначениями,](../resources/educationassignment.md) созданными в классе. Звонители могут продолжать указывать настраиваемые значения для каждого создания назначения, если они не хотят поведения по умолчанию. 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -47,24 +49,25 @@ GET /education/classes/{id}/assignmentDefaults
 |Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте текст запроса для этого метода.
+Не поставляем тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код ответа и объект `200 OK` [educationAssignmentDefaults](../resources/educationassignmentdefaults.md) в тексте ответа.
 
-## <a name="examples"></a>Примеры
+## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f"],
   "name": "get_educationassignmentdefaults"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentDefaults
+GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentDefaults
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationassignmentdefaults-csharp-snippets.md)]
@@ -99,12 +102,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "addedStudentAction": "none",
-    "addToCalendarAction": "studentsAndTeamOwners",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignmentDefaults/$entity",
     "dueTime": "23:59:00",
-    "notificationChannelUrl": "https://graph.microsoft.com/beta/teams('id')/channels('id')"
-  }
+    "notificationChannelUrl": null,
+    "addedStudentAction": "none",
+    "addToCalendarAction": "none"
 }
 ```
 

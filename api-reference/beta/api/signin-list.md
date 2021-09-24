@@ -2,15 +2,15 @@
 title: Перечисление входов
 doc_type: apiPageType
 description: Получите список входных записей пользователя в Azure Active Directory клиента.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: 78d6a80103e3c5328f9ed69729c72195d3254885
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: ed5e9d304278040a957347e8e2550b53f2e562b5
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490121"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507832"
 ---
 # <a name="list-signins"></a>Перечисление входов
 
@@ -32,6 +32,9 @@ ms.locfileid: "58490121"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
 | Приложение | AuditLog.Read.All и Directory.Read.All | 
 
+> [!IMPORTANT]
+> Этот API имеет [известные](/graph/known-issues#azure-ad-activity-reports) проблемы и в настоящее время требует согласия на оба **auditLog.Read.All** и **Directory.Read.All** разрешений.
+
 Приложения должны быть [правильно зарегистрированы в](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) Azure AD.
 
 Помимо делегирования разрешений, пользователю, входиму в который, необходимо принадлежать к одной из следующих ролей каталога, которая позволяет ему читать отчеты о входе. Дополнительные информацию о роли каталогов см. в встроенной роли [Azure AD:](/azure/active-directory/roles/permissions-reference)
@@ -50,7 +53,7 @@ GET auditLogs/signIns
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$top` параметры `$skiptoken` запроса OData и OData для настройки `$filter` ответа. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](/graph/query_parameters).
+Этот метод поддерживает `$top` параметры `$skiptoken` запроса OData и OData для настройки `$filter` ответа. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 

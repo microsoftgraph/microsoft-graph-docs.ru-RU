@@ -1,16 +1,16 @@
 ---
 title: Перечисление directoryAudits
 description: Описывает метод списка ресурса directoryAudit из API Microsoft Graph (бета-версия).
-localization_priority: Normal
+ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 63b29589d1aef21b8d832bb7b2e329d6f4eaee69
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 0bc052fdb4d812bb733f9628b6d842f4ff8c50a3
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579409"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507398"
 ---
 # <a name="list-directoryaudits"></a>Перечисление directoryAudits
 
@@ -27,8 +27,11 @@ ms.locfileid: "53579409"
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
 |Приложение | AuditLog.Read.All и Directory.Read.All | 
+
+> [!IMPORTANT]
+> Этот API имеет [известные](/graph/known-issues#azure-ad-activity-reports) проблемы и в настоящее время требует согласия на оба **auditLog.Read.All** и **Directory.Read.All** разрешений.
 
 Кроме того, приложения должны быть [правильно зарегистрированы](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) в Azure AD.
 
@@ -41,7 +44,7 @@ GET /auditLogs/directoryAudits
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает следующие параметры запроса OData, чтобы помочь настроить ответ. Сведения об использовании этих параметров см. в материале [OData query parameters.](/graph/query_parameters)
+Этот метод поддерживает следующие параметры запроса OData, чтобы помочь настроить ответ. Сведения об использовании этих параметров см. в материале [OData query parameters.](/graph/query-parameters)
 
 |Параметр     |Описание                            |Пример|
 |:--------------------|----------------|------------------------------------------------------------------------|

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса cloudAppSecuritySessionControl
 description: Управление сеансами, используемая для обеспечения проверки безопасности облачных приложений.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 630c558981b3dc9bbb0ec48c9a81ff74868c43bb
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: cb199328c95d1f60cd1149f7aa5a686218b0ee76
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50941836"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507811"
 ---
 # <a name="cloudappsecuritysessioncontrol-resource-type"></a>тип ресурса cloudAppSecuritySessionControl
 
@@ -25,7 +25,7 @@ ms.locfileid: "50941836"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |isEnabled     |Boolean      | Указывает, включено ли управление сеансом. |
-|cloudAppSecurityType|cloudAppSecuritySessionControlType| Возможные значения: `mcasConfigured`, `monitorOnly`, `blockDownloads`. Дополнительные данные об этих значениях можно узнать здесь: https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#step-1-create-an-azure-ad-conditional-access-test-policy- |
+|cloudAppSecurityType|cloudAppSecuritySessionControlType| Возможные значения: `mcasConfigured`, `monitorOnly`, `blockDownloads`. Чтобы узнать больше об этих значениях, разверни управление приложениями условного доступа [для рекомендуемых приложений.](https://docs.microsoft.com/en-us/cloud-app-security/proxy-deployment-aad#step-1--configure-your-idp-to-work-with-cloud-app-security) |
 
 ## <a name="relationships"></a>Связи
 

@@ -2,15 +2,15 @@
 title: тип ресурса cloudPcManagementAssignmentTarget
 description: цель назначения cloudPcManagement. Базовый тип.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: eab9b1041a78ac5b497174febe33d0db3d5ac566
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 79b7d4c7c338b8b49b28654a1329fc1220987ca0
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082267"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507503"
 ---
 # <a name="cloudpcmanagementassignmenttarget-resource-type"></a>тип ресурса cloudPcManagementAssignmentTarget
 
@@ -21,8 +21,6 @@ ms.locfileid: "53082267"
 Базовый тип для объектов назначения.
 
 Ресурс [cloudPcManagementGroupAssignmentTarget,](cloudpcmanagementgroupassignmenttarget.md) который представляет целевую группу назначения, наследует этот базовый тип.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="properties"></a>Свойства
 

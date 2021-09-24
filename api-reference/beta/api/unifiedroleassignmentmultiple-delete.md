@@ -1,16 +1,16 @@
 ---
 title: Удаление unifiedRoleAssignmentMultiple
 description: Удаление объекта unifiedRoleAssignmentMultiple.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6d888d8755ca39fd4cfb7e9b8d4c93c18bfcb487
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: b2e933da27e57496d9584c570f71e23a02a750ec
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534083"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507223"
 ---
 # <a name="delete-unifiedroleassignmentmultiple"></a>Удаление unifiedRoleAssignmentMultiple
 
@@ -24,9 +24,7 @@ ms.locfileid: "53534083"
 - Облачный КОМПЬЮТЕР 
 - управление устройствами (Intune)
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
-## <a name="permissions"></a>Разрешения
+## <a name="permissions"></a>Permissions
 
 В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующей таблицы наименее привилегированное разрешение, необходимое для вызова этого API. Дополнительные новости, в том числе осторожность [перед](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) выбором более привилегированных разрешений, см. [в см. в руб. Permissions.](/graph/permissions-reference) 
 
@@ -68,7 +66,7 @@ DELETE /roleManagement/deviceManagement/roleAssignments/{id}
 
 | Имя | Описание |
 |:---- |:----------- |
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -117,7 +115,7 @@ DELETE https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssi
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

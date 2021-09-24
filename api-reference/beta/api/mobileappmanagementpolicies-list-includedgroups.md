@@ -2,15 +2,15 @@
 title: Список включенGroups
 description: Получите список групп, включенных в политику управления мобильными приложениями.
 author: ravennMSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7f0d48a74ce11a3809a42f9f2c26a8075d33155a
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 6d47f7bce7adae9c915f6f5c60c5aad46894b810
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440984"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59508526"
 ---
 # <a name="list-includedgroups"></a>Список включенGroups
 

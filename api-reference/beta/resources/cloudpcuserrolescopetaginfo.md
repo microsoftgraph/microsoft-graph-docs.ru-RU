@@ -2,15 +2,15 @@
 title: тип ресурса cloudPcUserRoleScopeTagInfo
 description: Представляет сведения тега области с отображаемой именем и удостоверением.
 author: ecmadao
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 61df383dca51ec2494eb10b745bc227bcfc5d9b8
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: c070e11bb86b9a41ed5de05955a39599ee21e2f4
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211310"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507202"
 ---
 # <a name="cloudpcuserrolescopetaginfo-resource-type"></a>тип ресурса cloudPcUserRoleScopeTagInfo
 
@@ -19,8 +19,6 @@ ms.locfileid: "53211310"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет сведения тега области с отображаемой именем и удостоверением.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|

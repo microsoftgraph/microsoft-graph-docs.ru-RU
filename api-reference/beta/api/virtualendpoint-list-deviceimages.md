@@ -2,15 +2,15 @@
 title: Список cloudPcDeviceImages
 description: Список свойств и связей изображений ОС, загруженных на облачный компьютер.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: dd5d6ea1f3363963fdb978766d788c167437bd66
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 6f8ec3ee7638c5ba30d329c714fcc154c514dab1
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534090"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507524"
 ---
 # <a name="list-deviceimages"></a>Список устройствImages
 
@@ -19,8 +19,6 @@ ms.locfileid: "53534090"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Список свойств и связей объектов [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) (изображений ОС), загруженных на облачный КОМПЬЮТЕР.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>Разрешения
 
@@ -57,7 +55,7 @@ GET /deviceManagement/virtualEndpoint/deviceImages
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) в тексте отклика.
 

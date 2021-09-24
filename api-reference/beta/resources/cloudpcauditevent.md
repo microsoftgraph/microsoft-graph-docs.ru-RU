@@ -2,15 +2,15 @@
 title: тип ресурса cloudPcAuditEvent
 description: Представляет объект событий аудита.
 author: ecmadao
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: a863ea4128b7383c70bd14f025fcc5ce116dda25
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 155ecf60bcd160877fe905ef1bd6b328b60bb49d
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211345"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507517"
 ---
 # <a name="cloudpcauditevent-resource-type"></a>тип ресурса cloudPcAuditEvent
 
@@ -19,8 +19,6 @@ ms.locfileid: "53211345"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет объект событий аудита.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="methods"></a>Методы
 
@@ -38,7 +36,7 @@ ms.locfileid: "53211345"
 |displayName|String|Отображаемое имя события. Только для чтения.|
 |componentName|String|Имя компонента. Только для чтения.|
 |actor|[cloudPcAuditActor](../resources/cloudpcauditactor.md)|Пользователь и приложение Azure AD, связанные с событием аудита. Только для чтения.|
-|activity|String|Понятное имя действия.Необязательно.|
+|activity|String|Понятное имя действия.Необязательное свойство.|
 |activityDateTime|DateTimeOffset|Дата и время выполнения действия (в формате UTC).Только для чтения.|
 |activityType|String|Тип выполняемой деятельности.Только для чтения.|
 |activityOperationType|[cloudPcAuditActivityOperationType](#cloudpcauditactivityoperationtype-values)|Тип операции HTTP для действия. Возможные значения включают  `create` `delete` , и `patch` `other` . Только для чтения.|

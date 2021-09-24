@@ -2,15 +2,15 @@
 title: Get cloudPC
 description: Просмотр свойств и связей объекта cloudPC.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: ad63ff3f4d152005624872f94482b44cb862ef9f
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: bf0f163d43c31e053e728da577f6b0f7514ed27a
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082225"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507573"
 ---
 # <a name="get-cloudpc"></a>Get cloudPC
 
@@ -20,7 +20,6 @@ ms.locfileid: "53082225"
 
 Ознакомьтесь с свойствами и отношениями определенного [объекта cloudPC.](../resources/cloudpc.md)
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

@@ -1,18 +1,20 @@
 ---
 title: Удаление calendarPermission
 description: Удаление calendarPermission.
+author: Harini84
 ms.localizationpriority: medium
-author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8b41476575c187d85bcd1d393886b5185cca2731
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6c663265304772254394f085c6fd2c76ed7530c6
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050770"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507209"
 ---
 # <a name="delete-calendarpermission"></a>Удаление calendarPermission
+
+Пространство имен: microsoft.graph
 
 Удаление calendarPermission.
 
@@ -49,7 +51,7 @@ DELETE /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Авторизация | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -64,7 +66,6 @@ DELETE /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 ### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -93,7 +94,6 @@ DELETE https://graph.microsoft.com/v1.0/users/{id}/calendar/calendarPermissions/
 
 ---
 
-
 ### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
@@ -116,4 +116,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-
