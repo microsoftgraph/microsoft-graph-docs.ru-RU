@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса organization
 description: 'Представляет клиента Azure Active Directory клиента. '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 13323ebf6560fc54c8fc22e26c4d6e97d6678d73
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 1c666363d6eeb823373258a82ae1459c71ccea72
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108868"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508371"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -34,10 +34,17 @@ ms.locfileid: "53108868"
 |[Получение открытого расширения](../api/opentypeextension-get.md) |Коллекция объектов [openTypeExtension](opentypeextension.md)| Получение открытого расширения, определяемого именем расширения.|
 |**Расширения схемы**| | |
 |[Добавление значений расширений для схемы](../api/schemaextension-post-schemaextensions.md) | [schemaExtension](schemaextension.md) | Создание определения расширения схемы и его дальнейшее использование для добавления в ресурс введенных пользовательских данных.|
-|[Создание organizationalBrandingProperties](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Создайте новую организациюBrandingProperties, разместив в коллекции брендинга. |
-|[Получение фирменного стиля](../api/organizationalbrandingproperties-get.md) | Коллекция [organizationalBrandingProperties](organizationalbrandingproperties.md) | Получение коллекции объектов organizationalBrandingProperties. |
-|[Получение фирменного стиля](../api/organizationalbrandingproperties-get.md) | Коллекция [organizationalBrandingProperties](organizationalbrandingproperties.md) | Получите коллекцию объектов organizationalBrandingProperties. |
+|**Лицензии организации**| | |
 |[activateService](../api/organization-activateservice.md) | Нет |  Активация службы для организации. |
+|**Организационный брендинг**| | |
+|[Создание организационнойbrandingLocalization](../api/organizationalbranding-post-localizations.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Создайте новый брендинг локализации (с определенным языком) и объект по умолчанию, если он не существует. |
+|[Get organizationalBranding](../api/organizationalbranding-get.md) | [organizationalBranding](organizationalbranding.md) | Получите объект организационного брендинга по умолчанию. |
+|[Обновление организационногобрандинга](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Обновление объекта организационного брендинга по умолчанию. |
+|[Удаление организационногобрендинга](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Удаление объекта организационного брендинга по умолчанию. |
+|[Список организационнойBrandingLocalization](../api/organizationalbrandinglocalization-get.md) | [коллекция organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Извлечение всех объектов брендинга локализации в клиенте. |
+|[Получить организационнуюбрандингЛокализацию](../api/organizationalbrandinglocalization-get.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Ознакомьтесь с свойствами объекта локализации. |
+|[Обновление организационногобрандинга](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Обновление объекта локализации. |
+|[Удаление организационногобрендинга](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Удаление объекта локализации. |
 
 ## <a name="properties"></a>Свойства
 
@@ -57,7 +64,7 @@ ms.locfileid: "53108868"
 | marketingNotificationEmails | Коллекция String | Значение null не допускается. |
 | objectType | String | Строка, которая определяет тип объекта. Для клиентов значение всегда `Company` .|
 | onPremisesLastSyncDateTime | DateTimeOffset | Время и дата последней синхронизации клиента с локальным каталогом. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-| onPremisesSyncEnabled | Boolean | `true` если этот объект синхронизирован из локального каталога; если этот объект был первоначально синхронизирован из локального каталога, но `false` больше не синхронизирован; Nullable. Используется значение `null`, если этот объект никогда не синхронизировался из локального каталога (по умолчанию). |
+| onPremisesSyncEnabled | Логический | `true` если этот объект синхронизирован из локального каталога; если этот объект был первоначально синхронизирован из локального каталога, но `false` больше не синхронизирован; Nullable. Используется значение `null`, если этот объект никогда не синхронизировался из локального каталога (по умолчанию). |
 | postalCode | String | Почтовый индекс в адресе организации. |
 | preferredLanguage | String | Предпочитаемый язык для организации. Он должен быть представлен в формате ISO 639-1, например `en`. |
 | privacyProfile | [privacyProfile](privacyprofile.md) | Профиль конфиденциальности организации. |
@@ -73,9 +80,9 @@ ms.locfileid: "53108868"
 
 | Связь  | Тип  |Описание|
 |:---------------|:--------|:----------|
-|certificateBasedAuthConfiguration|Коллекция [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md)| Свойство Navigation для управления конфигурацией проверки подлинности на основе сертификатов. В коллекции можно создать только один экземпляр объекта certificateBasedAuthConfiguration.  |
+|certificateBasedAuthConfiguration|Коллекция [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md)| Свойство навигации для управления конфигурацией проверки подлинности на основе сертификатов. В коллекции можно создать только один экземпляр объекта certificateBasedAuthConfiguration.  |
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для ресурса организации. Допускается значение null.| 
-|organizationalBranding|Коллекция [organizationalBrandingProperties](organizationalbrandingproperties.md)| Корпоративный стиль организации. Допускается значение null.|
+|organizationalBranding|[коллекция organizationalBranding](organizationalbranding.md)| Ресурс для управления брендингом по умолчанию для организации. Допускается значение null.|
 |settings|[organisationSettings](organizationsettings.md) | Извлечение свойств и связей объекта organizationSettings. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -94,29 +101,29 @@ ms.locfileid: "53108868"
 ```json
 {
   "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
-  "businessPhones": ["string"],
-  "city": "string",
-  "country": "string",
-  "countryLetterCode": "string",
+  "businessPhones": ["String"],
+  "city": "String",
+  "country": "String",
+  "countryLetterCode": "String",
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
   "directorySizeQuota": {"@odata.type": "microsoft.graph.directorySizeQuota"},
-  "displayName": "string",
-  "id": "string (identifier)",
-  "isMultipleDataLocationsForServicesEnabled": "boolean",
-  "marketingNotificationEmails": ["string"],
-  "objectType": "string",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "isMultipleDataLocationsForServicesEnabled": "Boolean",
+  "marketingNotificationEmails": ["String"],
+  "objectType": "String",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesSyncEnabled": true,
-  "postalCode": "string",
-  "preferredLanguage": "string",
+  "postalCode": "String",
+  "preferredLanguage": "String",
   "privacyProfile": {"@odata.type": "microsoft.graph.privacyProfile"},
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
-  "securityComplianceNotificationMails": ["string"],
-  "securityComplianceNotificationPhones": ["string"],
-  "state": "string",
-  "street": "string",
-  "technicalNotificationMails": ["string"],
+  "securityComplianceNotificationMails": ["String"],
+  "securityComplianceNotificationPhones": ["String"],
+  "state": "String",
+  "street": "String",
+  "technicalNotificationMails": ["String"],
   "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}],
   "companyLastDirSyncTime": "2019-02-07T20:33:52.942Z",
   "dirSyncEnabled": true

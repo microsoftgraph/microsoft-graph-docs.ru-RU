@@ -2,15 +2,15 @@
 title: Удаление устройства
 description: Удаление зарегистрированного устройства.
 author: spunukol
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9753faebf1d66604ba52657561387b8a43d7a96d
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 9533c8010dfc2468eca4b08e7ec7c48bb2938a60
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437214"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508533"
 ---
 # <a name="delete-device"></a>Удаление устройства
 
@@ -26,25 +26,26 @@ ms.locfileid: "50437214"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All |
+|Делегированные (рабочая или учебная учетная запись) | Device.ReadWrite.All, Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
+
+В `{id}` запросе имеется значение свойства **id** устройства, а не **свойства deviceId.**
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /devices/{id}
 
 ```
 
-> Примечание. Параметр id в запросе — это свойство id объекта device, а не свойство deviceId.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -52,7 +53,7 @@ DELETE /devices/{id}
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -81,7 +82,7 @@ DELETE https://graph.microsoft.com/beta/devices/{id}
 
 ---
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",

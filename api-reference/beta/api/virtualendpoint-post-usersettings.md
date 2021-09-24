@@ -2,15 +2,15 @@
 title: Создание cloudPcUserSetting
 description: Создание нового cloudPcUserSetting .
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 3edffeab1a7eaf4cac05200093d0f7a49d840614
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: deea9748828a464d87b045002bd6dc9c53c861a4
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208518"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508035"
 ---
 # <a name="create-cloudpcusersetting"></a>Создание cloudPcUserSetting
 
@@ -19,8 +19,6 @@ ms.locfileid: "53208518"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создание нового [объекта cloudPcUserSetting.](../resources/cloudpcusersetting.md)
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>Разрешения
 

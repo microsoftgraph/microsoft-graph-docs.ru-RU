@@ -1,16 +1,16 @@
 ---
-title: Тип ресурса Dimensions
+title: тип ресурса размеров
 description: Измерение в Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 61666cdaf87e095707e90345128b5ad2cda47426
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: db1a243a9f7eabb8436a6f1ca2b64fe5b74508b5
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071360"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508820"
 ---
 # <a name="dimensions-resource-type"></a>Тип ресурса Dimensions
 
@@ -23,16 +23,16 @@ ms.locfileid: "48071360"
 ## <a name="methods"></a>Методы
 | Метод       | Возвращаемый тип  |Описание|
 |:-------------|:-------------|:----------|
-|[Получение измерений](../api/dynamics-dimension-get.md)|аналитики|Возвращает измерение.|
+|[Получить размеры](../api/dynamics-dimension-get.md)|размер|Получает измерение.|
 
 
 ## <a name="properties"></a>Свойства
 | Свойство           | Тип                  |Описание               |
 |:-------------------|:----------------------|:-------------------------|
-|id                  |GUID                   |Уникальный идентификатор элемента.|
-|code                |Строка, максимальный размер 20|Код измерения.       |
-|displayName         |string                 |Задает имя измерения. Это имя будет отображаться там, где используется измерение.|
-|lastModifiedDateTime|datetime               |Дата и время последнего изменения измерения.|  
+|id                  |GUID                   |Уникальный ID элемента.|
+|code                |строка, максимальный размер 20|Код измерения.       |
+|displayName         |string                 |Указывает имя измерения. Это имя появится там, где используется измерение.|
+|lastModifiedDateTime|datetime               |В последнее время измерение было изменено.|  
 
 
 ## <a name="json-representation"></a>Представление JSON
@@ -42,7 +42,6 @@ ms.locfileid: "48071360"
 
 ```json
 {
-
     "id": "GUID",
     "code": "string",
     "displayName": "string",

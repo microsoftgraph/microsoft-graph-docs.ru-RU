@@ -4856,24 +4856,27 @@ items:
                   - name: Создание приглашения
                     href: api/invitation-post.md
               - name: Организационный брендинг
-                href: resources/organizationalbrandingproperties.md
+                href: resources/organizationalbranding.md
                 items:
-                  - name: Создание
-                    href: api/organizationalbrandingproperties-create.md
                   - name: Получение
-                    href: api/organizationalbrandingproperties-get.md
+                    href: api/organizationalbranding-get.md
                   - name: Обновление
-                    href: api/organizationalbrandingproperties-update.md
+                    href: api/organizationalbranding-update.md
                   - name: Delete
-                    href: api/organizationalbrandingproperties-delete.md
-                  - name: Создание локализованных
-                    href: api/organizationalbrandingpropertieslocalization-create.md
-                  - name: Локализоваться
-                    href: api/organizationalbrandingpropertieslocalization-get.md
-                  - name: Обновление локализовано
-                    href: api/organizationalbrandingpropertieslocalization-update.md
-                  - name: Удаление локализованных
-                    href: api/organizationalbrandingpropertieslocalization-delete.md
+                    href: api/organizationalbranding-delete.md
+                  - name: Локализация брендинга
+                    href: resources/organizationalbrandinglocalization.md
+                    items:
+                      - name: Список
+                        href: api/organizationalbranding-list-localizations.md
+                      - name: Создание
+                        href: api/organizationalbranding-post-localizations.md
+                      - name: Получение
+                        href: api/organizationalbrandinglocalization-get.md
+                      - name: Обновление
+                        href: api/organizationalbrandinglocalization-update.md
+                      - name: Delete
+                        href: api/organizationalbrandinglocalization-delete.md
               - name: Политика
                 href: resources/policy-overview.md
                 items:
