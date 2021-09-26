@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов unifiedRoleAssignmentMultiple
 description: Извлечение свойств и связей объекта unifiedRoleAssignmentMultiple.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0ee5cb37fab90b3a92d20b83047f8610453ee84f
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 9d3143a5e2f2db4f1ea047ed868a76625f141540
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534006"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767456"
 ---
 # <a name="list-unifiedroleassignmentmultiple"></a>Перечисление объектов unifiedRoleAssignmentMultiple
 
@@ -26,8 +26,6 @@ ms.locfileid: "53534006"
 
 Для других Microsoft 365 приложений (например, Azure AD) используйте [унифицированную системуRoleAssignment.](../resources/unifiedroleassignment.md)
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## <a name="permissions"></a>Разрешения
 
 В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующей таблицы наименее привилегированное разрешение, необходимое для вызова этого API. Дополнительные новости, в том числе осторожность [перед](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) выбором более привилегированных разрешений, см. [в см. в руб. Permissions.](/graph/permissions-reference) 
@@ -38,7 +36,7 @@ ms.locfileid: "53534006"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  CloudPC.Read.All, CloudPC.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | CloudPC.Read.All, CloudPC.ReadWrite.All  |
+|Для приложения | CloudPC.Read.All, CloudPC.ReadWrite.All  |
 
 ### <a name="for-device-management-intune-provider"></a>Для поставщика управления устройствами (Intune)
 
@@ -46,7 +44,7 @@ ms.locfileid: "53534006"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
+|Для приложения | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -80,7 +78,7 @@ GET /roleManagement/deviceManagement/roleAssignments
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) в теле ответа.
 
@@ -101,7 +99,7 @@ GET /roleManagement/deviceManagement/roleAssignments
 GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignments/$filter=principalId eq '9e47fc6f-2d7a-464c-944e-d3dd0de522e4'
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приводится пример ответа:
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.

@@ -1,22 +1,24 @@
 ---
 title: тип ресурса calendarPermission
 description: Разрешения пользователя, с которым общий календарь.
+author: Harini84
 ms.localizationpriority: medium
-author: sochowdh
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: e3e20ee82ed837ac5d14fa161917cad47cb7088f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e88ca527cd1f38a0db29083c34c80f2e7b81bca4
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129952"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763382"
 ---
 # <a name="calendarpermission-resource-type"></a>тип ресурса calendarPermission
 
+Пространство имен: microsoft.graph
+
 Разрешения пользователя, с которым календарь был общим или делегирован в клиенте Outlook.
 
-Получить, обновить и удалить разрешения календаря поддерживается от имени только владельца календаря.
+Список, создание, получения, обновления и удаления разрешений календаря поддерживается от имени только владельца календаря.
 
 Получение разрешений календаря календаря от имени sharee или делегата возвращает пустой набор разрешений календаря.
 
@@ -26,6 +28,8 @@ ms.locfileid: "59129952"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
+| [Перечисление](../api/calendar-list-calendarpermissions.md) | [calendarPermission](calendarpermission.md) | Получите коллекцию объектов calendarPermission, описывающих удостоверения и роли пользователей, с которыми указанный календарь был общим или делегирован. |
+| [Создание](../api/calendar-post-calendarpermissions.md) | [calendarPermission](calendarpermission.md) | Создание объекта calendarPermission. |
 | [Get calendarPermission](../api/calendarpermission-get.md) | [calendarPermission](calendarpermission.md) | Чтение свойств и связей объекта calendarPermission. |
 | [Обновление](../api/calendarpermission-update.md) | [calendarPermission](calendarpermission.md) | Обновление объекта calendarPermission. |
 | [удаление](../api/calendarpermission-delete.md); | Нет | Удаление объекта calendarPermission. |
@@ -36,8 +40,8 @@ ms.locfileid: "59129952"
 |:-------------|:------------|:------------|
 |allowedRoles|[коллекция calendarRoleType](#calendarroletype-values)| Список разрешенных уровней разрешений для календаря. Возможные значения: `none`, `freeBusyRead`, `limitedRead`, `read`, `write`, `delegateWithoutPrivateEventAccess`, `delegateWithPrivateEventAccess`, `custom`.|
 |emailAddress|[emailAddress](emailaddress.md)| Представляет долю или делегат, у которого есть доступ к календарю. Для sharee "Моя организация" свойство **адресов** является null. Только для чтения. |
-|id|Строка| Уникальный идентификатор пользователя (sharee или delegate), с которым был разделен календарь. Только для чтения.|
-|isInsideOrganization|Boolean| True, если пользователь в контексте (sharee или delegate) находится внутри той же организации, что и владелец календаря.|
+|id|String| Уникальный идентификатор пользователя (sharee или delegate), с которым был разделен календарь. Только для чтения.|
+|isInsideOrganization|Логический| True, если пользователь в контексте (sharee или delegate) находится внутри той же организации, что и владелец календаря.|
 |isRemovable|Логический| `True` если пользователь может быть удален из списка участников или делегатов для указанного календаря, в `false` противном случае. Пользователь "Моя организация" определяет разрешения, которые другие пользователи организации имеют в заданном календаре. Нельзя удалить "Моя организация" в качестве sharee в календаре.|
 |role|[calendarRoleType](#calendarroletype-values)| Текущий уровень разрешений для делиться календарем или делегировать. |
 
@@ -53,7 +57,6 @@ ms.locfileid: "59129952"
 | delegateWithoutPrivateEventAccess | Пользователь — это делегат, который имеет доступ к записи, но не может просматривать сведения о частных событиях владельца в календаре. |
 | delegateWithPrivateEventAccess | Пользователь — это делегат, который имеет доступ к записи и может просматривать сведения о частных событиях владельца в календаре. |
 | настраиваемый | Пользователь имеет настраиваемые разрешения для календаря. |
-
 
 ## <a name="json-representation"></a>Представление JSON
 

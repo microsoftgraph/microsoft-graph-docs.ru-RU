@@ -2,15 +2,15 @@
 title: тип ресурса cloudPcAuditProperty
 description: Представляет свойство аудита.Здесь показано измененное имя свойства, старое значение и новое значение.
 author: ecmadao
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 1f73733f0ace4526d3cbae226c963887d5af37ce
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 769ba5aa685755477a0ee0dbcdaa05696ed96a79
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211409"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767204"
 ---
 # <a name="cloudpcauditproperty-resource-type"></a>тип ресурса cloudPcAuditProperty
 
@@ -20,12 +20,10 @@ ms.locfileid: "53211409"
 
 Представляет свойство аудита.Здесь показано измененное имя свойства, старое значение и новое значение.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя.|
+|displayName|Строка|Отображаемое имя.|
 |oldValue|String|Старое значение.|
 |newValue|String|Новое значение.|
 

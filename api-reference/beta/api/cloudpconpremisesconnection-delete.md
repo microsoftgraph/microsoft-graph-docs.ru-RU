@@ -2,15 +2,15 @@
 title: Удаление cloudPcOnPremisesConnection
 description: Удаление объекта cloudPcOnPremisesConnection.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 01f9b5a7e4091492be7aa8eae0f0d3f8354169e6
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: cb2e8fa21331f005b44c054e4451976c2a6c8691
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872767"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764629"
 ---
 # <a name="delete-cloudpconpremisesconnection"></a>Удаление cloudPcOnPremisesConnection
 
@@ -20,13 +20,12 @@ ms.locfileid: "49872767"
 
 Удаление определенного [объекта cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
 
-При удалении подключения разрешения для службы удаляются из указанных ресурсов Azure.
+При удалении подключения разрешения на службу удаляются из указанных ресурсов Azure.
 
-Локальное подключение невозможно удалить после того, как оно пройдет проверку на состояние, что указывает `healthCheckStatus` свойство.
+Локальное подключение невозможно удалить после того, как оно пройдет проверку состояния, которая указывается `healthCheckStatus` свойством.
 
-Невозможно удалить подключение, если оно используется, как указано в `inUse` свойстве.
+Нельзя удалить подключение, если оно используется, как указано в `inUse` свойстве.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

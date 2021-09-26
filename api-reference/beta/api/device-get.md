@@ -2,15 +2,15 @@
 title: Получение устройства
 description: Получение свойств и связей объекта устройства.
 author: spunukol
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8c1c70578ed95ead160895e5d471a8c4ba56e6c8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: c4b811a20fcb3d11cb420e29ba383325d2885f6a
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437207"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765700"
 ---
 # <a name="get-device"></a>Вывод устройства
 
@@ -28,23 +28,25 @@ ms.locfileid: "50437207"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Для приложения | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
+
+В `{id}` запросе имеется значение свойства **id** устройства, а не **свойства deviceId.**
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает параметр `$select` [запроса OData](/graph/query-parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -60,7 +62,7 @@ GET /devices/{id}
   "name": "get_device"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/devices/{id}
+GET https://graph.microsoft.com/beta/devices/000005c3-b7a6-4c61-89fc-80bf5ccfc366
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-device-csharp-snippets.md)]
@@ -95,14 +97,15 @@ GET https://graph.microsoft.com/beta/devices/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 322
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#devices/$entity",
+  "@odata.id": "https://graph.microsoft.com/v2/72f988bf-86f1-41af-91ab-2d7cd011db47/directoryObjects/000005c3-b7a6-4c61-89fc-80bf5ccfc366/Microsoft.DirectoryServices.Device",
   "accountEnabled": true,
-  "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",
-  "deviceId": "deviceId-value",
-  "deviceMetadata": "deviceMetadata-value",
-  "deviceVersion": 99,
+  "approximateLastSignInDateTime": "2021-08-26T21:15:01Z",
+  "deviceId": "000005c3-b7a6-4c61-89fc-80bf5ccfc366",
+  "deviceMetadata": null,
+  "deviceVersion": 2,
   "hostNames": []
 }
 ```
@@ -118,7 +121,6 @@ Content-length: 322
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 322
 
 {
   "accountEnabled": true,

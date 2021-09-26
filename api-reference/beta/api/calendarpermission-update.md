@@ -1,20 +1,22 @@
 ---
 title: Обновление календарной комиссии
 description: Обновление свойств объекта calendarpermission.
+author: Harini84
 ms.localizationpriority: medium
-author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7b72241d0e7b266ae90408702eeef82383620968
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fe98657de5e0b96db4b38b3a26ffed1521736d4e
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59049412"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766175"
 ---
 # <a name="update-calendarpermission"></a>Обновление calendarPermission
 
 Пространство имен: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Обновление разрешений, присвоенных существующему sharee или делегированию, с помощью соответствующего [объекта calendarPermission](../resources/calendarpermission.md) для календаря.
 
@@ -51,7 +53,8 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {токен}. Обязательный.  |
+| Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -101,13 +104,11 @@ Content-type: application/json
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-calendarpermission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -123,7 +124,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "L289RXhlbGVW",
+    "id": "RGVmYXVsdA==",
     "isRemovable": true,
     "isInsideOrganization": true,
     "role": "write",

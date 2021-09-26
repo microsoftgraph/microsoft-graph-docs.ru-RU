@@ -6,12 +6,12 @@ description: Поиск сайтов, соответствующих указа�
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 78132ed16539ebf1c0b2085e019f40ad6c19b977
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 93b0405ac8aeb48f4dc4bf0d40e23dde108ec9aa
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118885"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765797"
 ---
 # <a name="search-for-sites"></a>Поиск сайтов
 
@@ -33,7 +33,7 @@ ms.locfileid: "59118885"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.
 |Для приложений                            | Sites.Read.All, Sites.ReadWrite.All
 
->**Примечание:** Этот метод не поддерживает разрешение приложения Sites.Selected.
+>**Примечание.** Этот метод не поддерживает разрешение приложений Sites.Selected.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -58,6 +58,8 @@ GET /sites?search={query}
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_permission"
@@ -66,6 +68,24 @@ GET /sites?search={query}
 ``` http
 GET https://graph.microsoft.com/v1.0/sites?search={query}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-permission-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-permission-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-permission-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-permission-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.

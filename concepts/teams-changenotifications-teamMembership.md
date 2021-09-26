@@ -1,26 +1,26 @@
 ---
-title: Получение уведомлений о любых изменениях участников Teams с помощью Microsoft Graph
-description: Получение уведомлений о любых изменениях (создание, обновление и удаление) участников Teams с помощью Microsoft Graph
+title: Получение уведомлений об изменениях участников в командах и каналах с помощью Microsoft Graph
+description: Получение уведомлений о любых изменениях (создание, обновление и удаление) участников команд и каналов с помощью Microsoft Graph.
 author: anandab
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: bcd2a7e936b52932a67dde4a83642ba7d980323a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8f84a824825db4b174ec4b568afd1d0e1fdf2dfa
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071702"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764330"
 ---
-# <a name="get-change-notifications-for-changes-in-teams-membership-using-microsoft-graph"></a>Получение уведомлений об изменениях участников Teams с помощью Microsoft Graph
+# <a name="get-change-notifications-for-membership-changes-in-teams-and-channels-using-microsoft-graph"></a>Получение уведомлений об изменениях участников в командах и каналах с помощью Microsoft Graph
 
-Уведомления об изменениях позволяют подписаться на изменения (создание, обновление и удаление) участников команд. Вы можете получать уведомления при добавлении, удалении или изменении участника в команде. Кроме того, вы можете получать данные ресурсов в уведомлениях и, следовательно, избегать вызова API, чтобы получить полезные данные.
+Уведомления об изменениях позволяют подписаться на изменения участников (создание, обновление и удаление) в командах и закрытых каналах. Вы можете получать уведомления при добавлении, удалении или изменении участника в команде или в закрытом канале. Кроме того, вы можете получать данные ресурсов в уведомлениях и, следовательно, избегать вызова API, чтобы получить полезные данные.
 
 ## <a name="subscribe-to-changes-in-membership-of-a-particular-team"></a>Подписка на изменения участников определенной команды
 
 Чтобы получать уведомления об изменениях участников определенной команды, подпишитесь на `/teams/{team-id}/members`. Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление.
 
-#### <a name="permissions"></a>Разрешения
+### <a name="permissions"></a>Разрешения
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              | Поддерживаемые версии |
 |:--------------------|:---------------------------------------------------------|:-------------------|
@@ -30,7 +30,7 @@ ms.locfileid: "59071702"
 
 >**Примечание.** Разрешения, помеченные звездочкой (*), поддерживаются в рамках [согласия для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
-#### <a name="example"></a>Пример
+### <a name="example"></a>Пример
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -47,6 +47,38 @@ Content-Type: application/json
   "clientState": "{secretClientState}"
 }
 ```
+
+## <a name="subscribe-to-membership-changes-in-all-private-channels-of-a-particular-team"></a>Подписка на изменения участников во всех закрытых каналах определенной команды
+
+Чтобы получать уведомления об изменениях участников во всех закрытых каналах определенной команды, подпишитесь на `/teams/{team-id}/channels/getAllMembers`. Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление.
+
+### <a name="permissions"></a>Разрешения
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              | Поддерживаемые версии |
+|:--------------------|:---------------------------------------------------------|:-------------------|
+|Делегированные (рабочая или учебная учетная запись) | Не поддерживается. | Не поддерживается. |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    | Не поддерживается. |
+|Приложение | ChannelMember.Read.All   | бета |
+
+
+### <a name="example"></a>Пример
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-Type: application/json
+
+{
+  "changeType": "created,deleted,updated",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "resource": "/teams/{team-id}/channels/getAllMembers",
+  "includeResourceData": true,
+  "encryptionCertificate": "{base64encodedCertificate}",
+  "encryptionCertificateId": "{customId}",
+  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
+  "clientState": "{secretClientState}"
+}
+```
+
 
 
 
@@ -78,6 +110,8 @@ Content-Type: application/json
     "validationTokens": ["<<--ValidationTokens-->>"]
 }
 ```
+
+Полезные данные для событий участников канала аналогичны предыдущим полезным данным, за исключением того, что свойство **ресурса** указывает на участника канала, а не на участника команды.
 
 Дополнительные сведения о проверке маркеров и расшифровке полезных данных см. в статье [Настройка уведомлений об изменениях, включающих данные ресурсов](webhooks-with-resource-data.md).
 
@@ -116,6 +150,8 @@ Content-Type: application/json
   }
 }
 ```
+
+Полезные данные для событий участников канала аналогичны предыдущим полезным данным, за исключением того, что свойство **ресурса** указывает на участника канала, а не на участника команды.
 
 Свойства **resource** и **@odata.id** можно использовать для вызовов в Microsoft Graph, чтобы получить полезные данные для сообщения. Вызовы GET всегда возвращают текущее состояние сообщения. Если сообщение изменяется с момента отправки уведомления и до получения сообщения, операция возвращает обновленное сообщение.
 

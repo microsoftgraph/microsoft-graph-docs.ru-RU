@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 83589986cd0c490f4947744896665244a8de3633
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1cedb6c2ab34511134716efe5c205a4738d10f0c
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117671"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767343"
 ---
 # <a name="states-transitions-and-limitations-for-assignments-and-submissions-in-microsoft-graph"></a>Состояния, переходы и ограничения для назначений и представлений в Microsoft Graph
 
@@ -33,12 +33,12 @@ ms.locfileid: "59117671"
 ![Схема переходов состояния назначения](images/states-transitions/diagram-assignments.PNG)
 
 ### <a name="how-to-verify-that-an-assignment-is-published"></a>Проверка публикации назначения
-Вызывающий должен использовать операцию назначения GET t o проверить текущее состояние назначения и убедиться, что процесс публикации удался.
+Вызывающий должен использовать операцию [назначения GET](/graph/api/educationassignment-get.md) для проверки текущего состояния назначения и проверки успешного процесса публикации.
 
 ### <a name="assignments-states-transitions-based-on-the-allowed-actions"></a>Назначения состояния переходов на основе разрешенных действий
 | Текущее состояние назначения | Action | Новое состояние |
 |:--|:--|:--|
-| Draft | Учитель задает дату. | Scheduled |
+| Draft | Учитель запланировать назначение | Scheduled |
 | Draft | Публикация | Published |
 | Draft | Отредактирован | Draft |
 | Draft | Отбрасывается | | 
@@ -77,6 +77,7 @@ ms.locfileid: "59117671"
 | Выполняется | Начальное состояние после создания отправки. | `POST /education/classes/{id}/assignments`<br/>`POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit` |
 | Submitted | Это происходит после того, как студент повернул i n назначение. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit` |
 | Возвращено | После того как учитель возвращает задание ученику. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/return` |
+| Повторное присвоение | После того как учитель вернул задание учащемуся для пересмотра. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/reassign` |
 
 На следующей схеме показан поток перехода состояния.
 
@@ -86,10 +87,17 @@ ms.locfileid: "59117671"
 | Текущее состояние отправки | Action | Новое состояние |
 |:--|:--|:--|
 | Выполняется | Включаем | Submitted |
+| Выполняется | Возвращение для пересмотра | Повторное присвоение |
 | Выполняется | Возврат | Возвращено |
 | Submitted | Отмена включаемой | Выполняется |
 | Submitted | Возврат | Возвращено |
+| Submitted | Возвращение для пересмотра | Повторное присвоение |
 | Возвращено | Включаем | Submitted |
+| Возвращено | Возврат | Возвращено |
+| Возвращено | Возвращение для пересмотра | Повторное присвоение |
+| Повторное присвоение | Включаем | Submitted |
+| Повторное присвоение | Возврат | Возвращено |
+| Повторное присвоение | Возвращение для пересмотра | Повторное присвоение |
 
 `Note: Any action and state transition not listed in the table is NOT allowed`
 
@@ -103,6 +111,7 @@ ms.locfileid: "59117671"
 | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit` | Async | Опрос |
 | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit` | Async | Опрос |
 | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/return` | Async | Опрос |
+| `POST /education/classes/{id}/assignments/{id}/submissions/{id}/reassign` | Async | Опрос |
 
 ### <a name="limits"></a>Ограничения
 Для всех вызовов API применяются следующие ограничения:

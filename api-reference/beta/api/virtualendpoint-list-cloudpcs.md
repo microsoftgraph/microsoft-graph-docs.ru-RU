@@ -2,15 +2,15 @@
 title: CloudPCs списка
 description: Список свойств и связей объектов cloudPC.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 49cdea1b601e33210bc2861ee350086377fe05f8
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 2d1f98238fa584b735339e066f488de8ea9cf2e9
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082386"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763081"
 ---
 # <a name="list-cloudpcs"></a>CloudPCs списка
 
@@ -20,8 +20,6 @@ ms.locfileid: "53082386"
 
 Список свойств и связей объектов [cloudPC.](../resources/cloudpc.md)
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -30,7 +28,7 @@ ms.locfileid: "53082386"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Для приложения|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

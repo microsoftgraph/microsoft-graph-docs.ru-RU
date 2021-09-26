@@ -1,20 +1,20 @@
 ---
-title: Тип ресурса "валюты"
-description: Объект Currency в Dynamics 365 Business Central
+title: тип ресурса валют
+description: Объект валюты в Dynamics 365 Business Central
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 42dc5fec859aff758b2f46812a63b10f49f0498a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 228f4c227cd8c0efa5f2ed6dcd885c81a2f5f9ab
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071369"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767085"
 ---
-# <a name="currencies-resource-type"></a>Тип ресурса "валюты"
+# <a name="currencies-resource-type"></a>тип ресурса валют
 
 Пространство имен: microsoft.graph
 
@@ -25,29 +25,29 @@ ms.locfileid: "48071369"
 ## <a name="methods"></a>Методы
 | Метод                                                  |Возвращаемый тип|Описание       |
 |:--------------------------------------------------------|:----------|:-----------------|
-|[Получение валют](../api/dynamics-currencies-get.md)      |друг |Получение валюты.   |
-|[Разноска денежных единиц](../api/dynamics-create-currencies.md)  |друг |Создание денежной единицы.|
-|[Единицы обновления](../api/dynamics-currencies-update.md) |друг |Обновление денежной единицы.|
-|[Удаление валют](../api/dynamics-currencies-delete.md)|Нет       |Удаление денежной единицы.|
+|[Получение валют](../api/dynamics-currencies-get.md)      |валюты |Получите валюту.   |
+|[Почтовые валюты](../api/dynamics-create-currencies.md)  |валюты |Создание валюты.|
+|[Валюты патчей](../api/dynamics-currencies-update.md) |валюты |Обновление валюты.|
+|[Удаление валют](../api/dynamics-currencies-delete.md)|Нет       |Удаление валюты.|
 
 ## <a name="properties"></a>Свойства
 | Свойство              | Тип   |Описание                                                   |
 |:----------------------|:-------|:-------------------------------------------------------------|
-|id                     |GUID    |Уникальный идентификатор валюты. Не редактируемые.                  |
+|id                     |GUID    |Уникальный ID валюты. Не редактируемый.                  |
 |code                   |string  |Указывает код валюты.                                  |
-|displayName            |string  |Задает отображаемое имя денежной единицы.                          |
-|знаки                 |string  |Указывает символ валюты, который будет отображаться при проверке.|
-|амаунтдеЦималплацес    |string  |Указывает количество десятичных разрядов, отображаемых системой на суммах для этой валюты.|
-|амаунтраундингпреЦисион|числе |Указывает размер интервала, который будет использоваться при округлении сумм для данной валюты.|
-|lastModifiedDateTime   |datetime|Дата и время последнего изменения валюты. Только для чтения.       |  
+|displayName            |string  |Указывает имя отображения валюты.                          |
+|символ                 |string  |Указывает символ этой валюты, который отображается на чеках.|
+|amountDecimalPlaces    |string  |Указывает количество десятичных мест, которые система будет отображать на количествах для этой валюты.|
+|amountRoundingPrecision|decimal |Указывает размер интервала, который будет использоваться при округлке сумм для этой валюты.|
+|lastModifiedDateTime   |datetime|В последний раз валюта была изменена. Только для чтения.       |  
 
 
-## <a name="relationships"></a>Отношения
-Нет
+## <a name="relationships"></a>Связи
+Отсутствуют.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
-Ниже показано представление валют в формате JSON.
+Вот представление JSON валют.
 
 
 ```json
@@ -60,7 +60,6 @@ ms.locfileid: "48071369"
   "amountRoundingPrecision": "decimal",
   "lastModifiedDateTime": "datetime"
 }
-
 ```
 
 

@@ -1,16 +1,16 @@
 ---
 title: Получение организации
 description: Получение свойств и связей объекта organization, для которого выполнена проверка подлинности.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f5ac941122ebeb65a27aff0165fda398557ea164
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5dc1e91d33a328f67d3288448be97f4704871de3
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050089"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764621"
 ---
 # <a name="get-organization"></a>Получение организации
 
@@ -44,7 +44,7 @@ GET /organization
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает только [параметр запросов OData](/graph/query-parameters) `$select` для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/organization
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

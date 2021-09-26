@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: cacbe0cb6bd3b12c75a09299710ab5f71aef14d0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ef6a84303ad63e673ffbca0b061e23346208489a
+ms.sourcegitcommit: 7ce66321abb6a2cdca8685d3ce0a004c376ae33b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104091"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59777522"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -31,8 +31,15 @@ ms.locfileid: "59104091"
 |[Получение открытого расширения](../api/opentypeextension-get.md) |Коллекция объектов [openTypeExtension](opentypeextension.md)| Получение открытого расширения, определяемого именем расширения.|
 |**Расширения схемы**| 
 |[Добавление значений расширений для схемы](/graph/extensibility-schema-groups) || Создание определения расширения схемы и его дальнейшее использование для добавления в ресурс введенных пользовательских данных.|
-| [Получение фирменного стиля](../api/organizationalbrandingproperties-get.md) | Коллекция [organizationalBrandingProperties](organizationalbrandingproperties.md) | Получение коллекции объектов organizationalBrandingProperties. |
-
+|**Фирменная символика организации**| | |
+|[Создание organizationalBrandingLocalization](../api/organizationalbranding-post-localizations.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Создание новой фирменной символики локализации (для определенного языка) и стандартного объекта фирменной символики, если он не существует. |
+|[Получение organizationalBranding](../api/organizationalbranding-get.md) | [organizationalBranding](organizationalbranding.md) | Получение стандартного объекта фирменной символики организации. |
+|[Обновление organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Обновление стандартного объекта фирменной символики организации. |
+|[Удаление organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Удаление стандартного объекта фирменной символики организации. |
+|[Список organizationalBrandingLocalization](../api/organizationalbrandinglocalization-get.md) | Коллекция [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Извлечение всех объектов фирменной символики локализации в клиенте. |
+|[Получение organizationalBrandingLocalization](../api/organizationalbrandinglocalization-get.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Чтение свойств объекта фирменной символики локализации. |
+|[Обновление organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Обновление объекта фирменной символики локализации. |
+|[Удаление organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Удаление объекта фирменной символики локализации. |
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
@@ -66,7 +73,7 @@ ms.locfileid: "59104091"
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|Коллекция [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md)| Свойство навигации для управления конфигурацией проверки подлинности на основе сертификатов. В коллекции можно создать только один экземпляр объекта certificateBasedAuthConfiguration.  |
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для организации. Только для чтения. Допускается значение null.|
-|organizationalBranding|Коллекция [organizationalBrandingProperties](organizationalbrandingproperties.md)| Корпоративный стиль организации. Допускается значение null.|
+|organizationalBranding|Коллекция [organizationalBranding](organizationalbranding.md)| Фирменная символика организации. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление в формате JSON
 

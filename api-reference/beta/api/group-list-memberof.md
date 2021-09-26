@@ -2,15 +2,15 @@
 title: Перечисление group memberOf
 description: Получите группы и административные единицы, в которые группа входит непосредственно.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 654df0d248e4b989babe087856df599d02352bc2
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 195753013b0e574e78be28bcb011072e5cbc65a1
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681552"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766588"
 ---
 # <a name="list-group-memberof"></a>Перечисление group memberOf
 
@@ -41,7 +41,7 @@ GET /groups/{id}/memberOf
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`. Кроме того, включено приведение к OData, например, вы можете получить только группы, участником которых является группа. `$search` можно использовать в свойстве **displayName**. Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`. Кроме того, включено приведение к OData, например, вы можете получить только группы, участником которых является группа. `$search` можно использовать в свойстве **displayName**. Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/memberOf
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

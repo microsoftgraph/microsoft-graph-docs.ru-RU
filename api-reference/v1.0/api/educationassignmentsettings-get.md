@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8edbd2ff5dfd8aa9b50f1d350793eb3df4dcf010
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7a4a2681ef4dc78d199ae3e771a919496e3b6359
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59130887"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766218"
 ---
 # <a name="get-educationassignmentsettings"></a>Get educationAssignmentSettings
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "59130887"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
+|Application| EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -33,7 +33,7 @@ ms.locfileid: "59130887"
 }
 -->
 ``` http
-GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentSettings
+GET /education/classes/{id}/assignmentSettings
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -51,7 +51,7 @@ GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentSettings
 
 В случае успешного выполнения этот метод возвращает код ответа и объект `200 OK` [educationAssignmentSettings](../resources/educationassignmentsettings.md) в тексте ответа.
 
-## <a name="examples"></a>Примеры
+## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
@@ -63,7 +63,7 @@ GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentSettings
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentSettings
+GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignmentsettings
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationassignmentsettings-csharp-snippets.md)]
@@ -97,9 +97,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
     "submissionAnimationDisabled": false
-  }
 }
 ```
 

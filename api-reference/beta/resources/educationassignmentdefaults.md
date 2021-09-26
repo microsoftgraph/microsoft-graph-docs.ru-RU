@@ -2,15 +2,15 @@
 title: тип ресурса educationAssignmentDefaults
 description: Указывает по умолчанию класса, которые соблюдаются новыми назначениями, созданными в классе.
 author: dipakboyed
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d13626996917160bdb2b9cb60b67750fe6a89f2f
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 359acda9530b7aa3de10903aca42ca825cde3503
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58255595"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763620"
 ---
 # <a name="educationassignmentdefaults-resource-type"></a>тип ресурса educationAssignmentDefaults
 
@@ -30,7 +30,7 @@ ms.locfileid: "58255595"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |addedStudentAction|educationAddedStudentAction|Поведение по умолчанию на уровне класса для обработки учащихся, добавленных после публикации назначения. Возможные значения: `none`, `assignIfOpen`.|
-|addToCalendarAction| educationAddToCalendarOptions|Необязательное поле для управления добавлением назначений в календари учащихся и преподавателей при публикации. Возможные значения: `studentsAndPublisher` и `studentsAndTeamOwners` . |
+|addToCalendarAction| educationAddToCalendarOptions|Необязательное поле для управления добавлением назначений в календари учащихся и преподавателей при публикации. Возможные значения: `none` `studentsAndPublisher` , , , , `studentsAndTeamOwners` и `unknownFutureValue` `studentsOnly` . Обратите внимание, что вы должны использовать загон запроса, чтобы получить следующее значение `Prefer: include-unknown-enum-members` (ы) в этом [развиваемом переуме:](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `studentsOnly` . Значение по умолчанию — `none`.|
 |dueTime|TimeOfDay|Значение по умолчанию класса для должного поля времени. Значение по умолчанию — `23:59:00`.|
 |notificationChannelUrl|Строка|По умолчанию Teams канал, в который будут отправлены уведомления. Значение по умолчанию — `null`.|
 

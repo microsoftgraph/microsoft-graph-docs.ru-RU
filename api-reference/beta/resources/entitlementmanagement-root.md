@@ -1,16 +1,16 @@
 ---
 title: Работа с API управления правами Azure AD
 description: Управление доступом к ресурсам, включая группы, приложения и сайты, с помощью управления правами Azure AD
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: c75c88c4f7fd2d35eb6e214bbe3479abdac6b4da
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: b08d44a0aaa1b99d2937fd68c1dc822328f7bdb3
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401479"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764796"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Работа с API управления правами Azure AD
 
@@ -73,6 +73,7 @@ Azure Active Directory управления правами Azure AD позвол
 | [Список accessPackageAssignmentRequests](../api/accesspackageassignmentrequest-list.md) | [accessPackageAssignmentRequest collection](accesspackageassignmentrequest.md) | Извлечение списка **объектов accessPackageAssignmentRequest.** |
 | [Создание accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Создание нового **accessPackageAssignmentRequest**. |
 | [Получить accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Чтение свойств и связей объекта **accessPackageAssignmentRequest.** |
+| [Удаление accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-delete.md) |Нет | Удаление **accessPackageAssignmentRequest**. |
 |[FilterByCurrentUser](../api/accesspackageassignmentrequest-filterbycurrentuser.md)|[accessPackageAssignmentRequest collection](../resources/accesspackageassignmentrequest.md)|Извлечение списка **объектов accessPackageAssignmentRequest,** фильтруемых на входе пользователя.|
 |[cancel](../api/accesspackageassignmentrequest-cancel.md)|[accessPackageAssignmentRequest collection](../resources/accesspackageassignmentrequest.md)|Отмена **объекта accessPackageAssignmentRequest,** который находится в отменяемом состоянии: `accepted` , , , `pendingApproval` `pendingNotBefore` `pendingApprovalEscalated` .|
 | [Списки accessPackageAssignments](../api/accesspackageassignment-list.md) | [коллекция accessPackageAssignment](accesspackageassignment.md) | Извлечение списка **объектов accessPackageAssignment.** |

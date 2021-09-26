@@ -161,6 +161,8 @@ items:
             href: cloud-communications-callrecords.md
           - name: Управление номерами телефонов для ботов
             href: cloud-communications-phone-number.md
+          - name: Артефакты и разрешения собраний по сети
+            href: cloud-communications-online-meeting-artifacts.md
       - name: Соответствие требованиям (предварительная версия)
         href: compliance-concept-overview.md
       - name: Подключение внешнего контента
@@ -261,10 +263,14 @@ items:
         items:
           - name: Обзор
             href: azuread-identity-access-management-concept-overview.md
-          - name: Методы проверки подлинности
-            href: authenticationmethods-get-started.md
+          - name: Управление каталогом
+            items:
+              - name: Назначение привилегированных ролей с помощью PIM
+                href: tutorial-assign-azureadroles.md
           - name: Удостоверение и вход
             items:
+              - name: Методы проверки подлинности
+                href: authenticationmethods-get-started.md
               - name: Определение и устранение риска
                 href: tutorial-riskdetection-api.md
           - name: Управление
@@ -395,9 +401,9 @@ items:
             href: search-concept-custom-types.md
           - name: Поиск людей (предварительная версия)
             href: search-concept-person.md
-          - name: Сортировка результатов поиска (предварительная версия)
+          - name: Сортировка результатов поиска
             href: search-concept-sort.md
-          - name: Уточнение результатов поиска (предварительная версия)
+          - name: Уточнение результатов поиска
             href: search-concept-aggregation.md
           - name: Исправление орфографии в запросе (предварительная версия)
             href: search-concept-speller.md
@@ -443,7 +449,6 @@ items:
           - name: Отправка упреждающих сообщений с помощью бота
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
           - name: Уведомления ленты новостей
-            href: teams-send-activityfeednotifications.md
             items:
               - name: Отправка уведомлений ленты новостей
                 href: teams-send-activityfeednotifications.md
@@ -541,7 +546,7 @@ items:
                     href: teams-change-notification-in-microsoft-teams-overview.md
                   - name: Команды и каналы
                     href: teams-changenotifications-team-and-channel.md
-                  - name: Участники команды
+                  - name: Участие в командах и каналах
                     href: teams-changenotifications-teamMembership.md
                   - name: Сообщения в чатах и каналах
                     href: teams-changenotifications-chatmessage.md

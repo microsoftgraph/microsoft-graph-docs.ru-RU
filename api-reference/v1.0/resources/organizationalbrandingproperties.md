@@ -1,86 +1,78 @@
 ---
 title: тип ресурса organizationalBrandingProperties
 description: Содержит сведения о брендинге организации.
-ms.localizationpriority: medium
 author: AlexanderMars
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: db4dc3d52ad9bf3f1ff2c66443c7c909cbad9dd4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ce5663025dbb717591677df6d73c8357baa49ce5
+ms.sourcegitcommit: 7ce66321abb6a2cdca8685d3ce0a004c376ae33b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032295"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59777529"
 ---
 # <a name="organizationalbrandingproperties-resource-type"></a>тип ресурса organizationalBrandingProperties
 
+Пространство имен: microsoft.graph
+
+Абстрактный тип, который предоставляет свойства для настройки фирменого бренда организации.
+
+Организации могут настраивать Azure Active Directory (Azure AD), которые отображаются при входе пользователей в конкретные приложения организации или когда Azure AD идентифицирует клиента пользователя из имени пользователя. Разработчик также может ознакомиться с информацией о брендинге компании и настроить интерфейс приложения, чтобы настроить его специально для пользователя, вписаного в нее, с помощью фирменого бренда.
+
+Вы не можете изменить язык исходной конфигурации. Тем не менее, компании могут добавлять различные брендинги на основе локального. Для языкового брендинга см. объект [organizationalBrandingLocalization.](organizationalbrandinglocalization.md)
+
 >[!NOTE]
->Добавление настраиваемой фирменой марки требует использования Azure Active Directory Premium 1, Premium 2 или основных выпусков или Microsoft 365 лицензии. Дополнительные сведения о лицензировании и выпусках см. в [Azure AD Premium.](/azure/active-directory/fundamentals/active-directory-get-started-premium)<br><br>Azure AD Premium и Основные выпуски доступны для клиентов в Китае с использованием всемирного экземпляра Azure Active Directory. Azure AD Premium и Basic в настоящее время не поддерживаются в службе Azure, выполняемой 21Vianet в Китае. Дополнительные сведения можно получить с помощью [Azure Active Directory Forum.](https://feedback.azure.com/forums/169401-azure-active-directory/)
-
-Содержит сведения о брендинге организации.
-
-Организации могут настраивать страницы регистрации Azure AD, которые отображаются при входе пользователей в конкретные приложения своей организации или когда Azure AD идентифицирует клиента пользователя из имени пользователя. Разработчик также может ознакомиться с информацией о брендинге компании и настроить интерфейс приложения, чтобы настроить его специально для пользователя, вписаного в нее, с помощью фирменого бренда.
-
-Компании могут добавлять различные брендинги в зависимости от локального уровня. Locale служит ключом во всех запросах.
-
->**Примечание:** Брендинг выставляется как свойство под организацией с коллекцией локализации, определенной для локального. **organizationalBrandingProperties** — это абстрактный класс, определяющий свойства **для organizationalBranding.**
+>Добавление настраиваемой фирменой марки требует лицензий Azure Active Directory (Azure AD) Premium 1, Premium 2 или Office 365 (для Office 365 приложений). Дополнительные сведения о лицензировании и выпусках см. в [Azure AD Premium.](/azure/active-directory/fundamentals/active-directory-get-started-premium)
+>
+>Azure AD Premium доступны для клиентов в Китае с помощью всемирного экземпляра Azure Active Directory. Azure AD Premium в настоящее время не поддерживается в службе Azure, выполняемой 21Vianet в Китае. Дополнительные сведения можно получить с помощью [Azure Active Directory Forum.](https://feedback.azure.com/forums/169401-azure-active-directory/)
 
 ## <a name="methods"></a>Методы
-
-| Метод       | Возвращаемый тип | Описание |
-|:-------------|:------------|:------------|
-| [Создание](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Создание организационного брендинга с помощью объекта organizationalBrandingProperties. |
-| [получение](../api/organizationalbrandingproperties-get.md); | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Чтение свойств и связей объекта organizationalBrandingProperties. |
-| [Обновление](../api/organizationalbrandingproperties-update.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Обновление объекта organizationalBrandingProperties. |
-| [удаление](../api/organizationalbrandingproperties-delete.md); | Нет | Удаление объекта organizationalBrandingProperties. |
+| Нет.
 
 ## <a name="properties"></a>Свойства
-
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|backgroundColor|String| Цвет, который будет отображаться на месте фонового изображения в подключениях с низкой пропускной способностью. Здесь рекомендуется использовать основной цвет логотипа баннера или цвета организации. Укажите это в hexadecimal (например, белый #FFFFFF). |
-|backgroundImage|Stream| Изображение, которое отображается в качестве фона знака на странице. .png или .jpg не больше 1920x1080 и меньше 300kb. Меньшее изображение уменьшит требования к пропускной способности и сделает загрузку страниц более высокой. |
-|bannerLogo|Stream| На странице входного знака отображается баннерная версия логотипа вашей компании. .png или .jpg не превышает 36x245px. Рекомендуется использовать прозрачное изображение без обивки вокруг логотипа. |
-|id|Строка| Это id, унаследованный от microsoft.graph.entity, — это локал, указывающий стандарт ISO 639 для языка, например английский — "en-ru" или "ru". Если мы обналичим функциональность с несколькими фирменными марками для одного локального уровня, это можно изменить. Обратите внимание, что id для default/branding всегда является "und" до тех пор, пока у нас нет однотонов без ключей. Только для чтения. |
-|signInPageText|Строка| Текст, который отображается в нижней части окна для регистрации. С помощью этого можно сообщить дополнительные сведения, например номер телефона в службу поддержки или юридический отчет. Этот текст должен быть unicode и не превышать 1024 символов. |
-|squareLogo|Stream| Квадратная версия логотипа вашей компании. Это отображается в Windows 10(OOBE) и когда Windows автопилот включен для развертывания. .png или .jpg размером не более 240x240px и не более 10 кб. Рекомендуется использовать прозрачное изображение без обивки вокруг логотипа. |
-|usernameHintText|Строка| Строка, отображаемая в виде подсказки в текстовом ящике имени пользователя на экране знака. Этот текст должен быть Unicode без ссылок или кода и не может превышать 64 символов. |
+| backgroundColor | String | Цвет, который будет отображаться на месте фонового изображения в подключениях с низкой пропускной способностью. Рекомендуется использовать основной цвет логотипа баннера или цвета организации. Укажите это в hexadecimal формате, например, белый `#FFFFFF` . |
+| backgroundImage | Stream | Изображение, которое отображается в качестве фона страницы регистрации. Допустимые типы PNG или JPEG не меньше 300 КБ и не более 1920 × 1080 пикселей. Меньшее изображение уменьшит требования к пропускной способности и сделает загрузку страницы быстрее. |
+| backgroundImageRelativeUrl | String | Относительный URL-адрес свойства **backgroundImage,** который сочетается с базовым URL CDN из **cdnList,** чтобы предоставить версию, обслуживаемую CDN. Только для чтения. |
+| bannerLogo | Stream | Баннерная версия логотипа вашей компании, которая отображается на странице входного знака. Допустимые типы PNG или JPEG не более 36 × 245 пикселей. Рекомендуется использовать прозрачное изображение без обивки вокруг логотипа. |
+| bannerLogoRelativeUrl | String | Относительный URL-адрес свойства **bannerLogo,** который сочетается с базовым URL-адресом CDN из **cdnList,** чтобы предоставить только для чтения версию, обслуживаемую CDN. Только для чтения. |
+| cdnList | Коллекция объектов string | Список базовых URL-адресов для всех CDN поставщиков, обслуживающих активы текущего ресурса. Несколько CDN одновременно используются для обеспечения высокой доступности запросов на чтение. Только для чтения. |
+| id | String | Идентификатор, который представляет локальный код, указанный в стандарте ISO 639-1, например `en-US` английский. **Id** для по умолчанию /branding всегда типы `0` строки или `default` . Только для чтения. <br/><br/>**ПРИМЕЧАНИЕ:** Несколько фирменных окей для одного локального уровня в настоящее время не поддерживаются. |
+| signInPageText | String | Текст, который отображается в нижней части окна для регистрации. С помощью этого можно сообщить дополнительные сведения, например номер телефона в службу поддержки или юридический отчет. Этот текст должен быть unicode и не превышать 1024 символов. |
+| squareLogo | Stream | Квадратная версия логотипа вашей компании, которая отображается Windows 10 вне окна (OOBE) и когда Windows автопилот включен для развертывания. Разрешены типы PNG или JPEG размером не более 240 x 240 пикселей и размером не более 10 КБ. Рекомендуется использовать прозрачное изображение без обивки вокруг логотипа. |
+| squareLogoRelativeUrl | String | Относительный URL-адрес для свойства **squareLogo,** который CDN базовый URL-адрес **из cdnList** для предоставления версии, обслуживаемой CDN. Только для чтения. |
+| usernameHintText | String | Строка, отображаемая в виде подсказки в текстовом ящике имени пользователя на экране входной записи. Этот текст должен быть юникодом без ссылок или кода и не может превышать 64 символов. |
 
 ## <a name="relationships"></a>Связи
+Отсутствуют.
 
-Нет
-
-## <a name="json-representation"></a>Представление JSON
-
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже указано представление ресурса в формате JSON.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.organizationalBrandingProperties",
-  "keyProperty": "id"
-}-->
-
-```json
+  "openType": false
+}
+-->
+``` json
 {
+  "@odata.type": "#microsoft.graph.organizationalBranding",
+  "id": "String (identifier)",
   "backgroundColor": "String",
   "backgroundImage": "Stream",
+  "backgroundImageRelativeUrl": "String",
   "bannerLogo": "Stream",
-  "id": "String (identifier)",
+  "bannerLogoRelativeUrl": "String",
+  "cdnList": [
+    "String"
+  ],
   "signInPageText": "String",
   "squareLogo": "Stream",
+  "squareLogoRelativeUrl": "String",
   "usernameHintText": "String"
 }
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "organizationalBrandingProperties resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

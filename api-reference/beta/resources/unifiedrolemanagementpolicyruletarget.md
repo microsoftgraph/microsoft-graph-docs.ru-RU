@@ -5,12 +5,12 @@ author: shauliu1
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: c4d7bfb6744c3272e9237590b4d17c5e1d79b0f9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9dafa17179d5c2dbecc3446f56c146bdffcf0922
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59074446"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767239"
 ---
 # <a name="unifiedrolemanagementpolicyruletarget-resource-type"></a>тип ресурса unifiedRoleManagementPolicyRuleTarget
 
@@ -23,16 +23,16 @@ ms.locfileid: "59074446"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |вызываемая|String|Вызываемая цель правила политики. Допустимые значения: `None` `Admin` , `EndUser` .|
-|enforcedSettings|Коллекция String|Список параметров, которые применяются и не могут быть переопределены в детских сферах. Используйте `All` для всех параметров.|
-|inheritableSettings|Коллекция String|Список параметров, которые могут наследоваться по детским сферам. Используйте `All` для всех параметров.|
+|enforcedSettings|Коллекция объектов string|Список параметров, которые применяются и не могут быть переопределены в детских сферах. Используйте `All` для всех параметров.|
+|inheritableSettings|Коллекция объектов string|Список параметров, которые могут наследоваться по детским сферам. Используйте `All` для всех параметров.|
 |уровень|String|Уровень целевого показателя правила политики. Допустимые значения: `Eligibility` , `Assignment` .    |
-|operations|Коллекция String|Операции для целевой цели правила политики. Допустимые значения: `All` , , , , , `Activate` `Deactivate` `Assign` `Update` `Remove` `Extend` `Renew` .|
+|operations|Коллекция объектов string|Операции для целевой цели правила политики. Допустимые значения: `All` , , , , , `Activate` `Deactivate` `Assign` `Update` `Remove` `Extend` `Renew` .|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |targetObjects|Коллекция [directoryObject](../resources/directoryobject.md)|Коллекция пользователей, групп и servicePrincipals, которые находятся в области политики. Если не указано, все объекты находятся в области политики.|
--->
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {

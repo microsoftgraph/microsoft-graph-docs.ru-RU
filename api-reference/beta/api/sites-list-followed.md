@@ -2,15 +2,15 @@
 author: learafa
 description: Перечисление сайтов, отслеживаемых вошедшим пользователем.
 title: Перечисление отслеживаемых сайтов
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: SharePoint
 doc_type: apiPageType
-ms.openlocfilehash: d852f71ff2a228976efdc84c438f9529e2f5c6f1
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 75a3131f60c08c87611d81f22a7ecd8347017eb2
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475718"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763445"
 ---
 # <a name="list-followed-sites"></a>Перечисление отслеживаемых сайтов
 
@@ -47,7 +47,7 @@ GET /users/{user-id}/followedSites
 **Примечание:** Чтобы получить доступ к списку последующих сайтов другого целевого пользователя, необходимы разрешения приложений.
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 

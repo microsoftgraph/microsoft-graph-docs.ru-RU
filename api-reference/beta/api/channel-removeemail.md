@@ -2,15 +2,15 @@
 title: 'канал: removeEmail'
 description: Удаление предварительной электронной почты канала.
 author: anandab-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 66efdd201217d34ba367df4ae1f30713cd939df4
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 7c958496ffc34b958b817fb69f5cf49d958334a2
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52869611"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765734"
 ---
 # <a name="channel-removeemail"></a>канал: removeEmail
 
@@ -18,7 +18,7 @@ ms.locfileid: "52869611"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление предварительного адреса электронной почты [канала.](../resources/channel.md)
+Удалите адрес электронной почты [канала.](../resources/channel.md)
 
 Удалить адрес электронной почты можно только в том случае, если он был с помощью метода [provisionEmail](channel-provisionemail.md) или Microsoft Teams клиента.
 
@@ -28,8 +28,8 @@ ms.locfileid: "52869611"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированное (рабочая или учебная учетная запись)     | ChannelSettings.ReadWrite.All               |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Делегированные (рабочая или учебная учетная запись)     | ChannelSettings.ReadWrite.All               |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
 | Для приложений                            | Не поддерживается.                              |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -42,7 +42,7 @@ POST /teams/{team-id}/channels/{channel-id}/removeEmail
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

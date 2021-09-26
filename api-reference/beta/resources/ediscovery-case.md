@@ -2,15 +2,15 @@
 title: тип ресурса case
 description: В контексте eDiscovery содержатся хранители, хранитель, коллекции, наборы обзоров и экспорт.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 112a5551608df02378fca1793e0b3f469baf322d
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: ea4907edc66cd2c8d7713e816d561a0181c84d92
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080547"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766308"
 ---
 # <a name="case-resource-type"></a>тип ресурса case
 
@@ -19,6 +19,9 @@ ms.locfileid: "52080547"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 В контексте eDiscovery содержатся хранители, хранитель, коллекции, наборы обзоров и экспорт. Подробные сведения [см. в Advanced eDiscovery](/microsoft-365/compliance/overview-ediscovery-20).
+
+>[!NOTE]
+>Начиная с сентября 2021 г. операции POST создадут большие случаи. Дополнительные дополнительные информацию о больших случаях [см.](/microsoft-365/compliance/advanced-ediscovery-large-cases)в Advanced eDiscovery. Дополнительные сведения см. в публикации [Изменения в Microsoft 365 eDiscovery create case API.](https://go.microsoft.com/fwlink/?linkid=2172604)
 
 ## <a name="methods"></a>Методы
 
@@ -59,10 +62,10 @@ ms.locfileid: "52080547"
 |closedDateTime|DateTimeOffset|Дата и время закрытия дела. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |createdBy|[identitySet](/graph/api/resources/identityset)|Пользователь, создавший дело.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|description|String|Описание случая.|
+|description|Строка|Описание случая.|
 |displayName|String|Имя случая.|
 |externalId|String|Внешний номер случая для клиентской ссылки.|
-|id|String| ID для дела об обнаружении электронной почты. Только для чтения. |
+|id|Строка| ID для дела об обнаружении электронной почты. Только для чтения. |
 |lastModifiedBy|[identitySet](/graph/api/resources/identityset)|Последний пользователь, который изменил сущность.|
 |lastModifiedDateTime|DateTimeOffset| Последняя дата и время изменения дела. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |status|microsoft.graph.ediscovery.caseStatus| Состояние дела. Возможные значения `unknown` : , , , , , и `active` `pendingDelete` `closing` `closed` `closedWithError` . Подробные сведения см. в следующей таблице.|
@@ -91,7 +94,7 @@ ms.locfileid: "52080547"
 |sourceCollections|[коллекция microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Возвращает список объектов **sourceCollection,** связанных с этим случаем.|
 |tags|[коллекция microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md)|Возвращает список объектов **тегов,** связанных с этим случаем.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

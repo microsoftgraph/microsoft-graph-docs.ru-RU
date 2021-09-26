@@ -1,16 +1,16 @@
 ---
 title: Получение directoryAudit
 description: Описывает метод получения ресурса directoryAudit из API Microsoft Graph (бета-версия).
-localization_priority: Normal
+ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 6079c58dc4ba17cb185ed365ada24c902f310069
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: eba3d229ce68a874c40eb215b6b3c3924fae33af
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53579325"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764901"
 ---
 # <a name="get-directoryaudit"></a>Получение directoryAudit
 
@@ -28,7 +28,10 @@ ms.locfileid: "53579325"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
-|Приложение | AuditLog.Read.All и Directory.Read.All | 
+|Для приложения | AuditLog.Read.All и Directory.Read.All | 
+
+> [!IMPORTANT]
+> Этот API имеет [известные](/graph/known-issues#azure-ad-activity-reports) проблемы и в настоящее время требует согласия на оба **auditLog.Read.All** и **Directory.Read.All** разрешений.
 
 Кроме того, приложения должны быть [правильно зарегистрированы](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) в Azure AD.
 
@@ -41,7 +44,7 @@ GET /auditLogs/directoryAudits/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметры запросов OData для настройки ответа. Сведения об использовании этих параметров см. в материале [OData query parameters.](/graph/query_parameters)
+Этот метод поддерживает параметры запросов OData для настройки ответа. Сведения об использовании этих параметров см. в материале [OData query parameters.](/graph/query-parameters)
 
 ## <a name="request-headers"></a>Заголовки запросов
 

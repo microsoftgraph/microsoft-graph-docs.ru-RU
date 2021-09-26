@@ -4,14 +4,14 @@ description: Вы сортировать результаты поиска с п
 author: nmoreau
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 03d1b7e9751cb10f6936043ff9a620df9bf98741
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 56c0c5ed92098afe9df4eb699d113b62baa5522e
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59055712"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766945"
 ---
-# <a name="use-the-microsoft-search-api-to-sort-search-results-preview"></a>Используйте API Поиск (Майкрософт) для сортировки результатов поиска (предварительный просмотр)
+# <a name="use-the-microsoft-search-api-to-sort-search-results"></a>Используйте API Поиск (Майкрософт) для сортировки результатов поиска
 
 Вы можете использовать API Поиск (Майкрософт) Microsoft Graph для сортировки результатов поиска. Чтобы сортировать результаты, укажите свойство **sortProperties** в [объекте searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) и определите свойство ресурса **в entityTypes** для сортировки совпадений по восходящему или нисходящему порядку.
 

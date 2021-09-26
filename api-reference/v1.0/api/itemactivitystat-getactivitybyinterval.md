@@ -5,12 +5,12 @@ description: Получите itemAnalyticyStats для действий, кот
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 2637dbf01a3b469f588c6b24f15dd65fe7af8061
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 12edde3889cb8cdfac9e524d972e5baf47bf23ce
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019813"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767498"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>Получать статистику активности элементов по интервалу
 
@@ -53,7 +53,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 >**Примечание:** Этот API поддерживает только диапазон времени в 90 дней для ежедневных подсчетов. Значение и параметры должны представлять диапазон времени менее `startDateTime` `endDateTime` 90 дней.
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 

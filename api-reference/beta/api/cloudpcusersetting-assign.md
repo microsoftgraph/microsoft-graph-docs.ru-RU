@@ -2,15 +2,15 @@
 title: 'cloudPcUserSetting: назначение'
 description: Назначение параметров пользователя облачного КОМПЬЮТЕРА группам пользователей.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 7e2835e3882705a123626d84395e29d7f402628e
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: a77bd06273476768ec0c4e4e5deaff151808a417
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533437"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765853"
 ---
 # <a name="cloudpcusersetting-assign"></a>cloudPcUserSetting: назначение
 
@@ -20,8 +20,6 @@ ms.locfileid: "53533437"
 
 Назначение [cloudPcUserSetting группам](../resources/cloudpcusersetting.md) пользователей.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -30,7 +28,7 @@ ms.locfileid: "53533437"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|CloudPC.ReadWrite.All|
+|Для приложения|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

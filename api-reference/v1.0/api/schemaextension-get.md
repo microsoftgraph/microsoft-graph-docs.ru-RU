@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 6e5153f93a8f0f643493545b85b13f7df5c65bd2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d3c1e5b2279b68ad127cf69c62e1604029717d7b
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019596"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766000"
 ---
 # <a name="get-schemaextension"></a>Получение schemaExtension
 
@@ -24,7 +24,7 @@ ms.locfileid: "59019596"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | User.Read, Application.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application.Read.All |
+|Application | Application.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ GET /schemaExtensions/{id}
 
 В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект schemaExtension](../resources/schemaextension.md) в тексте ответа.
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -76,8 +76,9 @@ GET https://graph.microsoft.com/v1.0/schemaExtensions/graphlearn_test
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+Ниже приведен пример отклика.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

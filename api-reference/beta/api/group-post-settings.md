@@ -2,15 +2,15 @@
 title: Создание параметра каталога для групп
 description: Используйте этот API для создания нового параметра каталога для группы.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b9a6b32b762306d716019d0c790104338bb5f3c0
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: bb61dbf19a3348a749d3973a71583d8f106ea39c
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681363"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765398"
 ---
 # <a name="create-a-directory-setting-on-groups"></a>Создание параметра каталога для групп
 
@@ -26,7 +26,7 @@ ms.locfileid: "52681363"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Directory.ReadWrite.All |
+|Для приложения | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +36,7 @@ POST /groups/{id}/settings
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Bearer <token>. Обязательный|
+| Авторизация  | Bearer {token}. Обязательный|
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса поставляем представление JSON объекта [directorySetting.](../resources/directorysetting.md)
@@ -46,8 +46,9 @@ POST /groups/{id}/settings
 В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект directorySetting](../resources/directorysetting.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -72,19 +73,21 @@ Content-length: 222
   }
 }
 ```
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-directorysetting-from-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-directorysetting-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-directorysetting-from-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-В теле запроса поставляем представление JSON объекта [directorySetting.](../resources/directorysetting.md)
-##### <a name="response"></a>Отклик
-Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
+
+
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

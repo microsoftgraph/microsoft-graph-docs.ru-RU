@@ -10,7 +10,7 @@ ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508743"
+ms.locfileid: "59767448"
 ---
 # <a name="create-invitation"></a>Создание приглашения
 
@@ -98,7 +98,7 @@ Content-type: application/json
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ description: Получите itemAnalytics о представлениях, к�
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 58a1f0fc04885c855c4ccffe78b4d467bd8eab42
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7889051fa6ae191fb8c5af7df84e7a63ffc8226c
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019806"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766336"
 ---
 # <a name="get-itemanalytics"></a>Get itemAnalytics
 
@@ -45,7 +45,7 @@ GET /sites/{site-id}/analytics
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 

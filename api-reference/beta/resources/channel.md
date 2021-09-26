@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 1a4640ac18882e7baa3ce94ba83911604843eb85
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: bef523345bfcb3636a66606b87764599dd606554
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696318"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766826"
 ---
 # <a name="channel-resource-type"></a>Тип ресурса channel
 
@@ -47,8 +47,8 @@ ms.locfileid: "58696318"
 |[Получение вкладки на канале](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | Получение определенной вкладки, закрепленной на канале.|
 |[Вкладка "обновление" на канале](../api/channel-patch-tabs.md) | [teamsTab](teamstab.md) | Обновляет свойства вкладки на канале.|
 |[Удаление вкладки из канала](../api/channel-delete-tabs.md) | Нет | Удаление (открепление) вкладки из канала.|
-|[Подготовка адреса электронной почты канала](../api/channel-provisionemail.md) |[provisionChannelEmailResult](../resources/provisionchannelemailresult.md)| Подготовка адреса электронной почты.|
-|[Удаление адреса электронной почты канала](../api/channel-removeemail.md) | Нет | Удаление адреса электронной почты.|
+|[Подготовка адреса электронной почты канала](../api/channel-provisionemail.md) |[provisionChannelEmailResult](../resources/provisionchannelemailresult.md)| Подготовка адреса электронной почты для канала.|
+|[Удаление адреса электронной почты канала](../api/channel-removeemail.md) | Нет | Удаление адреса электронной почты канала.|
 
 ## <a name="properties"></a>Свойства
 

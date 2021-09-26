@@ -2,15 +2,15 @@
 title: Get samlOrWsFedExternalDomainFederation
 description: Ознакомьтесь с свойствами и отношениями объекта samlOrWsFedExternalDomainFederation.
 author: namkedia
-localization_priority: medium
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2622ab603d45fe85f2101441ea22380a80f41cc8
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: e4bdd9a2d1e4c8e39f1de0159791b265a0d4aeb1
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697109"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766567"
 ---
 # <a name="get-samlorwsfedexternaldomainfederation"></a>Get samlOrWsFedExternalDomainFederation
 Пространство имен: microsoft.graph
@@ -27,7 +27,7 @@ ms.locfileid: "58697109"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Domain.Read.All, Domain.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение|Domain.Read.All, Domain.ReadWrite.All|
+|Для приложения|Domain.Read.All, Domain.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать одной из следующих ролей Azure Active Directory [(Azure AD):](/azure/active-directory/roles/permissions-reference)
 
@@ -47,7 +47,7 @@ GET /directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederatio
 
 ## <a name="query-parameters"></a>Параметры запроса
 
-Этот метод требует `$filter` параметра запроса OData. Чтобы получить определенный [фильтр samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) на основе [externalDomainName,](../resources/externaldomainname.md)добавьте `?$filter=domains/any(x: x/id eq 'domainName-value')` . 
+Этот метод требует `$filter` параметра запроса OData. Чтобы получить определенный [фильтр samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) на основе [externalDomainName,](../resources/externaldomainname.md)добавьте `?$filter=domains/any(x: x/id eq 'domainName-value')` .
 
 Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
@@ -69,6 +69,8 @@ GET /directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederatio
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_samlorwsfedexternaldomainfederation"
@@ -78,6 +80,24 @@ GET /directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederatio
 ``` http
 GET https://graph.microsoft.com/beta/directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederation?$filter=domains/any(x: x/id eq 'contoso.com')
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-samlorwsfedexternaldomainfederation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-samlorwsfedexternaldomainfederation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-samlorwsfedexternaldomainfederation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-samlorwsfedexternaldomainfederation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

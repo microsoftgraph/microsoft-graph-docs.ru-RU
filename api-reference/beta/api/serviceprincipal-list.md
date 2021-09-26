@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: d1941f96a8085886cd576f3ac6f31ffe728d7281
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: e8992b081933ce4264f32a4f1861a48993ca1949
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696955"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763766"
 ---
 # <a name="list-serviceprincipals"></a>Перечисление servicePrincipals
 
@@ -41,11 +41,15 @@ GET /servicePrincipals
 
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select` и `$top` для настройки отклика. Некоторые запросы поддерживаются только при использовании заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
 
+По умолчанию этот API не возвращает значение **key** в свойстве **keyCredentials** при перечислении всех субъектов-служб. Чтобы получить сведения открытого ключа в параметре **key**, требуется указать свойство **keyCredentials** в запросе `$select`. Например, `$select=id,appId,keyCredentials`.
+
+При использовании `$select` с целью получения **keyCredentials** для субъектов-служб применяется ограничение регулирования в количестве 150 запросов в минуту для каждого клиента.
+
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя | Описание |
 |:---- |:----------- |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search` или определенном использовании `$filter`. Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries). |
 
 ## <a name="request-body"></a>Текст запроса
@@ -93,7 +97,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -189,7 +193,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

@@ -1,16 +1,16 @@
 ---
 title: 'educationAssignment: setUpResourcesFolder'
 description: Создайте SharePoint папку для отправки файлов для данного образованияAssignment.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sharmas
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5ca3d7d267551bdeebb7a34a1624a4f1a4caea3f
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: e7084d1df5835b261c95936425b5d6e2bcfcb6c5
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53107622"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766449"
 ---
 # <a name="educationassignment-setupresourcesfolder"></a>educationAssignment: setUpResourcesFolder
 
@@ -27,8 +27,8 @@ ms.locfileid: "53107622"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) |  EduAssignments.ReadBasic, EduAssignments.Read  |
-|Делегированное (личная учетная запись Майкрософт) |  Не поддерживается.  |
+|Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadBasic, EduAssignments.Read  |
+|Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
 |Для приложений | Не поддерживается. | 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -39,12 +39,14 @@ POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Authorization  | Bearer `{token}`. Обязательный параметр.  |
+| Авторизация  | Bearer `{token}`. Обязательный параметр.  |
 
 ## <a name="request-body"></a>Текст запроса
 Необходимо предоставить пустой json в качестве `{}` тела запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа 200 Ok и [объект educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) в тексте запроса.
+
+Если указанное **назначение уже** имеет папку, этот метод возвращает ответ на `400 Bad request` ошибку.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -56,10 +58,11 @@ POST /education/classes/{id}/assignments/{id}/setUpResourcesFolder
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["d38ffdea-da93-46ac-90ba-d568c6073075","ad8afb28-c138-4ad7-b7f5-a6986c2655a8"],  
   "name": "educationassignment_setupresourcesfolder"
 }-->
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/setUpResourcesFolder
+POST https://graph.microsoft.com/beta/education/classes/955e0bd5-52c2-41ad-b7e8-5b33a18c5e78/assignments/18d17255-3278-49fb-8da7-d095b7f610c4/setUpResourcesFolder
 Content-type: application/json
 
 {
@@ -128,7 +131,7 @@ Content-length: 279
             "42ff222c-571f-497c-a9d3-f77ea9ece327"
         ]
     },
-    "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!H0Unq6KJREmMLHgbJXfKw4YTuh2luKRDvUVGQBLOmvaRxxvbedZKT4LKslSIjT9a/items/01SMYGQ3IUCDNLBJ4XCFE3AQMQHTLSLVYX",
+    "resourcesFolderUrl": "https://graph.microsoft.com/beta/drives/b!H0Unq6KJREmMLHgbJXfKw4YTuh2luKRDvUVGQBLOmvaRxxvbedZKT4LKslSIjT9a/items/01SMYGQ3IUCDNLBJ4XCFE3AQMQHTLSLVYX",
     "createdBy": {
         "application": null,
         "device": null,
@@ -143,6 +146,33 @@ Content-length: 279
         "user": {
             "id": "42ff222c-571f-497c-a9d3-f77ea9ece327",
             "displayName": null
+        }
+    }
+}
+```
+
+Если указанное **назначение уже** имеет папку, этот метод возвращает ответ на `400 Bad request` ошибку.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "odata.error"
+} -->
+```http
+HTTP/1.1 400 Bad request
+Content-type: application/json
+Content-length: 158
+
+{
+    "error": {
+        "code": "badRequest",
+        "message": "Bad request.",
+        "innerError": {
+            "code": "folderAlreadyExists",
+            "message": "Resource folder already exists and has previously been set up.",
+            "date": "2021-09-14T19:05:24",
+            "request-id": "f88be238-1339-49c8-b03d-37f45d54761f",
+            "client-request-id": "30d8081a-f3e8-73e0-2da4-3480fb56ccdb"
         }
     }
 }

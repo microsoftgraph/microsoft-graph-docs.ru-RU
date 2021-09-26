@@ -2,15 +2,15 @@
 title: тип ресурса cloudPcOnPremisesConnectionHealthCheck
 description: Результат проверки состояния локального подключения облачного КОМПЬЮТЕРА.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 3b3c2b47dd09c12a07d3adeec74b93a985701e34
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: d091f174fa308c44418e5332657f45bbf82cdaf9
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53400882"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767057"
 ---
 # <a name="cloudpconpremisesconnectionhealthcheck-resource-type"></a>тип ресурса cloudPcOnPremisesConnectionHealthCheck
 
@@ -19,8 +19,6 @@ ms.locfileid: "53400882"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Результат проверки состояния локального подключения облачного КОМПЬЮТЕРА.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="methods"></a>Методы
 
@@ -32,13 +30,13 @@ ms.locfileid: "53400882"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Имя отображения этого элемента проверки состояния.|
+|displayName|Строка|Имя отображения этого элемента проверки состояния.|
 |status|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|Состояние элемента проверки состояния. Возможные значения: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`. Только для чтения.|
 |startDateTime|DateTimeOffset|Время начала элемента проверки состояния. Только для чтения.|
 |endDateTime|DateTimeOffset|Конечное время проверки состояния элемента. Только для чтения.|
 |errorType|[cloudPcOnPremisesConnectionHealthCheckErrorType](#cloudpconpremisesconnectionhealthcheckerrortype-values)|Тип ошибки, которая произошла во время проверки состояния.|
 |recommendedAction|String|Рекомендуемое действие для устранения соответствующей ошибки.|
-|additionalDetails|String|Дополнительные сведения о проверке состояния здоровья или рекомендуемом действии.|
+|additionalDetails|Строка|Дополнительные сведения о проверке состояния здоровья или рекомендуемом действии.|
 
 ### <a name="cloudpconpremisesconnectionhealthcheckerrortype-values"></a>значения cloudPcOnPremisesConnectionHealthCheckErrorType
 

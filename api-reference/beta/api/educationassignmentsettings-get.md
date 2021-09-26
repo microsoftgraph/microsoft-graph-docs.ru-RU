@@ -10,7 +10,7 @@ ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508793"
+ms.locfileid: "59763465"
 ---
 # <a name="get-educationassignmentsettings"></a>Get educationAssignmentSettings
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "59508793"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
+|Для приложения| EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

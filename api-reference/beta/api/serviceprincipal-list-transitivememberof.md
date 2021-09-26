@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 8597f020c4977ed293213fd58ca59f705f6be07c
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 3aa5f08eb37d07b18b268c7f417dcdc182a8afb6
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695401"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767211"
 ---
 # <a name="list-serviceprincipal-transitive-memberof"></a>Перечисление servicePrincipal transitive memberOf
 
@@ -37,13 +37,13 @@ ms.locfileid: "58695401"
 GET /servicePrincipals/{id}/transitiveMemberOf
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`. Кроме того, включено также приведение к OData, например, вы можете получить только directoryRoles, участником которых является пользователь. `$search` можно использовать в свойстве **displayName**. Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`. Кроме того, включено также приведение к OData, например, вы можете получить только directoryRoles, участником которых является пользователь. `$search` можно использовать в свойстве **displayName**. Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 | ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search`, `$filter`, `$orderby` или с параметрами запросов OData cast. В нем используется индекс, который может не соответствовать последним изменениям объекта. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -244,7 +244,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

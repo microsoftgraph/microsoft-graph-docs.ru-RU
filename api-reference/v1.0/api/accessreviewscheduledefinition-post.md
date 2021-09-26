@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 06b8435e2f087f09346a0eed8834b874f420b11e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4a144b91cc74ce35f5c810ced9461c68a6c63b8f
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59017074"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766819"
 ---
 # <a name="create-accessreviewscheduledefinition"></a>Создание accessReviewScheduleDefinition
 
@@ -26,7 +26,7 @@ ms.locfileid: "59017074"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений                            | AccessReview.ReadWrite.All |
+|Application                            | AccessReview.ReadWrite.All |
 
 При входе пользователь должен также быть в роли каталога, что позволяет им создавать обзор доступа.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviewsv2-root.md)
 
@@ -48,10 +48,10 @@ POST /identityGovernance/accessReviews/definitions
 
 | Свойство | Тип | Описание |
 |:-------------|:------------|:------------|
-| displayName | String | Имя серии обзоров доступа. Обязательный.|
-| descriptionForAdmins | String | Контекст обзора, предоставленного администраторам. Обязательное. |
-  descriptionForReviewers | String | Контекст обзора, предоставляемого рецензентам в уведомлениях электронной почты. Уведомления электронной почты поддерживают до 256 символов. Обязательное. |
-| область | [accessReviewScope](../resources/accessreviewscope.md) |  Определяет объекты, доступ к которым просматривается. Просмотрите [accessReviewScope и](../resources/accessreviewscope.md) узнайте, как настроить область определения обзора [доступа.](/graph/accessreviews-scope-concept) Обязательный.| 
+| displayName | String | Имя серии обзоров доступа. Обязательно.|
+| descriptionForAdmins | String | Контекст обзора, предоставленного администраторам. Обязательно. |
+  descriptionForReviewers | String | Контекст обзора, предоставляемого рецензентам в уведомлениях электронной почты. Уведомления электронной почты поддерживают до 256 символов. Обязательно. |
+| область | [accessReviewScope](../resources/accessreviewscope.md) |  Определяет объекты, доступ к которым просматривается. Просмотрите [accessReviewScope и](../resources/accessreviewscope.md) узнайте, как настроить область определения обзора [доступа.](/graph/accessreviews-scope-concept) Обязательно.| 
 | instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | В случае проверки всех групп определяется область, в которой будут рассмотрены группы. Просмотрите [accessReviewScope и](../resources/accessreviewscope.md) узнайте, как настроить область определения обзора [доступа.](/graph/accessreviews-scope-concept)| 
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| Параметры для серии обзоров доступа. Здесь определяется повторяемость. См. [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
 | рецензенты | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection | Определяет, кто такие рецензенты. Если нет указаны, обзор является самообнаверяемой (пользователи просматривают собственный доступ). Примеры вариантов назначения рецензентов см. в примере Назначение рецензентов определению обзора доступа с помощью [API microsoft Graph.](/graph/accessreviews-reviewers-concept)  |
@@ -401,8 +401,6 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessReviewScheduleDefinition_allusers_M365_AADRole"
@@ -474,12 +472,6 @@ Content-type: application/json
   }
 }
 ```
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewscheduledefinition-allusers-m365-aadrole-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Отклик
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.

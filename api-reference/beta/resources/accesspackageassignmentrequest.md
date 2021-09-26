@@ -1,16 +1,16 @@
 ---
 title: тип ресурса accessPackageAssignmentRequest
 description: Запрос на назначение пакета доступа создается пользователем, который хочет получить назначение пакета доступа.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: ed2b59e5e20977f6be54a7967cd1cfd94cea7699
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: 765c5259a4295160f7b776a883ef9cc29bb7dc52
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58396720"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767134"
 ---
 # <a name="accesspackageassignmentrequest-resource-type"></a>тип ресурса accessPackageAssignmentRequest
 
@@ -27,6 +27,7 @@ ms.locfileid: "58396720"
 | [Список accessPackageAssignmentRequests](../api/accesspackageassignmentrequest-list.md) | [accessPackageAssignmentRequest collection](accesspackageassignmentrequest.md) | Извлечение списка **объектов accesspackageassignmentrequest.** |
 | [Создание accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Создание нового **accessPackageAssignmentRequest**. |
 | [Получить accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Чтение свойств и связей объекта **accessPackageAssignmentRequest.** |
+| [Удаление accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-delete.md) |Нет | Удаление **accessPackageAssignmentRequest**. |
 |[filterByCurrentUser](../api/accesspackageassignmentrequest-filterbycurrentuser.md)|[accessPackageAssignmentRequest collection](../resources/accesspackageassignmentrequest.md)|Извлечение списка **объектов accessPackageAssignmentRequest,** фильтруемых на входе пользователя.|
 |[cancel](../api/accesspackageassignmentrequest-cancel.md)|[accessPackageAssignmentRequest collection](../resources/accesspackageassignmentrequest.md)|Отмена **объекта accessPackageAssignmentRequest,** который находится в отменяемом состоянии.|
 | [reprocess](../api/accesspackageassignmentrequest-reprocess.md) | Нет | Автоматически повторное повторное запрос пользователя на доступ к пакету доступа.|
@@ -38,9 +39,9 @@ ms.locfileid: "58396720"
 |completedDate|DateTimeOffset|Дата окончания обработки , успешной или неудачной, запроса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
 |id|String| Только для чтения.|
-|isValidationOnly|Логический|True, если запрос не обрабатывается для назначения.|
-|обоснование|String|Предоставлено обоснование запроса.|
-|requestState|String|Один `PendingApproval` из `Canceled` , , , , ,  `Denied` или `Delivering` `Delivered` `PartiallyDelivered` `DeliveryFailed` `Submitted` `Scheduled` . Только для чтения.|
+|isValidationOnly|Boolean|True, если запрос не обрабатывается для назначения.|
+|обоснование|Строка|Предоставлено обоснование запроса.|
+|requestState|Строка|Один `PendingApproval` из `Canceled` , , , , ,  `Denied` или `Delivering` `Delivered` `PartiallyDelivered` `DeliveryFailed` `Submitted` `Scheduled` . Только для чтения.|
 |requestStatus|String|Дополнительные сведения о состоянии обработки запросов. Только для чтения.|
 |requestType|String|Один `UserAdd` из `UserRemove` , , или `AdminAdd` `AdminRemove` `SystemRemove` . Запрос от самого пользователя будет иметь requestType или `UserAdd` `UserRemove` . Только для чтения.|
 |schedule|[requestSchedule](requestschedule.md)| Диапазон дат, которые должен быть назначен запросчику. Только для чтения.|

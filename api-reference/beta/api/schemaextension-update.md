@@ -1,16 +1,16 @@
 ---
 title: Обновление schemaExtension
 description: Обновление свойств в определении указанной схемыExtension.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 6e5bef7a1ac978ccde1c84a9ee074d7fc6d91c28
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: b0736ce3becf49c0b308c6fc0932fc8bc2648f55
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787384"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767329"
 ---
 # <a name="update-schemaextension"></a>Обновление schemaExtension
 
@@ -60,17 +60,17 @@ PATCH /schemaExtensions/{id}
 |description|String|Описание расширения схемы.|
 |properties|Коллекция [extensionSchemaProperty](../resources/extensionschemaproperty.md)|Коллекция типов и имен свойств, составляющих определение расширения схемы. Разрешены только изменения добавок. |
 |status|String|Состояние жизненного цикла расширения схемы. Начальное состояние при создании — **InDevelopment**. Возможные переходы состояния из **InDevelopment** в **доступные и** **доступные** **для deprecated**.|
-|targetTypes|Коллекция String|Набор типов Microsoft Graph (поддерживающих расширения), к которым можно применить это расширение схемы.  Разрешены только изменения добавок.|
+|targetTypes|Коллекция String|Набор типов Microsoft Graph (поддерживающих расширения), к которым можно применить это расширение схемы.  Разрешены только изменения добавок.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. Попытка выполнить этот запрос из приложения, которым вы не владеете (и  без настройки свойства владельца к приложению приложения, которым вы владеете) возвращает код  `403 Forbidden` ответа.
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
-
+Ниже приведен пример запроса. Вы должны включить свойство **владельца,** если вы работаете с запросом из приложения, которым вы не владеете. В этом случае установите свойство **владельца** в **приложение,** которое принадлежит вам.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -78,21 +78,29 @@ PATCH /schemaExtensions/{id}
   "name": "update_schemaextension"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/schemaExtensions/{id}
+PATCH https://graph.microsoft.com/beta/schemaExtensions/exto6x7sfft_courses
 Content-type: application/json
-Content-length: 201
 
 {
-  "properties": [
-    {
-      "name":"new-name-value",
-      "type":"new-type-value"
-    },
-    {
-      "name":"additional-name-value",
-      "type":"additional-type-value"
-    }
-  ]
+    "owner": "ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa",
+    "properties": [
+        {
+            "name": "courseId",
+            "type": "Integer"
+        },
+        {
+            "name": "courseName",
+            "type": "String"
+        },
+        {
+            "name": "courseType",
+            "type": "String"
+        },
+        {
+            "name": "courseSupervisors",
+            "type": "String"
+        }
+    ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -114,7 +122,7 @@ Content-length: 201
 ---
 
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response"

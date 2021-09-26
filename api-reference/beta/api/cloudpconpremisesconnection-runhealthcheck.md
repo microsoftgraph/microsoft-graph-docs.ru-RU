@@ -2,15 +2,15 @@
 title: 'CloudPcOnPremisesConnection: runHealthChecks'
 description: Запуск проверок состояния на локальном подключении облачного компьютера.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: f7a58fa6e449276b90dfaa59f861f0c2c3038edb
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: b4bf84f98b086095cfab1f765d782f368a3a78ff
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533742"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766070"
 ---
 # <a name="cloudpconpremisesconnection-runhealthchecks"></a>CloudPcOnPremisesConnection: runHealthChecks
 
@@ -22,7 +22,6 @@ ms.locfileid: "53533742"
 
 Это вызовет новую проверку состояния для этого [объекта cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) и изменит свойства healthCheckStatus и [healthCheckStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md) по завершению проверки.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>Разрешения
 

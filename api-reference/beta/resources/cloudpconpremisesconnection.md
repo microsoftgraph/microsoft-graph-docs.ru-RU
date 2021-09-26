@@ -2,15 +2,15 @@
 title: тип ресурса cloudPcOnPremisesConnection
 description: Представляет определенный набор сведений о ресурсах Azure, которые можно использовать для создания локальной сетевой связи для облачных компьютеров.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 57c8ca98935a11d053f91b9a971db2a0c436be65
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 2b0d842f1fd7af3b31275ae9d0700e5fc5388989
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58260655"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767400"
 ---
 # <a name="cloudpconpremisesconnection-resource-type"></a>тип ресурса cloudPcOnPremisesConnection
 
@@ -19,8 +19,6 @@ ms.locfileid: "58260655"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет определенный набор сведений о ресурсах Azure, которые можно использовать для создания локальной сетевой связи для облачных компьютеров.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="methods"></a>Методы
 
@@ -51,7 +49,7 @@ ms.locfileid: "58260655"
 |subnetId|String|ID целевой подсети. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
 |healthCheckStatus|[cloudPcOnPremisesConnectionStatus](#cloudpconpremisesconnectionstatus-values)|Состояние последней проверки состояния здоровья, которая проводится на локальном подключении. Например, если состояние "пройдено", локальное подключение прошло все проверки, запускаемые службой. Возможные значения: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`. Только для чтения.|
 |healthCheckStatusDetails|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|Сведения о проверках состояния подключения и соответствующих результатах. Возвращается только `$select` на . Пример, который показывает, как получить свойство **inUse,** см. в примере 2. Получить выбранные свойства локального подключения, включая [healthCheckStatusDetails.](../api/cloudpconpremisesconnection-get.md) Только для чтения.|
-|inUse|Логический|Когда `true` используется локальное подключение. Когда `false` подключение не используется. Невозможно удалить используемую связь. Возвращается только с помощью оператора `$select`. Пример, который показывает, как получить свойство **inUse,** см. в примере 2. Получить выбранные свойства локального подключения, включая [healthCheckStatusDetails.](../api/cloudpconpremisesconnection-get.md) Только для чтения.|
+|inUse|Boolean|Когда `true` используется локальное подключение. Когда `false` подключение не используется. Невозможно удалить используемую связь. Возвращается только с помощью оператора `$select`. Пример, который показывает, как получить свойство **inUse,** см. в примере 2. Получить выбранные свойства локального подключения, включая [healthCheckStatusDetails.](../api/cloudpconpremisesconnection-get.md) Только для чтения.|
 
 ### <a name="cloudpconpremisesconnectionstatus-values"></a>значения cloudPcOnPremisesConnectionStatus
 

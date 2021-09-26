@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 53961c4dbadfa2732d45a277233673aac1ddb41e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 78a8ce78337c2c2e00c96cea7dbb59a6df0e7a11
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139326"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507755"
 ---
 # <a name="assign-reviewers-to-your-access-review-using-the-microsoft-graph-api"></a>Назначение рецензентов для проверки доступа с помощью API Graph Microsoft
 
@@ -89,6 +89,7 @@ API обзоров доступа Azure [AD](/graph/api/resources/accessreviewsv
 ]
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="next-steps"></a>Дальнейшие действия
 
 + [Настройка области определения обзора доступа](/graph/accessreviews-scope-concept)
++ [Узнайте, как](/graph/accessreviews-overview) использовать API обзоров доступа для проверки доступа к ресурсам Azure AD.

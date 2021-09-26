@@ -2,15 +2,15 @@
 title: тип ресурса authenticationListener
 description: Определяет слушателя для оценки во время события проверки подлинности.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: a7feeabaa9caf0246a53aded7ac1c15236fdf8af
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 5528dda667d225d8963ac476542122e2ec8c48c3
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433189"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766497"
 ---
 # <a name="authenticationlistener-resource-type"></a>тип ресурса authenticationListener
 
@@ -20,7 +20,7 @@ ms.locfileid: "50433189"
 
 Определяет слушателя, который должен оценивать, когда событие проверки подлинности происходит при проверке подлинности. АутентификацияListener абстрактна и является базовым классом различных типов слушателей, которые можно оценить во время события проверки подлинности. 
 
-Вы можете создать [invokeUserFlowListener](../resources/invokeuserflowlistener.md) для события onSignUpStart.. Это связывает приложение с потоком пользователей, что позволяет самообслуживывать [процесс регистрации.](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) После того как приложение связано с потоком пользователей, пользователи, которые идут в это приложение, смогут инициировать поток регистрации, который содержит учетную запись для гостей.
+Вы можете создать [invokeUserFlowListener](../resources/invokeuserflowlistener.md) для события onSignUpStart.. Это связывает приложение с потоком пользователей, что позволяет самообслуживывать [процесс регистрации.](/azure/active-directory/external-identities/self-service-sign-up-overview) После того как приложение связано с потоком пользователей, пользователи, которые идут в это приложение, смогут инициировать поток регистрации, который содержит учетную запись для гостей.
 
 ## <a name="methods"></a>Методы
 

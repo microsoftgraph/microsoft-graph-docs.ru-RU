@@ -1,33 +1,31 @@
 ---
-title: Тип ресурса Клаудпкманажементграупассигнменттаржет
-description: 'Сложный тип, представляющий целевую группу назначения. Базовый тип: Клаудпкманажементассигнменттаржет'
+title: тип ресурса cloudPcManagementGroupAssignmentTarget
+description: 'Сложный тип, который представляет целевую группу назначения. Базовый тип: CloudPcManagementAssignmentTarget'
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 5216b15a97484bf58d2e2d621dbc26435f180be4
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: a3841cc775b1b0ed9221d193a5ca5d44c61bc6f0
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563874"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765664"
 ---
-# <a name="cloudpcmanagementgroupassignmenttarget-resource-type"></a>Тип ресурса Клаудпкманажементграупассигнменттаржет
+# <a name="cloudpcmanagementgroupassignmenttarget-resource-type"></a>тип ресурса cloudPcManagementGroupAssignmentTarget
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Сложный тип, представляющий целевую группу назначения.
-Наследуется от [клаудпкманажементассигнменттаржет](../resources/cloudpcmanagementassignmenttarget.md).
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+Сложный тип, который представляет целевую группу назначения.
+Наследует [от cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md).
 
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|groupId|String|Идентификатор целевой группы назначения|
+|groupId|String|ID целевой группы назначения|
 
 ## <a name="relationships"></a>Связи
 

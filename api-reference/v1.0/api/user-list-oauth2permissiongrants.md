@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: a613781a777b8f2a2168ea45e85e6b7ea88cfca5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 736e2b4d960dcb36d027353c3aeaffd9226066b3
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019435"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763046"
 ---
 # <a name="list-oauth2permissiongrants"></a>Перечисление oauth2PermissionGrants
 
@@ -45,7 +45,7 @@ GET /users/{id | userPrincipalName}/oauth2PermissionGrants
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 

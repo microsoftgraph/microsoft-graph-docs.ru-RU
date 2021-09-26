@@ -4,12 +4,13 @@ description: API обзоров доступа позволяет програм
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: 6eda31e5f35d03d5b5db136d46b14e93470389e0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+doc_type: conceptualPageType
+ms.openlocfilehash: 53e7d075323297b6e152cc9458266d571f26477b
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143596"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766959"
 ---
 # <a name="overview-of-the-access-reviews-api"></a>Обзор API проверок доступа
 
@@ -41,11 +42,5 @@ API обзоров доступа поддерживают как делегир
 
 Попробуйте следующие учебники для управления отзывами о доступе:
 
-+ [Используйте API отзывов доступа для групп, чтобы просмотреть доступ к группам безопасности](tutorial-accessreviews-securitygroup.md)
-+ [Используйте API обзоров доступа для групп, чтобы просмотреть доступ ко всем группам Microsoft 365 с гостевых пользователей](tutorial-accessreviews-M365group.md)
-
-## <a name="see-also"></a>См. также
-
-+ [Проверки доступа Azure AD](/graph/api/resources/accessreviewsv2-root)
-+ [Планирование Azure Active Directory проверки доступа](/azure/active-directory/governance/deploy-access-reviews)
-+ [Создание обзора доступа групп & приложений](/azure/active-directory/governance/create-access-review)
++ [Руководство. Используйте API обзоров доступа для просмотра доступа к группам безопасности](tutorial-accessreviews-securitygroup.md)
++ [Руководство. Используйте API обзоров доступа, чтобы просмотреть гостевой доступ к группам Microsoft 365.](tutorial-accessreviews-M365group.md)

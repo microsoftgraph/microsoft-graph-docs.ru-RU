@@ -10,7 +10,7 @@ ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508708"
+ms.locfileid: "59766770"
 ---
 # <a name="manageddevice-reprovisioncloudpc"></a>managedDevice: reprovisionCloudPc
 
@@ -28,7 +28,7 @@ ms.locfileid: "59508708"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|CloudPC.ReadWrite.All.|
+|Для приложения|CloudPC.ReadWrite.All.|
 
 ## <a name="http-request"></a>HTTP-запрос
 
