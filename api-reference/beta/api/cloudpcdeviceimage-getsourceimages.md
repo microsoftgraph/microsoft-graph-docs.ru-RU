@@ -2,15 +2,15 @@
 title: 'cloudPcDeviceImage: getSourceImages'
 description: Просмотр списка всех управляемых ресурсов изображений из подписки Azure. Эти исходные изображения можно загружать и использовать на облачных ПК.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 338f05f7ae2645c76b9ddb34a0d1af6f29beb35f
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: fbaa5432a3874e988f644789fc4e2bb65cc27615
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546849"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766903"
 ---
 # <a name="cloudpcdeviceimage-getsourceimages"></a>cloudPcDeviceImage: getSourceImages
 
@@ -20,7 +20,6 @@ ms.locfileid: "52546849"
 
 Получите [объекты cloudPcSourceDeviceImage.](../resources/cloudpcsourcedeviceimage.md) Просмотр списка всех управляемых ресурсов изображений из Azure Active Directory подписки.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +28,7 @@ ms.locfileid: "52546849"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Для приложения|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

@@ -2,15 +2,15 @@
 title: Get cloudPcDeviceImage
 description: Ознакомьтесь с свойствами и отношениями объекта cloudPcDeviceImage.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 78b6bedd6afcd16cfdc79c5be5dc49454889d419
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: f64c0e84f135388d23ada36a47e380db21bba80c
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991871"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765272"
 ---
 # <a name="get-cloudpcdeviceimage"></a>Get cloudPcDeviceImage
 
@@ -20,7 +20,6 @@ ms.locfileid: "52991871"
 
 Ознакомьтесь с свойствами и отношениями определенного [объекта cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +28,7 @@ ms.locfileid: "52991871"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Для приложения|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

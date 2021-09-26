@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 766feedea9f514e9629adeac1930bdfe991b2b71
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0f037471b4edddf11c954d15a12f0e425c639496
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59038057"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766301"
 ---
 # <a name="get-directoryaudit"></a>Получение directoryAudit
 
@@ -26,7 +26,7 @@ ms.locfileid: "59038057"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
-|Для приложений | AuditLog.Read.All и Directory.Read.All |
+|Приложение | AuditLog.Read.All и Directory.Read.All |
 
 > [!IMPORTANT]
 > Этот API имеет [известные](/graph/known-issues#azure-ad-activity-reports) проблемы и в настоящее время требует согласия на оба **auditLog.Read.All** и **Directory.Read.All** разрешений.
@@ -40,7 +40,7 @@ GET /auditLogs/directoryAudits/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметры запросов OData для настройки ответа. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](/graph/query_parameters).
+Этот метод поддерживает параметры запросов OData для настройки ответа. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса unifiedRoleAssignmentMultiple
 description: Определение роли, назначенное массиву принципов (как правило, пользователю) по массиву областей.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 7db7ababef04111146c4a39c3dc6550339e67d3a
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 4dc43e36ce1f224a920f99d02210268d68b42d40
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533890"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764033"
 ---
 # <a name="unifiedroleassignmentmultiple-resource-type"></a>тип ресурса unifiedRoleAssignmentMultiple
 
@@ -28,8 +28,6 @@ ms.locfileid: "53533890"
 - Облачный КОМПЬЮТЕР 
 - Microsoft Intune
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
@@ -44,16 +42,16 @@ ms.locfileid: "53533890"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| appScopeIds | Коллекция String | Ids of the app specific scopes when the assignment scopes are app specific. Области назначения определяют набор ресурсов, для которых доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте `/` для области для клиента. Области приложений — это области, которые определяются и понимаются только этим приложением. |
+| appScopeIds | Коллекция объектов string | Ids of the app specific scopes when the assignment scopes are app specific. Области назначения определяют набор ресурсов, для которых доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте `/` для области для клиента. Области приложений — это области, которые определяются и понимаются только этим приложением. |
 | description | Строка | Описание назначения роли. |
-| directoryScopeIds | Коллекция String | Ids объектов каталога, представляющих области назначения. Области назначения определяют набор ресурсов, к которым доверимы получили доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Области приложений — это области, которые определяются и понимаются только этим приложением. |
-| displayName | Строка | Имя назначения роли. Обязательный. |
-| id | Строка | Уникальный идентификатор для единойRoleAssignmentMultiple. Key, not nullable, Read-only. |
-| roleDefinitionId | Строка | Идентификатор унифицированногоRoleDefinition для назначения. |
-| principalIds | Коллекция String | Идентификаторы директоров, которым предоставляется назначение.  Поддерживает `$filter` `any` (только оператор). |
+| directoryScopeIds | Коллекция объектов string | Ids объектов каталога, представляющих области назначения. Области назначения определяют набор ресурсов, к которым доверимы получили доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Области приложений — это области, которые определяются и понимаются только этим приложением. |
+| displayName | String | Имя назначения роли. Обязательный. |
+| id | String | Уникальный идентификатор для единойRoleAssignmentMultiple. Key, not nullable, Read-only. |
+| roleDefinitionId | String | Идентификатор унифицированногоRoleDefinition для назначения. |
+| principalIds | Коллекция объектов string | Идентификаторы директоров, которым предоставляется назначение.  Поддерживает `$filter` `any` (только оператор). |
 
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|

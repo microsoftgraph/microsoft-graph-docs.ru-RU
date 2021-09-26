@@ -3,18 +3,21 @@ title: Библиотека SharePoint Framework для Microsoft Graph Toolkit
 description: Используйте библиотеку SharePoint Framework microsoft Graph набор средств для использования Microsoft Graph набор средств в SharePoint Framework решениях.
 ms.localizationpriority: medium
 author: waldekmastykarz
-ms.openlocfilehash: 37f2570606b62de12f81e779fdcd4c33cb586f2c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 41a1b3703440ce42866c3aaf720bdda55e9d2b20
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032092"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507762"
 ---
 # <a name="sharepoint-framework-library-for-microsoft-graph-toolkit"></a>Библиотека SharePoint Framework для Microsoft Graph Toolkit
 
 Используйте библиотеку SharePoint Framework microsoft Graph набор средств для использования Microsoft Graph набор средств в SharePoint Framework решениях.
 
 Чтобы запретить нескольким компонентам регистрировать собственный набор компонентов Microsoft Graph набор средств на странице, следует развернуть эту библиотеку для клиента и ссылаться на компоненты Microsoft Graph набор средств, которые вы используете в решении из этой библиотеки.
+
+> [!CAUTION]
+> Библиотека SharePoint Framework microsoft Graph набор средств предназначена для использования с SharePoint Framework расширениями и не **изолированными веб-частями.** Если вы строите изолированные веб-части, не используйте библиотеку SharePoint Framework для microsoft Graph набор средств. Вместо этого загрузим microsoft Graph набор средств непосредственно из пакета @microsoft/mgt (или @microsoft/mgt-react при использовании React). SharePoint Framework не поддерживает компоненты библиотеки ссылок из изолированных веб-частей, и это приведет к ошибкам во время работы в изолированной веб-части.
 
 ## <a name="installation"></a>Установка
 
@@ -104,7 +107,7 @@ export default class MgtReact extends React.Component<IMgtReactProps, {}> {
 > 
 > Не импортируйте из других пакетов Microsoft Graph набор средств (), чтобы избежать упаковки собственной копии инструментария и столкновения с `@microsoft/mgt-*` общей библиотекой.
 
-## <a name="see-also"></a>Дополнительные материалы
+## <a name="see-also"></a>См. также
 
 * [Создание веб-части SharePoint с помощью Microsoft Graph Toolkit](./build-a-sharepoint-web-part.md)
 * [Сведения о поставщиках проверки подлинности](../providers/providers.md)

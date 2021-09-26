@@ -4,15 +4,15 @@ description: Получает объект учетной записи в Dynami
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 0f3db2e969369198f716dbcde4c7147717fd47b1
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 99774e726c11cbeac68bc196944e0254e968d604
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046232"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766161"
 ---
 # <a name="get-accounts"></a>Получить учетные записи
 
@@ -28,8 +28,8 @@ ms.locfileid: "52046232"
 |Тип разрешения |Разрешения (в порядке повышения привилегий)|
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
-|Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Financials.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложения|Financials.ReadWrite.All|
 
 
 ## <a name="http-request"></a>HTTP-запрос

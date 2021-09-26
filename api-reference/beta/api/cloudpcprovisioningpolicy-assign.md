@@ -2,15 +2,15 @@
 title: 'cloudPcProvisioningPolicy: назначение'
 description: Назначьте группе политику продюсинга облачных КОМПЬЮТЕРов.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 3dc0382bc32b459fa07abd5a763c6e62d4fd60ea
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 1be95d8b2402e90f8d4d4e308c4cb86266bfd4b6
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533957"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764649"
 ---
 # <a name="cloudpcprovisioningpolicy-assign"></a>cloudPcProvisioningPolicy: назначение
 
@@ -20,7 +20,6 @@ ms.locfileid: "53533957"
 
 Назначение [cloudPcProvisioningPolicy группам](../resources/cloudpcprovisioningpolicy.md) пользователей.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,7 +29,7 @@ ms.locfileid: "53533957"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|CloudPC.ReadWrite.All|
+|Для приложения|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

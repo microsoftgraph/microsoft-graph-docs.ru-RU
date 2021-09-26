@@ -1,37 +1,37 @@
 ---
-title: Тип ресурса optionalClaim
-description: Содержит необязательное утверждение, связанное с приложением.
-localization_priority: Normal
+title: тип ресурса optionalClaim
+description: Содержит необязательный иск, связанный с приложением.
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 5e21ab86fb3ef34edea546546211782906e04251
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: b4816822928cab9f84dbbdc60e13a6ceab6ef26b
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128542"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767141"
 ---
-# <a name="optionalclaim-resource-type"></a>Тип ресурса optionalClaim
+# <a name="optionalclaim-resource-type"></a>тип ресурса optionalClaim
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Содержит необязательное утверждение, связанное с [приложением](application.md) <!-- or a service principal -->. Свойства **idToken,** **accessToken** и **saml2Token** ресурса [optionalClaims](optionalclaims.md) — это коллекция **optionalClaim.** Если поддерживается определенным утверждением, можно также изменить поведение optionalClaim с помощью `additionalProperties` свойства. 
+Содержит необязательный иск, связанный с [приложением](application.md) <!-- or a service principal -->. Свойства **idToken,** **accessToken** и **saml2Token** ресурса [optionalClaims](optionalclaims.md) — это коллекция **необязательныхClaim.** При поддержке определенного утверждения можно также изменить поведение необязательныйClaim с помощью `additionalProperties` свойства. 
 
-Дополнительные сведения см. в статье [Предоставление необязательных утверждений для приложения Azure AD](/azure/active-directory/develop/active-directory-optional-claims).
+Дополнительные сведения см. в дополнительных сведениях о дополнительных [требованиях к приложению Azure AD.](/azure/active-directory/develop/active-directory-optional-claims)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|additionalProperties|Коллекция объектов string| Дополнительные свойства утверждения. Если свойство существует в этой коллекции, оно изменяет поведение необязательного утверждения, указанного в свойстве name. |
-|essential|Boolean| Если значение имеет значение true, утверждение, указанное клиентом, необходимо для обеспечения плавной авторизации для конкретной задачи, запрашиваемой конечным пользователем. Значение по умолчанию  false.|
+|additionalProperties|Коллекция объектов string| Дополнительные свойства утверждения. Если свойство существует в этой коллекции, оно изменяет поведение необязательного утверждения, указанного в свойстве имени. |
+|essential|Boolean| Если значение верно, утверждение, указанное клиентом, необходимо для обеспечения плавного доступа к авторизации для определенной задачи, запрашиваемой конечным пользователем. Значение по умолчанию  false.|
 |name|String| Имя необязательного утверждения. |
-|source|Строка| Источник (объект каталога) утверждения. Существуют предварительно определенные утверждения и пользовательские утверждения из свойств расширения. Если значение источника — null, утверждение является предварительно заранее задаваемой необязательной заявкой. Если исходным значением является пользователь, значением в свойстве name является свойство расширения объекта user. |
+|source|String| Источник (объект каталога) утверждения. Есть предопределяемые утверждения и пользовательские утверждения из свойств расширения. Если исходным значением является null, то утверждение является предопределяемой необязательной претензией. Если исходным значением является пользователь, значение в свойстве имени — это свойство расширения от объекта пользователя. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

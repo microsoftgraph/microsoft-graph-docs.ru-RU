@@ -2,15 +2,15 @@
 title: тип ресурса cloudPcAuditActor
 description: Субъект аудита, представленный пользователем Azure AD и приложением, связанным с событием аудита.
 author: ecmadao
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: c0c63e9e9d0db7a5227f0ab7b818c8ab3d3944d9
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 5cd851d22d20eb5d0e466cae7b799ad70bd390a2
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53211348"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766315"
 ---
 # <a name="cloudpcauditactor-resource-type"></a>тип ресурса cloudPcAuditActor
 
@@ -19,8 +19,6 @@ ms.locfileid: "53211348"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Субъект аудита, представленный пользователем Azure AD и приложением, связанным с событием аудита.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="properties"></a>Свойства
 
@@ -36,7 +34,7 @@ ms.locfileid: "53211348"
 |userId|String|ID пользователя Azure AD.|
 |userRoleScopeTags|[коллекция cloudPcUserRoleScopeTagInfo](../resources/cloudpcuserrolescopetaginfo.md)|Список тегов области ролей.|
 |remoteTenantId|String|Делегированная ид клиента-партнера.|
-|remoteUserId|String|Делегированная ид пользователя-партнера.|
+|remoteUserId|Строка|Делегированная ид пользователя-партнера.|
 
 ### <a name="cloudpcauditactortype-values"></a>значения cloudPcAuditActorType
 

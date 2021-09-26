@@ -5,12 +5,12 @@ author: anandab
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 733a52f6b69adc7a5d0c526b481018420af3db2e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 08a6b996d3ddbe721775a888b161e14788a485a9
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117650"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507768"
 ---
 # <a name="get-change-notifications-for-teams-and-channels-using-microsoft-graph"></a>Получение уведомлений об изменениях команд и каналов с помощью Microsoft Graph
 
@@ -84,7 +84,6 @@ Content-Type: application/json
 
 Чтобы получать уведомления обо всех изменениях (создание, обновление и удаление), связанных с любым каналом в клиенте, подпишитесь на `/teams/getAllChannels`. Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление.
 
->**Примечание.** Закрытые каналы не поддерживаются.
 
 ### <a name="permissions"></a>Разрешения
 
@@ -115,7 +114,8 @@ Content-Type: application/json
 ## <a name="subscribe-to-changes-in-any-channel-of-a-particular-team"></a>Подписка на изменения в любом канале определенной команды
 
 
-Чтобы получать уведомления обо всех изменениях, связанных с любым каналом в определенной команде, подпишитесь на `/teams/{team-id}/channels`. Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление.
+Чтобы получать уведомления обо всех изменениях, связанных с любым каналом в определенной команде, подпишитесь на `/teams/{team-id}/channels`. Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление. Уведомления об изменениях для частных каналов не поддерживаются в делегированном контексте. В этом случае подписчик этого ресурса в делегированном контексте получает уведомления только для стандартных каналов определенной команды, но не для частных каналов.
+
 
 ### <a name="permissions"></a>Разрешения
 

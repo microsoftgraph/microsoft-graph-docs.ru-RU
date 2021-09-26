@@ -1,16 +1,16 @@
 ---
 title: Создание unifiedRoleAssignmentMultiple
 description: Создайте новый объект unifiedRoleAssignmentMultiple.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4f01f0ad367362110366f297f6175b6943980fcf
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 99fccb763d9442881b37c79e88a2902eb5fe1070
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533311"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767351"
 ---
 # <a name="create-unifiedroleassignmentmultiple"></a>Создание unifiedRoleAssignmentMultiple
 
@@ -26,8 +26,6 @@ ms.locfileid: "53533311"
 
 Для других Microsoft 365 приложений (например, Azure AD) используйте [унифицированную системуRoleAssignment.](../resources/unifiedroleassignment.md)
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## <a name="permissions"></a>Разрешения
 
 В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующей таблицы наименее привилегированное разрешение, необходимое для вызова этого API. Дополнительные новости, в том числе осторожность [перед](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) выбором более привилегированных разрешений, см. [в см. в руб. Permissions.](/graph/permissions-reference) 
@@ -38,7 +36,7 @@ ms.locfileid: "53533311"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  CloudPC.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | CloudPC.ReadWrite.All  |
+|Для приложения | CloudPC.ReadWrite.All  |
 
 ### <a name="for-device-management-intune-provider"></a>Для поставщика управления устройствами (Intune)
 
@@ -46,7 +44,7 @@ ms.locfileid: "53533311"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  DeviceManagementRBAC.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | DeviceManagementRBAC.ReadWrite.All |
+|Для приложения | DeviceManagementRBAC.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -77,7 +75,7 @@ POST /roleManagement/deviceManagement/roleAssignments
 
 В теле запроса поставляем представление JSON объекта [unifiedRoleAssignmentMultiple.](../resources/unifiedroleassignmentmultiple.md) Запрос должен иметь область, определенную в Azure AD, например область, определенную приложению, например `directoryScopeIds` `appScopeId` . Примерами области Azure AD являются клиенты ("/"), административные единицы или приложения. 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код ответа и новый объект `201 Created` [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) в тексте ответа.
 

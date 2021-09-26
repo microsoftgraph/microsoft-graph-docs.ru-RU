@@ -1,16 +1,16 @@
 ---
 title: Удаление schemaExtension
 description: Удаление определения расширения схемы.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: e6f62b570a9befa762ac0f4f05db70cbb13f6c7e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 473924ffd4be2b8aa20d586f086af7b2ab6c268b
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975302"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766861"
 ---
 # <a name="delete-schemaextension"></a>Удаление schemaExtension
 
@@ -34,7 +34,7 @@ ms.locfileid: "48975302"
 |Для приложений | Не поддерживается. |
 
 > [!NOTE]
-> Кроме того, для делегированного процесса вошедшего в систему пользователя можно удалить только schemaExtensions, которыми они владеют (где свойство **owner** объекта schemaExtension — это `appId` приложение, которому принадлежит вошедшего пользователь).
+> Кроме того, для делегирования потока подписанный пользователь может удалять только собственные схемыExtensions (где свойством владельца схемыExtension является приложение, которое принадлежит подписанного  `appId` пользователя).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -55,7 +55,7 @@ DELETE /schemaExtensions/{id}
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -84,8 +84,8 @@ DELETE https://graph.microsoft.com/beta/schemaExtensions/{id}
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа. 
 <!-- {
   "blockType": "response",
   "truncated": true

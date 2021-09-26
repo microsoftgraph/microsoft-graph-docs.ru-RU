@@ -4,12 +4,12 @@ description: Узнайте, как настроить приложения дл
 author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
-ms.openlocfilehash: 15e1fca9df26eb6302ecab9bb1fc8d43a666abe5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 89e53bdceee530d314f22f6ab0788ef9f2cbc811
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59127929"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764565"
 ---
 # <a name="allow-applications-to-access-online-meetings-on-behalf-of-a-user"></a>Разрешить приложениям получать доступ к собраниям в Интернете от имени пользователя
 
@@ -59,10 +59,11 @@ ms.locfileid: "59127929"
 
 ## <a name="supported-permissions-and-additional-resources"></a>Поддерживаемые разрешения и дополнительные ресурсы
 
-Администраторы могут использовать cmdlets ApplicationAccessPolicy для управления доступом к почтовым ящикам для приложения, которое было предоставлено любое из следующих разрешений приложения:
+Администраторы могут использовать cmdlets ApplicationAccessPolicy для управления доступом к собраниям в Интернете для приложения, которое было предоставлено любое из следующих разрешений приложения:
 
 - OnlineMeetings.Read.All
 - OnlineMeetings.ReadWrite.All
+- OnlineMeetingArtifact.Read.All
 
 Дополнительные сведения о настройке политики доступа приложения см. в справочнике по командлету PowerShell [New-ApplicationAccessPolicy](/powershell/module/skype/new-csapplicationaccesspolicy).
 

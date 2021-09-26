@@ -1,22 +1,24 @@
 ---
 title: 'privilegedRoleAssignmentRequest: my'
 description: Получите запросы на присвоение привилегированных ролей запрашиваемой запрашиваемой роли.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: shauliu1
-ms.openlocfilehash: 8c2fec79729b4ede406b27e973eaa23ae912baf3
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: ffb0a8a8b742df4b7549964f975484be71f7dc51
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454229"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767224"
 ---
 # <a name="privilegedroleassignmentrequest-my"></a>privilegedRoleAssignmentRequest: my
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Получите запросы на присвоение привилегированных ролей запрашиваемой запрашиваемой роли.
 
@@ -35,7 +37,7 @@ ms.locfileid: "58454229"
 POST /privilegedRoleAssignmentRequests/my
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](http://graph.microsoft.io/docs/overview/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|

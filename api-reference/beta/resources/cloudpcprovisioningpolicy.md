@@ -2,15 +2,15 @@
 title: тип ресурса cloudPcProvisioningPolicy
 description: Представляет политику продюсинга облачных КОМПЬЮТЕРов.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 928bc3159b1b87f54964f34b5cf42721605abebd
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 3fd07bc2df93e57d6135a3bf7956f931db13c801
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533915"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763062"
 ---
 # <a name="cloudpcprovisioningpolicy-resource-type"></a>тип ресурса cloudPcProvisioningPolicy
 
@@ -19,8 +19,6 @@ ms.locfileid: "53533915"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет политику продюсинга облачных КОМПЬЮТЕРов.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="methods"></a>Методы
 
@@ -37,15 +35,15 @@ ms.locfileid: "53533915"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для политики продюсинга облачных ПК. Только для чтения.|
-|displayName|Строка|Имя отображения политики обеспечения.|
+|id|String|Уникальный идентификатор для политики продюсинга облачных ПК. Только для чтения.|
+|displayName|String|Имя отображения политики обеспечения.|
 |description|Строка|Описание политики обеспечения.|
 |onPremisesConnectionId|Строка|ID cloudPcOnPremisesConnection. Чтобы обеспечить подключение к облачным компьютерам и подключение к домену, выберите подключение к виртуальной сети, проверенной службой облачных ПК.|
-|imageId|Строка|ID изображения ОС, которое необходимо уладить на облачных ПК. Формат изображения типа галереи: {publisher_offer_sku}.|
+|imageId|String|ID изображения ОС, которое необходимо уладить на облачных ПК. Формат изображения типа галереи: {publisher_offer_sku}. Поддерживаемые значения для каждого из параметров:<ul><li>издатель: Microsoftwindowsdesktop.</li> <li>предложение: windows-ent-cpc.</li> <li>sku: 21h1-ent-cpc-m365, 21h1-ent-cpc-os, 20h2-ent-cpc-m365, 20h2-ent-cpc-os, 20h1-ent-cpc-m365, 20h1-ent-cpc-os, 19h2-ent-cpc-os.</li></ul>|
 |imageDisplayName|Строка|Имя отображения образа ОС, которое вы закаповыватель.|
 |imageType|cloudPcProvisioningPolicyImageType|Тип изображения ОС (настраиваемый или галерейный) для предоставления на облачных ПК. Возможные значения: `gallery`, `custom`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 |Связь|Тип|Описание|
 |:---|:---|:---|

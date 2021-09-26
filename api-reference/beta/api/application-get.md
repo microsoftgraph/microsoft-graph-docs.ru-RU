@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 1c4b5d524074d687672f3ba7df651e236318d603
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 5f11cbd1753970749ccc6c22cdb1ccfc1ae1c0b8
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695093"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763536"
 ---
 # <a name="get-application"></a>Получение объекта application
 
@@ -35,11 +35,17 @@ ms.locfileid: "58695093"
 GET /applications/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
 Этот метод поддерживает [параметр запроса OData](/graph/query-parameters) `$select` для получения конкретных свойств приложения.
+
+По умолчанию этот API не возвращает значение отпечатка **key** в свойстве **keyCredentials**, если в запросе `$select` не указан параметр **keyCredentials**. Например, `$select=id,appId,keyCredentials`.
+
+При использовании `$select` с целью получения **keyCredentials** для приложений применяется ограничение регулирования в количестве 150 запросов в минуту для каждого клиента.
+
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя           | Описание                |
 |:---------------|:---------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

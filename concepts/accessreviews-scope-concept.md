@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: bbd290d3be3acdbff45f3bb8739dca4ba86ecb4a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d261fd40629c75c40bf0c93fd42ac8221fdb09e1
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136217"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766728"
 ---
 # <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>Настройка области обзора доступа с помощью API microsoft Graph
 
@@ -39,6 +39,7 @@ API обзоров доступа Azure [AD](/graph/api/resources/accessreviewsv
     "queryType": "MicrosoftGraph"
 }
 ```
+
 Чтобы *просмотреть только неактивных пользователей,* назначенных группе:
 
 ```http
@@ -48,14 +49,14 @@ API обзоров доступа Azure [AD](/graph/api/resources/accessreviewsv
     "query": "/groups/{group id}/transitiveMembers",
     "queryType": "MicrosoftGraph"
 }
-````
+```
 
 ### <a name="example-2-review-guest-users-assigned-to-a-group"></a>Пример 2. Просмотр гостевых пользователей, назначенных группе
 
 ```http
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "/groups/{group id}/transitiveMembers/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",    
+    "query": "/groups/{group id}/transitiveMembers/microsoft.graph.user/?$filter=(userType eq 'Guest')",    
     "queryType": "MicrosoftGraph"
 }
 ```
@@ -64,22 +65,7 @@ API обзоров доступа Azure [AD](/graph/api/resources/accessreviewsv
 
 ```http
 "instanceEnumerationScope": {
-    "query": "/groups?$filter=(groupTypes/any(c:c+eq+'Unified'))&$count=true ",
-    "queryType": "MicrosoftGraph"
-},
-"scope": {
-    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
-    "queryType": "MicrosoftGraph"
-}
-```
-Поскольку этот обзор применяется во всех Microsoft 365 группах, настройте **экземплярEnumerationScope,** чтобы указать Microsoft 365 группы для проверки.
-    
-### <a name="example-4-review-of-all-guest-users-assigned-to-all-teams"></a>Пример 4. Обзор всех гостевых пользователей, назначенных всем Teams
-
-```http
-"instanceEnumerationScope": {
-    "query": "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')",
+    "query": "/groups?$filter=(groupTypes/any(c:c eq 'Unified'))",
     "queryType": "MicrosoftGraph"
 },
 "scope": {
@@ -87,15 +73,32 @@ API обзоров доступа Azure [AD](/graph/api/resources/accessreviewsv
     "query": "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')",
     "queryType": "MicrosoftGraph"
 }
-    
-Because this review is applied on all Teams-enabled Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Teams-enabled Microsoft 365 groups to review.
+```
 
-### Example 5: Review access of all inactive guest users to all groups
+Поскольку этот обзор применяется во всех Microsoft 365 группах, настройте **экземплярEnumerationScope,** чтобы указать Microsoft 365 группы для проверки.
+    
+### <a name="example-4-review-of-all-guest-users-assigned-to-all-teams"></a>Пример 4. Обзор всех гостевых пользователей, назначенных всем Teams
+
+```http
+"instanceEnumerationScope": {
+    "query": "/groups?$filter=(groupTypes/any(c:c eq 'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')",
+    "queryType": "MicrosoftGraph"
+},
+"scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+    "query": "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')",
+    "queryType": "MicrosoftGraph"
+}
+```
+    
+Поскольку этот обзор применяется во всех Teams с Microsoft 365, настройте **экземплярEnumerationScope,** чтобы указать Teams группы Microsoft 365 для проверки.
+
+### <a name="example-5-review-access-of-all-inactive-guest-users-to-all-groups"></a>Пример 5. Просмотр доступа всех неактивных гостевых пользователей ко всем группам
 
 ```http
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewInactiveUsersQueryScope",
-    "query": "./members/microsoft.graph.user/?$count=true&$filter=(userType eq 'Guest')",
+    "query": "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')",
     "queryType": "MicrosoftGraph",
     "inactiveDuration": "P30D"
 }
@@ -107,7 +110,7 @@ Because this review is applied on all Teams-enabled Microsoft 365 groups, config
 
 ```http
 "instanceEnumerationScope": {
-    "query": "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')",
+    "query": "/groups?$filter=(groupTypes/any(c:c eq 'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')",
     "queryType": "MicrosoftGraph"
 },
 "scope": {
@@ -174,7 +177,7 @@ Because this review is applied on all Teams-enabled Microsoft 365 groups, config
 
 **PrincipalResourceMembershipsScope** предоставляет свойства **principalScopes** и **resourceScopes** для поддержки более адаптированных параметров конфигурации для области **accessReviewScheduleDefinition**. Это включает обзор доступа нескольких директоров или групп директоров к нескольким ресурсам.
 
-### <a name="example-1-review-access-of-all-inactive-guest-users-to-all-groups"></a>Пример 1. Просмотр доступа всех неактивных гостевых пользователей ко всем группам
+### <a name="example-12-review-access-of-all-inactive-guest-users-to-all-groups"></a>Пример 12. Просмотр доступа всех неактивных гостевых пользователей ко всем группам
 
 ```http
 "scope": {
@@ -199,7 +202,7 @@ Because this review is applied on all Teams-enabled Microsoft 365 groups, config
 
 В этом примере все директора являются неактивными гостевых пользователей с периодом их неактивности, рассчитанным в течение 30 дней с даты начала экземпляра проверки доступа.
 
-### <a name="example-2-review-access-of-all-guest-users-to-a-directory-role"></a>Пример 2. Просмотр доступа всех гостевых пользователей к роли каталога
+### <a name="example-13-review-access-of-all-guest-users-to-a-directory-role"></a>Пример 13. Просмотр доступа всех гостевых пользователей к роли каталога
 
 ```http
 "scope": {
@@ -221,6 +224,7 @@ Because this review is applied on all Teams-enabled Microsoft 365 groups, config
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="next-steps"></a>Дальнейшие действия
 
 + [Назначение рецензентов определению проверки доступа](/graph/accessreviews-reviewers-concept)
++ [Узнайте, как](/graph/accessreviews-overview) использовать API обзоров доступа для проверки доступа к ресурсам Azure AD.

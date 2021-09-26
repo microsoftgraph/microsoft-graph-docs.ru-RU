@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: a3a1f1a2536ebb125d778dedc4000a18ab3cc3a6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cf13e19796e96ba63bef79e7cc8b5aa41bc9af4c
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59079241"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763431"
 ---
 # <a name="list-provisioningobjectsummary"></a>Список provisioningObjectSummary
 
@@ -26,7 +26,7 @@ ms.locfileid: "59079241"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
-|Для приложений | AuditLog.Read.All и Directory.Read.All |
+|Приложение | AuditLog.Read.All и Directory.Read.All |
 
 > [!IMPORTANT]
 > Этот API имеет [известные](/graph/known-issues#azure-ad-activity-reports) проблемы и в настоящее время требует согласия на оба **auditLog.Read.All** и **Directory.Read.All** разрешений.
@@ -49,7 +49,7 @@ GET /auditLogs/provisioning
 |[$top](/graph/query-parameters#top-parameter)|Задает размер страницы результатов.|`/auditLogs/provisioning?$top=20`|
 |[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц. Для создания маркера необходимо пройти верхний фильтр запроса. Нельзя указать количество пропущенных результатов.|`/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"`|
 
-Общие сведения см. в статье [Параметры запроса OData](/graph/query_parameters).
+Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ### <a name="attributes-supported-by-the-filter-parameter"></a>Атрибуты, поддерживаемые параметром $filter
 

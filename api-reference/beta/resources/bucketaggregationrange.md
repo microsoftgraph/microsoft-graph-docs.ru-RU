@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса Буккетаггрегатионранже
-description: 'Позволяет указать несколько ручных диапазонов в запросе статистической обработки. Это относится только к уточнениям без строки: числа и даты.'
-localization_priority: Normal
+title: тип ресурса bucketAggregationRange
+description: Указывает нижний и верхний предел диапазона для агрегации результатов поиска. Применяется только к переработчикам датного или числимого типа
+ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 77f89503a8f19bd8b057575643ebf89e6dbc43a8
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 8a101262dddd859e3c28ef0a32e117dee7546903
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193980"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767491"
 ---
-# <a name="bucketaggregationrange-resource-type"></a>Тип ресурса Буккетаггрегатионранже
+# <a name="bucketaggregationrange-resource-type"></a>тип ресурса bucketAggregationRange
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Задает нижнюю и верхнюю границу диапазона для агрегирования результатов поиска. Применяется только к уточнениям даты или числового типа.
+Указывает нижний и верхний предел диапазона для агрегации результатов поиска. Применяется только к уточнениям даты или числового типа.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|from|String| Определяет нижнюю границу, от которой вычисляется агрегация. Это может быть числовое значение или строковое представление даты с использованием `YYYY-MM-DDTHH:mm:ss.sssZ` формата. Обязательно.|
-|на|String| Определяет верхнюю границу, до которой вычисляется агрегация. Это может быть числовое значение или строковое представление даты с использованием `YYYY-MM-DDTHH:mm:ss.sssZ` формата. Обязательный элемент.|
+|from|String| Определяет нижнюю границу, из которой вычисляется агрегация. Это может быть числовая величина или строка представления даты с помощью `YYYY-MM-DDTHH:mm:ss.sssZ` формата. Обязательно.|
+|на|Строка| Определяет верхнюю границу, к которой необходимо вычислить агрегацию. Это может быть числовая величина или строка представления даты с помощью `YYYY-MM-DDTHH:mm:ss.sssZ` формата. Обязательный элемент.|
 
 ## <a name="json-representation"></a>Представление JSON
 

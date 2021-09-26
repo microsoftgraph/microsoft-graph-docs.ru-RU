@@ -1,16 +1,16 @@
 ---
 title: Список oAuth2PermissionGrants
 description: Получение списка объектов oauth2PermissionGrant, представляющих делегированную дотации разрешений.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 3e42b422a358a0fc513a2b11014e74f91432ecfc
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 5b4773d249ae25dd00ab754b015569cb1bedf645
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231938"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765965"
 ---
 # <a name="list-oauth2permissiongrants"></a>Перечисление oauth2PermissionGrants
 
@@ -21,7 +21,7 @@ ms.locfileid: "52231938"
 Получение списка [объектов oAuth2PermissionGrant,](../resources/oauth2permissiongrant.md) представляющих делегированную лицензию, выданную для клиентских приложений для доступа к API от имени пользователей, входиющих в нее.
 
 > [!NOTE]
-> Этот запрос может иметь задержки репликации для делегирования разрешений, которые были недавно созданы, обновлены или удалены. При указании фильтра эта задержка будет сведена `clientId` к минимуму.
+> При запросе могут происходить задержки репликации для предоставленных делегированных разрешений, которые были недавно созданы, обновлены или удалены. При указании фильтра эта задержка будет сведена `clientId` к минимуму.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -43,7 +43,7 @@ GET /oauth2PermissionGrants
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 

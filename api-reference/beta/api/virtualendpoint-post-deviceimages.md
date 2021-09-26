@@ -2,15 +2,15 @@
 title: Создание cloudPcDeviceImage
 description: Upload пользовательский образ ОС, который можно позднее уладить на облачных ПК.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 3db7f2b479bb00f07dc11a64d058a59d2cc02168
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 721044cda7eb72db8dd86dd36c48df56a432b0dc
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534160"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767295"
 ---
 # <a name="create-cloudpcdeviceimage"></a>Создание cloudPcDeviceImage
 
@@ -20,8 +20,6 @@ ms.locfileid: "53534160"
 
 Создайте новый [объект cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md) Upload пользовательский образ ОС, который можно позднее уладить на облачных ПК.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -30,7 +28,7 @@ ms.locfileid: "53534160"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|CloudPC.ReadWrite.All|
+|Для приложения|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -61,10 +59,10 @@ POST /deviceManagement/virtualEndpoint/deviceImages
 |displayName|Строка|Имя отображения изображения.|
 |sourceImageResourceId|Строка|ID источника ресурса изображений в Azure. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
 |operatingSystem|String|Операционная система изображения. Например: Windows 10 Корпоративная.|
-|osBuildNumber|Строка|Версия сборки ОС изображения. Например: 1909.|
+|osBuildNumber|String|Версия сборки ОС изображения. Например: 1909.|
 |version|String|Версия изображения. Например: 0.0.1, 1.5.13.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) в тексте ответа.
 

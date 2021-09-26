@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса Сортпроперти
-description: Предоставляет возможность сортировки результатов поиска.
-localization_priority: Normal
+title: тип ресурса sortProperty
+description: Указывает порядок сортировки результатов поиска
+ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 1f1288b2dc9ec05fe8aaedb5871c3bda68714f90
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 9606b76ec7679b543759f328fc7d64803e676df3
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193972"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766637"
 ---
-# <a name="sortproperty-resource-type"></a>Тип ресурса Сортпроперти
+# <a name="sortproperty-resource-type"></a>тип ресурса sortProperty
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет параметры сортировки для упорядочивания результатов поиска.
+Указывает порядок сортировки результатов поиска.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|name|String|Имя свойства, по которому выполняется сортировка. Обязательно.|
-|по убыванию|Логическое|`True` Если порядок сортировки — по убыванию. По умолчанию используется `false` порядок сортировки по возрастанию. Необязательно.|
+|name|String|Имя свойства для сортировки. Обязательный.|
+|isDescending|Boolean|`True` если порядок сортировки будет нисходящим. По умолчанию `false` , с порядком сортировки как восходящий. Необязательное свойство.|
 
 ## <a name="json-representation"></a>Представление JSON
 

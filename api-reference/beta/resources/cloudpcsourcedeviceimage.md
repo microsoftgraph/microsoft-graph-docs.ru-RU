@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса cloudPcSourceDeviceImage
+title: тип ресурса cloudPcSourceDeviceImage
 description: 'Исходный образ, связанный с подпиской на Azure. '
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 1b0c656142ddad5af3d0af7778d0ae04f0c5d7b4
-ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
+ms.openlocfilehash: 3de1c3582ca792225b6aa7e6d36b5b33594249e2
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790743"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766476"
 ---
-# <a name="cloudpcsourcedeviceimage-resource-type"></a>Тип ресурса cloudPcSourceDeviceImage
+# <a name="cloudpcsourcedeviceimage-resource-type"></a>тип ресурса cloudPcSourceDeviceImage
 
 Пространство имен: microsoft.graph
 
@@ -20,14 +20,12 @@ ms.locfileid: "49790743"
 
 Исходный образ, связанный с подпиской на Azure.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|ИД изображения источника.|
-|displayName|String|Отображаемая имя для изображения источника.|
+|id|String|Код исходных изображений.|
+|displayName|Строка|Имя отображения для исходных изображений.|
 
 ## <a name="relationships"></a>Связи
 

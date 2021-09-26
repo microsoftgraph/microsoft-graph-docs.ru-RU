@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: f6b8332b072fa29feabf60083712086990ade28b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8e9fe8f5d37b8613a081c603145822048685cbf8
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59023054"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508336"
 ---
 # <a name="get-application"></a>Получение объекта application
 
@@ -32,21 +32,31 @@ ms.locfileid: "59023054"
 ```http
 GET /applications/{id}
 ```
+
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметр запроса OData](/graph/query-parameters) `$select` для получения конкретных свойств приложения. 
+
+Этот метод поддерживает [параметр запроса OData](/graph/query-parameters) `$select` для получения конкретных свойств приложения.
+
+По умолчанию этот API не возвращает значение открытого ключа **key** в свойстве **keyCredential**, если в запросе `$select` не указан параметр **keyCredentials**.  Например, `$select=id,appId,keyCredentials`.
+
+При использовании `$select` с целью получения **keyCredentials** для приложений применяется ограничение регулирования в количестве 150 запросов в минуту для каждого клиента.
 
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя           | Описание                |
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
+
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [application](../resources/application.md) в тексте отклика.
+
 ## <a name="examples"></a>Примеры
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 

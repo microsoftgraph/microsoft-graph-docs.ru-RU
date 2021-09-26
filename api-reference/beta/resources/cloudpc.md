@@ -2,15 +2,15 @@
 title: Тип ресурса cloudPC
 description: Облачные управляемые виртуальные настольные компьютеры.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 5d23f8345da02fda2d60ac8f7d957eabf14e9c89
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: e3f716b059a55f12add0eaf0b8ab785f71e1cb42
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58396944"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765202"
 ---
 # <a name="cloudpc-resource-type"></a>Тип ресурса cloudPC
 
@@ -18,9 +18,7 @@ ms.locfileid: "58396944"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет виртуальный рабочий стол с облачным управлением.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
+Представляет виртуальный рабочий стол с облачным управлением. Этот облачный компьютер также зарегистрирован в Intune и управляется через портал MEM, поэтому на облачном КОМПЬЮТЕРе также имеется соответствующий id управляемых устройств Intune.
 
 ## <a name="methods"></a>Методы
 
@@ -30,6 +28,10 @@ ms.locfileid: "58396944"
 |[Get cloudPC](../api/cloudpc-get.md)|[cloudPC](../resources/cloudpc.md)|Ознакомьтесь с свойствами и отношениями объекта [cloudPC.](../resources/cloudpc.md)|
 |[Reprovision](../api/cloudpc-reprovision.md)|Нет|Reprovision a [cloudPC](../resources/cloudpc.md) object.|
 |[endGracePeriod](../api/cloudpc-endgraceperiod.md)|Нет|Окончание периода благодати для [объекта cloudPC.](../resources/cloudpc.md)|
+|[Удаленное действие cloudPC reprovision](../api/manageddevice-reprovisioncloudpc.md)|Нет|Перенастройка облачного КОМПЬЮТЕРА с управляемым id устройствами Intune.|
+|[Удаленное действие по массовому перепроизводство облачных компьютеров](../api/manageddevice-bulkreprovisioncloudpc.md)|Нет|Массовое перепроизводение набора устройств облачного ПК с управляемыми ID-устройствами Intune.|
+|[Повторное удаленное действие cloudPC](../api/manageddevice-resizecloudpc.md)|Нет|Обновление или понижение существующего CloudPC в другую конфигурацию с новым vCPU и размером хранилища с помощью ID управляемого устройства Intune.|
+|[Получить результаты удаленных действий cloudPC](../api/manageddevice-getcloudpcremoteactionresults.md)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|Проверьте удаленные результаты действий, [заданные](../resources/cloudpcremoteactionresult.md) облачным КОМПЬЮТЕРом, для устройства облачного ПК.|
 
 ## <a name="properties"></a>Свойства
 
@@ -41,7 +43,7 @@ ms.locfileid: "58396944"
 |managedDeviceId|Строка|ID устройства Intune облачного компьютера.|
 |managedDeviceName|String|Имя устройства Intune облачного КОМПЬЮТЕРА.|
 |provisioningPolicyId|Строка|ID политики обеспечения облачного компьютера.|
-|provisioningPolicyName|Строка|Политика продюсинга, применяемая при обеспечении облачных компьютеров.|
+|provisioningPolicyName|String|Политика продюсинга, применяемая при обеспечении облачных компьютеров.|
 |onPremisesConnectionName|Строка|Локальное подключение, применяемого при обеспечении облачных компьютеров.|
 |servicePlanId|Строка|ID плана службы облачного КОМПЬЮТЕРА.|
 |servicePlanName|String|Имя плана службы облачного КОМПЬЮТЕРА.|
@@ -58,10 +60,12 @@ ms.locfileid: "58396944"
 |notProvisioned|Облачный КОМПЬЮТЕР не был предусмотрен.|
 |подготовка|Подготовка облачного компьютера продолжается.|
 |provisioned|Облачный компьютер является предварительным и может быть доступ к конечным пользователям.|
-|обновление|В настоящее время идет процесс повторного окантовки облачного компьютера.|
 |inGracePeriod|Облачный компьютер находится в периоде отсрочки на одну неделю до его деразвения.|
 |deprovisioning|Облачный КОМПЬЮТЕР развяжен.|
 |не удалось|Операция на облачном компьютере не удалась.|
+|provisionedWithWarnings|Облачный компьютер является предостережением и может быть доступ к конечным пользователям, но с некоторыми предупреждениями. Пользователь может продолжать использовать этот облачный КОМПЬЮТЕР.|
+|resizing|Облачный КОМПЬЮТЕР имеет размер.|
+|unknownFutureValue|Эволюционирующее значение sentinel. Не следует использовать.|
 
 ## <a name="relationships"></a>Связи
 

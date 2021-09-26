@@ -2,15 +2,15 @@
 title: 'cloudPcOnPremisesConnection: updateAdDomainPassword'
 description: Обновление пароля домена AD для успешного подключения к доменуPremisesConnection.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 9298b09db0d3016f8bbc117fdf9adfe56b7ac94e
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 41028c64e54f2149443b4ceabef41ce1a58ff04d
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262976"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766189"
 ---
 # <a name="cloudpconpremisesconnection-updateaddomainpassword"></a>cloudPcOnPremisesConnection: updateAdDomainPassword
 Пространство имен: microsoft.graph
@@ -19,7 +19,6 @@ ms.locfileid: "58262976"
 
 Обновление пароля домена Active Directory для [onPremisesConnection](../resources/cloudpconpremisesconnection.md).
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +27,7 @@ ms.locfileid: "58262976"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|CloudPC.ReadWrite.All|
+|Для приложения|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

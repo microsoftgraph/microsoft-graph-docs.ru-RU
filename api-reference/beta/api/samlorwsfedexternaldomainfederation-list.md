@@ -10,7 +10,7 @@ ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508612"
+ms.locfileid: "59766703"
 ---
 # <a name="list-samlorwsfedexternaldomainfederations"></a>Список samlOrWsFedExternalDomainFederations
 Пространство имен: microsoft.graph
@@ -27,7 +27,7 @@ ms.locfileid: "59508612"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Domain.Read.All, Domain.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение|Domain.Read.All, Domain.ReadWrite.All|
+|Для приложения|Domain.Read.All, Domain.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 

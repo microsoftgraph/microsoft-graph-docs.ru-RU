@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: b292d072ad0322e46bb9bd9da6a62da2af1d3518
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e460222a8abff0bb7d9822b00cb5da14490094e4
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59083987"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765636"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -192,6 +192,7 @@ ms.locfileid: "59083987"
 |passwordProfile|[passwordProfile](passwordprofile.md)|Задает профиль пароля для пользователя. Профиль содержит пароль пользователя. Это свойство обязательно указывать при создании пользователя. Пароль в профиле должен соответствовать минимальным требованиям, указанным в свойстве **passwordPolicies**. По умолчанию требуется надежный пароль. **ПРИМЕЧАНИЕ.** Для клиентов Azure B2C свойству **forceChangePasswordNextSignIn** должно быть присвоено значение `false` и вместо этого должны использоваться настраиваемые политики и пользовательские потоки для принудительного сброса пароля при первом входе. См. раздел [Принудительный сброс пароля при первом входе](https://github.com/azure-ad-b2c/samples/tree/master/policies/force-password-reset-first-logon).<br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `in`).|
 |pastProjects|Коллекция строк|Список предыдущих проектов пользователя. <br><br>Возвращается только с помощью оператора `$select`.|
 |postalCode|String|Почтовый индекс адреса пользователя. Формат почтового индекса зависит от страны или региона пользователя. В США для этого атрибута используется ZIP-код. Максимальная длина 40 символов.<br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).|
+| preferredDataLocation | String | Предпочитаемое расположение данных для пользователя. Дополнительные сведения см. в статье [OneDrive Online с поддержкой нескольких регионов](/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |preferredLanguage|String|Предпочитаемый язык для пользователя. Он должен быть представлен в формате ISO 639-1, например `en-US`. <br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`)|
 |preferredName|String|Предпочитаемое имя пользователя. <br><br>Возвращается только с помощью оператора `$select`.|
 |provisionedPlans|Коллекция [provisionedPlan](provisionedplan.md)|Планы, подготовленные для пользователя. Только для чтения. Значение NULL не допускается.<br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `NOT`, `ge`, `le`).|
@@ -450,73 +451,74 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 
 ```json
 {
-  "aboutMe": "string",
+  "aboutMe": "String",
   "accountEnabled": true,
-  "ageGroup": "string",
+  "ageGroup": "String",
   "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
   "birthday": "String (timestamp)",
-  "businessPhones": ["string"],
-  "city": "string",
-  "companyName": "string",
-  "consentProvidedForMinor": "string",
-  "country": "string",
+  "businessPhones": ["String"],
+  "city": "String",
+  "companyName": "String",
+  "consentProvidedForMinor": "String",
+  "country": "String",
   "createdDateTime": "String (timestamp)",
-  "creationType": "string",
-  "department": "string",
-  "displayName": "string",
+  "creationType": "String",
+  "department": "String",
+  "displayName": "String",
   "employeeHireDate": "2020-01-01T00:00:00Z",
-  "employeeId": "string",
+  "employeeId": "String",
   "employeeOrgData": {"@odata.type": "microsoft.graph.employeeOrgData"},
-  "employeeType": "string",
-  "faxNumber" : "string",
-  "givenName": "string",
+  "employeeType": "String",
+  "faxNumber" : "String",
+  "givenName": "String",
   "hireDate": "String (timestamp)",
-  "id": "string (identifier)",
+  "id": "String (identifier)",
   "identities": [{"@odata.type": "microsoft.graph.objectIdentity"}],
-  "imAddresses": ["string"],
-  "interests": ["string"],
+  "imAddresses": ["String"],
+  "interests": ["String"],
   "isResourceAccount": false,
-  "jobTitle": "string",
-  "legalAgeGroupClassification": "string",
+  "jobTitle": "String",
+  "legalAgeGroupClassification": "String",
   "licenseAssignmentStates": [{"@odata.type": "microsoft.graph.licenseAssignmentState"}],
   "lastPasswordChangeDateTime": "String (timestamp)",
-  "mail": "string",
+  "mail": "String",
   "mailboxSettings": {"@odata.type": "microsoft.graph.mailboxSettings"},
-  "mailNickname": "string",
-  "mobilePhone": "string",
-  "mySite": "string",
-  "officeLocation": "string",
-  "onPremisesDistinguishedName": "string",
-  "onPremisesDomainName": "string",
+  "mailNickname": "String",
+  "mobilePhone": "String",
+  "mySite": "String",
+  "officeLocation": "String",
+  "onPremisesDistinguishedName": "String",
+  "onPremisesDomainName": "String",
   "onPremisesExtensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
-  "onPremisesImmutableId": "string",
+  "onPremisesImmutableId": "String",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
-  "onPremisesSamAccountName": "string",
-  "onPremisesSecurityIdentifier": "string",
+  "onPremisesSamAccountName": "String",
+  "onPremisesSecurityIdentifier": "String",
   "onPremisesSyncEnabled": true,
-  "onPremisesUserPrincipalName": "string",
-  "otherMails": ["string"],
-  "passwordPolicies": "string",
+  "onPremisesUserPrincipalName": "String",
+  "otherMails": ["String"],
+  "passwordPolicies": "String",
   "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
-  "pastProjects": ["string"],
-  "postalCode": "string",
-  "preferredLanguage": "string",
-  "preferredName": "string",
+  "pastProjects": ["String"],
+  "postalCode": "String",
+  "preferredDataLocation": "String",
+  "preferredLanguage": "String",
+  "preferredName": "String",
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
-  "proxyAddresses": ["string"],
-  "responsibilities": ["string"],
-  "schools": ["string"],
+  "proxyAddresses": ["String"],
+  "responsibilities": ["String"],
+  "schools": ["String"],
   "showInAddressList": true,
   "signInSessionsValidFromDateTime": "String (timestamp)",
-  "skills": ["string"],
-  "state": "string",
-  "streetAddress": "string",
-  "surname": "string",
-  "usageLocation": "string",
-  "userPrincipalName": "string",
-  "userType": "string",
+  "skills": ["String"],
+  "state": "String",
+  "streetAddress": "String",
+  "surname": "String",
+  "usageLocation": "String",
+  "userPrincipalName": "String",
+  "userType": "String",
 
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
   "calendarGroups": [{ "@odata.type": "microsoft.graph.calendarGroup" }],

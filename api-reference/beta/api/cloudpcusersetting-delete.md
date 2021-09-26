@@ -2,15 +2,15 @@
 title: Удаление cloudPcUserSetting
 description: Удаление объекта cloudPcUserSetting.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 6f434d4536eff7361311ad20d2bc17498b700af3
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 4df590b6be7fed73ff6b01d992130e5dc5377b3c
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53207853"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763326"
 ---
 # <a name="delete-cloudpcusersetting"></a>Удаление cloudPcUserSetting
 
@@ -20,7 +20,6 @@ ms.locfileid: "53207853"
 
 Удаление [объекта cloudPcUserSetting.](../resources/cloudpcusersetting.md)
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +28,7 @@ ms.locfileid: "53207853"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|CloudPC.ReadWrite.All|
+|Для приложения|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

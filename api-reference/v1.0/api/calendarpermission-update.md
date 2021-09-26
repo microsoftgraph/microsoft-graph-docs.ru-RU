@@ -1,20 +1,22 @@
 ---
 title: Обновление календарной комиссии
 description: Обновление свойств объекта calendarpermission.
+author: Harini84
 ms.localizationpriority: medium
-author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9faf61ef7f0236e5d39d9550a8f9e6199cfe9341
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ecd2dcd942839dce2276f03db37fb81043bc0f19
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59105652"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508449"
 ---
 # <a name="update-calendarpermission"></a>Обновление calendarPermission
 
-Обновление разрешений, присвоенных существующему sharee или делегированию, с помощью соответствующего [объекта calendarPermission](../resources/calendarpermission.md) для календаря.
+Пространство имен: microsoft.graph
+
+Обновление разрешений, присвоенных существующему sharee или делегированию, с помощью соответствующего <b>[объекта calendarPermission](../resources/calendarpermission.md)</b> для календаря.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -49,7 +51,8 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {token} |
+| Авторизация | Bearer {токен}. Обязательный.  |
+| Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -68,7 +71,6 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 ### <a name="request"></a>Запрос
 
 В следующем примере изменяется уровень разрешений sharee, Adele, на `write` .
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -100,9 +102,7 @@ Content-type: application/json
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-calendarpermission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
 
 ### <a name="response"></a>Отклик
 
@@ -122,7 +122,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "L289RXhlbGVW",
+    "id": "RGVmYXVsdA==",
     "isRemovable": true,
     "isInsideOrganization": true,
     "role": "write",
@@ -148,4 +148,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-

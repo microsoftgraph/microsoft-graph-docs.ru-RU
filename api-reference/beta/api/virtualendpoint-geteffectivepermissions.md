@@ -2,15 +2,15 @@
 title: 'virtualEndpoint: getEffectivePermissions'
 description: '**GetEffectivePermissions — это функция, которая извлекает эффективные разрешения текущего пользователя, который помогает UX скрыть или отключить контент, к которому текущий пользователь не имеет доступа.**'
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: ff9eda317a29b2ceda09d1b750225a308a4db399
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 0868da27b627f50fa3c9e1c1746de5ccfe720ca4
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534174"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763088"
 ---
 # <a name="virtualendpoint-geteffectivepermissions"></a>virtualEndpoint: getEffectivePermissions
 
@@ -19,8 +19,6 @@ ms.locfileid: "53534174"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Просмотр эффективных разрешений пользователя, который в настоящее время проходит проверку подлинности. GetEffectivePermissions — это функция, которая извлекает эффективные разрешения текущего пользователя, который помогает UX скрыть или отключить контент, к которому текущий пользователь не имеет доступа.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>Разрешения
 
@@ -53,7 +51,7 @@ GET /deviceManagement/virtualEndpoint/getEffectivePermissions
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении эта функция возвращает код отклика `200 OK` и коллекцию String в теле отклика. Если у пользователя есть полные разрешения, ответ `["*"]` будет .
 

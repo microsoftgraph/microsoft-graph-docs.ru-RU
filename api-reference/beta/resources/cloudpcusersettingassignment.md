@@ -2,15 +2,15 @@
 title: тип ресурса cloudPcUserSettingAssignment
 description: Представляет определенный набор назначений параметров пользователя.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: db97ff52ff8eb7ca1ef52563d577d5076273d859
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 8924dd6339017bbe848747e8d00df49c2f4c71cd
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082190"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766952"
 ---
 # <a name="cloudpcusersettingassignment--resource-type"></a>тип ресурса cloudPcUserSettingAssignment
 
@@ -19,8 +19,6 @@ ms.locfileid: "53082190"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет определенный набор назначений параметров пользователя.
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="properties"></a>Свойства
 

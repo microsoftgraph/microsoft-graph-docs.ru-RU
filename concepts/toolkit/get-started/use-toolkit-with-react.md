@@ -3,12 +3,12 @@ title: Использование Microsoft Graph Toolkit с React
 description: Начало использования Microsoft Graph Toolkit в приложении React
 ms.localizationpriority: medium
 author: waldekmastykarz
-ms.openlocfilehash: 464542cc85b9baab8c13a68a788d28d557effcde
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b36be900db8f76ee37a7e88ae5daac452848312b
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089236"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766469"
 ---
 # <a name="use-the-microsoft-graph-toolkit-with-react"></a>Использование Microsoft Graph Toolkit с React
 
@@ -78,7 +78,7 @@ npm start
 >[!NOTE] 
 >Если вы в настоящее время используете поставщика MSAL и хотите обновить ее до поставщика MSAL2, выполните действия в статье [MSAL2 Provider.](../providers/msal2.md#migrating-from-msal-provider-to-msal2-provider)
 
-1. Откройте в редакторе кода файл **src/index.** и добавьте в список операций импорта следующее:
+1. В редакторе кода откройте **файл src/index.tsx** и в список импорта добавьте:
 
     ```TypeScript
     import { Providers } from '@microsoft/mgt-element';
@@ -266,7 +266,7 @@ Microsoft Graph Toolkit не только упрощает проверку по
 С этими изменениями файл **src/App.tsx** будет выглядеть следующим образом.
 
 ```TypeScript
-import { Providers, ProviderState } from '@microsoft/mgt';
+import { Providers, ProviderState } from '@microsoft/mgt-element';
 import { Agenda, Login } from '@microsoft/mgt-react';
 import React, { useState, useEffect } from 'react';
 import './App.css';

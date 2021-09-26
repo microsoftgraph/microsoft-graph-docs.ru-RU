@@ -1,22 +1,22 @@
 ---
 title: Перечисление категорий
-description: Список всех категорий, связанных с этим назначением.
+description: Список всех категорий, связанных с назначением.
 author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 000d3511973da64a12dfd14ed33a2c591d5babde
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e334957c900c56607e16db6f52d9a3a7b7173ccd
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59130897"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507802"
 ---
 # <a name="list-categories"></a>Перечисление категорий
 
 Пространство имен: microsoft.graph
 
-Список всех категорий, связанных с назначением.
+Список всех категорий, связанных с [назначением.](../resources/educationassignment.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -25,7 +25,7 @@ ms.locfileid: "59130897"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All | 
+|Приложение | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -53,11 +53,11 @@ GET /education/classes/{id}/assignments/{id}/categories
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["1fdf61ee-c129-4960-9b7c-8df159aa64b0"],
+  "sampleKeys": ["f4a941ff-9da6-4707-ba5b-0eae93cad0b4","9018ae7a-9953-4796-a152-4c54e0910922"],  
   "name": "get_assignment_categories"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/education/classes/a17025d0-62a8-4450-9e6e-db31d8c8feb8/assignments/1fdf61ee-c129-4960-9b7c-8df159aa64b0/categories
+GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0eae93cad0b4/assignments/9018ae7a-9953-4796-a152-4c54e0910922/categories
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-assignment-categories-csharp-snippets.md)]
@@ -95,11 +95,11 @@ Content-type: application/json
 Content-length: 873
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/education/classes('a17025d0-62a8-4450-9e6e-db31d8c8feb8')/assignments('1fdf61ee-c129-4960-9b7c-8df159aa64b0')/categories",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('f4a941ff-9da6-4707-ba5b-0eae93cad0b4')/assignments('9018ae7a-9953-4796-a152-4c54e0910922')/categories",
     "value": [
         {
-            "displayName": "Quizzes",
-            "id": "9b8f8f88-ddfc-4aad-9fe9-280513fffc74"
+            "displayName": "August Unit 2",
+            "id": "70563636-801f-440a-989e-14d417cc5c05"
         }
     ]
 }

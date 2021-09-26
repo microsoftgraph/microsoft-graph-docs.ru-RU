@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: spunukol
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: f3faf1f1fdf3b11139bccef3606826cf4bf56f8f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 667d86bb61c48170aedae3d7132eea516105a926
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089846"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766595"
 ---
 # <a name="device-resource-type"></a>Тип ресурса device
 
@@ -29,7 +29,7 @@ ms.locfileid: "59089846"
 |[Список объектов device](../api/device-list.md) | Коллекция [device](device.md)| Получение списка устройств, зарегистрированных в каталоге. |
 |[Обновление device](../api/device-update.md) | [device](device.md) |Обновление свойств, принадлежащих объекту device. |
 |[Удаление device](../api/device-delete.md) | Нет |Удаление объекта device. |
-|[Список memberOf](../api/device-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Список групп, в которые устройство входит напрямую. |
+|[Перечисление memberOf](../api/device-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Список групп, в которые устройство входит напрямую. |
 |[Список экземпляров registeredOwner](../api/device-list-registeredowners.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей, которые относятся к зарегистрированным владельцам устройства, из свойства навигации registeredOwners.|
 |[Перечисление registeredUsers](../api/device-list-registeredusers.md) |Коллекция [directoryObject](directoryobject.md)| Получение зарегистрированных пользователей устройства из свойства навигации registeredUsers.|
 |[checkMemberObjects](../api/device-checkmemberobjects.md) | Коллекция String | Проверьте членство в списке групп, ролей каталогов или объектов административных единиц. |
@@ -46,14 +46,14 @@ ms.locfileid: "59089846"
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|accountEnabled|Логический| Если учетная запись обеспечена — `true`, в противном случае — `false`. Обязательный. Значение по умолчанию: `true`. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `in`).|
+|accountEnabled|Логический| Если учетная запись обеспечена — `true`, в противном случае — `false`. Обязательно. Значение по умолчанию: `true`. <br/><br/> Поддерживает `$filter` (`eq`, `ne`, `NOT`, `in`). Только вызыватели в ролях глобального администратора и администратора облачных устройств могут установить это свойство.|
 |alternativeSecurityIds|Коллекция [alternativeSecurityId](alternativeSecurityId.md)| Только для внутреннего использования. Значение null не допускается. Поддерживает `$filter` (`eq`, `NOT`, `ge`, `le`).|
 |approximateLastSignInDateTime|DateTimeOffset| Тип timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. Поддерживает `$filter` `eq` `ne` (, `NOT` , `ge` , , , ) `le` и `$orderBy` . |
 |complianceExpirationDateTime|DateTimeOffset| Время, когда устройство больше не считается совместимым. Тип timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. |
 |deviceId|String| Уникальный идентификатор, задаваемый службой Azure Device Registration Service при регистрации. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `startsWith`).|
 |deviceMetadata|String| Только для внутреннего использования. Установите значение `null`. |
 |deviceVersion|Int32| Только для внутреннего использования. |
-|displayName|Строка|Отображаемое имя устройства. Обязательный параметр. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`, `$search`) и `$orderBy`.  |
+|displayName|String|Отображаемое имя устройства. Обязательный параметр. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`, `$search`) и `$orderBy`.  |
 |id|String|Уникальный идентификатор устройства. Наследуется из [directoryObject](directoryobject.md). Ключ, значение null не допускается. Только для чтения. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `in`). |
 |isCompliant|Boolean|`true` если устройство соответствует политикам управления мобильными устройствами(MDM); в противном `false` случае . Только для чтения. Это может быть обновлено intune только для любого типа ОС устройства или утвержденного приложения [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows устройств ОС. Поддерживает `$filter` (`eq`, `ne`, `NOT`).|
 |isManaged|Boolean|`true` если устройство управляется приложением управления мобильными устройствами (MDM); в противном `false` случае . Это может быть обновлено intune только для любого типа ОС устройства или утвержденного приложения [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows устройств ОС. Поддерживает `$filter` (`eq`, `ne`, `NOT`). |
@@ -66,10 +66,10 @@ ms.locfileid: "59089846"
 |operatingSystemVersion|Строка|Версия операционной системы на устройстве. Обязательный параметр. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `startsWith`). |
 |physicalIds|Коллекция String| Только для внутреннего использования. Значение null не допускается. Поддерживает `$filter` (`eq`, `NOT`, `ge`, `le`, `startsWith`). |
 |profileType|deviceProfileType|Тип профиля устройства. Возможные значения: `RegisteredDevice` (по умолчанию), `SecureVM` , , `Printer` `Shared` `IoT` .|
-|systemLabels|Коллекция String| Список меток, применяемых к устройству системой. |
+|systemLabels|Коллекция объектов string| Список меток, применяемых к устройству системой. |
 |trustType|String| Тип доверия для присоединенного устройства. Только для чтения. Возможные значения: (указывает на приведение собственных личных устройств), (облачные только присоединились к устройствам), (локальное доменное соединялось с устройствами, присоединив их к `Workplace`  `AzureAd` Azure `ServerAd` AD). Дополнительные сведения см. в статье [Общие сведения об управлении устройствами в Azure Active Directory](/azure/active-directory/device-management-introduction). |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для устройства. Только для чтения. Допускается значение null.|

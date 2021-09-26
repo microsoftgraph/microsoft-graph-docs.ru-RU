@@ -1,24 +1,26 @@
 ---
 title: тип ресурса calendarPermission
 description: Разрешения пользователя, с которым общий календарь.
+author: Harini84
 ms.localizationpriority: medium
-author: sochowdh
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 7d98bfb91cc1502fa8b2ae84027d824210f2010a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 927319bfa02cca61a195fd388507036c72de8f1c
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59027192"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765216"
 ---
 # <a name="calendarpermission-resource-type"></a>тип ресурса calendarPermission
 
 Пространство имен: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Разрешения пользователя, с которым календарь был общим или делегирован в клиенте Outlook.
 
-Получить, обновить и удалить разрешения календаря поддерживается от имени только владельца календаря.
+Список, создание, получения, обновления и удаления разрешений календаря поддерживается от имени только владельца календаря.
 
 Получение разрешений календаря календаря от имени sharee или делегата возвращает пустой набор разрешений календаря.
 
@@ -28,6 +30,8 @@ ms.locfileid: "59027192"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
+| [Перечисление](../api/calendar-list-calendarpermissions.md) | [calendarPermission](calendarpermission.md) | Получите коллекцию объектов calendarPermission, описывающих удостоверения и роли пользователей, с которыми указанный календарь был общим или делегирован. |
+| [Создание](../api/calendar-post-calendarpermissions.md) | [calendarPermission](calendarpermission.md) | Создание объекта calendarPermission. |
 | [Get calendarPermission](../api/calendarpermission-get.md) | [calendarPermission](calendarpermission.md) | Чтение свойств и связей объекта calendarPermission. |
 | [Обновление](../api/calendarpermission-update.md) | [calendarPermission](calendarpermission.md) | Обновление объекта calendarPermission. |
 | [удаление](../api/calendarpermission-delete.md); | Нет | Удаление объекта calendarPermission. |
@@ -38,7 +42,7 @@ ms.locfileid: "59027192"
 |:-------------|:------------|:------------|
 |allowedRoles|[коллекция calendarRoleType](#calendarroletype-values)| Список разрешенных уровней разрешений для календаря. Возможные значения: `none`, `freeBusyRead`, `limitedRead`, `read`, `write`, `delegateWithoutPrivateEventAccess`, `delegateWithPrivateEventAccess`, `custom`.|
 |emailAddress|[emailAddress](emailaddress.md)| Представляет долю или делегат, у которого есть доступ к календарю. Для sharee "Моя организация" свойство **адресов** является null. Только для чтения. |
-|id|String| Уникальный идентификатор пользователя (sharee или delegate), с которым был разделен календарь. Только для чтения.|
+|id|Строка| Уникальный идентификатор пользователя (sharee или delegate), с которым был разделен календарь. Только для чтения.|
 |isInsideOrganization|Boolean| True, если пользователь в контексте (sharee или delegate) находится внутри той же организации, что и владелец календаря.|
 |isRemovable|Логический| `True` если пользователь может быть удален из списка участников или делегатов для указанного календаря, в `false` противном случае. Пользователь "Моя организация" определяет разрешения, которые другие пользователи организации имеют в заданном календаре. Нельзя удалить "Моя организация" в качестве sharee в календаре.|
 |role|[calendarRoleType](#calendarroletype-values)| Текущий уровень разрешений для делиться календарем или делегировать. |
@@ -87,4 +91,3 @@ ms.locfileid: "59027192"
   "section": "documentation",
   "tocPath": ""
 }-->
-

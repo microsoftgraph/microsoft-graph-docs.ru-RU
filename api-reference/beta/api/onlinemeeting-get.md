@@ -2,15 +2,15 @@
 title: Get onlineMeeting
 description: Извлечение свойств и связей объекта onlineMeeting.
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 97a87a592651fd963f979ebb14078b02a6cfe88d
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 5290eb9b5868de908cef6d26404691bfe2d53ebe
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58452885"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767414"
 ---
 # <a name="get-onlinemeeting"></a>Get onlineMeeting
 
@@ -21,63 +21,71 @@ ms.locfileid: "58452885"
 Извлечение свойств и связей [объекта onlineMeeting.](../resources/onlinemeeting.md)
 
 Например, вы можете:
-- Сведения о onlineMeeting с помощью [VideoTeleconferenceId,](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid) [ID](#example-2-retrieve-an-online-meeting-by-meeting-id)собрания или [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
-- Используйте путь, чтобы получить отчет участника о событии `/attendeeReport` в прямом эфире, как показано [в примере 4](#example-4-retrieve-the-attendee-report-of-a-live-event).
-- Используйте пути и пути для получения записей живого события, как `/recording` `/alternativeRecording` показано [в примере 5](#example-5-retrieve-the-recording-of-a-live-event).
-- Используйте путь `/meetingAttendanceReport` для получения отчета о посещаемости для запланированного собрания, как показано в [примере 6](#example-6-retrieve-the-attendance-report-of-a-meeting).
 
-> [!NOTE]
->- Отчеты о посещаемости собраний доступны для собраний, не имеющих живых событий, и доступны только по завершению собрания.
->- Только организатор собрания может получить доступ к отчетам о посещаемости собраний.
->- Записи и отчеты участников доступны только для живых событий и доступны только по завершению живого события.
->- Только организатор событий в прямом эфире может получить доступ к отчетам и записям участников.
->- Срок действия ссылок на скачивание отчетов и записей участников событий в прямом эфире истекает через 60 секунд.
+- Сведения о onlineMeeting с помощью [VideoTeleconferenceId,](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid) [ID](#example-2-retrieve-an-online-meeting-by-meeting-id)собрания или [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
+- Используйте путь, чтобы получить отчет участника о событии в прямом эфире в виде ссылки на скачивание, как показано `/attendeeReport` [в примере 4](#example-4-fetch-attendee-report-of-a-live-event).
+- Используйте пути и пути для получения записей живого события в виде ссылки на скачивание, как показано `/recording` `/alternativeRecording` в [примере 5](#example-5-fetch-recording-of-a-live-event).
+- Используйте `/meetingAttendanceReport` путь, чтобы получить отчет о посещаемости запланированного собрания, как показано [в примере 6](#example-6-fetch-attendance-report-of-an-online-meeting).
+
+Отчет о посещаемости собрания, отчет об участниках событий в прямом эфире и записи живых событий являются артефактами собраний в Интернете. Подробные сведения см. [в материале Online meeting artifacts and permissions.](/graph/cloud-communications-online-meeting-artifacts)
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения                        | Разрешения (в порядке повышения привилегий)           |
-| :------------------------------------- | :---------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | OnlineMeetings.Read, OnlineMeetings.ReadWrite         |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                        |
-| Для приложений                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All* |
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                            |
+|:---------------------------------------|:---------------------------------------------------------------------------------------|
+| Делегированные (рабочая или учебная учетная запись)     | OnlineMeetingArtifact.Read.ALl, OnlineMeetings.Read, OnlineMeetings.ReadWrite          |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                         |
+| Для приложения                            | OnlineMeetingArtifact.Read.ALl, OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All  |
 
-> [!IMPORTANT]
-> \*Администраторы должны [](/graph/cloud-communication-online-meeting-application-access-policy) создать политику доступа к приложениям и предоставить ее пользователю, уполномочив приложение, настроенного в политике, получить онлайн-собрание от имени этого пользователя (пользовательский ID, указанный в пути запроса).
+Чтобы использовать разрешение приложения для этого API, [](/graph/cloud-communication-online-meeting-application-access-policy) администраторы клиентов должны создать политику доступа к приложениям и предоставить ее пользователю для авторизации приложения, настроенного в политике, для получения артефактов собраний в Интернете от имени этого пользователя (с пользовательским ИД, указанным в пути запроса).
+
+> [!CAUTION]
+> Только _разрешения OnlineMeetingArtifact.Read.All_ необходимы, если вы извлекаете артефакты собраний в Интернете. Артефакты собраний можно получить без них до 15 января **2022 г.** Подробные сведения см. [в материале Online meeting artifacts and permissions.](/graph/cloud-communications-online-meeting-artifacts)
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Чтобы получить onlineMeeting с помощью ID собрания с делегированием и разрешением приложения:
+Чтобы получить **onlineMeeting с** помощью ID собрания с делегированной `/me` () и приложением `/users/{userId}` () разрешения:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}
 GET /users/{userId}/onlineMeetings/{meetingId}
 ```
 
-Чтобы получить onlineMeeting с **помощью videoTeleconferenceId** с разрешения приложения:
+Чтобы получить **onlineMeeting с** **помощью videoTeleconferenceId** с разрешения приложения:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 ```
 
-Чтобы получить onlineMeeting с **помощью joinWebUrl** с делегированием и разрешением приложения:
+Чтобы получить **onlineMeeting с** помощью **joinWebUrl** с делегированной () и `/me` приложением `/users/{userId}` () разрешения:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ```
 
-Чтобы получить отчет участника о событии в прямом эфире с делегированием и разрешением приложения:
-<!-- { "blockType": "ignored" } -->
+Чтобы получить отчет о посещаемости собрания в Интернете с делегированной () и `/me` приложением `/users/{userId}` () разрешения:
+<!-- { "blockType": "ignored" }-->
+
+```http
+GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
+GET /users/{userId}/onlineMeetings/{meetingId}/meetingAttendanceReport
+```
+
+Чтобы получить отчет участника о событии в прямом эфире с делегированием () и `/me` разрешением приложения `/users/{userId}` () :
+<!-- { "blockType": "ignored" }-->
+
 ```http
 GET /me/onlineMeetings/{meetingId}/attendeeReport
 GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
 ```
 
-Чтобы получить записи живого события с делегированием и разрешением приложения:
-<!-- { "blockType": "ignored" } -->
+Для получения записей живого события с делегированием () и `/me` разрешения приложения `/users/{userId}` ():
+<!-- { "blockType": "ignored" }-->
+
 ```http
 GET /me/onlineMeetings/{meetingId}/recording
 GET /me/onlineMeetings/{meetingId}/alternativeRecording
@@ -85,17 +93,11 @@ GET /users/{userId}/onlineMeetings/{meetingId}/recording
 GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 ```
 
-Чтобы получить отчет о посещаемости собрания с делегированным разрешением:
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
-```
-
 > [!NOTE]
 >- Путь `/app` является устаревшим. В дальнейшем используйте путь `/communications`.
 >- `userId` — это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в [политике доступа к приложениям.](/graph/cloud-communication-online-meeting-application-access-policy)
 >- `meetingId`является **id** объекта [onlineMeeting.](../resources/onlinemeeting.md)
-> - **VideoTeleconferenceId** создается для лицензированных пользователей Cloud-Video-Interop и может быть найден в [объекте onlineMeeting.](../resources/onlinemeeting.md) Дополнительные сведения можно получить в ID конференции [VTC.](/microsoftteams/cloud-video-interop-for-teams-set-up)
+> - **VideoTeleconferenceId** создается для лицензированных пользователей Cloud-Video-Interop и может быть найден в [объекте onlineMeeting.](../resources/onlinemeeting.md) Подробнее см. в [материале VTC conference id.](/microsoftteams/cloud-video-interop-for-teams-set-up)
 >- `joinWebUrl` должен быть закодирован URL-адрес.
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -113,15 +115,14 @@ GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-При успешном выполнении этот метод возвращает код отклика `200 OK`. Метод также включает в себя один из следующих способов:
 
-- Если вы получаете онлайн-собрание на основе ID собрания, **videoTeleconferenceId** или **joinWebUrl,** этот метод также возвращает [объект onlineMeeting](../resources/onlinemeeting.md) в теле отклика.
-- Если вы получаете отчет участника или запись собрания в режиме онлайн, этот метод также возвращает заготку, которая указывает URI на отчет или запись `Location` участника, соответственно.
+В случае успешного выполнения этот метод возвращает код отклика `200 OK`. Ответ также включает в себя один из следующих действий:
+
+- Если вы извлекаете онлайн-собрание, выполняв ID, **videoTeleconferenceId** или **присоединившись кWebUrl,** этот метод возвращает [объект onlineMeeting](../resources/onlinemeeting.md) в теле отклика.
+- Если вы извлекете отчет о посещаемости собрания в Интернете, этот метод возвращает объект [meetingAttendanceReport](../resources/meetingAttendanceReport.md) в теле ответа.
+- Если вы извлекли отчет участника или запись живого события, этот метод возвращает заготку, которая указывает URI в отчет или запись `Location` участника, соответственно.
 
 ## <a name="examples"></a>Примеры
-
-> [!NOTE]
-> Объекты ответа из следующих примеров были сокращены для читаемости. При фактическом вызове будут возвращены все свойства.
 
 ### <a name="example-1-retrieve-an-online-meeting-by-videoteleconferenceid"></a>Пример 1. Извлечение собрания в Интернете с помощью VideoTeleconferenceId
 
@@ -155,6 +156,8 @@ GET https://graph.microsoft.com/beta/communications/onlineMeetings/?$filter=Vide
 ---
 
 #### <a name="response"></a>Отклик
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 
 <!-- {
   "blockType": "response",
@@ -257,6 +260,8 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 #### <a name="response"></a>Отклик
 
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
+
 ```json
 {
     "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy",
@@ -314,6 +319,8 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 #### <a name="response"></a>Отклик
 
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
+
 ```json
 {
     "value": [
@@ -356,166 +363,111 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 }
 ```
 
-### <a name="example-4-retrieve-the-attendee-report-of-a-live-event"></a>Пример 4. Извлечение отчета участника о событии в прямом эфире
+### <a name="example-4-fetch-attendee-report-of-a-live-event"></a>Пример 4. Извлечение отчета участника о событии в прямом эфире
+
 В следующем примере показан запрос на скачивание отчета об участниках.
 
 #### <a name="request"></a>Запрос
-В следующем запросе используется маркер пользователя.
-<!-- { "blockType": "ignored" } -->
-```http
-GET https://graph.microsoft.com/beta/me/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/attendeeReport
-```
 
-В следующем запросе используется маркер приложения.
-# <a name="http"></a>[HTTP](#tab/http)
+В следующем запросе используется делегированная разрешения.
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["dc74d9bb-6afe-433d-8eaa-e39d80d3a647", "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2"],
-  "name": "get-attendeeReport-app-token"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/attendeeReport
-```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-attendeereport-app-token-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-attendeereport-app-token-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-attendeereport-app-token-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-attendeereport-app-token-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a>Отклик
-<!-- {
-  "blockType": "response"
-} -->
-```http
-HTTP/1.1 302 Found
-Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/attendeeReport
-```
-
-### <a name="example-5-retrieve-the-recording-of-a-live-event"></a>Пример 5. Извлечение записи живого события
-В следующем примере показан запрос на скачивание записи.
-
-#### <a name="request"></a>Запрос
-В следующем запросе используется маркер пользователя.
-<!-- { "blockType": "ignored" } -->
-```http
-GET https://graph.microsoft.com/beta/me/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/recording
-```
-
-В следующем запросе используется маркер приложения.
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "sampleKeys": ["dc74d9bb-6afe-433d-8eaa-e39d80d3a647", "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2"],
-  "name": "get-recording-app-token"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/recording
-```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-recording-app-token-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-recording-app-token-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-recording-app-token-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-recording-app-token-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a>Отклик
-<!-- {
-  "blockType": "response"
-} -->
-```http
-HTTP/1.1 302 Found
-Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/recording
-```
-
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Get onlineMeeting",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->
-
-### <a name="example-6-retrieve-the-attendance-report-of-a-meeting"></a>Пример 6. Извлечение отчета о посещаемости собрания
-В следующем примере показан запрос на получения отчета о посещаемости собрания.
-
-#### <a name="request"></a>Запрос
-
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "sampleKeys": ["dc74d9bb-6afe-433d-8eaa-e39d80d3a647", "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy"],
-  "name": "get-meetingAttendanceReport"
+  "name": "get_attendee_report"
 }-->
 
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
+```http
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/attendeeReport
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-meetingattendancereport-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-meetingattendancereport-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+В следующем запросе используется разрешение приложения.
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-meetingattendancereport-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-meetingattendancereport-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
----
+<!-- { "blockType": "ignored" }-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/attendeeReport
+```
 
 #### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.meetingAttendanceReport"
+  "name": "get_attendee_report"
+} -->
+
+```http
+HTTP/1.1 302 Found
+Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/attendeeReport
+```
+
+### <a name="example-5-fetch-recording-of-a-live-event"></a>Пример 5. Извлечение записи живого события
+
+В следующем примере показан запрос на скачивание записи.
+
+#### <a name="request"></a>Запрос
+
+В следующем запросе используется делегированная разрешения.
+<!-- {
+  "blockType": "request",
+  "name": "get_live_event_recording"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/recording
+```
+
+В следующем запросе используется разрешение приложения.
+<!-- { "blockType": "ignored" }-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/recording
+```
+
+#### <a name="response"></a>Отклик
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "get_live_event_recording"
+} -->
+
+```http
+HTTP/1.1 302 Found
+Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/recording
+```
+
+### <a name="example-6-fetch-attendance-report-of-an-online-meeting"></a>Пример 6. Извлечение отчета о посещаемости собрания в Интернете
+
+В следующем примере показан запрос на получения отчета о посещаемости собрания.
+
+#### <a name="request"></a>Запрос
+
+В следующем запросе используется делегированная разрешения.
+<!-- {
+  "blockType": "request",
+  "name": "get_attendance_report"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
+```
+
+В следующем запросе используется разрешение приложения.
+<!-- { "blockType": "ignored" }-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
+```
+
+#### <a name="response"></a>Отклик
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.meetingAttendanceReport",
+  "name": "get_attendance_report"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1876
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('dc74d9bb-6afe-433d-8eaa-e39d80d3a647')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy')/meetingAttendanceReport/$entity",
@@ -564,7 +516,7 @@ Content-Length: 1876
                 }
             ]
         }
-    ]
+    ],
+    "totalParticipantCount": 2
 }
-
 ```

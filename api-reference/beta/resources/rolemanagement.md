@@ -1,16 +1,16 @@
 ---
 title: тип ресурса roleManagement
 description: Ресурс управления ролью RBAC
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 3997ccd1d08637a7662b6f7c2f21712936259337
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: e401d0442c25ffcacb5887a0033c1d149ed51380
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534027"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766749"
 ---
 # <a name="rolemanagement-resource-type"></a>тип ресурса roleManagement
 
@@ -26,13 +26,11 @@ API управления единой ролью в настоящее врем�
 - directory (роли каталога Azure AD)
 - управление правами (управление правами Azure AD)
  
-Дополнительные сведения см. в указанных ниже статьях. 
+Дополнительные сведения см. в статьях: 
 * [Роли в Microsoft 365, в том числе Azure AD, роли для служб и межуслуковые](/azure/active-directory/roles/concept-understand-roles#how-azure-ad-roles-are-different-from-other-microsoft-365-roles) 
 * [Разрешения роли администратора в Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 * [Делегирования и ролей в управлении правами Azure AD.](/azure/active-directory/governance/entitlement-management-delegate)
 * [Управление доступом на основе ролей (RBAC) в Microsoft Intune](/mem/intune/fundamentals/role-based-access-control)
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="methods"></a>Методы
 

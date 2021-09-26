@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: cda8c7fb4fb6fc8902d53a96d4c2cad443dd9604
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 66a7cac0fcdf63a09daa190549ff442304c1d29d
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59085485"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766490"
 ---
 # <a name="update-onlinemeeting"></a>Обновление onlineMeeting
 
@@ -26,35 +26,33 @@ ms.locfileid: "59085485"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | OnlineMeetings.ReadWrite                    |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | OnlineMeetings.ReadWrite.All*               |
+| Для приложений                            | OnlineMeetings.ReadWrite.All                |
 
-> [!IMPORTANT]
-> \*Администраторы должны [](/graph/cloud-communication-online-meeting-application-access-policy) создать политику доступа к приложениям и предоставить ее пользователю, уполномочив приложение, настроенное в политике, обновить онлайн-собрание от имени этого пользователя (пользовательский ID, указанный в пути запроса).
+Чтобы использовать разрешение приложения для этого API, [](/graph/cloud-communication-online-meeting-application-access-policy) администраторы клиентов должны создать политику доступа к приложениям и предоставить ее пользователю для авторизации приложения, настроенного в политике, для получения артефактов собраний в Интернете от имени этого пользователя (с пользовательским ИД, указанным в пути запроса).
 
 ## <a name="http-request"></a>HTTP-запрос
-Обновление указанного onlineMeeting путем собрания ID с делегированным маркером:
+
+Обновление указанного **onlineMeeting** с помощью ID собрания с делегированием () и разрешением `/me` приложения `/users/{userId}/` () :
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/onlineMeetings/{meetingId}
-```
-
-Чтобы обновить указанный onlineMeeting, выдав ID с помощью маркера приложения:
-<!-- { "blockType": "ignored" } -->
-```http
 PATCH /users/{userId}/onlineMeetings/{meetingId}
 ```
 
 > [!NOTE]
+>
 > - `userId` — это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в [политике доступа к приложениям.](/graph/cloud-communication-online-meeting-application-access-policy)
 > - `meetingId`является **id** объекта [onlineMeeting.](../resources/onlinemeeting.md)
 
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя          | Описание                 |
 | :------------ | :-------------------------- |
 | Авторизация | Bearer {токен}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
+
 В следующей таблице перечислены свойства, которые можно обновить. В орган запроса включаем только свойства, которые требуют обновления, за следующими исключениями:
 
 - Для настройки даты начала или окончания собрания в интернете всегда требуются свойства **startDateTime** и **endDateTime** в теле запроса.
@@ -62,7 +60,6 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 - Для настройки **поля** участников  свойства участников, например добавления или удаления участника собрания, всегда требуется полный список участников в теле запроса.
 
 Последний столбец указывает, будет ли обновление этого свойства вступает в силу для выполнения собрания.
-
 
 | Свойство                    | Тип                                                       | Описание                                                                         | Применяется к на ходу собраний?    |
 |-----------------------------|------------------------------------------------------------|-------------------------------------------------------------------------------------|------------------------------|
@@ -72,17 +69,20 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 | participants                | [meetingParticipants](../resources/meetingparticipants.md) | Участники, связанные с онлайн-собранием. Обновления могут быть только у участников. | Нет                           |
 | isEntryExitAnnounced        | Логический                                                    | Следует ли объявлять о том, когда звонители присоединяются или уходят.                              | Да                          |
 | lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbyBypassSettings.md) | Указывает, какие участники могут обойти вестибюль собрания.                          | Да                          |
-| allowedPresenters           | onlineMeetingPresenters                                    | Указывает, кто может быть презентовщиком на собрании.                                      | Да, за исключением случаев, когда значение `roleIsPresenter` |
-| allowAttendeeToEnableCamera | Boolean                                                    | Указывает, могут ли участники включить камеру.                               | Да                          |
+| allowedPresenters           | onlineMeetingPresenters                                    | Указывает, кто может быть презентовщиком на собрании.                                      | Да |
+| allowAttendeeToEnableCamera | Логический                                                    | Указывает, могут ли участники включить камеру.                               | Да                          |
 | allowAttendeeToEnableMic    | Логический                                                    | Указывает, могут ли участники включить микрофон.                           | Да                          |
 | allowMeetingChat            | meetingChatMode                                            | Указывает режим чата собраний.                                                 | Да                          |
-| allowTeamworkReactions      | Boolean                                                    | Указывает, Teams для собрания включены ли Teams реакции.                      | Да                          |
+| allowTeamworkReactions      | Логический                                                    | Указывает, Teams для собрания включены ли Teams реакции.                      | Да                          |
 
 > [!NOTE]
-> Список возможных значений для **allowedPresenters** и **allowMeetingChat** см. [в onlineMeeting.](../resources/onlinemeeting.md)
+>
+>- Список возможных значений для **allowedPresenters** и **allowMeetingChat** см. [в onlineMeeting.](../resources/onlinemeeting.md)
+>- При обновлении значения **allowedPresenters** включай полный список участников с набором указанных участников в `roleIsPresenter`  `role` `presenter` тексте запроса.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [onlineMeeting](../resources/onlinemeeting.md) в тексте отклика.
+
+В случае успешной работы этот метод возвращает код ответа и обновленный `200 OK` [объект onlineMeeting](../resources/onlinemeeting.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

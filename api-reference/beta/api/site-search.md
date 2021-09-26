@@ -2,16 +2,16 @@
 author: JeremyKelley
 description: Поиск сайтов, соответствующих указанным ключевым словам, в клиенте SharePoint.
 ms.date: 09/10/2017
-title: Поиск сайтов SharePoint по ключевому слову
-localization_priority: Normal
+title: Поиск SharePoint по ключевому слову
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 778da0c46168e816fcdafa806b33b1e734345a43
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 315fb51c86ec3054982e756fed8da7db63b74137
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044510"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764635"
 ---
 # <a name="search-for-sites"></a>Поиск сайтов
 
@@ -19,7 +19,9 @@ ms.locfileid: "48044510"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Выполните поиск в клиенте SharePoint для [сайтов][] , которые совпадают с предоставленными ключевыми словами.
+Поиск по клиенту SharePoint [сайтов, которые][] соответствуют предоставленным ключевым словам.
+
+Единственное свойство, которое работает для **сортировки, создаетсяDateTime**. Фильтр поиска — это бесплатный текстовый поиск, использующий несколько свойств при поиске результатов поиска.
 
 [сайтов]: ../resources/site.md
 
@@ -33,34 +35,62 @@ ms.locfileid: "48044510"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.
 |Для приложений                            | Sites.Read.All, Sites.ReadWrite.All
 
+>**Примечание.** Этот метод не поддерживает разрешение приложений Sites.Selected.
+
 ## <a name="http-request"></a>HTTP-запрос
-```http
-GET /sites?$search={query}
+
+<!-- { "blockType": "ignored" } -->
+
+``` http
+GET /sites?search={query}
 ```
+
+## <a name="request-headers"></a>Заголовки запросов
+|Имя|Описание|
+|:---|:---|
+|Авторизация|Bearer {токен}. Обязательный.|
+
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
+
+## <a name="response"></a>Отклик
+
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` сайта в тексте отклика. [](../resources/site.md)
+
+## <a name="examples"></a>Примеры
+
+### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "search-sites", "scopes": "service.sharepoint sites.readwrite.all" } -->
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/sites?$search={query}
+<!-- {
+  "blockType": "request",
+  "name": "list_permission"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/sites?search={query}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/search-sites-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-permission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/search-sites-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-permission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/search-sites-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-permission-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-permission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="response"></a>Отклик
-
+### <a name="response"></a>Отклик
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
 ```http
@@ -88,10 +118,8 @@ Content-type: application/json
   ]
 }
 ```
->**Примечание:** Единственное свойство, которое подходит для сортировки, — **createdDateTime**. Фильтр поиска — это поиск с произвольным текстом, который использует несколько свойств при получении результатов поиска.
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
@@ -99,7 +127,4 @@ Content-type: application/json
   "tocPath": "Sites/Search",
   "suppressions": [
   ]
-}
--->
-
-
+} -->

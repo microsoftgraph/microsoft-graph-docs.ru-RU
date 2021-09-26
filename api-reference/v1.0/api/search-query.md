@@ -1,16 +1,16 @@
 ---
 title: 'объект поиска: запрос'
-description: Выполняет запрос, указанный в теле запроса. Результаты поиска предоставляются в ответе.
+description: Выполняет запрос, указанный в теле запроса. Результаты поиска предоставляются в ответе
 ms.localizationpriority: medium
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 3eead1fc16f99aebf81b0053d90cef06d05bde6d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a8271e5ff88616a2e6b91561c0bd278462eafc83
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59015765"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59507972"
 ---
 # <a name="searchentity-query"></a>объект поиска: запрос
 
@@ -162,11 +162,13 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a>Дополнительные материалы
+## <a name="see-also"></a>См. также
 - Поиск [сообщений почты](/graph/search-concept-messages)
 - События [календаря поиска](/graph/search-concept-events)
 - Поиск контента в SharePoint и OneDrive[(файлы, списки и сайты)](/graph/search-concept-files)
 - Пользовательские [типы поиска (Graph соединители)](/graph/search-concept-custom-types) данных
+- [Сортировка](/graph/search-concept-sort) результатов поиска
+- Использование [агрегаций для](/graph/search-concept-aggregations) уточнения результатов поиска
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

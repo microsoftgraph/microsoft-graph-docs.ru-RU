@@ -1,16 +1,16 @@
 ---
 title: Получение schemaExtension
 description: Получите свойства указанного определения схемыExtension.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: bb1cd6e7869faaf67e378a2e24709226c0afc14f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 40a8c9a413d35b2f9817d673bedb3e90e3a7d00b
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051993"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766854"
 ---
 # <a name="get-schemaextension"></a>Получение schemaExtension
 
@@ -28,15 +28,13 @@ ms.locfileid: "52051993"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | User.Read, Application.Read.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Application.Read.All |
+|Для приложения | Application.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /schemaExtensions/{id}
 ```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -51,7 +49,7 @@ GET /schemaExtensions/{id}
 
 В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект schemaExtension](../resources/schemaextension.md) в тексте ответа.
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -80,8 +78,8 @@ GET https://graph.microsoft.com/beta/schemaExtensions/graphlearn_test
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+Ниже представлен пример ответа. Примечание: показанный здесь объект ответа может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,7 +88,6 @@ GET https://graph.microsoft.com/beta/schemaExtensions/graphlearn_test
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
     "id":"graphlearn_test",

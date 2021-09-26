@@ -2,15 +2,15 @@
 title: тип ресурса cloudPcOnPremisesConnectionStatusDetails
 description: Сведения о состоянии локального подключения облачного КОМПЬЮТЕРА.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 7ef9847190fb851482d29535d0709f3d74bbf3aa
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 3a0d584b035fc0c25a4fe8b9cf3b790d0d3c5a0d
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722180"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766420"
 ---
 # <a name="cloudpconpremisesconnectionstatusdetails-resource-type"></a>тип ресурса cloudPcOnPremisesConnectionStatusDetails
 
@@ -19,8 +19,6 @@ ms.locfileid: "50722180"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Сведения о состоянии [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).
-
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="properties"></a>Свойства
 

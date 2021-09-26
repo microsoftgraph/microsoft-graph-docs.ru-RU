@@ -2,15 +2,15 @@
 title: Обновление cloudPcUserSetting
 description: Обновление свойств объекта cloudPcUserSetting.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: db17aa8410016ab713a9434da99c5d6ba0628881
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 042a5b6c77c520800d6fb43c09c0bddf0d82f8d3
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53207805"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765503"
 ---
 # <a name="update-cloudpcusersetting"></a>Обновление cloudPcUserSetting
 
@@ -20,8 +20,6 @@ ms.locfileid: "53207805"
 
 Обновление свойств объекта [cloudPcUserSetting.](../resources/cloudpcusersetting.md)
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -30,7 +28,7 @@ ms.locfileid: "53207805"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|CloudPC.ReadWrite.All|
+|Для приложения|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -58,9 +56,9 @@ PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Имя параметра, отображаемая в пользовательском интерфейсе.|
-|localAdminEnabled|Логический|Чтобы включить локальный параметр администрирования, измените этот параметр на `True` .  |
-|selfServiceEnabled|Логический|Чтобы включить параметр самообслуживки, измените этот параметр на `True` . |
+|displayName|Строка|Имя параметра, отображаемая в пользовательском интерфейсе.|
+|localAdminEnabled|Boolean|Чтобы включить локальный параметр администрирования, измените этот параметр на `True` .  |
+|selfServiceEnabled|Boolean|Чтобы включить параметр самообслуживки, измените этот параметр на `True` . |
 |lastModifiedDateTime|DateTimeOffset|Последняя дата и время изменения параметра. Тип Timestamp представляет сведения о дате и времени с помощью формата ISO 8601 и всегда находится во времени UTC. Например, полночь UTC 1 января 2014 г. выглядит так: '2014-01-01T00:00:00Z'. |
 
 

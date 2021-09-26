@@ -1,16 +1,16 @@
 ---
 title: Получить oAuth2PermissionGrant
 description: Извлечение свойств и связей одного oAuth2PermissionGrant, представляющего делегированную лицензию.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 05a21be27e0df9c408134556b38aa509b1881350
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 167588507b42428500ebcef3e578b7123b0183ec
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038364"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767197"
 ---
 # <a name="get-a-delegated-permission-grant-oauth2permissiongrant"></a>Получить делегированную субсидию разрешений (oAuth2PermissionGrant)
 
@@ -44,7 +44,7 @@ GET /oauth2PermissionGrants/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 

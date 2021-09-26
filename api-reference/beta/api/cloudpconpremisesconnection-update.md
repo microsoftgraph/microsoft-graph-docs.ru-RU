@@ -2,15 +2,15 @@
 title: Обновление cloudPcOnPremisesConnection
 description: Обновление свойств объекта cloudPcOnPremisesConnection.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: fa4e7470b607ff75df51de4ce978002ce4d59af1
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 26e856dae2e1c34b615330809c0cd4fe26398d36
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50158172"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766462"
 ---
 # <a name="update-cloudpconpremisesconnection"></a>Обновление cloudPcOnPremisesConnection
 
@@ -19,9 +19,8 @@ ms.locfileid: "50158172"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Обновление свойств объекта [cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
-После того как локальное подключение пройдет проверку на состояние, указанную `healthCheckStatus` свойством, вы не сможете обновить его.
+После того как локальное подключение проходит проверку состояния, указанную свойством, ее `healthCheckStatus` нельзя обновить.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>Разрешения
 
@@ -53,24 +52,24 @@ PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса предоставляем представление объекта [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) в JSON.
+В теле запроса поставляем представление JSON объекта [cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
 
-В следующей таблице показаны свойства, необходимые при создании [объекта cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
+В следующей таблице показаны свойства, необходимые при создании [cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемого имени для локального подключения.|
-|subscriptionId|String|ИД целевой подписки Azure, связанной с клиентом.|
-|adDomainName|String|Полное доменное имя домена Active Directory, к нему нужно присоединиться.|
-|adDomainUsername|String|Имя пользователя учетной записи Active Directory (учетной записи пользователя или службы), которая имеет разрешения на создание объектов-компьютеров в Active Directory. Необходимый формат: username@contoso.com.|
-|adDomainPassword|String|Пароль, связанный с adDomainUsername.|
-|resourceGroupId|String|ИД целевой группы ресурсов. Требуемого формата: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
-|virtualNetworkId|String|ИД целевой виртуальной сети. Требуемого формата: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
-|subnetId|String|ИД целевой подсети. Требуемого формата: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
+|displayName|Строка|Имя отображения локального подключения.|
+|subscriptionId|String|ID целевой подписки Azure, связанной с клиентом.|
+|adDomainName|Строка|Полное доменное имя домена (FQDN) домена Active Directory, к нему необходимо присоединиться.|
+|adDomainUsername|Строка|Имя пользователя учетной записи Active Directory (учетная запись пользователя или службы), которая имеет разрешения на создание компьютерных объектов в Active Directory. Необходимый формат: username@contoso.com.|
+|adDomainPassword|Строка|Пароль, связанный с adDomainUsername.|
+|resourceGroupId|Строка|ID целевой группы ресурсов. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
+|virtualNetworkId|Строка|ID целевой виртуальной сети. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
+|subnetId|Строка|ID целевой подсети. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и обновленный `200 OK` [объект cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 

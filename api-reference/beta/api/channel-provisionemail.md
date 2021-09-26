@@ -1,16 +1,16 @@
 ---
 title: 'канал: provisionEmail'
-description: Подготовка электронной почты канала.
+description: Предоставление адреса электронной почты для канала.
 author: anandab-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b2e619970c0cdadd574a4873cb3231a88934a087
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: da0b490cbf7d894a4645d3e13f70f653c7f65439
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52869626"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764964"
 ---
 # <a name="channel-provisionemail"></a>канал: provisionEmail
 
@@ -20,9 +20,9 @@ ms.locfileid: "52869626"
 
 Предоставление адреса электронной почты для [канала](../resources/channel.md).
 
-Microsoft Teams автоматически не содержит адрес электронной почты для канала по умолчанию. Чтобы Teams адрес электронной почты, можно вызвать **provisionEmail** или с помощью пользовательского интерфейса Teams, выберите get email address **,** который запускает Teams для создания адреса электронной почты, если он еще не был предварительно.
+Microsoft Teams автоматически не содержит адрес электронной почты для **канала по** умолчанию. Чтобы Teams адрес электронной почты, можно вызвать **provisionEmail** или с помощью пользовательского интерфейса Teams, выберите get email address **,** который запускает Teams для создания адреса электронной почты, если он еще не был предварительно.
 
-Чтобы удалить предварительный адрес электронной почты канала, используйте [метод removeEmail.](channel-removeemail.md)
+Чтобы удалить адрес электронной почты **канала,** используйте [метод removeEmail.](channel-removeemail.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,8 +30,8 @@ Microsoft Teams автоматически не содержит адрес эл
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированное (рабочая или учебная учетная запись)     | ChannelSettings.ReadWrite.All               |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Делегированные (рабочая или учебная учетная запись)     | ChannelSettings.ReadWrite.All               |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
 | Для приложений                            | Не поддерживается.                              |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -44,13 +44,13 @@ POST /teams/{team-id}/channels/{channel-id}/provisionEmail
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-Если электронная почта канала будет успешно продюсироваться, этот метод возвращает код ответа и объект `200 OK` [provisionChannelEmailResult](../resources/provisionChannelEmailResult.md) в тексте ответа. Предварительный адрес электронной почты находится в **свойстве электронной** почты.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект provisionChannelEmailResult](../resources/provisionChannelEmailResult.md) в тексте ответа. В свойстве имеется предварительный адрес `email` электронной почты.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос

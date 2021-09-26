@@ -1,0 +1,81 @@
+---
+title: Удаление организационнойbrandingLocalization
+description: Удаляет объект organizationalBrandingLocalization.
+author: AlexanderMars
+ms.localizationpriority: medium
+ms.prod: identity-and-sign-in
+doc_type: apiPageType
+ms.openlocfilehash: 883f441cd2726abd4e496d7d63b4b3a6d07da8c1
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59777421"
+---
+# <a name="delete-organizationalbrandinglocalization"></a>Удаление организационнойbrandingLocalization
+Пространство имен: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Удаление объекта локализованного брендинга. Чтобы удалить [объект organizationalBrandingLocalization,](../resources/organizationalbrandinglocalization.md) все изображения (типы потока) сначала должны быть удалены из объекта.
+
+## <a name="permissions"></a>Разрешения
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
+|:---------------------------------------|:--------------------------------------------|
+| Делегированные (рабочая или учебная учетная запись)     | Organization.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений                            | Не поддерживается. |
+
+## <a name="http-request"></a>HTTP-запрос
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+DELETE /organization/{organizationId}/branding/localizations/{organizationalBrandingLocalizationId}
+```
+
+## <a name="request-headers"></a>Заголовки запросов
+|Имя|Описание|
+|:---|:---|
+|Авторизация|Bearer {токен}. Обязательный.|
+
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
+
+## <a name="response"></a>Отклик
+
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+
+## <a name="examples"></a>Примеры
+
+### <a name="request"></a>Запрос
+
+Ниже приводится пример запроса на удаление объекта `fr-FR` локализации.
+
+<!-- {
+  "blockType": "request",
+  "name": "delete_organizationalbrandinglocalization"
+}-->
+
+```http
+DELETE https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr-FR
+```
+
+
+### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+

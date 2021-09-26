@@ -5,12 +5,12 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9216f5f879bee4b600fadf459ad67d11d392ca31
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2547ededb4657b3d185245ad0fadfdca82cf1fd5
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59074514"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766140"
 ---
 # <a name="get-device"></a>Вывод устройства
 
@@ -25,14 +25,15 @@ ms.locfileid: "59074514"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Application | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
+
+В `{id}` запросе имеется значение свойства **id** устройства, а не **свойства deviceId.**
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /devices/{id}
 ```
-> Примечание. Параметр id в запросе — это свойство id объекта device, а не свойство deviceId.
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает параметр `$select` [запроса OData](/graph/query-parameters) для настройки ответа.

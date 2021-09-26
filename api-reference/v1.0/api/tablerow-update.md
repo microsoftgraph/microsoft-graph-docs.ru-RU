@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0b96107a1c416a7be5849896d6a34a57721b7ae2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 033ebf670cd76005a19c9bc012ea2cfbad57f6db
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59025897"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59508301"
 ---
 # <a name="update-tablerow"></a>Обновление объекта tableRow
 
@@ -37,7 +37,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация  | Bearer {token}. Обязательный. |
+| Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -49,7 +49,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и обновленный объект `200 OK` [WorkbookTableRow](../resources/tablerow.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код ответа и обновленный объект `200 OK` [WorkbookTableRow](../resources/workbooktablerow.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

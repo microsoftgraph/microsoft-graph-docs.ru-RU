@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: e7d2ce6d2eb973eb68b4cbe14754c374eec9bd3c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 04a9f843da8326f257a7a48537353a10ac458a81
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035614"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766938"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Использование API Поиска (Майкрософт) для запросов данных
 
@@ -33,6 +33,8 @@ API Microsoft Search предоставляет метод [query](../api/search
 |[Получение наиболее релевантных электронных писем](#get-the-most-relevant-emails) | **enableTopResults** |
 |[Получение выбранных свойств](#get-selected-properties) | **fields** |
 |[Использование KQL в терминах запросов](#keyword-query-language-kql-support) | **query** |
+|[Сортировка результатов поиска](#sort-search-results)| **sort** |
+|[Уточнение результатов с помощью агрегатов](#refine-results-using-aggregations)| **aggregations** |
 
 ## <a name="scope-search-based-on-entity-types"></a>Поиск в области по типам объектов
 
@@ -104,6 +106,37 @@ API Microsoft Search предоставляет метод [query](../api/search
 - [Свойства электронной почты](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-email-properties)
 - [Свойства сайта](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-site-properties)
 
+## <a name="sort-search-results"></a>Сортировка результатов поиска
+
+Результаты поиска в отклике отсортированы в следующем стандартном порядке:
+
+- **message** и **event** сортируются по дате.
+- Все типы SharePoint, OneDrive, пользователей и соединителей сортируются по релевантности.
+
+Метод [query](../api/search-query.md) позволяет задать порядок поиска, указав **sortProperties** в параметре `requests`, который представляет собой набор объектов [searchRequest](./searchrequest.md). Это дает возможность указать список из одного или нескольких сортируемых средств и порядок сортировки.
+
+Учтите, что сортировка результатов в настоящее время поддерживается только для следующих типов SharePoint и OneDrive: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md).
+
+Свойства, к которым применяется предложение sort, должны быть сортируемыми в [схеме поиска](/sharepoint/manage-search-schema) SharePoint. Если свойство, указанное в запросе, не является сортируемым или не существует, в отклике будет возвращена ошибка `HTTP 400 Bad Request`. Обратите внимание, что нельзя задать сортировку документов по релевантности с использованием [sortProperty](sortproperty.md).
+
+При указании параметра **name** объекта [sortProperty](sortproperty.md) можно использовать имя свойства из типа Microsoft Graph (например, в [driveItem](driveitem.md)) или имя управляемого свойств в индексе поиска.
+
+Примеры сортировки результатов см. в разделе [Сортировка результатов поиска](/graph/search-concept-sort).
+
+## <a name="refine-results-using-aggregations"></a>Уточнение результатов с помощью агрегатов
+
+Агрегаты (также называемые уточнениями в SharePoint) — это очень популярное средство, которое позволяет расширить возможности поиска. В дополнение к результатам они предоставляют некоторые обобщенные сведения о наборе данных, из которого получены результатов поиска. Например, можно представить сведения о наиболее заметных авторах документов, которые удовлетворяют запросу, или о самых распространенных типах файлов и т. д.
+
+В [searchRequest](./searchrequest.md) укажите агрегаты, которые надо получить в дополнение к результатам поиска. Описание каждого агрегата приведено в [aggregationOption](./aggregationoption.md), где указывается свойство, на основе которого будет рассчитываться агрегат, и количество объектов [searchBucket](searchBucket.md), возвращаемое в отклике.
+
+Свойства, по которым запрашивается агрегат, должны быть уточняемыми в [схеме поиска](/sharepoint/manage-search-schema) SharePoint. Если указанное свойство не является уточняемым или не существует, отклик возвращает`HTTP 400 Bad Request`.
+
+Когда будет получен отклик, содержащий набор объектов [searchBucket](searchBucket.md), можно уточнить поисковый запрос, ограничив его только совпадающими элементами из одного объекта [searchBucket](searchBucket.md). Это достигается путем передачи значения **aggregationsFilterToken** в свойстве **aggregationFilters** последующего [searchRequest](./searchrequest.md).
+
+В настоящий момент агрегаты поддерживаются для любого свойства с возможностью уточнения в следующих типах SharePoint и OneDrive: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md) и в соединителях Microsoft Graph [externalItem](externalconnectors-externalitem.md).
+
+Примеры использования агрегатов для улучшения и снижения объема результатов поиска см. в разделе [Уточнение результатов поиска](/graph/search-concept-aggregation).
+
 ## <a name="error-handling"></a>Обработка ошибок
 
 API поиска возвращает отклики с ошибками, описанные в [определении объектов ошибок OData](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse), каждый из которых представляет собой объект JSON, содержащий код и сообщение.
@@ -133,6 +166,8 @@ API поиска возвращает отклики с ошибками, опи
   - [Поиск сообщений Outlook](/graph/search-concept-messages)
   - [Поиск событий календаря](/graph/search-concept-events)
   - [Поиск содержимого в OneDrive и SharePoint](/graph/search-concept-files)
+  - [Сортировка результатов поиска](/graph/search-concept-sort)
+  - [Уточнение результатов поиска](/graph/search-concept-aggregation)
 
 - Узнайте больше об API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.

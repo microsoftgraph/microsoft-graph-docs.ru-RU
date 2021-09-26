@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: bc600835885037177df3a4e1039a2c6b1ad052ab
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e2192002b69a796b0dcff0a76a5004f66e2fa2c8
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036629"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766966"
 ---
 # <a name="educationoutcome-resource-type"></a>тип ресурсов educationOutcome
 
@@ -25,6 +25,13 @@ ms.locfileid: "59036629"
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
 | [Обновление educationOutcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Обновление объекта educationOutcome. |
+
+## <a name="properties"></a>Свойства
+| Свойство     | Тип   |Описание|
+|:---------------|:--------|:----------|
+|id|String|Только для чтения.|
+|lastModifiedBy|[identitySet](identityset.md)|Человек, обновивший ресурс.|
+|lastModifiedDateTime|DateTimeOffset|Время последнего изменения ресурса.  Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, полночь UTC на 1 января 2021 года `2021-01-01T00:00:00Z` .|
 
 ## <a name="relationships"></a>Связи
 

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса rbacApplicationMultiple
 description: Свойство навигации по управлению ролью
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: df5c5cd1421d4601357ef2d48c00b693e6c5e324
-ms.sourcegitcommit: 30903b12daf4cf2841524c57743889e23d11f85a
+ms.openlocfilehash: a989896dbf3ae71daade9e4feee07f3ea2bcd94b
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/31/2021
-ms.locfileid: "53533866"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766350"
 ---
 # <a name="rbacapplicationmultiple-resource-type"></a>Тип ресурса rbacApplicationMultiple
 
@@ -26,7 +26,6 @@ ms.locfileid: "53533866"
 
 Для определений ролей поставщик облачных ПК в настоящее время поддерживает [операцию](../api/rbacapplication-list-roledefinitions.md) списка, но не [создание](../api/rbacapplication-post-roledefinitions.md).
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="methods"></a>Методы
 
@@ -41,7 +40,7 @@ ms.locfileid: "53533866"
 
 Нет
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Нет
 

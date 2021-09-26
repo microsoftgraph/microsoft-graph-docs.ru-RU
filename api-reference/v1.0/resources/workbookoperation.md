@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 0ec98d72f56eb2f066f221a0c7aadc389d01109b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0d452584898c24cf482733810acfc26479fae07c
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134166"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766322"
 ---
 # <a name="workbookoperation-resource-type"></a>тип ресурса workbookOperation
 
@@ -31,9 +31,9 @@ ms.locfileid: "59134166"
 |status|String| Текущее состояние операции. Возможные значения: `NotStarted`, `Running`, `Completed`, `Failed`.|
 |id|String| ID операции. Только для чтения.|
 |error|[workbookOperationError](workbookoperationerror.md)| Ошибка, возвращаемая операцией.|
-|resourceLocation|Строка| Ресурс URI для результата.|
+|resourceLocation|String| Ресурс URI для результата.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Нет
 
@@ -44,7 +44,7 @@ ms.locfileid: "59134166"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "id", "status", "error", "resourceLocation"
   ],
   "@odata.type": "microsoft.graph.workbookOperation",
   "keyProperty": "id"
@@ -52,10 +52,14 @@ ms.locfileid: "59134166"
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.workbookOperation",
   "id": "String (identifier)",
-  "status": {"@odata.type": "microsoft.graph.workbookOperationStatus"},
-  "error": {"@odata.type": "microsoft.graph.workbookOperationError"},
+  "status": "String",
   "resourceLocation": "String",
+  "statusCode": "Integer",
+  "error": {
+    "@odata.type": "microsoft.graph.workbookOperationError"
+  }
 }
 ```
 

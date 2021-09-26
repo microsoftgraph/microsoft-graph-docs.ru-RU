@@ -1,16 +1,16 @@
 ---
 title: Создание дела
 description: Используйте этот API для создания нового случая.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 7fa7331b9a75c9c9d787ab12804540b1e5efe31a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9e926414d0806f5dbc6979f0ff360d5400193048
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52044727"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765706"
 ---
 # <a name="create-case"></a>Создание дела
 
@@ -19,6 +19,9 @@ ms.locfileid: "52044727"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создайте новый [объект case.](../resources/ediscovery-case.md)
+
+>[!NOTE]
+>Начиная с сентября 2021 г. этот API создаст большой тип кейса. Дополнительные дополнительные информацию о больших случаях [см.](/microsoft-365/compliance/advanced-ediscovery-large-cases)в Advanced eDiscovery. Дополнительные сведения см. в публикации [Изменения в Microsoft 365 eDiscovery create case API.](https://go.microsoft.com/fwlink/?linkid=2172604)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -97,7 +100,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

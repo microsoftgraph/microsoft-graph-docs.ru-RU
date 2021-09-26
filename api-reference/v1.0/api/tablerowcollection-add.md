@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: bce502c5bdc7eff2a40710f52dc81f6778768827
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c018ea4962e09dae2fc656d2966f4b687f303ecc
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59025888"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765538"
 ---
 # <a name="tablerowcollection-add"></a>TableRowCollection: add
 
@@ -43,7 +43,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {token}. Обязательный. |
+| Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -56,7 +56,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и `200 OK` [объект WorkbookTableRow](../resources/tablerow.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и `200 OK` [объект WorkbookTableRow](../resources/workbooktablerow.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 В этом примере в конце таблицы вставляются два ряда данных. 

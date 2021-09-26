@@ -2,15 +2,15 @@
 title: 'cloudPcDeviceImage: перезагрузка'
 description: Перезагрузите объект cloudPcDeviceImage.
 author: RuiHou105
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 8e359f749f0b932f3061bf8750fcf7992fe23302
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 19448e066276c42865dd1407d01817ca81fe9aa4
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439494"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764544"
 ---
 # <a name="cloudpcdeviceimage-reupload"></a>cloudPcDeviceImage: перезагрузка
 
@@ -20,7 +20,6 @@ ms.locfileid: "53439494"
 
 Перезагрузите [объект cloudPcDeviceImage,](../resources/cloudpcdeviceimage.md) который не удалось загрузить.
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +28,7 @@ ms.locfileid: "53439494"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|CloudPC.ReadWrite.All|
+|Для приложения|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

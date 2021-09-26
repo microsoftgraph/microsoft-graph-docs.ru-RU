@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: identity-and-access
 author: dkershaw10
-ms.openlocfilehash: f9556ca4f908533b2934ec381368b0845917819e
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: f4d1b364a44ff6fd6af3c5f7869dcaa8954cf846
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696325"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766679"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Работа с ресурсами Azure Active Directory в Microsoft Graph
 
@@ -58,8 +58,8 @@ Microsoft Graph предоставляет доступ к ресурсам [Azu
 | **Управление клиентами** | | |
 | Получайте информацию об организации, например адрес, контакты для уведомлений и связи по техническим вопросам, планы обслуживания, на которые она подписана, и связанные с ней домены. | [organization](../resources/organization.md) | Недоступно |
 | Получайте информацию о службах, на которые подписана компания. | [subscribedSku](../resources/subscribedsku.md) | Недоступно |
-| Приглашайте внешних пользователей в организацию. | [invitation](../resources/invitation.md) | [Что такое служба совместной работы Azure AD B2B?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)|
-| Управляйте фирменной символикой для интерфейса входа организации. | [organizationalbranding](../resources/organizationalbrandingproperties.md) | [Добавление фирменной символики на страницу входа в Azure Active Directory вашей организации](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)|
+| Приглашайте внешних пользователей в организацию. | [invitation](../resources/invitation.md) | [Что такое служба совместной работы Azure AD B2B?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)|
+| Управляйте фирменной символикой для интерфейса входа организации. | [organizationalbranding](../resources/organizationalbrandingproperties.md) | [Добавление фирменной символики на страницу входа в Azure Active Directory вашей организации](/azure/active-directory/fundamentals/customize-branding)|
 | **Проверки доступа** | | |
 | Проверяйте правильность участия в группах и права доступа к приложению с помощью проверок доступа. | [API проверки доступа](../resources/accessreviews-root.md) |[Проверки доступа Azure AD](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
 | **Запросы согласия** | | |

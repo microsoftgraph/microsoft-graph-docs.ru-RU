@@ -2,15 +2,15 @@
 title: Удаление cloudPcDeviceImage
 description: Удаление объекта cloudPcDeviceImage.
 author: AshleyYangSZ
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 6e2e3a3bef480c8b269a57819f32f4a00e3b08f3
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: 9bceb3f3f0bb89047a4710a779096ec72c16d600
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52546863"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766616"
 ---
 # <a name="delete-cloudpcdeviceimage"></a>Удаление cloudPcDeviceImage
 
@@ -20,7 +20,6 @@ ms.locfileid: "52546863"
 
 Удаление [объекта cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +28,7 @@ ms.locfileid: "52546863"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|CloudPC.ReadWrite.All|
+|Для приложения|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 

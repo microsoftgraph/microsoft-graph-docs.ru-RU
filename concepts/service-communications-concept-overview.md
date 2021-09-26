@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: high
 ms.prod: service-communications
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 0cd76530511ac5f8d59018d7bb8abcd69a1c5c53
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: aa4654fdb1d3ebfaba2a4cf62000477d9c978684
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59093878"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766147"
 ---
 # <a name="overview-for-accessing-service-health-and-communications-in-microsoft-graph"></a>Обзор доступа к сведениям о работоспособности и взаимодействии служб в Microsoft Graph
 Вы можете использовать API взаимодействия служб в Microsoft Graph для доступа к состоянию работоспособности и записям центра сообщений об облачных службах (Майкрософт). Фактическое состояние работоспособности и записи соответствуют службам Microsoft 365 и Dynamics 365, которые поддерживаются API-интерфейсом и подписка на которые есть у клиента.
@@ -48,7 +48,7 @@ ms.locfileid: "59093878"
 
 ### <a name="windows-release-health-dashboard"></a>Панель мониторинга работоспособности выпуска Windows
 
-На панели мониторинга **Работоспособность выпуска Windows** можно просмотреть важную информацию о ежемесячных исправлениях и обновлениях компонентов, а также о новейшие функции и улучшения для Windows. См. пример, показанный на рис. 2.
+На панели мониторинга **Работоспособность выпуска Windows** можно просмотреть важную информацию о ежемесячных исправлениях и обновлениях компонентов, а также новейшие функции и улучшения для Windows. См. пример, показанный на рис. 2.
 
 **Рис. 2. Панель мониторинга работоспособности выпуска Windows в Центре администрирования Microsoft 365**
 

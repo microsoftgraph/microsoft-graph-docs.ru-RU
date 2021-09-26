@@ -1,16 +1,16 @@
 ---
 title: Перечисление schemaExtensions
 description: 'Получите список объектов схемыExtension, созданных любыми приложениями, которые принадлежат вам в текущем клиенте (это может быть '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 8e1d8e1810f579b7c1e5d31a6e0a221a1df1d7c6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 440a8abf5246cbd882fff8bb11d7203c9155fcd9
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053505"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764243"
 ---
 # <a name="list-schemaextensions"></a>Перечисление schemaExtensions
 
@@ -30,15 +30,13 @@ ms.locfileid: "52053505"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | User.Read, Application.Read.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Application.Read.All  |
+|Для приложения | Application.Read.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /schemaExtensions
 ```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -53,7 +51,7 @@ GET /schemaExtensions
 
 В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [схемыExtension](../resources/schemaextension.md) в тексте ответа.
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 В следующем примере показано, как искать среди всех доступных расширений для определенного, фильтруя уникальный **id.** 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -82,8 +80,9 @@ GET https://graph.microsoft.com/beta/schemaExtensions?$filter=id%20eq%20'graphle
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа. 
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -93,7 +92,6 @@ GET https://graph.microsoft.com/beta/schemaExtensions?$filter=id%20eq%20'graphle
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 274
 
 {
   "value": [

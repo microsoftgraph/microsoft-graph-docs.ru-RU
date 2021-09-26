@@ -4,14 +4,14 @@ description: Вы можете использовать API Поиск (Майк
 author: nmoreau
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 48462a3bbf08e4836227cf73c21e4949766da62e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 83f7b347739719a4100afb0cbecfb3009c454fbc
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129721"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763983"
 ---
-# <a name="refine-search-results-using-aggregations-preview"></a>Уточнение результатов поиска с помощью агрегаций (предварительный просмотр)
+# <a name="refine-search-results-using-aggregations"></a>Уточнение результатов поиска с помощью агрегаций
 
 Уточнение результатов поиска и демонстрация их распространения в индексе.
 

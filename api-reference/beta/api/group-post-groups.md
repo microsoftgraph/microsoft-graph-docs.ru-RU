@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e19a18487621931171d6c88ef2231cf2e49f76d0
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: fe3d386153d04df9ea716d2f624afd2a89f02a39
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695422"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59765118"
 ---
 # <a name="create-group"></a>Создание группы
 
@@ -25,7 +25,7 @@ ms.locfileid: "58695422"
 
 Эта операция по умолчанию возвращает только подмножество свойств для каждой группы. Эти свойства по умолчанию указаны в разделе [Свойства](../resources/group.md#properties). Чтобы получить свойства, которые _не_ возвращаются по умолчанию, выполните [операцию GET](group-get.md) и укажите их в параметре запроса OData `$select`.
 
->**Примечание.** Чтобы создать [команду](../resources/team.md), сначала создайте группу и добавьте команду в нее, см. раздел [Создание команды](../api/team-put-teams.md).
+**Примечание.** Чтобы создать [команду](../resources/team.md), сначала создайте группу и добавьте команду в нее, см. раздел [Создание команды](../api/team-put-teams.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -34,7 +34,7 @@ ms.locfileid: "58695422"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Для приложения | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,33 +47,29 @@ POST /groups
 
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
-В приведенной ниже таблице показаны свойства ресурса [group](../resources/group.md), которые необходимо указать при создании группы.
+В тексте запроса предоставьте описание объекта [group](../resources/group.md) в формате JSON.
+
+В приведенной ниже таблице указаны свойства, необходимые при создании объекта [group](../resources/group.md). При необходимости укажите другие записываемые свойства для своей группы.
 
 | Свойство | Тип | Описание|
 |:---------------|:--------|:----------|
 | displayName | string | Имя, которое следует отобразить в адресной книге для группы. Обязательно. |
-| description | строка | Описание группы. Необязательно. |
-| isAssignableToRole | Логическое | Значение **true**, чтобы группу можно было назначить роли Azure AD. Только администратор привилегированных ролей и глобальный администратор может настроить значение этого свойства. Необязательно. |
-| mailEnabled | boolean | Установите значение **true** для групп, поддерживающих почту. Обязательно. |
+| mailEnabled | boolean | Установите значение `true` для групп с включенной поддержкой почты. Обязательный. |
 | mailNickname | string | Почтовый псевдоним для группы. Максимальная длина: 64 символа. Это свойство может содержать только символы из [набора символов ASCII от 0 до 127](/office/vba/language/reference/user-interface-help/character-set-0127), за исключением следующих: ` @ () \ [] " ; : . <> , SPACE`. Обязательный. |
-| securityEnabled | boolean | Значение **true** для групп безопасности, включая группы Microsoft 365. Обязательный. |
-| owners | Коллекция [directoryObject](../resources/directoryobject.md) | Это свойство представляет владельцев группы на момент создания. Владельцы не добавляются автоматически в качестве участников группы, если они не указаны в свойстве **members**. Необязательный параметр. |
-| members | Коллекция [directoryObject](../resources/directoryobject.md) | Это свойство представляет участников группы на момент создания. Необязательно. |
-|visibility|String|Определяет видимость группы Microsoft 365. Возможные значения: `Private`, `Public`, `HiddenMembership` или пустое значение (обрабатывается как `Public`).|
+| securityEnabled | boolean | Установите значение `true` для групп с поддержкой безопасности, включая группы Microsoft 365. Обязательно. **Примечание.** В группах, созданных с помощью портала Microsoft Azure, для свойства **securityEnabled** всегда устанавливается значение `true`.|
 
-> **Примечание.** В группах, созданных с помощью портала Microsoft Azure, для свойства **securityEnabled** всегда устанавливается значение `true`.
+> [!IMPORTANT]
+> + Создание группы с помощью разрешения приложения **Group.Create** без указания владельцев анонимно создает группу, которая не будет изменяться. Добавьте владельцев в группу при ее создании, чтобы указать владельцев, которые могут изменять группу.
+>
+>+ Создание группы Microsoft 365 программным путем с контекстом только для приложений, а также без указания владельцев будет анонимным. Это может привести к тому, что связанный с ней сайт SharePoint Online не будет создан автоматически, пока дальнейшие действия не будут выполнены вручную.
+>
+>+ Следующие свойства невозможно настроить в исходном запросе POST и необходимо настраивать в последующем запросе PATCH: **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**.
 
-Так как ресурс **group** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `POST` можно добавлять настраиваемые свойства с собственными данными к группе при ее создании.
-
->**Примечание:** создание группы с помощью разрешения приложения Group.Create без указания владельцев анонимно создает группу, которая не будет изменяться. Вы можете использовать операцию `POST` и добавить владельцев в группу при ее создании, чтобы указать владельцев, которые могут изменять группу.
-
-> Создание группы Microsoft 365 программным путем с контекстом только для приложений, а также без указания владельцев будет анонимным. Это может привести к тому, что связанный с ней сайт SharePoint Online не будет создан автоматически, пока дальнейшие действия не будут выполнены вручную.
-
-При необходимости укажите другие записываемые свойства для своей группы. Дополнительные сведения см. в таблице свойств ресурса [group](../resources/group.md).
+Так как ресурс **group** поддерживает [расширения](/graph/extensibility-overview), вы можете добавлять настраиваемые свойства с собственными данными к группе при ее создании.
 
 ### <a name="grouptypes-options"></a>Параметры groupTypes
 
@@ -140,7 +136,7 @@ Content-length: 244
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример отклика. Значение свойства **preferredDataLocation** наследуется от предпочтительного расположения данных создателя группы.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -227,7 +223,7 @@ Content-Type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже представлен пример успешного отклика. Он включает только свойства по умолчанию. Вы можете получить свойства навигации **owners** или **members** группы, чтобы проверить владельца или участников.
+Ниже представлен пример успешного отклика. Он включает только свойства по умолчанию. Вы можете получить свойства навигации **owners** или **members** группы, чтобы проверить владельца или участников. Значение свойства **preferredDataLocation** наследуется от предпочтительного расположения данных создателя группы.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -243,45 +239,56 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
-    "id": "502df398-d59c-469d-944f-34a50e60db3f",
+    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/1226170d-83d5-49b8-99ab-d1ab3d91333e/Microsoft.DirectoryServices.Group",
+    "id": "1226170d-83d5-49b8-99ab-d1ab3d91333e",
     "deletedDateTime": null,
     "classification": null,
-    "createdDateTime": "2018-12-27T22:17:07Z",
+    "createdDateTime": "2021-09-21T07:14:44Z",
+    "createdByAppId": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+    "organizationId": "84841066-274d-4ec0-a5c1-276be684bdd3",
     "description": "Group with designated owner and members",
     "displayName": "Operations group",
     "expirationDateTime": null,
-    "groupTypes": [
-        "Unified"
-    ],
+    "groupTypes": [],
+    "infoCatalogs": [],
     "isAssignableToRole": null,
-    "mail": "operations2019@contoso.com",
-    "mailEnabled": true,
+    "isManagementRestricted": null,
+    "mail": null,
+    "mailEnabled": false,
     "mailNickname": "operations2019",
     "membershipRule": null,
     "membershipRuleProcessingState": null,
+    "onPremisesDomainName": null,
     "onPremisesLastSyncDateTime": null,
+    "onPremisesNetBiosName": null,
+    "onPremisesSamAccountName": null,
     "onPremisesSecurityIdentifier": null,
     "onPremisesSyncEnabled": null,
-    "preferredDataLocation": "CAN",
-    "proxyAddresses": [
-        "SMTP:operations2019@contoso.com"
-    ],
-    "renewedDateTime": "2018-12-27T22:17:07Z",
+    "preferredDataLocation": null,
+    "preferredLanguage": null,
+    "proxyAddresses": [],
+    "renewedDateTime": "2021-09-21T07:14:44Z",
     "resourceBehaviorOptions": [],
     "resourceProvisioningOptions": [],
-    "securityEnabled": false,
-    "securityIdentifier": "S-1-12-1-1905728287-1207447622-870010782-555555555",
+    "securityEnabled": true,
+    "securityIdentifier": "S-1-12-1-304486157-1236829141-2882644889-1043566909",
     "theme": null,
-    "visibility": "Public",
+    "visibility": null,
+    "writebackConfiguration": {
+        "isEnabled": null,
+        "onPremisesGroupType": null
+    },
     "onPremisesProvisioningErrors": []
 }
 ```
 
-### <a name="example-3-create-a-group-that-can-be-assigned-to-an-azure-ad-role"></a>Пример 3. Создание группы, которую можно назначить роли Azure AD
+### <a name="example-3-create-a-microsoft-365-group-that-can-be-assigned-to-an-azure-ad-role"></a>Пример 3. Создание группы Microsoft 365, которую можно назначить роли Azure AD
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса.  Вызывающему пользователю или приложению должно быть назначено разрешение *RoleManagement.ReadWrite.Directory* для настройки свойства **isAssignableToRole** или обновления участников таких групп.
+Ниже приведен пример запроса.  Вызывающему пользователю или приложению должно быть назначено разрешение *RoleManagement.ReadWrite.Directory* для настройки свойства **isAssignableToRole** или обновления участников таких групп. 
+
+**ПРИМЕЧАНИЕ.** Группа, свойству **isAssignableToRole** которой присвоено значение `true`, не может относиться к типу с динамическим членством. Дополнительные сведения см. в статье [Использование группы для управления назначениями ролей Azure AD](https://go.microsoft.com/fwlink/?linkid=2103037).
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -294,16 +301,22 @@ POST https://graph.microsoft.com/beta/groups
 Content-Type: application/json
 
 {
-  "description": "Group assignable to a role",
-  "displayName": "Role assignable group",
-  "groupTypes": [
-    "Unified"
-  ],
-  "isAssignableToRole": true,
-  "mailEnabled": true,
-  "securityEnabled": true,
-  "mailNickname": "contosohelpdeskadministrators",
-  "visibility" : "Private"
+    "description": "Group assignable to a role",
+    "displayName": "Role assignable group",
+    "groupTypes": [
+        "Unified"
+    ],
+    "isAssignableToRole": true,
+    "mailEnabled": true,
+    "securityEnabled": true,
+    "mailNickname": "contosohelpdeskadministrators",
+    "owners@odata.bind": [
+        "https://graph.microsoft.com/beta/users/99e44b05-c10b-4e95-a523-e2732bbaba1e"
+    ],
+    "members@odata.bind": [
+        "https://graph.microsoft.com/beta/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0",
+        "https://graph.microsoft.com/beta/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e"
+    ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -324,12 +337,9 @@ Content-Type: application/json
 
 ---
 
-
-> **Примечание.** Свойства **visibility** и **groupTypes** необязательны для создания, но заполняются автоматически этими значениями. Группа, свойству **isAssignableToRole** которой присвоено значение `true`, не может относиться к типу с динамическим членством. Дополнительные сведения см. в статье [Использование группы для управления назначениями ролей Azure AD](https://go.microsoft.com/fwlink/?linkid=2103037).
-
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Он содержит только свойства по умолчанию.
+Ниже приведен пример отклика. Значение свойства **preferredDataLocation** наследуется от предпочтительного расположения данных создателя группы.
 
 <!-- {
   "blockType": "response",
@@ -342,38 +352,51 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
-  "id": "502df398-d59c-469d-944f-34a50e60db3f",
-  "deletedDateTime": null,
-  "classification": null,
-  "createdDateTime": "2018-12-27T22:17:07Z",
-  "description": "Group assignable to a role",
-  "displayName": "Role assignable group",
-  "expirationDateTime": null,
-  "groupTypes": [
-    "Unified"
-  ],
-  "isAssignableToRole": true,
-  "mail": "operations2019@contoso.com",
-  "mailEnabled": true,
-  "mailNickname": "contosohelpdeskadministrators",
-  "membershipRule": null,
-  "membershipRuleProcessingState": null,
-  "onPremisesLastSyncDateTime": null,
-  "onPremisesSecurityIdentifier": null,
-  "onPremisesSyncEnabled": null,
-  "preferredDataLocation": "CAN",
-  "proxyAddresses": [
-    "SMTP:operations2019@contoso.com"
-  ],
-  "renewedDateTime": "2018-12-27T22:17:07Z",
-  "resourceBehaviorOptions": [],
-  "resourceProvisioningOptions": [],
-  "securityEnabled": true,
-  "securityIdentifier": "S-1-12-1-1905728287-1207447622-870010782-555555555",
-  "theme": null,
-  "visibility": "Private",
-  "onPremisesProvisioningErrors": []
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
+    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/1afc3ca3-b14d-43af-9c70-8ae3a5065454/Microsoft.DirectoryServices.Group",
+    "id": "1afc3ca3-b14d-43af-9c70-8ae3a5065454",
+    "deletedDateTime": null,
+    "classification": null,
+    "createdDateTime": "2021-09-21T07:16:21Z",
+    "createdByAppId": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+    "organizationId": "84841066-274d-4ec0-a5c1-276be684bdd3",
+    "description": "Group assignable to a role",
+    "displayName": "Role assignable group",
+    "expirationDateTime": null,
+    "groupTypes": [
+        "Unified"
+    ],
+    "infoCatalogs": [],
+    "isAssignableToRole": true,
+    "isManagementRestricted": null,
+    "mail": "contosohelpdeskadministrators@Contoso.com",
+    "mailEnabled": true,
+    "mailNickname": "contosohelpdeskadministrators",
+    "membershipRule": null,
+    "membershipRuleProcessingState": null,
+    "onPremisesDomainName": null,
+    "onPremisesLastSyncDateTime": null,
+    "onPremisesNetBiosName": null,
+    "onPremisesSamAccountName": null,
+    "onPremisesSecurityIdentifier": null,
+    "onPremisesSyncEnabled": null,
+    "preferredDataLocation": "EU",
+    "preferredLanguage": null,
+    "proxyAddresses": [
+        "SMTP:contosohelpdeskadministrators@Contoso.com"
+    ],
+    "renewedDateTime": "2021-09-21T07:16:21Z",
+    "resourceBehaviorOptions": [],
+    "resourceProvisioningOptions": [],
+    "securityEnabled": true,
+    "securityIdentifier": "S-1-12-1-452738211-1135587661-3817500828-1414792869",
+    "theme": null,
+    "visibility": "Private",
+    "writebackConfiguration": {
+        "isEnabled": null,
+        "onPremisesGroupType": null
+    },
+    "onPremisesProvisioningErrors": []
 }
 ```
 

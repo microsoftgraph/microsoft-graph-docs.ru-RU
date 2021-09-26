@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса invitation
 description: Представляет приглашение, используемое для добавления внешних пользователей в организацию.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Sammak
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 9537b8ce7d677d6430a8690916996f3e80f2dd9c
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 6998b38dc51af04d5f7314a52663fa2b9b5cccb2
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58263809"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766357"
 ---
 # <a name="invitation-resource-type"></a>Тип ресурса invitation
 
@@ -43,10 +43,11 @@ ms.locfileid: "58263809"
 |invitedUserDisplayName|String|Отображаемое имя приглашаемого пользователя.|
 |invitedUserEmailAddress|String|Адрес электронной почты приглашаемого пользователя. Обязательный атрибут. В адресе электронной почты запрещено использовать следующие специальные символы:<br><ul><li>Тильда (~)</li><li>Восклицательный знак (`!`)</li><li>Знак "собаки" (`@`)</li><li>Решетка (`#`)</li><li>Знак доллара (`$`)</li><li>Процент (`%`)</li><li>Диакритический знак (`^`)</li><li>Амперсанд (`&`)</li><li>Звездочка (`*`)</li><li>Круглые скобки (`( )`)</li><li>Дефис (`-`)</li><li>Знак "плюс" (`+`)</li><li>Знак равенства (`=`)</li><li>Квадратные скобки (`[ ]`)</li><li>Фигурные скобки (`{ }`)</li><li>Обратная косая черта (`\`)</li><li>Косая черта (`/`)</li><li>Вертикальная черта (`|`)</li><li>Точка с запятой (`;`)</li><li>Двоеточие (`:`)</li><li>Кавычки (`"`)</li><li>Угловые скобки (`< >`)</li><li>Вопросительный знак (`?`)</li><li>Запятая (`,`)</li></ul><br>Однако применяются следующие исключения:<br><ul><li>Точка (`.`) и дефис (`-`) разрешены в любом месте имени пользователя, кроме его начала и конца.</li><li>Знак подчеркивания (`_`) может находиться в любом месте имени пользователя, в том числе в начале и в конце имени.</li></ul>|
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Дополнительные настройки сообщения, которое отправляется приглашаемому пользователю, в том числе настройка текста, языка и списка получателей копии сообщения.|
-|sendInvitationMessage|Boolean|Указывает, следует ли отправлять электронное письмо приглашенной пользователю. Значение по умолчанию: `false`.|
 |inviteRedirectUrl|String|URL-адрес, на который пользователь перенаправляется после активации приглашения. Указывать обязательно.|
 |inviteRedeemUrl|String|URL-адрес для активации приглашения. Только для чтения.|
-|invitedUserType|String|Элемент userType, связанный с приглашаемым пользователем. По умолчанию это значение равно `Guest`. Вы можете пригласить, `Member` как администратора компании. |
+|invitedUserType|String|Элемент userType, связанный с приглашаемым пользователем. По умолчанию это значение равно `Guest`. Вы можете пригласить, `Member` как администратора компании. Значение по умолчанию: `false`. |
+|resetRedemption|Boolean|Сбросите состояние выкупа пользователя и переосмысление пользователя при сохранении идентификатора пользователя, членства в группе и назначений приложений. Это свойство позволяет включить вход пользователя с помощью другого адреса электронной почты, который был в предыдущем приглашении. Дополнительные сведения об использовании этого свойства см. в выпуске Состояние перезагрузки для [гостевого пользователя (Предварительная версия).](/azure/active-directory/external-identities/reset-redemption-status#use-microsoft-graph-api-to-reset-redemption-status)|
+|sendInvitationMessage|Boolean|Указывает, следует ли отправлять письмо приглашаемому пользователю. Значение по умолчанию: `false`.|
 |status|String|Состояние приглашения. Возможные значения: `PendingAcceptance` `Completed` , , `InProgress` и `Error`|
 
 ## <a name="relationships"></a>Связи
@@ -70,16 +71,17 @@ ms.locfileid: "58263809"
 -->
 ```json
 {
-  "id": "string",
-  "invitedUserDisplayName": "string",
-  "invitedUserEmailAddress": "string",
+  "id": "String",
+  "invitedUserDisplayName": "String",
+  "invitedUserEmailAddress": "String",
   "invitedUserMessageInfo": {"@odata.type": "microsoft.graph.invitedUserMessageInfo"},
   "sendInvitationMessage": false,
-  "inviteRedirectUrl": "string",
-  "inviteRedeemUrl": "string",
-  "status": "string",
+  "inviteRedirectUrl": "String",
+  "inviteRedeemUrl": "String",
+  "resetRedemption": false,
+  "status": "String",
   "invitedUser": {"@odata.type": "microsoft.graph.user"},
-  "invitedUserType": "string"
+  "invitedUserType": "String"
 }
 ```
 

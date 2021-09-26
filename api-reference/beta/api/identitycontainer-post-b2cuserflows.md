@@ -1,16 +1,16 @@
 ---
 title: Создание b2cIdentityUserFlow
 description: Создайте новый объект b2cIdentityUserFlow.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 620d6a395c87c8507a9fd6c2bb9d5742a8b560da
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 25fa96f3cda7421affea96e48b62b7d228aea74f
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508885"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59763518"
 ---
 # <a name="create-b2cidentityuserflow"></a>Создание b2cIdentityUserFlow
 
@@ -28,12 +28,12 @@ ms.locfileid: "51508885"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение|IdentityUserFlow.ReadWrite.All|
+|Для приложения|IdentityUserFlow.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока внешних пользователей удостоверений
+* Администратор внешних Flow удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -56,16 +56,16 @@ POST /identity/b2cUserFlows
 
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
-|id|String|Обязательный. Имя пользовательского потока. После создания имя будет предварительно заранее. `B2C_1`|
-|userFlowType|String|Обязательный. Тип пользовательского потока, который вы создаете. Поддерживаемые значения для **userFlowType**:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
-|userFlowTypeVersion|С плавающей запятой|Обязательно. Версия пользовательского потока.|
+|id|String|Обязательный. Имя пользовательского потока. Если префикс не был добавлен в имя во время запроса, имя будет предварительно заранее `B2C_1_` запродляться после создания. |
+|userFlowType|Строка|Обязательный. Тип пользовательского потока, который вы создаете. Поддерживаемые значения для **userFlowType**:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
+|userFlowTypeVersion|С плавающей запятой|Обязательный. Версия пользовательского потока.|
 |isLanguageCustomizationEnabled|Логический|Необязательное свойство. Определяет, включена ли настройка языка в потоке пользователей Azure AD B2C. Настройка языка не включена по умолчанию для потоков пользователей Azure AD B2C.|
-|defaultLanguageTag|String|Необязательный параметр.  Указывает язык по умолчанию b2cIdentityUserFlow, который используется, когда в запросе не указан `ui_locale` тег. Это поле соответствует спецификации [RFC 5646](https://tools.ietf.org/html/rfc5646).|
+|defaultLanguageTag|Строка|Необязательный параметр.  Указывает язык по умолчанию b2cIdentityUserFlow, который используется, когда в запросе не указан `ui_locale` тег. Это поле соответствует спецификации [RFC 5646](https://tools.ietf.org/html/rfc5646).|
 |identityProviders|Коллекция объектов [identityProvider](../resources/identityprovider.md)|Необязательное свойство. Поставщики удостоверений, которые необходимо включить в поток пользователей.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и заголовку Location с URI на объект `201 Created` [b2cIdentityUserFlow,](../resources/b2cidentityuserflow.md) созданный для этого запроса, с префиксом, добавленным в `B2C_1` имя. В случае неудачи возвращается ошибка `4xx` с подробностями.
+В случае успешной работы этот метод возвращает код отклика и заголовку Location с URI на объект `201 Created` [b2cIdentityUserFlow,](../resources/b2cidentityuserflow.md) созданный для этого запроса, с префиксом, добавленным в `B2C_1_` имя. В случае неудачи возвращается ошибка `4xx` с подробностями.
 
 ## <a name="examples"></a>Примеры
 
@@ -85,7 +85,6 @@ POST /identity/b2cUserFlows
 ``` http
 POST https://graph.microsoft.com/beta/identity/b2cUserFlows
 Content-type: application/json
-Content-length: 154
 
 {
     "id": "Customer",
@@ -114,7 +113,7 @@ Content-length: 154
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -126,15 +125,21 @@ Content-length: 154
 
 ```http
 HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer
+Location: https://graph.microsoft.com/beta/identity/b2cUserFlows('B2C_1_Customer')
 Content-type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2cUserFlows/$entity",
     "id": "B2C_1_Customer",
     "userFlowType": "signUpOrSignIn",
     "userFlowTypeVersion": 3,
     "isLanguageCustomizationEnabled": false,
-    "defaultLanguageTag": "en"
+    "defaultLanguageTag": "en",
+    "authenticationMethods": "emailWithPassword",
+    "tokenClaimsConfiguration": {
+        "isIssuerEntityUserFlow": false
+    },
+    "apiConnectorConfiguration": {}
 }
 ```
 
@@ -153,8 +158,8 @@ Content-type: application/json
 
 ``` http
 POST https://graph.microsoft.com/beta/identity/b2cUserFlows
+Location: https://graph.microsoft.com/beta/identity/b2cUserFlows('B2C_1_Customer')
 Content-type: application/json
-Content-length: 154
 
 {
     "id": "Customer",
@@ -162,9 +167,7 @@ Content-length: 154
     "userFlowTypeVersion": 3,
     "identityProviders": [
         {
-            "id": "Facebook-OAuth",
-            "type": "Facebook",
-            "Name": "Facebook"
+            "id": "Facebook-OAuth"
         }
     ]
 }
@@ -190,7 +193,7 @@ Content-length: 154
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -202,15 +205,20 @@ Content-length: 154
 
 ```http
 HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer
 Content-type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2cUserFlows/$entity",
     "id": "B2C_1_Customer",
     "userFlowType": "signUpOrSignIn",
     "userFlowTypeVersion": 3,
     "isLanguageCustomizationEnabled": false,
-    "defaultLanguageTag": "en"
+    "defaultLanguageTag": "en",
+    "authenticationMethods": "0",
+    "tokenClaimsConfiguration": {
+        "isIssuerEntityUserFlow": false
+    },
+    "apiConnectorConfiguration": {}
 }
 ```
 
@@ -280,7 +288,7 @@ Content-length: 154
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

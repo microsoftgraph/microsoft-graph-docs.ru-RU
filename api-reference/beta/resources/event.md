@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 372de4192c0cf4687fa37a128bc68d9eeb77711c
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: eb48206cbbf2decd4d7a639606bb5e8b316e3ad7
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696906"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767050"
 ---
 # <a name="event-resource-type"></a>Тип ресурса event
 
@@ -35,85 +35,46 @@ ms.locfileid: "58696906"
 - Outlook автоматически принимает все приглашения на собрания от имени группы. Приглашения на собрания можно [принять](../api/event-accept.md), [принять под вопросом](../api/event-tentativelyaccept.md) или [отклонить](../api/event-decline.md) только в календарях _пользователя_.
 - Outlook не поддерживает напоминания о событиях группы. [Напоминание](reminder.md) можно [отложить](../api/event-snoozereminder.md) или [отключить](../api/event-dismissreminder.md) только для календарей _пользователя_.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="methods"></a>Методы
 
-Ниже показано представление JSON ресурса.
+| Метод           | Возвращаемый тип    |Описание|
+|:---------------|:--------|:----------|
+|[Перечисление событий](../api/user-list-events.md)|Коллекция [Event](event.md) |Получение списка объектов [event](../resources/event.md) в почтовом ящике пользователя. В этом списке указаны единичные собрания и главные собрания в соответствующих рядах.|
+|[Создание события](../api/user-post-events.md) |[event](event.md)| Создание события путем записи в коллекцию экземпляров.|
+|[Получение события](../api/event-get.md) | [event](event.md) |Считывание свойств и отношений объекта event.|
+|[Обновление](../api/event-update.md) | [event](event.md)   |Обновление объекта event. |
+|[Удаление](../api/event-delete.md) | Нет |Удаление объекта event. |
+|[delta](../api/event-delta.md)|Коллекция объектов [event](event.md)|Получение списка событий, которые были добавлены в **calendarView** (диапазон событий) основного календаря пользователя, обновлены в нем или удалены из него.|
+|[forward](../api/event-forward.md)|Нет|Позволяет организатору или участнику собрания пересылать приглашение на собрание новому получателю.|
+|[cancel](../api/event-cancel.md) | Нет | Отправка сообщения об отмене от организатора всем участникам и отмена указанного собрания. |
+|[accept](../api/event-accept.md)|Нет|Принятие указанного события в календаре пользователя.|
+|[tentativelyAccept](../api/event-tentativelyaccept.md)|Нет|Принятие под вопросом указанного события в календаре пользователя.|
+|[decline](../api/event-decline.md)|Нет|Отклонение приглашения на указанное событие в календаре пользователя.|
+|[dismissReminder](../api/event-dismissreminder.md)|Нет|Отключение напоминания для указанного события в календаре пользователя.|
+|[snoozeReminder](../api/event-snoozereminder.md)|Нет|Откладывание напоминания для указанного события в календаре пользователя на другое время.|
+|[Перечисление экземпляров](../api/event-list-instances.md) |Коллекция [Event](event.md)| Получение коллекции объектов Event.|
+|**Вложения**| | |
+|[Список вложений](../api/event-list-attachments.md) |Коллекция [Attachment](attachment.md)| Получение всех вложений, добавленных к данным о событии.|
+|[Добавление вложения](../api/event-post-attachments.md) |[Attachment](attachment.md)| Добавление нового вложения к данным о событии путем публикации в коллекции вложений.|
+|**Открытые расширения**| | |
+|[Создание открытого расширения](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий ресурс.|
+|[Получение открытого расширения](../api/opentypeextension-get.md) |Коллекция объектов [openTypeExtension](opentypeextension.md)| Получение открытого расширения, определяемого именем расширения.|
+|**Расширения схемы**| | |
+|[Добавление значений расширений для схемы](/graph/extensibility-schema-groups) || Создание определения расширения схемы и его дальнейшее использование для добавления в ресурс введенных пользовательских данных.|
+|**Расширенные свойства**| | |
+|[Создание расширенного свойства с одним значением](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[event](event.md)  |Создание одного или нескольких расширенных свойств с одним значением в новом или существующем событии.   |
+|[Получение события с расширенным свойством с одним значением](../api/singlevaluelegacyextendedproperty-get.md)  | [event](event.md) | Получение событий, которые содержат расширенное свойство с одним значением, с помощью параметра `$expand` или `$filter`. |
+|[Создание расширенного свойства с несколькими значениями](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [event](event.md) | Создание одного или нескольких расширенных свойств с несколькими значениями в новом или существующем событии.  |
+|[Получение события с расширенным свойством с несколькими значениями](../api/multivaluelegacyextendedproperty-get.md)  | [event](event.md) | Получение события, которое содержит расширенное свойство с несколькими значениями, с помощью параметра `$expand`. |
 
-<!-- {
-  "blockType": "resource",
-   "keyProperty": "id",
-  "optionalProperties": [
-    "attachments",
-    "calendar",
-    "extensions",
-    "instances",
-    "singleValueExtendedProperties",
-    "multiValueExtendedProperties"
-  ],
-  "@odata.type": "microsoft.graph.event"
-}-->
 
-```json
-{
-  "allowNewTimeProposals": "Boolean",
-  "attendees": [{"@odata.type": "microsoft.graph.attendee"}],
-  "body": {"@odata.type": "microsoft.graph.itemBody"},
-  "bodyPreview": "string",
-  "cancelledOccurrences":["string"],
-  "categories": ["string"],
-  "changeKey": "string",
-  "createdDateTime": "String (timestamp)",
-  "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
-  "exceptionOccurrences":["string"],
-  "hasAttachments": true,
-  "hideAttendees": false,
-  "uid": "string",
-  "id": "string (identifier)",
-  "importance": "String",
-  "isAllDay": true,
-  "isCancelled": true,
-  "isDraft": false,
-  "isOnlineMeeting": true,
-  "isOrganizer": true,
-  "isReminderOn": true,
-  "lastModifiedDateTime": "String (timestamp)",
-  "location": {"@odata.type": "microsoft.graph.location"},
-  "locations": [{"@odata.type": "microsoft.graph.location"}],
-  "occurrenceId":"string",
-  "onlineMeeting": {"@odata.type": "microsoft.graph.onlineMeetingInfo"},
-  "onlineMeetingProvider": "string",
-  "onlineMeetingUrl": "string",
-  "organizer": {"@odata.type": "microsoft.graph.recipient"},
-  "originalEndTimeZone": "string",
-  "originalStart": "String (timestamp)",
-  "originalStartTimeZone": "string",
-  "recurrence": {"@odata.type": "microsoft.graph.patternedRecurrence"},
-  "reminderMinutesBeforeStart": 1024,
-  "responseRequested": true,
-  "responseStatus": {"@odata.type": "microsoft.graph.responseStatus"},
-  "sensitivity": "String",
-  "seriesMasterId": "string",
-  "showAs": "String",
-  "start": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
-  "subject": "string",
-  "type": "String",
-  "webLink": "string",
-
-  "attachments": [ { "@odata.type": "microsoft.graph.attachment" } ],
-  "calendar": { "@odata.type": "microsoft.graph.calendar" },
-  "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
-  "instances": [ { "@odata.type": "microsoft.graph.event" }],
-  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }],
-  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }]
-}
-```
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |allowNewTimeProposals| Boolean | Значение `True`, если организатор собрания разрешает приглашенным предлагать новое время при ответе, в противном случае — `false`. Необязательный параметр. Значение по умолчанию: `true`. |
 |attendees|Коллекция [Attendee](attendee.md)|Коллекция участников события.|
 |body|[ItemBody](itembody.md)|Текст сообщения, связанного с событием. В формате HTML или текстовом формате.|
-|bodyPreview|String|Предварительный просмотр сообщения, связанного с событием. В текстовом формате.|
+|bodyPreview|Строка|Предварительный просмотр сообщения, связанного с событием. В текстовом формате.|
 |cancelledOccurrences|Коллекция String|Содержит значения свойства **occurrenceId** отмененных экземпляров в повторяющемся ряду, если событие является основным в этом ряду. Отмененные экземпляры в повторяющемся ряду называются cancelledOccurences.<br><br>Возвращается только для $select в операции [Get](../api/event-get.md), в которой указывается идентификатор основного события в ряду (т. е. значение свойства seriesMasterId).|
 |categories|Коллекция String|Категории, связанные с событием. Каждая категория соответствует свойству **displayName** объекта [outlookCategory](outlookcategory.md), определенного для пользователя.|
 |changeKey|String|Указывает версию объекта события. При каждом изменении события также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
@@ -139,7 +100,7 @@ ms.locfileid: "58696906"
 |onlineMeetingUrl|String|URL-адрес собрания. Свойство будет задано только в том случае, если организатор определяет в Outlook, что событие является собранием по сети, например в Skype. Только для чтения.<br>Чтобы получить доступ к URL-адресу и присоединиться к собранию по сети, воспользуйтесь **joinUrl**, который предоставляется через свойство **event**, **onlineMeeting**. В дальнейшем использовать свойство **onlineMeetingUrl** не рекомендуется. |
 |organizer|[Recipient](recipient.md)|Организатор события.|
 |originalEndTimeZone|String|Часовой пояс завершения события, указанный при его создании. Значение `tzone://Microsoft/Custom` указывает, что в классическом приложении Outlook задан традиционный пользовательский часовой пояс.|
-|originalStart|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
+|originalStart|DateTimeOffset|Представляет время начала события, когда оно изначально создается как вхождение или исключение в повторяющемся ряду. Это свойство не возвращается для событий, которые являются одиночными экземплярами. Сведения времени и даты представлены в формате ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |originalStartTimeZone|String|Часовой пояс начала события, указанный при его создании. Значение `tzone://Microsoft/Custom` указывает, что в классическом приложении Outlook задан традиционный пользовательский часовой пояс.|
 |recurrence|[PatternedRecurrence](patternedrecurrence.md)|Расписание повторения события.|
 |reminderMinutesBeforeStart|Int32|Позволяет указать, за сколько минут до начала события появляется напоминание.|
@@ -179,37 +140,78 @@ ms.locfileid: "58696906"
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для события. Только для чтения. Допускается значение null.|
 |singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для события. Только для чтения. Допускается значение null.|
 
-## <a name="methods"></a>Методы
+## <a name="json-representation"></a>Представление JSON
 
-| Метод           | Возвращаемый тип    |Описание|
-|:---------------|:--------|:----------|
-|[Перечисление событий](../api/user-list-events.md)|Коллекция [Event](event.md) |Получение списка объектов [event](../resources/event.md) в почтовом ящике пользователя. В этом списке указаны единичные собрания и главные собрания в соответствующих рядах.|
-|[Создание события](../api/user-post-events.md) |[event](event.md)| Создание события путем записи в коллекцию экземпляров.|
-|[Получение события](../api/event-get.md) | [event](event.md) |Считывание свойств и отношений объекта event.|
-|[Обновление](../api/event-update.md) | [event](event.md)   |Обновление объекта event. |
-|[Удаление](../api/event-delete.md) | Нет |Удаление объекта event. |
-|[delta](../api/event-delta.md)|Коллекция объектов [event](event.md)|Получение списка событий, которые были добавлены в **calendarView** (диапазон событий) основного календаря пользователя, обновлены в нем или удалены из него.|
-|[forward](../api/event-forward.md)|Нет|Позволяет организатору или участнику собрания пересылать приглашение на собрание новому получателю.|
-|[cancel](../api/event-cancel.md) | Нет | Отправка сообщения об отмене от организатора всем участникам и отмена указанного собрания. |
-|[accept](../api/event-accept.md)|Нет|Принятие указанного события в календаре пользователя.|
-|[tentativelyAccept](../api/event-tentativelyaccept.md)|Нет|Принятие под вопросом указанного события в календаре пользователя.|
-|[decline](../api/event-decline.md)|Нет|Отклонение приглашения на указанное событие в календаре пользователя.|
-|[dismissReminder](../api/event-dismissreminder.md)|Нет|Отключение напоминания для указанного события в календаре пользователя.|
-|[snoozeReminder](../api/event-snoozereminder.md)|Нет|Откладывание напоминания для указанного события в календаре пользователя на другое время.|
-|[Перечисление экземпляров](../api/event-list-instances.md) |Коллекция [Event](event.md)| Получение коллекции объектов Event.|
-|**Вложения**| | |
-|[Список вложений](../api/event-list-attachments.md) |Коллекция [Attachment](attachment.md)| Получение всех вложений, добавленных к данным о событии.|
-|[Добавление вложения](../api/event-post-attachments.md) |[Attachment](attachment.md)| Добавление нового вложения к данным о событии путем публикации в коллекции вложений.|
-|**Открытые расширения**| | |
-|[Создание открытого расширения](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий ресурс.|
-|[Получение открытого расширения](../api/opentypeextension-get.md) |Коллекция объектов [openTypeExtension](opentypeextension.md)| Получение открытого расширения, определяемого именем расширения.|
-|**Расширения схемы**| | |
-|[Добавление значений расширений для схемы](/graph/extensibility-schema-groups) || Создание определения расширения схемы и его дальнейшее использование для добавления в ресурс введенных пользовательских данных.|
-|**Расширенные свойства**| | |
-|[Создание расширенного свойства с одним значением](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[event](event.md)  |Создание одного или нескольких расширенных свойств с одним значением в новом или существующем событии.   |
-|[Получение события с расширенным свойством с одним значением](../api/singlevaluelegacyextendedproperty-get.md)  | [event](event.md) | Получение событий, которые содержат расширенное свойство с одним значением, с помощью параметра `$expand` или `$filter`. |
-|[Создание расширенного свойства с несколькими значениями](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [event](event.md) | Создание одного или нескольких расширенных свойств с несколькими значениями в новом или существующем событии.  |
-|[Получение события с расширенным свойством с несколькими значениями](../api/multivaluelegacyextendedproperty-get.md)  | [event](event.md) | Получение события, которое содержит расширенное свойство с несколькими значениями, с помощью параметра `$expand`. |
+Ниже этот ресурс представлен в формате JSON.
+
+<!-- {
+  "blockType": "resource",
+   "keyProperty": "id",
+  "optionalProperties": [
+    "attachments",
+    "calendar",
+    "extensions",
+    "instances",
+    "singleValueExtendedProperties",
+    "multiValueExtendedProperties"
+  ],
+  "@odata.type": "microsoft.graph.event"
+}-->
+
+```json
+{
+  "allowNewTimeProposals": "Boolean",
+  "attendees": [{"@odata.type": "microsoft.graph.attendee"}],
+  "body": {"@odata.type": "microsoft.graph.itemBody"},
+  "bodyPreview": "string",
+  "cancelledOccurrences":["string"],
+  "categories": ["string"],
+  "changeKey": "string",
+  "createdDateTime": "String (timestamp)",
+  "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "exceptionOccurrences":["string"],
+  "hasAttachments": true,
+  "hideAttendees": false,
+  "uid": "string",
+  "id": "string (identifier)",
+  "importance": "String",
+  "isAllDay": true,
+  "isCancelled": true,
+  "isDraft": false,
+  "isOnlineMeeting": true,
+  "isOrganizer": true,
+  "isReminderOn": true,  
+  "lastModifiedDateTime": "String (timestamp)",
+  "location": {"@odata.type": "microsoft.graph.location"},
+  "locations": [{"@odata.type": "microsoft.graph.location"}],
+  "occurrenceId":"string",
+  "onlineMeeting": {"@odata.type": "microsoft.graph.onlineMeetingInfo"},
+  "onlineMeetingProvider": "string",
+  "onlineMeetingUrl": "string",
+  "organizer": {"@odata.type": "microsoft.graph.recipient"},
+  "originalEndTimeZone": "string",
+  "originalStart": "String (timestamp)",
+  "originalStartTimeZone": "string",
+  "recurrence": {"@odata.type": "microsoft.graph.patternedRecurrence"},
+  "reminderMinutesBeforeStart": 1024,
+  "responseRequested": true,
+  "responseStatus": {"@odata.type": "microsoft.graph.responseStatus"},
+  "sensitivity": "String",
+  "seriesMasterId": "string",
+  "showAs": "String",
+  "start": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "subject": "string",
+  "type": "String",
+  "webLink": "string",
+
+  "attachments": [ { "@odata.type": "microsoft.graph.attachment" } ],
+  "calendar": { "@odata.type": "microsoft.graph.calendar" },
+  "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
+  "instances": [ { "@odata.type": "microsoft.graph.event" }],
+  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }],
+  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }]
+}
+```
 
 ## <a name="see-also"></a>См. также
 

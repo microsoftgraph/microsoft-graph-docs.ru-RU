@@ -1,16 +1,16 @@
 ---
 title: Обновление unifiedRoleAssignmentMultiple
 description: Обновление нового объекта unifiedRoleAssignmentMultiple.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2925431e15516e678bb60d61e6c9ef4f4bb7fea9
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: e2a88232dae91d5a05f726a59dc155dbfa54ec42
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534069"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766721"
 ---
 # <a name="update-unifiedroleassignmentmultiple"></a>Обновление unifiedRoleAssignmentMultiple
 
@@ -24,8 +24,6 @@ ms.locfileid: "53534069"
 - Облачный КОМПЬЮТЕР 
 - управление устройствами (Intune)
 
-[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
-
 Напротив, [unifiedRoleAssignment](../resources/unifiedroleassignment.md) не поддерживает обновление.
 
 ## <a name="permissions"></a>Разрешения
@@ -38,7 +36,7 @@ ms.locfileid: "53534069"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  CloudPC.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | CloudPC.ReadWrite.All  |
+|Для приложения | CloudPC.ReadWrite.All  |
 
 ### <a name="for-device-management-intune-provider"></a>Для поставщика управления устройствами (Intune)
 
@@ -46,7 +44,7 @@ ms.locfileid: "53534069"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  DeviceManagementRBAC.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | DeviceManagementRBAC.ReadWrite.All |
+|Для приложения | DeviceManagementRBAC.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -76,7 +74,7 @@ PATCH /roleManagement/deviceManagement/roleAssignments
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код ответа и обновленный объект `200 OK` [unifiedAssignmentMultiple](../resources/unifiedroleassignmentMultiple.md) в тексте ответа.
 

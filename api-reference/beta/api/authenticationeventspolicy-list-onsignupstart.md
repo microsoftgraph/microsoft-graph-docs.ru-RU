@@ -2,15 +2,15 @@
 title: Список слушателей onSignUpStart
 description: Получите коллекцию ресурсов authenticationListener, поддерживаемую событием onSignupStart.
 author: jkdouglas
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1cdf120afeb553124e18488cb0cde20b6de23056
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: e8a9df7abd1229b38c0939372f6595a2bd4f073b
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438556"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59764642"
 ---
 # <a name="list-onsignupstart-listeners"></a>Список слушателей onSignUpStart
 
@@ -20,7 +20,7 @@ ms.locfileid: "50438556"
 
 Получите коллекцию ресурсов authenticationListener, поддерживаемую событием onSignupStart. Событие onSignUpStart поддерживает [тип invokeUserFlowListener.](../resources/invokeuserflowlistener.md)
 
-При присвоении [invokeUserFlowListener](../resources/invokeuserflowlistener.md) событию onSignUpStart приложение связано с потоком пользователей, [](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) что позволяет самообслуживке зарегистрироваться на нем. После создания события проверки подлинности для обращения к потоку пользователей пользователи, которые идут в это приложение, смогут инициировать поток регистрации, который содержит учетную запись гостей.
+При присвоении [invokeUserFlowListener](../resources/invokeuserflowlistener.md) событию onSignUpStart приложение связано с потоком пользователей, [](/azure/active-directory/external-identities/self-service-sign-up-overview) что позволяет самообслуживке зарегистрироваться на нем. После создания события проверки подлинности для обращения к потоку пользователей пользователи, которые идут в это приложение, смогут инициировать поток регистрации, который содержит учетную запись гостей.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,7 +30,7 @@ ms.locfileid: "50438556"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration|
+|Для приложения|Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,7 +53,7 @@ GET /identity/events/onSignupStart
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/identity/events/onSignupStart
 
 Ниже приведен пример отклика.
 
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -144,7 +144,7 @@ GET https://graph.microsoft.com/beta/identity/events/onSignupStart?$expand=micro
 
 Ниже приведен пример отклика.
 
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

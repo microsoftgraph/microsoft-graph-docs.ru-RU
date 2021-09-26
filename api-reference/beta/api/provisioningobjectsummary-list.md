@@ -1,16 +1,16 @@
 ---
 title: Список provisioningObjectSummary
 description: Получите все события, которые произошли в клиенте.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 9e907b5fd55d6022fde87816179c89a7689be41b
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 52b5348218817fd4f8974a529879d15df588ee91
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231377"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59766896"
 ---
 # <a name="list-provisioningobjectsummary"></a>Список provisioningObjectSummary
 
@@ -28,7 +28,10 @@ ms.locfileid: "52231377"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
-|Для приложений | AuditLog.Read.All |
+|Для приложения | AuditLog.Read.All и Directory.Read.All |
+
+ > [!IMPORTANT]
+> Этот API имеет [известные](/graph/known-issues#azure-ad-activity-reports) проблемы и в настоящее время требует согласия на оба **auditLog.Read.All** и **Directory.Read.All** разрешений.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,7 +51,7 @@ GET /auditLogs/provisioning
 |[$top](/graph/query-parameters#top-parameter)|Задает размер страницы результатов.|`/auditLogs/provisioning?$top=20`|
 |[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц. Для создания маркера необходимо пройти верхний фильтр запроса. Нельзя указать количество пропущенных результатов.|`/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"`|
 
-Общие сведения см. в статье [Параметры запроса OData](/graph/query_parameters).
+Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ### <a name="attributes-supported-by-the-filter-parameter"></a>Атрибуты, поддерживаемые параметром $filter
 

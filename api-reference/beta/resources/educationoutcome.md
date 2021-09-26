@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса educationOutcome
+title: тип ресурсов educationOutcome
 description: Результат классификации назначения
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 788985e5e63272fea31e579c2da4472ec065dfc5
-ms.sourcegitcommit: eb31a6b4a582a59b44df3453450a82fd366342d0
+ms.openlocfilehash: 327ab957b3c78a9b6c848a6b29c1108fee6928c4
+ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50153633"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59767407"
 ---
-# <a name="educationoutcome-resource-type"></a>Тип ресурса educationOutcome
+# <a name="educationoutcome-resource-type"></a>тип ресурсов educationOutcome
 
 Пространство имен: microsoft.graph
 
@@ -25,6 +25,13 @@ ms.locfileid: "50153633"
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
 | [Обновление educationOutcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Обновление объекта educationOutcome. |
+
+## <a name="properties"></a>Свойства
+| Свойство     | Тип   |Описание|
+|:---------------|:--------|:----------|
+|id|String|Только для чтения.|
+|lastModifiedBy|[identitySet](identityset.md)|Человек, обновивший ресурс.|
+|lastModifiedDateTime|DateTimeOffset|Время последнего изменения ресурса.  Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, полночь UTC на 1 января 2021 года `2021-01-01T00:00:00Z` .|
 
 ## <a name="relationships"></a>Связи
 
