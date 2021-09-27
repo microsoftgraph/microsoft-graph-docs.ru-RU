@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 225961b2323c4db8f8d9588ce9b7bf9c8019c8c9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cd07f4ad9f343af7a3de1c1b4aff79f4ad527bd1
+ms.sourcegitcommit: 30fca91ed203a9ab7b0562833ce0c20c7fb7b7b1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59130491"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59931985"
 ---
 # <a name="list-unifiedroleassignments"></a>Список unifiedRoleAssignments
 
 Пространство имен: microsoft.graph
 
-Получите список объектов [unifiedRoleAssignment](../resources/unifiedroleassignment.md) для поставщика.
+Получите список [объектов unifiedRoleAssignment](../resources/unifiedroleassignment.md) для поставщика каталогов.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,15 +26,16 @@ ms.locfileid: "59130491"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Приложение | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /roleManagement/directory/roleAssignments?$filter=roleDefinitionId {eq roleDefinitionId}
-GET /roleManagement/directory/roleAssignments?$filter=principalId {eq principalId}
+GET /roleManagement/directory/roleAssignments?$filter=principalId eq '{principal id}'
+
+GET /roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
 ```
 
 ## <a name="query-parameters"></a>Параметры запроса
@@ -47,7 +48,7 @@ GET /roleManagement/directory/roleAssignments?$filter=principalId {eq principalI
 |:----------|:----------|
 | Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -211,7 +212,7 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments?$f
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

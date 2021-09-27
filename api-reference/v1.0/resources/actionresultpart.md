@@ -1,22 +1,20 @@
 ---
 title: тип ресурса actionResultPart
 description: Абстрактный тип для моделирования ответов массовых операций.
-author: AkJo
+author: abshar-teams
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 63a4f05e9096c0abd2bb2f207af2702fed3b47e3
+ms.openlocfilehash: fb09088bfdd298d286447b63453f1965f38a9e6a
 ms.sourcegitcommit: 30fca91ed203a9ab7b0562833ce0c20c7fb7b7b1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/27/2021
-ms.locfileid: "59931964"
+ms.locfileid: "59932072"
 ---
 # <a name="actionresultpart-resource-type"></a>тип ресурса actionResultPart
 
 Пространство имен: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Абстрактный тип, который служит базой для моделирования ответов массовых операций. Свойство **ошибки** выборочно заполняется в зависимости от того, представляет ли ответ ошибку.
 
@@ -46,7 +44,6 @@ ms.locfileid: "59931964"
 ```
 ## <a name="see-also"></a>См. также
 
-- [aadUserConversationMemberResult](aadUserConversationMemberResult.md)
 - [Добавление в команду участников оптом](../api/conversationmembers-add.md)
 
 <!-- uuid: 20fd7863-9545-40d4-ae8f-fee2d115a690

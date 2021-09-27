@@ -5,12 +5,12 @@ author: Harini84
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: b210bff7fe8dafb7ad810fd193955d1b17f2aa6f
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 05d702ed053b5359a480c5838df75988f20849bc
+ms.sourcegitcommit: 30fca91ed203a9ab7b0562833ce0c20c7fb7b7b1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766973"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59931999"
 ---
 # <a name="event-resource-type"></a>Тип ресурса event
 
@@ -82,8 +82,9 @@ ms.locfileid: "59766973"
 |exceptionOccurrences|Коллекция String|Содержит значения свойства **id** экземпляров событий, которые являются исключениями в повторяющемся ряду.<br>Исключения могут отличаться от других вхождений в повторяющемся ряду, таких как тема, время начала или окончания и участники. Исключения не включают отмененные вхождения.<br><br>Возвращается только для $select и $expand в операции [GET](../api/event-get.md), в которой указывается идентификатор основного события в ряду (т. е. значение свойства seriesMasterId).|
 |hasAttachments|Boolean|Задайте значение true, если у события есть вложения.|
 |hideAttendees|Boolean|Если присвоено значение `true`, каждый участник видит только себя в приглашении на собрание и списке собрания **Отслеживание**. Значение по умолчанию: false.|
-|id|String| Уникальный идентификатор события. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Только для чтения. |
-|importance|String|Важность события. Возможные значения: `low`, `normal`, `high`.|
+|iCalUId|String|Уникальный идентификатор для события в календарях. Этот идентификатор отличается для каждого вхождения повторяющегося ряда. Только для чтения.|
+|id|String| Уникальный идентификатор события. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] С учетом регистра и только для чтения.|
+|importance|importance|Важность события. Допустимые значения: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Задайте значение true, если событие длится весь день. Если присвоено значение true, независимо от длительности события (один или несколько дней) время его начала и окончания должно быть установлено на полночь в одном часовом поясе.|
 |isCancelled|Boolean|Задайте значение true, если событие отменено.|
 |isDraft|Логический|Присвоено значение true, если пользователь обновил собрание в Outlook, но не отправил обновления участникам. Присвоено значение false, если все изменения отправлены или событие является встречей без участников.|

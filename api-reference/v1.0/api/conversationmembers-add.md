@@ -1,30 +1,28 @@
 ---
 title: 'conversationMember: add'
-description: Массовое добавление участников в команду.
-author: nkramer
+description: Добавьте в команду участников оптом.
+author: abshar-teams
 doc_type: apiPageType
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: c54b13d0b0388d35def5989dbe840274a7f79358
+ms.openlocfilehash: 9d313e6d609ad8192541e0d2a19ab15f14c5ed11
 ms.sourcegitcommit: 30fca91ed203a9ab7b0562833ce0c20c7fb7b7b1
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/27/2021
-ms.locfileid: "59932013"
+ms.locfileid: "59932075"
 ---
 # <a name="conversationmember-add"></a>conversationMember: add
 
 Пространство имен: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Добавление нескольких участников в [команду](../resources/team.md) одним запросом. Отклик предоставляет сведения о том, каких участников можно создать, а каких — нельзя.
+Добавление нескольких участников в [команду](../resources/team.md) одним запросом. В ответе приводится подробная информация о том, какие членства могут быть созданы и не могут быть созданы.
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий) |
+|Тип разрешения      | Разрешения (в порядке повышения привилегий) | 
 |:--------------------|:--------------------------|
 | Делегированные (рабочая или учебная учетная запись) | TeamMember.ReadWrite.All  |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
@@ -33,7 +31,7 @@ ms.locfileid: "59932013"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Это связывающее действие для добавления нескольких элементов в коллекцию **conversationMember** одним запросом.
+Это связанное действие, чтобы добавить несколько элементов в **коллекцию conversationMember** в одном запросе.
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -60,7 +58,7 @@ POST /teams/{team-id}/members/add
 
 В случае успеха это действие возвращает код отклика `200 OK` и коллекцию производных ресурса [actionResultPart](../resources/actionresultpart.md) в тексте отклика.
 
-Этот API возвращает отклик `200` с указанием, что все предоставленные участники были добавлены в команду, или отклик `207` с указанием, что только некоторые из предоставленных участников были добавлены в команду. Вызывающая сторона должна проверить полезные данные отклика, чтобы определить, какого участника не удалось добавить. Текст отклика является коллекцией производных ресурса [actionResultPart](../resources/actionresultpart.md).
+Этот API возвращает ответ, который указывает, что все поставленные члены были добавлены в команду или ответ, который указывает, что в команду были добавлены только некоторые из `200` `207` поставленных членов. Вызывающая сторона должна проверить полезные данные отклика, чтобы определить, какого участника не удалось добавить. Текст отклика является коллекцией производных ресурса [actionResultPart](../resources/actionresultpart.md).
 
 ## <a name="examples"></a>Примеры
 
@@ -70,15 +68,13 @@ POST /teams/{team-id}/members/add
 
 В следующем примере показан запрос на добавление нескольких участников в команду.
 
-# <a name="http"></a>[HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "bulkaddmembers_team"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/e4183b04-c9a2-417c-bde4-70e3ee46a6dc/members/add
+POST https://graph.microsoft.com/v1.0/teams/e4183b04-c9a2-417c-bde4-70e3ee46a6dc/members/add
 Content-Type: application/json
 
 {
@@ -86,40 +82,23 @@ Content-Type: application/json
         {
             "@odata.type": "microsoft.graph.aadUserConversationMember",
             "roles":[],
-            "user@odata.bind": "https://graph.microsoft.com/beta/users('18a80140-b0fb-4489-b360-2f6efaf225a0')"
+            "user@odata.bind": "https://graph.microsoft.com/v1.0/users('18a80140-b0fb-4489-b360-2f6efaf225a0')"
         },
         {
             "@odata.type": "microsoft.graph.aadUserConversationMember",
             "roles":["owner"],
-            "user@odata.bind": "https://graph.microsoft.com/beta/users('86503198-b81b-43fe-81ee-ad45b8848ac9')"
+            "user@odata.bind": "https://graph.microsoft.com/v1.0/users('86503198-b81b-43fe-81ee-ad45b8848ac9')"
         }
     ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/bulkaddmembers-team-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/bulkaddmembers-team-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/bulkaddmembers-team-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/bulkaddmembers-team-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
-> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -132,7 +111,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.aadUserConversationMemberResult)",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.aadUserConversationMemberResult)",
     "value": [
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMemberResult",
@@ -154,7 +133,6 @@ Content-Type: application/json
 
 В следующем примере показан запрос на добавление нескольких участников в команду, приводящий к частичному сбою.
 
-# <a name="http"></a>[HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",
@@ -162,7 +140,7 @@ Content-Type: application/json
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/e4183b04-c9a2-417c-bde4-70e3ee46a6dc/members/add
+POST https://graph.microsoft.com/v1.0/teams/e4183b04-c9a2-417c-bde4-70e3ee46a6dc/members/add
 Content-Type: application/json
 
 {
@@ -170,40 +148,23 @@ Content-Type: application/json
         {
             "@odata.type": "microsoft.graph.aadUserConversationMember",
             "roles":[],
-            "user@odata.bind": "https://graph.microsoft.com/beta/users('18a80140-b0fb-4489-b360-2f6efaf225a0')"
+            "user@odata.bind": "https://graph.microsoft.com/v1.0/users('18a80140-b0fb-4489-b360-2f6efaf225a0')"
         },
         {
             "@odata.type": "microsoft.graph.aadUserConversationMember",
             "roles":["owner"],
-            "user@odata.bind": "https://graph.microsoft.com/beta/users('86503198-b81b-43fe-81ee-ad45b8848ac9')"
+            "user@odata.bind": "https://graph.microsoft.com/v1.0/users('86503198-b81b-43fe-81ee-ad45b8848ac9')"
         }
     ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/bulkaddmembers-team-partial-failure-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/bulkaddmembers-team-partial-failure-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/bulkaddmembers-team-partial-failure-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/bulkaddmembers-team-partial-failure-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 
-> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -216,7 +177,7 @@ HTTP/1.1 207 MULTI-STATUS
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.addConversationMemberResult)",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.addConversationMemberResult)",
     "value": [
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMemberResult",
