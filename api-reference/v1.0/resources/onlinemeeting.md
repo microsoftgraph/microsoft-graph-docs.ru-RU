@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: f951d5274454e31643acb008488ceffe51451a64
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e07042b485276ab8d8e712d9bf64e32a5771f5c7
+ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072017"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59979357"
 ---
 # <a name="onlinemeeting-resource-type"></a>Тип ресурса onlineMeeting
 
@@ -34,9 +34,9 @@ ms.locfileid: "59072017"
 | :-------------------- | :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)                       | Указывает, кто может быть презентовщиком на собрании. Возможные значения перечислены в следующей таблице.                          |
 | allowAttendeeToEnableCamera     | Логический                       | Указывает, могут ли участники включить камеру.                          |
-| allowAttendeeToEnableMic     | Boolean                       | Указывает, могут ли участники включить микрофон.                          |
+| allowAttendeeToEnableMic     | Логический                       | Указывает, могут ли участники включить микрофон.                          |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Указывает режим чата собраний. |
-| allowTeamworkReactions | Boolean | Указывает, Teams для собрания включены ли Teams реакции. |
+| allowTeamworkReactions | Логический | Указывает, Teams для собрания включены ли Teams реакции. |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | Сведения о доступе к телефону для собрания в Интернете. Только для чтения.                                                   |
 | broadcastSettings              | [broadcastMeetingSettings](broadcastMeetingSettings.md)                      | Параметры, связанных с живым событием.                                                                  |
 | chatInfo              | [chatInfo](chatinfo.md)                       | Сведения о чате, связанные с этой онлайн-встречей.                                                                  |
@@ -58,13 +58,15 @@ ms.locfileid: "59072017"
 | Значение              | Описание                                                   |
 | ------------------ | ------------------------------------------------------------- |
 | все           | Каждый — это презентер (это параметр по умолчанию).             |
-| organization;       | Каждый в организации организатора — это презентер.          |
+| organization       | Каждый в организации организатора — это презентер.          |
 | roleIsPresenter    | Только участники, роль которых является презентатором, являются участниками. |
 | organizer          | Только организатор — это презентер.                           |
 | unknownFutureValue | Unknow future value.                                          |
 
-> [!NOTE]
-> Если установлено значение **allowedPresenters,** укажите роль собрания каждого участника собрания с помощью свойства `roleIsPresenter` [role meetingParticipantInfo.](../resources/meetingparticipantinfo.md) 
+> [!TIP]
+>
+>- При создании или обновлении собрания  в Интернете со значением разрешенныхпрецентов, заданных, включаем полный список участников с заданными участниками роли, заданными в тексте `roleIsPresenter`   `presenter` запроса.
+>- При создании или обновлении собрания  в Интернете со значением разрешенныхпрецентов, установленных для других значений, чем , роль участников будет показываться, как в `roleIsPresenter` теле  `null` ответа.
 
 ### <a name="meetingchatmode-values"></a>значения meetingChatMode
 

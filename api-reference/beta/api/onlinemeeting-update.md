@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: cc81f0cd54c7a6e831339098510b1b4cde37bab7
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 3075b769342ab4e565679c82da50067ca5137476
+ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766392"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59979441"
 ---
 # <a name="update-onlinemeeting"></a>Обновление onlineMeeting
 
@@ -69,18 +69,18 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 | endDateTime                 | Даты и время                                                   | Время окончания собрания в UTC.                                                        | Нет                           |
 | subject                     | String                                                     | Тема собрания в Интернете.                                                  | Нет                           |
 | participants                | [meetingParticipants](../resources/meetingparticipants.md) | Участники, связанные с онлайн-собранием. Обновления могут быть только у участников. | Нет                           |
-| isEntryExitAnnounced        | Boolean                                                    | Следует ли объявлять о том, когда звонители присоединяются или уходят.                              | Да                          |
+| isEntryExitAnnounced        | Логический                                                    | Следует ли объявлять о том, когда звонители присоединяются или уходят.                              | Да                          |
 | lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbyBypassSettings.md) | Указывает, какие участники могут обойти вестибюль собрания.                          | Да                          |
 | allowedPresenters           | onlineMeetingPresenters                                    | Указывает, кто может быть презентовщиком на собрании.                                      | Да |
-| allowAttendeeToEnableCamera | Boolean                                                    | Указывает, могут ли участники включить камеру.                               | Да                          |
+| allowAttendeeToEnableCamera | Логический                                                    | Указывает, могут ли участники включить камеру.                               | Да                          |
 | allowAttendeeToEnableMic    | Логический                                                    | Указывает, могут ли участники включить микрофон.                           | Да                          |
 | allowMeetingChat            | meetingChatMode                                            | Указывает режим чата собраний.                                                 | Да                          |
-| allowTeamworkReactions      | Boolean                                                    | Указывает, Teams для собрания включены ли Teams реакции.                      | Да                          |
+| allowTeamworkReactions      | Логический                                                    | Указывает, Teams для собрания включены ли Teams реакции.                      | Да                          |
 
 > [!NOTE]
 >
 >- Список возможных значений для **allowedPresenters** и **allowMeetingChat** см. [в onlineMeeting.](../resources/onlinemeeting.md)
->- При обновлении значения **allowedPresenters** включай полный список участников с набором указанных участников в `roleIsPresenter`  `role` `presenter` тексте запроса.
+>- При обновлении значения **allowedPresenters** включай полный список участников с заданными участниками роли, заданными в `roleIsPresenter`   `presenter` тексте запроса.
 
 ## <a name="response"></a>Отклик
 

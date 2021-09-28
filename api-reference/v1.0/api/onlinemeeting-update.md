@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 66a7cac0fcdf63a09daa190549ff442304c1d29d
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: ce8131340ffd07b61fedcf189af90911a322925f
+ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766490"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59979385"
 ---
 # <a name="update-onlinemeeting"></a>Обновление onlineMeeting
 
@@ -78,7 +78,7 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 > [!NOTE]
 >
 >- Список возможных значений для **allowedPresenters** и **allowMeetingChat** см. [в onlineMeeting.](../resources/onlinemeeting.md)
->- При обновлении значения **allowedPresenters** включай полный список участников с набором указанных участников в `roleIsPresenter`  `role` `presenter` тексте запроса.
+>- При обновлении значения **allowedPresenters** включай полный список участников с заданными участниками роли, заданными в `roleIsPresenter`   `presenter` тексте запроса.
 
 ## <a name="response"></a>Отклик
 

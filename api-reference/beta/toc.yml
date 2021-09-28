@@ -262,7 +262,7 @@ items:
         href: overview.md
       - name: Пользователи
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/users.md
           - name: Пользователь
             href: resources/user.md
@@ -440,7 +440,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Примечания.
+          - name: Примечания
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -575,7 +575,7 @@ items:
                 href: api/usersettings-update.md
       - name: Группы
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/groups-overview.md
           - name: Group
             href: resources/group.md
@@ -752,7 +752,7 @@ items:
                 href: api/driveitem-list-children.md
           - name: Расширенные свойства
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -1356,7 +1356,7 @@ items:
                 href: api/outlookcategory-delete.md
           - name: Расширенные свойства
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -1488,7 +1488,7 @@ items:
                 href: api/call-logteleconferencedevicequality.md
           - name: Записи звонков
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/callrecords-api-overview.md
               - name: Запись вызова
                 items:
@@ -1496,9 +1496,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Получение
                     href: api/callrecords-callrecord-get.md
-              - name: Сеанс
+              - name: Session
                 items:
-                  - name: Сеанс
+                  - name: Session
                     href: resources/callrecords-session.md
                   - name: Список
                     href: api/callrecords-session-list.md
@@ -1542,11 +1542,11 @@ items:
       - name: Соответствие требованиям (предварительная версия)
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/complianceapioverview.md
           - name: Обнаружение электронных данных
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/ediscovery-eDiscoveryapioverview.md
               - name: Дело обнаружения электронных данных
                 href: resources/ediscovery-case.md
@@ -10021,7 +10021,7 @@ items:
                     href: api/managedtenants-windowsprotectionstate-get.md
           - name: Работоспособность и взаимодействие служб
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/service-communications-api-overview.md
               - name: Объявление службы
                 href: resources/serviceannouncement.md
@@ -10325,7 +10325,7 @@ items:
       - name: Файлы
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/onedrive.md
           - name: Диски
             href: resources/drive.md
@@ -10421,7 +10421,7 @@ items:
       - name: Финансовые показатели (предварительная версия)
         displayname: 'Dynamics, Dynamics 365 Business Central'
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/dynamics-graph-reference.md
           - name: Учетная запись
             href: resources/dynamics-account.md
@@ -10653,7 +10653,7 @@ items:
         items:
           - name: Обзор
             href: resources/azure-ad-overview.md
-          - name: Управление каталогами
+          - name: Управление каталогом
             items:
               - name: Административная единица
                 href: resources/administrativeunit.md
@@ -11058,7 +11058,7 @@ items:
             items:
               - name: Методы проверки подлинности
                 items:
-                  - name: Общие сведения
+                  - name: Обзор
                     href: resources/authenticationmethods-overview.md
                   - name: Список всех методов
                     href: api/authentication-list-methods.md
@@ -11391,7 +11391,7 @@ items:
                 items:
                   - name: Создание приглашения
                     href: api/invitation-post.md
-              - name: Организационный брендинг
+              - name: Фирменная символика организации
                 href: resources/organizationalbranding.md
                 items:
                   - name: Получение
@@ -11446,7 +11446,7 @@ items:
                         href: api/activitybasedtimeoutpolicy-delete.md
                   - name: Политика метода проверки подлинности приложений (предварительный просмотр)
                     items:
-                      - name: Общие сведения
+                      - name: Обзор
                         href: resources/applicationAuthenticationMethodPolicy.md
                       - name: Политика управления приложениями клиента
                         items:
@@ -11506,7 +11506,7 @@ items:
                         href: api/authenticationflowspolicy-update.md
                   - name: Политика методов проверки подлинности
                     items:
-                      - name: Общие сведения
+                      - name: Обзор
                         href: resources/authenticationmethodspolicies-overview.md
                       - name: Политика методов проверки подлинности
                         href: resources/authenticationmethodspolicy.md
@@ -12506,7 +12506,7 @@ items:
                 href: api/messagerule-delete.md
           - name: Расширенные свойства
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -12524,7 +12524,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Получение многозначного свойства
                     href: api/multivaluelegacyextendedproperty-get.md
-      - name: Заметки
+      - name: Примечания
         displayName: OneNote
         items:
           - name: Обзор
@@ -12784,7 +12784,7 @@ items:
                     href: api/personname-update.md
                   - name: Delete
                     href: api/personname-delete.md
-              - name: Примечания.
+              - name: Примечания
                 items:
                   - name: Аннотация для человека
                     href: resources/personannotation.md
@@ -12980,9 +12980,9 @@ items:
           - name: Аналитика (предварительная версия)
             href: resources/useranalytics.md
             items:
-              - name: Параметры
+              - name: Settings
                 items:
-                  - name: Параметры
+                  - name: Settings
                     href: resources/settings.md
                   - name: Получение параметров
                     href: api/useranalytics-get-settings.md
@@ -13066,7 +13066,7 @@ items:
                 href: api/contact-delta.md
           - name: Расширенные свойства
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/extended-properties-overview.md
               - name: Однозначные расширенные свойства
                 items:
@@ -13088,7 +13088,7 @@ items:
         items:
           - name: Отчеты о действиях Azure AD
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/azure-ad-auditlog-overview.md
               - name: Аудит каталога
                 href: resources/directoryaudit.md
@@ -13111,7 +13111,7 @@ items:
                     href: api/provisioningobjectsummary-list.md
           - name: Отчеты о удостоверениях и доступе
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/report-identity-access.md
               - name: Активность приложений AD FS
                 items:
@@ -13168,7 +13168,7 @@ items:
                         href: api/authenticationmethodsroot-usersregisteredbymethod.md
           - name: Microsoft 365 отчеты об использовании
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/report.md
               - name: Использование устройств Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
@@ -13387,12 +13387,35 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: Получение количества действий
                     href: api/reportroot-getyammergroupsactivitycounts.md
+          - name: Microsoft Defender для Office 365 отчетов по безопасности
+            items:
+              - name: Отчеты об имитации атак
+                displayname: Attack simulation and training
+                href: resources/report-m365defender-reports-overview.md
+              - name: Повторные нарушители
+                items:
+                  - name: Повторный нарушитель
+                    href: resources/attacksimulationrepeatoffender.md
+                  - name: Получить повторяемую нарушительницу
+                    href: api/reportroot-getattacksimulationrepeatoffenders.md
+              - name: Данные моделирования
+                items:
+                  - name: Охват пользователей моделирования
+                    href: resources/attacksimulationsimulationusercoverage.md
+                  - name: Получить охват моделирования для пользователей
+                    href: api/reportroot-getattacksimulationsimulationusercoverage.md
+              - name: Учебные данные
+                items:
+                  - name: Обучение охвату пользователей
+                    href: resources/attacksimulationtrainingusercoverage.md
+                  - name: Охват обучающими программами для пользователей
+                    href: api/reportroot-getattacksimulationtrainingusercoverage.md
       - name: Поиск
         displayname: Microsoft Search API
         items:
-          - name: Запрос
+          - name: Query
             items:
-              - name: Общие сведения
+              - name: Обзор
                 href: resources/search-api-overview.md
               - name: Тип запроса поиска
                 href: resources/searchrequest.md
@@ -13461,7 +13484,7 @@ items:
         items:
           - name: Обзор
             href: resources/security-api-overview.md
-          - name: Действия
+          - name: Действия (предварительный просмотр)
             href: resources/securityaction.md
             items:
               - name: Перечисление действий по обеспечению безопасности
@@ -13483,6 +13506,41 @@ items:
                 href: api/alert-update.md
               - name: Обновление нескольких оповещений
                 href: api/alert-updatealerts.md
+          - name: Имитация атаки и обучение (предварительный просмотр)
+            items:
+              - name: Моделирование
+                items:
+                  - name: Моделирование
+                    href: resources/simulation.md
+                  - name: Моделирование списка
+                    href: api/attacksimulationroot-list-simulations.md
+                  - name: Список пользователей моделирования
+                    href: api/usersimulationdetails-list.md
+                  - name: Обзор моделирования
+                    href: api/simulationreportoverview-get.md
+              - name: Отчеты
+                items:
+                  - name: Отчеты об имитации атак
+                    displayname: Attack simulation and training
+                    href: resources/report-m365defender-reports-overview.md
+                  - name: Повторные нарушители
+                    items:
+                      - name: Повторный нарушитель
+                        href: resources/attacksimulationrepeatoffender.md
+                      - name: Получить повторяемую нарушительницу
+                        href: api/reportroot-getattacksimulationrepeatoffenders.md
+                  - name: Данные моделирования
+                    items:
+                      - name: Охват пользователей моделирования
+                        href: resources/attacksimulationsimulationusercoverage.md
+                      - name: Получить охват моделирования для пользователей
+                        href: api/reportroot-getattacksimulationsimulationusercoverage.md
+                  - name: Учебные данные
+                    items:
+                      - name: Обучение охвату пользователей
+                        href: resources/attacksimulationtrainingusercoverage.md
+                      - name: Охват обучающими программами для пользователей
+                        href: api/reportroot-getattacksimulationtrainingusercoverage.md
           - name: Защита информации
             items:
               - name: Метки
@@ -13502,7 +13560,7 @@ items:
                     href: api/informationprotectionlabel-extractlabel.md
               - name: Оценка угроз
                 items:
-                  - name: Общие сведения
+                  - name: Обзор
                     href: resources/threatassessment-api-overview.md
                   - name: Запрос на оценку угроз
                     href: resources/threatassessmentrequest.md
@@ -13532,10 +13590,10 @@ items:
                 href: api/securescorecontrolprofiles-list.md
               - name: Обновление профилей составляющих оценки безопасности
                 href: api/securescorecontrolprofiles-update.md
-          - name: Индикаторы аналитики угроз
+          - name: Индикаторы аналитики угроз (предварительный просмотр)
             href: resources/tiindicator.md
             items:
-              - name: Перечисление
+              - name: Список
                 href: api/tiindicators-list.md
               - name: Создание
                 href: api/tiindicators-post.md
@@ -13592,7 +13650,7 @@ items:
                 href: api/list-create.md
               - name: Список дочерних сайтов
                 href: api/site-list-subsites.md
-              - name: Permissions
+              - name: Разрешения
                 items:
                   - name: Разрешение
                     href: resources/permission.md
@@ -13759,7 +13817,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы
@@ -14415,7 +14473,7 @@ items:
       - name: Задачи To-Do
         displayName: Microsoft To Do
         items:
-          - name: Общие сведения
+          - name: Обзор
             href: resources/todo-overview.md
           - name: Список задач
             href: resources/todotasklist.md
@@ -14436,7 +14494,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Получение открытого расширения
                 href: api/opentypeextension-get.md
-          - name: Задача
+          - name: Задачи
             href: resources/todotask.md
             items:
               - name: Перечисление задач
@@ -14554,7 +14612,7 @@ items:
                     href: api/outlookcategory-delete.md
               - name: Расширенные свойства
                 items:
-                  - name: Общие сведения
+                  - name: Обзор
                     href: resources/extended-properties-overview.md
                   - name: Однозначные расширенные свойства
                     items:

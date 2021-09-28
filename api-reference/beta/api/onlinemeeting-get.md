@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 5290eb9b5868de908cef6d26404691bfe2d53ebe
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 32b8df664fa3206511b1bdb0a0f3d5559fd368d0
+ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767414"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59979406"
 ---
 # <a name="get-onlinemeeting"></a>Get onlineMeeting
 
@@ -36,8 +36,8 @@ ms.locfileid: "59767414"
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                            |
 |:---------------------------------------|:---------------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | OnlineMeetingArtifact.Read.ALl, OnlineMeetings.Read, OnlineMeetings.ReadWrite          |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                         |
-| Для приложения                            | OnlineMeetingArtifact.Read.ALl, OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All  |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                                                         |
+| Приложение                            | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All  |
 
 Чтобы использовать разрешение приложения для этого API, [](/graph/cloud-communication-online-meeting-application-access-policy) администраторы клиентов должны создать политику доступа к приложениям и предоставить ее пользователю для авторизации приложения, настроенного в политике, для получения артефактов собраний в Интернете от имени этого пользователя (с пользовательским ИД, указанным в пути запроса).
 
