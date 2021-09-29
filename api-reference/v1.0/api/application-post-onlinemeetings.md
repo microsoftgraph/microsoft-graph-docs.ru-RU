@@ -5,45 +5,40 @@ author: mkhribech
 ms.localizationpriority: high
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a5c6848b257964474a590901b092affcdfe627e7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9f0a5e4f19fc06e5407350ef4b5c8372d2ed7a9c
+ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59008442"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59979420"
 ---
 # <a name="create-onlinemeeting"></a>Создание объекта onlineMeeting
 
 Пространство имен: microsoft.graph
 
-Создание собрания по сети от имени пользователя с помощью ИД объекта (OID) в маркере пользователя.
+Создание собрания по сети от имени пользователя.
 
-> [!NOTE]
-> Собрание не отображается в календаре пользователя.
+> [!TIP]
+> Этот API создает автономное собрание, не связанное с событием в календаре пользователя; поэтому собрания, созданные через этот API, не будут отображаться в календаре пользователя.
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | OnlineMeetings.ReadWrite                    |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложений                            | OnlineMeetings.ReadWrite.All*               |
+| Для приложений                            | OnlineMeetings.ReadWrite.All                |
 
-> [!IMPORTANT]
-> \* Администраторам следует создать [политику доступа приложений](/graph/cloud-communication-online-meeting-application-access-policy) и предоставить ее пользователю, разрешив приложению, указанному в политике, создавать виртуальные собрания от имени этого пользователя (ИД пользователя указан в пути запроса).
+Чтобы использовать разрешение приложения для этого API, администраторам клиента следует создать [политику доступа приложений](/graph/cloud-communication-online-meeting-application-access-policy) и предоставить ее пользователю, чтобы разрешить приложению, указанному в политике, получать артефакты собрания по сети от имени этого пользователя с (ИД пользователя, указанным в пути запроса).
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Запрос при использовании токена делегирования:
+Для создания собрания по сети с делегированным разрешением (`/me`) и разрешением приложения (`/users/{userId}`):
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings
-```
-
-Запрос при использовании токена приложения:
-<!-- { "blockType": "ignored" } -->
-```http
 POST /users/{userId}/onlineMeetings
 ```
 
@@ -65,7 +60,7 @@ POST /users/{userId}/onlineMeetings
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [onlineMeeting](../resources/onlinemeeting.md) в тексте отклика.
 
-## <a name="examples"></a>Примеры 
+## <a name="examples"></a>Примеры
 
 ### <a name="example-1-create-an-online-meeting-with-user-token"></a>Пример 1. Создание собрания по сети с помощью маркера пользователя
 
