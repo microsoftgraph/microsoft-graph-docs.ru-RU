@@ -1,15 +1,15 @@
 ---
 title: Настройка уведомлений об изменениях, включающих данные ресурсов
 description: Microsoft Graph использует механизм веб-перехватчиков для доставки уведомлений об изменениях клиентам. Уведомления об изменениях могут включать свойства ресурсов.
-author: davidmu1
+author: Jumaodhiss
 ms.prod: non-product-specific
 ms.localizationpriority: high
-ms.openlocfilehash: f0e1c7698f147c9129cf495dbe3e7e831383a887
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4086189e31dcbe64f9d12aca1204320a3aff4428
+ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59028759"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59979238"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data"></a>Настройка уведомлений об изменениях, включающих данные ресурсов
 
@@ -114,6 +114,9 @@ Content-Type: application/json
 ### <a name="validation-tokens-in-the-change-notification"></a>Маркеры проверки в уведомлении об изменениях
 
 Уведомление об изменениях с данными ресурсов содержит дополнительное свойство **validationTokens**, содержащее массив маркеров JWT, созданных Microsoft Graph. Microsoft Graph создает один маркер для каждой отдельной пары приложения и клиента, для которой существует элемент в массиве **value**. Учитывайте, что уведомления об изменениях могут содержать разные элементы для различных приложений и клиентов, подписанных с помощью одинакового значения **notificationUrl**.
+
+> **Примечание.** Если вы настраиваете [доставку уведомлений об изменениях через Центры событий Azure](change-notifications-delivery.md), Microsoft Graph не будет отправлять маркеры проверки. Microsoft Graph не требуется проверять **notificationUrl**.
+
 
 В следующем примере уведомление об изменении содержит два элемента для одного приложения и двух разных клиентов, поэтому массив **validationTokens** содержит два маркера, требующих проверки.
 
