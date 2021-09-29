@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3431284ae8e59c12a7d85578089a49c8fbc7012a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7486f4223f8d9a5df1545556ac00c5c1678bbb80
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59085513"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59996502"
 ---
 # <a name="get-onlinemeeting"></a>Get onlineMeeting
 
@@ -29,11 +29,10 @@ ms.locfileid: "59085513"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                        |
 | Для приложений                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All* |
 
-> [!IMPORTANT]
-> \*Администраторы должны [](/graph/cloud-communication-online-meeting-application-access-policy) создать политику доступа к приложениям и предоставить ее пользователю, уполномочив приложение, настроенного в политике, получить онлайн-собрание от имени этого пользователя (пользовательский ID, указанный в пути запроса).
+Чтобы использовать разрешение приложения для этого API, [](/graph/cloud-communication-online-meeting-application-access-policy) администраторы клиентов должны создать политику доступа к приложениям и предоставить ее пользователю для авторизации приложения, настроенного в политике, для получения онлайн-собраний и/или артефактов собраний в Интернете от имени этого пользователя (с пользовательским ИД, указанным в пути запроса).
 
 ## <a name="http-request"></a>HTTP-запрос
-Чтобы получить onlineMeeting с помощью ID собрания с делегированием и разрешением приложения:
+Чтобы получить onlineMeeting с помощью ID собрания с делегированной `/me` () и приложением `/users/{userId}` () разрешения:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}
@@ -71,7 +70,7 @@ GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 
 Если запрос содержит `Accept-Language` HTTP-заголовок, то `content` из `joinInformation` будет указан на языке и языкового стандарта, указанного в заголовке `Accept-Language`. Контент по умолчанию будет на английском языке.
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

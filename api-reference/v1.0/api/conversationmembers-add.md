@@ -1,22 +1,22 @@
 ---
 title: 'conversationMember: add'
-description: Добавьте в команду участников оптом.
+description: Массовое добавление участников в команду.
 author: abshar-teams
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9d313e6d609ad8192541e0d2a19ab15f14c5ed11
-ms.sourcegitcommit: 30fca91ed203a9ab7b0562833ce0c20c7fb7b7b1
+ms.openlocfilehash: 908acd8fc9d9494756bf9cb1f7ae36e336676e91
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59932075"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59996742"
 ---
 # <a name="conversationmember-add"></a>conversationMember: add
 
 Пространство имен: microsoft.graph
 
-Добавление нескольких участников в [команду](../resources/team.md) одним запросом. В ответе приводится подробная информация о том, какие членства могут быть созданы и не могут быть созданы.
+Добавление нескольких участников в [команду](../resources/team.md) одним запросом. Отклик предоставляет сведения о том, каких участников можно создать, а каких — нельзя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -31,7 +31,7 @@ ms.locfileid: "59932075"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Это связанное действие, чтобы добавить несколько элементов в **коллекцию conversationMember** в одном запросе.
+Это связывающее действие для добавления нескольких элементов в коллекцию **conversationMember** одним запросом.
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -42,7 +42,7 @@ POST /teams/{team-id}/members/add
 
 | Заголовок        | Значение                     |
 | :------------ | :------------------------ |
-| Авторизация | Bearer {token}. Обязательный. |
+| Авторизация | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите в формате JSON представление списка производных `conversationMember`, которые необходимо добавить.
@@ -58,7 +58,7 @@ POST /teams/{team-id}/members/add
 
 В случае успеха это действие возвращает код отклика `200 OK` и коллекцию производных ресурса [actionResultPart](../resources/actionresultpart.md) в тексте отклика.
 
-Этот API возвращает ответ, который указывает, что все поставленные члены были добавлены в команду или ответ, который указывает, что в команду были добавлены только некоторые из `200` `207` поставленных членов. Вызывающая сторона должна проверить полезные данные отклика, чтобы определить, какого участника не удалось добавить. Текст отклика является коллекцией производных ресурса [actionResultPart](../resources/actionresultpart.md).
+Этот API возвращает отклик `200` с указанием, что все предоставленные участники были добавлены в команду, или отклик `207` с указанием, что только некоторые из предоставленных участников были добавлены в команду. Вызывающая сторона должна проверить полезные данные отклика, чтобы определить, какого участника не удалось добавить. Текст отклика является коллекцией производных ресурса [actionResultPart](../resources/actionresultpart.md).
 
 ## <a name="examples"></a>Примеры
 
@@ -68,6 +68,8 @@ POST /teams/{team-id}/members/add
 
 В следующем примере показан запрос на добавление нескольких участников в команду.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "bulkaddmembers_team"
@@ -92,11 +94,29 @@ Content-Type: application/json
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/bulkaddmembers-team-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/bulkaddmembers-team-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/bulkaddmembers-team-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/bulkaddmembers-team-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 <!-- {
@@ -134,6 +154,8 @@ Content-Type: application/json
 В следующем примере показан запрос на добавление нескольких участников в команду, приводящий к частичному сбою.
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "bulkaddmembers_team_partial_failure"
@@ -158,6 +180,24 @@ Content-Type: application/json
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/bulkaddmembers-team-partial-failure-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/bulkaddmembers-team-partial-failure-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/bulkaddmembers-team-partial-failure-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/bulkaddmembers-team-partial-failure-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>Отклик

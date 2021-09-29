@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 34c6fa475ab9aba6531aa4573752b10ae4521055
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7ab9efc32e47ccd7088db40ea93600a1d1274ff7
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053436"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59996699"
 ---
 # <a name="delete-onlinemeeting"></a>Удаление onlineMeeting
 
@@ -26,21 +26,16 @@ ms.locfileid: "59053436"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                         |
 | Для приложений                            | OnlineMeetings.ReadWrite.All*          |
 
-> [!IMPORTANT]
-> \*Администраторы должны [](/graph/cloud-communication-online-meeting-application-access-policy) создать политику доступа к приложениям и предоставить ее пользователю, уполномочив приложение, настроенного в политике, удалить онлайн-собрание от имени этого пользователя (пользовательский ID, указанный в пути reuqest).
+Чтобы использовать разрешение приложения для этого API, [](/graph/cloud-communication-online-meeting-application-access-policy) администраторы клиентов должны создать политику доступа к приложениям и предоставить ее пользователю для авторизации приложения, настроенного в политике, для удаления собраний в Интернете от имени этого пользователя (с пользовательским ИД, указанным в пути запроса).
 
 ## <a name="http-request"></a>HTTP-запрос
-Удаление указанного onlineMeeting путем собрания ID с делегированным разрешением:
+Чтобы получить onlineMeeting с помощью ID собрания с делегированной `/me` () и приложением `/users/{userId}` () разрешения:
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/onlineMeetings/{meetingId}
-```
-
-Удаление указанного onlineMeeting путем встречи с ИД с разрешением приложения:
-<!-- { "blockType": "ignored" } -->
-```http
 DELETE /users/{userId}/onlineMeetings/{meetingId}
 ```
+
 > [!NOTE]
 > - `userId` — это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в [политике доступа к приложениям.](/graph/cloud-communication-online-meeting-application-access-policy)
 > - `meetingId`является **id** объекта [onlineMeeting.](../resources/onlinemeeting.md)

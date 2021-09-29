@@ -5,12 +5,12 @@ author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: c50d2627aea65b93efa57263db669514d6697154
-ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.openlocfilehash: d2d74d5a5b3004632df63ef82641bda85f674ec3
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59979732"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59995386"
 ---
 # <a name="get-simulationreportoverview"></a>Get simulationReportOverview
 Пространство имен: microsoft.graph
@@ -25,8 +25,8 @@ ms.locfileid: "59979732"
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | SecurityEvents.Read.All                     |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Приложение                            | SecurityEvents.Read.All                     |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Для приложений                            | SecurityEvents.Read.All                     |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,6 +53,8 @@ GET /security/attackSimulation/simulations/{id}/report/overview
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_simulationreportoverview"
@@ -61,6 +63,24 @@ GET /security/attackSimulation/simulations/{id}/report/overview
 ``` http
 GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/{id}/report/overview
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-simulationreportoverview-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-simulationreportoverview-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-simulationreportoverview-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-simulationreportoverview-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: cdb6b2d7eaa8d021f378f7046dec405054502d0a
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 5889af1cda3560a6b1b244443ee77226dfe57f03
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767120"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59996510"
 ---
 # <a name="virtualendpoint-resource-type"></a>тип ресурса virtualEndpoint
 
@@ -26,7 +26,7 @@ ms.locfileid: "59767120"
 
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Получить эффективные разрешения](../api/virtualendpoint-geteffectivepermissions.md)|Коллекция объектов string|Просмотр эффективных разрешений пользователя, который в настоящее время проходит проверку подлинности.|
+|[Получить эффективные разрешения](../api/virtualendpoint-geteffectivepermissions.md)|Коллекция String|Просмотр эффективных разрешений пользователя, который в настоящее время проходит проверку подлинности.|
 |[CloudPCs списка](../api/virtualendpoint-list-cloudpcs.md)|[коллекция cloudPC](../resources/cloudpc.md)|Список свойств и связей объектов [cloudPC.](../resources/cloudpc.md)|
 |[Список устройствImages](../api/virtualendpoint-list-deviceimages.md)|[коллекция cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Список свойств и связей объектов [cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)|
 |[Создание cloudPcDeviceImage](../api/virtualendpoint-post-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Создайте новый [объект cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)|
@@ -37,6 +37,7 @@ ms.locfileid: "59767120"
 |[Список userSettings](../api/virtualendpoint-list-usersettings.md)|[коллекция cloudPcUserSetting](../resources/cloudpcusersetting.md)|Получите ресурсы cloudPcUserSetting из свойства навигации userSettings.|
 |[Создание cloudPcUserSetting](../api/virtualendpoint-post-usersettings.md)|[cloudPcUserSetting](../resources/cloudpcusersetting.md)|Создание нового объекта cloudPcUserSetting.|
 |[Список объектов auditEvent](../api/virtualendpoint-list-auditevents.md)|[коллекция cloudPcAuditEvent](../resources/cloudpcauditevent.md)|Список свойств и связей объектов [cloudPcAuditEvent.](../resources/cloudpcauditevent.md)|
+|[Список, поддерживаемыйРегионами](../api/virtualendpoint-list-supportedregions.md)|[коллекция cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md)|Список свойств и связей объектов [cloudPcSupportedRegion.](../resources/cloudpcsupportedregion.md)|
 
 ## <a name="properties"></a>Свойства
 
@@ -54,6 +55,7 @@ ms.locfileid: "59767120"
 |provisioningPolicies|[коллекция cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|Политика обеспечения облачного компьютера.|
 |userSettings|[коллекция cloudPcUserSetting](../resources/cloudpcusersetting.md)|Параметры пользователей облачного ПК. |
 |auditEvents|[коллекция cloudPcAuditEvent](../resources/cloudpcauditevent.md)|Событие аудита облачного компьютера.|
+|supportedRegions|[коллекция cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md)|Области, поддерживаемые облачным компьютером.|
 
 ## <a name="json-representation"></a>Представление JSON
 

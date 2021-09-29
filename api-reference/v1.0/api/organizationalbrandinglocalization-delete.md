@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 62df5020c5fb29a2e8987fbc25ec11fd1a5684ee
-ms.sourcegitcommit: 7ce66321abb6a2cdca8685d3ce0a004c376ae33b
+ms.openlocfilehash: d0881fdc9d0559b38bf42d6c3c4686b5c1e13bc9
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59778077"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59995810"
 ---
 # <a name="delete-organizationalbrandinglocalization"></a>Удаление организационнойbrandingLocalization
 Пространство имен: microsoft.graph
@@ -54,6 +54,8 @@ DELETE /organization/{organizationId}/branding/localizations/{organizationalBran
 
 Ниже приводится пример запроса на удаление объекта `fr-FR` локализации.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_organizationalbrandinglocalization"
@@ -62,6 +64,24 @@ DELETE /organization/{organizationId}/branding/localizations/{organizationalBran
 ```http
 DELETE https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr-FR
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-organizationalbrandinglocalization-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-organizationalbrandinglocalization-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-organizationalbrandinglocalization-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-organizationalbrandinglocalization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

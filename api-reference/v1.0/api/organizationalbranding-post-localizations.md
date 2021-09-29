@@ -1,18 +1,18 @@
 ---
-title: Создание организационнойbrandingLocalization
+title: Создание organizationalBrandingLocalization
 description: Создайте новый объект organizationalBrandingLocalization.
 author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 03c2112f78f011a2deb67248e7e62642f4caa15d
-ms.sourcegitcommit: 7ce66321abb6a2cdca8685d3ce0a004c376ae33b
+ms.openlocfilehash: 59df189572ed494b4d5cf7e17185edd988c61b98
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59778045"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59996966"
 ---
-# <a name="create-organizationalbrandinglocalization"></a>Создание организационнойbrandingLocalization
+# <a name="create-organizationalbrandinglocalization"></a>Создание organizationalBrandingLocalization
 Пространство имен: microsoft.graph
 
 Создайте новый [объект organizationalBrandingLocalization.](../resources/organizationalBrandingLocalization.md) Это создает локализованный брендинг, и в то же время, по умолчанию, брендинг, если он не существует.
@@ -44,13 +44,13 @@ POST /organization/{organizationId}/branding/localizations
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
 В следующей таблице показаны свойства, необходимые при создании объекта [organizationalBrandingLocalization.](../resources/organizationalbrandinglocalization.md)
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| id | String | Идентификатор, который представляет локальный код, указанный в стандарте ISO 639-1, например `en-US` английский. Вы не можете создать брендинг по умолчанию, задав значение **id** типам String `0` или `default` .  <br/><br/>**ПРИМЕЧАНИЕ:** Несколько фирменных окей для одного локального уровня в настоящее время не поддерживаются. |
+| id | Строка | Идентификатор, который представляет локальный код, указанный в стандарте ISO 639-1, например `en-US` английский. Вы не можете создать брендинг по умолчанию, задав значение **id** типам String `0` или `default` .  <br/><br/>**ПРИМЕЧАНИЕ:** Несколько фирменных окей для одного локального уровня в настоящее время не поддерживаются. |
 
 ## <a name="response"></a>Отклик
 
@@ -64,6 +64,8 @@ POST /organization/{organizationId}/branding/localizations
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_organizationalbrandinglocalization"
@@ -78,6 +80,24 @@ Content-Type: application/json
     "signInPageText": " "
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-organizationalbrandinglocalization-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-organizationalbrandinglocalization-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-organizationalbrandinglocalization-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-organizationalbrandinglocalization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

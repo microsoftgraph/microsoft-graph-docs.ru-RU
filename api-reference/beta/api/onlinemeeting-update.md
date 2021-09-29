@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3075b769342ab4e565679c82da50067ca5137476
-ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.openlocfilehash: 4478c14346ab243ccc317468b00ed2a649891d77
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59979441"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59996643"
 ---
 # <a name="update-onlinemeeting"></a>Обновление onlineMeeting
 
@@ -30,7 +30,7 @@ ms.locfileid: "59979441"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
 | Для приложений                            | OnlineMeetings.ReadWrite.All                |
 
-Чтобы использовать разрешение приложения для этого API, [](/graph/cloud-communication-online-meeting-application-access-policy) администраторы клиентов должны создать политику доступа к приложениям и предоставить ее пользователю для авторизации приложения, настроенного в политике, для получения артефактов собраний в Интернете от имени этого пользователя (с пользовательским ИД, указанным в пути запроса).
+Чтобы использовать разрешение приложения для этого API, [](/graph/cloud-communication-online-meeting-application-access-policy) администраторы клиентов должны создать политику доступа к приложениям и предоставить ее пользователю для авторизации приложения, настроенного в политике, для обновления собраний в Интернете от имени этого пользователя (с пользовательским ИД, указанным в пути запроса).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,7 +53,7 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 | Авторизация | Bearer {токен}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
 В следующей таблице перечислены свойства, которые можно обновить. В орган запроса включаем только свойства, которые требуют обновления, за следующими исключениями:
 

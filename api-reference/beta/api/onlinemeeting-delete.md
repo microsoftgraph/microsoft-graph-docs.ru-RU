@@ -2,15 +2,15 @@
 title: Удаление onlineMeeting
 description: Удаление собрания в Интернете.
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 991e8f70e2505b230c7091695abe2c594a274fee
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 66833b70cc49ce595204ad72f0adbb8c476822bd
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896538"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59996005"
 ---
 # <a name="delete-onlinemeeting"></a>Удаление onlineMeeting
 
@@ -28,20 +28,14 @@ ms.locfileid: "52896538"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
 | Для приложений                            | OnlineMeetings.ReadWrite.All*                |
 
-> [!IMPORTANT]
-> \*Администраторы должны [](/graph/cloud-communication-online-meeting-application-access-policy) создать политику доступа к приложениям и предоставить ее пользователю, уполномочив приложение, настроенного в политике, удалить онлайн-собрание от имени этого пользователя (пользовательский ID, указанный в пути reuqest).
+Чтобы использовать разрешение приложения для этого API, [](/graph/cloud-communication-online-meeting-application-access-policy) администраторы клиентов должны создать политику доступа к приложениям и предоставить ее пользователю для авторизации приложения, настроенного в политике, для удаления собраний в Интернете от имени этого пользователя (с пользовательским ИД, указанным в пути запроса).
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Запрос при использовании делегированного маркера
+Удаление onlineMeeting с помощью ID собрания с делегированной `/me` () и приложением `/users/{userId}` () разрешения:
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}
-```
-
-Запрос при использовании токена приложения:
-<!-- { "blockType": "ignored" } -->
-```http
 DELETE https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId}
 ```
 

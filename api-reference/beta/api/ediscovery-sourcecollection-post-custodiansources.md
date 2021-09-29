@@ -2,15 +2,15 @@
 title: Добавление custodianSources
 description: Добавьте объекты custodial dataSource в исходный набор.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: e044843992bff6f68d01c35a549a6a9b57a61417
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 0f8830b7fe71e297cbbf4b3d470259b83e3e8125
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786007"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59996655"
 ---
 # <a name="add-custodiansources"></a>Добавление custodianSources
 
@@ -48,7 +48,7 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
 В теле запроса поставляем представление JSON объекта [dataSource.](../resources/ediscovery-datasource.md)
 
@@ -56,7 +56,7 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|@odata.id|String|Строка, определяемая объектом custodial. См. пример, который следует.|
+|@odata.id|Строка|Строка, определяемая объектом custodial. См. пример, который следует.|
 
 ## <a name="response"></a>Отклик
 

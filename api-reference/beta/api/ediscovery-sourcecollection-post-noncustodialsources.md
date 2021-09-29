@@ -2,15 +2,15 @@
 title: Добавление noncustodialDataSource
 description: Добавьте noncustodialSources, разместив их в коллекции noncustodialSources.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: b6d3dde3e779aad317e3d2827e602d5097300d22
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 639ee1e0f993b576e7a80ced9258c5f89421ca39
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786792"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59996795"
 ---
 # <a name="add-noncustodialdatasource"></a>Добавление noncustodialDataSource
 
@@ -48,7 +48,7 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
 В теле запроса подарят представление JSON объекта [noncustodialDataSource.](../resources/ediscovery-noncustodialdatasource.md)
 
@@ -56,7 +56,7 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|@odata.id|String|Строка, определяемая объектом custodial. См. пример, который следует.  @odata.id можно получить из [noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md).|
+|@odata.id|Строка|Строка, определяемая объектом custodial. См. пример, который следует.  @odata.id можно получить из [noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md).|
 
 ## <a name="response"></a>Отклик
 

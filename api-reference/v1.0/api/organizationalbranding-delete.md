@@ -1,21 +1,21 @@
 ---
-title: Удаление организационногобрендинга
+title: Удаление organizationalBranding
 description: Удаляет объект organizationalBranding.
 author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4ce769c52af786bbd7893e4cac1832c19ce87391
-ms.sourcegitcommit: 7ce66321abb6a2cdca8685d3ce0a004c376ae33b
+ms.openlocfilehash: 82c3957b1e85507f307731548cd5dc13faa77cbd
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59778038"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59995873"
 ---
-# <a name="delete-organizationalbranding"></a>Удаление организационногобрендинга
+# <a name="delete-organizationalbranding"></a>Удаление organizationalBranding
 Пространство имен: microsoft.graph
 
-Удаление объекта организационного брендинга по умолчанию. Чтобы удалить [объект organizationalBranding,](../resources/organizationalbranding.md) все изображения (типы потока) сначала должны быть удалены из объекта.
+Удаление стандартного объекта фирменной символики организации. Чтобы удалить [объект organizationalBranding,](../resources/organizationalbranding.md) все изображения (типы потока) сначала должны быть удалены из объекта.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -52,6 +52,8 @@ DELETE /organization/{organizationId}/branding
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_organizationalbranding"
@@ -64,6 +66,24 @@ DELETE https://graph.microsoft.com/v1.0/organization/84841066-274d-4ec0-a5c1-276
     "id": "0"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-organizationalbranding-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-organizationalbranding-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-organizationalbranding-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-organizationalbranding-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

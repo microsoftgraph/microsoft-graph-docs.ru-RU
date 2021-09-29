@@ -1,16 +1,16 @@
 ---
 title: тип ресурса conditionalAccessFilter
 description: Представляет фильтр в области политики.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sandeo
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 9f5b14a3faa593453c88cc155f7e44348fcfda35
-ms.sourcegitcommit: 9ac6bbab3df22e7629cf2bde796b527337c680aa
+ms.openlocfilehash: 62c0c21a01a67bbaf08fae16fcb4f0d7451efe9a
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53082410"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59995417"
 ---
 # <a name="conditionalaccessfilter-resource-type"></a>тип ресурса conditionalAccessFilter
 
@@ -25,7 +25,7 @@ ms.locfileid: "53082410"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 | mode | filterMode | Режим использования для фильтра. Возможные значения: `include` или `exclude`. |
-| правило | String | Синтаксис правил похож на тот, который используется для правил членства для групп в Azure AD. Подробные сведения см. [в правилах с несколькими выражениями](/azure/active-directory/enterprise-users/groups-dynamic-membership#rules-with-multiple-expressions) |
+| правило | Строка | Синтаксис правил похож на тот, который используется для правил членства для групп в Azure Active Directory. Подробные сведения см. [в правилах с несколькими выражениями](/azure/active-directory/enterprise-users/groups-dynamic-membership#rules-with-multiple-expressions) |
 
 ## <a name="relationships"></a>Связи
 

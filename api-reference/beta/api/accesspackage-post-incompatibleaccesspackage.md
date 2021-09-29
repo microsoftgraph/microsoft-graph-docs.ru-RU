@@ -1,16 +1,16 @@
 ---
 title: Добавление accessPackage в несовместимыеAccessPackages
 description: Добавьте ссылку, чтобы указать, что пакет доступа несовместим с указанным пакетом доступа.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4ddb6953346a5ea571a480dc073e29dca14cca31
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 1781cc55390eb0080ffb573c3abfc427697a7505
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439844"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "59995450"
 ---
 # <a name="add-accesspackage-to-incompatibleaccesspackages"></a>Добавление accessPackage в несовместимыеAccessPackages
 
@@ -28,7 +28,7 @@ ms.locfileid: "53439844"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | EntitlementManagement.ReadWrite.All |
+| Для приложений                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/incompatibleA
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
 В теле запроса поставляем JSON представление структуры с IData id URI объекта [accessPackage.](../resources/accesspackage.md)
 

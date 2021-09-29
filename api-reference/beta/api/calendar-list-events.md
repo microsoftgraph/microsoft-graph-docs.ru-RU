@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 92803025608bbdd9d8345f25e05351115632a4a5
-ms.sourcegitcommit: 30fca91ed203a9ab7b0562833ce0c20c7fb7b7b1
+ms.openlocfilehash: aa6df9ddbad26edfc841c882aaf61c369f0797c4
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59931978"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59996141"
 ---
 # <a name="list-events"></a>Перечисление событий
 
@@ -66,7 +66,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 
 ## <a name="example"></a>Пример
 
-### <a name="example-1-list-calendar-events"></a>Пример 1. Список событий календаря
+### <a name="example-1-list-calendar-events"></a>Пример 1. Перечисление событий календаря
 
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -82,19 +82,19 @@ GET https://graph.microsoft.com/beta/me/calendar/events
 ```
 
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/calendar-get-events-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/calendar-list-events-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/calendar-get-events-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/calendar-list-events-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/calendar-get-events-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/calendar-list-events-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/calendar-get-events-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/calendar-list-events-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -165,22 +165,42 @@ Content-length: 354
 }
 ```
 
-### <a name="example-2-get-events-by-filtering-on-the-subject-property"></a>Пример 2. Получить события путем фильтрации свойства субъекта
+### <a name="example-2-get-events-by-filtering-on-the-subject-property"></a>Пример 2. Получение событий путем фильтрации по свойству темы
 
-В этом примере события в основном календаре пользователя отфильтровыв их тему, начиная со "All".
+Этот пример получает события из основного календаря пользователя путем фильтрации по их теме, начиная с варианта "Все".
 
 #### <a name="request"></a>Запрос
 
 Ниже показан пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "calendar_list_events"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/calendar/events?$filter=startsWith(subject,'All')
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/calendar-list-events-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/calendar-list-events-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/calendar-list-events-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/calendar-list-events-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### <a name="response"></a>Отклик
 Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!--
