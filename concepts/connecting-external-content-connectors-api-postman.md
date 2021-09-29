@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: 15587804b130a009abc936ceb8af4379f67fcea2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c86c75de4ebf966e1fec02184af35aa4c12d4da7
+ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139361"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "59996053"
 ---
 # <a name="use-postman-with-the-microsoft-graph-connectors-api"></a>Использование Postman с API соединителей Microsoft Graph
 
@@ -21,36 +21,25 @@ ms.locfileid: "59139361"
 * Учетная запись Майкрософт либо рабочая или учебная учетная запись.
 * Доступ к клиенту разработчика Microsoft 365. Если у вас его нет, вы можете зарегистрироваться в [программе для разработчиков Microsoft 365], чтобы получить бесплатную подписку разработчика.
 
-## <a name="step-1---import-the-microsoft-graph-postman-collection"></a>Шаг 1. Импорт коллекции Microsoft Graph Postman
+## <a name="step-1---fork-the-microsoft-graph-postman-collection"></a>Шаг 1. Разветвление коллекции Microsoft Graph Postman
 
-Чтобы использовать коллекцию Postman, необходимо импортировать ее в свою рабочую область Postman. Сделайте это в веб-браузере.
+Чтобы использовать коллекцию Postman, необходимо создать ее вилку в своей рабочей области Postman. Сделайте это из веб-браузера.
 
 1. Откройте [Postman](https://identity.getpostman.com/signup) и зарегистрируйтесь. Если у вас уже есть учетная запись Postman, вы можете [войти](https://identity.getpostman.com/login).
 
-2. После входа перейдите в раздел **Моя рабочая область**.
+2. После входа перейдите по следующему URL-адресу: `https://www.postman.com/microsoftgraph/workspace/microsoft-graph/collection/455214-085f7047-1bec-4570-9ed0-3a7253be148`, и выберите коллекцию Microsoft Graph.
 
-![Снимок экрана: вкладка "Рабочие области" в Postman и параметр для выбора "Моя рабочая область"](./images/connectors-images/02-postman-my-workspace.png)
+3. Нажмите на три точки справа и выберите вариант **Создать вилку**.
 
-3. После перехода в раздел **Моя рабочая область** нажмите кнопку **Импорт**.
+![Снимок экрана, отображающий коллекцию Microsoft Graph в Postman и вариант создания вилки](./images/connectors-images/16-postman.png)
 
-![Снимок экрана: раздел "Моя рабочая область" в Postman и параметр "Импорт"](./images/connectors-images/03-postman-import.png)
+4. В открываемом диалоговом окне введите метку для определения вилки. В выпадающем меню **Рабочая область** выберите пункт **Моя рабочая область** и выберите **Разветвление коллекции**.
 
-4. В открывшемся диалоговом окне выберите вкладку **Ссылка** и введите следующий URL-адрес в текстовом поле: `https://www.postman.com/collections/61bfc772fe030514b062`.
+![Снимок экрана, показывающий диалоговое окно "Разветвление коллекции" в Postman и вариант ввода метки, а также выбора "Моя рабочая область"](./images/connectors-images/17-postman.png)
 
-![Снимок экрана: диалоговое окно импорта](./images/connectors-images/04-postman-link.png)
+3. Теперь вы можете перейти в раздел **Рабочие области**  >  **Моя рабочая область** и увидеть созданную вилку. Папка соединителей Microsoft Graph находится в пункте **Приложение**.
 
-5. Нажмите **Продолжить**.
-6. Нажмите **Импорт**.
-
-![Снимок экрана: диалоговое окно импорта после ввода URL-адреса](./images/connectors-images/05-postman-link-continue.png)
-
-Вы увидите коллекцию API соединителей Microsoft Graph в Postman.
-
-![Снимок экрана: API соединителя Microsoft Graph в Postman](./images/connectors-images/06-postman-collection-tab.png)
-
-> [!NOTE]
-> API соединителя Microsoft Graph был недавно добавлен в коллекцию [Microsoft Graph Postman](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/overview).
-Этот документ скоро будет изменен, чтобы использовать эту коллекцию.
+![Снимок экрана раздела "Моя рабочая область" в Postman, на котором показана разветвленная коллекция Microsoft Graph ](./images/connectors-images/18-postman.png)
 
 ## <a name="step-2---download-the-postman-agent-optional---postman-web-browser-only"></a>Шаг 2. Скачивание агента Postman (необязательно, только в веб-браузере Postman)
 
@@ -88,7 +77,7 @@ ms.locfileid: "59139361"
 
 Настройте переменные в Postman. Эта информация используется для создания маркера доступа.
 
-1. Выберите вкладку **API соединителей Microsoft Graph** и перейдите в раздел **Переменные**.
+1. Выберите вкладку **Microsoft Graph** и перейдите в раздел **Переменные**.
 
 ![Снимок экрана: вкладка "API соединителей Microsoft Graph" и раздел "Переменные"](./images/connectors-images/07-postman.png)
 
@@ -108,7 +97,7 @@ ms.locfileid: "59139361"
 
 Вам потребуется получить маркер доступа, так как вы впервые выполняете запрос в виде потока проверки подлинности приложения. Получите маркер доступа, выполнив следующий запрос POST.
 
-![Снимок экрана: раздел получения маркера доступа для приложения](./images/connectors-images/09-postman.png)
+![Снимок экрана: раздел получения маркера доступа для приложения](./images/connectors-images/09a-postman.png)
 
 
 В следующем примере показано, как получить маркер доступа с общим секретом.
@@ -269,29 +258,19 @@ Content-type: application/json
 }
 ```
 
-Ниже приведен снимок экрана с разделом **Получение состояния операции**.
+Ниже приведен снимок экрана раздела **Получение состояния операции подключения**.
 
 ![Снимок экрана: раздел "Получение состояния операции" с отображением состояния выполнения](./images/connectors-images/11-postman.png)
 
 После изменения состояния операции схемы соединения с **Выполняется** на **Завершено** можно принять элементы для соединения.
 
-На снимке экрана ниже показано состояние "Завершено".
-
- ![Снимок экрана: раздел "Получение состояния операции" с отображением завершенного состояния](./images/connectors-images/12-postman.png)
-
-На снимке экрана ниже показано состояние "Черновик".
-
- ![Снимок экрана: раздел "Получение состояния операции" с отображением состояния "Черновик"](./images/connectors-images/13-postman.png)
-
-После изменения состояния соединения с **Черновик** на **Готово**, как показано на следующем снимке экрана, вы можете принять элементы в текущее соединение.
-
-![Снимок экрана: раздел "Получение состояния операции" с отображением состояния "Готово"](./images/connectors-images/14-postman.png)
+После изменения состояния подключения с **черновик** на **готовность** можно ввести элементы в текущее подключение.
 
 ## <a name="step-8---add-external-group-member-optional"></a>Шаг 8. Добавление внешнего участника группы (необязательно)
 
 Если внешняя служба использует ACL, не относящиеся к Azure AD, синхронизируйте эти разрешения.  
 
-Внешние группы (наряду с пользователями и группами Azure Active Directory) используются для настройки разрешений в объекте `externalItems`, добавляемом к соединению Microsoft Graph. Подробные сведения см. разделе [externalGroups](/graph/api/resources/externalgroup?view=graph-rest-beta).
+Внешние группы (наряду с пользователями и группами Azure Active Directory) используются для настройки разрешений в объекте `externalItems`, добавляемом к соединению Microsoft Graph. Подробные сведения см. разделе [externalGroups](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true).
 
 Это пример запроса.
 
@@ -320,10 +299,6 @@ Content-Type: application/json
   "identitySource": "external" 
 } 
 ```
-
-На снимке экрана ниже показан раздел **Создание внешней группы**.
-
-![Снимок экрана с разделом "Создание внешней группы"](./images/connectors-images/15-postman.png)
 
 ## <a name="step-9---ingest-items"></a>Шаг 9. Принятие элементов
 
