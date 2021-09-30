@@ -5,22 +5,16 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 0d5a6a9b7dfa9ee0252d1f078ffb4c46304e7efd
-ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.openlocfilehash: 5fdcdc1b7ed0098eb60e6470f34d3fefce6378e9
+ms.sourcegitcommit: cbad97d6a8ccb89b1822b30a11cc9b6f2670deda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59979413"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60016616"
 ---
 # <a name="enum-values"></a>Значения Enum
 
 Пространство имен: microsoft.graph
-
-### <a name="authenticatorappfeaturesettings-values"></a>значения authenticatorAppFeatureSettings
-
-|Member|
-|:---|
-|requireNumberMatching|
 
 ### <a name="appcredentialrestrictiontype-values"></a>значения appCredentialRestrictionType
 
@@ -34,7 +28,7 @@ ms.locfileid: "59979413"
 
 |Member|
 |:----|
-|Нет|
+|Отсутствует|
 |UserName|
 |Password|
 |SecretToken|
@@ -156,11 +150,11 @@ ms.locfileid: "59979413"
 
 |Member|
 |:---|
-|Строка|
+|String|
 |Целое число|
 |Справка|
 |Двоичный|
-|Логический|
+|Boolean|
 |Даты и время|
 
 ### <a name="mutability-values"></a>значения мутируемости
@@ -176,7 +170,7 @@ ms.locfileid: "59979413"
 
 |Member|
 |:---|
-|Нет|
+|Отсутствует|
 |AttributeNames|
 |AttributeDataTypes|
 |AttributeReadOnly|
@@ -819,13 +813,6 @@ ms.locfileid: "59979413"
 |block|
 |unknownFutureValue|
 
-### <a name="authenticatorappcontexttype-values"></a>значения authenticatorAppContextType
-
-|Member|
-|:---|
-|location|
-|приложение|
-
 ### <a name="anniversarytype-values"></a>Значения anniversaryType
 
 |Member|
@@ -1441,7 +1428,7 @@ ms.locfileid: "59979413"
 ### <a name="onenotesourceservice-values"></a>значения onenoteSourceService
 | Member
 |:---------------------
-| Unknown
+| Неизвестно
 | OneDrive
 | OneDriveForBusiness
 | OnPremOneDriveForBusiness
@@ -1501,7 +1488,7 @@ ms.locfileid: "59979413"
 | preset13 | 13     |
 | preset14 | 14     |
 | preset15 | 15     |
-| preset16 | 16     |
+| preset16 | 16    |
 | preset17 | 17     |
 | preset18 | 18     |
 | preset19 | 19    |
@@ -1812,7 +1799,7 @@ Enum для серьезности оповещений.
 
 | Элемент | Значение |
 | :----- | :---- |
-| Нет   | 0     |
+| Отсутствует   | 0     |
 | Добавление    | 1     |
 | Update | 2     |
 | Delete | 4      |
@@ -2046,7 +2033,7 @@ Enum для серьезности оповещений.
 |:---|:---|
 |Нет|0|
 |High (Высокий)|1|
-|Низкие|2|
+|Низкая|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>значения threatAssessmentContentType
 
@@ -2211,7 +2198,7 @@ Enum для серьезности оповещений.
 |:----------------------|:------|:-------------------------------------------------------------------|
 | builtIn               | 1     | Этот тип атрибута потока пользователей обозначает, что он был создан системой |
 | настраиваемый                | 2     | Этот тип атрибута потока пользователей обозначает, что он был создан пользователем   |
-|обязательно|3 ||
+|Обязательный|3 ||
 | unknownFutureValue    | 4      | Член-часовой.                                                 |
 
 ### <a name="permissionclassificationtype-values"></a>значения permissionClassificationType

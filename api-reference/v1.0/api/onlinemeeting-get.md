@@ -5,19 +5,25 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7486f4223f8d9a5df1545556ac00c5c1678bbb80
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: 66a6e5e2cb284672a03baf5907b16d1ad39dea2e
+ms.sourcegitcommit: cbad97d6a8ccb89b1822b30a11cc9b6f2670deda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59996502"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60016622"
 ---
 # <a name="get-onlinemeeting"></a>Get onlineMeeting
 
 Пространство имен: microsoft.graph
 
-Извлечение свойств и связей [объекта onlineMeeting.](../resources/onlinemeeting.md) Вы можете получить сведения о onlineMeeting с помощью [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [ID](#example-2-retrieve-an-online-meeting-by-meeting-id) собрания или [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
+Извлечение свойств и связей [объекта onlineMeeting.](../resources/onlinemeeting.md)
 
+Например, вы можете:
+
+- Сведения о собрании в Интернете с помощью [VideoTeleconferenceId,](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid) [ID](#example-2-retrieve-an-online-meeting-by-meeting-id)собрания или [JoinWebURL.](#example-3-retrieve-an-online-meeting-by-joinweburl)
+- Используйте путь, чтобы получить отчет участника о событии в прямом эфире в виде ссылки на скачивание, как показано `/attendeeReport` [в примере 4](#example-4-fetch-attendee-report-of-a-live-event).
+
+Отчет о живом событии — это артефакт собрания в Интернете. Подробные сведения см. [в материале Online meeting artifacts and permissions.](/graph/cloud-communications-online-meeting-artifacts)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -25,37 +31,48 @@ ms.locfileid: "59996502"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)           |
 |:---------------------------------------|:------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | OnlineMeetings.Read, OnlineMeetings.ReadWrite         |
+| Делегированные (рабочая или учебная учетная запись)     | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read, OnlineMeetings.ReadWrite         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                        |
-| Для приложений                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All* |
+| Для приложений                            | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 
 Чтобы использовать разрешение приложения для этого API, [](/graph/cloud-communication-online-meeting-application-access-policy) администраторы клиентов должны создать политику доступа к приложениям и предоставить ее пользователю для авторизации приложения, настроенного в политике, для получения онлайн-собраний и/или артефактов собраний в Интернете от имени этого пользователя (с пользовательским ИД, указанным в пути запроса).
 
+> [!IMPORTANT]
+> Только _разрешения OnlineMeetingArtifact.Read.All_ требуются, если вы извлекаете артефакты собраний в Интернете и без них невозможно получить артефакты собраний. Подробные сведения см. [в материале Online meeting artifacts and permissions.](/graph/cloud-communications-online-meeting-artifacts)
+
 ## <a name="http-request"></a>HTTP-запрос
-Чтобы получить onlineMeeting с помощью ID собрания с делегированной `/me` () и приложением `/users/{userId}` () разрешения:
+Чтобы получить **onlineMeeting с** помощью ID собрания с делегированной `/me` () и приложением `/users/{userId}` () разрешения:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}
 GET /users/{userId}/onlineMeetings/{meetingId}
 ```
 
-Чтобы получить onlineMeeting с **помощью videoTeleconferenceId с** разрешения приложения*:
+Чтобы получить **onlineMeeting с** **помощью videoTeleconferenceId с** разрешения приложения*:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 ```
 
-Чтобы получить onlineMeeting с **помощью joinWebUrl** с делегированием и разрешением приложения:
+Чтобы получить **onlineMeeting с** **помощью joinWebUrl** с делегированием и разрешением приложения:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ```
 
+Чтобы получить отчет участника о событии в прямом эфире с делегированием () и `/me` разрешением приложения `/users/{userId}` () :
+<!-- { "blockType": "ignored" }-->
+
+```http
+GET /me/onlineMeetings/{meetingId}/attendeeReport
+GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
+```
+
 > [!NOTE]
 > - `userId` — это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в [политике доступа к приложениям.](/graph/cloud-communication-online-meeting-application-access-policy)
 > - `meetingId`является **id** объекта [onlineMeeting.](../resources/onlinemeeting.md)
-> - **VideoTeleconferenceId** создается для лицензированных пользователей Cloud-Video-Interop и может быть найден в [объекте onlineMeeting.](../resources/onlinemeeting.md) Дополнительные сведения можно получить в ID конференции [VTC.](/microsoftteams/cloud-video-interop-for-teams-set-up)
+> - **VideoTeleconferenceId** создается для лицензированных пользователей Cloud-Video-Interop и может быть найден в [объекте onlineMeeting.](../resources/onlinemeeting.md) Подробнее см. в [материале VTC conference id.](/microsoftteams/cloud-video-interop-for-teams-set-up)
 > - \* Этот сценарий поддерживает только маркер приложений и не поддерживает политику доступа к приложениям.
 > - `joinWebUrl` должен быть закодирован URL-адрес.
 
@@ -74,7 +91,12 @@ GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [onlineMeeting](../resources/onlinemeeting.md) в тексте отклика.
+
+В случае успешного выполнения этот метод возвращает код отклика `200 OK`. Ответ также включает в себя один из следующих действий:
+
+- Если вы извлекаете онлайн-собрание с помощью ИД, этот метод возвращает [объект onlineMeeting](../resources/onlinemeeting.md) в теле отклика.
+- Если вы извлекаете онлайн-собрание **с помощью videoTeleconferenceId** или **присоединяетесь кWebUrl,** этот метод возвращает коллекцию, которая содержит только один [объект onlineMeeting](../resources/onlinemeeting.md) в теле отклика.
+- Если вы извлеките отчет участника о событии в прямом эфире, этот метод возвращает заготку, которая указывает `Location` URI в отчет участника.
 
 ## <a name="examples"></a>Примеры
 
@@ -338,6 +360,43 @@ Content-Type: application/json
         }
     ]
 }
+```
+
+### <a name="example-4-fetch-attendee-report-of-a-live-event"></a>Пример 4. Извлечение отчета участника о событии в прямом эфире
+
+В следующем примере показан запрос на скачивание отчета об участниках.
+
+#### <a name="request"></a>Запрос
+
+В следующем запросе используется делегированная разрешения.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_attendee_report"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/attendeeReport
+```
+
+В следующем запросе используется разрешение приложения.
+
+<!-- { "blockType": "ignored" }-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/attendeeReport
+```
+
+#### <a name="response"></a>Отклик
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "get_attendee_report"
+} -->
+
+```http
+HTTP/1.1 302 Found
+Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/attendeeReport
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
