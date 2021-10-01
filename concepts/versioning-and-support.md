@@ -2,12 +2,12 @@
 title: 'Политики поддержки и внесения критических изменений в Microsoft Graph, а также доступные версии '
 description: В этой статье описаны политики поддержки и внесения критических изменений в Microsoft Graph, а также доступные версии API Microsoft Graph.
 ms.localizationpriority: high
-ms.openlocfilehash: e0ccf55cc9c6ec2890704dc5a10d9de862c19e89
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1ecf67a8630c055baf00993e3defbae7f57376da
+ms.sourcegitcommit: cbad97d6a8ccb89b1822b30a11cc9b6f2670deda
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59133984"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60016601"
 ---
 # <a name="versioning-support-and-breaking-change-policies-for-microsoft-graph"></a>Политики поддержки и внесения критических изменений в Microsoft Graph, а также доступные версии
 
@@ -62,14 +62,15 @@ Microsoft Graph придерживается политики [Microsoft Lifecyc
 Текущая версия Microsoft Graph: 1.0. Версия 1.0 API Microsoft Graph предоставляется по адресу `https://graph.microsoft.com/v1.0` и содержит функции, являющиеся общедоступными и готовыми к использованию в рабочей среде. Просмотрите [документацию по API версии 1.0](/graph/api/overview?view=graph-rest-1.0&preserve-view=true).
 
 ## <a name="preview-status"></a>Состояние предварительной версии
-Функция или API помечаются как "(предварительная версия)", чтобы указать на _уникальность_ их поведения в конечной точке бета-версии. 
+API или функция в Microsoft Graph помечаются как "(предварительная версия)", чтобы указать на _уникальность_ их поведения в конечной точке бета-версии. 
 
-Поведение большинства функций и API в версии 1.0 аналогично поведению в бета-версии. "Предварительная версия" определяет меньшинство функций и API в одном из следующих двух случаев: 
+Поведение большинства API и функций в версии 1.0 аналогично поведению в бета-версии. "Предварительная версия" определяет небольшую часть API и функций в одном из следующих двух случаев: 
 - Доступ только в бета-версии
 - Доступ в бета-версии отличается от доступа в версии 1.0
 
 Как и в любые другие API в конечной точке бета-версии, в API, помеченные в документации как "(предварительная версия)", могут быть внесены критические изменения без уведомления. Не следует получать доступ к API из конечной точки бета-версии в рабочих приложениях.
 
+Например, [обучение симуляции атаки](/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide&preserve-view=true) — это функция, которая общедоступна для администраторов на [портале Microsoft 365 Defender](https://security.microsoft.com/). Когда REST API для обучения симуляции атаки станет доступным в Microsoft Graph только в конечной точке бета-версии, [документация](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#attack-simulation-and-training-preview) по REST API будет помечена как "(предварительная версия)". Метка "(предварительная версия)" применяется к REST API и соответствующей документации в Microsoft Graph, хотя сама служба является общедоступной.
 
 ### <a name="deprecated-and-unsupported-versions"></a>Устаревшие и неподдерживаемые версии
 
