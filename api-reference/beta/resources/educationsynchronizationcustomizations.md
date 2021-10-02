@@ -1,45 +1,45 @@
 ---
-title: Тип ресурса Едукатионсинчронизатионкустомизатионс
-description: Содержит список сущностей для синхронизации и их настройки, если они есть.
-localization_priority: Normal
+title: тип ресурса educationSynchronizationCustomizations
+description: Содержит список сущностями для синхронизации и их настроек, если таковые есть.
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: d3bfbec774b0ce5ff749e78b0057799501f432c3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 30792f67b04606235a99e131d58ffb72bebe8ebd
+ms.sourcegitcommit: 0ec845f93eaa140ad833ba163c76c5308197a92f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055598"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60068589"
 ---
-# <a name="educationsynchronizationcustomizations-resource-type"></a>Тип ресурса Едукатионсинчронизатионкустомизатионс
+# <a name="educationsynchronizationcustomizations-resource-type"></a>тип ресурса educationSynchronizationCustomizations
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Содержит список сущностей для синхронизации и их настройки, если они есть.
+Содержит список сущностями для синхронизации и их настроек, если таковые есть.
 
 > [!NOTE]
-> Настройка свойств для синхронизации не относится к регистрационным спискам студентов или преподавателям.
+> Настройка свойств для синхронизации не применяется к реестрам учащихся или реестрам преподавателей.
 
 Этот ресурс является членом следующих поставщиков данных:
 
-- [едукатионксвдатапровидер](educationcsvdataprovider.md)
-- [едукатионповерсчулдатапровидер](educationpowerschooldataprovider.md)
+- [educationCsvDataProvider](educationcsvdataprovider.md)
+- [educationPowerSchoolDataProvider](educationpowerschooldataprovider.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство          | Тип                                    | Описание                             |
 | :---------------- | :-------------------------------------- | :-------------------------------------- |
-| Название            | [едукатионсинчронизатионкустомизатион] | Настройки для учебных заведений.     |
-| section           | [едукатионсинчронизатионкустомизатион] | Настройки для сущностей раздела.    |
-| student           | [едукатионсинчронизатионкустомизатион] | Настройки для сущностей учащихся.    |
-| teacher           | [едукатионсинчронизатионкустомизатион] | Настройки для сущностей преподавателей.    |
-| студентенроллмент | [едукатионсинчронизатионкустомизатион] | Настройки для регистрации учащихся. |
-| теачерростер     | [едукатионсинчронизатионкустомизатион] | Настройки для списков преподавателей.     |
+| школа            | [educationSynchronizationCustomization] | Настройка для сущностями школы.     |
+| section           | [educationSynchronizationCustomization] | Настройка для сущностями Раздела.    |
+| student           | [educationSynchronizationCustomization] | Настройки для сущностями учащихся.    |
+| teacher           | [educationSynchronizationCustomization] | Настройка для сущностями Teacher.    |
+| studentEnrollment | [educationSynchronizationCustomization] | Настройки для регистрации учащихся. |
+| teacherRoster     | [educationSynchronizationCustomization] | Настройки для реестров учителей.     |
 
-[едукатионсинчронизатионкустомизатион]: educationsynchronizationcustomization.md
+[educationsynchronizationcustomization]: educationsynchronizationcustomization.md
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -48,28 +48,45 @@ ms.locfileid: "48055598"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.educationSynchronizationCustomizations"
+  "@odata.type&quot;: &quot;microsoft.graph.educationSynchronizationCustomizations"
 }-->
 
 ```json
 {
   "school": {
-    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization",
+    "optionalPropertiesToSync": ["String"],
+    "isSyncDeferred": "Boolean",
+    "allowDisplayNameUpdate&quot;: &quot;Boolean"
   },
   "section": {
-    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization",
+    "optionalPropertiesToSync": ["String"],
+    "isSyncDeferred": "Boolean",
+    "allowDisplayNameUpdate&quot;: &quot;Boolean"
   },
   "student": {
-    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization",
+    "optionalPropertiesToSync": ["String"],
+    "isSyncDeferred": "Boolean",
+    "allowDisplayNameUpdate&quot;: &quot;Boolean"
   },
   "teacher": {
-    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization",
+    "optionalPropertiesToSync": ["String"],
+    "isSyncDeferred": "Boolean",
+    "allowDisplayNameUpdate&quot;: &quot;Boolean"
   },
   "studentEnrollment": {
-    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization",
+    "synchronizationStartDate": "DateTimeOffset",
+    "isSyncDeferred": "Boolean",
+    "allowDisplayNameUpdate&quot;: &quot;Boolean"
   },
   "teacherRoster": {
-    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization",
+    "isSyncDeferred": "Boolean",
+    "allowDisplayNameUpdate&quot;: &quot;Boolean"
   }
 }
 ```

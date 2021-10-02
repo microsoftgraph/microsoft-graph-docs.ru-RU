@@ -565,7 +565,7 @@ items:
                 href: api/todotasklist-list-tasks.md
               - name: Перечисление списков задач
                 href: api/todo-list-lists.md
-          - name: Настройки пользователя
+          - name: Параметры пользователя
             items:
               - name: Настройки пользователя
                 href: resources/usersettings.md
@@ -577,7 +577,7 @@ items:
         items:
           - name: Обзор
             href: resources/groups-overview.md
-          - name: группа.
+          - name: Group
             href: resources/group.md
             items:
               - name: Список групп
@@ -4371,7 +4371,7 @@ items:
                     href: resources/intune-deviceconfig-certificaterevocationstatus.md
                   - name: Изменение разрешения uefi параметров
                     href: resources/intune-deviceconfig-changeuefisettingspermission.md
-                  - name: Код
+                  - name: Code
                     href: resources/intune-deviceconfig-code.md
                   - name: Использование конфигурации
                     href: resources/intune-deviceconfig-configurationusage.md
@@ -9674,7 +9674,7 @@ items:
                     href: api/cloudpc-get.md
                   - name: Reprovision
                     href: api/cloudpc-reprovision.md
-                  - name: Конечный период льготы
+                  - name: Окончание льготного периода
                     href: api/cloudpc-endgraceperiod.md
                   - name: Удаленное действие reprovision
                     href: api/manageddevice-reprovisioncloudpc.md
@@ -11272,7 +11272,7 @@ items:
                             href: api/organization-get.md
                           - name: Обновление сведений об организации
                             href: api/organization-update.md
-              - name: Защита идентификации
+              - name: Защита удостоверений
                 href: resources/identityprotection-root.md
                 items:
                   - name: События риска удостоверений (неподготовленные)
@@ -11745,7 +11745,7 @@ items:
                     href: api/trustframeworkpolicy-delete.md
               - name: Потоки пользователей
                 items:
-                  - name: Поток пользователей
+                  - name: Поток пользователей (неподготовленный)
                     items:
                       - name: Поток пользователей
                         href: resources/identityuserflow.md
@@ -13489,7 +13489,7 @@ items:
         items:
           - name: Обзор
             href: resources/security-api-overview.md
-          - name: Действия (предварительный просмотр)
+          - name: Действия (предварительная версия)
             href: resources/securityaction.md
             items:
               - name: Перечисление действий по обеспечению безопасности
@@ -13511,13 +13511,13 @@ items:
                 href: api/alert-update.md
               - name: Обновление нескольких оповещений
                 href: api/alert-updatealerts.md
-          - name: Имитация атаки и обучение (предварительный просмотр)
+          - name: Симуляция атак и обучение (предварительная версия)
             items:
               - name: Моделирование
                 items:
                   - name: Моделирование
                     href: resources/simulation.md
-                  - name: Моделирование списка
+                  - name: Перечисление симуляций
                     href: api/attacksimulationroot-list-simulations.md
                   - name: Список пользователей моделирования
                     href: api/usersimulationdetails-list.md
@@ -13595,7 +13595,7 @@ items:
                 href: api/securescorecontrolprofiles-list.md
               - name: Обновление профилей составляющих оценки безопасности
                 href: api/securescorecontrolprofiles-update.md
-          - name: Индикаторы аналитики угроз (предварительный просмотр)
+          - name: Индикаторы аналитики угроз (предварительная версия)
             href: resources/tiindicator.md
             items:
               - name: Список
@@ -13771,7 +13771,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Обновление
                     href: api/termstore-store-update.md
-              - name: группа.
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: Создание

@@ -2,15 +2,15 @@
 title: Создание educationSynchronizationProfile
 description: 'Создайте запрос для нового профиля синхронизации школьных данных в клиенте. Запрос состояния, чтобы получить состояние профиля. '
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e55a24642f6b29ce280775f779f005fd76d4996c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2864c6947b98ea9519d4971158713425cc1b93dd
+ms.sourcegitcommit: 0ec845f93eaa140ad833ba163c76c5308197a92f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043075"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60059943"
 ---
 # <a name="create-an-educationsynchronizationprofile"></a>Создание educationSynchronizationProfile
 
@@ -102,7 +102,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -122,12 +122,24 @@ Content-type: application/json
     "dataProvider": {
         "@odata.type": "#microsoft.graph.educationCsvDataProvider",
         "customizations": {
+            "school": {
+                "isSyncDeferred": false,
+                "allowDisplayNameUpdate": false
+            },
+            "section": {
+                "optionalPropertiesToSync": [
+                    "Term Name",
+                    "Course Number",
+                    "Periods"
+                ],
+                "isSyncDeferred": false,
+                "allowDisplayNameUpdate": false
+            },
             "student": {
                 "optionalPropertiesToSync": [
                     "State ID",
                     "Middle Name"
                 ],
-                "synchronizationStartDate": "0001-01-01T00:00:00Z",
                 "isSyncDeferred": false,
                 "allowDisplayNameUpdate": false
             },
@@ -141,19 +153,15 @@ Content-type: application/json
                     "Title",
                     "Qualification"
                 ],
-                "synchronizationStartDate": "0001-01-01T00:00:00Z",
                 "isSyncDeferred": false,
                 "allowDisplayNameUpdate": false
             },
             "studentEnrollment": {
-                "optionalPropertiesToSync": [],
                 "synchronizationStartDate": "0001-01-01T00:00:00Z",
                 "isSyncDeferred": false,
                 "allowDisplayNameUpdate": false
             },
             "teacherRoster": {
-                "optionalPropertiesToSync": [],
-                "synchronizationStartDate": "0001-01-01T00:00:00Z",
                 "isSyncDeferred": false,
                 "allowDisplayNameUpdate": false
             }
