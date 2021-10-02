@@ -5,12 +5,12 @@ doc_type: resourcePageType
 ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: 46c3962304d17b33d0c09c7e0b47afe0b0ee63f8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ba66bd1d8755f286f1cdda10ee785f410ae88ca1
+ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094431"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "60084058"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
@@ -39,6 +39,8 @@ ms.locfileid: "59094431"
 |**Сообщения чата**| | |
 |[Список сообщений в чате](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Список сообщений чата в чате. |
 |[Получение сообщения в чате](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Получите одно сообщение чата в чате. |
+|[Получать сообщения во всех чатах для пользователя](../api/chats-getallmessages.md)| [коллекция чатов](chat.md)| Получите сообщения из всех чатов, в которые пользователь входит, включая чаты 1:1, групповые чаты и чаты собраний. |
+|[Получение всех сообщений в канале](../api/channel-getallmessages.md)|Коллекция [channel](channel.md) | Получайте все сообщения каналов, в которые входит пользователь. |
 |[Создание подписки для новых сообщений чата](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Слушайте новые, измененные и удаленные сообщения чата и реакции на них. |
 |[Отправка сообщения в чате](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| Отправка сообщения чата в существующей беседе 1:1 или групповом чате.|
 |[Обновление сообщения в чате](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Обновление **свойства policyViolation** сообщения чата.|
@@ -73,7 +75,7 @@ ms.locfileid: "59094431"
 |channelIdentity|[channelIdentity](channelidentity.md)|Если сообщение было отправлено в канале, представляет удостоверение канала.|
 |webUrl|string|Только для чтения. Ссылка на сообщение в Microsoft Teams.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь   | Тип    | Описание |
 |:---------------|:--------|:----------|

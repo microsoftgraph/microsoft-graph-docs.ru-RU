@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 09babfebfccbd833ca1b969420f5ef3a3c75ba91
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9069a4b2ec82c14c5de0b7bdda91e48b5ae1b53a
+ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138927"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "60084030"
 ---
 # <a name="get-change-notifications-for-chat-membership-using-microsoft-graph"></a>Получение уведомлений об изменениях участников чата с помощью Microsoft Graph
 
@@ -19,6 +19,8 @@ ms.locfileid: "59138927"
 ## <a name="subscribe-to-changes-in-membership-of-any-chat-at-tenant-level"></a>Подписка на изменения участников любого чата на уровне клиента
 
 Чтобы получать уведомления об изменениях участников любого чата в клиенте, подпишитесь на `/chats/getAllMembers`. Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление.
+
+[!INCLUDE [teams-model-A-and-B-disclaimer](../includes/teams-model-A-and-B-disclaimer.md)]
 
 ### <a name="permissions"></a>Разрешения
 

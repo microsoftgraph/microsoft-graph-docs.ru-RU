@@ -3,14 +3,14 @@ title: Обновление chatMessage
 description: Обновление свойства policyViolation для chatMessage.
 author: RamjotSingh
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7de6500a4186871e7ccdbba8c0c07effd0e47d6e
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: c51abaf2928f3602e2bb36ddaef30ffde52e6cae
+ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582671"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "60083932"
 ---
 # <a name="update-chatmessage"></a>Обновление chatMessage
 
@@ -18,6 +18,8 @@ ms.locfileid: "51582671"
 
 
 Обновление [объекта chatMessage.](../resources/chatMessage.md) Можно обновить только свойство **policyViolation** **для chatMessage.**
+
+[!INCLUDE [teams-model-A-only-disclaimer](../../includes/teams-model-A-only-disclaimer.md)]
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,7 +29,7 @@ ms.locfileid: "51582671"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Не поддерживается. |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Chat.UpdatePolicyViolation.All для сообщения чата.</br>ChannelMessage.UpdatePolicyViolation.All для сообщения канала. |
+|Приложение | Chat.UpdatePolicyViolation.All для сообщения чата.</br>ChannelMessage.UpdatePolicyViolation.All для сообщения канала. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -56,7 +58,7 @@ PATCH /chats/{chatThread-id}/messages/{message-id}
 
 ### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса на обновление свойства **policyViolation** в сообщении канала Microsoft Teams.
+Ниже приводится пример запроса на обновление свойства **policyViolation** в сообщении Microsoft Teams канала.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

@@ -5,12 +5,12 @@ author: anandab
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 8f84a824825db4b174ec4b568afd1d0e1fdf2dfa
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 2a69b010885c79dba87ef80a23f035e50d7aec53
+ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59764330"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "60084093"
 ---
 # <a name="get-change-notifications-for-membership-changes-in-teams-and-channels-using-microsoft-graph"></a>Получение уведомлений об изменениях участников в командах и каналах с помощью Microsoft Graph
 
@@ -51,6 +51,8 @@ Content-Type: application/json
 ## <a name="subscribe-to-membership-changes-in-all-private-channels-of-a-particular-team"></a>Подписка на изменения участников во всех закрытых каналах определенной команды
 
 Чтобы получать уведомления об изменениях участников во всех закрытых каналах определенной команды, подпишитесь на `/teams/{team-id}/channels/getAllMembers`. Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление.
+
+[!INCLUDE [teams-model-A-and-B-disclaimer](../includes/teams-model-A-and-B-disclaimer.md)]
 
 ### <a name="permissions"></a>Разрешения
 

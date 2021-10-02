@@ -440,7 +440,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Примечания
+          - name: Заметки
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -888,7 +888,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: Список
+                      - name: List
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenissuancepolicies.md
@@ -897,7 +897,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: Список
+                      - name: List
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1081,7 +1081,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: Список
+                      - name: List
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: Удалить
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -1090,7 +1090,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: Список
+                      - name: List
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Удалить
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -1099,7 +1099,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: Список
+                      - name: List
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenissuancepolicies.md
@@ -1108,7 +1108,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: Список
+                      - name: List
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1500,7 +1500,7 @@ items:
                 items:
                   - name: Session
                     href: resources/callrecords-session.md
-                  - name: Список
+                  - name: List
                     href: api/callrecords-session-list.md
               - name: Вызовы PSTN
                 items:
@@ -9758,7 +9758,7 @@ items:
               - name: 'Область, поддерживаемая облачным КОМПЬЮТЕРом'
                 href: resources/cloudpcsupportedregion.md
                 items:
-                  - name: Список
+                  - name: List
                     href: api/virtualendpoint-list-supportedregions.md
           - name: Обновления устройств (предварительная версия)
             displayName: Windows updates
@@ -12094,7 +12094,7 @@ items:
                   - name: Назначение пакета доступа
                     href: resources/accesspackageassignment.md
                     items:
-                      - name: Список
+                      - name: List
                         href: api/accesspackageassignment-list.md
                       - name: Фильтр текущего пользователя
                         href: api/accesspackageassignment-filterbycurrentuser.md
@@ -12529,7 +12529,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Получение многозначного свойства
                     href: api/multivaluelegacyextendedproperty-get.md
-      - name: Примечания
+      - name: Заметки
         displayName: OneNote
         items:
           - name: Обзор
@@ -12789,7 +12789,7 @@ items:
                     href: api/personname-update.md
                   - name: Delete
                     href: api/personname-delete.md
-              - name: Примечания
+              - name: Заметки
                 items:
                   - name: Аннотация для человека
                     href: resources/personannotation.md
@@ -13123,7 +13123,7 @@ items:
                   - name: Подробный сводка "Опираясь на стороне"
                     href: resources/relyingpartydetailedsummary.md
                     items:
-                      - name: Список
+                      - name: List
                         href: api/relyingpartydetailedsummary-list.md
               - name: Вход в приложение
                 items:
@@ -13671,7 +13671,7 @@ items:
                     href: api/site-delete-permission.md
           - name: Списки
             items:
-              - name: Список
+              - name: List
                 href: resources/list.md
               - name: Получить списки на сайте
                 href: api/list-list.md
@@ -13785,7 +13785,7 @@ items:
               - name: Set
                 href: resources/termstore-set.md
                 items:
-                  - name: Список
+                  - name: List
                     href: api/termstore-group-list-sets.md
                   - name: Список дочерних элементов
                     href: api/termstore-term-list-children.md
@@ -14130,6 +14130,8 @@ items:
                 href: api/chatmessage-post-replies.md
               - name: Обновление сообщения
                 href: api/chatmessage-update.md
+              - name: Получать сообщения по всем каналам
+                href: api/channel-getallmessages.md
               - name: Получать сообщения во всех чатах
                 href: api/chats-getallmessages.md
               - name: Содержимое списка
@@ -14322,7 +14324,7 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: Получение
                     href: api/offershiftrequest-get.md
-                  - name: Список
+                  - name: List
                     href: api/offershiftrequest-list.md
                   - name: Утвердить
                     href: api/offershiftrequest-approve.md

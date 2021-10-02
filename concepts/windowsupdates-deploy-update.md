@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 1e7f1db86c0b70b5d54d477359d113646204ed3c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: df749d8e9898cbf3bc9b9dcbab24a2c64a776946
+ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117601"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "60083855"
 ---
 # <a name="deploy-a-feature-update-using-the-windows-update-for-business-deployment-service"></a>Развертывание обновления функций с Windows службы развертывания для бизнеса
 
@@ -19,6 +19,9 @@ ms.locfileid: "59117601"
 При развертывании обновления функций на устройстве Windows update предлагает указанное обновление устройству, если оно еще не получило обновление. Например, при развертывании Windows 10 версии обновления 20H2 на устройстве, которое зарегистрировано в управлении обновлениями функций и в настоящее время находится на более старой версии Windows 10, устройство обновляется до версии 20H2. Если устройство уже находится на уровне или выше версии 20H2, оно остается на текущей версии. Если устройство не зарегистрировали в управлении обновлениями функций, эта операция не влияет на устройство.
 
 Пока устройство остается зарегистрированным в управлении обновлениями функций, оно не получает других обновлений функций из Windows Update, если явно не развернуто с помощью службы развертывания.
+
+> [!IMPORTANT]
+> С помощью службы развертывания Windows Update for Business для обновления устройств до Windows 11 (установив параматер версии развертывания на "Windows 11 версии 21H2"), вы соглашаетесь, что при применении этой операционной системы к устройству либо (1) применимая лицензия Windows была приобретена при том лицензировании, или (2), что вы уполномочены связывать свой органи. zation и принимают от своего имени соответствующие условия лицензии microsoft Software, которые можно найти здесь: Условия лицензии [microsoft Software License](https://www.microsoft.com/Useterms).
 
 ## <a name="prerequisites"></a>Предварительные условия
 
@@ -74,7 +77,7 @@ Content-Type: application/json
 > [!NOTE]
 > Если при создании [](/graph/api/resources/windowsupdates-monitoringrule) развертывания не указано правило мониторинга, создается правило мониторинга по умолчанию. Это правило мониторинга по умолчанию **имеет** сигнал `rollback` , пороговое значение и  `20` **действие** `alertError` . В будущем обновлении API это поведение изменится и не будет создано правило мониторинга по умолчанию.
 
-### <a name="request"></a>Запрос
+### <a name="request"></a>Запросить
 
 ```http
 POST https://graph.microsoft.com/beta/admin/windows/updates/deployments
@@ -164,7 +167,7 @@ Content-Type: application/json
 
 В следующем примере показано, как добавлять устройства Azure AD в качестве участников аудитории развертывания.
 
-### <a name="request"></a>Запрос
+### <a name="request"></a>Запросить
 
 ```http
 POST https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deploymentId}/audience/updateAudience
