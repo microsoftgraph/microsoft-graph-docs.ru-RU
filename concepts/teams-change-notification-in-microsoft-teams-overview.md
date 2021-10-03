@@ -5,12 +5,12 @@ author: anandab-msft
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 821c45642ecd50154f8d618496264657b98160b8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a740c6cddf0292e44196bf7b028631d4d24e1c32
+ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138941"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "60084072"
 ---
 # <a name="change-notifications-for-microsoft-teams-resources-using-microsoft-graph"></a>Уведомления об изменениях ресурсов Microsoft Teams с использованием Microsoft Graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "59138941"
 
 ## <a name="change-notification-types"></a>Типы уведомлений об изменениях
 Microsoft Teams поддерживает два типа уведомлений об изменениях:
-- **Уведомление об изменении для отслеживания всех изменений, связанных с ресурсом в клиенте**. Например, вы можете подписаться на изменения сообщений любого канала в клиенте и получать уведомления при создании, обновлении или удалении сообщения в любом канале в клиенте.
+- **Уведомление об изменении для отслеживания всех изменений, связанных с ресурсом в клиенте**. Например, вы можете подписаться на изменения сообщений любого канала в клиенте и получать уведомления при создании, обновлении или удалении сообщения в любом канале в клиенте. К этим сообщениям могут применяться [требования лицензирования и оплаты](/graph/teams-licenses), например к уведомлениям об изменениях [сообщений](teams-changenotifications-chatmessage.md) и [участия](teams-changenotifications-chatMembership.md).
 - **Уведомление об изменении для отслеживания всех изменений определенного ресурса**. Например, вы можете подписаться на изменения сообщений определенного канала и получать уведомления при создании, обновлении или удалении сообщения в этом канале.
 
 Дополнительные сведения о том, какие ресурсы поддерживают определенные типы уведомлений об изменениях, см. в статье [Уведомления об изменениях Microsoft Graph](webhooks.md).

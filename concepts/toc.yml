@@ -444,7 +444,7 @@ items:
             href: teams-configuring-builtin-tabs.md
           - name: Защищенные API
             href: teams-protected-apis.md
-          - name: Лицензии для подписки на сообщения чата
+          - name: Требования к лицензированию и оплате
             href: teams-licenses.md
           - name: Отправка упреждающих сообщений с помощью бота
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context

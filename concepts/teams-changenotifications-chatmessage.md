@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 40b6643e5d1b5008730212ff5239ea9de55f151c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3e62386b6d51c8e6fe97b0ede9f6a21f97f72a8b
+ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071709"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "60083992"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>Получение уведомлений об изменениях сообщений в каналах и чатах Teams с помощью Microsoft Graph
 
@@ -20,9 +20,11 @@ ms.locfileid: "59071709"
 
 Чтобы отслеживать все изменения, связанные с сообщениями в клиенте, вы можете использовать подписки на уровне клиента для сообщений канала и чата. Для этого требуется создать две подписки: одну для отслеживания всех сообщений в [каналах](/graph/api/resources/channel?preserve-view=true), а другую — для отслеживания всех сообщений в [чатах](/graph/api/resources/chat?preserve-view=true).
 
-### <a name="subscribe-to-messages-across-channels"></a>Подписка на сообщения в каналах
+### <a name="subscribe-to-messages-across-all-channels"></a>Подписка на сообщения во всех каналах
 
 Чтобы получать уведомления об изменениях для всех сообщений и ответов по каналам в клиенте, подпишитесь на `/teams/getAllMessages`. Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление.
+
+[!INCLUDE [teams-model-A-and-B-disclaimer](../includes/teams-model-A-and-B-disclaimer.md)]
 
 #### <a name="permissions"></a>Разрешения
 
@@ -50,9 +52,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="subscribe-to-messages-across-chats"></a>Подписка на сообщения в чатах
+### <a name="subscribe-to-messages-across-all-chats"></a>Подписка на сообщения во всех чатах
 
 Чтобы получать уведомления об изменениях всех сообщений в чатах в клиенте, подпишитесь на `/chats/getAllMessages`. Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление.
+
+[!INCLUDE [teams-model-A-and-B-disclaimer](../includes/teams-model-A-and-B-disclaimer.md)]
 
 #### <a name="permissions"></a>Разрешения
 

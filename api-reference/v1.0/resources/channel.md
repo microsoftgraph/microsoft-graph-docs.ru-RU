@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 3f072392c763a9da4a759ebd8978847d659fae4b
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 11752d0a0f86ebbfb5c6e0d1650d15dac6f84a30
+ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765769"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "60084016"
 ---
 # <a name="channel-resource-type"></a>Тип ресурса channel
 
@@ -29,6 +29,7 @@ ms.locfileid: "59765769"
 |[Удаление канала](../api/channel-delete.md) | Нет | Удаление канала.|
 |[Получение дельты сообщения](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Получение добавочных сообщений в канале. |
 |[Перечисление сообщений в каналах](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Получение сообщений в канале |
+|[Получение всех сообщений в канале](../api/channel-getallmessages.md)|Коллекция [channel](channel.md) | Получайте все сообщения каналов, в которые входит пользователь. |
 |[Создание сообщения канала](../api/channel-post-messages.md) | [chatMessage](../resources/chatmessage.md) | Отправка сообщения в канал. |
 |[Создание ответа на сообщение канала](../api/chatmessage-post-replies.md) | [chatMessage](../resources/chatmessage.md) | Ответ на сообщение в канале.|
 |[Получение папки с файлами](../api/channel-get-filesfolder.md)| [driveItem](driveitem.md) | Получение сведений о папке SharePoint, в которой хранятся файлы канала. |
@@ -57,7 +58,7 @@ ms.locfileid: "59765769"
 |isFavoriteByDefault|Логический|Указывает, должен ли канал автоматически помечаться как "Избранное" для всех участников команды. Задается только программными средствами с помощью [Создания группы](../api/team-post.md). Значение по умолчанию: `false`.|
 |email|String| Адрес электронной почты для отправки сообщений в канал. Только для чтения.|
 |webUrl|String|Гиперссылка, ведущая к каналу в Microsoft Teams. Это URL-адрес, получаемый при щелчке правой кнопкой мыши по каналу в Microsoft Teams и выборе пункта "Получить ссылку на канал". Этот URL-адрес должен обрабатываться как непрозрачный BLOB-объект и не должен анализироваться. Только для чтения.|
-|membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|Тип канала. Можно настроить во время создания и нельзя изменить. Возможные значения: `standard` – Канал наследует список членов родительской команды; `private` – В канале могут быть участники, которые являются подмножеством всех участников родительской команды.
+|membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|Тип канала. Можно настроить во время создания и нельзя изменить. Возможные значения: `standard` — канал наследует список участников родительской команды; `private` — в канале могут быть участники, которые являются подмножеством всех участников родительской команды.
 |createdDateTime|dateTimeOffset|Только для чтения. Метка времени создания канала.|
 
 ### <a name="instance-attributes"></a>Атрибуты экземпляра
