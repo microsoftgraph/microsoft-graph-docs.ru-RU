@@ -1,16 +1,16 @@
 ---
 title: Создание подписки
 description: Создание подписки для приложения прослушивателя, позволяющей ему получать уведомления об изменении данных в Microsoft Graph.
-localization_priority: Priority
+ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: 239de6da37b9e795c5b0c2eec359f0b4b457f5f4
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 6f34ac4f2adc6042642c095280f299d39b9bc71d
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912056"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "60115171"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -131,8 +131,7 @@ Content-type: application/json
 ---
 
 
-Предоставьте в тексте запроса описание объекта [subscription](../resources/subscription.md) в формате JSON.
-Поля `clientState` и `latestSupportedTlsVersion` необязательны.
+Предоставьте в тексте запроса описание объекта [subscription](../resources/subscription.md) в формате JSON. Поля `clientState` и `latestSupportedTlsVersion` не являются обязательными.
 
 ##### <a name="resources-examples"></a>Примеры ресурсов
 
