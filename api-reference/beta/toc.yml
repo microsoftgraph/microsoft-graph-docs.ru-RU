@@ -533,7 +533,7 @@ items:
                 href: api/profile-get.md
               - name: Удаление профиля пользователя
                 href: api/profile-delete.md
-          - name: Командная работа
+          - name: Teamwork
             items:
               - name: Установленное приложение
                 href: resources/teamsappinstallation.md
@@ -1580,7 +1580,7 @@ items:
                   - name: Получение параметров
                     href: api/ediscovery-settings-get.md
                   - name: Обновление параметров
-                    href: ediscovery-settings-update.md
+                    href: api/ediscovery-settings-update.md
                   - name: Сброс по умолчанию
                     href: api/ediscovery-settings-resettodefault.md
                   - name: Списки исходных коллекций
@@ -11636,6 +11636,13 @@ items:
                         href: api/continuousaccessevaluationpolicy-get.md
                       - name: Обновление
                         href: api/continuousaccessevaluationpolicy-update.md
+                  - name: Политика регистрации устройств (предварительный просмотр)
+                    href: resources/deviceregistrationpolicy.md
+                    items:
+                      - name: Получение
+                        href: api/deviceregistrationpolicy-get.md
+                      - name: Обновление
+                        href: api/deviceregistrationpolicy-update.md
                   - name: Политика выкатки функций
                     href: resources/featurerolloutpolicy.md
                     items:

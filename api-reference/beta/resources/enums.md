@@ -5,16 +5,33 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 5fdcdc1b7ed0098eb60e6470f34d3fefce6378e9
-ms.sourcegitcommit: cbad97d6a8ccb89b1822b30a11cc9b6f2670deda
+ms.openlocfilehash: 7e815c1164afccd946de20e86d7fd7040f142868
+ms.sourcegitcommit: 2f394a9f33f2fab3634d0f18882985ee211067d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60016616"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60127508"
 ---
 # <a name="enum-values"></a>Значения Enum
 
 Пространство имен: microsoft.graph
+
+### <a name="multifactorauthconfiguration-values"></a>значения multiFactorAuthConfiguration
+
+| Элемент             | Значение | Описание |
+|:-------------------|:------| :------|
+| notRequired        | 0     | Для завершения регистрации устройства пользователю не требуется многофакторная проверка подлинности.|
+| обязательно           | 1     | Для завершения регистрации устройства пользователю требуется многофакторная проверка подлинности.|
+| unknownFutureValue | 2     | Эволюционирующее значение sentinel. Не следует использовать.|
+
+### <a name="policyscope-values"></a>значения policyScope
+
+| Элемент             | Значение | Описание |
+|:-------------------|:------| :------|
+| Нет               | 0     | Политика не применяется ни к пользователям, ни к группам в организации. |
+| все                | 1     | Политика применяется ко всем пользователям и группам в организации. Значение по умолчанию. |
+| выбранный           | 2     | Политика применяется к определенным пользователям или группам в организации. |
+| unknownFutureValue | 3      | Эволюционирующее значение sentinel. Не следует использовать. |
 
 ### <a name="appcredentialrestrictiontype-values"></a>значения appCredentialRestrictionType
 
@@ -28,7 +45,7 @@ ms.locfileid: "60016616"
 
 |Member|
 |:----|
-|Отсутствует|
+|Нет|
 |UserName|
 |Password|
 |SecretToken|
@@ -150,11 +167,11 @@ ms.locfileid: "60016616"
 
 |Member|
 |:---|
-|String|
+|Строка|
 |Целое число|
-|Справка|
+|Справочные материалы|
 |Двоичный|
-|Boolean|
+|Логическое|
 |Даты и время|
 
 ### <a name="mutability-values"></a>значения мутируемости
@@ -330,7 +347,7 @@ ms.locfileid: "60016616"
 
 |Member|
 |:---|
-|userPrincipalName.|
+|userPrincipalName|
 |onPremisesUserPrincipalName|
 |userPrincipalUsername|
 |onPremisesUserPrincipalUsername|
@@ -396,7 +413,7 @@ ms.locfileid: "60016616"
 |:---|
 |email|
 |mobileSMS|
-|mobilePhone;|
+|mobilePhone|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -433,7 +450,7 @@ ms.locfileid: "60016616"
 |userRisk|
 |time|
 |deviceState|
-|клиент|
+|client|
 
 ### <a name="conditionalaccessstatus-values"></a>значения conditionalAccessStatus
 
@@ -543,7 +560,7 @@ ms.locfileid: "60016616"
 |Member|
 |:---|
 |email|
-|mobilePhone;|
+|mobilePhone|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -817,7 +834,7 @@ ms.locfileid: "60016616"
 
 |Member|
 |:---|
-|birthday;|
+|birthday|
 |свадьба|
 |unknownFutureValue|
 
@@ -888,7 +905,7 @@ ms.locfileid: "60016616"
 |Member|
 |:---|
 |email|
-|mobilePhone;|
+|mobilePhone|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -1078,7 +1095,7 @@ ms.locfileid: "60016616"
 
 | Member
 |:-------------------------
-| обязательно
+| Обязательный
 | необязательный
 | resource
 
@@ -1799,7 +1816,7 @@ Enum для серьезности оповещений.
 
 | Элемент | Значение |
 | :----- | :---- |
-| Отсутствует   | 0     |
+| Нет   | 0     |
 | Добавление    | 1     |
 | Update | 2     |
 | Delete | 4      |
@@ -2033,13 +2050,13 @@ Enum для серьезности оповещений.
 |:---|:---|
 |Нет|0|
 |High (Высокий)|1|
-|Низкая|2|
+|Низкие|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>значения threatAssessmentContentType
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| mail   | 1     | Угроза почты.            |
+| почта;   | 1     | Угроза почты.            |
 | url    | 2     | УГРОЗА URL-адреса.             |
 | file   | 3      | Угроза файла вложения. |
 
@@ -2198,7 +2215,7 @@ Enum для серьезности оповещений.
 |:----------------------|:------|:-------------------------------------------------------------------|
 | builtIn               | 1     | Этот тип атрибута потока пользователей обозначает, что он был создан системой |
 | настраиваемый                | 2     | Этот тип атрибута потока пользователей обозначает, что он был создан пользователем   |
-|Обязательный|3 ||
+|обязательно|3 ||
 | unknownFutureValue    | 4      | Член-часовой.                                                 |
 
 ### <a name="permissionclassificationtype-values"></a>значения permissionClassificationType

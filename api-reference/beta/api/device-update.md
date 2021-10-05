@@ -5,12 +5,12 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 845b76fa0643d2991ae0186a94858c55d30f3937
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: d432fff2bafa5233d44238e57e06fafd461b96ba
+ms.sourcegitcommit: 2f394a9f33f2fab3634d0f18882985ee211067d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508203"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60127536"
 ---
 # <a name="update-device"></a>Обновление устройства
 
@@ -18,18 +18,16 @@ ms.locfileid: "59508203"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств устройства.
-
-Лишь определенные свойства устройства можно обновить через утвержденные приложения для управления мобильными устройствами (MDM).
+Обновление свойств устройства. Только некоторые свойства устройства могут обновляться с помощью утвержденных приложений для управления мобильными устройствами (MDM).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Device.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение | Device.ReadWrite.All, Directory.ReadWrite.All |
+|Делегированное (рабочая или учебная учетная запись) | Device.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+|Application | Device.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
