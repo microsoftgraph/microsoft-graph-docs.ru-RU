@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: grangery
 ms.prod: excel
 doc_type: conceptualPageType
-ms.openlocfilehash: 877c2b34b24d77b145a539abff5ca72b51470163
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cf035bc3d9cef6442a220bc14de6f9a0c81f589a
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123575"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115153"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Работа с Excel в Microsoft Graph
 
@@ -1262,7 +1262,7 @@ API ищет *значение одной ячейки* и, если разме�
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/drive/root/workbook/worksheets/{id}/range(address="A1:B00")
+PATCH /me/drive/root/workbook/worksheets/{id}/range(address="A1:B100")
 
 {
   "values" : "Sample text"

@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c96d1211a6666d177d6da8c8ad3c166541f81881
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 06dd238ba048b88326089d4fa083d07e4393ce5d
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062931"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115307"
 ---
 # <a name="message-forward"></a>message: forward
 
@@ -50,7 +50,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание| 
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Обязательна |
+| Authorization  | string  | Bearer {token}. Обязательная |
 | Content-Type | string  | Характер данных в теле объекта.  Обязательный. <br/> Используйте `application/json` для объекта JSON и `text/plain` для содержимого MIME. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -123,7 +123,7 @@ Content-length: 166
   "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 ```
 
 ### <a name="example-2-forward-a-message-using-mime-content"></a>Пример 2. Переопрепровождение сообщения с помощью контента MIME

@@ -1,16 +1,16 @@
 ---
 title: Создание объекта Message
 description: Создание черновика нового сообщения в формате JSON или MIME.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4305a14ba2726102427c4f0b4c733656be2fd03b
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 45c5371d7d45cc895835408cc0fc85e920eb1595
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52868912"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115328"
 ---
 # <a name="create-message"></a>Создание объекта Message
 
@@ -31,7 +31,7 @@ ms.locfileid: "52868912"
 
 По умолчанию эта операция сохраняет черновик в папке "Черновики".
 
-[Отправьте](/graph/api-reference/beta/api/message-send.md) черновик сообщения в ходе последующей операции.
+[Отправьте](../api/message-send.md) черновик сообщения в ходе последующей операции.
 
 Кроме того, [отправьте новое сообщение](../api/user-sendmail.md) в одном действии или [](../api/message-createreply.md) создайте [](../api/message-createreplyall.md) черновик для отправки, [](../api/message-createforward.md)чтобы ответить или ответить всем на существующее сообщение.
 
@@ -58,7 +58,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 | Authorization  | string  | Bearer {token}.|
 | Content-Type | string  | Характер данных в теле объекта. Обязательный.<br/> Использование `application/json` объекта JSON и `text/plain` контента MIME |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 При использовании формата JSON предоформим JSON-представление объекта [сообщения.](../resources/message.md)
 
 При указании текста в формате MIME укажите содержимое MIME с применимыми заголовками сообщений Интернета ("Кому", "Копия", "Скрытая копия", "Тема"), все закодированные сообщения в формате **Base64** в тексте запроса.
@@ -196,7 +196,7 @@ Content-type: application/json
 ```
 
 ### <a name="example-2-create-a-draft-message-that-includes-an--mention"></a>Пример 2. Создание черновика сообщения с упоминанием @
-#### <a name="request"></a>Запрос
+#### <a name="request"></a>Запросить
 В следующем примере показан черновик электронной почты Ранди Уэлч в Samantha Booth. В сообщении также содержится упоминание другого пользователя, Даны Swope.
 
 Предоставьте в теле запроса описание объекта [message](../resources/message.md) в формате JSON.

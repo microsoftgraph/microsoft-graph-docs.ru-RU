@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: f501f90a8e7b82759db4f54f014de93fc0806047
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 8cf6fd78cdb56523c92bc1d67e69bd0e87b999b4
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765167"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115237"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph"></a>Обзор API Поиска (Майкрософт) в Microsoft Graph
 
@@ -25,7 +25,7 @@ API Поиска (Майкрософт) предоставляет единую 
 
 ### <a name="include-custom-external-data-in-search-experience"></a>Включение настраиваемых внешних данных в интерфейс поиска
 
-Используйте [соединители Microsoft Graph](/microsoftsearch/connectors-overview), чтобы включить данные из-за пределов облака Майкрософт в свой интерфейс поиска. Например, подключитесь к базе данных отдела кадров организации или к каталогу продуктов. Затем используйте API Поиска (Майкрософт), чтобы легко [запросить](/graph/api/search-query) внешний источник данных. 
+Используйте [соединители Microsoft Graph](/microsoftsearch/connectors-overview), чтобы включить данные, не входящие в Microsoft Cloud, в возможности поиска. Например, можно подключиться к базе данных отдела кадров организации или к каталогу продукции. Затем используйте API Поиска (Майкрософт), чтобы [запрашивать](/graph/api/search-query) внешний источник данных. 
 
 Просмотрите [коллекцию соединителей Microsoft Graph](/microsoftsearch/connectors-gallery), чтобы найти готовые к использованию соединители. Вы также можете [создавать собственные соединители](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true#common-use-cases), чтобы индексировать внешние настраиваемые элементы и отправлять запросы к определенным внешним источникам данных.
 

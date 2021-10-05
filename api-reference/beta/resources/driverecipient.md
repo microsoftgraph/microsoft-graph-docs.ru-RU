@@ -1,25 +1,37 @@
 ---
 author: JeremyKelley
-description: Ресурс DriveRecipient представляет человека, группу или другого получателя, которому можно предоставить доступ с помощью действия invite.
+description: Ресурс driveRecipient представляет человека, группу или другого получателя, который должен делиться с помощью действия приглашения.
 ms.date: 09/10/2017
 title: DriveRecipient
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: f703aa1bc9d12ec8b67aab0d80d641964b7b6096
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 536e68f619f3f37e71d036eaebffad8a11aaf0a2
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058475"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115181"
 ---
-# <a name="driverecipient-resource"></a>Ресурс DriveRecipient
+# <a name="driverecipient-resource"></a>ресурс driveRecipient
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ресурс **DriveRecipient** представляет человека, группу или другого получателя, которому можно предоставить доступ с помощью действия [invite](../api/driveitem-invite.md).
+Представляет человека, группу или другого получателя для обмена элементом диска с помощью действия [приглашения.](../api/driveitem-invite.md)
+
+При использовании [приглашения](../api/driveitem-invite.md) добавить разрешения объект **driveRecipient** может указать адрес электронной почты, псевдоним или **objectId** получателя. 
+Требуется только одно из этих значений; несколько значений не принимаются.
+
+## <a name="properties"></a>Свойства
+Ниже перечислены свойства ресурса получателя.
+
+| Имя свойства | Тип   | Описание                                                                                             |
+|:--------------|:-------|:--------------------------------------------------------------------------------------------------------|
+| email         | String | Электронный адрес получателя (если с получателем связан электронный адрес).                  |
+| alias         | String | Псевдоним объекта домена для тех случаев, когда электронный адрес недоступен (например, для групп безопасности). |
+| objectId      | String | Уникальный идентификатор получателя в каталоге.                                               |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -34,19 +46,6 @@ ms.locfileid: "48058475"
   "objectId": "string",
 }
 ```
-
-## <a name="properties"></a>Свойства
-Ниже перечислены свойства ресурса получателя.
-
-| Имя свойства | Тип   | Описание                                                                                             |
-|:--------------|:-------|:--------------------------------------------------------------------------------------------------------|
-| email         | String | Электронный адрес получателя (если с получателем связан электронный адрес).                  |
-| alias         | String | Псевдоним объекта домена для тех случаев, когда электронный адрес недоступен (например, для групп безопасности). |
-| objectId      | String | Уникальный идентификатор получателя в каталоге.                                               |
-
-## <a name="remarks"></a>Заметки
-
-При добавлении разрешений с помощью действия [invite](../api/driveitem-invite.md) в объекте DriveRecipient могут быть указаны свойства **email**, **alias** и **objectId**. Достаточно указать только одно из этих значений.
 
 <!--
 {

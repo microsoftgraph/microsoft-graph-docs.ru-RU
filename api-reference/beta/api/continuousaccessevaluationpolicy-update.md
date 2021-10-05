@@ -2,15 +2,15 @@
 title: Обновление continuousAccessEvaluationPolicy
 description: Обновление свойств объекта continuousAccessEvaluationPolicy.
 author: jerrysai
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 80c08c4b711daa2e79600c20ce11f30cd7879af4
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7ee03ae95f73fe334175749c0ad938c1a63aaa2a
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437284"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115419"
 ---
 # <a name="update-continuousaccessevaluationpolicy"></a>Обновление continuousAccessEvaluationPolicy
 Пространство имен: microsoft.graph
@@ -29,7 +29,7 @@ ms.locfileid: "50437284"
 |Приложение                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess и Application.Read.All |
 
 > [!NOTE]
-> Этот API имеет [известные проблемы, связанные](/graph/known-issues#permissions) с разрешениями.
+> Этот API имеет [известные проблемы, связанные](/graph/known-issues#permissions) с разрешениями.  
 
 ## <a name="http-request"></a>HTTP-запрос
 

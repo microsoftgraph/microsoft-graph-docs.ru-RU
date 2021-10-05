@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: reports
 author: sarahwxy
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 4c2f8877cf8252e63bc06002db4bbb0596004447
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ec4077dfb44b4135463412d56ecbb38ec0fd2be4
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59113499"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115146"
 ---
 # <a name="microsoft-graph-reports-api-overview"></a>Обзор API отчетов Microsoft Graph
 

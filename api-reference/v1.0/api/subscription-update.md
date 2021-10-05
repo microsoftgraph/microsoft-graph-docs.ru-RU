@@ -1,16 +1,16 @@
 ---
 title: Обновление подписки
 description: Возобновление подписки путем увеличения срока действия.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: 3b00e7d72833e1f871b59aa0a906a295d42fbc5f
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 40ab70dfd1d4827aeeef8657dcc1c94eb5738274
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468823"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "60115398"
 ---
 # <a name="update-subscription"></a>Обновление подписки
 

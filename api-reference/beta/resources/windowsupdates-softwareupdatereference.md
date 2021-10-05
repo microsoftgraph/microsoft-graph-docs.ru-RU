@@ -2,15 +2,15 @@
 title: тип ресурса softwareUpdateReference
 description: Представляет определенный контент обновления.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 66f7f895bd3d7556ad5e3d35066236663b474f41
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 13e71a5b08100a74884ae0f4f69b69b86bec9b2c
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52068203"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115314"
 ---
 # <a name="softwareupdatereference-resource-type"></a>тип ресурса softwareUpdateReference
 
@@ -22,7 +22,7 @@ ms.locfileid: "52068203"
 
 В развертывании одно и то же **программное обеспечениеUpdateReference** может привести к тому, что устройства получают различные изменения обновления, но контент считается контекстуальным эквивалентом для всех устройств в развертывании.
 
-Все ссылки на обновление программного обеспечения существуют как один из следующих производных типов: [featureUpdateReference](../resources/windowsupdates-featureupdatereference.md).
+Все ссылки на обновление программного обеспечения существуют как один из следующих производных типов: [featureUpdateReference](../resources/windowsupdates-featureupdatereference.md) и [speededQualityUpdateReference.](../resources/windowsupdates-expeditedqualityupdatereference.md)
 
 Наследуется [от deployableContent](../resources/windowsupdates-deployablecontent.md). Базовый тип [для windowsUpdateReference](../resources/windowsupdates-windowsupdatereference.md).
 

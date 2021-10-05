@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: db843fadbf48c307169b5e49df2b81fb1e0bf0f0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b3002535f6530d46fc28158b1c64195527b093d8
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143967"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115384"
 ---
 # <a name="create-message"></a>Создание сообщения
 
@@ -28,7 +28,7 @@ ms.locfileid: "59143967"
 
 По умолчанию эта операция сохраняет черновик в папке "Черновики".
 
-[Отправьте](/graph/api-reference/beta/api/message-send.md) черновик сообщения в ходе последующей операции.
+[Отправьте](../api/message-send.md) черновик сообщения в ходе последующей операции.
 
 Или [отправьте новое сообщение](../api/user-sendmail.md) за одну операцию или создайте черновик для [пересылки](../api/message-createforward.md), [ответа](../api/message-createreply.md) и [ответа всем](../api/message-createreplyall.md) на существующее сообщение.
 

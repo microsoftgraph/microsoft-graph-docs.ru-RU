@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса Букингворктимеслот
-description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-localization_priority: Normal
+title: тип ресурса bookingWorkTimeSlot
+description: Определяет время начала и окончания работы.
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: dadeebfe65a8d502b8a401f551638c09f637625f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7b20514b52cbea033d3a4bccbca6def8f09ce46b
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071663"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115293"
 ---
-# <a name="bookingworktimeslot-resource-type"></a>Тип ресурса Букингворктимеслот
+# <a name="bookingworktimeslot-resource-type"></a>тип ресурса bookingWorkTimeSlot
 
 Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Время начала и окончания работы.
+Определяет время начала и окончания работы.
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|end|TimeOfDay|Время суток, в которое начинается рабочий день. Например, 08:00:00.0000000.|
-|начать|TimeOfDay|Время суток, когда работа завершается. Например, 17:00:00.0000000.|
+|end|TimeOfDay|Время суток, когда работа прекращается. Например, 17:00:00.0000000.|
+|start|TimeOfDay|Время начала работы. Например, 08:00:00.0000000.|
 
 ## <a name="json-representation"></a>Представление JSON
 

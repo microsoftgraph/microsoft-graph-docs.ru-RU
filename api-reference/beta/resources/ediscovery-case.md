@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: ea4907edc66cd2c8d7713e816d561a0181c84d92
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 8c38006d4794463fd7960706e0afa1320302321f
+ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766308"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60115290"
 ---
 # <a name="case-resource-type"></a>тип ресурса case
 
@@ -27,7 +27,7 @@ ms.locfileid: "59766308"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Случай списка](../api/ediscovery-case-list.md) | [коллекция microsoft.graph.ediscovery.case](ediscovery-case.md) | Извлечение списка [объектов-кейсов.](../resources/ediscovery-case.md)|
+| [Случаи списка](../api/ediscovery-case-list.md) | [коллекция microsoft.graph.ediscovery.case](ediscovery-case.md) | Извлечение списка [объектов-кейсов.](../resources/ediscovery-case.md)|
 | [Создание дела](../api/ediscovery-case-post.md) | [microsoft.graph.ediscovery.case](ediscovery-case.md) | Создайте новый **объект case.** |
 | [Get case](../api/ediscovery-case-get.md) | [microsoft.graph.ediscovery.case](ediscovery-case.md) | Извлечение свойств и связей объекта **case.** |
 | [Дело об обновлении](../api/ediscovery-case-update.md) | [microsoft.graph.ediscovery.case](ediscovery-case.md) | Обновим свойства **объекта-кейса.** |
@@ -46,7 +46,7 @@ ms.locfileid: "59766308"
 | Параметры кейса |
 | [Получение параметров](../api/ediscovery-settings-get.md)|[microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md)|Ознакомьтесь с свойствами и отношениями объекта [microsoft.graph.ediscovery.settings.](../resources/ediscovery-settings.md) |
 | [Обновление параметров](../api/ediscovery-settings-update.md)|[microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md)|Обновление свойств объекта [microsoft.graph.ediscovery.settings.](../resources/ediscovery-settings.md) |
-| [resetToDefault](../api/ediscovery-settings-resettodefault.md)|Нет|Сброс всех параметров в значения по умолчанию. |
+| [resetToDefault](../api/ediscovery-settings-resettodefault.md)|Отсутствует|Сброс всех параметров в значения по умолчанию. |
 | Исходные коллекции |
 | [Список sourceCollections](../api/ediscovery-case-list-sourcecollections.md)|[коллекция microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Получите [sourceCollection из](../resources/ediscovery-sourcecollection.md) **объекта-кейса.**|
 | [Создание sourceCollection](../api/ediscovery-case-post-sourcecollections.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Создайте новый **объект sourceCollection.**|

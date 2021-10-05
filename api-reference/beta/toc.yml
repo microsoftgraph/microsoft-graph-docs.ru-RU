@@ -533,7 +533,7 @@ items:
                 href: api/profile-get.md
               - name: Удаление профиля пользователя
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: Командная работа
             items:
               - name: Установленное приложение
                 href: resources/teamsappinstallation.md
@@ -1559,12 +1559,38 @@ items:
                     href: api/ediscovery-case-get.md
                   - name: Обновление
                     href: api/ediscovery-case-update.md
+                  - name: Delete
+                    href: api/ediscovery-case-delete.md
                   - name: Закрытие
                     href: api/ediscovery-case-close.md
                   - name: Открытие
                     href: api/ediscovery-case-reopen.md
-                  - name: Удалить
-                    href: api/ediscovery-case-delete.md
+                  - name: Хранители списка
+                    href: api/ediscovery-case-list-custodians.md
+                  - name: Создание хранителя
+                    href: api/ediscovery-case-post-custodians.md
+                  - name: Законное удерживает список
+                    href: api/ediscovery-case-list-legalholds.md
+                  - name: Создание юридического удержания
+                    href: api/ediscovery-case-post-legalholds.md
+                  - name: Наборы обзоров списков
+                    href: api/ediscovery-case-list-reviewsets.md
+                  - name: Создание набора обзоров
+                    href: /api/ediscovery-case-post-reviewsets.md
+                  - name: Получение параметров
+                    href: api/ediscovery-settings-get.md
+                  - name: Обновление параметров
+                    href: ediscovery-settings-update.md
+                  - name: Сброс по умолчанию
+                    href: api/ediscovery-settings-resettodefault.md
+                  - name: Списки исходных коллекций
+                    href: api/ediscovery-case-list-sourcecollections.md
+                  - name: Создание коллекции исходных данных
+                    href: /api/ediscovery-case-post-sourcecollections.md
+                  - name: Теги списка
+                    href: /api/ediscovery-case-list-tags.md
+                  - name: Создание тега
+                    href: /api/ediscovery-case-post-tags.md
               - name: Хранитель
                 href: resources/ediscovery-custodian.md
                 items:
@@ -14054,7 +14080,7 @@ items:
                 href: api/channel-get-members.md
               - name: Получение ответа на сообщение
                 href: api/chatmessage-get.md
-              - name: Получать сообщения по всем каналам
+              - name: Получение сообщений по всем каналам.
                 href: api/channel-getallmessages.md
               - name: Перечисление сообщений в каналах
                 href: api/channel-list-messages.md
@@ -14130,7 +14156,7 @@ items:
                 href: api/chatmessage-post-replies.md
               - name: Обновление сообщения
                 href: api/chatmessage-update.md
-              - name: Получать сообщения по всем каналам
+              - name: Получение сообщений по всем каналам.
                 href: api/channel-getallmessages.md
               - name: Получать сообщения во всех чатах
                 href: api/chats-getallmessages.md
