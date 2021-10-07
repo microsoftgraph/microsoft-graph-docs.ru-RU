@@ -1,16 +1,16 @@
 ---
 title: тип ресурса audioConferencing
 description: Представляет сведения о доступе к телефону для собрания в Интернете.
-author: ananmishr
+author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: a656ac6e3e47daea1c35b5fb54d6354a93c27dc2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dc60d1cb5bcc1c191d82e9e996014dac8bb9f9bc
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021731"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220670"
 ---
 # <a name="audioconferencing-resource-type"></a>тип ресурса audioConferencing
 
@@ -20,12 +20,19 @@ ms.locfileid: "59021731"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство            | Тип    | Описание                                                                    |
-|:--------------------|:--------|:-------------------------------------------------------------------------------|
-| dialinUrl           | Строка  | URL-адрес веб-страницы, доступной извне, который содержит сведения о диалоговом номере. |
-| conferenceId        | Строка  | ID конференции собрания в Интернете.      |
-| tollFreeNumber      | Строка  | Бесплатный номер, подключенный к поставщику аудиоконференции.              |
-| tollNumber          | Строка  | Платный номер, который подключается к поставщику аудиоконференции.                   |
+| Свойство                    | Тип              | Описание                                                                    |
+| :-------------------------- | :---------------- | :----------------------------------------------------------------------------- |
+| dialinUrl                   | Строка            | URL-адрес веб-страницы, доступной извне, который содержит сведения о диалоговом номере. |
+| conferenceId                | String            | ID конференции собрания в Интернете.                                       |
+| tollFreeNumbers             | Коллекция строк | Список бесплатных номеров, отображаемого в приглашении на собрание.            |
+| tollNumbers                 | Коллекция строк | Список номеров платных номеров, отображаемого в приглашении на собрание.                 |
+| tollFreeNumber (обесценилось) | Строка            | Бесплатный номер, подключенный к поставщику аудиоконференции.           |
+| tollNumber (износ)     | String            | Платный номер, который подключается к поставщику аудиоконференции.                |
+
+> [!CAUTION]
+>
+>- Свойства **tollFreeNumber** и **tollNumber** обесценяются. Вместо этого **используйте свойства tollFreeNumbers** **и tollNumbers.**
+>- Для обратной совместимости исходный **tollFreeNumber** добавляется в новую коллекцию **tollFreeNumbers,** а исходный **tollNumber** добавляется в новую коллекцию **tollNumbers.**
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -42,8 +49,8 @@ ms.locfileid: "59021731"
 {
   "dialinUrl": "String",
   "conferenceId": "String",
-  "tollFreeNumber": "String",
-  "tollNumber": "String"
+  "tollFreeNumbers": [ "String" ],
+  "tollNumbers": [ "String" ]
 }
 ```
 

@@ -1,16 +1,16 @@
 ---
 title: Get educationSubmissionResource
-description: Извлекает свойства определенного ресурса, связанного с отправкой. Этот ресурс находится в "рабочем" списке ресурсов и должен рассматриваться студентом в процессе работы. Этот ресурс завернут с помощью возможного указателя обратно в ресурс назначения, если он был скопирован из назначения.
+description: Извлечение свойств определенного ресурса, связанного с отправкой.
 author: dipakboyed
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: bdcb5a7358b4f652b2621f93803effb5bfaf7230
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 3d9ed8fd941b55e7f8dad7a34acc57ebf2f222db
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367305"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220390"
 ---
 # <a name="get-educationsubmissionresource"></a>Get educationSubmissionResource
 
@@ -18,7 +18,9 @@ ms.locfileid: "58367305"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлекает свойства определенного ресурса, связанного с отправкой. Этот ресурс находится в "рабочем" списке ресурсов и должен рассматриваться студентом в процессе работы. Этот ресурс завернут с помощью возможного указателя обратно в ресурс назначения, если он был скопирован из назначения.
+Извлечение свойств определенного ресурса, связанного с [отправкой.](../resources/educationsubmissionresource.md)
+
+Этот ресурс находится в "рабочем" списке ресурсов и должен рассматриваться студентом в процессе работы. Этот ресурс завернут с помощью возможного указателя обратно в ресурс назначения, если он был скопирован из назначения.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -32,10 +34,10 @@ ms.locfileid: "58367305"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /education/classes/{id}/assignments/{id}/submissions/{id}/resources/{id}
+GET /education/classes/{class-id}/assignments/{assignment-id}/submissions/{submission-id}/resources/{resource-id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
@@ -43,20 +45,22 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/resources/{id}
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте текст запроса для этого метода.
+Не поставляем тело запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код отклика и `200 OK` объект [educationSubmissionResource](../resources/educationsubmissionresource.md) в тексте ответа.
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+
+## <a name="examples"></a>Примеры
+### <a name="example-1-get-an-educationwordresource"></a>Пример 1. Получить educationWordResource
+#### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_educationsubmissionresource"
+  "name": "get_educationWordResource"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/resources/f2387c3b-ec39-4bf2-a399-d7242677f024
+GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/submissions/da443246-384d-673b-32db-bdba9d7f2b51/resources/6546fe9a-48d9-4775-8de9-cdb2b078fde4
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationsubmissionresource-csharp-snippets.md)]
@@ -76,7 +80,7 @@ GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/s
 
 ---
 
-##### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
@@ -84,7 +88,7 @@ GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/s
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationSubmissionResource"
+  "@odata.type": "microsoft.graph.educationWordResource"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -92,31 +96,313 @@ Content-type: application/json
 Content-length: 1152
 
 {
-  "assignmentResourceUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
-  "id": "f2387c3b-ec39-4bf2-a399-d7242677f024",
-  "resource": {
-      "@odata.type": "#microsoft.graph.educationWordResource",
-      "displayName": "Report.docx",
-      "createdDateTime": "2017-10-21T07:52:53.9863696Z",
-      "createdBy": {
-          "application": null,
-          "device": null,
-          "user": {
-              "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-              "displayName": null
-          }
-      },
-      "lastModifiedDateTime": "2017-10-21T07:52:53.9863696Z",
-      "lastModifiedBy": {
-          "application": null,
-          "device": null,
-          "user": {
-              "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
-              "displayName": null
-          }
-      },
-      "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeTZ_iul5AdW9f/items/017NJZI27BCN2QI2H7HJGLIVPXR6SD2DH6"
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions('da443246-384d-673b-32db-bdba9d7f2b51')/resources/$entity",
+    "assignmentResourceUrl": null,
+    "id": "6546fe9a-48d9-4775-8de9-cdb2b078fde4",
+    "resource": {
+        "@odata.type": "#microsoft.graph.educationWordResource",
+        "displayName": "Weekly Goals.docx",
+        "createdDateTime": "2021-09-13T19:22:01.2883506Z",
+        "lastModifiedDateTime": "2021-09-13T19:22:01.2883506Z",
+        "fileUrl": "https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RNQLFIXC77M7NC3CJWIPLBEO36K",
+        "createdBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                "displayName": null
+            }
+        },
+        "lastModifiedBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                "displayName": null
+            }
+        }
+    }
+}
+```
+
+### <a name="example-2-get-an-educationfileresource"></a>Пример 2. Получить образованиеFileResource
+#### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "get_educationFileResource"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/submissions/da443246-384d-673b-32db-bdba9d7f2b51/resources/33cf3eb2-8a35-4f76-8f16-b2abc112d44f
+```
+#### <a name="response"></a>Отклик
+Ниже приведен пример отклика. 
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationFileResource"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 1152
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions('da443246-384d-673b-32db-bdba9d7f2b51')/resources/$entity",
+    "assignmentResourceUrl": null,
+    "id": "33cf3eb2-8a35-4f76-8f16-b2abc112d44f",
+    "resource": {
+        "@odata.type": "#microsoft.graph.educationFileResource",
+        "displayName": "_FTP_EDC-61424749-250820211136.pdf",
+        "createdDateTime": "2021-09-13T19:23:04.5049139Z",
+        "lastModifiedDateTime": "2021-09-13T19:23:04.5049139Z",
+        "fileUrl": "https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RL45XVPGDBRW5FLDR62Z5TCMGG3",
+        "createdBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                "displayName": null
+            }
+        },
+        "lastModifiedBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                "displayName": null
+            }
+        }
+    }
+}
+```
+
+### <a name="example-3-get-an-educationexcelresource"></a>Пример 3. Получить образованиеExcelResource
+#### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_educationExcelResource"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/submissions/da443246-384d-673b-32db-bdba9d7f2b51/resources/c36626ba-9864-4f3a-8d6f-7104f62df605
+```
+#### <a name="response"></a>Отклик
+Ниже приведен пример отклика. 
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationExcelResource"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 1152
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions('da443246-384d-673b-32db-bdba9d7f2b51')/resources/$entity",
+    "assignmentResourceUrl": null,
+    "id": "c36626ba-9864-4f3a-8d6f-7104f62df605",
+    "resource": {
+        "@odata.type": "#microsoft.graph.educationExcelResource",
+        "displayName": "userAgeGroup QueryParameter Test.xlsx",
+        "createdDateTime": "2021-09-13T19:23:58.3925618Z",
+        "lastModifiedDateTime": "2021-09-13T19:23:58.3925618Z",
+        "fileUrl": "https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RONPUDM2CZKNRF3TGHYUM7Z64WE",
+        "createdBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                "displayName": null
+            }
+        },
+        "lastModifiedBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                "displayName": null
+            }
+        }
+    }
+}
+```
+
+### <a name="example-4-get-an-educationpowerpointresource"></a>Пример 4. Получить образованиеPowerPointResource
+#### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_educationPowerPointResource"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/submissions/da443246-384d-673b-32db-bdba9d7f2b51/resources/e19bd829-17ee-4483-88d0-f62b406f367c
+```
+#### <a name="response"></a>Отклик
+Ниже приведен пример отклика. 
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationPowerPointResource"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 1152
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions('da443246-384d-673b-32db-bdba9d7f2b51')/resources/$entity",
+    "assignmentResourceUrl": null,
+    "id": "e19bd829-17ee-4483-88d0-f62b406f367c",
+    "resource": {
+        "@odata.type": "#microsoft.graph.educationPowerPointResource",
+        "displayName": "state diagram.pptx",
+        "createdDateTime": "2021-09-13T19:24:38.4706263Z",
+        "lastModifiedDateTime": "2021-09-13T19:24:38.4706263Z",
+        "fileUrl": "https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RN3MHWWM7BNXJD2UD5OMRFEDKN2",
+        "createdBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                "displayName": null
+            }
+        },
+        "lastModifiedBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                "displayName": null
+            }
+        }
+    }
+}
+```
+
+### <a name="example-5-get-an-educationlinkresource"></a>Пример 5. Получить образованиеLinkResource
+#### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_educationLinkResource"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/submissions/da443246-384d-673b-32db-bdba9d7f2b51/resources/c9169e8f-f096-4876-8675-7dee248af635
+```
+#### <a name="response"></a>Отклик
+Ниже приведен пример отклика. 
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationLinkResource"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 1152
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions('da443246-384d-673b-32db-bdba9d7f2b51')/resources/$entity",
+    "assignmentResourceUrl": null,
+    "id": "c9169e8f-f096-4876-8675-7dee248af635",
+    "resource": {
+        "@odata.type": "#microsoft.graph.educationLinkResource",
+        "displayName": "Sharpen your skills",
+        "createdDateTime": "2021-09-13T22:04:24.4720369Z",
+        "lastModifiedDateTime": "2021-09-13T22:04:24.4720369Z",
+        "link": "https://www.codewars.com/",
+        "createdBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                "displayName": null
+            }
+        },
+        "lastModifiedBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                "displayName": null
+            }
+        }
+    }
+}
+```
+
+### <a name="example-6-get-an-educationmediaresource"></a>Пример 6. Получить educationMediaResource
+#### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_educationMediaResource"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/submissions/da443246-384d-673b-32db-bdba9d7f2b51/resources/31f2c67a-6df1-4a7f-b4c5-311fe15c873a
+```
+#### <a name="response"></a>Отклик
+Ниже приведен пример отклика. 
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationMediaResource"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 1152
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('1618dfb0-3ff2-4edf-8d5c-b8f81df00e80')/submissions('da443246-384d-673b-32db-bdba9d7f2b51')/resources/$entity",
+    "assignmentResourceUrl": null,
+    "id": "31f2c67a-6df1-4a7f-b4c5-311fe15c873a",
+    "resource": {
+        "@odata.type": "#microsoft.graph.educationMediaResource",
+        "displayName": "category.jpg",
+        "createdDateTime": "2021-09-16T19:07:59.4982929Z",
+        "lastModifiedDateTime": "2021-09-16T19:07:59.4982929Z",
+        "fileUrl": "https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RK2WLKUUBAA4ZBKXNBL6QFC2TKG",
+        "createdBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                "displayName": null
+            }
+        },
+        "lastModifiedBy": {
+            "application": null,
+            "device": null,
+            "user": {
+                "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                "displayName": null
+            }
+        }
+    }
 }
 ```
 

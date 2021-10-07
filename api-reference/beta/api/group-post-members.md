@@ -1,16 +1,16 @@
 ---
 title: Добавление участника
 description: Добавьте участника в группу Microsoft 365 или группу безопасности через свойство **навигации** членов.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f7ba21f4e132ea81a09309e5d010686c2e351b14
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: cbd076e7f725f7442a03301085ecb228534aa2ee
+ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58396748"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214463"
 ---
 # <a name="add-member"></a>Добавление участника
 
@@ -18,12 +18,12 @@ ms.locfileid: "58396748"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавьте участника в группу Microsoft 365 или группу безопасности через свойство **навигации** членов.
+Добавление участника в группу через свойство **навигации** участников.
 
 Можно добавить пользователей, директоров служб или другие группы. 
 
 > [!Important]
-> + Вы можете добавлять пользователей только в группы безопасности и группы Microsoft 365, управляемые через облако.
+> + Можно добавлять пользователей только в группы, управляемые через облако.
 > + Вы не можете добавлять группы безопасности в группы Microsoft 365.
 > + Вы не можете добавлять группы Microsoft 365 в группы безопасности или другие группы Microsoft 365.
 
@@ -91,7 +91,7 @@ Content-length: 30
 
 В теле запроса устройте JSON-представление объекта `id` [directoryObject](../resources/directoryobject.md), [пользователя](../resources/user.md)или группового объекта, который необходимо добавить. [](../resources/group.md)
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 Ниже приведен пример ответа.
 
 <!-- {
@@ -103,7 +103,7 @@ HTTP/1.1 204 No Content
 
 ## <a name="see-also"></a>См. также
 - [Добавление участника в команду](team-post-members.md)
-- [Обновление роли участника в команде](team-update-members.md)
+- [Обновление роли участника в группе](team-update-members.md)
 - [Удаление участника из чата](team-delete-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

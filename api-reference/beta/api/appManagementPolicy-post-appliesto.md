@@ -1,16 +1,16 @@
 ---
 title: Назначение appliesTo
 description: Назначение политики основному объекту приложения или службы.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: madansr7
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0bddfe37cbcf1571baed56bddc9c2097e7c5c253
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 3520ea93d20002b5ac68ff97452a2b39b1cec9df
+ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262518"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214414"
 ---
 # <a name="assign-appliesto"></a>Назначение appliesTo
 
@@ -40,9 +40,10 @@ POST /applications/{id}/appManagementPolicies/$ref
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Имя          | Описание               |
-| :------------ | :------------------------ |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Имя          | Описание                 |
+|:--------------|:----------------------------|
+| Авторизация | Bearer {токен}. Обязательный.   |
+| Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -67,6 +68,7 @@ POST /applications/{id}/appManagementPolicies/$ref
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/applications/{id}/appManagementPolicies/$ref
+Content-type: application/json
 
 {
  "@odata.id":"https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}"

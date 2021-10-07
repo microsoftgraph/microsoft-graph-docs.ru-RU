@@ -2,15 +2,15 @@
 title: 'вызов: передача'
 description: Передача активного одноранговых вызовов.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6b4a9c00bc40f2bfd0ea9cc40317c426f2c2aa2c
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: d31572e7fb26040d36f16fb2bb5671204683c104
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786561"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "60214529"
 ---
 # <a name="call-transfer"></a>вызов: передача
 

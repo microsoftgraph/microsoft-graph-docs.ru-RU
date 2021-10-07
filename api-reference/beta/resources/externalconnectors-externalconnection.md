@@ -1,16 +1,16 @@
 ---
 title: тип ресурса externalConnection
 description: Подключение является логическим контейнером для внешнего контента в Microsoft Graph
-localization_priority: Normal
+ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 76fa391d1ce9937bc1799e9bc4ae9470c0794497
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: f7eeddc207206e6bcfcd526e8ac3e2cd00d481b3
+ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467824"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214741"
 ---
 # <a name="externalconnection-resource-type"></a>тип ресурса externalConnection
 
@@ -37,10 +37,12 @@ ms.locfileid: "53467824"
 
 | Свойство      | Тип                              | Описание |
 |:--------------|:----------------------------------|:------------|
-| configuration | [microsoft.graph.externalConnectors.configuration](externalconnectors-configuration.md) | Указывает дополнительные ID-адреса приложений, которые разрешены для управления подключением и индексации контента в подключении. Необязательное. |
-| description   | String                            | Описание подключения, отображаемого в Центр администрирования Microsoft 365. Необязательное. |
-| id            | String                            | Уникальный ID подключения, предоставленный разработчиком в Azure Active Directory клиента. Длина должна быть от 3 до 32 символов. Должны содержаться только буквамерные символы. Не может `Microsoft` начаться или быть одним из следующих значений: `None` , , , , , `Directory` `Exchange` `ExchangeArchive` `LinkedIn` `Mailbox` `OneDriveBusiness` `SharePoint` `Teams` `Yammer` `Connectors` `TaskFabric` `PowerBI` `Assistant` `TopicEngine` `MSFT_All_Connectors` . Обязательный элемент. |
-| name          | String                            | Отображает имя подключения, отображаемого в Центр администрирования Microsoft 365. Максимальная длина 128 символов. Обязательный элемент. |
+| configuration | [microsoft.graph.externalConnectors.configuration](externalconnectors-configuration.md) | Указывает дополнительные ID-адреса приложений, которые разрешены для управления подключением и индексации контента в подключении. Необязательный параметр. |
+| connectorId   |String                             | ID Teams app. Необязательный параметр.|
+| description   | Строка                            | Описание подключения, отображаемого в Центр администрирования Microsoft 365. Необязательный параметр. |
+| id            | String                            | Уникальный ID подключения, предоставленный разработчиком в Azure Active Directory клиента. Длина должна быть от 3 до 32 символов. Должны содержаться только буквамерные символы. Не может `Microsoft` начаться или быть одним из следующих значений: `None` , , , , , `Directory` `Exchange` `ExchangeArchive` `LinkedIn` `Mailbox` `OneDriveBusiness` `SharePoint` `Teams` `Yammer` `Connectors` `TaskFabric` `PowerBI` `Assistant` `TopicEngine` `MSFT_All_Connectors` . Обязательно. |
+| name          | String                            | Отображает имя подключения, отображаемого в Центр администрирования Microsoft 365. Максимальная длина 128 символов. Обязательно. |
+| searchSettings|[microsoft.graph.externalConnectors.searchSettings](../resources/externalconnectors-searchsettings.md)|Параметры, настраивающие опытом поиска контента в этом подключении, например шаблоны отображения результатов поиска.|
 | state         | microsoft.graph.externalConnectors.connectionState                   | Указывает текущее состояние подключения. Возможные значения `draft` , `ready` и `obsolete` `limitExceeded` . Обязательный. |
 
 ## <a name="relationships"></a>Связи
@@ -49,7 +51,8 @@ ms.locfileid: "53467824"
 |:-------------|:---------------------------------------------------------|:---|
 | items        | [коллекция microsoft.graph.externalConnectors.externalItem](externalconnectors-externalitem.md)               | Только для чтения. Допускается значение null. |
 | operations   | [коллекция microsoft.graph.externalConnectors.connectionOperation](externalconnectors-connectionoperation.md) | Только для чтения. Допускается значение null. |
-| schema       | [microsoft.graph.externalConnectors.schema](externalconnectors-schema.md)                                      | Только для чтения. Допускается значение null. |
+| схема       | [microsoft.graph.externalConnectors.schema](externalconnectors-schema.md)                                      | Только для чтения. Допускается значение null. |
+| groups       | [коллекция microsoft.graph.externalConnectors.externalGroup](externalconnectors-externalgroup.md)             | Только для чтения. Допускается значение null. |
 
 ## <a name="json-representation"></a>Представление JSON
 

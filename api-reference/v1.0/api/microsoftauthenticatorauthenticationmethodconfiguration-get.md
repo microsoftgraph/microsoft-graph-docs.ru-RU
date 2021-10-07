@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7d23f0bf58b525f6f77ae5a892a7f429c55ba4f8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 527240297391a7130bdd5b5c18832b3d2e7122d7
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59110265"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60219774"
 ---
 # <a name="get-microsoftauthenticatorauthenticationmethodconfiguration"></a>Получите microsoftAuthenticatorAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
@@ -26,7 +26,11 @@ ms.locfileid: "59110265"
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Policy.ReadWrite.AuthenticationMethod|
 
-Для делегирования сценариев администратору требуется роль глобального администратора. Дополнительные сведения см. в [роли](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+Для делегирования сценариев администратору требуется следующая [роль:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+
+* Глобальный читатель
+* Администратор политики проверки подлинности
+* Глобальный администратор
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,7 +50,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/mic
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект MicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) в теле отклика.
 

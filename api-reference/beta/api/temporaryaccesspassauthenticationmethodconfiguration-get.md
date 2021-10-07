@@ -2,15 +2,15 @@
 title: Получить temporaryAccessPassAuthenticationMethodConfiguration
 description: Ознакомьтесь с свойствами и отношениями объекта temporaryAccessPassAuthenticationMethodConfiguration.
 author: inbarckms
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b0874968f9cce1b60a3b0f85a68ac4ccbf9a887e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: af7c07c5e70924db826eb4f599d008bafea365f5
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049648"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220525"
 ---
 # <a name="get-temporaryaccesspassauthenticationmethodconfiguration"></a>Получить temporaryAccessPassAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
@@ -28,7 +28,11 @@ ms.locfileid: "52049648"
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Policy.ReadWrite.AuthenticationMethod|
 
- Для делегирования сценариев администратору требуется роль глобального администратора. Дополнительные сведения см. в[дополнительных сведениях.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев администратору требуется следующая [роль:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+
+* Глобальный читатель
+* Администратор политики проверки подлинности
+* Глобальный администратор
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,8 +51,8 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/Tem
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+### <a name="response"></a>Ответ
+Ниже приведен пример отклика.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

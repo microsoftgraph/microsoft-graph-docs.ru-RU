@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 632e2d746e4204e2c3c64f429f443ff40ed5a69f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0663fb168100d3dcded42dcd621650899d8b72a9
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118738"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220754"
 ---
 # <a name="educationsubmissionresource-resource-type"></a>тип ресурсов educationSubmissionResource
 
@@ -25,8 +25,9 @@ ms.locfileid: "59118738"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
+|[Список ресурсов](../api/educationsubmission-list-resources.md) | [объекты educationSubmissionResource](educationsubmissionresource.md) |Возвращает список объектов **educationSubmissionResource.**|
 |[Get educationSubmissionResource](../api/educationsubmissionresource-get.md) | [educationSubmissionResource](educationsubmissionresource.md) |Чтение свойств и связей объекта **educationSubmissionResource.**|
-|[удаление](../api/educationsubmissionresource-delete.md); | Нет |Удаление **объекта educationSubmissionResource.** |
+|[Delete](../api/educationsubmissionresource-delete.md) | Нет |Удаление **объекта educationSubmissionResource.** |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -35,7 +36,7 @@ ms.locfileid: "59118738"
 |id|String| Только для чтения.|
 |resource|[educationResource](educationresource.md)|Объект Resource.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

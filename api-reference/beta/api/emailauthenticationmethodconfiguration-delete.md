@@ -2,15 +2,15 @@
 title: Удаление emailAuthenticationMethodConfiguration
 description: Удаляет объект emailAuthenticationMethodConfiguration.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: de27ecad11f484040790e2df0d327ba954c775dc
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 59784b5d51ea6c3c495fa6d81ec5b5d557a29cb4
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472983"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220467"
 ---
 # <a name="delete-emailauthenticationmethodconfiguration"></a>Удаление emailAuthenticationMethodConfiguration
 
@@ -29,8 +29,9 @@ ms.locfileid: "50472983"
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
-Для делегирования сценариев администратору требуется одна из следующих [ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев администратору требуется следующая [роль:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
+* Администратор политики проверки подлинности
 * Глобальный администратор
 
 ## <a name="http-request"></a>HTTP-запрос

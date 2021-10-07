@@ -2,15 +2,15 @@
 title: Удаление fido2AuthenticationMethodConfiguration
 description: Удаление объекта fido2AuthenticationMethodConfiguration.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 369f2effe3a2a11a6af57f276999022af7fc3d60
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 36b26adc18cdd8767194f927cd30a5a91ced7bfd
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50959204"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220593"
 ---
 # <a name="delete-fido2authenticationmethodconfiguration"></a>Удаление fido2AuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
@@ -31,6 +31,7 @@ ms.locfileid: "50959204"
 
 Для делегирования сценариев администратору требуется следующая [роль:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
+* Администратор политики проверки подлинности
 * Глобальный администратор
 
 

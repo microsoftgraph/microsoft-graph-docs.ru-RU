@@ -1,16 +1,16 @@
 ---
 title: Обновление teamsApp
-description: 'Обновление приложения, опубликованного ранее в каталоге приложений Microsoft Teams. '
+description: 'Обновление приложения, ранее опубликованного в каталоге Microsoft Teams приложения. '
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8c2d105a03e8818ab9f8877df9dc84e77ae85964
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 20c9d628610a534ad998c561d7060038bbecb5db
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49606806"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220362"
 ---
 # <a name="update-teamsapp"></a>Обновление teamsApp
 
@@ -18,9 +18,9 @@ ms.locfileid: "49606806"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление [приложения](../resources/teamsapp.md) , опубликованного ранее в каталоге приложений Microsoft Teams. Чтобы обновить приложение, свойству **distributionMethod** для приложения необходимо присвоить значение `organization` .
+Обновление [приложения,](../resources/teamsapp.md) ранее опубликованного в каталоге Microsoft Teams приложения. Чтобы обновить приложение, необходимо задать свойство **distributionMethod** для `organization` приложения.
 
-Этот API-интерфейс специально обновляет приложение, опубликованное в каталоге приложений вашей организации (Каталог приложений клиента).  
+Этот API специально обновляет приложение, опубликованное в каталоге приложений организации (каталоге приложений клиента).  
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,7 +30,7 @@ ms.locfileid: "49606806"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)|
 |:----------------------------------     |:-------------|
-| Делегированное (рабочая или учебная учетная запись) | CamlQuery. оправить, CamlQuery. ReadWrite. ALL, Directory. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись) | AppCatalog.Submit, AppCatalog.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается|
 | Для приложений                            | Не поддерживается. |
 
@@ -46,20 +46,20 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 
 |Свойство|Тип|Описание|
 |----|----|----|
-|рекуиресревиев| Логический | Этот необязательный параметр запроса запускает процесс проверки приложения. Пользователи с правами администратора могут отсылать приложения, не запуская проверку. Если пользователям требуется предварительно запросить проверку перед публикацией, необходимо задать  `requiresReview` для них значение `true` . Пользователь с правами администратора может не устанавливать `requiresReview` или устанавливать значение `false`  , и приложение считается утвержденным и будет публиковаться мгновенно.|
+|requiresReview| Boolean | Этот необязательный параметр запроса запускает процесс проверки приложения. Пользователи с привилегиями администратора могут отправлять приложения без запуска проверки. Если пользователи хотят запросить отзыв перед публикацией, они должны `requiresReview` задать . `true` Пользователь, у которого есть привилегии администратора, может не устанавливать и не устанавливать значение, и приложение будет считаться утвержденным и будет `requiresReview` `false`  публиковаться мгновенно.|
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Заголовок        | Значение           |
 |:--------------|:--------------  |
 | Авторизация | Bearer {токен}. Обязательный.  |
-| Content-Type  | Application/ZIP. Обязательно. |
+| Content-Type  | application/zip. Обязательно. |
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса включите полезные данные манифеста ZIP для Teams. Дополнительные сведения см. в разделе [Создание пакета приложения](/microsoftteams/platform/concepts/apps/apps-package).
+В теле запроса включите полезное Teams почтовый манифест. Дополнительные сведения см. [в материале Create an app package.](/microsoftteams/platform/concepts/apps/apps-package)
 
->**Примечание:** Используйте идентификатор, возвращенный при вызове [списка опубликованных приложений](./appcatalogs-list-teamsapps.md) , для ссылки на приложение, которое вы хотите обновить. Не используйте идентификатор из манифеста пакета приложения ZIP.
+>**Примечание:** Используйте ID, возвращенный из [списка](./appcatalogs-list-teamsapps.md) опубликованных приложений, для ссылки на приложение, которое вы хотите обновить. Не используйте ID из манифеста пакета почтовых приложений.
 
 ## <a name="response"></a>Отклик
 
@@ -67,7 +67,7 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-update-an-application-previously-published-to-the-microsoft-teams-app-catalog"></a>Пример 1: обновление приложения, опубликованного ранее в каталоге приложений Microsoft Teams
+### <a name="example-1-update-an-application-previously-published-to-the-microsoft-teams-app-catalog"></a>Пример 1. Обновление приложения, ранее опубликованного в каталоге Microsoft Teams приложения
 
 ### <a name="request"></a>Запрос
 
@@ -81,14 +81,14 @@ Content-length: 244
 [Zip file containing a Teams app package]
 ```
 
-Подробные сведения о ZIP-файле приложения Teams приведены в разделе [Создание пакета приложения](/microsoftteams/platform/concepts/apps/apps-package).
+Дополнительные сведения о файле Teams приложения см. в [материале Create app package](/microsoftteams/platform/concepts/apps/apps-package).
 <!-- markdownlint-disable MD024 -->
 
 ### <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
-### <a name="example-2-update-a-new-version-of-an-existing-app-for-admin-review-prior-to-publication-in-the-current-tenant-catalog"></a>Пример 2: обновление новой версии существующего приложения для просмотра администратором до публикации в текущем каталоге клиентов
+### <a name="example-2-update-a-new-version-of-an-existing-app-for-admin-review-prior-to-publication-in-the-current-tenant-catalog"></a>Пример 2. Обновление новой версии существующего приложения для проверки администратора до публикации в текущем каталоге клиента
 
 ### <a name="request"></a>Запрос
 
@@ -116,7 +116,7 @@ Content-length: 244
 
 ### <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и сочетание "ключ-значение" `publishingState` : `submitted` в тексте отклика. *Обратитесь к разделу* [теамсаппдефинитион](../resources/teamsappdefinition.md).
+В случае успешной работы этот метод возвращает код ответа и пару `201 Created` ключей и значений: `publishingState` в `submitted` тексте ответа. *См.* [раздел TeamsAppdefinition](../resources/teamsappdefinition.md).
 
 <!-- {
   "blockType": "response",

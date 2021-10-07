@@ -1,16 +1,16 @@
 ---
 title: Удаление teamsApp
 description: 'Удалите Teams приложения из каталога приложений организации (каталог приложений клиента). '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 34e9e7a1f8e98eda66bf34950c9d7f0b9cac7d6e
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 7859ee48e3d5b324d61ff356c643fe449feaf010
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786701"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220537"
 ---
 # <a name="delete-teamsapp"></a>Удаление teamsApp
 
@@ -26,13 +26,13 @@ ms.locfileid: "52786701"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 >**Примечание:** Только глобальные администраторы могут вызывать этот API. 
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)|
 |:----------------------------------     |:-------------|
-| Делегированные (рабочая или учебная учетная запись) | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись) | AppCatalog.Submit, AppCatalog.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.|
 | Для приложений                            | Не поддерживается. |
 

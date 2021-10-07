@@ -3,12 +3,12 @@ title: Выберите поставщика проверки подлиннос
 description: Узнайте, как выбрать поставщиков проверки подлинности по сценарию для приложения.
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: 328c696d2fff74ea790a2cf51530116049c35988
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 607759b11f1554a91cd169efe7fb56e17862354b
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59078541"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220572"
 ---
 <!-- markdownlint-disable MD001 MD024 MD025 -->
 
@@ -173,7 +173,11 @@ final User me = graphClient.me().buildRequest().get();
 ### <a name="using-a-client-secret"></a>Использование секрета клиента
 
 ```csharp
-var scopes = new[] { "User.Read.All" };
+// The client credentials flow requires that you request the
+// /.default scope, and preconfigure your permissions on the
+// app registration in Azure. An administrator must grant consent
+// to those permissions beforehand.
+var scopes = new[] { "https://graph.microsoft.com/.default" };
 
 // Multi-tenant apps can use "common",
 // single-tenant apps must use the tenant ID from the Azure portal

@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 98efea327f97d87c03fd4910ba213b2529e459c8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d14a6c30595a383d7a2547b328114c06790904cc
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59074370"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220698"
 ---
 # <a name="delete-emailauthenticationmethodconfiguration"></a>Удаление emailAuthenticationMethodConfiguration
 
@@ -27,7 +27,10 @@ ms.locfileid: "59074370"
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Policy.ReadWrite.AuthenticationMethod|
 
-Для делегирования сценариев администратору требуется роль глобального администратора. Дополнительные сведения см. в [роли](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+Для делегирования сценариев администратору требуется следующая [роль:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+
+* Администратор политики проверки подлинности
+* Глобальный администратор
 
 ## <a name="http-request"></a>HTTP-запрос
 

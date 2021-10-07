@@ -1,16 +1,16 @@
 ---
 title: Обновление системы образования
-description: Обновление объекта назначения. Это могут сделать только преподаватели в классе. Обратите внимание, что вы не можете использовать запрос PATCH для изменения состояния назначения. Чтобы изменить состояние назначения, используйте действие публикации.
-localization_priority: Normal
+description: Обновление объекта educationAssigment.
+ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 39f9f1a56fca07078b4be74447de563b7b7f8d31
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 51ee97696f89a0b2145a278d57329ccd4545425d
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780773"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220646"
 ---
 # <a name="update-educationassignment"></a>Обновление системы образования
 
@@ -18,7 +18,9 @@ ms.locfileid: "52780773"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление объекта назначения. Это могут сделать только преподаватели в классе. Обратите внимание, что вы не можете использовать запрос PATCH для изменения состояния назначения. Чтобы [изменить](../api/educationassignment-publish.md) состояние назначения, используйте действие публикации.
+Обновление [объекта educationAssignment.](../resources/educationassignment.md) 
+
+Это могут сделать только преподаватели в классе. Обратите внимание, что вы не можете использовать запрос PATCH для изменения состояния **назначения.** Чтобы [изменить](../api/educationassignment-publish.md) состояние назначения, используйте действие **публикации.**
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -32,7 +34,7 @@ ms.locfileid: "52780773"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /education/classes/{id}/assignments/{id}
+PATCH /education/classes/{class-id}/assignments/{assignment-id}
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
@@ -45,19 +47,20 @@ PATCH /education/classes/{id}/assignments/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|addedStudentAction|String| Управление поведением учащихся, добавленных после публикации задания.|
-|allowLateSubmissions|Логический| Можно ли отправку представлений после даты.|
-|allowStudentsToAddResourcesToSubmission|Логический| Может ли учащийся добавлять ресурсы в отправку. Указано, поступили ли из списка ресурсов назначения только элементы, указанные в представлении. |
+|addedStudentAction|Строка| Управление поведением учащихся, добавленных после публикации задания.|
+|addToCalendarAction|educationAddToCalendarOptions|Необязательное поле для управления поведением назначения для добавления назначений в календари учащихся и преподавателей при публикации назначения. Возможные значения: `none` , , и `studentsAndPublisher` `studentsAndTeamOwners` `studentsOnly` `unknownFutureValue` . Значение по умолчанию — `none`.|
+|allowLateSubmissions|Boolean| Можно ли отправку представлений после даты.|
+|allowStudentsToAddResourcesToSubmission|Boolean| Может ли учащийся добавлять ресурсы в отправку. Указано, поступили ли из списка ресурсов назначения только элементы, указанные в представлении. |
 |assignDateTime|DateTimeOffset| Дата публикации назначения учащимся. |
 |assignTo|educationAssignmentRecipient| Студенты, получаювшие назначение.|
 |closeDateTime|DateTimeOffset| Дата закрытия назначения для отправки. Это необязательный поле, которое может быть равно нуль, если назначение не позволяет использоватьLateSubmissions или closeDateTime то же самое, что и dueDateTime, но если указано, оно должно быть больше или равно dueDateTime.|
-|displayName|String| Имя назначения. |
+|displayName|Строка| Имя назначения. |
 |dueDateTime|DateTimeOffset| Назначение даты должно быть. |
 |классификация|educationAssignmentGradeType| Оценка назначения.|
 |инструкции|itemBody| Инструкции, которые будут даны учащимся вместе с назначением. |
-|notificationChannelUrl|String| Канал для публикации уведомления о публикации назначения. Обновление URL-адреса канала не допускается после публикации назначения и допускается только в том случае, если **значение assignTo** является [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md).|
+|notificationChannelUrl|Строка| Канал для публикации уведомления о публикации назначения. Обновление URL-адреса канала не допускается после публикации назначения и допускается только в том случае, если **значение assignTo** является [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md).|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код ответа и обновленный объект `200 OK` [educationAssignment](../resources/educationassignment.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -66,22 +69,23 @@ PATCH /education/classes/{id}/assignments/{id}
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","4679bc1b-90c5-45af-ae1a-d5357672ed39"],
   "name": "update_educationassignment"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/education/classes/11021/assignments/19002
+PATCH https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/4679bc1b-90c5-45af-ae1a-d5357672ed39
 Content-type: application/json
 Content-length: 279
 
 {
-  "displayName": "Week 1 reading assignment",
-  "instructions": {
-    "contentType": "Text",
-    "content": "Read chapters 1 through 3"
-  },
-  "dueDateTime": "2014-02-01T00:00:00Z",
-  "addedStudentAction": "none",
-  "addToCalendarAction": "studentsAndPublisher",
+    "displayName": "Reading and review test 09.03 #5",
+    "instructions": {
+        "contentType": "text",
+        "content": "Read chapter 5 and write your review"
+    },
+    "dueDateTime": "2021-09-10T00:00:00Z",
+    "addedStudentAction": "none",
+    "addToCalendarAction": "studentsAndPublisher"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -103,7 +107,7 @@ Content-length: 279
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -118,20 +122,57 @@ Content-type: application/json
 Content-length: 279
 
 {
-  "classId": "11021",
-  "displayName": "Week 1 reading assignment",
-  "instructions": {
-    "contentType": "Text",
-    "content": "Read chapters 1 through 3"
-  },
-  "closeDateTime": "2014-02-11T00:00:00Z",
-  "addToCalendarAction": "studentsAndPublisher",
-  "dueDateTime": "2014-02-01T00:00:00Z",
-  "assignDateTime": "2014-01-01T00:00:00Z",
-  "assignedDateTime": "2014-01-01T00:00:00Z",
-  "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!0sGAoOieeE6iSj1WXCV-nYYTuh2luKRDvUVGQBLOmvYpRzc5ARnCRorRht6P3MhU/items/01N74NOEZL7P3VK22SQFDKBZ3PHVPKDVAQ",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments/$entity",
+    "classId": "72a7baec-c3e9-4213-a850-f62de0adad5f",
+    "displayName": "Reading and review test 09.03 #5",
+    "closeDateTime": null,
+    "dueDateTime": "2021-09-10T00:00:00Z",
+    "assignDateTime": null,
+    "assignedDateTime": null,
+    "allowLateSubmissions": true,
+    "resourcesFolderUrl": null,
+    "createdDateTime": "2021-09-03T23:57:14.6088791Z",
+    "lastModifiedDateTime": "2021-09-04T15:01:35.3361649Z",
+    "allowStudentsToAddResourcesToSubmission": true,
+    "status": "draft",
+    "notificationChannelUrl": null,
+    "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2272a7baec-c3e9-4213-a850-f62de0adad5f%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%224679bc1b-90c5-45af-ae1a-d5357672ed39%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22%7D%22,%22channelId%22%3Anull%7D",
+    "addToCalendarAction": "studentsAndPublisher",
+    "addedStudentAction": "none",
+    "id": "4679bc1b-90c5-45af-ae1a-d5357672ed39",
+    "instructions": {
+        "content": "Read chapter 5 and write your review",
+        "contentType": "text"
+    },
+    "grading": {
+        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+        "maxPoints": 50
+    },
+    "assignTo": {
+        "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
+    },
+    "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "displayName": null
+        }
+    },
+    "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "displayName": null
+        }
+    }
 }
 ```
+
+## <a name="see-also"></a>См. также
+
+* [Переход состояния назначения и отправки](/graph/assignments-submissions-states-transition)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

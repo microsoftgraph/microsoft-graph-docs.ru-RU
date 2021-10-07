@@ -2,15 +2,15 @@
 title: Получить проверку подлинностиMethodsPolicy
 description: Ознакомьтесь с свойствами и отношениями объекта authenticationMethodsPolicy.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8c4e737187726f45bb546ea16d09d3ce476401fa
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: e47e48b1e954d13671c5f37fd546d10447f0d7e7
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52869499"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60219830"
 ---
 # <a name="get-authenticationmethodspolicy"></a>Получить проверку подлинностиMethodsPolicy
 Пространство имен: microsoft.graph
@@ -27,6 +27,12 @@ ms.locfileid: "52869499"
 |Делегированное (рабочая или учебная учетная запись)|Policy.ReadWrite.AuthenticationMethod|
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Policy.ReadWrite.AuthenticationMethod|
+
+Для делегирования сценариев администратору требуется следующая [роль:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+
+* Глобальный читатель
+* Администратор политики проверки подлинности
+* Глобальный администратор
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,10 +52,10 @@ GET /policies/authenticationMethodsPolicy
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md) в тексте ответа.
 

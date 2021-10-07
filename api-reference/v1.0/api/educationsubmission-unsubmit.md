@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a641ea0f76f7a1ad7a7689caa7803da40759727d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ba1b1b3396e4c8c2878e2ed837460da1d0e5c84a
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59074390"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220026"
 ---
 # <a name="educationsubmission-unsubmit"></a>educationSubmission: ото всех
 
@@ -32,8 +32,7 @@ ms.locfileid: "59074390"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/submissions/d1bee293-d8bb-48d4-af3e-c8cb0e3c7fe7/unsubmit
-
+POST /education/classes/{class-id}/assignments/{assignment-id}/submissions/{submission-id}/unsubmit
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
@@ -44,7 +43,7 @@ POST /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005f
 Не поставляем тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
+В случае успеха этот метод возвращает код отклика и `200 Ok` объект [educationSubmission](../resources/educationsubmission.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -57,8 +56,9 @@ POST /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005f
   "blockType": "request",
   "name": "educationsubmission_unsubmit"
 }-->
+
 ```http
-POST https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/ad8afb28-c138-4ad7-b7f5-a6986c2655a8/submissions/fbe51c90-78b7-418a-b5f3-871bf8d8d21e/unsubmit
+POST https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/7192332b-e904-4891-81e2-356242ab1858/submissions/02bb5de1-7205-2a25-fe33-f99cf53de1c4/unsubmit
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationsubmission-unsubmit-csharp-snippets.md)]
@@ -85,14 +85,55 @@ POST https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationAssignment"
+  "@odata.type": "microsoft.graph.educationSubmission"
 } -->
+
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 Ok
 
 {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#educationSubmission",
+    "@odata.type": "#microsoft.graph.educationSubmission",
+    "status": "returned",
+    "submittedDateTime": null,
+    "unsubmittedDateTime": "2021-09-07T14:41:18.9512645Z",
+    "returnedDateTime": null,
+    "resourcesFolderUrl": null,
+    "id": "02bb5de1-7205-2a25-fe33-f99cf53de1c4",
+    "recipient": {
+        "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
+        "userId": "80cefd93-8d88-40e2-b5d3-67898383e226"
+    },
+    "submittedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+            "displayName": null
+        }
+    },
+    "unsubmittedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+            "displayName": null
+        }
+    },
+    "returnedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": null,
+            "displayName": null
+        }
+    }
 }
 ```
+
+## <a name="see-also"></a>См. также
+
+* [Состояния, переходы и ограничения для назначений и представлений](/graph/assignments-submissions-states-transition)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

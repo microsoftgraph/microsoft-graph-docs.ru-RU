@@ -2,15 +2,15 @@
 title: Get smsAuthenticationMethodConfiguration
 description: Ознакомьтесь с свойствами и отношениями объекта smsAuthenticationMethodConfiguration.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: cc09a85fefb46142c46d5383a0d7225636041b8b
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 5758fb28939d4ae039d0b752cc3d4ae5b63b3bbc
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761852"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220439"
 ---
 # <a name="get-smsauthenticationmethodconfiguration"></a>Get smsAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
@@ -28,7 +28,11 @@ ms.locfileid: "50761852"
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Policy.ReadWrite.AuthenticationMethod|
 
-Для делегирования сценариев администратору требуется роль глобального администратора. Дополнительные сведения см. в [роли](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+Для делегирования сценариев администратору требуется следующая [роль:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+
+* Глобальный читатель
+* Администратор политики проверки подлинности
+* Глобальный администратор
 
 ## <a name="http-request"></a>HTTP-запрос
 

@@ -2,15 +2,15 @@
 title: Удаление educationAssignmentResource
 description: Удалите определенный ресурс, присоединенный к назначению.
 author: dipakboyed
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7e853534998978f89e44cbd8f657a56250c599a0
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: dcaf478202c4c58ee1a1abfc974e48a79d0a76b8
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911909"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220663"
 ---
 # <a name="delete-educationassignmentresource"></a>Удаление educationAssignmentResource
 
@@ -32,7 +32,7 @@ ms.locfileid: "52911909"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /education/classes/{id}/assignments/{id}/resources/{id}
+DELETE /education/classes/{class-id}/assignments/{assignment-id}/resources/{resource-id}
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -41,14 +41,14 @@ DELETE /education/classes/{id}/assignments/{id}/resources/{id}
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте текст запроса для этого метода.
+Не поставляем тело запроса для этого метода.
 
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -58,7 +58,7 @@ DELETE /education/classes/{id}/assignments/{id}/resources/{id}
   "name": "delete_educationassignmentresource"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/resources/22002
+DELETE https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/dc1af5c4-8211-4e5d-92e6-f006477c2740/resources/7a686854-6d85-4fc0-9729-e36af26f7deb
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-educationassignmentresource-csharp-snippets.md)]
@@ -78,7 +78,7 @@ DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/1900
 
 ---
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. 
 
 

@@ -2,15 +2,15 @@
 title: тип ресурса audioConferencing
 description: Представляет сведения о доступе к телефону для собрания в Интернете.
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5f0c9338aefa592ed030585a6b0342d03e7717d0
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 98daa0db87c86625581c30e558f851d7cfa075f8
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896699"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220425"
 ---
 # <a name="audioconferencing-resource-type"></a>тип ресурса audioConferencing
 
@@ -24,12 +24,12 @@ ms.locfileid: "52896699"
 
 | Свойство                    | Тип              | Описание                                                                    |
 | :-------------------------- | :---------------- | :----------------------------------------------------------------------------- |
-| dialinUrl                   | String            | URL-адрес веб-страницы, доступной извне, который содержит сведения о диалоговом номере. |
+| dialinUrl                   | Строка            | URL-адрес веб-страницы, доступной извне, который содержит сведения о диалоговом номере. |
 | conferenceId                | String            | ID конференции собрания в Интернете.                                       |
-| tollFreeNumber (обесценилось) | String            | Бесплатный номер, подключенный к поставщику аудиоконференции.           |
-| tollFreeNumbers             | Коллекция String | Список бесплатных номеров, отображаемого в приглашении на собрание.            |
+| tollFreeNumbers             | Коллекция строк | Список бесплатных номеров, отображаемого в приглашении на собрание.            |
+| tollNumbers                 | Коллекция строк | Список номеров платных номеров, отображаемого в приглашении на собрание.                 |
+| tollFreeNumber (обесценилось) | Строка            | Бесплатный номер, подключенный к поставщику аудиоконференции.           |
 | tollNumber (износ)     | String            | Платный номер, который подключается к поставщику аудиоконференции.                |
-| tollNumbers                 | Коллекция String | Список номеров платных номеров, отображаемого в приглашении на собрание.                 |
 
 > [!CAUTION]
 >
@@ -51,8 +51,8 @@ ms.locfileid: "52896699"
 {
   "dialinUrl": "String",
   "conferenceId": "String",
-  "tollFreeNumbers": ["String"],
-  "tollNumbers": ["String"]
+  "tollFreeNumbers": [ "String" ],
+  "tollNumbers": [ "String" ]
 }
 ```
 

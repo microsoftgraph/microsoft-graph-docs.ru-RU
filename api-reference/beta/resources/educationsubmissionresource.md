@@ -1,39 +1,40 @@
 ---
-title: Тип ресурса Едукатионсубмиссионресаурце
-description: 'Оболочка для ресурса, используемая при отправке. Оболочка добавляет указатель на ресурс назначения, если он был скопирован из назначения.  '
+title: тип ресурсов educationSubmissionResource
+description: Оболочка вокруг ресурса для использования в отправке.
 author: dipakboyed
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 329bab18d90412ec8cc06b12106e0be4f1b46935
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ed2d33a9da889925cad08f91b99cc2b2c0c47113
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979569"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220481"
 ---
-# <a name="educationsubmissionresource-resource-type"></a>Тип ресурса Едукатионсубмиссионресаурце
+# <a name="educationsubmissionresource-resource-type"></a>тип ресурсов educationSubmissionResource
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Оболочка для ресурса, используемая при отправке. Оболочка добавляет указатель на ресурс назначения, если он был скопирован из назначения.  
+Оболочка вокруг ресурса для использования в отправке. Обертка добавляет указатель на ресурс назначения, если он был скопирован из назначения.  
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение Едукатионсубмиссионресаурце](../api/educationsubmissionresource-get.md) | [едукатионсубмиссионресаурце](educationsubmissionresource.md) |Чтение свойств и связей объекта **едукатионсубмиссионресаурце** .|
-|[удаление](../api/educationsubmissionresource-delete.md); | Нет |Удаление объекта **едукатионсубмиссионресаурце** . |
+|[Список ресурсов](../api/educationsubmission-list-resources.md) | [объекты educationSubmissionResource](educationsubmissionresource.md) |Возвращает список объектов **educationSubmissionResource.**|
+|[Get educationSubmissionResource](../api/educationsubmissionresource-get.md) | [educationSubmissionResource](educationsubmissionresource.md) |Чтение свойств и связей объекта **educationSubmissionResource.**|
+|[Delete](../api/educationsubmissionresource-delete.md) | Нет |Удаление **объекта educationSubmissionResource.** |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|ассигнментресаурцеурл|String|Указатель на назначение, из которого был скопирован данный ресурс. Если это значение равно null, учащийся передал ресурс.|
+|assignmentResourceUrl|Строка|Указатель на назначение, с которого был скопирован этот ресурс. Если это null, студент загрузил ресурс.|
 |id|String| Только для чтения.|
-|resource|[едукатионресаурце](educationresource.md)|Объект Resource.|
+|resource|[educationResource](educationresource.md)|Объект Resource.|
 
 ## <a name="relationships"></a>Связи
 Нет

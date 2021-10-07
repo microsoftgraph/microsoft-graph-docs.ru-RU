@@ -2,25 +2,25 @@
 title: Обновление без пароляMicrosoftAuthenticatorAuthenticationMethodConfiguration
 description: Обновление свойств объекта без пароляMicrosoftAuthenticatorAuthenticationMethodConfiguration.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a05df00deaf73d8aad7f98023b56405c2b618025
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: b582bbb3d41d1755680cae5021fdf178bcab1b63
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472432"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220551"
 ---
 # <a name="update-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-deprecated"></a>Обновление passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration (deprecated)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновим свойства объекта Без [пароляMicrosoftAuthenticatorAuthenticationMethodConfiguration,](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) который представляет политику метода проверки подлинности без пароля Microsoft Authenticator Phone для клиента Azure AD.
+Обновим свойства объекта [PasswordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration,](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) который представляет политику метода проверки подлинности Microsoft Authenticator passwordless Телефон для клиента Azure AD.
 
 > [!CAUTION]
-> API политики метода проверки подлинности без паролей Microsoft Authenticator Phone является обесценен и перестал возвращать результаты 31 декабря 2020 г. Используйте новую политику метода проверки подлинности [Microsoft Authenticator.](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)
+> API Microsoft Authenticator без паролей Телефон для политики проверки подлинности для входов обесценен и перестал возвращать результаты 31 декабря 2020 г. Используйте новую политику [Microsoft Authenticator проверки подлинности.](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -33,6 +33,7 @@ ms.locfileid: "50472432"
 
 Для делегирования сценариев администратору требуется следующая [роль:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
+* Администратор политики проверки подлинности
 * Глобальный администратор
 
 

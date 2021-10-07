@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: eded1c6ff9362987634093602cbbb5d727a523d6
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: e5da9bdd3a9c1046949c5be36b6c7f1ccc79709a
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766609"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60219783"
 ---
 # <a name="educationresource-resource-type"></a>тип ресурсов educationResource
 
@@ -18,7 +18,7 @@ ms.locfileid: "59766609"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Базовый класс для всех объектов ресурсов в системе. 
+Базовый класс для [образованияExcelResource](../resources/educationexcelresource.md), [educationFileResource](../resources/educationfileresource.md), [educationLinkResource](../resources/educationlinkresource.md), [educationPowerPointResource](../resources/educationpowerpointresource.md), [educationWordResource](../resources/educationwordresource.md), [educationMediaResource](../resources/educationmediaresource.md) и [educationExternalResource](../resources/educationexternalresource.md).
 
 EducationResource ассоциируется с [](educationassignment.md) назначением [и/или](educationsubmission.md)отправкой, которая представляет учебный объект, который передается или передается. Вы не можете мгновенно получить ресурс напрямую; необходимо сделать подкласс, который будет представлять тип используемого ресурса.
 

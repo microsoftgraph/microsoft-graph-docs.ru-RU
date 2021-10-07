@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 7e815c1164afccd946de20e86d7fd7040f142868
-ms.sourcegitcommit: 2f394a9f33f2fab3634d0f18882985ee211067d1
+ms.openlocfilehash: 0629bc0561e65f381c4fba38d815c7886713547d
+ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60127508"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214407"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -169,9 +169,9 @@ ms.locfileid: "60127508"
 |:---|
 |Строка|
 |Целое число|
-|Справочные материалы|
+|Справка|
 |Двоичный|
-|Логическое|
+|Boolean|
 |Даты и время|
 
 ### <a name="mutability-values"></a>значения мутируемости
@@ -187,7 +187,7 @@ ms.locfileid: "60127508"
 
 |Member|
 |:---|
-|Отсутствует|
+|Нет|
 |AttributeNames|
 |AttributeDataTypes|
 |AttributeReadOnly|
@@ -347,7 +347,7 @@ ms.locfileid: "60127508"
 
 |Member|
 |:---|
-|userPrincipalName|
+|userPrincipalName.|
 |onPremisesUserPrincipalName|
 |userPrincipalUsername|
 |onPremisesUserPrincipalUsername|
@@ -413,7 +413,7 @@ ms.locfileid: "60127508"
 |:---|
 |email|
 |mobileSMS|
-|mobilePhone|
+|mobilePhone;|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -450,7 +450,7 @@ ms.locfileid: "60127508"
 |userRisk|
 |time|
 |deviceState|
-|client|
+|клиент|
 
 ### <a name="conditionalaccessstatus-values"></a>значения conditionalAccessStatus
 
@@ -560,7 +560,7 @@ ms.locfileid: "60127508"
 |Member|
 |:---|
 |email|
-|mobilePhone|
+|mobilePhone;|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -834,7 +834,7 @@ ms.locfileid: "60127508"
 
 |Member|
 |:---|
-|birthday|
+|birthday;|
 |свадьба|
 |unknownFutureValue|
 
@@ -905,7 +905,7 @@ ms.locfileid: "60127508"
 |Member|
 |:---|
 |email|
-|mobilePhone|
+|mobilePhone;|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -1445,7 +1445,7 @@ ms.locfileid: "60127508"
 ### <a name="onenotesourceservice-values"></a>значения onenoteSourceService
 | Member
 |:---------------------
-| Неизвестно
+| Unknown
 | OneDrive
 | OneDriveForBusiness
 | OnPremOneDriveForBusiness
@@ -2056,7 +2056,7 @@ Enum для серьезности оповещений.
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| почта;   | 1     | Угроза почты.            |
+| mail;   | 1     | Угроза почты.            |
 | url    | 2     | УГРОЗА URL-адреса.             |
 | file   | 3      | Угроза файла вложения. |
 
@@ -2553,3 +2553,9 @@ Enum для серьезности оповещений.
 |собрание|
 |screenShare|
 |unknownFutureValue|
+### <a name="binaryoperator-values"></a>Значения binaryOperator 
+
+|Member|
+|:---|
+|или|
+|и|

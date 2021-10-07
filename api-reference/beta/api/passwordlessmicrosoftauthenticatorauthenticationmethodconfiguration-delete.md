@@ -2,25 +2,25 @@
 title: Удаление без пароляMicrosoftAuthenticatorAuthenticationMethodConfiguration
 description: Удаление объекта passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 01c95eabb3d888b03b1024d25364b3bd6474deef
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 32af656fd04eff17dec7a32bac1113e29068b42d
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472474"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60219809"
 ---
 # <a name="delete-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-deprecated"></a>Удаление без пароляMicrosoftAuthenticatorAuthenticationMethodConfiguration (deprecated)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите изменения, внесенные в политику метода проверки подлинности в microsoft [Authenticator Phone,](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) возвращая политику в конфигурацию по умолчанию.
+Удалите изменения, [внесенные в Microsoft Authenticator Телефон](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) метода проверки подлинности, возвращая политику в конфигурацию по умолчанию.
 
 > [!CAUTION]
-> API политики метода проверки подлинности без паролей Microsoft Authenticator Phone является обесценен и перестал возвращать результаты 31 декабря 2020 г. Используйте новую политику метода проверки подлинности [Microsoft Authenticator.](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)
+> API Microsoft Authenticator без паролей Телефон для политики проверки подлинности для входов обесценен и перестал возвращать результаты 31 декабря 2020 г. Используйте новую политику [Microsoft Authenticator проверки подлинности.](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -33,6 +33,7 @@ ms.locfileid: "50472474"
 
 Для делегирования сценариев администратору требуется следующая [роль:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
+* Администратор политики проверки подлинности
 * Глобальный администратор
 
 

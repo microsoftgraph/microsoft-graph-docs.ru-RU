@@ -2,15 +2,15 @@
 title: 'educationSubmission: возврат'
 description: Это действие делает оценку и отзывы, связанные с этим представлением, доступными для учащегося.
 author: dipakboyed
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: da0f7f6c92ce5c0782f076ad10280355e4a009c0
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: beffcc4b01d59a2cf862e6aa2ed5ac89081aeffe
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787291"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220474"
 ---
 # <a name="educationsubmission-return"></a>educationSubmission: возврат
 
@@ -18,7 +18,7 @@ ms.locfileid: "52787291"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Это действие делает оценку и отзывы, связанные с этим представлением, доступными для учащегося. Это изменит состояние отправки с "отправленной" на "возвращенную" и указывает на то, что обратная связь предоставлена или сделана классификация. Это действие может сделать только учитель.
+Предоставление учащемуся оценки и отзывов, связанных с этим представлением. Это изменит состояние отправки с "отправленной" на "возвращенную" и указывает на то, что обратная связь предоставлена или сделана классификация. Это действие может сделать только учитель.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -32,7 +32,7 @@ ms.locfileid: "52787291"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /education/classes/{id}/assignments/{id}/submissions/{id}/return
+POST /education/classes/{class-id}/assignments/{assignment-id}/submissions/{submission-id}/return
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
@@ -40,14 +40,15 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/return
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте текст запроса для этого метода.
+Не поставляем тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
+В случае успешной работы этот метод возвращает код ответа и `200 Ok` объект [educationSubmission](../resources/educationsubmission.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
-##### <a name="request"></a>Запрос
+
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -57,7 +58,7 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/return
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/return
+POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/7192332b-e904-4891-81e2-356242ab1858/submissions/022fb52d-1278-d21f-e827-2221a6a3e516/return
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationsubmission-return-csharp-snippets.md)]
@@ -78,15 +79,61 @@ POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/
 ---
 
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа.
 
 <!-- {
-  "blockType": "response"
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationSubmission"
 } -->
+
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 Ok
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#educationSubmission",
+    "@odata.type": "#microsoft.graph.educationSubmission",
+    "status": "returned",
+    "submittedDateTime": "2021-09-03T18:20:11.2167718Z",
+    "unsubmittedDateTime": null,
+    "returnedDateTime": "2021-09-03T19:01:45.6526389Z",
+    "resourcesFolderUrl": "https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RKYRQDN3FDQWNA24OCLHBD5C2SH",
+    "id": "022fb52d-1278-d21f-e827-2221a6a3e516",
+    "recipient": {
+        "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
+        "userId": "80cefd93-8d88-40e2-b5d3-67898383e226"
+    },
+    "submittedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+            "displayName": null
+        }
+    },
+    "unsubmittedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": null,
+            "displayName": null
+        }
+    },
+    "returnedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+            "displayName": null
+        }
+    }
+}
 ```
+
+## <a name="see-also"></a>См. также
+
+* [Состояния, переходы и ограничения для назначений и представлений](/graph/assignments-submissions-states-transition)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

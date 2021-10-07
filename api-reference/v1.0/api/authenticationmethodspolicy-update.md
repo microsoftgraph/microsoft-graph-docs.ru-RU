@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 20f1cd2abb733876c5b8c82dacc620804292019c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3b138c9cc59bb51e43d815874a228de4a0a5f9a5
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59038498"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220369"
 ---
 # <a name="update-authenticationmethodspolicy"></a>Обновление проверки подлинностиMethodsPolicy
 Пространство имен: microsoft.graph
@@ -25,6 +25,11 @@ ms.locfileid: "59038498"
 |Делегированное (рабочая или учебная учетная запись)|Policy.ReadWrite.AuthenticationMethod|
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Policy.ReadWrite.AuthenticationMethod|
+
+Для делегирования сценариев администратору требуется следующая [роль:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+
+* Администратор политики проверки подлинности
+* Глобальный администратор
 
 ## <a name="http-request"></a>HTTP-запрос
 

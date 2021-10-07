@@ -2,15 +2,15 @@
 title: Удаление temporaryAccessPassAuthenticationMethodConfiguration
 description: Удалите изменения, внесенные в объект temporaryAccessPassAuthenticationMethodConfiguration.
 author: inbarckms
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 023759dfec81417d8b39041842f937c1bb2352d4
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 94afe1bda730ec0a5dc9bb1d7513ac1357a4f23c
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049655"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220740"
 ---
 # <a name="delete-temporaryaccesspassauthenticationmethodconfiguration"></a>Удаление temporaryAccessPassAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
@@ -28,7 +28,10 @@ ms.locfileid: "52049655"
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Policy.ReadWrite.AuthenticationMethod|
 
- Для делегирования сценариев администратору требуется роль глобального администратора. Дополнительные сведения см. в [дополнительных сведениях.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев администратору требуется следующая [роль:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+
+* Администратор политики проверки подлинности
+* Глобальный администратор
 
 ## <a name="http-request"></a>HTTP-запрос
 

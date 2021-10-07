@@ -2,15 +2,15 @@
 title: Обновление smsAuthenticationMethodConfiguration
 description: Обновление свойств объекта smsAuthenticationMethodConfiguration.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 08988f75df38facbce7f17a376f335babb3258b2
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: f1c0ac265239cff9d28358cf6a5291835d6f1b87
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761006"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220432"
 ---
 # <a name="update-smsauthenticationmethodconfiguration"></a>Обновление smsAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
@@ -28,7 +28,10 @@ ms.locfileid: "50761006"
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Policy.ReadWrite.AuthenticationMethod|
 
-Для делегирования сценариев администратору требуется роль глобального администратора. Дополнительные сведения см. в [роли](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+Для делегирования сценариев администратору требуется следующая [роль:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+
+* Администратор политики проверки подлинности
+* Глобальный администратор
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -58,7 +61,7 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/s
 
 >**Примечание:** Свойство `@odata.type` со значением `#microsoft.graph.smsAuthenticationMethodConfiguration` должно быть включено в тело.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешной работы этот метод возвращает код ответа и обновленный `200 OK` [объект smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) в тексте ответа.
 

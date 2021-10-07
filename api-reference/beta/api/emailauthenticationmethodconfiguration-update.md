@@ -2,15 +2,15 @@
 title: Обновление emailAuthenticationMethodConfiguration
 description: Обновление свойств объекта emailAuthenticationMethodConfiguration.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d2cdf7eeff97bc8bf28edb1fd4e139922cafa472
-ms.sourcegitcommit: 34891a1c601976166958be1aa04bab5936592b44
+ms.openlocfilehash: 7c0753e4802211c2b5eca461356e32f381d51334
+ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52231349"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "60220600"
 ---
 # <a name="update-emailauthenticationmethodconfiguration"></a>Обновление emailAuthenticationMethodConfiguration
 
@@ -29,8 +29,9 @@ ms.locfileid: "52231349"
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
-Для делегирования сценариев администратору требуется одна из следующих [ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев администратору требуется следующая [роль:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
+* Администратор политики проверки подлинности
 * Глобальный администратор
 
 ## <a name="http-request"></a>HTTP-запрос
