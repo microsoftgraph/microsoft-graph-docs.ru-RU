@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 66a6e5e2cb284672a03baf5907b16d1ad39dea2e
-ms.sourcegitcommit: cbad97d6a8ccb89b1822b30a11cc9b6f2670deda
+ms.openlocfilehash: 8620d6789afbe7dd960ff3ac6a1f6849e38d94a6
+ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60016622"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214778"
 ---
 # <a name="get-onlinemeeting"></a>Get onlineMeeting
 
@@ -33,7 +33,7 @@ ms.locfileid: "60016622"
 |:---------------------------------------|:------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read, OnlineMeetings.ReadWrite         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                        |
-| Для приложений                            | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
+| Приложение                            | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 
 Чтобы использовать разрешение приложения для этого API, [](/graph/cloud-communication-online-meeting-application-access-policy) администраторы клиентов должны создать политику доступа к приложениям и предоставить ее пользователю для авторизации приложения, настроенного в политике, для получения онлайн-собраний и/или артефактов собраний в Интернете от имени этого пользователя (с пользовательским ИД, указанным в пути запроса).
 
@@ -87,7 +87,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
 
 Если запрос содержит `Accept-Language` HTTP-заголовок, то `content` из `joinInformation` будет указан на языке и языкового стандарта, указанного в заголовке `Accept-Language`. Контент по умолчанию будет на английском языке.
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -370,6 +370,8 @@ Content-Type: application/json
 
 В следующем запросе используется делегированная разрешения.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_attendee_report"
@@ -378,6 +380,24 @@ Content-Type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/attendeeReport
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-attendee-report-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-attendee-report-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-attendee-report-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-attendee-report-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 В следующем запросе используется разрешение приложения.
 

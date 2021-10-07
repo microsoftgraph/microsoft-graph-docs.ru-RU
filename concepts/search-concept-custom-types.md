@@ -4,12 +4,12 @@ description: Вы можете использовать API Поиск (Майк
 author: nmoreau
 ms.localizationpriority: medium
 ms.prod: search
-ms.openlocfilehash: 53716d886f586207fce607234d3cae993fc38794
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 18269238f77c1c9405242326a5015cdc620c4092
+ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59127908"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214827"
 ---
 # <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors-preview"></a>Используйте API Поиск (Майкрософт) для поиска пользовательских типов, импортируемых с помощью соединителов Microsoft Graph (предварительный просмотр) 
 
@@ -68,7 +68,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 ```HTTP
 HTTP/1.1 200 OK

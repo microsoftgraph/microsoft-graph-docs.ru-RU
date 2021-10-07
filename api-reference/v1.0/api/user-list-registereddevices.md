@@ -1,16 +1,16 @@
 ---
 title: Список registeredDevices
 description: Получение списка зарегистрированных устройств пользователя.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 11465b7752242949edc88fe98f11f068392ac9fe
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 199a8c5a0817780b4489b94ff17bb58cd8ae8841
+ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52033638"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214470"
 ---
 # <a name="list-registereddevices"></a>Список registeredDevices
 
@@ -22,7 +22,7 @@ ms.locfileid: "52033638"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | User.Read, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/v1.0/me/registeredDevices
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

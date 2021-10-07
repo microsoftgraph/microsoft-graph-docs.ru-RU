@@ -2,15 +2,15 @@
 title: Список ownedDevices
 description: Получение списка устройств, принадлежащих пользователю.
 author: jpettere
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ce6396a477d932889fc64661b078c3c94394ae8c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b4f8a0d2a6d421442332ccfc2e516ac85d329d2d
+ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051174"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214316"
 ---
 # <a name="list-owneddevices"></a>Список ownedDevices
 
@@ -22,9 +22,9 @@ ms.locfileid: "52051174"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | User.Read, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.Read.All, Directory.ReadWrite.All |
+|Для приложений | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/v1.0/me/ownedDevices
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
