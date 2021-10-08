@@ -4,12 +4,12 @@ description: 'В этой статье рассматривается приме
 author: dkershaw10
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 9a84499f8b967b57a82187ee467a1eedd445764b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c4226a642c2e6651cf4168c81d7188f0edd76270
+ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59066921"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240658"
 ---
 # <a name="add-custom-data-to-groups-using-schema-extensions"></a>Добавление пользовательских данных в группы с помощью расширений схемы 
 
@@ -35,14 +35,26 @@ ms.locfileid: "59066921"
 
 
 ### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "schemaextensions-groups-get"
+}-->
 ```http
 GET https://graph.microsoft.com/v1.0/schemaExtensions?$filter=id eq 'graphlearn_test'
 ```
+
 ### <a name="response"></a>Ответ
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.schemaExtension"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-length: 420
+
 {
     "value": [
         {
@@ -75,6 +87,11 @@ Content-length: 420
 Обратите внимание, что при первоначальном создании расширение схемы имеет состояние **InDevelopment**. Во время разработки расширения такое состояние можно сохранять. Пока оно не изменится, только ваше приложение, создавшее расширение, сможет его обновлять, внося дополнительные изменения, или удалять. Когда вы будете готовы предоставить доступ к расширению другим приложениям, установите для параметра **status** значение **Available**.
 
 ### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "schemaextensions-groups-createExtension"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/schemaExtensions
 Content-type: application/json
@@ -100,7 +117,14 @@ Content-type: application/json
     ]
 }
 ```
+
 ### <a name="response"></a>Ответ
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.schemaExtension"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -134,6 +158,11 @@ Content-length: 420
 Создайте _новую_ группу и расширьте ее, добавив дополнительные данные с помощью зарегистрированного определения расширения схемы `graphlearn_courses`.  Это стандартный запрос ```POST``` для ресурса **group** с дополнительным расширением сложного типа `graphlearn_courses`, определенным в теле запроса.  В ответе не будут отражены никакие расширения данных. Необходимо с помощью параметра ```$select``` указать имя расширения в операции ```GET```.
 
 ### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "schemaextensions-groups-createGroupWithExtension"
+}-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups
 Content-type: application/json
@@ -152,6 +181,12 @@ Content-type: application/json
 }
 ```
 ### <a name="response"></a>Ответ
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -177,6 +212,11 @@ Content-length: 420
 Вы можете расширить существующий экземпляр _group_ и добавить в него пользовательские данные с помощью дополнительного расширения сложного типа `graphlearn_courses`, определенного в теле запроса ```PATCH```.  
 
 ### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "schemaextensions-groups-updateGroupWithExtension"
+}-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/groups/dfc8016f-db97-4c47-a582-49cb8f849355
 Content-type: application/json
@@ -189,7 +229,14 @@ Content-length: 230
     }   
 }
 ```
+
 ### <a name="response"></a>Ответ
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -210,12 +257,22 @@ HTTP/1.1 204 No Content
 
 ### <a name="request"></a>Запрос
 
+<!-- {
+  "blockType": "request",
+  "name": "schemaextensions-groups-getGroupSelectExtension"
+}-->
 ```http
 GET https://graph.microsoft.com/v1.0/groups?$filter=graphlearn_courses/courseId eq ‘123’&$select=displayName,id,description,graphlearn_courses
 ```
 
 
 ### <a name="response"></a>Отклик
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -244,8 +301,3 @@ Content-length: 326
 - [Домены Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/domains)
 - [Добавление и проверка домена для Microsoft 365](/microsoft-365/admin/setup/add-domain)
 - [Тип ресурса schemaExtension](/graph/api/resources/schemaextension)
-- [Перечисление schemaExtensions](/graph/api/schemaextension-list)
-- [Создание schemaExtension](/graph/api/schemaextension-post-schemaextensions)
-- [Получение schemaExtension](/graph/api/schemaextension-get)
-- [Обновление schemaExtension](/graph/api/schemaextension-update)
-- [Удаление schemaExtension](/graph/api/schemaextension-delete)

@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f177ca794d5fe407577ab08196f366f50e07afc0
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 028c9b0d86c9a9da2d89829d4664b4bb3f25498c
+ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508021"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240801"
 ---
 # <a name="update-group"></a>Update group
 
@@ -40,7 +40,7 @@ PATCH /groups/{id}
 
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -54,7 +54,7 @@ PATCH /groups/{id}
 |autoSubscribeNewMembers|Логический|Значение по умолчанию: `false`. Указывает, будут ли новые участники группы автоматически подписаны на получение уведомлений по электронной почте. **AutoSubscribeNewMembers** не может быть `true`, если в группе установлено `false` для **subscriptionEnabled**.|
 |description|String|Необязательное описание для группы. |
 |displayName|String|Отображаемое имя для группы. Это свойство необходимо при создании группы. Оно не может быть удалено во время обновления. |
-|mailNickname|String|Почтовый псевдоним для группы. Это свойство должно быть указано при создании группы. |
+|mailNickname|String|Почтовый псевдоним для группы (уникальный в организации). Максимальная длина: 64 символа. Это свойство может содержать только символы из [набора символов ASCII от 0 до 127](/office/vba/language/reference/user-interface-help/character-set-0127), за исключением следующих: ` @ () \ [] " ; : . <> , SPACE`. |
 |preferredDataLocation|String|Предпочтительное расположение данных для группы Microsoft 365. Чтобы обновить это свойство, вызывающему пользователю должна быть назначена одна из указанных ниже ролей Azure AD. <br><ul><li> Глобальный администратор <li> Администратор учетных записей пользователей <li> Поддержка партнеров уровня 1 или уровня 2 <li>Редактор каталогов <li> Администратор Exchange <li> Администратор SharePoint </ul> <br/>Дополнительные сведения об этом свойстве см. в статье [OneDrive Online с поддержкой нескольких регионов](/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |securityEnabled|Логический|Указывает, является ли эта группа группой безопасности. |
 |visibility|String|Определяет видимость группы Microsoft 365. Возможные значения: **Private** (закрытая), **Public** (общедоступная) или пустое значение (оно обрабатывается как **Public**).|
@@ -65,7 +65,7 @@ PATCH /groups/{id}
 >
 > + Только некоторые элементы API групп, относящиеся к основным операциям администрирования групп и управления ими, поддерживают разрешения для приложений и делегированные разрешения. Все остальные элементы API групп, включая обновление **autoSubscribeNewMembers**, поддерживают только делегированные разрешения. Примеры см. в разделе [Известные проблемы](/graph/known-issues#groups).
 >
-> + Правила обновления групп безопасности, поддерживающих почту, в Microsoft Exchange Server могут быть сложными. Дополнительные сведения см. в статье [Управление группами безопасности с поддержкой электронной почты в Exchange Server](/Exchange/recipients/mail-enabled-security-groups?view=exchserver-2019).
+> + Правила обновления групп безопасности, поддерживающих почту, в Microsoft Exchange Server могут быть сложными. Дополнительные сведения см. в статье [Управление группами безопасности с поддержкой электронной почты в Exchange Server](/Exchange/recipients/mail-enabled-security-groups).
 
 ## <a name="response"></a>Отклик
 

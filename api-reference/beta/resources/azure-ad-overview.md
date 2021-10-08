@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: identity-and-access
 author: dkershaw10
-ms.openlocfilehash: f4d1b364a44ff6fd6af3c5f7869dcaa8954cf846
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: f5ae8eadb7b18d2091d06cd6a69d48afa78ccffa
+ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766679"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240945"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Работа с ресурсами Azure Active Directory в Microsoft Graph
 
@@ -59,7 +59,7 @@ Microsoft Graph предоставляет доступ к ресурсам [Azu
 | Получайте информацию об организации, например адрес, контакты для уведомлений и связи по техническим вопросам, планы обслуживания, на которые она подписана, и связанные с ней домены. | [organization](../resources/organization.md) | Недоступно |
 | Получайте информацию о службах, на которые подписана компания. | [subscribedSku](../resources/subscribedsku.md) | Недоступно |
 | Приглашайте внешних пользователей в организацию. | [invitation](../resources/invitation.md) | [Что такое служба совместной работы Azure AD B2B?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)|
-| Управляйте фирменной символикой для интерфейса входа организации. | [organizationalbranding](../resources/organizationalbrandingproperties.md) | [Добавление фирменной символики на страницу входа в Azure Active Directory вашей организации](/azure/active-directory/fundamentals/customize-branding)|
+| Управляйте фирменной символикой для интерфейса входа организации. | [organizationalbranding](../resources/organizationalbranding.md) | [Добавление фирменной символики на страницу входа в Azure Active Directory вашей организации](/azure/active-directory/fundamentals/customize-branding)|
 | **Проверки доступа** | | |
 | Проверяйте правильность участия в группах и права доступа к приложению с помощью проверок доступа. | [API проверки доступа](../resources/accessreviews-root.md) |[Проверки доступа Azure AD](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
 | **Запросы согласия** | | |

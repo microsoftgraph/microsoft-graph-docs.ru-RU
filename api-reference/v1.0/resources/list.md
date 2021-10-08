@@ -6,12 +6,12 @@ ms.localizationpriority: high
 ms.prod: sharepoint
 description: Ресурс list представляет список на сайте.
 doc_type: resourcePageType
-ms.openlocfilehash: 9d47d308ffa1171ff720d66f7ed21f254b5ec06b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 801d0be6fc3da1800c9ae70edef82dcc869d54b8
+ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021500"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240917"
 ---
 # <a name="list-resource"></a>Ресурс List
 
@@ -23,8 +23,7 @@ ms.locfileid: "59021500"
 ## <a name="tasks-on-a-list"></a>Задачи для ресурса list
 
 Ниже перечислены задачи, доступные для ресурсов list.
-**Примечание.** В этой бета-версии разрешается только навигация по спискам. Их создание и обновление не поддерживаются.
-Однако вы можете создавать и менять [элементы списков][listItem].
+
 
 Все приведенные ниже примеры относятся к сайту, например `https://graph.microsoft.com/v1.0/sites/{site-id}`.
 

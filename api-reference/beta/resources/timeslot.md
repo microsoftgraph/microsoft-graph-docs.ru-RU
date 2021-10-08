@@ -1,16 +1,16 @@
 ---
 title: Тип ресурсов timeSlot
 description: Период времени.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 author: vrod9429
 ms.prod: outlook
-ms.openlocfilehash: f531add7d16fc5d1922a40e7341894b7fedd6535
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 6b399b7ff008c12cbe050eaa82160ce59a7cfbe3
+ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472057"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240770"
 ---
 # <a name="timeslot-resource-type"></a>Тип ресурсов timeSlot
 
@@ -20,9 +20,15 @@ ms.locfileid: "50472057"
 
 Представляет интервал времени для собрания.
 
+## <a name="properties"></a>Свойства
+| Свойство     | Тип   |Описание|
+|:---------------|:--------|:----------|
+|end|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс, который заканчивается. |
+|начать|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс, который начинается.|
+
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже показано представление JSON ресурса.
+Ниже указано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -39,11 +45,6 @@ ms.locfileid: "50472057"
 }
 
 ```
-## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|end|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс, который начинается. |
-|начать|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс, который заканчивается.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

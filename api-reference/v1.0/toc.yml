@@ -416,7 +416,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Заметки
+          - name: Примечания
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -477,7 +477,7 @@ items:
             items:
               - name: Список задач
                 href: api/planneruser-list-tasks.md
-          - name: Teamwork
+          - name: Командная работа
             items:
               - name: Установленное приложение
                 href: resources/teamsappinstallation.md
@@ -521,7 +521,7 @@ items:
         items:
           - name: Обзор
             href: resources/groups-overview.md
-          - name: Group
+          - name: Группа
             href: resources/group.md
             items:
               - name: Список групп
@@ -1302,9 +1302,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Запись вызова
                     href: api/callrecords-callrecord-get.md
-              - name: Session
+              - name: Сеанс
                 items:
-                  - name: Session
+                  - name: Сеанс
                     href: resources/callrecords-session.md
                   - name: Перечисление сеансов
                     href: api/callrecords-session-list.md
@@ -4717,7 +4717,7 @@ items:
                     href: api/certificatebasedauthconfiguration-get.md
                   - name: Удаление
                     href: api/certificatebasedauthconfiguration-delete.md
-              - name: условный доступ;
+              - name: Условный доступ
                 items:
                   - name: Политики
                     items:
@@ -4866,8 +4866,6 @@ items:
                     href: api/organizationalbranding-get.md
                   - name: Обновление
                     href: api/organizationalbranding-update.md
-                  - name: Delete
-                    href: api/organizationalbranding-delete.md
                   - name: Локализация брендинга
                     href: resources/organizationalbrandinglocalization.md
                     items:
@@ -5389,7 +5387,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Получение многозначного свойства
                     href: api/multivaluelegacyextendedproperty-get.md
-      - name: Заметки
+      - name: Примечания
         displayName: OneNote
         items:
           - name: Обзор
@@ -5883,7 +5881,7 @@ items:
                     href: api/externalconnectors-externalgroup-delete.md
               - name: Внешний член группы
                 items:
-                  - name: Identity
+                  - name: Удостоверение
                     href: resources/externalconnectors-identity.md
                   - name: Создание удостоверений для участника
                     href: api/externalconnectors-externalgroup-post-members.md
@@ -6075,7 +6073,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Обновление
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: Группа
                 href: resources/termstore-group.md
                 items:
                   - name: Список
@@ -6101,7 +6099,7 @@ items:
                     href: api/termstore-set-update.md
                   - name: Delete
                     href: api/termstore-set-delete.md
-              - name: Термин
+              - name: Term
                 href: resources/termstore-term.md
                 items:
                   - name: Список дочерних элементов
@@ -6308,7 +6306,7 @@ items:
                 href: api/channel-completemigration.md
               - name: Получение сообщения в канале
                 href: api/chatmessage-get.md
-              - name: Получать сообщения по всем каналам
+              - name: Получение сообщений по всем каналам.
                 href: api/channel-getallmessages.md
               - name: Получить дельту сообщений канала
                 href: api/chatmessage-delta.md
@@ -6388,7 +6386,7 @@ items:
                 href: api/chatmessage-update.md
               - name: Содержимое списка
                 href: api/chatmessage-list-hostedcontents.md
-              - name: Получать сообщения по всем каналам
+              - name: Получение сообщений по всем каналам.
                 href: api/channel-getallmessages.md
               - name: Получать сообщения во всех чатах
                 href: api/chats-getallmessages.md
@@ -6785,6 +6783,8 @@ items:
                 href: api/worksheet-usedrange.md
               - name: Обновление листа
                 href: api/worksheet-update.md
+              - name: Удаление таблицы
+                href: api/worksheet-delete.md
               - name: Получение ячейки
                 href: api/worksheet-cell.md
               - name: Получение диапазона

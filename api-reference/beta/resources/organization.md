@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 1c666363d6eeb823373258a82ae1459c71ccea72
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: f3a07629006f5f2cada6601dab09b952fdef7980
+ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508371"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240763"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -36,15 +36,17 @@ ms.locfileid: "59508371"
 |[Добавление значений расширений для схемы](../api/schemaextension-post-schemaextensions.md) | [schemaExtension](schemaextension.md) | Создание определения расширения схемы и его дальнейшее использование для добавления в ресурс введенных пользовательских данных.|
 |**Лицензии организации**| | |
 |[activateService](../api/organization-activateservice.md) | Нет |  Активация службы для организации. |
-|**Организационный брендинг**| | |
-|[Создание организационнойbrandingLocalization](../api/organizationalbranding-post-localizations.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Создайте новый брендинг локализации (с определенным языком) и объект по умолчанию, если он не существует. |
-|[Get organizationalBranding](../api/organizationalbranding-get.md) | [organizationalBranding](organizationalbranding.md) | Получите объект организационного брендинга по умолчанию. |
-|[Обновление организационногобрандинга](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Обновление объекта организационного брендинга по умолчанию. |
-|[Удаление организационногобрендинга](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Удаление объекта организационного брендинга по умолчанию. |
-|[Список организационнойBrandingLocalization](../api/organizationalbrandinglocalization-get.md) | [коллекция organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Извлечение всех объектов брендинга локализации в клиенте. |
-|[Получить организационнуюбрандингЛокализацию](../api/organizationalbrandinglocalization-get.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Ознакомьтесь с свойствами объекта локализации. |
-|[Обновление организационногобрандинга](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Обновление объекта локализации. |
-|[Удаление организационногобрендинга](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Удаление объекта локализации. |
+|**Фирменная символика организации**| | |
+|[Получение organizationalBranding](../api/organizationalbranding-get.md) | [organizationalBranding](organizationalbranding.md) | Получение стандартного объекта фирменной символики организации. |
+|[Обновление organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Обновление стандартного объекта фирменной символики организации. |
+|[Создание organizationalBrandingLocalization](../api/organizationalbranding-post-localizations.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Создание новой фирменной символики локализации (для определенного языка) и стандартного объекта фирменной символики, если он не существует. |
+|[Список organizationalBrandingLocalization](../api/organizationalbrandinglocalization-get.md) | Коллекция [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Извлечение всех объектов фирменной символики локализации в клиенте. |
+|[Получение organizationalBrandingLocalization](../api/organizationalbrandinglocalization-get.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Чтение свойств объекта фирменной символики локализации. |
+|[Обновление организационнойБрандингЛокализации](../api/organizationalbrandinglocalization-update.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Обновление объекта фирменной символики локализации. |
+|[Удаление организационнойbrandingLocalization](../api/organizationalbrandinglocalization-delete.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Удаление объекта фирменной символики локализации. |
+<!--|[Удаление organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Удаление стандартного объекта фирменной символики организации. |
+
+**ПРИМЕЧАНИЕ: Восстановление операции Delete organizationalBranding обратно в таблицу после обновления организационногобрандинга, если все несоответствия устранены.-->
 
 ## <a name="properties"></a>Свойства
 
@@ -64,7 +66,7 @@ ms.locfileid: "59508371"
 | marketingNotificationEmails | Коллекция String | Значение null не допускается. |
 | objectType | String | Строка, которая определяет тип объекта. Для клиентов значение всегда `Company` .|
 | onPremisesLastSyncDateTime | DateTimeOffset | Время и дата последней синхронизации клиента с локальным каталогом. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-| onPremisesSyncEnabled | Логический | `true` если этот объект синхронизирован из локального каталога; если этот объект был первоначально синхронизирован из локального каталога, но `false` больше не синхронизирован; Nullable. Используется значение `null`, если этот объект никогда не синхронизировался из локального каталога (по умолчанию). |
+| onPremisesSyncEnabled | Boolean | `true` если этот объект синхронизирован из локального каталога; если этот объект был первоначально синхронизирован из локального каталога, но `false` больше не синхронизирован; Nullable. Используется значение `null`, если этот объект никогда не синхронизировался из локального каталога (по умолчанию). |
 | postalCode | String | Почтовый индекс в адресе организации. |
 | preferredLanguage | String | Предпочитаемый язык для организации. Он должен быть представлен в формате ISO 639-1, например `en`. |
 | privacyProfile | [privacyProfile](privacyprofile.md) | Профиль конфиденциальности организации. |
@@ -82,7 +84,7 @@ ms.locfileid: "59508371"
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|Коллекция [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md)| Свойство навигации для управления конфигурацией проверки подлинности на основе сертификатов. В коллекции можно создать только один экземпляр объекта certificateBasedAuthConfiguration.  |
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для ресурса организации. Допускается значение null.| 
-|organizationalBranding|[коллекция organizationalBranding](organizationalbranding.md)| Ресурс для управления брендингом по умолчанию для организации. Допускается значение null.|
+|organizationalBranding|Коллекция [organizationalBranding](organizationalbranding.md)| Ресурс для управления брендингом по умолчанию для организации. Допускается значение null.|
 |settings|[organisationSettings](organizationsettings.md) | Извлечение свойств и связей объекта organizationSettings. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON

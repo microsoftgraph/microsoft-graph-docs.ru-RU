@@ -11397,8 +11397,6 @@ items:
                     href: api/organizationalbranding-get.md
                   - name: Обновление
                     href: api/organizationalbranding-update.md
-                  - name: Delete
-                    href: api/organizationalbranding-delete.md
                   - name: Локализация брендинга
                     href: resources/organizationalbrandinglocalization.md
                     items:
@@ -13823,7 +13821,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы
@@ -14691,6 +14689,8 @@ items:
                 href: api/worksheet-usedrange.md
               - name: Обновление листа
                 href: api/worksheet-update.md
+              - name: Удаление таблицы
+                href: api/worksheet-delete.md
               - name: Получение ячейки
                 href: api/worksheet-cell.md
               - name: Получение диапазона
