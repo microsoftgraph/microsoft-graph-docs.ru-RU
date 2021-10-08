@@ -4,12 +4,12 @@ description: SharePoint — это ваша мобильная интеллек�
 ms.localizationpriority: high
 ms.prod: sharepoint
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: d952f2fb0e907f22eea60290d92f16cdd09101cf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2ad423d789585263da8bc0812c78337ed9dee6e3
+ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59093864"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214589"
 ---
 # <a name="sharepoint-sites-and-content-api-overview"></a>Обзор API сайтов и контента SharePoint
 
@@ -25,7 +25,7 @@ SharePoint — это ваша мобильная интеллектуальна
 ### <a name="unleash-your-data-with-sharepoint-lists"></a>Раскройте все возможности своих данных с помощью списков SharePoint
 
 [Списки][список] — это основные элементы для хранения данных в SharePoint.
-[Вы можете создавать списки][создавать], чтобы хранить самые разные бизнес-данные: от простого списка контактных данных клиентов до пользовательского бизнес-приложения с интерфейсом PowerApps.
+Вы можете [создавать списки][создать], чтобы хранить самые разные бизнес-данные: от простого списка контактных данных клиентов до пользовательского бизнес-приложения с интерфейсом Power Apps.
 Когда вы используете [столбцы][], чтобы определить свою схему, SharePoint может защитить целостность ваших данных, а также предоставить мощные функции индексирования, создания запросов и поиска.
 
 ### <a name="bring-the-power-of-lists-to-your-teams-files"></a>Применение функций списков к файлам группы
@@ -54,22 +54,22 @@ SharePoint хранит файлы в [списках особого типа][]
 ## <a name="api-reference"></a>Справочные материалы по API
 Ищете справочные материалы по API для этой службы?
 
-- [API SharePoint в Microsoft Graph 1.0](/graph/api/resources/sharepoint?view=graph-rest-1.0)
-- [API SharePoint в бета-версии Microsoft Graph](/graph/api/resources/sharepoint?view=graph-rest-beta)
+- [API SharePoint в Microsoft Graph 1.0](/graph/api/resources/sharepoint)
+- [API SharePoint в бета-версии Microsoft Graph](/graph/api/resources/sharepoint?view=graph-rest-beta&preserve-view=true)
 
 ## <a name="next-steps"></a>Следующие шаги
 
-Чтобы приступить к работе с SharePoint в Microsoft Graph, изучите дополнительные сведения о [работе с сайтами](/graph/api/resources/sharepoint?view=graph-rest-1.0).
+Чтобы приступить к работе с SharePoint в Microsoft Graph, изучите дополнительные сведения о [работе с сайтами](/graph/api/resources/sharepoint).
 
-[list]: /graph/api/resources/list?view=graph-rest-1.0
-[столбцы]: /graph/api/resources/columndefinition?view=graph-rest-1.0
-[тип списка]: /graph/api/resources/listinfo?view=graph-rest-1.0
-[создать]: /graph/api/list-create?view=graph-rest-1.0
-[создание запросов]: /graph/api/listitem-get?view=graph-rest-1.0
-[диск]: /graph/api/resources/drive?view=graph-rest-1.0
-[API OneDrive]: /graph/api/resources/onedrive?view=graph-rest-1.0
+[list]: /graph/api/resources/list
+[столбцы]: /graph/api/resources/columndefinition
+[тип списка]: /graph/api/resources/listinfo
+[создать]: /graph/api/list-create
+[создание запросов]: /graph/api/listitem-get
+[диск]: /graph/api/resources/drive
+[API OneDrive]: /graph/api/resources/onedrive
 [SharePoint Framework]: /sharepoint/dev/spfx/sharepoint-framework-overview
 [Надстройки SharePoint]: /sharepoint/dev/sp-add-ins/sharepoint-add-ins
 [Центр разработки SharePoint]: https://developer.microsoft.com/sharepoint
 [Документы по разработке в SharePoint]: /sharepoint/dev/
-[SharePoint]: /graph/api/resources/sharepoint?view=graph-rest-1.0
+[SharePoint]: /graph/api/resources/sharepoint

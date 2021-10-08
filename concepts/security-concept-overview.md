@@ -5,16 +5,16 @@ author: preetikr
 ms.localizationpriority: high
 ms.prod: security
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: eb11b07c2770fc3724ed374b42f94bf1b4ade520
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0b054c0defdce7ba026e5391bd16aadc3bbead8a
+ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59093948"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60214659"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Обзор API безопасности Microsoft Graph
 
-С помощью API безопасности Microsoft Graph можно подключаться к продуктам Майкрософт по обеспечению безопасности, службам и партнерам, чтобы упростить операции обеспечения безопасности и улучшить защиту от угроз, их обнаружение и возможности реагирования. API безопасности Microsoft Graph является промежуточной службой (или посредником), предоставляющей единый программный интерфейс для подключения нескольких [поставщиков безопасности Microsoft Graph](/graph/api/resources/securityvendorinformation?view=graph-rest-1.0) (также называемых поставщиками безопасности или поставщиками). Запросы к API безопасности Microsoft Graph включаются в федерацию для всех соответствующих поставщиков безопасности. Результаты объединяются и возвращаются запрашивающему приложению в общей схеме, как показано на рисунке ниже. Подробные сведения см. в статье [Поток данных API безопасности Microsoft Graph](security-dataflow.md).
+С помощью API безопасности Microsoft Graph можно подключаться к продуктам Майкрософт по обеспечению безопасности, службам и партнерам, чтобы упростить операции обеспечения безопасности и улучшить защиту от угроз, их обнаружение и возможности реагирования. API безопасности Microsoft Graph является промежуточной службой (или посредником), предоставляющей единый программный интерфейс для подключения нескольких [поставщиков безопасности Microsoft Graph](/graph/api/resources/securityvendorinformation) (также называемых поставщиками безопасности или поставщиками). Запросы к API безопасности Microsoft Graph включаются в федерацию для всех соответствующих поставщиков безопасности. Результаты объединяются и возвращаются запрашивающему приложению в общей схеме, как показано на рисунке ниже. Подробные сведения см. в статье [Поток данных API безопасности Microsoft Graph](security-dataflow.md).
 
 ![security_overview_diagram_1.png](./images/security-overview-diagram-1.png)
 
@@ -24,7 +24,7 @@ ms.locfileid: "59093948"
 
 ## <a name="why-use-the-microsoft-graph-security-api"></a>Зачем использовать API безопасности Microsoft Graph?
 
-С помощью [API безопасности Microsoft Graph](/graph/api/resources/security-api-overview?view=graph-rest-1.0) можно легко подключаться к решениям по обеспечению безопасности от корпорации Майкрософт и ее партнеров. Он помогает быстрее реализовать и расширить потенциал этих решений. К API безопасности Microsoft Graph можно легко подключиться с помощью одного из указанных ниже способов в зависимости от требований.
+С помощью [API безопасности Microsoft Graph](/graph/api/resources/security-api-overview) можно легко подключаться к решениям по обеспечению безопасности от корпорации Майкрософт и ее партнеров. Он помогает быстрее реализовать и расширить потенциал этих решений. К API безопасности Microsoft Graph можно легко подключиться с помощью одного из указанных ниже способов в зависимости от требований.
 
 - [Написание кода.](https://aka.ms/graphsecuritysdk) Найдите [примеры кода](https://aka.ms/graphsecurityapicode) на C#, Java, NodeJS и т. д.
 - [Подключение с помощью сценариев.](https://aka.ms/graphsecuritypowershellsampleblog) Найдите [примеры PowerShell](https://aka.ms/graphsecuritypowershellsample).
@@ -81,11 +81,11 @@ ms.locfileid: "59093948"
 ## <a name="api-reference"></a>Справочные материалы по API
 Ищете справочные материалы по API для этой службы?
 
-- [API безопасности в Microsoft Graph 1.0](/graph/api/resources/security-api-overview?view=graph-rest-1.0)
-- [API безопасности в Microsoft Graph (бета-версия)](/graph/api/resources/security-api-overview?view=graph-rest-beta)
+- [API безопасности в Microsoft Graph 1.0](/graph/api/resources/security-api-overview)
+- [API безопасности в Microsoft Graph (бета-версия)](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- [Использование API безопасности Microsoft Graph](/graph/api/resources/security-api-overview?view=graph-rest-1.0)
+- [Использование API безопасности Microsoft Graph](/graph/api/resources/security-api-overview?)
 - Ознакомьтесь с [примерами Microsoft Graph Security API](https://aka.ms/graphsecurityapicode)
 - Хотите стать поставщиком безопасности? Свяжитесь с нами по адресу [graphsecfeedback](mailto:graphsecfeedback@microsoft.com).
