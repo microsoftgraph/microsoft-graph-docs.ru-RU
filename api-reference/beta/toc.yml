@@ -13491,9 +13491,8 @@ items:
           - name: Обзор
             href: resources/security-api-overview.md
           - name: Действия (предварительная версия)
+            href: resources/securityaction.md
             items:
-              - name: Действие
-                href: resources/securityaction.md
               - name: Перечисление действий по обеспечению безопасности
                 href: api/securityactions-list.md
               - name: Создание действия по обеспечению безопасности
@@ -13548,14 +13547,6 @@ items:
                         href: resources/attacksimulationtrainingusercoverage.md
                       - name: Охват обучающими программами для пользователей
                         href: api/reportroot-getattacksimulationtrainingusercoverage.md
-          - name: Инциденты (предварительный просмотр)
-            items:
-              - name: Инцидент
-                href: resources/incident.md
-              - name: Получение списка инцидентов
-                href: api/security-list-incidents.md
-              - name: Получить инцидент
-                href: api/incident-get.md
           - name: Защита информации
             items:
               - name: Метки
@@ -13807,7 +13798,7 @@ items:
                     href: api/termstore-set-update.md
                   - name: Delete
                     href: api/termstore-set-delete.md
-              - name: Термин
+              - name: Term
                 href: resources/termstore-term.md
                 items:
                   - name: Список дочерних элементов
@@ -13832,7 +13823,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: Планирование
+          - name: План
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы
