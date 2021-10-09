@@ -5,12 +5,12 @@ author: Harini84
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 05d702ed053b5359a480c5838df75988f20849bc
-ms.sourcegitcommit: 30fca91ed203a9ab7b0562833ce0c20c7fb7b7b1
+ms.openlocfilehash: 355ecee7c0292d29059695631eeb7ae21736a4f5
+ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59931999"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240959"
 ---
 # <a name="event-resource-type"></a>Тип ресурса event
 
@@ -70,10 +70,10 @@ ms.locfileid: "59931999"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип |Описание|
 |:---------------|:--------|:----------|
-|allowNewTimeProposals| Boolean | Значение `True`, если организатор собрания разрешает приглашенным предлагать новое время при ответе, в противном случае — `false`. Необязательный параметр. Значение по умолчанию: `true`. |
+|allowNewTimeProposals| Boolean | Значение `true`, если организатор собрания разрешает приглашенным предлагать новое время при ответе, в противном случае — `false`. Необязательный аргумент. Значение по умолчанию: `true`. |
 |attendees|Коллекция [Attendee](attendee.md)|Коллекция участников события.|
 |body|[ItemBody](itembody.md)|Текст сообщения, связанного с событием. В формате HTML или текстовом формате.|
-|bodyPreview|String|Предварительный просмотр сообщения, связанного с событием. В текстовом формате.|
+|bodyPreview|Строка|Предварительный просмотр сообщения, связанного с событием. В текстовом формате.|
 |cancelledOccurrences|Коллекция String|Содержит значения свойства **occurrenceId** отмененных экземпляров в повторяющемся ряду, если событие является основным в этом ряду. Отмененные экземпляры в повторяющемся ряду называются cancelledOccurences.<br><br>Возвращается только для $select в операции [Get](../api/event-get.md), в которой указывается идентификатор основного события в ряду (т. е. значение свойства seriesMasterId).|
 |categories|Коллекция String|Категории, связанные с событием. Каждая категория соответствует свойству **displayName** объекта [outlookCategory](outlookcategory.md), определенного для пользователя.|
 |changeKey|String|Указывает версию объекта события. При каждом изменении события также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
@@ -83,12 +83,12 @@ ms.locfileid: "59931999"
 |hasAttachments|Boolean|Задайте значение true, если у события есть вложения.|
 |hideAttendees|Boolean|Если присвоено значение `true`, каждый участник видит только себя в приглашении на собрание и списке собрания **Отслеживание**. Значение по умолчанию: false.|
 |iCalUId|String|Уникальный идентификатор для события в календарях. Этот идентификатор отличается для каждого вхождения повторяющегося ряда. Только для чтения.|
-|id|String| Уникальный идентификатор события. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] С учетом регистра и только для чтения.|
+|id|String| Уникальный идентификатор события. [!INCLUDE [outlook-beta-id](../../includes/outlook-immutable-id.md)] С учетом регистра и только для чтения.|
 |importance|importance|Важность события. Допустимые значения: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Задайте значение true, если событие длится весь день. Если присвоено значение true, независимо от длительности события (один или несколько дней) время его начала и окончания должно быть установлено на полночь в одном часовом поясе.|
 |isCancelled|Boolean|Задайте значение true, если событие отменено.|
 |isDraft|Логический|Присвоено значение true, если пользователь обновил собрание в Outlook, но не отправил обновления участникам. Присвоено значение false, если все изменения отправлены или событие является встречей без участников.|
-|isOnlineMeeting|Логический| `True`, если событие содержит информацию о собрании по сети (т. е. **onlineMeeting** указывает на ресурс [onlineMeetingInfo](onlinemeetinginfo.md)), в противном случае — `false`. Значение по умолчанию — `false` (**onlineMeeting** — `null`). Необязательное свойство. <br> После настройки **isOnlineMeeting** на `true` Microsoft Graph инициализирует **onlineMeeting**. Outlook будет игнорировать любые последующие изменения **isOnlineMeeting**, и собрание останется доступным по сети. |
+|isOnlineMeeting|Boolean| `True`, если событие содержит информацию о собрании по сети (т. е. **onlineMeeting** указывает на ресурс [onlineMeetingInfo](onlinemeetinginfo.md)), в противном случае — `false`. Значение по умолчанию `false` (**onlineMeeting** со значением `null`). Необязательный аргумент.<br> После настройки **isOnlineMeeting** на `true` Microsoft Graph инициализирует **onlineMeeting**. Outlook будет игнорировать любые последующие изменения **isOnlineMeeting**, и собрание останется доступным по сети. |
 |isOrganizer|Boolean|Присвоено значение true, если владелец календаря (указанный свойством **owner** объекта [calendar](calendar.md)) является организатором события (определятся свойством **organizer** объекта **event**). Это также применимо, если делегат организовал событие от имени владельца.|
 |isReminderOn|Boolean|Задайте значение true, если установлено напоминание пользователю о событии.|
 |lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
@@ -97,11 +97,11 @@ ms.locfileid: "59931999"
 |occurrenceId|String|Идентификатор вхождения в повторяющемся ряду событий. Значение NULL, если событие не является частью повторяющегося ряда.<br><br>Формат значения свойства — OID.{seriesMasterId-value}.{occurrence-start-date}. Часовым поясом для {occurrence-start-date} является свойство recurrenceTimeZone, определенное для соответствующего [recurrenceRange](recurrencerange.md).<br><br>Это свойство может определять вхождение в повторяющемся ряду, в том числе измененное или отмененное. Это свойство можно использовать для выполнения всех операций, которые поддерживаются вхождениями в повторяющемся ряду.|
 |onlineMeeting|[OnlineMeetingInfo](onlinemeetinginfo.md)| Сведения, необходимые участнику, чтобы присоединиться к собранию по сети. Значение по умолчанию — NULL. Только для чтения. <br>После настройки свойств **isOnlineMeeting** и **onlineMeetingProvider** для разрешения собрания по сети Microsoft Graph инициализирует **onlineMeeting**. После завершения настройки собрание останется доступным по сети, и вы не сможете изменить свойства **isOnlineMeeting**, **onlineMeetingProvider** и **onlneMeeting**.|
 |onlineMeetingProvider|onlineMeetingProviderType| Представляет поставщика службы собраний по сети. По умолчанию **onlineMeetingProvider** — `unknown`. Возможные значения: `unknown`, `teamsForBusiness`, `skypeForBusiness` и `skypeForConsumer`. Необязательное свойство. <br> После настройки **onlineMeetingProvider** Microsoft Graph инициализирует **onlineMeeting**. После этого вы не сможете изменить **onlineMeetingProvider** и собрание останется доступным по сети. |
-|onlineMeetingUrl|String|URL-адрес собрания. Свойство будет задано только в том случае, если организатор определяет в Outlook, что событие является собранием по сети, например в Skype. Только для чтения.<br>Чтобы получить доступ к URL-адресу и присоединиться к собранию по сети, воспользуйтесь **joinUrl**, который предоставляется через свойство **event**, **onlineMeeting**. В дальнейшем использовать свойство **onlineMeetingUrl** не рекомендуется. |
+|onlineMeetingUrl|String|URL-адрес собрания. Свойство будет задано только в том случае, если организатор определяет в Outlook, что событие является собранием по сети, например в Skype. Только для чтения.<br>Чтобы получить доступ к URL-адресу и присоединиться к собранию по сети, воспользуйтесь **joinUrl**, который предоставляется через свойство **event**, **onlineMeeting**. В будущем свойство **onlineMeetingUrl** будет упразднено. |
 |organizer|[Recipient](recipient.md)|Организатор события.|
 |originalEndTimeZone|String|Часовой пояс завершения события, указанный при его создании. Значение `tzone://Microsoft/Custom` указывает, что в классическом приложении Outlook задан традиционный пользовательский часовой пояс.|
 |originalStart|DateTimeOffset|Представляет время начала события, когда оно изначально создается как вхождение или исключение в повторяющемся ряду. Это свойство не возвращается для событий, которые являются одиночными экземплярами. Сведения времени и даты представлены в формате ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|originalStartTimeZone|String|Часовой пояс начала события, указанный при его создании. Значение `tzone://Microsoft/Custom` указывает, что в классическом приложении Outlook задан традиционный пользовательский часовой пояс.|
+|originalStartTimeZone|Строка|Часовой пояс начала события, указанный при его создании. Значение `tzone://Microsoft/Custom` указывает, что в классическом приложении Outlook задан традиционный пользовательский часовой пояс.|
 |recurrence|[PatternedRecurrence](patternedrecurrence.md)|Расписание повторения события.|
 |reminderMinutesBeforeStart|Int32|Позволяет указать, за сколько минут до начала события появляется напоминание.|
 |responseRequested|Логический|По умолчанию используется значение true, означающее, что организатор запрашивает у приглашенного отправку ответа для события.|
@@ -123,7 +123,7 @@ ms.locfileid: "59931999"
 >
 > * Для учетных записей Майкрософт: `https://outlook.live.com/owa/?itemid={event-id}&exvsurl=1&path=/calendar/item`
 >
-> Чтобы открыть событие в текущей версии Outlook в Интернете, преобразуйте URL-адрес в один из следующих форматов и используйте этот URL-адрес для открытия события: 
+> Чтобы открыть событие в текущей версии Outlook в Интернете, преобразуйте URL-адрес в один из следующих форматов и используйте этот URL-адрес для открытия события:
 >
 > * Для рабочих или учебных учетных записей: `https://outlook.office365.com/calendar/item/{event-id}`
 >
@@ -132,7 +132,7 @@ ms.locfileid: "59931999"
 ## <a name="relationships"></a>Связи
 | Связь | Тип |Описание|
 |:---------------|:--------|:----------|
-|attachments|Коллекция [Attachment](attachment.md)|Коллекция вложений [FileAttachment](fileattachment.md), [ItemAttachment](itemattachment.md) и [referenceAttachment](referenceattachment.md) для события. Свойство навигации. Только для чтения. Допускается значение null.|
+|attachments|Коллекция [Attachment](attachment.md)|Коллекция вложений [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md) и [referenceAttachment](referenceattachment.md)для события. Свойство навигации. Только для чтения. Допускается значение null.|
 |calendar|[Calendar](calendar.md)|Календарь, который содержит событие. Свойство навигации. Только для чтения.|
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для события. Допускается значение null.|
 |instances|Коллекция [Event](event.md)|Вхождения в повторяющемся ряду, если событие является основным в ряду. Это свойство включает вхождения, которые являются частью расписания повторения, и исключения, которые были изменены, но не включает повторения, которые были отменены в ряду. Свойство навигации. Только для чтения. Допускается значение null.|
@@ -179,7 +179,7 @@ ms.locfileid: "59931999"
   "isDraft": false,
   "isOnlineMeeting": true,
   "isOrganizer": true,
-  "isReminderOn": true,  
+  "isReminderOn": true,
   "lastModifiedDateTime": "String (timestamp)",
   "location": {"@odata.type": "microsoft.graph.location"},
   "locations": [{"@odata.type": "microsoft.graph.location"}],

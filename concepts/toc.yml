@@ -265,7 +265,7 @@ items:
             href: azuread-identity-access-management-concept-overview.md
           - name: Управление каталогом
             items:
-              - name: Назначение привилегированных ролей с помощью PIM
+              - name: Назначение ролей с помощью PIM для Azure AD
                 href: tutorial-assign-azureadroles.md
           - name: Удостоверение и вход
             items:
@@ -285,6 +285,8 @@ items:
                     href: tutorial-accessreviews-securitygroup.md
                   - name: Проверка доступа к группе Microsoft 365
                     href: tutorial-accessreviews-M365group.md
+              - name: Назначение ролей с помощью PIM для Azure AD
+                href: tutorial-assign-azureadroles.md
       - name: Почта
         displayName: 'Outlook, Outlook mail'
         items:

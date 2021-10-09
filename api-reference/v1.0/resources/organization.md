@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: ef6a84303ad63e673ffbca0b061e23346208489a
-ms.sourcegitcommit: 7ce66321abb6a2cdca8685d3ce0a004c376ae33b
+ms.openlocfilehash: 2b4ac86a3dd1bad876c6819b9f49c28ca4bac7fb
+ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59777522"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240889"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -25,21 +25,24 @@ ms.locfileid: "59777522"
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
 |[Get organization](../api/organization-get.md) | Коллекция объектов [organization](organization.md)|Считывание свойств и связей объекта организации.|
-|[Update](../api/organization-update.md) | [organization](organization.md)  |Обновление объекта организации. Обновлять можно только эти свойства: **marketingNotificationMails**, **technicalNotificationMails**, **securityComplianceNotificationMails**, **securityComplianceNotificationPhones** и **privacyProfile**. |
+|[Update](../api/organization-update.md) | [organization](organization.md)  |Обновление объекта организации. Обновляются только следующие свойства: **marketingNotificationMails**, **technicalNotificationMails**, **securityComplianceNotificationMails**, **securityComplianceNotificationPhones** и **privacyProfile**. |
 |**Открытые расширения**| 
 |[Создание открытого расширения](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий ресурс.|
 |[Получение открытого расширения](../api/opentypeextension-get.md) |Коллекция объектов [openTypeExtension](opentypeextension.md)| Получение открытого расширения, определяемого именем расширения.|
 |**Расширения схемы**| 
 |[Добавление значений расширений для схемы](/graph/extensibility-schema-groups) || Создание определения расширения схемы и его дальнейшее использование для добавления в ресурс введенных пользовательских данных.|
 |**Фирменная символика организации**| | |
-|[Создание organizationalBrandingLocalization](../api/organizationalbranding-post-localizations.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Создание новой фирменной символики локализации (для определенного языка) и стандартного объекта фирменной символики, если он не существует. |
 |[Получение organizationalBranding](../api/organizationalbranding-get.md) | [organizationalBranding](organizationalbranding.md) | Получение стандартного объекта фирменной символики организации. |
 |[Обновление organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Обновление стандартного объекта фирменной символики организации. |
-|[Удаление organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Удаление стандартного объекта фирменной символики организации. |
-|[Список organizationalBrandingLocalization](../api/organizationalbrandinglocalization-get.md) | Коллекция [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Извлечение всех объектов фирменной символики локализации в клиенте. |
+|[Создание organizationalBrandingLocalization](../api/organizationalbranding-post-localizations.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Создание новой фирменной символики локализации (для определенного языка) и стандартного объекта фирменной символики, если он не существует. |
+|[Список organizationalBrandingLocalization](../api/organizationalbranding-list-localizations.md) | Коллекция [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Извлечение всех объектов фирменной символики локализации в клиенте. |
 |[Получение organizationalBrandingLocalization](../api/organizationalbrandinglocalization-get.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Чтение свойств объекта фирменной символики локализации. |
-|[Обновление organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Обновление объекта фирменной символики локализации. |
-|[Удаление organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Удаление объекта фирменной символики локализации. |
+|[Обновление organizationalBrandingLocalization](../api/organizationalbrandinglocalization-update.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Обновление объекта фирменной символики локализации. |
+|[Удаление organizationalBrandingLocalization](../api/organizationalbrandinglocalization-delete.md) | [organizationalBrandingLocalization](organizationalbrandinglocalization.md) | Удаление объекта фирменной символики локализации. |
+<!--|[Удаление organizationalBranding](../api/organizationalbranding-update.md) | [organizationalBranding](organizationalbranding.md) | Удаление стандартного объекта фирменной символики организации. |
+
+**ПРИМЕЧАНИЕ. Для восстановления операции удаления organizationalBranding в таблицу после операции обновления organizationalBranding, если устранены все несоответствия.-->
+
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
@@ -50,15 +53,15 @@ ms.locfileid: "59777522"
 | country | String | Название страны или региона в адресе организации. |
 | countryLetterCode | String | Сокращенное название страны или региона для организации. |
 | createdDateTime | DateTimeOffset | Метка времени создания организации. Значение не может изменяться и заполняется автоматически, когда создается организация. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. |
-| deletedDateTime | DateTimeOffset | Представляет дату и время удаления клиента Azure AD с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. |
+| deletedDateTime | DateTimeOffset | Представляет дату и время удаления клиента Azure AD в формате ISO 8601 (время всегда указывается в формате UTC). Например, полночь 1 января 2014 г. в формате UTC представляется в виде `2014-01-01T00:00:00Z`. Только для чтения. |
 | displayName | String | Отображаемое имя для клиента. |
 | id | String | Уникальный идентификатор клиента, представляющий организацию (или клиента). Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения. |
 | isMultipleDataLocationsForServicesEnabled | Boolean | Используется значение `true`, если в организации включена поддержка нескольких регионов. Используется значение **false**, если поддержка нескольких регионов в организации не включена. По умолчанию используется значение **null**. Только для чтения. Дополнительные сведения см. в статье [OneDrive Online с поддержкой нескольких регионов](/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | marketingNotificationEmails | Коллекция String | Значение null не допускается. |
-| onPremisesLastSyncDateTime | DateTimeOffset | Время и дата последней синхронизации клиента с локальным каталогом. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
+| onPremisesLastSyncDateTime | DateTimeOffset | Дата и время последней синхронизации клиента с локальным каталогом. Тип Timestamp представляет сведения о времени и дате в формате ISO 8601 (время всегда указывается в формате UTC). Например, полночь 1 января 2014 г. в формате UTC представляется в виде `2014-01-01T00:00:00Z`. Только для чтения.|
 | onPremisesSyncEnabled | Boolean | Используется значение `true`, если этот объект синхронизируется из локального каталога. Используется значение `false`, если этот объект ранее синхронизировался из локального каталога, но синхронизация больше не выполняется. Допускается значение NULL. Используется значение `null`, если этот объект никогда не синхронизировался из локального каталога (по умолчанию). |
 | postalCode | String | Почтовый индекс в адресе организации. |
-| preferredLanguage | String | Предпочитаемый язык для организации. Он должен быть представлен в формате ISO 639-1, например `en`. |
+| preferredLanguage | String | Предпочитаемый язык для организации. Должен быть в формате ISO 639-1, например `en`.  |
 | privacyProfile | [privacyProfile](privacyprofile.md) | Профиль конфиденциальности организации. |
 | provisionedPlans | Коллекция [ProvisionedPlan](provisionedplan.md) | Значение null не допускается. |
 | securityComplianceNotificationMails | Коллекция String ||

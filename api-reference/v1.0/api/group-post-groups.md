@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 24aff823670dbc48eee5a3149c0bcb4a21ac9bc8
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 5e9df2c581b48d5e937202d829c0576866ca6abc
+ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507475"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240966"
 ---
 # <a name="create-group"></a>Создание группы
 
@@ -25,7 +25,7 @@ ms.locfileid: "59507475"
 
 Чтобы получить свойства, которые _не_ возвращаются по умолчанию, выполните [операцию GET](group-get.md) и укажите их в параметре запроса OData `$select`.
 
-> **Примечание.** Несмотря на то, что Microsoft Teams создан на основе групп Microsoft 365, в настоящее время нельзя создать команду через этот API. Вы можете использовать другие API групп для управления командой, созданной в Microsoft Teams.
+> **Примечание.** Несмотря на то что приложение Microsoft Teams создано на основе Групп Microsoft 365, в настоящее время невозможно создать группу через этот API. Вы можете использовать другие API групп для управления командой, созданной в пользовательском интерфейсе Microsoft Teams.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,7 +45,7 @@ POST /groups
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,8 +57,8 @@ POST /groups
 | Свойство | Тип | Описание|
 |:---------------|:--------|:----------|
 | displayName | Строка | Имя, которое следует отобразить в адресной книге для группы. Максимальная длина: 256 символов. Обязательно. |
-| mailEnabled | Boolean | Установите значение `true` для групп с включенной поддержкой почты. Обязательный. |
-| mailNickname | String | Почтовый псевдоним для группы. Максимальная длина: 64 символа. Это свойство может содержать только символы из [набора символов ASCII от 0 до 127](/office/vba/language/reference/user-interface-help/character-set-0127), за исключением следующих: ` @ () \ [] " ; : . <> , SPACE`. Обязательный. |
+| mailEnabled | Boolean | Установите значение `true` для групп с включенной поддержкой почты. Обязательное поле. |
+| mailNickname | String | Почтовый псевдоним для группы (уникальный в организации). Максимальная длина: 64 символа. Это свойство может содержать только символы из [набора символов ASCII от 0 до 127](/office/vba/language/reference/user-interface-help/character-set-0127), за исключением следующих: ` @ () \ [] " ; : . <> , SPACE`. Обязательный. |
 | securityEnabled | Логический | Установите значение `true` для групп с поддержкой безопасности, включая группы Microsoft 365. Обязательно.  **Примечание.** В группах, созданных с помощью портала Microsoft Azure, для свойства **securityEnabled** всегда устанавливается значение `true`.|
 
 > [!IMPORTANT]
@@ -285,7 +285,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса. Вызывающему пользователю или приложению должно быть назначено разрешение *RoleManagement.ReadWrite.Directory* для настройки свойства **isAssignableToRole** или обновления участников таких групп.
+Далее приведен пример запроса. Вызывающему пользователю или приложению должно быть назначено разрешение *RoleManagement.ReadWrite.Directory* для настройки свойства **isAssignableToRole** или обновления участников таких групп.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

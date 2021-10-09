@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fe3d386153d04df9ea716d2f624afd2a89f02a39
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: d15ce53f063cf8b7ce3c9dcdc22951afc29186dd
+ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765118"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "60240896"
 ---
 # <a name="create-group"></a>Создание группы
 
@@ -34,7 +34,7 @@ ms.locfileid: "59765118"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Приложение | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -59,7 +59,7 @@ POST /groups
 |:---------------|:--------|:----------|
 | displayName | string | Имя, которое следует отобразить в адресной книге для группы. Обязательно. |
 | mailEnabled | boolean | Установите значение `true` для групп с включенной поддержкой почты. Обязательный. |
-| mailNickname | string | Почтовый псевдоним для группы. Максимальная длина: 64 символа. Это свойство может содержать только символы из [набора символов ASCII от 0 до 127](/office/vba/language/reference/user-interface-help/character-set-0127), за исключением следующих: ` @ () \ [] " ; : . <> , SPACE`. Обязательный. |
+| mailNickname | string | Почтовый псевдоним для группы (уникальный в организации). Максимальная длина: 64 символа. Это свойство может содержать только символы из [набора символов ASCII от 0 до 127](/office/vba/language/reference/user-interface-help/character-set-0127), за исключением следующих: ` @ () \ [] " ; : . <> , SPACE`. Обязательный. |
 | securityEnabled | boolean | Установите значение `true` для групп с поддержкой безопасности, включая группы Microsoft 365. Обязательно. **Примечание.** В группах, созданных с помощью портала Microsoft Azure, для свойства **securityEnabled** всегда устанавливается значение `true`.|
 
 > [!IMPORTANT]
@@ -286,7 +286,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса.  Вызывающему пользователю или приложению должно быть назначено разрешение *RoleManagement.ReadWrite.Directory* для настройки свойства **isAssignableToRole** или обновления участников таких групп. 
+Ниже приведен пример запроса. Вызывающему пользователю или приложению должно быть назначено разрешение *RoleManagement.ReadWrite.Directory* для настройки свойства **isAssignableToRole** или обновления участников таких групп. 
 
 **ПРИМЕЧАНИЕ.** Группа, свойству **isAssignableToRole** которой присвоено значение `true`, не может относиться к типу с динамическим членством. Дополнительные сведения см. в статье [Использование группы для управления назначениями ролей Azure AD](https://go.microsoft.com/fwlink/?linkid=2103037).
 
