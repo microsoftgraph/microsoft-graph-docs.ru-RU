@@ -2,15 +2,15 @@
 title: Создание объекта registeredOwner
 description: Добавление пользователя в качестве зарегистрированного владельца устройства.
 author: spunukol
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a87eae8ed1b46d0b83f0a6f1637cb20534f11fce
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: d050ed9e28b4020133773bbdba07efd1708b101a
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531266"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256489"
 ---
 # <a name="create-registeredowner"></a>Создание объекта registeredOwner
 
@@ -36,9 +36,9 @@ POST /devices/{id}/registeredOwners/$ref
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Имя       | Описание|
+|:---------------|:--------|
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.

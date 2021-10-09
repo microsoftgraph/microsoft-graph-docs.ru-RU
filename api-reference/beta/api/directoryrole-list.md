@@ -2,15 +2,15 @@
 title: Перечисление объектов directoryRole
 description: Перечисление ролей каталога, активированных в клиенте.
 author: abhijeetsinha
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b34011e1ed208405f40e4a5a5be6af20e1f217fe
-ms.sourcegitcommit: ae83b2b372902268517fd17a8b10d6d9add422af
+ms.openlocfilehash: f7f1d808608f3c1311ad9e6361d96c59b758ffe6
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53334425"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256181"
 ---
 # <a name="list-directoryroles"></a>Перечисление объектов directoryRole
 
@@ -42,9 +42,9 @@ GET /directoryRoles
 Этот метод **не** поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика (например, $filter не поддерживается).
 
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Имя       | Описание|
+|:-----------|:------|
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

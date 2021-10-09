@@ -1,18 +1,18 @@
 ---
-title: Проверка групп элементов
+title: 'directoryObject: checkMemberGroups'
 description: Проверка членства в указанном списке групп и возвраты из этого списка этих групп
-localization_priority: Normal
+ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0b52e42e3c610bf0f0020a2587ac7b649fc180be
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3d9518bcb2efe12146480ef76b5fc5cea43e75e8
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046883"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256202"
 ---
-# <a name="check-member-groups"></a>Проверка членства в группах
+# <a name="directoryobject-checkmembergroups"></a>directoryObject: checkMemberGroups
 
 Пространство имен: microsoft.graph
 
@@ -21,6 +21,7 @@ ms.locfileid: "52046883"
 Проверьте членство в указанном списке групп и возвращайте из этого списка те группы, членом которых является указанный пользователь, группа, руководитель службы или объект каталога. Это транзитивная функция.
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 
@@ -30,14 +31,18 @@ ms.locfileid: "52046883"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | User.Read.All, Directory.Read.All |
 
-Используйте руководство по следующим сценариям, чтобы определить, какие типы разрешений использовать:
-- Используйте разрешения User.Read и GroupMember.Read.All или User.Read и Group.Read.All для получения членства в группах для пользователя, вступив в группу.
-- Используйте user.ReadBasic.All и GroupMember.Read.All, User.Read.All и GroupMember.Read.All, User.ReadBasic.All и Group.Read.All или User.Read.All и Group.Read.All для получения членства в группе для любого пользователя.
-- Чтобы получить членство в группе, используйте разрешение GroupMember.Read.All или Group.Read.All.
-- Используйте разрешения Application.ReadWrite.All и GroupMember.Read.All или Application.ReadWrite.All и Group.Read.All для получения членства в группе для директора службы.
-- Используйте разрешение Directory.Read.All для получения членства в группе для объекта каталога.
+В следующей таблице перечислены типы разрешений, которые можно использовать для различных сценариев.
+
+| Сценарий | Разрешения |
+|:-|:-|
+| Для получения членства в группе для пользователя, вписаного в группу | Используйте один из следующих наборов разрешений: <br/> <li> **User.Read** и **GroupMember.Read.All** <li>**User.Read** и **Group.Read.All** |
+| Для получения членства в группе для любого пользователя | Используйте один из следующих наборов разрешений: <br/> <li> **User.ReadBasic.All** и **GroupMember.Read.All** <li>**User.Read.All** и **GroupMember.Read.All** <li>**User.ReadBasic.All** и **Group.Read.All** <li>**User.Read.All** и **Group.Read.All** |
+| Чтобы получить членство в группе для группы | Используйте разрешение **GroupMember.Read.All** или **Group.Read.All.** |
+| Чтобы получить членство в группе для директора службы | Используйте один из следующих наборов разрешений <br/> <li>**Application.ReadWrite.All** и **GroupMember.Read.All** <li>**Application.ReadWrite.All** и **Group.Read.All** |
+| Чтобы получить членство в группе для объекта каталога | Используйте **разрешение Directory.Read.All.** |
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/checkMemberGroups
@@ -47,12 +52,14 @@ POST /servicePrincipals/{id}/checkMemberGroups
 POST /directoryObjects/{id}/checkMemberGroups
 ```
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+
+| Имя       |Описание|
+|:---------------|:--------|
+| Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
+
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -65,7 +72,7 @@ POST /directoryObjects/{id}/checkMemberGroups
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -103,8 +110,8 @@ Content-type: application/json
 ---
 
 
-##### <a name="response"></a>Отклик
-Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,23 +2,20 @@
 title: Создание развертывания
 description: Создание нового объекта развертывания.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: b6ab12d7687d63a46684496c071fb4f9045a8786
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: de9177163835a9500b02d01806644404b50ee144
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52239226"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256503"
 ---
 # <a name="create-deployment"></a>Создание развертывания
 Пространство имен: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-> [!NOTE]
-> Если при создании [](/graph/api/resources/windowsupdates-monitoringrule) развертывания не указано правило мониторинга, создается правило мониторинга по умолчанию. Это правило мониторинга по умолчанию **имеет** сигнал `rollback` , пороговое значение и  `20` **действие** `alertError` . В будущем обновлении API это поведение изменится и не будет создано правило мониторинга по умолчанию.
 
 Создание нового [объекта развертывания.](../resources/windowsupdates-deployment.md)
 
@@ -29,7 +26,7 @@ ms.locfileid: "52239226"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|WindowsUpdates.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|WindowsUpdates.ReadWrite.All|
+|Приложение|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +41,7 @@ POST /admin/windows/updates/deployments
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса

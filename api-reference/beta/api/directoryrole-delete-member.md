@@ -2,15 +2,15 @@
 title: Удаление элемента роли каталога
 description: Удаление элемента из объекта directoryRole.
 author: abhijeetsinha
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: aec2f698c947a74f2814c4e91f350b612fa0600c
-ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.openlocfilehash: 8c71315f17799b8c858927afb5fb05a12c78effc
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53118597"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256482"
 ---
 # <a name="remove-directory-role-member"></a>Удаление элемента роли каталога
 
@@ -31,7 +31,7 @@ ms.locfileid: "53118597"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | RoleManagement.ReadWrite.Directory |
+|Приложение | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,9 +44,9 @@ DELETE /directoryRoles/roleTemplateId={roleTemplateId}/members/{id}/$ref
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Имя       | Описание|
+|:---------------|:--------|
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 

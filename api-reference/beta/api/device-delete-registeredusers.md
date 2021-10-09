@@ -1,16 +1,16 @@
 ---
 title: Удаление registeredUsers
 description: Удалите пользователя как зарегистрированного пользователя устройства.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: michaelrm97
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7657b06b55ab246ccf327a9f8dee97b6cb7da7f5
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: 1a356633196358d94e6a486ffda336af52206f84
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531280"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256405"
 ---
 # <a name="delete-registereduser"></a>Удаление registeredUser
 
@@ -39,9 +39,9 @@ DELETE /devices/{id}/registeredUsers/{id}/$ref
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Имя       | Описание|
+|:-----------|:------|
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

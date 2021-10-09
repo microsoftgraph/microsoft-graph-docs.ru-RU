@@ -2,14 +2,15 @@
 author: angelgolfer-ms
 ms.topic: include
 ms.date: 08/19/2020
-ms.openlocfilehash: 3af612c6d6b77a825ea96f4be1d060bc44b13d0b
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.localizationpriority: medium
+ms.openlocfilehash: aba9c480a3ec7d59673ff3a103cad7ba929ab862
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50243112"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "60255990"
 ---
 <!-- markdownlint-disable MD041-->
 
 > [!CAUTION]
-> Существующие приложения, которые используют эту функцию с задачами Outlook, должны быть обновлены, так как задачи Outlook являются неподготовленными. Дополнительные сведения см. в перезапных [версиях API](https://developer.microsoft.com/graph/blogs/the-new-improved-microsoft-graph-to-do-apis-are-now-in-public-preview/) "Сделать" в открытой предварительной версии.
+> Существующие приложения, которые используют эту функцию с Outlook задачами, должны обновляться, так как Outlook задачи не используются. Дополнительные [сведения см. To Do API в общедоступных](https://developer.microsoft.com/graph/blogs/the-new-improved-microsoft-graph-to-do-apis-are-now-in-public-preview/) предварительных просмотрах.

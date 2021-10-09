@@ -1,16 +1,16 @@
 ---
 title: Удаление вложения
-description: Удаление вложения из события календаря, сообщения, задачи Outlook или публикации.
-localization_priority: Normal
+description: Удаление вложения из события календаря, сообщения, Outlook задачи или сообщения.
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: outlook
 author: abheek-das
-ms.openlocfilehash: 08f07b7c572f2874eefc636de9c35d8961039341
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8dbb8fe04455a9432b8548333ebc9615fa3fbb97
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50438619"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60255991"
 ---
 # <a name="delete-attachment"></a>Удаление вложения
 
@@ -20,7 +20,7 @@ ms.locfileid: "50438619"
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-Удаление вложения из события календаря [пользователя,](../resources/event.md) [сообщения,](../resources/message.md) [задачи Outlook](../resources/outlooktask.md)или [публикации](../resources/post.md).
+Удаление вложения из события календаря [пользователя,](../resources/event.md) [сообщения,](../resources/message.md) [Outlook задачи](../resources/outlooktask.md)или [публикации](../resources/post.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -97,7 +97,7 @@ DELETE /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
 
-Вложения для задачи [Outlook.](../resources/outlooktask.md)
+Вложения для [Outlook задачи](../resources/outlooktask.md).
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -115,11 +115,11 @@ DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Имя       | Описание|
+|:---------------|:----------|
+| Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

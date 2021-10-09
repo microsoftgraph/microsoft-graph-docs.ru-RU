@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: df749d8e9898cbf3bc9b9dcbab24a2c64a776946
-ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
+ms.openlocfilehash: 9bc32b4f49a2cb985d1b19f49e72d2c373bb4e6e
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "60083855"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60255943"
 ---
 # <a name="deploy-a-feature-update-using-the-windows-update-for-business-deployment-service"></a>Развертывание обновления функций с Windows службы развертывания для бизнеса
 
@@ -74,10 +74,7 @@ Content-Type: application/json
 
 Ниже приведен пример создания развертывания обновления функций с необязательными настройками расписания развертывания и [правил мониторинга.](windowsupdates-manage-monitoring-rules.md) [](windowsupdates-schedule-deployment.md) Целевые устройства указаны на следующем шаге.
 
-> [!NOTE]
-> Если при создании [](/graph/api/resources/windowsupdates-monitoringrule) развертывания не указано правило мониторинга, создается правило мониторинга по умолчанию. Это правило мониторинга по умолчанию **имеет** сигнал `rollback` , пороговое значение и  `20` **действие** `alertError` . В будущем обновлении API это поведение изменится и не будет создано правило мониторинга по умолчанию.
-
-### <a name="request"></a>Запросить
+### <a name="request"></a>Запрос
 
 ```http
 POST https://graph.microsoft.com/beta/admin/windows/updates/deployments
@@ -167,7 +164,7 @@ Content-Type: application/json
 
 В следующем примере показано, как добавлять устройства Azure AD в качестве участников аудитории развертывания.
 
-### <a name="request"></a>Запросить
+### <a name="request"></a>Запрос
 
 ```http
 POST https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deploymentId}/audience/updateAudience

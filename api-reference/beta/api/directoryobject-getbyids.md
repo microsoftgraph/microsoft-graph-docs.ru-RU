@@ -2,17 +2,17 @@
 title: 'directoryObject: getByIds'
 description: 'Возвращает объекты каталогов, указанные в списке идентификаторов. '
 author: keylimesoda
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 72e580e3ad36540ae40311358bf065d67a74f59a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4ff5791cb14806f06ca6ae1c7895ce8009542eb3
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046862"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256426"
 ---
-# <a name="get-directory-objects-from-a-list-of-ids"></a>Получение объектов каталога из списка идентификаторов
+# <a name="directoryobject-getbyids"></a>directoryObject: getByIds
 
 Пространство имен: microsoft.graph
 
@@ -48,10 +48,10 @@ POST /directoryObjects/getByIds
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type  | строка | application/json. Обязательный.  |
+| Имя       | Описание|
+|:---------------|:--------|
+| Авторизация  | Bearer {token}. Обязательный. |
+| Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -60,7 +60,7 @@ POST /directoryObjects/getByIds
 | Параметр   | Тип |Описание|
 |:---------------|:--------|:----------|
 |ids|Коллекция String| Коллекция идентификаторов, для которой необходимо возвратить объекты. Идентификаторы имеют формат GUID и представлены в виде строк. Вы можете указать до 1000 идентификаторов. |
-|types|Коллекция объектов string| Коллекция типов ресурсов, указывающая набор коллекций ресурсов, в котором необходимо выполнить поиск. Если аргумент не указан, по умолчанию используется объект [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), который содержит все типы ресурсов, определенные в каталоге. В коллекции можно указать любой объект, производный от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta). Пример: [user](/graph/api/resources/user?view=graph-rest-beta), [group](/graph/api/resources/group?view=graph-rest-beta), [device](/graph/api/resources/device?view=graph-rest-beta). Для поиска ссылок на партнерскую организацию, [поставляющую облачные решения](https://partner.microsoft.com/cloud-solution-provider), укажите ресурс [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta). Если аргумент не указан, по умолчанию используется объект [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), который содержит все типы ресурсов, определенные в каталоге, кроме ссылок на партнерскую организацию, [поставляющую облачные решения](https://partner.microsoft.com/cloud-solution-provider). В значениях не учитывается регистр символов.|
+|types|Коллекция объектов string| Коллекция типов ресурсов, указывающая набор коллекций ресурсов, в котором необходимо выполнить поиск. Если аргумент не указан, по умолчанию используется объект [directoryObject](../resources/directoryobject.md), который содержит все типы ресурсов, определенные в каталоге. Любой объект, вытекает из [directoryObject,](../resources/directoryobject.md) может быть указан в коллекции; например: [объекты пользователя,](../resources/user.md) [группы](../resources/group.md)и [устройства.](../resources/device.md) <br/><br/>Для поиска ссылок на партнерскую организацию, [поставляющую облачные решения](https://partner.microsoft.com/cloud-solution-provider), укажите ресурс [directoryObjectPartnerReference](../resources/directoryobjectpartnerreference.md). Если аргумент не указан, по умолчанию используется объект [directoryObject](../resources/directoryobject.md), который содержит все типы ресурсов, определенные в каталоге, кроме ссылок на партнерскую организацию, [поставляющую облачные решения](https://partner.microsoft.com/cloud-solution-provider). </br><br/> В значениях не учитывается регистр символов.|
 
 ## <a name="response"></a>Отклик
 

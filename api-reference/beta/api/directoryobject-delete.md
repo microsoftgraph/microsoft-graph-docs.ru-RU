@@ -2,15 +2,15 @@
 title: Удаление объекта directoryObject
 description: Удаление directoryObject.
 author: keylimesoda
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 62a4d9f6d83df0eaa80be7262a9d3057fe28d724
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 067d637b06b382a86ece343d845a0c6022e5b91e
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50769991"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256125"
 ---
 # <a name="delete-directoryobject"></a>Удаление объекта directoryObject
 
@@ -30,18 +30,22 @@ ms.locfileid: "50769991"
 |Для приложений | Не поддерживается. |
 
 **ПРИМЕЧАНИЕ:** Пользователи, группы и контакты — это типы объекта каталога. В результате, если требуется удалить пользователей, можно и нужно использовать следующее разрешение: User.ReadWrite.All
+
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /directoryObjects/{id}
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+
+| Имя       | Описание|
+|:---------------|:--------|
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
+
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -49,7 +53,9 @@ DELETE /directoryObjects/{id}
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+
+### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -78,8 +84,8 @@ DELETE https://graph.microsoft.com/beta/directoryObjects/ffab4dce-9b82-49a6-b7c7
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+### <a name="response"></a>Отклик
+
 <!-- {
   "blockType": "response",
   "truncated": true

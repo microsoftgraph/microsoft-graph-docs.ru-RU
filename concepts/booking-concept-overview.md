@@ -5,12 +5,12 @@ author: arvindmicrosoft
 ms.localizationpriority: high
 ms.prod: bookings
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 37cae1ba10db204bc646060131e32619bfa1b2d2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3caf87b95533088bb1d0968fbcad6050c54fa51d
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134082"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256510"
 ---
 # <a name="microsoft-bookings-api-overview-preview"></a>Обзор API Microsoft Bookings (предварительная версия)
 
@@ -19,15 +19,15 @@ Microsoft Bookings — это приложения для браузера и м
 ## <a name="why-integrate-with-microsoft-bookings-using-microsoft-graph"></a>Зачем проводить интеграцию с Microsoft Bookings, используя Microsoft Graph?
 
 ### <a name="streamline-appointment-booking"></a>Простое планирование встреч
-Предприниматель не должен упускать клиентов из-за того, что не может ответить на звонок или компания закрыта. Клиенты могут [видеть доступные услуги](/graph/api/bookingbusiness-list-services?view=graph-rest-beta) и [записываться](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta) в любой момент прямо на странице планирования, на Facebook или веб-сайте компании. 
+Предприниматель не должен упускать клиентов из-за того, что не может ответить на звонок или компания закрыта. Клиенты могут [видеть доступные услуги](/graph/api/bookingbusiness-list-services) и [записываться](/graph/api/bookingbusiness-post-appointments) в любой момент прямо на странице планирования, на Facebook или веб-сайте компании. 
 
-Предприниматели могут подтверждать записи в мобильном или интернет-приложении, лично или по телефону. Они могут [перенести](/graph/api/bookingappointment-update?view=graph-rest-beta) или [отменить](/graph/api/bookingappointment-cancel?view=graph-rest-beta) бронь, а также [переназначить](/graph/api/bookingappointment-update?view=graph-rest-beta) ее, указав другого доступного сотрудника. 
+Предприниматели могут подтверждать записи в мобильном или интернет-приложении, лично или по телефону. Они могут [перенести](/graph/api/bookingappointment-update) или [отменить](/graph/api/bookingappointment-cancel) бронь, а также [переназначить](/graph/api/bookingappointment-update) ее, указав другого доступного сотрудника. 
 
 ### <a name="reduce-no-shows-and-increase-productivity-of-the-staff"></a>Сокращение количества неявок и увеличение эффективности сотрудников
-Предприниматели могут указать [политики планирования](/graph/api/resources/bookingschedulingpolicy?view=graph-rest-beta), включающие минимальные уведомления о резервировании и отмене, а клиенты могут планировать и переносить встречи самостоятельно. Автоматические подтверждения встреч и напоминания позволяют сократить количество неявок и эффективнее использовать рабочее время. 
+Предприниматели могут указать [политики планирования](/graph/api/resources/bookingschedulingpolicy), включающие минимальные уведомления о резервировании и отмене, а клиенты могут планировать и переносить встречи самостоятельно. Автоматические подтверждения встреч и напоминания позволяют сократить количество неявок и эффективнее использовать рабочее время. 
 
 ### <a name="manage-customer-information-and-relationships-from-anywhere"></a>Управление сведениями о клиентах и соответствующих отношениях с любого устройства
-При добавлении встречи автоматически проверяется, указан ли человек в [списке клиентов](/graph/api/bookingbusiness-list-customers?view=graph-rest-beta), и при необходимости [добавляются](/graph/api/bookingbusiness-post-customers?view=graph-rest-beta) его имя и электронный адрес в этот список. Благодаря этому предприниматели могут с легкостью оставаться на связи с клиентами и периодически отправлять им информационные бюллетени и другие рекламные материалы.
+При добавлении встречи автоматически проверяется, указан ли человек в [списке клиентов](/graph/api/bookingbusiness-list-customers), и при необходимости [добавляются](/graph/api/bookingbusiness-post-customers) его имя и электронный адрес в этот список. Благодаря этому предприниматели могут с легкостью оставаться на связи с клиентами и периодически отправлять им информационные бюллетени и другие рекламные материалы.
 
 ### <a name="integrate-with-productivity-and-team-collaboration-services-in-microsoft-graph"></a>Интеграция со службами, повышающими эффективность работы и сотрудничества, в Microsoft Graph
 Используя единую конечную точку REST Microsoft Graph, вы можете получить доступ к API Bookings и [интегрировать лучшее из Microsoft 365](overview-major-services.md) для поддержки многофункциональных сценариев. Например, с помощью [Excel](excel-concept-overview.md#generate-reports-and-analyze-results) вы можете отслеживать и анализировать финансовые данные компании, создавать профессиональные отчеты, а с помощью [SharePoint](sharepoint-concept-overview.md) или [Microsoft Teams](teams-concept-overview.md) — повысить эффективность сотрудничества команд.
@@ -35,13 +35,13 @@ Microsoft Bookings — это приложения для браузера и м
 ## <a name="api-reference"></a>Справочные материалы по API
 Ищете справочные материалы по API для этой службы?
 
-См. статью [API Microsoft Bookings в бета-версии Microsoft Graph](/graph/api/resources/booking-api-overview?view=graph-rest-beta).
+См. статью [API Microsoft Bookings в бета-версии Microsoft Graph](/graph/api/resources/booking-api-overviewa).
 
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
 Дополнительные сведения:
 
-- [Microsoft Bookings](https://support.office.com/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) и другие [бизнес-приложения Microsoft 365](https://support.office.com/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US).
-- [Использование API Bookings](/graph/api/resources/booking-api-overview?view=graph-rest-beta) в Microsoft Graph.
+- [Microsoft Bookings](https://support.office.com/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) и другие [бизнес-приложения Microsoft 365](https://www.microsoft.com/microsoft-365).
+- [Использование API Bookings](/graph/api/resources/booking-api-overview) в Microsoft Graph.
 

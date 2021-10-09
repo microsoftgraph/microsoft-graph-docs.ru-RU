@@ -5,12 +5,12 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d432fff2bafa5233d44238e57e06fafd461b96ba
-ms.sourcegitcommit: 2f394a9f33f2fab3634d0f18882985ee211067d1
+ms.openlocfilehash: d3f0170c88a4b89479b53155cc55ad72e1542076
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60127536"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60255922"
 ---
 # <a name="update-device"></a>Обновление устройства
 
@@ -25,9 +25,9 @@ ms.locfileid: "60127536"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Device.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
-|Application | Device.ReadWrite.All, Directory.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | Device.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|Приложение | Device.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -39,9 +39,9 @@ PATCH /devices/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Имя       |Описание|
+|:-----------|:------|
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 

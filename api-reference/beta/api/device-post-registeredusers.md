@@ -2,15 +2,15 @@
 title: Создание объекта registeredUser
 description: Добавление зарегистрированного пользователя устройства.
 author: spunukol
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 621be45c38ec8a4d1e66b3e2409b20f0eeb278d9
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: 677f163e981d00873183849f79423357adf700be
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531336"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256398"
 ---
 # <a name="create-registereduser"></a>Создание объекта registeredUser
 
@@ -37,9 +37,9 @@ POST /devices/{id}/registeredUsers/$ref
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Имя       | Описание|
+|:---------------|:--------|
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.

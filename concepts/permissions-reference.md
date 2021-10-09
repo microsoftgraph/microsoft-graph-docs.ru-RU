@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: ce99f64c4bace1893a4d93e8d3d0fb64a82c6fd2
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: 1d39965eb95fca26ef29d513fbfa76672374941a
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220488"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256076"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -227,13 +227,13 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 ### <a name="example-usage"></a>Примеры использования
 
-#### <a name="delegated"></a>Делегированное
+#### <a name="delegated"></a>Делегированные
 * _AppCatalog.ReadWrite.All_. [Составление списка всех приложений в каталоге](/graph/api/teamsapp-list?view=graph-rest-beta&preserve-view=true) (`GET /beta/appCatalogs/teamsApps`)
 * _AppCatalog.ReadWrite.All_. [Публикация приложения](/graph/api/teamsapp-publish?view=graph-rest-beta&preserve-view=true) (`POST /beta/appCatalogs/teamsApps`)
 * _AppCatalog.ReadWrite.All_. [Обновление опубликованного приложения](/graph/api/teamsapp-update?view=graph-rest-beta&preserve-view=true) (`PATCH /beta/appCatalogs/teamsApps/{id}`)
 * _AppCatalog.ReadWrite.All_. [Удаление опубликованного приложения](/graph/api/teamsapp-delete?view=graph-rest-beta&preserve-view=true) (`DELETE /beta/appCatalogs/teamsApps/{id}`)
 
-#### <a name="application"></a>Для приложений
+#### <a name="application"></a>Приложение
 
 Отсутствуют.
 
@@ -269,16 +269,16 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 #### <a name="delegated"></a>Делегированные разрешения
 
-* _Application.Read.All_. Составление списка всех приложений (`GET /beta/applications`)
-* _Application.ReadWrite.All_. Обновление субъекта-службы (`PATCH /beta/servicePrincipals/{id}`)
+* _Application.Read.All_. Составление списка всех приложений (`GET /v1.0/applications`)
+* _Application.ReadWrite.All_. Обновление субъекта-службы (`PATCH /v1.0/servicePrincipals/{id}`)
 
-#### <a name="application"></a>Для приложений
+#### <a name="application"></a>Для приложения
 
-* _Application.Read.All_. Составление списка всех приложений (`GET /beta/applications`)
-* _Application.ReadWrite.All_. Удаление субъект-службы (`DELETE /beta/servicePrincipals/{id}`)
-* _Application.ReadWrite.OwnedBy_. Создание приложения (`POST /beta/applications`)
-* _Application.ReadWrite.OwnedBy_. Составление списка всех приложений, принадлежащих вызывающему приложению (`GET /beta/servicePrincipals/{id}/ownedObjects`)
-* _Application.ReadWrite.OwnedBy_. Добавление другого владельца приложения (`POST /applications/{id}/owners/$ref`).
+* _Application.Read.All_. Составление списка всех приложений (`GET /v1.0/applications`)
+* _Application.ReadWrite.All_. Удаление субъект-службы (`DELETE /v1.0/servicePrincipals/{id}`)
+* _Application.ReadWrite.OwnedBy_. Создание приложения (`POST /v1.0/applications`)
+* _Application.ReadWrite.OwnedBy_. Составление списка всех приложений, принадлежащих вызывающему приложению (`GET /v1.0/servicePrincipals/{id}/ownedObjects`)
+* _Application.ReadWrite.OwnedBy_. Добавление другого владельца приложения (`POST /v1.0/applications/{id}/owners/$ref`).
     > Примечание: могут потребоваться дополнительные разрешения.
 
 ---
@@ -408,7 +408,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 ### <a name="example-usage"></a>Примеры использования
 
-#### <a name="application"></a>Для приложений
+#### <a name="application"></a>Приложение
 
 * _Calls.Initiate.All_. Совершение однорангового звонка из приложения пользователю в организации (`POST /beta/communications/calls`).
 * _Calls.InitiateGroupCall.All_. Совершение группового звонка из приложения группе пользователей в организации (`POST /beta/communications/calls`).
@@ -1104,41 +1104,6 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 ---
 
-## <a name="incidents-permissions"></a>Разрешения для инцидентов
-
-#### <a name="delegated-permissions"></a>Делегированные разрешения
-
-|   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора | Поддержка учетной записи Майкрософт |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Incidents.Read.All_ | Чтение инцидентов | Позволяет приложению читать инциденты от имени вошедшего пользователя. | Да | Нет |
-| _Incidents.ReadWrite.All_ | Чтение и запись инцидентов | Позволяет приложению читать и записывать инциденты от имени вошедшего пользователя. | Да | Нет |
-
-
-#### <a name="application-permissions"></a>Разрешения приложений
-
-|   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора |
-|:----------------|:------------------|:-------------|:-----------------------|
-| _Incidents.Read.All_ | Чтение всех инцидентов | Позволяет приложению читать все инциденты без вошедшего пользователя. | Да |
-| _Incidents.ReadWrite.All_ | Чтение и запись всех инцидентов | Позволяет приложению читать и записывать все инциденты без вошедшего пользователя. | Да |
-
-### <a name="remarks"></a>Примечания
-
-Разрешения для инцидентов действительны только для рабочих и учебных учетных записей.
-
-### <a name="example-usage"></a>Примеры использования
-
-#### <a name="delegated"></a>Делегированное
-
-* _Incidents.Read.All_: чтение всех инцидентов в организации, которые доступны пользователю для чтения (`GET /security/incidents`)
-* _Incidents.ReadWrite.All_: чтение и запись всех инцидентов в организации, которые доступны пользователю для чтения и записи (`GET /security/incidents`)
-
-#### <a name="application"></a>Для приложений
-
-* _Incidents.Read.All_: чтение всех инцидентов в организации (`GET /security/incidents`)
-* _Incidents.ReadWrite.All_: чтение и запись всех инцидентов в организации (`GET /security/incidents`)
-
----
-
 ## <a name="information-protection-policy-permissions"></a>Разрешения политики защиты данных
 
 #### <a name="delegated-permissions"></a>Делегированные разрешения
@@ -1356,7 +1321,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 В случае рабочих и учебных учетных записей разрешения _Notes.Read.All_ и _Notes.ReadWrite.All_ позволяют приложению получать доступ к содержимому OneNote других пользователей, которое доступно вошедшему пользователю в организации.
 
 ### <a name="example-usage"></a>Примеры использования
-#### <a name="delegated"></a>Делегированные разрешения
+#### <a name="delegated"></a>Delegated
 
 * _Notes.Create_. Создание записных книжек для вошедшего пользователя (`POST /me/onenote/notebooks`).
 * _Notes.Read_. Чтение записных книжек вошедшего пользователя (`GET /me/onenote/notebooks`).
@@ -2479,8 +2444,6 @@ _ProgramControl.Read.All_ и _ProgramControl.ReadWrite.All_ допустимы �
 #### <a name="application"></a>Приложение
 
 * _WindowsUpdates.ReadWrite.All_: создание развертывания (`POST /beta/admin/windows/updates/deployments`).
-
----
 
 ## <a name="permission-scenarios"></a>Сценарии с использованием разрешений
 

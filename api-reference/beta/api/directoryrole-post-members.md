@@ -2,15 +2,15 @@
 title: Добавление участника роли каталога
 description: Создание нового участника роли каталога.
 author: abhijeetsinha
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 135640887f43952a83f93b1b4267645a228383c4
-ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.openlocfilehash: ad7ae6e9c269a23a6aeaa7a06d2daa293ff6a439
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53118499"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256286"
 ---
 # <a name="add-directory-role-member"></a>Добавление участника роли каталога
 
@@ -29,7 +29,7 @@ ms.locfileid: "53118499"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | RoleManagement.ReadWrite.Directory |
+|Приложение | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,9 +38,9 @@ POST /directoryRoles/{role-id}/members/$ref
 POST /directoryRoles/roleTemplateId={roleTemplateId}/members/$ref
 ```
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Имя       | Описание|
+|:---------------|:----------|
+| Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса

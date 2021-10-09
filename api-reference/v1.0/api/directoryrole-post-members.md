@@ -5,12 +5,12 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 534a7f73ad4c9a961c44f26c8465005b9ca43ee7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b22e7466f601cafd40a5d7f1c86c570935b0eba5
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046234"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60255971"
 ---
 # <a name="add-directory-role-member"></a>Добавление участника роли каталога
 
@@ -27,7 +27,7 @@ ms.locfileid: "59046234"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | RoleManagement.ReadWrite.Directory |
+|Приложение | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -37,10 +37,10 @@ POST /directoryRoles/roleTemplateId={roleTemplateId}/members/$ref
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type  | string  | application/json. Обязательный.  |
+| Имя       | Описание|
+|:---------------|:----------|
+| Авторизация  | Bearer {token}. Обязательный. |
+| Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание добавляемого объекта [directoryObject](../resources/directoryobject.md) или [user](../resources/user.md) в формате JSON.

@@ -1,18 +1,18 @@
 ---
-title: Вывод групп элементов
+title: 'directoryObject: getMemberGroups'
 description: Верни все группы, в которые входит указанный пользователь, группа, руководитель службы или объект каталога. Это транзитивная функция.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5813871a262475e85df93cfe82e6943f381f85b8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 28b72a5df66e6708906fc83016bfb186519499a3
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046855"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256321"
 ---
-# <a name="get-member-groups"></a>Вывод групп пользователя
+# <a name="directoryobject-getmembergroups"></a>directoryObject: getMemberGroups
 
 Пространство имен: microsoft.graph
 
@@ -28,14 +28,17 @@ ms.locfileid: "52046855"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | User.ReadBasic.All и GroupMember.Read.All, User.Read.All и GroupMember.Read.All, User.ReadBasic.All и Group.Read.All, User.Read.All и Group.Read.All, Directory.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | User.Read.All и GroupMember.Read.All, User.Read.All и Group.Read.All, Directory.Read.All |
+|Приложение | User.Read.All и GroupMember.Read.All, User.Read.All и Group.Read.All, Directory.Read.All |
 
-Используйте руководство по следующим сценариям, чтобы определить, какие типы разрешений использовать:
-- Используйте разрешения User.Read и GroupMember.Read.All или User.Read и Group.Read.All для получения членства в группах для пользователя, вступив в группу.
-- Используйте user.ReadBasic.All и GroupMember.Read.All, User.Read.All и GroupMember.Read.All, User.ReadBasic.All и Group.Read.All или User.Read.All и Group.Read.All для получения членства в группе для любого пользователя.
-- Чтобы получить членство в группе, используйте разрешение GroupMember.Read.All или Group.Read.All.
-- Используйте разрешения Application.ReadWrite.All и GroupMember.Read.All или Application.ReadWrite.All и Group.Read.All для получения членства в группе для директора службы.
-- Используйте разрешение Directory.Read.All для получения членства в группе для объекта каталога.
+В следующей таблице перечислены типы разрешений, которые можно использовать для различных сценариев.
+
+| Сценарий | Разрешения |
+|:-|:-|
+| Для получения членства в группе для пользователя, вписаного в группу | Используйте один из следующих наборов разрешений: <br/> <li> **User.Read** и **GroupMember.Read.All** <li>**User.Read** и **Group.Read.All** |
+| Для получения членства в группе для любого пользователя | Используйте один из следующих наборов разрешений: <br/> <li> **User.ReadBasic.All** и **GroupMember.Read.All** <li>**User.Read.All** и **GroupMember.Read.All** <li>**User.ReadBasic.All** и **Group.Read.All** <li>**User.Read.All** и **Group.Read.All** |
+| Чтобы получить членство в группе для группы | Используйте разрешение **GroupMember.Read.All** или **Group.Read.All.** |
+| Чтобы получить членство в группе для директора службы | Используйте один из следующих наборов разрешений <br/> <li>**Application.ReadWrite.All** и **GroupMember.Read.All** <li>**Application.ReadWrite.All** и **Group.Read.All** |
+| Чтобы получить членство в группе для объекта каталога | Используйте **разрешение Directory.Read.All.** |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -47,9 +50,9 @@ POST /servicePrincipals/{id}/getMemberGroups
 POST /directoryObjects/{id}/getMemberGroups
 ```
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Имя       | Описание|
+|:---------------|:--------|
+| Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,7 +60,7 @@ POST /directoryObjects/{id}/getMemberGroups
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Логическое| Значение **true** указывает, что должны быть возвращены только группы безопасности, в которых состоит объект. Значение **false** указывает, что должны быть возвращены все группы и роли каталога, участником которых является объект. **Примечание**. Вызвать функцию для пользователя можно, только если для параметра задано значение **true**. |
+|securityEnabledOnly|Boolean| `true` чтобы указать, что должны возвращаться только группы безопасности, в которые входит объект; чтобы указать, что все роли групп и каталогов, в которые входит объект, `false` должны быть возвращены. **Примечание.** Функция может быть вызвана пользователю только в том случае, если параметр `true` . |
 
 ## <a name="response"></a>Отклик
 
@@ -101,7 +104,7 @@ Content-type: application/json
 
 
 ##### <a name="response"></a>Отклик
-Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
