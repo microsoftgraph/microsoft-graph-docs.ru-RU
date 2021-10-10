@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d15ce53f063cf8b7ce3c9dcdc22951afc29186dd
-ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
+ms.openlocfilehash: 76bf80cedec4e1e6e3a45e1c791fa9ff746ea22c
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240896"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256447"
 ---
 # <a name="create-group"></a>Создание группы
 
@@ -18,7 +18,7 @@ ms.locfileid: "60240896"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание [группы](../resources/group.md) согласно инструкциям в тексте запроса. Можно создать одну из следующих групп:
+Создайте новую [группу](../resources/group.md) согласно инструкциям в тексте запроса. Можно создать одну из следующих групп.
 
 * Группа Microsoft 365 (единая группа)
 * Группа безопасности
@@ -45,9 +45,9 @@ POST /groups
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Обязательный. |
+| Имя       | Описание|
+|:---------------|:--------|
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -58,7 +58,7 @@ POST /groups
 | Свойство | Тип | Описание|
 |:---------------|:--------|:----------|
 | displayName | string | Имя, которое следует отобразить в адресной книге для группы. Обязательно. |
-| mailEnabled | boolean | Установите значение `true` для групп с включенной поддержкой почты. Обязательный. |
+| mailEnabled | boolean | Установите значение `true` для групп с включенной поддержкой почты. Обязательное поле. |
 | mailNickname | string | Почтовый псевдоним для группы (уникальный в организации). Максимальная длина: 64 символа. Это свойство может содержать только символы из [набора символов ASCII от 0 до 127](/office/vba/language/reference/user-interface-help/character-set-0127), за исключением следующих: ` @ () \ [] " ; : . <> , SPACE`. Обязательный. |
 | securityEnabled | boolean | Установите значение `true` для групп с поддержкой безопасности, включая группы Microsoft 365. Обязательно. **Примечание.** В группах, созданных с помощью портала Microsoft Azure, для свойства **securityEnabled** всегда устанавливается значение `true`.|
 
@@ -88,7 +88,8 @@ POST /groups
 
 ### <a name="example-1-create-a-microsoft-365-group"></a>Пример 1. Создание группы Microsoft 365
 
-В следующем примере создается группа Microsoft 365.
+В следующем примере создается группа Microsoft 365. Так как владельцы не указаны, вызывающий пользователь автоматически добавляется в качестве владельца группы.
+
 
 #### <a name="request"></a>Запрос
 
@@ -102,7 +103,6 @@ POST /groups
 ``` http
 POST https://graph.microsoft.com/beta/groups
 Content-type: application/json
-Content-length: 244
 
 {
   "description": "Self help community for golf",

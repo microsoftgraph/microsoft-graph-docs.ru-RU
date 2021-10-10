@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 8ca4dc403449f95f21328f0872c0dc1151468faf
-ms.sourcegitcommit: 0ec845f93eaa140ad833ba163c76c5308197a92f
+ms.openlocfilehash: b7aa417042622717e60e04dbb1050026681d161f
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60068596"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256524"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 
@@ -99,7 +99,7 @@ ms.locfileid: "60068596"
 | passwordCredentials | Коллекция [passwordCredential](passwordcredential.md)|Коллекция ключевых учетных данных, связанных с приложением. Значение NULL не допускается.|
 | publicClient | [publicClientApplication](publicclientapplication.md) | Указывает параметры для установленных клиентов, например классических или мобильных устройств. |
 | publisherDomain | String | Проверенный домен издателя для приложения. Только для чтения. Поддерживает `$filter` (`eq`, `ne`, `ge`, `le`, `startsWith`).|
-| requiredResourceAccess |Коллекция [requiredResourceAccess](requiredresourceaccess.md)| Указывает ресурсы, к которым приложению необходимо получить доступ. В этом свойстве также указывается набор областей разрешений OAuth и ролей приложения, необходимых для каждого из этих ресурсов. Эта настройка доступа к необходимым ресурсам определяет порядок предоставления согласия. Значение null не допускается. <br><br>Поддерживает `$filter` (`eq`, `NOT`, `ge`, `le`).|
+| requiredResourceAccess |Коллекция [requiredResourceAccess](requiredresourceaccess.md)| Указывает ресурсы, к которым приложению необходимо получить доступ. В этом свойстве также указывается набор делегированных разрешений и ролей приложения, необходимых для каждого из этих ресурсов. Эта настройка доступа к необходимым ресурсам определяет порядок предоставления согласия. Можно настроить не более 50 служб ресурсов (API). С середины октября 2021 г. общее количество необходимых разрешений не должно превышать 400. Значение null не допускается. <br><br>Поддерживает `$filter` (`eq`, `NOT`, `ge`, `le`).|
 | signInAudience | String | Указывает, учетные записи Майкрософт, которые поддерживаются для текущего приложения. Возможные значения: `AzureADMyOrg`, `AzureADMultipleOrgs`, `AzureADandPersonalMicrosoftAccount` (используется по умолчанию) и `PersonalMicrosoftAccount`. Дополнительные сведения см. в [таблице ниже](#signinaudience-values). <br><br>Поддерживает `$filter` (`eq`, `ne`, `NOT`).|
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | Указывает параметры для одностраничного приложения, в том числе URL-адреса выхода и URI перенаправления для кодов авторизации и маркеров доступа. |
 | tags |Коллекция String| Настраиваемые строки, которые можно использовать для классификации и определения приложения. Значение null не допускается.<br><br>Поддерживает `$filter` (`eq`, `NOT`, `ge`, `le`, `startsWith`).|

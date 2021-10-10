@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5e9df2c581b48d5e937202d829c0576866ca6abc
-ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
+ms.openlocfilehash: 6d466725511bb65beafd22ae406206f6891f0d17
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240966"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256552"
 ---
 # <a name="create-group"></a>Создание группы
 
@@ -43,9 +43,9 @@ POST /groups
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Обязательный. |
+| Имя       |Описание|
+|:---------------|:----------|
+| Авторизация  |Bearer {token}. Обязательный. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -85,7 +85,7 @@ POST /groups
 
 ### <a name="example-1-create-a-microsoft-365-group"></a>Пример 1. Создание группы Microsoft 365
 
-В следующем примере создается группа Microsoft 365.
+В следующем примере создается группа Microsoft 365. Так как владельцы не указаны, вызывающий пользователь автоматически добавляется в качестве владельца группы.
 
 #### <a name="request"></a>Запрос
 
@@ -98,7 +98,6 @@ POST /groups
 ``` http
 POST https://graph.microsoft.com/v1.0/groups
 Content-type: application/json
-Content-length: 244
 
 {
   "description": "Self help community for library",
