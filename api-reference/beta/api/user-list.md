@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 2e808cdb3d877a796e1a593fb5665f91c212e072
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 062079f18f7eb03912aaf09614211eeb64f42964
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508979"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256419"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 
@@ -32,6 +32,8 @@ ms.locfileid: "59508979"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложения | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
+Гостевые пользователи не могут вызывать этот API. Дополнительные сведения о разрешениях для участников и гостевых пользователей см. в статье [Разрешения пользователя по умолчанию в Azure Active Directory](/azure/active-directory/fundamentals/users-default-permissions#member-and-guest-users).
+
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +53,7 @@ GET /users
 
 | Заголовок | Значение |
 |:------ |:----- |
-| Авторизация | Bearer {токен} (обязательный)  |
+| Авторизация | Bearer {token} (обязательный)  |
 | ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search` или определенном использовании `$filter`. Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries). |
 
 ## <a name="request-body"></a>Текст запроса

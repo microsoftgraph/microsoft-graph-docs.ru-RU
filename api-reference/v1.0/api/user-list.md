@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ae42f833427eb270034d35cd0096f4426763d4b7
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 7edf028b5a612ae1ce489ed7a4c2cf07f67420d3
+ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59764431"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60256531"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 
@@ -27,6 +27,8 @@ ms.locfileid: "59764431"
 |Делегированные (рабочая или учебная учетная запись) | User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложения | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
+Гостевые пользователи не могут вызывать этот API. Дополнительные сведения о разрешениях для участников и гостевых пользователей см. в статье [Разрешения пользователя по умолчанию в Azure Active Directory](/azure/active-directory/fundamentals/users-default-permissions#member-and-guest-users).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +50,7 @@ GET /users
 
 | Заголовок        | Значение                      |
 |:--------------|:---------------------------|
-| Авторизация | Bearer {токен} (обязательный)  |
+| Авторизация | Bearer {token} (обязательный)  |
 | ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search`, применении `$filter` с параметром запроса `$orderby` или применении `$filter` с логическим оператором `endsWith`. В нем используется индекс, который может не соответствовать последним изменениям объекта. |
 
 ## <a name="request-body"></a>Текст запроса
