@@ -1,16 +1,16 @@
 ---
 title: Создание accessPackageResourceRoleScope
 description: Создайте новый accessPackageResourceRoleScope для добавления роли ресурса в пакет доступа.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6b4abe2f9c2c0060e97560a26c22d19ed53e01b7
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 7e7d476c38f8e46c2fd02d2072abb5bd501853aa
+ms.sourcegitcommit: f7956d25472a55af03be83b6ab986a7149a7ac88
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53466966"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "60270357"
 ---
 # <a name="create-accesspackageresourcerolescope"></a>Создание accessPackageResourceRoleScope
 
@@ -28,7 +28,7 @@ ms.locfileid: "53466966"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | EntitlementManagement.ReadWrite.All |
+| Для приложения                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/accessPackage
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -104,7 +104,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -132,7 +132,9 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса.  Ресурс пакета доступа для сайта уже должен быть добавлен в каталог пакетов доступа, содержащий этот пакет доступа.
+Ниже приводится пример запроса некорнного ресурса области.  Ресурс пакета доступа для сайта уже должен быть добавлен в каталог пакетов доступа, содержащий этот пакет доступа.
+
+Если объект [accessPackageResourceScope,](../resources/accesspackageresourcescope.md) полученный из [](accesspackagecatalog-list-accesspackageresources.md) предыдущего запроса на список ресурсов пакета доступа, имеет ресурс в качестве корневой области (для этого установлено **значение isRootScope),** включив свойство `true` **isRootScope** в объект **accessPackageResourceScope** запроса.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -181,7 +183,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

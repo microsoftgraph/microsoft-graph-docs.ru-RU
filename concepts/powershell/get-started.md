@@ -3,12 +3,12 @@ title: Начало работы с SDK Microsoft Graph PowerShell
 description: Приступить к работе с microsoft Graph PowerShell SDK, используя его для выполнения некоторых базовых задач.
 ms.localizationpriority: medium
 author: jasonjoh
-ms.openlocfilehash: 6b0787861014985d1c411b651fa44ca45ff533e6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 623c034622054150ff6b58b97e063f3e833489de
+ms.sourcegitcommit: f7956d25472a55af03be83b6ab986a7149a7ac88
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139067"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "60270315"
 ---
 # <a name="get-started-with-the-microsoft-graph-powershell-sdk"></a>Начало работы с SDK Microsoft Graph PowerShell
 
@@ -92,7 +92,7 @@ $user = Get-MgUser -Filter "displayName eq 'Megan Bowen'"
 $user.DisplayName
 ```
 
-### <a name="list-the-users-joined-teams"></a>Список присоединились к пользователю Teams
+### <a name="list-the-users-joined-teams"></a>Список присоединяемой команды пользователя
 
 Теперь используйте ID пользователя в качестве параметра для `Get-MgUserJoinedTeam` команды.
 
@@ -100,19 +100,15 @@ $user.DisplayName
 Get-MgUserJoinedTeam -UserId $user.Id
 ```
 
-Так же, `Get-MgUser` как и в команде, это дает список Teams. Выберите один из присоединяемого пользователя Teams и используйте его для `DisplayName` фильтрации списка.
+Так же, `Get-MgUser` как и команда, это дает список групп. Выберите одну из присоединились команды пользователя и скопируйте `Id` его .
 
-```powershell
-$team = Get-MgUserJoinedTeam -UserId $user.Id -Filter "displayName eq 'Sales and Marketing'"
-```
-
-### <a name="list-team-channels"></a>Каналы list Team
+### <a name="list-team-channels"></a>Списки каналов группы
 
 Теперь используйте ID команды в качестве параметра для команды, следуя аналогичной схеме перечисления всех каналов, затем фильтруя список, чтобы получить нужный `Get-MgTeamChannel` канал.
 
 ```powershell
 Get-MgTeamChannel -TeamId $team.Id
-$channel = Get-MgTeamChannel -TeamId $team.Id -Filter "displayName eq 'General'"
+$channel = Get-MgTeamChannel -TeamId ID_FROM_PREVIOUS_STEP -Filter "displayName eq 'General'"
 ```
 
 ### <a name="send-a-message"></a>Отправка сообщения

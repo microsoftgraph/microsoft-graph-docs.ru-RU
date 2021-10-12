@@ -1,16 +1,16 @@
 ---
 title: Создание accessPackageAssignmentRequest
 description: Создание нового accessPackageAssignmentRequest.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 999adc6cf936f1e94a5c45bf4ca79c4841a9f4b3d6316f798a8ca377b308323d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d59a2bd74b79eddba33fff4432644a2e23f9974a
+ms.sourcegitcommit: f7956d25472a55af03be83b6ab986a7149a7ac88
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57051339"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "60270354"
 ---
 # <a name="create-accesspackageassignmentrequest"></a>Создание accessPackageAssignmentRequest
 
@@ -28,7 +28,7 @@ ms.locfileid: "57051339"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | EntitlementManagement.ReadWrite.All |
+| Для приложения                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -64,7 +64,7 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 Если это запрос, то впоследствии создается `AdminAdd` [accessPackageAssignment](../resources/accesspackageassignment.md) и, при необходимости, [accessPackageSubject.](../resources/accesspackagesubject.md) Вы можете найти тех, кто использует параметры запроса при [перечислении accessPackageAssignments](accesspackageassignment-list.md).
 
 ## <a name="examples"></a>Примеры
-### <a name="example-1-admin-requests-a-direct-assignment-for-a-user"></a>Пример 1. Администратор запрашивает прямое назначение для пользователя
+### <a name="example-1-admin-requests-a-direct-assignment-for-a-user-already-in-the-directory"></a>Пример 1. Администратор запрашивает прямое назначение для пользователя уже в каталоге
 #### <a name="request"></a>Запрос
 
 Ниже приводится пример запроса на прямое назначение, в котором администратор запрашивает создание назначения для пользователя. Так как [accessPackageSubject](../resources/accesspackagesubject.md) может еще не существовать, значение **targetID** — это объектный ID назначенного пользователя, значение **accessPackageId** — это желаемый пакет доступа для этого пользователя, а значение **assignmentPolicyId** — это политика прямого назначения в этом пакете доступа.
@@ -110,7 +110,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -201,7 +201,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -414,6 +414,59 @@ Content-type: application/json
     "requestStatus": "Accepted"
 }
 ```
+
+### <a name="example-5-admin-requests-a-direct-assignment-for-a-user-not-yet-in-the-directory"></a>Пример 5. Администратор запрашивает прямое назначение для пользователя, еще не в каталоге
+#### <a name="request"></a>Запрос
+
+Ниже приводится пример запроса на прямое назначение, в котором администратор запрашивает создание назначения для пользователя, для пользователя, который не существует в каталоге. Значение **accessPackageId** — это желаемый пакет доступа для этого пользователя, а значение **assignmentPolicyId** — это политика прямого назначения в этом пакете доступа.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_5"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests
+Content-type: application/json
+
+{
+  "requestType": "AdminAdd",
+  "accessPackageAssignment":{
+     "target": {
+        "email": "user@contoso.com"
+     },
+     "assignmentPolicyId":"2264bf65-76ba-417b-a27d-54d291f0cbc8",
+     "accessPackageId":"a914b616-e04e-476b-aa37-91038f0b165b"
+  }
+}
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+
+  "id": "7e382d02-4454-436b-b700-59c7dd77f466",
+  "requestType": "AdminAdd",
+  "requestState": "Submitted",
+  "requestStatus": "Accepted",
+  "isValidationOnly": false
+}
+```
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
