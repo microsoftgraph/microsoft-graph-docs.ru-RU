@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: aec134e10d2c2d2768d07ea2a16003af640852e5
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: a04f4d1f902fffc2f8a9f1eb268634c4f059a6cc
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220516"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289170"
 ---
 # <a name="update-teamsapp"></a>Обновление teamsApp
 
@@ -28,9 +28,11 @@ ms.locfileid: "60220516"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)|
 |:----------------------------------     |:-------------|
-| Делегированные (рабочая или учебная учетная запись)     | AppCatalog.Submit, AppCatalog.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All** |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается|
 | Для приложений                            | Не поддерживается. |
+
+> **Примечание.** Разрешения, помеченные **, не используются и не должны использоваться.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,7 +52,7 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 
 | Заголовок        | Значение           |
 |:--------------|:--------------  |
-| Авторизация | Bearer {токен}. Обязательный.  |
+| Авторизация | Bearer {token}. Обязательный.  |
 | Content-Type  | application/zip. Обязательно. |
 
 ## <a name="request-body"></a>Текст запроса

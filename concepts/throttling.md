@@ -4,12 +4,12 @@ description: Регулирование позволяет ограничить 
 author: davidmu1
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 655509eec37b9010596d4418e2873ad85f7345c8
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 38afc3388825b0b258bb51e6bcd6881600e1736f
+ms.sourcegitcommit: f7956d25472a55af03be83b6ab986a7149a7ac88
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508049"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "60270364"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Руководство по регулированию Microsoft Graph
 
@@ -83,7 +83,7 @@ Retry-After: 2.128
 
 ## <a name="best-practices-to-avoid-throttling"></a>Рекомендации по избежанию регулирования
 
-Шаблоны программирования, например постоянные опросы на ресурсе для проверки обновлений и регулярное сканирование коллекций ресурсов для проверки новых или удаленных ресурсов, чаще ведут к регулированию приложений и ухудшению общей производительности. Вместо этого необходимо по возможности использовать [отслеживание изменений](delta-query-overview.md) и [уведомления об изменениях](webhooks.md).
+Шаблоны программирования, такие как постоянные опросы на ресурсе для проверки обновлений и регулярное сканирование коллекций ресурсов для проверки наличия новых или удаленных ресурсов, чаще ведут к регулированию приложений и снижению общей производительности. Вместо этого следует использовать [отслеживание изменений](delta-query-overview.md) и [уведомления об изменениях](webhooks.md), когда они доступны.
 
 >[!NOTE]
 >Подробные сведения — в [рекомендациях по обнаружению файлов и определению изменений в масштабе](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online).
@@ -222,13 +222,13 @@ Microsoft Graph позволяет получать доступ к данным
 | GET | `applications/{id}/extensionProperties` | 2 | 0 |
 | GET | `contracts` | 3 | 0 |
 | POST | `directoryObjects/getByIds` |  3 | 0 |
-| GET | `domains/{id}/domainNameReferences` | 4 | 0 |
+| GET | `domains/{id}/domainNameReferences` | 4  | 0 |
 | POST | `getObjectsById` | 3 | 0 |
 | GET | `groups/{id}/members` | 3 | 0 |
 | GET | `groups/{id}/transitiveMembers` | 5 | 0 |
-| POST | `isMemberOf` | 4 | 0 |
-| POST | `me/checkMemberGroups` | 4 | 0 |
-| POST | `me/checkMemberObjects` | 4 | 0 |
+| POST | `isMemberOf` | 4  | 0 |
+| POST | `me/checkMemberGroups` | 4  | 0 |
+| POST | `me/checkMemberObjects` | 4  | 0 |
 | POST | `me/getMemberGroups` | 2 | 0 |
 | POST | `me/getMemberObjects` | 2 | 0 |
 | GET | `me/licenseDetails` | 2 | 0 |
@@ -273,7 +273,7 @@ Microsoft Graph позволяет получать доступ к данным
 
 ##### <a name="throttled-responses-requests"></a>Регулируемые запросы откликов
 
-- **x-ms-throttle-scope**. Например: `Tenant_Application/ReadWrite/9a3d526c-b3c1-4479-ba74-197b5c5751ae/0785ef7c-2d7a-4542-b048-95bcab406e0b`. Указывает область регулирования в следующем формате — `<Scope>/<Limit>/<ApplicationId>/<TenantId|UserId|ResourceId>`:
+- **x-ms-throttle-scope** - eg. `Tenant_Application/ReadWrite/9a3d526c-b3c1-4479-ba74-197b5c5751ae/0785ef7c-2d7a-4542-b048-95bcab406e0b`. Указывает область регулирования в следующем формате `<Scope>/<Limit>/<ApplicationId>/<TenantId|UserId|ResourceId>`:
   - Scope: (строка, обязательно)
     - Tenant_Application — все запросы определенного клиента для текущего приложения.
     - Tenant — все запросы для текущего клиента независимо от приложения.
@@ -291,10 +291,9 @@ Microsoft Graph позволяет получать доступ к данным
 
 ### <a name="identity-and-access-reports-service-limits"></a>Ограничения службы отчетов удостоверений и доступа
 
-| Тип запроса | Ограничение на клиента для всех приложений | Ограничение на приложение по клиенту |
-| ------------ | ----------------------------- | ------------------------ |
-| POST, PUT, DELETE, PATCH | 200 запросов за 20 секунд | 100 запросов за 20 секунд |
-| Любой | 2000 запросов за 20 секунд | 1000 запросов за 20 секунд |
+| Тип запроса |  Ограничение на приложение по клиенту |
+| ------------ | ------------------------ |
+| Любой | 60 запросов за 60 секунд |
 
 Указанные выше ограничения действуют для следующих ресурсов:
 

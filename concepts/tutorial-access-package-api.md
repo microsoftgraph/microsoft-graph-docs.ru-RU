@@ -4,12 +4,12 @@ description: Узнайте, как управлять доступом к ре�
 author: davidmu1
 ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: af382ef97907d767e443655265d48bc0fa30f375
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ef171601ca5d0b91ddfd7ff58ca7ace1bc47ac1f
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117636"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289121"
 ---
 # <a name="tutorial-manage-access-to-resources-in-active-directory-entitlement-management-using-microsoft-graph-apis"></a>Руководство. Управление доступом к ресурсам в управлении правами Active Directory с помощью API Graph Microsoft
 
@@ -19,7 +19,7 @@ ms.locfileid: "59117636"
 
 >**Примечание:** Объекты отклика, показанные в этом руководстве, могут быть сокращены для чтения. 
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Чтобы успешно завершить этот учебник, убедитесь, что у вас есть необходимые предпосылки:
 - Управление правами Azure AD требует определенных лицензий. Дополнительные сведения см. в [дополнительных сведениях о требованиях к лицензии.](/azure/active-directory/governance/entitlement-management-overview#license-requirements) В вашем клиенте требуются следующие лицензии:
@@ -547,7 +547,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 #### <a name="request"></a>Запрос
 
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignments?$filter=accessPackageAssignmentPolicy/Id eq 'db440482-1210-4a60-9b55-3ac7a72f63ba'
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignments?$filter=accessPackageAssignmentPolicy/Id eq 'db440482-1210-4a60-9b55-3ac7a72f63ba'&$expand=target,accessPackageAssignmentResourceRoles
 ```
 
 #### <a name="response"></a>Отклик
@@ -565,7 +565,18 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
       "assignmentStatus": "Delivered",
       "assignmentState": "Delivered",
       "isExtended": false,
-      "expiredDateTime": null
+      "expiredDateTime": null,
+      "target": {
+         "id": "8586ddc8-0ff7-4c24-9c79-f192bc3566e3",
+         "objectId": "2bc42425-6dc5-4f2a-9ebb-7a7464481eb0"
+      },
+      "accessPackageAssignmentResourceRoles": [
+         {
+            "id": "bdb7e0a0-a927-42ab-bf30-c5b5533dc54a",
+            "originSystem": "AadGroup",
+            "status": "Fulfilled"
+         }
+      ]
     }
   ]
 }
@@ -725,12 +736,12 @@ No Content - 204
 В этом руководстве вы использовали множество API для выполнения задач. Ознакомьтесь со ссылкой на API для этих API, чтобы узнать больше о том, что могут делать API.
 
 
-- [Работа с API управления правами Azure AD](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta)
-- [accessPackageCatalog](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta)
-- [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta)
-- [accessPackage](/graph/api/resources/accesspackage?view=graph-rest-beta)
-- [accessPackageResourceRoleScope](/graph/api/resources/accesspackageresourcerolescope?view=graph-rest-beta)
-- [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta)
-- [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta)
-- [group](/graph/api/resources/group?view=graph-rest-1.0)
-- [user](/graph/api/resources/user?view=graph-rest-1.0)
+- [Работа с API управления правами Azure AD](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta&preserve-view=true)
+- [accessPackageCatalog](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true)
+- [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta&preserve-view=true)
+- [accessPackage](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true)
+- [accessPackageResourceRoleScope](/graph/api/resources/accesspackageresourcerolescope?view=graph-rest-beta&preserve-view=true)
+- [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta&preserve-view=true)
+- [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true)
+- [group](/graph/api/resources/group)
+- [user](/graph/api/resources/user?)

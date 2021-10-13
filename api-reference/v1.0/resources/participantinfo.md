@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d1d134eec6e6bef50eb7a97917a2f8aaa3b91148
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1cb408bf675668fb82374e4cfca5e67df2580a0e
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104077"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289884"
 ---
 # <a name="participantinfo-resource-type"></a>тип ресурса participantInfo
 
@@ -22,11 +22,12 @@ ms.locfileid: "59104077"
 
 | Свойство       | Тип                          | Описание                                                                                                                                                |
 |:---------------|:------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| countryCode    | String                        | Код страны ISO 3166-1 Alpha-2 с наилучшими оценками физического расположения участника в начале вызова. Только для чтения.                             |
+| countryCode    | Строка                        | Код страны ISO 3166-1 Alpha-2 с наилучшими оценками физического расположения участника в начале вызова. Только для чтения.                             |
 | endpointType   | Строка                        | Тип конечной точки, используемой участником. Возможные значения: `default`, `skypeForBusiness` или `skypeForBusinessVoipPhone`. Только для чтения.              |
 | identity       | [identitySet](identityset.md) | [IdentitySet,](identityset.md) связанный с этим участником. Только для чтения.                                                                             |
-| languageId     | String                        | Строка языковой культуры. Только для чтения.                                                                                                                    |
+| languageId     | Строка                        | Строка языковой культуры. Только для чтения.                                                                                                                    |
 | регион         | Строка                        | Домашний регион участника. Это может быть страна, континент или более крупный географический регион. Это не меняется в зависимости от текущего физического расположения участника. Только для чтения. |
+| participantId    | Строка                          | ID участника участника. Только для чтения.    |
 
 
 ## <a name="json-representation"></a>Представление JSON
@@ -39,7 +40,8 @@ ms.locfileid: "59104077"
     "countryCode",
     "endpointType",
     "languageId",
-    "region"
+    "region",
+    "participantId"
   ],
   "@odata.type": "microsoft.graph.participantInfo"
 }-->
@@ -49,7 +51,8 @@ ms.locfileid: "59104077"
   "identity": { "@odata.type": "#microsoft.graph.identitySet" },
   "endpointType": "default | skypeForBusiness | skypeForBusinessVoipPhone",
   "languageId": "String",
-  "region": "String"
+  "region": "String",
+  "participantId": "String"
 }
 ```
 

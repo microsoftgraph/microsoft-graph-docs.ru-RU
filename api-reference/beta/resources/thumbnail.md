@@ -2,16 +2,16 @@
 author: JeremyKelley
 description: Тип ресурса thumbnail представляет эскиз изображения, видео, документа или любого другого элемента, представленного как растровое изображение.
 ms.date: 09/10/2017
-title: Thumbnail
-localization_priority: Normal
+title: Эскиз
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 7a4a2254b50fd074622990db478cefdbf3cfe091
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0d5f9b3ced926820873800ba160cc5da8d368ca4
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973542"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60288456"
 ---
 # <a name="thumbnail-resource-type"></a>Тип ресурса thumbnail
 
@@ -20,6 +20,16 @@ ms.locfileid: "47973542"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Тип ресурса **thumbnail** представляет эскиз изображения, видео, документа или любого другого элемента, представленного как растровое изображение.
+
+## <a name="properties"></a>Свойства
+
+| Свойство     | Тип   | Описание                                                                                                                 |
+| :----------- | :----- | :-------------------------------------------------------------------------------------------------------------------------- |
+| height       | Int32  | Высота эскиза в пикселях.                                                                                     |
+| sourceItemId | String | Уникальный идентификатор элемента, предоставившего эскиз. Доступен только при запросе эскиза папки. |
+| url          | String | URL-адрес, используемый для получения содержимого эскиза.                                                                                |
+| width        | Int32  | Ширина эскиза в пикселях.                                                                                      |
+| содержимое | Поток | Поток содержимого для эскиза. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -33,25 +43,15 @@ ms.locfileid: "47973542"
 
 ```json
 {
-  "height": 1024,
-  "sourceItemId": "string",
-  "url": "string",
-  "width": 1024,
+  "height": "Int32",
+  "sourceItemId": "String",
+  "url": "String",
+  "width": "Int32",
 
   /* relationships */
-  "content": "stream"
+  "content": "Stream"
 }
 ```
-
-## <a name="properties"></a>Свойства
-
-| Свойство     | Тип   | Описание                                                                                                                 |
-| :----------- | :----- | :-------------------------------------------------------------------------------------------------------------------------- |
-| height       | Int32  | Высота эскиза в пикселях.                                                                                     |
-| sourceItemId | String | Уникальный идентификатор элемента, предоставившего эскиз. Доступен только при запросе эскиза папки. |
-| url          | String | URL-адрес, используемый для получения содержимого эскиза.                                                                                |
-| width        | Int32  | Ширина эскиза в пикселях.                                                                                      |
-| содержимое | Поток | Поток содержимого для эскиза. |
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

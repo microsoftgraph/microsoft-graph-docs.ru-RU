@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 594df9389c42de62e87064881f9dc1f41d0a9fe9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 44a0cbddfd7a0be3b2a85475d7a8ad8455084fa6
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056923"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289849"
 ---
 # <a name="create-channel"></a>Создание канала
 
@@ -24,11 +24,11 @@ ms.locfileid: "59056923"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | Channel.Create, Group.ReadWrite.All **, Directory.ReadWrite.All** |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Channel.Create.Group*, Channel.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application | Channel.Create.Group,*Channel.Create, Teamwork.Migrate.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
 
-> **Примечания.** Разрешения, отмеченные * использование [согласия, определенного для ресурсов.]( https://aka.ms/teams-rsc)
+> **Примечания.** Разрешения, отмеченные * использование [согласия, определенного для ресурсов.]( https://aka.ms/teams-rsc) Разрешения, отмеченные **, не используются и не должны использоваться.
 >
 > Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 >
@@ -44,7 +44,7 @@ POST /teams/{team-id}/channels
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -178,7 +178,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже показан пример отклика.
+Ниже приводится пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -250,7 +250,7 @@ Content-Type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже показан пример отклика. Заглавный заглавный пункт Content-Location в ответе указывает путь к каналу, который будет задан.
+Ниже приводится пример отклика. Заглавный заглавный пункт Content-Location в ответе указывает путь к каналу, который будет задан.
 После предварительного использования этот канал можно использовать для [импорта сообщений.](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
 <!-- {
   "blockType": "response",

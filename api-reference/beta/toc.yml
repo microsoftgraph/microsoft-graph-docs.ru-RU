@@ -533,7 +533,7 @@ items:
                 href: api/profile-get.md
               - name: Удаление профиля пользователя
                 href: api/profile-delete.md
-          - name: Командная работа
+          - name: Teamwork
             items:
               - name: Установленное приложение
                 href: resources/teamsappinstallation.md
@@ -888,7 +888,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: List
+                      - name: Список
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenissuancepolicies.md
@@ -897,7 +897,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: List
+                      - name: Список
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1081,7 +1081,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: List
+                      - name: Список
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: Удалить
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -1090,7 +1090,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: List
+                      - name: Список
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Удалить
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -1099,7 +1099,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: List
+                      - name: Список
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenissuancepolicies.md
@@ -1108,7 +1108,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: List
+                      - name: Список
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1340,9 +1340,9 @@ items:
                 href: api/event-delta.md
               - name: Представление напоминаний
                 href: api/user-reminderview.md
-          - name: Категория
+          - name: Category
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -1500,7 +1500,7 @@ items:
                 items:
                   - name: Сеанс
                     href: resources/callrecords-session.md
-                  - name: List
+                  - name: Список
                     href: api/callrecords-session-list.md
               - name: Вызовы PSTN
                 items:
@@ -1862,7 +1862,7 @@ items:
                     href: api/printjob-cancel.md
                   - name: Прервать
                     href: api/printjob-abort.md
-                  - name: Перенаправление
+                  - name: Redirect
                     href: api/printjob-redirect.md
               - name: Операция печати
                 href: resources/printoperation.md
@@ -9784,7 +9784,7 @@ items:
               - name: 'Область, поддерживаемая облачным КОМПЬЮТЕРом'
                 href: resources/cloudpcsupportedregion.md
                 items:
-                  - name: List
+                  - name: Список
                     href: api/virtualendpoint-list-supportedregions.md
           - name: Обновления устройств (предварительная версия)
             displayName: Windows updates
@@ -10233,7 +10233,7 @@ items:
                 href: api/educationassignmentdefaults-get.md
               - name: Обновление по умолчанию назначения
                 href: api/educationassignmentdefaults-update.md
-          - name: Категория
+          - name: Category
             href: resources/educationcategory.md
             items:
               - name: Создание категории
@@ -10353,7 +10353,7 @@ items:
                 href: api/schemaextension-update.md
               - name: Удаление расширения схемы
                 href: api/schemaextension-delete.md
-      - name: Файлы
+      - name: Files
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
           - name: Обзор
@@ -10679,7 +10679,7 @@ items:
                 href: api/dynamics-vendor-update.md
               - name: Удаление поставщика
                 href: api/dynamics-vendor-delete.md
-      - name: Удостоверения и доступ
+      - name: Удостоверение и доступ
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: Обзор
@@ -12093,7 +12093,7 @@ items:
                   - name: Назначение пакета доступа
                     href: resources/accesspackageassignment.md
                     items:
-                      - name: List
+                      - name: Список
                         href: api/accesspackageassignment-list.md
                       - name: Фильтр текущего пользователя
                         href: api/accesspackageassignment-filterbycurrentuser.md
@@ -12426,7 +12426,7 @@ items:
                 href: api/attachment-delete.md
           - name: Категории
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -12732,7 +12732,7 @@ items:
                     href: api/educationalactivity-update.md
                   - name: Delete
                     href: api/educationalactivity-delete.md
-              - name: Адрес электронной почты
+              - name: Адрес электронной почты;
                 items:
                   - name: Электронная почта элемента
                     href: resources/itememail.md
@@ -13031,7 +13031,7 @@ items:
                 href: api/opentypeextension-get.md
           - name: Категории
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -13122,7 +13122,7 @@ items:
                   - name: Подробный сводка "Опираясь на стороне"
                     href: resources/relyingpartydetailedsummary.md
                     items:
-                      - name: List
+                      - name: Список
                         href: api/relyingpartydetailedsummary-list.md
               - name: Вход в приложение
                 items:
@@ -13417,7 +13417,7 @@ items:
       - name: Поиск
         displayname: Microsoft Search API
         items:
-          - name: Query
+          - name: Запрос
             items:
               - name: Обзор
                 href: resources/search-api-overview.md
@@ -13624,7 +13624,7 @@ items:
             href: resources/sharepoint.md
           - name: Сайты
             items:
-              - name: Сайт
+              - name: Site
                 href: resources/site.md
               - name: Получение сайта
                 href: api/site-get.md
@@ -13654,6 +13654,8 @@ items:
                 href: api/list-create.md
               - name: Список дочерних сайтов
                 href: api/site-list-subsites.md
+              - name: Поиск сайтов
+                href: api/site-search.md
               - name: Разрешения
                 items:
                   - name: Разрешение
@@ -13670,7 +13672,7 @@ items:
                     href: api/site-delete-permission.md
           - name: Списки
             items:
-              - name: List
+              - name: Список
                 href: resources/list.md
               - name: Получить списки на сайте
                 href: api/list-list.md
@@ -13784,7 +13786,7 @@ items:
               - name: Set
                 href: resources/termstore-set.md
                 items:
-                  - name: List
+                  - name: Список
                     href: api/termstore-group-list-sets.md
                   - name: Список дочерних элементов
                     href: api/termstore-term-list-children.md
@@ -14323,7 +14325,7 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: Получение
                     href: api/offershiftrequest-get.md
-                  - name: List
+                  - name: Список
                     href: api/offershiftrequest-list.md
                   - name: Утвердить
                     href: api/offershiftrequest-approve.md
@@ -14604,7 +14606,7 @@ items:
                     href: api/attachment-delete.md
               - name: Категории
                 items:
-                  - name: Категория
+                  - name: Category
                     href: resources/outlookcategory.md
                   - name: Перечисление категорий
                     href: api/outlookuser-list-mastercategories.md

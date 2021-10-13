@@ -5,21 +5,21 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5d1293a83b2fc8130b15fb1a6da7cd36a8a9985e
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: bd8e2e542730da44cf2ab010903c718358c11070
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59997093"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290115"
 ---
 # <a name="get-organizationalbranding"></a>Получение organizationalBranding
 Пространство имен: microsoft.graph
 
-Извлечение объекта организационного брендинга по умолчанию, если заготвка **Accept-Language** не указана. Если объект организационного брендинга не создан, этот метод возвращает `404 Not Found` ошибку.
+Извлечение объекта организационного брендинга по умолчанию, если заглавная головка **Accept-Language** установлена или `0` `default` . Если по умолчанию не существует объекта организационного брендинга, этот метод возвращает `404 Not Found` ошибку.
 
-Если **заготвка Accept-Language** задана, этот метод извлекает брендинг для указанного локального языка.
+Если загон **Accept-Language** задан существующему локальному языку, определенному по значению его **id,** этот метод извлекает брендинг для указанного локального языка.
 
-Этот метод извлекает только свойства, не веские, например имя **пользователяHintText** и **signInPageText**. Чтобы получить потоковые типы брендинга по умолчанию, например **bannerLogo** и **backgroundImage,** используйте [метод GET organizationalBrandingLocalization.](organizationalbrandinglocalization-get.md) ID **для** локализации по умолчанию может быть `0` или `default` .
+Этот метод извлекает только свойства, не веские, например имя **пользователяHintText** и **signInPageText**. Чтобы получить потоковые типы брендинга по умолчанию, например **bannerLogo** и **backgroundImage,** используйте [метод GET organizationalBrandingLocalization.](organizationalbrandinglocalization-get.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -47,8 +47,8 @@ GET /organization/{organizationId}/branding
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
-|Принять-Язык|Допустимый локал ISO 639-1. Необязательно.|
+|Авторизация|Bearer {token}. Обязательный.|
+|Принять-Язык|Допустимый локал ISO 639-1. Обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -74,6 +74,7 @@ GET /organization/{organizationId}/branding
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/organization/84841066-274d-4ec0-a5c1-276be684bdd3/branding
+Accept-Language: 0
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-organizationalbranding-csharp-snippets.md)]
@@ -143,6 +144,7 @@ Content-Type: application/json
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
+Accept-Language: 0
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-organizationalbranding-error-csharp-snippets.md)]
@@ -177,7 +179,7 @@ HTTP/1.1 404 Not Found
 
 ### <a name="example-3-get-organizational-branding-for-the-french-locale"></a>Пример 3. Получить организационный брендинг для французского языка
 
-В следующем примере используется заглавный заготок **Accept-Language,** который указывает для получения брендинг локализации.
+В следующем примере для получения брендинга локализации используется заглавная головка **Accept-Language.** `fr-FR`
 
 #### <a name="request"></a>Запрос
 
@@ -230,8 +232,8 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#branding",
-    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/$/Microsoft.DirectoryServices.Organization('84841066-274d-4ec0-a5c1-276be684bdd3')/branding/fr",
-    "id": "fr",
+    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/$/Microsoft.DirectoryServices.Organization('84841066-274d-4ec0-a5c1-276be684bdd3')/branding/fr-FR",
+    "id": "fr-FR",
     "backgroundColor": "#FFFF33",
     "backgroundImageRelativeUrl": null,
     "bannerLogoRelativeUrl": null,
@@ -244,7 +246,7 @@ Content-Type: application/json
 
 ### <a name="example-4-get-the-bannerlogo-for-the-default-locale"></a>Пример 4. Получить bannerLogo для локального значения по умолчанию
 
-В следующем примере **возвращается объект bannerLogo** для локального значения по умолчанию. Вы можете указать **id** как `default` или в `0` URL-адресе запроса. Если объект не установлен, запрос возвращает пустой ответ.
+В следующем примере **возвращается объект bannerLogo** для локального значения по умолчанию. Для получения типов объектов Stream, например **bannerLogo,** используйте [get organizationalBrandingLocalizationmethod](organizationalbrandinglocalization-get.md). Вы можете указать значение **id** как `default` или в `0` URL-адресе запроса. Если свойство не установлено, запрос возвращает пустой ответ.
 
 #### <a name="request"></a>Запрос
 
@@ -276,9 +278,9 @@ Content-Type: image/*
 <Image>
 ```
 
-### <a name="example-5-get-the-bannerlogo-for-the-fr-fr-locale"></a>Пример 5. Получить bannerLogo для fr-FR-locale
+### <a name="example-5-get-the-bannerlogo-for-the-default-locale-when-it-is-not-set"></a>Пример 5. Получить bannerLogo для локального значения по умолчанию, если он не установлен
 
-В следующем примере возвращается **объект bannerLogo** для локального `fr-FR` объекта, чей bannerLogo не установлен.
+В следующем примере возвращается **объект bannerLogo,** который не был задат для локального значения по умолчанию.
 
 #### <a name="request"></a>Запрос
 
