@@ -5,12 +5,12 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6420b60d026683ffda9c67dddf450073a98d6c13
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 92443e8fb5f6254f819722d464fd46fff49f3cd6
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256496"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289891"
 ---
 # <a name="delete-device"></a>Удаление устройства
 
@@ -26,7 +26,7 @@ ms.locfileid: "60256496"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Device.ReadWrite.All, Directory.AccessAsUser.All |
+|Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 

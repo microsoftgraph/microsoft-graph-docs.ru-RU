@@ -1,16 +1,16 @@
 ---
 title: Отправка chatMessage в канале или чате
 description: Отправьте новый chatMessage в указанном канале или чате.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8947beb25170965e96a6cf12a91066d22b60e398
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: fa5c44b5671b30aefe9f13734f9e2aa0fc8dda10
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667761"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60288932"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>Отправка chatMessage в канале или чате
 
@@ -31,9 +31,11 @@ ms.locfileid: "58667761"
 ### <a name="permissions-for-channel"></a>Разрешения для канала
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | ChannelMessage.Send, Group.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | ChannelMessage.Send, Group.ReadWrite.All** |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
+
+> **Примечание.** Разрешения, помеченные **, не используются и не должны использоваться.
 
 ### <a name="permissions-for-chat"></a>Разрешения для чата
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
@@ -232,7 +234,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -467,7 +469,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -581,7 +583,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -811,7 +813,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
@@ -938,7 +940,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",

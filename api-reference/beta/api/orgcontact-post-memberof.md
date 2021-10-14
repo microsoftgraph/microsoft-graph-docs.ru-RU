@@ -1,16 +1,16 @@
 ---
 title: Создание memberOf
 description: Используйте этот API для создания нового memberOf.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b8919fb0a9513d2278d07a73cf1dc95327fdc983
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: af5349d2023cd639c206b65c4623ec29a2fd7a37
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055514"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289296"
 ---
 # <a name="create-memberof"></a>Создание memberOf
 
@@ -35,9 +35,9 @@ POST /contacts/{id}/memberOf
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Имя       | Описание|
+|:---------------|:--------|
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.
@@ -77,7 +77,7 @@ Content-length: 30
 
 Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

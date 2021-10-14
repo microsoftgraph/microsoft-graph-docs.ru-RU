@@ -2,15 +2,15 @@
 title: Удаление вкладки из канала
 description: 'Удаляет (открепит) вкладку из указанного канала в команде. '
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3241c48fb9cd396584b6a83bd7f48633643492f2
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: 533a17fe31b10f106f066a57cda9457e83671b1b
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971281"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289562"
 ---
 # <a name="delete-tab-from-channel"></a>Удаление вкладки из канала
 
@@ -25,11 +25,11 @@ ms.locfileid: "52971281"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  TeamsTab.ReadWriteForTeam, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) |  TeamsTab.ReadWriteForTeam, TeamsTab.ReadWrite.All, Group.ReadWrite.All,**Directory.ReadWrite.All** |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | TeamsTab.Delete.Group,*TeamsTab.ReadWrite.Group,* TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application | TeamsTab.Delete.Group,*TeamsTab.ReadWrite.Group,* TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.All, Group.ReadWrite.All **, Directory.ReadWrite.All** |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc). Разрешения, отмеченные **, не используются и не должны использоваться.
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
@@ -42,7 +42,7 @@ DELETE /teams/{team-id}/channels/{channel-id}/tabs/{tab-id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -62,7 +62,7 @@ DELETE /teams/{team-id}/channels/{channel-id}/tabs/{tab-id}
 DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
 ```
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример ответа. Примечание: показанный здесь объект ответа может быть сокращен для удобочитаемости.
 ```http
 HTTP/1.1 204 No Content
 ```

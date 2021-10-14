@@ -1,16 +1,16 @@
 ---
 title: Создание канала
 description: Создание нового канала в команде, как указано в теле запроса.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akjo
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cca7ba2cfd6f69c6bbfda080c94c31013018657e
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: d363020cd5458d385302f1a4cd8bb617a5f24433
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059928"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289688"
 ---
 # <a name="create-channel"></a>Создание канала
 
@@ -26,11 +26,11 @@ ms.locfileid: "53059928"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Channel.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | Channel.Create, Group.ReadWrite.All **, Directory.ReadWrite.All** |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Channel.Create.Group*, Channel.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application | Channel.Create.Group,*Channel.Create, Teamwork.Migrate.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc). Разрешения, отмеченные **, не используются и не должны использоваться.
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
@@ -46,7 +46,7 @@ POST /teams/{team-id}/channels
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса

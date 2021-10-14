@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cf0c49e7b51847070513d4597272adcbe0596a43
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a7816ed591ee786a7a1c98a8a916121bf1225da0
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104553"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60288449"
 ---
 # <a name="list-joinedteams"></a>Перечисление объектов joinedTeams
 
@@ -25,9 +25,11 @@ ms.locfileid: "59104553"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All **, Directory.ReadWrite.All** |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Application | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, User.Read.All, User.ReadWrite.All, Directory.Read.All **, Directory.ReadWrite.All** |
+
+> **Примечание**. Разрешения, помеченные **, не поддерживаются и не должны использоваться.
 
 > **Примечание.** В настоящее время при использовании делегированных пользователем разрешений эта операция поддерживается только для пользователя `me`. При использовании разрешений для приложений она поддерживается для всех пользователей путем указания определенного идентификатора пользователя (псевдоним `me` не поддерживается при использовании разрешений для приложений). Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview).
 

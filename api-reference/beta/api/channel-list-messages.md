@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b4a66560004f15829d9a19e9e561832c47085644
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: cbb3828f153d8c3fe877b266bdb3924b9ae38fbb
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58694911"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60288771"
 ---
 # <a name="list-channel-messages"></a>Перечисление сообщений в каналах
 
@@ -30,11 +30,11 @@ ms.locfileid: "58694911"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |---------|-------------|
-|Делегированные (рабочая или учебная учетная запись)| ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись)| ChannelMessage.Read.All, Group.Read.All **, Group.ReadWrite.All** |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Application| ChannelMessage.Read.Group *, ChannelMessage.Read.All, Group.Read.All**, Group.ReadWrite.All** |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc). Разрешения, помеченные **, не поддерживаются и не должны использоваться.
 
 > [!NOTE]
 > Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).
@@ -57,7 +57,7 @@ GET /teams/{team-id}/channels/{channel-id}/messages
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 

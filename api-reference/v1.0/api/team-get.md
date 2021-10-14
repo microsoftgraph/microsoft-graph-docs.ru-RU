@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d154ce125f43b122b06e92ec40d26e7d8626678d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 823d0b3ecd07771c3ea6dc62821dc33a50f7d710
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59015709"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290024"
 ---
 # <a name="get-team"></a>Получение команды
 
@@ -25,11 +25,11 @@ ms.locfileid: "59015709"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, Group.Read.All **, Group.ReadWrite.All**, Directory.Read.All **, Directory.ReadWrite.All** |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | TeamSettings.Read.Group *, TeamSettings.ReadWrite.Group*, Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Application | TeamSettings.Read.Group *, TeamSettings.ReadWrite.Group*, Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, Group.Read.All **, Group.ReadWrite.All**, Directory.Read.All **, Directory.ReadWrite.All** |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc). Разрешения, помеченные **, не поддерживаются и не должны использоваться.
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
@@ -46,7 +46,7 @@ GET /teams/{team-id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

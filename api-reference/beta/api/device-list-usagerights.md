@@ -2,15 +2,15 @@
 title: Список использования устройствRights
 description: Извлечение списка объектов useRights для устройства.
 author: jeeshnair
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a855ebf34d8e97a7a5fad00df2a022779ff2bc0d
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 7ad57af7a7ac608bca5a29de94074ad81ec43944
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50946830"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290101"
 ---
 # <a name="list-device-usagerights"></a>Список использования устройствRights
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "50946830"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|Device.Read.All, Directory.Read.All, Directory.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Application|Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
 
@@ -39,7 +39,7 @@ GET /devices/{objectId}/usageRights
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот API поддерживает параметр $filter [OData.](/graph/query-parameters) Поддерживаются следующие шаблоны $filter:
+Этот API поддерживает параметр `$filter` [запроса OData.](/graph/query-parameters) Поддерживаются следующие `$filter` шаблоны:
 
 - $filter = значение состояния eq
 - $filter = serviceIdentifier eq 'value'
@@ -51,8 +51,8 @@ GET /devices/{objectId}/usageRights
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
-|odata.maxpagesize|Установите переоценку размера страницы максимального результата. Необязательный параметр.|
+|Авторизация|Bearer {token}. Обязательный.|
+|odata.maxpagesize|Установите переоценку размера страницы максимального результата. Необязательное свойство.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

@@ -1,16 +1,16 @@
 ---
 title: Список hostedContents
 description: Извлечение списка объектов chatMessageHostedContent из сообщения.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5ff56f4181211eff40f2d1a808245e6707eb1573
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: e9e2e4cda052f39f60110c3ae5480da67b4e1e78
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384177"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289555"
 ---
 # <a name="list-hostedcontents"></a>Список hostedContents
 
@@ -26,9 +26,11 @@ ms.locfileid: "58384177"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись)| ChannelMessage.Read.All, Group.Read.All **, Group.ReadWrite.All** |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Application| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All,**Group.ReadWrite.All** |
+
+> **Примечание.** Разрешения, помеченные **, не используются и не должны использоваться.
 
 ### <a name="permissions-for-chat"></a>Разрешения для чата
 
@@ -38,7 +40,7 @@ ms.locfileid: "58384177"
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение| ChatMessage.Read.Chat, Chat.Read.All, Chat.ReadWrite.All|
 
-> **Примечание.** Разрешения _ChannelMessage.Read.Group_ и _ChatMessage.Read.Chat_ используют разрешение на использование [ресурсов.]( https://aka.ms/teams-rsc)
+> **Примечание**. Разрешения _ChannelMessage.Read.Group_ и _ChatMessage.Read.Chat_ используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).
@@ -251,7 +253,7 @@ GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание:** `contentBytes` и `contentType` всегда настроены на нуль.
 

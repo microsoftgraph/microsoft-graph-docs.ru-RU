@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ba64d880edb73f3fab51fcfaf6edc1c9122abb21
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: 909d6dd75951ac2758ac162c78a51d1849bb5add
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220747"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60288939"
 ---
 # <a name="publish-teamsapp"></a>Публикация teamsApp
 
@@ -29,9 +29,11 @@ ms.locfileid: "60220747"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)|
 |:----------------------------------     |:-------------|
-| Делегированные (рабочая или учебная учетная запись) | AppCatalog.Submit, AppCatalog.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись) | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All** |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается|
 | Для приложений                            | Не поддерживается. |
+
+> **Примечание.** Разрешения, помеченные **, не используются и не должны использоваться.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -57,7 +59,7 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 
 | Заголовок        | Значение           |
 |:--------------|:--------------  |
-| Авторизация | Bearer {токен}. Обязательный.  |
+| Авторизация | Bearer {token}. Обязательный.  |
 | Content-Type  | application/zip. Обязательно. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -66,7 +68,7 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 
 Каждое приложение в каталоге приложений должно иметь уникальный `id` манифест.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешной работы этот метод возвращает код `200 OK` ответа и [объект teamsApp.](../resources/teamsapp.md)
 

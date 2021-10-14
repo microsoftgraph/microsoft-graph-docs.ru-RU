@@ -2,15 +2,15 @@
 title: Получить установленное приложение в команде
 description: Получите приложение, установленное в команде.
 author: AkJo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1480c0eb8baa697b7e675efe75b8f69643a68e7a
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: 013c3854e394b0daa3d352d19841bae3447f806f
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971456"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290108"
 ---
 # <a name="get-installed-app-in-team"></a>Получить установленное приложение в команде
 
@@ -26,11 +26,11 @@ ms.locfileid: "52971456"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadWriteForTeam, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadWriteForTeam, Group.Read.All **, Group.ReadWrite.All**, Directory.Read.All **, Directory.ReadWrite.All** |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | TeamsAppInstallation.Read.Group*, TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Application | TeamsAppInstallation.Read.Group,*TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, Group.Read.All **, Group.ReadWrite.All ,** Directory.Read.All**, Directory.ReadWrite.All** |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc). Разрешения, отмеченные **, не используются и не должны использоваться.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ GET /teams/{id}/installedApps/{id}
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 

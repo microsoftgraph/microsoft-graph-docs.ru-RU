@@ -1,16 +1,16 @@
 ---
 title: 'orgContact: getMemberObjects'
 description: Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье Разрешения.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1187661bff6257fcb7c009a38b5cbc8e2388ea04
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f81feb5b71e1dea0ca70449b1680d994db9bbf03
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055549"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289037"
 ---
 # <a name="orgcontact-getmemberobjects"></a>orgContact: getMemberObjects
 
@@ -34,9 +34,9 @@ POST /contacts/{id}/getMemberObjects
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Имя       | Описание|
+|:---------------|:--------|
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
@@ -88,7 +88,7 @@ Content-length: 33
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

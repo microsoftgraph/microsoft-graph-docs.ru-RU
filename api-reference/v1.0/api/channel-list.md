@@ -5,12 +5,12 @@ author: nkramer
 doc_type: apiPageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: a596d5e04f4cb89e7742e62ea06c8f9f05fded80
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f9e92fe8f05b444a618b2386142392ec15fc31c7
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053772"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290297"
 ---
 # <a name="list-channels"></a>Перечисление каналов
 
@@ -25,9 +25,11 @@ ms.locfileid: "59053772"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All **, Group.ReadWrite.All**, Directory.Read.All **, Directory.ReadWrite.All** |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | ChannelSettings.Read.Group *, ChannelSettings.ReadWrite.Group*, Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Application | ChannelSettings.Read.Group *, ChannelSettings.ReadWrite.Group*, Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All **, Group.ReadWrite.All**, Directory.Read.All **, Directory.ReadWrite.All** |
+
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc). Разрешения, помеченные **, не поддерживаются и не должны использоваться.
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
@@ -45,7 +47,7 @@ GET /teams/{team-id}/channels
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -161,7 +163,7 @@ GET https://graph.microsoft.com/v1.0/teams/64c323f2-226a-4e64-8ba4-3e6e3f7b9330/
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

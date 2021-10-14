@@ -1,18 +1,18 @@
 ---
-title: Удаление appRoleAssignment, предоставленного для директора службы
+title: Удаление appRoleAssignedTo
 description: Удаление appRoleAssignment, предоставленного для директора службы.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 955b47a05086f36b857c7443a962d81aa0aec735
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 0c05fcee4bece33cfd4b6c0d4bf3d8dc5d7f65c8
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53441359"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290318"
 ---
-# <a name="delete-an-approleassignment-granted-for-a-service-principal"></a>Удаление appRoleAssignment, предоставленного для директора службы
+# <a name="delete-approleassignedto"></a>Удаление appRoleAssignedTo
 
 Пространство имен: microsoft.graph
 
@@ -41,13 +41,13 @@ DELETE /servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{appRoleAssignment-
 ```
 
 > [!NOTE]
-> В качестве наилучшей практики рекомендуется удалять назначения ролей приложений с помощью отношений директора службы ресурсов, а не отношений назначенного пользователя, группы или директора `appRoleAssignedTo`  `appRoleAssignments` службы.
+> В качестве наилучшей практики рекомендуется использовать этот метод для удаления назначений ролей приложений вместо метода [Delete appRoleAssignments,](serviceprincipal-delete-approleassignments.md) который удаляется через связь **appRoleAssignments** назначенного пользователя, группы или директора службы.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Имя       | Описание|
+|:---------------|:--------|
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 

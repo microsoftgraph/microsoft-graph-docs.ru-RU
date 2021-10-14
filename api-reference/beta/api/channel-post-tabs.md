@@ -2,15 +2,15 @@
 title: Добавление вкладки в канал
 description: 'Добавляет (закрепляет) вкладку в указанный канал в команде. '
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5575c4ae9267a968c7381ba4a89b66f9e0e7698d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c7c9fc859af87cdd7c99f203eb44e7cb4347f208
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047541"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60288918"
 ---
 # <a name="add-tab-to-channel"></a>Добавление вкладки в канал
 
@@ -25,11 +25,11 @@ ms.locfileid: "52047541"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | TeamsTab.Create, TeamsTab.ReadWriteForTeam, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-| Приложение   | TeamsTab.Create.Group*, TeamsTab.Create, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | TeamsTab.Create, TeamsTab.ReadWriteForTeam, TeamsTab.ReadWrite.All, Group.ReadWrite.All,**Directory.ReadWrite.All** |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+| Application   | TeamsTab.Create.Group,*TeamsTab.Create, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc). Разрешения, отмеченные **, не используются и не должны использоваться.
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
@@ -42,7 +42,7 @@ POST /teams/{id}/channels/{id}/tabs
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -77,7 +77,7 @@ POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример ответа. Примечание: показанный здесь объект ответа может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "ignored",
   "truncated": true,

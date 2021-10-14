@@ -1,16 +1,16 @@
 ---
 title: Удаление permissionGrantConditionSet из исключения коллекции разрешенийGrantPolicy
 description: Удаляет исключенный набор условий из политики предоставления разрешений.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 9215ee6d935f19581fbe855f50635f5dc0bd5c98
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: ca02aae94562b800e617622e442e573ed969e57a
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447718"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290087"
 ---
 # <a name="delete-permissiongrantconditionset-from-excludes-collection-of-permissiongrantpolicy"></a>Удаление permissionGrantConditionSet из исключения коллекции разрешенийGrantPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "50447718"
 |:--------------------|:---------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись) | PermissionGrantPolicy.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-| Приложение | PermissionGrantPolicy.ReadWrite.All |
+| Application | PermissionGrantPolicy.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,11 +40,11 @@ DELETE /policies/permissionGrantPolicies/{permissiongrantpolicy-id}/excludes/{ex
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Имя       | Описание|
+|:---------------|:--------|
+| Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

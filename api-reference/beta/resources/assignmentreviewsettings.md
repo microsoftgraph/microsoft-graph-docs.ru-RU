@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса assignmentReviewSettings
-description: Тип assignmentReviewSettings, используемый для свойства accessReviewSettings политики назначения пакета доступа, предоставляет дополнительные параметры, чтобы выбрать, кто должен просмотреть назначения пакетов доступа из этой политики и как часто их необходимо просмотреть.
-localization_priority: Normal
+title: тип ресурса assignmentReviewSettings
+description: Тип assignmentReviewSettings, используемый для свойства accessReviewSettings политики назначения пакетов доступа, предоставляет дополнительные параметры, чтобы выбрать, кто должен просмотреть назначения пакетов доступа из этой политики, и как часто они должны быть рассмотрены.
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: bde8c6d330eda7e100071edbf2190e170ca913ea
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 7bb8afe847a9ceca9f11a54cc7f9c69a44ac0cde
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131343"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290269"
 ---
-# <a name="assignmentreviewsettings-resource-type"></a>Тип ресурса assignmentReviewSettings
+# <a name="assignmentreviewsettings-resource-type"></a>тип ресурса assignmentReviewSettings
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используется для свойства **accessReviewSettings** политики [назначения пакета доступа.](accesspackageassignmentpolicy.md) Предоставляет дополнительные параметры, чтобы выбрать, кто должен просмотреть назначения пакетов доступа из этой политики и как часто их необходимо просмотреть.  
+Используется для **свойства accessReviewSettings** политики назначения пакета [доступа.](accesspackageassignmentpolicy.md) Предоставляет дополнительные параметры, чтобы выбрать, кто должен просмотреть назначения пакетов доступа из этой политики и как часто они должны быть рассмотрены.  
 
 ## <a name="properties"></a>Свойства
 
@@ -26,46 +26,50 @@ ms.locfileid: "50131343"
 
 | Свойство                     | Тип                      | Описание |
 | :--------------------------- | :------------------------ | :---------- |
-| isEnabled| Boolean | Если имеется true, для назначений из этой политики требуются проверки доступа. |
-| recurrenceType | Строка | Интервал повторения, например `monthly` или `quarterly` . |
-| reviewerType | Строка | Кто должен быть предложено сделать отзыв, либо `Self` `Reviewers` . |
+| accessReviewTimeoutBehavior | [accessReviewTimeoutBehavior](#accessreviewtimeoutbehavior-values) | Решение по умолчанию применяться, если запрос не рассмотрен в течение периода, указанного в **durationInDays.** Возможные значения: `acceptAccessRecommendation` , `keepAccess` , и `removeAccess` `unknownFutureValue` . |
+| durationInDays | Int32 | Количество дней, в течение которых рецензенты должны предоставлять входные данные.|
+| isAccessRecommendationEnabled | Boolean | Указывает, следует ли отобразить рекомендации рецензенту. Значение по умолчанию `true` |
+| isApprovalJustificationRequired | Boolean | Указывает, должен ли рецензент предоставить обоснование утверждения. Значение по умолчанию — `true`. |
+| isEnabled| Boolean | Если это так, необходимо просмотреть доступ для назначений из этой политики. |
+| recurrenceType | Строка | Интервал для повторения, например `monthly` или `quarterly` . |
+| reviewerType | Строка | Кто должны быть предложены, чтобы сделать обзор, либо `Self` `Reviewers` или . |
+| рецензенты | [коллекция userSet](userset.md) | Если это рецензентType, в этой коллекции указаны пользователи, которые будут рецензентами по ID или в качестве членов группы, используя коллекцию `Reviewers` [singleUser](singleuser.md) и [groupMembers](groupmembers.md). |
 | startDateTime | DateTimeOffset | Когда должен начаться первый обзор. |
-| durationInDays | Int32 | Количество дней, в течение которые можно разрешить ввод данных от проверяющих.|
-| рецензенты | [Коллекция userSet](userset.md) | Если это reviewerType, эта коллекция указывает пользователей, которые будут рецензентами по ИД или в качестве членов группы, используя коллекцию `Reviewers` [singleUser](singleuser.md) и [groupMembers.](groupmembers.md) |
 
-## <a name="json-representation"></a>Представление в формате JSON
+### <a name="accessreviewtimeoutbehavior-values"></a>значения accessReviewTimeoutBehavior
 
+| Member | Описание |
+|:---------------|:--------|:----------|
+| acceptAccessRecommendation | Решение о проверке для принятия рекомендаций из обзора доступа к принятию и удалению доступа к пакету доступа. Общим правилом для рекомендаций AR является, если последний пользователь вошел более чем за 30 дней, рекомендуется удалить доступ к этому пользователю. |
+| keepAccess | Решение о проверке — сохранить текущий доступ. |
+| removeAccess | Решение об отзыве — удалить доступ к пакету доступа. |
+| unknownFutureValue | Эволюционирующее значение sentinel. Не следует использовать. |
 
-Ниже приводится представление свойства параметров проверки доступа политики в JSON.
+## <a name="json-representation"></a>Представление JSON
 
+Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
   "@odata.type": "microsoft.graph.assignmentReviewSettings"
-}-->
-
-```json
+}
+-->
+``` json
 {
-  "isEnabled": true,
-  "recurrenceType": "quarterly",
-  "reviewerType": "Self",
-  "startDateTime": "2020-01-23T07:59:59.998Z",
-  "durationInDays": 25,
-  "reviewers": []
+  "@odata.type": "#microsoft.graph.assignmentReviewSettings",
+  "isEnabled": "Boolean",
+  "recurrenceType": "String",
+  "reviewerType": "String",
+  "startDateTime": "String (timestamp)",
+  "durationInDays": "Integer",
+  "reviewers": [
+    {
+      "@odata.type": "microsoft.graph.singleUser"
+    }
+  ],
+  "isAccessRecommendationEnabled": "Boolean",
+  "isApprovalJustificationRequired": "Boolean",
+  "accessReviewTimeoutBehavior": "String"
 }
 ```
-
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "assignmentReviewSettings complex type",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
 
 

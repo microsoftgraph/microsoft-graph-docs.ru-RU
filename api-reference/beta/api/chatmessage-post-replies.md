@@ -2,15 +2,15 @@
 title: Отправка ответов на сообщение в канале
 description: Ответ на существующее сообщение в канале.
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ac0417b34a6adad584ef584dd1ba02fa81e06cdd
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: 431571a86ef9c9150fa1061f4a4ca0f8ecfaedfa
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667600"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289275"
 ---
 # <a name="send-replies-to-a-message-in-a-channel"></a>Отправка ответов на сообщение в канале
 
@@ -31,9 +31,11 @@ ms.locfileid: "58667600"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | ChannelMessage.Send, Group.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | ChannelMessage.Send, Group.ReadWrite.All** |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Teamwork.Migrate.All |
+
+> **Примечание.** Разрешения, помеченные **, не используются и не должны использоваться.
 
 > **Примечание.** Разрешения приложений *поддерживаются только* для [миграции.](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
 В дальнейшем корпорация Майкрософт может потребовать у вас или ваших клиентов оплаты дополнительных сборов на основе количества импортированных данных.
@@ -47,7 +49,7 @@ POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса поставляем представление JSON объекта [сообщения.](../resources/chatmessage.md) Обязательным является только свойство body, другие свойства необязательны.
@@ -103,7 +105,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,

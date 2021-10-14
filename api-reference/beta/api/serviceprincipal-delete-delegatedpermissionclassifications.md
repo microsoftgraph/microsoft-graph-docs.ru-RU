@@ -1,24 +1,24 @@
 ---
-title: Удаление delegatedPermissionClassification
-description: Удаление делегированной классификации разрешений из директора-службы API.
-localization_priority: Normal
+title: Удаление делегированияPermissionClassification
+description: Удаление делегированной классификации разрешений из основной службы API.
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: aa10fbf12e0fef1ef6b8a96ec61cbb0571d47f8b
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 0382d54d43507ec27411d85a109720e571c89901
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137405"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290199"
 ---
-# <a name="delete-delegatedpermissionclassification"></a>Удаление delegatedPermissionClassification
+# <a name="delete-delegatedpermissionclassification"></a>Удаление делегированияPermissionClassification
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаляет [delegatedPermissionClassification,](../resources/delegatedPermissionClassification.md) который ранее был настроен для делегирования разрешения.
+Удаляет [делегированнуюPermissionClassification,](../resources/delegatedPermissionClassification.md) которая ранее была назначена для делегирования разрешения.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "50137405"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | PermissionGrantPolicy.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | PermissionGrantPolicy.ReadWrite.All |
+|Application | PermissionGrantPolicy.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,9 +40,9 @@ DELETE /servicePrincipals/{id}/delegatedPermissionClassifications/{id}
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Имя       | Описание|
+|:---------------|:--------|
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 

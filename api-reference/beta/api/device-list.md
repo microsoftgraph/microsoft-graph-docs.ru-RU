@@ -2,15 +2,15 @@
 title: Список устройств
 description: 'Получение списка устройств, зарегистрированных в каталоге. '
 author: spunukol
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a045c9459a465eed05d35ecb63f4045ba71602de
-ms.sourcegitcommit: 6d247f44a6ee4d8515c3863ee8a2683163c9f829
+ms.openlocfilehash: c8250a166f535d01c0bfe1de8518c6e0900c863b
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430065"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290038"
 ---
 # <a name="list-devices"></a>Список устройств
 
@@ -27,9 +27,9 @@ ms.locfileid: "53430065"
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------- |:------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (рабочая или учебная учетная запись) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Application | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,7 +46,7 @@ GET /devices
 
 | Имя | Описание |
 |:---- |:----------- |
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search` или определенном использовании `$filter`. Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries). |
 
 ## <a name="request-body"></a>Текст запроса
@@ -170,7 +170,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -215,7 +215,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса. Этот запрос требует заглавного **загона ConsistencyLevel,** так как строка запроса `eventual` находится в `$search` `$count=true` запросе. Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
+Ниже приведен пример запроса. Для этого запроса требуется заголовок **ConsistencyLevel** с присвоенным значением `eventual`, так как в запросе присутствует `$search` и строка запроса `$count=true`. Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
 
 
 <!-- {
@@ -229,7 +229,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

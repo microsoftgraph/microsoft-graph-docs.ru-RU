@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: spunukol
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 458e14954f659a015c9d86dc0cba9dff570a1ce8
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: d726b75923cd18968dc2bc112d29329784fc91a6
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256391"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289940"
 ---
 # <a name="list-registeredowners"></a>Список registeredOwners
 
@@ -26,9 +26,9 @@ ms.locfileid: "60256391"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Application | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/devices/{id}/registeredOwners
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

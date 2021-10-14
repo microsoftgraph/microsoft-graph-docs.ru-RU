@@ -2,15 +2,15 @@
 title: Клонировать команду
 description: Создайте копию команды. Эта операция также создает копию соответствующей группы.
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6299d1e7ecf828ee6587c4a69796021f1905dfd5
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 58fc5c857fa972f265ffdddd2123dbc9e1aba982
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786862"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289268"
 ---
 # <a name="clone-a-team"></a>Клонировать команду
 
@@ -38,9 +38,11 @@ ms.locfileid: "52786862"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All, Directory.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись)     | Team.Create, Group.ReadWrite.All,**Directory.ReadWrite.All** |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений                            | Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application                            | Team.Create, Group.ReadWrite.All,**Directory.ReadWrite.All** |
+
+> **Примечание.** Разрешения, помеченные **, не используются и не должны использоваться.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +53,7 @@ POST /teams/{id}/clone
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -111,7 +113,7 @@ Content-Type: application/json
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример ответа. Примечание: показанный здесь объект ответа может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response"
 } -->

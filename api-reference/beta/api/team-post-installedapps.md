@@ -2,15 +2,15 @@
 title: Добавление приложения в команду
 description: Устанавливает приложение в указанную команду.
 author: akjo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1c48946e507e6bc25c8dc0516b21d8abd653a20f
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: c5ba7331f1242833de8dfbf3859fa6249809ffd7
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060435"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290262"
 ---
 # <a name="add-app-to-team"></a>Добавление приложения в команду
 
@@ -26,9 +26,11 @@ ms.locfileid: "53060435"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadWriteForTeam, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadWriteForTeam, Group.ReadWrite.All,**Directory.ReadWrite.All** |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | TeamsAppInstallation.ReadWriteForTeam.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application | TeamsAppInstallation.ReadWriteForTeam.All, Group.ReadWrite.All **, Directory.ReadWrite.All** |
+
+> **Примечание.** Разрешения, помеченные **, не используются и не должны использоваться.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +42,7 @@ POST /teams/{team-id}/installedApps
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 

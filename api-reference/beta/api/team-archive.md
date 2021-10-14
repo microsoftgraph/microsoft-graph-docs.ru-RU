@@ -2,15 +2,15 @@
 title: Архивация команды
 description: 'Архивация указанной команды. '
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 594be32469abb7e75247936c9e32373ab3c3b95d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e06e0488818ed4df01688bb7187c057b5cdf9a70
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976386"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289807"
 ---
 # <a name="archive-team"></a>Архивация команды
 
@@ -32,11 +32,11 @@ ms.locfileid: "48976386"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | TeamSettings.ReadWrite.All, Group.ReadWrite.All,**Directory.ReadWrite.All** |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | TeamSettings.ReadWrite.Group*, TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application | TeamSettings.ReadWrite.Group,*TeamSettings.ReadWrite.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc). Разрешения, отмеченные **, не используются и не должны использоваться.
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
@@ -48,7 +48,7 @@ POST /teams/{id}/archive
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 В запросе можно _при необходимости_ включить параметр `shouldSetSpoSiteReadOnlyForMembers` в текст JSON следующим образом.

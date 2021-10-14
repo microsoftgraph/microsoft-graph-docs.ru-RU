@@ -1,18 +1,18 @@
 ---
-title: Удаление appRoleAssignment из основной службы
+title: Удаление объекта AppRoleAssignment
 description: Удаление appRoleAssignment из основной службы.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 957ce2dbed2f367901a2d7f9498a4385745b2797
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 41a147f025b025eaf20a140ed9f07f118cefaf7b
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870166"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289100"
 ---
-# <a name="delete-an-approleassignment-granted-to-a-service-principal"></a>Удаление appRoleAssignment, предоставленного директору службы
+# <a name="delete-approleassignment"></a>Удаление объекта AppRoleAssignment
 
 Пространство имен: microsoft.graph
 
@@ -41,15 +41,15 @@ DELETE /servicePrincipals/{servicePrincipal-id}/appRoleAssignments/{appRoleAssig
 ```
 
 > [!NOTE]
-> В качестве наилучшей практики рекомендуется удалять назначения ролей приложений с помощью отношений директора службы ресурсов, а не отношений назначенного пользователя, группы или директора `appRoleAssignedTo`  `appRoleAssignments` службы.
+> В качестве наилучшей практики рекомендуется удалять назначения ролей приложений с помощью метода [Delete appRoleAssignedTo,](serviceprincipal-delete-approleassignedto.md) который  удаляется с помощью **отношения appRoleAssignedTo** директора службы ресурсов, а не этого метода.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Имя       | Описание|
+|:---------------|:--------|
+| Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

@@ -1,16 +1,16 @@
 ---
 title: сложный тип singleUser
 description: Определяет пользователя в клиенте, которому будет разрешено в качестве запрашивателя, утверждения или рецензента.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 8e1982eef048e1f68f579df7f2ebc6b0975f2f0b
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: e7ccc22478a470047e6f65387419bfc0364bf548
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761046"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290248"
 ---
 # <a name="singleuser-complex-type"></a>сложный тип singleUser
 
@@ -18,7 +18,7 @@ ms.locfileid: "50761046"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используется в параметрах проверки запросов, утверждений и назначений политики назначения пакета [доступа.](accesspackageassignmentpolicy.md) Это значение указывает на то, что этот набор пользователей определяет конкретного пользователя в клиенте, которому будет разрешено в качестве запрашивателя, утверждения или  `@odata.type` `#microsoft.graph.singleUser` рецензента.
+Используется в параметрах проверки запросов, утверждений и назначений политики назначения пакета [доступа.](accesspackageassignmentpolicy.md) Это значение указывает на то, что этот userSet идентифицирует определенного пользователя в клиенте, которому будет разрешено в качестве запрашивателя, утверждения или  `@odata.type` `#microsoft.graph.singleUser` рецензента.
 
 ## <a name="properties"></a>Свойства
 
@@ -26,8 +26,8 @@ ms.locfileid: "50761046"
 
 | Свойство                     | Тип                      | Описание |
 | :--------------------------- | :------------------------ | :---------- |
-| id |String | ID пользователя в Azure AD. |
-| description |String | Имя пользователя в Azure AD. Только для чтения. |
+| id |Строка | ID пользователя в Azure AD. |
+| description |Строка | Имя пользователя в Azure AD. Только для чтения. |
 | isBackup | Boolean | Для **одного пользователя на** стадии утверждения указывает, является ли пользователь резервным кодом. |
 
 ## <a name="json-representation"></a>Представление JSON
@@ -46,8 +46,8 @@ ms.locfileid: "50761046"
 ```json
 {
   "isBackup": false,
-  "id": "string (identifier)",
-  "description": "string"
+  "id": "String (identifier)",
+  "description": "String"
 }
 ```
 

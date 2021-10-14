@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 45bc671df35a4b97c372278e2703d681a8ef2226
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e91244ee109a5039a58466c4aaa7271cd532957d
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59131016"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290234"
 ---
 # <a name="get-filesfolder"></a>Получение filesFolder
 
@@ -23,10 +23,11 @@ ms.locfileid: "59131016"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | Files.Read.All, Files.ReadWrite.All, Group.Read.All **, Group.ReadWrite.All** |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
+|Application | Files.Read.All, Files.ReadWrite.All, Group.Read.All **, Group.ReadWrite.All** |
 
+> **Примечание**. Разрешения, помеченные **, не поддерживаются и не должны использоваться.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +42,7 @@ GET /teams/{id}/channels/{id}/filesFolder
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -83,7 +84,7 @@ GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/filesFolder
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

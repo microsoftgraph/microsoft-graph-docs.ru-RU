@@ -1,16 +1,16 @@
 ---
 title: connectedOrganizationMembers сложный тип
 description: Тип connectedOrganizationMembers определяет коллекцию пользователей в клиенте, которые будут разрешены в качестве запрашивателя, утверждения или рецензента.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 725926bc39583bda653294f0cc917ea7d2f08a45
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: 0baaea3f8d6e917d072b8e9f5933b3388e1a0324
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761820"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289240"
 ---
 # <a name="connectedorganizationmembers-complex-type"></a>connectedOrganizationMembers сложный тип
 
@@ -26,8 +26,8 @@ ms.locfileid: "50761820"
 
 | Свойство                     | Тип                      | Описание |
 | :--------------------------- | :------------------------ | :---------- |
-| id |String | ID связанной организации в управлении правами. |
-| description |String | Имя связанной организации. Только для чтения. |
+| id |Строка | ID связанной организации в управлении правами. |
+| description |Строка | Имя связанной организации. Только для чтения. |
 | isBackup | Boolean | Не используется в настоящее время. |
 
 ## <a name="json-representation"></a>Представление JSON
@@ -45,8 +45,8 @@ ms.locfileid: "50761820"
 
 ```json
 {
-  "id": "string (identifier)",
-  "description": "string",
+  "id": "String (identifier)",
+  "description": "String",
   "isBackup": false
 }
 ```

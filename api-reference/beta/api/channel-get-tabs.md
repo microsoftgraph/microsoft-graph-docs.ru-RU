@@ -2,15 +2,15 @@
 title: Получение вкладки на канале
 description: 'Извлечение свойств и связей указанной вкладки в канале в команде. '
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9a81cd2009266ed09ed723d7171aef54a04ed405
-ms.sourcegitcommit: b736af7020db7311f7d28b301752b5669d7badba
+ms.openlocfilehash: 440a521f1ec617c70d76546e69cb42237bc33bc3
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200956"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289548"
 ---
 # <a name="get-tab-in-channel"></a>Получение вкладки на канале
 
@@ -25,11 +25,11 @@ ms.locfileid: "51200956"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | TeamsTab.Read.All, TeamsTab.ReadWriteForTeam, TeamsTab.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | TeamsTab.Read.Group,*TeamsTab.ReadWrite.Group,* TeamsTab.Read.All, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | TeamsTab.Read.All, TeamsTab.ReadWriteForTeam, TeamsTab.ReadWrite.All,**Group.Read.All , Group.ReadWrite.All**, Directory.Read.All **, Directory.ReadWrite.All** |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Application | TeamsTab.Read.Group,*TeamsTab.ReadWrite.Group,* TeamsTab.Read.All, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.All, Group.Read.All **, Group.ReadWrite.All**, Directory.Read.All **, Directory.ReadWrite.All** |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc). Разрешения, отмеченные **, не используются и не должны использоваться.
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
@@ -45,7 +45,7 @@ GET /teams/{team-id}/channels/{channel-id}/tabs/{tab-id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

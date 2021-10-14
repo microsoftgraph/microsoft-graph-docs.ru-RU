@@ -5,12 +5,12 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d3f0170c88a4b89479b53155cc55ad72e1542076
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: ea2ae211f9e9d40e15458c58b661ea9b48b2e99f
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60255922"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289177"
 ---
 # <a name="update-device"></a>Обновление устройства
 
@@ -25,9 +25,9 @@ ms.locfileid: "60255922"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Device.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение | Device.ReadWrite.All, Directory.ReadWrite.All |
+|Application | Device.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,7 +52,7 @@ PATCH /devices/{id}
 |accountEnabled|Логический| Если учетная запись обеспечена — `true`, в противном случае — `false`. Обновить это свойство могут только звонители в ролях глобального администратора и администратора облачных устройств. |
 |operatingSystem|String|Тип операционной системы на устройстве.|
 |operatingSystemVersion|String|Версия операционной системы на устройстве.|
-|displayName|String|Отображаемое имя устройства.|
+|displayName|Строка|Отображаемое имя устройства.|
 |isCompliant|Boolean|`true` если устройство соответствует политикам управления мобильными устройствами(MDM); в противном `false` случае . Это может быть обновлено intune только для любого типа ОС устройства или утвержденного приложения [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows устройств ОС. |
 |isManaged|Boolean|`true` если устройство управляется приложением управления мобильными устройствами (MDM); в противном `false` случае . Это может быть обновлено intune только для любого типа ОС устройства или утвержденного приложения [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows устройств ОС. |
 

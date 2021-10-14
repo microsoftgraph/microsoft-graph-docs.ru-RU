@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7859ee48e3d5b324d61ff356c643fe449feaf010
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: 35ce4e082c1b0e53dfd092161e0497c74d9a9495
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220537"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290136"
 ---
 # <a name="delete-teamsapp"></a>Удаление teamsApp
 
@@ -32,9 +32,11 @@ ms.locfileid: "60220537"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)|
 |:----------------------------------     |:-------------|
-| Делегированные (рабочая или учебная учетная запись) | AppCatalog.Submit, AppCatalog.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись) | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All** |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.|
 | Для приложений                            | Не поддерживается. |
+
+> **Примечание.** Разрешения, помеченные **, не используются и не должны использоваться.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -56,7 +58,7 @@ DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
 
 | Заголовок        | Значение           |
 |:--------------|:--------------  |
-| Авторизация | Bearer {токен}. Обязательный.  |
+| Авторизация | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 

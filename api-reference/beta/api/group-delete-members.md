@@ -1,16 +1,16 @@
 ---
 title: Удаление участника
 description: Используйте этот API, чтобы удалить участника из группы Microsoft 365, группы безопасности или группы  безопасности с поддержкой почты через свойство навигации членов. Вы можете удалять пользователей или другие группы.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1dc4e226f0d2ecfa64a7803542c77901c925c02d
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: ea903e7144891ed0591522d5ce146c3615cd6975
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58396825"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289667"
 ---
 # <a name="remove-member"></a>Удаление участника
 
@@ -36,9 +36,9 @@ DELETE /groups/{id}/members/{id}/$ref
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Имя       | Описание|
+|:---------------|:--------|
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -79,7 +79,7 @@ DELETE https://graph.microsoft.com/beta/groups/{group-id}/members/{directory-obj
 В запросе укажите идентификатор группы и идентификатор объекта каталога, который вы хотите удалить.
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response"
@@ -90,7 +90,7 @@ HTTP/1.1 204 No Content
 
 ## <a name="see-also"></a>См. также
 - [Добавление участника в команду](team-post-members.md)
-- [Обновление роли участника в команде](team-update-members.md)
+- [Обновление роли участника в группе](team-update-members.md)
 - [Удаление участника из чата](team-delete-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

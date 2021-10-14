@@ -5,19 +5,19 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4c05fecf15b636bf3e918c39b0a65fa1b4cee712
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: 9ee4f8bf167016d3ed0945723bbde676db6b8bf4
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59995610"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289793"
 ---
 # <a name="update-organizationalbranding"></a>Обновление organizationalBranding
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта брендинга по умолчанию, заданного [объектом organizationalBranding.](../resources/organizationalbranding.md)
+Обновление свойств объекта брендинга по умолчанию, заданного [ресурсом organizationalBranding.](../resources/organizationalbranding.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,7 +41,7 @@ PATCH /organization/{organizationId}/branding
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 |Принять-Язык|Допустимый локал ISO 639-1. Обязательно.|
 
@@ -82,6 +82,7 @@ PATCH /organization/{organizationId}/branding
 ```http
 PATCH https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
 Content-Type: application/json
+Accept-Language: 0
 
 {
     "signInPageText":"Default",
@@ -109,7 +110,7 @@ Content-Type: application/json
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response"
@@ -128,7 +129,6 @@ HTTP/1.1 204 No Content
 Ниже приведен пример запроса.
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_organizationalbrandinglocaliation_2"
@@ -140,15 +140,6 @@ Content-Type: image/jpeg
 
 <Image>
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-organizationalbrandinglocaliation-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-organizationalbrandinglocaliation-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### <a name="response"></a>Отклик

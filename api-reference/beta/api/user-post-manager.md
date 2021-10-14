@@ -1,16 +1,16 @@
 ---
 title: Назначение руководителя
 description: С помощью этого API можно назначить руководителя пользователю.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e88a3ad02556ed14cc4aa7024c3414b36fa954a1
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 64fe2f3388b1743760802fc1c6d974692ce717dc
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52785132"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290185"
 ---
 # <a name="assign-a-manager"></a>Назначение руководителя
 
@@ -36,9 +36,9 @@ ms.locfileid: "52785132"
 PUT /users/{id}/manager/$ref
 ```
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Имя       | Описание|
+|:---------------|:--------|
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание добавляемого объекта [directoryObject](../resources/directoryobject.md) или [user](../resources/user.md) в формате JSON.

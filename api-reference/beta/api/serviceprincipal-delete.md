@@ -1,16 +1,16 @@
 ---
 title: Удалить servicePrincipal
 description: Удаление servicePrincipal.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 7066cd3184894f8de1cada2f1936ee1bd343d4a0
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 63294e95cd1dd95f1fbd4d22a1c84484592648f2
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137531"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289877"
 ---
 # <a name="delete-serviceprincipal"></a>Удалить servicePrincipal
 
@@ -18,7 +18,7 @@ ms.locfileid: "50137531"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [servicePrincipal.](../resources/serviceprincipal.md)
+Удаление [объекта servicePrincipal.](../resources/serviceprincipal.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -26,7 +26,7 @@ ms.locfileid: "50137531"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
+|Приложение | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -34,9 +34,9 @@ ms.locfileid: "50137531"
 DELETE /servicePrincipals/{id}
 ```
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Имя       | Описание|
+|:---------------|:--------|
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

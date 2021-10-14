@@ -2,15 +2,15 @@
 title: Удаление приложения из группы
 description: Uninstalls an app from the specified team.
 author: akjo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7828241bdcf74aae2f2267cd1c3d0b6ece826ecc
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: eed270b92d2f929e71bbf0bb56e4725c1f3a9f6d
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059447"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289261"
 ---
 # <a name="remove-app-from-team"></a>Удаление приложения из группы
 
@@ -26,9 +26,11 @@ Uninstalls an [app](../resources/teamsappinstallation.md) from the specified [te
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadWriteForTeam, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadWriteForTeam, Group.ReadWrite.All,**Directory.ReadWrite.All** |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | TeamsAppInstallation.ReadWriteForTeam.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application | TeamsAppInstallation.ReadWriteForTeam.All, Group.ReadWrite.All **, Directory.ReadWrite.All** |
+
+> **Примечание.** Разрешения, помеченные **, не используются и не должны использоваться.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +42,7 @@ DELETE /teams/{team-id}/installedApps/{app-installation-id}
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 

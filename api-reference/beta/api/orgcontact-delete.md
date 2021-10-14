@@ -1,16 +1,16 @@
 ---
 title: Удаление orgContact
 description: Удаление orgContact.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1b853a153afea17bae86a7e0d4215f9ae0ac39db
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 1fc2f5a9a5ea6bdba1051ca7f2e8890d2eeed8bf
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50434029"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289114"
 ---
 # <a name="delete-orgcontact"></a>Удаление orgContact
 
@@ -35,11 +35,11 @@ DELETE /contacts/{id}
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Имя       | Описание|
+|:---------------|:--------|
+| Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

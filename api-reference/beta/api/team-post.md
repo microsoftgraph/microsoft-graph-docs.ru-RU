@@ -5,12 +5,12 @@ author: anandjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2252132ba14a5990639435fc659801385e835138
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 89d5808c0e31065eecc9a511cc23cb560afee11e
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695387"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289289"
 ---
 # <a name="create-team"></a>Создание команды
 
@@ -26,12 +26,14 @@ ms.locfileid: "58695387"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | Team.Create, Group.ReadWrite.All **, Directory.ReadWrite.All** |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Application                            | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All **, Directory.ReadWrite.All** |
 
 > **Примечание**. Разрешение Teamwork.Migrate.All поддерживается *только* для [миграции](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 В дальнейшем корпорация Майкрософт может потребовать у вас или ваших клиентов оплаты дополнительных сборов на основе количества импортированных данных.
+
+> **Примечание**. Разрешения, помеченные **, не поддерживаются и не должны использоваться.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +47,7 @@ POST /teams
 
 | Заголовок        | Значение                     |
 | :------------ | :------------------------ |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -100,7 +102,7 @@ Content-Type: application/json
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD001 -->
 
-##### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 20c9d628610a534ad998c561d7060038bbecb5db
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: c33d540e8fb2ea26fd8e65cd0c6bc606c6af2d26
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220362"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290276"
 ---
 # <a name="update-teamsapp"></a>Обновление teamsApp
 
@@ -30,9 +30,11 @@ ms.locfileid: "60220362"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)|
 |:----------------------------------     |:-------------|
-| Делегированные (рабочая или учебная учетная запись) | AppCatalog.Submit, AppCatalog.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись) | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All** |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается|
 | Для приложений                            | Не поддерживается. |
+
+> **Примечание.** Разрешения, помеченные **, не используются и не должны использоваться.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,7 +54,7 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 
 | Заголовок        | Значение           |
 |:--------------|:--------------  |
-| Авторизация | Bearer {токен}. Обязательный.  |
+| Авторизация | Bearer {token}. Обязательный.  |
 | Content-Type  | application/zip. Обязательно. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -86,7 +88,7 @@ Content-length: 244
 
 ### <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`.
 
 ### <a name="example-2-update-a-new-version-of-an-existing-app-for-admin-review-prior-to-publication-in-the-current-tenant-catalog"></a>Пример 2. Обновление новой версии существующего приложения для проверки администратора до публикации в текущем каталоге клиента
 

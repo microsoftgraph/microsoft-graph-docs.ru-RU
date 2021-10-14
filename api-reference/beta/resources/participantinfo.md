@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса ПартиЦипантинфо
+title: тип ресурса participantInfo
 description: Содержит дополнительные свойства удостоверения участника
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8c05222185b87e03c86257939cec098b3ac212e8
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: f6c759ba3936d500b34566ac894895ce7b0f7ff7
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522995"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289856"
 ---
-# <a name="participantinfo-resource-type"></a>Тип ресурса ПартиЦипантинфо
+# <a name="participantinfo-resource-type"></a>тип ресурса participantInfo
 
 Пространство имен: microsoft.graph
 
@@ -24,12 +24,13 @@ ms.locfileid: "49522995"
 
 | Свойство         | Тип                            | Описание                                                                                                                                                                                                      |
 | :--------------- | :------------------------------ | :-----------------------------------------------------------------------------------------------------------------------------------------------------------                                                     |
-| countryCode      | String                          | Код страны ISO 3166-1 Alpha-2 в наиболее подсчитанном физическом расположении участника в начале звонка. Только для чтения.                                                                                   |
-| ендпоинттипе     | String                          | Тип конечной точки, используемой участником. Возможные значения: `default` , `skypeForBusiness` , или `skypeForBusinessVoipPhone` . Только для чтения.                                                                    |
-| хищения         | [identitySet](identityset.md)   | [Удостоверение](identityset.md) , связанное с этим участником. Только для чтения.                                                                                                                                   |
-| languageId       | String                          | Строка языка и региональных параметров языка. Только для чтения.                                                                                                                                                                          |
-| региональных           | String                          | Домашняя область участника. Это может быть страна, континент или более крупный географический регион. Это не изменяется в зависимости от текущего физического расположения участника, в отличие от countryCode. Только для чтения. |
-| platformId       | String                          | Идентификатор клиентской платформы участника. Только для чтения.    |
+| countryCode      | Строка                          | Код страны ISO 3166-1 Alpha-2 с наилучшими оценками физического расположения участника в начале вызова. Только для чтения.                                                                                   |
+| endpointType     | Строка                          | Тип конечной точки, используемой участником. Возможные значения: `default`, `skypeForBusiness` или `skypeForBusinessVoipPhone`. Только для чтения.                                                                    |
+| identity         | [identitySet](identityset.md)   | [IdentitySet,](identityset.md) связанный с этим участником. Только для чтения.                                                                                                                                   |
+| languageId       | Строка                          | Строка языковой культуры. Только для чтения.                                                                                                                                                                          |
+| регион           | Строка                          | Домашний регион участника. Это может быть страна, континент или более крупный географический регион. Это не меняется в зависимости от текущего физического расположения участника, в отличие от countryCode. Только для чтения. |
+| platformId       | Строка                          | ID клиентской платформы участника. Только для чтения.    |
+| participantId    | Строка                          | ID участника участника. Только для чтения.    |
 
 
 ## <a name="json-representation"></a>Представление JSON
@@ -42,7 +43,9 @@ ms.locfileid: "49522995"
     "countryCode",
     "endpointType",
     "languageId",
-    "region"
+    "region",
+    "platformId",
+    "participantId"
   ],
   "@odata.type": "microsoft.graph.participantInfo"
 }-->
@@ -54,6 +57,7 @@ ms.locfileid: "49522995"
   "languageId": "String",
   "region": "String",
   "platformId": "String",
+  "participantId": "String"
 }
 ```
 

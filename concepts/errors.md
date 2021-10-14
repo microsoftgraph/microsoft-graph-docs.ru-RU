@@ -2,12 +2,12 @@
 title: Сообщения об ошибках и типы ресурсов Microsoft Graph
 description: В этой статье описаны некоторые ошибки, которые могут возвращаться в ответах Microsoft Graph.
 ms.localizationpriority: high
-ms.openlocfilehash: c5b1dcc6a6540580483b4bf668c5c7ae9f28676c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4f080b18e2ef645a2045efe08437bb05684fb2a9
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136119"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289163"
 ---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Сообщения об ошибках и типы ресурсов Microsoft Graph
 
@@ -177,6 +177,8 @@ public bool IsError(string expectedErrorCode)
 | **pathIsTooLong**                  | Превышена максимальная длина пути.
 | **pathTooDeep**                    | Достигнуто максимальное число уровней в иерархии папок.
 | **propertyNotUpdateable**          | Свойство не поддерживает обновление.
+| **provisioningNotAllowed**         | Для запроса требуется подготовка учетной записи, которая запрещена.
+| **resourceBeingProvisioned**       | Выполняется подготовка запрошенного ресурса.
 | **resyncApplyDifferences**         | Требуется повторная синхронизация. Замените все локальные элементы элементами сервера (в том числе удаленные), если вы уверены, что в службу были внесены все локальные изменения при последней синхронизации. Отправьте все локальные изменения, не загруженные на сервер.
 | **resyncRequired**                 | Требуется повторная синхронизация.
 | **resyncUploadDifferences**        | Требуется повторная синхронизация. Отправьте все локальные элементы, которые не возвратила служба, и все файлы, версия которых отличается от версии сервера (сохраняйте обе копии, если вы не знаете, какая из них более актуальна).

@@ -1,23 +1,23 @@
 ---
 author: JeremyKelley
-ms.date: 09/10/2017
-title: Получение файла или папки
+title: Получение ресурса driveItem
 ms.localizationpriority: high
 ms.prod: sharepoint
-description: Получение метаданных ресурса DriveItem в объекте Drive по пути в файловой системе или идентификатору.
+description: Получение метаданных для driveItem в объекте drive по пути в файловой системе или идентификатору.
 doc_type: apiPageType
-ms.openlocfilehash: ec020e311de0c5df80b361ceb1fc3d4de36ca6ea
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0a4adf8b6e1a241380f357a6a71e8c291d5903da
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050602"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289814"
 ---
-# <a name="get-a-driveitem-resource"></a>Получение ресурса DriveItem
+# <a name="get-a-driveitem-resource"></a>Получение ресурса driveItem
 
 Пространство имен: microsoft.graph
 
-Получение метаданных для [DriveItem](../resources/driveitem.md) в объекте [Drive](../resources/drive.md) по пути в файловой системе или идентификатору.
+Получение метаданных для [driveItem](../resources/driveitem.md) в объекте [drive](../resources/drive.md) по пути в файловой системе или идентификатору.
+`item-id` — это идентификатор driveItem. Он также может быть уникальным идентификатором [элемента списка SharePoint](../resources/listitem.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -65,7 +65,7 @@ GET /users/{user-id}/drive/root:/{item-path}
 
 ## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика `200 OK` и ресурс [DriveItem](../resources/driveitem.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и ресурс [driveItem](../resources/driveitem.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -135,9 +135,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="see-also"></a>См. также
 
-Дополнительные сведения о возвращении ошибок см. в статье [Ответы с ошибками][error-response].
+Подробнее о том, как возвращаются ошибки, см. в статье [Возвращение ошибок][error-response].
 
 [error-response]: /graph/errors
 [odata-parameters]: /graph/query-parameters

@@ -2,15 +2,15 @@
 title: Обновление объекта команды
 description: Обновление свойств указанной команды.
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9ec5fd97ee1c747553752abced48efd0743bc65e
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 6a60ec2bcd186a86d0a11c2e0a8af11112476915
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786694"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60288946"
 ---
 # <a name="update-team"></a>Обновление объекта команды
 
@@ -26,11 +26,11 @@ ms.locfileid: "52786694"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | TeamSettings.ReadWrite.All, Group.ReadWrite.All,**Directory.ReadWrite.All** |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | TeamSettings.ReadWrite.Group*, TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application | TeamSettings.ReadWrite.Group,*TeamSettings.ReadWrite.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc). Разрешения, отмеченные **, не используются и не должны использоваться.
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
@@ -42,7 +42,7 @@ PATCH /teams/{team-id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса

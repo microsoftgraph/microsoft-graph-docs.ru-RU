@@ -2,15 +2,15 @@
 title: Удаление события
 description: Удаление объекта event.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c86fe5e188c5a5ce025b56a336922552d8098625
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 09fdc8ef52336681d3401a6ad9ebb5ef059909ac
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681860"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60290003"
 ---
 # <a name="delete-event"></a>Удаление события
 
@@ -37,9 +37,9 @@ DELETE /groups/{id}/calendar/events/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Имя       | Описание|
+|:---------------|:--------|
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -79,7 +79,7 @@ DELETE https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
