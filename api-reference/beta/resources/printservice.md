@@ -1,42 +1,42 @@
 ---
-title: Тип ресурса Принтсервице
-description: Представляет специфическое для клиента Azure AD описание экземпляра службы печати. Службы существуют для каждого компонента инфраструктуры печати (например, обнаружение, уведомления, регистрация и протокол IPP) и имеют одну или несколько конечных точек.
+title: тип ресурса printService
+description: Представляет описание конкретного клиента Azure AD экземпляра службы печати. Службы существуют для каждого компонента инфраструктуры печати (например, обнаружения, уведомления, регистрации и IPP) и имеют одну или несколько конечных точек.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 00ba50369f2396250df632c13ed3945e8c9d40d1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 08b5a0857a62e91f545c6678398f54c4585436be
+ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052545"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "60355241"
 ---
-# <a name="printservice-resource-type"></a>Тип ресурса Принтсервице
+# <a name="printservice-resource-type"></a>тип ресурса printService
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет специфическое для клиента Azure AD описание экземпляра службы печати. Службы существуют для каждого компонента инфраструктуры печати (обнаружение, уведомления, регистрация и протокол IPP) и имеют одну или несколько конечных точек.
+Представляет описание конкретного клиента Azure AD экземпляра службы печати. Службы существуют для каждого компонента инфраструктуры печати (обнаружения, уведомлений, регистрации и IPP) и имеют одну или несколько конечных точек.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список служб](../api/print-list-services.md) | Коллекция [принтсервице](printservice.md) | Получение списка универсальных служб печати. |
-| [Получение службы](../api/printservice-get.md) | [принтсервице](printservice.md) | Считывание свойств и связей объекта Service. |
-| [Перечисление конечных точек](../api/printservice-list-endpoints.md) | Коллекция [принтсервицеендпоинт](printserviceendpoint.md) | Получение списка конечных точек, предоставляемых службой. |
+| [Службы списка](../api/print-list-services.md) | [коллекция printService](printservice.md) | Получите список служб универсальной печати. |
+| [Получить службу](../api/printservice-get.md) | [printService](printservice.md) | Ознакомьтесь с свойствами и отношениями объекта-службы. |
+| [Перечисление конечных точек](../api/printservice-list-endpoints.md) | [коллекция printServiceEndpoint](printserviceendpoint.md) | Получите список конечных точек, которые предоставляет служба. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |id|String|Идентификатор службы. Только для чтения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|endpoints|Коллекция [принтсервицеендпоинт](printserviceendpoint.md)| Конечные точки, которые можно использовать для доступа к службе. Только для чтения. Допускается значение null.|
+|endpoints|[коллекция printServiceEndpoint](printserviceendpoint.md)| Конечные точки, которые можно использовать для доступа к службе. Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -57,7 +57,6 @@ ms.locfileid: "48052545"
   "id": "String (identifier)",
   "endpoints": [ {"@odata.type": "microsoft.graph.printServiceEndpoint"} ]
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

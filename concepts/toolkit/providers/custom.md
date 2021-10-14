@@ -3,12 +3,12 @@ title: Настраиваемый поставщик
 description: Создайте настраиваемый поставщик, чтобы включить проверку подлинности и доступ к Microsoft Graph для компонентов Microsoft Graph Toolkit при наличии существующего кода проверки подлинности в вашем приложении.
 ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: be470ed25acccb3fcdd1499b0048a33dae7c5d13
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: db939fbad5eb8d488514eac9c2dfa275f4984c66
+ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143573"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "60355248"
 ---
 # <a name="custom-provider"></a>Настраиваемый поставщик
 
@@ -91,7 +91,7 @@ this.graph = new Graph(this);
 
 ### <a name="example"></a>Пример
 
-Все поставщики расширяют абстрактный класс `IProvider`. Например, посмотрите на исходный код для любого из [существующих поставщиков](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/packages/mgt/src/providers).
+Все поставщики расширяют абстрактный класс `IProvider`. Например, посмотрите на исходный код для любого из [существующих поставщиков](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/packages/providers).
 
 ## <a name="set-the-global-provider"></a>Настройка глобального поставщика
 

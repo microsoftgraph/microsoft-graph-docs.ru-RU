@@ -1,19 +1,8 @@
 ---
-author: JeremyKelley
-description: Асинхронно создает копию объекта [driveItem] [Item-Resource] (включая все дочерние элементы) в новом родительском элементе или с новым именем.
-ms.date: 09/10/2017
-title: Копирование файла или папки
-localization_priority: Normal
-ms.prod: sharepoint
-doc_type: apiPageType
-ms.openlocfilehash: fc0e23a75876659bce9717c752f87109b9d61bfb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
-ms.translationtype: MT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955708"
+Описание: JeremyKelley: "Асинхронно создает копию [driveItem][item-resource] (включая любых детей) под новым родительским элементом или с новым именем".
+ms.date: 09/10/2017 title: driveItem: copy ms.localizationpriority: medium ms.prod: "sharepoint" doc_type: apiPageType
 ---
-# <a name="copy-a-driveitem"></a>Копирование ресурса DriveItem
+# <a name="driveitem-copy"></a>driveItem: скопируйте
 
 Пространство имен: microsoft.graph
 
@@ -42,8 +31,19 @@ POST /me/drive/items/{item-id}/copy
 POST /sites/{siteId}/drive/items/{itemId}/copy
 POST /users/{userId}/drive/items/{itemId}/copy
 ```
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-### <a name="request-body"></a>Текст запроса
+Этот метод поддерживает параметр `@microsoft.graph.conflictBehavior` запроса для настройки поведения при конфликте.
+
+| Значение           | Описание                                    |
+|:----------------|:---------------------------------------------- |
+| сбой            | По умолчанию необходимо сообщить о сбое.     |
+| replace         | Переопиши существующий элемент на целевом сайте.    |
+| rename          | Переименовать элемент.                               |
+
+**Примечание:** _ConflictBehavior_ не поддерживается для OneDrive Consumer.
+
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -55,11 +55,16 @@ POST /users/{userId}/drive/items/{itemId}/copy
 
 **Примечание.** Элемент _parentReference_ должен включать параметры `driveId` и `id` для целевой папки.
 
+## <a name="response"></a>Отклик
+
+Возвращает сведения о том, как [отслеживать ход](/graph/long-running-actions-overview) копирования после принятия запроса.
+
 ## <a name="example"></a>Пример
 
 В этом примере показано, как копировать файл с идентификатором `{item-id}` в папку с идентификатором `driveId` и значением `id`.
 У новой копии файла будет имя `contoso plan (copy).txt`.
 
+### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "target": "action" } -->
@@ -95,22 +100,19 @@ Content-Type: application/json
 ---
 
 
-## <a name="response"></a>Отклик
-
-Возвращает сведения о том, как [отслеживать ход](/graph/long-running-actions-overview) копирования после принятия запроса.
-
+### <a name="response"></a>Отклик
 <!-- { "blockType": "response" } -->
-
 ```http
 HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
-
-В значении заголовка `Location` имеется URL-адрес службы, которая возвращает сведения о текущем состоянии операции копирования. Вы можете использовать эту информацию, чтобы [определить время окончания копирования](/graph/long-running-actions-overview).
+В значении заголовка `Location` имеется URL-адрес службы, которая возвращает сведения о текущем состоянии операции копирования.
+Эти сведения можно использовать для [определения завершения копирования.](/graph/long-running-actions-overview)
 
 ### <a name="remarks"></a>Замечания
 
-Во многих случаях копирование выполняется асинхронно. Отклик API указывает, что операция копирования принята или отклонена, например из-за использования имени конечного файла.
+Во многих случаях копирование выполняется асинхронно.
+В ответе API будет указано только, что операция копирования была принята или отклонена; например, из-за имени файла назначения, уже используемом.
 
 [item-resource]: ../resources/driveitem.md
 

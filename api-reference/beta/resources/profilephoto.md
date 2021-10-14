@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса profilePhoto
-description: Фотография профиля пользователя, группы или контакта Outlook, доступ к которым осуществляется с помощью Exchange Online или Azure Active Directory (AAD). Двоичные данные, не закодированные в Base – 64.
-localization_priority: Normal
+description: Фотография профиля пользователя, группы или Outlook, доступ к Exchange Online или Azure Active Directory (AAD). Это двоичные данные, не представленные в кодировке base-64.
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: people
 author: kevinbellinger
-ms.openlocfilehash: a7f23f67c65f039d79057f26269c55e5b563c11c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f64f87c18bd6e5752671a6dbb28b8464f07cfa3a
+ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029087"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "60355549"
 ---
 # <a name="profilephoto-resource-type"></a>Тип ресурса profilePhoto
 
@@ -18,9 +18,9 @@ ms.locfileid: "48029087"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Фотография профиля пользователя, группы или контакта Outlook, доступ к которым осуществляется с помощью Exchange Online или Azure Active Directory (AAD). Двоичные данные, не закодированные в Base – 64.
+Фотография профиля пользователя, группы или Outlook, доступ к Exchange Online или Azure Active Directory (AAD). Это двоичные данные, не представленные в кодировке base-64.
 
-Поддерживаемые размеры фотографий в формате HD для Exchange Online: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504 и 648x648. В AAD фотографии могут быть любыми измерениями.
+Поддерживаемые размеры фотографий в формате HD для Exchange Online: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504 и 648x648. На AAD фотографии могут быть любого измерения.
 
 ## <a name="methods"></a>Методы
 
