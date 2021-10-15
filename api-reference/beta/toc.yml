@@ -577,7 +577,7 @@ items:
         items:
           - name: Обзор
             href: resources/groups-overview.md
-          - name: Группа
+          - name: Group
             href: resources/group.md
             items:
               - name: Список групп
@@ -888,7 +888,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: Список
+                      - name: List
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenissuancepolicies.md
@@ -897,7 +897,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: Список
+                      - name: List
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1081,7 +1081,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: Список
+                      - name: List
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: Удалить
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -1090,7 +1090,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: Список
+                      - name: List
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Удалить
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -1099,7 +1099,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: Список
+                      - name: List
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenissuancepolicies.md
@@ -1108,7 +1108,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: Список
+                      - name: List
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1496,11 +1496,11 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Получение
                     href: api/callrecords-callrecord-get.md
-              - name: Сеанс
+              - name: Session
                 items:
-                  - name: Сеанс
+                  - name: Session
                     href: resources/callrecords-session.md
-                  - name: Список
+                  - name: List
                     href: api/callrecords-session-list.md
               - name: Вызовы PSTN
                 items:
@@ -1518,16 +1518,37 @@ items:
             items:
               - name: Собрание по сети
                 href: resources/onlinemeeting.md
-              - name: Создание
-                href: api/application-post-onlinemeetings.md
-              - name: Получение
-                href: api/onlinemeeting-get.md
-              - name: Обновление
-                href: api/onlinemeeting-update.md
-              - name: Delete
-                href: api/onlinemeeting-delete.md
-              - name: Создание или получить
-                href: api/onlinemeeting-createorget.md
+                items:
+                  - name: Создание
+                    href: api/application-post-onlinemeetings.md
+                  - name: Получение
+                    href: api/onlinemeeting-get.md
+                  - name: Обновление
+                    href: api/onlinemeeting-update.md
+                  - name: Delete
+                    href: api/onlinemeeting-delete.md
+                  - name: Создание или получить
+                    href: api/onlinemeeting-createorget.md
+                  - name: Регистрация собраний
+                    href: resources/meetingregistration.md
+                    items:
+                      - name: Создание
+                        href: api/meetingregistration-post.md
+                      - name: Получение
+                        href: api/meetingregistration-get.md
+                      - name: Обновление
+                        href: api/meetingregistration-update.md
+                      - name: Delete
+                        href: api/meetingregistration-delete.md
+                  - name: Регистратор собраний
+                    href: resources/meetingregistrant.md
+                    items:
+                      - name: Список
+                        href: api/meetingregistration-list-registrants.md
+                      - name: Создание
+                        href: api/meetingregistration-post-registrants.md
+                      - name: Удалить
+                        href: api/meetingregistrant-delete.md
           - name: Присутствие
             href: resources/presence.md
             items:
@@ -4397,7 +4418,7 @@ items:
                     href: resources/intune-deviceconfig-certificaterevocationstatus.md
                   - name: Изменение разрешения uefi параметров
                     href: resources/intune-deviceconfig-changeuefisettingspermission.md
-                  - name: Code
+                  - name: Код
                     href: resources/intune-deviceconfig-code.md
                   - name: Использование конфигурации
                     href: resources/intune-deviceconfig-configurationusage.md
@@ -9784,7 +9805,7 @@ items:
               - name: 'Область, поддерживаемая облачным КОМПЬЮТЕРом'
                 href: resources/cloudpcsupportedregion.md
                 items:
-                  - name: Список
+                  - name: List
                     href: api/virtualendpoint-list-supportedregions.md
           - name: Обновления устройств (предварительная версия)
             displayName: Windows updates
@@ -12093,7 +12114,7 @@ items:
                   - name: Назначение пакета доступа
                     href: resources/accesspackageassignment.md
                     items:
-                      - name: Список
+                      - name: List
                         href: api/accesspackageassignment-list.md
                       - name: Фильтр текущего пользователя
                         href: api/accesspackageassignment-filterbycurrentuser.md
@@ -12732,7 +12753,7 @@ items:
                     href: api/educationalactivity-update.md
                   - name: Delete
                     href: api/educationalactivity-delete.md
-              - name: Адрес электронной почты;
+              - name: адрес электронной почты;
                 items:
                   - name: Электронная почта элемента
                     href: resources/itememail.md
@@ -13122,7 +13143,7 @@ items:
                   - name: Подробный сводка "Опираясь на стороне"
                     href: resources/relyingpartydetailedsummary.md
                     items:
-                      - name: Список
+                      - name: List
                         href: api/relyingpartydetailedsummary-list.md
               - name: Вход в приложение
                 items:
@@ -13417,7 +13438,7 @@ items:
       - name: Поиск
         displayname: Microsoft Search API
         items:
-          - name: Запрос
+          - name: Query
             items:
               - name: Обзор
                 href: resources/search-api-overview.md
@@ -13672,7 +13693,7 @@ items:
                     href: api/site-delete-permission.md
           - name: Списки
             items:
-              - name: Список
+              - name: List
                 href: resources/list.md
               - name: Получить списки на сайте
                 href: api/list-list.md
@@ -13772,7 +13793,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Обновление
                     href: api/termstore-store-update.md
-              - name: Группа
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: Создание
@@ -13786,7 +13807,7 @@ items:
               - name: Set
                 href: resources/termstore-set.md
                 items:
-                  - name: Список
+                  - name: List
                     href: api/termstore-group-list-sets.md
                   - name: Список дочерних элементов
                     href: api/termstore-term-list-children.md
@@ -14325,7 +14346,7 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: Получение
                     href: api/offershiftrequest-get.md
-                  - name: Список
+                  - name: List
                     href: api/offershiftrequest-list.md
                   - name: Утвердить
                     href: api/offershiftrequest-approve.md

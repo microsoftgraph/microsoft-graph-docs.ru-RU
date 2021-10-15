@@ -1,16 +1,16 @@
 ---
 title: 'пользователь: invalidateAllRefreshTokens'
 description: Недействительными признаны все маркеры обновления пользователя, выданные приложениям и cookie-файлам сеансов в браузере пользователя.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: a13982cb924c5c9b82c3248aefc13a54ec44bb2e
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: 36d012a2299e4a84d62769661d3662a69e171bfe
+ms.sourcegitcommit: c3f849e5a052b1926373a4b316ec303250e6d09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351050"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60369771"
 ---
 # <a name="user-invalidateallrefreshtokens"></a>пользователь: invalidateAllRefreshTokens
 
@@ -22,11 +22,15 @@ ms.locfileid: "53351050"
 
 Для разработчиков, если приложение пытается выкупить делегированный маркер доступа для этого пользователя с помощью недействительных маркеров обновления, приложение получит ошибку. Если это произойдет, приложению потребуется приобрести новый маркер обновления, сделав запрос в конечную точку авторизации, что заставит пользователя войти.
 
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-+ Чтобы приложение разрешило подписанному пользователю признать недействительными приложения, на которые они согласились: User.ReadWrite, Directory.ReadWrite.All, Directory.AccessAsUser.All
-+ Чтобы приложение разрешило администратору признать приложения недействительными, пользователь дал согласие: Directory.ReadWrite.All, Directory.AccessAsUser.All
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | User.ReadWrite, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +48,7 @@ POST /users/{id | userPrincipalName}/invalidateAllRefreshTokens
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `204 No Content`.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 >[!NOTE]
 >Этот API возвращает другой код ответа HTTP, аналогичный действию [revokeSignInSessions.](user-revokesigninsessions.md) Подробнее см. в [материале "Известная проблема".](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-HTTP-code) 

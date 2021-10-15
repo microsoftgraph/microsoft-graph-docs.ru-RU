@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 595323bce69b31a4193ebfc2f96cb8cbb2d566d8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9128a2d0441420d82e82275163f555751b9f574a
+ms.sourcegitcommit: c3f849e5a052b1926373a4b316ec303250e6d09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147859"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60369170"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>Отправка chatMessage в канале или чате
 
@@ -60,7 +60,7 @@ POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 POST /chats/{chat-id}/messages
 ```
 
-## <a name="request-headers"></a>Заголовки запроса
+## <a name="request-headers"></a>Заголовки запросов
 
 | Имя          | Описание   |
 |:--------------|:--------------|
@@ -528,7 +528,7 @@ Content-type: application/json
 
 > **Примечание:** TemporaryId **в** коллекции **hostedContents** — это случайный ID,  но он должен быть одинаковым по всему телу и элементам **hostedContents.** (Обратите внимание **на временный наборId** **до 1** и ссылку в теле как `../hostedContents/1/$value` .)
 
-**contentBytes** необходимо задать двоичным строкам Base64-encoded bytes. Это можно сделать в C# с помощью `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
+**contentBytes** необходимо задать двоичным строкам Base64-encoded bytes. Это можно сделать в C# с помощью `Convert.ToBase64String(File.ReadAllBytes("image.png"));` . Пользователи SDK .NET не должны выполнять преобразование в Base64, закодированные bytes, так как SDK обрабатывает его для вас.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -629,7 +629,7 @@ Content-type: application/json
 
 > **Примечание:** TemporaryId в коллекции **hostedContents** — это случайный ID, но должен быть одинаковым для контента **(в** вложениях) и элементов **hostedContents.**  (Обратите внимание **на временный наборId** **до 1** и ссылку в контенте как `../hostedContents/1/$value` .)
 
-**contentBytes** необходимо задать двоичным строкам Base64-encoded bytes. Это можно сделать в C# с помощью `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
+**contentBytes** необходимо задать двоичным строкам Base64-encoded bytes.  Это можно сделать в C# с помощью `Convert.ToBase64String(File.ReadAllBytes("image.png"));` . Пользователи SDK .NET не должны выполнять преобразование в Base64, закодированные bytes, так как SDK обрабатывает его для вас.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

@@ -5,18 +5,19 @@ ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: dda92842ca077f3521b5fbf3b726276e6bac1400
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 41e61c4adae951acc3602f37809f6903b8f3a79a
+ms.sourcegitcommit: c3f849e5a052b1926373a4b316ec303250e6d09e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59130361"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60369345"
 ---
 # <a name="range-clear"></a>Range: clear
 
 Пространство имен: microsoft.graph
 
-Очищает формат, заливку, границу, значения диапазона и т. д.
+Четкие значения диапазона, такие как формат, заполнение и граница.
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -35,8 +36,8 @@ POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>
 POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/clear
 POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/clear
 POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/clear
-
 ```
+
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
@@ -48,7 +49,7 @@ POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ra
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|applyTo|string|Необязательно. Определяет тип действия очистки.  Допустимые значения: `All`, `Formats`, `Contents`.|
+|applyTo|string|Необязательный параметр. Определяет тип действия очистки.  Допустимые значения: `All`, `Formats`, `Contents`.|
 
 ## <a name="response"></a>Отклик
 
