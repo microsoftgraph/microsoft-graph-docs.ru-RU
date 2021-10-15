@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: dbf3cf8f19d7ce86d2a3b22bdb6f4cb910951538
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 059cc55e7826dcc86e823ecd67b79c5301112593
+ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58262507"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "60366059"
 ---
 ```objc
 
@@ -14,6 +14,7 @@ MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationPr
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
 NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/applications/{id}/appManagementPolicies/$ref"]]];
 [urlRequest setHTTPMethod:@"POST"];
+[urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphAppManagementPolicy *appManagementPolicy = [[MSGraphAppManagementPolicy alloc] init];
 

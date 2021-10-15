@@ -3,14 +3,14 @@ title: Получение фотографии
 description: Получение указанного объекта profilePhoto или его метаданных (свойств profilePhoto).
 ms.localizationpriority: high
 author: kevinbellinger
-ms.prod: ''
+ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 855d8f72dcbc1804a07dd84ae3788693131ed8ca
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: af3e8ce6aa70980fbcbb1516f302aebf74d3c7fa
+ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104805"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "60354758"
 ---
 # <a name="get-photo"></a>Получение фотографии
 
@@ -35,7 +35,7 @@ ms.locfileid: "59104805"
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)      |   User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All           |
-|Делегированные (личная учетная запись Майкрософт)      |   Не поддерживается.            |
+|Делегированные (личная учетная запись Майкрософт)      |   User.Read, User.ReadWrite            |
 |Для приложений      |    User.Read.All, User.ReadWrite.All           |
 
 ### <a name="to-retrieve-the-profile-photo-of-a-group"></a>Для получения фотографии профиля группы
@@ -44,17 +44,19 @@ ms.locfileid: "59104805"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)      |   Group.Read.All, Group.ReadWrite.All           |
 |Делегированные (личная учетная запись Майкрософт)      |   Не поддерживается.            |
-|Для приложений      |    Group.Read.All, Group.ReadWrite.All           |
+|Приложение      |    Group.Read.All, Group.ReadWrite.All           |
 
 ### <a name="to-retrieve-the-profile-photo-of-a-contact"></a>Для получения фотографии профиля контакта
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)      |   Contacts.Read, Contacts.ReadWrite           |
-|Делегированные (личная учетная запись Майкрософт)      |   Не поддерживается.            |
+|Делегированные (личная учетная запись Майкрософт)      |   Contacts.Read, Contacts.ReadWrite            |
 |Для приложений      |    Contacts.Read, Contacts.ReadWrite           |
 
-> **Примечание.** В настоящее время существует [известная проблема](/graph/known-issues#groups) с доступом к фотографиям группы с помощью разрешений для приложений.
+> **Примечание.**  
+> 1. Операция с метаданными не поддерживается для личных учетных записей Майкрософт. 
+> 2. В настоящее время существует [известная проблема](/graph/known-issues#groups) c доступом к групповым фотографиям с помощью разрешений приложений.
 
 ## <a name="http-request"></a>HTTP-запрос
 

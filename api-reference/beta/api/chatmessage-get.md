@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 87ea2fe4e47ed8355469351c47eb6a53320ec76e
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 0b833345127dafaf1f16f547e5f1cb8ed4444e0d
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695891"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289835"
 ---
 # <a name="get-chatmessage-in-a-channel-or-chat"></a>Получение объекта chatMessage в канале или чате
 
@@ -28,9 +28,11 @@ ms.locfileid: "58695891"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись)| ChannelMessage.Read.All, Group.Read.All **, Group.ReadWrite.All** |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Application| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All **, Group.ReadWrite.All** |
+
+> **Примечание.** Разрешения, помеченные **, не используются и не должны использоваться.
 
 ### <a name="permissions-for-chat"></a>Разрешения для чата
 
@@ -68,7 +70,7 @@ GET /me/chats/{chat-id}/messages/{message-id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

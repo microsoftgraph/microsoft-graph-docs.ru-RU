@@ -3,14 +3,14 @@ title: Получение фотографии
 description: Получение указанного объекта profilePhoto или его метаданных (свойств **profilePhoto**).
 ms.localizationpriority: high
 doc_type: apiPageType
-ms.prod: ''
+ms.prod: people
 author: kevinbellinger
-ms.openlocfilehash: 690720e1c2de153a7b56aab30a1212f4b530a468
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 21a48e87dd4582024294503165e092cd7fa76751
+ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695415"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "60355556"
 ---
 # <a name="get-photo"></a>Получение фотографии
 
@@ -30,17 +30,37 @@ ms.locfileid: "58695415"
 Если указанный размер недоступен в почтовом ящике пользователя или Azure Active Directory, возвращается размер 1 x 1 и остальные метаданные.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
 > **Примечание.** Метод GET photo в бета-версии поддерживается для рабочих, учебных и личных учетных записей пользователя. Однако метод GET photo metadata поддерживается только для рабочих или учебных, но не личных учетных записей пользователя.
 
+### <a name="to-retrieve-the-profile-photo-of-a-user"></a>Для получения фотографии профиля пользователя
+
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Для ресурса **user**:<br/>User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All<br /><br />Для ресурса **group**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Для ресурса **contact**:<br />Contacts.Read, Contacts.ReadWrite |
-|Делегированные (личная учетная запись Майкрософт)  <br /> **Примечание**. Операция получения метаданных не поддерживается. | Для ресурса **user**:<br/>User.Read, User.ReadWrite<br /><br />Для ресурса **contact**:<br />Contacts.Read, Contacts.ReadWrite |
-|Для приложения                        | Для ресурса **user**:<br/>User.Read.All, User.ReadWrite.All<br /><br />Для ресурса **group**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Для ресурса **contact**:<br />Contacts.Read, Contacts.ReadWrite |
+|Делегированные (рабочая или учебная учетная запись)      |   User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All           |
+|Делегированные (личная учетная запись Майкрософт)      |   User.Read, User.ReadWrite            |
+|Для приложений      |    User.Read.All, User.ReadWrite.All           |
 
-> **Примечание.** В настоящее время существует [известная проблема](/graph/known-issues#groups) с доступом к фотографиям группы с помощью разрешений для приложений.
+### <a name="to-retrieve-the-profile-photo-of-a-group"></a>Для получения фотографии профиля группы
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись)      |   Group.Read.All, Group.ReadWrite.All           |
+|Делегированные (личная учетная запись Майкрософт)      |   Не поддерживается.            |
+|Приложение      |    Group.Read.All, Group.ReadWrite.All           |
+
+### <a name="to-retrieve-the-profile-photo-of-a-contact"></a>Для получения фотографии профиля контакта
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись)      |   Contacts.Read, Contacts.ReadWrite           |
+|Делегированные (личная учетная запись Майкрософт)      |   Contacts.Read, Contacts.ReadWrite            |
+|Для приложений      |    Contacts.Read, Contacts.ReadWrite           |
+
+> **Примечание.**  
+> 1. Операция с метаданными не поддерживается для личных учетных записей Майкрософт. 
+> 2. В настоящее время существует [известная проблема](/graph/known-issues#groups) c доступом к групповым фотографиям с помощью разрешений приложений.
 
 ## <a name="http-request"></a>HTTP-запрос
 

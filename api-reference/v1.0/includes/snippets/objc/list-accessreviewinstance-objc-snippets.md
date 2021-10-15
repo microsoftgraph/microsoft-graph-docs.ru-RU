@@ -1,18 +1,18 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: c2646b6946f57cb248368c4dfffd90952e87e6e051a17ada584b88540ff073b3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 24827cf3a76e9665944e34b47600c80ed27d122b
+ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57194817"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "60366026"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/identityGovernance/accessReviews/definitions/2dca8959-b716-4b4c-a93d-a535c01eb6e0/instances"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/identityGovernance/accessReviews/definitions/8564a649-4f67-4e09-88e7-55def6530e88/instances"]]];
 [urlRequest setHTTPMethod:@"GET"];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
