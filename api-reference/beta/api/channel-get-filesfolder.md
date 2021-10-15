@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e2d9c90a5acc5e852f269eb450f5380e402705f8
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 6181346cfe4234f052b0a9f5b91dede4103e9ba5
+ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695877"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60289457"
 ---
 # <a name="get-filesfolder"></a>Получение filesFolder
 
@@ -25,11 +25,11 @@ ms.locfileid: "58695877"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | Files.Read.All, Files.ReadWrite.All, Group.Read.All **, Group.ReadWrite.All** |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | File.Read.Group*, Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
+|Application | File.Read.Group *, Files.Read.All, Files.ReadWrite.All, Group.Read.All**, Group.ReadWrite.All** |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc). Разрешения, отмеченные **, не используются и не должны использоваться.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +44,7 @@ GET /teams/{id}/channels/{id}/filesFolder
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
