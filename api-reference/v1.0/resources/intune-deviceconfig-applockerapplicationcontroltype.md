@@ -2,15 +2,15 @@
 title: тип enum appLockerApplicationControlType
 description: Возможные значения типов управления приложениями AppLocker
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a7b29aba139162b76a9694e7d65d1bcdcd815e88
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dbd02e9add1fe098c4f52762bc9aa8902633fc37
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136497"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457318"
 ---
 # <a name="applockerapplicationcontroltype-enum-type"></a>тип enum appLockerApplicationControlType
 
@@ -28,7 +28,6 @@ ms.locfileid: "59136497"
 |auditComponentsAndStoreApps|2|Аудит Windows компонентов и хранения приложений.|
 |enforceComponentsStoreAppsAndSmartlocker|3|Обеспечение Windows компонентов, хранения приложений и смарт-шкафчик.|
 |auditComponentsStoreAppsAndSmartlocker|4 |Аудит Windows компонентов, хранения приложений и смарт-шкафчик.|
-
 
 
 

@@ -2,15 +2,15 @@
 title: тип enum siteSecurityLevel
 description: Возможные значения для уровня безопасности сайта.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 53de6c1ec01a6823c3d2ff404d6624b6a2bc4bd0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 76aace52690c82570715a407fd596d8d9e358ae8
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59049510"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457486"
 ---
 # <a name="sitesecuritylevel-enum-type"></a>тип enum siteSecurityLevel
 
@@ -28,8 +28,7 @@ ms.locfileid: "59049510"
 |mediumLow|2|Средне-низкий.|
 |medium|3|Средний.|
 |mediumHigh|4 |Средней высоты.|
-|высокая|5 |Высокая.|
-
+|высокая|5|Высокая.|
 
 
 

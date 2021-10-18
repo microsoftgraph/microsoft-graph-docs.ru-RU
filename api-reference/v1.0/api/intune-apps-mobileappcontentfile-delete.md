@@ -2,15 +2,15 @@
 title: Удаление объекта mobileAppContentFile
 description: Удаляет объекта mobileAppContentFile.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2aa25ecfdcca5c0fa2ac95101b38003bf8a76c89
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3e380b7165f32d2e3e49f4009d7c61a06a4e26af
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59079878"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451936"
 ---
 # <a name="delete-mobileappcontentfile"></a>Удаление объекта mobileAppContentFile
 
@@ -63,7 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: Обновление AndroidWorkProfileCompliancePolicy
 description: Обновление свойств объекта AndroidWorkProfileCompliancePolicy.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1abe95ec613a3a1af96fc16bd96283b0153db263
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ffa8f4aa6ec338a8b91fd091bdbc3ddcfdab9077
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140341"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454308"
 ---
 # <a name="update-androidworkprofilecompliancepolicy"></a>Обновление AndroidWorkProfileCompliancePolicy
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса поставляем представление JSON для [объекта AndroidWorkProfileCompliancePolicy.](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)
 
 В следующей таблице показаны свойства, необходимые при создании [androidWorkProfileCompliancePolicy.](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md)
@@ -160,7 +160,6 @@ Content-Length: 1342
   "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
-
 
 
 

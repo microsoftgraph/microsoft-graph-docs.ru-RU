@@ -2,15 +2,15 @@
 title: Получение deviceAndAppManagementRoleDefinition
 description: Считывание свойств и связей объекта deviceAndAppManagementRoleDefinition.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8fcfca404c49748d851e8846f30721f4e83dd1a7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4be2ab793fe1f99185057d45a8b82ac0d96e1782
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019862"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60456574"
 ---
 # <a name="get-deviceandappmanagementroledefinition"></a>Получение deviceAndAppManagementRoleDefinition
 
@@ -95,7 +95,6 @@ Content-Length: 712
   }
 }
 ```
-
 
 
 

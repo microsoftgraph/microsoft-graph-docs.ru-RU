@@ -2,15 +2,15 @@
 title: Перечисление объектов deviceInstallState
 description: Список свойств и связей объектов deviceInstallState.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ce85e6d425becba1bc57b4d6b3b954526cd33eb5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 737113abdac3842fb51ba4724ff995a784990371
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59068132"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60456216"
 ---
 # <a name="list-deviceinstallstates"></a>Перечисление объектов deviceInstallState
 
@@ -83,7 +83,6 @@ Content-Length: 496
   ]
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: Обновление объекта roleDefinition
 description: Обновление свойств объекта roleDefinition.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 503bb0b8601a078082530158bea52a73d466a7fe
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8eff96aa38b2fee6e95ed3ccc56b16cb1e0eb546
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050245"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457339"
 ---
 # <a name="update-roledefinition"></a>Обновление объекта roleDefinition
 
@@ -54,7 +54,7 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 |:---|:---|:---|
 |id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
 |displayName|String|Отображаемое имя определения роли.|
-|description|Строка|Описание определения роли.|
+|description|String|Описание определения роли.|
 |rolePermissions|Коллекция [rolePermission](../resources/intune-rbac-rolepermission.md)|Список разрешений, активированных для роли. Они должны соответствовать объекту actionName, который определен как часть rolePermission.|
 |isBuiltIn|Boolean|Тип роли. Для встроенного определения роли задается значение True, а для настраиваемого — False.|
 
@@ -127,7 +127,6 @@ Content-Length: 629
   "isBuiltIn": true
 }
 ```
-
 
 
 

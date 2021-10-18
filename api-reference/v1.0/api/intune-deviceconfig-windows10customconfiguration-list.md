@@ -2,15 +2,15 @@
 title: Перечисление объектов windows10CustomConfiguration
 description: Список свойств и связей объектов windows10CustomConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 275f382deac0581e7910e68f9eb53dca834965e2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0ba62c8e369a40e614cca7cab741c3ea83dbf621
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094914"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60456617"
 ---
 # <a name="list-windows10customconfigurations"></a>Перечисление объектов windows10CustomConfiguration
 
@@ -87,7 +87,6 @@ Content-Length: 643
   ]
 }
 ```
-
 
 
 

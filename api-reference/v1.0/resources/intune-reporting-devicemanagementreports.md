@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementReports
 description: Объект Singleton, который выступает в качестве контейнера для всех функциональных возможностей отчетов.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 65e384a9e05fd426b960baf595c35eb21c117340
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3aa8987b3f5ad615803d287f39d9d7af6c19b6ce
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036328"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448908"
 ---
 # <a name="devicemanagementreports-resource-type"></a>тип ресурса deviceManagementReports
 
@@ -36,6 +36,7 @@ ms.locfileid: "59036328"
 |[getConfigurationPolicyNonComplianceReport action](../api/intune-reporting-devicemanagementreports-getconfigurationpolicynoncompliancereport.md)|Stream|Н/Д|
 |[getConfigurationSettingNonComplianceReport action](../api/intune-reporting-devicemanagementreports-getconfigurationsettingnoncompliancereport.md)|Stream|Н/Д|
 |[getDeviceManagementIntentSettingsReport action](../api/intune-reporting-devicemanagementreports-getdevicemanagementintentsettingsreport.md)|Stream|Н/Д|
+|[getDeviceManagementIntentPerSettingContributingProfiles action](../api/intune-reporting-devicemanagementreports-getdevicemanagementintentpersettingcontributingprofiles.md)|Stream|Н/Д|
 |[getCompliancePolicyNonComplianceSummaryReport action](../api/intune-reporting-devicemanagementreports-getcompliancepolicynoncompliancesummaryreport.md)|Stream|Н/Д|
 |[действие getCompliancePolicyNonComplianceReport](../api/intune-reporting-devicemanagementreports-getcompliancepolicynoncompliancereport.md)|Stream|Н/Д|
 |[действие getComplianceSettingNonComplianceReport](../api/intune-reporting-devicemanagementreports-getcompliancesettingnoncompliancereport.md)|Stream|Н/Д|
@@ -44,7 +45,7 @@ ms.locfileid: "59036328"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для этого объекта|
+|id|String|Уникальный идентификатор для этого объекта|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -65,7 +66,6 @@ ms.locfileid: "59036328"
   "id": "String (identifier)"
 }
 ```
-
 
 
 

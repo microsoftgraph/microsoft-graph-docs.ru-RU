@@ -2,15 +2,15 @@
 title: Получение windowsPhone81CustomConfiguration
 description: Считывание свойств и связей объекта windowsPhone81CustomConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f55192868454076dbe8b7b797b29962efc4991ac
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4b0cac10e0a214d6f63ae98875d253a2672de356
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037623"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453375"
 ---
 # <a name="get-windowsphone81customconfiguration"></a>Получение windowsPhone81CustomConfiguration
 
@@ -88,7 +88,6 @@ Content-Length: 604
   }
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: Get deviceManagementReports
 description: Чтение свойств и связей объекта deviceManagementReports.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c490710b80b61f0cf63d0e7987839ae5c7cfe135
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d04caef5d13fea8ef70bd39ea041408bbb768096
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59079542"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449512"
 ---
 # <a name="get-devicemanagementreports"></a>Get deviceManagementReports
 
@@ -75,7 +75,6 @@ Content-Length: 137
   }
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: тип enum ratingUnitedKingdomTelevisionType
 description: Метки оценки телеконтента в Великобритании
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e7578dd5772715599d63d33c3e308b225c038fe7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0a35b85b1a65e1ebc622aeee4f92883f1e7e83c7
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59044638"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445741"
 ---
 # <a name="ratingunitedkingdomtelevisiontype-enum-type"></a>тип enum ratingUnitedKingdomTelevisionType
 
@@ -26,7 +26,6 @@ ms.locfileid: "59044638"
 |allAllowed|0|Значение по умолчанию, разрешить все содержимого тв-шоу|
 |allBlocked|1|Не разрешайте контент тв-шоу|
 |предостережение|2|Разрешение содержимого телевизора с предупреждением|
-
 
 
 

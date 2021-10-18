@@ -2,15 +2,15 @@
 title: Update termsAndConditions
 description: Обновление свойств объекта termsAndConditions.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9d2a6e612f6bcc04a0c4e97830cf54656ca1f587
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 15e97fb857cebe80818db34c8fe6e37037e6a450
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59085618"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447821"
 ---
 # <a name="update-termsandconditions"></a>Update termsAndConditions
 
@@ -56,7 +56,7 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |displayName|String|Имя политики использования, указанное администратором. |
-|description|Строка|Описание политики использования, указанное администратором.|
+|description|String|Описание политики использования, указанное администратором.|
 |title|String|Название условий, указанное администратором. Показывается пользователю при запросе на принятие политики использования.|
 |bodyText|String|Основной текст условий, заданный администратором (как правило, сами условия). Показывается пользователю при запросе на принятие политики использования.|
 |acceptanceStatement|String|Указанное администратором объяснение условий. Как правило, пользователю объясняется, с чем связано принятие условий, изложенных в соответствующей политике. Показывается пользователю при запросе на принятие политики использования.|
@@ -107,7 +107,6 @@ Content-Length: 445
   "version": 7
 }
 ```
-
 
 
 

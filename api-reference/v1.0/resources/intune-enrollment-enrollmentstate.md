@@ -2,15 +2,15 @@
 title: тип enum enrollmentState
 description: Пока не задокументировано.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d5817392c5beca9c605fac2ce47e0fb7dd8545b8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: acce3bb71f675ecc558768fcdbb3ee2071b073aa
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029026"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452869"
 ---
 # <a name="enrollmentstate-enum-type"></a>тип enum enrollmentState
 
@@ -28,7 +28,6 @@ ms.locfileid: "59029026"
 |pendingReset|2|Зарегистрирован, но он зарегистрирован через профиль регистрации, а зарегистрированный профиль отличается от назначенного профиля.|
 |не удалось|3|Не зарегистрирован, и есть запись сбоя регистрации.|
 |notContacted|4 |Устройство импортируется, но не регистрируется.|
-
 
 
 

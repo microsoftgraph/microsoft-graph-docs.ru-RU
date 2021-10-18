@@ -2,15 +2,15 @@
 title: Get iosVppApp
 description: Чтение свойств и связей объекта iosVppApp.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a573df16b976910581cf4bdc8ff4471bb0c0a41
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b86e61a442531913efd3faaa690c1f143501b891
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032953"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453093"
 ---
 # <a name="get-iosvppapp"></a>Get iosVppApp
 
@@ -110,7 +110,6 @@ Content-Length: 1487
   }
 }
 ```
-
 
 
 

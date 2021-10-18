@@ -2,15 +2,15 @@
 title: Delete iosManagedAppProtection
 description: Удаляет объект iosManagedAppProtection.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d93b52d143632cc93bc4dac8000a84c574efab1f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0182a3e3215e90f1dc3450dfe1be7706d17bb8cf
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139969"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60456272"
 ---
 # <a name="delete-iosmanagedappprotection"></a>Delete iosManagedAppProtection
 
@@ -44,7 +44,7 @@ DELETE /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -63,7 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/iosManagedAppProtect
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

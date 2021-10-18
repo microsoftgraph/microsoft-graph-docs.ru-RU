@@ -2,15 +2,15 @@
 title: Перечисление объектов deviceCompliancePolicy
 description: Список свойств и связей объектов deviceCompliancePolicy.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 53f9933fb0221d85566962a82856d676f35bb909
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8c49073d1ae8ae80f6dd0923ba4bdd3143ae268f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073543"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445293"
 ---
 # <a name="list-devicecompliancepolicies"></a>Перечисление объектов deviceCompliancePolicy
 
@@ -79,7 +79,6 @@ Content-Length: 393
   ]
 }
 ```
-
 
 
 

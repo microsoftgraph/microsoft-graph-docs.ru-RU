@@ -2,15 +2,15 @@
 title: Получить complianceManagementPartner
 description: Чтение свойств и связей объекта complianceManagementPartner.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f2a1986c5a5b9878a56d991eff4ba3c29daccd05
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 000727b76d78d161685530b33de8a102c57d2256
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59146966"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450266"
 ---
 # <a name="get-compliancemanagementpartner"></a>Получить complianceManagementPartner
 
@@ -47,7 +47,7 @@ GET /deviceManagement/complianceManagementPartners/{complianceManagementPartnerI
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -108,7 +108,6 @@ Content-Length: 1324
   }
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: тип из переумыка complianceState
 description: Состояние соответствия требованиям.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6dc585bd96a43fdab18fd46da0d7eafdec49126f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b371969e349340264b2a3ccd81ce008a1716b0c3
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098834"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450209"
 ---
 # <a name="compliancestate-enum-type"></a>тип из переумыка complianceState
 
@@ -30,7 +30,6 @@ ms.locfileid: "59098834"
 |error|4 |Ошибка|
 |inGracePeriod|254|Устройство не соответствует требованиям, но по-прежнему имеет доступ к корпоративным ресурсам|
 |configManager|255|Управление менеджером Config|
-
 
 
 

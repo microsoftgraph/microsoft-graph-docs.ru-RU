@@ -2,15 +2,15 @@
 title: тип enum mobileAppContentFileUploadState
 description: Содержит свойства для состояния запросов на отправку.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: aff36867137843fba9d86d9fec2cf4afafd7e05a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 63377a182ebab73e74b57c243654df79fdea4ba1
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056034"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457731"
 ---
 # <a name="mobileappcontentfileuploadstate-enum-type"></a>тип enum mobileAppContentFileUploadState
 
@@ -39,7 +39,6 @@ ms.locfileid: "59056034"
 |commitFilePending|301|Пока не задокументировано.|
 |commitFileFailed|302|Пока не задокументировано.|
 |commitFileTimedOut|303|Пока не задокументировано.|
-
 
 
 

@@ -2,15 +2,15 @@
 title: Обновление androidWorkProfileCustomConfiguration
 description: Обновление свойств объекта AndroidWorkProfileCustomConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e368fa21ad9de033b23f0092b8410ac4521243cc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 749e9b296135bd9fa8a12cc680e707c0f3d8a36f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140250"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452974"
 ---
 # <a name="update-androidworkprofilecustomconfiguration"></a>Обновление androidWorkProfileCustomConfiguration
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса предоставляем представление JSON для [объекта AndroidWorkProfileCustomConfiguration.](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)
 
 В следующей таблице показаны свойства, необходимые при создании [androidWorkProfileCustomConfiguration.](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)
@@ -114,7 +114,6 @@ Content-Length: 559
   ]
 }
 ```
-
 
 
 

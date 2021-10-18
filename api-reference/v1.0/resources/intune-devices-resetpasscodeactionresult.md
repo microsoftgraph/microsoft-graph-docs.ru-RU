@@ -2,15 +2,15 @@
 title: Тип ресурса resetPasscodeActionResult
 description: Результат действия "Сброс секретного кода"
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 180293d8f7631fe43eee06cab452cc399f01aab9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d14d946c0cb293e426f99bc7b8736bd75a1a2b11
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118203"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455213"
 ---
 # <a name="resetpasscodeactionresult-resource-type"></a>Тип ресурса resetPasscodeActionResult
 
@@ -32,7 +32,7 @@ ms.locfileid: "59118203"
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |passcode|String|Новый секретный код для устройства |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -52,7 +52,6 @@ ms.locfileid: "59118203"
   "passcode": "String"
 }
 ```
-
 
 
 

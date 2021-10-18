@@ -2,15 +2,15 @@
 title: действие getReportFilters
 description: Пока не задокументировано.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 424aa3acb05c00e0a8030e8af4f89486c178fa60
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5b2982c94ad37664b7068c44d66d57d2c55f9061
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59113954"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457416"
 ---
 # <a name="getreportfilters-action"></a>действие getReportFilters
 
@@ -106,7 +106,6 @@ Content-Length: 79
   "value": "Z2V0UmVwb3J0RmlsdGVycyBJbnR1bmUgRG9jIFNhbXBsZSAxMzYxOTI0Mjkx"
 }
 ```
-
 
 
 

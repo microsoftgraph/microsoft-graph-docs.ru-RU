@@ -2,15 +2,15 @@
 title: Перечисление объектов managedIOSStoreApp
 description: Список свойств и связей объектов managedIOSStoreApp.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 66b05096e9d218e40fd786807d30a0f926e8817a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 92ecd46a11fd68181a443208fd9f913e65ba191d
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59100094"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449448"
 ---
 # <a name="list-managediosstoreapps"></a>Перечисление объектов managedIOSStoreApp
 
@@ -110,7 +110,6 @@ Content-Length: 1481
   ]
 }
 ```
-
 
 
 

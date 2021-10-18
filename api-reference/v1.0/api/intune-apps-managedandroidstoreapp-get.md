@@ -2,15 +2,15 @@
 title: Get managedAndroidStoreApp
 description: Чтение свойств и связей объекта managedAndroidStoreApp.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 577620ed9b7c259d4bab2ad6003ce5c549abbef0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 16bfd9165f238cde86dd5d90b46618274ca0b286
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050385"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454574"
 ---
 # <a name="get-managedandroidstoreapp"></a>Get managedAndroidStoreApp
 
@@ -109,7 +109,6 @@ Content-Length: 1319
   }
 }
 ```
-
 
 
 

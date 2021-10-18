@@ -2,15 +2,15 @@
 title: тип enum androidWorkProfileRequiredPasswordType
 description: Рабочий профиль Android требуется тип пароля.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 20415e29b488a831d23856702f773a07276c9967
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 094babbe76ff6d395ee5ece0125cd89da15826ce
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59137534"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450238"
 ---
 # <a name="androidworkprofilerequiredpasswordtype-enum-type"></a>тип enum androidWorkProfileRequiredPasswordType
 
@@ -28,10 +28,9 @@ ms.locfileid: "59137534"
 |Обязательный|2|Обязательно.|
 |atLeastNumeric|3|Требуется по крайней мере числовая пароль.|
 |numericComplex|4 |Требуется числовый сложный пароль.|
-|atLeastAlphabetic|5 |Требуется по крайней мере алфавитный пароль.|
+|atLeastAlphabetic|5|Требуется по крайней мере алфавитный пароль.|
 |atLeastAlphanumeric|6 |Требуется, по крайней мере, альфа-числовая пароль.|
 |alphanumericWithSymbols|7 |По крайней мере, альфа-число с паролем символов.|
-
 
 
 

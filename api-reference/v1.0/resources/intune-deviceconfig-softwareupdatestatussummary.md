@@ -2,15 +2,15 @@
 title: Тип ресурса softwareUpdateStatusSummary
 description: Пока не задокументировано.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 94a097ce30e85def968139f3d575493a7f7d6943
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 71a23aa958511dea3c0ba6b119614718adc1ca85
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072276"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60444848"
 ---
 # <a name="softwareupdatestatussummary-resource-type"></a>Тип ресурса softwareUpdateStatusSummary
 
@@ -30,7 +30,7 @@ ms.locfileid: "59072276"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|displayName|Строка|Имя политики.|
+|displayName|String|Имя политики.|
 |compliantDeviceCount|Int32|Количество устройств, соответствующих требованиям.|
 |nonCompliantDeviceCount|Int32|Количество устройств, не соответствующих требованиям.|
 |remediatedDeviceCount|Int32|Количество исправленных устройств.|
@@ -78,7 +78,6 @@ ms.locfileid: "59072276"
   "notApplicableUserCount": 1024
 }
 ```
-
 
 
 

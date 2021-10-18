@@ -2,15 +2,15 @@
 title: Перечисление объектов iosLobApp
 description: Список свойств и связей объектов iosLobApp.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d95aed6a3957c1df425f86c877b6b54491712557
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 59ae3782c6bc79fa203295b579722bb3acc3bf5b
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59095054"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455199"
 ---
 # <a name="list-ioslobapps"></a>Перечисление объектов iosLobApp
 
@@ -113,7 +113,6 @@ Content-Length: 1618
   ]
 }
 ```
-
 
 
 

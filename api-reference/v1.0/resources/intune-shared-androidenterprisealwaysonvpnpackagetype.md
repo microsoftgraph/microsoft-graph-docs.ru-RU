@@ -2,15 +2,15 @@
 title: тип enum androidEnterpriseAlwaysOnVpnPackageType
 description: Пока не задокументировано.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fc2db5299f41791a3e529efe89606f7154915c12
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5f21c539a07535c942bfe3bb610af7575a496449
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134810"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446612"
 ---
 # <a name="androidenterprisealwaysonvpnpackagetype-enum-type"></a>тип enum androidEnterpriseAlwaysOnVpnPackageType
 
@@ -28,8 +28,7 @@ ms.locfileid: "59134810"
 |ciscoAnyConnect|2|Cisco AnyConnect.|
 |f5Access|3|Доступ к F5.|
 |paloAltoNetworksGlobalProtect|4 |Palo Alto Networks GlobalProtect.|
-|pulseSecure|5 |Pulse Secure.|
-
+|pulseSecure|5|Pulse Secure.|
 
 
 

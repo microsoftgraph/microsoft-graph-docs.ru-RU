@@ -2,15 +2,15 @@
 title: Перечисление пользователей
 description: Список свойств и связей объектов user.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: beb6f4810dd184ce78f9dd478ee74d65272a6e54
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c589f569c2150f464a0ad6288f89eccbd31e1b63
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147187"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60437008"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 
@@ -44,7 +44,7 @@ GET /users
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -74,7 +74,6 @@ Content-Length: 136
   ]
 }
 ```
-
 
 
 

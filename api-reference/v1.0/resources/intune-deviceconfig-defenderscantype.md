@@ -2,15 +2,15 @@
 title: тип enum defenderScanType
 description: Возможные значения для типа сканирования системы.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7fb236c43be6e4d62b88e8e3aac654e07dbb1603
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ffb10707dd94bb6082dffdacfe8dc7b6d52abe44
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59146858"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453851"
 ---
 # <a name="defenderscantype-enum-type"></a>тип enum defenderScanType
 
@@ -27,7 +27,6 @@ ms.locfileid: "59146858"
 |отключено|1|Отключено сканирование системы.|
 |быстрый|2|Быстрое сканирование системы.|
 |полный|3|Полное сканирование системы.|
-
 
 
 

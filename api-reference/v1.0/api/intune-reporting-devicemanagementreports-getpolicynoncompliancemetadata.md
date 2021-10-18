@@ -2,15 +2,15 @@
 title: действие getPolicyNonComplianceMetadata
 description: Пока не задокументировано.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5131bded56e3e725dcc225bc6e07b1ea97f6caa9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ff9df18d4e49cb8dc89b86cb439d1c81c7acad8b
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062973"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455902"
 ---
 # <a name="getpolicynoncompliancemetadata-action"></a>действие getPolicyNonComplianceMetadata
 
@@ -106,7 +106,6 @@ Content-Length: 99
   "value": "Z2V0UG9saWN5Tm9uQ29tcGxpYW5jZU1ldGFkYXRhIEludHVuZSBEb2MgU2FtcGxlIC0xNzM5NTg5Nzc5"
 }
 ```
-
 
 
 

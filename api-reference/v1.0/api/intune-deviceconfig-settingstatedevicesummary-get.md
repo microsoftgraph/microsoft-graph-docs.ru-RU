@@ -2,15 +2,15 @@
 title: Get settingStateDeviceSummary
 description: Чтение свойств и связей объекта settingStateDeviceSummary.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b2643c66b651cbae64f6ab4dcc9dcb39fbc2c85a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1d18507111ec9a32701409196b5a6959b869045a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59105162"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448095"
 ---
 # <a name="get-settingstatedevicesummary"></a>Get settingStateDeviceSummary
 
@@ -85,7 +85,6 @@ Content-Length: 450
   }
 }
 ```
-
 
 
 

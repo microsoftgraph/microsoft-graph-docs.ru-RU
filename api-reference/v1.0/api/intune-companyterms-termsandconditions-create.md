@@ -2,15 +2,15 @@
 title: Создание объекта termsAndConditions
 description: Создание объекта termsAndConditions.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ec95b7b7e3a2b20c835eb178dc09cef3c5f1b89f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7ac9001dc0df9171cda4ade944795f3f517b3355
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140530"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60456638"
 ---
 # <a name="create-termsandconditions"></a>Создание объекта termsAndConditions
 
@@ -44,7 +44,7 @@ POST /deviceManagement/termsAndConditions
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта termsAndConditions в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта termsAndConditions.
@@ -106,7 +106,6 @@ Content-Length: 445
   "version": 7
 }
 ```
-
 
 
 

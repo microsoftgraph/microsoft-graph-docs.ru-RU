@@ -2,15 +2,15 @@
 title: Тип ресурса resourceAction
 description: Набор разрешенных и не разрешенных действий для ресурса.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ebaf1f7a9c2b9b3cdb5dc94894fcb45c97790a45
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cf13bb9cf2bbc68aa85197b17c3ddcbe60aceaa7
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59028898"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454455"
 ---
 # <a name="resourceaction-resource-type"></a>Тип ресурса resourceAction
 
@@ -47,7 +47,6 @@ ms.locfileid: "59028898"
   ]
 }
 ```
-
 
 
 

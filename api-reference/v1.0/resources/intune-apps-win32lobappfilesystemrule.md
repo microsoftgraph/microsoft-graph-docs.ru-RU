@@ -2,15 +2,15 @@
 title: тип ресурса win32LobAppFileSystemRule
 description: Сложный тип для хранения данных правил файлов или папок для приложения LOB Win32.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f3be90843d9facaa04b430e4a00a64a60499aaf0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fef9a20c7a5bf8c9dd493e3fe5aa9b24e567a793
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59044701"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60456546"
 ---
 # <a name="win32lobappfilesystemrule-resource-type"></a>тип ресурса win32LobAppFileSystemRule
 
@@ -28,13 +28,13 @@ ms.locfileid: "59044701"
 |:---|:---|:---|
 |ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|Тип правила, указывающий цель правила. Унаследованный от [win32LobAppRule](../resources/intune-apps-win32lobapprule.md). Возможные значения: `detection`, `requirement`.|
 |path|String|Путь к файлу или папке.|
-|fileOrFolderName|Строка|Имя файла или папки.|
-|check32BitOn64System|Boolean|Значение, указывающее, следует ли расширять переменные среды в 32-битной среде на 64-битных системах.|
+|fileOrFolderName|String|Имя файла или папки.|
+|check32BitOn64System|Логический|Значение, указывающее, следует ли расширять переменные среды в 32-битной среде на 64-битных системах.|
 |operationType|[win32LobAppFileSystemOperationType](../resources/intune-apps-win32lobappfilesystemoperationtype.md)|Тип операции файловой системы. Возможные значения: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`.|
 |operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|Оператор обнаружения файлов или папок. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|comparisonValue|Строка|Значение сравнения файла или папки.|
+|comparisonValue|String|Значение сравнения файла или папки.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -56,7 +56,6 @@ ms.locfileid: "59044701"
   "comparisonValue": "String"
 }
 ```
-
 
 
 

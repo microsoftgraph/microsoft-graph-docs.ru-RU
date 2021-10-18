@@ -2,15 +2,15 @@
 title: Действие remoteLock
 description: Удаленная блокировка
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f116f433252d8026dc2d6c1f24fccf97dcd0989c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 538b4d40924ad540240bcf6804dd6606fd9b4d94
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056307"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445832"
 ---
 # <a name="remotelock-action"></a>Действие remoteLock
 
@@ -65,7 +65,6 @@ POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

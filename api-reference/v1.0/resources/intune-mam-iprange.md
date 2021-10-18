@@ -2,15 +2,15 @@
 title: Тип ресурса ipRange
 description: Базовый класс диапазона IP-адресов для представления диапазонов IPv4- и IPv6-адресов
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c733f5829b4898567499bdc1b56727008aeae655
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a99b16d8c5c5e0d7d244cc66d339f04cf24ebd2c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118168"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451971"
 ---
 # <a name="iprange-resource-type"></a>Тип ресурса ipRange
 
@@ -24,7 +24,7 @@ ms.locfileid: "59118168"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -39,7 +39,6 @@ ms.locfileid: "59118168"
   "@odata.type": "#microsoft.graph.ipRange"
 }
 ```
-
 
 
 

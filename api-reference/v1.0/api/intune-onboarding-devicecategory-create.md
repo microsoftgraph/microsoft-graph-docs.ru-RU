@@ -2,15 +2,15 @@
 title: Создание объекта deviceCategory
 description: Создание объекта deviceCategory.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f902a127928c806c7a64de92bf5411f8e72668a5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1c6278fefe718f865ddeb03569ad6ec6c2e7485c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59146921"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453354"
 ---
 # <a name="create-devicecategory"></a>Создание объекта deviceCategory
 
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceCategories
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта deviceCategory в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта deviceCategory.
@@ -90,7 +90,6 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
-
 
 
 

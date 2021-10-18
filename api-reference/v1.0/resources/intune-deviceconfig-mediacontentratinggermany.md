@@ -2,15 +2,15 @@
 title: Тип ресурса mediaContentRatingGermany
 description: Пока не задокументировано.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bb46f85466e9cb315460757fa6da50729b06f766
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 426e34f44e6e38749badce636de458e72877a132
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142679"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451185"
 ---
 # <a name="mediacontentratinggermany-resource-type"></a>Тип ресурса mediaContentRatingGermany
 
@@ -43,7 +43,6 @@ ms.locfileid: "59142679"
   "tvRating": "String"
 }
 ```
-
 
 
 

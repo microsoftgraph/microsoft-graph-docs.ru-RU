@@ -2,15 +2,15 @@
 title: тип ресурса win32LobAppMsiInformation
 description: Содержит свойства приложения MSI для приложения Win32.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 35432a3cd1e7755b4cc416e351b5cd236fa348f7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6acf39b1a611d7b607eb95ddca119ec63470bd9c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59044687"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450068"
 ---
 # <a name="win32lobappmsiinformation-resource-type"></a>тип ресурса win32LobAppMsiInformation
 
@@ -25,13 +25,13 @@ ms.locfileid: "59044687"
 |:---|:---|:---|
 |productCode|String|Код продукта MSI.|
 |productVersion|String|Версия продукта MSI.|
-|upgradeCode|Строка|Код обновления MSI.|
-|requiresReboot|Boolean|Требуется ли приложению MSI перезагрузить машину для завершения установки.|
+|upgradeCode|String|Код обновления MSI.|
+|requiresReboot|Логический|Требуется ли приложению MSI перезагрузить машину для завершения установки.|
 |packageType|[win32LobAppMsiPackageType](../resources/intune-apps-win32lobappmsipackagetype.md)|Тип пакета MSI. Возможные значения: `perMachine`, `perUser`, `dualPurpose`.|
 |productName|String|Имя продукта MSI.|
 |publisher|String|Издатель MSI.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -53,7 +53,6 @@ ms.locfileid: "59044687"
   "publisher": "String"
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: Создание объекта notificationMessageTemplate
 description: Создание объекта notificationMessageTemplate.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cf82bde93bf26617dc36a7981a6b255308ea0944
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0182fec7b7c46b3185fd5cb8637d701f0434f8d7
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147019"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455592"
 ---
 # <a name="create-notificationmessagetemplate"></a>Создание объекта notificationMessageTemplate
 
@@ -44,7 +44,7 @@ POST /deviceManagement/notificationMessageTemplates
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта notificationMessageTemplate в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта notificationMessageTemplate.
@@ -95,7 +95,6 @@ Content-Length: 310
   "brandingOptions": "includeCompanyLogo"
 }
 ```
-
 
 
 

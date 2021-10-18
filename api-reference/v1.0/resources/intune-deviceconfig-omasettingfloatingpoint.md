@@ -2,15 +2,15 @@
 title: Тип ресурса omaSettingFloatingPoint
 description: Определение плавающей запятой параметра OMA.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 264ca33f4f46bac40d1732058640962f655b4d33
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cb7a3ab4f42e32292563f2c9d4adeebf9f6d3030
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148111"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450469"
 ---
 # <a name="omasettingfloatingpoint-resource-type"></a>Тип ресурса omaSettingFloatingPoint
 
@@ -50,7 +50,6 @@ ms.locfileid: "59148111"
   "value": 4.2
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: тип ресурсов complianceManagementPartner
 description: Партнер по управлению соответствием требованиям для всех платформ
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 08bfcc9b0d2d36b2948abe4348ca1bea62faa9a4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9d719e540747d7845a69f04c7505b8ad8bd627b8
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148237"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445733"
 ---
 # <a name="compliancemanagementpartner-resource-type"></a>тип ресурсов complianceManagementPartner
 
@@ -26,7 +26,7 @@ ms.locfileid: "59148237"
 |[Список complianceManagementPartners](../api/intune-onboarding-compliancemanagementpartner-list.md)|[коллекция complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Список свойств и связей объектов [complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)|
 |[Получить complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-get.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Чтение свойств и связей объекта [complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)|
 |[Создание complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-create.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Создание нового [объекта complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)|
-|[Удаление complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-delete.md)|Нет|Удаляет [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md).|
+|[Удаление complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-delete.md)|Отсутствует|Удаляет [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md).|
 |[Обновление complianceManagementPartner](../api/intune-onboarding-compliancemanagementpartner-update.md)|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md)|Обновление свойств объекта [complianceManagementPartner.](../resources/intune-onboarding-compliancemanagementpartner.md)|
 
 ## <a name="properties"></a>Свойства
@@ -37,7 +37,7 @@ ms.locfileid: "59148237"
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера этого клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |displayName|String|Отображаемое имя партнера|
 |macOsOnboarded|Логический|Партнер, на борту для устройств Mac.|
-|AndroidOnboarded|Boolean|Партнер, на борту для android-устройств.|
+|AndroidOnboarded|Логический|Партнер, на борту для android-устройств.|
 |iosOnboarded|Логический|Партнер, на борту для устройств ios.|
 |macOsEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства Mac через партнера.|
 |AndroidEnrollmentAssignments|[коллекция complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрют устройства Android через партнера.|
@@ -93,7 +93,6 @@ ms.locfileid: "59148237"
   ]
 }
 ```
-
 
 
 

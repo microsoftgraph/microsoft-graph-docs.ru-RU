@@ -2,15 +2,15 @@
 title: Get iosCertificateProfile
 description: Чтение свойств и связей объекта iosCertificateProfile.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b8e1af188ab76dbc3492132c2ad51ff6442baaf1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 21fac5a8fb01dbde31ab4537243386ad3da7cd96
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073403"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451178"
 ---
 # <a name="get-ioscertificateprofile"></a>Get iosCertificateProfile
 
@@ -80,7 +80,6 @@ Content-Length: 364
   }
 }
 ```
-
 
 
 

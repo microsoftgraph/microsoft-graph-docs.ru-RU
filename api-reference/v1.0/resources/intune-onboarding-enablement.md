@@ -2,15 +2,15 @@
 title: тип enum enablement
 description: Пока не задокументировано.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4f23cccc70b3478dd92413a51db4e332818b4218
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: af53066663ed71292cbe2217510016540a53eee8
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072136"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447363"
 ---
 # <a name="enablement-enum-type"></a>тип enum enablement
 
@@ -26,7 +26,6 @@ ms.locfileid: "59072136"
 |notConfigured|0|Значение устройства по умолчанию, без намерения.|
 |включено|1|Включает параметр на устройстве.|
 |отключено|2|Отключает параметр на устройстве.|
-
 
 
 

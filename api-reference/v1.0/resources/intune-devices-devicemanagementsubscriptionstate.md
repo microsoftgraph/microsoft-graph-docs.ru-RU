@@ -2,15 +2,15 @@
 title: тип enum deviceManagementSubscriptionState
 description: Состояние подписки на управление мобильными устройствами для клиента.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 10ae40a29405973b1428ca1428ce303aa3514ec3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9306b50c9d382847997cd1d1f85256021c2b020e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148286"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447384"
 ---
 # <a name="devicemanagementsubscriptionstate-enum-type"></a>тип enum deviceManagementSubscriptionState
 
@@ -26,11 +26,10 @@ ms.locfileid: "59148286"
 |ожидание|0|Рассмотрение|
 |active|1|Активное|
 |warning|2|Предупреждение|
-|отключено|3|Отключено|
+|отключено|3|Disabled|
 |deleted|4 |Deleted|
-|заблокировано|5 |Заблокировано|
+|заблокировано|5|Заблокировано|
 |lockedOut|8 |LockedOut|
-
 
 
 

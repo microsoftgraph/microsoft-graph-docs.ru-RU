@@ -2,15 +2,15 @@
 title: Создать importedWindowsAutopilotDeviceIdentity
 description: Создать новый объект importedWindowsAutopilotDeviceIdentity.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fc4f688d1750240db9aaad0efa40d236a5084038
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: addcede1e7fe5c5cb433414f88da14144cbada25
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019946"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60456603"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>Создать importedWindowsAutopilotDeviceIdentity
 
@@ -51,14 +51,14 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentities
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|GUID объекта|
-|groupTag|Строка|Тег группы устройства Windows автопилота.|
+|id|String|GUID объекта|
+|groupTag|String|Тег группы устройства Windows автопилота.|
 |serialNumber|Строка|Серийный номер устройства Windows Autopilot.|
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
-|importId|Строка|Импорт Id устройства Windows автопилота.|
+|importId|String|Импорт Id устройства Windows автопилота.|
 |hardwareIdentifier|Двоичный|Аппаратный большой двоичный объект (BLOB) устройства Windows Autopilot.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Текущее состояние импортированного устройства.|
-|assignedUserPrincipalName|Строка|UPN пользователя, на которое будет назначено устройство|
+|assignedUserPrincipalName|String|UPN пользователя, на которое будет назначено устройство|
 
 
 
@@ -117,7 +117,6 @@ Content-Length: 680
   "assignedUserPrincipalName": "Assigned User Principal Name value"
 }
 ```
-
 
 
 

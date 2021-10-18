@@ -2,15 +2,15 @@
 title: Тип ресурса importedWindowsAutopilotDeviceIdentityState
 description: Пока не задокументировано.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c223d036f8f5d2fe2099778c350ed40d8575e9df
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9e1b21791d15fc65e7eb186da04723c41ac89aa7
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59028942"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454168"
 ---
 # <a name="importedwindowsautopilotdeviceidentitystate-resource-type"></a>Тип ресурса importedWindowsAutopilotDeviceIdentityState
 
@@ -47,7 +47,6 @@ ms.locfileid: "59028942"
   "deviceErrorName": "String"
 }
 ```
-
 
 
 

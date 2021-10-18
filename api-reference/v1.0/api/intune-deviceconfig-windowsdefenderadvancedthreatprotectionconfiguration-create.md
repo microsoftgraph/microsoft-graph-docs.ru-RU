@@ -2,15 +2,15 @@
 title: Создание объекта windowsDefenderAdvancedThreatProtectionConfiguration
 description: Создание объекта windowsDefenderAdvancedThreatProtectionConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d081ff36863c2ec4d5105b4b7e6b76164a0f9053
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c7a5e1755799082fc6d1b11e211be1bfde6d2895
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59144085"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447202"
 ---
 # <a name="create-windowsdefenderadvancedthreatprotectionconfiguration"></a>Создание объекта windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта windowsDefenderAdvancedThreatProtectionConfiguration в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта windowsDefenderAdvancedThreatProtectionConfiguration.
@@ -103,7 +103,6 @@ Content-Length: 439
   "enableExpeditedTelemetryReporting": true
 }
 ```
-
 
 
 

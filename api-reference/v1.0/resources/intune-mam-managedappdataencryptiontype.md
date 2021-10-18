@@ -2,15 +2,15 @@
 title: тип enum managedAppDataEncryptionType
 description: Представляет уровень шифрования данных приложений для управляемых приложений
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3840d0e2249225974e04017bca3e8d8c19be5c2a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7ca4e0fe6580cbc06002ff49c1d7b078c60da71f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118077"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446970"
 ---
 # <a name="managedappdataencryptiontype-enum-type"></a>тип enum managedAppDataEncryptionType
 
@@ -27,7 +27,6 @@ ms.locfileid: "59118077"
 |afterDeviceRestart|1|Данные приложения шифруются при перезапуске устройства.|
 |whenDeviceLockedExceptOpenFiles|2|Данные приложения, связанные с этой политикой, шифруются при блокировке устройства, за исключением открытых файлов.|
 |whenDeviceLocked|3|Данные приложения, связанные с этой политикой, шифруются при блокировке устройства|
-
 
 
 

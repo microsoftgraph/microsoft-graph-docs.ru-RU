@@ -2,15 +2,15 @@
 title: Тип ресурса deviceComplianceDeviceOverview
 description: Пока не задокументировано.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8a737de53161352eaf4b8a1f1a49ee8a37641ef5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 93e364853edf52d3f5fa4aae9d14ec329b8e868b
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072430"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60456532"
 ---
 # <a name="devicecompliancedeviceoverview-resource-type"></a>Тип ресурса deviceComplianceDeviceOverview
 
@@ -38,7 +38,7 @@ ms.locfileid: "59072430"
 |lastUpdateDateTime|DateTimeOffset|Время последнего обновления.|
 |configurationVersion|Int32|Версия политики для этого обзора|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -62,7 +62,6 @@ ms.locfileid: "59072430"
   "configurationVersion": 1024
 }
 ```
-
 
 
 

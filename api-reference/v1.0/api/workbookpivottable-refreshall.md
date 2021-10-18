@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d246a127235f924df30a0951d96ecc95f06c3141
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 789cdfee9b43a19c50eb3390e63a9bfa91d93fb6
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104503"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454399"
 ---
 # <a name="workbookpivottable-refreshall"></a>workbookPivotTable: refreshAll
 
@@ -30,14 +30,15 @@ ms.locfileid: "59104503"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/items/{id}/workbook/worksheets/{id}/pivotTables/refreshAll
-POST /me/drive/root:/{item-path}:/workbook/worksheets/{id}/pivotTables/refreshAll
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/pivotTables/refreshAll
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/pivotTables/refreshAll
+     /me/drive/items/{id}/workbook/worksheets/{id|name}/pivotTables/refreshAll
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -56,7 +57,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id}/pivotTables/refreshAl
   "name": "workbookpivottable_refreshall"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll
+POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id|name}/pivotTables/refreshAll
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/workbookpivottable-refreshall-csharp-snippets.md)]
@@ -84,7 +85,7 @@ POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/piv
   "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 204 No Content
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->

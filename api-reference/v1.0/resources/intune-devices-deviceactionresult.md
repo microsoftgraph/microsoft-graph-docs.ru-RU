@@ -2,15 +2,15 @@
 title: Тип ресурса deviceActionResult
 description: Результат действия с устройством
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d7ca5217159ef39d2a1914e2be2067e8e570177f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bb5dfca79388401ac4f4bad2ed5e2ee365cb64c9
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098792"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451425"
 ---
 # <a name="deviceactionresult-resource-type"></a>Тип ресурса deviceActionResult
 
@@ -28,7 +28,7 @@ ms.locfileid: "59098792"
 |startDateTime|DateTimeOffset|Время начала действия|
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления состояния действия|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -47,7 +47,6 @@ ms.locfileid: "59098792"
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

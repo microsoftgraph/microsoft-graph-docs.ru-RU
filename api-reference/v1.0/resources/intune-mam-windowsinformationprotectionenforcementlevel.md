@@ -2,15 +2,15 @@
 title: тип enum windowsInformationProtectionEnforcementLevel
 description: Возможные значения для уровней защиты WIP
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6da0d60d3f4900626e605d7f2213ed5a5a03b89a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 40ed4349acfdb31b3cb17d9173d76980dd6da9c6
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59052953"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452848"
 ---
 # <a name="windowsinformationprotectionenforcementlevel-enum-type"></a>тип enum windowsInformationProtectionEnforcementLevel
 
@@ -27,7 +27,6 @@ ms.locfileid: "59052953"
 |encryptAndAuditOnly|1|Только шифрование и аудит|
 |encryptAuditAndPrompt|2|Шифрование, аудит и запрос|
 |encryptAuditAndBlock|3|Шифрование, аудит и блокировка|
-
 
 
 

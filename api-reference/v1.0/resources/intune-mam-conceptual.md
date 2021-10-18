@@ -5,12 +5,12 @@ author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 4faf4c81211cf08ae6e0d823039415b3fb8b28e7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4a09cd527644f58f4389e47a23d96f812705b2d3
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062595"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454476"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -61,6 +61,7 @@ ms.locfileid: "59062595"
 - [Идентификатор мобильных приложений](intune-mam-mobileappidentifier.md)
 - [Проксируемый домен](intune-mam-proxieddomain.md)
 - [Целевая конфигурация управляемых приложений](intune-mam-targetedmanagedappconfiguration.md)
+- [Целевой тип группы управляемых приложений](intune-mam-targetedmanagedappgrouptype.md)
 - [Назначение целевой политики для управляемых приложений](intune-mam-targetedmanagedapppolicyassignment.md)
 - [Целевая защита управляемых приложений](intune-mam-targetedmanagedappprotection.md)
 - [Пользователь](intune-mam-user.md)

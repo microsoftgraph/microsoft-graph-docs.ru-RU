@@ -2,15 +2,15 @@
 title: Get windowsUpdateForBusinessConfiguration
 description: Чтение свойств и связей объекта windowsUpdateForBusinessConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e02fce828a02b259a3c9d8742b9138a91d46d45b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d53735d58b3eb63d036155db1be54e4941b95cfc
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59026527"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455508"
 ---
 # <a name="get-windowsupdateforbusinessconfiguration"></a>Get windowsUpdateForBusinessConfiguration
 
@@ -97,7 +97,6 @@ Content-Length: 1149
   }
 }
 ```
-
 
 
 

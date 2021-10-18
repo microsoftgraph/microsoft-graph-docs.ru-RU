@@ -2,15 +2,15 @@
 title: Тип ресурса iosUpdateConfiguration
 description: Конфигурация обновления iOS. Позволяет настраивать	временной промежуток в рамках недели для установки обновлений iOS.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5fe00fb2d307b7188662f2166f4224974913220d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f33832b823ace9dd255a4d269c36437a4fc1f2a5
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148125"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452540"
 ---
 # <a name="iosupdateconfiguration-resource-type"></a>Тип ресурса iosUpdateConfiguration
 
@@ -81,7 +81,6 @@ ms.locfileid: "59148125"
   "utcTimeOffsetInMinutes": 1024
 }
 ```
-
 
 
 

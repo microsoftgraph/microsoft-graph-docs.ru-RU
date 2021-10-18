@@ -2,15 +2,15 @@
 title: Тип ресурса omaSettingString
 description: Определение строки параметра OMA.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8f67c1fb070d40822e13dede1a8e384796ebfb46
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0453ee890daa2b237c6e7307b0c95a06d4af7136
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59146830"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446408"
 ---
 # <a name="omasettingstring-resource-type"></a>Тип ресурса omaSettingString
 
@@ -50,7 +50,6 @@ ms.locfileid: "59146830"
   "value": "String"
 }
 ```
-
 
 
 

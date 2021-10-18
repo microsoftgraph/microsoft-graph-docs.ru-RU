@@ -2,15 +2,15 @@
 title: тип enum safeSearchFilterType
 description: Указывает, какой уровень безопасного поиска (фильтрация контента для взрослых) требуется
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5f1dae423d5e0e123ee9d51ef774360057d639d2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5893adc19453b8c0ab299498385739cefb801e7b
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59067222"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457311"
 ---
 # <a name="safesearchfiltertype-enum-type"></a>тип enum safeSearchFilterType
 
@@ -26,7 +26,6 @@ ms.locfileid: "59067222"
 |userDefined|0|Значение User Defined, значение по умолчанию, без намерения.|
 |строгий|1|Строгая, самая высокая фильтрация по отношению к контенту для взрослых.|
 |умеренный|2|Умеренная фильтрация контента для взрослых (допустимые результаты поиска не будут фильтроваться).|
-
 
 
 

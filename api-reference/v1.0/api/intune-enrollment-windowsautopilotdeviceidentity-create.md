@@ -2,15 +2,15 @@
 title: Создание объекта windowsAutopilotDeviceIdentity
 description: Создание нового объекта windowsAutopilotDeviceIdentity.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 154edcd01c4cca64172f583981f2b8f513653811
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a1a2de6012d1a576b5f4c2c55e671d700313bfd0
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147264"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449837"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>Создание объекта windowsAutopilotDeviceIdentity
 
@@ -65,7 +65,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities
 |resourceName|String|Имя ресурса.|
 |skuNumber|String|Номер SKU|
 |systemFamily|String|Семейство system|
-|azureActiveDirectoryDeviceId|String|AAD Device ID - to be deprecated|
+|azureActiveDirectoryDeviceId|String|AAD ID устройства , который будет обесценить|
 |managedDeviceId|String|Управляемый ID устройства|
 |displayName|String|"Display Name" (Отображаемое имя);|
 
@@ -132,7 +132,6 @@ Content-Length: 863
   "displayName": "Display Name value"
 }
 ```
-
 
 
 

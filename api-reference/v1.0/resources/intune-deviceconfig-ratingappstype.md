@@ -2,15 +2,15 @@
 title: тип enum ratingAppsType
 description: Оценка приложений, как и в медиаконтенте
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fb3b4fca051577e17ce82b7df4b8158b47fbe0bc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4eec19c6f09f980a3e3ca701f8d7af2dc2caaf73
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109012"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450736"
 ---
 # <a name="ratingappstype-enum-type"></a>тип enum ratingAppsType
 
@@ -28,8 +28,7 @@ ms.locfileid: "59109012"
 |agesAbove4|2|4+, 4 и более лет|
 |agesAbove9|3|9+, 9 лет и старше|
 |agesAbove12|4 |12+, 12 лет и старше |
-|agesAbove17|5 |17+, 17 лет и старше|
-
+|agesAbove17|5|17+, 17 лет и старше|
 
 
 

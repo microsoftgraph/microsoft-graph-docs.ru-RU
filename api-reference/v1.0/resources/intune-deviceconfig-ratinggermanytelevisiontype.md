@@ -2,15 +2,15 @@
 title: тип enum ratingGermanyTelevisionType
 description: Метки оценки телеконтента в Германии
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 21f498d5293527f0f657b7c4b2262f2a68801bb1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5999ccd119b4290e4d254b7e198dab717590bea9
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142672"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450217"
 ---
 # <a name="ratinggermanytelevisiontype-enum-type"></a>тип enum ratingGermanyTelevisionType
 
@@ -28,9 +28,8 @@ ms.locfileid: "59142672"
 |общие|2|Ab 0 Jahren без ограничений по возрасту|
 |agesAbove6|3|Ab 6 Jahren, 6 лет и старше|
 |agesAbove12|4 |Ab 12 Jahren, 12 лет и старше|
-|agesAbove16|5 |Ab 16 Jahren, 16 лет и старше|
+|agesAbove16|5|Ab 16 Jahren, 16 лет и старше|
 |взрослые|6 |Ab 18 Jahren, только для взрослых|
-
 
 
 
