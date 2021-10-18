@@ -2,15 +2,15 @@
 title: Перечисление объектов managedAndroidStoreApp
 description: Список свойств и связей объектов managedAndroidStoreApp.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e88b421f98a45e0850589b1606820c1f7841e672
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c4d535af2e8d12d2d39eae1949f4d7bc3cb3067e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050378"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450434"
 ---
 # <a name="list-managedandroidstoreapps"></a>Перечисление объектов managedAndroidStoreApp
 
@@ -108,7 +108,6 @@ Content-Length: 1405
   ]
 }
 ```
-
 
 
 

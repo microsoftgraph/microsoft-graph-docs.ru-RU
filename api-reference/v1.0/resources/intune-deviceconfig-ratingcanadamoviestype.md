@@ -2,15 +2,15 @@
 title: тип enum ratingCanadaMoviesType
 description: Метки оценки фильмов в Канаде
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 31820cfeb41a39dc47b9beaaaa9fdd6f16077d4e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fc078b39518984e5ffb5f5d72fa5517dfabdae7c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053016"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447398"
 ---
 # <a name="ratingcanadamoviestype-enum-type"></a>тип enum ratingCanadaMoviesType
 
@@ -28,9 +28,8 @@ ms.locfileid: "59053016"
 |общие|2|Классификация G подходит для всех возрастов|
 |parentalGuidance|3|Классификация PG рекомендует родительские рекомендации|
 |agesAbove14|4 |Классификация 14A подходит для зрителей старше 14 лет|
-|agesAbove18|5 |Классификация 18A подходит для зрителей старше 18 лет|
+|agesAbove18|5|Классификация 18A подходит для зрителей старше 18 лет|
 |ограниченный|6 |Классификация R ограничена до 18 лет и старше|
-
 
 
 

@@ -2,15 +2,15 @@
 title: Delete deviceConfigurationAssignment
 description: Удаляет объект deviceConfigurationAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: efc5a60dbe11c3b2073acd6507d16bc249ed0089
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 63e0dc391680fcfcbf784415cd95d76a01f900e6
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59079696"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449732"
 ---
 # <a name="delete-deviceconfigurationassignment"></a>Delete deviceConfigurationAssignment
 
@@ -63,7 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

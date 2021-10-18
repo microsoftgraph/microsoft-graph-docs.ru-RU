@@ -2,15 +2,15 @@
 title: тип enum edgeSearchEngineType
 description: Позволяет ИТ-администратору устанавливать предопределяемую поисковую движок по умолчанию для MDM-Controlled устройств
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bc961d1348b1abbc49e15a800c43fe0af693a3cf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 769513cd46f5b092395b3e5a6575bca8993e8241
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098855"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453009"
 ---
 # <a name="edgesearchenginetype-enum-type"></a>тип enum edgeSearchEngineType
 
@@ -25,7 +25,6 @@ ms.locfileid: "59098855"
 |:---|:---|:---|
 |default|0|Использует заводские параметры Edge для назначения поисковой системы по умолчанию на пользовательском рынке|
 |bing|1|Задает Bing качестве поисковой системы по умолчанию|
-
 
 
 

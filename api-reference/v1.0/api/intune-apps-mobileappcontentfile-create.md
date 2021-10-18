@@ -2,15 +2,15 @@
 title: Создание объекта mobileAppContentFile
 description: Создание объекта mobileAppContentFile.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2c23eaa6e7dc59dcf4a42f1dc727a2f5ceebe3d0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5572cdc0efe29610fa9bd6b5e09a59064f25784b
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59079892"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60435801"
 ---
 # <a name="create-mobileappcontentfile"></a>Создание объекта mobileAppContentFile
 
@@ -53,7 +53,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 |:---|:---|:---|
 |azureStorageUri|String|URI службы хранилища Azure.|
 |isCommitted|Boolean|Значение, указывающее, является ли файл подтвержденным.|
-|id|Строка|Идентификатор файла.|
+|id|String|Идентификатор файла.|
 |createdDateTime|DateTimeOffset|Время создания файла.|
 |name|String|Имя файла.|
 |size|Int64|Размер файла до шифрования.|
@@ -110,7 +110,6 @@ Content-Length: 450
   "uploadState": "transientError"
 }
 ```
-
 
 
 

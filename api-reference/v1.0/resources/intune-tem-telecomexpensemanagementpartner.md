@@ -2,15 +2,15 @@
 title: Тип ресурса telecomExpenseManagementPartner
 description: Ресурсы telecomExpenseManagementPartner представляют метаданные и сведения о состоянии определенной службы TEM. После подключения партнера к вашей организации вы можете разрешить или запретить ему включать и отключать функции TEM.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8d083e9bd92cae588fdde7c29ac58c35e40a6bd2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5343f13a83b2d7403410d5dfe7dae62277ddef5e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021563"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60444793"
 ---
 # <a name="telecomexpensemanagementpartner-resource-type"></a>Тип ресурса telecomExpenseManagementPartner
 
@@ -32,8 +32,8 @@ ms.locfileid: "59021563"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор партнера TEM.|
-|displayName|Строка|Отображаемое имя партнера TEM.|
+|id|String|Уникальный идентификатор партнера TEM.|
+|displayName|String|Отображаемое имя партнера TEM.|
 |url|String|URL-адрес административной панели управления партнера TEM, где администратор может настроить службу TEM.|
 |appAuthorized|Boolean|Определяет, разрешен ли доступ к Intune партнерскому приложению AAD.|
 |enabled|Boolean|Определяет, включено или отключено сейчас подключение Intune к службе TEM.|
@@ -61,7 +61,6 @@ ms.locfileid: "59021563"
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

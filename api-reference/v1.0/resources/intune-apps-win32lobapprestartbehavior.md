@@ -2,15 +2,15 @@
 title: тип enum win32LobAppRestartBehavior
 description: Указывает тип действия перезагрузки.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 427328f8a7769f2aaac909f1c126d11614a240da
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 90eb7ed2c3f7568dfd4a69a4ffab8c52b7d79adb
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021689"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451354"
 ---
 # <a name="win32lobapprestartbehavior-enum-type"></a>тип enum win32LobAppRestartBehavior
 
@@ -27,7 +27,6 @@ ms.locfileid: "59021689"
 |разрешить|1|Intune не будет принимать каких-либо конкретных действий по перезагрузке кодов в результате установки приложений. Intune не будет пытаться подавить перезапуски для приложений MSI.|
 |подавление|2|Intune будет пытаться подавить перезапуски для приложений MSI.|
 |force|3|Intune заставит устройство перезапуститься сразу после операции установки приложения.|
-
 
 
 

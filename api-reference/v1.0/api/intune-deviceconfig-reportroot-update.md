@@ -2,15 +2,15 @@
 title: Обновление объекта reportRoot
 description: Обновление свойств объекта reportRoot.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 51b0bca2b131d0d1ec56b37c6947159ac8e911ec
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fc3c385b1f4014ff59aabeddf84391e1d1fc411a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59105189"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453389"
 ---
 # <a name="update-reportroot"></a>Обновление объекта reportRoot
 
@@ -51,7 +51,7 @@ PATCH /reports
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для этого объекта.|
+|id|String|Уникальный идентификатор для этого объекта.|
 
 
 
@@ -84,7 +84,6 @@ Content-Length: 101
   "id": "9ab6b3dd-b3dd-9ab6-ddb3-b69addb3b69a"
 }
 ```
-
 
 
 

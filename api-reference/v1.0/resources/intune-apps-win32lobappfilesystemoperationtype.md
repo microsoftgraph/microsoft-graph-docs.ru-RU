@@ -2,15 +2,15 @@
 title: тип enum win32LobAppFileSystemOperationType
 description: Содержит все поддерживаемые типы обнаружения файловой системы.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b9cd2c2c21bf6767466b65b785ca96f15db7b81b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6578bb14925fd6503499562903465f405c3e7f15
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072423"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449617"
 ---
 # <a name="win32lobappfilesystemoperationtype-enum-type"></a>тип enum win32LobAppFileSystemOperationType
 
@@ -28,8 +28,7 @@ ms.locfileid: "59072423"
 |modifiedDate|2|Последняя измененная дата.|
 |createdDate|3|Дата создания.|
 |version|4 |Тип значения версии.|
-|sizeInMB|5 |Тип обнаружения размеров.|
-
+|sizeInMB|5|Тип обнаружения размеров.|
 
 
 

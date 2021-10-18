@@ -2,15 +2,15 @@
 title: Обновление объекта remoteAssistancePartner
 description: Обновление свойств объекта remoteAssistancePartner.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0763c15995d12b3b1a8979ed3261394d16b1bbd4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2547a07968457ddaaaa6c453b62ffc0dfb9a3d23
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037497"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446002"
 ---
 # <a name="update-remoteassistancepartner"></a>Обновление объекта remoteAssistancePartner
 
@@ -52,7 +52,7 @@ PATCH /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор партнера.|
-|displayName|Строка|Отображаемое имя партнера.|
+|displayName|String|Отображаемое имя партнера.|
 |onboardingUrl|String|URL-адрес портала подключения партнера, где администратор может настроить свою службу удаленного помощника.|
 |onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|Удобное описание текущего состояния соединиттеля TeamViewer. Возможные значения: `notOnboarded`, `onboarding`, `onboarded`.|
 |lastConnectionDateTime|DateTimeOffset|Метка времени последнего запроса, отправленного в службу Intune партнером TEM.|
@@ -96,7 +96,6 @@ Content-Length: 315
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
-
 
 
 

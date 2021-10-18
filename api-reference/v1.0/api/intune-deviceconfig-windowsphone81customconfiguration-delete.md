@@ -2,15 +2,15 @@
 title: Удаление объекта windowsPhone81CustomConfiguration
 description: Удаляет объект windowsPhone81CustomConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ade4130eb6729af7199b12fd63e49e30ef6ff0df
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3bba43166ac5c943dd5cf54b461aa45437e7058a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037637"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457451"
 ---
 # <a name="delete-windowsphone81customconfiguration"></a>Удаление объекта windowsPhone81CustomConfiguration
 
@@ -63,7 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

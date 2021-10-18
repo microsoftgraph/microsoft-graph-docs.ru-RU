@@ -2,15 +2,15 @@
 title: тип enum win32LobAppReturnCodeType
 description: Указывает тип кода возврата.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cfbb030b2fe5083694dae3a12da9b16341d7c341
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f7a240213487c9a421affee8d5f0d4a4cd7fcb32
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021682"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448599"
 ---
 # <a name="win32lobappreturncodetype-enum-type"></a>тип enum win32LobAppReturnCodeType
 
@@ -28,7 +28,6 @@ ms.locfileid: "59021682"
 |softReboot|2|Требуется мягкая перезагрузка.|
 |hardReboot|3|Требуется перезагрузка с жесткой перезагрузами.|
 |retry|4 |Повторите попытку.|
-
 
 
 

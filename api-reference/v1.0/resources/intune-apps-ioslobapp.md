@@ -2,15 +2,15 @@
 title: Тип ресурса iosLobApp
 description: Содержит свойства, в том числе унаследованные, для бизнес-приложений iOS.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6b02866ab6adcb9185d8ea92a41a6e96ca3e05ad
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0a95fb1aa49e13806ab23a48d6ffd02541de265e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59137618"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454504"
 ---
 # <a name="ioslobapp-resource-type"></a>Тип ресурса iosLobApp
 
@@ -119,7 +119,6 @@ ms.locfileid: "59137618"
   "buildNumber": "String"
 }
 ```
-
 
 
 

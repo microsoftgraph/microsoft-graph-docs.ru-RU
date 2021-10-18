@@ -2,15 +2,15 @@
 title: Получение windowsInformationProtection
 description: Чтение свойств и связей объекта windowsInformationProtection.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 341b043333b42cab4b693983dfa8e7a95781effc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4885d0d2ab10d9aa6cac198e7539bd554bb14eb7
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147166"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453893"
 ---
 # <a name="get-windowsinformationprotection"></a>Получение windowsInformationProtection
 
@@ -49,7 +49,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -198,7 +198,6 @@ Content-Length: 4231
   }
 }
 ```
-
 
 
 

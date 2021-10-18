@@ -2,15 +2,15 @@
 title: Обновление объекта deviceAppManagement
 description: Обновление свойств объекта deviceAppManagement.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: db6f519ecee485eac73bd60ed841549e0707db37
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2e7401732751030c438e77113ba9b696b7f1ba48
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147327"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448501"
 ---
 # <a name="update-deviceappmanagement"></a>Обновление объекта deviceAppManagement
 
@@ -44,7 +44,7 @@ PATCH /deviceAppManagement
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [deviceAppManagement](../resources/intune-apps-deviceappmanagement.md) в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [deviceAppManagement](../resources/intune-apps-deviceappmanagement.md).
@@ -84,7 +84,6 @@ Content-Length: 110
   "id": "bbb801a3-01a3-bbb8-a301-b8bba301b8bb"
 }
 ```
-
 
 
 

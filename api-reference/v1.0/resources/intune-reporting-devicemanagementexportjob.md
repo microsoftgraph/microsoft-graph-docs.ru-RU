@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementExportJob
 description: Объект, представляющий задание по экспорту отчета
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d3bd80503e57d579294c7d6f0636571185916287
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6ac375ce598a71a2da7e228a4b3d31809b2f1677
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036335"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448929"
 ---
 # <a name="devicemanagementexportjob-resource-type"></a>тип ресурса deviceManagementExportJob
 
@@ -26,18 +26,18 @@ ms.locfileid: "59036335"
 |[Список deviceManagementExportJobs](../api/intune-reporting-devicemanagementexportjob-list.md)|[коллекция deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)|Список свойств и связей объектов [deviceManagementExportJob.](../resources/intune-reporting-devicemanagementexportjob.md)|
 |[Get deviceManagementExportJob](../api/intune-reporting-devicemanagementexportjob-get.md)|[deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)|Чтение свойств и связей [объекта deviceManagementExportJob.](../resources/intune-reporting-devicemanagementexportjob.md)|
 |[Создание deviceManagementExportJob](../api/intune-reporting-devicemanagementexportjob-create.md)|[deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)|Создание нового [объекта deviceManagementExportJob.](../resources/intune-reporting-devicemanagementexportjob.md)|
-|[Удаление deviceManagementExportJob](../api/intune-reporting-devicemanagementexportjob-delete.md)|Нет|Удаляет [устройствоManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md).|
+|[Удаление deviceManagementExportJob](../api/intune-reporting-devicemanagementexportjob-delete.md)|Отсутствует|Удаляет [устройствоManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md).|
 |[Обновление deviceManagementExportJob](../api/intune-reporting-devicemanagementexportjob-update.md)|[deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)|Обновление свойств объекта [deviceManagementExportJob.](../resources/intune-reporting-devicemanagementexportjob.md)|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для этого объекта|
-|reportName|Строка|Имя отчета|
-|filter|Строка|Фильтры, применяемые в отчете|
-|select|Коллекция String|Столбцы, выбранные из отчета|
+|reportName|String|Имя отчета|
+|filter|String|Фильтры, применяемые в отчете|
+|select|Коллекция строк|Столбцы, выбранные из отчета|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Формат экспортируемого отчета. Возможные значения: `csv`, `pdf`.|
-|snapshotId|Строка|Снимок — это идентифицируемый подмножество наборов данных, представленных в ReportName. Здесь можно использовать id sessionId или CachedReportConfiguration. Если задана sessionId, фильтр, выберите и OrderBy применяются к данным, представленным sessionId. Фильтр, выбор и OrderBy нельзя указать вместе с id CachedReportConfiguration.|
+|snapshotId|String|Снимок — это идентифицируемый подмножество наборов данных, представленных в ReportName. Здесь можно использовать id sessionId или CachedReportConfiguration. Если задана sessionId, фильтр, выберите и OrderBy применяются к данным, представленным sessionId. Фильтр, выбор и OrderBy нельзя указать вместе с id CachedReportConfiguration.|
 |ЛокализацияТип|[deviceManagementExportJobLocalizationType](../resources/intune-reporting-devicemanagementexportjoblocalizationtype.md)|Настройка локализации запрашиваемого задания экспорта. Возможные значения: `localizedValuesAsAdditionalColumn`, `replaceLocalizableValues`.|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Состояние задания экспорта. Возможные значения: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |url|String|Временное расположение экспортируемого отчета|
@@ -73,7 +73,6 @@ ms.locfileid: "59036335"
   "expirationDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

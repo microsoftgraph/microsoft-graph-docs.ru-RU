@@ -2,15 +2,15 @@
 title: Тип ресурса managedDeviceMobileAppConfigurationDeviceSummary
 description: Содержит свойства, унаследованные свойства и действия из сводки по состоянию конфигурации мобильных приложений MDM для устройства.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f4d6f082290ae817ffbce9982e1b613ac85bce23
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 88dbf0fee723a42475ebd1479472417d8d5e4eef
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089622"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451901"
 ---
 # <a name="manageddevicemobileappconfigurationdevicesummary-resource-type"></a>Тип ресурса managedDeviceMobileAppConfigurationDeviceSummary
 
@@ -38,7 +38,7 @@ ms.locfileid: "59089622"
 |lastUpdateDateTime|DateTimeOffset|Время последнего обновления.|
 |configurationVersion|Int32|Версия политики для этого обзора|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -62,7 +62,6 @@ ms.locfileid: "59089622"
   "configurationVersion": 1024
 }
 ```
-
 
 
 

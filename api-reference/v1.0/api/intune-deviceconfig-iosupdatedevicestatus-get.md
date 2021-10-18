@@ -2,15 +2,15 @@
 title: Get iosUpdateDeviceStatus
 description: Чтение свойств и связей объекта iosUpdateDeviceStatus.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 451e5bdf32f7bef3f1eabe372b8fba0a1a1f032a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b4232d457adb85cc71bd12502311ade85c1f5bd7
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053611"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447517"
 ---
 # <a name="get-iosupdatedevicestatus"></a>Get iosUpdateDeviceStatus
 
@@ -86,7 +86,6 @@ Content-Length: 646
   }
 }
 ```
-
 
 
 

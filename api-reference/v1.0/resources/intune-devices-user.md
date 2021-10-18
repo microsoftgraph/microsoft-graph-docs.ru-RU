@@ -2,15 +2,15 @@
 title: Тип ресурса user
 description: Пока не задокументировано.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 508a49c0e8d51a8dcbd7da30aabaae41ee119f73
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4f5ceecc7122ac9b7a3135c30a7d465eedaf6f34
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118196"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449329"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -33,9 +33,9 @@ ms.locfileid: "59118196"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор пользователя.|
+|id|String|Уникальный идентификатор пользователя.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |managedDevices|Коллекция [managedDevice](../resources/intune-devices-manageddevice.md)|Управляемые устройства, связанные с пользователем.|
@@ -54,7 +54,6 @@ ms.locfileid: "59118196"
   "id": "String (identifier)"
 }
 ```
-
 
 
 

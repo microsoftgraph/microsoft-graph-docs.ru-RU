@@ -2,15 +2,15 @@
 title: Тип ресурса appConfigurationSettingItem
 description: Содержит свойства для элемента параметра конфигурации приложения.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 945cd7442cd914033bd325ee97a0e9e156512b0d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 75c31fec0676b1a24d46e92c106f39d567d53926
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089706"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452020"
 ---
 # <a name="appconfigurationsettingitem-resource-type"></a>Тип ресурса appConfigurationSettingItem
 
@@ -27,7 +27,7 @@ ms.locfileid: "59089706"
 |appConfigKeyType|[mdmAppConfigKeyType](../resources/intune-apps-mdmappconfigkeytype.md)|Тип ключа конфигурации приложения. Возможные значения: `stringType`, `integerType`, `realType`, `booleanType`, `tokenType`.|
 |appConfigKeyValue|Строка|Значение ключа конфигурации приложения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -45,7 +45,6 @@ ms.locfileid: "59089706"
   "appConfigKeyValue": "String"
 }
 ```
-
 
 
 

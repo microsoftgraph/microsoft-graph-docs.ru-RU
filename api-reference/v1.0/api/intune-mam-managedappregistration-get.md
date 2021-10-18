@@ -2,15 +2,15 @@
 title: Get managedAppRegistration
 description: Чтение свойств и связей объекта managedAppRegistration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cb01498f091461f79fa7f37fa8aa597727e62fb0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bb0f40a4e341b96ce1c9c601f23079184c386a97
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073228"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446016"
 ---
 # <a name="get-managedappregistration"></a>Get managedAppRegistration
 
@@ -92,7 +92,6 @@ Content-Length: 803
   }
 }
 ```
-
 
 
 

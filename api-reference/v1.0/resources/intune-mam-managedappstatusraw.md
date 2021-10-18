@@ -2,15 +2,15 @@
 title: Тип ресурса managedAppStatusRaw
 description: Представляет нетипизированный отчет о состоянии, касающийся конфигурации и защиты приложений организации.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8846865265d4c88b5f3ea7e663982f4c5630d4c1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 96328189760e2e8caabc14ed3b2c3dc092d7b958
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036419"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450835"
 ---
 # <a name="managedappstatusraw-resource-type"></a>Тип ресурса managedAppStatusRaw
 
@@ -32,7 +32,7 @@ ms.locfileid: "59036419"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Понятное имя отчета о состоянии. Наследуется от объекта [managedAppStatus](../resources/intune-mam-managedappstatus.md).|
+|displayName|String|Понятное имя отчета о состоянии. Наследуется от объекта [managedAppStatus](../resources/intune-mam-managedappstatus.md).|
 |id|String|Ключ объекта. Наследуется от объекта [managedAppStatus](../resources/intune-mam-managedappstatus.md).|
 |version|String|Версия объекта. Наследуется от объекта [managedAppStatus](../resources/intune-mam-managedappstatus.md).|
 |content|[Json](../resources/intune-mam-json.md)|Содержимое отчета о состоянии.|
@@ -59,7 +59,6 @@ ms.locfileid: "59036419"
   }
 }
 ```
-
 
 
 

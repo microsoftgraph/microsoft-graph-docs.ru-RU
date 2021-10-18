@@ -2,15 +2,15 @@
 title: Get roleAssignment
 description: Чтение свойств и связей объекта roleAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d4adf9fe2a33a538c45a794d36ca82f74bbc7e42
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 01004729eb46e6b235d755cced07585667dbaebb
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016192"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449809"
 ---
 # <a name="get-roleassignment"></a>Get roleAssignment
 
@@ -80,7 +80,6 @@ Content-Length: 275
   }
 }
 ```
-
 
 
 

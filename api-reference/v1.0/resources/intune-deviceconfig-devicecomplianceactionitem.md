@@ -2,15 +2,15 @@
 title: Тип ресурса deviceComplianceActionItem
 description: Конфигурация запланированного действия
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 419634d630682bed3c0987d4023b2eb8bc3aa84c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0331700ae209d19a711bb970ff4ac4938a8a2b04
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036468"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449385"
 ---
 # <a name="devicecomplianceactionitem-resource-type"></a>Тип ресурса deviceComplianceActionItem
 
@@ -32,7 +32,7 @@ ms.locfileid: "59036468"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |gracePeriodHours|Int32|Время ожидания (в часах) до применения действия. Допустимые значения: от 0 до 8760|
 |actionType|[deviceComplianceActionType](../resources/intune-deviceconfig-devicecomplianceactiontype.md)|Какие действия необходимо принять. Возможные значения: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`, `pushNotification`.|
 |notificationTemplateId|String|Используемый шаблон сообщения уведомления|
@@ -61,7 +61,6 @@ ms.locfileid: "59036468"
   ]
 }
 ```
-
 
 
 

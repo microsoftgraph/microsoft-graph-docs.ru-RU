@@ -2,15 +2,15 @@
 title: тип enum ratingAustraliaMoviesType
 description: Метки рейтинга фильмов в Австралии
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 278d18d5d6ed8b6bae50f499f1248b50c088a9e7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bf19040a7db3a7f3cc8aa099f9e0bb45ec9b31d2
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053079"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445523"
 ---
 # <a name="ratingaustraliamoviestype-enum-type"></a>тип enum ratingAustraliaMoviesType
 
@@ -28,9 +28,8 @@ ms.locfileid: "59053079"
 |общие|2|Классификация G подходит для всех|
 |parentalGuidance|3|PG рекомендует зрителям в возрасте до 15 лет рекомендации родителей или опекунов|
 |зрелый|4 |Классификация M не рекомендуется для зрителей в возрасте до 15 лет|
-|agesAbove15|5 |Классификация MA15+ не подходит для зрителей в возрасте до 15 лет|
+|agesAbove15|5|Классификация MA15+ не подходит для зрителей в возрасте до 15 лет|
 |agesAbove18|6 |Классификация R18+ не подходит для зрителей в возрасте до 18 лет|
-
 
 
 

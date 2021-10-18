@@ -2,15 +2,15 @@
 title: Удаление объекта managedDeviceMobileAppConfigurationUserStatus
 description: Удаляет объект managedDeviceMobileAppConfigurationUserStatus.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ccdfb1ed8a94c7051cf6203b9122e6f39bd63183
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6edc613b8aa5f366bcf693d8d64b300186e5ba02
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029565"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448487"
 ---
 # <a name="delete-manageddevicemobileappconfigurationuserstatus"></a>Удаление объекта managedDeviceMobileAppConfigurationUserStatus
 
@@ -63,7 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurati
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

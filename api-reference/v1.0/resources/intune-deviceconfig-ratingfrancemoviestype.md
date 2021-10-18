@@ -2,15 +2,15 @@
 title: тип enum ratingFranceMoviesType
 description: Метки рейтинга фильмов во Франции
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 819d69eb3e8c1d336f98427221bf8e73b5d601df
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d95a5cc57765481d9d40eec82c89cfd3a553f26e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148090"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448571"
 ---
 # <a name="ratingfrancemoviestype-enum-type"></a>тип enum ratingFranceMoviesType
 
@@ -28,8 +28,7 @@ ms.locfileid: "59148090"
 |agesAbove10|2|Классификация 10 запрещает показ фильма несовершеннолетним в возрасте до 10 лет|
 |agesAbove12|3|Классификация 12 запрещает показ фильма несовершеннолетним в возрасте до 12 лет|
 |agesAbove16|4 |Классификация 16 запрещает показ фильма несовершеннолетним в возрасте до 16 лет|
-|agesAbove18|5 |Классификация 18 запрещает проверку несовершеннолетним в возрасте до 18 лет|
-
+|agesAbove18|5|Классификация 18 запрещает проверку несовершеннолетним в возрасте до 18 лет|
 
 
 

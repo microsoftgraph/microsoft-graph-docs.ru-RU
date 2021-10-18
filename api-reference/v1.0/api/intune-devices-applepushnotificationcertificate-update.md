@@ -2,15 +2,15 @@
 title: Обновление объекта applePushNotificationCertificate
 description: Обновление свойств объекта applePushNotificationCertificate.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1cda3261ba5e2cde5e5d6ed65afe32ac2feb927a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0f72927fc48c3d2680a8bb7b529289a46d3b111f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099625"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452090"
 ---
 # <a name="update-applepushnotificationcertificate"></a>Обновление объекта applePushNotificationCertificate
 
@@ -25,9 +25,9 @@ ms.locfileid: "59099625"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -51,12 +51,12 @@ PATCH /deviceManagement/applePushNotificationCertificate
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор сертификата|
+|id|String|Уникальный идентификатор сертификата|
 |appleIdentifier|String|Идентификатор Apple Id учетной записи, используемой для создания MDM Push Certificate.|
 |topicIdentifier|String|Идентификатор темы.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сертификата push-уведомлений Apple.|
 |expirationDateTime|DateTimeOffset|Дата и время окончания срока действия для сертификата push-уведомлений Apple.|
-|certificateSerialNumber|Строка|Серийный номер сертификата. Это свойство доступно только для чтения.|
+|certificateSerialNumber|String|Серийный номер сертификата. Это свойство доступно только для чтения.|
 |certificate|String|Пока не задокументировано.|
 
 
@@ -101,7 +101,6 @@ Content-Length: 449
   "certificate": "Certificate value"
 }
 ```
-
 
 
 

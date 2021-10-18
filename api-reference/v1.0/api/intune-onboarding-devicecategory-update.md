@@ -2,15 +2,15 @@
 title: Обновление объекта deviceCategory
 description: Обновление свойств объекта deviceCategory.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b65c20f3d4a5afe4b34f6d709030f87f355be354
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 760f9ba26ce52019d34d5fd6becaba70346f88be
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59146893"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453774"
 ---
 # <a name="update-devicecategory"></a>Обновление объекта deviceCategory
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [deviceCategory](../resources/intune-onboarding-devicecategory.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [deviceCategory](../resources/intune-onboarding-devicecategory.md).
@@ -90,7 +90,6 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
-
 
 
 

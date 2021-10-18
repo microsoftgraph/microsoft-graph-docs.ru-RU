@@ -2,15 +2,15 @@
 title: Создание объекта deviceComplianceScheduledActionForRule
 description: Создание объекта deviceComplianceScheduledActionForRule.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a3feffa386c705137cf5918e6d9234d1eb90f72
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2fddacdbd203d161aa0917fabae34f2b42dc7695
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099814"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454280"
 ---
 # <a name="create-devicecompliancescheduledactionforrule"></a>Создание объекта deviceComplianceScheduledActionForRule
 
@@ -51,8 +51,8 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sched
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|ruleName|String|Имя правила, к которому применяется это запланированное действие.|
+|id|String|Ключ объекта.|
+|ruleName|String|Имя правила, к которому применяется это запланированное действие. В настоящее время запланированные действия создаются для политики, а не для каждого правила, поэтому значение RuleName всегда задалось значению PasswordRequired по умолчанию.|
 
 
 
@@ -87,7 +87,6 @@ Content-Length: 163
   "ruleName": "Rule Name value"
 }
 ```
-
 
 
 

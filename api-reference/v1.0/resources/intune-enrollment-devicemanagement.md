@@ -2,15 +2,15 @@
 title: Тип ресурса deviceManagement
 description: Ресурс deviceManagement представляет идентификаторы устройств из коллекции клиента, которые были предварительно подготовлены в Intune, и профили регистрации, которые можно назначать идентификаторам устройств, поддерживающим конфигурацию до регистрации.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3022e89e0eb1aadb1eff0e4bb15e8834d6cb1374
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c0102a098760e303267cc2e510e4e18a4a320126
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029046"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452876"
 ---
 # <a name="devicemanagement-resource-type"></a>Тип ресурса deviceManagement
 
@@ -29,7 +29,7 @@ ms.locfileid: "59029046"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|GUID объекта.|
+|id|String|GUID объекта.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -51,7 +51,6 @@ ms.locfileid: "59029046"
   "id": "String (identifier)"
 }
 ```
-
 
 
 

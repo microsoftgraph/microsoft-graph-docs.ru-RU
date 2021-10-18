@@ -2,15 +2,15 @@
 title: Действие rebootNow
 description: Перезагрузка устройства
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 32a1a8b8e26662163902ee149fcaf2b55939e8ba
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ab0e889987f5eadb785c2e2ba5817751c70a8c09
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029334"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455501"
 ---
 # <a name="rebootnow-action"></a>Действие rebootNow
 
@@ -65,7 +65,6 @@ POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

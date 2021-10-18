@@ -2,15 +2,15 @@
 title: Создание объекта deviceInstallState
 description: Создание объекта deviceInstallState.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c9262af92b135ce3d026ae2c328ea4ee9077f17d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9ab8b951bd9d9dca7122c7fb7673ec9e28b4322c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59045471"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451929"
 ---
 # <a name="create-deviceinstallstate"></a>Создание объекта deviceInstallState
 
@@ -52,7 +52,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userI
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |deviceName|String|Имя устройства.|
 |deviceId|String|Идентификатор устройства.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации.|
@@ -109,7 +109,6 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
-
 
 
 

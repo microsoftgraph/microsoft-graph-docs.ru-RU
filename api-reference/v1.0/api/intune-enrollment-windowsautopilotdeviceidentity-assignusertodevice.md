@@ -2,15 +2,15 @@
 title: Действие assignUserToDevice
 description: Назначает пользователя устройствам автопилота.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6441f11e537690d9292c9b21d8768ff797ef461a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 63747a574ff357945f1607e2dac6b3d5b810de4f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59063232"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449547"
 ---
 # <a name="assignusertodevice-action"></a>Действие assignUserToDevice
 
@@ -80,7 +80,6 @@ Content-length: 113
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

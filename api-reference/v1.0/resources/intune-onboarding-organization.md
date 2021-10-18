@@ -2,15 +2,15 @@
 title: Тип ресурса organization
 description: Ресурс organization представляет экземпляр глобальных параметров и ресурсов, которые действуют и готовятся в работе на уровне клиента.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a65b4a42c9850ca01f293b9eed204da85e4192a8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5f974ae033389deba42a838f122e2b2bb200db84
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094256"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454779"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -34,7 +34,7 @@ ms.locfileid: "59094256"
 |id|String|GUID объекта.|
 |mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune-onboarding-mdmauthority.md)|Центр управления мобильными устройствами. Возможные значения: `unknown`, `intune`, `sccm`, `office365`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -52,7 +52,6 @@ ms.locfileid: "59094256"
   "mobileDeviceManagementAuthority": "String"
 }
 ```
-
 
 
 

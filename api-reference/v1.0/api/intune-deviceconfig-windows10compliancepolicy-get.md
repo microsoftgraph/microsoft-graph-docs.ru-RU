@@ -2,15 +2,15 @@
 title: Get windows10CompliancePolicy
 description: Чтение свойств и связей объекта windows10CompliancePolicy.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ace06aadd4e5012cf4f11ea2555a39a3be240f06
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b1ab9fdef4acd5f1fed0088dbc7f2e5fe0c06e2d
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022214"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448641"
 ---
 # <a name="get-windows10compliancepolicy"></a>Get windows10CompliancePolicy
 
@@ -99,7 +99,6 @@ Content-Length: 1197
   }
 }
 ```
-
 
 
 

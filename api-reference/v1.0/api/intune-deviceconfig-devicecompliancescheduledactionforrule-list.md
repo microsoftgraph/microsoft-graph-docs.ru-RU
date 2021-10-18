@@ -2,15 +2,15 @@
 title: List deviceComplianceScheduledActionForRules
 description: Перечисление свойств и связей объектов deviceComplianceScheduledActionForRule.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 77ebe6bb9232284e2ff8ff277a8a4db666e72288
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0752c9a08e34cad2617693916f5cc4ff444af0d0
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59079787"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451656"
 ---
 # <a name="list-devicecompliancescheduledactionforrules"></a>List deviceComplianceScheduledActionForRules
 
@@ -75,7 +75,6 @@ Content-Length: 208
   ]
 }
 ```
-
 
 
 

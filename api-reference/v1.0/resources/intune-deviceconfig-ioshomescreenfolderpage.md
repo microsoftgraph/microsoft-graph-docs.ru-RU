@@ -2,15 +2,15 @@
 title: Тип ресурса iosHomeScreenFolderPage
 description: Страница для папки, содержащей приложения и веб-клипы на домашнем экране.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: eb6b27fa9cf033914cc1471c75e78fd2cc244e87
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 580c84aeda70499944772828c10fe39242cc1d37
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136455"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455480"
 ---
 # <a name="ioshomescreenfolderpage-resource-type"></a>Тип ресурса iosHomeScreenFolderPage
 
@@ -23,10 +23,10 @@ ms.locfileid: "59136455"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя страницы папки|
+|displayName|String|Имя страницы папки|
 |apps|Коллекция [iosHomeScreenApp](../resources/intune-deviceconfig-ioshomescreenapp.md)|Список приложений и веб-клипов, которые будут отображаться на странице в папке. Эта коллекция может содержать не более 500 элементов.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -49,7 +49,6 @@ ms.locfileid: "59136455"
   ]
 }
 ```
-
 
 
 

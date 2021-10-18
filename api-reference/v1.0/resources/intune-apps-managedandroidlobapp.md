@@ -2,15 +2,15 @@
 title: managedAndroidLobApp resource type
 description: Содержит свойства, в том числе унаследованные, для управляемых бизнес-приложений Android.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 89557903ce134f3fb3e612e77c49b8da2b13e81e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f8fea9f471b92bd944335a571ea765fdd7fc100a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59113688"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451214"
 ---
 # <a name="managedandroidlobapp-resource-type"></a>managedAndroidLobApp resource type
 
@@ -36,7 +36,7 @@ ms.locfileid: "59113688"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |description|String|Описание приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -59,7 +59,7 @@ ms.locfileid: "59113688"
 |versionName|String|Имя версии управляемого бизнес-приложения для Android.|
 |versionCode|String|Код версии управляемого бизнес-приложения для Android.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |categories|Коллекция [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -118,7 +118,6 @@ ms.locfileid: "59113688"
   "versionCode": "String"
 }
 ```
-
 
 
 

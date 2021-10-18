@@ -2,15 +2,15 @@
 title: тип enum deviceComplianceActionType
 description: Scheduled Action Type Enum
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 07267e38f0675ee9d1b0c72e2687c4865fcd42ee
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 31b9c9079f48e3e9daed8ae46b0aaac68e1815e5
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072416"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453718"
 ---
 # <a name="devicecomplianceactiontype-enum-type"></a>тип enum deviceComplianceActionType
 
@@ -28,9 +28,8 @@ Scheduled Action Type Enum
 |block|2|Блокировка устройства в AAD|
 |уходить на пенсию|3|Отставку устройства|
 |wipe|4 |Протрите устройство|
-|removeResourceAccessProfiles|5 |Удаление профилей доступа к ресурсам с устройства|
+|removeResourceAccessProfiles|5|Удаление профилей доступа к ресурсам с устройства|
 |pushNotification|9 |Отправка push-уведомления на устройство|
-
 
 
 

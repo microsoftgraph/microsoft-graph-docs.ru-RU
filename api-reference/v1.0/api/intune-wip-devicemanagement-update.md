@@ -2,15 +2,15 @@
 title: Обновление объекта deviceManagement
 description: Обновление свойств объекта deviceManagement.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dc1c21ceee42b79f4568ae1163c73101a3593abb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b50111ff8f8a821dc0db033e4f7de8a147305637
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59144072"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445537"
 ---
 # <a name="update-devicemanagement"></a>Обновление объекта deviceManagement
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [deviceManagement](../resources/intune-wip-devicemanagement.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [deviceManagement](../resources/intune-wip-devicemanagement.md).
@@ -84,7 +84,6 @@ Content-Length: 107
   "id": "0b283420-3420-0b28-2034-280b2034280b"
 }
 ```
-
 
 
 

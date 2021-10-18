@@ -2,15 +2,15 @@
 title: Тип ресурса androidMobileAppIdentifier
 description: Идентификатор приложения для Android.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7aeb09451f320ac394d17e6b992b0a5ef0dffa8c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 046302cec3653e5dcbce7f63c75d99042149b1ee
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118182"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457395"
 ---
 # <a name="androidmobileappidentifier-resource-type"></a>Тип ресурса androidMobileAppIdentifier
 
@@ -28,7 +28,7 @@ ms.locfileid: "59118182"
 |:---|:---|:---|
 |packageId|String|Идентификатор приложения, указанный в магазине Google Play.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -44,7 +44,6 @@ ms.locfileid: "59118182"
   "packageId": "String"
 }
 ```
-
 
 
 

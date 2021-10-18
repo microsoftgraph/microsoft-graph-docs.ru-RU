@@ -2,15 +2,15 @@
 title: Создание объекта resourceOperation
 description: Создание объекта resourceOperation.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 82d899258123bba5fdb34a110a9c02e66f7a6dcc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2353f51925f4e0b8612b9f3db5f5e7984671aa55
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59114073"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60456567"
 ---
 # <a name="create-resourceoperation"></a>Создание объекта resourceOperation
 
@@ -54,7 +54,7 @@ POST /deviceManagement/resourceOperations
 |id|String|Ключ операции с ресурсом. Доступен только для чтения и создается автоматически.|
 |resourceName|String|Имя ресурса, с которым выполняется эта операция.|
 |actionName|String|Тип действия, которое выполнит эта операция. Свойство actionName должно быть максимально краткое (максимум несколько слов).|
-|description|Строка|Описание операции с ресурсом. Используется в тексте, который отображается над операцией при наведении указателя мыши на портале Azure.|
+|description|String|Описание операции с ресурсом. Используется в тексте, который отображается над операцией при наведении указателя мыши на портале Azure.|
 
 
 
@@ -93,7 +93,6 @@ Content-Length: 227
   "description": "Description value"
 }
 ```
-
 
 
 

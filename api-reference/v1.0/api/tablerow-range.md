@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d3d0c3873a8920db76cbb5df62a4b077b720dce0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3ce61ea0c22f620fac8d66101deb9c12b3328bf7
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59025904"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60434854"
 ---
 # <a name="tablerow-range"></a>TableRow: Range
 
@@ -30,10 +30,10 @@ ms.locfileid: "59025904"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}/range
-GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows/{index}/range
-GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/range
-GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/range
+GET /me/drive/items/{id}/workbook/tables/{id|name}/rows/itemAt(index={index})/range
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows/itemAt(index={index})/range
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows/itemAt(index={index})range
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows/itemAt(index={index})/range
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -60,7 +60,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/
   "name": "tablerow_range"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}/range
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows/itemAt(index={index})/range
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/tablerow-range-csharp-snippets.md)]

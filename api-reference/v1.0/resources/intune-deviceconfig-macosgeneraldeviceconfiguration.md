@@ -2,15 +2,15 @@
 title: Тип ресурса macOSGeneralDeviceConfiguration
 description: В этой статье описаны объявляемые методы, свойства и связи, которые предоставляются ресурсом macOSGeneralDeviceConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e9613f296b6174e1f196e732c8c57523f80614e5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 64898a9c4450bcbb2b3bf882f559e39b33c2e7e4
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148342"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454821"
 ---
 # <a name="macosgeneraldeviceconfiguration-resource-type"></a>Тип ресурса macOSGeneralDeviceConfiguration
 
@@ -105,7 +105,6 @@ ms.locfileid: "59148342"
   "passwordRequired": true
 }
 ```
-
 
 
 

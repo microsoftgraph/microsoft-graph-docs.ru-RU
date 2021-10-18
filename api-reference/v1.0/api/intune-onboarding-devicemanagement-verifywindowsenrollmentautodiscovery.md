@@ -2,15 +2,15 @@
 title: Функция verifyWindowsEnrollmentAutoDiscovery
 description: Пока не задокументировано.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d46e7c2e49b61916fa933ef3850628d520ad3db1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ecfa968b6452d20ec82039f4a8f7c6ef31eb677e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099590"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445797"
 ---
 # <a name="verifywindowsenrollmentautodiscovery-function"></a>Функция verifyWindowsEnrollmentAutoDiscovery
 
@@ -76,7 +76,6 @@ Content-Length: 21
   "value": true
 }
 ```
-
 
 
 

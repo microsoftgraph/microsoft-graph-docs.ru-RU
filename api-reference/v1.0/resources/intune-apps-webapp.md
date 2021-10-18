@@ -2,15 +2,15 @@
 title: Тип ресурса webApp
 description: Содержит свойства, в том числе унаследованные, для веб-приложений.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4954f53f92e74bc0456384c9c066b28c98c179a3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e5aed7272f94d87008188ed265efb3792197ab5c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072465"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455227"
 ---
 # <a name="webapp-resource-type"></a>Тип ресурса webApp
 
@@ -37,7 +37,7 @@ ms.locfileid: "59072465"
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|description|Строка|Описание приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|description|String|Описание приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -52,7 +52,7 @@ ms.locfileid: "59072465"
 |appUrl|String|URL-адрес веб-приложения. Это свойство не может быть PATCHed.|
 |useManagedBrowser|Boolean|Указывает, следует ли использовать управляемый браузер. Это свойство применимо только к Android и iOS.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |categories|Коллекция [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -91,7 +91,6 @@ ms.locfileid: "59072465"
   "useManagedBrowser": true
 }
 ```
-
 
 
 

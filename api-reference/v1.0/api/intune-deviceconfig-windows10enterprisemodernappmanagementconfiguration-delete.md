@@ -2,15 +2,15 @@
 title: Удаление объекта windows10EnterpriseModernAppManagementConfiguration
 description: Удаляет объект windows10EnterpriseModernAppManagementConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1c687989ef3e7e253edef5432aa561bf9c59528a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: deffe053359d7bb77ba12e45642d3156abca7d28
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59110629"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450146"
 ---
 # <a name="delete-windows10enterprisemodernappmanagementconfiguration"></a>Удаление объекта windows10EnterpriseModernAppManagementConfiguration
 
@@ -63,7 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

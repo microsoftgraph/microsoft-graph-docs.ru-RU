@@ -2,15 +2,15 @@
 title: Удаление объекта sharedPCConfiguration
 description: Удаляет объект sharedPCConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 88d25bfd7864a252f153cb08b468c3bfee329f05
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7c8c90dc205036d1788fc0de2464393c1d983949
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094963"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60456209"
 ---
 # <a name="delete-sharedpcconfiguration"></a>Удаление объекта sharedPCConfiguration
 
@@ -63,7 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: Тип ресурса androidManagedAppProtection
 description: Политика, используемая для настройки расширенных параметров управления для определенных групп безопасности и определенного набора приложений на устройстве Android
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bde9411748d2984a517f7e641452232e489efd51
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f51ba6dd5aeb0f4c516840c8d32795e0224d8bee
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59052981"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457290"
 ---
 # <a name="androidmanagedappprotection-resource-type"></a>Тип ресурса androidManagedAppProtection
 
@@ -36,7 +36,7 @@ ms.locfileid: "59052981"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|String|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|description|Строка|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|description|String|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |id|String|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
@@ -75,10 +75,10 @@ ms.locfileid: "59052981"
 |deployedAppCount|Int32|Количество приложений, к которым применена текущая политика.|
 |minimumRequiredPatchVersion|String|Определите самый старый уровень обновления для системы безопасности Android, необходимый для безопасного доступа к приложению.|
 |minimumWarningPatchVersion|String|Определите самый старый уровень обновления для системы безопасности Android, рекомендуемый для безопасного доступа к приложению.|
-|customBrowserPackageId|Строка|Уникальный идентификатор предпочтительного настраиваемого браузера для открытия веб-ссылки на Android. Когда это свойство настроено, managedBrowserToOpenLinksRequired должно быть верным.|
+|customBrowserPackageId|String|Уникальный идентификатор предпочтительного настраиваемого браузера для открытия веб-ссылки на Android. Когда это свойство настроено, managedBrowserToOpenLinksRequired должно быть верным.|
 |customBrowserDisplayName|String|Удобное имя предпочтительного настраиваемого браузера для открытия веб-ссылки на Android. Когда это свойство настроено, managedBrowserToOpenLinksRequired должно быть верным.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md)|Свойство навигации для списка групп включения и исключения, к которым применяется политика. Наследуется от [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md).|
@@ -142,7 +142,6 @@ ms.locfileid: "59052981"
   "customBrowserDisplayName": "String"
 }
 ```
-
 
 
 

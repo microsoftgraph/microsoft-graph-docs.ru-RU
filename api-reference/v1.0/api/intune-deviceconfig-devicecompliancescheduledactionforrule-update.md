@@ -2,15 +2,15 @@
 title: Обновление объекта deviceComplianceScheduledActionForRule
 description: Обновление свойств объекта deviceComplianceScheduledActionForRule.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9e262ea1ca34936313af70312b2883f19f5bc4b2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5977a0b743271afe6ab92cdac8efd13f1323f357
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59079780"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451649"
 ---
 # <a name="update-devicecompliancescheduledactionforrule"></a>Обновление объекта deviceComplianceScheduledActionForRule
 
@@ -51,8 +51,8 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sche
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|ruleName|String|Имя правила, к которому применяется это запланированное действие.|
+|id|String|Ключ объекта.|
+|ruleName|String|Имя правила, к которому применяется это запланированное действие. В настоящее время запланированные действия создаются для политики, а не для каждого правила, поэтому значение RuleName всегда задалось значению PasswordRequired по умолчанию.|
 
 
 
@@ -87,7 +87,6 @@ Content-Length: 163
   "ruleName": "Rule Name value"
 }
 ```
-
 
 
 

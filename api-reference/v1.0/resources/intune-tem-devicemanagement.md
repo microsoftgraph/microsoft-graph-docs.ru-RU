@@ -2,15 +2,15 @@
 title: Тип ресурса deviceManagement
 description: Одноэлементный объект, служащий контейнером для всех функций управления устройствами.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1f5792afe7d9469731b7692179475797befb7b84
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b81a309f220cb80d12efaae68c943bb0436c6a74
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021570"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452489"
 ---
 # <a name="devicemanagement-resource-type"></a>Тип ресурса deviceManagement
 
@@ -29,7 +29,7 @@ ms.locfileid: "59021570"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Н/Д|
+|id|String|Н/Д|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -50,7 +50,6 @@ ms.locfileid: "59021570"
   "id": "String (identifier)"
 }
 ```
-
 
 
 

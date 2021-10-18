@@ -2,15 +2,15 @@
 title: Удаление объекта managedEBookAssignment
 description: Удаляет объект managedEBookAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f490e71e07e257bde7a2cf77d0b8336aaef49355
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dbefca2b69baf4d7986445d3494ffd9dd2eff000
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59114360"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451915"
 ---
 # <a name="delete-managedebookassignment"></a>Удаление объекта managedEBookAssignment
 
@@ -63,7 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{manag
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

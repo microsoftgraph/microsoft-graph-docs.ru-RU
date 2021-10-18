@@ -2,15 +2,15 @@
 title: тип enum diagnosticDataSubmissionMode
 description: Разрешить устройству отправлять данные телеметрии диагностики и использования, такие как Watson.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c4c9103de20d6a9e3296dc8f03459925e17009c2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cc92f564c323d3a0d7303b1074c523f158a96979
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142777"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445140"
 ---
 # <a name="diagnosticdatasubmissionmode-enum-type"></a>тип enum diagnosticDataSubmissionMode
 
@@ -28,7 +28,6 @@ ms.locfileid: "59142777"
 |основные|2|Отправляет основные данные телеметрии.|
 |расширенный|3|Отправляет расширенные данные телеметрии, включая данные об использовании и анализах.|
 |полный|4 |Отправляет полные данные телеметрии, включая диагностические данные, например состояние системы.|
-
 
 
 

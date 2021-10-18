@@ -2,15 +2,15 @@
 title: тип ресурса windowsAutopilotDeviceIdentity
 description: Ресурс windowsAutopilotDeviceIdentity представляет собой устройство Windows автопилота.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bd481a0b527e9665e145a48a23b41b6a2aab24f6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 60e645830f79d1e16af05f69e2e65cfa2c856de7
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59028921"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446984"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>тип ресурса windowsAutopilotDeviceIdentity
 
@@ -26,30 +26,30 @@ ms.locfileid: "59028921"
 |[Список windowsAutopilotDeviceIdentities](../api/intune-enrollment-windowsautopilotdeviceidentity-list.md)|[коллекция windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Список свойств и связей объектов [windowsAutopilotDeviceIdentity.](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|
 |[Get windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-get.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Чтение свойств и связей объекта [windowsAutopilotDeviceIdentity.](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|
 |[Создание объекта windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-create.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Создание нового [объекта windowsAutopilotDeviceIdentity.](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|
-|[Удаление windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-delete.md)|Нет|Удаляет [объект windowsAutopilotDeviceIdentity.](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|
-|[Действие assignUserToDevice](../api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md)|Нет|Назначает пользователя устройствам автопилота.|
-|[Действие unassignUserFromDevice](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md)|Нет|Отписка пользователя с устройства Автопилота.|
-|[действие updateDeviceProperties](../api/intune-enrollment-windowsautopilotdeviceidentity-updatedeviceproperties.md)|Нет|Обновляет свойства на устройствах автопилота.|
+|[Удаление windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-delete.md)|Отсутствует|Удаляет [объект windowsAutopilotDeviceIdentity.](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|
+|[Действие assignUserToDevice](../api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md)|Отсутствует|Назначает пользователя устройствам автопилота.|
+|[Действие unassignUserFromDevice](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md)|Отсутствует|Отписка пользователя с устройства Автопилота.|
+|[действие updateDeviceProperties](../api/intune-enrollment-windowsautopilotdeviceidentity-updatedeviceproperties.md)|Отсутствует|Обновляет свойства на устройствах автопилота.|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|GUID объекта|
-|groupTag|Строка|Тег группы устройства Windows автопилота.|
-|purchaseOrderIdentifier|Строка|Покупка идентификатора заказа устройства Windows автопилота.|
+|groupTag|String|Тег группы устройства Windows автопилота.|
+|purchaseOrderIdentifier|String|Покупка идентификатора заказа устройства Windows автопилота.|
 |serialNumber|Строка|Серийный номер устройства Windows Autopilot.|
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
 |manufacturer|String|Oem производитель устройства Windows автопилота.|
 |model|String|Имя модели устройства Windows автопилота.|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Состояние регистрации intune устройства Windows автопилота. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`.|
 |lastContactedDateTime|DateTimeOffset|Intune Last Contacted Date Time of the Windows автопилота.|
-|addressableUserName|Строка|Адресное имя пользователя.|
+|addressableUserName|String|Адресное имя пользователя.|
 |userPrincipalName|String|Имя главного пользователя.|
 |resourceName|String|Имя ресурса.|
-|skuNumber|Строка|Номер SKU|
-|systemFamily|Строка|Семейство system|
-|azureActiveDirectoryDeviceId|Строка|AAD Device ID - to be deprecated|
-|managedDeviceId|Строка|Управляемый ID устройства|
+|skuNumber|String|Номер SKU|
+|systemFamily|String|Семейство system|
+|azureActiveDirectoryDeviceId|String|AAD ID устройства , который будет обесценить|
+|managedDeviceId|String|Управляемый ID устройства|
 |displayName|String|"Display Name" (Отображаемое имя);|
 
 ## <a name="relationships"></a>Связи
@@ -85,7 +85,6 @@ ms.locfileid: "59028921"
   "displayName": "String"
 }
 ```
-
 
 
 

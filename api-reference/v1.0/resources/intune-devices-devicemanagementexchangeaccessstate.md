@@ -2,15 +2,15 @@
 title: тип enum deviceManagementExchangeAccessState
 description: Состояние Exchange доступа.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 98d944f47664df4cdde69700998c44e28dcbcdfa
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b704cc1106bc0b203363dcbdad6019afeee5949d
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59044596"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452517"
 ---
 # <a name="devicemanagementexchangeaccessstate-enum-type"></a>тип enum deviceManagementExchangeAccessState
 
@@ -28,7 +28,6 @@ ms.locfileid: "59044596"
 |разрешено|2|Устройство имеет доступ к Exchange|
 |заблокировано|3|Устройство заблокировано в Exchange|
 |карантин|4 |Устройство находится на карантине в Exchange|
-
 
 
 

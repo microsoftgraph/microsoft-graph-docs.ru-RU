@@ -2,15 +2,15 @@
 title: тип enum ratingFranceTelevisionType
 description: Метки оценки телеконтента во Франции
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5b42781e192bfea45579b9c71b93bcc3126963a0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1aa4d630174ee5cf220cd3e5de7062090e1d8a5c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021619"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448564"
 ---
 # <a name="ratingfrancetelevisiontype-enum-type"></a>тип enum ratingFranceTelevisionType
 
@@ -28,8 +28,7 @@ ms.locfileid: "59021619"
 |agesAbove10|2|Классификация -10 не рекомендуется для детей в возрасте до 10 лет|
 |agesAbove12|3|Классификация -12 не рекомендуется для детей до 12 лет|
 |agesAbove16|4 |Классификация -16 не рекомендуется для детей до 16 лет|
-|agesAbove18|5 |Классификация -18 не рекомендуется для лиц в возрасте до 18 лет|
-
+|agesAbove18|5|Классификация -18 не рекомендуется для лиц в возрасте до 18 лет|
 
 
 

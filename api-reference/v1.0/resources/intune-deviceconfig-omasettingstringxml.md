@@ -2,15 +2,15 @@
 title: Тип ресурса omaSettingStringXml
 description: Определение строки параметра OMA в формате XML.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4e32862181c9e6a92ee7f5ef88bd90c96d286fbb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 20af2dfdd4ac00d156fca75b2fbd70ac82f6d84a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148104"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446998"
 ---
 # <a name="omasettingstringxml-resource-type"></a>Тип ресурса omaSettingStringXml
 
@@ -52,7 +52,6 @@ ms.locfileid: "59148104"
   "value": "binary"
 }
 ```
-
 
 
 

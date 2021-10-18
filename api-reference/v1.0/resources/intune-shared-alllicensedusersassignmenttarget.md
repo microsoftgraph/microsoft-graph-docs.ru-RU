@@ -2,15 +2,15 @@
 title: Тип ресурса allLicensedUsersAssignmentTarget
 description: Представляет ресурс, назначенный всем лицензированным пользователям в клиенте.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 45163b81f44ed079545624e37829b4ec827e089a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fc686ed9d48a106a4031deaa8a92871c0e908d9a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134831"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454982"
 ---
 # <a name="alllicensedusersassignmenttarget-resource-type"></a>Тип ресурса allLicensedUsersAssignmentTarget
 
@@ -27,7 +27,7 @@ ms.locfileid: "59134831"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -42,7 +42,6 @@ ms.locfileid: "59134831"
   "@odata.type": "#microsoft.graph.allLicensedUsersAssignmentTarget"
 }
 ```
-
 
 
 

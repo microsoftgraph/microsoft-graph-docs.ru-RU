@@ -2,15 +2,15 @@
 title: Обновление пользователя
 description: Обновление свойств объекта пользователя.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 84fd5cd73401b18a25113b02f5c9144bd06aa921
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e5c543cdffa6391dac6f0e49e52b2626aa460849
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59045156"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455951"
 ---
 # <a name="update-user"></a>Обновление пользователя
 
@@ -51,7 +51,7 @@ PATCH /users/{usersId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор пользователя.|
+|id|String|Уникальный идентификатор пользователя.|
 |deviceEnrollmentLimit|Int32|Максимальное количество устройств, которые разрешено зарегистрировать пользователю. Допустимые значения: 5 или 1000.|
 
 
@@ -87,7 +87,6 @@ Content-Length: 126
   "deviceEnrollmentLimit": 5
 }
 ```
-
 
 
 

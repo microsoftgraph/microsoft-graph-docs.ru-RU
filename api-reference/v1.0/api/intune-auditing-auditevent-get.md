@@ -2,15 +2,15 @@
 title: Get auditEvent
 description: Чтение свойств и связей объекта auditEvent.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 53164d4608f62ec6107b4284e96eaece27646305
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3655b908a60ff5981bccd98c17ad4ee46bb68cdd
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056405"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445874"
 ---
 # <a name="get-auditevent"></a>Get auditEvent
 
@@ -113,7 +113,6 @@ Content-Length: 1538
   }
 }
 ```
-
 
 
 

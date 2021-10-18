@@ -2,15 +2,15 @@
 title: Тип ресурса deviceConfigurationUserOverview
 description: Пока не задокументировано.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c6997266f6b295cf7304326e7a54b0014e74b4a6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 645ce4a1f410f7222d44a2929438f3d8adbfa7dc
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148349"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60440243"
 ---
 # <a name="deviceconfigurationuseroverview-resource-type"></a>Тип ресурса deviceConfigurationUserOverview
 
@@ -62,7 +62,6 @@ ms.locfileid: "59148349"
   "configurationVersion": 1024
 }
 ```
-
 
 
 

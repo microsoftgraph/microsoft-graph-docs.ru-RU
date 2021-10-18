@@ -2,15 +2,15 @@
 title: Тип ресурса applePushNotificationCertificate
 description: Сертификат push-уведомлений Apple
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a4a1dedbf0571111ccae4ca484f57875fbcaad72
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8160cfaa26e564d790bc7e678ea24b7369d8bedb
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098841"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449014"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>Тип ресурса applePushNotificationCertificate
 
@@ -35,10 +35,10 @@ ms.locfileid: "59098841"
 |topicIdentifier|String|Идентификатор темы.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сертификата push-уведомлений Apple.|
 |expirationDateTime|DateTimeOffset|Дата и время окончания срока действия для сертификата push-уведомлений Apple.|
-|certificateSerialNumber|Строка|Серийный номер сертификата. Это свойство доступно только для чтения.|
+|certificateSerialNumber|String|Серийный номер сертификата. Это свойство доступно только для чтения.|
 |certificate|String|Н/Д|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -61,7 +61,6 @@ ms.locfileid: "59098841"
   "certificate": "String"
 }
 ```
-
 
 
 

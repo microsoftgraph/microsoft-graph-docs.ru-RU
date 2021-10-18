@@ -2,15 +2,15 @@
 title: Действие bypassActivationLock
 description: Обход блокировки активации
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 57a2aafb0058e1a031e3dad4e1c68d89b32dfef6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2fed0b1589dc1b546550ebe8a11dd8e89b5828c6
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59008022"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447905"
 ---
 # <a name="bypassactivationlock-action"></a>Действие bypassActivationLock
 
@@ -65,7 +65,6 @@ POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

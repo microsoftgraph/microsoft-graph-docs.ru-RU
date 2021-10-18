@@ -2,15 +2,15 @@
 title: Тип ресурса windowsFirewallNetworkProfile
 description: Политики профилей брандмауэра Windows.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3aa50d75a7e692e8393a6c01f46aaf4f3dc88912
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 27e38c473a8f37b35a74dd29872607428dddd042
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072164"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455220"
 ---
 # <a name="windowsfirewallnetworkprofile-resource-type"></a>Тип ресурса windowsFirewallNetworkProfile
 
@@ -36,7 +36,7 @@ ms.locfileid: "59072164"
 |securedPacketExemptionAllowed|Boolean|Настраивает брандмауэр, чтобы разрешить хост-компьютеру отвечать на нежелательный сетевой трафик этого трафика, защищенный IPSec, даже если установлено, что stealthModeBlocked является верным. Когда securedPacketExemptionBlocked и SecuredPacketExemptionAllowed являются верными, SecuredPacketExemptionAllowed имеет приоритет.|
 |policyRulesFromGroupPolicyMerged|Boolean|Настраивает брандмауэр для объединения политик правил брандмауэра из групповой политики с политиками из локального магазина вместо игнорирования правил локального магазина. Если PolicyRulesFromGroupPolicyNotMerged и PolicyRulesFromGroupPolicyMerged являются верными, то PolicyRulesFromGroupPolicyMerged занимает приоритетное место.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -63,7 +63,6 @@ ms.locfileid: "59072164"
   "policyRulesFromGroupPolicyMerged": true
 }
 ```
-
 
 
 

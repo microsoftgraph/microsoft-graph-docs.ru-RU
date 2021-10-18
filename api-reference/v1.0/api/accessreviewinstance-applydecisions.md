@@ -5,19 +5,20 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: afe64d30ddd4e637aeb43a15195b0f1e627a79ec
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 66cfeb5aecbb8ee8525eb97316d7a2afb6202d6a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59038659"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446177"
 ---
 # <a name="accessreviewinstance-applydecisions"></a>accessReviewInstance: applyDecisions
 Пространство имен: microsoft.graph
 
-Применение решений о проверке к ресурсу, рассмотренном в [accessReviewInstance.](../resources/accessreviewinstance.md)
+Применение решений по пересмотру [для accessReviewInstance,](../resources/accessreviewinstance.md) если решения не были применены автоматически, так как свойство autoApplyDecisionsEnabled находится в `false` [accessReviewScheduleSettings.](../resources/accessreviewschedulesettings.md)
 
-Решения применяются автоматически, если **параметр autoApplyDecisionsEnabled** параметра [параметров accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) является  `true` .
+
+Состояние accessReviewInstance должно быть для `Completed` вызова этого метода.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,7 +42,7 @@ POST /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefiniti
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

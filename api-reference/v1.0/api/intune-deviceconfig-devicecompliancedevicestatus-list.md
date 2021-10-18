@@ -2,15 +2,15 @@
 title: List deviceComplianceDeviceStatuses
 description: Перечисление свойств и связей объектов deviceComplianceDeviceStatus.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 159eff9c2b807ab6de7160d1b4fa05945c02e8da
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6d5720309792f279a756351fd71682758a46b6fa
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140082"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448123"
 ---
 # <a name="list-devicecompliancedevicestatuses"></a>List deviceComplianceDeviceStatuses
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/device
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -81,7 +81,6 @@ Content-Length: 544
   ]
 }
 ```
-
 
 
 

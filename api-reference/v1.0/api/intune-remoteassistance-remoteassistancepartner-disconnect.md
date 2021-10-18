@@ -2,15 +2,15 @@
 title: Действие disconnect
 description: Запрос на удаление активного соединиттеля TeamViewer
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a94c0947bb9412328d1698748d6662b176fe62a2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dfd0c3c217c848e1820d94834c5d79a224145d23
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037539"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457528"
 ---
 # <a name="disconnect-action"></a>Действие disconnect
 
@@ -63,7 +63,6 @@ POST https://graph.microsoft.com/v1.0/deviceManagement/remoteAssistancePartners/
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -3,12 +3,12 @@ title: Использование SDKs Graph Майкрософт для пак�
 description: Содержит инструкции по созданию пакета запросов API с помощью SDKs Graph Microsoft.
 ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: a8a1d2b7e4d214edbdef2424539030ab52d46442
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 222200851b3b6d5a1b85e49a1af741e5dbb1a809
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129728"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451957"
 ---
 # <a name="use-the-microsoft-graph-sdks-to-batch-requests"></a>Использование SDKs Graph Майкрософт для пакетных запросов
 
@@ -439,5 +439,95 @@ final EventCollectionResponse events = batchResponseContent.getResponseById(cale
 System.out.println(String.format("You have %d events on your calendar today", events.value.size()));
 ```
 
+---
+
+## <a name="implementing-batching-using-batchrequestcontent-batchrequeststep-and-httprequestmessage"></a>Реализация пакета с помощью BatchRequestContent, BatchRequestStep и HttpRequestMessage
+
+В следующем примере показано, как использовать , и отправлять несколько запросов в пакете и как обрабатывать ограничение в 20 с запросами API microsoft `BatchRequestContent` `BatchRequestStep` Graph `HttpRequestMessage` API. В этом примере создаются ссылки на собрания с использованием конечной `onlineMeetings/createOrGet` точки для указанного пользовательского ИД. Этот пример можно использовать и с Graph конечными точками Майкрософт.
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Text;
+using System.Threading.Tasks;
+using Microsoft.Graph;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+
+public async void GenerateBatchedMeetingLink(List<ItemCollections> meetingLinksToBeGenerated)
+        {            
+            List<string> _joinWebUrls = new List<string>();
+            //Total number of items per batch supported is 20
+            int maxNoBatchItems = 20;
+            try
+            {
+                //valid GraphAccessToken is required to execute the call
+                var graphClient = GetAuthenticatedClient(GraphAccessToken);
+                var events = new List<OnlineMeetingCreateOrGetRequestBody>();
+                foreach (var item in meetingLinksToBeGenerated)
+                {
+                    var externalId = Guid.NewGuid().ToString();
+                    var @event = new OnlineMeetingCreateOrGetRequestBody
+                    {
+                        StartDateTime = item.StartTime,
+                        EndDateTime = item.EndTime,
+                        Subject = "Test Meeting",
+                        ExternalId = externalId,
+                        
+                    };
+                    events.Add(@event);
+                }
+                // if the requests are more than 20 limit, we need to create multiple batches of the BatchRequestContent
+                List<BatchRequestContent> batches = new List<BatchRequestContent>();
+                var batchRequestContent = new BatchRequestContent();
+                foreach (OnlineMeetingCreateOrGetRequestBody e in events)
+                { 
+                    //create online meeting for particular user or we can use /me as well
+                    var httpRequestMessage = new HttpRequestMessage(HttpMethod.Post, $"https://graph.microsoft.com/v1.0/users/{userID}/onlineMeetings/createOrGet")
+                    {
+                        Content = new StringContent(JsonConvert.SerializeObject(e), Encoding.UTF8, "application/json")
+                    };
+                    BatchRequestStep requestStep = new BatchRequestStep(events.IndexOf(e).ToString(), httpRequestMessage, null);
+                    batchRequestContent.AddBatchRequestStep(requestStep);
+                    if (events.IndexOf(e) > 0 && ((events.IndexOf(e) + 1) % maxNoBatchItems == 0))
+                    {
+                        batches.Add(batchRequestContent);
+                        batchRequestContent = new BatchRequestContent();
+                    }
+                }
+                if (batchRequestContent.BatchRequestSteps.Count < maxNoBatchItems)
+                {
+                    batches.Add(batchRequestContent);
+                }
+
+                if (batches.Count == 0 && batchRequestContent != null)
+                {
+                    batches.Add(batchRequestContent);
+                }
+
+                foreach (BatchRequestContent batch in batches)
+                {
+                    BatchResponseContent response = null;
+                    response = await graphClient.Batch.Request().PostAsync(batch);
+                    Dictionary<string, HttpResponseMessage> responses = await response.GetResponsesAsync();
+                    foreach (string key in responses.Keys)
+                    {
+                        HttpResponseMessage httpResponse = await response.GetResponseByIdAsync(key);
+                        var responseContent = await httpResponse.Content.ReadAsStringAsync();
+                        JObject eventResponse = JObject.Parse(responseContent);
+                        //do something below
+                        Console.writeline(eventResponse["joinWebUrl"].ToString());                      
+                    }                 
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.Writeline(ex.Message + ex.StackTrace);               
+            }
+        }    
+
+```
 ---
 <!-- markdownlint-enable MD024 -->

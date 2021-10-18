@@ -2,15 +2,15 @@
 title: Тип ресурса deviceCompliancePolicySettingStateSummary
 description: Сводка по состоянию параметров политики соответствия для устройств в учетной записи.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ded4316c702ddbce996f2eef24603db456aa5769
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5d206f1c49bb65c375bb34a42d3601ec9ad2a98f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072318"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454483"
 ---
 # <a name="devicecompliancepolicysettingstatesummary-resource-type"></a>Тип ресурса deviceCompliancePolicySettingStateSummary
 
@@ -32,7 +32,7 @@ ms.locfileid: "59072318"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |setting|String|Имя класса параметров и свойства.|
 |settingName|String|Имя параметра.|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Настройка платформы. Возможные значения: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
@@ -44,7 +44,7 @@ ms.locfileid: "59072318"
 |errorDeviceCount|Int32|Количество устройств с ошибками.|
 |conflictDeviceCount|Int32|Количество конфликтующих устройств|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |deviceComplianceSettingStates|Коллекция [deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md)|Н/Д|
@@ -73,7 +73,6 @@ ms.locfileid: "59072318"
   "conflictDeviceCount": 1024
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: Обновление win32LobApp
 description: Обновление свойств объекта win32LobApp.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: def0ea81d91e81693aa3f0de5fe0a7a9dfa72a35
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: efe038a6dd69d5d5cb0e5e2b754a66fc8dab3814
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099940"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450785"
 ---
 # <a name="update-win32lobapp"></a>Обновление win32LobApp
 
@@ -52,8 +52,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|description|Строка|Описание приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|description|String|Описание приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -68,7 +68,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 |committedContentVersion|String|Внутренняя версия подтвержденного содержимого. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |fileName|String|Имя основного файла бизнес-приложения. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |size|Int64|Общий размер, включая все отправленные файлы. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
-|installCommandLine|Строка|Командная строка для установки этого приложения|
+|installCommandLine|String|Командная строка для установки этого приложения|
 |uninstallCommandLine|String|Командная строка, чтобы удалить это приложение|
 |applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Архитектура Windows, которая поддерживается этим приложением. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`.|
 |minimumFreeDiskSpaceInMB|Int32|Значение минимального свободного пространства диска, необходимого для установки этого приложения.|
@@ -237,7 +237,6 @@ Content-Length: 2306
   "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
 }
 ```
-
 
 
 

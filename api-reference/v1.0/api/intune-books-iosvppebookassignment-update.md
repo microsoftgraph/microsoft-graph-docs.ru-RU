@@ -2,15 +2,15 @@
 title: Обновление объекта iosVppEBookAssignment
 description: Обновление свойств объекта iosVppEBookAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b1ee9e38735e50ceebed0eb368a7b8daf0f10ad9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b1ccc0fb44178e91053a2fec5da0adeca0c3c16f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59114388"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451810"
 ---
 # <a name="update-iosvppebookassignment"></a>Обновление объекта iosVppEBookAssignment
 
@@ -51,7 +51,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEB
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).|
+|id|String|Ключ объекта. Наследуется от объекта [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения электронной книги. Наследуется от объекта [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).|
 |installIntent|[installIntent](../resources/intune-shared-installintent.md)|Цель установки электронной книги. Унаследованный от [managedEBookAssignment](../resources/intune-books-managedebookassignment.md). Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
@@ -94,7 +94,6 @@ Content-Length: 242
   "installIntent": "required"
 }
 ```
-
 
 
 

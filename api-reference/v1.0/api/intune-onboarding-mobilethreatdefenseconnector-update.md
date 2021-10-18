@@ -2,15 +2,15 @@
 title: Обновление mobileThreatDefenseConnector
 description: Обновление свойств объекта mobileThreatDefenseConnector.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ae49d3244bd21fa54884cdbf643c9da161f5f5f5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b278ba5d9d6f56f5fe532a6d6c7d8f590938645f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139928"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457143"
 ---
 # <a name="update-mobilethreatdefenseconnector"></a>Обновление mobileThreatDefenseConnector
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnec
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) в формате JSON.
 
 В приведенной ниже таблице показаны свойства, которые необходимо указывать при создании объекта [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md).
@@ -108,7 +108,6 @@ Content-Length: 463
   "partnerUnresponsivenessThresholdInDays": 6
 }
 ```
-
 
 
 

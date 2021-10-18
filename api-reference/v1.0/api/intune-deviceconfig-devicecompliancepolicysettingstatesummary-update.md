@@ -2,15 +2,15 @@
 title: Обновление объекта deviceCompliancePolicySettingStateSummary
 description: Обновление свойств объекта deviceCompliancePolicySettingStateSummary.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 67bd8641658046bd194f4f23dd95a07d3c6ae0d3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 18ab7ebb4886f9e1510f37ff7ed6209b762281b5
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099849"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448473"
 ---
 # <a name="update-devicecompliancepolicysettingstatesummary"></a>Обновление объекта deviceCompliancePolicySettingStateSummary
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |setting|String|Имя класса параметров и свойства.|
 |settingName|String|Имя параметра.|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Настройка платформы. Возможные значения: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
@@ -114,7 +114,6 @@ Content-Length: 440
   "conflictDeviceCount": 3
 }
 ```
-
 
 
 

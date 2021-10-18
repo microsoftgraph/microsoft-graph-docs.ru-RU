@@ -2,15 +2,15 @@
 title: Обновление объекта onPremisesConditionalAccessSettings
 description: Обновляет свойства объекта onPremisesConditionalAccessSettings.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 620f43ad0950e6cf45d854e2064ad27653b375f1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a3b44f20fb1bf7109a6fac41b31dc0bb61234f52
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59119382"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447419"
 ---
 # <a name="update-onpremisesconditionalaccesssettings"></a>Обновление объекта onPremisesConditionalAccessSettings
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement/conditionalAccessSettings
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Н/Д|
+|id|String|Н/Д|
 |enabled|Boolean|Указывает, включен ли в этой организации условный доступ к локальной среде|
 |includedGroups|Коллекция объектов Guid|Группы пользователей, для которых включается условный доступ к локальной среде. У всех пользователей в этих группах должны быть управляемые мобильные устройства, соответствующие требованиям для доступа к почте.|
 |excludedGroups|Коллекция объектов Guid|Группы пользователей, на которые не распространяется условный доступ к локальной среде. На всех пользователей из этих группах не будет распространяться политика условного доступа.|
@@ -104,7 +104,6 @@ Content-Length: 324
   "overrideDefaultRule": true
 }
 ```
-
 
 
 

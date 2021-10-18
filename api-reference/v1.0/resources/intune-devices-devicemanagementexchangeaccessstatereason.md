@@ -2,15 +2,15 @@
 title: тип enum deviceManagementExchangeAccessStateReason
 description: Причина Exchange доступа к состоянию устройства.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e8925575994c840bde24ec1f00dd679867179caa
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 87cdf39172f63bf93c0d48850485b1443b9c99bb
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148293"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453837"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>тип enum deviceManagementExchangeAccessStateReason
 
@@ -28,18 +28,17 @@ ms.locfileid: "59148293"
 |exchangeGlobalRule|2|Состояние доступа, Exchange глобальное правило|
 |exchangeIndividualRule|3|Состояние доступа, определяемая Exchange индивидуальным правилом|
 |exchangeDeviceRule|4 |Состояние доступа, определяющееся Exchange устройства|
-|exchangeUpgrade|5 |Состояние доступа из-за Exchange обновления|
+|exchangeUpgrade|5|Состояние доступа из-за Exchange обновления|
 |exchangeMailboxPolicy|6 |Состояние доступа, определяемого политикой Exchange почтовых ящиков|
 |другие|7 |Состояние доступа, определяемая Exchange|
 |совместимый|8 |Состояние доступа, предоставленная проблемой соответствия требованиям|
 |notCompliant|9 |Доступ к состояниям, отозванным из-за проблемы соответствия требованиям|
 |notEnrolled|10 |Доступ к состояниям, отозванным из-за проблемы управления|
 |unknownLocation|12 |Состояние доступа из-за неизвестного расположения|
-|mfaRequired|13|Состояние доступа из-за проблемы с MFA|
-|azureADBlockDueToAccessPolicy|14 |Состояние доступа отозвано политикой доступа AAD|
+|mfaRequired|13 |Состояние доступа из-за проблемы с MFA|
+|azureADBlockDueToAccessPolicy|14 |Состояние доступа, отозвано AAD политики доступа|
 |compromisedPassword|15 |Состояние доступа отозвано с помощью скомпрометированного пароля|
-|deviceNotKnownWithManagedApp|16 |Доступ к состояниям, отозванным из-за проблемы управляемого приложения|
-
+|deviceNotKnownWithManagedApp|16|Доступ к состояниям, отозванным из-за проблемы управляемого приложения|
 
 
 

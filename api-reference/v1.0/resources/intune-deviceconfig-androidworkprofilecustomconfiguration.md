@@ -2,15 +2,15 @@
 title: тип ресурса androidWorkProfileCustomConfiguration
 description: Настраиваемая конфигурация профиля работы Android
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 50d9ad9c45503276441979360a9c206a246230f0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ff633e252d430c292a1940bcf9295148c6acf576
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139858"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450884"
 ---
 # <a name="androidworkprofilecustomconfiguration-resource-type"></a>тип ресурса androidWorkProfileCustomConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "59139858"
 |[Список androidWorkProfileCustomConfigurations](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-list.md)|[коллекция androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|Список свойств и связей [объектов AndroidWorkProfileCustomConfiguration.](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|
 |[Get AndroidWorkProfileCustomConfiguration](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-get.md)|[androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|Чтение свойств и связей [объекта AndroidWorkProfileCustomConfiguration.](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|
 |[Создание androidWorkProfileCustomConfiguration](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-create.md)|[androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|Создайте новый [объект AndroidWorkProfileCustomConfiguration.](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|
-|[Удаление androidWorkProfileCustomConfiguration](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-delete.md)|Нет|Удаляет [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md).|
+|[Удаление androidWorkProfileCustomConfiguration](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-delete.md)|Отсутствует|Удаляет [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md).|
 |[Обновление androidWorkProfileCustomConfiguration](../api/intune-deviceconfig-androidworkprofilecustomconfiguration-update.md)|[androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|Обновление свойств объекта [AndroidWorkProfileCustomConfiguration.](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)|
 
 ## <a name="properties"></a>Свойства
@@ -80,7 +80,6 @@ ms.locfileid: "59139858"
   ]
 }
 ```
-
 
 
 

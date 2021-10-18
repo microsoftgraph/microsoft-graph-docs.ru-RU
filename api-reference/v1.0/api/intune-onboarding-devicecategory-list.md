@@ -2,15 +2,15 @@
 title: Перечисление объектов deviceCategory
 description: Список свойств и связей объектов deviceCategory.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b82b2b6a74a752b82d7b599f797136151d22263
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d51ccfd01ba4e5bd00544a2a72b6b85b188fd832
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59146914"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455958"
 ---
 # <a name="list-devicecategories"></a>Перечисление объектов deviceCategory
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceCategories
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -76,7 +76,6 @@ Content-Length: 233
   ]
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: Тип ресурса settingSource
 description: Пока не задокументировано.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b6c832f0fb8d55f58318f36c64dfef836b17ee64
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 955ddce1b6b2cd1fc32925a6a763db83c38bcfac
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59067215"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454891"
 ---
 # <a name="settingsource-resource-type"></a>Тип ресурса settingSource
 
@@ -24,7 +24,7 @@ ms.locfileid: "59067215"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Пока не задокументировано.|
-|displayName|Строка|Пока не задокументировано.|
+|displayName|String|Пока не задокументировано.|
 |sourceType|[settingSourceType](../resources/intune-deviceconfig-settingsourcetype.md)|Еще не задокументировано. Возможные значения: `deviceConfiguration`, `deviceIntent`.|
 
 ## <a name="relationships"></a>Связи
@@ -45,7 +45,6 @@ ms.locfileid: "59067215"
   "sourceType": "String"
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: Удаление объекта managedDeviceMobileAppConfigurationAssignment
 description: Удаляет объект managedDeviceMobileAppConfigurationAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 186006b8a145ee48cbc2862ccddb909587a801f7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4179017206f7b611bc15e29b6511c442367e6dc3
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59130876"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450961"
 ---
 # <a name="delete-manageddevicemobileappconfigurationassignment"></a>Удаление объекта managedDeviceMobileAppConfigurationAssignment
 
@@ -63,7 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurati
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: тип enum applicationGuardBlockClipboardSharingType
 description: Возможные значения для приложенияGuardBlockClipboardSharingType
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: dff350e4507215465f9524ae52803c8e786b7778
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a298831731234560938f75b261ec367de47c1f12
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139823"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448003"
 ---
 # <a name="applicationguardblockclipboardsharingtype-enum-type"></a>тип enum applicationGuardBlockClipboardSharingType
 
@@ -28,7 +28,6 @@ ms.locfileid: "59139823"
 |blockHostToContainer|2|Блокировка буфера обмена данными с хост-контейнера|
 |blockContainerToHost|3|Блокировка буфера обмена данными из контейнера в хост|
 |blockNone|4 |Блокировка буфера обмена данными ни от хоста до контейнера, ни от контейнера к хосту|
-
 
 
 

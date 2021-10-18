@@ -2,15 +2,15 @@
 title: Delete managedDevice
 description: Удаляет объект managedDevice.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 36f1f600205c0a9d3d9ff7c7927180385fcc0a8f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bc6905a2228edda8c6370e16152af24125537336
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029460"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448087"
 ---
 # <a name="delete-manageddevice"></a>Delete managedDevice
 
@@ -25,9 +25,9 @@ ms.locfileid: "59029460"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedD
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

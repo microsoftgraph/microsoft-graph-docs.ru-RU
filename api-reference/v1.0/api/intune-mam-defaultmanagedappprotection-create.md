@@ -2,15 +2,15 @@
 title: Создание объекта defaultManagedAppProtection
 description: Создает объект defaultManagedAppProtection.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 826ce23b9a6b3dd7f43abcbfc0bd9e2c016036d7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7484448c96dc23db2315f257215d5908de220b58
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59079619"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450919"
 ---
 # <a name="create-defaultmanagedappprotection"></a>Создание объекта defaultManagedAppProtection
 
@@ -52,7 +52,7 @@ POST /deviceAppManagement/defaultManagedAppProtections
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|String|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|description|Строка|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|description|String|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |id|String|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
@@ -224,7 +224,6 @@ Content-Length: 2181
   "faceIdBlocked": true
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: Тип ресурса mobileAppContentFile
 description: Содержит свойства для одного файла установщика, связанного с заданной версией mobileAppContent.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 36d626a21e76b89d2fa3e3f26ba62875c439a281
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 33b2eb4d6533c83bf1021108c60647fecd0d6813
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59137604"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445981"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>Тип ресурса mobileAppContentFile
 
@@ -71,7 +71,6 @@ ms.locfileid: "59137604"
   "uploadState": "String"
 }
 ```
-
 
 
 

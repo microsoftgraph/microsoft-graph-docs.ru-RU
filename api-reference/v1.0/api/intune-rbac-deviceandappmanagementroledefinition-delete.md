@@ -2,15 +2,15 @@
 title: Удаление объекта deviceAndAppManagementRoleDefinition
 description: Удаляет объект deviceAndAppManagementRoleDefinition.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4e179453cd38c54c48ff711f92b1baa5e8ebd698
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6dd7ef41104b242f21e179b5d906f61a71f33c72
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019869"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447314"
 ---
 # <a name="delete-deviceandappmanagementroledefinition"></a>Удаление объекта deviceAndAppManagementRoleDefinition
 
@@ -64,7 +64,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/roleDefinitions/{roleDe
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: Создание объекта windows81CompliancePolicy
 description: Создание объекта windows81CompliancePolicy.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7519da556c53b938fad79d07ae6412ac5c99642a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a88096fe2d9a4c9b52e28d92618e04fbcd705e63
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147292"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445249"
 ---
 # <a name="create-windows81compliancepolicy"></a>Создание объекта windows81CompliancePolicy
 
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceCompliancePolicies
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта windows81CompliancePolicy в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта windows81CompliancePolicy.
@@ -130,7 +130,6 @@ Content-Length: 774
   "storageRequireEncryption": true
 }
 ```
-
 
 
 

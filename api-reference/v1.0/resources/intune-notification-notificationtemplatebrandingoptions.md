@@ -2,15 +2,15 @@
 title: notificationTemplateBrandingOptions enum type
 description: Параметры брендинга шаблона сообщений. Фирменная символика определяется в консоли администрирования Intune.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b97cf5f6d92f30ec2b17a3c625a59735b2641e33
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d8ee577acc6d825a95cfe20db63fc890a1f87444
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59044540"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457458"
 ---
 # <a name="notificationtemplatebrandingoptions-enum-type"></a>notificationTemplateBrandingOptions enum type
 
@@ -27,7 +27,6 @@ ms.locfileid: "59044540"
 |includeCompanyLogo|1|Включай логотип компании.|
 |includeCompanyName|2|Включай имя компании.|
 |includeContactInformation|4 |Включай контактные данные.|
-
 
 
 

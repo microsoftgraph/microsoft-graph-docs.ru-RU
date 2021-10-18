@@ -2,15 +2,15 @@
 title: Перечисление объектов macOSOfficeSuiteApp
 description: Список свойств и связей объектов macOSOfficeSuiteApp.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: abffd927af29ae497636c2a23b1fc3ddd7840035
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c968ee604b9820d126460e2675fddb6510fe152c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050518"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451950"
 ---
 # <a name="list-macosofficesuiteapps"></a>Перечисление объектов macOSOfficeSuiteApp
 
@@ -41,7 +41,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -91,7 +91,6 @@ Content-Length: 865
   ]
 }
 ```
-
 
 
 

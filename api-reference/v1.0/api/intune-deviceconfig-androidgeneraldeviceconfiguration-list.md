@@ -2,15 +2,15 @@
 title: Перечисление объектов androidGeneralDeviceConfiguration
 description: Перечисление свойств и связей объектов androidGeneralDeviceConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3da49ee20f07ed7b8903877b3d016e8fb781aaed
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 245cf17a9a99e5ae53d6095adbab52ae5f7fae42
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140418"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60438522"
 ---
 # <a name="list-androidgeneraldeviceconfigurations"></a>Перечисление объектов androidGeneralDeviceConfiguration
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -167,7 +167,6 @@ Content-Length: 3618
   ]
 }
 ```
-
 
 
 

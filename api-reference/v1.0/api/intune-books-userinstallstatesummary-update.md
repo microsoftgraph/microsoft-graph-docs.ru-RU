@@ -2,15 +2,15 @@
 title: Обновление объекта userInstallStateSummary
 description: Обновление свойств объекта userInstallStateSummary.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b446445f25716d22d3e9bc06e9a615f79eaea11c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dadc0c3405b063b71d4e6d22a179dd4e514df4e9
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140600"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446156"
 ---
 # <a name="update-userinstallstatesummary"></a>Обновление объекта userInstallStateSummary
 
@@ -44,7 +44,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md).
@@ -96,7 +96,6 @@ Content-Length: 238
   "notInstalledDeviceCount": 7
 }
 ```
-
 
 
 

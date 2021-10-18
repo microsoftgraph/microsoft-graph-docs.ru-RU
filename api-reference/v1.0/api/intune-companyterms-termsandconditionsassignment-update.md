@@ -2,15 +2,15 @@
 title: Обновление объекта termsAndConditionsAssignment
 description: Удаление свойств объекта termsAndConditionsAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 71f53ec53672d8fb7f3d3b0376bae4e0f3abe814
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0aa7352d7bfedd406db8f269902ec14bc4ad7ea9
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016388"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446135"
 ---
 # <a name="update-termsandconditionsassignment"></a>Обновление объекта termsAndConditionsAssignment
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments/{t
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта.|
+|id|String|Уникальный идентификатор объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Объект, для которого назначается политика соблюдения условий.|
 
 
@@ -93,7 +93,6 @@ Content-Length: 269
   }
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: тип enum iosUpdatesInstallStatus
 description: Пока не задокументировано.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 43d8bef4d28a32f387e8dce6430521753732ea01
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 832d2b770169e8b9a7c5e620e7f396aaa865d01c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60255929"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446725"
 ---
 # <a name="iosupdatesinstallstatus-enum-type"></a>тип enum iosUpdatesInstallStatus
 
@@ -41,7 +41,6 @@ ms.locfileid: "60255929"
 |notSupportedOperation|-2016330701|Пока не задокументировано.|
 |sharedDeviceUserLoggedInError|-2016324035|Пока не задокументировано.|
 |deviceOsHigherThanDesiredOsVersion|-2016330696|Пока не задокументировано.|
-
 
 
 

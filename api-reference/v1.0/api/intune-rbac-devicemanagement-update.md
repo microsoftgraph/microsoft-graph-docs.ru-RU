@@ -2,15 +2,15 @@
 title: Обновление объекта deviceManagement
 description: Обновление свойств объекта deviceManagement.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 37f4e409e03d06b7aaf486575132c5a124f1cb30
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2264d0ae7058aded449f96d2de1eaf8b6df0ab37
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59114080"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447279"
 ---
 # <a name="update-devicemanagement"></a>Обновление объекта deviceManagement
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Пока не задокументировано.|
+|id|String|Пока не задокументировано.|
 
 
 
@@ -84,7 +84,6 @@ Content-Length: 107
   "id": "0b283420-3420-0b28-2034-280b2034280b"
 }
 ```
-
 
 
 

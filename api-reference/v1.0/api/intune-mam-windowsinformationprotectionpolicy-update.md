@@ -2,15 +2,15 @@
 title: Обновление объекта windowsInformationProtectionPolicy
 description: Обновление свойств объекта windowsInformationProtectionPolicy.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d7a06018371584de6517f4bf77ffc29ae4a17356
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5f097515057b205c695ae7b8a255af44c424a871
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147082"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449816"
 ---
 # <a name="update-windowsinformationprotectionpolicy"></a>Обновление объекта windowsInformationProtectionPolicy
 
@@ -44,7 +44,7 @@ PATCH /deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformat
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md) в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md).
@@ -387,7 +387,6 @@ Content-Length: 4475
   "daysWithoutContactBeforeUnenroll": 0
 }
 ```
-
 
 
 

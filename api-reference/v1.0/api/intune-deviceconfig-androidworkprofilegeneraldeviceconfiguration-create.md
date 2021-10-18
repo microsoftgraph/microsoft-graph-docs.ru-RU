@@ -2,15 +2,15 @@
 title: Создание androidWorkProfileGeneralDeviceConfiguration
 description: Создайте новый объект AndroidWorkProfileGeneralDeviceConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 71c60963c5da008f7b81023297af74f3fe7cdca1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e4e2734eec245a06afa96e1199952cb214558a4c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019995"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457108"
 ---
 # <a name="create-androidworkprofilegeneraldeviceconfiguration"></a>Создание androidWorkProfileGeneralDeviceConfiguration
 
@@ -54,7 +54,7 @@ POST /deviceManagement/deviceConfigurations
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |passwordBlockFingerprintUnlock|Boolean|Указывает, следует ли запретить разблокировку с помощью отпечатка пальца.|
@@ -70,13 +70,13 @@ POST /deviceManagement/deviceConfigurations
 |workProfileBlockAddingAccounts|Логический|Блокировать добавление и удаление учетных записей в профиле работы.|
 |workProfileBluetoothEnableContactSharing|Логический|Разрешить устройствам Bluetooth доступ к корпоративным контактам.|
 |workProfileBlockScreenCapture|Логический|Блокировка захвата экрана в профиле работы.|
-|workProfileBlockCrossProfileCallerId|Boolean|Блокировка ИД вызываемой личности вызываемой на экране работы в личном профиле.|
-|workProfileBlockCamera|Boolean|Блокировка камеры профиля работы.|
+|workProfileBlockCrossProfileCallerId|Логический|Блокировка ИД вызываемой личности вызываемой на экране работы в личном профиле.|
+|workProfileBlockCamera|Логический|Блокировка камеры профиля работы.|
 |workProfileBlockCrossProfileContactsSearch|Логический|Блокировка доступности контактов профилей работы в личном профиле.|
-|workProfileBlockCrossProfileCopyPaste|Boolean|Boolean, который указывает, включен ли параметр, который не позволяет копировать/вклеить перекрестный профиль.|
+|workProfileBlockCrossProfileCopyPaste|Логический|Boolean, который указывает, включен ли параметр, который не позволяет копировать/вклеить перекрестный профиль.|
 |workProfileDefaultAppPermissionPolicy|[androidWorkProfileDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androidworkprofiledefaultapppermissionpolicytype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `prompt`, `autoGrant`, `autoDeny`.|
 |workProfilePasswordBlockFingerprintUnlock|Логический|Указывает, следует ли блокировать разблокировку отпечатков пальцев для профиля работы.|
-|workProfilePasswordBlockTrustAgents|Boolean|Указывает, следует ли блокировать Smart Lock и другие агенты доверия для профиля работы.|
+|workProfilePasswordBlockTrustAgents|Логический|Указывает, следует ли блокировать Smart Lock и другие агенты доверия для профиля работы.|
 |workProfilePasswordExpirationDays|Int32|Количество дней до истечения срока действия пароля профиля работы. Допустимые значения: от 1 до 365.|
 |workProfilePasswordMinimumLength|Int32|Минимальная длина пароля профиля работы. Допустимые значения: от 4 до 16.|
 |workProfilePasswordMinNumericCharacters|Int32|Минимум # числимые символы, необходимые в пароле профиля работы. Допустимые значения от 1 до 10|
@@ -199,7 +199,6 @@ Content-Length: 2003
   "securityRequireVerifyApps": true
 }
 ```
-
 
 
 

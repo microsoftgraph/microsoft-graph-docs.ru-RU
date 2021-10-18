@@ -2,15 +2,15 @@
 title: Тип ресурса mobileAppContent
 description: Содержит свойства контента для определенной версии приложения. Каждому объекту mobileAppContent может соответствовать несколько объектов mobileAppContentFile.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ae87e5a926493c46cc7b51ac2c0bd67a802ddbcf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 217291d3bd16b0de5112754e9af03fef2a4d0069
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109061"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454609"
 ---
 # <a name="mobileappcontent-resource-type"></a>Тип ресурса mobileAppContent
 
@@ -32,9 +32,9 @@ ms.locfileid: "59109061"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Версия контента приложения.|
+|id|String|Версия контента приложения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |files|Коллекция [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md)|Список файлов для этой версии контента приложения.|
@@ -53,7 +53,6 @@ ms.locfileid: "59109061"
   "id": "String (identifier)"
 }
 ```
-
 
 
 

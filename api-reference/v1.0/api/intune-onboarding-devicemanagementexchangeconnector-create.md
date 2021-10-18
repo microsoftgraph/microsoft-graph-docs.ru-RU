@@ -2,15 +2,15 @@
 title: Создание объекта deviceManagementExchangeConnector
 description: Создание объекта deviceManagementExchangeConnector.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e1faf725e5fa369b1cabeaba9346b86fef81a495
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 412d72434aec2cdef6d4858eae4bda7b152cb970
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073060"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457773"
 ---
 # <a name="create-devicemanagementexchangeconnector"></a>Создание объекта deviceManagementExchangeConnector
 
@@ -51,7 +51,7 @@ POST /deviceManagement/exchangeConnectors
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Н/Д|
+|id|String|Н/Д|
 |lastSyncDateTime|DateTimeOffset|Время последней синхронизации соединителя Exchange|
 |status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange Состояние соединитетеля. Возможные значения: `none`, `connectionPending`, `connected`, `disconnected`.|
 |primarySmtpAddress|String|Электронный адрес, используемый для настройки соединителя Exchange между службами.|
@@ -111,7 +111,6 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
-
 
 
 

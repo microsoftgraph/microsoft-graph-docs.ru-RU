@@ -2,15 +2,15 @@
 title: Перечисление объектов microsoftStoreForBusinessApp
 description: Список свойств и связей объектов microsoftStoreForBusinessApp.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ba1d4c7ba77fe80dc19be17f1151e32fa3fe9d3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c94d4434a5532c032939de5e26739ee1c9525be1
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016521"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448655"
 ---
 # <a name="list-microsoftstoreforbusinessapps"></a>Перечисление объектов microsoftStoreForBusinessApp
 
@@ -96,7 +96,6 @@ Content-Length: 1070
   ]
 }
 ```
-
 
 
 

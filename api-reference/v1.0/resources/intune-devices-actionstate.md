@@ -2,15 +2,15 @@
 title: тип enum actionState
 description: Состояние действия на устройстве
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 60fd98273344253ee916b2a3d06bcde7965067d1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 11f4c3fd8e310351cc09ab853a4eea7ee65961e6
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148314"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449021"
 ---
 # <a name="actionstate-enum-type"></a>тип enum actionState
 
@@ -28,9 +28,8 @@ ms.locfileid: "59148314"
 |отменено|2|Действие отменено.|
 |active|3|Действие активно.|
 |done|4 |Действие выполнено без ошибок.|
-|не удалось|5 |Действие не удалось|
+|не удалось|5|Действие не удалось|
 |notSupported|6 |Действие не поддерживается.|
-
 
 
 

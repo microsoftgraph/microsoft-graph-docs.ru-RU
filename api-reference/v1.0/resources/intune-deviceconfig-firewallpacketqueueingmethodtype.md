@@ -2,15 +2,15 @@
 title: брандмауэрPacketQueueingMethodType enum type
 description: Возможные значения для брандмауэраPacketQueueingMethod
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fde6546255160e91d698f2a7dfe8c15c9fda26a2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f9303b2eb09ba9b9ea652a19726fd9c0b930bd79
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139830"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449610"
 ---
 # <a name="firewallpacketqueueingmethodtype-enum-type"></a>брандмауэрPacketQueueingMethodType enum type
 
@@ -28,7 +28,6 @@ ms.locfileid: "59139830"
 |queueInbound|2|Входящие в очередь зашифрованные пакеты|
 |queueOutbound|3|Расшифровка исходящие пакеты очереди для переададровки|
 |queueBoth|4 |Очередь как входящие, так и исходящие пакеты|
-
 
 
 

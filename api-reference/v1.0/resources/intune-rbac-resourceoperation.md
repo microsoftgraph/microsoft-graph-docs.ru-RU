@@ -2,15 +2,15 @@
 title: Тип ресурса resourceOperation
 description: Описывает ресурс resourceOperation (сущность) API microsoft Graph (REST), который поддерживает процессы intune, связанные с управлением доступом на основе ролей (RBAC).
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5ea5d6dfa4847877cbad6036c774e1e8c9d5385b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 80a57a4fccb367813b95c31aa47c2038e5281964
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59028879"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446718"
 ---
 # <a name="resourceoperation-resource-type"></a>Тип ресурса resourceOperation
 
@@ -35,7 +35,7 @@ ms.locfileid: "59028879"
 |id|String|Ключ операции с ресурсом. Доступен только для чтения и создается автоматически.|
 |resourceName|String|Имя ресурса, с которым выполняется эта операция.|
 |actionName|String|Тип действия, которое выполнит эта операция. Свойство actionName должно быть максимально краткое (максимум несколько слов).|
-|description|Строка|Описание операции с ресурсом. Используется в тексте, который отображается над операцией при наведении указателя мыши на портале Azure.|
+|description|String|Описание операции с ресурсом. Используется в тексте, который отображается над операцией при наведении указателя мыши на портале Azure.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -57,7 +57,6 @@ ms.locfileid: "59028879"
   "description": "String"
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: 'accessReviewInstance: applyDecisions'
 description: Применение решений для accessReviewInstance.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: cb3d91137753ae3383bdaea2700a6664f8b48356
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 9bdd28e57dfc2a9f5071e33d5d3604a205060059
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439235"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60440054"
 ---
 # <a name="accessreviewinstance-applydecisions"></a>accessReviewInstance: applyDecisions
 
@@ -18,9 +18,9 @@ ms.locfileid: "50439235"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Применение решений проверки [для accessReviewInstance](../resources/accessreviewinstance.md).
+Применение решений по пересмотру [для accessReviewInstance,](../resources/accessreviewinstance.md) если решения не были применены автоматически, так как свойство autoApplyDecisionsEnabled находится в `false` [accessReviewScheduleSettings.](../resources/accessreviewschedulesettings.md)
 
-Обратите внимание, что решения будут применяться автоматически, если параметр autoApplyDecisionsEnabled является true в [accessReviewScheduleSettings обзора](../resources/accessreviewschedulesettings.md).
+Состояние accessReviewInstance должно быть для `Completed` вызова этого метода.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "50439235"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение                            | AccessReview.ReadWrite.All |
+|Для приложений                            | AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ POST /identityGovernance/accessReviews/definitions/{definition-id}/instances/{in
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса

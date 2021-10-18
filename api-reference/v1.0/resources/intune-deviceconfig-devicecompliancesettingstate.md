@@ -2,15 +2,15 @@
 title: Тип ресурса deviceComplianceSettingState
 description: Состояние параметров соответствия требованиям для определенного устройства.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 495f9feac7db88851006f2d3a2392fd85a4cadb6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6f797e2e77eb0e291bdc6b71e14da25f5ef3244d
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072283"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455564"
 ---
 # <a name="devicecompliancesettingstate-resource-type"></a>Тип ресурса deviceComplianceSettingState
 
@@ -73,7 +73,6 @@ ms.locfileid: "59072283"
   "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

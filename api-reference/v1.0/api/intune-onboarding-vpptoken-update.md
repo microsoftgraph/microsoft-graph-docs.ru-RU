@@ -2,15 +2,15 @@
 title: Обновить VPP токен
 description: Обновление свойств объекта VPP токен.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f57923cee1a6dd261a45d1c31bc3d4ec58e4c59
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7ff7a6aea6609b5bc93ef44b04149792644f0a6f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59026359"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451551"
 ---
 # <a name="update-vpptoken"></a>Обновить VPP токен
 
@@ -51,7 +51,7 @@ PATCH /deviceAppManagement/vppTokens/{vppTokenId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Создается автоматически при создании appleVolumePurchaseProgramToken. Это ключ объекта.|
+|id|String|Создается автоматически при создании appleVolumePurchaseProgramToken. Это ключ объекта.|
 |organizationName|Строка|Организация, связанная с токеном Apple Volume Purchase Program.|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|Тип программы оптовых покупок, с которой связан заданный токен Apple Volume Purchase Program. Возможные значения: `business`, `education`. Возможные значения: `business`, `education`.|
 |appleId|Строка|Идентификатор Apple ID, связанный с заданным токеном Apple Volume Purchase Program.|
@@ -116,7 +116,6 @@ Content-Length: 574
   "countryOrRegion": "Country Or Region value"
 }
 ```
-
 
 
 
