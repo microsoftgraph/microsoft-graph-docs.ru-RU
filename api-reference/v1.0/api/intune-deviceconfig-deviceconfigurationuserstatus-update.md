@@ -2,15 +2,15 @@
 title: Обновление объекта deviceConfigurationUserStatus
 description: Обновление свойств объекта deviceConfigurationUserStatus.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2268ac1bdf574b031c6f8059ef42679949c04575
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: be166c82d21cf882ce7af5b9dc53b0c84e4ac549
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073438"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452946"
 ---
 # <a name="update-deviceconfigurationuserstatus"></a>Обновление объекта deviceConfigurationUserStatus
 
@@ -99,7 +99,6 @@ Content-Length: 339
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

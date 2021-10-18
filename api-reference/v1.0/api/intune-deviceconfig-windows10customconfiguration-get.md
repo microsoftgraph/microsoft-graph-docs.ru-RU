@@ -2,15 +2,15 @@
 title: Get windows10CustomConfiguration
 description: Чтение свойств и связей объекта windows10CustomConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d0b1aacac80d93b0d7cb708dabd96887037b1d5d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e91beed55a6ce8026a79876e760a3adc13269200
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59090392"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455003"
 ---
 # <a name="get-windows10customconfiguration"></a>Get windows10CustomConfiguration
 
@@ -88,7 +88,6 @@ Content-Length: 599
   }
 }
 ```
-
 
 
 

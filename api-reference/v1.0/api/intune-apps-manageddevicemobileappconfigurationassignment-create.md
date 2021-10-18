@@ -2,15 +2,15 @@
 title: Создание объекта managedDeviceMobileAppConfigurationAssignment
 description: Создание объекта managedDeviceMobileAppConfigurationAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f035efc6389a4f9ec45418bdc060cc0d20969808
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 06b9727da4505315cf1381365e934296832d1506
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59100087"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451943"
 ---
 # <a name="create-manageddevicemobileappconfigurationassignment"></a>Создание объекта managedDeviceMobileAppConfigurationAssignment
 
@@ -51,7 +51,7 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта.|
+|id|String|Уникальный идентификатор объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Объект, для которого назначается политика соблюдения условий.|
 
 
@@ -91,7 +91,6 @@ Content-Length: 228
   }
 }
 ```
-
 
 
 

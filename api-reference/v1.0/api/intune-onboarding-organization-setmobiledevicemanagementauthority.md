@@ -2,15 +2,15 @@
 title: Действие setMobileDeviceManagementAuthority
 description: Задание центра управления мобильными устройствами
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f1c2b4032d78f6d513ab2c5345b86bad88925e29
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: df212840370760e8fe9ffce83f7748ea92738542
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59119284"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60436777"
 ---
 # <a name="setmobiledevicemanagementauthority-action"></a>Действие setMobileDeviceManagementAuthority
 
@@ -69,7 +69,6 @@ Content-Length: 18
   "value": 2
 }
 ```
-
 
 
 

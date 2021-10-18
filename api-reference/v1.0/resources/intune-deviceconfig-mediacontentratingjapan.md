@@ -2,15 +2,15 @@
 title: Тип ресурса mediaContentRatingJapan
 description: Пока не задокументировано.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d35370ead6634d26eff2bbb7ef56ffc854131565
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 07eb571b7465a301e041379ed926e192296f4a31
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089580"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454182"
 ---
 # <a name="mediacontentratingjapan-resource-type"></a>Тип ресурса mediaContentRatingJapan
 
@@ -26,7 +26,7 @@ ms.locfileid: "59089580"
 |movieRating|[ratingJapanMoviesType](../resources/intune-deviceconfig-ratingjapanmoviestype.md)|Рейтинг фильмов, выбранный для Японии. Возможные значения: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove15`, `agesAbove18`.|
 |tvRating|[ratingJapanTelevisionType](../resources/intune-deviceconfig-ratingjapantelevisiontype.md)|Телевизионный рейтинг, выбранный для Японии. Возможные значения: `allAllowed`, `allBlocked`, `explicitAllowed`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,7 +43,6 @@ ms.locfileid: "59089580"
   "tvRating": "String"
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: Get mobileAppCategory
 description: Чтение свойств и связей объекта mobileAppCategory.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cec20f6e758553a8695edb02e5d2cffc6515875c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c9bf8dfb008029917831af0a0e3f6b950fb9bdab
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050349"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60456440"
 ---
 # <a name="get-mobileappcategory"></a>Get mobileAppCategory
 
@@ -45,7 +45,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategoryI
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -78,7 +78,6 @@ Content-Length: 239
   }
 }
 ```
-
 
 
 

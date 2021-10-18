@@ -2,15 +2,15 @@
 title: тип enum win32LobAppRuleOperator
 description: Содержит свойства оператора обнаружения.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 095972eee05eca4fc58636894655e5366ebb8101
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 26ddcabf46228bd3de7f8f5d8c89503895ae41c1
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021661"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453732"
 ---
 # <a name="win32lobappruleoperator-enum-type"></a>тип enum win32LobAppRuleOperator
 
@@ -27,10 +27,9 @@ ms.locfileid: "59021661"
 |равная|1|Равный оператор.|
 |notEqual|2|Не равный оператор.|
 |greaterThan|4 |Больше, чем оператор.|
-|greaterThanOrEqual|5 |Больше или меньше равного оператора.|
+|greaterThanOrEqual|5|Больше или меньше равного оператора.|
 |lessThan|8 |Меньше, чем оператор.|
 |lessThanOrEqual|9 |Меньше или меньше равного оператора.|
-
 
 
 

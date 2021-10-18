@@ -2,15 +2,15 @@
 title: Обновление объекта telecomExpenseManagementPartner
 description: Обновление свойств объекта telecomExpenseManagementPartner.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ed6660042cacdcb7123af897d16cc3d5faa9e5a5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 29bd4b968e21296d36e9bbd285d4ee9e076ada07
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59130568"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451221"
 ---
 # <a name="update-telecomexpensemanagementpartner"></a>Обновление объекта telecomExpenseManagementPartner
 
@@ -52,7 +52,7 @@ PATCH /deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManageme
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор партнера TEM.|
-|displayName|Строка|Отображаемое имя партнера TEM.|
+|displayName|String|Отображаемое имя партнера TEM.|
 |url|String|URL-адрес административной панели управления партнера TEM, где администратор может настроить службу TEM.|
 |appAuthorized|Boolean|Определяет, разрешен ли доступ к Intune партнерскому приложению AAD.|
 |enabled|Boolean|Определяет, включено или отключено сейчас подключение Intune к службе TEM.|
@@ -99,7 +99,6 @@ Content-Length: 297
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
-
 
 
 

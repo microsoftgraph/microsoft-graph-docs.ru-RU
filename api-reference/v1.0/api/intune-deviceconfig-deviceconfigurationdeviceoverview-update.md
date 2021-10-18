@@ -2,15 +2,15 @@
 title: Обновление объекта deviceConfigurationDeviceOverview
 description: Обновление свойств объекта deviceConfigurationDeviceOverview.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cc1ea3188c8aa7c6b9b6100929b6384e29f2e3d1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d3f62870502ac991291e4ba798a6ec98ccf08fd1
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59105225"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449725"
 ---
 # <a name="update-deviceconfigurationdeviceoverview"></a>Обновление объекта deviceConfigurationDeviceOverview
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatu
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |pendingCount|Int32|Количество ожидающих устройств.|
 |notApplicableCount|Int32|Количество неприменимых устройств.|
 |successCount|Int32|Количество успешных устройств.|
@@ -105,7 +105,6 @@ Content-Length: 333
   "configurationVersion": 4
 }
 ```
-
 
 
 

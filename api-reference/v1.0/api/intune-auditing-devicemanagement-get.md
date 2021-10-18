@@ -2,15 +2,15 @@
 title: Получение deviceManagement
 description: Чтение свойств и связей объекта deviceManagement.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c08e2c912e703bb2166b007c21632072b6fe0d0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d93b72dfd927779cd2b4c9f772ffd802f0100d6d
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59110678"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60456391"
 ---
 # <a name="get-devicemanagement"></a>Получение deviceManagement
 
@@ -75,7 +75,6 @@ Content-Length: 130
   }
 }
 ```
-
 
 
 

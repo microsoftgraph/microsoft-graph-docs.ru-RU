@@ -2,15 +2,15 @@
 title: Тип ресурса mobileThreatDefenseConnector
 description: Объект, представляющий подключение к партнеру по Mobile Threat Defense.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6648c53a65898b124c544e30cae0f3d74f8f92e0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5f6bebde0a74632477e1ba4a43d1bbb42f2aac6c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094298"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455536"
 ---
 # <a name="mobilethreatdefenseconnector-resource-type"></a>Тип ресурса mobileThreatDefenseConnector
 
@@ -42,7 +42,7 @@ ms.locfileid: "59094298"
 |partnerUnsupportedOsVersionBlocked|Логическое|Получение или задание настроек, следует ли блокировать устройства на включенных платформах, которые не соответствуют минимальным требованиям к версии партнера по синхронизации данных|
 |partnerUnresponsivenessThresholdInDays|Int32|Получает или задает количество дней, в течение которых клиент устойчив к отсутствию ответа для интеграции партнера|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -67,7 +67,6 @@ ms.locfileid: "59094298"
   "partnerUnresponsivenessThresholdInDays": 1024
 }
 ```
-
 
 
 

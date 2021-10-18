@@ -2,15 +2,15 @@
 title: Перечисление объектов deviceComplianceActionItem
 description: Список свойств и связей объектов deviceComplianceActionItem.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 318f60644be9deabf5ce90bef81f76c6a28b5e54
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 40dc369599fb5633c5d81ab51a8ea9e78243d4c1
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140215"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446802"
 ---
 # <a name="list-devicecomplianceactionitems"></a>Перечисление объектов deviceComplianceActionItem
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/schedu
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -80,7 +80,6 @@ Content-Length: 385
   ]
 }
 ```
-
 
 
 

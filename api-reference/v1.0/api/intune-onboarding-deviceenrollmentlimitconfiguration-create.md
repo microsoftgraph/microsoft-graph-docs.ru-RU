@@ -2,15 +2,15 @@
 title: Создание объекта deviceEnrollmentLimitConfiguration
 description: Создание объекта deviceEnrollmentLimitConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a0b689918f0ae0e8b7c528545aad3c3e981759d2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c549f2d1d7b9790bc07b14fdc49f229a54fbd36f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59146872"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60456342"
 ---
 # <a name="create-deviceenrollmentlimitconfiguration"></a>Создание объекта deviceEnrollmentLimitConfiguration
 
@@ -103,7 +103,6 @@ Content-Length: 377
   "limit": 5
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: Тип ресурса deviceAppManagement
 description: Единичный объект управления приложениями на устройствах.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a2d8644bc780c1d03ad10c99035dcd25d70379b6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5d0850b0b1838d3aa725bd32c52247af73216b00
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062574"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60434805"
 ---
 # <a name="deviceappmanagement-resource-type"></a>Тип ресурса deviceAppManagement
 
@@ -27,9 +27,9 @@ ms.locfileid: "59062574"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |managedAppPolicies|Коллекция [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|Политики управляемых приложений.|
@@ -56,7 +56,6 @@ ms.locfileid: "59062574"
   "id": "String (identifier)"
 }
 ```
-
 
 
 

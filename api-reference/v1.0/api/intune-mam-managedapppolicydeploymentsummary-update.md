@@ -2,15 +2,15 @@
 title: Обновление объекта managedAppPolicyDeploymentSummary
 description: Обновление свойств объекта managedAppPolicyDeploymentSummary.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 925ff8bf16b96c010f7a2670b3323a6b7c25e4e0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 68942b24269349b36cb899e4eebd10c65b61cca5
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59119459"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450111"
 ---
 # <a name="update-managedapppolicydeploymentsummary"></a>Обновление объекта managedAppPolicyDeploymentSummary
 
@@ -58,7 +58,7 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 |configurationDeployedUserCount|Int32|Пока не задокументировано.|
 |lastRefreshTime|DateTimeOffset|Пока не задокументировано.|
 |configurationDeploymentSummaryPerApp|Коллекция [managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md)|Пока не задокументировано.|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |version|String|Версия объекта.|
 
 
@@ -120,7 +120,6 @@ Content-Length: 637
   "version": "Version value"
 }
 ```
-
 
 
 

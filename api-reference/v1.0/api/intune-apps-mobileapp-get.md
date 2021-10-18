@@ -2,15 +2,15 @@
 title: Get mobileApp
 description: Чтение свойств и связей объекта mobileApp.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9357e1f9bb8290c605b8901b5e4ab45eeed8ddb2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9969dfbb5a6d94ac72d8928ee7efe39b9da3a589
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016500"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449858"
 ---
 # <a name="get-mobileapp"></a>Get mobileApp
 
@@ -92,7 +92,6 @@ Content-Length: 803
   }
 }
 ```
-
 
 
 

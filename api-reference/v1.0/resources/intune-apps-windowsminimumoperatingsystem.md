@@ -2,15 +2,15 @@
 title: Тип ресурса windowsMinimumOperatingSystem
 description: Минимальная версия операционной системы, необходимая мобильному приложению для Windows.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2a18f9c07b3ca1cd0ac7df69050ebc1b10208ae0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: afc371e84cf7cab3991af8a93d03321e9cdc8871
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123155"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449788"
 ---
 # <a name="windowsminimumoperatingsystem-resource-type"></a>Тип ресурса windowsMinimumOperatingSystem
 
@@ -27,7 +27,7 @@ ms.locfileid: "59123155"
 |v8_1|Boolean|Windows 8.1 или более поздней версии.|
 |v10_0|Boolean|Windows 10.0 или более поздней версии.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -45,7 +45,6 @@ ms.locfileid: "59123155"
   "v10_0": true
 }
 ```
-
 
 
 

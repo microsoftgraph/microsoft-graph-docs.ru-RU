@@ -2,15 +2,15 @@
 title: Обновление объекта deviceCategory
 description: Обновление свойств объекта deviceCategory.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: be1dd5ec3764925ecdf073a1c86cd329908a77b7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c10a00dcb46c72488f0d4d51417f98698ea30e5d
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022179"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457087"
 ---
 # <a name="update-devicecategory"></a>Обновление объекта deviceCategory
 
@@ -25,9 +25,9 @@ ms.locfileid: "59022179"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -51,7 +51,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор категории устройства. Только для чтения.|
+|id|String|Уникальный идентификатор категории устройства. Только для чтения.|
 
 
 
@@ -84,7 +84,6 @@ Content-Length: 105
   "id": "f881b841-b841-f881-41b8-81f841b881f8"
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: брандмауэрPreSharedKeyEncodingMethodType
 description: Возможные значения брандмауэраPreSharedKeyEncodingMethod
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d644c2aeb7251579da29c33347493ff7aa714bdc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a7dab6f20198a8e0ebe97546c797515342af5b29
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139774"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451446"
 ---
 # <a name="firewallpresharedkeyencodingmethodtype-enum-type"></a>брандмауэрPreSharedKeyEncodingMethodType
 
@@ -26,7 +26,6 @@ ms.locfileid: "59139774"
 |deviceDefault|0|Нет значения, настроенного Intune, не переопределять настроенное пользователем значение по умолчанию устройства|
 |Нет|1|Предустанавливаемая клавиша не закодирована. Вместо этого он хранится в широкоформатном формате|
 |utF8|2|Кодирование предшарного ключа с помощью UTF-8|
-
 
 
 

@@ -2,15 +2,15 @@
 title: Тип ресурса iosNotificationSettings
 description: Элемент, описывающий параметры уведомлений.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 44ff4f81719cc34583ae67173e867b7a955076a2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 72fd03ace8ede4adeb2f39e6d0fef4e1d7636d85
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118336"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447982"
 ---
 # <a name="iosnotificationsettings-resource-type"></a>Тип ресурса iosNotificationSettings
 
@@ -33,7 +33,7 @@ ms.locfileid: "59118336"
 |badgesEnabled|Boolean|Указывает, разрешены ли эмблемы для этого приложения.|
 |soundsEnabled|Boolean|Указывает, разрешены ли звуковые сигналы для этого приложения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -57,7 +57,6 @@ ms.locfileid: "59118336"
   "soundsEnabled": true
 }
 ```
-
 
 
 

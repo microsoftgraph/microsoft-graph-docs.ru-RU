@@ -2,15 +2,15 @@
 title: Тип ресурса deviceCategory
 description: Категории устройств используются для упорядочивания устройств. Используя категории устройств, администраторы могут определить собственные категории, применимые к их организации. Эти категории затем можно применить к устройству в консоли Azure Intune или выбрать во время регистрации устройства пользователем. На основе категорий устройств вы можете фильтровать отчеты и создавать динамические группы устройств Azure Active Directory.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6d890d2807db9725372806c715a0b05b16bcb8ec
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 623bb0c9eba0c46bacbcb06aba3d319c1cb98768
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098651"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450195"
 ---
 # <a name="devicecategory-resource-type"></a>Тип ресурса deviceCategory
 
@@ -33,10 +33,10 @@ ms.locfileid: "59098651"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор категории устройства. Только для чтения.|
-|displayName|Строка|Отображаемое имя категории устройств.|
+|displayName|String|Отображаемое имя категории устройств.|
 |description|String|Необязательное описание категории устройств.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -55,7 +55,6 @@ ms.locfileid: "59098651"
   "description": "String"
 }
 ```
-
 
 
 

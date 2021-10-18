@@ -2,15 +2,15 @@
 title: Перечисление объектов iosUpdateConfiguration
 description: Список свойств и связей объектов iosUpdateConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0df6a4c38af6481aa9cc09ed81bfcb94b2112736
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a9c619140d4b2da683eb34ac9344ac3e09623ae7
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59114234"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448102"
 ---
 # <a name="list-iosupdateconfigurations"></a>Перечисление объектов iosUpdateConfiguration
 
@@ -85,7 +85,6 @@ Content-Length: 582
   ]
 }
 ```
-
 
 
 

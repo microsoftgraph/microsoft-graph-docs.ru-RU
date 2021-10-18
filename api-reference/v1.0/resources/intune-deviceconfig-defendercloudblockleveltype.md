@@ -2,15 +2,15 @@
 title: тип enum defenderCloudBlockLevelType
 description: Возможные значения уровня облачного блока
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d3af9d2d259eb7b92be1973fdfb1d9a1968c335f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 14752803e22cdb991ecf9b7b93f3b01e49993efe
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59078807"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451530"
 ---
 # <a name="defendercloudblockleveltype-enum-type"></a>тип enum defenderCloudBlockLevelType
 
@@ -27,7 +27,6 @@ ms.locfileid: "59078807"
 |высокая|1|High применяет высокий уровень обнаружения.|
 |highPlus|2|High + использует высокий уровень и применяет меры защиты от добавления|
 |zeroTolerance|3|Нулевая толерантность блокирует все неизвестные исполняемые|
-
 
 
 

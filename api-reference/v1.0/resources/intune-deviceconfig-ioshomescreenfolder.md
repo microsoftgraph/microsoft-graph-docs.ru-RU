@@ -2,15 +2,15 @@
 title: Тип ресурса iosHomeScreenFolder
 description: Папка, содержащая страницы приложений и веб-клипы на домашнем экране.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 409dd9dcf7dca1dd1c85296620e41056ebabe874
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 39c1cee75fa889468fc6191a753d3e2141b473ca
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136462"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451347"
 ---
 # <a name="ioshomescreenfolder-resource-type"></a>Тип ресурса iosHomeScreenFolder
 
@@ -26,10 +26,10 @@ ms.locfileid: "59136462"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя приложения. Наследуется от [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|
+|displayName|String|Имя приложения. Наследуется от [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|
 |pages|Коллекция [iosHomeScreenFolderPage](../resources/intune-deviceconfig-ioshomescreenfolderpage.md)|Страницы значков макета домашнего экрана, которые должны быть приложениями или веб-клипами. Эта коллекция может содержать не более 500 элементов.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -58,7 +58,6 @@ ms.locfileid: "59136462"
   ]
 }
 ```
-
 
 
 

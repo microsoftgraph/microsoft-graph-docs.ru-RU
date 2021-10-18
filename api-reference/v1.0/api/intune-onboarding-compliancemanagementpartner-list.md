@@ -2,15 +2,15 @@
 title: Список complianceManagementPartners
 description: Список свойств и связей объектов complianceManagementPartner.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 91b22e3dcdd3b735d0a99d94d085e079166ff5e3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8dcb2154680482dc376ee0dbadd80df80f635c50
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59146969"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60456349"
 ---
 # <a name="list-compliancemanagementpartners"></a>Список complianceManagementPartners
 
@@ -44,7 +44,7 @@ GET /deviceManagement/complianceManagementPartners
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -107,7 +107,6 @@ Content-Length: 1408
   ]
 }
 ```
-
 
 
 

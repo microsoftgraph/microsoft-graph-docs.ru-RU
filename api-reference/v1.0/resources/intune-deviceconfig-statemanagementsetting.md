@@ -2,15 +2,15 @@
 title: тип enum stateManagementSetting
 description: Параметр управления состоянием.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 57eceb60eb723cd0f9561e2f64a25b871489477e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 75e46e4a4b85d1575779b86243ec3bf8aabbfa87
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072255"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452533"
 ---
 # <a name="statemanagementsetting-enum-type"></a>тип enum stateManagementSetting
 
@@ -26,7 +26,6 @@ ms.locfileid: "59072255"
 |notConfigured|0|Не настроен.|
 |заблокировано|1|Заблокировано.|
 |разрешено|2|Разрешено.|
-
 
 
 

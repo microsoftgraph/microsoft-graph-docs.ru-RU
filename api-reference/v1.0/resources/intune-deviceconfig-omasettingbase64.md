@@ -2,15 +2,15 @@
 title: Тип ресурса omaSettingBase64
 description: Определение параметров OMA в кодировке Base64.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b6f3209bf71f99a5ea783a714ee70a2cca953a5d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 454d0c02e103faf2fa7d7b9af7110dbb069338fc
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118322"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453325"
 ---
 # <a name="omasettingbase64-resource-type"></a>Тип ресурса omaSettingBase64
 
@@ -26,13 +26,13 @@ ms.locfileid: "59118322"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображаемое имя. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|displayName|String|Отображаемое имя. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |description|String|Описание. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |fileName|String|Имя файла, связанное со свойством Value (CER,  | *.crt | *.p7b | *.bin).|
 |value|String|Значение (строка в кодировке Base64).|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -52,7 +52,6 @@ ms.locfileid: "59118322"
   "value": "String"
 }
 ```
-
 
 
 

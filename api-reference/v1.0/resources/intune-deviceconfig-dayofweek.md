@@ -2,15 +2,15 @@
 title: тип enum dayOfWeek
 description: Возможные значения за будний день
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a13a5ebb9cc08fc4f27f0e44c45a6d9c6ee628f8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4469fb76e24aca418c0b38e541138a1bd2b1ca85
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139816"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454378"
 ---
 # <a name="dayofweek-enum-type"></a>тип enum dayOfWeek
 
@@ -28,9 +28,8 @@ ms.locfileid: "59139816"
 |вторник|2|Во вторник.|
 |среда|3|Среда.|
 |четверг|4 |В четверг.|
-|пятница|5 |В пятницу.|
+|пятница|5|В пятницу.|
 |суббота|6 |В субботу.|
-
 
 
 

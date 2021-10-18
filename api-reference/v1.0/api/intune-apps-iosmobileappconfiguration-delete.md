@@ -2,15 +2,15 @@
 title: Удалить iosMobileAppConfiguration
 description: Удаляет iosMobileAppConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 27862b02638b4796a003805f66bba38ad672e044
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fbd39435171e8d722cc2f62ec754d400d8c4f9fc
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056538"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450975"
 ---
 # <a name="delete-iosmobileappconfiguration"></a>Удалить iosMobileAppConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "59056538"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -63,7 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurati
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

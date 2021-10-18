@@ -2,15 +2,15 @@
 title: Удаление объекта iosLobApp
 description: Удаляет объект iosLobApp.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 28cfd931dab0e01f1a5ad99b7d514acba4efc3b3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1c0055699b34987417691fa1dc78645673be5056
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59095089"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447814"
 ---
 # <a name="delete-ioslobapp"></a>Удаление объекта iosLobApp
 
@@ -63,7 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
