@@ -2,15 +2,15 @@
 title: тип enum win32LobAppRuleType
 description: Содержит типы правил для приложений LOB Win32.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c3e827f11478b0d6ad89c917be5bfe2118ba2e4b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2334bca77cc4b2ea292c8c529d6e4c5f3152cc4d
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59067334"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449035"
 ---
 # <a name="win32lobappruletype-enum-type"></a>тип enum win32LobAppRuleType
 
@@ -25,7 +25,6 @@ ms.locfileid: "59067334"
 |:---|:---|:---|
 |обнаружение|0|Правило обнаружения.|
 |требование|1|Правило требования.|
-
 
 
 

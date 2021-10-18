@@ -2,15 +2,15 @@
 title: Список iosMobileAppConfigurations
 description: Список свойств и связей объектов iosMobileAppConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 860a7b8da8b285d433a5fc8692d514cb8d9af820
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0d3be131c3eef1e7eb6c646c4cc930a48fe8f40f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056524"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450968"
 ---
 # <a name="list-iosmobileappconfigurations"></a>Список iosMobileAppConfigurations
 
@@ -27,7 +27,7 @@ ms.locfileid: "59056524"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -91,7 +91,6 @@ Content-Length: 815
   ]
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: Получение объекта managedDeviceMobileAppConfiguration
 description: Чтение свойств и связей объекта managedDeviceMobileAppConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c39ffaecfdfe665b0f6323efdd912f8816a1e9e0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 15d218f437fca068e5e1635f97f9cf7de5be4bed
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59063393"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449568"
 ---
 # <a name="get-manageddevicemobileappconfiguration"></a>Получение объекта managedDeviceMobileAppConfiguration
 
@@ -83,7 +83,6 @@ Content-Length: 451
   }
 }
 ```
-
 
 
 

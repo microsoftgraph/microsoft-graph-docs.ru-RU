@@ -2,15 +2,15 @@
 title: Создание объекта windowsInformationProtectionNetworkLearningSummary
 description: Создание объекта windowsInformationProtectionNetworkLearningSummary.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 84acdd48bb30e9c88831a678b6198934b1aa1dd4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c9aa5186f4ff748783c1a36d282c478640581a64
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032708"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453023"
 ---
 # <a name="create-windowsinformationprotectionnetworklearningsummary"></a>Создание объекта windowsInformationProtectionNetworkLearningSummary
 
@@ -51,7 +51,7 @@ POST /deviceManagement/windowsInformationProtectionNetworkLearningSummaries
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта WindowsInformationProtectionNetworkLearningSummary.|
+|id|String|Уникальный идентификатор объекта WindowsInformationProtectionNetworkLearningSummary.|
 |url|String|URL-адрес веб-сайта|
 |deviceCount|Int32|Количество устройств|
 
@@ -90,7 +90,6 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
-
 
 
 

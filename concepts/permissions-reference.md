@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 1d39965eb95fca26ef29d513fbfa76672374941a
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: dcda42adda5a5d5dab0e1688e1550fae1dae656f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256076"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447237"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -201,7 +201,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 * _Analytics.Read_. [Перечисление соответствующих параметров для пользователя](/graph/api/useranalytics-get-settings?view=graph-rest-beta&preserve-view=true) (`GET /beta/me/analytics/settings`)
 
-#### <a name="application"></a>Приложение
+#### <a name="application"></a>Для приложений
 
 Отсутствуют.
 
@@ -233,7 +233,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 * _AppCatalog.ReadWrite.All_. [Обновление опубликованного приложения](/graph/api/teamsapp-update?view=graph-rest-beta&preserve-view=true) (`PATCH /beta/appCatalogs/teamsApps/{id}`)
 * _AppCatalog.ReadWrite.All_. [Удаление опубликованного приложения](/graph/api/teamsapp-delete?view=graph-rest-beta&preserve-view=true) (`DELETE /beta/appCatalogs/teamsApps/{id}`)
 
-#### <a name="application"></a>Приложение
+#### <a name="application"></a>Для приложений
 
 Отсутствуют.
 
@@ -272,7 +272,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 * _Application.Read.All_. Составление списка всех приложений (`GET /v1.0/applications`)
 * _Application.ReadWrite.All_. Обновление субъекта-службы (`PATCH /v1.0/servicePrincipals/{id}`)
 
-#### <a name="application"></a>Для приложения
+#### <a name="application"></a>Для приложений
 
 * _Application.Read.All_. Составление списка всех приложений (`GET /v1.0/applications`)
 * _Application.ReadWrite.All_. Удаление субъект-службы (`DELETE /v1.0/servicePrincipals/{id}`)
@@ -408,7 +408,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 ### <a name="example-usage"></a>Примеры использования
 
-#### <a name="application"></a>Приложение
+#### <a name="application"></a>Для приложений
 
 * _Calls.Initiate.All_. Совершение однорангового звонка из приложения пользователю в организации (`POST /beta/communications/calls`).
 * _Calls.InitiateGroupCall.All_. Совершение группового звонка из приложения группе пользователей в организации (`POST /beta/communications/calls`).
@@ -663,7 +663,6 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 * _Contacts.ReadWrite_. Добавление контактов в корневую папку любого пользователя в организации (`POST /users/{id | userPrincipalName}/contacts`).
 
 Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
-
 
 ## <a name="device-permissions"></a>Разрешения для устройств
 
@@ -953,7 +952,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 * _GroupMember.ReadWrite.All_. Обновление участников группы (`POST /groups/{id}/members/$ref`).
 > **Примечание.** При этом также необходимо разрешение _User.ReadBasic.All_ для чтения пользователя, чтобы добавить его как участника.
 
-#### <a name="application"></a>Приложение
+#### <a name="application"></a>Для приложений
 
 * _Group.Read.All_. Поиск всех групп, имена которых начинаются с "Sales" (`GET /groups?$filter=startswith(displayName,'Sales')`).
 * _Group.ReadWrite.All_. Управляющая служба создает события в календаре группы Microsoft 365 (`POST /groups/{id}/events`).
@@ -1891,6 +1890,29 @@ _ProgramControl.Read.All_ и _ProgramControl.ReadWrite.All_ допустимы �
 
 ---
 
+## <a name="subject-rights-request-permissions"></a>Разрешения запроса прав субъекта
+
+#### <a name="delegated-permissions"></a>Делегированные разрешения
+
+|   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора | Поддержка учетной записи Майкрософт |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+SubjectRightsRequest.Read.All* | Чтение запросов прав субъекта | Позволяет приложению читать запросы прав субъектов от имени пользователя, вошедшего в систему. | Да | Нет |
+SubjectRightsRequest.ReadWrite.All* | Чтение и запись запросов прав субъекта | Позволяет приложению читать и записывать запросы прав субъектов от имени пользователя, вошедшего в систему. | Да | Нет |
+
+> **Важно.** Разрешения, отмеченные звездочкой (*), в настоящее время недоступны. Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues#compliance).
+
+
+#### <a name="application-permissions"></a>Разрешения приложений
+Нет.
+
+### <a name="example-usage"></a>Примеры использования
+#### <a name="delegated"></a>Delegated
+- SubjectRightsRequest.Read.All_: получение списка запросов прав субъектов, доступны для пользователя (`GET /privacy/subjectrightsrequests`).
+- _SubjectRightsRequest.ReadWrite.All_: создание запроса прав субъекта (`POST /privacy/subjectrightsrequests`).
+
+Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
+
+
 ## <a name="tasks-permissions"></a>Разрешения для задач
 
 #### <a name="delegated-permissions"></a>Делегированные разрешения
@@ -2198,7 +2220,7 @@ _ProgramControl.Read.All_ и _ProgramControl.ReadWrite.All_ допустимы �
 
 * _ThreatAssessment.ReadWrite.All_: чтение и запись запросов на оценку угроз (`POST /informationProtection/threatAssessmentRequests`)
 
-#### <a name="application"></a>Приложение
+#### <a name="application"></a>Для приложений
 
 * _ThreatAssessment.Read.All_: чтение запросов на оценку угроз (`GET /informationProtection/threatAssessmentRequests`)
 

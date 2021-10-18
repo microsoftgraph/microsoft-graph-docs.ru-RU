@@ -2,15 +2,15 @@
 title: тип enum managedAppClipboardSharingLevel
 description: Представляет уровень, на котором буфер обмена данными устройства может быть разделен между приложениями
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b947e0e4f3d81ed843c5e239dbe410594db70b8c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b55b58cc0a5c3a514d805e149ace79c3e30f0a89
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118091"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457381"
 ---
 # <a name="managedappclipboardsharinglevel-enum-type"></a>тип enum managedAppClipboardSharingLevel
 
@@ -27,7 +27,6 @@ ms.locfileid: "59118091"
 |managedAppsWithPasteIn|1|Разрешен общий доступ между всеми управляемыми приложениями с включенной вклейки|
 |managedApps|2|Разрешен общий доступ между всеми управляемыми приложениями|
 |заблокировано|3|Совместное использование между приложениями отключено|
-
 
 
 

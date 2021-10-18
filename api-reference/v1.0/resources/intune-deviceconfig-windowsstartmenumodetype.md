@@ -2,15 +2,15 @@
 title: тип enum windowsStartMenuModeType
 description: Тип режимов отображения для меню пуск.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 85f3ae128a42e7c89e902ac696162e5a82e2e070
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 011dac2accb4b5302bd7350bd4924e8125025629
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59108977"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451859"
 ---
 # <a name="windowsstartmenumodetype-enum-type"></a>тип enum windowsStartMenuModeType
 
@@ -26,7 +26,6 @@ ms.locfileid: "59108977"
 |userDefined|0|Определенный пользователь. Значение по умолчанию.|
 |fullScreen|1|Полный экран.|
 |nonFullScreen|2|Не полный экран.|
-
 
 
 

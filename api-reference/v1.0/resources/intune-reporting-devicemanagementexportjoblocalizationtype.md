@@ -2,15 +2,15 @@
 title: тип enum deviceManagementExportJobLocalizationType
 description: Настройка локализации запрашиваемого задания экспорта
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e15e66067cd627ad2dcc37f76feecaec3bb29ad8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bd7ea9ac34125224c1ca54270cc919807dfafb3e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036349"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448922"
 ---
 # <a name="devicemanagementexportjoblocalizationtype-enum-type"></a>тип enum deviceManagementExportJobLocalizationType
 
@@ -25,7 +25,6 @@ ms.locfileid: "59036349"
 |:---|:---|:---|
 |локализованоValuesAsAdditionalColumn|0|Настраивает задание экспорта, чтобы выставить локализованные значения в качестве дополнительного столбца|
 |replaceLocalizableValues|1|Настраивает задание экспорта для замены переизменяемых значений на их локализованные значения|
-
 
 
 

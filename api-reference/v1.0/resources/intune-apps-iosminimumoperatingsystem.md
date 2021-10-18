@@ -2,15 +2,15 @@
 title: Тип ресурса iosMinimumOperatingSystem
 description: Содержит свойства для минимальной версии операционной системы, необходимой для мобильного приложения iOS.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f7e10245c8541dd67435b7164760931ffa624435
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 043466eba844f12ea2d38155106198522afb4d3d
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109131"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455874"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>Тип ресурса iosMinimumOperatingSystem
 
@@ -28,10 +28,10 @@ ms.locfileid: "59109131"
 |v10_0|Boolean|Версия 10.0 или выше.|
 |v11_0|Boolean|Версия 11.0 или выше.|
 |v12_0|Логический|Версия 12.0 или более поздней версии.|
-|v13_0|Boolean|Версия 13.0 или более поздней версии.|
+|v13_0|Логический|Версия 13.0 или более поздней версии.|
 |v14_0|Логический|Версия 14.0 или более поздней версии.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -53,7 +53,6 @@ ms.locfileid: "59109131"
   "v14_0": true
 }
 ```
-
 
 
 

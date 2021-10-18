@@ -2,15 +2,15 @@
 title: тип enum windowsUpdateType
 description: Какие устройства филиала будут получать обновления от
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c49f12452beaf2097381975f40314abbee03ffce
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2ee81f022978dc8259b240f8b559c590d91514c2
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59015569"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450856"
 ---
 # <a name="windowsupdatetype-enum-type"></a>тип enum windowsUpdateType
 
@@ -28,8 +28,7 @@ ms.locfileid: "59015569"
 |businessReadyOnly|2|Полугодовой канал. Устройство получает обновления функций из Semi-annual Channel.|
 |windowsInsiderBuildFast|3|Windows Сборка инсайдеров — быстрая|
 |windowsInsiderBuildSlow|4 |Windows Сборка инсайдеров - Slow|
-|windowsInsiderBuildRelease|5 |Сборка Windows insider|
-
+|windowsInsiderBuildRelease|5|Сборка Windows insider|
 
 
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 013560d66a16ccc6aabe39e0e7eaaabccda5e81d
-ms.sourcegitcommit: cbad97d6a8ccb89b1822b30a11cc9b6f2670deda
+ms.openlocfilehash: f01352fb2e5b9c05c8b5134e95d79cbc46547bbe
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60016608"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446429"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -403,7 +403,7 @@ ms.locfileid: "60016608"
 |родитель|0|Родитель пользователя.|
 |относительный|1| Родственник пользователя.|
 |помощник|2| Помощник пользователя.|
-|врач|3 | Врач пользователя.|
+|врач|3| Врач пользователя.|
 |guardian|4 | Хранитель пользователя.|
 |child|5| Ребенок пользователя.|
 |другие|6 | Неустановленное отношение к пользователю.|
@@ -490,9 +490,9 @@ ms.locfileid: "60016608"
 | бесплатно              | 0
 | предварительная         | 1
 | занят              | 2
-| oof               | 3 
+| oof               | 3
 | workingElsewhere  | 4 
-| unknown           | -1
+| unknown           | –1
 
 
 ### <a name="attendeetype-values"></a>значения attendeeType
@@ -526,11 +526,11 @@ ms.locfileid: "60016608"
 
 | Элемент     | Значение
 |:-----------|:----------
-| Авто       | -1
+| Авто       | –1
 | lightBlue  | 0
 | lightGreen | 1
 | lightOrange| 2
-| lightGray  | 3 
+| lightGray  | 3
 | lightYellow| 4 
 | lightTeal  | 5
 | lightPink  | 6 
@@ -705,7 +705,7 @@ ms.locfileid: "60016608"
 | Владелец       | 0
 | Участник | 1
 | Reader      | 2
-| Нет        | -1
+| Нет        | –1
 
 
 ### <a name="operationstatus-values"></a>значения operationStatus
@@ -713,7 +713,7 @@ ms.locfileid: "60016608"
 | Member
 |:-----------------
 |NotStarted
-|Выполняется
+|Работает
 |Завершено
 |Не выполнено
 
@@ -821,7 +821,7 @@ ms.locfileid: "60016608"
 ### <a name="onenotesourceservice-values"></a>значения onenoteSourceService
 | Member
 |:---------------------
-| Неизвестно
+| Unknown
 | OneDrive
 | OneDriveForBusiness
 | OnPremOneDriveForBusiness
@@ -864,11 +864,11 @@ ms.locfileid: "60016608"
 
 | Элемент   |Значение
 |:---------|:--------
-| Нет     | -1
+| Нет     | –1
 | preset0  | 0
 | preset1  | 1
 | preset2  | 2
-| preset3  | 3 
+| preset3  | 3
 | preset4  | 4 
 | preset5  | 5
 | preset6  | 6 
@@ -900,7 +900,7 @@ ms.locfileid: "60016608"
 |unknown|0|Неизвестно.|
 |truePositive|1|Оповещение — это верно-положительно.|
 |falsePositive|2| Оповещение является ложным срабатывательным.|
-|benignPositive|3 | Оповещение является доброкачественным.|
+|benignPositive|3| Оповещение является доброкачественным.|
 
 ### <a name="filehashtype-values"></a>значения fileHashType
 
@@ -911,7 +911,7 @@ Enum для типов hash файла.
 |unknown|0|Неизвестный тип.|
 |sha1|1|Тип hash SHA1.|
 |sha256|2| Тип hash SHA256.|
-|md5|3 | Тип hash MD5.|
+|md5|3| Тип hash MD5.|
 |authenticodeHash256|4 | Тип hash AuthenticodeHash256.|
 |lsHash|5| Тип hash LsHash.|
 |ctph|6 | Тип хаши CTPH.|
@@ -937,7 +937,7 @@ Enum для состояния подключений.
 |unknown|0|Состояние неизвестного подключения.|
 |попытка|1|Попытка подключения.|
 |успешно|2| Подключение удалось.|
-|заблокировано|3 | Подключение заблокировано.|
+|заблокировано|3| Подключение заблокировано.|
 |не удалось|4 | Сбой подключения.|
 
 ### <a name="processintegritylevel-values"></a>значения processIntegrityLevel
@@ -962,7 +962,7 @@ Enum для ульев реестра, как [определено /windows/des
 |unknown|0|Неизвестный улей.|
 |currentConfig|1|HKEY_CURRENT_CONFIG улей.|
 |currentUser|2| HKEY_CURRENT_USER улей.|
-|localMachineSam|3 | HKEY_LOCAL_MACHINE\SAM улей.|
+|localMachineSam|3| HKEY_LOCAL_MACHINE\SAM улей.|
 |localMachineSamSoftware|4 | HKEY_LOCAL_MACHINE\Software улей.|
 |localMachineSystem|5| HKEY_LOCAL_MACHINE\System улей.|
 |usersDefault|6 | HKEY_USERS \\ . Улей DEFAULT.|
@@ -976,7 +976,7 @@ Enum для ульев реестра, как [определено /windows/des
 |unknown|0|Неизвестный тип значения реестра.|
 |create|1|Создание реестра.|
 |изменение|2|Изменение реестра.|
-|delete|3 |Удаление реестра.|
+|delete|3|Удаление реестра.|
 
 ### <a name="registryvaluetype-values"></a>значения registryValueType
 
@@ -987,7 +987,7 @@ Enum для типов значений реестра, определяемог
 |unknown|0|Неизвестный тип значения реестра.|
 |двоичный|1|REG_BINARY типа значения реестра.|
 |dword|2| REG_DWORD типа значения реестра.|
-|dwordLittleEndian|3 | REG_DWORD_LITTLE_ENDIAN типа значения реестра.|
+|dwordLittleEndian|3| REG_DWORD_LITTLE_ENDIAN типа значения реестра.|
 |dwordBigEndian|4 | REG_DWORD_BIG_ENDIAN тип значения реестра.|
 |expandSz|5| REG_EXPAND_SZ тип значения реестра.|
 |link|6 | REG_LINK тип значения реестра.|
@@ -1006,7 +1006,7 @@ Enum для серьезности оповещений.
 |unknown|0|Серьезность неизвестна.|
 |информационная|1|Строгость только для сведений.|
 |низкий|2| Серьезность низкая.|
-|medium|3 | Серьезность является средней.|
+|medium|3| Серьезность является средней.|
 |высокая|4 | Серьезность высока.|
 
 ### <a name="alertstatus-values"></a>значения alertStatus
@@ -1035,11 +1035,11 @@ Enum для серьезности оповещений.
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|-1|Неизвестно.|
+|unknown|–1|Неизвестно.|
 |интерактивный|0|Logon является интерактивным.|
 |remoteInteractive|1| Logon — это удаленный интерактивный.|
 |сеть|2| Logon — это сеть.|
-|batch|3 | Logon является пакетным.|
+|batch|3| Logon является пакетным.|
 |служба|4 | Logon — это служба.|
 
 ### <a name="useraccountsecuritytype-values"></a>Значения userAccountSecurityType
@@ -1048,7 +1048,7 @@ Enum для серьезности оповещений.
 
 |Member|Member|Описание|
 |:---|:---|:---|
-|unknown|-1|Неизвестно.|
+|unknown|–1|Неизвестно.|
 |стандартный|0|Член группы стандартных пользователей.|
 |power|1| Член группы Power Users.|
 |администратор|2| Член группы Администраторы.|
@@ -1172,9 +1172,9 @@ Enum для серьезности оповещений.
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| mail   | 1     | Угроза почты.            |
+| почта;   | 1     | Угроза почты.            |
 | url    | 2     | УГРОЗА URL-адреса.             |
-| file   | 3      | Угроза файла вложения. |
+| file   | 3     | Угроза файла вложения. |
 
 ### <a name="threatexpectedassessment-values"></a>значения threatExpectedAssessment
 
@@ -1189,7 +1189,7 @@ Enum для серьезности оповещений.
 |:-------------------|:------|:-------------------|
 | уверенности               | 1     | Угроза нежелательной почты.       |
 | степенью           | 2     | Фишинговая угроза.   |
-| malware            | 3      | Угроза вредоносных программ.    |
+| malware            | 3     | Угроза вредоносных программ.    |
 | unknownFutureValue | 4      | Член-часовой. |
 
 ### <a name="threatassessmentstatus-values"></a>значения threatAssessmentStatus
@@ -1213,7 +1213,7 @@ Enum для серьезности оповещений.
 |:-------------------|:------|:-----------------------------------------------------|
 | checkPolicy        | 1     | Результат проверки политики только для `mail` оценки. |
 | rescan             | 2     | Результат rescan.                                   |
-| unknownFutureValue | 3      | Член-часовой.                                   |
+| unknownFutureValue | 3     | Член-часовой.                                   |
 
 ### <a name="maildestinationroutingreason-values"></a>значения mailDestinationRoutingReason
 
@@ -1222,7 +1222,7 @@ Enum для серьезности оповещений.
 | Нет                  | 0     | Еще не знаю.                       |
 | mailFlowRule          | 1     | Exchange правила транспорта.            |
 | safeSender            | 2     | Сейф отправитель.                   |
-| blockedSender         | 3      | Заблокированный список отправитель.                |
+| blockedSender         | 3     | Заблокированный список отправитель.                |
 | advancedSpamFiltering | 4      | Расширенный параметр flitering нежелательной почты.     |
 | domainAllowList       | 5     | Список разрешаемой области отправитель.           |
 | domainBlockList       | 6      | Список блоков домена отправитель.           |
@@ -1311,7 +1311,7 @@ Enum для серьезности оповещений.
 |пользователь | Столбец Person или group. |
 |url | Гиперссылка или столбец изображения. |
 |вычисляется | Вычисляется столбец. |
-|location | Столбец Расположение. |
+|расположение | Столбец Расположение. |
 |геолокация | Столбец Геолокации. |
 |term | Столбец управляемых метаданных. |
 |многоступенчатый | Столбец управляемых метаданных с несколькими значениями. |
@@ -1549,7 +1549,7 @@ Enum для серьезности оповещений.
 |Member|
 |:---|
 |team|
-|channel|
+|канал|
 |чат|
 |unknownFutureValue|
 
@@ -1631,4 +1631,57 @@ Enum для серьезности оповещений.
 |нормальный|
 |высокая|
 |критически важное значение|
+|unknownFutureValue|
+
+### <a name="subjectrightsrequeststage-values"></a>значения subjectRightsRequestStage 
+
+|Member|
+|:---|
+|contentRetrieval|
+|contentReview|
+|generateReport|
+|contentDeletion|
+|caseResolved|
+|unknownFutureValue|
+
+### <a name="subjectrightsrequeststagestatus-values"></a>значения subjectRightsRequestStageStatus 
+
+|Member|
+|:---|
+|notStarted|
+|текущий| 
+|завершено| 
+|не удалось|
+|unknownFutureValue|
+
+### <a name="subjectrightsrequeststatus-values"></a>значения subjectRightsRequestStatus 
+
+|Member|
+|:---|
+|active|
+|закрыто|
+|unknownFutureValue|
+
+### <a name="subjectrightsrequesttype-values"></a>значения subjectRightsRequestType 
+
+|Member|
+|:---|
+|экспорт|
+|delete|
+|доступ|
+|tagForAction|
+|unknownFutureValue|
+
+### <a name="datasubjecttype-values"></a>значения dataSubjectType 
+
+|Member|
+|:---|
+|клиент|
+|currentEmployee|
+|formerEmployee|
+|prospectiveEmployee|
+|student|
+|teacher|
+|факультет|
+|другие|
 |unknownFutureValue|

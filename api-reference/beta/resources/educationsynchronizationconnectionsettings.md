@@ -1,40 +1,55 @@
 ---
-title: Тип ресурса Едукатионсинчронизатионконнектионсеттингс
-description: 'Представляет параметры подключения к поставщику. Это позволяет системе узнать, как подключаться к API поставщика. '
+title: тип ресурса educationSynchronizationConnectionSettings
+description: 'Представляет параметры подключения поставщика. Это позволяет системе знать, как подключаться к API поставщика. '
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 449dc1c4265355d55e6d3ceb51fe86be9f84ac31
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7b64b52946e2391378a34ee3cba3db852d61666d
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979565"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445902"
 ---
-# <a name="educationsynchronizationconnectionsettings-resource-type"></a>Тип ресурса Едукатионсинчронизатионконнектионсеттингс
+# <a name="educationsynchronizationconnectionsettings-resource-type"></a>тип ресурса educationSynchronizationConnectionSettings
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет параметры подключения к поставщику. Это позволяет системе узнать, как подключаться к API поставщика.
+Представляет параметры подключения поставщика. Это позволяет системе знать, как подключаться к API поставщика.
 
 > [!NOTE]
-> Этот сложный тип является абстрактным. Ознакомьтесь со списками определенных типов параметров подключения.
+> Этот сложный тип абстрактный. Обратитесь к указанным типам параметров подключения.
 
 ## <a name="derived-types"></a>Производные типы
 
 | Тип                                                                                                                                      | Описание                                                                   |
 | :---------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------- |
-| [educationSynchronizationOAuth1ConnectionSettings](educationsynchronizationoauth1connectionsettings.md)                                   | Используйте этот тип для предоставления параметров подключения OAuth1.                          |
-| [educationSynchronizationOAuth2ClientCredentialsConnectionSettings](educationsynchronizationoauth2clientcredentialsconnectionsettings.md) | Используйте этот тип для предоставления учетных данных клиента OAuth2 для предоставления параметров подключения. |
+| [educationSynchronizationOAuth1ConnectionSettings](educationsynchronizationoauth1connectionsettings.md)                                   | Этот тип используется для предоставления параметров подключения OAuth1.                          |
+| [educationSynchronizationOAuth2ClientCredentialsConnectionSettings](educationsynchronizationoauth2clientcredentialsconnectionsettings.md) | Используйте этот тип для предоставления параметров подключения КБ OAuth2 для предоставления клиентских учетных данных. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип   | Описание                                                   |
 | :----------- | :----- | :------------------------------------------------------------ |
-| clientId     | String | Идентификатор клиента, используемый для подключения к поставщику.                    |
+| clientId     | String | ID клиента, используемый для подключения к поставщику.                    |
 | clientSecret | String | Секрет клиента для проверки подлинности подключения к поставщику. |
 
+## <a name="json-representation"></a>Представление JSON
 
+Ниже приводится представление JSON этого ресурса.
+
+<!-- {
+  "blockType": "resource",
+   "isAbstract":true,
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.educationSynchronizationConnectionSettings"
+}-->
+
+```json
+{}
+```

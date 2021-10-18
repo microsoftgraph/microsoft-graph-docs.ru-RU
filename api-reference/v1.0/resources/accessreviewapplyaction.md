@@ -5,22 +5,22 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 8c887c1b2bbef46f963e2260f4bfe99215cddc2d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 82f7f88f168991ae398ca68a52e37be0baf8dec1
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021766"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60441471"
 ---
 # <a name="accessreviewapplyaction-resource-type"></a>тип ресурса accessReviewApplyAction
 
 Пространство имен: microsoft.graph
 
-Представляет базовый класс для применения действий в [accessReviewScheduleSettings](accessreviewschedulesettings.md) [accessReviewScheduleDefinition.](accessreviewscheduledefinition.md) Поддерживаемые производные типы:
+Представляет базовый класс для применения действий в [accessReviewScheduleSettings](accessreviewschedulesettings.md) объекта [accessReviewScheduleDefinition.](accessreviewscheduledefinition.md) Поддерживаются следующие производные типы:
 
-- [removeAccessApplyAction](removeaccessapplyaction.md) — это производный тип accessReviewApplyAction, который указывает на удаление доступа к объекту, проверяемого по завершении проверки. Это тип по умолчанию для свойства applyActions в accessReviewScheduleSettings и не требует указаний.
+- [removeAccessApplyAction](removeaccessapplyaction.md) указывает на удаление доступа к объекту, проверяемого по завершении проверки. Это тип по умолчанию для свойства applyActions в accessReviewScheduleSettings и не требует указаний.
 
-- [disableAndDeleteUserApplyAction](disableanddeleteuserapplyaction.md) — это производный тип accessReviewApplyAction, который указывает на отключение и удаление пользователя, проверяемого по завершении проверки. Это тип по умолчанию, который должен быть указан в accessReviewScheduleSettings.
+- [отключениеAndDeleteUserApplyAction](disableanddeleteuserapplyaction.md) указывает на отключение и удаление пользователя, проверяемого по завершении проверки. Это тип по умолчанию, который должен быть явно указан в accessReviewScheduleSettings.
 
 ## <a name="properties"></a>Свойства
 Нет

@@ -2,15 +2,15 @@
 title: Тип ресурса deviceGeoLocation
 description: Расположение устройства
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9b3f90df3c0cb4fd9d7165192ffcf6db7339f2bb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a2e73afda5c149fc58a5c743046d584a130188fc
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098736"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449767"
 ---
 # <a name="devicegeolocation-resource-type"></a>Тип ресурса deviceGeoLocation
 
@@ -32,7 +32,7 @@ ms.locfileid: "59098736"
 |heading|Double|Направление от географического севера (градусов)|
 |speed|Double|Скорость передвижения устройства (м/с)|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -55,7 +55,6 @@ ms.locfileid: "59098736"
   "speed": "4.2"
 }
 ```
-
 
 
 

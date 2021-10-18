@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 8c38006d4794463fd7960706e0afa1320302321f
-ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
+ms.openlocfilehash: f1acccc8b6fd297827386c43829b731fcf5c8475
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60115290"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449455"
 ---
 # <a name="case-resource-type"></a>тип ресурса case
 
@@ -32,8 +32,8 @@ ms.locfileid: "60115290"
 | [Get case](../api/ediscovery-case-get.md) | [microsoft.graph.ediscovery.case](ediscovery-case.md) | Извлечение свойств и связей объекта **case.** |
 | [Дело об обновлении](../api/ediscovery-case-update.md) | [microsoft.graph.ediscovery.case](ediscovery-case.md) | Обновим свойства **объекта-кейса.** |
 | [Удаление случая](../api/ediscovery-case-delete.md) | Нет | Удаление **объекта дела.** |
-| [Закрыть дело](../api/ediscovery-case-close.md)        | Нет                                              | Закрой дело об обнаружении электронной почты. Подробные сведения [см. в материале Close a case](/microsoft-365/compliance/close-or-delete-case#close-a-case). |
-| [Повторное открытие дела](../api/ediscovery-case-reopen.md)      | Нет                                              | Повторное открытие закрытого дела об обнаружении электронной почты. Подробные сведения см. [в материале Reopen a closed case](/microsoft-365/compliance/close-or-delete-case#reopen-a-closed-case).|
+| [Закрыть дело](../api/ediscovery-case-close.md)        | Отсутствует                                              | Закрой дело об обнаружении электронной почты. Подробные сведения [см. в материале Close a case](/microsoft-365/compliance/close-or-delete-case#close-a-case). |
+| [Повторное открытие дела](../api/ediscovery-case-reopen.md)      | Отсутствует                                              | Повторное открытие закрытого дела об обнаружении электронной почты. Подробные сведения см. [в материале Reopen a closed case](/microsoft-365/compliance/close-or-delete-case#reopen-a-closed-case).|
 | Хранители |
 | [Хранители списка](../api/ediscovery-case-list-custodians.md)   | [коллекция microsoft.graph.ediscovery.custodian](../resources/ediscovery-custodian.md) |Получите список объектов [хранителя](../resources/ediscovery-custodian.md) и их свойств.|
 | [Создание хранителя](../api/ediscovery-case-post-custodians.md)  | [microsoft.graph.ediscovery.custodian](../resources/ediscovery-custodian.md)           |Создайте новый [объект хранителя.](../resources/ediscovery-custodian.md) После создания объекта-хранителя необходимо создать пользовательский [список](../resources/ediscovery-usersource.md) хранителя, чтобы ссылаться на его почтовый ящик и OneDrive для бизнеса сайт.|
@@ -44,9 +44,9 @@ ms.locfileid: "60115290"
 | [List reviewSets](../api/ediscovery-case-list-reviewsets.md)   | [коллекция microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md) | Получите список [reviewSets из](../resources/ediscovery-reviewset.md) объекта **case.**|
 | [Создание reviewSet](../api/ediscovery-case-post-reviewsets.md)  | [microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md)           | Создайте новый [объект reviewSet.](../resources/ediscovery-reviewset.md) В теле запроса содержится отображаемое имя набора отзывов, которое является единственным рукописным свойством.|
 | Параметры кейса |
-| [Получение параметров](../api/ediscovery-settings-get.md)|[microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md)|Ознакомьтесь с свойствами и отношениями объекта [microsoft.graph.ediscovery.settings.](../resources/ediscovery-settings.md) |
-| [Обновление параметров](../api/ediscovery-settings-update.md)|[microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md)|Обновление свойств объекта [microsoft.graph.ediscovery.settings.](../resources/ediscovery-settings.md) |
-| [resetToDefault](../api/ediscovery-settings-resettodefault.md)|Отсутствует|Сброс всех параметров в значения по умолчанию. |
+| [Get caseSettings](../api/ediscovery-casesettings-get.md)|[microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md)|Ознакомьтесь с свойствами и отношениями объекта [microsoft.graph.ediscovery.caseSettings.](../resources/ediscovery-casesettings.md) |
+| [Обновление caseSettings](../api/ediscovery-casesettings-update.md)|[microsoft.graph.ediscovery.caseSsettings](../resources/ediscovery-casesettings.md)|Обновление свойств объекта [microsoft.graph.ediscovery.caseSettings.](../resources/ediscovery-casesettings.md) |
+| [resetToDefault](../api/ediscovery-casesettings-resettodefault.md)|Нет|Сброс всех параметров в значения по умолчанию. |
 | Исходные коллекции |
 | [Список sourceCollections](../api/ediscovery-case-list-sourcecollections.md)|[коллекция microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Получите [sourceCollection из](../resources/ediscovery-sourcecollection.md) **объекта-кейса.**|
 | [Создание sourceCollection](../api/ediscovery-case-post-sourcecollections.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Создайте новый **объект sourceCollection.**|
@@ -62,10 +62,10 @@ ms.locfileid: "60115290"
 |closedDateTime|DateTimeOffset|Дата и время закрытия дела. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |createdBy|[identitySet](/graph/api/resources/identityset)|Пользователь, создавший дело.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|description|Строка|Описание случая.|
+|description|String|Описание случая.|
 |displayName|String|Имя случая.|
 |externalId|String|Внешний номер случая для клиентской ссылки.|
-|id|Строка| ID для дела об обнаружении электронной почты. Только для чтения. |
+|id|String| ID для дела об обнаружении электронной почты. Только для чтения. |
 |lastModifiedBy|[identitySet](/graph/api/resources/identityset)|Последний пользователь, который изменил сущность.|
 |lastModifiedDateTime|DateTimeOffset| Последняя дата и время изменения дела. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |status|microsoft.graph.ediscovery.caseStatus| Состояние дела. Возможные значения `unknown` : , , , , , и `active` `pendingDelete` `closing` `closed` `closedWithError` . Подробные сведения см. в следующей таблице.|
@@ -90,7 +90,7 @@ ms.locfileid: "60115290"
 |noncustodialDataSources|[коллекция microsoft.graph.ediscovery.noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md)| Возвращает список объектов **noncustodialDataSource** для этого **случая.**  Допускается значение null. |
 |operations|[коллекция microsoft.graph.ediscovery.caseOperation](../resources/ediscovery-caseoperation.md)| Возвращает список объектов операции **в** этом **случае.** Допускается значение null. |
 |reviewSets|[коллекция microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md)| Возвращает список объектов **reviewSet** в этом случае. Только для чтения. Допускается значение null. |
-|Settings|[коллекция microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md)| Возвращает список объектов **параметров** в этом случае. Только для чтения. Допускается значение null. |
+|caseSettings|[коллекция microsoft.graph.ediscovery.caseSettings](../resources/ediscovery-casesettings.md)| Возвращает список объектов **параметров** в этом случае. Только для чтения. Допускается значение null. |
 |sourceCollections|[коллекция microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Возвращает список объектов **sourceCollection,** связанных с этим случаем.|
 |tags|[коллекция microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md)|Возвращает список объектов **тегов,** связанных с этим случаем.|
 

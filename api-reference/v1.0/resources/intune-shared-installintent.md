@@ -2,15 +2,15 @@
 title: тип installIntent enum
 description: Возможные значения для намерения установки, выбранного администратором.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 711abf4a7160cb37dafc781bbc70301e4cc318c8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d48410b85bfc2fb3fee5f33bd9b093b56d2a045b
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59015450"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60453697"
 ---
 # <a name="installintent-enum-type"></a>тип installIntent enum
 
@@ -27,7 +27,6 @@ ms.locfileid: "59015450"
 |обязательно|1|Обязательное намерение установки.|
 |удалить|2|Удалить намерение установки.|
 |availableWithoutEnrollment|3|Доступно без намерения установки регистрации.|
-
 
 
 

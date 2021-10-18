@@ -2,15 +2,15 @@
 title: Создание объекта windowsInformationProtectionAppLearningSummary
 description: Создание объекта windowsInformationProtectionAppLearningSummary.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8172403796f7c893e8026929a2dbb14ed4bd029e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 80a381e214af35b15f82ed449effa4a7adf8831a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59144058"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454084"
 ---
 # <a name="create-windowsinformationprotectionapplearningsummary"></a>Создание объекта windowsInformationProtectionAppLearningSummary
 
@@ -44,7 +44,7 @@ POST /deviceManagement/windowsInformationProtectionAppLearningSummaries
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса укажите представление объекта windowsInformationProtectionAppLearningSummary в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта windowsInformationProtectionAppLearningSummary.
@@ -93,7 +93,6 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
-
 
 
 

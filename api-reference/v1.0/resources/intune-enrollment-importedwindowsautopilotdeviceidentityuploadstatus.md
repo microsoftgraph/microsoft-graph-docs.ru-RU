@@ -2,15 +2,15 @@
 title: importedWindowsAutopilotDeviceIdentityUploadStatus enum type
 description: Пока не задокументировано.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9346d16f6616c4e6cff05d5f28af5045aed3d738
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0165772943c001d8a9d87c7a6b33a6dbc526b682
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59028928"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446205"
 ---
 # <a name="importedwindowsautopilotdeviceidentityuploadstatus-enum-type"></a>importedWindowsAutopilotDeviceIdentityUploadStatus enum type
 
@@ -27,7 +27,6 @@ ms.locfileid: "59028928"
 |ожидание|1|Состояние ожидания.|
 |complete|2|Полный статус.|
 |error|3|Состояние ошибки.|
-
 
 
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: bca0c45cd2ed6bd6d556c60335e95a7d18122144
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 547e0f56f06c83d0913047f2e5aa68b557ad9434
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021577"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60444800"
 ---
 # <a name="telecom-expense-management-in-microsoft-intune"></a>Управление затратами на телекоммуникации в Microsoft Intune
 
@@ -24,9 +24,3 @@ ms.locfileid: "59021577"
 
 - [Управление устройствами](intune-tem-devicemanagement.md)
 - [Партнер по управлению затратами на телекоммуникации](intune-tem-telecomexpensemanagementpartner.md)
-
-
-
-
-
-

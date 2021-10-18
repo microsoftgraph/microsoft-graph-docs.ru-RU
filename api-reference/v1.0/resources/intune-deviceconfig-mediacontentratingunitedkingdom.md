@@ -2,15 +2,15 @@
 title: Тип ресурса mediaContentRatingUnitedKingdom
 description: Пока не задокументировано.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 621ccbeb6b22c8485aa53b372a8745311fb3d1a1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c464d67b1ccee6998d3d52a4ba6e90ec84458aa8
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089573"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60447258"
 ---
 # <a name="mediacontentratingunitedkingdom-resource-type"></a>Тип ресурса mediaContentRatingUnitedKingdom
 
@@ -26,7 +26,7 @@ ms.locfileid: "59089573"
 |movieRating|[ratingUnitedKingdomMoviesType](../resources/intune-deviceconfig-ratingunitedkingdommoviestype.md)|Рейтинг фильмов, выбранный для Великобритании. Возможные значения: `allAllowed`, `allBlocked`, `general`, `universalChildren`, `parentalGuidance`, `agesAbove12Video`, `agesAbove12Cinema`, `agesAbove15`, `adults`.|
 |tvRating|[ratingUnitedKingdomTelevisionType](../resources/intune-deviceconfig-ratingunitedkingdomtelevisiontype.md)|Телевизионный рейтинг, выбранный для Соединенного Королевства. Возможные значения: `allAllowed`, `allBlocked`, `caution`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,7 +43,6 @@ ms.locfileid: "59089573"
   "tvRating": "String"
 }
 ```
-
 
 
 

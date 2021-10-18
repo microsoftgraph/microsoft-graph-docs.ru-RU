@@ -2,15 +2,15 @@
 title: Обновление объекта resourceOperation
 description: Обновляет свойства объекта resourceOperation.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3813489b44e47d5f90cb561ed36658d0ecf69b14
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d6342e13a181e82c72f4b0b37f06bc3939f6708e
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59079584"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457059"
 ---
 # <a name="update-resourceoperation"></a>Обновление объекта resourceOperation
 
@@ -54,7 +54,7 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 |id|String|Ключ операции с ресурсом. Доступен только для чтения и создается автоматически.|
 |resourceName|String|Имя ресурса, с которым выполняется эта операция.|
 |actionName|String|Тип действия, которое выполнит эта операция. Свойство actionName должно быть максимально краткое (максимум несколько слов).|
-|description|Строка|Описание операции с ресурсом. Используется в тексте, который отображается над операцией при наведении указателя мыши на портале Azure.|
+|description|String|Описание операции с ресурсом. Используется в тексте, который отображается над операцией при наведении указателя мыши на портале Azure.|
 
 
 
@@ -93,7 +93,6 @@ Content-Length: 227
   "description": "Description value"
 }
 ```
-
 
 
 

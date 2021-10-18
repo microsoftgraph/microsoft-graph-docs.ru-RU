@@ -2,15 +2,15 @@
 title: тип enum deviceThreatProtectionLevel
 description: Уровни защиты от угроз устройств для API защиты от угроз устройств.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7abddf2e31a1e435c32116637bd2ddfebd6a6cf8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 937d77e69312ac4957c4fd7ad364c0fe5817c213
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142784"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450491"
 ---
 # <a name="devicethreatprotectionlevel-enum-type"></a>тип enum deviceThreatProtectionLevel
 
@@ -29,7 +29,6 @@ ms.locfileid: "59142784"
 |medium|3|Требование уровня защиты от угроз устройства: Medium. Средство представляет собой степень серьезности угрозы, которая представляет умеренный риск для данных устройства или устройства.|
 |высокая|4 |Требование уровня защиты от угрозы устройства: высокое. Высокая представляет серьезность угрозы, которая представляет серьезный риск для данных устройства или устройства.|
 |notSet|10 |Требование уровня защиты от угрозы устройства: Не установлено. Не установлено, что для устройства не существует требования к уровню защиты от угроз.|
-
 
 
 

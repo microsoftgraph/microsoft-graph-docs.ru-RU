@@ -2,15 +2,15 @@
 title: Получение организации
 description: Чтение свойств и связей объекта organization.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1484255ef4cfa2b94e12a7336993ea7b021b518e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 013936aa20836979a5ebea9c0e92cceb4d503c4c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59119368"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450905"
 ---
 # <a name="get-organization"></a>Получение организации
 
@@ -76,7 +76,6 @@ Content-Length: 176
   }
 }
 ```
-
 
 
 

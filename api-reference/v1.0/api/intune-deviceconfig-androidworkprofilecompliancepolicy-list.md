@@ -2,15 +2,15 @@
 title: Список androidWorkProfileCompliancePolicies
 description: Список свойств и связей объектов AndroidWorkProfileCompliancePolicy.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4420ada6bfda8a2f38a9fe9c22a5c49ec0dd69cf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 64c7468c811fa9f943e84efcec78d0f9361fe8a0
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59140376"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450420"
 ---
 # <a name="list-androidworkprofilecompliancepolicies"></a>Список androidWorkProfileCompliancePolicies
 
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceCompliancePolicies
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -100,7 +100,6 @@ Content-Length: 1487
   ]
 }
 ```
-
 
 
 

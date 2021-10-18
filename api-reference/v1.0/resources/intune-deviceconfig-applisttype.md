@@ -2,15 +2,15 @@
 title: тип списка appListType
 description: Возможные значения списка приложений для соответствия требованиям.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: dda69798f1d591018b6c75fe607743f18cbddc95
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a5410919bb33a4a77d4d774108157519fad9ae4d
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59044680"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60455923"
 ---
 # <a name="applisttype-enum-type"></a>тип списка appListType
 
@@ -26,7 +26,6 @@ ms.locfileid: "59044680"
 |Нет|0|Значение по умолчанию, без намерения.|
 |appsInListCompliant|1|В списке представлены приложения, которые будут считаться совместимыми (только приложения в списке совместимы).|
 |appsNotInListCompliant|2|В списке представлены приложения, которые будут считаться не соответствующими требованиям (все приложения совместимы, за исключением приложений в списке).|
-
 
 
 

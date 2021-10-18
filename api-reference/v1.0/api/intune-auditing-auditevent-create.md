@@ -2,15 +2,15 @@
 title: Создание объекта auditEvent
 description: Создание объекта auditEvent.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9464aa2e919768f9f85433645949f225720893cd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1bceb7079f1ca01426e34d01924576486f66706c
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056482"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454322"
 ---
 # <a name="create-auditevent"></a>Создание объекта auditEvent
 
@@ -52,7 +52,7 @@ POST /deviceManagement/auditEvents
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|displayName|Строка|Отображаемое имя события.|
+|displayName|String|Отображаемое имя события.|
 |componentName|String|Имя компонента.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Пользователь AAD и приложение, связанные с событием аудита.|
 |activity|String|Понятное имя действия.|
@@ -171,7 +171,6 @@ Content-Length: 1439
   "category": "Category value"
 }
 ```
-
 
 
 

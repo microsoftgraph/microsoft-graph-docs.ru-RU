@@ -2,15 +2,15 @@
 title: тип enum win32LobAppRegistryRuleOperationType
 description: Содержит все поддерживаемые типы обнаружения данных реестра.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 55b02e66f9735bc28ad0ec17bafc0ec5f549b7f1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 230ed063b4b0aee33a52f27e48ade03e65f02df8
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59015604"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448613"
 ---
 # <a name="win32lobappregistryruleoperationtype-enum-type"></a>тип enum win32LobAppRegistryRuleOperationType
 
@@ -26,10 +26,9 @@ ms.locfileid: "59015604"
 |notConfigured|0|Не настроен.|
 |существует|1|Указанный ключ реестра или значение существует.|
 |doesNotExist|2|Указанного ключа или значения реестра не существует.|
-|string|3|Тип значения строки.|
+|строка|3|Тип значения строки.|
 |integer|4 |Тип значения Integer.|
-|version|5 |Тип значения версии.|
-
+|version|5|Тип значения версии.|
 
 
 

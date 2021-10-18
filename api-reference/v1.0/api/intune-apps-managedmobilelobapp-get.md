@@ -2,15 +2,15 @@
 title: Get managedMobileLobApp
 description: Чтение свойств и связей объекта managedMobileLobApp.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9c6e7d9a13f87b5e924d9d72edad2048ab379856
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9f7898272bbc4a83fbfe1caaea1d50e54047aaf1
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59100052"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446570"
 ---
 # <a name="get-managedmobilelobapp"></a>Get managedMobileLobApp
 
@@ -97,7 +97,6 @@ Content-Length: 1007
   }
 }
 ```
-
 
 
 

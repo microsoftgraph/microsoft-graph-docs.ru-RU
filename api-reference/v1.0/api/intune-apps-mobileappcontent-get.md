@@ -2,15 +2,15 @@
 title: Get mobileAppContent
 description: Чтение свойств и связей объекта mobileAppContent.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0657cc16ab7a1d3000af7cccd054d31e221a2e35
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3e69ff837adc1265941a29fdb66a58ea689e272b
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59079941"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448144"
 ---
 # <a name="get-mobileappcontent"></a>Get mobileAppContent
 
@@ -77,7 +77,6 @@ Content-Length: 130
   }
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: Список объектов mobileThreatDefenseConnector
 description: Список свойств и связей объектов mobileThreatDefenseConnector.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d26cf35aae46a4a633117e8afea08c9123892cb5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e4c87a5b8ed632967552c057694a218116749258
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139921"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449652"
 ---
 # <a name="list-mobilethreatdefenseconnectors"></a>Список объектов mobileThreatDefenseConnector
 
@@ -44,7 +44,7 @@ GET /deviceManagement/mobileThreatDefenseConnectors
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -82,7 +82,6 @@ Content-Length: 536
   ]
 }
 ```
-
 
 
 

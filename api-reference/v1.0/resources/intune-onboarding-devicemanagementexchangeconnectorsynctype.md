@@ -2,15 +2,15 @@
 title: тип enum deviceManagementExchangeConnectorSyncType
 description: Тип запрашиваемой Exchange соединители.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b9bb7d4b37254c69901717378c46921238a18756
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 370283cfe16cc68618b970133b58c776bc4e9b15
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089412"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446956"
 ---
 # <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a>тип enum deviceManagementExchangeConnectorSyncType
 
@@ -25,7 +25,6 @@ ms.locfileid: "59089412"
 |:---|:---|:---|
 |fullSync|0|Откройте для себя все устройство в Exchange.|
 |deltaSync|1|Откройте только устройство в Exchange, обновленное во время окна синхронизации дельты.|
-
 
 
 

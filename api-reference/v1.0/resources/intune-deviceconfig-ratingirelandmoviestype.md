@@ -2,15 +2,15 @@
 title: тип enum ratingIrelandMoviesType
 description: Метки рейтинга фильмов в Ирландии
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e7fadbf0b9b62f8daf1f50002dc95a9ca7a912af
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 34b4b1820db1543ac8646558f0c12d05e489da2f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142665"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60449364"
 ---
 # <a name="ratingirelandmoviestype-enum-type"></a>тип enum ratingIrelandMoviesType
 
@@ -28,10 +28,9 @@ ms.locfileid: "59142665"
 |общие|2|Подходит для детей школьного возраста|
 |parentalGuidance|3|Классификация PG рекомендует родительские рекомендации|
 |agesAbove12|4 |Классификация 12A подходит для зрителей старше 12 лет|
-|agesAbove15|5 |Классификация 15A подходит для зрителей старше 15 лет|
+|agesAbove15|5|Классификация 15A подходит для зрителей старше 15 лет|
 |agesAbove16|6 |Классификация 16 подходит для зрителей старше 16 лет|
 |взрослые|7 |Классификация 18, подходящая только для взрослых|
-
 
 
 

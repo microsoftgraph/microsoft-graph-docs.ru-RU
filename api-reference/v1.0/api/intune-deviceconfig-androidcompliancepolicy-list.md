@@ -2,15 +2,15 @@
 title: Перечисление объектов androidCompliancePolicy
 description: Список свойств и связей объектов androidCompliancePolicy.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f5dc376678f656eb3708b5378a69a3ff5a552063
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: db82f2e07ade744ec45eda90e47c6938a770b92b
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59114297"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60456631"
 ---
 # <a name="list-androidcompliancepolicies"></a>Перечисление объектов androidCompliancePolicy
 
@@ -100,7 +100,6 @@ Content-Length: 1476
   ]
 }
 ```
-
 
 
 

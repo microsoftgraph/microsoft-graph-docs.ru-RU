@@ -2,15 +2,15 @@
 title: Тип ресурса managedAppPolicy
 description: Ресурс ManagedAppPolicy представляет базовый тип политик для определенных платформ.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 829e7df910bcc4e7047103f12ecd528df9f03f9f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 77d47008b036d79788434a2a389fd7a6caeb3eab
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142538"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60454588"
 ---
 # <a name="managedapppolicy-resource-type"></a>Тип ресурса managedAppPolicy
 
@@ -59,7 +59,6 @@ ms.locfileid: "59142538"
   "version": "String"
 }
 ```
-
 
 
 

@@ -2,15 +2,15 @@
 title: тип enum sharedPCAccountDeletionPolicyType
 description: Возможные значения при удалении учетных записей на общем компьютере.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 621775b9e3ba10d13cbad8d96f5ffda70834cb43
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f41cfc20132577d11d94cdd66d28cdccfa203b4f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59067166"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457304"
 ---
 # <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>тип enum sharedPCAccountDeletionPolicyType
 
@@ -26,7 +26,6 @@ ms.locfileid: "59067166"
 |немедленная|0|Удалите немедленно.|
 |diskSpaceThreshold|1|Удаление на пороге пространства диска.|
 |diskSpaceThresholdOrInactiveThreshold|2|Удаление на дисковом пороге пространства или неактивном пороге.|
-
 
 
 

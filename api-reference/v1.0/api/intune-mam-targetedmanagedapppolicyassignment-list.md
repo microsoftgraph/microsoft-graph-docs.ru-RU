@@ -2,15 +2,15 @@
 title: Перечисление объектов targetedManagedAppPolicyAssignment
 description: Список свойств и связей объектов targetedManagedAppPolicyAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c692f31111f128c2be2887865cde0982a3a768b2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 92742e3782c25c83aaec5f299086a7312cb7d438
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022144"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446781"
 ---
 # <a name="list-targetedmanagedapppolicyassignments"></a>Перечисление объектов targetedManagedAppPolicyAssignment
 
@@ -82,7 +82,6 @@ Content-Length: 332
   ]
 }
 ```
-
 
 
 

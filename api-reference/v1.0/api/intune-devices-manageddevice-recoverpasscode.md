@@ -2,15 +2,15 @@
 title: Действие recoverPasscode
 description: Восстановление секретного кода
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 42ed793df44b4a25f0dd9b5c2a1ae67a73ce1a5d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ee98dabfb5af736f5cf1ebc25dbe03f90b83a50f
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029327"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445839"
 ---
 # <a name="recoverpasscode-action"></a>Действие recoverPasscode
 
@@ -65,7 +65,6 @@ POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

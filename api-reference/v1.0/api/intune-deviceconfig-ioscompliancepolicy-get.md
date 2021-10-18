@@ -2,15 +2,15 @@
 title: Get iosCompliancePolicy
 description: Чтение свойств и связей объекта iosCompliancePolicy.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6691ad80d47a0273d669ef2c88fe0963e41f0e71
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 216326926356f9c4eb3edd58545e4320569e71ef
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59045247"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60451263"
 ---
 # <a name="get-ioscompliancepolicy"></a>Get iosCompliancePolicy
 
@@ -94,7 +94,6 @@ Content-Length: 978
   }
 }
 ```
-
 
 
 

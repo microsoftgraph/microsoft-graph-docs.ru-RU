@@ -2,15 +2,15 @@
 title: тип enum ratingAustraliaTelevisionType
 description: Метки оценки телеконтента в Австралии
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 616d0e35a5c7e8be95b069c4337766d17c40c9fb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 355de37de884852e6148199ef2d37b41ef491d40
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053009"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445516"
 ---
 # <a name="ratingaustraliatelevisiontype-enum-type"></a>тип enum ratingAustraliaTelevisionType
 
@@ -28,11 +28,10 @@ ms.locfileid: "59053009"
 |дошкольники|2|Классификация P предназначена для дошкольников|
 |children|3|Классификация C предназначена для детей до 14 лет|
 |общие|4 |Классификация G подходит для всех возрастов|
-|parentalGuidance|5 |Классификация PG рекомендуется для молодых зрителей|
+|parentalGuidance|5|Классификация PG рекомендуется для молодых зрителей|
 |зрелый|6 |Классификация M рекомендуется для зрителей старше 15 лет|
 |agesAbove15|7 |Классификация MA15+ не подходит для зрителей в возрасте до 15 лет|
 |agesAbove15AdultViolence|8 |Классификация AV15+ не подходит для зрителей в возрасте до 15 лет, для взрослых|
-
 
 
 

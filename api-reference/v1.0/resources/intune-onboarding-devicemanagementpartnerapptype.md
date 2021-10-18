@@ -2,15 +2,15 @@
 title: тип enum deviceManagementPartnerAppType
 description: Тип приложения-партнера.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 28a07e0db3eccb051d0cea024debe0cbfbc5012a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8d156c6fa9c71e6aa020e40e2712d4d92ff6d8ca
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062539"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60457619"
 ---
 # <a name="devicemanagementpartnerapptype-enum-type"></a>тип enum deviceManagementPartnerAppType
 
@@ -25,8 +25,7 @@ ms.locfileid: "59062539"
 |:---|:---|:---|
 |unknown|0|Тип приложения-партнера неизвестен.|
 |singleTenantApp|1|Partner App — это один клиент в AAD.|
-|multiTenantApp|2|Партнер app — это клиент Multi в AAD.|
-
+|multiTenantApp|2|Партнер app — это мульти-клиент в AAD.|
 
 
 

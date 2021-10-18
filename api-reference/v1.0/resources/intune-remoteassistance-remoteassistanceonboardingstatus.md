@@ -2,15 +2,15 @@
 title: тип переименовки remoteAssistanceOnboardingStatus
 description: Текущее состояние соединиттеля TeamViewer
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b488c5eb06b07c47b4c1cf3c93e8d8abab3b528e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9ddd6d2884ef44a70f424de6d7e23d6bd6a3e94d
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126767"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60448950"
 ---
 # <a name="remoteassistanceonboardingstatus-enum-type"></a>тип переименовки remoteAssistanceOnboardingStatus
 
@@ -26,7 +26,6 @@ ms.locfileid: "59126767"
 |notOnboarded|0|Состояние, сообщаемое при отсутствие активного соединитетеля TeamViewer, настроенного или активного|
 |onboarding|1|Состояние, сообщалось, когда система инициировала подключение TeamViewer, но служба еще не завершила подтверждение соединитетеля|
 |onboarded|2|Состояние, о чем сообщалось, когда система успешно обменивалась сведениями о учетных записях с TeamViewer и теперь может инициировать сеансы удаленной помощи с клиентами|
-
 
 
 

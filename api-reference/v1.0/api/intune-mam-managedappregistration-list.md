@@ -2,15 +2,15 @@
 title: Перечисление объектов managedAppRegistration
 description: Список свойств и связей объектов managedAppRegistration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ff3b5b8ab799b1ec55d67541fc0067c128299d3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 54da84f9ccabf5e9c2cf377e84639d607ff7fdbf
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073158"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60446009"
 ---
 # <a name="list-managedappregistrations"></a>Перечисление объектов managedAppRegistration
 
@@ -91,7 +91,6 @@ Content-Length: 855
   ]
 }
 ```
-
 
 
 

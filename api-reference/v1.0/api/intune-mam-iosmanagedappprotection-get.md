@@ -2,15 +2,15 @@
 title: Получение объекта iosManagedAppProtection
 description: Чтение свойств и связей объекта iosManagedAppProtection.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: eccb381d1a565f39c9eed71b6eb88db6b91afefa
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8c3f214fab36d6f6f126dcf5828da3c757532e9a
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007980"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60445825"
 ---
 # <a name="get-iosmanagedappprotection"></a>Получение объекта iosManagedAppProtection
 
@@ -115,7 +115,6 @@ Content-Length: 1942
   }
 }
 ```
-
 
 
 

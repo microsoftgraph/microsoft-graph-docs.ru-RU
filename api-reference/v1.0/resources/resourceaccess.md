@@ -5,24 +5,24 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 98d0416c47695a757c4daa939a9f1b7c8e745fc1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5feb228b1cc29d6a2f608431520cca78591f8b5b
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094095"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60452659"
 ---
 # <a name="resourceaccess-resource-type"></a>тип ресурса ResourceAccess
 
 Пространство имен: microsoft.graph
 
-Указывает область разрешений OAuth 2.0 или роль приложения, которая требуется приложению. Свойство **resourceAccess** типа [requiredResourceAccess](requiredresourceaccess.md) — это коллекция **ResourceAccess.**
+Объект, используемый для указания области разрешений OAuth 2.0 или роли приложения, которая требуется приложению, через свойство **resourceAccess** типа ресурса [requiredResourceAccess.](requiredresourceaccess.md)
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|GUID|Уникальный идентификатор для одного из [экземпляров oauth2PermissionScopes](permissionscope.md) или экземпляров [appRole,](approle.md) которые предоставляет приложение ресурса.|
-|type|Строка|Указывает, ссылается ли свойство **id** на [oauth2PermissionScopes](permissionscope.md) или [appRole.](approle.md) Возможные значения: `Scope` или `Role`.|
+|type|String|Указывает, ссылается ли свойство **id** на [oauth2PermissionScopes](permissionscope.md) или [appRole.](approle.md) Возможные значения: `Scope` (для областей разрешений OAuth 2.0) или `Role` (для ролей приложений).|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -38,8 +38,8 @@ ms.locfileid: "59094095"
 
 ```json
 {
-  "id": "guid",
-  "type": "string"
+  "id": "GUID",
+  "type": "String"
 }
 
 ```

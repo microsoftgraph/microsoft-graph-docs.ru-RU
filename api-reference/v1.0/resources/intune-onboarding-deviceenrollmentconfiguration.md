@@ -2,15 +2,15 @@
 title: Тип ресурса deviceEnrollmentConfiguration
 description: Базовый класс конфигурации регистрации устройств
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 463ce978f8bad54ba36c662efc8e21a97e8e9c84
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 673179b3009a0bd3650e6a8c389cfc766988d9dc
+ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098647"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60450188"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>Тип ресурса deviceEnrollmentConfiguration
 
@@ -33,13 +33,13 @@ ms.locfileid: "59098647"
 |:---|:---|:---|
 |id|String|Уникальный идентификатор учетной записи|
 |displayName|String|Отображающее имя конфигурации регистрации устройства|
-|description|Строка|Описание конфигурации регистрации устройства|
+|description|String|Описание конфигурации регистрации устройства|
 |priority|Int32|Приоритет используется, когда пользователь существует в нескольких группах, которые назначены конфигурации регистрации. Пользователи подчиняются только конфигурации с наименьшим значением приоритета.|
 |createdDateTime|DateTimeOffset|Создано время даты в UTC конфигурации регистрации устройства|
 |lastModifiedDateTime|DateTimeOffset|Последнее измененное время даты в UTC конфигурации регистрации устройства|
 |version|Int32|Версия конфигурации регистрации устройства|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md)|Список групповых назначений для профиля конфигурации устройства|
@@ -64,7 +64,6 @@ ms.locfileid: "59098647"
   "version": 1024
 }
 ```
-
 
 
 
