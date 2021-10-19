@@ -2,15 +2,15 @@
 title: Список appLogCollectionRequests
 description: Список свойств и связей объектов appLogCollectionRequest.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fb58f81f633cb6c0899858c04706d8adad041d60
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c90b1a67623396410bb00ef1ff9a75905870413f
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59020744"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60492021"
 ---
 # <a name="list-applogcollectionrequests"></a>Список appLogCollectionRequests
 
@@ -27,9 +27,9 @@ ms.locfileid: "59020744"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -49,7 +49,7 @@ GET /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEv
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) в тексте ответа.
 
 ## <a name="example"></a>Пример

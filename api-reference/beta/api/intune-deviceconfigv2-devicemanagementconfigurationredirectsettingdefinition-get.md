@@ -1,18 +1,18 @@
 ---
-title: Get deviceManagementConfigurationSettingGroupDefinition
-description: Чтение свойств и связей объекта deviceManagementConfigurationSettingGroupDefinition.
+title: Get deviceManagementConfigurationRedirectSettingDefinition
+description: Чтение свойств и связей объекта deviceManagementConfigurationRedirectSettingDefinition.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6f98098f524de413d76966d72bc5a0222254357
+ms.openlocfilehash: 8474f9ad53fa6b041f95202580f8181fb48a931b
 ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/19/2021
-ms.locfileid: "60494460"
+ms.locfileid: "60494402"
 ---
-# <a name="get-devicemanagementconfigurationsettinggroupdefinition"></a>Get deviceManagementConfigurationSettingGroupDefinition
+# <a name="get-devicemanagementconfigurationredirectsettingdefinition"></a>Get deviceManagementConfigurationRedirectSettingDefinition
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "60494460"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей [объекта deviceManagementConfigurationSettingGroupDefinition.](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinggroupdefinition.md)
+Чтение свойств и связей [объекта deviceManagementConfigurationRedirectSettingDefinition.](../resources/intune-deviceconfigv2-devicemanagementconfigurationredirectsettingdefinition.md)
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -56,7 +56,7 @@ GET /deviceManagement/configurationPolicyTemplates/{deviceManagementConfiguratio
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и `200 OK` [объект deviceManagementConfigurationSettingGroupDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinggroupdefinition.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код ответа и `200 OK` [объект deviceManagementConfigurationRedirectSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationredirectsettingdefinition.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -71,11 +71,11 @@ GET https://graph.microsoft.com/beta/deviceManagement/reusableSettings/{deviceMa
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1911
+Content-Length: 1548
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingGroupDefinition",
+    "@odata.type": "#microsoft.graph.deviceManagementConfigurationRedirectSettingDefinition",
     "applicability": {
       "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingApplicability",
       "description": "Description value",
@@ -108,29 +108,15 @@ Content-Length: 1911
         "settingDefinitionId": "Setting Definition Id value"
       }
     ],
-    "id": "95dc9604-9604-95dc-0496-dc950496dc95",
+    "id": "3e6c3eab-3eab-3e6c-ab3e-6c3eab3e6c3e",
     "description": "Description value",
     "helpText": "Help Text value",
     "name": "Name value",
     "displayName": "Display Name value",
     "version": "Version value",
-    "childIds": [
-      "Child Ids value"
-    ],
-    "dependentOn": [
-      {
-        "@odata.type": "microsoft.graph.deviceManagementConfigurationDependentOn",
-        "dependentOn": "Dependent On value",
-        "parentSettingId": "Parent Setting Id value"
-      }
-    ],
-    "dependedOnBy": [
-      {
-        "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingDependedOnBy",
-        "dependedOnBy": "Depended On By value",
-        "required": true
-      }
-    ]
+    "deepLink": "Deep Link value",
+    "redirectMessage": "Redirect Message value",
+    "redirectReason": "Redirect Reason value"
   }
 }
 ```

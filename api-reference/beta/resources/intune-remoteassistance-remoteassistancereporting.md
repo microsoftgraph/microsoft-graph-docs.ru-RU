@@ -2,15 +2,15 @@
 title: тип ресурса remoteAssistanceReporting
 description: Ресурсы RemoteAssistanceReporting представляют метаданные данной полезной нагрузки отчетов о удаленной помощи
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7793b8ef8bffa33e5d2e77de9fd102b9d0c59288
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 65103b951d41328d4e1b414a06ef99b8a99001bd
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59039464"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60485165"
 ---
 # <a name="remoteassistancereporting-resource-type"></a>тип ресурса remoteAssistanceReporting
 
@@ -33,15 +33,17 @@ ms.locfileid: "59039464"
 |helperTenantId|String|ID клиента для помощника|
 |helperFirstName|String|Имя помощника|
 |helperLastName|String|Фамилия помощника|
-|helperDeviceAadId|String|AAD-Id устройства помощника|
+|helperOs|String|Операционная система помощника|
+|helperDeviceAadId|String|ID устройства помощника AAD|
 |helperDeviceName|String|Имя устройства помощника|
 |helperEnrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Состояние регистрации intune устройства помощника. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |sharerEmail|String|Электронная почта входа, используемая sharer для создания сеанса|
 |sharerTenantId|String|ID клиента для sharer|
 |sharerFirstName|String|Имя sharer|
 |sharerLastName|String|Фамилия sharer|
-|sharerDeviceAadId|String|AAD-Id устройства Sharer|
+|sharerDeviceAadId|String|ID устройства sharer AAD|
 |sharerDeviceName|String|Имя устройства sharer|
+|sharerOs|String|Операционная система Sharer|
 |sharerEnrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Состояние регистрации intune устройства sharer. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 
 ## <a name="relationships"></a>Связи
@@ -65,6 +67,7 @@ ms.locfileid: "59039464"
   "helperTenantId": "String",
   "helperFirstName": "String",
   "helperLastName": "String",
+  "helperOs": "String",
   "helperDeviceAadId": "String",
   "helperDeviceName": "String",
   "helperEnrollmentState": "String",
@@ -74,6 +77,7 @@ ms.locfileid: "59039464"
   "sharerLastName": "String",
   "sharerDeviceAadId": "String",
   "sharerDeviceName": "String",
+  "sharerOs": "String",
   "sharerEnrollmentState": "String"
 }
 ```

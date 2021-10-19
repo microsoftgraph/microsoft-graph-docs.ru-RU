@@ -2,15 +2,15 @@
 title: Удаление deviceManagementConfigurationSettingDefinition
 description: Удаляет устройствоManagementConfigurationSettingDefinition.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dae31b90ddb3ba23111520f4e7ae89cbb50b59ea
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a6aa2c020ad503e44b1515bc9c6f4abc77e96045
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59108298"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60488054"
 ---
 # <a name="delete-devicemanagementconfigurationsettingdefinition"></a>Удаление deviceManagementConfigurationSettingDefinition
 
@@ -29,7 +29,7 @@ ms.locfileid: "59108298"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ DELETE /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigura
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

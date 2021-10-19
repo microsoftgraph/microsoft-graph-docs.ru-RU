@@ -4,12 +4,12 @@ description: Списки microsoft Graph API для конечных точек
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: cd98835baf70f760929bb19c840ed01cc57d0589
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3d0b6983ad4a4b54e774c767ebf8d1c18d2823d5
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59051463"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60482947"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Конфигурация устройства в Microsoft Intune
 
@@ -454,13 +454,14 @@ ms.locfileid: "59051463"
 - [Параметр OMA, строка, XML](intune-deviceconfig-omasettingstringxml.md)
 - [На предварительно зашифрованной полезной нагрузке](intune-raimportcerts-onpremencryptedpayload.md)
 - [Диапазон версий операционной системы](intune-deviceconfig-operatingsystemversionrange.md)
-- [Operator](intune-deviceconfig-operator.md)
+- [Описание](intune-deviceconfig-operator.md)
 - [Совершенная группа секретности вперед](intune-deviceconfig-perfectforwardsecrecygroup.md)
+- [Режим личного магазина воспроизведения личного профиля](intune-deviceconfig-personalprofilepersonalplaystoremode.md)
 - [Запрос на перешифровку Pfx](intune-raimportcerts-pfxrecryptionrequest.md)
 - [Сертификат пользователя Pfx](intune-raimportcerts-pfxusercertificate.md)
 - [Тип платформы политики](intune-deviceconfig-policyplatformtype.md)
 - [Тип действия power](intune-deviceconfig-poweractiontype.md)
-- [Предварительные версии функций](intune-deviceconfig-prereleasefeatures.md)
+- [Функции prerelease](intune-deviceconfig-prereleasefeatures.md)
 - [Тип рейтинга приложений](intune-deviceconfig-ratingappstype.md)
 - [Тип рейтинга фильмов для Австралии](intune-deviceconfig-ratingaustraliamoviestype.md)
 - [Тип рейтинга телевизионных передач для Австралии](intune-deviceconfig-ratingaustraliatelevisiontype.md)

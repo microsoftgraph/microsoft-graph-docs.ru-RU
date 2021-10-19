@@ -1,18 +1,18 @@
 ---
-title: Список устройствShellScripts
-description: Список свойств и связей объектов deviceShellScript.
+title: cancelMyRequest action
+description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 134f3c83577d1f4bbbfa3d5d8d62cf132d409c25
+ms.openlocfilehash: c11566ec8f75e83c6baacdf825000155f68ef9d1
 ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/19/2021
-ms.locfileid: "60487256"
+ms.locfileid: "60488925"
 ---
-# <a name="list-deviceshellscripts"></a>Список устройствShellScripts
+# <a name="cancelmyrequest-action"></a>cancelMyRequest action
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "60487256"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей объектов [deviceShellScript.](../resources/intune-devices-deviceshellscript.md)
+Пока не задокументировано.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,7 +37,7 @@ ms.locfileid: "60487256"
 }
 -->
 ``` http
-GET /deviceManagement/deviceShellScripts
+POST /deviceManagement/operationApprovalRequests/cancelMyRequest
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -47,47 +47,38 @@ GET /deviceManagement/deviceShellScripts
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте текст запроса для этого метода.
+В тело запроса добавьте параметры в формате JSON.
 
-## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [deviceShellScript](../resources/intune-devices-deviceshellscript.md) в тексте ответа.
+В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
+
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|id|String|Пока не задокументировано.|
+
+
+
+## <a name="response"></a>Ответ
+В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts
+POST https://graph.microsoft.com/beta/deviceManagement/operationApprovalRequests/cancelMyRequest
+
+Content-type: application/json
+Content-length: 24
+
+{
+  "id": "Id value"
+}
 ```
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 674
-
-{
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.deviceShellScript",
-      "executionFrequency": "PT2M43.444327S",
-      "retryCount": 10,
-      "blockExecutionNotifications": true,
-      "id": "ca9e0ad8-0ad8-ca9e-d80a-9ecad80a9eca",
-      "displayName": "Display Name value",
-      "description": "Description value",
-      "scriptContent": "c2NyaXB0Q29udGVudA==",
-      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-      "runAsAccount": "user",
-      "fileName": "File Name value",
-      "roleScopeTagIds": [
-        "Role Scope Tag Ids value"
-      ]
-    }
-  ]
-}
+HTTP/1.1 204 No Content
 ```
 
 

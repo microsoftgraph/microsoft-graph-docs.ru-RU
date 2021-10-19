@@ -2,15 +2,15 @@
 title: Список userExperienceAnalyticsAppHealthDeviceModelPerformances
 description: Список свойств и связей объектов userExperienceAnalyticsAppHealthDeviceModelPerformance.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a86da4ec7f2d28a1bb0efae23cb19ceba2839eec
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a4ed9a88411070c397957a140c07d36542aad3be
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59065444"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60494075"
 ---
 # <a name="list-userexperienceanalyticsapphealthdevicemodelperformances"></a>Список userExperienceAnalyticsAppHealthDeviceModelPerformances
 
@@ -29,7 +29,7 @@ ms.locfileid: "59065444"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ GET /deviceManagement/userExperienceAnalyticsAppHealthDeviceModelPerformance
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

@@ -4,12 +4,12 @@ description: Списки microsoft Graph API для конечных точек
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: f88f4f3c6c4e50008bc58dae5c4aef9bcdb45b19
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9cbb23c56a73ecaca01a1600681da208f67ed741
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136637"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60481092"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -56,6 +56,7 @@ ms.locfileid: "59136637"
 - [Тип действия разрешения Android](intune-apps-androidpermissionactiontype.md)
 - [Применимость профилей Android](intune-apps-androidprofileapplicability.md)
 - [Приложение из магазина Android](intune-apps-androidstoreapp.md)
+- [Тип безопасности Wi-Fi Aosp](intune-androidforwork-aospwifisecuritytype.md)
 - [Элемент параметра конфигурации приложения](intune-apps-appconfigurationsettingitem.md)
 - [Состояние сертификата](intune-apps-certificatestatus.md)
 - [Состояние установки устройства](intune-books-deviceinstallstate.md)

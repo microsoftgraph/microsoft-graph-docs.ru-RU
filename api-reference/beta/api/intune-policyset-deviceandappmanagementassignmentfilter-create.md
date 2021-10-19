@@ -2,15 +2,15 @@
 title: Создание устройстваAndAppManagementAssignmentFilter
 description: Создайте новое устройствоAndAppManagementAssignmentFilter.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c367411ce8abf385af46e238de0e2716fcac34c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bb531791fa49fd43fca36a2f37d27d3348213b7f
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59009737"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489046"
 ---
 # <a name="create-deviceandappmanagementassignmentfilter"></a>Создание устройстваAndAppManagementAssignmentFilter
 
@@ -29,7 +29,7 @@ ms.locfileid: "59009737"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,14 +53,14 @@ POST /deviceManagement/assignmentFilters
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ фильтра назначения.|
+|id|String|Ключ фильтра назначения.|
 |createdDateTime|DateTimeOffset|Время создания фильтра назначения.|
 |lastModifiedDateTime|DateTimeOffset|Последнее измененное время фильтра назначения.|
-|displayName|Строка|DisplayName фильтра назначения.|
-|description|Строка|Описание фильтра назначения.|
+|displayName|String|DisplayName фильтра назначения.|
+|description|String|Описание фильтра назначения.|
 |платформа|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|Тип платформы устройств, на которых будет применяться фильтр назначения. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
-|правило|Строка|Определение правила фильтра назначения.|
-|roleScopeTags|Коллекция String|RoleScopeTags фильтра назначения.|
+|правило|String|Определение правила фильтра назначения.|
+|roleScopeTags|Коллекция строк|RoleScopeTags фильтра назначения.|
 
 
 

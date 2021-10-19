@@ -2,15 +2,15 @@
 title: Список deviceManagementConfigurationChoiceSettingDefinitions
 description: Список свойств и связей объектов deviceManagementConfigurationChoiceSettingDefinition.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 92b9a1fb7b112a36153617d38123987d94862193
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 66f1b58e73bb2f02dbbd5a280863e686b7e3b029
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59059177"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60488299"
 ---
 # <a name="list-devicemanagementconfigurationchoicesettingdefinitions"></a>Список deviceManagementConfigurationChoiceSettingDefinitions
 
@@ -29,7 +29,7 @@ ms.locfileid: "59059177"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ GET /deviceManagement/configurationPolicyTemplates/{deviceManagementConfiguratio
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/reusableSettings
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 20255
+Content-Length: 20257
 
 {
   "value": [
@@ -77,7 +77,7 @@ Content-Length: 20255
       "applicability": {
         "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingApplicability",
         "description": "Description value",
-        "platform": "macOS",
+        "platform": "android",
         "deviceMode": "kiosk",
         "technologies": "mdm"
       },

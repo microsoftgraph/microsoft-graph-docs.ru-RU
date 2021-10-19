@@ -2,15 +2,15 @@
 title: Список deviceManagementConfigurationSettingDefinitions
 description: Список свойств и связей объектов deviceManagementConfigurationSettingDefinition.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8e5dbcc07c93b2a119a7b98d6b93a89977d10992
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0e71236ac789f16b9259a721b13ee954ad170bf2
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59020870"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60488040"
 ---
 # <a name="list-devicemanagementconfigurationsettingdefinitions"></a>Список deviceManagementConfigurationSettingDefinitions
 
@@ -27,9 +27,9 @@ ms.locfileid: "59020870"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -52,7 +52,7 @@ GET /deviceManagement/configurationPolicyTemplates/{deviceManagementConfiguratio
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика и коллекцию объектов `200 OK` [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/reusableSettings
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1496
+Content-Length: 1498
 
 {
   "value": [
@@ -77,7 +77,7 @@ Content-Length: 1496
       "applicability": {
         "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingApplicability",
         "description": "Description value",
-        "platform": "macOS",
+        "platform": "android",
         "deviceMode": "kiosk",
         "technologies": "mdm"
       },

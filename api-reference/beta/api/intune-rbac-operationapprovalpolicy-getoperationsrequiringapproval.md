@@ -1,18 +1,18 @@
 ---
-title: Получение remoteAssistancePartner
-description: Чтение свойств и связей объекта remoteAssistancePartner.
+title: функция getOperationsRequiringApproval
+description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f57030efec1d4b6055e32531508d0508a4887e29
+ms.openlocfilehash: 87b1eff00749e27fa65dbb7985768e1c22eb333e
 ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/19/2021
-ms.locfileid: "60479167"
+ms.locfileid: "60486843"
 ---
-# <a name="get-remoteassistancepartner"></a>Получение remoteAssistancePartner
+# <a name="getoperationsrequiringapproval-function"></a>функция getOperationsRequiringApproval
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "60479167"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md).
+Пока не задокументировано.
 
 ## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,13 +37,10 @@ ms.locfileid: "60479167"
 }
 -->
 ``` http
-GET /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
+GET /deviceManagement/operationApprovalPolicies/getOperationsRequiringApproval
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
-
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -53,14 +50,14 @@ GET /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) в теле отклика.
+В случае успешной работы эта функция возвращает код ответа и `200 OK` [коллекцию operationApprovalPolicySet](../resources/intune-rbac-operationapprovalpolicyset.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
+GET https://graph.microsoft.com/beta/deviceManagement/operationApprovalPolicies/getOperationsRequiringApproval
 ```
 
 ### <a name="response"></a>Отклик
@@ -68,18 +65,16 @@ GET https://graph.microsoft.com/beta/deviceManagement/remoteAssistancePartners/{
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 423
+Content-Length: 194
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.remoteAssistancePartner",
-    "id": "7443c8b9-c8b9-7443-b9c8-4374b9c84374",
-    "displayName": "Display Name value",
-    "onboardingUrl": "https://example.com/onboardingUrl/",
-    "onboardingStatus": "onboarding",
-    "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00",
-    "onboardingRequestExpiryDateTime": "2017-01-01T00:02:07.7573274-08:00"
-  }
+  "value": [
+    {
+      "@odata.type": "microsoft.graph.operationApprovalPolicySet",
+      "policyType": "deviceWipe",
+      "policyPlatform": "androidDeviceAdministrator"
+    }
+  ]
 }
 ```
 
