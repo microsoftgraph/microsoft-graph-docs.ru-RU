@@ -2,15 +2,15 @@
 title: Get userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
 description: Чтение свойств и связей объекта userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dfe7ba904ec4ae0a18f567d2d6b98bb9c596c377
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 438e253d22945b9099d4491bab8f347e3ed4ea53
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59059002"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60494425"
 ---
 # <a name="get-userexperienceanalyticsworkfromanywherehardwarereadinessmetric"></a>Get userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
 
@@ -29,7 +29,7 @@ ms.locfileid: "59059002"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ GET /deviceManagement/userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMe
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

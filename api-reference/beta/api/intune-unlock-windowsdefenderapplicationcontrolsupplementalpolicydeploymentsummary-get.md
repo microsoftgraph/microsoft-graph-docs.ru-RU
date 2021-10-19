@@ -2,15 +2,15 @@
 title: Get windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary
 description: Read properties and relationships of the windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary object.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 09eb1dd98a0998999cae00b6688e1ab77bb5993d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7b7155114357cab80051ef9528cc7be35bc0478b
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59047725"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60487221"
 ---
 # <a name="get-windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary"></a>Get windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary
 
@@ -29,7 +29,7 @@ Read properties and relationships of the [windowsDefenderApplicationControlSuppl
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ GET /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationCon
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

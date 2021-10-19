@@ -2,15 +2,15 @@
 author: JeremyKelley
 title: Тип ресурса разрешений
 description: ресурс разрешений, представляющий разрешение общего доступа, выданного для driveItem
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: e7eb160bf7899feec9afda49c6087072aab83c3b
-ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
+ms.openlocfilehash: f2b58acc06b1a7478c2728f8e371fee67e917d3e
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52335613"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493475"
 ---
 # <a name="permission-resource-type"></a>Тип ресурса разрешений
 
@@ -72,7 +72,7 @@ ms.locfileid: "52335613"
 | inheritedFrom       | [ItemReference][]           | Предоставляет ссылку на предка текущего разрешения, если оно унаследовано от предка. Только для чтения.
 | ссылка                | [SharingLink][]             | Предоставляет сведения о ссылке для текущего разрешения, если это разрешение типа link. Только для чтения.
 | roles               | Collection(String)          | Тип разрешения, например `read`. Полный список ролей см. ниже. Только для чтения.
-| shareId             | String                      | Уникальный маркер, с помощью которого можно получить доступ к общему элементу через **[API общих папок][]**. Только для чтения.
+| shareId             | String                      | Уникальный маркер, с помощью которого можно получить доступ к общему элементу с помощью **[API общих папок][]**. Только для чтения.
 | expirationDateTime  | DateTimeOffset              | Формат гггг-ММ-ддTЧЧ:мм:ссZ свойства DateTimeOffset указывает время окончания срока действия разрешения. DateTime.MinValue указывает, что для этого разрешения не установлен срок действия. Необязательно.
 | hasPassword         | Логическое                     | Указывает, настроен ли для этого разрешения пароль. Отображается только в отклике. Необязательно, только для чтения и предназначено только для OneDrive персональный.
 
@@ -166,7 +166,7 @@ ms.locfileid: "52335613"
 
 Эта ссылка предоставляет доступ для чтения и записи определенным пользователям в коллекции `grantedToIdentities`.
 
-<!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-people-link" } -->
+<!-- {"blockType": "example", truncated: true, "@odata.type": "microsoft.graph.permission", "name": "permission-people-link" } -->
 
 ```json
 {
@@ -199,7 +199,7 @@ ms.locfileid: "52335613"
 
 Разрешения, отправленные [][] API приглашения или гранта, []могут иметь дополнительные сведения в аспекте[sharingInvitation] для адресов электронной почты, которые не соответствуют известной учетной записи. [][] В таких случаях свойство **grantedTo** не может быть установлено до тех пор, пока не будет выкуплена ссылка приглашения, что произойдет при первом щелчке пользователя по ссылке и вошел в нее.
 
-<!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-email" } -->
+<!-- {"blockType": "example", truncated: true, "@odata.type": "microsoft.graph.permission", "name": "permission-invite-email" } -->
 
 ```json
 {
@@ -216,7 +216,7 @@ ms.locfileid: "52335613"
 
 Когда пользователь активирует приглашение к совместному использованию, в свойстве **grantedTo** появятся сведения об учетной записи, которая активировала разрешения:
 
-<!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-redeemed" } -->
+<!-- {"blockType": "example", truncated: true,"@odata.type": "microsoft.graph.permission", "name": "permission-invite-redeemed" } -->
 
 ```json
 {

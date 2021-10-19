@@ -2,15 +2,15 @@
 title: reportRemoteAssistance action
 description: Почтовый вызов для отправки полезной нагрузки отчетов
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 40be075dca577bb1febbeb68390fccb51dbeb0be
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 181ac4bdb452fc0746e73cbb0f2679fd152b744e
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59041453"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489032"
 ---
 # <a name="reportremoteassistance-action"></a>reportRemoteAssistance action
 
@@ -27,9 +27,9 @@ ms.locfileid: "59041453"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/reportRemoteAssistance
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -68,7 +68,7 @@ POST /deviceManagement/reportRemoteAssistance
 POST https://graph.microsoft.com/beta/deviceManagement/reportRemoteAssistance
 
 Content-type: application/json
-Content-length: 972
+Content-length: 1044
 
 {
   "reportingPayload": {
@@ -81,6 +81,7 @@ Content-length: 972
     "helperTenantId": "Helper Tenant Id value",
     "helperFirstName": "Helper First Name value",
     "helperLastName": "Helper Last Name value",
+    "helperOs": "Helper Os value",
     "helperDeviceAadId": "Helper Device Aad Id value",
     "helperDeviceName": "Helper Device Name value",
     "helperEnrollmentState": "enrolled",
@@ -90,6 +91,7 @@ Content-length: 972
     "sharerLastName": "Sharer Last Name value",
     "sharerDeviceAadId": "Sharer Device Aad Id value",
     "sharerDeviceName": "Sharer Device Name value",
+    "sharerOs": "Sharer Os value",
     "sharerEnrollmentState": "enrolled"
   }
 }

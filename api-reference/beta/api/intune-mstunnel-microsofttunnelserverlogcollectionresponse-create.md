@@ -2,15 +2,15 @@
 title: Создание microsoftTunnelServerLogCollectionResponse
 description: Создайте новый объект microsoftTunnelServerLogCollectionResponse.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a5d0e3ec207d97fd3a7d9c54aed9504f504490ab
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 376334679269bcfe34bf79af9925a886071023bb
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59041698"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60487977"
 ---
 # <a name="create-microsofttunnelserverlogcollectionresponse"></a>Создание microsoftTunnelServerLogCollectionResponse
 
@@ -27,7 +27,7 @@ ms.locfileid: "59041698"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
@@ -43,7 +43,7 @@ POST /deviceManagement/microsoftTunnelServerLogCollectionResponses
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

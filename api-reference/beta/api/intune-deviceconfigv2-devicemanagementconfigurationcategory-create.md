@@ -2,15 +2,15 @@
 title: Создание deviceManagementConfigurationCategory
 description: Создание нового объекта deviceManagementConfigurationCategory.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 31d90faea7786be9554884ca9ca6a1d15e71ee65
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 43e5ac410af72a26c02bc9b986226812eadec545
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59034773"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60487165"
 ---
 # <a name="create-devicemanagementconfigurationcategory"></a>Создание deviceManagementConfigurationCategory
 
@@ -29,7 +29,7 @@ ms.locfileid: "59034773"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/configurationCategories
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,16 +54,16 @@ POST /deviceManagement/configurationCategories
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Идентификатор элемента|
-|description|Строка|Описание элемента|
-|helpText|Строка|Справка текста элемента|
+|description|String|Описание элемента|
+|helpText|String|Справка текста элемента|
 |name|String|Имя элемента|
 |displayName|String|Отображение имени элемента|
-|платформы|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Типы платформ, которые имеются в этой категории. Возможные значения: `none`, `macOS`, `windows10X`, `windows10`.|
-|технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Типы технологий, которые имеют параметры в категории. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`.|
+|платформы|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Типы платформ, которые имеются в этой категории. Возможные значения: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`.|
+|технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Типы технологий, которые имеют параметры в категории. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`, `linuxMdm`, `unknownFutureValue`.|
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Указывает, что категория содержит параметры, используемые для соответствия требованиям или конфигурации. Возможные значения: `none`, `configuration`.|
-|parentCategoryId|Строка|Родительский id категории.|
-|rootCategoryId|Строка|Корневой id категории.|
-|childCategoryIds|Коллекция String|Список детских ids этой категории.|
+|parentCategoryId|String|Родительский id категории.|
+|rootCategoryId|String|Корневой id категории.|
+|childCategoryIds|Коллекция строк|Список детских ids этой категории.|
 
 
 
@@ -77,7 +77,7 @@ POST /deviceManagement/configurationCategories
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/configurationCategories
 Content-type: application/json
-Content-length: 465
+Content-length: 467
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationCategory",
@@ -85,7 +85,7 @@ Content-length: 465
   "helpText": "Help Text value",
   "name": "Name value",
   "displayName": "Display Name value",
-  "platforms": "macOS",
+  "platforms": "android",
   "technologies": "mdm",
   "settingUsage": "configuration",
   "parentCategoryId": "Parent Category Id value",
@@ -101,7 +101,7 @@ Content-length: 465
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 514
+Content-Length: 516
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationCategory",
@@ -110,7 +110,7 @@ Content-Length: 514
   "helpText": "Help Text value",
   "name": "Name value",
   "displayName": "Display Name value",
-  "platforms": "macOS",
+  "platforms": "android",
   "technologies": "mdm",
   "settingUsage": "configuration",
   "parentCategoryId": "Parent Category Id value",

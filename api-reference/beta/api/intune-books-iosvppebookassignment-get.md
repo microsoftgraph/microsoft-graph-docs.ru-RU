@@ -2,15 +2,15 @@
 title: Get iosVppEBookAssignment
 description: Чтение свойств и связей объекта iosVppEBookAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 37ea60eefad7809786c278ed583f29cf44ef6534
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4c1c28ad8ff78d4f6bfa56de26c3a1c9a8327d79
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021325"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60491727"
 ---
 # <a name="get-iosvppebookassignment"></a>Get iosVppEBookAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "59021325"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

@@ -2,15 +2,15 @@
 title: Обновление microsoftTunnelConfiguration
 description: Обновление свойств объекта microsoftTunnelConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ba2db22cb9b6f3ed4e76d4d48f6042be8cedb21d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2b619ca01f1535b527ce7e52bac7e2a1024ad2a3
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59041817"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489362"
 ---
 # <a name="update-microsofttunnelconfiguration"></a>Обновление microsoftTunnelConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "59041817"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTu
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -58,15 +58,15 @@ PATCH /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTu
 |displayName|String|Имя отображения MicrosoftTunnelConfiguration|
 |description|String|Описание MicrosoftTunnelConfiguration|
 |сеть|String|Подсеть, которая будет использоваться для выделения виртуального адреса для клиентов|
-|dnsServers|Коллекция объектов string|DNS-серверы, которые будут использоваться клиентами|
+|dnsServers|Коллекция строк|DNS-серверы, которые будут использоваться клиентами|
 |defaultDomainSuffix|String|Приложение домена по умолчанию, которое будет использоваться клиентами|
-|routesInclude|Коллекция объектов string|Маршруты, которые будут маршрутить сервер|
-|routesExclude|Коллекция объектов string|Подмышы маршрутов, которые не будут маршрутиться сервером|
-|splitDNS|Коллекция объектов string|Домены, которые будут разрешены с помощью предоставленных dns-серверов|
+|routesInclude|Коллекция строк|Маршруты, которые будут маршрутить сервер|
+|routesExclude|Коллекция строк|Подмышы маршрутов, которые не будут маршрутиться сервером|
+|splitDNS|Коллекция строк|Домены, которые будут разрешены с помощью предоставленных dns-серверов|
 |listenPort|Int32|Порт, который будут прослушивать TCP и UPD на сервере|
 |advancedSettings|Коллекция [keyValuePair](../resources/intune-mstunnel-keyvaluepair.md)|Дополнительные параметры, которые могут быть применены к серверу|
 |lastUpdateDateTime|DateTimeOffset|При последнем обновлении MicrosoftTunnelConfiguration|
-|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity.|
+|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity.|
 
 
 

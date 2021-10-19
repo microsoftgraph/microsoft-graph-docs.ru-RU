@@ -2,15 +2,15 @@
 title: Get userExperienceAnalyticsDeviceStartupProcessPerformance
 description: Чтение свойств и связей объекта userExperienceAnalyticsDeviceStartupProcessPerformance.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 463d8a9e5a64ae3daed2b5b48d2bfedee3a70f44
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b595c8599c524c6e93e9bb42f967d1a500b5d49b
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59112414"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60490605"
 ---
 # <a name="get-userexperienceanalyticsdevicestartupprocessperformance"></a>Get userExperienceAnalyticsDeviceStartupProcessPerformance
 
@@ -29,7 +29,7 @@ ms.locfileid: "59112414"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ GET /deviceManagement/userExperienceAnalyticsDeviceStartupProcessPerformance/{us
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 369
+Content-Length: 426
 
 {
   "value": {
@@ -79,7 +79,9 @@ Content-Length: 369
     "publisher": "Publisher value",
     "deviceCount": 11,
     "medianImpactInMs": 0,
-    "totalImpactInMs": 15
+    "totalImpactInMs": 15,
+    "medianImpactInMs2": 1,
+    "totalImpactInMs2": 0
   }
 }
 ```

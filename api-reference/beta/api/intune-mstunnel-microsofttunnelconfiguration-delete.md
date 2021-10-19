@@ -2,15 +2,15 @@
 title: Удаление microsoftTunnelConfiguration
 description: Удаляет microsoftTunnelConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 99694ef40c5d1e8194368891f3a174e0fc3fbe1d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 44ff655c52a8061cd1ef992780e76a32182d8648
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59034297"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60491046"
 ---
 # <a name="delete-microsofttunnelconfiguration"></a>Удаление microsoftTunnelConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "59034297"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
@@ -44,7 +44,7 @@ DELETE /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftT
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

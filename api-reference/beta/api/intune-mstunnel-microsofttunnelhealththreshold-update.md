@@ -2,15 +2,15 @@
 title: Обновление microsoftTunnelHealthThreshold
 description: Обновление свойств объекта microsoftTunnelHealthThreshold.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5b22e40cbc1fcceff62bfb22b482dac7a59f0d35
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 318ec9d93d995d29c357da02dc756ed34bc04e36
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59065122"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60494054"
 ---
 # <a name="update-microsofttunnelhealththreshold"></a>Обновление microsoftTunnelHealthThreshold
 
@@ -27,7 +27,7 @@ ms.locfileid: "59065122"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/microsoftTunnelHealthThresholds/{microsoftTunnelHealthTh
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ PATCH /deviceManagement/microsoftTunnelHealthThresholds/{microsoftTunnelHealthTh
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Имя метрик|
+|id|String|Имя метрик|
 |healthyThreshold|Int64|Пороговое значение для здоровья|
 |unhealthyThreshold|Int64|Порог для неработоспособного|
 |defaultHealthyThreshold|Int64|Пороговое значение по умолчанию для того, чтобы быть здоровым|

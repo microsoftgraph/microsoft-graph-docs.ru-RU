@@ -2,15 +2,15 @@
 title: Тип ресурса macOSDeviceFeaturesConfiguration
 description: Профиль конфигурации функций устройства MacOS.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9062bdce77c0dea983d61d9de5a668676c257bbe
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: aab587bd0fcc4d4840363701a570a31b66702e18
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59091736"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493210"
 ---
 # <a name="macosdevicefeaturesconfiguration-resource-type"></a>Тип ресурса macOSDeviceFeaturesConfiguration
 
@@ -39,8 +39,8 @@ ms.locfileid: "59091736"
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|supportsScopeTags|Логическое|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость к выпуску ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -53,42 +53,42 @@ ms.locfileid: "59091736"
 |adminShowHostInfo|Логический|Следует ли показывать сведения о хост-администраторе в окне входа.|
 |loginWindowText|String|Пользовательский текст, отображаемый в окне входа.|
 |authorizedUsersListHidden|Логический|Следует ли показывать диалоговое окно имени и пароля или список пользователей в окне входа.|
-|authorizedUsersListHideLocalUsers|Логическое|Следует ли показывать только сетевых и системных пользователей в списке авторизованных пользователей в окне входа.|
+|authorizedUsersListHideLocalUsers|Логический|Следует ли показывать только сетевых и системных пользователей в списке авторизованных пользователей в окне входа.|
 |authorizedUsersListHideMobileAccounts|Логический|Следует ли скрывать мобильных пользователей в списке авторизованных пользователей в окне входа.|
-|authorizedUsersListIncludeNetworkUsers|Логическое|Следует ли показывать сетевых пользователей в списке авторизованных пользователей в окне входа.|
-|authorizedUsersListHideAdminUsers|Логическое|Следует ли скрывать пользователей администратора в списке авторизованных пользователей в окне входа.|
+|authorizedUsersListIncludeNetworkUsers|Логический|Следует ли показывать сетевых пользователей в списке авторизованных пользователей в окне входа.|
+|authorizedUsersListHideAdminUsers|Логический|Следует ли скрывать пользователей администратора в списке авторизованных пользователей в окне входа.|
 |authorizedUsersListShowOtherManagedUsers|Логический|Следует ли показывать других пользователей в списке авторизованного пользователя в окне входа.|
 |shutDownDisabled|Логический|Следует ли скрывать элемент кнопки Shut Down в окне входа.|
-|restartDisabled|Логическое|Следует ли скрывать элемент кнопки Перезапуска в окне входа.|
-|sleepDisabled|Логическое|Следует ли скрывать элемент меню Sleep в окне входа.|
+|restartDisabled|Логический|Следует ли скрывать элемент кнопки Перезапуска в окне входа.|
+|sleepDisabled|Логический|Следует ли скрывать элемент меню Sleep в окне входа.|
 |consoleAccessDisabled|Логический|Будет ли другой пользователь игнорировать использование>консоли> имя пользователя.|
 |shutDownDisabledWhileLoggedIn|Логический|Будет ли отключен элемент меню Shut Down в окне входа во время входа пользователя.|
-|restartDisabledWhileLoggedIn|Логическое|Будет ли элемент меню Перезапуска в окне входа отключен во время входа пользователя.|
-|powerOffDisabledWhileLoggedIn|Логическое|Будет ли отключен элемент меню Power Off в окне входа во время входа пользователя.|
+|restartDisabledWhileLoggedIn|Логический|Будет ли элемент меню Перезапуска в окне входа отключен во время входа пользователя.|
+|powerOffDisabledWhileLoggedIn|Логический|Будет ли отключен элемент меню Power Off в окне входа во время входа пользователя.|
 |logOutDisabledWhileLoggedIn|Логический|Будет ли отключен элемент меню Log Out в окне входа во время входа пользователя.|
 |screenLockDisableImmediate|Логический|Следует ли отключить функции немедленной блокировки экрана.|
 |associatedDomains|Коллекция [keyValuePair](../resources/intune-deviceconfig-keyvaluepair.md)|DEPRECATED: вместо этого используйте appAssociatedDomains. Получает или задает список, который сопополагает приложения с связанными доменами. Ключ должен соответствовать ID приложения, а значение должно быть строкой в виде "service:domain", где домен является полнокровным имям хост-сайта (например, webcredentials:example.com). Эта коллекция может содержать не более 500 элементов.|
 |appAssociatedDomains|[коллекция macOSAssociatedDomainsItem](../resources/intune-deviceconfig-macosassociateddomainsitem.md)|Получает или задает список, который сопополагает приложения с связанными доменами. Идентификаторы приложений должны быть уникальными. Эта коллекция может содержать не более 500 элементов.|
 |singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|Получает или задает один профиль расширения для входов. Неуловимый: вместо этого используйте MacOSSingleSignOnExtension.|
 |macOSSingleSignOnExtension|[macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossinglesignonextension.md)|Получает или задает один профиль расширения для входов.|
-|contentCachingEnabled|Логическое|Включает кэшинг контента и предотвращает его отключение пользователем.|
+|contentCachingEnabled|Логический|Включает кэшинг контента и предотвращает его отключение пользователем.|
 |contentCachingType|[macOSContentCachingType](../resources/intune-deviceconfig-macoscontentcachingtype.md)|Определяет, какой тип контента разрешен кэшировали службой кэшинга контента Apple. Возможные значения: `notConfigured`, `userContentOnly`, `sharedContentOnly`.|
 |contentCachingMaxSizeBytes|Int32|Максимальное количество bytes дискового пространства, которое будет использоваться для кэша контента. Значение 0 (по умолчанию) указывает на неограниченное пространство диска. |
 |contentCachingDataPath|String|Путь к каталогу, используемый для хранения кэшного контента. Значение должно быть (или заканчивается) /Library/Application Support/Apple/AssetCache/Data|
 |contentCachingDisableConnectionSharing|Логический|Отключение общего доступа к Интернету.|
-|contentCachingForceConnectionSharing|Логическое|Заставляет совместное использование подключения к Интернету. contentCachingDisableConnectionSharing переопределяет этот параметр.|
+|contentCachingForceConnectionSharing|Логический|Заставляет совместное использование подключения к Интернету. contentCachingDisableConnectionSharing переопределяет этот параметр.|
 |contentCachingClientPolicy|[macOSContentCachingClientPolicy](../resources/intune-deviceconfig-macoscontentcachingclientpolicy.md)|Определяет метод, с помощью которого серверы кэшинга контента будут прослушивать клиентов. Возможные значения: `notConfigured`, `clientsInLocalNetwork`, `clientsWithSamePublicIpAddress`, `clientsInCustomLocalNetworks`, `clientsInCustomLocalNetworksWithFallback`.|
 |contentCachingClientListenRanges|Коллекция объектов [ipRange](../resources/intune-shared-iprange.md)|Список пользовательских кэшей контента диапазонов IP будет использовать для прослушивания для клиентов. Эта коллекция может содержать не более 500 элементов.|
 |contentCachingPeerPolicy|[macOSContentCachingPeerPolicy](../resources/intune-deviceconfig-macoscontentcachingpeerpolicy.md)|Определяет метод, в котором кэши контента соединяют с другими кэшами. Возможные значения: `notConfigured`, `peersInLocalNetwork`, `peersWithSamePublicIpAddress`, `peersInCustomLocalNetworks`.|
 |contentCachingPeerListenRanges|Коллекция объектов [ipRange](../resources/intune-shared-iprange.md)|Список пользовательских кэшей контента диапазонов IP будет использовать для прослушивания одноранговых кэшей. Эта коллекция может содержать не более 500 элементов.|
 |contentCachingPeerFilterRanges|Коллекция объектов [ipRange](../resources/intune-shared-iprange.md)|Список пользовательских кэшей контента диапазонов IP будет использовать для запроса контента из кэшей одноранговых. Эта коллекция может содержать не более 500 элементов.|
 |contentCachingParentSelectionPolicy|[macOSContentCachingParentSelectionPolicy](../resources/intune-deviceconfig-macoscontentcachingparentselectionpolicy.md)|Определяет метод, при котором серверы кэшинга контента будут выбирать родителей, если их несколько. Возможные значения: `notConfigured`, `roundRobin`, `firstAvailable`, `urlPathHash`, `random`, `stickyAvailable`.|
-|contentCachingParents|Коллекция объектов string|Список IP-адресов, представляющих кэши родительского контента.|
+|contentCachingParents|Коллекция строк|Список IP-адресов, представляющих кэши родительского контента.|
 |contentCachingLogClientIdentities|Логический|Включает ведение журнала IP-адресов и портов клиентов, запрашивает кэширование контента.|
 |contentCachingPublicRanges|Коллекция объектов [ipRange](../resources/intune-shared-iprange.md)|Список пользовательских диапазонов IP-адресов, которые служба кэшинга контента Apple должна использовать для совпадения клиентов с кэшами контента. Эта коллекция может содержать не более 500 элементов.|
 |contentCachingBlockDeletion|Логический|Предотвращает очистку содержимого от кэшей контента, чтобы освободить пространство диска для других приложений.|
-|contentCachingShowAlerts|Логическое|Отображение оповещений кэшинга контента в качестве системных уведомлений.|
-|contentCachingKeepAwake|Логическое|Запретить устройству спать, если включен кэшинг контента.|
+|contentCachingShowAlerts|Логический|Отображение оповещений кэшинга контента в качестве системных уведомлений.|
+|contentCachingKeepAwake|Логический|Запретить устройству спать, если включен кэшинг контента.|
 |contentCachingPort|Int32|Задает порт, используемый для кэшинга контента. Если значение 0, будет выбран случайный доступный порт. Допустимые значения от 0 до 65535|
 
 ## <a name="relationships"></a>Связи
@@ -239,7 +239,18 @@ ms.locfileid: "59091736"
     "activeDirectorySiteCode": "String",
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "String"
+    "passwordChangeUrl": "String",
+    "modeCredentialUsed": "String",
+    "usernameLableCustom": "String",
+    "userSetupDelayed": true,
+    "signInHelpText": "String",
+    "kerberosAppsInBundleIdACLIncluded": true,
+    "managedAppsInBundleIdACLIncluded": true,
+    "credentialsCacheMonitored": true,
+    "singleSignOnExtensionPreferredKDCs": [
+      "String"
+    ],
+    "tlsForLDAPRequired": true
   },
   "contentCachingEnabled": true,
   "contentCachingType": "String",

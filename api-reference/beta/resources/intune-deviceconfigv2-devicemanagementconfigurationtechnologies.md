@@ -2,15 +2,15 @@
 title: тип enum deviceManagementConfigurationTechnologies
 description: Описывает, какую технологию можно развернуть с помощью этого параметра
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d7766d88b7670a4cd0a96a3e4a52a462478a9a41
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a87452e3f00887895e8a89a2b845e077a25f7bf7
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148188"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60485172"
 ---
 # <a name="devicemanagementconfigurationtechnologies-enum-type"></a>тип enum deviceManagementConfigurationTechnologies
 
@@ -31,6 +31,8 @@ ms.locfileid: "59148188"
 |configManager|4 |Параметр можно развернуть через канал ConfigManager|
 |MicrosoftSense|128|Настройка может быть развернута через канал агента SENSE|
 |exchangeOnline|256|Параметр можно развернуть через канал Exchange Online агента|
+|LinuxMdm|1024|Параметр можно развернуть через канал Linux Mdm|
+|unknownFutureValue|1073741824|Член Sentinel для случаев, когда клиент не может обрабатывать новые значения в переуме.|
 
 
 

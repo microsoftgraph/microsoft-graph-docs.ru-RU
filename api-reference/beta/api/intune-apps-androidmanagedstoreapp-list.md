@@ -2,15 +2,15 @@
 title: Список androidManagedStoreApps
 description: Список свойств и связей объектов AndroidManagedStoreApp.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 787be8f8e75fb8db5cbdc041ec519b163badc13c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fa093463de0a160e5ec5953aa5c46791fa0d422b
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59031609"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60491488"
 ---
 # <a name="list-androidmanagedstoreapps"></a>Список androidManagedStoreApps
 
@@ -29,7 +29,7 @@ ms.locfileid: "59031609"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -49,7 +49,7 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [AndroidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md) в тексте ответа.
 
 ## <a name="example"></a>Пример

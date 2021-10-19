@@ -2,15 +2,15 @@
 title: Get deviceManagementConfigurationCategory
 description: Чтение свойств и связей объекта deviceManagementConfigurationCategory.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d0c81f129028caad90c88f25ee4edaced513c77
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ed7936fc66541a6d9dca20e4299c20d4cedc2054
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59034731"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60487158"
 ---
 # <a name="get-devicemanagementconfigurationcategory"></a>Get deviceManagementConfigurationCategory
 
@@ -29,7 +29,7 @@ ms.locfileid: "59034731"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ GET /deviceManagement/configurationCategories/{deviceManagementConfigurationCate
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/configurationCategories/{d
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 561
+Content-Length: 563
 
 {
   "value": {
@@ -78,7 +78,7 @@ Content-Length: 561
     "helpText": "Help Text value",
     "name": "Name value",
     "displayName": "Display Name value",
-    "platforms": "macOS",
+    "platforms": "android",
     "technologies": "mdm",
     "settingUsage": "configuration",
     "parentCategoryId": "Parent Category Id value",

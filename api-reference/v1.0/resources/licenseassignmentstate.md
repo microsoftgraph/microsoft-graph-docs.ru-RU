@@ -5,12 +5,12 @@ author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 260ce66248934772e386b8d4277970b1db3ee852
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 40dc8e13240cbeb1fe21bbaabcab38247cee25d2
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036202"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493195"
 ---
 # <a name="licenseassignmentstate-resource-type"></a>licenseAssignmentState type
 
@@ -28,9 +28,10 @@ ms.locfileid: "59036202"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|assignedByGroup|string|ID группы, которая назначает эту лицензию. Если назначение является прямо назначенной лицензией, это поле будет Null. Только для чтения.|
+|assignedByGroup|строка|ID группы, которая назначает эту лицензию. Если назначение является прямо назначенной лицензией, это поле будет Null. Только для чтения.|
 |disabledPlans|Collection(String)|Планы служб, отключенные в этом назначении. Только для чтения.|
-|error|Строка|Ошибка сбоя назначения лицензии. Если лицензия назначена успешно, это поле будет Null. Только для чтения. Возможные значения: `CountViolation` , , , , , и `MutuallyExclusiveViolation` `DependencyViolation` `ProhibitedInUsageLocationViolation` `UniquenessViolation` `Others` . Дополнительные сведения о том, как выявлять и устранять ошибки назначения лицензий, см. [здесь.](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems)|
+|error|String|Ошибка сбоя назначения лицензии. Если лицензия назначена успешно, это поле будет Null. Только для чтения. Возможные значения: `CountViolation` , , , , , и `MutuallyExclusiveViolation` `DependencyViolation` `ProhibitedInUsageLocationViolation` `UniquenessViolation` `Others` . Дополнительные сведения о том, как выявлять и устранять ошибки назначения лицензий, см. [здесь.](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems)|
+|lastUpdatedDateTime|DateTimeOffset|Время последнего обновления состояния назначения лицензии.|
 |skuId|String|Уникальный идентификатор SKU. Только для чтения.|
 |state|String|Указать текущее состояние этого назначения. Только для чтения. Возможные значения: Active, ActiveWithError, Disabled и Error.|
 
@@ -43,6 +44,7 @@ ms.locfileid: "59036202"
   "assignedByGroup": "String",
   "disabledPlans": "Collection(String)",
   "error": " String ",  
+  "lastUpdatedDateTime": "String (timestamp)",
   "skuId": "String ",
   "state": "String"
 }

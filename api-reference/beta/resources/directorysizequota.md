@@ -1,16 +1,16 @@
 ---
 title: тип ресурса directorySizeQuota
 description: Представляет используемую и общую квоту каталогов компании.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: directory-management
 author: Jumaodhiss
-ms.openlocfilehash: 54e2280fdb416e5ccfd0853ee77a2ef3f90ddf37
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: ac8b26fababe53458b8dd3a92624d9ce0a11514a
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51469376"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60483017"
 ---
 # <a name="directorysizequota-resource-type"></a>тип ресурса directorySizeQuota
 
@@ -38,7 +38,7 @@ ms.locfileid: "51469376"
 
 ```json
 {
-  "used": 123,
-  "total": 1234
+  "used": "Int32",
+  "total": "Int32"
 }
 ```

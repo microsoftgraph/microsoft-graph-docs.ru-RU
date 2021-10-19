@@ -2,15 +2,15 @@
 title: тип enum androidDeviceOwnerEnrollmentMode
 description: Режим регистрации для профиля регистрации.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b7700c5fd5d9647286561dde4687b3ef2675f325
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e369682fda379ce8d4b4905839be42ca4ff523c5
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59069420"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60487214"
 ---
 # <a name="androiddeviceownerenrollmentmode-enum-type"></a>тип enum androidDeviceOwnerEnrollmentMode
 
@@ -28,6 +28,8 @@ ms.locfileid: "59069420"
 |corporateOwnedDedicatedDevice|0|Пока не задокументировано.|
 |corporateOwnedFullyManaged|1|Пока не задокументировано.|
 |corporateOwnedWorkProfile|2|Пока не задокументировано.|
+|corporateOwnedAOSPUserlessDevice|3|Корпоративное устройство с открытым исходным кодом Android без Project (AOSP) без google мобильные службы.|
+|corporateOwnedAOSPUserAssociatedDevice|4 |Корпоративное, связанное с пользователем устройство с открытым исходным кодом Android Project (AOSP) без google мобильные службы.|
 
 
 

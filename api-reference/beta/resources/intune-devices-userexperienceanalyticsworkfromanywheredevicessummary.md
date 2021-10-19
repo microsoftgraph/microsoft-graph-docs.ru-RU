@@ -2,15 +2,15 @@
 title: тип ресурса userExperienceAnalyticsWorkFromAnywhereDevicesSummary
 description: Аналитика пользовательского интерфейса Work From Anywhere metrics devices summary.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c3f34ed09d9012f13987aed291ff632f16d064c6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8be606cb2cc291adf878b5194c4b9063d993464e
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046885"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60481057"
 ---
 # <a name="userexperienceanalyticsworkfromanywheredevicessummary-resource-type"></a>тип ресурса userExperienceAnalyticsWorkFromAnywhereDevicesSummary
 
@@ -29,6 +29,16 @@ ms.locfileid: "59046885"
 |cloudManagementDevicesSummary|[userExperienceAnalyticsCloudManagementDevicesSummary](../resources/intune-devices-userexperienceanalyticscloudmanagementdevicessummary.md)|Пользовательский интерфейс работает в любом месте сводки устройств облачного управления.|
 |windows10DevicesSummary|[userExperienceAnalyticsWindows10DevicesSummary](../resources/intune-devices-userexperienceanalyticswindows10devicessummary.md)|Аналитика пользовательских интерфейсов работает из любой Windows 10 устройств.|
 |cloudIdentityDevicesSummary|[userExperienceAnalyticsCloudIdentityDevicesSummary](../resources/intune-devices-userexperienceanalyticscloudidentitydevicessummary.md)|Аналитика пользовательских интерфейсов работает из любой сводки устройств облачной идентификации.|
+|totalDevices|Int32|Общее количество устройств. Допустимые значения 2147483648 2147483647|
+|coManagedDevices|Int32|Общее количество совместно управляемых устройств. Допустимые значения 2147483648 2147483647|
+|intuneDevices|Int32|Количество устройств intune, которые не зарегистрированы автопилотом. Допустимые значения 2147483648 2147483647|
+|tenantAttachDevices|Int32|Общее количество устройств присоединений клиента. Допустимые значения 2147483648 2147483647|
+|windows10Devices|Int32|Количество устройств Windows 10. Допустимые значения 2147483648 2147483647|
+|windows10DevicesWithoutTenantAttach|Int32|Количество устройств с Windows 10, которые являются Intune и Comanaged. Допустимые значения 2147483648 2147483647|
+|unsupportedOSversionDevices|Int32|Количество устройств Windows 10 с неподтверченными версиями ОС. Допустимые значения 2147483648 2147483647|
+|devicesWithoutCloudIdentity|Int32|Количество устройств, не относяющихся к облачной идентификации. Допустимые значения 2147483648 2147483647|
+|devicesNotAutopilotRegistered|Int32|Количество устройств intune, которые не зарегистрированы автопилотом. Допустимые значения 2147483648 2147483647|
+|devicesWithoutAutopilotProfileAssigned|Int32|Количество устройств intune, не назначенное профилем автопилота. Допустимые значения 2147483648 2147483647|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -62,7 +72,17 @@ ms.locfileid: "59046885"
   "cloudIdentityDevicesSummary": {
     "@odata.type": "microsoft.graph.userExperienceAnalyticsCloudIdentityDevicesSummary",
     "deviceWithoutCloudIdentityCount": 1024
-  }
+  },
+  "totalDevices": 1024,
+  "coManagedDevices": 1024,
+  "intuneDevices": 1024,
+  "tenantAttachDevices": 1024,
+  "windows10Devices": 1024,
+  "windows10DevicesWithoutTenantAttach": 1024,
+  "unsupportedOSversionDevices": 1024,
+  "devicesWithoutCloudIdentity": 1024,
+  "devicesNotAutopilotRegistered": 1024,
+  "devicesWithoutAutopilotProfileAssigned": 1024
 }
 ```
 

@@ -2,15 +2,15 @@
 title: Список iosLobAppProvisioningConfigurationAssignments
 description: Список свойств и связей объектов iosLobAppProvisioningConfigurationAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a24b5ff4f7f5d2c7893d73d2aaaaad1631fd50f4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f9d67fe77f00f0757b92a3f8ff6e97f49da8e421
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59014099"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60479923"
 ---
 # <a name="list-ioslobappprovisioningconfigurationassignments"></a>Список iosLobAppProvisioningConfigurationAssignments
 
@@ -29,7 +29,7 @@ ms.locfileid: "59014099"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

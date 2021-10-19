@@ -2,15 +2,15 @@
 title: Получить importedAppleDeviceIdentityResult
 description: Чтение свойств и связей импортируемого объектаAppleDeviceIdentityResult.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d8bc8f4c8cf0a74a76e818084d8df27c718401cb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3adb4da66786a644ff131f1245134953844cf142
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59018203"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60494726"
 ---
 # <a name="get-importedappledeviceidentityresult"></a>Получить importedAppleDeviceIdentityResult
 
@@ -29,7 +29,7 @@ ms.locfileid: "59018203"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

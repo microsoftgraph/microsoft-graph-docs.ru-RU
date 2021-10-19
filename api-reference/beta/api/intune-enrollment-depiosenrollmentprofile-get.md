@@ -2,15 +2,15 @@
 title: Получить depIOSEnrollmentProfile
 description: Чтение свойств и связей объекта depIOSEnrollmentProfile.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 115286dfc0c0536bd560fd700708c3173b1b2843
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7e6e9cc9370dc4d21b879d6a64be6f80e41b97d8
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59018224"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60488236"
 ---
 # <a name="get-depiosenrollmentprofile"></a>Получить depIOSEnrollmentProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "59018224"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

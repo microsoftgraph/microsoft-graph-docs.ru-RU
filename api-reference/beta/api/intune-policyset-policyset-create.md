@@ -2,15 +2,15 @@
 title: Создание policySet
 description: Создание нового объекта policySet.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a8192f0d8ffa78b91c3f8d31d721a2d4cfdcee1d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 335494e396294698ee6b7188d2a888c8ae5e95cb
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59121132"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60484019"
 ---
 # <a name="create-policyset"></a>Создание policySet
 
@@ -29,7 +29,7 @@ ms.locfileid: "59121132"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceAppManagement/policySets
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -60,8 +60,8 @@ POST /deviceAppManagement/policySets
 |description|String|Описание PolicySet.|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Проверка/присвоение состояния PolicySet. Возможные значения: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Код ошибки, если таковое произошло. Возможные значения: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|guidedDeploymentTags|Коллекция объектов string|Теги управляемого развертывания|
-|roleScopeTags|Коллекция объектов string|RoleScopeTags of the PolicySet|
+|guidedDeploymentTags|Коллекция строк|Теги управляемого развертывания|
+|roleScopeTags|Коллекция строк|RoleScopeTags of the PolicySet|
 
 
 

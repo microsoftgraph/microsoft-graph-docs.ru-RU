@@ -2,15 +2,15 @@
 title: Создание microsoftTunnelSite
 description: Создайте новый объект microsoftTunnelSite.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ec24b6fb069300d85fee5b0d7dbf26e8f42548ee
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6c59f9d75ad1b751e52dd1c4a5b1369a336f41be
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59096895"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60486483"
 ---
 # <a name="create-microsofttunnelsite"></a>Создание microsoftTunnelSite
 
@@ -27,7 +27,7 @@ ms.locfileid: "59096895"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
@@ -43,7 +43,7 @@ POST /deviceManagement/microsoftTunnelSites
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -61,9 +61,9 @@ POST /deviceManagement/microsoftTunnelSites
 |upgradeWindowStartTime|TimeOfDay|Время запуска окна обновления сайта|
 |upgradeWindowEndTime|TimeOfDay|Время окончания дня окна обновления сайта|
 |upgradeAutomatically|Логический|Параметр автоматического обновления сайта. True для автоматических обновлений, false для ручного управления|
-|upgradeAvailable|Логическое|True, если доступно обновление|
+|upgradeAvailable|Логический|True, если доступно обновление|
 |internalNetworkProbeUrl|String|URL-адрес зонда внутреннего доступа к сети MicrosoftTunnelSite|
-|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity.|
+|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity.|
 
 
 

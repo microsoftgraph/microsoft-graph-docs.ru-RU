@@ -2,15 +2,15 @@
 title: Обновление microsoftTunnelServerLogCollectionResponse
 description: Обновление свойств объекта microsoftTunnelServerLogCollectionResponse.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b2abbe7f801848a7ce8f6108b048a32b9bf0f345
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 997f8aa3f053900ba23573a983036932615fe891
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59018028"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60486742"
 ---
 # <a name="update-microsofttunnelserverlogcollectionresponse"></a>Обновление microsoftTunnelServerLogCollectionResponse
 
@@ -27,7 +27,7 @@ ms.locfileid: "59018028"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
@@ -53,12 +53,12 @@ PATCH /deviceManagement/microsoftTunnelServerLogCollectionResponses/{microsoftTu
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный ID объекта|
+|id|String|Уникальный ID объекта|
 |status|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|Состояние коллекции журналов. Возможные значения: `pending`, `completed`, `failed`.|
 |startDateTime|DateTimeOffset|Время начала собранных журналов |
 |endDateTime|DateTimeOffset|Время окончания собранных журналов|
 |sizeInBytes|Int64|Размер журналов в bytes|
-|serverId|Строка|ID сервера, на который запрашивается коллекция журналов|
+|serverId|String|ID сервера, на который запрашивается коллекция журналов|
 |requestDateTime|DateTimeOffset|Время запроса коллекции журналов|
 |expiryDateTime|DateTimeOffset|Время истечения срока действия коллекции журналов|
 

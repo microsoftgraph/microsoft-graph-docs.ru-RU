@@ -2,15 +2,15 @@
 title: Список deviceManagementConfigurationCategories
 description: Список свойств и связей объектов deviceManagementConfigurationCategory.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 59cd29f12a90af3134ca249600c557118b10dbb0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b5ce6e4ed6346a47b6a280ce0f9cdb7699320b47
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59034710"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489088"
 ---
 # <a name="list-devicemanagementconfigurationcategories"></a>Список deviceManagementConfigurationCategories
 
@@ -29,7 +29,7 @@ ms.locfileid: "59034710"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/configurationCategories
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 603
+Content-Length: 605
 
 {
   "value": [
@@ -76,7 +76,7 @@ Content-Length: 603
       "helpText": "Help Text value",
       "name": "Name value",
       "displayName": "Display Name value",
-      "platforms": "macOS",
+      "platforms": "android",
       "technologies": "mdm",
       "settingUsage": "configuration",
       "parentCategoryId": "Parent Category Id value",
