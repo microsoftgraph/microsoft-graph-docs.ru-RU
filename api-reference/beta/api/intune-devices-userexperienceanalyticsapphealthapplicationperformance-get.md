@@ -2,15 +2,15 @@
 title: Get userExperienceAnalyticsAppHealthApplicationPerformance
 description: Чтение свойств и связей объекта userExperienceAnalyticsAppHealthApplicationPerformance.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f394191044bf13acbe92e0d8d2df50cd9d62b952
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1680da53f38b5f0df4d2caf4aebf7bec477bae12
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59027892"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60479804"
 ---
 # <a name="get-userexperienceanalyticsapphealthapplicationperformance"></a>Get userExperienceAnalyticsAppHealthApplicationPerformance
 
@@ -29,7 +29,7 @@ ms.locfileid: "59027892"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -52,7 +52,7 @@ GET /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance/{us
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код ответа и `200 OK` [объект userExperienceAnalyticsAppHealthApplicationPerformance](../resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md) в тексте ответа.
 
 ## <a name="example"></a>Пример

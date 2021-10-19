@@ -2,15 +2,15 @@
 title: тип enum devicePlatformType
 description: Поддерживаемые типы платформ.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 402f675013f3785cf2406c27a684fff71bd9f77c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 51bba3284fbf9990f8485ed6dea9e51224a4ce90
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59141097"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60488579"
 ---
 # <a name="deviceplatformtype-enum-type"></a>тип enum devicePlatformType
 
@@ -30,10 +30,11 @@ ms.locfileid: "59141097"
 |iOS|2|iOS.|
 |macOS|3|MacOS.|
 |windowsPhone81|4 |WindowsPhone 8.1.|
-|windows81AndLater|5 |Windows 8.1 и более поздней|
+|windows81AndLater|5|Windows 8.1 и более поздней|
 |windows10AndLater|6 |Windows 10 и более поздней.|
 |AndroidWorkProfile|7 |Рабочий профиль Android.|
 |unknown|8 |Неизвестно.|
+|AndroidAOSP|9 |Android AOSP.|
 
 
 

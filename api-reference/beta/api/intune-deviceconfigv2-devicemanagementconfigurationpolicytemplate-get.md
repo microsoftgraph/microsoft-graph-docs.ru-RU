@@ -2,15 +2,15 @@
 title: Get deviceManagementConfigurationPolicyTemplate
 description: Чтение свойств и связей объекта deviceManagementConfigurationPolicyTemplate.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 61fd84c6e224260e19d952b1b14853e62eb5db8d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 568ad4b862b8d09a04bd117ef0f854ebe2d127ea
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59077239"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60492035"
 ---
 # <a name="get-devicemanagementconfigurationpolicytemplate"></a>Get deviceManagementConfigurationPolicyTemplate
 
@@ -29,7 +29,7 @@ ms.locfileid: "59077239"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ GET /deviceManagement/configurationPolicyTemplates/{deviceManagementConfiguratio
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/configurationPolicyTemplat
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 547
+Content-Length: 549
 
 {
   "value": {
@@ -80,7 +80,7 @@ Content-Length: 547
     "description": "Description value",
     "displayVersion": "Display Version value",
     "lifecycleState": "draft",
-    "platforms": "macOS",
+    "platforms": "android",
     "technologies": "mdm",
     "templateFamily": "endpointSecurityAntivirus",
     "allowUnmanagedSettings": true,

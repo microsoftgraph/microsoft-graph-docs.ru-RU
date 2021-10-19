@@ -2,15 +2,15 @@
 title: тип ресурса androidDeviceOwnerEnrollmentProfile
 description: Профиль регистрации, используемый для регистрации Enterprise устройств с помощью облачного управления Google.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f88410522f63b289a2b2d6f55a2a1ebf85b46b5e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 41db800f2e14e5806b2354e9b59d95f9249da545
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59057658"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489747"
 ---
 # <a name="androiddeviceownerenrollmentprofile-resource-type"></a>тип ресурса androidDeviceOwnerEnrollmentProfile
 
@@ -40,7 +40,7 @@ ms.locfileid: "59057658"
 |id|String|Уникальный GUID профиля регистрации.|
 |displayName|String|Отображаемое имя для профиля регистрации.|
 |description|String|Описание профиля регистрации.|
-|enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|Режим регистрации устройств, которые используют этот профиль регистрации. Возможные значения: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`.|
+|enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|Режим регистрации устройств, которые используют этот профиль регистрации. Возможные значения: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`, `corporateOwnedAOSPUserlessDevice`, `corporateOwnedAOSPUserAssociatedDevice`.|
 |enrollmentTokenType|[androidDeviceOwnerEnrollmentTokenType](../resources/intune-androidforwork-androiddeviceownerenrollmenttokentype.md)|Тип маркера регистрации для профиля регистрации. Возможные значения: `default`, `corporateOwnedDedicatedDeviceWithAzureADSharedMode`.|
 |createdDateTime|DateTimeOffset|Дата и время создания профиля регистрации.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения профиля регистрации.|
@@ -48,9 +48,14 @@ ms.locfileid: "59057658"
 |tokenCreationDateTime|DateTimeOffset|Дата создания последнего созданного маркера.|
 |tokenExpirationDateTime|DateTimeOffset|Дата и время, когда истекает срок действия последнего созданного маркера.|
 |enrolledDeviceCount|Int32|Общее количество устройств с Android, зарегистрированных через этот профиль регистрации.|
+|enrollmentTokenUsageCount|Int32|Общее число устройств AOSP, которые зарегистрировались с помощью текущего маркера.|
 |qrCodeContent|String|Строка, используемая для создания QR-кода маркера.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Строка, используемая для создания QR-кода маркера.|
-|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity.|
+|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity.|
+|wifiSsid|String|Строка, содержаная ssid входа wi-fi|
+|wifiPassword|String|Строка с паролем входа в Wi-Fi|
+|wifiSecurityType|[aospWifiSecurityType](../resources/intune-androidforwork-aospwifisecuritytype.md)|Строка, содержаная тип безопасности Wi-Fi. Возможные значения: `none`, `wpa`, `wep`.|
+|wifiHidden|Логический|Boolean, который указывает, включены ли скрытые сети Wi-Fi|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -78,6 +83,7 @@ ms.locfileid: "59057658"
   "tokenCreationDateTime": "String (timestamp)",
   "tokenExpirationDateTime": "String (timestamp)",
   "enrolledDeviceCount": 1024,
+  "enrollmentTokenUsageCount": 1024,
   "qrCodeContent": "String",
   "qrCodeImage": {
     "@odata.type": "microsoft.graph.mimeContent",
@@ -86,7 +92,11 @@ ms.locfileid: "59057658"
   },
   "roleScopeTagIds": [
     "String"
-  ]
+  ],
+  "wifiSsid": "String",
+  "wifiPassword": "String",
+  "wifiSecurityType": "String",
+  "wifiHidden": true
 }
 ```
 

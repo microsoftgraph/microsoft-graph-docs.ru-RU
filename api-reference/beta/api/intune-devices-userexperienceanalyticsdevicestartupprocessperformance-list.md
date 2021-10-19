@@ -2,15 +2,15 @@
 title: Список пользователейExperienceAnalyticsDeviceStartupProcessPerformances
 description: Список свойств и связей объектов userExperienceAnalyticsDeviceStartupProcessPerformance.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0279e941141f6562da82b8b332870a6d5143dc29
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e987abfbf9ce4366262eb522101a78ccda326d78
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59112358"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60490598"
 ---
 # <a name="list-userexperienceanalyticsdevicestartupprocessperformances"></a>Список пользователейExperienceAnalyticsDeviceStartupProcessPerformances
 
@@ -29,7 +29,7 @@ ms.locfileid: "59112358"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ GET /deviceManagement/userExperienceAnalyticsDeviceStartupProcessPerformance
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 399
+Content-Length: 460
 
 {
   "value": [
@@ -77,7 +77,9 @@ Content-Length: 399
       "publisher": "Publisher value",
       "deviceCount": 11,
       "medianImpactInMs": 0,
-      "totalImpactInMs": 15
+      "totalImpactInMs": 15,
+      "medianImpactInMs2": 1,
+      "totalImpactInMs2": 0
     }
   ]
 }

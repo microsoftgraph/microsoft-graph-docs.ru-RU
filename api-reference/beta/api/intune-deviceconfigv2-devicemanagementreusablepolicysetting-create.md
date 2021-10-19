@@ -2,15 +2,15 @@
 title: Создание deviceManagementReusablePolicySetting
 description: Создание нового объекта deviceManagementReusablePolicySetting.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ed2c0d14f1b7608f63ec38b53adb98cd081daa45
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 795b300d5443cbd82e9c71c25af622e3af236f04
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59018378"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489207"
 ---
 # <a name="create-devicemanagementreusablepolicysetting"></a>Создание deviceManagementReusablePolicySetting
 
@@ -29,7 +29,7 @@ ms.locfileid: "59018378"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -65,7 +65,7 @@ POST /deviceManagement/reusablePolicySettings
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика и `201 Created` [объект deviceManagementReusablePolicySetting](../resources/intune-deviceconfigv2-devicemanagementreusablepolicysetting.md) в теле ответа.
 
 ## <a name="example"></a>Пример

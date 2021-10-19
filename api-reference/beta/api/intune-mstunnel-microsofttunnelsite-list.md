@@ -2,15 +2,15 @@
 title: Список microsoftTunnelSites
 description: Список свойств и связей объектов microsoftTunnelSite.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ce3859a0a2cd5a3499e83a06933d9c04aca84e1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5a5fe748d7a699c5d925b46e9bd0a09ebb0789c5
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59027661"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60492435"
 ---
 # <a name="list-microsofttunnelsites"></a>Список microsoftTunnelSites
 
@@ -27,7 +27,7 @@ ms.locfileid: "59027661"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
@@ -49,7 +49,7 @@ GET /deviceManagement/microsoftTunnelSites
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

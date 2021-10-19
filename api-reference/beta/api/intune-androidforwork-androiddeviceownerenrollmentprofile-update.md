@@ -2,15 +2,15 @@
 title: Обновление androidDeviceOwnerEnrollmentProfile
 description: Обновление свойств объекта androidDeviceOwnerEnrollmentProfile.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e8f83545c4de369c270eea7b63793418f88821d5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bb53c8ed29fc72eea91756e26ddd45fa0db9df1e
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59071338"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489292"
 ---
 # <a name="update-androiddeviceownerenrollmentprofile"></a>Обновление androidDeviceOwnerEnrollmentProfile
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwner
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,7 +57,7 @@ PATCH /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwner
 |id|String|Уникальный GUID профиля регистрации.|
 |displayName|String|Отображаемое имя для профиля регистрации.|
 |description|String|Описание профиля регистрации.|
-|enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|Режим регистрации устройств, которые используют этот профиль регистрации. Возможные значения: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`.|
+|enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|Режим регистрации устройств, которые используют этот профиль регистрации. Возможные значения: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`, `corporateOwnedAOSPUserlessDevice`, `corporateOwnedAOSPUserAssociatedDevice`.|
 |enrollmentTokenType|[androidDeviceOwnerEnrollmentTokenType](../resources/intune-androidforwork-androiddeviceownerenrollmenttokentype.md)|Тип маркера регистрации для профиля регистрации. Возможные значения: `default`, `corporateOwnedDedicatedDeviceWithAzureADSharedMode`.|
 |createdDateTime|DateTimeOffset|Дата и время создания профиля регистрации.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения профиля регистрации.|
@@ -65,9 +65,14 @@ PATCH /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwner
 |tokenCreationDateTime|DateTimeOffset|Дата создания последнего созданного маркера.|
 |tokenExpirationDateTime|DateTimeOffset|Дата и время, когда истекает срок действия последнего созданного маркера.|
 |enrolledDeviceCount|Int32|Общее количество устройств с Android, зарегистрированных через этот профиль регистрации.|
+|enrollmentTokenUsageCount|Int32|Общее число устройств AOSP, которые зарегистрировались с помощью текущего маркера.|
 |qrCodeContent|String|Строка, используемая для создания QR-кода маркера.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Строка, используемая для создания QR-кода маркера.|
-|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity.|
+|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity.|
+|wifiSsid|String|Строка, содержаная ssid входа wi-fi|
+|wifiPassword|String|Строка с паролем входа в Wi-Fi|
+|wifiSecurityType|[aospWifiSecurityType](../resources/intune-androidforwork-aospwifisecuritytype.md)|Строка, содержаная тип безопасности Wi-Fi. Возможные значения: `none`, `wpa`, `wep`.|
+|wifiHidden|Логический|Boolean, который указывает, включены ли скрытые сети Wi-Fi|
 
 
 
@@ -81,7 +86,7 @@ PATCH /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwner
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwnerEnrollmentProfileId}
 Content-type: application/json
-Content-length: 758
+Content-length: 922
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerEnrollmentProfile",
@@ -94,6 +99,7 @@ Content-length: 758
   "tokenCreationDateTime": "2017-01-01T00:01:38.5314127-08:00",
   "tokenExpirationDateTime": "2016-12-31T23:59:54.0590989-08:00",
   "enrolledDeviceCount": 3,
+  "enrollmentTokenUsageCount": 9,
   "qrCodeContent": "Qr Code Content value",
   "qrCodeImage": {
     "@odata.type": "microsoft.graph.mimeContent",
@@ -102,7 +108,11 @@ Content-length: 758
   },
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "wifiSsid": "Wifi Ssid value",
+  "wifiPassword": "Wifi Password value",
+  "wifiSecurityType": "wpa",
+  "wifiHidden": true
 }
 ```
 
@@ -111,7 +121,7 @@ Content-length: 758
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 930
+Content-Length: 1094
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerEnrollmentProfile",
@@ -127,6 +137,7 @@ Content-Length: 930
   "tokenCreationDateTime": "2017-01-01T00:01:38.5314127-08:00",
   "tokenExpirationDateTime": "2016-12-31T23:59:54.0590989-08:00",
   "enrolledDeviceCount": 3,
+  "enrollmentTokenUsageCount": 9,
   "qrCodeContent": "Qr Code Content value",
   "qrCodeImage": {
     "@odata.type": "microsoft.graph.mimeContent",
@@ -135,7 +146,11 @@ Content-Length: 930
   },
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "wifiSsid": "Wifi Ssid value",
+  "wifiPassword": "Wifi Password value",
+  "wifiSecurityType": "wpa",
+  "wifiHidden": true
 }
 ```
 

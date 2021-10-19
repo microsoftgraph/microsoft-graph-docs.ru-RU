@@ -2,15 +2,15 @@
 title: Список androidForWorkMobileAppConfigurations
 description: Список свойств и связей объектов AndroidForWorkMobileAppConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0ff77f2829f51b886f58092aa19de23df8960bde
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 560223a8490081a68646d921eff939bb27e69047
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59088901"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489123"
 ---
 # <a name="list-androidforworkmobileappconfigurations"></a>Список androidForWorkMobileAppConfigurations
 
@@ -29,7 +29,7 @@ ms.locfileid: "59088901"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ GET /deviceAppManagement/mobileAppConfigurations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 906
+Content-Length: 943
 
 {
   "value": [
@@ -92,7 +92,8 @@ Content-Length: 906
           "action": "autoGrant"
         }
       ],
-      "profileApplicability": "androidWorkProfile"
+      "profileApplicability": "androidWorkProfile",
+      "connectedAppsEnabled": true
     }
   ]
 }

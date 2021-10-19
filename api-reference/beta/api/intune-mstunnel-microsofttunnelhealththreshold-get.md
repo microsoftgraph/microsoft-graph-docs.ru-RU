@@ -2,15 +2,15 @@
 title: Получите microsoftTunnelHealthThreshold
 description: Чтение свойств и связей объекта microsoftTunnelHealthThreshold.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 24fcd8731e4feeafa8de16c973d79e90238e35b6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 636c78453ee060ab71635bfdbaaedb28444fa005
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59065136"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60489355"
 ---
 # <a name="get-microsofttunnelhealththreshold"></a>Получите microsoftTunnelHealthThreshold
 
@@ -27,7 +27,7 @@ ms.locfileid: "59065136"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
@@ -46,7 +46,7 @@ GET /deviceManagement/microsoftTunnelHealthThresholds/{microsoftTunnelHealthThre
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

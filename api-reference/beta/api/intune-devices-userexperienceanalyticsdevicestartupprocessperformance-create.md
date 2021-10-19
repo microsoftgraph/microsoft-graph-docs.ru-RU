@@ -2,15 +2,15 @@
 title: Создание userExperienceAnalyticsDeviceStartupProcessPerformance
 description: Создание нового объекта userExperienceAnalyticsDeviceStartupProcessPerformance.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c80d02049fa745c248b8d0ec3610029cd49f8e0c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: de2f25a6e030c176e70aeeafd0a031942bd8aa61
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59030839"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60493453"
 ---
 # <a name="create-userexperienceanalyticsdevicestartupprocessperformance"></a>Создание userExperienceAnalyticsDeviceStartupProcessPerformance
 
@@ -60,6 +60,8 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupProcessPerformance
 |deviceCount|Int64|Процесс запуска устройства аналитики пользовательских интерфейсов суммирован.|
 |medianImpactInMs|Int32|Медиана процесса запуска устройств для аналитики пользовательских интерфейсов в миллисекунд.|
 |totalImpactInMs|Int32|Процесс запуска устройства для аналитики пользовательских интерфейсов полностью влияет на миллисекунд.|
+|medianImpactInMs2|Int64|Медиана процесса запуска устройств для аналитики пользовательских интерфейсов в миллисекунд.|
+|totalImpactInMs2|Int64|Процесс запуска устройства для аналитики пользовательских интерфейсов полностью влияет на миллисекунд.|
 
 
 
@@ -73,7 +75,7 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupProcessPerformance
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDeviceStartupProcessPerformance
 Content-type: application/json
-Content-length: 285
+Content-length: 338
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupProcessPerformance",
@@ -82,7 +84,9 @@ Content-length: 285
   "publisher": "Publisher value",
   "deviceCount": 11,
   "medianImpactInMs": 0,
-  "totalImpactInMs": 15
+  "totalImpactInMs": 15,
+  "medianImpactInMs2": 1,
+  "totalImpactInMs2": 0
 }
 ```
 
@@ -91,7 +95,7 @@ Content-length: 285
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 334
+Content-Length: 387
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupProcessPerformance",
@@ -101,7 +105,9 @@ Content-Length: 334
   "publisher": "Publisher value",
   "deviceCount": 11,
   "medianImpactInMs": 0,
-  "totalImpactInMs": 15
+  "totalImpactInMs": 15,
+  "medianImpactInMs2": 1,
+  "totalImpactInMs2": 0
 }
 ```
 

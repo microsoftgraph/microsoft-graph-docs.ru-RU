@@ -2259,6 +2259,8 @@ items:
                         href: api/intune-apps-androidstoreapp-delete.md
                       - name: Обновление
                         href: api/intune-apps-androidstoreapp-update.md
+                  - name: Тип безопасности Wi-Fi Aosp
+                    href: resources/intune-androidforwork-aospwifisecuritytype.md
                   - name: Элемент параметра конфигурации приложения
                     href: resources/intune-apps-appconfigurationsettingitem.md
                   - name: Состояние сертификата
@@ -6034,6 +6036,8 @@ items:
                     href: resources/intune-deviceconfig-operator.md
                   - name: Совершенная группа секретности вперед
                     href: resources/intune-deviceconfig-perfectforwardsecrecygroup.md
+                  - name: Режим личного магазина воспроизведения личного профиля
+                    href: resources/intune-deviceconfig-personalprofilepersonalplaystoremode.md
                   - name: Запрос на перешифровку Pfx
                     href: resources/intune-raimportcerts-pfxrecryptionrequest.md
                     items:
@@ -9228,6 +9232,60 @@ items:
                         href: api/intune-rbac-deviceandappmanagementroledefinition-delete.md
                       - name: Обновление
                         href: api/intune-rbac-deviceandappmanagementroledefinition-update.md
+                  - name: Удостоверение
+                    href: resources/intune-rbac-identity.md
+                  - name: Набор удостоверений
+                    href: resources/intune-rbac-identityset.md
+                  - name: Политика утверждения операции
+                    href: resources/intune-rbac-operationapprovalpolicy.md
+                    items:
+                      - name: Список
+                        href: api/intune-rbac-operationapprovalpolicy-list.md
+                      - name: Получение
+                        href: api/intune-rbac-operationapprovalpolicy-get.md
+                      - name: Создание
+                        href: api/intune-rbac-operationapprovalpolicy-create.md
+                      - name: Удалить
+                        href: api/intune-rbac-operationapprovalpolicy-delete.md
+                      - name: Обновление
+                        href: api/intune-rbac-operationapprovalpolicy-update.md
+                  - name: Платформа политики утверждения операций
+                    href: resources/intune-rbac-operationapprovalpolicyplatform.md
+                  - name: Набор политик утверждения операции
+                    href: resources/intune-rbac-operationapprovalpolicyset.md
+                  - name: Тип политики утверждения операции
+                    href: resources/intune-rbac-operationapprovalpolicytype.md
+                  - name: Запрос на утверждение операции
+                    href: resources/intune-rbac-operationapprovalrequest.md
+                    items:
+                      - name: Список
+                        href: api/intune-rbac-operationapprovalrequest-list.md
+                      - name: Получение
+                        href: api/intune-rbac-operationapprovalrequest-get.md
+                      - name: Создание
+                        href: api/intune-rbac-operationapprovalrequest-create.md
+                      - name: Удалить
+                        href: api/intune-rbac-operationapprovalrequest-delete.md
+                      - name: Обновление
+                        href: api/intune-rbac-operationapprovalrequest-update.md
+                      - name: утверждение действия
+                        href: api/intune-rbac-operationapprovalrequest-approve.md
+                      - name: отклонение действия
+                        href: api/intune-rbac-operationapprovalrequest-reject.md
+                      - name: cancelApproval action
+                        href: api/intune-rbac-operationapprovalrequest-cancelapproval.md
+                      - name: действие getRequestStatus
+                        href: api/intune-rbac-operationapprovalrequest-getrequeststatus.md
+                      - name: getMyRequestById
+                        href: api/intune-rbac-operationapprovalrequest-getmyrequestbyid.md
+                      - name: getMyRequests
+                        href: api/intune-rbac-operationapprovalrequest-getmyrequests.md
+                      - name: cancelMyRequest action
+                        href: api/intune-rbac-operationapprovalrequest-cancelmyrequest.md
+                  - name: Состояние объекта запроса запроса на операцию
+                    href: resources/intune-rbac-operationapprovalrequestentitystatus.md
+                  - name: Состояние запроса на утверждение операции
+                    href: resources/intune-rbac-operationapprovalrequeststatus.md
                   - name: Несколько приложений Rbac
                     href: resources/intune-rbac-rbacapplicationmultiple.md
                     items:
@@ -9450,10 +9508,10 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-get.md
                       - name: Обновление
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
-                      - name: Список
+                      - name: List
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-                      - name: Создание
-                        href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
+                      - name: 'deviceManagementDerivedCredentialSettings].. /resources/intune-shared-devicemanagementderivedcredentialsettings.md)| Создание'
+                        href: api/intune-shared-devicemanagementderivedcredentialsettings.md
                       - name: Удалить
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                   - name: Сценарий управления устройствами

@@ -2,15 +2,15 @@
 title: действие getHealthMetrics
 description: Пока не задокументировано.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 802f0fea0844c5e4da2941c06e970e028366fe32
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 35fd06ecde961c9560d657448e60e652cc61fdc9
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59111924"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60486707"
 ---
 # <a name="gethealthmetrics-action"></a>действие getHealthMetrics
 
@@ -37,13 +37,13 @@ ms.locfileid: "59111924"
 }
 -->
 ``` http
-POST /deviceManagement/certificateConnectorDetails/getHealthMetrics
+POST /deviceManagement/certificateConnectorDetails/{certificateConnectorDetailsId}/getHealthMetrics
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,7 @@ POST /deviceManagement/certificateConnectorDetails/getHealthMetrics
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/certificateConnectorDetails/getHealthMetrics
+POST https://graph.microsoft.com/beta/deviceManagement/certificateConnectorDetails/{certificateConnectorDetailsId}/getHealthMetrics
 
 Content-type: application/json
 Content-length: 55

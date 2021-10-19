@@ -2,15 +2,15 @@
 title: тип ресурса userExperienceAnalyticsDeviceStartupProcessPerformance
 description: Производительность процесса запуска устройства для аналитики пользовательского интерфейса.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e6f8ade092e5927792386140b53caa1ea769f3f9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a9dbca4f587a7e58fdd2862e0f6e2d5b7debc0c0
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59125724"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60486679"
 ---
 # <a name="userexperienceanalyticsdevicestartupprocessperformance-resource-type"></a>тип ресурса userExperienceAnalyticsDeviceStartupProcessPerformance
 
@@ -41,6 +41,8 @@ ms.locfileid: "59125724"
 |deviceCount|Int64|Процесс запуска устройства аналитики пользовательских интерфейсов суммирован.|
 |medianImpactInMs|Int32|Медиана процесса запуска устройств для аналитики пользовательских интерфейсов в миллисекунд.|
 |totalImpactInMs|Int32|Процесс запуска устройства для аналитики пользовательских интерфейсов полностью влияет на миллисекунд.|
+|medianImpactInMs2|Int64|Медиана процесса запуска устройств для аналитики пользовательских интерфейсов в миллисекунд.|
+|totalImpactInMs2|Int64|Процесс запуска устройства для аналитики пользовательских интерфейсов полностью влияет на миллисекунд.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -62,7 +64,9 @@ ms.locfileid: "59125724"
   "publisher": "String",
   "deviceCount": 1024,
   "medianImpactInMs": 1024,
-  "totalImpactInMs": 1024
+  "totalImpactInMs": 1024,
+  "medianImpactInMs2": 1024,
+  "totalImpactInMs2": 1024
 }
 ```
 

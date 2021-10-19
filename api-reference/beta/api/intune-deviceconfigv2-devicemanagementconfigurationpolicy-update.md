@@ -2,15 +2,15 @@
 title: Обновление deviceManagementConfigurationPolicy
 description: Обновление свойств объекта deviceManagementConfigurationPolicy.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9633dfbb8f3ffd84a6b7eae2ccdd905a486650c7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b40bc63c0f7eefa740e5104436532c53e91391bc
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59055173"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60481967"
 ---
 # <a name="update-devicemanagementconfigurationpolicy"></a>Обновление deviceManagementConfigurationPolicy
 
@@ -29,7 +29,7 @@ ms.locfileid: "59055173"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ PATCH /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySe
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,13 +57,13 @@ PATCH /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySe
 |id|String|Ключ документа политики. Автоматически созданный.|
 |name|String|Имя политики|
 |description|String|Описание политики|
-|платформы|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Платформы для этой политики. Возможные значения: `none`, `macOS`, `windows10X`, `windows10`.|
-|технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Технологии для этой политики. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`.|
+|платформы|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Платформы для этой политики. Возможные значения: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`.|
+|технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Технологии для этой политики. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`, `linuxMdm`, `unknownFutureValue`.|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Политика последней даты и времени изменения. Это свойство доступно только для чтения.|
 |settingCount|Int32|Количество параметров. Это свойство доступно только для чтения.|
 |creationSource|String|Источник создания политики|
-|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity.|
+|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity.|
 |isAssigned|Boolean|Состояние назначения политики. Это свойство доступно только для чтения.|
 |templateReference|[deviceManagementConfigurationPolicyTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicytemplatereference.md)|Справочные сведения по шаблонам|
 
@@ -79,13 +79,13 @@ PATCH /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySe
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}
 Content-type: application/json
-Content-length: 685
+Content-length: 687
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicy",
   "name": "Name value",
   "description": "Description value",
-  "platforms": "macOS",
+  "platforms": "android",
   "technologies": "mdm",
   "settingCount": 12,
   "creationSource": "Creation Source value",
@@ -108,14 +108,14 @@ Content-length: 685
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 857
+Content-Length: 859
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicy",
   "id": "3ffd7cd0-7cd0-3ffd-d07c-fd3fd07cfd3f",
   "name": "Name value",
   "description": "Description value",
-  "platforms": "macOS",
+  "platforms": "android",
   "technologies": "mdm",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",

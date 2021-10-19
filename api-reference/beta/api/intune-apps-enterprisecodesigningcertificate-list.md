@@ -2,15 +2,15 @@
 title: Список enterpriseCodeSigningCertificates
 description: Список свойств и связей объектов enterpriseCodeSigningCertificate.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8dcbe4ab854363f50dde98c83e9933000d68f299
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f32d0d1ac6b0ee2cc99a60fe58c1447e7fb251b3
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59014239"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60484866"
 ---
 # <a name="list-enterprisecodesigningcertificates"></a>Список enterpriseCodeSigningCertificates
 
@@ -29,7 +29,7 @@ ms.locfileid: "59014239"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

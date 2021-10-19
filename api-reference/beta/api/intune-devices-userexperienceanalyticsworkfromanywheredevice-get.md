@@ -2,15 +2,15 @@
 title: Get userExperienceAnalyticsWorkFromAnywhereDevice
 description: Чтение свойств и связей объекта userExperienceAnalyticsWorkFromAnywhereDevice.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 95d27d7a639f8d108772219f8b82c8dd2edc30fa
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9bdd052064b51783f19e2206a35ecd47a5a043b4
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59087963"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60491095"
 ---
 # <a name="get-userexperienceanalyticsworkfromanywheredevice"></a>Get userExperienceAnalyticsWorkFromAnywhereDevice
 
@@ -29,7 +29,7 @@ ms.locfileid: "59087963"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ GET /deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExperi
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -68,12 +68,13 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsWor
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1349
+Content-Length: 1463
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
     "id": "83d5adfc-adfc-83d5-fcad-d583fcadd583",
+    "deviceId": "Device Id value",
     "deviceName": "Device Name value",
     "serialNumber": "Serial Number value",
     "manufacturer": "Manufacturer value",
@@ -90,6 +91,7 @@ Content-Length: 1349
     "tenantAttached": true,
     "compliancePolicySetToIntune": true,
     "otherWorkloadsSetToIntune": true,
+    "isCloudManagedGatewayEnabled": true,
     "upgradeEligibility": "unknown",
     "ramCheckFailed": true,
     "storageCheckFailed": true,
@@ -100,6 +102,7 @@ Content-Length: 1349
     "processorFamilyCheckFailed": true,
     "processor64BitCheckFailed": true,
     "osCheckFailed": true,
+    "workFromAnywhereScore": 7.0,
     "windowsScore": 4.0,
     "cloudManagementScore": 6.666666666666667,
     "cloudIdentityScore": 6.0,

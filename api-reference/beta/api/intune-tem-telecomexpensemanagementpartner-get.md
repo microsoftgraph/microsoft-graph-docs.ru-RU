@@ -2,15 +2,15 @@
 title: Получение объекта telecomExpenseManagementPartner
 description: Чтение свойств и связей объекта telecomExpenseManagementPartner.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ae7058241e73e815cd899ded2eba8ee254c53853
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 23d2e0931ae8f1eb5c843422cf6152b231395b7d
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59017648"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60492760"
 ---
 # <a name="get-telecomexpensemanagementpartner"></a>Получение объекта telecomExpenseManagementPartner
 
@@ -29,7 +29,7 @@ ms.locfileid: "59017648"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

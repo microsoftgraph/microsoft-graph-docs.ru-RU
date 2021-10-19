@@ -2,15 +2,15 @@
 title: Обновление userExperienceAnalyticsDeviceStartupProcessPerformance
 description: Обновление свойств объекта userExperienceAnalyticsDeviceStartupProcessPerformance.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2443a15980dac7d20f6dcbbb8a07510ae4f28f5a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a45f2f57017d2dafa86dd46519f31e222a0119e3
+ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59097182"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "60488967"
 ---
 # <a name="update-userexperienceanalyticsdevicestartupprocessperformance"></a>Обновление userExperienceAnalyticsDeviceStartupProcessPerformance
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceStartupProcessPerformance/{
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -60,6 +60,8 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceStartupProcessPerformance/{
 |deviceCount|Int64|Процесс запуска устройства аналитики пользовательских интерфейсов суммирован.|
 |medianImpactInMs|Int32|Медиана процесса запуска устройств для аналитики пользовательских интерфейсов в миллисекунд.|
 |totalImpactInMs|Int32|Процесс запуска устройства для аналитики пользовательских интерфейсов полностью влияет на миллисекунд.|
+|medianImpactInMs2|Int64|Медиана процесса запуска устройств для аналитики пользовательских интерфейсов в миллисекунд.|
+|totalImpactInMs2|Int64|Процесс запуска устройства для аналитики пользовательских интерфейсов полностью влияет на миллисекунд.|
 
 
 
@@ -73,7 +75,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceStartupProcessPerformance/{
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDeviceStartupProcessPerformance/{userExperienceAnalyticsDeviceStartupProcessPerformanceId}
 Content-type: application/json
-Content-length: 285
+Content-length: 338
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupProcessPerformance",
@@ -82,7 +84,9 @@ Content-length: 285
   "publisher": "Publisher value",
   "deviceCount": 11,
   "medianImpactInMs": 0,
-  "totalImpactInMs": 15
+  "totalImpactInMs": 15,
+  "medianImpactInMs2": 1,
+  "totalImpactInMs2": 0
 }
 ```
 
@@ -91,7 +95,7 @@ Content-length: 285
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 334
+Content-Length: 387
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupProcessPerformance",
@@ -101,7 +105,9 @@ Content-Length: 334
   "publisher": "Publisher value",
   "deviceCount": 11,
   "medianImpactInMs": 0,
-  "totalImpactInMs": 15
+  "totalImpactInMs": 15,
+  "medianImpactInMs2": 1,
+  "totalImpactInMs2": 0
 }
 ```
 
