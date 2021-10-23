@@ -1,11 +1,11 @@
 ---
 ms.localizationpriority: medium
-ms.openlocfilehash: a78f3a256688e54a6232bb79e2a5bb792ff3dc00
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 95e6218d0f21d81491652a0229d3272a6a61d243
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765324"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60562978"
 ---
 ### <a name="application-properties"></a>Свойства приложения
 
@@ -53,6 +53,7 @@ ms.locfileid: "59765324"
 | alternativeSecurityIds/any(a:a/type)             | ![Поддержка по умолчанию][RDS]               |                              | ![Требуются расширенные параметры запроса][AQP] | ![Требуются расширенные параметры запроса][AQP] | ![Не поддерживается][NS]                       |
 | approximateLastSignInDateTime                    | ![Поддержка по умолчанию][RDS]               |                              | ![Поддержка по умолчанию][RDS]               | ![Поддержка по умолчанию][RDS]               | ![Требуются расширенные параметры запроса][AQP] |
 | deviceId                                         | ![Поддержка по умолчанию][RDS]               |                              |                                            |                                            | ![Не поддерживается][NS]                       |
+| extensionAttributes/extensionAttribute1-15 | ![Требуются расширенные параметры запроса][AQP] | ![Требуются расширенные параметры запроса][AQP]         |                                            |                                            | ![Требуются расширенные параметры запроса][AQP]                       |
 | displayName                                      | ![Поддержка по умолчанию][RDS]               | ![Поддержка по умолчанию][RDS] |                                            |                                            | ![Требуются расширенные параметры запроса][AQP] |
 | isCompliant                                      | ![Поддержка по умолчанию][RDS]               |                              |                                            |                                            | ![Не поддерживается][NS]                       |
 | isManaged                                        | ![Поддержка по умолчанию][RDS]               |                              |                                            |                                            | ![Не поддерживается][NS]                       |
