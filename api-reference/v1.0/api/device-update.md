@@ -1,16 +1,16 @@
 ---
 title: Обновление устройства
 description: Обновление свойств зарегистрированного устройства.
-author: spunukol
+author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a053cd9f577e2676d5726a0294ff444b36889ad7
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 8392eb7acf846f21e0e60e750ca89c3e2af4962f
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60290227"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60558828"
 ---
 # <a name="update-device"></a>Обновление устройства
 
@@ -53,15 +53,18 @@ PATCH /devices/{id}
 |operatingSystem|String|Тип операционной системы на устройстве.|
 |operatingSystemVersion|String|Версия операционной системы на устройстве.|
 |displayName|Строка|Отображаемое имя устройства.|
-|isCompliant|Boolean|Используется значение `true`, если устройство соответствует требованиям политик управления мобильными устройствами (MDM). В противном случае используется значение `false`. Это может быть обновлено intune только для любого типа ОС устройства или утвержденного приложения [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows устройств ОС. |
-|isManaged|Boolean|Используется значение `true`, если устройство контролируется с помощью приложения для управления мобильными устройствами (MDM), например Intune. В противном случае используется значение `false`. Это может быть обновлено intune только для любого типа ОС устройства или утвержденного приложения [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows устройств ОС. |
+|isCompliant|Boolean|`true` если устройство соответствует политикам управления мобильными устройствами(MDM); в противном `false` случае . Это может быть обновлено intune только для любого типа ОС устройства или утвержденного приложения [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows устройств ОС. |
+|isManaged|Boolean|`true` если устройство управляется приложением управления мобильными устройствами (MDM); в противном `false` случае . Это может быть обновлено intune только для любого типа ОС устройства или утвержденного приложения [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows устройств ОС. |
 
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
-## <a name="example"></a>Пример
-### <a name="request"></a>Запрос
+## <a name="examples"></a>Примеры
+
+### <a name="example-1-update-the-accountenabled-property-of-a-device"></a>Пример 1. Обновление свойства accountEnabled устройства
+
+#### <a name="request"></a>Запрос
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -72,7 +75,6 @@ PATCH /devices/{id}
 ```http
 PATCH https://graph.microsoft.com/v1.0/devices/{id}
 Content-type: application/json
-Content-length: 31
 
 {
   "accountEnabled": false
@@ -96,7 +98,7 @@ Content-length: 31
 
 ---
 
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response"
@@ -104,6 +106,35 @@ Content-length: 31
 ```http
 HTTP/1.1 204 No Content
 ```
+
+### <a name="example-2--write-extensionattributes-on-a-device"></a>Пример 2. Напишите расширениеAttributes на устройстве
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "update_device_extensionAttributes"
+}-->
+```msgraph-interactive
+PATCH https://graph.microsoft.com/v1.0/devices/{id}
+Content-type: application/json
+
+{
+    "extensionAttributes": {
+        "extensionAttribute1": "BYOD-Device"
+    }
+}
+```
+
+#### <a name="response"></a>Отклик
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
 <!-- {

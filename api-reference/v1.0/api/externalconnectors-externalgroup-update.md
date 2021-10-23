@@ -5,12 +5,12 @@ author: sacampbe-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: f0a6f079adc463392475d743413210d980a4c6b5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8e2c51843f0558bea93b264edb4243456cc065fa
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022376"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60558562"
 ---
 # <a name="update-externalgroup"></a>Обновление externalGroup
 Пространство имен: microsoft.graph.externalConnectors
@@ -36,14 +36,14 @@ ms.locfileid: "59022376"
 }
 -->
 ``` http
-PATCH /connections/{connectionsId}/groups/{externalGroupId}
+PATCH /external/connections/{connectionsId}/groups/{externalGroupId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя          | Описание                 |
 |:--------------|:----------------------------|
-| Авторизация | Bearer {токен}. Обязательный.   |
+| Авторизация | Bearer {token}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,8 +51,8 @@ PATCH /connections/{connectionsId}/groups/{externalGroupId}
 
 | Свойство    | Тип   | Описание                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
-| displayName | Строка | Дружеское имя внешней группы. Необязательно.                                                                      |
-| description | String | Описание внешней группы. Необязательный параметр.                                                                         |
+| displayName | Строка | Дружеское имя внешней группы. Необязательный параметр.                                                                      |
+| description | Строка | Описание внешней группы. Необязательный параметр.                                                                         |
 
 
 
@@ -64,14 +64,14 @@ PATCH /connections/{connectionsId}/groups/{externalGroupId}
 
 ### <a name="request"></a>Запрос
 
-# <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_externalgroup"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/connections/{connectionsId}/groups/{externalGroupId}
+PATCH https://graph.microsoft.com/v1.0/external/connections/{connectionsId}/groups/{externalGroupId}
 Content-Type: application/json
 
 {
@@ -79,23 +79,6 @@ Content-Type: application/json
   "description": "The product marketing team"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-externalgroup-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-externalgroup-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-externalgroup-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-externalgroup-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 

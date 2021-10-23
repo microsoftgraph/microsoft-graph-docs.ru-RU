@@ -5,12 +5,12 @@ author: bhartono
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 81504dcacd2c18f072b55395922988779cf7dfea
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bbdca387db1251231fe54030b3954b6e83b3f28f
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59038386"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561614"
 ---
 # <a name="add-member-to-a-chat"></a>Добавление участника в чат
 
@@ -26,7 +26,7 @@ ms.locfileid: "59038386"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)| ChatMember.ReadWrite, Chat.ReadWrite |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| ChatMember.ReadWrite.All, Chat.ReadWrite.All |
+|Application| ChatMember.ReadWrite.All, Chat.ReadWrite.All |
 
 <!-- { "blockType": "ignored"} -->
 ```http
@@ -37,7 +37,7 @@ POST /chats/{chat-id}/members
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 |Content-Type|application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -222,6 +222,45 @@ content-type: application/json
  "blockType": "response",
   "truncated": true,
   "name": "create_conversation_member_with_all_visibleHistoryStartDateTime"
+}
+-->
+```http
+HTTP/1.1 201 Created
+Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiZDlkYTQ2MzIzYWY0MjUzOTZkMGZhNjcyMDAyODk4NEB0aHJlYWQudjIjIzQ4YmY5ZDUyLWRjYTctNGE1Zi04Mzk4LTM3Yjk1Y2M3YmQ4Mw==
+```
+
+### <a name="example-4-add-a-single-member-to-a-chat-using-user-principal-name"></a>Пример 4. Добавление одного участника в чат с использованием основного имени пользователя
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_conversation_member_upn"
+} -->
+```msgraph-interactive
+POST https://graph.microsoft.com/v1.0/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members
+content-type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "user@odata.bind": "https://graph.microsoft.com/v1.0/users/jacob@contoso.com",
+    "visibleHistoryStartDateTime": "2019-04-18T23:51:43.255Z",
+    "roles": ["owner"]
+}
+```
+
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+<!-- 
+{
+ "blockType": "response",
+  "truncated": true,
+  "name": "create_conversation_member_upn"
 }
 -->
 ```http

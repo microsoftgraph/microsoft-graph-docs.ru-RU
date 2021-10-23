@@ -5,12 +5,12 @@ author: sacampbe-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 92b381434c664942aba9eb1e78ed4da6c62e2fec
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 56ae5e53863e18146ec7eed101bd39d872916f07
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022561"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60559290"
 ---
 # <a name="create-externalgroup"></a>Создание externalGroup
 Пространство имен: microsoft.graph.externalConnectors
@@ -35,14 +35,14 @@ ms.locfileid: "59022561"
 }
 -->
 ``` http
-POST /connections/{connectionsId}/groups
+POST /external/connections/{connectionsId}/groups
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя          | Описание                 |
 |:--------------|:----------------------------|
-| Авторизация | Bearer {токен}. Обязательный.   |
+| Авторизация | Bearer {token}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -52,8 +52,8 @@ POST /connections/{connectionsId}/groups
 
 | Свойство    | Тип   | Описание                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
-| id          | String | Уникальный ID внешней группы в подключении. Он должен быть альфа-числом и может иметь длину до 128 символов. Обязательный. |
-| displayName | String | Дружеское имя внешней группы. Необязательно.                                                                      |
+| id          | Строка | Уникальный ID внешней группы в подключении. Он должен быть альфа-числом и может иметь длину до 128 символов. Обязательный. |
+| displayName | Строка | Дружеское имя внешней группы. Необязательный параметр.                                                                      |
 | description | Строка | Описание внешней группы. Необязательный параметр.                                                                         |
 
 

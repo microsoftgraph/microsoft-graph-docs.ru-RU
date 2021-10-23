@@ -5,12 +5,12 @@ author: jerrysai
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7ee03ae95f73fe334175749c0ad938c1a63aaa2a
-ms.sourcegitcommit: 94dc71a6d4fbdc46f2681a1add13416bc9b4a6e9
+ms.openlocfilehash: e468c12d83ed1fbebdf23a546373270415bf807b
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60115419"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561453"
 ---
 # <a name="update-continuousaccessevaluationpolicy"></a>Обновление continuousAccessEvaluationPolicy
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "60115419"
 |:--------------------------------------|:---------------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All, Policy.ReadWrite.ConditionalAccess и Application.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess и Application.Read.All |
+|Application                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess и Application.Read.All |
 
 > [!NOTE]
 > Этот API имеет [известные проблемы, связанные](/graph/known-issues#permissions) с разрешениями.  
@@ -44,7 +44,7 @@ PATCH /identity/continuousAccessEvaluationPolicy
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -52,10 +52,7 @@ PATCH /identity/continuousAccessEvaluationPolicy
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|groups|Коллекция строк|Коллекция идентификаторов групп в области для оценки. Все группы находятся в области, когда коллекция пуста.|
-|isEnabled|Boolean| `true` указать, следует ли проводить оценку непрерывного доступа; в противном `false` случае . |
-|users|Коллекция строк|Коллекция идентификаторов пользователей в области для оценки. Все пользователи находятся в области, когда коллекция пуста.|
-
+|перенос|Boolean| `true` чтобы указать, что параметры политики оценки непрерывного доступа должны быть или перенесены в политику условного доступа. |
 
 ## <a name="response"></a>Отклик
 
@@ -77,8 +74,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.continuousAccessEvaluationPolicy",
-  "users": [ "88139f01-1f8d-4c06-ad74-a2544cee9aee" ],
-  "groups": [ "9972fb3f-7a40-49f5-85f6-129d9dfbd47a", "ea178055-4713-4d9a-a06c-ff17466b7e77"]
+  "migrate": true
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

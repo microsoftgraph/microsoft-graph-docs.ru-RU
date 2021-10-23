@@ -5,12 +5,12 @@ author: sacampbe-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 0f56893f6234d00c09a82abc115f014b357ba973
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ba848acc414fbd797bac39662df69c779fe5a220
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046144"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561481"
 ---
 # <a name="delete-identity"></a>Удаление удостоверений
 Пространство имен: microsoft.graph.externalConnectors
@@ -34,14 +34,14 @@ ms.locfileid: "59046144"
 }
 -->
 ``` http
-DELETE /connections/{connectionId}/groups/{externalGroupId}/members/{identityId}
+DELETE /external/connections/{connectionId}/groups/{externalGroupId}/members/{identityId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 

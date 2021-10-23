@@ -2,15 +2,15 @@
 title: тип ресурса printConnector
 description: Представляет соединители печати, зарегистрированные с помощью подписки универсальной печати. Ресурс printConnector можно использовать для просмотра состояния соединитетеля и обновления свойств.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: c0d24ff6dca0a8866165b40f440ecc2e0d31c1f118d3d3e8a8a41dda96f6038d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: ab2f1718837c88af61e0e790acb2ad198cfded32
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54205285"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60560046"
 ---
 # <a name="printconnector-resource-type"></a>тип ресурса printConnector
 
@@ -23,6 +23,7 @@ ms.locfileid: "54205285"
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
+| [Перечисление соединителей](../api/print-list-connectors.md) | [printConnector](printconnector.md) | Извлечение списка соединитений печати. |
 | [Получение соединителя](../api/printconnector-get.md) | [printConnector](printconnector.md) | Ознакомьтесь с свойствами и отношениями объекта соединители. |
 | [Соединители обновления](../api/printconnector-update.md) | [printConnector](printconnector.md) | Обновление объекта соединители. |
 | [Удаление соединителя](../api/printconnector-delete.md) | Нет | Unregister the connector from the Universal Print service. |
@@ -31,10 +32,10 @@ ms.locfileid: "54205285"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String| Только для чтения.|
-|displayName|String|Имя соединитетеля.|
-|fullyQualifiedDomainName|String|Имя хост-имени соединители.|
+|displayName|Строка|Имя соединитетеля.|
+|fullyQualifiedDomainName|Строка|Имя хост-имени соединители.|
 |operatingSystem|String|Версия операционной системы соединитетеля.|
-|appVersion|String|Версия соединиттеля.|
+|appVersion|Строка|Версия соединиттеля.|
 |расположение|[printerLocation](printerlocation.md)|Физическое и/или организационное расположение соединитетеля.|
 |registeredDateTime|DateTimeOffset|DateTimeOffset при регистрации соединитетеля.|
 |registeredBy|[userIdentity](useridentity.md)|Пользователь, зарегистрировавший соединители.|

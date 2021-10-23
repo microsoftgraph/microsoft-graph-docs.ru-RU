@@ -1,16 +1,16 @@
 ---
 title: Получение устройства
 description: Получение свойств и связей объекта устройства.
-author: spunukol
+author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1131ef2551385df9588d9f8d5fadd2cab39ccd0e
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 1c37fbedb1ab4acdb6971c80f425c08563e0d64e
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60288729"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60559990"
 ---
 # <a name="get-device"></a>Вывод устройства
 
@@ -52,8 +52,11 @@ GET /devices/{id}
 ## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [device](../resources/device.md) в тексте отклика.
-## <a name="example"></a>Пример
-### <a name="request"></a>Запрос
+## <a name="examples"></a>Примеры
+
+### <a name="example-1-get-a-device"></a>Пример 1. Получить устройство
+
+#### <a name="request"></a>Запрос
 Ниже показан пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -83,9 +86,7 @@ GET https://graph.microsoft.com/beta/devices/000005c3-b7a6-4c61-89fc-80bf5ccfc36
 ---
 
 
-> **Примечание:** В `id` запросе находится свойство **id** устройства, а не **свойство deviceId.**
-
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 В следующем примере показан ответ на устройство без **имен hostNames.** 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
@@ -132,6 +133,55 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-2-get-a-device-and-return-only-its-id-and-extensionattributes-properties"></a>Пример 2. Получить устройство и вернуть только его свойства id и extensionAttributes
+
+#### <a name="request"></a>Запрос
+
+Следующий запрос извлекает **свойство id** и **extensionAttributes** устройства.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_device_select"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/devices/6a59ea83-02bd-468f-a40b-f2c3d1821983?$select=id,extensionAttributes
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.device"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#devices(id,extensionAttributes)/$entity",
+    "id": "6a59ea83-02bd-468f-a40b-f2c3d1821983",
+    "extensionAttributes": {
+        "extensionAttribute1": null,
+        "extensionAttribute2": null,
+        "extensionAttribute3": null,
+        "extensionAttribute4": null,
+        "extensionAttribute5": null,
+        "extensionAttribute6": null,
+        "extensionAttribute7": null,
+        "extensionAttribute8": null,
+        "extensionAttribute9": null,
+        "extensionAttribute10": null,
+        "extensionAttribute11": null,
+        "extensionAttribute12": null,
+        "extensionAttribute13": null,
+        "extensionAttribute14": null,
+        "extensionAttribute15": null
+    }
+}
+```
 
 ## <a name="see-also"></a>См. также
 

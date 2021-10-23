@@ -1,16 +1,16 @@
 ---
-title: Список cloudPcProvisioningPolicies
+title: Список provisioningPolicies
 description: Просмотр свойств и связей всех политик продюсинга облачных ПК.
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 511ac27c2493cd11afc02ccc927472ab21133d24
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 45b546c427e4e563804cd90f5f7a62dfffa7d4c1
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59763095"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60558926"
 ---
 # <a name="list-provisioningpolicies"></a>Список provisioningPolicies
 
@@ -28,7 +28,7 @@ ms.locfileid: "59763095"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,7 +49,7 @@ GET /deviceManagement/virtualEndpoint/provisioningPolicies
 
 | Имя          | Описание               |
 | :------------ | :------------------------ |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 

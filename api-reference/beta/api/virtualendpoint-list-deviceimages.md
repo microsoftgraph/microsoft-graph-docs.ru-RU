@@ -1,16 +1,16 @@
 ---
-title: Список cloudPcDeviceImages
+title: Список устройствImages
 description: Список свойств и связей изображений ОС, загруженных на облачный компьютер.
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 6f8ec3ee7638c5ba30d329c714fcc154c514dab1
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 808eb03245e63c665ee6e5fb22c3abf0424b095c
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507524"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60558933"
 ---
 # <a name="list-deviceimages"></a>Список устройствImages
 
@@ -28,7 +28,7 @@ ms.locfileid: "59507524"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,7 +49,7 @@ GET /deviceManagement/virtualEndpoint/deviceImages
 
 | Имя          | Описание               |
 | :------------ | :------------------------ |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 

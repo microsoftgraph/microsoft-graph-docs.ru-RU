@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 724319be29968d0cbd74e21ed3fcaae63772e9e8
-ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
+ms.openlocfilehash: 82d7cfa6a4e966c7264be12fe23893c9cce2a8ef
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "60084065"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60560109"
 ---
 # <a name="chat-resource-type"></a>Тип ресурса чата
 
@@ -36,12 +36,12 @@ ms.locfileid: "60084065"
 | **Сообщения** |||
 |[Список сообщений в чате](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Получать сообщения в чате. | 
 |[Получение сообщения в чате](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Получение одного сообщения в чате. | 
-|[Получать сообщения во всех чатах для пользователя](../api/chats-getallmessages.md)| [коллекция чатов](chat.md)| Получение сообщений из всех чатах, в которых пользователь является участником. |
+|[Получение сообщений во всех чатах для пользователя](../api/chats-getallmessages.md)| [коллекция чатов](chat.md)| Получение сообщений из всех чатах, в которых пользователь является участником. |
 | **Приложения** |||
 |[Список приложений в каталоге](../api/chat-list-installedapps.md) |[teamsAppInstallation](teamsappinstallation.md) collection | Список приложений, установленных в чате (и связанном собрании).|
 |[Получить приложение в чате](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Получите определенное приложение, установленное в чате (и связанное собрание).|
 |[Добавление приложения в чате](../api/chat-post-installedapps.md) | | Добавление (установка) приложения в чате (и связанное собрание).|
-|[Обновление приложения в чате](../api/chat-teamsappinstallation-upgrade.md) | Отсутствует | Обновление до последней версии приложения, установленного в чате (и связанного собрания).|
+|[Обновление приложения в чате](../api/chat-teamsappinstallation-upgrade.md) | Нет | Обновление до последней версии приложения, установленного в чате (и связанного собрания).|
 |[Удалить приложение из чата](../api/chat-delete-installedapps.md) | Нет | Удалить (удалить) приложение из чата (и связанного собрания).|
 | **Вкладки** |||
 |[Список вкладок в чате](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | Вкладки списка, закрепленные в чате (и связанное собрание).|
@@ -56,11 +56,12 @@ ms.locfileid: "60084065"
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-| id| String| Уникальный идентификатор чата. Только для чтения.|
-| topic| String|  (Необязательный) Тема или тема для чата. Доступно только для групповых чатов.|
+| chatType| [chatType](../resources/chat.md#chattype-values) | Указывает тип чата. Возможные значения: `group`, `oneOnOne`, `meeting`, `unknownFutureValue`.|
 | createdDateTime| dateTimeOffset|  Дата и время создания чата. Только для чтения.|
+| id| Строка| Уникальный идентификатор чата. Только для чтения.|
 | lastUpdatedDateTime| dateTimeOffset|  Дата и время переименования чата или списка участников были изменены в последний раз. Только для чтения.|
-| chatType| [chatType](../resources/chat.md#chattype-values) | Указывает тип чата. Возможные значения: `group` `oneOnOne` и `meeting` .|
+| topic| String|  (Необязательный) Тема или тема для чата. Доступно только для групповых чатов.|
+
 
 ### <a name="chattype-values"></a>значения chatType 
 
@@ -69,7 +70,7 @@ ms.locfileid: "60084065"
 |oneOnOne            | 0     | Указывает, что чат — это чат 1:1. Размер реестра фиксирован для этого типа чата; не могут быть удалены или добавлены.|
 |group;               | 1     | Указывает, что чат — это групповой чат. Размер реестра (не менее двух человек) может быть обновлен для этого типа чата. Участники могут быть удалены или добавлены позже.|
 |собрание             | 2     | Указывает, что чат связан с собранием в Интернете. Этот тип чата создается только в рамках создания собрания в Интернете.|
-|unknownFutureValue  | 3      | Значение Sentinel, чтобы указать будущие значения. |
+|unknownFutureValue  | 3     | Эволюционирующее значение sentinel. Не следует использовать. |
 
 ## <a name="relationships"></a>Связи
 

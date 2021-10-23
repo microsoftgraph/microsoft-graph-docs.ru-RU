@@ -5,12 +5,12 @@ author: sacampbe-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 20f58681555a94296c6f2bef184300ff2c1faa48
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e24af303d0b9195680a7bb59d68d979b1d24d944
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022516"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60560746"
 ---
 # <a name="get-externalgroup"></a>Get externalGroup
 Пространство имен: microsoft.graph.externalConnectors
@@ -36,14 +36,14 @@ ms.locfileid: "59022516"
 }
 -->
 ``` http
-GET /connections/{connectionsId}/groups/{externalGroupId}
+GET /external/connections/{connectionsId}/groups/{externalGroupId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

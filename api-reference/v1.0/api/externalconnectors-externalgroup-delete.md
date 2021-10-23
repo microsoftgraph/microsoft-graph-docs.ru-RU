@@ -5,12 +5,12 @@ author: sacampbe-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 155e90bab9da4d6f36276c735fd67c1f7f517ced
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c752088b299c082223a623ef0e1a96eeb07d9d36
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022538"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60558583"
 ---
 # <a name="delete-externalgroup"></a>Удаление externalGroup
 Пространство имен: microsoft.graph.externalConnectors
@@ -37,14 +37,14 @@ ms.locfileid: "59022538"
 }
 -->
 ``` http
-DELETE /connections/{connectionsId}/groups/{externalGroupId}
+DELETE /external/connections/{connectionsId}/groups/{externalGroupId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

@@ -1,23 +1,23 @@
 ---
 title: Создание термина
-description: Создание объекта термина.
+description: Создание нового объекта терминов.
 author: mohitpcad
-localization_priority: Normal
-ms.prod: Sharepoint
+ms.localizationpriority: medium
+ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 06d1d0179723a068108672f402c2b13f1680cf43
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: d91ad5dc9f813ff3e06ddfe5da99c61872b911bd
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874300"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60560753"
 ---
 # <a name="create-term"></a>Создание термина
 Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание объекта [термина.](../resources/termstore-term.md)
+Создание нового [объекта терминов.](../resources/termstore-term.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,23 +43,23 @@ POST /termStore/sets/{setId}/terms/{termId}/children
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
-В теле запроса укажу представление объекта термина в [JSON.](../resources/termstore-term.md)
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляют представление JSON объекта [термин.](../resources/termstore-term.md)
 
-В следующей таблице показаны свойства, необходимые при создании [термина.](../resources/termstore-term.md)
+В следующей таблице показаны свойства, необходимые при создании [термина](../resources/termstore-term.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|labels|[Коллекция microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md)|Метка созда создаемой термина|
+|метки|[коллекция microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md)|Метка для создаемой термины|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `201 Created` [термина](../resources/termstore-term.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `201 Created` [терминов](../resources/termstore-term.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -72,7 +72,7 @@ POST /termStore/sets/{setId}/terms/{termId}/children
 } -->
 
 ``` http
-POST https://graph.microsoft.com/beta/termStore/sets/{setId}/terms
+POST https://graph.microsoft.com/beta/termStore/sets/{setId}/children
 Content-Type: application/json
 Content-length: 366
 

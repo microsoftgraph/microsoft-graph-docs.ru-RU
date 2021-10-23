@@ -5,12 +5,12 @@ author: arvindmicrosoft
 ms.localizationpriority: high
 ms.prod: bookings
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 3caf87b95533088bb1d0968fbcad6050c54fa51d
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 4652765f9832ab36d11ff640743e4b0c2c996097
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256510"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60560732"
 ---
 # <a name="microsoft-bookings-api-overview-preview"></a>Обзор API Microsoft Bookings (предварительная версия)
 
@@ -35,7 +35,7 @@ Microsoft Bookings — это приложения для браузера и м
 ## <a name="api-reference"></a>Справочные материалы по API
 Ищете справочные материалы по API для этой службы?
 
-См. статью [API Microsoft Bookings в бета-версии Microsoft Graph](/graph/api/resources/booking-api-overviewa).
+См. статью [API Microsoft Bookings в бета-версии Microsoft Graph](/graph/api/resources/booking-api-overview).
 
 
 ## <a name="next-steps"></a>Дальнейшие действия

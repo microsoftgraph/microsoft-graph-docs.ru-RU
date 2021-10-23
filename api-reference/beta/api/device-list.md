@@ -1,16 +1,16 @@
 ---
 title: Список устройств
 description: 'Получение списка устройств, зарегистрированных в каталоге. '
-author: spunukol
+author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c8250a166f535d01c0bfe1de8518c6e0900c863b
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: a3a145b08a951a24d965d2a35295a30fe66e4ba4
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60290038"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60559934"
 ---
 # <a name="list-devices"></a>Список устройств
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/devices
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 > Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -153,7 +153,54 @@ Content-type: text/plain
 
 294
 
-### <a name="example-3-use-filter-and-top-to-get-one-device-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 3. Использование $filter и $top для получения одного устройства с именем отображения, которое начинается с "a", включая количество возвращенных объектов
+### <a name="example-3-list-all-devices-and-return-only-their-id-and-extensionattributes-properties"></a>Пример 3. Список всех устройств и возвращение только их свойств id и extensionAttributes
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "get_devices_select"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/devices?$select=id,extensionAttributes
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#devices(id,extensionAttributes)",
+    "value": [
+        {
+            "id": "6a59ea83-02bd-468f-a40b-f2c3d1821983",
+            "extensionAttributes": {
+                "extensionAttribute1": null,
+                "extensionAttribute2": null,
+                "extensionAttribute3": null,
+                "extensionAttribute4": null,
+                "extensionAttribute5": null,
+                "extensionAttribute6": null,
+                "extensionAttribute7": null,
+                "extensionAttribute8": null,
+                "extensionAttribute9": null,
+                "extensionAttribute10": null,
+                "extensionAttribute11": null,
+                "extensionAttribute12": null,
+                "extensionAttribute13": null,
+                "extensionAttribute14": null,
+                "extensionAttribute15": null
+            }
+        }
+    ]
+}
+```
+
+### <a name="example-4-use-filter-and-top-to-get-one-device-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 4. $filter и $top для получения одного устройства с именем отображения, которое начинается с "a", включая количество возвращенных объектов
 
 #### <a name="request"></a>Запрос
 
@@ -170,7 +217,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -211,7 +258,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-search-to-get-devices-with-display-names-that-contain-the-letters-android-including-a-count-of-returned-objects"></a>Пример 4. Использование $search для получения устройств с именами отображения, которые содержат буквы "Android", включая количество возвращенных объектов
+### <a name="example-5-use-search-to-get-devices-with-display-names-that-contain-the-letters-android-including-a-count-of-returned-objects"></a>Пример 5. Использование $search для получения устройств с именами отображения, которые содержат буквы "Android", включая количество возвращенных объектов
 
 #### <a name="request"></a>Запрос
 
@@ -229,7 +276,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -259,6 +306,76 @@ Content-type: application/json
   ]
 }
 ```
+
+### <a name="example-6-get-devices-using-filter-on-extensionattributes"></a>Пример 6. Получить устройства с помощью фильтра на extensionAttributes
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса. Для этого запроса требуется заглавная строка **ConsistencyLevel** и строка запроса, так как свойство extensionAttributes поддерживает только с расширенными `eventual` `$count=true` `$filter` параметрами запроса. Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
+
+<!-- {
+  "blockType": "request",
+  "name": "get_devices_by_extensionAttribute"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/devices?$filter=extensionAttributes/extensionAttribute1 eq 'BYOD-Device'&$count=true
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Отклик
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.device"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#devices",
+    "@odata.count": 1,
+    "value": [
+        {
+            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/6a59ea83-02bd-468f-a40b-f2c3d1821983/Microsoft.DirectoryServices.Device",
+            "id": "6a59ea83-02bd-468f-a40b-f2c3d1821983",
+            "accountEnabled": true,
+            "approximateLastSignInDateTime": "2021-10-21T06:36:56Z",
+            "createdDateTime": "2021-09-21T15:16:30Z",
+            "deviceId": "eab73519-780d-4d43-be6d-a4a89af2a348",
+            "displayName": "DESKTOP-LK3PESR",
+            "operatingSystem": "Windows",
+            "operatingSystemVersion": "10.0.19043.1237",
+            "alternativeSecurityIds": [
+                {
+                    "type": 2,
+                    "identityProvider": null,
+                    "key": "WAA1ADAAOQA6AD...ADQAMwB5AGEAcQBnAD0A"
+                }
+            ],
+            "extensionAttributes": {
+                "extensionAttribute1": "BYOD-Device",
+                "extensionAttribute2": null,
+                "extensionAttribute3": null,
+                "extensionAttribute4": null,
+                "extensionAttribute5": null,
+                "extensionAttribute6": null,
+                "extensionAttribute7": null,
+                "extensionAttribute8": null,
+                "extensionAttribute9": null,
+                "extensionAttribute10": null,
+                "extensionAttribute11": null,
+                "extensionAttribute12": null,
+                "extensionAttribute13": null,
+                "extensionAttribute14": null,
+                "extensionAttribute15": null
+            }
+        }
+    ]
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

@@ -1,16 +1,16 @@
 ---
 title: Обновление устройства
 description: Обновление свойств устройства.
-author: spunukol
+author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ea2ae211f9e9d40e15458c58b661ea9b48b2e99f
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 1933a98b41abca30409f698d8c0696e80c960992
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289177"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561523"
 ---
 # <a name="update-device"></a>Обновление устройства
 
@@ -62,9 +62,11 @@ PATCH /devices/{id}
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
-### <a name="request"></a>Запрос
+### <a name="example-1-update-the-accountenabled-property-of-a-device"></a>Пример 1. Обновление свойства accountEnabled устройства
+
+#### <a name="request"></a>Запрос
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -75,7 +77,6 @@ PATCH /devices/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/devices/{id}
 Content-type: application/json
-Content-length: 31
 
 {
   "accountEnabled": false
@@ -99,7 +100,35 @@ Content-length: 31
 
 ---
 
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-2--write-extensionattributes-on-a-device"></a>Пример 2. Напишите расширениеAttributes на устройстве
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "update_device_extensionAttributes"
+}-->
+```msgraph-interactive
+PATCH https://graph.microsoft.com/beta/devices/{id}
+Content-type: application/json
+
+{
+    "extensionAttributes": {
+        "extensionAttribute1": "BYOD-Device"
+    }
+}
+```
+
+#### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response"

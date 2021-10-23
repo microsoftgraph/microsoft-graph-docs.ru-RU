@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8620d6789afbe7dd960ff3ac6a1f6849e38d94a6
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: 7602f0011163d668618d0af3e6890c5308ab849f
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214778"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561530"
 ---
 # <a name="get-onlinemeeting"></a>Get onlineMeeting
 
@@ -20,10 +20,10 @@ ms.locfileid: "60214778"
 
 Например, вы можете:
 
-- Сведения о собрании в Интернете с помощью [VideoTeleconferenceId,](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid) [ID](#example-2-retrieve-an-online-meeting-by-meeting-id)собрания или [JoinWebURL.](#example-3-retrieve-an-online-meeting-by-joinweburl)
-- Используйте путь, чтобы получить отчет участника о событии в прямом эфире в виде ссылки на скачивание, как показано `/attendeeReport` [в примере 4](#example-4-fetch-attendee-report-of-a-live-event).
+- Сведения об онлайн-собрании с помощью [videoTeleconferenceId,](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid) [ID](#example-2-retrieve-an-online-meeting-by-meeting-id)собрания или [joinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
+- Используйте путь, чтобы получить отчет участника о событии Microsoft Teams в виде ссылки на скачивание, как показано `/attendeeReport` [в примере 4](#example-4-fetch-attendee-report-of-a-teams-live-event). [](/microsoftteams/teams-live-events/what-are-teams-live-events)
 
-Отчет о живом событии — это артефакт собрания в Интернете. Подробные сведения см. [в материале Online meeting artifacts and permissions.](/graph/cloud-communications-online-meeting-artifacts)
+Teams в прямом эфире — это артефакт собрания в Интернете. Подробные сведения см. [в материале Online meeting artifacts and permissions.](/graph/cloud-communications-online-meeting-artifacts)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -33,7 +33,7 @@ ms.locfileid: "60214778"
 |:---------------------------------------|:------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read, OnlineMeetings.ReadWrite         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                        |
-| Приложение                            | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
+| Application                            | OnlineMeetingArtifact.Read.All, OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 
 Чтобы использовать разрешение приложения для этого API, [](/graph/cloud-communication-online-meeting-application-access-policy) администраторы клиентов должны создать политику доступа к приложениям и предоставить ее пользователю для авторизации приложения, настроенного в политике, для получения онлайн-собраний и/или артефактов собраний в Интернете от имени этого пользователя (с пользовательским ИД, указанным в пути запроса).
 
@@ -61,7 +61,7 @@ GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ```
 
-Чтобы получить отчет участника о событии в прямом эфире с делегированием () и `/me` разрешением приложения `/users/{userId}` () :
+Чтобы получить отчет участника о событии Teams [с](/microsoftteams/teams-live-events/what-are-teams-live-events) делегированием () и разрешением приложения `/me` `/users/{userId}` () :
 <!-- { "blockType": "ignored" }-->
 
 ```http
@@ -82,7 +82,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Принять-Язык  | Язык. Необязательное. |
 
 Если запрос содержит `Accept-Language` HTTP-заголовок, то `content` из `joinInformation` будет указан на языке и языкового стандарта, указанного в заголовке `Accept-Language`. Контент по умолчанию будет на английском языке.
@@ -96,14 +96,14 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
 
 - Если вы извлекаете онлайн-собрание с помощью ИД, этот метод возвращает [объект onlineMeeting](../resources/onlinemeeting.md) в теле отклика.
 - Если вы извлекаете онлайн-собрание **с помощью videoTeleconferenceId** или **присоединяетесь кWebUrl,** этот метод возвращает коллекцию, которая содержит только один [объект onlineMeeting](../resources/onlinemeeting.md) в теле отклика.
-- Если вы извлеките отчет участника о событии в прямом эфире, этот метод возвращает заготку, которая указывает `Location` URI в отчет участника.
+- Если вы извлекли отчет участника о событии [Teams,](/microsoftteams/teams-live-events/what-are-teams-live-events)этот метод возвращает заготку, которая указывает `Location` URI на отчет участника.
 
 ## <a name="examples"></a>Примеры
 
 > [!NOTE]
 > Объекты ответа из следующих примеров были сокращены для читаемости. При фактическом вызове будут возвращены все свойства.
 
-### <a name="example-1-retrieve-an-online-meeting-by-videoteleconferenceid"></a>Пример 1. Извлечение собрания в Интернете с помощью VideoTeleconferenceId
+### <a name="example-1-retrieve-an-online-meeting-by-videoteleconferenceid"></a>Пример 1. Извлечение собрания в Интернете с помощью videoTeleconferenceId
 
 #### <a name="request"></a>Запрос
 Ниже показан пример запроса.
@@ -296,7 +296,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-retrieve-an-online-meeting-by-joinweburl"></a>Пример 3. Извлечение собрания в Интернете с помощью JoinWebUrl
+### <a name="example-3-retrieve-an-online-meeting-by-joinweburl"></a>Пример 3. Извлечение собрания в Интернете с помощью joinWebUrl
 Сведения о собраниях можно получить с помощью JoinWebUrl с помощью маркера пользователя или приложения. Этот параметр доступен для поддержки случаев использования, когда неизвестен ИД собрания, но используется JoinWebUrl, например, когда пользователь создает собрание (например, в клиенте Microsoft Teams), а отдельному приложению необходимо получить сведения о собрании в качестве последующего действия.
 
 #### <a name="request"></a>Запрос
@@ -362,7 +362,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-4-fetch-attendee-report-of-a-live-event"></a>Пример 4. Извлечение отчета участника о событии в прямом эфире
+### <a name="example-4-fetch-attendee-report-of-a-teams-live-event"></a>Пример 4. Извлечение отчета участника о Teams события в прямом эфире
 
 В следующем примере показан запрос на скачивание отчета об участниках.
 

@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 9b7e10be0d5fd0eb99170aee4d77ba9feda39a70
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 648b1aa8a119964f9600a6f1d6e2549fab7c07c5
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60448013"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60559610"
 ---
 # <a name="update-subjectrightsrequest"></a>Обновление subjectRightsRequest
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "60448013"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|SubjectRightsRequest.ReadWrite.All*|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается|
+|Application|Не поддерживается|
 
 >[!IMPORTANT]
 >Разрешения, отмеченные звездочкой (*), в настоящее время недоступны. Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues#compliance).
@@ -55,8 +55,8 @@ PATCH /privacy/subjectRightsRequests/{subjectRightsRequestId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |assignedTo|[microsoft.graph.identity](../resources/identity.md)|Сведения о удостоверениях пользователя, на который назначен запрос.|
-|description|String|Обновленное описание запроса.|
-|displayName|String|Обновленное имя запроса.|
+|description|Строка|Обновленное описание запроса.|
+|displayName|Строка|Обновленное имя запроса.|
 |internalDueDateTime|DateTimeOffset|Обновлена внутренняя дата задатки запроса.|
 
 ## <a name="response"></a>Отклик
@@ -66,6 +66,8 @@ PATCH /privacy/subjectRightsRequests/{subjectRightsRequestId}
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_subjectRightsRequest"
@@ -81,6 +83,24 @@ Content-length: 837
   "internalDueDateTime": "2021-08-30T00:00:00Z"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-subjectrightsrequest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-subjectrightsrequest-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-subjectrightsrequest-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-subjectrightsrequest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.

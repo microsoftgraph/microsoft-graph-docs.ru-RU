@@ -2,15 +2,15 @@
 title: Тип ресурса чата
 description: Чат — это коллекция chatMessages между одним или более участниками.
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 50b6d517775e4ef956211882fd58baefc7f5b78d
-ms.sourcegitcommit: 0adbbcbc65b6acab80e9195f13321055994f56be
+ms.openlocfilehash: 7d572051d0889add7f68cc868d410bf3dc702d65
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53236178"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60560816"
 ---
 # <a name="chat-resource-type"></a>Тип ресурса чата
 
@@ -39,20 +39,20 @@ ms.locfileid: "53236178"
 | **Сообщения** |||
 |[Список сообщений в чате](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Получать сообщения в чате. | 
 |[Получение сообщения в чате](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Получение одного сообщения в чате. | 
-|[Получать сообщения во всех чатах для пользователя](../api/chats-getallmessages.md)| [коллекция чатов](chat.md)| Получение сообщений из всех чатах, в которых пользователь является участником. |
+|[Получение сообщений во всех чатах для пользователя](../api/chats-getallmessages.md)| [коллекция чатов](chat.md)| Получение сообщений из всех чатах, в которых пользователь является участником. |
 | **Приложения** |||
 |[Список приложений в каталоге](../api/chat-list-installedapps.md) |[teamsAppInstallation](teamsappinstallation.md) collection | Список приложений, установленных в чате (и связанном собрании).|
 |[Получить приложение в чате](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Получите определенное приложение, установленное в чате (и связанное собрание).|
 |[Добавление приложения в чате](../api/chat-post-installedapps.md) | | Добавление (установка) приложения в чате (и связанное собрание).|
-|[Обновление приложения в чате](../api/chat-teamsappinstallation-upgrade.md) | Нет. | Обновление до последней версии приложения, установленного в чате (и связанного собрания).|
-|[Удалить приложение из чата](../api/chat-delete-installedapps.md) | Нет. | Удалить (удалить) приложение из чата (и связанного собрания).|
+|[Обновление приложения в чате](../api/chat-teamsappinstallation-upgrade.md) | Нет | Обновление до последней версии приложения, установленного в чате (и связанного собрания).|
+|[Удалить приложение из чата](../api/chat-delete-installedapps.md) | Нет | Удалить (удалить) приложение из чата (и связанного собрания).|
 |[Перечисление предоставленных разрешений](../api/chat-list-permissiongrants.md) | Коллекция [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) | Список разрешений, предоставленных приложениям в этом чате.|
-| **Tabs** |||
+| **Вкладки** |||
 |[Список вкладок в чате](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | Вкладки списка, закрепленные в чате (и связанное собрание).|
 |[Получить вкладку в чате](../api/chat-get-tabs.md) | [teamsTab](teamstab.md) | Получите определенную вкладку, закрепленную в чате (и связанное собрание).|
 |[Добавление вкладки в чат](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | Добавьте (пин-код) вкладку в чат (и связанное собрание).|
 |[Обновление вкладки в чате](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | Обновление свойств вкладки в чате (и связанное собрание).|
-|[Удаление вкладки из чата](../api/chat-delete-tabs.md) | Нет. | Удалите (открепите) вкладку из чата (и связанного собрания).|
+|[Удаление вкладки из чата](../api/chat-delete-tabs.md) | Нет | Удалите (открепите) вкладку из чата (и связанного собрания).|
 | **Operations** |||
 |[Список операций в чате](../api/chat-list-operations.md) | Коллекция [teamsAsyncOperation](teamsAsyncOperation.md) | Получите список операций async, запущенных или запущенных в чате.|
 |[Работа в чате](../api/teamsasyncoperation-get.md#example-get-operation-on-chat) | [teamsAsyncOperation](teamsAsyncOperation.md) | Получите одну операцию async, которая запущена или запущена в чате.|
@@ -63,22 +63,25 @@ ms.locfileid: "53236178"
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-| id| String| Уникальный идентификатор чата. Только для чтения.|
-| topic| String|  (Необязательный) Тема или тема для чата. Доступно только для групповых чатов.|
+| chatType| [chatType](../resources/chat.md#chattype-values) | Указывает тип чата. Возможные значения: `group`, `oneOnOne`, `meeting`, `unknownFutureValue`.|
 | createdDateTime| dateTimeOffset|  Дата и время создания чата. Только для чтения.|
+| id| Строка| Уникальный идентификатор чата. Только для чтения.|
 | lastUpdatedDateTime| dateTimeOffset|  Дата и время переименования чата или списка участников были изменены в последний раз. Только для чтения.|
-| chatType| [chatType](../resources/chat.md#chattype-values) | Указывает тип чата. Возможные значения: `group` `oneOnOne` и `meeting` .|
+| onlineMeetingInfo | [teamworkOnlineMeetingInfo](../resources/teamworkonlinemeetinginfo.md) | Представляет сведения о собрании в Интернете. Если чат не связан с собранием в Интернете, свойство пусто. Только для чтения.|
+| tenantId| String | Идентификатор клиента, в котором был создан чат. Только для чтения.|
+| topic| String|  (Необязательный) Тема или тема для чата. Доступно только для групповых чатов.|
 | точки зрения|[chatViewpoint](../resources/chatviewpoint.md)|Представляет сведения о чате, например дату и время чтения последнего сообщения. Это свойство заполняется только тогда, когда запрос выполнен в делегированном контексте.|
 | webUrl| String | Гиперссылка, которая будет переходить в чат в Microsoft Teams. Этот URL-адрес должен обрабатываться как непрозрачный BLOB-объект и не должен анализироваться. Только для чтения.|
+
 
 ### <a name="chattype-values"></a>значения chatType 
 
 | Элемент             | Значение | Описание               |
 | :----------------- | :---- | :------------------------ |
 |oneOnOne            | 0     | Указывает, что чат — это чат 1:1. Размер реестра фиксирован для этого типа чата; не могут быть удалены или добавлены.|
-|group               | 1      | Указывает, что чат — это групповой чат. Размер реестра (не менее двух человек) может быть обновлен для этого типа чата. Участники могут быть удалены или добавлены позже.|
-|собрание             | 2      | Указывает, что чат связан с собранием в Интернете. Этот тип чата создается только в рамках создания собрания в Интернете.|
-|unknownFutureValue  | 3      | Значение Sentinel, чтобы указать будущие значения. |
+|group;               | 1     | Указывает, что чат — это групповой чат. Размер реестра (не менее двух человек) может быть обновлен для этого типа чата. Участники могут быть удалены или добавлены позже.|
+|собрание             | 2     | Указывает, что чат связан с собранием в Интернете. Этот тип чата создается только в рамках создания собрания в Интернете.|
+|unknownFutureValue  | 3     | Эволюционирующее значение sentinel. Не следует использовать. |
 
 ## <a name="relationships"></a>Связи
 
@@ -107,11 +110,15 @@ ms.locfileid: "53236178"
   "topic": "string",
   "createdDateTime": "dateTimeOffset",
   "lastUpdatedDateTime": "dateTimeOffset",
-  "chatType": "String",
-  "chatViewpoint": {
+  "chatType": "string",
+  "webUrl": "string",
+  "tenantId": "string",
+  "viewpoint": {
     "@odata.type": "microsoft.graph.chatViewpoint"
   },
-  "webUrl": "string"
+  "onlineMeetingInfo": {
+    "@odata.type": "microsoft.graph.teamworkOnlineMeetingInfo"
+  }
 }
 ```
 

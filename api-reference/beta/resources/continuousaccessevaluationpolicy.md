@@ -2,15 +2,15 @@
 title: тип ресурса continuousAccessEvaluationPolicy
 description: Непрерывная оценка доступа (CAE) помогает в управлении сеансами проверки подлинности в режиме реального времени. CaE позволяет клиентам обрабатывать доступ к ресурсам, поддерживая события мгновенного отзыва.
 author: jerrysai
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: f34fdacf75b991ff339f4b7cdd823290438e8fea
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 299bafe33e4820504180fe64470461d2198b3c13
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962642"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60559059"
 ---
 # <a name="continuousaccessevaluationpolicy-resource-type"></a>тип ресурса continuousAccessEvaluationPolicy
 
@@ -31,11 +31,11 @@ ms.locfileid: "50962642"
 |:---|:---|:---|
 |description|Строка|Непрерывная оценка доступа автоматически блокирует доступ к ресурсам и приложениям в режиме реального времени при удалении доступа пользователя или изменениях IP-адресов клиента. Только для чтения.|
 |displayName|Строка| Значение всегда `Continuous Access Evaluation` . Только для чтения.|
-|groups|Коллекция строк|Коллекция идентификаторов групп в области для оценки. Все группы находятся в области, когда коллекция пуста.|
+|groups|Коллекция строк|Коллекция идентификаторов групп в области для оценки. Все группы находятся в области, когда коллекция пуста. Только для чтения.|
 |id|Строка|Указывает идентификатор объекта [continuousAccessEvaluationPolicy.](#continuousaccessevaluationpolicy-resource-type) Только для чтения.|
-|isEnabled|Boolean| `true` указать, следует ли проводить оценку непрерывного доступа; в противном `false` случае . |
-|users|Коллекция строк|Коллекция идентификаторов пользователей в области для оценки. Все пользователи находятся в области, когда коллекция пуста.|
-
+|isEnabled|Boolean| `true` указать, следует ли проводить оценку непрерывного доступа; в противном `false` случае . Только для чтения.|
+|users|Коллекция строк|Коллекция идентификаторов пользователей в области для оценки. Все пользователи находятся в области, когда коллекция пуста. Только для чтения.|
+|перенос|Boolean| `true` чтобы указать, что параметры политики оценки непрерывного доступа должны быть или перенесены в политику условного доступа. |
 ## <a name="relationships"></a>Связи
 Отсутствуют.
 
@@ -61,6 +61,7 @@ ms.locfileid: "50962642"
   ],
   "groups": [
     "String"
-  ]
+  ],
+  "migrate": "Boolean"
 }
 ```

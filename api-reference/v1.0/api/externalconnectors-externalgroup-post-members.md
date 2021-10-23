@@ -5,12 +5,12 @@ author: sacampbe
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 4a12116f6f37f46665ab214af45b84db5d6affd1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ab13c0cf77a4b6416d574e109dbb579caa40c639
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022650"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561271"
 ---
 # <a name="create-identity"></a>Создание удостоверений
 Пространство имен: microsoft.graph.externalConnectors
@@ -36,14 +36,14 @@ ms.locfileid: "59022650"
 }
 -->
 ``` http
-POST /connections/{connectionsId}/groups/{externalGroupId}/members
+POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя          | Описание                 |
 |:--------------|:----------------------------|
-| Авторизация | Bearer {токен}. Обязательный.   |
+| Авторизация | Bearer {token}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,7 +54,7 @@ POST /connections/{connectionsId}/groups/{externalGroupId}/members
 
 | Свойство       | Тип                    | Описание                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| id             | String                  | Уникальный `id` член. Это будет **objectId** в случае Azure Active Directory пользователей или групп и **externalGroupId** в случае внешних групп. Обязательное.                                    |
+| id             | Строка                  | Уникальный `id` член. Это будет **objectId** в случае Azure Active Directory пользователей или групп и **externalGroupId** в случае внешних групп. Обязательное.                                    |
 | type           | microsoft.graph.externalConnectors.identityType | Тип участника, добавленного во внешнюю группу. Возможные значения: `user` , `group` , `externalGroup` . Обязательный. |
 
 

@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: c6c68c73e1a96f4c0ff949100f29081e70452adf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c983947208ea02f4af0f395c3e294acedc894b89
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029600"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60558553"
 ---
 # <a name="get-externalitem"></a>Get externalItem
 Пространство имен: microsoft.graph.externalConnectors
@@ -26,7 +26,7 @@ ms.locfileid: "59029600"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Неприменимо|
 |Делегированные (личная учетная запись Майкрософт)|Неприменимо|
-|Для приложений| ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+|Application| ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -35,7 +35,7 @@ ms.locfileid: "59029600"
 }
 -->
 ``` http
-GET /connections/{connectionsId}/items/{externalItemId}
+GET /external/connections/{connectionsId}/items/{externalItemId}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -44,7 +44,7 @@ GET /connections/{connectionsId}/items/{externalItemId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -59,7 +59,7 @@ GET /connections/{connectionsId}/items/{externalItemId}
 Ниже приведен пример запроса.
 
 ```http
-GET https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938
+GET https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228082938
 ```
 
 

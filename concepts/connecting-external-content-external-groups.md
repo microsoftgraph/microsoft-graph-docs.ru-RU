@@ -5,12 +5,12 @@ author: mecampos
 doc_type: conceptualPageType
 ms.prod: search
 ms.localizationpriority: medium
-ms.openlocfilehash: 5a4da4e8dbe61f73f2806cc2f9e2bc41b18ac1f7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 779c25cf4ccb1c56195cefb6e8476cc38e6d91c2
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139319"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561460"
 ---
 # <a name="use-external-groups-to-manage-permissions-to-microsoft-graph-connector-data-sources"></a>Использование внешних групп для управления разрешениями для источников данных Graph соединители Microsoft
 
@@ -55,7 +55,7 @@ Salesforce использует профили, роли и наборы раз�
     > [DisplayName и](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true) **описание являются** необязательными полями.
 
     ```http
-    POST /connections/{connectionId}/groups
+    POST /external/connections/{connectionId}/groups
 
     { 
       "id": "contosoEscalations", 
@@ -77,7 +77,7 @@ Salesforce использует профили, роли и наборы раз�
 После создания группы можно добавить членов в группу, как показано в следующих примерах.
 
 ```http
-POST https://graph.microsoft.com/beta/connections/{connectionId}/groups/{groupId}/members
+POST https://graph.microsoft.com/beta/external/connections/{connectionId}/groups/{groupId}/members
 
 {
   "id": "contosoSupport",
@@ -86,7 +86,7 @@ POST https://graph.microsoft.com/beta/connections/{connectionId}/groups/{groupId
 }
 ```
 ```http
-POST https://graph.microsoft.com/beta/connections/{connectionId}/groups/{groupId}/members
+POST https://graph.microsoft.com/beta/external/connections/{connectionId}/groups/{groupId}/members
 
 {
   "id": "25f143de-be82-4afb-8a57-e032b9315752",
@@ -95,7 +95,7 @@ POST https://graph.microsoft.com/beta/connections/{connectionId}/groups/{groupId
 }
 ```
 ```http
-POST https://graph.microsoft.com/beta/connections/{connectionId}/groups/{groupId}/members
+POST https://graph.microsoft.com/beta/external/connections/{connectionId}/groups/{groupId}/members
 
 {
   "id": "99a3b3d6-71ee-4d21-b08b-4b6f22e3ae4b",

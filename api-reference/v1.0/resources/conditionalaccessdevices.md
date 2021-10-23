@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sandeo
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 8da01cf7a0fbaf1af41550d7b334099a9d34b3e5
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 419a9b92626fb3c3693f5974119d677ef50d5b26
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60488855"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561754"
 ---
 # <a name="conditionalaccessdevices-resource-type"></a>тип ресурса conditionalAccessDevices
 
@@ -22,7 +22,7 @@ ms.locfileid: "60488855"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| deviceFilter | [conditionalAccessFilter](conditionalaccessfilter.md) | Фильтр определяет правило динамического устройства-синтаксиса для включаемого или исключаемого устройства. Фильтр может использовать свойства устройств (например, атрибуты расширения), чтобы включить или исключить их. |
+| deviceFilter | [conditionalAccessFilter](conditionalaccessfilter.md) | Фильтр, определяющее правило динамического устройства и синтаксиса для включаемых и исключаемых устройств. Фильтр может использовать свойства устройств (например, атрибуты расширения), чтобы включить или исключить их. |
 
 ## <a name="relationships"></a>Связи
 

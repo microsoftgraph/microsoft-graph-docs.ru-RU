@@ -3,14 +3,14 @@ title: Добавление участника в канал
 description: Добавление участника в канал.
 author: akjo
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: d4276eea6e094f43b10a1c392b57ac14cd310cc1
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: bc5730037eab22977aa59f410d0a8822f98fe296
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059931"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60559563"
 ---
 # <a name="add-member-to-channel"></a>Добавление участника в канал
 
@@ -28,7 +28,7 @@ ms.locfileid: "53059931"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)| ChannelMember.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| ChannelMember.ReadWrite.All |
+|Application| ChannelMember.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored"} -->
@@ -40,7 +40,7 @@ POST /teams/{team-id}/channels/{channel-id}/members
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -50,7 +50,7 @@ POST /teams/{team-id}/channels/{channel-id}/members
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
 |roles|Коллекция строк|Роль пользователя. Должно быть `owner` или пусто.|
-|пользователь;|[user](../resources/user.md)|Пользователь, который должен добавить в канал.|
+|пользователь|[user](../resources/user.md)|Пользователь, который должен добавить в канал.|
 
 ## <a name="response"></a>Отклик
 
@@ -186,6 +186,52 @@ Content-length: 468
   "displayName": "John Doe",
   "userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
   "email": null
+}
+```
+
+### <a name="example-3-add-a-member-to-a-channel-using-user-principal-name"></a>Пример 3. Добавление участника в канал с использованием основного имени пользователя
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "channel_add_member_3"
+} -->
+```http
+POST https://graph.microsoft.com/beta/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/channels/19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype/members
+Content-type: application/json
+Content-length: 100
+
+{
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "roles": ["owner"],
+    "user@odata.bind": "https://graph.microsoft.com/beta/users('jacob@contoso.com')"
+}
+```
+
+
+#### <a name="response"></a>Отклик
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.conversationMember"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 468
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",
+  "@odata.type": "#microsoft.graph.aadUserConversationMember",
+  "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
+  "roles": [],
+  "displayName": "Jacob Hancock",
+  "userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
+  "email": "jacob@contoso.com"
 }
 ```
 
