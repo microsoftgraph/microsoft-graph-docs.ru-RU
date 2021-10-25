@@ -5,12 +5,12 @@ author: anandjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 89d5808c0e31065eecc9a511cc23cb560afee11e
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 6935e5497b5ab28a2808dcd90e6b6fcc3c2171c2
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289289"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60559689"
 ---
 # <a name="create-team"></a>Создание команды
 
@@ -631,6 +631,52 @@ Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 
 * Для **createdDateTime** установлено значение в будущем.
 * Параметр **createdDateTime** указан правильно, но отсутствует атрибут экземпляра **teamCreationMode** или ему присвоено недопустимое значение.
+
+### <a name="example-9-application-permissions-using-user-principal-name"></a>Пример 9. Разрешения приложений с использованием имени субъекта-пользователя
+
+Ниже приведен пример минимального запроса с использованием разрешений для приложения. Исключив другие свойства, клиент неявно принимает значения по умолчанию из готового шаблона, представленного объектом `template`. При отправке запроса с разрешениями для приложения ресурс [user](../resources/user.md) должен быть указан в коллекции `members`.
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "create_team_post_upn"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/teams
+Content-Type: application/json
+
+{
+   "template@odata.bind":"https://graph.microsoft.com/beta/teamsTemplates('standard')",
+   "displayName":"My Sample Team",
+   "description":"My Sample Team’s Description",
+   "members":[
+      {
+         "@odata.type":"#microsoft.graph.aadUserConversationMember",
+         "roles":[
+            "owner"
+         ],
+         "user@odata.bind":"https://graph.microsoft.com/beta/users('jacob@contoso.com')"
+      }
+   ]
+}
+```
+
+
+#### <a name="response"></a>Отклик
+<!-- {
+  "blockType": "response",
+  "name": "create_team_post_upn"
+}-->
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')/operations('3a6fdce1-c261-48bc-89de-1cfef658c0d5')
+Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
+Content-Length: 0
+```
 
 
 ## <a name="see-also"></a>См. также

@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: c86c75de4ebf966e1fec02184af35aa4c12d4da7
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: 2049332c4eb5f82cf44d3cde3fad71f02bd9049a
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59996053"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60561467"
 ---
 # <a name="use-postman-with-the-microsoft-graph-connectors-api"></a>Использование Postman с API соединителей Microsoft Graph
 
@@ -311,7 +311,7 @@ Content-Type: application/json
 Ниже приведен пример запроса.
 
 ```http
-PUT https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938 
+PUT https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228082938 
 Content-type: application/json 
 
 { 

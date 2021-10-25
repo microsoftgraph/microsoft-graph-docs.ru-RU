@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9740cb4db3e65602d0041dc9c43c14430c9c88ae
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9c8e862ae28a07046419f582550ba7008a7cf112
+ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109992"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "60559052"
 ---
 # <a name="add-member-to-team"></a>Добавление участника в группу
 Пространство имен: microsoft.graph
@@ -42,7 +42,7 @@ POST /teams/{team-id}/members
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -56,7 +56,9 @@ POST /teams/{team-id}/members
 
 ## <a name="examples"></a>Примеры
 
-### <a name="request"></a>Запрос
+### <a name="example-1-add-a-member-to-a-team"></a>Пример 1. Добавление участника в команду
+
+#### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -93,7 +95,7 @@ Content-length: 100
 
 ---
 
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- 
@@ -119,6 +121,53 @@ Content-type: application/json
     "email": "CameronW@M365x987948.OnMicrosoft.com"
 }
 ```
+
+### <a name="example-2-add-a-member-to-a-team-using-user-principal-name"></a>Пример 2. Добавление участника в команду с использованием имени субъекта-пользователя
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "create_conversationmember_upn"
+}
+-->
+``` http
+POST https://graph.microsoft.com/v1.0/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members
+Content-type: application/json
+Content-length: 100
+
+{
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "roles": ["owner"],
+    "user@odata.bind": "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"
+}
+```
+
+
+### <a name="response"></a>Отклик
+**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.conversationMember"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
+    "roles": [
+        "owner"
+    ],
+    "userId": "50dffbae-ad0f-428e-a86f-f53b0acfc641",
+    "displayName": "Jacob Hancock",
+    "email": "jacob@contoso.com"
+}
+```
+
 ## <a name="see-also"></a>См. также
 
 - [Создание участника в канале](channel-post-members.md)
