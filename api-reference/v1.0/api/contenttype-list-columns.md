@@ -5,12 +5,12 @@ description: Список столбцов в типе контента.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: be0bea04a422ea4365ed1d0dbd7c15a7f73e33f3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ff7077a25290db304707ad0082d210fc98543dc0
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59038259"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729796"
 ---
 # <a name="list-columndefinitions-in-a-content-type"></a>Список columnDefinitions в типе контента
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "59038259"
 
   
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions_reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
   
 
@@ -55,7 +55,7 @@ GET /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

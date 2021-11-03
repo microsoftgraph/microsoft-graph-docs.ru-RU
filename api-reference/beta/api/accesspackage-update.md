@@ -2,15 +2,15 @@
 title: Обновление accessPackage
 description: Обновление свойств объекта accessPackage.
 author: markwahl-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 40f299edcca636a6f2041a36e10b0dc3963d8422
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 6f777520a9896760ba263dc12ff7a4c2b1631132
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439767"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729733"
 ---
 # <a name="update-accesspackage"></a>Обновление accessPackage
 
@@ -21,13 +21,13 @@ ms.locfileid: "50439767"
 Обновим [существующий объект accessPackage,](../resources/accesspackage.md) чтобы изменить одно или несколько его свойств, например имя или описание отображения.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение                            | EntitlementManagement.ReadWrite.All |
+|Для приложений                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -40,10 +40,10 @@ PATCH /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В теле запроса поставляем представление JSON параметров [объекта accessPackage.](../resources/accesspackage.md)
 
 В следующей таблице показаны свойства, которые можно получить при обновлении [accessPackage.](../resources/accesspackage.md)

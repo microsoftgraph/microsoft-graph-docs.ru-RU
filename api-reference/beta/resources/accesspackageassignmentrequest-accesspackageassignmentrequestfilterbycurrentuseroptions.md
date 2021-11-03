@@ -1,16 +1,16 @@
 ---
 title: accessPackageAssignmentRequestFilterByCurrentUserOptions enum type
 description: Параметры, которые текущий пользователь использует в качестве фильтра в списке запросов на назначение пакета доступа.
-localization_priority: Normal
-author: sbounouh
+ms.localizationpriority: medium
+author: markwahl-msft
 ms.prod: governance
 doc_type: enumPageType
-ms.openlocfilehash: 2879e0cd775f53cfe2cce23edbd30a387c23a88a
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: dd0e3860d3790e7ee2a082028a91f0750363d062
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299652"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729320"
 ---
 # <a name="accesspackageassignmentrequestfilterbycurrentuseroptions-enum-type"></a>accessPackageAssignmentRequestFilterByCurrentUserOptions enum type
 

@@ -2,15 +2,15 @@
 title: Обновление accessPackageAssignmentPolicy
 description: Обновление свойств объекта accessPackageAssignmentPolicy.
 author: markwahl-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 36de78af3061a489a2cc8027c18185d302c62ba5
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 7d89271a0c925703c2b503e20aafc867f0c89a18
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53466949"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729698"
 ---
 # <a name="update-accesspackageassignmentpolicy"></a>Обновление accessPackageAssignmentPolicy
 
@@ -21,13 +21,13 @@ ms.locfileid: "53466949"
 Обнови [существующий объект accessPackageAssignmentPolicy,](../resources/accesspackageassignmentpolicy.md) чтобы изменить одно или несколько его свойств, например имя или описание отображения.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение                            | EntitlementManagement.ReadWrite.All |
+|Для приложений                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -40,10 +40,10 @@ PUT /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{a
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В теле запроса поставляем представление JSON объекта [accessPackageAssignmentPolicy.](../resources/accesspackageassignmentpolicy.md)
 
 В следующей таблице показаны свойства, необходимые при обновлении [accessPackageAssignmentPolicy.](../resources/accesspackageassignmentpolicy.md)
@@ -52,7 +52,7 @@ PUT /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{a
 |:---|:---|:---|
 |displayName|String|Отображает имя политики.|
 |description|String|Описание политики.|
-|canExtend|Логический|Указывает, может ли пользователь продлить срок назначения пакета доступа после утверждения.|
+|canExtend|Boolean|Указывает, может ли пользователь продлить срок назначения пакета доступа после утверждения.|
 |durationInDays|Int32|Количество дней, в течение которых назначения из этой политики будут выполняться до истечения срока их действия.|
 |expirationDateTime|DateTimeOffset|Срок действия для назначений, созданных в этой политике. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |requestorSettings|[requestorSettings](../resources/requestorsettings.md)|Кто этот пакет доступа можно запросить в этой политике.|

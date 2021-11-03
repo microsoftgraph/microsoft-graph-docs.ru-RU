@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса утверждения
 description: Объект утверждения, связанный с accessPackageAssignmentRequest или userConsentRequest.
-localization_priority: Normal
-author: sbounouh
+ms.localizationpriority: medium
+author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 07990837a8774f512371fc5b09c400826321abd9
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: e9c459563fa776427dfebcc6c6063b9bda1da846
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454075"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730391"
 ---
 # <a name="approval-resource-type"></a>Тип ресурса утверждения
 
@@ -37,13 +37,13 @@ ms.locfileid: "58454075"
 |id|String|Идентификатор объекта утверждения.  В управлении правами это тот же идентификатор, что и идентификатор запроса на назначение пакета [доступа.](accesspackageassignmentrequest.md)|
 |действия|[коллекция approvalStep](../resources/approvalstep.md)|Используется для представления решения, связанного с одним шагом в процессе утверждения, настроенного в [approvalStage.](../resources/approvalstage.md)|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |stages|[коллекция approvalStage](../resources/approvalstage.md)|Используется для **свойства approvalStages** параметров утверждения в свойстве **requestApprovalSettings** политики назначения [пакета доступа.](accesspackageassignmentpolicy.md) Указывает основные, откаты и утверждения эскалации на каждом этапе.|
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

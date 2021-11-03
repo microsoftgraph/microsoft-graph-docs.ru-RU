@@ -1,16 +1,16 @@
 ---
 title: 'accessPackageAssignmentRequest: отмена'
 description: Отмена объектов accessPackageAssignmentRequest, которые находятся в состоянии отменяемого.
-localization_priority: Normal
-author: sbounouh
+ms.localizationpriority: medium
+author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 281eebc1008f8c1c791ac6cc2694a458c86f526b
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 8abc80afd455c3f5057ede358f24b4a266a1e89d
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52679668"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729677"
 ---
 # <a name="accesspackageassignmentrequest-cancel"></a>accessPackageAssignmentRequest: отмена
 Пространство имен: microsoft.graph
@@ -41,7 +41,7 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса поставляем представление JSON объекта [accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)

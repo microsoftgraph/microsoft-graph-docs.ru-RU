@@ -1,16 +1,16 @@
 ---
 title: 'accessPackageAssignment: filterByCurrentUser'
 description: Извлечение списка объектов accesspackageassignment, фильтруемых на входе пользователя.
-localization_priority: Normal
-author: sbounouh
+ms.localizationpriority: medium
+author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b9ea85fb61525c2d9a3d109b358e8295631ac627
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: ba2bdd6d772d6d0204b32d27a8c3bdde8691a99d
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474018"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729705"
 ---
 # <a name="accesspackageassignment-filterbycurrentuser"></a>accessPackageAssignment: filterByCurrentUser
 Пространство имен: microsoft.graph
@@ -52,7 +52,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments/filterByC
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -61,7 +61,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments/filterByC
 
 В случае успешного выполнения этот метод возвращает код ответа и `200 OK` [коллекцию accessPackageAssignment](../resources/accesspackageassignment.md) в тексте ответа.
 
-Если набор результатов охватывает несколько страниц, корпорация Майкрософт Graph возвращает эту страницу с свойством в ответе, содержам URL-адрес на `@odata.nextLink` следующую страницу результатов. Если это свойство присутствует, продолжайте делать дополнительные запросы с URL-адресом в каждом ответе, пока не будут возвращены `@odata.nextLink` все результаты. Дополнительные сведения см. [в Graph microsoft Graph в приложении.](/graph/paging.md)
+Если набор результатов охватывает несколько страниц, корпорация Майкрософт Graph возвращает эту страницу с свойством в ответе, содержам URL-адрес на `@odata.nextLink` следующую страницу результатов. Если это свойство присутствует, продолжайте делать дополнительные запросы с URL-адресом в каждом ответе, пока не будут возвращены `@odata.nextLink` все результаты. Дополнительные сведения см. [в Graph microsoft Graph в приложении.](/graph/paging)
 
 ## <a name="examples"></a>Примеры
 

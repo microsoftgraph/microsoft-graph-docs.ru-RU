@@ -2,15 +2,15 @@
 title: Обновление accessPackageCatalog
 description: Обновление свойств объекта accessPackageCatalog.
 author: markwahl-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: de8173002582bc55aa3e59b7fbaa966240e0076e
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8a7abc1ddaf03652aecf3c9dc7eb9e30af0f2b6e
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439492"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729649"
 ---
 # <a name="update-accesspackagecatalog"></a>Обновление accessPackageCatalog
 
@@ -21,13 +21,13 @@ ms.locfileid: "50439492"
 Обнови [существующий объект accessPackageCatalog,](../resources/accesspackagecatalog.md) чтобы изменить одно или несколько его свойств, например имя или описание отображения.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение                            | EntitlementManagement.ReadWrite.All |
+|Для приложений                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -40,10 +40,10 @@ PATCH /identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPac
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В теле запроса поставляем представление JSON объекта [accessPackageCatalog.](../resources/accesspackagecatalog.md)
 
 В следующей таблице показаны свойства, необходимые при обновлении [accessPackageCatalog.](../resources/accesspackagecatalog.md)

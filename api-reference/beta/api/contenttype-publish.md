@@ -2,15 +2,15 @@
 author: swapnil1993
 title: 'contentType: публикация'
 description: Публикация типа контента, присутствуют на сайте концентратора типов контента.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: d69cbdabbb82612945dc6df85617e50bc2ca5b2c
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: b83f37bf080f9ca7f2fdcd6156b5bc35f4289c3d
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467087"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729348"
 ---
 # <a name="contenttype-publish"></a>contentType: публикация
 Пространство имен: microsoft.graph
@@ -20,13 +20,13 @@ ms.locfileid: "53467087"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions_reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.FullControl.All    |
 |Делегированные (личная учетная запись Майкрософт) | Sites.FullControl.All    |
-|Приложение | Sites.FullControl.All |
+|Для приложений | Sites.FullControl.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,7 +43,7 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/publish
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

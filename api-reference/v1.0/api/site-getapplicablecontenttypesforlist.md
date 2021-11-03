@@ -5,12 +5,12 @@ description: Получите типы контента сайта, которы
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 0cab5418b1e8fc1f4251e3fa9d51e5ebe1e05f61
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ec0e453973c825da8ac6ed13094984a63ae71f88
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084989"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730405"
 ---
 # <a name="site-getapplicablecontenttypesforlist"></a>сайт: getApplicableContentTypesForList
 Пространство имен: microsoft.graph
@@ -43,7 +43,7 @@ GET /sites/{siteId}/getApplicableContentTypesForList
 
 |Параметр|Тип|Описание|
 |-|-|-|
-|listId| Строка | GUID списка, для которого необходимо извлечь соответствующие типы контента. Обязательное. |
+|listId| String | GUID списка, для которого необходимо извлечь соответствующие типы контента. Обязательно. |
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
@@ -54,7 +54,7 @@ GET /sites/{siteId}/getApplicableContentTypesForList
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -75,7 +75,7 @@ GET /sites/{siteId}/getApplicableContentTypesForList
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/sites/{siteId}/getApplicableContentTypesForList(listId='listId')
+GET https://graph.microsoft.com/v1.0/sites/{siteId}/getApplicableContentTypesForList(listId='{listId}')
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/site-getapplicablecontenttypesforlist-csharp-snippets.md)]

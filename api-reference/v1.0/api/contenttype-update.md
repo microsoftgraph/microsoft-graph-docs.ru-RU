@@ -5,12 +5,12 @@ description: Обновление типа контента.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 4d15f5f30326de1be01c6868bdee3a42bd5cc682
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b0f6a5ef72f7cd163bd1699b9a95fbfb07eece5b
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147547"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730118"
 ---
 # <a name="update-contenttype"></a>Обновление contentType
 Пространство имен: microsoft.graph
@@ -23,7 +23,7 @@ ms.locfileid: "59147547"
 
   
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions_reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
   
 
@@ -49,10 +49,10 @@ PATCH /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
 В теле запроса поставляем представление JSON ресурса [contentType][] для обновления.  
 

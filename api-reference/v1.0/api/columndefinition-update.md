@@ -5,12 +5,12 @@ description: Обновление сайта, списка или столбца
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 1c7d7fda5676f88aa0d1c546417f05fe5983c538
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a0fbd27355e96c5e09651dbc16dde705f5f536e0
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59080137"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729635"
 ---
 # <a name="update-columndefinition"></a>Обновление столбцаDefinition
 Пространство имен: microsoft.graph
@@ -21,7 +21,7 @@ ms.locfileid: "59080137"
 
 ## <a name="permissions"></a>Разрешения  
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions_reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
   
 
@@ -51,11 +51,11 @@ PATCH /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns/{co
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
 В теле запроса поставляем представление JSON этих свойств ресурса [columnDefinition][] для обновления. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 

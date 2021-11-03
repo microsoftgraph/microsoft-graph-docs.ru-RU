@@ -2,15 +2,15 @@
 author: swapnil1993
 title: 'contentType: неопубликованный'
 description: Отопубликуй тип контента с сайта концентратора типа контента.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 8b7e8c63c6d92390731b670f8d95821fe5334b0d
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 418baec90ea4fde2c0dc08c8e52bc264fb9485ce
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773384"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730307"
 ---
 # <a name="contenttype-unpublish"></a>contentType: неопубликованный
 Пространство имен: microsoft.graph
@@ -20,7 +20,7 @@ Unpublish a [contentType][] from a content type hub site.
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions_reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -41,7 +41,7 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/unpublish
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

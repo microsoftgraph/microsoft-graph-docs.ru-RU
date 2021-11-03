@@ -2,15 +2,15 @@
 author: swapnil1993
 title: 'contentType: copyToDefaultContentLocation'
 description: Скопируйте файл в расположение контента по умолчанию в типе контента.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 744000abf5e216bb2fe82644b9600ce1be5730f5
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 176249e2e26054ca32a46051ec3c6c41e2e85cbe
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439374"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730314"
 ---
 # <a name="contenttype-copytodefaultcontentlocation"></a>contentType: copyToDefaultContentLocation
 Пространство имен: microsoft.graph
@@ -20,7 +20,7 @@ ms.locfileid: "53439374"
 
 ## <a name="permissions"></a>Разрешения  
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions_reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
   
 
@@ -28,7 +28,7 @@ ms.locfileid: "53439374"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+|Для приложений | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
 
   
 
@@ -46,10 +46,10 @@ POST /sites/id/contentTypes/id/copyToDefaultContentLocation
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В теле запроса поставляем представление JSON параметров.
 
 В следующей таблице указаны параметры, которые можно использовать с этим действием.
@@ -57,8 +57,8 @@ POST /sites/id/contentTypes/id/copyToDefaultContentLocation
 
 |Параметр|Тип|Описание|
 |-|-|-|
-|sourceFile| [itemReference](../resources/itemreference.md) |Метаданные о исходных файлах, которые необходимо скопировать в расположение контента по умолчанию. Обязательный.|
-|destinationFileName| String |Имя файла назначения. |
+|sourceFile| [itemReference](../resources/itemreference.md) |Метаданные о исходных файлах, которые необходимо скопировать в расположение контента по умолчанию. Обязательно.|
+|destinationFileName| string |Имя файла назначения. |
 
 ## <a name="response"></a>Отклик
 

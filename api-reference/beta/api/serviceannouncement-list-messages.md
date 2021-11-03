@@ -2,15 +2,15 @@
 title: Список сообщений
 description: Извлекать ресурсы serviceUpdateMessage из свойства навигации сообщений.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 556bf38ee32fe6652f36be7e909535c551b9f602
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: e8d0fb584977434b7499bc0e9ae9e5b99a766d53
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208861"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730146"
 ---
 # <a name="list-messages"></a>Список сообщений
 Пространство имен: microsoft.graph
@@ -28,7 +28,7 @@ ms.locfileid: "53208861"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|ServiceMessage.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|ServiceMessage.Read.All|
+|Для приложений|ServiceMessage.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,7 +46,7 @@ GET /admin/serviceAnnouncement/messages
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -120,6 +120,7 @@ Content-Type: application/json
         "SharePoint Online",
         "OneDrive for Business"
       ],
+      "expiryDateTime": null,
       "details": [
         {
           "name": "ExternalLink",

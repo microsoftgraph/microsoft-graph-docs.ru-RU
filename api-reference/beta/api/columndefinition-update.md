@@ -2,15 +2,15 @@
 author: swapnil1993
 title: Обновление столбцаDefinition
 description: Обновление столбца типа сайта, списка или контента
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 0a18f128b92496fa956600557a4a8923efc8d117
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 5f750648a83b663ecd185e7568634e19660184df
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468914"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730160"
 ---
 # <a name="update-columndefinition"></a>Обновление столбцаDefinition
 Пространство имен: microsoft.graph
@@ -21,7 +21,7 @@ ms.locfileid: "51468914"
 
 ## <a name="permissions"></a>Разрешения  
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions_reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
   
 
@@ -29,7 +29,7 @@ ms.locfileid: "51468914"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.Manage.All, Sites.FullControl.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение | Sites.Manage.All, Sites.FullControl.All |
+|Для приложений | Sites.Manage.All, Sites.FullControl.All |
 
   
 
@@ -51,11 +51,11 @@ PATCH /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns/{co
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
 В теле запроса поставляем представление JSON этих свойств ресурса [columnDefinition][] для обновления. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 

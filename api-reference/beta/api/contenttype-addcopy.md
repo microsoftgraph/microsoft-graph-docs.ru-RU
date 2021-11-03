@@ -2,15 +2,15 @@
 author: swapnil1993
 title: 'contentType: addCopy'
 description: Добавьте копию типа контента сайта в список.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: bb096cc0ad43641709e26559ee86e7fe9ad9f9db
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 70199b30d2748f4a6372b83326f93d36bf966c63
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514611"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729460"
 ---
 # <a name="contenttype-addcopy"></a>contentType: addCopy
 Пространство имен: microsoft.graph
@@ -22,7 +22,7 @@ ms.locfileid: "58514611"
 
 ## <a name="permissions"></a>Разрешения  
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions_reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
   
 
@@ -30,7 +30,7 @@ ms.locfileid: "58514611"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |Sites.Manage.All, Sites.FullControl.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение | Sites.Manage.All, Sites.FullControl.All |
+|Для приложений | Sites.Manage.All, Sites.FullControl.All |
 
   
 
@@ -46,17 +46,17 @@ POST /sites/{site-id}/lists/{list-id}/contentTypes/addCopy
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В теле запроса поставляем представление JSON параметров.
 
 В следующей таблице указаны параметры, которые можно использовать с этим действием.
 
 |Параметр|Тип|Описание|
 |-|-|-|
-|contentType| Строка | Канонический URL-адрес типа контента сайта, который будет скопирован в список. Обязательный.|
+|contentType| string | Канонический URL-адрес типа контента сайта, который будет скопирован в список. Обязательный.|
 
 ## <a name="response"></a>Отклик
 

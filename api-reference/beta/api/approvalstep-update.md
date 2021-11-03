@@ -1,16 +1,16 @@
 ---
 title: Обновление approvalStep
 description: Применить утверждение или отказ в принятии решения по объекту approvalStep.
-localization_priority: Normal
-author: sbounouh
+ms.localizationpriority: medium
+author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0fe071b58709a7816a4ffd9c82627542c1905243
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 167cc4a36ee3d50d76b73ed311aa2012e1d89b4f
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048045"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730034"
 ---
 # <a name="update-approvalstep"></a>Обновление approvalStep
 
@@ -42,9 +42,9 @@ PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Носитель \{токен\}. Обязательный. |
+| Authorization | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
 В следующей таблице показаны свойства, необходимые для этого метода.
 

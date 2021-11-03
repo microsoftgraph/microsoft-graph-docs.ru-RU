@@ -1,16 +1,16 @@
 ---
 title: Получение applicationSignInDetailedSummary
 description: Получение свойств и связей объекта applicationSignInDetailSummary.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 5bb2acdcc76b26aac6ebd851359a4c85a0441015
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7f463e10e66f2f447707dbf4e34dcb74ec622d56
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048073"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730069"
 ---
 # <a name="get-applicationsignindetailedsummary"></a>Получение applicationSignInDetailedSummary
 
@@ -21,11 +21,11 @@ ms.locfileid: "52048073"
 Получение свойств и связей объекта [applicationSignInDetailSummary.](../resources/applicationsignindetailedsummary.md)
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Report.Read.All |
+|Делегированные (рабочая или учебная учетная запись)     | Reports.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
 

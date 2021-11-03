@@ -1,16 +1,16 @@
 ---
 title: 'accessPackage: filterByCurrentUser'
 description: Извлечение списка объектов accesspackage, фильтруемых на входе пользователя.
-localization_priority: Normal
-author: sbounouh
+ms.localizationpriority: medium
+author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9dbc8275bceceff6fb6beb90e3bfcf5acb476baa
-ms.sourcegitcommit: b8b0e88b3ba9a434dc45f5ab640cb46f66fae299
+ms.openlocfilehash: e9835918f95d14e9526e3174d2e930261a822a0a
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52474038"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730090"
 ---
 # <a name="accesspackage-filterbycurrentuser"></a>accessPackage: filterByCurrentUser
 Пространство имен: microsoft.graph
@@ -50,7 +50,7 @@ GET /identityGovernance/entitlementManagement/accessPackages/filterByCurrentUser
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

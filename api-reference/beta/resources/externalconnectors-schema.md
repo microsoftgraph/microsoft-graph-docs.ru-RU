@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса схемы
 description: Схема подключения определяет, как содержимое, добавленное в подключение, будет использоваться в различных Graph microsoft.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 649f9e0ae8e0162e9fa4f976d5158e23bfb49b05
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 8dbf6a4df47f9afb3e24effbf9d90759dc87d677
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467848"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729208"
 ---
 # <a name="schema-resource-type"></a>Тип ресурса схемы
 
@@ -18,7 +18,7 @@ ms.locfileid: "53467848"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Схема [подключения](externalconnectors-externalconnection.md) определяет, как внешний контент будет использоваться в различных Graph Microsoft. Схема — это плоский список всех свойств, которые вы планируете добавить в связь, а также их атрибуты, метки и псевдонимы. Перед добавлением элементов в связь вы должны зарегистрировать схему.
+Схема [подключения](externalconnectors-externalconnection.md) определяет, как внешний контент будет использоваться в различных Graph Microsoft. Схема — это плоский список всех свойств, которые вы планируете добавить в соединение, а также их атрибуты, метки и псевдонимы. Перед добавлением элементов в соединение вы должны зарегистрировать схему.
 
 ## <a name="methods"></a>Методы
 
@@ -31,10 +31,10 @@ ms.locfileid: "53467848"
 
 | Свойство   | Тип                               | Описание                |
 |:-----------|:-----------------------------------|:---------------------------|
-| baseType   | String                             | Необходимо указать значение `microsoft.graph.externalItem`. Обязательный элемент. |
+| baseType   | String                             | Необходимо указать значение `microsoft.graph.externalItem`. Обязательный. |
 | properties | [коллекция](externalconnectors-property.md) свойств | Свойства, определенные для элементов в подключении. Минимальное число свойств — одно, максимальное — 128. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 
@@ -57,7 +57,7 @@ ms.locfileid: "53467848"
   "properties": [
     {
       "name": "String",
-      "type": "String",
+      "type": "String"
     }
   ]
 }

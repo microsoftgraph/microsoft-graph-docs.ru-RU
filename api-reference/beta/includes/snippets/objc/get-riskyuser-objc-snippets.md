@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: c6386821ff485b6d450f0d414e495c8843a8f45e
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 73756c2e7eeb1f77c0fdfdf9adee2a6487fefdb6
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53441408"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730503"
 ---
 ```objc
 
@@ -18,7 +18,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
     completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-        MSGraphRiskyUser *riskyUser = [[MSGraphRiskyUser alloc] initWithData:data error:&nserror];
+        MSGraphResponse *response = [[MSGraphResponse alloc] initWithData:data error:&nserror];
 
 }];
 

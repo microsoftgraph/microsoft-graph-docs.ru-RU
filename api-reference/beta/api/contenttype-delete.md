@@ -2,15 +2,15 @@
 author: swapnil1993
 title: Удаление contentType
 description: Удаление типа контента из SharePoint или сайта.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 9597f4b66a070ee40199b39f8accc8b3ab9f5c0e
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 8cee46edec94462d7f66a25a154fa361787c36d9
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439412"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729257"
 ---
 # <a name="delete-contenttype"></a>Удаление contentType
 Пространство имен: microsoft.graph
@@ -21,13 +21,13 @@ ms.locfileid: "53439412"
 
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions_reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.Manage.All, Sites.FullControl.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Sites.Manage.All, Sites.FullControl.All |
+|Для приложений | Sites.Manage.All, Sites.FullControl.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,7 +41,7 @@ DELETE /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 
 ## <a name="request-body"></a>Тело запроса

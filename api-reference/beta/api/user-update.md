@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 4fe2c4a6b5a9687dadd6274e603fd046c292331b
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 3b175b9235774cf620e8f450c92cc1f5752c9531
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453704"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730111"
 ---
 # <a name="update-user"></a>Обновление пользователя
 
@@ -52,7 +52,7 @@ PATCH /users/{id | userPrincipalName}
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |aboutMe|String|Свободное текстовое поле, где пользователь может рассказать о себе.|
-|accountEnabled|Логический| Значение `true` указывает, что учетная запись включена. В противном случае используется значение `false`. Это свойство обязательно указывать при создании пользователя.     |
+|accountEnabled|Логический| Если учетная запись обеспечена — `true`, в противном случае — `false`. Это свойство обязательно указывать при создании пользователя. Глобальный администратор, задав делегированную разрешение _Directory.AccessAsUser.All,_ может обновить состояние **accountEnabled** всех администраторов в клиенте.|
 | ageGroup | [ageGroup](../resources/user.md#agegroup-values) | Устанавливает возрастную группу пользователя. Допустимые значения: `null`, `minor`, `notAdult` и `adult`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](../resources/user.md#legal-age-group-property-definitions). |
 |assignedLicenses|Коллекция [assignedLicense](../resources/assignedlicense.md)|Лицензии, назначенные пользователю. Значение null не допускается.            |
 |birthday|DateTimeOffset|День рождения пользователя. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601 и формата времени UTC. Например, полночь 1 января 2014 г. в формате UTC представляется в виде `2014-01-01T00:00:00Z`.|

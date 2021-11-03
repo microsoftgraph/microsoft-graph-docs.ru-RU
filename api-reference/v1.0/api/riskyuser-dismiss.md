@@ -5,12 +5,12 @@ author: cloudhandler
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ece1bf3d19ab2cf0f0578b115acb6e1edb15b7a2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a5d62b281601a28bb5518b7ce1838239fb2306eb
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053366"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729194"
 ---
 # <a name="riskyuser-dismiss"></a>riskyUser: увольнение
 Пространство имен: microsoft.graph
@@ -20,7 +20,7 @@ ms.locfileid: "59053366"
 Отклонять риск одного или более [объектов riskyUser.](../resources/riskyuser.md) Это действие задает целевому пользователю уровень риска ни к одному.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions_reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -41,7 +41,7 @@ POST /identityProtection/riskyUsers/dismiss
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Основной текст запроса

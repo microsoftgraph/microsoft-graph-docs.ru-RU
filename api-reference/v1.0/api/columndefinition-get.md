@@ -5,12 +5,12 @@ description: Получите сайт, список или столбец ти�
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: cd6fd9eb35460071aa049e53b3f2d4280acb6f9d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6c592c378d035cf3f16eef9e2cfe7769cb257649
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59080159"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730139"
 ---
 # <a name="get-columndefinition"></a>Получить columnDefinition
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "59080159"
 
   
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions_reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
   
 
@@ -53,7 +53,7 @@ GET /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns/{colu
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|  
+|Авторизация|Bearer {token}. Обязательный.|  
 
 ## <a name="request-body"></a>Тело запроса
 

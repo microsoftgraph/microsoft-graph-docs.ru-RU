@@ -1,16 +1,16 @@
 ---
 title: Утверждение спискаSteps
 description: Список действий по утверждению, связанных с объектом утверждения.
-localization_priority: Normal
-author: sbounouh
+ms.localizationpriority: medium
+author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8eda9d7e1524f0dbdbe727d4123f448b6375e585
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f9eb3c3314f8443cc077ed0f51eafcbdb56fe47b
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048059"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729236"
 ---
 # <a name="list-approvalsteps"></a>Утверждение спискаSteps
 
@@ -42,7 +42,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Носитель \{токен\}. Обязательный. |
+| Authorization | Носитель \{токен\}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 

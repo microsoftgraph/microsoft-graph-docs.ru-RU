@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: 16c37a2ae403ef71c1c1e64d5c0960e00d671bf2
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: aba83746710694a987d4457b7c7f300923240d24
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60288597"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60729530"
 ---
 # <a name="chatmessage-delta"></a>chatMessage: delta
 
@@ -37,7 +37,7 @@ ms.locfileid: "60288597"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        |Разрешения (в порядке повышения привилегий)  |
 |---------------------------------------|---------------------------------------------|

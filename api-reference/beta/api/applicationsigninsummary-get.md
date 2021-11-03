@@ -1,16 +1,16 @@
 ---
 title: Получение applicationSignInSummary
 description: Получение свойств и связей объекта **applicationSigninSummary.**
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dhanyahk
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 9fad0f7122a1d82cb1f0dfc2ca7172f7f4029e85
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 9e2dcbe21f5a40157d0a803b9a800c3177b4aab9
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50128979"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730048"
 ---
 # <a name="get-applicationsigninsummary"></a>Получение applicationSignInSummary
 
@@ -21,13 +21,13 @@ ms.locfileid: "50128979"
 Получение свойств и связей объекта [applicationSigninSummary.](../resources/applicationsigninsummary.md)
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Report.Read.All |
+|Делегированные (рабочая или учебная учетная запись) | Reports.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
-|Для приложений | Report.Read.All | 
+|Для приложений | Reports.Read.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +50,7 @@ GET reports/getAzureADApplicationSignInSummary(period='{period}')
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [applicationSignInSummary](../resources/applicationsigninsummary.md) в тексте отклика.
+В случае успешного применения этот метод возвращает код отклика и `200 OK` [объект applicationSignInSummary](../resources/applicationsigninsummary.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -84,9 +84,9 @@ GET https://graph.microsoft.com/beta/reports/getAzureADApplicationSignInSummary(
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
->**Примечание.** Объект отклика, показанный здесь mmight, будет сокращен для учитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание:** Объект отклика, показанный здесь mmight, будет сокращен для читаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

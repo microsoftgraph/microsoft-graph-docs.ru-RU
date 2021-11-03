@@ -2,15 +2,15 @@
 author: swapnil1993
 title: Обновление contentType
 description: Обновление типа контента.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 343e06cbc6837c0644ab045a3d7014acf0155103
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: 843f74089811cc7f1412e78c74d0e883bc186e20
+ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490408"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60730300"
 ---
 # <a name="update-contenttype"></a>Обновление contentType
 Пространство имен: microsoft.graph
@@ -23,7 +23,7 @@ ms.locfileid: "58490408"
 
   
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions_reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
   
 
@@ -31,7 +31,7 @@ ms.locfileid: "58490408"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.Manage.All, Sites.FullControl.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение |Sites.Manage.All, Sites.FullControl.All |
+|Для приложений |Sites.Manage.All, Sites.FullControl.All |
 
   
 
@@ -49,10 +49,10 @@ PATCH /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
 В теле запроса поставляем представление JSON ресурса [contentType][] для обновления.  
 
