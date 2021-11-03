@@ -1,16 +1,16 @@
 ---
 title: Создание bookingService
 description: Создайте новую bookingService для указанного bookingbusiness.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 5f790cdc87cc7beedb85421cffec8dfb65aa56e3
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 03b969ad9ea195eb6c3218bd68e37a356d9a905e
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047863"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688740"
 ---
 # <a name="create-bookingservice"></a>Создание bookingService
 
@@ -18,7 +18,7 @@ ms.locfileid: "52047863"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новую [bookingService](../resources/bookingservice.md) для указанного [bookingbusiness](../resources/bookingbusiness.md).
+Создайте новую [bookingService](../resources/bookingservice.md) для указанного [bookingBusiness.](../resources/bookingbusiness.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -37,17 +37,17 @@ POST /bookingBusinesses/{id}/services
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {code}|
+| Авторизация  | Bearer {код}. Обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса указать JSON-представление [объекта bookingService.](../resources/bookingservice.md)
+В теле запроса указать JSON-представление объекта [bookingService.](../resources/bookingservice.md)
 
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `201, Created` [объект bookingService](../resources/bookingservice.md) в тексте ответа.
+В случае успеха этот метод возвращает код отклика и `201 Created` объект [bookingService](../resources/bookingservice.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -100,6 +100,8 @@ Content-type: application/json
     ],
     "description":"Individual bento box lunch delivery",
     "displayName":"Bento",
+    "isLocationOnline": true,
+    "smsNotificationsEnabled": true,
     "isHiddenFromCustomers":false,
     "notes":"Home-cooked special",
     "postBuffer":"PT10M",
@@ -137,9 +139,10 @@ Content-type: application/json
 
 ---
 
-В теле запроса указать JSON-представление [объекта bookingService.](../resources/bookingservice.md)
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа. 
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -162,6 +165,9 @@ Content-type: application/json
     "preBuffer": "PT5M",
     "postBuffer": "PT10M",
     "staffMemberIds": [],
+    "isLocationOnline": true,
+    "smsNotificationsEnabled": true,
+    "webUrl": "https://outlook.office365.com/owa/calendar/Contosolunchdelivery@M365B489948.onmicrosoft.com/bookings/s/gkcGIq92Z0u5h4FWB9Qgcg2",
     "defaultLocation": {
         "displayName": "Contoso Lunch Delivery",
         "locationEmailAddress": null,

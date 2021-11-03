@@ -1,24 +1,26 @@
 ---
 title: тип ресурса privilegedApproval
 description: Представляет утверждение, запрашиваемую в управление привилегированными пользователями для получения роли.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 62291980357d5b4051293113b774f59bd85c875c
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: c2c6ef9ec7ca62b3ccc85cb14f848497b2858dce
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453928"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687685"
 ---
-# <a name="privilegedapproval-resource-type"></a>тип ресурса privilegedApproval
+# <a name="privilegedapproval-resource-type-deprecated"></a>тип ресурса privilegedApproval (отклонен)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет утверждение, запрашиваемую в управление привилегированными пользователями для получения роли.
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+
+Представляет утверждение, запрашиваемую в управление привилегированными пользователями (PIM) для получения роли.
 
 
 ## <a name="methods"></a>Методы

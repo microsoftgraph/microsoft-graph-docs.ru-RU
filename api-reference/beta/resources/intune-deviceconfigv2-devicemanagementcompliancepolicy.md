@@ -9,8 +9,8 @@ ms.openlocfilehash: cb7655aea442d23116ee45c94c3becc92676240f
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688453"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60676827"
 ---
 # <a name="devicemanagementcompliancepolicy-resource-type"></a>тип ресурса deviceManagementCompliancePolicy
 

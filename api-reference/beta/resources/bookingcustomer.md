@@ -1,44 +1,46 @@
 ---
-title: Тип ресурса Букингкустомер
+title: тип ресурса bookingCustomer
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 5b527902c5d6e39bb752e07838c6a5e1c3022bb0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3d5eff9d0add4a0840e864b9f4caf1730be98e5a
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071789"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696233"
 ---
-# <a name="bookingcustomer-resource-type"></a>Тип ресурса Букингкустомер
+# <a name="bookingcustomer-resource-type"></a>тип ресурса bookingCustomer
 
 Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Представляет клиента объекта [букингбусинесс](bookingbusiness.md).
+Представляет клиента [bookingBusiness](bookingbusiness.md).
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Перечисление клиентов](../api/bookingbusiness-list-customers.md) | Коллекция [букингкустомер](bookingcustomer.md) | Получение списка объектов **букингкустомер** . |
-|[Создание Букингкустомер](../api/bookingbusiness-post-customers.md) | [букингкустомер](bookingcustomer.md) | Создание нового объекта **букингкустомер** . |
-|[Получение Букингкустомер](../api/bookingcustomer-get.md) | [букингкустомер](bookingcustomer.md) |Чтение свойств и связей объекта **букингкустомер** .|
-|[Обновление](../api/bookingcustomer-update.md) | [букингкустомер](bookingcustomer.md) |Обновление объекта **букингкустомер** . |
-|[Удаление](../api/bookingcustomer-delete.md) | Нет |Удаление объекта **букингкустомер** . |
+|[Список клиентов](../api/bookingbusiness-list-customers.md) | [коллекция bookingCustomer](bookingcustomer.md) | Получите список объектов **bookingCustomer.** |
+|[Создание bookingCustomer](../api/bookingbusiness-post-customers.md) | [bookingCustomer](bookingcustomer.md) | Создайте новый **объект bookingCustomer.** |
+|[Get bookingCustomer](../api/bookingcustomer-get.md) | [bookingCustomer](bookingcustomer.md) |Ознакомьтесь с свойствами и отношениями объекта **bookingCustomer.**|
+|[Обновление](../api/bookingcustomer-update.md) | [bookingCustomer](bookingcustomer.md) |Обновление **объекта bookingCustomer.** |
+|[Удаление](../api/bookingcustomer-delete.md) | Нет |Удаление **объекта bookingCustomer.** |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |displayName|String|Имя клиента.|
 |emailAddress|String|SMTP-адрес клиента.|
-|id|String| Идентификатор клиента. Только для чтения.|
+|id|String| ID клиента. Только для чтения.|
+|addresses|[коллекция physicalAddress](../resources/physicaladdress.md)|Адреса, связанные с клиентом, включая домашние, бизнес и другие адреса.|
+|phones|Коллекция [phone](../resources/phone.md)|Телефон номеров, связанных с клиентом, включая домашние, деловые и мобильные номера.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 
@@ -58,7 +60,17 @@ ms.locfileid: "48071789"
 {
   "displayName": "String",
   "emailAddress": "String",
-  "id": "String (identifier)"
+  "id": "String (identifier)",
+  "addresses": [
+    {
+      "@odata.type": "microsoft.graph.physicalAddress"
+    }
+  ],
+  "phones": [
+    {
+      "@odata.type": "microsoft.graph.phone"
+    }
+  ]
 }
 
 ```

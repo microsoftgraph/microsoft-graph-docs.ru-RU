@@ -9,8 +9,8 @@ ms.openlocfilehash: e579ee8e0c5342a5bcf784a44915f5fc03ccbbfd
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60674379"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688796"
 ---
 # <a name="unifiedroleeligibilityschedulerequest-cancel"></a>unifiedRoleEligibilityScheduleRequest: отмена
 Пространство имен: microsoft.graph

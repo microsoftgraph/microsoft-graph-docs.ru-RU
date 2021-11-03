@@ -1,16 +1,16 @@
 ---
 title: Список встреч
 description: Получите список объектов bookingAppointment для указанного bookingbusiness.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: b2543c08dd94109174d9945afec5b6687159db7e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: db5c034c1c6a006ed648cecf4fed4e416fe95f3e
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047919"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687749"
 ---
 # <a name="list-appointments"></a>Список встреч
 
@@ -18,7 +18,7 @@ ms.locfileid: "52047919"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список объектов [bookingAppointment](../resources/bookingappointment.md) для указанного [bookingbusiness.](../resources/bookingbusiness.md)
+Получите список объектов [bookingAppointment](../resources/bookingappointment.md) для указанного [bookingBusiness.](../resources/bookingbusiness.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -34,21 +34,21 @@ ms.locfileid: "52047919"
 GET /bookingBusinesses/{id}/appointments
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 Чтобы получить набор назначений бизнеса Bookings в диапазоне дат, вместо этого получите `$filter` [calendarView](bookingbusiness-list-calendarview.md) для этого диапазона дат.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {code}|
+| Авторизация  | Bearer {код}. Обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика и коллекцию `200 OK` [объектов bookingAppointment](../resources/bookingappointment.md) в тексте отклика.
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -77,8 +77,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа. 
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -95,11 +97,15 @@ Content-type: application/json
         {
             "id": "AAMkADKoAAA=",
             "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
+            "isLocationOnline": true,
+            "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTlhZTE3MDUtODk0Yy00MGZkLTlhNzktN2FmYTk3MDUxNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
             "customerId": "829e3cb5-3d4d-4319-a8de-1953aedaa166",
             "customerName": "Bob Kelly",
             "customerEmailAddress": "bobk@tailspintoys.com",
             "customerPhone": "213-555-0108",
+            "customerTimeZone": "America/Chicago",
             "customerNotes": null,
+            "smsNotificationsEnabled": true,
             "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976",
             "serviceName": "Catered bento",
             "duration": "PT30M",
@@ -179,11 +185,16 @@ Content-type: application/json
         {
             "id": "AAMkADKnAAA=",
             "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
+            "isLocationOnline": true,
+            "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MDUtODk0Yy00MGZkLTlhNzktN2xNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
+            "customerId": "829e3cb5-3d4d-4319-a8de-1953aedaa166",
             "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
             "customerName": "Jordan Miller",
             "customerEmailAddress": "jordanm@contoso.com",
             "customerPhone": "213-555-0199",
+            "customerTimeZone": "America/Chicago",
             "customerNotes": null,
+            "smsNotificationsEnabled": true,
             "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976",
             "serviceName": "Catered bento",
             "duration": "PT30M",

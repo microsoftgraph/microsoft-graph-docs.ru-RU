@@ -1,20 +1,22 @@
 ---
 title: тип ресурса governanceRoleAssignment
 description: Представляет назначение пользователя или группы роли.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 048eaf2c208911714f0f880a02b37cc77cbc0966
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 424357bdef9915347eaa99478d434a4e1ea39d02
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453844"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696422"
 ---
 # <a name="governanceroleassignment-resource-type"></a>тип ресурса governanceRoleAssignment
 
 Пространство имен: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 Представляет назначение пользователя или группы роли.
 
@@ -28,7 +30,7 @@ ms.locfileid: "58453844"
 | Метод          | Возвращаемый тип |Описание|
 |:------------|:--------|:--------|
 |[получение](../api/governanceroleassignment-get.md); |  [governanceRoleAssignment](../resources/governanceroleassignment.md) |Чтение свойств и связей объекта назначения ролей.|
-|[List](../api/governanceroleassignment-list.md) | [коллекция governanceRoleAssignment](../resources/governanceroleassignment.md)|Список набор назначений ролей на ресурсе. |
+|[Список](../api/governanceroleassignment-list.md) | [коллекция governanceRoleAssignment](../resources/governanceroleassignment.md)|Список набор назначений ролей на ресурсе. |
 |[Экспорт](../api/governanceroleassignment-export.md) | octet-stream |Скачайте коллекцию назначений ролей на ресурсе и сохраните в качестве `.csv` файла.|
 
 Нет `POST` , или операции `PUT` `PATCH` `DELETE` поддерживаются в `roleAssignments` наборе сущности. Любые операции по созданию, обновлению и удаляемой работе `governanceRoleAssignment` делаются `governanceRoleAssignmentRequest` путем .

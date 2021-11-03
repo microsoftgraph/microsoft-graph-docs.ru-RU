@@ -1,16 +1,16 @@
 ---
 title: тип ресурса unifiedRoleAssignmentSchedule
 description: Представляет расписание операций по активному назначению ролей через Azure AD управление привилегированными пользователями.
-author: shauliu1
-localization_priority: Normal
+author: carolinetempleton
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 8e528fe7fd6508d8cc5c3eac23f1796731c50d5f
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 5fc9e1777dd3cb5510aa52bb8c6a6df25b4189a5
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453214"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696686"
 ---
 # <a name="unifiedroleassignmentschedule-resource-type"></a>тип ресурса unifiedRoleAssignmentSchedule
 

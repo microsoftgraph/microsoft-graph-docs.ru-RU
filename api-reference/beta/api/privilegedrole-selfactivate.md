@@ -1,22 +1,24 @@
 ---
 title: 'privilegedRole: selfActivate'
 description: Активируйте роль, назначенную запрашиваемой.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: db885decd61dfb7b09cdcc7084ef357300a1a830
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 3eb7ba6e02c10923c6289daf12e5063664285436
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453746"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695834"
 ---
 # <a name="privilegedrole-selfactivate"></a>privilegedRole: selfActivate
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Активируйте роль, назначенную запрашиваемой.
 
@@ -45,7 +47,7 @@ POST /privilegedRoles/{id}/selfActivate
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.

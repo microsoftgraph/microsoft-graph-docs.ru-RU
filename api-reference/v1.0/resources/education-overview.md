@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: mmast-msft
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 29d50f4628bbca80e7c40e032cc5d9010155f3b7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d7d4fe8b5040221cc7d54569af1cfc87429ef852
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007245"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688971"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>Работа с интерфейсами API для образования в Microsoft Graph
 
@@ -92,7 +92,6 @@ API заданий поддерживают следующие сценарии.
 - [Отправка задания](../api/educationsubmission-submit.md)
 - [Отмена отправки задания](../api/educationsubmission-unsubmit.md)
 - [Возвращение оценок и отзывов учащемуся](../api/educationsubmission-return.md)
-- [Получение сведений о задании](../api/educationuser-list-assignments.md)
 
 Ниже приводится несколько распространенных вариантов использования API для образования, связанных с заданиями.
 

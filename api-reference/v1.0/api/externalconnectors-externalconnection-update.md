@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: c418efb3794cb30040b59211be741bd14ad7d306
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 7cd97ab4710ead825a6a507db71a3213a3a28444
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60559269"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687955"
 ---
 # <a name="update-externalconnection"></a>Обновление externalConnection
 
@@ -50,7 +50,7 @@ PATCH /external/connections/{connectionsId}
 | Свойство      | Тип                                           | Описание |
 |:--------------|:-----------------------------------------------|:------------|
 | configuration | [microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md) | Указывает дополнительные ID-адреса приложений, которые разрешены для управления подключением и индексации контента в подключении. |
-| description   | Строка                                         | Описание подключения, отображаемого в Центр администрирования Microsoft 365. |
+| description   | String                                         | Описание подключения, отображаемого в Центр администрирования Microsoft 365. |
 | name          | String                                         | Отображает имя подключения, отображаемого в Центр администрирования Microsoft 365. Максимальная длина 128 символов. |
 
 
@@ -63,6 +63,8 @@ PATCH /external/connections/{connectionsId}
 ### <a name="request"></a>Запрос
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_externalconnection"
@@ -77,6 +79,24 @@ Content-type: application/json
   "description": "Connection to index HR service tickets"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-externalconnection-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-externalconnection-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-externalconnection-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-externalconnection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 <!-- markdownlint-disable MD024 -->

@@ -1,16 +1,16 @@
 ---
 title: List roleManagementPolicyAssignments
 description: Получите ресурсы unifiedRoleManagementPolicyAssignment из свойства навигации RoleManagementPolicyAssignments.
-author: shauliu1
-localization_priority: Normal
+author: carolinetempleton
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 75100619a0d7a6ba4b84ac666e34741d13e20c01
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 3f9f292f156ab1ca7dad7f95620e692d22355ab8
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454166"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694731"
 ---
 # <a name="list-rolemanagementpolicyassignments"></a>List roleManagementPolicyAssignments
 Пространство имен: microsoft.graph
@@ -44,7 +44,7 @@ GET /policies/roleManagementPolicyAssignments
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

@@ -2,15 +2,15 @@
 title: тип enum windowsAutopilotProfileAssignmentDetailedStatus
 description: Пока не задокументировано.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ceb929b2200c5f47b7aefd421feb1a7f19100228
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bd81c03006349bf3401c736c092dbab25e7ca0ac
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59054270"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696310"
 ---
 # <a name="windowsautopilotprofileassignmentdetailedstatus-enum-type"></a>тип enum windowsAutopilotProfileAssignmentDetailedStatus
 
@@ -27,9 +27,11 @@ ms.locfileid: "59054270"
 |:---|:---|:---|
 |Нет|0|Подробный статус назначения не|
 |hardwareRequirementsNotMet|1|Требования к оборудованию не выполнены. Это может произойти, если на устройстве без TPM 2.0 будет назначен саморазверяющийся профиль АвтоПилота.|
-|surfaceHubProfileNotSupported|2|Это может произойти, если профиль автопилота SurfaceHub назначен устройству, которое не SurfaceHub.|
-|holoLensProfileNotSupported|3|Это может произойти, HoloLens профиль автопилота назначен устройству, которое не HoloLens.|
-|windowsPcProfileNotSupported|4 |Это может произойти, если профиль автопилота WindowsPc назначен устройству, которое не является WindowsPc.|
+|surfaceHubProfileNotSupported|2|Указывает, что Surface Hub автопилота назначен устройству, которое не Surface Hub (Aruba).|
+|holoLensProfileNotSupported|3|Указывает, что HoloLens автопилота назначен устройству, которое не HoloLens.|
+|windowsPcProfileNotSupported|4 |Указывает, что Windows pc AutoPilot-профиль назначен устройству, которое не Windows ПК.|
+|surfaceHub2SProfileNotSupported|5|Указывает, что профиль surface Hub 2S AutoPilot назначен устройству, которое не является surface Hub 2S.|
+|unknownFutureValue|99|Местообладатель для эволюционирующего переумыка, но этот переумыватель никогда не возвращается вызываемой, поэтому она не должна быть обязательной.|
 
 
 

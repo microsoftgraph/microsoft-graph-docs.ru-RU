@@ -1,22 +1,24 @@
 ---
 title: 'privilegedRoleAssignment: makeEligible'
 description: Сделайте назначение роли подходящим.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 26aa8ba7effdeb5aee270d02bec60ee2e7a950dd
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 5b659648741f24896bba2212a7e11a38d562a181
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453599"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694724"
 ---
 # <a name="privilegedroleassignment-makeeligible"></a>privilegedRoleAssignment: makeEligible
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Сделайте назначение роли подходящим. Если назначение роли уже имеет право на выполнение перед вызовом, оно ничего не делает. Если назначение роли является постоянным, а запросчик отличается от целевого пользователя, назначение роли становится подходящим и роль будет отключена для целевого пользователя. Если запрашиватель является целевым пользователем, а роль — администратором безопасности или администратором привилегированных ролей, роль активируется с истечением срока действия по умолчанию.
 
@@ -39,7 +41,7 @@ POST /privilegedRoleAssignments/{id}/makeEligible
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

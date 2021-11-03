@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 75da2d80c89b51d2e50a629ead53d3944f218567
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: cadd5ba0d736631289ef033bb7bb76c7b7a8fbd2
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60490325"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694745"
 ---
 # <a name="list-userexperienceanalyticsscorehistories"></a>Список userExperienceAnalyticsScoreHistories
 
@@ -29,7 +29,7 @@ ms.locfileid: "60490325"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsSco
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 556
+Content-Length: 627
 
 {
   "value": [
@@ -79,9 +79,11 @@ Content-Length: 556
       "coreSigninScore": 15,
       "recommendedSoftwareScore": 8,
       "appHealthOverallScore": 5,
+      "batteryHealthScore": 2,
       "startupTotalDevices": 3,
       "recommendedSoftwareTotalDevices": 15,
       "appHealthTotalDevices": 5,
+      "batteryHealthTotalDevices": 9,
       "restartScore": 12
     }
   ]

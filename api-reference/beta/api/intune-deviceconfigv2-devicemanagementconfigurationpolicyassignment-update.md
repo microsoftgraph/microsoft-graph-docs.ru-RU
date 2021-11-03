@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b84d5d8e4122bf89c59a44522d7e58be57c84114
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 1669569afb775b1702c3cd0a657b49484352dcc7
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60479853"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695862"
 ---
 # <a name="update-devicemanagementconfigurationpolicyassignment"></a>Обновление deviceManagementConfigurationPolicyAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "60479853"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,6 +37,7 @@ ms.locfileid: "60479853"
 }
 -->
 ``` http
+PATCH /deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/assignments/{deviceManagementConfigurationPolicyAssignmentId}
 PATCH /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/assignments/{deviceManagementConfigurationPolicyAssignmentId}
 ```
 
@@ -68,7 +69,7 @@ PATCH /deviceManagement/configurationPolicies/{deviceManagementConfigurationPoli
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/assignments/{deviceManagementConfigurationPolicyAssignmentId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/assignments/{deviceManagementConfigurationPolicyAssignmentId}
 Content-type: application/json
 Content-length: 465
 

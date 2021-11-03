@@ -1,16 +1,16 @@
 ---
 title: Обновление privilegedRoleSettings
 description: Обновление параметров ролей для данного параметра ролей. Объект privilegedRoleSettings будет возвращен.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 0b6d01add7336d10110ca6b0db234ec1df346b59
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 4204b3ba7b584f11e5fe6328acb02cf04c58fbfd
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453690"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695988"
 ---
 # <a name="update-privilegedrolesettings"></a>Обновление privilegedRoleSettings
 
@@ -40,7 +40,7 @@ PUT /privilegedRoles/{id}/settings
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса поставляем представление JSON объекта [privilegedRoleSettings.](../resources/privilegedrolesettings.md)
@@ -51,19 +51,19 @@ PUT /privilegedRoles/{id}/settings
 |:---------------|:--------|:----------|
 |elevationDuration|duration|Продолжительность активации роли. Обязательный.|
 |id|string|Уникальный идентификатор параметров ролей. Только для чтения. Обязательный.|
-|isMfaOnElevationConfigurable|boolean|**верно,** если mfaOnElevation настраивается. **false,** если mfaOnElevation не настраивается. Обязательно.|
+|isMfaOnElevationConfigurable|логический|**верно,** если mfaOnElevation настраивается. **false,** если mfaOnElevation не настраивается. Обязательно.|
 |lastGlobalAdmin|Логический|Только для внутреннего использования.|
-|maxElavationDuration|duration|Максимальная продолжительность для активированной роли. Обязательно.|
+|maxElavationDuration|duration|Максимальная продолжительность для активированной роли. Обязательный.|
 |mfaOnElevation|Логический|**значение true,** если для активации роли требуется MFA. **false,** если MFA не требуется для активации роли. Обязательно.|
-|minElevationDuration|duration|Минимальная продолжительность для активированной роли. Обязательно.|
+|minElevationDuration|duration|Минимальная продолжительность для активированной роли. Обязательный.|
 |notificationToUserOnElevation|Логический|**значение true,** если отправить уведомление конечному пользователю при активации роли. **false,** если не отправлять уведомления при активации роли. Обязательно.|
-|ticketingInfoOnElevation|Логический|**значение true,** если при активации роли требуется информация о билетах. **false,** если сведения о билетах не требуются при активации роли. Обязательный.|
+|ticketingInfoOnElevation|Логический|**значение true,** если при активации роли требуется информация о билетах. **false,** если сведения о билетах не требуются при активации роли. Обязательно.|
 |approvalOnElevation|Логический|**значение true,** если требуется утверждение при активации роли. **false,** если утверждение не требуется при активации роли. Обязательно.|
 |approverIds|string collection|Список ID утверждения, если требуется утверждение для активации.|
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `204 No Content`.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае код запретного статуса HTTP 403 будет возвращен.
 ## <a name="example"></a>Пример

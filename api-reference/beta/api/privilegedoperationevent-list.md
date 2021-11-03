@@ -1,22 +1,24 @@
 ---
 title: Список privilegedOperationEvents
-description: выражение фильтра.
-localization_priority: Normal
+description: Извлечение событий аудита, созданных PIM для операций ролей.
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 8d24f55f942f33bb2d831f6479461acfa65f96ca
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 5eaafd77c903a006bdfb01a077de1a006b34ac9d
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454264"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694717"
 ---
 # <a name="list-privilegedoperationevents"></a>Список privilegedOperationEvents
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Извлечение списка [объектов privilegedOperationEvent,](../resources/privilegedoperationevent.md) которые представляют события аудита, созданные управление привилегированными пользователями для операций ролей. Сведения о событии аудита можно услать [на privilegedOperationEvent.](../resources/privilegedoperationevent.md) Для фильтрации результатов запроса используйте стандартное выражение ``$filter`` OData.
 
@@ -45,7 +47,7 @@ GET /privilegedOperationEvents
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

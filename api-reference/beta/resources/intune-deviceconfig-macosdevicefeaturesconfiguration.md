@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: aab587bd0fcc4d4840363701a570a31b66702e18
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 6ed5280c7f3b1274e73403935e433fb1d5f3ce0b
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60493210"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60684060"
 ---
 # <a name="macosdevicefeaturesconfiguration-resource-type"></a>Тип ресурса macOSDeviceFeaturesConfiguration
 
@@ -61,7 +61,7 @@ ms.locfileid: "60493210"
 |shutDownDisabled|Логический|Следует ли скрывать элемент кнопки Shut Down в окне входа.|
 |restartDisabled|Логический|Следует ли скрывать элемент кнопки Перезапуска в окне входа.|
 |sleepDisabled|Логический|Следует ли скрывать элемент меню Sleep в окне входа.|
-|consoleAccessDisabled|Логический|Будет ли другой пользователь игнорировать использование>консоли> имя пользователя.|
+|consoleAccessDisabled|Логический|Будет ли другой пользователь игнорировать использование `console` специального имени пользователя.|
 |shutDownDisabledWhileLoggedIn|Логический|Будет ли отключен элемент меню Shut Down в окне входа во время входа пользователя.|
 |restartDisabledWhileLoggedIn|Логический|Будет ли элемент меню Перезапуска в окне входа отключен во время входа пользователя.|
 |powerOffDisabledWhileLoggedIn|Логический|Будет ли отключен элемент меню Power Off в окне входа во время входа пользователя.|
@@ -242,12 +242,16 @@ ms.locfileid: "60493210"
     "passwordChangeUrl": "String",
     "modeCredentialUsed": "String",
     "usernameLableCustom": "String",
+    "usernameLabelCustom": "String",
     "userSetupDelayed": true,
     "signInHelpText": "String",
     "kerberosAppsInBundleIdACLIncluded": true,
     "managedAppsInBundleIdACLIncluded": true,
     "credentialsCacheMonitored": true,
     "singleSignOnExtensionPreferredKDCs": [
+      "String"
+    ],
+    "preferredKDCs": [
       "String"
     ],
     "tlsForLDAPRequired": true

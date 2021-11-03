@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: cb73aad6ab0aa850088e7e5e72c3cc096bb74b50
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1cee20415b3663b26bffe6c7682e04880cb5fde8
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117509"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696037"
 ---
 # <a name="schedule-a-deployment-using-the-windows-update-for-business-deployment-service"></a>Запланировать развертывание с Windows службы обновления для бизнеса
 
@@ -77,7 +77,8 @@ Content-Type: application/json
             "devicesPerOffer": null
         },
         "monitoring": null,
-        "userExperience": null
+        "userExperience": null,
+        "safeguard": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"
@@ -91,7 +92,6 @@ Content-Type: application/json
 ### <a name="example-stage-a-deployment-at-regular-intervals-between-start-and-end-dates"></a>Пример. Поэтапное развертывание с регулярными интервалами между датами начала и окончания
 
 Одним из способов поэтапного развертывания со временем является настройка **endDateTime** развертывания. Всем устройствам, на которые назначено развертывание, будет предложено обновление в окне между **startDateTime** и **endDateTime.** Если **startDateTime** не указан, развертывание начнется сразу же после назначения устройств.
-
 
 В этом примере вы настраиваете новое развертывание таким образом, чтобы каждую неделю (продолжительность **ДействияBetweenOffers** установлена до семи дней), начиная с 1 июля 2021 г. Всем устройствам предлагается обновление до 1 августа 2021 г.
 
@@ -152,7 +152,8 @@ Content-Type: application/json
             "devicesPerOffer": null
         },
         "monitoring": null,
-        "userExperience": null
+        "userExperience": null,
+        "safeguard": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"
@@ -223,7 +224,8 @@ Content-Type: application/json
             "endDateTime": null
         },
         "monitoring": null,
-        "userExperience": null
+        "userExperience": null,
+        "safeguard": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"

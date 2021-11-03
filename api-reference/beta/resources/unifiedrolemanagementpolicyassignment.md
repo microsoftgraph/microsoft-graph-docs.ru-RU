@@ -1,16 +1,16 @@
 ---
 title: тип ресурса unifiedRoleManagementPolicyAssignment
 description: УнифицированнаяRoleManagementPolicyAssignment назначает политику определенной области и определению ролей.
-author: shauliu1
+author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: e4b322501027c0ecace9f468fc057b142f0a61de
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 14c034a3cc843575d99436be7f4cb271290bf374
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046479"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695060"
 ---
 # <a name="unifiedrolemanagementpolicyassignment-resource-type"></a>тип ресурса unifiedRoleManagementPolicyAssignment
 

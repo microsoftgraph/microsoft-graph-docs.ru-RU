@@ -1,24 +1,26 @@
 ---
 title: тип ресурса privilegedRoleAssignmentRequest
 description: Представляет запрос на операции назначения ролей в Privilegd Identity Management.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 59144fd6008e081eb6de29c94626fe5fb2c57af6
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 9fa83cb693cd699ce0dda3ac66ae4bba096e6210
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454131"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695806"
 ---
-# <a name="privilegedroleassignmentrequest-resource-type"></a>тип ресурса privilegedRoleAssignmentRequest
+# <a name="privilegedroleassignmentrequest-resource-type-deprecated"></a>тип ресурса privilegedRoleAssignmentRequest (обесценился)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет запрос на операции назначения ролей в Privilegd Identity Management.
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+
+Представляет запрос на операции назначения ролей в управление привилегированными пользователями (PIM).
 
 `privilegedRoleAssignmentRequest` — это объект, моделируемый билетами, используемый для управления жизненным циклом назначений ролей. Он представляет намерения и решения пользователей и администраторов, а также обеспечивает гибкость, чтобы включить реализацию повторяющихся schduling, ворота утверждения и так далее, по сравнению с непосредственной разоблачения и операций, а также и функций `POST` `LIST` на `MY` `Cancel` `governanceRoleAssignment` .
 
@@ -27,7 +29,7 @@ ms.locfileid: "58454131"
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
 |[Список](../api/privilegedroleassignmentrequest-list.md) | [коллекция privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|Список запросов на назначение ролей.|
-|[Create](../api/privilegedroleassignmentrequest-post.md)|  [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|Создайте запрос для управления жизненным циклом существующего или нового назначения ролей.|
+|[Создание](../api/privilegedroleassignmentrequest-post.md)|  [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|Создайте запрос для управления жизненным циклом существующего или нового назначения ролей.|
 |[Отмена](../api/privilegedroleassignmentrequest-cancel.md)|  |Отмена ожидающих запросов на назначение ролей.|
 |[My](../api/privilegedroleassignmentrequest-my.md)|  |Получите запрос на назначение ролей для текущего requstor.|
 

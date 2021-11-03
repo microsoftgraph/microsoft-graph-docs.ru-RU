@@ -1,16 +1,16 @@
 ---
 title: Get unifiedRoleEligibilityScheduleInstance
 description: Ознакомьтесь с свойствами и отношениями объекта unifiedRoleEligibilityScheduleInstance.
-author: shauliu1
-localization_priority: Normal
+author: carolinetempleton
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6526cff1519785af67c69df77803d087495fac57
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: b0fa874d5b212913361fc078161b1a4d37fffa2b
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58452430"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695904"
 ---
 # <a name="get-unifiedroleeligibilityscheduleinstance"></a>Get unifiedRoleEligibilityScheduleInstance
 Пространство имен: microsoft.graph
@@ -44,7 +44,7 @@ GET /roleManagement/directory/roleEligibilityScheduleInstances/{unifiedRoleEligi
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySch
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

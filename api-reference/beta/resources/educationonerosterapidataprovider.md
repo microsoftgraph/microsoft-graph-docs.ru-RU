@@ -2,15 +2,15 @@
 title: ресурс educationOneRosterApiDataProvider
 description: Используется для настройка профиля синхронизации школьных данных, когда API OneRoster используется в качестве источника ввода.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 2c90c7132f6e51b84e987cf6bda63baacc60b8ba
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: 538f3740fafc3c0debe6dacd8b0a76c81c14a228
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080423"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695708"
 ---
 # <a name="educationonerosterapidataprovider-resource"></a>ресурс educationOneRosterApiDataProvider
 
@@ -28,8 +28,8 @@ ms.locfileid: "52080423"
 | :----------------- | :------------------------------------------- | :---------------------------------------------------------------------------------------------------- |
 | connectionUrl      | String                                       | URL-адрес подключения к экземпляру OneRoster.                                                         |
 | providerName       | String                                       | Имя поставщика услуг OneRoster, определенное спецификацией [OneRoster.][oneroster]           |
-| schoolsIds         | Коллекция String                            | Список [синхронизируются с School/Org.][orgs] `sourcedId`                                                   |
-| termIds            | Коллекция String                            | Список [академических сеансов для][terms] синхронизации.                                                       |
+| schoolsIds         | Коллекция строк                            | Список [синхронизируются с School/Org.][orgs] `sourcedId`                                                   |
+| termIds            | Коллекция строк                            | Список [академических сеансов для][terms] синхронизации.                                                       |
 | connectionSettings | [educationSynchronizationConnectionSettings] | Параметры [OAuth 1.0][onerosteroauth1] или [OAuth 2.0][onerosteroauth2] для экземпляра OneRoster. |
 | настройки     | [educationSynchronizationCustomizations]    | Необязательная настройка, которая будет применена к профилю синхронизации.                                  |
 
@@ -48,6 +48,7 @@ ms.locfileid: "52080423"
 
 <!-- {
   "blockType": "resource",
+  truncated: true,
   "optionalProperties": [
 
   ],
@@ -76,6 +77,7 @@ ms.locfileid: "52080423"
 2020-05-06 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
+  truncated: true,
   "description": "educationOneRosterApiDataProvider resource",
   "keywords": "",
   "section": "documentation",

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса ticketInfo
 description: Объект, который представляет сведения о билетах, связанные с запросами на назначение ролей
-author: shauliu1
+author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: b3a330071fa6d17ff510901376d1fb3b0c1c0cdb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e75cd3f594a515e83abb59d0b476e4d130771875
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59023117"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694906"
 ---
 # <a name="ticketinfo-resource-type"></a>тип ресурса ticketInfo
 

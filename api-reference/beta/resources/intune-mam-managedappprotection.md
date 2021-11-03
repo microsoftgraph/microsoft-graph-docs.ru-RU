@@ -2,15 +2,15 @@
 title: Тип ресурса managedAppProtection
 description: Политика, используемая для настройки расширенных параметров управления для определенного набора приложений.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 727624f7db39bc65de7d2575bcf22dc84c378749
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5c65146b5fc58ced0d1617fdf3d67d1e3a1c7687
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59075006"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694927"
 ---
 # <a name="managedappprotection-resource-type"></a>Тип ресурса managedAppProtection
 
@@ -39,7 +39,7 @@ ms.locfileid: "59075006"
 |description|String|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |id|String|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |version|String|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |periodOfflineBeforeAccessCheck|Duration|Время до проверки доступа, когда устройство не подключено к Интернету.|
@@ -82,10 +82,11 @@ ms.locfileid: "59075006"
 |managedBrowser|[managedBrowserType](../resources/intune-mam-managedbrowsertype.md)|Указывает, в каких управляемых браузерах (ы) необходимо открыть ссылки в Интернете. Когда это свойство настроено, managedBrowserToOpenLinksRequired должно быть верным. Возможные значения: `notConfigured`, `microsoftEdge`.|
 |maximumAllowedDeviceThreatLevel|[managedAppDeviceThreatLevel](../resources/intune-mam-managedappdevicethreatlevel.md)|Максимально допустимый уровень угрозы устройства, как сообщается в приложении MTD. Возможные значения: `notConfigured`, `secured`, `low`, `medium`, `high`.|
 |mobileThreatDefenseRemediationAction|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет, какие действия необходимо принять, если порог угрозы для защиты от мобильных угроз не установлен. Предупреждение не является поддерживаемой ценностью для этого свойства. Возможные значения: `block`, `wipe`, `warn`.|
-|blockDataIngestionIntoOrganizationDocuments|Boolean|Указывает, может ли пользователь приносить данные в документы орг.|
+|blockDataIngestionIntoOrganizationDocuments|Логический|Указывает, может ли пользователь приносить данные в документы орг.|
 |allowedDataIngestionLocations|[коллекция managedAppDataIngestionLocation](../resources/intune-mam-managedappdataingestionlocation.md)|Разрешенные места хранения управляемых данных.|
 |appActionIfUnableToAuthenticateUser|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|При наборе будет указано, какие действия необходимо принять в случае, если пользователь не может проверить, так как маркер проверки подлинности является недействительным. Это происходит, когда пользователь удаляется или отключен в AAD. Возможные значения: `block`, `wipe`, `warn`.|
 |dialerRestrictionLevel|[managedAppPhoneNumberRedirectLevel](../resources/intune-mam-managedappphonenumberredirectlevel.md)|Классы приложений-дозвонищ, которые могут открывать телефонный номер. Возможные значения: `allApps`, `managedApps`, `customApp`, `blocked`.|
+|gracePeriodToBlockAppsDuringOffClockHours|Длительность|Период отсрочки перед блокировкой доступа к приложениям в часы ожидания.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -157,7 +158,8 @@ ms.locfileid: "59075006"
     "String"
   ],
   "appActionIfUnableToAuthenticateUser": "String",
-  "dialerRestrictionLevel": "String"
+  "dialerRestrictionLevel": "String",
+  "gracePeriodToBlockAppsDuringOffClockHours": "String (duration)"
 }
 ```
 

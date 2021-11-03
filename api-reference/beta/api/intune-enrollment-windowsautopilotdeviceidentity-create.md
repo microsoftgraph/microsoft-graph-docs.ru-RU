@@ -2,15 +2,15 @@
 title: Создание объекта windowsAutopilotDeviceIdentity
 description: Создание нового объекта windowsAutopilotDeviceIdentity.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b6e7ea79b5f487963ea495b0125973fa7767ccc3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8adac3020fc3e8fd455c476db36c300c701c91cd
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59076959"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695911"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>Создание объекта windowsAutopilotDeviceIdentity
 
@@ -29,7 +29,7 @@ ms.locfileid: "59076959"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -56,7 +56,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |:---|:---|:---|
 |id|String|GUID объекта|
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Состояние назначения профиля устройства Windows автопилота. Возможные значения: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
-|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Назначение профиля подробное состояние Windows автопилота. Возможные значения: `none`, `hardwareRequirementsNotMet`, `surfaceHubProfileNotSupported`, `holoLensProfileNotSupported`, `windowsPcProfileNotSupported`.|
+|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Назначение профиля подробное состояние Windows автопилота. Возможные значения: `none`, `hardwareRequirementsNotMet`, `surfaceHubProfileNotSupported`, `holoLensProfileNotSupported`, `windowsPcProfileNotSupported`, `surfaceHub2SProfileNotSupported`, `unknownFutureValue`.|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Время набора профилей Windows автопилота.|
 |groupTag|String|Тег группы устройства Windows автопилота.|
 |purchaseOrderIdentifier|String|Покупка идентификатора заказа устройства Windows автопилота.|
@@ -71,8 +71,8 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |resourceName|String|Имя ресурса.|
 |skuNumber|String|Номер SKU|
 |systemFamily|String|Семейство system|
-|azureActiveDirectoryDeviceId|String|AAD Device ID - to be deprecated|
-|azureAdDeviceId|String|ID устройства AAD|
+|azureActiveDirectoryDeviceId|String|AAD ID устройства , который будет обесценить|
+|azureAdDeviceId|String|AAD ID устройства|
 |managedDeviceId|String|Управляемый ID устройства|
 |displayName|String|"Display Name" (Отображаемое имя);|
 

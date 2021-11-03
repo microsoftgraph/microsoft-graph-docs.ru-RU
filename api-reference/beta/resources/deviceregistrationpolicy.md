@@ -5,12 +5,12 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 6733937ce5edf2f224b652b1659fe951f101b914
-ms.sourcegitcommit: 2f394a9f33f2fab3634d0f18882985ee211067d1
+ms.openlocfilehash: 843bd77ef7fe2e7646d9e9cf849ae62d30d1ad57
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60127946"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696807"
 ---
 # <a name="deviceregistrationpolicy-resource-type"></a>тип ресурса deviceRegistrationPolicy
 
@@ -33,8 +33,8 @@ ms.locfileid: "60127946"
 |:---|:---|:---|
 |azureADJoin|[azureAdJoinPolicy](../resources/azureadjoinpolicy.md)|Указывает политику авторизации для контроля регистрации новых устройств с помощью **Azure AD Join** в организации. Обязательный. Дополнительные сведения см. [в том, что такое удостоверение устройства?](/azure/active-directory/devices/overview).|
 |azureADRegistration|[azureADRegistrationPolicy](../resources/azureadregistrationpolicy.md)|Указывает политику авторизации для контроля регистрации новых устройств с помощью **Azure AD, зарегистрированных** в организации. Обязательно. Дополнительные сведения см. [в том, что такое удостоверение устройства?](/azure/active-directory/devices/overview).|
-|description|Строка|Описание политики регистрации устройств. Он всегда настроен на `Device Registration Policy` . Только для чтения.|
-|displayName|Строка|Имя политики регистрации устройств. Он всегда настроен на `Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks` . Только для чтения.|
+|description|String|Описание политики регистрации устройств. Он всегда настроен на `Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks` . Только для чтения.|
+|displayName|String|Имя политики регистрации устройств. Он всегда настроен на `Device Registration Policy` . Только для чтения.|
 |id|String| Идентификатор политики регистрации устройств. Он всегда настроен на `deviceRegistrationPolicy` . Только для чтения.|
 |multiFactorAuthConfiguration|multiFactorAuthConfiguration|Указывает политику проверки подлинности, чтобы пользователь завершил регистрацию с помощью **Azure AD Join** или **Azure AD, зарегистрированных** в организации. Возможные значения: `notRequired` , `required` , `unknownFutureValue` . Значение по умолчанию — `notRequired`. |
 |userDeviceQuota|Int32|Указывает максимальное количество устройств, которые пользователь может иметь в организации, перед блокировкой регистрации новых устройств. Значение по умолчанию установлено до 50. Если это свойство не указано во время операции обновления политики, оно автоматически сбрасывается, чтобы указать, что пользователям не разрешено присоединяться `0` к любым устройствам. |

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса unifiedRoleAssignmentScheduleRequest
 description: Представляет запрос на активные операции назначения ролей через Azure AD управление привилегированными пользователями.
-author: shauliu1
-localization_priority: Normal
+author: carolinetempleton
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 540f3a0e4f9fa7017dafebb1a7ee5bc51def9788
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 055119e6b49fee02e4d018b6e028e20a07a141eb
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454005"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696688"
 ---
 # <a name="unifiedroleassignmentschedulerequest-resource-type"></a>тип ресурса unifiedRoleAssignmentScheduleRequest
 

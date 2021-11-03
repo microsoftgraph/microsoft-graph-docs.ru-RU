@@ -4,12 +4,12 @@ description: Списки microsoft Graph API для конечных точек
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 3dffdd3e1b0fe50ac190fbbf3d9a60cf350d3efe
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 33592ed42a2147cb2b8ba861bf96cae88a334f05
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59120404"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696786"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
@@ -32,12 +32,9 @@ ms.locfileid: "59120404"
 - [Событие аудита](intune-auditing-auditevent.md)
 - [Свойство аудита](intune-auditing-auditproperty.md)
 - [Ресурс аудита](intune-auditing-auditresource.md)
-- [Выражение условия двоичного управления](intune-fencing-binarymanagementconditionexpression.md)
-- [Тип оператора выражения условия двоичного управления](intune-fencing-binarymanagementconditionexpressionoperatortype.md)
 - [Результат группового действия в отношении управляемых устройств](intune-devices-bulkmanageddeviceactionresult.md)
 - [Тип корпуса](intune-devices-chassistype.md)
 - [Свойство устройства Chrome o s](intune-devices-chromeosdeviceproperty.md)
-- [Условие управления циклического геофенсинга](intune-fencing-circulargeofencemanagementcondition.md)
 - [Проблема подключения к облачному компьютеру](intune-devices-cloudpcconnectivityissue.md)
 - [Сводка с соманганными устройствами](intune-devices-comanageddevicessummary.md)
 - [Устройство, подходящее для comanagement](intune-devices-comanagementeligibledevice.md)
@@ -143,7 +140,6 @@ ms.locfileid: "59120404"
 - [Тип шаблона управления устройствами](intune-deviceintent-devicemanagementtemplatetype.md)
 - [Тип значения намерения управления устройствами](intune-deviceintent-devicemanangementintentvaluetype.md)
 - [Сводка по операционной системе устройства](intune-devices-deviceoperatingsystemsummary.md)
-- [Тип платформы устройства](intune-fencing-deviceplatformtype.md)
 - [Обзор защиты устройств](intune-devices-deviceprotectionoverview.md)
 - [Состояние регистрации устройства](intune-devices-deviceregistrationstate.md)
 - [Сценарий оболочки устройства](intune-devices-deviceshellscript.md)
@@ -162,7 +158,6 @@ ms.locfileid: "59120404"
 - [Тип join](intune-devices-jointype.md)
 - [Локализованное сообщение уведомления](intune-notification-localizednotificationmessage.md)
 - [Результат действия "Поиск устройства"](intune-devices-locatedeviceactionresult.md)
-- [Условие управления расположением](intune-fencing-locationmanagementcondition.md)
 - [Вошедший пользователь](intune-devices-loggedonuser.md)
 - [Состояние режима пропажи](intune-devices-lostmodestate.md)
 - [Состояние вредоносных программ для устройства Windows](intune-devices-malwarestateforwindowsdevice.md)
@@ -176,15 +171,7 @@ ms.locfileid: "59120404"
 - [Удаленное действие с управляемым устройством](intune-devices-manageddeviceremoteaction.md)
 - [Состояние управляемого установщика](intune-devices-managedinstallerstatus.md)
 - [Тип агента управления](intune-devices-managementagenttype.md)
-- [Условие управления](intune-fencing-managementcondition.md)
-- [Выражение условия управления](intune-fencing-managementconditionexpression.md)
-- [Модель выражения условия управления](intune-fencing-managementconditionexpressionmodel.md)
-- [Строка выражения условия управления](intune-fencing-managementconditionexpressionstring.md)
-- [Заявление условия управления](intune-fencing-managementconditionstatement.md)
 - [Состояние управления](intune-devices-managementstate.md)
-- [Условие управления конфигурацией сети IPv4](intune-fencing-networkipv4configurationmanagementcondition.md)
-- [Условие управления конфигурацией сети IPv6](intune-fencing-networkipv6configurationmanagementcondition.md)
-- [Условие управления сетью](intune-fencing-networkmanagementcondition.md)
 - [Шаблон сообщения уведомления](intune-notification-notificationmessagetemplate.md)
 - [Параметры фирменной символики для шаблона уведомления](intune-notification-notificationtemplatebrandingoptions.md)
 - [Право на обновление операционной системы](intune-devices-operatingsystemupgradeeligibility.md)
@@ -215,8 +202,6 @@ ms.locfileid: "59120404"
 - [Шаблон базового плана безопасности](intune-deviceintent-securitybaselinetemplate.md)
 - [Пользователь общего устройства Apple](intune-devices-sharedappledeviceuser.md)
 - [Tuple_2 выполнения type_ i collection_1 операции](intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md)
-- [Выражение условия унарного управления](intune-fencing-unarymanagementconditionexpression.md)
-- [Тип оператора выражения условия унарного управления](intune-fencing-unarymanagementconditionexpressionoperatortype.md)
 - [Параметр действия "Обновление учетной записи устройства с Windows"](intune-devices-updatewindowsdeviceaccountactionparameter.md)
 - [Производительность приложения работоспособности приложения для аналитики пользовательского интерфейса по версии приложения](intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md)
 - [Пользовательский опыт аналитики работоспособности приложения приложения с помощью сведений о версии приложения](intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondetails.md)
@@ -229,6 +214,14 @@ ms.locfileid: "59120404"
 - [Производительность версии приложения для аналитики пользовательского интерфейса](intune-devices-userexperienceanalyticsapphealthosversionperformance.md)
 - [Сводка устройств автопилота для аналитики пользовательских интерфейсов](intune-devices-userexperienceanalyticsautopilotdevicessummary.md)
 - [Базовый базовый уровень аналитики пользовательских интерфейсов](intune-devices-userexperienceanalyticsbaseline.md)
+- [Влияние приложения-приложения для аналитики пользовательских интерфейсов](intune-devices-userexperienceanalyticsbatteryhealthappimpact.md)
+- [Сведения о емкости емкости батареи для аналитики пользовательского опыта](intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails.md)
+- [Влияние приложения на устройство для устройства для работы с аккумулятором для аналитики пользовательских интерфейсов](intune-devices-userexperienceanalyticsbatteryhealthdeviceappimpact.md)
+- [Производительность устройства работоспособности батареи для аналитики пользовательских интерфейсов](intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance.md)
+- [История запуска устройства для службы заряда батареи для аналитики пользовательских интерфейсов](intune-devices-userexperienceanalyticsbatteryhealthdeviceruntimehistory.md)
+- [Производительность модели работоспособности модели работоспособности батареи для аналитики пользовательского интерфейса](intune-devices-userexperienceanalyticsbatteryhealthmodelperformance.md)
+- [Производительность операционной системы работоспособности батареи для аналитики пользовательского интерфейса](intune-devices-userexperienceanalyticsbatteryhealthosperformance.md)
+- [Сведения о времени работы батареи батареи для аналитики пользовательских интерфейсов](intune-devices-userexperienceanalyticsbatteryhealthruntimedetails.md)
 - [Категория аналитики пользовательских интерфейсов](intune-devices-userexperienceanalyticscategory.md)
 - [Сводка облачных устройств удостоверений для аналитики пользовательских интерфейсов](intune-devices-userexperienceanalyticscloudidentitydevicessummary.md)
 - [Сводка устройств облачного управления с аналитикой пользовательских интерфейсов](intune-devices-userexperienceanalyticscloudmanagementdevicessummary.md)
@@ -260,7 +253,6 @@ ms.locfileid: "59120404"
 - [Аналитика пользовательских интерфейсов работает из любой сводки устройств](intune-devices-userexperienceanalyticsworkfromanywheredevicessummary.md)
 - [Аналитика пользовательских интерфейсов работает из любой метрики готовности оборудования](intune-devices-userexperienceanalyticsworkfromanywherehardwarereadinessmetric.md)
 - [Аналитика пользовательских интерфейсов работает из любой метрики](intune-devices-userexperienceanalyticsworkfromanywheremetric.md)
-- [Выражение условия переменного управления](intune-fencing-variablemanagementconditionexpression.md)
 - [Windows состояние продукта defender](intune-devices-windowsdefenderproductstatus.md)
 - [Результат действия "Проверка с помощью Защитника Windows"](intune-devices-windowsdefenderscanactionresult.md)
 - [Учетная запись устройства с Windows](intune-devices-windowsdeviceaccount.md)

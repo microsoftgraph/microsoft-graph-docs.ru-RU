@@ -1,28 +1,35 @@
 ---
-title: Тип ресурса timeStamp
-description: Сведения о дате и времени для определенного момента времени.
-localization_priority: Normal
+title: тип ресурса timeStamp
+description: Сведения о дате и времени для точки времени.
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
 author: JeremyKelley
-ms.openlocfilehash: 295c4c8b4cee6ba476b5bae57ebd71de8d107c1c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ff93ab9a55a695818ec21f60afb039c6542efd0a
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075422"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695799"
 ---
-# <a name="timestamp-resource-type"></a>Тип ресурса timeStamp
+# <a name="timestamp-resource-type"></a>тип ресурса timeStamp
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Сведения о дате и времени для определенного момента времени.
+Сведения о дате и времени для точки времени.
+
+## <a name="properties"></a>Свойства
+| Свойство     | Тип   |Описание|
+|:---------------|:--------|:----------|
+|date|Date|Дата части timestamp.|
+|time|TimeOfDay|Временная часть времени.|
+|timeZone|String|Часть часового пояса timestamp, которая является одним из 24 продоальных областей в мире.|
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже показано представление JSON ресурса.
+Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -38,14 +45,7 @@ ms.locfileid: "48075422"
   "time": "String (timestamp)",
   "timeZone": "string"
 }
-
 ```
-## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|date|Date|Часть даты метки времени.|
-|time|TimeOfDay|Часть времени метки времени.|
-|timeZone|String|Часть временной метки, представляющая часовой пояс (одна из 24 лонгитудинал областей мира).|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

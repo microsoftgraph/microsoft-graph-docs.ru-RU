@@ -1,16 +1,16 @@
 ---
 title: Список unifiedRoleManagementPolicyRules
 description: Получите список объектов unifiedRoleManagementPolicyRule и их свойств.
-author: shauliu1
+author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4a834697e4019480e23cbc62ee1a30f921498cb5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0610e4d50a7b4f961707a5202982db9f94073cbd
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59020520"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60689062"
 ---
 # <a name="list-unifiedrolemanagementpolicyrules"></a>Список unifiedRoleManagementPolicyRules
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "59020520"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений|RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory|
+|Приложение|RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,7 +43,7 @@ GET /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/effectiveRu
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

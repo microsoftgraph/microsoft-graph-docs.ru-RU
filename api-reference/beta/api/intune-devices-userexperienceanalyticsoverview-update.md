@@ -2,15 +2,15 @@
 title: Обновление userExperienceAnalyticsOverview
 description: Обновление свойств объекта userExperienceAnalyticsOverview.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b4d3f3b0ca442508660a4aa391a7511f0c16a922
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 543f9c32f66a3e39602ab60ad9bde5b4d2b9d192
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59070288"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695302"
 ---
 # <a name="update-userexperienceanalyticsoverview"></a>Обновление userExperienceAnalyticsOverview
 
@@ -29,7 +29,7 @@ ms.locfileid: "59070288"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsOverview
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,13 +53,14 @@ PATCH /deviceManagement/userExperienceAnalyticsOverview
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор обзора аналитики пользовательских интерфейсов.|
+|id|String|Уникальный идентификатор обзора аналитики пользовательских интерфейсов.|
 |overallScore|Int32|Общая оценка аналитики пользовательского опыта.|
 |deviceBootPerformanceOverallScore|Int32|Общая оценка производительности загрузки устройства для аналитики пользовательского интерфейса.|
 |bestPracticesOverallScore|Int32|Анализ пользовательских интерфейсов позволяет опытом работы с общим показателем.|
 |workFromAnywhereOverallScore|Int32|Аналитика пользовательского интерфейса Работает с любого общего балла.|
 |appHealthOverallScore|Int32|Общее состояние здоровья приложения для аналитики пользовательского интерфейса.|
 |resourcePerformanceOverallScore|Int32|Общая оценка производительности ресурсов аналитики пользовательских ресурсов.|
+|batteryHealthOverallScore|Int32|Общая оценка состояния заряда батареи для аналитики пользовательского интерфейса.|
 |insights|[коллекция userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md)|Аналитические сведения о пользовательском опыте.|
 |state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Текущее состояние состояния состояния аналитики пользовательских интерфейсов. Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 |deviceBootPerformanceHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Текущее состояние состояния состояния аналитики пользовательского интерфейса категории BootPerformance. Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
@@ -67,6 +68,7 @@ PATCH /deviceManagement/userExperienceAnalyticsOverview
 |workFromAnywhereHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Текущее состояние состояния здоровья аналитики пользовательских интерфейсов категории WorkFromAnywhere. Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 |appHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Текущее состояние здоровья категории аналитики пользовательских интерфейсов "BestPractices". Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 |resourcePerformanceHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Текущее состояние состояния здоровья в категории аналитики пользовательского интерфейса "ResourcePerformance". Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|batteryHealthHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Текущее состояние состояния состояния аналитики пользовательского интерфейса "BatteryHealth". Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 
 
@@ -80,7 +82,7 @@ PATCH /deviceManagement/userExperienceAnalyticsOverview
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsOverview
 Content-type: application/json
-Content-length: 1005
+Content-length: 1091
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -90,6 +92,7 @@ Content-length: 1005
   "workFromAnywhereOverallScore": 12,
   "appHealthOverallScore": 5,
   "resourcePerformanceOverallScore": 15,
+  "batteryHealthOverallScore": 9,
   "insights": [
     {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
@@ -109,7 +112,8 @@ Content-length: 1005
   "bestPracticesHealthState": "insufficientData",
   "workFromAnywhereHealthState": "insufficientData",
   "appHealthState": "insufficientData",
-  "resourcePerformanceHealthState": "insufficientData"
+  "resourcePerformanceHealthState": "insufficientData",
+  "batteryHealthHealthState": "insufficientData"
 }
 ```
 
@@ -118,7 +122,7 @@ Content-length: 1005
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1054
+Content-Length: 1140
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -129,6 +133,7 @@ Content-Length: 1054
   "workFromAnywhereOverallScore": 12,
   "appHealthOverallScore": 5,
   "resourcePerformanceOverallScore": 15,
+  "batteryHealthOverallScore": 9,
   "insights": [
     {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
@@ -148,7 +153,8 @@ Content-Length: 1054
   "bestPracticesHealthState": "insufficientData",
   "workFromAnywhereHealthState": "insufficientData",
   "appHealthState": "insufficientData",
-  "resourcePerformanceHealthState": "insufficientData"
+  "resourcePerformanceHealthState": "insufficientData",
+  "batteryHealthHealthState": "insufficientData"
 }
 ```
 
