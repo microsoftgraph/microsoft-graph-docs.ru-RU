@@ -3,12 +3,12 @@ title: Выберите поставщика проверки подлиннос
 description: Узнайте, как выбрать поставщиков проверки подлинности по сценарию для приложения.
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: 607759b11f1554a91cd169efe7fb56e17862354b
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: 85853f625c5c98f407e9621a7050015c48a91aa9
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220572"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695032"
 ---
 <!-- markdownlint-disable MD001 MD024 MD025 -->
 
@@ -37,7 +37,11 @@ ms.locfileid: "60220572"
 |                                                                                                        | Интерактивны        | Делегированная потребительская/org | [Интерактивный поставщик](#interactive-provider) |
 
 > [!NOTE]
-> Разработчикам Java и Android необходимо добавить библиотеку [azure-identity,](/java/api/overview/azure/identity-readme) чтобы получить доступ к различным типам учетных данных. Разработчикам .NET необходимо добавить пакет [Azure.Identity,](/dotnet/api/azure.identity) чтобы получить доступ к различным типам учетных данных.
+> Следующие фрагменты кода были написаны с последними версиями соответствующих SDKs. Если вы столкнулись с ошибками компиляторов с этими фрагментами, убедитесь, что у вас есть последние версии. Используемые поставщики проверки подлинности обеспечиваются следующими библиотеками удостоверений Azure:
+>
+> - Разработчикам .NET необходимо добавить пакет [Azure.Identity.](/dotnet/api/azure.identity)
+> - Разработчикам JavaScript необходимо добавить библиотеку [@azure/identity.](/javascript/api/@azure/identity)
+> - Разработчикам Java и Android необходимо добавить библиотеку [azure-identity.](/java/api/overview/azure/identity-readme)
 
 ## <a name="authorization-code-provider"></a>Поставщик кода авторизации
 
@@ -61,6 +65,7 @@ var clientSecret = "YOUR_CLIENT_SECRET";
 // with an authorization code in the query parameters
 var authorizationCode = "AUTH_CODE_FROM_REDIRECT";
 
+// using Azure.Identity;
 var options = new TokenCredentialOptions
 {
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
@@ -187,6 +192,7 @@ var tenantId = "common";
 var clientId = "YOUR_CLIENT_ID";
 var clientSecret = "YOUR_CLIENT_SECRET";
 
+// using Azure.Identity;
 var options = new TokenCredentialOptions
 {
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
@@ -212,6 +218,7 @@ var tenantId = "common";
 var clientId = "YOUR_CLIENT_ID";
 var clientCertificate = new X509Certificate2("MyCertificate.pfx");
 
+// using Azure.Identity;
 var options = new TokenCredentialOptions
 {
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
@@ -306,6 +313,7 @@ var tenantId = "common";
 var clientId = "YOUR_CLIENT_ID";
 var clientSecret = "YOUR_CLIENT_SECRET";
 
+// using Azure.Identity;
 var options = new TokenCredentialOptions
 {
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
@@ -342,7 +350,24 @@ var graphClient = new GraphServiceClient(authProvider);
 
 # <a name="java"></a>[Java](#tab/Java)
 
-Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) если это важно для вас.
+```java
+final OnBehalfOfCredential onBehalfOfCredential = new OnBehalfOfCredentialBuilder()
+        .clientId(clientID)
+        .pfxCertificate(pfxCertificatePath) // or .pemCertificate(certificatePath) or .clientSecret("ClientSecret")
+        .clientCertificatePassword(pfxCertificatePassword) // remove if using pemCertificate or clientSecret
+        .tokenCachePersistenceOptions(tokenCachePersistenceOptions) //Optional: enables the persistent token cache which is disabled by default
+        .userAssertion(userAssertion)
+        .build();
+
+final TokenCredentialAuthProvider tokenCredentialAuthProvider = new TokenCredentialAuthProvider(scopes, onBehalfOfCredential);
+
+final GraphServiceClient graphClient = GraphServiceClient
+        .builder()
+        .authenticationProvider(tokenCredentialAuthProvider)
+        .buildClient();
+
+final User me = graphClient.me().buildRequest().get();
+```
 
 # <a name="android"></a>[Android](#tab/Android)
 
@@ -382,6 +407,7 @@ var tenantId = "common";
 // Value from app registration
 var clientId = "YOUR_CLIENT_ID";
 
+// using Azure.Identity;
 var options = new TokenCredentialOptions
 {
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
@@ -546,6 +572,7 @@ var tenantId = "common";
 // Value from app registration
 var clientId = "YOUR_CLIENT_ID";
 
+// using Azure.Identity;
 var options = new InteractiveBrowserCredentialOptions
 {
     TenantId = tenantId,
@@ -641,6 +668,7 @@ var tenantId = "common";
 // Value from app registration
 var clientId = "YOUR_CLIENT_ID";
 
+// using Azure.Identity;
 var options = new TokenCredentialOptions
 {
     AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
@@ -649,6 +677,7 @@ var options = new TokenCredentialOptions
 var userName = "adelev@contoso.com";
 var password = "P@ssword1!";
 
+// https://docs.microsoft.com/dotnet/api/azure.identity.usernamepasswordcredential
 var userNamePasswordCredential = new UsernamePasswordCredential(
     userName, password, tenantId, clientId, options);
 

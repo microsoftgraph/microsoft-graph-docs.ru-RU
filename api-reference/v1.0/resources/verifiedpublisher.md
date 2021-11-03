@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: jesakowi
-ms.openlocfilehash: 4c63c0cdcfb6324077092923eeff91eed65e7b60
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c65456a7dbe9b1adcb57a19a75ebf6322e84a189
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134285"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60684065"
 ---
 # <a name="verifiedpublisher-resource-type"></a>тип ресурса verifiedPublisher
 
@@ -22,9 +22,9 @@ ms.locfileid: "59134285"
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|displayName|Строка|Проверенное имя издателя из учетной записи Центра партнеров издателя приложения.|
-|verifiedPublisherId|Строка| ID проверенного издателя из учетной записи Центра партнеров издателя приложений. |
 |addedDateTime|DateTimeOffSet| Время, когда проверенный издатель был добавлен или обновлен совсем недавно. |
+|displayName|String|Проверенное имя издателя из учетной записи Центра партнеров издателя приложения.|
+|verifiedPublisherId|String| ID проверенного издателя из учетной записи Центра партнеров издателя приложений. |
 
 
 ## <a name="json-representation"></a>Представление JSON
@@ -44,7 +44,6 @@ ms.locfileid: "59134285"
   "verifiedPublisherId": "String",
   "addedDateTime": "DateTimeOffSet"
 }
-
 ```
 
 

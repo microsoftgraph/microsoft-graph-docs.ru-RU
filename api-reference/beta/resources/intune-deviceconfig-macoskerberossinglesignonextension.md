@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a08f2f56e0b36368d2c7f667dbdfb307a6187e23
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 9401d3cf92a3f153d7bb1547416d866c2833010a
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60485179"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695267"
 ---
 # <a name="macoskerberossinglesignonextension-resource-type"></a>тип ресурса macOSKerberosSingleSignOnExtension
 
@@ -50,13 +50,15 @@ ms.locfileid: "60485179"
 |blockActiveDirectorySiteAutoDiscovery|Логический|Включает или отключает возможность автоматического определения имени сайта расширения Kerberos.|
 |passwordChangeUrl|String|Получает или задает URL-адрес, на который будет отправлен пользователь при инициале изменения пароля.|
 |modeCredentialUsed|String|Выберите, как другие процессы используют учетные данные расширения Kerberos.|
-|usernameLableCustom|String|Эта метка заменяет имя пользователя, показанное в расширении Kerberos. Вы можете ввести имя в соответствие с именем вашей компании или организации. Доступно для устройств с macOS-версиями 11 и более поздней версии.|
+|usernameLableCustom|String|Скоро будет обесценить.|
+|usernameLabelCustom|String|Эта метка заменяет имя пользователя, показанное в расширении Kerberos. Вы можете ввести имя в соответствие с именем вашей компании или организации. Доступно для устройств с macOS-версиями 11 и более поздней версии.|
 |userSetupDelayed|Логический|При наборе true пользователю не будет предложено настроить расширение Kerberos до тех пор, пока расширение не будет включено администратором или не будет получен вызов Kerberos. Доступно для устройств с macOS-версиями 11 и более поздней версии.|
 |signInHelpText|String|Текст, отображаемый пользователю на входе Kerberos в окне. Доступно для устройств с версиями iOS и iPadOS 14 и более поздних версий.|
 |kerberosAppsInBundleIdACLIncluded|Логический|При наборе True расширение Kerberos позволяет приложениям, вступимым с удостоверением пакета приложений, управляемыми приложениями и стандартными утилитами Kerberos, такими как TicketViewer и klist, получать доступ к учетным данным и использовать их. Доступно для устройств с macOS-версиями 12 и более поздних версий.|
 |managedAppsInBundleIdACLIncluded|Логический|Если установлено true, расширение Kerberos позволяет управляемым приложениям, а все приложения, вступив с удостоверением пакета приложений, могут получить доступ к учетным данным. Если установлено false, расширение Kerberos позволяет всем приложениям получить доступ к учетным данным. Доступно для устройств с версиями iOS и iPadOS 14 и более поздних версий.|
 |credentialsCacheMonitored|Логический|Если установлено true, учетные данные запрашиваются при следующем вызове Kerberos или изменении сетевого состояния. Когда срок действия учетных данных истек или отсутствует, создается новый учетный данные. Доступно для устройств с macOS-версиями 12 и более поздних версий.|
-|singleSignOnExtensionPreferredKDCs|Коллекция строк|Add создает упорядоченный список предпочтительных центров рассылки ключей (KDCs), которые можно использовать для трафика Kerberos. Этот список используется, когда серверы не обнаруживаются с помощью DNS. При обнаружении серверов список используется как для проверки подключения, так и для трафика Kerberos. Если серверы не реагируют, устройство использует обнаружение DNS. Удаление удаляет существующий список, а устройства используют обнаружение DNS. Доступно для устройств с macOS-версиями 12 и более поздних версий.|
+|singleSignOnExtensionPreferredKDCs|Коллекция строк|Скоро будет обесценить.|
+|preferredKDCs|Коллекция строк|Add создает упорядоченный список предпочтительных центров рассылки ключей (KDCs), которые можно использовать для трафика Kerberos. Этот список используется, когда серверы не обнаруживаются с помощью DNS. При обнаружении серверов список используется как для проверки подключения, так и для трафика Kerberos. Если серверы не реагируют, устройство использует обнаружение DNS. Удаление удаляет существующий список, а устройства используют обнаружение DNS. Доступно для устройств с macOS-версиями 12 и более поздних версий.|
 |tlsForLDAPRequired|Логический|При наборе True подключения LDAP требуются для использования безопасности транспортного слоя (TLS). Доступно для устройств с macOS-версиями 11 и более поздней версии.|
 
 ## <a name="relationships"></a>Связи
@@ -101,12 +103,16 @@ ms.locfileid: "60485179"
   "passwordChangeUrl": "String",
   "modeCredentialUsed": "String",
   "usernameLableCustom": "String",
+  "usernameLabelCustom": "String",
   "userSetupDelayed": true,
   "signInHelpText": "String",
   "kerberosAppsInBundleIdACLIncluded": true,
   "managedAppsInBundleIdACLIncluded": true,
   "credentialsCacheMonitored": true,
   "singleSignOnExtensionPreferredKDCs": [
+    "String"
+  ],
+  "preferredKDCs": [
     "String"
   ],
   "tlsForLDAPRequired": true

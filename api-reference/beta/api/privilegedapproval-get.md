@@ -1,22 +1,24 @@
 ---
 title: Получение privilegedApproval
 description: Извлечение свойств и связей объекта privilegedapproval.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 10e0a94630fac29a2edd410b18d6bbbf1413d3e2
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 1ee0d29be3fbd4e2bf908d5b457c6b7e3bc4ec67
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58452864"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694493"
 ---
 # <a name="get-privilegedapproval"></a>Получение privilegedApproval
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Извлечение свойств и связей объекта privilegedapproval.
 ## <a name="permissions"></a>Разрешения
@@ -40,7 +42,7 @@ GET /privilegedApproval/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

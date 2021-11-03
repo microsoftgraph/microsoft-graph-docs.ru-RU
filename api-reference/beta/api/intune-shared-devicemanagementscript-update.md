@@ -2,15 +2,15 @@
 title: Обновление deviceManagementScript
 description: Обновление свойств объекта deviceManagementScript.
 author: rolyon
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0923bf3f27056bc02b61d445ac7619389fe4d0b4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dc3c97d9572100c0126b694402161f0d92b318e1
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59020541"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696590"
 ---
 # <a name="update-devicemanagementscript"></a>Обновление deviceManagementScript
 
@@ -30,8 +30,8 @@ ms.locfileid: "59020541"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Application||
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementManagedDevices.ReadWrite.All|
 
@@ -60,19 +60,18 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 |id|String|Уникальный идентификатор для сценария управления устройствами.|
 |displayName|String|Имя сценария управления устройствами.|
 |description|String|Необязательное описание сценария управления устройствами.|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Интервал для запуска скрипта. Если сценарий не определен, он будет работать один раз|
-|scriptContent|В двоичном формате|Содержимое скрипта.|
+|scriptContent|Двоичный|Содержимое скрипта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сценария управления устройствами. Это свойство доступно только для чтения.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|enforceSignatureCheck|Boolean|Указать, нужно ли проверять подпись скрипта.|
+|enforceSignatureCheck|Логический|Указать, нужно ли проверять подпись скрипта.|
 |fileName|String|Имя файла скрипта.|
-|roleScopeTagIds|Коллекция String|Список ID-тегов области для этого экземпляра PowerShellScript.|
-|runAs32Bit|Boolean|Значение, указывающее, должен ли скрипт PowerShell работать как 32-битный|
+|roleScopeTagIds|Коллекция строк|Список ID-тегов области для этого экземпляра PowerShellScript.|
+|runAs32Bit|Логический|Значение, указывающее, должен ли скрипт PowerShell работать как 32-битный|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика и обновленный `200 OK` [объект deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) в тексте ответа.
 
 ## <a name="example"></a>Пример

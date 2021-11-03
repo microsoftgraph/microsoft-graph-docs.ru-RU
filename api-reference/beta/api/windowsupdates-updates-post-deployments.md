@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: de9177163835a9500b02d01806644404b50ee144
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 70b0f81e3262f9191dc279cb73e4e09f2e2b2ec6
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256503"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695442"
 ---
 # <a name="create-deployment"></a>Создание развертывания
 Пространство имен: microsoft.graph.windowsUpdates
@@ -26,7 +26,7 @@ ms.locfileid: "60256503"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|WindowsUpdates.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|WindowsUpdates.ReadWrite.All|
+|Application|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -59,7 +59,7 @@ POST /admin/windows/updates/deployments
 
 В случае успешного применения этот метод возвращает код ответа и `201 Created` объект [развертывания](../resources/windowsupdates-deployment.md) в тексте отклика.
 
-## <a name="examples"></a>Примеры
+## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
@@ -167,7 +167,8 @@ Content-Type: application/json
         }
       ]
     },
-    "userExperience": null
+    "userExperience": null,
+    "safeguard": null
   },
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)"

@@ -1,24 +1,26 @@
 ---
 title: тип ресурса privilegedRole
-description: 'Представляет роль администратора Azure AD, например: глобального администратора, администратора биллинга, администратора службы, администратора **пользователей, администратора паролей** и т. д.'
-localization_priority: Normal
+description: Представляет роль администратора Azure AD, например глобального администратора, администратора биллинга, администратора службы, администратора пользователей и администратора паролей.
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 5784a28ec18c0ed02540321d92ee2bab386dc760
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 756ffd580a2f44fad1631bbfd153d1320f1aef05
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58452416"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687678"
 ---
-# <a name="privilegedrole-resource-type"></a>тип ресурса privilegedRole
+# <a name="privilegedrole-resource-type-deprecated"></a>тип ресурса privilegedRole (неподготовленный)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет роль администратора Azure AD, например: глобального администратора, администратора биллинга, администратора службы, администратора **пользователей, администратора паролей** и т. д.
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
+
+Представляет встроенную роль администратора [Azure AD,](/azure/active-directory/roles/permissions-reference)например глобального администратора, администратора биллинга, администратора **службы,** администратора пользователей и **администратора паролей.**
 
 
 ## <a name="methods"></a>Методы

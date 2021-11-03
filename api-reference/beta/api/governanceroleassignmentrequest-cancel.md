@@ -1,22 +1,24 @@
 ---
 title: Отмена governanceRoleAssignmentRequest
 description: Отмена governanceRoleAssignmentRequest.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: a00eb98fa9c152bec555174c1196d4801b5e4e14
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 946e0dbfde3f097fb146d4725a2f4b3f9277aa14
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453851"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688221"
 ---
 # <a name="cancel-governanceroleassignmentrequest"></a>Отмена governanceRoleAssignmentRequest
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 Отмена [управленияRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
@@ -59,7 +61,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный.|
+| Авторизация  | Bearer {token}. Обязательный.|
 | Content-Type  | application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -71,7 +73,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 ## <a name="error-codes"></a>Коды ошибок
 Этот API следует стандарту http-кодов. Кроме того, ниже показаны пользовательские коды ошибок.
 
-| Код ошибки | Сообщение об ошибке | Сведения |
+| Код ошибки | Сообщение об ошибке | Details |
 |:---------- |:------------- |:------- |
 | 400 BadRequest | RoleAssignmentRequestNotFound | В системе не существует системы governanceRoleAssignmentRequest. |
 | 400 BadRequest | RequestCannotBeCancelled | Только запросы в состоянии `Granted` , и могут быть `PendingApproval` `PendingApprovalProvisioning` `PendingAdminDecision` отменены. |

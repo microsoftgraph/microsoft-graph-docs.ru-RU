@@ -1,22 +1,24 @@
 ---
 title: Получение privilegedRoleSettings
 description: Извлечение параметров ролей для данной роли. Объект privilegedRoleSettings будет возвращен.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 08013e57888bd9c8d40dd925c11465721f2a326e
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 3d18c990461f53022b99ecd65d661b1142892b8f
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453697"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695995"
 ---
 # <a name="get-privilegedrolesettings"></a>Получение privilegedRoleSettings
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Извлечение параметров ролей для данной роли. Объект [privilegedRoleSettings](../resources/privilegedrolesettings.md) будет возвращен.
 ## <a name="permissions"></a>Разрешения
@@ -42,7 +44,7 @@ GET /privilegedRoles/{id}/settings
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

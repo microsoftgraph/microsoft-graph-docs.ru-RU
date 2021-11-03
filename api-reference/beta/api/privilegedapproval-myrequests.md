@@ -1,22 +1,24 @@
 ---
 title: 'privilegedApproval: myRequests'
 description: Получение запросов утверждения запрашивающей стороны.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 9403997a9a666a78bc40defe5d49e5dd0e68f2ba
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 5c341560c60fb2e510bc5fb4a2eba49b6e6a0f01
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453193"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688200"
 ---
 # <a name="privilegedapproval-myrequests"></a>privilegedApproval: myRequests
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Получение запросов утверждения запрашивающей стороны.
 
@@ -39,7 +41,7 @@ GET /privilegedApproval/myRequests
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 

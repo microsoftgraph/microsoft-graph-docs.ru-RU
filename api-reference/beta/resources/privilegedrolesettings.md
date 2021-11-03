@@ -1,16 +1,16 @@
 ---
 title: тип ресурса privilegedRoleSettings
 description: Представляет параметры привилегированной роли.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: b954dbc0dc72028d60861c5c07820302f3cbe19d
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 6085d6bc74a1399ea4baf0cc575ecb316a3519e9
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454124"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694169"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>тип ресурса privilegedRoleSettings
 
@@ -32,14 +32,14 @@ ms.locfileid: "58454124"
 |:---------------|:--------|:----------|
 |elevationDuration|duration|Продолжительность активации роли.|
 |id|string| Уникальный идентификатор параметров ролей. Только для чтения.|
-|isMfaOnElevationConfigurable|boolean|`true` если **mfaOnElevation** настраивается. `false` если **mfaOnElevation** не настраивается.|
-|lastGlobalAdmin|boolean|Только для внутреннего использования.|
+|isMfaOnElevationConfigurable|логический|`true` если **mfaOnElevation** настраивается. `false` если **mfaOnElevation** не настраивается.|
+|lastGlobalAdmin|логический|Только для внутреннего использования.|
 |maxElavationDuration|duration|Максимальная продолжительность для активированной роли.|
-|mfaOnElevation|boolean|`true` если для активации роли требуется MFA. `false` если MFA не требуется активировать роль.|
+|mfaOnElevation|логический|`true` если для активации роли требуется MFA. `false` если MFA не требуется активировать роль.|
 |minElevationDuration|duration|Минимальная продолжительность для активированной роли.|
-|notificationToUserOnElevation|boolean|`true` при отправке уведомления конечному пользователю при активации роли. `false` если не отправлять уведомления при активации роли.|
-|ticketingInfoOnElevation|boolean|`true` если при активации роли требуется информация о билетах. `false` если сведения о билетах не требуются при активации роли.|
-|approvalOnElevation|boolean|`true` если требуется утверждение при активации роли. `false` если утверждение не требуется при активации роли.|
+|notificationToUserOnElevation|логический|`true` при отправке уведомления конечному пользователю при активации роли. `false` если не отправлять уведомления при активации роли.|
+|ticketingInfoOnElevation|логический|`true` если при активации роли требуется информация о билетах. `false` если сведения о билетах не требуются при активации роли.|
+|approvalOnElevation|логический|`true` если требуется утверждение при активации роли. `false` если утверждение не требуется при активации роли.|
 |approverIds| string collection |Список ids утверждения, если требуется утверждение для активации.|
 
 ## <a name="relationships"></a>Связи

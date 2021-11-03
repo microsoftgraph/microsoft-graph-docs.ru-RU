@@ -1,16 +1,16 @@
 ---
 title: Список клиентов
 description: Получите список объектов bookingCustomer.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 9eff7f998ad5bf5f1c623e2a699c7c1be3636b8a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 79bdf7e5038f3b8db2e9762624922721d1e2b804
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047905"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687461"
 ---
 # <a name="list-customers"></a>Список клиентов
 
@@ -34,7 +34,7 @@ ms.locfileid: "52047905"
 GET /bookingBusinesses/{id}/customers
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -46,7 +46,7 @@ GET /bookingBusinesses/{id}/customers
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объектов bookingCustomer](../resources/bookingcustomer.md) в тексте отклика.
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -75,8 +75,11 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа. 
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -93,22 +96,58 @@ Content-type: application/json
         {
             "id": "80b5ddda-1e3b-4c9d-abe2-d606cc075e2e",
             "displayName": "Adele Vance",
-            "emailAddress": "adelev@proseware.com"
+            "emailAddress": "adelev@proseware.com",
+            "addresses": [],
+            "phones": []
         },
         {
             "id": "8bb19078-0f45-4efb-b2c5-da78b860f73a",
             "displayName": "Adele Vance",
-            "emailAddress": "adelev@proseware.com"
+            "emailAddress": "adelev@proseware.com",
+            "addresses": [
+                {
+                    "postOfficeBox":"",
+                    "street":"4567 Main Street",
+                    "city":"Buffalo",
+                    "state":"NY",
+                    "countryOrRegion":"USA",
+                    "postalCode":"98052",
+                    "type":"home"
+                },
+                {
+                    "postOfficeBox":"",
+                    "street":"4570 Main Street",
+                    "city":"Buffalo",
+                    "state":"NY",
+                    "countryOrRegion":"USA",
+                    "postalCode":"98054",
+                    "type":"business"
+                }
+            ],
+            "phones": [
+                {
+                    "number": "206-555-0100",
+                    "type": "home"
+                },
+                {
+                    "number": "206-555-0200",
+                    "type": "business"
+                }
+            ]
         },
         {
             "id": "829e3cb5-3d4d-4319-a8de-1953aedaa166",
             "displayName": "Bob Kelly",
-            "emailAddress": "bobk@tailspintoys.com"
+            "emailAddress": "bobk@tailspintoys.com",
+            "addresses": [],
+            "phones": []
         },
         {
             "id": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
             "displayName": "Jordan Miller",
-            "emailAddress": "jordanm@contoso.com"
+            "emailAddress": "jordanm@contoso.com",
+            "addresses": [],
+            "phones": []
         }
     ]
 }

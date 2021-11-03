@@ -2,15 +2,15 @@
 title: 'присутствие: setPresence'
 description: Установите сведения о присутствии для сеанса присутствия приложения пользователя.
 author: jsandoval-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 7734283f513bd50d9f0187a24ec41e30ebadb38d
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: 5753f09d69a0a81e41c25b51508f4af65d642d63
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58396965"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "60697008"
 ---
 # <a name="presence-setpresence"></a>присутствие: setPresence
 
@@ -36,14 +36,14 @@ ms.locfileid: "58396965"
 
 Срок действия сеанса присутствия настраивается с помощью `expirationDuration` параметра. По истечении срока действия сеанса он становится `Offline` .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Разрешения
 Для вызова API требуется следующее разрешение. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Приложение                            | Presence.ReadWrite.All                      |
+| Application                            | Presence.ReadWrite.All                      |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -53,7 +53,7 @@ POST /users/{userId}/presence/setPresence
 ## <a name="request-headers"></a>Заголовки запроса
 | Имя          | Описание                 |
 | :------------ | :-------------------------- |
-| Авторизация | Bearer {токен}. Обязательный.   |
+| Авторизация | Bearer {token}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -62,9 +62,9 @@ POST /users/{userId}/presence/setPresence
 
 | Параметр          | Тип     | Описание                                                                                            |
 | :----------------- | :------- | :----------------------------------------------------------------------------------------------------- |
-| sessionId          | строка   | ID сеанса присутствия приложения.                                                          |
+| sessionId          | string   | ID сеанса присутствия приложения.                                                          |
 | availability       | string   | Сведения о базовом присутствии.                                                                         |
-| действие           | строка   | Дополнительные сведения о доступности.                                                          |
+| действие           | string   | Дополнительные сведения о доступности.                                                          |
 | expirationDuration | duration | Срок действия сеанса присутствия приложения. Значение представлено в формате ISO 8601 для длительности.</p>Если это не предусмотрено, по умолчанию будет применяться 5-минутный срок действия. |
 
 > [!IMPORTANT]
@@ -75,7 +75,7 @@ POST /users/{userId}/presence/setPresence
 
 | availability | действие          | Описание                                              |
 | :----------- | :---------------- | :------------------------------------------------------- |
-| Available    | Available         | Обновляет сеанс присутствия как доступный.               |
+| Доступно    | Доступно         | Обновляет сеанс присутствия как доступный.               |
 | Занята         | InACall           | Обновляет сеанс присутствия как Busy, InACall.           |
 | Занята         | InAConferenceCall | Обновляет сеанс присутствия как Busy, InAConferenceCall. |
 | Away         | Away              | Обновляет сеанс присутствия как Away.                    |

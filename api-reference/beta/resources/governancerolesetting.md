@@ -1,22 +1,24 @@
 ---
 title: тип ресурса governanceRoleSetting
 description: Представляет набор конфигураций для каждого определения ролей, которые необходимо оценивать при назначении ролей при их назначении или изменениях.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 84226a44df2561dbd30bfec7987a0ce625340e27
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: af49836d52659b6f75727008599aea1ca16d5206
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453550"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688172"
 ---
 # <a name="governancerolesetting-resource-type"></a>тип ресурса governanceRoleSetting
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 Представляет набор конфигураций для каждого определения ролей, которые необходимо оценивать при назначении ролей при их назначении или изменениях. Например, параметры ролей могут включать правило "максимальная продолжительность назначения", правило "MFA, требуемая для активации" и так далее.
 
@@ -26,7 +28,7 @@ ms.locfileid: "58453550"
 |:---------------|:--------|:--------|
 |[Список](../api/governancerolesetting-list.md) | [коллекция governanceRoleSetting](../resources/governancerolesetting.md)|Список параметров ролей на ресурсе.|
 |[получение](../api/governancerolesetting-get.md); |  [governanceRoleSetting](../resources/governancerolesetting.md) |Чтение свойств и связей параметра ролей.|
-|[обновление](../api/governancerolesetting-update.md). | [governanceRoleSetting](../resources/governancerolesetting.md)  |Обновление объекта параметра роли. |
+|[Обновление](../api/governancerolesetting-update.md) | [governanceRoleSetting](../resources/governancerolesetting.md)  |Обновление объекта параметра роли. |
 
 ## <a name="properties"></a>Свойства
 |Свойство               |Тип                                      |Описание|

@@ -2,15 +2,15 @@
 title: Тип ресурса windowsUpdateForBusinessConfiguration
 description: Конфигурация Центра обновления Windows для бизнеса.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5c8715a0d8fa2018ddce58806a4f6a4d23569d44
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 93cd07124c02473a680958683adcfb97a2baf591
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147880"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687987"
 ---
 # <a name="windowsupdateforbusinessconfiguration-resource-type"></a>Тип ресурса windowsUpdateForBusinessConfiguration
 
@@ -41,8 +41,8 @@ ms.locfileid: "59147880"
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|supportsScopeTags|Логическое|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость к выпуску ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -68,8 +68,8 @@ ms.locfileid: "59147880"
 |qualityUpdatesPauseStartDate|Дата|Дата начала приостановки обновления качества. Это свойство доступно только для чтения.|
 |featureUpdatesPauseStartDate|Дата|Дата начала приостановки обновления функций. Это свойство доступно только для чтения.|
 |featureUpdatesRollbackWindowInDays|Int32|Количество дней после обновления функции, для которого допустим откат|
-|qualityUpdatesWillBeRolledBack|Логическое|Указывает, следует ли откат обновлений качества при следующей проверке устройства|
-|featureUpdatesWillBeRolledBack|Логическое|Указывает, следует ли откат обновлений функций при следующей проверке устройства|
+|qualityUpdatesWillBeRolledBack|Логический|Указывает, следует ли откат обновлений качества при следующей проверке устройства|
+|featureUpdatesWillBeRolledBack|Логический|Указывает, следует ли откат обновлений функций при следующей проверке устройства|
 |qualityUpdatesRollbackStartDateTime|DateTimeOffset|Дата начала отката обновлений качества|
 |featureUpdatesRollbackStartDateTime|DateTimeOffset|Дата начала отката обновлений функций|
 |engagedRestartDeadlineInDays|Int32|Крайний срок за несколько дней до автоматического планирования и выполнения ожидающих перезагрузки вне активных часов с допустимым диапазоном от 2 до 30 дней|
@@ -85,6 +85,7 @@ ms.locfileid: "59147880"
 |userPauseAccess|[включить](../resources/intune-shared-enablement.md)|Указывает, следует ли включить доступ конечных пользователей к приостановке обновлений программного обеспечения. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |userWindowsUpdateScanAccess|[включить](../resources/intune-shared-enablement.md)|Указывает, следует ли отключить доступ пользователя к проверке Windows Update. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |updateNotificationLevel|[windowsUpdateNotificationDisplayOption](../resources/intune-deviceconfig-windowsupdatenotificationdisplayoption.md)|Указывает, какие Windows уведомления об обновлении пользователи видят. Возможные значения: `notConfigured`, `defaultNotifications`, `restartWarningsOnly`, `disableAllNotifications`.|
+|allowWindows11Upgrade|Логический|Разрешить подходящим Windows 10 устройствам для обновления до последней версии Windows 11.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -96,7 +97,7 @@ ms.locfileid: "59147880"
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Обзор состояния конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Обзор состояния конфигурации устройств для пользователей. Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceSettingStateSummaries|Коллекция [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Сводка данных о состоянии настройки конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|deviceUpdateStates|[коллекция windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)|Windows для состояния устройств конфигурации бизнеса.|
+|deviceUpdateStates|[коллекция windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)|Windows для состояния устройств конфигурации бизнеса. Эта коллекция может содержать не более 500 элементов.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -178,7 +179,8 @@ ms.locfileid: "59147880"
   "scheduleImminentRestartWarningInMinutes": 1024,
   "userPauseAccess": "String",
   "userWindowsUpdateScanAccess": "String",
-  "updateNotificationLevel": "String"
+  "updateNotificationLevel": "String",
+  "allowWindows11Upgrade": true
 }
 ```
 

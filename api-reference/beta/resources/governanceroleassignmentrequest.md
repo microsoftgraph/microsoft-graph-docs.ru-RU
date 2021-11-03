@@ -1,16 +1,16 @@
 ---
 title: тип ресурса governanceRoleAssignmentRequest
 description: Представляет запрос на операции назначения ролей в Priviledged Identity Management.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 1ba2478b855d480e846e5b6e5435829ce6e8e4b0
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 8bee3a0abe303d1fe14e592104388b229e4d6424
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453795"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694276"
 ---
 # <a name="governanceroleassignmentrequest-resource-type"></a>тип ресурса governanceRoleAssignmentRequest
 
@@ -18,7 +18,9 @@ ms.locfileid: "58453795"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет запрос на операции назначения ролей в Privilegd Identity Management.
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
+
+Представляет запрос на операции назначения ролей в управление привилегированными пользователями.
 
 `governanceRoleAssignmentRequest` — это объект, моделируемый билетами, используемый для управления жизненным циклом назначений ролей. Он представляет намерения и решения пользователей и администраторов, а также обеспечивает гибкость, чтобы включить реализацию повторяющихся schduling, ворота утверждения и так далее, по сравнению с непосредственной разоблачения , и операций на `POST` `PUT` `DELETE` `governanceRoleAssignment` .
 
@@ -27,10 +29,10 @@ ms.locfileid: "58453795"
 | Метод          |Возвращаемый тип  |Описание|
 |:------------|:--------|:--------|
 |[получение](../api/governanceroleassignmentrequest-get.md); | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Получите запрос на назначение ролей, указанный в ID.  
-|[List](../api/governanceroleassignmentrequest-list.md) | [коллекция governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Получить запросы на назначение ролей на ресурсе.|
-|[Create](../api/governanceroleassignmentrequest-post.md)|  [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Создайте запрос для управления жизненным циклом существующего или нового назначения ролей.|
+|[Список](../api/governanceroleassignmentrequest-list.md) | [коллекция governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Получить запросы на назначение ролей на ресурсе.|
+|[Создание](../api/governanceroleassignmentrequest-post.md)|  [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Создайте запрос для управления жизненным циклом существующего или нового назначения ролей.|
 |[Отмена](../api/governanceroleassignmentrequest-cancel.md)|  |Отмена ожидающих запросов на назначение ролей.|
-|[обновление](../api/governanceroleassignmentrequest-update.md).| [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Администраторы обновляют решения по запросам, если запросы находятся в состоянии `PendingAdminDecision` .|
+|[Обновление](../api/governanceroleassignmentrequest-update.md)| [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Администраторы обновляют решения по запросам, если запросы находятся в состоянии `PendingAdminDecision` .|
 
 ## <a name="properties"></a>Свойства
 | Свойство                  | Тип          |Описание|

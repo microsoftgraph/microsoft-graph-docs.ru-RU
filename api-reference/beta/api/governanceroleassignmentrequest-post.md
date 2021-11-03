@@ -1,22 +1,23 @@
 ---
 title: Создание governanceRoleAssignmentRequest
 description: Создайте запрос на назначение ролей для представления операции, необходимой для назначения ролей. В следующей таблице перечислены операции.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: a43803b69cfe382fd93bf30af345a659633b9af8
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 6821763ce92e705503d335d3415070ab1350e59b
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453781"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687742"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Создание governanceRoleAssignmentRequest
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 Создайте запрос на назначение ролей для представления операции, необходимой для назначения ролей. В следующей таблице перечислены операции.
 
@@ -82,10 +83,10 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 | Свойство         | Тип                                                     | Описание |
 |:-----------------|:---------------------------------------------------------|:--|
 | resourceId       | String                                                   | Идентификатор ресурса. Обязательно. |
-| roleDefinitionId | String                                                   | ID определения роли. Обязательный. |
+| roleDefinitionId | String                                                   | ID определения роли. Обязательно. |
 | subjectId        | String                                                   | ID субъекта. Обязательно. |
 | assignmentState  | String                                                   | Состояние назначения. Значение может быть `Eligible` и `Active` . Обязательное. |
-| type             | String                                                   | Тип запроса. Значение может быть `AdminAdd` , , , , , , и `UserAdd` `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `UserRenew` `AdminRenew` `AdminExtend` . Обязательный. |
+| type             | String                                                   | Тип запроса. Значение может быть `AdminAdd` , , , , , , и `UserAdd` `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `UserRenew` `AdminRenew` `AdminExtend` . Обязательно. |
 | reason           | String                                                   | Причина должна быть предоставлена для запроса назначения ролей для целей аудита и проверки. |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Расписание запроса на назначение ролей. Для типа `UserAdd` запроса `AdminAdd` , и , это `AdminUpdate` `AdminExtend` необходимо. |
 
@@ -97,7 +98,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 Этот API возвращает стандартные коды ошибок HTTP. Кроме того, он возвращает коды ошибок, перечисленные в следующей таблице.
 
-| Код ошибки     | Сообщение об ошибке                               | Сведения       |
+| Код ошибки     | Сообщение об ошибке                               | Details       |
 |:---------------|:--------------------------------------------|:--------------|
 | 400 BadRequest | RoleNotFound                                | Предоставленное `roleDefinitionId` в теле запроса не удается найти. |
 | 400 BadRequest | ResourceIsLocked                            | Ресурс, предоставленный в теле запроса, находится в состоянии и `Locked` не может создавать запросы на назначение ролей. |
@@ -234,7 +235,7 @@ Content-type: application/json
 | resourceId       | String                                                   | Да                      | \<resourceId\> |
 | roleDefinitionId | String                                                   | Да                      | \<roleDefinitionId\> |
 | subjectId        | String                                                   | Да                      | \<subjectId\> |
-| assignmentState  | String                                                   | Да                      | Активные |
+| assignmentState  | String                                                   | Да                      | Активное |
 | type             | String                                                   | Да                      | UserAdd |
 | reason           | String                                                   | зависит от роли Параметры |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Да                      |   |
@@ -357,7 +358,7 @@ Content-type: application/json
 | resourceId       | String                                                   | Да      | \<resourceId\> |
 | roleDefinitionId | String                                                   | Да      | \<roleDefinitionId\> |
 | subjectId        | String                                                   | Да      | \<subjectId\> |
-| assignmentState  | String                                                   | Да      | Активные |
+| assignmentState  | String                                                   | Да      | Активное |
 | type             | String                                                   | Да      | UserRemove |
 | reason           | String                                                   | Нет       |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Нет       |   |

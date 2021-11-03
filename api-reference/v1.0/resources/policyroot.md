@@ -1,16 +1,16 @@
 ---
 title: тип ресурсов policyRoot
 description: Тип ресурса, подвергая свойства навигации для однотонных политик.
-author: shauliu1
+author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 2847ce9952687bd985e065486e19cfa134ba6b42
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2ae4b3a54fd289d0e1b5e4924d3fe605468ca4d9
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098456"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688382"
 ---
 # <a name="policyroot-resource-type"></a>тип ресурсов policyRoot
 
@@ -18,14 +18,14 @@ ms.locfileid: "59098456"
 
 Тип ресурса, подвергая свойства навигации для однотонных политик.
 
-## <a name="methods"></a>Методы
+## <a name="methods"></a>Methods
 Нет
 
 ## <a name="properties"></a>Свойства
 Нет
 
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь                              | Тип                                                                                                      | Описание                                                                                                                                                          |
 |:------------------------------------------|:----------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | authenticationMethodsPolicy               | [authenticationMethodsPolicy](authenticationmethodspolicy.md)                                             | Методы проверки подлинности и пользователи, которые могут использовать их для регистрации и выполнения многофакторной проверки подлинности (MFA) в Azure Active Directory (Azure AD). |

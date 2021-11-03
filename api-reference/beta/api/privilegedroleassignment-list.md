@@ -1,22 +1,24 @@
 ---
 title: Список privilegedRoleAssignments
 description: Извлечение списка объектов privilegedRoleAssignment, соответствующих всем назначениям ролей для организации.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: cbbc5be2edc0cb9f86ab008559f1e7f6daa9f83a
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 14e5b60cc7b0dd40e4211d1b0c108826d033e8ac
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453424"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695778"
 ---
 # <a name="list-privilegedroleassignments"></a>Список privilegedRoleAssignments
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Извлечение списка [объектов privilegedRoleAssignment,](../resources/privilegedroleassignment.md) соответствующих всем назначениям ролей для организации.
 ## <a name="permissions"></a>Разрешения
@@ -41,7 +43,7 @@ GET /privilegedRoleAssignments
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

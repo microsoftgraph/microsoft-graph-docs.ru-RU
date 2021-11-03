@@ -1,16 +1,16 @@
 ---
 title: Создание bookingStaffMember
 description: Создание нового сотрудника в указанном bookingbusiness.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: e92b3cc416d3cfe462c65da35f8bb4dd6d2e6b50
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e4900d9295cfac1d48a20899080734bfa757b16f
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047856"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688726"
 ---
 # <a name="create-bookingstaffmember"></a>Создание bookingStaffMember
 
@@ -18,7 +18,7 @@ ms.locfileid: "52047856"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [сотрудника в](../resources/bookingstaffmember.md) указанном [bookingbusiness](../resources/bookingbusiness.md).
+Создание нового [сотрудника в](../resources/bookingstaffmember.md) указанном [bookingBusiness](../resources/bookingbusiness.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -37,7 +37,7 @@ POST /bookingBusinesses/{id}/staffMembers
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {code}|
+| Авторизация  | Bearer {код}. Обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса указать JSON-представление [объекта bookingStaffMember.](../resources/bookingstaffmember.md) Необходимо включить следующие свойства:
@@ -48,10 +48,10 @@ POST /bookingBusinesses/{id}/staffMembers
 
 
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `201, Created` [объект bookingStaffMember](../resources/bookingstaffmember.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект bookingStaffMember](../resources/bookingstaffmember.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -71,6 +71,7 @@ Content-length: 309
     "emailAddress":"danas@contoso.com",
     "role@odata.type":"#microsoft.graph.bookingStaffRole",
     "role":"externalGuest",
+    "timeZone":"America/Chicago",
     "useBusinessHours":true,
     "workingHours@odata.type":"#Collection(microsoft.graph.bookingWorkHours)",
     "workingHours":[
@@ -160,9 +161,10 @@ Content-length: 309
 
 ---
 
-В теле запроса указать JSON-представление [объекта bookingStaffMember.](../resources/bookingstaffmember.md)
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа. 
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -180,6 +182,7 @@ Content-type: application/json
     "availabilityIsAffectedByPersonalCalendar":false,
     "colorIndex":1,
     "role":"externalGuest",
+    "timeZone":"America/Chicago",
     "useBusinessHours":true,
     "workingHours":[
         {

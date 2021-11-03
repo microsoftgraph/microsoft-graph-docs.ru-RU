@@ -1,22 +1,24 @@
 ---
 title: 'governanceResource: регистрация'
 description: Регистрация объекта governanceResource в PIM.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 05ab764e1cb4876889cc4627d1f94048990f61ff
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 88f379e283fcfb2cdee2fb44f4f33baa3eeb3c3b
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453865"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687111"
 ---
 # <a name="governanceresource-register"></a>governanceResource: регистрация
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 Регистрация [объекта governanceResource](../resources/governanceresource.md) в управление привилегированными пользователями.
 
@@ -65,7 +67,7 @@ POST /privilegedAccess/azureResources/resources/register
 
 | Имя | Описание |
 |:---- |:----------- |
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса

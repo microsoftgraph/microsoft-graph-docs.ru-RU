@@ -5,16 +5,32 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: f01352fb2e5b9c05c8b5134e95d79cbc46547bbe
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 297544f4616c9a455ff519480b5a95e9db7953f0
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446429"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688397"
 ---
 # <a name="enum-values"></a>Значения Enum
 
 Пространство имен: microsoft.graph
+
+### <a name="volumetype-values"></a>значения volumeType
+
+|Member|
+|:---|
+|operatingSystemVolume|
+|fixedDataVolume|
+|removableDataVolume|
+|unknownFutureValue|
+
+### <a name="filtermode-values"></a>значения filterMode
+
+|Member|
+|:---|
+|включить|
+|исключение|
 
 ### <a name="lifecycleeventtype-values"></a>значения lifecycleEventType
 
@@ -348,7 +364,7 @@ ms.locfileid: "60446429"
 
 |Member|
 |:---|
-|Отсутствует|
+|Нет|
 |SecurityGroup|
 |Все|
 
@@ -1172,7 +1188,7 @@ Enum для серьезности оповещений.
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| почта;   | 1     | Угроза почты.            |
+| mail   | 1     | Угроза почты.            |
 | url    | 2     | УГРОЗА URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 

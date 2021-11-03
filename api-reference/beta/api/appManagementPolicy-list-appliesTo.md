@@ -1,16 +1,16 @@
 ---
 title: Список применяетсяTo
 description: Список ресурсов, присвоенных политике управления приложениями.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: madansr7
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9bf0ac0198c50a02550a53de18ba544f1752895d
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 5ada4a6c98f8568fe4761898f92d7c34d1bc7f65
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58259007"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688375"
 ---
 # <a name="list-appliesto"></a>Список применяетсяTo
 
@@ -26,9 +26,9 @@ ms.locfileid: "58259007"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                             |
 | :------------------------------------- | :--------------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
+| Делегированные (рабочая или учебная учетная запись)     | Application.Read.All и Policy.Read.All, Application.Read.All и Policy.ReadWrite.ApplicationConfiguration |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                             |
-| Приложение                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
+| Application                            | Application.Read.All и Policy.Read.All, Application.Read.All и Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -39,6 +39,7 @@ GET /policies/appManagementPolicies/{id}/appliesTo
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
 Этот метод поддерживает параметры `$select` `$filter` запроса OData и OData для настройки `$top` ответа. Вы можете применить `$filter` к свойствам [поддерживаемых объектов](../resources/application.md) приложения или [servicePrincipal.](../resources/serviceprincipal.md) `$filter` Например, в следующем запросе извлекаем **appId** и **displayName** приложений или директоров служб, которые назначены политике.
 
 ``` http
@@ -52,7 +53,7 @@ https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}/appliesTo?$
 
 | Имя          | Описание               |
 | :------------ | :------------------------ |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -62,9 +63,11 @@ https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}/appliesTo?$
 
 В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [appManagementPolicy](../resources/appManagementPolicy.md) в тексте ответа.
 
-## <a name="example-1-get-applications-and-service-principal-objects-applied-to-an-app-management-policy"></a>Пример 1. Применение приложений и основных объектов службы к политике управления приложениями
+## <a name="examples"></a>Примеры
 
-### <a name="request"></a>Запрос
+### <a name="example-1-get-applications-and-service-principal-objects-applied-to-an-app-management-policy"></a>Пример 1. Применение приложений и основных объектов службы к политике управления приложениями
+
+#### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -97,9 +100,9 @@ GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}/applies
 ---
 
 
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -126,12 +129,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-2-get-specific-properties-of-applications-and-service-principal-objects-applied-to-an-app-management-policy-using-select-query-option"></a>Пример 2. Получение определенных свойств приложений и основных объектов службы, применяемых к политике управления приложениями с $select запроса
+### <a name="example-2-get-specific-properties-of-applications-and-service-principal-objects-applied-to-an-app-management-policy-using-select-query-option"></a>Пример 2. Получение определенных свойств приложений и основных объектов службы, применяемых к политике управления приложениями с $select запроса
 
-### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса.
-
+Ниже приводится пример запроса с помощью $select запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -160,8 +162,7 @@ GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}/applies
 
 ---
 
-
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
 Ниже приводится пример возвращаемого ответа, а также приложений и директоров служб, в которых `id` `appId` применяется `displayName` `createdDateTime` политика.
 

@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementReusablePolicySetting
 description: Graph модели для повторного параметров
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 799fdc402bde4401a823a2d720e822a9001a04d9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 024a4d444e79eb72b2332e07edb76251afe28699
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59051309"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60689181"
 ---
 # <a name="devicemanagementreusablepolicysetting-resource-type"></a>тип ресурса deviceManagementReusablePolicySetting
 
@@ -48,7 +48,7 @@ Graph модели для повторного параметров
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|referencingConfigurationPolicies|[коллекция deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md)|Политики конфигурации, ссылаясь на текущий параметр повторного параметров|
+|referencingConfigurationPolicies|[коллекция deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md)|политики конфигурации, ссылаясь на текущий параметр повторного параметров. Это свойство доступно только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

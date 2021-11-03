@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementConfigurationSetting
 description: Настройка экземпляра в политике
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 312dee429a734a3224aba62770d8408b9f390ddc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d9b55fb92c205e191ead3a61d01137d4c3dc7338
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148209"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696527"
 ---
 # <a name="devicemanagementconfigurationsetting-resource-type"></a>тип ресурса deviceManagementConfigurationSetting
 
@@ -40,7 +40,7 @@ ms.locfileid: "59148209"
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|settingDefinitions|[коллекция deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|Список связанных определений параметров|
+|settingDefinitions|[коллекция deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|Список связанных определений параметров. Это свойство доступно только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

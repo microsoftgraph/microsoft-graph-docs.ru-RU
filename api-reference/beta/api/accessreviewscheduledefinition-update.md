@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: aecea534fd74707241928424fe32fb2135c7d64b
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 60473551b20dc38ba12c97d68b370fa524ddae03
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60559171"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688089"
 ---
 # <a name="update-accessreviewscheduledefinition"></a>Обновление accessReviewScheduleDefinition
 
@@ -51,9 +51,9 @@ PUT /identityGovernance/accessReviews/definitions/{review-id}
 
 | Свойство | Тип | Описание |
 |:-------------|:------------|:------------|
-| descriptionForAdmins | Строка | Контекст обзора, предоставленного администраторам. |
-| descriptionForReviewers | Строка | Контекст обзора, предоставленного рецензентам. |
-| displayName | Строка | Имя серии обзоров доступа. |
+| descriptionForAdmins | String | Контекст обзора, предоставленного администраторам. |
+| descriptionForReviewers | String | Контекст обзора, предоставленного рецензентам. |
+| displayName | String | Имя серии обзоров доступа. |
 | fallbackReviewers|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|Коллекция областей рецензентов, используемых для определения списка рецензентов откатов, которые уведомлены о необходимости принятия мер, если пользователи не найдены из указанного списка рецензентов. Это может произойти, если либо владелец группы указан в качестве рецензента, но владелец группы не существует, либо менеджер указан в качестве рецензента, но диспетчер пользователя не существует.|
 | рецензенты | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|  Определяет, кто такие рецензенты. Если нет указаны, обзор является самообнаверяемой (пользователи просматривают собственный доступ). Свойство **рецензентов** может быть updatable только в том случае, если отдельные пользователи назначены в качестве рецензентов. См. [accessReviewReviewerScope.](../resources/accessreviewreviewerscope.md) |
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) | Параметры для серии обзоров доступа. См. [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md). |
@@ -88,10 +88,12 @@ Content-type: application/json
   "descriptionForAdmins": "Test world",
   "descriptionForReviewers": "Test world",
   "scope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
     "query": "/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f/transitiveMembers",
     "queryType": "MicrosoftGraph"
   },
   "instanceEnumerationScope": {
+    "@odata.type": "#microsoft.graph.accessReviewQueryScope",
     "query": "/groups/b7a059cb-038a-4802-8fc9-b9d1ed0cf11f",
     "queryType": "MicrosoftGraph"
   },

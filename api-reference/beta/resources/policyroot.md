@@ -1,16 +1,16 @@
 ---
 title: тип ресурсов policyRoot
 description: Тип ресурса, подвергая свойства навигации для однотонных политик.
-author: shauliu1
+author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: a9428b6b522a2dccc9d467d003490a97b00aa91c
-ms.sourcegitcommit: 2f394a9f33f2fab3634d0f18882985ee211067d1
+ms.openlocfilehash: 6f0a5b9862a955b9508fb9a9075a848646dbcac8
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60127515"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688439"
 ---
 # <a name="policyroot-resource-type"></a>тип ресурсов policyRoot
 
@@ -18,8 +18,8 @@ ms.locfileid: "60127515"
 
 Тип ресурса, подвергая свойства навигации для однотонных политик.
 
-## <a name="methods"></a>Методы
-Отсутствует
+## <a name="methods"></a>Methods
+Нет
 
 ## <a name="properties"></a>Свойства
 Нет

@@ -2,15 +2,15 @@
 title: Тип ресурса deviceConfigurationAssignment
 description: Объект назначения конфигурации устройств назначает группу AAD определенной конфигурации устройств.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 00eadc21655f9f10534a4b11cfc87a1e795a747f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 50ec850986b907acf91c2c9f0518e9f76d1aa7be
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59101593"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696065"
 ---
 # <a name="deviceconfigurationassignment-resource-type"></a>Тип ресурса deviceConfigurationAssignment
 
@@ -38,6 +38,7 @@ ms.locfileid: "59101593"
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения для конфигурации устройств.|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Источник назначения для конфигурации устройства, прямой или пакетной или политикиSet. Это свойство доступно только для чтения. Возможные значения: `direct`, `policySets`.|
 |sourceId|String|Идентификатор источника назначения. Это свойство доступно только для чтения.|
+|intent|[deviceConfigAssignmentIntent](../resources/intune-deviceconfig-deviceconfigassignmentintent.md)|Намерение администратора применить или удалить профиль. Это свойство доступно только для чтения. Возможные значения: `apply`, `remove`.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -61,7 +62,8 @@ ms.locfileid: "59101593"
     "collectionId": "String"
   },
   "source": "String",
-  "sourceId": "String"
+  "sourceId": "String",
+  "intent": "String"
 }
 ```
 

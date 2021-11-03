@@ -1,16 +1,16 @@
 ---
 title: тип ресурса unifiedRoleManagementPolicy
 description: В unifiedRoleManagementPolicy указаны различные политики, связанные с областью и определением ролей. Она получена из microsoft.graph.policyBase.
-author: shauliu1
+author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: b27726e12815f058091bc09308344c150cb73b2f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4680bc93bed7995eb35d08ecf4d10750710ca40e
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046521"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687538"
 ---
 # <a name="unifiedrolemanagementpolicy-resource-type"></a>тип ресурса unifiedRoleManagementPolicy
 
@@ -32,7 +32,7 @@ ms.locfileid: "59046521"
 |description|String|Описание политики.|
 |displayName|String|Отображение имени политики.|
 |id|String|Уникальный идентификатор для политики.|
-|isOrganizationDefault|Логическое|Это может быть установлено только для одной широкой политики клиента, которая будет применяться для всех областей и ролей. Установите область ScopeId на "/" и scopeType в Directory.|
+|isOrganizationDefault|Логический|Это может быть установлено только для одной широкой политики клиента, которая будет применяться для всех областей и ролей. Установите область ScopeId на "/" и scopeType в Directory.|
 |lastModifiedBy|[identity](../resources/identity.md)|Идентификатор, который в последний раз изменил параметр роли.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения параметра роли.|
 |scopeId|String|ID области, в которой создается политика. Например, "/", groupId и т. д.|

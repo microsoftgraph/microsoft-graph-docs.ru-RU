@@ -2,15 +2,15 @@
 title: Обновление объекта windowsUpdateForBusinessConfiguration
 description: Обновление свойств объекта windowsUpdateForBusinessConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 85c6cd1c21476f7fa553b1ffc38becce19226ae1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c576b082dee21d0dabccd15fd8e965ea4da6f2a1
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59070806"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60686936"
 ---
 # <a name="update-windowsupdateforbusinessconfiguration"></a>Обновление объекта windowsUpdateForBusinessConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "59070806"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -45,7 +45,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,8 +57,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|supportsScopeTags|Boolean|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость к выпуску ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -79,13 +79,13 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|Дата и время завершения срока приостановки исправлений.|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|Дата и время, когда будет завершен срок приостановки обновлений компонентов.|
 |businessReadyUpdatesOnly|[windowsUpdateType](../resources/intune-deviceconfig-windowsupdatetype.md)|Определяет, из каких устройств филиалов будут получаться обновления. Возможные значения: `userDefined`, `all`, `businessReadyOnly`, `windowsInsiderBuildFast`, `windowsInsiderBuildSlow`, `windowsInsiderBuildRelease`.|
-|skipChecksBeforeRestart|Логическое|Установите, чтобы пропустить все проверки перед перезапуском: уровень батареи = 40%, присутствие пользователя, отображение необходимо, режим презентации, полноэкранный режим, состояние телефонных звонков, режим игры и т. д. |
+|skipChecksBeforeRestart|Логический|Установите, чтобы пропустить все проверки перед перезапуском: уровень батареи = 40%, присутствие пользователя, отображение необходимо, режим презентации, полноэкранный режим, состояние телефонных звонков, режим игры и т. д. |
 |updateWeeks|[windowsUpdateForBusinessUpdateWeeks](../resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)|Запланирована установка обновления в течение нескольких недель месяца. Возможные значения: `userDefined`, `firstWeek`, `secondWeek`, `thirdWeek`, `fourthWeek`, `everyWeek`.|
 |qualityUpdatesPauseStartDate|Дата|Дата начала приостановки обновления качества. Это свойство доступно только для чтения.|
 |featureUpdatesPauseStartDate|Дата|Дата начала приостановки обновления функций. Это свойство доступно только для чтения.|
 |featureUpdatesRollbackWindowInDays|Int32|Количество дней после обновления функции, для которого допустим откат|
-|qualityUpdatesWillBeRolledBack|Boolean|Указывает, следует ли откат обновлений качества при следующей проверке устройства|
-|featureUpdatesWillBeRolledBack|Boolean|Указывает, следует ли откат обновлений функций при следующей проверке устройства|
+|qualityUpdatesWillBeRolledBack|Логический|Указывает, следует ли откат обновлений качества при следующей проверке устройства|
+|featureUpdatesWillBeRolledBack|Логический|Указывает, следует ли откат обновлений функций при следующей проверке устройства|
 |qualityUpdatesRollbackStartDateTime|DateTimeOffset|Дата начала отката обновлений качества|
 |featureUpdatesRollbackStartDateTime|DateTimeOffset|Дата начала отката обновлений функций|
 |engagedRestartDeadlineInDays|Int32|Крайний срок за несколько дней до автоматического планирования и выполнения ожидающих перезагрузки вне активных часов с допустимым диапазоном от 2 до 30 дней|
@@ -94,13 +94,14 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |deadlineForFeatureUpdatesInDays|Int32|Количество дней до установки обновлений функций автоматически с допустимым диапазоном от 2 до 30 дней|
 |deadlineForQualityUpdatesInDays|Int32|Количество дней до установки обновлений качества автоматически с допустимым диапазоном от 2 до 30 дней|
 |deadlineGracePeriodInDays|Int32|Количество дней после крайнего срока до автоматического перезапуска с допустимым диапазоном от 0 до 7 дней|
-|postponeRebootUntilAfterDeadline|Boolean|Указывает, следует ли устройству дождаться крайнего срока для перезагрузки вне активных часов|
+|postponeRebootUntilAfterDeadline|Логический|Указывает, следует ли устройству дождаться крайнего срока для перезагрузки вне активных часов|
 |autoRestartNotificationDismissal|[autoRestartNotificationDismissalMethod](../resources/intune-deviceconfig-autorestartnotificationdismissalmethod.md)|Укажите метод, с помощью которого необходимое уведомление автоматически перезапустится. Возможные значения: `notConfigured`, `automatic`, `user`.|
 |scheduleRestartWarningInHours|Int32|Укажите период для уведомлений о предупреждении автоматической перезапуска. Поддерживаемые значения: 2, 4, 8, 12 или 24 (часы).|
 |scheduleImminentRestartWarningInMinutes|Int32|Укажите период автоматического перезапуска оповещений о неминуемом предупреждении. Поддерживаемые значения: 15, 30 или 60 (минут).|
 |userPauseAccess|[включить](../resources/intune-shared-enablement.md)|Указывает, следует ли включить доступ конечных пользователей к приостановке обновлений программного обеспечения. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |userWindowsUpdateScanAccess|[включить](../resources/intune-shared-enablement.md)|Указывает, следует ли отключить доступ пользователя к проверке Windows Update. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |updateNotificationLevel|[windowsUpdateNotificationDisplayOption](../resources/intune-deviceconfig-windowsupdatenotificationdisplayoption.md)|Указывает, какие Windows уведомления об обновлении пользователи видят. Возможные значения: `notConfigured`, `defaultNotifications`, `restartWarningsOnly`, `disableAllNotifications`.|
+|allowWindows11Upgrade|Логический|Разрешить подходящим Windows 10 устройствам для обновления до последней версии Windows 11.|
 
 
 
@@ -114,7 +115,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 2794
+Content-length: 2828
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -184,7 +185,8 @@ Content-length: 2794
   "scheduleImminentRestartWarningInMinutes": 7,
   "userPauseAccess": "enabled",
   "userWindowsUpdateScanAccess": "enabled",
-  "updateNotificationLevel": "defaultNotifications"
+  "updateNotificationLevel": "defaultNotifications",
+  "allowWindows11Upgrade": true
 }
 ```
 
@@ -193,7 +195,7 @@ Content-length: 2794
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2966
+Content-Length: 3000
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -266,7 +268,8 @@ Content-Length: 2966
   "scheduleImminentRestartWarningInMinutes": 7,
   "userPauseAccess": "enabled",
   "userWindowsUpdateScanAccess": "enabled",
-  "updateNotificationLevel": "defaultNotifications"
+  "updateNotificationLevel": "defaultNotifications",
+  "allowWindows11Upgrade": true
 }
 ```
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 43e5ac410af72a26c02bc9b986226812eadec545
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: bfc8545644c1d2c65f4312b7e7444847fad9dc18
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60487165"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694647"
 ---
 # <a name="create-devicemanagementconfigurationcategory"></a>Создание deviceManagementConfigurationCategory
 
@@ -29,7 +29,7 @@ ms.locfileid: "60487165"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,6 +37,7 @@ ms.locfileid: "60487165"
 }
 -->
 ``` http
+POST /deviceManagement/complianceCategories
 POST /deviceManagement/configurationCategories
 ```
 
@@ -55,12 +56,13 @@ POST /deviceManagement/configurationCategories
 |:---|:---|:---|
 |id|String|Идентификатор элемента|
 |description|String|Описание элемента|
+|categoryDescription|String|Описание загона категории|
 |helpText|String|Справка текста элемента|
 |name|String|Имя элемента|
 |displayName|String|Отображение имени элемента|
 |платформы|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Типы платформ, которые имеются в этой категории. Возможные значения: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`.|
 |технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Типы технологий, которые имеют параметры в категории. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`, `linuxMdm`, `unknownFutureValue`.|
-|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Указывает, что категория содержит параметры, используемые для соответствия требованиям или конфигурации. Возможные значения: `none`, `configuration`.|
+|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Указывает, что категория содержит параметры, используемые для соответствия требованиям или конфигурации. Возможные значения: `none`, `configuration`, `compliance`.|
 |parentCategoryId|String|Родительский id категории.|
 |rootCategoryId|String|Корневой id категории.|
 |childCategoryIds|Коллекция строк|Список детских ids этой категории.|
@@ -75,13 +77,14 @@ POST /deviceManagement/configurationCategories
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/configurationCategories
+POST https://graph.microsoft.com/beta/deviceManagement/complianceCategories
 Content-type: application/json
-Content-length: 467
+Content-length: 523
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationCategory",
   "description": "Description value",
+  "categoryDescription": "Category Description value",
   "helpText": "Help Text value",
   "name": "Name value",
   "displayName": "Display Name value",
@@ -101,12 +104,13 @@ Content-length: 467
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 516
+Content-Length: 572
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationCategory",
   "id": "cff34dd2-4dd2-cff3-d24d-f3cfd24df3cf",
   "description": "Description value",
+  "categoryDescription": "Category Description value",
   "helpText": "Help Text value",
   "name": "Name value",
   "displayName": "Display Name value",

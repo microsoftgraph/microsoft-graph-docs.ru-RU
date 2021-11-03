@@ -1,16 +1,16 @@
 ---
 title: тип ресурса unifiedRoleManagementPolicyNotificationRule
 description: В единойroleManagementPolicyNotificationRule указывается правило уведомлений, связанное с политикой управления ролью. Она получена из microsoft.graph.unifiedRoleManagementPolicyRule.
-author: shauliu1
+author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: eae130fb4fdf2781aa8cb8a83d6cdd03314bb1fd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: af01ef759635b125748871b95d892ffe5bf37adf
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59074489"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688151"
 ---
 # <a name="unifiedrolemanagementpolicynotificationrule-resource-type"></a>тип ресурса unifiedRoleManagementPolicyNotificationRule
 
@@ -25,13 +25,13 @@ ms.locfileid: "59074489"
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для правила. Унаследованный от [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
 |notificationLevel|String|Уровень уведомления. Один из "Нет", "Критический", "Все".|
-|notificationRecipients|Коллекция String|Список уведомлений перекликается с электронной почтой.|
+|notificationRecipients|Коллекция строк|Список уведомлений перекликается с электронной почтой.|
 |notificationType|String|Тип уведомления. Одно из сообщений электронной почты.|
-|recipientType|Строка|Тип получателя. Один из requestor, Approver, Admin.|
+|recipientType|String|Тип получателя. Один из requestor, Approver, Admin.|
 |isDefaultRecipientsEnabled|Логический|Получает ли получатель электронной почты по умолчанию или нет.|
 |target|[unifiedRoleManagementPolicyRuleTarget](../resources/unifiedrolemanagementpolicyruletarget.md)|Цель правила. Унаследованный от [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md)|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

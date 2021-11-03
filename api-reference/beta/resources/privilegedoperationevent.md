@@ -1,22 +1,24 @@
 ---
 title: тип ресурса privilegedOperationEvent
 description: Представляет событие аудита, которое создается управление привилегированными пользователями для операций ролей, например администратор управляет привилегированными ролями, пользователь активирует свою роль, а пользователь отключает свою роль.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: af317a8fa1257b9ba9e6bb4c80dc4291337b4d8c
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: ddeba79dba2bd3f329d62fff3b90a599f2ceb49a
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454096"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687545"
 ---
-# <a name="privilegedoperationevent-resource-type"></a>тип ресурса privilegedOperationEvent
+# <a name="privilegedoperationevent-resource-type-deprecated"></a>тип ресурсов privilegedOperationEvent (обесценен)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Представляет событие аудита, которое создается управление привилегированными пользователями для операций ролей, например администратор управляет привилегированными ролями, пользователь активирует свою роль, а пользователь отключает свою роль.
 

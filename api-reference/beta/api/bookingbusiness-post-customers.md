@@ -1,16 +1,16 @@
 ---
 title: Создание bookingCustomer
 description: Создайте новый объект bookingCustomer.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 5206c6969f2a0f9504cfecd347e7e215577caae1
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e8533fc8eb387b8690c24b0806e370431ae8c11e
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047870"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60689174"
 ---
 # <a name="create-bookingcustomer"></a>Создание bookingCustomer
 
@@ -37,17 +37,17 @@ POST /bookingBusinesses/{id}/customers
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {code}|
+| Авторизация  | Bearer {код}. Обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса указать JSON-представление [объекта bookingCustomer.](../resources/bookingcustomer.md)
 
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика и `201, Created` [объект bookingCustomer](../resources/bookingcustomer.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект bookingCustomer](../resources/bookingcustomer.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -61,7 +61,37 @@ Content-type: application/json
 
 {
     "displayName": "Joni Sherman",
-    "emailAddress": "jonis@relecloud.com"
+    "emailAddress": "jonis@relecloud.com",
+    "addresses": [
+        {
+            "postOfficeBox":"",
+            "street":"4567 Main Street",
+            "city":"Buffalo",
+            "state":"NY",
+            "countryOrRegion":"USA",
+            "postalCode":"98052",
+            "type":"home"
+        },
+        {
+            "postOfficeBox":"",
+            "street":"4570 Main Street",
+            "city":"Buffalo",
+            "state":"NY",
+            "countryOrRegion":"USA",
+            "postalCode":"98054",
+            "type":"business"
+        }
+    ],
+    "phones": [
+        {
+            "number": "206-555-0100",
+            "type": "home"
+        },
+        {
+            "number": "206-555-0200",
+            "type": "business"
+        }
+     ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -82,9 +112,10 @@ Content-type: application/json
 
 ---
 
-В теле запроса указать JSON-представление [объекта bookingCustomer.](../resources/bookingcustomer.md)
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа. 
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -98,7 +129,37 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/customers/$entity",
     "id": "36038f36-634e-44e4-9415-d7d59c2347aa",
     "displayName": "Joni Sherman",
-    "emailAddress": "jonis@relecloud.com"
+    "emailAddress": "jonis@relecloud.com",
+    "addresses": [
+        {
+            "postOfficeBox":"",
+            "street":"4567 Main Street",
+            "city":"Buffalo",
+            "state":"NY",
+            "countryOrRegion":"USA",
+            "postalCode":"98052",
+            "type":"home"
+        },
+        {
+            "postOfficeBox":"",
+            "street":"4570 Main Street",
+            "city":"Buffalo",
+            "state":"NY",
+            "countryOrRegion":"USA",
+            "postalCode":"98054",
+            "type":"business"
+        }
+    ],
+    "phones": [
+        {
+            "number": "206-555-0100",
+            "type": "home"
+        },
+        {
+            "number": "206-555-0200",
+            "type": "business"
+        }
+     ]
 }
 ```
 

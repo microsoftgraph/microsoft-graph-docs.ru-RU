@@ -1,16 +1,16 @@
 ---
 title: тип ресурса unifiedRoleScheduleInstanceBase
 description: Базовое свойство экземпляра единого расписания ролей, объединяющего экземпляр расписания унифицированных ролей и экземпляр расписания унифицированных ролей
-author: shauliu1
+author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 8ccf9a7c612eeaebfcfc1cd326ef87ecc80d00e5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8f33bef81e0dc99a416e50fedafda2a5bc1765ea
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050861"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694444"
 ---
 # <a name="unifiedrolescheduleinstancebase-resource-type"></a>тип ресурса unifiedRoleScheduleInstanceBase
 

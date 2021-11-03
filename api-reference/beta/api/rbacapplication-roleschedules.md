@@ -1,16 +1,16 @@
 ---
 title: 'rbacApplication: roleSchedules'
 description: Извлечение обеих ролейAssignmentSchedules и roleEligibilitySchedules.
-author: shauliu1
-localization_priority: Normal
+author: carolinetempleton
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3e098692d1c34b0b1eee077554e7620ace9a31f8
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 51b175f2a7cf53cfe9a7778ccfc8ae6f2202fe18
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453991"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695974"
 ---
 # <a name="rbacapplication-roleschedules"></a>rbacApplication: roleSchedules
 Пространство имен: microsoft.graph
@@ -52,7 +52,7 @@ GET /roleManagement/directory/roleSchedules
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

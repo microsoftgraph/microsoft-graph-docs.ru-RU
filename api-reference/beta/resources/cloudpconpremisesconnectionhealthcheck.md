@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: d091f174fa308c44418e5332657f45bbf82cdaf9
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 6eb5d684419c0ebe7d68deab50cc0b4e01473466
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767057"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695421"
 ---
 # <a name="cloudpconpremisesconnectionhealthcheck-resource-type"></a>тип ресурса cloudPcOnPremisesConnectionHealthCheck
 
@@ -30,13 +30,13 @@ ms.locfileid: "59767057"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя отображения этого элемента проверки состояния.|
+|displayName|String|Имя отображения этого элемента проверки состояния.|
 |status|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|Состояние элемента проверки состояния. Возможные значения: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`. Только для чтения.|
 |startDateTime|DateTimeOffset|Время начала элемента проверки состояния. Только для чтения.|
 |endDateTime|DateTimeOffset|Конечное время проверки состояния элемента. Только для чтения.|
 |errorType|[cloudPcOnPremisesConnectionHealthCheckErrorType](#cloudpconpremisesconnectionhealthcheckerrortype-values)|Тип ошибки, которая произошла во время проверки состояния.|
 |recommendedAction|String|Рекомендуемое действие для устранения соответствующей ошибки.|
-|additionalDetails|Строка|Дополнительные сведения о проверке состояния здоровья или рекомендуемом действии.|
+|additionalDetails|String|Дополнительные сведения о проверке состояния здоровья или рекомендуемом действии.|
 
 ### <a name="cloudpconpremisesconnectionhealthcheckerrortype-values"></a>значения cloudPcOnPremisesConnectionHealthCheckErrorType
 
@@ -57,6 +57,9 @@ ms.locfileid: "59767057"
 |endpointConnectivityCheckUnknownError|Во время подготовка не удалось связаться с одним или более требуемой URL-адресами. Убедитесь, что все необходимые URL-адреса разрешены через брандмауэры и прокси.|
 |azureAdDeviceSyncCheckDeviceNotFound|Объект облачного компьютера компьютера не может быть найден в Azure Active Directory (Azure AD). Убедитесь, что Azure AD часто работает и синхронизируется, чтобы объекты облачного компьютера синхронизировались с Azure AD. Синхронизация устройств Azure AD должна быть включена и синхронизирована в течение последних 60 минут.|
 |azureAdDeviceSyncCheckLongSyncCircle|Проверка синхронизации объекта облачного компьютера с Azure Active Directory (Azure AD). Убедитесь, что Azure AD часто работает и синхронизируется, чтобы объекты облачного компьютера синхронизировались с Azure AD. Синхронизация устройств Azure AD должна быть включена и синхронизирована в течение последних 60 минут.|
+|azureAdDeviceSyncCheckConnectDisabled|Проверка синхронизации Azure Active Directory (Azure AD) не удалось из-за отключения Подключение Azure AD. Убедитесь, что Подключение Azure AD включен и часто синхронизируется. Если служба Azure AD Подключение не синхронизирует компьютер в течение 60 минут, проверка будет неудалась.|
+|azureAdDeviceSyncCheckDurationExceeded|Проверка синхронизации Azure Active Directory устройства Azure AD не удалось, так как синхронизируются Подключение Azure AD в течение 60 минут. Убедитесь, что Подключение Azure AD включен и часто синхронизируется. Если служба Azure AD Подключение не синхронизирует компьютер в течение 60 минут, проверка будет неудалась.|
+|azureAdDeviceSyncCheckTransientServiceError|Проверка синхронизации Azure Active Directory устройства Azure AD не удалось из-за переходной ошибки. Попробуйте еще раз. Если проблема сохраняется, обратитесь в службу поддержки клиентов.|
 |azureAdDeviceSyncCheckUnknownError|Проверка подключения Azure Active Directory (Azure AD) не удалось. Убедитесь, что Azure AD часто работает и синхронизируется, чтобы объекты облачного компьютера синхронизировались с Azure AD. Синхронизация устройств Azure AD должна быть включена и синхронизирована в течение последних 60 минут.|
 |resourceAvailabilityCheckNoSubnetIP|Предоставленная подсеть не имеет IP-адресов. Убедитесь, что подсети, предоставляемые в локальном сетевом соединении, имеют достаточные IP-адреса. Пожалуйста, расширйте текущую выбранную подсеть или выберите другую подсеть, которая будет использоваться для предварительного обеспечения.|
 |resourceAvailabilityCheckSubscriptionDisabled|Предоставленная подписка Azure отключена. Убедитесь, что подписка Azure включена и доступна для предварительной провизии.|
@@ -65,11 +68,13 @@ ms.locfileid: "59767057"
 |resourceAvailabilityCheckSubscriptionTransferred|Доступ к предоставленной подписке Azure не предоставляется. Убедитесь, что подписка Azure доступна для предварительного обеспечения.|
 |resourceAvailabilityCheckGeneralSubscriptionError|Политика Azure ограничивает создание ресурсов. Убедитесь, что политика Azure не ограничивает создание ресурсов в группе подписки и/или ресурсов.|
 |resourceAvailabilityCheckUnsupportedVNetRegion|Выбранный vNet расположен в неподтверченном регионе. Убедитесь, что выбранный vNet расположен в поддерживаемом регионе.|
+|resourceAvailabilityCheckTransientServiceError|Проверка доступности ресурсов не удалось из-за преходящей ошибки. Попробуйте еще раз. Если проблема сохраняется, обратитесь в службу поддержки клиентов.|
 |resourceAvailabilityCheckUnknownError|Проверка доступности ресурсов для ресурсов Azure не удалось из-за неизвестной ошибки. Убедитесь, что все ресурсы Azure соответствуют необходимым требованиям.|
 |permissionCheckNoSubscriptionReaderRole|У директора службы облачных ПК нет достаточных разрешений на подписку Azure. Убедитесь, что у директора облачной службы ПК есть разрешения *reader* в подписке.|
 |permissionCheckNoResourceGroupOwnerRole|Руководитель службы облачных ПК не имеет достаточных разрешений в группе ресурсов Azure. Убедитесь, что у директора службы облачных ПК *есть* разрешения владельца в группе ресурсов. |
 |permissionCheckNoVNetContributorRole|У директора службы облачных ПК нет достаточных разрешений в Azure vNet. Убедитесь, что в службе облачных ПК *есть* разрешения на вкладчик Сети в vNet.|
 |permissionCheckNoResourceGroupNetworkContributorRole|Руководитель службы облачных ПК не имеет достаточных разрешений в группе ресурсов Azure. Убедитесь, что в группе ресурсов у приложения есть разрешения на авторов сети.|
+|permissionCheckTransientServiceError|Проверка разрешений на первое приложение не удалось из-за преходящей ошибки. Попробуйте еще раз. Если проблема сохраняется, обратитесь в службу поддержки клиентов.|
 |permissionCheckUnknownError|У директора службы облачных ПК нет достаточных разрешений. Убедитесь, что директору облачной службы ПК предоставлено достаточное количество разрешений Azure.|
 |internalServerErrorDeploymentCanceled|Развертывание было отменено. Повторите попытку позже. Если проблема сохраняется, обратитесь в службу поддержки.|
 |internalServerErrorAllocateResourceFailed|Выделение ресурсов не удалось. Повторите попытку позже. Если проблема сохраняется, обратитесь в службу поддержки.|

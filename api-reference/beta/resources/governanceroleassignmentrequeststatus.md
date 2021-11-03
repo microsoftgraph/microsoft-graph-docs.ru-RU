@@ -1,16 +1,16 @@
 ---
 title: тип ресурса governanceRoleAssignmentRequestStatus
 description: Представляет состояние governanceRoleAssignmentRequest.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 80994db594c2f0e45dfe36a5fbf32260266a0536
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: e04b49fedf761ef3715d152fdc2a07a3af139bc3
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453543"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695414"
 ---
 # <a name="governanceroleassignmentrequeststatus-resource-type"></a>тип ресурса governanceRoleAssignmentRequestStatus
 

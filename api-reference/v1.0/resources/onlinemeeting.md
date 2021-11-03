@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 5d1c78ced2396741dfae7184aa260f56ba1d5f07
-ms.sourcegitcommit: cbad97d6a8ccb89b1822b30a11cc9b6f2670deda
+ms.openlocfilehash: d6f11bea8afcbb9a53f90789c32ea014bbee8f46
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60016594"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696051"
 ---
 # <a name="onlinemeeting-resource-type"></a>Тип ресурса onlineMeeting
 
@@ -25,7 +25,7 @@ ms.locfileid: "60016594"
 | [Создание объекта onlineMeeting](../api/application-post-onlineMeetings.md)  | [onlineMeeting](onlinemeeting.md) | Создание собрания в Интернете.                                                                                    |
 | [Get onlineMeeting](../api/onlinemeeting-get.md)                   | [onlineMeeting](onlinemeeting.md) | Ознакомьтесь с свойствами и отношениями **объекта onlineMeeting.**                                        |
 | [Обновление](../api/onlinemeeting-update.md)                           | [onlineMeeting](onlinemeeting.md) | Обновление свойств объекта **onlineMeeting.** |
-| [Удаление onlineMeeting](../api/onlinemeeting-delete.md)             | Отсутствует                              | Удаление **объекта onlineMeeting.**                                                                                    |
+| [Удаление onlineMeeting](../api/onlinemeeting-delete.md)             | Нет                              | Удаление **объекта onlineMeeting.**                                                                                    |
 | [Создание или доступ к onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Создайте **объект onlineMeeting** с пользовательским внешним ID. Если собрание уже существует, извлекай его свойства. |
 
 ## <a name="properties"></a>Свойства
@@ -33,24 +33,24 @@ ms.locfileid: "60016594"
 | Свойство              | Тип                                          | Описание                                                                                                                |
 | :-------------------- | :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)                       | Указывает, кто может быть презентовщиком на собрании. Возможные значения перечислены в следующей таблице.                          |
-| allowAttendeeToEnableCamera     | Boolean                       | Указывает, могут ли участники включить камеру.                          |
-| allowAttendeeToEnableMic     | Boolean                       | Указывает, могут ли участники включить микрофон.                          |
+| allowAttendeeToEnableCamera     | Логический                       | Указывает, могут ли участники включить камеру.                          |
+| allowAttendeeToEnableMic     | Логический                       | Указывает, могут ли участники включить микрофон.                          |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Указывает режим чата собраний. |
-| allowTeamworkReactions | Boolean | Указывает, Teams для собрания включены ли Teams реакции. |
-| attendeeReport | Stream | Поток контента отчета участника о событии в прямом эфире. Только для чтения. |
+| allowTeamworkReactions | Логический | Указывает, Teams для собрания включены ли Teams реакции. |
+| attendeeReport | Stream | Поток контента отчета участника о событии [Microsoft Teams в прямом эфире.](/microsoftteams/teams-live-events/what-are-teams-live-events) Только для чтения. |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | Сведения о доступе к телефону для собрания в Интернете. Только для чтения.                                                   |
 | broadcastSettings              | [broadcastMeetingSettings](broadcastMeetingSettings.md)                      | Параметры, связанных с живым событием.                                                                  |
 | chatInfo              | [chatInfo](chatinfo.md)                       | Сведения о чате, связанные с этой онлайн-встречей.                                                                  |
 | creationDateTime      | Даты и время                                      | Время создания собрания в UTC. Только для чтения.                                                                               |
 | endDateTime           | Даты и время                                      | Время окончания собрания в UTC.                                                                                               |
 | id                    | String                                        | ID по умолчанию, связанный с онлайн-собранием. Только для чтения.                                                              |
-| isBroadcast  | Boolean                                       | Указывает, является ли это событием в прямом эфире.                  |
-| isEntryExitAnnounced  | Boolean                                       | Указывает, следует ли объявлять, когда звонители присоединяются или уходят.                                                                     |
+| isBroadcast  | Логический                                       | Указывает, является ли это Teams событием в [прямом эфире.](/microsoftteams/teams-live-events/what-are-teams-live-events)                  |
+| isEntryExitAnnounced  | Логический                                       | Указывает, следует ли объявлять, когда звонители присоединяются или уходят.                                                                     |
 | joinInformation       | [itemBody](itembody.md)                       | Сведения о присоединиться в варианте языка и языка, указанные в `Accept-Language` заглавной странице HTTP запроса. Только для чтения. |
 | joinWebUrl            | String                                        | URL-адрес присоединиться к собранию в Интернете. Только для чтения.                                                                             |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Указывает, какие участники могут обойти вестибюль собрания.                                                               |
 | participants          | [meetingParticipants](meetingparticipants.md) | Участники, связанные с онлайн-собранием.  Это включает организатора и участников.                       |
-| recordAutomatically | Boolean | Указывает, следует ли записывать собрание автоматически. |
+| recordAutomatically | Логический | Указывает, следует ли записывать собрание автоматически. |
 | startDateTime         | Даты и время                                      | Время начала собрания в UTC.                                                                                             |
 | subject               | String                                        | Тема собрания в Интернете.                                                                                         |
 | videoTeleconferenceId | String                                        | ID видеоконференции. Только для чтения.                                                                                  |

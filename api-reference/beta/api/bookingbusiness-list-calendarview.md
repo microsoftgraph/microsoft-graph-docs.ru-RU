@@ -1,16 +1,16 @@
 ---
 title: Представление календаря "Список резервирований"
 description: Получите коллекцию объектов bookingAppointment для bookingBusiness, которая происходит в указанном диапазоне дат.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: d96e5b2f2c7f435a0ea8dcd39a4b58ae7657c222
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a826f8063e2037bb9c60ec808faecbef4fb3b1d9
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047912"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60693981"
 ---
 # <a name="list-bookings-calendarview"></a>Представление календаря "Список резервирований"
 
@@ -41,12 +41,12 @@ GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|начать|DateTimeOffset|Дата начала и время диапазона времени, представленного в формате ISO 8601, как UTC или смещение от UTC. Например, полночь UTC 1 января 2018 г. будет выглядеть так: '2018-01-01T00:00:00Z', и то же время в PST будет выглядеть так: '2017-12-31T16:00:00-08:00'.|
+|start|DateTimeOffset|Дата начала и время диапазона времени, представленного в формате ISO 8601, как UTC или смещение от UTC. Например, полночь UTC 1 января 2018 г. будет выглядеть так: '2018-01-01T00:00:00Z', и то же время в PST будет выглядеть так: '2017-12-31T16:00:00-08:00'.|
 |end|DateTimeOffset|Дата окончания и время диапазона времени, представленного в формате ISO 8601, как UTC или смещение от UTC. Например, 1 января 2018 г. UTC в 3:00 будет выглядеть так: '2018-01-01T03:00:00Z', а в PST будет выглядеть так: '2017-12-31T19:00:00-08:00'.|
 
 Значения и интерпретируются с помощью смещения часового пояса, указанного в соответствующих значениях, и не влияют на значение заглавного заглавного `start` `end` `Prefer: outlook.timezone` загона, если он присутствует.
 
-Этот метод также поддерживает некоторые [параметры запросов OData](/graph/query-parameters) для настройки отклика.
+Этот метод также поддерживает некоторые параметры [запроса OData,](/graph/query-parameters) чтобы помочь настроить ответ.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
@@ -61,7 +61,7 @@ GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
 
 ## <a name="example"></a>Пример
 Ниже приводится пример вызова этого API.
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -91,8 +91,11 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365
 ---
 
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа. 
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -109,11 +112,15 @@ Content-type: application/json
         {
             "id": "AAMkADKpAAA=",
             "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
+            "isLocationOnline": true,
+            "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTlhZTE3MDUtODk0Yy00MGZkLTlhNzktN2FmYTk3MDUxNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
             "customerId": "80b5ddda-1e3b-4c9d-abe2-d606cc075e2e",
             "customerName": "Adele Vance",
             "customerEmailAddress": "adelev@proseware.com",
             "customerPhone": "213-555-0156",
+            "customerTimeZone": "America/Chicago",
             "customerNotes": null,
+            "smsNotificationsEnabled": true,
             "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976",
             "serviceName": "Catered bento",
             "duration": "PT30M",
@@ -193,11 +200,15 @@ Content-type: application/json
         {
             "id": "AAMkADKnAAA=",
             "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
+            "isLocationOnline": true,
+            "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MDUtODk0Yy00MGZkLTlhNzktN2xNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
             "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
             "customerName": "Jordan Miller",
             "customerEmailAddress": "jordanm@contoso.com",
             "customerPhone": "213-555-0199",
+            "customerTimeZone": "America/Chicago",
             "customerNotes": null,
+            "smsNotificationsEnabled": true,
             "serviceId": "57da6774-a087-4d69-b0e6-6fb82c339976",
             "serviceName": "Catered bento",
             "duration": "PT30M",

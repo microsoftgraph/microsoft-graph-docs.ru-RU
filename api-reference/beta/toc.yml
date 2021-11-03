@@ -281,6 +281,8 @@ items:
                 href: api/user-changepassword.md
               - name: Получение дельты
                 href: api/user-delta.md
+              - name: Проверка пароля
+                href: api/user-validatepassword.md
               - name: Недействительными маркеры обновления
                 href: api/user-invalidateallrefreshtokens.md
           - name: Назначение ролей приложений
@@ -873,6 +875,23 @@ items:
                         href: api/application-post-extensionproperty.md
                       - name: Удалить
                         href: api/application-delete-extensionproperty.md
+              - name: Федераированные учетные данные удостоверений (предварительный просмотр)
+                items:
+                  - name: Обзор
+                    href: resources/federatedidentitycredentials-overview.md
+                  - name: Федераированные учетные данные удостоверений
+                    href: resources/federatedidentitycredential.md
+                    items:
+                      - name: Список
+                        href: api/application-list-federatedidentitycredentials.md
+                      - name: Создание
+                        href: api/application-post-federatedidentitycredentials.md
+                      - name: Получение
+                        href: api/federatedidentitycredential-get.md
+                      - name: Обновление
+                        href: api/federatedidentitycredential-update.md
+                      - name: Delete
+                        href: api/federatedidentitycredential-delete.md
               - name: Владельцы
                 items:
                   - name: Список владельцев
@@ -1721,11 +1740,11 @@ items:
                     href: api/ediscovery-tag-childtags.md
                   - name: Теги списка как иерархия
                     href: api/ediscovery-tag-ashierarchy.md
-          - name: Запрос на права субъекта
+          - name: Запросы прав субъекта
             items:
               - name: Обзор
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
-              - name: Запрос на права субъекта
+              - name: Запросы прав субъекта
                 href: resources/subjectrightsrequest.md
                 items:
                   - name: Список
@@ -4658,6 +4677,8 @@ items:
                         href: api/intune-deviceconfig-devicecomplianceuserstatus-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-devicecomplianceuserstatus-update.md
+                  - name: Назначение конфигурировать устройства
+                    href: resources/intune-deviceconfig-deviceconfigassignmentintent.md
                   - name: Назначение конфигурации устройства
                     href: resources/intune-deviceconfig-deviceconfigurationassignment.md
                     items:
@@ -7004,29 +7025,12 @@ items:
                     href: resources/intune-auditing-auditproperty.md
                   - name: Ресурс аудита
                     href: resources/intune-auditing-auditresource.md
-                  - name: Выражение условия двоичного управления
-                    href: resources/intune-fencing-binarymanagementconditionexpression.md
-                  - name: Тип оператора выражения условия двоичного управления
-                    href: resources/intune-fencing-binarymanagementconditionexpressionoperatortype.md
                   - name: Результат группового действия в отношении управляемых устройств
                     href: resources/intune-devices-bulkmanageddeviceactionresult.md
                   - name: Тип корпуса
                     href: resources/intune-devices-chassistype.md
                   - name: Свойство устройства Chrome o s
                     href: resources/intune-devices-chromeosdeviceproperty.md
-                  - name: Условие управления циклического геофенсинга
-                    href: resources/intune-fencing-circulargeofencemanagementcondition.md
-                    items:
-                      - name: Список
-                        href: api/intune-fencing-circulargeofencemanagementcondition-list.md
-                      - name: Получение
-                        href: api/intune-fencing-circulargeofencemanagementcondition-get.md
-                      - name: Создание
-                        href: api/intune-fencing-circulargeofencemanagementcondition-create.md
-                      - name: Удалить
-                        href: api/intune-fencing-circulargeofencemanagementcondition-delete.md
-                      - name: Обновление
-                        href: api/intune-fencing-circulargeofencemanagementcondition-update.md
                   - name: Проблема подключения к облачному компьютеру
                     href: resources/intune-devices-cloudpcconnectivityissue.md
                     items:
@@ -7686,8 +7690,6 @@ items:
                     href: resources/intune-deviceintent-devicemanangementintentvaluetype.md
                   - name: Общие сведения об операционной системе устройства
                     href: resources/intune-devices-deviceoperatingsystemsummary.md
-                  - name: Тип платформы устройства
-                    href: resources/intune-fencing-deviceplatformtype.md
                   - name: Обзор защиты устройств
                     href: resources/intune-devices-deviceprotectionoverview.md
                   - name: Состояние регистрации устройства
@@ -7783,13 +7785,6 @@ items:
                         href: api/intune-notification-localizednotificationmessage-update.md
                   - name: Результат действия "Поиск устройства"
                     href: resources/intune-devices-locatedeviceactionresult.md
-                  - name: Условие управления расположением
-                    href: resources/intune-fencing-locationmanagementcondition.md
-                    items:
-                      - name: Список
-                        href: api/intune-fencing-locationmanagementcondition-list.md
-                      - name: Получение
-                        href: api/intune-fencing-locationmanagementcondition-get.md
                   - name: Вошедший пользователь
                     href: resources/intune-devices-loggedonuser.md
                   - name: Состояние режима пропажи
@@ -7903,71 +7898,8 @@ items:
                     href: resources/intune-devices-managedinstallerstatus.md
                   - name: Тип агента управления
                     href: resources/intune-devices-managementagenttype.md
-                  - name: Условие управления
-                    href: resources/intune-fencing-managementcondition.md
-                    items:
-                      - name: Список
-                        href: api/intune-fencing-managementcondition-list.md
-                      - name: Получение
-                        href: api/intune-fencing-managementcondition-get.md
-                      - name: getManagementConditionsForPlatform
-                        href: api/intune-fencing-managementcondition-getmanagementconditionsforplatform.md
-                  - name: Выражение условия управления
-                    href: resources/intune-fencing-managementconditionexpression.md
-                  - name: Модель выражения условия управления
-                    href: resources/intune-fencing-managementconditionexpressionmodel.md
-                  - name: Строка выражения условия управления
-                    href: resources/intune-fencing-managementconditionexpressionstring.md
-                  - name: Заявление условия управления
-                    href: resources/intune-fencing-managementconditionstatement.md
-                    items:
-                      - name: Список
-                        href: api/intune-fencing-managementconditionstatement-list.md
-                      - name: Получение
-                        href: api/intune-fencing-managementconditionstatement-get.md
-                      - name: Создание
-                        href: api/intune-fencing-managementconditionstatement-create.md
-                      - name: Удалить
-                        href: api/intune-fencing-managementconditionstatement-delete.md
-                      - name: Обновление
-                        href: api/intune-fencing-managementconditionstatement-update.md
-                      - name: getManagementConditionStatementsForPlatform
-                        href: api/intune-fencing-managementconditionstatement-getmanagementconditionstatementsforplatform.md
                   - name: Состояние управления
                     href: resources/intune-devices-managementstate.md
-                  - name: Условие управления конфигурацией сети IPv4
-                    href: resources/intune-fencing-networkipv4configurationmanagementcondition.md
-                    items:
-                      - name: Список
-                        href: api/intune-fencing-networkipv4configurationmanagementcondition-list.md
-                      - name: Получение
-                        href: api/intune-fencing-networkipv4configurationmanagementcondition-get.md
-                      - name: Создание
-                        href: api/intune-fencing-networkipv4configurationmanagementcondition-create.md
-                      - name: Удалить
-                        href: api/intune-fencing-networkipv4configurationmanagementcondition-delete.md
-                      - name: Обновление
-                        href: api/intune-fencing-networkipv4configurationmanagementcondition-update.md
-                  - name: Условие управления конфигурацией сети IPv6
-                    href: resources/intune-fencing-networkipv6configurationmanagementcondition.md
-                    items:
-                      - name: Список
-                        href: api/intune-fencing-networkipv6configurationmanagementcondition-list.md
-                      - name: Получение
-                        href: api/intune-fencing-networkipv6configurationmanagementcondition-get.md
-                      - name: Создание
-                        href: api/intune-fencing-networkipv6configurationmanagementcondition-create.md
-                      - name: Удалить
-                        href: api/intune-fencing-networkipv6configurationmanagementcondition-delete.md
-                      - name: Обновление
-                        href: api/intune-fencing-networkipv6configurationmanagementcondition-update.md
-                  - name: Условие управления сетью
-                    href: resources/intune-fencing-networkmanagementcondition.md
-                    items:
-                      - name: Список
-                        href: api/intune-fencing-networkmanagementcondition-list.md
-                      - name: Получение
-                        href: api/intune-fencing-networkmanagementcondition-get.md
                   - name: Шаблон сообщения уведомления
                     href: resources/intune-notification-notificationmessagetemplate.md
                     items:
@@ -8110,10 +8042,6 @@ items:
                     href: resources/intune-devices-sharedappledeviceuser.md
                   - name: Tuple_2 выполнения type_ i collection_1 операции
                     href: resources/intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md
-                  - name: Выражение условия унарного управления
-                    href: resources/intune-fencing-unarymanagementconditionexpression.md
-                  - name: Тип оператора выражения условия унарного управления
-                    href: resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md
                   - name: Параметр действия "Обновление учетной записи устройства с Windows"
                     href: resources/intune-devices-updatewindowsdeviceaccountactionparameter.md
                   - name: Производительность приложения работоспособности приложения для аналитики пользовательского интерфейса по версии приложения
@@ -8248,6 +8176,98 @@ items:
                         href: api/intune-devices-userexperienceanalyticsbaseline-delete.md
                       - name: Обновление
                         href: api/intune-devices-userexperienceanalyticsbaseline-update.md
+                  - name: Влияние приложения-приложения для аналитики пользовательских интерфейсов
+                    href: resources/intune-devices-userexperienceanalyticsbatteryhealthappimpact.md
+                    items:
+                      - name: Список
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthappimpact-list.md
+                      - name: Получение
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthappimpact-get.md
+                      - name: Создание
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthappimpact-create.md
+                      - name: Удалить
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthappimpact-delete.md
+                      - name: Обновление
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthappimpact-update.md
+                  - name: Сведения о емкости емкости батареи для аналитики пользовательского опыта
+                    href: resources/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails.md
+                    items:
+                      - name: Получение
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails-get.md
+                      - name: Обновление
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthcapacitydetails-update.md
+                  - name: Влияние приложения на устройство для устройства для работы с аккумулятором для аналитики пользовательских интерфейсов
+                    href: resources/intune-devices-userexperienceanalyticsbatteryhealthdeviceappimpact.md
+                    items:
+                      - name: Список
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceappimpact-list.md
+                      - name: Получение
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceappimpact-get.md
+                      - name: Создание
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceappimpact-create.md
+                      - name: Удалить
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceappimpact-delete.md
+                      - name: Обновление
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceappimpact-update.md
+                  - name: Производительность устройства работоспособности батареи для аналитики пользовательских интерфейсов
+                    href: resources/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance.md
+                    items:
+                      - name: Список
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance-list.md
+                      - name: Получение
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance-get.md
+                      - name: Создание
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance-create.md
+                      - name: Удалить
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance-delete.md
+                      - name: Обновление
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance-update.md
+                  - name: История запуска устройства для службы заряда батареи для аналитики пользовательских интерфейсов
+                    href: resources/intune-devices-userexperienceanalyticsbatteryhealthdeviceruntimehistory.md
+                    items:
+                      - name: Список
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceruntimehistory-list.md
+                      - name: Получение
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceruntimehistory-get.md
+                      - name: Создание
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceruntimehistory-create.md
+                      - name: Удалить
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceruntimehistory-delete.md
+                      - name: Обновление
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthdeviceruntimehistory-update.md
+                  - name: Производительность модели работоспособности модели работоспособности батареи для аналитики пользовательского интерфейса
+                    href: resources/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance.md
+                    items:
+                      - name: Список
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance-list.md
+                      - name: Получение
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance-get.md
+                      - name: Создание
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance-create.md
+                      - name: Удалить
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance-delete.md
+                      - name: Обновление
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance-update.md
+                  - name: Производительность операционной системы работоспособности батареи для аналитики пользовательского интерфейса
+                    href: resources/intune-devices-userexperienceanalyticsbatteryhealthosperformance.md
+                    items:
+                      - name: Список
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthosperformance-list.md
+                      - name: Получение
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthosperformance-get.md
+                      - name: Создание
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthosperformance-create.md
+                      - name: Удалить
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthosperformance-delete.md
+                      - name: Обновление
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthosperformance-update.md
+                  - name: Сведения о времени работы батареи батареи для аналитики пользовательских интерфейсов
+                    href: resources/intune-devices-userexperienceanalyticsbatteryhealthruntimedetails.md
+                    items:
+                      - name: Получение
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthruntimedetails-get.md
+                      - name: Обновление
+                        href: api/intune-devices-userexperienceanalyticsbatteryhealthruntimedetails-update.md
                   - name: Категория аналитики пользовательских интерфейсов
                     href: resources/intune-devices-userexperienceanalyticscategory.md
                     items:
@@ -8514,8 +8534,6 @@ items:
                         href: api/intune-devices-userexperienceanalyticsworkfromanywheremetric-delete.md
                       - name: Обновление
                         href: api/intune-devices-userexperienceanalyticsworkfromanywheremetric-update.md
-                  - name: Выражение условия переменного управления
-                    href: resources/intune-fencing-variablemanagementconditionexpression.md
                   - name: Windows состояние продукта defender
                     href: resources/intune-devices-windowsdefenderproductstatus.md
                   - name: Результат действия "проверка Защитника Windows"
@@ -9405,6 +9423,8 @@ items:
                         href: api/intune-shared-androidmanagedappprotection-haspayloadlinks.md
                   - name: Параметры назначения приложений для управляемого магазина Android
                     href: resources/intune-shared-androidmanagedstoreappassignmentsettings.md
+                  - name: Режим автоматического обновления магазина с управляемым управлением Android
+                    href: resources/intune-shared-androidmanagedstoreautoupdatemode.md
                   - name: Целевое хранилище сертификатов
                     href: resources/intune-shared-certificatedestinationstore.md
                   - name: Хранилище сертификатов
@@ -9456,7 +9476,7 @@ items:
                         href: api/intune-shared-devicecompliancepolicy-get.md
                       - name: Действие назначения
                         href: api/intune-shared-devicecompliancepolicy-assign.md
-                      - name: Действие refreshDeviceComplianceReportSummarization
+                      - name: action
                         href: api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md
                       - name: действие hasPayloadLinks
                         href: api/intune-shared-devicecompliancepolicy-haspayloadlinks.md
@@ -9508,10 +9528,10 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-get.md
                       - name: Обновление
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
-                      - name: List
+                      - name: Список
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-                      - name: 'deviceManagementDerivedCredentialSettings].. /resources/intune-shared-devicemanagementderivedcredentialsettings.md)| Создание'
-                        href: api/intune-shared-devicemanagementderivedcredentialsettings.md
+                      - name: Создание
+                        href: resources/intune-shared-devicemanagementderivedcredentialsettings.md
                       - name: Удалить
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
                   - name: Сценарий управления устройствами
@@ -9788,6 +9808,8 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
           - name: Облачный КОМПЬЮТЕР (предварительный просмотр)
             items:
+              - name: Обзор
+                href: resources/cloudpc-api-overview.md
               - name: Виртуальная конечная точка
                 href: resources/virtualendpoint.md
                 items:
@@ -9888,6 +9910,11 @@ items:
                 items:
                   - name: List
                     href: api/virtualendpoint-list-supportedregions.md
+              - name: План службы облачных ПК
+                href: resources/cloudpcserviceplan.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-serviceplans.md
           - name: Обновления устройств (предварительная версия)
             displayName: Windows updates
             items:
@@ -13519,7 +13546,7 @@ items:
       - name: Поиск
         displayname: Microsoft Search API
         items:
-          - name: Query
+          - name: Запрос
             items:
               - name: Обзор
                 href: resources/search-api-overview.md

@@ -2,15 +2,15 @@
 title: тип ресурса windowsAutopilotDeviceIdentity
 description: Ресурс windowsAutopilotDeviceIdentity представляет собой устройство Windows автопилота.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 18988b5a22e84ae97e412ae0dfc7daab738027b2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 19f2d6f341ea91676f722224fea3e08ae29a95e4
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59054291"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688158"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>тип ресурса windowsAutopilotDeviceIdentity
 
@@ -40,7 +40,7 @@ ms.locfileid: "59054291"
 |:---|:---|:---|
 |id|String|GUID объекта|
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Состояние назначения профиля устройства Windows автопилота. Возможные значения: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
-|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Назначение профиля подробное состояние Windows автопилота. Возможные значения: `none`, `hardwareRequirementsNotMet`, `surfaceHubProfileNotSupported`, `holoLensProfileNotSupported`, `windowsPcProfileNotSupported`.|
+|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Назначение профиля подробное состояние Windows автопилота. Возможные значения: `none`, `hardwareRequirementsNotMet`, `surfaceHubProfileNotSupported`, `holoLensProfileNotSupported`, `windowsPcProfileNotSupported`, `surfaceHub2SProfileNotSupported`, `unknownFutureValue`.|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Время набора профилей Windows автопилота.|
 |groupTag|String|Тег группы устройства Windows автопилота.|
 |purchaseOrderIdentifier|String|Покупка идентификатора заказа устройства Windows автопилота.|
@@ -55,8 +55,8 @@ ms.locfileid: "59054291"
 |resourceName|String|Имя ресурса.|
 |skuNumber|String|Номер SKU|
 |systemFamily|String|Семейство system|
-|azureActiveDirectoryDeviceId|String|AAD Device ID - to be deprecated|
-|azureAdDeviceId|String|ID устройства AAD|
+|azureActiveDirectoryDeviceId|String|AAD ID устройства , который будет обесценить|
+|azureAdDeviceId|String|AAD ID устройства|
 |managedDeviceId|String|Управляемый ID устройства|
 |displayName|String|"Display Name" (Отображаемое имя);|
 

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса broadcastMeetingSettings
-description: Параметры, связанные с событием в прямом эфире
+description: Параметры, связанных с событием Teams в прямом эфире
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 1de814ee520d1dbf8d0ea6ba1270c6893a07d2cd
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 36e5778761ac792e84096fd54f48c766e524149d
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896692"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696534"
 ---
 # <a name="broadcastmeetingsettings-resource-type"></a>тип ресурса broadcastMeetingSettings
 
@@ -18,30 +18,26 @@ ms.locfileid: "52896692"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Параметры, связанных с живым событием.
-
-> [!CAUTION]
-> Этот API не проверяет параметры событий в прямом эфире, управляемые [политикой.](/microsoftteams/teams-live-events/set-teams-live-events-policies-using-powershell)
-> Например, если администратор задает политику событий в прямом эфире с помощью, пользователям будет запрещено устанавливать разрешения на живые события в своем клиенте Teams, но он сможет создать живое событие с помощью `Set-CsTeamsMeetingBroadcastPolicy -Identity Global -BroadcastAttendeeVisibility EveryoneInCompany` `public` Microsoft Graph, установив разрешеноAudience  для `everyone` .
+Параметры, связанных [с Microsoft Teams событием в прямом эфире](/microsoftteams/teams-live-events/what-are-teams-live-events).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                   | Тип                     | Описание                                                                     |
 | -------------------------- | ------------------------ | ------------------------------------------------------------------------------- |
-| allowedAudience            | [broadcastMeetingAudience](#broadcastmeetingaudience-values) | Определяет, кто может присоединиться к событию в прямом эфире. Возможные значения перечислены в следующей таблице. |
-| isRecordingEnabled         | Boolean                  | Указывает, включена ли запись для этого события в прямом эфире. Значение по умолчанию — `false`.          |
-| isAttendeeReportEnabled    | Boolean                  | Указывает, включен ли отчет участника для этого события в прямом эфире. Значение по умолчанию — `false`.    |
-| isQuestionAndAnswerEnabled | Boolean                  | Указывает, включен ли Q&A для этого события в прямом эфире. Значение по умолчанию — `false`.                |
-| isVideoOnDemandEnabled     | Boolean                  | Указывает, включено ли видео по запросу для этого события в прямом эфире. Значение по умолчанию — `false`.    |
+| allowedAudience            | [broadcastMeetingAudience](#broadcastmeetingaudience-values) | Определяет, кто может присоединиться к Teams в прямом эфире. Возможные значения перечислены в следующей таблице. |
+| isRecordingEnabled         | Логический                  | Указывает, включена ли запись для этого Teams в прямом эфире. Значение по умолчанию — `false`.          |
+| isAttendeeReportEnabled    | Логический                  | Указывает, включен ли отчет участника для этого Teams в прямом эфире. Значение по умолчанию — `false`.    |
+| isQuestionAndAnswerEnabled | Логический                  | Указывает, включен ли Q&A для этого Teams в прямом эфире. Значение по умолчанию — `false`.                |
+| isVideoOnDemandEnabled     | Логический                  | Указывает, включено ли видео по запросу для этого Teams в прямом эфире. Значение по умолчанию — `false`.    |
 
 ### <a name="broadcastmeetingaudience-values"></a>значения broadcastMeetingAudience
 
 | Значение              | Описание                                                       |
 | ------------------ | ----------------------------------------------------------------- |
-| все           | Событие в прямом эфире будет открыто для всех. Это значение используется по умолчанию. |
-| organization;       | Все в вашей организации могут присоединиться к событию в прямом эфире.                     |
-| roleIsAttendee     | Только указанные люди могут присоединиться к событию в прямом эфире.                |
-| unknownFutureValue | Неизвестное будущее значение.                                             |
+| все           | Это Teams будет открыто для всех. Это значение используется по умолчанию. |
+| organization       | Все в вашей организации могут присоединиться к этому Teams в прямом эфире.                     |
+| roleIsAttendee     | Только указанные люди могут присоединиться к этому событию Teams в прямом эфире.                |
+| unknownFutureValue | Эволюционирующее значение sentinel. Не следует использовать.  |
 
 ## <a name="json-representation"></a>Представление JSON
 

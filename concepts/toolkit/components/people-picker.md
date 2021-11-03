@@ -3,12 +3,12 @@ title: Компонент "Выбор людей"
 description: Веб-компонент mgt-people-picker можно использовать для поиска указанного количества людей и отображать список результатов с помощью Microsoft Graph.
 ms.localizationpriority: medium
 author: elisenyang
-ms.openlocfilehash: 277a8423ef018d5663fa6aaae94e384554914686
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3646640ca9960d49e862d4791ddab3530e12e3a9
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59103853"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694787"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>Компонент "Выбор людей" в Microsoft Graph Toolkit
 
@@ -146,9 +146,9 @@ mgt-people-picker {
 
 Этот компонент использует следующие API и разрешения Microsoft Graph.
 
-| Настройка | Разрешение | API
+| Конфигурация | Разрешение | API
 | --- | ---------- | ------- |
-| `group-id` set | People.Read, User.Read.All | [/groups/\${groupId}/members](/graph/api/group-list-members) |
+| `group-id` set | People.Read, User.Read.All, GroupMember.Read.All | [/groups/\${groupId}/members](/graph/api/group-list-members) |
 | `type` установлено `Person` или `any` | People.Read | [/me/people](/graph/api/user-list-people) |
 | `type`настройка или `Group` поиск пользователей и настройка `type` или `Group``any` | Group.Read.All | [/groups](/graph/api/group-list) |
 | `default-selected-user-ids` set | User.ReadBasic.All | [/users](/graph/api/user-list) |
@@ -160,7 +160,7 @@ mgt-people-picker {
 
 ## <a name="cache"></a>Кэш
 
-|Хранилище объектов|Кэшные данные|Замечания|
+|Хранилище объектов|Кэшные данные|Примечания|
 |---------|-----------|-------|
 |`groups`|Список групп|Используется, `type` когда установлено `PersonType.group`|
 |`people`|List of people|Используется, `type` когда установлено `PersonType.person` или `PersonType.any`|

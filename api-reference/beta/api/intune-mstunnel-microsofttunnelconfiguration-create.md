@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 50ab0a344365eb46e2da890a926025b559cc1dec
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 6da18e706ed377e6730eb414c575da9f7bd12206
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60488215"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696128"
 ---
 # <a name="create-microsofttunnelconfiguration"></a>Создание microsoftTunnelConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "60488215"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -66,6 +66,7 @@ POST /deviceManagement/microsoftTunnelConfigurations
 |advancedSettings|Коллекция [keyValuePair](../resources/intune-mstunnel-keyvaluepair.md)|Дополнительные параметры, которые могут быть применены к серверу|
 |lastUpdateDateTime|DateTimeOffset|При последнем обновлении MicrosoftTunnelConfiguration|
 |roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity.|
+|отключениеUDPConnections|Логический|При задавке отключенияUDPConnections, клиенты и VPN-сервер не будут использовать connctions DTLS для обработки данных tansfer.|
 
 
 
@@ -79,7 +80,7 @@ POST /deviceManagement/microsoftTunnelConfigurations
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelConfigurations
 Content-type: application/json
-Content-length: 748
+Content-length: 782
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelConfiguration",
@@ -110,7 +111,8 @@ Content-length: 748
   "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "disableUDPConnections": true
 }
 ```
 
@@ -119,7 +121,7 @@ Content-length: 748
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 797
+Content-Length: 831
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelConfiguration",
@@ -151,7 +153,8 @@ Content-Length: 797
   "lastUpdateDateTime": "2016-12-31T23:58:21.6459442-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "disableUDPConnections": true
 }
 ```
 

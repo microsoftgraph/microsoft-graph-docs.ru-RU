@@ -2,15 +2,15 @@
 title: тип ресурса windowsFeatureUpdateProfile
 description: Windows Профиль обновления функций
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8de71467651f732732b3eaaa3dfd88a79eaaf121
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fb381ace09fc3ee788f7b5f7fec3212285f21ad3
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029873"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60691535"
 ---
 # <a name="windowsfeatureupdateprofile-resource-type"></a>тип ресурса windowsFeatureUpdateProfile
 
@@ -39,9 +39,10 @@ Windows Профиль обновления функций
 |displayName|String|Имя отображения профиля.|
 |description|String|Описание профиля, указанного пользователем.|
 |featureUpdateVersion|String|Версия обновления функций, которая будет развернута на устройствах, на которые ориентирован этот профиль. Версия может быть любой поддерживаемой версией, например 1709, 1803 или 1809 и так далее.|
+|rolloutSettings|[windowsUpdateRolloutSettings](../resources/intune-softwareupdate-windowsupdaterolloutsettings.md)|Параметры обновления windows, включая время начала предложения, время конечной даты предложения и дни между каждым набором предложений.|
 |createdDateTime|DateTimeOffset|Время создания профиля.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения профиля.|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого объекта обновления функций.|
+|roleScopeTagIds|Коллекция строк|Список тегов области для этого объекта обновления функций.|
 |deployableContentDisplayName|String|Удобное отображаемое имя развернутого контента профиля обновления качества|
 |endOfSupportDate|DateTimeOffset|Последняя поддерживаемая дата обновления функций|
 
@@ -65,6 +66,12 @@ Windows Профиль обновления функций
   "displayName": "String",
   "description": "String",
   "featureUpdateVersion": "String",
+  "rolloutSettings": {
+    "@odata.type": "microsoft.graph.windowsUpdateRolloutSettings",
+    "offerStartDateTimeInUTC": "String (timestamp)",
+    "offerEndDateTimeInUTC": "String (timestamp)",
+    "offerIntervalInDays": 1024
+  },
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
   "roleScopeTagIds": [

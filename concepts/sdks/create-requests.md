@@ -3,12 +3,12 @@ title: Вызовы API с помощью SDKs Graph Microsoft
 description: Содержит инструкции по созданию Graph http-запросов с помощью SDKs.
 ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: 84b6f8bddd8e44faaf9724db29d694d9f2b6512b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d8b7233fb360b3dd5bba088c6d193a6bac18f304
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59055817"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695386"
 ---
 # <a name="make-api-calls-using-the-microsoft-graph-sdks"></a>Вызовы API с помощью SDKs Graph Microsoft
 

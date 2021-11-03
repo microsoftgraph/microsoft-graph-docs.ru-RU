@@ -1,22 +1,24 @@
 ---
 title: Отмена privilegedRoleAssignmentRequest
 description: Отмена привилегированногоRoleAssignmentRequest.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: dac7c1395b1a3cb46dc5158d7dced235b2583c6a
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 3b65811ad502a9b7f568a52d09dadb4b22e716a4
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58452878"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694710"
 ---
 # <a name="cancel-privilegedroleassignmentrequest"></a>Отмена privilegedRoleAssignmentRequest
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Отмена [привилегированногоRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md).
 
@@ -39,13 +41,13 @@ POST /privilegedRoleAssignmentRequests/{requestid}/cancel
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-При успешном выполнении этот метод возвращает код отклика `200 Ok`. Он возвращает [привилегированныеRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) в ответном органе.
+В случае успешного выполнения этот метод возвращает код отклика `200 Ok`. Он возвращает [привилегированныеRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) в ответном органе.
 
 ### <a name="error-codes"></a>Коды ошибок
 Этот API возвращает стандартные коды ошибок HTTP. Кроме того, он возвращает пользовательские коды ошибок, перечисленные в следующей таблице.

@@ -1,16 +1,16 @@
 ---
 title: Получить bookingStaffMember
 description: Получите свойства и отношения bookingStaffMember в указанном bookingbusiness.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 207666e81675c8ec214617478ee61e80d871638d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4f23fc5aa9e438bccc2b128ace3d0910c077f89f
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047799"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695372"
 ---
 # <a name="get-bookingstaffmember"></a>Получить bookingStaffMember
 
@@ -18,7 +18,7 @@ ms.locfileid: "52047799"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите свойства и связи [bookingStaffMember](../resources/bookingstaffmember.md) в указанном [bookingbusiness.](../resources/bookingbusiness.md)
+Получите свойства и отношения [bookingStaffMember](../resources/bookingstaffmember.md) в указанном [bookingBusiness.](../resources/bookingbusiness.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -34,7 +34,7 @@ ms.locfileid: "52047799"
 GET /bookingBusinesses/{id}/staffMembers/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -46,7 +46,7 @@ GET /bookingBusinesses/{id}/staffMembers/{id}
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект bookingStaffMember](../resources/bookingstaffmember.md) в тексте ответа.
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -75,8 +75,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа. 
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,6 +96,7 @@ Content-type: application/json
     "availabilityIsAffectedByPersonalCalendar": true,
     "colorIndex": 0,
     "role": "administrator",
+    "timeZone": "America/Chicago",
     "useBusinessHours": true,
     "workingHours": [
         {

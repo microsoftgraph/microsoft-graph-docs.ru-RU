@@ -1,16 +1,16 @@
 ---
 title: тип ресурса passwordCredential
 description: Содержит учетные данные паролей, связанные с приложением или директором службы.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
-author: sureshja
-ms.openlocfilehash: e1facb9b3a4de7c8cd5086efbd9ca4cea72fe84a
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+author: madansr7
+ms.openlocfilehash: 69bd0e70bb67e9940b2ce6f7774e7797c553ca71
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490632"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60689048"
 ---
 # <a name="passwordcredential-resource-type"></a>тип ресурса passwordCredential
 
@@ -32,12 +32,12 @@ ms.locfileid: "58490632"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| customKeyIdentifier | В двоичном формате | Не следует использовать. |
-| displayName | Строка | Удобное имя пароля. Необязательно. |
-| endDateTime | DateTimeOffset | Дата и время, в течение которых истекает срок действия пароля, представлены в формате ISO 8601 и всегда во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Необязательно. |
-| подсказка | Строка | Содержит первые три символа пароля. Только для чтения. |
+| customKeyIdentifier | Двоичный | Не следует использовать. |
+| displayName | String | Удобное имя пароля. Необязательный параметр. |
+| endDateTime | DateTimeOffset | Дата и время, в течение которых истекает срок действия пароля, представлены в формате ISO 8601 и всегда во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Необязательный параметр. |
+| подсказка | String | Содержит первые три символа пароля. Только для чтения. |
 | keyId | Guid | Уникальный идентификатор пароля. |
-| secretText | Строка | Только для чтения; Содержит надежные пароли, созданные Azure AD длиной 16-64 символов. Сгенерированное значение пароля возвращается только во время первоначального запроса POST для [добавленияPassword.](../api/application-addpassword.md) В будущем этот пароль не будет извлечен. |
+| secretText | String | Только для чтения; Содержит надежные пароли, созданные Azure AD длиной 16-64 символов. Сгенерированное значение пароля возвращается только во время первоначального запроса POST для [добавленияPassword.](../api/application-addpassword.md) В будущем этот пароль не будет извлечен. |
 | startDateTime | DateTimeOffset | Дата и время, в течение которых пароль становится допустимым. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Необязательный параметр. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

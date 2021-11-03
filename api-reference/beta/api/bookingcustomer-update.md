@@ -1,16 +1,16 @@
 ---
 title: Обновление bookingcustomer
 description: Обновление свойств объекта bookingCustomer.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 476c827474026914a7839947d7a88a9c10b8a917
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c15279045eda8e6c884039ee075a3e63720142b6
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047821"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694682"
 ---
 # <a name="update-bookingcustomer"></a>Обновление bookingcustomer
 
@@ -45,6 +45,8 @@ PATCH /bookingBusinesses/{id}/customers/{id}
 |:---------------|:--------|:----------|
 |displayName|String|Имя клиента.|
 |emailAddress|String|SMTP-адрес клиента.|
+|addresses|[коллекция physicalAddress](../resources/physicaladdress.md)|Адреса, связанные с клиентом, включая домашние, бизнес и другие адреса.|
+|phones|Коллекция [phone](../resources/phone.md)|Телефон номеров, связанных с клиентом, включая домашние, деловые и мобильные номера.|
 
 ## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика и `200 OK` обновленный [объект bookingCustomer](../resources/bookingcustomer.md) в тексте ответа.
@@ -85,7 +87,7 @@ Content-type: application/json
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример ответа. Примечание: показанный здесь объект ответа может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

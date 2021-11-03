@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 843cb7e1dba2e173cdf3a43d13a5d31907cc93a7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8c3f60ec74d45ad8dfd062b4f064141a43c8e716
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104533"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60693145"
 ---
 # <a name="get-workbookcommentreply"></a>Get workbookCommentReply
 
@@ -41,7 +41,7 @@ GET /me/drive/root:/{item-path}:/workbook/comments/{id}/replies/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -64,7 +64,7 @@ GET /me/drive/root:/{item-path}:/workbook/comments/{id}/replies/{id}
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/drive/items/{id}/workbook/comments/{id}/replies/{id}
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/comments/{id}/replies/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-workbookcommentreply-csharp-snippets.md)]
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/v1.0/drive/items/{id}/workbook/comments/{id}/rep
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

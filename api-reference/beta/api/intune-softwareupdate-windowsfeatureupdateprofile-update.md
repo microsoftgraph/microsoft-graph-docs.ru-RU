@@ -2,15 +2,15 @@
 title: Обновление windowsFeatureUpdateProfile
 description: Обновление свойств объекта windowsFeatureUpdateProfile.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aa3f82101eba61f07745aa528dcab52b92e481fb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 83721b5a2bcb64fa03359272279e0c0ea6bbe381
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59041327"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695435"
 ---
 # <a name="update-windowsfeatureupdateprofile"></a>Обновление windowsFeatureUpdateProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "59041327"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfil
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,9 +57,10 @@ PATCH /deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfil
 |displayName|String|Имя отображения профиля.|
 |description|String|Описание профиля, указанного пользователем.|
 |featureUpdateVersion|String|Версия обновления функций, которая будет развернута на устройствах, на которые ориентирован этот профиль. Версия может быть любой поддерживаемой версией, например 1709, 1803 или 1809 и так далее.|
+|rolloutSettings|[windowsUpdateRolloutSettings](../resources/intune-softwareupdate-windowsupdaterolloutsettings.md)|Параметры обновления windows, включая время начала предложения, время конечной даты предложения и дни между каждым набором предложений.|
 |createdDateTime|DateTimeOffset|Время создания профиля.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения профиля.|
-|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого объекта обновления функций.|
+|roleScopeTagIds|Коллекция строк|Список тегов области для этого объекта обновления функций.|
 |deployableContentDisplayName|String|Удобное отображаемое имя развернутого контента профиля обновления качества|
 |endOfSupportDate|DateTimeOffset|Последняя поддерживаемая дата обновления функций|
 
@@ -75,13 +76,19 @@ PATCH /deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfil
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfileId}
 Content-type: application/json
-Content-length: 405
+Content-length: 669
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateProfile",
   "displayName": "Display Name value",
   "description": "Description value",
   "featureUpdateVersion": "Feature Update Version value",
+  "rolloutSettings": {
+    "@odata.type": "microsoft.graph.windowsUpdateRolloutSettings",
+    "offerStartDateTimeInUTC": "2017-01-01T00:01:16.3697768-08:00",
+    "offerEndDateTimeInUTC": "2016-12-31T23:58:15.1925199-08:00",
+    "offerIntervalInDays": 3
+  },
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -95,7 +102,7 @@ Content-length: 405
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 577
+Content-Length: 841
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateProfile",
@@ -103,6 +110,12 @@ Content-Length: 577
   "displayName": "Display Name value",
   "description": "Description value",
   "featureUpdateVersion": "Feature Update Version value",
+  "rolloutSettings": {
+    "@odata.type": "microsoft.graph.windowsUpdateRolloutSettings",
+    "offerStartDateTimeInUTC": "2017-01-01T00:01:16.3697768-08:00",
+    "offerEndDateTimeInUTC": "2016-12-31T23:58:15.1925199-08:00",
+    "offerIntervalInDays": 3
+  },
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [

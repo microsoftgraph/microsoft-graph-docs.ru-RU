@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementReports
 description: Объект Singleton, который выступает в качестве контейнера для всех функциональных возможностей отчетов.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 531d1a7e3f2529982f5c1da4ab908edc765b7dc6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 639bec877dcdf1b7781011aba59e0ce3b1cb8ce0
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59039352"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60673699"
 ---
 # <a name="devicemanagementreports-resource-type"></a>тип ресурса deviceManagementReports
 
@@ -54,7 +54,6 @@ ms.locfileid: "59039352"
 |:---|:---|:---|
 |cachedReportConfigurations|[коллекция deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)|Объект, представляющий конфигурацию кэшного отчета|
 |exportJobs|[коллекция deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md)|Объект, представляющий задание по экспорту отчета|
-|reportSchedules|[коллекция deviceManagementReportSchedule](../resources/intune-reporting-devicemanagementreportschedule.md)|Объект, представляющий расписание доставки отчетов|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

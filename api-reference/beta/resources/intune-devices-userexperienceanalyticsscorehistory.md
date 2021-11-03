@@ -2,15 +2,15 @@
 title: тип ресурса userExperienceAnalyticsScoreHistory
 description: История оценки результатов запуска устройства для аналитики пользовательского интерфейса.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 66f895b27cbc1314957a3bc24d67e1d13214f7aa
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8026ea0f50200c9839964e157485d16045696069
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046976"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687973"
 ---
 # <a name="userexperienceanalyticsscorehistory-resource-type"></a>тип ресурса userExperienceAnalyticsScoreHistory
 
@@ -42,9 +42,11 @@ ms.locfileid: "59046976"
 |coreSigninScore|Int32|Оценка основного входного знака устройства для аналитики пользовательского интерфейса. Оценка будет в диапазоне 0-100, 100 является идеальным показателем.|
 |recommendedSoftwareScore|Int32|Оценка основного входного знака устройства для аналитики пользовательского интерфейса. Оценка будет в диапазоне 0-100, 100 является идеальным показателем.|
 |appHealthOverallScore|Int32|Общее состояние здоровья приложения для аналитики пользовательского интерфейса.|
+|batteryHealthScore|Int32|Оценка состояния заряда батареи для аналитики пользовательского интерфейса.|
 |startupTotalDevices|Int32|Общее число устройств для производительности запуска для аналитики пользовательских интерфейсов.|
 |recommendedSoftwareTotalDevices|Int32|Общее число устройств категории аналитики пользовательских интерфейсов рекомендуемого программного обеспечения.|
 |appHealthTotalDevices|Int32|Общее число устройств для здоровья приложения для аналитики пользовательского интерфейса.|
+|batteryHealthTotalDevices|Int32|Общее число устройств для здоровья батареи категории аналитики пользовательских интерфейсов.|
 |restartScore|Int32|Оценка перезапуска. Оценка будет в диапазоне 0-100, 100 является идеальным показателем, 0 указывает на чрезмерные перезапуски. Допустимые значения от 0 до 9999999|
 
 ## <a name="relationships"></a>Связи
@@ -69,9 +71,11 @@ ms.locfileid: "59046976"
   "coreSigninScore": 1024,
   "recommendedSoftwareScore": 1024,
   "appHealthOverallScore": 1024,
+  "batteryHealthScore": 1024,
   "startupTotalDevices": 1024,
   "recommendedSoftwareTotalDevices": 1024,
   "appHealthTotalDevices": 1024,
+  "batteryHealthTotalDevices": 1024,
   "restartScore": 1024
 }
 ```

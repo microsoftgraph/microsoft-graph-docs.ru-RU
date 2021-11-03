@@ -2,15 +2,15 @@
 title: тип ресурса androidManagedStoreAssignmentSettings
 description: Содержит свойства, используемые для назначения мобильного приложения Android Managed Store группе.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 18b1b52ac92fee819a7e4f7e690df850947f2a5b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8a2afa3243cc19b016430e2b9960f6aecc349cdf
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59039205"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60691542"
 ---
 # <a name="androidmanagedstoreappassignmentsettings-resource-type"></a>тип ресурса androidManagedStoreAssignmentSettings
 
@@ -28,7 +28,8 @@ ms.locfileid: "59039205"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|AndroidManagedStoreAppTrackIds|Коллекция объектов string|ID дорожки, чтобы включить для этого назначения приложения.|
+|AndroidManagedStoreAppTrackIds|Коллекция строк|ID дорожки, чтобы включить для этого назначения приложения.|
+|autoUpdateMode|[AndroidManagedStoreAutoUpdateMode](../resources/intune-shared-androidmanagedstoreautoupdatemode.md)|Приоритизация автоматических обновлений для этого назначения приложения. Возможные значения: `default`, `postponed`, `priority`, `unknownFutureValue`.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -45,7 +46,8 @@ ms.locfileid: "59039205"
   "@odata.type": "#microsoft.graph.androidManagedStoreAppAssignmentSettings",
   "androidManagedStoreAppTrackIds": [
     "String"
-  ]
+  ],
+  "autoUpdateMode": "String"
 }
 ```
 

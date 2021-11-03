@@ -3,14 +3,80 @@ title: Обзор предыдущих выпусков Microsoft Graph
 description: Новые возможности в предыдущих выпусках Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: efdb89c348e6da6b6f794ee5c6365e25d64a0147
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: e9c62070be3dd1d646768fd207c5c1304bcf727b
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214386"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695025"
 ---
 # <a name="highlights-of-earlier-releases"></a>Обзор предыдущих выпусков
+
+## <a name="august-2021-new-and-generally-available"></a>Август 2021 г.: новые и общедоступные возможности
+
+### <a name="cloud-communications--calls"></a>Облачные коммуникации | Звонки
+[Участник](/graph/api/resources/participant) может включить метаданные как большой двоичный объект данных в список участников [звонка](/graph/api/resources/call).
+
+### <a name="cloud-communications--online-meetings"></a>Облачные коммуникации | Собрания по сети
+- Создайте [собрание по сети](/graph/api/resources/onlinemeeting) в виде трансляции, настроив [параметры трансляции](/graph/api/resources/broadcastMeetingSettings) и [сведения об участниках собрания](/graph/api/resources/meetingparticipantinfo) с помощью роли организатора. См. [пример](/graph/api/application-post-onlinemeetings#example-2-create-a-live-event-with-user-token).
+- Включите или отключите чат либо ограничьте его длительность для онлайн-собрания с помощью свойства **allowMeetingChat**.
+- Включите или отключите реакции для онлайн-собрания с помощью свойства **allowTeamworkReactions**.
+- Разрешите участнику включить камеру или микрофон с помощью свойства **allowAttendeeToEnableCamera** или **allowAttendeeToEnableMic** соответственно.
+
+### <a name="cloud-communications--presence"></a>Облачные коммуникации | Присутствие
+- [Задайте состояние присутствия пользователя](/graph/api/presence-setpresence), являющееся агрегированным состоянием для каждого клиента Teams (классического, мобильного или веб-клиента).
+- [Очистите сеанс присутствия](/graph/api/presence-clearpresence) пользователя.
+
+
+### <a name="devices-and-apps--corporate-management"></a>Устройства и приложения | Корпоративное управление
+Ежемесячные обновления Intune для версии 1.0. Присвойте фильтру **Дата** значение "Август 2021 г." и найдите раздел с таким заголовком.
+
+### <a name="devices-and-apps--service-health-and-communications"></a>Устройства и приложения | Работоспособность и взаимодействие служб
+Общедоступная версия [API взаимодействия служб](service-communications-concept-overview.md) в Microsoft Graph для доступа к состоянию работоспособности и записям центра сообщений об облачных службах (Майкрософт).
+
+### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
+Получите коллекцию областей проверки доступа, в которой определены проверяющие и запасные проверяющие для [экземпляра проверки доступа](/graph/api/resources/accessReviewInstance).
+
+### <a name="sites-and-lists--taxonomy"></a>Сайты и списки | Таксономия
+Доступ к таксономии [банка терминов](/graph/api/resources/termstore-store) SharePoint — иерархии, состоящей из ресурсов [group](/graph/api/resources/termstore-group), [set](/graph/api/resources/termstore-set) и [term](/graph/api/resources/termstore-term), а также ресурсов [relation](/graph/api/resources/termstore-relation) для связей между терминами.
+
+### <a name="teamwork"></a>Командная работа
+[Перечислите чаты](/graph/api/chat-list), участником которых является пользователь, в делегированном контексте.
+
+## <a name="august-2021-new-in-preview-only"></a>Август 2021 г.: новые возможности только в предварительной версии
+
+### <a name="cloud-communications--calls"></a>Облачные коммуникации | Звонки
+- Поставьте [участника](/graph/api/resources/participant?view=graph-rest-beta&preserve-view=true) на удержание и воспроизводите музыку в фоновом режиме с помощью действия [startHoldMusic](/graph/api/participant-startHoldMusic?view=graph-rest-beta&preserve-view=true).
+- Повторно добавьте в вызов участника, ранее поставленного на удержание, с помощью действия [stopHoldMusic](/graph/api/participant-stopHoldMusic?view=graph-rest-beta&preserve-view=true).
+
+### <a name="cloud-communications--online-meetings"></a>Облачные коммуникации | Собрания по сети
+Настройте автоматическую запись [собрания по сети](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true)
+
+### <a name="devices-and-apps--cloud-pc"></a>Устройства и приложения | Облачный ПК
+[Окончание льготного периода](/graph/api/cloudPC-endGracePeriod?view=graph-rest-beta&preserve-view=true) для облачного ПК. Льготный период обеспечивает доступ пользователей к облачным ПК в течение семи дней до отмены подготовки. В случае окончания льготного периода подготовка облачного ПК будет отменена сразу же, до истечения семи дней.
+
+### <a name="devices-and-apps--corporate-management"></a>Устройства и приложения | Корпоративное управление
+Ежемесячные обновления Intune для бета-версии. Присвойте фильтру **Дата** значение "Август 2021 г." и найдите раздел с таким заголовком.
+
+### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
+- [Повторно обработайте](/graph/api/accesspackageassignmentrequest-reprocess?view=graph-rest-beta&preserve-view=true) запрос[ на назначение пакета доступа](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true), чтобы автоматически повторить попытку выполнения запроса пользователя на доступ к пакету.
+- [Повторно обработайте](/graph/api/accesspackageassignment-reprocess?view=graph-rest-beta&preserve-view=true) запрос[ на назначение пакета доступа](/graph/api/resources/accesspackageassignment?view=graph-rest-beta&preserve-view=true), чтобы автоматически проверить назначения пользователя и обеспечить их выполнение.
+- [Получите набор требований политики](/graph/api/accesspackage-getapplicablepolicyrequirements?view=graph-rest-beta&preserve-view=true) чтобы создать [запрос назначения для пакета доступа](/graph/api/resources/accesspackageassignmentrequestrequirements?view=graph-rest-beta&preserve-view=true).
+- Получите коллекцию ресурсов [проверки доступа и проверяющих](/graph/api/resources/accessreviewreviewer?view=graph-rest-beta&preserve-view=true), где определены проверяющие, с которыми будет установлена связь для [экземпляра проверки доступа](/graph/api/resources/accessReviewInstance?view=graph-rest-beta&preserve-view=true).
+- Получите или задайте длительность бездействия, на основе которого будут настраиваться рекомендации, в разделе [параметров расписания проверки доступа](/graph/api/resources/accessReviewScheduleSettings?view=graph-rest-beta&preserve-view=true), используя свойство **recommendationLookBackDuration**.
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
+- Организации могут использовать [политики для применения рекомендованных методик для приложений, использующих методы проверки подлинности приложений](/graph/api/resources/applicationauthmethodpolicy?view=graph-rest-beta&preserve-view=true). Такие политики могут применяться к [приложениям и субъектам-службам](/graph/api/resources/appmanagementpolicy?view=graph-rest-beta&preserve-view=true) или [всем приложениям и субъектам-службам в клиенте](/resources/tenantappmanagementpolicy?view=graph-rest-beta&preserve-view=true).
+- Поддержка страниц в свойстве навигации **appRoleAssignments** для [пользователей](/api/user-list-approleassignments?view=graph-rest-beta&preserve-view=true), [групп](/api/group-list-approleassignments?view=graph-rest-beta&preserve-view=true) и [субъектов-служб](/api/serviceprincipal-list-approleassignments?view=graph-rest-beta&preserve-view=true).
+- Разрешите клиенту Azure Active Directory (Azure AD) настроить [федерацию с другой организацией, поставщик удостоверений (IdP) которой поддерживает протокол SAML или WS-Fed](/graph/api/resources/samlOrWsFedExternalDomainFederation?view=graph-rest-beta&preserve-view=true). Это позволит клиенту Azure AD предоставить доступ к своим ресурсам гостевым пользователям.
+
+### <a name="teamwork"></a>Командная работа
+- Получите [сведения о собрании по сети](/graph/api/resources/teamworkOnlineMeetingInfo?view=graph-rest-beta&preserve-view=true), связанные с [чатом](/api/resources/chat?view=graph-rest-beta&preserve-view=true).
+- Получите идентификатор клиента, в котором создается **чат**.
+
+### <a name="users"></a>Пользователи
+Используйте последние значения даты и времени интерактивного и неинтерактивного входа для [signInActivity](/graph/api/resources/signInActivity?view=graph-rest-beta&preserve-view=true) пользователей, чтобы [управлять неактивными учетными записями](/azure/active-directory/reports-monitoring/howto-manage-inactive-user-accounts).
+
 
 ## <a name="july-2021-new-and-generally-available"></a>Июль 2021 г.: новые и общедоступные возможности
 
@@ -687,7 +753,7 @@ GA интерфейса API [просмотра доступа](/graph/api/resou
 ### <a name="change-notifications"></a>Уведомления об изменениях
 [Отслеживание изменений](delta-query-overview.md) поддерживаемых ресурсов в национальном облаке Microsoft Graph для государственных организаций США.
 
-### <a name="cloud-communications"></a>Коммуникации из облака
+### <a name="cloud-communications"></a>Облачные коммуникации
 - [Отмените](/graph/api/call-cancelmediaprocessing) любые действия интерактивного голосового ответа (IVR), выполняемые или находящиеся в очереди, которые [воспроизводят звуковой сигнал](/graph/api/call-playprompt) или [записывают ответ](/graph/api/call-record).
 - Получите [сведения о расшифровке звонка](/graph/api/resources/calltranscriptioninfo) с помощью свойства **transcription**.
 

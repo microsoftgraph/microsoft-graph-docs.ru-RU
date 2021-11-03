@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: enumTypes
-ms.openlocfilehash: 1c60b5718a0e5006754aae5e07cfbc19969946a0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8542515437150e95aa54f01a9a9e28de2eb9eb71
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59040556"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695967"
 ---
 # <a name="microsoft-graph-windows-updates-enumeration-values"></a>Значения Graph Windows обновлений Майкрософт
 
@@ -18,7 +18,7 @@ ms.locfileid: "59040556"
 
 ### <a name="azureaddeviceregistrationerrorreason-values"></a>azureADDeviceRegistrationErrorReason 
 
-|Элемент|
+|Member|
 |:---|
 |invalidGlobalDeviceId|
 |invalidAzureADDeviceId|
@@ -27,16 +27,17 @@ ms.locfileid: "59040556"
 
 ### <a name="deploymentstatereasonvalue-values"></a>значения deploymentStateReasonValue 
 
-|Элемент|
+|Member|
 |:---|
 |scheduledByOfferWindow|
 |offeringByRequest|
 |pausedByRequest|
 |pausedByMonitoring|
+|faultedByContentOutdated|
 
 ### <a name="deploymentstatevalue-values"></a>значения deploymentStateValue 
 
-|Элемент|
+|Member|
 |:---|
 |scheduled|
 |предложение|
@@ -46,27 +47,27 @@ ms.locfileid: "59040556"
 
 ### <a name="equivalentcontentoption-values"></a>эквивалентные значенияContentOption 
 
-|Элемент|
+|Member|
 |:---|
 |Нет|
 |latestSecurity|
 
 ### <a name="monitoringaction-values"></a>значения monitoringAction 
 
-|Элемент|
+|Member|
 |:---|
 |alertError|
 |pauseDeployment|
 
 ### <a name="monitoringsignal-values"></a>monitoringSignal values 
 
-|Элемент|
+|Member|
 |:---|
 |откат|
 
 ### <a name="qualityupdateclassification-values"></a>значения qualityUpdateClassification 
 
-|Элемент|
+|Member|
 |:---|
 |все|
 |безопасность|
@@ -74,15 +75,21 @@ ms.locfileid: "59040556"
 
 ### <a name="requesteddeploymentstatevalue-values"></a>requestedDeploymentStateValue values 
 
-|Элемент|
+|Member|
 |:---|
 |Нет|
 |приостановлено|
 |архив|
 
+### <a name="safeguardcategory-values"></a>safeguardCategory values 
+
+|Member|
+|:---|
+|likelyIssues|
+
 ### <a name="updatecategory-values"></a>updateCategory values 
 
-|Элемент|
+|Member|
 |:---|
 |функция|
 |качество|
