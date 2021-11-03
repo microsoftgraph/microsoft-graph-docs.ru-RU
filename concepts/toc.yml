@@ -234,6 +234,8 @@ items:
                 href: windowsupdates-deploy-expedited-update.md
               - name: Планирование развертывания
                 href: windowsupdates-schedule-deployment.md
+              - name: Управление защитными мерами
+                href: windowsupdates-manage-safeguards.md
               - name: Управление правилами мониторинга
                 href: windowsupdates-manage-monitoring-rules.md
           - name: Управление несколькими клиентами (предварительная версия)

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: adimitui
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 2b4ac86a3dd1bad876c6819b9f49c28ca4bac7fb
-ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
+ms.openlocfilehash: 816f0028c8250e497b4cf067c5bd22995b73973b
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240889"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695379"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -51,7 +51,7 @@ ms.locfileid: "60240889"
 | businessPhones | Коллекция String | Номера телефонов пользователя. Несмотря на то что это коллекция строк, в качестве значения этого свойства можно указать только одно число. |
 | city | String | Название города в адресе организации. |
 | country | String | Название страны или региона в адресе организации. |
-| countryLetterCode | String | Сокращенное название страны или региона для организации. |
+| countryLetterCode | String | Сокращенное обозначение страны или региона организации в формате ISO 3166-2. |
 | createdDateTime | DateTimeOffset | Метка времени создания организации. Значение не может изменяться и заполняется автоматически, когда создается организация. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. |
 | deletedDateTime | DateTimeOffset | Представляет дату и время удаления клиента Azure AD в формате ISO 8601 (время всегда указывается в формате UTC). Например, полночь 1 января 2014 г. в формате UTC представляется в виде `2014-01-01T00:00:00Z`. Только для чтения. |
 | displayName | String | Отображаемое имя для клиента. |
