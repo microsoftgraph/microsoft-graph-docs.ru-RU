@@ -9,8 +9,8 @@ ms.openlocfilehash: 3a1769396f35ba44c1ccf876529dc10758c2831e
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688733"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60674705"
 ---
 # <a name="update-devicemanagementconfigurationsetting"></a>Обновление deviceManagementConfigurationSetting
 
