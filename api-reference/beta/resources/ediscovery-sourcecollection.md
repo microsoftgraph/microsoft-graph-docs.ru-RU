@@ -2,15 +2,15 @@
 title: тип ресурса sourceCollection
 description: Представляет коллекцию электронных данных, которая обычно называется поиском.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: aca8b0dcf89f00ada59b093d1164104da0885578
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: 13d98f74ce4ce0c734f4950ec028b038a9819a30
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080472"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687994"
 ---
 # <a name="sourcecollection-resource-type"></a>тип ресурса sourceCollection
 
@@ -41,12 +41,12 @@ ms.locfileid: "52080472"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|contentQuery|String|Строка запроса в запросе KQL (Язык запросов ключевых слов). Подробные сведения см. в [статье Ключевые запросы и условия поиска для поиска контента и поиска электронных данных.](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions)  Поиск можно уточнить с помощью полей в паре со значениями; например, *subject:"Quarterly Financials" AND Date>=06/01/2016 and Date<=07/01/2016*|
+|contentQuery|String|Строка запроса в запросе KQL (Язык запросов ключевых слов). Подробные сведения см. в [статье Ключевые запросы и условия поиска для поиска контента и поиска электронных данных.](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions) Поиск можно уточнить с помощью полей в паре со значениями; например, *subject:"Quarterly Financials" And Date>=06/01/2016 and Date<=07/01/2016*.|
 |createdBy|[identitySet](../resources/identityset.md)|Пользователь, создавший **sourceCollection.**|
 |createdDateTime|DateTimeOffset|Дата и время создания **sourceCollection.**|
-|dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|При указании коллекция будет охватывать всю службу для всей рабочей нагрузки. Возможные значения: `none` `allTenantMailboxes` , , , `allTenantSites` `allCaseCustodians` `allCaseNoncustodialDataSources` .|
-|description|String|Описание **sourceCollection**|
-|displayName|String|Имя отображения **sourceCollection**|
+|dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|При указании коллекция будет охватывать всю службу для всей рабочей нагрузки. Возможные значения: `none`, `allTenantMailboxes`, `allTenantSites`, `allCaseCustodians`, `allCaseNoncustodialDataSources`.|
+|description|String|Описание **sourceCollection**.|
+|displayName|String|Имя отображения **sourceCollection**.|
 |id|String| ID для **sourceCollection**. Только для чтения. |
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Последний пользователь, который изменил **sourceCollection**.|
 |lastModifiedDateTime|DateTimeOffset|Последняя дата и время изменения **sourceCollection.**|
@@ -55,7 +55,7 @@ ms.locfileid: "52080472"
 
 |Member|Описание|
 |:----|-----------|
-|нет|Не укажите какие-либо области — расположения будут ссылаться отдельно.|
+|Нет|Не укажите какие-либо области — расположения будут ссылаться отдельно.|
 |allTenantMailboxes|Включи все почтовые ящики клиента в **sourceCollection.**|
 |allTenantSites|Включи все сайты-клиенты **в sourceCollection.**|
 |allCaseCustodians|Включай все расположения хранителей в **sourceCollection.**|
@@ -71,7 +71,7 @@ ms.locfileid: "52080472"
 |lastEstimateStatisticsOperation|[microsoft.graph.ediscovery.estimateStatisticsOperation](../resources/ediscovery-estimatestatisticsoperation.md)|Последняя операция оценки, связанная с **sourceCollection.**|
 |noncustodialSources|[коллекция microsoft.graph.ediscovery.noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md)|**noncustodialDataSource** источники, включенные в **sourceCollection**|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 <!-- {

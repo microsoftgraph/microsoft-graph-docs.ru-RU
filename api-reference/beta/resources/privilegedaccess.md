@@ -1,16 +1,16 @@
 ---
 title: тип ресурса privilegedAccess
 description: " например, представляет собой управление привилегированным доступом PIM к ресурсам `privilegedAccess/azureResources` Azure."
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 0ada5d88ea0404577869aea9a1f1453c1d77fc3f
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 9f7bf8f06ae75bd082664b5efad3e5ca9c46b70e
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453975"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696954"
 ---
 # <a name="privilegedaccess-resource-type"></a>тип ресурса privilegedAccess
 

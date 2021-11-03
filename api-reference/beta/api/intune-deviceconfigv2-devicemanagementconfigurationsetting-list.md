@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 31e8f61d39471f8ce4cbb001c110802fae974ea2
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 18004967063206d8e10d7def499ad414a50ce320
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60490612"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695351"
 ---
 # <a name="list-devicemanagementconfigurationsettings"></a>Список deviceManagementConfigurationSettings
 
@@ -29,7 +29,7 @@ ms.locfileid: "60490612"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,6 +37,7 @@ ms.locfileid: "60490612"
 }
 -->
 ``` http
+GET /deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/settings
 GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings
 ```
 
@@ -57,7 +58,7 @@ GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicy
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings
+GET https://graph.microsoft.com/beta/deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/settings
 ```
 
 ### <a name="response"></a>Отклик

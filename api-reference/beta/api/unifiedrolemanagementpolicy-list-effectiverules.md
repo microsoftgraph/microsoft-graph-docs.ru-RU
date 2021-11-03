@@ -1,16 +1,16 @@
 ---
 title: Список effectiveRules
 description: Получите ресурсы unifiedRoleManagementPolicyRule из свойства эффективной навигацииRules.
-author: shauliu1
-localization_priority: Normal
+author: carolinetempleton
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ce95b6d702e66655f13fed8cd78c5d5cc9e4a1c5
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 1a9819ef980f982fc76e104c74b21056c207dd17
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58452437"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694696"
 ---
 # <a name="list-effectiverules"></a>Список effectiveRules
 Пространство имен: microsoft.graph
@@ -44,7 +44,7 @@ GET /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/effectiveRu
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

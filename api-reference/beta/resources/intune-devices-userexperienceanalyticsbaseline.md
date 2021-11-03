@@ -2,15 +2,15 @@
 title: тип ресурса userExperienceAnalyticsBaseline
 description: Базовый объект аналитики пользовательских интерфейсов содержит базовые значения, с которыми можно сравнить оценки аналитики пользовательских интерфейсов.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f3426303818afc77dd167a041a3f1af0100a86c4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a929c43f0aad551ad80d9321bbaa1882d0c14201
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59141202"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60689055"
 ---
 # <a name="userexperienceanalyticsbaseline-resource-type"></a>тип ресурса userExperienceAnalyticsBaseline
 
@@ -49,6 +49,7 @@ ms.locfileid: "59141202"
 |resourcePerformanceMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|Показатели производительности ресурсов аналитики пользовательского опыта.|
 |appHealthMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|Показатели здоровья приложения для аналитики пользовательского интерфейса.|
 |workFromAnywhereMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|Аналитика пользовательских интерфейсов работает из любой метрики.|
+|batteryHealthMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|Метрики здоровья батареи для аналитики пользовательского интерфейса.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

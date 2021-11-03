@@ -9,8 +9,8 @@ ms.openlocfilehash: c9bf9de2c4adbd68eb242fbbdda2d61f78753ef8
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696205"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60668849"
 ---
 # <a name="devicemanagementconfigurationsettinggroupdefinition-resource-type"></a>тип ресурса deviceManagementConfigurationSettingGroupDefinition
 

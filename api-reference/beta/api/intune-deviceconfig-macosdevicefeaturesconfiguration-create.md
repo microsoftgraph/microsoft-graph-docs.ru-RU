@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5a5aeb243743484840b99645d777c13b4ec9b429
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 87c76ddc7c47a68f71367ba1191809454a02e801
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60492886"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696604"
 ---
 # <a name="create-macosdevicefeaturesconfiguration"></a>Создание объекта macOSDeviceFeaturesConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "60492886"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -120,7 +120,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 6135
+Content-length: 6256
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -249,6 +249,7 @@ Content-length: 6135
     "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
     "modeCredentialUsed": "Mode Credential Used value",
     "usernameLableCustom": "Username Lable Custom value",
+    "usernameLabelCustom": "Username Label Custom value",
     "userSetupDelayed": true,
     "signInHelpText": "Sign In Help Text value",
     "kerberosAppsInBundleIdACLIncluded": true,
@@ -256,6 +257,9 @@ Content-length: 6135
     "credentialsCacheMonitored": true,
     "singleSignOnExtensionPreferredKDCs": [
       "Single Sign On Extension Preferred KDCs value"
+    ],
+    "preferredKDCs": [
+      "Preferred KDCs value"
     ],
     "tlsForLDAPRequired": true
   },
@@ -312,7 +316,7 @@ Content-length: 6135
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 6307
+Content-Length: 6428
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -444,6 +448,7 @@ Content-Length: 6307
     "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
     "modeCredentialUsed": "Mode Credential Used value",
     "usernameLableCustom": "Username Lable Custom value",
+    "usernameLabelCustom": "Username Label Custom value",
     "userSetupDelayed": true,
     "signInHelpText": "Sign In Help Text value",
     "kerberosAppsInBundleIdACLIncluded": true,
@@ -451,6 +456,9 @@ Content-Length: 6307
     "credentialsCacheMonitored": true,
     "singleSignOnExtensionPreferredKDCs": [
       "Single Sign On Extension Preferred KDCs value"
+    ],
+    "preferredKDCs": [
+      "Preferred KDCs value"
     ],
     "tlsForLDAPRequired": true
   },

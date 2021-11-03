@@ -1350,11 +1350,11 @@ items:
         items:
           - name: Обзор
             href: resources/complianceapioverview.md
-          - name: Запрос на права субъекта
+          - name: Запросы прав субъекта
             items:
               - name: Обзор
                 href: resources/subjectrightsrequest-subjectrightsrequestapioverview.md
-              - name: Запрос на права субъекта
+              - name: Запросы прав субъекта
                 href: resources/subjectrightsrequest.md
                 items:
                   - name: Список
@@ -4252,8 +4252,6 @@ items:
                 href: api/educationuser-list-taughtclasses.md
               - name: Создание рубрики
                 href: api/educationuser-post-rubrics.md
-              - name: Перечисление заданий
-                href: api/educationuser-list-assignments.md
           - name: Задание
             href: resources/educationassignment.md
             items:
@@ -4516,6 +4514,13 @@ items:
                     href: api/administrativeunit-get-scopedrolemembers.md
                   - name: Удаление администратора с ролью в заданной области
                     href: api/administrativeunit-delete-scopedrolemembers.md
+              - name: Ключ восстановления BitLocker
+                href: resources/bitlockerrecoverykey.md
+                items:
+                  - name: Список
+                    href: api/bitlocker-list-recoverykeys.md
+                  - name: Получение
+                    href: api/bitlockerrecoverykey-get.md
               - name: Контракты
                 href: resources/contract.md
                 items:

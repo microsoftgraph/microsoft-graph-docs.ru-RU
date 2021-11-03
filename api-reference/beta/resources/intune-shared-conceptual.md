@@ -4,12 +4,12 @@ description: Перечислены API Graph Microsoft для конечных 
 ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 86a4466538c88ca758cb91ff541e880b8722cd69
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 03a663f540ab51ea6f76274968b0ec52593dc597
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59074810"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687552"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Общие ресурсы в Microsoft Intune
 
@@ -29,6 +29,7 @@ ms.locfileid: "59074810"
 - [Android-предприятие всегда на типе пакета VPN](intune-shared-androidenterprisealwaysonvpnpackagetype.md)
 - [Защита управляемых приложений для Android](intune-shared-androidmanagedappprotection.md)
 - [Параметры назначения приложений для управляемого магазина Android](intune-shared-androidmanagedstoreappassignmentsettings.md)
+- [Режим автоматического обновления магазина с управляемым управлением Android](intune-shared-androidmanagedstoreautoupdatemode.md)
 - [Целевое хранилище сертификатов](intune-shared-certificatedestinationstore.md)
 - [Хранилище сертификатов](intune-shared-certificatestore.md)
 - [Шкала срока действия сертификата](intune-shared-certificatevalidityperiodscale.md)

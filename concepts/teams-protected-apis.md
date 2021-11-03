@@ -4,12 +4,12 @@ description: API Microsoft Teams в Microsoft Graph, получающие дос
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: ea31eafc933f0ec83cfbb00ecc652812223d9516
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 03ad082f9bed728222f09c88de5d42b517f1fd2c
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59083833"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687454"
 ---
 # <a name="protected-apis-in-microsoft-teams"></a>Защищенные API в Microsoft Teams
 
@@ -34,6 +34,3 @@ API Microsoft Teams в Microsoft Graph, получающие доступ к к�
 >[Отправка сообщения](/graph/api/channel-post-messages) не является защищенным API.
 
 Чтобы запросить доступ к этим защищенным API, заполните следующую [форму запроса](https://aka.ms/teamsgraph/requestaccess). Мы проверяем запросы доступа каждую среду и развертываем утверждения каждую пятницу, кроме недель, на которые приходятся основные праздничные каникулы в США. Отправки в эти недели обрабатываются в следующую непраздничную неделю. 
-
-Если вы хотите предоставить информацию в дополнение к форме, обратитесь по адресу [teamsAppPerms@microsoft.com](mailto:teamsAppPerms@microsoft.com).
-Включайте ИД приложения во всю переписку.

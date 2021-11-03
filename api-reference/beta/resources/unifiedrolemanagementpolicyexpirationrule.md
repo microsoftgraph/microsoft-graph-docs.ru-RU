@@ -1,16 +1,16 @@
 ---
 title: тип ресурса unifiedRoleManagementPolicyExpirationRule
 description: В единойroleManagementPolicyExpirationRule указывается правило включить, связанное с политикой управления ролью. Она получена из microsoft.graph.unifiedRoleManagementPolicyRule.
-author: shauliu1
+author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: bd2603423af5555b8ad39e1641162636dc447c63
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 08356457995f5e093bd65c9b49e52623d423589c
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59074530"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695883"
 ---
 # <a name="unifiedrolemanagementpolicyexpirationrule-resource-type"></a>тип ресурса unifiedRoleManagementPolicyExpirationRule
 

@@ -9,8 +9,8 @@ ms.openlocfilehash: a8ff252086bcb1ec966efe1718deb767a98feaab
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60674386"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696646"
 ---
 # <a name="list-targetedmanagedappprotections"></a>Перечисление объектов targetedManagedAppProtection
 

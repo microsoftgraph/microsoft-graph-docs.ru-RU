@@ -5,12 +5,12 @@ author: sandeo-MSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1933a98b41abca30409f698d8c0696e80c960992
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 4d731657239d106a797387af729e825af2f0e483
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561523"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688606"
 ---
 # <a name="update-device"></a>Обновление устройства
 
@@ -52,7 +52,7 @@ PATCH /devices/{id}
 |accountEnabled|Логический| Если учетная запись обеспечена — `true`, в противном случае — `false`. Обновить это свойство могут только звонители в ролях глобального администратора и администратора облачных устройств. |
 |operatingSystem|String|Тип операционной системы на устройстве.|
 |operatingSystemVersion|String|Версия операционной системы на устройстве.|
-|displayName|Строка|Отображаемое имя устройства.|
+|displayName|String|Отображаемое имя устройства.|
 |isCompliant|Boolean|`true` если устройство соответствует политикам управления мобильными устройствами(MDM); в противном `false` случае . Это может быть обновлено intune только для любого типа ОС устройства или утвержденного приложения [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows устройств ОС. |
 |isManaged|Boolean|`true` если устройство управляется приложением управления мобильными устройствами (MDM); в противном `false` случае . Это может быть обновлено intune только для любого типа ОС устройства или утвержденного приложения [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows устройств ОС. |
 
@@ -113,6 +113,8 @@ HTTP/1.1 204 No Content
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_device_extensionAttributes"
@@ -127,6 +129,24 @@ Content-type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-device-extensionattributes-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-device-extensionattributes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-device-extensionattributes-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-device-extensionattributes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 

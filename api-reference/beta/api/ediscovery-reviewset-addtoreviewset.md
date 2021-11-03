@@ -1,16 +1,16 @@
 ---
 title: 'reviewSet: addToReviewSet'
-description: Начните процесс добавления коллекции из служб Microsoft 365 в набор отзывов.
+description: Запустите процесс добавления коллекции из Microsoft 365 служб в набор отзывов.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: a1002d8b322876f753f424a1bffeb7ef8a278b35
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 4669f627ac7d78e0090fa6c0977c979ad8e4a86a
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772915"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60693959"
 ---
 # <a name="reviewset-addtoreviewset"></a>reviewSet: addToReviewSet
 
@@ -18,7 +18,7 @@ ms.locfileid: "50772915"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Начните процесс добавления коллекции из служб Microsoft 365 в набор отзывов. После создания операции можно получить состояние операции путем получения параметра `Location` из заглавных параметров ответа. Расположение предоставляет URL-адрес, который возвращает [случайExportOperation](../resources/ediscovery-caseexportoperation.md).
+Запустите процесс добавления коллекции из Microsoft 365 служб в набор отзывов. После создания операции можно получить состояние операции путем получения параметра `Location` из заглавных параметров ответа. Расположение предоставляет URL-адрес, который возвращает [случайExportOperation](../resources/ediscovery-caseexportoperation.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -45,12 +45,12 @@ POST /compliance/ediscovery/cases/{caseId}/reviewSets/{reviewsetId}/addToReviewS
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
-В тело запроса добавьте параметры в формате JSON.
+В теле запроса поставляем представление JSON параметров.
 
 В следующей таблице указаны параметры, которые можно использовать с этим действием.
 
@@ -103,7 +103,6 @@ Content-length: 531
 [!INCLUDE [sample-code](../includes/snippets/java/reviewset-addtoreviewset-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
 
 
 ### <a name="response"></a>Отклик

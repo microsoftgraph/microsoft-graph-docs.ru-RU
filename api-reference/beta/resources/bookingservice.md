@@ -1,55 +1,58 @@
 ---
-title: Тип ресурса Букингсервице
+title: Тип ресурса bookingService
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 37a1e6adb6a4769601d5f9806d1e3b262fe2879f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f75bca271ffd33b36b7e0a1f5ed726ae417d4a0c
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071747"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694913"
 ---
-# <a name="bookingservice-resource-type"></a>Тип ресурса Букингсервице
+# <a name="bookingservice-resource-type"></a>Тип ресурса bookingService
 
 Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Представляет сведения о конкретной службе, предоставляемой [букингбусинесс](bookingbusiness.md), такие как имя службы, Цена и сотрудники, которые обычно предоставляют такую службу.
+Представляет сведения о конкретной службе, предоставляемой [bookingBusiness,](bookingbusiness.md)например имя службы, цена и персонал, который обычно предоставляет такую услугу.
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Список служб](../api/bookingbusiness-list-services.md) | Коллекция [букингсервице](bookingservice.md) | Получение списка объектов **букингсервице** в указанном [букингбусинесс](../resources/bookingbusiness.md).|
-|[Создание Букингсервице](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | Создайте объект **букингсервице** для указанного [букингбусинесс](../resources/bookingbusiness.md). |
-|[Получение Букингсервице](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |Получение свойств и связей объекта **букингсервице** в указанном [букингбусинесс](../resources/bookingbusiness.md).|
-|[Обновление](../api/bookingservice-update.md) | [bookingService](bookingservice.md)    |Обновление объекта **букингсервице** в указанном [букингбусинесс](../resources/bookingbusiness.md). |
-|[Удаление](../api/bookingservice-delete.md) | Нет |Удаление объекта **букингсервице** в указанном [букингбусинесс](../resources/bookingbusiness.md). |
+|[Службы списка](../api/bookingbusiness-list-services.md) | [коллекция bookingService](bookingservice.md) | Получите список объектов **bookingService** в указанном [bookingbusiness.](../resources/bookingbusiness.md)|
+|[Создание bookingService](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | Создайте **bookingService** для указанного [bookingbusiness.](../resources/bookingbusiness.md) |
+|[Получить bookingService](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |Получите свойства и связи объекта **bookingService** в указанном [bookingbusiness.](../resources/bookingbusiness.md)|
+|[Обновление](../api/bookingservice-update.md) | [bookingService](bookingservice.md)    |Обновление объекта **bookingService** в указанном [bookingbusiness](../resources/bookingbusiness.md). |
+|[Удаление](../api/bookingservice-delete.md) | Нет |Удаление объекта **bookingService** в указанном [bookingbusiness](../resources/bookingbusiness.md). |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|дефаултдуратион|Длительность|Длина службы по умолчанию, представленная в виде числа дней, часов, минут и секунд. Например, P11D23H59M 59.999999999999 S. |
+|defaultDuration|Длительность|Длина службы по умолчанию, представленная в числах дней, часов, минут и секунд. Например, P11D23H59M59.999999999999S. |
 |defaultLocation|[location](location.md)|Физическое расположение службы по умолчанию.|
-|дефаултприце|Двойное с плавающей точкой|Денежная Цена по умолчанию для службы.|
-|дефаултприцетипе|string|Способ оплаты службы по умолчанию. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
-|дефаултреминдерс|Коллекция [букингреминдер](bookingreminder.md)|Набор напоминаний по умолчанию для встречи этой службы. Значение этого свойства доступно только при чтении этого **букингсервице** с помощью идентификатора.|
+|defaultPrice|Double|Денежная цена по умолчанию для службы.|
+|defaultPriceType|string|Способ заряжания службы по умолчанию. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
+|defaultReminders|[коллекция bookingReminder](bookingreminder.md)|Набор напоминаний по умолчанию для назначения этой службы. Значение этого свойства доступно только при чтении этого **bookingService** по его ID.|
 |description|String|Текстовое описание службы.|
 |displayName|String|Имя службы.|
 |emailAddress|String|Адрес электронной почты|
-|id|String|Идентификатор этой службы в формате GUID. Только для чтения.|
-|ишидденфромкустомерс|Boolean|Значение true означает, что эта служба недоступна клиентам для резервирования.|
+|id|String|ID этой службы в формате GUID. Только для чтения.|
+|isHiddenFromCustomers|Логический|True означает, что эта служба недоступна клиентам для бронирования.|
+|isLocationOnline|Логический|True указывает, что встречи для службы будут проводиться онлайн. Значение по умолчанию − ложь.|
 |notes|String|Дополнительные сведения об этой службе.|
-|Буфер буфера|Длительность|Время, в течение которого помещается в буфер после встречи для этой службы и до того, как может быть зарезервирована Следующая встреча покупателя.|
-|пребуфер|Длительность|Время, в течение которого будет помещено в буфер, прежде чем можно будет запустить встречу для этой службы.|
-|счедулингполици|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Набор политик, определяющих, как должны создаваться встречи для этого типа службы и управлять ими.|
-|стаффмемберидс|Коллекция String|Представляет [сотрудников](bookingstaffmember.md) , которые предоставляют эту службу. |
+|postBuffer|Длительность|Время буферизации после назначения для этой службы заканчивается, и до следующей встречи клиента можно заказать.|
+|preBuffer|Длительность|Время буферизации перед назначением для этой службы может начаться.|
+|schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Набор политик, которые определяют, как следует создавать и управлять встречами для этого типа службы.|
+|smsNotificationsEnabled|Логический|True указывает, что sms-уведомления можно отправить клиентам для назначения службы. Значение по умолчанию − ложь.|
+|staffMemberIds|Коллекция строк|Представляет тех [сотрудников,](bookingstaffmember.md) которые предоставляют эту службу. |
+|webUrl|String|URL-адрес, который клиент использует для доступа к службе.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 
@@ -77,11 +80,14 @@ ms.locfileid: "48071747"
   "emailAddress": "String",
   "id": "String (identifier)",
   "isHiddenFromCustomers": true,
+  "isLocationOnline": "Boolean",
   "notes": "String",
   "postBuffer": "String (timestamp)",
   "preBuffer": "String (timestamp)",
   "schedulingPolicy": {"@odata.type": "microsoft.graph.bookingSchedulingPolicy"},
-  "staffMemberIds": ["String"]
+  "smsNotificationsEnabled": "Boolean",
+  "staffMemberIds": ["String"],
+  "webUrl": "String"
 }
 
 ```

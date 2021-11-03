@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 4d557100dcef2e94ecd8fc2ab219bb89490b948b
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: f1f4ef82726167a5484eae35531763d53dfaec0a
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446711"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60693425"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -47,6 +47,15 @@ ms.locfileid: "60446711"
 |:-----|
 |passwordAddition|
 |passwordLifetime|
+|symmetricKeyAddition|
+|symmetricKeyLifetime|
+|unknownFutureValue|
+
+### <a name="appkeycredentialrestrictiontype-values"></a>значения appKeyCredentialRestrictionType
+
+|Member|
+|:-----|
+|asymmetricKeyLifetime|
 |unknownFutureValue|
 
 ### <a name="synchronizationsecret-values"></a>синхронизацияSecret значения
@@ -177,7 +186,7 @@ ms.locfileid: "60446711"
 |:---|
 |String|
 |Целое число|
-|Справочные материалы|
+|Справка|
 |Двоичный|
 |Логический|
 |Даты и время|
@@ -195,7 +204,7 @@ ms.locfileid: "60446711"
 
 |Member|
 |:---|
-|Отсутствует|
+|Нет|
 |AttributeNames|
 |AttributeDataTypes|
 |AttributeReadOnly|
@@ -842,7 +851,7 @@ ms.locfileid: "60446711"
 
 |Member|
 |:---|
-|birthday|
+|birthday;|
 |свадьба|
 |unknownFutureValue|
 
@@ -2058,13 +2067,13 @@ Enum для серьезности оповещений.
 |:---|:---|
 |Нет|0|
 |High (Высокий)|1|
-|Низкие|2|
+|Низкий|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>значения threatAssessmentContentType
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| почта;   | 1     | Угроза почты.            |
+| mail   | 1     | Угроза почты.            |
 | url    | 2     | УГРОЗА URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 

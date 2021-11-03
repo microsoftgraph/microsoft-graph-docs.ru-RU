@@ -2,15 +2,15 @@
 title: Тип ресурса targetedManagedAppProtection
 description: Политика, используемая для настройки расширенных параметров управления для определенных групп безопасности
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b4382cbe71fbed7b49175b660ad19563aaadece0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3615970acd130f99554e7b45e27bd2c4a5c02f41
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59063869"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696877"
 ---
 # <a name="targetedmanagedappprotection-resource-type"></a>Тип ресурса targetedManagedAppProtection
 
@@ -37,10 +37,10 @@ ms.locfileid: "59063869"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|String|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|description|Строка|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|description|String|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |id|String|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |version|String|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |periodOfflineBeforeAccessCheck|Duration|Время до проверки доступа, когда устройство не подключено к Интернету. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
@@ -67,12 +67,12 @@ ms.locfileid: "59063869"
 |disableAppPinIfDevicePinIsSet|Boolean|Указывает, обязательно ли использовать ПИН-код приложения, если установлен ПИН-код устройства. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |maximumRequiredOsVersion|String|Версии, размером больше указанной версии, заблокируют доступ к данным компании управляемому приложению. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |maximumWarningOsVersion|String|Версии, размером больше указанной версии, заблокируют доступ к данным компании управляемому приложению. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|maximumWipeOsVersion|Строка|Версии, размером больше указанной версии, заблокируют доступ к данным компании управляемому приложению. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|maximumWipeOsVersion|String|Версии, размером больше указанной версии, заблокируют доступ к данным компании управляемому приложению. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumRequiredOsVersion|String|В более старых версиях управляемое приложение не сможет получить доступ к данным компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumWarningOsVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение о невозможности получить доступ к данным компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumRequiredAppVersion|String|В более старых версиях управляемое приложение не сможет получить доступ к данным компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumWarningAppVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|minimumWipeOsVersion|Строка|Версии, менее или равные указанной версии, стирают управляемое приложение и связанные с ним данные компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|minimumWipeOsVersion|String|Версии, менее или равные указанной версии, стирают управляемое приложение и связанные с ним данные компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumWipeAppVersion|String|Версии, менее или равные указанной версии, стирают управляемое приложение и связанные с ним данные компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет управляемое поведение приложения, блок или стирка, когда устройство либо коренится, либо jailbroken, если устройствоComplianceRequired настроено на верность. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `block`, `wipe`, `warn`.|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет управляемое поведение приложения, блок или стирка, основываясь на максимальном количестве попыток повторного повторного действия пин-кода. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `block`, `wipe`, `warn`.|
@@ -87,11 +87,12 @@ ms.locfileid: "59063869"
 |allowedDataIngestionLocations|[коллекция managedAppDataIngestionLocation](../resources/intune-mam-managedappdataingestionlocation.md)|Разрешенные места хранения управляемых данных. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |appActionIfUnableToAuthenticateUser|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|При наборе будет указано, какие действия необходимо принять в случае, если пользователь не может проверить, так как маркер проверки подлинности является недействительным. Это происходит, когда пользователь удаляется или отключен в AAD. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `block`, `wipe`, `warn`.|
 |dialerRestrictionLevel|[managedAppPhoneNumberRedirectLevel](../resources/intune-mam-managedappphonenumberredirectlevel.md)|Классы приложений-дозвонищ, которые могут открывать телефонный номер. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `allApps`, `managedApps`, `customApp`, `blocked`.|
+|gracePeriodToBlockAppsDuringOffClockHours|Длительность|Период отсрочки перед блокировкой доступа к приложениям в часы ожидания. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |isAssigned|Boolean|Указывает, развернута ли политика в группах включения.|
 |targetedAppManagementLevels|[appManagementLevel](../resources/intune-mam-appmanagementlevel.md)|Предполагаемые уровни управления приложениями для этой политики. Возможные значения: `unspecified`, `unmanaged`, `mdm`, `androidEnterprise`.|
 |appGroupType|[targetedManagedAppGroupType](../resources/intune-mam-targetedmanagedappgrouptype.md)|Выбор общедоступных приложений: группового или индивидуального. Возможные значения: `selectedPublicApps`, `allCoreMicrosoftApps`, `allMicrosoftApps`, `allApps`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md)|Список групп включения и исключения, к которым применяется политика.|
@@ -164,6 +165,7 @@ ms.locfileid: "59063869"
   ],
   "appActionIfUnableToAuthenticateUser": "String",
   "dialerRestrictionLevel": "String",
+  "gracePeriodToBlockAppsDuringOffClockHours": "String (duration)",
   "isAssigned": true,
   "targetedAppManagementLevels": "String",
   "appGroupType": "String"

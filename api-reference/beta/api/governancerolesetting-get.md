@@ -1,16 +1,16 @@
 ---
 title: Get governanceRoleSetting
 description: Извлечение свойств и связей управленияRoleSetting.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: a5a6cee5dd6db1064571562a6b638eada1494b94
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 71a80cda86c3a940c7c7cea834c0f39923f7e041
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453753"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696737"
 ---
 # <a name="get-governancerolesetting"></a>Get governanceRoleSetting
 
@@ -18,6 +18,8 @@ ms.locfileid: "58453753"
 
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 Извлечение свойств и связей [управленияRoleSetting](../resources/governancerolesetting.md).
 
@@ -30,7 +32,7 @@ ms.locfileid: "58453753"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureResources |
+| Application | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -38,7 +40,7 @@ ms.locfileid: "58453753"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureAD |
+| Application | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Группы
 
@@ -46,7 +48,7 @@ ms.locfileid: "58453753"
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroup |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureADGroup |
+| Application | PrivilegedAccess.Read.AzureADGroup |
 
 Помимо области разрешений, этот API требует, чтобы у запросителя было по крайней мере одно назначение ролей на ресурсе, которому принадлежит [governanceRoleSetting.](../resources/governancerolesetting.md)
 ## <a name="http-request"></a>HTTP-запрос

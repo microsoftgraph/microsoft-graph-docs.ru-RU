@@ -3,12 +3,12 @@ title: Рекомендации по работе с Microsoft Graph
 description: Эта статья содержит рекомендации по эффективному использованию Microsoft Graph в приложениях, независимо от текущей задачи — знакомство с Microsoft Graph, увеличение производительности или повышение надежности приложения.
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 1801586e1ce8e1f0b9798df4275d41ee95a09b9b
-ms.sourcegitcommit: 0ec845f93eaa140ad833ba163c76c5308197a92f
+ms.openlocfilehash: 1395bca7e84156e1e7eea640387c2167c147fbc3
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60059936"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688109"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>Рекомендации по работе с Microsoft Graph
 
@@ -43,7 +43,7 @@ ms.locfileid: "60059936"
 
   - Заявление о конфиденциальности, условия использования, название, логотип и домен приложения будут отображаться в окне согласия и других интерфейсах, поэтому их следует сделать понятными для пользователей.
   - Учитывайте, кто будет предоставлять согласие вашему приложению — пользователи или администраторы, — и настройте [запрашиваемые разрешения соответствующим образом](/azure/active-directory/develop/active-directory-v2-scopes).
-  - Убедитесь, что вы понимаете разницу между [статическим, динамическим и добавочным согласиями](/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent).
+  - Убедитесь, что вы понимаете разницу между [статическим, динамическим и добавочным согласиями](/azure/active-directory/develop/v2-permissions-and-consent#consent-types).
 
 - **Учитывайте мультитенантные приложения**. Помните, что у клиентов могут быть разные правила относительно приложений и согласия в разных состояниях. Например:
 

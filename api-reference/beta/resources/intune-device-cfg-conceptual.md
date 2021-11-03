@@ -4,12 +4,12 @@ description: Списки microsoft Graph API для конечных точек
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 3d0b6983ad4a4b54e774c767ebf8d1c18d2823d5
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 106aed065f0480fcec01a8f680e8ee33001d5e45
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60482947"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696072"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Конфигурация устройства в Microsoft Intune
 
@@ -209,6 +209,7 @@ ms.locfileid: "60482947"
 - [Тип ресурса deviceComplianceSettingState](intune-deviceconfig-devicecompliancesettingstate.md)
 - [Обзор пользователей, касающийся соответствия устройств требованиям](intune-deviceconfig-devicecomplianceuseroverview.md)
 - [Состояние пользователей, касающийся соответствия устройств требованиям](intune-deviceconfig-devicecomplianceuserstatus.md)
+- [Назначение конфигурировать устройства](intune-deviceconfig-deviceconfigassignmentintent.md)
 - [Назначение конфигурации устройства](intune-deviceconfig-deviceconfigurationassignment.md)
 - [Сводная информация о конфликте конфигурации устройства](intune-deviceconfig-deviceconfigurationconflictsummary.md)
 - [Обзор конфигураций устройств](intune-deviceconfig-deviceconfigurationdeviceoverview.md)

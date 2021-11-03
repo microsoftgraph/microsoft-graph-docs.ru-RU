@@ -2,15 +2,15 @@
 title: Create windowsUpdateForBusinessConfiguration
 description: Создание объекта windowsUpdateForBusinessConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 070a8889f7a14abf40503e57ae2c7154f07a2824
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8ba3cf21e6f43c7eaab4a669870bca6b210fa383
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59125101"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688572"
 ---
 # <a name="create-windowsupdateforbusinessconfiguration"></a>Create windowsUpdateForBusinessConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "59125101"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -56,8 +56,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|supportsScopeTags|Логическое|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость к выпуску ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -100,6 +100,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |userPauseAccess|[включить](../resources/intune-shared-enablement.md)|Указывает, следует ли включить доступ конечных пользователей к приостановке обновлений программного обеспечения. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |userWindowsUpdateScanAccess|[включить](../resources/intune-shared-enablement.md)|Указывает, следует ли отключить доступ пользователя к проверке Windows Update. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |updateNotificationLevel|[windowsUpdateNotificationDisplayOption](../resources/intune-deviceconfig-windowsupdatenotificationdisplayoption.md)|Указывает, какие Windows уведомления об обновлении пользователи видят. Возможные значения: `notConfigured`, `defaultNotifications`, `restartWarningsOnly`, `disableAllNotifications`.|
+|allowWindows11Upgrade|Логический|Разрешить подходящим Windows 10 устройствам для обновления до последней версии Windows 11.|
 
 
 
@@ -113,7 +114,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2794
+Content-length: 2828
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -183,7 +184,8 @@ Content-length: 2794
   "scheduleImminentRestartWarningInMinutes": 7,
   "userPauseAccess": "enabled",
   "userWindowsUpdateScanAccess": "enabled",
-  "updateNotificationLevel": "defaultNotifications"
+  "updateNotificationLevel": "defaultNotifications",
+  "allowWindows11Upgrade": true
 }
 ```
 
@@ -192,7 +194,7 @@ Content-length: 2794
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2966
+Content-Length: 3000
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -265,7 +267,8 @@ Content-Length: 2966
   "scheduleImminentRestartWarningInMinutes": 7,
   "userPauseAccess": "enabled",
   "userWindowsUpdateScanAccess": "enabled",
-  "updateNotificationLevel": "defaultNotifications"
+  "updateNotificationLevel": "defaultNotifications",
+  "allowWindows11Upgrade": true
 }
 ```
 

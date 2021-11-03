@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 181ac4bdb452fc0746e73cbb0f2679fd152b744e
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: e6dc4ab445d9b7fe015c7ca9b69f7c2f00fba0b3
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60489032"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688915"
 ---
 # <a name="reportremoteassistance-action"></a>reportRemoteAssistance action
 
@@ -27,9 +27,9 @@ ms.locfileid: "60489032"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

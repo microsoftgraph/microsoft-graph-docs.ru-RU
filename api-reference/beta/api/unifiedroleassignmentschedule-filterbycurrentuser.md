@@ -1,16 +1,16 @@
 ---
 title: 'unifiedRoleAssignmentSchedule: filterByCurrentUser'
 description: Получите список объектов unifiedRoleAssignmentSchedule и их свойств, отфильтрованных определенным пользователем
-author: shauliu1
-localization_priority: Normal
+author: carolinetempleton
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: cc7d3b20429a1f7e6dbc08da14196e9e4180da9a
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 80165ff8dad9b249a3f08b7db518246e95570869
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514350"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687139"
 ---
 # <a name="unifiedroleassignmentschedule-filterbycurrentuser"></a>unifiedRoleAssignmentSchedule: filterByCurrentUser
 Пространство имен: microsoft.graph
@@ -51,7 +51,7 @@ GET /roleManagement/directory/roleAssignmentSchedules/filterByCurrentUser(on='pr
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

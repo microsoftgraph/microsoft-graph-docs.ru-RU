@@ -2,21 +2,23 @@
 title: Privileged Identity Management — ресурсы Azure
 description: Интерфейсы API службы Azure AD Privileged Identity Management для управления ресурсами Azure.
 ms.localizationpriority: high
-author: shauliu1
+author: carolinetempleton
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 09c199c4f8c5653276be2f5ee2be23a909f54d98
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 63543f793c780165f8df130c47592c1f1dd93c0c
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696892"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695491"
 ---
 # <a name="privileged-identity-management---azure-resources"></a>Privileged Identity Management — ресурсы Azure
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 Можно использовать службу [Privileged Identity Management (PIM) Azure Active Directory (Azure AD)](/azure/active-directory/privileged-identity-management/pim-configure) для ресурсов Azure, чтобы настроить рабочий процесс своевременного предоставления доступа для ролей инфраструктуры Azure на уровне групп управления, подписок, групп ресурсов и отдельных ресурсов. Это относится как ко встроенным ролям, таким как "Владелец" и "Участник", так и к настраиваемым ролям RBAC.
 

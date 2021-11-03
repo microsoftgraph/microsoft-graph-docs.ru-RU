@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 9bc32b4f49a2cb985d1b19f49e72d2c373bb4e6e
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 11dbc40cb405b7b673fa02ba4845ced6e57c9986
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60255943"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696044"
 ---
 # <a name="deploy-a-feature-update-using-the-windows-update-for-business-deployment-service"></a>Развертывание обновления функций с Windows службы развертывания для бизнеса
 
@@ -23,7 +23,7 @@ ms.locfileid: "60255943"
 > [!IMPORTANT]
 > С помощью службы развертывания Windows Update for Business для обновления устройств до Windows 11 (установив параматер версии развертывания на "Windows 11 версии 21H2"), вы соглашаетесь, что при применении этой операционной системы к устройству либо (1) применимая лицензия Windows была приобретена при том лицензировании, или (2), что вы уполномочены связывать свой органи. zation и принимают от своего имени соответствующие условия лицензии microsoft Software, которые можно найти здесь: Условия лицензии [microsoft Software License](https://www.microsoft.com/Useterms).
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 * Устройства отвечают [необходимым требованиям для службы развертывания.](windowsupdates-concept-overview.md#prerequisites)
 * Прежде чем использовать службу развертывания для развертывания обновлений функций, устройства должны быть зарегистрированы в управлении службой развертывания для категории обновления функций. [](windowsupdates-enroll.md)
@@ -72,7 +72,7 @@ Content-Type: application/json
 
 [Развертывание](/graph/api/resources/windowsupdates-deployment) указывает содержимое для развертывания, как и когда развертывать контент и целевые устройства. При развертывании аудитория развертывания автоматически создается в качестве связи.
 
-Ниже приведен пример создания развертывания обновления функций с необязательными настройками расписания развертывания и [правил мониторинга.](windowsupdates-manage-monitoring-rules.md) [](windowsupdates-schedule-deployment.md) Целевые устройства указаны на следующем шаге.
+Ниже приведен пример создания развертывания обновления функций с необязательными настройками расписания развертывания и [правил мониторинга.](windowsupdates-manage-monitoring-rules.md) [](windowsupdates-schedule-deployment.md) [По умолчанию](windowsupdates-manage-safeguards.md) применяются защитные меры. Целевые устройства указаны на следующем шаге.
 
 ### <a name="request"></a>Запрос
 
@@ -95,7 +95,6 @@ Content-type: application/json
         "monitoring": {
             "monitoringRules": [
                 {
-                    "@odata.type": "#microsoft.graph.windowsUpdates.monitoringRule",
                     "signal": "rollback",
                     "threshold": 5,
                     "action": "pauseDeployment"
@@ -149,6 +148,7 @@ Content-Type: application/json
                 }
             ]
         },
+        "safeguard": null,
         "userExperience": null
     },
     "createdDateTime": "String (timestamp)",

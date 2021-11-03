@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: b794b9d718384e529f347ef4d03e5520ffd155b1
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 116a09b703cc5f5ab30b2911eacfd1f1fe9593a3
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60456422"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696372"
 ---
 # <a name="create-authorednote"></a>Создание authoredNote
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "60456422"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|SubjectRightsRequest.ReadWrite.All*|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается|
+|Application|Не поддерживается|
 
 >[!IMPORTANT]
 >Разрешения, отмеченные звездочкой (*), в настоящее время недоступны. Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues#compliance).
@@ -62,6 +62,8 @@ POST /privacy/subjectRightsRequests/{subjectRightsRequestId}/notes
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_authorednote_from_"
@@ -80,6 +82,24 @@ Content-length: 203
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-authorednote-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-authorednote-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-authorednote-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-authorednote-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

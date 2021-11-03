@@ -9,8 +9,8 @@ ms.openlocfilehash: 8c6bb683b1517cca28c9bc8efa81829d77479d66
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60676869"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60687391"
 ---
 # <a name="get-userexperienceanalyticsbatteryhealthappimpact"></a>Get userExperienceAnalyticsBatteryHealthAppImpact
 

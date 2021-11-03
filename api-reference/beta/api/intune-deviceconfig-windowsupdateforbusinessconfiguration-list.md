@@ -2,15 +2,15 @@
 title: Перечисление объектов windowsUpdateForBusinessConfiguration
 description: Перечисление свойств и связей объектов windowsUpdateForBusinessConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9db457786442d3fb6b6a9c2bc563e21e5f0229df
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 879402714d80b99342810dd618ceb4e1bcbe8a6b
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59070813"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694318"
 ---
 # <a name="list-windowsupdateforbusinessconfigurations"></a>Перечисление объектов windowsUpdateForBusinessConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "59070813"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3283
+Content-Length: 3321
 
 {
   "value": [
@@ -141,7 +141,8 @@ Content-Length: 3283
       "scheduleImminentRestartWarningInMinutes": 7,
       "userPauseAccess": "enabled",
       "userWindowsUpdateScanAccess": "enabled",
-      "updateNotificationLevel": "defaultNotifications"
+      "updateNotificationLevel": "defaultNotifications",
+      "allowWindows11Upgrade": true
     }
   ]
 }

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса запроса
 description: Тип абстрактного объекта для моделирования рабочего процесса асинхронизированного запроса для создания, обновления и удаления объекта.
-author: shauliu1
-localization_priority: Normal
+author: carolinetempleton
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 66856dada00835db637b86c8d1577ea83740c7e1
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: fad1d480fbb792ca63b05ddfe8507b2ede9d54e8
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454281"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695253"
 ---
 # <a name="request-resource-type"></a>тип ресурса запроса
 

@@ -4,12 +4,12 @@ description: Создание или настройка вкладки Microsoft
 author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7bb8438cbbfe54143a72ada3375b41e766a2b751
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 43668e76d4ad400193ab33b7925a0bd612f746c5
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59083875"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688095"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Настройка встроенных типов вкладок в Microsoft Teams
 
@@ -133,3 +133,7 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 Для вкладок страниц и списков SharePoint объекту `teamsAppId` соответствует `2a527703-1f6f-4559-a332-d8a7d288cd88`.
 Конфигурация не поддерживается.
 Если вы хотите настроить вкладку, попробуйте использовать вкладку веб-сайта.
+
+## <a name="sharepoint-framework-based-tabs"></a>SharePoint Framework на основе вкладок
+
+Настраиваемые вкладки, созданные с SharePoint Framework, можно создавать с помощью Microsoft Graph, но конфигурация не поддерживается.

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 304dc961ffffc159761cd3a45fd0e1374d852491
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 4789f7cec05c376ec5411d59911c5011bca6076c
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60489214"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688929"
 ---
 # <a name="clone-action"></a>действие клона
 
@@ -27,9 +27,9 @@ ms.locfileid: "60489214"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {

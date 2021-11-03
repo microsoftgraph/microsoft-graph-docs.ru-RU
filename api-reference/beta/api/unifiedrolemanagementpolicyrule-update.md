@@ -1,16 +1,16 @@
 ---
 title: Обновление unifiedRoleManagementPolicyRule
 description: Обновление свойств единого объектаRoleManagementPolicyRule.
-author: shauliu1
+author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 977643811a56cc7da3326307034c428211ac1ab6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6ddb387bf3b65e98fb23c3b77f14365da6aeb848
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59020513"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695897"
 ---
 # <a name="update-unifiedrolemanagementpolicyrule"></a>Обновление unifiedRoleManagementPolicyRule
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "59020513"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений|Не поддерживается|
+|Приложение|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,7 @@ PATCH /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/effective
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса

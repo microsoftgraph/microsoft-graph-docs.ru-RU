@@ -1,22 +1,24 @@
 ---
 title: тип ресурса governanceSchedule
 description: 'Представляет расписание для governanceRoleAssignmentRequest. Для запроса назначения ролей расписание контролирует время выполнения операции назначения ролей, остановку назначения ролей и частое выполнение операции назначения ролей. '
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 76f62186cca8e093459e0802497bab49dfbb0652
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 87abccdfac02bea7a3158feb786b39aad23fac3f
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454103"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694269"
 ---
 # <a name="governanceschedule-resource-type"></a>тип ресурса governanceSchedule
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Представляет расписание для [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md). Для запроса назначения ролей расписание контролирует время выполнения операции назначения ролей, остановку назначения ролей и частое выполнение операции назначения ролей.
 

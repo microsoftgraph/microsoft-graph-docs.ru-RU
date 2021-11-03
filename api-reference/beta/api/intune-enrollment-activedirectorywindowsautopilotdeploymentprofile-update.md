@@ -2,15 +2,15 @@
 title: Обновление activeDirectoryWindowsAutopilotDeploymentProfile
 description: Обновление свойств объекта activeDirectoryWindowsAutopilotDeploymentProfile.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e487f81f4b09ec2a02d861cbd5661fd9676b0eb9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3ad8a3394bf2b2e2d0d442a6b66c0e86a04a646a
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59082601"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694500"
 ---
 # <a name="update-activedirectorywindowsautopilotdeploymentprofile"></a>Обновление activeDirectoryWindowsAutopilotDeploymentProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "59082601"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -45,7 +45,7 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -63,13 +63,13 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 |lastModifiedDateTime|DateTimeOffset|Последний измененный профиль из [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|Параметр "Вне полей", унаследованный от [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|Параметр состояния регистрации, унаследованный от [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
-|extractHardwareHash|Логическое|HardwareHash Extraction для профиля, унаследованной от [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
+|extractHardwareHash|Логический|HardwareHash Extraction для профиля, унаследованной от [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
 |deviceNameTemplate|String|Шаблон, используемый для имени устройства АвтоПилот. Это может быть пользовательский текст, который также может содержать либо серийный номер устройства, либо случайный генерируемый номер. Общая длина текста, генерируемого шаблоном, может быть не более 15 символов. Унаследованный от [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
-|deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|Тип устройства AutoPilot, к который применим этот профиль. Наследуется [от windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md). Возможные значения: `windowsPc`, `surfaceHub2`, `holoLens`.|
+|deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|Тип устройства AutoPilot, к который применим этот профиль. Наследуется [от windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md). Возможные значения: `windowsPc`, `surfaceHub2`, `holoLens`, `surfaceHub2S`, `virtualMachine`, `unknownFutureValue`.|
 |enableWhiteGlove|Логический|Включить белую перчатку автопилота для профиля. Унаследованный от [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
-|roleScopeTagIds|Коллекция объектов string|Теги области для профиля. Унаследованный от [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
+|roleScopeTagIds|Коллекция строк|Теги области для профиля. Унаследованный от [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
 |managementServiceAppId|String|ID приложения управления AzureAD, используемый во время обнаружения регистрации на основе клиентских устройств, унаследованных из [windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|
-|hybridAzureADJoinSkipConnectivityCheck|Boolean|Поток подключения гибридного Azure AD автопилота будет продолжаться, даже если он не устанавливает подключение контроллера домена во время OOBE.|
+|hybridAzureADJoinSkipConnectivityCheck|Логический|Поток подключения гибридного Azure AD автопилота будет продолжаться, даже если он не устанавливает подключение контроллера домена во время OOBE.|
 
 
 

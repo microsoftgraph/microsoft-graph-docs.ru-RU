@@ -2,15 +2,15 @@
 title: Перечисление объектов deviceConfigurationAssignment
 description: Список свойств и связей объектов deviceConfigurationAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1616b45286d70c84e4482bd1567a6978be5fff56
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1f7677b4ece117730eff38cde5a635ffc0ceff8c
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59133711"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688018"
 ---
 # <a name="list-deviceconfigurationassignments"></a>Перечисление объектов deviceConfigurationAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "59133711"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -52,7 +52,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 571
+Content-Length: 598
 
 {
   "value": [
@@ -88,7 +88,8 @@ Content-Length: 571
         "collectionId": "Collection Id value"
       },
       "source": "policySets",
-      "sourceId": "Source Id value"
+      "sourceId": "Source Id value",
+      "intent": "remove"
     }
   ]
 }

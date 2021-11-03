@@ -9,8 +9,8 @@ ms.openlocfilehash: f07557fca9034636b0fc74f1a9fba4c38445e3ae
 ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60668842"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696632"
 ---
 # <a name="windows10vpnconnectiontype-enum-type"></a>тип enum windows10VpnConnectionType
 

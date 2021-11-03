@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: f9752b08a6d9e3a912e485cd6a8d2d4bf0ad19e8
-ms.sourcegitcommit: c3f849e5a052b1926373a4b316ec303250e6d09e
+ms.openlocfilehash: 5bb0946f7af1af852ad56ae362482015658c675c
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60369757"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695946"
 ---
 # <a name="onlinemeeting-resource-type"></a>Тип ресурса onlineMeeting
 
@@ -35,12 +35,12 @@ ms.locfileid: "60369757"
 | Свойство              | Тип                                          | Описание    |
 | :-------------------- | :-------------------------------------------- | :------------------------------------ |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| Указывает, кто может быть презентовщиком на собрании. |
-| allowAttendeeToEnableCamera | Boolean | Указывает, могут ли участники включить камеру. |
-| allowAttendeeToEnableMic | Boolean | Указывает, могут ли участники включить микрофон. |
+| allowAttendeeToEnableCamera | Логический | Указывает, могут ли участники включить камеру. |
+| allowAttendeeToEnableMic | Логический | Указывает, могут ли участники включить микрофон. |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Указывает режим чата собраний. |
-| allowTeamworkReactions | Boolean | Указывает, Teams для собрания включены Teams реакции. |
-| alternativeRecording  | Stream | Поток контента альтернативной записи живого события. Только для чтения. |
-| attendeeReport        | Stream | Поток контента отчета участника о событии в прямом эфире. Только для чтения.   |
+| allowTeamworkReactions | Логический | Указывает, Teams для собрания включены Teams реакции. |
+| alternativeRecording  | Stream | Поток контента альтернативной записи события [Microsoft Teams в прямом эфире](/microsoftteams/teams-live-events/what-are-teams-live-events). Только для чтения. |
+| attendeeReport        | Stream | Поток контента отчета участника о событии [Teams в прямом эфире.](/microsoftteams/teams-live-events/what-are-teams-live-events) Только для чтения.   |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | Сведения о доступе к телефону для собрания в Интернете. Только для чтения. |
 | broadcastSettings     | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | Параметры, связанных с живым событием.      |
 | chatInfo              | [chatInfo](chatinfo.md) | Сведения о чате, связанные с этой онлайн-встречей.  |
@@ -48,14 +48,14 @@ ms.locfileid: "60369757"
 | endDateTime           | Даты и время | Время окончания собрания в UTC.   |
 | externalId            | String | Внешний ID. Пользовательский ID. Необязательный параметр.      |
 | id | String | ID по умолчанию, связанный с онлайн-собранием. Только для чтения.    |
-| isBroadcast | Boolean | Указывает, является ли это событие в прямом эфире. |
-| isEntryExitAnnounced  | Boolean | Указывает, следует ли объявлять, когда звонители присоединяются или уходят. |
+| isBroadcast | Логический | Указывает, является ли это событие [Teams в прямом эфире](/microsoftteams/teams-live-events/what-are-teams-live-events). |
+| isEntryExitAnnounced  | Логический | Указывает, следует ли объявлять, когда звонители присоединяются или уходят. |
 | joinWebUrl | String | URL-адрес присоединиться к собранию в Интернете. Только для чтения. |
 | joinInformation | [itemBody](itembody.md) | Сведения о присоединиться в варианте языка и языка, указанном в заглавной странице HTTP-запроса "Accept-Language". Только для чтения. |
 | lobbyBypassSettings | [lobbyBypassSettings](lobbyBypassSettings.md) | Указывает, какие участники могут обойти вестибюль собрания. |
 | participants | [meetingParticipants](meetingparticipants.md) | Участники, связанные с онлайн-собранием. Это включает организатора и участников. |
-| recordAutomatically | Boolean | Указывает, следует ли записывать собрание автоматически. |
-| запись | Stream | Поток контента записи живого события. Только для чтения. |
+| recordAutomatically | Логический | Указывает, следует ли записывать собрание автоматически. |
+| запись | Stream | Поток контента записи события Teams [в прямом эфире](/microsoftteams/teams-live-events/what-are-teams-live-events). Только для чтения. |
 | startDateTime | Даты и время | Время начала собрания в UTC. |
 | subject | String | Тема собрания в Интернете. |
 | videoTeleconferenceId | String | ID видеоконференции. Только для чтения. |

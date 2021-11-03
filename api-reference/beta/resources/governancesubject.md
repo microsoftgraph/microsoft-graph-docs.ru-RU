@@ -1,16 +1,16 @@
 ---
 title: тип ресурсов governanceSubject
 description: Представляет пользователей, групп и директоров служб, управляемых в управление привилегированными пользователями (PIM).
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: c3e37d9391bedba160c67f6c30e2f386a1524a9f
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 5552ba73a20ed4e27b906244d5610f84dccadfe7
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454236"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695407"
 ---
 # <a name="governancesubject-resource-type"></a>тип ресурсов governanceSubject
 

@@ -1,22 +1,24 @@
 ---
 title: 'privilegedRole: selfDeactivate'
 description: Деактивация роли, назначенной запрашивающей стороне.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 8e92f959c7f23b6c5679af312fc60613be0de93a
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 610da25180814ed5b2dc6e2952d6a812be12aa46
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453494"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696331"
 ---
 # <a name="privilegedrole-selfdeactivate"></a>privilegedRole: selfDeactivate
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1AADRoles-deprecation](../../includes/pim-v1aadroles-deprecation.md)]
 
 Деактивация роли, назначенной запрашивающей стороне.
 ## <a name="permissions"></a>Разрешения
@@ -40,7 +42,7 @@ POST /privilegedRoles/{id}/selfDeactivate
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

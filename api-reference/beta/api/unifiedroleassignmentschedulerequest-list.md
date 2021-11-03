@@ -1,16 +1,16 @@
 ---
 title: Список unifiedRoleAssignmentScheduleRequests
 description: Получите список объектов unifiedRoleAssignmentScheduleRequest и их свойств.
-author: shauliu1
-localization_priority: Normal
+author: carolinetempleton
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8ff26f2b239be9e3fd0e3091debacc836e817572
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 2372ba250ef012d1c3bc9749ea4f71734dbb529d
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58453655"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694472"
 ---
 # <a name="list-unifiedroleassignmentschedulerequests"></a>Список unifiedRoleAssignmentScheduleRequests
 
@@ -49,7 +49,7 @@ GET /roleManagement/directory/roleAssignmentScheduleRequests
 
 | Имя          | Описание               |
 | :------------ | :------------------------ |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentSche
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

@@ -1,22 +1,24 @@
 ---
 title: Список governanceResources
 description: Извлечение коллекции governanceResource, к которую имеет доступ запроситель.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
-author: shauliu1
-ms.openlocfilehash: 8d05102302639b6e6a8a11cc20fafd28e4aa900a
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+author: carolinetempleton
+ms.openlocfilehash: 4056b370c50fcbf016dcd7e5fe5c282f99a89c45
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58452773"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688228"
 ---
 # <a name="list-governanceresources"></a>Список governanceResources
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [pim-v1resourceroles-deprecation](../../includes/pim-v1resourceroles-deprecation.md)]
 
 Извлечение коллекции [governanceResource,](../resources/governanceresource.md) к которую имеет доступ запроситель.
 
@@ -29,7 +31,7 @@ ms.locfileid: "58452773"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureResources |
+| Application | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -37,7 +39,7 @@ ms.locfileid: "58452773"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureAD |
+| Application | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Группы
 
@@ -45,7 +47,7 @@ ms.locfileid: "58452773"
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroup |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | PrivilegedAccess.Read.AzureADGroup |
+| Application | PrivilegedAccess.Read.AzureADGroup |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

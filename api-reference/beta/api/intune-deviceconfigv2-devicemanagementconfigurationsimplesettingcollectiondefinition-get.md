@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9342d2644123142b7f75482951b43878a89de039
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 2616ee86bfeeef84b933ed28371a3982e757c4b7
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60484981"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60696464"
 ---
 # <a name="get-devicemanagementconfigurationsimplesettingcollectiondefinition"></a>Get deviceManagementConfigurationSimpleSettingCollectionDefinition
 
@@ -29,7 +29,7 @@ ms.locfileid: "60484981"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -38,6 +38,7 @@ ms.locfileid: "60484981"
 -->
 ``` http
 GET /deviceManagement/reusableSettings/{deviceManagementConfigurationSettingDefinitionId}
+GET /deviceManagement/complianceSettings/{deviceManagementConfigurationSettingDefinitionId}
 GET /deviceManagement/configurationSettings/{deviceManagementConfigurationSettingDefinitionId}
 GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}/settingDefinitions/{deviceManagementConfigurationSettingDefinitionId}
 GET /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurationPolicyTemplateId}/settingTemplates/{deviceManagementConfigurationSettingTemplateId}/settingDefinitions/{deviceManagementConfigurationSettingDefinitionId}

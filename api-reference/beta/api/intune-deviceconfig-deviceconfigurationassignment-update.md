@@ -2,15 +2,15 @@
 title: Обновление объекта deviceConfigurationAssignment
 description: Обновление свойств объекта deviceConfigurationAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8021d724fe2b246d5947778958b0490f0d5bacd7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b991a8b4eaa3135b82fdd97264f226f5f59055c0
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59133704"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60694325"
 ---
 # <a name="update-deviceconfigurationassignment"></a>Обновление объекта deviceConfigurationAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "59133704"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -52,7 +52,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -66,6 +66,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения для конфигурации устройств.|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Источник назначения для конфигурации устройства, прямой или пакетной или политикиSet. Это свойство доступно только для чтения. Возможные значения: `direct`, `policySets`.|
 |sourceId|String|Идентификатор источника назначения. Это свойство доступно только для чтения.|
+|intent|[deviceConfigAssignmentIntent](../resources/intune-deviceconfig-deviceconfigassignmentintent.md)|Намерение администратора применить или удалить профиль. Это свойство доступно только для чтения. Возможные значения: `apply`, `remove`.|
 
 
 
@@ -79,7 +80,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/assignments/{deviceConfigurationAssignmentId}
 Content-type: application/json
-Content-length: 449
+Content-length: 472
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
@@ -90,7 +91,8 @@ Content-length: 449
     "collectionId": "Collection Id value"
   },
   "source": "policySets",
-  "sourceId": "Source Id value"
+  "sourceId": "Source Id value",
+  "intent": "remove"
 }
 ```
 
@@ -99,7 +101,7 @@ Content-length: 449
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 498
+Content-Length: 521
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
@@ -111,7 +113,8 @@ Content-Length: 498
     "collectionId": "Collection Id value"
   },
   "source": "policySets",
-  "sourceId": "Source Id value"
+  "sourceId": "Source Id value",
+  "intent": "remove"
 }
 ```
 
