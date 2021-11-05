@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 0f3225ad48c4faa44efedc1d0830a9bdfcc8d4b5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0f28c771f267324a25198edd66ac64ff7bcdaadd
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019225"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780543"
 ---
 # <a name="preauthorizedapplication-resource-type"></a>тип ресурса preAuthorizedApplication
 
@@ -25,7 +25,7 @@ ms.locfileid: "59019225"
 |appId|String| Уникальный идентификатор приложения. |
 |permissionIds|Коллекция String| Уникальный идентификатор [oauth2PermissionScopes,](permissionscope.md) который требуется приложению. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
@@ -39,7 +39,7 @@ ms.locfileid: "59019225"
 ```json
 {
   "appId": "String",
-  "delegatedPermissionIds": ["String"]
+  "permissionIds": ["String"]
 }
 
 ```
