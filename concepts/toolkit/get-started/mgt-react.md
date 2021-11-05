@@ -3,12 +3,12 @@ title: Компоненты Microsoft Graph Toolkit в React
 description: Компоненты Microsoft Graph Toolkit в React (`mgt-react`) позволяют разработчикам React использовать Microsoft Graph Toolkit в приложениях React.
 ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: 95c45379a46b4fe068c183e924c1268831fc15b6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f81446c2b8a2938bd86057b1cbf5f33d583b49f9
+ms.sourcegitcommit: f9e71d3b8a54a98c282ef49783babe5698300c06
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59103832"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60793898"
 ---
 # <a name="microsoft-graph-toolkit-react-components"></a>Компоненты Microsoft Graph Toolkit в React
 
@@ -93,7 +93,12 @@ import { MgtTemplateProps } from '@microsoft/mgt-react';
 
 const MyEvent = (props: MgtTemplateProps) => {
   const { event } = props.dataContext;
-  return <div>{event.subject}</div>;
+  return <div>
+    {event.subject}<br />
+    {event.attendees
+      .map((attendee: any) => attendee.emailAddress.name)
+      .join(', ')}
+  </div>;
 };
 ```
 

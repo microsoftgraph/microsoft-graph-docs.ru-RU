@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7d572051d0889add7f68cc868d410bf3dc702d65
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 88094c1bc6af05a0454c2a02c35521f85f48730f
+ms.sourcegitcommit: f9e71d3b8a54a98c282ef49783babe5698300c06
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60560816"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60793912"
 ---
 # <a name="chat-resource-type"></a>Тип ресурса чата
 
@@ -35,7 +35,9 @@ ms.locfileid: "60560816"
 |[Добавление участника в чат](../api/chat-post-members.md) | Заголовок размещения | Добавление пользователя в чат.| 
 |[Получение участника чата](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Получение одного пользователя в чате.| 
 |[Удаление участника чата](../api/chat-delete-members.md)|Нет|Удалите пользователя из чата.|
-|[Общение в чате между пользователем и приложением](../api/userscopeteamsappinstallation-get-chat.md) | [chat](chat.md)| Получите один-на-один чат между пользователем и приложением |
+|[Общение в чате между пользователем и приложением](../api/userscopeteamsappinstallation-get-chat.md) | [chat](chat.md)| Получите один-на-один чат между пользователем и приложением.|
+|[Пометить чат как чтение](../api/chat-markchatreadforuser.md) |Нет| Пометить чат как чтение для пользователя.|
+|[Пометить чат как непрочитанные](../api/chat-markchatunreadforuser.md) |Нет| Пометить чат как непрочитанные для пользователя.|
 | **Сообщения** |||
 |[Список сообщений в чате](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Получать сообщения в чате. | 
 |[Получение сообщения в чате](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Получение одного сообщения в чате. | 

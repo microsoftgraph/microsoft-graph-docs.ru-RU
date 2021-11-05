@@ -1,16 +1,16 @@
 ---
 title: Получить accessPackageAssignmentRequest
 description: Извлечение свойств и связей объекта accessPackageAssignmentRequest.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 78340e93b202d4088b453e39594b84345a247cbe
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6cb84d34e2a175a23c676d9cd5a5354c7b75c12e
+ms.sourcegitcommit: f9e71d3b8a54a98c282ef49783babe5698300c06
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048605"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60793927"
 ---
 # <a name="get-accesspackageassignmentrequest"></a>Получить accessPackageAssignmentRequest
 
@@ -28,7 +28,7 @@ ms.locfileid: "52048605"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All  |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
+| Для приложений                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{i
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Например, чтобы получить запрашиваемую посылку доступа, включайте `$expand=accessPackage` в запрос. Чтобы получить результат назначения, включайте `$expand=accessPackageAssignment` запрос.  Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр запроса OData для расширения связей, получения `$expand` `accessPackage` и `requestor` `acccessPackageAssignment` .  Например, чтобы получить цель назначения пакета доступа, включайте `$expand=accessPackageAssignment($expand=target)` в запрос.  Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
