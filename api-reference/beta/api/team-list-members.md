@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f6473637010db4b973f6ddb0de480f792cd891ea
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: aeaec55f47de9d007ec06710c7d6dac49cda0715
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696437"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688551"
 ---
 # <a name="list-members-of-team"></a>Список участников группы
 Пространство имен: microsoft.graph
@@ -51,7 +51,7 @@ GET /teams/{team-id}/members
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -281,9 +281,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-4-list-only-those-members-who-are-owners-of-the-team"></a>Пример 4. Перечисление только тех участников, которые являются *владельцами* команды
+### <a name="example-4-list-members-by-their-role-in-the-team"></a>Пример 4. Список участников по их роли в команде
 
-В следующем примере показан запрос на поиск всех участников, которым назначена роль *владельца*.
+В следующем примере показано, как перечислять участников по их роли в команде. В этом примере перечислены все участники, у которых есть роль владельца.
 
 > [!NOTE]
 > С этой функцией связаны некоторые известные проблемы. Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues#unable-to-filter-team-members-by-roles).

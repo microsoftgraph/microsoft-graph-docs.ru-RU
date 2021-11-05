@@ -5,12 +5,12 @@ author: simonhult
 ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: b60a0699493e72b70999388b019de773ae9e4677
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 430c44adc75bf18d44d3e3bc6d3c0fc7dc724b45
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136035"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780935"
 ---
 # <a name="customizing-item-insights-privacy-in-microsoft-graph-preview"></a>Настройка элемента конфиденциальности insights в Microsoft Graph (предварительный просмотр)
 
@@ -38,7 +38,7 @@ ms.locfileid: "59136035"
 
 С помощью параметров аналитики элементов администраторы получают возможность гибко использовать инструменты Azure AD. Администраторы могут отключать аналитику элементов для всей организации или только для участников указанной группы Azure AD. Настройку аналитики элементов можно проводить через центр администрирования Microsoft 365 или использовать для этой цели пакет SDK PowerShell SDK или REST API Microsoft Graph с соответствующими разрешениями. Помните, что требуется _роль глобального администратора_. 
 
-В следующем разделе описывается использование Центра администрирования, а за ним следует раздел о командлетах PowerShell. Если вы используете API REST, пропустите следующие два раздела и сразу перейдите к разделу [Настройка аналитики элементов с помощью REST API](#configure-item-insights-using-rest-api). Дополнительные сведения см. в описании операций REST [read](/graph/api/iteminsightssettings-get?view=graph-rest-beta&preserve-view=true) или [update](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true).
+В следующем разделе описывается использование Центра администрирования, а за ним следует раздел о командлетах PowerShell. Если вы используете API REST, пропустите следующие два раздела и сразу перейдите к разделу [Настройка аналитики элементов с помощью REST API](#configure-item-insights-using-rest-api). Дополнительные сведения см. в описании операций REST [read](/graph/api/organizationsettings-list-iteminsights?view=graph-rest-beta&preserve-view=true) или [update](/graph/api/insightssettings-update?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="how-to-configure-item-insights-settings-via-microsoft-admin-center"></a>Как настроить параметры аналитики элементов через Центр администрирования Майкрософт?
 Администратор с _ролью глобального администратора_ может настраивать параметры конфиденциальности аналитики элементов с помощью переключателей. Для этого в Центре администрирования Microsoft 365 разверните раздел **Параметры**, выберите **Поиск и аналитика**, а затем в пункте **Аналитика элементов** выберите **Изменить параметры**.
@@ -82,10 +82,10 @@ ms.locfileid: "59136035"
 ### <a name="configure-item-insights-using-rest-api"></a>Настройка аналитики элементов с помощью API REST
 Как сказано выше, параметры конфиденциальности для аналитики элементов по умолчанию включены для всей организации. Эти параметры доступны с помощью свойства навигации с именем **itemInsights** в ресурсе [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta&preserve-view=true). Параметры по умолчанию можно изменить двумя способами.
 
-- Отключите аналитику элементов для всех пользователей в организации, установив для свойства **isEnabledInOrganization** ресурса [itemInsightsSettings](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) значение `false`. 
+- Отключите аналитику элементов для всех пользователей в организации, установив для свойства **isEnabledInOrganization** ресурса [insightsSettings](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) значение `false`. 
 - Отключите аналитику элементов для _подмножества_, назначив этих пользователей в группу Azure AD и установив для свойства **disabledForGroup** идентификатор этой группы. Подробнее о [создании групп и добавлении пользователей в качестве участников](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
 
-Используйте операцию [update](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true) для соответствующей настройки свойств **isEnabledInOrganization** и **disabledForGroup**.
+Используйте операцию [update](/graph/api/insightssettings-update?view=graph-rest-beta&preserve-view=true) для соответствующей настройки свойств **isEnabledInOrganization** и **disabledForGroup**.
 
 | Как включить элемент insights | isEnabledInOrganization | disabledForGroup |
 |:-------------|:------------|:------------|
@@ -94,7 +94,7 @@ ms.locfileid: "59136035"
 | Недоступно для всей организации | `false` | пропущено |
 
 При обновлении параметров элемента Insights учитывайте следующее:
-- [Параметры аналитики элементов](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) доступны только в конечных точках бета-версии.
+- [Параметры аналитики](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) доступны только в конечных точках бета-версии.
 - Получите идентификатор группы Azure AD на портале Azure и убедитесь в том, что группа существует, так как в ходе обновления не проверяется существование группы. Указание несуществующей группы в **disabledForGroup** _не_ отключает insights для пользователей в организации.
 - При изменении параметров в Microsoft 365 новые параметры вступают в силу не сразу: это может занять до 24 часов.
 - Независимо от параметров элемента insights, Delve будет по прежнему использовать [настройки конфиденциальности](/sharepoint/delve-for-office-365-admins#control-access-to-delve-and-related-features?view=graph-rest-beta&preserve-view=true) на уровне клиента Delve и пользователя.
