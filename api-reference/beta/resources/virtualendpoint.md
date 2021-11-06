@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 0c271bbbbe37fe35e6d6a21ec5a232ca5f78a9f2
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 395919dd0ee9b0a2399f991e58d9d10ec81fee5a
+ms.sourcegitcommit: c00c61ce35a6f204a9907aa6f2644ea7a86a5b6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694868"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60805397"
 ---
 # <a name="virtualendpoint-resource-type"></a>тип ресурса virtualEndpoint
 
@@ -29,6 +29,7 @@ ms.locfileid: "60694868"
 |[Получить эффективные разрешения](../api/virtualendpoint-geteffectivepermissions.md)|Коллекция строк|Просмотр эффективных разрешений пользователя, который в настоящее время проходит проверку подлинности.|
 |[CloudPCs списка](../api/virtualendpoint-list-cloudpcs.md)|[коллекция cloudPC](../resources/cloudpc.md)|Список свойств и связей объектов [cloudPC.](../resources/cloudpc.md)|
 |[Список устройствImages](../api/virtualendpoint-list-deviceimages.md)|[коллекция cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Список свойств и связей объектов [cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)|
+|[Списки galleryImages](../api/virtualendpoint-list-galleryimages.md)|[коллекция cloudPcGalleryImage](../resources/cloudpcgalleryimage.md)|Список свойств и связей объектов [cloudPcGalleryImage.](../resources/cloudpcgalleryimage.md)|
 |[Создание cloudPcDeviceImage](../api/virtualendpoint-post-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Создайте новый [объект cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)|
 |[Список onPremisesConnections](../api/virtualendpoint-list-onpremisesconnections.md)|[коллекция cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Список свойств и связей объектов [cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)|
 |[Создание cloudPcOnPremisesConnection](../api/virtualendpoint-post-onpremisesconnections.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Создание нового [объекта cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)|
@@ -44,7 +45,7 @@ ms.locfileid: "60694868"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для идентификатора виртуальной конечной точки. Только для чтения.|
+|id|Строка|Уникальный идентификатор для идентификатора виртуальной конечной точки. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 
@@ -52,6 +53,7 @@ ms.locfileid: "60694868"
 |:---|:---|:---|
 |cloudPCs|[коллекция cloudPC](../resources/cloudpc.md)|Облачные управляемые виртуальные настольные компьютеры.|
 |deviceImages|[коллекция cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Ресурс изображений на облачном компьютере.|
+|galleryImages|[коллекция cloudPcGalleryImage](../resources/cloudpcgalleryimage.md)|Ресурс изображений галереи на облачном компьютере.|
 |onPremisesConnections|[коллекция cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Определенный набор сведений о ресурсах Azure, которые можно использовать для создания локальной сетевой связи для облачных компьютеров.|
 |provisioningPolicies|[коллекция cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md)|Политика обеспечения облачного компьютера.|
 |userSettings|[коллекция cloudPcUserSetting](../resources/cloudpcusersetting.md)|Параметры пользователей облачного ПК. |

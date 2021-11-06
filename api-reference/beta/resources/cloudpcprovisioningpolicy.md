@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 3fd07bc2df93e57d6135a3bf7956f931db13c801
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 0ebae0a1b791bacccff43539f2a19f8e13452f2f
+ms.sourcegitcommit: c00c61ce35a6f204a9907aa6f2644ea7a86a5b6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59763062"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60805495"
 ---
 # <a name="cloudpcprovisioningpolicy-resource-type"></a>тип ресурса cloudPcProvisioningPolicy
 
@@ -35,13 +35,14 @@ ms.locfileid: "59763062"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для политики продюсинга облачных ПК. Только для чтения.|
-|displayName|String|Имя отображения политики обеспечения.|
+|id|Строка|Уникальный идентификатор для политики продюсинга облачных ПК. Только для чтения.|
+|displayName|Строка|Имя отображения политики обеспечения.|
 |description|Строка|Описание политики обеспечения.|
 |onPremisesConnectionId|Строка|ID cloudPcOnPremisesConnection. Чтобы обеспечить подключение к облачным компьютерам и подключение к домену, выберите подключение к виртуальной сети, проверенной службой облачных ПК.|
-|imageId|String|ID изображения ОС, которое необходимо уладить на облачных ПК. Формат изображения типа галереи: {publisher_offer_sku}. Поддерживаемые значения для каждого из параметров:<ul><li>издатель: Microsoftwindowsdesktop.</li> <li>предложение: windows-ent-cpc.</li> <li>sku: 21h1-ent-cpc-m365, 21h1-ent-cpc-os, 20h2-ent-cpc-m365, 20h2-ent-cpc-os, 20h1-ent-cpc-m365, 20h1-ent-cpc-os, 19h2-ent-cpc-os.</li></ul>|
+|imageId|Строка|ID изображения ОС, которое необходимо уладить на облачных ПК. Формат изображения типа галереи: {publisher_offer_sku}. Поддерживаемые значения для каждого из параметров:<ul><li>издатель: Microsoftwindowsdesktop.</li> <li>предложение: windows-ent-cpc.</li> <li>sku: 21h1-ent-cpc-m365, 21h1-ent-cpc-os, 20h2-ent-cpc-m365, 20h2-ent-cpc-os, 20h1-ent-cpc-m365, 20h1-ent-cpc-os, 19h2-ent-cpc-os.</li></ul>|
 |imageDisplayName|Строка|Имя отображения образа ОС, которое вы закаповыватель.|
 |imageType|cloudPcProvisioningPolicyImageType|Тип изображения ОС (настраиваемый или галерейный) для предоставления на облачных ПК. Возможные значения: `gallery`, `custom`.|
+|domainJoinConfiguration|[cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md)|Указывает, как облачные ПК присоединятся к Azure Active Directory.|
 
 ## <a name="relationships"></a>Связи
 
@@ -70,6 +71,9 @@ ms.locfileid: "59763062"
   "onPremisesConnectionId": "String",
   "imageId": "String",
   "imageDisplayName": "String",
-  "imageType": "String"
+  "imageType": "String",
+  "domainJoinConfiguration": {
+    "@odata.type": "microsoft.graph.cloudPcDomainJoinConfiguration"
+  }
 }
 ```

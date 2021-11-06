@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: f64c0e84f135388d23ada36a47e380db21bba80c
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: fbf1ddda44812bd75b481fe86e62d9ad23d8ddf1
+ms.sourcegitcommit: c00c61ce35a6f204a9907aa6f2644ea7a86a5b6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765272"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60805424"
 ---
 # <a name="get-cloudpcdeviceimage"></a>Get cloudPcDeviceImage
 
@@ -28,7 +28,7 @@ ms.locfileid: "59765272"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,7 +49,7 @@ GET /deviceManagement/virtualEndpoint/deviceImages/{id}
 
 | Имя          | Описание               |
 | :------------ | :------------------------ |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -108,7 +108,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
     "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
     "id": "eda7ed64-7705-4079-9d08-c2bd883f4fff",
     "displayName": "Display Name value",
@@ -119,6 +118,5 @@ Content-Type: application/json
     "lastModifiedDateTime": "2020-11-03T07:03:44.97Z",
     "status": "pending",
     "statusDetails": null
-  }
 }
 ```

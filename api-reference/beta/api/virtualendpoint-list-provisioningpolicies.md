@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 45b546c427e4e563804cd90f5f7a62dfffa7d4c1
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 0f0e48b0be54d189855c9a9b065f1c7112a5b1e5
+ms.sourcegitcommit: c00c61ce35a6f204a9907aa6f2644ea7a86a5b6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60558926"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60805419"
 ---
 # <a name="list-provisioningpolicies"></a>Список provisioningPolicies
 
@@ -99,7 +99,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioni
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.cloudPcProvisioningPolicy)"
+  "@odata.type": "microsoft.graph.cloudPcProvisioningPolicy",
+  "isCollection": true
 }
 -->
 

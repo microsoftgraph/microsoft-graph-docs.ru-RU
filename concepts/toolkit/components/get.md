@@ -3,12 +3,12 @@ title: Компонент Get в Microsoft Graph Toolkit
 description: С помощью компонента Get можно создавать любые GET-запросы из Microsoft Graph непосредственно в HTML-коде.
 ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: 0f2a6f618c66e7517f71200470864d0fe498447f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1d12fbe73daa21221ca95cc50e0ae2aa2d44e642
+ms.sourcegitcommit: c00c61ce35a6f204a9907aa6f2644ea7a86a5b6e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59127894"
+ms.lasthandoff: 11/06/2021
+ms.locfileid: "60805390"
 ---
 # <a name="get-component-in-the-microsoft-graph-toolkit"></a>Компонент Get в Microsoft Graph Toolkit
 
@@ -66,6 +66,7 @@ ms.locfileid: "59127894"
 | value | Элемент данных из возвращаемого `value` массива | Используйте шаблон `value`, а не шаблон `default`, когда ожидается, что в ответе от графа будет указан массив элементов, например, **сообщений**, **файлов** или **пользователей**. Шаблон `value` будет автоматически повторяться для каждого элемента, возвращенного ресурсом. Шаблон `value` также начнет отрисовку элементов сразу после их готовности (в отличие от шаблона по умолчанию).|
 | error | Ошибка из Microsoft Graph. | Этот шаблон будет использоваться при ошибке при создании запроса. |
 | loading | Н/Д | Этот шаблон используется во время выполнения запроса. |
+| no-data | Н/Д | Этот шаблон используется, когда запрос не возвращает данные. |
 
 ## <a name="microsoft-graph-permissions"></a>Разрешения Microsoft Graph
 
