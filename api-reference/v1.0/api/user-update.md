@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 469d12233fd6690e7bc65727e31602176dbca08f
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: ee7dd0852babe54537a214408aac3fd5c8d0bba5
+ms.sourcegitcommit: f9e71d3b8a54a98c282ef49783babe5698300c06
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730412"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60793968"
 ---
 # <a name="update-user"></a>Обновление пользователя
 
@@ -63,7 +63,7 @@ PATCH /users/{id | userPrincipalName}
 | employeeId | String | Идентификатор сотрудника, назначенный пользователю организацией. |
 | employeeType | String | Фиксирует тип корпоративного работника. Например, `Employee`, `Contractor`, `Consultant` или `Vendor`. Возвращается только с помощью оператора `$select`.|
 |givenName;|String|Простое имя пользователя.|
-|hireDate|DateTimeOffset|Дата приема пользователя на работу. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат времени UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
+|employeeHireDate|DateTimeOffset|Дата приема пользователя на работу. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат времени UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
 |interests;|Коллекция строк|Список интересов пользователя.|
 |jobTitle|String|Должность пользователя.|
 |почта;|String|SMTP-адрес пользователя, например `jeff@contoso.onmicrosoft.com`. Изменение этого свойства также приведет к обновлению коллекции пользователя **proxyAddresses**, которая будет включать это значение как SMTP-адрес. Для учетных записей Azure AD B2C это свойство можно обновить до десяти раз, используя уникальные адреса протокола SMTP. |
@@ -90,7 +90,7 @@ PATCH /users/{id | userPrincipalName}
 |userType|String|Строковое значение, с помощью которого можно классифицировать типы пользователей в каталоге, например `Member` и `Guest`.          |
 
 > [!NOTE] 
-> Следующие свойства невозможно обновить с помощью приложения с использованием разрешений только для приложений: **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools** и **skills**.
+> Следующие свойства невозможно обновить с помощью приложения с использованием разрешений только для приложений: **aboutMe**, **birthday**, **employeeHireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools** и **skills**.
 
 ## <a name="response"></a>Отклик
 

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: b7aa417042622717e60e04dbb1050026681d161f
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 557f79410baebf0c32e6034cbe923e9df585dc5a
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256524"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695288"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 
@@ -50,6 +50,12 @@ ms.locfileid: "60256524"
 | [Список расширений](../api/application-list-extensionproperty.md) | Коллекция [extensionProperty](extensionProperty.md) | Список свойств расширения для объекта application. |
 | [Создание расширения](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Создание свойства расширения для объекта application. |
 | [Удаление расширения](../api/application-delete-extensionproperty.md) | Нет | Удаление свойства расширения объекта application. |
+|**Учетные данные федеративных удостоверений**| | |
+| [Список federatedIdentityCredential](../api/application-list-federatedidentitycredentials.md) | Коллекция [federatedIdentityCredential](../resources/federatedidentitycredential.md) | Получение списка учетных данных федеративных удостоверений для объекта application. |
+| [Создание federatedIdentityCredential](../api/application-post-federatedidentitycredentials.md) | [federatedIdentityCredential](../resources/federatedidentitycredential.md) | Создание учетных данных федеративных удостоверений для объекта application. |
+| [Получение federatedIdentityCredential](../api/federatedidentitycredential-get.md) | [federatedIdentityCredential](../resources/federatedidentitycredential.md) | Получение свойств учетных данных федеративных удостоверений. |
+| [Обновление federatedIdentityCredential](../api/federatedidentitycredential-update.md) | Нет | Обновление учетных данных федеративных удостоверений объекта application. |
+| [Удаление federatedIdentityCredential](../api/federatedidentitycredential-delete.md) | Нет | Удаление учетных данных федеративных удостоверений из объекта application. |
 |**Владельцы**| | |
 |[Список владельцев](../api/application-list-owners.md) |Коллекция [directoryObject](directoryobject.md)| Получение коллекции объектов owner.|
 |[Добавление владельца](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Добавление владельца путем помещения в коллекцию владельцев.|
@@ -85,7 +91,7 @@ ms.locfileid: "60256524"
 | displayName | String | Отображаемое имя приложения. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`, `$search`) и `$orderBy`. |
 | groupMembershipClaims | String | Настраивает утверждение `groups`, выданное в маркере пользователя или маркере доступа OAuth 2.0, ожидаемом приложением. Чтобы задать этот атрибут, используйте одно из следующих строковых значений: `None`, `SecurityGroup` (для групп безопасности и ролей Azure AD), `All` (предоставит все группы безопасности, группы рассылки и роли каталога Azure AD, участником которых является выполнивший вход пользователь). |
 | id | String | Уникальный идентификатор приложения. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение NULL не допускается. Только для чтения. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `in`). |
-| identifierUris | Коллекция String | URI, идентифицирующие приложение в клиенте Azure AD или в проверенном личном домене, если приложение является мультитенантным. Дополнительные сведения см. в разделе [Объекты приложения и субъекта-службы](/azure/active-directory/develop/app-objects-and-service-principals). Оператор `any` требуется для выражений фильтров, применяемых к многозначным свойствам. Значение null не допускается. <br><br>Поддерживает `$filter` (`eq`, `ne`, `ge`, `le`, `startsWith`).|
+| identifierUris | Коллекция String | Это значение, также известное как URI идентификатора приложения, задается, когда приложение используется в качестве приложения-ресурса. IdentifierUris выступает в качестве префикса для областей, на которые вы будете ссылаться в коде API, он должен быть уникальным на глобальном уровне. Можно использовать предоставленное по умолчанию значение, которое находится в форме `api://<application-client-id>`, или указать более читаемый URI, например `https://contoso.com/api`. Дополнительные сведения о допустимых шаблонах identifierUris и рекомендуемых методах см. в статье [Рекомендации по безопасной регистрации приложений Azure AD](/azure/active-directory/develop/security-best-practices-for-app-registration#appid-uri-configuration). Значение null не допускается. <br><br>Поддерживает `$filter` (`eq`, `ne`, `ge`, `le`, `startsWith`). |
 | info | [informationalUrl](informationalurl.md) | Базовые данные профиля для приложения, такие как URL-адреса маркетинга, поддержки, условий обслуживания и заявления о конфиденциальности. Условия обслуживания и заявление о конфиденциальности отображаются в окне запроса согласия пользователя. Дополнительные сведения см. в статье [Добавление условий обслуживания и заявления о конфиденциальности для зарегистрированных приложений Azure AD](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). <br><br>Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`). |
 | isDeviceOnlyAuthSupported | Boolean | Указывает, поддерживает ли приложение проверку подлинности устройства без пользователя. Значение по умолчанию: `false`.  |
 | isFallbackPublicClient | Boolean | Указывает резервный тип приложения как общедоступный клиент, например установленное приложение, запущенное на мобильном устройстве. Значение по умолчанию — `false`. Это означает, что резервный тип приложения является конфиденциальным клиентом, таким как веб-приложение. В некоторых ситуациях Azure AD не может определить тип клиентского приложения. Например, при потоке [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3), когда приложение настроено без указания URI перенаправления. В таких случаях Azure AD интерпретирует тип приложения на основе значения этого свойства.|
@@ -126,6 +132,7 @@ ms.locfileid: "60256524"
 |connectorGroup|[connectorGroup](connectorgroup.md)| Параметр connectorGroup, используемый приложением с прокси приложения Azure AD. Допускается значение NULL.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Только для чтения.|
 |extensionProperties|Коллекция [extensionProperty](extensionproperty.md)| Только для чтения. Допускается значение null.|
+|federatedIdentityCredentials|Коллекция [federatedIdentityCredential](federatedidentitycredential.md) |Федеративные удостоверения для приложений. Этот объект можно получить только по одному запросу GET (`GET /applications/{id}/federatedIdentityCredentials`).|
 |onlineMeetings  |Коллекция [onlineMeeting](onlinemeeting.md)|Только для чтения. Допускается значение null.|
 |owners|Коллекция [directoryObject](directoryobject.md)|Объекты каталогов, владеющие приложением. Только для чтения. Допускается значение NULL. Поддерживает `$expand`.|
 |tokenLifetimePolicies|Коллекция [tokenLifetimePolicy](tokenLifetimePolicy.md)|Типы ресурсов tokenLifetimePolicy, назначенные приложению. Поддерживает `$expand`.|
