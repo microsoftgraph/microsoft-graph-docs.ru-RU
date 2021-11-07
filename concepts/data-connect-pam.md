@@ -4,16 +4,16 @@ description: Подключение к данным Microsoft Graph исполь
 author: fercobo-msft
 ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: 4cb136349684504520696c09ea7e5deb21479168
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f7e68ceb0a58d03818d838566fb8d8421018a97e
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59108760"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60695183"
 ---
 # <a name="microsoft-graph-data-connect-integration-with-privileged-access-management"></a>Интеграция подключения к данным Microsoft Graph с Privileged Access Management
 
-Подключение к данным Microsoft Graph использует Privileged Access Management (PAM), чтобы позволить администраторам Microsoft 365 утверждать запросы на перемещение данных. Конвейеры подключения к данным должны утверждаться участником группы утверждающих запросы на доступ к данным, который указывается администратором Microsoft 365 во время включения. Чтобы настроить группу утверждающих, см. статью [Начало работы](data-connect-get-started.md).
+Подключение к данным Microsoft Graph использует Privileged Access Management (PAM), чтобы позволить администраторам Microsoft 365 утверждать запросы на перемещение данных. Конвейеры подключения к данным должны утверждаться участником группы утверждающих запросы на доступ к данным, который указывается администратором Microsoft 365 во время включения. Чтобы настроить группу утверждающих, см. статью [Настройка клиента Microsoft 365 и включение службы "Подключение к данным Microsoft Graph"](https://docs.microsoft.com/graph/data-connect-quickstart?tabs=Microsoft365&tutorial-step=1).
 
 Каждому участнику группы утверждающих высылаются электронные письма с запросом на утверждение, чтобы уведомить их, когда действия копирования запрашивают доступ для извлечения данных Microsoft 365. Утверждающие могут утверждать или отклонять эти запросы, указывать группу пользователей, из которой следует удалить извлекаемые данные, или отозвать ранее утвержденный запрос. Утверждения сохраняются 6 месяцев, и требуется одно утверждение на каждое действие копирования в конвейере фабрики данных Azure.
 
