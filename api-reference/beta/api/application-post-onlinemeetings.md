@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: high
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: bcae8fdc688aa80f10cebef3e83a5c6ebdd8798a
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: c8a3715d45cf4a4bc79082a1adfe359ad77daa19
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59995491"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60688684"
 ---
 # <a name="create-onlinemeeting"></a>Создание объекта onlineMeeting
 
@@ -50,7 +50,7 @@ POST /users/{userId}/onlineMeetings
 
 | Имя            | Описание                 |
 | :-------------- | :-------------------------- |
-| Авторизация   | Bearer {токен}. Обязательный.   |
+| Авторизация   | Bearer {token}. Обязательный.   |
 | Content-Type    | application/json. Обязательный. |
 | Принять-Язык | Язык. Необязательное.         |
 
@@ -227,7 +227,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-create-a-live-event-with-a-user-token"></a>Пример 3. Создание трансляции с использованием маркера пользователя
+### <a name="example-3-create-a-microsoft-teams-live-event-with-a-user-token"></a>Пример 3. Создание актуального события Microsoft Teams с помощью маркера пользователя
 
 #### <a name="request"></a>Запрос
 

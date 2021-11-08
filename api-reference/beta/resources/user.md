@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 13ad5618f62c2d40cc0989e0d824a3fa0053a7e2
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 60aa133d42842aeaa9121151bf2603223eefbff0
+ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60255978"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60689041"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -40,8 +40,9 @@ ms.locfileid: "60255978"
 | [Обновление пользователя](../api/user-update.md) | [user](user.md) | Обновление объекта пользователя. |
 | [Удаление пользователя](../api/user-delete.md) | Нет | Удаление объекта пользователя. |
 | [Получение дельты](../api/user-delta.md) | Коллекция пользователей | Получение добавочных изменений для пользователей. |
-| [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) | Нет | Аннулирование всех маркеров обновления пользователя, выпущенных для приложений. |
 | [changePassword](../api/user-changepassword.md) | Нет | Обновление собственного пароля. |
+| [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md) | Нет | Аннулирование всех маркеров обновления пользователя, выпущенных для приложений. |
+| [validatePassword](../api/user-validatepassword.md)|[passwordValidationInformation](../resources/passwordvalidationinformation.md)|Проверка пароля пользователя на соответствие политике проверки паролей организации и определение действительности пароля. |
 | **Назначение ролей приложений**|||
 | [Перечисление appRoleAssignments](../api/user-list-approleassignments.md) | Коллекция [appRoleAssignment](approleassignment.md) | Получение приложений и ролей приложений, назначенных пользователю. |
 | [Добавление объекта appRoleAssignment](../api/user-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | Назначение роли приложения пользователю. |
@@ -67,7 +68,7 @@ ms.locfileid: "60255978"
 | **Объекты каталога**|||
 | [activateServicePlan](../api/user-activateserviceplan.md) | Нет | Активация службы с заданными `servicePlanId` и `skuId` для определенного [пользователя](user.md). |
 | [assignLicense](../api/user-assignlicense.md) | [user](user.md) | Добавление или удаление подписок пользователя. Вы также можете включать и отключать отдельные планы, связанные с подпиской. |
-| [checkMemberGroups](../api/user-checkmembergroups.md) | Коллекция String | Проверка членства в списке групп. Это транзитивная проверка. |
+| [checkMemberGroups](../api/user-checkmembergroups.md) | Коллекция строк | Проверка членства в списке групп. Это транзитивная проверка. |
 | [checkMemberObjects](../api/user-checkmemberobjects.md) | Коллекция String | Проверка участия в списке группы, роли каталога или объектах административных единиц. Это транзитивная проверка. |
 | [exportPersonalData](../api/user-exportpersonaldata.md) | Нет | Отправка запроса операции политики данных, направленного администратором компании для экспорта данных пользователя организации. |
 | [getByIds](../api/directoryobject-getbyids.md) | Коллекция String | Возвращает объекты каталогов, указанные в списке идентификаторов. |
@@ -172,7 +173,7 @@ ms.locfileid: "60255978"
 | assignedLicenses | Коллекция [assignedLicense](assignedlicense.md) | Назначенные пользователю лицензии, в том числе наследуемые (на основе групп). <br><br>Значение null не допускается. Поддерживает `$filter` (`eq` и `NOT`). |
 | assignedPlans | Коллекция [assignedPlan](assignedplan.md) | Планы, назначенные пользователю. Только для чтения. Значение null не допускается.<br><br>Поддерживает `$filter` (`eq` и `NOT`). |
 | birthday | DateTimeOffset | День рождения пользователя. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601 и формата времени UTC. Например, полночь 1 января 2014 г. в формате UTC представляется в виде `2014-01-01T00:00:00Z`. <br><br>Возвращается только с помощью оператора `$select`. |
-| businessPhones | Коллекция String | Номера телефонов пользователя. Для этого свойства можно указать только один номер.<br><br>"Только для чтения" для пользователей, которые синхронизируются с локальным каталогом. Поддерживает `$filter` (`eq` и `NOT`).|
+| businessPhones | Коллекция строк | Номера телефонов пользователя. Для этого свойства можно указать только один номер.<br><br>"Только для чтения" для пользователей, которые синхронизируются с локальным каталогом. Поддерживает `$filter` (`eq` и `NOT`).|
 | city | String | Город, в котором находится пользователь. Максимальная длина: 128 символов.<br><br>Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`). |
 | companyName | String | Название организации, с которой связан пользователь. Это свойство может быть полезно для описания компании внешнего пользователя. Длина имени компании не должна превышать 64 символов.<br><br>Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).|
 | consentProvidedForMinor | [consentProvidedForMinor](#consentprovidedforminor-values) | Устанавливает, получено ли согласие для несовершеннолетних. Допустимые значения: `null`, `granted`, `denied` и `notRequired`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions). <br><br>Поддерживает `$filter` (`eq`, `ne`, `NOT` и `in`).|
@@ -181,7 +182,7 @@ ms.locfileid: "60255978"
 | creationType | Строка | Указывает, была ли учетная запись пользователя создана с помощью одного из следующих методов: <br/> <ul><li>В качестве обычной учебной или рабочей учетной записи (`null`). <li>Как внешняя учетная запись (`Invitation`). <li>В качестве локальной учетной записи для клиента Azure Active Directory B2C (`LocalAccount`). <li>Через самообслуживаемую регистрацию внутренним пользователем с помощью проверки электронной почты (`EmailVerified`). <li>Через самообслуживаемую регистрацию внешним пользователем, регистрирующимся по ссылке, которая является частью пользовательского потока (`SelfServiceSignUp`). </ul> <br>Только для чтения.<br>Поддерживает `$filter` (`eq`, `ne`, `NOT` и `in`). |
 | deletedDateTime | DateTimeOffset | Дата и время удаления пользователя. <br><br>Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le` и `in`) |
 | department | String | Название отдела, в котором работает пользователь. Максимальная длина: 64 символа.<br><br>Поддерживает `$filter` (операторы `eq`, `ne`, `NOT`, `ge`, `le` и `in`). |
-| displayName | Строка | Имя пользователя, отображаемое в адресной книге. Это значение обычно является сочетанием имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. Максимальная длина 256 символов.<br><br>Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`), `$orderBy` и `$search`.|
+| displayName | String | Имя пользователя, отображаемое в адресной книге. Это значение обычно является сочетанием имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. Максимальная длина 256 символов.<br><br>Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`), `$orderBy` и `$search`.|
 | employeeHireDate | DateTimeOffset | Дата и время, когда пользователь был нанят или начнет работу в случае найма в будущем. <br><br>Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`).|
 | employeeId | String | Идентификатор сотрудника, назначенный пользователю организацией. <br><br>Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`).|
 |employeeOrgData|[employeeOrgData](employeeorgdata.md) |Представляет данные организации (например, подразделение и место возникновения затрат), связанные с пользователем. <br><br>Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`).|
