@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: eaafa94157b75f079b476790999a2b9b7b727a97
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 107dc336ca2a8530cb8c5ddff00e279b7717de89
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766251"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890857"
 ---
 # <a name="list-serviceprincipals"></a>Перечисление servicePrincipals
 
@@ -26,7 +26,7 @@ ms.locfileid: "59766251"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
+|Для приложений | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -36,7 +36,7 @@ GET /servicePrincipals
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select` и `$top` для настройки отклика. Некоторые запросы поддерживаются только при использовании заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select` и `$top` для настройки отклика. Стандартный и максимальный размеры страницы — 100 и 999 объектов субъектов-служб соответственно. Некоторые запросы поддерживаются только при использовании заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
 
 По умолчанию этот API не возвращает значение **key** в свойстве **keyCredentials** при перечислении всех субъектов-служб. Чтобы получить сведения открытого ключа в параметре **key**, требуется указать свойство **keyCredentials** в запросе `$select`. Например, `$select=id,appId,keyCredentials`.
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -186,7 +186,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -251,7 +251,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

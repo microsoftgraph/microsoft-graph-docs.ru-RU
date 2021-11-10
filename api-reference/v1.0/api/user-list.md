@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 7edf028b5a612ae1ce489ed7a4c2cf07f67420d3
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 4980ea0db44ad2cdd36cf026614c52af5da0bc65
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256531"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890915"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 
@@ -26,7 +26,7 @@ ms.locfileid: "60256531"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Для приложений | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 Гостевые пользователи не могут вызывать этот API. Дополнительные сведения о разрешениях для участников и гостевых пользователей см. в статье [Разрешения пользователя по умолчанию в Azure Active Directory](/azure/active-directory/fundamentals/users-default-permissions#member-and-guest-users).
 
@@ -38,7 +38,7 @@ GET /users
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`. `$search` можно использовать в свойстве **displayName**. Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка. В настоящее время параметры `$count` и `$search` недоступны в клиентах Azure AD B2C.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select` и `$top` для настройки отклика. Стандартный и максимальный размеры страницы — 100 и 999 объектов пользователей соответственно. Некоторые запросы поддерживаются только при использовании заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries). В настоящее время параметры `$count` и `$search` недоступны в клиентах Azure AD B2C.
 
 По умолчанию возвращается только ограниченный набор свойств (**businessPhones**, **displayName**, **givenName**, **id**, **jobTitle**, **mail**, **mobilePhone**, **officeLocation**, **preferredLanguage**, **surname** и **userPrincipalName**). Чтобы получить альтернативный набор свойств, укажите нужный набор свойств объекта [user](../resources/user.md) с помощью параметра запроса OData `$select`. Например, чтобы получить свойства **displayName**, **givenName** и **postalCode**, добавьте к запросу следующее: `$select=displayName,givenName,postalCode`.
 
@@ -51,7 +51,7 @@ GET /users
 | Заголовок        | Значение                      |
 |:--------------|:---------------------------|
 | Авторизация | Bearer {token} (обязательный)  |
-| ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search`, применении `$filter` с параметром запроса `$orderby` или применении `$filter` с логическим оператором `endsWith`. В нем используется индекс, который может не соответствовать последним изменениям объекта. |
+| ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search` или определенном использовании `$filter`. Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries). |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/v1.0/users
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -167,7 +167,7 @@ GET https://graph.microsoft.com/v1.0/users?$select=displayName,id&$filter=identi
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -235,7 +235,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -302,7 +302,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -369,7 +369,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -415,7 +415,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

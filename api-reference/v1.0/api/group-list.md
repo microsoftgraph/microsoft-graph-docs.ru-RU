@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ac896742e04e0446122723c6e284f771259316aa
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: a9342973607170c8c8e442b56076a0b9f3131761
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59996121"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60891188"
 ---
 # <a name="list-groups"></a>Список групп
 
@@ -36,7 +36,7 @@ GET /groups
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select` и `$top` для настройки отклика. Некоторые запросы поддерживаются только при использовании заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select` и `$top` для настройки отклика. Стандартный и максимальный размеры страницы — 100 и 999 объектов групп соответственно. Некоторые запросы поддерживаются только при использовании заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
 
 Чтобы показать список только групп Microsoft 365 (т. н. единых групп), примените фильтр для **groupTypes**:
 <!-- { "blockType": "ignored" } -->
@@ -52,7 +52,7 @@ GET https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unifi
 
 | Имя | Описание |
 |:---- |:----------- |
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search` или определенном использовании `$filter`. Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries). |
 
 ## <a name="request-body"></a>Текст запроса
@@ -317,7 +317,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -360,7 +360,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -404,7 +404,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

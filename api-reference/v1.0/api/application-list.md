@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 6bbbe66a33a3e15fa1aa6a71959885c6d216e6a2
-ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
+ms.openlocfilehash: a6f25253cf96362c52000f84d209b047bbf39c64
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60781005"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890859"
 ---
 # <a name="list-applications"></a>Список приложений
 
@@ -38,7 +38,7 @@ GET /applications
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select` и `$top` для настройки отклика. Некоторые запросы поддерживаются только при использовании заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select` и `$top` для настройки отклика. Стандартный и максимальный размеры страницы — 100 и 999 объектов приложений соответственно. Некоторые запросы поддерживаются только при использовании заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
 
 По умолчанию этот API не возвращает значение **key** в свойстве **keyCredentials** при перечислении всех приложений. Чтобы получить сведения открытого ключа в параметре **key**, требуется указать свойство **keyCredentials** в запросе `$select`. Например, `$select=id,appId,keyCredentials`.
 

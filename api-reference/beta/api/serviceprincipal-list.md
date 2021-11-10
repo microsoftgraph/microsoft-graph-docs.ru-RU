@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: e8992b081933ce4264f32a4f1861a48993ca1949
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: dc0d136aac6c1c918e16832aaceb6cdeddf9087e
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59763766"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890894"
 ---
 # <a name="list-serviceprincipals"></a>Перечисление servicePrincipals
 
@@ -39,7 +39,7 @@ GET /servicePrincipals
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select` и `$top` для настройки отклика. Некоторые запросы поддерживаются только при использовании заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select` и `$top` для настройки отклика. Стандартный и максимальный размеры страницы — 100 и 999 объектов субъектов-служб соответственно. Некоторые запросы поддерживаются только при использовании заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
 
 По умолчанию этот API не возвращает значение **key** в свойстве **keyCredentials** при перечислении всех субъектов-служб. Чтобы получить сведения открытого ключа в параметре **key**, требуется указать свойство **keyCredentials** в запросе `$select`. Например, `$select=id,appId,keyCredentials`.
 
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -193,7 +193,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -258,7 +258,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

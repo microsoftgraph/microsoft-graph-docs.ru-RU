@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 22deb547eda4301d1b8bb3f2830516aa2e3be682
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: a1934b1cc52ba26f6500ca585c76df3d9f85fb94
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688642"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890411"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -57,7 +57,7 @@ As part of [privacy management in Microsoft 365](/privacy/solutions/privacymanag
 - Ознакомьтесь с [моделями лицензирования и оплаты](teams-licenses.md), которые применяются к API Microsoft Teams в Microsoft Graph.
 
 ### <a name="users"></a>Пользователи
-В пользовательских лицензиях для служб Azure Active Directory (Azure AD) теперь поддерживаются отметки времени последнего обновления [состояния назначения лицензии](/graph/api/resources/licenseassignmentstate). 
+В пользовательских лицензиях для служб Azure Active Directory (Azure AD) теперь поддерживаются метки времени последнего обновления [состояния назначения лицензии](/graph/api/resources/licenseassignmentstate). 
 
 ## <a name="october-2021-new-in-preview-only"></a>Октябрь 2021 г.: новые возможности только в предварительном просмотре
 
