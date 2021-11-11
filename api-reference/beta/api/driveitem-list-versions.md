@@ -1,18 +1,18 @@
 ---
-title: Перечисление версий DriveItem
+title: Список версий driveItem
 description: OneDrive и SharePoint можно настроить на хранение журнала для файлов.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
 author: JeremyKelley
-ms.openlocfilehash: 3f3c2135f84d5c4b5a71a7a2e003528a72edb8b0
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: b047eece3a789feea3865be4155f6b69ac799eda
+ms.sourcegitcommit: 6b5bee1a1cea92c1f3d6439110c4916eb8b249a5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515541"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60908542"
 ---
-# <a name="listing-versions-of-a-driveitem"></a>Перечисление версий DriveItem
+# <a name="list-versions-of-a-driveitem"></a>Список версий driveItem
 
 Пространство имен: microsoft.graph
 
@@ -55,7 +55,7 @@ GET /users/{user-id}/drive/items/{item-id}/versions
 
 В этом примере показано, как получить версии файла для объекта Drive текущего пользователя.
 
-### <a name="http-request"></a>HTTP-запрос
+### <a name="request"></a>Запрос
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -135,9 +135,11 @@ Content-Type: application/json
 
 ## <a name="remarks"></a>Замечания
 
+Версии возвращаются в порядке убывания (самые новые для старых). Параметр строки `$orderBy` запроса OData не поддерживается.
+
 OneDrive не сохраняет полные метаданные для предыдущих версий файла.
 
-Когда ваше приложение получает список доступных версий для файла, возвращается ресурс [DriveItemVersion](../resources/driveitemversion.md), в котором представлены доступные сведения об определенной версии.
+Когда приложение извлекает список доступных версий для файла, возвращается ресурс [driveItemVersion,](../resources/driveitemversion.md) который предоставляет доступную информацию о конкретной версии.
 
 
 <!--

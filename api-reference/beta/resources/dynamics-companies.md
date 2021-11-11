@@ -1,49 +1,49 @@
 ---
-title: Тип ресурса "компании"
+title: тип ресурсов компаний
 description: Компания в Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 3fedbd9407a4124c38a6ff08a95dbf4cd22c9fe1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8230e7aca8b222c54656845c0e52d4fc60bc7abd
+ms.sourcegitcommit: 6b5bee1a1cea92c1f3d6439110c4916eb8b249a5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081766"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60908577"
 ---
-# <a name="companies-resource-type"></a>Тип ресурса "компании"
+# <a name="companies-resource-type"></a>тип ресурсов компаний
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет тип ресурса "компании" в Dynamics 365 Business Central. 
+Представляет тип ресурсов компаний в Dynamics 365 Business Central. 
 
 ## <a name="methods"></a>Методы
 
 | Метод         | Возвращаемый тип  |Описание|
 |:---------------|:-------------|:----------|
-|[Получение компаний](../api/dynamics-companies-get.md)|companies|Получение компании.|
+|[Получение компаний](../api/dynamics-companies-get.md)|companies|Получите компанию.|
 
 ## <a name="properties"></a>Свойства
 | Свойство        | Тип |Описание                             |
 |:----------------|:-----|:---------------------------------------|
-|id               |GUID  |Уникальный идентификатор компании. Только для чтения.|
+|id               |GUID  |Уникальный ID компании. Только для чтения.|
 |name             |string|Указывает компанию.                  |
-|displayName      |string|Задает отображаемое имя компании.     |
-|системверсион    |string|Указывает внутреннюю версию компании.|
-|бусинесспрофилеид|string|Указывает идентификатор бизнес-профиля, связанный с компанией.|
+|displayName      |string|Указывает имя отображения компании.     |
+|systemVersion    |string|Указывает внутреннюю версию компании.|
+|businessProfileId|string|Указывает ID бизнес-профиля, связанный с компанией.|
 
 
 ## <a name="relationships"></a>Связи
-Нет
+Отсутствуют.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
-Ниже показано представление компании в формате JSON.
+Вот представление JSON компании.
 
 ```json
 {
@@ -53,7 +53,6 @@ ms.locfileid: "48081766"
   "systemVersion": "string",
   "businessProfileId": "string"
 }
-
 ```
 
 

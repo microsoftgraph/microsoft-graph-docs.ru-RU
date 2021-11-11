@@ -1,25 +1,25 @@
 ---
-title: Azure Active Directory (Azure AD) Graph microsoft Graph вопросы миграции
-description: Azure Active Directory (Azure AD) Graph microsoft Graph вопросы миграции.
+title: Azure AD Graph microsoft Graph вопросы миграции
+description: Предоставляет ответы на часто задамые вопросы о переносе из Azure Active Directory (Azure AD) Graph Microsoft Graph.
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 93d5fe0df29b09b083c15a2287b4f47dc6fe166f
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 3ad9eab71ee39509d3ad325fc98126dcdefaa60a
+ms.sourcegitcommit: 6b5bee1a1cea92c1f3d6439110c4916eb8b249a5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59763354"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60908549"
 ---
-# <a name="azure-active-directory-azure-ad-graph-to-microsoft-graph-migration-faq"></a>Azure Active Directory (Azure AD) Graph microsoft Graph вопросы миграции
+# <a name="azure-ad-graph-to-microsoft-graph-migration-faq"></a>Azure AD Graph microsoft Graph вопросы миграции
 
-В этой статье данная статья содержит ответы на часто задамые вопросы о переносе из Azure AD Graph в Microsoft Graph.
+В этой статье данная статья содержит ответы на часто задамые вопросы о переносе Azure Active Directory (Azure AD) Graph [в Microsoft Graph](/graph/overview).
 
 ## <a name="how-is-microsoft-graph-different-from-azure-ad-graph-and-why-should-i-migrate-my-apps"></a>Чем Microsoft отличается Graph Azure AD Graph и почему следует перенести приложения?
 
 API Azure AD Graph предоставляет доступ только к службам Azure AD. API microsoft Graph предоставляет единую конечную точку для доступа к службам Azure AD и другим службы Майкрософт, таким как Microsoft Teams, Microsoft Exchange и Microsoft Intune.
 
-Microsoft Graph также более безопасна и устойчива, чем Azure AD Graph. По этой причине Azure AD Graph с 30 июня 2020 г. и будет отменен 30 июня 2022 г. После 30 июня 2022 г. ваши приложения больше не будут получать ответы из конечной точки Azure AD Graph. Миграция в microsoft Graph, чтобы избежать потери функциональных возможностей.
+[Microsoft Graph](/graph/overview) также более безопасна и устойчива, чем Azure AD Graph. По этой причине Azure AD Graph с 30 июня 2020 г. и будет отменен 30 июня 2022 г. После 30 июня 2022 г. ваши приложения больше не будут получать ответы из конечной точки Azure AD Graph. Миграция в microsoft Graph, чтобы избежать потери функциональных возможностей.
 
 ## <a name="as-a-developer-how-do-i-identify-apps-that-use-azure-ad-graph"></a>Как определить приложения, которые используют Azure AD Graph?
 
@@ -124,11 +124,21 @@ Microsoft Graph также более безопасна и устойчива, 
 
 Исключения из этого амортизации не существуют. После 30 июня 2022 г. ваши приложения больше не будут получать ответы из Graph Azure AD. 
 
-## <a name="i-need-to-create-new-apps-to-use-azure-ad-graph-but-the-azure-ad-graph-api-permission-sign-up-is-closed-how-can-i-create-my-app"></a>Мне нужно создать новые приложения для использования Azure AD Graph но регистрацию разрешения Graph API Azure API закрывается. Как создать приложение?
+## <a name="i-need-to-add-new-azure-ad-graph-permissions-to-my-app-but-i-cant-select-azure-ad-graph-as-a-required-permission-for-my-app-registration-how-can-i-add-the-azure-ad-graph-permissions"></a>Мне нужно добавить новые разрешения Azure AD Graph в свое приложение, но я не могу выбрать Azure AD Graph в качестве необходимого разрешения для регистрации приложения. Как добавить разрешения Azure AD Graph?
 
-Во-первых, рекомендуется следовать [](migrate-azure-ad-graph-planning-checklist.md) контрольным списком планирования миграции приложений, чтобы помочь вам перейти к API Graph Microsoft. 
+Во-первых, рекомендуется следовать [](migrate-azure-ad-graph-planning-checklist.md) контрольным списком планирования миграции приложений, чтобы помочь вам перейти к API Graph Microsoft.
 
-Если вы определили пробел, в котором microsoft Graph не поддерживает функцию, поддерживаемую Azure AD Graph, поработать с администратором клиента или владельцем подписки, чтобы сообщить о разрыве. Если мы убедитесь, что это действительно пробел, который Graph API Microsoft не выполняет, мы поможем вам создать приложение. Однако это не означает исключение из амортизации. Приложение с помощью Azure AD Graph будет по-прежнему работать после 30 июня 2022 г.
+Если вы определили пробел, в котором microsoft Graph не поддерживает функцию, доступную в Azure AD Graph, дайте нам знать через Microsoft Q&A с помощью тега [azure-ad-graph-deprecation](/answers/topics/azure-ad-graph-deprecation.html).
+
+Если вам по-прежнему необходимо настроить Graph Azure AD для приложений, используйте одно из следующих обходных пути.
+
++ Используйте [API](/graph/api/resources/application) приложения в Microsoft Graph для обновления объекта [requiredResourceAccess](/graph/api/resources/requiredresourceaccess)
++ Используйте [комлет Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true)   в Microsoft Graph PowerShell
+
+Примеры, использующие перечисленные обходные пути, см. в Graph Microsoft для настройки необходимых разрешений [Azure AD Graph](migrate-azure-ad-graph-configure-permissions.md) для регистрации приложений
+
+>**Примечание:** Добавление разрешений Azure AD Graph с помощью этих обходных обходных методов не будет поддерживаться после 30 июня 2022 г. Любое приложение с помощью Azure AD Graph будет по-прежнему работать после 30 июня 2022 г.
+
 
 
 ## <a name="see-also"></a>См. также

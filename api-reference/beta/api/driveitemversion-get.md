@@ -1,16 +1,16 @@
 ---
 title: Получение ресурса DriveItemVersion (ознакомительная версия)
 description: В этой статье рассказывается, как получить метаданные для определенной версии ресурса DriveItem.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
 author: JeremyKelley
-ms.openlocfilehash: d5beccc75cb1c6b79995f07ca4cb2dba729761e6
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: 2884cecda95dc2e6f84bb9313a606c71184ef7e1
+ms.sourcegitcommit: 6b5bee1a1cea92c1f3d6439110c4916eb8b249a5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515725"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60908574"
 ---
 # <a name="get-a-driveitemversion-resource-preview"></a>Получение ресурса DriveItemVersion (ознакомительная версия)
 
@@ -48,11 +48,13 @@ GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [DriveItemVersion](../resources/driveitemversion.md) в теле отклика.
 
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
+
+### <a name="example-1-get-specified-version-of-a-file"></a>Пример 1. Получить указанную версию файла
 
 В этом примере показано, как получить версию файла в объекте drive текущего пользователя.
 
-### <a name="http-request"></a>HTTP-запрос
+#### <a name="request"></a>Запрос
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -80,9 +82,9 @@ GET /me/drive/items/{item-id}/versions/{version-id}
 ---
 
 
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
-Возвращается коллекция версий:
+Это возвращает версию:
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItemVersion", "truncated": true } -->
 
@@ -95,7 +97,45 @@ Content-Type: application/json
     "lastModifiedBy": {
     "user": {
         "id": "CE251278-EF9E-4FE5-833C-1D89EEAE68E0",
-        "displayName": "Ryan Gregg"
+        "displayName": "Iheanetu Olamma"
+    }
+    },
+    "lastModifiedDateTime": "2017-09-14T12:34:53.912Z",
+    "size": 123
+}
+```
+
+
+### <a name="example-2-get-current-version-of-a-file"></a>Пример 2. Получить текущую версию файла
+
+В этом примере извлекает текущую версию файла в диске текущего пользователя.
+
+#### <a name="request"></a>Запрос
+
+
+<!-- { "blockType": "request", "name": "get-current-version", "scopes": "files.read", "tags": "service.graph" } -->
+
+```http
+GET /me/drive/items/{item-id}/versions/current
+```
+
+
+#### <a name="response"></a>Отклик
+
+Это возвращает версию:
+
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItemVersion", "truncated": true } -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "id": "D4990684-58CE-4FAB-9B87-D6C49E74F298",
+    "lastModifiedBy": {
+    "user": {
+        "id": "CE251278-EF9E-4FE5-833C-1D89EEAE68E0",
+        "displayName": "Iheanetu Olamma"
     }
     },
     "lastModifiedDateTime": "2017-09-14T12:34:53.912Z",
