@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: search
-ms.openlocfilehash: d17c187ed45194c3f99572202d50c7339e70f730
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cb8f2a6aa239788c030c5ba6c5e78e3e26a19eeb
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139312"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931259"
 ---
 # <a name="microsoft-graph-connectors-overview"></a>Соединители Microsoft Graph
 
@@ -31,14 +31,13 @@ ms.locfileid: "59139312"
 
 Более 100 доступных в настоящее время соединителей корпорации Майкрософт и ее партнеров позволяют подключиться к популярным службам Майкрософт и сторонних разработчиков. К примерам существующих соединителей относятся службы Azure, Box, ServiceNow, Salesforce, службы Google, MediaWiki и т. д.
 
-Дополнительная информация о существующих соединителях Microsoft Graph представлена в [коллекции соединителей Microsoft Graph](/microsoftsearch/connectors-gallery).
+Дополнительная информация о существующих соединителях Microsoft Graph представлена в [коллекции соединителей Microsoft Graph](/microsoft-search/connectors).
 
-Эти соединители помогают подключиться к популярным службам, но вам может потребоваться интеграция со службами, которых нет в существующей [коллекции соединителей](/microsoftsearch/connectors-gallery). Вы можете воспользоваться API соединителей Microsoft Graph и создать пользовательский соединитель для доставки внешних данных функциям Microsoft 365 в вашей организации, среди которых Поиск, Viva Темы и многие другие (ожидаемые в ближайшее время).
+Эти соединители помогают подключиться к популярным службам, но вам может потребоваться интеграция со службами, которых нет в существующей [коллекции соединителей](/microsoft-search/connectors). Вы можете воспользоваться API соединителей Microsoft Graph и создать пользовательский соединитель для доставки внешних данных функциям Microsoft 365 в вашей организации, среди которых Поиск, Viva Темы и многие другие (ожидаемые в ближайшее время).
 
 ## <a name="get-started-with-custom-graph-connectors"></a>Начало работы с пользовательскими соединителями Graph:
 * [Работа с API соединителей](connecting-external-content-connectors-api-overview.md)
 * [Использование Postman с API соединителей Microsoft Graph](connecting-external-content-connectors-api-postman.md)
-<!---**(Articles coming next)**
-* [Build your first custom connector with Microsoft Graph]()
+* [Сборка вашего первого пользовательского соединителя Microsoft Graph](connecting-external-content-build-quickstart.yml)
 --->
 

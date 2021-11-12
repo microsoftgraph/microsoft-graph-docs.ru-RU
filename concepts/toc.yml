@@ -626,6 +626,8 @@ items:
                 href: migrate-azure-ad-graph-deploy-test-extend.md
               - name: Вопросы и ответы о миграции
                 href: migrate-azure-ad-graph-faq.md
+              - name: Настройка разрешений Azure AD Graph
+                href: migrate-azure-ad-graph-configure-permissions.md
       - name: Использование пакетов SDK
         items:
           - name: Обзор
