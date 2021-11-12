@@ -2,15 +2,15 @@
 author: JeremyKelley
 description: Используя действие createLink, вы можете поделиться ресурсом DriveItem с помощью ссылки для совместного доступа.
 title: 'driveItem: createLink'
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e65cdc780b5c38441471dd14292f0420bf0ca629
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: bfa70cc4deb1062c2efc4d354b8787e9f607a8e9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52990739"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944147"
 ---
 # <a name="driveitem-createlink"></a>driveItem: createLink
 
@@ -48,7 +48,7 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -86,7 +86,7 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 | Значение          | Описание
 |:---------------|:------------------------------------------------------------
 | анонимный    | Любой пользователь со ссылкой обладает правом доступа без необходимости входа в систему. Это также относится к людям вне вашей организации. Администратор может отключить поддержку ссылок, не требующих проверки подлинности.
-| organization; | Любой пользователь, вошедший в вашу организацию (клиент), может использовать ссылку для получения доступа. Доступно только в OneDrive для бизнеса и SharePoint.
+| organization | Любой пользователь, вошедший в вашу организацию (клиент), может использовать ссылку для получения доступа. Доступно только в OneDrive для бизнеса и SharePoint.
 | users        | Конкретные люди из коллекции получателей могут использовать ссылку для получения доступа. Доступно только в OneDrive для бизнеса и SharePoint.
 
 ## <a name="response"></a>Отклик
@@ -111,7 +111,6 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 ```http
 POST /me/drive/items/{itemId}/createLink
 Content-Type: application/json
-Content-length: 212
 
 {
   "type": "view",

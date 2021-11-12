@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 961b70e3e9815dbf72ac9e2c773c73569b29d051
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 7aa4965457eaa49f4645297f4471ce9f13ef82f8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766840"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947149"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -111,8 +111,7 @@ POST /subscriptions
 
 ### <a name="request"></a>Запрос
 
-Предоставьте в тексте запроса описание объекта [subscription](../resources/subscription.md) в формате JSON.
-Поля `clientState` и `latestSupportedTlsVersion` необязательны.
+Предоставьте в тексте запроса описание объекта [subscription](../resources/subscription.md) в формате JSON. Поля `clientState` и `latestSupportedTlsVersion` не являются обязательными.
 
 Этот запрос создает подписку на уведомления об изменениях о новой почте, полученной в настоящее время подписанным пользователем.
 
@@ -153,8 +152,7 @@ Content-type: application/json
 
 ---
 
-Предоставьте в тексте запроса описание объекта [subscription](../resources/subscription.md) в формате JSON.
-Поля `clientState` и `latestSupportedTlsVersion` необязательны.
+Предоставьте в тексте запроса описание объекта [subscription](../resources/subscription.md) в формате JSON. Поля `clientState` и `latestSupportedTlsVersion` не являются обязательными.
 
 #### <a name="resources-examples"></a>Примеры ресурсов
 
@@ -198,7 +196,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 252
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscriptions/$entity",

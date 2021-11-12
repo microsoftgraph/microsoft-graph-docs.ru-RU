@@ -2,20 +2,18 @@
 title: Создание printerShare
 description: Создает новую долю принтера для указанного принтера.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: f477ce6c4a45b86677c38d2bc5d438474da46ad5
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: b953ed70d10d37389d44dd4ecbc97beaa92f97c7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777182"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937211"
 ---
 # <a name="create-printershare"></a>Создание printerShare
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Создание нового **принтераShare** для указанного [принтера.](../resources/printer.md)
 
@@ -43,7 +41,7 @@ POST /print/shares
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,7 +53,7 @@ POST /print/shares
 |:---|:---|:---|:---|
 |printer|microsoft.graph.printer|Принтер, с который связан этот принтер. Используйте `printer@odata.bind` синтаксис, как показано в следующем примере.|Да|
 |displayName|String|Имя доли принтера, которую должны отображать клиенты печати. Максимальная разрешенная длина — 50 символов.|Да|
-|allowAllUsers|Boolean|Если всем пользователям и группам будет предоставлен доступ `true` к этой совместной печати. Это замещеет списки разрешенных объектов, определенные **свойствами allowedUsers** и **allowedGroups.**|Нет|
+|allowAllUsers|Логическое|Если всем пользователям и группам будет предоставлен доступ `true` к этой совместной печати. Это замещеет списки разрешенных объектов, определенные **свойствами allowedUsers** и **allowedGroups.**|Нет|
 
 ## <a name="response"></a>Отклик
 
@@ -74,7 +72,6 @@ POST /print/shares
 ``` http
 POST https://graph.microsoft.com/v1.0/print/shares
 Content-Type: application/json
-Content-length: 509
 
 {
   "displayName": "ShareName",

@@ -5,12 +5,12 @@ author: vishriv
 ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 48ddb448b13d73d3a7c54177018f3de645e7192c
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: cdd3324af372b7ec861cdd061656a5fb91337807
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60559213"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944370"
 ---
 # <a name="create-term"></a>Создание термина
 Пространство имен: microsoft.graph.termStore
@@ -73,7 +73,6 @@ POST sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/children
 ``` http
 POST https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/sets/462bd0ae-30bb-4c58-845c-761ff6481ac1/children
 Content-Type: application/json
-Content-length: 366
 
 {
   "labels": [

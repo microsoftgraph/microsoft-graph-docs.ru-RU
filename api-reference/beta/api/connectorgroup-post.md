@@ -1,16 +1,16 @@
 ---
 title: Создание connectorGroup
 description: Создание объекта connectorGroup.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 79ba45ac5238a1f80608951b0723f8217c772e39
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 04d04de3ff3cf01e9c97e0cbc06c509bb6e5c128
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047149"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60934704"
 ---
 # <a name="create-connectorgroup"></a>Создание connectorGroup
 
@@ -38,7 +38,7 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization  | Носителер. Обязательный параметр.|
+| Авторизация  | Носителер. Обязательный параметр.|
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -47,11 +47,11 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|connectorGroupType|String| Указывает тип гибридного агента. Это свойство заранее заданной системой.|
+|connectorGroupType|string| Указывает тип гибридного агента. Это свойство заранее заданной системой.|
 |id|string| Уникальный идентификатор для этого соединитетеляGroup. Только для чтения. |
-|isDefault|boolean| Указывает, является ли соединительщикGroup по умолчанию. Соединительщиком по умолчанию может быть только одна группа соединительных групп, и это заранее заданной системой. |
+|isDefault|логический| Указывает, является ли соединительщикGroup по умолчанию. Соединительщиком по умолчанию может быть только одна группа соединительных групп, и это заранее заданной системой. |
 |name|string| Имя, связанное с соединитетелемGroup. |
-|регион|String| Регион, в который назначен connectorGroup, и будет оптимизировать трафик. Этот регион можно установить только в **том** случае, если соединители или приложения не назначены соединительгруппе. Доступные регионы: Северная Америка, Европа, Австралия, Азия и Индия. Возможные значения: `nam`, `eur`, `aus`, `asia`, `ind`.|
+|регион|string| Регион, в который назначен connectorGroup, и будет оптимизировать трафик. Этот регион можно установить только в **том** случае, если соединители или приложения не назначены соединительгруппе. Доступные регионы: Северная Америка, Европа, Австралия, Азия и Индия. Возможные значения: `nam`, `eur`, `aus`, `asia`, `ind`.|
 
 ## <a name="response"></a>Отклик
 
@@ -68,7 +68,6 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 ```http
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups
 Content-type: application/json
-Content-length: 99
 
 {
   "name": "Connector Group Demo"
@@ -105,7 +104,6 @@ Content-length: 99
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 119
 
 {
   "id": "3e6f4c35-a04b-4d03-b98a-66fff89b72e6",

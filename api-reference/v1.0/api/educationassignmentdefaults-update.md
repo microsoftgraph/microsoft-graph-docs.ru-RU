@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e5eb0ba61ac20633a3a6a9dc722bc1da32531a1e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 30eb5422e9bdb7d9870895f3ed5eb8ecc5a3d2be
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59020030"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924671"
 ---
 # <a name="update-educationassignmentdefaults"></a>Обновление educationAssignmentDefaults
 Пространство имен: microsoft.graph
@@ -41,7 +41,7 @@ PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentDefaults
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentDefaults
 |:---|:---|:---|
 |addedStudentAction|educationAddedStudentAction| Действия по умолчанию класса для учащихся, добавленные после даты публикации назначения. Возможные значения: `none`, `assignIfOpen`. Значение по умолчанию — `none`.|
 |dueTime|TimeOfDay| Значение по умолчанию класса для должного поля времени. Значение по умолчанию: `23:59:00`.|
-|notificationChannelUrl|Строка| По умолчанию Teams канал для отправки уведомлений, связанных с назначением. Значение по умолчанию — `null`.|
+|notificationChannelUrl|String| По умолчанию Teams канал для отправки уведомлений, связанных с назначением. Значение по умолчанию — `null`.|
 
 
 
@@ -75,7 +75,6 @@ PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentDefaults
 ``` http
 PATCH https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentDefaults
 Content-Type: application/json
-Content-length: 181
 
 {
   "addedStudentAction": "assignIfOpen",

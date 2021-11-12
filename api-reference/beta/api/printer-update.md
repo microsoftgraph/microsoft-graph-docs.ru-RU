@@ -2,15 +2,15 @@
 title: Обновление принтера
 description: Обновление свойств объекта принтера.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 0602c04ab890f773866d8721580c0c099cccbeb4
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 965f2715ec400d4615ccfc90a4eafb657524a4ea
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051076"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946659"
 ---
 # <a name="update-printer"></a>Обновление принтера
 
@@ -31,7 +31,7 @@ ms.locfileid: "52051076"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Printer.ReadWrite.All, Printer.FullControl.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| Printer.ReadWrite.All |
+|Для приложений| Printer.ReadWrite.All |
 
 >**Примечание:** В настоящее время только принтеры, не оснащенные физическим устройством, могут обновляться с помощью разрешений приложений.
 
@@ -43,7 +43,7 @@ PATCH /print/printers/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | `application/json` при использовании делегирования разрешений или `application/ipp` `application/json` при использовании разрешений приложений. Обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -73,7 +73,7 @@ PATCH /print/printers/{id}
 |manufacturer|String|Производитель принтера.|
 |model|String|Имя модели принтера.|
 |status|[printerStatus](../resources/printerstatus.md)|Состояние обработки принтера, включая ошибки.|
-|isAcceptingJobs|Логический|Принимает ли принтер новые задания печати.|
+|isAcceptingJobs|Логическое|Принимает ли принтер новые задания печати.|
 
 ### <a name="application-permissions-and-ipp-payload"></a>Разрешения приложений и полезной нагрузки IPP
 
@@ -115,7 +115,6 @@ PATCH /print/printers/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/print/printers/{id}
 Content-type: application/json
-Content-length: 124
 
 {
   "name": "PrinterName",
@@ -158,7 +157,6 @@ Content-length: 124
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1313
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers/$entity",

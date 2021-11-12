@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4dcbbb405fcadf469f453cb0ffb03d084079a33e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e1037416833c9709c25c0114387c49550975d607
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037007"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940442"
 ---
 # <a name="create-tablecolumn"></a>Создание объекта TableColumn
 
@@ -60,7 +60,6 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns
 Content-type: application/json
-Content-length: 81
 
 {
   "id": "99",
@@ -98,7 +97,6 @@ Content-length: 81
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 81
 
 {
   "id": "99",

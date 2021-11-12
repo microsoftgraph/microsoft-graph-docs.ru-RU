@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: acba9ae740fc2eac42939192abfb4291a040eec1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e73a0f5f216f2fa52133d505cf82c9d7838f5fa2
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59085128"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945875"
 ---
 # <a name="create-or-replace-a-historyitem"></a>Создание или замена historyItem
 
@@ -43,7 +43,7 @@ Id должен быть GUID.
 
 |Имя | Тип | Описание|
 |:----|:-----|:-----------|
-|Authorization | string | Bearer {токен}. Обязательный.|
+|Authorization | string | Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -67,7 +67,6 @@ Id должен быть GUID.
 ```http
 PUT https://graph.microsoft.com/v1.0/me/activities/{activity-id}/historyItems/{item-id}
 Content-type: application/json
-Content-length: 364
 
 {
     "startedDateTime": "2015-02-11T20:54:04.3457274+00:00",

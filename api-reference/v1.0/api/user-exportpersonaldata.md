@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 5a1a31684aadd660ff2d85a21db5a6a710cc629a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 77e70ff78b718b4f2a40c03cf299e6ff227512b6
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59090007"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946925"
 ---
 # <a name="user-exportpersonaldata"></a>пользователь: exportPersonalData
 
@@ -45,14 +45,14 @@ POST /users/{id}/exportPersonalData
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|storageLocation|Строка|Это URL-адрес подписи общего доступа (SAS) к учетной записи служба хранилища Azure, куда следует экспортировать данные.|
+|storageLocation|String|Это URL-адрес подписи общего доступа (SAS) к учетной записи служба хранилища Azure, куда следует экспортировать данные.|
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `202 Accepted`. Метод не возвращает данные в теле отклика. Ответ содержит следующие заглавные главы ответов.
 
 | Имя       | Описание|
 |:---------------|:----------|
-| Location  | URL-адрес для проверки состояния запроса. |
+| Расположение  | URL-адрес для проверки состояния запроса. |
 | Retry-After  | Период времени в секундах. Производитель запросов должен ждать этого долго после отправки запроса для проверки состояния. |
 
 ## <a name="example"></a>Пример
@@ -66,7 +66,6 @@ POST /users/{id}/exportPersonalData
 ```http
 POST https://graph.microsoft.com/v1.0/users/{id}/exportPersonalData
 Content-type: application/json
-Content-length: 48
 
 {
   "storageLocation": "storageLocation-value"

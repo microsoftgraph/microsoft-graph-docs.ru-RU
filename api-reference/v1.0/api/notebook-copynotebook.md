@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 85b6a312ac17e45381cc8a8c6e39e623ef0386ef
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 808236fe515d2a557a50c9ce5326229f5b89e6e1
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016077"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945189"
 ---
 # <a name="notebook-copynotebook"></a>блокнот: copyNotebook
 
@@ -37,7 +37,7 @@ POST /groups/{id}/onenote/notebooks/{id}/copyNotebook
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
@@ -46,7 +46,7 @@ POST /groups/{id}/onenote/notebooks/{id}/copyNotebook
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |groupId|String|ID группы для копирования. Используйте только при копировании в Microsoft 365 группу.|
-|переименоватьAs|Строка|Имя копии. По умолчанию имя существующего элемента. |
+|переименоватьAs|String|Имя копии. По умолчанию имя существующего элемента. |
 
 ## <a name="response"></a>Отклик
 
@@ -65,7 +65,6 @@ POST /groups/{id}/onenote/notebooks/{id}/copyNotebook
 ```http
 POST https://graph.microsoft.com/v1.0/me/onenote/notebooks/{id}/copyNotebook
 Content-type: application/json
-Content-length: 108
 
 {
   "groupId": "groupId-value",

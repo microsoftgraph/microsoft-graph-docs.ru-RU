@@ -1,16 +1,16 @@
 ---
 title: 'orgContact: List memberOf'
 description: Извлечение списка групп и администраторских единиц, членом которых является контакт.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 22ff6ec0feb557b623f09427a9a89363369dbf2c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 178735770a423d8e2ec0b92b8eb306db7219a610
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055542"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935825"
 ---
 # <a name="orgcontact-list-memberof"></a>orgContact: List memberOf
 
@@ -42,7 +42,7 @@ GET /contacts/{id}/memberOf
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/contacts/{id}/memberOf
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,7 +91,6 @@ GET https://graph.microsoft.com/beta/contacts/{id}/memberOf
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [

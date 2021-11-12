@@ -2,15 +2,15 @@
 title: Перечисление пользователей
 description: Получение списка объектов user. Эти объекты user будут содержать специальные свойства, связанные с образованием.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6313426738a63fd4f84f468892a00a7c6f6152f0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b8fcdfb85534af36fecfa97dbc125ddefed31f6c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043656"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925316"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 
@@ -40,7 +40,7 @@ GET /education/users
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/education/users
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 593
 
 {
   "value": [

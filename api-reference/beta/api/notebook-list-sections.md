@@ -1,16 +1,16 @@
 ---
 title: Вывод списка разделов
-description: Получение списка объектов Section из указанной записной книжки.
+description: Извлечение списка объектов раздела из указанной записной книжки.
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 7ca40aede19e60b4c4b8462b917775a842643f68
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c5599b266516e74791f193c2407d2533598246aa
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48967743"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941276"
 ---
 # <a name="list-sections"></a>Вывод списка разделов
 
@@ -18,7 +18,7 @@ ms.locfileid: "48967743"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [section](../resources/onenotesection.md) из указанной записной книжки.
+Извлечение списка [объектов раздела](../resources/onenotesection.md) из указанной записной книжки.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -41,7 +41,7 @@ GET /sites/{id}/onenote/notebooks/{id}/sections
 
 По умолчанию используется порядок сортировки `name asc`.
 
-Запрос по умолчанию разворачивает `parentNotebook` и выбирает `id` `displayName` свойства, и `self` . Допустимые `expand` значения для разделов — `parentNotebook` и `parentSectionGroup` .
+Запрос по умолчанию расширяется и выбирает его свойства и `parentNotebook` `id` `displayName` `self` свойства. `expand`Допустимые значения для разделов и `parentNotebook` `parentSectionGroup` .
 
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -55,7 +55,7 @@ GET /sites/{id}/onenote/notebooks/{id}/sections
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [оненотесектион](../resources/onenotesection.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [onenoteSection](../resources/onenotesection.md) в теле ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -97,7 +97,6 @@ GET https://graph.microsoft.com/beta/me/onenote/notebooks/{id}/sections
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 345
 
 {
   "value": [

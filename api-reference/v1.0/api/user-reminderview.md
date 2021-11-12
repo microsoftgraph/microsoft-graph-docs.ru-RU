@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4e2ae1d5982b70c36adc024b45306d6e37920cf6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c094445f5524b8f56b5cba50a282f8007a4e7a71
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109712"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924235"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 
@@ -42,7 +42,7 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение|
 |:-----------|:------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type   | application/json |
 | Prefer | {Часовой пояс}. Необязательный. Если параметр не указан, по умолчанию используется формат UTC.|
 
@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/v1.0/me/reminderView(startDateTime='2017-06-05T1
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 673
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.reminder)",

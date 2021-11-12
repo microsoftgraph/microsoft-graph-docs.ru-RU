@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 67051f881ba3ef92c596a8e4175bde61f8c7d670
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d1e5ab5c5973d402ac5f342bd21db6f5663f1737
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59078254"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937918"
 ---
 # <a name="get-datapolicyoperation"></a>Get dataPolicyOperation
 
@@ -36,7 +36,7 @@ GET /dataPolicyOperations/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Bearer {token}|
+| Авторизация  | Bearer {token}|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -81,7 +81,6 @@ GET https://graph.microsoft.com/beta/dataPolicyOperations/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 212
 
 {
   "completedDateTime": "datetime-value",

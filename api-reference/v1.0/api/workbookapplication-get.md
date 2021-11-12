@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b9ba14ab47649cfac0c42c2ff3f075153607a7df
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 714b781f8ac7ebf5d1ef69c8b9539e57e5452562
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59113842"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947359"
 ---
 # <a name="get-workbookapplication"></a>Get workbookApplication
 
@@ -37,7 +37,7 @@ GET /me/drive/root:/{item-path}:/workbook/application
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/application
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 48
 
 {
   "calculationMode": "calculationMode-value"

@@ -2,21 +2,19 @@
 title: Обновление печатиTaskDefinition
 description: Обновление определения задачи.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: af00ba623907a8e5817208ca4a0f92d69ca2dddc
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 61c5dc81551f5f72ca4dfd4108ba950dc9dfd491
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777112"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945917"
 ---
 # <a name="update-printtaskdefinition"></a>Обновление печатиTaskDefinition
 
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Обновление определения задачи.
 
@@ -46,7 +44,7 @@ PATCH /print/taskDefinitions/{printTaskDefinitionId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -74,7 +72,6 @@ PATCH /print/taskDefinitions/{printTaskDefinitionId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/print/taskDefinitions/{printTaskDefinitionId}
 Content-Type: application/json
-Content-length: 163
 
 {
   "displayName": "Test TaskDefinitionName",

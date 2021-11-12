@@ -1,16 +1,16 @@
 ---
 title: Обновление организации
 description: Обновление свойств объекта organization, для которого выполнена проверка подлинности.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: cae41ed267ea4595134247cf1ac3967ce34141a5
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: f124a3bb6b9a8bbbad6ba41ceffb46c5cee7caed
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52785937"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943348"
 ---
 # <a name="update-organization"></a>Обновление организации
 
@@ -28,7 +28,7 @@ ms.locfileid: "52785937"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Organization.ReadWrite.All, Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение | Organization.ReadWrite.All |
+|Для приложений | Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ PATCH /organization/{id}
 
 | Имя       | Описание|
 |:-----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type   | application/json |
 
 
@@ -77,7 +77,6 @@ PATCH /organization/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/organization/{id}
 Content-type: application/json
-Content-length: 411
 
 {
   "marketingNotificationEmails" : ["marketing@contoso.com"],

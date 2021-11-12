@@ -2,15 +2,15 @@
 title: 'пользователь: активироватьServicePlan'
 description: Активация плана службы с `servicePlanId` заданным и для данного `skuId` пользователя.
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: f4b343e14f5ed675a93f99559c64aaa8242c93b5
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: f324c839646f2f503ed065fa4c65c95e7f432965
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514604"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947051"
 ---
 # <a name="user-activateserviceplan"></a>пользователь: активироватьServicePlan
 
@@ -45,7 +45,7 @@ POST /users/{id | userPrincipalName}/activateServicePlan
 
 | Имя | Описание |
 | :--- | :--- |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -76,7 +76,6 @@ POST /users/{id | userPrincipalName}/activateServicePlan
 ``` http
 POST https://graph.microsoft.com/beta/me/activateServicePlan
 Content-type: application/json
-Content-length: 115
 
 {
   "servicePlanId": "28f42d6f-8034-4a0f-9d8a-a218a63b3299",

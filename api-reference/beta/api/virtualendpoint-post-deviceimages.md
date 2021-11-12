@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 721044cda7eb72db8dd86dd36c48df56a432b0dc
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 943a248a8f30ee0febd7c64ab242e9d8ec38710c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767295"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936455"
 ---
 # <a name="create-cloudpcdeviceimage"></a>Создание cloudPcDeviceImage
 
@@ -28,7 +28,7 @@ ms.locfileid: "59767295"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|CloudPC.ReadWrite.All|
+|Для приложений|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ POST /deviceManagement/virtualEndpoint/deviceImages
 
 | Имя          | Описание                |
 | :------------ | :------------------------  |
-| Авторизация | Bearer {токен}. Обязательный.  |
+| Авторизация | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -56,8 +56,8 @@ POST /deviceManagement/virtualEndpoint/deviceImages
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя отображения изображения.|
-|sourceImageResourceId|Строка|ID источника ресурса изображений в Azure. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
+|displayName|String|Имя отображения изображения.|
+|sourceImageResourceId|String|ID источника ресурса изображений в Azure. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
 |operatingSystem|String|Операционная система изображения. Например: Windows 10 Корпоративная.|
 |osBuildNumber|String|Версия сборки ОС изображения. Например: 1909.|
 |version|String|Версия изображения. Например: 0.0.1, 1.5.13.|
@@ -81,7 +81,6 @@ POST /deviceManagement/virtualEndpoint/deviceImages
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImages
 Content-Type: application/json
-Content-length: 363
 
 {
   "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
@@ -124,7 +123,6 @@ Content-length: 363
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-length: 508
 
 {
   "@odata.type": "#microsoft.graph.cloudPcDeviceImage",

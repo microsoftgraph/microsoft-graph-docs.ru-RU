@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1bb6ee51b81eb9d76cb125c8848a65deb27e3cb6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0b5e4e4112a6a9ae0a91d4970dc2477c81fe8077
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019771"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941766"
 ---
 # <a name="update-linkedresource"></a>Обновление linkedResource
 Пространство имен: microsoft.graph
@@ -40,7 +40,7 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/l
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -50,7 +50,7 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/l
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Server generated Id for the linked entity Inherited from [entity](../resources/entity.md)|
+|id|String|Server generated Id for the linked entity Inherited from [entity](../resources/entity.md)|
 
 ## <a name="response"></a>Отклик
 
@@ -71,7 +71,6 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/l
 ``` http
 PATCH https://graph.microsoft.com/v1.0/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks/e2dc-f9cce2-dce29/linkedResources/f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9
 Content-Type: application/json
-Content-length: 166
 
 {
   "@odata.type": "#microsoft.graph.linkedResource",

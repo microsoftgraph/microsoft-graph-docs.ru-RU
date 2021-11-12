@@ -1,16 +1,16 @@
 ---
 title: Перечисление курсов
 description: 'Получение списка объектов курсов. Примечание. Если используется делегированный маркер, участники могут видеть сведения только о своих курсах. '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ec0bcde1e53e3dfe801a4cdafbf49572b4c812b8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c81e40afd224cb13baa0d4b6c5c316c739e85c70
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042837"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937848"
 ---
 # <a name="list-classes"></a>Перечисление курсов
 
@@ -50,7 +50,7 @@ GET /education/users/{id}/classes
 
 | Заголовок        | Значение                     |
 | :------------ | :------------------------ |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -114,7 +114,6 @@ GET https://graph.microsoft.com/beta/education/me/classes
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 277
 
 {
   "value": [

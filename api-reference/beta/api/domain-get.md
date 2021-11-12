@@ -2,15 +2,15 @@
 title: Получение домена
 description: Извлечение свойств и связей объекта домена.
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2575eefb2ce3585466de3e10fefb71e76859650c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3efa19bf2e4c5666a232fbf8834ed72f33f844fc
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046519"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947322"
 ---
 # <a name="get-domain"></a>Получение домена
 
@@ -27,7 +27,7 @@ ms.locfileid: "52046519"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All    |
+|Делегированные (рабочая или учебная учетная запись) | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All |
 
@@ -48,7 +48,7 @@ GET /domains/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type  | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -97,7 +97,6 @@ GET https://graph.microsoft.com/beta/domains/contoso.com
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 192
 
 {
   "authenticationType": "authenticationType-value",

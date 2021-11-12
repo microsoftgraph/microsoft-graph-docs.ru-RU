@@ -2,15 +2,15 @@
 title: 'отчеты: getGroupArchivedPrintJobs'
 description: Получите список архивных заданий печати для определенной группы.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 8eb6c54e3c4cc62ae3908d456ce832eebe83362f
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 875be990d0f97ebbe6e2c487926685829ee1d4eb
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870754"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944776"
 ---
 # <a name="reports-getgrouparchivedprintjobs"></a>отчеты: getGroupArchivedPrintJobs
 
@@ -21,7 +21,7 @@ ms.locfileid: "52870754"
 Получите список архивных заданий печати для определенной группы.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 Помимо следующих разрешений, клиент пользователя должен иметь активную подписку на универсальную печать.
 
@@ -29,7 +29,7 @@ ms.locfileid: "52870754"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Reports.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается.|
+|Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ GET /reports/getGroupArchivedPrintJobs(groupId=groupId-value,startDateTime=start
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="function-parameters"></a>Параметры функции
 
@@ -97,7 +97,6 @@ GET https://graph.microsoft.com/beta/print/reports/getGroupArchivedPrintJobs(gro
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 236
 
 {
   "value": [

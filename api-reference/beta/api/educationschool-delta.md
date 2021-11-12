@@ -1,16 +1,16 @@
 ---
 title: 'educationSchool: delta'
 description: Создайте новые или обновленные школы, не выполняя полное чтение всей школьной коллекции.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 9491a958776797252eada5116b48b25a936b4111
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 754451d99472581f408f1598574d6fb392511359
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043467"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936805"
 ---
 # <a name="educationschool-delta"></a>educationSchool: delta
 
@@ -108,7 +108,6 @@ GET https://graph.microsoft.com/beta/education/schools/delta
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 313
 
 {
   "value": [

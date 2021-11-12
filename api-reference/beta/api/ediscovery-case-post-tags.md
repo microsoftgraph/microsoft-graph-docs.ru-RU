@@ -2,15 +2,15 @@
 title: Создание тега
 description: Создайте новый объект тегов.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 412a0cd1ae4f8c38466a6526a5c84eea670897bb
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 439005577189f542790d389447e6f7a02369e30f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773762"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941507"
 ---
 # <a name="create-tag"></a>Создание тега
 
@@ -45,7 +45,7 @@ POST /compliance/ediscovery/cases/{caseId}/tags
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -78,7 +78,6 @@ POST /compliance/ediscovery/cases/{caseId}/tags
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/tags
 Content-Type: application/json
-Content-length: 235
 
 {
   "displayName":"Privileged",

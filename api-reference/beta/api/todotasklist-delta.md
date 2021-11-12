@@ -1,16 +1,16 @@
 ---
 title: 'todoTaskList: delta'
 description: Получите набор ресурсов todoTaskList, которые были добавлены, удалены или удалены в Microsoft To Do.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: avijityadav
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ce5cc7202806b62afcc7f64bcd3b2393f2d31753
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ca81f053936e93fd5cecc31c285a739d5109a170
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048927"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943061"
 ---
 # <a name="todotasklist-delta"></a>todoTaskList: delta
 
@@ -55,7 +55,7 @@ GET /users/{id|userPrincipalName}/todo/lists/delta
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 | Content-Type  | string  | application/json. Обязательный. |
 | Prefer | string  | odata.maxpagesize={x}. Необязательный параметр. |
 
@@ -88,7 +88,6 @@ Prefer: odata.maxpagesize=2
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 254
 
 {
   "@odata.deltaLink":"https://graph.microsoft.com/beta/me/todo/lists/delta?$skiptoken=ldfdgdgfoT5csv4k99nvQqyku0jaGqMhc6XyFff5qQTQ7RJOr",

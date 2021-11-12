@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b55a819c1843df47a3ab1c0f4d09a0c319719b0e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f288d91c5b567e2f7129b53b2a2274a622b5e1c5
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056705"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940807"
 ---
 # <a name="domain-verify"></a>domain: verify
 
@@ -44,7 +44,7 @@ POST /domains/{id}/verify
 
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный.|
+| Авторизация  | Bearer {token}. Обязательный.|
 | Content-Type  | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -93,7 +93,6 @@ POST https://graph.microsoft.com/v1.0/domains/{domain-name}/verify
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 192
 
 {
   "authenticationType": "authenticationType-value",

@@ -2,20 +2,18 @@
 title: Список ежемесячныхPrintUsageByPrinter
 description: Извлечение списка ежемесячных сводок использования печати, сгруппив по принтеру.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 69d8fc406f83b2ec82379767c188594fa4090ab9
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 3aa401a699b7266f3399a995ff0781cc44900f73
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50959597"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937120"
 ---
 # <a name="list-monthlyprintusagebyprinter"></a>Список ежемесячныхPrintUsageByPrinter
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Извлечение списка ежемесячных сводок использования печати, сгруппив по [принтеру.](../resources/printer.md)
 
@@ -46,7 +44,7 @@ GET /reports/monthlyPrintUsageByPrinter
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

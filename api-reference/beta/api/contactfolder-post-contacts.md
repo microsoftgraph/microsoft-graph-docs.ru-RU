@@ -2,15 +2,15 @@
 title: Создание объекта Contact
 description: Добавление контакта в корневую папку с контактами или конечную точку `contacts` другой папки с контактами.
 author: kevinbellinger
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 27e765335b2ae9c4e81668adfb090746773b4282
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 16d301cc1aefbb9a9eaef9871535483571fa39f7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047072"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944867"
 ---
 # <a name="create-contact"></a>Создание объекта Contact
 
@@ -41,7 +41,7 @@ POST /users/{id | userPrincipalName}/contactFolders/{id}/contacts
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -63,7 +63,6 @@ POST /users/{id | userPrincipalName}/contactFolders/{id}/contacts
 ```http
 POST https://graph.microsoft.com/beta/me/contactFolders/{id}/contacts
 Content-type: application/json
-Content-length: 210
 
 {
   "parentFolderId": "parentFolderId-value",
@@ -94,7 +93,7 @@ Content-length: 210
 
 Предоставьте в тексте запроса описание объекта [contact](../resources/contact.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,7 +102,6 @@ Content-length: 210
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 210
 
 {
   "parentFolderId": "parentFolderId-value",

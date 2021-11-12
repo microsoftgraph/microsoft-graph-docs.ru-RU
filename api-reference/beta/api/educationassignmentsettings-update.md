@@ -2,30 +2,30 @@
 title: Обновление educationAssignmentSettings
 description: Обновление свойств объекта educationAssignmentSettings.
 author: dipakboyed
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ec19c4e3f49c5535e6ed5f4eddafbbf21d5428ee
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: af040de0db27907b24d1af427fca0d599347f766
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092520"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60929657"
 ---
 # <a name="update-educationassignmentsettings"></a>Обновление educationAssignmentSettings
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [educationAssignmentSettings.](../resources/educationassignmentsettings.md) Только преподаватели могут обновлять эти параметры.
+Обновление свойств объекта [educationAssignmentSettings.](../resources/educationassignmentsettings.md) Только Учителя могут обновлять эти параметры.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -41,23 +41,23 @@ PATCH /education/classes/{id}/assignmentSettings
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажу представление объекта [educationAssignmentSettings](../resources/educationassignmentsettings.md) в JSON.
+В теле запроса поставляют представление JSON объекта [educationAssignmentSettings.](../resources/educationassignmentsettings.md)
 
-В следующей таблице показаны свойства, необходимые при обновлении [объекта educationAssignmentSettings.](../resources/educationassignmentsettings.md)
+В следующей таблице показаны свойства, необходимые при обновлении [educationAssignmentSettings.](../resources/educationassignmentsettings.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|submissionAnimationDisabled|Boolean|Указывает, будет ли показана анимация поозднения. Значение `true` указывает, что анимация не будет показана. Значение по умолчанию: `false`.|
+|submissionAnimationDisabled|Логическое|Указывает, будет ли показана анимация празднования по очереди. Значение `true` указывает, что анимация не будет показана. Значение по умолчанию — `false`.|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика и обновленный объект `200 OK` [educationAssignmentSettings](../resources/educationassignmentsettings.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и обновленный объект `200 OK` [educationAssignmentSettings](../resources/educationassignmentsettings.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -72,7 +72,6 @@ PATCH /education/classes/{id}/assignmentSettings
 ``` http
 PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignmentSettings
 Content-Type: application/json
-Content-length: 114
 
 {
   "submissionAnimationDisabled": true

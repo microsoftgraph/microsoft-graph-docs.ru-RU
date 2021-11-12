@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 8072a3e4bf80006d4618fd793672ea2247cce51b
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: c0b662d04596b0cae943a5432250280441c4ccbc
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688558"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947680"
 ---
 # <a name="create-privilegedroleassignment"></a>Создание privilegedRoleAssignment
 
@@ -62,7 +62,6 @@ POST /privilegedRoleAssignments
 ```http
 POST https://graph.microsoft.com/beta/privilegedRoleAssignments
 Content-type: application/json
-Content-length: 164
 
 {
   "userId": "userId-value",
@@ -98,7 +97,6 @@ Content-length: 164
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 184
 
 {
   "id": "id-value",

@@ -1,16 +1,16 @@
 ---
 title: Перечисление задач
 description: Извлечение списка **объектов plannerTask,** связанных с объектом plannerPlan.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: ec4a93fce8fb572ea6cb08b05b6bc6ec97e02c61
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5b67d5e547b500b53a7960ae889bddfff15ca016
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037636"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943215"
 ---
 # <a name="list-tasks"></a>Перечисление задач
 
@@ -37,7 +37,7 @@ GET /planner/plans/{plan-id}/tasks
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -91,7 +91,6 @@ GET https://graph.microsoft.com/beta/planner/plans/xqQg5FS2LkCp935s-FIFm2QAFkHM/
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 833
 
 {
   "value": [

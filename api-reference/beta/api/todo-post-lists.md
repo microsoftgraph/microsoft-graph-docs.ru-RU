@@ -1,23 +1,23 @@
 ---
 title: Создание todoTaskList
-description: Создание объекта lists.
+description: Создайте новый объект списков.
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 92242d0973b3d47af0126f6fefb093d258f46d74
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 791e96c2b1f3319853270eb4c2350e761bdeaa9a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874083"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944034"
 ---
 # <a name="create-todotasklist"></a>Создание todoTaskList
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание объекта lists.
+Создайте новый объект списков.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -42,21 +42,21 @@ POST /users/{id|userPrincipalName}/todo/lists
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
-В теле запроса укажу представление объекта [todoTaskList](../resources/todotasklist.md) в JSON.
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем представление JSON объекта [todoTaskList.](../resources/todotasklist.md)
 
 В следующей таблице показаны свойства, необходимые при создании [todoTaskList.](../resources/todotasklist.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Поле, указывающее заголовок списка задач.|
+|displayName|String|Поле, указывающее название списка задач.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `201 Created` [todoTaskList](../resources/todotasklist.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект todoTaskList](../resources/todotasklist.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -71,7 +71,6 @@ POST /users/{id|userPrincipalName}/todo/lists
 ``` http
 POST https://graph.microsoft.com/beta/me/todo/lists
 Content-Type: application/json
-Content-length: 60
 
 {
   "displayName": "Travel items"

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ede7c76c1db63ed0c1c52d4ed7aab4eb6a91561d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 518894d8809bd0ec0d96fa756ce425a811adf8dc
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59083658"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944174"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject: проверка Свойств
 
@@ -79,7 +79,6 @@ POST /directoryObjects/validateProperties
 ``` http
 POST https://graph.microsoft.com/beta/directoryObjects/validateProperties
 Content-type: application/json
-Content-length: 164
 
 {
   "entityType": "Group",
@@ -122,7 +121,6 @@ HTTP/1.1 204 No Content
 ```http
 POST https://graph.microsoft.com/beta/directoryObjects/validateProperties
 Content-type: application/json
-Content-length: 164
 
 {
   "entityType": "Group",

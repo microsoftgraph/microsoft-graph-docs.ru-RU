@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 4202dbcfd268ac7e77a1d6e02865b0ed4a4b2774
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d47c8646cc7455ffebbe43430c36ec3fded43da7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59141412"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60932849"
 ---
 # <a name="create-personresponsibility"></a>Создание personResponsibility
 Пространство имен: microsoft.graph
@@ -41,7 +41,7 @@ POST /users/{id | userPrincipalName}/responsibilities
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -52,7 +52,7 @@ POST /users/{id | userPrincipalName}/responsibilities
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|collaborationTags|Коллекция объектов string|Содержит теги сценариев работы, которые пользователь связал с интересом. Допустимые значения в коллекции: `askMeAbout` , `ableToMentor` , `wantsToLearn` `wantsToImprove` .|
+|collaborationTags|Коллекция String|Содержит теги сценариев работы, которые пользователь связал с интересом. Допустимые значения в коллекции: `askMeAbout` , `ableToMentor` , `wantsToLearn` `wantsToImprove` .|
 |description|String|Описание ответственности.|
 |displayName|String|Содержит удобное имя для ответственности. |
 |вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
@@ -75,7 +75,6 @@ POST /users/{id | userPrincipalName}/responsibilities
 ``` http
 POST https://graph.microsoft.com/beta/me/responsibilities
 Content-Type: application/json
-Content-length: 413
 
 {
   "description": "Member of the Microsoft API Council",

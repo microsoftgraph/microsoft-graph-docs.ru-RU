@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 07c2eb088d37fff469010a6ee27f8670273e604b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: db613228752c4a1fa3fc2f956903c994ba430759
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59079304"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60928305"
 ---
 # <a name="add-named-item-formulalocal"></a>Add Named Item FormulaLocal
 
@@ -68,7 +68,6 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/names/add
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/addFormulaLocal
 Content-type: application/json
-Content-length: 54
 
 {
   "name": "test7",
@@ -105,7 +104,6 @@ Content-length: 54
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 109
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#workbookNamedItem",

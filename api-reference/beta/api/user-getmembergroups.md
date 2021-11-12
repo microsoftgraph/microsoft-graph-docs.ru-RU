@@ -1,16 +1,16 @@
 ---
 title: 'user: getMemberGroups'
 description: Возвращает все группы, в которых состоит пользователь. Это промежуточная проверка, в отличие от считывания
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 77f676211623d9077e882f7e12bb70c843b4d88e
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 1d3fec3dafec2e6e7240b619ea7e6362c9e912ce
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58452766"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937652"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 
@@ -20,7 +20,7 @@ ms.locfileid: "58452766"
 
 Возвращение всех названий групп, в которых состоит пользователь. Проверка промежуточная, в отличие от считывания свойства навигации [memberOf](../api/user-list-memberof.md) (возвращаются только группы, для которых пользователь является непосредственным членом).
 
-Эта функция поддерживает Microsoft 365 и другие типы групп, которые были предусмотрены в Azure AD. Максимальное число групп, которые может вернуться каждый запрос, — 11000. Обратите внимание, Microsoft 365 группы не могут содержать группы. Поэтому членство в Microsoft 365 всегда является прямым.
+Эта функция поддерживает Microsoft 365 и другие типы групп, подготовленных к работе в Azure AD. Максимальное количество групп, которые может вернуть каждый запрос — 11000. Обратите внимание, что компонент "Группы Microsoft 365" не может содержать группы. Следовательно, участие в группе Microsoft 365 всегда является прямым.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -44,7 +44,7 @@ POST /users/{id | userPrincipalName}/getMemberGroups
 
 | Заголовок        | Значение                     |
 | :------------ | :------------------------ |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json          |
 
 ## <a name="request-body"></a>Текст запроса
@@ -77,7 +77,6 @@ POST /users/{id | userPrincipalName}/getMemberGroups
 ```http
 POST https://graph.microsoft.com/beta/me/getMemberGroups
 Content-type: application/json
-Content-length: 33
 
 {
   "securityEnabledOnly": true
@@ -116,7 +115,6 @@ Content-length: 33
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
 
 {
   "value": [

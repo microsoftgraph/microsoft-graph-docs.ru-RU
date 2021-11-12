@@ -1,18 +1,18 @@
 ---
 title: Создание identityProvider
 description: Создание нового объекта identityProvider.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 5fe99410b965f6cabae171c713a7207fc2c7ea18
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 58796dbc557559e9a9d35d007782e5f4ba2048e5
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508836"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947715"
 ---
-# <a name="create-identityprovider-deprecated"></a>Создание identityProvider (обесценилось)
+# <a name="create-identityprovider-deprecated"></a>Создание identityProvider (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -29,7 +29,7 @@ ms.locfileid: "51508836"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение|IdentityProvider.ReadWrite.All|
+|Для приложений|IdentityProvider.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 * Глобальный администратор
@@ -47,7 +47,7 @@ POST /identityProviders
 
 |Имя|Описание|
 |:---------------|:----------|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -72,7 +72,7 @@ POST /identityProviders
 |name|String|Отображаемое имя поставщика удостоверений.|
 |type|String|Тип поставщика удостоверений Значение должно быть `OpenIdConnect` .|
 |claimsMapping|[claimsMapping](../resources/claimsmapping.md)|Свойства `userId` и свойства необходимы в `displayname` объекте claimsMapping.|
-|metadataUrl|String|URL-адрес документа метаданных поставщика удостоверений Open Id Connect.|
+|metadataUrl|String|URL-адрес для документа метаданных поставщика удостоверений Open Id Подключение идентификатора.|
 |responseMode|String|Определяет метод, который следует использовать для отправки данных от поставщика пользовательских удостоверений в Azure AD B2C. Можно использовать следующие режимы ответа: <ul><li/>`form_post` . Этот режим ответа рекомендуется для лучшей безопасности. Ответ передается методом HTTP POST, код или маркер кодируются в теле с помощью формата application/x-www-form-urlencoded.<li/>`query` Код или маркер возвращаются в качестве параметра запроса.</ul>|
 |responseType|String|Описывает, какие сведения отправляются в исходном вызове в authorization_endpoint поставщика пользовательских удостоверений. Можно использовать следующие типы ответов:<ul><li/> `code` . В результате потока кода авторизации код возвращается обратно в Azure AD B2C. Azure AD B2C продолжает вызывать token_endpoint, чтобы обменять код на маркер.<li/> `id_token` . Маркер ID возвращается обратно в Azure AD B2C от настраиваемого поставщика удостоверений. <li/>`token` . Маркер доступа возвращается обратно в Azure AD B2C от настраиваемого поставщика удостоверений. (На данный момент это значение не поддерживается Azure AD B2C)</ul>|
 |scope|String|Область определяет сведения и разрешения, которые вы хотите получить от настраиваемого поставщика удостоверений.|
@@ -98,7 +98,6 @@ POST /identityProviders
 ``` http
 POST https://graph.microsoft.com/beta/identityProviders
 Content-type: application/json
-Content-length: 154
 
 {
   "@odata.type": "microsoft.graph.identityProvider",

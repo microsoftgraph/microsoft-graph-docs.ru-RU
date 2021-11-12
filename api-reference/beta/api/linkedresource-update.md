@@ -2,15 +2,15 @@
 title: Обновление linkedResource
 description: Обновление свойств объекта linkedResource.
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 498c791bde804df7dd761cb9a25037d13c8be510
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 04ebb61322b757f6f4c1a72d6d17f2644a29a946
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873705"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945455"
 ---
 # <a name="update-linkedresource"></a>Обновление linkedResource
 Пространство имен: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -40,21 +40,21 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/l
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
-В теле запроса укажу представление объекта [linkedResource](../resources/linkedresource.md) в JSON.
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем представление JSON объекта [linkedResource.](../resources/linkedresource.md)
 
 В следующей таблице показаны свойства, необходимые при обновлении [linkedResource.](../resources/linkedresource.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Созданный сервером ИД для связанного объекта Inherited from [entity](../resources/entity.md)|
+|id|String|Server generated Id for the linked entity Inherited from [entity](../resources/entity.md)|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [linkedResource](../resources/linkedresource.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект linkedResource](../resources/linkedresource.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -70,7 +70,6 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/l
 ``` http
 PATCH https://graph.microsoft.com/beta/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks/e2dc-f9cce2-dce29/linkedResources/f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9
 Content-Type: application/json
-Content-length: 166
 
 {
   "@odata.type": "#microsoft.graph.linkedResource",

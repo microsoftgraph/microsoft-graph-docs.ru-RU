@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d1351e925028c9ce620347cb27c9bb82957cc59e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dd8563abbd22ff2e6ab3b3b36708ed54a3580e13
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147789"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924787"
 ---
 # <a name="get-contact"></a>Вывод контакта
 
@@ -59,9 +59,9 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -107,7 +107,6 @@ GET https://graph.microsoft.com/v1.0/me/contacts/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1977
 
 {
   "id": "AAMkAGI2THk0AAA=",

@@ -2,15 +2,15 @@
 title: Обновление свойств educationclass
 description: Обновление свойств курса.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 425d2072e13dbf00d8fc2e81b94cf7da58df8c57
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e30b27e86f107c28313887ec9ed9158421536df7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043733"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942354"
 ---
 # <a name="update-educationclass-properties"></a>Обновление свойств educationclass
 
@@ -37,7 +37,7 @@ PATCH /education/classes/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -67,7 +67,6 @@ PATCH /education/classes/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/education/classes/11014
 Content-type: application/json
-Content-length: 224
 
 {
   "description": "History - World History 1",
@@ -105,7 +104,6 @@ Content-length: 224
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 224
 
 {
   "id": "11014",

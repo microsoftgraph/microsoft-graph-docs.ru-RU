@@ -1,16 +1,16 @@
 ---
 title: Список directReports
 description: Получите прямые отчеты контакта.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1d294f80b8bf1e55e1575490fb1b888e78afbd47
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: f840b89f1bfe3182f7eb91e112d5beb79b3ac966
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761634"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944475"
 ---
 # <a name="list-directreports"></a>Список directReports
 
@@ -23,9 +23,9 @@ ms.locfileid: "50761634"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | OrgContact.Read.All и Group.Read.All, Directory.Read.All  |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | OrgContact.Read.All и Group.Read.All, Directory.Read.All |
+|Делегированные (рабочая или учебная учетная запись) | OrgContact.Read.All и Group.Read.All, Directory.Read.All  |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | OrgContact.Read.All и Group.Read.All, Directory.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -40,7 +40,7 @@ GET /contacts/{id}/directReports
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:-----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/v1.0/contacts/{id}/directReports
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 455
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects/$entity",

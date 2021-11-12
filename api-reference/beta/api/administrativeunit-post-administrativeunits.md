@@ -2,15 +2,15 @@
 title: Создание administrativeUnit
 description: Используйте этот API для создания нового администратораUnit.
 author: DougKirschner
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c363c5a387cbc0824b558cebfc03732cdf8fccb3
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 20c134dfcbce5a71ef74a2d0c6e8328e7313a542
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52991928"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939982"
 ---
 # <a name="create-administrativeunit"></a>Создание administrativeUnit
 
@@ -27,7 +27,7 @@ ms.locfileid: "52991928"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | AdministrativeUnit.ReadWrite.All |
+|Для приложений | AdministrativeUnit.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ POST /administrativeUnits
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -64,7 +64,6 @@ POST /administrativeUnits
 ```http
 POST https://graph.microsoft.com/beta/administrativeUnits
 Content-type: application/json
-Content-length: 150
 
 {
     "displayName": "Seattle District Technical Schools",
@@ -104,7 +103,6 @@ Content-length: 150
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 172
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#administrativeUnits/$entity",

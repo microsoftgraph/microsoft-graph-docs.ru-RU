@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: deea9748828a464d87b045002bd6dc9c53c861a4
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 5bb1cdd51412670cebceb2deb6e0fc9a8c97eb57
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59508035"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60928544"
 ---
 # <a name="create-cloudpcusersetting"></a>Создание cloudPcUserSetting
 
@@ -28,7 +28,7 @@ ms.locfileid: "59508035"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|CloudPC.ReadWrite.All|
+|Для приложений|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ POST /deviceManagement/virtualEndpoint/userSettings
 
 | Имя          | Описание                |
 | :------------ | :------------------------  |
-| Авторизация | Bearer {токен}. Обязательный.  |
+| Авторизация | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,8 +57,8 @@ POST /deviceManagement/virtualEndpoint/userSettings
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|String|Имя параметра, которое отображается в пользовательском интерфейсе. |
-|localAdminEnabled|Логический|Чтобы включить локальный параметр администрирования, измените этот параметр на `True` .  |
-|selfServiceEnabled|Логический|Чтобы включить параметр самообслуживки, измените этот параметр на `True` . |
+|localAdminEnabled|Логическое|Чтобы включить локальный параметр администрирования, измените этот параметр на `True` .  |
+|selfServiceEnabled|Логическое|Чтобы включить параметр самообслуживки, измените этот параметр на `True` . |
 |lastModifiedDateTime|DateTimeOffset|Последняя дата и время изменения параметра. Тип Timestamp представляет сведения о дате и времени с помощью формата ISO 8601 и всегда находится во времени UTC. Например, полночь UTC 1 января 2014 г. выглядит так: '2014-01-01T00:00:00Z'. |
 
 ## <a name="response"></a>Отклик
@@ -78,7 +78,6 @@ POST /deviceManagement/virtualEndpoint/userSettings
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/userSettings
 Content-Type: application/json
-Content-length: 159
 
 {
   "@odata.type": "#microsoft.graph.cloudPcUserSetting",

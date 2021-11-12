@@ -2,20 +2,18 @@
 title: Get printUsageByUser
 description: Извлечение сводки об использовании пользователя за определенный период времени.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 10a3ee5b83d2f07d9b2407f26f3b7fa210786a1c
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: f1eed49143b2fd39654787482c7c543bb99e7e45
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774407"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940541"
 ---
 # <a name="get-printusagebyuser"></a>Get printUsageByUser
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Извлечение сводки об использовании пользователя за определенный период времени. Описание каждой конечной точки см. в [printUsageByUser.](../resources/printUsageByUser.md)
 
@@ -47,7 +45,7 @@ GET /reports/monthlyPrintUsageByUser/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

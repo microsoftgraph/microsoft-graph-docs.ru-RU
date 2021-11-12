@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 750be9d2841bb7b9fc60440b1658f55937c0c129
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 397c71e05c90999b0f20090b536ccc25f52bd7a8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59087445"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942221"
 ---
 # <a name="update-itempublication"></a>Обновление itemPublication
 
@@ -42,7 +42,7 @@ PATCH /users/{id | userPrincipalName}/profile/publications/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -77,7 +77,6 @@ PATCH /users/{id | userPrincipalName}/profile/publications/{id}
 ``` http
 PATCH https://graph.microsoft.com/beta/users/{userId}/profile/publications/{id}
 Content-Type: application/json
-Content-length: 497
 
 {
   "publisher": "International Association of Branding Management Publishing",

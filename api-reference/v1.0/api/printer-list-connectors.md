@@ -2,20 +2,18 @@
 title: Список printConnectors для принтера
 description: Извлечение списка соединитений, связанных с принтером.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: b1b1acb6a0f998d272d04eef43e94a3ddfd92016
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 258001317eff1c003107cd023bd04dbb09d9b893
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956333"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937190"
 ---
 # <a name="list-printconnectors-for-a-printer"></a>Список printConnectors для принтера
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Извлечение списка [printConnectors,](../resources/printconnector.md) связанных с [принтером.](../resources/printer.md)
 
@@ -46,7 +44,7 @@ GET /print/printers/{printerId}/connectors
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

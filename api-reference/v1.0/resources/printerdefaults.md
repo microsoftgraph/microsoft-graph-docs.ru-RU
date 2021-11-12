@@ -2,21 +2,19 @@
 title: тип ресурса printerDefaults
 description: Представляет параметры принтера по умолчанию. Проверьте возможности принтера, чтобы увидеть все поддерживаемые значения.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: c3e71186ff65490e31b711ff4c05788afd565cee5c87ea225985c3ec464aaa5d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4a76d1590cc6b180786d48e889796769b0de2c2b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54138467"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936980"
 ---
 # <a name="printerdefaults-resource-type"></a>тип ресурса printerDefaults
 
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Представляет параметры принтера по умолчанию. Проверьте возможности [принтера,](printercapabilities.md) чтобы увидеть все поддерживаемые значения.
 
@@ -32,7 +30,7 @@ ms.locfileid: "54138467"
 |pagesPerSheet|Int32|Число страниц документов по умолчанию для печати на каждом листе.
 |orientation|[printOrientation](enums.md#printorientation-values)|Ориентация по умолчанию, используемая при печати документа. Допустимые значения описаны в следующей таблице.|
 |outputBin|String|Ячейка вывода по умолчанию для того, чтобы разместить завершенные отпечатки. См. возможности [принтера для](printercapabilities.md) списка поддерживаемых бункеров выходных данных.|
-|fitPdfToPage|Логический|Параметр fitPdfToPage по умолчанию. True, чтобы поместить каждую страницу документа PDF в физический лист мультимедиа; false, чтобы принтер решил, как выкладывать впечатления.|
+|fitPdfToPage|Логическое|Параметр fitPdfToPage по умолчанию. True, чтобы поместить каждую страницу документа PDF в физический лист мультимедиа; false, чтобы принтер решил, как выкладывать впечатления.|
 |multipageLayout|[printMultipageLayout](enums.md#printmultipagelayout-values)|Направление по умолчанию для выкладки страниц при печати нескольких страниц на листе. Допустимые значения описаны в следующей таблице.|
 |colorMode|[printColorMode](enums.md#printcolormode-values)|Цветной режим по умолчанию, который используется при печати документа. Допустимые значения описаны в следующей таблице.|
 |качество|[printQuality](enums.md#printquality-values)|Качество по умолчанию, используемая при печати документа. Допустимые значения описаны в следующей таблице.|

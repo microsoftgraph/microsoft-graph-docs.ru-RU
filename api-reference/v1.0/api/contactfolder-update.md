@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c0b67c1b74ae7d5b429eec5c8636e0ad27618ca6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a3ffc3c932ca0510b7ed9574ac27d64eaa2057b5
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147733"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937400"
 ---
 # <a name="update-contactfolder"></a>Обновление объекта contactFolder
 
@@ -35,7 +35,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -61,7 +61,6 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/contactFolders/{id}
 Content-type: application/json
-Content-length: 84
 
 {
   "parentFolderId": "parentFolderId-value",
@@ -96,7 +95,6 @@ Content-length: 84
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 104
 
 {
   "parentFolderId": "parentFolderId-value",

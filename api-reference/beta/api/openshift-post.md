@@ -1,16 +1,16 @@
 ---
 title: Создание openShift
 description: Создайте экземпляр объекта openshift.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 313c5a8ecdd940d9811dab653152e04ad15c59f4
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b23dd01f15567ab3e221c5c70a01bab0393ada70
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052091"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60934065"
 ---
 # <a name="create-openshift"></a>Создание openShift
 
@@ -42,7 +42,7 @@ POST /teams/{id}/schedule/openShifts
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -66,7 +66,6 @@ POST /teams/{id}/schedule/openShifts
 POST https://graph.microsoft.com/beta/teams/788b75d2-a911-48c0-a5e2-dc98480457e3/schedule/openshifts
 Authorization: Bearer {token}
 Content-type: application/json
-Content-length: 244
 
 {
    "id":"OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",

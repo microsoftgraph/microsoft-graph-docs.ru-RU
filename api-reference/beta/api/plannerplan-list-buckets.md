@@ -1,16 +1,16 @@
 ---
 title: Перечисление сегментов
 description: Получение списка объектов **plannerbucket**, содержащихся в объекте plannerPlan.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 270bcbc548da47b7b3498e3f6fc6eb663284b0e5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: fdc64c7b84ff67290abd1bb5aca2058b51868bb4
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052042"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939398"
 ---
 # <a name="list-buckets"></a>Перечисление сегментов
 
@@ -37,7 +37,7 @@ GET /planner/plans/{plan-id}/buckets
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/planner/plans/2txjA-BMZEq-bKi6Wfj5aGQAB1OJ/
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 251
 
 {
   "value": [

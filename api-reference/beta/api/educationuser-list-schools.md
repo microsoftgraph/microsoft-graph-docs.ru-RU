@@ -2,15 +2,15 @@
 title: Перечисление учебных заведений
 description: Получение списка учебных заведений для этого пользователя.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b2b351a130dcb33c4e4f94c33edb31104f0714b8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3cd5bb8374cfaa73648318bc9a403c29352a91d2
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042711"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935944"
 ---
 # <a name="list-schools"></a>Перечисление учебных заведений
 
@@ -50,7 +50,7 @@ GET /education/users/{id}/schools
 
 | Заголовок        | Значение                     |
 | :------------ | :------------------------ |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -114,7 +114,6 @@ GET https://graph.microsoft.com/beta/education/me/schools
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 345
 
 {
   "value": [

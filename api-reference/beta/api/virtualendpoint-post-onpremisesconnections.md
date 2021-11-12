@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 6562bfb388a9bcb3997e36cea1ac02bd0043375e
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 4c8b32b7d9f9321024f02c8ec2416e0fa825099a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59763102"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944020"
 ---
 # <a name="create-cloudpconpremisesconnection"></a>Создание cloudPcOnPremisesConnection
 
@@ -45,7 +45,7 @@ POST /deviceManagement/virtualEndpoint/onPremisesConnections
 
 | Имя          | Описание                |
 | :------------ | :------------------------  |
-| Авторизация | Bearer {токен}. Обязательный.  |
+| Авторизация | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -56,12 +56,12 @@ POST /deviceManagement/virtualEndpoint/onPremisesConnections
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя отображения локального подключения.|
+|displayName|String|Имя отображения локального подключения.|
 |subscriptionId|String|ID целевой подписки Azure, связанной с клиентом.|
 |adDomainName|String|Полное доменное имя домена (FQDN) домена Active Directory, к нему необходимо присоединиться.|
 |adDomainUsername|String|Имя пользователя учетной записи Active Directory (учетная запись пользователя или службы), которая имеет разрешения на создание компьютерных объектов в Active Directory. Необходимый формат: admin@contoso.com.|
 |adDomainPassword|String|Пароль, связанный с adDomainUsername.|
-|resourceGroupId|Строка|ID целевой группы ресурсов. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
+|resourceGroupId|String|ID целевой группы ресурсов. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
 |virtualNetworkId|String|ID целевой виртуальной сети. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
 |subnetId|String|ID целевой подсети. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
 
@@ -84,7 +84,6 @@ POST /deviceManagement/virtualEndpoint/onPremisesConnections
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections
 Content-Type: application/json
-Content-length: 800
 
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
@@ -131,7 +130,6 @@ Content-length: 800
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-length: 897
 
 {
   "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",

@@ -1,16 +1,16 @@
 ---
 title: Создание educationCategory
 description: Создает новую категорию.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 943cf7abbd9a91e10249f6cafd675e6844d5b1e9
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 22d4fe99dca9b7fccfca08f39edd8b2e500a509f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52992350"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925484"
 ---
 # <a name="create-educationcategory"></a>Создание educationCategory
 
@@ -38,7 +38,7 @@ POST /education/classes/{id}/assignmentCategories
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -61,7 +61,6 @@ POST /education/classes/{id}/assignmentCategories
 ```http
 POST https://graph.microsoft.com/beta/education/classes/9a5e4047-c1dc-4243-9628-580d3c64b80c/assignmentCategories
 Content-type: application/json
-Content-length: 33
 
 { 
   "displayName": "Quizzes"
@@ -100,7 +99,6 @@ Content-length: 33
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 85
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('9a5e4047-c1dc-4243-9628-580d3c64b80c')/assignmentCategories/$entity",

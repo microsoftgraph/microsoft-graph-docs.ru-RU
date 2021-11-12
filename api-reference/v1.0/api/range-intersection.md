@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5e7a77899555b62a0c6067db51cb92c3f360de06
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: aea2c712cca402224f6b9d228fbd3aae3fb7478a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022039"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945819"
 ---
 # <a name="range-intersection"></a>Range: Intersection
 
@@ -66,7 +66,6 @@ GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ran
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/intersection
 Content-type: application/json
-Content-length: 42
 
 {
   "anotherRange": "anotherRange-value"
@@ -83,7 +82,6 @@ Content-length: 42
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
 
 {
   "address": "address-value",

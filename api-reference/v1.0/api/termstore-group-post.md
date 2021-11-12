@@ -5,12 +5,12 @@ author: vishriv
 ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 4e0a9a5a3228f4e45561cdd54bdbebc696ab89f2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ff08b50016ff40065ec09c462f6f14bd6d8face4
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104637"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947453"
 ---
 # <a name="create-termstore-group"></a>Создание группы termStore
 Пространство имен: microsoft.graph.termStore
@@ -40,17 +40,17 @@ POST sites/{site-id}/termStore/groups
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляют представление JSON [группового](../resources/termstore-group.md) объекта.
+В тексте запроса предоставьте описание объекта [group](../resources/termstore-group.md) в формате JSON.
 
 В следующей таблице показаны свойства, необходимые при создании [группового](../resources/termstore-group.md) объекта.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя создаемой группы.|
+|displayName|String|Имя создаемой группы.|
 
 
 
@@ -69,7 +69,6 @@ POST sites/{site-id}/termStore/groups
 ``` http
 POST https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/groups
 Content-Type: application/json
-Content-length: 135
 
 {
   "displayName" : "myGroup"

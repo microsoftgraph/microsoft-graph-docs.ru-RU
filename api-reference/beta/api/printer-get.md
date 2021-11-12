@@ -2,15 +2,15 @@
 title: Получение принтера
 description: Извлечение свойств и связей объекта принтера.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 00cdebef99cc27de862b88768c725dd5e0a92372
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 66febe3894d8b390891be099d1a83a1648f7f4fa
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049137"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941990"
 ---
 # <a name="get-printer"></a>Получение принтера
 
@@ -29,7 +29,7 @@ ms.locfileid: "52049137"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| Printer.Read.All, Printer.ReadWrite.All |
+|Для приложений| Printer.Read.All, Printer.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ GET /print/printers/{id}?$select=id,displayName,capabilities
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -97,7 +97,6 @@ GET https://graph.microsoft.com/beta/print/printers/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1313
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers/$entity",
@@ -177,7 +176,6 @@ Content-length: 1313
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1313
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers/$entity",

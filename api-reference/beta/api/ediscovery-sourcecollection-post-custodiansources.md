@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 0f8830b7fe71e297cbbf4b3d470259b83e3e8125
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a4c7562e66d6c41bc7507d1178573ab6c2bd4ec7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59996655"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936847"
 ---
 # <a name="add-custodiansources"></a>Добавление custodianSources
 
@@ -45,10 +45,10 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса поставляем представление JSON объекта [dataSource.](../resources/ediscovery-datasource.md)
 
@@ -56,7 +56,7 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|@odata.id|Строка|Строка, определяемая объектом custodial. См. пример, который следует.|
+|@odata.id|String|Строка, определяемая объектом custodial. См. пример, который следует.|
 
 ## <a name="response"></a>Отклик
 
@@ -77,7 +77,6 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/sourceCollections/1a9b4145d8f84e39bc45a7f68c5c5119/custodianSources/$ref
 Content-Type: application/json
-Content-length: 179
 
 {
   "@odata.id":"https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/custodians/ab3a628a383045eba344b3caecba3104/userSources/31423539-3846-4333-4136-353644383531"

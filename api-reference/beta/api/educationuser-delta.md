@@ -1,16 +1,16 @@
 ---
 title: 'educationUser: delta'
 description: Получите новых или обновленных пользователей, не выполняя полное чтение всей коллекции пользователей.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7477bea6eeb01e74cb824a7d31b0cc5dba3161ef
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2025c7272f54b635c290c6e5c18a8ee5d772a8d6
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042928"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944853"
 ---
 # <a name="educationuser-delta"></a>educationUser: delta
 
@@ -108,7 +108,6 @@ GET https://graph.microsoft.com/beta/education/users/delta
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1039
 
 {
   "value": [
