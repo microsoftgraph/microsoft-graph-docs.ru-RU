@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 52c39a44b0720fc3410eca15eae84a1403e524f5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 879e63c92cf4be732fa771945e3f46b42811e232
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104623"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946932"
 ---
 # <a name="update-todotasklist"></a>Обновление todoTaskList
 Пространство имен: microsoft.graph
@@ -40,7 +40,7 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -50,7 +50,7 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Поле, указывающее обновленное название списка задач.|
+|displayName|String|Поле, указывающее обновленное название списка задач.|
 
 
 
@@ -73,7 +73,6 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 ``` http
 PATCH https://graph.microsoft.com/v1.0/me/todo/lists/AAMkADIyAAAhrbPWAAA=
 Content-Type: application/json
-Content-length: 167
 
 {
   "displayName": "Vacation Plan"

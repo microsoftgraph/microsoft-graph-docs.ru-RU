@@ -5,12 +5,12 @@ author: ArvindHarinder1
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: f3db21462738b29393c46dab6fa8823562ce7c77
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 877d081a89695359f52fa128dbf7116ab2e2cfec
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59040928"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926366"
 ---
 # <a name="synchronizationjob-provisionondemand"></a>синхронизацияJob: provisionOnDemand
 
@@ -40,7 +40,7 @@ POST /servicePrincipals/{servicePrincipalsId}/synchronization/jobs/{synchronizat
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -71,7 +71,6 @@ POST /servicePrincipals/{servicePrincipalsId}/synchronization/jobs/{synchronizat
 ``` http
 POST https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalsId}/synchronization/jobs/{synchronizationJobId}/provisionOnDemand
 Content-Type: application/json
-Content-length: 122
 
 {
     "parameters": [{

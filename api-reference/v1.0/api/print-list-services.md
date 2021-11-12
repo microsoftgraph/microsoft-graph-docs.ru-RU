@@ -2,20 +2,18 @@
 title: PrintServices списка
 description: Извлечение списка объектов printService, которые представляют службы, доступные вашему клиенту.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 72bc0f46df6eccd5462a776f0d38aa70175ab6f0
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: a290d7c72a13ff83fc08f038793cd8a1738a63c3
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777217"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60928083"
 ---
 # <a name="list-printservices"></a>PrintServices списка
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Извлечение списка **объектов printService,** которые представляют службы, доступные вашему клиенту.
 
@@ -38,7 +36,7 @@ GET /print/services
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

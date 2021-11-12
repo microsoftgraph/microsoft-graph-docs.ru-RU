@@ -2,15 +2,15 @@
 title: 'groupLifecyclePolicy: removeGroup'
 description: Удаляет группу из политики жизненного цикла.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e081dcbfa268999598c8cfa13b4cd1acd53ec6ee
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: 1148d0b25130f46bc28dcc9f4742ffd0b893f343
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53316673"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926870"
 ---
 # <a name="grouplifecyclepolicy-removegroup"></a>groupLifecyclePolicy: removeGroup
 
@@ -41,7 +41,7 @@ POST /groupLifecyclePolicies/{id}/removeGroup
 
 | Имя | Описание |
 |:---------------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ POST /groupLifecyclePolicies/{id}/removeGroup
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `200 OK`. Если группа удалена из политики, в теле ответа возвращается `true` значение. В противном `false` случае в теле ответа возвращается значение.
+В случае успешного выполнения этот метод возвращает код отклика `200 OK`. Если группа удалена из политики, в теле ответа возвращается `true` значение. В противном `false` случае в теле ответа возвращается значение.
 
 ## <a name="example"></a>Пример
 
@@ -66,7 +66,6 @@ POST /groupLifecyclePolicies/{id}/removeGroup
 ```http
 POST https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}/removeGroup
 Content-type: application/json
-Content-length: 57
 
 {
   "groupId": "ffffffff-ffff-ffff-ffff-ffffffffffff"
@@ -79,7 +78,6 @@ Content-length: 57
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 21
 
 {
   "value": true

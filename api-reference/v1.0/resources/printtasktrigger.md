@@ -2,21 +2,19 @@
 title: тип ресурса printTaskTrigger
 description: Определяет условия, при которых будет выполнен новый printTask на основе связанного печатиTaskDefinition.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: ca4c5081521c2cbfd6e5ac4185548507f98e577ed2a590ded43d5788dde6cd9f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b458b99c08a945198ddd1cd21678e0513a85a8b5
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218424"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944258"
 ---
 # <a name="printtasktrigger-resource-type"></a>тип ресурса printTaskTrigger
 
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Определяет условие, при котором будет запускаться новый [printTask](printtask.md) на основе связанного с ним [принтаTaskDefinition.](printtaskdefinition.md)
 
@@ -26,7 +24,7 @@ ms.locfileid: "54218424"
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
 | [Список](../api/printer-list-tasktriggers.md) | [printTaskTrigger](printtasktrigger.md) collection | Получите список printTaskTriggers, связанных с определенным [принтером.](printer.md) |
-| [Получение](../api/printtasktrigger-get.md) | [printTaskTrigger](printtasktrigger.md) | Получите печатьTaskTrigger, связанную с определенным [printTask.](printtask.md) |
+| [Получение](../api/printtasktrigger-get.md); | [printTaskTrigger](printtasktrigger.md) | Получите печатьTaskTrigger, связанную с определенным [printTask.](printtask.md) |
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|

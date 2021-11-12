@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: df52eb8c578ed5a8dd6741cb2263ff1a307e44b5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3eddbcad2a944fe7977faec4bfd3572c9b1465fe
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59033023"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931891"
 ---
 # <a name="directoryobject-getavailableextensionproperties"></a>directoryObject: getAvailableExtensionProperties
 Пространство имен: microsoft.graph
@@ -39,7 +39,7 @@ POST /directoryObjects/getAvailableExtensionProperties
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -69,7 +69,6 @@ POST /directoryObjects/getAvailableExtensionProperties
 ``` http
 POST https://graph.microsoft.com/v1.0/directoryObjects/getAvailableExtensionProperties
 Content-Type: application/json
-Content-length: 43
 
 {
   "isSyncedFromOnPremises": "Boolean"

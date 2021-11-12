@@ -2,20 +2,18 @@
 title: Создание printJob для принтераShare
 description: Создайте новый printJob для принтераShare.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 18852d96fe1ba37447c600b20895359584b3580a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: e7ac6998ebd6f7757f5dde871d65191e9a3a38ed
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50959652"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937169"
 ---
 # <a name="create-printjob-for-a-printershare"></a>Создание printJob для принтераShare
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Создайте новый [printJob](../resources/printJob.md) для [принтераShare](../resources/printerShare.md). 
 
@@ -45,7 +43,7 @@ POST /print/shares/{printerShareId}/jobs
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -70,7 +68,6 @@ POST /print/shares/{printerShareId}/jobs
 ``` http
 POST https://graph.microsoft.com/v1.0/print/shares/{printerShareId}/jobs
 Content-Type: application/json
-Content-length: 376
 
 {
   "configuration": {

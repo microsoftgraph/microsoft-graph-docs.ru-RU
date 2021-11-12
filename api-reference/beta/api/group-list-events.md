@@ -2,15 +2,15 @@
 title: Список событий
 description: Получение списка, включающего объекты событий.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 288e27f787785ef6f701683ce54f16f2d07dc4c4
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: c13d7bb612e9c4ebf4866c3c9d71a85b6fba08ec
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681615"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939562"
 ---
 # <a name="list-events"></a>Перечисление событий
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/events
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -95,7 +95,6 @@ GET https://graph.microsoft.com/beta/groups/{id}/events
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 354
 
 {
   "value": [

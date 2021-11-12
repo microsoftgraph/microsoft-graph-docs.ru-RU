@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a1e293f51579a0e72e069c57279479d6a73bff7c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 931ed73c65cc328075049c240309f4d7c3188222
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099281"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943621"
 ---
 # <a name="create-linkedresource"></a>Создание linkedResource
 Пространство имен: microsoft.graph
@@ -42,7 +42,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/li
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -52,7 +52,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/li
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Server generated Id for the linked entity Inherited from [entity](../resources/entity.md)|
+|id|String|Server generated Id for the linked entity Inherited from [entity](../resources/entity.md)|
 |webUrl|String|Deeplink to the linked entity |
 |applicationName|String|Поле, указывающее имя приложения источника, отправляемого связанной сущности |
 |displayName|String|Поле, указывающее заголовок связанного объекта. |
@@ -79,7 +79,6 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/li
 ``` http
 POST https://graph.microsoft.com/v1.0/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks/e2dc-f9cce2-dce29/linkedResources
 Content-Type: application/json
-Content-length: 166
 
 {
   "webUrl": "https://microsoft.com",

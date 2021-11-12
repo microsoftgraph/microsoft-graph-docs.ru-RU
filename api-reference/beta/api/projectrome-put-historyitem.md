@@ -1,24 +1,24 @@
 ---
-title: Создание или замена объекта historyItem
-description: Создание нового или замена существующего элемента журнала для существующего действия пользователя.
-localization_priority: Normal
+title: Создание или замена historyItem
+description: Создайте новый элемент или замените существующий элемент истории для существующей активности пользователя.
+ms.localizationpriority: medium
 ms.prod: project-rome
 doc_type: apiPageType
 author: ailae
-ms.openlocfilehash: 9fce32cfadb8f8920d830342a5ba5bd47d91c13c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8d8601b4db09d200b0dd8e893c88e173afeb0d0e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47999183"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935356"
 ---
-# <a name="create-or-replace-a-historyitem"></a>Создание или замена объекта historyItem
+# <a name="create-or-replace-a-historyitem"></a>Создание или замена historyItem
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового или замена существующего элемента журнала для существующего действия пользователя.
+Создайте новый элемент или замените существующий элемент истории для существующей активности пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -39,21 +39,21 @@ ms.locfileid: "47999183"
 PUT /me/activities/{id}/historyItems/{id}
 ```
 
-Идентификатор должен быть идентификатором GUID.
+Id должен быть GUID.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 |Имя | Тип | Описание|
 |:----|:-----|:-----------|
-|Authorization | string | Bearer {токен}. Обязательный.|
+|Authorization | string | Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [historyItem](../resources/projectrome-historyitem.md) в формате JSON.
+В теле запроса поставляем представление JSON объекта [historyItem.](../resources/projectrome-historyitem.md)
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика, если был создан historyItem, или `200 OK` Если historyItem был заменен.
+В случае успешной работы этот метод возвращает код ответа, если был создан `201 Created` historyItem или заменен `200 OK` historyItem.
 
 ## <a name="example"></a>Пример
 
@@ -69,7 +69,6 @@ PUT /me/activities/{id}/historyItems/{id}
 ```http
 PUT https://graph.microsoft.com/beta/me/activities/13881113971988980728/historyItems/390e06e2-7e5b-4133-8014-fac7ac5991af
 Content-type: application/json
-Content-length: 364
 
 {
     "startedDateTime": "2015-02-11T20:54:04.3457274+00:00",

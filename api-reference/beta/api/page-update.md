@@ -1,16 +1,16 @@
 ---
 title: Обновление страницы
 description: Обновление содержимого OneNote страницы.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: f6f0fb24188beb64502d2ef91c389f66677465fe
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 27fc7d07eb61b050f7ec969b948d823a658ff904
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52785139"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935706"
 ---
 # <a name="update-page"></a>Обновление страницы
 
@@ -39,7 +39,7 @@ PATCH /sites/{id}/onenote/pages/{id}/content
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
@@ -47,7 +47,7 @@ PATCH /sites/{id}/onenote/pages/{id}/content
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `204 No Content`.  Данные JSON не возвращаются по PATCH-запросу.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.  Данные JSON не возвращаются по PATCH-запросу.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -60,7 +60,6 @@ PATCH /sites/{id}/onenote/pages/{id}/content
 ```http
 PATCH https://graph.microsoft.com/beta/me/onenote/pages/{id}/content
 Content-type: application/json
-Content-length: 312
 
 [
    {

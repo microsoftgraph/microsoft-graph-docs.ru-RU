@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: outlook
-ms.openlocfilehash: 9a0198a2e071d64680b2f46ffa9cbcfcdbc5aa48
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c91f0866e2307fe25a36af8ade942e4ce9ec2f22
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59130015"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925883"
 ---
 # <a name="list-mailfolders"></a>Список объектов mailFolder
 
@@ -27,7 +27,7 @@ ms.locfileid: "59130015"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
 |Делегированные (личная учетная запись Майкрософт) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
-|Для приложения | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
+|Приложение | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,7 +52,7 @@ GET /users/{id | userPrincipalName}/mailFolders/?includeHiddenFolders=true
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type   | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -109,7 +109,6 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 232
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/mailFolders",
@@ -249,7 +248,6 @@ GET https://graph.microsoft.com/beta/me/mailFolders/?includeHiddenFolders=true
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 232
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/mailFolders",

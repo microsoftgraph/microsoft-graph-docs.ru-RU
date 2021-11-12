@@ -2,20 +2,18 @@
 title: Обновление printJob
 description: Задание обновления печати
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 885190ea6a23ed6c5408f7476f5a4f10463ae012
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 4f829ff15d6f7d7d6b2cf0e390bd5a442980779c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50768779"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945889"
 ---
 # <a name="update-printjob"></a>Обновление printJob
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Обновление [задания печати](../resources/printjob.md). Только свойство **конфигурации** может быть обновлено.
 
@@ -30,7 +28,7 @@ ms.locfileid: "50768779"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Не поддерживается. |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All, PrintJob.Manage.All |
+|Для приложений| PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All, PrintJob.Manage.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +43,7 @@ PATCH /print/printers/{printerId}/jobs/{printJobId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -70,7 +68,6 @@ PATCH /print/printers/{printerId}/jobs/{printJobId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobId}
 Content-Type: application/json
-Content-length: 376
 
 {
   "configuration": {

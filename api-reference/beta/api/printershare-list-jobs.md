@@ -2,15 +2,15 @@
 title: Список printJobs для принтераShare
 description: Извлечение списка заданий печати, связанных с совместной печатью.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: a7453677550e974536de20b6ad2b054d2040990e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2761d466869c0b11ab4a49ff90fa47f2a74b0568
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037461"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60933009"
 ---
 # <a name="list-printjobs-for-a-printershare"></a>Список printJobs для принтераShare
 
@@ -45,13 +45,13 @@ GET /print/shares/{id}/jobs
 * Свойство **documents** по умолчанию опущено из ответа. Чтобы также вернуть список [печатных документов](../resources/printdocument.md) для каждого задания печати, используйте `$expand=documents` .
 * Этот метод поддерживает фильтрацию заданий печати пользователем, который их создал. Используйте `$filter=createdBy/userPrincipalName eq '{upn}'` , **где {upn}** — это [основное имя](/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) пользователя связанного пользователя.
 
-### <a name="exceptions"></a>Exceptions
+### <a name="exceptions"></a>Исключения
 Некоторые операторы не поддерживаются: `$count` , `$search` .
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -101,7 +101,6 @@ GET https://graph.microsoft.com/beta/print/shares/{id}/jobs
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 461
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares('f37141d9-0afb-484f-96d3-0ef0a679e6c1')/jobs",

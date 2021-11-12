@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5d3cbc2dd8d82bcb7cb94690d6f5d475a9c68221
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: b4723f839f0acd34a46874f15f18df993944fe70
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289863"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925624"
 ---
 # <a name="get-chatmessagehostedcontent"></a>Get chatMessageHostedContent
 
@@ -30,9 +30,9 @@ ms.locfileid: "60289863"
 |:---------------------------------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| ChannelMessage.Read.All, Group.Read.All **, Group.ReadWrite.All** |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All,**Group.ReadWrite.All** |
+|Application| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All **, Group.ReadWrite.All** |
 
-> **Примечание.** Разрешения, помеченные **, не используются и не должны использоваться.
+> **Примечание**. Разрешения, помеченные **, не поддерживаются и не должны использоваться.
 
 ### <a name="permissions-for-chat"></a>Разрешения для чата
 
@@ -184,7 +184,6 @@ GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 ```http
 HTTP/1.1 200 OK
 Content-type: image/jpeg
-Content-length: 201
 
 {
   "id": "id-value"

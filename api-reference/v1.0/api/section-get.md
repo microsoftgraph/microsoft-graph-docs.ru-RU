@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: bea36752a66dcb460d46e5fa22c9854c3350257f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fe5407c2c4bc738842716f12733dee3d7d4761de
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59015751"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936196"
 ---
 # <a name="get-section"></a>Получение раздела
 
@@ -91,7 +91,6 @@ GET https://graph.microsoft.com/v1.0/me/onenote/sections/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 272
 
 {
   "isDefault": true,

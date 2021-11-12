@@ -2,21 +2,19 @@
 author: nilakhan
 description: Представляет сведения для отправки документов для печати
 title: тип ресурса printDocumentUploadProperties
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-printing
-ms.openlocfilehash: df563026b92905b075c1b26a9f22929bfe7dd6afca99963306dffc24b12982a6
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 855f9fc66d7dc35c7fddc0904e76788e280fcdba
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149746"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945000"
 ---
 # <a name="printdocumentuploadproperties-resource-type"></a>тип ресурса printDocumentUploadProperties
 
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Описание загружаемой документации
 

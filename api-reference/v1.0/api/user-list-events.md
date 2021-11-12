@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: eafe89166a081e40e0d32432b2c47cae0987af5c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b60e36e70bb82421662474889d300e4f266dfa71
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104550"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945805"
 ---
 # <a name="list-events"></a>Перечисление событий
 
@@ -25,7 +25,7 @@ ms.locfileid: "59104550"
 Существует два сценария, в которых приложение может получить события из календаря другого пользователя:
 
 * если у приложения есть разрешения для приложений;
-* если у приложения есть соответствующие делегированные [разрешения](#permissions) от одного пользователя, а другой пользователь поделился с ним календарем или предоставил ему делегированный доступ. См. [подробные сведения и пример](/graph/outlook-get-shared-events-calendars).
+* У приложения есть соответствующие делегированные [разрешения](#permissions) от одного пользователя, а другой пользователь поделился с ним календарем или предоставил ему делегированный доступ. См. [подробные сведения и пример](/graph/outlook-get-shared-events-calendars).
 
 ### <a name="support-various-time-zones"></a>Поддержка разных часовых поясов
 
@@ -126,7 +126,6 @@ Prefer: outlook.timezone="Pacific Standard Time"
 HTTP/1.1 200 OK
 Content-type: application/json
 Preference-Applied: outlook.timezone="Pacific Standard Time"
-Content-length: 1932
 
 {
     "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events(subject,body,bodyPreview,organizer,attendees,start,end,location)",

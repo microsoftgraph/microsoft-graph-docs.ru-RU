@@ -1,16 +1,16 @@
 ---
 title: Список соглашений
 description: Извлечение списка объектов соглашения.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: b356e0fb945ca7cfe5d4aebe769cbc905b85d3d6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9cf7c1eb05cf794e6ddba8c3d7b7529d97bf7c46
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048219"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939961"
 ---
 # <a name="list-agreements"></a>Список соглашений
 
@@ -94,7 +94,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 146
 
 {
   "value": [

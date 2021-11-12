@@ -2,15 +2,15 @@
 title: Создание temporaryAccessPassAuthenticationMethod
 description: Создание нового объекта temporaryAccessPassAuthenticationMethod.
 author: inbarckMS
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 504b81b94252ffde5e9247e0357763e05fb806ac
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 55f75409c57e7b676dcf93456cab2391a51cd88b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049662"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941962"
 ---
 # <a name="create-temporaryaccesspassauthenticationmethod"></a>Создание temporaryAccessPassAuthenticationMethod
 Пространство имен: microsoft.graph
@@ -40,7 +40,7 @@ ms.locfileid: "52049662"
 |:---------------------------------------|:-------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | UserAuthenticationMethod.ReadWrite.All |
+| Для приложений                            | UserAuthenticationMethod.ReadWrite.All |
 
 Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 * Глобальный администратор
@@ -60,7 +60,7 @@ POST /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -93,7 +93,6 @@ POST /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 ``` http
 POST https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/temporaryAccessPassMethods
 Content-Type: application/json
-Content-length: 209
 
 {
   "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethod",

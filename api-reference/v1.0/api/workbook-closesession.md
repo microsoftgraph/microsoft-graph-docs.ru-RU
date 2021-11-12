@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: ae5ffca598ce3fb6fc6d967ed93a6af2d9a69ba5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c0ad1f71f286f1c1d8a2bbbc50cce28185969263
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59130008"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924252"
 ---
 # <a name="close-session"></a>Close Session
 
@@ -37,7 +37,7 @@ workbook-session-id: {session-id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя                | Описание                      |
 |:--------------------|:---------------------------------|
-| Авторизация       | Bearer {токен}. Обязательный.        |
+| Авторизация       | Bearer {token}. Обязательный.        |
 | workbook-session-id | Идентификатор сеанса книги, которую необходимо закрыть |
 
 ## <a name="request-body"></a>Тело запроса
@@ -60,7 +60,6 @@ workbook-session-id: {session-id}
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/closeSession
 Content-type: application/json
 workbook-session-id: {session-id}
-Content-length: 0
 
 {
 

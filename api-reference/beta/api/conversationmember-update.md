@@ -3,14 +3,14 @@ title: Обновление conversationMember
 description: Обнови роль conversationMember в команде или канале.
 author: akjo
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 01f477c74e46876eae38c8d8d622a1a179671a5d
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 5e23fefebbf66ad31af02194c54d60eca154f61a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059906"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937953"
 ---
 # <a name="update-conversationmember"></a>Обновление conversationMember
 
@@ -32,7 +32,7 @@ ms.locfileid: "53059906"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)| В командах: TeamMember.ReadWrite.All<br/>В каналах: ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение| В командах: TeamMember.ReadWrite.All<br/>В каналах: ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Для приложений| В командах: TeamMember.ReadWrite.All<br/>В каналах: ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored"} -->
@@ -45,7 +45,7 @@ PATCH /teams/{id}/channels/{id}/members/{id}
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -112,7 +112,6 @@ content-length: 26
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 475
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",

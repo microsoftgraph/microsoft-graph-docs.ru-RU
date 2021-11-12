@@ -2,21 +2,19 @@
 title: тип ресурса printTaskDefinition
 description: Представляет задачу, которая может быть вызвана при различных событиях, происходящих в универсальной печати.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: c63fb604db54bafd757fe82e2bc21feee005dbda5c91d9c4a7f64b0c1e607dab
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d1173cfe72aacce5f422dc47c49f557e373c1ce2
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149683"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924196"
 ---
 # <a name="printtaskdefinition-resource-type"></a>тип ресурса printTaskDefinition
 
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Представляет абстрактное определение задачи, которая может быть вызвана при различных событиях, происходящих в универсальной печати.
 
@@ -31,7 +29,7 @@ ms.locfileid: "54149683"
 | [Список](../api/print-list-taskdefinitions.md) | [printTaskDefinition collection](printtaskdefinition.md) | Получите полный список отпечатковTaskDefinitions, созданных в универсальной печати. |
 | [Создание](../api/print-post-taskdefinitions.md) | [printTaskDefinition](printtaskdefinition.md) | Создайте новый шрифтTaskDefinition. |
 | [Обновление](../api/print-update-taskdefinition.md) | [printTaskDefinition](printtaskdefinition.md) | Обновление печатиTaskDefinition. |
-| [Удаление](../api/print-delete-taskdefinition.md) | Нет | Удаление печатиTaskDefinition. |
+| [удаление](../api/print-delete-taskdefinition.md); | Нет | Удаление печатиTaskDefinition. |
 | [Перечисление задач](../api/printtaskdefinition-list-tasks.md) | [printTask](printtask.md) | Получите список задач, созданных на основе этого определения. Список включает в себя выполнение текущих задач и недавно завершенных задач. |
 | [Вывод задачи](../api/printtask-get.md) | [printTask](printtask.md) | Получает задачу, созданную на основе этого определения. |
 | [Обновление задачи](../api/printtaskdefinition-update-task.md) | [printTask](printtask.md) | Обновление задачи, созданной на основе этого определения. **Приложения, которые регистрируют триггеры задач, отвечают за обновление состояния задачи по завершению обработки, если соответствующий printJob не был перенаправлен на другой принтер.** Невыполнение отчетов о завершении приведет к блокировке связанного задания печати от печати и в конечном итоге к их удаляемой работе. |

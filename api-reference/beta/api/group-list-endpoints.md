@@ -2,15 +2,15 @@
 title: Перечисление конечных точек
 description: Извлечение списка конечных объектов.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: be99b570d16193aa461fa8cc2d8cc3646d0e55a1
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 14b9e9f7cec61caf4a76e65e93953850dcfa1fcf
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681624"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936721"
 ---
 # <a name="list-endpoints"></a>Перечисление конечных точек
 
@@ -27,7 +27,7 @@ ms.locfileid: "52681624"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Group.Read.All, Group.ReadWrite.All |
+|Для приложений | Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ GET /groups/{id}/endpoints
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный.|
+| Авторизация  | Bearer {token}. Обязательный.|
 | Content-Type   | Application/Json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -91,7 +91,6 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 261
 
 {
   "value": [

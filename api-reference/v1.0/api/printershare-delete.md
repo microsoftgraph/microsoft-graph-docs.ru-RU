@@ -1,23 +1,21 @@
 ---
 title: Удаление printerShare
-description: Удаление доли принтера (стереть связанный принтер). Это действие невозможно отменить. Если принтер будет снова открыт в будущем, пользователям Windows, которые ранее установили принтер, потребуется его обнаружить и повторно установить.
+description: Удаление доли принтера (стереть связанный принтер). Это действие невозможно отменить. Если принтер будет снова открыт в будущем, Windows пользователям, которые ранее установили принтер, потребуется его обнаружить и повторно установить.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 95a907f18693165304894fab41da36e28b551f35
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 311dfcf90c07728d588cced30af48f50c4f0a368
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771668"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947526"
 ---
 # <a name="delete-printershare"></a>Удаление printerShare
 Пространство имен: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
-Удаление доли принтера (удалить связанный [принтер).](../resources/printer.md) Это действие невозможно отменить. Если принтер [будет](../resources/printer.md) снова открыт в будущем, пользователям Windows, которые ранее установили принтер, потребуется его обнаружить и переустановить. [](../resources/printer.md)
+Удаление доли принтера (удалить связанный [принтер).](../resources/printer.md) Это действие невозможно отменить. Если принтер [будет](../resources/printer.md) снова открыт в будущем, Windows, которые ранее [](../resources/printer.md) установили принтер, должны будут его обнаружить и переустановить.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,7 +41,7 @@ DELETE /print/shares/{printerShareId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

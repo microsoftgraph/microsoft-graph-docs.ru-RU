@@ -2,21 +2,19 @@
 title: тип ресурса принтера
 description: Представляет физическое устройство принтера, зарегистрированное в службе универсальной печати. Ресурсы принтера можно использовать для управления заданиями печати, настройками принтера, метаданными принтера и состоянием регистрации.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 07e160d21696992588642cd904ffe1f2625c1d1af3fec8e3d56d0feaf9f5d372
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 1c88a70f642c02303104220b13aea1dc8fe09122
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54178061"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946883"
 ---
 # <a name="printer-resource-type"></a>тип ресурса принтера
 
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Представляет устройство принтера, зарегистрированное в службе универсальной печати. Ресурсы принтера можно использовать для управления заданиями печати, настройками принтера, метаданными принтера и состоянием регистрации.
 
@@ -29,9 +27,9 @@ ms.locfileid: "54178061"
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
 | [Создание](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | Создание (регистрация) нового принтера с универсальной печатью. |
-| [Получение](../api/printer-get.md) | [printer](printer.md) | Ознакомьтесь с свойствами и отношениями объекта принтера. |
+| [Получение](../api/printer-get.md); | [printer](printer.md) | Ознакомьтесь с свойствами и отношениями объекта принтера. |
 | [Обновление](../api/printer-update.md) | [printer](printer.md) | Обновление объекта принтера. |
-| [Удаление](../api/printer-delete.md) | Нет | Отрегистрим физический принтер из службы универсальной печати. |
+| [удаление](../api/printer-delete.md); | Нет | Отрегистрим физический принтер из службы универсальной печати. |
 | [restoreFactoryDefaults](../api/printer-restorefactorydefaults.md) | Нет | Восстановление параметров по умолчанию принтера до значений, заданных производителем. |
 | [Список заданий](../api/printer-list-jobs.md) | [коллекция printJob](printjob.md) | Получите список заданий печати, которые в очереди для обработки принтером. |
 | [Создание задания](../api/printer-post-jobs.md) | [printJob](printjob.md) | Создайте новое задание печати для принтера. Чтобы приступить к печати задания, используйте [start](../api/printjob-start.md). |
@@ -51,8 +49,8 @@ ms.locfileid: "54178061"
 |registeredDateTime|DateTimeOffset|DateTimeOffset при регистрации принтера. Только для чтения.|
 |status|[printerStatus](printerstatus.md)|Состояние обработки принтера, включая ошибки. Унаследованный от [printerBase](../resources/printerbase.md).|
 |IsShared|Boolean|True, если принтер является общим; false в противном случае. Только для чтения.|
-|hasPhysicalDevice|Логическое|True, если на принтере есть физическое устройство для печати. Только для чтения.|
-|isAcceptingJobs|Логическое|Принимает ли принтер новые задания печати. Унаследованный от [printerBase](../resources/printerbase.md).|
+|hasPhysicalDevice|Логический|True, если на принтере есть физическое устройство для печати. Только для чтения.|
+|isAcceptingJobs|Логический|Принимает ли принтер новые задания печати. Унаследованный от [printerBase](../resources/printerbase.md).|
 |расположение|[printerLocation](printerlocation.md)|Физическое и/или организационное расположение принтера. Унаследованный от [printerBase](../resources/printerbase.md).|
 |defaults|[printerDefaults](printerdefaults.md)|Параметры печати принтера по умолчанию. Унаследованный от [printerBase](../resources/printerbase.md).|
 |capabilities|[printerCapabilities](printercapabilities.md)|Возможности принтера, связанного с этим разделом принтера. Унаследованный от [printerBase](../resources/printerbase.md).|

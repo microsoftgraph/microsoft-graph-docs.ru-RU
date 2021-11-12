@@ -2,20 +2,18 @@
 title: 'отчеты: getPrinterArchivedPrintJobs'
 description: Получите список архивных заданий печати, которые стояли в очереди для определенного принтера.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: cb1b7966cc7c06a9b2ea255d43b1d044d34339eb5461ef253d7f4c8381d639e8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2ca0f329fa3378c4ed51355371b214dbcfb6a9f8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155388"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940503"
 ---
 # <a name="reportroot-getprinterarchivedprintjobs"></a>reportRoot: getPrinterArchivedPrintJobs
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Получите список архивных заданий печати, которые стояли в очереди для определенного [принтера.](../resources/printer.md)
 
@@ -28,7 +26,7 @@ ms.locfileid: "54155388"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Reports.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается.|
+|Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +49,7 @@ GET /reports/getPrinterArchivedPrintJobs
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

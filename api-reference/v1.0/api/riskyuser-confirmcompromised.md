@@ -5,12 +5,12 @@ author: cloudhandler
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 67c056a36e53cf3f6f332884265e30e9a40db12d
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 3bd85442ded90d07fea8ea3a558bf738ced5c2c5
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730265"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939093"
 ---
 # <a name="riskyuser-confirmcompromised"></a>riskyUser: confirmCompromised
 Пространство имен: microsoft.graph
@@ -44,7 +44,7 @@ POST /identityProtection/riskyUsers/confirmCompromised
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В следующей таблице указаны параметры, которые можно использовать с этим действием.
@@ -70,7 +70,6 @@ POST /identityProtection/riskyUsers/confirmCompromised
 ``` http
 POST https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/confirmCompromised
 Content-Type: application/json
-Content-length: 39
 
 {
   "userIds": [

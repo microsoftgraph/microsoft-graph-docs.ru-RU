@@ -2,21 +2,19 @@
 title: тип ресурса печати
 description: В сопровождении подписки универсальной печати функция Print позволяет управлять принтерами и открывать печатные точки, которые можно использовать для управления принтерами и заданиями печати в Universal Print.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 7ed4858a167a87be40ff31e540d402fa93a44cbd30f6ee6e67e63ed52510b9fb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 018ec497e5eccc94b668fe86d2a2d691c58f98d2
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129990"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936994"
 ---
 # <a name="print-resource-type"></a>тип ресурса печати
 
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 В сопровождении подписки универсальной печати функция Print позволяет управлять принтерами и открывать печатные [точки,](printserviceendpoint.md) которые можно использовать для управления принтерами и заданиями печати в Universal Print.
 

@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 01b6c9c9530a08c015ead013613ef462e220197d
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: d054b5468456cd552890464fd3f35c0b8399b278
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453054"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939023"
 ---
 # <a name="create-subjectrightsrequest"></a>Создание subjectRightsRequest
 Пространство имен: microsoft.graph
@@ -57,7 +57,7 @@ POST /privacy/subjectRightsRequests
 |description|String|Описание запроса.|
 |displayName|String|Имя запроса.|
 |internalDueDateTime|DateTimeOffset|Внутренняя дата выполнения, используемая для отслеживания завершения запроса.|
-|нормативные акты|Коллекция строк|Одно или несколько правил для запроса.|
+|нормативные акты|Коллекция String|Одно или несколько правил для запроса.|
 |type|subjectRightsRequestType|Тип запроса. Возможные значения: `export`, `delete`, `access`, `tagForAction`, `unknownFutureValue`.|
 
 
@@ -68,6 +68,8 @@ POST /privacy/subjectRightsRequests
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_subjectRightsRequest_from_"
@@ -76,7 +78,6 @@ POST /privacy/subjectRightsRequests
 ``` http
 POST https://graph.microsoft.com/v1.0/privacy/subjectRightsRequests
 Content-Type: application/json
-Content-length: 849
 
 {
     "type": "microsoft.graph.subjectRightsRequestType",
@@ -95,6 +96,20 @@ Content-length: 849
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-subjectrightsrequest-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-subjectrightsrequest-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-subjectrightsrequest-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

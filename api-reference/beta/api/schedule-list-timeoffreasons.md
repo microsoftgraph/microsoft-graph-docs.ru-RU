@@ -2,15 +2,15 @@
 title: Список timeOffReasons
 description: Получите список timeOffReasons в расписании.
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 428ede3f9f91f4239651f3a8efeb59f5faa4cebf
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bf1b5faa60708a65221fd6eedb3acd9b0aebbd1f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052742"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926457"
 ---
 # <a name="list-timeoffreasons"></a>Список timeOffReasons
 
@@ -27,7 +27,7 @@ ms.locfileid: "52052742"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Schedule.Read.All *, Schedule.ReadWrite.All* |
+|Для приложений | Schedule.Read.All *, Schedule.ReadWrite.All* |
 
 >\***Важно:** Разрешения приложения в настоящее время доступны только в закрытом режиме и недоступны для общего пользования.
 
@@ -45,7 +45,7 @@ GET /teams/{teamId}/schedule/timeOffReasons
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -102,7 +102,6 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "value": [

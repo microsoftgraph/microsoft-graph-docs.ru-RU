@@ -2,21 +2,19 @@
 title: тип ресурса printTaskStatus
 description: Представляет текущее состояние выполнения printTask.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 7f07ee889cb8f04edff66416ebc6ce49f7e7a3ab67a07119170929fdc12cdf8c
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d0222192b8c4e7a9fe644edbd956a98a5ad899a7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229019"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946869"
 ---
 # <a name="printtaskstatus-resource-type"></a>тип ресурса printTaskStatus
 
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Представляет текущее состояние выполнения [printTask](printtask.md). 
 
@@ -34,7 +32,7 @@ ms.locfileid: "54229019"
 |обработка|1|Выполнение задач продолжается.|
 |завершено|2|Выполнение задач завершено.|
 |прервано|3|Выполнение задач было прервано.|
-|unknownFutureValue|4 |Эволюционирующее значение sentinel. Не следует использовать.|
+|unknownFutureValue|4|Эволюционирующее значение sentinel. Не следует использовать.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

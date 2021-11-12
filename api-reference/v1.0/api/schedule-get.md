@@ -5,12 +5,12 @@ author: akumar39
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bb76ed46c9ecf37b6c80ec398a26fbeeb0d7bd00
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 02055552096e8f7f3a75e967df916373e119d388
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019764"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939100"
 ---
 # <a name="get-schedule"></a>Получить расписание
 
@@ -51,7 +51,7 @@ GET /teams/{teamId}/schedule
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -99,7 +99,7 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
@@ -111,7 +111,6 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "id": "833fc4df-c88b-4398-992f-d8afcfe41df2",

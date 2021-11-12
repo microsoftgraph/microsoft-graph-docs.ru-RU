@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 65d0fa5f95d5563936e864d0959029aa92063e4c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8246044e54d876431695edeb66e8f09607814a8c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59020548"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60932934"
 ---
 # <a name="create-personannotation"></a>Создание personAnnotation
 Пространство имен: microsoft.graph
@@ -41,7 +41,7 @@ POST /users/{id | userPrincipalName}/profile/notes
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,7 +51,7 @@ POST /users/{id | userPrincipalName}/profile/notes
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|allowedAudiences|Строка|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |подробные|[itemBody](../resources/itembody.md)|Содержит сведения о самой заметке.|
 |displayName|String|Содержит удобное имя для заметки.|
 |вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
@@ -72,7 +72,6 @@ POST /users/{id | userPrincipalName}/profile/notes
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/notes
 Content-Type: application/json
-Content-length: 413
 
 {
   "detail": {

@@ -2,25 +2,23 @@
 title: Обновление принтера
 description: Обновление свойств объекта принтера.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: a479aff38b24105e80d3fc0c3f098299b9eeafb4
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: b1349a55997dcad5305da0db15cf4fd59d0a16eb
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765883"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942816"
 ---
 # <a name="update-printer"></a>Обновление принтера
 Пространство имен: microsoft.graph
 
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
-
 Обновление свойств объекта [принтера.](../resources/printer.md)
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 Помимо следующих разрешений, клиент пользователя должен иметь активную подписку на универсальную печать. Подписанный пользователем должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
@@ -47,7 +45,7 @@ PATCH /print/printers/{printerId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|`application/json` при использовании делегирования разрешений или `application/ipp` `application/json` при использовании разрешений приложений. Обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -117,7 +115,6 @@ PATCH /print/printers/{printerId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/print/printers/{printerId}
 Content-Type: application/json
-Content-length: 581
 
 {
   "name": "PrinterName",

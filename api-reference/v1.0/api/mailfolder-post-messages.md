@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 49db923d010fdaa19127e170ffe79d54ef3e8ad2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ed8a0bd7d2445318b5eeedf14c70d1b765baf920
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59026254"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60928329"
 ---
 # <a name="create-message-in-a-mailfolder"></a>Создание сообщения в почтовом ящике
 
@@ -35,7 +35,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,7 +57,6 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```http
 POST https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages
 Content-type: application/json
-Content-length: 248
 
 {
   "receivedDateTime": "datetime-value",
@@ -96,7 +95,6 @@ Content-length: 248
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 248
 
 {
   "receivedDateTime": "datetime-value",

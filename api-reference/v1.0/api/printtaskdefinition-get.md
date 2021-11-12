@@ -2,21 +2,19 @@
 title: Get taskDefinition
 description: Сведения об определении задачи.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: fecc2653a3a37e44ab93b1b39ca7e8adf304b546
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 1e5e186cd0dbf8febdaf7b8f44eeca88ec31d39d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50768692"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946428"
 ---
 # <a name="get-printtaskdefinition"></a>Get printTaskDefinition
 
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Сведения об определении задачи.
 
@@ -46,7 +44,7 @@ GET /print/taskDefinitions/{printTaskDefinitionId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

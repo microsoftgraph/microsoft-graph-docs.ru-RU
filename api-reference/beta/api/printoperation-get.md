@@ -2,15 +2,15 @@
 title: Get printOperation
 description: Извлечение printOperation.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 35bc4e58616c79e060548108d81d59f345e20f32
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 684beea39900ddb52a4ad08e8ce8eef085c2dfda
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055304"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938527"
 ---
 # <a name="get-printoperation"></a>Get printOperation
 
@@ -40,7 +40,7 @@ GET /print/operations/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -89,7 +89,6 @@ GET https://graph.microsoft.com/beta/print/operations/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1199
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/operations/$entity",

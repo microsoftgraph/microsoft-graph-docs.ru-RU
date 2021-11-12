@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 454ba60b4cd76c52b0e14aaccec8b910c825c2ce
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 250d8b84d7f4b64498229c91d3ad878c7adb815a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59079217"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60928183"
 ---
 # <a name="update-organization"></a>Обновление организации
 
@@ -40,7 +40,7 @@ PATCH /organization/{id}
 
 | Имя       | Описание|
 |:-----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type   | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -73,7 +73,6 @@ PATCH /organization/{id}
 ```http
 PATCH https://graph.microsoft.com/v1.0/organization/{id}
 Content-type: application/json
-Content-length: 411
 
 {
   "marketingNotificationEmails" : ["marketing@contoso.com"],

@@ -2,20 +2,18 @@
 title: Список allowedUsers для printerShare
 description: Извлечение списка пользователей, которым был предоставлен доступ для отправки заданий печати в связанную долю принтера.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: d1f55d9d4ae91d6ae41ee4656fbb1e90b7948304
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: a0d7699ec92a18fbfccf4d7c328b9d8d6cf80e3d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771535"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60927872"
 ---
 # <a name="list-allowedusers"></a>Список allowedUsers
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Извлечение списка пользователей, которым был предоставлен доступ для отправки заданий печати в связанный [принтерShare.](../resources/printershare.md)
 
@@ -43,7 +41,7 @@ GET /print/shares/{printerShareId}/allowedUsers
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

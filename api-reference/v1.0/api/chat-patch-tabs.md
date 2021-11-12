@@ -5,12 +5,12 @@ author: subray
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ca2a8b92468c4190af4b81f75900727cd003a8df
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f0a48fed3d52fa240073eb581f0573d692490545
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022970"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925911"
 ---
 # <a name="update-tab-in-chat"></a>Обновление вкладки в чате
 
@@ -44,7 +44,7 @@ PATCH /chats/{chat-id}/tabs/{tab-id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -69,7 +69,6 @@ PATCH /chats/{chat-id}/tabs/{tab-id}
 ```http
 PATCH https://graph.microsoft.com/v1.0/chats/19:d65713bc498c4a428c71ef9353e6ce20@thread.v2/tabs/794f0e4e-4d10-4bb5-9079-3a465a629eff
 Content-type: application/json
-Content-length: 211
 
 {
   "displayName": "My Contoso Tab - updated again"

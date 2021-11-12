@@ -2,20 +2,18 @@
 title: PrintServiceEndpoints списка
 description: Извлечение списка конечных точек, выставленных службой печати.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 16e32eec5580990c3ea80f4f6e596188d08103a6
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 4218aead975c6144e34701e897b4af483a971ab2
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777049"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940657"
 ---
 # <a name="list-endpoints"></a>Перечисление конечных точек
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Извлечение списка конечных точек, выставленных службой печати.
 
@@ -38,7 +36,7 @@ GET /print/services/{printServiceId}/endpoints
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

@@ -2,15 +2,15 @@
 title: 'message: copy'
 description: Копирование сообщения в папку.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f066240437b09c7c1e6a9492bc82137c4a32e9f5
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: 9c375baf8fd099381d321e8cf61742684d222f74
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531315"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926779"
 ---
 # <a name="message-copy"></a>message: copy
 
@@ -77,7 +77,6 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/copy
 ```http
 POST https://graph.microsoft.com/beta/me/messages/{id}/copy
 Content-type: application/json
-Content-length: 44
 
 {
   "destinationId": "destinationId-value"
@@ -116,7 +115,6 @@ Content-length: 44
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 248
 
 {
   "receivedDateTime": "2016-10-19T10:37:00Z",

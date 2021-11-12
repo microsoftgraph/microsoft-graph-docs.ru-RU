@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2d26796b62e8a2efe2428fea90df928eed18b2cd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 981c6d46a31c8680ffe692747399de8d2d62ab81
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59128405"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60928398"
 ---
 # <a name="get-a-member"></a>Получение члена
 
@@ -36,7 +36,7 @@ GET /directory/administrativeUnits/{id}/members/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -59,7 +59,6 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 100
 
 {
   "@odata.type":"#microsoft.graph.user",

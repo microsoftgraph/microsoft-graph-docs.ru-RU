@@ -2,20 +2,18 @@
 title: Создание printTaskTrigger
 description: Создайте новый триггер задач на указанном принтере.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 3ed74256934310df5f5ea99217f8f0956e109eda
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 86652ec6f5e43ce4bca442642b154f82d8849855
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771836"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946442"
 ---
 # <a name="create-printtasktrigger"></a>Создание printTaskTrigger
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Создайте новый [триггер задач](../resources/printtasktrigger.md) на указанном [принтере.](../resources/printer.md) В настоящее **время на** принтере может быть указан только один триггер задач, но в будущем это ограничение может быть удалено. 
 
@@ -43,7 +41,7 @@ POST /print/printers/{printerId}/taskTriggers
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +63,6 @@ POST /print/printers/{printerId}/taskTriggers
 ``` http
 POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/taskTriggers
 Content-Type: application/json
-Content-length: 80
 
 {
   "event": "jobStarted",

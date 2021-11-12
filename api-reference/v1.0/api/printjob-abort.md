@@ -2,21 +2,19 @@
 title: 'printJob: прекращение'
 description: Прервать задание печати.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 4f9bfb7623e546c402853c31eba750f5c4040966
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: 5db22c57d8c2a55b24c79240c9f354763beb828d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080094"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945910"
 ---
 # <a name="printjob-abort"></a>printJob: прекращение
 
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Прервать задание печати. Только приложения с разрешениями приложений могут прервать задание печати.
 
@@ -46,7 +44,7 @@ POST /print/printers/{printerId}/jobs/{printJobId}/abort
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса можно дополнительно упросить причину, по которой задание прерывается.
@@ -72,7 +70,6 @@ POST /print/printers/{printerId}/jobs/{printJobId}/abort
 ``` http
 POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobId}/abort
 Content-Type: application/json
-Content-length: 26
 
 {
   "reason": "String"

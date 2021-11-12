@@ -2,15 +2,15 @@
 title: Список вложений
 description: Получение списка объектов attachment, вложенных в событие.
 author: svpsiva
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: acfcbd41c07cd9e308e6ad1d705c8590298e04f3
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5c68b776b8181dde5a60b5afaaf95fa473835ca9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042557"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935923"
 ---
 # <a name="list-attachments"></a>Список вложений
 
@@ -57,7 +57,7 @@ GET https://graph.microsoft.com/beta/me/events/{id}?$expand=attachments
 
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/me/events/{id}/attachments
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "event_get_attachments_beta",
@@ -115,7 +115,6 @@ GET https://graph.microsoft.com/beta/me/events/{id}/attachments
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 215
 
 {
   "value": [

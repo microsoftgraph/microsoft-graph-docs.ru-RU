@@ -2,15 +2,15 @@
 title: 'message: createForward'
 description: Создайте черновик для перенаадки существующего сообщения в формате JSON или MIME.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 758ca460786eb7e59c41762f8dfa4209b20a62b9
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 72e55cd65e531e5330103f5f8603fc2a8f3ce1c1
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870425"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938743"
 ---
 # <a name="message-createforward"></a>message: createForward
 
@@ -53,7 +53,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный.|
+| Authorization  | string  | Bearer {token}. Обязательный.|
 | Content-Type | string  | Характер данных в теле объекта. Обязательный.<br/> Используйте `application/json` для объекта JSON и `text/plain` для содержимого MIME.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -133,7 +133,6 @@ Content-Type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 272
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/messages/$entity",

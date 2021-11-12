@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 353fe905c2a60c212b89c763faa38eb6b4b1d42f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 53db728bf588e31a17e1fda8a0b2a2796d5b620f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59008260"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931667"
 ---
 # <a name="list-calendarview"></a>Список calendarView
 
@@ -95,7 +95,7 @@ Prefer: outlook.body-content-type="text"
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -106,7 +106,6 @@ Prefer: outlook.body-content-type="text"
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1354
 Preference-Applied: outlook.body-content-type="text"
 
 {

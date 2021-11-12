@@ -2,15 +2,15 @@
 title: Термин Update
 description: Обновление свойств объекта терминов.
 author: mohitpcad
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: fff5c082a0d8a7b1c60a5430706c342a93bd09df
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: 21d9cd75cbd479e2f67efca6a983eee9f9f267d8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384459"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931990"
 ---
 # <a name="update-term"></a>Термин Update
 Пространство имен: microsoft.graph.termStore
@@ -42,7 +42,7 @@ PATCH /termStore/sets/{setId}/terms/{termId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -75,7 +75,6 @@ PATCH /termStore/sets/{setId}/terms/{termId}
 ``` http
 PATCH https://graph.microsoft.com/beta/termStore/sets/{setId}/terms/{termId}
 Content-Type: application/json
-Content-length: 366
 
 {
   "labels" : [

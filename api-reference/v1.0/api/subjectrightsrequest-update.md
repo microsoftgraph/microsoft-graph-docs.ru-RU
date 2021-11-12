@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 2806a27a97dae2bd4368493c568d608fa125de5e
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: bfff00205418fd82defadd7dcbb38844bc7f11b8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687888"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940456"
 ---
 # <a name="update-subjectrightsrequest"></a>Обновление subjectRightsRequest
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "60687888"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|SubjectRightsRequest.ReadWrite.All*|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|Не поддерживается|
+|Для приложений|Не поддерживается|
 
 >[!IMPORTANT]
 >Разрешения, отмеченные звездочкой (*), в настоящее время недоступны. Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues#compliance).
@@ -74,7 +74,6 @@ PATCH /privacy/subjectRightsRequests/{subjectRightsRequestId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/privacy/subjectRightsRequests/{subjectRightsRequestId}
 Content-Type: application/json
-Content-length: 837
 
 {
   "@odata.type": "#microsoft.graph.subjectRightsRequest",

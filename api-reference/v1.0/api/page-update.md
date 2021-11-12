@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 9f40dbaca37d50873bfb22564dbefdaa77f8e91b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 74353eded73afa53e30b6a3aba1d27297aaa610c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59045016"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942872"
 ---
 # <a name="update-page"></a>Обновление страницы
 
@@ -37,7 +37,7 @@ PATCH /sites/{id}/onenote/pages/{id}/content
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
@@ -45,7 +45,7 @@ PATCH /sites/{id}/onenote/pages/{id}/content
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `204 No Content`.  Данные JSON не возвращаются по PATCH-запросу.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.  Данные JSON не возвращаются по PATCH-запросу.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -58,7 +58,6 @@ PATCH /sites/{id}/onenote/pages/{id}/content
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/onenote/pages/{id}/content
 Content-type: application/json
-Content-length: 312
 
 [
    {

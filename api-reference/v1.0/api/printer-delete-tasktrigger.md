@@ -2,20 +2,18 @@
 title: Удаление печатиTaskTrigger
 description: Удаление триггера задач принтера.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: bba66bb6c11d930b1b9065769181f55efc114dd4
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: fc0ddc07abf801a3c32f1d740469a22072c54f43
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772018"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60927920"
 ---
 # <a name="delete-printtasktrigger"></a>Удаление печатиTaskTrigger
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Удалите [триггер задач](../resources/printtasktrigger.md) [принтера, чтобы](../resources/printer.md) предотвратить связанные события печати для запуска задач на указанном принтере.
 
@@ -43,7 +41,7 @@ DELETE /print/printers/{printerId}/taskTriggers/{printTaskTriggerId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

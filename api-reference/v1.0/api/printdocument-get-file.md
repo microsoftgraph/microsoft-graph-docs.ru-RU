@@ -2,21 +2,19 @@
 title: Скачайте двоичный файл printDocument
 description: Скачайте двоичный файл, связанный с документом.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 51997302289a3998192e104c9b025678de680857
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 7808484095c576ce23cfc0cbda7a3d637ec7c784
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772088"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60927937"
 ---
 # <a name="download-printdocument-binary-file"></a>Скачайте двоичный файл printDocument
 
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Скачайте двоичный файл, связанный с [печатьюDocument](../resources/printdocument.md). Вызов этого метода дает ответ на перенаправление с предварительно заверяемым URL-адресом, который можно использовать для загрузки полезной нагрузки.
 
@@ -27,9 +25,9 @@ ms.locfileid: "50772088"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                  |
 | :------------------------------------- | :----------------------------------------------------------- |
-| Делегированное (рабочая или учебная учетная запись)     | PrintJob.Read, PrintJob.Read.All, PrintJob.ReadWrite, PrintJob.ReadWrite.All |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                               |
-| Приложение                            | PrintJob.Read.All, PrintJob.ReadWrite.All                    |
+| Делегированные (рабочая или учебная учетная запись)     | PrintJob.Read, PrintJob.Read.All, PrintJob.ReadWrite, PrintJob.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                               |
+| Для приложений                            | PrintJob.Read.All, PrintJob.ReadWrite.All                    |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +37,7 @@ GET /print/printers/{printerId}/jobs/{printJobId}/documents/{printDocumentId}/$v
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 | :------------ | :------------------------ |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

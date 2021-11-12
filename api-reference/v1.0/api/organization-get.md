@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 843db125acc27476e30106e4ab92e0d3ab71a9bc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d6b26cdbd6b8d82a624eb3b27500ca4b786363ca
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59079234"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60928254"
 ---
 # <a name="get-organization"></a>Получение организации
 
@@ -48,7 +48,7 @@ GET /organization
 
 | Имя       | Описание|
 |:-----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -104,7 +104,6 @@ GET https://graph.microsoft.com/v1.0/organization
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 411
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#organization",

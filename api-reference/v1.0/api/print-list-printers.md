@@ -2,20 +2,18 @@
 title: Перечисление принтеров
 description: Извлечение списка принтеров, зарегистрированных в клиенте.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: acf4e3eb4ab858297b8dba41e34115ec395b83b3
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: e2f1cf989bedb38005586059479b5eedd34ef1d6
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772389"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60928090"
 ---
 # <a name="list-printers"></a>Перечисление принтеров
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Извлечение списка **принтеров,** зарегистрированных в клиенте.
 
@@ -43,14 +41,14 @@ GET /print/printers
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
-### <a name="exceptions"></a>Exceptions
+### <a name="exceptions"></a>Исключения
 * Свойство навигации поддерживается и поддерживается `$expand` `select` `share` операторами, но не `jobs` для .
 * Некоторые операторы не поддерживаются: `$count` , `$search` .
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

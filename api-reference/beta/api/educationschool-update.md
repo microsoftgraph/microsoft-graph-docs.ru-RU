@@ -2,15 +2,15 @@
 title: Обновление свойств educationSchool
 description: Обновление свойств объекта school.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: bb25d6e2ff81542dcd5481215fd93687b388fe05
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d54fcd22716e1c93e0e43951f5f92eb8de918e2f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043371"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943481"
 ---
 # <a name="update-educationschool-properties"></a>Обновление свойств educationSchool
 
@@ -40,7 +40,7 @@ PATCH /education/schools/{id}
 
 | Заголовок        | Значение                     |
 | :------------ | :------------------------ |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json          |
 
 ## <a name="request-body"></a>Текст запроса
@@ -80,7 +80,6 @@ PATCH /education/schools/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/education/schools/10002
 Content-type: application/json
-Content-length: 292
 
 {
   "displayName": "Fabrikam Arts High School",
@@ -117,7 +116,6 @@ Content-length: 292
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 292
 
 {
   "id": "10002",

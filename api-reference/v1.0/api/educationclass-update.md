@@ -5,12 +5,12 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3e32688d0dd469b3d91df102dabb20e0f19bcea8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b9c42b9e2c40f4e9824c3fca8872b5152ee38b9b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147432"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943873"
 ---
 # <a name="update-educationclass"></a>Update educationClass
 
@@ -35,7 +35,7 @@ PATCH /education/classes/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -68,7 +68,6 @@ PATCH /education/classes/{id}
 ```http
 PATCH https://graph.microsoft.com/v1.0/education/classes/{class-id}
 Content-type: application/json
-Content-length: 224
 
 {
   "description": "History - World History 1",
@@ -94,7 +93,7 @@ Content-length: 224
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

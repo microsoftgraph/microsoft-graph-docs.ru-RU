@@ -2,21 +2,19 @@
 title: тип ресурса printTask
 description: Представляет задачу, выполненную или выполненную в результате события универсальной печати.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 1c7954730f42e6ac15a45c6a68de8c827dc6f0406a30066020fe578c1ee9bccd
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 66229e5089026f22fa90f5db52c9738daa8b4b4a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54149690"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947338"
 ---
 # <a name="printtask-resource-type"></a>тип ресурса printTask
 
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Представляет задачу, выполненную или выполненную в результате события универсальной печати.
 
@@ -26,7 +24,7 @@ ms.locfileid: "54149690"
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
 | [Список (от printTaskDefintion)](../api/printtaskdefinition-list-tasks.md) | [printTask](printtask.md) | Получите список задач, созданных на основе определенного шрифтаTaskDefinition. Список включает в себя выполнение текущих задач и недавно завершенных задач. |
-| [Получение](../api/printtask-get.md) | [printTask](printtask.md) | Сведения о задаче печати. |
+| [Получение](../api/printtask-get.md); | [printTask](printtask.md) | Сведения о задаче печати. |
 | [Обновление](../api/printtaskdefinition-update-task.md) | [printTask](printtask.md) | Обновляет задачу печати. |
 
 ## <a name="properties"></a>Свойства
