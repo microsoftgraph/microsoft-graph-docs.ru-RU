@@ -2,15 +2,15 @@
 title: ускоренный тип ресурсаQualityUpdateReference
 description: Представляет Windows 10 обновления качества для ускорения.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 685f65d8c5661cd4c8308ed712ab3fddedbae51d
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: c3313483305613cf684b066f2ba9569676974b23
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52068176"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890824"
 ---
 # <a name="expeditedqualityupdatereference-resource-type"></a>ускоренный тип ресурсаQualityUpdateReference
 
@@ -27,8 +27,8 @@ ms.locfileid: "52068176"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|classification|microsoft.graph.windowsUpdates.qualityUpdateClassification|Указывает классификацию указанного контента. Поддерживает подмножество значений **для qualityUpdateClassification.** Значение по умолчанию — `security`. Возможные значения: `security` . Наследуется [от qualityUpdateReference](../resources/windowsupdates-qualityupdatereference.md).|
-|equivalentContent|microsoft.graph.windowsUpdates.equivalentContentOption|Указывает другое содержимое, которое следует считать эквивалентным. Поддерживает подмножество значений **для equivalentContentOption**. Значение по умолчанию — `latestSecurity`. Возможные значения: `latestSecurity` .|
+|classification|microsoft.graph.windowsUpdates.qualityUpdateClassification|Указывает классификацию указанного контента. Поддерживает подмножество значений **для qualityUpdateClassification.** Значение по умолчанию — `security`. Возможные значения: `security`, `unknownFutureValue`. Наследуется [от qualityUpdateReference](../resources/windowsupdates-qualityupdatereference.md).|
+|equivalentContent|microsoft.graph.windowsUpdates.equivalentContentOption|Указывает другое содержимое, которое следует считать эквивалентным. Поддерживает подмножество значений **для equivalentContentOption**. Значение по умолчанию — `latestSecurity`. Возможные значения: `latestSecurity`, `unknownFutureValue`.|
 |releaseDateTime|DateTimeOffset|Указывает обновление качества с указанной классификацией **на** дату публикации (то есть последнее обновление, опубликованное в указанную дату). Все устройства с обновлением, которое было опубликовано до **выпускаDateTime,** получат ускоренное обновление качества. Наследуется [от qualityUpdateReference](../resources/windowsupdates-qualityupdatereference.md).|
 
 ## <a name="relationships"></a>Связи

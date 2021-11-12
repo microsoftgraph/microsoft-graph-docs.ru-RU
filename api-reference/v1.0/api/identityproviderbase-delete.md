@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 0cc34c99e63a6f37db65093ddce31f8729e7f1d3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 697d6858b334b2a19eaa950368ca7a47e6c59fb5
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59105309"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60891076"
 ---
 # <a name="delete-identityprovider"></a>Удаление identityProvider
 Пространство имен: microsoft.graph
 
 Удаление ресурса поставщика удостоверений, указанного идентификатором в запросе. 
 
-Среди типов поставщиков, полученных из identityProviderBase, в настоящее время можно удалить ресурс [socialIdentityProvider](../resources/socialidentityprovider.md) в Azure AD. В Azure AD B2C эта операция в настоящее время может удалить [ресурс socialIdentityProvider.](../resources/socialidentityprovider.md)
+Среди типов поставщиков, полученных из identityProviderBase, в настоящее время можно удалить ресурс [socialIdentityProvider](../resources/socialidentityprovider.md) в Azure AD. В Azure AD B2C эта операция в настоящее время может удалить [socialIdentityProvider](../resources/socialidentityprovider.md)или [ресурс appleManagedIdentityProvider.](../resources/applemanagedidentityprovider.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -45,7 +45,7 @@ DELETE /identity/identityProviders/{id}
 
 |Имя|Описание|
 |:---------------|:----------|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 

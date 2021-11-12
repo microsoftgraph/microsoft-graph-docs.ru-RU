@@ -2,15 +2,15 @@
 title: 'updatableAsset: регистрацияAssets'
 description: Регистрация ресурсов updatableAsset в управлении обновлениями службой развертывания.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: e83dd02ded297cde0e80b535a9d4fcb01ed45ae6
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 7ae0848507f6d46edfea6d7faf47d4083eed43a1
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241252"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60891090"
 ---
 # <a name="updatableasset-enrollassets"></a>updatableAsset: регистрацияAssets
 Пространство имен: microsoft.graph.windowsUpdates
@@ -47,17 +47,17 @@ POST /admin/windows/updates/updatableAssets/enrollAssets
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В следующей таблице указаны параметры, которые можно использовать с этим действием.
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|updateCategory|microsoft.graph.windowsUpdates.updateCategory|Категория обновлений для управления службой. Поддерживает подмножество значений **для updateCategory.** Возможные значения: `feature` .|
+|updateCategory|microsoft.graph.windowsUpdates.updateCategory|Категория обновлений для управления службой. Поддерживает подмножество значений **для updateCategory.** Возможные значения: `feature`, `unknownFutureValue`.|
 |assets|[коллекция microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md)|Список **ресурсов updatableAsset** для регистрации в управлении обновлениями службой для данного **обновленияCategory.**|
 
 ## <a name="response"></a>Ответ

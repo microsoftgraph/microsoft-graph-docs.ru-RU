@@ -1,16 +1,16 @@
 ---
 title: 'educationAssignment: публикация'
-description: Это действие меняет состояние назначения с исходного состояния черновика на опубликованный.
+description: Измените состояние образованияAssignment с исходного состояния черновика на опубликованный.
 ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 902ff0df49cceab6a273107d88024a239bcfa4f5
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: 6381931b5351b5864e5c985ee9b9b5381e2d3375
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60219823"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780515"
 ---
 # <a name="educationassignment-publish"></a>educationAssignment: публикация
 
@@ -18,9 +18,13 @@ ms.locfileid: "60219823"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Измените состояние назначения с исходного состояния черновика на опубликованный. 
+Изменение состояния [educationAssignment с](../resources/educationassignment.md) исходного `draft` состояния на `published` состояние. 
+
+Вы можете изменить состояние на `draft` `scheduled` то, назначено ли назначение на будущую дату.  
 
 Только учитель в классе может сделать этот вызов. Когда назначение находится в состоянии черновика, учащиеся не будут видеть назначение, равно как и объекты отправки. При вызове этого API [создаются объекты educationSubmission](../resources/educationsubmission.md) и назначение отображается в списке учащегося.
+
+Состояние назначения возвращается в случае сбоя при отступных во `draft` время публикации.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -40,7 +44,7 @@ POST /education/classes/{id}/assignments/{id}/publish
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не поставляем тело запроса для этого метода.

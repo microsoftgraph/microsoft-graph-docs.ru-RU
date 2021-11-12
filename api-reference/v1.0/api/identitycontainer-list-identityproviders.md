@@ -5,21 +5,21 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: b83620f6b8dc54f13d776ca22ec6f6650d6285fe
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: aceff3245b2a4789b3b1059b551245197f6684c6
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59045770"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890131"
 ---
 # <a name="list-identityproviders"></a>Перечисление объектов identityProvider
 Пространство имен: microsoft.graph
 
 Получите коллекцию ресурсов поставщика удостоверений, настроенных для клиента и полученных из [identityProviderBase.](../resources/identityproviderbase.md)
 
-Для клиента Azure AD поставщики могут быть [объектами socialIdentityProvider](../resources/socialidentityprovider.md) или [builtinIdentityProvider.](../resources/builtinidentityprovider.md)
+Для клиента Azure AD поставщики могут быть [объектами socialIdentityProviders](../resources/socialidentityprovider.md) или [builtinIdentityProviders.](../resources/builtinidentityprovider.md)
 
-Для Azure AD B2C поставщиками могут быть [объекты socialIdentityProvider.](../resources/socialidentityprovider.md)
+Для Azure AD B2C поставщиками могут быть [объекты socialIdentityProvider](../resources/socialidentityprovider.md)или [объекты appleManagedIdentityProvider.](../resources/applemanagedidentityprovider.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -29,7 +29,7 @@ ms.locfileid: "59045770"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложения|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
+|Для приложений|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
@@ -49,7 +49,7 @@ GET /identity/identityProviders
 
 |Имя|Описание|
 |:---------------|:----------|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -57,9 +57,9 @@ GET /identity/identityProviders
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [socialIdentityProvider](../resources/socialidentityprovider.md) и/или [builtinIdentityProvider](../resources/builtinidentityprovider.md) в тексте ответа для клиента Azure AD.
+В случае успеха этот метод возвращает код отклика и коллекцию `200 OK` [объектов socialIdentityProvider](../resources/socialidentityprovider.md)или [builtinIdentityProvider](../resources/builtinidentityprovider.md) в тексте ответа для клиента Azure AD.
 
-Для клиента Azure AD B2C этот метод возвращает код отклика и коллекцию объектов `200 OK` [socialIdentityProvider](../resources/socialidentityprovider.md) в теле ответа.
+Для клиента Azure AD B2C этот метод возвращает код отклика и коллекцию объектов `200 OK` [socialIdentityProvider](../resources/socialidentityprovider.md)или [объектов appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/v1.0/identity/identityProviders
 ---
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -150,7 +150,7 @@ GET https://graph.microsoft.com/v1.0/identity/identityProviders
 ```
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -175,6 +175,15 @@ Content-type: application/json
             "identityProviderType": "LinkedIn",
             "clientId": "866xc0qtyy00ih",
             "clientSecret": "******"
+        },
+{
+            "@odata.type": "#microsoft.graph.appleManagedIdentityProvider",
+            "id": "Apple-Managed-OIDC",
+            "displayName": "Sign in with Apple",
+            "developerId": "UBF8T346G9",
+            "serviceId": "com.microsoft.aad.b2c.iuyt.client",
+            "keyId": "99P6DD87C4",
+            "certificateData": "******"
         }
     ]
 }

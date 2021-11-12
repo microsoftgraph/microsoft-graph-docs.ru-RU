@@ -1,23 +1,23 @@
 ---
-title: Создание oAuth2PermissionGrant
+title: Создание oAuth2PermissionGrant (делегированная субсидия на разрешение)
 description: Создайте объект oAuth2PermissionGrant, представляющий делегированную выдачу разрешений.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 4e7260407b361eabe17c55af1684d6fc0e269b8b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a66fdbf4addf877e0c3564d25a8a9a39dc20df69
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062924"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60891146"
 ---
-# <a name="create-a-delegated-permission-grant-oauth2permissiongrant"></a>Создание делегированного разрешения (oAuth2PermissionGrant)
+# <a name="create-oauth2permissiongrant-a-delegated-permission-grant"></a>Создание oAuth2PermissionGrant (делегированная субсидия на разрешение)
 
 Пространство имен: microsoft.graph
 
 
-Создание делегированного разрешения. Делегированная выдача разрешений представлена объектом [oAuth2PermissionGrant.](../resources/oauth2permissiongrant.md)
+Создайте делегированную выдачу разрешений, представленную объектом [oAuth2PermissionGrant.](../resources/oauth2permissiongrant.md)
 
 Делегированная выдача разрешений разрешает директору клиентской службы (представляющим клиентскую заявку) получать доступ к директору службы ресурсов (представляющим API) от имени подписанного пользователя, для уровня доступа, ограниченного делегированных разрешений, которые были предоставлены.
 
@@ -29,7 +29,7 @@ ms.locfileid: "59062924"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Directory.ReadWrite.All |
+|Для приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,7 +43,7 @@ POST /oauth2PermissionGrants
 
 | Имя       | Тип | Описание |
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -51,7 +51,15 @@ POST /oauth2PermissionGrants
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика 200-й серии и новый [объект oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика 200-й серии и новый [объект oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) в тексте отклика. В следующей таблице показаны свойства, необходимые при создании [oAuth2PermissionGrant.](../resources/oauth2permissiongrant.md)
+
+| Свойство | Тип | Описание |
+|:---------------|:--------|:----------|
+| clientId | String | ID **директора** клиентской службы для приложения, которому разрешено действовать от имени пользователя, входишего в него, при доступе к API. [](../resources/serviceprincipal.md) Обязательный.  |
+| consentType | String | Указывает, предоставляется ли авторизация клиентского приложения для выдают себя за всех пользователей или только определенного пользователя. *AllPrincipals* указывает авторизацию, чтобы выдать себя за всех пользователей. *Principal* указывает авторизацию, чтобы выдать себя за конкретного пользователя. Согласие от имени всех пользователей может быть предоставлено администратором. В некоторых случаях для некоторых делегированных разрешений пользователям, не относя правительственным администраторам, может быть разрешено согласие от имени самих себя. Обязательный.  |
+| principalId | Строка | ID **пользователя,** от имени которого клиент уполномочен получать доступ к ресурсу, если **consentType** является [](../resources/user.md) *основным.* Если **consentType** *— это AllPrincipals,* это значение является null. Обязательно, когда **consentType** является *основным*. |
+| resourceId | String | ID **главного** ресурса [службы,](../resources/serviceprincipal.md) к которому разрешен доступ. При этом определяется API, который клиент уполномочен пытаться вызвать от имени подписанного пользователя. |
+| scope | String | Разделенный пробелом список значений утверждений для делегирования разрешений, которые должны быть включены в маркеры доступа для приложения-ресурса (API). Например, `openid User.Read GroupMember.Read.All`. Каждое значение утверждения  должно совпадать с полем значения одного из делегированных разрешений, определенных API, перечисленным в свойстве **publishedPermissionScopes** директора [службы ресурсов.](../resources/serviceprincipal.md) |
 
 ## <a name="example"></a>Пример
 
@@ -67,7 +75,6 @@ POST /oauth2PermissionGrants
 ```http
 POST https://graph.microsoft.com/v1.0/oauth2PermissionGrants
 Content-Type: application/json
-Content-Length: 30
 
 {
   "clientId": "clientId-value",

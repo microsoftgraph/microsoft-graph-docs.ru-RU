@@ -2,15 +2,15 @@
 title: 'updatableAsset: unenrollAssets'
 description: Unenroll updatableAsset resources from update management by the deployment service.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 52f509c7086faea453c06ed3b9500e6fb65211e7
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: f2bd14810181f2e804bf3309402c104a33bc9447
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53442868"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890845"
 ---
 # <a name="updatableasset-unenrollassets"></a>updatableAsset: unenrollAssets
 Пространство имен: microsoft.graph.windowsUpdates
@@ -28,7 +28,7 @@ Unenroll [updatableAsset](../resources/windowsupdates-updatableasset.md) resourc
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|WindowsUpdates.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|WindowsUpdates.ReadWrite.All|
+|Для приложений|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,17 +43,17 @@ POST /admin/windows/updates/updatableAssets/unenrollAssets
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В следующей таблице указаны параметры, которые можно использовать с этим действием.
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|updateCategory|microsoft.graph.windowsUpdates.updateCategory|Категория обновлений для службы для остановки управления. Поддерживает подмножество значений **для updateCategory.** Возможные значения: `feature` .|
+|updateCategory|microsoft.graph.windowsUpdates.updateCategory|Категория обновлений для службы для остановки управления. Поддерживает подмножество значений **для updateCategory.** Возможные значения: `feature`, `unknownFutureValue`.|
 |assets|[коллекция microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md)|Список **ресурсов updatableAsset** для отката от управления обновлениями службой для данного **обновленияCategory**.|
 
 

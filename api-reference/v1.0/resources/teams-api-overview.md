@@ -1,20 +1,18 @@
 ---
 title: Работа с Microsoft Teams при помощи API Microsoft Graph
 description: Microsoft Teams — это рабочее пространство с чатами в Microsoft 365, обеспечивающее встроенный доступ к календарям команд, файлам, заметкам OneNote, планам Планировщика и многому другому.
-localization_priority: Priority
+ms.localizationpriority: high
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: f672d9462f6b1df8589747d9dbeb0254098aa70d
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: 4bd125c401847a36271edebe6a6432343bd1f5f3
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58397014"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60891139"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Работа с Microsoft Teams при помощи API Microsoft Graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Microsoft Teams — это рабочее пространство с чатами в Microsoft 365, обеспечивающее встроенный доступ к календарям команд, файлам, заметкам OneNote, планам Планировщика, расписаниям Смен и многому другому.
 

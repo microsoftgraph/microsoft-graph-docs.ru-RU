@@ -1,16 +1,16 @@
 ---
 title: 'cloudPcDeviceImage: getSourceImages'
-description: Просмотр списка всех управляемых ресурсов изображений из подписки Azure. Эти исходные изображения можно загружать и использовать на облачных ПК.
+description: Просмотр списка всех управляемых ресурсов изображений из подписки Azure. Эти исходные изображения можно загрузить и использовать на облачных ПК.
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: fbaa5432a3874e988f644789fc4e2bb65cc27615
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 37d2cf9e908873abff9888a96a24f6d40cbbb298
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766903"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780879"
 ---
 # <a name="cloudpcdeviceimage-getsourceimages"></a>cloudPcDeviceImage: getSourceImages
 
@@ -28,7 +28,7 @@ ms.locfileid: "59766903"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Для приложений|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ GET /deviceManagement/virtualEndpoint/deviceImages/getSourceImages
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 

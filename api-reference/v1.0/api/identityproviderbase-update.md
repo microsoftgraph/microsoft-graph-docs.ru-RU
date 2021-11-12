@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 1849374b40167d684cdd2d38e439615c3182b190
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 246e15f88dae9f30c23de7a4fb384ac602094e02
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59105302"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890327"
 ---
 # <a name="update-identityprovider"></a>Обновление identityProvider
 Пространство имен: microsoft.graph
 
-Обновление свойств указанного поставщика удостоверений в клиенте.
+Обновление свойств указанного поставщика удостоверений, настроенных в клиенте.
 
-Среди типов поставщиков, полученных из identityProviderBase, в настоящее время можно обновить ресурс [socialIdentityProvider](../resources/socialidentityprovider.md) в Azure AD. В Azure AD B2C эта операция может обновить ресурс [socialIdentityProvider.](../resources/socialidentityprovider.md)
+Среди типов поставщиков, полученных из identityProviderBase, в настоящее время можно обновить ресурс [socialIdentityProvider](../resources/socialidentityprovider.md) в Azure AD. В Azure AD B2C эта операция может обновить [socialIdentityProvider](../resources/socialidentityprovider.md)или [ресурс appleManagedIdentityProvider.](../resources/applemanagedidentityprovider.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,14 +46,14 @@ PATCH /identity/identityProviders/{id}
 
 |Имя|Описание|
 |:---------------|:----------|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
-В теле запроса укажи тип OData и объект JSON одним или более свойствами, которые необходимо обновить для объекта [socialIdentityProvider](../resources/socialidentityprovider.md) в клиенте Azure AD.
+В теле запроса укажи объект JSON одним или более свойствами, которые необходимо обновить для объекта [socialIdentityProvider](../resources/socialidentityprovider.md) в клиенте Azure AD.
 
-В Azure AD B2C укажи тип OData и объект JSON одним или более свойствами, которые необходимо обновить для [объекта socialIdentityProvider.](../resources/socialidentityprovider.md)
+В Azure AD B2C предоставить объекту JSON одно или несколько свойств, которые необходимо обновить для [объекта socialIdentityProvider](../resources/socialidentityprovider.md)или [объекта appleManagedIdentityProvider.](../resources/applemanagedidentityprovider.md)
 
 ### <a name="socialidentityprovider-object"></a>объект socialIdentityProvider
 
@@ -63,9 +63,19 @@ PATCH /identity/identityProviders/{id}
 |clientSecret|String|Секрет клиента для приложения, полученный при регистрации приложения с помощью поставщика удостоверений. Только для записи. Операция чтения возвращает `****`.|
 |displayName|String|Отображаемое имя поставщика удостоверений.|
 
+### <a name="applemanagedidentityprovider-object"></a>объект appleManagedIdentityProvider
+
+|Свойство|Тип|Описание|
+|:---------------|:--------|:----------|
+|displayName|String|Отображаемое имя поставщика удостоверений.|
+|developerId|Строка|Идентификатор разработчика Apple.|
+|serviceId|Строка|Идентификатор службы Apple.|
+|keyId|Строка|Идентификатор ключа Apple.|
+|certificateData|Строка|Данные сертификата, являющиеся длинной строкой текста из сертификата. Могут иметь значение NULL.|
+
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `204 No Content`. В случае неудачи возвращается ошибка `4xx` с подробностями.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В случае неудачи возвращается ошибка `4xx` с подробностями.
 
 ## <a name="examples"></a>Примеры
 
@@ -110,8 +120,40 @@ Content-type: application/json
 
 ---
 
+#### <a name="response"></a>Отклик
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-2-update-a-specific-apple-identity-provider-only-for-azure-ad-b2c"></a>Пример 2. Обновление определенного **поставщика удостоверений Apple** (только для Azure AD B2C)
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_appleidentityprovider"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/v1.0/identity/identityProviders/Apple-Managed-OIDC
+Content-type: application/json
+
+{
+  "displayName": "Apple"
+}
+```
 
 #### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",

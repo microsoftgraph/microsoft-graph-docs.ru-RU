@@ -1,25 +1,25 @@
 ---
 author: JeremyKelley
-description: С помощью этого метода приложение может отслеживать изменения drive и соответствующих дочерних элементов.
+description: Отслеживание изменений элемента диска и его детей со временем.
 ms.date: 09/10/2017
-title: Синхронизация содержимого ресурса drive
-localization_priority: Normal
+title: 'driveItem: дельта'
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 483bfdcdd08c5d01f69d1b12455e64b903d9fac8
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: 463e36e54897b6c1a617a66c31c6902ccaad7cb2
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912077"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890299"
 ---
-# <a name="track-changes-for-a-drive"></a>Отслеживание изменений для диска
+# <a name="driveitem-delta"></a>driveItem: дельта
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-С помощью этого метода приложение может отслеживать изменения drive и соответствующих дочерних элементов.
+Отслеживание изменений [в driveItem](../resources/driveitem.md) и его детях с течением времени.
 
 Для начала приложение вызывает `delta` без параметров. Служба начинает перечислять иерархию диска, возвращая страницы элементов и `@odata.nextLink` или `@odata.deltaLink`, как показано ниже. Приложению следует выполнять вызовы с использованием `@odata.nextLink`, пока не будет возвращен отклик без `@odata.nextLink` или с пустым набором изменений.
 
@@ -61,7 +61,17 @@ GET /users/{userId}/drive/root/delta
 
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$select`, `$expand` и `$top` для настройки ответа.
 
-## <a name="response"></a>Ответ
+## <a name="request-headers"></a>Заголовки запросов
+
+|Имя|Описание|
+|:---|:---|
+|Авторизация|Bearer {token}. Обязательный.|
+
+## <a name="request-body"></a>Текст запроса
+
+Не указывайте текст запроса для этого метода.
+
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию ресурсов [DriveItem](../resources/driveitem.md) в теле отклика.
 
@@ -72,11 +82,13 @@ GET /users/{userId}/drive/root/delta
 | **@odata.nextLink**  | url    | URL-адрес для получения следующей доступной страницы изменений, если в текущем наборе есть дополнительные изменения.                                        |
 | **@odata.deltaLink** | url    | URL-адрес, возвращаемый вместо **@odata.nextLink** после возврата всех текущих изменений. Используется для считывания следующего набора изменений в будущем.  |
 
-## <a name="example-initial-request"></a>Пример (первоначальный запрос)
+## <a name="examples"></a>Примеры
+
+### <a name="example-1-initial-request"></a>Пример 1. Начальный запрос
 
 Ниже приведен пример вызова этого API для определения локального состояния.
 
-### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
 
 Ниже приведен пример первоначального запроса.
 
@@ -106,7 +118,7 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta
 ---
 
 
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
@@ -140,11 +152,11 @@ Content-type: application/json
 
 Этот отклик включает первую страницу изменений, а свойство **@odata.nextLink** указывает, что в текущем наборе доступны дополнительные элементы. Ваше приложение должно запрашивать значение URL-адреса, указанного в свойстве **@odata.nextLink**, пока не будут получены все страницы элементов.
 
-## <a name="example-last-page-in-a-set"></a>Пример (последняя страница в наборе)
+### <a name="example-2-last-page-in-a-set"></a>Пример 2. Последняя страница в наборе
 
 Ниже приведен пример вызова этого API для обновления локального состояния.
 
-### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса, выполненного после первоначального.
 
@@ -174,7 +186,7 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta(token='1230919asd190410
 ---
 
 
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
@@ -213,17 +225,17 @@ Content-type: application/json
 | `resyncChangesApplyDifferences`  | Замените все локальные элементы (в том числе удаленные) соответствующими элементами с сервера, если вы уверены, что при последней синхронизации в службу были внесены все локальные изменения. Отправьте все локальные изменения, не загруженные на сервер. |
 | `resyncChangesUploadDifferences` | Отправьте все локальные элементы, не возвращенные службой, и все файлы, отличающиеся от соответствующих файлов на сервере (сохраняйте обе копии, если вы не знаете, какая из них более актуальна).                                       |
 
-## <a name="retrieving-the-current-deltalink"></a>Получение текущего значения deltaLink
+### <a name="example-3-retrieving-the-current-deltalink"></a>Пример 3. Ирисовка текущего deltaLink
 
 В некоторых случаях может быть удобно запросить текущее значение deltaLink, не перечисляя перед этим все элементы, уже хранящиеся в объекте drive.
 
 Это может быть полезно, если приложению достаточно узнать об изменениях и ему не нужны сведения о существующих элементах.
 Чтобы получить последнее значение deltaLink, вызовите функцию `delta` с параметром `?token=latest` в строке запроса.
 
->**Примечание:** Если вы пытаетесь сохранить полное локальное представление элементов в папке или диске, необходимо использовать для первоначального `delta` переозначения.
+> **Примечание:** Если вы пытаетесь сохранить полное локальное представление элементов в папке или диске, необходимо использовать для первоначального `delta` переозначения.
 Другие подходы, такие как прокачив коллекцию папки, не гарантируют возвращение каждого элемента, если записи имеют место во время `children` переуступки. Использование — это единственный способ гарантировать, что вы считыли все `delta` необходимые данные.
 
-### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -251,7 +263,7 @@ GET /me/drive/root/delta?token=latest
 ---
 
 
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 
@@ -262,6 +274,51 @@ Content-type: application/json
 {
     "value": [ ],
     "@odata.deltaLink": "https://graph.microsoft.com/v1.0/me/drive/root/delta?token=1230919asd190410jlka"
+}
+```
+
+### <a name="example-4-retrieving-delta-results-using-a-timestamp"></a>Пример 4. Ирисовка результатов дельты с помощью timestamp
+
+В некоторых сценариях клиент может знать состояние диска до определенного времени, но не имеет deltaLink на данный момент времени. В этом случае клиент может позвонить с помощью url-адреса с кодируемым временем для значения параметра строки запроса, например или `delta` `token` `?token=2021-09-29T20%3A00%3A00Z` '?token=2021-09-29T12%3A00%3A00%2B8%3A00'.
+
+Использование timestamp на месте маркера поддерживается только на OneDrive для бизнеса и SharePoint.
+
+> **Примечание:** Клиенты должны использовать deltaLink, предоставляемый запросами, если это возможно, а не создавать `delta` собственный маркер. Эту возможность следует использовать только в том случае, если неизвестен deltaLink.
+
+
+#### <a name="request"></a>Запрос
+
+
+<!-- { "blockType": "request", "name": "get-delta-timestamp", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
+
+```http
+GET /me/drive/root/delta?token=2021-09-29T20%3A00%3A00Z
+```
+
+
+#### <a name="response"></a>Отклик
+
+<!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.driveItem)", "scope": "file.read" } -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "value": [
+        {
+            "id": "0123456789abc",
+            "name": "folder2",
+            "folder": { },
+            "deleted": { }
+        },
+        {
+            "id": "123010204abac",
+            "name": "file.txt",
+            "file": { }
+        }
+    ],
+    "@odata.deltaLink": "https://graph.microsoft.com/v1.0/me/drive/root/delta?(token='1230919asd190410jlka')"
 }
 ```
 
@@ -276,8 +333,8 @@ Content-type: application/json
     
     | Тип операции | Свойства, опущенные запросом изменений |
     |---------|----------|
-    | Создание или изменение | `ctag`, `lastModifiedBy` |
-    | Удаление | `ctag`, `lastModifiedBy`, `name` |
+    | Создание или изменение | `ctag` |
+    | Удаление | `ctag`, `name` |
 
 
     **OneDrive (для потребителей)**

@@ -1,16 +1,16 @@
 ---
 title: Список людей
 description: Получите коллекцию объектов person, упорядоченных по их релевантности для пользователя, которая определяется его моделями общения и совместной работы, а также бизнес-отношениями.
-author: dkershaw10
+author: anthona
 ms.localizationpriority: high
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 24dc63c927aa82bcaeb7da9463f7364b946c5800
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 61c4de130b4d5c75501e49e1a7d86b35a997e54b
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940190"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780942"
 ---
 # <a name="list-people"></a>Список людей
 
@@ -117,6 +117,7 @@ GET https://graph.microsoft.com/v1.0/me/people
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 1370
 
 {
     "value": [

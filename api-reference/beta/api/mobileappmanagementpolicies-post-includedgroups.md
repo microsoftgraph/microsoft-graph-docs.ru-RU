@@ -2,15 +2,15 @@
 title: Добавление includedGroups
 description: Добавление групп, включенных в политику управления мобильными приложениями.
 author: ravennMSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 23612a1aaa10c1a51af54dd184f6a7ea8497dd2d
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 4e3ad2f0da45082fe1159e4d45ecd9c5c9004246
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440539"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "60780872"
 ---
 # <a name="add-includedgroups"></a>Добавление includedGroups
 
@@ -43,11 +43,11 @@ POST /policies/mobileAppManagementPolicies/{id}/includedGroups/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляют представление JSON [группового](../resources/group.md) объекта.
+В тексте запроса предоставьте описание объекта [group](../resources/group.md) в формате JSON.
 
 В следующей таблице показаны свойства, необходимые при добавлении [группы.](../resources/group.md)
 

@@ -1,22 +1,22 @@
 ---
-title: Получить oAuth2PermissionGrant
+title: Получить oAuth2PermissionGrant (делегированная субсидия на разрешение)
 description: Извлечение свойств и связей одного oAuth2PermissionGrant, представляющего делегированную лицензию.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: e80bc7a94a0375598eaeb2007451504dd9aebaa0
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 5cd6c0321174d4854ee39887b4c67d57cd0b79ff
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59764383"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890838"
 ---
-# <a name="get-a-delegated-permission-grant-oauth2permissiongrant"></a>Получить делегированную субсидию разрешений (oAuth2PermissionGrant)
+# <a name="get-oauth2permissiongrant-a-delegated-permission-grant"></a>Получить oAuth2PermissionGrant (делегированная субсидия на разрешение)
 
 Пространство имен: microsoft.graph
 
-Извлечение свойств одного [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md).
+Извлечение свойств единого делегированного разрешения, представленного объектом [oAuth2PermissionGrant.](../resources/oauth2permissiongrant.md)
 
 **OAuth2PermissionGrant** представляет делегированную разрешений, которые были предоставлены для клиентского приложения для доступа к API от имени подписанного пользователя.
 
@@ -46,7 +46,7 @@ GET /oauth2PermissionGrants/{id}
 
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -68,7 +68,7 @@ GET /oauth2PermissionGrants/{id}
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants/{id}
+GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants/AVs6JuUDjkCFV7q2gd8QTPimBBgj5iBFj0C6GwwRxC0
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-oauth2permissiongrant-csharp-snippets.md)]
@@ -91,6 +91,8 @@ GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants/{id}
 
 ### <a name="response"></a>Отклик
 
+Ниже приведен пример ответа.
+
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -102,15 +104,16 @@ GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants/{id}
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 200
 
 {
-  "id": "id-value",
-  "clientId": "clientId-value",
-  "consentType": "consentType-value",
-  "principalId": "principalId-value",
-  "resourceId": "resourceId-value",
-  "scope": "scope-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#oauth2PermissionGrants/$entity",
+    "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/oauth2PermissionGrants/AVs6JuUDjkCFV7q2gd8QTPimBBgj5iBFj0C6GwwRxC0",
+    "clientId": "263a5b01-03e5-408e-8557-bab681df104c",
+    "consentType": "AllPrincipals",
+    "id": "AVs6JuUDjkCFV7q2gd8QTPimBBgj5iBFj0C6GwwRxC0",
+    "principalId": null,
+    "resourceId": "1804a6f8-e623-4520-8f40-ba1b0c11c42d",
+    "scope": "User.Read Group.ReadWrite.All"
 }
 ```
 

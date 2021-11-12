@@ -2,15 +2,15 @@
 title: тип ресурса deploymentStateReason
 description: Причина конкретного состояния развертывания.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 19a5063cd4f103b0f065311118bc5d8ac97a3c7a
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 54240d057734d17df3e0df3a270d1aab00022586
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52068209"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890453"
 ---
 # <a name="deploymentstatereason-resource-type"></a>тип ресурса deploymentStateReason
 
@@ -23,7 +23,7 @@ ms.locfileid: "52068209"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|значение|microsoft.graph.windowsUpdates.deploymentStateReasonValue|Указывает причину состояния развертывания. Возможные значения: `scheduledByOfferWindow`, `offeringByRequest`, `pausedByRequest`, `pausedByMonitoring`. Только для чтения.|
+|значение|microsoft.graph.windowsUpdates.deploymentStateReasonValue|Указывает причину состояния развертывания. Возможные значения: `scheduledByOfferWindow`, `offeringByRequest`, `pausedByRequest`, `pausedByMonitoring`. Обратите внимание, что вы должны использовать загон запроса, чтобы получить следующее значение `Prefer: include-unknown-enum-members` (ы) в этом [развиваемом переуме:](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `faultedByContentOutdated` . Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

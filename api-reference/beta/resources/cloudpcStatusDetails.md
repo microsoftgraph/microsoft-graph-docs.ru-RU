@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: ae9054e92279d976d65aafc72ac2c38190c88b84
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 28735467ef1bc233f5ba6d5ecc3144d64e31df3e
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507818"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780900"
 ---
 # <a name="cloudpcstatusdetails-resource-type"></a>тип ресурса cloudPcStatusDetails
 
@@ -28,7 +28,7 @@ ms.locfileid: "59507818"
 |message|String|Сообщение о состоянии.|
 |additionalInformation|[Коллекция KeyValuePair](../resources/keyvaluepair.md)|Любые дополнительные сведения о состоянии облачного КОМПЬЮТЕРА.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

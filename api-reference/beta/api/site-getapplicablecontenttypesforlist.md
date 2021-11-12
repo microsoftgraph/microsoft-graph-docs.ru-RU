@@ -2,15 +2,15 @@
 author: swapnil1993
 title: 'сайт: getApplicableContentTypesForList'
 description: Получите типы контента сайта, которые можно добавить в список.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 1f12207271ee292031da7e69f534300188514f6d
-ms.sourcegitcommit: 998c63e6290cfb5ad4a6bd3eb3e249d282f962a3
+ms.openlocfilehash: b14a400479f62328b12f2a575dfaa4a034dbfa72
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58531350"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780848"
 ---
 # <a name="site-getapplicablecontenttypesforlist"></a>сайт: getApplicableContentTypesForList
 Пространство имен: microsoft.graph
@@ -27,7 +27,7 @@ ms.locfileid: "58531350"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+|Для приложений | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,7 +43,7 @@ GET /sites/{siteId}/getApplicableContentTypesForList
 
 |Параметр|Тип|Описание|
 |-|-|-|
-|listId| String | GUID списка, для которого необходимо извлечь соответствующие типы контента. Обязательный. |
+|listId| String | GUID списка, для которого необходимо извлечь соответствующие типы контента. Обязательно. |
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
@@ -54,7 +54,7 @@ GET /sites/{siteId}/getApplicableContentTypesForList
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -74,7 +74,7 @@ GET /sites/{siteId}/getApplicableContentTypesForList
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/sites/{siteId}/getApplicableContentTypesForList(listId='listId')
+GET https://graph.microsoft.com/beta/sites/{siteId}/getApplicableContentTypesForList(listId='{list-id}')
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/site-getapplicablecontenttypesforlist-csharp-snippets.md)]

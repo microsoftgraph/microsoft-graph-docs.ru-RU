@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 50be0c9d90e502c73baa6f4dc91174bbc8b2be73
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 453dfe770bf64bd02e6d3e401aebf683820e4c3a
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60937370"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890557"
 ---
 # <a name="list-submissions"></a>Отправки списков
 
@@ -100,6 +100,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 873
 
 {
     "value": [

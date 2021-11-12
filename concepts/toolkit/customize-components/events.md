@@ -3,12 +3,12 @@ title: Обработка событий, открытых Graph набор ср
 description: Многие компоненты Graph набор средств Майкрософт выделяют настраиваемые события. Присоединение обработчиков событий к этим событиям позволяет отвечать на них и контролировать поведение приложения.
 ms.localizationpriority: medium
 author: waldekmastykarz
-ms.openlocfilehash: e58cda326bf939ad5d0850336e7d02739d372133
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 31dacb14c4b4faacc7f97626fef0977bbf74b443
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129595"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890593"
 ---
 # <a name="handle-events-exposed-by-microsoft-graph-toolkit-components"></a>Обработка событий, открытых Graph набор средств компонентов Майкрософт
 
@@ -28,7 +28,7 @@ ms.locfileid: "59129595"
 Например, для обработки события, излучаемого компонентом `itemClick` списка файлов, добавьте в код следующее.
 
 ```javascript
-document.querySelector('mgt-file-list').addEventListener('itemClick' e => {
+document.querySelector('mgt-file-list').addEventListener('itemClick', e => {
   // your event handler code goes here
 });
 ```

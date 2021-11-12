@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 443d2e50f9bb480290874c976132e28e72ea94a5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 243b7e7f78c0376a8ee77f3849204b74e9e47862
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147390"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890334"
 ---
 # <a name="get-identityprovider"></a>Получение identityProvider
 Пространство имен: microsoft.graph
 
-Получите свойства и связи указанного поставщика удостоверений в клиенте.
+Получите свойства и связи указанного поставщика удостоверений, настроенные в клиенте.
 
-Среди типов поставщиков, полученных из identityProviderBase, в настоящее время можно получить [socialIdentityProvider](../resources/socialidentityprovider.md) или [ресурс builtinIdentityProvider](../resources/builtinidentityprovider.md) в Azure AD. В Azure AD B2C эта операция в настоящее время может получить [ресурс socialIdentityProvider.](../resources/socialidentityprovider.md)
+Среди типов поставщиков, полученных из identityProviderBase, в настоящее время можно получить [socialIdentityProvider](../resources/socialidentityprovider.md) или [ресурс builtinIdentityProvider](../resources/builtinidentityprovider.md) в Azure AD. В Azure AD B2C эта операция в настоящее время может получить [socialIdentityProvider](../resources/socialidentityprovider.md)или [ресурс appleManagedIdentityProvider.](../resources/applemanagedidentityprovider.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,9 +47,9 @@ GET /identity/identityProviders/{id}
 
 |Имя|Описание|
 |:---------------|:----------|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -57,7 +57,7 @@ GET /identity/identityProviders/{id}
 
 В случае успеха этот метод возвращает код отклика и представление JSON для `200 OK` [socialIdentityProvider](../resources/socialidentityprovider.md) или [builtinIdentityProvider](../resources/builtinidentityprovider.md) в тексте ответа для клиента Azure AD.
 
-Для клиента Azure AD B2C этот метод возвращает код ответа и представление JSON объекта `200 OK` [socialIdentityProvider](../resources/socialidentityprovider.md) в тексте ответа.
+Для клиента Azure AD B2C этот метод возвращает код отклика и представление JSON объекта `200 OK` [socialIdentityProvider](../resources/socialidentityprovider.md) или [объекта appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/v1.0/identity/identityProviders/Amazon-OAUTH
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -157,7 +157,7 @@ GET https://graph.microsoft.com/v1.0/identity/identityProviders/MSASignup-OAUTH
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -174,5 +174,46 @@ Content-type: application/json
     "id": "MSASignup-OAUTH",
     "identityProviderType": "MicrosoftAccount",
     "displayName": "MicrosoftAccount"
+}
+```
+
+### <a name="example-3-retrieves-apple-identity-provideronly-for-azure-ad-b2c"></a>Пример 3. Извлечение поставщика удостоверений Apple (только для Azure AD B2C)
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_applemanagedidentityprovider_from_identityproviderbase"
+}
+-->
+
+```http
+GET https://graph.microsoft.com/v1.0/identity/identityProviders/Apple-Managed-OIDC
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.appleManagedIdentityProvider"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "id": "Apple-Managed-OIDC",
+    "displayName": "Sign in with Apple",
+    "developerId": "UBF8T346G9",
+    "serviceId": "com.microsoft.rts.b2c.test.client",
+    "keyId": "99P6D879C4",
+    "certificateData": "******"
 }
 ```

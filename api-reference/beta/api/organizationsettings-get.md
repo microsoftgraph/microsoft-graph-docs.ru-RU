@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 9fcbe8041bd421d2d69cffb49814af82453a3a56
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1feebfb659907796d424e7daac474268aa11f4b9
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59763942"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780494"
 ---
 # <a name="get-organizationsettings"></a>Get organizationSettings
 
@@ -20,7 +20,7 @@ ms.locfileid: "59763942"
 
 Извлечение свойств и связей объекта [organizationSettings,](../resources/organizationsettings.md) включая **profileCardProperties.**
 
-Эта операция не возвращает [itemInsightsSettings](../resources/iteminsightssettings.md) через **свойство навигации itemInsights.** Вместо [этого используйте get itemInsightsSettings.](iteminsightssettings-get.md)
+Эта операция не возвращает [insightsSettings](../resources/insightssettings.md). В зависимости от типа анализа можно получить их параметры с помощью [list itemInsights](organizationsettings-list-iteminsights.md) или [list peopleInsights.](organizationsettings-list-peopleinsights.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -50,7 +50,7 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings
 
 | Имя          |Описание                  |
 |:--------------|:----------------------------|
-| Авторизация | Bearer {токен}. Обязательный.   |
+| Авторизация | Bearer {token}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса

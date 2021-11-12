@@ -1,16 +1,16 @@
 ---
 title: Список людей
 description: Получение списка объектов person, упорядоченных по их релевантности для пользователя, которая определяется его моделями общения и совместной работы, а также бизнес-отношениями.
-author: dkershaw10
+author: anthona
 ms.localizationpriority: medium
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 32caf72c3eb59589889827389c0cd2f4ab26c267
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: e28372da45a246e92b696f8e8b7ed79e5e7cb050
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60946055"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780495"
 ---
 # <a name="list-people"></a>Список людей
 
@@ -26,9 +26,9 @@ ms.locfileid: "60946055"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | People.Read    |
+|Делегированные (рабочая или учебная учетная запись) | People.Read, People.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | People.Read    |
-|Для приложений | Не поддерживается. |
+|Для приложений | People.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -123,6 +123,7 @@ GET https://graph.microsoft.com/beta/me/people
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 1326
 
 {
     "value": [

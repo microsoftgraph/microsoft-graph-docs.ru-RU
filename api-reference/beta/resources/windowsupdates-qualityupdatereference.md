@@ -2,15 +2,15 @@
 title: тип ресурса qualityUpdateReference
 description: Представляет Windows 10 обновления качества.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: ca416ba5031e4642a073f4796ee27996d22f0f5a
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: bae1315caf6efd2096f9039ca774db18f0b6b764
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52068079"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890761"
 ---
 # <a name="qualityupdatereference-resource-type"></a>тип ресурса qualityUpdateReference
 
@@ -27,8 +27,8 @@ ms.locfileid: "52068079"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|classification|microsoft.graph.windowsUpdates.qualityUpdateClassification|Указывает классификацию указанного контента. Поддерживает подмножество значений **для qualityUpdateClassification.** Возможные значения: `security` .|
-|releaseDateTime|DateTimeOffset|Указывает обновление качества в указанной службеChannel с указанной классификацией по дате (например, последнее обновление, опубликованное в указанную дату). Значение по умолчанию — безопасность.|
+|classification|microsoft.graph.windowsUpdates.qualityUpdateClassification|Указывает классификацию указанного контента. Поддерживает подмножество значений **для qualityUpdateClassification.** Возможные значения: `security`, `unknownFutureValue`.|
+|releaseDateTime|DateTimeOffset|Указывает обновление качества в указанной службеChannel с указанной классификацией по дате (например, последнее обновление, опубликованное в указанную дату). Значение по умолчанию — `security`.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

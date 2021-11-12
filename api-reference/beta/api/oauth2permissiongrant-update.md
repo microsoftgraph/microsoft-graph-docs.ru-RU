@@ -1,20 +1,18 @@
 ---
-title: Обновление oAuth2PermissionGrant
+title: Обновление oAuth2PermissionGrant (делегированная субсидия на разрешение)
 description: Обновление свойств oAuth2PermissionGrant, представляющего делегированную лицензию.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 0c9d3f60eeff2edd01d6926fb2fed18a3e508db4
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8fd52aa0dabfb0f69423aea9921f72892b3a2f3e
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447942"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890152"
 ---
-# <a name="update-a-delegated-permission-grant-oauth2permissiongrant"></a>Обновление делегированного разрешения (oAuth2PermissionGrant)
-
-Пространство имен: microsoft.graph
+# <a name="update-oauth2permissiongrant-a-delegated-permission-grant"></a>Обновление oAuth2PermissionGrant (делегированная субсидия на разрешение)
 
 Пространство имен: microsoft.graph
 
@@ -32,7 +30,7 @@ ms.locfileid: "50447942"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Directory.ReadWrite.All |
+|Для приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -44,9 +42,9 @@ PATCH /oauth2PermissionGrants/{id}
 
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 

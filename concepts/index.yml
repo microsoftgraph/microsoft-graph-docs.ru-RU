@@ -61,7 +61,7 @@ conceptualContent:
         - url: ./excel-concept-overview.md
           itemType: overview
           text: Чтение и изменение Excel файлов.
-    - title: Управление удостоверениями и доступом
+    - title: Управление идентификацией и доступом
       links:
         - url: ./azuread-identity-access-management-concept-overview.md
           itemType: overview
@@ -83,7 +83,7 @@ tools:
     - title: Песочница Graph
       imageSrc: ./images/hub/icon03-graphexplorer.svg
       url: 'https://developer.microsoft.com/graph/graph-explorer/'
-    - title: Набор средств Microsoft Graph
+    - title: Microsoft Graph Toolkit
       imageSrc: ./images/hub/icon04-graphtoolkit.svg
       url: ./toolkit/overview.md
 additionalContent:
@@ -94,8 +94,12 @@ additionalContent:
           links:
             - text: Основные Graph Microsoft
               url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-fundamentals/'
+            - text: Создание приложений с помощью Microsoft Graph — сопоставление
+              url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-associate/'
             - text: Обзор сценариев Microsoft Graph для разработки JavaScript
               url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-scenarios'
+            - text: Обзор сценариев Microsoft Graph для разработки ASP.NET Core
+              url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-dotnet-core-scenarios/'
             - text: Разработка приложений с помощью Microsoft Graph набор средств
               url: 'https://docs.microsoft.com/learn/paths/m365-msgraph-toolkit'
         - title: Практическое руководство

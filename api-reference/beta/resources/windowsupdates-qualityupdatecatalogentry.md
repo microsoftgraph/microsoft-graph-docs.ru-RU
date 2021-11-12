@@ -2,15 +2,15 @@
 title: тип ресурса qualityUpdateCatalogEntry
 description: Метаданные для обновления Windows 10 качества, которое можно утвердить для развертывания.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: f455919bfc3d5f0e6c4e2aa5ef6a6b630b66bc52
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 23301d5de5d089ed47dc884ad62a88b0660cd0ec
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52068082"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60891181"
 ---
 # <a name="qualityupdatecatalogentry-resource-type"></a>тип ресурса qualityUpdateCatalogEntry
 
@@ -29,9 +29,9 @@ Windows 10 обновления качества выпускаются один
 |:---|:---|:---|
 |deployableUntilDateTime|DateTimeOffset|Дата, в которую контент больше не доступен для развертывания с помощью службы. Только для чтения. Унаследовано от [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
 |displayName|String|Отображение имени контента. Только для чтения. Унаследовано от [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
-|id|String|Уникальный идентификатор для записи каталога. Только для чтения. Унаследовано от [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
-|isExpeditable|Логический|Указывает, можно ли развертывать контент в качестве ускоренного обновления качества. Только для чтения.|
-|qualityUpdateClassification|microsoft.graph.windowsUpdates.qualityUpdateClassification|Классификация обновления качества. Поддерживает подмножество значений **для qualityUpdateClassification.** Возможные значения: `all`, `security`, `nonSecurity`. Только для чтения.|
+|id|Строка|Уникальный идентификатор для записи каталога. Только для чтения. Унаследовано от [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
+|isExpeditable|Логическое|Указывает, можно ли развертывать контент в качестве ускоренного обновления качества. Только для чтения.|
+|qualityUpdateClassification|microsoft.graph.windowsUpdates.qualityUpdateClassification|Классификация обновления качества. Возможные значения: `all`, `security`, `nonSecurity`, `unknownFutureValue`. Только для чтения.|
 |releaseDateTime|DateTimeOffset|Дата выпуска контента. Только для чтения. Унаследовано от [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).|
 
 ## <a name="relationships"></a>Связи

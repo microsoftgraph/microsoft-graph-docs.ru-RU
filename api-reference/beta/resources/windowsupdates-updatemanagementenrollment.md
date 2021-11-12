@@ -2,15 +2,15 @@
 title: тип ресурса updateManagementEnrollment
 description: Представляет регистрацию в управлении службой определенной категории обновлений.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 1d00bc152d5fc3b7b4be267cd3ea56fab52b8b38
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 8d780894e90a1f6eec748a9f62f486b39d3c6cfb
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067492"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890187"
 ---
 # <a name="updatemanagementenrollment-resource-type"></a>тип ресурса updateManagementEnrollment
 
@@ -25,7 +25,7 @@ ms.locfileid: "52067492"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|updateCategory|microsoft.graph.windowsUpdates.updateCategory|Категория обновлений, управляемых службой. Поддерживает подмножество значений **для updateCategory.** Возможные значения: `feature` .|
+|updateCategory|microsoft.graph.windowsUpdates.updateCategory|Категория обновлений, управляемых службой. Поддерживает подмножество значений **для updateCategory.** Возможные значения: `feature`, `unknownFutureValue`.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

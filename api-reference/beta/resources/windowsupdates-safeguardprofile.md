@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: d6df910ceff9e726c9a6aae3b847aa0478a7b107
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 8c528111af41ee3340a58402f66d2e4ac5410aca
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60697396"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890124"
 ---
 # <a name="safeguardprofile-resource-type"></a>тип ресурса safeguardProfile
 
@@ -23,7 +23,7 @@ ms.locfileid: "60697396"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|category|microsoft.graph.windowsUpdates.safeguardCategory|Указывает категорию гарантий. Возможные значения: `likelyIssues` .|
+|category|microsoft.graph.windowsUpdates.safeguardCategory|Указывает категорию гарантий. Возможные значения: `likelyIssues` , `unknownFutureValue` .|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

@@ -2,15 +2,15 @@
 title: тип ресурса monitoringRule
 description: Правило, определяющее сигнал и пороговое значение для мониторинга, а также действия, выполняемые при выполнении.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 305db31c935329574a2b7d52403dc7664ff53f66
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 376de8e06d5fee242dc068362a4daaa99c977cd2
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52068088"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890439"
 ---
 # <a name="monitoringrule-resource-type"></a>тип ресурса monitoringRule
 
@@ -23,8 +23,8 @@ ms.locfileid: "52068088"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|action|microsoft.graph.windowsUpdates.monitoringAction|    Действие, срабатывае при превышении порогового значения для данного сигнала. Возможные значения: `alertError`, `pauseDeployment`.|
-|сигнал|microsoft.graph.windowsUpdates.monitoringSignal|Сигнал для мониторинга. Возможные значения: `rollback` .|
+|action|microsoft.graph.windowsUpdates.monitoringAction|    Действие, срабатывае при превышении порогового значения для данного сигнала. Возможные значения: `alertError`, `pauseDeployment`, `unknownFutureValue`.|
+|сигнал|microsoft.graph.windowsUpdates.monitoringSignal|Сигнал для мониторинга. Возможные значения: `rollback`, `unknownFutureValue`.|
 |пороговое значение|Int32|Пороговое значение для сигнала, с которого можно запускать действие. Включительно от 1 до 100 ( включительно).|
 
 ## <a name="relationships"></a>Связи

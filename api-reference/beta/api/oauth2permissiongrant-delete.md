@@ -1,26 +1,24 @@
 ---
-title: Удаление oAuth2PermissionGrant
+title: Удаление oAuth2PermissionGrant (делегированная субсидия на разрешение)
 description: Удаление oAuth2PermissionGrant, представляющего делегированную выдачу разрешений.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 5afc9eccf2447b52004ed63fcec6cbbe13438d6e
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: cd3a2da6a11aebadce3ede7264851d9e8d8be7f9
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60288344"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890950"
 ---
-# <a name="delete-a-delegated-permission-grant-oauth2permissiongrant"></a>Удаление делегированного разрешения (oAuth2PermissionGrant)
-
-Пространство имен: microsoft.graph
+# <a name="delete-oauth2permissiongrant-a-delegated-permission-grant"></a>Удаление oAuth2PermissionGrant (делегированная субсидия на разрешение)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md).
+Удалите [oAuth2PermissionGrant,](../resources/oauth2permissiongrant.md)представляющий делегированную лицензию.
 
 При удалении делегированного разрешения доступ, предоставленный им, отменяется. Существующие маркеры доступа будут по-прежнему действительны для их срока службы, но новые маркеры доступа не будут предоставлены для делегирования разрешений, выявленных в удаленной **oAuth2PermissionGrant**.
 
@@ -35,7 +33,7 @@ ms.locfileid: "60288344"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | Directory.ReadWrite.All |
+|Для приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -94,7 +92,7 @@ DELETE https://graph.microsoft.com/beta/oauth2PermissionGrants/{id}
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",

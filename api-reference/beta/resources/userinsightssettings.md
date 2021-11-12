@@ -1,16 +1,16 @@
 ---
 title: тип ресурса userInsightsSettings
 description: Представляет параметры конфиденциальности пользователей для анализа элементов и данных о часах собраний.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: simonhult
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 5ecc9277d0bd98df99387a5dd222998074c6eb1b
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 723f1ca8d0a56116039ae3f85eb0d534c3525972
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53109217"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780893"
 ---
 # <a name="userinsightssettings-resource-type"></a>тип ресурса userInsightsSettings
 
@@ -23,21 +23,21 @@ ms.locfileid: "53109217"
 - Сведения о элементах. Вычисляется связь между пользователями и элементами, такими как документы или сайты в Microsoft 365.  
 - Сведения о часах собраний: вычисляет часы собраний календаря на основе действий в Word, Excel, PowerPoint, электронной почте и Outlook в Microsoft 365.
 
-Используйте [ресурс itemInsightsSettings,](iteminsightssettings.md) чтобы отключить/включить вычисления и видимость анализа элементов и сведения о часах собраний на уровне организации.
+Используйте [ресурс insightsSettings,](insightssettings.md) чтобы отключить/включить вычисления и видимость элементов, сведения о часах собраний или сведения о человеке на уровне организации.
 
 ## <a name="methods"></a>Методы
 
 | Метод                                                 | Возвращаемый тип                                                   | Описание                                                                                        |
 |:-------------------------------------------------------|:--------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
 | [получение](../api/userinsightssettings-get.md);       | [userInsightsSettings](userinsightssettings.md) | Ознакомьтесь с свойствами **объекта userinsightsettings.**  |
-| [Обновление](../api/userinsightssettings-update.md) | [userInsightsSettings](userinsightssettings.md) | Обновление свойств объекта **userinsightsettings.** |
+| [Update](../api/userinsightssettings-update.md) | [userInsightsSettings](userinsightssettings.md) | Обновление свойств объекта **userinsightsettings.** |
 
 ## <a name="properties"></a>Свойства
 | Свойство                   | Тип                                                  | Описание                                                                                                                                                         |
 |----------------------------|-------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| isEnabled     | Boolean  |  `true` если включены **сведения о элементах itemInsights и** часах собраний; `false` если сведения о **элементах itemInsights и** время собраний отключены. Значение по умолчанию: `true`. Необязательно.|
+| isEnabled     | Boolean  |  `true` если включены **сведения о элементах itemInsights и** часах собраний; `false` если сведения о **элементах itemInsights и** время собраний отключены. Значение по умолчанию: `true`. Необязательное.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

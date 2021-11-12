@@ -2,15 +2,15 @@
 title: teamsAppRemovedEventMessageDetail resource type
 description: Представляет сведения об удалении сообщения о событиях teamsApp.
 author: RamjotSingh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 24d080e77d679e0e12970be2b78ea3af7b4d6668
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: b08519771e90cf52a2701898a0cea56d7e049aa3
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53535808"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890971"
 ---
 # <a name="teamsappremovedeventmessagedetail-resource-type"></a>teamsAppRemovedEventMessageDetail resource type
 
@@ -18,8 +18,8 @@ ms.locfileid: "53535808"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет сведения об удалении сообщения о событиях teamsApp.
-Это сообщение создается, когда teamsApp удаляется из канала, чата или группы.
+Представляет сведения о сообщении события об удалении **teamsApp.**
+Это сообщение создается, когда **teamsApp** удаляется из канала, чата или группы.
 
 
 Наследует [от eventMessageDetail](../resources/eventmessagedetail.md).
@@ -28,8 +28,8 @@ ms.locfileid: "53535808"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |initiator|[identitySet](../resources/identityset.md)|Инициатор события.|
-|teamsAppDisplayName|Строка|Отображение имени teamApp.|
-|teamsAppId|Строка|Уникальный идентификатор teamsApp.|
+|teamsAppDisplayName|String|Отображение имени **teamsApp**.|
+|teamsAppId|String|Уникальный идентификатор **teamsApp**.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
