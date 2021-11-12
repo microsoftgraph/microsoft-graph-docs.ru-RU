@@ -5,12 +5,12 @@ author: akumar39
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: de1744c5b0570f8bb2833190522acef894a0093f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6aa32908337a4178ebc0620088f6a3b30e788b62
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104651"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946946"
 ---
 # <a name="replace-timeoff"></a>Замена timeOff
 
@@ -44,7 +44,7 @@ PUT /teams/{teamId}/schedule/timesOff/{timeOffId}
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -111,7 +111,7 @@ Prefer: return=representation
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
@@ -123,7 +123,6 @@ Prefer: return=representation
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",

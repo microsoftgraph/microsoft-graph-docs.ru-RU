@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 97cf832f2cb65045c51e4f1407dd1a1d4369a89a
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: 0883a49f023b99cde4b878f0a8e24469a05ecce0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220607"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935930"
 ---
 # <a name="get-emailauthenticationmethodconfiguration"></a>Получить emailAuthenticationMethodConfiguration
 
@@ -51,13 +51,13 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешной работы этот метод возвращает код отклика и объект `200 OK` [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) в тексте ответа.
 
@@ -107,7 +107,6 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/ema
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-length: 491
 
 {
    "value":{

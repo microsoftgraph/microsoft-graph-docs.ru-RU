@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: d827c15efa7f33819d1abbc67046695fcae31284
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 61b940915fa6a4f86b8169c67aa32dc403ca298d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694738"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943194"
 ---
 # <a name="list-privilegedapproval"></a>Перечисление privilegedApproval
 
@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/beta/privilegedApproval
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 246
 
 {
   "value": [

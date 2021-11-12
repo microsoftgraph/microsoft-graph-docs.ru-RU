@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 783384d3f762f01b773a585cfab79b3d9dbdb342
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: de7790f0bee842495777372baa28682ef6ef581f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561810"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926387"
 ---
 # <a name="create-authorednote"></a>Создание authoredNote
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "60561810"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|SubjectRightsRequest.ReadWrite.All*|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|Не поддерживается|
+|Для приложений|Не поддерживается|
 
 >[!IMPORTANT]
 >Разрешения, отмеченные звездочкой (*), в настоящее время недоступны. Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues#compliance).
@@ -74,7 +74,6 @@ POST /privacy/subjectRightsRequests/{subjectRightsRequestId}/notes
 ``` http
 POST https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRightsRequestId}/notes
 Content-Type: application/json
-Content-length: 203
 
 {
 "content": 

@@ -1,16 +1,16 @@
 ---
 title: Обновление legalHold
 description: Обновление свойств объекта legalHold.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 3bee140093a74f335d9316d8785189350ae29f19
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 44fd89ca07af71959093d1c7c05aac0b87e9a59f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786806"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925582"
 ---
 # <a name="update-legalhold"></a>Обновление legalHold
 
@@ -45,7 +45,7 @@ PATCH /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -78,7 +78,6 @@ PATCH /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}
 ``` http
 PATCH https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}
 Content-Type: application/json
-Content-length: 295
 
 {
   "description": "This is a description for a legalHold"

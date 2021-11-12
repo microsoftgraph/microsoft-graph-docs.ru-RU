@@ -2,15 +2,15 @@
 title: Список объектов recentPlans
 description: Получение списка объектов plannerPlan, недавно просмотренных пользователем. Вы можете обновить недавно просмотримые планы, обновив ресурс plannerUser.
 author: TarkanSevilmis
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 30409a99c089d490398b433b9bcd280240455ba8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f1a2f193c38b49392837e1c8b48a015063205a99
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049942"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946694"
 ---
 # <a name="list-recentplans"></a>Список объектов recentPlans
 
@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/beta/me/planner/recentPlans
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 979
 
 {
   "value": [

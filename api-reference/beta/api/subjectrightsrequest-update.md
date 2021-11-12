@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 648b1aa8a119964f9600a6f1d6e2549fab7c07c5
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: e39ef15a3fb49138a475980a9e347505a4b48b16
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60559610"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926380"
 ---
 # <a name="update-subjectrightsrequest"></a>Обновление subjectRightsRequest
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "60559610"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|SubjectRightsRequest.ReadWrite.All*|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|Не поддерживается|
+|Для приложений|Не поддерживается|
 
 >[!IMPORTANT]
 >Разрешения, отмеченные звездочкой (*), в настоящее время недоступны. Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues#compliance).
@@ -55,8 +55,8 @@ PATCH /privacy/subjectRightsRequests/{subjectRightsRequestId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |assignedTo|[microsoft.graph.identity](../resources/identity.md)|Сведения о удостоверениях пользователя, на который назначен запрос.|
-|description|Строка|Обновленное описание запроса.|
-|displayName|Строка|Обновленное имя запроса.|
+|description|String|Обновленное описание запроса.|
+|displayName|String|Обновленное имя запроса.|
 |internalDueDateTime|DateTimeOffset|Обновлена внутренняя дата задатки запроса.|
 
 ## <a name="response"></a>Отклик
@@ -76,7 +76,6 @@ PATCH /privacy/subjectRightsRequests/{subjectRightsRequestId}
 ``` http
 PATCH https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRightsRequestId}
 Content-Type: application/json
-Content-length: 837
 
 {
   "@odata.type": "#microsoft.graph.subjectRightsRequest",

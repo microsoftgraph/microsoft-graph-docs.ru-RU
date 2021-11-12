@@ -2,15 +2,15 @@
 title: Перечисление фотографий
 description: Получение списка объектов profilePhoto.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6d3bdecfd318cd0413f69cbce366b1d5d46c10cd
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: fbb2ec1fcc4343c973893cd9b7010709a093f604
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681531"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947722"
 ---
 # <a name="list-photos"></a>Перечисление фотографий
 
@@ -27,7 +27,7 @@ ms.locfileid: "52681531"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadBasic.All, Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Group.ReadBasic.All, Group.Read.All, Group.ReadWrite.All |
+|Для приложений | Group.ReadBasic.All, Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ GET /users/{id | userPrincipalName}/joinedGroups/{id}/photos
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/photos
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/groups/{id}/photos
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 94
 
 {
   "value": [

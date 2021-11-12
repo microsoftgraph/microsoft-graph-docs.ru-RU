@@ -2,15 +2,15 @@
 title: 'mailFolder: move'
 description: Перемещение папки почты со всем ее содержимым в другую папку почты.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 989104dc6b4244bd38def513e18557d9576b8b15
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e00c8d17388b23ca2d353096517f9af287dee103
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053022"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60934117"
 ---
 # <a name="mailfolder-move"></a>mailFolder: move
 
@@ -75,7 +75,6 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/move
 ```http
 POST https://graph.microsoft.com/beta/me/mailFolders/{id}/move
 Content-type: application/json
-Content-length: 44
 
 {
   "destinationId": "destinationId-value"
@@ -114,7 +113,6 @@ Content-length: 44
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
 
 {
   "displayName": "displayName-value",

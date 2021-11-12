@@ -2,15 +2,15 @@
 title: Получение educationUser
 description: Получение свойств и связей пользователя.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 893f484eaf03ef5102a22e70fdb946251af0cbd9
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bda80d324ca9eeb37ed9c6330bed34b092cfeec8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042893"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947331"
 ---
 # <a name="get-educationuser"></a>Получение educationUser
 
@@ -53,7 +53,7 @@ GET /education/users/{id}
 
 | Заголовок        | Значение                     |
 | :------------ | :------------------------ |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -116,7 +116,6 @@ GET https://graph.microsoft.com/beta/education/users/13012
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 508
 
 {
   "id": "13012",

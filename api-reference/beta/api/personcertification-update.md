@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: eadaf0997d673fff4c3e4ca10f439be2c7577762
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 45f6e68a532df54af1a625878b7bcf9af909fdfd
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59120796"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938660"
 ---
 # <a name="update-personcertification"></a>Обновление personCertification
 Пространство имен: microsoft.graph
@@ -41,7 +41,7 @@ PATCH /users/{id | userPrincipalName}/profile/certifications/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -79,7 +79,6 @@ PATCH /users/{id | userPrincipalName}/profile/certifications/{id}
 ``` http
 PATCH https://graph.microsoft.com/beta/users/{userId}/profile/certifications/{id}
 Content-Type: application/json
-Content-length: 497
 
 {
   "issuingAuthority": "International Academy of Marketing Excellence",

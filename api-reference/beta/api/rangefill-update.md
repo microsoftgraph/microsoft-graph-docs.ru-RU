@@ -2,15 +2,15 @@
 title: Обновление объекта rangeFill
 description: Обновление свойств объекта rangefill.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2f88d753e8d8e5a541c42feca9bd60084a41412e
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: dd9924d469b0bfa342bae0ce25287f828061114e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52785888"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947170"
 ---
 # <a name="update-rangefill"></a>Обновление объекта rangeFill
 
@@ -41,7 +41,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/r
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -66,7 +66,6 @@ PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/r
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/format/fill
 Content-type: application/json
-Content-length: 28
 
 {
   "color": "color-value"
@@ -98,7 +97,6 @@ Content-length: 28
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 28
 
 ```
 

@@ -2,15 +2,15 @@
 title: Обновление сообщения
 description: Обновление свойств объекта сообщения.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 675e27cb97831dbbf9136c650853d150d8bb80e4
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 0cd90fc8761be9bebb4cd04f66b190d483c49169
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58821153"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942151"
 ---
 # <a name="update-message"></a>Обновление сообщения
 
@@ -39,7 +39,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 | Content-Type | string  | Характер данных в теле объекта. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -83,7 +83,6 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/me/messages/{id}
 Content-type: application/json
-Content-length: 248
 
 {
   "subject": "subject-value",
@@ -118,7 +117,6 @@ Content-length: 248
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 248
 
 {
   "receivedDateTime": "2016-10-19T10:37:00Z",

@@ -1,16 +1,16 @@
 ---
 title: Начните синхронизацию после отправки файлов в educationSynchronizationProfile
 description: Проверка файлов, загруженных в определенный профиль синхронизации школьных данных в клиенте. Если проверка будет успешной, в профиле начнется синхронизация. В противном случае ответ будет содержать ошибки и предупреждения. Если ответ содержит ошибки, синхронизация не начнется. Если ответ содержит только предупреждения, начнется синхронизация.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2150fd1e54cdb4d5afa2ecbd9a451104d00f2a38
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 01dbba5e593f0710a0c399ff168a772bc41051fe
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664722"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945616"
 ---
 # <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>Начните синхронизацию после отправки файлов в educationSynchronizationProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "52664722"
 |:-----------|:----------|
 | Делегированное (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
 |Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|EduAdministration.ReadWrite.All |
+|Для приложений|EduAdministration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ POST /education/synchronizationProfiles/{id}/start
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный.  |
+| Authorization  | string  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -92,7 +92,6 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/sta
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 2105
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/Collection(microsoft.graph.verificationMessage)",

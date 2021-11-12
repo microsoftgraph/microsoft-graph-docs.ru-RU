@@ -2,21 +2,19 @@
 title: тип ресурса printJobConfiguration
 description: Группа параметров, которые принтер должен использовать для печати задания.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 1e13d74fb7a9ed977a380050e49c8d3f267e045299474ca622aa408d738a4562
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 4fe417c8c2da43bc3378e15edac451619d2562a4
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54223244"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944937"
 ---
 # <a name="printjobconfiguration-resource-type"></a>тип ресурса printJobConfiguration
 
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Группа параметров, которые принтер должен использовать для печати задания.
 

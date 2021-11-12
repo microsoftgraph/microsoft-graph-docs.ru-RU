@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 8cfd8b0d3af851519239f17847ea854093837dfe
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 624e55df6d31d4c538dcd851e486a264c4706094
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118780"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947366"
 ---
 # <a name="create-table"></a>Создание таблицы
 
@@ -36,7 +36,7 @@ POST /me/drive/root:/{item-path}:/workbook/tables/{table-id}/add
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -61,7 +61,6 @@ POST /me/drive/root:/{item-path}:/workbook/tables/{table-id}/add
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{table-id}/add
 Content-type: application/json
-Content-length: 109
 
 {
   "address": "A1:D8",
@@ -78,7 +77,6 @@ Content-length: 109
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 109
 
 {
   "id": "99",

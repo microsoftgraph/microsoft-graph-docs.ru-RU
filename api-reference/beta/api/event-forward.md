@@ -2,15 +2,15 @@
 title: 'событие: вперед'
 description: 'Это действие позволяет организатору или участнику собрания '
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 75f294c456969dbd7f8ffccfc941451d4c611b03
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 834e9b70a90c02c144daaf54716d78f4c3322629
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50436213"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944851"
 ---
 # <a name="event-forward"></a>событие: вперед
 
@@ -20,7 +20,7 @@ ms.locfileid: "50436213"
 
 Это действие позволяет организатору или [](../resources/event.md) участнику собрания перенаадть запрос собрания новому получателю. 
 
-Если событие собрания передается из почтового ящика Microsoft 365 участника другому получателю, это действие также отправляет сообщение для уведомления организатора пересылания и добавляет получателя в копию организатора собрания. Это удобство не доступно при переададки из Outlook.com учетной записи.
+Если событие собрания передается из почтового ящика Microsoft 365 участника другому получателю, это действие также отправляет сообщение для уведомления организатора пересылания и добавляет получателя в копию организатора события собрания. Это удобство не доступно при переададки из учетной записи Outlook.com.
 
 
 ## <a name="permissions"></a>Разрешения
@@ -52,7 +52,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 | Content-Type | string  | Характер данных в теле объекта. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -80,7 +80,6 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ```http
 POST https://graph.microsoft.com/beta/me/events/{id}/forward
 Content-type: application/json
-Content-length: 56
 
 {
   "ToRecipients":[

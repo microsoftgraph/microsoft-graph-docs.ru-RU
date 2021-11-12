@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipals: Перечисление владельцев'
 description: Извлечение списка владельцев servicePrincipal.
-localization_priority: Priority
+ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: c7b960993e37d9a8219b5fd509249767da65756a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0fd72a91226ef34e21f356d211d5c3197108cf1c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054429"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937064"
 ---
 # <a name="serviceprincipals-list-owners"></a>servicePrincipals: Перечисление владельцев
 
@@ -40,7 +40,7 @@ GET /servicePrincipals/{id}/owners
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя           | Описание                |
 |:---------------|:---------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -94,7 +94,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/owners
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [

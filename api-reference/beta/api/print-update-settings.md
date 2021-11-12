@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 3529fb345c9c322c3e63c2519f2f6e15cfc75525
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b5db43838c259c3c7807d407edec067a3db12a6a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "60560823"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939352"
 ---
 # <a name="update-printsettings"></a>Обновление printSettings
 
@@ -29,7 +29,7 @@ ms.locfileid: "60560823"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| PrintSettings.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|Не поддерживается.|
+|Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ PATCH /print/settings
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|documentConversionEnabled|Boolean|Указывает, включено ли преобразование документов для клиента. Если преобразование документов включено, служба универсальной печати автоматически преобразует документы в формат, совместимый с принтером (например, XPS в PDF) при необходимости.|
+|documentConversionEnabled|Логическое|Указывает, включено ли преобразование документов для клиента. Если преобразование документов включено, служба универсальной печати автоматически преобразует документы в формат, совместимый с принтером (например, XPS в PDF) при необходимости.|
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204 No Content` и пустое тело отклика.
@@ -95,7 +95,6 @@ Content-type: application/json
 } -->
 ```http
 HTTP/1.1 204 NoContent
-Content-length: 0
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

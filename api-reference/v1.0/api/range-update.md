@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 66eb2642151456720a4446e3fc2dd5ce6f02e34a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6eb74c9736be34b3260dc8c8797c238de3c6df2e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032568"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936280"
 ---
 # <a name="update-range"></a>Обновление диапазона
 
@@ -71,7 +71,6 @@ PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/r
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='A1:B2')
 Content-type: application/json
-Content-length: 169
 
 {
 "values" : [["Hello", "100"],["1/1/2016", null]],
@@ -95,7 +94,6 @@ Content-length: 169
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
 
 {
   "address": "address-value",

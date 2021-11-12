@@ -2,15 +2,15 @@
 title: Обновление командной работы
 description: Обновление свойств объекта teamworkTag.
 author: anniecolonna
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: teamwork
 doc_type: apiPageType
-ms.openlocfilehash: 93e78b863c0b03f475c0d6e52a12316d4eee580d
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: c5d3b361c6aa3263dcaddce79e4c2c2a88b09193
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210121"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944615"
 ---
 # <a name="update-teamworktag"></a>Обновление командной работы
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "53210121"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Не поддерживается.|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|TeamworkTag.ReadWrite.All|
+|Для приложений|TeamworkTag.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,7 +41,7 @@ PATCH /teams/{team-Id}/tags/{teamworkTag-Id}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -70,7 +70,6 @@ PATCH /teams/{team-Id}/tags/{teamworkTag-Id}
 ``` http
 PATCH https://graph.microsoft.com/beta/teams/53c53217-fe77-4383-bc5a-ed4937a1aecd/tags/MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM3ZDg4M2Q4Yi1hMTc5LTRkZDctOTNiMy1hOGQzZGUxYTIxMmUjI3RhY29VSjN2RGk==
 Content-Type: application/json
-Content-length: 185
 
 {
   "displayName": "Finance"

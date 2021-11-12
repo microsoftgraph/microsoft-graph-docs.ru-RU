@@ -1,16 +1,16 @@
 ---
 title: Получение пользователя
 description: Получение простого каталога **user**, который соответствует этому объекту **educationUser**.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 88db1f007245c2d48115478236dbb163f10a7ac6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1f4f417252d716fa0459790eb772ae16e960139f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042914"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942270"
 ---
 # <a name="get-user"></a>Получение пользователя
 
@@ -46,7 +46,7 @@ GET /education/users/{id}/user
 
 | Заголовок        | Значение                     |
 | :------------ | :------------------------ |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -110,7 +110,6 @@ GET https://graph.microsoft.com/beta/education/me/user
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
   "businessPhones": [

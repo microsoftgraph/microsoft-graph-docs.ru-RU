@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 842196efb1581203b27f8347364f804be44afb73
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7d74cb21b47ee30b498a22084419135c27282d43
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59008428"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943922"
 ---
 # <a name="list-serviceconfigurationrecords"></a>Служба ListConfigurationRecords
 
@@ -45,7 +45,7 @@ GET /domains/{id}/serviceConfigurationRecords
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type  | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -97,7 +97,6 @@ GET https://graph.microsoft.com/v1.0/domains/{domain-name}/serviceConfigurationR
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 220
 
 {
   "value": [

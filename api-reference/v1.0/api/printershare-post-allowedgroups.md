@@ -2,20 +2,18 @@
 title: Создание allowedGroup для принтераShare
 description: Предоставление указанной группе доступа для отправки заданий печати на связанный принтер.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: a6a5e2cb69c2ee9ee65ef012108d001312666a74
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 7d54bac8e7f8f1767dfc36b419b39affdf1c2eb5
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787788"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937176"
 ---
 # <a name="create-allowedgroup-for-printershare"></a>Создание allowedGroup для принтераShare
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Предоставление указанной группе доступа для отправки заданий печати в связанный [принтерShare.](../resources/printershare.md)
 
@@ -43,7 +41,7 @@ POST /print/printers/{printerId}/shares/{printerShareId}/allowedGroups/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -66,7 +64,6 @@ POST /print/printers/{printerId}/shares/{printerShareId}/allowedGroups/$ref
 ``` http
 POST https://graph.microsoft.com/v1.0/print/shares/{printerShareId}/allowedGroups/$ref
 Content-Type: application/json
-Content-length: 47
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/groups/{groupId}"

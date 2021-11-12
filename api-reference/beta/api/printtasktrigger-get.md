@@ -2,15 +2,15 @@
 title: Получение taskTrigger
 description: Получите триггер задачи с принтера.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 3976b61801d6f7bff3a1355666849a8e46f56c70
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 23cd3dc21fd22f4aa02e7ca8fcd7a82818166e33
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053568"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941987"
 ---
 # <a name="get-tasktrigger"></a>Получение taskTrigger
 
@@ -31,7 +31,7 @@ ms.locfileid: "52053568"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается.|
+|Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ GET /print/printers/{id}/taskTriggers/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/print/printers/{printerId}/taskTriggers/{ta
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 181
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers/taskTriggers/$entity",

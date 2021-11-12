@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 77e34f2b5deb4245a893bbee42120a8f506155d2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 300400dbba798464a4cccf4abf569d9dd8de8d82
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59008393"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924789"
 ---
 # <a name="add-owner"></a>Добавление владельца
 
@@ -38,7 +38,7 @@ POST /applications/{id}/owners/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя | Описание|
 |:---- |:---------- |
-| Авторизация | Bearer {токен}. Обязательный.  |
+| Авторизация | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса укажи идентификатор объекта каталога, назначенного в качестве владельца.
@@ -60,7 +60,6 @@ POST /applications/{id}/owners/$ref
 ```http
 POST https://graph.microsoft.com/v1.0/applications/{id}/owners/$ref
 Content-type: application/json
-Content-length: 30
 
 {
     "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
@@ -88,7 +87,7 @@ Content-length: 30
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

@@ -2,19 +2,17 @@
 title: Отправка документов с помощью API универсальной печати Microsoft Graph
 description: Универсальная печать — это современное решение печати, которое можно использовать в организациях для управления инфраструктурой печати через облачные службы Майкрософт.
 author: nilakhan
-localization_priority: Priority
+ms.localizationpriority: high
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 78f876cdd2269dac9f9b68915f59d9ae2dd0b51d
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 13d97001f95efabb31b2aaa5e0d8e02c19d35fc5
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265814"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946855"
 ---
 # <a name="upload-documents-using-the-microsoft-graph-universal-print-api"></a>Отправка документов с помощью API универсальной печати Microsoft Graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../api-reference/includes/cloudprinting-pricing-disclaimer.md)]
 
 Чтобы напечатать документ с помощью API универсальной печати в Microsoft Graph, [создайте задание печати](/graph/api/printershare-post-jobs), отправьте документ и [запустите задание печати](/graph/api/printjob-start). В этой статье описано, как отправить документ, начиная с [создания сеанса отправки](/graph/api/printdocument-createuploadsession).
 

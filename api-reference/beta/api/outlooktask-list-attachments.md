@@ -2,15 +2,15 @@
 title: Список вложений
 description: Получите список объектов вложений, присоединенных к Outlook задаче.
 author: svpsiva
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 87b7a341be4e280a8b211bf03e814006d8240755
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f4f530a01cbe3de350ea929078993c7c314a35dc
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055479"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60934082"
 ---
 # <a name="list-attachments-deprecated"></a>Вложения списка (неподготовленные)
 
@@ -50,7 +50,7 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/users/{id}/outlook/tasks/{id}/attachments
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -107,7 +107,6 @@ GET https://graph.microsoft.com/beta/users/{id}/outlook/tasks/{id}/attachments
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 215
 
 {
   "value": [

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a1b78e44243e11b503a65d327467d3e24f1c02c1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fc5fa7bd44e384f0332d737799193c394214c64e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59105022"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942914"
 ---
 # <a name="orgcontact-getmembergroups"></a>orgContact: getMemberGroups
 
@@ -41,7 +41,7 @@ POST /contacts/{id}/getMemberGroups
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:----------|
-| Авторизация  |  Bearer {токен}. Обязательный. |
+| Авторизация  |  Bearer {token}. Обязательный. |
 | Content-Type   | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -49,7 +49,7 @@ POST /contacts/{id}/getMemberGroups
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean|Установите значение `false`. Возвращение лишь защищенных групп поддерживается только для пользователей.|
+|securityEnabledOnly|Логическое|Установите значение `false`. Возвращение лишь защищенных групп поддерживается только для пользователей.|
 
 ## <a name="response"></a>Отклик
 
@@ -69,7 +69,6 @@ POST /contacts/{id}/getMemberGroups
 ```http
 POST https://graph.microsoft.com/v1.0/contacts/{id}/getMemberGroups
 Content-type: application/json
-Content-length: 33
 
 {
   "securityEnabledOnly": false
@@ -106,7 +105,6 @@ Content-length: 33
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
 
 {
   "value": [

@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5c71b1b5ef4efc05c20d14de59f6e2d1fcabc1ab
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9ebd9b640eb8a780af7f64e021b3175e1b5bd92d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59090637"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936371"
 ---
 # <a name="list-schools"></a>Перечисление учебных заведений
 
@@ -43,7 +43,7 @@ GET /education/classes/{id}/schools
 
 | Заголовок        | Значение                     |
 | :------------ | :------------------------ |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/schools
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -102,7 +102,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/schools
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 892
 
 {
   "value": [

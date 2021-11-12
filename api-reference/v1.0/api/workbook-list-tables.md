@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f6a6ea8b6a3c4c558403bc9729a9031fb39b6ea2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 59ca5fb4901a3e8cd6308c6cbcad1676f7d5dd2d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59067654"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947401"
 ---
 # <a name="list-tables"></a>Перечисление таблиц
 
@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 158
 
 {
   "value": [

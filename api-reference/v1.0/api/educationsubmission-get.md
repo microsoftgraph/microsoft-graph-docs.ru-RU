@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 03e6e7d26ea089712c1274d458d560a7d3bf011e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 823e67f0bdad8272d4e6a546bc86c7b2951cb907
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046192"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931810"
 ---
 # <a name="get-educationsubmission"></a>Get educationSubmission
 
@@ -44,7 +44,7 @@ GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не поставляем тело запроса для этого метода.
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/11010/assignments/ad8afb2
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечания:** Объект отклика, показанный здесь, может быть сокращен для чтения. 
 >
@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/11010/assignments/ad8afb2
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 712
 
 {
       "id": "33223",

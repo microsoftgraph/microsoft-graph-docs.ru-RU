@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 99d40f6f956958bd4ccb19659e3bd51caf8c0f59
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2f9ad719f2758571d644d8484e891f419a4c83b6
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029201"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924244"
 ---
 # <a name="list-rangeview-rows"></a>Получение списка строк rangeView
 
@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/rang
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 247
 
 {
   "value": [

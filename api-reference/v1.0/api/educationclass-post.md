@@ -5,12 +5,12 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: db8cedc35b48478edd58a9beb2e29d742c4b5cb2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 38ab75a0a539088c4e1d1b67380875276dba47dd
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147439"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937351"
 ---
 # <a name="create-educationclass"></a>Создание educationClass
 
@@ -46,7 +46,7 @@ POST /education/classes
 
 | Имя          | Описание                 |
 | :------------ | :-------------------------- |
-| Авторизация | Bearer {токен}. Обязательный.   |
+| Авторизация | Bearer {token}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -89,7 +89,6 @@ POST /education/classes
 ```http
 POST https://graph.microsoft.com/v1.0/education/classes
 Content-Type: application/json
-Content-length: 533
 
 {
   "@odata.type": "#microsoft.graph.educationClass",

@@ -1,16 +1,16 @@
 ---
 title: Создание объекта plannerTask
 description: Используйте этот API, чтобы создать объект **plannerTask**.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: ba187286f88b22cb7c945ad98a75cc1669ab9127
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b646c088a97af515af6b267e54feaf02135f0161
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055353"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939429"
 ---
 # <a name="create-plannertask"></a>Создание объекта plannerTask
 
@@ -36,7 +36,7 @@ POST /planner/tasks
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 Включите в текст запроса описание объекта [plannerTask](../resources/plannertask.md) в формате JSON. В качестве свойства **задачи Планировщика** planId необходимо указать идентификатор существующего объекта [plannerPlan](../resources/plannerplan.md).
@@ -59,7 +59,6 @@ POST /planner/tasks
 ```http
 POST https://graph.microsoft.com/beta/planner/tasks
 Content-type: application/json
-Content-length: 285
 
 {
   "planId": "xqQg5FS2LkCp935s-FIFm2QAFkHM",
@@ -84,8 +83,8 @@ Content-length: 285
 ---
 
 Включите в текст запроса описание объекта [plannerTask](../resources/plannertask.md) в формате JSON.
-##### <a name="response"></a>Ответ
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+##### <a name="response"></a>Отклик
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,7 +93,6 @@ Content-length: 285
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 677
 
 {
   "createdBy": {

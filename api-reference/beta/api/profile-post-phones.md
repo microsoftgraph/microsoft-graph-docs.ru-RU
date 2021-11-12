@@ -1,24 +1,24 @@
 ---
-title: Создание Итемфоне
-description: Используйте этот API для создания нового Итемфоне.
-localization_priority: Normal
+title: Создание itemPhone
+description: Используйте этот API для создания нового itemPhone.
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 5b9ad4c2321063234765aa4a5705dcf116e0fd9e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bbe809637670e7acebd3fbac4a45838b274e66ff
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974657"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947191"
 ---
-# <a name="create-itemphonenumber"></a>Создание Итемфоненумбер
+# <a name="create-itemphonenumber"></a>Создание itemPhoneNumber
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот API, чтобы создать новый объект [итемфоне](../resources/itemphone.md) в [профиле](../resources/profile.md)пользователя.
+Используйте этот API для создания нового [объекта itemPhone](../resources/itemphone.md) в профиле [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "48974657"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL          |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL          |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All          |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All          |
 | Для приложений                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,26 +43,26 @@ POST /users/{userId}/profile/phones
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [итемфоне](../resources/itemphone.md) в формате JSON.
+В теле запроса поставляем JSON-представление [объекта itemPhone.](../resources/itemphone.md)
 
-В следующей таблице приведены свойства, которые можно задать при создании нового объекта [итемфоне](../resources/itemphone.md) в профиле пользователя.
+В следующей таблице показаны свойства, которые можно установить при создании нового объекта [itemPhone](../resources/itemphone.md) в профиле пользователей.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|displayName|String|Понятное имя, назначенное пользователю для этого номера телефона. |
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|число|String|Номер телефона, предоставленный пользователем.|
-|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|type|фонетипе|Тип номера телефона в объекте. Возможные значения: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
+|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|displayName|String|Удобное имя, назначенное пользователем этому номеру телефона. |
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|число|String|Телефон, предоставленный пользователем.|
+|source|[personDataSource](../resources/persondatasource.md)|Где значения возникли, если синхронизированы с другой службы. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|type|phoneType|Тип номера телефона в объекте. Возможные значения: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [итемфоне](../resources/itemphone.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект itemPhone](../resources/itemphone.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -77,7 +77,6 @@ POST /users/{userId}/profile/phones
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/phones
 Content-Type: application/json
-Content-length: 382
 
 {
   "displayName": "Car Phone",

@@ -2,15 +2,15 @@
 title: Создание объекта ChartPoints
 description: С помощью этого API можно создать объект ChartPoints.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d921406f21b7c954aaf56185edf541cba26657bc
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 306f41cd8e217229b3ad2471d94b9c2492bcf87b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047338"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943630"
 ---
 # <a name="create-chartpoint"></a>Создание ChartPoint
 
@@ -38,7 +38,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/se
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -60,7 +60,6 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/se
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points
 Content-type: application/json
-Content-length: 3
 
 {
 }
@@ -85,7 +84,7 @@ Content-length: 3
 
 В теле запроса укажи JSON представление [объекта книгиChartPoint.](../resources/workbookchartpoint.md)
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,7 +93,6 @@ Content-length: 3
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 3
 
 {
 }

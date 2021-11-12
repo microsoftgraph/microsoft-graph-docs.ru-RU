@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 2f3aedf415e0086e506729f13b7ca1ce94257dd2
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 23e769867ee02a205ffc9b1b90c8c67d312cdd7c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256167"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926023"
 ---
 # <a name="update-application"></a>Обновление приложения
 
@@ -29,7 +29,7 @@ ms.locfileid: "60256167"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Application.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Application.ReadWrite.All |
-|Приложение | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+|Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -59,7 +59,7 @@ PATCH /applications/{id}
 | optionalClaims          | optionalClaims                                                              | Разработчики приложений могут настраивать необязательные утверждения в своих приложениях Azure AD, чтобы указать, какие утверждения им нужны в маркерах, отправляемых в приложения службой маркеров безопасности (Майкрософт). Дополнительные [сведения см. в дополнительных](/azure/active-directory/develop/active-directory-optional-claims) утверждениях.                                                                                                                                                                                                                                                               |
 | parentalControlSettings | [parentalControlSettings](../resources/parentalcontrolsettings.md)          | Указывает параметры родительского контроля для приложения.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | publicClient            | [publicClientApplication](../resources/publicclientapplication.md)          | Указывает параметры для установленных клиентов, например классических или мобильных устройств.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| requiredResourceAccess  | Коллекция [requiredResourceAccess](../resources/requiredresourceaccess.md) | Указывает ресурсы, к которым приложению необходимо получить доступ. Это свойство также указывает набор делегированных разрешений и ролей приложений, необходимых для каждого из этих ресурсов. Эта настройка доступа к необходимым ресурсам определяет порядок предоставления согласия. Не более 50 служб ресурсов (API) можно настроить. Начиная с середины октября 2021 г. общее число необходимых разрешений не должно превышать 400. Значение null не допускается.                                                                                                                 |
+| requiredResourceAccess  | Коллекция [requiredResourceAccess](../resources/requiredresourceaccess.md) | Указывает ресурсы, к которым приложению необходимо получить доступ. В этом свойстве также указывается набор делегированных разрешений и ролей приложения, необходимых для каждого из этих ресурсов. Эта настройка доступа к необходимым ресурсам определяет порядок предоставления согласия. Можно настроить не более 50 служб ресурсов (API). С середины октября 2021 г. общее количество необходимых разрешений не должно превышать 400. Значение null не допускается.                                                                                                                 |
 | signInAudience          | String                                                                      | Указывает, какие учетные записи Майкрософт поддерживаются для текущего приложения. Поддерживаемые значения:<ul><li>`AzureADMyOrg` — пользователи с рабочей или учебной учетной записью Майкрософт в клиенте Azure AD моей организации (т. е. один клиент)</li><li>`AzureADMultipleOrgs` — пользователи с рабочей или учебной учетной записью Майкрософт в клиенте Azure AD любой организации (т. е. несколько клиентов)</li> <li>`AzureADandPersonalMicrosoftAccount` — пользователи с личной учетной записью Майкрософт, рабочей или учебной учетной записью в клиенте Azure AD любой организации</li></ul>                           |
 | tags                    | Коллекция String                                                           | Настраиваемые строки, которые можно использовать для классификации и определения приложения. Значение null не допускается.                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | tokenEncryptionKeyId    | String                                                                      | Задает значение открытого ключа keyId из коллекции keyCredentials. При настройке Azure AD шифрует все созданные маркеры с помощью ключа, на который указывает это свойство. Код приложения, получающий зашифрованный маркер, должен использовать соответствующий закрытый ключ для расшифровки маркера, прежде чем его можно будет применить для пользователя, выполнившего вход.                                                                                                                                                                                                                               |
@@ -81,7 +81,6 @@ PATCH /applications/{id}
 ```http
 PATCH https://graph.microsoft.com/v1.0/applications/{id}
 Content-type: application/json
-Content-length: 72
 
 {
   "displayName": "New display name"

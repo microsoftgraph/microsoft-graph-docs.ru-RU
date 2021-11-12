@@ -1,16 +1,16 @@
 ---
 title: Получение имени руководителя
 description: Получите менеджера этого организационного контакта.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0a99bfc16c6380093d8e13930f8b6801ef86ce02
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 417b77f5cbd9a063b3e6b267c16913cca08f538a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50943508"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938191"
 ---
 # <a name="get-manager"></a>Получение имени руководителя
 
@@ -38,12 +38,12 @@ GET /contacts/{id}/manager
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$select` [параметры запроса OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает `$select` [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:-----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -97,7 +97,6 @@ GET https://graph.microsoft.com/v1.0/contacts/{id}/manager
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 455
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects/$entity",

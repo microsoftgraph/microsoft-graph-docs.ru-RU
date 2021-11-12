@@ -1,16 +1,16 @@
 ---
 title: Список taskFolders
 description: Получите все Outlook папки задач в почтовом ящике пользователя.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f863aa4edb26ef0d3ac1325404c07737ae0285af
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 47cda01442789435e9e6f094e5af6d21bbbc2ea3
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052980"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943271"
 ---
 # <a name="list-taskfolders-deprecated"></a>List taskFolders (deprecated)
 
@@ -43,7 +43,7 @@ GET /users/{id|userPrincipalName}/outlook/taskFolders
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/me/outlook/taskFolders
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/beta/me/outlook/taskFolders
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 200
 
 {
   "value": [

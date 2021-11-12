@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: db7ebc0bc914da35ff019c767d350cf0079f8167
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 06463449255e5dd10fbfb142832bc480498e0df0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59045023"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945081"
 ---
 # <a name="get-page"></a>Вывод страницы
 
@@ -84,7 +84,6 @@ GET https://graph.microsoft.com/v1.0/me/onenote/pages/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 312
 
 {
   "title": "title-value",

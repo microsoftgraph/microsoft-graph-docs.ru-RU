@@ -1,16 +1,16 @@
 ---
 title: 'workbookApplication: вычислять'
 description: Пересчитывает данные во всех открытых в текущий момент книгах Excel.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: fae9ef835de3b42a6862258b1d7600f500247850
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 220d10ff83a299829d15e3ac0d1265f4b893c8e9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787058"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938286"
 ---
 # <a name="workbookapplication-calculate"></a>workbookApplication: вычислять
 
@@ -39,7 +39,7 @@ POST /me/drive/root:/{item-path}:/workbook/application/calculate
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -66,7 +66,6 @@ POST /me/drive/root:/{item-path}:/workbook/application/calculate
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/application/calculate
 Content-type: application/json
-Content-length: 48
 
 {
   "calculationType": "calculationType-value"

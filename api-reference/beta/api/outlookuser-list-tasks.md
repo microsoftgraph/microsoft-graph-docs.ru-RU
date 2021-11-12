@@ -1,16 +1,16 @@
 ---
 title: Перечисление задач
 description: Получение всех задач Outlook в почтовом ящике пользователя.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3bd471f91bcccc7c57b75d878295e5e535404a93
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 776eccb70da2f847c3d9f87e495bae5f69d2a504
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055430"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946757"
 ---
 # <a name="list-tasks-deprecated"></a>Перечисление задач (не рекомендуется)
 
@@ -48,7 +48,7 @@ GET /users/{id|userPrincipalName}/outlook/tasks
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Prefer: outlook.timezone | Указывает часовой пояс для свойств времени в ответе, который будет в UTC, если этот заглавный не указан. Необязательно.|
+| Prefer: outlook.timezone | Указывает часовой пояс для свойств времени в ответе, который будет в UTC, если этот заглавный не указан. Необязательный параметр.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -99,7 +99,6 @@ GET https://graph.microsoft.com/beta/me/outlook/tasks
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 465
 
 {
   "value": [

@@ -2,15 +2,15 @@
 title: Обновление параметров
 description: 'Обновление свойств объекта settings. '
 author: jpettere
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 72eb244cceeb5aa480baef1707877d31c2c69423
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: 4f72bddd1d7c14dccf6a30e3a9f88a8a386620e7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58783297"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943054"
 ---
 # <a name="update-settings"></a>Обновление параметров
 
@@ -56,7 +56,7 @@ PATCH /users/{id | userPrincipalName}/settings/
 
 | Заголовок       | Значение|
 |:-----------|:------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -76,7 +76,6 @@ PATCH /users/{id | userPrincipalName}/settings/
 ```http
 PATCH https://graph.microsoft.com/beta/me/settings
 Content-type: application/json
-Content-length: 37
 
 {
   "contributionToContentDiscoveryDisabled": true
@@ -90,7 +89,6 @@ Content-length: 37
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 72
 
 {
   "contributionToContentDiscoveryAsOrganizationDisabled": false,

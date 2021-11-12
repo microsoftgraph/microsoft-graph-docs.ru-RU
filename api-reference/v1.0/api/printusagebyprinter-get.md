@@ -2,20 +2,18 @@
 title: Get printUsageByPrinter
 description: Извлечение сводки использования принтера за определенный период времени.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 21a282d85a8792f88b3392950582be26726c7400
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 1e9db1f263e5a385cb1376cc5765470138ca93d9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774442"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940610"
 ---
 # <a name="get-printusagebyprinter"></a>Get printUsageByPrinter
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Извлечение сводки об использовании [для принтера](../resources/printer.md) за определенный период времени. Описание каждой из конечных точек см. в [printUsageByPrinter.](../resources/printUsageByPrinter.md)
 
@@ -28,7 +26,7 @@ ms.locfileid: "50774442"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Reports.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается.|
+|Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +45,7 @@ GET /reports/monthlyPrintUsageByPrinter/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

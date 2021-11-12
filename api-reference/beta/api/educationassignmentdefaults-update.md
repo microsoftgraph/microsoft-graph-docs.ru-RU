@@ -2,15 +2,15 @@
 title: Обновление educationAssignmentDefaults
 description: Обновление свойств объекта educationAssignmentDefaults.
 author: dipakboyed
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 4dd6d6d8d2c5433ca2ad133c57cae8b17af79ad5
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 04a701011bf1ac0889b0dbf54501cdadf7cf1830
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780822"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60930109"
 ---
 # <a name="update-educationassignmentdefaults"></a>Обновление educationAssignmentDefaults
 Пространство имен: microsoft.graph
@@ -41,7 +41,7 @@ PATCH /education/classes/{id}/assignmentDefaults
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -49,7 +49,7 @@ PATCH /education/classes/{id}/assignmentDefaults
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|addedStudentAction|educationAddedStudentAction|Поведение по умолчанию на уровне класса для обработки учащихся, добавленных после публикации назначения. Возможные значения: `none`, `assignIfOpen`. Значение по умолчанию — `none`.|
+|addedStudentAction|educationAddedStudentAction|Поведение по умолчанию на уровне класса для обработки учащихся, добавленных после публикации назначения. Возможные значения: `none`, `assignIfOpen`. Значение по умолчанию — `none`.|
 |dueTime|TimeOfDay|Значение по умолчанию класса для должного поля времени. Значение по умолчанию: `23:59:00`.|
 |notificationChannelUrl|String|По умолчанию Teams канал, в который будут отправлены уведомления. Значение по умолчанию — `null`.|
 
@@ -72,7 +72,6 @@ PATCH /education/classes/{id}/assignmentDefaults
 ``` http
 PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignmentDefaults
 Content-Type: application/json
-Content-length: 181
 
 {
   "addedStudentAction": "assignIfOpen",

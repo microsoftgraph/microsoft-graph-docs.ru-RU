@@ -2,15 +2,15 @@
 title: Обновление printJob
 description: Обновлениеконфигурациизадания печати.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 6405acd01be075c44c4271c4c3395a83889f9d0e
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: ee4449e701aa8458a3318cc6c8b24ca1859cd1f3
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777687"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943201"
 ---
 # <a name="update-printjob"></a>Обновление printJob
 
@@ -41,7 +41,7 @@ PATCH /print/printers/{id}/jobs/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса укажи значения соответствующих [полей printJob.](../resources/printjob.md) Существующие свойства, не включенные в тело запроса, будут поддерживать прежние значения. Обновить можно только свойство "конфигурация".
@@ -127,7 +127,6 @@ PATCH https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d4
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 225
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('d5ef6ec4-07ca-4212-baf9-d45be126bfbb')/jobs/$entity",

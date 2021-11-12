@@ -2,15 +2,15 @@
 title: Список ежемесячныхPrintUsageByPrinter
 description: Извлечение списка ежемесячных сводок использования печати, сгруппив по принтеру.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 19eff0d2fd6de0aad79a63cde61706db0c58f125
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: e26211a84ecee4fbebebb7a658081081d26f8153
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781265"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939268"
 ---
 # <a name="list-monthlyprintusagebyprinter"></a>Список ежемесячныхPrintUsageByPrinter
 
@@ -29,7 +29,7 @@ ms.locfileid: "52781265"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Reports.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается.|
+|Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ GET /print/reports/monthlyPrintUsageByPrinter
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -89,7 +89,6 @@ GET https://graph.microsoft.com/beta/print/reports/monthlyPrintUsageByPrinter
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 268
 
 {
   "value": [

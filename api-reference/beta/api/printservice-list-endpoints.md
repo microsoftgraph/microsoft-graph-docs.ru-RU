@@ -2,15 +2,15 @@
 title: PrintServiceEndpoints списка
 description: Извлечение списка конечных точек, выставленных службой печати.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 9441b8e704edb328afa2fe372204f0a2c1acc5ed
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 508d818224c5aae86bcd18d9e1412532e8192309
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053610"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943189"
 ---
 # <a name="list-printserviceendpoints"></a>PrintServiceEndpoints списка
 
@@ -25,9 +25,9 @@ ms.locfileid: "52053610"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|Отсутствуют.|
+|Делегированные (рабочая или учебная учетная запись)|Нет.|
 |Делегированные (личная учетная запись Майкрософт)|Нет.|
-|Приложение|Отсутствуют.|
+|Приложение|Нет.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ GET /print/services/{id}/endpoints
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -89,7 +89,6 @@ GET https://graph.microsoft.com/beta/print/services/{id}/endpoints
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 305
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.printServiceEndpoint)",

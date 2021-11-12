@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 7eb8742f912158b20464cf456086d8246c21feaa
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: f8f72e1ad594b31eb4227e9db860462434da833b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694538"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939632"
 ---
 # <a name="update-externalitem"></a>Обновление externalItem
 
@@ -28,7 +28,7 @@ ms.locfileid: "60694538"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Application                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+| Для приложений                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -99,7 +99,6 @@ Content-type: application/json
       "type": "everyone",
       "value": "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
       "accessType": "grant",
-      "identitySource": "azureActiveDirectory"
     }
   ]
 }
@@ -147,7 +146,6 @@ Content-type: application/json
       "type": "everyone",
       "value": "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
       "accessType": "grant",
-      "identitySource": "azureActiveDirectory"
     }
   ],
   "properties": {
@@ -156,7 +154,6 @@ Content-type: application/json
     "assignee": "john@contoso.com"
   },
   "content": {
-    "@odata.type": "microsoft.graph.externalConnectors.externalItemContent",
     "value": "<h1>Error in payment gateway</h1><p>Error details...</p>",
     "type": "html"
   }
@@ -175,5 +172,3 @@ Content-type: application/json
     "Error: update_externalitem/properties:\r\n      Referenced type microsoft.graph.object is not defined in the doc set! Potential suggestion: microsoft.graph.directoryObject"
   ]
 }-->
-
-

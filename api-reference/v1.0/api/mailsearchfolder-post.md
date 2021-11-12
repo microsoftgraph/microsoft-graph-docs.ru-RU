@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bc26b117139fc35ccc025f400d5bcc4de0e99ce4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6741fd5775b18ccd4a5e2ecba33d9343b7122a49
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59026247"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924518"
 ---
 # <a name="create-mailsearchfolder"></a>Создание mailSearchFolder
 
@@ -53,8 +53,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
 | @odata.type | String | Тип создаемой папки. Установите "microsoft.graph.mailSearchFolder". |
-| displayName | Строка | Отображаемое имя новой папки.|
-| includeNestedFolders | Boolean | Указывает, как должна проходить иерархия папок почтовых ящиков в поиске. `true` означает, что следует сделать глубокий поиск, чтобы включить детские папки в иерархию каждой папки, явно указанной в **sourceFolderIds**. `false`означает неглубокий поиск только каждой из папок, явно указанных в **sourceFolderIds.** |
+| displayName | String | Отображаемое имя новой папки.|
+| includeNestedFolders | Логическое | Указывает, как должна проходить иерархия папок почтовых ящиков в поиске. `true` означает, что следует сделать глубокий поиск, чтобы включить детские папки в иерархию каждой папки, явно указанной в **sourceFolderIds**. `false`означает неглубокий поиск только каждой из папок, явно указанных в **sourceFolderIds.** |
 | sourceFolderIds | Коллекция String | Папки почтовых ящиков, которые необходимо добыть. |
 | filterQuery | String | Запрос OData для фильтрации сообщений. |
 
@@ -78,7 +78,6 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```http
 POST https://graph.microsoft.com/v1.0/me/mailfolders/AQMkADYAAAIBDAAAAA==/childfolders
 Content-type: application/json
-Content-length: 159
 
 {
   "@odata.type": "microsoft.graph.mailSearchFolder",
@@ -109,7 +108,7 @@ Content-length: 159
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

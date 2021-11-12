@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: bae335bb58cfacb33bd8b27c54787327dbe0b607
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b2a4a73932177180df519b0e04e01a363f662e58
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084729"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946911"
 ---
 # <a name="list-worksheetcollection"></a>Список WorksheetCollection
 
@@ -38,7 +38,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 145
 
 {
   "value": [

@@ -2,15 +2,15 @@
 title: Список printJobs для принтера
 description: Извлечение списка заданий печати, связанных с принтером.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: a1368cd07dd32f2c04e9a8bb41b04b5ce8d092cb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: eb55a8473e3ebd8bb94ba470450f0f336c5ff654
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049900"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946666"
 ---
 # <a name="list-printjobs-for-a-printer"></a>Список printJobs для принтера
 
@@ -31,7 +31,7 @@ ms.locfileid: "52049900"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| PrintJob.ReadBasic, PrintJob.Read, PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
+|Для приложений| PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,13 +45,13 @@ GET /print/printers/{id}/jobs
 * Свойство **documents** по умолчанию опущено из ответа. Чтобы также вернуть список [печатных документов](../resources/printdocument.md) для каждого задания печати, используйте `$expand=documents` .
 * Этот метод поддерживает фильтрацию заданий печати пользователем, который их создал. Используйте `$filter=createdBy/userPrincipalName eq '{upn}'` , **где {upn}** — это [основное имя](/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) пользователя связанного пользователя.
 
-### <a name="exceptions"></a>Exceptions
+### <a name="exceptions"></a>Исключения
 Некоторые операторы не поддерживаются: `$count` , `$search` .
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -102,7 +102,6 @@ GET https://graph.microsoft.com/beta/print/printers/{id}/jobs
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 461
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs",

@@ -2,15 +2,15 @@
 title: Обновление outlooktaskgroup
 description: Обновим писаемые свойства группы Outlook задач.
 author: mashriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 37bf87e8d52ac320d29fd7be1f6cdd3dae7165ea
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ff7c953db29ad0890507b39435895bd6fa685e9e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049207"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939457"
 ---
 # <a name="update-outlooktaskgroup-deprecated"></a>Обновление outlooktaskgroup (неподготовленное)
 
@@ -42,7 +42,7 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
@@ -66,7 +66,6 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/me/outlook/taskgroups/AAMkADIyAAAhrbe-AAA=
 Content-type: application/json
-Content-length: 28
 
 {
   "name": "Personal Tasks",
@@ -91,7 +90,7 @@ Content-length: 28
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,7 +99,6 @@ Content-length: 28
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 138
 
 {
   "id": "AAMkADIyAAAhrbe-AAA=",

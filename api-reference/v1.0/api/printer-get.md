@@ -2,20 +2,18 @@
 title: Получение принтера
 description: Извлечение свойств и связей объекта принтера.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 547cde8d31870fcc2b0d73c1021f5628ce74c19b
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: a1853de6dc66c2bd3de73638c019798f3d9214a7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776923"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937204"
 ---
 # <a name="get-printer"></a>Получение принтера
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Извлечение свойств и связей объекта [принтера.](../resources/printer.md)
 
@@ -52,7 +50,7 @@ GET /print/printers/{id}?$select=id,displayName,capabilities
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

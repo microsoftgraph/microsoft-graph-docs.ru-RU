@@ -1,16 +1,16 @@
 ---
 title: Создание educationCategories
 description: Добавление существующей системы educationCategory в educationAssignment
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 847e720e65da2604a1188d9854e4e10320d0d181
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: c8c38700b3a6beec5807252f0c2f222c779a520e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52912969"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947743"
 ---
 # <a name="create-educationcategories"></a>Создание educationCategories
 
@@ -37,7 +37,7 @@ POST /education/classes/{id}/assignments/{id}/categories/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,7 +57,6 @@ POST /education/classes/{id}/assignments/{id}/categories/$ref
 ```http
 POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/categories/$ref
 Content-type: application/json
-Content-length: 212
 
 {
   "@odata.id": "https://graph.microsoft.com/v1.0/education/classes/11021/assignmentCategories/ec98f158-341d-4fea-9f8c-14a250d489ac"

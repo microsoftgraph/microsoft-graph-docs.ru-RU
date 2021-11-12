@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a35ad2374d284d43f596616df1acca455b13f641
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3a0215d8edb1aa7b0a3de87b9a6856db2fcd519f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147775"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940884"
 ---
 # <a name="get-contactfolder"></a>Получение объекта contactFolder
 
@@ -44,7 +44,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 104
 
 {
   "displayName": "Finance",

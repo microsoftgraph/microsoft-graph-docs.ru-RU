@@ -2,15 +2,15 @@
 title: 'listItem: createLink'
 description: Создание ссылки для обмена listItem
 author: learafa
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 84bab42a808adbac01899da84010ce0c6ef05283
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: e12ceccbf8ea29893d185ba8564e831bbe850b5c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52992398"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941346"
 ---
 # <a name="listitem-createlink"></a>listItem: createLink
 
@@ -48,7 +48,7 @@ POST /sites/{siteId}/lists/{listId}/items/{itemId}/createLink
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -86,7 +86,7 @@ POST /sites/{siteId}/lists/{listId}/items/{itemId}/createLink
 | Значение          | Описание
 |:---------------|:------------------------------------------------------------
 | анонимный    | Любой пользователь со ссылкой обладает правом доступа без необходимости входа в систему. Это также относится к людям вне вашей организации. Администратор может отключить поддержку ссылок, не требующих проверки подлинности.
-| organization; | Любой пользователь, вошедший в вашу организацию (клиент), может использовать ссылку для получения доступа. Доступно только в OneDrive для бизнеса и SharePoint.
+| organization | Любой пользователь, вошедший в вашу организацию (клиент), может использовать ссылку для получения доступа. Доступно только в OneDrive для бизнеса и SharePoint.
 | users        | Конкретные люди из коллекции получателей могут использовать ссылку для получения доступа. Доступно только в OneDrive для бизнеса и SharePoint.
 
 ## <a name="response"></a>Отклик
@@ -114,7 +114,6 @@ POST /sites/{siteId}/lists/{listId}/items/{itemId}/createLink
 ```http
 POST sites/{siteId}/lists/{listId}/items/{itemId}/createLink
 Content-Type: application/json
-Content-length: 212
 
 {
   "type": "view",

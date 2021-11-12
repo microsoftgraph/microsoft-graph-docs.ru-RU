@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: eba3d229ce68a874c40eb215b6b3c3924fae33af
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 1daccd90f94a23950886cab92c50e8992e02236c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59764901"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60930485"
 ---
 # <a name="get-directoryaudit"></a>Получение directoryAudit
 
@@ -28,7 +28,7 @@ ms.locfileid: "59764901"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
-|Для приложения | AuditLog.Read.All и Directory.Read.All | 
+|Для приложений | AuditLog.Read.All и Directory.Read.All | 
 
 > [!IMPORTANT]
 > Этот API имеет [известные](/graph/known-issues#azure-ad-activity-reports) проблемы и в настоящее время требует согласия на оба **auditLog.Read.All** и **Directory.Read.All** разрешений.
@@ -106,7 +106,6 @@ GET https://graph.microsoft.com/beta/auditLogs/directoryAudits/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 218
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryAudits",

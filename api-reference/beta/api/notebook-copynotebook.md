@@ -1,16 +1,16 @@
 ---
 title: 'блокнот: copyNotebook'
 description: Копирует записную книжку в папку Notebooks в библиотеке документов назначения. Папка создается, если ее нет.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 6f22838e9af2103f83f2c065e1376f931152fc2e
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: cc472fc6dec08ffaa8be7890755ff0cf190ab40f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786135"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938736"
 ---
 # <a name="notebook-copynotebook"></a>блокнот: copyNotebook
 
@@ -42,7 +42,7 @@ POST /sites/{id}/onenote/notebooks/{id}/copyNotebook
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
@@ -72,7 +72,6 @@ POST /sites/{id}/onenote/notebooks/{id}/copyNotebook
 ```http
 POST https://graph.microsoft.com/beta/me/onenote/notebooks/{id}/copyNotebook
 Content-type: application/json
-Content-length: 108
 
 {
   "groupId": "groupId-value",

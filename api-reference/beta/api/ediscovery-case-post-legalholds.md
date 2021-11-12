@@ -2,15 +2,15 @@
 title: Создание legalHold
 description: Создание нового объекта legalHold.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: a48774cd3613b2b2cdbcb376d5ffe9781a786c79
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 1de0f93821122786731673af08942a68027f585e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773853"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945658"
 ---
 # <a name="create-legalhold"></a>Создание legalHold
 
@@ -45,7 +45,7 @@ POST /compliance/ediscovery/cases/{caseId}/legalHolds
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -77,7 +77,6 @@ POST /compliance/ediscovery/cases/{caseId}/legalHolds
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalHolds
 Content-Type: application/json
-Content-length: 295
 
 {
   "@odata.type": "#microsoft.graph.ediscovery.legalHold",

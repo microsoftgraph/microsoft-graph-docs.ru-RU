@@ -2,15 +2,15 @@
 title: Список acceptedSenders
 description: Получение списка пользователей или групп, включенных в список утвержденных отправителей для этой группы.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a60225965c0da6657a6d7476dd46499a75c19b73
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: cb78f76be22b9acd6a7a5e4cecbab766909318ff
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681664"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947324"
 ---
 # <a name="list-acceptedsenders"></a>Список acceptedSenders
 
@@ -45,7 +45,7 @@ GET /groups/{id}/acceptedSenders
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/acceptedSenders
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/beta/groups/{id}/acceptedSenders
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [

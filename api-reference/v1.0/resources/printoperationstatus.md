@@ -2,21 +2,19 @@
 title: тип ресурса printOperationStatus
 description: Представляет текущее состояние длительной операции универсальной печати.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 968958ef9d016b672bfe4d100cfc09f7a3b57d6c6c3ff28c36309ec6df04fe4d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: dd5e7e912ea6810a4a0d501d47a8711830e91ae0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54154891"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944895"
 ---
 # <a name="printoperationstatus-resource-type"></a>тип ресурса printOperationStatus
 
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Представляет текущее состояние длительной операции универсальной печати.
 
@@ -34,7 +32,7 @@ ms.locfileid: "54154891"
 |запуск|1|Операция запущена.|
 |успешно|2|Операция выполнена успешно.|
 |не удалось|3|Сбой операции.|
-|unknownFutureValue|4 |Эволюционирующее значение sentinel. Не следует использовать.|
+|unknownFutureValue|4|Эволюционирующее значение sentinel. Не следует использовать.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b0544b36d37875a2c8e79bbbb6aeb0bfeeb2a12e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3b5c83acfdba6fa836ca2836c62ae1161f3256f0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029649"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937505"
 ---
 # <a name="update-chartfont"></a>Обновление объекта ChartFont
 
@@ -69,7 +69,6 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/a
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/format/font
 Content-type: application/json
-Content-length: 134
 
 {
   "bold": true,
@@ -108,7 +107,6 @@ Content-length: 134
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 134
 
 {
   "bold": true,

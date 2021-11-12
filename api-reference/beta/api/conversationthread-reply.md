@@ -1,16 +1,16 @@
 ---
 title: 'conversationThread: reply'
-description: 'Ответ на цепочку в беседе группы и добавление в нее новой записи. Вы можете указать родительскую беседу. '
+description: 'Ответ на цепочку в беседе группы и добавление в нее новой записи. Можно указать родительский разговор '
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 076f3d3eddb6ca0c33eabe706e7b58fd22cfd54b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 14454e47e8169ef24778201358563ffbbfd00dba
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956632"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943544"
 ---
 # <a name="conversationthread-reply"></a>conversationThread: reply
 
@@ -38,7 +38,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/reply
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,6 @@ POST /groups/{id}/conversations/{id}/threads/{id}/reply
 ```http
 POST https://graph.microsoft.com/beta/groups/{id}/threads/{id}/reply
 Content-type: application/json
-Content-length: 1131
 
 {
   "post": {

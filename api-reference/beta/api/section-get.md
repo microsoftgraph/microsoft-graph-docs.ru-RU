@@ -1,16 +1,16 @@
 ---
 title: Получение раздела
-description: Получение свойств и связей объекта Section.
-localization_priority: Normal
+description: Извлечение свойств и связей объекта раздела.
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 2c8724c672efa9d7eafa152fdcddfd5681e286a6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6538758d1228886e995bd3b73754ea6124326c54
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979561"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945385"
 ---
 # <a name="get-section"></a>Получение раздела
 
@@ -18,7 +18,7 @@ ms.locfileid: "48979561"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [section](../resources/onenotesection.md) .
+Извлечение свойств и связей объекта [раздела.](../resources/onenotesection.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -37,9 +37,9 @@ GET /groups/{id}/onenote/sections/{id}
 GET /sites/{id}/onenote/sections/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `select` `expand` [параметры запросов OData](/graph/query-parameters) и для настройки отклика.
+Этот метод поддерживает параметры `select` `expand` [запроса oData и OData](/graph/query-parameters) для настройки ответа.
 
-Запрос по умолчанию разворачивает `parentNotebook` и выбирает `id` `displayName` свойства, и `self` . Допустимые `expand` значения для разделов — `parentNotebook` и `parentSectionGroup` .
+Запрос по умолчанию расширяется и выбирает его свойства и `parentNotebook` `id` `displayName` `self` свойства. `expand`Допустимые значения для разделов и `parentNotebook` `parentSectionGroup` .
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
@@ -52,7 +52,7 @@ GET /sites/{id}/onenote/sections/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [оненотесектион](../resources/onenotesection.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [onenoteSection](../resources/onenotesection.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/me/onenote/sections/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 272
 
 {
   "isDefault": true,

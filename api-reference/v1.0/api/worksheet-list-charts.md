@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b07a5e86bc3305e309909b69955332b319a92b75
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6bec97cbfd70e0ac7ca0a00e6f74ba31423d4a94
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118806"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946906"
 ---
 # <a name="list-charts"></a>Список диаграмм
 
@@ -38,7 +38,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 93
 
 {
   "value": [

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: c75bdaace4441af7f073b87484c190f1b767d44c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 23e93fdbc9164b4285c1499b09542cf18cda6bbb
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007770"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947554"
 ---
 # <a name="get-plannerplandetails"></a>Получение объекта plannerPlanDetails
 
@@ -35,7 +35,7 @@ GET /planner/plans/{id}/details
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -86,7 +86,6 @@ GET https://graph.microsoft.com/v1.0/planner/plans/{plan-id}/details
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 373
 
 {
   "sharedWith": {

@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 979cbf81654a20cae80aba601c278867ad7ffc1f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b2215ba5406b2320a5ec6f5f1848efb2907e446d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126152"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943115"
 ---
 # <a name="create-account"></a>Создание учетной записи
 Пространство имен: microsoft.graph
@@ -41,7 +41,7 @@ POST /users/{id | userPrincipalName}/profile/account
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -73,7 +73,6 @@ POST /users/{id | userPrincipalName}/profile/account
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/account
 Content-Type: application/json
-Content-length: 494
 
 {
   "allowedAudiences": "organization",

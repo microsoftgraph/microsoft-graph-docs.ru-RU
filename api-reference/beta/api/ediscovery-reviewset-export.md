@@ -2,15 +2,15 @@
 title: 'reviewSet: экспорт'
 description: Инициировать экспорт из reviewSet.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 2620f72eced3bc9f5c6fb02e5e034a6116af5f2c
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: dde236b960cc13eb8d07cee1a69f11eca6b1281c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772859"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943495"
 ---
 # <a name="reviewset-export"></a>reviewSet: экспорт
 
@@ -18,7 +18,7 @@ ms.locfileid: "50772859"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Инициировать экспорт из **reviewSet**.  Дополнительные сведения см. [в материале Export documents from a review set in Advanced eDiscovery.](/microsoft-365/compliance/export-documents-from-review-set)
+Инициировать экспорт из **reviewSet**.  Подробные сведения см. [в материале Экспорт документов из](/microsoft-365/compliance/export-documents-from-review-set)набора обзоров в Advanced eDiscovery.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "50772859"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|eDiscovery.Read.All, eDiscovery.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,7 +45,7 @@ POST /compliance/ediscovery/cases/{caseId}/reviewsets/{reviewsetId}/export
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -82,7 +82,6 @@ POST /compliance/ediscovery/cases/{caseId}/reviewsets/{reviewsetId}/export
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/99e865fc-e29f-479a-ba83-9e58eb017103/reviewsets/e44ac2cb-f8b4-4fd8-aa1c-1391b46ba9cc/export
 Content-Type: application/json
-Content-length: 186
 
 {
   "outputName": "2020-12-06 Contoso investigation export",

@@ -2,15 +2,15 @@
 title: Создание updatableAssetGroup
 description: Создание нового объекта updatableAssetGroup.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 4a7bb68439cd3fd2eade0eaf11b43e2bbf51a5b2
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: a8a6ae7525ef6de58d706cc607f40e4a215d3291
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52238448"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926051"
 ---
 # <a name="create-updatableassetgroup"></a>Создание updatableAssetGroup
 Пространство имен: microsoft.graph.windowsUpdates
@@ -43,7 +43,7 @@ POST /admin/windows/updates/updatableAssets
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -69,7 +69,6 @@ POST /admin/windows/updates/updatableAssets
 ``` http
 POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets
 Content-Type: application/json
-Content-length: 76
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.updatableAssetGroup"

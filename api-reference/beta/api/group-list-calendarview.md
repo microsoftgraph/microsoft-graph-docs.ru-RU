@@ -1,16 +1,16 @@
 ---
 title: Список calendarView
 description: Получение исключений, повторяемых или единичных экземпляров событий в таком представлении стандартного календаря группы, которое определяется заданным диапазоном времени.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ce71ac714f2919c1d9c60d71da39a0252b24306c
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 48871751b939103fda5d5f4f94a61347e988ef75
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681657"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947310"
 ---
 # <a name="list-calendarview"></a>Список calendarView
 
@@ -96,7 +96,7 @@ Prefer: outlook.body-content-type="text"
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -107,7 +107,6 @@ Prefer: outlook.body-content-type="text"
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1354
 Preference-Applied: outlook.body-content-type="text"
 
 {

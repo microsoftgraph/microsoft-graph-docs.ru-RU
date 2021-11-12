@@ -2,15 +2,15 @@
 title: Получение объекта calendarGroup
 description: Получение свойств и связей, принадлежащих объекту группы календарей.
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7288e5e96c4a32464d6e8a2574cd356f26d5c462
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3f20e02224370c99b00185d4779f501a9e46a03c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047716"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938023"
 ---
 # <a name="get-calendargroup"></a>Получение объекта calendarGroup
 
@@ -49,7 +49,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}
 
 | Имя          | Тип   | Описание               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {токен}. Обязательный. |
+| Authorization | string | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/me/calendarGroups/{id}
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -107,7 +107,6 @@ GET https://graph.microsoft.com/beta/me/calendarGroups/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 110
 
 {
   "name": "name-value",
