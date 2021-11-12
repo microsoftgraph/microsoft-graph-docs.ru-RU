@@ -1,16 +1,16 @@
 ---
 title: 'раздел: copyToNotebook'
 description: Копирует раздел в определенный блокнот.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 17d2711abedbf2eeedc4fba9c801e79ff4d151ec
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 81efaa842c08ae2cec59218f5b9b6353e7b5afba
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786755"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926436"
 ---
 # <a name="section-copytonotebook"></a>раздел: copyToNotebook
 
@@ -41,7 +41,7 @@ POST /sites/{id}/onenote/sections/{id}/copyToNotebook
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
@@ -72,7 +72,6 @@ POST /sites/{id}/onenote/sections/{id}/copyToNotebook
 ```http
 POST https://graph.microsoft.com/beta/me/onenote/sections/{id}/copyToNotebook
 Content-type: application/json
-Content-length: 84
 
 {
   "id": "id-value",

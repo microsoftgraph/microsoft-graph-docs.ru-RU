@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 708f0cb32cb3bf6686a2256a997c0354d4fbbaec
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 50be0c9d90e502c73baa6f4dc91174bbc8b2be73
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767381"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937370"
 ---
 # <a name="list-submissions"></a>Отправки списков
 
@@ -27,7 +27,7 @@ ms.locfileid: "59767381"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Application | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All | 
+|Для приложений | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -36,12 +36,14 @@ GET /education/classes/{id}/assignments/{id}/submissions
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
+
+Ниже параметров для этого метода: , , и , который `$expand` включает все предыдущие `outcomes` `resources` `submittedResources` `*` параметры.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не поставляем тело запроса для этого метода.
@@ -49,8 +51,10 @@ GET /education/classes/{id}/assignments/{id}/submissions
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` объектов [educationSubmission](../resources/educationsubmission.md) в тексте отклика.
 
-## <a name="example"></a>Пример
-### <a name="request"></a>Запрос
+## <a name="examples"></a>Примеры
+
+### <a name="example-1-get-submissions"></a>Пример 1. Получения представлений
+#### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 
@@ -82,8 +86,8 @@ GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0
 ---
 
 
-### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+#### <a name="response"></a>Отклик
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -96,7 +100,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 873
 
 {
     "value": [
@@ -135,6 +138,154 @@ Content-length: 873
                     "displayName": null
                 }
             }
+        }
+    ]
+}
+```
+
+### <a name="example-2-get-submissions-with-expand-options"></a>Пример 2. Получать отправки с помощью $expand параметров
+#### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","efcdf80b-a5de-42ac-8579-e40b0223d48b"],
+  "name": "get_submissions_expand"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/efcdf80b-a5de-42ac-8579-e40b0223d48b/submissions?$expand=outcomes
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-submissions-expand-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-submissions-expand-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-submissions-expand-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-submissions-expand-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a>Отклик
+Ниже приведен пример ответа. 
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationSubmission",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 4492
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('efcdf80b-a5de-42ac-8579-e40b0223d48b')/submissions(outcomes())",
+    "value": [
+        {
+            "status": "returned",
+            "submittedDateTime": null,
+            "unsubmittedDateTime": null,
+            "returnedDateTime": "2021-10-13T15:57:00.0349869Z",
+            "resourcesFolderUrl": null,
+            "id": "9bc724ee-d314-1ec5-725d-5f81228e85a6",
+            "recipient": {
+                "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
+                "userId": "80cefd93-8d88-40e2-b5d3-67898383e226"
+            },
+            "submittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                    "displayName": null
+                }
+            },
+            "unsubmittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "returnedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
+                    "displayName": null
+                }
+            },
+            "outcomes@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('efcdf80b-a5de-42ac-8579-e40b0223d48b')/submissions('9bc724ee-d314-1ec5-725d-5f81228e85a6')/outcomes",
+            "outcomes": [
+                {
+                    "@odata.type": "#microsoft.graph.educationFeedbackOutcome",
+                    "lastModifiedDateTime": null,
+                    "id": "ca05367a-b292-42d5-aff7-5d279feeace8",
+                    "lastModifiedBy": null,
+                    "feedback": null,
+                    "publishedFeedback": null
+                },
+                {
+                    "@odata.type": "#microsoft.graph.educationPointsOutcome",
+                    "lastModifiedDateTime": null,
+                    "id": "ea1351f6-ba33-4940-b2cb-6a7254af2dc8",
+                    "lastModifiedBy": null,
+                    "points": null,
+                    "publishedPoints": null
+                },
+                {
+                    "@odata.type": "#microsoft.graph.educationRubricOutcome",
+                    "lastModifiedDateTime": "2021-10-13T15:57:00.0076092Z",
+                    "id": "65a46d78-1a2b-4a7e-bcf8-78a22ac2611b",
+                    "lastModifiedBy": {
+                        "application": null,
+                        "device": null,
+                        "user": {
+                            "id": null,
+                            "displayName": null
+                        }
+                    },
+                    "rubricQualityFeedback": [
+                        {
+                            "qualityId": "f4c7b781-4c0c-4113-a5fb-c0885b7ab510",
+                            "feedback": null
+                        }
+                    ],
+                    "rubricQualitySelectedLevels": [
+                        {
+                            "qualityId": "f4c7b781-4c0c-4113-a5fb-c0885b7ab510",
+                            "columnId": "ef99fe68-b6f8-4f67-a13b-9a81c1724788"
+                        }
+                    ],
+                    "publishedRubricQualityFeedback": [
+                        {
+                            "qualityId": "f4c7b781-4c0c-4113-a5fb-c0885b7ab510",
+                            "feedback": null
+                        }
+                    ],
+                    "publishedRubricQualitySelectedLevels": [
+                        {
+                            "qualityId": "f4c7b781-4c0c-4113-a5fb-c0885b7ab510",
+                            "columnId": "ef99fe68-b6f8-4f67-a13b-9a81c1724788"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

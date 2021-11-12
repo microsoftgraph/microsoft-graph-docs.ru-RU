@@ -2,15 +2,15 @@
 title: Создание externalGroupMember
 description: Создание нового внешнего объектаGroupMember.
 author: snlraju-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 2267ec63073d964b9cd162ff5331a8e7df99cec9
-ms.sourcegitcommit: 6efd9df497d795988cd85474f379d1989b0995b7
+ms.openlocfilehash: 89612341b9c730672591599fd38ed2c3e2420175
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58697480"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939674"
 ---
 # <a name="create-externalgroupmember"></a>Создание externalGroupMember
 
@@ -45,7 +45,7 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 
 | Имя          | Описание                 |
 |:--------------|:----------------------------|
-| Авторизация | Bearer {токен}. Обязательный.   |
+| Авторизация | Bearer {token}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,7 +57,7 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 | Свойство       | Тип                    | Описание                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
 | id             | String                  | Уникальный `id` член. Это будет objectId в случае Azure Active Directory пользователей или групп и externalGroupId в случае внешних групп. Обязательное.                                   |
-| type           | microsoft.graph.externalConnectors.externalGroupMemberType | Тип участника, добавленного во внешнюю группу. Возможные значения: или когда identitySource является и только `user` `group` `azureActiveDirectory` `group` тогда, когда identitySource `external` является . Обязательно. |
+| type           | microsoft.graph.externalConnectors.externalGroupMemberType | Тип участника, добавленного во внешнюю группу. Возможные значения: или когда identitySource является и только `user` `group` `azureActiveDirectory` `group` тогда, когда identitySource `external` является . Обязательный. |
 | identitySource | microsoft.graph.externalConnectors.identitySourceType      | Источник удостоверений, к которой принадлежит член. Возможные значения: `azureActiveDirectory`, `external`. Обязательный.                                                                                       |
 
 ## <a name="response"></a>Отклик
@@ -85,7 +85,6 @@ Content-Type: application/json
 {
   "id": "e811976d-83df-4cbd-8b9b-5215b18aa874",
   "type": "user",
-  "identitySource": "azureActiveDirectory"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -125,7 +124,6 @@ Content-Type: application/json
 {
   "id": "e811976d-83df-4cbd-8b9b-5215b18aa874",
   "type": "user",
-  "identitySource": "azureActiveDirectory"
 }
 ```
 
@@ -147,8 +145,7 @@ Content-Type: application/json
 
 {
   "id": "e5477431-1038-484e-bf69-1dfedb97a110",
-  "type": "group",
-  "identitySource": "azureActiveDirectory"
+  "type": "externalGroup",
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -186,8 +183,7 @@ Content-Type: application/json
 
 {
   "id": "e5477431-1038-484e-bf69-1dfedb97a110",
-  "type": "group",
-  "identitySource": "azureActiveDirectory"
+  "type": "externalGroup",
 }
 ```
 
@@ -209,8 +205,7 @@ Content-Type: application/json
 
 {
   "id": "1431b9c38ee647f6a",
-  "type": "group",
-  "identitySource": "external"
+  "type": "externalGroup",
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -248,7 +243,6 @@ Content-Type: application/json
 
 {
   "id": "14m1b9c38qe647f6a",
-  "type": "group",
-  "identitySource": "external"
+  "type": "externalGroup",
 }
 ```

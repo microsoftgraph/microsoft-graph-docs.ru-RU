@@ -2,15 +2,15 @@
 title: Добавление владельца
 description: Используйте этот API, чтобы добавить владельца в приложение.
 author: sureshja
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 54fd7be410eeea8366a8c2263a0cbdd6ba3237aa
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 661cd33cb10f0d50d7f66c390ddb609038232eea
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786280"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942501"
 ---
 # <a name="add-owner"></a>Добавление владельца
 
@@ -27,7 +27,7 @@ ms.locfileid: "52786280"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Application.ReadWrite.All и Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Application.ReadWrite.OwnedBy и Directory.Read.All, Application.ReadWrite.All и Directory.Read.All, Directory.ReadWrite.All |
+|Для приложений | Application.ReadWrite.OwnedBy и Directory.Read.All, Application.ReadWrite.All и Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ POST /applications/{id}/owners/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя | Описание|
 |:---- |:---------- |
-| Авторизация | Bearer {токен}. Обязательный.  |
+| Авторизация | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса укажи идентификатор объекта каталога, назначенного в качестве владельца.
@@ -59,7 +59,6 @@ POST /applications/{id}/owners/$ref
 ```http
 POST https://graph.microsoft.com/beta/applications/{id}/owners/$ref
 Content-type: application/json
-Content-length: 30
 
 {
 "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/{id}"

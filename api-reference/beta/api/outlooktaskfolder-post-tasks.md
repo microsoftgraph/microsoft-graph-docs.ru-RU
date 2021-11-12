@@ -2,15 +2,15 @@
 title: Создание объекта outlookTask
 description: Создайте Outlook задачу в указанной папке задач.
 author: mashriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 233e93529c2b4644a69643fd8bf1f49562765127
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2ac35b9ff95086c9c39fa0ca06b2d9f518d46d03
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055437"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946765"
 ---
 # <a name="create-outlooktask-deprecated"></a>Создание объекта outlookTask (не рекомендуется)
 
@@ -46,7 +46,7 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Prefer: outlook.timezone | Указывает часовой пояс для свойств времени в ответе, который будет в UTC, если этот заглавный не указан. Необязательно.|
+| Prefer: outlook.timezone | Указывает часовой пояс для свойств времени в ответе, который будет в UTC, если этот заглавный не указан. Необязательный параметр.|
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса поставляем представление JSON [объекта OutlookTask.](../resources/outlooktask.md)
@@ -67,7 +67,6 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 ```http
 POST https://graph.microsoft.com/beta/me/outlook/taskfolders('AAMkADIyAAAhrbPXAAA=')/tasks
 Content-type: application/json
-Content-length: 376
 
 {
   "subject": "Shop for dinner",
@@ -112,7 +111,6 @@ Content-length: 376
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 376
 
 {
   "createdDateTime": "2016-04-22T05:44:01.2012012Z",

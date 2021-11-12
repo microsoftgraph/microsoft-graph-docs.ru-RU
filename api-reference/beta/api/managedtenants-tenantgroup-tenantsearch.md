@@ -2,15 +2,15 @@
 title: 'tenantGroup: tenantSearch'
 description: Поиск указанных управляемых клиентов в группах клиентов.
 author: isaiahwilliams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 73cf4f28cfa22bd0f881bc1d00c91aa8c0b2cf03
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 1c3e1983364237bf85a3ad9b3fef717698eb5d64
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53441888"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925197"
 ---
 # <a name="tenantgroup-tenantsearch"></a>tenantGroup: tenantSearch
 Пространство имен: microsoft.graph.managedTenants
@@ -41,7 +41,7 @@ POST /tenantRelationships/managedTenants/tenantGroups/tenantSearch
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -72,7 +72,6 @@ POST /tenantRelationships/managedTenants/tenantGroups/tenantSearch
 ``` http
 POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantGroups/tenantSearch
 Content-Type: application/json
-Content-length: 28
 
 {
   "tenantId": "String"

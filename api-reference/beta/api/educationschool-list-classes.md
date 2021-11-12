@@ -2,15 +2,15 @@
 title: Перечисление educationClasses
 description: Получение списка курсов учебного заведения.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 72dde0faaeb72749c214ca4791a5b37037b1a84f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 601e7b2b3e3de54b10503460cc2a864bb05db53b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043411"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942305"
 ---
 # <a name="list-educationclasses"></a>Перечисление educationClasses
 
@@ -40,7 +40,7 @@ GET /education/schools/{id}/classes
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/education/schools/10002/classes
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 277
 
 {
   "value": [

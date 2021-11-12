@@ -1,16 +1,16 @@
 ---
 title: Вывод записной книжки
-description: Получение свойств и связей объекта записной книжки.
+description: Извлечение свойств и связей объекта записной книжки.
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 67d1fbae81bc678f79d8c9f10ab3fcb4719dc56f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c03d8c82ba5af7d18da61a95c0ae7329b06d4a3c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978305"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941290"
 ---
 # <a name="get-notebook"></a>Вывод записной книжки
 
@@ -18,7 +18,7 @@ ms.locfileid: "48978305"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [записной книжки](../resources/notebook.md) .
+Извлечение свойств и связей объекта [записной книжки.](../resources/notebook.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -37,7 +37,7 @@ GET /groups/{id}/onenote/notebooks/{id}
 GET /sites/{id}/onenote/notebooks/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `select` `expand` [параметры запросов OData](/graph/query-parameters) и для настройки отклика.
+Этот метод поддерживает параметры `select` `expand` [запроса oData и OData](/graph/query-parameters) для настройки ответа.
 
 Допустимые значения `expand` для записных книжек: `sections` и `sectionGroups`.
 
@@ -52,7 +52,7 @@ GET /sites/{id}/onenote/notebooks/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [Notebook](../resources/notebook.md) в теле отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` объект [записной](../resources/notebook.md) книжки в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/me/onenote/notebooks/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 284
 
 {
   "isDefault": true,

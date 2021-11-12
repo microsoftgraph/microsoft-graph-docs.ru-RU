@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipals: Перечисление ownedObjects'
 description: Извлечение списка объектов, принадлежащих servicePrincipal.  Это могут быть приложения или группы.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: bbc25fbf7e23cfc076e138a1670f84a6e3c1f606
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: 867304bf1a3a077d6663fcb703531fac4d9a6e20
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53580221"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945308"
 ---
 # <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipals: Перечисление ownedObjects
 
@@ -42,7 +42,7 @@ GET /servicePrincipals/{id}/ownedObjects
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя           | Описание                |
 |:---------------|:---------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -95,7 +95,6 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/ownedObjects
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [

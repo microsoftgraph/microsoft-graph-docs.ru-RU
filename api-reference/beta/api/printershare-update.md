@@ -2,15 +2,15 @@
 title: Обновление принтера
 description: Обновление свойств совместной работы принтера. Этот метод можно использовать для "замены" принтеров.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: ebcf17c40b3d9175ec9db4c9621ebfc053647c1d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 142f965fe68bfaa84c827ee047c257729c6e4107
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037451"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947247"
 ---
 # <a name="update-printershare"></a>Обновление принтера
 
@@ -42,7 +42,7 @@ PATCH /print/shares/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -52,9 +52,9 @@ PATCH /print/shares/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|принтер|microsoft.graph.printer|Принтер, с который связан этот принтер. Используйте синтаксис, как показано в следующем примере, чтобы обновить принтер, с которым связан этот `printer@odata.bind` принтер.|
+|printer|microsoft.graph.printer|Принтер, с который связан этот принтер. Используйте синтаксис, как показано в следующем примере, чтобы обновить принтер, с которым связан этот `printer@odata.bind` принтер.|
 |displayName|String|Имя доли принтера, которую должны отображать клиенты печати.|
-|allowAllUsers|Логический| Если это так, всем пользователям и группам будет предоставлен доступ к этой совместной печати. Это замещеет списки разрешенных объектов, определенные свойствами allowedUsers и allowedGroups.|
+|allowAllUsers|Логическое| Если это так, всем пользователям и группам будет предоставлен доступ к этой совместной печати. Это замещеет списки разрешенных объектов, определенные свойствами allowedUsers и allowedGroups.|
 
 ## <a name="response"></a>Отклик
 В случае успешного использования этот метод возвращает код отклика и обновленный объект `200 OK` [printerShare](../resources/printershare.md) в тексте отклика.
@@ -70,7 +70,6 @@ PATCH /print/shares/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/print/shares/{id}
 Content-type: application/json
-Content-length: 109
 
 {
   "displayName": "ShareName",
@@ -107,7 +106,6 @@ Content-length: 109
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 225
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",

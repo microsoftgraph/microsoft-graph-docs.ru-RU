@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 17248dd008ca489080e3614faa0eaac0c89d6f79
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: cc0b1890bc37f9cdb108ddfd8c282028ff67760d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688774"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943796"
 ---
 # <a name="update-externalitem"></a>Обновление externalItem
 Пространство имен: microsoft.graph.externalConnectors
@@ -26,7 +26,7 @@ ms.locfileid: "60688774"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Неприменимо|
 |Делегированные (личная учетная запись Майкрософт)|Неприменимо|
-|Application| ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All|
+|Для приложений| ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -88,7 +88,6 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/external/connections/contosohr/items/TSP228082938
 Content-Type: application/json
-Content-length: 360
 
 {
   "acl": [

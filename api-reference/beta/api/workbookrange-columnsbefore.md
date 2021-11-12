@@ -2,15 +2,15 @@
 title: 'workbookRange: columnsBefore'
 description: Возвращает определенное количество столбцов слева от заданного диапазона.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 23b790da4bd14d24373f880d1258161ed0839515
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8558abbf4a7af5af0fd30a67824de31e20c1ebde
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52036039"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937568"
 ---
 # <a name="workbookrange-columnsbefore"></a>workbookRange: columnsBefore
 
@@ -46,7 +46,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range/columnsBefore(co
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range/c
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -97,7 +97,6 @@ GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range/c
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 157
 
 {
   "address": "address-value",

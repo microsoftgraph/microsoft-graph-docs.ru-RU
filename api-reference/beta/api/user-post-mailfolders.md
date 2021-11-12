@@ -1,16 +1,16 @@
 ---
 title: Создание объекта MailFolder
 description: С помощью этого API можно создать папку почты в корневой папке почтового ящика пользователя.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 07913741d015830d395c104c34786009703c8133
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 3377d0ae675286163b673f5c83b3f5ebee8648ab
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49754119"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946057"
 ---
 # <a name="create-mailfolder"></a>Создание объекта MailFolder
 
@@ -20,7 +20,7 @@ ms.locfileid: "49754119"
 
 С помощью этого API можно создать папку почты в корневой папке почтового ящика пользователя.
 
-Если предполагается, что новая папка будет скрыта, необходимо установить для свойства **isHidden** `true` функцию при создании.
+Если предполагается, что новая папка будет скрыта, необходимо настроить свойство **isHidden** для `true` создания.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -40,20 +40,20 @@ POST /users/{id | userPrincipalName}/mailFolders
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса предоставьте JSON-объект с указанными ниже параметрами. **displayName** и **isHidden** являются единственными свойствами, которые можно писать для [объекта mailFolder.](../resources/mailfolder.md)
+В тексте запроса предоставьте JSON-объект с указанными ниже параметрами. **displayName** и **isHidden** являются единственными свойствами для объекта [mailFolder.](../resources/mailfolder.md)
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |displayName|String|Отображаемое имя новой папки.|
-|isHidden|Boolean|Указывает, скрыта ли новая папка. Значение по умолчанию — `false`. Установка свойства необязательна. После этого вы не сможете обновить это свойство. Дополнительные сведения см. в [скрытых почтовых папках](../resources/mailfolder.md#hidden-mail-folders)|
+|isHidden|Логический|Указывает, скрыта ли новая папка. Значение по умолчанию — `false`. Настройка свойства необязательна. После набора невозможно обновить это свойство. Дополнительные сведения см. в [папках "Скрытая почта"](../resources/mailfolder.md#hidden-mail-folders)|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `201 Created` [mailFolder](../resources/mailfolder.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `201 Created` [mailFolder](../resources/mailfolder.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -67,7 +67,6 @@ POST /users/{id | userPrincipalName}/mailFolders
 ```http
 POST https://graph.microsoft.com/beta/me/mailFolders
 Content-type: application/json
-Content-length: 159
 
 {
   "displayName": "Clutter",
@@ -105,7 +104,6 @@ Content-length: 159
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 179
 
 {
   "id": "hN2Y5OGRhNGYwODEALgAAA0DAKbvJvFhJgcT3lZpkhNQBAA1",

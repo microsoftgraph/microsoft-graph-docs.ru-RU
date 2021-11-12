@@ -2,15 +2,15 @@
 title: Список ownedObjects
 description: Получение списка объектов каталога, принадлежащих пользователю.
 author: jpettere
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 644b4692589d22d73c50e69f16293f265aa4e884
-ms.sourcegitcommit: 612e1d796023433c6e15a9d66ba99d9bdc424cee
+ms.openlocfilehash: bbec2fee0df8f6922c2b5d76d0525e1bef71dd63
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52703491"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947415"
 ---
 # <a name="list-ownedobjects"></a>Список ownedObjects
 
@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/v1.0/me/ownedObjects
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [

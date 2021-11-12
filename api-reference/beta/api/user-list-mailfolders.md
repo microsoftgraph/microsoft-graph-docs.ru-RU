@@ -1,16 +1,16 @@
 ---
 title: Список объектов mailFolder
-description: Получите все почтовые папки в почтовом ящике пользователя, выписав его.
-localization_priority: Normal
+description: Получите все почтовые папки в почтовом ящике подписанного пользователя.
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: abheek-das
 ms.prod: outlook
-ms.openlocfilehash: c2cf43dc9d01ba2de2a3426cce84aaf3f92bbbb3
-ms.sourcegitcommit: df0778a4dbd1e7a2fde1846bdfbfd9440fc91672
+ms.openlocfilehash: 1532255c85f2505f23b143f9bc762ca5cd2d8f03
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49768218"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937589"
 ---
 # <a name="list-mailfolders"></a>Список объектов mailFolder
 
@@ -18,9 +18,9 @@ ms.locfileid: "49768218"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите все почтовые папки в почтовом ящике указанного пользователя, включая все папки [поиска почты.](../resources/mailsearchfolder.md)
+Получите все почтовые папки в указанном почтовом ящике пользователя, включая все папки [поиска почты.](../resources/mailsearchfolder.md)
 
-По умолчанию эта операция не возвращает скрытые папки. Используйте параметр запроса _includeHiddenFolders,_ чтобы включить их в ответ.
+По умолчанию эта операция не возвращает скрытые папки. Используйте параметр запроса _includeHiddenFolders_, чтобы включить их в отклик.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -33,14 +33,14 @@ ms.locfileid: "49768218"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Чтобы получить все почтовые папки в почтовом ящике указанного пользователя, за исключением скрытых папок:
+Чтобы получить все папки почты в указанном почтовом ящике пользователя, за исключением скрытых:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders
 GET /users/{id | userPrincipalName}/mailFolders
 ```
 
-Чтобы включить _скрытые_ почтовые папки в ответ:
+Чтобы включить _скрытые_ папки почты в отклик:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/?includeHiddenFolders=true
@@ -48,14 +48,14 @@ GET /users/{id | userPrincipalName}/mailFolders/?includeHiddenFolders=true
 ```
 
 ## <a name="query-parameters"></a>Параметры запроса
-Чтобы получить список всех объектов mailFolders, включая скрытые (их свойство **isHidden** имеет true), в URL-адресе запроса укажите параметр запроса как , как показано в разделе `includeHiddenFolders` `true` [HTTP-запроса.](#http-request)
+Чтобы вернуть список всех объектов mailFolder, включая скрытые (их свойство **isHidden** имеет значение true), в URL-адресе запроса укажите параметр запроса `includeHiddenFolders` как `true`, как показано в разделе [HTTP-запрос](#http-request).
 
 Этот метод также поддерживает [параметры запроса OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -65,9 +65,9 @@ GET /users/{id | userPrincipalName}/mailFolders/?includeHiddenFolders=true
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [mailFolder](../resources/mailfolder.md) в тексте отклика.
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-list-mail-folders-in-the-signed-in-users-mailbox"></a>Пример 1. Список папок почты в почтовом ящике пользователя, выписав его
+### <a name="example-1-list-mail-folders-in-the-signed-in-users-mailbox"></a>Пример 1. Перечисление папок почты из почтового ящика вошедшего пользователя
 
-В этом примере в **ответ включается объект mailSearchFolder.** Папка поиска почты — это папка под папкой "Входящие" с отображаемым именем "Еженедельные дайджесты".
+В этом примере в отклик включается объект **mailSearchFolder**. Папка поиска почты — это дочерняя папка в папке "Входящие" с отображаемым именем "Еженедельные дайджесты".
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -213,9 +213,9 @@ Content-type: application/json
 ```
 
 
-### <a name="example-2-include-hidden-folders-in-the-signed-in-users-mailbox"></a>Пример 2. Включив скрытые папки в почтовый ящик во включенного пользователя
+### <a name="example-2-include-hidden-folders-in-the-signed-in-users-mailbox"></a>Пример 2. Включение скрытых папок из почтового ящика вошедшего пользователя
 
-В следующем примере параметр запроса используется для получения списка почтовых папок, `includeHiddenFolders` включая скрытые почтовые папки. Ответ включает папку "Clutters", для нее **задав для isHidden** задав true.
+В следующем примере параметр запроса `includeHiddenFolders` используется для получения списка папок почты, включая скрытые почтовые папки. Отклик включает папку "Несрочные", параметру **isHidden** которой присвоено значение true.
 
 #### <a name="request"></a>Запрос
 
@@ -250,7 +250,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders/?includeHiddenFolders=true
 #### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 
->**Примечание.** Показанный здесь объект ответа сокращен для учитаемости и не включает все папки по умолчанию в почтовом ящике пользователя.
+>**Примечание.** Объект отклика, показанный здесь, сокращен для удобочитаемости и не включает все стандартные папки из почтового ящика пользователя.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -260,7 +260,6 @@ GET https://graph.microsoft.com/beta/me/mailFolders/?includeHiddenFolders=true
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 232
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/mailFolders",

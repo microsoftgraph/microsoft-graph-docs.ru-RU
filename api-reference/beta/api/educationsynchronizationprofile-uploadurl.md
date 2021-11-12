@@ -2,15 +2,15 @@
 title: 'educationSynchronizationProfile: uploadUrl'
 description: Извлечение подписи общего доступа (SAS) для отправки исходных файлов в хранилище BLOB Azure для определенного профиля синхронизации школьных данных в клиенте. Срок действия маркера SAS - один час.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d8a8a7f1cfd01ed63b54b66d888b3eb9e80d3a30
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 5eab6e69edb352a7b750702e9d34cbc2df7bb4ed
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664715"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946820"
 ---
 # <a name="educationsynchronizationprofile-uploadurl"></a>educationSynchronizationProfile: uploadUrl
 
@@ -31,7 +31,7 @@ URL-адрес загрузки предоставляется только по
 |:-----------|:----------|
 | Делегированное (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
 |Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|EduAdministration.ReadWrite.All |
+|Для приложений|EduAdministration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ GET /education/synchronizationProfiles/{id}/uploadUrl
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный.  |
+| Authorization  | string  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/uplo
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -94,7 +94,6 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/uplo
 ```http
 HTTP/1.1 201 OK
 Content-type: application/json
-Content-length: 314
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#String",

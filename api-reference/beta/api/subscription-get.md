@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: a370b8619e2b8d3948ea4bfca626ca20156cb36d
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 27cca53006c786fcdda8ef71d94a99f98962bf7d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767064"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945301"
 ---
 # <a name="get-subscription"></a>Получение подписки
 
@@ -99,7 +99,7 @@ GET /subscriptions/{id}
 
 | Имя       | Тип | Описание|
 |:-----------|:-----|:-----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -155,7 +155,6 @@ GET https://graph.microsoft.com/beta/subscriptions/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 252
 
 {
   "id":"7f105c7d-2dc5-4530-97cd-4e7ae6534c07",

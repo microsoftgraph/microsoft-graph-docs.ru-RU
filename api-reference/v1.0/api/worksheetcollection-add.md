@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 844be86737d786c13ea71b261a8b02edff6e5001
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 490d4cbf2e2bd4baf50fa62415bc8bad904a812a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60444534"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945721"
 ---
 # <a name="worksheetcollection-add"></a>WorksheetCollection: add
 
@@ -63,7 +63,6 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/add
 Content-type: application/json
-Content-length: 26
 
 {
   "name": "name-value"
@@ -98,7 +97,6 @@ Content-length: 26
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 100
 
 {
   "id": "id-value",

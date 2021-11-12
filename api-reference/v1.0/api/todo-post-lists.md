@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 55870cb92aea78855844d8dd3bd3ae3ac2ef7bf0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5014313cb7bf58070c7b24e044adccd4392892ff
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59049818"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941542"
 ---
 # <a name="create-todotasklist"></a>Создание todoTaskList
 Пространство имен: microsoft.graph
@@ -40,7 +40,7 @@ POST /users/{id|userPrincipalName}/todo/lists
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -50,7 +50,7 @@ POST /users/{id|userPrincipalName}/todo/lists
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Поле, указывающее название списка задач.|
+|displayName|String|Поле, указывающее название списка задач.|
 
 ## <a name="response"></a>Отклик
 
@@ -70,7 +70,6 @@ POST /users/{id|userPrincipalName}/todo/lists
 ``` http
 POST https://graph.microsoft.com/v1.0/me/todo/lists
 Content-Type: application/json
-Content-length: 60
 
 {
   "displayName": "Travel items"

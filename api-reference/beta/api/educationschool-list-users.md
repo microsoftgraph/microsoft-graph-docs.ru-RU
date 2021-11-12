@@ -2,15 +2,15 @@
 title: Перечисление EducationUsers
 description: Получение списка пользователей в учебном заведении.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e70f7fcf86d37099c56e1e6638c7358dc22032f3
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 576a0c7b630cceef5724004dd33e2a20a179c5b5
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043376"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942291"
 ---
 # <a name="list-educationusers"></a>Перечисление EducationUsers
 
@@ -40,7 +40,7 @@ GET /education/schools/{id}/users
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/education/schools/10002/users
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 593
 
 {
   "value": [

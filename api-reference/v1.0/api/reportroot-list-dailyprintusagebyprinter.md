@@ -2,20 +2,18 @@
 title: Список dailyPrintUsageByPrinter
 description: Извлечение списка сводок ежедневного использования печати, сгруппив по принтеру.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 54bfa2748831bcadbc59b2f555c6b65d21fd7d27
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 89ea943c7a45e635a1a220bad26b72b2d7f917a8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50948828"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936244"
 ---
 # <a name="list-dailyprintusagebyprinter"></a>Список dailyPrintUsageByPrinter
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Извлечение списка сводок ежедневного использования печати, сгруппив по [принтеру.](../resources/printer.md)
 
@@ -46,7 +44,7 @@ GET /reports/dailyPrintUsageByPrinter
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

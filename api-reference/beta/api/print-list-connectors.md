@@ -2,15 +2,15 @@
 title: PrintConnectors списка
 description: Извлечение списка соединитений.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 7483553e73dc078ff544cfe3ce0a192de8155cbc
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 04d9d9de1ed12f4ffaa8b244144bc9b190218b76
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052938"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926660"
 ---
 # <a name="list-printconnectors"></a>PrintConnectors списка
 
@@ -29,7 +29,7 @@ ms.locfileid: "52052938"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| PrintConnector.Read.All, PrintConnector.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| Не поддерживается. |
+|Для приложений| Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,13 +40,13 @@ GET /print/connectors
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
-### <a name="exceptions"></a>Exceptions
+### <a name="exceptions"></a>Исключения
 Некоторые операторы не поддерживаются: `$count` , `$search` `$filter` .
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -94,7 +94,6 @@ GET https://graph.microsoft.com/beta/print/connectors
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1289
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/connectors",

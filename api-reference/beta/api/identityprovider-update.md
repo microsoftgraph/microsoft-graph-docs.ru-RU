@@ -1,18 +1,18 @@
 ---
 title: Обновление identityProvider
 description: Обновление свойств identityProvider.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: eb441c036fd4d555a7991c30a986258300282c35
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 74a9df82ea6b822e615fd51e2f15622881e1c5fd
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921569"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947708"
 ---
-# <a name="update-identityprovider-deprecated"></a>Обновление identityProvider (неподготовленное)
+# <a name="update-identityprovider-deprecated"></a>Обновление identityProvider (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
@@ -29,7 +29,7 @@ ms.locfileid: "51921569"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение| IdentityProvider.ReadWrite.All|
+|Для приложений| IdentityProvider.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
@@ -48,7 +48,7 @@ PATCH /identityProviders/{id}
 
 |Имя|Описание|
 |:---------------|:----------|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -73,15 +73,15 @@ PATCH /identityProviders/{id}
 |name|String|Отображаемое имя поставщика удостоверений.|
 |type|String|Тип поставщика удостоверений Значение должно быть `OpenIdConnect` .|
 |claimsMapping|[claimsMapping](../resources/claimsmapping.md)|После того как поставщик OIDC отправляет маркер ID обратно в Azure AD, Azure AD должна иметь возможность составить карту утверждений от полученного маркера к утверждениям, которые Azure AD распознает и использует. Этот сложный тип захватывает это сопоставление.|
-|domainHint|Строка|Подсказку домена можно использовать для перехода непосредственно на вход на страницу указанного поставщика удостоверений вместо того, чтобы пользователь вошел в список доступных поставщиков удостоверений.|
-|metadataUrl|Строка|URL-адрес документа метаданных поставщика удостоверений Open Id Connect.|
-|responseMode|Строка|Определяет метод, который следует использовать для отправки данных от поставщика пользовательских удостоверений в Azure AD B2C. Можно использовать следующие режимы ответа: <ul><li/>`form_post` . Этот режим ответа рекомендуется для лучшей безопасности. Ответ передается методом HTTP POST, код или маркер кодируются в теле с помощью формата application/x-www-form-urlencoded.<li/>`query` Код или маркер возвращаются в качестве параметра запроса.</ul>|
-|responseType|Строка|Описывает, какие сведения отправляются в исходном вызове в authorization_endpoint поставщика пользовательских удостоверений. Можно использовать следующие типы ответов:<ul><li/> `code` . В результате потока кода авторизации код возвращается обратно в Azure AD B2C. Azure AD B2C продолжает вызывать token_endpoint, чтобы обменять код на маркер.<li/> `id_token` . Маркер ID возвращается обратно в Azure AD B2C от настраиваемого поставщика удостоверений. <li/>`token` . Маркер доступа возвращается обратно в Azure AD B2C от настраиваемого поставщика удостоверений. (На данный момент это значение не поддерживается Azure AD B2C)</ul>|
+|domainHint|String|Подсказку домена можно использовать для перехода непосредственно на вход на страницу указанного поставщика удостоверений вместо того, чтобы пользователь вошел в список доступных поставщиков удостоверений.|
+|metadataUrl|String|URL-адрес для документа метаданных поставщика удостоверений Open Id Подключение идентификатора.|
+|responseMode|String|Определяет метод, который следует использовать для отправки данных от поставщика пользовательских удостоверений в Azure AD B2C. Можно использовать следующие режимы ответа: <ul><li/>`form_post` . Этот режим ответа рекомендуется для лучшей безопасности. Ответ передается методом HTTP POST, код или маркер кодируются в теле с помощью формата application/x-www-form-urlencoded.<li/>`query` Код или маркер возвращаются в качестве параметра запроса.</ul>|
+|responseType|String|Описывает, какие сведения отправляются в исходном вызове в authorization_endpoint поставщика пользовательских удостоверений. Можно использовать следующие типы ответов:<ul><li/> `code` . В результате потока кода авторизации код возвращается обратно в Azure AD B2C. Azure AD B2C продолжает вызывать token_endpoint, чтобы обменять код на маркер.<li/> `id_token` . Маркер ID возвращается обратно в Azure AD B2C от настраиваемого поставщика удостоверений. <li/>`token` . Маркер доступа возвращается обратно в Azure AD B2C от настраиваемого поставщика удостоверений. (На данный момент это значение не поддерживается Azure AD B2C)</ul>|
 |scope|String|Область определяет сведения и разрешения, которые вы хотите получить от настраиваемого поставщика удостоверений.|
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `204 No Content`. В случае неудачи возвращается ошибка `4xx` с подробностями.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В случае неудачи возвращается ошибка `4xx` с подробностями.
 
 ## <a name="examples"></a>Примеры
 
@@ -100,7 +100,6 @@ PATCH /identityProviders/{id}
 ``` http
 PATCH https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
 Content-type: application/json
-Content-length: 41
 
 {
   "clientSecret": "1111111111111"
@@ -127,7 +126,7 @@ Content-length: 41
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
@@ -153,7 +152,6 @@ HTTP/1.1 204 No Content
 ``` http
 PATCH https://graph.microsoft.com/beta/identityProviders/OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a
 Content-type: application/json
-Content-length: 41
 
 {
   "responseType": "id_token"

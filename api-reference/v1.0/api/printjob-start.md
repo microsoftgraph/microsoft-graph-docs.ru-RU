@@ -2,20 +2,18 @@
 title: 'printJob: начните'
 description: Отправка задания печати на связанный принтер или принтерShare. Она будет напечатана после завершения, отмены или отмены существующих ожидающих заданий.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: dd264c395538ee3d77fe22829edca27a6d7ad4b1
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: d24196b1ba66a439986ce05f3a823d2f3fda94fa
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50775922"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945896"
 ---
 # <a name="printjob-start"></a>printJob: начните
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Отправка задания печати на [связанный](../resources/printer.md) принтер или [принтерShare](../resources/printershare.md). Он будет напечатан после завершения, отмены или отмены существующих ожидающих заданий. 
 
@@ -43,7 +41,7 @@ POST /print/shares/{printerShareId}/jobs/{printJobId}/start
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

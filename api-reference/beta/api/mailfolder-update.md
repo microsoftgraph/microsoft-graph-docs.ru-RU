@@ -2,15 +2,15 @@
 title: Обновление mailFolder
 description: Обновление свойств объекта mailFolder.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b6039bf189d88c46612fab8ec71ac6ae4eb7909b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 64d32a040f1060de82de4ed77babf8e013cc59e4
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053008"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941304"
 ---
 # <a name="update-mailfolder"></a>Обновление mailFolder
 
@@ -39,7 +39,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -64,7 +64,6 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 Content-type: application/json
-Content-length: 159
 
 {
   "displayName": "displayName-value",
@@ -100,7 +99,6 @@ Content-length: 159
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
 
 {
     "id": "AAMkAGVmMDEzM",

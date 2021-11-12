@@ -2,15 +2,15 @@
 title: Обновление параметра каталога
 description: Обновление свойств определенного объекта параметра каталога.
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 08f6c51413f751a0ce5a2818969e253d32f5e2fe
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: a1f7947bd0204e38c651232ec84eeb9503924715
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786834"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946309"
 ---
 # <a name="update-a-directory-setting"></a>Обновление параметра каталога
 
@@ -29,7 +29,7 @@ ms.locfileid: "52786834"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Directory.ReadWrite.All |
+|Для приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ PATCH /groups/{id}/settings/{id}
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация  | Bearer {токен}. Обязательный.|
+| Авторизация  | Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. 
@@ -66,7 +66,6 @@ PATCH /groups/{id}/settings/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/settings/{id}
 Content-type: application/json
-Content-length: 178
 
 {
   "values": [

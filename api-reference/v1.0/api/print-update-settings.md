@@ -2,20 +2,18 @@
 title: Обновление printSettings
 description: Обновление параметров для клиента для службы универсальной печати.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 2d68bed903409fcc20b333e95245e8e15764b348
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 15c2e41affcdcf6fae5cbc652f49e1b42ef7bdf2
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787617"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924371"
 ---
 # <a name="update-printsettings"></a>Обновление printSettings
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Обновление параметров для клиента для службы универсальной печати.
 
@@ -43,7 +41,7 @@ PATCH /print/settings
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,7 +49,7 @@ PATCH /print/settings
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|documentConversionEnabled|Boolean|Указывает, включено ли преобразование документов для клиента. Если преобразование документов включено, служба универсальной печати автоматически преобразует документы в формат, совместимый с принтером (например, XPS в PDF) при необходимости.|
+|documentConversionEnabled|Логический|Указывает, включено ли преобразование документов для клиента. Если преобразование документов включено, служба универсальной печати автоматически преобразует документы в формат, совместимый с принтером (например, XPS в PDF) при необходимости.|
 
 ## <a name="response"></a>Отклик
 

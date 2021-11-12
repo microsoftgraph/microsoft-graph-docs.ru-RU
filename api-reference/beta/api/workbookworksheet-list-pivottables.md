@@ -2,15 +2,15 @@
 title: Получение списка pivotTables
 description: Получение списка объектов workbookpivottable.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 34f739f472ea4af054d1182b763e0aeb0d2d2424
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e77c35b7e6c3f86a8e8e9abd5247d545c4d47816
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52036032"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924903"
 ---
 # <a name="list-pivottables"></a>Получение списка pivotTables
 
@@ -42,7 +42,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/pivotTables
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/pivotTa
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/pivotTa
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 83
 
 {
   "value": [

@@ -1,23 +1,23 @@
 ---
-title: Обновление магазина
-description: Обновление свойств объекта store.
+title: Магазин обновлений
+description: Обновление свойств объекта магазина.
 author: mohitpcad
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 73d1fb22b92c134fc4ebb2b15fe4b9314dce2d5d
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: c13f6a9b7cab6adb1ae6d824fa33962cead56d05
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874104"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947086"
 ---
-# <a name="update-store"></a>Обновление магазина
+# <a name="update-store"></a>Магазин обновлений
 Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [store.](../resources/termstore-store.md)
+Обновление свойств объекта [магазина.](../resources/termstore-store.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,24 +41,24 @@ PATCH /termStore
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
-В теле запроса укажу представление объекта [store](../resources/termstore-store.md) в JSON.
+## <a name="request-body"></a>Текст запроса
+В корпусе запроса поставляем представление JSON объекта [магазина.](../resources/termstore-store.md)
 
 В следующей таблице показаны свойства, которые можно изменить для [магазина.](../resources/termstore-store.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|defaultLanguageTag|Строка|Язык по умолчанию [для microsoft.graph.termstore.store](../resources/termstore-store.md)|
-|languageTags|Коллекция String|Доступные языки [в microsoft.graph.termstore.store](../resources/termstore-store.md)|
+|defaultLanguageTag|Строка|Язык по умолчанию [microsoft.graph.termstore.store](../resources/termstore-store.md)|
+|LanguageTags|Коллекция String|Доступные языки в [microsoft.graph.termstore.store](../resources/termstore-store.md)|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [store](../resources/termstore-store.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и обновленный объект магазина `200 OK` в тексте [](../resources/termstore-store.md) ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -73,7 +73,6 @@ PATCH /termStore
 ``` http
 PATCH https://graph.microsoft.com/beta/termStore
 Content-Type: application/json
-Content-length: 133
 
 {
   "defaultLanguageTag": "en-US"

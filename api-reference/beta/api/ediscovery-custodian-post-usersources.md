@@ -2,15 +2,15 @@
 title: Создание custodian userSource
 description: Создание нового объекта userSource хранителя.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 1fb67377785a8120bb6e4b1453901b9f8b0137ed
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2764533911aa9d398233474dfe0fa9d9921d4c5d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50946140"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60927115"
 ---
 # <a name="create-custodian-usersource"></a>Создание custodian userSource
 
@@ -45,7 +45,7 @@ POST /compliance/ediscovery/cases/{caseId}/custodians/{custodianId}/userSources
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -78,7 +78,6 @@ POST /compliance/ediscovery/cases/{caseId}/custodians/{custodianId}/userSources
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/4c8f8f70-7785-4bd4-b296-c98376a2c5e1/custodians/2192ca408ea2410eba3bec8ae873be6b/userSources
 Content-Type: application/json
-Content-length: 233
 
 {
     "email":"megan@contoso.com",

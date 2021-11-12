@@ -2,15 +2,15 @@
 title: Создание tenantTag
 description: Создание нового объекта tenantTag.
 author: isaiahwilliams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: e04335b011c3572ce352e9a683c8bb6440343f73
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: fa4da6279a18cbb8ecaa2767ed953e903dcb69ca
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53442091"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947289"
 ---
 # <a name="create-tenanttag"></a>Создание tenantTag
 Пространство имен: microsoft.graph.managedTenants
@@ -41,7 +41,7 @@ POST /tenantRelationships/managedTenants/tenantTags
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -71,7 +71,6 @@ POST /tenantRelationships/managedTenants/tenantTags
 ``` http
 POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantTags
 Content-Type: application/json
-Content-length: 382
 
 {
   "displayName": "Support",

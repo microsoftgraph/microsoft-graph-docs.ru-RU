@@ -2,15 +2,15 @@
 title: 'домен: forceDelete'
 description: Удаляет домен с помощью асинхронной операции.
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 47f81a25fc29f6a7eb0bb79c0f4d84e37825183a
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: fd33af38243a22c2b2f9f3155b7ca67db0f0142e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786827"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944153"
 ---
 # <a name="domain-forcedelete"></a>домен: forceDelete
 
@@ -43,9 +43,9 @@ ms.locfileid: "52786827"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Domain.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Domain.ReadWrite.All |
+|Для приложений | Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -60,7 +60,7 @@ POST /domains/{id}/forceDelete
 
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный.|
+| Авторизация  | Bearer {token}. Обязательный.|
 | Content-Type  | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -86,7 +86,6 @@ POST /domains/{id}/forceDelete
 ```http
 POST https://graph.microsoft.com/beta/domains/contoso.com/forceDelete
 Content-type: application/json
-Content-length: 33
 
 {
   "disableUserAccounts": true

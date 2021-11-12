@@ -2,15 +2,15 @@
 title: Обновление todoTaskList
 description: Обновление свойств объекта todoTaskList.
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 582e9eb65ab0670d1f5c5e735c156e0ac414a19e
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 5019d4914fc2c9e5424da8406733a681c93fcb71
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873194"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946099"
 ---
 # <a name="update-todotasklist"></a>Обновление todoTaskList
 Пространство имен: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -40,23 +40,23 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
-В теле запроса укажу представление объекта [todoTaskList](../resources/todotasklist.md) в JSON.
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем представление JSON объекта [todoTaskList.](../resources/todotasklist.md)
 
 В следующей таблице показаны свойства, необходимые при создании [todoTaskList.](../resources/todotasklist.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Поле, указывающее обновленный заголовок списка задач.|
+|displayName|String|Поле, указывающее обновленное название списка задач.|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [todoTaskList](../resources/todotasklist.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и обновленный `200 OK` [объект todoTaskList](../resources/todotasklist.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -72,7 +72,6 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 ``` http
 PATCH https://graph.microsoft.com/beta/me/todo/lists/AAMkADIyAAAhrbPWAAA=
 Content-Type: application/json
-Content-length: 167
 
 {
   "displayName": "Vacation Plan"

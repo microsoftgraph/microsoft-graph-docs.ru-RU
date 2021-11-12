@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c750b9ffe1c0bfdc40e96542aa881b2a5378e2bc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a8fcd0beb564788ecbe251f2f4badccd035692fb
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099177"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940192"
 ---
 # <a name="create-mailfolder"></a>Создание объекта MailFolder
 
@@ -38,7 +38,7 @@ POST /users/{id | userPrincipalName}/mailFolders
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,6 @@ POST /users/{id | userPrincipalName}/mailFolders
 ```http
 POST https://graph.microsoft.com/v1.0/me/mailFolders
 Content-type: application/json
-Content-length: 159
 
 {
   "displayName": "Clutter",
@@ -103,7 +102,6 @@ Content-length: 159
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 179
 
 {
   "displayName": "Clutter",

@@ -5,12 +5,12 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3c96a3c8a5cab46f1252c10d7d72512284c09e53
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8fd2efb0f13aac9d80525a34485ed09138ee07f6
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59074397"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943852"
 ---
 # <a name="create-educationschool"></a>Создание educationSchool
 
@@ -43,7 +43,7 @@ POST /education/schools
 
 | Имя          | Описание                 |
 | :------------ | :-------------------------- |
-| Авторизация | Bearer {токен}. Обязательный.   |
+| Авторизация | Bearer {token}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,10 +54,10 @@ POST /education/schools
 
 | Свойство             | Тип                                               | Описание                                                                                                                                                          |
 | :------------------- | :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| displayName          | Строка                                             | Отображаемое имя учебного заведения. Унаследованный от [educationOrganization](../resources/educationorganization.md).                                                           |
+| displayName          | String                                             | Отображаемое имя учебного заведения. Унаследованный от [educationOrganization](../resources/educationorganization.md).                                                           |
 | description          | String                                             | Описание учебного заведения. Унаследованный от [educationOrganization](../resources/educationorganization.md).                                                            |
 | externalSource       | educationExternalSource                            | Источник, из которых была создана эта организация. Унаследованный от [educationOrganization](../resources/educationorganization.md). Возможные значения: `sis` " вручную. |
-| externalSourceDetail | Строка                                             | Имя внешнего источника, из которого были созданы эти ресурсы.                                                                                                   |
+| externalSourceDetail | String                                             | Имя внешнего источника, из которого были созданы эти ресурсы.                                                                                                   |
 | principalEmail       | String                                             | Адрес электронной почты директора.                                                                                                                                      |
 | principalName        | String                                             | Имя директора.                                                                                                                                               |
 | externalPrincipalId  | String                                             | Идентификатор директора в системе синхронизации.                                                                                                                                   |
@@ -89,7 +89,6 @@ POST /education/schools
 ```http
 POST https://graph.microsoft.com/v1.0/education/schools
 Content-Type: application/json
-Content-length: 583
 
 {
   "@odata.type": "#microsoft.graph.educationSchool",

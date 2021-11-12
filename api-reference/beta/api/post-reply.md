@@ -2,15 +2,15 @@
 title: 'post: reply'
 description: 'Ответ на публикацию и добавление новой публикации в указанную цепочку беседы группы. Можно указать '
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8acd39c63901dd90396ff2d44e7f206ece3bfe5a
-ms.sourcegitcommit: 7dc8ca82a8b2c25c5084e6b3121688766c9c14a6
+ms.openlocfilehash: 86e8a40e612cf4742b29d6cbd25a3eb3ecd01f98
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50072424"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938611"
 ---
 # <a name="post-reply"></a>post: reply
 
@@ -41,7 +41,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
@@ -67,7 +67,6 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
 ```http
 POST https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}/reply
 Content-type: application/json
-Content-length: 1131
 
 {
   "post": {

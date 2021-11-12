@@ -2,21 +2,19 @@
 title: тип ресурса printOperation
 description: Представляет собой долгосрочную операцию универсальной печати. Базовый класс для типов операций, таких как printerCreateOperation.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 0630d05e30d415ad60f4dd7ea4e7f729506e41b2cc20bded955e1593a6f56161
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 55bf24e75f79a66d9691b14ebac1073c43f15a4e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54138460"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942508"
 ---
 # <a name="printoperation-resource-type"></a>тип ресурса printOperation
 
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Представляет собой долгосрочную операцию универсальной печати. Базовый класс для типов операций, таких как [printerCreateOperation.](printercreateoperation.md)
 

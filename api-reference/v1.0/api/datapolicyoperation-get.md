@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8b3d3ffa73ada9a12eece608fb9038ba1c5446b8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 62bcb057487aa2dcf6fcecf8b3e9a2eca54cc912
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59063498"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936427"
 ---
 # <a name="get-datapolicyoperation"></a>Get dataPolicyOperation
 
@@ -81,7 +81,6 @@ GET https://graph.microsoft.com/v1.0/dataPolicyOperations/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 212
 
 {
   "completedDateTime": "datetime-value",

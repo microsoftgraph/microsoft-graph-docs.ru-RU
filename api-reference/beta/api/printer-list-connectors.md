@@ -2,15 +2,15 @@
 title: Список printConnectors для принтера
 description: Извлечение списка соединитений, связанных с принтером.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 753aeafaef81f39bc9302297581d616d391a5dce
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: accc8c741b8df61c645650f8253be3b6f94be1f4
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049907"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60933087"
 ---
 # <a name="list-printconnectors-for-printer"></a>Список printConnectors для принтера
 
@@ -29,7 +29,7 @@ ms.locfileid: "52049907"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| PrintConnector.Read.All, PrintConnector.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| Не поддерживается. |
+|Для приложений| Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +43,7 @@ GET /print/printers/{id}/connectors
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -91,7 +91,6 @@ GET https://graph.microsoft.com/beta/print/printers/{id}/connectors
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1373
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.printConnector)",

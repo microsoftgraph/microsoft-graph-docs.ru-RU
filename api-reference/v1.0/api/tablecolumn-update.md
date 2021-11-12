@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 89ff9eb66424ee494fc9abeee8c63f06df3ff4e7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 11461eab78742d486050ad3c9486ba4fd7c4dfda
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021955"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947481"
 ---
 # <a name="update-tablecolumn"></a>Обновление объекта TableColumn
 
@@ -62,7 +62,6 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}
 Content-type: application/json
-Content-length: 81
 
 {
   "name": "name-value",
@@ -100,7 +99,6 @@ Content-length: 81
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 81
 
 {
   "id": "99",

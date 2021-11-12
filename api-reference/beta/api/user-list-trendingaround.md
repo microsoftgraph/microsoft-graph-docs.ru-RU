@@ -2,15 +2,15 @@
 title: Список trendingAround
 description: Вычислимая информация, возвращаемая списку элементов, относяющихся к пользователю.
 author: jpettere
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b1594d031f9ff007a87243ccf0cf481022b48d89
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c7b6450fae23c438b35ef4bf796209166dc0d3a1
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052588"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943052"
 ---
 # <a name="list-trendingaround"></a>Список trendingAround
 
@@ -29,7 +29,7 @@ ms.locfileid: "52052588"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Sites.Read.All |
+|Для приложений | Sites.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 ```http
@@ -44,7 +44,7 @@ GET /drive/root/lastModifiedByUser/trendingAround
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок         | Значение                      |
 |:---------------|:---------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type   | application/json           |
 
 ## <a name="request-body"></a>Текст запроса
@@ -60,11 +60,10 @@ GET /drive/root/lastModifiedByUser/trendingAround
 GET https://graph.microsoft.com/beta/me/trendingAround
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 226
 
 {
   "id": "id-value",

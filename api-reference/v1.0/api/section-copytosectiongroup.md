@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 4ebe1702e3e5241b7ea8ff4b9de16c5733f3d0c8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0da718a31014f4f10806bcfcfde09bcd65119058
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59079185"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945784"
 ---
 # <a name="section-copytosectiongroup"></a>раздел: copyToSectionGroup
 
@@ -37,7 +37,7 @@ POST /groups/{id}/onenote/sections/{id}/copyToSectionGroup
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
@@ -47,7 +47,7 @@ POST /groups/{id}/onenote/sections/{id}/copyToSectionGroup
 |:---------------|:--------|:----------|
 |groupId|String|ID группы для копирования. Используйте только при копировании в Microsoft 365 группу.|
 |id|String|Обязательный. ID группы разделов назначения. |
-|переименоватьAs|Строка|Имя копии. По умолчанию имя существующего элемента. |
+|переименоватьAs|String|Имя копии. По умолчанию имя существующего элемента. |
 
 <!--groupId missing-->
 <!--|siteCollectionId|String||
@@ -70,7 +70,6 @@ POST /groups/{id}/onenote/sections/{id}/copyToSectionGroup
 ```http
 POST https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/copyToSectionGroup
 Content-type: application/json
-Content-length: 84
 
 {
   "id": "id-value",
