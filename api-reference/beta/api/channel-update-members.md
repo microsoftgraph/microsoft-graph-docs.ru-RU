@@ -3,14 +3,14 @@ title: Обновление участника в канале
 description: Обновление роли участника в канале.
 author: akjo
 doc_type: apiPageType
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: f94bb69d314eba40ce4ee4c68f1c784b9685c8ad
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: 2b86eaf0fc7ea583fbe59edff1e7314478c28ddb
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059921"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936091"
 ---
 # <a name="update-member-in-channel"></a>Обновление участника в канале
 
@@ -28,7 +28,7 @@ ms.locfileid: "53059921"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)|ChannelMember.ReadWrite.All. |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|ChannelMember.ReadWrite.All. |
+|Для приложений|ChannelMember.ReadWrite.All. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored"} -->
@@ -40,7 +40,7 @@ PATCH /teams/{team-id}/channels/{channel-id}/members/{membership-id}
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -107,7 +107,6 @@ content-length: 26
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 475
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ece6f0a1-7ca4-498b-be79-edf6c8fc4d82')/channels('19%3A56eb04e133944cf69e603c5dac2d292e%40thread.skype')/members/microsoft.graph.aadUserConversationMember/$entity",

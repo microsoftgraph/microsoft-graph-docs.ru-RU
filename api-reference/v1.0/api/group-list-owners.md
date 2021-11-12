@@ -1,16 +1,16 @@
 ---
 title: Список владельцев
 description: 'Получение списка владельцев группы. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект группы. '
-localization_priority: Priority
+ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 37991b6dc0e879f88b48657853a79eaa75b1c530
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 74039261246a15160a51b5b8fc02f654d2da9d4d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680642"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943747"
 ---
 # <a name="list-owners"></a>Список владельцев
 
@@ -27,7 +27,7 @@ ms.locfileid: "52680642"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All  |
+|Для приложений | GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.Read.All  |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -43,7 +43,7 @@ GET /groups/{id}/owners
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -94,7 +94,6 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/owners
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [

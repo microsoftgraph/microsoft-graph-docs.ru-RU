@@ -1,16 +1,16 @@
 ---
 title: 'educationClass: delta'
 description: Получите новые или обновленные классы, в том числе изменения членства, без выполнения полного чтения всей коллекции классов.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e8b93c8ddd251bbc25efc9203417d6736e6bf62c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2fcf15553cbf9b8c632b0ea5739f39b93cada60d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52044087"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937869"
 ---
 # <a name="educationclass-delta"></a>educationClass: delta
 
@@ -28,7 +28,7 @@ ms.locfileid: "52044087"
 | :------------------------------------- | :----------------------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic, EduRoster.Read или EduRoster.ReadWrite              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                           |
-| Для приложений                            | EduRoster.ReadBasic.All, EduRoster.Read.All или EduRoster.WriteWrite.All |
+| Для приложений                            | EduRoster.ReadBasic.All, EduRoster.Read.All или EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -108,7 +108,6 @@ GET https://graph.microsoft.com/beta/education/classes/delta
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 585
 
 {
   "value": [

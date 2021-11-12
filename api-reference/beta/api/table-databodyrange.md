@@ -2,15 +2,15 @@
 title: 'Table: DataBodyRange'
 description: Получает объект диапазона, связанный с данными таблицы.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7138c3ed95b7109e1902c938d0dccaed0320d1f4
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 091fae03de5be2e904f5bd11b4d64b1717232f17
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050852"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945287"
 ---
 # <a name="table-databodyrange"></a>Table: DataBodyRange
 
@@ -40,7 +40,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|nam
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,7 +91,6 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|nam
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
 
 {
   "address": "address-value",

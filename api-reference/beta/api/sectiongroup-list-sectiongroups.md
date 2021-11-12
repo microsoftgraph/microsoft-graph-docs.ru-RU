@@ -1,24 +1,24 @@
 ---
-title: Список sectionGroups
-description: Получение списка групп разделов из указанной группы разделов.
-localization_priority: Normal
+title: Раздел ListGroups
+description: Извлечение списка групп разделов из указанной группы разделов.
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 3e701566ab64e64bb1c1233a4d0ac0501d758310
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 142b1b989e3dc3e85a5bec225551f36ef5d3785d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976863"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945364"
 ---
-# <a name="list-sectiongroups"></a>Список sectionGroups
+# <a name="list-sectiongroups"></a>Раздел ListGroups
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка [групп разделов](../resources/sectiongroup.md) из указанной группы разделов.
+Извлечение списка [групп разделов](../resources/sectiongroup.md) из указанной группы разделов.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -41,7 +41,7 @@ GET /sites/{id}/onenote/sectionGroups/{id}/sectionGroups
 
 По умолчанию используется порядок сортировки `name asc`.
 
-Запрос по умолчанию разворачивает `parentNotebook` и выбирает `id` `displayName` свойства, и `self` . Допустимые `expand` значения для групп разделов: `sections` ,, `sectionGroups` `parentNotebook` и `parentSectionGroup` .
+Запрос по умолчанию расширяется и выбирает его свойства и `parentNotebook` `id` `displayName` `self` свойства. `expand`Допустимые значения для групп разделов : , и `sections` `sectionGroups` `parentNotebook` `parentSectionGroup` .
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
@@ -54,7 +54,7 @@ GET /sites/{id}/onenote/sectionGroups/{id}/sectionGroups
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [sectionGroup](../resources/sectiongroup.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [sectionGroup](../resources/sectiongroup.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/beta/me/onenote/sectionGroups/{id}/sectionGroups
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 378
 
 {
   "value": [

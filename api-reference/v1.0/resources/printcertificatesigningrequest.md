@@ -2,21 +2,19 @@
 title: тип ресурса printCertificateSigningRequest
 description: Запрос на подписание сертификата (CSR), который будет использоваться при регистрации принтера в службе универсальной печати.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 0c86e7a2ecbd164f40dcbb0865954c4549622f16aa1f2b008a392f150b626aa8
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2136ae68a722242e8ad3b7f39743e20d7a54cfe7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54129984"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944300"
 ---
 # <a name="printcertificatesigningrequest-resource-type"></a>тип ресурса printCertificateSigningRequest
 
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Запрос на подписание сертификата (CSR), который будет использоваться при регистрации принтера в службе универсальной печати.
 

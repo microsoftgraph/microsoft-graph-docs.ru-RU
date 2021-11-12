@@ -1,16 +1,16 @@
 ---
 title: 'contact: delta'
 description: Получение набора контактов, которые были добавлены в указанную папку, обновлены в ней или удалены из нее.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 78889e5b5e6c7a3ac07ad3776d2b7f9de49b2f4b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8d57707ef63363f3acf4ac1b9ebf40b35d8527e4
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047128"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942403"
 ---
 # <a name="contact-delta"></a>contact: delta
 
@@ -55,7 +55,7 @@ GET /users/{id}/contactFolders/{id}/contacts/delta
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 | Content-Type  | string  | application/json. Обязательный. |
 | Prefer | string  | odata.maxpagesize={x}. Необязательный параметр. |
 
@@ -113,7 +113,6 @@ Prefer: odata.maxpagesize=2
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 337
 
 {
   "@odata.nextLink":"https://graph.microsoft.com/beta/me/contactfolders/{id}/contacts/delta?$skiptoken={_skipToken_}",

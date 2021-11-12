@@ -5,12 +5,12 @@ author: subray
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 57f0321239f93d985f31b912f426ddd8629881d3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 97e2b3d51887c343ee21c1b5ad81efefef858750
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59105449"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945186"
 ---
 # <a name="get-tab-in-chat"></a>Получить вкладку в чате
 
@@ -45,7 +45,7 @@ GET /chats/{chat-id}/tabs/{tab-id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/v1.0/chats/19:ea28e88c00e94c7786b065394a61f296@t
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 
@@ -101,7 +101,6 @@ GET https://graph.microsoft.com/v1.0/chats/19:ea28e88c00e94c7786b065394a61f296@t
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "id": "tabId",

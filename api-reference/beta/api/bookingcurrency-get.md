@@ -1,16 +1,16 @@
 ---
 title: Получить bookingCurrency
 description: Получите свойства объекта bookingCurrency, доступного для бизнеса Microsoft Bookings.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: f6702d108c3b705749021ad79d7e9fe6ceb944b1
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c58245c4135cce04ed92d07c65e565b76f8b9e0e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047842"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936098"
 ---
 # <a name="get-bookingcurrency"></a>Получить bookingCurrency
 
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/beta/bookingCurrencies/USD
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример ответа. Примечание: показанный здесь объект ответа может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -86,7 +86,6 @@ GET https://graph.microsoft.com/beta/bookingCurrencies/USD
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 50
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingCurrencies/$entity",

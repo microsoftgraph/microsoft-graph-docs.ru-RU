@@ -5,12 +5,12 @@ author: jkdouglas
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a329daee14cddd2c5598c3ab3c456814abd80849
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8e9166b02ada2623740fe90874a699044fa68944
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035341"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944223"
 ---
 # <a name="update-b2cidentityuserflow"></a>Обновление b2cIdentityUserFlow
 
@@ -48,7 +48,7 @@ PATCH /identity/b2cUserFlows/{id}
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -83,7 +83,6 @@ PATCH /identity/b2cUserFlows/{id}
 ``` http
 PATCH https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_CustomerSignUp
 Content-Type: application/json
-Content-length: 469
 
 {
   "isLanguageCustomizationEnabled": true,
@@ -111,7 +110,7 @@ Content-length: 469
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

@@ -1,23 +1,23 @@
 ---
 title: Создание plannerRoster
-description: Создание объекта plannerRoster.
+description: Создание нового объекта plannerRoster.
 author: tarkansevilmis
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 153a88951943ce1a66d73ee26be289eaae7631f0
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 53a103a04dd899ce8b79911aadf09809694c6903
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272027"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936518"
 ---
 # <a name="create-plannerroster"></a>Создание plannerRoster
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание объекта [plannerRoster.](../resources/plannerroster.md)
+Создание нового [объекта plannerRoster.](../resources/plannerroster.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,17 +41,17 @@ POST /planner/rosters
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажу представление объекта [plannerRoster](../resources/plannerroster.md) в JSON.
+В теле запроса поставляем представление JSON объекта [plannerRoster.](../resources/plannerroster.md)
 
-В [plannerRoster](../resources/plannerroster.md)нет переописаемых свойств.
+В [plannerRoster](../resources/plannerroster.md)нет никаких подавляемых свойств.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `201 Created` [plannerRoster](../resources/plannerroster.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `201 Created` [plannerRoster](../resources/plannerroster.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -66,7 +66,6 @@ POST /planner/rosters
 ``` http
 POST https://graph.microsoft.com/beta/planner/rosters
 Content-Type: application/json
-Content-length: 55
 
 {
   "@odata.type": "#microsoft.graph.plannerRoster"

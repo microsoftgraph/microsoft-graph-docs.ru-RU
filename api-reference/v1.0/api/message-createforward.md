@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bdcc3125fb05b6ffec7bedfc94dc1c3abca271d5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 875b3ca8be27434218901a99d9e0b5f94f496c73
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59110300"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942963"
 ---
 # <a name="message-createforward"></a>message: createForward
 
@@ -55,7 +55,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 | Content-Type | string  | Характер данных в теле объекта. <br/> Используйте `application/json` для объекта JSON и `text/plain` для содержимого MIME. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -118,7 +118,6 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/createForward
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 248
 
 {
   "receivedDateTime": "datetime-value",

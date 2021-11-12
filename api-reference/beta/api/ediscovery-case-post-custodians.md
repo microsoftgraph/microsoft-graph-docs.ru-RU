@@ -2,15 +2,15 @@
 title: Создание хранителя
 description: Создайте новый объект хранителя.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 80c3a8f6bb7a204ddc5512d1f6c66b261ea342a6
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 2822932a76c334d75495585de0209515479fac40
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447128"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942382"
 ---
 # <a name="create-custodian"></a>Создание хранителя
 
@@ -18,7 +18,7 @@ ms.locfileid: "50447128"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [объект хранителя.](../resources/ediscovery-custodian.md) После создания объекта-хранителя необходимо создать пользовательский список [](../resources/ediscovery-usersource.md) хранителя для ссылки на почтовый ящик и сайт OneDrive для бизнеса.
+Создайте новый [объект хранителя.](../resources/ediscovery-custodian.md) После создания объекта-хранителя необходимо создать пользовательский [список](../resources/ediscovery-usersource.md) хранителя, чтобы ссылаться на его почтовый ящик и OneDrive для бизнеса сайт.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -45,7 +45,7 @@ POST /compliance/ediscovery/cases/{caseId}/custodians
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,7 +57,7 @@ POST /compliance/ediscovery/cases/{caseId}/custodians
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |email|String|Основной SMTP-адрес хранителя. Обязательный.|
-|applyHoldToSources|Boolean|Указывает, применяется ли удержание к источникам хранителя (например, к почтовым ящикам, сайтам или teams).|
+|applyHoldToSources|Логический|Указывает, применяется ли удержание к источникам хранителя (например, к почтовым ящикам, сайтам или Teams).|
 
 ## <a name="response"></a>Отклик
 
@@ -77,7 +77,6 @@ POST /compliance/ediscovery/cases/{caseId}/custodians
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/2192ca408ea2410eba3bec8ae873be6b/custodians
 Content-Type: application/json
-Content-length: 279
 
 {
     "email":"AdeleV@contoso.com",

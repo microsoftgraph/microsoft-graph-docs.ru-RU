@@ -5,12 +5,12 @@ author: akumar39
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 798cbf48acb31392988ea7e22f9ce2ce91cb3302
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e57486ecd336b977660c04076fb8526cbf8aeda6
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59019694"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942725"
 ---
 # <a name="list-timesoff"></a>Список timesOff
 
@@ -44,7 +44,7 @@ GET /teams/{teamId}/schedule/timesOff
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timesOff?$filter=sh
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
@@ -104,7 +104,6 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timesOff?$filter=sh
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "value": [

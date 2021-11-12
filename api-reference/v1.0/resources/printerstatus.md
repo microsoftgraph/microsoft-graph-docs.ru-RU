@@ -5,18 +5,16 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 67bdf6ebd458fd6e5ebe239ec057a682c53c78bf
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: da2c455f08830ee7bbfdf38def36f03250b21877
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765516"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936973"
 ---
 # <a name="printerstatus-resource-type"></a>тип ресурса printerStatus
 
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Представляет состояние обработки принтера, включая все ошибки.
 
@@ -32,10 +30,10 @@ ms.locfileid: "59765516"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Состояние обработки, о чем сообщает принтер, неизвестно.|
-|праздный|1 |Принтер простаивает и готов к приему новых заданий печати.|
+|праздный|1|Принтер простаивает и готов к приему новых заданий печати.|
 |обработка|2|В настоящее время принтер обрабатывает задание печати и обрабатывает все ожидающие задания по завершении.|
-|остановлено|3 |Принтер столкнулся с проблемой (например, закончились бумаги в активном лотке) и не может продолжить текущую работу печати до тех пор, пока проблема не будет устранена. Дополнительные **сведения см.** в  дополнительных сведениях о значении (s) или значении описания.|
-|unknownFutureValue|4 |Эволюционирующее значение sentinel. Не следует использовать.|
+|остановлено|3|Принтер столкнулся с проблемой (например, закончились бумаги в активном лотке) и не может продолжить текущую работу печати до тех пор, пока проблема не будет устранена. Дополнительные **сведения см.** в  дополнительных сведениях о значении (s) или значении описания.|
+|unknownFutureValue|4|Эволюционирующее значение sentinel. Не следует использовать.|
 
 ### <a name="printerprocessingstatedetail-values"></a>значения printerProcessingStateDetail
 

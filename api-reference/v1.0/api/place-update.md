@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: vrod9429
 ms.prod: Outlook
 doc_type: apiPageType
-ms.openlocfilehash: 93252d8d4ecb8d773986a44edd3475e4f8a6a279
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 06c1df04d4d6065a3471524a883746665f85478d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007840"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941749"
 ---
 # <a name="update-place"></a>Место обновления
 
@@ -41,7 +41,7 @@ PATCH /places/{id | emailAddress}
 
 | Имя       | Значение|
 |:-----------|:------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,20 +51,20 @@ PATCH /places/{id | emailAddress}
 | Свойство               | Тип                                              | Описание |
 |:-----------------------|:--------------------------------------------------|:--|
 | address                | [physicalAddress](../resources/physicaladdress.md)             | Адрес улицы комнаты или списка номеров. |
-| audioDeviceName        | Строка                                            | Указывает имя звукового устройства в комнате. |
+| audioDeviceName        | String                                            | Указывает имя звукового устройства в комнате. |
 | bookingType            | [bookingType](../resources/room.md)                            | Тип комнаты. Возможные значения: `Standard` и `Reserved`. |
-| здание               | Строка                                            | Указывает имя здания или номер здания, в который находится комната. |
+| здание               | String                                            | Указывает имя здания или номер здания, в который находится комната. |
 | емкость               | Int32                                             | Указывает емкость комнаты. |
-| displayDeviceName      | Строка                                            | Указывает имя отображаемого устройства в комнате. |
-| floorLabel             | Строка                                            | Указывает напольное письмо, в котором находится номер. |
+| displayDeviceName      | String                                            | Указывает имя отображаемого устройства в комнате. |
+| floorLabel             | String                                            | Указывает напольное письмо, в котором находится номер. |
 | floorNumber            | Int32                                             | Указывает номер пола, на который находится номер. |
 | geoCoordinates         | [outlookGeoCoordinates](../resources/outlookgeocoordinates.md) | Указывает расположение комнаты или списка номеров в широте, долготе и необязательных координатах высоты. |
 | isWheelChairAccessible | Логический                                           | Указывает, доступна ли комната для инвалидных колясок. |
-| подпись                  | Строка                                            | Указывает описательный метку для комнаты, например номер или имя. |
-| nickname               | Строка                                            | Указывает псевдоним для комнаты, например " conf room". |
+| подпись                  | String                                            | Указывает описательный метку для комнаты, например номер или имя. |
+| nickname               | String                                            | Указывает псевдоним для комнаты, например " conf room". |
 | phone                  | String                                            | Номер телефона комнаты или списка номеров. |
 | tags                   | Коллекция String                                 | Указывает дополнительные функции комнаты, например, такие сведения, как тип представления или тип мебели. |
-| videoDeviceName        | Строка                                            | Указывает имя видео устройства в комнате. |
+| videoDeviceName        | String                                            | Указывает имя видео устройства в комнате. |
 
 ## <a name="response"></a>Отклик
 
@@ -88,7 +88,6 @@ PATCH /places/{id | emailAddress}
 ```http
 PATCH https://graph.microsoft.com/v1.0/places/cf100@contoso.com
 Content-type: application/json
-Content-length: 285
 
 {
   "@odata.type": "microsoft.graph.room",
@@ -120,7 +119,7 @@ Content-length: 285
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > [!NOTE]
 > Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.
@@ -229,7 +228,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > [!NOTE]
 > Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.

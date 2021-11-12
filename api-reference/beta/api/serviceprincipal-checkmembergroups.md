@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 6549c9d357f1f1ebe0e49a9c873dfa8fb5492900
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 903312703318173a14837d979b41ad82f1a9a529
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696962"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945343"
 ---
 # <a name="serviceprincipal-checkmembergroups"></a>servicePrincipal: checkMemberGroups
 
@@ -38,7 +38,7 @@ POST /servicePrincipals/{id}/checkMemberGroups
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:-----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный.  |
+| Авторизация | Bearer {token}. Обязательный.  |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -66,7 +66,6 @@ POST /servicePrincipals/{id}/checkMemberGroups
 ```http
 POST https://graph.microsoft.com/beta/servicePrincipals/{id}/checkMemberGroups
 Content-type: application/json
-Content-length: 44
 
 {
   "groupIds": [
@@ -104,7 +103,6 @@ Content-length: 44
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
 
 {
   "value": [

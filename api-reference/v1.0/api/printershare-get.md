@@ -2,20 +2,18 @@
 title: Получение printerShare
 description: Извлечение свойств и связей совместной работы принтера.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: e9a16d9d615b780d921ff49291d6b15edda2ed3f
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: cb36cbd45082200549ac8f0222cd1d1839d4bcff
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771612"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941647"
 ---
 # <a name="get-printershare"></a>Получение printerShare
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Извлечение свойств и связей совместной работы принтера.
 
@@ -26,9 +24,9 @@ ms.locfileid: "50771612"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись)| PrinterShare.ReadBasic.All, PrinterShare.Read.All, PrinterShare.ReadWrite.All |
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)| PrinterShare.ReadBasic.All, PrinterShare.Read.All, PrinterShare.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,13 +48,13 @@ GET /print/printers/{id}?$select=id,displayName,capabilities
 ```
 Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
-### <a name="exceptions"></a>Exceptions
+### <a name="exceptions"></a>Исключения
 * Оператор `$count` не поддерживается.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

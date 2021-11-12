@@ -1,16 +1,16 @@
 ---
 title: Получение объекта plannerBucketTaskBoardTaskFormat
 description: Получение свойств и связей объекта **plannerBucketTaskBoardTaskFormat**.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: a9b3faa8f2662324f31ab4843781ba3dfc54c250
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0a9abd382b75a46c525a9f4f3a15632c18f4e041
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052049"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942120"
 ---
 # <a name="get-plannerbuckettaskboardtaskformat"></a>Получение объекта plannerBucketTaskBoardTaskFormat
 
@@ -37,7 +37,7 @@ GET /planner/tasks/{id}/bucketTaskBoardFormat
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh/
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/beta/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh/
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 76
 
 {
   "id": "01gzSlKkIUSUl6DF_EilrmQAKDhh",

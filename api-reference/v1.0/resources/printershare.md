@@ -2,21 +2,19 @@
 title: тип ресурса printerShare
 description: Представляет принтер, который предназначен для обнаружения пользователями и приложениями печати.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: ec674121a0d8785ee68b9939a10e42272924c5d1a2a1d6cd37b7a5a4c650cf26
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 52d3bc8adedd8f05c4cc4493df533d074ce19f58
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54218452"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944944"
 ---
 # <a name="printershare-resource-type"></a>тип ресурса printerShare
 
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Представляет принтер, который предназначен для обнаружения пользователями и приложениями печати.
 
@@ -26,9 +24,9 @@ ms.locfileid: "54218452"
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
 | [Список](../api/print-list-shares.md) | [коллекция printerShare](printershare.md) | Получите список акций принтера в клиенте. |
-| [Получение](../api/printershare-get.md) | [printerShare](printershare.md) | Чтение свойств и связей объекта **printerShare.** |
+| [Получение](../api/printershare-get.md); | [printerShare](printershare.md) | Чтение свойств и связей объекта **printerShare.** |
 | [Обновление](../api/printershare-update.md) | [printerShare](printershare.md) | Обновление **объекта printerShare.** |
-| [Удаление](../api/printershare-delete.md) | Нет | Размыть принтер. |
+| [удаление](../api/printershare-delete.md); | Нет | Размыть принтер. |
 | [Список заданий](../api/printershare-list-jobs.md) | [коллекция printJob](printjob.md) | Получите список заданий печати, которые стоят в очереди для обработки принтеромShare. |
 | [Создание задания](../api/printershare-post-jobs.md) | [printJob](printjob.md) | Создайте новое задание печати для принтераShare. Чтобы приступить к печати задания, используйте [start](../api/printjob-start.md). |
 | [Список allowedUsers](../api/printershare-list-allowedusers.md) | Коллекция объектов [user](user.md) | Извлечение списка пользователей, которым был предоставлен доступ для отправки заданий печати в связанную долю принтера. |
@@ -46,7 +44,7 @@ ms.locfileid: "54218452"
 |createdDateTime|DateTimeOffset|DateTimeOffset, когда была создана доля принтера. Только для чтения.|
 |manufacturer|String|Производитель сообщил на принтере, связанном с этой долей принтера. Унаследованный от [printerBase](../resources/printerbase.md). Только для чтения.|
 |model|String|Имя модели, которое сообщается на принтере, связанном с этим разделом принтера. Унаследованный от [printerBase](../resources/printerbase.md). Только для чтения.|
-|isAcceptingJobs|Логический|Принимает ли принтер, связанный с этой долей принтера, новые задания печати. Унаследованный от [printerBase](../resources/printerbase.md).|
+|isAcceptingJobs|Логическое|Принимает ли принтер, связанный с этой долей принтера, новые задания печати. Унаследованный от [printerBase](../resources/printerbase.md).|
 |defaults|[printerDefaults](printerdefaults.md)|Параметры печати принтера по умолчанию, связанные с этим разделом принтера. Унаследованный от [printerBase](../resources/printerbase.md).|
 |capabilities|[printerCapabilities](printercapabilities.md)|Возможности принтера, связанного с этим разделом принтера. Унаследованный от [printerBase](../resources/printerbase.md).|
 |расположение|[printerLocation](printerlocation.md)|Физическое и/или организационное расположение принтера, связанного с этим разделом принтера. Унаследованный от [printerBase](../resources/printerbase.md).|

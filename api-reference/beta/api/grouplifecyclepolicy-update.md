@@ -2,15 +2,15 @@
 title: Update groupLifecyclePolicy
 description: Обновляет свойства объекта groupLifecyclePolicyтип ресурса groupLifecyclePolicy.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0ea2b37376943eb84543411436e86710ddec61b2
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: bc72101013ddb89fb60282d57f85d9d8a3e4ec09
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681113"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943362"
 ---
 # <a name="update-grouplifecyclepolicy"></a>Update groupLifecyclePolicy
 
@@ -29,7 +29,7 @@ ms.locfileid: "52681113"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-|Приложение | Directory.ReadWrite.All |
+|Для приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +39,7 @@ PATCH /groupLifecyclePolicies/{id}
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя | Описание |
 |:-----------|:-----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -68,7 +68,6 @@ PATCH /groupLifecyclePolicies/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}
 Content-type: application/json
-Content-length: 151
 
 {
   "groupLifetimeInDays": 180,
@@ -104,7 +103,6 @@ Content-length: 151
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 146
 
 {
   "id": "id-value",

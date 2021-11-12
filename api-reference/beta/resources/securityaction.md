@@ -1,16 +1,16 @@
 ---
 title: тип ресурса securityAction
 description: Принимайте незамедлительные действия по защите от угроз с помощью объекта securityAction Microsoft Graph Security. Если аналитик безопасности обнаруживает новый индикатор, например вредоносный файл, URL-адрес, домен или IP-адрес, можно сразу же включить защиту в решении по обеспечению безопасности от корпорации Майкрософт. Вызывайте действие для определенного поставщика услуг, просматривайте все выполненные действия и отменяйте действие при необходимости. Воспользуйтесь действиями по обеспечению безопасности с помощью ATP в Защитнике Windows (ожидается в ближайшее время), чтобы заблокировать вредоносную активность в конечных точках Windows с использованием свойств, отображаемых в оповещениях или выявленных при изучении.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: c1adeb6ee5ab3b3ad2165e854b2812e39b8df5ab
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 7b7acb9da276e76b5e3245ffc787a2491a36537d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720636"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60928482"
 ---
 # <a name="securityaction-resource-type"></a>тип ресурса securityAction
 
@@ -44,17 +44,17 @@ ms.locfileid: "50720636"
 |id|String| Создается системой при прохо- Созданный GUID/уникальный идентификатор. Только для чтения.|
 |lastActionDateTime|DateTimeOffset| Timestamp при последнем обновлении этого действия. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |name|String| Имя действия.|
-|parameters|Коллекция [keyValuePair](keyvaluepair.md)| Набор параметров (пары значений ключа), необходимых для вызова действия, например URL-адреса или fileHash для блокировки и т.д.). **Required**|
+|parameters|Коллекция [keyValuePair](keyvaluepair.md)| Набор параметров (пары значений ключа), необходимых для вызова действия, например URL-адреса или fileHash для блокировки.). **Обязательное поле**.|
 |состояния|[коллекция securityActionState](securityactionstate.md)|Коллекция securityActionState для сохраняемой истории действия.|
 |status|string| Состояние действия. Возможные значения: `NotStarted`, `Running`, `Completed`, `Failed`.|
-|user|String| Основное имя пользователя пользователя, который отправил (POST) действие. Пользователь должен быть извлечен из маркера auth и не вошел вручную с помощью вызываемого приложения.|
+|пользователь|String| Основное имя пользователя пользователя, который отправил (POST) действие. Пользователь должен быть извлечен из маркера auth и не вошел вручную с помощью вызываемого приложения.|
 |vendorInformation|[securityVendorInformation](securityvendorinformation.md)|Сложный тип, содержащий сведения о поставщике продукта и службы безопасности, поставщике и суб-поставщике (например, поставщик=Microsoft; provider=Защитник Windows ATP; sub-provider=AppLocker).|
 
 ## <a name="relationships"></a>Связи
 
-Нет
+Отсутствуют.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 52a42cbe0e1de58eef619c6d555b9180c7d7e761
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 336e6ff91ee5daf8f7c37ed6db35b744ff8c1740
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695506"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941521"
 ---
 # <a name="list-members-of-channel"></a>Список участников канала
 
@@ -51,7 +51,7 @@ GET /teams/{team-id}/channels/{channel-id}/members
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -108,7 +108,6 @@ GET https://graph.microsoft.com/beta/teams/2ab9c796-2902-45f8-b712-7c5a63cf41c4/
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
 "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('2ab9c796-2902-45f8-b712-7c5a63cf41c4')/channels('19%3A20bc1df46b1148e9b22539b83bc66809%40thread.skype')/members",

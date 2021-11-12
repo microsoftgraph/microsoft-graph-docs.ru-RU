@@ -1,16 +1,16 @@
 ---
 title: Обновление свойств educationUser
 description: Обновление свойств объекта **educationuser**.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2cf940f4327d32082b95deb0658a316ac4e2ecac9c0fc03285c018ceecbd3bdf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 81d821571007f8df619b536f1a975abf6617086b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57207933"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936770"
 ---
 # <a name="update-educationuser-properties"></a>Обновление свойств educationUser
 
@@ -28,7 +28,7 @@ ms.locfileid: "57207933"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Приложение                            | EduRoster.ReadWrite.All                     |
+| Для приложений                            | EduRoster.ReadWrite.All                     |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,7 +43,7 @@ PATCH /education/users/{id}
 
 | Заголовок        | Значение                       |
 | :------------ | :-------------------------- |
-| Авторизация | Bearer {токен}. Обязательный.   |
+| Авторизация | Bearer {token}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -52,7 +52,7 @@ PATCH /education/users/{id}
 
 | Свойство         | Тип               | Описание                                                                                                                                     |
 | :--------------- | :----------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
-| displayName      | Строка             | Отображаемое имя пользователя                                                                                                                            |
+| displayName      | String             | Отображаемое имя пользователя                                                                                                                            |
 | givenName        | String             | Имя                                                                                                                                      |
 | middleName       | String             | Отчество пользователя                                                                                                                             |
 | surname          | String             | Фамилия пользователя                                                                                                                                 |
@@ -85,7 +85,6 @@ PATCH /education/users/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/education/users/13020
 Content-type: application/json
-Content-length: 508
 
 {
   "displayName": "Rogelio Cazares",
@@ -129,7 +128,6 @@ Content-length: 508
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 508
 
 {
   "id": "13020",

@@ -1,16 +1,16 @@
 ---
 title: Список memberOf
 description: Список групп, в которые входит этот органоайтональный контакт.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5eec725428c80c79ef15e195c9d9459a9b97571d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 47959a7f38c051f876832133ef26343b449cda61
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52039260"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941756"
 ---
 # <a name="list-memberof"></a>Список memberOf
 
@@ -40,7 +40,7 @@ GET /contacts/{id}/memberOf
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:-----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/v1.0/contacts/{id}/memberOf
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 155
 
 {
   "value": [

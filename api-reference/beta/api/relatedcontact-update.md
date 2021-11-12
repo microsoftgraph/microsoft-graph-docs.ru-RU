@@ -2,15 +2,15 @@
 title: Update relatedContacts
 description: Обновление связанной коллекцииContact объекта educationUser.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8c57418c9f3e6f8380dd6110bcb2c6ff103cab502307992a5c7d1e37a8f2ec81
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 3ab447edb970b2d2e164578ddec4de47d3690bec
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57190336"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941986"
 ---
 # <a name="update-relatedcontacts"></a>Update relatedContacts
 
@@ -31,7 +31,7 @@ ms.locfileid: "57190336"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Приложение                            | EduRoster.ReadWrite.All                     |
+| Для приложений                            | EduRoster.ReadWrite.All                     |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,7 +48,7 @@ PATCH /education/users/{id}
 
 | Имя          | Описание                 |
 | :------------ | :-------------------------- |
-| Авторизация | Bearer {токен}. Обязательный.   |
+| Авторизация | Bearer {token}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -84,7 +84,6 @@ PATCH /education/users/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/education/users/{educationUserId}
 Content-Type: application/json
-Content-length: 408
 
 {
   "relatedContacts": [

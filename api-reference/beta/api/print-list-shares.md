@@ -2,15 +2,15 @@
 title: Получать акции
 description: Извлечение списка акций принтера.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 3e759ab18f0de22a0b769b01f19df44bf1ac6fad
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a5ef981ab072ce5a021374b556a821533c060dcb
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053645"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942046"
 ---
 # <a name="list-shares"></a>Перечисление общих ресурсов
 
@@ -29,7 +29,7 @@ ms.locfileid: "52053645"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| PrinterShare.ReadBasic.All, PrinterShare.Read.All, PrinterShare.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается.|
+|Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,13 +42,13 @@ GET /print/shares
 
 Чтобы увидеть список возможностей каждой доли принтера, включайте параметр необязательный `$select=capabilities` запрос.
 
-### <a name="exceptions"></a>Exceptions
+### <a name="exceptions"></a>Исключения
 Некоторые операторы не поддерживаются: `$count` , `$orderby` `$search` .
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/beta/print/shares
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 269
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares",

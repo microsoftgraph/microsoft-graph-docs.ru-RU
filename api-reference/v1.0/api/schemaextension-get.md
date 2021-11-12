@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: d3c1e5b2279b68ad127cf69c62e1604029717d7b
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: c0c6af6f7087fb189e780aefb840f627db8ed672
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766000"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60927570"
 ---
 # <a name="get-schemaextension"></a>Получение schemaExtension
 
@@ -24,7 +24,7 @@ ms.locfileid: "59766000"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | User.Read, Application.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | Application.Read.All |
+|Для приложений | Application.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,7 @@ GET /schemaExtensions/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type   | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/schemaExtensions/graphlearn_test
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -87,7 +87,6 @@ GET https://graph.microsoft.com/v1.0/schemaExtensions/graphlearn_test
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
     "id":"graphlearn_test",

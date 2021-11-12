@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: cb44a83eda51077d148e858f66e21b9f9077645e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 58f82c1c478ce950da3aa23756f7c565078ae502
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59044806"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60927410"
 ---
 # <a name="worksheet-cell"></a>Worksheet: Cell
 
@@ -78,7 +78,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
 
 {
   "address": "address-value",

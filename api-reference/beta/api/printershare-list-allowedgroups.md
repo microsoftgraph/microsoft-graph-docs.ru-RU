@@ -2,15 +2,15 @@
 title: Список разрешенных Групп для принтераShare
 description: Извлечение списка групп, которые получили доступ для отправки заданий печати в связанную долю принтера.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: f5f08fe16c7a349fef81b4fba3006e662cb23274
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 33a1892ca58ea936d4b98849c9a7ce2ea27a5990
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052917"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935517"
 ---
 # <a name="list-allowedgroups-for-printershare"></a>Список разрешенных Групп для принтераShare
 
@@ -29,7 +29,7 @@ ms.locfileid: "52052917"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| PrinterShare.Read.All, PrinterShare.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается.|
+|Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ GET /print/shares/{id}/allowedGroups
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -89,7 +89,6 @@ GET https://graph.microsoft.com/beta/print/shares/{id}/allowedGroups
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 233
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.group)",

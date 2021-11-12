@@ -1,16 +1,16 @@
 ---
 title: Обновление категории Outlook
 description: 'Обновление перезаписываемого свойства **color** указанного объекта outlookCategory. Невозможно изменить **свойство displayName** '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f570c805f93ad7be8b05dd2dc6ccdefe654128fd
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6bd5c0a739365c58b755c1624b21795138f99f35
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055500"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943278"
 ---
 # <a name="update-outlook-category"></a>Обновление категории Outlook
 
@@ -39,7 +39,7 @@ PATCH /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
@@ -63,7 +63,6 @@ PATCH /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/me/outlook/masterCategories/bac262b7-485d-4739-b436-e31467d64fac
 Content-type: application/json
-Content-length: 30
 
 {
   "color":"preset15"
@@ -88,7 +87,7 @@ Content-length: 30
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -97,7 +96,6 @@ Content-length: 30
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 251
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories/$entity",

@@ -5,12 +5,12 @@ author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: e8bca970dafb70e7fef4807d280e069cc098d6fe
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: de3dbf282b5cb70fafa114347bbd644e9c32fa8f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022137"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942935"
 ---
 # <a name="list-sectiongroups"></a>Раздел ListGroups
 
@@ -94,7 +94,6 @@ GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 378
 
 {
   "value": [

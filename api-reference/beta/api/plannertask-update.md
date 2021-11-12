@@ -1,16 +1,16 @@
 ---
 title: Обновление объекта plannertask
 description: Обновление свойств объекта **plannertask**.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: a0973fccf01a7f631e075cd6c4d3383b46613048
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bda1bee006ff0f32ddf9b2ef71bd411a8f72b021
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049984"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926723"
 ---
 # <a name="update-plannertask"></a>Обновление объекта plannertask
 
@@ -36,7 +36,7 @@ PATCH /planner/tasks/{id}
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | If-Match  | Последнее известное значение ETag обновляемого объекта **plannerTask**. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -47,14 +47,14 @@ PATCH /planner/tasks/{id}
 |appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|Категории, к которым применена задача. Возможные значения см. [здесь](../resources/plannerappliedcategories.md).|
 |assigneePriority|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](../resources/planner-order-hint-format.md).|
 |assignments|[plannerAssignments](../resources/plannerassignments.md)|Список пользователей, которым назначена задача.|
-|bucketId|Строка|Ведерный id, к которому относится задача. Сегмент должен находиться в том же плане, что и задача. Содержит 28 знаков, учитывается регистр. [Проверка формата](../resources/tasks-identifiers-disclaimer.md) проводится для службы. |
+|bucketId|Строка|Ведерный id, к которому относится задача. Сегмент должен находиться в том же плане, что и задача. Содержит 28 знаков, учитывается регистр. [Проверка формата](../resources/tasks-identifiers-disclaimer.md) проводится для службы. |
 |conversationThreadId|Строка|Идентификатор беседы в задаче. Это идентификатор объекта беседы, созданной в группе.|
 |dueDateTime|DateTimeOffset|Срок выполнения задачи. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |orderHint|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](../resources/planner-order-hint-format.md).|
 |percentComplete|Int32|Процент выполнения задачи. Если установлено значение `100`, задача считается выполненной. |
 |planId|Строка|Идентификатор плана, к которому относится задача.|
 |priority|Int32|Приоритет задачи. Допустимый диапазон значений находится между и (включительно), при этом увеличение значения является более низким приоритетом (имеет самый высокий приоритет и имеет самый `0` `10` низкий `0` `10` приоритет).  В настоящее время Planner интерпретирует значения и как `0` `1` "срочные", и как `2` `3` `4` "важные", и как "средний", и , и , и `5` `6` как `7` `8` `9` `10` "низкий".  В настоящее время планировщик задает значение `1` "urgent", `3` "important", `5` "medium" и `9` "low".|
-|startDateTime|DateTimeOffset|Дата и время начала задачи. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
+|startDateTime|DateTimeOffset|Дата и время начала выполнения задачи. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |title|Строка|Название задачи.|
 
 ## <a name="response"></a>Ответ
@@ -75,7 +75,6 @@ PATCH /planner/tasks/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh
 Content-type: application/json
-Content-length: 247
 Prefer: return=representation
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
@@ -114,7 +113,6 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1423
 
 {
   "createdBy": {

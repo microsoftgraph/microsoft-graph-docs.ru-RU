@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: d93208b587490b75ae563ec960e158411b32164b
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 83cb72ff092181a110ec80f350bc86a702cdad46
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696002"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935468"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>Создание privilegedRoleAssignmentRequest
 
@@ -48,8 +48,8 @@ POST /privilegedRoleAssignmentRequests
 | Свойство     | Тип    |  Описание|
 |:---------------|:--------|:----------|
 |roleId|String|ID роли. Обязательное.|
-|type|String|Представляет тип операции при назначении ролей. Значение может `AdminAdd` быть: Администраторы добавляют пользователей в роли; `UserAdd` : Пользователи добавляют назначения ролей. Обязательно.|
-|assignmentState|String|Состояние назначения. Это значение может быть для присвоения, если оно непосредственно назначено администраторами или активировано при назначении, назначенного `Eligible` `Active` `Active` пользователями. Возможные значения: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Обязательно.|
+|type|String|Представляет тип операции при назначении ролей. Значение может `AdminAdd` быть: Администраторы добавляют пользователей в роли; `UserAdd` : Пользователи добавляют назначения ролей. Обязательный.|
+|assignmentState|String|Состояние назначения. Это значение может быть для присвоения, если оно непосредственно назначено администраторами или активировано при назначении, назначенного `Eligible` `Active` `Active` пользователями. Возможные значения: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Обязательный.|
 |reason|String|Причина должна быть предоставлена для запроса назначения ролей для целей аудита и проверки.|
 |schedule|[governanceSchedule](../resources/governanceschedule.md)|Расписание запроса на назначение ролей.|
 
@@ -131,7 +131,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 304
 
 
 {

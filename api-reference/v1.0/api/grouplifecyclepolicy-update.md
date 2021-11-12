@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fcfb2da1ade461016a375c7545cdb9e7f3bc125a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3aa5cd500b96c098d29edc502b0a8e186e64c2af
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59073956"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943719"
 ---
 # <a name="update-grouplifecyclepolicy"></a>Update groupLifecyclePolicy
 
@@ -36,7 +36,7 @@ PATCH /groupLifecyclePolicies/{id}
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя | Описание |
 |:-----------|:-----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,6 @@ PATCH /groupLifecyclePolicies/{id}
 ```http
 PATCH https://graph.microsoft.com/v1.0/groupLifecyclePolicies/{id}
 Content-type: application/json
-Content-length: 125
 
 {
   "groupLifetimeInDays": 180,
@@ -101,7 +100,6 @@ Content-length: 125
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 146
 
 {
   "id": "id-value",

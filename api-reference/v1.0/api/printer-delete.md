@@ -2,20 +2,18 @@
 title: Удаление принтера
 description: Удаление (незарегистрированного) принтера.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 94841d1668363ffeb98d8416527c06d53bb7c517
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: a89cbcb118e582bfbc126d4ae81d8c0e286af193
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776930"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941633"
 ---
 # <a name="delete-printer"></a>Удаление принтера
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Удаление (незарегистрированного) [принтера.](../resources/printer.md)
 
@@ -26,9 +24,9 @@ ms.locfileid: "50776930"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись)| Printer.FullControl.All |
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)| Printer.FullControl.All |
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,7 +41,7 @@ DELETE /print/printers/{printerId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

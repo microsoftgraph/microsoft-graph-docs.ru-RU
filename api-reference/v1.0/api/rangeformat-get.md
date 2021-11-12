@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 1c3b21d3178455a85e4de3dcc28ba7e43bb76caa
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 263f140ecc45649d5c5a3e4b8eeac9d29a17baa7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104784"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936252"
 ---
 # <a name="get-rangeformat"></a>Получение объекта RangeFormat
 
@@ -42,7 +42,7 @@ GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ran
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -91,7 +91,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/r
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 96
 
 {
   "columnWidth": 99,

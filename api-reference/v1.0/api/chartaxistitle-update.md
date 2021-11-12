@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 75876dc223dfb2ef76f0c4b41bae45d6178b91dc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0a27c7b708d99f366a3966a8ec8ddce9dfe4ac81
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59114724"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937533"
 ---
 # <a name="update-chartaxistitle"></a>Обновление объекта chartaxistitle
 
@@ -39,7 +39,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/a
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,6 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/a
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/title
 Content-type: application/json
-Content-length: 45
 
 {
   "text": "text-value",
@@ -100,7 +99,6 @@ Content-length: 45
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 45
 
 {
   "text": "text-value",

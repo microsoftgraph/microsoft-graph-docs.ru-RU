@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e1f183c1097fb0d8ee53147556c095d1fb4a79e4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c2b123bd682c01001100208f5f6d293df0759e7e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104630"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942606"
 ---
 # <a name="create-todotask"></a>Создание todoTask
 Пространство имен: microsoft.graph
@@ -40,7 +40,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -59,7 +59,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|Расписание повторения задачи.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата и время появления напоминания о задаче.|
 |status|taskStatus|Указывает состояние или ход выполнения задачи. Возможные значения: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
-|title|Строка|Краткое описание задачи.|
+|title|String|Краткое описание задачи.|
 |createdDateTime|DateTimeOffset|Дата и время создания задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства представлено в формате ISO 8601. Например, полночь UTC 1 января 2020 г. будет выглядеть так: '2020-01-01T00:00:00Z'.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства представлено в формате ISO 8601 (всегда используется формат UTC). Например, полночь UTC 1 января 2020 г. будет выглядеть так: '2020-01-01T00:00:00Z'.|
 |bodyLastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства представлено в формате ISO 8601 (всегда используется формат UTC). Например, полночь UTC 1 января 2020 г. будет выглядеть так: '2020-01-01T00:00:00Z'.|
@@ -86,7 +86,6 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 ``` http
 POST https://graph.microsoft.com/v1.0/me/todo/lists/AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtM/tasks
 Content-Type: application/json
-Content-length: 608
 
 {
    "title":"A new task",

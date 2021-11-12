@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7f95f81827f394962b8844bc367fb322e0ff1915
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 49f4f1f87c7d47d47408836a8bdb18bf02c44b59
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046003"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936336"
 ---
 # <a name="list-fido2authenticationmethod"></a>Список fido2AuthenticationMethod
 Пространство имен: microsoft.graph
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/v1.0/me/authentication/fido2Methods
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
@@ -91,7 +91,6 @@ GET https://graph.microsoft.com/v1.0/me/authentication/fido2Methods
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
   "value": [

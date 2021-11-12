@@ -1,16 +1,16 @@
 ---
 title: Перечисление задач
 description: Получение списка объектов **plannertask**, назначенных объекту User.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 70cc0b8f59b5907b98a42c5b6a00f1b1e09ed50f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 176fc2411b331c575579fb155858ef84049ff10d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049935"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926681"
 ---
 # <a name="list-tasks"></a>Перечисление задач
 
@@ -39,7 +39,7 @@ GET /users/{id}/planner/tasks
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/me/planner/tasks
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,7 +91,6 @@ GET https://graph.microsoft.com/beta/me/planner/tasks
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 833
 
 {
   "value": [

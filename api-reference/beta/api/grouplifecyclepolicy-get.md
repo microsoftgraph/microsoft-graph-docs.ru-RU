@@ -2,15 +2,15 @@
 title: Получение groupLifecyclePolicy
 description: Получение свойств и связей, принадлежащих объекту groupLifecyclePolicies.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: cb3698fef265028afefea0ee4011f96628c6acc3
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 1412c6ab0d41b0724a99efa55a692a847662164c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681146"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943376"
 ---
 # <a name="get-grouplifecyclepolicy"></a>Получение groupLifecyclePolicy
 
@@ -29,7 +29,7 @@ ms.locfileid: "52681146"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.Read.All или Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-|Приложение | Directory.Read.All или Directory.ReadWrite.All |
+|Для приложений | Directory.Read.All или Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ GET /groupLifecyclePolicies/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя | Описание |
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 174
 
 {
   "id": "ffffffff-ffff-ffff-ffff-ffffffffffff",

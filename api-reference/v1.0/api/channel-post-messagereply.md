@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5a667c82f5b1e19cfb3113fed868d00bfbcb7325
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8e99b68aa7e8946d293da562f671f4a3098063a4
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59131013"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943964"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>Ответ на сообщение в канале
 
@@ -42,7 +42,7 @@ POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -97,7 +97,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -107,7 +107,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 160
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2')/messages('1590776551682')/replies/$entity",

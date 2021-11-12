@@ -2,15 +2,15 @@
 title: Создание домена
 description: Добавление домена в клиент.
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 08ceebe10857d8966f7f86e5a30a5dee14189f3f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e439aaeed9786f5ba2bed639104e468933fcf4cd
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046344"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941514"
 ---
 # <a name="create-domain"></a>Создание домена
 
@@ -29,7 +29,7 @@ ms.locfileid: "52046344"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Domain.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Domain.ReadWrite.All |
 
@@ -42,7 +42,7 @@ POST /domains
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный.|
+| Авторизация  | Bearer {token}. Обязательный.|
 | Content-Type  | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -66,7 +66,6 @@ POST /domains
 ```http
 POST https://graph.microsoft.com/beta/domains
 Content-type: application/json
-Content-length: 192
 
 {
   "id": "contoso.com"
@@ -83,7 +82,6 @@ Content-length: 192
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 192
 
 {
   "authenticationType": "authenticationType-value",

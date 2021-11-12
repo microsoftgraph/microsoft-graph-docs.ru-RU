@@ -2,15 +2,15 @@
 title: 'workbookChartCollection: добавить'
 description: Создает новую книгуChart.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d81bdb08f5efa503e56961b2bb5fdba694c5aba4
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 16b300f90cd841845e6f38e33b6164c72b706189
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047464"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60927228"
 ---
 # <a name="workbookchartcollection-add"></a>workbookChartCollection: добавить
 
@@ -38,7 +38,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/add
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -48,7 +48,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/add
 |:---------------|:--------|:----------|
 |type|string|Представляет тип диаграммы.  Возможные значения: `ColumnClustered` , , , , , , , , `ColumnStacked` `ColumnStacked100` `BarClustered` `BarStacked` `BarStacked100` `LineStacked` `LineStacked100` `LineMarkers` `LineMarkersStacked` `LineMarkersStacked100` `PieOfPie` `etc.` .|
 |sourceData|Json|Объект Range, соответствующий исходным данным.|
-|seriesBy|string|Необязательно. Определяет способ использования столбцов или строк в качестве рядов данных на диаграмме.  Допустимые значения: `Auto`, `Columns`, `Rows`.|
+|seriesBy|string|Необязательный параметр. Определяет способ использования столбцов или строк в качестве рядов данных на диаграмме.  Допустимые значения: `Auto`, `Columns`, `Rows`.|
 
 ## <a name="response"></a>Отклик
 
@@ -67,7 +67,6 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/add
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/add
 Content-type: application/json
-Content-length: 94
 
 {
   "type": "ColumnStacked",
@@ -95,7 +94,7 @@ Content-length: 94
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -104,7 +103,6 @@ Content-length: 94
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 52
 
 {
   "id": "id-value",

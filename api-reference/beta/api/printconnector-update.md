@@ -2,15 +2,15 @@
 title: Обновление printConnector
 description: Обновление свойств объекта printConnector.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 49b3cb83c3fb93867f8038d170a5c68b7b4c61cb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 06f0d937a0461511c11a15dc18fc0463f0a40d03
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055318"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942011"
 ---
 # <a name="update-printconnector"></a>Обновление printConnector
 
@@ -29,7 +29,7 @@ ms.locfileid: "52055318"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| PrintConnector.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается.|
+|Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +39,7 @@ PATCH /print/connectors/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -69,7 +69,6 @@ PATCH /print/connectors/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/print/connectors/{id}
 Content-type: application/json
-Content-length: 300
 
 {
   "displayName": "ConnectorName",
@@ -115,7 +114,6 @@ Content-length: 300
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 406
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/connectors/$entity",

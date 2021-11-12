@@ -2,15 +2,15 @@
 title: Перечисление преподавателей
 description: Получение списка преподавателей для класса. Чтобы делегированные маркеры могли получить список преподавателей, они должны принадлежать к классу.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3428127076947f1fe6bc9193a49829a6c3299a2c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3121b523dc45a6399ee06d3b961bc572db893ffe
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043894"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935982"
 ---
 # <a name="list-teachers"></a>Перечисление преподавателей
 
@@ -40,7 +40,7 @@ GET /education/classes/{id}/teachers
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/education/classes/11023/teachers
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 593
 
 {
   "value": [

@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 9bfd412ab29d557d9d5fed05f96972185ed2c297
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 56b2ec314fa1550c525ef0ecff5efab9a421ef23
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59025862"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941577"
 ---
 # <a name="tablesort-apply"></a>TableSort: apply
 
@@ -48,7 +48,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}
 |:---------------|:--------|:----------|
 |fields|Коллекция WorkbookSortField|Список условий для сортировки.|
 |matchCase|boolean|Необязательный. Указывает, необходимо ли учитывать регистр при сортировке строк.|
-|method|string|Необязательно. Метод сортировки, используемый для китайских символов.  Возможные значения: `PinYin` , `StrokeCount` .|
+|method|string|Необязательный параметр. Метод сортировки, используемый для китайских символов.  Возможные значения: `PinYin` , `StrokeCount` .|
 
 ## <a name="response"></a>Отклик
 
@@ -67,7 +67,6 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/sort/apply
 Content-type: application/json
-Content-length: 298
 
 {
   "fields": [

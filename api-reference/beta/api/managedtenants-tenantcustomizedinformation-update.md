@@ -2,15 +2,15 @@
 title: Обновление tenantCustomizedInformation
 description: Обновление свойств объекта tenantCustomizedInformation.
 author: isaiahwilliams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 3f43e7e3f543c0a74b27a3594f573d4fe3cc68c6
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 94862481f6857e66e37f364bfe2434242b7714f0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53441860"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936644"
 ---
 # <a name="update-tenantcustomizedinformation"></a>Обновление tenantCustomizedInformation
 Пространство имен: microsoft.graph.managedTenants
@@ -41,7 +41,7 @@ PATCH /tenantRelationships/managedTenants/tenantsCustomizedInformation/{tenantCu
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -73,7 +73,6 @@ PATCH /tenantRelationships/managedTenants/tenantsCustomizedInformation/{tenantCu
 ``` http
 PATCH https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantsCustomizedInformation/{tenantCustomizedInformationId}
 Content-Type: application/json
-Content-length: 278
 
 {
   "@odata.type": "#microsoft.graph.managedTenants.tenantCustomizedInformation",

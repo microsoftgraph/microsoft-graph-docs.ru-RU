@@ -2,15 +2,15 @@
 title: Обновление книгиChartAxisTitle
 description: Обновление свойств объекта workbookchartaxistitle.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: bf920caf382f177f17a8d2eb3d6d33bf34c9731a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1d0a36f8f1170b728914c0a9a5bd5cb3bd48210b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047471"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947764"
 ---
 # <a name="update-workbookchartaxistitle"></a>Обновление книгиChartAxisTitle
 
@@ -41,7 +41,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/a
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -67,7 +67,6 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/a
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/title
 Content-type: application/json
-Content-length: 45
 
 {
   "text": "text-value",
@@ -93,7 +92,7 @@ Content-length: 45
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -102,7 +101,6 @@ Content-length: 45
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 45
 
 {
   "text": "text-value",

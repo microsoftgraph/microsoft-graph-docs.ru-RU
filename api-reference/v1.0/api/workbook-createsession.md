@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7fcb8f22338bfda0ae0a7ecef7566dce7af8196c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 841df2e4f1be124279a2769ec1e054b3ab3ef970
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59130006"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944356"
 ---
 # <a name="workbook-createsession"></a>книга: createSession
 
@@ -55,7 +55,7 @@ POST /me/drive/root:/{item-path}:/workbook/createSession
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса поставляем представление JSON объекта [workbookSessionInfo.](../resources/workbooksessioninfo.md)
@@ -78,7 +78,6 @@ POST /me/drive/root:/{item-path}:/workbook/createSession
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/createSession
 Content-type: application/json
-Content-length: 52
 
 {
   "persistChanges": true
@@ -112,7 +111,6 @@ Content-length: 52
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 52
 
 {
   "id": "id-value",

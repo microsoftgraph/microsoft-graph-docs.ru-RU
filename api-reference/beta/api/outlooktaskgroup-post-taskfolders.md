@@ -2,15 +2,15 @@
 title: Создание outlookTaskFolder
 description: Создайте папку Outlook задач в соответствии с указанным outlookTaskGroup.
 author: mashriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e7fd36eae4980a533f4d3bc02223bab788f8e7a4
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 10414d672a1010fda7e79e75bf6c353e41a60199
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049221"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935811"
 ---
 # <a name="create-outlooktaskfolder-deprecated"></a>Создание outlookTaskFolder (амортизации)
 
@@ -40,7 +40,7 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса поставляем представление JSON объекта [OutlookTaskFolder.](../resources/outlooktaskfolder.md)
@@ -62,7 +62,6 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 ```http
 POST https://graph.microsoft.com/beta/me/outlook/taskgroups/AAMkADIyAAAhrbe-AAA=/taskfolders
 Content-type: application/json
-Content-length: 131
 
 {
   "name": "Cooking"
@@ -89,7 +88,7 @@ Content-length: 131
 
 В теле запроса поставляем представление JSON объекта [OutlookTaskFolder.](../resources/outlooktaskfolder.md)
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -98,7 +97,6 @@ Content-length: 131
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 151
 
 {
   "id": "AAMkADIyAAAhrbPXAAA=",

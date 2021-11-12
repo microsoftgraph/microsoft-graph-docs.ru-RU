@@ -2,15 +2,15 @@
 title: Добавление educationClass к educationSchool
 description: Добавление класса в учебное заведение.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b2837ee537c5dfc52766fce0a680a3c367d290d2
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: ed4485f31f20e3e15824e21692ef96bae37bc8a1
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52785979"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936798"
 ---
 # <a name="add-educationclass-to-educationschool"></a>Добавление educationClass к educationSchool
 
@@ -27,7 +27,7 @@ ms.locfileid: "52785979"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Приложение | EduRoster.ReadWrite.All | 
+|Для приложений | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,7 @@ POST /education/schools/{id}/classes/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -59,7 +59,6 @@ POST /education/schools/{id}/classes/$ref
 ```http
 POST https://graph.microsoft.com/beta/education/schools/10002/classes/$ref
 Content-type: application/json
-Content-length: 224
 
 {
  "@odata.id":"https://graph.microsoft.com/beta/education/classes/11006"

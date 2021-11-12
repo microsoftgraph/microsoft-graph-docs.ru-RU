@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e175e63394e540267e7f9df3f04dc33f45ba0039
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a232787ee825ce0bfcce5518fe26a77bb7f94e48
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016654"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937323"
 ---
 # <a name="list-submission-resources"></a>Список ресурсов отправки
 
@@ -45,7 +45,7 @@ GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc
 
 | Заголовок        | Значение                     |
 | :------------ | :------------------------ |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -106,7 +106,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1045
 
 {
   "value": [

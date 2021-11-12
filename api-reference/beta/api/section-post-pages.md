@@ -1,16 +1,16 @@
 ---
 title: Создание страницы
 description: Создание объекта page в указанном разделе.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 8df217f4ebc84eebaa0ff938028ef3b571058808
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 402ff69bf2277e65da2446a02a8e17e792e81e6b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067666"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926408"
 ---
 # <a name="create-page"></a>Создание страницы
 
@@ -39,7 +39,7 @@ POST /sites/{id}/onenote/sections/{id}/pages
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 | Content-Type | string | `text/html` или `application/xhtml+xml` для содержимого HTML, в том числе для необходимой части Presentation составных запросов. В составных запросах используется тип содержимого `multipart/form-data; boundary=your-boundary`. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -49,7 +49,7 @@ POST /sites/{id}/onenote/sections/{id}/pages
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [оненотепаже](../resources/onenotepage.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и новый объект `201 Created` [onenotePage](../resources/onenotepage.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -58,7 +58,6 @@ POST /sites/{id}/onenote/sections/{id}/pages
 <!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/me/onenote/sections/{id}/pages
-Content-length: 312
 Content-type: multipart/form-data; boundary=MyPartBoundary198374
 
 --MyPartBoundary198374
@@ -100,7 +99,6 @@ Content-Type:application/pdf
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 312
 
 {
   "title": "title-value",

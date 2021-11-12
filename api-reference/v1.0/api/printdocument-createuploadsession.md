@@ -1,21 +1,19 @@
 ---
 title: 'printDocument: createUploadSession'
 description: Создайте сеанс загрузки для итеративных диапазонов загрузки двоичного файла printDocument.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: nilakhan
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 164a5ca3bf6b2f53c3c5952d49f605493b4d9275
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: 4a033bf7958cf67fde9ffe4c3345563b8d67772d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080087"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60927954"
 ---
 # <a name="printdocument-createuploadsession"></a>printDocument: createUploadSession
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Создайте сеанс загрузки, который позволяет приложению итеративным образом загружать диапазоны двоичного файла, связанного с документом печати.
 
@@ -58,7 +56,7 @@ POST /print/shares/{id}/jobs/{id}/documents/{id}/createUploadSession
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -86,6 +84,8 @@ POST /print/shares/{id}/jobs/{id}/documents/{id}/createUploadSession
 В следующем примере показано, как создать сеанс загрузки, который можно использовать в последующих операциях по отправке файлов в указанный printDocument.
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printdocument_createuploadsession"
@@ -94,7 +94,6 @@ POST /print/shares/{id}/jobs/{id}/documents/{id}/createUploadSession
 ``` http
 POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobId}/documents/{printDocumentId}/createUploadSession
 Content-Type: application/json
-Content-length: 96
 
 {
   "properties": {
@@ -104,6 +103,24 @@ Content-length: 96
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/printdocument-createuploadsession-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/printdocument-createuploadsession-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/printdocument-createuploadsession-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/printdocument-createuploadsession-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

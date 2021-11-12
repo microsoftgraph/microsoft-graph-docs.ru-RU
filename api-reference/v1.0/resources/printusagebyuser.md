@@ -2,21 +2,19 @@
 title: тип ресурса printUsageByUser
 description: Описывает действия печати для пользователя в течение определенного периода времени (useDate).
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: eae95a17032ca69a9856ee44377bef0aeb733cb0babfbfa66b0b2fdd9b3c9d51
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f702c0dcb81d1b88f2c9bb0e314e74b97a905004
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54222730"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936105"
 ---
 # <a name="printusagebyuser-resource-type"></a>тип ресурса printUsageByUser
 
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Описывает действия печати для пользователя в течение определенного периода времени (useDate).
 
@@ -25,7 +23,7 @@ ms.locfileid: "54222730"
 |:---|:---|:---|
 | [Список (ежедневно)](../api/reportroot-list-dailyprintusagebyuser.md) | [printUsageByUser](printusagebyuser.md) | Получите список сводок ежедневного использования печати, сгруппив их по пользователю. |
 | [Список (ежемесячно)](../api/reportroot-list-monthlyprintusagebyuser.md) | [printUsageByUser](printusagebyuser.md) | Получите список ежемесячных сводок использования печати, сгруппив их по пользователю. |
-| [Получение](../api/printusagebyuser-get.md) | [printUsageByUser](printusagebyuser.md) | Чтение свойств и связей объекта printUsageByUser. |
+| [Получение](../api/printusagebyuser-get.md); | [printUsageByUser](printusagebyuser.md) | Чтение свойств и связей объекта printUsageByUser. |
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|

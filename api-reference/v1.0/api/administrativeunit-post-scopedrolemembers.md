@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: DougKirschner
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 6ca2b93eef5b0451fd1d90899fe9f7ef471eae7c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5f649ceb3d6c454470d08b50ec2fb78a1a9ae532
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59038596"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60928391"
 ---
 # <a name="add-a-scopedrolemember"></a>Добавление scopedRoleMember
 
@@ -26,7 +26,7 @@ ms.locfileid: "59038596"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | RoleManagement.ReadWrite.Directory |
+|Для приложений | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +36,7 @@ POST /directory/administrativeUnits/{id}/scopedRoleMembers
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный.|
+| Авторизация  | Bearer {token}. Обязательный.|
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -59,7 +59,6 @@ POST /directory/administrativeUnits/{id}/scopedRoleMembers
 ```http
 POST https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/scopedRoleMembers
 Content-type: application/json
-Content-length: 272
 
 {
   "roleId": "roleId-value",
@@ -100,7 +99,6 @@ Content-length: 272
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 294
 
 {
   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#scopedRoleMemberships/$entity",

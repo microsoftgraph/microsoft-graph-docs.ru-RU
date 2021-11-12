@@ -2,25 +2,25 @@
 title: Get passwordlessMicrosoftAuthenticatorAuthenticationMethod
 description: Ознакомьтесь с свойствами и отношениями объекта Без пароляMicrosoftAuthenticatorAuthenticationMethod.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c96a20eb7439367e2054213d92be08a609217c24
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c15cdd534ffa1eda3857b0baf1bec6841a4f9112
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50963017"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935643"
 ---
 # <a name="get-passwordlessmicrosoftauthenticatorauthenticationmethod-deprecated"></a>Get passwordlessMicrosoftAuthenticatorAuthenticationMethod (deprecated)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение пользовательского единого [объекта метода microsoft Authenticator Passwordless Phone Sign-in.](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md)
+Извлечение единого объекта [метода Microsoft Authenticator без пароля Телефон](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) пользователя.
 
 > [!CAUTION]
-> API без пароля Microsoft Authenticator phone is deprecated and will stop returning results on 31 December 2020. Используйте новый метод [проверки подлинности Microsoft Authenticator.](../resources/microsoftAuthenticatorAuthenticationMethod.md)
+> API Microsoft Authenticator без паролей Телефон для регистрации является обесценен и прекратит возвращать результаты 31 декабря 2020 г. Используйте новый метод [Microsoft Authenticator проверки подлинности.](../resources/microsoftAuthenticatorAuthenticationMethod.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,7 +40,7 @@ ms.locfileid: "50963017"
 |:---------------------------------------|:-------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Application                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Для приложений                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
 Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 * Глобальный администратор
@@ -62,7 +62,7 @@ GET /users/{id | userPrincipalName}/authentication/passwordlessMicrosoftAuthenti
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -117,7 +117,6 @@ GET https://graph.microsoft.com/beta/me/authentication/passwordlessMicrosoftAuth
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
   "value": {

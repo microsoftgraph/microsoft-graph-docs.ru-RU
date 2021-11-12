@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 010376e64e118e417b1ac8530afa6ccb6df8e739
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4b0e4890b6d12218fc0ba2fea3203b7579910e4c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59110279"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942949"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
@@ -52,7 +52,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyA
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание| 
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Обязательна |
+| Authorization  | string  | Bearer {token}. Обязательно |
 | Content-Type | string  | Характер данных в теле объекта. <br/> Используйте `application/json` для объекта JSON и `text/plain` для содержимого MIME. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -109,7 +109,6 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReplyAll
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 248
 
 {
   "receivedDateTime": "datetime-value",

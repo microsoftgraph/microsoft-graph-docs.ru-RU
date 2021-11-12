@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: eebe95bdd6eec5fb7336d0f5bf423dee5307439e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2f0e7dc405519df676d39c4df732c30f37768c24
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59087459"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945483"
 ---
 # <a name="update-itempatent"></a>Обновление itemPatent
 
@@ -42,7 +42,7 @@ PATCH /users/{id | userPrincipalName}/profile/patents/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,7 +55,7 @@ PATCH /users/{id | userPrincipalName}/profile/patents/{id}
 |description|String|Descpription патента или подачи. |
 |displayName|String|Название патента или подачи. |
 |вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
-|isPending        |Логическое     |Указывает, что патент находится в стадии ожидания.        |
+|isPending        |Логический     |Указывает, что патент находится в стадии ожидания.        |
 |issuedDate       |Дата        |Дата предоставления патента.   |
 |issuingAuthority |String      |Орган, выдав патент.     |
 |число           |String      |Номер патента.                      |
@@ -78,7 +78,6 @@ PATCH /users/{id | userPrincipalName}/profile/patents/{id}
 ``` http
 PATCH https://graph.microsoft.com/beta/users/{userId}/profile/patents/{id}
 Content-Type: application/json
-Content-length: 497
 
 {
   "number": "USPTO-3954432633",

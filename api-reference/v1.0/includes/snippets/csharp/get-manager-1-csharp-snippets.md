@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 476deaf2230c254e3fd5e78cc2b98a2c8156db2b
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c5f66fd7becf1ad6ff681c201639500ef796a79f54f4e68d8f88b4943bcd9ae3
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50943490"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57367959"
 ---
 ```csharp
 

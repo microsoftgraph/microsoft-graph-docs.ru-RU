@@ -2,15 +2,15 @@
 title: Создание объекта RangeBorder
 description: С помощью этого API можно создать объект RangeBorder.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 573b5f6894b83b90bb5e9b305ca237a4551d13a9
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e1b046f921c87a241a2e1297e4ebbdcabe4f2950
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051034"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60929341"
 ---
 # <a name="create-rangeborder"></a>Создание объекта RangeBorder
 
@@ -42,7 +42,7 @@ POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ra
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -64,7 +64,6 @@ POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ra
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/format/borders
 Content-type: application/json
-Content-length: 136
 
 {
   "id": "id-value",
@@ -94,7 +93,7 @@ Content-length: 136
 
 В теле запроса поставляем представление JSON объекта [workbookRangeBorder.](../resources/workbookrangeborder.md)
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,7 +102,6 @@ Content-length: 136
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 136
 
 {
   "id": "id-value",

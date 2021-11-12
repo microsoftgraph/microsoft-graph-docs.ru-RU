@@ -5,12 +5,12 @@ author: vishriv
 ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 0ecdf18da98696edebef6eeb6574e86e43c2a23e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ab12ed1b273d9d1f109035b872bdabfb678f17b9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59015661"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943642"
 ---
 # <a name="update-store"></a>Магазин обновлений
 Пространство имен: microsoft.graph.termStore
@@ -39,7 +39,7 @@ PATCH sites/{site-id}/termStore
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -72,7 +72,6 @@ PATCH sites/{site-id}/termStore
 ``` http
 PATCH https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore
 Content-Type: application/json
-Content-length: 133
 
 {
   "defaultLanguageTag": "en-US"

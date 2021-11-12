@@ -1,16 +1,16 @@
 ---
 title: 'outlookTask: полный'
 description: 'Выполните задачу Outlook, которая задает **свойство completedDateTime** к текущей дате, '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 35ff88db1fb8cde5c84a6010fc6e33b81661c387
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 747d10e6f332d90a12e464f435a31830d08814b0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055486"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935818"
 ---
 # <a name="outlooktask-complete-deprecated"></a>outlookTask: полный (неподготовленный)
 
@@ -53,7 +53,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/complete
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Prefer: outlook.timezone | Указывает часовой пояс для свойств времени в ответе, который будет в UTC, если этот заглавный не указан. Необязательно.|
+| Prefer: outlook.timezone | Указывает часовой пояс для свойств времени в ответе, который будет в UTC, если этот заглавный не указан. Необязательный параметр.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -115,7 +115,6 @@ Prefer: outlook.timezone="Pacific Standard Time"
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 465
 
 {
   "value": [

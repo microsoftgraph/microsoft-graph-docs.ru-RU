@@ -1,16 +1,16 @@
 ---
-title: Перечисление событий
+title: Список событий
 description: 'Получение списка объектов event из стандартного календаря пользователя или '
 ms.localizationpriority: high
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e3d7e995cc825529c94349a9878d431f2aba1d6e
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 2ec5e6826f8673333d9f67cffaec5c160a5bf6b6
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696360"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937603"
 ---
 # <a name="list-events"></a>Перечисление событий
 
@@ -25,7 +25,7 @@ ms.locfileid: "58696360"
 Существует два сценария, в которых приложение может получить события из календаря другого пользователя:
 
 * если у приложения есть разрешения для приложений;
-* если у приложения есть соответствующие делегированные [разрешения](#permissions) от одного пользователя, а другой пользователь поделился с ним календарем или предоставил ему делегированный доступ. См. [подробные сведения и пример](/graph/outlook-get-shared-events-calendars).
+* У приложения есть соответствующие делегированные [разрешения](#permissions) от одного пользователя, а другой пользователь поделился с ним календарем или предоставил ему делегированный доступ. См. [подробные сведения и пример](/graph/outlook-get-shared-events-calendars).
 
 
 ### <a name="support-various-time-zones"></a>Поддержка разных часовых поясов
@@ -130,7 +130,6 @@ Prefer: outlook.timezone="Pacific Standard Time"
 HTTP/1.1 200 OK
 Content-type: application/json
 Preference-Applied: outlook.timezone="Pacific Standard Time"
-Content-length: 1932
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events(subject,body,bodyPreview,organizer,attendees,start,end,location)",
@@ -244,7 +243,6 @@ Prefer: outlook.body-content-type="text"
 HTTP/1.1 200 OK
 Content-type: application/json
 Preference-Applied: outlook.body-content-type="text"
-Content-length: 640
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events(subject,body,bodyPreview)",

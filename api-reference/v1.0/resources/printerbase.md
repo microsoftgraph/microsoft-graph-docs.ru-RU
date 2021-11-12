@@ -2,21 +2,19 @@
 title: тип ресурса printerBase
 description: Представляет базовый тип для обмена принтерами и принтерами
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 12b611e73fab82d0ac1eafbdc19b26069ccfd94fa3806e4286da0f0c6516202b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9e770cd0dfdd29da549114ca5a688718e679855c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54235375"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944986"
 ---
 # <a name="printerbase-resource-type"></a>тип ресурса printerBase
 
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Представляет базовый тип для [типов сущности](printer.md) [принтера и принтераShare.](printerShare.md)
 

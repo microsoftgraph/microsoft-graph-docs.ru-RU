@@ -5,12 +5,12 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 9ee99053863896e5ec063a1a5f477a4e1fdfd7c5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d16e5edae25f7236688cc2475c27af885b43fd0f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59100213"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943817"
 ---
 # <a name="create-educationuser"></a>Создание educationUser
 
@@ -43,7 +43,7 @@ POST /education/users
 
 | Имя          | Описание                 |
 | :------------ | :-------------------------- |
-| Авторизация | Bearer {токен}. Обязательный.   |
+| Авторизация | Bearer {token}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -63,13 +63,13 @@ POST /education/users
 | displayName          | String                                                             | Имя пользователя, отображаемое в адресной книге. Обычно это сочетание имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. Поддерживает параметры $filter и $orderby.                                                                                      |
 | externalSource       | educationExternalSource                                            | Источник для создания пользователя. Возможные значения: `sis`, `manual`.                                                                                                                                                                                                                                                                                     |
 | externalSourceDetail | String                                                             | Имя внешнего источника, из которого были созданы эти ресурсы.                                                                                                                                                                                                                                                                                          |
-| givenName;            | String                                                             | Простое имя пользователя. Поддерживает параметр $filter.                                                                                                                                                                                                                                                                                                  |
+| givenName            | String                                                             | Простое имя пользователя. Поддерживает параметр $filter.                                                                                                                                                                                                                                                                                                  |
 | почта;                 | String                                                             | SMTP-адрес пользователя, например "victor@contoso.onmicrosoft.com". Только для чтения. Поддерживает параметр $filter.                                                                                                                                                                                                                                                    |
 | mailingAddress       | [physicalAddress](../resources/physicaladdress.md)                 | Почтовый адрес пользователя.                                                                                                                                                                                                                                                                                                                                       |
 | mailNickname         | String                                                             | Почтовый псевдоним для пользователя. Это свойство должно быть указано при создании пользователя. Поддерживает параметр $filter.                                                                                                                                                                                                                                                      |
 | middleName           | String                                                             | Отчество пользователя.                                                                                                                                                                                                                                                                                                                                    |
 | mobilePhone          | String                                                             | Основной сотовый телефон пользователя.                                                                                                                                                                                                                                                                                                         |
-| onPremisesInfo       | [educationOnPremisesInfo](../resources/educationonpremisesinfo.md) | Дополнительные сведения, используемые для связи пользователя AAD с его аналогом Active Directory.                                                                                                                                                                                                                                                               |
+| onPremisesInfo       | [educationOnPremisesInfo](../resources/educationonpremisesinfo.md) | Дополнительные сведения, используемые для AAD пользователя с его аналогом Active Directory.                                                                                                                                                                                                                                                               |
 | passwordPolicies     | String                                                             | Задает политики паролей для пользователя. Это свойство представляет собой перечисление с возможным значением DisableStrongPassword. Оно позволяет использовать менее надежные пароли, чем предусмотрено политикой по умолчанию. Вы также можете указать значение DisablePasswordExpiration. Два значения можно указать одновременно. Пример: "DisablePasswordExpiration, DisableStrongPassword". |
 | passwordProfile      | [passwordProfile](../resources/passwordprofile.md)                 | Задает профиль пароля для пользователя. Профиль содержит пароль пользователя. Это свойство обязательно указывать при создании пользователя. Пароль в профиле должен соответствовать минимальным требованиям, указанным в свойстве **passwordPolicies**. По умолчанию требуется надежный пароль.                                                        |
 | preferredLanguage    | String                                                             | Предпочитаемый язык для пользователя. Он должен быть представлен в формате ISO 639-1. Пример: "ru-RU".                                                                                                                                                                                                                                                                    |
@@ -102,7 +102,6 @@ POST /education/users
 ```http
 POST https://graph.microsoft.com/v1.0/education/users
 Content-Type: application/json
-Content-length: 1585
 
 {
   "@odata.type": "#microsoft.graph.educationUser",

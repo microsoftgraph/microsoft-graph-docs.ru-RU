@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 73e973acae87a35996a3146d2b4d20372209ef8e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fdaec87cfd40eeff8f38815fda21a09da9e1073e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062896"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942802"
 ---
 # <a name="range-lastcolumn"></a>Range: LastColumn
 
@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/r
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 169
 
 {
   "address": "address-value",

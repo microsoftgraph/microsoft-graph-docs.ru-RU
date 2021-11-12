@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 4669f627ac7d78e0090fa6c0977c979ad8e4a86a
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: bc489619c25b6bc58a60fe898f7e0275365ee5ac
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60693959"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943502"
 ---
 # <a name="reviewset-addtoreviewset"></a>reviewSet: addToReviewSet
 
@@ -78,7 +78,6 @@ POST /compliance/ediscovery/cases/{caseId}/reviewSets/{reviewsetId}/addToReviewS
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/080e8cad-f21f-4452-8826-0ddf7e949fdd/reviewSets/6fe25d32-8167-4625-b75c-c4181ccbd9d5/addToReviewSet
 Content-Type: application/json
-Content-length: 531
 
 {
     "sourceCollection": {

@@ -1,16 +1,16 @@
 ---
 title: Получить синхронизациюJob
 description: Извлечение существующего задания синхронизации и его свойств.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 7fd473b0d289f92a28ef92d094d7450ecac8431d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: cdca6f6f360ca39c23b3c75b82c0305d9ece140b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054842"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944643"
 ---
 # <a name="get-synchronizationjob"></a>Получить синхронизациюJob
 
@@ -27,7 +27,7 @@ ms.locfileid: "52054842"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     |Directory.Read.All  |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается.  |
-|Приложение                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
+|Для приложений                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +39,7 @@ GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 
 | Имя           | Тип    | Описание|
 |:---------------|:--------|:-----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -94,7 +94,6 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 2577
 
 {
     "id": "{jobId}",

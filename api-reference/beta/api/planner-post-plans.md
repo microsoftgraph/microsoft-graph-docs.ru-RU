@@ -1,16 +1,16 @@
 ---
 title: Создание объекта plannerPlan
 description: Используйте этот API, чтобы создать объект **plannerPlan**.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: a12e055c4972f7064cdf91239502b7bb54e5c787
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 8ac379336f0b9b4466c2332a63ca44618cc66ea1
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473817"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935559"
 ---
 # <a name="create-plannerplan"></a>Создание объекта plannerPlan
 
@@ -41,7 +41,7 @@ POST /planner/plans
 
 | Имя          | Описание               |
 | :------------ | :------------------------ |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -49,7 +49,7 @@ POST /planner/plans
 Включите в текст запроса описание объекта [plannerPlan](../resources/plannerplan.md) в формате JSON.
 Необходимо установить свойство контейнера **plannerPlan.**
 
->**Примечание:** Если контейнер — это группа Microsoft 365, пользователь, создавший план, должен быть членом группы, которая будет содержать план. При создании группы с помощью средства [создания группы](../api/group-post-groups.md) вы не становитесь ее участником. После создания группы добавьте себя в качестве участника с помощью операции [добавления участников группы](../api/group-post-members.md).
+>**Примечание:** Если контейнер является Microsoft 365, пользователь, создавший план, должен быть членом группы, которая будет содержать план. При создании группы с помощью средства [создания группы](../api/group-post-groups.md) вы не становитесь ее участником. После создания группы добавьте себя в качестве участника с помощью операции [добавления участников группы](../api/group-post-members.md).
 
 ## <a name="response"></a>Отклик
 
@@ -71,7 +71,6 @@ POST /planner/plans
 ``` http
 POST https://graph.microsoft.com/beta/planner/plans
 Content-type: application/json
-Content-length: 140
 
 {
   "container": {
@@ -112,7 +111,6 @@ Content-length: 140
 ``` http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 544
 
 {
   "createdBy": {

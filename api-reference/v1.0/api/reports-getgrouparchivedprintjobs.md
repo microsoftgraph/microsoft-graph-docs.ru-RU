@@ -2,20 +2,18 @@
 title: 'отчеты: getGroupArchivedPrintJobs'
 description: Получите список архивных заданий печати для определенной группы.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 649dfc0dc7933bc8610620c8880c24141e35066e8e851f8133776eedeac1f349
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 646d877525e0aebefe3ca0a67454d747cfda2305
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54155402"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942697"
 ---
 # <a name="reportroot-getgrouparchivedprintjobs"></a>reportRoot: getGroupArchivedPrintJobs
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Получите список архивных заданий печати для определенной группы.
 
@@ -28,7 +26,7 @@ ms.locfileid: "54155402"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Reports.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается.|
+|Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +49,7 @@ GET /reports/getGroupArchivedPrintJobs
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: eea89b15ad33356e3c3c849a23bcb598764e110d
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: b1209f77451862db2e5fbe0a16d43aa7f280b933
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214708"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944566"
 ---
 # <a name="list-registereddevices"></a>Список registeredDevices
 
@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/me/registeredDevices
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2f7bc79329ee05e19b9b3df878ff870289844b2b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ca0ee5d93a659ac0d26e49f5f813ff3dd5e27cbe
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037301"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942879"
 ---
 # <a name="create-outlook-category"></a>Создание категории Outlook
 
@@ -37,7 +37,7 @@ POST /users/{id|userPrincipalName}/outlook/masterCategories
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 
 ## <a name="request-body"></a>Текст запроса
@@ -95,7 +95,6 @@ Content-Length: 70
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 250
 
 {
   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories/$entity",

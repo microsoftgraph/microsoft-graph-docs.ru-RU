@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d92138f1493766dc34d4d616a8717b5f0abb573e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 770f83120314828218c6d90ae3d022d072456a36
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59025827"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945028"
 ---
 # <a name="get-tablesort"></a>Получение объекта TableSort
 
@@ -89,7 +89,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|nam
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 51
 
 {
   "matchCase": true,

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 5fb6fcee86dc1a5026d222b7f42888b5a8b5ce52
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 00688dc518d8c149690f8ffef9355552a1a7121f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104917"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945098"
 ---
 # <a name="list-tasks"></a>Перечисление задач
 
@@ -37,7 +37,7 @@ GET /planner/tasks
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/v1.0/planner/tasks
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 833
 
 {
   "value": [
