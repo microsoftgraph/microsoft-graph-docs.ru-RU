@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 9ea437f60f0444b58871b71c43e4b1989e48a166
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fd6086026841f4c607ce8575034e81154f7e63bd
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007560"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940463"
 ---
 # <a name="list-sections"></a>Вывод списка разделов
 
@@ -95,7 +95,6 @@ GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups/{id}/sections
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 345
 
 {
   "value": [

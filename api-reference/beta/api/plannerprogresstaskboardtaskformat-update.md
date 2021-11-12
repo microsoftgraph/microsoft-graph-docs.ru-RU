@@ -1,16 +1,16 @@
 ---
 title: Обновление объекта plannerProgressTaskBoardTaskFormat
 description: Обновление свойств объекта **plannerProgressTaskBoardTaskFormat**.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 5a871fee114f43d5c6e54caa9b90639a59b71e0e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1e60560c6b8d1c1b5acfc3b157602a18f8589c30
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050005"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937673"
 ---
 # <a name="update-plannerprogresstaskboardtaskformat"></a>Обновление объекта plannerProgressTaskBoardTaskFormat
 
@@ -36,7 +36,7 @@ PATCH /planner/tasks/{id}/progressTaskBoardFormat
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | If-Match  | Последнее известное значение ETag обновляемого объекта **plannerProgressTaskBoardTaskFormat**. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -64,7 +64,6 @@ PATCH /planner/tasks/{id}/progressTaskBoardFormat
 ```http
 PATCH https://graph.microsoft.com/beta/planner/tasks/{id}/progressTaskBoardFormat
 Content-type: application/json
-Content-length: 34
 Prefer: return=representation
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
@@ -91,7 +90,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,7 +99,6 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 68
 
 {
   "id": "hsOf2dhOJkqyYYZEtdzDe2QAIUCR",

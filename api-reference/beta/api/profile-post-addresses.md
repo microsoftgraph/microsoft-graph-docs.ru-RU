@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 0310b12d284b3ed3f9b20bc979e5b22dfafb8c34
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a9757652bbe852e0b22825eac9ea8a3b6a2e1d31
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126158"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938450"
 ---
 # <a name="create-addresses"></a>Создание адресов
 Пространство имен: microsoft.graph
@@ -40,7 +40,7 @@ POST /users/{id | userPrincipalName}/profile/addresses
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -71,7 +71,6 @@ POST /users/{id | userPrincipalName}/profile/addresses
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/addresses
 Content-Type: application/json
-Content-length: 497
 
 {
   "displayName": "Home",

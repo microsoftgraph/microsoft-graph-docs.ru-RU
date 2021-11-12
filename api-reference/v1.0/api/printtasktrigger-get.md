@@ -2,21 +2,19 @@
 title: Получение taskTrigger
 description: Получите триггер задачи с принтера.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 42794100705dff60c224cd511984d2d29a8014f3
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 766554aea4e32f35786c9fc2854b60cf091e6614
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50774484"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940643"
 ---
 # <a name="get-printtasktrigger"></a>Get printTaskTrigger
 
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Получите [триггер задачи](../resources/printtasktrigger.md) с [принтера.](../resources/printer.md)
 
@@ -46,7 +44,7 @@ GET /print/printers/{printerId}/taskTriggers/{printTaskTriggerId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

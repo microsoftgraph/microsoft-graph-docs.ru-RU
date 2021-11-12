@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4728db7de81f9c9469bda3d4f79a6e6dc92efa14
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 82d17920a6f368fca36518b460fb81ffc753f760
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021381"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947303"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>Список удаленных элементов, которые принадлежат пользователю
 
@@ -42,7 +42,7 @@ POST /directory/deletedItems/getUserOwnedObjects
 
 | Имя          | Описание               |
 | ------------- | ------------------------- |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -54,7 +54,7 @@ POST /directory/deletedItems/getUserOwnedObjects
 |type|String|Тип объектов, которые необходимо возвращать; `group` в настоящее время является единственным поддерживаемым значением.|
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешные запросы возвращают коды ответов; объект ответа включает свойства `200 OK` [каталога (удаленных](../resources/directory.md) элементов).
 
@@ -81,7 +81,6 @@ Content-type: application/json
 ``` http
 HTTP/1.1 200
 Content-type: application/json
-Content-length: 1249
 
 {
 "value": [

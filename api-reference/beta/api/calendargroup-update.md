@@ -2,15 +2,15 @@
 title: Обновление объекта calendarGroup.
 description: Обновление свойств объекта calendarGroup.
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9395d46f587aa49ed4f77dbe47d2b971e2baeb56
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e1d9e56313ffe86522e89150073067b800853ce2
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047695"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60930824"
 ---
 # <a name="update-calendargroup"></a>Обновление объекта calendarGroup.
 
@@ -45,7 +45,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}
 
 | Заголовок        | Значение                       |
 | :------------ | :-------------------------- |
-| Авторизация | Bearer {токен}. Обязательный.   |
+| Авторизация | Bearer {token}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -76,7 +76,6 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/me/calendarGroups/{id}
 Content-type: application/json
-Content-length: 30
 
 {
   "name": "name-value"
@@ -103,7 +102,7 @@ Content-length: 30
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
@@ -114,7 +113,6 @@ Content-length: 30
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 110
 
 {
   "name": "name-value",

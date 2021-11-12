@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 5b65da54349992bf46e6fcb2488969c8b85e9134
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1964e8d34eca3214fb53157f4f0da9cb56d4ea58
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104906"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60928156"
 ---
 # <a name="create-plannerbucket"></a>Создание объекта plannerBucket
 
@@ -36,7 +36,7 @@ POST /planner/buckets
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Включите в текст запроса описание объекта [plannerBucket](../resources/plannerbucket.md) в формате JSON.
@@ -59,7 +59,6 @@ POST /planner/buckets
 ```http
 POST https://graph.microsoft.com/v1.0/planner/buckets
 Content-type: application/json
-Content-length: 92
 
 {
   "name": "Advertising",
@@ -96,7 +95,6 @@ Content-length: 92
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 145
 
 {
   "name": "Advertising",

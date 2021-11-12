@@ -2,20 +2,18 @@
 title: Удаление printConnector
 description: Удаление (отрегистрации) printConnector.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 71edae5cf61e9e3ab7e9d8ec8b36ed679d0c04f6
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 63eb81cd44c8ac2e73f48ac9890b50e1f5b552c3
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772158"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945091"
 ---
 # <a name="delete-printconnector"></a>Удаление printConnector
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Удаление (незарегистрированного) **printConnector**.
 
@@ -43,7 +41,7 @@ DELETE /print/connectors/{printConnectorId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -51,7 +49,7 @@ DELETE /print/connectors/{printConnectorId}
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
-### <a name="error-conditions-and-messages"></a>Условия ошибки и сообщения
+### <a name="error-conditions-and-messages"></a>Условия ошибок и сообщения об ошибках
 
 |Сценарий|Метод|Код|Сообщение|
 |--------|------|----|-------|

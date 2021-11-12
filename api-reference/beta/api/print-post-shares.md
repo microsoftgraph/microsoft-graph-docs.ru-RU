@@ -2,15 +2,15 @@
 title: Создание printerShare
 description: Создает новую долю принтера для указанного принтера.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 57d755532e2e56934f32aaa0940504073eef7473
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9555798c9ec513400bacd2a673fb3fd40dabe260
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053631"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946687"
 ---
 # <a name="create-printershare"></a>Создание printerShare
 
@@ -29,7 +29,7 @@ ms.locfileid: "52053631"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| PrinterShare.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается.|
+|Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +39,7 @@ POST /print/shares
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -49,9 +49,9 @@ POST /print/shares
 
 |Свойство|Тип|Описание|Обязательный?|
 |:---|:---|:---|:---|
-|принтер|microsoft.graph.printer|Принтер, с который связан этот принтер. Используйте `printer@odata.bind` синтаксис, как показано в следующем примере.|Да|
+|printer|microsoft.graph.printer|Принтер, с который связан этот принтер. Используйте `printer@odata.bind` синтаксис, как показано в следующем примере.|Да|
 |displayName|String|Имя доли принтера, которую должны отображать клиенты печати. Максимальная разрешенная длина — 50 символов.|Да|
-|allowAllUsers|Логический| Если это так, всем пользователям и группам будет предоставлен доступ к этой совместной печати. Это замещеет списки разрешенных объектов, определенные свойствами allowedUsers и allowedGroups.|Нет|
+|allowAllUsers|Логическое| Если это так, всем пользователям и группам будет предоставлен доступ к этой совместной печати. Это замещеет списки разрешенных объектов, определенные свойствами allowedUsers и allowedGroups.|Нет|
 
 ## <a name="response"></a>Отклик
 В случае успешного использования этот метод возвращает код отклика и `201 Created` объект [printerShare](../resources/printershare.md) в тексте отклика.
@@ -70,7 +70,6 @@ POST /print/shares
 ```http
 POST https://graph.microsoft.com/beta/print/shares
 Content-type: application/json
-Content-length: 114
 
 {
   "name": "name-value",
@@ -109,7 +108,6 @@ Content-length: 114
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 233
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",

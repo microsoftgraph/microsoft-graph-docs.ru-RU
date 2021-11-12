@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: a13129fd3add48153166eb5154d9e10c10c6be64
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bf2078e51a4d08599496f070a25610074fbc877c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037210"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942861"
 ---
 # <a name="get-plannerprogresstaskboardtaskformat"></a>Получение объекта plannerProgressTaskBoardTaskFormat
 
@@ -35,7 +35,7 @@ GET /planner/tasks/{id}/progressTaskBoardFormat
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -86,7 +86,6 @@ GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/progressTaskBoardFo
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 76
 
 {
   "id": "01gzSlKkIUSUl6DF_EilrmQAKDhh",

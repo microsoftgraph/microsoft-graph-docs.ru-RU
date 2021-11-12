@@ -2,21 +2,19 @@
 title: Удаление allowedUser из printerShare
 description: Отзовет доступ указанного пользователя к отправке заданий печати в связанную долю принтера.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 453fd853c7631ccb84c8b5709a33a787fc859444
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: a1d6edce095e0cac5e0a416c5568c5cf5b7e8e85
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771745"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924360"
 ---
 # <a name="delete-alloweduser-from-printershare"></a>Удаление allowedUser из printerShare
 
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Отзовет доступ указанного пользователя для отправки заданий печати в связанный [принтерShare.](../resources/printershare.md)
 
@@ -39,7 +37,7 @@ DELETE /print/shares/{printerShareId}/allowedUsers/{userId}/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

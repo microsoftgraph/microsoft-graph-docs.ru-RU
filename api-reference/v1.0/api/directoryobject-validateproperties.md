@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 13bb77e048d0d28c272cb6b067957b451212e857
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a17e3fa523f1cf63c1d25b3b42fac172e62b589c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046339"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60937393"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject: проверка Свойств
 
@@ -44,7 +44,7 @@ POST /directoryObjects/validateProperties
 
 | Имя           | Описание      |
 |:---------------|:-----------------|
-| Авторизация  | Bearer {токен}. Обязательный.    |
+| Авторизация  | Bearer {token}. Обязательный.    |
 | Content-Type   | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ POST /directoryObjects/validateProperties
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |entityType|String| Группа — это единственный поддерживаемый тип сущности. |
-|displayName|Строка| Отображаемого имени группы для проверки. Свойство не требуется по отдельности. Однако требуется по крайней мере одно свойство **(displayName** или **mailNickname).** |
+|displayName|String| Отображаемого имени группы для проверки. Свойство не требуется по отдельности. Однако требуется по крайней мере одно свойство **(displayName** или **mailNickname).** |
 |mailNickname|String| Имя почты группы для проверки. Свойство не требуется по отдельности. Однако требуется по крайней мере одно свойство **(displayName** или **mailNickname).** |
 |onBehalfOfUserId|Guid| ID пользователя, который должен выдать себя при вызове API. Результаты проверки для **атрибутов и ролей onBehalfOfUserId.** |
 
@@ -80,7 +80,6 @@ POST /directoryObjects/validateProperties
 ``` http
 POST https://graph.microsoft.com/v1.0/directoryObjects/validateProperties
 Content-type: application/json
-Content-length: 164
 
 {
   "entityType": "Group",
@@ -125,7 +124,6 @@ HTTP/1.1 204 No Content
 ```http
 POST https://graph.microsoft.com/v1.0/directoryObjects/validateProperties
 Content-type: application/json
-Content-length: 164
 
 {
   "entityType": "Group",

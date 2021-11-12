@@ -2,15 +2,15 @@
 title: Отправка почты
 description: Отправляйте сообщение, указанное в тексте запроса, в формате JSON или MIME.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: eb97568e946bf1b145391c7c875500b05a3b93a6
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 38995048c71876a3e0ec05cc7eb586c347b1973e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52868891"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935223"
 ---
 # <a name="send-mail"></a>Отправка почты
 
@@ -49,7 +49,7 @@ POST /users/{id | userPrincipalName}/sendMail
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание| 
 |:---------------|:--------|:----------
-| Authorization  | string  | Bearer {токен}. Обязательный.|
+| Authorization  | string  | Bearer {token}. Обязательный.|
 | Content-Type | string  | Характер данных в теле объекта. Обязательный.<br/> Используйте `application/json` для объекта JSON и `text/plain` для содержимого MIME.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -86,7 +86,6 @@ POST /users/{id | userPrincipalName}/sendMail
 ```http
 POST https://graph.microsoft.com/beta/me/sendMail
 Content-type: application/json
-Content-length: 512
 
 {
   "message": {
@@ -153,7 +152,6 @@ HTTP/1.1 202 Accepted
 ```http
 POST https://graph.microsoft.com/beta/me/sendMail
 Content-type: application/json
-Content-length: 344
 
 {
   "Message": {

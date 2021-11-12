@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 7065fdced15ff04ff6e82a437378c217a486c94d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 845d25c2665d50c1f8a969a53e293b26528ee60f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59054711"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947645"
 ---
 # <a name="user-exportpersonaldata"></a>пользователь: exportPersonalData
 
@@ -38,7 +38,7 @@ POST /users/{id}/exportPersonalData
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание |
 |:---------------|:----------|
-| Authorization  | Bearer {token}|
+| Авторизация  | Bearer {token}|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
@@ -52,7 +52,7 @@ POST /users/{id}/exportPersonalData
 
 | Имя       | Описание |
 |:---------------|:----------|
-| Location  | URL-адрес для проверки состояния запроса. |
+| Расположение  | URL-адрес для проверки состояния запроса. |
 | Retry-After  | Период времени в секундах. Производитель запросов должен ждать этого долго после отправки запроса для проверки состояния. |
 
 
@@ -67,7 +67,6 @@ POST /users/{id}/exportPersonalData
 ```http
 POST https://graph.microsoft.com/beta/users/{id}/exportPersonalData
 Content-type: application/json
-Content-length: 48
 
 {
   "storageLocation": "storageLocation-value"

@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 67c62b50a4e9acfa8d779d71f0b5ee6fefa46a85
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7140d7bf85f3b5457ab896327928b3962e3360b4
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59036874"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947408"
 ---
 # <a name="list-names"></a>Перечисление имен
 
@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 136
 
 {
   "value": [

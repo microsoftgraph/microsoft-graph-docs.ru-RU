@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 1c87c157c0ae9eacc87c812ac37256ff9df899a4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 804ce3ff2ab0f2f7e6300f6b83c33e4ee7016126
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59099114"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60927434"
 ---
 # <a name="update-worksheet"></a>Обновление листа
 
@@ -35,7 +35,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -62,7 +62,6 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}
 Content-type: application/json
-Content-length: 100
 
 {
   "position": 99,
@@ -98,7 +97,6 @@ Content-length: 100
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 100
 
 {
   "id": "id-value",

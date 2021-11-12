@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 74622ac8ecd4220a2497f22494c2cb89055b4f7d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4894405ef13d47335b77876aa8791e79b1e8976e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104889"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947589"
 ---
 # <a name="create-plannertask"></a>Создание объекта plannerTask
 
@@ -34,7 +34,7 @@ POST /planner/tasks
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 Включите в текст запроса описание объекта [plannerTask](../resources/plannertask.md) в формате JSON. В качестве свойства **задачи Планировщика** planId необходимо указать идентификатор существующего объекта [plannerPlan](../resources/plannerplan.md).
@@ -57,7 +57,6 @@ POST /planner/tasks
 ```http
 POST https://graph.microsoft.com/v1.0/planner/tasks
 Content-type: application/json
-Content-length: 285
 
 {
   "planId": "xqQg5FS2LkCp935s-FIFm2QAFkHM",
@@ -92,7 +91,6 @@ Content-length: 285
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 677
 
 {
   "createdBy": {

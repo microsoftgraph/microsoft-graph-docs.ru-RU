@@ -1,16 +1,16 @@
 ---
 title: Обновление соглашения
 description: Обновление свойств объекта соглашения.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 77c3fbf6aa37d283e02408a1000d4a5f521a3fd5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 913aa8c43b489be48de632c80ab51b50703355ce
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048199"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939918"
 ---
 # <a name="update-agreement"></a>Обновление соглашения
 
@@ -49,7 +49,7 @@ PATCH /identityGovernance/termsOfUse/agreements/{id}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |displayName|String|Отображение имени соглашения.|
-|isViewingBeforeAcceptanceRequired|Логический|Необходимо ли пользователю расширить и просмотреть соглашение перед его принятием.|
+|isViewingBeforeAcceptanceRequired|Логическое|Необходимо ли пользователю расширить и просмотреть соглашение перед его принятием.|
 
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код отклика и обновленный объект соглашения `200 OK` в тексте [](../resources/agreement.md) ответа.
@@ -65,7 +65,6 @@ PATCH /identityGovernance/termsOfUse/agreements/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/{id}
 Content-type: application/json
-Content-length: 85
 
 {
   "displayName": "displayName-value",
@@ -102,7 +101,6 @@ Content-length: 85
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 105
 
 {
   "displayName": "displayName-value",

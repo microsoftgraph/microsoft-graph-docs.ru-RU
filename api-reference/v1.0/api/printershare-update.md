@@ -2,20 +2,18 @@
 title: Обновление принтера
 description: Обновление свойств совместной работы принтера. Этот метод можно использовать для "замены" принтеров.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 991364b3d1900fc99c41cfb55a2e26cff505167d
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 977e07f5603649e9a55f6b278af55c48fc76640c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776825"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945084"
 ---
 # <a name="update-printershare"></a>Обновление printerShare
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Обновление свойств совместной работы принтера. Этот метод можно использовать для замены [принтеров.](../resources/printer.md)
 
@@ -45,7 +43,7 @@ PATCH /print/shares/{printerShareId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,7 +55,7 @@ PATCH /print/shares/{printerShareId}
 |:-------------|:------------|:------------|
 |printer|microsoft.graph.printer|Принтер, с который связан этот принтер. Используйте синтаксис, как показано в следующем примере, чтобы обновить принтер, с которым связан этот `printer@odata.bind` принтер.|
 |displayName|String|Имя доли принтера, которую должны отображать клиенты печати.|
-|allowAllUsers|Boolean| Если это так, всем пользователям и группам будет предоставлен доступ к этой совместной печати. Это замещеет списки разрешенных объектов, определенные свойствами allowedUsers и allowedGroups.|
+|allowAllUsers|Логическое| Если это так, всем пользователям и группам будет предоставлен доступ к этой совместной печати. Это замещеет списки разрешенных объектов, определенные свойствами allowedUsers и allowedGroups.|
 
 ## <a name="response"></a>Отклик
 
@@ -76,7 +74,6 @@ PATCH /print/shares/{printerShareId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/print/shares/{printerShareId}
 Content-Type: application/json
-Content-length: 509
 
 {
   "displayName": "PrinterShare Name",

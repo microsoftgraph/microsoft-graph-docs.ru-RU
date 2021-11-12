@@ -1,16 +1,16 @@
 ---
 title: Создание outlookTaskFolder
 description: Создайте папку задач в группе задач по умолчанию `My Tasks` () почтового ящика пользователя.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9aafda49a7d02169c791c4038195aca4d387928b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d17186c55a1ac2e099db028ac1b20c67bdbd1a48
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52038007"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60933998"
 ---
 # <a name="create-outlooktaskfolder-deprecated"></a>Создание outlookTaskFolder (амортизации)
 
@@ -41,7 +41,7 @@ POST /users/{id|userPrincipalName}/outlook/taskFolders
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса поставляем представление JSON объекта [OutlookTaskFolder.](../resources/outlooktaskfolder.md)
@@ -62,7 +62,6 @@ POST /users/{id|userPrincipalName}/outlook/taskFolders
 ```http
 POST https://graph.microsoft.com/beta/me/outlook/taskfolders 
 Content-type: application/json
-Content-length: 60
 
 {
   "name": "Volunteer"
@@ -88,7 +87,7 @@ Content-length: 60
 
 В теле запроса поставляем представление JSON объекта [OutlookTaskFolder.](../resources/outlooktaskfolder.md)
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -97,7 +96,6 @@ Content-length: 60
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 151
 
 {
   "id": "AAMkADIyAAAhrbPWAAA=",

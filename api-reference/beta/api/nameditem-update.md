@@ -1,16 +1,16 @@
 ---
 title: Обновление объекта NamedItem
 description: Обновление свойств объекта nameditem.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ''
 author: ruoyingl
-ms.openlocfilehash: b812058bcc7ce149b5a12b5c006e34c3f6368926
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 43cba5a5d06a90af30b594491a7b3fb4f45e105d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052112"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947268"
 ---
 # <a name="update-nameditem"></a>Обновление объекта NamedItem
 
@@ -37,7 +37,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/names/{name}
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -63,7 +63,6 @@ PATCH /me/drive/root:/{item-path}:/workbook/names/{name}
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}
 Content-type: application/json
-Content-length: 87
 
 {
   "type": "type-value",
@@ -93,7 +92,7 @@ Content-length: 87
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -102,7 +101,6 @@ Content-length: 87
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 87
 
 {
   "name": "name-value",

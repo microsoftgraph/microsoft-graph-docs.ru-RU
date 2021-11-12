@@ -1,16 +1,16 @@
 ---
 title: Добавление identityProvider в b2cIdentityUserFlow (обесценение)
 description: Добавьте identityProvider в b2cIdentityUserFlow. (неоконт.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 9a5591465329d879a4a1bd3e4b0028cad2b6cdef
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: 0afbf31d1323660db9976ac69e2a4afe405b4923
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439737"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939842"
 ---
 # <a name="add-identityprovider-to-a-b2cidentityuserflow-deprecated"></a>Добавление identityProvider в b2cIdentityUserFlow (обесценение)
 
@@ -29,7 +29,7 @@ ms.locfileid: "53439737"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение| IdentityUserFlow.ReadWrite.All|
+|Для приложений| IdentityUserFlow.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
@@ -48,7 +48,7 @@ POST /identity/b2cUserFlows/{id}/identityProviders/$ref
 
 |Имя|Описание|
 |:---------------|:----------|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -76,7 +76,6 @@ POST /identity/b2cUserFlows/{id}/identityProviders/$ref
 ``` http
 POST https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/identityProviders/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/beta/identityProviders/{id}"

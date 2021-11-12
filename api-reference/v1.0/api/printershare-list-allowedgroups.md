@@ -2,20 +2,18 @@
 title: Список разрешенных Групп для принтераShare
 description: Извлечение списка групп, которые получили доступ для отправки заданий печати в связанную долю принтера.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 49555364c6ff923d746718ef37650130d85e7c30
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: aa9897883ca5d0d766f9815e644d49f712b1f0bc
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771570"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60927879"
 ---
 # <a name="list-allowedgroups"></a>Список allowedGroups
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Извлечение списка групп, которые получили доступ для отправки заданий печати в связанный [принтерShare.](../resources/printershare.md)
 
@@ -43,7 +41,7 @@ GET /print/shares/{printerShareId}/allowedGroups
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

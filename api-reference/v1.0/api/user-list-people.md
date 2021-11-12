@@ -5,12 +5,12 @@ author: dkershaw10
 ms.localizationpriority: high
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: f33aea8dc2dd441cd14bca7332b1568627455617
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 24dc63c927aa82bcaeb7da9463f7364b946c5800
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59044827"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940190"
 ---
 # <a name="list-people"></a>Список людей
 
@@ -117,7 +117,6 @@ GET https://graph.microsoft.com/v1.0/me/people
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1370
 
 {
     "value": [

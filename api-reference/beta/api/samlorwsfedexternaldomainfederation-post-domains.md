@@ -5,12 +5,12 @@ author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 175c2f05335494f876a0f0121d9777d87013184b
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 5038eebdc83c242ffce20668b1eb906f032e006f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59763920"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947673"
 ---
 # <a name="create-externaldomainname"></a>Создание externalDomainName
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "59763920"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Domain.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложения|Domain.ReadWrite.All|
+|Для приложений|Domain.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать одной из следующих ролей Azure Active Directory [(Azure AD):](/azure/active-directory/roles/permissions-reference)
 
@@ -48,7 +48,7 @@ POST /directory/federationConfigurations/{samlOrWsFedExternalDomainFederation ID
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -80,7 +80,6 @@ POST /directory/federationConfigurations/{samlOrWsFedExternalDomainFederation ID
 ``` http
 POST https://graph.microsoft.com/beta/directory/federationConfigurations/d5a56845-6845-d5a5-4568-a5d54568a5d5/microsoft.graph.samlOrWsFedExternalDomainFederation/domains
 Content-Type: application/json
-Content-length: 60
 
 {
     "@odata.type": "microsoft.graph.externalDomainName",
@@ -107,7 +106,7 @@ Content-length: 60
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

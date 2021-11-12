@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 465361e873cb9cb7cd3ab97373261608e0f93e8b
-ms.sourcegitcommit: 0ec845f93eaa140ad833ba163c76c5308197a92f
+ms.openlocfilehash: ade742e8a703c811e956742076d31216fd4c92fa
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60068582"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947736"
 ---
 # <a name="list-educationsynchronizationprofiles"></a>List educationSynchronizationProfiles
 
@@ -41,7 +41,7 @@ GET /education/synchronizationProfiles
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный.  |
+| Authorization  | string  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 3296
 
 {
     "value": [

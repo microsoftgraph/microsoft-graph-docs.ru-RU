@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 956a44d63438803fe9d74d66d5efc3fdce768280
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 829b30b2197c92cd7fd51ceb2e125f3f3cbf1bbd
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59141461"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943234"
 ---
 # <a name="update-personaward"></a>Обновление personAward
 
@@ -42,7 +42,7 @@ PATCH /users/{id | userPrincipalName}/profile/awards/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -76,7 +76,6 @@ PATCH /users/{id | userPrincipalName}/profile/awards/{id}
 ``` http
 PATCH https://graph.microsoft.com/beta/users/{userId}/profile/awards/{personAwardId}
 Content-Type: application/json
-Content-length: 497
 
 {
   "issuingAuthority": "International Association of Branding Management",

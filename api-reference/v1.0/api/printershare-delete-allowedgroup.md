@@ -2,21 +2,19 @@
 title: Удаление allowedGroup из принтераShare
 description: Отзовет доступ указанной группы для отправки заданий печати в связанную долю принтера.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: bea8ede4aeeeea48712330f79301c86809ec2cfe
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 35f152af344de8ae1561c824ba06160d1ebb8809
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771703"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946435"
 ---
 # <a name="delete-allowedgroup-from-printershare"></a>Удаление allowedGroup из принтераShare
 
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Отзовет доступ указанной группы для отправки заданий печати в связанный [принтерShare.](../resources/printershare.md)
 
@@ -39,7 +37,7 @@ DELETE /print/shares/{printerShareId}/allowedGroups/{groupId}/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

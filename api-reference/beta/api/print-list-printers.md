@@ -2,15 +2,15 @@
 title: Получить принтеры
 description: Извлечение списка принтеров, зарегистрированных в клиенте.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 67abcedfd9b120b8d075530ec423a5f937ee5c27
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 97b6622041e17e5f159cdcc2a42170b3f5185c6f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037538"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60933145"
 ---
 # <a name="list-printers"></a>Перечисление принтеров
 
@@ -40,14 +40,14 @@ GET /print/printers
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
-### <a name="exceptions"></a>Exceptions
+### <a name="exceptions"></a>Исключения
 * Свойство навигации поддерживается и поддерживается `$expand` `select` `share` операторами, но не `jobs` для .
 * Некоторые операторы не поддерживаются: `$count` , `$search` .
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -95,7 +95,6 @@ GET https://graph.microsoft.com/beta/print/printers
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1526
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers",

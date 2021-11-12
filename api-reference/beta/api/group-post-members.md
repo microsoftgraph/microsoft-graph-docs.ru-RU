@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: cbd076e7f725f7442a03301085ecb228534aa2ee
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: 3c6710b38df1db84df77028effa623e02ccc1694
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214463"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943397"
 ---
 # <a name="add-member"></a>Добавление участника
 
@@ -18,12 +18,12 @@ ms.locfileid: "60214463"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавление участника в группу через свойство **навигации** участников.
+Добавляйте участника в группу через свойство навигации **members**.
 
 Можно добавить пользователей, директоров служб или другие группы. 
 
 > [!Important]
-> + Можно добавлять пользователей только в группы, управляемые через облако.
+> + Вы можете добавлять пользователей только в группы, управляемые через облако.
 > + Вы не можете добавлять группы безопасности в группы Microsoft 365.
 > + Вы не можете добавлять группы Microsoft 365 в группы безопасности или другие группы Microsoft 365.
 
@@ -45,7 +45,7 @@ POST /groups/{group-id}/members/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя | Описание|
 |:---- |:-----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание добавляемого объекта [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) или [group](../resources/group.md) в формате JSON.
@@ -65,7 +65,6 @@ POST /groups/{group-id}/members/$ref
 ```http
 POST https://graph.microsoft.com/beta/groups/{group-id}/members/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/{id}"
@@ -91,7 +90,7 @@ Content-length: 30
 
 В теле запроса устройте JSON-представление объекта `id` [directoryObject](../resources/directoryobject.md), [пользователя](../resources/user.md)или группового объекта, который необходимо добавить. [](../resources/group.md)
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа.
 
 <!-- {

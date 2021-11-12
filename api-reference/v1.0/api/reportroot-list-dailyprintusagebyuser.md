@@ -2,20 +2,18 @@
 title: Список dailyPrintUsageByUser
 description: Извлечение списка сводок ежедневного использования печати, сгруппив по пользователю.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: fcb2987cee07d21082323ad5e4cf62b11b4db2d8
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 55f63047b5bbd53938423c6d76d2aa695e7dd0bf
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50954822"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942753"
 ---
 # <a name="list-dailyprintusagebyuser"></a>Список dailyPrintUsageByUser
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Извлечение списка сводок ежедневного использования печати, сгруппив по пользователю.
 
@@ -46,7 +44,7 @@ GET /reports/dailyPrintUsageByUser
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

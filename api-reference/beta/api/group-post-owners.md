@@ -1,16 +1,16 @@
 ---
 title: Добавление владельца группы
 description: Добавление пользователя в качестве владельца группы.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 660c3a900c0ef36884a16e8007fba6dc72723c18
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: 5033e4315dd4253f440bb3d03d6c6c30e916cde9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58396746"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946211"
 ---
 # <a name="add-group-owner"></a>Добавление владельца группы
 
@@ -39,7 +39,7 @@ POST /groups/{id}/owners/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -60,7 +60,6 @@ POST /groups/{id}/owners/$ref
 ```http
 POST https://graph.microsoft.com/beta/groups/{id}/owners/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/beta/users/{id}"
@@ -87,7 +86,7 @@ Content-length: 30
 Предоставьте в тексте запроса описание добавляемого объекта [user](../resources/user.md) в формате JSON.
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response"
@@ -98,7 +97,7 @@ HTTP/1.1 204 No Content
 
 ## <a name="see-also"></a>См. также
 - [Добавление участника в команду](team-post-members.md)
-- [Обновление роли участника в команде](team-update-members.md)
+- [Обновление роли участника в группе](team-update-members.md)
 - [Удаление участника из чата](team-delete-members.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

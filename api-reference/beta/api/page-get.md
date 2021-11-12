@@ -1,16 +1,16 @@
 ---
 title: Вывод страницы
-description: Получение свойств и связей объекта Page.
-localization_priority: Normal
+description: Извлечение свойств и связей объекта страницы.
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 3e65a4edda10a6c3a8fca7714fc17168ccb36e66
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 5cc6ae4ae91e196274931aefc8099b3fbbfba3fd
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403967"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936539"
 ---
 # <a name="get-page"></a>Вывод страницы
 
@@ -18,9 +18,9 @@ ms.locfileid: "48403967"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [Page](../resources/onenotepage.md) .
+Извлечение свойств и связей объекта [страницы.](../resources/onenotepage.md)
 
-**Извлечение сведений о странице**
+**Получение сведений о странице**
 
 Доступ к метаданным страницы по идентификатору страницы:
 
@@ -28,24 +28,24 @@ ms.locfileid: "48403967"
 GET /me/onenote/pages/{id}
 ```
 
-**Извлечение контента страницы**
+**Получение контента страницы**
 
-Вы можете использовать `content` конечную точку страницы для получения HTML-содержимого страницы:
+Вы можете использовать конечную точку страницы для `content` получения HTML-контента страницы:
 
 ```
 GET /me/onenote/pages/{id}/content[?includeIDs=true]
 GET /me/onenote/pages/{id}/$value[?includeIDs=true]
 ```
 
-`includeIDs=true`Параметр запроса используется для [обновления страниц](../api/page-update.md).
+Параметр `includeIDs=true` запроса используется для [обновления страниц.](../api/page-update.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Notes. Read, Notes. ReadWrite, Notes. Read. ALL, Notes. ReadWrite. ALL    |
-|Делегированные (личная учетная запись Майкрософт) | Notes. Read, Notes. ReadWrite    |
+|Делегированные (рабочая или учебная учетная запись) | Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
+|Делегированные (личная учетная запись Майкрософт) | Notes.Read, Notes.ReadWrite    |
 |Для приложений | Notes.Read.All, Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -57,9 +57,9 @@ GET /groups/{id}/onenote/pages/{id}
 GET /sites/{id}/onenote/pages/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `select` `expand` [параметры запросов OData](/graph/query-parameters) и для настройки отклика.
+Этот метод поддерживает параметры `select` `expand` [запроса oData и OData](/graph/query-parameters) для настройки ответа.
 
-Ответ по умолчанию разворачивается `parentSection` и выбирает `id` Свойства раздела, `name` а также `self` Свойства. Допустимые `expand` значения для страниц: `parentNotebook` и `parentSection` .
+Ответ по умолчанию расширяется и выбирает свойства `parentSection` `id` и свойства `name` `self` раздела. `expand`Допустимые значения для страниц и `parentNotebook` `parentSection` .
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
@@ -72,7 +72,7 @@ GET /sites/{id}/onenote/pages/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [оненотепаже](../resources/onenotepage.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и объект `200 OK` [onenotePage](../resources/onenotepage.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -81,12 +81,11 @@ GET /sites/{id}/onenote/pages/{id}
 GET https://graph.microsoft.com/beta/me/onenote/pages/{id}
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Note: объект Response, показанный здесь, усекается для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Показанный здесь объект ответа усечен для краткости. При фактическом вызове будут возвращены все свойства.
  <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 312
 
 {
   "title": "title-value",

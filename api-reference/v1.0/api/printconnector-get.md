@@ -2,20 +2,18 @@
 title: Get printConnector
 description: Извлечение свойств и связей объекта соединители.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: b0c25b435ab90d1cf767c2e8928e9e3d46c087e4
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: d73aa10e655d2e7b4a6f284f9dbf92953b1bc097
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772144"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60928049"
 ---
 # <a name="get-printconnector"></a>Get printConnector
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Извлечение свойств и связей объекта **printConnector.**
 
@@ -46,7 +44,7 @@ GET /print/connectors/{printConnectorId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

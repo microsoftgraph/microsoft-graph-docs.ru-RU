@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 0b5a7d032dbaa1da0a86f567c392529dd6944a48
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 25833a5aa348b518f66637fc17acfe72bafb0ada
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59058365"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945476"
 ---
 # <a name="update-itemaddress"></a>Обновление itemAddress
 Пространство имен: microsoft.graph
@@ -41,7 +41,7 @@ PATCH /users/{id | userPrincipalName}/profile/addresses/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -73,7 +73,6 @@ PATCH /users/{id | userPrincipalName}/profile/addresses/{id}
 ``` http
 PATCH https://graph.microsoft.com/beta/users/{userId}/profile/addresses/{id}
 Content-Type: application/json
-Content-length: 497
 
 {
   "allowedAudiences": "me",

@@ -2,15 +2,15 @@
 title: Список участников
 description: Используйте этот API для получения списка участников (пользователя и группы) в административном подразделении.
 author: DougKirschner
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b78c06f7b43e4a6f8774093a0d4e4d0a697406775bdb09fbfdaa9fa1d24208fb
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 518acaa07960f5569b2996c797b7cfcb4671a9d1
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54248336"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947037"
 ---
 # <a name="list-members"></a>Список участников
 
@@ -25,7 +25,7 @@ ms.locfileid: "54248336"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
+|Для приложений | AdministrativeUnit.Read.All, Directory.Read.All, AdministrativeUnit.ReadWrite.All, Directory.ReadWrite.All |
 
 > Примечание. Чтобы перечислить членов скрытого членства в административном подразделении, требуется разрешение Member.Read.Hidden.
 
@@ -40,7 +40,7 @@ GET /directory/administrativeUnits/{id}/members/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -62,7 +62,6 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 100
 
 {
   "value":[
@@ -94,7 +93,6 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 100
 
 {
   "value":[
