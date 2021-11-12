@@ -2,15 +2,15 @@
 title: Список timesOff
 description: Получите список timesOff в этом расписании.
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: aec47b6dcd27c9e9b05a4794e1fdef3465e06eec
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d06d770448896bfdb227031adcf56f940c156203
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52036676"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946624"
 ---
 # <a name="list-timesoff"></a>Список timesOff
 
@@ -46,7 +46,7 @@ GET /teams/{teamId}/schedule/timesOff
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -104,7 +104,6 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff?$filter=sh
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
 
 {
   "value": [

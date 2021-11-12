@@ -2,15 +2,15 @@
 title: Получение параметров
 description: Чтение объекта settings пользователя и организации.
 author: jpettere
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: c9d28c56aeeec78c6e5e00cfc45d9223e8196b49
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 309e27bd0cc197347ebd87aec6d1a968586ab167
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052574"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935160"
 ---
 # <a name="get-settings"></a>Получение параметров
 
@@ -18,8 +18,7 @@ ms.locfileid: "52052574"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Чтение объекта [userSettings](../resources/usersettings.md) пользователя и организации.
-Сведения об обновлении свойств объекта [userSettings](../resources/usersettings.md) см. в статье [Обновление параметров пользователя](usersettings-update.md).
+Чтение объекта [userSettings](../resources/usersettings.md)пользователя и организации. Сведения об обновлении свойств объекта [userSettings](../resources/usersettings.md) см. в статье [Обновление параметров пользователя](usersettings-update.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -61,12 +60,11 @@ GET https://graph.microsoft.com/beta/me/settings
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 72
 
 {
   "contributionToContentDiscoveryAsOrganizationDisabled": false,

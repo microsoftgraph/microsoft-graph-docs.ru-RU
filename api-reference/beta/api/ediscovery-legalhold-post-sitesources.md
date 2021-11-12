@@ -2,15 +2,15 @@
 title: Создание legalHold siteSource
 description: Создание нового объекта legalHold siteSource.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: bca1f4c54593cc92f9b085bc86669981974e4432
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 69c36bcaafbc1e97b81584f0bb6ad6bb8c5c54a6
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952463"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945652"
 ---
 # <a name="create-legalhold-sitesource"></a>Создание legalHold siteSource
 
@@ -45,7 +45,7 @@ POST /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}/siteSources
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -56,7 +56,7 @@ POST /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}/siteSources
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|site@odata.bind|Строка|ID сайта, который можно получить с ресурса [сайта](../resources/site.md) с помощью метода Get a site resource [by path.](../api/site-getbypath.md) Использование {hostname}:/{relative-path}. Для URL-адреса сайта `https://contoso.sharepoint.com/sites/HumanResources` запрос Microsoft Graph будет `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources` . ID — это первый GUID, указанный в поле ID.  Для URL-адреса сайта OneDrive запрос `https://contoso-my.sharepoint.com/personal/adelev_contoso_com` Microsoft Graph будет `https://graph.microsoft.com/v1.0/sites/contoso-my.sharepoint.com:/personal/adelev_contoso_com` |
+|site|String|URL-адрес сайта; например, `https://contoso.sharepoint.com/sites/HumanResources` .|
 
 ## <a name="response"></a>Отклик
 
@@ -77,10 +77,11 @@ POST /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}/siteSources
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/c816dd6f-5af8-40c5-a760-331361e05c60/legalHolds/387566cc-38ae-4e85-ab4b-cd2dd34faa07/siteSources
 Content-Type: application/json
-Content-length: 154
 
 {
-    "site@odata.bind": "https://graph.microsoft.com/v1.0/sites/50073f3e-cb22-48e5-95a9-51a3da455181"
+    "site": {
+        "webUrl": "https://contoso.sharepoint.com/sites/SecretSite"
+    }
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -102,6 +103,8 @@ Content-length: 154
 ---
 
 
+---
+
 ### <a name="response"></a>Отклик
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
@@ -117,14 +120,14 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('c816dd6f-5af8-40c5-a760-331361e05c60')/legalHolds('387566cc-38ae-4e85-ab4b-cd2dd34faa07')/siteSources/$entity",
-    "displayName": "Adele Vance",
-    "createdDateTime": "2020-12-28T20:08:57.857Z",
-    "id": "50073f3e-cb22-48e5-95a9-51a3da455181",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('15d80234-8320-4f10-96d0-d98d53ffdfc9')/legalHolds('644db9d3-5a67-4ca0-aa1c-0cca02168875')/siteSources/$entity",
+    "displayName": "Secret Site",
+    "createdDateTime": "2021-08-11T23:17:31.687Z",
+    "id": "32443932-4343-3545-3339-373031353742",
     "createdBy": {
         "user": {
             "id": null,
-            "displayName": "EDiscovery admin"
+            "displayName": "Edisco Admin"
         }
     }
 }

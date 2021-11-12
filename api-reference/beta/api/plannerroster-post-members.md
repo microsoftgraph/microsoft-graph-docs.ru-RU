@@ -1,23 +1,23 @@
 ---
 title: Создание plannerRosterMember
-description: Создание объекта plannerRosterMember.
+description: Создание нового объекта plannerRosterMember.
 author: tarkansevilmis
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: e7dac57941d50ee8b543c53982c216c4c19d5d07
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 9ee7054f243dc220c7747feb9bb308c9d86e6c8c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50272443"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925141"
 ---
 # <a name="create-plannerrostermember"></a>Создание plannerRosterMember
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавьте член в объект [plannerRoster.](../resources/plannerrostermember.md)
+Добавление участника в [объект plannerRoster.](../resources/plannerrostermember.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,25 +41,25 @@ POST /planner/rosters/{plannerRosterId}/members
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажу представление объекта [plannerRosterMember](../resources/plannerrostermember.md) в JSON.
+В теле запроса поставляем представление JSON объекта [plannerRosterMember.](../resources/plannerrostermember.md)
 
-В следующей таблице показаны свойства, необходимые при создании [объекта plannerRosterMember.](../resources/plannerrostermember.md)
+В следующей таблице показаны свойства, необходимые при создании [планировщикаRosterMember.](../resources/plannerrostermember.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |userId|String|Идентификатор .|
-|tenantId|String|Идентификатор клиента, к котором принадлежит пользователь. Необязательный параметр. В настоящее время участники группы не могут быть из разных клиентов.|
-|roles|Набор строк|Дополнительные роли, назначенные пользователю. Необязательный параметр. В настоящее время для пользователей не доступны дополнительные роли.|
+|tenantId|String|Идентификатор клиента, к котором принадлежит пользователь. Необязательный параметр. В настоящее время члены реестра не могут быть из разных клиентов.|
+|roles|Набор строк|Дополнительные роли, назначенные пользователю. Необязательный параметр. В настоящее время для пользователей нет дополнительных ролей.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `201 Created` [plannerRosterMember](../resources/plannerrostermember.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `201 Created` [plannerRosterMember](../resources/plannerrostermember.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -74,7 +74,6 @@ POST /planner/rosters/{plannerRosterId}/members
 ``` http
 POST https://graph.microsoft.com/beta/planner/rosters/6519868f-868f-6519-8f86-19658f861965/members
 Content-Type: application/json
-Content-length: 78
 
 {
   "@odata.type": "#microsoft.graph.plannerRosterMember",

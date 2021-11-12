@@ -1,23 +1,23 @@
 ---
 title: Создание группы
-description: Создание объекта группы.
+description: Создание нового группового объекта.
 author: mohitpcad
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: bc7959ec7606a450e9ef920cd96b2550923b03f2
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 2d7a697bbbf616053c0adf709256b443c0851d33
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873908"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940916"
 ---
 # <a name="create-group"></a>Создание группы
 Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание объекта [группы.](../resources/termstore-group.md)
+Создание нового [группового](../resources/termstore-group.md) объекта.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -42,13 +42,13 @@ POST /termStore/groups
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
-В теле запроса укажу представление объекта группы в [JSON.](../resources/termstore-group.md)
+## <a name="request-body"></a>Текст запроса
+В тексте запроса предоставьте описание объекта [group](../resources/termstore-group.md) в формате JSON.
 
-В следующей таблице показаны свойства, необходимые при создании [группы.](../resources/termstore-group.md)
+В приведенной ниже таблице указаны свойства, необходимые при создании объекта [group](../resources/termstore-group.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
@@ -71,7 +71,6 @@ POST /termStore/groups
 ``` http
 POST https://graph.microsoft.com/beta/termStore/groups
 Content-Type: application/json
-Content-length: 135
 
 {
   "displayName" : "myGroup"

@@ -2,15 +2,15 @@
 title: Обновление объекта TableColumn
 description: Обновление свойств объекта tablecolumn.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: bcbadc0b6ef767780c5eb9f255ac939dce47dd35
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 61ef9092108d542b78b11ae57e282686e806e0c0
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051839"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938387"
 ---
 # <a name="update-tablecolumn"></a>Обновление объекта TableColumn
 
@@ -39,7 +39,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -64,7 +64,6 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}
 Content-type: application/json
-Content-length: 81
 
 {
   "name": "name-value",
@@ -94,7 +93,7 @@ Content-length: 81
 > Если необходимо обновить несколько полей столбца, сделайте **значения** строки массива в запросе. Пример: `"values": [["a"], [1], [2], [3]]`.
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,7 +102,6 @@ Content-length: 81
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 81
 
 {
   "id": "99",

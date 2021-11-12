@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 871afe0e45b9f1f0ffc7a23320a3b5fa32194511
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d47ab5388103860232130e71ec81b727ebb0d794
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59110321"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946519"
 ---
 # <a name="message-copy"></a>message: copy
 
@@ -74,7 +74,6 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/copy
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/copy
 Content-type: application/json
-Content-length: 44
 
 {
   "destinationId": "destinationId-value"
@@ -113,7 +112,6 @@ Content-length: 44
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 248
 
 {
   "receivedDateTime": "datetime-value",

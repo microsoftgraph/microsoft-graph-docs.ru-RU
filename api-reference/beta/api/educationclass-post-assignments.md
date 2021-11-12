@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 993ba60aef94083375dc345fbc40847794e29232
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: dc205857071a5733dc9880f15cd21865bda0b768
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220404"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925498"
 ---
 # <a name="create-educationassignment"></a>Создание educationAssignment
 
@@ -39,7 +39,7 @@ POST /education/classes/{class-id}/assignments
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -61,7 +61,6 @@ POST /education/classes/{class-id}/assignments
 ```http
 POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments
 Content-type: application/json
-Content-length: 279
 
 {
     "dueDateTime": "2021-09-07T00:00:00Z",
@@ -102,7 +101,7 @@ Content-length: 279
 В теле запроса поставляют представление JSON объекта [educationAssignment.](../resources/educationassignment.md)
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -114,7 +113,6 @@ Content-length: 279
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 279
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments/$entity",

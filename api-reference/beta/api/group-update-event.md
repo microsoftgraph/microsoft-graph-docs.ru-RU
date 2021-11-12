@@ -2,15 +2,15 @@
 title: Обновление события
 description: Обновление объекта event.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: becd6b1156b437176515aaba24b0c704fba41dd5
-ms.sourcegitcommit: 6f04ad0e0cde696661511dcdf343942b43f73fc6
+ms.openlocfilehash: ef96f304e92d76017984e2ff55bf4cc3b538642c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58397007"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938820"
 ---
 # <a name="update-event"></a>Обновление события
 
@@ -39,7 +39,7 @@ PATCH /groups/{id}/calendar/events/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
@@ -60,7 +60,6 @@ PATCH /groups/{id}/calendar/events/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/groups/{id}/events/{id}
 Content-type: application/json
-Content-length: 211
 
 {
   "originalStartTimeZone": "originalStartTimeZone-value",

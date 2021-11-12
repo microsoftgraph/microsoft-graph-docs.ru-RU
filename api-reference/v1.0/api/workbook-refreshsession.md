@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 4f33fb37bf99cc1711d64f4546ea83384e6a0a8d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cc36508702b70f33f3e37a82067141be0adcdd55
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59113870"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947380"
 ---
 # <a name="refresh-session"></a>Refresh Session
 
@@ -37,7 +37,7 @@ workbook-session-id: {session-id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | workbook-session-id | Идентификатор сеанса для книги, который необходимо обновить. |
 
 ## <a name="request-body"></a>Тело запроса
@@ -60,7 +60,6 @@ workbook-session-id: {session-id}
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/refreshSession
 Content-type: application/json
 workbook-session-id: {session-id}
-Content-length: 0
 
 {
 

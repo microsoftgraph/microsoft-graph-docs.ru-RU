@@ -2,15 +2,15 @@
 title: Get printService
 description: Извлечение свойств и связей службы печати.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 1eb5f1475889e7f1d8b399baa40c739cad018f66
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d7c7c272701e2c80ed7d4484de6ae8d9ca0b4ac7
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049886"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938525"
 ---
 # <a name="get-printservice"></a>Get printService
 
@@ -25,9 +25,9 @@ ms.locfileid: "52049886"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|Отсутствуют.|
+|Делегированные (рабочая или учебная учетная запись)|Нет.|
 |Делегированные (личная учетная запись Майкрософт)|Нет.|
-|Приложение|Отсутствуют.|
+|Приложение|Нет.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ GET /print/services/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/beta/print/services/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 332
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/services/$entity",

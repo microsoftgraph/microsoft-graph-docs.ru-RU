@@ -1,16 +1,16 @@
 ---
 title: Создание раздела
-description: Создание нового раздела в указанной группе разделов.
-localization_priority: Normal
+description: Создайте новый раздел в указанной группе раздела.
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 7428532db09a30c6808154d1b7fe1754941e0c71
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: b06d399c5ddcb4d8831f4c4188d6776528377dc4
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982085"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946603"
 ---
 # <a name="create-section"></a>Создание раздела
 
@@ -18,7 +18,7 @@ ms.locfileid: "48982085"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [раздела](../resources/onenotesection.md) в указанной группе разделов.
+Создайте новый [раздел](../resources/onenotesection.md) в указанной группе раздела.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -39,7 +39,7 @@ POST /sites/{id}/onenote/sectionGroups/{id}/sections
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
@@ -49,7 +49,7 @@ POST /sites/{id}/onenote/sectionGroups/{id}/sections
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [оненотесектион](../resources/onenotesection.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `201 Created` [onenoteSection](../resources/onenotesection.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -63,7 +63,6 @@ POST /sites/{id}/onenote/sectionGroups/{id}/sections
 ```http
 POST https://graph.microsoft.com/beta/me/onenote/sectionGroups/{id}/sections
 Content-type: application/json
-Content-length: 27
 
 {
   "displayName": "Section name"
@@ -98,7 +97,6 @@ Content-length: 27
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 272
 
 {
   "isDefault": true,

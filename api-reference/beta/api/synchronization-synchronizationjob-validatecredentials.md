@@ -1,16 +1,16 @@
 ---
 title: 'synchronizationJob: validateCredentials'
 description: Проверьте, допустимы ли учетные данные в клиенте.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 650cbc18aeb0dc28ef732c4065aa67d19f1a710f
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 96b9f7c396031e1e9621003f7c6e60e5419cb35d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787171"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938422"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>synchronizationJob: validateCredentials
 
@@ -27,7 +27,7 @@ ms.locfileid: "52787171"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается. |
-|Приложение                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
+|Для приложений                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -64,7 +64,6 @@ POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 ```http
 POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 Content-type: application/json
-Content-length: 218
 
 { 
     credentials: [ 

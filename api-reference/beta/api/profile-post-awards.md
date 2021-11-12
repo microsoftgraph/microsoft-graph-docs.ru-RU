@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 829d3a5fb1ddb4ef14d7e6896881131782ffc36d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e91d6a983196b94a4b33d11881f138ff586e7fb8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59027458"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947205"
 ---
 # <a name="create-personaward"></a>Создание personAward
 
@@ -41,7 +41,7 @@ POST /users/{id | userPrincipalName}/profile/awards
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -76,7 +76,6 @@ POST /users/{id | userPrincipalName}/profile/awards
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/awards
 Content-Type: application/json
-Content-length: 497
 
 {
   "description": "Lifetime Achievement award from the International Association of Branding Managers",

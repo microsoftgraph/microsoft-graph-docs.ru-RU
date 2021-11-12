@@ -2,20 +2,18 @@
 title: Получение printJob
 description: Извлечение свойств и связей задания печати.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 976624807ab6cbf8a104790665c481e3f54f9750
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: eea88e679900db3bbd68a22b8fb9191db125b48a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776006"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924399"
 ---
 # <a name="get-printjob"></a>Получение printJob
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Извлечение свойств и связей задания печати.
 
@@ -50,7 +48,7 @@ GET /print/shares/{id}/jobs/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

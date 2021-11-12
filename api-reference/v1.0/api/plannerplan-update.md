@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 096745e0037b93f93ed0223527d1f3137a4fbf75
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5fbb205650f50194b865d0ee9b9ff47c4d5623ed
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050210"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946470"
 ---
 # <a name="update-plannerplan"></a>Планировщик обновленияPlan
 
@@ -66,7 +66,6 @@ PATCH /planner/plans/{plan-id}
 ```http
 PATCH https://graph.microsoft.com/v1.0/planner/plans/{plan-id}
 Content-type: application/json
-Content-length: 29
 Prefer: return=representation
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
@@ -104,7 +103,6 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 357
 
 {
   "createdBy": {

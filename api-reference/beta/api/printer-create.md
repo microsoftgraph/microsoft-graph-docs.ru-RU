@@ -1,33 +1,33 @@
 ---
-title: 'принтер: Create'
-description: Создает (регистрирует) принтер с помощью универсальной службы печати.
+title: 'принтер: создание'
+description: Создает (регистрирует) принтер со службой универсальной печати.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 2173c4e8dfb4b4769d6c9fa5fe3b8f5df790670f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 01aea7fbcd4c4723f7d2253fc9591bd0c75d85e8
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972473"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939345"
 ---
-# <a name="printer-create"></a>принтер: Create
+# <a name="printer-create"></a>принтер: создание
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте (Зарегистрируйте) принтер с помощью универсальной службы печати. Это длительно выполняемая операция, которая возвращает объект [принтеркреатеоператион](../resources/printercreateoperation.md) , который можно использовать для отслеживания и проверки регистрации принтера.
+Создайте (зарегистрируйте) принтер с помощью службы универсальной печати. Это долгосрочная операция, и в качестве таковой возвращается [принтерCreateOperation,](../resources/printercreateoperation.md) который можно использовать для отслеживания и проверки регистрации принтера.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать. Пользователь, вошедшего в систему, должен быть [администратором принтера](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+Помимо следующих разрешений, клиент пользователя должен иметь активную подписку на универсальную печать. Подписанный пользователем должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| Printer. Create, Printer. ReadWrite. ALL, Printer. FullControl. ALL |
+|Делегированные (рабочая или учебная учетная запись)| Printer.Create, Printer.ReadWrite.All, Printer.FullControl.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений| Не поддерживается. |
 
@@ -39,26 +39,26 @@ POST /print/printers/create
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите объект JSON со следующими свойствами.
+В теле запроса укажи объект JSON следующими свойствами.
 
 | Параметр      | Тип    |Описание| Обязательный? |
 |:---------------|:--------|:----------|:----------|
-|displayName|String|Отображаемое имя, присваиваемое принтеру.|Да|
+|displayName|String|Имя отображения, которое необходимо назначить принтеру.|Да|
 |manufacturer|String|Производитель принтера.|Да|
 |model|String|Модель принтера.|Да|
-|фисикалдевицеид|String|UUID физического устройства принтера. Является обязательным, если `hasPhysicalDevice` свойство имеет значение true.|Нет|
-|хасфисикалдевице|Логический|True, если принтер имеет физическое устройство вывода, в противном случае — значение false. Если этот параметр опущен, значение по умолчанию — true.|Нет|
-|цертификатесигнингрекуест|[printCertificateSigningRequest](../resources/printcertificatesigningrequest.md)|Запрос подписи сертификата X. 509 (CSR) для сертификата, созданного и используемого принтером для идентификации.|Да|
-|коннекторид|String|Идентификатор соединителя, который выступает в качестве прокси-сервера для принтера.|Нет|
+|physicalDeviceId|String|UUID физического устройства принтера. Обязательно, если `hasPhysicalDevice` свойство является верным.|Нет|
+|hasPhysicalDevice|Логическое|True, если на принтере есть физическое выходное устройство, ложное в противном случае. Если значение опущено, значение по умолчанию является верным.|Нет|
+|certificateSigningRequest|[printCertificateSigningRequest](../resources/printcertificatesigningrequest.md)|Запрос на подписание сертификата X.509 (CSR) для сертификата, созданного и используемой принтером для идентификации.|Да|
+|connectorId|String|Id соединителя, выступая в качестве прокси-сервера для принтера.|Нет|
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика и ссылку на связанный [принтеркреатеоператион](../resources/printercreateoperation.md) в `Operation-Location` заголовке.
+В случае успешного использования этот метод возвращает код отклика и ссылку на связанный `202 Accepted` [принтерCreateOperation](../resources/printercreateoperation.md) в `Operation-Location` загонке.
 
-Чтобы получить состояние текущей регистрации принтера, можно использовать запрос GET к связанному URL-адресу. После успешного завершения регистрации принтера запрос GET к связанному URL-адресу будет содержать созданный объект Printer и зарегистрированный сертификат.
+Чтобы получить состояние текущей регистрации принтера, можно использовать запрос GET на связанный URL-адрес. После успешного завершения регистрации принтера запрос GET на связанный URL-адрес будет содержать созданный объект принтера и зарегистрированный сертификат.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -73,7 +73,6 @@ POST /print/printers/create
 ```http
 POST https://graph.microsoft.com/beta/print/printers/create
 Content-type: application/json
-Content-length: 319
 
 {
   "displayName": "Test Printer",

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: a69f359e50fb03c25ed7aa5185c13086ff53e85c
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 0c9d7eced280e7f7b85a0b455874530fd68c2f8a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688193"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939324"
 ---
 # <a name="update-privilegedapproval"></a>Обновление privilegedapproval
 
@@ -74,7 +74,6 @@ PATCH /privilegedApproval/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/privilegedApproval/{requestId}
 Content-type: application/json
-Content-length: 180
 
 {
   "approvalState": "approvalState-value",

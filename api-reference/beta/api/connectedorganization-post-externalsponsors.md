@@ -1,16 +1,16 @@
 ---
 title: Добавление внешнего спонсора подключенной организации
 description: Добавьте пользователя или группу к внешним спонсорам подключенной организации.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 38332f46b5215989f0739450d0efef155058b443
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 5a72aa03846ebc7c084280a33b07ac014c7a6676
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786161"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925610"
 ---
 # <a name="add-connected-organization-external-sponsor"></a>Добавление внешнего спонсора подключенной организации
 
@@ -27,7 +27,7 @@ ms.locfileid: "52786161"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | EntitlementManagement.ReadWrite.All |
+|Для приложений | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,7 @@ POST /identityGovernance/entitlementManagement/connectedOrganizations/{id}/exter
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -62,7 +62,6 @@ POST /identityGovernance/entitlementManagement/connectedOrganizations/{id}/exter
 ``` http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/{id}/externalSponsors/$ref
 Content-type: application/json
-Content-length: 30
 
 {
   "@odata.id": "https://graph.microsoft.com/beta/users/{id}"

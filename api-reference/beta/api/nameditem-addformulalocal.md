@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ''
 author: ruoyingl
-ms.openlocfilehash: 405bf6bbf638f27f825086ecb2fa8329b7903094
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f680bc3757a24a8acea979f191cc5b7366422f6d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59058288"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939541"
 ---
 # <a name="add-named-item-formulalocal"></a>Add Named Item FormulaLocal
 
@@ -37,7 +37,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/names/add
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -68,7 +68,6 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/names/add
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/addFormulaLocal
 Content-type: application/json
-Content-length: 54
 
 {
   "name": "test7",
@@ -105,7 +104,6 @@ Content-length: 54
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 109
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#workbookNamedItem",

@@ -1,16 +1,16 @@
 ---
 title: Получить onenoteOperation
 description: 'Получите состояние длительной OneNote операции. Это относится к операциям, которые возвращают заглавную головку **Operation-Location** в ответе, например `CopyNotebook` , , `CopyToNotebook` `CopyToSectionGroup` `and CopyToSection` .   '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 5dd65d44ea9d4df3bdd494586a17b67cc1e5b82b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a8ed7c83b50da0335895f270359eaea1ee24d19a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050103"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946792"
 ---
 # <a name="get-onenoteoperation"></a>Получить onenoteOperation
 
@@ -44,7 +44,7 @@ GET /groups/{id}/onenote/operations/{id}
 GET /sites/{id}/onenote/operations/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Отсутствуют.
+Нет.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/beta/me/onenote/operations/{id}
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -98,7 +98,6 @@ GET https://graph.microsoft.com/beta/me/onenote/operations/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 215
 
 {
   "id": "id-value",

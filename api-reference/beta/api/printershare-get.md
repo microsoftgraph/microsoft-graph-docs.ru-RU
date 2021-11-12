@@ -2,15 +2,15 @@
 title: Получение printerShare
 description: Извлечение свойств и связей совместной работы принтера.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 046d5a107ea2b92adf17bb24f585138764757b50
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 948975def7e66230fd10aabd052311c4a90b547a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037489"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939343"
 ---
 # <a name="get-printershare"></a>Получение printerShare
 
@@ -46,13 +46,13 @@ GET /print/printers/{printerId}/shares/{printerShareId}
 GET /print/printers/{id}?$select=id,displayName,capabilities
 ```
 
-### <a name="exceptions"></a>Exceptions
+### <a name="exceptions"></a>Исключения
 * Оператор `$count` не поддерживается.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -101,7 +101,6 @@ GET https://graph.microsoft.com/beta/print/shares/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 225
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",
@@ -121,7 +120,6 @@ Content-length: 225
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1313
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",

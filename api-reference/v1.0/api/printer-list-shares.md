@@ -2,20 +2,18 @@
 title: Список принтераShares для принтера
 description: Извлечение списка принтеров, связанных с принтером.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: d719cc04c4b4bc0694f42e80ce7ae317bc8ef104
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: e84bc0bc640cc7a60eab9559e0ff9821b11571cb
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956263"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924369"
 ---
 # <a name="list-printershares-for-a-printer"></a>Список принтераShares для принтера
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Извлечение списка акций принтера, связанных с [принтером.](../resources/printer.md)
 >**Примечание:** В настоящее **время поддерживается** только одна доля принтера на принтере.
@@ -47,7 +45,7 @@ GET /print/printers/{printerId}/shares
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

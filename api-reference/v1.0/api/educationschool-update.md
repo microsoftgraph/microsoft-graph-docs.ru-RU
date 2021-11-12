@@ -5,12 +5,12 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: cae56a4aef0111dd12f2968a7c1b8f0f7ed52f7d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7654cc5d25568f81815209a81da1e408456f1d2c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046186"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947631"
 ---
 # <a name="update-educationschool"></a>Обновление educationSchool
 
@@ -39,7 +39,7 @@ PATCH /education/schools/{id}
 
 | Заголовок        | Значение                     |
 | :------------ | :------------------------ |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json          |
 
 ## <a name="request-body"></a>Текст запроса
@@ -50,7 +50,7 @@ PATCH /education/schools/{id}
 
 | Свойство             | Тип                                               | Описание                                                                                                                                                           |
 | :------------------- | :------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| displayName          | Строка                                             | Отображаемое имя учебного заведения. Унаследованный от [educationOrganization](../resources/educationorganization.md).                                                            |
+| displayName          | String                                             | Отображаемое имя учебного заведения. Унаследованный от [educationOrganization](../resources/educationorganization.md).                                                            |
 | description          | String                                             | Описание учебного заведения. Унаследованный от [educationOrganization](../resources/educationorganization.md).                                                             |
 | externalSource       | educationExternalSource                            | Источник, из которых была создана эта организация. Унаследованный от [educationOrganization](../resources/educationorganization.md). Возможные значения: `sis`, `manual`. |
 | externalSourceDetail | String                                             | Имя внешнего источника, из которого были созданы эти ресурсы.                                                                                                    |
@@ -85,7 +85,6 @@ PATCH /education/schools/{id}
 ```http
 PATCH https://graph.microsoft.com/v1.0/education/schools/{school-id}
 Content-type: application/json
-Content-length: 292
 
 {
   "displayName": "Fabrikam Arts High School",
@@ -113,7 +112,7 @@ Content-length: 292
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -125,7 +124,6 @@ Content-length: 292
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 292
 
 {
   "id": "10002",

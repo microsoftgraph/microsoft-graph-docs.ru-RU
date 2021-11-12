@@ -5,12 +5,12 @@ author: vishriv
 ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 980a6b37cf6e315a8fcb482c6c06080c8eaf595c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 781cca8fce8b83b00be65cc1063cd290318bbd55
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109733"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940260"
 ---
 # <a name="create-set"></a>Создание набора
 Пространство имен: microsoft.graph.termStore
@@ -40,7 +40,7 @@ POST sites/{site-id}/termStore/sets
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,6 @@ POST sites/{site-id}/termStore/sets
 ``` http
 POST https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/sets
 Content-Type: application/json
-Content-length: 288
 
 {
   "@odata.type": "#microsoft.graph.termStore.set",

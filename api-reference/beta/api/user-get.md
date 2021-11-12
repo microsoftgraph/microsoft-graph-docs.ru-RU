@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8e853d2c4b43eaf91e38f3add191f9f2663dd50d
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 174b3b989e6c237a4abe78b70b790001d889e53e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695492"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931997"
 ---
 # <a name="get-a-user"></a>Получение пользователя
 
@@ -59,7 +59,7 @@ GET /me
 
 | Заголовок       | Значение|
 |:-----------|:------|
-| Авторизация  | Bearer {токен}. Обязательный.|
+| Авторизация  | Bearer {token}. Обязательный.|
 | Content-Type   | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -116,7 +116,6 @@ GET https://graph.microsoft.com/beta/me
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
    "displayName": "Adele Vance",
@@ -177,7 +176,6 @@ GET https://graph.microsoft.com/beta/users/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
       "displayName": "Adele Vance",

@@ -1,16 +1,16 @@
 ---
 title: Получение соединителя
 description: Извлечение свойств соединитеного объекта.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 32bca99004ff59b57729505674d7509ebe23cd73
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: cc7dda3285b5d72a51d2d9ca37342de40b724a07
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047212"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60934711"
 ---
 # <a name="get-connector"></a>Получение соединителя
 
@@ -41,7 +41,7 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectors/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Носителер. Обязательна|
+| Авторизация  | Носителер. Обязательно|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPro
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример ответа. Примечание: показанный здесь объект ответа может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPro
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 124
 
 {
   "id": "id-value",

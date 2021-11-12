@@ -2,15 +2,15 @@
 title: Создание sourceCollection
 description: Создайте новый объект sourceCollection.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 799601b3ca59c3522e4d023f7647bca523369659
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: ba810925c220451a7ff416d5bf065a565e2f1f13
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080318"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925589"
 ---
 # <a name="create-sourcecollection"></a>Создание sourceCollection
 
@@ -45,7 +45,7 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -79,7 +79,6 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/sourceCollections
 Content-Type: application/json
-Content-length: 272
 
 {
     "displayName": "Quarterly Financials search",

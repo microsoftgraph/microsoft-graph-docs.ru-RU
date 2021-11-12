@@ -1,16 +1,16 @@
 ---
 title: Обновление orgcontact
 description: Обновление свойств объекта orgcontact.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 26396518b40023e7a4b5666fb1d00b4effd83546
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: d652b33ab34ebc98f423a1bc4c35fb5c2ee63407
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52785244"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939464"
 ---
 # <a name="update-orgcontact"></a>Обновление orgcontact
 
@@ -36,7 +36,7 @@ PATCH /contacts/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
@@ -48,10 +48,10 @@ PATCH /contacts/{id}
 |department|String||
 |onPremisesSyncEnabled|Логический||
 |displayName|String||
-|givenName;|String||
+|givenName|String||
 |jobTitle;|String||
 |onPremisesLastSyncDateTime|DateTimeOffset||
-|mail|String||
+|почта;|String||
 |mailNickname|String||
 |mobilePhone|String||
 |officeLocation|String||
@@ -78,7 +78,6 @@ PATCH /contacts/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/contacts/{id}
 Content-type: application/json
-Content-length: 222
 
 {
   "businessPhones": [

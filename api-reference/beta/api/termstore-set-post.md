@@ -1,23 +1,23 @@
 ---
 title: Создание набора
-description: Создание объекта set.
+description: Создайте новый объект набора.
 author: mohitpcad
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c81ab668593b3650dd55de6bd933eef719d8ae7d
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 03cee9f09aca4fd30e79659fccfe1749c936d8ef
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873719"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926065"
 ---
 # <a name="create-set"></a>Создание набора
 Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание объекта [set.](../resources/termstore-set.md)
+Создайте новый [объект набора.](../resources/termstore-set.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -42,24 +42,24 @@ POST /termStore/sets
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
-В теле запроса укажу представление объекта [set](../resources/termstore-set.md) в JSON.
+## <a name="request-body"></a>Текст запроса
+В теле запроса устроим представление JSON [установленного](../resources/termstore-set.md) объекта.
 
 В следующей таблице показаны свойства, необходимые при создании [набора.](../resources/termstore-set.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|localizedNames|[Коллекция microsoft.graph.termstore.localizedName](../resources/termstore-localizedname.md)|Имя создаемого набора|
+|локализованные имена|[коллекция microsoft.graph.termstore.localizedName](../resources/termstore-localizedname.md)|Имя создаемого набора|
 |parentGroup|[microsoft.graph.termstore.group](../resources/termstore-group.md)|termstore-group, в которой необходимо создать набор|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и `201 Created` [объект set](../resources/termstore-set.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `201 Created` заданной объект в тексте ответа. [](../resources/termstore-set.md)
 
 ## <a name="examples"></a>Примеры
 
@@ -67,7 +67,6 @@ POST /termStore/sets
 ``` http
 POST https://graph.microsoft.com/beta/termStore/sets
 Content-Type: application/json
-Content-length: 288
 
 {
   "@odata.type": "#microsoft.graph.termStore.set",

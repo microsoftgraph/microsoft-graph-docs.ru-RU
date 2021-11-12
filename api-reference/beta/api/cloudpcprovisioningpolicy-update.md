@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 673f2fb027ed2d428ea3f7894334ca769e77332e
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: e1d056183f3cd2856e9381d9999dba45df6ecc5a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765867"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946836"
 ---
 # <a name="update-cloudpcprovisioningpolicy"></a>Обновление cloudPcProvisioningPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "59765867"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|CloudPC.ReadWrite.All|
+|Для приложений|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 | Имя          | Описание                |
 | :------------ | :------------------------  |
-| Авторизация | Bearer {токен}. Обязательный.  |
+| Авторизация | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -56,7 +56,7 @@ PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя отображения политики обеспечения. |
+|displayName|String|Имя отображения политики обеспечения. |
 |description|String|Описание политики обеспечения.|
 |onPremisesConnectionId|String|ID cloudPcOnPremisesConnection. Чтобы обеспечить подключение к облачным компьютерам и подключение к домену, выберите подключение к виртуальной сети, проверенной службой облачных ПК.|
 |imageId|String|ID изображения ОС, которое необходимо уладить на облачных ПК. Формат изображения типа галереи: {publisher_offer_sku}. Поддерживаемые значения для каждого из параметров: <ul><li>издатель: Microsoftwindowsdesktop.</li> <li>предложение: windows-ent-cpc.</li> <li>sku: 21h1-ent-cpc-m365, 21h1-ent-cpc-os, 20h2-ent-cpc-m365, 20h2-ent-cpc-os, 20h1-ent-cpc-m365, 20h1-ent-cpc-os, 19h2-ent-cpc-os.</li></ul>|
@@ -82,7 +82,6 @@ PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 Content-Type: application/json
-Content-length: 308
 
 {
   "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
@@ -126,7 +125,6 @@ Content-length: 308
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-length: 355
 
 {
   "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",

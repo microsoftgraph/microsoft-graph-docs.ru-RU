@@ -1,16 +1,16 @@
 ---
 title: Перечисление пользовательских устройств
 description: Получите список пользовательских устройств, поддерживаю Project возможностей Рима. Это включает возможность запуска приложения, сообщения или отправки данных в приложение. После вызова GET для меня или устройств передайте в ID устройства команду на устройство.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b116213a285cc334d02a70ed94461b5cf6436eea
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: dd47f2f9cd3edfb1b45db833857e0a3f2cc0820b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52036298"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940905"
 ---
 # <a name="list-user-devices"></a>Перечисление пользовательских устройств
 
@@ -98,7 +98,7 @@ Content-Type: application/json; charset=utf-8
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример ответа. Примечание: показанный здесь объект ответа может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "ignored",
@@ -110,7 +110,6 @@ Content-Type: application/json; charset=utf-8
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 140
 
 {
   "value": [

@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f4cf8026b598306671f010ecc001c0fd5587db3a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 56edacf041fcaa3800488def780edadcca770c37
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007602"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945812"
 ---
 # <a name="list-rangebordercollection"></a>Список RangeBorderCollection
 
@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/r
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 185
 
 {
   "value": [

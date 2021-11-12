@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: f1ee679da44d0bd5ca74e4ffbed497a25bbc8c6e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 775b382c24500d1789249926653461d533cfd267
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59027451"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947198"
 ---
 # <a name="create-personcertification"></a>Создание personCertification
 Пространство имен: microsoft.graph
@@ -40,7 +40,7 @@ POST /users/{id | userPrincipalName}/profile/certifications
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -79,7 +79,6 @@ POST /users/{id | userPrincipalName}/profile/certifications
 ``` http
 POST https://graph.microsoft.com/beta/me/profile/certifications
 Content-Type: application/json
-Content-length: 497
 
 {
   "certificationId": "KB-1235466333663322",

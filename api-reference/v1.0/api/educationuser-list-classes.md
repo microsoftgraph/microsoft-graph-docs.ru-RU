@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 1c5d94f418bfdf5c88fc6a5cb3bd6001eeb17cbf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8f59f41fa996abd7207b9cb7295efa24b695477a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59114626"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924646"
 ---
 # <a name="list-classes-of-an-educationuser"></a>Список классов educationUser
 
@@ -44,7 +44,7 @@ GET /education/users/{id}/classes
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/v1.0/education/me/classes
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -94,7 +94,6 @@ GET https://graph.microsoft.com/v1.0/education/me/classes
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 277
 
 {
   "value": [

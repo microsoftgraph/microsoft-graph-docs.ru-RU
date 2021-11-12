@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e8f9df352806b4f810192b029ccf06ebe136ec24
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9b68769fcd7d10c00086ac4ac8d696c74e3574ac
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147761"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940874"
 ---
 # <a name="list-childfolders"></a>Список childFolders
 
@@ -37,9 +37,9 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -86,7 +86,6 @@ GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}/childFolders
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 145
 
 {
   "value": [

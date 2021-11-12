@@ -2,15 +2,15 @@
 title: Обновление книгиChartAxis
 description: Обновление свойств объекта workbookchartaxis.
 author: lumine2008
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 023ae090b3aa303885c606ce2f9ef770d59da947
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8a2e6366ceb6beadbd368a0e341bbc70f4e0a082
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047485"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946330"
 ---
 # <a name="update-workbookchartaxis"></a>Обновление книгиChartAxis
 
@@ -41,7 +41,7 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/a
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -69,7 +69,6 @@ PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/a
 ```http
 PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis
 Content-type: application/json
-Content-length: 64
 
 {
   "majorUnit": {
@@ -99,7 +98,7 @@ Content-length: 64
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -108,7 +107,6 @@ Content-length: 64
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 64
 
 {
   "majorUnit": {

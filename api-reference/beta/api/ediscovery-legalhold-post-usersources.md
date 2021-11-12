@@ -2,15 +2,15 @@
 title: Создание legalHold userSource
 description: Создание нового объекта legalHold userSource.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 5c49ba39da5967713d0b80ed51cf0aa95229f4be
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 4de26ccee02746fc956e57c0f7ad402ec0431dad
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50952428"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938918"
 ---
 # <a name="create-legalhold-usersource"></a>Создание legalHold userSource
 
@@ -45,7 +45,7 @@ POST /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}/userSources
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -56,7 +56,7 @@ POST /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}/userSources
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|email|String|SMTP-адрес пользователя.|
+|email|String|SMTP-адрес пользователя или SMTP-адрес группового почтового ящика. Чтобы получить адрес электронной почты группы, используйте [группы List или](../api/group-list.md) Get [group.](../api/group-get.md) Используя группу get, можно запрашивать по имени группы `$filter` с помощью; например, `https://graph.microsoft.com/v1.0/groups?$filter=displayName eq 'secret group'&$select=mail,id,displayName` . |
 |includedSources|microsoft.graph.ediscovery.sourceType|Указывает, какие источники включены в эту группу. Это значение должно быть `mailbox` , `site` не поддерживается для legalHolds в настоящее время.|
 
 ## <a name="response"></a>Отклик
@@ -66,6 +66,7 @@ POST /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}/userSources
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -78,7 +79,6 @@ POST /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}/userSources
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/c816dd6f-5af8-40c5-a760-331361e05c60/legalHolds/387566cc-38ae-4e85-ab4b-cd2dd34faa07/userSources
 Content-Type: application/json
-Content-length: 208
 
 {
   "email": "adelev@contoso.com",
@@ -103,6 +103,8 @@ Content-length: 208
 
 ---
 
+
+---
 
 ### <a name="response"></a>Отклик
 

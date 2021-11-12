@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 23766510e20797fa17405e22fcdaf6847d2e60af
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 96ec8884f94407115d9b3bbb00643ba1352d9005
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029243"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946953"
 ---
 # <a name="tablecollection-add"></a>TableCollection: add
 
@@ -71,7 +71,6 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/add
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/add
 Content-type: application/json
-Content-length: 54
 
 {
   "address": "Sheet1!A1:D5",
@@ -107,7 +106,6 @@ Content-length: 54
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 109
 
 {
   "id": "99",

@@ -2,20 +2,18 @@
 title: Обновление задачи
 description: Обновление задачи печати.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 1375b48ccecc800111b0e84065f58324124021d4
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 4ee2d0f6a77ccc2f326a1752c4420cadce1631a1
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50771297"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946421"
 ---
 # <a name="update-printtask"></a>Обновление printTask
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Обновление задачи печати.
 
@@ -45,7 +43,7 @@ PATCH /print/taskDefinitions/{taskDefinitionId}/tasks/{taskId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -73,7 +71,6 @@ PATCH /print/taskDefinitions/{taskDefinitionId}/tasks/{taskId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/print/taskDefinitions/{taskDefinitionId}/tasks/{taskId}
 Content-Type: application/json
-Content-length: 152
 
 {
   "status": {

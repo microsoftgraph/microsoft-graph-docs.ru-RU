@@ -2,15 +2,15 @@
 title: Список rejectedSenders
 description: 'Получение списка пользователей или групп, включенных в список запрещенных отправителей для этой группы. '
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 95ef002b64cd047a4a7dc13b7856c9e2be6f3de7
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 490a1879336f132d012b873a81f12b9c49a97d11
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52680621"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924630"
 ---
 # <a name="list-rejectedsenders"></a>Список rejectedSenders
 
@@ -40,7 +40,7 @@ GET /groups/{id}/rejectedSenders
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -91,7 +91,6 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [

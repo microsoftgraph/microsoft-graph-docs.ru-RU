@@ -1,16 +1,16 @@
 ---
 title: assignLicense
 description: Добавление или удаление лицензий для пользователя, чтобы включить или отключить использование облачных предложений Майкрософт. Например, организация может иметь подписку Microsoft 365 корпоративный E3 со 100 лицензиями, и этот запрос назначает одну из этих лицензий конкретному пользователю. Вы также можете включать и отключать отдельные планы, связанные с подпиской. Дополнительные новости о подписках и лицензиях см. в статье Technet.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 6efe1bf90e48677070d7aa5b1a7b4feb57a162d3
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5228d7c036477134b6def39f1a096db3fd13c939
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053393"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939181"
 ---
 # <a name="user-assignlicense"></a>user: assignLicense
 
@@ -39,7 +39,7 @@ POST /users/{id | userPrincipalName}/assignLicense
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -66,7 +66,6 @@ POST /users/{id | userPrincipalName}/assignLicense
 ```http
 POST https://graph.microsoft.com/beta/me/assignLicense
 Content-type: application/json
-Content-length: 185
 
 {
   "addLicenses": [
@@ -108,7 +107,6 @@ Content-length: 185
 ```http
 POST https://graph.microsoft.com/beta/me/assignLicense
 Content-type: application/json
-Content-length: 185
 
 {
   "addLicenses": [],
@@ -126,7 +124,6 @@ Content-length: 185
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
   "accountEnabled": true,

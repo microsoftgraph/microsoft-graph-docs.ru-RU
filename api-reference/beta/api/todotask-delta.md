@@ -1,16 +1,16 @@
 ---
 title: 'todoTask: дельта'
 description: Получите набор ресурсов todoTask, которые были добавлены, удалены или обновлены в указанном todoTaskList.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: avijityadav
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3c0d1759d1994c1fa9ae405d2a1895982e3ac99a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6917a732189ce505da75baaf716a0a2ed583b007
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048920"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947058"
 ---
 # <a name="todotask-delta"></a>todoTask: дельта
 
@@ -59,7 +59,7 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/delta
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 | Content-Type  | string  | application/json. Обязательный. |
 | Prefer | string  | odata.maxpagesize={x}. Необязательный параметр. |
 
@@ -91,7 +91,6 @@ Prefer: odata.maxpagesize=2
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 337
 
 {
    "@odata.deltaLink":"https://graph.microsoft.com/beta/me/todo/lists/gDbc8U7HGwADDZocJgAAAA==/tasks/delta?$deltatoken=MoVMZ_DzHG4AhT3WE8VioVS1IXZJ-ArqK5fknOjnKFY",

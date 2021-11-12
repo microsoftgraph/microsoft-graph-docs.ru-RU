@@ -1,16 +1,16 @@
 ---
 title: Перечисление подписок
 description: " см. ниже сценарии."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 25b37c652eac03eb827abfc4f6b43481e8d3e8c3
-ms.sourcegitcommit: 74a1fb3874e04c488e1b87dcee80d76cc586c1f3
+ms.openlocfilehash: 2a4bb437b039d591babe911e5b2ea0dd2f0fecfc
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51031011"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947142"
 ---
 # <a name="list-subscriptions"></a>Перечисление подписок
 
@@ -67,7 +67,7 @@ GET /subscriptions
 
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -124,7 +124,6 @@ GET https://graph.microsoft.com/beta/subscriptions
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 586
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscriptions",

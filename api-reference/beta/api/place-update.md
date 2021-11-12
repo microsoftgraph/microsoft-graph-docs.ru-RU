@@ -1,16 +1,16 @@
 ---
 title: Место обновления
 description: Обновление свойств объекта place.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: vrod9429
 ms.prod: Outlook
 doc_type: apiPageType
-ms.openlocfilehash: 16b483be47fd6b62eff05001ad99be0ebf554d2d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9350e7d6ef0c19a62f05b8ef199f623b5a197c75
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055388"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60933987"
 ---
 # <a name="update-place"></a>Место обновления
 
@@ -28,7 +28,7 @@ ms.locfileid: "52055388"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Place.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Не поддерживается |
+| Для приложений                            | Не поддерживается |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ PATCH /places/{id | emailAddress}
 
 | Имя       | Значение|
 |:-----------|:------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -61,10 +61,10 @@ PATCH /places/{id | emailAddress}
 | floorNumber            | Int32                                             | Указывает номер пола, на который находится номер. |
 | geoCoordinates         | [outlookGeoCoordinates](../resources/outlookgeocoordinates.md) | Указывает расположение комнаты или списка номеров в широте, долготе и необязательных координатах высоты. |
 | isWheelChairAccessible | Логический                                           | Указывает, доступна ли комната для инвалидных колясок. |
-| label                  | String                                            | Указывает описательный метку для комнаты, например номер или имя. |
+| подпись                  | String                                            | Указывает описательный метку для комнаты, например номер или имя. |
 | nickname               | String                                            | Указывает псевдоним для комнаты, например " conf room". |
 | phone                  | String                                            | Номер телефона комнаты или списка номеров. |
-| tags                   | Коллекция объектов string                                 | Указывает дополнительные функции комнаты, например, такие сведения, как тип представления или тип мебели. |
+| tags                   | Коллекция String                                 | Указывает дополнительные функции комнаты, например, такие сведения, как тип представления или тип мебели. |
 | videoDeviceName        | String                                            | Указывает имя видео устройства в комнате. |
 
 ## <a name="response"></a>Отклик
@@ -89,7 +89,6 @@ PATCH /places/{id | emailAddress}
 ```http
 PATCH https://graph.microsoft.com/beta/places/cf100@contoso.com
 Content-type: application/json
-Content-length: 285
 
 {
   "@odata.type": "microsoft.graph.room",

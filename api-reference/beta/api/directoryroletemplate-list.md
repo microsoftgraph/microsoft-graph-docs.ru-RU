@@ -5,12 +5,12 @@ author: abhijeetsinha
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 9181a617aab5d79a7de1faf1ed15337c4e7c4397
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 5e776bc45ce604d4c0994eb00377ca8ecaa3ff2f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256475"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60939702"
 ---
 # <a name="list-directoryroletemplates"></a>Список directoryRoleTemplate
 
@@ -26,7 +26,7 @@ ms.locfileid: "60256475"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/beta/directoryRoleTemplates
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 139
 
 {
   "value": [

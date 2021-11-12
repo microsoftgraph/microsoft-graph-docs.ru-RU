@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 889e83b08fdd7af8a48bb3a16a7b6f6d0d535506
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: c88ce71a93396aebc6d17be68b86fbd78b24fb24
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694668"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925218"
 ---
 # <a name="update-governancerolesetting"></a>Обновление управленияRoleSetting
 
@@ -101,7 +101,6 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ```http
 PATCH https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleSettings/5fb5aef8-1081-4b8e-bb16-9d5d0385bab5
 Content-type: application/json
-Content-length: 350
 
 {
    "adminEligibleSettings":[

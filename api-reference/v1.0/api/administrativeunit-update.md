@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f9ac818cc3f65de72938f6afb276cd08cb33f930
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 55a7d2b20ce3d4b1ad90e752c2c5835c5c7bbbff
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056902"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60935111"
 ---
 # <a name="update-administrativeunit"></a>Обновление администрирования
 
@@ -37,7 +37,7 @@ PATCH /directory/administrativeUnits/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -46,7 +46,7 @@ PATCH /directory/administrativeUnits/{id}
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|description|строка|Описание административного подразделения.|
+|description|string|Описание административного подразделения.|
 |displayName|string|Отображение имени административного подразделения.|
 |visibility|string|Видимость для административного подразделения. Если не установить, то по умолчанию является "общедоступным". Можно установить "HiddenMembership", которое скрывает членство от нечленов.|
 
@@ -69,7 +69,6 @@ PATCH /directory/administrativeUnits/{id}
 ```http
 PATCH https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}
 Content-type: application/json
-Content-length: 114
 
 {
   "displayName": "displayName-value",

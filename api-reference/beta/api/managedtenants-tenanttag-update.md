@@ -2,15 +2,15 @@
 title: Обновление tenantTag
 description: Обновление свойств объекта tenantTag.
 author: isaiahwilliams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 367fd71e769ae2fa4cd73b0f25f120b22fa5f0d9
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: fc3460209c4f6c8cb81663b75eb7d024999402c2
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53442735"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938750"
 ---
 # <a name="update-tenanttag"></a>Обновление tenantTag
 Пространство имен: microsoft.graph.managedTenants
@@ -41,7 +41,7 @@ PATCH /tenantRelationships/managedTenants/tenantTags/{tenantTagId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -72,7 +72,6 @@ PATCH /tenantRelationships/managedTenants/tenantTags/{tenantTagId}
 ``` http
 PATCH https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantTags/{tenantTagId}
 Content-Type: application/json
-Content-length: 382
 
 {
   "displayName": "Onboarding",

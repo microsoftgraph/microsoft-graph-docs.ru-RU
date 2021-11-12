@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2cd6f7a982aa662411ebc2766c6d2231c3965925
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: df4cb6ee9d1607fc664c8fbe064b5d307fb7b2f9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062875"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946386"
 ---
 # <a name="rangebordercollection-itemat"></a>RangeBorderCollection: ItemAt
 
@@ -71,7 +71,6 @@ POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ra
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/borders/itemAt
 Content-type: application/json
-Content-length: 20
 
 {
   "index": 1
@@ -98,7 +97,6 @@ Content-length: 20
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 136
 
 {
   "id": "id-value",

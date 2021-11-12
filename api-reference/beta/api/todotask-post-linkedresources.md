@@ -1,23 +1,23 @@
 ---
 title: Создание linkedResource
-description: Создание объекта linkedResource.
+description: Создание нового объекта linkedResource.
 author: avijityadav
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 899f2b39c0a73a774c6c8df6da4aa80eb3f06fc7
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: bada407057ead2e933b8231a3a5898a049628817
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49872928"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947659"
 ---
 # <a name="create-linkedresource"></a>Создание linkedResource
 Пространство имен: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте [объект linkedResource,](../resources/linkedresource.md) чтобы [](../resources/todotask.md) связать указанную задачу с элементом в партнерского приложения. Например, можно связать задачу с элементом электронной почты в Outlook, который создал задачу, и создать объект **linkedResource** для отслеживания ее связи.
+Создайте [объект linkedResource,](../resources/linkedresource.md) чтобы [](../resources/todotask.md) связать указанную задачу с элементом в партнерской заявке. Например, вы можете связать задачу с элементом электронной почты в Outlook, который подстегнул задачу, и можно создать объект **linkedResource** для отслеживания его связи.
 
-Вы также можете создать объект **linkedResource** при [создании объекта todoTask.](/graph/api/todotasklist-post-tasks?view=graph-rest-beta&preserve-view=true&tabs=http#examples)
+Вы также можете создать **объект linkedResource** при [создании todoTask.](/graph/api/todotasklist-post-tasks?view=graph-rest-beta&preserve-view=true&tabs=http#examples)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -42,27 +42,27 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/li
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
-В теле запроса укажу представление объекта [linkedResource](../resources/linkedresource.md) в JSON.
+## <a name="request-body"></a>Текст запроса
+В теле запроса поставляем представление JSON объекта [linkedResource.](../resources/linkedresource.md)
 
 В следующей таблице показаны свойства, необходимые при создании [linkedResource.](../resources/linkedresource.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Server generated Id for the linked entity Inherited from [entity](../resources/entity.md)|
-|webUrl|String|Глубокая связь со связанным объектом |
-|applicationName|String|Поле, указывающее имя приложения источника, который отправляет связанную сущность |
-|displayName|String|Поле, указывающее заголовок связанной сущности. |
-|externalId|String|ИД объекта, связанного с этой задачей в стороншей или партнерской системе |
+|webUrl|String|Deeplink to the linked entity |
+|applicationName|String|Поле, указывающее имя приложения источника, отправляемого связанной сущности |
+|displayName|String|Поле, указывающее заголовок связанного объекта. |
+|externalId|String|Id объекта, связанного с этой задачей в системе сторонних и партнеров |
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `201 Created` [linkedResource](../resources/linkedresource.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект linkedResource](../resources/linkedresource.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -78,7 +78,6 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/li
 ``` http
 POST https://graph.microsoft.com/beta/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks/e2dc-f9cce2-dce29/linkedResources
 Content-Type: application/json
-Content-length: 166
 
 {
   "webUrl": "https://microsoft.com",

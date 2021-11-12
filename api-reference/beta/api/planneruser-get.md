@@ -1,16 +1,16 @@
 ---
 title: Получение объекта plannerUser
 description: 'Получение свойств и связей объекта plannerUser. Возвращенные свойства включают любимые планы пользователя и недавно просматриваемые планы. '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: bc1d212f9f9e75770e66067bc3cf22438fa71988
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 16fed2d6fa01f74920b4da061b2df2ede8e65a05
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049963"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60933531"
 ---
 # <a name="get-planneruser"></a>Получение объекта plannerUser
 
@@ -87,7 +87,6 @@ GET https://graph.microsoft.com/beta/me/planner
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 979
 
 {
   "favoritePlanReferences": {

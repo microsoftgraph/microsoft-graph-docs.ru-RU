@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: getMemberGroups'
-description: Получение списка групп и ролей каталога, в которых участвует субъект-служба. Это транзитивная проверка.
+description: Получение списка групп, участником которых является субъект-служба. Это транзитивная проверка.
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 026ad1d597e42c4062536cc1b1a18f3c267b524e
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 69563b470a19a5b8cf84905da630ef5000be2630
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696869"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941178"
 ---
 # <a name="serviceprincipal-getmembergroups"></a>servicePrincipal: getMemberGroups
 
@@ -18,7 +18,7 @@ ms.locfileid: "58696869"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка групп, участником которых является [servicePrincipal](../resources/serviceprincipal.md).  Это транзитивная проверка.
+Получение списка групп, участником которых является [servicePrincipal](../resources/serviceprincipal.md). Это транзитивная проверка.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -39,7 +39,7 @@ POST /servicePrincipals/{id}/getMemberGroups
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:-----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный.  |
+| Авторизация | Bearer {token}. Обязательный.  |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -66,7 +66,6 @@ POST /servicePrincipals/{id}/getMemberGroups
 ```http
 POST https://graph.microsoft.com/beta/servicePrincipals/{id}/getMemberGroups
 Content-type: application/json
-Content-length: 33
 
 {
   "securityEnabledOnly": true
@@ -103,7 +102,6 @@ Content-length: 33
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 39
 
 {
   "value": [

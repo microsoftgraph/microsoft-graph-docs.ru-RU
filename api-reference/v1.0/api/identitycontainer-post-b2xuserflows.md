@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 09bb79e8d21aead6fd0ff126cc7c92ad8eaf9ced
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 661cdd8d6b5ef995cd14898a23f75cf85f75246d
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016640"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940692"
 ---
 # <a name="create-b2xidentityuserflow"></a>Создание b2xIdentityUserFlow
 
@@ -45,7 +45,7 @@ POST /identity/b2xUserFlows
 
 |Имя|Описание|
 |:---------------|:----------|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,9 +55,9 @@ POST /identity/b2xUserFlows
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
 |id|String|Обязательный. Имя пользовательского потока. После создания имя будет предварительно заранее. `B2X_1`|
-|userFlowType|Строка|Обязательный. Тип пользовательского потока, который вы создаете. Это значение всегда будет `signUpOrSignIn` .|
+|userFlowType|String|Обязательный. Тип пользовательского потока, который вы создаете. Это значение всегда будет `signUpOrSignIn` .|
 |userFlowTypeVersion|С плавающей запятой|Обязательный. Версия пользовательского потока. Это значение всегда будет 1.|
-|apiConnectorConfiguration|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|Необязательно. Настройка для включения соединителя API с целью использования в составе пользовательского потока.|
+|apiConnectorConfiguration|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|Необязательный параметр. Настройка для включения соединителя API с целью использования в составе пользовательского потока.|
 
 ## <a name="response"></a>Отклик
 
@@ -82,7 +82,6 @@ POST /identity/b2xUserFlows
 ``` http
 POST https://graph.microsoft.com/v1.0/identity/b2xUserFlows
 Content-type: application/json
-Content-length: 154
 
 {
     "id": "Partner",
@@ -111,7 +110,7 @@ Content-length: 154
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -150,7 +149,6 @@ Content-type: application/json
 ``` http
 POST https://graph.microsoft.com/v1.0/identity/b2xUserFlows
 Content-type: application/json
-Content-length: 154
 
 {
     "id": "Partner",
@@ -186,7 +184,7 @@ Content-length: 154
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -225,7 +223,6 @@ Content-type: application/json
 ``` http
 POST https://graph.microsoft.com/v1.0/identity/b2xUserFlows
 Content-type: application/json
-Content-length: 154
 
 {
     "id": "UserFlowWithAPIConnector",
@@ -262,7 +259,7 @@ Content-length: 154
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

@@ -1,16 +1,16 @@
 ---
 title: Создание страницы
-description: Создайте новую страницу OneNote в разделе по умолчанию записной книжки по умолчанию.
+description: Создание новой OneNote страницы в разделе по умолчанию записной книжки по умолчанию.
 author: jewan-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 828fc09e3b7cdb281b682df93b3d6f94f264330d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f45a3fbd2619709dc547c420b052cf47d41a1fe4
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004643"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947254"
 ---
 # <a name="create-page"></a>Создание страницы
 
@@ -18,13 +18,13 @@ ms.locfileid: "48004643"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новую страницу OneNote в разделе по умолчанию записной книжки по умолчанию.
+Создание новой OneNote страницы в разделе по умолчанию записной книжки по умолчанию.
 
-Чтобы создать страницу в другом разделе записной книжки, используемой по умолчанию, можно использовать `sectionName` параметр запроса.  Пример: `../onenote/pages?sectionName=My%20section`.
+Чтобы создать страницу в другом разделе в записной книжке по умолчанию, можно использовать параметр `sectionName` запроса.  Пример: `../onenote/pages?sectionName=My%20section`
 
-Эта `POST /onenote/pages` операция используется только для создания страниц в записной книжке текущего пользователя по умолчанию. Если вы нацелены на другие записные книжки, вы можете [создавать страницы в указанном разделе](../api/section-post-pages.md).      
+Операция используется только для создания страниц в записной книжке текущего пользователя `POST /onenote/pages` по умолчанию. Если вы нацелены на другие записные книжки, можно создать страницы [в указанном разделе.](../api/section-post-pages.md)      
 
-> **Примечание:** Существует предельное число страниц, которые можно добавить в раздел с помощью этого API. Дополнительные сведения см. в статье [Создание страниц OneNote](/graph/onenote-create-page) для всех ограничений с помощью этого API.
+> **Примечание:** Существует ограничение на количество страниц, которые можно добавить в раздел с помощью этого API. Дополнительные сведения см. [в OneNote страниц](/graph/onenote-create-page) для всех ограничений с помощью этого API.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -48,28 +48,27 @@ POST /sites/{id}/onenote/pages
 ## <a name="request-headers"></a>Заголовки запросов  
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 | Content-Type | string | `text/html` или `application/xhtml+xml` для содержимого HTML, в том числе для необходимой части Presentation составных запросов. В составных запросах используется тип содержимого `multipart/form-data; boundary=your-boundary`. |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса добавьте HTML-контент для страницы.
+В теле запроса укажи содержимое HTML для страницы.
 
 Текст может содержать HTML-код, размещенный прямо в тексте запроса, либо формат составного сообщения, как показано в примере. Если вы отправляете двоичные данные, необходимо отправить составной запрос.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [оненотепаже](../resources/onenotepage.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и новый объект `201 Created` [onenotepage](../resources/onenotepage.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-В `../onenote/pages` пути можно использовать `sectionName` параметр запроса, чтобы создать страницу в определенном разделе записной книжки по умолчанию. Пример: `../onenote/pages?sectionName=My%20section`. Если раздел не существует (или был переименован), API создаст новый раздел.
+В пути можно использовать параметр запроса для создания страницы в определенном разделе в записной книжке `../onenote/pages` `sectionName` по умолчанию. Пример: `../onenote/pages?sectionName=My%20section`. Если раздел не существует (или был переименован), API создаст новый раздел.
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/me/onenote/pages
-Content-length: 312
 Content-type: multipart/form-data; boundary=MyPartBoundary198374
 
 --MyPartBoundary198374
@@ -111,7 +110,6 @@ Content-Type:application/pdf
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 312
 
 {
   "title": "title-value",

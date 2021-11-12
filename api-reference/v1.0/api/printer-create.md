@@ -2,20 +2,18 @@
 title: 'принтер: создание'
 description: Создайте (зарегистрируйте) принтер с помощью службы универсальной печати.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: bd07e04aa2a4c8b459e90a55d537c683a677d8e9
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 869107c6743569b89e8d056845ca8632541a02d9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772046"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946449"
 ---
 # <a name="printer-create"></a>принтер: создание
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Создайте (зарегистрируйте) принтер с помощью службы универсальной печати. Это долгосрочная операция, и в качестве таковой возвращается [принтерCreateOperation,](../resources/printercreateoperation.md) который можно использовать для отслеживания и проверки регистрации принтера.
 
@@ -28,8 +26,8 @@ ms.locfileid: "50772046"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись)| Printer.Create, Printer.ReadWrite.All, Printer.FullControl.All |
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)| Printer.Create, Printer.ReadWrite.All, Printer.FullControl.All |
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений| Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,7 +43,7 @@ POST /print/printers/create
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -59,7 +57,7 @@ POST /print/printers/create
 |manufacturer|String|Производитель принтера.|Да|
 |model|String|Модель принтера.|Да|
 |physicalDeviceId|String|UUID физического устройства принтера. Обязательно, если `hasPhysicalDevice` свойство является верным.|Нет|
-|hasPhysicalDevice|Boolean|True, если на принтере есть физическое выходное устройство, ложное в противном случае. Если значение опущено, значение по умолчанию является верным.|Нет|
+|hasPhysicalDevice|Логическое|True, если на принтере есть физическое выходное устройство, ложное в противном случае. Если значение опущено, значение по умолчанию является верным.|Нет|
 |certificateSigningRequest|[printCertificateSigningRequest](../resources/printcertificatesigningrequest.md)|Запрос на подписание сертификата X.509 (CSR) для сертификата, созданного и используемой принтером для идентификации.|Да|
 |connectorId|String|ID соединителя, действующего в качестве прокси-сервера принтера.|Нет|
 
@@ -81,7 +79,6 @@ POST /print/printers/create
 ``` http
 POST https://graph.microsoft.com/v1.0/print/printers/create
 Content-Type: application/json
-Content-length: 287
 
 {
   "displayName": "Test Printer",

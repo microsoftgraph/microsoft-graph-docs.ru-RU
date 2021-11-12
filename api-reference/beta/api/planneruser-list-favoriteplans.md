@@ -2,15 +2,15 @@
 title: Список объектов favoritePlans
 description: Получение списка объектов plannerPlan, отмеченных пользователем как избранные. Вы можете отметить план как любимый, обновив ресурс plannerUser.
 author: TarkanSevilmis
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: c1d8da785836dd91ef98468b4a15762570eaac6b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 35dfcaec3cd879dcda901ca8c7c9903092ce6554
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049949"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60933510"
 ---
 # <a name="list-favoriteplans"></a>Список объектов favoritePlans
 
@@ -91,7 +91,6 @@ GET https://graph.microsoft.com/beta/me/planner/favoritePlans
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 979
 
 {
   "value": [

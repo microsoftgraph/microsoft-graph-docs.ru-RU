@@ -2,28 +2,26 @@
 title: тип printerCapabilities сложный
 description: Представляет возможности, сообщаемые принтером.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: resourcePageType
-ms.openlocfilehash: 530c67a3779caf2557c780f6c62446ab95164151f92a68ce6946ff86bfb0d8bf
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: eb9a583ed39dc3bfd1b1dafe5298a64132fef83a
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54229061"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60946876"
 ---
 # <a name="printercapabilities-resource-type"></a>тип ресурса printerCapabilities
 
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Представляет возможности, сообщаемые принтером или принтеромShare.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|contentTypes|Коллекция строк|Список поддерживаемых типов контента (MIME), поддерживаемых принтером. Не гарантируется, что служба универсальной печати поддерживает печать всех этих типов MIME.|
+|contentTypes|Коллекция String|Список поддерживаемых типов контента (MIME), поддерживаемых принтером. Не гарантируется, что служба универсальной печати поддерживает печать всех этих типов MIME.|
 |isColorPrintingSupported|Логическое|True, если цветная печать поддерживается принтером; false в противном случае. Только для чтения.|
 |feedOrientations|коллекция printerFeedOrientation|Список ориентаций каналов, поддерживаемых принтером.|
 |isPageRangeSupported|Логическое|True, если принтер поддерживает печать по диапазонам страниц; false в противном случае.|
@@ -33,12 +31,12 @@ ms.locfileid: "54229061"
 |queueBufferSizeInBytes|Int32|Максимальный размер очереди задания печати, который может храниться на принтере.|
 |copiesPerJob|[integerRange](integerrange.md)|Диапазон копий на одну работу, поддерживаемую принтером.|
 |finishings|[коллекция printFinishing](enums.md#printfinishing-values)|Отделочные процессы, поддерживаемые принтером для печатного документа.|
-|mediaColors|Коллекция строк|Средства массовой информации (например, бумажные) цвета, поддерживаемые принтером.|
+|mediaColors|Коллекция String|Средства массовой информации (например, бумажные) цвета, поддерживаемые принтером.|
 |mediaTypes|Коллекция String|Типы мультимедиа, поддерживаемые принтером.|
 |mediaSizes|Коллекция String|Размеры мультимедиа, поддерживаемые принтером. Поддерживает стандартные имена размеров для средств массовой информации ISO и ANSI. Допустимые значения находятся в следующей [таблице.](#mediasizes-values)|
 |pagesPerSheet|Коллекция Int32|Поддерживаемое количество страниц ввода, которые необходимо навязать одному впечатлению.|
 |ориентации|[коллекция printOrientation](enums.md#printorientation-values)|Ориентации печати, поддерживаемые принтером. Допустимые значения описаны в следующей таблице.|
-|inputBins|Коллекция строк|Поддерживаемые ячейки ввода для принтера.|
+|inputBins|Коллекция String|Поддерживаемые ячейки ввода для принтера.|
 |outputBins|Коллекция String|Поддерживаемые ячейки вывода принтера (лотки).|
 |supportsFitPdfToPage|Логическое|True, если принтер поддерживает масштабирование страниц PDF в соответствие с размером печатных мультимедиа; false в противном случае.|
 |multipageLayouts|[коллекция printMultipageLayout](enums.md#printmultipagelayout-values)|Направления презентации, поддерживаемые принтером. Поддерживаемые значения описаны в следующей таблице.|

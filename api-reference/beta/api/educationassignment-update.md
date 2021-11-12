@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 51ee97696f89a0b2145a278d57329ccd4545425d
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: 6b676f28d74484a35374bd61f2099bd9b540ac46
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220646"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60938890"
 ---
 # <a name="update-educationassignment"></a>Обновление системы образования
 
@@ -39,7 +39,7 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -47,20 +47,20 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|addedStudentAction|Строка| Управление поведением учащихся, добавленных после публикации задания.|
+|addedStudentAction|String| Управление поведением учащихся, добавленных после публикации задания.|
 |addToCalendarAction|educationAddToCalendarOptions|Необязательное поле для управления поведением назначения для добавления назначений в календари учащихся и преподавателей при публикации назначения. Возможные значения: `none` , , и `studentsAndPublisher` `studentsAndTeamOwners` `studentsOnly` `unknownFutureValue` . Значение по умолчанию — `none`.|
-|allowLateSubmissions|Boolean| Можно ли отправку представлений после даты.|
-|allowStudentsToAddResourcesToSubmission|Boolean| Может ли учащийся добавлять ресурсы в отправку. Указано, поступили ли из списка ресурсов назначения только элементы, указанные в представлении. |
+|allowLateSubmissions|Логический| Можно ли отправку представлений после даты.|
+|allowStudentsToAddResourcesToSubmission|Логическое| Может ли учащийся добавлять ресурсы в отправку. Указано, поступили ли из списка ресурсов назначения только элементы, указанные в представлении. |
 |assignDateTime|DateTimeOffset| Дата публикации назначения учащимся. |
 |assignTo|educationAssignmentRecipient| Студенты, получаювшие назначение.|
 |closeDateTime|DateTimeOffset| Дата закрытия назначения для отправки. Это необязательный поле, которое может быть равно нуль, если назначение не позволяет использоватьLateSubmissions или closeDateTime то же самое, что и dueDateTime, но если указано, оно должно быть больше или равно dueDateTime.|
-|displayName|Строка| Имя назначения. |
+|displayName|String| Имя назначения. |
 |dueDateTime|DateTimeOffset| Назначение даты должно быть. |
 |классификация|educationAssignmentGradeType| Оценка назначения.|
 |инструкции|itemBody| Инструкции, которые будут даны учащимся вместе с назначением. |
-|notificationChannelUrl|Строка| Канал для публикации уведомления о публикации назначения. Обновление URL-адреса канала не допускается после публикации назначения и допускается только в том случае, если **значение assignTo** является [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md).|
+|notificationChannelUrl|String| Канал для публикации уведомления о публикации назначения. Обновление URL-адреса канала не допускается после публикации назначения и допускается только в том случае, если **значение assignTo** является [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md).|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа и обновленный объект `200 OK` [educationAssignment](../resources/educationassignment.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -75,7 +75,6 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}
 ```http
 PATCH https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/4679bc1b-90c5-45af-ae1a-d5357672ed39
 Content-type: application/json
-Content-length: 279
 
 {
     "displayName": "Reading and review test 09.03 #5",
@@ -107,7 +106,7 @@ Content-length: 279
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -119,7 +118,6 @@ Content-length: 279
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 279
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments/$entity",

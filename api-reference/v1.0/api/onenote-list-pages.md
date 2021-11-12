@@ -5,12 +5,12 @@ author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: f928dcb7a03ab4966c91ec55f3744a21c7091009
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f72d1fce2041509f9135bb1cf74264afae19f1df
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59015912"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924483"
 ---
 # <a name="list-pages"></a>Список страниц
 
@@ -65,7 +65,6 @@ GET https://graph.microsoft.com/v1.0/me/onenote/pages
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 393
 
 {
   "value": [

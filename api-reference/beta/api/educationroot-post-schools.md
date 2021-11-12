@@ -2,15 +2,15 @@
 title: Создание educationSchool
 description: Создание учебного заведения.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0f4d91dc8756f74551a374151946d192ecf18b27
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3ed1b8cdf787bfae7536f24e068901738398a814
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52043647"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60925281"
 ---
 # <a name="create-educationschool"></a>Создание educationSchool
 
@@ -41,7 +41,7 @@ POST /education/schools
 
 | Заголовок        | Значение                     |
 | :------------ | :------------------------ |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json          |
 
 ## <a name="request-body"></a>Текст запроса
@@ -67,7 +67,6 @@ POST /education/schools
 ```http
 POST https://graph.microsoft.com/beta/education/schools
 Content-type: application/json
-Content-length: 292
 
 {
   "displayName": "Fabrikam High School",
@@ -120,7 +119,6 @@ Content-length: 292
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 292
 
 {
   "id": "10002",
