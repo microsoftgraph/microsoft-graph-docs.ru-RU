@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 042a5b6c77c520800d6fb43c09c0bddf0d82f8d3
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 45802c821203e8ac4d3eaa908a6bdb0909435a12
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765503"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936945"
 ---
 # <a name="update-cloudpcusersetting"></a>Обновление cloudPcUserSetting
 
@@ -28,7 +28,7 @@ ms.locfileid: "59765503"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|CloudPC.ReadWrite.All|
+|Для приложений|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 | Имя          | Описание                |
 | :------------ | :------------------------  |
-| Авторизация | Bearer {токен}. Обязательный.  |
+| Авторизация | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -56,9 +56,9 @@ PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя параметра, отображаемая в пользовательском интерфейсе.|
-|localAdminEnabled|Boolean|Чтобы включить локальный параметр администрирования, измените этот параметр на `True` .  |
-|selfServiceEnabled|Boolean|Чтобы включить параметр самообслуживки, измените этот параметр на `True` . |
+|displayName|String|Имя параметра, отображаемая в пользовательском интерфейсе.|
+|localAdminEnabled|Логическое|Чтобы включить локальный параметр администрирования, измените этот параметр на `True` .  |
+|selfServiceEnabled|Логическое|Чтобы включить параметр самообслуживки, измените этот параметр на `True` . |
 |lastModifiedDateTime|DateTimeOffset|Последняя дата и время изменения параметра. Тип Timestamp представляет сведения о дате и времени с помощью формата ISO 8601 и всегда находится во времени UTC. Например, полночь UTC 1 января 2014 г. выглядит так: '2014-01-01T00:00:00Z'. |
 
 
@@ -80,7 +80,6 @@ PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/userSettings/b0c2d35f-3385-46c8-a6f5-6c3dfad7ffff
 Content-Type: application/json
-Content-length: 159
 
 {
   "@odata.type": "#microsoft.graph.cloudPcUserSetting",

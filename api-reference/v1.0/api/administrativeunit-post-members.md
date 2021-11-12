@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 67673cfb503c52fcf443ab6f4d374e515645aeb3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 15632f723152e53bc74413a6e888f016a94edd89
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59128328"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60928401"
 ---
 # <a name="add-a-member"></a>Добавление участника
 
@@ -38,7 +38,7 @@ POST /directory/administrativeUnits/{id}/members/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -61,7 +61,6 @@ POST /directory/administrativeUnits/{id}/members/$ref
 ```http
 POST https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/$ref
 Content-type: application/json
-Content-length: 109
 
 {
   "@odata.id":"https://graph.microsoft.com/v1.0/groups/{id}"

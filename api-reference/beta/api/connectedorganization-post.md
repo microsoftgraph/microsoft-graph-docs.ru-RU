@@ -2,15 +2,15 @@
 title: Создание connectedOrganization
 description: Создание новой связаннойорганизации.
 author: markwahl-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 284a7e4c907fb5305eee06b124250467fc27b450
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 109705c6e5689631508998deca09da28149e6ffc
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896286"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943558"
 ---
 # <a name="create-connectedorganization"></a>Создание connectedOrganization
 
@@ -28,7 +28,7 @@ ms.locfileid: "52896286"
 |:---|:---|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | EntitlementManagement.ReadWrite.All |
+| Для приложений                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ POST /identityGovernance/entitlementManagement/connectedOrganizations
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -78,7 +78,6 @@ POST /identityGovernance/entitlementManagement/connectedOrganizations
 ``` http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/
 Content-Type: application/json
-Content-length: 100
 
 {
   "displayName":"Connected organization name",

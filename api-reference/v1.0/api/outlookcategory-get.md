@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4e321fc3efb6b548e1aac9e0ab6ea0559318fa04
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dbb7deff270ceae5ef0d6a41a5e86ed3b48c3257
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037357"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924511"
 ---
 # <a name="get-outlook-category"></a>Получение категории Outlook
 
@@ -40,7 +40,7 @@ GET /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/v1.0/me/outlook/masterCategories/de912e4d-c790-4
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 249
 
 {
   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories/$entity",

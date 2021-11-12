@@ -1,16 +1,16 @@
 ---
 title: Получение конечной точки
 description: Извлечение свойств и связей определенного конечного объекта.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: groups
 author: Jordanndahl
-ms.openlocfilehash: 8c07e342c295fb4aabad9dbec017c6776284ea1e
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 6e1a570ce4d5e39be77b21a12187703d699522d2
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681951"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942249"
 ---
 # <a name="get-endpoint"></a>Получение конечной точки
 
@@ -28,7 +28,7 @@ ms.locfileid: "52681951"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Group.Read.All, Group.ReadWrite.All |
+|Для приложений | Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ GET /groups/{id}/endpoints/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный.|
+| Авторизация  | Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 208
 
 {
   "capability": "Conversations",

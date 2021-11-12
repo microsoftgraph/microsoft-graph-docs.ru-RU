@@ -2,15 +2,15 @@
 title: Перечисление groupLifecyclePolicies
 description: Получает список объектов groupLifecyclePolicy, к которым принадлежит группа.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ce847b566a7857399b5fca7fef96bffe110c2183
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: ad8e967ac062e7f0868646f08ca0130b1961e3a9
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681559"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60926996"
 ---
 # <a name="list-grouplifecyclepolicies"></a>Перечисление groupLifecyclePolicies
 
@@ -41,7 +41,7 @@ GET /groups/{id}/groupLifecyclePolicies
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя | Описание |
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -90,7 +90,6 @@ GET https://graph.microsoft.com/beta/groups/{id}/groupLifecyclePolicies
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 227
 
 {
   "value": [

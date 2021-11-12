@@ -2,20 +2,18 @@
 title: Get printServiceEndpoint
 description: Извлечение свойств и связей конечной точки службы печати.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 4963f673f3f5d54bce4e302fd50f9e35abf26aad
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 42347eefd7541000331c4d56d89decb36fbed214
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50777540"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60945882"
 ---
 # <a name="get-printserviceendpoint"></a>Get printServiceEndpoint
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 Извлечение свойств и связей конечной точки службы печати.
 
@@ -38,7 +36,7 @@ GET /print/services/{printServiceId}/endpoints/{printServiceEndpointId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

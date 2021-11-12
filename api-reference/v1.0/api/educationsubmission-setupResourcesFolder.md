@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sharmas
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: dcfa34792cac24aa3d45f820b8db0064b7566f42
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 46056e35ac29833deb20b1b1f421a9db9bf36e2b
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59095199"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60931803"
 ---
 # <a name="educationsubmission-setupresourcesfolder"></a>educationSubmission: setUpResourcesFolder
 
@@ -44,7 +44,7 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/setUpResourcesFol
 Предоставление пустого json `{}` в качестве тела запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-При успешном выполнении этот метод возвращает код отклика `200 Ok`. Тело будет содержать модель отправки.
+В случае успешного выполнения этот метод возвращает код отклика `200 Ok`. Тело будет содержать модель отправки.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -96,7 +96,6 @@ Content-type: application/json
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 279
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('b07edbef-7420-4b3d-8f7c-d599cf21e069')/assignments('1e5222bd-b7d2-4d64-8a22-74b722ce2fc6')/submissions/$entity",

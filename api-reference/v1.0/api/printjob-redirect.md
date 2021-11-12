@@ -2,20 +2,18 @@
 title: 'printJob: перенаправление'
 description: Перенаправляйте задание печати на другой принтер.
 author: nilakhan
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 23e330a23c50e01f1d0e4ff5b05cadc3ae9b7cdc
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: dd6a4704d022c534a9215ff6fa86c189d594fc1e
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080073"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924354"
 ---
 # <a name="printjob-redirect"></a>printJob: перенаправление
 Пространство имен: microsoft.graph
-
-[!INCLUDE [cloudprinting-pricing-disclaimer](../../includes/cloudprinting-pricing-disclaimer.md)]
 
 [Перенаправляйте задание печати](../resources/printjob.md) на другой [принтер.](../resources/printer.md)
 
@@ -47,7 +45,7 @@ POST /print/printers/{printerId}/jobs/{printJobId}/redirect
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -74,7 +72,6 @@ POST /print/printers/{printerId}/jobs/{printJobId}/redirect
 ``` http
 POST https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobId}/redirect
 Content-Type: application/json
-Content-length: 128
 
 {
   "destinationPrinterId": "9a3b3956-ce5b-4d06-a605-5b0bd3e9ddea",

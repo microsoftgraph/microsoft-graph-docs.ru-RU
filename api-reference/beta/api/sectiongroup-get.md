@@ -1,24 +1,24 @@
 ---
-title: Получение sectionGroup
-description: Получение свойств и связей объекта sectionGroup.
-localization_priority: Normal
+title: Get sectionGroup
+description: Извлечение свойств и связей объекта sectionGroup.
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 2c9b01f7b9836260403b80326ba810bb07316e9d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8dd980e28249ee17ccea6f6f05a8ed2658e3bc75
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979004"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60924948"
 ---
-# <a name="get-sectiongroup"></a>Получение sectionGroup
+# <a name="get-sectiongroup"></a>Get sectionGroup
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [sectionGroup](../resources/sectiongroup.md) .
+Извлечение свойств и связей объекта [sectionGroup.](../resources/sectiongroup.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -39,7 +39,7 @@ GET /sites/{id}/onenote/sectionGroups/{id}
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
-Запрос по умолчанию разворачивает `parentNotebook` и выбирает `id` `name` свойства, и `self` . Допустимые `expand` значения для групп разделов — `parentNotebook` и `parentSectionGroup` .
+Запрос по умолчанию расширяется и выбирает его свойства и `parentNotebook` `id` `name` `self` свойства. `expand`Допустимые значения для групп разделов и `parentNotebook` `parentSectionGroup` .
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/me/onenote/sectionGroups/{id}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 305
 
 {
   "sectionsUrl": "sectionsUrl-value",

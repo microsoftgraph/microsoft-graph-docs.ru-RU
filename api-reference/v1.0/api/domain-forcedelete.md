@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 16423e6a04a8baeb20a3a6b800cd2c5eced762aa
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 876d3f0b72391c0988f8015171a54bcd8c66809f
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056691"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936420"
 ---
 # <a name="force-domain-deletion"></a>Принудительное удаление домена
 
@@ -58,7 +58,7 @@ POST /domains/{id}/forceDelete
 
 | Имя | Описание |
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный.|
+| Авторизация  | Bearer {token}. Обязательный.|
 | Content-Type  | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -69,7 +69,7 @@ POST /domains/{id}/forceDelete
 |:---------------|:--------|:----------|
 |`disableUserAccounts`|`Boolean`| Параметр отключения учетных записей пользователей, которые переименованы. Если учетная запись пользователя отключена, пользователю не будет разрешено войти. Если **установлено,** что обновленная версия в рамках этой операции `users` будет отключена.  Значение по умолчанию: **true**. |
 
-## <a name="response-body"></a>Текст ответа
+## <a name="response-body"></a>Текст отклика
 
 В случае успешной работы этот метод возвращает `HTTP/1.1 204 OK` код состояния.
 
@@ -87,7 +87,6 @@ POST /domains/{id}/forceDelete
 ```http
 POST https://graph.microsoft.com/v1.0/domains/{id}/forceDelete
 Content-type: application/json
-Content-length: 33
 
 {
   "disableUserAccounts": true

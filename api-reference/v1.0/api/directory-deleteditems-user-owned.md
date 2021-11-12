@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a8cbe88fa9673ae63e7e7dd0aa6dcbe505edfda1
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: db2ceef8644af29239c875884e5003f05e96129c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022774"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60943915"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>Список удаленных элементов, которые принадлежат пользователю
 
@@ -42,7 +42,7 @@ POST /directory/deletedItems/getUserOwnedObjects
 
 | Имя          | Описание               |
 | ------------- | ------------------------- |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -58,7 +58,7 @@ POST /directory/deletedItems/getUserOwnedObjects
 | Параметр    | Тип |Описание|
 |:---------------|:--------|:----------|
 |userId|String|ID владельца.|
-|type|Строка|Тип объектов, которые необходимо возвращать; `Group` в настоящее время является единственным поддерживаемым значением.|
+|type|String|Тип объектов, которые необходимо возвращать; `Group` в настоящее время является единственным поддерживаемым значением.|
 
 
 ## <a name="response"></a>Отклик
@@ -90,7 +90,6 @@ Content-type: application/json
 ``` http
 HTTP/1.1 200
 Content-type: application/json
-Content-length: 1249
 
 {
 "value": [

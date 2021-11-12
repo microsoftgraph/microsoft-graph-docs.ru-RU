@@ -2,15 +2,15 @@
 title: Обновление sourceCollection
 description: Обновление свойств объекта sourceCollection.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 482d60dcec4e6f169bbf6962b20deebfbc52f5d5
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: 4dbbb8325e943dfcc3e1e859b20e00c769f9c110
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080259"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60936840"
 ---
 # <a name="update-sourcecollection"></a>Обновление sourceCollection
 
@@ -45,7 +45,7 @@ PATCH /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionI
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -78,7 +78,6 @@ PATCH /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionI
 ``` http
 PATCH https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/sourceCollections/1a9b4145d8f84e39bc45a7f68c5c5119
 Content-Type: application/json
-Content-length: 247
 
 {
     "displayName": "Quarterly Financials search",

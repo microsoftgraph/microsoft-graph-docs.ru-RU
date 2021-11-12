@@ -1,16 +1,16 @@
 ---
 title: Создание mailSearchFolder
 description: Используйте этот API для создания нового mailSearchFolder в указанном почтовом ящике пользователя.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9899276551b09c7e4a4da6e6b92f046d594d5ad5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2b791d4636f78c000a95d00bfd2e3d864d566881
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051146"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60934103"
 ---
 # <a name="create-mailsearchfolder"></a>Создание mailSearchFolder
 
@@ -56,8 +56,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 |:----------|:-----|:------------|
 | @odata.type | String | Тип создаемой папки. Установите "microsoft.graph.mailSearchFolder". |
 | displayName | String | Отображаемое имя новой папки.|
-| includeNestedFolders | Логический | Указывает, как должна проходить иерархия папок почтовых ящиков в поиске. `true` означает, что следует сделать глубокий поиск, чтобы включить детские папки в иерархию каждой папки, явно указанной в **sourceFolderIds**. `false`означает неглубокий поиск только каждой из папок, явно указанных в **sourceFolderIds.** |
-| sourceFolderIds | Коллекция объектов string | Папки почтовых ящиков, которые необходимо добыть. |
+| includeNestedFolders | Логическое | Указывает, как должна проходить иерархия папок почтовых ящиков в поиске. `true` означает, что следует сделать глубокий поиск, чтобы включить детские папки в иерархию каждой папки, явно указанной в **sourceFolderIds**. `false`означает неглубокий поиск только каждой из папок, явно указанных в **sourceFolderIds.** |
+| sourceFolderIds | Коллекция String | Папки почтовых ящиков, которые необходимо добыть. |
 | filterQuery | String | Запрос OData для фильтрации сообщений. |
 
 ## <a name="response"></a>Отклик
@@ -80,7 +80,6 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```http
 POST https://graph.microsoft.com/beta/me/mailfolders/AQMkADYAAAIBDAAAAA==/childfolders
 Content-type: application/json
-Content-length: 159
 
 {
   "@odata.type": "microsoft.graph.mailSearchFolder",

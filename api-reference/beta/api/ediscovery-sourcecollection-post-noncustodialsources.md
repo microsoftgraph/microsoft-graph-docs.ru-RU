@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 639ee1e0f993b576e7a80ced9258c5f89421ca39
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 96a811510f18e92b4be78fa0649ecf5428ee2e27
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59996795"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941472"
 ---
 # <a name="add-noncustodialdatasource"></a>Добавление noncustodialDataSource
 
@@ -45,10 +45,10 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса подарят представление JSON объекта [noncustodialDataSource.](../resources/ediscovery-noncustodialdatasource.md)
 
@@ -56,7 +56,7 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|@odata.id|Строка|Строка, определяемая объектом custodial. См. пример, который следует.  @odata.id можно получить из [noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md).|
+|@odata.id|String|Строка, определяемая объектом custodial. См. пример, который следует.  @odata.id можно получить из [noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md).|
 
 ## <a name="response"></a>Отклик
 
@@ -77,7 +77,6 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/06d52284-ed81-49b8-904a-b863d3164731/sourceCollections/12aab1671c834213a84ba219c06f4c5a/noncustodialSources/$ref
 Content-Type: application/json
-Content-length: 206
 
 {
     "@odata.id": "https://canary.graph.microsoft.com/testprodbetancsdsaslist/compliance/ediscovery/cases/06d52284-ed81-49b8-904a-b863d3164731/noncustodialDataSources/39383530323537383742433232433246"

@@ -2,15 +2,15 @@
 title: Удаление владельца
 description: Удаление владельца из службыPrincipals.
 author: sureshja
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e5963c09e4dd56f2b7e1bde1bdbb821f44f45a65
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: ddb77a8bb19265bc17c22b3b9c289fa4850cfb57
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787221"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944727"
 ---
 # <a name="remove-owner"></a>Удаление владельца
 
@@ -27,7 +27,7 @@ ms.locfileid: "52787221"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
+|Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ DELETE /servicePrincipals/{id}/owners/{id}/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя | Описание|
 |:---- |:---------- |
-| Авторизация | Bearer {токен}. Обязательный.  |
+| Авторизация | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса укажи идентификатор объекта каталога, назначенного в качестве владельца.
@@ -62,7 +62,6 @@ DELETE /servicePrincipals/{id}/owners/{id}/$ref
 ```http
 DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/owners/{id}/$ref
 Content-type: application/json
-Content-length: 30
 
 {
     "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"

@@ -2,15 +2,15 @@
 title: 'printJob: перенаправление'
 description: Перенаправляйте задание печати на другой принтер.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 916725283b86c59907ddd89e5441902fa0f8c756
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: 13a2f0248aec242f8a1a34b903b10d98e2454346
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080178"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60944790"
 ---
 # <a name="printjob-redirect"></a>printJob: перенаправление
 
@@ -43,7 +43,7 @@ POST /print/printers/{id}/jobs/{id}/redirect
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса укажи ID принтера, на который необходимо перенаправить задание печати.
@@ -139,7 +139,6 @@ POST https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d45
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 437
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#printJob",

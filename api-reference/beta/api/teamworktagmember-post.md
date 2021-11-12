@@ -2,15 +2,15 @@
 title: Создание командной работыTagMember
 description: Создайте новый объект teamworkTagMember.
 author: anniecolonna
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9376b8ddb690d4aaee1d571c83e0d94b96482935
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: d224a8c09fd5bc442c5b921b71787151138870e3
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53534435"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60932086"
 ---
 # <a name="create-teamworktagmember"></a>Создание командной работыTagMember
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "53534435"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Не поддерживается.|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|TeamworkTag.ReadWrite.All|
+|Для приложений|TeamworkTag.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,7 +41,7 @@ POST /teams/{team-Id}/tags/{teamworkTag-Id}/members
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,7 +55,7 @@ POST /teams/{team-Id}/tags/{teamworkTag-Id}/members
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект teamworkTagMember](../resources/teamworktagmember.md) в тексте ответа.
 
@@ -72,7 +72,6 @@ POST /teams/{team-Id}/tags/{teamworkTag-Id}/members
 ``` http
 POST https://graph.microsoft.com/beta/teams/53c53217-fe77-4383-bc5a-ed4937a1aecd/tags/MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyM3ZDg4M2Q4Yi1hMTc5LTRkZDctOTNiMy1hOGQzZGUxYTIxMmUjI3RhY29VSjN2RGk==/members
 Content-Type: application/json
-Content-length: 144
 
 {
     "userId":"97f62344-57dc-409c-88ad-c4af14158ff5"

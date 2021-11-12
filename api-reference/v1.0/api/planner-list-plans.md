@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: a9a42ecf7023c9647bfb5d194df812be45ec2136
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 35b2c6c8d5bebaff3f24bbf62f3f3425adc306ed
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104933"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60941731"
 ---
 # <a name="list-plans"></a>Список планов
 
@@ -37,7 +37,7 @@ GET /planner/plans
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -89,7 +89,6 @@ GET https://graph.microsoft.com/v1.0/planner/plans
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 421
 
 {
   "value": [

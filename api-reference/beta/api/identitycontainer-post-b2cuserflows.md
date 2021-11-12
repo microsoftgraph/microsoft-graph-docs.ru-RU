@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 25fa96f3cda7421affea96e48b62b7d228aea74f
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 4b8b91de426912d8a706a3af483e7a3257e1d325
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59763518"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947729"
 ---
 # <a name="create-b2cidentityuserflow"></a>Создание b2cIdentityUserFlow
 
@@ -28,7 +28,7 @@ ms.locfileid: "59763518"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложения|IdentityUserFlow.ReadWrite.All|
+|Для приложений|IdentityUserFlow.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
@@ -47,7 +47,7 @@ POST /identity/b2cUserFlows
 
 |Имя|Описание|
 |:---------------|:----------|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,11 +57,11 @@ POST /identity/b2cUserFlows
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
 |id|String|Обязательный. Имя пользовательского потока. Если префикс не был добавлен в имя во время запроса, имя будет предварительно заранее `B2C_1_` запродляться после создания. |
-|userFlowType|Строка|Обязательный. Тип пользовательского потока, который вы создаете. Поддерживаемые значения для **userFlowType**:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
+|userFlowType|String|Обязательный. Тип пользовательского потока, который вы создаете. Поддерживаемые значения для **userFlowType**:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
 |userFlowTypeVersion|С плавающей запятой|Обязательный. Версия пользовательского потока.|
-|isLanguageCustomizationEnabled|Логический|Необязательное свойство. Определяет, включена ли настройка языка в потоке пользователей Azure AD B2C. Настройка языка не включена по умолчанию для потоков пользователей Azure AD B2C.|
-|defaultLanguageTag|Строка|Необязательный параметр.  Указывает язык по умолчанию b2cIdentityUserFlow, который используется, когда в запросе не указан `ui_locale` тег. Это поле соответствует спецификации [RFC 5646](https://tools.ietf.org/html/rfc5646).|
-|identityProviders|Коллекция объектов [identityProvider](../resources/identityprovider.md)|Необязательное свойство. Поставщики удостоверений, которые необходимо включить в поток пользователей.|
+|isLanguageCustomizationEnabled|Логический|Необязательный параметр. Определяет, включена ли настройка языка в потоке пользователей Azure AD B2C. Настройка языка не включена по умолчанию для потоков пользователей Azure AD B2C.|
+|defaultLanguageTag|String|Необязательный параметр.  Указывает язык по умолчанию b2cIdentityUserFlow, который используется, когда в запросе не указан `ui_locale` тег. Это поле соответствует спецификации [RFC 5646](https://tools.ietf.org/html/rfc5646).|
+|identityProviders|Коллекция объектов [identityProvider](../resources/identityprovider.md)|Необязательный параметр. Поставщики удостоверений, которые необходимо включить в поток пользователей.|
 
 ## <a name="response"></a>Отклик
 
@@ -113,7 +113,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -193,7 +193,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -251,7 +251,6 @@ Content-type: application/json
 ``` http
 POST https://graph.microsoft.com/beta/identity/b2cUserFlows
 Content-type: application/json
-Content-length: 154
 
 {
     "id": "UserFlowWithAPIConnector",
@@ -288,7 +287,7 @@ Content-length: 154
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

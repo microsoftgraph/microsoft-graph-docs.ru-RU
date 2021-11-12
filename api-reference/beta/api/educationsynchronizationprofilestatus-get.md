@@ -2,15 +2,15 @@
 title: Получить статус educationSynchronizationProfile
 description: Получите состояние определенного профиля синхронизации школьных данных в клиенте. В ответе указывается состояние синхронизации.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ab2c4657d913985244ffe9d422859f0680a322de
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 1edd3099b7efc7157ffdefdc2f6bc133d2c242c3
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533290"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60942263"
 ---
 # <a name="get-the-status-of-an-educationsynchronizationprofile"></a>Получить статус educationSynchronizationProfile
 
@@ -28,7 +28,7 @@ ms.locfileid: "53533290"
 | :------------------------------------ | :---------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)    | EduAdministration.Read, EduAdministration.ReadWrite         |
 | Делегированная (личная учетная запись Майкрософт) | Не поддерживается.                                              |
-| Приложение                           | EduAdministration.Read.All, EduAdministration.ReadWrite.All |
+| Для приложений                           | EduAdministration.Read.All, EduAdministration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,13 +41,13 @@ GET /education/synchronizationProfiles/{id}/profileStatus
 
 | Имя          | Тип   | Описание               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {токен}. Обязательный. |
+| Authorization | string | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [educationsynchronizationprofilestatus](../resources/educationsynchronizationprofilestatus.md) в тексте ответа.
 
@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/prof
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 450
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles/{id}/profileStatus/$entity",
