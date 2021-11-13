@@ -5,20 +5,18 @@ ms.localizationpriority: high
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: af3e8ce6aa70980fbcbb1516f302aebf74d3c7fa
-ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
+ms.openlocfilehash: a57a6b8a700bdbc2e81da3d0503e420e3fdaff9c
+ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "60354758"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60940520"
 ---
 # <a name="get-photo"></a>Получение фотографии
 
 Пространство имен: microsoft.graph
 
-Получение указанного объекта [profilePhoto](../resources/profilephoto.md) или его метаданных (свойств profilePhoto).
-
-> **Примечание.** Эта операция в версии 1.0 поддерживает только рабочие или учебные почтовые ящики пользователя (не личные).
+Получение указанного объекта [profilePhoto](../resources/profilephoto.md) или его метаданных (свойств **profilePhoto**).
 
 Поддерживаемые размеры фотографий в формате HD для Microsoft 365: 48 x 48, 64 x 64, 96 x 96, 120 x 120, 240 x 240, 360 x 360, 432 x 432, 504 x 504 и 648 x 648. Фотографии могут быть любого размера, если они хранятся в Azure Active Directory.
 
@@ -44,7 +42,7 @@ ms.locfileid: "60354758"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)      |   Group.Read.All, Group.ReadWrite.All           |
 |Делегированные (личная учетная запись Майкрософт)      |   Не поддерживается.            |
-|Приложение      |    Group.Read.All, Group.ReadWrite.All           |
+|Для приложений      |    Group.Read.All, Group.ReadWrite.All           |
 
 ### <a name="to-retrieve-the-profile-photo-of-a-contact"></a>Для получения фотографии профиля контакта
 
@@ -54,9 +52,9 @@ ms.locfileid: "60354758"
 |Делегированные (личная учетная запись Майкрософт)      |   Contacts.Read, Contacts.ReadWrite            |
 |Для приложений      |    Contacts.Read, Contacts.ReadWrite           |
 
-> **Примечание.**  
-> 1. Операция с метаданными не поддерживается для личных учетных записей Майкрософт. 
-> 2. В настоящее время существует [известная проблема](/graph/known-issues#groups) c доступом к групповым фотографиям с помощью разрешений приложений.
+> **Примечания:**  
+> - Операция с метаданными не поддерживается для личных учетных записей Майкрософт. 
+> - В настоящее время существует [известная проблема](/graph/known-issues#groups) c доступом к групповым фотографиям с помощью разрешений приложений.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -109,7 +107,7 @@ GET /groups/{id}/photos/{size}
 
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -122,7 +120,7 @@ GET /groups/{id}/photos/{size}
 ## <a name="examples"></a>Примеры
 
 ### <a name="example-1-get-the-photo-for-the-signed-in-user-in-the-largest-available-size"></a>Пример 1. Получение фотографии пользователя, вошедшего в систему, с максимальным доступным размером
-##### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
 <!-- {
   "blockType": "ignored"
 }-->
@@ -131,11 +129,11 @@ GET /groups/{id}/photos/{size}
 GET https://graph.microsoft.com/v1.0/me/photo/$value
 ```
 
-##### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 Содержит двоичные данные запрошенной фотографии. Код HTTP-отклика: 200.
 
 ### <a name="example-2-get-the-48x48-photo-for-the-signed-in-user"></a>Пример 2. Получение фотографии 48 x 48 для вошедшего пользователя
-##### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
 <!-- {
   "blockType": "ignored"
 }-->
@@ -145,11 +143,11 @@ GET https://graph.microsoft.com/v1.0/me/photos/48x48/$value
 Content-Type: image/jpg
 ```
 
-##### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 Содержит двоичные данные запрошенной фотографии размером 48x48. Код HTTP-отклика: 200.
 
 ### <a name="example-3-get-the-metadata-of-the-user-photo-of-the-signed-in-user"></a>Пример 3. Получение метаданных фотографии вошедшего пользователя
-##### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
 <!-- {
   "blockType": "ignored"
 }-->
@@ -158,7 +156,7 @@ Content-Type: image/jpg
 GET https://graph.microsoft.com/v1.0/me/photo
 ```
 
-##### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
 В данных указанного ниже отклика содержатся метаданные фотографии.
 
