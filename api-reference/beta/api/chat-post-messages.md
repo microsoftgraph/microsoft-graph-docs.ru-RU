@@ -1,16 +1,16 @@
 ---
 title: Отправка сообщения в чате
 description: Отправка нового сообщения в чате.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9b71687682111aef0c1722e5337b60178ae49d2c
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: 2b9935aa878845311f40892d7979a0fa7c5b434b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533894"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60994538"
 ---
 # <a name="send-message-in-a-chat"></a>Отправка сообщения в чате
 
@@ -52,7 +52,7 @@ POST /chats/{chat-id}/messages
 
 В теле запроса поставляем JSON-представление [объекта chatMessage.](../resources/chatmessage.md)
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешной работы этот метод возвращает код отклика и новый `201 Created` [объект chatMessage](../resources/chatmessage.md) в тексте ответа.
 
@@ -94,6 +94,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessages-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-chatmessages-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

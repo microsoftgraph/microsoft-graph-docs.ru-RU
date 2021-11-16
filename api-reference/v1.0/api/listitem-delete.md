@@ -6,12 +6,12 @@ ms.localizationpriority: medium
 ms.prod: sharepoint
 description: Удаление элемента из списка.
 doc_type: apiPageType
-ms.openlocfilehash: 16c3ab6d52b341fe7ce44ab826a910c760c51952
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 961910581f36532cb8163d45bdb6959acf883212
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037427"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60984584"
 ---
 # <a name="delete-an-item-from-a-list"></a>Удаление элемента из списка
 
@@ -76,10 +76,14 @@ DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{i
 [!INCLUDE [sample-code](../includes/snippets/java/delete-item-site-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-item-site-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного запроса этот вызов возвращает отклик `204 No Content`, указывающий, что ресурс удален, поэтому данные не возвращаются.
 

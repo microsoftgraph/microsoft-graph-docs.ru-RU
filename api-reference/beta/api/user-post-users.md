@@ -2,15 +2,15 @@
 title: Создание пользователя
 description: Создание пользователя.
 author: jpettere
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e04afb007f70788b21253323adfb517ebab7ade6
-ms.sourcegitcommit: f77c1385306fd40557aceb24fdfe4832cbb60a27
+ms.openlocfilehash: d81d6aa0257aa9ae189aee50b331da2d10b8c6e5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52911363"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60985066"
 ---
 # <a name="create-user"></a>Создание пользователя
 
@@ -43,22 +43,22 @@ POST /users
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Тело запроса
 
 В теле запроса предоставьте описание объекта [user](../resources/user.md) в формате JSON.
 
-В приведенной ниже таблице перечислены обязательные свойства при создании пользователя. Если вы включаете свойство **identities** для создаваемого пользователя, не все перечисленные свойства являются обязательными. Для [удостоверения локальной](../resources/objectidentity.md)учетной записи B2C требуется только  **passwordProfile,** и необходимо задать **парольPolicies** `DisablePasswordExpiration` . Для удостоверения социальных сетей ни одно свойство не является обязательным.
+В приведенной ниже таблице перечислены обязательные свойства при создании пользователя. Если вы включаете свойство **identities** для создаваемого пользователя, не все перечисленные свойства являются обязательными. Для [удостоверения локальной учетной записи B2C](../resources/objectidentity.md) обязательным является только **passwordProfile**, а свойству **passwordPolicies** должно быть присвоено значение `DisablePasswordExpiration`. Для удостоверения социальных сетей ни одно свойство не является обязательным.
 
 | Параметр | Тип | Описание|
 |:---------------|:--------|:----------|
-|accountEnabled |Boolean |True, если учетная запись включена; в противном случае, false.|
+|accountEnabled |Логический |True, если учетная запись включена; в противном случае, false.|
 |displayName |string |Имя, которое следует отобразить в адресной книге для пользователя.|
 |onPremisesImmutableId |string |Необходимо указывать только при создании учетной записи пользователя, если вы используете федеративный домен для свойства userPrincipalName (UPN) этого пользователя.|
 |mailNickname |string |Почтовый псевдоним для пользователя.|
-|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |Пароль для профиля пользователя. Для клиентов Azure B2C следует задать свойство **forceChangePasswordNextSignIn** и вместо этого использовать настраиваемые политики для принудительного сброса пароля при первом `false` входе.|
+|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |Пароль для профиля пользователя. Для клиентов Azure B2C следует присвоить свойству **forceChangePasswordNextSignIn** значение `false` и использовать настраиваемые политики для принудительного сброса пароля при первом входе.|
 |userPrincipalName |string |Имя участника-пользователя (polzovatel@contoso.com).|
 
 Так как ресурс **user** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `POST` можно добавлять настраиваемые свойства с собственными данными в экземпляр user при его создании.
@@ -114,6 +114,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-user-from-users-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-user-from-users-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -210,6 +214,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-user-from-users-identities-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-user-from-users-identities-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

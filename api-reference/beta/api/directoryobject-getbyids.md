@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4ff5791cb14806f06ca6ae1c7895ce8009542eb3
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 9d8d3dc9397f7403f4d49ebbf05730956901e192
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256426"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61005368"
 ---
 # <a name="directoryobject-getbyids"></a>directoryObject: getByIds
 
@@ -60,7 +60,7 @@ POST /directoryObjects/getByIds
 | Параметр   | Тип |Описание|
 |:---------------|:--------|:----------|
 |ids|Коллекция String| Коллекция идентификаторов, для которой необходимо возвратить объекты. Идентификаторы имеют формат GUID и представлены в виде строк. Вы можете указать до 1000 идентификаторов. |
-|types|Коллекция объектов string| Коллекция типов ресурсов, указывающая набор коллекций ресурсов, в котором необходимо выполнить поиск. Если аргумент не указан, по умолчанию используется объект [directoryObject](../resources/directoryobject.md), который содержит все типы ресурсов, определенные в каталоге. Любой объект, вытекает из [directoryObject,](../resources/directoryobject.md) может быть указан в коллекции; например: [объекты пользователя,](../resources/user.md) [группы](../resources/group.md)и [устройства.](../resources/device.md) <br/><br/>Для поиска ссылок на партнерскую организацию, [поставляющую облачные решения](https://partner.microsoft.com/cloud-solution-provider), укажите ресурс [directoryObjectPartnerReference](../resources/directoryobjectpartnerreference.md). Если аргумент не указан, по умолчанию используется объект [directoryObject](../resources/directoryobject.md), который содержит все типы ресурсов, определенные в каталоге, кроме ссылок на партнерскую организацию, [поставляющую облачные решения](https://partner.microsoft.com/cloud-solution-provider). </br><br/> В значениях не учитывается регистр символов.|
+|types|Коллекция объектов string| Коллекция типов ресурсов, указывающая набор коллекций ресурсов, в котором необходимо выполнить поиск. Если аргумент не указан, по умолчанию используется объект [directoryObject](../resources/directoryobject.md), который содержит все типы ресурсов, определенные в каталоге. В коллекции можно указать любой объект, производный от [directoryObject](../resources/directoryobject.md). Пример: объекты [user](../resources/user.md), [group](../resources/group.md) и [device](../resources/device.md). <br/><br/>Для поиска ссылок на партнерскую организацию, [поставляющую облачные решения](https://partner.microsoft.com/cloud-solution-provider), укажите [directoryObjectPartnerReference](../resources/directoryobjectpartnerreference.md). Если аргумент не указан, по умолчанию используется объект [directoryObject](../resources/directoryobject.md), который содержит все типы ресурсов, определенные в каталоге, кроме ссылок на партнерскую организацию, [поставляющую облачные решения](https://partner.microsoft.com/cloud-solution-provider).</br><br/> В значениях не учитывается регистр символов.|
 
 ## <a name="response"></a>Отклик
 
@@ -100,6 +100,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-getbyids-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/directoryobject-getbyids-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

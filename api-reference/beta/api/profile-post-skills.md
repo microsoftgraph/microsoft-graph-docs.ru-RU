@@ -1,24 +1,24 @@
 ---
-title: Создание СкиллпрофиЦиенци
-description: Используйте этот API для создания нового СкиллпрофиЦиенци.
-localization_priority: Normal
+title: Создание skillProficiency
+description: Используйте этот API для создания нового skillProficiency.
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 873e568e86972e3d5b0581635e1ef8f4b6a1c612
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4ad5899998f1451fe4fed723d4d080c2eae982b9
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972730"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60980074"
 ---
-# <a name="create-skillproficiency"></a>Создание СкиллпрофиЦиенци
+# <a name="create-skillproficiency"></a>Создание skillProficiency
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот API, чтобы создать новый объект [скиллпрофиЦиенци](../resources/skillproficiency.md) в [профиле](../resources/profile.md)пользователя.
+Используйте этот API для создания нового [объекта skillProficiency](../resources/skillproficiency.md) в профиле [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "48972730"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL          |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL          |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All          |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All          |
 | Для приложений                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,29 +43,29 @@ POST /users/{id | userPrincipalName}/profile/skills
 
 | Имя           | Описание                 |
 |:---------------|:----------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.   |
+| Авторизация  | Bearer {token}. Обязательный.   |
 | Content-Type   | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [скиллпрофиЦиенци](../resources/skillproficiency.md) в формате JSON.
+В корпусе запроса поставляем представление JSON объекта [skillProficiency.](../resources/skillproficiency.md)
 
-В следующей таблице приведены свойства, которые можно задать при создании нового объекта [скиллпрофиЦиенци](../resources/skillproficiency.md) в [профиле](../resources/profile.md)пользователя.
+В следующей таблице показаны свойства, которые можно установить при создании нового объекта [skillProficiency](../resources/skillproficiency.md) в профиле [пользователя.](../resources/profile.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|categories|Коллекция String|Содержит категории, связанные с навыком пользователя (например, персональный, профессиональный, увлеченный). |
-|коллаборатионтагс|Коллекция строк|Содержит теги сценариев, с которыми пользователь связан с интересом. Допустимые значения в коллекции: `askMeAbout` ,, `ableToMentor` `wantsToLearn` , `wantsToImprove` .|
-|displayName|String|Содержит понятное имя для навыка. |
-|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|навыки|скиллпрофиЦиенцилевел|Сведения о пользователях, которые подключают этот навык. Возможные значения: `elementary`, `limitedWorking`, `generalProfessional`, `advancedProfessional`, `expert`, `unknownFutureValue`.|
-|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|allowedAudiences|Строка|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|categories|Коллекция String|Содержит категории, связанные с навыком пользователя (например, личное, профессиональное, хобби). |
+|collaborationTags|Коллекция объектов string|Содержит теги сценариев работы, которые пользователь связал с интересом. Допустимые значения в коллекции: `askMeAbout` , `ableToMentor` , `wantsToLearn` `wantsToImprove` .|
+|displayName|String|Содержит удобное имя для навыка. |
+|вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
+|профессиональный уровень|skillProficiencyLevel|Подробное знание пользователями этого навыка. Возможные значения: `elementary`, `limitedWorking`, `generalProfessional`, `advancedProfessional`, `expert`, `unknownFutureValue`.|
+|source|[personDataSource](../resources/persondatasource.md)|Где значения возникли, если синхронизированы с другой службы. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |webUrl|String|Содержит ссылку на источник информации о навыке. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201, Created` код отклика и новый объект [скиллпрофиЦиенци](../resources/skillproficiency.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и новый объект `201, Created` [skillProficiency](../resources/skillproficiency.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -109,6 +109,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-skillproficiency-from-profile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-skillproficiency-from-profile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

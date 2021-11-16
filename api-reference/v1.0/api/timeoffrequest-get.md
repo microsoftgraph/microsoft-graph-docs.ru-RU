@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0b0c489699ebd94aa78b9ff3c2fe8730dc9a76d0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b640615a75c8677d867f11b8f1793e1a16602cff
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59049874"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61016042"
 ---
 # <a name="get-timeoffrequest"></a>Get timeOffRequest
 
@@ -46,7 +46,7 @@ GET /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timeOffRequests/{ti
 [!INCLUDE [sample-code](../includes/snippets/java/get-timeoffrequest-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-timeoffrequest-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ---
@@ -95,7 +99,7 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timeOffRequests/{ti
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

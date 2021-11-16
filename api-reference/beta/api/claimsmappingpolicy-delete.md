@@ -1,16 +1,16 @@
 ---
 title: Удаление утвержденийMappingPolicy
 description: Удаление утвержденийMappingPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: paulgarn
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 648ec58817caa99518625c83bfd24e8fbef4a9aa
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 58f38a6708d801e89a10a250c53913954b461365
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437746"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60975796"
 ---
 # <a name="delete-claimsmappingpolicy"></a>Удаление утвержденийMappingPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "50437746"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.ApplicationConfiguration |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Policy.ReadWrite.ApplicationConfiguration |
+| Для приложений                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ DELETE /policies/claimsMappingPolicies/{id}
 |:--------------|:--------------|
 | Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/policies/claimsMappingPolicies/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-claimsmappingpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-claimsmappingpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

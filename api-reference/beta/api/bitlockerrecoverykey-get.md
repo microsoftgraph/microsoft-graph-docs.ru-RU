@@ -2,15 +2,15 @@
 title: Get bitlockerRecoveryKey
 description: Извлечение свойств и связей объекта bitlockerRecoveryKey.
 author: hafowler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 8ec6a6dda75c1d2c2c597afa8cd677701c8fa21b
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: b2da9d432f7828b9240c56a37e731147598feba1
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533246"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60990755"
 ---
 # <a name="get-bitlockerrecoverykey"></a>Get bitlockerRecoveryKey
 Пространство имен: microsoft.graph
@@ -28,7 +28,7 @@ ms.locfileid: "53533246"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|BitLockerKey.ReadBasic.All, BitLockerKey.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|Не поддерживается|
+|Для приложений|Не поддерживается|
 
 >**Примечание:** Для делегирования разрешений, позволяющих приложениям получать ресурсы BitLockerRecoveryKey от имени подписанного пользователя, администратор клиента должен назначить пользователю одну из следующих ролей, либо пользователь должен быть зарегистрированным владельцем устройства, на которое изначально был подписан ключ BitLocker:  
 * Глобальный администратор
@@ -64,14 +64,14 @@ GET /informationProtection/bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'?$s
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
-|ocp-client-name|Имя клиентского приложения, которое выполняет вызов API. Этот загон используется для отладки. Необязательно.|
-|ocp-client-version|Версия клиентского приложения с вызовом API. Этот загон используется для отладки. Необязательно.|
+|Авторизация|Bearer {token}. Обязательный.|
+|ocp-client-name|Имя клиентского приложения, которое выполняет вызов API. Этот загон используется для отладки. Необязательный параметр.|
+|ocp-client-version|Версия клиентского приложения с вызовом API. Этот загон используется для отладки. Необязательный параметр.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) в теле ответа.
 
@@ -109,6 +109,10 @@ ocp-client-version: "1.2"
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-bitlockerrecoverykey-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -170,6 +174,10 @@ GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKey
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-4-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-bitlockerrecoverykey-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

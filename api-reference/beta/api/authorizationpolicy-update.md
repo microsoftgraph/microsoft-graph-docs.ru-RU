@@ -1,16 +1,16 @@
 ---
 title: Обновление авторизации
 description: Обновление свойств объекта authorizationPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 723f8b174a256cc3b739922101f897067594bd43
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 8919f4245c3ba3a48b85b5fc06b4102b852bc96c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786855"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995077"
 ---
 # <a name="update-authorizationpolicy"></a>Обновление авторизацииPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "52786855"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.Authorization|
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Policy.ReadWrite.Authorization|
+| Для приложений                            | Policy.ReadWrite.Authorization|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ PATCH /policies/authorizationPolicy/authorizationPolicy
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,12 +55,12 @@ PATCH /policies/authorizationPolicy/authorizationPolicy
 |description|String| Описание этой политики. |  
 |guestUserRoleId|Guid| Представляет шаблон roleId для роли, которая должна быть предоставлена гостевому пользователю. Чтобы найти список доступных шаблонов ролей, обратитесь к list [unifiedRoleDefinitions.](./rbacapplication-list-roledefinitions.md) Только поддерживаемые роли на сегодняшний день : User `a0b1b346-4d3e-4e8b-98f8-753987be4970` (), Guest User () и Restricted Guest User `10dae51f-b6af-4016-8d66-8c2a99b929b3` `2af84b1e-32c8-42b7-82bc-daa82404023b` (). | 
 |enabledPreviewFeatures|Коллекция (строка)| Список функций, включенных для личного предварительного просмотра в клиенте. | 
-|blockMsolPowerShell|Логический| Чтобы отключить использование MSOL PowerShell, установите это свойство `true` . Это также отключит доступ пользователей к конечной точке устаревшей службы, используемой MSOL PowerShell. Это не влияет на azure AD Подключение Microsoft Graph. | 
+|blockMsolPowerShell|Логическое| Чтобы отключить использование MSOL PowerShell, установите это свойство `true` . Это также отключит доступ пользователей к конечной точке устаревшей службы, используемой MSOL PowerShell. Это не влияет на azure AD Подключение Microsoft Graph. | 
 |defaultUserRolePermissions|[defaultUserRolePermissions](../resources/defaultUserRolePermissions.md)| Указывает определенные настраиваемые разрешения для роли пользователя по умолчанию. | 
-|allowedToUseSSPR|Логический| Указывает, можно ли использовать Self-Serve сброса пароля пользователями клиента. | 
-|allowedToSignUpEmailBasedSubscriptions|Логический| Указывает, могут ли пользователи подписываться на подписки на основе электронной почты. | 
-|allowEmailVerifiedUsersToJoinOrganization|Логический| Указывает, может ли пользователь присоединиться к клиенту по проверке электронной почты. |
-| permissionGrantPolicyIdsAssignedToDefaultUserRole | Коллекция строк | Указывает, разрешено ли согласие пользователя на приложения, [](/azure/active-directory/manage-apps/manage-app-consent-policies) и если это так, то какая политика согласия приложения регулирует разрешение для пользователей на предоставление согласия. Значения должны быть в формате , где находится id встроенной или настраиваемой политики согласия `managePermissionGrantsForSelf.{id}` `{id}` [приложения.](/azure/active-directory/manage-apps/manage-app-consent-policies)  Пустой список указывает, что согласие пользователя на приложения отключено. |
+|allowedToUseSSPR|Логическое| Указывает, можно ли использовать Self-Serve сброса пароля пользователями клиента. | 
+|allowedToSignUpEmailBasedSubscriptions|Логическое| Указывает, могут ли пользователи подписываться на подписки на основе электронной почты. | 
+|allowEmailVerifiedUsersToJoinOrganization|Логическое| Указывает, может ли пользователь присоединиться к клиенту по проверке электронной почты. |
+| permissionGrantPolicyIdsAssignedToDefaultUserRole | Коллекция объектов string | Указывает, разрешено ли согласие пользователя на приложения, [](/azure/active-directory/manage-apps/manage-app-consent-policies) и если это так, то какая политика согласия приложения регулирует разрешение для пользователей на предоставление согласия. Значения должны быть в формате , где находится id встроенной или настраиваемой политики согласия `managePermissionGrantsForSelf.{id}` `{id}` [приложения.](/azure/active-directory/manage-apps/manage-app-consent-policies)  Пустой список указывает, что согласие пользователя на приложения отключено. |
 
 ## <a name="response"></a>Отклик
 
@@ -137,6 +137,10 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-preview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-preview-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>Отклик
@@ -184,6 +188,10 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-blockmsolpowershell-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-blockmsolpowershell-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -238,6 +246,10 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-applications-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-applications-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>Отклик
@@ -286,6 +298,10 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-sspr-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-sspr-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -340,6 +356,10 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-disableuserconsent-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-disableuserconsent-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -391,6 +411,10 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-enableuserconsentlow-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-enableuserconsentlow-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

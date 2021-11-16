@@ -5,12 +5,12 @@ description: Публикация типа контента, присутств�
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 6f7d477fd9a18ec0a9425b91de07b4acb65c44db
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 6777206c94e91bc7828281a5fbc7db44d4d010b1
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730153"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61006613"
 ---
 # <a name="contenttype-publish"></a>contentType: публикация
 Пространство имен: microsoft.graph
@@ -79,6 +79,10 @@ POST https://graph.microsoft.com/v1.0/sites/{siteId}/contentTypes/{contentTypeId
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/contenttype-publish-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/contenttype-publish-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

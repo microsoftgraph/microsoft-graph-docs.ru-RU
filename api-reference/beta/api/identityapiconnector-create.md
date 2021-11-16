@@ -2,15 +2,15 @@
 title: Создание identityApiConnector
 description: Создание нового объекта identityApiConnector.
 author: nickgmicrosoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 06515ca0ca1f302ee94cb06e7a58c5dcae518c1b
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: cd614ddce1ba2391dc5b1b01f9e9c75fdb3dbd09
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508861"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60986270"
 ---
 # <a name="create-identityapiconnector"></a>Создание identityApiConnector
 
@@ -28,12 +28,12 @@ ms.locfileid: "51508861"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | APIConnectors.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.  |
-| Приложение                            | APIConnectors.ReadWrite.All |
+| Для приложений                            | APIConnectors.ReadWrite.All |
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока внешних пользователей удостоверений
+* Администратор внешних Flow удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,7 +50,7 @@ POST /identity/apiConnectors
 
 | Имя          | Описание                 |
 | :------------ | :-------------------------- |
-| Авторизация | Bearer {токен}. Обязательный.   |
+| Авторизация | Bearer {token}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -61,8 +61,8 @@ POST /identity/apiConnectors
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String| Имя соединитетеля API. |
-|targetUrl|String| URL-адрес конечной точки API для вызова. |
+|displayName|Строка| Имя соединитетеля API. |
+|targetUrl|Строка| URL-адрес конечной точки API для вызова. |
 |проверка подлинностиКонфигурация|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|Объект, описывая сведения о конфигурации проверки подлинности для вызова API. [Поддерживается базовая](../resources/basicauthentication.md) проверка подлинности и [клиентский сертификат PKCS 12.](../resources/pkcs12certificate.md)|
 
 ## <a name="response"></a>Отклик
@@ -113,6 +113,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-identityapiconnector-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-identityapiconnector-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

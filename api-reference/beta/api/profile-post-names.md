@@ -1,16 +1,16 @@
 ---
 title: Создание personName
 description: Используйте этот API, чтобы создать новое имя пользователя в профиле пользователя.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: f29c138fbf2a0dfe374111bfa6f9d2511f5e62b5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d1c77eab002d194f3de3992d68533e2823d45fcd
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52036886"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61007642"
 ---
 # <a name="create-personname"></a>Создание personName
 
@@ -43,7 +43,7 @@ POST /users/{id | userPrincipalName}/profile/names
 
 | Имя           |Описание                  |
 |:---------------|:----------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.   |
+| Авторизация  | Bearer {token}. Обязательный.   |
 | Content-Type   | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,20 +53,20 @@ POST /users/{id | userPrincipalName}/profile/names
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|displayName|String|Предоставляет упорядоченную отрисовку firstName и lastName в зависимости от локализа пользователя или устройства.|
-|во-первых|String|Имя пользователя.|
+|allowedAudiences|Строка|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|displayName|Строка|Предоставляет упорядоченную отрисовку firstName и lastName в зависимости от локализа пользователя или устройства.|
+|во-первых|Строка|Имя пользователя.|
 |id|String|Идентификатор, используемый для индивидуального обращения к объекту. Унаследованный от [сущности](../resources/entity.md)|
 |вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |initials|String|Инициалы пользователя.|
-|LanguageTag|String|Содержит имя языка (en-US, no-NB, ru-AU) в формате IETF BCP47.   |
-|последний|String|Фамилия пользователя.|
-|maiden|String|Девичья фамилия пользователя. |
-|средний|String|Среднее имя пользователя.|
-|nickname|String|Прозвище пользователя.|
+|LanguageTag|Строка|Содержит имя языка (en-US, no-NB, ru-AU) в формате IETF BCP47.   |
+|последний|Строка|Фамилия пользователя.|
+|maiden|Строка|Девичья фамилия пользователя. |
+|средний|Строка|Среднее имя пользователя.|
+|nickname|Строка|Прозвище пользователя.|
 |произношение|[yomiPersonName](../resources/yomipersonname.md)|Руководство по произносить имя пользователей.|
-|суффикс|String|Назначенные элементы, используемые после имени пользователей (например: PhD.)  |
-|title|String|Honorifics used to prefix a users name (eg: Dr, Sir, Msam, Mrs.)|
+|суффикс|Строка|Назначенные элементы, используемые после имени пользователей (например: PhD.)  |
+|title|Строка|Honorifics used to prefix a users name (eg: Dr, Sir, Msam, Mrs.)|
 
 ## <a name="response"></a>Отклик
 
@@ -112,6 +112,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-personname-from-profilev2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-personname-from-profilev2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

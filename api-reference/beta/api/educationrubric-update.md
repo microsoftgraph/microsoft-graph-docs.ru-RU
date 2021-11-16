@@ -1,16 +1,16 @@
 ---
 title: Обновление educationRubric
 description: Обновление свойств объекта educationRubric.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 50e3d9a675a6052f6eb2f26b5ed28a3395b77063
-ms.sourcegitcommit: 40a8e4b9e344811267025e23c372a6e60e31a1b9
+ms.openlocfilehash: 18542960b1af086a388b06ae6a6dfe04f96009c8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/01/2021
-ms.locfileid: "52119000"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60975250"
 ---
 # <a name="update-educationrubric"></a>Обновление educationRubric
 
@@ -45,7 +45,7 @@ PATCH /education/classes/{id}/assignments/{id}/rubric
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -54,7 +54,7 @@ PATCH /education/classes/{id}/assignments/{id}/rubric
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |description|itemBody|Описание этой рубрики.|
-|displayName|String|Название этой рубрики.|
+|displayName|Строка|Название этой рубрики.|
 |классификация|educationAssignmentGradeType|Имеет ли эта рубрика очки или нет.|
 |уровни|коллекция rubricLevel|Коллекция уровней, в которые состоит эта рубрика.|
 |качества|rubricQuality collection|Коллекция качеств, из которых состоит эта рубрика.|
@@ -97,6 +97,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationrubric-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-educationrubric-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

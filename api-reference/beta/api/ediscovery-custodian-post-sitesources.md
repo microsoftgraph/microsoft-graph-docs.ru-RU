@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: ae184c5a2d9c1688138ec2ae2377532b70e70bac
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: a5191aa1cf4dbad838cffa6dea7beb47bd0aa0de
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60934665"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60986963"
 ---
 # <a name="create-custodian-sitesource"></a>Создание сайта-хранителяSource
 
@@ -56,7 +56,7 @@ POST /compliance/ediscovery/cases/{caseId}/custodians/{custodianId}/siteSources
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|site|String|URL-адрес сайта; например, `https://contoso.sharepoint.com/sites/HumanResources` .|
+|site|Строка|URL-адрес сайта; например, `https://contoso.sharepoint.com/sites/HumanResources` .|
 
 ## <a name="response"></a>Отклик
 
@@ -100,6 +100,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-sitesource-from--1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-sitesource-from--1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

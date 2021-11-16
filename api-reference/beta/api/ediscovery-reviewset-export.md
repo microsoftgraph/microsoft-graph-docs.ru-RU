@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: dde236b960cc13eb8d07cee1a69f11eca6b1281c
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 577f219e004b790ab144715dbcccaf5c29e94492
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60943495"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60998654"
 ---
 # <a name="reviewset-export"></a>reviewSet: экспорт
 
@@ -56,9 +56,9 @@ POST /compliance/ediscovery/cases/{caseId}/reviewsets/{reviewsetId}/export
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|outputName|String| Имя экспорта. Обязательный. |
-|description|String| Описание экспорта |
-|azureBlobContainer|String| При экспорте в собственную учетную запись хранения Azure это URL-адрес контейнера. |
+|outputName|Строка| Имя экспорта. Обязательный. |
+|description|Строка| Описание экспорта |
+|azureBlobContainer|Строка| При экспорте в собственную учетную запись хранения Azure это URL-адрес контейнера. |
 |azureBlobToken|String| При экспорте на собственную учетную запись хранения Azure маркер SAS для URL-адреса контейнера. |
 |ExportOptions| [microsoft.graph.ediscovery.exportOptions](../resources/ediscovery-caseexportoperation.md#exportoptions-values) |Указывает параметры, которые контролируют формат экспорта. Возможные значения: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
 |exportStructure|[microsoft.graph.ediscovery.exportFileStructure](../resources/ediscovery-caseexportoperation.md#exportfilestructure-values)| Параметры, которые контролируют структуру файлов и упаковку экспорта. Возможные значения: `none`, `directory`, `pst`.|
@@ -104,6 +104,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/reviewset-export-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/reviewset-export-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

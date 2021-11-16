@@ -1,16 +1,16 @@
 ---
 title: Создание extensionProperty
-description: Создайте новый extensionProperty.
-localization_priority: Normal
+description: Создайте новое расширениеProperty.
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: e1266797975a3c516bff86c453cde74ea73767f1
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: c8d8d0df41485faac0ed1a61fe73d357258addd7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129102"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983051"
 ---
 # <a name="create-extensionproperty"></a>Создание extensionProperty
 
@@ -18,7 +18,7 @@ ms.locfileid: "50129102"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новое [определение extensionProperty.](../resources/extensionproperty.md) Эту операцию можно использовать для добавления значения настраиваемого свойства к целевому типу объекта, определенному в extensionProperty, с помощью стандартных запросов на создание и обновление целевого объекта.
+Создайте новое [определение extensionProperty.](../resources/extensionproperty.md) Эту операцию можно использовать для добавления настраиваемого значения свойства к целевому типу объекта, определенному в extensionProperty, с помощью стандартных запросов на создание и обновление целевого объекта.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -41,24 +41,24 @@ POST /applications/{id}/extensionProperties
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:-----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса [укажите объект extensionProperty](../resources/extensionproperty.md) следующими свойствами.
+В теле запроса уделяем [объекту extensionProperty](../resources/extensionproperty.md) следующие свойства.
 
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|dataType|String| Указывает тип данных значения, в который может вметь свойство расширения. Поддерживаются следующие значения. Значение null не допускается. <ul><li>`Binary` - Не более 256байт</li><li>`Boolean`</li><li>`DateTime` - Должен быть указан в формате ISO 8601. Данные времени будут храниться в формате UTC.</li><li>`Integer` - 32-битное значение.</li><li>`LargeInteger` - 64-битное значение.</li><li>`String` — не более 256 символов</li></ul>|
+|dataType|String| Указывает тип данных значения, который может удерживать свойство расширения. Поддерживаются следующие значения. Значение null не допускается. <ul><li>`Binary` - максимум 256 bytes</li><li>`Boolean`</li><li>`DateTime` - Должен быть указан в формате ISO 8601. Данные времени будут храниться в формате UTC.</li><li>`Integer` - 32-битное значение.</li><li>`LargeInteger` - 64-битное значение.</li><li>`String` - максимум 256 символов</li></ul>|
 |name|String| Имя свойства расширения. Значение null не допускается. |
-|targetObjects|Коллекция объектов string| Поддерживаются следующие значения. Значение null не допускается. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
+|targetObjects|Коллекция String| Поддерживаются следующие значения. Значение null не допускается. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и новый `201, Created` [объект extensionProperty](../resources/extensionproperty.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201, Created` новый [объект extensionProperty](../resources/extensionproperty.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -100,12 +100,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-extensionproperty-from-application-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-extensionproperty-from-application-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `201 Created` [extensionProperty](../resources/extensionProperty.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и `201 Created` [объект extensionProperty](../resources/extensionProperty.md) в тексте ответа.
 
 <!-- {
   "blockType": "response",

@@ -3,15 +3,15 @@ author: JeremyKelley
 description: Создание списка на сайте.
 ms.date: 09/11/2017
 title: Создание списка SharePoint
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: b92c29934fe7d01f4aaef712c231db7f7eac6336
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 0db8c7980e7731a79c4e2a2577619187ec20cd36
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50472204"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60997968"
 ---
 # <a name="create-a-new-list"></a>Создание списка
 
@@ -88,6 +88,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-list-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-list-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -128,7 +132,7 @@ Content-type: application/json
 **Примечание.** Ответ усечен для наглядности.
 При фактическом вызове будут возвращены свойства, используемые по умолчанию.
 
-[списке]: ../resources/list.md
+[list]: ../resources/list.md
 [site]: ../resources/site.md
 
 <!--

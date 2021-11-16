@@ -1,29 +1,29 @@
 ---
-title: 'application: removeKey'
+title: 'приложение: removeKey'
 description: Удаление учетных данных ключа из приложения
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: a02d731866ef831d3e2e2208a4a0ee9f535e1ed8
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: cdeb0c356d94af01cad84af2c3983d0466944c01
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129060"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982903"
 ---
-# <a name="application-removekey"></a>application: removeKey
+# <a name="application-removekey"></a>приложение: removeKey
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите учетные данные ключа из [приложения.](../resources/application.md) Этот метод вместе с [addKey](application-addkey.md) может использоваться приложением для автоматизации перетаскивания ключей окончания срока действия.
+Удаление учетных данных ключей из [приложения.](../resources/application.md) Этот метод вместе с [addKey](application-addkey.md) можно использовать приложением для автоматизации проката истекающих ключей.
 
 > [!NOTE]
-> [Операции создания servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) и [Update servicePrincipal](../api/serviceprincipal-update.md) можно продолжать использовать для добавления и обновления учетных данных ключей для любого приложения с контекстом приложения или пользователя.
+> [Создание службыPrincipal](../api/serviceprincipal-post-serviceprincipals.md) и [Update servicePrincipal](../api/serviceprincipal-update.md) можно продолжать использовать для добавления и обновления учетных данных для любого приложения с приложением или контекстом пользователя.
 
-В рамках проверки запроса для этого метода перед выполнением действия проверяется подтверждение на владение существующим ключом.
+В рамках проверки запроса для этого метода проверяется доказательство на наличие существующего ключа перед выполнением действия.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -34,7 +34,7 @@ ms.locfileid: "50129060"
 |Приложение | Нет. |
 
 > [!NOTE] 
-> Приложению не требуется никаких специальных разрешений для переката собственных ключей.
+> Приложение не нуждается в специальном разрешении для сверки собственных ключей.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,17 +48,17 @@ POST /applications/{id}/removeKey
 
 | Имя           | Описание                |
 |:---------------|:---------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type   | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажив следующие необходимые свойства.
+В теле запроса укажи следующие необходимые свойства.
 
 | Свойство  | Тип | Описание|
 |:----------|:-----|:-----------|
 | keyId     | GUID | Уникальный идентификатор пароля.|
-| proof | Строка | Самозаверяющая маркер JWT, используемая в качестве подтверждения владения существующими ключами. Маркер JWT должен быть подписан с использованием закрытого ключа одного из существующих действительных сертификатов приложения. Маркер должен содержать следующие утверждения:<ul><li>`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</li><li>`iss` — издателем должен быть __идентификатор__  приложения, выполняющего вызов.</li><li>`nbf` — вовремя.</li><li>`exp` — сроком действия должно быть значение "nbf" + 10 минут.</li></ul><br>Вот пример [кода, который](/graph/application-rollkey-prooftoken) можно использовать для создания этого подтверждения маркера владения.|
+| доказательство | String | Самозаверяемый маркер JWT, используемый в качестве доказательства владения существующими ключами. Маркер JWT должен быть подписан с использованием закрытого ключа одного из существующих действительных сертификатов приложения. Маркер должен содержать следующие утверждения:<ul><li>`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</li><li>`iss` — издателем должен быть __идентификатор__  приложения, выполняющего вызов.</li><li>`nbf` — вовремя.</li><li>`exp` - Срок действия должен `nbf` быть + 10 минут.</li></ul><br>О действиях по созданию этого доказательства маркера владения см. в журнале [Generating proof of possession tokens for rolling keys.](/graph/application-rollkey-prooftoken)|
 
 ## <a name="response"></a>Отклик
 
@@ -66,7 +66,7 @@ POST /applications/{id}/removeKey
 
 ## <a name="examples"></a>Примеры
 
-Ниже показано, как вызвать этот API.
+В следующем примере показано, как вызвать этот API.
 
 ### <a name="request"></a>Запрос
 
@@ -102,6 +102,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/application-removekey-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/application-removekey-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

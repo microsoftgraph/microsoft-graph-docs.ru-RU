@@ -2,15 +2,15 @@
 title: Обновление группы маршрутизации звука
 description: Изменение источников и приемников audioRoutingGroup.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6e8bfe43529632988249206a0d84cc6e50e8324e
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c5aafe6f290af213fba6d2bc9f0fac835d75c512
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048010"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995336"
 ---
 # <a name="update-audio-routing-group"></a>Обновление группы маршрутизации звука
 
@@ -27,7 +27,7 @@ ms.locfileid: "52048010"
 | :-------------- | :--------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                       |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
-| Приложение     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Для приложений     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ PATCH /communications/calls/{id}/audioRoutingGroups/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
@@ -49,7 +49,7 @@ PATCH /communications/calls/{id}/audioRoutingGroups/{id}
 |:---------------|:--------|:----------|
 | приемники | Коллекция объектов string | Целевые участники audioRoutingGroup. |
 | routingMode | String | Возможные значения: `oneToOne`, `multicast`. |
-| sources | Коллекция объектов string | Исходный участник в audioRoutingGroup. |
+| sources | Коллекция String | Исходный участник в audioRoutingGroup. |
 
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект audioRoutingGroup](../resources/audioroutinggroup.md) в тексте ответа.
@@ -95,6 +95,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-audioroutinggroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-audioroutinggroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

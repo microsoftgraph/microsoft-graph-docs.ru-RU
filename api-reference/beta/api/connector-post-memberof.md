@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 6ce5cab018bff46070550f397cdebed06219dfbe
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 530fb08ab621385f3848bf2f3dbb79611efefc29
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60939758"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61005494"
 ---
 # <a name="add-connector-to-connectorgroup"></a>Добавление соединителя для connectorGroup
 
@@ -37,7 +37,7 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf/$re
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Носителер. Обязательно|
+| Authorization  | Носителер. Обязательно|
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса поставляем представление JSON объекта [connectorGroup.](../resources/connectorgroup.md)
@@ -77,6 +77,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-connectorgroup-from-connector-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-connectorgroup-from-connector-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

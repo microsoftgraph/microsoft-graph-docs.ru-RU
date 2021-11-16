@@ -2,15 +2,15 @@
 title: Список recoveryKeys
 description: Получите список объектов bitlockerRecoveryKey и их свойств.
 author: hafowler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5f3820783530836a6b4afaf0637f69e95090fee7
-ms.sourcegitcommit: a598c09b73e4e43eea5f4aaefea7ffe062e15c39
+ms.openlocfilehash: b92ca31c75b13592322f48ed0832bd29a12469ab
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "53533236"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60999765"
 ---
 # <a name="list-recoverykeys"></a>Список recoveryKeys
 Пространство имен: microsoft.graph
@@ -28,9 +28,10 @@ ms.locfileid: "53533236"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|BitLockerKey.ReadBasic.All, BitLockerKey.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|Не поддерживается|
+|Для приложений|Не поддерживается|
 
->**Примечание.** Для делегирования разрешений, позволяющих приложениям получать ресурсы BitLockerRecoveryKey от имени подписанного пользователя, администратор клиента должен был назначить пользователю одну из следующих ролей, либо пользователь должен быть зарегистрированным владельцем устройства, на которое изначально был отыскирован ключ восстановления BitLocker: 
+Для делегирования разрешений, позволяющих приложениям получать ресурсы BitLockerRecoveryKey от имени подписанного пользователя, пользователь должен быть зарегистрированным владельцем устройства, на которое изначально был восстановлен ключ восстановления BitLocker, или вызывающее пользователь должно быть в одной из следующих ролей каталога:
+
 * Глобальный администратор
 * Администратор облачных устройств
 * Администратор службы поддержки
@@ -68,14 +69,14 @@ GET /informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
-|ocp-client-name|Имя клиентского приложения, которое выполняет вызов API. Этот загон используется для отладки. Необязательно.|
-|ocp-client-version|Версия клиентского приложения с вызовом API. Этот загон используется для отладки. Необязательно.|
+|Авторизация|Bearer {token}. Обязательный.|
+|ocp-client-name|Имя клиентского приложения, которое выполняет вызов API. Этот загон используется для отладки. Необязательный параметр.|
+|ocp-client-version|Версия клиентского приложения с вызовом API. Этот загон используется для отладки. Необязательный параметр.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объектов bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) в теле ответа.
 
@@ -114,6 +115,10 @@ ocp-client-version: "1.2"
 [!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-bitlockerrecoverykey-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -121,7 +126,7 @@ ocp-client-version: "1.2"
 #### <a name="response"></a>Отклик
 Ниже приведен пример ответа.
 
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -185,6 +190,10 @@ ocp-client-version: "1.2"
 [!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-bitlockerrecoverykey-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -192,7 +201,7 @@ ocp-client-version: "1.2"
 #### <a name="response"></a>Отклик
 Ниже приведен пример ответа.
 
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

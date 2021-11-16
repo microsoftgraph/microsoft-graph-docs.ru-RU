@@ -5,12 +5,12 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c940ad7024d1c1371f5d7a7002fac97b9632bf3f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d4c5b72281f9716110b019a3b6945dd6388fa1bf
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59147383"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60979058"
 ---
 # <a name="educationschool-delta"></a>educationSchool: delta
 
@@ -43,15 +43,15 @@ GET /education/schools/delta
 
 | Имя          | Описание               |
 | :------------ | :------------------------ |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы эта функция возвращает код отклика и `200 OK` [коллекцию educationSchool](../resources/educationschool.md) в тексте ответа. Оклик также содержит URL-адрес `nextLink` или `deltaLink`.
+В случае успешной работы эта функция возвращает код отклика и `200 OK` [коллекцию educationSchool](../resources/educationschool.md) в тексте ответа. Отклик также содержит URL-адрес `nextLink` или `deltaLink`.
 
 - Если возвращается URL-адрес `nextLink`, это означает, что во время сеанса получены не все страницы данных. Приложение продолжает отправлять запросы, используя URL-адрес `nextLink`, пока в ответ не будет включен URL-адрес `deltaLink`.
 - Если возвращается URL-адрес `deltaLink`, это означает, что больше нет данных о текущем состоянии ресурса. Сохраните и используйте `deltaLink` URL-адрес, чтобы узнать об изменениях в ресурсе в будущем.
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/v1.0/education/schools/delta
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/educationschool-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/educationschool-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
