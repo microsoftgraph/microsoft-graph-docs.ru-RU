@@ -1,16 +1,16 @@
 ---
 title: Остановка accessReview
 description: В функции обзоров доступа Azure AD остановите активный accessReview.  Целевой объект может быть либо одноразовой проверкой доступа, либо экземпляром повторного обзора доступа.  (Чтобы повторный обзор доступа не запускал будущие экземпляры, обнови его, чтобы изменить запланированную дату окончания).  После остановки проверки доступа рецензенты больше не могут вводить ввод, и можно применять решения о проверке доступа.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9ca0dffdc48e059e303e05afac791a8d431f5600
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 487ab54eb9cfa5fd5788af1f4dc5b35078f6294a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751017"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60992172"
 ---
 # <a name="stop-accessreview"></a>Остановка accessReview
 
@@ -26,7 +26,7 @@ ms.locfileid: "52751017"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение                            | AccessReview.ReadWrite.Membership  |
+|Для приложений                            | AccessReview.ReadWrite.Membership  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -70,6 +70,10 @@ POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F0
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/stop-accessreview-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/stop-accessreview-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

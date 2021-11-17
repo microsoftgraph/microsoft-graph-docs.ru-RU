@@ -1,16 +1,16 @@
 ---
 title: List programControls
 description: В функции обзоров доступа Azure AD перечислить все объекты programControl во всех программах клиента.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: a08b1c476b5e91032c0156a4d7c88d9d79849637
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 95c4f7c3c637f5a84b258aa12be695fb359873df
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055220"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60980005"
 ---
 # <a name="list-programcontrols"></a>List programControls
 
@@ -26,7 +26,7 @@ ms.locfileid: "52055220"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
+|Для приложений                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
 
 Подписанный пользователь также должен быть в роли каталога, которая позволяет им читать программу.
 
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/programControls
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-programcontrol-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-programcontrol-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: Создание соглашения
 description: Создание нового объекта соглашения.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 53d11dc97d2662906e06b661cd967d5536419a86
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 967f81da4b5f1b33eed421677b1dfd45487d61ea
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048206"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987418"
 ---
 # <a name="create-agreement"></a>Создание соглашения
 
@@ -51,11 +51,11 @@ POST /identityGovernance/termsOfUse/agreements
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |displayName|String|Отображение имени соглашения.|
-|isViewingBeforeAcceptanceRequired|Логический|Указывает, должен ли пользователь расширять и просматривать соглашение перед принятием.|
+|isViewingBeforeAcceptanceRequired|Логическое|Указывает, должен ли пользователь расширять и просматривать соглашение перед принятием.|
 |files/fileName|String|Имя файла соглашения (например, TOU.pdf).|
-|files/isDefault|Логический|Указывает, является ли это файл соглашения по умолчанию, если ни одна из культур не соответствует предпочтениям клиента. Если ни один файл не помечен как по умолчанию, первый будет рассматриваться как по умолчанию.|
+|files/isDefault|Логическое|Указывает, является ли это файл соглашения по умолчанию, если ни одна из культур не соответствует предпочтениям клиента. Если ни один файл не помечен как по умолчанию, первый будет рассматриваться как по умолчанию.|
 |файлы/язык|String|Культура файла соглашения в формате languagecode2-country/regioncode2. languagecode2 — это код из двух букв более низкого уровня, полученный из ISO 639-1. country/regioncode2 является производным от ISO 3166 и обычно состоит из двух верхних букв или языкового тега BCP-47 (например, en-US).|
-|файлы/fileData/data|В двоичном формате|Данные, представляющие условия использования документа PDF.|
+|файлы/fileData/data|Двоичный|Данные, представляющие условия использования документа PDF.|
 
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код ответа и объект `201, Created` соглашения в тексте ответа. [](../resources/agreement.md)
@@ -104,6 +104,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-agreement-from-agreements-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-agreement-from-agreements-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

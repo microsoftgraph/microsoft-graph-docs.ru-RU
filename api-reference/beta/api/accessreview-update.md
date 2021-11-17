@@ -1,16 +1,16 @@
 ---
 title: Обновление accessReview
 description: В функции обзоров доступа Azure AD обновим существующий объект accessReview, чтобы изменить одно или несколько его свойств.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 817cf535c68a775c7a90a639e09120e226c46115
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 112d341d2be082d04041dcee50a66ba85af37ebc
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751010"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60988006"
 ---
 # <a name="update-accessreview"></a>Обновление accessReview
 
@@ -30,7 +30,7 @@ ms.locfileid: "52751010"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение                            | AccessReview.ReadWrite.Membership |
+|Для приложений                            | AccessReview.ReadWrite.Membership |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,10 +49,10 @@ PATCH /accessReviews/{reviewId}
 
 | Свойство      | Тип           | Описание                                                                                                |
 |:--------------|:---------------|:-----------------------------------------------------------------------------------------------------------|
-| displayName   | String         | Имя обзора доступа.                                                                                    |
+| displayName   | Строка         | Имя обзора доступа.                                                                                    |
 | startDateTime | DateTimeOffset | DateTime, когда планируется начать проверку.  Это должна быть дата в будущем.                 |
 | endDateTime   | DateTimeOffset | DateTime, когда проверка должна завершиться. Это должно быть по крайней мере на один день позже даты начала. |
-| description   | String         | Описание, чтобы показать рецензентам.                                                                 |
+| description   | Строка         | Описание, чтобы показать рецензентам.                                                                 |
 
 
 
@@ -94,6 +94,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-accessreview-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-accessreview-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

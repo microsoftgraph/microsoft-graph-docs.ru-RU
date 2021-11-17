@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 026b28a2fcaccd0c685a69c85a6d6ceeef98a734
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 673d917bdd7550146c516fb1d6ba5a904cde1b53
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60927122"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60986872"
 ---
 # <a name="update-custodian"></a>Хранители обновлений
 
@@ -54,7 +54,7 @@ PATCH /compliance/ediscovery/cases/{caseId}/custodians/{custodianId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|applyHoldToSources|Логический|Определяет, были ли приодержится источники хранителя во время создания.|
+|applyHoldToSources|Логическое|Определяет, были ли приодержится источники хранителя во время создания.|
 
 ## <a name="response"></a>Ответ
 
@@ -94,6 +94,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-custodian-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-custodian-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: List accessReviewInstance
 description: Извлечение объектов accessReviewInstance.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 52844146764ffb85be50a9c8d8609b466a88ba2e
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 1cf49056b15761188a3ae7a10fd82006d3a6a283
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030528"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987845"
 ---
 # <a name="list-accessreviewinstance"></a>List accessReviewInstance
 
@@ -29,7 +29,7 @@ ms.locfileid: "53030528"
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
-|Приложение                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
+|Для приложений                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
 В роли каталога должен также быть подписан пользователь, который позволяет им читать обзор доступа. Чтобы просмотреть только те экземпляры, в которые назначен рецензент, см. в примере [List pending access review instances](accessreviewinstance-pendingaccessreviewinstances.md)
 
@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstance-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstance-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

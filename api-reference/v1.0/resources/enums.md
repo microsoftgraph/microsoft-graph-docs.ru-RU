@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 297544f4616c9a455ff519480b5a95e9db7953f0
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: a7691215089789fcc9eb911ca8cb9a6d14e953e1
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688397"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60973474"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -364,7 +364,7 @@ ms.locfileid: "60688397"
 
 |Member|
 |:---|
-|Нет|
+|Никаких других изменений не происходит|
 |SecurityGroup|
 |Все|
 
@@ -420,7 +420,7 @@ ms.locfileid: "60688397"
 |относительный|1| Родственник пользователя.|
 |помощник|2| Помощник пользователя.|
 |врач|3| Врач пользователя.|
-|guardian|4 | Хранитель пользователя.|
+|guardian|4| Хранитель пользователя.|
 |child|5| Ребенок пользователя.|
 |другие|6 | Неустановленное отношение к пользователю.|
 |unknownFutureValue|7 | Значение маркера для будущей совместимости.|
@@ -507,7 +507,7 @@ ms.locfileid: "60688397"
 | предварительная         | 1
 | занят              | 2
 | oof               | 3
-| workingElsewhere  | 4 
+| workingElsewhere  | 4
 | unknown           | –1
 
 
@@ -547,7 +547,7 @@ ms.locfileid: "60688397"
 | lightGreen | 1
 | lightOrange| 2
 | lightGray  | 3
-| lightYellow| 4 
+| lightYellow| 4
 | lightTeal  | 5
 | lightPink  | 6 
 | lightBrown | 7 
@@ -885,7 +885,7 @@ ms.locfileid: "60688397"
 | preset1  | 1
 | preset2  | 2
 | preset3  | 3
-| preset4  | 4 
+| preset4  | 4
 | preset5  | 5
 | preset6  | 6 
 | preset7  | 7 
@@ -894,7 +894,7 @@ ms.locfileid: "60688397"
 | preset10 | 10 
 | preset11 | 11
 | preset12 | 12 
-| preset13 | 13 
+| preset13 | 13
 | preset14 | 14 
 | preset15 | 15 
 | preset16 | 16
@@ -928,7 +928,7 @@ Enum для типов hash файла.
 |sha1|1|Тип hash SHA1.|
 |sha256|2| Тип hash SHA256.|
 |md5|3| Тип hash MD5.|
-|authenticodeHash256|4 | Тип hash AuthenticodeHash256.|
+|authenticodeHash256|4| Тип hash AuthenticodeHash256.|
 |lsHash|5| Тип hash LsHash.|
 |ctph|6 | Тип хаши CTPH.|
 |peSha1|7 | Тип hash PESHA1.|
@@ -954,7 +954,7 @@ Enum для состояния подключений.
 |попытка|1|Попытка подключения.|
 |успешно|2| Подключение удалось.|
 |заблокировано|3| Подключение заблокировано.|
-|не удалось|4 | Сбой подключения.|
+|не удалось|4| Сбой подключения.|
 
 ### <a name="processintegritylevel-values"></a>значения processIntegrityLevel
 
@@ -979,7 +979,7 @@ Enum для ульев реестра, как [определено /windows/des
 |currentConfig|1|HKEY_CURRENT_CONFIG улей.|
 |currentUser|2| HKEY_CURRENT_USER улей.|
 |localMachineSam|3| HKEY_LOCAL_MACHINE\SAM улей.|
-|localMachineSamSoftware|4 | HKEY_LOCAL_MACHINE\Software улей.|
+|localMachineSamSoftware|4| HKEY_LOCAL_MACHINE\Software улей.|
 |localMachineSystem|5| HKEY_LOCAL_MACHINE\System улей.|
 |usersDefault|6 | HKEY_USERS \\ . Улей DEFAULT.|
 
@@ -1004,7 +1004,7 @@ Enum для типов значений реестра, определяемог
 |двоичный|1|REG_BINARY типа значения реестра.|
 |dword|2| REG_DWORD типа значения реестра.|
 |dwordLittleEndian|3| REG_DWORD_LITTLE_ENDIAN типа значения реестра.|
-|dwordBigEndian|4 | REG_DWORD_BIG_ENDIAN тип значения реестра.|
+|dwordBigEndian|4| REG_DWORD_BIG_ENDIAN тип значения реестра.|
 |expandSz|5| REG_EXPAND_SZ тип значения реестра.|
 |link|6 | REG_LINK тип значения реестра.|
 |multiSz|7 | REG_MULTI_SZ тип значения реестра.|
@@ -1023,7 +1023,7 @@ Enum для серьезности оповещений.
 |информационная|1|Строгость только для сведений.|
 |низкий|2| Серьезность низкая.|
 |medium|3| Серьезность является средней.|
-|высокая|4 | Серьезность высока.|
+|высокая|4| Серьезность высока.|
 
 ### <a name="alertstatus-values"></a>значения alertStatus
 
@@ -1056,7 +1056,7 @@ Enum для серьезности оповещений.
 |remoteInteractive|1| Logon — это удаленный интерактивный.|
 |сеть|2| Logon — это сеть.|
 |batch|3| Logon является пакетным.|
-|служба|4 | Logon — это служба.|
+|служба|4| Logon — это служба.|
 
 ### <a name="useraccountsecuritytype-values"></a>Значения userAccountSecurityType
 
@@ -1188,7 +1188,7 @@ Enum для серьезности оповещений.
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| mail   | 1     | Угроза почты.            |
+| почта;   | 1     | Угроза почты.            |
 | url    | 2     | УГРОЗА URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 
@@ -1206,7 +1206,7 @@ Enum для серьезности оповещений.
 | уверенности               | 1     | Угроза нежелательной почты.       |
 | степенью           | 2     | Фишинговая угроза.   |
 | malware            | 3     | Угроза вредоносных программ.    |
-| unknownFutureValue | 4      | Член-часовой. |
+| unknownFutureValue | 4     | Член-часовой. |
 
 ### <a name="threatassessmentstatus-values"></a>значения threatAssessmentStatus
 
@@ -1239,7 +1239,7 @@ Enum для серьезности оповещений.
 | mailFlowRule          | 1     | Exchange правила транспорта.            |
 | safeSender            | 2     | Сейф отправитель.                   |
 | blockedSender         | 3     | Заблокированный список отправитель.                |
-| advancedSpamFiltering | 4      | Расширенный параметр flitering нежелательной почты.     |
+| advancedSpamFiltering | 4     | Расширенный параметр flitering нежелательной почты.     |
 | domainAllowList       | 5     | Список разрешаемой области отправитель.           |
 | domainBlockList       | 6      | Список блоков домена отправитель.           |
 | notInAddressBook      | 7      | Исключить отправитель не в адресной книге. |
@@ -1248,7 +1248,7 @@ Enum для серьезности оповещений.
 | autoPurgeToJunk       | 10     | TimeTravel перемещает сообщение в нежелательное.    |
 | autoPurgeToDeleted    | 11    | TimeTravel перемещает сообщение на удаление. |
 | исходящие              | 12     | Исходящие сообщения.                      |
-| notJunk               | 13     | Разрешить из-за не нежелательной.              |
+| notJunk               | 13    | Разрешить из-за не нежелательной.              |
 | нежелательной                  | 14     | Заблокировано из-за нежелательной почты.                |
 | unknownFutureValue    | 15     | Член-часовой.                  |
 
@@ -1285,7 +1285,7 @@ Enum для серьезности оповещений.
 | Нет | 0 |  Пользователю не разрешается переопределять сообщение. Пользователь не может сообщать о сообщении как о ложном срабатывке, если политикаTip не предоставлена. Во всех остальных сценариях пользователь может сообщить о сообщении как о ложном срабатыве.|
 | AllowFalsePositiveOverride | 1 |  Пользователю не разрешается явно переопределять блок, если он не объедин с `AllowOverrideWithoutJustification` `AllowOverrideWithJustification` флагами или флагами. Сообщение о ложном срабатывии нарушения автоматически переопределяет блок и отправляет сообщение. |
 | AllowOverrideWithoutJustification | 2 | Пользователю разрешено переопределять блок и отправлять сообщение. Текст обоснования не требуется. Эксклюзив `AllowOverrideWithJustification` для . |
-| AllowOverrideWithJustification | 4  |  Пользователю разрешено переопределять блок и отправлять сообщение. Требуется текст обоснования. Эксклюзив `AllowOverrideWithoutJustification` для .|
+| AllowOverrideWithJustification | 4 |  Пользователю разрешено переопределять блок и отправлять сообщение. Требуется текст обоснования. Эксклюзив `AllowOverrideWithoutJustification` для .|
 
 ### <a name="channelmembershiptype-values"></a>Значения channelMembershipType
 
@@ -1461,7 +1461,7 @@ Enum для серьезности оповещений.
 
 | Member                |
 |:----------------------|
-| string                |
+| Строка                |
 | логический               |
 | int64                 |
 | stringCollection      |
@@ -1700,4 +1700,13 @@ Enum для серьезности оповещений.
 |teacher|
 |факультет|
 |другие|
+|unknownFutureValue|
+
+### <a name="advancedconfigstate-values"></a>расширенные значенияConfigState 
+
+|Member|
+|:---|
+|default|
+|включено|
+|отключено|
 |unknownFutureValue|

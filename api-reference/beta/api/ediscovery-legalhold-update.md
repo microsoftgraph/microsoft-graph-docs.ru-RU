@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 44fd89ca07af71959093d1c7c05aac0b87e9a59f
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 726f0d571a71e526e117e5d4e42a710f8aea8979
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60925582"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60986704"
 ---
 # <a name="update-legalhold"></a>Обновление legalHold
 
@@ -54,9 +54,9 @@ PATCH /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|contentQuery|String|Запрос KQL, который указывает содержимое, которое должно быть в указанных расположениях. Дополнительные сведения о KQL в eDiscovery см. в статье [Keyword queries and search conditions for Content Search and eDiscovery.](/microsoft-365/compliance/keyword-queries-and-search-conditions) Чтобы удерживать все содержимое в указанных расположениях, оставьте **contentQuery пустым.** |
-|description|String| Описание юридического удержания. |
-|displayName|String| Отображение имени юридического удержания. |
+|contentQuery|Строка|Запрос KQL, который указывает содержимое, которое должно быть в указанных расположениях. Дополнительные сведения о KQL в eDiscovery см. в статье [Keyword queries and search conditions for Content Search and eDiscovery.](/microsoft-365/compliance/keyword-queries-and-search-conditions) Чтобы удерживать все содержимое в указанных расположениях, оставьте **contentQuery пустым.** |
+|description|Строка| Описание юридического удержания. |
+|displayName|Строка| Отображение имени юридического удержания. |
 |isEnabled|Boolean|Указывает, включено ли удержание и активно ли оно поддерживается. |
 
 ## <a name="response"></a>Ответ
@@ -97,6 +97,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-legalhold-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-legalhold-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

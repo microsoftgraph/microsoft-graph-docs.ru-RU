@@ -2,15 +2,15 @@
 title: Создание accessReviewHistoryDefinition
 description: Создайте новый объект accessReviewHistoryDefinition.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: f266276fae151bd8cc31455c4fd69eab193dd440
-ms.sourcegitcommit: 276a13a37c3772689dfc71f7cd47586c9581f27d
+ms.openlocfilehash: 80f7010e2d8d99038041420ed74a24bb5e2e4a67
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629233"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987916"
 ---
 # <a name="create-accessreviewhistorydefinition"></a>Создание accessReviewHistoryDefinition
 
@@ -28,7 +28,7 @@ ms.locfileid: "52629233"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|AccessReview.ReadWrite.All|
+|Для приложений|AccessReview.ReadWrite.All|
 
 В роли каталога должен также быть подписан пользователь, который позволяет им читать обзор доступа для получения любых данных.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviewsv2-root.md)
 
@@ -46,7 +46,7 @@ POST /identityGovernance/accessReviews/historyDefinitions
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,10 +57,10 @@ POST /identityGovernance/accessReviews/historyDefinitions
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName | Строка  | Имя для сбора данных истории проверки доступа. Обязательный атрибут. |
-|reviewHistoryPeriodStartDateTime  | DateTimeOffset  | Timestamp, отзывы, начиная с этой даты или после нее, будут включены в извлеченные данные истории. Обязательный атрибут.  |
+|displayName | String  | Имя для сбора данных истории проверки доступа. Обязательный. |
+|reviewHistoryPeriodStartDateTime  | DateTimeOffset  | Timestamp, отзывы, начиная с этой даты или после нее, будут включены в извлеченные данные истории. Обязательный.  |
 |reviewHistoryPeriodEndDateTime  | DateTimeOffset  | Timestamp, отзывы, начиная с этой даты или до этой даты, будут включены в извлеченные данные истории. Обязательный.  |
-|scopes|[accessReviewQueryScope](../resources/accessreviewqueryscope.md) collection| Используется для фильтрации отзывов, включенных в извлеченные данные истории. Извлекает отзывы, область которых совпадает с этой предоставленной областью. Обязательный атрибут. <br> Дополнительные возможности [см. в разделах Поддерживаемые запросы области для accessReviewHistoryDefinition.](#supported-scope-queries-for-accessreviewhistorydefinition) |
+|scopes|[accessReviewQueryScope](../resources/accessreviewqueryscope.md) collection| Используется для фильтрации отзывов, включенных в извлеченные данные истории. Извлекает отзывы, область которых совпадает с этой предоставленной областью. Обязательный. <br> Дополнительные возможности [см. в разделах Поддерживаемые запросы области для accessReviewHistoryDefinition.](#supported-scope-queries-for-accessreviewhistorydefinition) |
 
 ### <a name="supported-scope-queries-for-accessreviewhistorydefinition"></a>Поддерживаемые запросы области для accessReviewHistoryDefinition
 
@@ -141,6 +141,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewhistorydefinition-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accessreviewhistorydefinition-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

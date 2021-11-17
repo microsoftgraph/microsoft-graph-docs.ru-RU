@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3eddbcad2a944fe7977faec4bfd3572c9b1465fe
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 2a43386a3f1e0d409eaa464c903b48f55bf1eaba
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60931891"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60974004"
 ---
 # <a name="directoryobject-getavailableextensionproperties"></a>directoryObject: getAvailableExtensionProperties
 Пространство имен: microsoft.graph
@@ -49,7 +49,7 @@ POST /directoryObjects/getAvailableExtensionProperties
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|isSyncedFromOnPremises|Логический|`true` указать, что должны возвращаться только свойства расширения, синхронизированные из локального каталога; чтобы указать, что возвращаются только свойства расширения, не синхронизированные из локального `false` каталога. Если параметр опущен, возвращаются все свойства расширения (как синхронизированные, так и не синхронизированные).|
+|isSyncedFromOnPremises|Логическое|`true` указать, что должны возвращаться только свойства расширения, синхронизированные из локального каталога; чтобы указать, что возвращаются только свойства расширения, не синхронизированные из локального `false` каталога. Если параметр опущен, возвращаются все свойства расширения (как синхронизированные, так и не синхронизированные).|
 
 
 ## <a name="response"></a>Отклик
@@ -88,6 +88,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-getavailableextensionproperties-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/directoryobject-getavailableextensionproperties-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

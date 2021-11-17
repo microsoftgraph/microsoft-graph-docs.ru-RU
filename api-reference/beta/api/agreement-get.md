@@ -1,16 +1,16 @@
 ---
 title: Получение соглашения
 description: Извлечение свойств и связей объекта соглашения.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 96c574b688958b48a90074e4d7b830eba0501677
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2e2aeb5722a57bc6c5e042b84520f9a69c91e127
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048214"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987461"
 ---
 # <a name="get-agreement"></a>Получение соглашения
 
@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/{i
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-agreement-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-agreement-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

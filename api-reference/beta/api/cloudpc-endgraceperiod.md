@@ -5,12 +5,12 @@ author: RuiHou105
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 07b4a1f98e6bea144cc69c64693f4f1a889755ec
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: c20c01fc55f207debeec126f0d85d30ab4f2e277
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765908"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987236"
 ---
 # <a name="cloudpc-endgraceperiod"></a>cloudPC: endGracePeriod
 
@@ -18,7 +18,7 @@ ms.locfileid: "59765908"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Окончание льготного периода для определенного облачного компьютера. Льготный период запускается при удалении лицензии на облачный КОМПЬЮТЕР или не назначена политика провизии. Он позволяет пользователям получать доступ к облачным ПК до семи дней до начала расшифки. Окончание льготного периода немедленно отекает облачный компьютер, не дожидаясь семи дней.
+Окончание льготного периода для определенного облачного компьютера. Льготный период запускается при удалении лицензии на облачный КОМПЬЮТЕР или не назначена политика провизии. Он позволяет пользователям получать доступ к облачным ПК до семи дней до начала расшифки. В случае окончания льготного периода подготовка облачного ПК будет отменена сразу же, до истечения семи дней.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "59765908"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|CloudPC.ReadWrite.All|
+|Для приложений|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ POST /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/endGracePeriod
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -85,6 +85,10 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/endgraceperiod-cloudpc-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/endgraceperiod-cloudpc-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

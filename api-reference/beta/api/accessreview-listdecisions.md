@@ -1,16 +1,16 @@
 ---
 title: Списки решений accessReview
 description: В функции обзоров доступа Azure AD извлекаем решения объекта accessReview.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 23813096fb625e9598347bde0628c7dd6f407296
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 7c44ea96917962bf6ef35951a245093bea53d050
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751113"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60988105"
 ---
 # <a name="list-accessreview-decisions"></a>Списки решений accessReview
 
@@ -29,7 +29,7 @@ ms.locfileid: "52751113"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership |
+|Для приложений                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership |
 
  Подписанный пользователь также должен быть в роли каталога, что позволяет им читать обзор доступа.
 
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-accessreview-decisions-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accessreview-decisions-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
