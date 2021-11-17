@@ -1,16 +1,16 @@
 ---
 title: Переумерия сайтов
 description: Список доступных [сайтов][] в организации, которая соответствует критериям фильтра и параметрам запроса.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
 author: JeremyKelley
-ms.openlocfilehash: c1b8af50227346e4440e4ca98873b20160ecd81b
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 2cf428c7efa1685664f6c9332777f94c381c2509
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475786"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61033732"
 ---
 # <a name="enumerate-sites"></a>Переумерия сайтов
 
@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/beta/sites?$select=siteCollection,webUrl&$filter
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-sites-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-sites-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,15 +2,15 @@
 title: 'event: tentativelyAccept'
 description: Принятие под вопросом указанного события в календаре пользователя.
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 36786332fdbd0b84a6107106cf346153f8be55c8
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: 49035bad309c5e232577a610b0a83dff0049cbc8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52992246"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61034467"
 ---
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 
@@ -49,7 +49,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 | Content-Type | string  | Характер данных в теле объекта. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -113,6 +113,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/event-tentativelyaccept-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/event-tentativelyaccept-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

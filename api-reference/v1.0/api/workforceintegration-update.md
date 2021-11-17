@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c0e2a8329b1b80252a881471031bc2b775c4e9c5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6183cd8c17aacc359f8780f9606c1bdcaacc6145
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59044834"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020081"
 ---
 # <a name="update-workforceintegration"></a>Обновление рабочей силыИнтеграция
 
@@ -42,7 +42,7 @@ PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -53,8 +53,8 @@ PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 |apiVersion|Int32|Версия API для URL-адреса обратного вызова. Начните с 1.|
 |displayName|Строка|Имя интеграции рабочей силы.|
 |шифрование|workforceIntegrationEncryption|Ресурс шифрования интеграции рабочей силы. |
-|isActive|Boolean|Указывает, является ли эта интеграция рабочей силы активной и доступной в настоящее время.|
-|supportedEntities|string| Возможные значения: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. Если выбрано несколько значений, все значения должны начинаться с первой буквы в верхнем шкафу.|
+|isActive|Логическое|Указывает, является ли эта интеграция рабочей силы активной и доступной в настоящее время.|
+|supportedEntities|Строка| Возможные значения: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. Если выбрано несколько значений, все значения должны начинаться с первой буквы в верхнем шкафу.|
 |url|String| URL-адрес интеграции рабочей силы для вызовов из службы переноса. |
 
 ## <a name="response"></a>Отклик
@@ -106,6 +106,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-workforceintegration-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-workforceintegration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ---
@@ -113,7 +117,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -164,7 +168,7 @@ PATCH https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/{workforce
 ```
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 ```
 HTTP/1.1 200 OK
 Content-type: application/json

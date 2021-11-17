@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 931ed73c65cc328075049c240309f4d7c3188222
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: e65970401ae9bd3003a685af0c1ce94f17e6b867
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60943621"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022965"
 ---
 # <a name="create-linkedresource"></a>Создание linkedResource
 Пространство имен: microsoft.graph
@@ -52,10 +52,10 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/li
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Server generated Id for the linked entity Inherited from [entity](../resources/entity.md)|
+|id|Строка|Server generated Id for the linked entity Inherited from [entity](../resources/entity.md)|
 |webUrl|String|Deeplink to the linked entity |
 |applicationName|String|Поле, указывающее имя приложения источника, отправляемого связанной сущности |
-|displayName|String|Поле, указывающее заголовок связанного объекта. |
+|displayName|Строка|Поле, указывающее заголовок связанного объекта. |
 |externalId|String|Id объекта, связанного с этой задачей в системе сторонних и партнеров |
 
 
@@ -101,6 +101,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-linkedresource-from-linkedresources-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-linkedresource-from-linkedresources-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

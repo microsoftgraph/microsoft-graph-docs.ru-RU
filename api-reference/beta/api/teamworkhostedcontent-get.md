@@ -1,16 +1,16 @@
 ---
 title: Get teamworkHostedContent
 description: Извлечение содержимого в teamsAppIcon.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jecha
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6317cac369ad8d7bb29ed83c7e2c5ce9a0ca5f5f
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 33af64a32b88493793e01398c51d095a84f1118d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788005"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61017951"
 ---
 # <a name="get-teamworkhostedcontent"></a>Get teamworkHostedContent
 
@@ -22,7 +22,7 @@ ms.locfileid: "52788005"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 ### <a name="permissions-for-app-icon-in-app-catalog"></a>Разрешения на значок приложения в каталоге приложений
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                      |
@@ -51,7 +51,7 @@ GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/out
 
 | Заголовок           | Значение                      |
 | :--------------- | :------------------------- |
-| Авторизация    | Bearer {токен}. Обязательный.  |
+| Авторизация    | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -94,13 +94,17 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 [!INCLUDE [sample-code](../includes/snippets/java/teamsappicon-get-hostedcontent-coloricon-value-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/teamsappicon-get-hostedcontent-coloricon-value-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приводится пример отклика.
+Ниже показан пример отклика.
 
 > **Примечание:** `contentBytes` и `contentType` всегда настроены на нуль.
 <!-- {
@@ -153,6 +157,10 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 [!INCLUDE [sample-code](../includes/snippets/java/teamsappicon-get-hostedcontentbytes-outlineicon-value-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/teamsappicon-get-hostedcontentbytes-outlineicon-value-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -168,7 +176,7 @@ HTTP/1.1 200 OK
 Content-type: image/png
 ```
 
-## <a name="see-also"></a>Дополнительные материалы
+## <a name="see-also"></a>См. также
 
 - [Получить значки приложения Teams](teamsappicon-get.md)
 - [Список приложений в каталоге](appcatalogs-list-teamsapps.md)

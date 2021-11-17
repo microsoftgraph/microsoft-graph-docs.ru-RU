@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: paulgarn
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 96ee76a934c18f3663b76dec31cac84f9b361b9e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f7fdf98d6c38f611f11db373bbe296305ab4499b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59119593"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61025926"
 ---
 # <a name="create-claimsmappingpolicy"></a>Создание claimsMappingPolicy
 
@@ -40,7 +40,7 @@ POST /policies/claimsMappingPolicies
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -90,12 +90,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-claimsmappingpolicy-from-claimsmappingpolicies-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-claimsmappingpolicy-from-claimsmappingpolicies-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

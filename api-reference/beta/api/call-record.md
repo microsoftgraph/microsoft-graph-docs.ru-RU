@@ -2,15 +2,15 @@
 title: 'вызов: recordResponse'
 description: Запись короткого звукового ответа от вызываемой стороны. Это полезно, если бот хочет захватить голосовой ответ от вызываемого после запроса.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7555c756401086c4a1a63f0d6568cfe5a9557ed4
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 24f26b346b3488b12824f591b8acb73ce6b23f98
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047618"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022686"
 ---
 # <a name="call-recordresponse"></a>вызов: recordResponse
 
@@ -50,7 +50,7 @@ POST /communications/calls/{id}/recordResponse
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type| application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -63,9 +63,9 @@ POST /communications/calls/{id}/recordResponse
 |initialSilenceTimeoutInSeconds | Int32| Максимальная начальная тишина (тишина пользователя) разрешена с того времени, когда мы начнем операцию записи ответа перед периодиалом и не справимся с операцией. Если мы играем запрос, этот отсвечив начинается после завершения запроса. По умолчанию = 5 секунд, Min = 1 секунда, Max = 120 секунд |
 |maxSilenceTimeoutInSeconds|Int32| Максимальное время тишины (паузы) после начала выступления пользователя. По умолчанию = 5 секунд, Min = 1 секунда, Max = 120 секунд.|
 |maxRecordDurationInSeconds|Int32| Максимальная продолжительность операции recordResponse перед остановкой записи. По умолчанию = 5 секунд, Min = 1 секунда, Max = 120 секунд.|
-|playBeep|Логический| Если это так, воспроизводит звуковой сигнал, чтобы указать пользователю, что он может начать запись своего сообщения. По умолчанию = true.|
+|playBeep|Логическое| Если это так, воспроизводит звуковой сигнал, чтобы указать пользователю, что он может начать запись своего сообщения. По умолчанию = true.|
 |stopTones|Коллекция объектов string|Стоп-сигналы, указанные для окончания записи.|
-|clientContext|String|Уникальная строка Client Context. Максимальное ограничение — 256 шаров.|
+|clientContext|Строка|Уникальная строка Client Context. Максимальное ограничение — 256 шаров.|
 
 > **Примечание:** Максимальное время записи сокращено с 5 минут до 2 минут.
 
@@ -124,6 +124,10 @@ Content-Length: 394
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-recordresponse-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-recordresponse-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

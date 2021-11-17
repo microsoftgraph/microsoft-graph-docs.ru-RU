@@ -1,16 +1,16 @@
 ---
 title: Создание personWebsite
 description: Создание нового personWebsite.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: f05a1cab47ef5500242cbda9fd0452a4e78a4750
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1e51a10eb36ac3ec3c44634b7b6cbcb9660aec28
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52036712"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61007621"
 ---
 # <a name="create-personwebsite"></a>Создание personWebsite
 
@@ -43,7 +43,7 @@ POST /users/{id | userPrincipalName}/profile/websites
 
 | Имя           | Описание                 |
 |:---------------|:----------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.   |
+| Авторизация  | Bearer {token}. Обязательный.   |
 | Content-Type   | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,10 +54,10 @@ POST /users/{id | userPrincipalName}/profile/websites
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|Строка|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |categories|Коллекция String|Содержит категории, связанные с веб-сайтом (например, личные, рецепты).|
-|description|String|Содержит описание веб-сайта.|
-|displayName|String|Содержит удобное имя веб-сайта.|
+|description|Строка|Содержит описание веб-сайта.|
+|displayName|Строка|Содержит удобное имя веб-сайта.|
 |вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |source|[personDataSource](../resources/persondatasource.md)|Где значения возникли, если синхронизированы с другой службы. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |webUrl|String|Содержит ссылку на сам веб-сайт.|
@@ -104,6 +104,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-personwebsite-from-profile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-personwebsite-from-profile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,15 +2,15 @@
 title: Наборы списков
 description: Получите список установленных объектов и их свойств.
 author: mohitpcad
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 32c929f5156304e2a36aa64a5fcc8d97cee8468d
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 7efb4ff65f8a121534adc3637583d35b2f6982dd
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50950454"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61001699"
 ---
 # <a name="list-sets"></a>Наборы списков
 Пространство имен: microsoft.graph.termStore
@@ -45,7 +45,7 @@ GET /termStore/groups/{groupId}/sets
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/termStore/groups/{groupId}/sets
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-set-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-set-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

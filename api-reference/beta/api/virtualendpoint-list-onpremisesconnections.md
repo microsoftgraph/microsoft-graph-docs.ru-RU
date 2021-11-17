@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: d9c04136a8d4ebd3759e2a2729cb45c4288e2b75
-ms.sourcegitcommit: c00c61ce35a6f204a9907aa6f2644ea7a86a5b6e
+ms.openlocfilehash: 818d86bf4531099004988f33508404f91f5869d2
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60805408"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61033320"
 ---
 # <a name="list-onpremisesconnections"></a>Список onPremisesConnections
 
@@ -28,7 +28,7 @@ ms.locfileid: "60805408"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Для приложений|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremises
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-cloudpconpremisesconnections-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-cloudpconpremisesconnections-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

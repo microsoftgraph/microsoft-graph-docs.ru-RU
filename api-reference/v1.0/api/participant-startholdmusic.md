@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9b20e18392d9e1f92808e89ccdb514409c06db06
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: e19caed1c7ad34908881f412df8e83ed006f9e30
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214676"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61029364"
 ---
 # <a name="participant-startholdmusic"></a>участник: startHoldMusic
 
@@ -27,7 +27,7 @@ ms.locfileid: "60214676"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
-| Приложение                            | Нет. |
+| Для приложений                            | Нет. |
 
 > **Примечание:** Проверка разрешений происходит, когда приложение присоединяется или пытается запустить вызов. Дополнительные проверки разрешений не выполняются при `startHoldMusic` запросе.
 
@@ -40,7 +40,7 @@ POST /communications/calls/{id}/participants/{id}/startHoldMusic
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,7 +51,7 @@ POST /communications/calls/{id}/participants/{id}/startHoldMusic
 |customPrompt|microsoft.graph.mediaPrompt|Необязательный параметр. Звуковой запрос, который участник услышит при размещении на удержании.|
 |clientContext|String|Необязательный параметр. Уникальная строка контекста клиента. Может иметь не более 256 символов.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код отклика и `202 Accepted` [объект startHoldMusicOperation](../resources/startholdmusicoperation.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
@@ -96,6 +96,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/participant-startholdmusic-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/participant-startholdmusic-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

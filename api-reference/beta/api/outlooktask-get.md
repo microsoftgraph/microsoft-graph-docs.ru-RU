@@ -1,16 +1,16 @@
 ---
 title: Получение outlookTask
 description: Получение свойств и связей задачи Outlook в почтовом ящике пользователя.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8db32df8b0e92451c98e4d6bde6a2c503bb17c67
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 30d7694343853ae5c20c5e44815572a52e17b6bf
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055493"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026598"
 ---
 # <a name="get-outlooktask-deprecated"></a>Get outlookTask (deprecated)
 
@@ -53,7 +53,7 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}
 | Имя                     | Описание                                       |
 |:-------------------------|:--------------------------------------------------|
 | Авторизация            | Bearer {токен}. Обязательный.                         |
-| Prefer: outlook.timezone | Указывает часовой пояс для свойств времени в ответе, который будет в UTC, если этот заглавный не указан. Необязательно. |
+| Prefer: outlook.timezone | Указывает часовой пояс для свойств времени в ответе, который будет в UTC, если этот заглавный не указан. Необязательный параметр. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MTrgAAA=
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-outlooktask-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-outlooktask-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -181,6 +185,10 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-outlooktask-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-outlooktask-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

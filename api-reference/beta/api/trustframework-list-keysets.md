@@ -1,16 +1,16 @@
 ---
 title: Списки keySets
 description: Извлечение списка объектов trustframeworkkeyset.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: dcfce35fa33255c456303b28f36e554b467ba629
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 7e5975234056d0f0899dfa52c155f6d09b1a1f72
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049634"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61033564"
 ---
 # <a name="list-keysets"></a>Списки keySets
 
@@ -28,7 +28,7 @@ ms.locfileid: "52049634"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All |
+| Для приложений                            | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ GET /trustFramework/keySets
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/trustFramework/keySets
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-keysets-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-keysets-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

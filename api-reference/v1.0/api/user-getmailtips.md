@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a5ed59c2e92799ff22226683fc3a1edc02373f50
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 23d719bd4885bdbf6a862b686dd1d2574d2bbcbe
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007477"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022832"
 ---
 # <a name="user-getmailtips"></a>пользователь: getMailTips
 
@@ -40,7 +40,7 @@ POST /users/{id|userPrincipalName}/getMailTips
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение|
 |:-----------  |:------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -48,8 +48,8 @@ POST /users/{id|userPrincipalName}/getMailTips
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|EmailAddresses|Коллекция String|Коллекция SMTP-адресов получателей для получения MailTips.|
-|MailTipsOptions|Строка|Список флагов, которые представляют запрашиваемую почту. Возможные значения: `automaticReplies` `customMailTip` , , , , , `deliveryRestriction` , , `externalMemberCount` и `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope` `recipientSuggestions` `totalMemberCount` .|
+|EmailAddresses|Коллекция объектов string|Коллекция SMTP-адресов получателей для получения MailTips.|
+|MailTipsOptions|String|Список флагов, которые представляют запрашиваемую почту. Возможные значения: `automaticReplies` `customMailTip` , , , , , `deliveryRestriction` , , `externalMemberCount` и `mailboxFullStatus` `maxMessageSize` `moderationStatus` `recipientScope` `recipientSuggestions` `totalMemberCount` .|
 
 ## <a name="response"></a>Отклик
 
@@ -90,6 +90,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-getmailtips-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-getmailtips-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

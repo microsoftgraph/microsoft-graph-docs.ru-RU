@@ -5,12 +5,12 @@ author: Alice-at-Microsoft
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: f741172cc9922483aa55ea47791d033150bd78f8
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: 7e1fe5a6862cf28ad4cb1def1a7e5c3bf493a36d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60890418"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61016532"
 ---
 # <a name="updatableasset-unenrollassetsbyid"></a>updatableAsset: unenrollAssetsById
 Пространство имен: microsoft.graph.windowsUpdates
@@ -46,7 +46,7 @@ POST /admin/windows/updates/updatableAssets/unenrollAssetsById
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В следующей таблице указаны параметры, которые можно использовать с этим действием.
@@ -54,7 +54,7 @@ POST /admin/windows/updates/updatableAssets/unenrollAssetsById
 |Параметр|Тип|Описание|
 |:---|:---|:---|
 |updateCategory|microsoft.graph.windowsUpdates.updateCategory|Категория обновлений для службы для остановки управления. Поддерживает подмножество значений **для updateCategory.** Возможные значения: `feature`, `unknownFutureValue`.|
-|memberEntityType|String|Полный тип **updatableAsset** ресурсов. Возможные значения: `#microsoft.graph.windowsUpdates.azureADDevice` .|
+|memberEntityType|Строка|Полный тип **updatableAsset** ресурсов. Возможные значения: `#microsoft.graph.windowsUpdates.azureADDevice` .|
 |ids|Коллекция String|Список идентификаторов, соответствующих **updatableAsset** ресурсам, чтобы отстраить от управления обновлением службой данного **обновленияCategory.**|
 
 ## <a name="response"></a>Ответ
@@ -99,6 +99,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/updatableasset-unenrollassetsbyid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/updatableasset-unenrollassetsbyid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

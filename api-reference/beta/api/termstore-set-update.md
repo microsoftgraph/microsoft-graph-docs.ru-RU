@@ -5,12 +5,12 @@ author: mohitpcad
 ms.localizationpriority: medium
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 90c9846b101679c117d9d9860dcb4104f6b44d46
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: a38ba0d840e5d22323428f995379351239376545
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60944600"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61017358"
 ---
 # <a name="update-set"></a>Набор обновлений
 Пространство имен: microsoft.graph.termStore
@@ -54,7 +54,7 @@ PATCH /termStore/sets/{setId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |локализованные имена|[коллекция microsoft.graph.termStore.localizedName](../resources/termstore-localizedname.md)|Имя набора|
-|description|String|Описание набора|
+|description|Строка|Описание набора|
 |properties|[коллекция microsoft.graph.keyValue](../resources/keyvalue.md)|свойства набора|
 
 
@@ -95,6 +95,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-set-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-set-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

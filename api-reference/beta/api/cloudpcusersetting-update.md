@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 45802c821203e8ac4d3eaa908a6bdb0909435a12
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: fe4386a810cdf4ed1a094f7b92edb003c81e3cab
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60936945"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022573"
 ---
 # <a name="update-cloudpcusersetting"></a>Обновление cloudPcUserSetting
 
@@ -56,7 +56,7 @@ PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Имя параметра, отображаемая в пользовательском интерфейсе.|
+|displayName|Строка|Имя параметра, отображаемая в пользовательском интерфейсе.|
 |localAdminEnabled|Логическое|Чтобы включить локальный параметр администрирования, измените этот параметр на `True` .  |
 |selfServiceEnabled|Логическое|Чтобы включить параметр самообслуживки, измените этот параметр на `True` . |
 |lastModifiedDateTime|DateTimeOffset|Последняя дата и время изменения параметра. Тип Timestamp представляет сведения о дате и времени с помощью формата ISO 8601 и всегда находится во времени UTC. Например, полночь UTC 1 января 2014 г. выглядит так: '2014-01-01T00:00:00Z'. |
@@ -102,6 +102,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-cloudpcusersetting-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-cloudpcusersetting-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

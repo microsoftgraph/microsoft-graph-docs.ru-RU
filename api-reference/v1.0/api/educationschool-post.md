@@ -5,12 +5,12 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8fd2efb0f13aac9d80525a34485ed09138ee07f6
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 0afe69c7dd61eb2bde7970ba053cb5f9afc49124
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60943852"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61025618"
 ---
 # <a name="create-educationschool"></a>Создание educationSchool
 
@@ -54,10 +54,10 @@ POST /education/schools
 
 | Свойство             | Тип                                               | Описание                                                                                                                                                          |
 | :------------------- | :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| displayName          | String                                             | Отображаемое имя учебного заведения. Унаследованный от [educationOrganization](../resources/educationorganization.md).                                                           |
-| description          | String                                             | Описание учебного заведения. Унаследованный от [educationOrganization](../resources/educationorganization.md).                                                            |
+| displayName          | Строка                                             | Отображаемое имя учебного заведения. Унаследованный от [educationOrganization](../resources/educationorganization.md).                                                           |
+| description          | Строка                                             | Описание учебного заведения. Унаследованный от [educationOrganization](../resources/educationorganization.md).                                                            |
 | externalSource       | educationExternalSource                            | Источник, из которых была создана эта организация. Унаследованный от [educationOrganization](../resources/educationorganization.md). Возможные значения: `sis` " вручную. |
-| externalSourceDetail | String                                             | Имя внешнего источника, из которого были созданы эти ресурсы.                                                                                                   |
+| externalSourceDetail | Строка                                             | Имя внешнего источника, из которого были созданы эти ресурсы.                                                                                                   |
 | principalEmail       | String                                             | Адрес электронной почты директора.                                                                                                                                      |
 | principalName        | String                                             | Имя директора.                                                                                                                                               |
 | externalPrincipalId  | String                                             | Идентификатор директора в системе синхронизации.                                                                                                                                   |
@@ -127,6 +127,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-educationschool-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-educationschool-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

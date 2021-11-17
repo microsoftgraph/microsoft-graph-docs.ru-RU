@@ -2,15 +2,15 @@
 title: 'message: createReply'
 description: Создайте черновик для ответа отправителю сообщения в формате JSON или MIME.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3ba7d5be91c2fdc98efdd23c95a596370ae19dc2
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 713b4a25050fd111a78c77a0b60a637d6b7fad03
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870411"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61034173"
 ---
 # <a name="message-createreply"></a>message: createReply
 
@@ -53,7 +53,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание| 
 |:---------------|:--------|:----------
-| Authorization  | string  | Bearer {токен}. Обязательный.|
+| Authorization  | string  | Bearer {token}. Обязательный.|
 | Content-Type | string  | Характер данных в теле объекта. Обязательный.<br/> Используйте `application/json` для объекта JSON и `text/plain` для содержимого MIME.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -120,6 +120,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/message-createreply-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/message-createreply-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

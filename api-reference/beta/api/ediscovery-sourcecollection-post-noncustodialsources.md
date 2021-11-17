@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 96a811510f18e92b4be78fa0649ecf5428ee2e27
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: aee9bacd1f764668d59baec48cd3d69e1c75f0b0
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60941472"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022335"
 ---
 # <a name="add-noncustodialdatasource"></a>Добавление noncustodialDataSource
 
@@ -56,7 +56,7 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|@odata.id|String|Строка, определяемая объектом custodial. См. пример, который следует.  @odata.id можно получить из [noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md).|
+|@odata.id|Строка|Строка, определяемая объектом custodial. См. пример, который следует.  @odata.id можно получить из [noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md).|
 
 ## <a name="response"></a>Отклик
 
@@ -96,6 +96,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-noncustodialdatasource-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-noncustodialdatasource-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

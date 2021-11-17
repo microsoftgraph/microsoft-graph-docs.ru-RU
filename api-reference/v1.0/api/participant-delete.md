@@ -6,12 +6,12 @@ author: jackry6350
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: fc014bf01a74e8b3da616b6d615c6145c1fae702
-ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
+ms.openlocfilehash: bed95953f30811eace789b1c5b1a7b3cf9ea2f75
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "60355171"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61027291"
 ---
 # <a name="delete-participant"></a>Удаление участника
 
@@ -24,7 +24,7 @@ ms.locfileid: "60355171"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Приложение                            | Нет                                        |
+| Для приложений                            | Никаких других изменений не происходит                                        |
 
 Конфигурация собрания на уровне клиента требуется для того, чтобы позволить приложению вызывать этот API. Администратор клиента должен вызвать следующий комдлет на удаленной PowerShell клиента, чтобы предоставить приложению разрешение на вызов этого API. Дополнительные сведения см. [в рублях Set-CsApplicationMeetingConfiguration.](https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/skype/skype-ps/skype/Set-CsApplicationMeetingConfiguration.md)
 ```
@@ -40,7 +40,7 @@ DELETE /communications/calls/{id}/participants/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -77,6 +77,10 @@ DELETE https://graph.microsoft.com/v1.0/communications/calls/{id}/participants/{
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-participant-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-participant-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -153,6 +157,10 @@ Content-Length: 464
 [!INCLUDE [sample-code](../includes/snippets/java/participant-invite-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/participant-invite-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -219,6 +227,10 @@ DELETE https://graph.microsoft.com/beta/communications/calls/{id}/participants/{
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-participant-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-participant-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9ca44b588aff67fe263d4baa0aa8807e45da6525
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 8281473a3b47cede52459e8c541359af04e48972
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561140"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022013"
 ---
 # <a name="unenroll-meeting-registrant"></a>Регистратор собраний unenroll
 
@@ -30,7 +30,7 @@ ms.locfileid: "60561140"
 |:----------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись) | OnlineMeetings.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Application | OnlineMeetings.Read.All |
+| Для приложений | OnlineMeetings.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -85,6 +85,10 @@ DELETE https://graph.microsoft.com/beta/users/16664f75-11dc-4870-bec6-38c1aaa814
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-registratrant-user-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-registratrant-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

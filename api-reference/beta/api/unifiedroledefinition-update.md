@@ -1,16 +1,16 @@
 ---
 title: Обновление unifiedRoleDefinition
 description: Обновление свойств объекта unifiedRoleDefinition.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: af8e75ca0364a269168c2c3b072c8c7ec6c087ae
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: 1b276ef09c72d4945b74fff5ee660c20ab95cb10
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351078"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61017044"
 ---
 # <a name="update-unifiedroledefinition"></a>Обновление unifiedRoleDefinition
 
@@ -37,7 +37,7 @@ ms.locfileid: "53351078"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  DeviceManagementRBAC.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | DeviceManagementRBAC.ReadWrite.All |
+|Для приложений | DeviceManagementRBAC.ReadWrite.All |
 
 ### <a name="for-directory-azure-ad-provider"></a>Поставщик каталогов (Azure AD)
 
@@ -45,7 +45,7 @@ ms.locfileid: "53351078"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Для приложений | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -74,8 +74,8 @@ PATCH /roleManagement/directory/roleDefinitions/{id}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |description|Строка| Описание определения роли. Только для чтения, когда isBuiltIn является правдой. |
-|displayName|Строка| Имя отображения для определения роли. Только для чтения, когда isBuiltIn является правдой. Обязательный.|
-|id|Строка| Уникальный идентификатор определения роли. Key, not nullable, Read-only. |
+|displayName|String| Имя отображения для определения роли. Только для чтения, когда isBuiltIn является правдой. Обязательный.|
+|id|String| Уникальный идентификатор определения роли. Key, not nullable, Read-only. |
 |isBuiltIn|Boolean| Флаг, указывающий, является ли определение роли частью набора по умолчанию, включенного в продукт или настраиваемый. Только для чтения. |
 |isEnabled|Boolean| Флаг, указывающий, включена ли роль для назначения. Если значение false, роль недоступна для назначения. Только для чтения, когда isBuiltIn является правдой. |
 |resourceScopes|Коллекция String| К списку областей применяются разрешения, предоставленные определением ролей. В настоящее время поддерживается только "/". Только для чтения, когда isBuiltIn является правдой. **НЕ ИСПОЛЬЗУЙТЕ. В ближайшее время это свойство будет обесценилось. Прикрепить область к назначению ролей.**|
@@ -84,9 +84,9 @@ PATCH /roleManagement/directory/roleDefinitions/{id}
 |inheritsPermissionsFrom| [коллекция unifiedRoleDefinition](../resources/unifiedroledefinition.md)| Только для чтения набор определений ролей, которые наследует заданное определение роли. Только встроенные роли Azure AD поддерживают этот атрибут. |
 |version|String| Указывает версию определения роли. Только для чтения, когда isBuiltIn является правдой.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код ответа и обновленный объект `200 OK` [unifiedRoleDefinition](../resources/unifiedroledefinition.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
 
@@ -135,6 +135,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-unifiedroledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-unifiedroledefinition-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -148,7 +152,7 @@ Content-type: application/json
 } -->
 
 ```http
-HTTP/1.1 204 OK
+HTTP/1.1 204 No Content
 Content-type: application/json
 
 ```

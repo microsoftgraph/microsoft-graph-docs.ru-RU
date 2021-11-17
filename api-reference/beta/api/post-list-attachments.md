@@ -2,15 +2,15 @@
 title: Список вложений
 description: Получение списка объектов attachment, вложенных в запись.
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 86ea62f245e36bee9a3499946f7a3eb80249d368
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e74054061d8117222c6e81e8fffc1fc491e414a4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049151"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028125"
 ---
 # <a name="list-attachments"></a>Список вложений
 
@@ -26,7 +26,7 @@ ms.locfileid: "52049151"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Group.Read.All, Group.ReadWrite.All |
+|Для приложений | Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 Получите вложения для [публикации](../resources/post.md) в [беседеThread](../resources/conversationthread.md) группы. Указание родительского [разговора необязательно.](../resources/conversation.md)
@@ -48,7 +48,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}/posts/{id}?$expand
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -85,10 +85,14 @@ GET https://graph.microsoft.com/beta/groups/1848753d-185d-4c08-a4e4-6ee40521d115
 [!INCLUDE [sample-code](../includes/snippets/java/post-get-attachments-beta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-get-attachments-beta-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "name": "post_get_attachments_beta",
