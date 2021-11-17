@@ -1,16 +1,16 @@
 ---
 title: Обновление оповещения
 description: Обновление свойства редактируемого оповещения в любом интегрированном решении, чтобы синхронизировать состояние оповещений и назначения между решениями.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 7e725e60bb779ec0d4ecd54ec0cc57f4173bf6fe
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 8bce0980bb89a8140a19e5fc58658930d31059de
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786624"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995811"
 ---
 # <a name="update-alert"></a>Обновление оповещения
 
@@ -28,7 +28,7 @@ ms.locfileid: "52786624"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |   SecurityEvents.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Приложение | SecurityEvents.ReadWrite.All |
+|Для приложений | SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ PATCH /security/alerts/{alert_id}
 | Имя       | Описание|
 |:-----------|:-----------|
 | Авторизация  | Bearer {код}. Обязательно.|
-|Prefer | return=representation. Необязательное свойство. |
+|Prefer | return=representation. Необязательный параметр. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -57,12 +57,12 @@ PATCH /security/alerts/{alert_id}
 |comments|Коллекция String|Аналитик комментирует оповещение (для управления оповещениями клиентов). Этот метод может обновлять поле комментариев только с помощью следующих значений: `Closed in IPC` , `Closed in MCAS` .|
 |feedback|enum alertFeedback|Отзыв аналитика об оповещении. Возможные значения: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
 |status|alertStatus enum|Оповещение состояния жизненного цикла (этап). Возможные значения: `unknown`, `newAlert`, `inProgress`, `resolved`.|
-|tags|Коллекция String|Метки, вызываемые пользователем, которые можно применить к оповещению и могут служить условиями фильтра (например, "HVA", "SAW").|
+|tags|Коллекция объектов string|Метки, вызываемые пользователем, которые можно применить к оповещению и могут служить условиями фильтра (например, "HVA", "SAW").|
 |vendorInformation |[securityVendorInformation](../resources/securityvendorinformation.md)|Сложный тип, содержащий подробные сведения о безопасности продавца продукта или услуги, поставщика субпоставщика (например, продавец = Майкрософт; поставщик = ATP в Защитнике Windows; субпоставщик = AppLocker). **Требуются поля поставщика и поставщика.**|
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `204 No Content`.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 Если используется необязательный заголовок запроса, метод возвращает код ответа и обновленный объект оповещения `200 OK` в тексте [](../resources/alert.md) ответа.
 
@@ -112,6 +112,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-alert-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-alert-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -176,6 +180,10 @@ Prefer: return=representation
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-alert-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-alert-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

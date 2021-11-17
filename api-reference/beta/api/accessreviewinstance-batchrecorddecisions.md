@@ -2,15 +2,15 @@
 title: 'accessReviewInstance: batchRecordDecisions'
 description: Позволяет рецензентам просмотреть все объекты accessReviewInstanceDecisionItem пакетами.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ab7e7e3580275aa127bbb01e34484a823d4b01bf
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 2d83d77b3fe0698edd0f89b5e90dd5466fd47c73
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030749"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60991961"
 ---
 # <a name="accessreviewinstance-batchrecorddecisions"></a>accessReviewInstance: batchRecordDecisions
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "53030749"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|AccessReview.ReadWrite.All|
+|Для приложений|AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,7 +41,7 @@ POST /me/pendingAccessReviewInstances/{accessReviewInstanceId}/batchRecordDecisi
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,9 +51,9 @@ POST /me/pendingAccessReviewInstances/{accessReviewInstanceId}/batchRecordDecisi
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-| решение  | String | Решение о доступе для проверяемого объекта. Возможные значения: `Approve`, `Deny`, `NotReviewed`, `DontKnow`. Обязательный.  |
-|  обоснование | String | Контекст обзора, предоставленного администраторам. Обязательно, **если justificationRequiredOnApproval** находится `True` на **accessReviewScheduleDefinition**.  |
-|principalId|String|В этом пакете будут рассмотрены все **accessReviewInstanceDecisionItems** с соответствием **principalId.** Если они не будут предоставлены, все **principalIds** будут рассмотрены.|
+| решение  | Строка | Решение о доступе для проверяемого объекта. Возможные значения: `Approve`, `Deny`, `NotReviewed`, `DontKnow`. Обязательный.  |
+|  обоснование | Строка | Контекст обзора, предоставленного администраторам. Обязательно, **если justificationRequiredOnApproval** находится `True` на **accessReviewScheduleDefinition**.  |
+|principalId|Строка|В этом пакете будут рассмотрены все **accessReviewInstanceDecisionItems** с соответствием **principalId.** Если они не будут предоставлены, все **principalIds** будут рассмотрены.|
 |resourceId|String|В этом пакете будут рассмотрены все **accessReviewInstanceDecisionItems** с соответствием **resourceId.** Если они не будут предоставлены, **все resourceIds** будут рассмотрены.|
 
 
@@ -96,6 +96,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/accessreviewinstance-batchrecorddecisions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/accessreviewinstance-batchrecorddecisions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

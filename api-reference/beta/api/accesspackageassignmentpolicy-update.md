@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 1a5a0462218ab2bb0fe7be874563473c20fef3b5
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: ccb18e97c2436dfca4948c54032a1a6dd5076c01
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60925792"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60988322"
 ---
 # <a name="update-accesspackageassignmentpolicy"></a>Обновление accessPackageAssignmentPolicy
 
@@ -50,8 +50,8 @@ PUT /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{a
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображает имя политики.|
-|description|String|Описание политики.|
+|displayName|Строка|Отображает имя политики.|
+|description|Строка|Описание политики.|
 |canExtend|Логическое|Указывает, может ли пользователь продлить срок назначения пакета доступа после утверждения.|
 |durationInDays|Int32|Количество дней, в течение которых назначения из этой политики будут выполняться до истечения срока их действия.|
 |expirationDateTime|DateTimeOffset|Срок действия для назначений, созданных в этой политике. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
@@ -174,6 +174,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-accesspackageassignmentpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-accesspackageassignmentpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

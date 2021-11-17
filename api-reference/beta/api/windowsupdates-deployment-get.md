@@ -2,15 +2,15 @@
 title: Развертывание
 description: Ознакомьтесь с свойствами и отношениями объекта развертывания.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: e0741f449da2677696ccb30488cc0fc41ebe39c9
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: a76de7d1855c611e3333e17c742271693b73ffd9
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241348"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61016602"
 ---
 # <a name="get-deployment"></a>Развертывание
 Пространство имен: microsoft.graph.windowsUpdates
@@ -44,7 +44,7 @@ GET /admin/windows/updates/deployments/{deploymentId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deployments/b5171742-
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-deployment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-deployment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

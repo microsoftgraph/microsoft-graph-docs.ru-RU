@@ -1,24 +1,24 @@
 ---
-title: Удаление Едукатионалактивити
-description: Удаление объекта Едукатионалактивити из профиля пользователя.
-localization_priority: Normal
+title: Удаление educationalActivity
+description: Удаление объекта educationalActivity из профиля пользователя.
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: ad9cc4f842e9d4cf4402d70d515a109279b1f92d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e3724352f09cec6b8b36a4d886a1bcc7239251b1
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966684"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982014"
 ---
-# <a name="delete-educationalactivity"></a>Удаление Едукатионалактивити
+# <a name="delete-educationalactivity"></a>Удаление educationalActivity
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [едукатионалактивити](../resources/educationalactivity.md) из [профиля](../resources/profile.md)пользователя.
+Удаление [объекта educationalActivity](../resources/educationalactivity.md) из профиля [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "48966684"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL          |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL          |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All          |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All          |
 | Для приложений                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,7 +43,7 @@ DELETE /users/{id | userPrincipalName}/profile/educationalActivities/{id}
 
 | Имя           |Описание                  |
 |:---------------|:----------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.   |
+| Авторизация  | Bearer {token}. Обязательный.   |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -82,6 +82,10 @@ DELETE https://graph.microsoft.com/beta/me/profile/educationalActivities/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-educationalactivity-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-educationalactivity-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

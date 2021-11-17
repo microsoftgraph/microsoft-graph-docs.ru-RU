@@ -1,16 +1,16 @@
 ---
 title: Настройка синхронизации с настраиваемых целевых атрибутов
 description: Настройте схему синхронизации, чтобы включить настраиваемые атрибуты, определенные в целевом каталоге.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 865cde06cded24f9f2920e63535e037a2b477330
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 9597ff99e8b5d6f647d7be3771a9bcb52e764061
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50956913"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61007145"
 ---
 # <a name="configure-synchronization-with-custom-target-attributes"></a>Настройка синхронизации с настраиваемых целевых атрибутов
 
@@ -18,9 +18,9 @@ ms.locfileid: "50956913"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Можно настроить схему синхронизации, чтобы включить настраиваемые атрибуты, определенные в целевом каталоге. В этой статье описывается настройка подписки Salesforce путем добавления нового поля под названием `officeCode` . Вы настроили синхронизацию из Azure Active Directory (Azure AD) в Salesforce, и для каждого пользователя поле Salesforce будет заполнено значением из поля `officeCode` `extensionAttribute10` Azure AD.
+Можно настроить схему синхронизации, чтобы включить настраиваемые атрибуты, определенные в целевом каталоге. В этой статье описывается настройка подписки Salesforce путем добавления нового поля под названием `officeCode` . Вы настроили синхронизацию с Azure Active Directory (Azure AD) до Salesforce, и для каждого пользователя поле Salesforce будет заполнено значением из поля `officeCode` `extensionAttribute10` Azure AD.
 
-В этой статье предполагается, что вы уже добавили в клиент приложение, которое поддерживает синхронизацию с клиентом через портал [Azure,](https://portal.azure.com)что вы знаете имя отображения приложения и что у вас есть маркер авторизации для Microsoft Graph. Сведения о том, как получить маркер авторизации, см. в записи [Get access tokens to call Microsoft Graph.](/graph/auth/)
+В этой статье предполагается, что вы уже добавили приложение, поддерживаюное синхронизацию с клиентом через портал [Azure,](https://portal.azure.com)что вы знаете имя отображения приложения и что у вас есть маркер авторизации для Microsoft Graph. Сведения о том, как получить маркер авторизации, см. в сайте [Get access tokens to call Microsoft Graph.](/graph/auth/)
 
 ## <a name="find-the-service-principal-object-by-display-name"></a>Поиск основного объекта службы по имени отображения
 
@@ -106,6 +106,10 @@ Authorization: Bearer {Token}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationschema-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-synchronizationschema-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -211,7 +215,7 @@ Content-Type: application/json
 
 ## <a name="add-a-definition-for-the-officecode-attribute-and-a-mapping-between-attributes"></a>Добавление определения атрибута OfficeCode и сопоставления между атрибутами
 
-Используйте обычный текстовый редактор по вашему выбору (например, [Notepad++](https://notepad-plus-plus.org/) или [JSON Editor Online),](https://www.jsoneditoronline.org/)чтобы:
+Используйте обычный текстовый редактор по вашему выбору [(например, Блокнот++](https://notepad-plus-plus.org/) или [редактор JSON Online),](https://www.jsoneditoronline.org/)чтобы:
 
 1. Добавьте определение [атрибута](synchronization-attributedefinition.md) для `officeCode` атрибута. 
 

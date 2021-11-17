@@ -2,15 +2,15 @@
 title: Список групп
 description: Получите группы из свойства навигации групп.
 author: mohitpcad
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 3996bf2cc502f47ad5a2ce60fc92bd9f9d570fe1
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 2c6a0401a2ef3080fedc04f64c8b5c7a40f87770
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957167"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61001685"
 ---
 # <a name="list-groups"></a>Список групп
 Пространство имен: microsoft.graph.termStore
@@ -26,7 +26,7 @@ ms.locfileid: "50957167"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись) | TermStore.Read.All, TermStore.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | Не поддерживается. |
+|Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ GET /termStore/groups
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/termStore/groups
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-group-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-group-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: Получение объекта securityAction
 description: Извлечение свойств и связей объекта securityAction.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 328a54bb73517611b3fc96603601309cbb1a7ea7
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b43948035ead63cdf7ef9d0b9c89e80f3620c675
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050873"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026340"
 ---
 # <a name="get-securityaction"></a>Получение объекта securityAction
 
@@ -28,7 +28,7 @@ ms.locfileid: "52050873"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | SecurityActions.Read.All, SecurityActions.ReadWrite.All |
+| Для приложений                            | SecurityActions.Read.All, SecurityActions.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/security/securityActions/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-securityaction-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-securityaction-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

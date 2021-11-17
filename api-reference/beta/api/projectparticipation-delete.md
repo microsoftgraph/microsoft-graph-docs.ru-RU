@@ -1,24 +1,24 @@
 ---
-title: Удаление ПрожектпартиЦипатион
-description: Удаление объекта ПрожектпартиЦипатион из профиля пользователя.
-localization_priority: Normal
+title: Удаление projectParticipation
+description: Удаление объекта projectParticipation из профиля пользователя.
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 41f5ac77a0ea8b85018cb20532624f57e626b6ad
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d821bc6021631e1db8018e1ff8b281377b164aa7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972774"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60996959"
 ---
-# <a name="delete-projectparticipation"></a>Удаление ПрожектпартиЦипатион
+# <a name="delete-projectparticipation"></a>Удаление projectParticipation
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [прожектпартиЦипатион](../resources/projectparticipation.md) из [профиля](../resources/profile.md)пользователя.
+Удаление [объекта projectParticipation](../resources/projectparticipation.md) из профиля [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "48972774"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL          |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL          |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All          |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All          |
 | Для приложений                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,7 +43,7 @@ DELETE /users/{id | userPrincipalName}/profile/projects/{id}
 
 | Имя           |Описание                  |
 |:---------------|:----------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.   |
+| Авторизация  | Bearer {token}. Обязательный.   |
 | Content-Type   | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/me/profile/projects/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-projectparticipation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-projectparticipation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

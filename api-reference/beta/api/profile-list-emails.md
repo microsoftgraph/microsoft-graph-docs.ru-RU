@@ -1,16 +1,16 @@
 ---
 title: Список сообщений электронной почты
-description: Получение списка объектов Итемемаил.
-localization_priority: Normal
+description: Извлечение списка объектов itemEmail.
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 89712a37f289c855d5a09510ca0c9b9b6495bf60
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e27c89e1d323ec345882514d56e08cecc1a7c9c5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980839"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019451"
 ---
 # <a name="list-emails"></a>Список сообщений электронной почты
 
@@ -18,7 +18,7 @@ ms.locfileid: "48980839"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [итемемаил](../resources/itememail.md) из [профиля](../resources/profile.md)пользователя.
+Извлечение списка [объектов itemEmail](../resources/itememail.md) из профиля [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48980839"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Для приложения                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Для приложений                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,21 +41,21 @@ GET /users/{id | userPrincipalName}/profile/emails
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает следующие параметры запроса OData, чтобы помочь настроить ответ. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 |Имя            |Значение    |Описание                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |Разрешает отклик только на те объекты, которые содержат заданные условия.                                                                                             |
-|$orderby        |строка   |По умолчанию объекты в отклике сортируются по значению createdDateTime в запросе. Вы можете изменить порядок ответа с помощью параметра *$OrderBy* .|
+|$filter         |string   |Ограничивает ответ только теми объектами, которые содержат указанные критерии.                                                                                             |
+|$orderby        |строка   |По умолчанию объекты в ответе сортируют по их созданному значениюDateTime в запросе. Вы можете изменить порядок ответа с помощью *параметра $orderby.*|
 |$select         |string   |Список разделенных запятыми свойств, которые необходимо включить в отклик. Для оптимизации производительности выбирайте только необходимые свойства.                                        |
-|$skip           |int      |Пропустите первые n результатов, которые удобно использовать для разбиения на страницы.                                                                                                                                |
+|$skip           |int      |Пропустить первые n результаты, полезные для paging.                                                                                                                                |
 |$top            |int      |Количество возвращаемых результатов.                                                                                                                                           |
 
 ## <a name="request-headers"></a>Заголовки запроса
 
 | Имя           |Описание                  |
 |:---------------|:----------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.   |
+| Авторизация  | Bearer {token}. Обязательный.   |
 
 
 ## <a name="request-body"></a>Текст запроса
@@ -63,7 +63,7 @@ GET /users/{id | userPrincipalName}/profile/emails
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [итемемаил](../resources/itememail.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [itemEmail](../resources/itememail.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/me/profile/emails
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-emails-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-emails-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

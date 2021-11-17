@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 35ce4e082c1b0e53dfd092161e0497c74d9a9495
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 5c98c7f5a81a3f7dfdf6a14bf799ae0a0852bdf8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60290136"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60977666"
 ---
 # <a name="delete-teamsapp"></a>Удаление teamsApp
 
@@ -36,7 +36,7 @@ ms.locfileid: "60290136"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.|
 | Для приложений                            | Не поддерживается. |
 
-> **Примечание.** Разрешения, помеченные **, не используются и не должны использоваться.
+> **Примечание**. Разрешения, помеченные **, не поддерживаются и не должны использоваться.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -98,6 +98,10 @@ DELETE https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-teamsapp-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-teamsapp-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

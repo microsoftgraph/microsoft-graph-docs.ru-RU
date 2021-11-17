@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c32c343edf915e73f2cdc642f8474bd2683857f2
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: f7f05422a3bce22d29ca3ab2283c70a6e16f7e88
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687756"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995782"
 ---
 # <a name="create-accessreviewscheduledefinition"></a>Создание accessReviewScheduleDefinition
 
@@ -28,7 +28,7 @@ ms.locfileid: "60687756"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application                            | AccessReview.ReadWrite.All |
+|Для приложений                            | AccessReview.ReadWrite.All |
 
 При входе пользователь должен также быть в роли каталога, что позволяет им создавать обзор доступа.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviewsv2-root.md)
 
@@ -51,9 +51,9 @@ POST /identityGovernance/accessReviews/definitions
 | Свойство | Тип | Описание |
 |:-------------|:------------|:------------|
 | additionalNotificationRecipients   |[accessReviewNotificationRecipientItem](../resources/accessReviewNotificationRecipientItem.md) collection| Определяет список дополнительных пользователей или членов группы, которые будут уведомлены о ходе проверки доступа. |
-| descriptionForAdmins | String | Контекст обзора, предоставленного администраторам. Обязательно. |
-  descriptionForReviewers | String | Контекст обзора, предоставляемого рецензентам в уведомлениях электронной почты. Уведомления электронной почты поддерживают до 256 символов. Обязательный. |
-| displayName | String | Имя серии обзоров доступа. Обязательно.|
+| descriptionForAdmins | Строка | Контекст обзора, предоставленного администраторам. Обязательный. |
+  descriptionForReviewers | Строка | Контекст обзора, предоставляемого рецензентам в уведомлениях электронной почты. Уведомления электронной почты поддерживают до 256 символов. Обязательный. |
+| displayName | Строка | Имя серии обзоров доступа. Обязательный.|
 | fallbackReviewers |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|При условии, если основные рецензенты не существуют, рецензентам откатов будет предложено завершить проверку. Например, если менеджеры выбраны в качестве и у проверяемого директора нет менеджера в Azure AD, проверятелям откатов будет предложено просмотреть `reviewers` этот принцип.|
 | instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | В случае проверки всех групп определяется область, в которой будут рассмотрены группы. Просмотрите [accessReviewScope и](../resources/accessreviewscope.md) узнайте, как настроить область определения обзора [доступа.](/graph/accessreviews-scope-concept)| 
 | рецензенты | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection | Определяет, кто такие рецензенты. Если нет указаны, обзор является самообнаверяемой (пользователи просматривают собственный доступ).  Примеры вариантов назначения рецензентов см. в примере Назначение рецензентов определению обзора доступа с помощью [API microsoft Graph.](/graph/accessreviews-reviewers-concept) |
@@ -136,6 +136,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accessreviewscheduledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -295,6 +299,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-inactiveguests-m365-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accessreviewscheduledefinition-inactiveguests-m365-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -481,6 +489,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-allusers-m365-aadrole-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accessreviewscheduledefinition-allusers-m365-aadrole-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: Обновление webAccount
 description: Обновление свойств объекта webAccount.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: bc907445655085ff863094f58d2afe337a9074fe
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 72a2b25432b0b5bd15af987db9f3ff1d4f866dc4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050712"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61016630"
 ---
 # <a name="update-webaccount"></a>Обновление webAccount
 
@@ -43,7 +43,7 @@ PATCH /users/{id | userPrincipalName}/profile/webAccounts/{id}
 
 | Имя           |Описание                  |
 |:---------------|:----------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.   |
+| Авторизация  | Bearer {token}. Обязательный.   |
 | Content-Type   | application/json. Обязательный. |
 
 
@@ -53,11 +53,11 @@ PATCH /users/{id | userPrincipalName}/profile/webAccounts/{id}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|description|String|Содержит описание, предоставленное пользователем для учетной записи в службе, на который ссылается.|
+|allowedAudiences|Строка|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|description|Строка|Содержит описание, предоставленное пользователем для учетной записи в службе, на который ссылается.|
 |вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |служба|[serviceInformation](../resources/serviceinformation.md)| Содержит основные сведения о связанной службе. |
-|statusMessage|String|Содержит сообщение о состоянии облачной службы при условии или синхронизации. |
+|statusMessage|Строка|Содержит сообщение о состоянии облачной службы при условии или синхронизации. |
 |userId|String|Имя пользователя, отображаемая для webaccount.  |
 |webUrl|String|Содержит ссылку на профиль пользователя в облачной службе, если она существует.|
 
@@ -99,6 +99,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-webaccount-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-webaccount-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

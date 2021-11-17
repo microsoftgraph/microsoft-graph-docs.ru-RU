@@ -1,16 +1,16 @@
 ---
 title: 'bookingBusiness: публикация'
 description: Сделайте страницу планирования этого бизнеса доступной для внешних клиентов.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: cdec9a82ce4da292c1e3a71a0af581766fdf95b8
-ms.sourcegitcommit: f645c2db38fe6354422a96b54569af53cd65b967
+ms.openlocfilehash: 4f20392dacbbe240448efe02e449cd3514319efa
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58409083"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60990513"
 ---
 # <a name="bookingbusiness-publish"></a>bookingBusiness: публикация
 
@@ -73,6 +73,10 @@ POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M36
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/bookingbusiness-publish-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/bookingbusiness-publish-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

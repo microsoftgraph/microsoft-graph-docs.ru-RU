@@ -1,16 +1,16 @@
 ---
 title: Удаление featureRolloutPolicy
 description: Удаление объекта featureRolloutPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: fc776712a60dd4beaafb2e9ca38391fdf73a0c10
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 3c0cac1dc2d05123cf589e89995bd508343f021a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508924"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028545"
 ---
 # <a name="delete-featurerolloutpolicy"></a>Удаление featureRolloutPolicy
 
@@ -44,7 +44,7 @@ DELETE /policies/featureRolloutPolicies/{id}
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token}. Обязательна |
+| Авторизация | Bearer {token}. Обязательно |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/policies/featureRolloutPolicies/df85e4d9
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-featurerolloutpolicy-policies-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-featurerolloutpolicy-policies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

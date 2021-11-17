@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 81d821571007f8df619b536f1a975abf6617086b
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 3dae2a41ee6756deeec051a0e21dd2ed0c81bcc1
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60936770"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61005060"
 ---
 # <a name="update-educationuser-properties"></a>Обновление свойств educationUser
 
@@ -52,7 +52,7 @@ PATCH /education/users/{id}
 
 | Свойство         | Тип               | Описание                                                                                                                                     |
 | :--------------- | :----------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
-| displayName      | String             | Отображаемое имя пользователя                                                                                                                            |
+| displayName      | Строка             | Отображаемое имя пользователя                                                                                                                            |
 | givenName        | String             | Имя                                                                                                                                      |
 | middleName       | String             | Отчество пользователя                                                                                                                             |
 | surname          | String             | Фамилия пользователя                                                                                                                                 |
@@ -111,6 +111,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-educationuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

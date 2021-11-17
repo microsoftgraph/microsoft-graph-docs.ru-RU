@@ -1,30 +1,30 @@
 ---
-title: Список БукингкурренЦиес
-description: Получение списка объектов Букингкурренци, доступных для корпоративных книг Майкрософт.
-localization_priority: Normal
+title: Список bookingCurrencies
+description: Получите список объектов bookingCurrency, доступных для бизнеса Microsoft Bookings.
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: eb0b9a2e2d122083905c79be7cf540853340d40a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 87a0af55504031355e19dab929e1326a2363c11e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960547"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982322"
 ---
-# <a name="list-bookingcurrencies"></a>Список БукингкурренЦиес
+# <a name="list-bookingcurrencies"></a>Список bookingCurrencies
 
 Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [букингкурренци](../resources/bookingcurrency.md) , доступных для корпоративных книг Майкрософт.
+Получите список объектов [bookingCurrency,](../resources/bookingcurrency.md) доступных для бизнеса Microsoft Bookings.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Резервирования. Read. ALL, Букингсаппоинтмент. ReadWrite. ALL, Books. ReadWrite. ALL, Books. Manage. ALL   |
+|Делегированные (рабочая или учебная учетная запись) | Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
 |Для приложений | Не поддерживается.  |
 
@@ -34,7 +34,7 @@ ms.locfileid: "48960547"
 GET /bookingCurrencies
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа, в том числе $count, $filter, $select, $skip и $Top.
+Этот метод поддерживает параметры запроса [OData](/graph/query-parameters) для настройки ответа, включая $count, $filter, $select, $skip и $top.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -44,7 +44,7 @@ GET /bookingCurrencies
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [букингкурренци](../resources/bookingcurrency.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` коллекцию объектов [bookingCurrency](../resources/bookingcurrency.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -73,10 +73,14 @@ GET https://graph.microsoft.com/beta/bookingCurrencies
 [!INCLUDE [sample-code](../includes/snippets/java/get-bookingcurrencies-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-bookingcurrencies-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Note: объект Response, показанный здесь, усекается для краткости. Все поддерживаемые валюты и свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Показанный здесь объект ответа усечен для краткости. Все поддерживаемые валюты и свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,

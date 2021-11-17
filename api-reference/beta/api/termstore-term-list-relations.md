@@ -1,23 +1,23 @@
 ---
-title: Список отношений
-description: Получите отношения из свойства навигации relations.
+title: Отношения списка
+description: Получите отношения из свойства навигации отношений.
 author: mohitpcad
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a3ccad6849eb9533ac043c22bbeff636230bc2cb
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: 57175d0306d0113b525fb39d8e1fdc010ac97eea
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49874447"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60977609"
 ---
-# <a name="list-relations"></a>Список отношений
+# <a name="list-relations"></a>Отношения списка
 Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите другое отношение термина [или] набора из [свойства] навигации relations.
+Получите другое отношение термина [или] набора [из] свойства навигации отношений.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,14 +46,14 @@ GET /termStore/sets/{setId}/terms/{termId}/relations
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [relation](../resources/termstore-relation.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [связи](../resources/termstore-relation.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/termStore/sets/{setId}/relations
 [!INCLUDE [sample-code](../includes/snippets/java/get-relation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-relation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -112,7 +116,7 @@ Content-Type: application/json
 
 
 [set]: ../resources/termstore-set.md
-[term]: ../resources/termstore-term.md
+[термин]: ../resources/termstore-term.md
 [microsoft.graph.termStore.relation]: ../resources/termstore-relation.md
 
 

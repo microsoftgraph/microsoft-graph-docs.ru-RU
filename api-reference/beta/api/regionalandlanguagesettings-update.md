@@ -2,15 +2,15 @@
 title: Обновление regionalAndLanguageSettings
 description: Обновление региональных и языковых параметров пользователя.
 author: jasonbro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: fb1621d05daa04a3387d728dfdfbea073cf56704
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: eed6912edd9252f73cec917098111024a634d5e0
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787508"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60996894"
 ---
 # <a name="update-regionalandlanguagesettings"></a>Обновление regionalAndLanguageSettings
 
@@ -27,7 +27,7 @@ ms.locfileid: "52787508"
 |----------------------------------|---------------------------------------------- |
 |Делегированные (рабочая или учебная учетная запись)|User.ReadWrite, User.ReadWrite.All             |
 |Делегированная (личная учетная запись)      |User.ReadWrite, User.ReadWrite.All             |
-|Приложение                       |User.ReadWrite, User.ReadWrite.All             |
+|Для приложений                       |User.ReadWrite, User.ReadWrite.All             |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,7 +46,7 @@ PATCH /settings/regionalAndLanguageSettings
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение|
 |:-----------|:------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -132,6 +132,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/put-regionalandlanguagesettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/put-regionalandlanguagesettings-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -189,6 +193,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/patch-regionalandlanguagesettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/patch-regionalandlanguagesettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

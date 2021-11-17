@@ -1,16 +1,16 @@
 ---
 title: Получить шаблон настройки каталога
 description: Позволяет получить свойства объекта directorySettingTemplate, включая доступные параметры и их значения по умолчанию.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 09ea18c16c295b1974f60c76ea3a3897f6f419d2
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 8c5920dd971f71603afacb080d8b77cd35fde154
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514506"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61015650"
 ---
 # <a name="get-a-directory-setting-template"></a>Получить шаблон настройки каталога
 
@@ -42,7 +42,7 @@ GET /directorySettingTemplates/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный.|
+| Авторизация  | Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/directorySettingTemplates/08d542b9-071f-4e1
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-directorysettingtemplate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-directorysettingtemplate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

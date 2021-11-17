@@ -2,15 +2,15 @@
 title: Get azureADDevice
 description: Ознакомьтесь с свойствами объекта azureADDevice.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 480940d2b0b13ff32b002d5a1ff4a5922d9db29c
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: d0c4f8eeeb5f2a97095869c610ff9f37db110ed3
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241103"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61013256"
 ---
 # <a name="get-azureaddevice"></a>Get azureADDevice
 Пространство имен: microsoft.graph.windowsUpdates
@@ -46,7 +46,7 @@ GET /admin/windows/updates/updatableAssets/{azureADDeviceId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/983f0
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-azureaddevice-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-azureaddevice-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

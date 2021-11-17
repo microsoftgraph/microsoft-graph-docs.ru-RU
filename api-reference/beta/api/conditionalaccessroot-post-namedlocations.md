@@ -1,16 +1,16 @@
 ---
 title: Создание namedLocation
 description: Создайте новое имяLocation.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 51b661169dc1e308f3e7e422b1ba8eec4843de56
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 24d29d54d410f3793294c3fc276d66c3e9ad6f17
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047233"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026785"
 ---
 # <a name="create-namedlocation"></a>Создание namedLocation
 
@@ -18,7 +18,7 @@ ms.locfileid: "52047233"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [объект с именемLocation.](../resources/namedlocation.md)
+Создайте новый [объект с именемLocation.](../resources/namedlocation.md) Именуемые расположения могут быть [объектами ipNamedLocation](../resources/ipnamedlocation.md) или [countryNamedLocation.](../resources/countrynamedlocation.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -42,13 +42,26 @@ POST /identity/conditionalAccess/namedLocations
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажи представление JSON объекта [ipNamedLocation](../resources/ipnamedlocation.md) или [countryNamedLocation.](../resources/countrynamedlocation.md)
+В теле запроса укажи представление JSON объекта [ipNamedLocation](../resources/ipnamedlocation.md) или [countryNamedLocation.](../resources/countrynamedlocation.md) Необходимо указать **@odata.type** производных типов, то есть для `#microsoft.graph.ipNamedLocation` объекта [ipNamedLocation](../resources/ipnamedlocation.md) или объекта `#microsoft.graph.countryNamedLocation` [countryNamedLocation.](../resources/countrynamedlocation.md)
 
+В следующей таблице перечислены свойства, необходимые для создания [объекта ipNamedLocation.](../resources/ipnamedlocation.md)
+
+| Свойство     | Тип        | Описание |
+|:-------------|:------------|:------------|
+|displayName|Строка|Понятное человеку имя расположения. Обязательный.|
+|ipRanges|Коллекция объектов [ipRange](../resources/iprange.md)|Список диапазонов IP-адресов в формате CIDR IPv4 (например, 1.2.3.4/32) или любого допустимого формата IPv6 от IETF RFC596. Обязательный. Также **@odata.type** ipRange.|
+
+В следующей таблице перечислены свойства, необходимые для создания [объекта countryNamedLocation.](../resources/countrynamedlocation.md)
+
+| Свойство     | Тип        | Описание |
+|:-------------|:------------|:------------|
+|countriesAndRegions|Коллекция объектов string|Список стран и/или регионов в формате двух букв, заданный ISO 3166-2. Обязательный.|
+|displayName|String|Понятное человеку имя расположения. Обязательный.|
 ## <a name="response"></a>Отклик
 
 В случае успешной работы этот метод возвращает код отклика и новый `201 Created` [объект ipNamedLocation](../resources/ipnamedlocation.md) или [объект countryNamedLocation](../resources/countrynamedlocation.md) в тексте ответа.
@@ -101,6 +114,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-namedlocation-from-conditionalaccessroot-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-namedlocation-from-conditionalaccessroot-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -182,6 +199,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-namedlocation-from-conditionalaccessroot-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-namedlocation-from-conditionalaccessroot-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
