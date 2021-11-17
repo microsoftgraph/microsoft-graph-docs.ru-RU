@@ -1,16 +1,16 @@
 ---
 title: Удаление открытого расширения
 description: 'Удаление открытого расширения (объекта openTypeExtension) из указанного экземпляра ресурса. '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 01be68fc952fbc57debeb054257813cb34d626a5
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: 637951212a9243e4fdd96f5778d775cb4e65b3cb
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092738"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028188"
 ---
 # <a name="delete-open-extension"></a>Удаление открытого расширения
 
@@ -20,11 +20,11 @@ ms.locfileid: "50092738"
 
 Удаление открытого расширения (объекта [openTypeExtension](../resources/opentypeextension.md)) из указанного экземпляра ресурса. 
 
-Список ресурсов, [](#permissions) которые поддерживают открытые расширения, см. в таблице в разделе "Разрешения".
+Список ресурсов, поддерживаюных открытые расширения, см. в таблице в разделе [Разрешения.](#permissions)
 
 ## <a name="permissions"></a>Разрешения
 
-В зависимости от ресурса, из который удаляется расширение, и запрашиваемого типа разрешений (делегированная или приложение), разрешение, указанное в следующей таблице, является наименее привилегированным для вызова этого API. Чтобы узнать больше, в том [числе](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) с осторожностью перед выбором более привилегированных разрешений, найди следующие разрешения в [разрешениях.](/graph/permissions-reference)
+В зависимости от ресурса, который удаляет расширение, и запрашиваемого типа разрешений (делегирован или приложения), разрешение, указанное в следующей таблице, является наименее привилегированным для вызова этого API. Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference).
 
 | Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Для приложений |
 |:-----|:-----|:-----|:-----|
@@ -71,7 +71,7 @@ DELETE /users/me/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extensio
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Значение |
 |:---------------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -106,6 +106,10 @@ DELETE https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUy
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-opentypeextension-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-opentypeextension-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

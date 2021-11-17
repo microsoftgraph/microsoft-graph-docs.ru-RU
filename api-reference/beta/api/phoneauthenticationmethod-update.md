@@ -1,16 +1,16 @@
 ---
 title: Обновление phoneAuthenticationMethod
 description: Обновление номера телефона, связанного с объектом phoneAuthenticationMethod.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5230ca00a63f3543b95ef4f2a1dc7242c5460a1b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1b6e14615a43abab33349d9f44ecbbe78cf42dc4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055409"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019739"
 ---
 # <a name="update-phoneauthenticationmethod"></a>Обновление phoneAuthenticationMethod
 
@@ -42,7 +42,7 @@ ms.locfileid: "52055409"
 |:---------------------------------------|:-------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | UserAuthenticationMethod.ReadWrite.All |
+| Для приложений                            | UserAuthenticationMethod.ReadWrite.All |
 
 Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 * Глобальный администратор
@@ -66,7 +66,7 @@ PUT /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -75,8 +75,8 @@ PUT /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|phoneNumber|String|Номер телефона для текста или вызова для проверки подлинности. Телефон номера используют формат "+ \<country code\> \<number\> \<extension\> x", с необязательным расширением. Например, допустимы +1 5555551234 или +1 5555551234x1233. При создании и обновлении номера отклоняется, если они не соответствуют требуемой форме.|
-|phoneType|String| Возможные значения: `mobile`, `alternateMobile` или `office`.|
+|phoneNumber|String|Номер телефона для текста или вызова для проверки подлинности. Телефон номера используют формат "+ \<country code\> \<number\> x \<extension\> ", с необязательным расширением. Например, допустимы +1 5555551234 или +1 555551234x1233. При создании и обновлении номера отклоняется, если они не соответствуют требуемой форме.|
+|phoneType|Строка| Возможные значения: `mobile`, `alternateMobile` или `office`.|
 
 ## <a name="response"></a>Отклик
 
@@ -117,6 +117,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-phoneauthenticationmethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-phoneauthenticationmethod-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

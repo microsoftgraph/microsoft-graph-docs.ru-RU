@@ -1,16 +1,16 @@
 ---
 title: 'группа: checkMemberObjects'
 description: Проверьте членство в списке групп, ролей каталогов или административных единиц для указанного объекта группы.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d3b1f5478feb73e1d005089fa35eac88d27c699b
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 54551de06f77bcc7a892bfbea8187e3dce5ea3c9
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681909"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028496"
 ---
 # <a name="group-checkmemberobjects"></a>группа: checkMemberObjects
 
@@ -18,7 +18,7 @@ ms.locfileid: "52681909"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Проверка членства в списке групп или административных подразделений для указанной группы. Этот метод является транзитным.
+Проверка членства в списке групп или административных подразделений для указанной группы. Это транзитивный метод.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -100,12 +100,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/group-checkmemberobjects-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/group-checkmemberobjects-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

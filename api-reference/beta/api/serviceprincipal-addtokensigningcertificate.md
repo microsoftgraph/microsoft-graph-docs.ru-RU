@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: addTokenSigningCertificate'
 description: Добавьте сертификат подписи в службуPrincipal.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 01aded24ecce1b15c7bb56b9c5054f887098dc38
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 0b835c493916f1f6216ba87625670538db96904b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787228"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026325"
 ---
 # <a name="serviceprincipal-addtokensigningcertificate"></a>servicePrincipal: addTokenSigningCertificate
 
@@ -18,9 +18,15 @@ ms.locfileid: "52787228"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создает самозаверяемый сертификат подписи и возвращает [selfSignedCertificate](../resources/selfsignedcertificate.md), который является публичной частью сгенерированного сертификата. Самозаверяется сертификат подписи состоит из этих ресурсов: частный ключ[(keyCredential](../resources/keycredential.md) с использованием = "Sign"), общедоступный ключ[(keyCredential](../resources/keycredential.md) с использованием = "verify") и [passwordCredential](../resources/passwordcredential.md). Все созданные ресурсы имеют один и тот же **настраиваемыйKeyIdentifier.**
+Создает самозаверяемый сертификат подписи и возвращает объект [selfSignedCertificate,](../resources/selfsignedcertificate.md) который является публичной частью сгенерированного сертификата. Самозаверяется сертификат подписи состоит из следующих объектов, которые добавляются в [службуPrincipal:](../resources/serviceprincipal.md) 
++ Объект [keyCredentials со](../resources/keycredential.md) следующими объектами:
+    + Частный объект ключа **с набором** использования `Sign` .
+    + Объект public key с **набором** использования `Verify` .
++ Объект [passwordCredentials.](../resources/passwordcredential.md)
 
-**ПарольCredential используется** для открытия ключа pfx/private. Кроме того, это связано с privateKey с тем же **keyId**. Предмет сертификата — это постоянное значение. На нее не влияет необязательный **displayName,** предоставляемый в вызове POST. **StartDateTime** задан в то же время, когда сертификат создается с помощью действия. **EndDateTime** может быть до трех лет после создания сертификата.
+Все объекты имеют одинаковое значение **customKeyIdentifier**.
+
+**ПарольCredential используется** для открытия файла PFX (закрытый ключ). Он и связанный частный объект ключа имеют одинаковое значение **keyId**. После набора во время создания с помощью **свойства displayName** объект сертификата не может быть обновлен. **StartDateTime** задан в то же время, когда сертификат создается с помощью действия. **EndDateTime** может быть до трех лет после создания сертификата.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,7 +52,7 @@ POST /servicePrincipals/{id}/addTokenSigningCertificate
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 | displayName | string | Удобное имя для ключа.  Она должна начинаться `CN=` с .|
-| endDateTime | DateTimeOffset |Дата и время истечения срока действия учетных данных. Срок создания сертификата может быть не более 3 лет. Если она не предоставлена, по умолчанию — три года со времени создания. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, полночь UTC 1 января 2014 г. будет выглядеть так: '2014-01-01T00:00:00Z' .|
+| endDateTime | DateTimeOffset |Дата и время истечения срока действия учетных данных. Срок создания сертификата может быть не более 3 лет. Если она не предоставлена, по умолчанию — три года со времени создания. Тип timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 
 ## <a name="response"></a>Отклик
 
@@ -88,6 +94,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-addtokensigningcertificate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-addtokensigningcertificate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

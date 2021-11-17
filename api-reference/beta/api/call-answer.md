@@ -2,15 +2,15 @@
 title: 'вызов: ответ'
 description: Ответ на входящий вызов.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3735532ec12a1b11fad67aa6f1a19fe629324b62
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 54f57cc549810e3429e88e6d5b9edcbf2851cc32
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786582"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61005871"
 ---
 # <a name="call-answer"></a>вызов: ответ
 
@@ -29,9 +29,9 @@ ms.locfileid: "52786582"
 | :-------------- | :-----------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                        |
-| Приложение     | Calls.JoinGroupCalls.All или Calls.JoinGroupCallsasGuest.All |
+| Для приложений     | Calls.JoinGroupCalls.All или Calls.JoinGroupCallsasGuest.All |
 
-> **Примечание:** Для вызова, использующего средства массовой информации с использованием приложений, также требуется разрешение Calls.AccessMedia.All. Для расшифровки входящих уведомлений о вызове необходимо иметь по крайней мере одно из следующих `source` разрешений: Calls.AccessMedia.All, Calls.Initiate. Все, Calls.InitiateGroupCall.All, Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All. Это `source` информация вызываемой в уведомлении о входящих вызовах. Без по крайней мере одного из этих разрешений будет `source` оставаться зашифрованным.
+> **Примечание:** Для вызова, использующего средства массовой информации с использованием приложений, также требуется разрешение Calls.AccessMedia.All. Для расшифровки входящих уведомлений о вызове необходимо иметь по крайней мере одно из следующих `source` разрешений: Calls.AccessMedia.All, Calls.Initiate.All, Calls.InitiateGroupCall.All, Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All. Это `source` информация вызываемой в уведомлении о входящих вызовах. Без по крайней мере одного из этих разрешений будет `source` оставаться зашифрованным.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {"blockType": "ignored" } -->
@@ -44,7 +44,7 @@ POST /communications/calls/{id}/answer
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,8 +53,8 @@ POST /communications/calls/{id}/answer
 | Параметр           | Тип                                                                                                                                 | Описание                                                                                                                                                                                                         |
 | :-----------------  | :-----------------------------------------                                                                                           | :----------------------------------------------------------------------------------------------------------------------------------------------                                                                     |
 | callbackUri         | String                                                                                                                               | Позволяет ботам предоставлять определенный URI вызова для параллельного вызова для получения более поздних уведомлений. Если это свойство не установлено, вместо него будет использоваться глобальный URI вызова бота. Это должно быть `https` . |
-| acceptedModalities  | Коллекция строк                                                                                                                    | Список модальных способов для приемки. Возможное значение: `audio` `video` , `videoBasedScreenSharing` . Требуется для ответа на вызов.                                                                                      |
-| mediaConfig         | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) или [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) | Настройка мультимедиа. Обязательно.                                                                                                                                                                                 |
+| acceptedModalities  | Коллекция String                                                                                                                    | Список модальных способов для приемки. Возможное значение: `audio` `video` , `videoBasedScreenSharing` . Требуется для ответа на вызов.                                                                                      |
+| mediaConfig         | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) или [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) | Настройка мультимедиа. Обязательное.                                                                                                                                                                                 |
 | participantCapacity | Целое                                                                                                                                  | Число участников, которые приложение может обрабатывать для вызова, для Teams [сценарий](/MicrosoftTeams/teams-recording-policy) записи на основе политики.                                                     |
 
 ## <a name="response"></a>Отклик
@@ -104,6 +104,10 @@ Content-Length: 211
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-answer-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-answer-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -380,6 +384,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-answer-app-hosted-media-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-answer-app-hosted-media-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

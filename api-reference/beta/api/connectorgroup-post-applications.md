@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c27d659b8235dde9977db8e1fcf4c08d3fc5231a
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: f484d5a67fde2b1e90a7dfd13ac3c0ffb67d82cc
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60945714"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61005466"
 ---
 # <a name="assign-a-connectorgroup-to-an-application"></a>Назначение соединителиГруп приложению
 
@@ -38,7 +38,7 @@ PUT /applications/{id}/connectorGroup/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Носителер. Обязательный параметр.|
+| Authorization  | Носителер. Обязательный параметр.|
 | Content-Type | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -79,6 +79,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-application-from-connectorgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-application-from-connectorgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

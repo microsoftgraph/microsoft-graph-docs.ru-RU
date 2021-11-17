@@ -1,16 +1,16 @@
 ---
 title: Обновление объектов secureScoreControlProfiles
 description: Обновление редактируемого свойства secureScoreControlProfiles в рамках любого интегрированного решения для изменения различных свойств, например, присвоенныхTo или tenantNote.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 6fee598a91d7153b98ca6e36bb9a21ff949e8b22
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 2c02d91ef7c774975c28b125bcbc4fb9432d1504
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787242"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002596"
 ---
 # <a name="update-securescorecontrolprofiles"></a>Обновление объектов secureScoreControlProfiles
 
@@ -28,7 +28,7 @@ ms.locfileid: "52787242"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |   SecurityEvents.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Приложение | SecurityEvents.ReadWrite.All |
+|Для приложений | SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,13 +52,13 @@ PATCH /security/secureScoreControlProfiles/{id}
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
 |assignedTo|String|Имя аналитика, на который назначен контроль для выполнения, выполнения или устранения.|
-|tenantNote|String|Аналитик комментирует управление (для управления клиентом).|
-|controlStateUpdates| String|Параметр управления, управляемый аналитиком. Возможные значения: `ignore`, `thirdParty`, `reviewed`.|
+|tenantNote|Строка|Аналитик комментирует управление (для управления клиентом).|
+|controlStateUpdates| Строка|Параметр управления, управляемый аналитиком. Возможные значения: `ignore`, `thirdParty`, `reviewed`.|
 
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `204 No Content`.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 Если используется необязательный заголовок запроса, метод возвращает код ответа и обновленный объект `200 OK` [secureScoreControlProfiles](../resources/securescorecontrolprofiles.md) в теле ответа.
 
@@ -96,6 +96,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/securescorecontrolprofiles-update-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/securescorecontrolprofiles-update-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

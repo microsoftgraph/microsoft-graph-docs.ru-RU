@@ -2,15 +2,15 @@
 title: 'вызов: playPrompt'
 description: Воспроизведения запроса в вызове.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b6bfd7aa2cf7392a4abd16b339d31f58f9e64aff
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ac3ce623d45e4ac8a802fbd0dae2c10894a5f7e5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047646"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61025066"
 ---
 # <a name="call-playprompt"></a>вызов: playPrompt
 
@@ -32,7 +32,7 @@ ms.locfileid: "52047646"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
-| Для приложений                            | Отсутствуют.                                        |
+| Для приложений                            | Нет.                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,7 +46,7 @@ POST /communications/calls/{id}/playPrompt
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
@@ -54,8 +54,8 @@ POST /communications/calls/{id}/playPrompt
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |подсказки|[Коллекция MediaPrompt](../resources/mediaprompt.md)| Подсказки для игры. Максимальный поддерживаемый размер коллекции mediaPrompt — 20.|
-|цикл|Логический| Значение цикла. True указывает на бесконечное циклику. Значение по умолчанию  false. |
-|clientContext|String|Уникальная строка контекста клиента. Может иметь не более 256 символов.|
+|цикл|Логическое| Значение цикла. True указывает на бесконечное циклику. Значение по умолчанию  false. |
+|clientContext|Строка|Уникальная строка контекста клиента. Может иметь не более 256 символов.|
 
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект playPromptOperation](../resources/playpromptoperation.md) в тексте ответа.
@@ -106,6 +106,10 @@ Content-Length: 166
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-playprompt-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-playprompt-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
