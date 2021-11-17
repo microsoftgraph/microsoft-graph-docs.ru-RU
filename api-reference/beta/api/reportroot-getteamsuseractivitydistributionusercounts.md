@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getTeamsUserActivityDistributionUserCounts'
 description: Получите количество лицензированных Microsoft Teams по типу действия за выбранный период. Типы действий — это количество командных сообщений чата, частных сообщений чата, звонков и собраний.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 69bdcafd963c96274034f53158337d0e38c3d654
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 45c686f18207c14e5d2c16448fdb849aa8e2efad
+ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053519"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61044465"
 ---
 # <a name="reportroot-getteamsuseractivitydistributionusercounts"></a>reportRoot: getTeamsUserActivityDistributionUserCounts
 
@@ -46,7 +46,7 @@ GET /reports/getTeamsUserActivityDistributionUserCounts(period='D7')
 
 | Параметр | Тип   | Описание                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
+| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
@@ -77,7 +77,7 @@ CSV-файл содержит столбцы со следующими заго�
 
 ### <a name="json"></a>JSON
 
-В случае успеха этот метод возвращает код ответа и объект `200 OK` [teamsUserActivityDistributionUserCounts](../resources/teamsuseractivitydistributionusercounts.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` объект JSON в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -153,7 +153,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityDistributionUse
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.teamsUserActivityDistributionUserCounts"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -162,7 +162,6 @@ Content-Type: application/json
 Content-Length: 291
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsuseractivitydistributionusercounts)", 
   "value": [
     {
       "reportRefreshDate": "2020-09-01", 

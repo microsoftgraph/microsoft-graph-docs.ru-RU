@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: vrod9429
 ms.prod: Outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9350e7d6ef0c19a62f05b8ef199f623b5a197c75
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: df5262b93eaabc95d45a8191a177c7967dac488c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60933987"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61011205"
 ---
 # <a name="update-place"></a>Место обновления
 
@@ -52,20 +52,20 @@ PATCH /places/{id | emailAddress}
 | Свойство               | Тип                                              | Описание |
 |:-----------------------|:--------------------------------------------------|:--|
 | address                | [physicalAddress](../resources/physicaladdress.md)             | Адрес улицы комнаты или списка номеров. |
-| audioDeviceName        | String                                            | Указывает имя звукового устройства в комнате. |
+| audioDeviceName        | Строка                                            | Указывает имя звукового устройства в комнате. |
 | bookingType            | [bookingType](../resources/room.md)                            | Тип комнаты. Возможные значения: `Standard` и `Reserved`. |
-| здание               | String                                            | Указывает имя здания или номер здания, в который находится комната. |
+| здание               | Строка                                            | Указывает имя здания или номер здания, в который находится комната. |
 | емкость               | Int32                                             | Указывает емкость комнаты. |
-| displayDeviceName      | String                                            | Указывает имя отображаемого устройства в комнате. |
-| floorLabel             | String                                            | Указывает напольное письмо, в котором находится номер. |
+| displayDeviceName      | Строка                                            | Указывает имя отображаемого устройства в комнате. |
+| floorLabel             | Строка                                            | Указывает напольное письмо, в котором находится номер. |
 | floorNumber            | Int32                                             | Указывает номер пола, на который находится номер. |
 | geoCoordinates         | [outlookGeoCoordinates](../resources/outlookgeocoordinates.md) | Указывает расположение комнаты или списка номеров в широте, долготе и необязательных координатах высоты. |
 | isWheelChairAccessible | Логический                                           | Указывает, доступна ли комната для инвалидных колясок. |
-| подпись                  | String                                            | Указывает описательный метку для комнаты, например номер или имя. |
-| nickname               | String                                            | Указывает псевдоним для комнаты, например " conf room". |
+| подпись                  | Строка                                            | Указывает описательный метку для комнаты, например номер или имя. |
+| nickname               | Строка                                            | Указывает псевдоним для комнаты, например " conf room". |
 | phone                  | String                                            | Номер телефона комнаты или списка номеров. |
 | tags                   | Коллекция String                                 | Указывает дополнительные функции комнаты, например, такие сведения, как тип представления или тип мебели. |
-| videoDeviceName        | String                                            | Указывает имя видео устройства в комнате. |
+| videoDeviceName        | Строка                                            | Указывает имя видео устройства в комнате. |
 
 ## <a name="response"></a>Отклик
 
@@ -113,6 +113,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-room-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-room-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -222,6 +226,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-roomlist-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-roomlist-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

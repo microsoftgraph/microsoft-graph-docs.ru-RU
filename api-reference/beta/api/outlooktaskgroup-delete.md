@@ -2,17 +2,17 @@
 title: Удаление outlookTaskGroup
 description: Удаление указанного outlookTaskGroup.
 author: mashriv
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1128156f2df59e06600e47ca4b3d96f0cd296a10
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 693559c926e5eb4ebc9868bc68e96f353222c23d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974798"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61023742"
 ---
-# <a name="delete-outlooktaskgroup-deprecated"></a>Delete outlookTaskGroup (устаревшее)
+# <a name="delete-outlooktaskgroup-deprecated"></a>Удаление outlookTaskGroup (отстает)
 
 Пространство имен: microsoft.graph
 
@@ -40,7 +40,7 @@ DELETE /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -75,6 +75,10 @@ DELETE https://graph.microsoft.com/beta/me/outlook/taskgroups/AAMkADIyAAAhrbe-AA
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-outlooktaskgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-outlooktaskgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

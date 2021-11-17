@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getTeamsDeviceUsageDistributionTotalUserCounts'
-description: Получите число уникальных пользователей Microsoft Teams, лицензированных или не лицензированных по типу устройства за выбранный период времени.
-localization_priority: Normal
+description: Получите количество уникальных пользователей Microsoft Teams лицензированных или не лицензированных пользователей по типу устройства за выбранный период времени.
+ms.localizationpriority: medium
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: cbb19c4aefaf31060d9c96091bbd5375f83a39ea
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: bfbbd03a7ac2dfb1fa943b7134cf193a9809476e
+ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766966"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61044710"
 ---
 # <a name="reportroot-getteamsdeviceusagedistributiontotalusercounts"></a>reportRoot: getTeamsDeviceUsageDistributionTotalUserCounts
 
@@ -18,7 +18,7 @@ ms.locfileid: "51766966"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите число уникальных пользователей Microsoft Teams, лицензированных или не лицензированных по типу устройства за выбранный период времени.
+Получите количество уникальных пользователей Microsoft Teams лицензированных или не лицензированных пользователей по типу устройства за выбранный период времени.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,7 +46,7 @@ GET /reports/getTeamsDeviceUsageDistributionTotalUserCounts(period='D7')
 
 | Параметр | Тип   | Описание                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
+| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
@@ -77,11 +77,11 @@ CSV-файл содержит столбцы со следующими заго�
 - "Windows";
 - Chrome OS
 - Linux
-- Report Period (отчетный период)
+- "Report Period" (Отчетный период).
 
 ### <a name="json"></a>JSON
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект teamsDeviceUsageDistributionUserCounts](../resources/teamsdeviceusagedistributionusercounts.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` объект JSON в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -156,7 +156,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageDistributionTota
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.teamsDeviceUsageDistributionUserCounts"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -165,7 +165,6 @@ Content-Type: application/json
 Content-Length: 243
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsDeviceUsageDistributionUserCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 
