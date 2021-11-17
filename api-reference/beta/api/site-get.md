@@ -3,15 +3,15 @@ author: JeremyKelley
 description: Получение свойств и отношений ресурса site.
 ms.date: 09/10/2017
 title: Получение сайта SharePoint
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: ba9465888605ae5ba84b0a24d62b79644a302ec5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2b2e54f3f65cae9d3afd219aeef86a337f610803
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969793"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026200"
 ---
 # <a name="get-a-site-resource"></a>Получение ресурса site
 
@@ -46,7 +46,7 @@ GET /sites/contoso.sharepoint.com
 
 ## <a name="access-a-site-by-server-relative-url"></a>Использование относительного URL-адреса сервера для доступа к сайту
 
-Если у вас есть относительный URL-адрес сервера для ресурса **site** , можно создать следующий запрос:
+Если у вас есть относительный URL-адрес сервера для ресурса **site**, можно создать следующий запрос:
 
 ```http
 GET /sites/{hostname}:/{server-relative-path}
@@ -85,6 +85,10 @@ GET /sites/{site-id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-site-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-site-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

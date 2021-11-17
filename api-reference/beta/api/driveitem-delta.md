@@ -1,25 +1,25 @@
 ---
 author: JeremyKelley
-description: Отслеживание изменений элемента диска и его детей со временем.
+description: Отслеживание изменений в элементе диска и его дочерних компонентах с течением времени.
 ms.date: 09/10/2017
-title: 'driveItem: дельта'
+title: 'driveItem: delta'
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 463e36e54897b6c1a617a66c31c6902ccaad7cb2
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: 3ca8c95a2d14ca8c5cc81c710b72b618430e7380
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60890299"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019945"
 ---
-# <a name="driveitem-delta"></a>driveItem: дельта
+# <a name="driveitem-delta"></a>driveItem: delta
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отслеживание изменений [в driveItem](../resources/driveitem.md) и его детях с течением времени.
+Отслеживание изменений в элементе [driveItem](../resources/driveitem.md) и его дочерних компонентах с течением времени.
 
 Для начала приложение вызывает `delta` без параметров. Служба начинает перечислять иерархию диска, возвращая страницы элементов и `@odata.nextLink` или `@odata.deltaLink`, как показано ниже. Приложению следует выполнять вызовы с использованием `@odata.nextLink`, пока не будет возвращен отклик без `@odata.nextLink` или с пустым набором изменений.
 
@@ -84,7 +84,7 @@ GET /users/{userId}/drive/root/delta
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-initial-request"></a>Пример 1. Начальный запрос
+### <a name="example-1-initial-request"></a>Пример 1. Исходный запрос
 
 Ниже приведен пример вызова этого API для определения локального состояния.
 
@@ -225,15 +225,15 @@ Content-type: application/json
 | `resyncChangesApplyDifferences`  | Замените все локальные элементы (в том числе удаленные) соответствующими элементами с сервера, если вы уверены, что при последней синхронизации в службу были внесены все локальные изменения. Отправьте все локальные изменения, не загруженные на сервер. |
 | `resyncChangesUploadDifferences` | Отправьте все локальные элементы, не возвращенные службой, и все файлы, отличающиеся от соответствующих файлов на сервере (сохраняйте обе копии, если вы не знаете, какая из них более актуальна).                                       |
 
-### <a name="example-3-retrieving-the-current-deltalink"></a>Пример 3. Ирисовка текущего deltaLink
+### <a name="example-3-retrieving-the-current-deltalink"></a>Пример 3. Получение текущего значения deltaLink
 
 В некоторых случаях может быть удобно запросить текущее значение deltaLink, не перечисляя перед этим все элементы, уже хранящиеся в объекте drive.
 
 Это может быть полезно, если приложению достаточно узнать об изменениях и ему не нужны сведения о существующих элементах.
 Чтобы получить последнее значение deltaLink, вызовите функцию `delta` с параметром `?token=latest` в строке запроса.
 
-> **Примечание:** Если вы пытаетесь сохранить полное локальное представление элементов в папке или диске, необходимо использовать для первоначального `delta` переозначения.
-Другие подходы, такие как прокачив коллекцию папки, не гарантируют возвращение каждого элемента, если записи имеют место во время `children` переуступки. Использование — это единственный способ гарантировать, что вы считыли все `delta` необходимые данные.
+> **Примечание.** Если вы пытаетесь поддерживать полное локальное представление элементов в папке или на диске, необходимо использовать `delta` для исходного перечисления.
+Другие подходы, например постраничный просмотр коллекции `children` для папки, не гарантируют возврата всех элементов, если во время перечисления выполняются операции записи. Только с помощью функции `delta` можно гарантировать, что считываются все необходимые данные.
 
 #### <a name="request"></a>Запрос
 
@@ -277,23 +277,43 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-retrieving-delta-results-using-a-timestamp"></a>Пример 4. Ирисовка результатов дельты с помощью timestamp
+### <a name="example-4-retrieving-delta-results-using-a-timestamp"></a>Пример 4: Получение результатов delta с использованием метки времени
 
-В некоторых сценариях клиент может знать состояние диска до определенного времени, но не имеет deltaLink на данный момент времени. В этом случае клиент может позвонить с помощью url-адреса с кодируемым временем для значения параметра строки запроса, например или `delta` `token` `?token=2021-09-29T20%3A00%3A00Z` '?token=2021-09-29T12%3A00%3A00%2B8%3A00'.
+В некоторых сценариях клиент может знать состояние диска до определенного момента времени, но не иметь deltaLink для этого момента времени. В этом случае клиент может вызывать `delta`, используя метку времени в кодировке URL-адреса для значения параметра строки запроса `token`, например `?token=2021-09-29T20%3A00%3A00Z` или "?token=2021-09-29T12%3A00%3A00%2B8%3A00".
 
-Использование timestamp на месте маркера поддерживается только на OneDrive для бизнеса и SharePoint.
+Использование метки времени вместо токена поддерживается только в OneDrive для бизнеса и SharePoint.
 
-> **Примечание:** Клиенты должны использовать deltaLink, предоставляемый запросами, если это возможно, а не создавать `delta` собственный маркер. Эту возможность следует использовать только в том случае, если неизвестен deltaLink.
+> **Примечание.** Клиенты должны по возможности использовать deltaLink, что предоставляется запросами `delta`, а не создавать собственный токен. Эту возможность следует использовать, только если элемент deltaLink неизвестен.
 
 
 #### <a name="request"></a>Запрос
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-delta-timestamp", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/root/delta?token=2021-09-29T20%3A00%3A00Z
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-delta-timestamp-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-delta-timestamp-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-delta-timestamp-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-delta-timestamp-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>Отклик

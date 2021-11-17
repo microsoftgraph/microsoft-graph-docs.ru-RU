@@ -5,12 +5,12 @@ author: isaiahwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 01c7efcbea39f9360e9c1356103db89e7021df1e
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 9be7954a2f1446477470fdf7a89f1e30dfa1e7c5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947282"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022067"
 ---
 # <a name="managementactiontenantdeploymentstatus-changedeploymentstatus"></a>managementActionTenantDeploymentStatus: changeDeploymentStatus
 Пространство имен: microsoft.graph.managedTenants
@@ -51,9 +51,9 @@ POST /tenantRelationships/managedTenants/managementActionTenantDeploymentStatuse
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|tenantGroupId|String|Идентификатор группы клиента.|
+|tenantGroupId|Строка|Идентификатор группы клиента.|
 |tenantId|String|Идентификатор Azure Active Directory клиента для [управляемого клиента.](../resources/managedtenants-tenant.md)|
-|managementActionId|String|Идентификатор для действия [управления](../resources/managedtenants-managementaction.md).|
+|managementActionId|Строка|Идентификатор для действия [управления](../resources/managedtenants-managementaction.md).|
 |managementTemplateId|String|Идентификатор шаблона [управления.](../resources/managedtenants-managementtemplate.md)|
 |status|String|Новый статус развертывания клиента [действия](../resources/managedtenants-managementaction.md) управления.|
 
@@ -97,6 +97,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/managementactiontenantdeploymentstatus-changedeploymentstatus-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/managementactiontenantdeploymentstatus-changedeploymentstatus-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

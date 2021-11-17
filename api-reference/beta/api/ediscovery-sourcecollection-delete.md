@@ -2,15 +2,15 @@
 title: Удаление sourceCollection
 description: Удаление объекта sourceCollection.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 13380114c2d2e7a1f0ff4d1f612a411d8efad6f5
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: 3566eb8900f5c68146a0769d6849b129d2f0feba
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50772746"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61003246"
 ---
 # <a name="delete-sourcecollection"></a>Удаление sourceCollection
 
@@ -45,7 +45,7 @@ DELETE /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollection
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/sou
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-sourcecollection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-sourcecollection-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

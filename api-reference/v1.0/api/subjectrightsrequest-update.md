@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: bfff00205418fd82defadd7dcbb38844bc7f11b8
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: d3aba472f25c2a91d20e9ba42b40646a7c53b43b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940456"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61016063"
 ---
 # <a name="update-subjectrightsrequest"></a>Обновление subjectRightsRequest
 Пространство имен: microsoft.graph
@@ -53,7 +53,7 @@ PATCH /privacy/subjectRightsRequests/{subjectRightsRequestId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |assignedTo|[microsoft.graph.identity](../resources/identity.md)|Сведения о удостоверениях пользователя, на который назначен запрос.|
-|description|String|Обновленное описание запроса.|
+|description|Строка|Обновленное описание запроса.|
 |displayName|String|Обновленное имя запроса.|
 |internalDueDateTime|DateTimeOffset|Обновлена внутренняя дата задатки запроса.|
 
@@ -94,6 +94,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-subjectrightsrequest-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-subjectrightsrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

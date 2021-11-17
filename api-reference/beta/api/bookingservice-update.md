@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: f0e652e5fd4e96aba984589371fb1a95e706e1be
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 4a84a19f9af0ac8ad6144ccdf9091b94d3d4c9a7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695225"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61005886"
 ---
 # <a name="update-bookingservice"></a>Обновление службы бронирования
 
@@ -54,20 +54,20 @@ PATCH /bookingBusinesses/{id}/services/{id}
 |defaultDuration|Длительность|Длина службы по умолчанию, представленная в числах дней, часов, минут и секунд. Например, P11D23H59M59.999999999999S. |
 |defaultLocation|[location](../resources/location.md)|Физическое расположение службы по умолчанию.|
 |defaultPrice|Double|Денежная цена по умолчанию для службы.|
-|defaultPriceType|string|Способ заряжания службы по умолчанию. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
+|defaultPriceType|Строка|Способ заряжания службы по умолчанию. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
 |defaultReminders|[коллекция bookingReminder](../resources/bookingreminder.md)|Набор напоминаний по умолчанию для назначения этой службы. Значение этого свойства доступно только при чтении этого **bookingService** по его ID.|
-|description|String|Текстовое описание службы.|
-|displayName|String|Имя службы.|
+|description|Строка|Текстовое описание службы.|
+|displayName|Строка|Имя службы.|
 |emailAddress|String|Адрес электронной почты|
 |id|String| Только для чтения.|
-|isHiddenFromCustomers|Логический|True означает, что эта служба недоступна клиентам для бронирования.|
-|isLocationOnline|Логический|True указывает, что встречи для службы будут проводиться онлайн. Значение по умолчанию − ложь.|
+|isHiddenFromCustomers|Логическое|True означает, что эта служба недоступна клиентам для бронирования.|
+|isLocationOnline|Логическое|True указывает, что встречи для службы будут проводиться онлайн. Значение по умолчанию − ложь.|
 |notes|String|Дополнительные сведения об этой службе.|
 |postBuffer|Длительность|Время буферизации после назначения для этой службы заканчивается, и до следующей встречи клиента можно заказать.|
 |preBuffer|Длительность|Время буферизации перед назначением для этой службы может начаться.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Набор политик, которые определяют, как следует создавать и управлять встречами для этого типа службы.|
-|smsNotificationsEnabled|Логический|True указывает, что sms-уведомления можно отправить клиентам для назначения службы. Значение по умолчанию − ложь.|
-|staffMemberIds|Коллекция строк|Представляет тех [сотрудников,](../resources/bookingstaffmember.md) которые предоставляют эту службу. |
+|smsNotificationsEnabled|Логическое|True указывает, что sms-уведомления можно отправить клиентам для назначения службы. Значение по умолчанию − ложь.|
+|staffMemberIds|Коллекция String|Представляет тех [сотрудников,](../resources/bookingstaffmember.md) которые предоставляют эту службу. |
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204 No content`. Метод не возвращает данные в теле отклика.
@@ -103,6 +103,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-bookingservice-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-bookingservice-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

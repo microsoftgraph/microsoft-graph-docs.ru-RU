@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: delta'
 description: Создайте заново созданные, обновленные или удаленные принципы службы, не выполняя полное чтение всей коллекции ресурсов. Подробные сведения см. в материале Использование запроса Delta.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: a878e82a591f287712231c68022874b5967cbd1b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6d5e765e20bea88b0de08845d2a2fedda0813ca8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051944"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61033859"
 ---
 # <a name="serviceprincipal-delta"></a>servicePrincipal: delta
 
@@ -104,6 +104,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/delta
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

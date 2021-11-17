@@ -1,16 +1,16 @@
 ---
 title: Создание accessReview
 description: В функции обзоров доступа Azure AD создайте новый объект accessReview.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: fd1f6c25dcc4013c1abc3d39dafa63723a1e3ea0
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 516a1567921089f1285d639f4e12f8747e92de91
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751120"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60988161"
 ---
 # <a name="create-accessreview"></a>Создание accessReview
 
@@ -32,7 +32,7 @@ ms.locfileid: "52751120"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение                            | AccessReview.ReadWrite.Membership |
+|Для приложений                            | AccessReview.ReadWrite.Membership |
 
 Вызываемая должна также иметь разрешение ProgramControl.ReadWrite.All, чтобы после создания обзора доступа вызываемая мог создать [программуControl](../resources/programcontrol.md).
 Кроме того, подписанный пользователь также должен быть в роли каталога, что позволяет им создавать обзор доступа.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviews-root.md)
@@ -55,12 +55,12 @@ POST /accessReviews
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| displayName             |String                                                        | Имя обзора доступа.  |
+| displayName             |Строка                                                        | Имя обзора доступа.  |
 | startDateTime           |DateTimeOffset                                                | DateTime, когда планируется начать проверку.  Это должна быть дата в будущем.   |
 | endDateTime             |DateTimeOffset                                                | DateTime, когда проверка должна завершиться. Это должно быть по крайней мере на один день позже даты начала.   |
-| description             |String                                                        | Описание, чтобы показать рецензентам. |
-| businessFlowTemplateId  |String                                                        | Идентификатор шаблона бизнес-потока, полученный из [businessFlowTemplate.](../resources/businessflowtemplate.md)  |
-| reviewerType            |String                                                        | Тип отношения рецензента к правам доступа к рассмотренного объекта, одного из `self` , `delegated` или `entityOwners` . | 
+| description             |Строка                                                        | Описание, чтобы показать рецензентам. |
+| businessFlowTemplateId  |Строка                                                        | Идентификатор шаблона бизнес-потока, полученный из [businessFlowTemplate.](../resources/businessflowtemplate.md)  |
+| reviewerType            |Строка                                                        | Тип отношения рецензента к правам доступа к рассмотренного объекта, одного из `self` , `delegated` или `entityOwners` . | 
 | reviewedEntity          |[identity](../resources/identity.md)                                     | Объект, для которого создается обзор доступа, например членство в группе или назначения пользователей приложению. | 
 
 
@@ -145,6 +145,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-accessreview-from-accessreviews-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accessreview-from-accessreviews-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

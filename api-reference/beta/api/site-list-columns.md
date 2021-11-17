@@ -5,12 +5,12 @@ description: Список столбцов на сайте.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: ac2229852f328e05a5be4ddb7c0a03cfb2eb0685
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: a1ef129c44a2094468e4ba30f775cfd7abccb3cb
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730454"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026185"
 ---
 # <a name="list-columns-in-a-site"></a>Список столбцов на сайте
 Пространство имен: microsoft.graph
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/columns
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-columns-from-site-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-columns-from-site-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

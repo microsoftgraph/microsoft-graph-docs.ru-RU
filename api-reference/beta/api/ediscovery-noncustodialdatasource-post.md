@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 4fd9284156518369bdc51de733760b0b5cabee49
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: cb5a91ed355e6947f27a4fc6faf0023ec77ffcdc
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60927093"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60998708"
 ---
 # <a name="create-noncustodialdatasource"></a>Создание noncustodialDataSource
 
@@ -56,7 +56,7 @@ POST /compliance/ediscovery/cases/{caseId}/noncustodialDataSources
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|applyHoldToSource|Логический|Указывает, применяется ли удержание к источнику данных без хранения (например, к почтовому ящику или сайту).|
+|applyHoldToSource|Логическое|Указывает, применяется ли удержание к источнику данных без хранения (например, к почтовому ящику или сайту).|
 |datasource|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md)|Либо userSource, либо siteSource.  Для userSource используйте "dataSource": { "@odata.type": "microsoft.graph.ediscovery.userSource", "email" : "SMTP address"}.  Для источника сайта используйте "dataSource": { "@odata.type": "microsoft.graph.ediscovery.siteSource", "site@odata.bind": "siteId" }, где siteId можно извлечь из URL-адреса сайта, например, запрос Microsoft Graph будет `https://contoso.sharepoint.com/sites/HumanResources` `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources` . ID — это первый GUID, указанный в поле ID.
 
 ## <a name="response"></a>Отклик
@@ -103,6 +103,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-noncustodialdatasource-from-email-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-noncustodialdatasource-from-email-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -174,6 +178,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-noncustodialdatasource-from-siteurl-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-noncustodialdatasource-from-siteurl-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

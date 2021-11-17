@@ -2,15 +2,15 @@
 title: 'onlineMeeting: createOrGet'
 description: Создайте онлайн-собрание с пользовательским внешним ИД. Если внешний ID уже существует, этот API возвращает объект onlineMeeting с этим внешним ИД.
 author: mkhribech
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 87d51c5796d220cf6ea2fb3fcba629e0fe0b0305
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 17a468a917031985ffb0e507a04e6943413b1998
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896559"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61021719"
 ---
 # <a name="onlinemeeting-createorget"></a>onlineMeeting: createOrGet
 
@@ -53,7 +53,7 @@ POST /users/{userId}/onlineMeetings/createOrGet
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание                 |
 | :------------ | :-------------------------- |
-| Авторизация | Bearer {токен}. Обязательный.   |
+| Авторизация | Bearer {token}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -62,13 +62,13 @@ POST /users/{userId}/onlineMeetings/createOrGet
 | Параметр     | Тип                                                       | Описание                                                                                          |
 | :------------ | :--------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
 | chatInfo      | [chatInfo](../resources/chatinfo.md)                       | Сведения о чате, связанные с этой онлайн-встречей.                                            |
-| endDateTime   | DateTime                                                   | Время окончания собрания в UTC.                                                                         |
+| endDateTime   | Даты и время                                                   | Время окончания собрания в UTC.                                                                         |
 | externalId    | String                                                     | Внешний ID. Пользовательский ID. (Обязательно)                                                             |
 | participants  | [meetingParticipants](../resources/meetingparticipants.md) | Участники, связанные с онлайн-собранием.  Это включает организатора и участников. |
-| startDateTime | DateTime                                                   | Время начала собрания в UTC.                                                                       |
+| startDateTime | Даты и время                                                   | Время начала собрания в UTC.                                                                       |
 | subject       | String                                                     | Тема собрания в Интернете.                                                                   |
 
-> **Примечания.**
+> **Примечания:**
 >
 > - Если **startDateTime** и **endDateTime** не предоставлены, по умолчанию **startDateTime** будет по умолчанию по текущему значению dateTime, а **значение endDateTime** равно **значению startDateTime** + 1 час.
 >
@@ -132,6 +132,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-or-get-onlinemeeting-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-or-get-onlinemeeting-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -257,6 +261,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-or-get-onlinemeeting-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-or-get-onlinemeeting-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

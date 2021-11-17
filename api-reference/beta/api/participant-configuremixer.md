@@ -2,15 +2,15 @@
 title: 'участник: configureMixer'
 description: Настройка смешанного звука для разных участников многопартийного разговора.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d9b8efa45be5163e088bef06e2d71959e80cae58
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9b7bfd09c189f506933dce3103adc9141e374371
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037916"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018290"
 ---
 # <a name="participant-configuremixer"></a>участник: configureMixer
 
@@ -40,7 +40,7 @@ POST /communications/calls/{id}/participants/configureMixer
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
@@ -48,7 +48,7 @@ POST /communications/calls/{id}/participants/configureMixer
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |participantMixerLevels|[коллекция participantMixerLevel](../resources/participantmixerlevel.md)| Конфигурация уровней микшера для данного звукового участника.|
-|clientContext|String|Клиентский контекст.|
+|clientContext|Строка|Клиентский контекст.|
 
 ## <a name="response"></a>Отклик
 Возвращает `202 Accepted` код ответа и заглавную ссылку Location с uri в [commsOperation,](../resources/commsoperation.md) созданный для этого запроса.
@@ -103,6 +103,10 @@ Content-Length: 501
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/participant-configuremixer-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/participant-configuremixer-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

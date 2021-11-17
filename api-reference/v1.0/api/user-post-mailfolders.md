@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a8fcd0beb564788ecbe251f2f4badccd035692fb
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 10126dd7936252728a4e87b83fe6dbe49ccdf320
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940192"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028972"
 ---
 # <a name="create-mailfolder"></a>Создание объекта MailFolder
 
@@ -46,7 +46,7 @@ POST /users/{id | userPrincipalName}/mailFolders
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|String|Отображаемое имя новой папки.|
+|displayName|Строка|Отображаемое имя новой папки.|
 |isHidden|Логический|Указывает, скрыта ли новая папка. Значение по умолчанию — `false`. Настройка свойства необязательна. После набора невозможно обновить это свойство. Дополнительные сведения см. в [папках "Скрытая почта"](../resources/mailfolder.md#hidden-mail-folders)|
 
 ## <a name="response"></a>Отклик
@@ -85,6 +85,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-mailfolder-from-user-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-mailfolder-from-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

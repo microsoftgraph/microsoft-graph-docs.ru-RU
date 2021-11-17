@@ -1,16 +1,16 @@
 ---
 title: Удаление historyItem
-description: Удаление существующего элемента журнала для существующего действия пользователя.
-localization_priority: Normal
+description: Удаление существующего элемента истории для существующей активности пользователя.
+ms.localizationpriority: medium
 ms.prod: project-rome
 doc_type: apiPageType
 author: ailae
-ms.openlocfilehash: 1fa3b1863445caa5ce7a953a98d12310b4abeec9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4054cbb6b76c6e3fdfe04efba6070e14f10f0027
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48017306"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61004555"
 ---
 # <a name="delete-a-historyitem"></a>Удаление historyItem
 
@@ -18,7 +18,7 @@ ms.locfileid: "48017306"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление существующего элемента журнала для существующего действия пользователя.
+Удаление существующего элемента истории для существующей активности пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -43,15 +43,15 @@ DELETE /me/activities/{id}/historyItems/{id}
 
 |Имя | Тип | Описание|
 |:----|:-----|:-----------|
-|Authorization | string | Bearer {токен}. Обязательный.|
+|Authorization | string | Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
-Текст запроса отсутствует.
+Нет тела запроса.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `204 No Content` код отклика, если элемент History был удален.
+В случае успешной работы этот метод возвращает код ответа, если элемент `204 No Content` истории был удален.
 
 ## <a name="example"></a>Пример
 
@@ -71,6 +71,10 @@ PUT https://graph.microsoft.com/beta/me/activities/13881113971988980728/historyI
 ```
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-historyitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-historyitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
