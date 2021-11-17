@@ -5,12 +5,12 @@ description: Удаление типа контента из SharePoint или �
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: a28d735525afd8a83f1f3264b85e62126e6b044b
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 4f3a47d532ab6ff4f6d4729fa4ab03a4693fcf33
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730440"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60974151"
 ---
 # <a name="delete-contenttype"></a>Удаление contentType
 Пространство имен: microsoft.graph
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/{contentTyp
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-contenttype-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-contenttype-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

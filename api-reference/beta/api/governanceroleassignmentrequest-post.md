@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 6821763ce92e705503d335d3415070ab1350e59b
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 54458604e544b7d4f538d2f9792a48264c077e17
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687742"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60990345"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Создание governanceRoleAssignmentRequest
 
@@ -21,7 +21,7 @@ ms.locfileid: "60687742"
 
 Создайте запрос на назначение ролей для представления операции, необходимой для назначения ролей. В следующей таблице перечислены операции.
 
-| Операция                                   | Тип        |
+| Operation                                   | Тип        |
 |:--------------------------------------------|:------------|
 | Назначение роли                    | AdminAdd    |
 | Активация назначения подходящих ролей        | UserAdd     |
@@ -82,11 +82,11 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 | Свойство         | Тип                                                     | Описание |
 |:-----------------|:---------------------------------------------------------|:--|
-| resourceId       | String                                                   | Идентификатор ресурса. Обязательно. |
-| roleDefinitionId | String                                                   | ID определения роли. Обязательно. |
-| subjectId        | String                                                   | ID субъекта. Обязательно. |
+| resourceId       | String                                                   | Идентификатор ресурса. Обязательный. |
+| roleDefinitionId | String                                                   | ID определения роли. Обязательный. |
+| subjectId        | String                                                   | ID субъекта. Обязательный. |
 | assignmentState  | String                                                   | Состояние назначения. Значение может быть `Eligible` и `Active` . Обязательное. |
-| type             | String                                                   | Тип запроса. Значение может быть `AdminAdd` , , , , , , и `UserAdd` `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `UserRenew` `AdminRenew` `AdminExtend` . Обязательно. |
+| type             | Строка                                                   | Тип запроса. Значение может быть `AdminAdd` , , , , , , и `UserAdd` `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `UserRenew` `AdminRenew` `AdminExtend` . Обязательный. |
 | reason           | String                                                   | Причина должна быть предоставлена для запроса назначения ролей для целей аудита и проверки. |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Расписание запроса на назначение ролей. Для типа `UserAdd` запроса `AdminAdd` , и , это `AdminUpdate` `AdminExtend` необходимо. |
 
@@ -121,11 +121,11 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 | Свойство         | Тип                                                     | Обязательное                 | Значение |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
 | resourceId       | String                                                   | Да                      | \<resourceId\> |
-| roleDefinitionId | String                                                   | Да                      | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Да                      | \<subjectId\> |
-| assignmentState  | String                                                   | Да                      | Подходящая / Активная |
+| roleDefinitionId | Строка                                                   | Да                      | \<roleDefinitionId\> |
+| subjectId        | Строка                                                   | Да                      | \<subjectId\> |
+| assignmentState  | Строка                                                   | Да                      | Подходящая / Активная |
 | type             | String                                                   | Да                      | AdminAdd |
-| reason           | String                                                   | зависит от роли Параметры |   |
+| reason           | Строка                                                   | зависит от роли Параметры |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Да                      |   |
 
 #### <a name="request"></a>Запрос
@@ -169,6 +169,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/governanceroleassignmentrequest-post-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -233,10 +237,10 @@ Content-type: application/json
 | Свойство         | Тип                                                     | Обязательное                 | Значение |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
 | resourceId       | String                                                   | Да                      | \<resourceId\> |
-| roleDefinitionId | String                                                   | Да                      | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Да                      | \<subjectId\> |
-| assignmentState  | String                                                   | Да                      | Активное |
-| type             | String                                                   | Да                      | UserAdd |
+| roleDefinitionId | Строка                                                   | Да                      | \<roleDefinitionId\> |
+| subjectId        | Строка                                                   | Да                      | \<subjectId\> |
+| assignmentState  | Строка                                                   | Да                      | Активное |
+| type             | Строка                                                   | Да                      | UserAdd |
 | reason           | String                                                   | зависит от роли Параметры |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Да                      |   |
 
@@ -282,6 +286,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/governanceroleassignmentrequest-post-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -356,9 +364,9 @@ Content-type: application/json
 | Свойство         | Тип                                                     | Обязательное | Значение |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
 | resourceId       | String                                                   | Да      | \<resourceId\> |
-| roleDefinitionId | String                                                   | Да      | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Да      | \<subjectId\> |
-| assignmentState  | String                                                   | Да      | Активное |
+| roleDefinitionId | Строка                                                   | Да      | \<roleDefinitionId\> |
+| subjectId        | Строка                                                   | Да      | \<subjectId\> |
+| assignmentState  | Строка                                                   | Да      | Активное |
 | type             | String                                                   | Да      | UserRemove |
 | reason           | String                                                   | Нет       |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Нет       |   |
@@ -400,6 +408,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/governanceroleassignmentrequest-post-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -446,11 +458,11 @@ Content-type: application/json
 | Свойство         | Тип                                                     | Обязательное | Значение |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
 | resourceId       | String                                                   | Да      | \<resourceId\> |
-| roleDefinitionId | String                                                   | Да      | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Да      | \<subjectId\> |
-| assignmentState  | String                                                   | Да      | Подходящая / Активная |
-| type             | String                                                   | Да      | AdminRemove |
-| reason           | String                                                   | Нет       |   |
+| roleDefinitionId | Строка                                                   | Да      | \<roleDefinitionId\> |
+| subjectId        | Строка                                                   | Да      | \<subjectId\> |
+| assignmentState  | Строка                                                   | Да      | Подходящая / Активная |
+| type             | Строка                                                   | Да      | AdminRemove |
+| reason           | Строка                                                   | Нет       |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Нет       |   |
 
 #### <a name="request"></a>Запрос
@@ -488,6 +500,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-4-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/governanceroleassignmentrequest-post-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -534,10 +550,10 @@ Content-type: application/json
 | Свойство         | Тип                                                     | Обязательное                | Значение |
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
 | resourceId       | String                                                   | Да                     | \<resourceId\> |
-| roleDefinitionId | String                                                   | Да                     | \<roleDefinitionId\> |
-| subjectId        | String                                                   | Да                     | \<subjectId\> |
-| assignmentState  | String                                                   | Да                     | Подходящая / Активная |
-| type             | String                                                   | Да                     | AdminUpdate |
+| roleDefinitionId | Строка                                                   | Да                     | \<roleDefinitionId\> |
+| subjectId        | Строка                                                   | Да                     | \<subjectId\> |
+| assignmentState  | Строка                                                   | Да                     | Подходящая / Активная |
+| type             | Строка                                                   | Да                     | AdminUpdate |
 | reason           | String                                                   | зависит от ролиSettings |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Да                     |   |
 
@@ -581,6 +597,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-5-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/governanceroleassignmentrequest-post-5-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -649,7 +669,7 @@ Content-type: application/json
 | subjectId        | String                                                   | Да                     | \<subjectId\> |
 | assignmentState  | String                                                   | Да                     | Подходящая / Активная |
 | type             | String                                                   | Да                     | AdminExtend |
-| reason           | String                                                   | зависит от ролиSettings |   |
+| reason           | Строка                                                   | зависит от ролиSettings |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Да                     |   |
 
 #### <a name="request"></a>Запрос
@@ -693,6 +713,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-6-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/governanceroleassignmentrequest-post-6-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

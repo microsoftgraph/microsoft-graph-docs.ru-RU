@@ -5,12 +5,12 @@ author: jsandoval-msft
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 599df25182e17bf031933eeb44474608bb5473c6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3a811034419c0e9be0eca8ab123fce3a124178dd
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59085226"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60992626"
 ---
 # <a name="presence-setpresence"></a>присутствие: setPresence
 
@@ -51,7 +51,7 @@ POST /users/{userId}/presence/setPresence
 ## <a name="request-headers"></a>Заголовки запроса
 | Имя          | Описание                 |
 | :------------ | :-------------------------- |
-| Авторизация | Bearer {токен}. Обязательный.   |
+| Авторизация | Bearer {token}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -60,9 +60,9 @@ POST /users/{userId}/presence/setPresence
 
 | Параметр          | Тип     | Описание                                                                                            |
 | :----------------- | :------- | :----------------------------------------------------------------------------------------------------- |
-| sessionId          | string   | ID сеанса присутствия приложения.                                                          |
-| availability       | string   | Сведения о базовом присутствии.                                                                         |
-| действие           | string   | Дополнительные сведения о доступности.                                                          |
+| sessionId          | Строка   | ID сеанса присутствия приложения.                                                          |
+| availability       | Строка   | Сведения о базовом присутствии.                                                                         |
+| действие           | Строка   | Дополнительные сведения о доступности.                                                          |
 | expirationDuration | duration | Срок действия сеанса присутствия приложения. Значение представлено в формате ISO 8601 для длительности.</p>Если это не предусмотрено, по умолчанию будет применяться 5-минутный срок действия. |
 
 > [!IMPORTANT]
@@ -73,7 +73,7 @@ POST /users/{userId}/presence/setPresence
 
 | availability | действие          | Описание                                              |
 | :----------- | :---------------- | :------------------------------------------------------- |
-| Available    | Available         | Обновляет сеанс присутствия как доступный.               |
+| Доступно    | Доступно         | Обновляет сеанс присутствия как доступный.               |
 | Занята         | InACall           | Обновляет сеанс присутствия как Busy, InACall.           |
 | Занята         | InAConferenceCall | Обновляет сеанс присутствия как Busy, InAConferenceCall. |
 | Away         | Away              | Обновляет сеанс присутствия как Away.                    |
@@ -119,6 +119,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/set-presence-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/set-presence-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

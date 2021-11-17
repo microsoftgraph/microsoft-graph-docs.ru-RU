@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: d054b5468456cd552890464fd3f35c0b8399b278
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 3bd4335d3ce5161353e479cd6184e992b0d51c27
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60939023"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60976209"
 ---
 # <a name="create-subjectrightsrequest"></a>Создание subjectRightsRequest
 Пространство имен: microsoft.graph
@@ -54,8 +54,8 @@ POST /privacy/subjectRightsRequests
 |:---|:---|:---|
 |dataSubject|[microsoft.graph.dataSubject](../resources/datasubject.md)|Содержит свойства субъекта данных для запроса.|
 |dataSubjectType|dataSubjectType|Тип субъекта данных. Возможные значения: `customer`, `currentEmployee`, `formerEmployee`, `prospectiveEmployee`, `student`, `teacher`, `faculty`, `other`, `unknownFutureValue`.|
-|description|String|Описание запроса.|
-|displayName|String|Имя запроса.|
+|description|Строка|Описание запроса.|
+|displayName|Строка|Имя запроса.|
 |internalDueDateTime|DateTimeOffset|Внутренняя дата выполнения, используемая для отслеживания завершения запроса.|
 |нормативные акты|Коллекция String|Одно или несколько правил для запроса.|
 |type|subjectRightsRequestType|Тип запроса. Возможные значения: `export`, `delete`, `access`, `tagForAction`, `unknownFutureValue`.|
@@ -106,6 +106,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-subjectrightsrequest-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-subjectrightsrequest-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8e8ce4c0c856829e10e026eddd60f7236b2e9599
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0e4e9b3e29ede80683bc9fc6a6536abf8d600d3c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59114766"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61007033"
 ---
 # <a name="call-cancelmediaprocessing"></a>вызов: cancelMediaProcessing
 
@@ -40,7 +40,7 @@ POST /communications/calls/{id}/cancelMediaProcessing
 
 | Имя          | Описание                 |
 | :------------ | :-------------------------- |
-| Авторизация | Bearer {токен}. Обязательный.   |
+| Авторизация | Bearer {token}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -49,7 +49,7 @@ POST /communications/calls/{id}/cancelMediaProcessing
 
 | Параметр     | Тип   | Описание         |
 | :------------ | :----- | :------------------ |
-| clientContext | String | Клиентский контекст. |
+| clientContext | Строка | Клиентский контекст. |
 
 ## <a name="response"></a>Отклик
 
@@ -93,6 +93,10 @@ Content-Length: 62
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-cancelmediaprocessing-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-cancelmediaprocessing-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

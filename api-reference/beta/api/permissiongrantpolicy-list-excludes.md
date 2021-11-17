@@ -1,16 +1,16 @@
 ---
 title: Список исключает коллекцию разрешенийGrantPolicy
 description: Извлечение списка наборов условий, в которых описываются условия, при которых событие предоставления разрешений исключается в политике предоставления разрешений.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 482d96de6e4fe7bf71e06a7b8bd2cc1c7f0dee9d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 90bbf50e78d1b0a6f27d0224da4309795b70ec5e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055423"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60985766"
 ---
 # <a name="list-excludes-collection-of-permissiongrantpolicy"></a>Список исключает коллекцию разрешенийGrantPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "52055423"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Policy.Read.PermissionGrant, Directory.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Policy.Read.PermissionGrant, Directory.Read.All |
+|Для приложений | Policy.Read.PermissionGrant, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ GET /policies/permissionGrantPolicies/{id}/excludes
 
 | Имя           | Описание                |
 |:---------------|:---------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/permissiongrantpolicy-get-excludes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/permissiongrantpolicy-get-excludes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

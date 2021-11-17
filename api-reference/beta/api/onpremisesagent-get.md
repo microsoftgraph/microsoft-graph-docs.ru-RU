@@ -1,16 +1,16 @@
 ---
 title: Get onPremisesAgent
 description: Извлечение свойств и связей объекта onPremisesAgent.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: b73d3015870f282fa7950468d996abe9269b46bb
-ms.sourcegitcommit: 3f40fbb953b14c1f52341786569c678adfc5bd3e
+ms.openlocfilehash: 79a37b6db20c8fbd1b0f2bcd733e2dde3f04bb40
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52781046"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60985963"
 ---
 # <a name="get-onpremisesagent"></a>Get onPremisesAgent
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/a
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-onpremisesagent-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-onpremisesagent-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

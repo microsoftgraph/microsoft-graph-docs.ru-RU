@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2b5f4f45081319dedef68ca0ba157a8079b12559
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 8db1d664d754eec0db5b02fa5b4315748568e6f7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60941871"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60979857"
 ---
 # <a name="update-accessreviewinstancedecisionitem"></a>Обновление accessReviewInstanceDecisionItem
 Пространство имен: microsoft.graph
@@ -52,7 +52,7 @@ PATCH /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinit
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|решение|String|Проверятель голосует о том, должен ли директор иметь доступ к просматриваемом ресурсу. Возможные значения: `Approve` `Deny` , или `DontKnow` . Обязательный.|
+|решение|Строка|Проверятель голосует о том, должен ли директор иметь доступ к просматриваемом ресурсу. Возможные значения: `Approve` `Deny` , или `DontKnow` . Обязательный.|
 |обоснование|String|Причина принятия решения рецензентом. Требуется, если **обоснованиеRequiredOnApproval** свойства параметров [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) `true` является .|
 
 ## <a name="response"></a>Отклик
@@ -92,6 +92,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-accessreviewinstancedecisionitem-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-accessreviewinstancedecisionitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

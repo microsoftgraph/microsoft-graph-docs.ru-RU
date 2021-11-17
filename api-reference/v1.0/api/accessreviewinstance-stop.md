@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 475db1e293a14881605e9e28a6596bbd53bd6705
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0ed798801ecd352bdb86aa50a8552ffc83d20191
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59008568"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60979843"
 ---
 # <a name="accessreviewinstance-stop"></a>accessReviewInstance: остановка
 Пространство имен: microsoft.graph
@@ -41,7 +41,7 @@ POST /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefiniti
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -77,6 +77,10 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitio
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/accessreviewinstance-stop-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/accessreviewinstance-stop-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

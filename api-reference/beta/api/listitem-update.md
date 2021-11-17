@@ -3,15 +3,15 @@ author: JeremyKelley
 description: Изменение свойств ресурса listItem.
 ms.date: 09/11/2017
 title: Изменение записи в списке SharePoint
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c46206a77359a6a60aaa4193f1d5ff7395a597d7
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 44f8a8aa93d293c305e156641c14aa33d814bef5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50942402"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61012032"
 ---
 # <a name="update-an-item-in-a-list"></a>Изменение элемента в списке
 
@@ -80,10 +80,14 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-listitem-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-listitem-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 При успешном выполнении этот метод возвращает объект [fieldValueSet][] для обновленного элемента списка в теле ответа.
 

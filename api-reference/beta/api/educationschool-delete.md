@@ -2,15 +2,15 @@
 title: Удаление educationSchool
 description: Удаление учебного заведения.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3b51cf44663aafeee54fa5cf2e8a6a6f80412a1e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f5c7c7936b65d8107bfb6212b479c60f71a227e9
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965951"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60975223"
 ---
 # <a name="delete-educationschool"></a>Удаление educationSchool
 
@@ -27,7 +27,7 @@ ms.locfileid: "48965951"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложения | EduRoster.ReadWrite.All | 
+|Для приложений | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,7 @@ DELETE /education/schools/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -72,6 +72,10 @@ DELETE https://graph.microsoft.com/beta/education/schools/10002
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-educationschool-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-educationschool-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

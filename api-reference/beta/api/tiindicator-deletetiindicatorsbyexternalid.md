@@ -1,16 +1,16 @@
 ---
 title: 'tiIndicator: deleteTiIndicatorsByExternalId'
 description: Удалите несколько индикаторов разведки угроз (TI) в одном запросе вместо нескольких запросов, и запрос содержит внешние ИД вместо ID.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: a163f2c2a362cda42964733bf6639a2138dcb98c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e1800ead9d1c3d84dca491014ab7073c9bee863e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052665"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60977428"
 ---
 # <a name="tiindicator-deletetiindicatorsbyexternalid"></a>tiIndicator: deleteTiIndicatorsByExternalId
 
@@ -28,7 +28,7 @@ ms.locfileid: "52052665"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | ThreatIndicators.ReadWrite.OwnedBy |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | ThreatIndicators.ReadWrite.OwnedBy |
+| Для приложений                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,7 +50,7 @@ POST /security/tiIndicators/deleteTiIndicatorsByExternalId
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|значение|Коллекция объектов string| Коллекция `externalIds` удаленных **объектов tiIndicator.** |
+|значение|Коллекция String| Коллекция `externalIds` удаленных **объектов tiIndicator.** |
 
 ## <a name="response"></a>Отклик
 
@@ -96,6 +96,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/tiindicator-deletetiindicatorsbyexternalid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tiindicator-deletetiindicatorsbyexternalid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: Создание personInterest
 description: Создайте новый personInterest.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: People
 doc_type: apiPageType
-ms.openlocfilehash: e4f5648901ff1ed904d5e02fa278b6b9be329de8
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3c743f9e2a500e8845096acf7fa2347b33166c11
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52036928"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60980095"
 ---
 # <a name="create-personinterest"></a>Создание personInterest
 
@@ -43,7 +43,7 @@ POST /users/{id | userPrincipalName}/profile/interests
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный.|
+| Авторизация  | Bearer {token}. Обязательный.|
 | Content-Type   | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,11 +54,11 @@ POST /users/{id | userPrincipalName}/profile/interests
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|Строка|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |categories|Коллекция String|Содержит категории, связанные с интересом пользователя (например, личные, личные). |
-|collaborationTags|Коллекция объектов string|Содержит теги сценариев работы, которые пользователь связал с интересом. Допустимые значения в коллекции: `askMeAbout` , `ableToMentor` , `wantsToLearn` `wantsToImprove` .|
-|description|String|Содержит описание интерес.|
-|displayName|String|Содержит удобное имя для интереса.  |
+|collaborationTags|Коллекция String|Содержит теги сценариев работы, которые пользователь связал с интересом. Допустимые значения в коллекции: `askMeAbout` , `ableToMentor` , `wantsToLearn` `wantsToImprove` .|
+|description|Строка|Содержит описание интерес.|
+|displayName|Строка|Содержит удобное имя для интереса.  |
 |вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |source|[personDataSource](../resources/persondatasource.md)|Где значения возникли, если синхронизированы с другой службы. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |webUrl|String|Содержит ссылку на веб-страницу или ресурс об интересе. |
@@ -106,6 +106,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-personinterest-from-profile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-personinterest-from-profile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,15 +2,15 @@
 title: Удаление legalHold
 description: Удаление объекта legalHold.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 84d94cf4ce0d340d36cb0cf5f2b478c70581f374
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: f7956ee719d190ba3efe62cfc7188c64b8466764
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50773132"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60986851"
 ---
 # <a name="delete-legalhold"></a>Удаление legalHold
 
@@ -45,7 +45,7 @@ DELETE /compliance/ediscovery/cases/{caseId}/legalHolds/{legalHoldId}
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/leg
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-legalhold-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-legalhold-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

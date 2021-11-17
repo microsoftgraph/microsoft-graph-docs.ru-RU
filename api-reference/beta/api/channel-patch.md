@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 91836f71e2f5509907ed7ae4813d1560dc9967b8
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 52f65abb3f7b66633d33c4aa0192432197c3a791
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60288365"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60999390"
 ---
 # <a name="update-channel"></a>Ветвь обновлений 
 
@@ -28,7 +28,7 @@ ms.locfileid: "60288365"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | ChannelSettings.ReadWrite.All, Group.ReadWrite.All,**Directory.ReadWrite.All** |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | ChannelSettings.ReadWrite.Group,*ChannelSettings.ReadWrite.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
+|Для приложений | ChannelSettings.ReadWrite.Group,*ChannelSettings.ReadWrite.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc). Разрешения, отмеченные **, не используются и не должны использоваться.
 
@@ -125,6 +125,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/patch-channel-with-moderationsettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/patch-channel-with-moderationsettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

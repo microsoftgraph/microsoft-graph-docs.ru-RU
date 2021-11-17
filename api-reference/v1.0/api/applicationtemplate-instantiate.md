@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 7935bac29767fee906f03d64a4d05af186a29e20
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 46fe76d14fc1b972cb0ce19222ee7a0343381c37
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59114787"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60974578"
 ---
 # <a name="applicationtemplate-instantiate"></a>applicationTemplate: instantiate
 
@@ -95,12 +95,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/applicationtemplate-instantiate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/applicationtemplate-instantiate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 

@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9b6f1de7de35360c1cc624ac07b12b7b21cd370d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9d14e1a7e9f1e1ebce487f60664e711de8de0702
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072976"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60992920"
 ---
 # <a name="delete-microsoftauthenticatorauthenticationmethod"></a>Удаление MicrosoftAuthenticatorAuthenticationMethod
 Пространство имен: microsoft.graph
@@ -56,7 +56,7 @@ DELETE /users/{id | userPrincipalName}/authentication/microsoftAuthenticatorMeth
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -92,6 +92,10 @@ DELETE https://graph.microsoft.com/v1.0/users/kim@contoso.com/authentication/mic
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-microsoftauthenticatorauthenticationmethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-microsoftauthenticatorauthenticationmethod-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

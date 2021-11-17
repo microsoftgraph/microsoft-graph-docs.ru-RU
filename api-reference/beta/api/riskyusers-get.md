@@ -1,16 +1,16 @@
 ---
 title: Get riskyUser
 description: Извлечение свойств и связей объекта **riskyUser.**
-localization_priority: Normal
+ms.localizationpriority: medium
 author: cloudhandler
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 9582066edadf5fb431bec0f7b3c9701fe71ead8c
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: c80e2de1bbffebabcbd56e26d1ae39a7a45d5b4d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50960797"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60993907"
 ---
 # <a name="get-riskyuser"></a>Get riskyUser
 
@@ -20,7 +20,7 @@ ms.locfileid: "50960797"
 
 Извлечение свойств и связей объекта **riskyUser.**
 
->**Примечание:** Для использования API riskyUsers требуется лицензия Azure AD Premium P2.
+>**Примечание:** Использование API riskyUsers требует Azure AD Premium P2 лицензии.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "50960797"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskyUser.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | IdentityRiskyUser.Read.All |
+|Для приложений | IdentityRiskyUser.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ GET /identityProtection/riskyUsers/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | ID сеанса книги, определяя, сохраняются ли изменения. Необязательный параметр.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/riskyUsers/c2b6c2b9-dddc-acd0-2b39-d519d803
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-riskyuser-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-riskyuser-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -133,6 +137,10 @@ GET https://graph.microsoft.com/beta/identityProtection/riskyUsers
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-riskyuser-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-riskyuser-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 0d527b45fb139582333cb563331be5eacb4f50c5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f3b587ed239646531632b98e34581f29aec436e2
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016815"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60979486"
 ---
 # <a name="call-unmute"></a>вызов: не игнорировать
 
@@ -41,7 +41,7 @@ POST /communications/calls/{id}/unmute
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -49,7 +49,7 @@ POST /communications/calls/{id}/unmute
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|clientContext|String|Уникальная строка Client Context. Максимальное ограничение — 256 шаров.|
+|clientContext|Строка|Уникальная строка Client Context. Максимальное ограничение — 256 шаров.|
 
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md) в тексте ответа.
@@ -88,6 +88,10 @@ Content-Length: 46
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-unmute-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-unmute-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: Обновление синхронизацииTemplate
 description: Обновление (переопределение) шаблона синхронизации, связанного с заданным приложением.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 190124afb29909b6780963d9778cf02453ff0457
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 12ca159faad99b0b42fce22433ed304e25d5249d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786911"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60977806"
 ---
 # <a name="update-synchronizationtemplate"></a>Обновление синхронизацииTemplate
 
@@ -27,7 +27,7 @@ ms.locfileid: "52786911"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается.|
-|Приложение                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
+|Для приложений                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ### <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +39,7 @@ PATCH applications/{id}/synchronization/templates/{templateId}
 
 | Имя           | Тип    | Описание|
 |:---------------|:--------|:-----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -86,6 +86,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-synchronizationtemplate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-synchronizationtemplate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

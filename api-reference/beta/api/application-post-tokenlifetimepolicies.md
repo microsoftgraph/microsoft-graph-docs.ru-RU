@@ -1,16 +1,16 @@
 ---
 title: Назначение типа ресурса tokenLifetimePolicy
-description: Назначьте tokenLifetimePolicy приложению или основному приложению или службе.
-localization_priority: Normal
+description: Назначьте tokenLifetimePolicy для приложения или директора службы.
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 1356714b5a54775ad304e6f32a063b2be7235954
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 47dab3abb627368667301f68e6466ed4ff9d443f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129074"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982931"
 ---
 # <a name="assign-tokenlifetimepolicy"></a>Назначение типа ресурса tokenLifetimePolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "50129074"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Назначьте tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) [приложению](../resources/application.md) или [servicePrincipal.](../resources/servicePrincipal.md)
+Назначение [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) [приложению](../resources/application.md) или [службеPrincipal.](../resources/servicePrincipal.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "50129074"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All и Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy.Read.All и Application.ReadWrite.OwnedBy, Policy.Read.All и Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration и Application.ReadWrite.All |
+| Для приложений                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,12 +43,12 @@ POST /servicePrincipals/{id}/tokenLifetimePolicies/$ref
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укавите идентификатор объекта [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) (используя свойство), который должен быть назначен приложению или `@odata.id` основному приложению или службе.
+В теле запроса укажи идентификатор объекта [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) (с помощью свойства), который должен быть назначен директору `@odata.id` приложения или службы.
 
 ## <a name="response"></a>Отклик
 
@@ -88,6 +88,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-tokenlifetimepolicy-from-application-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-tokenlifetimepolicy-from-application-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

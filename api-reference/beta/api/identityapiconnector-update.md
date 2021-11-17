@@ -2,15 +2,15 @@
 title: Обновление identityApiConnector
 description: Обновление свойств объекта identityApiConnector.
 author: nickgmicrosoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b7383d82f30f76bc97fc9e66dd57c21044a963ca
-ms.sourcegitcommit: 08d47a31c48fd69ae4fcee26e34fdd65ad1ba69f
+ms.openlocfilehash: 2fa092757ab7cefc033bc5d67b796793f905d810
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51508731"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60986193"
 ---
 # <a name="update-identityapiconnector"></a>Обновление identityApiConnector
 
@@ -28,12 +28,12 @@ ms.locfileid: "51508731"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | APIConnectors.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.  |
-| Приложение                            | APIConnectors.ReadWrite.All |
+| Для приложений                            | APIConnectors.ReadWrite.All |
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока внешних пользователей удостоверений
+* Администратор внешних Flow удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,7 +49,7 @@ PATCH /identity/apiConnectors/{identityApiConnectorId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -60,8 +60,8 @@ PATCH /identity/apiConnectors/{identityApiConnectorId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String| Имя соединитетеля API. |
-|targetUrl|String| URL-адрес конечной точки API для вызова. |
+|displayName|Строка| Имя соединитетеля API. |
+|targetUrl|Строка| URL-адрес конечной точки API для вызова. |
 |проверка подлинностиКонфигурация|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|Объект, описывая сведения о конфигурации проверки подлинности для вызова API. Поддерживается [только базовая](../resources/basicauthentication.md) проверка подлинности и клиентский [сертификат PKCS 12.](../resources/pkcs12certificate.md)|
 
 ## <a name="response"></a>Отклик
@@ -113,6 +113,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-identityapiconnector-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-identityapiconnector-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -131,7 +135,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-2-changing-api-connector-to-use-client-certificate-authentication"></a>Пример 2. Изменение соединителя API для использования проверки подлинности сертификата клиента
 
-> **Примечание:** Это переоценит все предыдущие параметры проверки подлинностиConfiguration. Чтобы изменению с базовой проверки подлинности на проверку подлинности сертификатов, используйте эту функцию. Чтобы добавить дополнительные сертификаты в список сертификатов, используйте метод [Upload client certificate.](../api/identityapiconnector-uploadclientcertificate.md) При использовании этого метода последующие операции соединителя API "Get" или "List" будут иметь тип `authenticationConfiguration` [microsoft.graph.clientCertificateAuthentication.](../resources/clientcertificateauthentication.md)
+> **Примечание:** Это переоценит все предыдущие параметры проверки подлинностиConfiguration. Чтобы изменению с базовой проверки подлинности на проверку подлинности сертификатов, используйте эту функцию. Чтобы добавить дополнительные сертификаты в список сертификатов, используйте метод [Upload клиентского](../api/identityapiconnector-uploadclientcertificate.md) сертификата. При использовании этого метода последующие операции соединителя API "Get" или "List" будут иметь тип `authenticationConfiguration` [microsoft.graph.clientCertificateAuthentication.](../resources/clientcertificateauthentication.md)
 
 #### <a name="request"></a>Запрос
 

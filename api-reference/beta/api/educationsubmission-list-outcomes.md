@@ -1,16 +1,16 @@
 ---
 title: Результаты списка
 description: Извлечение списка объектов educationoutcome.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3989e709d719a3e11aec410fc7649ee08d3dc024
-ms.sourcegitcommit: 1e9a53e7b8e67349288f5cfbabe8355de83817b0
+ms.openlocfilehash: 3a97ba00049f48a864a56bb163eb10c532ba28d0
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58367249"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60986558"
 ---
 # <a name="list-outcomes"></a>Результаты списка
 
@@ -38,7 +38,7 @@ ms.locfileid: "58367249"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
+| Для приложений                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,7 +52,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -93,12 +93,16 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/sub
 [!INCLUDE [sample-code](../includes/snippets/java/get-outcomes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-outcomes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

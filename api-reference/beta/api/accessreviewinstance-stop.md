@@ -1,16 +1,16 @@
 ---
 title: Остановка accessReviewInstance
 description: Остановите активный в настоящее время accessReviewInstance.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c59b08c3a451d54a03502b28d2f05350f38e126f
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: d89de0c8cca29a08cded85275e737ffa00798ab4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030490"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987803"
 ---
 # <a name="stop-accessreviewinstance"></a>Остановка accessReviewInstance
 
@@ -29,7 +29,7 @@ ms.locfileid: "53030490"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение                            | AccessReview.ReadWrite.All |
+|Для приложений                            | AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -72,6 +72,10 @@ POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitio
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/stop-accessreviewinstance-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/stop-accessreviewinstance-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,15 +2,15 @@
 title: Get sourceCollection
 description: Ознакомьтесь с свойствами и отношениями объекта sourceCollection.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 1569492ccc7451dffbbd18788ffc41008030f4ed
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: c8acb6f06e60714624249eda4a1f8b5b6e0be2fa
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080367"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60994390"
 ---
 # <a name="get-sourcecollection"></a>Get sourceCollection
 
@@ -55,7 +55,7 @@ https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-sourcecollection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-sourcecollection-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

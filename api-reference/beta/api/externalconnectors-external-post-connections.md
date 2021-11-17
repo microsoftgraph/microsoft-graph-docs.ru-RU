@@ -1,16 +1,16 @@
 ---
 title: Создание подключения
 description: Используйте этот API для создания нового externalConnection.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: c4415c33e759bde7a95eb37ec6254762a925058e
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: c743ea6d2a37527dce0ed4a81dcbb90d93381ee5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467709"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60981531"
 ---
 # <a name="create-connection"></a>Создание подключения
 
@@ -28,7 +28,7 @@ ms.locfileid: "53467709"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | ExternalConnection.ReadWrite.OwnedBy |
+| Для приложений                            | ExternalConnection.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ POST /external/connections
 
 | Имя          | Описание                 |
 |:--------------|:----------------------------|
-| Авторизация | Bearer {токен}. Обязательный.   |
+| Авторизация | Bearer {token}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -89,6 +89,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-connection-from-external-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-connection-from-external-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

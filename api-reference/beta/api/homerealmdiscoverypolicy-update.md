@@ -1,16 +1,16 @@
 ---
 title: Обновление homerealmdiscoverypolicy
 description: Обновление свойств объекта homeRealmDiscoveryPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hpsin
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c31543d1a8e31fec8f3f83c9e0209976f59a3784
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9173bc122b7d16bf1d07911b2fb247414e956392
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52040898"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60986235"
 ---
 # <a name="update-homerealmdiscoverypolicy"></a>Обновление homerealmdiscoverypolicy
 
@@ -51,10 +51,10 @@ PATCH /policies/homeRealmDiscoveryPolicies/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|определение|Коллекция объектов string| Коллекция строк, содержащая строку JSON, определяемую правилами и настройками этой политики.  Обязательный.|
-|description|String| Описание этой политики.|
+|определение|Коллекция String| Коллекция строк, содержащая строку JSON, определяемую правилами и настройками этой политики.  Обязательный.|
+|description|Строка| Описание этой политики.|
 |displayName|String| Отображение имени для этой политики. Обязательный.|
-|isOrganizationDefault|Логический|Если заданной для true, активирует эту политику. Для одного типа политики может быть много политик, но только одна может быть активирована по умолчанию организации. Необязательный, значение по умолчанию является ложным.|
+|isOrganizationDefault|Логическое|Если заданной для true, активирует эту политику. Для одного типа политики может быть много политик, но только одна может быть активирована по умолчанию организации. Необязательный, значение по умолчанию является ложным.|
 
 ## <a name="response"></a>Отклик
 
@@ -98,6 +98,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-homerealmdiscoverypolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-homerealmdiscoverypolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
