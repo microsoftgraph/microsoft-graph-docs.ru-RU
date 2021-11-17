@@ -2,15 +2,15 @@
 title: 'участник: muteAll'
 description: Отключение звука всех участников звонка.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a0cf9da4b6903931b813c0c2b2bd1aed3681434d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a4d04bce478c0ab4eb94769a222cf7bee6b272ce
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049186"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019766"
 ---
 # <a name="participant-muteall"></a>участник: muteAll
 
@@ -30,7 +30,7 @@ ms.locfileid: "52049186"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Приложение                            | Нет                                        |
+| Для приложений                            | Никаких других изменений не происходит                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +43,7 @@ POST /communications/calls/{id}/participants/muteAll
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -52,7 +52,7 @@ POST /communications/calls/{id}/participants/muteAll
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |participants|Коллекция объектов string|Участники, которые будут отключены.|
-|clientContext|String|Клиентский контекст.|
+|clientContext|Строка|Клиентский контекст.|
 
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект commsOperation](../resources/commsoperation.md) в тексте отклика.
@@ -94,6 +94,10 @@ Content-Length: 81
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/participant-muteall-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/participant-muteall-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,15 +2,15 @@
 title: Возобновление синхронизации на educationSynchronizationProfile
 description: Возобновим синхронизацию определенного профиля синхронизации школьных данных в клиенте.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0f1cd4ca3e1569825bda00a16723801521d1bc08
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: b2858633f54ba15ea71fc376d1d7651d166dcdae
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664729"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61003009"
 ---
 # <a name="resume-sync-on-an-educationsynchronizationprofile"></a>Возобновление синхронизации на educationSynchronizationProfile
 
@@ -27,7 +27,7 @@ ms.locfileid: "52664729"
 |:-----------|:----------|
 | Делегированное (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
 |Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|EduAdministration.ReadWrite.All |
+|Для приложений|EduAdministration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ POST /education/synchronizationProfiles/{id}/resume
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный.  |
+| Authorization  | string  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -71,6 +71,10 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/res
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-educationsynchronizationprofile-resume-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-educationsynchronizationprofile-resume-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

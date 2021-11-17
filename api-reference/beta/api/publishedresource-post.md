@@ -1,16 +1,16 @@
 ---
 title: Создание publishedResource
 description: Создание нового **объекта publishedResource.**
-localization_priority: Normal
+ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 0cf0b586010b6d68a36f4d710bc24f0035ecafa7
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 99ea0514c5fb05efd8cdb3b7da99adbd9b3c5076
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055164"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61004464"
 ---
 # <a name="create-publishedresource"></a>Создание publishedResource
 
@@ -42,7 +42,7 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/publishedResources
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
@@ -52,7 +52,7 @@ POST ~/onPremisesPublishingProfiles/{publishingType}/publishedResources
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|String|Отображение имени опубликованногоРесурса.|
+|displayName|Строка|Отображение имени опубликованногоРесурса.|
 |resourceName|String|Имя опубликованногоResource.|
 
 ## <a name="response"></a>Отклик
@@ -94,6 +94,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-publishedresource-from-onpremisespublishingprofile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-publishedresource-from-onpremisespublishingprofile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
