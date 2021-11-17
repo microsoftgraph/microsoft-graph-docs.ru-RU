@@ -1,16 +1,16 @@
 ---
 title: Настройка синхронизации с атрибутами расширения каталога
-description: Настройте схему синхронизации, чтобы включить атрибуты расширения каталога Azure Active Directory (Azure AD).
-localization_priority: Normal
+description: Настройте схему синхронизации, чтобы Azure Active Directory атрибуты расширения каталога Azure AD.
+ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: db5e2ba4bc715f608d17b8e11067df71141a6142
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: b3379502f1bf5354d4f53e863f4924c5f251bd4a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50957004"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60976819"
 ---
 # <a name="configure-synchronization-with-directory-extension-attributes"></a>Настройка синхронизации с атрибутами расширения каталога
 
@@ -18,9 +18,9 @@ ms.locfileid: "50957004"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Можно настроить схему синхронизации, чтобы включить атрибуты расширения каталога Azure Active Directory (Azure AD). В этой статье описывается использование атрибута расширения каталога **(extension_9d98asdfl15980a_Nickname)** для заполнения значения User.CommunityNickname в Salesforce. В этом сценарии необходимо настроить Azure AD Connect для предоставления ряда атрибутов расширения каталогов от локального Windows Server Active Directory до Azure AD. 
+Схему синхронизации можно настроить так, чтобы Azure Active Directory атрибуты расширения каталога Azure AD. В этой статье описывается использование атрибута расширения каталога **(extension_9d98asdfl15980a_Nickname)** для заполнения значения User.CommunityNickname в Salesforce. В этом сценарии Подключение Azure AD для предоставления ряда атрибутов расширения каталогов от Windows Server Active Directory локального до Azure AD. 
 
-В этой статье предполагается, что вы уже добавили в клиент приложение, которое поддерживает синхронизацию с клиентом через портал [Azure,](https://portal.azure.com)что вы знаете имя отображения приложения и что у вас есть маркер авторизации для Microsoft Graph. Сведения о том, как получить маркер авторизации, см. в записи [Get access tokens to call Microsoft Graph.](/graph/auth/)
+В этой статье предполагается, что вы уже добавили приложение, поддерживаюное синхронизацию с клиентом через портал [Azure,](https://portal.azure.com)что вы знаете имя отображения приложения и что у вас есть маркер авторизации для Microsoft Graph. Сведения о том, как получить маркер авторизации, см. в сайте [Get access tokens to call Microsoft Graph.](/graph/auth/)
 
 ## <a name="find-the-service-principal-object-by-display-name"></a>Поиск основного объекта службы по имени отображения
 
@@ -86,7 +86,7 @@ The `{jobId}` is `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa` .
 Вам потребуется полное имя атрибута расширения. Если вы не знаете полное имя (которое должно выглядеть аналогично **extension_9d98asdfl15980a_Nickname),** см. следующие сведения о атрибутах расширения каталогов и о том, как их проверять: 
 
 * [Расширение схемы каталога Azure AD с пользовательскими свойствами](/graph/extensibility-overview)
-* [Расширения схемы каталогов | Концепции API graph](/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
+* [Расширения схемы каталогов | Graph API](/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
 
 
 ## <a name="get-the-synchronization-schema"></a>Получить схему синхронизации
@@ -116,6 +116,10 @@ Authorization: Bearer {Token}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationschema-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-synchronizationschema-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -221,11 +225,11 @@ Content-Type: application/json
 
 ## <a name="add-a-definition-for-the-directory-extension-attribute-and-a-mapping-between-the-attributes"></a>Добавьте определение атрибута расширения каталога и сопоставление между атрибутами
 
-Используйте обычный текстовый редактор по вашему выбору (например, [Notepad++](https://notepad-plus-plus.org/) или [JSON Editor Online),](https://www.jsoneditoronline.org/)чтобы:
+Используйте обычный текстовый редактор по вашему выбору [(например, Блокнот++](https://notepad-plus-plus.org/) или [редактор JSON Online),](https://www.jsoneditoronline.org/)чтобы:
 
 1. Добавьте определение [атрибута](synchronization-attributedefinition.md) для `extension_9d98asdfl15980a_Nickname` атрибута. 
 
-    - В каталогах найдите каталог с именем "Azure Active Directory", а в массиве объекта найдите имя **Пользователя.**
+    - В каталогах найдите каталог с именем "Azure Active Directory", а в массиве объекта найдите имя **Пользователя**.
     - Добавьте новый атрибут в список, указав имя и тип, как показано в следующем примере.
 
 2. Добавьте [сопоставление атрибутов](synchronization-attributemapping.md) между extension_9d98asdfl15980a_Nickname и CommunityNickname.

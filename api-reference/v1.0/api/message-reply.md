@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 044f5493b7a7c91f1be0a755261f3cc34af50aa2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2a9bb1861e8ab9a32381a505bf333925b5c7a397
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016108"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61029477"
 ---
 # <a name="message-reply"></a>message: reply
 
@@ -50,8 +50,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/reply
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Обязательна |
-| Content-Type | string  | Характер данных в теле объекта. Обязательна <br/> Используйте `application/json` для объекта JSON и `text/plain` для содержимого MIME. |
+| Authorization  | string  | Bearer {token}. Обязательно |
+| Content-Type | string  | Характер данных в теле объекта. Обязательно <br/> Используйте `application/json` для объекта JSON и `text/plain` для содержимого MIME. |
 
 ## <a name="request-body"></a>Текст запроса
 При использовании формата JSON укажи объект JSON в теле запроса со следующими параметрами.
@@ -119,6 +119,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/message-reply-v1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/message-reply-v1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

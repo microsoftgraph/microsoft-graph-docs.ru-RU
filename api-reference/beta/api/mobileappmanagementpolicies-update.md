@@ -2,15 +2,15 @@
 title: Обновление mobileAppManagementPolicy
 description: Обновление свойств объекта политики управления мобильными приложениями.
 author: ravennMSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 06e52397e879148ca9a30ec840e507ab7dff3aaddd8366e1fccde3ecdd7ec40a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 71dadfa45b09ec40e3ffa43720e2e7e42a55f770
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57270396"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61011688"
 ---
 # <a name="update-mobileappmanagementpolicy"></a>Обновление mobileAppManagementPolicy
 
@@ -45,7 +45,7 @@ PATCH /policies/mobileAppManagementPolicies/{id}
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,9 +57,9 @@ PATCH /policies/mobileAppManagementPolicies/{id}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |appliesTo|policyScope|Определяет группы, к которые применяется этот параметр политики. Возможные значения: `none` , `all` , `selected` **Важно: не** может использоваться при `selected` указании этого свойства. Используйте [includedGroups для](../api/mobileappmanagementpolicies-post-includedgroups.md) добавления определенных групп.|
-|complianceUrl|String|URL-адрес соответствия приложению управления мобильностью|
+|complianceUrl|Строка|URL-адрес соответствия приложению управления мобильностью|
 |discoveryUrl|Строка|Обнаружение URL-адреса приложения для управления мобильностью|
-|termsOfUseUrl|Строка|Условия использования URL-адреса приложения для управления мобильностью|
+|termsOfUseUrl|String|Условия использования URL-адреса приложения для управления мобильностью|
 
 ## <a name="response"></a>Отклик
 
@@ -102,6 +102,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-mobilitymanagementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-mobilitymanagementpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

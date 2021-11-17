@@ -1,16 +1,16 @@
 ---
 title: 'tiIndicator: deleteTiIndicators'
 description: Удалите несколько индикаторов разведки угроз (TI) в одном запросе вместо нескольких запросов.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 365f4c803cb7f6e7b18570534819e576990d11de
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 14737eb0b4bbe9eb1124ee3d1e36e5428b47f608
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050796"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61001651"
 ---
 # <a name="tiindicator-deletetiindicators"></a>tiIndicator: deleteTiIndicators
 
@@ -28,7 +28,7 @@ ms.locfileid: "52050796"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | ThreatIndicators.ReadWrite.OwnedBy |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | ThreatIndicators.ReadWrite.OwnedBy |
+| Для приложений                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,7 +50,7 @@ POST /security/tiIndicators/deleteTiIndicators
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|значение|Коллекция объектов string| Коллекция tiIndicator `id` s, которая будет удалена. |
+|значение|Коллекция String| Коллекция tiIndicator `id` s, которая будет удалена. |
 
 ## <a name="response"></a>Отклик
 
@@ -95,6 +95,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/tiindicator-deletetiindicators-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tiindicator-deletetiindicators-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

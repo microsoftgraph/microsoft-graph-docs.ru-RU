@@ -2,15 +2,15 @@
 title: Удаление educationCategory
 description: Удаление существующей категории.
 author: dipakboyed
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 4bf5777ee48f4701a3a0ae29f1da9b9f9ab26269
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 63dbe88ab78d156cdd0e0a40b1ec15384c091ba4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50951708"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60998480"
 ---
 # <a name="delete-educationcategory"></a>Удаление educationCategory
 
@@ -28,7 +28,7 @@ ms.locfileid: "50951708"
 | :------------------------------------- | :------------------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                          |
-| Application                            | Не поддерживается.                                          |
+| Для приложений                            | Не поддерживается.                                          |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ DELETE /education/classes/{id}/assignmentCategories/{id}
 
 | Заголовок        | Значение                     |
 | :------------ | :------------------------ |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -82,6 +82,10 @@ DELETE https://graph.microsoft.com/beta/education/classes/11014/assignmentCatego
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-educationassignment-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-educationassignment-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

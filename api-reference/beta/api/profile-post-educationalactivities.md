@@ -1,16 +1,16 @@
 ---
 title: Создание educationalActivity
 description: Создание новой образовательной активности.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 366417fd6cf8e218bf7fc3a0fe2f14bc9c0ac4d3
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 42de842c3d72d246a76956a175a7c3688f529d78
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52036942"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61027928"
 ---
 # <a name="create-educationalactivity"></a>Создание educationalActivity
 
@@ -43,7 +43,7 @@ POST /users/{id | userPrincipalName}/profile/educationalActivities
 
 | Имя           |Описание                  |
 |:---------------|:----------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.   |
+| Авторизация  | Bearer {token}. Обязательный.   |
 | Content-Type   | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,13 +55,13 @@ POST /users/{id | userPrincipalName}/profile/educationalActivities
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|completionMonthYear|Date|Месяц и год, когда пользователь закончил или завершил действие. |
-|endMonthYear|Date|Месяц и год, когда пользователь завершил ссылаемую образовательную деятельность.|
+|completionMonthYear|Дата|Месяц и год, когда пользователь закончил или завершил действие. |
+|endMonthYear|Дата|Месяц и год, когда пользователь завершил ссылаемую образовательную деятельность.|
 |вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |учреждение|[institutionData](../resources/institutiondata.md)|Содержит сведения об изучаемом учреждении. |
 |программа|[educationalActivityDetail](../resources/educationalactivitydetail.md)|Содержит расширенные сведения о программе или курсе.|
 |source|[personDataSource](../resources/persondatasource.md)|Где значения возникли, если синхронизированы с другой службы. Унаследовано от [itemFacet](../resources/itemfacet.md).|
-|startMonthYear|Date|Месяц и год, когда пользователь начал со ссылкой на действие.|
+|startMonthYear|Дата|Месяц и год, когда пользователь начал со ссылкой на действие.|
 
 ## <a name="response"></a>Отклик
 
@@ -128,6 +128,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-educationalactivity-from-profile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-educationalactivity-from-profile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

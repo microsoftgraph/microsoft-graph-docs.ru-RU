@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getTeamsDeviceUsageTotalUserCounts'
-description: Получите число ежедневных уникальных пользователей Microsoft Teams, лицензированных или не лицензированных по типу устройства.
-localization_priority: Normal
+description: Получите количество ежедневных уникальных пользователей Microsoft Teams лицензированных или не лицензированных пользователей по типу устройства.
+ms.localizationpriority: medium
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: b65f29260a184193e7689fedff8270d8d5daaf9f
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: e20d343a0893d1d8a351255af10430e90541a220
+ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766963"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61044717"
 ---
 # <a name="reportroot-getteamsdeviceusagetotalusercounts"></a>reportRoot: getTeamsDeviceUsageTotalUserCounts
 
@@ -18,7 +18,7 @@ ms.locfileid: "51766963"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите число ежедневных уникальных пользователей Microsoft Teams, лицензированных или не лицензированных по типу устройства.
+Получите количество ежедневных уникальных пользователей Microsoft Teams лицензированных или не лицензированных пользователей по типу устройства.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,7 +46,7 @@ GET /reports/getTeamsDeviceUsageTotalUserCounts(period='D7')
 
 | Параметр | Тип   | Описание                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
+| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
@@ -82,7 +82,7 @@ CSV-файл содержит столбцы со следующими заго�
 
 ### <a name="json"></a>JSON
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект teamsDeviceUsageUserCounts](../resources/teamsdeviceusageusercounts.md) в теле ответа.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` объект JSON в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -158,7 +158,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageTotalUserCounts(
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.teamsDeviceUsageUserCounts"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -167,7 +167,6 @@ Content-Type: application/json
 Content-Length: 269
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsDeviceUsageUserCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

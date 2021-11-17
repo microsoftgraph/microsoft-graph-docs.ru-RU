@@ -1,16 +1,16 @@
 ---
 title: Создание синхронизацииTemplate
 description: Создайте новый шаблон синхронизации для данного приложения.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: b2c501d0c07e91aa3b0dbb707320f4909db299de
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 893407344022bb93bf47e58374471d053abd7e29
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50775432"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031682"
 ---
 # <a name="create-synchronizationtemplate"></a>Создание синхронизацииTemplate
 
@@ -25,9 +25,9 @@ ms.locfileid: "50775432"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
-|Делегированное (личная учетная запись Майкрософт) |Не поддерживается.|
-|Приложение                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
+|Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
+|Делегированные (личная учетная запись Майкрософт) |Не поддерживается.|
+|Для приложений                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ### <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +39,7 @@ POST /applications/{id}/synchronization/templates/
 
 | Имя           | Тип    | Описание|
 |:---------------|:--------|:-----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -83,6 +83,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-synchronizationtemplate-from-synchronization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-synchronizationtemplate-from-synchronization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: 'applicationTemplate: instantiate'
 description: Используйте этот API для создания нового приложенияTemplate
-localization_priority: Normal
+ms.localizationpriority: medium
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 95cc198cbe828e47070758560b97acf2296113e7
-ms.sourcegitcommit: be09568fa07ab793cd1db500f537ca94ca9e5b4a
+ms.openlocfilehash: eae8a2ed4748936e3e8c9a623a61be0c95ee93b5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51836888"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982771"
 ---
 # <a name="applicationtemplate-instantiate"></a>applicationTemplate: instantiate
 
@@ -50,7 +50,7 @@ POST /applicationTemplates/{id}/instantiate
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|String|Настраиваемая фамилия приложения|
+|displayName|Строка|Настраиваемая фамилия приложения|
 
 ## <a name="response"></a>Отклик
 
@@ -94,6 +94,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/applicationtemplate-instantiate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/applicationtemplate-instantiate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

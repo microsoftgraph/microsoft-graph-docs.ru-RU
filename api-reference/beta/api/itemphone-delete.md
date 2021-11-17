@@ -1,16 +1,16 @@
 ---
 title: Удаление itemPhone
 description: Удаление объекта itemPhone из профиля пользователя.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 27aba7aa6a93918991f890bebdaad5ae7a2c69aa
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: d25bcf8008a28f7da076cde2ac71544770d69e00
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776300"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60981328"
 ---
 # <a name="delete-itemphonenumber"></a>Удаление элементаPhoneNumber
 
@@ -26,8 +26,8 @@ ms.locfileid: "50776300"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All          |
-| Делегированное (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All          |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All          |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All          |
 | Для приложений                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -44,7 +44,7 @@ DELETE /users/{userId}/profile/phones/{itemPhoneId}
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/users/{userId}/profile/phones/{itemPhone
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-itemphone-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-itemphone-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

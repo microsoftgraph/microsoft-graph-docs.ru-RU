@@ -1,24 +1,24 @@
 ---
-title: Удаление Воркфорцеинтегратион
-description: Удаление экземпляра объекта Воркфорцеинтегратион.
-localization_priority: Normal
+title: Удаление рабочей силыИнтеграция
+description: Удаление экземпляра рабочей силыИнтеграция.
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 66a6d587148611d4f6ff9fba18d48e60bfe75622
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bdcea81aa5985ceebfa6a40c5c2597a8835d1e6b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970751"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61029910"
 ---
-# <a name="delete-workforceintegration"></a>Удаление Воркфорцеинтегратион
+# <a name="delete-workforceintegration"></a>Удаление рабочей силыИнтеграция
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление экземпляра объекта [воркфорцеинтегратион](../resources/workforceintegration.md).
+Удаление экземпляра [рабочей силыИнтеграция](../resources/workforceintegration.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "48970751"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Воркфорцеинтегратион. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | WorkforceIntegration.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
@@ -42,7 +42,7 @@ DELETE /teamwork/workforceIntegrations/{workforceIntegrationId}
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/teamwork/workforceIntegrations/{workforc
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-workforceintegration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-workforceintegration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

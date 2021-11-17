@@ -1,24 +1,24 @@
 ---
-title: List extensionProperties
-description: Получить список объектов extensionproperty.
-localization_priority: Normal
+title: Свойства расширения списка
+description: Извлечение списка объектов extensionproperty.
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 426c11114a1a5f27dfb329ff63414f0fa3e20fb3
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 4edb80ff0fb3f580ef1bd5d2c057e4657a8176bd
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50129210"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995475"
 ---
-# <a name="list-extensionproperties"></a>List extensionProperties
+# <a name="list-extensionproperties"></a>Свойства расширения списка
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [extensionProperty](../resources/extensionproperty.md) в приложении.
+Получение списка [объектов extensionProperty](../resources/extensionproperty.md) в приложении.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,7 +46,7 @@ GET /applications/{id}/extensionProperties
 
 | Имя       | Описание|
 |:-----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -54,7 +54,7 @@ GET /applications/{id}/extensionProperties
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [extensionProperty](../resources/extensionproperty.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию `200 OK` [объектов extensionProperty](../resources/extensionproperty.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/applications/{id}/extensionProperties
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-extensionproperties-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-extensionproperties-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

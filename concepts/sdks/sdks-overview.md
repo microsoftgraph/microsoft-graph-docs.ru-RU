@@ -1,26 +1,23 @@
 ---
-title: Обзор Graph SDKs
+title: Обзор пакета SDK Microsoft Graph
 description: Описывает доступные SDKs, поддерживаемые ими платформы и их значение для разработчиков.
 ms.localizationpriority: medium
 author: MichaelMainer
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: d68f0c896daae9f65d734cbf73649721b851857f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: eeeff1427c5630aed85e0f6cc8827cd81aef05b2
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142364"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995827"
 ---
-# <a name="microsoft-graph-sdks-overview"></a>Обзор Graph SDKs
+# <a name="microsoft-graph-sdks-overview"></a>Обзор пакета SDK Microsoft Graph
 
 SDKs Graph Microsoft предназначены для упрощения создания высококачественных, эффективных и устойчивых приложений, которые имеют доступ к microsoft Graph. SDKs включают два компонента: библиотеку служб и основную библиотеку.
 
 Библиотека служб содержит модели и конструкторы запросов, созданные из метаданных Microsoft Graph, чтобы обеспечить богатый, строго впечатаемый и обнаруживаемый опыт при работе с множеством наборов данных, доступных в Microsoft Graph.
 
 В основной библиотеке содержится набор функций, которые улучшают работу со всеми службами Microsoft Graph. Встроенная поддержка обработки повторной обработки, безопасных перенаправлений, прозрачной проверки подлинности и сжатия полезной нагрузки повышает качество взаимодействия приложения с Microsoft Graph без дополнительных сложностей, при этом вы полностью контролируете ситуацию. В основной библиотеке также поддерживается выполнение общих задач, таких как прогона через коллекции и создание пакетных запросов.
-
-> [!VIDEO https://www.youtube-nocookie.com/embed/hDnsd2nJf88]
-
 
 ## <a name="supported-platforms"></a>Поддерживаемые платформы
 
@@ -29,6 +26,7 @@ SDKs Graph Microsoft предназначены для упрощения соз
 - [Android](https://developer.microsoft.com/en-us/graph/get-started/android)
 - [Angular](https://developer.microsoft.com/en-us/graph/get-started/angular)
 - [ASP.NET](https://developer.microsoft.com/en-us/graph/get-started/asp.net)
+- [Go (PREVIEW)](https://github.com/microsoftgraph/msgraph-sdk-go)
 - [iOS](https://developer.microsoft.com/en-us/graph/get-started/ios)
 - [Javascript](https://developer.microsoft.com/en-us/graph/get-started/javascript)
 - [Node.js](https://developer.microsoft.com/en-us/graph/get-started/node.js)

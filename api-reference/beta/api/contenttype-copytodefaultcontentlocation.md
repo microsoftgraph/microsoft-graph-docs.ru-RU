@@ -5,12 +5,12 @@ description: Скопируйте файл в расположение конт�
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 176249e2e26054ca32a46051ec3c6c41e2e85cbe
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: c01349a14f6746fb034a539ed4a5ba86a0b4aed6
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730314"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028791"
 ---
 # <a name="contenttype-copytodefaultcontentlocation"></a>contentType: copyToDefaultContentLocation
 Пространство имен: microsoft.graph
@@ -49,7 +49,7 @@ POST /sites/id/contentTypes/id/copyToDefaultContentLocation
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса поставляем представление JSON параметров.
 
 В следующей таблице указаны параметры, которые можно использовать с этим действием.
@@ -57,7 +57,7 @@ POST /sites/id/contentTypes/id/copyToDefaultContentLocation
 
 |Параметр|Тип|Описание|
 |-|-|-|
-|sourceFile| [itemReference](../resources/itemreference.md) |Метаданные о исходных файлах, которые необходимо скопировать в расположение контента по умолчанию. Обязательно.|
+|sourceFile| [itemReference](../resources/itemreference.md) |Метаданные о исходных файлах, которые необходимо скопировать в расположение контента по умолчанию. Обязательный.|
 |destinationFileName| string |Имя файла назначения. |
 
 ## <a name="response"></a>Отклик
@@ -103,6 +103,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/contenttype-copytodefaultcontentlocation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/contenttype-copytodefaultcontentlocation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

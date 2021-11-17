@@ -5,12 +5,12 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b9c42b9e2c40f4e9824c3fca8872b5152ee38b9b
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 5341a4daec250cbf4afe1dd37511528fecd8bdae
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60943873"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031065"
 ---
 # <a name="update-educationclass"></a>Update educationClass
 
@@ -43,14 +43,14 @@ PATCH /education/classes/{id}
 
 | Свойство             | Тип                                               | Описание                                                        |
 | :------------------- | :------------------------------------------------- | :----------------------------------------------------------------- |
-| displayName          | String                                             | Название курса.                                                 |
+| displayName          | Строка                                             | Название курса.                                                 |
 | mailNickname         | String                                             | Почтовое имя для отправки почты всем участникам, если это возможно.    |
-| description          | String                                             | Описание курса.                                          |
+| description          | Строка                                             | Описание курса.                                          |
 | createdBy            | [identitySet](../resources/identityset.md)         | Объект, который создал курс.                                       |
 | classCode            | String                                             | Код курса, используемый учебным заведением для идентификации курса.               |
 | externalId           | String                                             | Идентификатор курса из системы синхронизации.                           |
 | externalSource       | educationExternalSource                            | Способ создания этого курса. Возможные значения: `sis` , `manual`   |
-| externalSourceDetail | String                                             | Имя внешнего источника, из которого были созданы эти ресурсы. |
+| externalSourceDetail | Строка                                             | Имя внешнего источника, из которого были созданы эти ресурсы. |
 | оценка                | String                                             | Уровень класса.                                          |
 | term                 | [educationTerm](../resources/educationterm.md)     | Срок для этого курса.                                               |
 
@@ -88,6 +88,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationclass-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-educationclass-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

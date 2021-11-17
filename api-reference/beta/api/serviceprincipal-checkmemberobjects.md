@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: checkMemberObjects'
 description: Проверьте членство в списке групп, ролей каталогов или административных единиц для указанного объекта принципа службы.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: dcc2a1ff605030a2d8e67441f9c8ccd29cca0893
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 501adf3107861230832b82f0bbaf32ac19c33a82
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051972"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61014251"
 ---
 # <a name="serviceprincipal-checkmemberobjects"></a>servicePrincipal: checkMemberObjects
 
@@ -18,7 +18,7 @@ ms.locfileid: "52051972"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Проверьте членство в списке групп, ролей каталогов или административных единиц для указанного [объекта servicePrincipal.](../resources/serviceprincipal.md) Этот метод является транзитным.
+Проверьте членство в списке групп, ролей каталогов или административных единиц для указанного [объекта servicePrincipal.](../resources/serviceprincipal.md) Это транзитивный метод.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -42,7 +42,7 @@ POST /servicePrincipals/{id}/checkMemberObjects
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 | Content-Type  | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -99,6 +99,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-checkmemberobjects-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-checkmemberobjects-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

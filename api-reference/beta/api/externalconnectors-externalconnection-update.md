@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 4da7db10cfc625961edc8729148ac0a2bf6f9c52
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 79a1caa54ea6ab84d605dcb72fd46871fdd5fe19
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60689128"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61034453"
 ---
 # <a name="update-connection"></a>Обновление подключения
 
@@ -28,7 +28,7 @@ ms.locfileid: "60689128"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Application                            | ExternalConnection.ReadWrite.OwnedBy |
+| Для приложений                            | ExternalConnection.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,7 +52,7 @@ PATCH /external/connections/{id}
 | Свойство      | Тип                                           | Описание |
 |:--------------|:-----------------------------------------------|:------------|
 | configuration | [microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md) | Указывает дополнительные ID-адреса приложений, которые разрешены для управления подключением и индексации контента в подключении. |
-| description   | String                                         | Описание подключения, отображаемого в Центр администрирования Microsoft 365. |
+| description   | Строка                                         | Описание подключения, отображаемого в Центр администрирования Microsoft 365. |
 | name          | String                                         | Отображает имя подключения, отображаемого в Центр администрирования Microsoft 365. Максимальная длина 128 символов. |
 
 ## <a name="response"></a>Отклик
@@ -97,6 +97,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-connection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-connection-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

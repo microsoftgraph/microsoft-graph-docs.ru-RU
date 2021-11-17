@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: f0c97e2a05900aa669af48aeb932bb2958d03ee7
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 00befb69c7509273317e1123dade4cdc1b375074
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60558617"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031744"
 ---
 # <a name="list-notes"></a>Заметки списка
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "60558617"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|SubjectRightsRequest.Read.All *, SubjectRightsRequest.ReadWrite.All*|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|Не поддерживается|
+|Для приложений|Не поддерживается|
 
 >[!IMPORTANT]
 >Разрешения, отмеченные звездочкой (*), в настоящее время недоступны. Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues#compliance).
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRight
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-authorednote-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-authorednote-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

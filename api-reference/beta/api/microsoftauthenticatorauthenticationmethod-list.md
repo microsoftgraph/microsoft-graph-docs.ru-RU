@@ -2,15 +2,15 @@
 title: Список microsoftAuthenticatorAuthenticationMethods
 description: Получите список объектов MicrosoftAuthenticatorAuthenticationMethod и их свойств.
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7278ae26e137e3a71988fb7ce388c3c4304bfdd3
-ms.sourcegitcommit: 2d8b04725ea4eaf304f3da1056a6451457a4630f
+ms.openlocfilehash: 908711dc0e288a56f70fc003b3fdca542f01cd1e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52335655"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028279"
 ---
 # <a name="list-microsoftauthenticatorauthenticationmethods"></a>Список microsoftAuthenticatorAuthenticationMethods
 Пространство имен: microsoft.graph
@@ -64,7 +64,7 @@ GET /users/{id | userPrincipalName}/authentication/microsoftAuthenticatorMethods
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -101,6 +101,10 @@ GET https://graph.microsoft.com/beta/users/anirban@contoso.com/authentication/mi
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-microsoftauthenticatorauthenticationmethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-microsoftauthenticatorauthenticationmethod-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

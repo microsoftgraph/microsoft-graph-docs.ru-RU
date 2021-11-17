@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ef790accb41c0c7e52d92b6c7379aca0381e1acc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a55ed37be9edb6981dc94be24cd0a88f5316b244
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016801"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61029686"
 ---
 # <a name="call-updaterecordingstatus"></a>вызов: updateRecordingStatus
 
@@ -38,7 +38,7 @@ POST /communications/calls/{id}/updateRecordingStatus
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -46,7 +46,7 @@ POST /communications/calls/{id}/updateRecordingStatus
 
 | Параметр       | Тип    | Описание                                                                           |
 |:----------------|:--------|:--------------------------------------------------------------------------------------|
-| clientContext   | String  | Уникальная строка контекста клиента. Максимальное ограничение — 256 шаров.                                 |
+| clientContext   | Строка  | Уникальная строка контекста клиента. Максимальное ограничение — 256 шаров.                                 |
 | status          | String  | Состояние записи. Возможные значения: `notRecording`, `recording` или `failed`.  |
 
 ## <a name="response"></a>Отклик
@@ -88,6 +88,10 @@ Content-Length: 79
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-updaterecordingstatus-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-updaterecordingstatus-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

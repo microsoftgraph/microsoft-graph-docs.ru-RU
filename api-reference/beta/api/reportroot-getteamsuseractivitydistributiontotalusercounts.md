@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getTeamsUserActivityDistributionTotalUserCounts'
-description: Получите число пользователей Microsoft Teams, лицензированных или не лицензированных по типу действий за выбранный период. Типы действий — это количество командных сообщений чата, частных сообщений чата, звонков и собраний.
-localization_priority: Normal
+description: Получите количество лицензированных Microsoft Teams пользователей по типу активности за выбранный период. Типы действий — это количество командных сообщений чата, частных сообщений чата, звонков и собраний.
+ms.localizationpriority: medium
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 0feb129854a6877294271d68bb8694acccfd910a
-ms.sourcegitcommit: 412507a3c3a8e407fcc43b7cd227d4db35791f58
+ms.openlocfilehash: 87ad4531884b26d9ad598aafa8117827fceb915f
+ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51766958"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61044731"
 ---
 # <a name="reportroot-getteamsuseractivitydistributiontotalusercounts"></a>reportRoot: getTeamsUserActivityDistributionTotalUserCounts
 
@@ -18,7 +18,7 @@ ms.locfileid: "51766958"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите число пользователей Microsoft Teams, лицензированных или не лицензированных по типу действий за выбранный период. Типы действий — это количество командных сообщений чата, частных сообщений чата, звонков и собраний.
+Получите количество лицензированных Microsoft Teams пользователей по типу активности за выбранный период. Типы действий — это количество командных сообщений чата, частных сообщений чата, звонков и собраний.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,7 +46,7 @@ GET /reports/getTeamsUserActivityDistributionTotalUserCounts(period='D7')
 
 | Параметр | Тип   | Описание                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
+| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
@@ -77,7 +77,7 @@ CSV-файл содержит столбцы со следующими заго�
 
 ### <a name="json"></a>JSON
 
-В случае успеха этот метод возвращает код ответа и объект `200 OK` [teamsUserActivityDistributionUserCounts](../resources/teamsuseractivitydistributionusercounts.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` объект JSON в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -153,7 +153,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityDistributionTot
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.teamsUserActivityDistributionUserCounts"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -162,7 +162,6 @@ Content-Type: application/json
 Content-Length: 291
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsuseractivitydistributionusercounts)", 
   "value": [
     {
       "reportRefreshDate": "2020-09-01", 

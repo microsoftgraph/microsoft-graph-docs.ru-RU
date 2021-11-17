@@ -1,24 +1,24 @@
 ---
-title: Удаление Профилекардпроперти
-description: Удаление объекта Профилекардпроперти и удаление всех настроек из карточки профиля.
-localization_priority: Normal
+title: Удаление profileCardProperty
+description: Удалите объект profileCardProperty и удалите все настройки с карты профиля.
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 7ad5741936e52f3dc4aad76c24a27711e24b5116
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c66150558e5ce779fca7ae0c5380337eaf041c73
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980866"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61023630"
 ---
-# <a name="delete-profilecardproperty"></a>Удаление Профилекардпроперти
+# <a name="delete-profilecardproperty"></a>Удаление profileCardProperty
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите объект [профилекардпроперти](../resources/profilecardproperty.md) , указанный в `directoryPropertyName` карточке профиля организации, и удалите все локализованные настройки для этого свойства.
+Удалите [объект profileCardProperty,](../resources/profilecardproperty.md) указанный его картой профиля организации, и удалите все локализованные настройки `directoryPropertyName` для этого свойства.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,11 +26,11 @@ ms.locfileid: "48980866"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL          |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All          |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
 | Для приложений                            | Не поддерживается.                              |
 
->**Примечание:** Для этой операции с делегированными разрешениями необходимо, чтобы вошедшего в систему пользователя была назначена роль администратора клиента или роль глобального администратора.
+>**Примечание:** Использование делегирования разрешений для этой операции требует от пользователя, вписаного, роли администратора клиента или глобального администратора.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ DELETE https://graph.microsoft.com/beta/organization/{organizationId}/settings/p
 
 | Имя          | Описание    |
 |:--------------|:---------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -58,7 +58,7 @@ DELETE https://graph.microsoft.com/beta/organization/{organizationId}/settings/p
 
 ### <a name="request"></a>Запрос
 
-В приведенном ниже примере показано, как удалить атрибут с именем "Fax" из карточки профиля для Организации.
+В следующем примере показано, как удалить атрибут с именем "Факс" из карточки профиля организации.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/organization/{organizationId}/settings/p
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-profilecardproperty-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-profilecardproperty-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

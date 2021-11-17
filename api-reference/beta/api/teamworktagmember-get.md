@@ -2,15 +2,15 @@
 title: Получить командную работуTagMember
 description: Ознакомьтесь с свойствами и отношениями объекта teamworkTagMember.
 author: anniecolonna
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 91d9fb93306affa987faf73032ba182ef2b1689e
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 1b37ec9e040ba42c3f6e6f9e821b2dd3654d0b5d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53209964"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61017729"
 ---
 # <a name="get-teamworktagmember"></a>Получить командную работуTagMember
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "53209964"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Не поддерживается.|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|TeamworkTag.Read.All, TeamworkTag.ReadWrite.All|
+|Для приложений|TeamworkTag.Read.All, TeamworkTag.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ GET /teams/{team-Id}/tags/{teamworkTag-Id}/members/{teamworkTagMember-Id}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/teams/53c53217-fe77-4383-bc5a-ed4937a1aecd/
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-teamworktagmember-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-teamworktagmember-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

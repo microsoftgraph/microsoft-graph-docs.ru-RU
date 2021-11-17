@@ -2,15 +2,15 @@
 title: 'serviceUpdateMessage: неблагоприятный'
 description: Удалите любимый статус serviceUpdateMessage для подписанного пользователя.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 16196a28b5d637c813b7492e1ca480607b7f66b4
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: fc463d8f9aeeff6c1cd34964fe6235eaa9c1d0da
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53209303"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002399"
 ---
 # <a name="serviceupdatemessage-unfavorite"></a>serviceUpdateMessage: неблагоприятный
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "53209303"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|ServiceMessageViewpoint.Write|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается|
+|Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,7 +41,7 @@ POST /admin/serviceAnnouncement/messages/unfavorite
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,7 +51,7 @@ POST /admin/serviceAnnouncement/messages/unfavorite
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|messageIds|Коллекция строк|Список ID-сообщений, которые необходимо удалить из избранного.|
+|messageIds|Коллекция String|Список ID-сообщений, которые необходимо удалить из избранного.|
 
 ## <a name="response"></a>Отклик
 
@@ -89,6 +89,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceupdatemessage-unfavorite-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceupdatemessage-unfavorite-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

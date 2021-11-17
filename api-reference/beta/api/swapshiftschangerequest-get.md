@@ -1,16 +1,16 @@
 ---
 title: Get swapShiftsChangeRequest
 description: Извлечение свойств и связей объекта swapShiftsChangeRequest.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8ddf4f912a9b9cc155ddb316ae03ad5adf1c777a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9ae672be32654432660e273310169a5e5dfbdc37
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054856"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61010645"
 ---
 # <a name="get-swapshiftschangerequest"></a>Get swapShiftsChangeRequest
 
@@ -28,7 +28,7 @@ ms.locfileid: "52054856"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | Schedule.Read.All *, Schedule.ReadWrite.All* |
+| Для приложений | Schedule.Read.All *, Schedule.ReadWrite.All* |
 
 >\***Важно:** Разрешения приложения в настоящее время доступны только в закрытом режиме и недоступны для общего пользования.
 
@@ -48,7 +48,7 @@ GET /teams/{teamId}/schedule/swapShiftsChangeRequests
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/swapShiftsChangeReq
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-swapshiftschangerequest-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-swapshiftschangerequest-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

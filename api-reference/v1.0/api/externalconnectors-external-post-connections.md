@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 30b0719359cce26658357915c6256402a4573169
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 48eb565e9d306f03cb71b79e5564540eb6adb4f2
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022515"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60984744"
 ---
 # <a name="create-externalconnection"></a>Создание externalConnection
 Пространство имен: microsoft.graph.externalConnectors
@@ -41,7 +41,7 @@ POST /external/connections
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,9 +51,9 @@ POST /external/connections
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|ID подключения. Обязательное.|
+|id|Строка|ID подключения. Обязательный.|
 |name|String|Имя подключения. Обязательный.|
-|description|Строка|Описание подключения. Обязательное.|
+|description|Строка|Описание подключения. Обязательный.|
 |configuration|[microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md)|Конфигурации подключения. Необязательный параметр.|
 
 
@@ -96,6 +96,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-externalconnection-from-connections-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-externalconnection-from-connections-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
