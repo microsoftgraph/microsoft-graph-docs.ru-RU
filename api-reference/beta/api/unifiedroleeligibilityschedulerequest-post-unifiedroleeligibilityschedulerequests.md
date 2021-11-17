@@ -5,12 +5,12 @@ author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b6b1ef4986a1c8e22e5298a35856c72933bdf131
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 4e88dbaf2c29b08471e9f17167fbec4559ed4868
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696653"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60976907"
 ---
 # <a name="create-unifiedroleeligibilityschedulerequest"></a>Создание unifiedRoleEligibilityScheduleRequest
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "60696653"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|RoleEligibilitySchedule.ReadWrite.Directory|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|Не поддерживается|
+|Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,12 +52,12 @@ POST /roleManagement/directory/roleEligibilityScheduleRequests
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |action|String|Представляет тип операции по назначению права на роль. Возможные значения: <ul><li>`AdminAssign`. Чтобы администраторы назначали права на роль пользователям или группам в роли.</li><li>`AdminExtend`: Чтобы администраторы продлили назначения по истечении срока действия.</li><li>`AdminUpdate`: Чтобы администраторы изменили существующие назначения ролей.</li><li>`AdminRenew`. Чтобы администраторы возобновляли истекаемы назначения.</li><li>`AdminRemove`: Чтобы администраторы удаляли пользователей или группы из подходящих ролей.</li><li>`UserAdd`: Чтобы пользователи активировали соответствующие назначения.</li><li>`UserExtend`: Чтобы пользователи просили продлить срок действия соответствующих назначений.</li><li>`UserRemove`. Чтобы пользователи отключались от активных назначений.</li><li>`UserRenew`. Чтобы пользователи просили продлить срок действия своих назначений, имеющих право на срок действия.</li></ul>|
-|appScopeId|String|Идентификатор области, определенной для приложения, когда область назначения является конкретной для приложения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области приложений — это области, которые определяются и понимаются только этим приложением. Используйте `/` для областей приложений для всех клиентов. Используйте **directoryScopeId,** чтобы ограничить область действия определенными объектами каталогов, например административными единицами или всеми пользователями.|
-|directoryScopeId|String|Идентификатор объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте `/` для области для клиента. Используйте **appScopeId,** чтобы ограничить область только приложения.|
+|appScopeId|Строка|Идентификатор области, определенной для приложения, когда область назначения является конкретной для приложения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области приложений — это области, которые определяются и понимаются только этим приложением. Используйте `/` для областей приложений для всех клиентов. Используйте **directoryScopeId,** чтобы ограничить область действия определенными объектами каталогов, например административными единицами или всеми пользователями.|
+|directoryScopeId|Строка|Идентификатор объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте `/` для области для клиента. Используйте **appScopeId,** чтобы ограничить область только приложения.|
 |isValidationOnly|Логический|Boolean, определяющая, является ли вызов проверкой или фактическим вызовом. Только задайте это свойство, если необходимо проверить, подчиняется ли активация дополнительным правилам, таким как MFA, перед отправкой запроса.|
 |обоснование|String|Сообщение, предоставленное пользователями и администраторами при создании запроса о необходимости. Необязательный **при действии** `AdminRemove` .|
-|principalId|String|Идентификатор основного, которому предоставляется назначение. Например, пользователь или группа. Для групп они должны назначаться ролям, то есть **isAssignableToRole** свойства группы, задаваемого `true` .|
-|roleDefinitionId|String|Идентификатор унифицированногоRoleDefinition для назначения. Обязательно. Только для чтения.|
+|principalId|Строка|Идентификатор основного, которому предоставляется назначение. Например, пользователь или группа. Для групп они должны назначаться ролям, то есть **isAssignableToRole** свойства группы, задаваемого `true` .|
+|roleDefinitionId|Строка|Идентификатор унифицированногоRoleDefinition для назначения. Обязательный. Только для чтения.|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|Объект расписания запроса назначения ролей. Это свойство не требуется при **действии** `AdminRemove` .|
 |ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Объект ticketInfo, присоединенный к запросу назначения ролей, который включает сведения о номере билета и системе билетов. Необязательный параметр.|
 
@@ -114,6 +114,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleeligibilityschedulerequest-from-unifiedroleeligibilityschedulerequests-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleeligibilityschedulerequest-from-unifiedroleeligibilityschedulerequests-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -220,6 +224,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleeligibilityschedulerequest-from-unifiedroleeligibilityschedulerequests-adminremove-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleeligibilityschedulerequest-from-unifiedroleeligibilityschedulerequests-adminremove-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

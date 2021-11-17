@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов identityProvider
 description: Получите коллекцию ресурсов поставщика удостоверений, настроенных для клиента и полученных из identityProviderBase.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 78146fd0f76d6e5c3e3e32e8c23cb622ebfb6d37
-ms.sourcegitcommit: f99dc2b6c8b4cb6f9f74cd780dccc47a2bccfaa6
+ms.openlocfilehash: cf18107e8d0a6ccce8aa1add71824445aac3a818
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58667857"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60986060"
 ---
 # <a name="list-identityproviders"></a>Перечисление объектов identityProvider
 Пространство имен: microsoft.graph
@@ -51,7 +51,7 @@ GET /identity/identityProviders
 
 |Имя|Описание|
 |:---------------|:----------|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -96,10 +96,14 @@ GET https://graph.microsoft.com/beta/identity/identityProviders
 [!INCLUDE [sample-code](../includes/snippets/java/get-identityproviderbase-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-identityproviderbase-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -151,7 +155,7 @@ GET https://graph.microsoft.com/beta/identity/identityProviders
 ```
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

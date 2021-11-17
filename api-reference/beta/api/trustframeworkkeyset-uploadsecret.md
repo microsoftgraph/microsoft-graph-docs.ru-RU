@@ -1,16 +1,16 @@
 ---
 title: 'trustFrameworkKeySet: uploadSecret'
 description: Upload секрет для наборов ключей.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 104e11956a388ccc7ae65cf4a70e609f3eb9b08f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e325003e6673a06ff8b4bad1484168dc27dc63c0
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053414"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61013669"
 ---
 # <a name="trustframeworkkeyset-uploadsecret"></a>trustFrameworkKeySet: uploadSecret
 
@@ -28,7 +28,7 @@ Upload простой текстовый секрет [для trustFrameworkKeys
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | TrustFrameworkKeySet.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | TrustFrameworkKeySet.ReadWrite.All |
+| Для приложений                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ POST /trustFramework/keySets/{id}/uploadSecret
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,8 +51,8 @@ POST /trustFramework/keySets/{id}/uploadSecret
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|использование|String|Аналогично **свойству использования** **trustFrameworkKey.**|
-|k|String|Аналогично свойству **k** **trustFrameworkKey.** Это поле, которое используется для отправки секрета.|
+|использование|Строка|Аналогично **свойству использования** **trustFrameworkKey.**|
+|k|Строка|Аналогично свойству **k** **trustFrameworkKey.** Это поле, которое используется для отправки секрета.|
 |nbf|Int64|Аналогично свойству **nbf** **trustFrameworkKey.**|
 |exp|Int64|Аналогично свойству **exp** **trustFrameworkKey.**|
 
@@ -97,6 +97,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/trustframeworkkeyset-uploadsecret-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/trustframeworkkeyset-uploadsecret-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

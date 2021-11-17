@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов secureScoreControlProfiles
-description: Получение свойств и связей объекта Секурескореконтролпрофилес.
-localization_priority: Normal
+description: Извлечение свойств и связей объекта secureScoreControlProfiles.
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 988a51f458fdbd3a23efa9f98ec467bdf4a521f8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 36227e3def490f9b2c9eb9231c668ab7c4e9ee16
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982058"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020543"
 ---
 # <a name="list-securescorecontrolprofiles"></a>Перечисление объектов secureScoreControlProfiles
 
@@ -18,7 +18,7 @@ ms.locfileid: "48982058"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получает список объектов [секурескореконтролпрофиле](../resources/securescorecontrolprofiles.md) для клиента.
+Извлекает список объектов [secureScoreControlProfile](../resources/securescorecontrolprofiles.md) для клиента.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -50,7 +50,7 @@ GET /security/secureScoreControlProfiles
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов **секурескореконтролпрофиле** в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` **secureScoreControlProfile** в теле ответа.
 
 ## <a name="example"></a>Пример
 
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/security/secureScoreControlProfiles
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/securescorecontrolprofiles-list-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/securescorecontrolprofiles-list-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

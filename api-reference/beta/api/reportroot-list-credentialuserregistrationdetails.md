@@ -1,16 +1,16 @@
 ---
 title: Список credentialUserRegistrationDetails
 description: Получите список объектов credentialUserRegistrationDetails для данного клиента.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: bf6e99722c44ff0054869056be09314d6befac59
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: d107de125d803564d711bbd2790a4ac60f9dda40
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136670"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61011108"
 ---
 # <a name="list-credentialuserregistrationdetails"></a>Список credentialUserRegistrationDetails
 
@@ -40,23 +40,23 @@ GET /reports/credentialUserRegistrationDetails
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Эта функция поддерживает необязательный параметр запроса OData **$filter.** Вы можете **применить $filter** к одному или более из следующих свойств ресурса [credentialUserRegistrationDetails.](../resources/credentialuserregistrationdetails.md)
+Эта функция поддерживает необязательный параметр запроса **OData $filter.** Вы можете **$filter** одно или несколько следующих свойств ресурса [credentialUserRegistrationDetails.](../resources/credentialuserregistrationdetails.md)
 
 | Свойства | Описание и пример |
 | --------- | ----------------------- |
-| userDisplayName | Фильтрация по имени пользователя. Пример: `/reports/credentialUserRegistrationDetails?$filter=userDisplayName eq 'Contoso'`. Поддерживаемые операторы фильтра: `eq` и `startswith()` . Поддерживается безчувствительности к делу. |
-| userPrincipalName | Фильтрация по имени основного пользователя. Пример: `/reports/credentialUserRegistrationDetails?$filter=userPrincipalName eq 'Contoso'`. Поддерживаемые операторы фильтра: `eq` и `startswith()` . Поддерживается безчувствительности к делу. |
-| authMethods | Фильтрация по методам проверки подлинности, используемым во время регистрации. Пример: `/reports/credentialUserRegistrationDetails?$filter=authMethods/any(t:t eq microsoft.graph.registrationAuthMethod'email')`. Поддерживаемые операторы фильтра: `eq` . |
-| isRegistered | Фильтрация для пользователей, которые зарегистрировались для самостоятельного сброса пароля (SSPR). Пример: `/reports/credentialUserRegistrationDetails?$filter=isRegistered eq true`. Поддерживаемые операторы фильтра: `eq` . |
-| isEnabled | Фильтрация для пользователей, для которых включена SSPR. Пример: `/reports/credentialUserRegistrationDetails?$filter=isEnabled eq true`. Поддерживаемые операторы filtter: `eq` . |
-| isCapable | Фильтрация для пользователей, которые готовы выполнить сброс пароля или многофакторную проверку подлинности (MFA). Пример: `/reports/credentialUserRegistrationDetails?$filter=isCapable eq true`. Поддерживаемые операторы фильтров: `eq` |
-| isMfaRegistered | Фильтрация для пользователей, зарегистрированных на MFA. Пример: `/reports/credentialUserRegistrationDetails?$filter=isMfaRegistered eq true`. Поддерживаемые операторы фильтра: `eq` . |
+| userDisplayName | Фильтр по имени пользователя. Пример: `/reports/credentialUserRegistrationDetails?$filter=userDisplayName eq 'Contoso'`. Поддерживаемые операторы фильтров: `eq` и `startswith()` . Поддерживает нечувствительный случай. |
+| userPrincipalName | Фильтр по основному имени пользователя. Пример: `/reports/credentialUserRegistrationDetails?$filter=userPrincipalName eq 'Contoso'`. Поддерживаемые операторы `eq` фильтров: и `startswith()` . Поддерживает нечувствительный случай. |
+| authMethods | Фильтрация с помощью методов проверки подлинности, используемых во время регистрации. Пример: `/reports/credentialUserRegistrationDetails?$filter=authMethods/any(t:t eq microsoft.graph.registrationAuthMethod'email')`. Поддерживаемые операторы фильтров: `eq` . |
+| isRegistered | Фильтр для пользователей, которые зарегистрировались для сброса пароля самообслуживанной службы (SSPR). Пример: `/reports/credentialUserRegistrationDetails?$filter=isRegistered eq true`. Поддерживаемые операторы фильтров: `eq` . |
+| isEnabled | Фильтр для пользователей, включенных для SSPR. Пример: `/reports/credentialUserRegistrationDetails?$filter=isEnabled eq true`. Поддерживаемые операторы filtter: `eq` . |
+| isCapable | Фильтр для пользователей, готовых выполнить сброс пароля или многофакторную проверку подлинности (MFA). Пример: `/reports/credentialUserRegistrationDetails?$filter=isCapable eq true`. Поддерживаемые операторы фильтров: `eq` |
+| isMfaRegistered | Фильтр для пользователей, зарегистрированных в МИД. Пример: `/reports/credentialUserRegistrationDetails?$filter=isMfaRegistered eq true`. Поддерживаемые операторы фильтров: `eq` . |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,7 @@ GET /reports/credentialUserRegistrationDetails
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -100,14 +100,18 @@ GET https://graph.microsoft.com/beta/reports/credentialUserRegistrationDetails
 [!INCLUDE [sample-code](../includes/snippets/java/get-credentialuserregistrationdetails-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-credentialuserregistrationdetails-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
-> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. Все свойства возвращаются при фактическом вызове.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. Все свойства возвращаются с фактического вызова.
 
 <!-- {
   "blockType": "response",

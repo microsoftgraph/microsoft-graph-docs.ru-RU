@@ -2,15 +2,15 @@
 title: 'serviceUpdateMessage: markUnread'
 description: Пометить список сообщений об обновлении службы как непрочитанные для подписанного пользователя.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4f9fd2bcb2da7c4f26b45a472fc4af52fa75b15d
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: f9ea57a409949c7f32dbdb189586f76c449bba37
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210797"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002476"
 ---
 # <a name="serviceupdatemessage-markunread"></a>serviceUpdateMessage: markUnread
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "53210797"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|ServiceMessageViewpoint.Write|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается|
+|Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,7 +41,7 @@ POST /admin/serviceAnnouncement/messages/markUnread
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,7 +51,7 @@ POST /admin/serviceAnnouncement/messages/markUnread
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|messageIds|Коллекция строк|Список ID-сообщений, которые необходимо отметить как непрочитанные.|
+|messageIds|Коллекция String|Список ID-сообщений, которые необходимо отметить как непрочитанные.|
 
 ## <a name="response"></a>Отклик
 
@@ -89,6 +89,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceupdatemessage-markunread-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceupdatemessage-markunread-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

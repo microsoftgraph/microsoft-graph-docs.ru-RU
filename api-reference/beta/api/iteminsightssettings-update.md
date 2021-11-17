@@ -5,12 +5,12 @@ author: simonhult
 ms.localizationpriority: medium
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: a04a6a01964d7f95b6560cb56d9afa784a724a05
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: 43ee5650c87d2cbf21a0a8b1c35a05e7874b9cab
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60891262"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020795"
 ---
 # <a name="update-iteminsightssettings"></a>Обновление itemInsightsSettings
 
@@ -54,8 +54,8 @@ PATCH /organization/{organizationId}/settings/itemInsights
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|isEnabledInOrganization|Логический| `true` если включена информация о элементах организации; `false` если сведения о элементах организации отключены для всех пользователей без исключений. Значение по умолчанию: `true`. Необязательное.|
-|disabledForGroup|String| ID группы Azure AD, из которой отключены сведения о элементах участников. Значение по умолчанию: `empty`. Необязательный параметр.|
+|isEnabledInOrganization|Логический| `true` если включена информация о элементах организации; `false` если сведения о элементах организации отключены для всех пользователей без исключений. Значение по умолчанию: `true`. Необязательный параметр.|
+|disabledForGroup|Строка| ID группы Azure AD, из которой отключены сведения о элементах участников. Значение по умолчанию: `empty`. Необязательный параметр.|
 
 ## <a name="response"></a>Отклик
 
@@ -97,6 +97,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-iteminsightssettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-iteminsightssettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

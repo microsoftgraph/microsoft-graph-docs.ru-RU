@@ -5,12 +5,12 @@ author: psignoret
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 7cd9c73eca68ba9858ea82601c80ce4e7967f72f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2cc16ba867e5084814565201d8ad8d056fd1dc37
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59080471"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60996819"
 ---
 # <a name="update-adminconsentrequestpolicy"></a>Обновление adminConsentRequestPolicy
 
@@ -44,7 +44,7 @@ PUT /policies/adminConsentRequestPolicy
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -56,8 +56,8 @@ PUT /policies/adminConsentRequestPolicy
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |isEnabled|Boolean|Указывает, включена или отключена функция запроса на согласие администратора.|
-|notifyReviewers|Логический|Указывает, будут ли рецензенты получать уведомления.|
-|remindersEnabled|Логический|Указывает, будут ли рецензенты получать сообщения напоминания.|
+|notifyReviewers|Логическое|Указывает, будут ли рецензенты получать уведомления.|
+|remindersEnabled|Логическое|Указывает, будут ли рецензенты получать сообщения напоминания.|
 |requestDurationInDays|Int32|Указывает продолжительность действия запроса до его автоматического истечения, если не будет применено решение.|
 |рецензенты|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|Список рецензентов для согласия администратора.|
 
@@ -111,6 +111,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-adminconsentrequestpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-adminconsentrequestpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

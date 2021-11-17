@@ -1,16 +1,16 @@
 ---
 title: Перечисление языков
 description: Извлечение списка объектов languageProficiency.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 09154c6cd53d2b10dbbd2bf1aa1033443e046eec
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: be4c37b2550857dbf6675e282051461669d9eb7c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037200"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019465"
 ---
 # <a name="list-languages"></a>Перечисление языков
 
@@ -55,7 +55,7 @@ GET /users/{id | userPrincipalName}/profile/languages
 
 | Имя           |Описание                  |
 |:---------------|:----------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.   |
+| Авторизация  | Bearer {token}. Обязательный.   |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/me/profile/languages
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-languages-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-languages-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 9555798c9ec513400bacd2a673fb3fd40dabe260
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: b304ade644f566faacb037ca2a974c66eab10f3d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60946687"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60989603"
 ---
 # <a name="create-printershare"></a>Создание printerShare
 
@@ -50,7 +50,7 @@ POST /print/shares
 |Свойство|Тип|Описание|Обязательный?|
 |:---|:---|:---|:---|
 |printer|microsoft.graph.printer|Принтер, с который связан этот принтер. Используйте `printer@odata.bind` синтаксис, как показано в следующем примере.|Да|
-|displayName|String|Имя доли принтера, которую должны отображать клиенты печати. Максимальная разрешенная длина — 50 символов.|Да|
+|displayName|Строка|Имя доли принтера, которую должны отображать клиенты печати. Максимальная разрешенная длина — 50 символов.|Да|
 |allowAllUsers|Логическое| Если это так, всем пользователям и группам будет предоставлен доступ к этой совместной печати. Это замещеет списки разрешенных объектов, определенные свойствами allowedUsers и allowedGroups.|Нет|
 
 ## <a name="response"></a>Отклик
@@ -90,6 +90,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-printershare-from-print-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-printershare-from-print-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

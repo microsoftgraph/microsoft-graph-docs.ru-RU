@@ -5,12 +5,12 @@ description: Получите коллекцию типов контента в 
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 81d3a35374211f9be094a91443778221ead78c71
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 5b4ab85b26a81be9f742a537ca4b09246ea43f47
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730475"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61004079"
 ---
 # <a name="list-contenttypes-in-a-list"></a>Список contentTypes в списке
 Пространство имен: microsoft.graph
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/contentType
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/enum-contenttypes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/enum-contenttypes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

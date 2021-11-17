@@ -2,15 +2,15 @@
 title: Обновление adminConsentRequestPolicy
 description: Обновление свойств объекта adminConsentRequestPolicy.
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5efe85f8d78e11ea5c97799c426bba383300c24a
-ms.sourcegitcommit: 8ca598ac70647bf4f897361ee90d3aa31d2ecca5
+ms.openlocfilehash: 12fd69f5fc605aca11c6458eb6d92ca26bbc8907
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51468921"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987621"
 ---
 # <a name="update-adminconsentrequestpolicy"></a>Обновление adminConsentRequestPolicy
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "51468921"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Policy.ReadWrite.ConsentRequest, Directory.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Policy.ReadWrite.ConsentRequest, Directory.ReadWrite.All|
+|Для приложений|Policy.ReadWrite.ConsentRequest, Directory.ReadWrite.All|
 
 При вызове от имени пользователя пользователю необходимо принадлежать к роли [глобального](/azure/active-directory/roles/permissions-reference) администратора.
 
@@ -43,7 +43,7 @@ PUT /policies/adminConsentRequestPolicy
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,8 +54,8 @@ PUT /policies/adminConsentRequestPolicy
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |isEnabled|Boolean|Указывает, включена или отключена функция запроса на согласие администратора.|
-|notifyReviewers|Логический|Указывает, будут ли рецензенты получать уведомления.|
-|remindersEnabled|Логический|Указывает, будут ли рецензенты получать сообщения напоминания.|
+|notifyReviewers|Логическое|Указывает, будут ли рецензенты получать уведомления.|
+|remindersEnabled|Логическое|Указывает, будут ли рецензенты получать сообщения напоминания.|
 |requestDurationInDays|Int32|Указывает продолжительность действия запроса до его автоматического истечения, если не будет применено решение.|
 |рецензенты|[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|Список рецензентов для согласия администратора.|
 
@@ -110,6 +110,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-adminconsentrequestpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-adminconsentrequestpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

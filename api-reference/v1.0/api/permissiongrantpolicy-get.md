@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 5372d31b3187f1069538de2db2b7c992793d03b6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 63796b2cbbf480ca33228fbda71be88b3569a5c3
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59022081"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61003624"
 ---
 # <a name="get-permissiongrantpolicy"></a>Получить permissionGrantPolicy
 
@@ -44,7 +44,7 @@ GET /policies/permissionGrantPolicies/{id}
 
 | Имя           | Описание                |
 |:---------------|:---------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -88,12 +88,16 @@ GET https://graph.microsoft.com/v1.0/policies/permissionGrantPolicies/microsoft-
 [!INCLUDE [sample-code](../includes/snippets/java/get-permissiongrantpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-permissiongrantpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Политика имеет два набора условий, один из которых совпадает с делегированным разрешением, классифицированным для клиентских приложений, зарегистрированных в этом клиенте, и другой, который соответствует делегированию разрешений, классифицированных для приложений от проверенных издателей (независимо от того, в каком клиенте зарегистрировано `includes` `low` `low` приложение).
+Ниже приведен пример ответа. Политика имеет два набора условий, один из которых совпадает с делегированным разрешением, классифицированным для клиентских приложений, зарегистрированных в этом клиенте, и другой, который соответствует делегированию разрешений, классифицированных для приложений от проверенных издателей (независимо от того, в каком клиенте зарегистрировано `includes` `low` `low` приложение).
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

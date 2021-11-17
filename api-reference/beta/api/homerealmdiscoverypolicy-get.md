@@ -1,16 +1,16 @@
 ---
 title: Get homeRealmDiscoveryPolicy
 description: Извлечение свойств и связей объекта homeRealmDiscoveryPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: hpsin
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0ce276e1ab6ffa93962aecfc3b2b0dd19ff7ec13
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9a03ec5fdc2cab918b052b4829d23f4e30346935
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52041038"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60986347"
 ---
 # <a name="get-homerealmdiscoverypolicy"></a>Get homeRealmDiscoveryPolicy
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-homerealmdiscoverypolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-homerealmdiscoverypolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
