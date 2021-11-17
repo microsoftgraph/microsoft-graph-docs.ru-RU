@@ -1,18 +1,18 @@
 ---
-title: 'user: translateExchangeIds'
+title: 'пользователь: translateExchangeIds'
 description: Перевод идентификаторов ресурсов, связанных с Outlook, между форматами.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4bdb22f649cc0fd30734b5762106c959c34e3cf6
-ms.sourcegitcommit: 48fff935d56fe96e97577a80a3a0aa15c45419ba
+ms.openlocfilehash: 7036a86ccadedbbfa354a5f230fe8525b2a67e9c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176978"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60984969"
 ---
-# <a name="user-translateexchangeids"></a>user: translateExchangeIds
+# <a name="user-translateexchangeids"></a>пользователь: translateExchangeIds
 
 Пространство имен: microsoft.graph
 
@@ -43,40 +43,40 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | Имя | Значение |
 |:-----|:------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
-| inputIds | Коллекция String | Коллекция идентификаторов для преобразования. Все идентификаторы в коллекции ДОЛЖНЫ иметь одинаковый тип идентификатора источника и должны быть для элементов в одном почтовом ящике. Максимальный размер этой коллекции составляет 1000 строк. |
-| sourceIdType | exchangeIdFormat | Тип идентификаторов в `InputIds` параметре. |
+| inputIds | Коллекция объектов string | Коллекция идентификаторов для преобразования. Все идентификаторы в коллекции должны иметь один и тот же тип идентификатора источника и должны быть для элементов в одном почтовом ящике. Максимальный размер этой коллекции — 1000 строк. |
+| sourceIdType | exchangeIdFormat | Идентификатор идентификаторов в `InputIds` параметре. |
 | targetIdType | exchangeIdFormat | Запрашиваемого типа ID для преобразования. |
 
 ### <a name="exchangeidformat-values"></a>Значения exchangeIdFormat
 
 | Member | Описание |
 |:-------|:------------|
-| entryId | Формат двоичных записей, используемый клиентами MAPI. |
-| ewsId | Формат ИД, используемый клиентами веб-служб Exchange. |
+| entryId | Двоичный формат входа, используемый клиентами MAPI. |
+| ewsId | Формат ID, используемый Exchange веб-службами. |
 | immutableEntryId | Двоичный формат ID, совместимый с MAPI. |
-| restId | Формат по умолчанию, используемый Microsoft Graph. |
-| restImmutableEntryId | Не изменяемый формат ИД, используемый в Microsoft Graph. |
+| restId | Формат ID по умолчанию, используемый Корпорацией Майкрософт Graph. |
+| restImmutableEntryId | Неоменяемый формат ID, используемый Корпорацией Майкрософт Graph. |
 
-Двоичные форматы `entryId` `immutableEntryId` (и) — это безопасный URL-адрес в коде base64. Защита URL-адресов реализуется путем изменения кодировидности base64 двоичных данных следующим образом:
+Двоичные форматы `entryId` `immutableEntryId` (и) — это кодируемые URL-адреса base64. Безопасность URL-адресов реализуется путем изменения кодирования двоичных данных base64 следующим образом:
 
-- Заменить `+` на `-`
-- Заменить `/` на `_`
-- Удалите все символы заполнения в окнах ( `=` )
-- Добавьте в конец строки integer, указывающее, сколько символов заполнения было в исходном ( `0` , , , или `1` `2` )
+- Замените `+` на `-`
+- Замените `/` на `_`
+- Удалите любые символы обивки с прицепом ( `=` )
+- Добавьте в конец строки integer, указывающее количество символов обивки в оригинале `0` (, `1` `2` или)
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает `200 OK` код отклика и [коллекцию convertIdResult](../resources/convertidresult.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [коллекцию convertIdResult](../resources/convertidresult.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 
-В следующем примере показано, как преобразовать несколько идентификаторов из обычного формата REST API ( ) в `restId` необраменяемый формат REST ( `restImmutableEntryId` ).
+В следующем примере показано, как преобразовать несколько идентификаторов из обычного формата API REST () в `restId` неоменяемый формат REST ( `restImmutableEntryId` ).
 
 ### <a name="request"></a>Запрос
 
@@ -115,6 +115,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-translateexchangeids-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-translateexchangeids-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

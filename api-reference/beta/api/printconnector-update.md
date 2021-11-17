@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 06f0d937a0461511c11a15dc18fc0463f0a40d03
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 44e6777fcddad77d7747abb49e953ad0881561e1
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60942011"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60985298"
 ---
 # <a name="update-printconnector"></a>Обновление printConnector
 
@@ -50,7 +50,7 @@ PATCH /print/connectors/{id}
 |name|String|Имя соединитетеля.|
 |fullyQualifiedDomainName|String|Имя хост-имени соединители.|
 |operatingSystem|String|Версия операционной системы соединитетеля.|
-|appVersion|String|Версия соединиттеля.|
+|appVersion|Строка|Версия соединиттеля.|
 |расположение|[printerLocation](../resources/printerlocation.md)|Физическое и/или организационное расположение соединитетеля.|
 
 ## <a name="response"></a>Отклик
@@ -96,6 +96,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-connector-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-connector-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

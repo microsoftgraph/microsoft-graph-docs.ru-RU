@@ -5,12 +5,12 @@ author: Harini84
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 07914823e84484f2dd3f828205a748fa97b82636
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: f171e80401dad17e0f413f6cff07593eee22b5cb
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766413"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61000810"
 ---
 # <a name="get-calendarpermission"></a>Get calendarPermission
 
@@ -55,7 +55,7 @@ GET /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -96,11 +96,15 @@ GET https://graph.microsoft.com/v1.0/users/{id}/calendar/calendarPermissions/{id
 [!INCLUDE [sample-code](../includes/snippets/java/get-calendarpermission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-calendarpermission-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

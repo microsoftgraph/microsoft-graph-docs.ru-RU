@@ -1,16 +1,16 @@
 ---
 title: Интересы списка
 description: Извлечение списка объектов personInterest.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: fb2d4de0dc98960c3a43d80e65131d7ba926b59a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2ab168dfaefeb0ca9913433dd52606a853e296f7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037251"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019437"
 ---
 # <a name="list-interests"></a>Интересы списка
 
@@ -55,7 +55,7 @@ GET /users/{id | userPrincipalName}/profile/interests
 
 | Имя           |Описание                  |
 |:---------------|:----------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.   |
+| Авторизация  | Bearer {token}. Обязательный.   |
 
 
 ## <a name="request-body"></a>Текст запроса
@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/beta/me/profile/interests
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-interests-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-interests-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

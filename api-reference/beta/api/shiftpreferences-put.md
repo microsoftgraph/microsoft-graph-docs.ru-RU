@@ -2,15 +2,15 @@
 title: Обновление shiftPreferences
 description: Обновление личных предпочтений пользователя.
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3a209d5266fb841cff4011255be98ac6d9fe6771
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: c695f5819210694f33f9e84f32fb039c2957ef4f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786729"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002253"
 ---
 # <a name="update-shiftpreferences"></a>Обновление shiftPreferences
 
@@ -42,7 +42,7 @@ PUT /users/{userId}/settings/shiftPreferences
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -102,6 +102,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/shift-get-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/shift-get-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

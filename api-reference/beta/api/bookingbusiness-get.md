@@ -1,16 +1,16 @@
 ---
 title: Get bookingBusiness
 description: Получите свойства и связи объекта bookingBusiness.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 47b7f974ee72d89c43a0d0663982bde4d64d38b9
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 59e7381245730e1dbe65b6d11b5e23147a6a399f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047926"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60990667"
 ---
 # <a name="get-bookingbusiness"></a>Get bookingBusiness
 
@@ -73,10 +73,14 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Fabrikam@M365B489948.onmi
 [!INCLUDE [sample-code](../includes/snippets/java/get-bookingbusiness-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-bookingbusiness-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример ответа. Примечание: показанный здесь объект ответа может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

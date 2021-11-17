@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c782b4d259f6926c7066e9cdfc956e7db430622a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a8ba60e7796fca773352dc1f0b719f57ee8a05ba
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59125451"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61001077"
 ---
 # <a name="get-calendar"></a>Вывод календаря
 
@@ -21,7 +21,7 @@ ms.locfileid: "59125451"
 Существует два сценария, в которых приложение может получить календарь другого пользователя:
 
 * У приложения есть разрешения для приложений; или
-* если у приложения есть соответствующие делегированные [разрешения](#permissions) от одного пользователя, а другой пользователь поделился с ним календарем или предоставил ему делегированный доступ. См. [подробные сведения и пример](/graph/outlook-get-shared-events-calendars).
+* У приложения есть соответствующие делегированные [разрешения](#permissions) от одного пользователя, а другой пользователь поделился с ним календарем или предоставил ему делегированный доступ. См. [подробные сведения и пример](/graph/outlook-get-shared-events-calendars).
 
 ## <a name="permissions"></a>Разрешения
 В зависимости от типа календаря, к которому относится событие, а также от требуемого типа разрешений (делегированные или разрешения приложений), для вызова этого API необходимо одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -55,7 +55,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/v1.0/me/calendar
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-calendar-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-calendar-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

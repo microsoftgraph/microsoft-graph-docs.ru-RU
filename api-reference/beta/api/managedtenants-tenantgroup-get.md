@@ -2,15 +2,15 @@
 title: Get tenantGroup
 description: Ознакомьтесь с свойствами и отношениями объекта tenantGroup.
 author: isaiahwilliams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 9269178355aac2f864952d79d06e9592717caa48
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: c778a57421f9c3f916fe3c55c35ec040964be11b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53441173"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019808"
 ---
 # <a name="get-tenantgroup"></a>Get tenantGroup
 Пространство имен: microsoft.graph.managedTenants
@@ -44,7 +44,7 @@ GET /tenantRelationships/managedTenants/tenantGroups/{tenantGroupId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantGr
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-tenantgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-tenantgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,15 +2,15 @@
 title: Обновление разрешения
 description: Обновление объекта разрешений на сайте.
 author: BarrySh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 27f006e5a2059662903f710ac994e176e1d51a22
-ms.sourcegitcommit: 16ee16e7fddd662ca42dc5c9352cfb109e31ed1a
+ms.openlocfilehash: 1c964348ef8bfb0a806982d95e0603bb85159c4c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "51582601"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002091"
 ---
 # <a name="update-permission"></a>Обновление разрешения
 Пространство имен: microsoft.graph
@@ -41,7 +41,7 @@ PATCH /sites/{sitesId}/permissions/{permissionId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -83,6 +83,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-permission-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-permission-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

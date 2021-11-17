@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b6e635419d0f63645dd0714a2540d6d60f62a182
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: bbdd3be55fbdafb25ddb0cc1ffd4a55abc53b86b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256377"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61008076"
 ---
 # <a name="get-directoryobject"></a>Получение объекта DirectoryObject
 
@@ -78,11 +78,15 @@ GET https://graph.microsoft.com/beta/directoryObjects/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-directoryobject-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-directoryobject-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

@@ -5,12 +5,12 @@ author: dipakboyed
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: beffcc4b01d59a2cf862e6aa2ed5ac89081aeffe
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: ef0fb479478e9b7a2e7cdad1efc013ce42c8f7da
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220474"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019879"
 ---
 # <a name="educationsubmission-return"></a>educationSubmission: возврат
 
@@ -37,7 +37,7 @@ POST /education/classes/{class-id}/assignments/{assignment-id}/submissions/{subm
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не поставляем тело запроса для этого метода.
@@ -74,6 +74,10 @@ POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/educationsubmission-return-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/educationsubmission-return-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,15 +2,15 @@
 title: 'участник: приглашение'
 description: Приглашение участников в активный вызов.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ac0436723a8e01d3476990f3d794b8fcd0e7ed9f
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 3bf2be438c879875a4449d68ffde6a1848f4add0
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52666368"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60997809"
 ---
 # <a name="participant-invite"></a>участник: приглашение
 
@@ -31,7 +31,7 @@ ms.locfileid: "52666368"
 | :-------------- | :--------------------------------------------------------- |
 | Делегированное (рабочая или учебная учетная запись)     | Не поддерживается                       |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
-| Приложение     | Calls.InitiateGroupCalls.All                               |
+| Для приложений     | Calls.InitiateGroupCalls.All                               |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +44,7 @@ POST /communications/calls/{id}/participants/invite
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -108,6 +108,10 @@ Content-Length: 464
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/participant-invite-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/participant-invite-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -309,6 +313,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/participant-invite-multiple-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/participant-invite-multiple-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -555,6 +563,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/participant-invite-existing-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/participant-invite-existing-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -741,6 +753,10 @@ Content-Length: 464
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/participant-invite-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/participant-invite-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

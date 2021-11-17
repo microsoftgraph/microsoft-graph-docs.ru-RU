@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 94168f831d3575ec9b5df191ff072cbcb5c52c34
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: c1be38511befcf2621c9374a4eb418f8977f7986
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220705"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61000264"
 ---
 # <a name="delete-educationsubmissionresource"></a>Удаление educationSubmissionResource
 
@@ -36,7 +36,7 @@ DELETE /education/classes/{class-id}/assignments/{assignment-id}/submissions/{su
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не поставляем тело запроса для этого метода.
@@ -72,6 +72,10 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a85
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-educationsubmissionresource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-educationsubmissionresource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

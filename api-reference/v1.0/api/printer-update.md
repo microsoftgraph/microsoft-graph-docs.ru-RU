@@ -5,12 +5,12 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: b1349a55997dcad5305da0db15cf4fd59d0a16eb
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 4d71ae03fba16d2e48314121a3741b80a135dd6e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60942816"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983967"
 ---
 # <a name="update-printer"></a>Обновление принтера
 Пространство имен: microsoft.graph
@@ -60,7 +60,7 @@ PATCH /print/printers/{printerId}
 |:-------------|:------------|:------------|
 |defaults|[printerDefaults](../resources/printerdefaults.md)|Параметры печати принтера по умолчанию.|
 |расположение|[printerLocation](../resources/printerlocation.md)|Физическое и/или организационное расположение принтера.|
-|displayName|String|Имя принтера.|
+|displayName|Строка|Имя принтера.|
 
 ### <a name="application-permissions-and-json-payload"></a>Разрешения приложения и полезной нагрузки JSON
 В теле запроса укажи значения [](../resources/printer.md) для соответствующих полей принтера, которые должны быть обновлены. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились. 
@@ -75,7 +75,7 @@ PATCH /print/printers/{printerId}
 |manufacturer|String|Производитель принтера.|
 |model|String|Имя модели принтера.|
 |status|[printerStatus](../resources/printerstatus.md)|Состояние обработки принтера, включая ошибки.|
-|isAcceptingJobs|Логический|Принимает ли принтер новые задания печати.|
+|isAcceptingJobs|Boolean|Принимает ли принтер новые задания печати.|
 
 ### <a name="application-permissions-and-ipp-payload"></a>Разрешения приложений и полезной нагрузки IPP
 
@@ -131,6 +131,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-printer-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-printer-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

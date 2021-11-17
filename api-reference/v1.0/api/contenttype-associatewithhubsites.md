@@ -5,12 +5,12 @@ description: Связывать тип контента со списком са
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: d092512fb0ccc669ca0ba9567f2e050eb01a3a45
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 1f55baa3c64195f66cb9ef2f9df4db0c63426131
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60729803"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60974179"
 ---
 # <a name="contenttype-associatewithhubsites"></a>contentType: associateWithHubSites
 
@@ -52,14 +52,14 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/associateWithHubSites
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса поставляем представление JSON параметров.
 
 В следующей таблице указаны параметры, которые можно использовать с этим действием.
 
 |Параметр|Тип|Описание|
 |-|-|-|
-|hubSiteUrls| Коллекция (строка) |Список канонических URL-адресов сайтов-концентраторов, на которых необходимо применять тип контента. Обязательно.|
+|hubSiteUrls| Коллекция (строка) |Список канонических URL-адресов сайтов-концентраторов, на которых необходимо применять тип контента. Обязательный.|
 |propagateToExistingLists| Boolean |Если типы контента будут применяться в существующих списках на сайтах концентратора; в противном случае он будет применяться только к вновь `true` созданным спискам.|
 
 ## <a name="response"></a>Ответ
@@ -102,6 +102,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/contenttype-associatewithhubsites-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/contenttype-associatewithhubsites-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

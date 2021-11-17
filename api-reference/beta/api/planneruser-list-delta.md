@@ -2,15 +2,15 @@
 title: 'Планировщик: дельта'
 description: Извлекает изменения для объектов, на которые подписан пользователь.
 author: TarkanSevilmis
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 7c730630f3fd655db29c93c699e8090d3046a4d4
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 5f12f6218dd6bb16704acc13e434fc7743836b6f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473495"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60989974"
 ---
 # <a name="planner-delta"></a>Планировщик: дельта
 
@@ -24,7 +24,7 @@ ms.locfileid: "51473495"
 
 Возвращаемая стоимость этого метода может содержать гетегенные типы объектов из Planner.
 
-Дополнительные сведения об отслеживании изменений в данных Microsoft Graph см. в дополнительных сведениях об использовании [delta-запроса](/graph/delta-query-overview)для отслеживания изменений в данных Microsoft Graph.
+Дополнительные сведения об отслеживании изменений в данных Microsoft Graph см. в веб-сайте [Use delta query to track changes in Microsoft Graph data.](/graph/delta-query-overview)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -51,7 +51,7 @@ GET /users/{id}/planner/all/delta
 
 | Имя           |Описание                |
 |:---------------|:--------------------------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -97,6 +97,10 @@ GET https://graph.microsoft.com/beta/me/planner/all/delta
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

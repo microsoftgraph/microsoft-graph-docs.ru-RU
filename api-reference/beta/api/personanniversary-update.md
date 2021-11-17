@@ -1,16 +1,16 @@
 ---
 title: Обновление personAnniversary
 description: Обновление свойств объекта personAnniversary.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 7506a62e45246de610ab31d6cd04fa042b0492c4
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: dd21c6ab3e252b17db51d7188667a6f2d94415fd
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037853"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60985703"
 ---
 # <a name="update-personanniversary"></a>Обновление personAnniversary
 
@@ -43,7 +43,7 @@ PATCH /users/{id | userPrincipalName}/profile/anniversaries/{id}
 
 | Имя           |Описание                  |
 |:---------------|:----------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.   |
+| Авторизация  | Bearer {token}. Обязательный.   |
 | Content-Type   | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,7 +54,7 @@ PATCH /users/{id | userPrincipalName}/profile/anniversaries/{id}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|Строка|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |date|Date|Содержит дату, связанную с юбилейным типом.|
 |вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |type|anniversaryType|Тип юбилея, который представляет дата. Возможные значения: `birthday`, `wedding`, `unknownFutureValue`.|
@@ -97,6 +97,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-personanniversary-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-personanniversary-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

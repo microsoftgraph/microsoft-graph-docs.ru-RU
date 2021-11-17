@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: SumitParikh
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 214d3ad6c92c0af0bcc7842f91bd1d228ae6bbd2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ccea3955733ca83fe330bd154a8314229839f751
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59015737"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61003512"
 ---
 # <a name="get-subscribedsku"></a>Вывод объекта SubscribedSku
 
@@ -40,7 +40,7 @@ GET /subscribedSkus/{id}
 
 | Имя       | Описание|
 |:-----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/v1.0/subscribedSkus/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-subscribedsku-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-subscribedsku-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

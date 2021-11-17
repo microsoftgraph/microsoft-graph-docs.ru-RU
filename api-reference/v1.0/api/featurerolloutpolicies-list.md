@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c80a38b5dece8ea820fffdfb581033ff886c70ea
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f6023fd367b3f194a7b2dbdbd5419f5340b06efd
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046115"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60984730"
 ---
 # <a name="list-featurerolloutpolicies"></a>Функция ListRolloutPolicies
 
@@ -44,7 +44,7 @@ GET /policies/featureRolloutPolicies
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token}. Обязательна |
+| Авторизация | Bearer {token}. Обязательно |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -86,12 +86,16 @@ GET https://graph.microsoft.com/v1.0/policies/featureRolloutPolicies
 [!INCLUDE [sample-code](../includes/snippets/java/get-featurerolloutpolicies-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-featurerolloutpolicies-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

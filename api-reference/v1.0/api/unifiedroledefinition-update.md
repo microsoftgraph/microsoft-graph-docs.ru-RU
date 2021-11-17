@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fc93caf0471c1f8c0e3d73b895a530b809656548
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bd7ceb47c3a1d95264405a3d72ef140742c63933
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59097943"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61008496"
 ---
 # <a name="update-unifiedroledefinition"></a>Обновление unifiedRoleDefinition
 
@@ -40,7 +40,7 @@ PATCH /roleManagement/directory/roleDefinitions/{id}
     
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 | Content-Type | application/json. Обязательный. |
     
 ## <a name="request-body"></a>Текст запроса
@@ -51,8 +51,8 @@ PATCH /roleManagement/directory/roleDefinitions/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|description|String| Описание определения роли. Только для чтения, **когда isBuiltIn** `true` является . |
-|displayName|Строка| Имя отображения для определения роли. Только для чтения, **когда isBuiltIn** `true` является . Обязательное.|
+|description|Строка| Описание определения роли. Только для чтения, **когда isBuiltIn** `true` является . |
+|displayName|Строка| Имя отображения для определения роли. Только для чтения, **когда isBuiltIn** `true` является . Обязательный.|
 |isEnabled|Boolean| Флаг, указывающий, включена ли роль для назначения. Если `false` роль недоступна для назначения. Только для чтения, **когда isBuiltIn** является правдой. |
 |resourceScopes|Коллекция String| Список областей и разрешений, к которые применяется определение роли. В настоящее `/` время поддерживается только. Только для чтения, **когда isBuiltIn** является правдой. **НЕ ИСПОЛЬЗУЙТЕ. В ближайшее время это свойство будет обесценилось. Прикрепить область к назначению ролей.**|
 |rolePermissions|[коллекция unifiedRolePermission](../resources/unifiedrolepermission.md)| Список разрешений, включенных в роль. Только для чтения, **когда isBuiltIn** `true` является . Обязательный. |
@@ -109,6 +109,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-unifiedroledefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-unifiedroledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

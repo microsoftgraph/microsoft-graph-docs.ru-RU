@@ -1,16 +1,16 @@
 ---
 title: Создание открытого расширения
 description: Создание открытого расширения (объект openTypeExtension) и добавление настраиваемого свойства
-localization_priority: Normal
+ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 616aab701eab50bfc716b3a27bc98b0b9862ae2d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 82e056a98825c28e66f129f37061508715e3b5c4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050096"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60986034"
 ---
 # <a name="create-open-extension"></a>Создание открытого расширения
 
@@ -83,7 +83,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks/{id}/extensions
 POST /users/{id|userPrincipalName}/todo/lists/{id}/extensions
 ```
 
->**Примечание.** В этом синтаксисе показаны некоторые распространенные способы определения экземпляра ресурса, чье расширение нужно создать. Все другие варианты синтаксиса, позволяющие определить эти экземпляры ресурса, поддерживают создание открытых расширений этих экземпляров подобным образом.
+>**Примечание.** В этом синтаксисе показаны некоторые распространенные способы определения экземпляра ресурса, чье расширение нужно удалить. Все другие варианты синтаксиса, позволяющие определить эти экземпляры ресурса, поддерживают удаление открытых расширений этих экземпляров подобным образом.
 
 В разделе [Текст запроса](#request-body) показано, как включить _расширение_ в текст запроса.
 
@@ -97,7 +97,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{id}/extensions
 
 | Имя       | Значение |
 |:---------------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -117,8 +117,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{id}/extensions
 
 В зависимости от операции можно использовать код ответа `201 Created` или `202 Accepted`.
 
-При создании расширения с использованием такой же операции, как для создания экземпляра ресурса, операция возвращает такой же код ответа, что и при создании экземпляра ресурса без расширения.
-Изучите соответствующие статьи о создании экземпляров, перечисленные [выше](#create-an-extension-in-a-new-resource-instance).
+При создании расширения с использованием такой же операции, как для создания экземпляра ресурса, операция возвращает такой же код отклика, что и при создании экземпляра ресурса без расширения. Изучите соответствующие статьи о создании экземпляров, перечисленные [выше](#create-an-extension-in-a-new-resource-instance).
 
 ### <a name="response-body"></a>Текст отклика
 
@@ -185,6 +184,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -310,6 +313,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -381,6 +388,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-3-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -464,6 +475,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-4-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-4-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -540,6 +555,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-5-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-5-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

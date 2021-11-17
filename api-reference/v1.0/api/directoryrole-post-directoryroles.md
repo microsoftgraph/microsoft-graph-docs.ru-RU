@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a3704cd4a621891a263bacdcbf66b2e11cc8e17b
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 132046d8cdc3c61af7801f08a341339d78d9d878
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60288827"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60973949"
 ---
 # <a name="activate-directoryrole"></a>Активация directoryRole
 
@@ -25,7 +25,7 @@ ms.locfileid: "60288827"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | RoleManagement.ReadWrite.Directory |
+|Для приложений | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -83,6 +83,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-directoryrole-from-directoryroles-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-directoryrole-from-directoryroles-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

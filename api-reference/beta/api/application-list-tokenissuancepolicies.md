@@ -1,16 +1,16 @@
 ---
 title: Список присвоенных tokenIssuancePolicies
 description: Список tokenIssuancePolicies, которые назначены приложению.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: be0d2e7e113d676c97d03e45262d901a3482ba1a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e8eb152fc78d167ce744e980cdbd782381942168
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048115"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60990862"
 ---
 # <a name="list-assigned-tokenissuancepolicies"></a>Список присвоенных tokenIssuancePolicies
 
@@ -28,7 +28,7 @@ ms.locfileid: "52048115"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
+| Для приложений                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ GET /applications/{id}/tokenIssuancePolicies
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/applications/{id}/tokenIssuancePolicies
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-tokenissuancepolicies-on-application-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-tokenissuancepolicies-on-application-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

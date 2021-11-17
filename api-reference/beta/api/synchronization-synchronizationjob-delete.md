@@ -1,16 +1,16 @@
 ---
 title: Удаление синхронизацииJob
 description: Остановите задание синхронизации и удалите навсегда все связанное с ним состояние.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: d4b154cca11b46c53d6929ea9522a7ff36c3b908
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 41a170fe2fd1484208a27c00dbf5b342039a57ad
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50773580"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002014"
 ---
 # <a name="delete-synchronizationjob"></a>Удаление синхронизацииJob
 
@@ -39,7 +39,7 @@ DELETE /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 
 | Имя           | Тип    | Описание|
 |:---------------|:--------|:-----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -76,6 +76,10 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/j
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-synchronizationjob-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-synchronizationjob-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

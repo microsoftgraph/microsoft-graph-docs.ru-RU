@@ -1,16 +1,16 @@
 ---
 title: Обновление conditionalAccessPolicy
 description: Обновление свойств объекта conditionalAccessPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 92c11d7577656b3cea62bf627209f2cb5c9aa351
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 8e01e9dfadc1babc022d0a258c71980d29ee09ff
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437611"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60975559"
 ---
 # <a name="update-conditionalaccesspolicy"></a>Обновление conditionalAccessPolicy
 
@@ -28,10 +28,10 @@ ms.locfileid: "50437611"
 |:--------------------------------------|:---------------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All, Policy.ReadWrite.ConditionalAccess и Application.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess и Application.Read.All |
+|Для приложений                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess и Application.Read.All |
 
 > [!NOTE]
-> Этот API имеет [известные проблемы, связанные](/graph/known-issues#permissions) с разрешениями.
+> Этот API имеет [известные проблемы, связанные](/graph/known-issues##conditional-access-policy) с разрешениями.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ PATCH /identity/conditionalAccess/policies/{id}
 
 | Имя          | Описание      |
 |:--------------|:-----------------|
-| Авторизация | Bearer {токен}. Обязательный.   |
+| Авторизация | Bearer {token}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -98,6 +98,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-conditionalaccesspolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-conditionalaccesspolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

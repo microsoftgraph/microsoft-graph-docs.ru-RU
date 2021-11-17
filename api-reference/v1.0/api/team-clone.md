@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: edb00bd4e26af33f5cc4e6fca7089de86857d231
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 5da091152a259a2987b2d99a9082a9f6795a60aa
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60288708"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60973690"
 ---
 # <a name="clone-a-team"></a>Клонировать команду
 
@@ -38,11 +38,11 @@ ms.locfileid: "60288708"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Team.Create, Group.ReadWrite.All,**Directory.ReadWrite.All** |
+|Делегированные (рабочая или учебная учетная запись)     | Team.Create, Group.ReadWrite.All **, Directory.ReadWrite.All** |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application                            | Team.Create, Group.ReadWrite.All,**Directory.ReadWrite.All** |
+|Для приложений                            | Team.Create, Group.ReadWrite.All **, Directory.ReadWrite.All** |
 
-> **Примечание.** Разрешения, помеченные **, не используются и не должны использоваться.
+> **Примечание**. Разрешения, помеченные **, не поддерживаются и не должны использоваться.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -107,6 +107,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/clone-team-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/clone-team-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,15 +2,15 @@
 title: Удаление домена
 description: Удаление домена из клиента.
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5f00627823d4a9cc571143c8e0e09ba297bd4902
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a5f7ef15bd4b682512ae2f3dbd9dd5f8b40d7430
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046540"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982049"
 ---
 # <a name="delete-domain"></a>Удаление домена
 
@@ -29,7 +29,7 @@ ms.locfileid: "52046540"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Domain.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Domain.ReadWrite.All |
 
@@ -45,7 +45,7 @@ DELETE /domains/{id}
 
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type  | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -82,6 +82,10 @@ DELETE https://graph.microsoft.com/beta/domains/contoso.com
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-domain-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-domain-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

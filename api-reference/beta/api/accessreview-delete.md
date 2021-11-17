@@ -1,16 +1,16 @@
 ---
 title: Удаление accessReview
 description: В функции обзоров доступа Azure AD удалите объект accessReview.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 8877c0778f9924995c75dd47b331608d4994a62f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 879b1ea3db3726b04f93599f975314c9a6aba5fa
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048507"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983093"
 ---
 # <a name="delete-accessreview"></a>Удаление accessReview
 
@@ -26,7 +26,7 @@ ms.locfileid: "52048507"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение                            | AccessReview.ReadWrite.Membership |
+|Для приложений                            | AccessReview.ReadWrite.Membership |
 
 Вызываемая должна также иметь разрешение ProgramControl.ReadWrite.All, чтобы удалить [программуControl](../resources/programcontrol.md).
 
@@ -72,6 +72,10 @@ DELETE https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-accessreview-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-accessreview-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

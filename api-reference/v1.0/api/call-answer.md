@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: bee067a5856b91eb2a387b14c7a9c3f973b943b9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c8a626231635b72ec532cebe16d90df484ad3a64
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59026695"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61007094"
 ---
 # <a name="call-answer"></a>вызов: ответ
 
@@ -29,7 +29,7 @@ ms.locfileid: "59026695"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                        |
 | Для приложений     | Calls.JoinGroupCalls.All или Calls.JoinGroupCallsasGuest.All |
 
-> **Примечание:** Для вызова, использующего средства массовой информации с использованием приложений, также требуется разрешение Calls.AccessMedia.All. Для расшифровки входящих уведомлений о вызове необходимо иметь по крайней мере одно из следующих `source` разрешений: Calls.AccessMedia.All, Calls.Initiate. Все, Calls.InitiateGroupCall.All, Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All. Это `source` информация вызываемой в уведомлении о входящих вызовах. Без по крайней мере одного из этих разрешений будет `source` оставаться зашифрованным.
+> **Примечание:** Для вызова, использующего средства массовой информации с использованием приложений, также требуется разрешение Calls.AccessMedia.All. Для расшифровки входящих уведомлений о вызове необходимо иметь по крайней мере одно из следующих `source` разрешений: Calls.AccessMedia.All, Calls.Initiate.All, Calls.InitiateGroupCall.All, Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All. Это `source` информация вызываемой в уведомлении о входящих вызовах. Без по крайней мере одного из этих разрешений будет `source` оставаться зашифрованным.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {"blockType": "ignored" } -->
@@ -40,7 +40,7 @@ POST /communications/calls/{id}/answer
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -101,6 +101,10 @@ Content-Length: 211
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-answer-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-answer-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -360,6 +364,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-answer-app-hosted-media-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-answer-app-hosted-media-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

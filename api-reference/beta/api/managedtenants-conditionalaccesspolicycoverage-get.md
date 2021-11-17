@@ -2,15 +2,15 @@
 title: Get conditionalAccessPolicyCoverage
 description: Ознакомьтесь с свойствами и отношениями объекта conditionalAccessPolicyCoverage.
 author: isaiahwilliams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 1c3dffaea58476a30c28d05ea3aceeba750741e5
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: cd06e544fd4439569a8e04a508b5dc123664df27
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440145"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002938"
 ---
 # <a name="get-conditionalaccesspolicycoverage"></a>Get conditionalAccessPolicyCoverage
 Пространство имен: microsoft.graph.managedTenants
@@ -44,7 +44,7 @@ GET /tenantRelationships/managedTenants/conditionalAccessPolicyCoverages/{condit
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/conditio
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-conditionalaccesspolicycoverage-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-conditionalaccesspolicycoverage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

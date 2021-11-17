@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 072e6f82a26fd234547207a86b17f335f48854b0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: edbd4162f1f3fe3b8c655110004cdee858e8e9e9
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59114801"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61001332"
 ---
 # <a name="update-authorizationpolicy"></a>Обновление авторизацииPolicy
 
@@ -40,7 +40,7 @@ PATCH /policies/authorizationPolicy
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -49,11 +49,11 @@ PATCH /policies/authorizationPolicy
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|allowedToSignUpEmailBasedSubscriptions|Boolean| Указывает, могут ли пользователи подписываться на подписки на основе электронной почты. |
-|allowedToUseSSPR|Boolean| Указывает, можно ли использовать Self-Serve сброса пароля пользователями клиента. |
+|allowedToSignUpEmailBasedSubscriptions|Логический| Указывает, могут ли пользователи подписываться на подписки на основе электронной почты. |
+|allowedToUseSSPR|Логический| Указывает, можно ли использовать Self-Serve сброса пароля пользователями клиента. |
 |allowEmailVerifiedUsersToJoinOrganization|Логический| Указывает, может ли пользователь присоединиться к клиенту по проверке электронной почты. |
 |allowInvitesFrom|allowInvitesFrom|Указывает, кто может приглашать внешних пользователей в организацию. Возможные значения: `none`, `adminsAndGuestInviters`, `adminsGuestInvitersAndAllMembers`, `everyone`.  `everyone` — это параметр по умолчанию для всех облачных сред, за исключением правительства США. Дополнительные значения см. в этой [таблице.](../resources/authorizationpolicy.md#allowinvitesfrom-values) |
-|blockMsolPowerShell|Boolean| Чтобы отключить использование MSOL PowerShell, установите это свойство `true` . Это также отключит доступ пользователей к конечной точке устаревшей службы, используемой MSOL PowerShell. Это не влияет на azure AD Подключение Microsoft Graph. |
+|blockMsolPowerShell|Логическое| Чтобы отключить использование MSOL PowerShell, установите это свойство `true` . Это также отключит доступ пользователей к конечной точке устаревшей службы, используемой MSOL PowerShell. Это не влияет на azure AD Подключение Microsoft Graph. |
 |defaultUserRolePermissions|[defaultUserRolePermissions](../resources/defaultuserrolepermissions.md)| Указывает определенные настраиваемые разрешения для роли пользователя по умолчанию. |
 |description|Строка| Описание этой политики.|
 |displayName|String| Отображение имени для этой политики. |
@@ -102,12 +102,16 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-guestuserlevel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-guestuserlevel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response"
@@ -153,12 +157,16 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-blockmsolpowershell-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-blockmsolpowershell-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response"
@@ -206,12 +214,16 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-applications-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-applications-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response"
@@ -257,12 +269,16 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-sspr-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-sspr-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response"
@@ -310,12 +326,16 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-disableuserconsent-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-disableuserconsent-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response"
@@ -363,6 +383,10 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-enableuserconsentlow-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-enableuserconsentlow-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

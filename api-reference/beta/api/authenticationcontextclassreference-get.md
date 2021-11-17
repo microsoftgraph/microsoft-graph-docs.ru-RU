@@ -1,16 +1,16 @@
 ---
 title: Проверка подлинностиContextClassReference
 description: Извлечение свойств и связей объекта authenticationContextClassReference.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: calebb
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 14862bc07762419ea2d12e715cfc6b19b31395e649cb1cb8b913baeb0e3fb217
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: b817a647154a81041af883c6284fe5ee27fb1d79
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57051523"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995125"
 ---
 # <a name="get-authenticationcontextclassreference"></a>Проверка подлинностиContextClassReference
 
@@ -28,7 +28,7 @@ ms.locfileid: "57051523"
 |:--------------------------------------|:----------------------------------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Policy.Read.ConditionalAccess |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение                            | Policy.Read.ConditionalAccess |
+|Для приложений                            | Policy.Read.ConditionalAccess |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ GET /identity/conditionalAccess/authenticationContextClassReferences/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationCo
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-authenticationcontextclassreference-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-authenticationcontextclassreference-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

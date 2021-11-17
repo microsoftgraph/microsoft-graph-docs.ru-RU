@@ -2,15 +2,15 @@
 title: Замените timeCard
 description: Обновление существующей записи timeCard.
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cbfb5f30991ebd8ae2c2208a1e366557c6eafc1c
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: b697bf8fd9dfca971c8eef975a0113652a2c9e80
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870453"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60988958"
 ---
 # <a name="replace-timecard"></a>Замените timeCard
 
@@ -26,9 +26,9 @@ ms.locfileid: "52870453"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Schedule.ReadWrite.All    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Schedule.ReadWrite.All*  |
+|Делегированные (рабочая или учебная учетная запись) | Schedule.ReadWrite.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Schedule.ReadWrite.All*  |
 
 >\***Важно:** При использовании разрешений приложения необходимо включить в запрос `MS-APP-ACTS-AS` заготвую.
 
@@ -44,11 +44,11 @@ PUT /teams/{teamId}/schedule/timecards/{timeCardID}
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 | MS-APP-ACTS-AS | ID пользователя, от имени которого действует приложение. Требуется при использовании области разрешений приложения. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса поставляем JSON-представление объекта [timeCard.](../resources/timecard.md)
 
@@ -131,6 +131,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/timecard-replace-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/timecard-replace-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

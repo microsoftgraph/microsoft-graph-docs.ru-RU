@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: a2c76b758baf8d71c3be447617212bc6744c8c5a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 963fb9c2c4ef7b22da2f04526f2c84c66b60af0f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59032610"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60984380"
 ---
 # <a name="list-excludes-collection-of-permissiongrantpolicy"></a>Список исключает коллекцию разрешенийGrantPolicy
 
@@ -43,7 +43,7 @@ GET /policies/permissionGrantPolicies/{id}/excludes
 
 | Имя           | Описание                |
 |:---------------|:---------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -86,12 +86,16 @@ GET https://graph.microsoft.com/v1.0/policies/permissionGrantPolicies/microsoft-
 [!INCLUDE [sample-code](../includes/snippets/java/permissiongrantpolicy-get-excludes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/permissiongrantpolicy-get-excludes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

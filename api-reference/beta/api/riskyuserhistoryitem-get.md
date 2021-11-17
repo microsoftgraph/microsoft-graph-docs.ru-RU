@@ -1,16 +1,16 @@
 ---
 title: Получить элемент истории riskyUser
 description: Получите элемент истории объекта riskyUser.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: cloudhandler
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6b1a88bbeaf133d2def5e95d2d8769ef1cfadc75
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 0f28e1aa1e8cf946b34328fce7d18bcd098b9160
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962243"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002750"
 ---
 # <a name="get-riskyuserhistoryitem"></a>Get riskyUserHistoryItem
 
@@ -20,16 +20,16 @@ ms.locfileid: "50962243"
 
 Получите [объект riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) для [riskyUser.](../resources/riskyuser.md)
 
->**Примечание:** Для использования API riskyUsers требуется лицензия Azure AD Premium P2.
+>**Примечание:** Использование API riskyUsers требует Azure AD Premium P2 лицензии.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All    |
+|Делегированные (рабочая или учебная учетная запись) | IdentityRiskyUser.Read.All, IdentityRiskyUser.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All |
+|Для приложений | IdentityRiskyUser.Read.All, IdentityRiskyUser.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ GET /identityProtection/riskyUsers/{userid}/history/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/riskyUsers/41a31b00-3b3b-42d9-8f1c-6d4f14e7
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-riskyuser-historyitem-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-riskyuser-historyitem-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

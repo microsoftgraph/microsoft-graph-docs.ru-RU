@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c3a7edf9b7be1921cd645b1dec9b896b02f1adc9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 99d540c13b08446d5791f517f70a6dc17060aa33
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59038617"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60979808"
 ---
 # <a name="accessreviewscheduledefinition-filterbycurrentuser"></a>accessReviewScheduleDefinition: filterByCurrentUser
 Пространство имен: microsoft.graph
@@ -45,7 +45,7 @@ GET /identityGovernance/accessReviews/definitions/filterByCurrentUser(on='review
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/accessreviewscheduledefinition-filterbycurrentuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/accessreviewscheduledefinition-filterbycurrentuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
