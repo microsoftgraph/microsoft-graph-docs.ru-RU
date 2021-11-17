@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 45f6e68a532df54af1a625878b7bcf9af909fdfd
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: bf531f9bc776ee6ffa00e681022a1984620806fa
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60938660"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018128"
 ---
 # <a name="update-personcertification"></a>Обновление personCertification
 Пространство имен: microsoft.graph
@@ -50,15 +50,15 @@ PATCH /users/{id | userPrincipalName}/profile/certifications/{id}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|certificationId  |String      |Справочный идентификатор для сертификации. |
-|description      |String      |Описание сертификации.                   |
-|displayName      |String      |Название сертификата.                         |
+|allowedAudiences|Строка|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|certificationId  |Строка      |Справочный идентификатор для сертификации. |
+|description      |Строка      |Описание сертификации.                   |
+|displayName      |Строка      |Название сертификата.                         |
 |endDate          |Date        |Дата истечения срока сертификации.            |
 |вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |issuedDate       |Дата        |Дата выдачи сертификата.         |
 |issuingAuthority |String      |Орган, который предоставил сертификацию.          |
-|issuingCompany   |String      |Орган, который предоставил сертификацию.          |
+|issuingCompany   |Строка      |Орган, который предоставил сертификацию.          |
 |startDate        |Date        |Дата, когда сертификация стала допустимой.       |
 |thumbnailUrl     |String      |URL-адрес, ссылающийся на эскиз сертификата.   |
 |webUrl           |String      |URL-адрес, ссылающийся на сертификацию.                  |
@@ -99,6 +99,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-personcertification-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-personcertification-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

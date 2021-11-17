@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 1f03a9b68c2fa2780899ee47697a404c5cdc38105fb7abda78ba469fba8d80e9
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 9cbf6c27b2977869f0456ba9391d6468d90f7296
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57314255"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "61021851"
 ---
 ```javascript
 
@@ -15,7 +15,8 @@ const options = {
 
 const client = Client.init(options);
 
-let getrecentnotebooks = await client.api('/me/onenote/notebooks/getrecentnotebooks(includePersonalNotebooks=true)')
+let getRecentNotebooks = await client.api('/me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=true)')
+    .version('beta')
     .get();
 
 ```

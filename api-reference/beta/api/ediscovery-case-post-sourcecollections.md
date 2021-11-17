@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: ba810925c220451a7ff416d5bf065a565e2f1f13
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: d03374fe1670622d8c827b1c8b66657d46477e8a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60925589"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020963"
 ---
 # <a name="create-sourcecollection"></a>Создание sourceCollection
 
@@ -57,7 +57,7 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|При указании коллекция будет охватывать всю службу для всей рабочей нагрузки. Возможные значения: `none` `allTenantMailboxes` , , , `allTenantSites` `allCaseCustodians` `allCaseNoncustodialDataSources` . **Примечание:** При создании коллекции исходных данных требуется один хранитель или указание данныхSourceScope.|
-|displayName|String|Имя отображения **sourceCollection**|
+|displayName|Строка|Имя отображения **sourceCollection**|
 |custodianSources|[коллекция microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md)|Источники хранителя, которые необходимо включить в этот поиск. URL-адрес можно получить с [сайта-хранителяSources,](../api/ediscovery-custodian-list-sitesources.md) [unifiedGroupSources](../api/ediscovery-custodian-list-unifiedgroupsources.md)или [userSources](../api/ediscovery-custodian-list-usersources.md) плюс ID источника. **Примечание:** При создании коллекции исходных данных требуется один хранитель или указать источник клиента. |
 
 ## <a name="response"></a>Отклик
@@ -102,6 +102,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-sourcecollection-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-sourcecollection-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

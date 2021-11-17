@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2b791d4636f78c000a95d00bfd2e3d864d566881
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: f23c601cd50fcb3c1223d494d9786e2147512869
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60934103"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61012004"
 ---
 # <a name="create-mailsearchfolder"></a>Создание mailSearchFolder
 
@@ -54,11 +54,11 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
-| @odata.type | String | Тип создаемой папки. Установите "microsoft.graph.mailSearchFolder". |
-| displayName | String | Отображаемое имя новой папки.|
+| @odata.type | Строка | Тип создаемой папки. Установите "microsoft.graph.mailSearchFolder". |
+| displayName | Строка | Отображаемое имя новой папки.|
 | includeNestedFolders | Логическое | Указывает, как должна проходить иерархия папок почтовых ящиков в поиске. `true` означает, что следует сделать глубокий поиск, чтобы включить детские папки в иерархию каждой папки, явно указанной в **sourceFolderIds**. `false`означает неглубокий поиск только каждой из папок, явно указанных в **sourceFolderIds.** |
 | sourceFolderIds | Коллекция String | Папки почтовых ящиков, которые необходимо добыть. |
-| filterQuery | String | Запрос OData для фильтрации сообщений. |
+| filterQuery | Строка | Запрос OData для фильтрации сообщений. |
 
 ## <a name="response"></a>Отклик
 
@@ -103,6 +103,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-mailsearchfolder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-mailsearchfolder-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

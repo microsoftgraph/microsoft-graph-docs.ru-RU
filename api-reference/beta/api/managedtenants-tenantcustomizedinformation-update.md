@@ -5,12 +5,12 @@ author: isaiahwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 94862481f6857e66e37f364bfe2434242b7714f0
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 4d9c21a79ff2e25052e37e146ebaf9a371b570b5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60936644"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61011843"
 ---
 # <a name="update-tenantcustomizedinformation"></a>Обновление tenantCustomizedInformation
 Пространство имен: microsoft.graph.managedTenants
@@ -51,7 +51,7 @@ PATCH /tenantRelationships/managedTenants/tenantsCustomizedInformation/{tenantCu
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор Azure Active Directory клиента для управляемого клиента.|
+|id|Строка|Идентификатор Azure Active Directory клиента для управляемого клиента.|
 |tenantId|String|Идентификатор Azure Active Directory клиента для [управляемого клиента.](../resources/managedtenants-tenant.md)|
 |contacts|[коллекция microsoft.graph.managedTenants.tenantContactInformation](../resources/managedtenants-tenantcontactinformation.md)|Коллекция контактов, связанных с управляемым клиентом.|
 |веб-сайт|String|Веб-сайт управляемого клиента.|
@@ -99,6 +99,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-tenantcustomizedinformation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-tenantcustomizedinformation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

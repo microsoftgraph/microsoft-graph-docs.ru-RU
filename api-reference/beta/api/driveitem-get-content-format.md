@@ -3,21 +3,22 @@ author: JeremyKelley
 description: С помощью этого API вы можете получить содержимое элемента в определенном формате.
 ms.date: 09/10/2017
 title: Преобразование в другие форматы
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: f6343e3b0ce7ba9eb114e6eeadc6040341fb5c47
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: eaa5dc018d74de4cea4a07ba9ae05f5d26adda0c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786820"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019899"
 ---
 # <a name="download-a-file-in-another-format"></a>Скачивание файла в другом формате
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [tls-1.2-required](../../includes/tls-1.2-required.md)]
 
 С помощью этого API вы можете получить содержимое элемента в определенном формате. Не все файлы можно преобразовать в любые форматы.
 
@@ -81,6 +82,10 @@ GET /drive/items/{item-id}/content?format={format}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/convert-item-content-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/convert-item-content-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

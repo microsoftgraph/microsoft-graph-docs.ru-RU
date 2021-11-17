@@ -3,15 +3,15 @@ author: rahmit
 description: Возвращает метаданные для сайтаPage в списке страниц сайта.
 ms.date: 03/15/2018
 title: Получить страницу на сайте
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c51354818d81cde7e408ea5407c655ce6d7913cf
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: b122f309dcc705582f02d0194b0cfb56f771762d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50475746"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61014089"
 ---
 # <a name="get-a-page-in-the-site-pages-list-of-a-site"></a>Получить страницу в списке страниц сайта
 
@@ -66,6 +66,10 @@ GET /sites/{site-id}/pages/{page-id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-page-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-page-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
