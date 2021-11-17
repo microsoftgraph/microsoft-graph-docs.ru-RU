@@ -2,15 +2,15 @@
 title: Удаление вкладки из чата
 description: 'Удалите (открепите) вкладку из указанного чата. '
 author: subray
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5168994cbafcb0f8bc51af0a4bfa6c17cb7cea6b
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: 1cea70fce6f99defdd657fc33a1064aa05b05200
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971351"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60978484"
 ---
 # <a name="delete-tab-from-chat"></a>Удаление вкладки из чата
 
@@ -29,7 +29,7 @@ ms.locfileid: "52971351"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | TeamsTab.Delete.Chat,*TeamsTab.ReadWrite.Chat,* TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
+|Для приложений | TeamsTab.Delete.Chat,*TeamsTab.ReadWrite.Chat,* TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
 
@@ -42,7 +42,7 @@ DELETE /chats/{chat-id}/tabs/{tab-id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -79,10 +79,14 @@ DELETE https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f29
 [!INCLUDE [sample-code](../includes/snippets/java/delete-tab-in-chat-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-tab-in-chat-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример ответа. Примечание: показанный здесь объект ответа может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

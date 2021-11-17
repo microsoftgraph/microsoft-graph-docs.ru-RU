@@ -2,15 +2,15 @@
 title: Список accessPackageResourceEnvironments
 description: Извлечение списка объектов accessPackageResourceEnvironment.
 author: hanki-microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4596ab46610f2e37c2103fe5aa334fb432386afc
-ms.sourcegitcommit: c5cc948c764b4daab861aadb390b827f658a9b7f
+ms.openlocfilehash: cf337fcdac06884115b6f7d8eeeff78c6d0b8516
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298128"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983120"
 ---
 # <a name="list-accesspackageresourceenvironments"></a>Список accessPackageResourceEnvironments
 Пространство имен: microsoft.graph
@@ -44,7 +44,7 @@ GET identityGovernance/entitlementManagement/accessPackageResourceEnvironments?$
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-accesspackageresourceenvironment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-accesspackageresourceenvironment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

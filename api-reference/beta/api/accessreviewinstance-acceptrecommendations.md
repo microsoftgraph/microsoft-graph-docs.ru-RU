@@ -1,16 +1,16 @@
 ---
 title: 'accessReviewInstance: acceptRecommendations'
 description: 'Позволяет принимать рекомендации по всем решениям, которые не были рассмотрены для экземпляра проверки доступа, для которого вызываемого пользователя является рецензентом. '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b955bc637c3f536ca5cb8a3e24ad65990296ab2e
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: 74b327cb61bb1a3d71bc8a07ddb5076269a44b62
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030756"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60992031"
 ---
 # <a name="accessreviewinstance-acceptrecommendations"></a>accessReviewInstance: acceptRecommendations
 
@@ -70,6 +70,10 @@ POST https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-6
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/acceptrecommendations-accessreviewinstance-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/acceptrecommendations-accessreviewinstance-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

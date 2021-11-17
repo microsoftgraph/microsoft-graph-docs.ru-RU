@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: madansr7
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 47291b07116baa10640c6224f39c183050f54cb7
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: b535999e529dcf8f67cdf9c68fe3f14163ed8beb
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696113"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61017526"
 ---
 # <a name="update-tenantappmanagementpolicy"></a>Обновление tenantAppManagementPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "60696113"
 | :------------------------------------- | :--------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.ApplicationConfiguration |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                             |
-| Application                            | Policy.ReadWrite.ApplicationConfiguration |
+| Для приложений                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,8 +51,8 @@ PATCH /policies/defaultAppManagementPolicy
 
 | Свойство                | Тип                                                                        | Описание |
 |:------------------------|:----------------------------------------------------------------------------|:----------------------------------------------------|
-| displayName                  | String                                                                   | Отображение имени политики по умолчанию. Унаследованный от [policyBase](../resources/policybase.md).                                |
-| description                  | String                                                                   | Описание политики по умолчанию. Унаследованный от [policyBase](../resources/policybase.md).                                |
+| displayName                  | Строка                                                                   | Отображение имени политики по умолчанию. Унаследованный от [policyBase](../resources/policybase.md).                                |
+| description                  | Строка                                                                   | Описание политики по умолчанию. Унаследованный от [policyBase](../resources/policybase.md).                                |
 | isEnabled                    | Boolean                                                                  | Обозначает, включена ли политика. Значение по умолчанию − ложь.                                    |
 | applicationRestrictions      | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Ограничения, которые применяются по умолчанию для всех объектов приложений в клиенте.               |
 | servicePrincipalRestrictions | [appManagementConfiguration](../resources/appManagementConfiguration.md) | Ограничения, которые применяются по умолчанию для всех основных объектов службы в клиенте. |
@@ -128,6 +128,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-tenantappmanagementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-tenantappmanagementpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

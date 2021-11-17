@@ -1,16 +1,16 @@
 ---
 title: Получение руководителя
-description: Получение руководителя пользователя. Возвращает пользователя или контакт, назначенный в качестве руководителя пользователя.
-localization_priority: Normal
+description: Получение руководителя пользователя. Возвращает пользователя или контакт, назначенный руководителем пользователя.
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 0b3d8d9826ae8ebd77ef8ede529a0f7327357be5
-ms.sourcegitcommit: 17f1c9cff2e59049b894db32435af02e4ae32a70
+ms.openlocfilehash: 17ad5c711798aa4877b44fee4b2c3d190d8774b8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51473705"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61033438"
 ---
 # <a name="list-manager"></a>Получение руководителя
 
@@ -61,7 +61,7 @@ GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 
 | Заголовок       | Значение|
 |:-----------|:------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | ConsistencyLevel | необязательный. Требуется, если запрос содержит параметр `$expand=manager($levels=max)`. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -104,6 +104,10 @@ GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager
 [!INCLUDE [sample-code](../includes/snippets/java/get-manager-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-manager-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>Отклик
@@ -135,6 +139,8 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_transitive_managers"
@@ -143,6 +149,12 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/me?$expand=manager($levels=max;$select=id,displayName)&$select=id,displayName&$count=true
 ConsistencyLevel: eventual
 ```
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-transitive-managers-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 

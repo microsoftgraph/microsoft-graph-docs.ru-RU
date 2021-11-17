@@ -1,24 +1,24 @@
 ---
-title: Get teamworkBot
-description: Чтение свойств и связей объекта teamworkBot.
+title: Получить командную работуBot
+description: Ознакомьтесь с свойствами и отношениями объекта teamworkBot.
 author: AkJo
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fd85a51901d8ed7c09b6b132a7604147e2df1d16
-ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
+ms.openlocfilehash: afe8f74e4dd71fd3160a244e6ae7c77315f985b8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49873159"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61017932"
 ---
-# <a name="get-teamworkbot"></a>Get teamworkBot
+# <a name="get-teamworkbot"></a>Получить командную работуBot
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите бота, связанного с определенным [определением](../resources/teamsappdefinition.md) [TeamsApp.](../resources/teamsapp.md)
+Получите бот, связанный с определенным [определением](../resources/teamsappdefinition.md) [TeamsApp.](../resources/teamsapp.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -40,19 +40,19 @@ GET /appCatalogs/teamsApps/{app-id}/appDefinitions/{app-definition-id}/bot
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает параметры `$select` [запроса OData](/graph/query-parameter) для настройки ответа.
+Этот метод поддерживает `$select` [параметры запросов OData](/graph/query-parameter) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [teamworkBot](../resources/teamworkbot.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и объект `200 OK` [teamworkBot](../resources/teamworkbot.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/e4c5c249-bb4b-419e-b7
 [!INCLUDE [sample-code](../includes/snippets/java/get-teamworkbot-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-teamworkbot-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -108,6 +112,6 @@ Content-Type: application/json
 
 - Чтобы получить боты, установленные в команде, см. пример 2 в [списке приложений в команде.](team-list-installedapps.md)
 - Чтобы получить боты, установленные в чате, см. пример 2 в [списке приложений в чате.](chat-list-installedapps.md)
-- Чтобы получить боты, установленные в личной области пользователя, см. пример 2 в списке [приложений, установленных для пользователя.](userteamwork-list-installedapps.md)
+- Чтобы получить боты, установленные в личной области пользователя, см. пример 2 в [приложениях List, установленных для пользователя.](userteamwork-list-installedapps.md)
 
 

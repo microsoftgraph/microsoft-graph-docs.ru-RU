@@ -1,16 +1,16 @@
 ---
 title: Get teamsAppIcon
-description: Извлечение значка, связанного с определенным определением приложения Teams.
-localization_priority: Normal
+description: Извлечение значка, связанного с определенным определением Teams приложения.
+ms.localizationpriority: medium
 author: jecha
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7e80b20f0802fbfa084c02b9103e7362be9ca159
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: 344ac7c54a9b341f9fa425e4a36794fcf78d5ab7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51921779"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018047"
 ---
 # <a name="get-teamsappicon"></a>Get teamsAppIcon
 
@@ -18,7 +18,7 @@ ms.locfileid: "51921779"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Извлечение значка приложения Teams,](../resources/teamsappicon.md) связанного с определенным [определением](../resources/teamsappdefinition.md) [приложения.](../resources/teamsapp.md)
+[Извлечение значка Teams приложения,](../resources/teamsappicon.md) связанного с определенным [определением](../resources/teamsappdefinition.md) [приложения.](../resources/teamsapp.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -32,14 +32,14 @@ ms.locfileid: "51921779"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-**Получить значок цвета определения приложения Teams**
+**Получите значок цвета определения Teams приложения**
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/colorIcon
 ```
 
-**Получить значок контура определения приложения Teams**
+**Получите значок контура определения Teams приложения**
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -54,7 +54,7 @@ GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/out
 
 | Заголовок           | Значение                      |
 | :--------------- | :------------------------- |
-| Авторизация    | Bearer {токен}. Обязательный.  |
+| Авторизация    | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -66,7 +66,7 @@ GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/out
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-color-icon-of-a-custom-teams-app"></a>Пример 1. Получить значок цвета *настраиваемого* приложения Teams
+### <a name="example-1-get-color-icon-of-a-custom-teams-app"></a>Пример 1. Получить значок цвета пользовательского *Teams* приложения
 
 #### <a name="request"></a>Запрос
 
@@ -97,13 +97,17 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 [!INCLUDE [sample-code](../includes/snippets/java/get-teamsappicon-coloricon-customapp-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-teamsappicon-coloricon-customapp-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
 
 В следующем примере показан ответ для организационного приложения. 
-> **Примечание.** Для доступа к [фактическому](teamworkhostedcontent-get.md) изображению значка настраиваемого приложения требуется задать маркер Microsoft Graph в запросе.
+> **Примечание.** Для доступа к [фактическому](teamworkhostedcontent-get.md) изображению значка настраиваемого приложения требуется Graph маркер Майкрософт для запроса.
 
 <!-- {
   "blockType": "response",
@@ -121,7 +125,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-outline-icon-of-a-custom-teams-app"></a>Пример 2. Получить значок контура *настраиваемого* приложения Teams
+### <a name="example-2-get-outline-icon-of-a-custom-teams-app"></a>Пример 2. Получить значок *контура* пользовательского Teams приложения
 
 #### <a name="request"></a>Запрос
 
@@ -152,13 +156,17 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 [!INCLUDE [sample-code](../includes/snippets/java/get-teamsappicon-outlineicon-customapp-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-teamsappicon-outlineicon-customapp-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
 
 В следующем примере показан ответ для организационного приложения. 
-> **Примечание.** Для доступа к [фактическому](teamworkhostedcontent-get.md) изображению значка настраиваемого приложения требуется задать маркер Microsoft Graph в запросе.
+> **Примечание.** Для доступа к [фактическому](teamworkhostedcontent-get.md) изображению значка настраиваемого приложения требуется Graph маркер Майкрософт для запроса.
 
 
 <!-- {
@@ -178,7 +186,7 @@ Content-type: application/json
 ```
 
 
-### <a name="example-3-get-color-icon-of-a-store-teams-app"></a>Пример 3. Получить значок цвета приложения *Store* Teams
+### <a name="example-3-get-color-icon-of-a-store-teams-app"></a>Пример 3. Получить значок цвета приложения *Teams* магазина
 
 #### <a name="request"></a>Запрос
 
@@ -209,6 +217,10 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/95de633a-083e-42f5-b4
 [!INCLUDE [sample-code](../includes/snippets/java/get-teamsappicon-outlineicon-publicapp-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-teamsappicon-outlineicon-publicapp-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -233,7 +245,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-get-outline-icon-of-a-store-teams-app"></a>Пример 4. Получить значок плана приложения *Store* Teams
+### <a name="example-4-get-outline-icon-of-a-store-teams-app"></a>Пример 4. Получить значок плана приложения *Teams* магазина
 
 #### <a name="request"></a>Запрос
 
@@ -262,6 +274,10 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/95de633a-083e-42f5-b4
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-teamsappicon-outlineicon-publicapp-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-teamsappicon-outlineicon-publicapp-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

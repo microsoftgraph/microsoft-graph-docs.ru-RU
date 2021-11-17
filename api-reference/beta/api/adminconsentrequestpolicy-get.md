@@ -2,15 +2,15 @@
 title: Получить adminConsentRequestPolicy
 description: Ознакомьтесь с свойствами и отношениями объекта adminConsentRequestPolicy.
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 78a9696a036b0cbd246dfaa03e5ba7f3c6e6a8cd
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: f29abaa8a7845983b85b6c53a2b1b9637e8ddc71
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751003"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60991555"
 ---
 # <a name="get-adminconsentrequestpolicy"></a>Получить adminConsentRequestPolicy
 Пространство имен: microsoft.graph
@@ -26,13 +26,13 @@ ms.locfileid: "52751003"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Policy.Read.All, Policy.ReadWrite.ConsentRequest, Directory.Read.All, Directory.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Policy.Read.All, Policy.ReadWrite.ConsentRequest, Directory.Read.All, Directory.ReadWrite.All|
+|Для приложений|Policy.Read.All, Policy.ReadWrite.ConsentRequest, Directory.Read.All, Directory.ReadWrite.All|
 
 При вызове от имени пользователя пользователю необходимо принадлежать к одной из следующих ролей каталога. Дополнительные информацию о роли каталогов см. в встроенной роли [Azure AD:](/azure/active-directory/roles/permissions-reference)
 + Глобальный администратор
 + Глобальный читатель
 + Администратор облачного приложения
-+ Администратор приложения
++ Администратор приложений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,7 +50,7 @@ GET /policies/adminConsentRequestPolicy
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/policies/adminConsentRequestPolicy
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-adminconsentrequestpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-adminconsentrequestpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

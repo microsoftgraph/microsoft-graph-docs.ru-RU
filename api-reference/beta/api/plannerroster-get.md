@@ -1,23 +1,23 @@
 ---
 title: Get plannerRoster
-description: Чтение свойств и связей объекта plannerRoster.
+description: Ознакомьтесь с свойствами и отношениями объекта plannerRoster.
 author: tarkansevilmis
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 49aa19c85cea3d103b6338a46ccd605c89759e95
-ms.sourcegitcommit: 42fdb068616222eb6b0813e93b33e830fc7eedc0
+ms.openlocfilehash: 2044e8847e3492cb9d0178e2a4b54784de28b073
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50271901"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61021656"
 ---
 # <a name="get-plannerroster"></a>Get plannerRoster
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Чтение свойств и связей объекта [plannerRoster.](../resources/plannerroster.md)
+Ознакомьтесь с свойствами и отношениями объекта [plannerRoster.](../resources/plannerroster.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -48,14 +48,14 @@ GET /planner/rosters/{plannerRosterId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` [plannerRoster](../resources/plannerroster.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [plannerRoster](../resources/plannerroster.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/planner/rosters/6519868f-868f-6519-8f86-196
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-plannerroster-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-plannerroster-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,15 +2,15 @@
 title: Список агрегированныхPolicyCompliances
 description: Получите список объектов aggregatedPolicyCompliance и их свойств.
 author: isaiahwilliams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 160292f38035390d7b5ed769bbea42847bba71b2
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: e29f727b7fc89687bde99f8fd2bb7be353891cdb
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53441555"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61014733"
 ---
 # <a name="list-aggregatedpolicycompliances"></a>Список агрегированныхPolicyCompliances
 Пространство имен: microsoft.graph.managedTenants
@@ -44,7 +44,7 @@ GET /tenantRelationships/managedTenants/aggregatedPolicyCompliances
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/aggregat
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-aggregatedpolicycompliance-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-aggregatedpolicycompliance-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 668bc5d2e7b11ed6b781f689ff0d4868de892b21
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c5f5928145634a351c490be741b9e92c8f7dfc78
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59090021"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61005927"
 ---
 # <a name="user-checkmemberobjects"></a>пользователь: checkMemberObjects
 
 Пространство имен: microsoft.graph
 
-Проверка членства в списке ролей группы или каталога для указанного объекта пользователя. Этот метод является транзитным.
+Проверка членства в списке ролей группы или каталога для указанного объекта пользователя. Это транзитивный метод.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -41,7 +41,7 @@ POST /users/{id}/checkMemberObjects
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -99,12 +99,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/user-checkmemberobjects-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-checkmemberobjects-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

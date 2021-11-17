@@ -5,12 +5,12 @@ author: sweta-thapliyal
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0f906baa5dc37c102cd8e72a66078f5d5ade4be9
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: 0e4eab929a1471047f2cf941708abed9b2e01b0c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60890654"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60994565"
 ---
 # <a name="chat-markchatreadforuser"></a>чат: markChatReadForUser
 Пространство имен: microsoft.graph
@@ -44,7 +44,7 @@ POST /chats/{chat-id}/markChatReadForUser
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса поставляем представление JSON параметров.
 
 В следующей таблице указаны параметры, которые можно использовать с этим действием.
@@ -94,6 +94,10 @@ Content-length: 106
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/chat-markchatreadforuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/chat-markchatreadforuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,15 +2,15 @@
 title: Список tenantCustomizedInformation
 description: Получите список объектов tenantCustomizedInformation и их свойств.
 author: isaiahwilliams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: f8cc09d4dc42aa64079c717490bd14bbcd1e64e9
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: fdcc00177845d2c1121fc30f99a162cb5db1a1cc
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53440642"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022111"
 ---
 # <a name="list-tenantcustomizedinformation"></a>Список tenantCustomizedInformation
 Пространство имен: microsoft.graph.managedTenants
@@ -44,7 +44,7 @@ GET /tenantRelationships/managedTenants/tenantsCustomizedInformation
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantsC
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-tenantcustomizedinformation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-tenantcustomizedinformation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

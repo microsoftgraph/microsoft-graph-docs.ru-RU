@@ -2,15 +2,15 @@
 author: JeremyKelley
 title: Обновление пакета
 description: Обновление пакета driveItems
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 7b6cd4001acd674d265748e24638c2bca5454967
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2fc61f3d0672940b29e31336f0db570a9f27d74c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047779"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61012675"
 ---
 # <a name="update-bundle"></a>Пакет обновления
 
@@ -48,8 +48,8 @@ PATCH /drive/items/{bundle-id}
 
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Авторизация | Носитель \{токен\}. Обязательный. |
-| if-match      | eTag. Необязательное. Если этот загон запроса включен, а предоставленный eTag не соответствует текущему eTag на койке, `412 Precondition Failed` возвращается ответ.
+| Authorization | Носитель \{токен\}. Обязательный. |
+| if-match      | eTag. Необязательный параметр. Если этот загон запроса включен, а предоставленный eTag не соответствует текущему eTag на койке, `412 Precondition Failed` возвращается ответ.
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -93,6 +93,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/rename-bundle-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/rename-bundle-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

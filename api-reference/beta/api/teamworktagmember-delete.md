@@ -2,15 +2,15 @@
 title: Удаление командной работыTagMember
 description: Удаление объекта teamworkTagMember.
 author: anniecolonna
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 84a97aaf87fa2f2bcf5b1ff16d30a3ac6383266f
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 92c32332d12ae89aba699698f36871a14566a9aa
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210006"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61017770"
 ---
 # <a name="delete-teamworktagmember"></a>Удаление командной работыTagMember
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "53210006"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Не поддерживается.|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|TeamworkTag.ReadWrite.All|
+|Для приложений|TeamworkTag.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,7 +41,7 @@ DELETE /teams/{team-Id}/tags/{teamworkTag-Id}/members/{teamworkTagMember-Id}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -77,6 +77,10 @@ DELETE https://graph.microsoft.com/beta/teams/53c53217-fe77-4383-bc5a-ed4937a1ae
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-teamworktagmember-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-teamworktagmember-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

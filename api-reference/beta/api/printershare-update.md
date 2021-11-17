@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 142f965fe68bfaa84c827ee047c257729c6e4107
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 9f1ef05b9fc3aed734e5f69a920fe63cdc82c9f1
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947247"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028041"
 ---
 # <a name="update-printershare"></a>Обновление принтера
 
@@ -53,7 +53,7 @@ PATCH /print/shares/{id}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |printer|microsoft.graph.printer|Принтер, с который связан этот принтер. Используйте синтаксис, как показано в следующем примере, чтобы обновить принтер, с которым связан этот `printer@odata.bind` принтер.|
-|displayName|String|Имя доли принтера, которую должны отображать клиенты печати.|
+|displayName|Строка|Имя доли принтера, которую должны отображать клиенты печати.|
 |allowAllUsers|Логическое| Если это так, всем пользователям и группам будет предоставлен доступ к этой совместной печати. Это замещеет списки разрешенных объектов, определенные свойствами allowedUsers и allowedGroups.|
 
 ## <a name="response"></a>Отклик
@@ -93,10 +93,14 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-printershare-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-printershare-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

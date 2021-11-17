@@ -1,16 +1,16 @@
 ---
 title: Удаление соглашения
 description: Удаление объекта соглашения.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 0e997d3b720ee56e756e067c2e181f909f7dd539
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6874bd47325afb2d62625dcabe8accfa07c75181
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048227"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60991402"
 ---
 # <a name="delete-agreement"></a>Удаление соглашения
 
@@ -76,6 +76,10 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-agreement-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-agreement-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

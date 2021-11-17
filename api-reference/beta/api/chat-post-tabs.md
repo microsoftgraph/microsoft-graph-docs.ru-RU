@@ -2,15 +2,15 @@
 title: Добавление вкладки в чат
 description: 'Добавляет (пин-коды) вкладку в указанный чат. '
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f422823b8646bd695c94640b15f456e3e372e0d5
-ms.sourcegitcommit: 99fdbd9a1806d64626423e1f39342dcde8a1eaf4
+ms.openlocfilehash: 8295e17a60f92805e2c796bd238fd1e9ed11bf80
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52971260"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61024029"
 ---
 # <a name="add-tab-to-chat"></a>Добавление вкладки в чат
 
@@ -29,7 +29,7 @@ ms.locfileid: "52971260"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | TeamsTab.Create, TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-| Приложение                            | TeamsTab.Create.Chat,*TeamsTab.ReadWrite.Chat,* TeamsTab.Create, TeamsTab.ReadWriteForChat.All, TeamsTab.ReadWrite.All |
+| Для приложений                            | TeamsTab.Create.Chat,*TeamsTab.ReadWrite.Chat,* TeamsTab.Create, TeamsTab.ReadWriteForChat.All, TeamsTab.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
 
@@ -42,7 +42,7 @@ POST /chats/{chat-id}/tabs
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -94,6 +94,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/add-tab-to-chat-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/add-tab-to-chat-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

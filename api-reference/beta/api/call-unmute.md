@@ -2,15 +2,15 @@
 title: 'вызов: не игнорировать'
 description: Разрешить приложению отметь себя.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c381d38143471d3f864b6c068dfd8eada2badfad
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 8ce2694be61de9dbc313d384411259a85b910dcc
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786224"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61030562"
 ---
 # <a name="call-unmute"></a>вызов: не игнорировать
 
@@ -32,7 +32,7 @@ ms.locfileid: "52786224"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
-| Приложение                            | Нет.                                        |
+| Для приложений                            | Нет.                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ POST /communications/calls/{id}/unmute
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ POST /communications/calls/{id}/unmute
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|clientContext|String|Клиентский контекст.|
+|clientContext|Строка|Клиентский контекст.|
 
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md) в тексте ответа.
@@ -92,6 +92,10 @@ Content-Length: 46
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-unmute-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-unmute-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

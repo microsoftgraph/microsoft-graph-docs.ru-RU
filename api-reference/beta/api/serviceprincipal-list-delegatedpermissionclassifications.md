@@ -1,16 +1,16 @@
 ---
 title: Список делегированной Коллекции servicePrincipal
 description: Извлечение списка классификаций, данных делегированию разрешений, выставленных директором службы API.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: applications
 author: psignoret
-ms.openlocfilehash: 980038094e551a1779b5b74b7d31884cfe38278d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 36e0f23e9701f7dfd6e86ffac5b51852add5f26c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053477"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026255"
 ---
 # <a name="list-delegatedpermissionclassifications-collection-of-serviceprincipal"></a>Список делегированной Коллекции servicePrincipal
 
@@ -28,7 +28,7 @@ ms.locfileid: "52053477"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Directory.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Application.Read.OwnedBy, Application.Read.All, Directory.Read.All |
+|Для приложений | Application.Read.OwnedBy, Application.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ GET /servicePrincipals/{id}/delegatedPermissionClassifications
 
 | Имя           | Описание                |
 |:---------------|:---------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/delegatedPermissionC
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-get-delegatedpermissionclassification-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-get-delegatedpermissionclassification-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

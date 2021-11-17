@@ -2,15 +2,15 @@
 title: Get serviceUpdateMessage
 description: Извлечение свойств и связей объекта serviceUpdateMessage.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 088985c53ec0887eb98e4619780143d8ac8805a8
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 51e71c321d366393419fb60f322bf52026b8020c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208798"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61010785"
 ---
 # <a name="get-serviceupdatemessage"></a>Get serviceUpdateMessage
 Пространство имен: microsoft.graph
@@ -28,7 +28,7 @@ ms.locfileid: "53208798"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|ServiceMessage.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|ServiceMessage.Read.All|
+|Для приложений|ServiceMessage.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,7 +46,7 @@ GET /admin/serviceAnnouncement/messages/{serviceUpdateMessageId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/MC172851
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-serviceupdatemessage-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-serviceupdatemessage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

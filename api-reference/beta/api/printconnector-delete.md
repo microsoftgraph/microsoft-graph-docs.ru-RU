@@ -2,15 +2,15 @@
 title: Удаление соединителя
 description: Удаление (незарегистрированного) соединитетеля.
 author: braedenp-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 99a8a4d0da5f3abb4beccfc1a196b8567f690303
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ab3009b558fa90addf673aef3ef5135bcb2749cb
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053617"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028110"
 ---
 # <a name="delete-connector"></a>Удаление соединителя
 
@@ -29,7 +29,7 @@ ms.locfileid: "52053617"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| PrintConnector.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается.|
+|Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +39,7 @@ DELETE /print/connectors/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -47,9 +47,9 @@ DELETE /print/connectors/{id}
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
-### <a name="error-conditions-and-messages"></a>Условия ошибки и сообщения
+### <a name="error-conditions-and-messages"></a>Условия ошибок и сообщения об ошибках
 
-|Сценарий|Method|Код|Сообщение|
+|Сценарий|Метод|Код|Сообщение|
 |--------|------|----|-------|
 |Пользователь пытается удалить соединителя, который имеет один или несколько принтеров зарегистрированы|DELETE|409|Перед удалением соединителя удаляйте связанные принтеры.|
 
@@ -79,6 +79,10 @@ DELETE https://graph.microsoft.com/beta/print/connectors/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-connector-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-connector-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

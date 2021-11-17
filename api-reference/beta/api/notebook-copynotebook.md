@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: cc472fc6dec08ffaa8be7890755ff0cf190ab40f
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 3007fcea753c8fb1cdf04adb8b0ff78ecfe4161b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60938736"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61007902"
 ---
 # <a name="notebook-copynotebook"></a>блокнот: copyNotebook
 
@@ -50,8 +50,8 @@ POST /sites/{id}/onenote/notebooks/{id}/copyNotebook
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|siteCollectionId|String|ID сайта SharePoint скопировать. Используйте только при копировании на SharePoint сайте.|
-|siteId|String|ID веб-SharePoint для копирования. Используйте только при копировании на SharePoint сайте.|
+|siteCollectionId|Строка|ID сайта SharePoint скопировать. Используйте только при копировании на SharePoint сайте.|
+|siteId|Строка|ID веб-SharePoint для копирования. Используйте только при копировании на SharePoint сайте.|
 |groupId|String|ID группы для копирования. Используйте только при копировании в Microsoft 365 группу.|
 |переименоватьAs|String|Имя копии. По умолчанию имя существующего элемента. |
 
@@ -92,6 +92,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/notebook-copynotebook-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/notebook-copynotebook-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

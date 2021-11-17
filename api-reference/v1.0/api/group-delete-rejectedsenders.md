@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9c38de52a9e23cb27f9c07ee6f58535de497031b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 851cd3aedf966335a87d2f3f2b9ec00768f89cfe
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59105316"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60976679"
 ---
 # <a name="remove-rejectedsender"></a>Удаление объекта rejectedSender
 
@@ -36,7 +36,7 @@ DELETE /groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/v1.0/gr
 
 | Заголовок         | Значение                      |
 |:---------------|:---------------------------|
-| Авторизация  | Bearer {токен}. Обязательный. 
+| Авторизация  | Bearer {token}. Обязательный. 
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -70,6 +70,10 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref?$id=htt
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/remove-rejectedsender-from-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/remove-rejectedsender-from-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

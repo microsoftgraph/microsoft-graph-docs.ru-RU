@@ -2,15 +2,15 @@
 title: Удаление объекта calendarGroup
 description: Удаление группы календарей, отличной от стандартной.
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4de731bf72ebd91ec39132c6bd371f2efb5468a2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 38eee9b7327720796ae505ad80ed4d4a51fac4ba
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047723"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022721"
 ---
 # <a name="delete-calendargroup"></a>Удаление объекта calendarGroup
 
@@ -43,7 +43,7 @@ DELETE /users/{id | userPrincipalName}/calendarGroups/{id}
 
 | Имя          | Тип   | Описание               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {токен}. Обязательный. |
+| Authorization | string | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -85,12 +85,16 @@ DELETE https://graph.microsoft.com/beta/me/calendarGroups/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/delete-calendargroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-calendargroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",

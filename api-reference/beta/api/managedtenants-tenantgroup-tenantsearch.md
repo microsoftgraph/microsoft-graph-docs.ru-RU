@@ -5,12 +5,12 @@ author: isaiahwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 1c3e1983364237bf85a3ad9b3fef717698eb5d64
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 72f5b5b8596972c11b00b48c10e7db4ea6c2c906
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60925197"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61034159"
 ---
 # <a name="tenantgroup-tenantsearch"></a>tenantGroup: tenantSearch
 Пространство имен: microsoft.graph.managedTenants
@@ -91,6 +91,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/tenantgroup-tenantsearch-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tenantgroup-tenantsearch-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

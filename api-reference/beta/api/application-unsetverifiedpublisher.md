@@ -1,16 +1,16 @@
 ---
 title: 'приложение: unsetVerifiedPublisher'
 description: Удаление проверенного издателя приложения.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jesakowi
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 8fd70a3c84889862244437973cc6e4d6712beee2
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: d92c94a139048bf5af21db4de7eb740473b83298
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53578835"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982812"
 ---
 # <a name="application-unsetverifiedpublisher"></a>приложение: unsetVerifiedPublisher
 
@@ -26,7 +26,7 @@ Unset the [verifiedPublisher](../resources/verifiedPublisher.md) previously set 
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-|Приложение | Не поддерживается |
+|Для приложений | Не поддерживается |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,7 @@ POST /applications/{id}/unsetVerifiedPublisher
 
 | Имя           | Описание                |
 |:---------------|:---------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -80,6 +80,10 @@ POST https://graph.microsoft.com/beta/applications/{id}/unsetVerifiedPublisher
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/application-unsetverifiedpublisher-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/application-unsetverifiedpublisher-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

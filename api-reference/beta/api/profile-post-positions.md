@@ -1,16 +1,16 @@
 ---
 title: Создание workPosition
 description: Используйте этот API для создания новой workPosition.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: d826309b69ae66aaef736f81b8864928a2fa28ad
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c4a7e6136f17c42fa04beedd8cff22c3e879561b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52036865"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61027914"
 ---
 # <a name="create-workposition"></a>Создание workPosition
 
@@ -43,7 +43,7 @@ POST /users/{id | userPrincipalName}/profile/positions
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный.|
+| Авторизация  | Bearer {token}. Обязательный.|
 | Content-Type   | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,12 +54,12 @@ POST /users/{id | userPrincipalName}/profile/positions
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|Строка|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |categories|Коллекция String|Категории, связанные с этой позицией пользователем.|
 |коллеги|[коллекция relatedPerson](../resources/relatedperson.md)|Коллеги, связанные с этой позицией.|
 |подробные|[positionDetail](../resources/positiondetail.md)|Содержит подробные сведения о позиции. |
 |вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
-|isCurrent|Логический|Обозначает, является ли позиция текущей.|
+|isCurrent|Логическое|Обозначает, является ли позиция текущей.|
 |manager|[relatedPerson](../resources/relatedperson.md)|Содержит сведения о менеджере пользователя в этой позиции.|
 |source|[personDataSource](../resources/persondatasource.md)|Где значения возникли, если синхронизированы с другой службы. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 
@@ -118,6 +118,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-workposition-from-profile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-workposition-from-profile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

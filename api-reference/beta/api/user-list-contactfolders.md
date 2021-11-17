@@ -1,16 +1,16 @@
 ---
 title: Список объектов contactFolder
 description: Получите все папки контактов в почтовом ящике подписанного пользователя.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c8b69f7e76802ffd092b0ef854e42f2815b08e9b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e6fb8a01972ab438e3cd40f0897cda23654f4106
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051727"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61013361"
 ---
 # <a name="list-contactfolders"></a>Список объектов contactFolder
 
@@ -40,7 +40,7 @@ GET /users/{id | userPrincipalName}/contactFolders
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type   | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -77,10 +77,14 @@ GET https://graph.microsoft.com/beta/me/contactFolders
 [!INCLUDE [sample-code](../includes/snippets/java/get-contactfolders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-contactfolders-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

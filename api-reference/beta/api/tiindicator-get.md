@@ -1,16 +1,16 @@
 ---
 title: Получить индикатор сведении об угрозах
 description: Извлечение свойств и связей объекта tiindicator.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 7ae7d1dc59493454a3fef55948bb712a3aa1c772
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b71a8b4605fdde10944b5fd1e8a1fa8653a1b1c5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52036403"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60989561"
 ---
 # <a name="get-threat-intelligence-indicator"></a>Получить индикатор сведении об угрозах
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/security/tiIndicators/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-tiindicator-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-tiindicator-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

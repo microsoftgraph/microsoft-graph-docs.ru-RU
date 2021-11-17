@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getTeamsDeviceUsageUserDetail'
 description: Получение сведений об использовании устройств Microsoft Teams по каждому пользователю.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: ceff341f4f75690263267fcc8924db19e0a19a16
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 8ecb66bc8c18dafdfb58745c0614d625dfc93f24
+ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053526"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61044738"
 ---
 # <a name="reportroot-getteamsdeviceusageuserdetail"></a>reportRoot: getTeamsDeviceUsageUserDetail
 
@@ -47,7 +47,7 @@ GET /reports/getTeamsDeviceUsageUserDetail(date=2017-09-01)
 
 | Параметр | Тип   | Описание                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. |
+| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. |
 | date      | Date   | Указывает дату, за которую вы хотите просмотреть пользователей, выполнивших какое-либо действие. Значение {date_value} указывается в формате ГГГГ-ММ-ДД. Так как этот отчет доступен только за последние 30 дней, значение {date_value} должно быть датой из этого диапазона. |
 
 > **Примечание.** В URL-адресе необходимо указать либо период, либо дату.
@@ -84,11 +84,11 @@ CSV-файл содержит столбцы со следующими заго�
 - Используемая ОС Chrome
 - Использованный Linux
 - Лицензировано
-- Report Period (отчетный период)
+- "Report Period" (Отчетный период).
 
 ### <a name="json"></a>JSON
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` **[объект teamsDeviceUsageUserDetail](../resources/teamsdeviceusageuserdetail.md)** в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` объект JSON в тексте ответа.
 
 Размер страницы по умолчанию для этого запроса — 2000 элементов.
 
@@ -168,7 +168,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageUserDetail(perio
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.teamsDeviceUsageUserDetail"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -177,7 +177,6 @@ Content-Type: application/json
 Content-Length: 374
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsDeviceUsageUserDetail)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

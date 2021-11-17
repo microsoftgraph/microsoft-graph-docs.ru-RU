@@ -1,16 +1,16 @@
 ---
 title: List riskDetection
 description: Извлечение свойств коллекции объекта **riskDetection.**
-localization_priority: Normal
+ms.localizationpriority: medium
 author: cloudhandler
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e7e0bb9eba36a3b6fdbd6ae03db718dc210d5424
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: a89134646de3f31bf5c8ebe5c1c1c77a3e118360
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50955545"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026448"
 ---
 # <a name="list-riskdetection"></a>List riskDetection
 
@@ -21,7 +21,7 @@ ms.locfileid: "50955545"
 Извлечение свойств коллекции объектов **riskDetection.**
 
 >[!NOTE]
->Чтобы использовать API обнаружения рисков, необходимо иметь лицензию Azure AD Premium P1 или P2.
+>Для использования API обнаружения рисков Azure AD Premium P1 или P2.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -31,7 +31,7 @@ ms.locfileid: "50955545"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskEvent.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | IdentityRiskEvent.Read.All |
+|Для приложений | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ GET /identityProtection/riskDetections
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/riskDetections
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-riskdetection-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-riskdetection-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -174,6 +178,10 @@ GET https://graph.microsoft.com/beta/identityProtection/riskDetections/c2b6c2b9-
 [!INCLUDE [sample-code](../includes/snippets/java/list-riskdetection-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-riskdetection-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -254,6 +262,10 @@ GET https://graph.microsoft.com/beta/identityProtection/riskDetections?$filter=r
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-filter-riskdetections-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-filter-riskdetections-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

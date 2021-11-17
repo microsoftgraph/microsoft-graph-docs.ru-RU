@@ -1,16 +1,16 @@
 ---
 title: Добавление вложения
-description: Добавление вложения при создании записи группы.
+description: Добавление вложения при создании групповой публикации.
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 35465025118912e316139cc4aa377270ee6d3e1c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8f79a7e73a167380d8f6bb00f26771677067cabd
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982026"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018079"
 ---
 # <a name="add-attachment"></a>Добавление вложения
 
@@ -18,9 +18,9 @@ ms.locfileid: "48982026"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавление [вложения](../resources/attachment.md) при создании записи группы. 
+Добавление [вложения](../resources/attachment.md) при создании групповой публикации. 
 
-Эта операция ограничит размер вложения, которое можно добавить в течение 4 МБ.
+Эта операция ограничивает размер вложения, который можно добавить до 4 МБ.
 
 Допустимые типы вложений:
 
@@ -40,7 +40,7 @@ ms.locfileid: "48982026"
 |Для приложений | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
-Включите вложение при создании [записи](../resources/post.md) в [conversationThread](../resources/conversationthread.md) группы. Указать родительскую [беседу](../resources/conversation.md) необязательно.
+Включай вложение при создании [столба](../resources/post.md) в [беседеThread](../resources/conversationthread.md) группы. Указание родительского [разговора необязательно.](../resources/conversation.md)
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -50,23 +50,23 @@ POST /groups/{id}/conversations/{id}/threads/{id}/reply
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите объект JSON, включающий параметр **POST** .
+В теле запроса укажи объект JSON, который включает параметр **post.**
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|post|[post](../resources/post.md)|Новая запись, с которой отправляются ответы, которые включают одно или несколько вложений в коллекцию [вложений](../resources/attachment.md) .|
+|post|[post](../resources/post.md)|Новая почта, с которой будет отвечать, включает одно или несколько вложений в коллекцию [вложений.](../resources/attachment.md)|
 
 ## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `202 Accepted`. Он не возвращает тело отклика.
 
 ## <a name="examples"></a>Примеры
-### <a name="example-1-include-a-file-attachment"></a>Пример 1: включение вложенного файла
+### <a name="example-1-include-a-file-attachment"></a>Пример 1. Вложение файла
 #### <a name="request"></a>Запрос
-Ниже приведен пример запроса, включающего файл в качестве вложения при создании записи.
+Вот пример запроса, который включает файл в качестве вложения при создании сообщения.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -108,6 +108,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-file-attachment-with-post-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-file-attachment-with-post-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>Отклик
@@ -120,10 +124,10 @@ Content-type: application/json
 HTTP/1.1 202 Accpted
 ```
 
-### <a name="example-2-include-an-item-attachment"></a>Пример 2: включение вложения элемента
+### <a name="example-2-include-an-item-attachment"></a>Пример 2. Включить вложение элемента
 
 #### <a name="request"></a>Запрос
-Ниже приведен пример запроса, включающего событие в виде вложения при создании записи.
+Вот пример запроса, который включает событие в качестве вложения при создании столба.
 
 <!-- {
   "blockType": "request",
@@ -175,11 +179,11 @@ Content-type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="example-3-include-a-reference-attachment"></a>Пример 3: включение вложения ссылки
+### <a name="example-3-include-a-reference-attachment"></a>Пример 3. Включаем вложение ссылки
 
 #### <a name="request"></a>Запрос
-Ниже приведен пример запроса, включающего вложение ссылки при создании записи.
-Вложение указывает на папку в OneDrive.
+Вот пример запроса, который включает ссылку вложения при создании сообщения.
+Вложение указывает на папку на OneDrive.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -223,6 +227,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-reference-attachment-with-post-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-reference-attachment-with-post-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
