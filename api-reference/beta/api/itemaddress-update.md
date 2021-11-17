@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 25833a5aa348b518f66637fc17acfe72bafb0ada
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 3738e14af6e6b99b4ea17a279c6f0a167efc8d9a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60945476"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61012052"
 ---
 # <a name="update-itemaddress"></a>Обновление itemAddress
 Пространство имен: microsoft.graph
@@ -52,7 +52,7 @@ PATCH /users/{id | userPrincipalName}/profile/addresses/{id}
 |:---|:---|:---|
 |allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |подробные|[physicalAddress](../resources/physicaladdress.md)|Сведения о самом адресе.|
-|displayName|String|Удобное имя, назначенное пользователю по этому адресу. |
+|displayName|Строка|Удобное имя, назначенное пользователю по этому адресу. |
 |geoCoordinates|[geoCoordinates](../resources/geocoordinates.md)|Геокоординирует адрес.|
 |вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |source|[personDataSource](../resources/persondatasource.md)|Где значения возникли, если синхронизированы с другой службы. Унаследовано от [itemFacet](../resources/itemfacet.md).|
@@ -93,6 +93,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-itemaddress-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-itemaddress-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

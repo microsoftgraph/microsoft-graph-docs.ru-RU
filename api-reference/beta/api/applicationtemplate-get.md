@@ -1,16 +1,16 @@
 ---
 title: Получение applicationTemplate
 description: Получение свойств и связей объекта applicationtemplate.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: luleonpla
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 4ae3d9f451785ef44f36df75667968bc271065dc
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: e89db4e63ee2db0eabd6392fc34e269f87d51a15
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50471595"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982756"
 ---
 # <a name="get-applicationtemplate"></a>Получение applicationTemplate
 
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/applicationTemplates/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-applicationtemplate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-applicationtemplate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

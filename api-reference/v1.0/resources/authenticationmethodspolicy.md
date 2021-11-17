@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 9abab0af31a67465db9989b42186759b12f746bb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 036f4dce3d3192005a9b99124965830a5b38194a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126963"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61015806"
 ---
 # <a name="authenticationmethodspolicy-resource-type"></a>тип ресурса authenticationMethodsPolicy
 
@@ -28,12 +28,13 @@ ms.locfileid: "59126963"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |description|Строка|Описание политики. Только для чтения.|
-|displayName|String|Имя политики. Только для чтения.|
-|id|String|Идентификатор политики. Наследуется от [сущности](../resources/entity.md).|
+|displayName|Строка|Имя политики. Только для чтения.|
+|id|Строка|Идентификатор политики. Наследуется от [сущности](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего обновления политики. Только для чтения.|
-|policyVersion|Строка|Версия используемой политики. Только для чтения.|
+|policyVersion|String|Версия используемой политики. Только для чтения.|
+|registrationEnforcement|[registrationEnforcement](../resources/registrationenforcement.md)|Принудительное выполнение регистрации во время регистрации. Это свойство можно использовать для напоминания пользователям о том, как настроить целевые методы проверки подлинности.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |authenticationMethodConfigurations|[коллекция authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md)|Представляет параметры для каждого метода проверки подлинности.|
@@ -56,5 +57,8 @@ ms.locfileid: "59126963"
   "description": "String",
   "lastModifiedDateTime": "String (timestamp)",
   "policyVersion": "String",
+  "registrationEnforcement": {
+    "@odata.type": "microsoft.graph.registrationEnforcement"
+  } 
 }
 ```

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 81efaa842c08ae2cec59218f5b9b6353e7b5afba
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: be09b0393016111e1962a3db16edb59f5a92a676
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60926436"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031968"
 ---
 # <a name="section-copytonotebook"></a>раздел: copyToNotebook
 
@@ -49,7 +49,7 @@ POST /sites/{id}/onenote/sections/{id}/copyToNotebook
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|siteCollectionId|String|ID сайта SharePoint скопировать. Используйте только при копировании на SharePoint сайте.|
+|siteCollectionId|Строка|ID сайта SharePoint скопировать. Используйте только при копировании на SharePoint сайте.|
 |siteId|String|ID веб-SharePoint для копирования. Используйте только при копировании на SharePoint сайте.|
 |groupId|String|ID группы для копирования. Используйте только при копировании в Microsoft 365 группу.|
 |id|String|Обязательный. ID записной книжки назначения. |
@@ -93,6 +93,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/section-copytonotebook-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/section-copytonotebook-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

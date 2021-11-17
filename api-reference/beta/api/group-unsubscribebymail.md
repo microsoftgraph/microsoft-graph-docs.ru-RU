@@ -1,16 +1,16 @@
 ---
 title: 'group: unsubscribeByMail'
 description: Вызов этого метода отключит текущего пользователя для получения уведомлений электронной почты для этой группы о новых сообщениях, событиях и файлах в этой группе.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9a40ba67f5628be6ef25cc4b484b9c84ad71ebb7
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: fce9d955d1bad957cd0568f287fb6d2dab878536
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681265"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61015154"
 ---
 # <a name="group-unsubscribebymail"></a>group: unsubscribeByMail
 
@@ -38,8 +38,8 @@ POST /groups/{id}/unsubscribeByMail
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
-| Prefer | return=minimal. Если заголовок минимального отклика включен в заголовок запроса, то в отклике об успешном выполнении возвращается код `204 No Content`. Необязательно.  | 
+| Авторизация  | Bearer {token}. Обязательный.  |
+| Prefer | return=minimal. Если заголовок минимального отклика включен в заголовок запроса, то в отклике об успешном выполнении возвращается код `204 No Content`. Необязательный параметр.  | 
 
 ## <a name="request-body"></a>Текст запроса
  Не указывайте текст запроса для этого метода. 
@@ -73,6 +73,10 @@ POST https://graph.microsoft.com/beta/groups/{id}/unsubscribeByMail
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-unsubscribebymail-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/group-unsubscribebymail-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

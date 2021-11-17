@@ -1,16 +1,16 @@
 ---
 title: Обновление userAccountInformation
 description: Обновление свойств объекта userAccountInformation.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: af2081afcf12d2cac33abf188ad6592e5e4720e1
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 68378704aff1d178ef0dd32102969b843ba8ac88
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049585"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60984884"
 ---
 # <a name="update-useraccountinformation"></a>Обновление useraccountinformation
 
@@ -43,8 +43,8 @@ PATCH /users/{id | userPrincipalName}/profile/account/{id}
 
 | Имя           |Описание                 |
 |:---------------|:---------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
-| Content-Type   | application/json. Обязательна |
+| Авторизация  | Bearer {token}. Обязательный.  |
+| Content-Type   | application/json. Обязательно |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -52,8 +52,8 @@ PATCH /users/{id | userPrincipalName}/profile/account/{id}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|countryCode|String|Содержит код страны с двумя символами, связанный с учетной записью пользователей.  |
+|allowedAudiences|Строка|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|countryCode|Строка|Содержит код страны с двумя символами, связанный с учетной записью пользователей.  |
 |вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |preferredLanguageTag|[localeInfo](../resources/localeinfo.md)|Содержит язык, который пользователь связал в качестве предпочтительного для учетной записи.   |
 
@@ -95,6 +95,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-useraccountinformation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-useraccountinformation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,15 +2,15 @@
 title: 'присутствие: clearPresence'
 description: Очистка сведений о присутствии для сеанса присутствия приложения пользователя.
 author: jsandoval-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 984c7667ceb2a28de189230952e5333f273cce24
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: af98bf701603acac022a0944c01937c2f0979641
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53208264"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60997365"
 ---
 # <a name="presence-clearpresence"></a>присутствие: clearPresence
 
@@ -29,7 +29,7 @@ ms.locfileid: "53208264"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Приложение                            | Presence.ReadWrite.All                      |
+| Для приложений                            | Presence.ReadWrite.All                      |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ POST /users/{userId}/presence/clearPresence
 ## <a name="request-headers"></a>Заголовки запроса
 | Имя          | Описание                 |
 | :------------ | :-------------------------- |
-| Авторизация | Bearer {токен}. Обязательный.   |
+| Авторизация | Bearer {token}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -49,7 +49,7 @@ POST /users/{userId}/presence/clearPresence
 
 | Параметр | Тип   | Описание                                   |
 | :-------- | :----- | :-------------------------------------------- |
-| sessionId | строка | ID сеанса присутствия приложения. |
+| sessionId | Строка | ID сеанса присутствия приложения. |
 
 
 > [!IMPORTANT]
@@ -95,6 +95,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/clear--presence-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/clear--presence-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

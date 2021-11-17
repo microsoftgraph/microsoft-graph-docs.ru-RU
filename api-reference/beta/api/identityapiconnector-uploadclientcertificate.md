@@ -1,16 +1,16 @@
 ---
 title: 'identityApiConnector: uploadClientCertificate'
-description: Загрузите ключ формата PKCS 12 (PFX) в конфигурацию проверки подлинности соединителями API.
-localization_priority: Normal
+description: Upload PKCS 12 format key (PFX) для конфигурации проверки подлинности соединителями API.
+ms.localizationpriority: medium
 author: nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ed5491867a08999ede0a7db12482b6ee4e0598c8
-ms.sourcegitcommit: 32c83957ee69f21a10cd5f759adb884ce4b41c52
+ms.openlocfilehash: ca764d5a8c5643b1c97eb93bb24611614a9cdc70
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51920094"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60998191"
 ---
 # <a name="identityapiconnector-uploadclientcertificate"></a>identityApiConnector: uploadClientCertificate
 
@@ -18,7 +18,7 @@ ms.locfileid: "51920094"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Загрузите ключ формата PKCS 12 (.pfx) в конфигурацию проверки подлинности соединителя API. Вход — это закодированное значение базового 64 содержимого сертификата PKCS 12. Этот метод возвращает [apiConnector](../resources/identityApiConnector.md).
+Upload PKCS 12 format key (.pfx) для конфигурации проверки подлинности соединителя API. Вход — это закодированное значение базового 64 содержимого сертификата PKCS 12. Этот метод возвращает [apiConnector](../resources/identityApiConnector.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,12 +28,12 @@ ms.locfileid: "51920094"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | APIConnectors.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.  |
-| Приложение                            | APIConnectors.ReadWrite.All |
+| Для приложений                            | APIConnectors.ReadWrite.All |
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока внешних пользователей удостоверений
+* Администратор внешних Flow удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +47,7 @@ POST /identity/apiconnectors/{id}/uploadClientCertificate
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -101,12 +101,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/identityapiconnector-uploadclientcertificate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/identityapiconnector-uploadclientcertificate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание:** `authenticationConfiguration` в ответе — тип [microsoft.graph.clientCertificateAuthentication,](../resources/clientcertificateauthentication.md) так как это представляет общедоступные сведения о загруженных сертификатах.
 

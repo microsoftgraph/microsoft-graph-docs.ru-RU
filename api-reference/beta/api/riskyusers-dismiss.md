@@ -2,16 +2,16 @@
 title: Увольнение riskyUser
 description: Отклонять риск объекта riskyUser.
 author: cloudhandler
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 ms.date: 03/20/2019
 doc_type: apiPageType
-ms.openlocfilehash: eaf5ce5c0ed05777fa4ccb05a05adf1ed215ac2a
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: eefaf0017736e5ea1122e1d83d31f9927ef39f76
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50960889"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002736"
 ---
 # <a name="riskyuser-dismiss"></a>riskyUser: увольнение
 
@@ -19,7 +19,7 @@ ms.locfileid: "50960889"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->**Примечание:** Для использования API riskyUsers требуется лицензия Azure AD Premium P2.
+>**Примечание:** Использование API riskyUsers требует Azure AD Premium P2 лицензии.
 
 Отклонять риск одного или более [объектов riskyUser.](../resources/riskyuser.md) Это действие задает целевому пользователю уровень риска ни к одному. Максимальное количество пользователей, отклоняться при одном вызове, — 60.
 
@@ -30,20 +30,19 @@ ms.locfileid: "50960889"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskyUser.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | IdentityRiskyUser.ReadWrite.All |
+|Для приложений | IdentityRiskyUser.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /riskyUsers/dismiss
-GET /identityProtection/riskyUsers/dismiss
 ```
 
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Укажите пользовательские интерфейсы, которые необходимо отклонять в теле запроса.
@@ -52,8 +51,8 @@ GET /identityProtection/riskyUsers/dismiss
 
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 ## <a name="examples"></a>Примеры
-### <a name="example-1-dismiss-risky-users"></a>Пример 1. Увольнение рискованных пользователей
-#### <a name="request"></a>Запрос
+<!--### Example 1: Dismiss risky users-->
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -88,10 +87,14 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/dismiss-riskyuser-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/dismiss-riskyuser-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-#### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -100,16 +103,17 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-dismiss-a-risky-user"></a>Пример 2. Увольнение рискованного пользователя
-#### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+<!--
+### Example 2: Dismiss a risky user
+#### Request
+Here is an example of the request.
 
-# <a name="http"></a>[HTTP](#tab/http)
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "dismiss_riskyuser_2"
 }-->
-```http
+<!--```http
 POST https://graph.microsoft.com/beta/identityProtection/riskyUsers/dismiss
 Content-Type: application/json
 
@@ -119,31 +123,31 @@ Content-Type: application/json
   ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
+# [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/dismiss-riskyuser-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/dismiss-riskyuser-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
+# [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/dismiss-riskyuser-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[Java](#tab/java)
+# [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/dismiss-riskyuser-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+#### Response
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
-```http
+<!--```http
 HTTP/1.1 204 No Content
 ```
 
@@ -158,5 +162,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
-
 

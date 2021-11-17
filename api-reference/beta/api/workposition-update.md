@@ -1,16 +1,16 @@
 ---
 title: Обновление workPosition
 description: Обновление свойств объекта workPosition в профиле пользователя.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1028690028c209df1b2dcb6e75dd731c2cca4d36
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e50f0ebf72548110262543502945f5299f8ae5e3
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52051685"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61029896"
 ---
 # <a name="update-workposition"></a>Обновление workPosition
 
@@ -43,7 +43,7 @@ PATCH /users/{id | userPrincipalName}/profile/positions/{id}
 
 | Имя           |Описание                  |
 |:---------------|:----------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.   |
+| Авторизация  | Bearer {token}. Обязательный.   |
 | Content-Type   | application/json. Обязательный. |
 
 
@@ -54,12 +54,12 @@ PATCH /users/{id | userPrincipalName}/profile/positions/{id}
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|Строка|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |categories|Коллекция String|Категории, связанные с этой позицией пользователем.|
 |коллеги|[коллекция relatedPerson](../resources/relatedperson.md)|Коллеги, связанные с этой позицией.|
 |подробные|[positionDetail](../resources/positiondetail.md)|Содержит подробные сведения о позиции. |
 |вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
-|isCurrent|Логический|Обозначает, является ли позиция текущей.|
+|isCurrent|Логическое|Обозначает, является ли позиция текущей.|
 |manager|[relatedPerson](../resources/relatedperson.md)|Содержит сведения о менеджере пользователя в этой позиции.|
 
 ## <a name="response"></a>Отклик
@@ -100,6 +100,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-workposition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-workposition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: jerrysai
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: e468c12d83ed1fbebdf23a546373270415bf807b
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: f1cea20e2d75704e970d6dc33d333f199684d30f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60561453"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61030463"
 ---
 # <a name="update-continuousaccessevaluationpolicy"></a>Обновление continuousAccessEvaluationPolicy
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "60561453"
 |:--------------------------------------|:---------------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All, Policy.ReadWrite.ConditionalAccess и Application.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Application                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess и Application.Read.All |
+|Для приложений                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess и Application.Read.All |
 
 > [!NOTE]
 > Этот API имеет [известные проблемы, связанные](/graph/known-issues#permissions) с разрешениями.  
@@ -52,7 +52,7 @@ PATCH /identity/continuousAccessEvaluationPolicy
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|перенос|Boolean| `true` чтобы указать, что параметры политики оценки непрерывного доступа должны быть или перенесены в политику условного доступа. |
+|перенос|Логический| `true` чтобы указать, что параметры политики оценки непрерывного доступа должны быть или перенесены в политику условного доступа. |
 
 ## <a name="response"></a>Отклик
 
@@ -91,6 +91,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-continuousaccessevaluationpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-continuousaccessevaluationpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
