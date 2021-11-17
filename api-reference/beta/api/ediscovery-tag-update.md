@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 4c8cad6bcb627b9586789e9180a995b577aaf7d6
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 78cd4ebca3a37718b8a7c9f97ea838b17d7c4c00
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60936826"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61005262"
 ---
 # <a name="update-tag"></a>Тег обновления
 
@@ -54,8 +54,8 @@ PATCH /compliance/ediscovery/cases/{caseId}/tags/{tagId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|description|String|Описание тега.|
-|displayName|String|Отображение имени тега.|
+|description|Строка|Описание тега.|
+|displayName|Строка|Отображение имени тега.|
 
 ## <a name="response"></a>Отклик
 
@@ -95,6 +95,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-tag-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-tag-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

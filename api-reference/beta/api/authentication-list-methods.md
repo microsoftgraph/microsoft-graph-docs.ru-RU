@@ -1,16 +1,16 @@
 ---
 title: Методы List
 description: Извлечение списка объектов метода проверки подлинности.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 05606726178d2c1d2a2bb308f941810363e357c6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6ddd8737fc8427d32e2ec4066de21a7e8beda0c1
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048003"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982420"
 ---
 # <a name="list-methods"></a>Методы List
 
@@ -18,7 +18,8 @@ ms.locfileid: "52048003"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение списка объектов метода [проверки подлинности.](../resources/authenticationmethod.md)
+Извлечение списка объектов метода [проверки подлинности.](../resources/authenticationmethod.md) Этот API возвращает только методы проверки подлинности, поддерживаемые в этой версии API. Обзор [API методов проверки подлинности Azure AD](../resources/authenticationmethods-overview.md) см. в списке поддерживаемых в настоящее время методов.
+
 
 ## <a name="permissions"></a>Разрешения
 
@@ -38,7 +39,7 @@ ms.locfileid: "52048003"
 |:---------------------------------------|:-------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Для приложений                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
 Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 * Глобальный администратор
@@ -63,7 +64,7 @@ GET /users/{id | userPrincipalName}/authentication/methods
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -102,6 +103,10 @@ GET https://graph.microsoft.com/beta/me/authentication/methods
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-methods-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-methods-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

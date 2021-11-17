@@ -1,16 +1,16 @@
 ---
 title: Обновление образовательной активности
 description: Обновление свойств объекта educationalActivity.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 7f59b6ef2b5bebb2369a3cbd44baaae6ca209b97
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1670ec1dc9d459486aff4d7cf9743316566a434d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52044489"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61005220"
 ---
 # <a name="update-educationalactivity"></a>Обновление образовательной активности
 
@@ -43,7 +43,7 @@ PATCH /users/{id | userPrincipalName}/profile/educationalActivities/{id}
 
 | Имя           |Описание                  |
 |:---------------|:----------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.   |
+| Авторизация  | Bearer {token}. Обязательный.   |
 | Content-Type   | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -52,13 +52,13 @@ PATCH /users/{id | userPrincipalName}/profile/educationalActivities/{id}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|completionMonthYear|Date|Месяц и год, когда пользователь закончил или завершил действие. |
-|endMonthYear|Date|Месяц и год, когда пользователь завершил ссылаемую образовательную деятельность.|
+|allowedAudiences|Строка|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|completionMonthYear|Дата|Месяц и год, когда пользователь закончил или завершил действие. |
+|endMonthYear|Дата|Месяц и год, когда пользователь завершил ссылаемую образовательную деятельность.|
 |вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |учреждение|[institutionData](../resources/institutiondata.md)|Содержит сведения об изучаемом учреждении. |
 |программа|[educationalActivityDetail](../resources/educationalactivitydetail.md)|Содержит расширенные сведения о программе или курсе.|
-|startMonthYear|Date|Месяц и год, когда пользователь начал со ссылкой на действие.|
+|startMonthYear|Дата|Месяц и год, когда пользователь начал со ссылкой на действие.|
 
 ## <a name="response"></a>Отклик
 
@@ -110,6 +110,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationalactivity-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-educationalactivity-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: jsandoval-msft
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: a132bc090bedbb117ea51a20ea85341fd345d481
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 300ad978a9332d030184ee83bcfa85e5a9d7d339
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59085261"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60984023"
 ---
 # <a name="presence-clearpresence"></a>присутствие: clearPresence
 
@@ -38,7 +38,7 @@ POST /users/{userId}/presence/clearPresence
 ## <a name="request-headers"></a>Заголовки запроса
 | Имя          | Описание                 |
 | :------------ | :-------------------------- |
-| Авторизация | Bearer {токен}. Обязательный.   |
+| Авторизация | Bearer {token}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -47,7 +47,7 @@ POST /users/{userId}/presence/clearPresence
 
 | Параметр | Тип   | Описание                                   |
 | :-------- | :----- | :-------------------------------------------- |
-| sessionId | string | ID сеанса присутствия приложения. |
+| sessionId | Строка | ID сеанса присутствия приложения. |
 
 
 > [!IMPORTANT]
@@ -55,7 +55,7 @@ POST /users/{userId}/presence/clearPresence
 > Предоставление ID приложения, как `sessionId` и в запросе.
 
 ## <a name="response"></a>Отклик
-При успешном выполнении этот метод возвращает код отклика `200 OK`.
+В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
 
 Если сеанс присутствия не существует, этот метод возвращает код `404 NotFound` ответа.
 
@@ -93,6 +93,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/clear--presence-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/clear--presence-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

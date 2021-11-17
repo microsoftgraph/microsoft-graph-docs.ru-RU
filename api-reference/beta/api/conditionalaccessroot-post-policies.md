@@ -1,16 +1,16 @@
 ---
 title: Создание conditionalAccessPolicy
 description: Создайте новый conditionalAccessPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4c9973fa4a51a8fa99dddbf63b35fc3bbfc45537
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ff381f1008673e3216dab801cc4347f07596ab69
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50947352"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61005812"
 ---
 # <a name="create-conditionalaccesspolicy"></a>Создание conditionalAccessPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "50947352"
 |:--------------------------------------|:---------------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All, Policy.ReadWrite.ConditionalAccess и Application.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Application                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess и Application.Read.All |
+|Для приложений                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess и Application.Read.All |
 
 > [!NOTE]
 > Этот API имеет [известные проблемы, связанные](/graph/known-issues#permissions) с разрешениями.
@@ -45,7 +45,7 @@ POST /identity/conditionalAccess/policies
 
 | Имя          | Описание      |
 |:--------------|:-----------------|
-| Авторизация | Bearer {токен}. Обязательный.   |
+| Авторизация | Bearer {token}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -63,7 +63,7 @@ POST /identity/conditionalAccess/policies
 ### <a name="example-1-require-mfa-to-access-exchange-online-outside-of-trusted-locations"></a>Пример 1. Требовать от MFA доступа к Exchange Online за пределами надежных местоположений
 
 #### <a name="request"></a>Запрос
-В следующем примере показан распространенный запрос на требование многофакторной проверки подлинности для доступа к Exchange Online от современных клиентов проверки подлинности за пределами надежных мест для определенной группы.
+В следующем примере показан распространенный запрос на требование многофакторной проверки подлинности для доступа к Exchange Online клиентов современной проверки подлинности за пределами надежных мест для определенной группы.
 
 >**Примечание:** Перед использованием этой операции необходимо настроить доверенные расположения.
 
@@ -125,6 +125,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-conditionalaccesspolicy-from-conditionalaccessroot-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-conditionalaccesspolicy-from-conditionalaccessroot-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -257,6 +261,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-conditionalaccesspolicy-from-conditionalaccessroot-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-conditionalaccesspolicy-from-conditionalaccessroot-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -461,6 +469,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-conditionalaccesspolicy-from-conditionalaccessroot-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-conditionalaccesspolicy-from-conditionalaccessroot-3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -587,12 +599,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-require-mfa-to-exchange-online-from-non-complaint-devices"></a>Пример 4. Требовать от MFA exchange Online с устройств без жалоб
+### <a name="example-4-require-mfa-to-exchange-online-from-non-complaint-devices"></a>Пример 4. Требовать от MFA Exchange Online устройств без жалоб
 
 >**Примечание:** Мы отстраняем состояние **deviceStates,** и оно может быть удалено в будущем. В будущем используйте **условие устройств.**
 
 #### <a name="request"></a>Запрос
-В следующем примере показан запрос на требование MFA к Exchange Online с устройств без жалоб.
+В следующем примере показан запрос на требование обязать MFA Exchange Online с устройств без жалоб.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -648,6 +660,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-conditionalaccesspolicy-from-conditionalaccessroot-4-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-conditionalaccesspolicy-from-conditionalaccessroot-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

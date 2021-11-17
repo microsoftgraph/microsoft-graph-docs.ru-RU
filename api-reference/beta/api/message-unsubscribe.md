@@ -1,34 +1,34 @@
 ---
-title: 'message: unsubscribe'
-description: Отправка запроса электронной почты от имени во включенного пользователя, чтобы отписаться от списка рассылки электронной почты. Использует сведения в `List-Unsubscribe` заголке.
+title: 'сообщение: отписать'
+description: Отправка запроса электронной почты от имени подписанного пользователя для отписки из списка рассылки электронной почты. Использует сведения в `List-Unsubscribe` загонах.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7bf800fe385c75c6d472f9cee40f55ec81633640
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 59b9ebc2c2d21259fed7181165240a7cc5e82be3
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50131108"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61004752"
 ---
-# <a name="message-unsubscribe"></a>message: unsubscribe
+# <a name="message-unsubscribe"></a>сообщение: отписать
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отправка запроса электронной почты от имени во включенного пользователя, чтобы отписаться от списка рассылки электронной почты. Использует сведения в `List-Unsubscribe` заголке.
+Отправка запроса электронной почты от имени подписанного пользователя для отписки из списка рассылки электронной почты. Использует сведения в `List-Unsubscribe` загонах.
 
-Отправителю сообщений удобно использовать списки рассылки, включив для получателей возможность отказаться от них. Это можно сделать, указав заголок в каждом сообщении после `List-Unsubscribe` [RFC-2369.](https://www.faqs.org/rfcs/rfc2369.html)
+Отправители сообщений могут использовать списки рассылки удобным способом, включив возможность отказа получателей. Они могут это сделать, указав заготку в каждом сообщении `List-Unsubscribe` после [RFC-2369.](https://www.faqs.org/rfcs/rfc2369.html)
 
-**Примечание** В частности,  чтобы действие отписки работало, отправитель должен указать информацию, основанную на URL-адресе, а не `mailto:` отписаться от нее.
+**Примечание** В частности,  чтобы действие отписки работало, отправитель должен указать, а не отписать данные на основе `mailto:` URL-адресов.
 
-При установке этого загона свойству **unsubscribeEnabled** экземпляра сообщения будет задано свойство [](../resources/message.md) `true` **unsubscribeData, а свойству unsubscribeData** для данных загона.
+Настройка этого загона также задает свойство **unsubscribeEnabled** экземпляра сообщения и свойство [](../resources/message.md) `true` **unsubscribeData** к данным загона.
 
-Если свойство **unsubscribeEnabled** сообщения, вы можете использовать действие отписаться, чтобы отписать пользователя от похожих будущих сообщений, управляемых отправителям `true` сообщений. 
+Если свойство **unsubscribeEnabled** сообщения является, вы можете использовать действие отписки, чтобы отписать пользователя от аналогичных будущих сообщений, управляемых отправителями `true` сообщений. 
 
-Успешное **действие отписаться** перемещает сообщение в папку **"Удаленные".** Фактическое исключение пользователя из дальнейшего распространения почты управляется отправителями.
+Успешное **действие отписки** перемещает сообщение в папку **"Удаленные** элементы". Фактическое исключение пользователя из будущей рассылки почты управляется отправителям.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -47,7 +47,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/unsubscribe
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -83,6 +83,10 @@ POST https://graph.microsoft.com/beta/me/messages/{id}/unsubscribe
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/message-unsubscribe-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/message-unsubscribe-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

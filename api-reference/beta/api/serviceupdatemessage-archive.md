@@ -2,15 +2,15 @@
 title: 'serviceUpdateMessage: архив'
 description: Архивировать список сообщений об обновлении службы для подписанного пользователя.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6c9fca4df5507b55ce7c5b2b3b5434adfeb5f434
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 18c8c19b43a1bd5fae9ae09143ec69296f5432f8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53209115"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61010820"
 ---
 # <a name="serviceupdatemessage-archive"></a>serviceUpdateMessage: архив
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "53209115"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|ServiceMessageViewpoint.Write|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается|
+|Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,7 +41,7 @@ POST /admin/serviceAnnouncement/messages/archive
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,7 +51,7 @@ POST /admin/serviceAnnouncement/messages/archive
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|messageIds|Коллекция строк|Список ID-сообщений для архива.|
+|messageIds|Коллекция String|Список ID-сообщений для архива.|
 
 ## <a name="response"></a>Отклик
 
@@ -89,6 +89,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceupdatemessage-archive-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceupdatemessage-archive-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

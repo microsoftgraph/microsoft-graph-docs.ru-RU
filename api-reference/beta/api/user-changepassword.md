@@ -1,16 +1,16 @@
 ---
 title: 'пользователь: changePassword'
 description: Обновление собственного пароля.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 7787ad62106cd5404bb0d5075d3d48d0ec1d6371
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: b582edb0440beca6dfddd659cf3ee035654e1959
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53442836"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61009994"
 ---
 # <a name="user-changepassword"></a>пользователь: changePassword
 
@@ -38,7 +38,7 @@ POST /me/changePassword
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -46,8 +46,8 @@ POST /me/changePassword
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-| currentPassword | String | Текущий пароль.|
-| newPassword | String | Новый пароль.|
+| currentPassword | Строка | Текущий пароль.|
+| newPassword | Строка | Новый пароль.|
 
 ## <a name="response"></a>Отклик
 
@@ -87,6 +87,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-changepassword-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-changepassword-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

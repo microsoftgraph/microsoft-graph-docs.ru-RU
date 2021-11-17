@@ -1,16 +1,16 @@
 ---
 title: 'пользователь: checkMemberObjects'
 description: Проверьте членство в списке объектов группового, каталога или административных единиц для указанного объекта пользователя.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 82ba7a3ca85f940d15dc0e16542f3129d79c2bc0
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 5cd66f21ad678bdafdfbd93e1d5e52cd7b708e2a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053386"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61009967"
 ---
 # <a name="user-checkmemberobjects"></a>пользователь: checkMemberObjects
 
@@ -18,7 +18,7 @@ ms.locfileid: "52053386"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Проверьте членство в списке объектов группового, каталога или административных единиц для указанного объекта пользователя. Этот метод является транзитным.
+Проверьте членство в списке объектов группового, каталога или административных единиц для указанного объекта пользователя. Это транзитивный метод.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -43,7 +43,7 @@ POST /users/{id}/checkMemberObjects
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 | Content-Type  | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -99,6 +99,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-checkmemberobjects-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-checkmemberobjects-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
