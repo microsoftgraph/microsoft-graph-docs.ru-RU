@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 42c9400596fc7c25f5bbb0b45726d647d98ddfbd
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: ace9f5b09b5faefb73bc7601b80d4235c804dfc727944383c454911e05c482e0
+ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50960810"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "57051890"
 ---
 ```objc
 
