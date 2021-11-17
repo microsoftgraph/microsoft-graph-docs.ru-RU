@@ -1,16 +1,16 @@
 ---
 title: Удаление accessPackageAssignmentPolicy
 description: Удаление accessPackageAssignmentPolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: fa2ca4ac595beaf917a76c20d88d148ddf02516f
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 0407b37c21c5e2e8067c8f535f1d4427f6ead6c0
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50439753"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983554"
 ---
 # <a name="delete-accesspackageassignmentpolicy"></a>Удаление accessPackageAssignmentPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "50439753"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | EntitlementManagement.ReadWrite.All |
+| Для приложений                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,15 +42,15 @@ DELETE /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Носитель \{токен\}. Обязательно. |
+| Authorization | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа 204 Без контента. В тексте отклика не возвращается никаких данных.
+В случае успешной работы этот метод возвращает код ответа 204 Без контента. Метод не возвращает данные в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-accesspackageassignmentpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-accesspackageassignmentpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

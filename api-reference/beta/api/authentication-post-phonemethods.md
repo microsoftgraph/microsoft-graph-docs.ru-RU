@@ -1,16 +1,16 @@
 ---
 title: Создание phoneAuthenticationMethod
 description: Добавьте новый метод проверки подлинности телефона.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 6b2490cb0d2c7e625c83b1e3d5075e8f6a815e69
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: bccec3710dbdc378f15415a17a4744c1e80c1860
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047996"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982372"
 ---
 # <a name="create-phoneauthenticationmethod"></a>Создание phoneAuthenticationMethod
 
@@ -22,7 +22,7 @@ ms.locfileid: "52047996"
 
 Добавление номера телефона делает его доступным для использования в многофакторной проверке подлинности Azure (MFA) и сбросе пароля самообслуживления (SSPR), если включена.
 
-Кроме того, если политика позволяет пользователю использовать SMS входа и добавляется номер, система попытается зарегистрировать номер для использования в `mobile` этой системе.
+Кроме того, если политики позволяют пользователю использовать вход в SMS и добавляется номер, система попытается зарегистрировать номер для использования `mobile` в этой системе.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -32,7 +32,7 @@ ms.locfileid: "52047996"
 |:---------------------------------------|:-------------------------|:-----------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. | Не поддерживается. |
-| Приложение                            | Неприменимо. | UserAuthenticationMethod.ReadWrite.All |
+| Для приложений                            | Неприменимо. | UserAuthenticationMethod.ReadWrite.All |
 
 Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
@@ -53,7 +53,7 @@ POST /users/{id | userPrincipalName}/authentication/phoneMethods
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -62,8 +62,8 @@ POST /users/{id | userPrincipalName}/authentication/phoneMethods
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|phoneNumber|String|Номер телефона для текста или вызова для проверки подлинности. Телефон номера используют формат "+ \<country code\> \<number\> \<extension\> x", с необязательным расширением. Например, допустимы +1 5555551234 или +1 5555551234x1233. При создании и обновлении номера отклоняется, если они не соответствуют требуемой форме.|
-|phoneType|String|Возможные значения: `mobile` , `alternateMobile` и `office` .|
+|phoneNumber|String|Номер телефона для текста или вызова для проверки подлинности. Телефон номера используют формат "+ \<country code\> \<number\> x \<extension\> ", с необязательным расширением. Например, допустимы +1 5555551234 или +1 555551234x1233. При создании и обновлении номера отклоняется, если они не соответствуют требуемой форме.|
+|phoneType|Строка|Возможные значения: `mobile` , `alternateMobile` и `office` .|
 
 ## <a name="response"></a>Отклик
 
@@ -104,6 +104,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-phoneauthenticationmethod-from-authentication-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-phoneauthenticationmethod-from-authentication-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

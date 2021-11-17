@@ -1,16 +1,16 @@
 ---
 title: Операция проверки подлинности
 description: Извлечение свойств и связей объекта операции.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4222931f4a3ee05f403291d5e762b67a9731a498
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 4f575d47c3f7c067fff5e9ea69473f1d7ba3434d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047961"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60994992"
 ---
 # <a name="get-authentication-operation"></a>Операция проверки подлинности
 
@@ -60,7 +60,7 @@ GET /users/{id | userPrincipalName}/authentication/operations/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -99,6 +99,10 @@ GET /users/{id | userPrincipalName}/authentication/operations/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-operation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-operation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

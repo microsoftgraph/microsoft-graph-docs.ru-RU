@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a639328630e0404b1514ce57df35780537cd5413
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: daae53437c2690572a6641ce5c60de58eb5fa43d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59049776"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61003498"
 ---
 # <a name="list-workforceintegrations"></a>Список рабочей силыИнтеграции
 
@@ -47,7 +47,7 @@ GET /teamwork/workforceIntegrations
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations
 [!INCLUDE [sample-code](../includes/snippets/java/get-workforceintegrations-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-workforceintegrations-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -97,7 +101,7 @@ GET https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

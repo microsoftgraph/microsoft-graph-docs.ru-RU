@@ -5,12 +5,12 @@ author: vishriv
 ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 30037475c00515f8fb6a0250d899582fef24a21b
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: a6a22f9e6825809efbbabeed2b966026d92657be
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940253"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60988398"
 ---
 # <a name="update-set"></a>Набор обновлений
 Пространство имен: microsoft.graph.termStore
@@ -52,7 +52,7 @@ PATCH sites/{site-id}/termStore/sets/{set-id}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |локализованные имена|[коллекция microsoft.graph.termStore.localizedName](../resources/termstore-localizedname.md)|Имя набора.|
-|description|String|Описание набора.|
+|description|Строка|Описание набора.|
 |properties|[коллекция microsoft.graph.keyValue](../resources/keyvalue.md)|Свойства набора.|
 
 
@@ -94,6 +94,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-set-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-set-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: isaiahwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: fa4da6279a18cbb8ecaa2767ed953e903dcb69ca
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 30cda4618023fc4258c439d1e3321346182a2421
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947289"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61034215"
 ---
 # <a name="create-tenanttag"></a>Создание tenantTag
 Пространство имен: microsoft.graph.managedTenants
@@ -51,8 +51,8 @@ POST /tenantRelationships/managedTenants/tenantTags
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Имя отображения тега клиента.|
-|description|String|Описание тега клиента.|
+|displayName|Строка|Имя отображения тега клиента.|
+|description|Строка|Описание тега клиента.|
 
 ## <a name="response"></a>Отклик
 
@@ -91,6 +91,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-tenanttag-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-tenanttag-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

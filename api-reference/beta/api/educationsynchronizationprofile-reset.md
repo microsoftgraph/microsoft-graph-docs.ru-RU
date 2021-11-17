@@ -2,15 +2,15 @@
 title: Сброс синхронизации на educationSynchronizationProfile
 description: Сброс синхронизации определенного профиля синхронизации школьных данных в клиенте.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 51a41991726ec9349f7f3f702973c8040031c39b
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 4ec0632122827783ef25e6145065c5faba675d27
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664736"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61003023"
 ---
 # <a name="reset-sync-on-an-educationsynchronizationprofile"></a>Сброс синхронизации на educationSynchronizationProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "52664736"
 |:-----------|:----------|
 | Делегированное (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
 |Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|EduAdministration.ReadWrite.All |
+|Для приложений|EduAdministration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ POST /education/synchronizationProfiles/{id}/reset
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный.  |
+| Authorization  | string  | Bearer {token}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -73,6 +73,10 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/res
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/post-educationsynchronizationprofile-reset-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-educationsynchronizationprofile-reset-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

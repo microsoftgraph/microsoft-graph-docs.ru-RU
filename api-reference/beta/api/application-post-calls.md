@@ -2,16 +2,18 @@
 title: Создание звонка
 description: Создайте новый вызов.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e9aa683f0cce2bc108f4d4429908a7fc87fb0cd1
-ms.sourcegitcommit: c6f7a931a8d83ac54f577b7bec08237fd17ce51a
+ms.openlocfilehash: b6f9fa8d57671e4704caa77cc9575ff425e12e75
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58490135"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983192"
 ---
+<!-- markdownlint-disable MD001 MD022 MD024 -->
+
 # <a name="create-call"></a>Создание звонка
 
 Пространство имен: microsoft.graph
@@ -28,7 +30,7 @@ ms.locfileid: "58490135"
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                                                                           |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                                                                           |
-| Приложение                            | Calls.JoinGroupCalls.Chat*, Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate. Все, Calls.InitiateGroupCalls.All |
+| Для приложений                            | Calls.JoinGroupCalls.Chat*, Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All |
 
 > **Примечания:** Для вызова с носители, на которые есть приложения, помимо одного из перечисленных разрешений, требуется разрешение Calls.AccessMedia.All или Calls.AccessMedia.Chat*.
 >
@@ -40,36 +42,42 @@ ms.locfileid: "58490135"
 POST /app/calls
 POST /communications/calls
 ```
+
 > **Примечание.** Путь `/app` является устаревшим. В дальнейшем используйте путь `/communications`.
 
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
+
 В теле запроса поставляем JSON-представление объекта [вызова.](../resources/call.md)
 
 ## <a name="response"></a>Отклик
+
 В случае успешной работы этот метод возвращает код отклика и `201 Created` объект [вызова](../resources/call.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="example-1-create-peer-to-peer-voip-call-with-service-hosted-media"></a>Пример 1. Создание одноранговых вызовов VoIP с помощью средств массовой информации службы
 
-> **Примечание:** Этот вызов требует Calls.Initiate. Все разрешения.
+> **Примечание:** Этот вызов требует разрешения Calls.Initiate.All.
 
 ##### <a name="request"></a>Запрос
+
 В следующем примере показан запрос, который делает одноранговой вызов между ботом и указанным пользователем. В этом примере носители хозяйской службы. Значения маркера авторизации, URL-адреса, ID приложения, имени приложения, пользовательского ИД, имени пользователя и ИД клиента должны быть заменены фактическими значениями, чтобы сделать пример работой.
 
-
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create-call-service-hosted-media-1",
   "@odata.type": "microsoft.graph.call"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
@@ -98,6 +106,7 @@ Content-Type: application/json
   }
 }
 ```
+
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-call-service-hosted-media-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -114,18 +123,22 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-call-service-hosted-media-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-call-service-hosted-media-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ##### <a name="response"></a>Отклик
 
-> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.call"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab
@@ -217,6 +230,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -235,6 +249,7 @@ Content-Type: application/json
   ]
 }
 ```
+
 ##### <a name="notification---established"></a>Уведомление — установлено
 
 ```http
@@ -246,6 +261,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -269,11 +285,10 @@ Content-Type: application/json
 
 ### <a name="example-2-create-peer-to-peer-voip-call-with-application-hosted-media"></a>Пример 2. Создание одноранговых вызовов VoIP с помощью средств массовой информации приложения
 
-> **Примечание.** В этом примере Calls.Initiate. Все разрешения и разрешения Calls.AccessMedia.All.
+> **Примечание.** В этом примере необходимы разрешения Calls.Initiate.All и Calls.AccessMedia.All.
 
 ##### <a name="request"></a>Запрос
 В следующем примере показан запрос, который делает одноранговой вызов между ботом и указанным пользователем. В этом примере средства массовой информации локализованы приложением. Значения маркера авторизации, URL-адреса, ID приложения, имени приложения, пользовательского ИД, имени пользователя и ИД клиента должны быть заменены фактическими значениями, чтобы сделать пример работой.
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -281,6 +296,7 @@ Content-Type: application/json
   "name": "create-call-app-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
@@ -323,6 +339,7 @@ Content-Type: application/json
   }
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-call-app-hosted-media-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -339,11 +356,16 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-call-app-hosted-media-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-call-app-hosted-media-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 `<Media Session Configuration>` — это конфигурация сеанса сеанса мультимедиа, которая содержит сведения о сеансах стека мультимедиа. Конкретные сведения о аудио, видео, сведения о Ssession VBSS должны быть переданы здесь.
 
 Ниже приводится пример blob сеанса сеанса аудио мультимедиа.
+
 ```json
 {\"mpUri\":\"net.tcp://bot.contoso.com:18732/MediaProcessor\",\"audioRenderContexts\":[\"14778cc4-f54c-43c7-989f-9092e34ef784\"],\"videoRenderContexts\":[],\"audioSourceContexts\":[\"a5dcfc9b-5a54-48ef-86f5-1fdd8508741a\"],\"videoSourceContexts\":[],\"dataRenderContexts\":null,\"dataSourceContexts\":null,\"supportedAudioFormat\":\"Pcm16K\",\"videoSinkEncodingFormats\":[],\"mpMediaSessionId\":\"2379cf46-acf3-4fef-a914-be9627075320\",\"regionAffinity\":null,\"skypeMediaBotsVersion\":\"1.11.1.0086\",\"mediaStackVersion\":\"2018.53.1.1\",\"mpVersion\":\"7.2.0.3881\",\"callId\":\"1b69b141-7f1a-4033-9c34-202737190a20\"}
 ```
@@ -359,6 +381,7 @@ Content-Type: application/json
   "truncated": true,
   "@odata.type": "microsoft.graph.call"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab
@@ -430,14 +453,17 @@ Content-Type: application/json
 > **Примечание:** В этом примере вызову требуется `Calls.InitiateGroupCalls.All` разрешение. Созданный групповой вызов не поддерживает чат или запись.
 
 ##### <a name="request"></a>Запрос
+
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
 ```
+
 <!-- {
   "blockType": "example",
   "@odata.type": "microsoft.graph.call"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.call",
@@ -496,14 +522,17 @@ Content-Type: application/json
 > **Примечание:** В этом примере вызову требуется `Calls.InitiateGroupCalls.All` разрешение. Созданный групповой вызов не поддерживает чат или запись.
 
 ##### <a name="request"></a>Запрос
+
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
 ```
+
 <!-- {
   "blockType": "example",
   "@odata.type": "microsoft.graph.call"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.call",
@@ -558,21 +587,24 @@ Content-Type: application/json
 ```
 
 ### <a name="example-5-join-scheduled-meeting-with-service-hosted-media"></a>Пример 5. Присоединиться к запланированной встрече с средствами массовой информации службы
+
 Чтобы присоединиться к запланированному собранию, нам необходимо получить потоковый id, id сообщения, id организатора и id клиента, в котором планируется собрание.
 Эти сведения можно получить из [API Get Online Meetings.](../api/onlinemeeting-get.md)
 
 Значения маркера авторизации, URL-адреса вызова, id приложения, имени приложения, пользовательского именем пользователя и id клиента должны быть заменены вместе с сведениями, полученными из API Get  [Online Meetings,](../api/onlinemeeting-get.md) фактическими значениями для работы в примере.
+
 > **Примечание:** В этом примере `Calls.JoinGroupCalls.All` необходимо разрешение или `Calls.JoinGroupCalls.Chat` [разрешение, определенное для ресурсов.](https://aka.ms/teams-rsc)
 
 ##### <a name="request"></a>Запрос
 
-
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "join-meeting-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
@@ -586,15 +618,15 @@ Content-Type: application/json
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
     "preFetchMedia": [
-     {
-       "uri": "https://cdn.contoso.com/beep.wav",
-       "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
-     },
-     {
-       "uri": "https://cdn.contoso.com/cool.wav",
-       "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
-     }
-    ],
+      {
+        "uri": "https://cdn.contoso.com/beep.wav",
+        "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
+      },
+      {
+        "uri": "https://cdn.contoso.com/cool.wav",
+        "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
+      }
+    ]
   },
   "chatInfo": {
     "@odata.type": "#microsoft.graph.chatInfo",
@@ -608,15 +640,16 @@ Content-Type: application/json
       "user": {
         "@odata.type": "#microsoft.graph.identity",
         "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
-        "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+        "tenantId": "9f386a15-f9cc-445b-8106-ac85e314a07b",
         "displayName": "Bob"
       }
     },
     "allowConversationWithoutHost": true
   },
-  "tenantId":"86dc81db-c112-4228-9222-63f3esaa1edb"
+  "tenantId": "86dc81db-c112-4228-9222-63f3esaa1edb"
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/join-meeting-service-hosted-media-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -629,6 +662,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/join-meeting-service-hosted-media-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/join-meeting-service-hosted-media-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### <a name="response"></a>Отклик
@@ -638,6 +675,7 @@ Content-Type: application/json
   "truncated": "true",
   "@odata.type": "microsoft.graph.call"
 }-->
+
 ```http
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
@@ -728,6 +766,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -765,6 +804,7 @@ Content-Type: application/json
 }
 
 ```
+
 ##### <a name="notification---established"></a>Уведомление — установлено
 
 ```http
@@ -776,6 +816,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -812,6 +853,7 @@ Content-Type: application/json
   ]
 }
 ```
+
 ##### <a name="notification---roster"></a>Уведомление — список
 
 ```http
@@ -824,6 +866,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.commsNotifications",
   "truncated": true
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -919,6 +962,7 @@ Content-Type: application/json
   "name": "join-meeting-app-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
@@ -956,7 +1000,6 @@ Content-Type: application/json
 }
 ```
 
-
 ### <a name="example-7-join-channel-meeting-with-service-hosted-media"></a>Пример 7. Регистрация собрания каналов со средствами массовой информации службы
 Собрание внутри канала требует определенных сведений, таких как потоковые id, messageid и сведения организатора, которые можно получить с помощью [API Get Online Meetings](../api/onlinemeeting-get.md).
 
@@ -971,6 +1014,7 @@ Content-Type: application/json
   "name": "join-channel-meeting-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
@@ -1028,6 +1072,7 @@ Content-Type: application/json
   "name": "join-channel-meeting-as-guest-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
@@ -1082,6 +1127,7 @@ Content-Type: application/json
   }
 }
 ```
+
 > **Примечание:** Регистрация гостей зависит от параметров клиента для собрания. Приложение может быть положено в вестибюль, ожидая, чтобы его допустил пользователь. Это определяется `isInLobby` свойством
 
 ##### <a name="notification---roster"></a>Уведомление — список
@@ -1096,6 +1142,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.commsNotifications",
   "truncated": true
 }-->
+
 ```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
@@ -1137,18 +1184,18 @@ Content-Type: application/json
   ]
 }
 ```
+
 > **Примечание:** Приложение не будет получать реестр участников собрания, пока его не впустят из лобби
 
 ### <a name="example-9-create-peer-to-peer-pstn-call-with-service-hosted-media"></a>Пример 9. Создание одноранговых вызовов PSTN с помощью средства массовой информации службы
 
-> **Примечание:** Этот вызов требует Calls.Initiate. Все разрешения.
+> **Примечание:** Этот вызов требует разрешения Calls.Initiate.All.
 
 Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту.](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)
 
 #### <a name="request"></a>Запрос
 В следующем примере показан запрос на одноранговой вызов между ботом и номером PSTN. В этом примере носители хозяйской службы. Для работы примера необходимо заменить значения маркера авторизации, URL-адреса вызова, ID экземпляра приложения, имени экземпляра приложения, ИД телефона и ID клиента.
-> **Примечание:** ID экземпляра приложения — это объектный ID экземпляра приложения. ID приложения, на который ссылались экземпляры приложений, должен соответствовать тому, который есть в маркере авторизации. Телефон ID — это номер телефона в формате E.164.
-
+> **Примечание:** ID экземпляра приложения — это объектный ID экземпляра приложения. ID приложения, на который ссылались экземпляры приложений, должен соответствовать тому, который есть в маркере авторизации. Телефон — это номер телефона в формате E.164.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -1156,6 +1203,7 @@ Content-Type: application/json
   "name": "create-call-service-hosted-media-2",
   "@odata.type": "microsoft.graph.call"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
@@ -1171,7 +1219,7 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.identity",
         "displayName": "Calling Bot",
         "id": "3d913abb-aec0-4964-8fa6-3c6850c4f278"
-      },
+      }
     },
     "countryCode": null,
     "endpointType": null,
@@ -1199,6 +1247,7 @@ Content-Type: application/json
   "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-call-service-hosted-media-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -1207,18 +1256,22 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-call-service-hosted-media-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-call-service-hosted-media-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### <a name="response"></a>Отклик
 
-> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.call"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab
@@ -1300,14 +1353,13 @@ Content-Type: application/json
 
 ### <a name="example-10-create-peer-to-peer-pstn-call-with-application-hosted-media"></a>Пример 10. Создание одноранговых вызовов PSTN с помощью носите-
 
-> **Примечание.** В этом примере Calls.Initiate. Все разрешения и разрешения Calls.AccessMedia.All.
+> **Примечание.** В этом примере требуются разрешения Calls.Initiate.All и Calls.AccessMedia.All.
 
 Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту.](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)
 
 #### <a name="request"></a>Запрос
 В следующем примере показан запрос на одноранговой вызов между ботом и номером PSTN. В этом примере средства массовой информации локализованы приложением. Для работы примера необходимо заменить значения маркера авторизации, URL-адреса вызова, ID экземпляра приложения, имени экземпляра приложения, ИД телефона и ID клиента.
-> **Примечание:** ID экземпляра приложения — это объектный ID экземпляра приложения. ID приложения, на который ссылались экземпляры приложений, должен соответствовать тому, который есть в маркере авторизации. Телефон ID — это номер телефона в формате E.164.
-
+> **Примечание:** ID экземпляра приложения — это объектный ID экземпляра приложения. ID приложения, на который ссылались экземпляры приложений, должен соответствовать тому, который есть в маркере авторизации. Телефон — это номер телефона в формате E.164.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -1315,6 +1367,7 @@ Content-Type: application/json
   "name": "create-call-service-hosted-media-3",
   "@odata.type": "microsoft.graph.call"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
@@ -1330,7 +1383,7 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.identity",
         "displayName": "Calling Bot",
         "id": "3d913abb-aec0-4964-8fa6-3c6850c4f278"
-      },
+      }
     },
     "countryCode": null,
     "endpointType": null,
@@ -1359,6 +1412,7 @@ Content-Type: application/json
   "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-call-service-hosted-media-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -1367,18 +1421,22 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-call-service-hosted-media-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-call-service-hosted-media-3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 #### <a name="response"></a>Отклик
 
-> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.call"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab

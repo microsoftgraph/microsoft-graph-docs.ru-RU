@@ -5,12 +5,12 @@ description: Обновление столбца типа сайта, списк
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 5f750648a83b663ecd185e7568634e19660184df
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 0c8e888214007288e9e6ba8df8e9815b127bec02
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730160"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60975621"
 ---
 # <a name="update-columndefinition"></a>Обновление столбцаDefinition
 Пространство имен: microsoft.graph
@@ -55,7 +55,7 @@ PATCH /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns/{co
 |Content-Type|application/json. Обязательный.|
 
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса поставляем представление JSON этих свойств ресурса [columnDefinition][] для обновления. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
@@ -101,6 +101,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-contenttype-column-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-contenttype-column-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

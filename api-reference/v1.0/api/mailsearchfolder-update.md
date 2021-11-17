@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3ebe53470bc202d418b63f166ec81e5c6faaf73d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fb4ebb7bf5dc0808b96313645e47c82557bdd266
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59037420"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61004038"
 ---
 # <a name="update-mailsearchfolder"></a>Обновление mailSearchFolder
 
@@ -37,7 +37,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -46,7 +46,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 | displayName | Строка | Имя отображения [почтыFolder](../resources/mailfolder.md).|
-| includeNestedFolders | Логический | Как должна проходить иерархия папок почтовых ящиков. `true` означает, что глубокий поиск должен быть сделан, а значит, неглубокий `false` поиск должен быть сделан вместо. |
+| includeNestedFolders | Логическое | Как должна проходить иерархия папок почтовых ящиков. `true` означает, что глубокий поиск должен быть сделан, а значит, неглубокий `false` поиск должен быть сделан вместо. |
 | sourceFolderIds | Коллекция String | Папки почтовых ящиков, которые необходимо добыть. |
 | filterQuery | String | Запрос OData для фильтрации сообщений. |
 
@@ -88,11 +88,15 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-mailsearchfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-mailsearchfolder-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

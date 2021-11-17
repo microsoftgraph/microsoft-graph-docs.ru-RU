@@ -1,0 +1,34 @@
+---
+description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
+ms.openlocfilehash: a46fbcbe00111d194165ae0512a7b7822cd312ad
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60984804"
+---
+```go
+
+//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
+
+requestBody := msgraphsdk.NewAttachment()
+name := "name-value"
+requestBody.SetName(&name)
+contentType := "contentType-value"
+requestBody.SetContentType(&contentType)
+isInline := false
+requestBody.SetIsInline(&isInline)
+requestBody.SetAdditionalData(map[string]interface{}{
+    "@odata.type": "microsoft.graph.fileAttachment",
+    "contentLocation": "contentLocation-value",
+    "contentBytes": "base64-contentBytes-value",
+}
+options := &msgraphsdk.AttachmentsRequestBuilderPostOptions{
+    Body: requestBody,
+}
+messageId := "message-id"
+result, err := graphClient.Me().MessagesById(&messageId).Attachments().Post(options)
+
+
+```

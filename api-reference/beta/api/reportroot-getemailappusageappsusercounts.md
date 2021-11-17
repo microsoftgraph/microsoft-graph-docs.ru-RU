@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getEmailAppUsageAppsUserCounts'
 description: Узнайте, сколько уникальных пользователей у каждого почтового приложения.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: cd938ed0b6a6b8104257b2f483d57948c4ef9cb6
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0e175421c4d2f1c71c6ec92965c2a8d364058883
+ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050978"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61044472"
 ---
 # <a name="reportroot-getemailappusageappsusercounts"></a>reportRoot: getEmailAppUsageAppsUserCounts
 
@@ -48,7 +48,7 @@ GET /reports/getEmailAppUsageAppsUserCounts(period='{period_value}')
 
 | Параметр | Тип   | Описание                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
+| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
 
 Этот метод поддерживает [параметр запросов OData](/graph/query-parameters) `$format` для настройки отклика. Тип вывода по умолчанию — текст/csv. Однако, если требуется указать тип вывода, можно использовать параметр OData $format для параметра text/csv или application/json.
 
@@ -82,7 +82,7 @@ CSV-файл содержит столбцы со следующими заго�
 
 ### <a name="json"></a>JSON
 
-В случае успеха этот метод возвращает код отклика и объект `200 OK` **[emailAppUsageAppsUserCounts](../resources/emailappusageappsusercounts.md)** в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` объект JSON в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -160,7 +160,7 @@ GET https://graph.microsoft.com/beta/reports/getEmailAppUsageAppsUserCounts(peri
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.emailAppUsageAppsUserCounts"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -169,7 +169,6 @@ Content-Type: application/json
 Content-Length: 345
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.emailAppUsageAppsUserCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

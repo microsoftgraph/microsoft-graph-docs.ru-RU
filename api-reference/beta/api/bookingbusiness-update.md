@@ -1,16 +1,16 @@
 ---
 title: Обновление bookingbusiness
 description: Обновление свойств объекта bookingBusiness.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 767d4b3a355c74f6941bd9d9d20579e1c0dcda23
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: a6659791c201ad7c90f409bf87e15df6a8161d2f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047849"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61003485"
 ---
 # <a name="update-bookingbusiness"></a>Обновление bookingbusiness
 
@@ -45,13 +45,13 @@ PATCH /bookingBusinesses/{id}
 |:---------------|:--------|:----------|
 |address|[physicalAddress](../resources/physicaladdress.md)|Адрес улицы бизнеса.|
 |businessHours|[коллекция bookingWorkHours](../resources/bookingworkhours.md)|Часы работы для бизнеса.|
-|businessType|String|Тип бизнеса.|
-|defaultCurrencyIso|String|Код валюты, в которую бизнес работает в Microsoft Bookings.|
-|displayName|String|Имя для бизнеса, который взаимодействует с клиентами.|
+|businessType|Строка|Тип бизнеса.|
+|defaultCurrencyIso|Строка|Код валюты, в которую бизнес работает в Microsoft Bookings.|
+|displayName|Строка|Имя для бизнеса, который взаимодействует с клиентами.|
 |email|String|Адрес электронной почты для бизнеса.|
 |phone|String|Номер телефона для бизнеса.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Указывает, как можно создавать заказы для этого бизнеса.|
-|webSiteUrl|String|URL-адрес веб-сайта бизнеса.|
+|webSiteUrl|Строка|URL-адрес веб-сайта бизнеса.|
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204, No Content`. Метод не возвращает данные в теле отклика.
@@ -95,10 +95,14 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-bookingbusiness-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-bookingbusiness-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример ответа. Примечание: показанный здесь объект ответа может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true

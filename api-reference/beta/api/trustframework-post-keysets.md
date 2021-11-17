@@ -1,16 +1,16 @@
 ---
 title: Создание trustFrameworkKeySet
 description: Создайте новый **объект trustFrameworkKeySet.**
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 909198910f311053af9cca71c1dae34beb65e13c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 1804e863761d09e735da269614ec8a38970e046e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053449"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61010435"
 ---
 # <a name="create-trustframeworkkeyset"></a>Создание trustFrameworkKeySet
 
@@ -28,7 +28,7 @@ ms.locfileid: "52053449"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | TrustFrameworkKeySet.ReadWrite.All   |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | TrustFrameworkKeySet.ReadWrite.All    |
+| Для приложений                            | TrustFrameworkKeySet.ReadWrite.All    |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ POST /trustFramework/keySets
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 |Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -90,6 +90,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-trustframeworkkeyset-from-trustframework-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-trustframeworkkeyset-from-trustframework-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

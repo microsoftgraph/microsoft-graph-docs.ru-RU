@@ -1,16 +1,16 @@
 ---
 title: 'приложение: дельта'
 description: Получение новых, обновленных или удаленных приложений без выполнения полного чтения всей коллекции ресурсов. Подробные сведения см. в материале Использование запроса Delta.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c3bfedbfdd8aa13e27b3daa1aaf6da3c67c645b5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 27620f326cb22f10bf5dce6ad0c278ec9db256c4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048129"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995489"
 ---
 # <a name="application-delta"></a>приложение: дельта
 
@@ -105,6 +105,10 @@ GET https://graph.microsoft.com/beta/applications/delta
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/application-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/application-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

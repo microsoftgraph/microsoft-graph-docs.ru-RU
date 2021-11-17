@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c087d554bf7c7a9b44fa5c19a1821374e7d0f295
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 266c4541293ee0f6a38b2b15c1037fe4d1347412
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59016850"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61029714"
 ---
 # <a name="call-recordresponse"></a>вызов: recordResponse
 
@@ -45,7 +45,7 @@ POST /communications/calls/{id}/recordResponse
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
@@ -53,12 +53,12 @@ POST /communications/calls/{id}/recordResponse
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |подсказки|[коллекция mediaPrompt](../resources/mediaprompt.md) | Подсказки для игры. Максимальный поддерживаемый размер коллекции mediaPrompt — 1.|
-|bargeInAllowed|Boolean| Если это так, запрос recordResponse будет вступать в другие существующие запросы записи и записи playprompt в очереди или в настоящее время. По умолчанию = false. |
+|bargeInAllowed|Логический| Если это так, запрос recordResponse будет вступать в другие существующие запросы записи и записи playprompt в очереди или в настоящее время. По умолчанию = false. |
 |initialSilenceTimeoutInSeconds | Int32| Максимальная начальная тишина (тишина пользователя) разрешена с того времени, когда мы начнем операцию записи ответа перед периодиалом и не справимся с операцией. Если мы играем запрос, этот отсвечив начинается после завершения запроса. По умолчанию = 5 секунд, Min = 1 секунда, Max = 120 секунд |
 |maxSilenceTimeoutInSeconds|Int32| Максимальное время тишины (паузы) после начала выступления пользователя. По умолчанию = 5 секунд, Min = 1 секунда, Max = 120 секунд.|
 |maxRecordDurationInSeconds|Int32| Максимальная продолжительность операции recordResponse перед остановкой записи. По умолчанию = 5 секунд, Min = 1 секунда, Max = 120 секунд.|
-|playBeep|Boolean| Если это так, воспроизводит звуковой сигнал, чтобы указать пользователю, что он может начать запись своего сообщения. По умолчанию = true.|
-|stopTones|Коллекция String|Стоп-сигналы, указанные для окончания записи.|
+|playBeep|Логическое| Если это так, воспроизводит звуковой сигнал, чтобы указать пользователю, что он может начать запись своего сообщения. По умолчанию = true.|
+|stopTones|Коллекция объектов string|Стоп-сигналы, указанные для окончания записи.|
 |clientContext|Строка|Уникальная строка Client Context. Максимальное ограничение — 256 шаров.|
 
 ## <a name="response"></a>Отклик
@@ -116,6 +116,10 @@ Content-Length: 394
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-recordresponse-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-recordresponse-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

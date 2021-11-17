@@ -2,15 +2,15 @@
 title: Создание разрешений
 description: Создание нового объекта разрешений.
 author: BarrySh
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 39e85b9ba4ef3269f46a2727a5771cadf3601e2a
-ms.sourcegitcommit: c7776e5659c391e7c9ce1cd46e242a5ddc38dba2
+ms.openlocfilehash: 4652b9facf164b80ee14131c934291612b87ef59
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51490930"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020445"
 ---
 # <a name="create-permission"></a>Создание разрешений
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "51490930"
 |:--------------------------------------|:-------------------------------------
 |Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.
-|Приложение                            | Sites.FullControl.All
+|Для приложений                            | Sites.FullControl.All
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,7 +41,7 @@ POST /sites/{sitesId}/permissions
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -93,6 +93,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-permission-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-permission-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

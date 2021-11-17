@@ -1,16 +1,16 @@
 ---
 title: List profileCardProperties
 description: Извлечение списка объектов profilecardproperty.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 7d0c064b6d422285d078a07edbc2ef24184a7d2a
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: d0689fcec879f7b397d53369660dc51ca9f3574c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052056"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002791"
 ---
 # <a name="list-profilecardproperties"></a>List profileCardProperties
 
@@ -48,7 +48,7 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/prof
 
 | Имя          |Описание                  |
 |:--------------|:----------------------------|
-| Авторизация | Bearer {токен}. Обязательный.   |
+| Авторизация | Bearer {token}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/prof
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-profilecardproperties-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-profilecardproperties-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

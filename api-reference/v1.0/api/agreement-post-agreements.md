@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: f978b9599b2427dc06173636cd19ead373f8c56d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e9c54f95cf3ea10f0c230ba7a47101ffd13b5e0e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59017046"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60988712"
 ---
 # <a name="create-agreement"></a>Создание соглашения
 
@@ -34,7 +34,7 @@ POST /identityGovernance/termsOfUse/agreements
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Описание |
 |:-------------|:------------|
-| Авторизация | Носитель \{токен\}. Обязательный. |
+| Authorization | Носитель \{токен\}. Обязательный. |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -44,12 +44,12 @@ POST /identityGovernance/termsOfUse/agreements
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|String|Отображение имени соглашения.|
-|isViewingBeforeAcceptanceRequired|Логический|Указывает, должен ли пользователь расширять и просматривать соглашение перед принятием.|
+|displayName|Строка|Отображение имени соглашения.|
+|isViewingBeforeAcceptanceRequired|Логическое|Указывает, должен ли пользователь расширять и просматривать соглашение перед принятием.|
 |fileName|String|Имя файла соглашения (например, TOU.pdf).|
 |isDefault|Boolean|Указывает, является ли это файл соглашения по умолчанию, если язык соответствует предпочтениям клиента. Если ни один из файлов не помечен как по умолчанию, первый из них рассматривается как по умолчанию.|
 |language|String|Язык файла соглашения в формате languagecode2-country/regioncode2. languagecode2 — это код из двух букв более низкого уровня, полученный из ISO 639-1. country/regioncode2 является производным от ISO 3166 и обычно состоит из двух верхних букв или языкового тега BCP-47 (например, en-US).|
-|data|В двоичном формате|Данные, которые представляют условия использования документа PDF.|
+|data|Двоичный|Данные, которые представляют условия использования документа PDF.|
 
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код ответа и `201, Created` объект соглашения в тексте ответа. [](../resources/agreement.md)
@@ -97,6 +97,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-agreement-from-agreements-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-agreement-from-agreements-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

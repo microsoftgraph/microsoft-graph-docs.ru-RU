@@ -2,15 +2,15 @@
 author: JeremyKelley
 title: Удаление пакета
 description: Удаление пакета driveItems
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 737a5f7494ea0848e4776058e8f55b78df44e29a
-ms.sourcegitcommit: 5b0aab5422e0619ce8806664c479479d223129ec
+ms.openlocfilehash: 7edd748b0e1a1298ed950ce885fb92bbfcf56064
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50774273"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60994705"
 ---
 # <a name="delete-bundle"></a>Удаление пакета
 
@@ -44,7 +44,7 @@ DELETE /drive/items/{bundle-id}
 
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Авторизация | Носитель \{токен\}. Обязательный. |
+| Authorization | Носитель \{токен\}. Обязательный. |
 | if-match      | eTag. Необязательный параметр. Если этот загон запроса включен, а предоставленный eTag (или cTag) не соответствует текущему тегу в пакете, возвращается ответ и пакет не `412 Precondition Failed` удаляется.
 
 ## <a name="request-body"></a>Тело запроса
@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/drive/items/{bundle-id}
 [!INCLUDE [sample-code](../includes/snippets/java/delete-bundle-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-bundle-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -104,7 +108,7 @@ HTTP/1.1 204 No Content
   "description": "Delete a bundle from OneDrive",
   "keywords": "delete,existing bundle,onedrive",
   "section": "documentation",
-  "tocPath": "Bundles/Delete"
+  "tocPath&quot;: &quot;Bundles/Delete"
 } -->
 
 

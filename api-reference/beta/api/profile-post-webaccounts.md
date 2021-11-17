@@ -1,16 +1,16 @@
 ---
 title: Создание webAccount
 description: Создание нового объекта webAccount.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 2d41cb9fe650fa8d506f8ea9c218a01d4f2c0605
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3170c2c291b8e2a1f6a357f203f58bd33ca05ef4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52036767"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61023644"
 ---
 # <a name="create-webaccount"></a>Создание webAccount
 
@@ -43,7 +43,7 @@ POST /users/{id | userPrincipalName}/profile/webAccounts
 
 | Имя           | Описание                 |
 |:---------------|:----------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.   |
+| Авторизация  | Bearer {token}. Обязательный.   |
 | Content-Type   | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,12 +54,12 @@ POST /users/{id | userPrincipalName}/profile/webAccounts
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|description|String|Содержит описание, предоставленное пользователем для учетной записи в службе, на который ссылается.|
+|allowedAudiences|Строка|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|description|Строка|Содержит описание, предоставленное пользователем для учетной записи в службе, на который ссылается.|
 |вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |служба|[serviceInformation](../resources/serviceinformation.md)| Содержит основные сведения о связанной службе. |
 |source|[personDataSource](../resources/persondatasource.md)|Где значения возникли, если синхронизированы с другой службы. Унаследовано от [itemFacet](../resources/itemfacet.md).|
-|statusMessage|String|Содержит сообщение о состоянии облачной службы при условии или синхронизации. |
+|statusMessage|Строка|Содержит сообщение о состоянии облачной службы при условии или синхронизации. |
 |userId|String|Имя пользователя, отображаемая для webaccount.  |
 |webUrl|String|Содержит ссылку на профиль пользователя в облачной службе, если она существует.|
 
@@ -106,6 +106,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-webaccount-from-profile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-webaccount-from-profile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

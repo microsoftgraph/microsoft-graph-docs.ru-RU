@@ -2,15 +2,15 @@
 title: 'timeCard: clockIn'
 description: Вовремя запустите хронограф.
 author: akumar39
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5a21d1fd3af16b342ffcc98c47d854cf49a00ccd
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: 85c8b917b83bf5285373f0b0684e4295cce4fc7e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52869802"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60989294"
 ---
 # <a name="timecard-clockin"></a>timeCard: clockIn
 
@@ -26,9 +26,9 @@ ms.locfileid: "52869802"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Schedule.ReadWrite.All    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Schedule.ReadWrite.All* |
+|Делегированные (рабочая или учебная учетная запись) | Schedule.ReadWrite.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Schedule.ReadWrite.All* |
 
 >\***Важно:** При использовании разрешений приложения необходимо включить в запрос `MS-APP-ACTS-AS` заготвую.
 
@@ -44,18 +44,18 @@ POST /teams/{teamId}/schedule/timecards/clockIn
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type | application/json. Обязательный.|
 | MS-APP-ACTS-AS | ID пользователя, от имени которого действует приложение. Требуется при использовании области разрешений приложения. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
 |atApprovedLocation| `Edm.boolean ` | Указать, происходит ли это действие в утвержденной локации.|
-|onBehalfOfUserId| String | Необязательный параметр, используемый менеджером для записи от имени пользователя.|
+|onBehalfOfUserId| Строка | Необязательный параметр, используемый менеджером для записи от имени пользователя.|
 |notes| [itemBody](../resources/itembody.md)  |Заметки для часов. |
 
 ## <a name="response"></a>Отклик
@@ -91,6 +91,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/timecard-clockin-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/timecard-clockin-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

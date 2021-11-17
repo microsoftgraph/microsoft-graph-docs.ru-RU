@@ -1,16 +1,16 @@
 ---
 title: 'message: reply'
 description: Ответ отправилю сообщения в формате JSON или MIME.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e5a9cab87389f41c795268a1d7964a7d8e987269
-ms.sourcegitcommit: 503c72036c376a30e08c29df8e7730a7afcab66e
+ms.openlocfilehash: a408b1309392520ba5be6b2d0040ed3e2d5b0a6d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52870502"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61004766"
 ---
 # <a name="message-reply"></a>message: reply
 
@@ -55,10 +55,10 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/reply
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Обязательный |
-| Content-Type | string  | Характер данных в теле объекта. Обязательный <br/> Использование `application/json` объекта JSON и `text/plain` контента MIME |
+| Authorization  | string  | Bearer {token}. Обязательно |
+| Content-Type | string  | Характер данных в теле объекта. Обязательно <br/> Использование `application/json` объекта JSON и `text/plain` контента MIME |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 При использовании формата JSON включаем объект JSON со следующими параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -128,6 +128,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/message-reply-beta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/message-reply-beta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

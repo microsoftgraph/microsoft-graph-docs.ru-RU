@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7f872d80aa31d4b93bb67ff778c73ffb2b0d0dfb
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 956743107da9fe454d659d42b828eac479c0a004
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60944862"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028833"
 ---
 # <a name="update-contactfolder"></a>Обновление объекта contactFolder
 
@@ -45,7 +45,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|String|Отображаемое имя папки.|
+|displayName|Строка|Отображаемое имя папки.|
 |parentFolderId|String|Идентификатор родительской папки для папки.|
 |wellKnownName|string|Имя папки, если папка является признанной папкой. В `contacts` настоящее время это единственная признанная папка контактов.|
 
@@ -84,6 +84,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-contactfolder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-contactfolder-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

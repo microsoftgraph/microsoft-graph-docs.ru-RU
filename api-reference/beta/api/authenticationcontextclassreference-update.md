@@ -1,16 +1,16 @@
 ---
 title: Обновление проверки подлинностиContextClassReference
 description: Обновление свойств объекта authenticationContextClassReference.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: calebb
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 40ed1ea6052e4b39f84426cd792429b70732137d
-ms.sourcegitcommit: 7b8ad226dc9dfee61b8c3d32892534855dad3fa0
+ms.openlocfilehash: 0fee669405322945ef0d4552b9e98fd63f2a39c8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52664517"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982350"
 ---
 # <a name="update-authenticationcontextclassreference"></a>Обновление проверки подлинностиContextClassReference
 
@@ -28,7 +28,7 @@ ms.locfileid: "52664517"
 |:--------------------------------------|:---------------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.ConditionalAccess |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение                            | Policy.ReadWrite.ConditionalAccess |
+|Для приложений                            | Policy.ReadWrite.ConditionalAccess |
 
 > [!NOTE]
 > Этот API имеет [известные проблемы, связанные](/graph/known-issues#permissions) с разрешениями.
@@ -45,7 +45,7 @@ PATCH /identity/conditionalAccess/authenticationContextClassReferences/{id}
 
 | Имя          | Описание      |
 |:--------------|:-----------------|
-| Авторизация | Bearer {токен}. Обязательный.   |
+| Авторизация | Bearer {token}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -88,6 +88,10 @@ Content-type: application/json
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-authenticationcontextclassreference-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authenticationcontextclassreference-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

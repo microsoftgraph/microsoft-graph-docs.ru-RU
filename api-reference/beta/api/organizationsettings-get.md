@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1feebfb659907796d424e7daac474268aa11f4b9
-ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
+ms.openlocfilehash: d1ef20e1c8d3a148718abaf0b5ca4af881547c3f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60780494"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026626"
 ---
 # <a name="get-organizationsettings"></a>Get organizationSettings
 
@@ -20,7 +20,7 @@ ms.locfileid: "60780494"
 
 Извлечение свойств и связей объекта [organizationSettings,](../resources/organizationsettings.md) включая **profileCardProperties.**
 
-Эта операция не возвращает [insightsSettings](../resources/insightssettings.md). В зависимости от типа анализа можно получить их параметры с помощью [list itemInsights](organizationsettings-list-iteminsights.md) или [list peopleInsights.](organizationsettings-list-peopleinsights.md)
+Эта операция не возвращает [itemInsightsSettings](../resources/iteminsightssettings.md) через **свойство навигации itemInsights.** Вместо [этого используйте get itemInsightsSettings.](iteminsightssettings-get.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/organization/a9f3c90b-04fd-4504-a302-47672b
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-organizationsettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-organizationsettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,28 +1,28 @@
 ---
-title: Список Букингбусинессес
-description: Получение коллекции объектов букингбусинесс, созданных для клиента.
-localization_priority: Normal
+title: Список bookingBusinesses
+description: Получите коллекцию объектов bookingbusiness, созданных для клиента.
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: c1cf4042fbfbbc3364756c9363555215bff05e01
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 686925bca89dcbb7dafcb701d716b9671864b833
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960811"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60990561"
 ---
-# <a name="list-bookingbusinesses"></a>Список Букингбусинессес
+# <a name="list-bookingbusinesses"></a>Список bookingBusinesses
 
 Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение коллекции объектов [букингбусинесс](../resources/bookingbusiness.md) , созданных для клиента.
+Получите коллекцию [объектов bookingbusiness,](../resources/bookingbusiness.md) созданных для клиента.
 
-Эта операция возвращает только **идентификаторы** и **DisplayName** для каждой из бизнесных книг в коллекции. В целях повышения производительности он не возвращает другие свойства. Вы можете получить другие свойства бизнеса учета, указав его **идентификатор** в операции [Get](bookingbusiness-get.md) .
+Эта операция возвращает только **id** и **displayName** каждого бизнеса Bookings в коллекции. Для соображений производительности он не возвращает другие свойства. Вы можете получить другие свойства бизнеса Bookings, указав его **id** в [операции GET.](bookingbusiness-get.md)
 
-Вы также можете запрашивать резервирование для предприятий, указывая строку в `query` параметре, чтобы выполнять согласование подстроки между предприятиями клиента. См. [пример](#request-2) ниже.
+Вы также можете задать запрос для предприятий Bookings, указав строку в параметре для выполнения подстройки, совпадающих между предприятиями `query` клиента. См. [пример](#request-2) ниже.
 
 
 ## <a name="permissions"></a>Разрешения
@@ -30,7 +30,7 @@ ms.locfileid: "48960811"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Резервирования. Read. ALL, Букингсаппоинтмент. ReadWrite. ALL, Books. ReadWrite. ALL, Books. Manage. ALL   |
+|Делегированные (рабочая или учебная учетная запись) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
 |Для приложений | Не поддерживается.  |
 
@@ -42,7 +42,7 @@ GET /bookingBusinesses
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
-Этот метод также поддерживает `query` параметр, который принимает строковое значение. Этот параметр позволяет ограничить результаты получения для предприятий, которые совпадают с указанной строкой. Вы можете увидеть [Пример](#request-2) ниже.
+Этот метод также поддерживает `query` параметр, который принимает значение строки. Этот параметр ограничивает результаты GET предприятиями, которые соответствуют указанной строке. Ниже приведен [пример.](#request-2)
 
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -53,10 +53,10 @@ GET /bookingBusinesses
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [букингбусинесс](../resources/bookingbusiness.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код ответа и коллекцию `200 OK` [объектов bookingBusiness](../resources/bookingbusiness.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request-1"></a>Запрос 1
-В приведенном ниже примере показано, как получить резервирование предприятия в клиенте.
+В следующем примере получается бизнес Bookings в клиенте.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -82,10 +82,14 @@ GET https://graph.microsoft.com/beta/bookingBusinesses
 [!INCLUDE [sample-code](../includes/snippets/java/get-bookingbusinesses-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-bookingbusinesses-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### <a name="response-1"></a>Отклик 1
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -113,7 +117,7 @@ Content-type: application/json
 
 
 ##### <a name="request-2"></a>Запрос 2
-В приведенном ниже примере показано, как использовать этот `query` параметр для получения одного или нескольких подходящих подходящих корпоративных подходящих подходящих подходящих подходящих корпоративных сотрудников.
+В следующем примере показано, как использовать параметр для получения одного или более совпадающих предприятий `query` Bookings в клиенте.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -139,9 +143,13 @@ GET https://graph.microsoft.com/beta/bookingBusinesses?query=Adventure
 [!INCLUDE [sample-code](../includes/snippets/java/query-bookingbusinesses-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/query-bookingbusinesses-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### <a name="response-2"></a>Отклик 2
+##### <a name="response-2"></a>Ответ 2
 Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
