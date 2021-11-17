@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 439005577189f542790d389447e6f7a02369e30f
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: c2acec1c54d5996be591a01dde1d3b545f30dcb8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60941507"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61020949"
 ---
 # <a name="create-tag"></a>Создание тега
 
@@ -57,7 +57,7 @@ POST /compliance/ediscovery/cases/{caseId}/tags
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |childSelectability|[microsoft.graph.ediscovery.childSelectability](../resources/ediscovery-tag.md#childselectability-values)|Указывает, можно ли связывать один или несколько детских тегов с документом. Возможные значения: `One`, `Many`.  Это значение контролирует, представляет ли UX теги в качестве почтовых ящиков или группы кнопок радио. Обязательный.|
-|displayName|String|Отображение имени тега. Обязательный.|
+|displayName|Строка|Отображение имени тега. Обязательный.|
 
 ## <a name="response"></a>Отклик
 
@@ -99,6 +99,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-tag-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-tag-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

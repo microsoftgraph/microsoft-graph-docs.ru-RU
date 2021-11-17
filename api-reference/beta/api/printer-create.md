@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 01aea7fbcd4c4723f7d2253fc9591bd0c75d85e8
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 328f4d1bb9ada8ceb99be79caa60a9683d15d368
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60939345"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028096"
 ---
 # <a name="printer-create"></a>принтер: создание
 
@@ -47,13 +47,13 @@ POST /print/printers/create
 
 | Параметр      | Тип    |Описание| Обязательный? |
 |:---------------|:--------|:----------|:----------|
-|displayName|String|Имя отображения, которое необходимо назначить принтеру.|Да|
+|displayName|Строка|Имя отображения, которое необходимо назначить принтеру.|Да|
 |manufacturer|String|Производитель принтера.|Да|
 |model|String|Модель принтера.|Да|
-|physicalDeviceId|String|UUID физического устройства принтера. Обязательно, если `hasPhysicalDevice` свойство является верным.|Нет|
-|hasPhysicalDevice|Логическое|True, если на принтере есть физическое выходное устройство, ложное в противном случае. Если значение опущено, значение по умолчанию является верным.|Нет|
+|physicalDeviceId|Строка|UUID физического устройства принтера. Обязательно, если `hasPhysicalDevice` свойство является верным.|Нет|
+|hasPhysicalDevice|Логический|True, если на принтере есть физическое выходное устройство, ложное в противном случае. Если значение опущено, значение по умолчанию является верным.|Нет|
 |certificateSigningRequest|[printCertificateSigningRequest](../resources/printcertificatesigningrequest.md)|Запрос на подписание сертификата X.509 (CSR) для сертификата, созданного и используемой принтером для идентификации.|Да|
-|connectorId|String|Id соединителя, выступая в качестве прокси-сервера для принтера.|Нет|
+|connectorId|Строка|Id соединителя, выступая в качестве прокси-сервера для принтера.|Нет|
 
 ## <a name="response"></a>Отклик
 В случае успешного использования этот метод возвращает код отклика и ссылку на связанный `202 Accepted` [принтерCreateOperation](../resources/printercreateoperation.md) в `Operation-Location` загонке.
@@ -101,6 +101,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-printer-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-printer-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

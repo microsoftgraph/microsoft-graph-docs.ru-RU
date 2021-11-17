@@ -1,16 +1,16 @@
 ---
 title: Обновление реинтеграции рабочей силы
 description: Обновление свойств объекта по реинтеграции рабочей силы.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c62a27e7c0a019023bea7549523dc8b9de7582c1
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 6fcfe75b2ee2d39a3142c952d6218da31c8b36df
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787998"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031226"
 ---
 # <a name="update-workforceintegration"></a>Обновление реинтеграции рабочей силы
 
@@ -42,7 +42,7 @@ PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -51,11 +51,11 @@ PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |apiVersion|Int32|Версия API для URL-адреса обратного вызова. Начните с 1.|
-|displayName|String|Имя интеграции рабочей силы.|
+|displayName|Строка|Имя интеграции рабочей силы.|
 |шифрование|workforceIntegrationEncryption|Ресурс шифрования интеграции рабочей силы. |
-|isActive|Логический|Указывает, является ли эта интеграция рабочей силы активной и доступной в настоящее время.|
-|поддерживает|Строка| Возможные значения `none` , , , , `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Если выбрано несколько значений, все значения должны начинаться с первой буквы в верхнем шкафу.|
-|supportedEntities|Строка| Это свойство заменит **поддержки** в v1.0. Рекомендуется использовать это свойство вместо **поддержки.** Свойство **поддерживается** в бета-версии в настоящее время. Возможные значения `none` , , , , `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Если выбрано несколько значений, все значения должны начинаться с первой буквы в верхнем шкафу.|
+|isActive|Логическое|Указывает, является ли эта интеграция рабочей силы активной и доступной в настоящее время.|
+|поддерживает|string| Возможные значения `none` , , , , `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Если выбрано несколько значений, все значения должны начинаться с первой буквы в верхнем шкафу.|
+|supportedEntities|string| Это свойство заменит **поддержки** в v1.0. Рекомендуется использовать это свойство вместо **поддержки.** Свойство **поддерживается** в бета-версии в настоящее время. Возможные значения `none` , , , , `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Если выбрано несколько значений, все значения должны начинаться с первой буквы в верхнем шкафу.|
 |url|String| URL-адрес интеграции рабочей силы для вызовов из службы Shift. |
 
 ## <a name="response"></a>Отклик
@@ -108,6 +108,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-workforceintegration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-workforceintegration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -170,7 +174,7 @@ Content-type: application/json
 ```
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 ```
 HTTP/1.1 200 OK
 {

@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 2822932a76c334d75495585de0209515479fac40
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 88e1254666bb6107db4b6fb1ba3454e87aec2998
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60942382"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61023924"
 ---
 # <a name="create-custodian"></a>Создание хранителя
 
@@ -57,7 +57,7 @@ POST /compliance/ediscovery/cases/{caseId}/custodians
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |email|String|Основной SMTP-адрес хранителя. Обязательный.|
-|applyHoldToSources|Логический|Указывает, применяется ли удержание к источникам хранителя (например, к почтовым ящикам, сайтам или Teams).|
+|applyHoldToSources|Boolean|Указывает, применяется ли удержание к источникам хранителя (например, к почтовым ящикам, сайтам или Teams).|
 
 ## <a name="response"></a>Отклик
 
@@ -98,6 +98,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-custodian-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-custodian-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

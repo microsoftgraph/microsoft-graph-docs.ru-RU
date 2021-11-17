@@ -1,16 +1,16 @@
 ---
 title: 'trustFrameworkKeySet: uploadCertificate'
 description: Upload сертификат на набор ключей.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 841a99797e737b79ee9d480b14a06c90a2bc2f48
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6edc7e6bffb5d5a13c77616025ab0e93c9b907d8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053421"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61010386"
 ---
 # <a name="trustframeworkkeyset-uploadcertificate"></a>trustFrameworkKeySet: uploadCertificate
 
@@ -28,7 +28,7 @@ Upload сертификат в [trustFrameworkKeyset.](../resources/trustframewo
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | TrustFrameworkKeySet.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | TrustFrameworkKeySet.ReadWrite.All |
+| Для приложений                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ POST /trustFramework/keySets/{id}/uploadCertificate
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 |Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,7 +51,7 @@ POST /trustFramework/keySets/{id}/uploadCertificate
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|key|String| Это поле для отправки контента сертификата. Значение должно быть кодированной версией базового-64 фактического контента сертификата. |
+|key|Строка| Это поле для отправки контента сертификата. Значение должно быть кодированной версией базового-64 фактического контента сертификата. |
 
 ## <a name="response"></a>Отклик
 
@@ -91,6 +91,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/trustframeworkkeyset-uploadcertificate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/trustframeworkkeyset-uploadcertificate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

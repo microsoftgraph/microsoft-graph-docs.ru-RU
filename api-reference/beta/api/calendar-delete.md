@@ -2,15 +2,15 @@
 title: Удаление календаря
 description: Удаление календаря, отличного от календаря по умолчанию.
 author: harini84
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3d8e0b7749d08fc7d0d58c3bfc3adc4f4d9f6110
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 1cd7d12244c8b8b91036703c3336cd65e8ed774b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50437977"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61015685"
 ---
 # <a name="delete-calendar"></a>Удаление календаря
 
@@ -43,9 +43,9 @@ DELETE /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя           |  Тип    | Описание|
 |:---------------|:---------|:----------|
-| Authorization  |  string  | Bearer {токен}. Обязательный. |
+| Authorization  |  string  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -78,6 +78,10 @@ DELETE https://graph.microsoft.com/beta/me/calendar
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-calendar-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-calendar-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

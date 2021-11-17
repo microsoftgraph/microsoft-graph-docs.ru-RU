@@ -1,16 +1,16 @@
 ---
 title: Обновление функцииRolloutPolicy
 description: Обновление свойств объекта featurerolloutpolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 66b04005f01f9e2d56189a23ad8dae36846a67a0
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 13a3a4c4fa2a4e5f9677b150a3fb0a072a4048bb
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52787002"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61034439"
 ---
 # <a name="update-featurerolloutpolicy"></a>Обновление featurerolloutpolicy
 
@@ -44,7 +44,7 @@ PATCH /policies/featureRolloutPolicies/{id}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {token}. Обязательный |
+| Авторизация | Bearer {token}. Обязательно |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -52,9 +52,9 @@ PATCH /policies/featureRolloutPolicies/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|description|String|Описание этой политики.|
-|displayName|String|Имя отображения для этой политики.|
-|isAppliedToOrganization|Логический|Указывает, следует ли применять эту политику выкатки функций ко всей организации.|
+|description|Строка|Описание этой политики.|
+|displayName|Строка|Имя отображения для этой политики.|
+|isAppliedToOrganization|Логическое|Указывает, следует ли применять эту политику выкатки функций ко всей организации.|
 |isEnabled|Boolean|Указывает, включена ли выкатка функций.|
 
 ## <a name="response"></a>Отклик
@@ -98,6 +98,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-featurerolloutpolicy-policies-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-featurerolloutpolicy-policies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

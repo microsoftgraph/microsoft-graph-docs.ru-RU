@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 700d5e1e175549326691febb4c69ed1e77dee6f6
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 1e7d37c1eb3e32330db36295ab2ac1e9f8d1b7fb
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60943859"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61024673"
 ---
 # <a name="create-educationcategory"></a>Создание educationCategory
 
@@ -48,6 +48,8 @@ POST /education/classes/{id}/assignmentCategories/$entity
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["60eaa744-aa87-4276-b985-1633683119f8"],
@@ -61,10 +63,16 @@ Content-type: application/json
   "displayName": "Quizzes"
 }
 ```
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-educationcategory-from-educationclass-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 В теле запроса поставляют представление JSON объекта [educationCategory.](../resources/educationcategory.md)
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

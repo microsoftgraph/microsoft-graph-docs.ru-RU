@@ -1,16 +1,16 @@
 ---
 title: Создание identityUserFlowAttribute
 description: Создание нового объекта identityUserFlowAttribute.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: f6cdbf3d22e7b51e656e3dbe3d44180232a1467b
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 04f231f9d2c07e51252e2286999c84a6e1f42010
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435261"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61030078"
 ---
 # <a name="create-identityuserflowattribute"></a>Создание identityUserFlowAttribute
 
@@ -28,12 +28,12 @@ ms.locfileid: "50435261"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение|IdentityUserFlow.ReadWrite.All|
+|Для приложений|IdentityUserFlow.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор атрибута потока внешних удостоверений
+* Администратор атрибута пользователя внешней Flow удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +47,7 @@ POST /identity/userFlowAttributes
 
 |Имя|Описание|
 |:---------------|:----------|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -56,11 +56,11 @@ POST /identity/userFlowAttributes
 
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
-|id|String|Идентификатор атрибута потока пользователей. Это атрибут только для чтения, который создается автоматически.|
-|displayName|String|Отображает имя атрибута потока пользователя.|
-|description|String|Описание атрибута потока пользователей. Он отображается пользователю во время регистрации.|
-|userFlowAttributeType|String|Тип атрибута потока пользователя. Это атрибут только для чтения, заданной автоматически. В зависимости от типа атрибута значения для этого свойства будут `builtIn` или `custom` .|
-|dataType|String|Тип данных атрибута потока пользователя. Это невозможно изменить после создания настраиваемой атрибута потока пользователей. Поддерживаемые значения **dataType:**<br/><ul><li>`string` : обозначает, что dataType для identityUserFlowAttribute — это строка. </li><li>`boolean` : обозначает, что dataType для identityUserFlowAttribute является boolean.</li><li>`int64` : обозначает, что dataType для identityUserFlowAttribute является набором.</li></ul>|
+|id|String|Идентификатор атрибута потока пользователей. Это автоматически созданный атрибут только для чтения.|
+|displayName|String|Отображаемое имя атрибута потока пользователей.|
+|description|Строка|Описание атрибута потока пользователей. Он отображается пользователю во время регистрации.|
+|userFlowAttributeType|String|Тип атрибута потока пользователей. Это автоматически настроенный атрибут только для чтения. В зависимости от типа атрибута значением этого свойства является `builtIn` или `custom`.|
+|dataType|String|Тип данных атрибута потока пользователей. Это невозможно изменить после создания настраиваемой атрибута потока пользователей. Поддерживаемые значения для **dataType**:<br/><ul><li>`string` : обозначает, что dataType для identityUserFlowAttribute — это строка. </li><li>`boolean` : обозначает, что dataType для identityUserFlowAttribute является boolean.</li><li>`int64` : обозначает, что dataType для identityUserFlowAttribute является набором.</li></ul>|
 
 ## <a name="response"></a>Отклик
 
@@ -104,6 +104,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-userflowattribute-from-userflowattributes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-userflowattribute-from-userflowattributes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

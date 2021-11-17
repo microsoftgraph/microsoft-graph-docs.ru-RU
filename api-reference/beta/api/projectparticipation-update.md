@@ -1,16 +1,16 @@
 ---
 title: Обновление типа ресурсов projectParticipation
 description: Обновление свойств объекта projectParticipation в профиле пользователя.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 5665c10cbaeb2968b5a17be3f7d30561ed9573d2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 93c1b08a6c997eb27ed9cf2a0f89a41012265fe0
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055199"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61027858"
 ---
 # <a name="update-projectparticipation"></a>Обновление projectparticipation
 
@@ -43,7 +43,7 @@ PATCH /users/{id | userPrincipalName}/profile/projects/{id}
 
 | Имя           |Описание                  |
 |:---------------|:----------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.   |
+| Авторизация  | Bearer {token}. Обязательный.   |
 | Content-Type   | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -52,13 +52,13 @@ PATCH /users/{id | userPrincipalName}/profile/projects/{id}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|Строка|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |categories|Коллекция String|Содержит категории, которые пользователь связал с проектом (например, цифровая трансформация, нефтяная вышка). |
 |клиент|[companyDetail](../resources/companydetail.md)|Содержит подробные сведения о клиенте, для который был проект. |
 |collaborationTags|Коллекция объектов string|Содержит теги сценариев работы, которые пользователь связал с интересом. Допустимые значения в коллекции: `askMeAbout` , `ableToMentor` , `wantsToLearn` `wantsToImprove` .|
 |коллеги|[коллекция relatedPerson](../resources/relatedperson.md)|Списки людей, которые также работали над проектом. |
 |подробные|[positionDetail](../resources/positiondetail.md)|Содержит сведения о роли пользователя в проекте.|
-|displayName|String|Содержит удобное имя для проекта.|
+|displayName|Строка|Содержит удобное имя для проекта.|
 |вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |спонсоры|[коллекция relatedPerson](../resources/relatedperson.md)|Лицо или люди, которые спонсировали проект.    |
 
@@ -104,6 +104,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-projectparticipation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-projectparticipation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

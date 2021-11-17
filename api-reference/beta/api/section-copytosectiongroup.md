@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 27b7f9bac4a27f0738ad4accdfd4d1d4f943ab97
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: dedff7f982f681c81ae9e0f3ae7c90d4b1fdf869
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60944755"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61002631"
 ---
 # <a name="section-copytosectiongroup"></a>раздел: copyToSectionGroup
 
@@ -50,7 +50,7 @@ POST /sites/{id}/onenote/sections/{id}/copyToSectionGroup
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|siteCollectionId|String|ID сайта SharePoint скопировать. Используйте только при копировании на SharePoint сайте.|
+|siteCollectionId|Строка|ID сайта SharePoint скопировать. Используйте только при копировании на SharePoint сайте.|
 |siteId|String|ID веб-SharePoint для копирования. Используйте только при копировании на SharePoint сайте.|
 |groupId|String|ID группы для копирования. Используйте только при копировании в Microsoft 365 группу.|
 |id|String|Обязательный. ID группы разделов назначения. |
@@ -98,6 +98,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/section-copytosectiongroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/section-copytosectiongroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

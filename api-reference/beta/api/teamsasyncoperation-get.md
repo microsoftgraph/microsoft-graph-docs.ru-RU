@@ -2,15 +2,15 @@
 title: Get teamsAsyncOperation
 description: Сведения о teamsAsyncOperation.
 author: jecha
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9837cd6af69ee9af06ce2a1ab9aa59f93d0963a9
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 1d07849aa90601df82ee67846a11f7d8dba9b3a5
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53210310"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61017967"
 ---
 # <a name="get-teamsasyncoperation"></a>Get teamsAsyncOperation
 Пространство имен: microsoft.graph
@@ -20,7 +20,7 @@ ms.locfileid: "53210310"
 Получите указанную операцию [Teams async,](../resources/teamsasyncoperation.md) которая запущена или запущена на определенном ресурсе.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 Следующие разрешения для получения операции в чате:
 
@@ -49,7 +49,7 @@ GET /chats/{chat-id}/operations/{operation-id}
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/chats/19:c253a29b5f694b55a6baad8e83510af7@t
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-chat-operation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-chat-operation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

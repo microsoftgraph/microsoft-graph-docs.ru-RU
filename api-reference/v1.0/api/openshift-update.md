@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7ec7f0d8f471f87b7be8b780dbfd51f7bac36c6d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bb031146a7bcb6b85b9c73abbc80625e1a8f9309
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050217"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61023175"
 ---
 # <a name="update-openshift"></a>Обновление openShift
 
@@ -42,7 +42,7 @@ PUT /teams/{id}/schedule/openShifts/{openShiftId}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -52,7 +52,7 @@ PUT /teams/{id}/schedule/openShifts/{openShiftId}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |draftOpenShift|openShiftItem|Неопубликованная открытая смена.|
-|schedulingGroupId|String| Планирование группового ИД. |
+|schedulingGroupId|Строка| Планирование группового ИД. |
 |sharedOpenShift|openShiftItem|Опубликованная открытая смена.|
 
 ## <a name="response"></a>Отклик
@@ -114,6 +114,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-openshift-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-openshift-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -122,7 +126,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

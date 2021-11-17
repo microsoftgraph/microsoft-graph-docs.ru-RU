@@ -1,16 +1,16 @@
 ---
 title: 'user: findMeetingTimes'
 description: Предложение времени проведения собрания и местоположения с учетом доступности организатора и участников, а также ограничений по местоположению или времени, указанных в качестве параметров.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9fbb914533b8eedce9e896a86886bdba656d6034
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6793243feccc7e6a976e394959dffe03aa8f93a6
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052658"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61009834"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 
@@ -52,11 +52,11 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|attendees|Коллекция объектов [attendeeBase](../resources/attendeebase.md)|Коллекция участников или ресурсов для собрания. В соответствующем **свойстве типа** укажите или для человека, а также для `required` `optional` `resource` ресурса, например комнаты собраний. Если не указано, **findMeetingTimes** предполагает `required` для свойства **типа.** Если указана пустая коллекция, действие **findMeetingTimes** ищет свободные периоды времени для организатора. Необязательное.|
+|attendees|Коллекция объектов [attendeeBase](../resources/attendeebase.md)|Коллекция участников или ресурсов для собрания. В соответствующем **свойстве типа** укажите или для человека, а также для `required` `optional` `resource` ресурса, например комнаты собраний. Если не указано, **findMeetingTimes** предполагает `required` для свойства **типа.** Если указана пустая коллекция, действие **findMeetingTimes** ищет свободные периоды времени для организатора. Необязательный параметр.|
 |isOrganizerOptional|Edm.Boolean|Задайте значение `True`, если присутствие организатора не обязательно. Значение по умолчанию: `false`. Необязательный параметр.|
 |locationConstraint|[locationConstraint](../resources/locationconstraint.md)|Требования организатора к месту проведения собрания (например, требуется ли соответствующее предложение или собрание может пройти только в определенных местах). Необязательный параметр.|
 |maxCandidates|Edm.Int32|Максимальное количество возвращаемых предложений времени проведения собрания. Необязательный параметр.|
-|meetingDuration|Edm.Duration|Длина собрания, обозначаемая в [формате ISO 8601.](https://www.iso.org/iso/iso8601) Например, 1 час обозначается как "PT1H", где "P" является обозначением продолжительности, "T" — это обозначение времени, а "H" — это часовой конструктор. Использование M для указать минуты для продолжительности; например, 2 часа и 30 минут будут "PT2H30M". Если продолжительность собрания не указана, метод **findMeetingTimes** использует значение по умолчанию — 30 минут. Необязательное.|
+|meetingDuration|Edm.Duration|Длина собрания, обозначаемая в [формате ISO 8601.](https://www.iso.org/iso/iso8601) Например, 1 час обозначается как "PT1H", где "P" является обозначением продолжительности, "T" — это обозначение времени, а "H" — это часовой конструктор. Использование M для указать минуты для продолжительности; например, 2 часа и 30 минут будут "PT2H30M". Если продолжительность собрания не указана, метод **findMeetingTimes** использует значение по умолчанию — 30 минут. Необязательный параметр.|
 |minimumAttendeePercentage|Edm.Double| Минимальная [достоверность](#the-confidence-of-a-meeting-suggestion), необходимая, чтобы вернуть период времени в ответе. Это процентное значение от 0 до 100. Необязательный параметр.|
 |returnSuggestionReasons|Edm.Boolean|Задайте значение `True`, если требуется вернуть причину каждого предложения в свойстве **suggestionReason**. По умолчанию задано значение `false`, и это свойство не возвращается. Необязательный параметр.|
 |timeConstraint|[timeConstraint](../resources/timeconstraint.md)|Ограничения по времени для собрания, к которым могут относиться характер собрания (свойство **activityDomain**) и возможное время проведения собрания (свойство **timeSlots**). Если параметр **activityDomain** не задан, метод **findMeetingTimes** считает, что для него установлено значение `work`. Необязательный параметр.|
@@ -190,11 +190,15 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/user-findmeetingtimes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-findmeetingtimes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ##### <a name="response"></a>Отклик
-Вот пример ответа. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+Ниже представлен пример отклика. Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

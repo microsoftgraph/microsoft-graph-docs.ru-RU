@@ -1,16 +1,16 @@
 ---
 title: 'trustFrameworkKeySet: generateKey'
 description: Создание ключа и секрета автоматически в наборе ключей.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: Nickgmicrosoft
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2dd481634a9b42a9cf40d2d507e06c95b225b0c5
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: ab970f02adc1433627cb5bb6371f559a30cc1f92
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52053442"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031534"
 ---
 # <a name="trustframeworkkeyset-generatekey"></a>trustFrameworkKeySet: generateKey
 
@@ -28,7 +28,7 @@ ms.locfileid: "52053442"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | TrustFrameworkKeySet.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | TrustFrameworkKeySet.ReadWrite.All |
+| Для приложений                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ POST /trustFramework/keySets/{id}/generateKey
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,8 +51,8 @@ POST /trustFramework/keySets/{id}/generateKey
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-| использование | String | Аналогично **свойству использования** **trustFrameworkKey.** |
-| kty | String | Аналогично **свойству kty** **trustFrameworkKey.** |
+| использование | string | Аналогично **свойству использования** **trustFrameworkKey.** |
+| kty | string | Аналогично **свойству kty** **trustFrameworkKey.** |
 | nbf | int | Аналогично **свойству nbf** **trustFrameworkKey.** |
 | exp | int | Аналогично **свойству exp** **trustFrameworkKey.** |
 
@@ -97,6 +97,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/trustframeworkkeyset-generatekey-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/trustframeworkkeyset-generatekey-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

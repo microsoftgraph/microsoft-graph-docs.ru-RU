@@ -1,16 +1,16 @@
 ---
 title: Обновление обзораSetQuery
 description: Обновление свойств объекта reviewSetQuery.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 13e4117325d7a221fe2e62e4d34ddf1165d1b213
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 6b911940864d3cf4a6e50072ed5bfa28215a79cf
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786799"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022363"
 ---
 # <a name="update-reviewsetquery"></a>Обновление обзораSetQuery
 
@@ -42,7 +42,7 @@ PATCH /compliance/ediscovery/cases/{id}/reviewSets/{id}/queries/{id}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -50,8 +50,8 @@ PATCH /compliance/ediscovery/cases/{id}/reviewSets/{id}/queries/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| displayName | String | Отображение имени для проверки набора запроса. |
-| Запрос | String | Строка запроса в запросе KQL (Язык запросов ключевых слов). Подробные сведения см. [в поле метаданных документа.](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery) |
+| displayName | Строка | Отображение имени для проверки набора запроса. |
+| Запрос | Строка | Строка запроса в запросе KQL (Язык запросов ключевых слов). Подробные сведения см. [в поле метаданных документа.](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery) |
 
 ## <a name="response"></a>Отклик
 
@@ -91,6 +91,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-reviewsetquery-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-reviewsetquery-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

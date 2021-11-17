@@ -1,16 +1,16 @@
 ---
 title: Удаление действия
 description: Удаление существующей активности пользователя для приложения.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: project-rome
 doc_type: apiPageType
 author: ailae
-ms.openlocfilehash: d30fda3d79a7afe6f370a735f6ed6e331fba714b
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: 26670da0b81f3b665d7a5bc785198302a7fb83e8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401535"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61032143"
 ---
 # <a name="delete-an-activity"></a>Удаление действия
 
@@ -43,7 +43,7 @@ DELETE /me/activities/{id}
 
 |Имя | Тип | Описание|
 |:----|:-----|:-----------|
-|Authorization | string | Bearer {токен}. Обязательный.|
+|Authorization | string | Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/me/activities/13881113971988980728/
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-activity-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-activity-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

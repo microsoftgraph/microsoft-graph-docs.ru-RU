@@ -2,15 +2,15 @@
 title: Обновление mobileDeviceManagementPolicy
 description: Обновление свойств объекта управления мобильными устройствами.
 author: ravennMSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 4b5a5721795926e2774247b5fa349d9b6788ff7f99e9db7af48b08ec866d1f1b
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 6c0f0a40c7369b1ea7396c1a64af97bafc033f85
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57138849"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61023821"
 ---
 # <a name="update-mobiledevicemanagementpolicy"></a>Обновление mobileDeviceManagementPolicy
 
@@ -45,7 +45,7 @@ PATCH /policies/mobileDeviceManagementPolicies/{id}
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -59,7 +59,7 @@ PATCH /policies/mobileDeviceManagementPolicies/{id}
 |appliesTo|policyScope|Определяет группы, к которые применяется этот параметр политики. Возможные значения: `none` , `all` , `selected` **Важно: не** может использоваться при `selected` указании этого свойства. Используйте [includedGroups для](../api/mobiledevicemanagementpolicies-post-includedgroups.md) добавления определенных групп. Использование `all` удаляет все существующие группы.|
 |complianceUrl|Строка|URL-адрес соответствия приложению управления мобильностью|
 |discoveryUrl|Строка|Обнаружение URL-адреса приложения для управления мобильностью|
-|termsOfUseUrl|Строка|Условия использования URL-адреса приложения для управления мобильностью|
+|termsOfUseUrl|String|Условия использования URL-адреса приложения для управления мобильностью|
 
 ## <a name="response"></a>Отклик
 
@@ -102,6 +102,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-mobilitymanagementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-mobilitymanagementpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

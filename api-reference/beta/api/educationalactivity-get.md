@@ -1,16 +1,16 @@
 ---
 title: Get educationalActivity
 description: Извлечение свойств и связей объекта educationalActivity.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 0f232b37db300bdd674f84e08ace433eb6524ad3
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c1e128cff48c84542e38fec57fe1676f4c9a059f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52044503"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61032563"
 ---
 # <a name="get-educationalactivity"></a>Get educationalActivity
 
@@ -47,7 +47,7 @@ GET /users/{id | userPrincipalName}/profile/educationalActivities/{id}
 
 |Имя            |Описание                  |
 |:---------------|:----------------------------|
-|Авторизация   |Bearer {токен}. Обязательный.    |
+|Авторизация   |Bearer {token}. Обязательный.    |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/me/profile/educationalActivities/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationalactivity-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-educationalactivity-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

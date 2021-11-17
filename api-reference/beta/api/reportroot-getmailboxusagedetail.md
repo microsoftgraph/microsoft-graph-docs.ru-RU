@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getMailboxUsageDetail'
 description: Получите сведения об использовании почтовых ящиков.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 82c152c8041ddfa7a1a0a105821ac272712636d3
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 679b88fd2c998260b92bce61fcae99396a4029bc
+ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050929"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61044458"
 ---
 # <a name="reportroot-getmailboxusagedetail"></a>reportRoot: getMailboxUsageDetail
 
@@ -48,7 +48,7 @@ GET /reports/getMailboxUsageDetail(period='{period_value}')
 
 | Параметр | Тип   | Описание                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
+| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
 
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$format`, `$top` и `$skipToken` для настройки ответа. Тип вывода по умолчанию — текст/csv. Однако, если требуется указать тип вывода, можно использовать параметр OData $format для параметра text/csv или application/json.
 
@@ -86,7 +86,7 @@ CSV-файл содержит столбцы со следующими заго�
 
 ### <a name="json"></a>JSON
 
-В случае успешной работы этот метод возвращает код отклика и объект `200 OK` **[mailboxUsageDetail](../resources/mailboxusagedetail.md)** в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` объект JSON в тексте ответа.
 
 Размер страницы по умолчанию для этого запроса составляет 200 элементов.
 
@@ -146,7 +146,6 @@ Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Cre
 
 Ниже приведен пример запроса.
 
-
 <!-- {
   "blockType": "ignored",
   "name": "reportroot_getmailboxusagedetail_json"
@@ -159,14 +158,14 @@ GET https://graph.microsoft.com/beta/reports/getMailboxUsageDetail(period='D7')?
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.mailboxUsageDetail"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -175,7 +174,6 @@ Content-Type: application/json
 Content-Length: 526
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.mailboxUsageDetail)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 
