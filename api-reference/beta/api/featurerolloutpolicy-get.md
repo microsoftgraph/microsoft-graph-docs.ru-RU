@@ -1,16 +1,16 @@
 ---
 title: Get featureRolloutPolicy
 description: Извлечение свойств и связей объекта featurerolloutpolicy.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 9a2f650ae6c71e18e5dd69eaeb015dbd5f87c4e9
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 51afaad5df85bdb5cf4d6185589f990966fc82ea
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52042333"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61012157"
 ---
 # <a name="get-featurerolloutpolicy"></a>Get featureRolloutPolicy
 
@@ -48,7 +48,7 @@ GET /policies/featureRolloutPolicies/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token}. Обязательна |
+| Авторизация | Bearer {token}. Обязательно |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/policies/featureRolloutPolicies/df85e4d9-e8
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-featurerolloutpolicy-policies-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-featurerolloutpolicy-policies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -150,6 +154,10 @@ GET https://graph.microsoft.com/beta/policies/featureRolloutPolicies/df85e4d9-e8
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-featurerolloutpolicy-expandappliesto-policies-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-featurerolloutpolicy-expandappliesto-policies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

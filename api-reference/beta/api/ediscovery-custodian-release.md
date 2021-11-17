@@ -2,15 +2,15 @@
 title: 'хранитель: освобождение'
 description: Освобождение хранителя из дела.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: baf0eb188e0419ca5b7a34e8274515b47d3daafd
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7abe5c1d935eda380753be62fa4a150eabc6d32b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447032"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60986893"
 ---
 # <a name="custodian-release"></a>хранитель: освобождение
 
@@ -45,7 +45,7 @@ POST /compliance/ediscovery/cases/{caseId}/custodians/{custodianId}/release
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -85,6 +85,10 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/2192ca408ea241
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/custodian-release-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/custodian-release-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,15 +2,15 @@
 title: Список командной работыTagMembers
 description: Получите список объектов teamworkTagMember и их свойств.
 author: anniecolonna
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c0eca6f9469f53cb639068d712421e85b27e185f
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 972bbef7b7dcde8ee2bc9a4c7ce234a394089811
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53209166"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61017680"
 ---
 # <a name="list-members-in-a-teamworktag"></a>Список участников в командной работеTag
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "53209166"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Не поддерживается.|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|TeamworkTag.Read.All, TeamworkTag.ReadWrite.All|
+|Для приложений|TeamworkTag.Read.All, TeamworkTag.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ GET /teams/{team-Id}/tags/{teamworkTag-Id}/members
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/teams/53c53217-fe77-4383-bc5a-ed4937a1aecd/
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-teamworktagmember-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-teamworktagmember-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

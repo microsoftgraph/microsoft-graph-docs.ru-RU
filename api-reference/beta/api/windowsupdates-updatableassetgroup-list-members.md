@@ -2,15 +2,15 @@
 title: Список updatable членов группы активов
 description: Список участников ресурса updatableAssetGroup. Участники имеют тип azureADDevice.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 747bf224d4dfbddf0d7845e3ca6f4d23e48912d1
-ms.sourcegitcommit: 2a35434fabc76672e21bfc3ed5a1d28f9f3b66bc
+ms.openlocfilehash: 54c6cdad0f4da6e36df2e24be16c02bb3c1252bc
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52266694"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61009261"
 ---
 # <a name="list-updatable-asset-group-members"></a>Список updatable членов группы активов
 Пространство имен: microsoft.graph.windowsUpdates
@@ -28,7 +28,7 @@ ms.locfileid: "52266694"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|WindowsUpdates.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|WindowsUpdates.ReadWrite.All|
+|Для приложений|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,7 +48,7 @@ GET /admin/windows/updates/updatableAssets/{updatableAssetGroupId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/{upda
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-updatableasset-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-updatableasset-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

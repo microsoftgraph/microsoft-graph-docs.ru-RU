@@ -2,15 +2,15 @@
 author: JeremyKelley
 title: Получить пакет
 description: Получить пакет driveItems
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: b6f1619bbb169a92841d3999c43603860c0038fd
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: fa58b197e8240bf672f28b1bd514a4cbf3a9a3c9
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047793"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61008223"
 ---
 # <a name="get-bundle"></a>Получить пакет
 
@@ -47,8 +47,8 @@ GET /drive/items/{bundle-id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Авторизация | Носитель \{токен\}. Обязательный. |
-| if-none-match | eTag. Необязательное. Если указан заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то возвращается отклик `HTTP 304 Not Modified`.
+| Authorization | Носитель \{токен\}. Обязательный. |
+| if-none-match | eTag. Необязательный параметр. Если указан заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то возвращается отклик `HTTP 304 Not Modified`.
 
 ## <a name="request-body"></a>Тело запроса
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/drive/bundles/{bundle-id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-bundle-metadata-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-bundle-metadata-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -147,6 +151,10 @@ GET https://graph.microsoft.com/beta/drive/items/{bundle-id}?expand=children
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-bundle-and-children-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-bundle-and-children-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

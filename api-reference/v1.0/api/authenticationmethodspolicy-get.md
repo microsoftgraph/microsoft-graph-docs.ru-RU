@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 371dd371f57cb66172bdaf398343726298dbf65e
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: c53a49da33debac12798775d8f62858b06907de3
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220376"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60988657"
 ---
 # <a name="get-authenticationmethodspolicy"></a>Получить проверку подлинностиMethodsPolicy
 Пространство имен: microsoft.graph
@@ -48,12 +48,12 @@ GET /policies/authenticationMethodsPolicy
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md) в тексте ответа.
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy
 [!INCLUDE [sample-code](../includes/snippets/java/get-authenticationmethodspolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-authenticationmethodspolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -110,6 +114,20 @@ Content-Type: application/json
     "description": "The tenant-wide policy that controls which authentication methods are allowed in the tenant, authentication method registration requirements, and self-service password reset settings",
     "lastModifiedDateTime": "2021-07-02T13:34:13.1991781Z",
     "policyVersion": "1.4",
+    "registrationEnforcement": {
+        "authenticationMethodsRegistrationCampaign": {
+            "snoozeDurationInDays": 2,
+            "state": "enabled",
+            "excludeTargets": [],
+            "includeTargets": [
+                {
+                    "id": "3ee3a9de-0a86-4e12-a287-9769accf1ba2",
+                    "targetType": "group",
+                    "targetedAuthenticationMethod": "microsoftAuthenticator"
+                }
+            ]
+        }
+    },
     "authenticationMethodConfigurations@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations",
     "authenticationMethodConfigurations": [
         {

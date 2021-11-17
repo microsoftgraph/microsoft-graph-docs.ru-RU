@@ -1,16 +1,16 @@
 ---
 title: 'administrativeUnit: delta'
 description: Получите вновь созданные, обновленные или удаленные административные единицы без выполнения полного чтения всей коллекции ресурсов.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: DougKirschner
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: c454882d4feaa5b9fb0469c848ec4026e4034ba2
-ms.sourcegitcommit: 979fe005c74eb99cd971df6b9511b2d3f7fe3cd4
+ms.openlocfilehash: c1116db2d2014a3c634d7ad9662bb31aa0025186
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52992025"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987544"
 ---
 # <a name="administrativeunit-delta"></a>administrativeUnit: delta
 
@@ -62,7 +62,7 @@ GET /administrativeUnits/delta
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Носитель &lt;токен&gt;. Обязательный.|
+| Authorization  | Носитель &lt;токен&gt;. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -103,6 +103,10 @@ GET https://graph.microsoft.com/beta/administrativeUnits/delta
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/administrativeunit-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/administrativeunit-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 4dbbb8325e943dfcc3e1e859b20e00c769f9c110
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 47149de1a7e22d3f29dab08b8ab4fc3afb921f8f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60936840"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61024918"
 ---
 # <a name="update-sourcecollection"></a>Обновление sourceCollection
 
@@ -54,9 +54,9 @@ PATCH /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionI
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|contentQuery|String|Строка запроса в запросе KQL (Язык запросов ключевых слов). Подробные сведения см. в [статье Ключевые запросы и условия поиска для поиска контента и поиска электронных данных.](/microsoft-365/compliance/keyword-queries-and-search-conditions)  Поиск можно уточнить с помощью полей в паре со значениями; например, `subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016` .|
+|contentQuery|Строка|Строка запроса в запросе KQL (Язык запросов ключевых слов). Подробные сведения см. в [статье Ключевые запросы и условия поиска для поиска контента и поиска электронных данных.](/microsoft-365/compliance/keyword-queries-and-search-conditions)  Поиск можно уточнить с помощью полей в паре со значениями; например, `subject:"Quarterly Financials" AND Date>=06/01/2016 AND Date<=07/01/2016` .|
 |dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|При указании коллекция будет охватывать всю службу для всей рабочей нагрузки. Возможные значения: `none` `allTenantMailboxes` , , , `allTenantSites` `allCaseCustodians` `allCaseNoncustodialDataSources` . **Примечание:** При создании коллекции исходных данных требуется один хранитель или указание данныхSourceScope.|
-|description|String|Описание **sourceCollection**.|
+|description|Строка|Описание **sourceCollection**.|
 |displayName|String|Имя отображения **sourceCollection**.|
 
 ## <a name="response"></a>Ответ
@@ -97,6 +97,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-sourcecollection-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-sourcecollection-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

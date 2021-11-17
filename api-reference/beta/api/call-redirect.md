@@ -2,15 +2,15 @@
 title: 'вызов: перенаправление'
 description: Перенаправление входящего вызова.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7e4ffa0b1189ebf9cf6ab3d710256ab423f5bd3f
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 55639a59ef03bcca325aef88d6cfbcc246358b21
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786231"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61024044"
 ---
 # <a name="call-redirect"></a>вызов: перенаправление
 
@@ -30,7 +30,7 @@ ms.locfileid: "52786231"
 | :-------------- | :-------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                |
-| Приложение     | Calls.Initiate.All                                  |
+| Для приложений     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,7 +46,7 @@ POST /communications/calls/{id}/redirect
 
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -55,10 +55,10 @@ POST /communications/calls/{id}/redirect
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |targets|Коллекция [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Целевые участники операции перенаправления. Если задано несколько целевых объектов, это симуляцный вызов. Это означает, что все целевые объекты будут одновременно звонили и подключена только первая цель, подбираемая. Мы поддерживаем до 25 целей для simulring.
-|targetDisposition|String|(Неуловимый) Возможные значения: `default` , `simultaneousRing` , `forward` . Этот параметр обесценен, мы автоматически определяем, является ли это вызовом или симулируется из числа предоставляемых целей.|
+|targetDisposition|Строка|(Неуловимый) Возможные значения: `default` , `simultaneousRing` , `forward` . Этот параметр обесценен, мы автоматически определяем, является ли это вызовом или симулируется из числа предоставляемых целей.|
 |timeout|Int32|Период времени (в секундах) для операции перенаправления. Диапазон значения времени от 15 до 90 секунд включительно. Значение времени по умолчанию — 55 секунд для одной цели и 60 секунд для нескольких целей (при условии изменения). |
-|maskCallee|Логический|Указывает, следует ли скрывать вызываемую от вызываемой. Если это так, то идентификатор вызывающего пользователя — это идентификатор бота. По умолчанию: false.|
-|maskCaller|Логический|Указывает, следует ли скрывать вызываемую от вызываемой стороны. Если это так, то идентификатор вызывающего пользователя — это идентификатор бота. По умолчанию: false.|
+|maskCallee|Логическое|Указывает, следует ли скрывать вызываемую от вызываемой. Если это так, то идентификатор вызывающего пользователя — это идентификатор бота. По умолчанию: false.|
+|maskCaller|Логическое|Указывает, следует ли скрывать вызываемую от вызываемой стороны. Если это так, то идентификатор вызывающего пользователя — это идентификатор бота. По умолчанию: false.|
 |callbackUri|String|Это позволяет ботам предоставлять определенный URI вызова для текущего вызова для получения более поздних уведомлений. Если это свойство не установлено, вместо него будет использоваться глобальный URI вызова бота. Это должно быть `https` .|
 
 ## <a name="response"></a>Отклик
@@ -165,6 +165,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-redirect-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-redirect-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

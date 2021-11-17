@@ -2,15 +2,15 @@
 title: 'вызов: updateRecordingStatus'
 description: Обновление состояния записи приложения, связанного с вызовом.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 69893f1ff55a080e94ded88722614856c0dcf8c2
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 56bbc2640b8b60be5975399682f3622c8e37c713
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047597"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022637"
 ---
 # <a name="call-updaterecordingstatus"></a>вызов: updateRecordingStatus
 
@@ -42,7 +42,7 @@ POST /communications/calls/{id}/updateRecordingStatus
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -50,7 +50,7 @@ POST /communications/calls/{id}/updateRecordingStatus
 
 | Параметр       | Тип    | Описание                                                                           |
 |:----------------|:--------|:--------------------------------------------------------------------------------------|
-| clientContext   | String  | Уникальная строка Client Context. Максимальное ограничение — 256 шаров.                                 |
+| clientContext   | Строка  | Уникальная строка Client Context. Максимальное ограничение — 256 шаров.                                 |
 | status          | String  | Состояние записи. Возможные значения: `notRecording`, `recording` или `failed`.  |
 
 ## <a name="response"></a>Отклик
@@ -92,6 +92,10 @@ Content-Length: 79
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-updaterecordingstatus-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/call-updaterecordingstatus-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

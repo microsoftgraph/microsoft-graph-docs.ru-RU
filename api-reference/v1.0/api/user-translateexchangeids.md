@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 462800b6ce6cf235a15a2a347a068a3c229ffbeb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b4260d7c0d62f60ed9f5ef8efa44184cf58d3da9
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109649"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61012787"
 ---
 # <a name="user-translateexchangeids"></a>пользователь: translateExchangeIds
 
@@ -41,13 +41,13 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | Имя | Значение |
 |:-----|:------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
-| inputIds | Коллекция String | Коллекция идентификаторов для преобразования. Все идентификаторы в коллекции должны иметь один и тот же тип идентификатора источника и должны быть для элементов в одном почтовом ящике. Максимальный размер этой коллекции — 1000 строк. |
+| inputIds | Коллекция объектов string | Коллекция идентификаторов для преобразования. Все идентификаторы в коллекции должны иметь один и тот же тип идентификатора источника и должны быть для элементов в одном почтовом ящике. Максимальный размер этой коллекции — 1000 строк. |
 | sourceIdType | exchangeIdFormat | Идентификатор идентификаторов в `InputIds` параметре. |
 | targetIdType | exchangeIdFormat | Запрашиваемого типа ID для преобразования. |
 
@@ -114,6 +114,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-translateexchangeids-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/user-translateexchangeids-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

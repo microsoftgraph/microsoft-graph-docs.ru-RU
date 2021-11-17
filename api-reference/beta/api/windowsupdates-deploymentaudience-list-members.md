@@ -2,15 +2,15 @@
 title: Участники аудитории развертывания списка
 description: Список ресурсов updatableAsset, которые являются участниками развертыванияAudience.
 author: Alice-at-Microsoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 9b7c448596c4da96fbc9109bf92436154d4191ca
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: 33af963f1307a9bab15e6c91011859d665aa60b3
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53351134"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61004320"
 ---
 # <a name="list-deployment-audience-members"></a>Участники аудитории развертывания списка
 
@@ -30,7 +30,7 @@ ms.locfileid: "53351134"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|WindowsUpdates.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|WindowsUpdates.ReadWrite.All|
+|Для приложений|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,12 +50,12 @@ GET /admin/windows/updates/deployments/{deploymentId}/audience/members
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [updatableAsset](../resources/windowsupdates-updatableasset.md) в тексте ответа.
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deployments/{deployme
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-updatableasset-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-updatableasset-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: Обновление userFlowIdentityProvider
 description: Обновление identityProvider в b2xIdentityUserFlow.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 2cbd29378ec3418d39705e0a5cda33bc168f9789fde2d27e5d1241fbf8e4cf17
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 48ceb60eef475325093a86255cfb0be0dfd73879
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57142674"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60990785"
 ---
 # <a name="update-a-userflowidentityprovider"></a>Обновление userFlowIdentityProvider
 
@@ -28,7 +28,7 @@ ms.locfileid: "57142674"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение| IdentityUserFlow.ReadWrite.All|
+|Для приложений| IdentityUserFlow.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
@@ -47,7 +47,7 @@ PATCH /identity/b2xUserFlows/{userflow-id}/userflowIdentityProviders/$ref
 
 |Имя|Описание|
 |:---------------|:----------|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -95,6 +95,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-b2xuserflows-userflowidentityprovider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-b2xuserflows-userflowidentityprovider-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

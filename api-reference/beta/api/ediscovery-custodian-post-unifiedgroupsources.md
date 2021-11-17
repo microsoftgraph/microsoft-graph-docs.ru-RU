@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 3a0c677bf8d3f2262e7383768248433ff33654b6
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 806b7811267bba98108eb7ed76107ba8ed10ee13
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60946294"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60986933"
 ---
 # <a name="create-unifiedgroupsource"></a>Создание unifiedGroupSource
 
@@ -59,8 +59,8 @@ POST /compliance/ediscovery/cases/4c8f8f70-7785-4bd4-b296-c98376a2c5e1/custodian
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |includedSources|microsoft.graph.ediscovery.sourceType|Указывает, какие источники включены в эту группу. Возможные значения: `mailbox`, `site`.|
-|group;|String|Указывает адрес электронной почты для группы. Чтобы получить адрес электронной почты группы, используйте [группы списка](../api/group-list.md) или [группу Get.](../api/group-get.md) Затем можно запрашивать по имени группы с `$filter` помощью; например, `https://graph.microsoft.com/v1.0/groups?$filter=displayName eq 'secret group'&$select=mail,id,displayName` .|
-|group@odata.bind|String|ID группы. Вы можете получить это таким же образом, как и группу. |
+|group;|Строка|Указывает адрес электронной почты для группы. Чтобы получить адрес электронной почты группы, используйте [группы списка](../api/group-list.md) или [группу Get.](../api/group-get.md) Затем можно запрашивать по имени группы с `$filter` помощью; например, `https://graph.microsoft.com/v1.0/groups?$filter=displayName eq 'secret group'&$select=mail,id,displayName` .|
+|group@odata.bind|Строка|ID группы. Вы можете получить это таким же образом, как и группу. |
 
 ## <a name="response"></a>Отклик
 
@@ -105,6 +105,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-unifiedgroupsource-from-email-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedgroupsource-from-email-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -177,6 +181,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-unifiedgroupsource-from-id-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedgroupsource-from-id-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

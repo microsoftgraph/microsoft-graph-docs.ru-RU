@@ -2,15 +2,15 @@
 title: Удаление тега
 description: Удаление объекта тега.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 8c21df5939cde9b707dd913dbfa383ba1e950d53
-ms.sourcegitcommit: 40947e6f4337c8c4193d85bb862e15f67263e1e7
+ms.openlocfilehash: fec318d4c154b68a7b84cc54c386772cd658dc9c
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50776461"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61012269"
 ---
 # <a name="delete-tag"></a>Удаление тега
 
@@ -47,13 +47,13 @@ DELETE /compliance/ediscovery/cases/{caseId}/tags/{tagId}?forcedelete=true
 
 | Параметр     | Тип    | Описание                                                                              |
 |:--------------|:--------|:-----------------------------------------------------------------------------------------|
-| forcedelete   | Boolean | Если задайте true, тег и дети будут удалены, если ложные, а тег имеет детей, удаление не удастся. |
+| forcedelete   | Логическое | Если задайте true, тег и дети будут удалены, если ложные, а тег имеет детей, удаление не удастся. |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -92,6 +92,10 @@ DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-tag-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-tag-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

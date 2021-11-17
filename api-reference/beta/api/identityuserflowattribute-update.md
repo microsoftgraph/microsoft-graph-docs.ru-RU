@@ -1,16 +1,16 @@
 ---
 title: Обновление identityUserFlowAttribute
 description: Обновление свойств identityUserFlowAttribute.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 7f9f5589069e6b96115f73edb653d7262efe445a
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 16a4181a33c9934adfab7e3a0612bc3c058f1b59
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50625823"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60974914"
 ---
 # <a name="update-identityuserflowattribute"></a>Обновление identityUserFlowAttribute
 
@@ -28,12 +28,12 @@ ms.locfileid: "50625823"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение| IdentityUserFlow.ReadWrite.All|
+|Для приложений| IdentityUserFlow.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор атрибутов потока внешних удостоверений пользователей
+* Администратор атрибутов внешних Flow удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +47,7 @@ PATCH /identity/userFlowAttributes/{id}
 
 |Имя|Описание|
 |:---------------|:----------|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -58,7 +58,7 @@ PATCH /identity/userFlowAttributes/{id}
 
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
-|description|String|Описание атрибута потока пользователей. Он отображается пользователю во время регистрации.|
+|description|Строка|Описание атрибута потока пользователей. Он отображается пользователю во время регистрации.|
 
 ## <a name="response"></a>Отклик
 
@@ -100,6 +100,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-userflowattributes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-userflowattributes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

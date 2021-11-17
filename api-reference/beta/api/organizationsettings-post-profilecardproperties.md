@@ -1,16 +1,16 @@
 ---
 title: Создание profileCardProperty
 description: Используйте этот API для создания нового профиляCardProperty.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 5c9b43c3ca76416db4d319fdfcd7631d5eaf3a9b
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e63aa68f341b89a2e39556d9a337cd8f3919bf50
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055591"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026612"
 ---
 # <a name="create-profilecardproperty"></a>Создание profileCardProperty
 
@@ -46,7 +46,7 @@ POST https://graph.microsoft.com/beta/organization/{organizationId}/settings/pro
 
 | Имя          |Описание                  |
 |:--------------|:----------------------------|
-| Авторизация | Bearer {токен}. Обязательный.   |
+| Авторизация | Bearer {token}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -102,6 +102,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-profilecardproperty-from-organizationsettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-profilecardproperty-from-organizationsettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

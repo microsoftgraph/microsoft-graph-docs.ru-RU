@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5014313cb7bf58070c7b24e044adccd4392892ff
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 4feddec3a5757769abdda1010e4aab171711a592
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60941542"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61029105"
 ---
 # <a name="create-todotasklist"></a>Создание todoTaskList
 Пространство имен: microsoft.graph
@@ -50,7 +50,7 @@ POST /users/{id|userPrincipalName}/todo/lists
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Поле, указывающее название списка задач.|
+|displayName|Строка|Поле, указывающее название списка задач.|
 
 ## <a name="response"></a>Отклик
 
@@ -89,6 +89,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-todotasklist-from-lists-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-todotasklist-from-lists-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

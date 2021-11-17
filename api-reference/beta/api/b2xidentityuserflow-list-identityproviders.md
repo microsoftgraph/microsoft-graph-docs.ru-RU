@@ -1,16 +1,16 @@
 ---
 title: Список всех identityProviders в b2xIdentityUserFlow (обесценив)
 description: Список всех identityProviders в b2xIdentityUserFlow (обесценив).
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 7b92da67e8969ffb54fe6a65469f6bd428d6e240
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: a9f94e79014b71c129d61984a19769873db80831
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439632"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60999802"
 ---
 # <a name="list-all-identityproviders-in-a-b2xidentityuserflow-deprecated"></a>Список всех identityProviders в b2xIdentityUserFlow (обесценив)
 
@@ -29,7 +29,7 @@ ms.locfileid: "53439632"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение| IdentityUserFlow.ReadWrite.All|
+|Для приложений| IdentityUserFlow.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
@@ -48,7 +48,7 @@ GET /identity/b2xUserFlows/{id}/identityProviders
 
 |Имя|Описание|
 |:---------------|:----------|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/identityProvider
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-b2xuserflow-list-identityproviders-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-b2xuserflow-list-identityproviders-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

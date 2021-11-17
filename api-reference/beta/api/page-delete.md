@@ -1,16 +1,16 @@
 ---
 title: Удаление страницы
-description: Удаление страницы OneNote.
-localization_priority: Normal
+description: Удалите OneNote страницу.
+ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 8b8855631810cc20b5f1c6e7e82fb908d6bcedf8
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 04775dcaa172ca41da7caea79547380612d89918
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48964420"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026522"
 ---
 # <a name="delete-page"></a>Удаление страницы
 
@@ -18,13 +18,13 @@ ms.locfileid: "48964420"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление страницы OneNote.
+Удалите OneNote страницу.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Notes. ReadWrite, Notes. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Notes.ReadWrite, Notes.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Notes.ReadWrite    |
 |Для приложений | Notes.ReadWrite.All |
 
@@ -71,6 +71,10 @@ DELETE https://graph.microsoft.com/beta/me/onenote/pages/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-page-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-page-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

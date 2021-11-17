@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 920c9c5ff59f544d46bc6fb03d86395d1ba34998
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 44e46ced2e62a8832ea194c8f8548f31b9e816f7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59008498"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61009106"
 ---
 # <a name="create-call"></a>Создание звонка
 
@@ -26,7 +26,7 @@ ms.locfileid: "59008498"
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                                                                           |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                                                                           |
-| Для приложений                            | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate. Все, Calls.InitiateGroupCalls.All |
+| Для приложений                            | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All |
 
 > **Примечание:** Для вызова с помощью носители, на которые есть приложения, требуется разрешение Calls.AccessMedia.All в дополнение к одному из разрешений, перечисленных в таблице выше.
 
@@ -39,7 +39,7 @@ POST /communications/calls
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -52,7 +52,7 @@ POST /communications/calls
 
 ### <a name="example-1-create-peer-to-peer-voip-call-with-service-hosted-media"></a>Пример 1. Создание одноранговых вызовов VoIP с помощью средств массовой информации службы
 
-> **Примечание:** Этот вызов требует Calls.Initiate. Все разрешения.
+> **Примечание:** Этот вызов требует разрешения Calls.Initiate.All.
 
 ##### <a name="request"></a>Запрос
 В следующем примере показан запрос, который делает одноранговой вызов между ботом и указанным пользователем. В этом примере носители хозяйской службы. Значения маркера авторизации, URL-адреса, ID приложения, имени приложения, пользовательского ИД, имени пользователя и ИД клиента должны быть заменены фактическими значениями, чтобы сделать пример работой.
@@ -106,6 +106,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-call-service-hosted-media-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-call-service-hosted-media-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -254,7 +258,7 @@ Content-Type: application/json
 
 ### <a name="example-2-create-peer-to-peer-voip-call-with-application-hosted-media"></a>Пример 2. Создание одноранговых вызовов VoIP с помощью средств массовой информации приложения
 
-> **Примечание.** В этом примере Calls.Initiate. Все разрешения и разрешения Calls.AccessMedia.All.
+> **Примечание.** В этом примере необходимы разрешения Calls.Initiate.All и Calls.AccessMedia.All.
 
 ##### <a name="request"></a>Запрос
 В следующем примере показан запрос, который делает одноранговой вызов между ботом и указанным пользователем. В этом примере средства массовой информации локализованы приложением. Значения маркера авторизации, URL-адреса вызова, id приложения, имени приложения, пользовательского именем пользователя и id клиента должны быть заменены фактическими значениями, чтобы сделать пример работой.
@@ -322,6 +326,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-call-app-hosted-media-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-call-app-hosted-media-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -903,13 +911,13 @@ Content-Type: application/json
 
 ### <a name="example-7-create-peer-to-peer-pstn-call-with-service-hosted-media"></a>Пример 7. Создание одноранговых вызовов PSTN с помощью средства массовой информации службы
 
-> **Примечание:** Этот вызов требует Calls.Initiate. Все разрешения.
+> **Примечание:** Этот вызов требует разрешения Calls.Initiate.All.
 
 Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту.](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)
 
 #### <a name="request"></a>Запрос
 В следующем примере показан запрос на одноранговой вызов между ботом и номером PSTN. В этом примере носители хозяйской службы. Для работы примера необходимо заменить значения маркера авторизации, URL-адреса вызова, ID экземпляра приложения, имени экземпляра приложения, ИД телефона и ID клиента.
-> **Примечание:** ID экземпляра приложения — это объектный ID экземпляра приложения. ID приложения, на который ссылались экземпляры приложений, должен соответствовать тому, который есть в маркере авторизации. Телефон ID — это номер телефона в формате E.164.
+> **Примечание:** ID экземпляра приложения — это объектный ID экземпляра приложения. ID приложения, на который ссылались экземпляры приложений, должен соответствовать тому, который есть в маркере авторизации. Телефон — это номер телефона в формате E.164.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -967,6 +975,10 @@ Content-Type: application/json
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-call-service-hosted-media-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-call-service-hosted-media-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -1062,13 +1074,13 @@ Content-Type: application/json
 
 ### <a name="example-8-create-peer-to-peer-pstn-call-with-application-hosted-media"></a>Пример 8. Создание одноранговых вызовов PSTN с помощью средств массовой информации, на которые было организовано приложение.
 
-> **Примечание.** В этом примере Calls.Initiate. Все разрешения и разрешения Calls.AccessMedia.All.
+> **Примечание.** В этом примере требуются разрешения Calls.Initiate.All и Calls.AccessMedia.All.
 
 Для этого вызова требуется экземпляр приложения с присвоенным номером PSTN. Подробные сведения см. [в материале Назначение номера телефона боту.](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot)
 
 #### <a name="request"></a>Запрос
 В следующем примере показан запрос на одноранговой вызов между ботом и номером PSTN. В этом примере средства массовой информации локализованы приложением. Для работы примера необходимо заменить значения маркера авторизации, URL-адреса вызова, ID экземпляра приложения, имени экземпляра приложения, ИД телефона и ID клиента.
-> **Примечание:** ID экземпляра приложения — это объектный ID экземпляра приложения. ID приложения, на который ссылались экземпляры приложений, должен соответствовать тому, который есть в маркере авторизации. Телефон ID — это номер телефона в формате E.164.
+> **Примечание:** ID экземпляра приложения — это объектный ID экземпляра приложения. ID приложения, на который ссылались экземпляры приложений, должен соответствовать тому, который есть в маркере авторизации. Телефон — это номер телефона в формате E.164.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -1127,6 +1139,10 @@ Content-Type: application/json
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-call-service-hosted-media-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-call-service-hosted-media-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

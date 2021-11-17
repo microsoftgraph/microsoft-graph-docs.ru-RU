@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 4b8b91de426912d8a706a3af483e7a3257e1d325
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 3e172161c5b0a37155e69e90f72688906d07bdb4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947729"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60998169"
 ---
 # <a name="create-b2cidentityuserflow"></a>Создание b2cIdentityUserFlow
 
@@ -57,10 +57,10 @@ POST /identity/b2cUserFlows
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
 |id|String|Обязательный. Имя пользовательского потока. Если префикс не был добавлен в имя во время запроса, имя будет предварительно заранее `B2C_1_` запродляться после создания. |
-|userFlowType|String|Обязательный. Тип пользовательского потока, который вы создаете. Поддерживаемые значения для **userFlowType**:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
+|userFlowType|Строка|Обязательный. Тип пользовательского потока, который вы создаете. Поддерживаемые значения для **userFlowType**:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
 |userFlowTypeVersion|С плавающей запятой|Обязательный. Версия пользовательского потока.|
 |isLanguageCustomizationEnabled|Логический|Необязательный параметр. Определяет, включена ли настройка языка в потоке пользователей Azure AD B2C. Настройка языка не включена по умолчанию для потоков пользователей Azure AD B2C.|
-|defaultLanguageTag|String|Необязательный параметр.  Указывает язык по умолчанию b2cIdentityUserFlow, который используется, когда в запросе не указан `ui_locale` тег. Это поле соответствует спецификации [RFC 5646](https://tools.ietf.org/html/rfc5646).|
+|defaultLanguageTag|Строка|Необязательный параметр.  Указывает язык по умолчанию b2cIdentityUserFlow, который используется, когда в запросе не указан `ui_locale` тег. Это поле соответствует спецификации [RFC 5646](https://tools.ietf.org/html/rfc5646).|
 |identityProviders|Коллекция объектов [identityProvider](../resources/identityprovider.md)|Необязательный параметр. Поставщики удостоверений, которые необходимо включить в поток пользователей.|
 
 ## <a name="response"></a>Отклик
@@ -107,6 +107,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-b2cuserflow-from-b2cuserflows-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-b2cuserflow-from-b2cuserflows-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -186,6 +190,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-b2cuserflow-from-b2cuserflows-identityprovider-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-b2cuserflow-from-b2cuserflows-identityprovider-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -280,6 +288,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-b2cuserflow-from-b2cuserflows-apiconnectors-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-b2cuserflow-from-b2cuserflows-apiconnectors-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

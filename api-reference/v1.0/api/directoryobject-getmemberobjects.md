@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 182b0d12f3854533816aa46c2ed250f9fbe7e555
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: d6683b83a0d26d53f592641f04120618b9e29fb8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289373"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60979268"
 ---
 # <a name="get-member-objects"></a>Вывод объектов членства
 
@@ -27,7 +27,7 @@ ms.locfileid: "60289373"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | User.Read.All и Group.Read.All, Directory.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | User.Read.All и Group.Read.All, Directory.Read.All |
+|Для приложений | User.Read.All и Group.Read.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ POST /directoryObjects/{id}/getMemberObjects
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Boolean| `true` чтобы указать, что должны возвращаться только группы безопасности, в которые входит объект; чтобы указать, что все роли групп и каталогов, в которые входит объект, `false` должны быть возвращены. **Примечание.** Функция может быть вызвана пользователю только в том случае, если параметр `true` . |
+|securityEnabledOnly|Логическое| `true` чтобы указать, что должны возвращаться только группы безопасности, в которые входит объект; чтобы указать, что все роли групп и каталогов, в которые входит объект, `false` должны быть возвращены. **Примечание.** Функция может быть вызвана пользователю только в том случае, если параметр `true` . |
 
 ## <a name="response"></a>Отклик
 
@@ -86,6 +86,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/directoryobject-getmemberobjects-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/directoryobject-getmemberobjects-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

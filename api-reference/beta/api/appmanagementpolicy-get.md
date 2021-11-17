@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: madansr7
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: dae94a994ebc1718cbc6e40f3f068c1353685f39
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 4e42f71436f03370df0f98ee5e1dc24da1c423f8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694090"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61000040"
 ---
 # <a name="get-appmanagementpolicy"></a>Get appManagementPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "60694090"
 | :------------------------------------- | :--------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                             |
-| Application                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
+| Для приложений                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-appmanagementpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-appmanagementpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

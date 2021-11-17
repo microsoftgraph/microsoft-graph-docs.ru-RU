@@ -1,16 +1,16 @@
 ---
 title: Удаление объекта MailFolder
-description: Удалите указанный mailFolder или mailSearchFolder.
+description: Удаление указанного mailFolder или mailSearchFolder.
 author: abheek-das
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2574d3e220e61fb7fa7a61c8c23240348a1594c7
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 47f657d0dc138716b81bac135690cbe8d342ddca
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50136761"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022181"
 ---
 # <a name="delete-mailfolder"></a>Удаление объекта MailFolder
 
@@ -18,11 +18,11 @@ ms.locfileid: "50136761"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите указанный [mailFolder.](../resources/mailfolder.md) Папка может быть [mailSearchFolder.](../resources/mailsearchfolder.md)
+Удаление указанного [mailFolder](../resources/mailfolder.md). Папка может быть [mailSearchFolder](../resources/mailsearchfolder.md).
 
-Вы можете указать папку почты по ее ИД или по ее известному [имени,](../resources/mailfolder.md)если она существует.
+Вы можете указать папку почты по ее [](../resources/mailfolder.md)ИД папки или по имени известной папки, если она существует.
 
->**Примечание** Возможно, вам не удастся удалить элементы из папки удаления элементов для восстановления (представленные известным именем `recoverableitemsdeletions` папки). Дополнительные [сведения см. в](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) статьях "Хранение удаленных элементов" и "Очистка [удаленных](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) элементов".
+>**Примечание** Возможно, вы не сможете удалить элементы в папке удаления элементов(представлена известным именем `recoverableitemsdeletions` папки). Дополнительные [сведения см. в](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) статье [Хранение](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) удаленных элементов и очистка удаленных элементов.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -42,7 +42,7 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -76,6 +76,10 @@ DELETE https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-mailfolder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-mailfolder-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

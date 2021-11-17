@@ -3,12 +3,12 @@ title: Установка SDK Graph Microsoft
 description: Содержит инструкции по установке C#, Java, Javascript, Objective-C, PHP и Ruby Microsoft Graph SDKs.
 ms.localizationpriority: medium
 author: MichaelMainer
-ms.openlocfilehash: b8d82f1b19a6132fa9a7be4e8c94a7eca9ac2157
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3df00fb5989783c6f3b22c9dba72e28692910c49
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59025547"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022708"
 ---
 # <a name="install-the-microsoft-graph-sdks"></a>Установка SDKs Graph Microsoft
 
@@ -18,16 +18,28 @@ SDKs Graph Microsoft доступны для включаемой в проек�
 
 SDK Graph Microsoft NuGet:
 
-- [Microsoft. Graph](https://github.com/microsoftgraph/msgraph-sdk-dotnet) - Содержит модели и запрашивает у строителей доступ к конечной точке с помощью `v1.0` свободного API. Microsoft. Graph зависит от Microsoft. Graph. Core.
+- [Microsoft. Graph](https://github.com/microsoftgraph/msgraph-sdk-dotnet) — содержит модели и запрашивает у строителей доступ к конечной точке с помощью `v1.0` свободного API. Microsoft. Graph зависит от Microsoft. Graph. Core.
 - [Microsoft. Graph. Бета-версия](https://github.com/microsoftgraph/msgraph-beta-sdk-dotnet) — содержит модели и запрашивает у строителей доступ к конечной точке с помощью `beta` свободного API. Microsoft. Graph. Бета-версия зависит от Microsoft. Graph. Core.
 - [Microsoft. Graph. Core](https://github.com/microsoftgraph/msgraph-sdk-dotnet) — основная библиотека для звонков в Microsoft Graph.
-- [Microsoft. Graph. Auth](https://github.com/microsoftgraph/msgraph-sdk-dotnet-auth) — предоставляет обертку на основе сценариев проверки подлинности в Библиотеке проверки подлинности Майкрософт (MSAL) для использования в microsoft Graph SDK. Microsoft. Graph. Auth имеет зависимость от Microsoft. Graph. Core.
 
-Для установки Microsoft можно использовать [диспетчер пакетов пользовательского](/nuget/quickstart/install-and-use-a-package-in-visual-studio) интерфейса Visual Studio или консоли диспетчер пакетов консоли. Graph пакеты в проект. Следующие команды диспетчер пакетов консоли установят Microsoft. Graph, Microsoft. Graph. Core и Microsoft. Graph. Библиотеки Auth. Microsoft. Graph. Core устанавливается в зависимости от Microsoft. Graph.
+Для установки пакетов Microsoft.Graph в проект можно использовать диспетчер пакетов пользовательского интерфейса Visual Studio консоли [диспетчер пакетов](/nuget/quickstart/install-and-use-a-package-in-visual-studio) консоли. Следующие команды диспетчер пакетов консоли установят Microsoft.Graph и Microsoft.Graph. Основные библиотеки. Microsoft. Graph. Core устанавливается в зависимости от Microsoft. Graph.
 
 ```PowerShell
 Install-Package Microsoft.Graph
-Install-Package Microsoft.Graph.Auth -IncludePrerelease
+```
+
+## <a name="install-the-microsoft-graph-go-sdk-preview"></a>Установка SDK Graph Microsoft Graph (предварительный просмотр)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+SDK Graph Microsoft Graph включен в следующие пакеты:
+
+- [Microsoft Graph SDK для go](https://github.com/microsoftgraph/msgraph-sdk-go) — содержит модели и запрашивает у строителей доступ к конечной точке с помощью `v1.0` свободного API.
+- [Microsoft Graph SDK для go](https://github.com/microsoftgraph/msgraph-beta-sdk-go) — содержит модели и запрашивает у строителей доступ к конечной точке с помощью `beta` свободного API.
+- [Microsoft Graph SDK для go](https://github.com/microsoftgraph/msgraph-sdk-go-core) — основная библиотека для звонков в Microsoft Graph.
+
+```Shell
+go get -u github.com/microsoftgraph/msgraph-sdk-go
 ```
 
 ## <a name="install-the-microsoft-graph-java-sdk"></a>Установка microsoft Graph Java SDK
@@ -138,7 +150,7 @@ pod 'MSGraphMSALAuthProvider'
 composer require microsoft/microsoft-graph
 ```
 
-### <a name="install-the-microsoft-graph-php-sdk-using-composerjson"></a>Установка SDK Graph microsoft composer.js
+### <a name="install-the-microsoft-graph-php-sdk-using-composerjson"></a>Установите microsoft Graph PHP SDK с помощью composer.json
 
 ```json
 {

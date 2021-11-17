@@ -5,12 +5,12 @@ author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 210dd689ea2489003f5355395a76c4bd6da513a3
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: ca562148b20f2953a7c3cd33332a07c7c8877d46
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766703"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60979934"
 ---
 # <a name="list-samlorwsfedexternaldomainfederations"></a>Список samlOrWsFedExternalDomainFederations
 Пространство имен: microsoft.graph
@@ -27,7 +27,7 @@ ms.locfileid: "59766703"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Domain.Read.All, Domain.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложения|Domain.Read.All, Domain.ReadWrite.All|
+|Для приложений|Domain.Read.All, Domain.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
@@ -49,7 +49,7 @@ GET /directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederatio
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/directory/federationConfigurations/graph.sa
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-samlorwsfedexternaldomainfederation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-samlorwsfedexternaldomainfederation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

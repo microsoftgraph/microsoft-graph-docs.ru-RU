@@ -1,16 +1,16 @@
 ---
 title: List certificateBasedAuthConfigurations
 description: Получите список объектов certificatebasedauthconfiguration.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: adimitui
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: b2a858bcd1d504f774da17e65bfa4657216e8730
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 959b18bfc68c1752e13b16bf74a21176add08f76
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047562"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026983"
 ---
 # <a name="list-certificatebasedauthconfigurations"></a>List certificateBasedAuthConfigurations
 
@@ -31,7 +31,7 @@ ms.locfileid: "52047562"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Organization.Read.All, Organization.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение    | Organization.Read.All, Organization.ReadWrite.All |
+| Для приложений    | Organization.Read.All, Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ GET /organization/{id}/certificateBasedAuthConfiguration
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/organization/{id}/certificateBasedAuthConfi
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-certificatebasedauthconfigurations-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-certificatebasedauthconfigurations-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

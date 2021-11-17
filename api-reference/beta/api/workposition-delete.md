@@ -1,24 +1,24 @@
 ---
-title: Удаление Воркпоситион
-description: Удаление объекта Воркпоситион из профиля пользователя.
-localization_priority: Normal
+title: Удаление workPosition
+description: Удаление объекта workPosition из профиля пользователя.
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 372c1518a7c7c6e63d0671b13175b75418003b1d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 97a42b9bf0252343e435c677fad8fd689d748760
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48977380"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61016476"
 ---
-# <a name="delete-workposition"></a>Удаление Воркпоситион
+# <a name="delete-workposition"></a>Удаление workPosition
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление определенного объекта [воркпоситион](../resources/workposition.md) из [профиля](../resources/profile.md)пользователя.
+Удаление определенного [объекта workPosition](../resources/workposition.md) из профиля [пользователя.](../resources/profile.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "48977380"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL          |
-| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL          |
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All          |
+| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All          |
 | Для приложений                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,7 +43,7 @@ DELETE /users/{id | userPrincipalName}/profile/positions/{id}
 
 | Имя           |Описание                  |
 |:---------------|:----------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.   |
+| Авторизация  | Bearer {token}. Обязательный.   |
 | Content-Type   | application/json. Обязательный. |
 
 
@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/me/profile/positions/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-workposition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-workposition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

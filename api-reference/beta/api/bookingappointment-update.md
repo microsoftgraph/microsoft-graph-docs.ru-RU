@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: c63b783e3658603e4fabaf3497c362fd39d3b78c
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: cfa8c1e1749735d535f4950075fd8667020db616
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687566"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60990681"
 ---
 # <a name="update-bookingappointment"></a>Обновление bookingappointment
 
@@ -43,34 +43,34 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|customerEmailAddress|String|SMTP-адрес [bookingCustomer,](../resources/bookingcustomer.md) который бронирует встречу.|
-|customerId|String|ID [bookingCustomer](../resources/bookingcustomer.md) для этого назначения. Если при назначении не указывается номер, создается новый объект **bookingCustomer.** После набора следует считать **customerId** неуменяемым.|
+|customerEmailAddress|Строка|SMTP-адрес [bookingCustomer,](../resources/bookingcustomer.md) который бронирует встречу.|
+|customerId|Строка|ID [bookingCustomer](../resources/bookingcustomer.md) для этого назначения. Если при назначении не указывается номер, создается новый объект **bookingCustomer.** После набора следует считать **customerId** неуменяемым.|
 |customerLocation|[location](../resources/location.md)|Представляет сведения о расположении [для bookingCustomer,](../resources/bookingcustomer.md) который бронирует встречу.|
-|имя клиента|String|Имя клиента.|
-|customerNotes|String|Заметки от клиента, связанного с этим назначением. Значение можно получить только при чтении этого **bookingAppointment** по его ID. <br> Это свойство можно установить только при первоначальном создании встречи с новым клиентом. После этого значение вычисляется от клиента, представленного **customerId.**|
-|customerPhone|String|Номер телефона клиента.|
-|customerTimeZone|String|Часовой пояс клиента. Список возможных значений см. в [списке dateTimeTimeZone.](../resources/datetimetimezone.md)|
+|имя клиента|Строка|Имя клиента.|
+|customerNotes|Строка|Заметки от клиента, связанного с этим назначением. Значение можно получить только при чтении этого **bookingAppointment** по его ID. <br> Это свойство можно установить только при первоначальном создании встречи с новым клиентом. После этого значение вычисляется от клиента, представленного **customerId.**|
+|customerPhone|Строка|Номер телефона клиента.|
+|customerTimeZone|Строка|Часовой пояс клиента. Список возможных значений см. в [списке dateTimeTimeZone.](../resources/datetimetimezone.md)|
 |duration|Длительность|Продолжительность встречи, обозначаемая в [формате ISO8601.](https://www.iso.org/iso-8601-date-and-time-format.html) |
 |end|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата, время и часовой пояс, которые заканчивается встреча.|
 |invoiceAmount|Double|Выставленная на счету сумма.|
 |invoiceDate|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата, время и часовой пояс счета-фактуры для этого назначения.|
-|invoiceId|String|ID счета-фактуры.|
-|invoiceStatus|string| Состояние счета. Возможные значения: `draft`, `reviewing`, `open`, `canceled`, `paid`, `corrective`.|
-|invoiceUrl|String|URL-адрес счета в Microsoft Bookings.|
-|isLocationOnline|Логический|True указывает, что встреча будет проходить в Интернете. Значение по умолчанию − ложь.|
+|invoiceId|Строка|ID счета-фактуры.|
+|invoiceStatus|Строка| Состояние счета. Возможные значения: `draft`, `reviewing`, `open`, `canceled`, `paid`, `corrective`.|
+|invoiceUrl|Строка|URL-адрес счета в Microsoft Bookings.|
+|isLocationOnline|Логическое|True указывает, что встреча будет проходить в Интернете. Значение по умолчанию − ложь.|
 |optOutOfCustomerEmail|Логический|True указывает, что [bookingCustomer](../resources/bookingcustomer.md) для этого назначения не желает получать подтверждение для этого назначения.|
 |postBuffer|Длительность|Количество времени, необходимое для резерва после окончания встречи, для очистки в качестве примера. Значение выражается в [формате ISO8601.](https://www.iso.org/iso-8601-date-and-time-format.html) |
 |preBuffer|Длительность|Количество времени, необходимое для резерва перед началом встречи, для подготовки в качестве примера. Значение выражается в [формате ISO8601.](https://www.iso.org/iso-8601-date-and-time-format.html)|
 |цена|Double|Обычная цена встречи для указанного [bookingService.](../resources/bookingservice.md)|
-|priceType|string| Параметр, который обеспечивает гибкость структуры ценообразования служб. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
+|priceType|Строка| Параметр, который обеспечивает гибкость структуры ценообразования служб. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
 |напоминания|[коллекция bookingReminder](../resources/bookingreminder.md)|Коллекция напоминаний клиентов, отправленных для этого назначения. Значение этого свойства доступно только при чтении этого **bookingAppointment** по его ID.|
-|selfServiceAppointmentId|String|Дополнительный ИД отслеживания для встречи, если назначение было создано непосредственно клиентом на странице планирования, а не сотрудником от имени клиента.|
+|selfServiceAppointmentId|Строка|Дополнительный ИД отслеживания для встречи, если назначение было создано непосредственно клиентом на странице планирования, а не сотрудником от имени клиента.|
 |serviceId|Строка|ID службы [bookingService,](../resources/bookingservice.md) связанной с этим назначением.|
 |serviceLocation|[location](../resources/location.md)|Расположение, в котором доставляется служба.|
-|serviceName|String|Имя **bookingService, связанного** с этим назначением.<br>Это свойство является необязательным при создании новой встречи. Если не указано, оно вычисляется из службы, связанной с назначением **свойством serviceId.**|
+|serviceName|Строка|Имя **bookingService, связанного** с этим назначением.<br>Это свойство является необязательным при создании новой встречи. Если не указано, оно вычисляется из службы, связанной с назначением **свойством serviceId.**|
 |serviceNotes|String|Заметки [из bookingStaffMember](../resources/bookingstaffmember.md). Значение этого свойства доступно только при чтении этого **bookingAppointment** по его ID.|
-|smsNotificationsEnabled|Логический|True указывает, что sms-уведомления будут отправлены клиентам для встречи. Значение по умолчанию − ложь.|
-|staffMemberIds|Коллекция строк|ID каждого [бронированияStaffMember,](../resources/bookingstaffmember.md) который запланирован в этом назначении.|
+|smsNotificationsEnabled|Логическое|True указывает, что sms-уведомления будут отправлены клиентам для встречи. Значение по умолчанию − ложь.|
+|staffMemberIds|Коллекция String|ID каждого [бронированияStaffMember,](../resources/bookingstaffmember.md) который запланирован в этом назначении.|
 |начать|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата, время и часовой пояс, в который начинается встреча.|
 
 
@@ -122,6 +122,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-bookingappointment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-bookingappointment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: 'приложение: setVerifiedPublisher'
 description: Установка проверенного издателя приложения.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jesakowi
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: a5e9fe1f9d6b5bb68b9f01963f0413cbcf10e15d
-ms.sourcegitcommit: 5bb981b4853663354a566d4a4a5cbf288939e441
+ms.openlocfilehash: bae85faa7adc5fb2152bb68a0f0e2a7864baf129
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "53578883"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982861"
 ---
 # <a name="application-setverifiedpublisher"></a>приложение: setVerifiedPublisher
 
@@ -26,7 +26,7 @@ ms.locfileid: "53578883"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-|Приложение | Не поддерживается |
+|Для приложений | Не поддерживается |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,7 @@ POST /applications/{id}/setVerifiedPublisher
 
 | Имя           | Описание                |
 |:---------------|:---------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type   | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -49,7 +49,7 @@ POST /applications/{id}/setVerifiedPublisher
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| verifiedPublisherId | string | ID microsoft Partner Network (MPNID) проверенного издателя, который будет задат в приложении, из учетной записи Центра партнеров издателя. |
+| verifiedPublisherId | Строка | ID microsoft Partner Network (MPNID) проверенного издателя, который будет задат в приложении, из учетной записи Центра партнеров издателя. |
 
 ## <a name="response"></a>Отклик
 
@@ -90,6 +90,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/application-setverifiedpublisher-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/application-setverifiedpublisher-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
