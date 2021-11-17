@@ -2,15 +2,15 @@
 title: 'хранитель: активируйте'
 description: Повторно активировать хранителя в случае.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 82f79abee2fe7cc64ce7f4efb4f7c950a29b7b88
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 7da87d8e4a9dd784f336be93dc87c04789a5a1d2
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447071"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61028734"
 ---
 # <a name="custodian-activate"></a>хранитель: активируйте
 
@@ -18,7 +18,7 @@ ms.locfileid: "50447071"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Активируйте хранителя, который был освобожден из дела, чтобы снова сделать их частью дела. Дополнительные сведения см. в [материале Manage custodians in an Advanced eDiscovery case](/microsoft-365/compliance/manage-new-custodians#re-activate-custodian).
+Активируйте хранителя, который был освобожден из дела, чтобы снова сделать их частью дела. Дополнительные сведения см. в [материале Управление хранителями в Advanced eDiscovery случае](/microsoft-365/compliance/manage-new-custodians#re-activate-custodian).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -45,7 +45,7 @@ POST /compliance/ediscovery/cases/{caseId}/custodians/{custodianId}/activate
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -85,6 +85,10 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/2192ca408ea241
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/custodian-activate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/custodian-activate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

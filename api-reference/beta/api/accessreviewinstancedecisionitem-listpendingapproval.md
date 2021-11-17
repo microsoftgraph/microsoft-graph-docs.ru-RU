@@ -1,16 +1,16 @@
 ---
 title: Список accessReviewInstanceDecisionItem до утверждения
 description: Извлечение объектов accessReviewInstanceDecisionItem до утверждения пользователем вызова.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d1ce0293510f2f9a6ca526216b3fc2ad024b6285
-ms.sourcegitcommit: 5a1cc1943527aa268e3797ee514871e65eb474a6
+ms.openlocfilehash: ea2ae928596ec02642d599fa29516d5da2c90808
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53030480"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60991821"
 ---
 # <a name="list-accessreviewinstancedecisionitems-pending-approval-deprecated"></a>List accessReviewInstanceDecisionItems pending approval (deprecated)
 
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-67
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstancedecisionitem-pendingapproval-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstancedecisionitem-pendingapproval-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

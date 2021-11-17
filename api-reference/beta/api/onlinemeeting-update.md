@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4478c14346ab243ccc317468b00ed2a649891d77
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: e2bcabc61e832204fae87646b30d7c7c0bf49e34
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59996643"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61014549"
 ---
 # <a name="update-onlinemeeting"></a>Обновление onlineMeeting
 
@@ -50,10 +50,10 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 
 | Имя          | Описание                 |
 | :------------ | :-------------------------- |
-| Авторизация | Bearer {токен}. Обязательный.   |
+| Авторизация | Bearer {token}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В следующей таблице перечислены свойства, которые можно обновить. В орган запроса включаем только свойства, которые требуют обновления, за следующими исключениями:
 
@@ -69,13 +69,13 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 | endDateTime                 | Даты и время                                                   | Время окончания собрания в UTC.                                                        | Нет                           |
 | subject                     | String                                                     | Тема собрания в Интернете.                                                  | Нет                           |
 | participants                | [meetingParticipants](../resources/meetingparticipants.md) | Участники, связанные с онлайн-собранием. Обновления могут быть только у участников. | Нет                           |
-| isEntryExitAnnounced        | Логический                                                    | Следует ли объявлять о том, когда звонители присоединяются или уходят.                              | Да                          |
+| isEntryExitAnnounced        | Логическое                                                    | Следует ли объявлять о том, когда звонители присоединяются или уходят.                              | Да                          |
 | lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbyBypassSettings.md) | Указывает, какие участники могут обойти вестибюль собрания.                          | Да                          |
 | allowedPresenters           | onlineMeetingPresenters                                    | Указывает, кто может быть презентовщиком на собрании.                                      | Да |
 | allowAttendeeToEnableCamera | Логический                                                    | Указывает, могут ли участники включить камеру.                               | Да                          |
-| allowAttendeeToEnableMic    | Логический                                                    | Указывает, могут ли участники включить микрофон.                           | Да                          |
+| allowAttendeeToEnableMic    | Логическое                                                    | Указывает, могут ли участники включить микрофон.                           | Да                          |
 | allowMeetingChat            | meetingChatMode                                            | Указывает режим чата собраний.                                                 | Да                          |
-| allowTeamworkReactions      | Логический                                                    | Указывает, Teams для собрания включены ли Teams реакции.                      | Да                          |
+| allowTeamworkReactions      | Логическое                                                    | Указывает, Teams для собрания включены ли Teams реакции.                      | Да                          |
 
 > [!NOTE]
 >
@@ -125,6 +125,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-start-end-subject-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-start-end-subject-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -215,6 +219,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-lobbybypasssettings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-lobbybypasssettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,15 +2,15 @@
 title: 'cloudCommunications: getPresencesByUserId'
 description: Получите сведения о присутствии для нескольких пользователей.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 0a545df4e1195d057e5155ab18f5bcfe17de9102
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: a0da5262370e9b4b7f588b5ed58bc026647f8646
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53059914"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61030519"
 ---
 # <a name="cloudcommunications-getpresencesbyuserid"></a>cloudCommunications: getPresencesByUserId
 
@@ -27,7 +27,7 @@ ms.locfileid: "53059914"
 | :-------------- | :----------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Presence.Read.All                         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                         |
-| Приложение                            | Не поддерживается.                                  |
+| Для приложений                            | Не поддерживается.                                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ POST /communications/getPresencesByUserId
 ## <a name="request-headers"></a>Запрашивать заглавные
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 |Content-Type | application/json. Обязательный. |
 
 
@@ -91,10 +91,14 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/get-presence-multiple-users-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-presence-multiple-users-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приводится пример отклика.
+Ниже показан пример отклика.
 
 > **Примечание:** Объекты отклика могут быть сокращены для читаемости. При фактическом вызове будут возвращены все свойства.
 

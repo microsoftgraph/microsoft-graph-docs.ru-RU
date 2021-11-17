@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6b676f28d74484a35374bd61f2099bd9b540ac46
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 615f9eec57a4ec87ef7dccad3226a83d2a4a9a5b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60938890"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61003156"
 ---
 # <a name="update-educationassignment"></a>Обновление системы образования
 
@@ -47,18 +47,18 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|addedStudentAction|String| Управление поведением учащихся, добавленных после публикации задания.|
+|addedStudentAction|Строка| Управление поведением учащихся, добавленных после публикации задания.|
 |addToCalendarAction|educationAddToCalendarOptions|Необязательное поле для управления поведением назначения для добавления назначений в календари учащихся и преподавателей при публикации назначения. Возможные значения: `none` , , и `studentsAndPublisher` `studentsAndTeamOwners` `studentsOnly` `unknownFutureValue` . Значение по умолчанию — `none`.|
-|allowLateSubmissions|Логический| Можно ли отправку представлений после даты.|
+|allowLateSubmissions|Логическое| Можно ли отправку представлений после даты.|
 |allowStudentsToAddResourcesToSubmission|Логическое| Может ли учащийся добавлять ресурсы в отправку. Указано, поступили ли из списка ресурсов назначения только элементы, указанные в представлении. |
 |assignDateTime|DateTimeOffset| Дата публикации назначения учащимся. |
 |assignTo|educationAssignmentRecipient| Студенты, получаювшие назначение.|
 |closeDateTime|DateTimeOffset| Дата закрытия назначения для отправки. Это необязательный поле, которое может быть равно нуль, если назначение не позволяет использоватьLateSubmissions или closeDateTime то же самое, что и dueDateTime, но если указано, оно должно быть больше или равно dueDateTime.|
-|displayName|String| Имя назначения. |
+|displayName|Строка| Имя назначения. |
 |dueDateTime|DateTimeOffset| Назначение даты должно быть. |
 |классификация|educationAssignmentGradeType| Оценка назначения.|
 |инструкции|itemBody| Инструкции, которые будут даны учащимся вместе с назначением. |
-|notificationChannelUrl|String| Канал для публикации уведомления о публикации назначения. Обновление URL-адреса канала не допускается после публикации назначения и допускается только в том случае, если **значение assignTo** является [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md).|
+|notificationChannelUrl|Строка| Канал для публикации уведомления о публикации назначения. Обновление URL-адреса канала не допускается после публикации назначения и допускается только в том случае, если **значение assignTo** является [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md).|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа и обновленный объект `200 OK` [educationAssignment](../resources/educationassignment.md) в тексте ответа.
@@ -101,6 +101,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationassignment-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-educationassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

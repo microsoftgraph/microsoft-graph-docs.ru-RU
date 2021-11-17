@@ -1,16 +1,16 @@
 ---
 title: 'message: send'
 description: Отправка существующего черновика сообщения.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ea24ae69c3888e31124df758bc22199bde1048ea
-ms.sourcegitcommit: cec76c5a58b359d79df764c849c8b459349b3b52
+ms.openlocfilehash: 2ccbf8b182b75247a8dc91084cfefd89b4431c9b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52645523"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60974838"
 ---
 # <a name="message-send"></a>message: send
 
@@ -20,14 +20,14 @@ ms.locfileid: "52645523"
 
 Отправка существующего черновика сообщения. 
 
-Черновик сообщения может быть новым черновиком [сообщения,](../api/user-post-messages.md)черновиком [ответа,](../api/message-createreply.md) [черновиком](../api/message-createreplyall.md)для всех ответов или [проектом вперед.](../api/message-createforward.md) 
+Черновик сообщения может быть предназначен для [нового сообщения](../api/user-post-messages.md), [ответа](../api/message-createreply.md), [ответа всем пользователям](../api/message-createreplyall.md) или [пересылки](../api/message-createforward.md). 
 
-Этот метод сохраняет сообщение в папке **Отправленные** элементы.
+Этот метод сохраняет сообщение в папке **Отправленные**.
 
-Кроме того, [отправьте новое сообщение](../api/user-sendmail.md) в одной операции.
+Другой способ — [отправка нового сообщения](../api/user-sendmail.md) за один шаг.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -52,7 +52,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 | Content-Length | число | 0. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Так как этот метод отправляет уже существующее черновик сообщения, указывать текст запроса не требуется.
+Так как этот метод отправляет уже существующий черновик сообщения, указывать тело запроса необязательно.
 
 ## <a name="response"></a>Отклик
 
@@ -90,6 +90,10 @@ POST https://graph.microsoft.com/beta/me/messages/{id}/send
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/message-send-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/message-send-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

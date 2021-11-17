@@ -2,15 +2,15 @@
 title: Список domainNameReferences
 description: Извлечение списка directoryObject со ссылкой на домен.
 author: adimitui
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 87a244e1a89c3f23c184796777e027fd314dcfe992447c06618bfeef90e03132
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 55a476f8e9f38ddbde2cf42ac492d39381927c3a
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57306723"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61006375"
 ---
 # <a name="list-domainnamereferences"></a>Список domainNameReferences
 
@@ -25,16 +25,16 @@ ms.locfileid: "57306723"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Не поддерживается. |
+|Делегированные (рабочая или учебная учетная запись) | Domain.Read.All, Domain.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Domain.ReadWrite.All |
+|Для приложений | Domain.Read.All, Domain.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /domains/{domain-id}/domainNameReferences
+GET /domains/{id}/domainNameReferences
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -45,7 +45,7 @@ GET /domains/{domain-id}/domainNameReferences
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/v1.0/domains/contoso.com/domainNameReferences
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-domainnamereferences-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-domainnamereferences-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: 'informationProtectionLabel: extractLabel'
 description: Извлечение сведенийПротекцияContentLabel с помощью метаданных из помеченного объекта.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: tommoser
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: c0a7012c02132ad2ed46d82e857e8de62be1e746
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 53283d6c90c99fa848bb67d0547a8ad12d285c93
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579615"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61012081"
 ---
 # <a name="informationprotectionlabel-extractlabel"></a>informationProtectionLabel: extractLabel
 
@@ -45,9 +45,9 @@ POST /informationprotection/policy/labels/extractLabel
 
 | Имя          | Описание                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Авторизация | Bearer {токен}. Обязательный.                                                                                                                                                         |
-| Content-Type  | Тип контента: приложение/json. Обязательное.                                                                                                                                         |
-| User-Agent    | Описывает имя и версию вызываемого приложения. Сведения будут всплыть в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательно. |
+| Авторизация | Bearer {token}. Обязательный.                                                                                                                                                         |
+| Content-Type  | Тип контента: приложение/json. Обязательный.                                                                                                                                         |
+| User-Agent    | Описывает имя и версию вызываемого приложения. Сведения будут всплыть в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательный параметр. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -143,6 +143,10 @@ User-agent: ContosoLOBApp/1.0
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/informationprotectionlabel-extractlabel-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/informationprotectionlabel-extractlabel-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

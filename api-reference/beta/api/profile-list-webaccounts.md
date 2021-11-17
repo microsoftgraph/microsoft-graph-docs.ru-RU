@@ -1,16 +1,16 @@
 ---
 title: Список webAccounts
 description: Извлечение списка объектов webAccounts.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: cfffb7852c2abd86503009cdb82b5ba6660698ff
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 59c7cf10ef2ae1288d2486544232f21f29c49568
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52037096"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61027970"
 ---
 # <a name="list-webaccounts"></a>Список webAccounts
 
@@ -55,7 +55,7 @@ GET /users/{id | userPrincipalName}/profile/webAccounts
 
 | Имя           |Описание                  |
 |:---------------|:----------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.   |
+| Авторизация  | Bearer {token}. Обязательный.   |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/me/profile/webAccounts
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-webaccounts-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-webaccounts-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

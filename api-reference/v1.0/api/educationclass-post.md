@@ -5,12 +5,12 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 38ab75a0a539088c4e1d1b67380875276dba47dd
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 12fb7e86a06aa9445920192cb15f8b902f8109a4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60937351"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61031093"
 ---
 # <a name="create-educationclass"></a>Создание educationClass
 
@@ -57,16 +57,16 @@ POST /education/classes
 
 | Свойство             | Тип                                           | Описание                                                        |
 | :------------------- | :--------------------------------------------- | :----------------------------------------------------------------- |
-| id                   | String                                         | Идентификатор объекта. Унаследованный от [сущности](../resources/entity.md) |
-| displayName          | String                                         | Название курса.                                                 |
+| id                   | Строка                                         | Идентификатор объекта. Унаследованный от [сущности](../resources/entity.md) |
+| displayName          | Строка                                         | Название курса.                                                 |
 | mailNickname         | String                                         | Почтовое имя для отправки почты всем участникам, если это возможно.    |
-| description          | String                                         | Описание курса.                                          |
+| description          | Строка                                         | Описание курса.                                          |
 | createdBy            | [identitySet](../resources/identityset.md)     | Объект, который создал курс.                                       |
 | classCode            | String                                         | Код курса, используемый учебным заведением для идентификации курса.               |
 | externalName         | String                                         | Название курса в системе синхронизации.                           |
 | externalId           | String                                         | Идентификатор курса из системы синхронизации.                           |
 | externalSource       | educationExternalSource                        | Способ создания этого курса. Возможные значения: `sis` , `manual`   |
-| externalSourceDetail | String                                         | Имя внешнего источника, из которого были созданы эти ресурсы. |
+| externalSourceDetail | Строка                                         | Имя внешнего источника, из которого были созданы эти ресурсы. |
 | оценка                | String                                         | Уровень класса.                                          |
 | term                 | [educationTerm](../resources/educationterm.md) | Срок для этого курса.                                               |
 
@@ -123,6 +123,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-educationclass-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-educationclass-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 53f3ba4e56e5392f2dc98de6464b273d785f3ba4
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: e90c88e38077a1c13c4b0c36faed00b0efa9af6b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60938142"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61022867"
 ---
 # <a name="get-a-user"></a>Получение пользователя
 
@@ -74,6 +74,8 @@ GET /me
 
 ### <a name="example-1-standard-users-request"></a>Пример 1. Обычный запрос пользователей
 
+#### <a name="request"></a>Запрос
+
 По умолчанию возвращается только ограниченный набор свойств (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). В этом примере показаны запрос и отклик по умолчанию. 
 
 <!-- {
@@ -84,7 +86,7 @@ GET /me
 GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}
 ```
 
-##### <a name="response"></a>Ответ
+#### <a name="response"></a>Ответ
 
 <!-- {
   "blockType": "response",
@@ -117,7 +119,7 @@ Content-type: application/json
 
 Вы можете получить информацию о вошедшем пользователе, заменив `/users/{id | userPrincipalName}` на `/me`.
 
-##### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -144,9 +146,13 @@ GET https://graph.microsoft.com/v1.0/me
 [!INCLUDE [sample-code](../includes/snippets/java/get-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-user-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",
@@ -174,19 +180,19 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-users-request-using-select"></a>Пример 3. Запрос пользователей с помощью оператора $select
+### <a name="example-3-use-select-to-retrieve-specific-properties-of-a-user"></a>Пример 3. Использование $select для получения определенных свойств пользователя
 
-Если вам нужен другой набор свойств, можете использовать параметр запроса OData `$select`. Например, чтобы возвратить свойства _displayName_, _givenName_ и _postalCode_, вам следует добавить к запросу следующее: `$select=displayName,givenName,postalCode`.
+Чтобы получить определенные свойства, используйте параметр запроса `$select` OData. Например, чтобы вернуть _displayName_, _givenName_, _postalCode_ и _удостоверения_, можно использовать следующее добавление в запрос `$select=displayName,givenName,postalCode,identities`
 
-##### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_user_2"
+  "name": "get_user_select"
 } -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode
+GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode,identities
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-user-2-csharp-snippets.md)]
@@ -204,9 +210,13 @@ GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=disp
 [!INCLUDE [sample-code](../includes/snippets/java/get-user-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-user-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -217,9 +227,17 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-   "displayName": "Adele Vance",
-   "givenName": "Adele",
-   "postalCode": "98004"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(displayName,givenName,postalCode,identities)/$entity",
+    "displayName": "Adele Vance",
+    "givenName": "Adele",
+    "postalCode": "98004",
+    "identities": [
+        {
+            "signInType": "userPrincipalName",
+            "issuer": "contoso.com",
+            "issuerAssignedId": "AdeleV@contoso.com"
+        }
+    ]
 }
 ```
 

@@ -1,16 +1,16 @@
 ---
 title: Обновление наPremisesAgentGroup
 description: Обновление свойств объекта **onPremisesAgentGroup.**
-localization_priority: Normal
+ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: b78c82989f8fc06daed22dd0a80cb1d07be8e77e
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 8199cad0951a0fae1ab8838c5765a47f5b2ca157
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52785956"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61014496"
 ---
 # <a name="update-onpremisesagentgroup"></a>Обновление наPremisesAgentGroup
 
@@ -42,7 +42,7 @@ PATCH ~/onPremisesPublishingProfiles/{publishingType}/agentGroups
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -52,7 +52,7 @@ PATCH ~/onPremisesPublishingProfiles/{publishingType}/agentGroups
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|String| Представляет локальное имя группы агентов.|
+|displayName|Строка| Представляет локальное имя группы агентов.|
 
 ## <a name="response"></a>Отклик
 
@@ -92,6 +92,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-onpremisesagentgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-onpremisesagentgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

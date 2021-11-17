@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getTeamsUserActivityTotalCounts'
 description: Получение количества действий Microsoft Teams по типам. Типы действий — это количество командных сообщений чата, частных сообщений чата, звонков и собраний. Эти действия выполняются Microsoft Teams или не лицензированными пользователями.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: c41cbd1b71081ef90830b6552f99ad246e253945
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 57b763dc23b2d301efc32c79d24e0cc0f437c83b
+ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055017"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61044577"
 ---
 # <a name="reportroot-getteamsuseractivitytotalcounts"></a>reportRoot: getTeamsUserActivityTotalCounts
 
@@ -46,7 +46,7 @@ GET /reports/getTeamsUserActivityTotalCounts(period='D7')
 
 | Параметр | Тип   | Описание                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
+| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
@@ -78,7 +78,7 @@ CSV-файл содержит столбцы со следующими заго�
 
 ### <a name="json"></a>JSON
 
-В случае успешной работы этот метод возвращает код ответа и объект `200 OK` [teamsUserActivityCounts](../resources/teamsuseractivitycounts.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` объект JSON в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -146,14 +146,14 @@ GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityTotalCounts(per
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.teamsUserActivityCounts"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -162,7 +162,6 @@ Content-Type: application/json
 Content-Length: 277
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsUserActivityCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

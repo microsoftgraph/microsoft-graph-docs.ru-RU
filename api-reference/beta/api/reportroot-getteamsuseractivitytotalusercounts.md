@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getTeamsUserActivityTotalUserCounts'
 description: Получите число пользователей, Microsoft Teams лицензированных или не лицензированных пользователей по типу действия. Типы действий — это количество командных сообщений чата, частных сообщений чата, звонков и собраний.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: a534070cf178f93fe999728893ab5de5e707d9ab
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 2406a62d4b239f7e4d65bbb4b51b0dd26054aab9
+ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52055003"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61044759"
 ---
 # <a name="reportroot-getteamsuseractivitytotalusercounts"></a>reportRoot: getTeamsUserActivityTotalUserCounts
 
@@ -46,7 +46,7 @@ GET /reports/getTeamsUserActivityTotalUserCounts(period='D7')
 
 | Параметр | Тип   | Описание                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
+| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
@@ -79,7 +79,7 @@ CSV-файл содержит столбцы со следующими заго�
 
 ### <a name="json"></a>JSON
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект teamsUserActivityUserCounts](../resources/teamsuseractivityusercounts.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` объект JSON в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -155,7 +155,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityTotalUserCounts
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.teamsUserActivityUserCounts"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -164,7 +164,6 @@ Content-Type: application/json
 Content-Length: 291
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.teamsUserActivityUserCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

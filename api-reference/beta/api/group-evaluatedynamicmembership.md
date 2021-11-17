@@ -2,15 +2,15 @@
 title: 'группа: оценкаDynamicMembership'
 description: Оцените, является ли пользователь или устройство членом динамической группы.
 author: Jordanndahl
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: de8e44a79644bcea5e3c44b214580e16359468e2
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 2ca43d71c14cd8468b387444651d79d56f298bd4
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52681769"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61034367"
 ---
 # <a name="group-evaluatedynamicmembership"></a>группа: оценкаDynamicMembership
 
@@ -67,8 +67,8 @@ POST /groups/evaluateDynamicMembership
 
 | Параметр | Тип | Описание |
 | :-------- | :--- | :---------- |
-| memberId | Коллекция строк | memberId — это объектный id пользователя или устройства, для оценки. |
-| membershipRule | Коллекция строк | Правило, которое используется для оценки членства. Если это свойство не предоставлено, оценивается правило для существующей группы. Если это свойство предоставлено, пользователь или устройство оцениваются для возможного членства в группе с тем же правилом. Дополнительные сведения см. в [программе Dynamic membership rules for groups in Azure Active Directory.](/azure/active-directory/users-groups-roles/groups-dynamic-membership)|
+| memberId | Коллекция объектов string | memberId — это объектный id пользователя или устройства, для оценки. |
+| membershipRule | Коллекция объектов string | Правило, которое используется для оценки членства. Если это свойство не предоставлено, оценивается правило для существующей группы. Если это свойство предоставлено, пользователь или устройство оцениваются для возможного членства в группе с тем же правилом. Дополнительные сведения см. в [программе Dynamic membership rules for groups in Azure Active Directory.](/azure/active-directory/users-groups-roles/groups-dynamic-membership)|
 
 ## <a name="response"></a>Отклик
 
@@ -113,12 +113,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/group-evaluatedynamicmembership-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/group-evaluatedynamicmembership-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 <!-- {
   "blockType": "response",
@@ -182,6 +186,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-evaluatedynamicmembership-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/group-evaluatedynamicmembership-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

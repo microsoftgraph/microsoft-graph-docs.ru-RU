@@ -1,16 +1,16 @@
 ---
 title: List activityStatistics
 description: Получите коллекцию объектов activityStatistics.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: madehmer
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 422d6b3d03129d2e1c7169f3131c46fadc457e35
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 6b31c5abb34508431b86d9b57c54fa88c0f29ccd
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048311"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60987635"
 ---
 # <a name="list-activitystatistics"></a>List activityStatistics
 
@@ -47,7 +47,7 @@ GET /users/{id|userPrincipalName}/analytics/activitystatistics
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/me/analytics/activitystatistics
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-activitystatistics-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-activitystatistics-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

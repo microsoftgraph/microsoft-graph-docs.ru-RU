@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 76792992021fdc55ea64c5741d49faafbb5af428
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: e8e92f409eafb8e59ed6fa278ce0f138161e73de
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59995691"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61012577"
 ---
 # <a name="create-calendarpermission"></a>Создание calendarPermission
 
@@ -60,10 +60,10 @@ POST /users/{id}/events/{id}/calendar/calendarPermissions
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json. Обязательный.  |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса поставляем представление JSON объекта [calendarPermission.](../resources/calendarpermission.md)
 
@@ -114,11 +114,15 @@ POST https://graph.microsoft.com/beta/users/458d4c95-124e-49da-ba9d-1dd0387e682e
 [!INCLUDE [sample-code](../includes/snippets/java/create-calendarpermission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-calendarpermission-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

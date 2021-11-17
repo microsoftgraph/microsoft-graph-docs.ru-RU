@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 71a3b8cc4bb9bc30d18df198552f73661944e8fd
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 268a70a77744a47d1712809951c6aa627d604ac2
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507309"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61026535"
 ---
 # <a name="participant-startholdmusic"></a>участник: startHoldMusic
 
@@ -29,7 +29,7 @@ ms.locfileid: "59507309"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
-| Приложение                            | Нет. |
+| Для приложений                            | Нет. |
 
 > **Примечание:** Проверка разрешений происходит, когда приложение присоединяется или пытается запустить вызов. Дополнительные проверки разрешений не выполняются при `startHoldMusic` запросе.
 
@@ -42,7 +42,7 @@ POST /communications/calls/{id}/participants/{id}/startHoldMusic
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -50,7 +50,7 @@ POST /communications/calls/{id}/participants/{id}/startHoldMusic
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|customPrompt|microsoft.graph.mediaPrompt|Необязательное свойство. Звуковой запрос, который участник услышит при размещении на удержании.|
+|customPrompt|microsoft.graph.mediaPrompt|Необязательный параметр. Звуковой запрос, который участник услышит при размещении на удержании.|
 |clientContext|String|Необязательный параметр. Уникальная строка контекста клиента. Может иметь не более 256 символов.|
 
 ## <a name="response"></a>Отклик
@@ -98,6 +98,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/participant-startholdmusic-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/participant-startholdmusic-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

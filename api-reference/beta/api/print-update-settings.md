@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: b5db43838c259c3c7807d407edec067a3db12a6a
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 869f8d25db8677a9488aa93e24f6be08e2092e08
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60939352"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019635"
 ---
 # <a name="update-printsettings"></a>Обновление printSettings
 
@@ -48,7 +48,7 @@ PATCH /print/settings
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|documentConversionEnabled|Логическое|Указывает, включено ли преобразование документов для клиента. Если преобразование документов включено, служба универсальной печати автоматически преобразует документы в формат, совместимый с принтером (например, XPS в PDF) при необходимости.|
+|documentConversionEnabled|Логический|Указывает, включено ли преобразование документов для клиента. Если преобразование документов включено, служба универсальной печати автоматически преобразует документы в формат, совместимый с принтером (например, XPS в PDF) при необходимости.|
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204 No Content` и пустое тело отклика.
@@ -84,6 +84,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-settings-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-settings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

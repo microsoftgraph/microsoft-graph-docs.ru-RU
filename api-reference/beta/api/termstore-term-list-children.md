@@ -3,14 +3,14 @@ title: Список дочерних элементов
 description: Получите условия из свойства навигации для детей.
 author: mohitpcad
 ms.prod: Sharepoint
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.openlocfilehash: 6bc2ba250498d6d7ac51914e2f0c072a34fc9bfe
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 08fa406160648e79995c5776dfaaa99b20d210be
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50955393"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61033592"
 ---
 # <a name="list-children"></a>Список дочерних элементов
 Пространство имен: microsoft.graph.termStore
@@ -45,7 +45,7 @@ GET /termStore/sets/{setId}/terms/{termId}/children
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/termStore/sets/{setId}/children
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-term-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-term-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
