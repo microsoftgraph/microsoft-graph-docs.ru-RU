@@ -1,16 +1,16 @@
 ---
 title: Список userflowidentityproviders
 description: Список всех поставщиков удостоверений в b2cIdentityUserFlow.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 04d45c4fc622b24f3d9a04410ec010e08c45e3ad
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: aad6a7fe1ff8577ce784bb42bc0f58228e4084c7
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439760"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60999914"
 ---
 # <a name="list-a-userflowidentityproviders"></a>Список userflowidentityproviders
 
@@ -28,7 +28,7 @@ ms.locfileid: "53439760"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение| IdentityUserFlow.ReadWrite.All|
+|Для приложений| IdentityUserFlow.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
@@ -47,7 +47,7 @@ GET /identity/b2cUserFlows/{userflow-id}/userflowIdentityProviders
 
 |Имя|Описание|
 |:---------------|:----------|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_test_signin_signu
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-b2cuserflow-list-userflowidentityproviders-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-b2cuserflow-list-userflowidentityproviders-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

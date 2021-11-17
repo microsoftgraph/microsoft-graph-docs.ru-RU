@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 167cc4a36ee3d50d76b73ed311aa2012e1d89b4f
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: 1551007f5acb00b4c955b5734e3097cb3c5f1f93
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60730034"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995349"
 ---
 # <a name="update-approvalstep"></a>Обновление approvalStep
 
@@ -44,14 +44,14 @@ PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals
 |:----------|:----------|
 | Authorization | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В следующей таблице показаны свойства, необходимые для этого метода.
 
 | Свойство       | Тип    |Описание|
 |:---------------|:--------|:----------|
-| reviewResult | String | Решение утвержденного. Возможные значения: `Approve`, `Deny`.|
-| обоснование | String | Обоснование, связанное с решением утвержденного. |
+| reviewResult | Строка | Решение утвержденного. Возможные значения: `Approve`, `Deny`.|
+| обоснование | Строка | Обоснование, связанное с решением утвержденного. |
 
 
 ## <a name="response"></a>Отклик
@@ -76,6 +76,10 @@ PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/
 ```
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/patch-approvalstep-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/patch-approvalstep-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

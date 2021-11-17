@@ -1,16 +1,16 @@
 ---
 title: 'tiIndicator: updateTiIndicators'
 description: Обновление нескольких индикаторов аналитики угроз (TI) в одном запросе вместо нескольких запросов.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 4c594c9ba75ea0ee1cd1fcb8390d4b9ff738d48c
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: e90fd3b95e302956a250f2acf08ff18daa0298ca
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52050775"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60989442"
 ---
 # <a name="tiindicator-updatetiindicators"></a>tiIndicator: updateTiIndicators
 
@@ -28,7 +28,7 @@ ms.locfileid: "52050775"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | ThreatIndicators.ReadWrite.OwnedBy |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | ThreatIndicators.ReadWrite.OwnedBy |
+| Для приложений                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -102,6 +102,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/tiindicator-updatetiindicators-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/tiindicator-updatetiindicators-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: isaiahwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 12a42efa7e2e853e183ce132f9713e74e0badfdd
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 25b60d217a312a28210106b62f609c07384de904
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60942204"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60980960"
 ---
 # <a name="managementaction-apply"></a>managementAction: применить
 Пространство имен: microsoft.graph.managedTenants
@@ -52,7 +52,7 @@ POST /tenantRelationships/managedTenants/managementActions/{managementActionId}/
 |Параметр|Тип|Описание|
 |:---|:---|:---|
 |tenantId|String|Идентификатор Azure Active Directory клиента для [управляемого клиента.](../resources/managedtenants-tenant.md)|
-|tenantGroupId|String|Идентификатор группы клиента.|
+|tenantGroupId|Строка|Идентификатор группы клиента.|
 |managementTemplateId|String|Идентификатор шаблона [управления](../resources/managedtenants-managementtemplate.md).|
 
 ## <a name="response"></a>Отклик
@@ -93,6 +93,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/managementaction-apply-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/managementaction-apply-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

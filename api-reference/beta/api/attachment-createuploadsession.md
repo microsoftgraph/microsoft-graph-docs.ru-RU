@@ -1,16 +1,16 @@
 ---
 title: 'вложение: createUploadSession'
 description: Создайте сеанс загрузки для итеративных диапазонов загрузки файла, чтобы прикрепить файл к указанному сообщению.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 07b10b2134db7cc8f629a3bef0c6f80ea82d0295
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 00758998dd0fbb528868ebd5bdc0512e10a3be9f
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048038"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60982561"
 ---
 # <a name="attachment-createuploadsession"></a>вложение: createUploadSession
 
@@ -70,7 +70,7 @@ POST /me/messages/{id}/attachments/createUploadSession
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 
 ## <a name="request-body"></a>Текст запроса
@@ -133,6 +133,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/attachment-createuploadsession-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/attachment-createuploadsession-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

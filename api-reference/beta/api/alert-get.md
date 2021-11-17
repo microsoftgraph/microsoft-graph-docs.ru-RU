@@ -1,16 +1,16 @@
 ---
 title: Получение оповещения
-description: Получение свойств и связей объекта Alert
-localization_priority: Normal
+description: Извлечение свойств и связей объекта оповещений
+ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: bc3eefb78f439a9cdf3c995f03acfde605227974
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4fc3f4f090f3e152b53ac459d2171419bddb0b11
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962399"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60995728"
 ---
 # <a name="get-alert"></a>Получение оповещения
 
@@ -18,7 +18,7 @@ ms.locfileid: "48962399"
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [Alert](../resources/alert.md) .
+Извлечение свойств и связей объекта [оповещения.](../resources/alert.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -50,7 +50,7 @@ GET /security/alerts/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **Alert** в тексте отклика. Если от поставщика возвращается код состояния, отличный от 2xx или 404, или истекло время ожидания поставщика, откликом будет код состояния `206 Partial Content` с ответом поставщика в заголовке предупреждения. Дополнительные сведения см. в статье [Ответы с ошибками Microsoft Graph Security API](../resources/security-error-codes.md).
+В случае успешной работы этот метод возвращает код отклика и `200 OK` объект оповещения в тексте ответа.  Если от поставщика возвращается код состояния, отличный от 2xx или 404, или истекло время ожидания поставщика, откликом будет код состояния `206 Partial Content` с ответом поставщика в заголовке предупреждения. Дополнительные сведения см. в статье [Ответы с ошибками Microsoft Graph Security API](../resources/security-error-codes.md).
 
 ## <a name="example"></a>Пример
 
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/security/alerts/{id}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-alert-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-alert-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: Get timeOffRequest
 description: Извлечение свойств и связей объекта timeoffrequest.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c961704a21112dbd738102ea0ab14c81bbd3a28f
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 58f172eb275ad0d30ccb152a297a809f867a79e2
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52048941"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60977343"
 ---
 # <a name="get-timeoffrequest"></a>Get timeOffRequest
 
@@ -28,7 +28,7 @@ ms.locfileid: "52048941"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Group.Read.All, Group.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение | Schedule.Read.All *, Schedule.ReadWrite.All*  |
+|Для приложений | Schedule.Read.All *, Schedule.ReadWrite.All*  |
 
 >\***Важно:** Разрешения приложения в настоящее время доступны только в закрытом режиме и недоступны для общего пользования.
 
@@ -48,7 +48,7 @@ GET /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffRequests/{ti
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-timeoffrequest-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-timeoffrequest-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: Добавление рецензента accessReview
 description: 'В функции обзоров доступа Azure AD обновим существующий объект accessReview, чтобы добавить другого пользователя в качестве рецензента.  Эта операция разрешена только для еще не завершенного обзора доступа и только для проверки доступа, в которой явно указаны рецензенты. Эта операция не разрешается для проверки доступа, в которой пользователи рассматривают собственный доступ, и не предназначена для проверки доступа, в которой владельцы групп назначены в качестве рецензентов. '
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 90c64ee1bb52c9149e16658c5b8a1cd11a97c51b
-ms.sourcegitcommit: 13f474d3e71d32a5dfe2efebb351e3a1a5aa9685
+ms.openlocfilehash: 6772fb415184ab7d7d9fb234c237f0fbaf8b3805
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52751127"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60988182"
 ---
 # <a name="add-accessreview-reviewer"></a>Добавление рецензента accessReview
 
@@ -28,7 +28,7 @@ ms.locfileid: "52751127"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение                            | AccessReview.ReadWrite.Membership |
+|Для приложений                            | AccessReview.ReadWrite.Membership |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ POST /accessReviews/{reviewId}/reviewers
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| id        | String   | Идентификатор пользователя.|
+| id        | Строка   | Идентификатор пользователя.|
 
 
 ## <a name="response"></a>Отклик
@@ -88,6 +88,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/add-accessreview-reviewer-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/add-accessreview-reviewer-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
