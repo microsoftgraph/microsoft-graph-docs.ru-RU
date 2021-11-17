@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: 925fa2538496b20b5b22a99823ea80fed8d9b1a0
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: c971998ef191295bfcda25251b016d3b51dbb64f
+ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688102"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61044822"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -293,9 +293,11 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 
 Использование Microsoft Graph для создания группы Microsoft 365 и присвоения ей имени в обход всех групповых политик Microsoft 365, настроенных через Outlook в Интернете.
 
-### <a name="allowexternalsenders-property-cannot-be-set-in-a-post-or-patch-operation"></a>Свойство allowExternalSenders невозможно установить в операции POST или PATCH
+### <a name="allowexternalsenders-property-can-only-be-accessed-on-unified-groups"></a>Доступ к свойству allowExternalSenders можно получить только в объединенных группах
 
 В настоящее время существует проблема, из-за которой невозможно установить свойство **allowExternalSenders** группы в операции POST или PATCH как в `/v1.0`, так и в `/beta`.
+
+Доступ к свойству **allowExternalSenders** можно получить только в объединенных группах. Доступ к этому свойству в списках рассылки или группах безопасности, в том числе с помощью операций GET, приведет к ошибке.
 
 ### <a name="removing-a-group-owner-also-removes-the-user-as-a-group-member"></a>Удаление владельца группы также удаляет пользователя как участника группы
 
