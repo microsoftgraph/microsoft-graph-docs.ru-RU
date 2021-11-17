@@ -2,15 +2,15 @@
 title: Создание группы маршрутизации звука
 description: Создание новой **audioRoutingGroup**.
 author: ananmishr
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f4c7cbc969b676db6786bf0d708e92381fd4cecf
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 0968a15b8621d6f7ee826a79956c3946d0c0240d
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52047632"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61018877"
 ---
 # <a name="create-audio-routing-group"></a>Создание группы маршрутизации звука
 
@@ -40,7 +40,7 @@ POST /communications/calls/{id}/audioRoutingGroups
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В корпусе запроса поставляем представление JSON объекта [audioRoutingGroup.](../resources/audioroutinggroup.md)
@@ -91,6 +91,10 @@ Content-Length: 233
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-audioroutinggroup-from-call-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-audioroutinggroup-from-call-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
