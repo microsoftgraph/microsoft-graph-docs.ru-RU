@@ -2,15 +2,15 @@
 title: тип ресурсов managedTenant
 description: Представляем доступные операции, взаимодействующие с платформой управления с несколькими клиентами.
 author: isaiahwilliams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: c0929949896eb153a61bf3193d9dab5d57d92496
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 7689344ee2e42df57a30f95c33628d607895610d
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53403129"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61077135"
 ---
 # <a name="managedtenant-resource-type"></a>тип ресурсов managedTenant
 
@@ -41,7 +41,6 @@ API Microsoft 365 Lighthouse определяется в поднаемной о
 |managementActionTenantDeploymentStatuses|[коллекция microsoft.graph.managedTenants.managementActionTenantDeploymentStatus](../resources/managedtenants-managementactiontenantdeploymentstatus.md)|Состояние уровня клиента действий управления для управляемых клиентов.|
 |managementIntents|[коллекция microsoft.graph.managedTenants.managementIntent](../resources/managedtenants-managementintent.md)|Набор базовых намерений управления для управляемых клиентов.|
 |managementTemplates|[коллекция microsoft.graph.managedTenants.managementTemplate](../resources/managedtenants-managementtemplate.md)|Коллекция шаблонов базового управления для управляемых клиентов.|
-|riskyUsers|[коллекция microsoft.graph.managedTenants.riskyUser](../resources/managedtenants-riskyuser.md)|Коллекция пользователей, помеченных для риска для управляемых клиентов.|
 |tenantGroups|[коллекция microsoft.graph.managedTenants.tenantGroup](../resources/managedtenants-tenantgroup.md)|Коллекция логической группировки управляемых клиентов, используемых платформой управления с несколькими арендаторами.|
 |клиенты|[коллекция microsoft.graph.managedTenants.tenant](../resources/managedtenants-tenant.md)|Коллекция клиентов, связанных с управляющей сущностью.|
 |tenantsCustomizedInformation|[microsoft.graph.managedTenants.tenantCustomizedInformation](../resources/managedtenants-tenantcustomizedinformation.md) collection|Коллекция настраиваемых сведений уровня клиента для управляемых клиентов.|

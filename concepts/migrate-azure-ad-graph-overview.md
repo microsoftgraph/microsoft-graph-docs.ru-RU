@@ -1,24 +1,24 @@
 ---
-title: Перенос Azure Active Directory приложений (Azure AD) Graph в Microsoft Graph
+title: Перенос приложений Azure AD Graph в Microsoft Graph
 description: Описывает, как перенести приложения API Azure Active Directory (Azure AD) в API Microsoft Graph API.
 author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 3fe22f5e342cd3b46d7a6a2559084dbf714e8cf5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 15158d916166f26594c13c5dfc48942cef473c91
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148557"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61077609"
 ---
-# <a name="migrate-azure-active-directory-azure-ad-graph-apps-to-microsoft-graph"></a>Перенос Azure Active Directory приложений (Azure AD) Graph в Microsoft Graph
+# <a name="migrate-azure-ad-graph-apps-to-microsoft-graph"></a>Перенос приложений Azure AD Graph в Microsoft Graph
 
 > [!WARNING]
 > **Azure Active Directory (Azure AD) Graph амортизации**. Чтобы избежать потери функциональных возможностей, переадрежите приложения в Microsoft Graph до 30 июня 2022 г., когда конечные точки API Azure AD Graph перестанут отвечать на запросы.
 >
 > Корпорация Майкрософт продолжит техническую поддержку и применяет исправления безопасности для Azure AD Graph до 30 июня 2022 г., когда все функции и поддержка будут работать. Если до 30 июня 2022 г. не удастся перенести приложения в Microsoft Graph, вы ставите под угрозу их функциональность и стабильность.
 
-Azure AD Graph не является обесценителем. Обновите приложения Azure AD Graph, чтобы использовать Microsoft Graph сейчас.
+[Azure AD Graph является неконтрассленной.](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/update-your-applications-to-use-microsoft-authentication-library/ba-p/1257363) Обновите приложения Azure AD Graph, чтобы использовать Microsoft Graph сейчас.
 
 ## <a name="why-use-microsoft-graph"></a>Зачем использовать microsoft Graph?
 

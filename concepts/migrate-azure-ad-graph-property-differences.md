@@ -1,21 +1,21 @@
 ---
-title: Различия свойств между Azure Active Directory (Azure AD) Graph и Microsoft Graph
+title: Различия свойств между Azure AD Graph Microsoft Graph
 description: Описывает различия свойств между ресурсами Azure AD Graph (сущностями) и microsoft Graph, чтобы помочь соответствующим образом перенести приложения.
 author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: f060a59ff26e8d8279c3ac4e1e83fde0f7ff25ec
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fece47dfea3afd007ce148c2a13294b6a89e790d
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098421"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61077658"
 ---
-# <a name="property-differences-between-azure-active-directory-azure-ad-graph-and-microsoft-graph"></a>Различия свойств между Azure Active Directory (Azure AD) Graph и Microsoft Graph
+# <a name="property-differences-between-azure-ad-graph-and-microsoft-graph"></a>Различия свойств между Azure AD Graph Microsoft Graph
 
 Эта статья является *частью шага 1: просмотрите различия API* процесса переноса [приложений.](migrate-azure-ad-graph-planning-checklist.md)
 
-В общем, лучший способ сравнить API Azure AD Graph Microsoft Graph — это сравнить лежащие в них метаданные для каждой службы, особенно описания ресурсов:
+В общем, лучший способ сравнить API Azure Active Directory (Azure AD Graph) с Microsoft Graph — сравнить лежащие метаданные для каждой службы, особенно описания ресурсов:
 
 - [Метаданные Azure AD Graph](https://graph.windows.net/microsoft.com/$metadata?api-version=1.6)
 - [Метаданные Graph Microsoft](https://graph.microsoft.com/beta/$metadata)
@@ -90,8 +90,8 @@ ms.locfileid: "59098421"
 
 |Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
-| **city** | &nbsp; - &nbsp; **бета-адреса (город)** <br> v1.0 &nbsp; - &nbsp; **адреса (город)**  | Свойство city является частью коллекции ресурсов адресов. |
-| **страна** | &nbsp; - &nbsp; **бета-адреса** &nbsp; **(countryOrRegion)**<br> v1.0 &nbsp; - &nbsp; **адреса** &nbsp; **(countryOrRegion)**  | Свойство countryOrRegion является частью коллекции ресурсов адресов. |
+| **город** | &nbsp; - &nbsp; **бета-адреса (город)** <br> v1.0 &nbsp; - &nbsp; **адреса (город)**  | Свойство city является частью коллекции ресурсов адресов. |
+| **country** | &nbsp; - &nbsp; **бета-адреса** &nbsp; **(countryOrRegion)**<br> v1.0 &nbsp; - &nbsp; **адреса** &nbsp; **(countryOrRegion)**  | Свойство countryOrRegion является частью коллекции ресурсов адресов. |
 | **dirSyncEnabled** | &nbsp; - &nbsp; **бета-версия onPremisesSyncEnabled** <br> v1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled**   | |
 | **facsimileTelephoneNumber** | &nbsp; - &nbsp; **бета-телефоны** &nbsp; **(businessFax)** <br> v1.0 &nbsp; - &nbsp; **телефоны** &nbsp; **(businessFax)** | Теперь часть коллекции телефонов, которая поддерживает мобильные, бизнес и businessFax. |
 | **physicalDeliveryOfficeName** | beta &nbsp; - &nbsp; **officeLocation** <br> v1.0 &nbsp; - &nbsp; **officeLocation** | |
@@ -135,7 +135,7 @@ ms.locfileid: "59098421"
 
 |Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
-| **name** | &nbsp; - &nbsp; **бета-версия** <br> v1.0 &nbsp; - &nbsp; **id** | В Graph Microsoft уникальный идентификатор (id) содержит доменное имя; свойство `name` не существует. |
+| **name** | &nbsp; - &nbsp; **бета-версия** <br> v1.0 &nbsp; - &nbsp; **id** | В microsoft Graph, уникальный идентификатор (id) содержит доменное имя; свойство `name` не существует. |
 | **forceDeleteState** |  состояние &nbsp; - &nbsp; **бета-версии** <br> состояние v1.0 &nbsp; - &nbsp;  | В Azure AD Graph существуют отдельные свойства forceDelete и состояния домена.  В microsoft Graph все состояния домена обрабатываются свойством состояния. |
 | **isDefaultForCloudRedirections** | &nbsp; - &nbsp; _бета-версия &nbsp; еще &nbsp; недоступна_&nbsp;<br> v1.0 &nbsp; - &nbsp; _Еще не доступен_ | |
 

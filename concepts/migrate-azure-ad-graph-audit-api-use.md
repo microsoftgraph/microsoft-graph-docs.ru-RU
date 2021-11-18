@@ -1,21 +1,21 @@
 ---
-title: Изучите Azure Active Directory (Azure AD) Graph использования приложений API
+title: Изучите использование Graph API Azure AD
 description: Описывает, как Azure Active Directory (Azure AD) Graph API для переноса приложения в API microsoft Graph.
 author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 8386c3c77a5f42115236875d8405f97c5f49ff42
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d6a440e71350433feacc1a92fbc6928523c0b534
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139172"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61077630"
 ---
-# <a name="examine-azure-active-directory-azure-ad-graph-apis-app-usage"></a>Изучите Azure Active Directory (Azure AD) Graph использования приложений API
+# <a name="examine-azure-ad-graph-apis-app-usage"></a>Изучите использование Graph API Azure AD
 
 Это шаг 2 процесса [миграции приложений.](migrate-azure-ad-graph-planning-checklist.md)
 
-При планировании миграции в Microsoft Graph время, чтобы просмотреть существующее приложение и каталогизировать API Azure AD Graph, которые вы используете в настоящее время.
+При планировании миграции в Microsoft Graph время, чтобы просмотреть существующее приложение и каталогизировать Azure Active Directory (Azure AD) Graph API, которые вы используете в настоящее время.
 
 Сравните список с известными различиями.  Это помогает определить конкретные изменения, которые необходимо внести для переноса приложения.  К ним относятся простые изменения, которые легко разрешить с помощью функций поиска и замены редактора или более сложные обновления, которые могут потребовать дополнительного анализа.
 

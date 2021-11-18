@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 9c724debf410248fddc9b8b2038db0a6fd749c3a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1a4475a8977f9465f38a256f9166fd9511f5bb7d
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031407"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61077301"
 ---
 # <a name="update-user"></a>Обновление пользователя
 
@@ -61,6 +61,7 @@ PATCH /users/{id | userPrincipalName}
 | companyName | String | Название организации, с которой связан пользователь. Это свойство может быть полезно для описания компании внешнего пользователя. Длина имени компании не должна превышать 64 символов. |
 | consentProvidedForMinor | [consentProvidedForMinor](../resources/user.md#consentprovidedforminor-values) | Устанавливает, получено ли согласие для несовершеннолетних. Допустимые значения: `null`, `granted`, `denied` и `notRequired`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](../resources/user.md#legal-age-group-property-definitions). |
 |country|String|Страна или регион, в котором находится пользователь, например `US` или `UK`.|
+|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|Открытый сложный тип, который содержит значение настраиваемого атрибута безопасности, назначенного объекту каталога.<br/><br/>Чтобы обновить это свойство, руководителю вызовов должна быть назначена роль администратора назначения атрибутов и должно быть предоставлено разрешение *CustomSecAttributeAssignment.ReadWrite.All.*|
 |department|String|Название отдела, в котором работает пользователь.|
 |displayName|String|Имя пользователя, отображаемое в адресной книге. Обычно это сочетание имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении.|
 |employeeId|String|Идентификатор сотрудника, назначенный пользователю организацией.|
@@ -268,6 +269,51 @@ Content-type: application/json
 ```http
 HTTP/1.1 204 No Content
 ```
+
+### <a name="example-4-assign-a-custom-security-attribute-with-a-string-value-to-a-user"></a>Пример 4. Назначение пользовательского атрибута безопасности со значением строки пользователю
+
+В следующем примере показано, как назначить пользователю настраиваемый атрибут безопасности со значением строки.
+
++ Набор атрибутов: `Engineering`
++ Атрибут: `ProjectDate`
++ Тип данных атрибута: String
++ Значение атрибута: `"2022-10-01"`
+
+Чтобы назначить настраиваемые атрибуты безопасности, руководителю вызовов должна быть назначена роль администратора назначения атрибутов и должно быть предоставлено разрешение *CustomSecAttributeAssignment.ReadWrite.All.*
+
+Дополнительные примеры для пользователей см. в примере Назначение, обновление или удаление настраиваемой атрибуты безопасности с помощью [API microsoft Graph.](/graph/custom-security-attributes-examples)
+
+#### <a name="request"></a>Запрос
+
+
+<!-- {
+  "blockType": "request",
+  "name": "assign_user_customsecurityattribute_string"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/users/{id}
+Content-type: application/json
+
+{
+    "customSecurityAttributes":
+    {
+        "Engineering":
+        {
+            "@odata.type":"#Microsoft.DirectoryServices.CustomSecurityAttributeValue",
+            "ProjectDate":"2022-10-01"
+        }
+    }
+}
+```
+
+#### <a name="response"></a>Отклик
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
 
 ## <a name="see-also"></a>См. также
 

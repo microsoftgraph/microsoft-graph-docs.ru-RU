@@ -1,21 +1,21 @@
 ---
-title: Различия между Azure Active Directory Azure AD и Graph microsoft Graph
+title: Различия в функциях между Azure AD Graph Microsoft Graph
 description: Описывает различия между Azure Active Directory (Azure AD) Graph API и API microsoft Graph, чтобы помочь быстро и легко перенести приложения.
 author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: a615429eb3887970b00df211f592ec01f2009f23
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d3efd315c0d91784dd6d389041bf11e75371a97b
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139151"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61077623"
 ---
-# <a name="feature-differences-between-azure-active-directory-azure-ad-graph-and-microsoft-graph"></a>Различия между Azure Active Directory Azure AD и Graph microsoft Graph
+# <a name="feature-differences-between-azure-ad-graph-and-microsoft-graph"></a>Различия в функциях между Azure AD Graph Microsoft Graph
 
 Эта статья является *частью шага 1: просмотрите различия API* процесса переноса [приложений.](migrate-azure-ad-graph-planning-checklist.md)
 
-Многие функции в Microsoft Graph аналогично их аналогам Azure AD Graph. Однако некоторые из них были изменены или улучшены. Здесь вы узнаете, как адаптировать приложения, чтобы воспользоваться этими различиями.  Часто изменения незначительны, но стоит усилий.
+Многие функции в Microsoft Graph аналогично их Azure Active Directory (Azure AD) Graph аналогам. Однако некоторые из них были изменены или улучшены. Здесь вы узнаете, как адаптировать приложения, чтобы воспользоваться этими различиями.  Часто изменения незначительны, но стоит усилий.
 
 В этой статье исследуется, как Graph Microsoft:
 

@@ -5,14 +5,14 @@ ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 98a6127991b3eb321a84c6d771ef25b6f4f3f170
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 36fbef413478ac31fa4cafbc3f30166d6e318919
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696913"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61077637"
 ---
-# <a name="directory-resource-type-deleted-items"></a>Тип ресурса directory (удаленные элементы)
+# <a name="directory-resource-type"></a>Тип ресурса каталога
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "58696913"
 
 Представляет удаленный элемент в каталоге. После удаления элемент добавляется в "контейнер" удаленных элементов. Удаленные элементы можно восстановить в течение 30 дней. Через 30 дней элементы удаляются без возможности восстановления.
 
-В настоящее время функции удаленных элементов поддерживаются только для [приложений,](application.md) [групповых и](group.md) [пользовательских](user.md) ресурсов.
+В настоящее время функции удаленных элементов поддерживаются только для [приложений,](application.md) [групповых](group.md)и [пользовательских](user.md) ресурсов.
 
 Наследует от [объекта](entity.md).
 
@@ -45,6 +45,8 @@ ms.locfileid: "58696913"
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |administrativeUnits|[коллекция administrativeUnit](administrativeunit.md)| Концептуальный контейнер для объектов каталога пользователей и групп.|
+|attributeSets|[коллекция attributeSet](attributeset.md)| Группа связанных определений атрибутов настраиваемой безопасности.|
+|customSecurityAttributeDefinitions|[customSecurityAttributeDefinition collection](customsecurityattributedefinition.md)|Схема настраиваемого атрибута безопасности (пары значений ключа).|
 |deleteditems|Коллекция [directoryObject](directoryobject.md)| Недавно удаленные элементы. Только для чтения. Допускается значение null.|
 |featureRolloutPolicies|[коллекция featureRolloutPolicy](featurerolloutpolicy.md)| Допускается значение null.|
 |federationConfigurations|Коллекция [identityProviderBase](../resources/identityproviderbase.md)|Настройка федерации домена с организациями, поставщик удостоверений которых поддерживает протокол SAML или WS-Fed.|
@@ -56,15 +58,13 @@ ms.locfileid: "58696913"
 <!-- {
   "blockType": "resource",
   "keyProperty":"id",
-  "optionalProperties": [
-
-  ],
+  "optionalProperties": [],
   "@odata.type": "microsoft.graph.directory"
 }-->
 
 ```json
 {
-  "id": "String (identifier)"
+  "@odata.type": "#microsoft.graph.directory"
 }
 ```
 
