@@ -1,15 +1,15 @@
 ---
-title: Использование API Graph для Intune — API Microsoft Graph
-description: Перечисление API Microsoft Graph для конечных точек Intune (REST), которые можно использовать для управления организацией клиента, его устройствами, приложениями, доступом и ресурсами.
+title: Работа с Intune в Microsoft Graph
+description: API Microsoft Graph для Intune обеспечивает программный доступ к сведениям Intune для клиента. API выполняет операции Intune, аналогичные доступным с помощью портала Azure.
 author: rolyon
 ms.localizationpriority: high
 ms.prod: intune
-ms.openlocfilehash: 39ef3452376f9d9805a851884dc1ad34dcd52427
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 835cdb2e15f942b1adef688e58cea6bd4e83879c
+ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695607"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61044815"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>Работа с Intune в Microsoft Graph  
 
@@ -46,7 +46,16 @@ Intune предоставляет данные для Microsoft Graph анало
 
 Microsoft Graph позволяет управлять доступом к ресурсам, используя разрешения. Разработчикам необходимо указать разрешения, необходимые для доступа к ресурсам Intune. Как правило, разрешения указываются на портале Azure Active Directory. Дополнительные сведения см. в статье [Справочник по разрешениям Microsoft Graph](/graph/permissions-reference).
 
-## <a name="whats-new"></a>Что нового
+## <a name="interaction-between-microsoft-graph-apis-for-windows-updates"></a>Взаимодействие между API Microsoft Graph для обновлений Windows
+
+Microsoft Graph включает два набора API, которые можно использовать для управления обновлениями Windows: 
+
+- [API Intune](/graph/intune-concept-overview)
+- [API обновлений Windows](/graph/windowsupdates-concept-overview)
+
+Вы можете использовать любой API для управления обновлениями Windows. Однако эти два API несовместимы друг с другом. Каждый из них может переписывать конфигурацию, созданную другим API, не отображая это действие. Использование обоих API для управления обновлениями может привести к неожиданным действиям, в том числе к отмене или изменению временной конфигурации для развертывания обновлений без идентифицированной причины.
+
+## <a name="whats-new"></a>Новые возможности
 Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
 
 ## <a name="next-steps"></a>Дальнейшие действия
