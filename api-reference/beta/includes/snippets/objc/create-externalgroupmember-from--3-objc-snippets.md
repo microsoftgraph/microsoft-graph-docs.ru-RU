@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: f993d2d251ed0c93440fbab8e069b78e351e576d23ef08e6209d34d1c7762ecc
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 2d760f07dec431259e03974e29c6f5ab37242d26
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57196499"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61098233"
 ---
 ```objc
 
@@ -18,8 +18,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphExternalConnectorsExternalGroupMember *externalGroupMember = [[MSGraphExternalConnectorsExternalGroupMember alloc] init];
 [externalGroupMember setId:@"1431b9c38ee647f6a"];
-[externalGroupMember setType: [MSGraphExternalConnectorsExternalGroupMemberType group]];
-[externalGroupMember setIdentitySource: [MSGraphExternalConnectorsIdentitySourceType external]];
+[externalGroupMember setType: [MSGraphExternalConnectorsExternalGroupMemberType user]];
 
 NSError *error;
 NSData *externalGroupMemberData = [externalGroupMember getSerializedDataWithError:&error];

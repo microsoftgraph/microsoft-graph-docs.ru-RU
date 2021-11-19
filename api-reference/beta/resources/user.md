@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: f588cb5a28568f59d031f7b147547d3dd91d894b
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 7ab7e332f3a3e639f68430271b780e832db260f9
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60941878"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61076806"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -180,9 +180,10 @@ ms.locfileid: "60941878"
 | country | String | Страна или регион, в котором находится пользователь, например `US` или `UK`. Максимальная длина составляет 128 символов. <br><br>Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям). |
 | createdDateTime | DateTimeOffset | Дата и время создания пользователя. Значение не может изменяться и заполняется автоматически при создании сущности. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Свойство допускает значение null. Значение null означает, что для пользователя невозможно точно определить время создания. Только для чтения. <br><br>Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`). |
 | creationType | Строка | Указывает, была ли учетная запись пользователя создана с помощью одного из следующих методов: <br/> <ul><li>В качестве обычной учебной или рабочей учетной записи (`null`). <li>Как внешняя учетная запись (`Invitation`). <li>В качестве локальной учетной записи для клиента Azure Active Directory B2C (`LocalAccount`). <li>Через самообслуживаемую регистрацию внутренним пользователем с помощью проверки электронной почты (`EmailVerified`). <li>Через самообслуживаемую регистрацию внешним пользователем, регистрирующимся по ссылке, которая является частью пользовательского потока (`SelfServiceSignUp`). </ul> <br>Только для чтения.<br>Поддерживает `$filter` (`eq`, `ne`, `NOT` и `in`). |
+|customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|Открытый сложный тип, который содержит значение настраиваемого атрибута безопасности, назначенного объекту каталога. Допускается значение null. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `startsWith`).|
 | deletedDateTime | DateTimeOffset | Дата и время удаления пользователя. <br><br>Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le` и `in`) |
 | department | String | Название отдела, в котором работает пользователь. Максимальная длина: 64 символа.<br><br>Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `eq` и по `null` значениям). |
-| displayName | String | Имя пользователя, отображаемое в адресной книге. Это значение обычно является сочетанием имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. Максимальная длина 256 символов.<br><br>Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям), `$orderBy` и `$search`.|
+| displayName | Строка | Имя пользователя, отображаемое в адресной книге. Это значение обычно является сочетанием имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. Максимальная длина 256 символов.<br><br>Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям), `$orderBy` и `$search`.|
 | employeeHireDate | DateTimeOffset | Дата и время, когда пользователь был нанят или начнет работу в случае найма в будущем. <br><br>Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`).|
 | employeeId | String | Идентификатор сотрудника, назначенный пользователю организацией. <br><br>Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям).|
 |employeeOrgData|[employeeOrgData](employeeorgdata.md) |Представляет данные организации (например, подразделение и место возникновения затрат), связанные с пользователем. <br><br>Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`).|
@@ -387,6 +388,9 @@ Hence the type of the corresponding 3 properties remain as String type in the Pr
   "country": "String",
   "createdDateTime": "2019-02-07T21:53:13.067Z",
   "creationType": "String",
+  "customSecurityAttributes": {
+    "@odata.type": "microsoft.graph.customSecurityAttributeValue"
+  },
   "deletedDateTime": "String (timestamp)",
   "department": "String",
   "displayName": "String",

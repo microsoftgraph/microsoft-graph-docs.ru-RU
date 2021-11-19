@@ -1,16 +1,16 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: df1cd4eac176484f8786ed388ade59fa47995101
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: de4486a79dfcb4f4b7fdb864a3d11c7ccf77c69e
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60989560"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61100256"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
+graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 tiIndicatorId := "tiIndicator-id"
 result, err := graphClient.Security().TiIndicatorsById(&tiIndicatorId).Get(options)

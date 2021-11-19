@@ -267,6 +267,8 @@ items:
             href: azuread-identity-access-management-concept-overview.md
           - name: Управление каталогом
             items:
+              - name: Назначение настраиваемых атрибутов безопасности (предварительная версия)
+                href: custom-security-attributes-examples.md
               - name: Назначение ролей с помощью PIM для Azure AD
                 href: tutorial-assign-azureadroles.md
           - name: Удостоверение и вход
@@ -370,8 +372,6 @@ items:
             href: social-intel-concept-overview.md
           - name: Получение информации о релевантных людях
             href: people-example.md
-          - name: Настройка конфиденциальности аналитики людей (предварительная версия)
-            href: insights-customize-people-insights-privacy.md
           - name: Настройка карточки профиля (предварительная версия)
             href: add-properties-profilecard.md
           - name: Обзор аналитики элементов
@@ -628,6 +628,8 @@ items:
                 href: migrate-azure-ad-graph-deploy-test-extend.md
               - name: Вопросы и ответы о миграции
                 href: migrate-azure-ad-graph-faq.md
+              - name: Настройка разрешений Azure AD Graph
+                href: migrate-azure-ad-graph-configure-permissions.md
       - name: Использование пакетов SDK
         items:
           - name: Обзор

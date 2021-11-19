@@ -1,16 +1,16 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 0004fbf4ae399be667129f6ed136e2caf5687cf2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b8de0ff88acd1e50a6c74b9b2b73fda54fb061de
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61001027"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61086135"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
+graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestParameters := &msgraphsdk.CalendarViewRequestBuilderGetQueryParameters{
     StartDateTime: "2017-01-01T19:00:00-08:00",

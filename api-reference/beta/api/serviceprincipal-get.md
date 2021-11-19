@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: high
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: c171eb64c240f60d2070a64bf8ab90dca1d4539b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c8ca0c7d00e60d16abfc73530560bc4cb0900642
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61002554"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61076968"
 ---
 # <a name="get-serviceprincipal"></a>Получение объекта servicePrincipal
 
@@ -36,7 +36,7 @@ ms.locfileid: "61002554"
 GET /servicePrincipals/{id}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select` и `$top` для настройки отклика. Некоторые запросы поддерживаются только при использовании заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
@@ -58,7 +58,11 @@ GET /servicePrincipals/{id}
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [servicePrincipal](../resources/serviceprincipal.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
-### <a name="request"></a>Запрос
+
+### <a name="example-1-get-the-properties-of-the-specified-service-principal"></a>Пример 1. Получение свойств указанного субъекта-службы
+
+#### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 
 
@@ -94,7 +98,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}
 ---
 
 
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
@@ -169,3 +173,96 @@ Content-type: application/json
 }
 -->
 
+### <a name="example-2-get-the-custom-security-attribute-assignments-of-the-specified-service-principal"></a>Пример 2. Получение назначений настраиваемых атрибутов безопасности указанного субъекта-службы
+
+В следующем примере выполняется получение настраиваемых атрибутов безопасности указанного субъекта-службы.
+
+Атрибут №1
+
++ Набор атрибутов: `Engineering`
++ Атрибут: `Project`
++ Тип данных атрибута: коллекция строк
++ Значение атрибута: `["Baker","Cascade"]`
+
+Атрибут №2
+
++ Набор атрибутов: `Engineering`
++ Атрибут: `CostCenter`
++ Тип данных атрибута: коллекция целых чисел
++ Значение атрибута: `[1001]`
+
+Атрибут №3
+
++ Набор атрибутов: `Engineering`
++ Атрибут: `Certification`
++ Тип данных атрибута: логический
++ Значение атрибута: `true`
+
+Атрибут №4
+
++ Набор атрибутов: `Marketing`
++ Атрибут: `Level`
++ Тип данных атрибута: строка
++ Значение атрибута: `"Public"`
+
+Чтобы получить назначения настраиваемых атрибутов безопасности, вызывающему субъекту должна быть присвоена роль читателя назначения атрибутов или администратора назначения атрибутов и должно быть предоставлено разрешение *CustomSecAttributeAssignment.ReadWrite.All*.
+
+#### <a name="request"></a>Запрос
+
+
+
+<!-- {
+  "blockType": "request",
+  "name": "get_serviceprincipal_customsecurityattributes"
+}-->
+```http
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}?$select=customSecurityAttributes
+```
+
+
+#### <a name="response"></a>Отклик
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.servicePrincipal"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals(customSecurityAttributes)/$entity",
+    "customSecurityAttributes": {
+        "Engineering": {
+            "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
+            "Project@odata.type": "#Collection(String)",
+            "Project": [
+                "Baker",
+                "Cascade"
+            ],
+            "CostCenter@odata.type": "#Collection(Int32)",
+            "CostCenter": [
+                1001
+            ],
+            "Certification": true
+        },
+        "Marketing": {
+            "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
+            "Level": "Public"
+        }
+    }
+}
+```
+
+Если субъекту-службе не назначены настраиваемые атрибуты безопасности или у вызывающего субъекта нет прав доступа, отклик будет выглядеть указанным ниже образом.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals(customSecurityAttributes)/$entity",
+    "customSecurityAttributes": null
+}
+```
