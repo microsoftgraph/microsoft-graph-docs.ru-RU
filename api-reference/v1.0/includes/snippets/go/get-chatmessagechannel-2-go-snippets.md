@@ -1,0 +1,21 @@
+---
+description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
+ms.openlocfilehash: 331496b4ba1941c504683991cb7674cc38e9a485
+ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61099071"
+---
+```go
+
+//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+teamId := "team-id"
+channelId := "channel-id"
+chatMessageId := "chatMessage-id"
+result, err := graphClient.TeamsById(&teamId).ChannelsById(&channelId).MessagesById(&chatMessageId).Get(options)
+
+
+```
