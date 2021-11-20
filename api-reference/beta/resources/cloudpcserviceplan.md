@@ -1,16 +1,16 @@
 ---
 title: тип ресурса cloudPcServicePlan
-description: Представляет определенный набор конфигураций плана обслуживания, поддерживаемый облачными компьютерами для клиента.
+description: Представляет план Windows 365, настроенный для облачного КОМПЬЮТЕРА.
 author: RuiHou105
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: d2950e65ec3f90f2c7a3e55123e46c435dc805f4
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 281bfdbaefde3b58b8bb9c0367d92d7dfc0bebb3
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60697452"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123953"
 ---
 # <a name="cloudpcserviceplan-resource-type"></a>тип ресурса cloudPcServicePlan
 
@@ -18,19 +18,21 @@ ms.locfileid: "60697452"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет определенный набор конфигураций плана обслуживания, поддерживаемый облачными компьютерами для клиента.
+Представляет план Windows 365, настроенный для облачного КОМПЬЮТЕРА.
+
+Примеры доступных планов обслуживания см. в Windows [365 сравните планы и цены.](https://www.microsoft.com/windows-365/business/compare-plans-pricing) В настоящее время Graph API Microsoft доступен для Windows 365 Enterprise.
 
 ## <a name="methods"></a>Методы
 
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список servicePlans](../api/virtualendpoint-list-serviceplans.md)|[коллекция cloudPcServicePlan](../resources/cloudpcserviceplan.md)|Перечислить планы службы, поддерживаемые облачными компьютерами для этого клиента.|
+|[Список servicePlans](../api/virtualendpoint-list-serviceplans.md)|[коллекция cloudPcServicePlan](../resources/cloudpcserviceplan.md)|Список доступных в настоящее время планов служб, которые организация может приобрести для облачных компьютеров.|
 
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Имя плана службы. Только для чтения.|
+|displayName|Строка|Имя плана службы. Только для чтения.|
 |id|String|Уникальный идентификатор для плана службы. Только для чтения.|
 |ramInGB|Int32|Размер оперативной памяти в ГБ. Только для чтения.|
 |storageInGB|Int32|Размер диска ОС в ГБ. Только для чтения.|

@@ -1,16 +1,16 @@
 ---
 title: Список servicePlans
-description: Список планов служб, поддерживаемых облачными КОМПЬЮТЕРами для клиента.
+description: Список доступных в настоящее время планов служб, которые организация может приобрести для своих облачных компьютеров.
 author: RuiHou105
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 82b3659e1cae574990812f8ac83f90bf0aea64ec
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8dfda99dc45d27624f9d5f349461213b5e06f23e
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61033305"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123848"
 ---
 # <a name="list-serviceplans"></a>Список servicePlans
 
@@ -18,7 +18,9 @@ ms.locfileid: "61033305"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список планов служб, поддерживаемых облачными КОМПЬЮТЕРами для клиента.
+Список доступных в настоящее время планов служб, которые организация может приобрести для своих облачных компьютеров.
+
+Примеры доступных планов обслуживания см. в Windows [365 сравните планы и цены.](https://www.microsoft.com/windows-365/business/compare-plans-pricing) В настоящее время Graph API Microsoft доступен для Windows 365 Enterprise.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -41,7 +43,7 @@ ms.locfileid: "61033305"
 GET /deviceManagement/virtualEndpoint/servicePlans
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
 Этот метод не поддерживает параметры запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 

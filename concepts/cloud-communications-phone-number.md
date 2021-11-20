@@ -4,12 +4,12 @@ description: В этой статье описывается создание б
 author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
-ms.openlocfilehash: 7ef62359d658ce848f922b5d2e083e7e952ddbcc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7d3a59f497f409c1292313b7847a66cd7138bed7
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59136147"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61124023"
 ---
 # <a name="manage-phone-numbers-for-bots"></a>Управление номерами телефонов для ботов 
 
@@ -98,5 +98,5 @@ ms.locfileid: "59136147"
 
 ## <a name="see-also"></a>См. также
 
-- [Пример бота инцидента](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/BetaSamples/RemoteMediaSamples/IncidentBot). 
- - Дополнительные сведения о развертывании см. в [примере Deploying the sample.](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/master/Samples/BetaSamples/RemoteMediaSamples/README.md#deploying-the-sample)
+- [Пример бота инцидента](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/V1.0Samples/RemoteMediaSamples/IncidentBot). 
+ - Дополнительные сведения о развертывании см. в [примере Deploying the sample.](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/master/Samples/V1.0Samples/RemoteMediaSamples/README.md#deploying-the-sample)

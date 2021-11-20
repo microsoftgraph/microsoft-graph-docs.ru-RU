@@ -3,12 +3,12 @@ title: Компонент People в Microsoft Graph Toolkit
 description: Вы можете использовать веб-компонент `mgt-people`, чтобы отображать группу людей или контактов с помощью фотографий и инициалов.
 ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: c93de8e60260d654624ae84896953dffe8f2e0b4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 44c97680d85d06f5f65703f68f33845f41514278
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59083819"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123407"
 ---
 # <a name="people-component-in-the-microsoft-graph-toolkit"></a>Компонент People в Microsoft Graph Toolkit
 
@@ -40,6 +40,7 @@ ms.locfileid: "59083819"
 | resource | resource | Ресурс, который требуется получить из Microsoft Graph (например, `/me/people`). |
 | scopes | scopes | Необязательный массив строк, если используется свойство либо область с разделителями-запятыми, при использовании атрибута. Эти области используются компонентом (с поддерживаемым поставщиком), чтобы убедиться в том, что пользователь дал согласие на нужное разрешение. |
 | version | version | Необязательная версия API, используемая при выполнении GET-запроса. Значение по умолчанию: `v1.0`.  |
+| fallback-details| fallbackDetails| Массив объектов IDynamicPerson, представляющих человека или нескольких людей, если на графике не обнаружено пользователя/пользователя/контакта.
 
 В следующем примере задается максимальное количество людей для отображения.
 
@@ -92,7 +93,7 @@ mgt-people {
 
 Этот компонент использует следующие API и разрешения Microsoft Graph.
 
-| Настройка | Разрешение | API
+| Конфигурация | Разрешение | API
 | --- | ---------- | ------- |
 | `groupId` set | User.Read.All, People.Read | [/groups/\${groupId}/members](/graph/api/group-list-members) |
 | `userIds` set | User.ReadBasic.All | [/users/${userId}](/graph/api/user-get) |

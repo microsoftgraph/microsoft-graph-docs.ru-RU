@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса responseStatus
 description: Состояние ответа к приглашению на собрание.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: outlook
 author: harini84
-ms.openlocfilehash: f7559f90f1bef35601136e944d57bfec4951cdbf
-ms.sourcegitcommit: 9b8abc940a68dac6ee5da105ca29800cb59775f6
+ms.openlocfilehash: 860afaffc2ce6bcc42a4730b7672983922b066b9
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58514086"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123897"
 ---
 # <a name="responsestatus-resource-type"></a>Тип ресурса responseStatus
 
@@ -26,7 +26,7 @@ ms.locfileid: "58514086"
 
 | Свойство | Тип           | Описание |
 |:---------|:---------------|:------------|
-| response | String         | Тип ответа. Возможные значения: `none`, `organizer`, `tentativelyAccepted`, `accepted`, `declined`, `notResponded`.<br><br>Чтобы различать и : например, если участник Алекс не ответил на запрос собрания, получение статуса ответа Алекса для этого события в календаре `none` `notResponded` Алекс `notResponded` возвращается . Получение ответа Алекса из календаря любого другого участника или возврата `none` организатора. Возвращается и ответ организатора на событие в календаре `none` любого. 
+| response | String         | Тип ответа. Возможные значения: `none`, `organizer`, `tentativelyAccepted`, `accepted`, `declined`, `notResponded`.<br><br>Разграничить `none` и `notResponded` : <br><br> `none` — с точки зрения организатора. Это значение используется, когда о состоянии участника или участника сообщается организатору собрания. <br><br> `notResponded` — с точки зрения attendde. Указывает, что участник не ответил на запрос собрания. <br><br> Клиенты могут лечить `notResponded`  ==  `none` . <br><br> Например, если участник Алекс не ответил на запрос собрания, возвращается статус ответа Алекса для этого события в календаре `notResponded` Алекса. Получение ответа Алекса из календаря любого другого участника или возврата `none` организатора. Возвращается и ответ организатора на событие в календаре `none` любого. 
 | time     | DateTimeOffset | Дата и время возвращения ответа. Они представлены в формате ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.
 
 ## <a name="json-representation"></a>Представление JSON

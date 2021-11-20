@@ -5,18 +5,20 @@ author: akjo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4ad7fa79d3fd247e372ebd89baacc4fb903c2623
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ff74796b88fe682f9b3dd28f6b57106ac84d9112
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60988454"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61124107"
 ---
 # <a name="add-app-to-team"></a>Добавление приложения в команду
 
 Пространство имен: microsoft.graph
 
 Установите приложение [в](../resources/teamsapp.md) указанную [команду.](../resources/team.md)
+
+> **Примечание:** В настоящее время эта операция не поддерживает установку приложений, для получения разрешений на которые требуются разрешения на доступ к ресурсам. Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues#Installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -29,6 +31,7 @@ ms.locfileid: "60988454"
 |Для приложений | TeamsAppInstallation.ReadWriteForTeam.All, Group.ReadWrite.All **, Directory.ReadWrite.All** |
 
 > **Примечание**. Разрешения, помеченные **, не поддерживаются и не должны использоваться.
+  
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

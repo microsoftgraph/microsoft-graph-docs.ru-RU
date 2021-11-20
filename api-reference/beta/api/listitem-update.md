@@ -6,12 +6,12 @@ title: Изменение записи в списке SharePoint
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 44f8a8aa93d293c305e156641c14aa33d814bef5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1ca4ebfe0fc417470d96a4fedda75a37c7bd7a9c
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61012032"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123939"
 ---
 # <a name="update-an-item-in-a-list"></a>Изменение элемента в списке
 
@@ -87,14 +87,14 @@ Content-Type: application/json
 ---
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает объект [fieldValueSet][] для обновленного элемента списка в теле ответа.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
 ```http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-type: application/json
 
 {

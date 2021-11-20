@@ -217,6 +217,8 @@ items:
           - name: Корпоративное управление
             href: intune-concept-overview.md
             displayName: Intune
+          - name: Облачный компьютер (предварительная версия)
+            href: cloudpc-concept-overview.md
           - name: Обновления устройств (предварительная версия)
             displayName: Windows updates
             items:

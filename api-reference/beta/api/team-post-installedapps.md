@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b73b32479ce3fadd092f20db6b9e2cc4be2259a5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 32d473a2366983567d0895030357f7f50daaf1e3
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61013739"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61124037"
 ---
 # <a name="add-app-to-team"></a>Добавление приложения в команду
 
@@ -19,6 +19,8 @@ ms.locfileid: "61013739"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Установите приложение [в](../resources/teamsapp.md) указанную [команду.](../resources/team.md)
+
+> **Примечание:** В настоящее время эта операция не поддерживает установку приложений, для получения разрешений на которые требуются разрешения на доступ к ресурсам. Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues#Installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported).
 
 ## <a name="permissions"></a>Разрешения
 

@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: f5ec1ea04008542e1705ea12da7e5701bfd211e9
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 4fba8ecca0fd82c5e7e45bd5aa0e1c05d4ef84e0
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688389"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61124030"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>Работа с группами в Microsoft Graph
 
@@ -139,7 +139,7 @@ POST https://graph.microsoft.com/beta/groups
 | Создание новых групп и получение существующих, обновление свойств и удаление групп. В настоящее время с помощью API можно создавать только группы безопасности и группы Outlook. | [group](group.md) | [Создание групп](../api/group-post-groups.md) <br/> [Перечисление групп](../api/group-list.md) <br/> [Обновление групп](../api/group-update.md) <br/> [Удаление групп](../api/group-delete.md) |
 | **Методы для членства в группах** | | |
 | Перечисление, добавление и удаление членов групп. | [user](user.md) <br/> [group](group.md)| [Перечисление членов](../api/group-list-members.md) <br/> [Добавление члена](../api/group-post-members.md) <br/> [Удаление члена](../api/group-delete-members.md)|
-| Проверка членства пользователя в группе, получение всех групп, в которых состоит пользователь. | [user](user.md) <br/> [group](group.md)| [Проверка членства в группах](../api/group-checkmembergroups.md) <br/> [Получение групп пользователя](../api/group-getmembergroups.md)|
+| Проверка членства пользователя в группе, получение всех групп, в которых состоит пользователь. | [user](user.md) <br/> [group](group.md) <br/> [servicePrincipal](serviceprincipal.md) <br/> [orgContact](orgcontact.md)| [Проверка членства в группах](../api/directoryobject-checkmembergroups.md) <br/> [Получение групп пользователя](../api/directoryobject-getmembergroups.md)|
 | Перечисление, добавление и удаление владельцев группы. | [user](user.md) <br/> [group](group.md)| [Перечисление владельцев](../api/group-list-members.md) <br/> [Добавление члена](../api/group-post-members.md) <br/> [Удаление участника](../api/group-delete-members.md)|
 
 ## <a name="whats-new"></a>Новые возможности

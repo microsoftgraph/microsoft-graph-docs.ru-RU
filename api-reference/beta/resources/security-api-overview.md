@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 02bce24bc92fea5a83c6cb7dfc6df688f677731b
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: 774b5bff351b9ba1d69ddd2a7ac2ddfc369e4d32
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220782"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123890"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Использование Microsoft Graph Security API
 
@@ -61,24 +61,6 @@ Microsoft Graph Security API включает указанные ниже клю
 
 [Симуляция атак и обучение](/microsoft-365/security/office-365-security/attack-simulation-training) входит в состав [Microsoft Defender для Office 365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide&preserve-view=true). Эта служба позволяет пользователям в клиенте испытать на себе реалистичную учебную фишинговую атаку и извлечь уроки. Симуляция социотехники и обучение пользователей помогают снизить риск взлома с применением таких методов атаки. API симуляции атак и обучения позволяет администраторам клиентов просматривать запущенные упражнения и тренинги по [симуляции](simulation.md) и получать [отчеты](report-m365defender-reports-overview.md) об аналитике поведения пользователей в Интернете в условиях симуляции фишинга.
 
-## <a name="incidents-preview"></a>Инциденты (предварительная версия)
-
-Инцидент — это коллекция коррелирующих оповещений и связанных данных, которые составляют историю атаки. [Управление инцидентами](/microsoft-365/security/defender/manage-incidents?view=o365-worldwide&preserve-view=true) входит в состав [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide&preserve-view=true)и доступно на портале Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)).
-
-Службы и приложения Microsoft 365 создают оповещения при обнаружении подозрительного или вредоносного события или действия. Отдельные оповещения предоставляют ценные подсказки о завершенной или продолжающейся атаке. Однако в атаках обычно используются различные методы против различных типов сущностей, например устройств, пользователей и почтовых ящиков. Это приводит к созданию нескольких оповещений для нескольких сущностей в клиенте.
-
-Поскольку объединение отдельных оповещений для получения представления об атаке может быть сложной задачей и требовать много времени, Microsoft 365 Defender автоматически объединяет оповещения и связанную с ними информацию в инцидент.
-
-Группировка связанных оповещений в инцидент дает полное представление об атаке. Например, вы можете увидеть:
-
-- Где началась атака.
-- Какие методы использовались.
-- Насколько глубоко атака проникла в клиента.
-- Область атаки, например количество затронутых устройств, пользователей и почтовых ящиков.
-- Все данные, связанные с атакой.
-
-Ресурс [инцидента](incident.md) и его API позволяют сортировать инциденты, чтобы создать информированный ответ кибербезопасности. Он предоставляет коллекцию инцидентов, которые были помечены в сети, в диапазоне времени, указанном в политике хранения среды.
-
 ## <a name="information-protection"></a>Защита информации
 
 **Метки**. Метки защиты информации предоставляют сведения о правильном применении метки конфиденциальности к информации. API метки защиты информации описывает настройку меток конфиденциальности, применяемых к пользователю или клиенту.
@@ -126,8 +108,6 @@ Microsoft Graph Security API включает указанные ниже клю
 |Перечисление симуляций|[Перечисление симуляций](../api/attacksimulationroot-list-simulations.md)|[https://graph.microsoft.com/beta/security/attackSimulation/simulations](https://developer.microsoft.com/graph/graph-explorer?request=security/attackSimulation/simulations&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 |Получение обзорного отчета по симуляции|[Получение обзорного отчета по симуляции](../api/simulationreportoverview-get.md)|[https://graph.microsoft.com/beta/security/attackSimulation/simulations/{id}/report/overview](https://developer.microsoft.com/graph/graph-explorer?request=security/attackSimulation/simulations/{id}/report/overview&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 |Отчет по списку пользователей, участвующих в симуляции|[Отчет по списку пользователей, участвующих в симуляции](../api/usersimulationdetails-list.md)|[https://graph.microsoft.com/beta/security/attackSimulation/simulations/{id}/report/simulationUsers](https://developer.microsoft.com/graph/graph-explorer?request=security/attackSimulation/simulations/{id}/report/simulationUsers&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
-| **Инциденты (предварительный предварительная версия)**|||
-| Получение списка инцидентов | [Получение списка инцидентов](../api/security-list-incidents.md) | [https://graph.microsoft.com/beta/security/incidents](https://developer.microsoft.com/graph/graph-explorer?request=security/incidents&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
 | **Оценки безопасности**|||
 |Список оценок безопасности|[Перечисление объектов secureScores](../api/securescores-list.md)|[https://graph.microsoft.com/beta/security/secureScores](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScores&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 | **Профили составляющих оценки безопасности**|||
@@ -169,7 +149,6 @@ Microsoft Graph Security API раскрывает новые способы вз
 Ознакомьтесь с другими возможностями подключения с помощью Microsoft Graph Security API:
 
 - [Соединители Microsoft Graph Security для Logic Apps, Flow и Power Apps](https://aka.ms/graphsecurityconnectors)
-- [Соединитель Microsoft Graph Security для Power BI](https://aka.ms/graphsecuritypowerbiconnectordoc)
 - [Примеры записных книжек Jupyter](https://aka.ms/graphsecurityjupyternotebooks)
 
 Взаимодействие с сообществом:

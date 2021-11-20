@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: b7f7128f7e24319782d4748e61494a3b626dd5cb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0589d8f4c398814605bacb6eafde26d7df34587f
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59050077"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123414"
 ---
 # <a name="reportroot-getteamsdeviceusageuserdetail"></a>reportRoot: getTeamsDeviceUsageUserDetail
 
@@ -46,7 +46,7 @@ GET /reports/getTeamsDeviceUsageUserDetail(date={date_value})
 | Параметр | Тип   | Описание                              |
 | :-------- | :----- | :--------------------------------------- |
 | period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. |
-| date      | Date   | Указывает дату, за которую вы хотите просмотреть пользователей, выполнивших какое-либо действие. Значение {date_value} указывается в формате ГГГГ-ММ-ДД. Так как этот отчет доступен только за последние 30 дней, значение {date_value} должно быть датой из этого диапазона. |
+| date      | Date   | Указывает дату, за которую вы хотите просмотреть пользователей, выполнивших какое-либо действие. Значение {date_value} указывается в формате ГГГГ-ММ-ДД. Поскольку этот отчет доступен только за последние 28 дней, {date_value} должна быть дата из этого диапазона. |
 
 > **Примечание.** В URL-адресе необходимо указать либо период, либо дату.
 

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 2cdcd1b272d30e6bd38a270e0288ef2f09a78fbc
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 319fab77358b35c82c3767fcff7dff1f40915315
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61076813"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123741"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -56,9 +56,9 @@ ms.locfileid: "61076813"
 |**Членство**.| | |
 |[Перечисление memberOf](../api/serviceprincipal-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Получение групп, непосредственным участником которых является субъект-служба, из свойства навигации memberOf.|
 |[Перечисление транзитивных свойств memberOf](../api/serviceprincipal-list-transitivememberof.md) |Коллекция [directoryObject](directoryobject.md)| Перечисление групп, в которых участвует субъект-служба. Эта операция является транзитивной и включает группы, в которых состоит субъект-служба. |
-|[checkMemberGroups](../api/serviceprincipal-checkmembergroups.md)|Коллекция String|Проверка участия в указанном списке групп.|
+|[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|Коллекция String|Проверка участия в указанном списке групп.|
 |[checkMemberObjects](../api/serviceprincipal-checkmemberobjects.md)|Коллекция String|Проверка участия в указанном списке групп, ролях каталога или объектах административных единиц.|
-|[getMemberGroups](../api/serviceprincipal-getmembergroups.md)|Коллекция String|Список групп, в которых участвует субъект-служба.|
+|[getMemberGroups](../api/directoryobject-getmembergroups.md)|Коллекция String|Список групп, в которых участвует субъект-служба.|
 |[getMemberObjects](../api/serviceprincipal-getmemberobjects.md)|Коллекция String|Список групп и ролей каталога, в которых участвует субъект-служба.|
 |**Владельцы**| | |
 |[Список владельцев](../api/serviceprincipal-list-owners.md) |Коллекция [directoryObject](directoryobject.md)| Получение коллекции объектов owner.|
@@ -95,7 +95,7 @@ ms.locfileid: "61076813"
 |alternativeNames|Коллекция строк| Используется для получения субъектов-служб по подпискам, для идентификации групп ресурсов и полных идентификаторов ресурсов для [управляемых удостоверений](https://aka.ms/azuremanagedidentity). Поддерживает `$filter` (`eq`, `NOT`, `ge`, `le`, `startsWith`).|
 |appDescription|Строка|Описание, предоставляемое связанным приложением.|
 |appDisplayName|String|Отображаемое имя, предоставляемое связанным приложением.|
-|appId|String|Уникальный идентификатор для связанного приложения (его свойство **appId**).|
+|appId|String|Уникальный идентификатор для связанного приложения (его свойство **appId**). Поддерживает `$filter` (`eq`, `ne`, `not`, `in`, `startsWith`).|
 |applicationTemplateId|Строка|Уникальный идентификатор шаблона applicationTemplate, из которого создан объект servicePrincipal. Только для чтения. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `startsWith`).|
 |appOwnerOrganizationId|Строка|Содержит идентификатор клиента, в котором зарегистрировано приложение. Применимо только для субъектов-служб на основе приложений. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`).|
 |appRoleAssignmentRequired|Boolean|Указывает, нужно ли предоставлять назначение роли пользователям или другим субъектам-службам для этого субъекта-службы, прежде чем пользователи смогут выполнять вход, а приложения — получать маркеры. Значение по умолчанию — `false`. Значение NULL не допускается. <br><br>Поддерживает `$filter` (`eq`, `ne`, `NOT`). |

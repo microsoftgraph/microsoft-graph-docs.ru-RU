@@ -1,22 +1,22 @@
 ---
-title: Работа с Windows 365 облачными компьютерами с помощью API microsoft Graph
-description: С помощью microsoft Graph вы можете продюсировать и управлять облачными компьютерами в организации, а если они будут использоваться совместно с API Intune, вы сможете управлять облачными компьютерами наряду с физическими конечными точками.
+title: Работа с облачными ПК с ОС Windows 365 с использованием программного интерфейса Microsoft Graph
+description: API microsoft Graph программный доступ к сведениям о облачных КОМПЬЮТЕРАх и действиям по управлению в организации.
 author: cohanley
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: e4e205631424ed2f93b748371c8f32c31b4398ee
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 566c2e37c2b6ca6f36b6ef41d3f2911fc0539a6f
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695428"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123734"
 ---
-# <a name="working-with-windows-365-cloud-pcs-using-the-microsoft-graph-api"></a>Работа с Windows 365 облачными компьютерами с помощью API microsoft Graph
+# <a name="working-with-windows-365-cloud-pcs-using-the-microsoft-graph-api"></a>Работа с облачными ПК с ОС Windows 365 с использованием программного интерфейса Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Windows 365 — это облачная служба, которая содержит и содержит облачные КОМПЬЮТЕРы в качестве виртуальных машин для конечных пользователей. Администраторы могут легко настроить, управлять и масштабировать Windows 365 облачных КОМПЬЮТЕРов, чтобы соответствовать потребностям организации. Отдельные конечные пользователи могут безопасно передавать свои богатые и персонализированные Windows, включая приложения, данные, контент и параметры, из облака Майкрософт на любое устройство в любое время с Windows 365 cloud PC.
+Windows 365 — это облачная служба, которая автоматически создает новый тип виртуальной машины Windows (облачные компьютеры) для пользователей. Каждый облачный компьютер назначен отдельному пользователю в качестве Windows устройства. Windows 365 предоставляет реализованные в Microsoft 365 преимущества производительности, безопасности и совместной работы.
 
 API microsoft Graph программный доступ к сведениям о облачных КОМПЬЮТЕРАх и действиям по управлению в организации. API выполняет те же операции, что и доступные через Microsoft Endpoint Manager. 
 
@@ -45,3 +45,7 @@ Microsoft Graph позволяет управлять доступом к рес
 ## <a name="whats-new"></a>Новые возможности
 
 Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
+
+## <a name="next-steps"></a>Дальнейшие действия
+- Ознакомьтесь с [обзором Windows 365 cloud PC в Microsoft Graph.](/graph/cloudpc-concept-overview)
+- Попробуйте Windows API облачных ПК 365 с помощью [Microsoft Graph Explorer.](https://developer.microsoft.com/graph/graph-explorer)

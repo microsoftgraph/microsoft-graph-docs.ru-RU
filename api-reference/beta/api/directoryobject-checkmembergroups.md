@@ -1,16 +1,16 @@
 ---
 title: 'directoryObject: checkMemberGroups'
-description: Проверка членства в указанном списке групп и возвраты из этого списка этих групп
+description: Проверьте членство в указанном списке групп и вернись из этого списка тех групп, участником которых является указанный пользователь, группа, руководитель службы, организационный контакт или объект каталога.
 ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 836dd80feccf585035f4f51c1ff3135a744b6e7d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 04696e05b0c3c64bbc8a6fe49437bdbbf7db3ccd
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022455"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61124128"
 ---
 # <a name="directoryobject-checkmembergroups"></a>directoryObject: checkMemberGroups
 
@@ -18,39 +18,99 @@ ms.locfileid: "61022455"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Проверьте членство в указанном списке групп и возвращайте из этого списка те группы, членом которых является указанный пользователь, группа, руководитель службы или объект каталога. Это транзитивная функция.
+Проверьте членство в указанном списке групп и вернись из этого списка тех групп, [](../resources/orgcontact.md)членом которых [](../resources/directoryobject.md) является указанный [пользователь,](../resources/user.md) [группа,](../resources/group.md)руководитель службы, [](../resources/serviceprincipal.md)организационный контакт или объект каталога. Это транзитивная функция.
+
+В одном запросе можно проверять до 20 групп. Эта функция поддерживает все группы, которые предусмотрены в Azure AD. Поскольку Microsoft 365 группы не могут содержать другие группы, членство Microsoft 365 группы всегда является прямым.
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
+### <a name="group-memberships-for-a-directory-object"></a>Членство в группе для объекта каталога
+
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий)           |
+|:---------------------------------------|:------------------------------------------------------|
+| Делегированные (рабочая или учебная учетная запись)     | User.ReadBasic.All, User.Read.All, Directory.Read.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                        |
+| Для приложений                            | User.Read.All, Directory.Read.All                     |
+
+### <a name="group-memberships-for-a-user"></a>Членство в группе для пользователя
+
+| Тип разрешения | Разрешения (в порядке повышения привилегий) |
+|:-|:-|
+| Делегированные (рабочая или учебная учетная запись) | User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений | User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All |
+
+### <a name="group-memberships-for-a-group"></a>Членство в группе для группы
+
+| Тип разрешения | Разрешения (в порядке повышения привилегий) |
+|:-|:-|
+| Делегированные (рабочая или учебная учетная запись) | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+
+### <a name="group-memberships-for-a-service-principal"></a>Членство в группе для директора службы
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.ReadBasic.All, User.Read.All, Directory.Read.All    |
+|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | User.Read.All, Directory.Read.All |
+|Для приложений | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
-В следующей таблице перечислены типы разрешений, которые можно использовать для различных сценариев.
+### <a name="group-memberships-for-an-organizational-contact"></a>Членство в группе для организационного контакта
 
-| Сценарий | Разрешения |
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All   |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Directory.Read.All, Directory.ReadWrite.All |
+
+<!--
+The following table lists the permission types to use for different scenarios.
+
+| Scenario | Permissions |
 |:-|:-|
-| Для получения членства в группе для пользователя, вписаного в группу | Используйте один из следующих наборов разрешений: <br/> <li> **User.Read** и **GroupMember.Read.All** <li>**User.Read** и **Group.Read.All** |
-| Для получения членства в группе для любого пользователя | Используйте один из следующих наборов разрешений: <br/> <li> **User.ReadBasic.All** и **GroupMember.Read.All** <li>**User.Read.All** и **GroupMember.Read.All** <li>**User.ReadBasic.All** и **Group.Read.All** <li>**User.Read.All** и **Group.Read.All** |
-| Чтобы получить членство в группе для группы | Используйте разрешение **GroupMember.Read.All** или **Group.Read.All.** |
-| Чтобы получить членство в группе для директора службы | Используйте один из следующих наборов разрешений <br/> <li>**Application.ReadWrite.All** и **GroupMember.Read.All** <li>**Application.ReadWrite.All** и **Group.Read.All** |
-| Чтобы получить членство в группе для объекта каталога | Используйте **разрешение Directory.Read.All.** |
+| To get group memberships for the signed-in user | Use one of the following sets of permissions: <br/> <li> **User.Read** and **GroupMember.Read.All** <li>**User.Read** and **Group.Read.All** |
+| To get group memberships for any user | Use one of the following sets of permissions: <br/> <li> **User.ReadBasic.All** and **GroupMember.Read.All** <li>**User.Read.All** and **GroupMember.Read.All** <li>**User.ReadBasic.All** and **Group.Read.All** <li>**User.Read.All** and **Group.Read.All** |
+| To get group memberships for a group | Use either the **GroupMember.Read.All** or **Group.Read.All** permission. |
+| To get group memberships for a service principal | Use one of the following sets of permissions <br/> <li>**Application.ReadWrite.All** and **GroupMember.Read.All** <li>**Application.ReadWrite.All** and **Group.Read.All** |
+| To get group memberships for a directory object | Use the **Directory.Read.All** permission. |
+-->
 
 ## <a name="http-request"></a>HTTP-запрос
 
+Членство в группах для объекта каталога (пользователя, группы, руководителя службы или организационного контакта).
+<!-- { "blockType": "ignored" } -->
+```http
+POST /directoryObjects/{id}/checkMemberGroups
+```
+
+Членство в группе для подписанного пользователя или других пользователей.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/checkMemberGroups
 POST /users/{id | userPrincipalName}/checkMemberGroups
-POST /groups/{id}/checkMemberGroups
-POST /servicePrincipals/{id}/checkMemberGroups
-POST /directoryObjects/{id}/checkMemberGroups
 ```
+
+Членство в группе для группы.
+<!-- { "blockType": "ignored" } -->
+```http
+POST /groups/{id}/checkMemberGroups
+```
+
+Членство в группе для директора службы.
+<!-- { "blockType": "ignored" } -->
+```http
+POST /servicePrincipals/{id}/checkMemberGroups
+```
+
+Членство в группе для организационного контакта.
+<!-- { "blockType": "ignored" } -->
+```http
+POST /contacts/{id}/checkMemberGroups
+```
+
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя       |Описание|
@@ -64,21 +124,70 @@ POST /directoryObjects/{id}/checkMemberGroups
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|groupIds|Коллекция String |Коллекция, содержащая идентификатор объектов групп, членство в которых нужно проверить. Можно указать до 20 групп.|
+|groupIds|Коллекция строк |Коллекция, содержащая идентификатор объектов групп, членство в которых нужно проверить. Можно указать до 20 групп.|
 
 ## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции String в тексте отклика.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
-### <a name="request"></a>Запрос
+### <a name="example-1-check-group-memberships-for-a-directory-object"></a>Пример 1. Проверка членства группы для объекта каталога
 
+#### <a name="request"></a>Запрос
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "directoryobject_checkmembergroups"
+}-->
+```http
+POST https://graph.microsoft.com/beta/directoryObjects/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e/checkMemberGroups
+Content-type: application/json
+
+{
+    "groupIds": [
+        "f448435d-3ca7-4073-8152-a1fd73c0fd09",
+        "bd7c6263-4dd5-4ae8-8c96-556e1c0bece6",
+        "93670da6-d731-4366-94b5-abed40b6016b",
+        "f5484ab1-4d4d-41ec-a9b8-754b3957bfc7",
+        "c9103f26-f3cf-4004-a611-2a14e81b8f79"
+    ]
+}
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приводится пример ответа
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "String",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(Edm.String)",
+    "value": [
+        "f448435d-3ca7-4073-8152-a1fd73c0fd09",
+        "93670da6-d731-4366-94b5-abed40b6016b",
+        "f5484ab1-4d4d-41ec-a9b8-754b3957bfc7",
+        "c9103f26-f3cf-4004-a611-2a14e81b8f79"
+    ]
+}
+```
+
+### <a name="example-2-check-group-memberships-for-the-signed-in-user"></a>Пример 2. Проверка членства в группе для пользователя, заявив о регистрации
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "directoryobject_checkmembergroups_me"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/checkMemberGroups
@@ -91,30 +200,11 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-checkmembergroups-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-checkmembergroups-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-checkmembergroups-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/directoryobject-checkmembergroups-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Перейти](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/directoryobject-checkmembergroups-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
+Ниже приводится пример ответа
+
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -127,11 +217,13 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(Edm.String)",
   "value": [
         "fee2c45b-915a-4a64-b130-f4eb9e75525e"
   ]
 }
 ```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

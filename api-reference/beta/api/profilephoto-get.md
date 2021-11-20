@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: people
 author: kevinbellinger
-ms.openlocfilehash: 21a48e87dd4582024294503165e092cd7fa76751
-ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
+ms.openlocfilehash: 0e26a038b61bb565b5592a70687fd4bd9667cce6
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "60355556"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61124051"
 ---
 # <a name="get-photo"></a>Получение фотографии
 
@@ -30,7 +30,7 @@ ms.locfileid: "60355556"
 Если указанный размер недоступен в почтовом ящике пользователя или Azure Active Directory, возвращается размер 1 x 1 и остальные метаданные.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 > **Примечание.** Метод GET photo в бета-версии поддерживается для рабочих, учебных и личных учетных записей пользователя. Однако метод GET photo metadata поддерживается только для рабочих или учебных, но не личных учетных записей пользователя.
 
@@ -48,7 +48,7 @@ ms.locfileid: "60355556"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)      |   Group.Read.All, Group.ReadWrite.All           |
 |Делегированные (личная учетная запись Майкрософт)      |   Не поддерживается.            |
-|Приложение      |    Group.Read.All, Group.ReadWrite.All           |
+|Для приложений      |    Group.Read.All, Group.ReadWrite.All           |
 
 ### <a name="to-retrieve-the-profile-photo-of-a-contact"></a>Для получения фотографии профиля контакта
 
@@ -111,7 +111,7 @@ GET /groups/{id}/photos/{size}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -185,7 +185,7 @@ Content-type: application/json
     "@odata.id": "https://graph.microsoft.com/beta/users('ddfcd489-628b-7d04-b48b-20075df800e5@1717622f-1d94-c0d4-9d74-f907ad6677b4')/photo",
     "@odata.mediaContentType": "image/jpeg",
     "@odata.mediaEtag": "\"BA09D118\"",
-    "id": "240X240",
+    "id": "240x240",
     "width": 240,
     "height": 240
 }
@@ -208,7 +208,7 @@ Content-type: application/json
     "@odata.id": "https://graph.microsoft.com/beta/users('ddfcd489-628b-7d04-b48b-20075df800e5@1717622f-1d94-c0d4-9d74-f907ad6677b4')/photo",
     "@odata.mediaContentType": "image/gif",
     "@odata.mediaEtag": "",
-    "id": "1X1",
+    "id": "1x1",
     "width": 1,
     "height": 1
 }

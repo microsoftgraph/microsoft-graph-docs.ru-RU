@@ -5,18 +5,20 @@ author: akjo
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2144e203172abad2b9c4245dcd1cf8ec42b0d13d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 823b37985368be6cbed33dcb4603537372d6df69
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61029133"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123449"
 ---
 # <a name="teamsappinstallation-in-team-upgrade"></a>teamsAppInstallation в команде: обновление
 
 Пространство имен: microsoft.graph
 
 Обновление [установки приложения](../resources/teamsappinstallation.md) в [команде до](../resources/team.md) последней версии приложения.
+
+> **Примечание:** В настоящее время эта операция не поддерживает обновление приложений, для чего требуются разрешения на согласие на использование ресурсов. Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues#Installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported).
 
 ## <a name="permissions"></a>Разрешения
 
