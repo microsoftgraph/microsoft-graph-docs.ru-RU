@@ -4,12 +4,12 @@ description: Объекты каталога Azure AD поддерживают �
 author: Licantrop0
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: a1036aefdd9debaa54631a43f08867a1ef430c02
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 2b9c95961be57152c6d3bd885351b52c48b7f7a8
+ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765327"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61130032"
 ---
 # <a name="advanced-query-capabilities-on-azure-ad-directory-objects"></a>Расширенные возможности запросов для объектов каталога Azure AD
 
@@ -65,9 +65,9 @@ ConsistencyLevel: eventual
 | Использование `$filter` с оператором `endsWith`                            | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DendsWith(mail%2C'%40outlook.com')&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$count=true&$filter=endsWith(mail,'@outlook.com')`                                                                                       |
 | Использование `$filter` и `$orderby` в одном и том же запросе                        | [GET](https://developer.microsoft.com/graph/graph-explorer?request=applications%3F%24orderby%3DdisplayName%26%24filter%3DstartsWith(displayName%2C%20'Box')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../applications?$orderby=displayName&$filter=startsWith(displayName, 'Box')&$count=true`                       |
 | Использование `$filter` с операторами `startsWith` для определенных свойств | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24filter%3DstartsWith(mobilePhone%2C%20'25478')%20OR%20startsWith(mobilePhone%2C%20'25473')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=startsWith(mobilePhone, '25478') OR startsWith(mobilePhone, '25473')&$count=true` |
-| Использование `$filter` с операторами `ne` и `NOT`                           | 
+| Использование `$filter` с операторами `ne` и `not`                           | 
   [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24filter%3DcompanyName%20ne%20null%20and%20NOT(companyName%20eq%20'Microsoft')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=companyName ne null and NOT(companyName eq 'Microsoft')&$count=true`                           |
-| Использование `$filter` с операторами `NOT` и `startsWith`                   | 
+| Использование `$filter` с операторами `not` и `startsWith`                   | 
   [GET](https://developer.microsoft.com/graph/graph-explorer?request=%2Fusers%3F%24filter%3DNOT%20startsWith(displayName%2C%20'Conf')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=NOT startsWith(displayName, 'Conf')&$count=true`                                                                      |
 | Использование функции OData cast с другим параметром запроса                           | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me%2FtransitiveMemberOf%2Fmicrosoft.graph.group%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../me/transitiveMemberOf/microsoft.graph.group?$count=true`                                                                                             |
 
@@ -211,6 +211,6 @@ Content-type: application/json
 ## <a name="see-also"></a>См. также
 
 + [Настройка откликов с помощью параметров запроса](/graph/query-parameters)
-+ [Ограничения параметров запроса](known-issues.md#query-parameter-limitations)
++ [Ограничения параметров запроса](known-issues.md#some-limitations-apply-to-query-parameters)
 + [Использование параметра запроса $search для сопоставления с условием поиска](/graph/search-query-parameter)
 + [Обзор расширенных возможностей запроса для объектов каталога Azure AD с помощью SDK .NET](https://github.com/microsoftgraph/dotnet-aad-query-sample/)

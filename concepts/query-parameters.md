@@ -4,12 +4,12 @@ description: В Microsoft Graph предусмотрены необязател�
 author: mumbi-o
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: a5f4ee30ef7fdea9a2e8e4e0c73777cf9d226769
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 4e2c0cc59f47e02b7bc9a1f0496bbbd06f1ffe4a
+ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60256412"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61130208"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Настройка ответов с помощью параметров запроса
 
@@ -180,8 +180,8 @@ GET https://graph.microsoft.com/v1.0/users?$filter=imAddresses/any(s:s eq 'admin
 GET https://graph.microsoft.com/v1.0/users?$filter=assignedLicenses/any(s:s/skuId eq 184efa21-98c3-4e5d-95ab-d07053a96e67)
 ```
 
-Чтобы инвертировать результат выражения внутри предложения `any`, используйте оператор `NOT`, а не `ne`. Например, следующий запрос получает только пользователей, у которых свойству **imAddress** не назначено значение `admin@contoso.com`.
->**Примечание.** Для объектов каталога, например пользователей, операторы `NOT` и `ne` поддерживаются только в [расширенных запросах](/graph/aad-advanced-queries).
+Чтобы инвертировать результат выражения внутри предложения `any`, используйте оператор `not`, а не `ne`. Например, следующий запрос получает только пользователей, у которых свойству **imAddress** не назначено значение `admin@contoso.com`.
+>**Примечание.** Для объектов каталога, например пользователей, операторы `not` и `ne` поддерживаются только в [расширенных запросах](/graph/aad-advanced-queries).
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=NOT(imAddresses/any(s:s eq 'admin@contoso.com'))&$count=true

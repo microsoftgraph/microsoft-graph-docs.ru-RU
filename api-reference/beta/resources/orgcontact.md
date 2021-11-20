@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: da80a014bf5d1ee5f3151ae68f994f211dce7a00
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: dcb4dd40afd4646cf911f5e3d179e51098bae16d
+ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123967"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61130229"
 ---
 # <a name="orgcontact-resource-type"></a>тип ресурса orgContact
 
@@ -46,20 +46,20 @@ ms.locfileid: "61123967"
 | Свойство | Тип | Описание |
 | -------- | ---- | ----------- |
 | адреса | [коллекция physicalOfficeAddress](physicalofficeaddress.md) | Почтовые адреса для этого организационного контакта. Пока у контакта может быть только один физический адрес. |
-| companyName | String | Имя компании, к которую принадлежит этот организационный контакт. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям). |
-| department | String | Имя отдела, в котором работает контакт. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям). |
-| displayName | String | Отображение имени для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям), `$search` и `$orderBy`.  |
-| givenName | String | Имя для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям).  |
-| id | String | Уникальный идентификатор для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `in`). |
-| jobTitle; | String | Название задания для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям). |
-| почта; | String | Адрес SMTP для контакта, например, "jeff@contoso.onmicrosoft.com". Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям). |
-| mailNickname | String | Псевдоним электронной почты (часть адреса электронной почты, предварительно ожидающих символ @) для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям). |
-| onPremisesLastSyncDateTime | DateTimeOffset | Дата и время последней синхронизации этого организационного контакта с локальной AD. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`). |
-| onPremisesProvisioningErrors | Коллекция [onPremisesProvisioningError](onpremisesprovisioningerror.md) | Список ошибок в обеспечении синхронизации для этого организационного контакта. Поддерживает `$filter` (`eq`, `NOT`). |
-| onPremisesSyncEnabled | Логический | **верно,** если этот объект синхронизирован из локального каталога; **false,** если этот объект был первоначально синхронизирован из локального каталога, но больше не синхронизирован и теперь освоен в Exchange; **null,** если этот объект никогда не был синхронизирован из локального каталога (по умолчанию). <br/> <br/>Поддерживает `$filter` (`eq`, `ne`, `NOT`, `in` и `eq` по `null` значениям). |
-| phones | Коллекция [phone](phone.md) | Список телефонов для этого организационного контакта. Телефон могут быть мобильными, бизнес-и бизнесфаксами. Только один из каждого типа может присутствовать в коллекции. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `in`). |
-| proxyAddresses | Коллекция строк | Например: SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com". Для выражений фильтра в случае многозначных свойств требуется оператор **any**. Поддерживает `$filter` (`eq`, `NOT`, `ge`, `le`, `startsWith`). |
-| surname | String | Фамилия для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `NOT`, `ge`, `le`, `in`, `startsWith`и `eq` для значений `null`). |
+| companyName | String | Имя компании, к которую принадлежит этот организационный контакт. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям). |
+| department | String | Имя отдела, в котором работает контакт. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям). |
+| displayName | String | Отображение имени для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям), `$search` и `$orderBy`.  |
+| givenName | String | Имя для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям).  |
+| id | String | Уникальный идентификатор для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `not`, `in`). |
+| jobTitle; | String | Название задания для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям). |
+| почта; | String | Адрес SMTP для контакта, например, "jeff@contoso.onmicrosoft.com". Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям). |
+| mailNickname | String | Псевдоним электронной почты (часть адреса электронной почты, предварительно ожидающих символ @) для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям). |
+| onPremisesLastSyncDateTime | DateTimeOffset | Дата и время последней синхронизации этого организационного контакта с локальной AD. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`). |
+| onPremisesProvisioningErrors | Коллекция [onPremisesProvisioningError](onpremisesprovisioningerror.md) | Список ошибок в обеспечении синхронизации для этого организационного контакта. Поддерживает `$filter` (`eq`, `not`). |
+| onPremisesSyncEnabled | Логический | **верно,** если этот объект синхронизирован из локального каталога; **false,** если этот объект был первоначально синхронизирован из локального каталога, но больше не синхронизирован и теперь освоен в Exchange; **null,** если этот объект никогда не был синхронизирован из локального каталога (по умолчанию). <br/> <br/>Поддерживает `$filter` (`eq`, `ne`, `not`, `in` и `eq` по `null` значениям). |
+| phones | Коллекция [phone](phone.md) | Список телефонов для этого организационного контакта. Телефон могут быть мобильными, бизнес-и бизнесфаксами. Только один из каждого типа может присутствовать в коллекции. Поддерживает `$filter` (`eq`, `ne`, `not`, `in`). |
+| proxyAddresses | Коллекция строк | Например: SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com". Для выражений фильтра в случае многозначных свойств требуется оператор **any**. Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
+| surname | String | Фамилия для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`и `eq` для значений `null`). |
 
 ## <a name="relationships"></a>Связи
 

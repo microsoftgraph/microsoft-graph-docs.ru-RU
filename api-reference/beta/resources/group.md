@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 23007c76559337feab4c995fba839a150e232c6b
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 8f573fe42950d11517a826832db45f49f30f4c53
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60946596"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123737"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -41,8 +41,8 @@ ms.locfileid: "60946596"
 | [Удаление группы](../api/group-delete.md) | Нет | Удаление объекта group. |
 | [Список групп](../api/group-list.md) | [group](group.md) | Чтение свойств и связей всех объектов group. |
 | [delta](../api/group-delta.md) | Коллекция group | Получение добавочных изменений для групп. |
-| [Добавление члена](../api/group-post-members.md) | [directoryObject](directoryobject.md) | Добавление пользователя или группы в данную группу путем помещения в свойство навигации **members** (поддерживается только для групп безопасности, в том числе с включенной поддержкой почты). |
-| [Добавление владельца](../api/group-post-owners.md) | [directoryObject](directoryobject.md) | Добавление владельца группы путем помещения в свойство навигации **owners** (поддерживается только для групп безопасности, в том числе с включенной поддержкой почты). |
+| [Добавление участников](../api/group-post-members.md) | [directoryObject](directoryobject.md) | Добавление пользователя или группы в данную группу путем помещения в свойство навигации **members** (поддерживается только для групп безопасности и групп Microsoft 365). |
+| [Добавление владельцев](../api/group-post-owners.md) | [directoryObject](directoryobject.md) | Добавление владельца группы путем помещения в свойство навигации **owners** (поддерживается только для групп безопасности и групп Microsoft 365). |
 | [Создание параметра](../api/directorysetting-post-settings.md) | [directorySetting](directorysetting.md) | Создание объекта setting на основе directorySettingTemplate. POST-запрос должен предоставлять объекты settingValue для всех параметров, определенных в шаблоне. Для этой операции могут использоваться только специальные шаблоны для групп. |
 | [Удаление параметра](../api/directorysetting-delete.md) | Нет | Удаление объекта setting. |
 | [Получение конечной точки](../api/endpoint-get.md) | [endpoint](endpoint.md) | Чтение свойств и связей объекта endpoint. |
@@ -59,10 +59,10 @@ ms.locfileid: "60946596"
 | [Удаление участника](../api/group-delete-members.md) | Нет | Удаление участника из группы Microsoft 365 или группы безопасности (в том числе с включенной поддержкой почты) с помощью свойства навигации **members**. Вы можете удалять пользователей или другие группы. |
 | [Обновление параметра](../api/directorysetting-update.md) | [directorySetting](directorysetting.md) | Обновление объекта setting. |
 | [assignLicense](../api/group-assignlicense.md) | [group](group.md) | Добавление или удаление подписок группы. Можно также включать и отключать отдельные планы, связанные с подпиской. |
-| [checkMemberGroups](../api/group-checkmembergroups.md) | Коллекция String | Проверка участия в списке групп. Это транзитивная функция. |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | Коллекция String | Проверка участия в списке групп. Это транзитивная функция. |
 | [checkMemberObjects](../api/group-checkmemberobjects.md) | Коллекция String | Проверка участия в списке группы, роли каталога или объектах административных единиц. Эта функция транзитивна. |
 | [evaluateDynamicMembership](../api/group-evaluatedynamicmembership.md) | [evaluateDynamicMembershipResult](evaluatedynamicmembershipresult.md) | Определите, может ли пользователь или устройство являться членом динамической группы. |
-| [getMemberGroups](../api/group-getmembergroups.md) | Коллекция String | Возврат всех групп, в которых состоит эта группа. Это транзитивная функция. |
+| [getMemberGroups](../api/directoryobject-getmembergroups.md) | Коллекция String | Возврат всех групп, в которых состоит эта группа. Это транзитивная функция. |
 | [getMemberObjects](../api/group-getmemberobjects.md) | Коллекция String | Возвращение всех групп и административных единиц, в которых состоит группа. Это транзитивная функция. |
 | [validateProperties](../api/group-validateproperties.md) | JSON | Проверка соответствия отображаемого имени или почтового псевдонима группы Microsoft 365 политикам именования. |
 | **Назначение ролей приложений** |||

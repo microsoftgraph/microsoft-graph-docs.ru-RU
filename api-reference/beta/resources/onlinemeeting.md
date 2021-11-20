@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 5bb0946f7af1af852ad56ae362482015658c675c
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 4002e66e9362c52f1a062460ac1ebf64e855c85a
+ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695946"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61130145"
 ---
 # <a name="onlinemeeting-resource-type"></a>Тип ресурса onlineMeeting
 
@@ -25,7 +25,7 @@ ms.locfileid: "60695946"
 | Метод | Возвращаемый тип |Описание |
 | ------ | ----------- | ---------- |
 | [Создание](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Создание собрания в Интернете. |
-| [получение](../api/onlinemeeting-get.md); | [onlineMeeting](onlinemeeting.md) | Ознакомьтесь с свойствами и отношениями **объекта onlineMeeting.** |
+| [Получение](../api/onlinemeeting-get.md); | [onlineMeeting](onlinemeeting.md) | Ознакомьтесь с свойствами и отношениями **объекта onlineMeeting.** |
 | [Обновление](../api/onlinemeeting-update.md) | [onlineMeeting](onlinemeeting.md) | Обновление свойств объекта **onlineMeeting.** |
 | [Удаление](../api/onlinemeeting-delete.md) | Нет | Удаление **объекта onlineMeeting.** |
 | [Создание или доступ к onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Создайте онлайн-собрание с пользовательским внешним ИД. Если собрание уже существует, извлекай его свойства. |
@@ -50,7 +50,7 @@ ms.locfileid: "60695946"
 | id | String | ID по умолчанию, связанный с онлайн-собранием. Только для чтения.    |
 | isBroadcast | Логический | Указывает, является ли это событие [Teams в прямом эфире](/microsoftteams/teams-live-events/what-are-teams-live-events). |
 | isEntryExitAnnounced  | Логический | Указывает, следует ли объявлять, когда звонители присоединяются или уходят. |
-| joinWebUrl | String | URL-адрес присоединиться к собранию в Интернете. Только для чтения. |
+| joinWebUrl | Строка | URL-адрес присоединиться к собранию в Интернете. Только для чтения. |
 | joinInformation | [itemBody](itembody.md) | Сведения о присоединиться в варианте языка и языка, указанном в заглавной странице HTTP-запроса "Accept-Language". Только для чтения. |
 | lobbyBypassSettings | [lobbyBypassSettings](lobbyBypassSettings.md) | Указывает, какие участники могут обойти вестибюль собрания. |
 | participants | [meetingParticipants](meetingparticipants.md) | Участники, связанные с онлайн-собранием. Это включает организатора и участников. |
@@ -58,8 +58,8 @@ ms.locfileid: "60695946"
 | запись | Stream | Поток контента записи события Teams [в прямом эфире](/microsoftteams/teams-live-events/what-are-teams-live-events). Только для чтения. |
 | startDateTime | Даты и время | Время начала собрания в UTC. |
 | subject | String | Тема собрания в Интернете. |
-| videoTeleconferenceId | String | ID видеоконференции. Только для чтения. |
-| autoAdmittedUsers (обесценив) | String | Параметр, который указывает тип участников, которые будут автоматически допущены к собранию в Интернете. Возможные значения: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Только для чтения. |
+| videoTeleconferenceId | Строка | ID видеоконференции. Только для чтения. |
+| autoAdmittedUsers (обесценив) | Строка | Параметр, который указывает тип участников, которые будут автоматически допущены к собранию в Интернете. Возможные значения: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Только для чтения. |
 | возможности (неподготовленные) | коллекция meetingCapabilities | Список возможностей собраний. Возможные значения: `questionAndAnswer` , `unknownFutureValue` . |
 
 > [!CAUTION]
@@ -95,8 +95,12 @@ ms.locfileid: "60695946"
 
 | Связь | Тип | Описание |
 | ------------ | ---- | ----------- |
-| meetingAttendanceReport | [meetingAttendanceReport](meetingAttendanceReport.md) | Отчет о посещаемости собрания в Интернете. Только для чтения. |
+| attendanceReports | [коллекция meetingAttendanceReport](meetingAttendanceReport.md) | Отчеты о посещаемости собрания в Интернете. Только для чтения. |
 | регистрация | [meetingRegistration](meetingregistration.md) | Регистрация, включенная для собрания в Интернете. На одном собрании в Интернете может быть включена только одна регистрация.|
+| meetingAttendanceReport (обесценена) | [meetingAttendanceReport](meetingAttendanceReport.md) | Отчет о посещаемости последнего сеанса собраний в Интернете. Только для чтения. |
+
+> [!TIP]
+> Свойство **meetingAttendanceReport** отстает. Он будет оставаться в бета-версии для обратной совместимости. В будущем используйте **свойство attendanceReports** для получения отчетов о посещаемости собрания в Интернете.
 
 ## <a name="json-representation"></a>Представление JSON
 

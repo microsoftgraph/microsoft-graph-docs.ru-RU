@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6a92358fab7e70f5c20c1ea35c698349b10e6b9c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b3fd1a9214c22c92ab57af4dac3093743f509498
+ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60980820"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61130201"
 ---
 # <a name="get-onlinemeeting"></a>Get onlineMeeting
 
@@ -25,9 +25,8 @@ ms.locfileid: "60980820"
 - Получите сведения о onlineMeeting с помощью [videoTeleconferenceId,](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid) [ID](#example-2-retrieve-an-online-meeting-by-meeting-id)собрания или [joinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
 - Используйте путь, чтобы получить отчет участника о событии Microsoft Teams в виде ссылки на скачивание, как показано `/attendeeReport` [в примере 4](#example-4-fetch-attendee-report-of-a-teams-live-event). [](/microsoftteams/teams-live-events/what-are-teams-live-events)
 - Используйте пути и пути для получения записей события Teams в виде ссылки на скачивание, как показано `/recording` `/alternativeRecording` в [примере 5](#example-5-fetch-recording-of-a-teams-live-event). [](/microsoftteams/teams-live-events/what-are-teams-live-events)
-- Используйте `/meetingAttendanceReport` путь, чтобы получить отчет о посещаемости запланированного собрания, как показано [в примере 6](#example-6-fetch-attendance-report-of-an-online-meeting).
 
-Отчет о посещаемости собраний, Teams отчет о живом событии и Teams записи живых событий являются артефактами собраний в Интернете. Подробные сведения см. [в материале Online meeting artifacts and permissions.](/graph/cloud-communications-online-meeting-artifacts)
+Teams отчет о живом событии, а Teams записи событий — это артефакты собраний в Интернете. Подробные сведения см. [в материале Online meeting artifacts and permissions.](/graph/cloud-communications-online-meeting-artifacts)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -65,14 +64,6 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{video
 ```http
 GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
-```
-
-Чтобы получить отчет о посещаемости собрания в Интернете с делегированной () и `/me` приложением `/users/{userId}` () разрешения:
-<!-- { "blockType": "ignored" }-->
-
-```http
-GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
-GET /users/{userId}/onlineMeetings/{meetingId}/meetingAttendanceReport
 ```
 
 Чтобы получить отчет участника о событии Teams [с](/microsoftteams/teams-live-events/what-are-teams-live-events) делегированием () и разрешением приложения `/me` `/users/{userId}` () :
@@ -483,117 +474,4 @@ GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/
 ```http
 HTTP/1.1 302 Found
 Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-5130-43e9-88f3-fcb3582cde37/dc17674c-81d9-4adb-bfb2-8f6a442e4622/19%3Ameeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw%40thread.v2/0/resource/recording
-```
-
-### <a name="example-6-fetch-attendance-report-of-an-online-meeting"></a>Пример 6. Извлечение отчета о посещаемости собрания в Интернете
-
-В следующем примере показан запрос на получения отчета о посещаемости собрания.
-
-#### <a name="request"></a>Запрос
-
-В следующем запросе используется делегированная разрешения.
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_attendance_report"
-}-->
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
-```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-attendance-report-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-attendance-report-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-attendance-report-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-attendance-report-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Перейти](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-attendance-report-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-В следующем запросе используется разрешение приложения.
-<!-- { "blockType": "ignored" }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
-```
-
-#### <a name="response"></a>Отклик
-
-> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.meetingAttendanceReport",
-  "name": "get_attendance_report"
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('dc74d9bb-6afe-433d-8eaa-e39d80d3a647')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy')/meetingAttendanceReport/$entity",
-    "attendanceRecords": [
-        {
-            "emailAddress": "email address",
-            "totalAttendanceInSeconds": 1558,
-            "role": "Organizer",
-            "identity": {
-                "id": "dc74d9bb-6afe-433d-8eaa-e39d80d3a647",
-                "displayName": "(redacted)",
-                "tenantId": null
-            },
-            "attendanceIntervals": [
-                {
-                    "joinDateTime": "2021-03-16T18:59:46.598956Z",
-                    "leaveDateTime": "2021-03-16T19:25:45.4473057Z",
-                    "durationInSeconds": 1558
-                }
-            ]
-        },
-        {
-            "emailAddress": "email address",
-            "totalAttendanceInSeconds": 1152,
-            "role": "Presenter",
-            "identity": {
-                "id": "(redacted)",
-                "displayName": "(redacted)",
-                "tenantId": null
-            },
-            "attendanceIntervals": [
-                {
-                    "joinDateTime": "2021-03-16T18:59:52.2782182Z",
-                    "leaveDateTime": "2021-03-16T19:06:47.7218491Z",
-                    "durationInSeconds": 415
-                },
-                {
-                    "joinDateTime": "2021-03-16T19:09:23.9834702Z",
-                    "leaveDateTime": "2021-03-16T19:16:31.1381195Z",
-                    "durationInSeconds": 427
-                },
-                {
-                    "joinDateTime": "2021-03-16T19:20:27.7094382Z",
-                    "leaveDateTime": "2021-03-16T19:25:37.7121956Z",
-                    "durationInSeconds": 310
-                }
-            ]
-        }
-    ],
-    "totalParticipantCount": 2
-}
 ```

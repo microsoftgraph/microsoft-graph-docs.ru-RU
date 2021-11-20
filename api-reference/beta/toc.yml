@@ -1550,17 +1550,29 @@ items:
                     href: api/onlinemeeting-delete.md
                   - name: Создание или получить
                     href: api/onlinemeeting-createorget.md
-                  - name: Регистрация собраний
-                    href: resources/meetingregistration.md
+              - name: Отчет о посещаемости
+                href: resources/meetingAttendanceReport.md
+                items:
+                  - name: Список
+                    href: api/meetingattendancereport-list.md
+                  - name: Получение
+                    href: api/meetingattendancereport-get.md
+                  - name: Запись посещаемости
+                    href: resources/attendancerecord.md
                     items:
-                      - name: Создание
-                        href: api/meetingregistration-post.md
-                      - name: Получение
-                        href: api/meetingregistration-get.md
-                      - name: Обновление
-                        href: api/meetingregistration-update.md
-                      - name: Удаление
-                        href: api/meetingregistration-delete.md
+                      - name: Список
+                        href: api/attendancerecord-list.md
+              - name: Регистрация собраний
+                href: resources/meetingregistration.md
+                items:
+                  - name: Создание
+                    href: api/meetingregistration-post.md
+                  - name: Получение
+                    href: api/meetingregistration-get.md
+                  - name: Обновление
+                    href: api/meetingregistration-update.md
+                  - name: Удаление
+                    href: api/meetingregistration-delete.md
                   - name: Регистратор собраний
                     href: resources/meetingregistrant.md
                     items:
@@ -13585,7 +13597,7 @@ items:
       - name: Поиск
         displayname: Microsoft Search API
         items:
-          - name: Запрос
+          - name: Query
             items:
               - name: Обзор
                 href: resources/search-api-overview.md

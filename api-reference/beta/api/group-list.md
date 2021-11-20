@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6b3efb81e44183c116e2ef27c288d26ec1667f16
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 0dfacbccd2e7d1ad07d7db339a85ba94f11717ca
+ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61015292"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61130140"
 ---
 # <a name="list-groups"></a>Список групп
 
@@ -296,7 +296,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -338,7 +338,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -381,7 +381,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -417,7 +417,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса, который фильтрует **membershipRuleProcessingState** для получения динамических групп. Можно также фильтровать свойства **groupTypes** (то есть `$filter=groupTypes/any(s:s eq 'DynamicMembership')`). Для этого запроса требуется заглавная строка **ConsistencyLevel**, установленная для `eventual` и строки запроса `$count=true`, так как в запросе используется оператор `NOT` параметра запроса `$filter`. Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
+Ниже приводится пример запроса, который фильтрует **membershipRuleProcessingState** для получения динамических групп. Можно также фильтровать свойства **groupTypes** (то есть `$filter=groupTypes/any(s:s eq 'DynamicMembership')`). Для этого запроса требуется заглавная строка **ConsistencyLevel**, установленная для `eventual` и строки запроса `$count=true`, так как в запросе используется оператор `not` параметра запроса `$filter`. Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
