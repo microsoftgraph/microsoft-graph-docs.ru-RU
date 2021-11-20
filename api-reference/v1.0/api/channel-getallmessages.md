@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 38b93c9ca3faf0eae666eb4695813f54c4108199
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 243771069666410fc997aff1cbc70ef9ae290526
+ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60988623"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61131919"
 ---
 # <a name="channel-getallmessages"></a>канал: getAllMessages
 
@@ -42,7 +42,16 @@ ms.locfileid: "60988623"
 GET /teams/{team-id}/channels/getAllMessages
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+
+Вы можете использовать параметр запроса `model`, который поддерживает значения `A` и `B`, в зависимости от предпочитаемых требований к лицензированию и оплате, как показано в следующих примерах. 
+
+```http
+GET /teams/{team-id}/channels/getAllMessages?model=A
+GET /teams/{team-id}/channels/getAllMessages?model=B
+```
+
+Если параметр `model` не указан, будет использоваться [режим оценки](/graph/teams-licenses#evaluation-mode-default-requirements). 
 
 Вы можете использовать параметр запроса [$top](/graph/query-parameters#top-parameter) для управления количеством элементов в одном отклике.
 Кроме того, [$filter](/graph/query-parameters#filter-parameter) поддерживается в запросе диапазона **dateTime** ресурса **lastModifiedDateTime**. Другие [параметры запроса OData](/graph/query-parameters) в настоящее время не поддерживаются.

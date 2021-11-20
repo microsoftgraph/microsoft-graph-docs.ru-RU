@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6d33f4882c956a3296ca6172e58db247f6dc3880
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 8dae3add3a27b73d7c25c7b0980033654bfe5c52
+ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695443"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61131814"
 ---
 # <a name="channel-getallmessages"></a>канал: getAllMessages
 
@@ -21,6 +21,8 @@ ms.locfileid: "58695443"
 Извлечение [сообщений](../resources/chatmessage.md) из всех [каналов](../resources/channel.md) в [команде](../resources/team.md), включая текстовые, аудио и видео сообщения.
 
 Дополнительные сведения об использовании API экспорта Microsoft Teams для экспорта содержимого см. в статье [Экспорт содержимого с помощью API экспорта Microsoft Teams](/microsoftteams/export-teams-content).
+
+[!INCLUDE [teams-model-A-and-B-disclaimer](../../includes/teams-model-A-and-B-disclaimer.md)]
 
 ## <a name="permissions"></a>Разрешения
 
@@ -42,7 +44,15 @@ ms.locfileid: "58695443"
 GET /teams/{team-id}/channels/getAllMessages
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+
+Вы можете использовать параметр запроса `model`, который поддерживает значения `A` и `B`, в зависимости от предпочитаемых требований к лицензированию и оплате, как показано в следующих примерах. 
+
+```http
+GET /teams/{team-id}/channels/getAllMessages?model=A
+GET /teams/{team-id}/channels/getAllMessages?model=B
+```
+Если параметр `model` не указан, будет использоваться [режим оценки](/graph/teams-licenses#evaluation-mode-default-requirements). 
 
 Вы можете использовать параметр запроса [$top](/graph/query-parameters#top-parameter) для управления количеством элементов в одном отклике.
 Кроме того, [$filter](/graph/query-parameters#filter-parameter) поддерживается в запросе диапазона **dateTime** ресурса **lastModifiedDateTime**. Другие [параметры запроса OData](/graph/query-parameters) в настоящее время не поддерживаются.
@@ -84,6 +94,10 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-allchannelmessages-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-allchannelmessages-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

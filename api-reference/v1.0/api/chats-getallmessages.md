@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c8c48019fa084d94eae1465d5384e5114c5bf349
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 998be54216d3e961b89527f39bd657ac63dd2c3e
+ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61025954"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61131912"
 ---
 # <a name="chats-getallmessages"></a>чаты: getAllMessages
 
@@ -40,9 +40,17 @@ ms.locfileid: "61025954"
 GET /users/{id | user-principal-name}/chats/getAllMessages
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
-Эта операция поддерживает [параметры диапазона дат](/graph/query-parameters) для настройки отклика, как показано в следующем примере.
+Вы можете использовать параметр запроса `model`, который поддерживает значения `A` и `B`, в зависимости от предпочитаемых требований к лицензированию и оплате, как показано в следующих примерах.  
+
+```http
+GET /users/{id | user-principal-name}/chats/getAllMessages?model=A
+GET /users/{id | user-principal-name}/chats/getAllMessages?model=B
+```
+Если параметр `model` не указан, будет использоваться [режим оценки](/graph/teams-licenses#evaluation-mode-default-requirements).
+
+Эта операция также поддерживает [параметры диапазона дат](/graph/query-parameters) для настройки отклика, как показано в следующем примере.
 
 ``` http
 GET /users/{id}/chats/getAllMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
