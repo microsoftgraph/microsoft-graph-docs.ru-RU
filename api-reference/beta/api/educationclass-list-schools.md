@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e6261ec39716b42fb8203d671f23513e8036105c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3c5b77951660c03fad0803d4fd6a4424032b8c30
+ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61028706"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61131955"
 ---
 # <a name="list-schools"></a>Перечисление учебных заведений
 
@@ -27,8 +27,8 @@ ms.locfileid: "61028706"
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic                         |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложений                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Для приложения                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -37,7 +37,7 @@ ms.locfileid: "61028706"
 GET /education/classes/{id}/schools
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
@@ -57,7 +57,7 @@ GET /education/classes/{id}/schools
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/education/classes/11014/schools
 
 ---
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 

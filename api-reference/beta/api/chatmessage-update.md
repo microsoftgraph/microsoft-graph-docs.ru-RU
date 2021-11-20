@@ -5,12 +5,12 @@ author: RamjotSingh
 doc_type: apiPageType
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6a97e183c672de5de8fa72c712abaa363a980c73
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 068886c61ba0cb47a680739a0368a3075d90a242
+ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60975852"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61131891"
 ---
 # <a name="update-chatmessage"></a>Обновление chatMessage
 
@@ -29,7 +29,7 @@ ms.locfileid: "60975852"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Не поддерживается. |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Chat.UpdatePolicyViolation.All для сообщения чата.</br>ChannelMessage.UpdatePolicyViolation.All для сообщения канала. |
+|Для приложения | Chat.UpdatePolicyViolation.All для сообщения чата.</br>ChannelMessage.UpdatePolicyViolation.All для сообщения канала. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,6 +39,17 @@ PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{repl
 PATCH /chats/{chatThread-id}/messages/{message-id}
 ```
 
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+
+Можно использовать параметр `model` запроса, который поддерживает только `A` значение, как показано в следующих примерах.
+
+```http
+PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}?model=A
+PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}?model=A
+PATCH /chats/{chatThread-id}/messages/{message-id}?model=A
+```
+Если не `model` указано, будет использоваться [режим](/graph/teams-licenses#evaluation-mode-default-requirements) оценки. 
+
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя       | Описание|
@@ -46,7 +57,7 @@ PATCH /chats/{chatThread-id}/messages/{message-id}
 | Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
 В теле запроса покажите JSON представление объекта [chatMessage,](../resources/chatMessage.md) указав только свойство **policyViolation.**
 

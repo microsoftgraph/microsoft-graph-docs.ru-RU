@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 88094c1bc6af05a0454c2a02c35521f85f48730f
-ms.sourcegitcommit: f9e71d3b8a54a98c282ef49783babe5698300c06
+ms.openlocfilehash: 39ca89f94446bd33d4519242a0d830b40fc70322
+ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60793912"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61131933"
 ---
 # <a name="chat-resource-type"></a>Тип ресурса чата
 
@@ -38,6 +38,8 @@ ms.locfileid: "60793912"
 |[Общение в чате между пользователем и приложением](../api/userscopeteamsappinstallation-get-chat.md) | [chat](chat.md)| Получите один-на-один чат между пользователем и приложением.|
 |[Пометить чат как чтение](../api/chat-markchatreadforuser.md) |Нет| Пометить чат как чтение для пользователя.|
 |[Пометить чат как непрочитанные](../api/chat-markchatunreadforuser.md) |Нет| Пометить чат как непрочитанные для пользователя.|
+|[Скрыть чат](../api/chat-hideforuser.md)|Нет|Скрыть чат для пользователя.|
+|[Unhide chat](../api/chat-unhideforuser.md)|Нет|Откапывать чат для пользователя.|
 | **Сообщения** |||
 |[Список сообщений в чате](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Получать сообщения в чате. | 
 |[Получение сообщения в чате](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Получение одного сообщения в чате. | 
@@ -55,7 +57,7 @@ ms.locfileid: "60793912"
 |[Добавление вкладки в чат](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | Добавьте (пин-код) вкладку в чат (и связанное собрание).|
 |[Обновление вкладки в чате](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | Обновление свойств вкладки в чате (и связанное собрание).|
 |[Удаление вкладки из чата](../api/chat-delete-tabs.md) | Нет | Удалите (открепите) вкладку из чата (и связанного собрания).|
-| **Operations** |||
+| **Операции** |||
 |[Список операций в чате](../api/chat-list-operations.md) | Коллекция [teamsAsyncOperation](teamsAsyncOperation.md) | Получите список операций async, запущенных или запущенных в чате.|
 |[Работа в чате](../api/teamsasyncoperation-get.md#example-get-operation-on-chat) | [teamsAsyncOperation](teamsAsyncOperation.md) | Получите одну операцию async, которая запущена или запущена в чате.|
 

@@ -5,20 +5,20 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c2d3ffbecb58d01ab1fa5a8e18465f397773c9c2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8639f86ae3d791f082c027abe101576994611606
+ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60996448"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61131948"
 ---
 # <a name="send-message-in-a-chat"></a>Отправка сообщения в чате
 
 Пространство имен: microsoft.graph
 
-Отправьте новый [чатMessage](../resources/chatmessage.md) в указанном [чате.](../resources/chat.md) Этот API не может создать новый чат; Для получения [](chat-list-messages.md) ID существующего чата перед созданием сообщения чата необходимо использовать метод чаты списка.
+Отправьте новый [чатMessage](../resources/chatmessage.md) в указанном [чате.](../resources/chat.md) Этот API не может создать новый чат; для получения [](chat-list.md) ID существующего чата необходимо использовать метод чаты списков, прежде чем создать сообщение чата.
 
-> **Примечание.** Мы не рекомендуем использовать этот API для переноса данных. Он не имеет пропускной способности, необходимой для обычной миграции.
+> **Примечание.** Мы не рекомендуем использовать этот API для переноса данных. У него нет пропускной способности, необходимой для обычной миграции.
 
 > **Примечание.** Это нарушение условий использования Microsoft Teams в качестве файла журнала. [](/legal/microsoft-apis/terms-of-use) Отправка сообщений, которые будут читаться людьми.
 

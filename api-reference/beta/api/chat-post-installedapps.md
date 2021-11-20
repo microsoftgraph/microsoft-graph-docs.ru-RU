@@ -5,12 +5,12 @@ author: subray
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7ba4809234ebd3cc59ba746fd27eb6f184a645a7
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 0ae9f7bb0170cf9b0101f734fb873ba10ba11ad5
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61034677"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123756"
 ---
 # <a name="add-app-to-chat"></a>Добавление приложения в чат
 
@@ -20,7 +20,9 @@ ms.locfileid: "61034677"
 
 Установка [teamsApp](../resources/teamsapp.md) в указанном [чате](../resources/chat.md).
 
-> **Примечание.** Если чат связан с экземпляром [onlineMeeting](../resources/onlinemeeting.md), объект **teamsApp** будет установлен для собрания.
+> **Примечания**.
+> - Если чат связан с экземпляром [onlineMeeting](../resources/onlinemeeting.md), объект **teamsApp** будет установлен для собрания.
+> - В настоящее время эта операция не поддерживает установку приложений, требующих разрешений с согласием для определенных ресурсов. Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues#Installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported).
 
 ## <a name="permissions"></a>Разрешения
 

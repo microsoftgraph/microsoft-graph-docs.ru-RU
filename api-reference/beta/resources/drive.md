@@ -5,12 +5,12 @@ description: Ресурс drive представляет хранилище OneD
 ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 43791d730726dbf1a958c826c1a629af241eed70
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 1df4114e9dd79dd5845ca0cf1aedfdc458b83668
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696409"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123736"
 ---
 # <a name="drive-resource-type"></a>Тип ресурса drive
 
@@ -50,7 +50,7 @@ ms.locfileid: "58696409"
 | name                 | string                        | Имя элемента. Чтение и запись.                                                                                                                                                                                                |
 | owner                | [identitySet](identityset.md) | Необязательный параметр. Учетная запись пользователя, которому принадлежит диск. Только для чтения.                                                                                                                                                                       |
 | quota                | [quota](quota.md)             | Необязательный параметр. Сведения о квоте на дисковое пространство. Только для чтения.                                                                                                                                                          |
-| sharepointIds        | [sharepointIds][]             | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.                                                                                                                                                         |
+| sharepointIds        | [sharepointIds][]             | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.  Это свойство не возвращается по умолчанию и должно быть выбрано с помощью параметра запроса `$select`.                                                                               |
 | system               | [systemFacet][]               | Если имеется это свойство, оно указывает, что данным диском управляет система. Только для чтения.
 | webUrl               | строка (url-адрес)                  | URL-адрес для отображения ресурса в браузере. Только для чтения.                                                                                                                                                                        |
 

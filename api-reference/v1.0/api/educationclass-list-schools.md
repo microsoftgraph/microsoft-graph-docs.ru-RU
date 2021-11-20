@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 090b35860f98e6b74401b9132a7b9eac1bf5cb9c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3fb668046b8cb3686a32b14e0feb0f1844b0065f
+ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61000341"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61131884"
 ---
 # <a name="list-schools"></a>Перечисление учебных заведений
 
@@ -25,8 +25,8 @@ ms.locfileid: "61000341"
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic                         |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложений                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Для приложения                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -35,7 +35,7 @@ ms.locfileid: "61000341"
 GET /education/classes/{id}/schools
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
@@ -55,7 +55,7 @@ GET /education/classes/{id}/schools
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/schools
 
 ---
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 

@@ -5,12 +5,12 @@ author: subray
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0a8bc6621137cf902a006d7e43e82c20c5796039
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3710e720df072e3e0a6d3c4177036d9f0ae6b807
+ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61020291"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61123799"
 ---
 # <a name="teamsappinstallation-upgrade"></a>teamsAppInstallation: обновление
 
@@ -18,7 +18,9 @@ ms.locfileid: "61020291"
 
 Обновление [установки приложения](../resources/teamsappinstallation.md) в [чате](../resources/chat.md).
 
-> **Примечание.** Если чат связан с экземпляром [onlineMeeting](../resources/onlinemeeting.md), объект **teamsApp**, установленный для собрания, будет обновлен.
+> **Примечания**.
+> - Если чат связан с экземпляром [onlineMeeting](../resources/onlinemeeting.md), объект **teamsApp**, установленный для собрания, будет обновлен.
+> - В настоящее время эта операция не поддерживает обновление приложений, требующих разрешений с согласием для определенных ресурсов. Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues#Installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported).
 
 ## <a name="permissions"></a>Разрешения
 
