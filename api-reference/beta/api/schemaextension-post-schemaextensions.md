@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 2d9dc44af2bda69d9451ab76d1abdd3cabf64d37
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: af07042a869a76fb96ff9d8a8f7fd20c6548aaed
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766987"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60993829"
 ---
 # <a name="create-schemaextension"></a>Создание schemaExtension
 
@@ -46,7 +46,7 @@ POST /schemaExtensions
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Тело запроса
@@ -123,12 +123,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-schemaextension-from-schemaextensions-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-schemaextension-from-schemaextensions-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -168,7 +172,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-В следующем примере показано указание только имени схемы в свойстве id в запросе вместе с представлением JSON остальных свойств объекта `courses` [schemaExtension.](../resources/schemaextension.md)  Microsoft Graph назначит и вернет в отклике уникальное строковое значение.
+В следующем примере в запросе указывается только имя схемы `courses` в свойстве **id**, а также представление JSON остальных свойств в объекте [schemaExtension](../resources/schemaextension.md). В отклике на этот запрос Microsoft Graph назначит и возвратит уникальное строковое значение.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -218,12 +222,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-schemaextension-from-schemaextensions-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-schemaextension-from-schemaextensions-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
 
-Отклик включает уникальную строку в свойстве **id**, созданную на основе имени схемы, предоставленном в запросе, и прочее содержимое созданного определения схемы. Значение **id** в отклике имеет формат ext\{_&#65279;8-случайных-букв-или-цифр_\}\_\{_&#65279;имя-схемы_\}.
+Отклик содержит уникальную строку в свойстве **id**, созданную на основе имени схемы, предоставленного в запросе, вместе с остальной частью только что созданного определения схемы. Для значения в свойстве **id** отклика используется формат ext\{_&#65279;8-_случайных_букв_или_цифр_\}\_\{_&#65279;имя_схемы_\}.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -263,7 +271,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-В следующем примере показано, как создать параметр расширения схемы **владельца.**  В этом случае пользователь приложения может и быть владельцем приложения (например, при использовании песочницы Microsoft Graph).  В этом случае необходимо задать **appId** приложения, которым вы владеете, в качестве значения свойства **owner**, иначе у вас не будет прав на создание расширения схемы. Задайте свойство **owner** в запросе, а также остальные свойства в объекте [schemaExtension](../resources/schemaextension.md) как данные JSON.
+В следующем примере показано, как создать расширение схемы, задав свойство **owner**.  В этом случае пользователь приложения может и быть владельцем приложения (например, при использовании песочницы Microsoft Graph).  В этом случае необходимо задать **appId** приложения, которым вы владеете, в качестве значения свойства **owner**, иначе у вас не будет прав на создание расширения схемы. Задайте свойство **owner** в запросе, а также остальные свойства в объекте [schemaExtension](../resources/schemaextension.md) как данные JSON.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -315,12 +323,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-schemaextension-from-schemaextensions-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-schemaextension-from-schemaextensions-3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
 
-Ответ включает набор **владельца** к значению, предоставленного в запросе. 
+Отклик содержит свойство **owner**, которому присвоено значение, указанное в запросе. 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

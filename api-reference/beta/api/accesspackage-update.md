@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 92e2e02a65f7bf815d12e449ad843eca8f72b6eb
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 81e3bd3def0c973903d82847aec2d3d0c3e46f0b
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60925813"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60983631"
 ---
 # <a name="update-accesspackage"></a>Обновление accessPackage
 
@@ -50,8 +50,8 @@ PATCH /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Имя пакета доступа.|
-|description|String|Описание пакета доступа.|
+|displayName|Строка|Имя пакета доступа.|
+|description|Строка|Описание пакета доступа.|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
@@ -88,6 +88,10 @@ Content-Type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-accesspackage-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-accesspackage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 04d04de3ff3cf01e9c97e0cbc06c509bb6e5c128
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 08a3f1825e05d918fbfc5be22087e0126122d71e
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60934704"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019962"
 ---
 # <a name="create-connectorgroup"></a>Создание connectorGroup
 
@@ -38,7 +38,7 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация  | Носителер. Обязательный параметр.|
+| Authorization  | Носителер. Обязательный параметр.|
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -47,11 +47,11 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|connectorGroupType|string| Указывает тип гибридного агента. Это свойство заранее заданной системой.|
+|connectorGroupType|Строка| Указывает тип гибридного агента. Это свойство заранее заданной системой.|
 |id|string| Уникальный идентификатор для этого соединитетеляGroup. Только для чтения. |
 |isDefault|логический| Указывает, является ли соединительщикGroup по умолчанию. Соединительщиком по умолчанию может быть только одна группа соединительных групп, и это заранее заданной системой. |
 |name|string| Имя, связанное с соединитетелемGroup. |
-|регион|string| Регион, в который назначен connectorGroup, и будет оптимизировать трафик. Этот регион можно установить только в **том** случае, если соединители или приложения не назначены соединительгруппе. Доступные регионы: Северная Америка, Европа, Австралия, Азия и Индия. Возможные значения: `nam`, `eur`, `aus`, `asia`, `ind`.|
+|регион|Строка| Регион, в который назначен connectorGroup, и будет оптимизировать трафик. Этот регион можно установить только в **том** случае, если соединители или приложения не назначены соединительгруппе. Доступные регионы: Северная Америка, Европа, Австралия, Азия и Индия. Возможные значения: `nam`, `eur`, `aus`, `asia`, `ind`.|
 
 ## <a name="response"></a>Отклик
 
@@ -88,6 +88,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-connectorgroup-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-connectorgroup-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

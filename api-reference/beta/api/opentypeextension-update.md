@@ -1,16 +1,16 @@
 ---
 title: Обновление открытого расширения
-description: 'Обновление открытого расширения (объекта openTypeExtension) со свойствами в теле запроса:'
-localization_priority: Normal
+description: 'Обновим открытое расширение (объект openTypeExtension) свойствами в теле запроса:'
+ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 1817d7074d5b81416f31af3799a47dc4efd4a207
-ms.sourcegitcommit: 69c355eeb620b76ca70d896f984e21c32ac09eb0
+ms.openlocfilehash: f840680e452f34deec639335759768a4f02bd7bb
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50092402"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60980622"
 ---
 # <a name="update-open-extension"></a>Обновление открытого расширения
 
@@ -18,18 +18,18 @@ ms.locfileid: "50092402"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление открытого расширения[(объекта openTypeExtension)](../resources/opentypeextension.md) с помощью свойств в теле запроса:
+Обновление открытого расширения[(объекта openTypeExtension)](../resources/opentypeextension.md) с свойствами в теле запроса:
 
 - Если свойство в теле запроса совпадает с именем существующего свойства в расширении, то данные в расширении будут обновлены.
 - В противном случае это свойство и его данные будут добавлены в расширение. 
 
 Данные в расширении могут относиться к элементарным типам или массиву элементарных типов.
 
-Список ресурсов, [](#permissions) которые поддерживают открытые расширения, см. в таблице в разделе "Разрешения".
+Список ресурсов, поддерживаюных открытые расширения, см. в таблице в разделе [Разрешения.](#permissions)
 
 ## <a name="permissions"></a>Разрешения
 
-В зависимости от ресурса, в который было создано расширение, и запрашиваемого типа разрешений (делегирование или приложение), разрешение, указанное в следующей таблице, является наименее привилегированным для вызова этого API. Чтобы узнать больше, в том [числе](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) с осторожностью перед выбором более привилегированных разрешений, найди следующие разрешения в [разрешениях.](/graph/permissions-reference)
+В зависимости от ресурса, в который было создано расширение, и запрашиваемого типа разрешений (делегирования или приложения), разрешение, указанное в следующей таблице, является наименее привилегированным для вызова этого API. Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference).
 
 | Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Для приложений |
 |:-----|:-----|:-----|:-----|
@@ -65,7 +65,7 @@ PATCH /users/me/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extension
 PATCH /users/me/todo/lists/{todoTaskListId}/extensions/{extensionId}
 ```
 
->**Примечание.** В примере выше показаны некоторые распространенные способы идентификации экземпляра ресурса для обновления расширения в нем. Весь другой синтаксис, позволяющий идентифицировать эти экземпляры ресурсов, поддерживает обновление открытых расширений в них аналогичным образом.
+>**Примечание:** В вышеуказанном синтаксисе показано несколько распространенных способов идентификации экземпляра ресурса для обновления расширения в нем. Все остальные синтаксис, позволяющие идентифицировать эти экземпляры ресурсов, поддерживают обновление открытых расширений в них аналогичным образом.
 
 См. раздел [Тело запроса](#request-body) о том, как включить в тело запроса специальные данные для изменения или дополнения этого расширения.
 
@@ -78,7 +78,7 @@ PATCH /users/me/todo/lists/{todoTaskListId}/extensions/{extensionId}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Значение |
 |:---------------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -230,6 +230,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-opentypeextension-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-opentypeextension-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

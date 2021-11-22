@@ -5,12 +5,12 @@ author: psignoret
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a6eea39edac172a890b5d60b524e40df14f9a802
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d002660ea7171314c59d53ffd4af0f238bd5c6d9
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59080484"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60979731"
 ---
 # <a name="get-adminconsentrequestpolicy"></a>Получить adminConsentRequestPolicy
 
@@ -32,7 +32,7 @@ ms.locfileid: "59080484"
 + Глобальный администратор
 + Глобальный читатель
 + Администратор облачного приложения
-+ Администратор приложения
++ Администратор приложений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,7 +52,7 @@ GET /policies/adminConsentRequestPolicy
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/v1.0/policies/adminConsentRequestPolicy
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-adminconsentrequestpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-adminconsentrequestpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

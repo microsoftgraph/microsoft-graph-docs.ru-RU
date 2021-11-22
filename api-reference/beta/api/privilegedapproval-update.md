@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 0c9d7eced280e7f7b85a0b455874530fd68c2f8a
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: a4c58a6f28ba7e8ea97d8a9460929530fc054d08
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60939324"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60980383"
 ---
 # <a name="update-privilegedapproval"></a>Обновление privilegedapproval
 
@@ -47,11 +47,11 @@ PATCH /privilegedApproval/{id}
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |approvalDuration|Длительность||
-|approvalState|string| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
-|approvalType|String||
-|approverReason|String||
+|approvalState|Строка| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
+|approvalType|Строка||
+|approverReason|Строка||
 |endDateTime|DateTimeOffset||
-|requestorReason|String||
+|requestorReason|Строка||
 |roleId|String||
 |startDateTime|DateTimeOffset||
 |userId|String||
@@ -94,6 +94,10 @@ Content-type: application/json
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-privilegedapproval-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-privilegedapproval-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

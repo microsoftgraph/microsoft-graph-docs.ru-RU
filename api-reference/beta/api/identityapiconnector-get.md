@@ -2,15 +2,15 @@
 title: Get identityApiConnector
 description: Ознакомьтесь с свойствами соединитетеля API.
 author: nickgmicrosoft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 3dbf991dc10d1f7d13c25b7b4e7b4c9d26505045
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: f09fd3e876802fbe35e5a0c78113b769d96b37de
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50435604"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60986207"
 ---
 # <a name="get-identityapiconnector"></a>Get identityApiConnector
 
@@ -28,12 +28,12 @@ ms.locfileid: "50435604"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | APIConnectors.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.  |
-| Приложение                            | APIConnectors.ReadWrite.All |
+| Для приложений                            | APIConnectors.ReadWrite.All |
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор потока внешних пользователей удостоверений
+* Администратор внешних Flow удостоверений
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,9 +52,9 @@ GET /identity/apiConnectors/{identityApiConnectorId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -94,12 +94,16 @@ GET https://graph.microsoft.com/beta/identity/apiConnectors/{id}
 [!INCLUDE [sample-code](../includes/snippets/java/get-identityapiconnector-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-identityapiconnector-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
