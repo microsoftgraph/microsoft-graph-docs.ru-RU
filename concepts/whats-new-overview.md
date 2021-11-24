@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: a1934b1cc52ba26f6500ca585c76df3d9f85fb94
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: 37f80e951ea71d5847e0c793053c3a1bc9cd42dc
+ms.sourcegitcommit: c6bbba6cb9aaa7ad35374d1b5d4466c49878ab43
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60890411"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61135174"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -17,6 +17,40 @@ ms.locfileid: "60890411"
 > [!IMPORTANT]
 > Функции в состоянии _предварительной версии_, в том числе API и инструменты, могут изменяться без предварительного уведомления, а некоторые из них, возможно, никогда не достигнут общедоступного состояния (GA). Не используйте функции, доступные в виде предварительных версий, в рабочих приложениях.
 
+
+## <a name="november-2021-new-and-generally-available"></a>Ноябрь 2021 г.: новые и общедоступные возможности
+
+### <a name="files"></a>Файлы
+Узнайте состояние диска на определенный момент времени, указав соответствующую метку времени, зашифрованную в виде URL-адреса. См. [пример](/graph/api/driveitem-delta#example-4-retrieving-delta-results-using-a-timestamp).
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход
+- Запустите [кампании](/graph/api/resources/authenticationMethodsRegistrationCampaign) и [заставьте пользователей регистрироваться](/graph/api/resources/registrationEnforcement) во время регистрации, чтобы настроить целевые методы проверки подлинности.
+-  Настройте [поставщика удостоверений Apple](/graph/api/resources/applemanagedidentityprovider) в клиенте Azure AD B2C.
+
+## <a name="november-2021-new-in-preview-only"></a>Ноябрь 2021 г.: новые возможности только в предварительной версии
+
+### <a name="cloud-communications--online-meeting"></a>Облачные коммуникации | Онлайн-собрание
+Автоматический допуск новых типов участников в собрания по сети в обход "зала ожидания" собрания.
+- Только пользователи, которых приглашает организатор.
+- Только участники из одной компании.
+
+### <a name="devices-and-apps--cloud-pc"></a>Устройства и приложения | Облачный ПК
+- Определите [конфигурацию](/graph/api/resources/cloudPcDomainJoinConfiguration?view=graph-rest-beta&preserve-view=true) того, как подготовленное устройство с облачным компьютером может присоединиться к Azure Active Directory (Azure AD): только в облаке и присоединиться только к Azure AD, или в гибридной системе и присоединиться к локальной службе Active Directory и Azure AD.
+- Получите [ресурс образа коллекции](/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta&preserve-view=true) текущей организации, который можно использовать для подготовки облачного компьютера к работе.
+
+### <a name="devices-and-apps--device-updates"></a>Устройства и приложения | Обновления устройств
+- Используйте [параметры мер безопасности](/graph/api/resources/windowsupdates-safeguardSettings?view=graph-rest-beta&preserve-view=true), чтобы отказаться от защиты от вероятных проблем при развертывании.
+- Поддержка [состояния развертывания](/graph/api/resources/windowsupdates-deploymentState?view=graph-rest-beta&preserve-view=true) при невозможности развертывания из-за того, что содержимое больше не может быть развернуто, например после окончания обслуживания.
+
+### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
+- Определите и назначьте [настраиваемые атрибуты безопасности](/graph/api/resources/custom-security-attributes-overview?view=graph-rest-beta&preserve-view=true) объектам Azure AD. Используйте эти атрибуты для хранения информации, классификации объектов или применения детального контроля доступа к определенным ресурсам Azure. Используйте эти атрибуты вместе с [контролем доступа на основе атрибутов Azure](/azure/role-based-access-control/conditions-overview) (Azure ABAC).
+- [Создайте группу в административной единице](/graph/api/administrativeunit-post-members?view=graph-rest-beta&preserve-view=true).
+
+### <a name="reports--microsoft-365-usage-reports"></a>Отчеты | Отчеты об использовании Microsoft 365
+[Отчеты об использовании Microsoft 365](/graph/api/resources/report?view=graph-rest-beta&preserve-view=true) в типе вывода JSON больше не строго типизированы и имеют тип `Edm.Stream`. Подробности см. в статье [Изменение свойств OData в API отчетов об использовании Microsoft 365 в Microsoft Graph](https://devblogs.microsoft.com/microsoft365dev/odata-property-changes-to-microsoft-365-usage-reports-api-in-microsoft-graph/).
+
+### <a name="teamwork"></a>Teamwork
+Отметьте чат как [прочитанный](/graph/api/chat-markChatReadForUser?view=graph-rest-beta&preserve-view=true) или [непрочитанный](/graph/api/chat-markchatunreadforuser?view=graph-rest-beta&preserve-view=true) для пользователя.
 
 ## <a name="october-2021-new-and-generally-available"></a>Октябрь 2021 г. Новые и общедоступные
 
@@ -106,75 +140,6 @@ As part of [privacy management in Microsoft 365](/privacy/solutions/privacymanag
 [Проверка пароля](/graph/api/user-validatePassword?view=graph-rest-beta&preserve-view=true) в реальном времени относительно политики проверки паролей в организации во время ввода пароля пользователем. Получение [подробных сведений о проверке](/graph/api/resources/passwordValidationInformation?view=graph-rest-beta&preserve-view=true) относительно правил в политике.
 
 
-## <a name="september-2021-new-and-generally-available"></a>Сентябрь 2021 г.: новые и общедоступные возможности
-
-### <a name="cloud-communications--calls"></a>Облачные коммуникации | Звонки
-- Поставьте [участника](/graph/api/resources/participant) на удержание и воспроизводите музыку в фоновом режиме с помощью действия [startHoldMusic](/graph/api/participant-startHoldMusic).
-- Повторно добавьте в вызов участника, ранее поставленного на удержание, с помощью действия [stopHoldMusic](/graph/api/participant-stopHoldMusic).
-
-### <a name="cloud-communications--online-meetings"></a>Облачные коммуникации | Собрания по сети
-- Получение потока контента отчета участника о [трансляции Teams](/microsoftteams/teams-live-events/what-are-teams-live-events).
-- Получение или установка параметра для автоматической записи [виртуального собрания](/graph/api/resources/onlineMeeting).
-- Используйте `OnlineMeetingArtifact.Read.All` как делегированное разрешение или разрешение приложения для чтения артефактов собраний по сети. Дополнительные сведения см. в статье [Разрешения для собраний по сети](permissions-reference.md#online-meetings-permissions).
-
-### <a name="devices-and-apps--cloud-printing"></a>Устройства и приложения | Облачная печать
-Состояние облачного принтера включает все стандартные значения в [протоколе IPP](https://www.iana.org/assignments/ipp-registrations/ipp-registrations.xhtml).
-
-### <a name="devices-and-apps--corporate-management"></a>Устройства и приложения | Корпоративное управление
-Ежемесячные обновления Intune за сентябрь для версии 1.0. В [changelog](https://developer.microsoft.com/graph/changelog) установите фильтр **Дата** на сентябрь 2021 г. и найдите раздел с таким же заголовком.
-
-### <a name="files"></a>Файлы
-- Получите сведения о любом вирусе, обнаруженном в [driveItem](/graph/api/resources/driveItem), с помощью свойства **malware**.
-- Используйте функцию [delta](/graph/api/driveitem-delta) для отслеживания изменений как в корневой папке, так и в других папках на диске.
-
-### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
-Поставщики управления доступом на основе ролей (RBAC) могут [управлять ролями](/graph/api/resources/rolemanagement) в Azure Active Directory, [определяя действия ролей](/graph/api/resources/unifiedroledefinition), которые могут выполняться с определенными ресурсами, и [назначая роли](/graph/api/resources/unifiedroleassignment) пользователям в соответствии с этими определениями, чтобы предоставить им доступ к этим ресурсам.
-
-### <a name="search--query"></a>Поиск | Запрос
-- Объедините числовые или строковые результаты поиска, импортированные [соединителями Microsoft Graph](/microsoftsearch/connectors-overview) и настроенные как доступные для уточнения в [схеме](/graph/api/resources/schema). Ознакомьтесь с дополнительными сведениями об [уточнении результатов поиска с помощью агрегирования](search-concept-aggregation.md).
-- [Сортируйте](/graph/api/resources/search-api-overview#sort-search-results) результаты поиска для OneDrive и SharePoint с помощью любого свойства, поддерживающего сортировку. Дополнительные сведения см. в статье [Использование API Поиска (Майкрософт) для сортировки результатов поиска](search-concept-sort.md).
-
-### <a name="teamwork"></a>Командная работа
-Использование единого действия [provisionEmail](/graph/api/channel-provisionemail) для получения адреса электронной почты ресурса [channel](/graph/api/resources/channel), если таковой существует, или его создания. Использование действия [removeEmail](/graph/api/channel-removeemail) для удаления адреса электронной почты.
-
-### <a name="workbooks-and-charts"></a>Книги и диаграммы
-Создавайте строки таблицы асинхронно. Для оптимальной производительности при создании нескольких строк таблицы рекомендуется сгруппировать их в одной операции [create tableRow](/graph/api/table-post-rows) и выполнить операцию асинхронно. Затем выполните операцию [GET workbookOperation](/graph/api/workbookoperation-get) и воспользуйтесь функцией [tableRowOperationResult](/graph/api/workbook-tableRowOperationResult), чтобы получить новый ресурс [workbookTableRow](/graph/api/resources/workbooktablerow).
-
-
-## <a name="september-2021-new-in-preview-only"></a>Сентябрь 2021 г.: новые возможности только в предварительной версии
-
-### <a name="applications"></a>Приложения
-Приложения, в которых используются потоки единого входа на языке SAML, могут указывать URI перенаправления по умолчанию (свойство **defaultRedirectUri** в [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true)) или определять указанный URI перенаправления, при котором пользователей перенаправляют для входа (свойство **redirectUriSettings** в [webApplication](/graph/api/resources/webapplication?view=graph-rest-beta&preserve-view=true)). 
-
-### <a name="cloud-communications--online-meetings"></a>Облачные коммуникации | Собрания по сети
-Получите общее число участников в [отчете об участии в собрании](/graph/api/resources/meetingattendancereport?view=graph-rest-beta&preserve-view=true) для [собрания по сети](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true).
-
-### <a name="compliance--ediscovery"></a>Соответствие требованиям | Обнаружение электронных данных
-Операция [create case](/graph/api/ediscovery-case-post?view=graph-rest-beta&preserve-view=true) всегда создает дела в большом формате. Это позволяет увеличить размер дела и вместить больший объем данных и большее число элементов. Подробные сведения см. в статье [Преимущества больших дел](/microsoft-365/compliance/advanced-ediscovery-large-cases?view=o365-worldwide&preserve-view=true#benefits-of-large-cases).
-
-### <a name="devices-and-apps--cloud-pc"></a>Устройства и приложения | Облачный ПК
-- [Повторно подготовьте облачный ПК](/graph/api/manageddevice-reprovisioncloudpc?view=graph-rest-beta&preserve-view=true) как управляемый в облаке виртуальный рабочий стол, зарегистрированный в Intune.
-- [Измените размер облачного ПК](/graph/api/manageddevice-resizecloudpc?view=graph-rest-beta&preserve-view=true) путем перехода на использование более ранней или поздней конфигурации с новым виртуальным ЦП и размером хранилища.
-- [Настройка,](/graph/api/virtualendpoint-post-onpremisesconnections?view=graph-rest-beta&preserve-view=true) [составление списка](/graph/api/virtualendpoint-list-onpremisesconnections?view=graph-rest-beta&preserve-view=true) и [проверка работоспособности](/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-beta&preserve-view=true) [локальных сетевых подключений](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true) для подготовки облачных ПК.
-
-### <a name="devices-and-apps--corporate-management"></a>Устройства и приложения | Корпоративное управление
-Ежемесячные обновления Intune за сентябрь для бета-версии. В [changelog](https://developer.microsoft.com/graph/changelog) установите фильтр **Дата** на сентябрь 2021 г. и найдите раздел с таким же заголовком.
-
-### <a name="education"></a>Образование
-- Разрешение преподавателям [переназначать](/graph/api/educationsubmission-reassign?view=graph-rest-beta&preserve-view=true) [отправку](/graph/api/resources/educationsubmission?view=graph-rest-beta&preserve-view=true) назначения учащемуся с отзывом для проверки.
-- Поддержка добавления заданий только в календари учащихся при использовании заголовка запроса `Prefer: include-unknown-enum-members` в операциях для ресурса [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta&preserve-view=true) или [educationAssignmentDefaults](/graph/api/resources/educationassignmentdefaults?view=graph-rest-beta&preserve-view=true).
-
-### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
-[Удалите](/graph/api/accesspackageassignmentrequest-delete?view=graph-rest-beta&preserve-view=true) [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true), чтобы удалить отклоненный или выполненный запрос.
-
-### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход
-- Разрешите пользователям выполнять многофакторную проверку подлинности с помощью [OATH-токена программного обеспечения](/graph/api/resources/softwareOathAuthenticationMethod?view=graph-rest-beta&preserve-view=true). OATH-токен программного обеспечения — это генератор номеров на основе программного обеспечения, использующий стандарт TOTP (Time-Based One-Time Password).
-- Определение, включено или отключено соответствие чисел для многофакторной проверки подлинности согласно политике в Azure AD, с помощью свойства **numberMatchingRequiredState** в [microsoftAuthenticatorAuthenticationMethodTarget](/graph/api/resources/microsoftAuthenticatorAuthenticationMethodTarget?view=graph-rest-beta&preserve-view=true).
-- Определение, следует ли показывать дополнительный контекст пользователя в его уведомлении приложения для проверки подлинности, с помощью свойства **displayAppInformationRequiredState** в [microsoftAuthenticatorAuthenticationMethodTarget](/graph/api/resources/microsoftAuthenticatorAuthenticationMethodTarget?view=graph-rest-beta&preserve-view=true).
-- Использование [потока пользователя B2C](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true) и [потока пользователя для регистрации и самообслуживания](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true) вместо API более раннего нерекомендованного [потока пользователя](/graph/api/resources/identityuserflow?view=graph-rest-beta&preserve-view=true).
-
-### <a name="security--attack-simulation-and-training"></a>Безопасность | Имитация атак и обучение
-Первое использование API для [имитации атак и обучения](/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide&preserve-view=true) — служба, доступная как часть [Microsoft Defender для Office 365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide&preserve-view=true). API позволяет администраторам клиентов [составлять список запущенных упражнений и тренингов по симуляции](/graph/api/attacksimulationroot-list-simulations?view=graph-rest-beta&preserve-view=true) и получать [отчеты](/graph/api/resources/report-m365defender-reports-overview?view=graph-rest-beta&preserve-view=true) об аналитике поведения пользователей в Интернете в условиях симуляции фишинга.
 
 ## <a name="want-to-stay-in-the-loop"></a>Хотите получать актуальную информацию?
 
