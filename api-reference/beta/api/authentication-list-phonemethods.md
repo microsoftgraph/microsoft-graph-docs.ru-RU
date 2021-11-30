@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d5c92d019855dac87e4bb533cfd3bf29d02daf8b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 53e15104263feb752c35fa9af517cd671f2c5c45
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60982392"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61223490"
 ---
 # <a name="list-phonemethods"></a>List phoneMethods
 
@@ -18,7 +18,7 @@ ms.locfileid: "60982392"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение списка [объектов метода проверки подлинности телефона.](../resources/phoneauthenticationmethod.md) Это возвращает до трех объектов, так как у пользователя может быть до трех телефонов, которые можно использовать для проверки подлинности.
+Извлечение списка [объектов метода проверки подлинности телефона.](../resources/phoneauthenticationmethod.md) Это возвращает до трех объектов, так как у пользователя может быть до трех телефонов, которые можно использовать для проверки подлинности. Этот метод доступен только для стандартных пользователей Azure AD и B2B, но не для пользователей B2C.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -38,13 +38,13 @@ ms.locfileid: "60982392"
 |:---------------------------------------|:-------------------------|:-----------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Application                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна из следующих ролей [Azure AD:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Глобальный администратор
 * Глобальный читатель
-* Привилегированный администратор проверки подлинности
+* привилегированный администратор проверки подлинности;
 * Администратор проверки подлинности (видит только номера телефонов в масках)
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -56,7 +56,7 @@ GET /me/authentication/phoneMethods
 GET /users/{id | userPrincipalName}/authentication/phoneMethods
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
 Этот метод не поддерживает необязательные параметры запроса для настройки ответа.
 
@@ -64,7 +64,7 @@ GET /users/{id | userPrincipalName}/authentication/phoneMethods
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4f575d47c3f7c067fff5e9ea69473f1d7ba3434d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c574a3450b70211a997243673973a18080391aef
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60994992"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61223311"
 ---
 # <a name="get-authentication-operation"></a>Операция проверки подлинности
 
@@ -37,12 +37,12 @@ ms.locfileid: "60994992"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. | Не поддерживается. |
 | Для приложений                            | Не поддерживается. | Не поддерживается. |
 
-Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна из следующих ролей [Azure AD:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Глобальный администратор
 * Глобальный читатель
-* Привилегированный администратор проверки подлинности
-* Администратор проверки подлинности
+* привилегированный администратор проверки подлинности;
+* администратор проверки подлинности.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,7 +52,7 @@ ms.locfileid: "60994992"
 GET /users/{id | userPrincipalName}/authentication/operations/{id}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
 Этот метод не поддерживает необязательные параметры запроса для настройки ответа.
 
@@ -60,7 +60,7 @@ GET /users/{id | userPrincipalName}/authentication/operations/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token}. Обязательный. |
+| Авторизация | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 

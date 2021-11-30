@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 0fe6b0e8c497d8e462997addf5894cbcb1d39a18
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c0f6c75f567c6a28cda1d1e1d73cd18226323507
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61000412"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224001"
 ---
 # <a name="list-verificationdnsrecords"></a>Проверка спискаDnsRecords
 
@@ -29,9 +29,9 @@ ms.locfileid: "61000412"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All    |
+|Делегированные (рабочая или учебная учетная запись) | Domain.Read.All, Domain.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All |
+|Application | Domain.Read.All, Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ GET /domains/{id}/verificationDnsRecords
 
 > В качестве параметра {id} укажите домен, используя его полное доменное имя.
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
@@ -49,7 +49,7 @@ GET /domains/{id}/verificationDnsRecords
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {token}. Обязательный. |
+| Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json |
 
 ## <a name="request-body"></a>Текст запроса

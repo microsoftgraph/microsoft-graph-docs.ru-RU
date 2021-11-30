@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b0c5edfe90d551a1db4c709fd26bb8881e78e0e9
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: fb0ce82629ae39c07f8f5d404e7d43dfa83f014c
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60987061"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226549"
 ---
 # <a name="list-deleted-items"></a>Перечисление удаленных элементов
 
@@ -32,7 +32,7 @@ ms.locfileid: "60987061"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
+|Приложение | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
 
 ### <a name="for-users"></a>Для пользователей:
 
@@ -40,7 +40,7 @@ ms.locfileid: "60987061"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Для приложения | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ### <a name="for-groups"></a>Для групп:
 
@@ -48,7 +48,7 @@ ms.locfileid: "60987061"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group.Read.All, Group.ReadWrite.All, Directory.Read.All |
+|Application | Group.Read.All, Group.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -60,7 +60,7 @@ GET /directory/deletedItems/microsoft.graph.user
 
 Этот API в настоящее время поддерживает получение типов объектов приложений (), групп () или пользователей `microsoft.graph.application` `microsoft.graph.group` `microsoft.graph.user` () из удаленных элементов. Тип литой OData является обязательной частью URI, и вызов без типа `GET /directory/deleteditems` **не поддерживается.**
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
 Этот метод поддерживает параметры запроса, поддерживаемые ресурсом, заданным литой OData. То есть, `$count` , , , , , и `$expand` `$filter` `$orderBy` `$search` `$select` `$top` параметры запроса. Некоторые запросы поддерживаются только при использовании заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Например:
 
@@ -85,7 +85,7 @@ ConsistencyLevel: eventual
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Bearer &lt;code&gt; *Обязательный*.|
+| Авторизация  | Bearer &lt;code&gt; *Обязательный*.|
 | Accept  | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -211,25 +211,17 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(id,displayName,deletedDateTime)",
-    "@odata.count": 3,
+    "@odata.count": 2,
     "value": [
         {
-            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/54c8f8fa-7217-4846-baf9-94af2381864f/Microsoft.DirectoryServices.Group",
-            "id": "54c8f8fa-7217-4846-baf9-94af2381864f",
-            "displayName": "Digital Initiative Public Relations",
-            "deletedDateTime": "2021-09-07T15:41:06Z"
+            "id": "c31799b8-0683-4d70-9e91-e032c89d3035",
+            "displayName": "Role assignable group",
+            "deletedDateTime": "2021-10-26T16:56:36Z"
         },
         {
-            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/a7acbd5f-07ec-4b97-9fbf-8fe94d44b044/Microsoft.DirectoryServices.Group",
-            "id": "a7acbd5f-07ec-4b97-9fbf-8fe94d44b044",
-            "displayName": "GitHub issue #13843",
-            "deletedDateTime": "2021-09-07T15:41:57Z"
-        },
-        {
-            "@odata.id": "https://graph.microsoft.com/v2/84841066-274d-4ec0-a5c1-276be684bdd3/directoryObjects/1a5999a0-3b42-498e-b408-0c2f9951db1d/Microsoft.DirectoryServices.Group",
-            "id": "1a5999a0-3b42-498e-b408-0c2f9951db1d",
-            "displayName": "GitHub issue #13843",
-            "deletedDateTime": "2021-09-07T15:42:03Z"
+            "id": "74e45ce0-a52a-4766-976c-7201b0f99370",
+            "displayName": "Role assignable group",
+            "deletedDateTime": "2021-10-26T16:58:37Z"
         }
     ]
 }

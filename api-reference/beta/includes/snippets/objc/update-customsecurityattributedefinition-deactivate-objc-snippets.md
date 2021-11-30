@@ -1,0 +1,35 @@
+---
+description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
+ms.openlocfilehash: 060c18a01c8eafd8479a45adb0ef5e95049d2560
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61225661"
+---
+```objc
+
+MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
+
+NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/directory/customSecurityAttributeDefinitions/Engineering_Project"]]];
+[urlRequest setHTTPMethod:@"PATCH"];
+[urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+
+MSGraphCustomSecurityAttributeDefinition *customSecurityAttributeDefinition = [[MSGraphCustomSecurityAttributeDefinition alloc] init];
+[customSecurityAttributeDefinition setStatus:@"Deprecated"];
+
+NSError *error;
+NSData *customSecurityAttributeDefinitionData = [customSecurityAttributeDefinition getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:customSecurityAttributeDefinitionData];
+
+MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
+    completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
+
+        //Request Completed
+
+}];
+
+[meDataTask execute];
+
+```

@@ -5,12 +5,12 @@ author: spunukol
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b02e1c9d6a0de046771e4a437cb1762eea73c6db
-ms.sourcegitcommit: 2f394a9f33f2fab3634d0f18882985ee211067d1
+ms.openlocfilehash: 5028cc130f08c8070b426e49085a3a4367e64e8d
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60127926"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226535"
 ---
 # <a name="get-deviceregistrationpolicy"></a>Get deviceRegistrationPolicy
 
@@ -25,9 +25,9 @@ ms.locfileid: "60127926"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)| Policy.ReadWrite.DeviceConfiguration|
+|Делегированные (рабочая или учебная учетная запись)| Policy.ReadWrite.DeviceConfiguration|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|Не поддерживается|
+|Для приложения|Не поддерживается|
 
 При вызове от имени пользователя пользователю необходимо принадлежать к следующим ролям [Azure AD:](/azure/active-directory/roles/permissions-reference)
 + Глобальный администратор
@@ -67,7 +67,7 @@ GET /policies/deviceRegistrationPolicy
 }
 -->
 ``` http
-GET https://graph.microsoft.com/policies/deviceRegistrationPolicy
+GET https://graph.microsoft.com/beta/policies/deviceRegistrationPolicy
 ```
 
 

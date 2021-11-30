@@ -1,16 +1,16 @@
 ---
 title: Удаление учащегося
-description: Удаляет educationUser из educationClass.
+description: Удаление educationUser из класса educationClass.
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0c34227cd6b3ce72c6aebe0ab6952d8167b9b89a
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 7e2d0701acd3fafa57228fe101c165ae7a058751
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786785"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61225926"
 ---
 # <a name="remove-a-student"></a>Удаление учащегося
 
@@ -18,9 +18,9 @@ ms.locfileid: "52786785"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаляет [educationUser](../resources/educationuser.md) из [educationClass](../resources/educationclass.md).
+Удаление [educationUser](../resources/educationuser.md) из [класса educationClass](../resources/educationclass.md).
 
->**Примечание.** Преподаватели _и_ учащиеся включены в коллекцию **members** курса. Перед вызовом этого API нужно проверить, не представляет ли удаляемый объект **educationUser** преподавателя.  Для этого необходимо получить список преподавателей путем вызова [educationclass_list_teachers](educationclass-list-teachers.md) и проверить, не возвращается ли в этом списке ИД удаляемого пользователя.
+>**Примечание.** Преподаватели _и_ учащиеся включены в коллекцию **members** курса. Перед вызовом этого API убедитесь, что удаляемая система **educationUser** не является преподавателем.  Получить список преподавателей, [](educationclass-list-teachers.md) позвонив educationclass_list_teachers и проверив пользовательский ID пользователя, который будет удален, не находится в списке возвращенных учителей.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "52786785"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Приложение | EduRoster.ReadWrite.All | 
+|Application | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ DELETE /education/classes/{id}/members/{userId}/$ref
 При успешном выполнении этот метод возвращает код отклика `204 No Content` и пустое тело отклика.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -79,7 +79,7 @@ DELETE https://graph.microsoft.com/beta/education/classes/11003/members/14008
 ---
 
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. 
 <!-- {
   "blockType": "response"

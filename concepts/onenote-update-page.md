@@ -4,12 +4,12 @@ description: " Корпоративная записная книжка в Micro
 author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
-ms.openlocfilehash: 06594d0c5f584330b16d523e4f7dc2e8de4be080
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d5a445877d8c814ef223ed89a540f9606afa1863
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59103979"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61223042"
 ---
 # <a name="update-onenote-page-content"></a>Обновление содержимого страниц OneNote
 
@@ -45,7 +45,7 @@ ms.locfileid: "59103979"
 Полный URI запроса будет выглядеть так:<br/><br/>`https://graph.microsoft.com/v1.0/me/onenote/pages/{id}/content`
 
 
-Узнайте больше о [корневом URL-адресе службы](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url).
+Узнайте больше о [корневом URL-адресе службы](/graph/api/resources/onenote-api-overview#root-url).
 
 
 <a name="message-body"></a>
@@ -464,7 +464,7 @@ Content-Type: image/png
 
 Сегмент `version` URL-адреса представляет нужную версию Microsoft Graph. Значение `v1.0` предназначено для стабильного производственного кода. Используйте значение `beta`, чтобы опробовать функцию, находящуюся на стадии разработки. Функции бета-версии могут меняться, поэтому не следует использовать их в производственном коде.
 
-Значение `me` предназначено для содержимого OneNote, доступного текущему пользователю (если он является владельцем или с ним поделились этим содержимым). Значение `users/{id}` предназначено для содержимого OneNote, которым указанный (в URL-адресе) пользователь поделился с текущим пользователем. Использование [API Graph для Azure AD](/previous-versions/azure/ad/graph/api/api-catalog)
+Значение `me` предназначено для содержимого OneNote, доступного текущему пользователю (если он является владельцем или с ним поделились этим содержимым). Значение `users/{id}` предназначено для содержимого OneNote, которым указанный (в URL-адресе) пользователь поделился с текущим пользователем. Используйте API для работы с [пользователями](/graph/v1.0/resources/user.md).
 
 
 > **Примечание.** Вы можете получить идентификаторы пользователей, отправив запрос GET к конечной точке `https://graph.microsoft.com/v1.0/users`.

@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 37a98f65521a9f3989f9c8c401c4151ec000db48
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 27f671a7ab975447385dcd4b6e00be8c904511ca
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60978288"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226339"
 ---
 # <a name="get-fido2authenticationmethod"></a>Get fido2AuthenticationMethod
 Пространство имен: microsoft.graph
@@ -36,14 +36,14 @@ ms.locfileid: "60978288"
 |:---------------------------------------|:-------------------------|:-----------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Application                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
 Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна из следующих [ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Глобальный администратор
 * Глобальный читатель
-* Привилегированный администратор проверки подлинности
-* Администратор проверки подлинности
+* привилегированный администратор проверки подлинности;
+* администратор проверки подлинности.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -59,7 +59,7 @@ GET /users/{id | userPrincipalName}/authentication/fido2Methods/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

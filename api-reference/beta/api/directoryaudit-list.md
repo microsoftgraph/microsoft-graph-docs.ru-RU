@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 61c1e9db8daf33d8a73614d54158b595a72cb495
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ac77010c81e0bcf49988c9b04d737cb18a23f74b
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60999376"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61225088"
 ---
 # <a name="list-directoryaudits"></a>Перечисление directoryAudits
 
@@ -28,7 +28,7 @@ ms.locfileid: "60999376"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
-|Для приложений | AuditLog.Read.All и Directory.Read.All | 
+|Application | AuditLog.Read.All и Directory.Read.All | 
 
 > [!IMPORTANT]
 > Этот API имеет [известные](/graph/known-issues#azure-ad-activity-reports) проблемы и в настоящее время требует согласия на оба **auditLog.Read.All** и **Directory.Read.All** разрешений.
@@ -42,7 +42,7 @@ ms.locfileid: "60999376"
 GET /auditLogs/directoryAudits
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
 Этот метод поддерживает следующие параметры запроса OData, чтобы помочь настроить ответ. Сведения об использовании этих параметров см. в материале [OData query parameters.](/graph/query-parameters)
 
@@ -172,6 +172,7 @@ Content-type: application/json
             "modifiedProperties": [],
             "userPrincipalName": "jdoe@contoso.com"
         }],
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36",
         "additionalDetails": [{
             "key": "Additional Detail Name",
             "value": "Additional Detail Value"

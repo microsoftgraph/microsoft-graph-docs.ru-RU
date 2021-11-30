@@ -5,16 +5,23 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: f1f4ef82726167a5484eae35531763d53dfaec0a
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 76b4c08fd3329d04613ea1bd0fd2c6c6d7a1d104
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60693425"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61225989"
 ---
 # <a name="enum-values"></a>Значения Enum
 
 Пространство имен: microsoft.graph
+
+### <a name="accessreviewinstancedecisionitemfilterbycurrentuseroptions-values"></a>accessReviewInstanceDecisionItemFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|рецензент|
+|unknownFutureValue|
 
 ### <a name="continuousaccessevaluationmode-values"></a>значения continuousAccessEvaluationMode 
 
@@ -29,7 +36,7 @@ ms.locfileid: "60693425"
 | Элемент             | Значение | Описание |
 |:-------------------|:------| :------|
 | notRequired        | 0     | Для завершения регистрации устройства пользователю не требуется многофакторная проверка подлинности.|
-| обязательно           | 1     | Для завершения регистрации устройства пользователю требуется многофакторная проверка подлинности.|
+| Обязательный           | 1     | Для завершения регистрации устройства пользователю требуется многофакторная проверка подлинности.|
 | unknownFutureValue | 2     | Эволюционирующее значение sentinel. Не следует использовать.|
 
 ### <a name="policyscope-values"></a>значения policyScope
@@ -184,11 +191,11 @@ ms.locfileid: "60693425"
 
 |Member|
 |:---|
-|String|
+|Строка|
 |Целое число|
-|Справка|
+|Ссылка|
 |Двоичный|
-|Логический|
+|Логическое|
 |Даты и время|
 
 ### <a name="mutability-values"></a>значения мутируемости
@@ -851,7 +858,7 @@ ms.locfileid: "60693425"
 
 |Member|
 |:---|
-|birthday;|
+|birthday|
 |свадьба|
 |unknownFutureValue|
 
@@ -966,7 +973,7 @@ ms.locfileid: "60693425"
 | относительный           | 1     | Родственник пользователя.                     |
 | помощник               | 2     | Помощник пользователя.                         |
 | врач             | 3     | Врач пользователя.                       |
-| guardian           | 4      | Хранитель пользователя.                     |
+| guardian           | 4     | Хранитель пользователя.                     |
 | child              | 5     | Ребенок пользователя.                        |
 | другие              | 6      | Неустановленное отношение к пользователю. |
 | unknownFutureValue | 7      | Значение маркера для будущей совместимости.   |
@@ -1094,7 +1101,7 @@ ms.locfileid: "60693425"
 | предварительная        | 1     |
 | занят             | 2     |
 | oof              | 3     |
-| workingElsewhere | 4      |
+| workingElsewhere | 4     |
 | unknown          | –1    |
 
 
@@ -1144,7 +1151,7 @@ ms.locfileid: "60693425"
 | lightGreen  | 1     |
 | lightOrange | 2     |
 | lightGray   | 3     |
-| lightYellow | 4      |
+| lightYellow | 4     |
 | lightTeal   | 5     |
 | lightPink   | 6      |
 | lightBrown  | 7      |
@@ -1510,7 +1517,7 @@ ms.locfileid: "60693425"
 | preset1  | 1     |
 | preset2  | 2     |
 | preset3  | 3     |
-| preset4  | 4      |
+| preset4  | 4     |
 | preset5  | 5     |
 | preset6  | 6      |
 | preset7  | 7      |
@@ -1519,7 +1526,7 @@ ms.locfileid: "60693425"
 | preset10 | 10     |
 | preset11 | 11    |
 | preset12 | 12     |
-| preset13 | 13     |
+| preset13 | 13    |
 | preset14 | 14     |
 | preset15 | 15     |
 | preset16 | 16    |
@@ -1551,7 +1558,7 @@ ms.locfileid: "60693425"
 | sha1                | 1     | Тип hash SHA1.                |
 | sha256              | 2     | Тип hash SHA256.              |
 | md5                 | 3     | Тип hash MD5.                 |
-| authenticodeHash256 | 4      | Тип hash AuthenticodeHash256. |
+| authenticodeHash256 | 4     | Тип hash AuthenticodeHash256. |
 | lsHash              | 5     | Тип hash LsHash.              |
 | ctph                | 6      | Тип хаши CTPH.                |
 | peSha1              | 7      | Тип hash PESHA1.              |
@@ -1573,7 +1580,7 @@ ms.locfileid: "60693425"
 | попытка | 1     | Попытка подключения.      |
 | успешно | 2     | Подключение удалось.      |
 | заблокировано   | 3     | Подключение заблокировано.        |
-| не удалось    | 4      | Сбой подключения.         |
+| не удалось    | 4     | Сбой подключения.         |
 
 ### <a name="processintegritylevel-values"></a>значения processIntegrityLevel
 
@@ -1596,7 +1603,7 @@ Enum для ульев реестра, как определено [https://docs
 | currentConfig           | 1     | HKEY_CURRENT_CONFIG улей.         |
 | currentUser             | 2     | HKEY_CURRENT_USER улей.           |
 | localMachineSam         | 3     | HKEY_LOCAL_MACHINE\SAM улей.      |
-| localMachineSamSoftware | 4      | HKEY_LOCAL_MACHINE\Software улей. |
+| localMachineSamSoftware | 4     | HKEY_LOCAL_MACHINE\Software улей. |
 | localMachineSystem      | 5     | HKEY_LOCAL_MACHINE\System улей.   |
 | usersDefault            | 6      | HKEY_USERS \\ . Улей DEFAULT.        |
 
@@ -1621,7 +1628,7 @@ Enum для типов значений реестра, определенных
 | двоичный            | 1     | REG_BINARY типа значения реестра.              |
 | dword             | 2     | REG_DWORD типа значения реестра.               |
 | dwordLittleEndian | 3     | REG_DWORD_LITTLE_ENDIAN типа значения реестра. |
-| dwordBigEndian    | 4      | REG_DWORD_BIG_ENDIAN тип значения реестра.    |
+| dwordBigEndian    | 4     | REG_DWORD_BIG_ENDIAN тип значения реестра.    |
 | expandSz          | 5     | REG_EXPAND_SZ тип значения реестра.           |
 | link              | 6      | REG_LINK тип значения реестра.                |
 | multiSz           | 7      | REG_MULTI_SZ тип значения реестра.            |
@@ -1640,7 +1647,7 @@ Enum для серьезности оповещений.
 | информационная | 1     | Строгость только для сведений. |
 | низкий           | 2     | Серьезность низкая.                  |
 | medium        | 3     | Серьезность является средней.               |
-| высокая          | 4      | Серьезность высока.                 |
+| высокая          | 4     | Серьезность высока.                 |
 
 ### <a name="alertstatus-values"></a>значения alertStatus
 
@@ -1674,7 +1681,7 @@ Enum для серьезности оповещений.
 | remoteInteractive | 1     | Logon — это удаленный интерактивный. |
 | сеть           | 2     | Logon — это сеть.            |
 | batch             | 3     | Logon является пакетным.              |
-| служба           | 4      | Logon — это служба.            |
+| служба           | 4     | Logon — это служба.            |
 
 ### <a name="useraccountsecuritytype-values"></a>Значения userAccountSecurityType
 
@@ -1836,7 +1843,7 @@ Enum для серьезности оповещений.
 | Нет   | 0     |
 | Добавление    | 1     |
 | Update | 2     |
-| Delete | 4      |
+| Delete | 4     |
 
 ### <a name="chatmessagetype-values"></a>значения chatMessageType
 
@@ -1916,7 +1923,7 @@ Enum для серьезности оповещений.
 | Нет | 0 |  Пользователю не разрешается переопределять сообщение. Пользователь не может сообщать о сообщении как о ложном срабатывке, если политикаTip не предоставлена. Во всех остальных сценариях пользователь может сообщить о сообщении как о ложном срабатыве.|
 | AllowFalsePositiveOverride | 1 |  Пользователю не разрешается явно переопределять блок, если он не объедин с `AllowOverrideWithoutJustification` `AllowOverrideWithJustification` флагами или флагами. Сообщение о ложном срабатывии нарушения автоматически переопределяет блок и отправляет сообщение. |
 | AllowOverrideWithoutJustification | 2 | Пользователю разрешено переопределять блок и отправлять сообщение. Текст обоснования не требуется. Эксклюзив `AllowOverrideWithJustification` для . |
-| AllowOverrideWithJustification | 4  |  Пользователю разрешено переопределять блок и отправлять сообщение. Требуется текст обоснования. Эксклюзив `AllowOverrideWithoutJustification` для .|
+| AllowOverrideWithJustification | 4 |  Пользователю разрешено переопределять блок и отправлять сообщение. Требуется текст обоснования. Эксклюзив `AllowOverrideWithoutJustification` для .|
 
 ### <a name="entitytype-values"></a>Значения entityType
 
@@ -1989,7 +1996,7 @@ Enum для серьезности оповещений.
 | Автоматически     | 1     | Метка выбрана в результате условий политики.       |
 | Рекомендуемый   | 2     | Избранный для применения рекомендуемой метки.                    |
 | policyDefault | 3     | Пользователь не применял действие и метку по умолчанию политики. |
-| обязательный     | 4      | Пользователь выбрал метку после принуждения к выбору.         |
+| обязательный     | 4     | Пользователь выбрал метку после принуждения к выбору.         |
 
 ### <a name="contentalignment-values"></a>значения contentAlignment
 
@@ -2073,7 +2080,7 @@ Enum для серьезности оповещений.
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| mail   | 1     | Угроза почты.            |
+| почта;   | 1     | Угроза почты.            |
 | url    | 2     | УГРОЗА URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 
@@ -2091,7 +2098,7 @@ Enum для серьезности оповещений.
 | уверенности               | 1     | Угроза нежелательной почты.       |
 | степенью           | 2     | Фишинговая угроза.   |
 | malware            | 3     | Угроза вредоносных программ.    |
-| unknownFutureValue | 4      | Член-часовой. |
+| unknownFutureValue | 4     | Член-часовой. |
 
 ### <a name="threatassessmentstatus-values"></a>значения threatAssessmentStatus
 
@@ -2124,7 +2131,7 @@ Enum для серьезности оповещений.
 | mailFlowRule          | 1     | Exchange правила транспорта.            |
 | safeSender            | 2     | Сейф отправитель.                   |
 | blockedSender         | 3     | Заблокированный список отправитель.                |
-| advancedSpamFiltering | 4      | Расширенный параметр flitering нежелательной почты.     |
+| advancedSpamFiltering | 4     | Расширенный параметр flitering нежелательной почты.     |
 | domainAllowList       | 5     | Список разрешаемой области отправитель.           |
 | domainBlockList       | 6      | Список блоков домена отправитель.           |
 | notInAddressBook      | 7      | Исключить отправитель не в адресной книге. |
@@ -2133,7 +2140,7 @@ Enum для серьезности оповещений.
 | autoPurgeToJunk       | 10     | TimeTravel перемещает сообщение в нежелательное.    |
 | autoPurgeToDeleted    | 11    | TimeTravel перемещает сообщение на удаление. |
 | исходящие              | 12     | Исходящие сообщения.                      |
-| notJunk               | 13     | Разрешить из-за не нежелательной.              |
+| notJunk               | 13    | Разрешить из-за не нежелательной.              |
 | нежелательной                  | 14     | Заблокировано из-за нежелательной почты.                |
 | unknownFutureValue    | 15     | Член-часовой.                  |
 
@@ -2222,7 +2229,7 @@ Enum для серьезности оповещений.
 | string                | 1     | строковый тип данных                    |
 | логический               | 2     | тип данных Boolean                   |
 | int64                 | 3     | Тип данных Int                       |
-| stringCollection      | 4      | Тип данных коллекции строк         |
+| stringCollection      | 4     | Тип данных коллекции строк         |
 |dateTime|5||
 | unknownFutureValue    | 6      | Член-часовой.                  |
 
@@ -2232,8 +2239,8 @@ Enum для серьезности оповещений.
 |:----------------------|:------|:-------------------------------------------------------------------|
 | builtIn               | 1     | Этот тип атрибута потока пользователей обозначает, что он был создан системой |
 | настраиваемый                | 2     | Этот тип атрибута потока пользователей обозначает, что он был создан пользователем   |
-|обязательно|3||
-| unknownFutureValue    | 4      | Член-часовой.                                                 |
+|Обязательный|3||
+| unknownFutureValue    | 4     | Член-часовой.                                                 |
 
 ### <a name="permissionclassificationtype-values"></a>значения permissionClassificationType
 
@@ -2559,7 +2566,6 @@ Enum для серьезности оповещений.
 |inProgress|
 |завершено|
 |просроченная|
-|notCompleted|
 |unknownFutureValue|
 
 ### <a name="teamworkcalleventtype-values"></a>значения teamworkCallEventType

@@ -5,15 +5,17 @@ author: simonhult
 ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e65df53dc8ef6e9eec0f70ce7dbe4fe55e7b1466
-ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
+ms.openlocfilehash: c4d458c74b8197fe07f178ea9f725c8094228a2e
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60780914"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61223056"
 ---
 # <a name="overview-of-item-insights"></a>Обзор аналитики элементов
 Аналитика элементов — это ориентированные на пользователя рекомендации для вас и для тех, с кем вы работаете, основанные на вашей совместной работе в Microsoft 365.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWPGbr] 
 
 ## <a name="computation-of-item-insights"></a>Вычисление аналитики элементов
 Microsoft 365 — это всемирное облако для продуктивной работы, многочисленные возможности которого создаются на основе действий, совершаемых вами как пользователем. Взаимодействуя с ресурсами, например с файлами в Microsoft 365, вы создаете сигналы, которые Майкрософт объединяет и собирает в граф для вашей организации. В этом графе данные сигналов представлены как отношения между вами и ресурсами. Исходя из сигналов в графе вычисляется аналитика, лежащая в основе нескольких функций Microsoft 365. Среди примеров таких функций рекомендации по выбору оптимального времени для очередного собрания команды, помощь в сортировке личной и рабочей информации на вашем телефоне, а также множество других интеллектуальных сценариев. 
@@ -77,4 +79,4 @@ Microsoft 365 — это всемирное облако для продукти
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - Опробуйте API аналитики на собственных файлах в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer). Выполните вход, разверните узел **Аналитика** в столбце слева и попробуйте примеры запросов.
-- Узнайте больше о [настройке конфиденциальности аналитики элементов для пользователей (предварительная версия)](insights-customize-item-insights-privacy.md) и [API параметров аналитики (предварительная версия)](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) с поддержкой персонализации.
+- Узнайте больше о [настройке конфиденциальности аналитики элементов для пользователей (предварительная версия)](insights-customize-item-insights-privacy.md) и [API параметров аналитики элементов (предварительная версия)](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) с поддержкой персонализации.

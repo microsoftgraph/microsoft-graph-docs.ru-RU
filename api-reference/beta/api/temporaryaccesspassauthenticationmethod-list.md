@@ -5,12 +5,12 @@ author: inbarckMS
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 888e5bb618c41399d69f9faecf2b4571d133f5fb
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 576a10cc0075d0a3edd8d9863e3b08fcef78ace3
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61017554"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224407"
 ---
 # <a name="list-temporaryaccesspassauthenticationmethods"></a>Список temporaryAccessPassAuthenticationMethods
 Пространство имен: microsoft.graph
@@ -36,15 +36,15 @@ ms.locfileid: "61017554"
 |:---------------------------------------|:-------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Application                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
 
 Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна из следующих [ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Глобальный администратор
 * Глобальный читатель
-* Привилегированный администратор проверки подлинности
-* Администратор проверки подлинности
+* привилегированный администратор проверки подлинности;
+* администратор проверки подлинности.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -57,13 +57,13 @@ GET /me/authentication/temporaryAccessPassMethods
 GET /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод не поддерживает необязательные параметры запроса для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request"></a>Запрос 
 Не указывайте текст запроса для этого метода.

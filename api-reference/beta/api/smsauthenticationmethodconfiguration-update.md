@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 75aa58e1c9def07e8eb9a3f9c6695531d81dfcac
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 46a2a151bdaa6735f5d6594c48198cab40c11cbe
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60944650"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61225149"
 ---
 # <a name="update-smsauthenticationmethodconfiguration"></a>Обновление smsAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
@@ -28,7 +28,7 @@ ms.locfileid: "60944650"
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Policy.ReadWrite.AuthenticationMethod|
 
-Для делегирования сценариев администратору требуется следующая [роль:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев администратору требуется одна из следующих ролей [Azure AD:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Администратор политики проверки подлинности
 * Глобальный администратор
@@ -46,7 +46,7 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/s
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -56,7 +56,7 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/s
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор политики метода проверки подлинности.|
+|id|Строка|Идентификатор политики метода проверки подлинности.|
 |state|authenticationMethodState|Возможные значения: `enabled`, `disabled`.|
 
 >**Примечание:** Свойство `@odata.type` со значением `#microsoft.graph.smsAuthenticationMethodConfiguration` должно быть включено в тело.

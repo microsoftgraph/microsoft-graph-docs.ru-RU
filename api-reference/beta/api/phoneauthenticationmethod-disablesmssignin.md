@@ -1,16 +1,16 @@
 ---
 title: 'phoneAuthenticationMethod: disableSmsSignIn'
-description: Отключение SMS для мобильного телефона
-localization_priority: Normal
+description: Отключение sms-регистрации для мобильного телефона
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 00141db043825d96611eaae156adb2bbf2e48503
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: cb7034d709c7c290f2c4a87d30648cb288921c34
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786476"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226080"
 ---
 # <a name="phoneauthenticationmethod-disablesmssignin"></a>phoneAuthenticationMethod: disableSmsSignIn
 
@@ -18,13 +18,13 @@ ms.locfileid: "52786476"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отключить SMS вход для существующего `mobile` номера телефона. 
+Отключение sms-регистрации для существующего `mobile` номера телефона. 
 
->**Примечание:** Номер больше не будет доступен для SMS, что может помешать входу пользователя.
+>**Примечание:** Номер больше не будет доступен для регистрации SMS, что может помешать входу пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 ### <a name="permissions-acting-on-self"></a>Разрешения, действующие на себя
 
@@ -40,12 +40,12 @@ ms.locfileid: "52786476"
 |:---------------------------------------|:-------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | UserAuthenticationMethod.ReadWrite.All |
+| Application                            | UserAuthenticationMethod.ReadWrite.All |
 
-Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
-* Глобальный администратор
-* Привилегированный администратор проверки подлинности
-* Администратор проверки подлинности
+Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна из следующих ролей [Azure AD:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+* глобальный администратор;
+* привилегированный администратор проверки подлинности;
+* администратор проверки подлинности.
 
 ## <a name="http-request"></a>HTTP-запрос
 

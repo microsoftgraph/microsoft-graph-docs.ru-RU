@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sandeo-MSFT
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 035c63a161f62d08a16f4a2f0511020c46f59ccb
-ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
+ms.openlocfilehash: 468aadee4343b4e4c7ae76bba8b877de0f76e250
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61130180"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226934"
 ---
 # <a name="device-resource-type"></a>Тип ресурса device
 
@@ -20,7 +20,7 @@ ms.locfileid: "61130180"
 
 Представляет устройство, зарегистрированное в каталоге. Экземпляры device создаются в облаке с помощью службы Device Registration Service или Intune. Их используют политики условного доступа для многофакторной проверки подлинности. Представленными устройствами могут быть компьютеры и ноутбуки, смартфоны и планшеты. Наследуется от [directoryObject](directoryobject.md).
 
-С помощью этого ресурса можно добавлять собственные данные к настраиваемым свойствам, применяя [расширения](/graph/extensibility-overview).
+С помощью этого ресурса можно добавлять собственные данные к настраиваемым свойствам, применяя [расширения](/graph/extensibility-overview). Этот ресурс — открытый тип, который позволяет передавать другие свойства.
 
 ## <a name="methods"></a>Методы
 
@@ -30,12 +30,15 @@ ms.locfileid: "61130180"
 |[Список объектов device](../api/device-list.md) | Коллекция [device](device.md)| Получение списка устройств, зарегистрированных в каталоге. |
 |[Обновление device](../api/device-update.md) | [device](device.md)  |Обновление свойств объекта устройства. |
 |[Удаление device](../api/device-delete.md) | Нет |Удаление объекта устройства. |
-|[Список memberOf](../api/device-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Список групп, в которые устройство входит напрямую. |
+|[Перечисление memberOf](../api/device-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Список групп, в которые устройство входит напрямую. |
 |[Перечисление транзитивных свойств memberOf](../api/device-list-transitivememberof.md) |Коллекция [directoryObject](directoryobject.md)| Список групп, в которые входит устройство. Эта операция является транзитной. |
 |[Список экземпляров registeredOwner](../api/device-list-registeredowners.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей, которые относятся к зарегистрированным владельцам устройства, из свойства навигации registeredOwners.|
 |[Перечисление registeredUsers](../api/device-list-registeredusers.md) |Коллекция [directoryObject](directoryobject.md)| Получение зарегистрированных пользователей устройства из свойства навигации registeredUsers.|
 |[Список usageRights](../api/device-list-usagerights.md) | Коллекция [usageRight](usageright.md) | Получите коллекцию прав на использование, предоставленных устройству.|
-|[checkMemberObjects](../api/device-checkmemberobjects.md) | Коллекция String | Проверьте членство в списке групп, ролей каталогов или объектов административных единиц. |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | Коллекция String | Проверка членства в списке групп. Это транзитивная проверка. |
+| [getMemberGroups](../api/directoryobject-getmembergroups.md) | Коллекция String | Верни все группы, в которые входит устройство. Это транзитивная проверка. |
+|[checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | Коллекция String | Проверьте членство в списке групп, ролей каталогов или объектов административных единиц. |
+|[getMemberObjects](../api/directoryobject-checkmemberobjects.md) | Коллекция String | Возвращаем все группы, административные единицы и роли каталога, в которые входит устройство. Это транзитивная проверка. |
 |**Открытые расширения**| | |
 |[Создание открытого расширения](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий ресурс.|
 |[Получение открытого расширения](../api/opentypeextension-get.md) |Коллекция объектов [openTypeExtension](opentypeextension.md)| Получение открытого расширения, определяемого именем расширения.|
@@ -66,7 +69,7 @@ ms.locfileid: "61130180"
 |id|Строка|Уникальный идентификатор устройства. Наследуется из [directoryObject](directoryobject.md). Ключ, значение null не допускается. Только для чтения. Поддерживает `$filter` (`eq`, `ne`, `not`, `in`). |
 |isCompliant|Boolean|`true` если устройство соответствует политикам управления мобильными устройствами(MDM); в противном `false` случае . Только для чтения. Это может быть обновлено intune только для любого типа ОС устройства или утвержденного приложения [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows устройств ОС. Поддерживает `$filter` (`eq`, `ne`, `not`).|
 |isManaged|Boolean|`true` если устройство управляется приложением управления мобильными устройствами (MDM); в противном `false` случае . Это может быть обновлено intune только для любого типа ОС устройства или утвержденного приложения [MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для Windows устройств ОС. Поддерживает `$filter` (`eq`, `ne`, `not`). |
-|isRooted|Логический|`true` если устройство коренится; `false` если устройство не работает в тюрьме. Это может быть обновлено только в Intune.|
+|isRooted|Логическое|`true` если устройство коренится; `false` если устройство не работает в тюрьме. Это может быть обновлено только в Intune.|
 |managementType|String|Канал управления устройством.  Это свойство заданной Intune. Возможные значения: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
 |manufacturer|String| Производитель устройства. Только для чтения. |
 |mdmAppId|Строка|Идентификатор приложения, используемый для регистрации устройства в MDM. Только для чтения. Поддерживает `$filter` (`eq`, `ne`, `not`, `startsWith`).|
@@ -76,10 +79,10 @@ ms.locfileid: "61130180"
 |operatingSystem|String| Тип операционной системы на устройстве. Обязательный параметр. Поддерживает `$filter` `eq` `ne` (, `not` , `ge` , , , , и по `le` `startsWith` `eq` `null` значениям). |
 |operatingSystemVersion|String| Версия операционной системы устройства. Обязательный. Поддерживает `$filter` `eq` `ne` (, `not` , `ge` , , , , и по `le` `startsWith` `eq` `null` значениям). |
 |physicalIds|Коллекция String| Только для внутреннего использования. Значение null не допускается. Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
-|profileType|String|Тип профиля устройства. Возможные значения: `RegisteredDevice` (по умолчанию), `SecureVM` , , `Printer` `Shared` `IoT` .|
+|profileType|Строка|Тип профиля устройства. Возможные значения: `RegisteredDevice` (по умолчанию), `SecureVM` , , `Printer` `Shared` `IoT` .|
 |registrationDateTime|DateTimeOffset|Дата и время регистрации устройства. Тип timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
-|systemLabels|Коллекция строк| Список меток, применяемых к устройству системой. |
-|имена хост-кодов|Коллекция строк| Список имен hostNames для устройства.|
+|systemLabels|Коллекция String| Список меток, применяемых к устройству системой. |
+|имена хост-кодов|Коллекция String| Список имен hostNames для устройства.|
 |trustType|String| Тип доверия для присоединенного устройства. Только для чтения. Возможные значения: (указывает на приведение собственных личных устройств), (облачные только присоединились к устройствам), (локальное доменное соединялось с устройствами, присоединив их к `Workplace`  `AzureAd` Azure `ServerAd` AD). Дополнительные сведения см. в статье [Общие сведения об управлении устройствами в Azure Active Directory](/azure/active-directory/device-management-introduction). |
 |name| String | Удобное имя устройства. Возвращается только в том случае, если пользователь входит в учетную запись Майкрософт в Project Риме. |
 |status | String| Устройство `online` или `offline` . Возвращается только в том случае, если пользователь входит в учетную запись Майкрософт в Project Риме. |
@@ -91,8 +94,8 @@ ms.locfileid: "61130180"
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Команды  | [коллекция](command.md) команд | Набор команд, отправленных на это устройство.|
-|extensions|Коллекция объектов [extension](extension.md)|Коллекция открытых расширений, определенных для устройства. Только для чтения. Допускается значение null. |
+|команды | [коллекция](command.md) команд | Набор команд, отправленных на это устройство.|
+|extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для устройства. Только для чтения. Допускается значение null. |
 |memberOf|Коллекция [directoryObject](directoryobject.md)|Группы, в которые входит это устройство. Только для чтения. Допускается значение null. Поддерживает `$expand`. |
 |registeredOwners|Коллекция [directoryObject](directoryobject.md)| Пользователь, который присоединил устройство через облако или зарегистрировал личное устройство. Зарегистрированный владелец задается при регистрации. Сейчас можно настроить лишь одного такого владельца. Только для чтения. Допускается значение null. Поддерживает `$expand`. |
 |registeredUsers|Коллекция [directoryObject](directoryobject.md)| Коллекция зарегистрированных пользователей устройства. В случае зарегистрированных личных устройств или устройств, присоединенных через облако, при регистрации для обычных пользователей задается то же значение, что и для владельцев. Только для чтения. Допускается значение null. Поддерживает `$expand`. |

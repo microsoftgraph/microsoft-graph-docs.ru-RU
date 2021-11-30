@@ -5,12 +5,12 @@ author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: b61a361f92e1abd8e168e1a59eac68e4edab0c96
-ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.openlocfilehash: e0cee15f6298ce67ca8be3cf8f6b2aef9302ac2a
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59979752"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224806"
 ---
 # <a name="simulation-resource-type"></a>тип ресурсов моделирования
 
@@ -20,21 +20,21 @@ ms.locfileid: "59979752"
 
 Представляете кампанию моделирования атак и учебной кампании клиента.
 
-Моделирование атак и обучение — это служба, доступная в [microsoft Defender для](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide&preserve-view=true)Office 365. Эта служба позволяет пользователям в клиенте испытать реалистичную доброкачественная фишинговая атака и учиться у нее. Служба позволяет администраторам клиентов имитировать, назначать тренинги и читать полученные сведения о поведении пользователей в интернете в фишинговых симуляторах. Служба предоставляет отчеты об имитации атак, которые помогают арендаторам выявлять пробелы в знаниях о безопасности, чтобы они могли дополнительно обучать пользователей снижению их восприимчивости к атакам. 
+Моделирование атак и обучение — это служба, доступная в [microsoft Defender для](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide&preserve-view=true)Office 365. Эта служба позволяет пользователям в клиенте испытать на себе реалистичную учебную фишинговую атаку и извлечь уроки. Служба позволяет администраторам клиентов имитировать, назначать тренинги и читать полученные сведения о поведении пользователей в интернете в фишинговых симуляторах. Служба предоставляет отчеты об имитации атак, которые помогают арендаторам выявлять пробелы в знаниях о безопасности, чтобы они могли дополнительно обучать пользователей снижению их восприимчивости к атакам. 
 
 API моделирования и подготовки атак позволяет  администраторам клиентов перечислять [](report-m365defender-reports-overview.md) запущенные упражнения и тренинги моделирования, а также получать отчеты о полученных сведениях о поведении пользователей в интернете в фишинговых симуляторах. 
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Моделирование списка](../api/attacksimulationroot-list-simulations.md)|[коллекция моделирования](../resources/simulation.md)|Получите список объектов [моделирования](../resources/simulation.md) и их свойств.|
+|[Перечисление симуляций](../api/attacksimulationroot-list-simulations.md)|[коллекция моделирования](../resources/simulation.md)|Получите список объектов [моделирования](../resources/simulation.md) и их свойств.|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |attackTechnique|[simulationAttackTechnique](#simulationattacktechnique-values)|Метод социальной инженерии, используемый в кампании моделирования атак и обучения. Поддерживает `$filter` и `$orderby`. Возможные значения: `unknown`, `credentialHarvesting`, `attachmentMalware`, `driveByUrl`, `linkInAttachment`, `linkToMalwareFile`, `unknownFutureValue`. Дополнительные сведения о типах методов атак социальной инженерии см. в [симуляторах.](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations)|
 |attackType|[simulationAttackType](#simulationattacktype-values)|Тип атаки для имитации атаки и учебной кампании. Поддерживает `$filter` и `$orderby`. Возможные значения: `unknown`, `social`, `cloud`, `endpoint`, `unknownFutureValue`.|
-|cleanupArtifacts|Логический|Флаг, представляющий, были ли артефакты очищены в ходе имитации атаки и учебной кампании.|
+|cleanupArtifacts|Логическое|Флаг, представляющий, были ли артефакты очищены в ходе имитации атаки и учебной кампании.|
 |completionDateTime|DateTimeOffset|Дата и время завершения имитации атаки и учебной кампании. Поддерживает `$filter` и `$orderby`.|
 |createdBy|[emailIdentity](../resources/emailidentity.md)|Удостоверение пользователя, создавшего имитацию атаки и обучающую кампанию.|
 |createdDateTime|DateTimeOffset|Дата и время создания кампании моделирования атак и обучения.|
@@ -42,12 +42,11 @@ API моделирования и подготовки атак позволяе
 |displayName|Строка|Отображение имени кампании моделирования атак и учебной кампании. Поддерживает `$filter` и `$orderby`.|
 |enableRegionTimezoneDelivery|Логический|Флаг, представляющий, включить или отключить доставку полезной нагрузки фишинговых служб в кампании моделирования атак и обучения.|
 |id|Строка|ID кампании моделирования атак и учебной кампании.|
-|includeAllAccountTargets|Логический|Флаг, представляющий включение всех пользователей клиента в кампанию моделирования атак и обучения.|
-|isAutomated|Boolean|Флаг, представляющий, была ли кампания моделирования атаки и учебной кампании создана из потока автоматизации моделирования. Поддерживает `$filter` и `$orderby`. |
+|includeAllAccountTargets|Логическое|Флаг, представляющий включение всех пользователей клиента в кампанию моделирования атак и обучения.|
+|isAutomated|Логическое|Флаг, представляющий, была ли кампания моделирования атаки и учебной кампании создана из потока автоматизации моделирования. Поддерживает `$filter` и `$orderby`. |
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Удостоверение пользователя, который недавно изменил имитацию атаки и обучающую кампанию.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последней модификации кампании моделирования и обучения атак.|
 |launchDateTime|DateTimeOffset|Дата и время запуска и начала кампании моделирования и обучения атак. Поддерживает `$filter` и `$orderby`.|
-|mode|[simulationMode](#simulationmode-values)|Режим имитации атаки и учебной кампании. Поддерживает `$filter` и `$orderby`. Возможные значения: `real`, `preview`, `unknownFutureValue`.|
 |payloadDeliveryPlatform|payloadDeliveryPlatform|Метод доставки полезной нагрузки фишинга, используемой в кампании моделирования атак и обучения. Возможные значения: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`.|
 |payloadSource|[payloadSource](#payloadsource-values)|Источник фишинговой полезной нагрузки в кампании моделирования атак и обучения. Возможные значения: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
 |отчет|[simulationReport](../resources/simulationreport.md)|Отчет об имитации атаки и учебной кампании.|
@@ -76,14 +75,6 @@ API моделирования и подготовки атак позволяе
 |социальные| Атака, которая использует социальные навыки для психологического управления жертвами, создавая ложное чувство любопытства, срочности или страха. |
 |облако| Атака на хост или пользователя в облачной среде, например, отказ в атаках на службу.|
 |конечная точка| Атака на конечные точки корпоративной сети, такие как настольные компьютеры, ноутбуки, мобильные телефоны, устройства интернета вещей. |
-|unknownFutureValue| Эволюционирующее значение sentinel. Не следует использовать. |
-
-### <a name="simulationmode-values"></a>значения simulationMode
-
-|Member|Описание |
-|:---|:---|
-|real| Кампания запущена для всех необходимых конечных пользователей. |
-|preview| Кампания, запущенная только пользователю администратора для предварительного просмотра полученной полезной нагрузки фишинга. |
 |unknownFutureValue| Эволюционирующее значение sentinel. Не следует использовать. |
 
 ### <a name="payloadsource-values"></a>значения payloadSource
@@ -147,7 +138,6 @@ API моделирования и подготовки атак позволяе
   "completionDateTime": "String (timestamp)",
   "includeAllAccountTargets": "Boolean",
   "enableRegionTimezoneDelivery": "Boolean",
-  "mode": "String",
   "isAutomated": "Boolean",
   "cleanupArtifacts": "Boolean",
   "payloadSource": "String",

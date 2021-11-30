@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7a479eeef4929b8252dc3cdab99f3e7fb9460a04
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: bf27cd11eea7939cdde5b08ef00cc93095c9be21
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60984682"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224602"
 ---
 # <a name="list-owners"></a>Список владельцев
 
@@ -37,13 +37,13 @@ ms.locfileid: "60984682"
 GET /groups/{id}/owners
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/owners
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -100,11 +100,30 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.user"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.user",
+            "id": "4562bcc8-c436-4f95-b7c0-4f8ce89dca5e",
+            "accountEnabled": true,
+            "displayName": "MOD Administrator",
+            "userPrincipalName": "admin@contoso.com"
+        },
+        {
+            "@odata.type": "#microsoft.graph.user",
+            "id": "f0206b06-7c5d-461c-ae24-08f68b7ef463",
+            "accountEnabled": true,
+            "displayName": "Megan Bowen",
+            "userPrincipalName": "MeganB@contoso.com"
+        },
+        {
+            "@odata.type": "#microsoft.graph.user",
+            "id": "5c70937c-d9ea-4a47-8852-ab77630f803d",
+            "accountEnabled": true,
+            "displayName": "Diego Siciliani",
+            "userPrincipalName": "DiegoS@contoso.com"
+        }
+    ]
 }
 ```
 

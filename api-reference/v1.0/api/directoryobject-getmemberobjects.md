@@ -1,47 +1,120 @@
 ---
 title: Вывод объектов элементов
-description: " Возвращает все группы и роли каталога, участником которых является пользователь, группа или объект каталога. Это транзитивная функция. "
+description: Возвращаем все группы, административные единицы и роли каталога, в которые входит пользователь, группа, руководитель службы, организационный контакт, устройство или объект каталога. Это транзитивная функция.
 ms.localizationpriority: medium
 author: keylimesoda
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d6683b83a0d26d53f592641f04120618b9e29fb8
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3cf34fcf3c3fb613a2fd1337f6e272bf71d920bc
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60979268"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226577"
 ---
 # <a name="get-member-objects"></a>Вывод объектов членства
 
 Пространство имен: microsoft.graph
 
-Возвращает все группы и роли каталога, участником которых является пользователь, группа или объект каталога. Это транзитивная функция. 
+Возвращаем все группы, административные единицы и роли каталога, в которые [](../resources/device.md)входит [](../resources/directoryobject.md) [пользователь,](../resources/user.md) [группа,](../resources/group.md)руководитель службы, [](../resources/serviceprincipal.md)организационный [контакт,](../resources/orgcontact.md)устройство или объект каталога. Это транзитивная функция.
 
-**Примечание:** Только пользователи могут быть членами ролей каталога.
+**Примечание:** Только пользователи и группы с поддержкой ролей могут быть членами ролей каталога.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
+### <a name="memberships-for-a-directory-object"></a>Членство для объекта каталога
+
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.Read.All и Group.Read.All, Directory.Read.All    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | User.Read.All и Group.Read.All, Directory.Read.All |
+|Для приложений | Directory.Read.All |
+
+### <a name="memberships-for-a-user"></a>Членство для пользователя
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | User.Read, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All |
+
+### <a name="memberships-for-a-group"></a>Членство в группе
+
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                 |
+| :------------------------------------- | :------------------------------------------------------------------------------------------ |
+| Делегированные (рабочая или учебная учетная запись)     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                              |
+| Приложение                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All                             |
+
+### <a name="memberships-for-a-service-principal"></a>Членство для директора службы
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
+### <a name="memberships-for-an-organizational-contact"></a>Членство для организационного контакта
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Directory.Read.All, Directory.ReadWrite.All |
+
+### <a name="memberships-for-a-device"></a>Членство для устройства
+
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
+|:---------------------------------------|:--------------------------------------------|
+| Делегированные (рабочая или учебная учетная запись)     | Device.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Application                            | Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
+
+
+Членство для объекта каталога
+<!-- { "blockType": "ignored" } -->
+```http
+POST /directoryObjects/{id}/getMemberObjects
+```
+
+Членство для пользователя
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/getMemberObjects
 POST /users/{id | userPrincipalName}/getMemberObjects
-POST /groups/{id}/getMemberGroups
-POST /directoryObjects/{id}/getMemberObjects
-
 ```
+
+Членство в группе
+<!-- { "blockType": "ignored" } -->
+```http
+POST /groups/{id}/getMemberObjects
+```
+
+Членство для директора службы
+<!-- { "blockType": "ignored" } -->
+```http
+POST /servicePrincipals/{id}/getMemberObjects
+```
+
+Членство для организационного контакта
+<!-- { "blockType": "ignored" } -->
+```http
+POST /contacts/{id}/getMemberObjects
+```
+
+Членство для устройства
+<!-- { "blockType": "ignored" } -->
+```http
+POST /devices/{id}/getMemberObjects
+```
+
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:--------|
-| Авторизация  | Bearer {token}. Обязательный. |
+| Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type   | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -49,7 +122,7 @@ POST /directoryObjects/{id}/getMemberObjects
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Логическое| `true` чтобы указать, что должны возвращаться только группы безопасности, в которые входит объект; чтобы указать, что все роли групп и каталогов, в которые входит объект, `false` должны быть возвращены. **Примечание.** Функция может быть вызвана пользователю только в том случае, если параметр `true` . |
+|securityEnabledOnly|Логическое| `true` чтобы указать, что должны возвращаться только группы безопасности, в которые входит объект; чтобы указать, что все группы, административные единицы и роли каталога, в которые входит сущность, должны `false` быть возвращены. |
 
 ## <a name="response"></a>Отклик
 

@@ -5,18 +5,18 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 25a9d4ad10e346e758a51574b2e75042b8d08aa0
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a0ff83af594bbf163cecf64434060ac2bfa55966
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61025710"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224386"
 ---
 # <a name="delete-educationclass"></a>Удаление educationClass
 
 Пространство имен: microsoft.graph
 
-Удаление [образовательного класса](../resources/educationclass.md).
+Удаление [образовательного класса](../resources/educationclass.md). Так как класс также является универсальной группой, удаление класса приводит к удалению группы.
 
 > [!IMPORTANT]
 > Так как класс также является универсальной группой, удаление класса приводит к удалению группы.
@@ -28,18 +28,17 @@ ms.locfileid: "61025710"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | EduRoster.ReadWrite.All | 
+|Application | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /education/classes/{id}
-
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {token}. Обязательный.  |
+| Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -49,7 +48,7 @@ DELETE /education/classes/{id}
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -82,7 +81,7 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}
 
 ---
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. 
 
 <!-- {

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1b6e14615a43abab33349d9f44ecbbe78cf42dc4
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f1997bd7a4e04839d0c8348faed9d7074b4f0090
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019739"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61223854"
 ---
 # <a name="update-phoneauthenticationmethod"></a>Обновление phoneAuthenticationMethod
 
@@ -42,12 +42,12 @@ ms.locfileid: "61019739"
 |:---------------------------------------|:-------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | UserAuthenticationMethod.ReadWrite.All |
+| Application                            | UserAuthenticationMethod.ReadWrite.All |
 
-Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
-* Глобальный администратор
-* Привилегированный администратор проверки подлинности
-* Администратор проверки подлинности
+Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна из следующих ролей [Azure AD:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+* глобальный администратор;
+* привилегированный администратор проверки подлинности;
+* администратор проверки подлинности.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -66,7 +66,7 @@ PUT /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {token}. Обязательный. |
+| Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -76,7 +76,7 @@ PUT /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |phoneNumber|String|Номер телефона для текста или вызова для проверки подлинности. Телефон номера используют формат "+ \<country code\> \<number\> x \<extension\> ", с необязательным расширением. Например, допустимы +1 5555551234 или +1 555551234x1233. При создании и обновлении номера отклоняется, если они не соответствуют требуемой форме.|
-|phoneType|Строка| Возможные значения: `mobile`, `alternateMobile` или `office`.|
+|phoneType|строка| Возможные значения: `mobile`, `alternateMobile` или `office`.|
 
 ## <a name="response"></a>Отклик
 

@@ -5,16 +5,23 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: a7691215089789fcc9eb911ca8cb9a6d14e953e1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d91f7b7847d9c20465bbd507e59c882a337822b6
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60973474"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61225863"
 ---
 # <a name="enum-values"></a>Значения Enum
 
 Пространство имен: microsoft.graph
+
+### <a name="accessreviewinstancedecisionitemfilterbycurrentuseroptions-values"></a>accessReviewInstanceDecisionItemFilterByCurrentUserOptions 
+
+|Member|
+|:---|
+|рецензент|
+|unknownFutureValue|
 
 ### <a name="volumetype-values"></a>значения volumeType
 
@@ -364,7 +371,7 @@ ms.locfileid: "60973474"
 
 |Member|
 |:---|
-|Никаких других изменений не происходит|
+|Нет|
 |SecurityGroup|
 |Все|
 
@@ -1461,7 +1468,7 @@ Enum для серьезности оповещений.
 
 | Member                |
 |:----------------------|
-| Строка                |
+| string                |
 | логический               |
 | int64                 |
 | stringCollection      |

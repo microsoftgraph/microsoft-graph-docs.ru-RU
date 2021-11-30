@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5758fb28939d4ae039d0b752cc3d4ae5b63b3bbc
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: 4257286e8e7162e9f6131d561e9a298d0fa42e85
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220439"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61225163"
 ---
 # <a name="get-smsauthenticationmethodconfiguration"></a>Get smsAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
@@ -28,7 +28,7 @@ ms.locfileid: "60220439"
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Policy.ReadWrite.AuthenticationMethod|
 
-Для делегирования сценариев администратору требуется следующая [роль:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев администратору требуется одна из следующих ролей [Azure AD:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Глобальный читатель
 * Администратор политики проверки подлинности
@@ -52,7 +52,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/sms
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) в теле отклика.
 

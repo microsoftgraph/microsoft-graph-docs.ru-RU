@@ -1,16 +1,16 @@
 ---
 title: Добавление участников
-description: Добавьте участника в группу Microsoft 365 или группу безопасности через свойство навигации участников.
+description: Добавляйте участника в группу Microsoft 365 или группу безопасности через свойство навигации members.
 ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fc0ff71e481165ff4da795c0b60713c044b9e38c
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: 45fcfd9ab14e87d179264b276c79e26e46b66829
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61124016"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61223306"
 ---
 # <a name="add-members"></a>Добавление участников
 
@@ -18,15 +18,14 @@ ms.locfileid: "61124016"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавление участника в группу безопасности или Microsoft 365 через свойство **навигации** участников.
+Добавляйте участника в группу Microsoft 365 или группу безопасности через свойство навигации **members**.
 
 Можно добавить пользователей, директоров служб или другие группы. 
 
-> [!Important]
-> + Вы можете добавлять пользователей только в группы, управляемые через облако.
+> [!IMPORTANT]
+> + Можно добавлять только членов в группы безопасности и Microsoft 365.
 > + Вы не можете добавлять группы безопасности в группы Microsoft 365.
 > + Вы не можете добавлять группы Microsoft 365 в группы безопасности или другие группы Microsoft 365.
-> + Этот API нельзя использовать для добавления участников в группу безопасности почты.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,7 +45,7 @@ POST /groups/{group-id}/members/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя | Описание|
 |:---- |:-----------|
-| Авторизация | Bearer {token}. Обязательный. |
+| Авторизация | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание добавляемого объекта [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) или [group](../resources/group.md) в формате JSON.

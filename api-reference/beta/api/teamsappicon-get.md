@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jecha
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 344ac7c54a9b341f9fa425e4a36794fcf78d5ab7
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 49de08a8e1dd062f944f3f6c27e02d914c6c3956
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61018047"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226091"
 ---
 # <a name="get-teamsappicon"></a>Get teamsAppIcon
 
@@ -28,7 +28,7 @@ ms.locfileid: "61018047"
 | :------------------------------------- | :--------------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | AppCatalog.Read.All, AppCatalog.ReadWrite.All, AppCatalog.Submit |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                   |
-| Для приложений                            | Не поддерживается.                                                   |
+| Application                            | AppCatalog.Read.All, AppCatalog.ReadWrite.All                    |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,7 +46,7 @@ GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/col
 GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/outlineIcon
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
 Эта операция поддерживает параметры `$select` `$expand` [запроса oData и OData](/graph/query-parameters) для настройки ответа.
 
@@ -54,7 +54,7 @@ GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/out
 
 | Заголовок           | Значение                      |
 | :--------------- | :------------------------- |
-| Авторизация    | Bearer {token}. Обязательный.  |
+| Авторизация    | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 

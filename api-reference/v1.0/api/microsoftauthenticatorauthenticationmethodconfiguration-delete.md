@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a875bc389fd1855ae00aff67ce8e21c5bc345bcc
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: 45d44fa65e338522719525bd486c1bde9642c213
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60219793"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61223707"
 ---
 # <a name="delete-microsoftauthenticatorauthenticationmethodconfiguration"></a>Удаление MicrosoftAuthenticatorAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "60219793"
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Policy.ReadWrite.AuthenticationMethod|
 
-Для делегирования сценариев администратору требуется следующая [роль:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+Для делегирования сценариев администратору требуется одна из следующих ролей [Azure AD:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Администратор политики проверки подлинности
 * Глобальный администратор

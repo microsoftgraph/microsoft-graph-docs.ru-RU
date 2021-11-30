@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 0c6527859ba958fc1e2914e595423c624b3b81767c5ec1faf06f1021315e613e
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: f2091623e65bdfce1fb6bffb231360eccd6866ab
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57189624"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226706"
 ---
 ```javascript
 
@@ -16,10 +16,10 @@ const options = {
 const client = Client.init(options);
 
 const string = {
-  securityEnabledOnly: true
+    securityEnabledOnly: false
 };
 
-await client.api('/me/getMemberGroups')
+await client.api('/directoryObjects/0049d944-a805-4680-9f54-3ab292090309/getMemberGroups')
     .version('beta')
     .post(string);
 

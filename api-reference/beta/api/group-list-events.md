@@ -1,16 +1,16 @@
 ---
 title: Список событий
 description: Получение списка, включающего объекты событий.
-author: Jordanndahl
+author: Harini84
 ms.localizationpriority: medium
-ms.prod: groups
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: cb7b9f33ee60bedcef01dbfab7624d1b69df9a06
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3ea9e972fe49780d9b0e6d22590cf5064c3131ed
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022265"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61225912"
 ---
 # <a name="list-events"></a>Перечисление событий
 
@@ -36,7 +36,7 @@ GET /groups/{id}/events
 GET /groups/{id}/calendar/events
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов

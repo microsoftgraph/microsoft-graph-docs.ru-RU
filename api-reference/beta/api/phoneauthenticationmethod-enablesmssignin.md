@@ -1,16 +1,16 @@
 ---
 title: 'phoneAuthenticationMethod: enableSmsSignIn'
-description: Включить SMS для мобильного телефона.
-localization_priority: Normal
+description: Включить вход в SMS для мобильного телефона.
+ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 1452d3e3e1c93def07dce3b6ee78a996c374ae0c
-ms.sourcegitcommit: 94c4acf8bd03c10a44b12952b6cb4827df55b978
+ms.openlocfilehash: 98d720b5d5bbe4845a1fcc0d366778088324ae5f
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52786474"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226073"
 ---
 # <a name="phoneauthenticationmethod-enablesmssignin"></a>phoneAuthenticationMethod: enableSmsSignIn
 
@@ -18,15 +18,15 @@ ms.locfileid: "52786474"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Включить SMS для существующего номера `mobile` телефона. Чтобы успешно включить:
+Включить вход в SMS для существующего `mobile` номера телефона. Чтобы успешно включить:
 
 * Телефон должен иметь `"phoneType": "mobile"` .
-* Телефон должен быть уникальным в системе SMS регистрации (никто другой не может также использовать этот номер).
-* Пользователь должен быть включен для SMS входа в политику методов [проверки подлинности.](/azure/active-directory/authentication/concept-authentication-methods)
+* Телефон должен быть уникальным в системе регистрации SMS (никто другой не может использовать этот номер).
+* Пользователь должен быть включен для входа в SMS в политике [методов проверки подлинности.](/azure/active-directory/authentication/concept-authentication-methods)
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 ### <a name="permissions-acting-on-self"></a>Разрешения, действующие на себя
 
@@ -42,12 +42,12 @@ ms.locfileid: "52786474"
 |:---------------------------------------|:-------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | UserAuthenticationMethod.ReadWrite.All |
+| Application                            | UserAuthenticationMethod.ReadWrite.All |
 
-Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
-* Глобальный администратор
-* Привилегированный администратор проверки подлинности
-* Администратор проверки подлинности
+Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна из следующих ролей [Azure AD:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+* глобальный администратор;
+* привилегированный администратор проверки подлинности;
+* администратор проверки подлинности.
 
 ## <a name="http-request"></a>HTTP-запрос
 

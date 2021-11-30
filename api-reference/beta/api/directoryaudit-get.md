@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: b5575a8a38d9d8a1a9140fa5875f4354aad890af
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4e8574d6988c1e593f30ad3721e98ab6ecdb5e12
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60987041"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61225478"
 ---
 # <a name="get-directoryaudit"></a>Получение directoryAudit
 
@@ -28,7 +28,7 @@ ms.locfileid: "60987041"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
-|Для приложений | AuditLog.Read.All и Directory.Read.All | 
+|Для приложения | AuditLog.Read.All и Directory.Read.All | 
 
 > [!IMPORTANT]
 > Этот API имеет [известные](/graph/known-issues#azure-ad-activity-reports) проблемы и в настоящее время требует согласия на оба **auditLog.Read.All** и **Directory.Read.All** разрешений.
@@ -148,6 +148,7 @@ Content-type: application/json
             "modifiedProperties": [],
             "userPrincipalName": "jdoe@contoso.com"
         }],
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36",
         "additionalDetails": [{
             "key": "Additional Detail Name",
             "value": "Additional Detail Value"

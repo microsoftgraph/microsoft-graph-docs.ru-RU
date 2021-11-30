@@ -3,12 +3,12 @@ title: Создайте вкладку Microsoft Teams с помощью microso
 description: Начало создания вкладки Microsoft Teams с помощью microsoft Graph набор средств.
 ms.localizationpriority: medium
 author: simonagren
-ms.openlocfilehash: ac3309a0954cd7426b4399aca2043ff811f00c6a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 76e8957ae515c784dcbbebbeb72bc04e5ab5c588
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129560"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224876"
 ---
 # <a name="build-a-microsoft-teams-tab-with-the-microsoft-graph-toolkit"></a>Создайте вкладку Microsoft Teams с помощью microsoft Graph набор средств
 
@@ -81,7 +81,7 @@ TeamsMsal2Provider.handleAuth();
 
 Убедитесь, что в регистрации приложения необходимо указать на страницу auth, созданную `redirect URI` на предыдущем шаге. Например, https://localhost:3000/tabauth.
 
-> **Примечание:** Убедитесь, что в `redirect URI` качестве `Single Page Application (SPA)` . Teams Поставщик MSAL2 использует поставщика MSAL2 за кулисами.
+> **Примечание:** Убедитесь, что в `redirect URI` качестве `Single Page Application (SPA)` . Teams msAL2 Provider использует поставщика MSAL2 за кулисами.
 
 ## <a name="initialize-the-teams-msal2-provider"></a>Инициализация поставщика Teams MSAL2
 
@@ -141,3 +141,4 @@ Providers.globalProvider = new TeamsMsal2Provider({
 - Воспользуйтесь компонентами в [интерактивной среде](https://mgt.dev).
 - Задайте вопрос [в Microsoft Q&A](/answers/topics/microsoft-graph-toolkit.html).
 - Сообщайте об ошибках и оставляйте запросы на создание функций в [GitHub](https://aka.ms/mgt).
+- Ознакомьтесь с [Microsoft Teams примерами](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-graph-toolkit).

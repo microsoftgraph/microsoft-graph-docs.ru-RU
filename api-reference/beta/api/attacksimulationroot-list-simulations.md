@@ -5,12 +5,12 @@ author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 23cbcc366c07ed3f6d1c8b2ab5ee2b4361bc980c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ce449178da32f31a3d9ffc644eff7d78171559b0
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60982497"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61223693"
 ---
 # <a name="list-simulations"></a>Перечисление симуляций
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "60982497"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | SecurityEvents.Read.All                     |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | SecurityEvents.Read.All                     |
+| Application                            | SecurityEvents.Read.All                     |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -38,10 +38,10 @@ ms.locfileid: "60982497"
 GET /security/attackSimulation/simulations
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает следующие параметры запроса OData, чтобы помочь настроить ответ: `$count` , , , , `$filter` `$orderby` `$skiptoken` `$top` .
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+Этот метод поддерживает следующие параметры запроса OData, чтобы помочь настроить ответ: `$count` , , , , , `$filter` `$orderby` `$skiptoken` `$top` `$select` .
 
-Поддержка следующих свойств `$filter` `$orderby` и: **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated,** **launchDateTime**, **режим**, **состояние**.
+Поддержка следующих свойств `$filter` `$orderby` и: **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, **состояние**.
 
 Используйте `@odata.nextLink` для pagination.
 
@@ -57,6 +57,7 @@ GET /security/attackSimulation/simulations?$filter={property} eq '{property-valu
 GET /security/attackSimulation/simulations?$filter={property} eq '{property-value}'&$top=5
 GET /security/attackSimulation/simulations?$orderby={property}
 GET /security/attackSimulation/simulations?$top=1
+GET /security/attackSimulation/simulations?$select={property}
 ```
 
 Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
@@ -64,7 +65,7 @@ GET /security/attackSimulation/simulations?$top=1
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -147,7 +148,6 @@ Content-Type: application/json
       "completionDateTime": "2021-01-07T01:01:01.01Z",
       "includeAllAccountTargets": false,
       "enableRegionTimezoneDelivery": false,
-      "mode": "real",
       "isAutomated": false,
       "cleanupArtifacts": false,
       "payloadSource": "global",

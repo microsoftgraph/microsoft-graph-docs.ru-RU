@@ -346,16 +346,16 @@ items:
                 href: api/user-activateserviceplan.md
               - name: Назначение лицензии
                 href: api/user-assignlicense.md
-              - name: Проверка членства в группах
-                href: api/directoryobject-checkmembergroups.md
-              - name: Проверка объектов-членов
-                href: api/user-checkmemberobjects.md
               - name: Экспорт личных данных
                 href: api/user-exportpersonaldata.md
-              - name: Вывод групп пользователя
+              - name: Вывод групп членов
                 href: api/directoryobject-getmembergroups.md
+              - name: Проверка членства в группах
+                href: api/directoryobject-checkmembergroups.md
               - name: Вывод объектов членства
                 href: api/directoryobject-getmemberobjects.md
+              - name: Проверка объектов-членов
+                href: api/directoryobject-checkmemberobjects.md
               - name: Получение объектов по идентификатору
                 href: api/directoryobject-getbyids.md
               - name: Список созданных объектов
@@ -453,7 +453,7 @@ items:
               - name: Список записных книжек
                 href: api/onenote-list-notebooks.md
           - name: Организационная иерархия
-            href: resources/organization.md
+            href: resources/user.md
             items:
               - name: Назначение руководителя
                 href: api/user-post-manager.md
@@ -602,8 +602,6 @@ items:
                 href: api/group-post-owners.md
               - name: Назначение лицензии
                 href: api/group-assignlicense.md
-              - name: Проверка членства в группах
-                href: api/directoryobject-checkmembergroups.md
               - name: Оценка динамического членства
                 href: api/group-evaluatedynamicmembership.md
               - name: Получение удаленной группы
@@ -612,10 +610,14 @@ items:
                 href: api/group-delta.md
               - name: Получение конечной точки
                 href: api/endpoint-get.md
+              - name: Проверка членства в группах
+                href: api/directoryobject-checkmembergroups.md
               - name: Вывод групп пользователя
                 href: api/directoryobject-getmembergroups.md
+              - name: Проверка объектов-членов
+                href: api/directoryobject-checkmemberobjects.md
               - name: Вывод объектов членства
-                href: api/group-getmemberobjects.md
+                href: api/directoryobject-getmemberobjects.md
               - name: Список удаленных групп
                 href: api/directory-deleteditems-list.md
               - name: Перечисление конечных точек
@@ -1082,11 +1084,11 @@ items:
                   - name: Проверка членства в группах
                     href: api/directoryobject-checkmembergroups.md
                   - name: Проверка объектов-членов
-                    href: api/serviceprincipal-checkmemberobjects.md
+                    href: api/directoryobject-checkmemberobjects.md
                   - name: Вывод групп пользователя
                     href: api/directoryobject-getmembergroups.md
                   - name: Вывод объектов членства
-                    href: api/serviceprincipal-getmemberobjects.md
+                    href: api/directoryobject-getmemberobjects.md
               - name: Владельцы
                 items:
                   - name: Список владельцев
@@ -1361,9 +1363,9 @@ items:
                 href: api/event-delta.md
               - name: Представление напоминаний
                 href: api/user-reminderview.md
-          - name: Category
+          - name: Категория
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -9898,7 +9900,7 @@ items:
                     href: api/virtualendpoint-post-provisioningpolicies.md
                   - name: Обновление
                     href: api/cloudpcprovisioningpolicy-update.md
-                  - name: Удаление
+                  - name: Удалить
                     href: api/cloudpcprovisioningpolicy-delete.md
                   - name: Назначение
                     href: api/cloudpcprovisioningpolicy-assign.md
@@ -9922,7 +9924,7 @@ items:
                     href: api/virtualendpoint-post-usersettings.md
                   - name: Обновление
                     href: api/cloudpcusersetting-update.md
-                  - name: Удаление
+                  - name: Удалить
                     href: api/cloudpcusersetting-delete.md
                   - name: Назначение
                     href: api/cloudpcusersetting-assign.md
@@ -10376,7 +10378,7 @@ items:
                 href: api/educationassignmentdefaults-get.md
               - name: Обновление по умолчанию назначения
                 href: api/educationassignmentdefaults-update.md
-          - name: Category
+          - name: Категория
             href: resources/educationcategory.md
             items:
               - name: Создание категории
@@ -10938,6 +10940,10 @@ items:
                     href: api/device-update.md
                   - name: Удаление устройства
                     href: api/device-delete.md
+                  - name: Проверка объектов-членов
+                    href: api/directoryobject-checkmemberobjects.md
+                  - name: Вывод объектов членства
+                    href: api/directoryobject-getmemberobjects.md
                   - name: Список зарегистрированных владельцев
                     href: api/device-list-registeredowners.md
                   - name: Список зарегистрированных пользователей
@@ -10956,8 +10962,6 @@ items:
                     href: api/device-list-transitivememberof.md
                   - name: Список прав на использование устройств
                     href: api/device-list-usagerights.md
-                  - name: Проверка объектов-членов
-                    href: api/device-checkmemberobjects.md
               - name: Объект каталога
                 href: resources/directoryobject.md
                 items:
@@ -10965,6 +10969,8 @@ items:
                     href: api/directoryobject-get.md
                   - name: Удаление объекта каталога
                     href: api/directoryobject-delete.md
+                  - name: Проверка объектов-членов
+                    href: api/directoryobject-checkmemberobjects.md
                   - name: Вывод объектов членства
                     href: api/directoryobject-getmemberobjects.md
                   - name: Вывод групп членов
@@ -11078,11 +11084,24 @@ items:
                     href: api/orgcontact-get.md
                   - name: Получить дельту контактов орг
                     href: api/orgcontact-delta.md
+                  - name: Объекты каталога
+                    href: resources/directoryobject.md
+                    items:
+                      - name: Вывод групп членов
+                        href: api/directoryobject-getmembergroups.md
+                      - name: Проверка членства в группах
+                        href: api/directoryobject-checkmembergroups.md
+                      - name: Вывод объектов членства
+                        href: api/directoryobject-getmemberobjects.md
+                      - name: Проверка объектов-членов
+                        href: api/directoryobject-checkmemberobjects.md
                   - name: Группы
                     href: resources/group.md
                     items:
                       - name: Вывод свойства memberOf
                         href: api/orgcontact-list-memberof.md
+                      - name: Вывод групп членов
+                        href: api/directoryobject-getmembergroups.md
                       - name: Вывод групп членов
                         href: api/directoryobject-getmembergroups.md
                       - name: Проверка членства в группах
@@ -11096,8 +11115,6 @@ items:
                         href: api/orgcontact-list-memberof.md
                       - name: Получение имени руководителя
                         href: api/orgcontact-get-manager.md
-                      - name: Вывод объектов членства
-                        href: api/orgcontact-getmemberobjects.md
                   - name: Подписанная единица SKU
                     href: resources/subscribedsku.md
                     items:
@@ -12606,7 +12623,7 @@ items:
                 href: api/attachment-delete.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -13211,7 +13228,7 @@ items:
                 href: api/opentypeextension-get.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -14003,7 +14020,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: Планирование
+          - name: План
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы
@@ -14193,7 +14210,7 @@ items:
               - name: Вывод групп пользователя
                 href: api/directoryobject-getmembergroups.md
               - name: Вывод объектов членства
-                href: api/group-getmemberobjects.md
+                href: api/directoryobject-getmemberobjects.md
               - name: Проверка членства в группах
                 href: api/directoryobject-checkmembergroups.md
               - name: Список свойств member of
@@ -14794,7 +14811,7 @@ items:
                     href: api/attachment-delete.md
               - name: Категории
                 items:
-                  - name: Category
+                  - name: Категория
                     href: resources/outlookcategory.md
                   - name: Перечисление категорий
                     href: api/outlookuser-list-mastercategories.md

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jecha
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 33af64a32b88493793e01398c51d095a84f1118d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d0cbb26840e894eaddf87696e93290553da0486f
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61017951"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226614"
 ---
 # <a name="get-teamworkhostedcontent"></a>Get teamworkHostedContent
 
@@ -29,7 +29,7 @@ ms.locfileid: "61017951"
 | :------------------------------------- | :--------------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | AppCatalog.Read.All, AppCatalog.ReadWrite.All, AppCatalog.Submit |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                   |
-| Для приложений                            | Не поддерживается.                                                   |
+| Application                            | AppCatalog.Read.All, AppCatalog.ReadWrite.All                    |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,7 +43,7 @@ GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/out
 GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/outlineIcon/hostedContent/$value
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
 Эта операция поддерживает `$select` [параметры запроса OData](/graph/query-parameter) для настройки ответа.
 
@@ -51,7 +51,7 @@ GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/out
 
 | Заголовок           | Значение                      |
 | :--------------- | :------------------------- |
-| Авторизация    | Bearer {token}. Обязательный.  |
+| Авторизация    | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 

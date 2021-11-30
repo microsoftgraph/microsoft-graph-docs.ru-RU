@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c9461c5867231c307a01f6246c08e63bcacdb8ec
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ebd23b66aa59457518e3613902e0b6d850905f92
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61001496"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224764"
 ---
 # <a name="accessreviewinstancedecisionitem-filterbycurrentuser"></a>accessReviewInstanceDecisionItem: filterByCurrentUser
 Пространство имен: microsoft.graph
@@ -27,7 +27,7 @@ ms.locfileid: "61001496"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.Read.All, AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|AccessReview.Read.All, AccessReview.ReadWrite.All|
+|Application|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -39,13 +39,20 @@ ms.locfileid: "61001496"
 GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/filterByCurrentUser(on='reviewer')
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="function-parameters"></a>Параметры функции
+В следующей таблице показаны параметры запроса, которые можно использовать с помощью этого метода.
+
+|Параметр|Тип|Описание|
+|:---|:---|:---|
+|on|accessReviewInstanceDecisionItemFilterByCurrentUserOptions|Фильтр для запроса объектов принятия решений для текущего пользователя. Возможные значения `reviewer` : `unknownFutureValue` . Использование `reviewer` . Обязательный.|
+
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает `$select` `$filter` параметры запроса `$orderBy` `$skip` `$top` OData и OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

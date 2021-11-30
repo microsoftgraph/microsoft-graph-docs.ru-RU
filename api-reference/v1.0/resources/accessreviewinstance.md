@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: f77e5ae6d16b96fff2586b5b2bd920d01737196d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6df05297d2d16d42a6544b547aea8408a22f4ff2
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59025673"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226108"
 ---
 # <a name="accessreviewinstance-resource-type"></a>тип ресурсов accessReviewInstance
 
@@ -53,7 +53,7 @@ ms.locfileid: "59025673"
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|решения|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) collection|Каждый из основных элементов, рассмотренных в элементе решения, представляет, были ли они утверждены, отклонены `accessReviewInstance` или еще не рассмотрены.|
+|решения|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) collection|Каждый основной объект, рассмотренный в **accessReviewInstance,** имеет элемент решения, представляющий, были ли они утверждены, отклонены или еще не рассмотрены.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

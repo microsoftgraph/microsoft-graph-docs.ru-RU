@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса directoryAudit
-description: Описывает ресурс directoryAudit (сущность) API Microsoft Graph (REST), который помогает аудиту (клиент) действий (бета-версии).
+description: Описывает ресурс directoryAudit (сущность) API microsoft Graph (REST), который помогает в работе аудита (клиент) (бета-версия).
 author: SarahBar
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: f7d7031033a791bb6cf02e2bad527d4decf2b3ea
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 48aeaaf8db3cff792e1d1edf38040a1de09acb9c
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962618"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61224960"
 ---
 # <a name="directoryaudit-resource-type"></a>Тип ресурса directoryAudit
 
@@ -41,7 +41,8 @@ ms.locfileid: "50962618"
 | loggedByService     | String                                              | Указывает, в какой службе запущено действие (например: самостоятельное управление паролями, основной каталог, B2C, приглашенные пользователи, Microsoft Identity Manager, Privileged Identity Management).                                                          |
 | result              | operationResult                                              | Указывает результат действия. Возможные значения: `success`, `failure`, `timeout`, `unknownFutureValue`.                                                                                                                                                       |
 | resultReason        | String                                              | Указывает причину сбоя, если **результат** `failure` или `timeout` .                                                                                                                                                                                              |
-| targetResources     | Коллекция [targetResource](targetresource.md)      | Указывает, какой ресурс был изменен в результате действия. Тип целевого ресурса может быть `User` , , , , , или `Device` `Directory` `App` `Role` `Group` `Policy` `Other` .                                                                                                       |
+| targetResources     | Коллекция [targetResource](targetresource.md)      | Сведения о ресурсе, который изменился из-за действия.  | 
+| userAgent | Строка | Тип агента пользователя, используемого пользователем в действии. |                                                                                                      
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -71,7 +72,8 @@ ms.locfileid: "50962618"
   "loggedByService": "String",
   "result": "string",
   "resultReason": "String",
-  "targetResources": [{"@odata.type": "microsoft.graph.targetResource"}]
+  "targetResources": [{"@odata.type": "microsoft.graph.targetResource"}],
+  "userAgent": "String"
 }
 ```
 

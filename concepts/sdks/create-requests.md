@@ -3,13 +3,15 @@ title: Вызовы API с помощью SDKs Graph Microsoft
 description: Содержит инструкции по созданию Graph http-запросов с помощью SDKs.
 ms.localizationpriority: medium
 author: DarrelMiller
-ms.openlocfilehash: d8b7233fb360b3dd5bba088c6d193a6bac18f304
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: d2d7b1f1a19c1a0a890bab6ab6a8c51ba7ec47a0
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695386"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226377"
 ---
+<!-- markdownlint-disable MD025 -->
+
 # <a name="make-api-calls-using-the-microsoft-graph-sdks"></a>Вызовы API с помощью SDKs Graph Microsoft
 
 Библиотеки служб майкрософт Graph SDK предоставляют клиентский класс, который можно использовать в качестве отправной точки для создания всех запросов API. Существует два стиля клиентского класса: один использует беглое интерфейс для создания запроса (например, ) и другой принимает строку пути `client.Users["user-id"].Manager` (например, `api("/users/user-id/manager")` ). Если у вас есть объект запроса, можно указать различные параметры, такие как фильтрация и сортировка, и, наконец, вы выберите тип операции, который необходимо выполнить.
@@ -36,6 +38,12 @@ ms.locfileid: "60695386"
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-read.md)]
 
+# <a name="go"></a>[Перейти](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-read.md)]
+
 ---
 
 ## <a name="use-select-to-control-the-properties-returned"></a>Использование $select для управления возвращенными свойствами
@@ -59,6 +67,12 @@ ms.locfileid: "60695386"
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-select.md)]
 
+# <a name="go"></a>[Перейти](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-select.md)]
+
 ---
 
 ## <a name="retrieve-a-list-of-entities"></a>Извлечение списка сущностями
@@ -80,6 +94,12 @@ ms.locfileid: "60695386"
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-list.md)]
+
+# <a name="go"></a>[Перейти](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-list.md)]
 
 ---
 
@@ -105,6 +125,12 @@ ms.locfileid: "60695386"
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-index.md)]
 
+# <a name="go"></a>[Перейти](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-index.md)]
+
 ---
 
 ## <a name="use-expand-to-access-related-entities"></a>Использование $expand для доступа к связанным сущностям
@@ -126,6 +152,12 @@ ms.locfileid: "60695386"
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-expand.md)]
+
+# <a name="go"></a>[Перейти](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-expand.md)]
 
 ---
 
@@ -149,6 +181,12 @@ ms.locfileid: "60695386"
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-delete.md)]
 
+# <a name="go"></a>[Перейти](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-delete.md)]
+
 ---
 
 ## <a name="make-a-post-request-to-create-a-new-entity"></a>Создание запроса POST для создания нового объекта
@@ -170,6 +208,12 @@ ms.locfileid: "60695386"
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-create.md)]
+
+# <a name="go"></a>[Перейти](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-create.md)]
 
 ---
 
@@ -193,6 +237,12 @@ ms.locfileid: "60695386"
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-update.md)]
 
+# <a name="go"></a>[Перейти](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-update.md)]
+
 ---
 
 ## <a name="use-http-headers-to-control-request-behavior"></a>Использование http-заглавок для управления поведением запросов
@@ -215,11 +265,17 @@ ms.locfileid: "60695386"
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-headers.md)]
 
+# <a name="go"></a>[Перейти](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-headers.md)]
+
 ---
 
 ## <a name="provide-custom-query-parameters"></a>Предоставление настраиваемой параметров запроса
 
-Для SDKs, которые поддерживают беглое стиле, можно предоставить настраиваемые значения параметров запроса с помощью списка `QueryOptions` объектов. Для SDKs на основе шаблонов параметры кодируются URL-адресами и добавляются в URI запроса. Для PowerShell определенные параметры запроса для данного API выставляются в качестве параметров соответствующей команды.
+Для SDKs, которые поддерживают беглое стиле, можно предоставить настраиваемые значения параметров запроса с помощью списка `QueryOptions` объектов. Для SDKs на основе шаблонов параметры кодируются URL-адресами и добавляются в URI запроса. Для PowerShell и Go определенные параметры запроса для данного API выставляются в качестве параметров соответствующей команды.
 
 # <a name="c"></a>[C#](#tab/CS)
 
@@ -236,5 +292,11 @@ ms.locfileid: "60695386"
 # <a name="powershell"></a>[PowerShell](#tab/PowerShell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-queryparams.md)]
+
+# <a name="go"></a>[Перейти](#tab/Go)
+
+[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
+
+[!INCLUDE [sample-code](includes/snippets/go/create-requests-queryparams.md)]
 
 ---

@@ -3,12 +3,12 @@ title: Национальные облачные развертывания
 description: В дополнение к нашей глобальной сети центров обработки данных облачные службы Майкрософт доступны в трех отдельных национальных облачных службах.
 author: arpitha-dhanapathi
 ms.localizationpriority: medium
-ms.openlocfilehash: 5ddbd3bcb9717d49efe109e2edc371e7fc623b42
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: a6c3ecbcb5cbb48d76c678c2496349e562721b8d
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766154"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226906"
 ---
 # <a name="national-cloud-deployments"></a>Национальные облачные развертывания
 
@@ -115,3 +115,9 @@ ms.locfileid: "59766154"
 * [Azure Government](https://azure.microsoft.com/global-infrastructure/government/)
 * [Azure China 21Vianet](/azure/china/)
 * [Azure для Германии](/azure/germany/)
+
+Ознакомьтесь с примерами проверки подлинности и работы с Azure и Microsoft 365 в национальных облачных развертываниях:
+
+* [Работа с Azure через microsoft Graph для правительства США](https://github.com/SteveWinward/Azure-Samples/blob/master/AAD/SampleAadToken_AzureForGovernment.ps1)
+* [Подключение для сред O365 правительства США (GCC, GCC high и GCC DoD) с помощью Microsoft Graph PowerShell](https://github.com/microsoft/Federal-Business-Applications/tree/main/demos/powershell-gov-samples#microsoft-graph-powershell)
+

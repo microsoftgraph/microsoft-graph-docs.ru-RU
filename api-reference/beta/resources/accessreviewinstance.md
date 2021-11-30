@@ -2,15 +2,15 @@
 title: тип ресурсов accessReviewInstance
 description: Представляет собой повторение `accessReviewScheduleDefinition` .
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 9ab3dd9b72dc26a17e0508537e67a85cf2f2a70e
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 20d766b61f0de71f36dadac4b9395250fa42214b
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58256139"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226782"
 ---
 # <a name="accessreviewinstance-resource-type"></a>тип ресурсов accessReviewInstance
 
@@ -30,10 +30,10 @@ ms.locfileid: "58256139"
 |:---------------|:--------|:----------|
 |[Список accessReviewInstances](../api/accessreviewinstance-list.md) | [accessReviewInstance](accessreviewinstance.md) collection | Получите список объектов [accessReviewInstance](../resources/accessreviewinstance.md) и их свойств. |
 |[Получить accessReviewInstance](../api/accessreviewinstance-get.md) | [accessReviewInstance](accessreviewinstance.md) | Ознакомьтесь с свойствами и отношениями [объекта accessReviewInstance.](../resources/accessreviewinstance.md) |
-|[Отправка напоминания accessReviewInstance](../api/accessreviewinstance-sendreminder.md) | Отсутствуют. | Отправьте напоминание рецензентам accessReviewInstance. |
-|[Остановка accessReviewInstance](../api/accessreviewinstance-stop.md) | Отсутствуют. | Вручную остановите accessReviewInstance. |
-|[Принятие рекомендаций](../api/accessreviewinstance-acceptrecommendations.md) | Отсутствуют. | Позволяет вызываемой пользователю принять рекомендацию по принятию решений для каждого notReviewed accessReviewInstanceDecisionItem, на которых он является рецензентом для определенного accessReviewInstance. |
-|[Применение решений](../api/accessreviewinstance-applydecisions.md) | Отсутствуют. | Вручную применять решения для accessReviewInstance. |
+|[Отправка напоминания accessReviewInstance](../api/accessreviewinstance-sendreminder.md) | Нет. | Отправьте напоминание рецензентам accessReviewInstance. |
+|[Остановка accessReviewInstance](../api/accessreviewinstance-stop.md) | Нет. | Вручную остановите accessReviewInstance. |
+|[Принятие рекомендаций](../api/accessreviewinstance-acceptrecommendations.md) | Нет. | Позволяет вызываемой пользователю принять рекомендацию по принятию решений для каждого notReviewed accessReviewInstanceDecisionItem, на которых он является рецензентом для определенного accessReviewInstance. |
+|[Применение решений](../api/accessreviewinstance-applydecisions.md) | Нет. | Вручную применять решения для accessReviewInstance. |
 |[Решения о пакетной записи](../api/accessreviewinstance-batchrecorddecisions.md)|Нет|Просмотр пакетов принципов или ресурсов в одном вызове.|
 |[Сброс решений](../api/accessreviewinstance-resetdecisions.md)|Нет|Сброс всех элементов решений в экземпляре `notReviewed` в .|
 |[filterByCurrentUser](../api/accessreviewinstance-filterbycurrentuser.md)|[accessReviewInstance](../resources/accessreviewinstance.md) collection|Возвращает все экземпляры в данном [accessReviewScheduleDefinition,](accessreviewscheduledefinition.md) для которого вызываемая пользователь является рецензентом одного или более решений.|
@@ -57,9 +57,9 @@ ms.locfileid: "58256139"
 
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-| `contactedReviewers`   |[коллекция accessReviewReviewer](../resources/accessreviewreviewer.md)| Возвращает коллекцию рецензентов, с которыми связывались для завершения этого обзора. Хотя  свойства рецензентов и **fallbackReviewers** accessReviewScheduleDefinition могут указывать владельцев групп или менеджеров в качестве рецензентов, contactedReviewers возвращает их индивидуальные удостоверения. Поддерживает `$select`. Только для чтения. |
-| `definition`               |[accessReviewScheduleDefinition](accessreviewscheduledefinition.md)          | Существует точно один `accessReviewScheduleDefinition` связанный с каждым экземпляром. Это родительское расписание экземпляра, в котором создаются экземпляры для каждого повторения определения обзора и каждой группы, выбранной для проверки по определению. |
-| `decisions`               |[accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) collection        | Каждый пользователь, рассмотренный в элементе, имеет элемент решения, представляющий, были ли они утверждены, отклонены `accessReviewInstance` или еще не рассмотрены. |
+| contactedReviewers   |[коллекция accessReviewReviewer](../resources/accessreviewreviewer.md)| Возвращает коллекцию рецензентов, с которыми связывались для завершения этого обзора. Хотя  свойства рецензентов и **fallbackReviewers** **accessReviewScheduleDefinition** могут указывать владельцев групп или менеджеров в качестве рецензентов,  **contactedReviewers** возвращает их индивидуальные удостоверения. Поддерживает `$select`. Только для чтения. |
+| определение               |[accessReviewScheduleDefinition](accessreviewscheduledefinition.md)          | Существует точно один **accessReviewScheduleDefinition,** связанный с каждым экземпляром. Это родительское расписание экземпляра, в котором создаются экземпляры для каждого повторения определения обзора и каждой группы, выбранной для проверки по определению. |
+| решения               |[accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) collection        | Каждый пользователь, рассмотренный в **accessReviewInstance,** имеет элемент решения, представляющий, были ли они утверждены, отклонены или еще не рассмотрены. |
 
 ## <a name="json-representation"></a>Представление JSON
 
