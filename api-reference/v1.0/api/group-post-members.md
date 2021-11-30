@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0e70de20cc0c3b23e57dc6f4cc3d83e900fe54d0
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: 685f534007e0b3a61da47cbcaf557ccf2a6ab313
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123595"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226454"
 ---
 # <a name="add-members"></a>Добавление участников
 
@@ -21,10 +21,9 @@ ms.locfileid: "61123595"
 Вы можете добавлять пользователей, контакты организации, cубъект-службы или другие группы. 
 
 > [!IMPORTANT]
-> + Вы можете добавлять пользователей только в группы, управляемые через облако.
+> + Можно добавить участников только в группы безопасности и Microsoft 365.
 > + Вы не можете добавлять группы безопасности в группы Microsoft 365.
 > + Вы не можете добавлять группы Microsoft 365 в группы безопасности или другие группы Microsoft 365.
-> + Этот API нельзя использовать для добавления участников в группу безопасности с поддержкой электронной почты.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,7 +45,7 @@ POST /groups/{group-id}/members/$ref
 
 | Заголовок       | Значение |
 |:---------------|:----------|
-| Авторизация  | Bearer {token}. Обязательный. |
+| Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type   | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Основной текст запроса
