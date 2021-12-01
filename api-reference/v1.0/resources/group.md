@@ -5,18 +5,18 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: dc05943b2f8c86e0e1d9bd48a99708b5f59c94bb
-ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
+ms.openlocfilehash: 66062398d1b641ffbd0519521fef4da8a992b00f
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61130187"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61223878"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
 Пространство имен: microsoft.graph
 
-Представляет группу Azure Active Directory (Azure AD), которая может быть группой Microsoft 365 или группой безопасности.
+Представляет группу Azure Active Directory (Azure AD), которая может быть группой Microsoft 365 или группой безопасности. Этот ресурс относится к открытому типу, который позволяет передавать другие свойства.
 
 Наследуется от [directoryObject](directoryobject.md).
 
@@ -56,9 +56,9 @@ ms.locfileid: "61130187"
 | [Обновление параметра](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Обновление объекта setting. |
 | [assignLicense](../api/group-assignlicense.md) | [group](group.md) | Добавление или удаление подписок группы. Можно также включать и отключать отдельные планы, связанные с подпиской. |
 | [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | Коллекция String | Проверка данной группы на членство в списке групп. Это транзитивная функция. |
-| [checkMemberObjects](../api/group-checkmemberobjects.md) | Коллекция String | Проверка участия в списке группы, роли каталога или объектах административных единиц. Эта функция транзитивна. |
+| [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | Коллекция String | Проверка участия в списке группы, роли каталога или объектах административных единиц. Эта функция транзитивна. |
 | [getMemberGroups](../api/directoryobject-getmembergroups.md) | Коллекция String | Возврат всех групп, в которых состоит эта группа. Это транзитивная функция. |
-| [getMemberObjects](../api/group-getmemberobjects.md) | Коллекция String | Возврат всех групп, в которых состоит эта группа. Это транзитивная функция. |
+| [getMemberObjects](../api/directoryobject-getmemberobjects.md) | Коллекция String | Возвращение всех групп, административных единиц или ролей каталога, в которых состоит группа. Это транзитивная функция. |
 | [renew](../api/group-renew.md) | Boolean | Обновление, продлевающее срок действия группы. Когда группа обновляется, срок ее действия продляется на количество дней, определенное политикой. |
 | [validateProperties](../api/group-validateproperties.md) | JSON | Проверка соответствия отображаемого имени или почтового псевдонима группы Microsoft 365 политикам именования. |
 | **Назначение ролей приложений** |||
@@ -147,7 +147,7 @@ ms.locfileid: "61130187"
 |onPremisesSecurityIdentifier|String|Содержит локальный идентификатор безопасности (SID) для локальной группы, синхронизированной с облаком. <br><br>Возвращается по умолчанию. Поддерживает `$filter` для значений `null`. Только для чтения. |
 |onPremisesSyncEnabled|Boolean|Значение `true` указывает, что эта группа синхронизируется из локального каталога. Значение `false` указывает, что эта группа ранее синхронизировалась из локального каталога, но синхронизация больше не выполняется. Значение **null** указывает, что этот объект никогда не синхронизировался из локального каталога (значение по умолчанию). <br><br>Возвращается по умолчанию. Только для чтения. Поддерживает `$filter` (`eq`, `ne`, `not`, `in` и `eq` по `null` значениям).|
 |preferredDataLocation|String|Предпочтительное расположение данных для группы Microsoft 365. По умолчанию группа наследует предпочтительное расположение данных создателя группы. Чтобы настроить это свойство, вызывающему пользователю должна быть назначена одна из указанных ниже [ролей Azure AD](/azure/active-directory/roles/permissions-reference). <br><ul><li> Глобальный администратор <li> Администратор учетных записей пользователей <li>Редактор каталогов <li> Администратор Exchange <li> Администратор SharePoint </ul><br/> Дополнительные сведения об этом свойстве см. в статье [OneDrive Online с поддержкой нескольких регионов](/sharepoint/dev/solution-guidance/multigeo-introduction). <br><br>Допускает значение NULL. Возвращается по умолчанию.|
-|preferredLanguage|String|Предпочтительный язык для группы Microsoft 365. Должен быть представлен в формате ISO 639-1, например `en-US`.<br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям). |
+|preferredLanguage|String|Предпочтительный язык для группы Microsoft 365. Должен быть представлен в формате ISO 639-1, например `en-US`.<br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` для значений `null`). |
 |proxyAddresses|Коллекция String| Адреса электронной почты для группы, ведущие в один почтовый ящик группы. Пример: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. Для фильтрации выражений по многозначным свойствам требуется оператор **any**. <br><br>Возвращается по умолчанию. Только для чтения. Значение null не допускается. Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 |renewedDateTime|DateTimeOffset| Метка времени последнего обновления группы. Не может изменяться непосредственно. Обновляется только при выполнении [действия обновления](../api/group-renew.md). Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. <br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`). Только для чтения.|
 |resourceBehaviorOptions|Коллекция объектов string|Определяет поведение группы, которое может быть задано для группы Microsoft 365 во время ее создания. Это можно сделать только в рамках операции создания (POST). Возможные значения: `AllowOnlyMembersToPost`, `HideGroupInOutlook`, `SubscribeNewGroupMembers`, `WelcomeEmailDisabled`. Дополнительные сведения см. в статье [Настройка вариантов поведения и подготовки групп Microsoft 365](/graph/group-set-options).|

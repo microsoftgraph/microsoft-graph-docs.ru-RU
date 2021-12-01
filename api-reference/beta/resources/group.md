@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 92ca0fead923984aada94fb92abd5b6876b0240e
-ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
+ms.openlocfilehash: 7b011d09483fc95b53dffac1f214991ddea38f91
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61130117"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226185"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -18,7 +18,9 @@ ms.locfileid: "61130117"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет группу Azure Active Directory (Azure AD), которая может быть группой Microsoft 365, командой в Microsoft Teams или группой безопасности. Наследуется от [directoryObject](directoryobject.md).
+Представляет группу Azure Active Directory (Azure AD), которая может быть группой Microsoft 365, командой в Microsoft Teams или группой безопасности. Этот ресурс относится к открытому типу, который позволяет передавать другие свойства.
+
+Наследуется от [directoryObject](directoryobject.md).
 
 Чтобы повысить производительность, операции [create](../api/group-post-groups.md), [get](../api/group-get.md) и [list](../api/group-list.md) возвращают только подмножество часто используемых свойств по умолчанию. Эти свойства _по умолчанию_ указаны в разделе [Свойства](#properties). Чтобы получить любые свойства, которые не возвращаются по умолчанию, укажите их в параметре запроса OData `$select`.
 
@@ -60,10 +62,10 @@ ms.locfileid: "61130117"
 | [Обновление параметра](../api/directorysetting-update.md) | [directorySetting](directorysetting.md) | Обновление объекта setting. |
 | [assignLicense](../api/group-assignlicense.md) | [group](group.md) | Добавление или удаление подписок группы. Можно также включать и отключать отдельные планы, связанные с подпиской. |
 | [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | Коллекция String | Проверка участия в списке групп. Это транзитивная функция. |
-| [checkMemberObjects](../api/group-checkmemberobjects.md) | Коллекция String | Проверка участия в списке группы, роли каталога или объектах административных единиц. Эта функция транзитивна. |
+| [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | Коллекция String | Проверка участия в списке группы, роли каталога или объектах административных единиц. Эта функция транзитивна. |
 | [evaluateDynamicMembership](../api/group-evaluatedynamicmembership.md) | [evaluateDynamicMembershipResult](evaluatedynamicmembershipresult.md) | Определите, может ли пользователь или устройство являться членом динамической группы. |
 | [getMemberGroups](../api/directoryobject-getmembergroups.md) | Коллекция String | Возврат всех групп, в которых состоит эта группа. Это транзитивная функция. |
-| [getMemberObjects](../api/group-getmemberobjects.md) | Коллекция String | Возвращение всех групп и административных единиц, в которых состоит группа. Это транзитивная функция. |
+| [getMemberObjects](../api/directoryobject-getmemberobjects.md) | Коллекция String | Возвращение всех групп и административных единиц, в которых состоит группа. Это транзитивная функция. |
 | [validateProperties](../api/group-validateproperties.md) | JSON | Проверка соответствия отображаемого имени или почтового псевдонима группы Microsoft 365 политикам именования. |
 | **Назначение ролей приложений** |||
 | [Перечисление appRoleAssignments](../api/group-list-approleassignments.md) | Коллекция [appRoleAssignment](approleassignment.md) | Получение приложений и ролей приложений, назначенных группе. |
@@ -137,7 +139,7 @@ ms.locfileid: "61130117"
 |infoCatalogs|Коллекция строк|Определяет сегменты сведений, назначенные группе. Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 |isSubscribedByMail|Логический|Указывает, подписан ли вошедший пользователь на получение бесед по электронной почте. Значение по умолчанию: `true`.<br><br>Возвращается только в `$select`. Поддерживается только для API получения группы (`GET /groups/{ID}`). |
 |licenseProcessingState|String|Указывает состояние назначения лицензии группы для всех участников группы. Возможные значения: `QueuedForProcessing`, `ProcessingInProgress` и `ProcessingComplete`.<br><br>Возвращается только с помощью оператора `$select`. Только для чтения. |
-|почта;|String|SMTP-адрес группы, например "serviceadmins@contoso.onmicrosoft.com". <br><br>Возвращается по умолчанию. Только для чтения. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям).|
+|почта;|String|SMTP-адрес группы, например "serviceadmins@contoso.onmicrosoft.com". <br><br>Возвращается по умолчанию. Только для чтения. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` для значений `null`).|
 |mailEnabled|Логический|Указывает, включена ли для этой группы поддержка почты. Обязательно.<br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not` и `eq` по `null` значениям).|
 |mailNickname|String|Почтовый псевдоним для группы (уникальный в организации). Максимальная длина: 64 символа. Это свойство может содержать только символы из [набора символов ASCII от 0 до 127](/office/vba/language/reference/user-interface-help/character-set-0127), за исключением следующих: ` @ () \ [] " ; : . <> , SPACE`. <br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`).|
 |membershipRule|String|Правило, определяющее участников этой группы, если группа является динамической (groupTypes содержит `DynamicMembership`). Дополнительные сведения о синтаксисе правила участия см. в [здесь](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/). <br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`). |
@@ -151,7 +153,7 @@ ms.locfileid: "61130117"
 |onPremisesSecurityIdentifier|String|Содержит локальный идентификатор безопасности (SID) для локальной группы, синхронизированной с облаком. <br><br>Возвращается по умолчанию. Поддерживает `$filter` для значений `null`. Только для чтения. |
 |onPremisesSyncEnabled|Boolean|Значение `true` указывает, что эта группа синхронизируется из локального каталога. Значение `false` указывает, что эта группа ранее синхронизировалась из локального каталога, но синхронизация больше не выполняется. Значение **null** указывает, что этот объект никогда не синхронизировался из локального каталога (значение по умолчанию). <br><br>Возвращается по умолчанию. Только для чтения. Поддерживает `$filter` (`eq`, `ne`, `not`, `in` и `eq` по `null` значениям). |
 |preferredDataLocation|String|Предпочтительное расположение данных для группы Microsoft 365. По умолчанию группа наследует предпочтительное расположение данных создателя группы. Чтобы настроить это свойство, вызывающему пользователю должна быть назначена одна из указанных ниже [ролей Azure AD](/azure/active-directory/roles/permissions-reference). <br><ul><li> Глобальный администратор <li> Администратор учетных записей пользователей <li>Редактор каталогов <li> Администратор Exchange <li> Администратор SharePoint </ul><br/> Дополнительные сведения об этом свойстве см. в статье [OneDrive Online с поддержкой нескольких регионов](/sharepoint/dev/solution-guidance/multigeo-introduction). <br><br>Допускает значение NULL. Возвращается по умолчанию.|
-|preferredLanguage|String|Предпочтительный язык для группы Microsoft 365. Должен быть представлен в формате ISO 639-1, например `en-US`.<br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям). |
+|preferredLanguage|String|Предпочтительный язык для группы Microsoft 365. Должен быть представлен в формате ISO 639-1, например `en-US`.<br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` для значений `null`). |
 |proxyAddresses|Коллекция String| Адреса электронной почты для группы, ведущие в один почтовый ящик группы. Пример: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. Для выражений фильтра в случае многозначных свойств требуется оператор **any**. <br><br>Возвращается по умолчанию. Только для чтения. Значение null не допускается. Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 |renewedDateTime|DateTimeOffset| Метка времени последнего обновления группы. Не может изменяться непосредственно. Обновляется только при выполнении [действия обновления](../api/grouplifecyclepolicy-renewgroup.md). Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. <br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`). Только для чтения.|
 |resourceBehaviorOptions|Коллекция объектов string|Определяет поведение группы, которое может быть задано для группы Microsoft 365 во время ее создания. Это можно сделать только в рамках операции создания (POST). Возможные значения: `AllowOnlyMembersToPost`, `HideGroupInOutlook`, `SubscribeNewGroupMembers`, `WelcomeEmailDisabled`. Дополнительные сведения см. в статье [Настройка вариантов поведения и подготовки групп Microsoft 365](/graph/group-set-options).|

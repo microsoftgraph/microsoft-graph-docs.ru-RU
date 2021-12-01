@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 6f9ff68deb309a05424740d8fcd6ff815511b3c2
-ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
+ms.openlocfilehash: c3fc25f8e4e584549c0a06c08f8d43dc640b90bb
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61130089"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61223063"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -18,7 +18,7 @@ ms.locfileid: "61130089"
 
 Представляет экземпляр приложения в каталоге. Наследуется от [directoryObject](directoryobject.md).
 
-Этот ресурс поддерживает отслеживание добавлений, удалений и обновлений с помощью [разностного запроса](/graph/delta-query-overview) с функцией [delta](../api/serviceprincipal-delta.md).
+Этот ресурс поддерживает отслеживание добавлений, удалений и обновлений с помощью [разностного запроса](/graph/delta-query-overview) с функцией [delta](../api/serviceprincipal-delta.md). Этот ресурс относится к открытому типу, который позволяет передавать другие свойства.
 
 ## <a name="methods"></a>Методы
 
@@ -54,9 +54,9 @@ ms.locfileid: "61130089"
 |[Перечисление memberOf](../api/serviceprincipal-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Получение групп, непосредственным участником которых является субъект-служба, из свойства навигации memberOf.|
 |[Перечисление транзитивных свойств memberOf](../api/serviceprincipal-list-transitivememberof.md) |Коллекция [directoryObject](directoryobject.md)| Перечисление групп, в которых участвует субъект-служба. Эта операция является транзитивной и включает группы, в которых состоит субъект-служба. |
 |[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|Коллекция String|Проверка участия в указанном списке групп.|
-|[checkMemberObjects](../api/serviceprincipal-checkmemberobjects.md)|Коллекция String|Проверка участия в указанном списке группы, роли каталога или объектах административных единиц.|
+|[checkMemberObjects](../api/directoryobject-checkmemberobjects.md)|Коллекция String|Проверка участия в указанном списке группы, роли каталога или объектах административных единиц.|
 |[getMemberGroups](../api/directoryobject-getmembergroups.md)|Коллекция String|Список групп, в которых участвует субъект-служба.|
-|[getMemberObjects](../api/serviceprincipal-getmemberobjects.md)|Коллекция String|Список групп и ролей каталога, в которых участвует субъект-служба.|
+|[getMemberObjects](../api/directoryobject-getmemberobjects.md)|Коллекция String|Получение списка групп, административных единиц и ролей каталога, в которых состоит субъект-служба.|
 |**Владельцы**| | |
 |[Список владельцев](../api/serviceprincipal-list-owners.md) |Коллекция [directoryObject](directoryobject.md)| Получение коллекции объектов owner.|
 |[Добавление владельца](../api/serviceprincipal-post-owners.md) |[directoryObject](directoryobject.md)| Создание владельца путем добавления в коллекцию владельцев.|

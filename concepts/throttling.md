@@ -4,12 +4,12 @@ description: Регулирование позволяет ограничить 
 author: davidmu1
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 38afc3388825b0b258bb51e6bcd6881600e1736f
-ms.sourcegitcommit: f7956d25472a55af03be83b6ab986a7149a7ac88
+ms.openlocfilehash: 082586ea7518df90b16bc2b2b2e0bafdfcc2779d
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2021
-ms.locfileid: "60270364"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61226472"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Руководство по регулированию Microsoft Graph
 
@@ -86,7 +86,7 @@ Retry-After: 2.128
 Шаблоны программирования, такие как постоянные опросы на ресурсе для проверки обновлений и регулярное сканирование коллекций ресурсов для проверки наличия новых или удаленных ресурсов, чаще ведут к регулированию приложений и снижению общей производительности. Вместо этого следует использовать [отслеживание изменений](delta-query-overview.md) и [уведомления об изменениях](webhooks.md), когда они доступны.
 
 >[!NOTE]
->Подробные сведения — в [рекомендациях по обнаружению файлов и определению изменений в масштабе](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online).
+>Подробные сведения — в [рекомендациях по обнаружению файлов и определению изменений в масштабе](/onedrive/developer/rest-api/concepts/scan-guidance).
 
 ## <a name="throttling-and-batching"></a>Регулирование и пакетная обработка
 
@@ -222,13 +222,13 @@ Microsoft Graph позволяет получать доступ к данным
 | GET | `applications/{id}/extensionProperties` | 2 | 0 |
 | GET | `contracts` | 3 | 0 |
 | POST | `directoryObjects/getByIds` |  3 | 0 |
-| GET | `domains/{id}/domainNameReferences` | 4  | 0 |
+| GET | `domains/{id}/domainNameReferences` | 4 | 0 |
 | POST | `getObjectsById` | 3 | 0 |
 | GET | `groups/{id}/members` | 3 | 0 |
 | GET | `groups/{id}/transitiveMembers` | 5 | 0 |
-| POST | `isMemberOf` | 4  | 0 |
-| POST | `me/checkMemberGroups` | 4  | 0 |
-| POST | `me/checkMemberObjects` | 4  | 0 |
+| POST | `isMemberOf` | 4 | 0 |
+| POST | `me/checkMemberGroups` | 4 | 0 |
+| POST | `me/checkMemberObjects` | 4 | 0 |
 | POST | `me/getMemberGroups` | 2 | 0 |
 | POST | `me/getMemberObjects` | 2 | 0 |
 | GET | `me/licenseDetails` | 2 | 0 |
@@ -293,7 +293,7 @@ Microsoft Graph позволяет получать доступ к данным
 
 | Тип запроса |  Ограничение на приложение по клиенту |
 | ------------ | ------------------------ |
-| Любой | 60 запросов за 60 секунд |
+| Любой | 5 запросов за 10 секунд |
 
 Указанные выше ограничения действуют для следующих ресурсов:
 
