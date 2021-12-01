@@ -5,16 +5,125 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: d91f7b7847d9c20465bbd507e59c882a337822b6
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 08d5cc4fca905c2b8ef442839e13752186417e5d
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225863"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241683"
 ---
 # <a name="enum-values"></a>Значения Enum
 
 Пространство имен: microsoft.graph
+
+### <a name="accesspackageassignmentfilterbycurrentuseroptions-values"></a>accessPackageAssignmentFilterByCurrentUserOptions
+
+|Member|
+|:---|
+|target|
+|createdBy|
+|unknownFutureValue|
+
+### <a name="accesspackageassignmentrequestfilterbycurrentuseroptions-values"></a>accessPackageAssignmentRequestFilterByCurrentUserOptions
+
+|Member|
+|:---|
+|target|
+|createdBy|
+|одобрение|
+|unknownFutureValue|
+
+### <a name="accesspackageassignmentstate-values"></a>значения accessPackageAssignmentState
+
+|Member|
+|:---|
+|доставка|
+|partiallyDelivered|
+|доставлено|
+|истек срок действия|
+|deliveryFailed|
+|unknownFutureValue|
+
+### <a name="accesspackagecatalogstate-values"></a>значения accessPackageCatalogState
+
+|Member|
+|:---|
+|неопубликованный|
+|опубликовано|
+|unknownFutureValue|
+
+### <a name="accesspackagecatalogtype-values"></a>значения accessPackageCatalogType
+
+|Member|
+|:---|
+|userManaged|
+|serviceDefault|
+|serviceManaged|
+|unknownFutureValue|
+
+### <a name="accesspackageexternaluserlifecycleaction-values"></a>значения accessPackageExternalUserLifecycleAction
+
+|Member|
+|:---|
+|Нет|
+|blockSignIn|
+|blockSignInAndDelete|
+|unknownFutureValue|
+
+### <a name="accesspackagefilterbycurrentuseroptions-values"></a>значения accessPackageFilterByCurrentUserOptions
+
+|Member|
+|:---|
+|allowedRequestor|
+|unknownFutureValue|
+
+### <a name="accesspackagerequeststate-values"></a>значения accessPackageRequestState
+
+|Member|
+|:---|
+|отправлено|
+|pendingApproval|
+|доставка|
+|доставлено|
+|deliveryFailed|
+|denied|
+|scheduled|
+|отменено|
+|partiallyDelivered|
+|unknownFutureValue|
+
+### <a name="accesspackagerequesttype-values"></a>значения accessPackageRequestType
+
+|Member|
+|:---|
+|notSpecified|
+|userAdd|
+|userUpdate|
+|userRemove|
+|adminAdd|
+|adminUpdate|
+|adminRemove|
+|systemAdd|
+|systemUpdate|
+|systemRemove|
+|onBehalfAdd|
+|unknownFutureValue|
+
+### <a name="accesspackagesubjecttype-values"></a>значения accessPackageSubjectType
+
+|Member|
+|:---|
+|notSpecified|
+|пользователь|
+|servicePrincipal|
+|unknownFutureValue|
+
+### <a name="connectedorganizationstate-values"></a>connectedOrganizationState
+
+|Member|
+|:---|
+|настроенный|
+|предложено|
 
 ### <a name="accessreviewinstancedecisionitemfilterbycurrentuseroptions-values"></a>accessReviewInstanceDecisionItemFilterByCurrentUserOptions 
 
@@ -1195,7 +1304,7 @@ Enum для серьезности оповещений.
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| почта;   | 1     | Угроза почты.            |
+| mail;   | 1     | Угроза почты.            |
 | url    | 2     | УГРОЗА URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 
@@ -1468,7 +1577,7 @@ Enum для серьезности оповещений.
 
 | Member                |
 |:----------------------|
-| string                |
+| String                |
 | логический               |
 | int64                 |
 | stringCollection      |

@@ -5,12 +5,12 @@ author: BarrySh
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 2620dfc2a49238e5f01e46ba17d23714d9dcbaee
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 46994201f7b1093d42e6cefb26692454ca3ee04d
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61027081"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241669"
 ---
 # <a name="update-permission"></a>Обновление разрешения
 Пространство имен: microsoft.graph
@@ -39,7 +39,7 @@ PATCH /sites/{sitesId}/permissions/{permissionId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -105,8 +105,15 @@ Content-Type: application/json
 
 {
     "id": "2",
+    "@deprecated.GrantedToIdentities": "GrantedToIdentities has been deprecated. Refer to GrantedToIdentitiesV2",
     "roles": ["read"],
     "grantedToIdentities": [{
+      "application": {
+        "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+        "displayName": "Fabrikam Dashboard App"
+      }
+    }],
+    "grantedToIdentitiesV2": [{
       "application": {
         "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
         "displayName": "Fabrikam Dashboard App"

@@ -3,15 +3,15 @@ author: JeremyKelley
 description: Отправляет приглашение к совместному использованию ресурса DriveItem.
 ms.date: 09/10/2017
 title: Отправка приглашения для доступа к элементу
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 00252b35b786d467848ed417d9a80dab2b165bc7
-ms.sourcegitcommit: d014f72cf2cd130bedb02651092c0be12967b679
+ms.openlocfilehash: 2a47a63186026dc3790c5231924a6beb6d2df28f
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50473450"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241480"
 ---
 # <a name="send-a-sharing-invitation"></a>Отправка приглашения к совместному использованию
 
@@ -69,8 +69,8 @@ POST /users/{userId}/drive/items/{itemId}/invite
 | requireSignIn    | Boolean                                         | Указывает, куда должен зайти получатель приглашения, чтобы просмотреть элемент, к которому предоставлен общий доступ.            |
 | sendInvitation   | Boolean                                         | Указывает, создано ли электронное письмо или запись (false) или разрешение (true).            |
 | roles            | Collection(String)                              | Указывают роли, которые предоставляются получателям приглашения на доступ.                         |
-| expirationDateTime | DateTimeOffset                       | Укажите dateTime, по истечении которого истекает срок действия разрешения. Доступно на персональных учетных записях OneDrive для бизнеса, SharePoint и Премиум OneDrive.
-| password           | Строка                         | Пароль, установленный на приглашении создателем. Необязательный и только OneDrive Personal
+| expirationDateTime | DateTimeOffset                       | Укажите dateTime, по истечении которого истекает срок действия разрешения. Доступно на OneDrive для бизнеса, SharePoint и премиум-OneDrive учетных записей.
+| password           | Строка                         | Пароль, установленный на приглашении создателем. Необязательный и OneDrive только личный
 
 ## <a name="example"></a>Пример
 
@@ -92,7 +92,7 @@ Content-type: application/json
 {
   "recipients": [
     {
-      "email": "ryan@contoso.org"
+      "email": "robin@contoso.org"
     }
   ],
   "message": "Here's the file that we're collaborating on.",
@@ -135,16 +135,28 @@ Content-type: application/json
 {
   "value": [
     {
+      "@deprecated.GrantedTo": "GrantedTo has been deprecated. Refer to GrantedToV2",
       "grantedTo": {
         "user": {
-          "displayName": "Ryan Gregg",
+          "displayName": "Robin Danielsen",
           "id": "42F177F1-22C0-4BE3-900D-4507125C5C20"
+        }
+      },
+      "grantedToV2": {
+        "user": {
+          "id": "42F177F1-22C0-4BE3-900D-4507125C5C20",
+          "displayName": "Robin Danielsen"
+        },
+        "siteUser": {
+          "id": "1",
+          "displayName": "Robin Danielsen",
+          "loginName": "Robin Danielsen"
         }
       },
       "hasPassword": true,
       "id": "CCFC7CA3-7A19-4D57-8CEF-149DB9DDFA62",
       "invitation": {
-        "email": "ryan@contoso.com",
+        "email": "robin@contoso.com",
         "signInRequired": true
       },
       "roles": [ "write" ],
@@ -172,13 +184,13 @@ Content-type: application/json
     {
       "grantedTo": {
         "user": {
-          "displayName": "John Adams",
+          "displayName": "Helga Hammeren",
           "id": "5D8CA5D0-FFF8-4A97-B0A6-8F5AEA339681"
         }
       },
       "id": "1EFG7CA3-7A19-4D57-8CEF-149DB9DDFA62",
       "invitation": {
-        "email": "adams@contoso.com",
+        "email": "helga@contoso.com",
         "signInRequired": true
       },
       "roles": [ "write" ],
@@ -195,13 +207,13 @@ Content-type: application/json
     {
       "grantedTo": {
         "user": {
-          "displayName": "Ryan Gregg",
+          "displayName": "Robin Danielsen",
           "id": "42F177F1-22C0-4BE3-900D-4507125C5C20"
         }
       },
       "id": "CCFC7CA3-7A19-4D57-8CEF-149DB9DDFA62",
       "invitation": {
-        "email": "ryan@contoso.com",
+        "email": "robin@contoso.com",
         "signInRequired": true
       },
       "roles": [ "write" ],
@@ -230,7 +242,7 @@ Content-type: application/json
 
 ## <a name="error-responses"></a>Ответы с ошибками
 
-Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
+Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Отклики ошибок][error-response].
 
 
 [error-response]: /graph/errors

@@ -4,14 +4,14 @@ ms.date: 09/10/2017
 title: Изменение разрешений общего доступа
 ms.localizationpriority: medium
 description: В этой статье рассказывается, как обновить свойства разрешения на общий доступ путем обновления ресурса разрешения.
-ms.prod: ''
+ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 60d59547d77d30c9be267cf2d880a8c4f3917e78
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e695fe12875447c8ee0130aabfe556a84d6e1813
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072835"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241417"
 ---
 # <a name="update-sharing-permission"></a>Обновление разрешения на общий доступ
 
@@ -60,7 +60,7 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 | Тип разрешения        | Свойство | Тип              | Описание                   |
 |:-----------------------|:---------|:------------------|:------------------------------|
-| User                   | roles    | Набор строк | Массив типов разрешений. |
+| Пользователь                   | roles    | Набор строк | Массив типов разрешений. |
 | Анонимный обмен ссылкой | expirationDateTime | DateTimeOffset | Формат yyyy-MM-ddTHH:mm:ssZ dateTimeOffset на время действия разрешения. |
 
 ### <a name="remarks"></a>Замечания
@@ -118,10 +118,22 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@deprecated.GrantedTo": "GrantedTo has been deprecated. Refer to GrantedToV2",
   "grantedTo": {
     "user": {
-      "displayName": "Ryan Gregg",
+      "displayName": "Robin Danielsen",
       "id": "efee1b77-fb3b-4f65-99d6-274c11914d12"
+    }
+  },
+  "grantedToV2": {
+    "user": {
+      "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+      "displayName": "Robin Danielsen"
+    },
+    "siteUser": {
+      "id": "1",
+      "displayName": "Robin Danielsen",
+      "loginName": "Robin Danielsen"
     }
   },
   "id": "1",

@@ -1,0 +1,101 @@
+---
+title: ПодключениеОрганизация
+description: Извлечение свойств и связей объекта connectedorganization.
+author: markwahl-msft
+ms.localizationpriority: medium
+ms.prod: governance
+doc_type: apiPageType
+ms.openlocfilehash: a02e50c9298c16ce2b60c1cba3766b55712b7f29
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61242974"
+---
+# <a name="get-connectedorganization"></a>ПодключениеОрганизация
+
+Пространство имен: microsoft.graph
+
+
+Извлечение свойств и связей объекта [connectedOrganization.](../resources/connectedorganization.md)
+
+## <a name="permissions"></a>Разрешения
+
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
+|:---|:---|
+| Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
+
+## <a name="http-request"></a>HTTP-запрос
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /identityGovernance/entitlementManagement/connectedOrganizations/{connectedOrganizationId}
+```
+
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+
+Этот метод поддерживает параметр `$select` запроса OData для настройки ответа. Например, чтобы получить только источники удостоверений, добавьте `$select=identitySources` . Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+
+## <a name="request-headers"></a>Заголовки запросов
+
+|Имя|Описание|
+|:---|:---|
+|Авторизация|Bearer {токен}. Обязательный.|
+
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
+
+## <a name="response"></a>Отклик
+
+В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект connectedOrganization](../resources/connectedorganization.md) в тексте ответа.
+
+## <a name="examples"></a>Примеры
+
+### <a name="request"></a>Запрос
+<!-- {
+  "blockType": "request",
+  "name": "get_connectedorganization"
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/connectedOrganizations/04e7fa5f-fa5f-04e7-5ffa-e7045ffae704
+```
+
+
+### <a name="response"></a>Отклик
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.connectedOrganization"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "id": "04e7fa5f-fa5f-04e7-5ffa-e7045ffae704",
+  "displayName": "Wingtip Toys",
+  "description": "Wingtip Toys",
+  "createdDateTime": "2020-05-13T15:18:04.81Z",
+  "modifiedDateTime": "2020-05-13T15:18:04.81Z",
+  "identitySources": [
+    {
+      "@odata.type": "microsoft.graph.azureActiveDirectoryTenant",
+      "displayName": "Wingtip Toys Co"
+    }
+  ],
+  "state": "configured"
+}
+```
+
+
+

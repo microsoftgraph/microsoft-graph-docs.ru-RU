@@ -4,12 +4,12 @@ description: Уведомления об изменениях можно пол�
 author: Jumaodhiss
 ms.localizationpriority: high
 ms.custom: graphiamtop20, devx-track-azurecli
-ms.openlocfilehash: 59caceb3b56853b9bc4d20fa97cfc035b1a3ea0c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9e61d8352c2566b902fea045bc69eff5a91d0a8e
+ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59134068"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "61225982"
 ---
 # <a name="get-change-notifications-delivered-in-different-ways"></a>Получение уведомлений об изменениях разными способами
 
@@ -127,7 +127,7 @@ echo "Notification Url:\n${notificationUrl}"
 
 #### <a name="creating-the-subcription"></a>Создание подписки
 
-Подписки на изменение уведомлений с помощью концентраторов событий почти идентичны уведомлениям об изменениях с помощью веб-перехватчиков. Основное отличие заключается в том, что для доставки уведомлений используют концентраторы событий. Другие операции сходны, в том числе [создание подписки](/graph/api/subscription-post-subscriptions?view=graph-rest-beta).  
+Подписки на изменение уведомлений с помощью концентраторов событий почти идентичны уведомлениям об изменениях с помощью веб-перехватчиков. Основное отличие заключается в том, что для доставки уведомлений используют концентраторы событий. Другие операции сходны, в том числе [создание подписки](/graph/api/subscription-post-subscriptions).  
 
 Основное отличие в ходе создания подписки будет заключаться в значении **notificationUrl,**. Необходимо настроить его на `EventHub:https://<azurekeyvaultname>.vault.azure.net/secrets/<secretname>?tenantId=<domainname>` со следующими значениями:
 
@@ -168,10 +168,11 @@ echo "Notification Url:\n${notificationUrl}"
 
 Возможно, в вашем клиенте нет субъекта-службы **отслеживания изменений в Microsoft Graph**. Это зависит от того, когда был создан клиент и от административных операций. Чтобы устранить эту проблему, выполните [следующий запрос](https://developer.microsoft.com/en-us/graph/graph-explorer?request=servicePrincipals&method=POST&version=v1.0&GraphUrl=https://graph.microsoft.com&requestBody=eyJhcHBJZCI6IjBiZjMwZjNiLTRhNTItNDhkZi05YTgyLTIzNDkxMGM0YTA4NiJ9) в [проводнике Microsoft Graph](https://developer.microsoft.com/en-us/graph/graph-explorer).
 
-Подробности запроса:
+Сведения о запросе: `0bf30f3b-4a52-48df-9a82-234910c4a086` — глобальный идентификатор приложения для отслеживания изменений в Microsoft Graph.
 
 ```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals
+
 {
     "appId": "0bf30f3b-4a52-48df-9a82-234910c4a086"
 }
@@ -181,12 +182,11 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals
 
 > **Примечание.** Этот API-интерфейс действует только для учебной или рабочей учетной записи, но не в личной учетной записи. Убедитесь, что вы вошли в систему через учетную запись в своем домене.
 
-Кроме того, вы можете использовать данный сценарий [Azure Active Directory PowerShell](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0), чтобы добавлять недостающие субъекты-службы.
+Кроме того, для добавления отсутствующего субъекта-службы можно использовать командлет PowerShell [New-MgServicePrincipal](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true) в Microsoft Graph. Ниже приведен пример сценария.
 
 ```PowerShell
-Connect-AzureAD -TenantId <tenant-id>
-# replace tenant-id by the id of your tenant.
-New-AzureADServicePrincipal -AppId 0bf30f3b-4a52-48df-9a82-234910c4a086
+Connect-Graph -Scopes "Application.ReadWrite.All"
+New-MgServicePrincipal -AppId "0bf30f3b-4a52-48df-9a82-234910c4a086"
 ```
 
 ## <a name="next-steps"></a>Дальнейшие действия

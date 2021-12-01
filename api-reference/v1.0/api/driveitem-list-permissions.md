@@ -6,12 +6,12 @@ ms.localizationpriority: medium
 ms.prod: sharepoint
 description: Список эффективных разрешений общего доступа на driveItem.
 doc_type: apiPageType
-ms.openlocfilehash: dd18d5874be75d76fbd724b2c52e7b84bede420e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e32ac761ba3d89f0196c47bbc34fa3b1ba6c2a7e
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59063449"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241452"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>Разрешения общего доступа к списку на driveItem
 
@@ -23,7 +23,7 @@ ms.locfileid: "59063449"
 
 Коллекция разрешений включает потенциально конфиденциальные данные и может быть доступна не для каждого отправителя вызовов.
 
-* Для владельца элемента возвращаются все разрешения совместного доступа. Это относится и к совладельцам.
+* Все разрешения совместного доступа будут возвращены владельцу элемента. Включает совладельцев.
 * Если вызов отправляет не владелец, возвращаются только те разрешения, которые относятся к отправителю вызова.
 * Свойства разрешений совместного доступа, содержащие секреты (например, `shareId` и `webUrl`), возвращаются только для тех пользователей, которые могут создать такое разрешение.
 
@@ -122,11 +122,23 @@ Content-Type: application/json
     },
     {
       "id": "2",
+      "@deprecated.GrantedTo": "GrantedTo has been deprecated. Refer to GrantedToV2",
       "roles": ["write"],
       "grantedTo": {
         "user": {
           "id": "5D33DD65C6932946",
-          "displayName": "John Doe"
+          "displayName": "Robin Danielsen"
+        }
+      },
+      "grantedToV2": {
+        "user": {
+          "id": "5D33DD65C6932946",
+          "displayName": "Robin Danielsen"
+        },
+        "siteUser": {
+          "id": "1",
+          "displayName": "Robin Danielsen",
+          "loginName": "Robin Danielsen"
         }
       },
       "inheritedFrom": {

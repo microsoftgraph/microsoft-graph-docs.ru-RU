@@ -3,15 +3,15 @@ author: JeremyKelley
 description: В этой статье рассказывается, как обновить свойства разрешения на общий доступ путем обновления ресурса разрешения.
 ms.date: 09/10/2017
 title: Изменение разрешений общего доступа
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
-ms.prod: ''
-ms.openlocfilehash: 56f9d600a36fb7b94757e6c783e2d397306e2de0
-ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
+ms.prod: sharepoint
+ms.openlocfilehash: b249d72a2ec4c774443987a6d01e16d10a782ec9
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790687"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241354"
 ---
 # <a name="update-sharing-permission"></a>Обновление разрешения на общий доступ
 
@@ -62,13 +62,13 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 | Тип разрешения        | Свойство | Тип              | Описание                   |
 |:-----------------------|:---------|:------------------|:------------------------------|
-| User                   | roles    | Набор строк | Массив типов разрешений. |
-| Ссылка для анонимного общего доступа | expirationDateTime | DateTimeOffset | Формат y-MM-ddTHH:mm:ssZ dateTimeOffset в течение срока действия разрешения. |
+| Пользователь                   | roles    | Набор строк | Массив типов разрешений. |
+| Анонимный обмен ссылкой | expirationDateTime | DateTimeOffset | Формат yyyy-MM-ddTHH:mm:ssZ dateTimeOffset на время действия разрешения. |
 
-### <a name="remarks"></a>Примечания
+### <a name="remarks"></a>Замечания
 Неподтверченные изменения разрешений включают следующие:
-- Организационные ссылки для общего доступа
-- Ссылки для общего доступа людей
+- Ссылки на организационный общий доступ
+- Люди, которые делятся ссылками
 
 ## <a name="response"></a>Отклик
 
@@ -120,10 +120,22 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@deprecated.GrantedTo": "GrantedTo has been deprecated. Refer to GrantedToV2",
   "grantedTo": {
     "user": {
-      "displayName": "Ryan Gregg",
+      "displayName": "Robin Danielsen",
       "id": "efee1b77-fb3b-4f65-99d6-274c11914d12"
+    }
+  },
+  "grantedToV2": {
+    "user": {
+      "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+      "displayName": "Robin Danielsen"
+    },
+    "siteUser": {
+      "id": "1",
+      "displayName": "Robin Danielsen",
+      "loginName": "Robin Danielsen"
     }
   },
   "id": "1",
