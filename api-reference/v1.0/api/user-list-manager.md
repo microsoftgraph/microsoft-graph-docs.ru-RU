@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: cabf3b87096ad76b26f9e23ece52dac625da91d2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e7234d8ed08888d650a3df6aeed35ce75562dcad
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61008453"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241606"
 ---
 # <a name="list-manager"></a>Получение руководителя
 
@@ -53,15 +53,14 @@ GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 >**Примечание.** 
 > + Значение `n` параметра `$levels` может быть `max` (для возврата всех руководителей) или числом от 1 до 1000.  
 > + Если параметр `$levels` не указан, возвращается только непосредственный руководитель.  
-> + Вы можете указать `$select` в параметре `$expand`, чтобы выбрать свойства отдельных руководителей. Параметр `$levels` является обязательным: `$expand=manager($levels=max;$select=id,displayName)`
-> + Чтобы выбрать свойства расширенного диспетчера, в запрос следует добавить параметр `$count=true`, а также заголовок: `ConsistencyLevel=eventual`. В примере 2 показано, как это сделать.
+> + Вы можете указать `$select` в параметре `$expand`, чтобы выбрать свойства отдельных руководителей. Параметр `$levels` необходим: `$expand=manager($levels=max;$select=id,displayName)`.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Заголовок       | Значение|
 |:-----------|:------|
-| Авторизация  | Bearer {token}. Обязательный.  |
-| ConsistencyLevel | необязательный. Требуется, если запрос содержит параметр `$expand=manager($levels=max)`. |
+| Авторизация  | Bearer {токен}. Обязательный.  |
+| ConsistencyLevel | необязательный. Требуется, когда запрос включает строку запроса `$count=true`. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -134,12 +133,11 @@ Content-type: application/json
 
 ### <a name="example-2-get-manager-chain-up-to-the-root-level"></a>Пример 2. Получение цепочкой руководителей до корневого уровня
 
-Ниже показан пример запроса для получения цепочки руководителей до корневого уровня.
+Ниже показан пример запроса для получения цепочки руководителей до корневого уровня. Этот запрос требует, чтобы заголовок **ConsistencyLevel** был установлен на `eventual`, поскольку в запросе присутствует строка запроса `$count=true`. Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
 
 #### <a name="request"></a>Запрос
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_transitive_managers"
@@ -148,11 +146,6 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/me?$expand=manager($levels=max;$select=id,displayName)&$select=id,displayName&$count=true
 ConsistencyLevel: eventual
 ```
-# <a name="go"></a>[Перейти](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-transitive-managers-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 #### <a name="response"></a>Отклик
