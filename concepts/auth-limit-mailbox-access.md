@@ -4,12 +4,12 @@ description: Чтобы ограничить область разрешений
 author: abheek-das
 ms.localizationpriority: high
 ms.prod: applications
-ms.openlocfilehash: 8649f5736d24327c242f82228c9f9daae6fdc997
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 22a0c5e2bcd257346746c2b4fc72eae9d28ba573
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59028746"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241592"
 ---
 # <a name="limiting-application-permissions-to-specific-exchange-online-mailboxes"></a>Ограничение разрешений для приложений с указанием определенных почтовых ящиков Exchange Online 
 
@@ -46,7 +46,7 @@ ms.locfileid: "59028746"
     ```
     В результате выполнения этой команды будет указано, имеет ли приложение доступ к почтовому ящику пользователя User1.
 
->**Примечание. Чтобы изменения политик доступа приложения вступили в силу в вызовах API Microsoft Graph REST, может потребоваться до 30 минут.**
+>**Примечание.** Изменение политик доступа к приложениям может занять более 1 часа, чтобы затронуть вызовы REST API Microsoft Graph, даже если `Test-ApplicationAccessPolicy` показывает положительные результаты.
 
 ## <a name="supported-permissions-and-additional-resources"></a>Поддерживаемые разрешения и дополнительные ресурсы
 
