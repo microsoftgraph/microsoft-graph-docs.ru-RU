@@ -4,12 +4,12 @@ description: Объекты каталога Azure AD поддерживают �
 author: Licantrop0
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 2b9c95961be57152c6d3bd885351b52c48b7f7a8
-ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
+ms.openlocfilehash: 95e7b4650bdca66f824849033c7583ff9eaa9d48
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61130032"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266298"
 ---
 # <a name="advanced-query-capabilities-on-azure-ad-directory-objects"></a>Расширенные возможности запросов для объектов каталога Azure AD
 
@@ -22,10 +22,9 @@ ms.locfileid: "61130032"
 + Используйте параметр запроса `$filter` с оператором `eq`. Этот запрос будет работать по умолчанию, то есть этот запрос не требует расширенных параметров запроса.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_users_enabled"
 } -->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
 ```
@@ -33,10 +32,9 @@ GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
 + Используйте параметр запроса `$filter` с оператором `ne`. Этот запрос не поддерживается по умолчанию, поскольку оператор `ne` поддерживается только в расширенных запросах. Поэтому необходимо добавить заголовок **ConsistencyLevel**, для которого должно быть указано значение `eventual`*, а также* использовать строку запроса `$count=true`.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_users_not_enabled"
 } -->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
 ConsistencyLevel: eventual
@@ -44,15 +42,15 @@ ConsistencyLevel: eventual
 
 Эти расширенные возможности запросов поддерживаются только для следующих подмножеств объектов каталога Azure Active Directory и их взаимосвязей:
 
-| API / Объект                                                                    | Взаимосвязи                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Административные единицы](/graph/api/resources/administrativeunit)           | <li>[члены](/graph/api/administrativeunit-list-members)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| [Приложения](/graph/api/resources/application)                          | <li>[владельцы](/graph/api/application-list-owners)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [Контакты](/graph/api/resources/orgContact)                                  | <li>[memberOf](/graph/api/orgcontact-list-memberof)<li> [transitiveMemberOf](/graph/api/orgcontact-list-transitiveMemberOf)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| [Устройства](/graph/api/resources/device)                                    | <li>[memberOf](/graph/api/device-list-memberof) <li> [transitiveMemberOf](/graph/api/device-list-transitivememberof) <li> [registeredUsers](/graph/api/device-list-registeredusers) <li> [registeredOwners](/graph/api/device-list-registeredowners)                                                                                                                                                                                                                                                                                                                                                             |
-| [Группы](/graph/api/resources/group)                                      | <li>[члены](/graph/api/group-list-members) <li> [transitiveMembers](/graph/api/group-list-transitivemembers) <li> [memberOf](/graph/api/group-list-memberof) <li> [transitiveMemberOf](/graph/api/group-list-transitivememberof) <li> [владельцы](/graph/api/group-list-owners) <li> [appRoleAssignments](/graph/api/group-list-approleassignments)                                                                                                                                                                                                                                                                       |
-| [Субъекты-службы](/graph/api/resources/serviceprincipal)               | <li>[memberOf](/graph/api/serviceprincipal-list-memberof), <li>[transitiveMemberOf](/graph/api/serviceprincipal-list-transitivememberof) <li> [appRoleAssignments](/graph/api/serviceprincipal-list-approleassignments) <li> [appRoleAssignmentsTo](/graph/api/serviceprincipal-list-approleassignedto) <li> [oAuth2PermissionGrant](/graph/api/serviceprincipal-list-oauth2permissiongrants)                                                                                                                                                                                                                 |
-| [Пользователь](/graph/api/resources/user)                                         | <li>[memberOf](/graph/api/user-list-memberof) <li> [transitiveMemberOf](/graph/api/user-list-transitivememberof)<li> [ownedObjects](/graph/api/user-list-ownedobjects) <li> [registeredDevices](/graph/api/user-list-registereddevices) <li> [ownedDevices](/graph/api/user-list-owneddevices) <li> [transitiveManagers](/graph/api/user-list-manager) <li> [directReports](/graph/api/user-list-directreports) <li> [transitiveReports](/graph/api/user-get-transitivereports) <li> [appRoleAssignments](/graph/api/user-list-approleassignments) <li> [oAuth2PermissionGrant](/graph/api/user-list-oauth2permissiongrants) |
+| Объект                                                         | Связи                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Административная единица](/graph/api/resources/administrativeunit) | <li>[члены](/graph/api/administrativeunit-list-members)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| [Приложение](/graph/api/resources/application)                | <li>[владельцы](/graph/api/application-list-owners)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [Устройство](/graph/api/resources/device)                          | <li>[memberOf](/graph/api/device-list-memberof) <li>[transitiveMemberOf](/graph/api/device-list-transitivememberof) <li>[registeredUsers](/graph/api/device-list-registeredusers) <li>[registeredOwners](/graph/api/device-list-registeredowners)                                                                                                                                                                                                                                                                                                                                                                   |
+| [Группа](/graph/api/resources/group)                            | <li>[члены](/graph/api/group-list-members) <li>[transitiveMembers](/graph/api/group-list-transitivemembers) <li>[memberOf](/graph/api/group-list-memberof) <li>[transitiveMemberOf](/graph/api/group-list-transitivememberof) <li>[владельцы](/graph/api/group-list-owners) <li>[appRoleAssignments](/graph/api/group-list-approleassignments)                                                                                                                                                                                                                                                                       |
+| [Контакты организации](/graph/api/resources/orgContact)                     | <li>[memberOf](/graph/api/orgcontact-list-memberof) <li>[transitiveMemberOf](/graph/api/orgcontact-list-transitiveMemberOf)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| [Субъект-служба](/graph/api/resources/serviceprincipal)     | <li>[memberOf](/graph/api/serviceprincipal-list-memberof) <li>[transitiveMemberOf](/graph/api/serviceprincipal-list-transitivememberof) <li>[appRoleAssignments](/graph/api/serviceprincipal-list-approleassignments) <li>[appRoleAssignmentsTo](/graph/api/serviceprincipal-list-approleassignedto) <li>[oAuth2PermissionGrant](/graph/api/serviceprincipal-list-oauth2permissiongrants)                                                                                                                                                                                                                           |
+| [Пользователь](/graph/api/resources/user)                              | <li>[memberOf](/graph/api/user-list-memberof) <li>[transitiveMemberOf](/graph/api/user-list-transitivememberof)<li>[ownedObjects](/graph/api/user-list-ownedobjects) <li>[registeredDevices](/graph/api/user-list-registereddevices) <li>[ownedDevices](/graph/api/user-list-owneddevices) <li>[transitiveManagers](/graph/api/user-list-manager) <li>[directReports](/graph/api/user-list-directreports) <li>[transitiveReports](/graph/api/user-get-transitivereports) <li>[appRoleAssignments](/graph/api/user-list-approleassignments) <li>[oAuth2PermissionGrant](/graph/api/user-list-oauth2permissiongrants) |
 
 В следующей таблице приведены сценарии запросов для объектов каталога, поддерживаемые только в расширенных запросах:
 
@@ -107,10 +105,19 @@ ConsistencyLevel: eventual
 
 Подсчет объектов каталога поддерживается только с использованием расширенных параметров запросов. Если заголовок `ConsistencyLevel=eventual` не указан, запрос возвращает ошибку, когда используется сегмент URL-адреса `$count`, или автоматически игнорирует параметр запроса `$count` (`?$count=true`), если он используется.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_users_count_bad"
+} -->
 ```http
 https://graph.microsoft.com/v1.0/users/$count
 ```
 
+<!-- {
+  "blockType": "response",
+  "@odata.type": "odata.error",
+  "expectError": true
+} -->
 ```json
 {
     "error": {
@@ -127,6 +134,10 @@ https://graph.microsoft.com/v1.0/users/$count
 
 Для объектов каталога `$search` поддерживается только в расширенных запросах. Если заголовок **ConsistencyLevel** не указан, запрос возвращает ошибку.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_applications_search_displayName"
+} -->
 ```http
 https://graph.microsoft.com/v1.0/applications?$search="displayName:Browser"
 ```
@@ -147,6 +158,10 @@ https://graph.microsoft.com/v1.0/applications?$search="displayName:Browser"
 
 Если свойство или параметр запроса в URL-адресе поддерживаются только в расширенных запросах, но отсутствует заголовок **ConsistencyLevel** или строка запроса `$count=true`, то запрос возвращает ошибку.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_users_filer_endsWith"
+} -->
 ```http
 https://graph.microsoft.com/v1.0/users?$filter=endsWith(mail,'@outlook.com')
 ```
@@ -167,8 +182,12 @@ https://graph.microsoft.com/v1.0/users?$filter=endsWith(mail,'@outlook.com')
 
 Если свойство не проиндексировано для поддержки параметра запроса, даже если указаны расширенные параметры запроса, то запрос возвращает ошибку.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_groups_unindexed_bad"
+} -->
 ```http
-https://graph.microsoft.com/v1.0/users?$filter=id ge '398164b1-5196-49dd-ada2-364b49f99b27'&$count=true
+https://graph.microsoft.com/beta/groups?$filter=createdDateTime ge 2021-11-01&$count=true
 ConsistencyLevel: eventual
 ```
 
@@ -186,7 +205,9 @@ ConsistencyLevel: eventual
 }
 ```
 
-При этом необходимо отметить, что указанные в запросе параметры могут просто не сработать. Это может произойти, если не поддерживаются либо сами параметры, либо их сочетание. В таких случаях необходимо проверить возвращенные запросом данные и определить, дали ли указанные параметры запроса желаемый результат. В следующем примере параметр `@odata.count` отсутствует, даже если запрос успешно выполняется.
+При этом необходимо отметить, что указанные в запросе параметры могут просто не сработать.
+Это может произойти, если не поддерживаются либо сами параметры, либо их сочетание.
+В таких случаях необходимо проверить возвращенные запросом данные и определить, дали ли указанные параметры запроса желаемый результат. В следующем примере параметр `@odata.count` отсутствует, даже если запрос успешно выполняется.
 
 ```http
 https://graph.microsoft.com/v1.0/users?$count=true
@@ -212,5 +233,5 @@ Content-type: application/json
 
 + [Настройка откликов с помощью параметров запроса](/graph/query-parameters)
 + [Ограничения параметров запроса](known-issues.md#some-limitations-apply-to-query-parameters)
-+ [Использование параметра запроса $search для сопоставления с условием поиска](/graph/search-query-parameter)
++ [Использование параметра запроса $search для сопоставления с условием поиска](/graph/search-query-parameter#using-search-on-directory-object-collections)
 + [Обзор расширенных возможностей запроса для объектов каталога Azure AD с помощью SDK .NET](https://github.com/microsoftgraph/dotnet-aad-query-sample/)

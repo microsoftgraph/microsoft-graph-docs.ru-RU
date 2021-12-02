@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 963fb9c2c4ef7b22da2f04526f2c84c66b60af0f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d55cb512f7553372f1c0f9663b31af7c6d7134a2
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60984380"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266168"
 ---
 # <a name="list-excludes-collection-of-permissiongrantpolicy"></a>Список исключает коллекцию разрешенийGrantPolicy
 
@@ -43,7 +43,7 @@ GET /policies/permissionGrantPolicies/{id}/excludes
 
 | Имя           | Описание                |
 |:---------------|:---------------------------|
-| Авторизация  | Bearer {token}. Обязательный.  |
+| Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -57,7 +57,7 @@ GET /policies/permissionGrantPolicies/{id}/excludes
 
 ### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса на  извлечение исключенных наборов условий встроенной политики предоставления `microsoft-application-admin` разрешений. Эта политика предоставления разрешений включает все делегированные разрешения и все разрешения приложений, за исключением разрешений приложений для Microsoft Graph и разрешений приложений для Azure AD Graph.
+Ниже приводится пример запроса на  извлечение исключенных наборов условий встроенной политики предоставления `microsoft-application-admin` разрешений. Эта политика предоставления разрешений включает все делегированные разрешения и все разрешения приложений, за исключением разрешений приложений для Microsoft Graph и разрешений приложений для Azure Active Directory Graph.
 
 
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/v1.0/policies/permissionGrantPolicies/microsoft-
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

@@ -2,15 +2,15 @@
 title: Get transitiveReports для пользователя
 description: Получите количество транзитных отчетов для пользователя.
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 5d04b1240c54b186a2e5f5cfb77f651e032f1eda
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: 477adec71ced518708a6b976972a93b480447783
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53316610"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266189"
 ---
 # <a name="get-transitivereports-for-a-user"></a>Get transitiveReports для пользователя
 
@@ -45,7 +45,7 @@ GET /users/{id}/transitiveReports/$count
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
-| ConsistencyLevel | необязательный. Обязательный элемент. |
+| ConsistencyLevel | необязательный. Обязательно. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -98,10 +98,10 @@ GET https://graph.microsoft.com/beta/users/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4/
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
+
 ```
 
-5 
-
+`5`
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

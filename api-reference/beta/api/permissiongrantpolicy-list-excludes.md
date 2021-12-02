@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 90bbf50e78d1b0a6f27d0224da4309795b70ec5e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d641f76fc94f72d6b673bd265a919089486dfe2d
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60985766"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266077"
 ---
 # <a name="list-excludes-collection-of-permissiongrantpolicy"></a>Список исключает коллекцию разрешенийGrantPolicy
 
@@ -45,7 +45,7 @@ GET /policies/permissionGrantPolicies/{id}/excludes
 
 | Имя           | Описание                |
 |:---------------|:---------------------------|
-| Авторизация  | Bearer {token}. Обязательный.  |
+| Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -59,7 +59,7 @@ GET /policies/permissionGrantPolicies/{id}/excludes
 
 ### <a name="request"></a>Запрос
 
-Ниже приводится пример запроса на  извлечение исключенных наборов условий встроенной политики предоставления `microsoft-application-admin` разрешений. Эта политика предоставления разрешений включает все делегированные разрешения и все разрешения приложений, за исключением разрешений приложений для Microsoft Graph и разрешений приложений для Azure AD Graph.
+Ниже приводится пример запроса на  извлечение исключенных наборов условий встроенной политики предоставления `microsoft-application-admin` разрешений. Эта политика предоставления разрешений включает все делегированные разрешения и все разрешения приложений, за исключением разрешений приложений для Microsoft Graph и разрешений приложений для Azure Active Directory Graph.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -122,7 +122,8 @@ Content-type: application/json
       "clientApplicationIds": [ "all" ],
       "clientApplicationTenantIds": [ "all" ],
       "clientApplicationPublisherIds": [ "all" ],
-      "clientApplicationsFromVerifiedPublisherOnly": false
+      "clientApplicationsFromVerifiedPublisherOnly": false,
+      "certifiedClientApplicationsOnly": false
     },
     {
       "id": "2a1fbb36-9d9a-42d8-8804-de2aa45aca80",
@@ -133,7 +134,8 @@ Content-type: application/json
       "clientApplicationIds": [ "all" ],
       "clientApplicationTenantIds": [ "all" ],
       "clientApplicationPublisherIds": [ "all" ],
-      "clientApplicationsFromVerifiedPublisherOnly": false
+      "clientApplicationsFromVerifiedPublisherOnly": false,
+      "certifiedClientApplicationsOnly": false
     }
   ]
 }

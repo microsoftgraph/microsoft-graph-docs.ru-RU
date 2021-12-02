@@ -2,15 +2,15 @@
 title: Get transitiveReports for orgContact
 description: Получите количество транзитных отчетов для организационного контакта.
 author: dkershaw10
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 2ef9be3212ece4478e53dbbedbb0d2531e816dde
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: e8568810f5a47de4c62acebccf70cf0726669634
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53316946"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266051"
 ---
 # <a name="get-transitivereports-for-orgcontact"></a>Get transitiveReports for orgContact
 
@@ -47,7 +47,7 @@ GET /contacts/{id}/transitiveReports/$count
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
-| ConsistencyLevel | необязательный. Обязательный элемент. |
+| ConsistencyLevel | необязательный. Обязательно. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -100,9 +100,11 @@ GET https://graph.microsoft.com/beta/contacts/45b7d2e7-b882-4a80-ba97-10b7a63b8f
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
+
 ```
 
-5 
+`5`
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

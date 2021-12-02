@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 7a4483c4146eb92c970ef149b9743dab763300e2
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: eafe2ebbccdeef90e127871d7da4377f771c099d
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224915"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61265643"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 
@@ -69,7 +69,7 @@ ms.locfileid: "61224915"
 | addIns | Коллекция [addIn](addin.md)| Определяет пользовательское поведение, которое служба может использовать для вызова приложения в определенных контекстах. Например, приложения, которые способны визуализировать файловые потоки, [могут установить свойство addIns](/onedrive/developer/file-handlers) для его функции "FileHandler". Это позволит таким службам, как Office 365, вызывать приложение в контексте документов, над которыми работает пользователь. |
 | api | [apiApplication](apiapplication.md) | Задает параметры приложения, реализующего веб-API. |
 | appId | String | Уникальный идентификатор приложения, назначенный приложению с помощью Azure AD. Значение NULL не допускается. Только для чтения. |
-| applicationTemplateId | Строка | Уникальный идентификатор applicationTemplate. |
+| applicationTemplateId | Строка | Уникальный идентификатор applicationTemplate. Поддерживает `$filter` (`eq`, `not`, `ne`).|
 | appRoles | Коллекция [appRole](approle.md) | Совокупность ролей, назначенных приложению. С помощью команды [назначения ролей приложений](approleassignment.md) эти роли можно назначать пользователям, группам или субъектам-службам, связанным с другими приложениями. Значение null не допускается. |
 | createdDateTime | DateTimeOffset | Дата и время регистрации приложения. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.<br><br> Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in` и `eq` для значений `null`) и `$orderBy`. |
 | deletedDateTime | DateTimeOffset | Дата и время удаления приложения. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. |

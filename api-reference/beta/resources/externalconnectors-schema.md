@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 8dbf6a4df47f9afb3e24effbf9d90759dc87d677
-ms.sourcegitcommit: 64d27a0e3dcccc9d857e62aace4153e5d98fb3d0
+ms.openlocfilehash: cb3d89c9ab3903519376e4fdf0dd55dec8eba746
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60729208"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266014"
 ---
 # <a name="schema-resource-type"></a>Тип ресурса схемы
 
@@ -26,15 +26,16 @@ ms.locfileid: "60729208"
 |:----------------------------------------------------------|:------------------------------|:--|
 | [Создание схемы](../api/externalconnectors-externalconnection-post-schema.md) | Нет *или* [схемы](externalconnectors-schema.md) | Схема подключения для регистрации. |
 | [Получение схемы](../api/externalconnectors-schema-get.md)                        | [schema](externalconnectors-schema.md)           | Чтение свойств объекта схемы. |
+| [Обновление схемы](../api/externalconnectors-schema-update.md) | Нет *или* [схемы](externalconnectors-schema.md) | Обновление свойств объекта схемы. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип                               | Описание                |
 |:-----------|:-----------------------------------|:---------------------------|
-| baseType   | String                             | Необходимо указать значение `microsoft.graph.externalItem`. Обязательный. |
+| baseType   | Строка                             | Необходимо указать значение `microsoft.graph.externalItem`. Обязательный. |
 | properties | [коллекция](externalconnectors-property.md) свойств | Свойства, определенные для элементов в подключении. Минимальное число свойств — одно, максимальное — 128. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 
@@ -62,6 +63,7 @@ ms.locfileid: "60729208"
   ]
 }
 ```
+ 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

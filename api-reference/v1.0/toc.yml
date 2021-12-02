@@ -904,6 +904,8 @@ items:
                     href: api/serviceprincipal-addkey.md
                   - name: Удаление ключа
                     href: api/serviceprincipal-removekey.md
+                  - name: Добавление сертификата подписи маркеров
+                    href: api/serviceprincipal-addtokensigningcertificate.md
               - name: Предоставление делегированных разрешений
                 items:
                   - name: Список

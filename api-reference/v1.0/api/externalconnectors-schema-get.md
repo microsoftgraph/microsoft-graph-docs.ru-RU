@@ -5,17 +5,15 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: d01c2ad63df7a2e3f30b3b8724bf5bd19565a0a1
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 4d6b334dbe9911a12ef92e52e7a18b68be6dabff
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694401"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266224"
 ---
 # <a name="get-schema"></a>Получение схемы
 Пространство имен: microsoft.graph.externalConnectors
-
-
 
 Ознакомьтесь с свойствами и отношениями объекта [схемы.](../resources/externalconnectors-schema.md)
 
@@ -26,7 +24,7 @@ ms.locfileid: "60694401"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Неприменимо|
 |Делегированные (личная учетная запись Майкрософт)|Неприменимо|
-|Application| ExternalConnection.ReadWrite.OwnedBy|
+|Для приложений| ExternalConnection.ReadWrite.OwnedBy|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -39,12 +37,13 @@ GET /external/connections/{connectionsId}/schema
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+
+Этот метод не поддерживает [параметры запроса OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

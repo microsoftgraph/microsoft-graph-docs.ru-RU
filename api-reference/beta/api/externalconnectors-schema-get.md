@@ -1,16 +1,16 @@
 ---
 title: Получение схемы
 description: Извлечение свойств схемы для externalConnection.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: e8efc13fe7cb96b0a820f80974710f5086f1349d
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 9af589d20df4acccc942b296ab236c6b1fa1db4b
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53466999"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266203"
 ---
 # <a name="get-schema"></a>Получение схемы
 
@@ -28,7 +28,7 @@ ms.locfileid: "53466999"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | ExternalConnection.ReadWrite.OwnedBy |
+| Для приложений                            | ExternalConnection.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,7 @@ GET /external/connections/{id}/schema
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод не поддерживает [параметры запроса OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 

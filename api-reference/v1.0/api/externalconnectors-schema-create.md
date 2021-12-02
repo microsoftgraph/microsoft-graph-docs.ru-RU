@@ -5,17 +5,15 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 3417dfbf59db0d2488c365af5b880b4956d1240a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6e32cf8ac7e11d6cefea269c4e85ef95ca1b2db4
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59046129"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266259"
 ---
 # <a name="create-schema"></a>Создание схемы
 Пространство имен: microsoft.graph.externalConnectors
-
-
 
 Создайте новый [объект схемы.](../resources/externalconnectors-schema.md)
 
@@ -39,7 +37,7 @@ POST /external/connections/{id}/schema
 ```
 В теле запроса поставляем представление JSON объекта [схемы.](../resources/externalconnectors-schema.md)
 
-При регистрации настраиваемой схемы элементов объект должен иметь свойство, к котором должно быть установлено свойство, `schema` `baseType` и должен содержать `microsoft.graph.externalItem` `properties` его. Объект должен содержать по крайней мере одно свойство, не `properties` более 64.
+При регистрации настраиваемой схемы элемента  объект **схемы** должен иметь свойство **baseType** и должно содержать `microsoft.graph.externalItem` свойство **свойств.**  Объект **свойств должен** **содержать** по крайней мере одно свойство, не более 128.
 
 ## <a name="response"></a>Отклик
 

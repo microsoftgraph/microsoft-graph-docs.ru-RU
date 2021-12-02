@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ccb18e97c2436dfca4948c54032a1a6dd5076c01
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8fa0f3f1b304c830165c30496ca7e40c1dee2dcd
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60988322"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266062"
 ---
 # <a name="update-accesspackageassignmentpolicy"></a>Обновление accessPackageAssignmentPolicy
 
@@ -40,7 +40,7 @@ PUT /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{a
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -70,6 +70,8 @@ PUT /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{a
 ### <a name="request"></a>Запрос
 В этом обновлении политики был удален один из вариантов нескольких вариантов выбора. Будущие запросчики больше не будут иметь удаленную опцию, доступную для них.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_accesspackageassignmentpolicy"
@@ -158,8 +160,6 @@ Content-Type: application/json
     }]
 }
 ```
-
-
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-accesspackageassignmentpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

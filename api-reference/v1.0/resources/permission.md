@@ -4,14 +4,14 @@ ms.date: 09/10/2017
 title: Разрешение
 ms.localizationpriority: high
 description: Ресурс Permission содержит сведения о разрешении на совместный доступ, предоставленном для ресурса DriveItem.
-ms.prod: ''
+ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 34391b6d4c7cd23d92d2644e3417e90121c7f614
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ef2d30f7c239bdca21a3b9d643a91c83c7999b30
+ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117916"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61241424"
 ---
 # <a name="permission-resource-type"></a>Тип ресурса Permission
 
@@ -19,7 +19,11 @@ ms.locfileid: "59117916"
 
 Ресурс **Permission** содержит сведения о разрешении на совместный доступ, предоставленном для ресурса [DriveItem](driveitem.md).
 
-Разрешения на совместный доступ могут иметь самые различные формы. Ресурс **Permission** представляет эти различные формы с помощью аспектов в ресурсе.
+Разрешения на совместный доступ могут иметь самые различные формы.
+Ресурс **permission** представляет эти формы с помощью аспектов в ресурсе.
+
+Библиотеки документов OneDrive для бизнеса и SharePoint не возвращают свойство **inheritedFrom**.
+Свойства **grantedTo** и **grantedToIdentities** в дальнейшем станут нерекомендуемыми, а отклик будет перенесен в **grantedToV2** и **grantedToIdentitiesV2** под соответствующими именами свойств.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -31,6 +35,8 @@ ms.locfileid: "59117916"
     "link",
     "grantedTo",
     "grantedToIdentities",
+    "grantedToV2",
+    "grantedToIdentitiesV2",
     "invitation",
     "inheritedFrom",
     "shareId",
@@ -42,34 +48,39 @@ ms.locfileid: "59117916"
   "@odata.type": "microsoft.graph.permission"
 }-->
 ```json
+
 {
   "id": "string (identifier)",
   "grantedTo": {"@odata.type": "microsoft.graph.identitySet"},
   "grantedToIdentities": [{"@odata.type": "microsoft.graph.identitySet"}],
+  "grantedToV2": {"@odata.type": "microsoft.graph.sharePointIdentitySet"},
+  "grantedToIdentitiesV2": [{"@odata.type": "microsoft.graph.sharePointIdentitySet"}],
   "inheritedFrom": {"@odata.type": "microsoft.graph.itemReference"},
   "invitation": {"@odata.type": "microsoft.graph.sharingInvitation"},
   "link": {"@odata.type": "microsoft.graph.sharingLink"},
   "roles": ["string"],
   "shareId": "string",
   "expirationDateTime": "string (timestamp)",
-  "hasPassword": "boolean"
+  "hasPassword": "boolean"  
 }
 ```
 
 ## <a name="properties"></a>Свойства
 
-| Свойство      | Тип                                      | Описание
-|:--------------|:------------------------------------------|:-----------------
-| id            | Строка                                    | Уникальный идентификатор разрешения среди всех разрешений для элемента. Только для чтения.
-| grantedTo     | [IdentitySet](identityset.md)             | Для разрешений типа user: сведения о пользователях и приложениях для этого разрешения. Только для чтения.
-| grantedToIdentities | Collection([IdentitySet](identityset.md)) | Для разрешений типа link: сведения о пользователях, которым предоставлено разрешение. Только для чтения.
-| invitation    | [SharingInvitation][]                     | Сведения обо всех сопоставленных приглашениях к совместному использованию для данного разрешения. Только для чтения.
-| inheritedFrom | [ItemReference](itemreference.md)         | Предоставляет ссылку на предка текущего разрешения, если оно унаследовано от предка. Только для чтения.
-| ссылка          | [SharingLink][]                           | Предоставляет сведения о ссылке для текущего разрешения, если это разрешение типа link. Только для чтения.
-| roles         | Коллекция строк                      | Тип разрешения, например `read`. Полный список ролей см. ниже. Только для чтения.
-| shareId       | Строка                                    | Уникальный токен, с помощью которого можно получить доступ к общему элементу через [API **shares**](../api/shares-get.md). Только для чтения.
-| expirationDateTime  | DateTimeOffset              | Формат гггг-ММ-ддTЧЧ:мм:ссZ свойства DateTimeOffset указывает время окончания срока действия разрешения. DateTime.MinValue указывает, что для этого разрешения не установлен срок действия. Необязательно.
-| hasPassword         | Логическое                     | Указывает, настроен ли для этого разрешения пароль. Отображается только в отклике. Необязательно, только для чтения и предназначено только для OneDrive персональный.
+| Свойство                         | Тип                                      | Описание |
+|:---------------------------------|:------------------------------------------|:-----------------
+| id                               | Строка                                    | Уникальный идентификатор разрешения среди всех разрешений для элемента. Только для чтения. |
+| grantedToV2                      | [SharePointIdentitySet][]                 | Для разрешений типа user: сведения о пользователях и приложениях для этого разрешения. Только для чтения. |
+| grantedToIdentitiesV2            | Коллекция ([SharePointIdentitySet][]) | Для разрешений типа link: сведения о пользователях, которым предоставлено разрешение. Только для чтения. |
+| invitation                       | [SharingInvitation][]                     | Сведения обо всех сопоставленных приглашениях к совместному использованию для данного разрешения. Только для чтения. |
+| inheritedFrom                    | [ItemReference](itemreference.md)         | Предоставляет ссылку на предка текущего разрешения, если оно унаследовано от предка. Только для чтения. |
+| ссылка                             | [SharingLink][]                           | Предоставляет сведения о ссылке для текущего разрешения, если это разрешение типа link. Только для чтения. |
+| roles                            | Коллекция строк                      | Тип разрешения, например `read`. Полный список ролей см. ниже. Только для чтения. |
+| shareId                          | Строка                                    | Уникальный токен, с помощью которого можно получить доступ к общему элементу через [API **shares**](../api/shares-get.md). Только для чтения. |
+| expirationDateTime               | DateTimeOffset                            | Формат гггг-ММ-ддTЧЧ:мм:ссZ свойства DateTimeOffset указывает время окончания срока действия разрешения. DateTime.MinValue указывает, что для этого разрешения не установлен срок действия. Необязательно. |
+| hasPassword                      | Логическое                                   | Указывает, установлен ли пароль для этого разрешения. Это свойство отображается только в отклике. Необязательно. Только для чтения. Только для личного хранилища OneDrive. |
+| grantedTo (нерекомендуемое)           | [IdentitySet](identityset.md)             | Для разрешений типа user: сведения о пользователях и приложениях для этого разрешения. Только для чтения. |
+| grantedToIdentities (нерекомендуемое) | Collection([IdentitySet](identityset.md)) | Для разрешений типа: сведения о пользователях, которым предоставлено разрешение. Только для чтения. |
 
 Ресурс Permission предоставляет сведения о типе разрешения, представленного ресурсом, с помощью _аспектов_.
 
@@ -79,11 +90,12 @@ ms.locfileid: "59117916"
 
 [SharingInvitation]: sharinginvitation.md
 [SharingLink]: sharinglink.md
+[SharePointIdentitySet]: sharePointIdentitySet.md
 
 ### <a name="roles-property-values"></a>Значения свойств роли
 
-| Значение              | Описание                                                                        |
-|:------------------|:-------------------------------------------------------------------------------|
+| Значение           | Описание                                                                        |
+|:----------------|:-------------------------------------------------------------------------------|
 | read            | Дает возможность считывать метаданные и содержимое элемента.            |
 | write           | Дает возможность считывать и изменять метаданные и содержимое элемента. |
 | owner           | В случае с SharePoint и OneDrive для бизнеса представляет роль владельца.       |
@@ -149,6 +161,30 @@ ms.locfileid: "59117916"
       }
     }
   ],
+  "grantedToIdentitiesV2": [
+    {
+       "user": {
+        "id": "35fij1974gb8832",
+        "displayName&quot;: &quot;Misty Suarez"
+      },
+      "siteUser": {
+        "id": "1",
+        "displayName": "Misty Suarez",
+        "loginName&quot;: &quot;Misty Suarez"
+      }
+    },
+    {
+       "user": {
+        "id": "9397721fh4hgh73",
+        "displayName&quot;: &quot;Judith Clemons"
+      },
+      "siteUser": {
+        "id": "2",
+        "displayName": "Judith Clemons",
+        "loginName&quot;: &quot;Judith Clemons"
+      }
+    }
+  ],
   "roles": ["write"],
   "link": {
     "webUrl": "https://contoso.sharepoint.com/:w:/t/design/a577ghg9hgh737613bmbjf839026561fmzhsr85ng9f3hjck2t5s",
@@ -190,7 +226,7 @@ ms.locfileid: "59117916"
   "id": "1",
   "roles": ["write"],
   "invitation": {
-    "email": "jd@gmail.com",
+    "email": "jd@contoso.com",
     "signInRequired": true
   },
   "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U",
@@ -208,11 +244,22 @@ ms.locfileid: "59117916"
   "grantedTo": {
     "user": {
       "id": "5D33DD65C6932946",
-      "displayName": "John Doe"
+      "displayName": "Robin Danielsen"
+    }
+  },
+  "grantedToV2": {
+    "user": {
+      "id": "5D33DD65C6932946",
+      "displayName": "Robin Danielsen"
+    },
+    "siteUser": {
+      "id": "1",
+      "displayName": "Robin Danielsen",
+      "loginName": "Robin Danielsen"
     }
   },
   "invitation": {
-    "email": "jd@outlook.com",
+    "email": "rd@contoso.com",
     "signInRequired": true
   },
   "shareId": "FWxc1lasfdbEAGM5fI7B67aB5ZMPDMmQ11U",
@@ -231,11 +278,6 @@ ms.locfileid: "59117916"
 | [удаление](../api/permission-delete.md);                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 | [Добавление пользователей в ссылку совместного доступа](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
 
-
-## <a name="remarks"></a>Примечания
-
-Библиотеки документов OneDrive для бизнеса и SharePoint не возвращают свойство **inheritedFrom**.
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -245,4 +287,3 @@ ms.locfileid: "59117916"
   "section": "documentation",
   "tocPath": "Resources/Permission"
 } -->
-

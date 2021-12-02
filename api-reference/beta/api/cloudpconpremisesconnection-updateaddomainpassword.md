@@ -1,23 +1,23 @@
 ---
 title: 'cloudPcOnPremisesConnection: updateAdDomainPassword'
-description: Обновление пароля домена AD для успешного подключения к доменуPremisesConnection.
+description: Обновление пароля домена Active Directory для успешного локального подключения. Этот API поддерживается, когда тип onPremisesConnection является hybridAzureADJoin.
 author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 1f18f47e4e69810b62941e0d2cd6f8d8a9a26b6e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3a2f518821eb7825146450dc6aaf2da00e39dd36
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61032675"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266315"
 ---
 # <a name="cloudpconpremisesconnection-updateaddomainpassword"></a>cloudPcOnPremisesConnection: updateAdDomainPassword
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление пароля домена Active Directory для [onPremisesConnection](../resources/cloudpconpremisesconnection.md).
+Обновление пароля домена Active Directory для [onPremisesConnection](../resources/cloudpconpremisesconnection.md). Этот API поддерживается при типе **onPremisesConnection** `hybridAzureADJoin` .
 
 
 ## <a name="permissions"></a>Разрешения
@@ -42,7 +42,7 @@ PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomai
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -96,7 +96,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Отклик
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
 <!-- {
   "blockType": "response",
   "truncated": true
