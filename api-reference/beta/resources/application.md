@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: f60e7f8a521b0fb647e8acf2095fc9cde588ef6b
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: d0b36ecc2951744684c6ae24dbb9d19111c00ff8
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266070"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61285191"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 
@@ -87,7 +87,7 @@ ms.locfileid: "61266070"
 | createdDateTime | DateTimeOffset | Дата и время регистрации приложения. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.<br><br> Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in` и `eq` для значений `null`) и `$orderBy`. |
 |defaultRedirectUri|String|URI перенаправления по умолчанию. Если этот параметр указан и отсутствует явный URI перенаправления в запросе на вход для потоков SAML и OIDC, Azure AD отправляет маркер этому URI перенаправления. Azure AD также отправляет маркер этому стандартному URI при едином входе, инициированном IdP SAML. Значение должно соответствовать одному из настроенных URI перенаправления для приложения.|
 | deletedDateTime | DateTimeOffset | Дата и время удаления приложения. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. |
-| description | String | Необязательное описание приложения. <br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`) и `$search`. |
+| description | Строка | Произвольное текстовое поле для описания объекта приложения конечным пользователям. Максимальная длина — 1024 символа. <br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`) и `$search`. |
 | disabledByMicrosoftStatus | Строка | Указывает, отключила ли корпорация Майкрософт зарегистрированное приложение. Возможные значения: `null` (значение по умолчанию), `NotDisabled` и `DisabledDueToViolationOfServicesAgreement` (возможные причины: подозрительные, оскорбительные или вредоносные действия, а также нарушение соглашения об использовании служб Майкрософт).<br><br> Поддерживает `$filter` (`eq`, `ne`, `not`). |
 | displayName | String | Отображаемое имя приложения. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` для значений `null`), `$search` и `$orderBy`. |
 | groupMembershipClaims | String | Настраивает утверждение `groups`, выданное в маркере пользователя или маркере доступа OAuth 2.0, ожидаемом приложением. Чтобы задать этот атрибут, используйте одно из следующих строковых значений: `None`, `SecurityGroup` (для групп безопасности и ролей Azure AD), `All` (предоставит все группы безопасности, группы рассылки и роли каталога Azure AD, участником которых является выполнивший вход пользователь). |

@@ -1,17 +1,17 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: a4864830da3f6e7f62d86022d9c5c66533d0b9cd
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 17d1009a07953183bcf89ae29c67c72c30cb64d0
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61030843"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61295322"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IdentityProviderBase identityProviderBase = new IdentityProviderBase();
+SocialIdentityProvider identityProviderBase = new SocialIdentityProvider();
 identityProviderBase.displayName = "Apple";
 
 graphClient.identity().identityProviders("Apple-Managed-OIDC")

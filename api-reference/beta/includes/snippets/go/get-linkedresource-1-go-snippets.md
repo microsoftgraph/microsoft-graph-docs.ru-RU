@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: b610e11ce2a02df3b4383d30d72148fcb7bb83cb
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 4785265a6d26928e1f1f4e058c2ea8a8e4370ccf
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61093233"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61295262"
 ---
 ```go
 
@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 todoTaskListId := "todoTaskList-id"
 todoTaskId := "todoTask-id"
 linkedResourceId := "linkedResource-id"
-result, err := graphClient.Me().Todo().ListsById(&todoTaskListId).TasksById(&todoTaskId).LinkedResourcesById(&linkedResourceId).Get(options)
+result, err := graphClient.Me().Todo().ListsById(&todoTaskListId).TasksById(&todoTaskId).LinkedResourcesById(&linkedResourceId).Get(nil)
 
 
 ```

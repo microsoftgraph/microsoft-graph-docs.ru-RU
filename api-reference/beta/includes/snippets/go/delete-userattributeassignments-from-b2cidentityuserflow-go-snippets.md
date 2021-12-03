@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 2a7df5bfbd4ec7953ef435e6255d4b8dbca3d089
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 552101e81c1d1931c30c1fea5e6928b49bc74f49
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61089671"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61295476"
 ---
 ```go
 
@@ -14,7 +14,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
 identityUserFlowAttributeAssignmentId := "identityUserFlowAttributeAssignment-id"
-graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).UserAttributeAssignmentsById(&identityUserFlowAttributeAssignmentId).Delete(options)
+graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).UserAttributeAssignmentsById(&identityUserFlowAttributeAssignmentId).Delete(nil)
 
 
 ```

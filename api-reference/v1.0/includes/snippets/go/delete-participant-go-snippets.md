@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 2ab6b1c7aa571bc55f27d35b7e0c235169e889a1
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 61cf9784b498925341e51a3001f3fca3487dd08f
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61082980"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61295845"
 ---
 ```go
 
@@ -14,7 +14,7 @@ graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 callId := "call-id"
 participantId := "participant-id"
-graphClient.Communications().CallsById(&callId).ParticipantsById(&participantId).Delete(options)
+graphClient.Communications().CallsById(&callId).ParticipantsById(&participantId).Delete(nil)
 
 
 ```

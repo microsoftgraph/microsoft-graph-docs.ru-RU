@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 276d4308555477abe909a47c97d7a3090fc11318
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: a893558da1650efcadd6c41178d9edaae85eed36
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61094168"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61295482"
 ---
 ```go
 
@@ -16,7 +16,7 @@ educationClassId := "educationClass-id"
 educationAssignmentId := "educationAssignment-id"
 educationSubmissionId := "educationSubmission-id"
 educationSubmissionResourceId := "educationSubmissionResource-id"
-result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).SubmissionsById(&educationSubmissionId).ResourcesById(&educationSubmissionResourceId).Get(options)
+result, err := graphClient.Education().ClassesById(&educationClassId).AssignmentsById(&educationAssignmentId).SubmissionsById(&educationSubmissionId).ResourcesById(&educationSubmissionResourceId).Get(nil)
 
 
 ```
