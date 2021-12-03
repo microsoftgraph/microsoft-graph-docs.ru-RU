@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 085dcec35a223607eb8aa97ece0808d0aed6dfa1
-ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
+ms.openlocfilehash: df339acc2c9ae198e9d38d095c3e03dcb7bfd610
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61130159"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61265991"
 ---
 # <a name="list-groups"></a>Список групп
 
@@ -194,6 +194,8 @@ Content-type: application/json
 
 Ниже приведен пример запроса. Для этого запроса требуется заголовок **ConsistencyLevel** с присвоенным значением `eventual`, так как в запросе присутствует `$count`. Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
 
+>**Примечание.** В настоящее время параметры `$count` и `$search` недоступны в клиентах Azure AD B2C.
+
 #### <a name="request"></a>Запрос
 
 
@@ -265,6 +267,8 @@ Content-type: application/json
 
 Ниже приведен пример запроса. Для этого запроса требуется заголовок **ConsistencyLevel** с присвоенным значением `eventual`, так как в запросе присутствует `$count`. Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
 
+>**Примечание.** В настоящее время параметры `$count` и `$search` недоступны в клиентах Azure AD B2C.
+
 <!-- {
   "blockType": "ignored",
   "name": "get_count_only"
@@ -293,6 +297,8 @@ Content-type: text/plain
 #### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса. Для этого запроса требуется заголовок **ConsistencyLevel** с присвоенным значением `eventual` и строка запроса `$count=true`, так как запрос содержит параметры запроса `$orderBy` и `$filter`. Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
+
+>**Примечание.** В настоящее время параметры `$count` и `$search` недоступны в клиентах Azure AD B2C.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -329,7 +335,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -360,6 +366,8 @@ Content-type: application/json
 #### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса. Для этого запроса требуется заголовок **ConsistencyLevel** с присвоенным значением `eventual`, так как в запросе присутствует `$search`. Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
+
+>**Примечание.** В настоящее время параметры `$count` и `$search` недоступны в клиентах Azure AD B2C.
 
 <!-- {
   "blockType": "request",
@@ -404,6 +412,8 @@ Content-type: application/json
 #### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса. Для этого запроса требуется заголовок **ConsistencyLevel** с присвоенным значением `eventual`, так как в запросе присутствует `$search`. Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
+
+>**Примечание.** В настоящее время параметры `$count` и `$search` недоступны в клиентах Azure AD B2C.
 
 <!-- {
   "blockType": "request",
@@ -454,6 +464,8 @@ Content-type: application/json
 #### <a name="request"></a>Запрос
 
 Ниже приводится пример запроса, который фильтрует **membershipRuleProcessingState** для получения динамических групп. Можно также фильтровать свойства **groupTypes** (то есть `$filter=groupTypes/any(s:s eq 'DynamicMembership')`). Для этого запроса требуется заглавная строка **ConsistencyLevel**, установленная для `eventual` и строки запроса `$count=true`, так как в запросе используется оператор `not` параметра запроса `$filter`. Дополнительные сведения об использовании **ConsistencyLevel** и `$count` см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
+
+>**Примечание.** В настоящее время параметры `$count` и `$search` недоступны в клиентах Azure AD B2C.
 
 
 

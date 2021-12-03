@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 8e13beea466e1a6d4d950fcfc81c0546d0a62e57
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: fae77434aef5d4b6ea4f5c5884b20040db4f63b9
+ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58694649"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "61266098"
 ---
 # <a name="permissiongrantconditionset-resource-type"></a>Тип ресурса permissionGrantConditionSet
 
@@ -34,7 +34,8 @@ ms.locfileid: "58694649"
 | clientApplicationIds | Коллекция String | Список значений **appId** для соответствия клиентским приложениям или список с одним значением `all` для соответствия любым клиентским приложениям. По умолчанию используется единственное значение `all`. |
 | clientApplicationTenantIds | Коллекция String | Список идентификаторов клиента Azure Active Directory, в котором зарегистрировано клиентское приложение, или список с одним значением `all` для соответствия клиентским приложениям, зарегистрированным в любом клиенте. По умолчанию используется единственное значение `all`. |
 | clientApplicationPublisherIds | Коллекция String | Список идентификаторов Microsoft Partner Network (MPN) для проверенных издателей клиентского приложения или список с одним значением `all` для соответствия клиентским приложениям от любого издателя. По умолчанию используется единственное значение `all`. |
-| clientApplicationsFromVerifiedPublisherOnly | Логический | Присвойте значение `true` для соответствия только клиентским приложениям проверенного издателя. Присвойте значение `false` для соответствия любому клиентскому приложению, даже если у него нет проверенного издателя. Значение по умолчанию: `false`. |
+| clientApplicationsFromVerifiedPublisherOnly | Логический | Присвойте значение `true` для соответствия только клиентским приложениям [проверенного издателя](/azure/active-directory/develop/publisher-verification-overview). Присвойте значение `false` для соответствия любому клиентскому приложению, даже если у него нет проверенного издателя. Значение по умолчанию: `false`. |
+| certifiedClientApplicationsOnly | Логическое | Присвойте значения `true` для соответствия только клиентским приложениям с [сертификатом Microsoft 365](/microsoft-365-app-certification/docs/enterprise-app-certification-guide). Присвойте значение `false` для соответствия любому другому клиентскому приложению. Значение по умолчанию: `false`. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -54,6 +55,7 @@ ms.locfileid: "58694649"
     "clientApplicationIds": [ "string" ],
     "clientApplicationTenantIds": [ "string" ],
     "clientApplicationPublisherIds": [ "string" ],
-    "clientApplicationsFromVerifiedPublisherOnly": false
+    "clientApplicationsFromVerifiedPublisherOnly": false,
+    "certifiedClientApplicationsOnly": false
 }
 ```
