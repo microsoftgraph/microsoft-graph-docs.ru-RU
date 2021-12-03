@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: b15c4a3d105dd5473a3aef084d1cc6a3377f5d44
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 7125e699a50e803a491acf372b96132d8e49213a
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61092775"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61295387"
 ---
 ```go
 
@@ -13,7 +13,7 @@ ms.locfileid: "61092775"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 windowsProtectionStateId := "windowsProtectionState-id"
-result, err := graphClient.TenantRelationships().ManagedTenants().WindowsProtectionStatesById(&windowsProtectionStateId).Get(options)
+result, err := graphClient.TenantRelationships().ManagedTenants().WindowsProtectionStatesById(&windowsProtectionStateId).Get(nil)
 
 
 ```
