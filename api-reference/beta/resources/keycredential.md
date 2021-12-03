@@ -1,16 +1,16 @@
 ---
 title: тип ресурса keyCredential
 description: Содержит ключевые учетные данные, связанные с приложением или директором службы. Свойство **keyCredentials** сущностями приложения и servicePrincipal — это коллекция **keyCredential**.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
-author: sureshja
-ms.openlocfilehash: 8095ea20d6c7dcef94e9f9cf2e42fca6087c58d8
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+author: madansr7
+ms.openlocfilehash: 0c4e8ff5ce5f97498043e42305b05cadb7815412
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58265976"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61285100"
 ---
 # <a name="keycredential-resource-type"></a>тип ресурса keyCredential
 
@@ -23,14 +23,14 @@ ms.locfileid: "58265976"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|customKeyIdentifier|В двоичном формате| Настраиваемый идентификатор ключа |
-| displayName | Строка | Удобное имя для ключа. Необязательный. |
+|customKeyIdentifier|Binary| Настраиваемый идентификатор ключа |
+| displayName | Строка | Удобное имя для ключа. Необязательно. |
 |endDateTime|DateTimeOffset|Дата и время истечения срока действия учетных данных. Тип Timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |key|Двоичный| Значение для учетных данных ключа. Должно быть базовым значением 64. |
 |keyId|Guid|Уникальный идентификатор для ключа.|
 |startDateTime|DateTimeOffset|Дата и время, в течение которых учетные данные становятся действительными. Тип Timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|type|String|Тип учетных данных ключей; например, `Symmetric` .|
-|использование|String|Строка, описываемая цель, для которой можно использовать ключ; например, `Verify` .|
+|type|Строка|Тип учетных данных ключей; например, `Symmetric` .|
+|использование|Строка|Строка, описываемая цель, для которой можно использовать ключ; например, `Verify` .|
 
 
 ## <a name="json-representation"></a>Представление JSON

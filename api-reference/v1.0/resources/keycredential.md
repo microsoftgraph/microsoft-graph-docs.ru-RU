@@ -4,31 +4,31 @@ description: Содержит ключевые учетные данные, св
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: applications
-author: sureshja
-ms.openlocfilehash: 5da7db493e17261004a4913211825d1d62b8196a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: madansr7
+ms.openlocfilehash: e08803389b9e24ab8a4214a4696f672e8167b71a
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59078744"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61285114"
 ---
 # <a name="keycredential-resource-type"></a>тип ресурса keyCredential
 
 Пространство имен: microsoft.graph
 
-Содержит ключевые учетные данные, связанные с приложением <!--or a service principal-->. Свойство **keyCredentials** [приложения](application.md) <!--and [servicePrincipal](serviceprincipal.md)--> объект — это коллекция **keyCredential**.
+Содержит ключевые учетные данные, связанные с приложением или директором службы. Свойство **keyCredentials** сущностями приложения и [servicePrincipal](serviceprincipal.md) — это коллекция **keyCredential**. [](application.md)
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|customKeyIdentifier|В двоичном формате| Настраиваемый идентификатор ключа |
-| displayName | Строка | Удобное имя для ключа. Необязательное. |
+|customKeyIdentifier|Binary| Настраиваемый идентификатор ключа |
+| displayName | Строка | Удобное имя для ключа. Необязательно. |
 |endDateTime|DateTimeOffset|Дата и время истечения срока действия учетных данных. Тип Timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |key|Двоичный| Необработанные данные сертификата в массиве byte, преобразованных в строку Base64; например, `[System.Convert]::ToBase64String($Cert.GetRawCertData())` . |
 |keyId|Guid|Уникальный идентификатор (GUID) для ключа.|
 |startDateTime|DateTimeOffset|Дата и время, в течение которых учетные данные становятся действительными. Тип Timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|type|String|Тип учетных данных ключей; например, `Symmetric` .|
-|использование|String|Строка, описываемая цель, для которой можно использовать ключ; например, `Verify` .|
+|type|Строка|Тип учетных данных ключей; например, `Symmetric` .|
+|использование|Строка|Строка, описываемая цель, для которой можно использовать ключ; например, `Verify` .|
 
 ## <a name="json-representation"></a>Представление JSON
 

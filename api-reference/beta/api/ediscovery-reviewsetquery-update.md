@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 6b911940864d3cf4a6e50072ed5bfa28215a79cf
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c11dbfa9d869186d7cee2a5f9c32d014702d536a
+ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022363"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61285128"
 ---
 # <a name="update-reviewsetquery"></a>Обновление обзораSetQuery
 
@@ -103,8 +103,6 @@ Content-type: application/json
 ### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
-
-> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response"
