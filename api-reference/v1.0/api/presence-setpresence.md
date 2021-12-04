@@ -5,12 +5,12 @@ author: jsandoval-msft
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 3a811034419c0e9be0eca8ab123fce3a124178dd
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 218dee5db32fbbe24bb59c61dfe31b785141ecd0
+ms.sourcegitcommit: e75969aa44a1aab722ac44d09c37508ffbad8738
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60992626"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "61307596"
 ---
 # <a name="presence-setpresence"></a>присутствие: setPresence
 
@@ -63,7 +63,7 @@ POST /users/{userId}/presence/setPresence
 | sessionId          | Строка   | ID сеанса присутствия приложения.                                                          |
 | availability       | Строка   | Сведения о базовом присутствии.                                                                         |
 | действие           | Строка   | Дополнительные сведения о доступности.                                                          |
-| expirationDuration | duration | Срок действия сеанса присутствия приложения. Значение представлено в формате ISO 8601 для длительности.</p>Если это не предусмотрено, по умолчанию будет применяться 5-минутный срок действия. |
+| expirationDuration | duration | Срок действия сеанса присутствия приложения. Значение представлено в формате ISO 8601 для длительности.</p>Если это не предусмотрено, по умолчанию будет применяться 5-минутный срок действия. Допустимый диапазон продолжительности 5-240 минут (от PT5M до PT4H)|
 
 > [!IMPORTANT]
 >

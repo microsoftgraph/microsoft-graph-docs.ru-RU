@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: eaab61771feca5c5e1f900295509da5460c1e52d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 578e512509ecd202f30ab32bef6102b1b3253be0
+ms.sourcegitcommit: e75969aa44a1aab722ac44d09c37508ffbad8738
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61002078"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "61307638"
 ---
 # <a name="list-subscriptions"></a>Перечисление подписок
 
@@ -18,19 +18,50 @@ ms.locfileid: "61002078"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение списка подписки на веб-ок. Содержимое ответа зависит от контекста, в котором вызывается приложение; см. ниже сценарии.
+Извлечение списка подписки на веб-ок. 
+
+Содержимое ответа зависит от контекста, в котором вызывается приложение; подробные сведения см. в разделе [Разрешения.](#permissions)
 
 ## <a name="permissions"></a>Разрешения
 
 Этот API поддерживает перечисленные ниже области разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения  | Разрешения (в порядке повышения привилегий)  |
-|:---------------- |:-------------------------------------------- |
-| [Делегированная](/graph/auth-v2-user) (работа или учетная запись школы) | Разрешение, необходимое [для создания подписки](subscription-post-subscriptions.md) или подписки.Read.All (см. ниже). |
-| [Делегированная](/graph/auth-v2-user) (личная учетная запись Майкрософт) | Разрешение, необходимое [для создания подписки](subscription-post-subscriptions.md) или подписки.Read.All (см. ниже). |
-| [Приложение](/graph/auth-v2-service) | Разрешение, необходимое [для создания подписки.](subscription-post-subscriptions.md) |
+| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Application |
+|:-----|:-----|:-----|:-----|
+|[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Не поддерживается | Не поддерживается | CallRecords.Read.All  |
+|[каналы](../resources/channel.md) (/teams/getAllChannels — все каналы в организации) | Не поддерживается  | Не поддерживается | Channel.ReadBasic.All, ChannelSettings.Read.All |
+|[каналы](../resources/channel.md) (/teams/{id}/channels) | Channel.ReadBasic.All, ChannelSettings.Read.All, Subscription.Read.All  | Не поддерживается | Channel.ReadBasic.All, ChannelSettings.Read.All  |
+|[чат](../resources/chat.md) (/чаты — все чаты в организации) | Не поддерживается | Не поддерживается | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
+|[чат](../resources/chat.md) (/chats/{id}) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite, Subscription.Read.All | Не поддерживается | ChatSettings.Read.Chat *, ChatSettings.ReadWrite.Chat*, Chat.Manage.Chat*, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
+|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All, Subscription.Read.All | Не поддерживается | ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages — все сообщения канала в организации) | Не поддерживается | Не поддерживается | ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Chat.Read, Chat.ReadWrite, Subscription.Read.All | Не поддерживается | Chat.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/chats/getAllMessages — все сообщения чата в организации) | Не поддерживается | Не поддерживается | Chat.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/users/{id}/chats/getAllMessages — сообщения чата для всех чатов, в которые входит определенный пользователь) | Chat.Read, Chat.ReadWrite, Subscription.Read.All | Не поддерживается | Chat.Read.All, Chat.ReadWrite.All |
+|[contact](../resources/contact.md) | Contacts.Read, Subscription.Read.All | Contacts.Read, Subscription.Read.All | Contacts.Read |
+|[conversationMember](../resources/conversationmember.md) (/teams/{id}/channels/getAllMembers) | Не поддерживается | Не поддерживается | ChannelMember.Read.All |
+|[conversationMember](../resources/conversationmember.md) (/chats/getAllMembers) | Не поддерживается | Не поддерживается | ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
+|[conversationMember](../resources/conversationmember.md) (/chats/{id}/members) | ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite, Subscription.Read.All | Не поддерживается | ChatMember.Read.Chat *, Chat.Manage.Chat*, ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
+|[conversationMember](../resources/conversationmember.md) (/teams/{id}/members) | TeamMember.Read.All, Subscription.Read.All | Не поддерживается | TeamMember.Read.All |
+|[driveItem](../resources/driveitem.md) (личное хранилище OneDrive пользователя) | Не поддерживается | Files.ReadWrite, Subscription.Read.All | Не поддерживается |
+|[driveItem](../resources/driveitem.md) (OneDrive для бизнеса) | Files.ReadWrite.All, Subscription.Read.All | Не поддерживается | Files.ReadWrite.All |
+|[event](../resources/event.md) | Calendars.Read, Subscription.Read.All | Calendars.Read, Subscription.Read.All | Calendars.Read |
+|[group](../resources/group.md) | Group.Read.All, Subscription.Read.All | Не поддерживается | Group.Read.All |
+|[group conversation](../resources/conversation.md) | Group.Read.All, Subscription.Read.All | Не поддерживается | Не поддерживается |
+|[list](../resources/list.md) | Sites.ReadWrite.All, Subscription.Read.All | Не поддерживается | Sites.ReadWrite.All |
+|[message](../resources/message.md) | Mail.ReadBasic, Mail.Read, Subscription.Read.All | Mail.ReadBasic, Mail.Read, Subscription.Read.All | Mail.ReadBasic, Mail.Read |
+|[presence](../resources/presence.md) | Presence.Read.All, Subscription.Read.All | Не поддерживается | Не поддерживается |
+|[printer](../resources/printer.md) | Не поддерживается | Не поддерживается | Printer.Read.All, Printer.ReadWrite.All |
+|[printTaskDefinition](../resources/printtaskdefinition.md) | Не поддерживается | Не поддерживается | PrintTaskDefinition.ReadWrite.All |
+|[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All, Subscription.Read.All | Не поддерживается | SecurityEvents.ReadWrite.All |
+|[teams](../resources/team.md) (/teams — все команды в организации) | Не поддерживается | Не поддерживается | Team.ReadBasic.All, TeamSettings.Read.All |
+|[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All, Subscription.Read.All | Не поддерживается | Team.ReadBasic.All, TeamSettings.Read.All |
+|[todoTask](../resources/todotask.md) | Tasks.ReadWrite, Subscription.Read.All | Tasks.ReadWrite, Subscription.Read.All | Не поддерживается |
+|[user](../resources/user.md) | User.Read.All, Subscription.Read.All | User.Read.All | User.Read.All |
 
-Результаты отклика основаны на контексте приложения, отправившего вызов. Ниже представлена сводка общих сценариев.
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
+
+Результаты отклика основаны на контексте приложения, отправившего вызов. В следующих разделах описываются общие сценарии.
 
 ### <a name="basic-scenarios"></a>Основные сценарии
 
@@ -38,7 +69,7 @@ ms.locfileid: "61002078"
 
 | Контекст приложения, отправившего вызов | Состав отклика |
 |:-----|:---------------- |
-| Приложение отправляет вызов от имени вошедшего пользователя (делегированное разрешение). <br/>-и-<br/>У приложения есть исходное разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md).<br/><br/>Примечание. Это относится как к личным учетным записям Майкрософт, так и к рабочим и учебным учетным записям. | Подписки, созданные **этим приложением** только для вошедшего пользователя. |
+| Приложение отправляет вызов от имени вошедшего пользователя (делегированное разрешение). <br/>-и-<br/>У приложения есть исходное разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md).<br/><br/>**Примечание:** Это относится как к личным учетным записям Майкрософт, так и к учетным записям work/school. | Подписки, созданные **этим приложением** только для вошедшего пользователя. |
 | Приложение отправляет вызов от своего имени (разрешение приложения).<br/>-и-<br/>У приложения есть исходное разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md).<br/><br/>Примечание. Это относится только к рабочим или учебным учетным записям.| Подписки, созданные **этим приложением** для себя или для любого пользователя в каталоге.|
 
 ### <a name="advanced-scenarios"></a>Расширенные сценарии
@@ -61,7 +92,7 @@ GET /subscriptions
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод не поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
+Этот метод не поддерживает [параметры запроса OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -79,7 +110,7 @@ GET /subscriptions
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -114,9 +145,11 @@ GET https://graph.microsoft.com/beta/subscriptions
 ---
 
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Показанный здесь ответ может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. 
+
+>**Примечание:** Ответ, показанный здесь, может быть сокращен для читаемости.
 
 <!-- {
   "blockType": "response",
@@ -166,6 +199,6 @@ Content-type: application/json
 }
 -->
 
-> **Примечание.** Значение свойства `clientState` не возвращается в целях безопасности.  
+> **Примечание.** Значение свойства `clientState` не возвращается в целях безопасности.
 
-Когда запрос возвращает несколько страниц данных, отклик включает свойство `@odata.nextLink`, помогающее управлять результатами.  Дополнительные сведения см. в статье [Разбиение данных Microsoft Graph по страницам в приложении](/graph/paging).
+Когда запрос возвращает несколько страниц данных, отклик включает свойство `@odata.nextLink`, помогающее управлять результатами. Дополнительные сведения см. в статье [Разбиение данных Microsoft Graph по страницам в приложении](/graph/paging).

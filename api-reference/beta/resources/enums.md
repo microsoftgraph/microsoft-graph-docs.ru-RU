@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 76b4c08fd3329d04613ea1bd0fd2c6c6d7a1d104
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 3190e107ed5b443f6a6d5944a124f3327353770e
+ms.sourcegitcommit: e75969aa44a1aab722ac44d09c37508ffbad8738
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225989"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "61307603"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -191,12 +191,12 @@ ms.locfileid: "61225989"
 
 |Member|
 |:---|
-|Строка|
+|String|
 |Целое число|
-|Ссылка|
-|Двоичный|
-|Логическое|
-|Даты и время|
+|Справка|
+|Binary|
+|Boolean|
+|DateTime|
 
 ### <a name="mutability-values"></a>значения мутируемости
 
@@ -654,37 +654,6 @@ ms.locfileid: "61225989"
 |maliciousIPAddressValidCredentialsBlockedIP|
 |unknownFutureValue|
 
-### <a name="risklevel-values"></a>значения riskLevel
-
-|Member|
-|:---|
-|низкий|
-|medium|
-|высокая|
-|hidden|
-|Нет|
-|unknownFutureValue|
-
-### <a name="riskstate-values"></a>значения riskState
-
-|Member|
-|:---|
-|Нет|
-|confirmedSafe|
-|исправлено|
-|отклонено|
-|atRisk|
-|confirmedCompromised|
-|unknownFutureValue|
-
-### <a name="tokenissuertype-values"></a>значения tokenIssuerType
-
-|Member|
-|:---|
-|AzureAD|
-|ADFederationServices|
-|UnknownFutureValue|
-
 ### <a name="usageauthmethod-values"></a>useAuthMethod values
 
 |Member|
@@ -858,7 +827,7 @@ ms.locfileid: "61225989"
 
 |Member|
 |:---|
-|birthday|
+|birthday;|
 |свадьба|
 |unknownFutureValue|
 
@@ -1119,7 +1088,7 @@ ms.locfileid: "61225989"
 
 | Member
 |:-------------------------
-| обязательно
+| Обязательный
 | необязательный
 | resource
 
@@ -1630,7 +1599,7 @@ Enum для типов значений реестра, определенных
 | dwordLittleEndian | 3     | REG_DWORD_LITTLE_ENDIAN типа значения реестра. |
 | dwordBigEndian    | 4     | REG_DWORD_BIG_ENDIAN тип значения реестра.    |
 | expandSz          | 5     | REG_EXPAND_SZ тип значения реестра.           |
-| link              | 6      | REG_LINK тип значения реестра.                |
+| ссылка              | 6      | REG_LINK тип значения реестра.                |
 | multiSz           | 7      | REG_MULTI_SZ тип значения реестра.            |
 | Нет              | 8      | REG_NONE тип значения реестра.                |
 | qword             | 9      | REG_QWORD тип значения реестра.               |
@@ -1733,23 +1702,6 @@ Enum для серьезности оповещений.
 |confirmedCompromised|
 |unknownFutureValue|
 
-### <a name="riskdetail-values"></a>значения riskDetail
-
-|Member|
-|:---|
-|Нет|
-|adminGeneratedTemporaryPassword|
-|userPerformedSecuredPasswordChange|
-|userPerformedSecuredPasswordReset|
-|adminConfirmedSigninSafe|
-|aiConfirmedSigninSafe|
-|userPassedMFADrivenByRiskBasedPolicy|
-|adminDismissedAllRiskForUser|
-|AdminConfirmedSigninCompromised|
-|AdminConfirmedUserCompromised|
-|hidden|
-|unknownFutureValue|
-
 ### <a name="advancedconfigstate-values"></a>расширенные значенияConfigState
 
 |Member|
@@ -1779,26 +1731,6 @@ Enum для серьезности оповещений.
 |oneDriveBusiness|
 |oneDriveConsumer|
 |dropbox|
-
-### <a name="riskeventtype-values"></a>значения riskEventType
-
-|Member|
-|:---|
-|unlikelyTravel|
-|anonymizedIPAddress|
-|maliciousIPAddress|
-|unfamiliarFeatures|
-|malwareInfectedIPAddress|
-|suspiciousIPAddress|
-|leakedCredentials|
-|investigationsThreatIntelligence|
-|общий|
-|AdminConfirmedUserCompromised|
-|mcasImpossibleTravel|
-|mcasSuspiciousInboxManipulationRules|
-|investigationsThreatIntelligenceSigninLinked|
-|maliciousIPAddressValidCredentialsBlockedIP|
-|unknownFutureValue|
 
 ### <a name="networktype-values"></a>значения networkType
 
@@ -2074,13 +2006,13 @@ Enum для серьезности оповещений.
 |:---|:---|
 |Нет|0|
 |High (Высокий)|1|
-|Низкий|2|
+|Низкие|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>значения threatAssessmentContentType
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| почта;   | 1     | Угроза почты.            |
+| mail   | 1     | Угроза почты.            |
 | url    | 2     | УГРОЗА URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 
