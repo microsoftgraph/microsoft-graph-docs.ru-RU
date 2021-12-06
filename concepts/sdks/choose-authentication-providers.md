@@ -166,7 +166,7 @@ final User me = graphClient.me().buildRequest().get();
 
 Пока недоступна. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://aka.ms/graphrequests) если это важно для вас.
 
-# <a name="go"></a>[Перейти](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -323,7 +323,7 @@ final User me = graphClient.me().buildRequest().get();
 
 Пока недоступна. Пожалуйста, поддержите или откройте запрос на [Graph Microsoft,](https://aka.ms/graphrequests) если это важно для вас.
 
-# <a name="go"></a>[Перейти](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -445,7 +445,7 @@ final User me = graphClient.me().buildRequest().get();
 
 Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://aka.ms/graphrequests) если это важно для вас.
 
-# <a name="go"></a>[Перейти](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -556,7 +556,7 @@ final User me = graphClient.me().buildRequest().get();
 
 Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://aka.ms/graphrequests) если это важно для вас.
 
-# <a name="go"></a>[Перейти](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -650,7 +650,7 @@ var graphClient = new GraphServiceClient(authProvider);
 
 Неприменимо.
 
-# <a name="go"></a>[Перейти](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 Неприменимо.
 
@@ -750,7 +750,7 @@ MSALAuthenticationProviderOptions *authProviderOptions= [[MSALAuthenticationProv
 
 Неприменимо.
 
-# <a name="go"></a>[Перейти](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -852,7 +852,7 @@ final User me = graphClient.me().buildRequest().get();
 
 Еще не доступно. Пожалуйста, проголосуйте за или откройте запрос Graph [майкрософт,](https://aka.ms/graphrequests) если это важно для вас.
 
-# <a name="go"></a>[Перейти](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 

@@ -38,7 +38,7 @@ ms.locfileid: "61226377"
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-read.md)]
 
-# <a name="go"></a>[Перейти](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -67,7 +67,7 @@ ms.locfileid: "61226377"
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-select.md)]
 
-# <a name="go"></a>[Перейти](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -95,7 +95,7 @@ ms.locfileid: "61226377"
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-list.md)]
 
-# <a name="go"></a>[Перейти](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -125,7 +125,7 @@ ms.locfileid: "61226377"
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-index.md)]
 
-# <a name="go"></a>[Перейти](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -153,7 +153,7 @@ ms.locfileid: "61226377"
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-expand.md)]
 
-# <a name="go"></a>[Перейти](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -181,7 +181,7 @@ ms.locfileid: "61226377"
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-delete.md)]
 
-# <a name="go"></a>[Перейти](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -209,7 +209,7 @@ ms.locfileid: "61226377"
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-create.md)]
 
-# <a name="go"></a>[Перейти](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -237,7 +237,7 @@ ms.locfileid: "61226377"
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-update.md)]
 
-# <a name="go"></a>[Перейти](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -265,7 +265,7 @@ ms.locfileid: "61226377"
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-headers.md)]
 
-# <a name="go"></a>[Перейти](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -293,7 +293,7 @@ ms.locfileid: "61226377"
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-queryparams.md)]
 
-# <a name="go"></a>[Перейти](#tab/Go)
+# <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
