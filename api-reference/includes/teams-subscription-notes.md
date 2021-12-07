@@ -3,12 +3,12 @@ author: nkramer
 ms.topic: include
 ms.date: 01/25/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 0c2faca238d1127462de5f70aadffd1ef3edd2d0
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 0bd1801747eb5f4871e121009bb2017b2c17c9f3
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61132218"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61323857"
 ---
 <!-- markdownlint-disable MD041-->
 
@@ -17,6 +17,8 @@ ms.locfileid: "61132218"
 Подписки **chatMessage** с делегированными разрешениями не поддерживают данные ресурса (**includeResourceData** должен иметь значение `false`) и не требуют [шифрования](/graph/webhooks-with-resource-data). Единственным исключением является ресурс `/users/{id}/chats/getAllMessages` (доступный только в бета-версии), который поддерживает данные ресурса независимо от типа разрешения.
 
 Подписки **chatMessage** с разрешениями для приложений включают данные ресурса и требуют [шифрования](/graph/webhooks-with-resource-data). Создание подписки завершается сбоем, если не указан [encryptionCertificate](/graph/api/resources/subscription). Перед созданием подписки **chatMessage** требуется запросить доступ. Дополнительные сведения см. в статье [Защищенные API в Microsoft Teams](/graph/teams-protected-apis).
+
+Для получения следующих значений в `Prefer: include-unknown-enum-members` **chatMessage** **messageType** [evolvable enum:](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations)for and resource необходимо использовать заготку `systemEventMessage` `/teams/{id}/channels/{id}/messages` `/chats/{id}/messages` запроса.
 
 > [!NOTE]
 >`/teams/getAllMessages`и `/chats/getAllMessages` имеет требования к [лицензированию и оплате.](/graph/teams-licenses)
