@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: e0e6ac6237d9d6dce6d5ec786b69d6faaba8b814
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: 09efbe4e6d4ff5cefa986e12fa730dc2ec418505
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123581"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61321822"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -370,7 +370,7 @@ API [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy) может �
 
 ## <a name="reports"></a>Отчеты
 
-### <a name="azure-ad-activity-reports-can-return-an-error"></a>Отчеты о действиях Azure AD могут возвращать ошибку
+### <a name="license-check-errors-for-azure-ad-activity-reports"></a>Ошибки проверки лицензий для отчетов о действиях Azure AD
 
 Если у вас есть действительная лицензия Azure AD Premium и вы вызываете API отчетов о действиях Azure AD [directoryAudit](/graph/api/resources/directoryaudit), [signIn](/graph/api/resources/signin) или [provisioning](/graph/api/resources/provisioningobjectsummary), по-прежнему может возникнуть сообщение об ошибке, аналогичное указанному ниже.
 

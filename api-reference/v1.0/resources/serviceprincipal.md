@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: e0f0d638c39d0b0c6043a9dbe1a22e2b9b47cacd
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: 2cbdb61db0e1aa787401d6f819d722a8a1db2d39
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266343"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61322264"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -79,7 +79,7 @@ ms.locfileid: "61266343"
 ## <a name="properties"></a>Свойства
 
 > [!IMPORTANT]
-> Определенное использование `$filter` и параметра запроса `$search` поддерживается только при применении заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
+> Определенное использование `$filter` и параметра запроса `$search` поддерживается только при применении заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries#service-principal-properties).
 
 | Свойство     | Тип |Описание|
 |:---------------|:--------|:----------|
@@ -99,7 +99,7 @@ ms.locfileid: "61266343"
 |displayName|String|Отображаемое имя для субъекта-службы. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` для значений `null`), `$search` и `$orderBy`. |
 |homepage|String|Главная или начальная страница приложения.|
 |id|String|Уникальный идентификатор для субъекта-службы. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения. Поддерживает `$filter` (`eq`, `ne`, `not`, `in`).|
-| info | [informationalUrl](informationalurl.md) | Базовые данные профиля для полученного приложения, такие как URL-адреса маркетинга, поддержки, условий обслуживания и заявления о конфиденциальности. Условия обслуживания и заявление о конфиденциальности отображаются в окне запроса согласия пользователя. Дополнительные сведения см. в статье [Добавление условий обслуживания и заявления о конфиденциальности для зарегистрированных приложений Azure AD](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le` и `eq` по `null` значениям).  |
+| info | [informationalUrl](informationalurl.md) | Базовые данные профиля для полученного приложения, такие как URL-адреса маркетинга, поддержки, условий обслуживания и заявления о конфиденциальности. Условия обслуживания и заявление о конфиденциальности отображаются в окне запроса согласия пользователя. Дополнительные сведения см. в статье [Добавление условий обслуживания и заявления о конфиденциальности для зарегистрированных приложений Azure AD](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le` и `eq` для значений `null`).  |
 |keyCredentials|Коллекция [keyCredential](keycredential.md)|Коллекция ключевых учетных данных, связанных с субъектом-службой. Значение null не допускается. Поддерживает `$filter` (`eq`, `not`, `ge`, `le`).            |
 |loginUrl|Строка|Указывает URL-адрес, по которому поставщик услуг перенаправляет пользователя в Azure AD для проверки подлинности. Azure AD использует этот URL-адрес для запуска приложения из Microsoft 365 или из раздела "Мои приложения" в Azure AD. Если оставить пустое значение, Azure AD осуществляет вход на основе IdP для приложений, для которых настроен [единый вход на базе SAML](/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso). Пользователь запускает приложение из Microsoft 365, из раздела "Мои приложения" в Azure AD или по URL-адресу единого входа Azure AD.|
 |logoutUrl|String| Указывает URL-адрес, используемый службой проверки подлинности корпорации Майкрософт для выхода пользователя с помощью [основного канала](https://openid.net/specs/openid-connect-frontchannel-1_0.html) OpenId Connect, [обратного канала](https://openid.net/specs/openid-connect-backchannel-1_0.html) или протоколов выхода SAML.|

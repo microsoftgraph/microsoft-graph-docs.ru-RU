@@ -1,18 +1,18 @@
 ---
-title: Создание объекта Contact
+title: Создание контакта
 description: Добавление контакта в корневую папку с контактами или конечную точку контактов другой папки с контактами.
 author: kevinbellinger
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 802c877bc58052b0535b3384692140670a3e1ec1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 53691c4a8251745f4d6d693f0a62914739592e3a
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61020152"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61321766"
 ---
-# <a name="create-contact"></a>Создание объекта Contact
+# <a name="create-contact"></a>Создание контакта
 
 Пространство имен: microsoft.graph
 
@@ -41,14 +41,14 @@ POST /users/{id | userPrincipalName}/contactFolders/{contactFolderId}/contacts
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
-Предоставьте в тексте запроса описание объекта [Contact](../resources/contact.md) в формате JSON.
+Предоставьте в тексте запроса описание объекта [contact](../resources/contact.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `201 Created` и объект [Contact](../resources/contact.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `201 Created` и объект [contact](../resources/contact.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -90,16 +90,14 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-contact-from-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-contact-from-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-Предоставьте в тексте запроса описание объекта [contact](../resources/contact.md) в формате JSON.
-
-##### <a name="response"></a>Отклик
-Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+Ниже представлен пример ответа. Примечание: показанный здесь объект ответа может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 25e947c5f244f2ba68f6353cdc44c304c742660c
-ms.sourcegitcommit: e75969aa44a1aab722ac44d09c37508ffbad8738
+ms.openlocfilehash: bfeb44e19d355b945b14dd83cb6ac5126ffcbe34
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2021
-ms.locfileid: "61307617"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61321906"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -163,7 +163,7 @@ ms.locfileid: "61307617"
 ## <a name="properties"></a>Свойства
 
 > [!IMPORTANT]
-> Определенное использование `$filter` и параметра запроса `$search` поддерживается только при применении заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
+> Определенное использование `$filter` и параметра запроса `$search` поддерживается только при применении заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries#user-properties).
 
 | Свойство       | Тип    | Описание |
 |:---------------|:--------|:------------|
@@ -235,7 +235,7 @@ ms.locfileid: "61307617"
 | showInAddressList | Логический | Значение `true`, если глобальный список адресов Outlook должен содержать этого пользователя. В противном случае используется значение `false`. Если не задано, будет считаться, что присвоено значение `true`. Для пользователей, приглашенных через диспетчер приглашений, этому свойству присваивается значение `false`. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `in`). |
 | signInSessionsValidFromDateTime | DateTimeOffset | Все маркеры обновления или маркеры сеансов (файлы cookie сеанса), выпущенные до этого момента, являются недопустимыми. В приложениях возникает ошибка при использовании недопустимых маркеров обновления или маркеров сеансов для получения маркера делегированного доступа (для доступа к API, например Microsoft Graph).  В этом случае приложению потребуется получить новый маркер обновления, сделав запрос к конечной точке авторизации. Только для чтения. Сброс можно выполнить с помощью [revokeSignInSessions](../api/user-revokesigninsessions.md).|
 | skills | Коллекция строк | Список навыков пользователя. <br><br>Возвращается только с помощью оператора `$select`. |
-| signInActivity | [signInActivity](signinactivity.md) | Получение последней даты входа в систему и идентификатора запроса на вход для указанного пользователя. Только для чтения.<br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`), *но* без других фильтруемых свойств. **Примечание.** Сведения для этого свойства требуют лицензии Azure AD Premium P1/P2 и разрешения **AuditLog.Read.All**.<br><br>**Примечание.** Существует [известная проблема](/graph/known-issues#azure-ad-activity-reports) с получением этого свойства.|
+| signInActivity | [signInActivity](signinactivity.md) | Получение последней даты входа в систему и идентификатора запроса на вход для указанного пользователя. Только для чтения.<br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`), *но* без других фильтруемых свойств. **Примечание.** Сведения для этого свойства требуют лицензии Azure AD Premium P1/P2 и разрешения **AuditLog.Read.All**.<br><br>**Примечание.** Существует [известная проблема](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) с получением этого свойства.|
 | state | String | Область, республика, край или округ в адресе пользователя. Максимальная длина: 128 символов. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям). |
 | streetAddress | String | Почтовый адрес места работы пользователя. Максимальная длина: 1024 символа. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям).|
 | surname | String | Фамилия пользователя. Максимальная длина: 64 символа. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям). |

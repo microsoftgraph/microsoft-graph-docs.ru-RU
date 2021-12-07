@@ -5,12 +5,12 @@ doc_type: resourcePageType
 ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6475d46bfba12ec297b28295243f39da40f54f4a
-ms.sourcegitcommit: 6ae8c124fac63a195ccf516c9cff739f730b6b13
+ms.openlocfilehash: 391a882876772930479c0b01079a138fe33ac81e
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "60083897"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61321801"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
@@ -41,7 +41,7 @@ ms.locfileid: "60083897"
 |**Сообщения чата**| | |
 |[Список сообщений в чате](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Список сообщений чата в чате. |
 |[Получение сообщения в чате](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Получите одно сообщение чата в чате. |
-|[Получать сообщения во всех чатах для пользователя](../api/chats-getallmessages.md)| [коллекция чатов](chat.md)| Получите сообщения из всех чатов, в которых пользователь является участником, включая чаты 1:1, групповые чаты и чаты собраний. |
+|[Получение сообщений во всех чатах для пользователя](../api/chats-getallmessages.md)| [коллекция чатов](chat.md)| Получите сообщения из всех чатов, в которых пользователь является участником, включая чаты 1:1, групповые чаты и чаты собраний. |
 |[Получение всех сообщений в канале](../api/channel-getallmessages.md)|Коллекция [channel](channel.md) | Получайте все сообщения каналов, в которые входит пользователь. |
 |[Создание подписки для новых сообщений чата](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Слушайте новые, измененные и удаленные сообщения чата и реакции на них. |
 |[Отправка сообщения в чате](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| Отправка сообщения чата в существующей беседе 1:1 или групповом чате.|
@@ -73,10 +73,10 @@ ms.locfileid: "60083897"
 |reactions| Коллекция [chatMessageReaction](chatmessagereaction.md) | Реакции на это сообщение чата (например, Like).|
 |языковые стандарты|string|Локализовать сообщение чата, за набором клиентом. Всегда задавайте значение `en-us`.|
 |policyViolation | [chatMessagePolicyViolation](chatmessagepolicyviolation.md) |Определяет свойства нарушения политики, установленные приложением для предотвращения потери данных (DLP).|
-|chatId|string|Если сообщение было отправлено в чате, представляет собой удостоверение чата.|
+|chatId|string|Если сообщение было отправлено в **чате,** представляет собой удостоверение **чата**.|
 |channelIdentity|[channelIdentity](channelidentity.md)|Если сообщение было отправлено в канале, представляет удостоверение канала.|
 |webUrl|string|Только для чтения. Ссылка на сообщение в Microsoft Teams.|
-|eventDetail|[eventMessageDetail](../resources/eventmessagedetail.md)|Только для чтения.  При этом представлены сведения о событии, произошедшем в чате, канале или группе, например, добавлены участники и так далее. Для сообщений событий будет установлено свойство **messageType** `systemEventMessage` .|
+|eventDetail|[eventMessageDetail](../resources/eventmessagedetail.md)|Только для чтения.  При этом представлены сведения о событии, произошедшем в чате, канале **или** **команде,** например добавление новых участников. Для сообщений событий будет установлено свойство **messageType** `systemEventMessage` .|
 
 ## <a name="relationships"></a>Связи
 

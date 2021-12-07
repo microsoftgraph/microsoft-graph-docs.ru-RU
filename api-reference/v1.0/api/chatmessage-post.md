@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5c21b44e676335491f612816711b33b47988412b
-ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
+ms.openlocfilehash: 6a60ce684a87e8da9f132eea88df2f1734a23027
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61131835"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61322074"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>Отправка chatMessage в канале или чате
 
@@ -29,8 +29,8 @@ ms.locfileid: "61131835"
 ### <a name="permissions-for-channel"></a>Разрешения для канала
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | ChannelMessage.Send |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (рабочая или учебная учетная запись)     | ChannelMessage.Send |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Teamwork.Migrate.All |
 
 > **Примечание.** Разрешения приложений *поддерживаются только* для [миграции.](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams) В дальнейшем корпорация Майкрософт может потребовать у вас или ваших клиентов оплаты дополнительных сборов на основе количества импортированных данных.
@@ -38,8 +38,8 @@ ms.locfileid: "61131835"
 ### <a name="permissions-for-chat"></a>Разрешения для чата
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | ChatMessage.Send, Chat.ReadWrite |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (рабочая или учебная учетная запись)     | ChatMessage.Send, Chat.ReadWrite |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -69,7 +69,7 @@ POST /chats/{chat-id}/messages
 | Авторизация | Bearer {код}. Обязательно. |
 | Content-Type | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса поставляем JSON-представление [объекта chatMessage.](../resources/chatmessage.md) Обязательным является только свойство body; другие свойства необязательны.
 
@@ -119,7 +119,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -128,7 +128,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
@@ -156,6 +156,7 @@ Content-type: application/json
     "locale": "en-us",
     "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616990032035?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616990032035&parentMessageId=1616990032035",
     "policyViolation": null,
+    "eventDetail": null,
     "from": {
         "application": null,
         "device": null,
@@ -230,7 +231,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -266,6 +267,7 @@ Content-type: application/json
     "locale": "en-us",
     "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616965872395?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616965872395&parentMessageId=1616965872395",
     "policyViolation": null,
+    "eventDetail": null,
     "from": {
         "application": null,
         "device": null,
@@ -355,7 +357,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -364,7 +366,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -391,6 +393,7 @@ Content-type: application/json
     "locale": "en-us",
     "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616991851162?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616991851162&parentMessageId=1616991851162",
     "policyViolation": null,
+    "eventDetail": null,
     "from": {
         "application": null,
         "device": null,
@@ -471,7 +474,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -480,7 +483,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -507,6 +510,7 @@ Content-type: application/json
     "locale": "en-us",
     "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616991899452?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616991899452&parentMessageId=1616991899452",
     "policyViolation": null,
+    "eventDetail": null,
     "from": {
         "application": null,
         "device": null,
@@ -588,7 +592,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-5-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-5-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -597,7 +601,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -625,6 +629,7 @@ Content-type: application/json
     "webUrl": null,
     "channelIdentity": null,
     "policyViolation": null,
+    "eventDetail": null,
     "from": {
         "application": null,
         "device": null,
@@ -704,7 +709,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-6-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-6-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -739,6 +744,7 @@ Content-type: application/json
     "locale": "en-us",
     "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616992043931?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616992043931&parentMessageId=1616992043931",
     "policyViolation": null,
+    "eventDetail": null,
     "from": {
         "application": null,
         "device": null,
@@ -824,7 +830,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-atmentionchannel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-atmentionchannel-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -833,7 +839,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
@@ -955,7 +961,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-atmentionteam-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-atmentionteam-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,22 +5,22 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 306c45ecf79454e01353101fbf1196304935932f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 26e021f6e9cc68cab2b44df32c41fe1225b59215
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138990"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61321808"
 ---
 # <a name="get-system-messages-for-microsoft-teams-using-microsoft-graph-apis"></a>Получение системных сообщений для Microsoft Teams с помощью API Microsoft Graph
 
 Microsoft Teams создает системные сообщения для событий, таких как добавление участников в чат, обновление имени команды и обновление описания канала. Системные сообщения позволяют звонящему получить аналитику событий, произошедших в команде, канале или чате.
 
 
-Microsoft Graph предоставляет системные сообщения в рамках операций GET [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true) и [уведомлений об изменениях для чата и сообщений канала](teams-changenotifications-chatmessage.md).
+Microsoft Graph предоставляет системные сообщения в рамках операций GET [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true) и [уведомлений об изменениях для чата и сообщений канала](teams-changenotifications-chatmessage.md).
 
 
-Системные сообщения представлены как объекты [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true).
+Системные сообщения представлены как объекты [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true).
 В этом случае для свойства **messageType** задается значение `systemEventMessage`, а свойство **eventDetail** предоставляет сведения о событии.
 
 
@@ -33,7 +33,7 @@ Microsoft Graph предоставляет системные сообщения
 - GET /chats/{chat-id}/messages
 - GET /chats/{chat-id}/messages/{message-id}
 
-Дополнительные сведения см. в статье [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta&preserve-view=true).
+Дополнительные сведения см. в статье [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-v1.0&preserve-view=true).
 
 ## <a name="supported-change-notifications"></a>Поддерживаемые уведомления об изменениях
 

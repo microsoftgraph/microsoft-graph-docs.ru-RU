@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: f296c4c29f150100b585e8c86651e42d841a8820
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 38d30da6d55ebdff4abb55d584b4c0cb7d59a9fa
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242878"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61322011"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Работа с API управления правами Azure AD
 
@@ -48,6 +48,7 @@ Azure Active Directory управления правами Azure AD позвол
 | [Удаление accessPackage](../api/accesspackage-delete.md) | | Удаление **accessPackage**. |
 | [FilterByCurrentUser](../api/accesspackage-filterbycurrentuser.md) | [коллекция accessPackage](accesspackage.md) | Извлечение списка **объектов accessPackage,** фильтруемых на входе пользователя. |
 | [Список accessPackageAssignmentRequests](../api/entitlementmanagement-list-assignmentrequests.md) | [accessPackageAssignmentRequest collection](accesspackageassignmentrequest.md) | Извлечение списка **объектов accessPackageAssignmentRequest.** |
+| [Создание accessPackageAssignmentRequest](../api/entitlementmanagement-post-assignmentrequests.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Создает новый **объект accessPackageAssignmentRequest.** |
 | [Получить accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Чтение свойств и связей объекта **accessPackageAssignmentRequest.** |
 | [Удаление accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-delete.md) |Нет | Удаление **accessPackageAssignmentRequest**. |
 |[FilterByCurrentUser](../api/accesspackageassignmentrequest-filterbycurrentuser.md)|[accessPackageAssignmentRequest collection](../resources/accesspackageassignmentrequest.md)|Извлечение списка **объектов accessPackageAssignmentRequest,** фильтруемых на входе пользователя.|

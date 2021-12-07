@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 10e47da1f75bb405d37384cdd7c87664150dbff9
-ms.sourcegitcommit: e75969aa44a1aab722ac44d09c37508ffbad8738
+ms.openlocfilehash: 34f4a662e0825698e36c11eb67488da37c9c5f6b
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2021
-ms.locfileid: "61307645"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61322256"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -133,7 +133,7 @@ ms.locfileid: "61307645"
 ## <a name="properties"></a>Свойства
 
 > [!IMPORTANT]
-> Определенное использование `$filter` и параметра запроса `$search` поддерживается только при применении заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
+> Определенное использование `$filter` и параметра запроса `$search` поддерживается только при применении заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries#user-properties).
 
 | Свойство       | Тип    |Описание|
 |:---------------|:--------|:----------|

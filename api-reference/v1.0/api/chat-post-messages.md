@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8639f86ae3d791f082c027abe101576994611606
-ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
+ms.openlocfilehash: 9ef5d745be1de10883a456f2bd04fcb88160e203
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61131948"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61322166"
 ---
 # <a name="send-message-in-a-chat"></a>Отправка сообщения в чате
 
@@ -28,8 +28,8 @@ ms.locfileid: "61131948"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | ChatMessage.Send, Chat.ReadWrite |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (рабочая или учебная учетная запись)     | ChatMessage.Send, Chat.ReadWrite |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -94,7 +94,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessages-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessages-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -133,6 +133,7 @@ Content-type: application/json
     "webUrl": null,
     "channelIdentity": null,
     "policyViolation": null,
+    "eventDetail": null,
     "from": {
         "application": null,
         "device": null,

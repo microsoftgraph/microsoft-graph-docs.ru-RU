@@ -1,18 +1,18 @@
 ---
-title: Создание объекта Contact
+title: Создание контакта
 description: Добавление контакта в корневую папку с контактами или конечную точку контактов другой папки с контактами.
 author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 150299b7ead366921a654980403015b17a31b3ba
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7378fd2c37bdcf5c1560b3653c258960d3ef4586
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031381"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61321731"
 ---
-# <a name="create-contact"></a>Создание объекта Contact
+# <a name="create-contact"></a>Создание контакта
 
 Пространство имен: microsoft.graph
 
@@ -50,7 +50,7 @@ POST /users/{id | userPrincipalName}/contactFolders/{contactFolderId}/contacts
 В случае успешной работы этот метод возвращает `201 Created` код отклика и [контактный](../resources/contact.md) объект в тексте ответа.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -102,16 +102,14 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-contact-from-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-contact-from-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-Предоставьте в тексте запроса описание объекта [contact](../resources/contact.md) в формате JSON.
-
-##### <a name="response"></a>Отклик
-Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+Ниже представлен пример ответа. Примечание: показанный здесь объект ответа может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

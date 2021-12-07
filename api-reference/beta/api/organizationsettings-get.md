@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: d1ef20e1c8d3a148718abaf0b5ca4af881547c3f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: aaf102888087c6fecbd62276a48aaba6b49fe7c5
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61026626"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61322235"
 ---
 # <a name="get-organizationsettings"></a>Get organizationSettings
 
@@ -20,7 +20,7 @@ ms.locfileid: "61026626"
 
 Извлечение свойств и связей объекта [organizationSettings,](../resources/organizationsettings.md) включая **profileCardProperties.**
 
-Эта операция не возвращает [itemInsightsSettings](../resources/iteminsightssettings.md) через **свойство навигации itemInsights.** Вместо [этого используйте get itemInsightsSettings.](iteminsightssettings-get.md)
+Эта операция не возвращает [insightsSettings](../resources/insightssettings.md). В зависимости от типа анализа можно получить их параметры с помощью [list itemInsights](organizationsettings-list-iteminsights.md) или [list peopleInsights.](organizationsettings-list-peopleinsights.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,8 +28,8 @@ ms.locfileid: "61026626"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User.Read, User.Read.All                    |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Делегированное (рабочая или учебная учетная запись)     | User.Read, User.Read.All                    |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                              |
 | Для приложений                            | Не поддерживается.                              |
 
 >**Примечание:** Использование делегирования разрешений для этой операции требует от пользователя, вписаного, роли администратора клиента или глобального администратора.
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/organization/a9f3c90b-04fd-4504-a302-47672b
 [!INCLUDE [sample-code](../includes/snippets/java/get-organizationsettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-organizationsettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

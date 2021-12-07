@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: SarahBar
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: ac77010c81e0bcf49988c9b04d737cb18a23f74b
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 4b393275af10eb30bf8090b682451a7da99bf7cb
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225088"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61322144"
 ---
 # <a name="list-directoryaudits"></a>Перечисление directoryAudits
 
@@ -26,12 +26,12 @@ ms.locfileid: "61225088"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
+|Делегированное (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.   |
 |Application | AuditLog.Read.All и Directory.Read.All | 
 
 > [!IMPORTANT]
-> Этот API имеет [известные](/graph/known-issues#azure-ad-activity-reports) проблемы и в настоящее время требует согласия на оба **auditLog.Read.All** и **Directory.Read.All** разрешений.
+> Этот API имеет [известные](/graph//graph/known-issues#license-check-errors-for-azure-ad-activity-reports) проблемы и в настоящее время требует согласия на оба **auditLog.Read.All** и **Directory.Read.All** разрешений.
 
 Кроме того, приложения должны быть [правильно зарегистрированы](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) в Azure AD.
 
@@ -42,7 +42,7 @@ ms.locfileid: "61225088"
 GET /auditLogs/directoryAudits
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
 Этот метод поддерживает следующие параметры запроса OData, чтобы помочь настроить ответ. Сведения об использовании этих параметров см. в материале [OData query parameters.](/graph/query-parameters)
 
@@ -112,7 +112,7 @@ GET https://graph.microsoft.com/beta/auditLogs/directoryAudits
 [!INCLUDE [sample-code](../includes/snippets/java/get-directoryaudits-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-directoryaudits-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

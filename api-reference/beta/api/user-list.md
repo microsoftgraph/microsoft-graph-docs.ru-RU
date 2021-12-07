@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 473e016b749345b52b211f8519e79f6f3d6318b2
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: c7748ba6ec8663274b030465126a3b8f66e7c7ea
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266350"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61322277"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/beta/users
 [!INCLUDE [sample-code](../includes/snippets/java/get-users-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-users-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -106,7 +106,7 @@ GET https://graph.microsoft.com/beta/users
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -168,7 +168,7 @@ GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identi
 [!INCLUDE [sample-code](../includes/snippets/java/get-signinname-users-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-signinname-users-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -176,7 +176,7 @@ GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identi
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -204,7 +204,7 @@ Content-type: application/json
 
 Ниже приведен пример запроса. Сведения для свойства **signInActivity** требуют лицензии Azure AD Premium P1/P2 и разрешения AuditLog.Read.All. 
 
->**Примечание.** Существует [известная проблема](/graph/known-issues#azure-ad-activity-reports) с получением свойства **signInActivity**.
+>**Примечание.** Существует [известная проблема](/graph//graph/known-issues#license-check-errors-for-azure-ad-activity-reports) с получением свойства **signInActivity**.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -231,7 +231,7 @@ GET https://graph.microsoft.com/beta/users?$select=displayName,userPrincipalName
 [!INCLUDE [sample-code](../includes/snippets/java/get-signin-last-time-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-signin-last-time-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -239,7 +239,7 @@ GET https://graph.microsoft.com/beta/users?$select=displayName,userPrincipalName
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -285,7 +285,7 @@ Content-type: application/json
 
 Ниже приведен пример запроса. Сведения для свойства **signInActivity** требуют лицензии Azure AD Premium P1/P2 и разрешения AuditLog.Read.All. 
 
->**Примечание.** Существует [известная проблема](/graph/known-issues#azure-ad-activity-reports) с получением свойства **signInActivity**.
+>**Примечание.** Существует [известная проблема](/graph//graph/known-issues#license-check-errors-for-azure-ad-activity-reports) с получением свойства **signInActivity**.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -311,7 +311,7 @@ GET https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'Eric'
 [!INCLUDE [sample-code](../includes/snippets/java/get-signin-last-time-filter-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-signin-last-time-filter-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -320,7 +320,7 @@ GET https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'Eric'
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -355,7 +355,7 @@ Content-type: application/json
 
 Ниже приведен пример запроса. Сведения для свойства **signInActivity** требуют лицензии Azure AD Premium P1/P2 и разрешения AuditLog.Read.All. 
 
->**Примечание.** Существует [известная проблема](/graph/known-issues#azure-ad-activity-reports) с получением свойства **signInActivity**.
+>**Примечание.** Существует [известная проблема](/graph//graph/known-issues#license-check-errors-for-azure-ad-activity-reports) с получением свойства **signInActivity**.
 
 <!-- {
   "blockType": "ignored",
@@ -460,7 +460,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -522,7 +522,7 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/java/get-a-count-endswith-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-a-count-endswith-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -594,7 +594,7 @@ ConsistencyLevel: eventual
 [!INCLUDE [sample-code](../includes/snippets/java/get-wa-count-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-wa-count-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -651,7 +651,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
@@ -719,7 +719,7 @@ GET https://graph.microsoft.com/beta/users?$select=id,mail,assignedLicenses&$fil
 [!INCLUDE [sample-code](../includes/snippets/java/get-user-assignedlicenses-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-user-assignedlicenses-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

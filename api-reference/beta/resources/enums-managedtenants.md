@@ -1,22 +1,22 @@
 ---
 title: Значения переумерия управления с несколькими арендаторами
 description: Значения Graph управления с несколькими арендаторами
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: enumTypes
-ms.openlocfilehash: 1814e7c846b9a3c2394497d0221d2bb8a7dc5a86
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7218824959465cb7740953f837da0e3e630ec449
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59040577"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61321626"
 ---
 # <a name="multi-tenant-management-enumeration-values"></a>Значения переумерия управления с несколькими арендаторами
 
 ### <a name="delegatedprivilegestatus-values"></a>delegatedPrivilegeStatus values
 
-|Элемент|
+|Member|
 |:---|
 |Нет|
 |delegatedAdminPrivileges|
@@ -24,7 +24,7 @@ ms.locfileid: "59040577"
 
 ### <a name="managementactionstatus-values"></a>значения managementActionStatus
 
-|Элемент|
+|Member|
 |:---|
 |toAddress|
 |завершено|
@@ -39,20 +39,20 @@ ms.locfileid: "59040577"
 
 ### <a name="managementcategory-values"></a>значения managementCategory
 
-|Элемент|
+|Member|
 |:---|
 |настраиваемый|
-|устройства|
+|devices|
 |удостоверение|
 |unknownFutureValue|
 
 ### <a name="managementparametervaluetype-values"></a>значения managementParameterValueType
 
-|Элемент|
+|Member|
 |:---|
-|String|
+|string|
 |integer|
-|boolean|
+|логический|
 |guid|
 |stringCollection|
 |integerCollection|
@@ -62,7 +62,7 @@ ms.locfileid: "59040577"
 
 ### <a name="tenantonboardingstatus-values"></a>значения tenantOnboardingStatus
 
-|Элемент|
+|Member|
 |:---|
 |неугомонные|
 |inProcess|
@@ -70,9 +70,20 @@ ms.locfileid: "59040577"
 |неактивно|
 |unknownFutureValue|
 
+### <a name="tenantonboardingeligibilityreason-values"></a>значения tenantOnboardingEligibilityReason
+
+|Member|
+|:---|
+|Нет|
+|contractType|
+|delegatedAdminPrivileges|
+|usersCount|
+|license|
+|unknownFutureValue|
+
 ### <a name="workloadactioncategory-values"></a>workloadActionCategory values
 
-|Элемент|
+|Member|
 |:---|
 |автоматизировано|
 |Вручную|
@@ -80,7 +91,7 @@ ms.locfileid: "59040577"
 
 ### <a name="workloadactionstatus-values"></a>значения workloadActionStatus
 
-|Элемент|
+|Member|
 |:---|
 |toAddress|
 |завершено|
@@ -91,7 +102,7 @@ ms.locfileid: "59040577"
 
 ### <a name="workloadonboardingstatus-values"></a>значения workloadOnboardingStatus
 
-|Элемент|
+|Member|
 |:---|
 |notOnboarded|
 |onboarded|

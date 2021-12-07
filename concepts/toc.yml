@@ -374,6 +374,8 @@ items:
             href: social-intel-concept-overview.md
           - name: Получение информации о релевантных людях
             href: people-example.md
+          - name: Настройка конфиденциальности аналитики людей (предварительная версия)
+            href: insights-customize-people-insights-privacy.md
           - name: Настройка карточки профиля (предварительная версия)
             href: add-properties-profilecard.md
           - name: Обзор аналитики элементов

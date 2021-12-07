@@ -1,16 +1,16 @@
 ---
 title: тип ресурса orgContact
-description: Ниже этот ресурс представлен в формате JSON.
+description: Ниже представлено описание ресурса в формате JSON.
 ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: c17c41ee1cedeba914cfb3cedf17eb717b12b42e
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: cc600505f6e814f209238628e74693f8632b2290
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225114"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61322060"
 ---
 # <a name="orgcontact-resource-type"></a>тип ресурса orgContact
 
@@ -22,7 +22,7 @@ ms.locfileid: "61225114"
 
 Наследуется от [directoryObject](directoryobject.md).
 
-Этот ресурс поддерживает отслеживание добавлений, удалений и обновлений с помощью [разностного запроса](/graph/delta-query-overview) с функцией [delta](../api/orgcontact-delta.md). Этот ресурс — открытый тип, который позволяет передавать другие свойства.
+Этот ресурс поддерживает отслеживание добавлений, удалений и обновлений с помощью [разностного запроса](/graph/delta-query-overview) с функцией [delta](../api/orgcontact-delta.md). Этот ресурс относится к открытому типу, который позволяет передавать другие свойства.
 
 ## <a name="methods"></a>Методы
 
@@ -42,22 +42,22 @@ ms.locfileid: "61225114"
 ## <a name="properties"></a>Свойства
 
 > [!IMPORTANT]
-> Определенное использование `$filter` и параметра запроса `$search` поддерживается только при применении заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries).
+> Определенное использование `$filter` и параметра запроса `$search` поддерживается только при применении заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Дополнительные сведения см. в статье [Расширенные возможности запросов для объектов каталога Azure AD](/graph/aad-advanced-queries#organizational-contacts-properties).
 
 | Свойство | Тип | Описание |
 | -------- | ---- | ----------- |
 | адреса | [коллекция physicalOfficeAddress](physicalofficeaddress.md) | Почтовые адреса для этого организационного контакта. Пока у контакта может быть только один физический адрес. |
 | companyName | String | Имя компании, к которую принадлежит этот организационный контакт. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` для значений `null`). |
 | department | String | Имя отдела, в котором работает контакт. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` для значений `null`). |
-| displayName | Строка | Отображение имени для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям), `$search` и `$orderBy`.  |
-| givenName | String | Имя для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` для значений `null`).  |
-| id | Строка | Уникальный идентификатор для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `not`, `in`). |
+| displayName | String | Отображение имени для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` для значений `null`), `$search` и `$orderBy`.  |
+| givenName; | String | Имя для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` для значений `null`).  |
+| id | String | Уникальный идентификатор для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `not`, `in`). |
 | jobTitle; | String | Название задания для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` для значений `null`). |
-| почта; | String | Адрес SMTP для контакта, например, "jeff@contoso.onmicrosoft.com". Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` для значений `null`). |
+| mail | String | Адрес SMTP для контакта, например, "jeff@contoso.onmicrosoft.com". Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` для значений `null`). |
 | mailNickname | String | Псевдоним электронной почты (часть адреса электронной почты, предварительно ожидающих символ @) для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` для значений `null`). |
 | onPremisesLastSyncDateTime | DateTimeOffset | Дата и время последней синхронизации этого организационного контакта с локальной AD. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`). |
 | onPremisesProvisioningErrors | Коллекция [onPremisesProvisioningError](onpremisesprovisioningerror.md) | Список ошибок в обеспечении синхронизации для этого организационного контакта. Поддерживает `$filter` (`eq`, `not`). |
-| onPremisesSyncEnabled | Логический | **верно,** если этот объект синхронизирован из локального каталога; **false,** если этот объект был первоначально синхронизирован из локального каталога, но больше не синхронизирован и теперь освоен в Exchange; **null,** если этот объект никогда не был синхронизирован из локального каталога (по умолчанию). <br/> <br/>Поддерживает `$filter` (`eq`, `ne`, `not`, `in` и `eq` по `null` значениям). |
+| onPremisesSyncEnabled | Boolean | **верно,** если этот объект синхронизирован из локального каталога; **false,** если этот объект был первоначально синхронизирован из локального каталога, но больше не синхронизирован и теперь освоен в Exchange; **null,** если этот объект никогда не был синхронизирован из локального каталога (по умолчанию). <br/> <br/>Поддерживает `$filter` (`eq`, `ne`, `not`, `in` и `eq` по `null` значениям). |
 | phones | Коллекция [phone](phone.md) | Список телефонов для этого организационного контакта. Телефон могут быть мобильными, бизнес-и бизнесфаксами. Только один из каждого типа может присутствовать в коллекции. Поддерживает `$filter` (`eq`, `ne`, `not`, `in`). |
 | proxyAddresses | Коллекция String | Например: SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com". Для выражений фильтра в случае многозначных свойств требуется оператор **any**. Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 | surname | String | Фамилия для этого организационного контакта. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`и `eq` для значений `null`). |

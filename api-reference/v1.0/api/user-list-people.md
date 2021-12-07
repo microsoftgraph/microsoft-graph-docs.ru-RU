@@ -1,16 +1,16 @@
 ---
 title: Список людей
 description: Получите коллекцию объектов person, упорядоченных по их релевантности для пользователя, которая определяется его моделями общения и совместной работы, а также бизнес-отношениями.
-author: dkershaw10
+author: anthona
 ms.localizationpriority: high
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 65975845487e0eaa5110bcbde7b8ae8678707448
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9910a5fe6853f9baf9bd7005fb1b242e68f652aa
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61021251"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61322172"
 ---
 # <a name="list-people"></a>Список людей
 
@@ -99,7 +99,7 @@ GET https://graph.microsoft.com/v1.0/me/people
 [!INCLUDE [sample-code](../includes/snippets/java/get-person-collection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-person-collection-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

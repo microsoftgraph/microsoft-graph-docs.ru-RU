@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 08d5cc4fca905c2b8ef442839e13752186417e5d
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 5e037aea9f5582760731fdc351b5b94bdd15a0d0
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241683"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61322004"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -631,7 +631,7 @@ ms.locfileid: "61241683"
 
 | Member
 |:-------------------------
-| обязательно
+| Обязательный
 | необязательный
 | resource
 
@@ -1122,7 +1122,7 @@ Enum для типов значений реестра, определяемог
 |dwordLittleEndian|3| REG_DWORD_LITTLE_ENDIAN типа значения реестра.|
 |dwordBigEndian|4| REG_DWORD_BIG_ENDIAN тип значения реестра.|
 |expandSz|5| REG_EXPAND_SZ тип значения реестра.|
-|link|6 | REG_LINK тип значения реестра.|
+|ссылка|6 | REG_LINK тип значения реестра.|
 |multiSz|7 | REG_MULTI_SZ тип значения реестра.|
 |Нет|8 | REG_NONE тип значения реестра.|
 |qword|9 | REG_QWORD тип значения реестра.|
@@ -1376,6 +1376,7 @@ Enum для серьезности оповещений.
 | chatEvent |
 | ввод текста |
 | unknownFutureValue |
+| systemEventMessage |
 
 ### <a name="chatmessagepolicyviolationdlpactiontype-values"></a>значения chatMessagePolicyViolationDlpActionType
 
@@ -1577,7 +1578,7 @@ Enum для серьезности оповещений.
 
 | Member                |
 |:----------------------|
-| String                |
+| string                |
 | логический               |
 | int64                 |
 | stringCollection      |
@@ -1590,7 +1591,7 @@ Enum для серьезности оповещений.
 |:----------------------|
 | builtIn               |
 | настраиваемый                |
-| обязательно              |
+| Обязательный              |
 | unknownFutureValue    |
 
 ### <a name="identityuserflowattributeinputtype-values"></a>значения identityUserFlowAttributeInputType
@@ -1825,4 +1826,23 @@ Enum для серьезности оповещений.
 |default|
 |включено|
 |отключено|
+|unknownFutureValue|
+
+### <a name="callrecordingstatus-values"></a>значения callRecordingStatus 
+
+|Member|
+|:---|
+|success|
+|сбой|
+|начальный|
+|chunkFinished|
+|unknownFutureValue|
+
+### <a name="teamworkcalleventtype-values"></a>значения teamworkCallEventType 
+
+|Member|
+|:---|
+|call|
+|собрание|
+|screenShare|
 |unknownFutureValue|

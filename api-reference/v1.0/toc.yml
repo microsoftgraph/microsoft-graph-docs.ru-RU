@@ -81,6 +81,8 @@ items:
             href: /graph/graph-explorer/graph-explorer-features?context=graph/api/1.0
       - name: Использование Postman
         href: /graph/use-postman?context=graph/api/1.0
+      - name: Системные сообщения
+        href: /graph/system-messages?context=graph/api/1.0
   - name: Миграция
     expanded: false
     items:
@@ -418,7 +420,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Примечания
+          - name: Заметки
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -479,7 +481,7 @@ items:
             items:
               - name: Список задач
                 href: api/planneruser-list-tasks.md
-          - name: Teamwork
+          - name: Командная работа
             items:
               - name: Установленное приложение
                 href: resources/teamsappinstallation.md
@@ -5279,6 +5281,8 @@ items:
                     items:
                       - name: Список
                         href: api/entitlementmanagement-list-assignmentrequests.md
+                      - name: Создание
+                        href: api/entitlementmanagement-post-assignmentrequests.md
                       - name: Получение
                         href: api/accesspackageassignmentrequest-get.md
                       - name: Удаление
@@ -5517,7 +5521,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Получение многозначного свойства
                     href: api/multivaluelegacyextendedproperty-get.md
-      - name: Примечания
+      - name: Заметки
         displayName: OneNote
         items:
           - name: Обзор

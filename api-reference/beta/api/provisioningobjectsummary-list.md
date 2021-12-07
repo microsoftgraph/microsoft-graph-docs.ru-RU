@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: ArvindHarinder1
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: 3f9d3d360cba62623125fddbf9d82d30f3c1b4b4
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b2852c24b6f29a98a3b5dd6125711169efe574d5
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019311"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61321976"
 ---
 # <a name="list-provisioningobjectsummary"></a>Список provisioningObjectSummary
 
@@ -26,12 +26,12 @@ ms.locfileid: "61019311"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
+|Делегированное (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
-|Для приложений | AuditLog.Read.All и Directory.Read.All |
+|Приложение | AuditLog.Read.All и Directory.Read.All |
 
  > [!IMPORTANT]
-> Этот API имеет [известные](/graph/known-issues#azure-ad-activity-reports) проблемы и в настоящее время требует согласия на оба **auditLog.Read.All** и **Directory.Read.All** разрешений.
+> Этот API имеет [известные](/graph//graph/known-issues#license-check-errors-for-azure-ad-activity-reports) проблемы и в настоящее время требует согласия на оба **auditLog.Read.All** и **Directory.Read.All** разрешений.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -127,7 +127,7 @@ GET https://graph.microsoft.com/beta/auditLogs/provisioning
 [!INCLUDE [sample-code](../includes/snippets/java/list-provisioningobjectsummary-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-provisioningobjectsummary-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -288,7 +288,7 @@ GET https://graph.microsoft.com/beta/auditLogs/provisioning
 [!INCLUDE [sample-code](../includes/snippets/java/list-provisioningobjectsummary-error-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-provisioningobjectsummary-error-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

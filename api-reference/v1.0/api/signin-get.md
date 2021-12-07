@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: apiPageType
-ms.openlocfilehash: efd23437f34d07b8b4e5d998d5d469c5afa8509e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9918e7b7bb24b08d2128c48632b685ffad08a4b7
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60976259"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61322215"
 ---
 # <a name="get-signin"></a>Получение объекта signIn
 
@@ -24,12 +24,12 @@ ms.locfileid: "60976259"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
+|Делегированное (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
-|Для приложений | AuditLog.Read.All и Directory.Read.All |
+|Приложение | AuditLog.Read.All и Directory.Read.All |
 
 > [!IMPORTANT]
-> Этот API имеет [известные](/graph/known-issues#azure-ad-activity-reports) проблемы и в настоящее время требует согласия на оба **auditLog.Read.All** и **Directory.Read.All** разрешений.
+> Этот API имеет [известные](/graph//graph/known-issues#license-check-errors-for-azure-ad-activity-reports) проблемы и в настоящее время требует согласия на оба **auditLog.Read.All** и **Directory.Read.All** разрешений.
 
 Приложения должны быть [правильно зарегистрированы в](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) Azure AD.
 
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns/66ea54eb-6301-4ee5-be62-f
 [!INCLUDE [sample-code](../includes/snippets/java/get-signin-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-signin-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

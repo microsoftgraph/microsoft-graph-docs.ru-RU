@@ -1,16 +1,16 @@
 ---
 title: Список людей
 description: Получение списка объектов person, упорядоченных по их релевантности для пользователя, которая определяется его моделями общения и совместной работы, а также бизнес-отношениями.
-author: dkershaw10
+author: anthona
 ms.localizationpriority: medium
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 9366cb32b701f25984f0bfa106edba759e15a10e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8780939bb1074925f14dca1cd4d80f9e2ae2fe96
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61016813"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61322270"
 ---
 # <a name="list-people"></a>Список людей
 
@@ -26,9 +26,9 @@ ms.locfileid: "61016813"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | People.Read    |
+|Делегированные (рабочая или учебная учетная запись) | People.Read, People.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | People.Read    |
-|Для приложений | Не поддерживается. |
+|Для приложений | People.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -104,7 +104,7 @@ GET https://graph.microsoft.com/beta/me/people
 [!INCLUDE [sample-code](../includes/snippets/java/get-person-collection-beta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-person-collection-beta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

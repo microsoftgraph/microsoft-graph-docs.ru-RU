@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 8e2a61858e1f01ee1070f7d7b1c7d1aaeb68b9e2
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 22b825a04b1679385aa0cf14c6421a820b312941
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765941"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61321794"
 ---
 # <a name="cloudpcdeviceimage-resource-type"></a>тип ресурса cloudPcDeviceImage
 
@@ -39,11 +39,11 @@ ms.locfileid: "59765941"
 |sourceImageResourceId|Строка|ID источника ресурса изображений в Azure. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
 |displayName|Строка|Имя отображения изображения.|
 |version|String|Версия изображения. Например: 0.0.1, 1.5.13.|
-|osBuildNumber|String|Версия сборки ОС изображения. Например: 1909.|
+|osBuildNumber|Строка|Версия сборки ОС изображения. Например: 1909.|
 |operatingSystem|String|Операционная система изображения. Например: Windows 10 Корпоративная.|
 |lastModifiedDateTime|DateTimeOffset|Данные и время последнего изменения изображения. Время отображается в формате ISO 8601 и времени скоординированного универсального времени (UTC). Например, полночь UTC 1 января 2014 г. отображается как '2014-01-01T00:00:00Z'.|
 |status|cloudPcDeviceImageStatus|Состояние изображения на облачном компьютере. Возможные значения: `pending`, `ready`, `failed`.|
-|statusDetails|cloudPcDeviceImageStatusDetails|Сведения о состоянии изображения, который указывает, почему не удалось загрузить, если применимо. Возможные значения: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported` и `sourceImageInvalid`.|
+|statusDetails|cloudPcDeviceImageStatusDetails|Сведения о состоянии изображения, который указывает, почему не удалось загрузить, если применимо. Возможные значения: `internalServerError` `sourceImageNotFound` , , , , `osVersionNotSupported` и `sourceImageInvalid` `sourceImageNotGeneralized` .|
 
 ### <a name="cloudpcdeviceimagestatus-values"></a>значения cloudPcDeviceImageStatus
 
@@ -61,6 +61,8 @@ ms.locfileid: "59765941"
 |sourceImageNotFound|Исходный образ недоступен или не найден.|
 |osVersionNotSupported| Версия ОС не поддерживается.|
 |sourceImageInvalid|Исходный образ не является допустимым для Windows VM с ним.|
+|sourceImageNotGeneralized|Загруженное изображение не было обобщено. Перезагрузите изображение после запуска команды sysprep/generalize. Дополнительные сведения см. в [примере Remove machine specific information by generalizing a VM before creating an image.](/azure/virtual-machines/generalize)|
+|unknownFutureValue|Эволюционирующее значение sentinel. Не следует использовать.|
 
 ## <a name="relationships"></a>Связи
 

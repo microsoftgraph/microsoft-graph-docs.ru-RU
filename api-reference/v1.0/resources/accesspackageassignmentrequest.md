@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 2581172e02eede572de589b4122bec646306baed
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 06fbb94ff6cdd363f2c8c1449db4267a0695b63c
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242728"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61322116"
 ---
 # <a name="accesspackageassignmentrequest-resource-type"></a>тип ресурса accessPackageAssignmentRequest
 
@@ -23,6 +23,7 @@ ms.locfileid: "61242728"
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
 |[Список accessPackageAssignmentRequests](../api/entitlementmanagement-list-assignmentrequests.md)|[accessPackageAssignmentRequest collection](accesspackageassignmentrequest.md)|Извлечение списка **объектов accesspackageassignmentrequest.** |
+| [Создание accessPackageAssignmentRequest](../api/entitlementmanagement-post-assignmentrequests.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Создает новый **объект accessPackageAssignmentRequest.** |
 |[Получить accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md)|[accessPackageAssignmentRequest](accesspackageassignmentrequest.md)|Чтение свойств и связей объекта **accessPackageAssignmentRequest.** |
 |[Удаление accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-delete.md)|Нет|Удаление **accessPackageAssignmentRequest**. |
 |[filterByCurrentUser](../api/accesspackageassignmentrequest-filterbycurrentuser.md)|[accessPackageAssignmentRequest collection](../resources/accesspackageassignmentrequest.md)|Извлечение списка **объектов accessPackageAssignmentRequest,** фильтруемых на входе пользователя.|
