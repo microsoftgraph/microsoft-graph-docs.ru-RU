@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b1e0718a751380553438389fbfebd8b02f9bfdbb
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 2ae7ad86c4beb0dc221daef729cb6314944d56f0
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696436"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343261"
 ---
 # <a name="create-userexperienceanalyticsbatteryhealthdeviceperformance"></a>Создание userExperienceAnalyticsBatteryHealthDevicePerformance
 
@@ -27,9 +27,9 @@ ms.locfileid: "60696436"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +53,7 @@ POST /deviceManagement/userExperienceAnalyticsBatteryHealthDevicePerformance
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта производительности устройства работоспособности устройства для аналитики пользовательского интерфейса.|
+|id|Строка|Уникальный идентификатор объекта производительности устройства работоспособности устройства для аналитики пользовательского интерфейса.|
 |deviceId|String|Уникальный идентификатор устройства Intune DeviceID.|
 |deviceName|String|Удобное имя устройства.|
 |model|String|Имя модели устройства.|
@@ -110,6 +110,7 @@ Content-Length: 411
   "healthStatus": "Health Status value"
 }
 ```
+
 
 
 

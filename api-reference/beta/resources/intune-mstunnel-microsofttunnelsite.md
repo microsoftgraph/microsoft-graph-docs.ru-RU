@@ -2,15 +2,15 @@
 title: тип ресурса microsoftTunnelSite
 description: Сущность, представляюая Microsoft Tunnel сайт
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c89b5c3fecd2c20b48d4134476f7c45b0a69a344
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4f4ce76a16d63d4d97c7ab27fa74c53fdcdc3408
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59017326"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61347321"
 ---
 # <a name="microsofttunnelsite-resource-type"></a>тип ресурса microsoftTunnelSite
 
@@ -42,7 +42,7 @@ ms.locfileid: "59017326"
 |upgradeWindowUtcOffsetInMinutes|Int32|Зона времени сайта, представленная в качестве минутного смещения от UTC|
 |upgradeWindowStartTime|TimeOfDay|Время запуска окна обновления сайта|
 |upgradeWindowEndTime|TimeOfDay|Время окончания дня окна обновления сайта|
-|upgradeAutomatically|Логический|Параметр автоматического обновления сайта. True для автоматических обновлений, false для ручного управления|
+|upgradeAutomatically|Boolean|Параметр автоматического обновления сайта. True для автоматических обновлений, false для ручного управления|
 |upgradeAvailable|Boolean|True, если доступно обновление|
 |internalNetworkProbeUrl|String|URL-адрес зонда внутреннего доступа к сети MicrosoftTunnelSite|
 |roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
@@ -79,6 +79,7 @@ ms.locfileid: "59017326"
   ]
 }
 ```
+
 
 
 

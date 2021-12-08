@@ -2,15 +2,15 @@
 title: Обновление userExperienceAnalyticsRegressionSummary
 description: Обновление свойств объекта userExperienceAnalyticsRegressionSummary.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3f5b5a86c0e54941dec24f00985303e6f3c04294
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d3e13f4ff065814d7fb9c2348544503880d92d4a
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59018273"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342120"
 ---
 # <a name="update-userexperienceanalyticsregressionsummary"></a>Обновление userExperienceAnalyticsRegressionSummary
 
@@ -27,9 +27,9 @@ ms.locfileid: "59018273"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -86,6 +86,7 @@ Content-Length: 131
   "id": "41683327-3327-4168-2733-684127336841"
 }
 ```
+
 
 
 

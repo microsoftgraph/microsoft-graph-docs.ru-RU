@@ -2,15 +2,15 @@
 title: Создание userExperienceAnalyticsDevicePerformance
 description: Создание нового объекта userExperienceAnalyticsDevicePerformance.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 155871f09851800163bbc16d8818cd6c4df6e6d4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9a7e21e295b4ac7671d1dba96a064a3a3f346714
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59065388"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343478"
 ---
 # <a name="create-userexperienceanalyticsdeviceperformance"></a>Создание userExperienceAnalyticsDevicePerformance
 
@@ -27,9 +27,9 @@ ms.locfileid: "59065388"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsDevicePerformance
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -70,10 +70,10 @@ POST /deviceManagement/userExperienceAnalyticsDevicePerformance
 |responsiveDesktopTimeInMs|Int32|Аналитика пользовательского интерфейса реагирует на время рабочего стола в миллисекунд.|
 |blueScreenCount|Int32|Количество синих экранов за последние 14 дней. Допустимые значения от 0 до 9999999|
 |restartCount|Int32|Количество перезапусков за последние 14 дней. Допустимые значения от 0 до 9999999|
-|averageBlueScreens|Двойное с плавающей точкой|Среднее (среднее) число синих экранов на устройство за последние 14 дней. Допустимые значения от 0 до 9999999|
-|averageRestarts|Двойное с плавающей точкой|Среднее (среднее) число перезапусков на устройство за последние 14 дней. Допустимые значения от 0 до 9999999|
-|startupPerformanceScore|Двойное с плавающей точкой|Оценка производительности запуска устройства для аналитики пользовательского интерфейса. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
-|modelStartupPerformanceScore|Двойное с плавающей точкой|Оценка производительности запуска модели аналитики пользовательской модели. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|averageBlueScreens|Double|Среднее (среднее) число синих экранов на устройство за последние 14 дней. Допустимые значения от 0 до 9999999|
+|averageRestarts|Double|Среднее (среднее) число перезапусков на устройство за последние 14 дней. Допустимые значения от 0 до 9999999|
+|startupPerformanceScore|Double|Оценка производительности запуска устройства для аналитики пользовательского интерфейса. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|modelStartupPerformanceScore|Double|Оценка производительности запуска модели аналитики пользовательской модели. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
 
 
 
@@ -146,6 +146,7 @@ Content-Length: 788
   "modelStartupPerformanceScore": 9.3333333333333339
 }
 ```
+
 
 
 

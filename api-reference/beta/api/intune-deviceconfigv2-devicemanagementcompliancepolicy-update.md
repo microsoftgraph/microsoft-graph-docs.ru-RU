@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 08b07351a4b60f9e251712428e9faa4200909ba1
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: c5f4d942d6b08052387a4c40fdb71acf1385e72d
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695666"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346488"
 ---
 # <a name="update-devicemanagementcompliancepolicy"></a>Обновление deviceManagementCompliancePolicy
 
@@ -29,7 +29,7 @@ ms.locfileid: "60695666"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,14 +55,14 @@ PATCH /deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}
 |:---|:---|:---|
 |id|String|Ключ документа политики. Автоматически созданный.|
 |name|String|Имя политики|
-|description|String|Описание политики|
+|description|Строка|Описание политики|
 |платформы|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Платформы для этой политики. Возможные значения: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`.|
 |технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Технологии для этой политики. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`, `linuxMdm`, `unknownFutureValue`.|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Политика последней даты и времени изменения. Это свойство доступно только для чтения.|
 |settingCount|Int32|Количество параметров. Это свойство доступно только для чтения.|
 |creationSource|String|Источник создания политики|
-|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity.|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
 |isAssigned|Boolean|Состояние назначения политики. Это свойство доступно только для чтения.|
 
 
@@ -118,6 +118,7 @@ Content-Length: 517
   "isAssigned": true
 }
 ```
+
 
 
 

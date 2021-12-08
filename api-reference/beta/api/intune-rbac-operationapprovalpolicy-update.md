@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 499c1122cf40ef5c4340f978a29f56995b8a2af4
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 17532fe64ade03be6227cbe928f1c3da9e981260
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60487434"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342687"
 ---
 # <a name="update-operationapprovalpolicy"></a>Обновление операцииApprovalPolicy
 
@@ -27,9 +27,9 @@ ms.locfileid: "60487434"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementRBAC.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,11 +55,11 @@ PATCH /deviceManagement/operationApprovalPolicies/{operationApprovalPolicyId}
 |:---|:---|:---|
 |id|String|ID операцииApprovalPolicy. Это свойство доступно только для чтения.|
 |displayName|String|Имя отображения этой операцииApprovalPolicy|
-|description|String|Описание этой операцииApprovalPolicy|
+|description|Строка|Описание этой операцииApprovalPolicy|
 |lastModifiedDateTime|DateTimeOffset|Последняя измененная дата и время операцииApprovalPolicy. Это свойство доступно только для чтения.|
-|policyType|[operationApprovalPolicyType](../resources/intune-rbac-operationapprovalpolicytype.md)|Тип политики для этой операцииApprovalPolicy. Возможные значения: `deviceActions` `deviceWipe` , , , , , `deviceRetire` , , , `deviceRetireNonCompliant` `deviceDelete` , , `deviceLock` `deviceErase` `deviceDisableActivationLock` `windowsEnrollment` , `compliancePolicies` `configurationPolicies` `appProtectionPolicies` `policySets` `filters` `endpointSecurity` `apps` `scripts` `roles` `unknownFutureValue` .|
+|policyType|[operationApprovalPolicyType](../resources/intune-rbac-operationapprovalpolicytype.md)|Тип политики для этой операцииApprovalPolicy. Возможные значения: `deviceActions` `deviceWipe` , , , , , `deviceRetire` `deviceRetireNonCompliant` , `deviceDelete` `deviceLock` `deviceErase` `deviceDisableActivationLock` `windowsEnrollment` `compliancePolicies` , `configurationPolicies` `appProtectionPolicies` `policySets` `filters` `endpointSecurity` `apps` `scripts` `roles` `deviceResetPasscode` `unknownFutureValue` .|
 |policyPlatform|[operationApprovalPolicyPlatform](../resources/intune-rbac-operationapprovalpolicyplatform.md)|Применимая платформа (ы) для этой ОперацииApprovalPolicy. Возможные значения: `notApplicable`, `androidDeviceAdministrator`, `androidEnterprise`, `iOSiPadOS`, `macOS`, `windows10AndLater`, `windows81AndLater`, `windows10X`.|
-|approverGroupIds|Коллекция строк|Групповые ID для тех, кто одобряет эту операциюApprovalPolicy|
+|approverGroupIds|Коллекция String|Групповые ID для тех, кто одобряет эту операциюApprovalPolicy|
 
 
 
@@ -107,6 +107,7 @@ Content-Length: 402
   ]
 }
 ```
+
 
 
 

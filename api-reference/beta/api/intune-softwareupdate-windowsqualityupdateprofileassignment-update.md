@@ -2,15 +2,15 @@
 title: Обновление windowsQualityUpdateProfileAssignment
 description: Обновление свойств объекта windowsQualityUpdateProfileAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dde4e905e27b6e0bb6bf313979e3bca945f6c53f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: eae3b285e4b628a7705fa6361df02ab021271d0c
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59041264"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61345746"
 ---
 # <a name="update-windowsqualityupdateprofileassignment"></a>Обновление windowsQualityUpdateProfileAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "59041264"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/windowsQualityUpdateProfiles/{windowsQualityUpdateProfil
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ PATCH /deviceManagement/windowsQualityUpdateProfiles/{windowsQualityUpdateProfil
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор сущности|
+|id|Строка|Идентификатор сущности|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения, на которую назначен профиль обновления качества.|
 
 
@@ -97,6 +97,7 @@ Content-Length: 393
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Списки microsoft Graph API для конечных точек
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 106aed065f0480fcec01a8f680e8ee33001d5e45
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 2688a9499565d7c93f23cac331040d74987ec9cc
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696072"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343002"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Конфигурация устройства в Microsoft Intune
 
@@ -35,6 +35,7 @@ ms.locfileid: "60696072"
 - [Режим подключения аккумулятора для владельца устройства с Android](intune-deviceconfig-androiddeviceownerbatterypluggedmode.md)
 - [База профилей сертификата владельца android-устройств](intune-deviceconfig-androiddeviceownercertificateprofilebase.md)
 - [Политика соответствия требованиям владельцев android-устройств](intune-deviceconfig-androiddeviceownercompliancepolicy.md)
+- [Владелец устройства Android перекрестный обмен данными профилей](intune-deviceconfig-androiddeviceownercrossprofiledatasharing.md)
 - [Тип политики разрешений приложения по умолчанию для владельца устройства с Android](intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)
 - [Владелец устройства Android получил конфигурацию проверки подлинности учетных данных](intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md)
 - [Тип профиля регистрации владельца android-устройств](intune-deviceconfig-androiddeviceownerenrollmentprofiletype.md)
@@ -306,6 +307,14 @@ ms.locfileid: "60696072"
 - [Состояние файла определения, загруженного групповой политикой](intune-grouppolicy-grouppolicyuploadeddefinitionfilestatus.md)
 - [Языковой файл групповой политики](intune-grouppolicy-grouppolicyuploadedlanguagefile.md)
 - [Презентация, загруженная в групповую политику](intune-grouppolicy-grouppolicyuploadedpresentation.md)
+- [Конфигурация оборудования](intune-deviceconfig-hardwareconfiguration.md)
+- [Назначение конфигурации оборудования](intune-deviceconfig-hardwareconfigurationassignment.md)
+- [Состояние устройства конфигурации оборудования](intune-deviceconfig-hardwareconfigurationdevicestate.md)
+- [Формат конфигурации оборудования](intune-deviceconfig-hardwareconfigurationformat.md)
+- [Сводка конфигурации оборудования](intune-deviceconfig-hardwareconfigurationrunsummary.md)
+- [Состояние пользователя конфигурации оборудования](intune-deviceconfig-hardwareconfigurationuserstate.md)
+- [Сведения о аппаратном пароле](intune-deviceconfig-hardwarepasswordinfo.md)
+- [Источник Ingestion](intune-grouppolicy-ingestionsource.md)
 - [Параметр доступа к рукописному вводу](intune-deviceconfig-inkaccesssetting.md)
 - [Первоначальная цель](intune-deviceconfig-intendedpurpose.md)
 - [Параметр сообщения internet explorer](intune-deviceconfig-internetexplorermessagesetting.md)
@@ -363,8 +372,6 @@ ms.locfileid: "60696072"
 - [Пара значений ключевой строки](intune-deviceconfig-keystringvaluepair.md)
 - [Пара значений для ключей](intune-deviceconfig-keytypedvaluepair.md)
 - [Значение ключа](intune-deviceconfig-keyvalue.md)
-- [Пара "ключ-значение"](intune-deviceconfig-keyvaluepair.md)
-- [Пара "ключ-значение"](intune-deviceconfig-keyvaluepair.md)
 - [Режим киоска управляемый ПИН-код домашнего экрана](intune-deviceconfig-kioskmodemanagedhomescreenpincomplexity.md)
 - [Уровень проверки подлинности LAN Manager](intune-deviceconfig-lanmanagerauthenticationlevel.md)
 - [Локальные параметры безопасности: режим отображения запроса для повышения прав администратора](intune-deviceconfig-localsecurityoptionsadministratorelevationpromptbehaviortype.md)

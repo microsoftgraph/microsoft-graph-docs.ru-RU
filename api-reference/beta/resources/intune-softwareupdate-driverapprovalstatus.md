@@ -2,15 +2,15 @@
 title: тип enum driverApprovalStatus
 description: Тип переумыка для представления состояния утверждения драйвера.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: be598135a452a63a5f0a658e709064278d2939d9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cead8ffefba68fc0de20027f17161036cd757497
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59030027"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61347251"
 ---
 # <a name="driverapprovalstatus-enum-type"></a>тип enum driverApprovalStatus
 
@@ -29,6 +29,7 @@ ms.locfileid: "59030027"
 |отклонено|1|Это означает, что ИТ-администратор отказал драйверу.|
 |утверждено|2|Это означает, что ИТ-администратор утвердил драйвер.|
 |suspended|3|Это означает, что ИТ-администратор приостановил работу драйвера.|
+
 
 
 

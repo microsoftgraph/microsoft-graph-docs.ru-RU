@@ -2,15 +2,15 @@
 title: Создание userExperienceAnalyticsBaseline
 description: Создание нового объекта userExperienceAnalyticsBaseline.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9c315ab6852b84047777fc526d2103dba76095f0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 200ca4704644c719f27c7cf504bc9c49f991980d
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59052232"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61345837"
 ---
 # <a name="create-userexperienceanalyticsbaseline"></a>Создание userExperienceAnalyticsBaseline
 
@@ -27,9 +27,9 @@ ms.locfileid: "59052232"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsBaselines
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,7 +54,7 @@ POST /deviceManagement/userExperienceAnalyticsBaselines
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор базовой базы аналитики пользовательского интерфейса.|
-|displayName|String|Имя базовой базы аналитики пользовательского интерфейса.|
+|displayName|Строка|Имя базовой базы аналитики пользовательского интерфейса.|
 |overallScore|Int32|Общая оценка базовой базы аналитики пользовательских интерфейсов.|
 |isBuiltIn|Boolean|Означает, является ли текущий базовый уровень коммерческим медианым или настраиваемой базовой базой.|
 |createdDateTime|DateTimeOffset|Дата создания настраиваемой базовой линии.|
@@ -97,6 +97,7 @@ Content-Length: 266
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00"
 }
 ```
+
 
 
 

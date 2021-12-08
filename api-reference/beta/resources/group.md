@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 9447f5171a8d7e8657a5423a06ad9e93bfc5d506
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: fac57ae27845799f1d9e25b3ec0c437ed7de147c
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61322228"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61348217"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -141,7 +141,7 @@ ms.locfileid: "61322228"
 |licenseProcessingState|String|Указывает состояние назначения лицензии группы для всех участников группы. Возможные значения: `QueuedForProcessing`, `ProcessingInProgress` и `ProcessingComplete`.<br><br>Возвращается только с помощью оператора `$select`. Только для чтения. |
 |почта;|String|SMTP-адрес группы, например "serviceadmins@contoso.onmicrosoft.com". <br><br>Возвращается по умолчанию. Только для чтения. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` для значений `null`).|
 |mailEnabled|Логический|Указывает, включена ли для этой группы поддержка почты. Обязательно.<br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not` и `eq` по `null` значениям).|
-|mailNickname|String|Почтовый псевдоним для группы (уникальный в организации). Максимальная длина: 64 символа. Это свойство может содержать только символы из [набора символов ASCII от 0 до 127](/office/vba/language/reference/user-interface-help/character-set-0127), за исключением следующих: ` @ () \ [] " ; : . <> , SPACE`. <br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`).|
+|mailNickname|String|Почтовый псевдоним для группы, уникальный для групп Microsoft 365 в организации. Максимальная длина: 64 символа. Это свойство может содержать только символы из [набора символов ASCII от 0 до 127](/office/vba/language/reference/user-interface-help/character-set-0127), за исключением следующих: ` @ () \ [] " ; : . <> , SPACE`. <br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`).|
 |membershipRule|String|Правило, определяющее участников этой группы, если группа является динамической (groupTypes содержит `DynamicMembership`). Дополнительные сведения о синтаксисе правила участия см. в [здесь](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/). <br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`). |
 |membershipRuleProcessingState|String|Указывает, включена или приостановлена динамическая обработка участия. Возможные значения: `On` и `Paused`.<br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `in`). |
 |membershipRuleProcessingStatus|[membershipRuleProcessingStatus](membershipruleprocessingstatus.md) |Описывает состояние обработки для динамических групп на основе правил. Значение свойства равно `null` для динамических групп не на основе правил или в случае, если обработка динамических групп приостановлена. <br><br>Возвращается только в `$select`. Поддерживается только для API получения группы (`GET /groups/{ID}`). Только для чтения. |
@@ -250,7 +250,7 @@ ms.locfileid: "61322228"
 
 ```json
 {
-  "accessType": "string",
+  "accessType": "String",
   "assignedLabels": [{"@odata.type": "microsoft.graph.assignedLabel"}],
   "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "allowExternalSenders": false,
@@ -258,38 +258,38 @@ ms.locfileid: "61322228"
   "createdByAppId": "String",
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
-  "description": "string",
-  "displayName": "string",
+  "description": "String",
+  "displayName": "String",
   "expirationDateTime": "String (timestamp)",
-  "groupTypes": ["string"],
+  "groupTypes": ["String"],
   "hideFromAddressLists": false,
   "hideFromOutlookClients": false,
-  "id": "string (identifier)",
+  "id": "String (identifier)",
   "isFavorite": true,
   "isAssignableRole": false,
   "isSubscribedByMail": true,
-  "licenseProcessingState": "string",
-  "mail": "string",
+  "licenseProcessingState": "String",
+  "mail": "String",
   "mailEnabled": true,
-  "mailNickname": "string",
-  "onPremisesDomainName": "string",
+  "mailNickname": "String",
+  "onPremisesDomainName": "String",
   "onPremisesLastSyncDateTime": "String (timestamp)",
-  "onPremisesNetBiosName": "string",
+  "onPremisesNetBiosName": "String",
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
-  "onPremisesSamAccountName": "string",
-  "onPremisesSecurityIdentifier": "string",
+  "onPremisesSamAccountName": "String",
+  "onPremisesSecurityIdentifier": "String",
   "onPremisesSyncEnabled": true,
-  "preferredDataLocation": "string",
-  "proxyAddresses": ["string"],
+  "preferredDataLocation": "String",
+  "proxyAddresses": ["String"],
   "renewedDateTime": "String (timestamp)",
   "resourceBehaviorOptions": ["String"],
   "resourceProvisioningOptions": ["String"],
   "securityEnabled": true,
-  "securityIdentifier": "string",
+  "securityIdentifier": "String",
   "unseenConversationsCount": 1024,
   "unseenCount": 1024,
   "unseenMessagesCount": 1024,
-  "visibility": "string",
+  "visibility": "String",
   "acceptedSenders": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "calendar": {"@odata.type": "microsoft.graph.calendar"},
   "calendarView": [{"@odata.type": "microsoft.graph.event"}],
@@ -305,13 +305,13 @@ ms.locfileid: "61322228"
   "rejectedSenders": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "sites": [{"@odata.type": "microsoft.graph.site"}],
   "threads": [{"@odata.type": "microsoft.graph.conversationThread"}],
-  "classification": "string",
+  "classification": "String",
   "hasMembersWithLicenseErrors": true,
-  "membershipRule": "string",
-  "membershipRuleProcessingState": "string",
+  "membershipRule": "String",
+  "membershipRuleProcessingState": "String",
   "membershipRuleProcessingStatus":{"@odata.type": "microsoft.graph.membershipRuleProcessingStatus"},
-  "preferredLanguage": "string",
-  "theme": "string"
+  "preferredLanguage": "String",
+  "theme": "String"
 }
 ```
 

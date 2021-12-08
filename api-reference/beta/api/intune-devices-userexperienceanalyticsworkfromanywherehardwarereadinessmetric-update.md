@@ -2,15 +2,15 @@
 title: Обновление userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
 description: Обновление свойств объекта userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c45ef2f94886aa02c1b931775014c43ce26bd856
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dc9b89745c708c413da145ba5c8bd8da97f452ce
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59034563"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61345137"
 ---
 # <a name="update-userexperienceanalyticsworkfromanywherehardwarereadinessmetric"></a>Обновление userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
 
@@ -27,9 +27,9 @@ ms.locfileid: "59034563"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsWorkFromAnywhereHardwareReadiness
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -56,15 +56,15 @@ PATCH /deviceManagement/userExperienceAnalyticsWorkFromAnywhereHardwareReadiness
 |id|Строка|Уникальный идентификатор объекта метрики готовности оборудования для аналитики пользовательского интерфейса.|
 |totalDeviceCount|Int32|Общее количество устройств в организации. Допустимые значения 2147483648 2147483647|
 |upgradeEligibleDeviceCount|Int32|Количество устройств в организации, имеющих право на обновление Windows. Допустимые значения 2147483648 2147483647|
-|ramCheckFailedPercentage|Двойное с плавающей точкой|Процент устройств, для которых проверка оборудования оперативной памяти не удалась. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
-|storageCheckFailedPercentage|Двойное с плавающей точкой|Процент устройств, для которых проверка оборудования хранения не удалась. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
-|processorCoreCountCheckFailedPercentage|Двойное с плавающей точкой|Процент устройств, для которых проверка подсчета ядра процессорного оборудования не удалось. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
-|processorSpeedCheckFailedPercentage|Двойное с плавающей точкой|Процент устройств, для которых проверка скорости работы процессорного оборудования не удалось. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
-|tpmCheckFailedPercentage|Двойное с плавающей точкой|Процент устройств, для которых проверка аппаратного модуля доверенных платформ (TPM) не удалось. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
-|secureBootCheckFailedPercentage|Двойное с плавающей точкой|Процент устройств, для которых не удалось проверить безопасное оборудование загрузки. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
-|processorFamilyCheckFailedPercentage|Двойное с плавающей точкой|Процент устройств, для которых семейная проверка оборудования обработчика не удалось. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
-|processor64BitCheckFailedPercentage|Двойное с плавающей точкой|Процент устройств, для которых проверка архитектуры процессорного оборудования 64-битной архитектуры не удалось. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
-|osCheckFailedPercentage|Двойное с плавающей точкой|Процент устройств, для которых проверка ОС не удалась. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|ramCheckFailedPercentage|Double|Процент устройств, для которых проверка оборудования оперативной памяти не удалась. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|storageCheckFailedPercentage|Double|Процент устройств, для которых проверка оборудования хранения не удалась. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|processorCoreCountCheckFailedPercentage|Double|Процент устройств, для которых проверка подсчета ядра процессорного оборудования не удалось. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|processorSpeedCheckFailedPercentage|Double|Процент устройств, для которых проверка скорости работы процессорного оборудования не удалось. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|tpmCheckFailedPercentage|Double|Процент устройств, для которых проверка аппаратного модуля доверенных платформ (TPM) не удалось. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|secureBootCheckFailedPercentage|Double|Процент устройств, для которых не удалось проверить безопасное оборудование загрузки. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|processorFamilyCheckFailedPercentage|Double|Процент устройств, для которых семейная проверка оборудования обработчика не удалось. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|processor64BitCheckFailedPercentage|Double|Процент устройств, для которых проверка архитектуры процессорного оборудования 64-битной архитектуры не удалось. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|osCheckFailedPercentage|Double|Процент устройств, для которых проверка ОС не удалась. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
 
 
 
@@ -119,6 +119,7 @@ Content-Length: 675
   "osCheckFailedPercentage": 7.666666666666667
 }
 ```
+
 
 
 

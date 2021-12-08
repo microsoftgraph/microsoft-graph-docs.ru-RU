@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a4ed9a88411070c397957a140c07d36542aad3be
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: fe182b22d1957963e6ccdd73539a61f6e6262bf8
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60494075"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61344584"
 ---
 # <a name="list-userexperienceanalyticsapphealthdevicemodelperformances"></a>Список userExperienceAnalyticsAppHealthDeviceModelPerformances
 
@@ -27,9 +27,9 @@ ms.locfileid: "60494075"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsApp
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 473
+Content-Length: 516
 
 {
   "value": [
@@ -77,11 +77,13 @@ Content-Length: 473
       "activeDeviceCount": 1,
       "meanTimeToFailureInMinutes": 10,
       "modelAppHealthScore": 6.333333333333333,
-      "modelAppHealthStatus": "Model App Health Status value"
+      "modelAppHealthStatus": "Model App Health Status value",
+      "healthStatus": "insufficientData"
     }
   ]
 }
 ```
+
 
 
 

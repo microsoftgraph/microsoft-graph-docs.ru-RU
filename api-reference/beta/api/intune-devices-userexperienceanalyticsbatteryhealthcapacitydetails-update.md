@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 76aa40f0307ba9fb44ff1829a9ccfe677ab6f798
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: e953f6ac2552ced6ca2421a4d2d94eb7cf2290d9
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60697436"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61345242"
 ---
 # <a name="update-userexperienceanalyticsbatteryhealthcapacitydetails"></a>Обновление userExperienceAnalyticsBatteryHealthCapacityDetails
 
@@ -27,9 +27,9 @@ ms.locfileid: "60697436"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +53,7 @@ PATCH /deviceManagement/userExperienceAnalyticsBatteryHealthCapacityDetails
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта емкости аккумулятора для аналитики пользовательского интерфейса.|
+|id|Строка|Уникальный идентификатор объекта емкости аккумулятора для аналитики пользовательского интерфейса.|
 |activeDevices|Int32|Количество активных устройств в клиенте. Допустимые значения 2147483648 2147483647|
 |batteryCapacityGood|Int32|Количество устройств, максимальная емкость которых превышает 80%. Допустимые значения 2147483648 2147483647|
 |batteryCapacityFair|Int32|Количество устройств, максимальная емкость которых превышает 50%, но меньше 80%. Допустимые значения 2147483648 2147483647|
@@ -98,6 +98,7 @@ Content-Length: 253
   "batteryCapacityPoor": 3
 }
 ```
+
 
 
 

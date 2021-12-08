@@ -2,15 +2,15 @@
 title: Действие deleteUserFromSharedAppleDevice
 description: Удаление пользователя на общем устройстве Apple
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: de35617cd593cbb3b2b94689c911e2795762ffad
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4e56797e6132623f5467c1283b970ea0c04efcd7
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59112456"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343961"
 ---
 # <a name="deleteuserfromsharedappledevice-action"></a>Действие deleteUserFromSharedAppleDevice
 
@@ -27,9 +27,9 @@ ms.locfileid: "59112456"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.PriviligedOperation.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.PrivilegedOperations.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.PriviligedOperation.All|
+|Приложение|DeviceManagementManagedDevices.PrivilegedOperations.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -49,7 +49,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -86,6 +86,7 @@ Content-length: 56
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -2,15 +2,15 @@
 title: Обновление deviceManagementScriptRunSummary
 description: Обновление свойств объекта deviceManagementScriptRunSummary.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d43d79462997d876734274771ee0e33808c04104
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8c2b7eaad7ca615a2f0b6d0a1353a802b9132e19
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59121846"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346103"
 ---
 # <a name="update-devicemanagementscriptrunsummary"></a>Обновление deviceManagementScriptRunSummary
 
@@ -27,9 +27,9 @@ ms.locfileid: "59121846"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -45,7 +45,7 @@ PATCH /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttribute
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,7 +55,7 @@ PATCH /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttribute
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Клавиша скрипта управления устройствами запустит объект сводки. Это свойство доступно только для чтения.|
+|id|Строка|Клавиша скрипта управления устройствами запустит объект сводки. Это свойство доступно только для чтения.|
 |successDeviceCount|Int32|Количество устройств успешности.|
 |errorDeviceCount|Int32|Количество устройств ошибки.|
 |successUserCount|Int32|Количество пользователей успешности.|
@@ -100,6 +100,7 @@ Content-Length: 228
   "errorUserCount": 14
 }
 ```
+
 
 
 

@@ -2,15 +2,15 @@
 title: Создание windowsDriverUpdateProfile
 description: Создайте новый объект WindowsDriverUpdateProfile.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d50d9d5ce7be2e1932a2a603f0b5d388073374b0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 456928b16a18ff3bedb4d743bd39e95e07e30c43
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138500"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346355"
 ---
 # <a name="create-windowsdriverupdateprofile"></a>Создание windowsDriverUpdateProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "59138500"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/windowsDriverUpdateProfiles
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,14 +55,14 @@ POST /deviceManagement/windowsDriverUpdateProfiles
 |:---|:---|:---|
 |id|String|ID политики Intune.|
 |displayName|String|Имя отображения для профиля.|
-|description|String|Описание профиля, указанного пользователем.|
+|description|Строка|Описание профиля, указанного пользователем.|
 |approvalType|[driverUpdateProfileApprovalType](../resources/intune-softwareupdate-driverupdateprofileapprovaltype.md)|Тип утверждения профиля обновления драйвера. Например, ручное или автоматическое утверждение. Возможные значения: `manual`, `automatic`.|
 |deviceReporting|Int32|Количество устройств, сообщив об этом профиле|
 |newUpdates|Int32|Количество новых обновлений драйвера, доступных для этого профиля.|
 |deploymentDeferralInDays|Int32|Параметры отсрочки развертывания в днях, применимые только при автоматическом утверждении ApprovalType.|
 |createdDateTime|DateTimeOffset|Время создания профиля.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения профиля.|
-|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого объекта обновления драйвера.|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого объекта обновления драйвера.|
 
 
 
@@ -115,6 +115,7 @@ Content-Length: 494
   ]
 }
 ```
+
 
 
 

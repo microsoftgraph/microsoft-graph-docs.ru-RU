@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cb7ca8f2d24280691973fd640231aa076d40252c
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 250a39e2a57c3aa13b22c2e14ef65e0a164850e1
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696933"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61348133"
 ---
 # <a name="delete-devicemanagementconfigurationsimplesettingcollectiondefinition"></a>Удаление deviceManagementConfigurationSimpleSettingCollectionDefinition
 
@@ -29,7 +29,7 @@ ms.locfileid: "60696933"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -69,6 +69,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/reusableSettings/{devic
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

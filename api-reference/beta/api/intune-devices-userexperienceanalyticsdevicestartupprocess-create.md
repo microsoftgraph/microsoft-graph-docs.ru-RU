@@ -2,15 +2,15 @@
 title: Создание userExperienceAnalyticsDeviceStartupProcess
 description: Создание нового объекта userExperienceAnalyticsDeviceStartupProcess.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 52ff897c348657b5862ed9bf41d531691cd55439
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b96772c0d6f5bbd740965785d54552fef614e5e5
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59097210"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343912"
 ---
 # <a name="create-userexperienceanalyticsdevicestartupprocess"></a>Создание userExperienceAnalyticsDeviceStartupProcess
 
@@ -27,9 +27,9 @@ ms.locfileid: "59097210"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupProcesses
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,9 +53,9 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupProcesses
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор процесса запуска устройства аналитики пользовательского интерфейса.|
-|managedDeviceId|String|ID устройства аналитики пользовательского интерфейса.|
-|processName|String|Имя процесса запуска устройства для аналитики пользовательского интерфейса.|
+|id|Строка|Уникальный идентификатор процесса запуска устройства аналитики пользовательского интерфейса.|
+|managedDeviceId|Строка|ID устройства аналитики пользовательского интерфейса.|
+|processName|Строка|Имя процесса запуска устройства для аналитики пользовательского интерфейса.|
 |productName|String|Имя продукта процесса запуска устройства для аналитики пользовательского интерфейса.|
 |publisher|String|Издатель процесса запуска устройства для аналитики пользовательских интерфейсов.|
 |startupImpactInMs|Int32|Влияние процесса запуска устройства для аналитики пользовательских интерфейсов в миллисекунд.|
@@ -101,6 +101,7 @@ Content-Length: 325
   "startupImpactInMs": 1
 }
 ```
+
 
 
 

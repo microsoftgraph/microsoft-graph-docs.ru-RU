@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a186bc4c36479627a990cadfc7b30e4e4508a64d
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 892ecc2fd30cf18aca2f1843430ea00971232348
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60697407"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343023"
 ---
 # <a name="list-devicemanagementcomplianceactionitems"></a>Список deviceManagementComplianceActionItems
 
@@ -29,7 +29,7 @@ ms.locfileid: "60697407"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -82,6 +82,7 @@ Content-Length: 395
   ]
 }
 ```
+
 
 
 

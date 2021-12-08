@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 461709a7d22223a7b1438822dccbc06c8ecc5210
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 98697566e6a4a49c46a4b6a7887bbb2f16c7d2bc
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60492576"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346971"
 ---
 # <a name="list-androiddeviceownergeneraldeviceconfigurations"></a>Список androidDeviceOwnerGeneralDeviceConfigurations
 
@@ -29,7 +29,7 @@ ms.locfileid: "60492576"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9636
+Content-Length: 9759
 
 {
   "value": [
@@ -122,6 +122,9 @@ Content-Length: 9636
       "cameraBlocked": true,
       "cellularBlockWiFiTethering": true,
       "certificateCredentialConfigurationDisabled": true,
+      "crossProfilePoliciesAllowCopyPaste": true,
+      "crossProfilePoliciesAllowDataSharing": "crossProfileDataSharingBlocked",
+      "crossProfilePoliciesShowWorkContactsInPersonalProfile": true,
       "microsoftLauncherConfigurationEnabled": true,
       "microsoftLauncherCustomWallpaperEnabled": true,
       "microsoftLauncherCustomWallpaperImageUrl": "https://example.com/microsoftLauncherCustomWallpaperImageUrl/",
@@ -239,9 +242,7 @@ Content-Length: 9636
       "passwordRequiredType": "required",
       "passwordSignInFailureCountBeforeFactoryReset": 12,
       "playStoreMode": "allowList",
-      "safeBootBlocked": true,
       "screenCaptureBlocked": true,
-      "securityAllowDebuggingFeatures": true,
       "securityDeveloperSettingsEnabled": true,
       "securityRequireVerifyApps": true,
       "statusBarBlocked": true,
@@ -290,6 +291,7 @@ Content-Length: 9636
   ]
 }
 ```
+
 
 
 

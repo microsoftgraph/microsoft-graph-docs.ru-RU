@@ -2,15 +2,15 @@
 title: тип ресурса keyLongValuePair
 description: Пара ключевых длинных значений
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4c090fc21c4368c08a98d865a8a2ac8dc91cf9a3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e3d0378b89bd1e05d33a1a7eabc54acaa11707cd
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59030048"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61347041"
 ---
 # <a name="keylongvaluepair-resource-type"></a>тип ресурса keyLongValuePair
 
@@ -45,6 +45,7 @@ ms.locfileid: "59030048"
   "value": 1024
 }
 ```
+
 
 
 

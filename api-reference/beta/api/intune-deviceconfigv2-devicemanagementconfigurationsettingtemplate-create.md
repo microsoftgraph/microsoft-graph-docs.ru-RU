@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a3a98515b32c3b775631416355168f71e10a7fe2
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 38b9a34107c5262ea5dab7b2dd350904e9c8d992
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60488131"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346887"
 ---
 # <a name="create-devicemanagementconfigurationsettingtemplate"></a>Создание deviceManagementConfigurationSettingTemplate
 
@@ -29,7 +29,7 @@ ms.locfileid: "60488131"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,7 +54,7 @@ POST /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurati
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ этого шаблона параметра в шаблоне политики, который содержит его. Автоматически созданный.|
+|id|Строка|Ключ этого шаблона параметра в шаблоне политики, который содержит его. Автоматически созданный.|
 |settingInstanceTemplate|[deviceManagementConfigurationSettingInstanceTemplate](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstancetemplate.md)|Настройка шаблона экземпляра|
 
 
@@ -116,6 +116,7 @@ Content-Length: 833
   }
 }
 ```
+
 
 
 

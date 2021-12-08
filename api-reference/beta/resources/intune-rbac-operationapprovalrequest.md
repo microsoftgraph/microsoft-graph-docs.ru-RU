@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0a06ea1c99f3a0b87c1b323f85278ace41b593d2
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 45c2b30a39c9930ee8a8d7def27a06e7617fddbf
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60488931"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346747"
 ---
 # <a name="operationapprovalrequest-resource-type"></a>тип ресурса operationApprovalRequest
 
@@ -31,7 +31,7 @@ ms.locfileid: "60488931"
 |[Удаление operationApprovalRequest](../api/intune-rbac-operationapprovalrequest-delete.md)|Нет|Удаляет [операциюApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md).|
 |[Обновление операцииApprovalRequest](../api/intune-rbac-operationapprovalrequest-update.md)|[operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md)|Обновление свойств объекта [operationApprovalRequest.](../resources/intune-rbac-operationapprovalrequest.md)|
 |[утверждение действия](../api/intune-rbac-operationapprovalrequest-approve.md)|String|Утверждает запрошенный экземпляр операцииApprovalRequest|
-|[отклонение действия](../api/intune-rbac-operationapprovalrequest-reject.md)|String|Отклонение запрошеного экземпляра операцииApprovalRequest|
+|[отклонение действия](../api/intune-rbac-operationapprovalrequest-reject.md)|Строка|Отклонение запрошеного экземпляра операцииApprovalRequest|
 |[cancelApproval action](../api/intune-rbac-operationapprovalrequest-cancelapproval.md)|String|Отмена уже утвержденного экземпляра операцииApprovalRequest|
 |[действие getRequestStatus](../api/intune-rbac-operationapprovalrequest-getrequeststatus.md)|[operationApprovalRequestEntityStatus](../resources/intune-rbac-operationapprovalrequestentitystatus.md)|Пока не задокументировано.|
 |[функция getMyRequestById](../api/intune-rbac-operationapprovalrequest-getmyrequestbyid.md)|[operationApprovalRequest](../resources/intune-rbac-operationapprovalrequest.md)|Пока не задокументировано.|
@@ -48,8 +48,8 @@ ms.locfileid: "60488931"
 |запросчик|[identitySet](../resources/intune-rbac-identityset.md)|Удостоверение запросителя. Это свойство доступно только для чтения.|
 |одобрение|[identitySet](../resources/intune-rbac-identityset.md)|Удостоверение утвержденного. Это свойство доступно только для чтения.|
 |status|[operationApprovalRequestStatus](../resources/intune-rbac-operationapprovalrequeststatus.md)|Текущий статус запроса на утверждение. Это свойство доступно только для чтения. Возможные значения: `unknown`, `needsApproval`, `approved`, `rejected`, `cancelled`, `completed`, `expired`.|
-|requestJustification|String|Обоснование запроса. Это свойство доступно только для чтения.|
-|approvalJustification|String|Обоснование утверждения запроса. Это свойство доступно только для чтения.|
+|requestJustification|Строка|Обоснование запроса. Это свойство доступно только для чтения.|
+|approvalJustification|Строка|Обоснование утверждения запроса. Это свойство доступно только для чтения.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -110,6 +110,7 @@ ms.locfileid: "60488931"
   "approvalJustification": "String"
 }
 ```
+
 
 
 

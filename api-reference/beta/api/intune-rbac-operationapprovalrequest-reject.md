@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 71e3fbcc488338b300b0332dee25ea2876f3c8a9
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: b66e09358573634643464865099e48a819b6b936
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60689454"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61347587"
 ---
 # <a name="reject-action"></a>отклонение действия
 
@@ -27,9 +27,9 @@ ms.locfileid: "60689454"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementRBAC.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementRBAC.Read.All|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementRBAC.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -86,6 +86,7 @@ Content-Length: 31
   "value": "Reject value"
 }
 ```
+
 
 
 

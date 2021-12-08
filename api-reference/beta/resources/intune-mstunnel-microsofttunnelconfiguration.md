@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4c76889a97288eb9723d4e965f0bb0971c581002
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: d560899a8f47448fd9377d7810125d10a6777960
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60685627"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61344843"
 ---
 # <a name="microsofttunnelconfiguration-resource-type"></a>тип ресурса microsoftTunnelConfiguration
 
@@ -35,19 +35,19 @@ ms.locfileid: "60685627"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Id MicrosoftTunnelConfiguration|
-|displayName|String|Имя отображения MicrosoftTunnelConfiguration|
+|displayName|Строка|Имя отображения MicrosoftTunnelConfiguration|
 |description|String|Описание MicrosoftTunnelConfiguration|
-|сеть|String|Подсеть, которая будет использоваться для выделения виртуального адреса для клиентов|
-|dnsServers|Коллекция строк|DNS-серверы, которые будут использоваться клиентами|
+|сеть|Строка|Подсеть, которая будет использоваться для выделения виртуального адреса для клиентов|
+|dnsServers|Коллекция String|DNS-серверы, которые будут использоваться клиентами|
 |defaultDomainSuffix|String|Приложение домена по умолчанию, которое будет использоваться клиентами|
-|routesInclude|Коллекция строк|Маршруты, которые будут маршрутить сервер|
-|routesExclude|Коллекция строк|Подмышы маршрутов, которые не будут маршрутиться сервером|
-|splitDNS|Коллекция строк|Домены, которые будут разрешены с помощью предоставленных dns-серверов|
+|routesInclude|Коллекция String|Маршруты, которые будут маршрутить сервер|
+|routesExclude|Коллекция String|Подмышы маршрутов, которые не будут маршрутиться сервером|
+|splitDNS|Коллекция String|Домены, которые будут разрешены с помощью предоставленных dns-серверов|
 |listenPort|Int32|Порт, который будут прослушивать TCP и UPD на сервере|
-|advancedSettings|Коллекция [keyValuePair](../resources/intune-mstunnel-keyvaluepair.md)|Дополнительные параметры, которые могут быть применены к серверу|
+|advancedSettings|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Дополнительные параметры, которые могут быть применены к серверу|
 |lastUpdateDateTime|DateTimeOffset|При последнем обновлении MicrosoftTunnelConfiguration|
-|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity.|
-|отключениеUDPConnections|Логический|При задавке отключенияUDPConnections, клиенты и VPN-сервер не будут использовать connctions DTLS для обработки данных tansfer.|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
+|отключениеUDPConnections|Boolean|При задавке отключенияUDPConnections, клиенты и VPN-сервер не будут использовать connctions DTLS для обработки данных tansfer.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -95,6 +95,7 @@ ms.locfileid: "60685627"
   "disableUDPConnections": true
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ba3cf21e6f43c7eaab4a669870bca6b210fa383
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: bcad7fe5cf49c691c22c95c8aebaed061233f2b2
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688572"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61347860"
 ---
 # <a name="create-windowsupdateforbusinessconfiguration"></a>Create windowsUpdateForBusinessConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "60688572"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -56,13 +56,13 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|supportsScopeTags|Boolean|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость к выпуску ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deliveryOptimizationMode|[WindowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|Режим оптимизации доставки. Возможные значения: `userDefined`, `httpOnly`, `httpWithPeeringNat`, `httpWithPeeringPrivateGroup`, `httpWithInternetPeering`, `simpleDownload`, `bypassMode`.|
@@ -78,13 +78,13 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|Дата и время завершения срока приостановки исправлений.|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|Дата и время, когда будет завершен срок приостановки обновлений компонентов.|
 |businessReadyUpdatesOnly|[windowsUpdateType](../resources/intune-deviceconfig-windowsupdatetype.md)|Определяет, из каких устройств филиалов будут получаться обновления. Возможные значения: `userDefined`, `all`, `businessReadyOnly`, `windowsInsiderBuildFast`, `windowsInsiderBuildSlow`, `windowsInsiderBuildRelease`.|
-|skipChecksBeforeRestart|Логический|Установите, чтобы пропустить все проверки перед перезапуском: уровень батареи = 40%, присутствие пользователя, отображение необходимо, режим презентации, полноэкранный режим, состояние телефонных звонков, режим игры и т. д. |
+|skipChecksBeforeRestart|Boolean|Установите, чтобы пропустить все проверки перед перезапуском: уровень батареи = 40%, присутствие пользователя, отображение необходимо, режим презентации, полноэкранный режим, состояние телефонных звонков, режим игры и т. д. |
 |updateWeeks|[windowsUpdateForBusinessUpdateWeeks](../resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)|Запланирована установка обновления в течение нескольких недель месяца. Возможные значения: `userDefined`, `firstWeek`, `secondWeek`, `thirdWeek`, `fourthWeek`, `everyWeek`.|
 |qualityUpdatesPauseStartDate|Дата|Дата начала приостановки обновления качества. Это свойство доступно только для чтения.|
 |featureUpdatesPauseStartDate|Дата|Дата начала приостановки обновления функций. Это свойство доступно только для чтения.|
 |featureUpdatesRollbackWindowInDays|Int32|Количество дней после обновления функции, для которого допустим откат|
-|qualityUpdatesWillBeRolledBack|Логический|Указывает, следует ли откат обновлений качества при следующей проверке устройства|
-|featureUpdatesWillBeRolledBack|Логический|Указывает, следует ли откат обновлений функций при следующей проверке устройства|
+|qualityUpdatesWillBeRolledBack|Boolean|Указывает, следует ли откат обновлений качества при следующей проверке устройства|
+|featureUpdatesWillBeRolledBack|Boolean|Указывает, следует ли откат обновлений функций при следующей проверке устройства|
 |qualityUpdatesRollbackStartDateTime|DateTimeOffset|Дата начала отката обновлений качества|
 |featureUpdatesRollbackStartDateTime|DateTimeOffset|Дата начала отката обновлений функций|
 |engagedRestartDeadlineInDays|Int32|Крайний срок за несколько дней до автоматического планирования и выполнения ожидающих перезагрузки вне активных часов с допустимым диапазоном от 2 до 30 дней|
@@ -93,14 +93,14 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |deadlineForFeatureUpdatesInDays|Int32|Количество дней до установки обновлений функций автоматически с допустимым диапазоном от 2 до 30 дней|
 |deadlineForQualityUpdatesInDays|Int32|Количество дней до установки обновлений качества автоматически с допустимым диапазоном от 2 до 30 дней|
 |deadlineGracePeriodInDays|Int32|Количество дней после крайнего срока до автоматического перезапуска с допустимым диапазоном от 0 до 7 дней|
-|postponeRebootUntilAfterDeadline|Логический|Указывает, следует ли устройству дождаться крайнего срока для перезагрузки вне активных часов|
+|postponeRebootUntilAfterDeadline|Boolean|Указывает, следует ли устройству дождаться крайнего срока для перезагрузки вне активных часов|
 |autoRestartNotificationDismissal|[autoRestartNotificationDismissalMethod](../resources/intune-deviceconfig-autorestartnotificationdismissalmethod.md)|Укажите метод, с помощью которого необходимое уведомление автоматически перезапустится. Возможные значения: `notConfigured`, `automatic`, `user`.|
 |scheduleRestartWarningInHours|Int32|Укажите период для уведомлений о предупреждении автоматической перезапуска. Поддерживаемые значения: 2, 4, 8, 12 или 24 (часы).|
 |scheduleImminentRestartWarningInMinutes|Int32|Укажите период автоматического перезапуска оповещений о неминуемом предупреждении. Поддерживаемые значения: 15, 30 или 60 (минут).|
 |userPauseAccess|[включить](../resources/intune-shared-enablement.md)|Указывает, следует ли включить доступ конечных пользователей к приостановке обновлений программного обеспечения. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |userWindowsUpdateScanAccess|[включить](../resources/intune-shared-enablement.md)|Указывает, следует ли отключить доступ пользователя к проверке Windows Update. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |updateNotificationLevel|[windowsUpdateNotificationDisplayOption](../resources/intune-deviceconfig-windowsupdatenotificationdisplayoption.md)|Указывает, какие Windows уведомления об обновлении пользователи видят. Возможные значения: `notConfigured`, `defaultNotifications`, `restartWarningsOnly`, `disableAllNotifications`.|
-|allowWindows11Upgrade|Логический|Разрешить подходящим Windows 10 устройствам для обновления до последней версии Windows 11.|
+|allowWindows11Upgrade|Boolean|Разрешить подходящим Windows 10 устройствам для обновления до последней версии Windows 11.|
 
 
 
@@ -271,6 +271,7 @@ Content-Length: 3000
   "allowWindows11Upgrade": true
 }
 ```
+
 
 
 

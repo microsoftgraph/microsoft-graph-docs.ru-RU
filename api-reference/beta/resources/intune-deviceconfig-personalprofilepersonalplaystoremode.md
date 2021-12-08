@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bb1f3527eb3e42e15f2a604808902420a25b3c50
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 85321f9d25069fc1f87395e09ada67a7bbe9f51a
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60494966"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61348057"
 ---
 # <a name="personalprofilepersonalplaystoremode-enum-type"></a>тип enum personalProfilePersonalPlayStoreMode
 
@@ -25,9 +25,10 @@ ms.locfileid: "60494966"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|0|Не настроен.|
+|notConfigured|0|Не настроено.|
 |blockedApps|1|Заблокированные приложения.|
 |allowedApps|2|Разрешенные приложения.|
+
 
 
 

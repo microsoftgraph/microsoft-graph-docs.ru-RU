@@ -2,15 +2,15 @@
 title: тип ресурса windowsQualityUpdateProfileAssignment
 description: Эта сущность содержит свойства, используемые для назначения группе профиля обновления качества windows.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5c7e78d37e0c1d4fd104a408ff62522b533b3fcc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 875ce2dc0ab7da6308a8163ac0652200d4c370c7
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59054221"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346698"
 ---
 # <a name="windowsqualityupdateprofileassignment-resource-type"></a>тип ресурса windowsQualityUpdateProfileAssignment
 
@@ -59,6 +59,7 @@ ms.locfileid: "59054221"
   }
 }
 ```
+
 
 
 

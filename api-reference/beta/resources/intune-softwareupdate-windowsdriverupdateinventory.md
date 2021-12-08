@@ -2,15 +2,15 @@
 title: тип ресурса windowsDriverUpdateInventory
 description: Новая сущность для представления запасов драйвера.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 06fa58d5e4428e55e0d76a37c484519c566198d2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: be31bcdc9193e6bbd62c0b5a2bca0e0d939bf530
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029936"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343604"
 ---
 # <a name="windowsdriverupdateinventory-resource-type"></a>тип ресурса windowsDriverUpdateInventory
 
@@ -45,7 +45,7 @@ ms.locfileid: "59029936"
 |category|[driverCategory](../resources/intune-softwareupdate-drivercategory.md)|Категория для этого драйвера. Возможные значения: `recommended`, `previouslyApproved`, `other`.|
 |deployDateTime|DateTimeOffset|Дата развертывания драйвера при утвержденииStatus.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -71,6 +71,7 @@ ms.locfileid: "59029936"
   "deployDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

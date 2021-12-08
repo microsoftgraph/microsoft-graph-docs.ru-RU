@@ -2,15 +2,15 @@
 title: Обновление windowsDriverUpdateProfileAssignment
 description: Обновление свойств объекта WindowsDriverUpdateProfileAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ffb0a4f4ceb055a2de3c33a3066c4a096febc858
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e96c79cee21f440d5d89b6e170019c5776358305
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59054893"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342988"
 ---
 # <a name="update-windowsdriverupdateprofileassignment"></a>Обновление windowsDriverUpdateProfileAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "59054893"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileI
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ PATCH /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileI
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор сущности|
+|id|Строка|Идентификатор сущности|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения, назначенная профилем обновления драйвера.|
 
 
@@ -97,6 +97,7 @@ Content-Length: 392
   }
 }
 ```
+
 
 
 

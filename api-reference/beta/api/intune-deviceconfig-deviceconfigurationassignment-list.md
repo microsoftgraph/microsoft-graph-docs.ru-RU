@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1f7677b4ece117730eff38cde5a635ffc0ceff8c
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 7e12d31ac0cd490edfb5f56bfb44e89b3f849395
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688018"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346180"
 ---
 # <a name="list-deviceconfigurationassignments"></a>Перечисление объектов deviceConfigurationAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "60688018"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -94,6 +94,7 @@ Content-Length: 598
   ]
 }
 ```
+
 
 
 

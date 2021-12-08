@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a929c43f0aad551ad80d9321bbaa1882d0c14201
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 52611f31dfde54662a92f2d860bfe852688d91c5
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60689055"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61344857"
 ---
 # <a name="userexperienceanalyticsbaseline-resource-type"></a>тип ресурса userExperienceAnalyticsBaseline
 
@@ -34,8 +34,8 @@ ms.locfileid: "60689055"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор базовой базы аналитики пользовательского интерфейса.|
-|displayName|String|Имя базовой базы аналитики пользовательского интерфейса.|
+|id|Строка|Уникальный идентификатор базовой базы аналитики пользовательского интерфейса.|
+|displayName|Строка|Имя базовой базы аналитики пользовательского интерфейса.|
 |overallScore|Int32|Общая оценка базовой базы аналитики пользовательских интерфейсов.|
 |isBuiltIn|Boolean|Означает, является ли текущий базовый уровень коммерческим медианым или настраиваемой базовой базой.|
 |createdDateTime|DateTimeOffset|Дата создания настраиваемой базовой линии.|
@@ -69,6 +69,7 @@ ms.locfileid: "60689055"
   "createdDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

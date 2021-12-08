@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b03710f31470a7b1c43b15933b24e6cd90a14731
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: db0c5268b3f40ac726ca98336cb2a1ddf2e8cf9d
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60689372"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343156"
 ---
 # <a name="userexperienceanalyticsbatteryhealthcapacitydetails-resource-type"></a>тип ресурса userExperienceAnalyticsBatteryHealthCapacityDetails
 
@@ -58,6 +58,7 @@ ms.locfileid: "60689372"
   "batteryCapacityPoor": 1024
 }
 ```
+
 
 
 

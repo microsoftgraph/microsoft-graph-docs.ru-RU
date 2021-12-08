@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7f35bd6e908ea6497de1c0cfa03188fe77bc6743
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 134564f4d3a83d5d7f33f1c39a738fbfd0394d9a
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60479202"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61344549"
 ---
 # <a name="create-appleuserinitiatedenrollmentprofile"></a>Создание appleUserInitiatedEnrollmentProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "60479202"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,9 +55,9 @@ POST /deviceManagement/appleUserInitiatedEnrollmentProfiles
 |:---|:---|:---|
 |defaultEnrollmentType|[appleUserInitiatedEnrollmentType](../resources/intune-enrollment-appleuserinitiatedenrollmenttype.md)|Тип регистрации профиля по умолчанию. Возможные значения: `unknown`, `device`, `user`.|
 |availableEnrollmentTypeOptions|[коллекция appleOwnerTypeEnrollmentType](../resources/intune-enrollment-appleownertypeenrollmenttype.md)|Список доступных параметров типа регистрации|
-|id|String|GUID объекта|
+|id|Строка|GUID объекта|
 |displayName|String|Имя профиля|
-|description|String|Описание профиля|
+|description|Строка|Описание профиля|
 |priority|Int32|Приоритет, 0 — самый высокий|
 |платформа|[devicePlatformType](../resources/intune-enrollment-deviceplatformtype.md)|Платформа устройства. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`, `androidAOSP`.|
 |createdDateTime|DateTimeOffset|Время создания профиля|
@@ -120,6 +120,7 @@ Content-Length: 611
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

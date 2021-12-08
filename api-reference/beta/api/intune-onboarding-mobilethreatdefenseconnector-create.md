@@ -2,15 +2,15 @@
 title: Создание объекта mobileThreatDefenseConnector
 description: Создание объекта mobileThreatDefenseConnector.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3d20b762027b004ed1a5e0f442b8cadfce86d873
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ba32a951f182ba7ba752410a3aac13b94da89850
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59092821"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346020"
 ---
 # <a name="create-mobilethreatdefenseconnector"></a>Создание объекта mobileThreatDefenseConnector
 
@@ -29,7 +29,7 @@ ms.locfileid: "59092821"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/mobileThreatDefenseConnectors
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,23 +53,24 @@ POST /deviceManagement/mobileThreatDefenseConnectors
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Пока не задокументировано.|
+|id|Строка|Пока не задокументировано.|
 |lastHeartbeatDateTime|DateTimeOffset|Дата и время последнего подтверждения соединения, полученные от партнера по синхронизации данных|
-|partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|Синхронизация данных Состояние партнера для этой учетной записи. Возможные значения: `unavailable`, `available`, `enabled`, `unresponsive`.|
-|AndroidMobileApplicationManagementEnabled|Логическое|Для Android установите, следует ли использовать данные партнера синхронизации данных во время оценок управления мобильными приложениями (MAM). Для оценки управления мобильными приложениями (MAM) может быть включен только один партнер на платформе.|
-|iosMobileApplicationManagementEnabled|Логическое|Для IOS получите или установите, следует ли использовать данные партнера синхронизации данных во время оценок управления мобильными приложениями (MAM). Для оценки управления мобильными приложениями (MAM) может быть включен только один партнер на платформе.|
+|partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|Синхронизация данных партнер для этой учетной записи. Возможные значения: `unavailable`, `available`, `enabled`, `unresponsive`.|
+|AndroidMobileApplicationManagementEnabled|Boolean|Для Android установите, следует ли использовать данные партнера синхронизации данных во время оценок управления мобильными приложениями (MAM). Для оценки управления мобильными приложениями (MAM) может быть включен только один партнер на платформе.|
+|iosMobileApplicationManagementEnabled|Boolean|Для IOS получите или установите, следует ли использовать данные партнера синхронизации данных во время оценок управления мобильными приложениями (MAM). Для оценки управления мобильными приложениями (MAM) может быть включен только один партнер на платформе.|
 |androidEnabled|Логическое|Для ОС Android следует указать в настройках, необходимо ли использовать данные партнера по синхронизации данных в ходе оценки соответствия требованиям|
 |iosEnabled|Логическое|Для ОС IOS следует получить или задать настройки, необходимо ли использовать данные партнера по синхронизации данных в ходе оценок соответствия требованиям|
-|windowsEnabled|Логическое|Чтобы Windows, получите или установите, следует ли использовать данные партнера синхронизации данных во время оценки соответствия требованиям.|
-|macEnabled|Логическое|Для Mac получите или установите, следует ли использовать данные партнера синхронизации данных во время оценки соответствия требованиям.|
+|windowsEnabled|Boolean|Чтобы Windows, получите или установите, следует ли использовать данные партнера синхронизации данных во время оценки соответствия требованиям.|
+|macEnabled|Boolean|Для Mac получите или установите, следует ли использовать данные партнера синхронизации данных во время оценки соответствия требованиям.|
 |androidDeviceBlockedOnMissingPartnerData|Логическое|Для ОС Android следует указать, необходимо ли Intune получать данные от партнера по синхронизации данных, прежде чем отметить устройство как соответствующее требованиям|
 |iosDeviceBlockedOnMissingPartnerData|Логическое|Для ОС IOS следует указать, необходимо ли Intune получать данные от партнера по синхронизации данных, прежде чем отметить устройство как соответствующее требованиям|
-|windowsDeviceBlockedOnMissingPartnerData|Логическое|Для Windows установите, должен ли Intune получать данные от партнера синхронизации данных до маркировки устройства, удовлетворяемой требованиям.|
-|macDeviceBlockedOnMissingPartnerData|Логическое|Для Mac получите или установите, должен ли Intune получать данные от партнера по синхронизации данных до маркировки устройства, удовлетворяемой требованиям.|
+|windowsDeviceBlockedOnMissingPartnerData|Boolean|Для Windows установите, должен ли Intune получать данные от партнера синхронизации данных до маркировки устройства, удовлетворяемой требованиям.|
+|macDeviceBlockedOnMissingPartnerData|Boolean|Для Mac получите или установите, должен ли Intune получать данные от партнера по синхронизации данных до маркировки устройства, удовлетворяемой требованиям.|
 |partnerUnsupportedOsVersionBlocked|Логическое|Получение или задание настроек, следует ли блокировать устройства на включенных платформах, которые не соответствуют минимальным требованиям к версии партнера по синхронизации данных|
 |partnerUnresponsivenessThresholdInDays|Int32|Получает или задает количество дней устойчивости к отсутствию отклика для клиента при этой интеграции партнера.|
-|allowPartnerToCollectIOSApplicationMetadata|Логическое|Для устройств IOS администратор может настроить, может ли партнер синхронизации данных также собирать метаданные об установленных приложениях из Intune.|
-|MicrosoftDefenderForEndpointAttachEnabled|Логический|При TRUE включено управление профилем конфигурации через Microsoft Defender для конечной точки. При FALSE управление профилем конфигурации с помощью Microsoft Defender для конечной точки отключено.|
+|allowPartnerToCollectIOSApplicationMetadata|Boolean|Для устройств IOS администратор может настроить, может ли партнер синхронизации данных также собирать метаданные об установленных приложениях из Intune.|
+|allowPartnerToCollectIOSPersonalApplicationMetadata|Boolean|Для устройств IOS администратор может настроить, может ли партнер синхронизации данных также собирать метаданные о лично установленных приложениях из Intune.|
+|MicrosoftDefenderForEndpointAttachEnabled|Boolean|При TRUE включено управление профилем конфигурации через Microsoft Defender для конечной точки. При FALSE управление профилем конфигурации с помощью Microsoft Defender для конечной точки отключено.|
 
 
 
@@ -83,7 +84,7 @@ POST /deviceManagement/mobileThreatDefenseConnectors
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/mobileThreatDefenseConnectors
 Content-type: application/json
-Content-length: 780
+Content-length: 844
 
 {
   "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",
@@ -102,6 +103,7 @@ Content-length: 780
   "partnerUnsupportedOsVersionBlocked": true,
   "partnerUnresponsivenessThresholdInDays": 6,
   "allowPartnerToCollectIOSApplicationMetadata": true,
+  "allowPartnerToCollectIOSPersonalApplicationMetadata": true,
   "microsoftDefenderForEndpointAttachEnabled": true
 }
 ```
@@ -111,7 +113,7 @@ Content-length: 780
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 829
+Content-Length: 893
 
 {
   "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",
@@ -131,9 +133,11 @@ Content-Length: 829
   "partnerUnsupportedOsVersionBlocked": true,
   "partnerUnresponsivenessThresholdInDays": 6,
   "allowPartnerToCollectIOSApplicationMetadata": true,
+  "allowPartnerToCollectIOSPersonalApplicationMetadata": true,
   "microsoftDefenderForEndpointAttachEnabled": true
 }
 ```
+
 
 
 

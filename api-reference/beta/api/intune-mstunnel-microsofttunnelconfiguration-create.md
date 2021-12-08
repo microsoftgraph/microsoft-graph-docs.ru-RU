@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6da18e706ed377e6730eb414c575da9f7bd12206
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: b984348c7f296b2f3c48e8960d3c1e22f6fde1f5
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696128"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343254"
 ---
 # <a name="create-microsofttunnelconfiguration"></a>Создание microsoftTunnelConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "60696128"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,18 +55,18 @@ POST /deviceManagement/microsoftTunnelConfigurations
 |:---|:---|:---|
 |id|String|Id MicrosoftTunnelConfiguration|
 |displayName|String|Имя отображения MicrosoftTunnelConfiguration|
-|description|String|Описание MicrosoftTunnelConfiguration|
-|сеть|String|Подсеть, которая будет использоваться для выделения виртуального адреса для клиентов|
-|dnsServers|Коллекция строк|DNS-серверы, которые будут использоваться клиентами|
-|defaultDomainSuffix|String|Приложение домена по умолчанию, которое будет использоваться клиентами|
-|routesInclude|Коллекция строк|Маршруты, которые будут маршрутить сервер|
-|routesExclude|Коллекция строк|Подмышы маршрутов, которые не будут маршрутиться сервером|
-|splitDNS|Коллекция строк|Домены, которые будут разрешены с помощью предоставленных dns-серверов|
+|description|Строка|Описание MicrosoftTunnelConfiguration|
+|сеть|Строка|Подсеть, которая будет использоваться для выделения виртуального адреса для клиентов|
+|dnsServers|Коллекция String|DNS-серверы, которые будут использоваться клиентами|
+|defaultDomainSuffix|Строка|Приложение домена по умолчанию, которое будет использоваться клиентами|
+|routesInclude|Коллекция String|Маршруты, которые будут маршрутить сервер|
+|routesExclude|Коллекция String|Подмышы маршрутов, которые не будут маршрутиться сервером|
+|splitDNS|Коллекция String|Домены, которые будут разрешены с помощью предоставленных dns-серверов|
 |listenPort|Int32|Порт, который будут прослушивать TCP и UPD на сервере|
-|advancedSettings|Коллекция [keyValuePair](../resources/intune-mstunnel-keyvaluepair.md)|Дополнительные параметры, которые могут быть применены к серверу|
+|advancedSettings|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Дополнительные параметры, которые могут быть применены к серверу|
 |lastUpdateDateTime|DateTimeOffset|При последнем обновлении MicrosoftTunnelConfiguration|
-|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity.|
-|отключениеUDPConnections|Логический|При задавке отключенияUDPConnections, клиенты и VPN-сервер не будут использовать connctions DTLS для обработки данных tansfer.|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
+|отключениеUDPConnections|Boolean|При задавке отключенияUDPConnections, клиенты и VPN-сервер не будут использовать connctions DTLS для обработки данных tansfer.|
 
 
 
@@ -157,6 +157,7 @@ Content-Length: 831
   "disableUDPConnections": true
 }
 ```
+
 
 
 

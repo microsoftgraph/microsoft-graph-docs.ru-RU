@@ -4,12 +4,12 @@ description: Перечислены API Graph Microsoft для конечных 
 ms.localizationpriority: medium
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 03a663f540ab51ea6f76274968b0ec52593dc597
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 66d40ecd47b8ba1ab66bd6f596aa2bf6e47ba96a
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687552"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61348182"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Общие ресурсы в Microsoft Intune
 
@@ -68,6 +68,7 @@ ms.locfileid: "60687552"
 - [Размер ключа](intune-shared-keysize.md)
 - [Параметр поставщика хранилища ключей](intune-shared-keystorageprovideroption.md)
 - [Использование ключей](intune-shared-keyusages.md)
+- [Пара "ключ-значение"](intune-shared-keyvaluepair.md)
 - [Параметры назначения приложений macOS LOB](intune-shared-macoslobappassignmentsettings.md)
 - [Настройки назначения приложения macOS, приобретенного по программе VPP](intune-shared-macosvppappassignmentsettings.md)
 - [Тип владельца управляемого устройства](intune-shared-manageddeviceownertype.md)
@@ -84,6 +85,7 @@ ms.locfileid: "60687552"
 - [Корневая папка отчета](intune-shared-reportroot.md)
 - [Цвет RGB](intune-shared-rgbcolor.md)
 - [Тип учетной записи, от имени которой запускается приложение](intune-shared-runasaccounttype.md)
+- [Состояние выполнения](intune-shared-runstate.md)
 - [Сохраненные параметры создания состояния пользовательского интерфейса](intune-shared-saveduistategenerationoptions.md)
 - [Настройка типа источника](intune-shared-settingsourcetype.md)
 - [Тип альтернативного имени субъекта](intune-shared-subjectalternativenametype.md)

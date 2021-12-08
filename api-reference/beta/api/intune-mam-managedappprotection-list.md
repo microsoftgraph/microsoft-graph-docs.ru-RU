@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 493637644627ffde5d70e99c92d2152263fdd16e
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: c33e3b591b47a68a28605153edc06d5173a0d580
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695463"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61347874"
 ---
 # <a name="list-managedappprotections"></a>Перечисление объектов managedAppProtection
 
@@ -29,7 +29,7 @@ ms.locfileid: "60695463"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -135,6 +135,7 @@ Content-Length: 2913
   ]
 }
 ```
+
 
 
 

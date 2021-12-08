@@ -2,15 +2,15 @@
 title: Создание userExperienceAnalyticsNotAutopilotReadyDevice
 description: Создание нового объекта userExperienceAnalyticsNotAutopilotReadyDevice.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c96995d78d5cd29e9354bdfc98a89a31cb1ae48d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ae6d52d3b8b97f8f09e75ba55b8dca36db1cba46
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59077120"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61344066"
 ---
 # <a name="create-userexperienceanalyticsnotautopilotreadydevice"></a>Создание userExperienceAnalyticsNotAutopilotReadyDevice
 
@@ -27,9 +27,9 @@ ms.locfileid: "59077120"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsNotAutopilotReadyDevice
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,16 +53,16 @@ POST /deviceManagement/userExperienceAnalyticsNotAutopilotReadyDevice
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор устройства intune аналитики пользовательского интерфейса.|
+|id|Строка|Уникальный идентификатор устройства intune аналитики пользовательского интерфейса.|
 |deviceName|String|Имя устройства intune.|
 |serialNumber|String|Серийный номер устройства intune.|
 |manufacturer|String|Производитель устройства intune.|
 |model|String|Модель устройства intune.|
 |managedBy|String|Устройство intune управляется.|
-|autoPilotRegistered|Логический|Автопилотрегистер устройства intune.|
-|autoPilotProfileAssigned|Логический|Автопилот Устройства intuneProfileAssigned.|
-|azureAdRegistered|Логический|Устройство intune azureAdRegistered.|
-|azureAdJoinType|String|Azure Ad ad для устройства intune присоединяется кType.|
+|autoPilotRegistered|Boolean|Автопилотрегистер устройства intune.|
+|autoPilotProfileAssigned|Boolean|Автопилот Устройства intuneProfileAssigned.|
+|azureAdRegistered|Boolean|Устройство intune azureAdRegistered.|
+|azureAdJoinType|Строка|Azure Ad ad для устройства intune присоединяется кType.|
 
 
 
@@ -113,6 +113,7 @@ Content-Length: 470
   "azureAdJoinType": "Azure Ad Join Type value"
 }
 ```
+
 
 
 

@@ -2,15 +2,15 @@
 title: действие createCopy
 description: Пока не задокументировано.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 066ea77e9905952602a241de5e174f964f835fbd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 27051d93d78e2da24a2abffe3575b10891703e1e
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59124968"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61345074"
 ---
 # <a name="createcopy-action"></a>действие createCopy
 
@@ -29,7 +29,7 @@ ms.locfileid: "59124968"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/createCopy
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,8 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/createCopy
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Пока не задокументировано.|
+|displayName|Строка|Н/Д|
+|description|String|Пока не задокументировано.|
 
 
 
@@ -68,10 +69,11 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/createCopy
 POST https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}/createCopy
 
 Content-type: application/json
-Content-length: 43
+Content-length: 82
 
 {
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "description": "Description value"
 }
 ```
 
@@ -97,6 +99,7 @@ Content-Length: 418
   }
 }
 ```
+
 
 
 

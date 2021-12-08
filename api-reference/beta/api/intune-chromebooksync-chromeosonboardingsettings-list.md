@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 925335dee12d72a0f9a6c63f4d73cda909001a82
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: b550aa89735123efee1e52a4c444f5300e27b219
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695939"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346530"
 ---
 # <a name="list-chromeosonboardingsettingses"></a>Список chromeOSOnboardingSettingses
 
@@ -29,7 +29,7 @@ ms.locfileid: "60695939"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -80,6 +80,7 @@ Content-Length: 408
   ]
 }
 ```
+
 
 
 

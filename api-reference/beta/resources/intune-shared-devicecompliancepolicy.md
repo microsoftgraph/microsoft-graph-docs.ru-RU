@@ -2,15 +2,15 @@
 title: Тип ресурса deviceCompliancePolicy
 description: 'Это базовый класс для политик обеспечения соответствия требованиям. Такие политики предназначаются для определенной платформы. Отдельные политики обеспечения соответствия требованиям наследуются от этого класса. '
 author: rolyon
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 420850a079d74834d77181ad45782a39a377444a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 507b2a6f6d1ffc3c560979709932acf61b251d5a
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59039170"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61344836"
 ---
 # <a name="devicecompliancepolicy-resource-type"></a>Тип ресурса deviceCompliancePolicy
 
@@ -28,9 +28,9 @@ ms.locfileid: "59039170"
 |[Перечисление deviceCompliancePolicies](../api/intune-shared-devicecompliancepolicy-list.md)|Коллекция [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|Список свойств и связей объектов [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |[Получение deviceCompliancePolicy](../api/intune-shared-devicecompliancepolicy-get.md)|[deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|Считывание свойств и связей объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |**Конфигурация устройств**|
-|[Действие assign](../api/intune-shared-devicecompliancepolicy-assign.md)|Коллекция [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md)|Н/Д|
-|Действие scheduleActionsForRules|Нет|Н/Д|
-|refreshDeviceComplianceReportSummarization action].. /api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md)|Нет|Н/Д|
+|[Действие assign](../api/intune-shared-devicecompliancepolicy-assign.md)|Коллекция [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md)|Пока не задокументировано|
+|[Действие scheduleActionsForRules](../api/intune-shared-devicecompliancepolicy-scheduleactionsforrules.md)|None|Н/Д|
+|[Действие refreshDeviceComplianceReportSummarization](../api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md)|Нет|Н/Д|
 |**Набор политик**|
 |[действие hasPayloadLinks](../api/intune-shared-devicecompliancepolicy-haspayloadlinks.md)|[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection|Н/Д|
 
@@ -38,9 +38,9 @@ ms.locfileid: "59039170"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity.|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|description|String|Указанное администратором описание конфигурации устройства.|
+|description|Строка|Указанное администратором описание конфигурации устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |displayName|String|Указанное администратором имя конфигурации устройства.|
 |version|Int32|Версия конфигурации устройства.|

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3d65e3e06233ac1624f6e78df7207e29ea0b21f6
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 89d76bf0d391d0185033b26d99c05e9f2f3f3bca
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60693935"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61345088"
 ---
 # <a name="get-windows10vpnconfiguration"></a>Получить windows10VpnConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "60693935"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -226,6 +226,7 @@ Content-Length: 5014
   }
 }
 ```
+
 
 
 

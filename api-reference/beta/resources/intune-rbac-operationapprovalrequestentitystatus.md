@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cef153334cdd30044a75ed1cc0e322f6e94ecb64
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 7449a0fd644e23bd7cba49398ecb3c84ac6e739d
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60487913"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343590"
 ---
 # <a name="operationapprovalrequestentitystatus-resource-type"></a>тип ресурса operationApprovalRequestEntityStatus
 
@@ -25,10 +25,10 @@ ms.locfileid: "60487913"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|requestId|String|ID operationApprovalRequest для этого объекта. Это свойство доступно только для чтения.|
+|requestId|Строка|ID operationApprovalRequest для этого объекта. Это свойство доступно только для чтения.|
 |requestExpirationDateTime|DateTimeOffset|DateTime, в котором действия по запросу больше не разрешены. Это свойство доступно только для чтения.|
 |requestStatus|[operationApprovalRequestStatus](../resources/intune-rbac-operationapprovalrequeststatus.md)|Текущий статус запроса на утверждение. Это свойство доступно только для чтения. Возможные значения: `unknown`, `needsApproval`, `approved`, `rejected`, `cancelled`, `completed`, `expired`.|
-|entityLocked|Логический|Состояние объекта в отношении изменений, разрешенных дальнейших запросов или блокировки объекта. Это свойство доступно только для чтения.|
+|entityLocked|Boolean|Состояние объекта в отношении изменений, разрешенных дальнейших запросов или блокировки объекта. Это свойство доступно только для чтения.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -49,6 +49,7 @@ ms.locfileid: "60487913"
   "entityLocked": true
 }
 ```
+
 
 
 

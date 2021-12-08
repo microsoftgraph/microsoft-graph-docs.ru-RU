@@ -2,15 +2,15 @@
 title: Создание appLogCollectionRequest
 description: Создайте новый объект appLogCollectionRequest.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5439a9109f413c142d2a6e78aa7451dc90f694e5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 81fb2dac67e0e2eef14f051bfd10a5dd8e96f617
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59042475"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346894"
 ---
 # <a name="create-applogcollectionrequest"></a>Создание appLogCollectionRequest
 
@@ -27,9 +27,9 @@ ms.locfileid: "59042475"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,10 +53,10 @@ POST /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор. Это userId_DeviceId_AppId id.|
+|id|Строка|Уникальный идентификатор. Это userId_DeviceId_AppId id.|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Состояние загрузки журнала. Возможные значения: `pending`, `completed`, `failed`.|
-|errorMessage|String|Сообщение об ошибке, если таково сообщение во время процесса загрузки|
-|customLogFolders|Коллекция объектов string|Список папок журнала. |
+|errorMessage|Строка|Сообщение об ошибке, если таково сообщение во время процесса загрузки|
+|customLogFolders|Коллекция String|Список папок журнала. |
 |completedDateTime|DateTimeOffset|Время, в течение которого запрос журнала загрузки достиг состояния терминала|
 
 
@@ -102,6 +102,7 @@ Content-Length: 306
   "completedDateTime": "2016-12-31T23:58:52.3534526-08:00"
 }
 ```
+
 
 
 

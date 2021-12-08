@@ -2,15 +2,15 @@
 title: Создание mobileAppInstallStatus
 description: Создание нового объекта mobileAppInstallStatus.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bd75c9f2e14c81c85a6532f02f210f3942ad55c8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e4e0272bed3d58120c227d72790987b482f71aee
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59031553"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346537"
 ---
 # <a name="create-mobileappinstallstatus"></a>Создание mobileAppInstallStatus
 
@@ -27,9 +27,9 @@ ms.locfileid: "59031553"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -56,7 +56,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallS
 |:---|:---|:---|
 |id|String|Ключ объекта.|
 |deviceName|String|Имя устройства|
-|deviceId|String|ID устройства|
+|deviceId|String|Код устройства|
 |lastSyncDateTime|DateTimeOffset|Время последней даты синхронизации|
 |mobileAppInstallStatusValue|[resultantAppState](../resources/intune-apps-resultantappstate.md)|Состояние установки приложения. Возможные значения: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |installState|[resultantAppState](../resources/intune-apps-resultantappstate.md)|Состояние установки приложения. Возможные значения: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
@@ -70,7 +70,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallS
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код отклика и `201 Created` [объект mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
@@ -123,6 +123,7 @@ Content-Length: 604
   "displayVersion": "Display Version value"
 }
 ```
+
 
 
 

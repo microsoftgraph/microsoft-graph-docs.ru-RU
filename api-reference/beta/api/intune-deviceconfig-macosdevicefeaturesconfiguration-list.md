@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0ddc36ff7d72f263703ed2c8248bd3845a9840ee
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 431411d3ac2767807456986c2af1f5863e85c246
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696723"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346166"
 ---
 # <a name="list-macosdevicefeaturesconfigurations"></a>Перечисление объектов macOSDeviceFeaturesConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "60696723"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -263,6 +263,7 @@ Content-Length: 7213
   ]
 }
 ```
+
 
 
 

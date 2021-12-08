@@ -2,15 +2,15 @@
 title: Создание userExperienceAnalyticsRemoteConnection
 description: Создание нового объекта userExperienceAnalyticsRemoteConnection.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b918a4e540230d7fd6a6f6cd7cfab6cd985d1be6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2ff06e498cd2f0d1757ae2e9f4c387c6f98efe90
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59059016"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342106"
 ---
 # <a name="create-userexperienceanalyticsremoteconnection"></a>Создание userExperienceAnalyticsRemoteConnection
 
@@ -27,9 +27,9 @@ ms.locfileid: "59059016"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsRemoteConnection
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -60,12 +60,12 @@ POST /deviceManagement/userExperienceAnalyticsRemoteConnection
 |virtualNetwork|Строка|Виртуальная сеть аналитики пользовательских интерфейсов.|
 |manufacturer|String|Производитель аналитики пользовательских интерфейсов.|
 |deviceCount|Int32|Количество удаленных подключений. Допустимые значения от 0 до 2147483647|
-|cloudPcRoundTripTime|Двойное с плавающей точкой|Время круговой оконечности устройства облачного ПК. Допустимые значения от 0 до 1.79769313486232E+308|
-|cloudPcSignInTime|Двойное с плавающей точкой|Вход во время устройства облачного ПК. Допустимые значения от 0 до 1.79769313486232E+308|
-|remoteSignInTime|Двойное с плавающей точкой|Удаленный вход во время устройства облачного ПК. Допустимые значения от 0 до 1.79769313486232E+308|
-|coreBootTime|Двойное с плавающей точкой|Основное время загрузки устройства облачного ПК. Допустимые значения от 0 до 1.79769313486232E+308|
-|coreSignInTime|Двойное с плавающей точкой|Основной знак во время устройства облачного ПК. Допустимые значения от 0 до 1.79769313486232E+308|
-|cloudPcFailurePercentage|Двойное с плавающей точкой|Вход в процент отказа облачного устройства PC. Допустимые значения: от 0 до 100|
+|cloudPcRoundTripTime|Double|Время круговой оконечности устройства облачного ПК. Допустимые значения от 0 до 1.79769313486232E+308|
+|cloudPcSignInTime|Double|Вход во время устройства облачного ПК. Допустимые значения от 0 до 1.79769313486232E+308|
+|remoteSignInTime|Double|Удаленный вход во время устройства облачного ПК. Допустимые значения от 0 до 1.79769313486232E+308|
+|coreBootTime|Double|Основное время загрузки устройства облачного ПК. Допустимые значения от 0 до 1.79769313486232E+308|
+|coreSignInTime|Double|Основной знак во время устройства облачного ПК. Допустимые значения от 0 до 1.79769313486232E+308|
+|cloudPcFailurePercentage|Double|Вход в процент отказа облачного устройства PC. Допустимые значения: от 0 до 100|
 |userPrincipalName|String|Пользователь с опытом аналитики userPrincipalName.|
 
 
@@ -125,6 +125,7 @@ Content-Length: 622
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

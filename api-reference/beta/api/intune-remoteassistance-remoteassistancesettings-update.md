@@ -2,15 +2,15 @@
 title: Обновление remoteAssistanceSettings
 description: Обновление свойств объекта remoteAssistanceSettings.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 056ba18203dad1ff0e59297959e18459a5b879d9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e3d81fbdbab253866de523d6d0c4083b29dc204d
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59096433"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343688"
 ---
 # <a name="update-remoteassistancesettings"></a>Обновление remoteAssistanceSettings
 
@@ -27,9 +27,9 @@ ms.locfileid: "59096433"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/remoteAssistanceSettings
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,9 +53,9 @@ PATCH /deviceManagement/remoteAssistanceSettings
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор параметров удаленной помощи|
-|remoteAssistanceState|[remoteAssistanceState](../resources/intune-remoteassistance-remoteassistancestate.md)|Текущее состояние удаленной помощи для учетной записи. Возможные значения: неКонфигурационные, отключенные, включенные. Этот параметр настраивается администратором. Параметры удаленной помощи, которые еще не настроены администратором, имеют состояние notConfigured. Возвращается по умолчанию. Возможные значения: `notConfigured`, `disabled`, `enabled`.|
-|allowSessionsToUnenrolledDevices|Логическое| Указывает, разрешены ли сеансы для незавершенных устройств для учетной записи. Этот параметр настраивается администратором. Значение по умолчанию является ложным.|
+|id|Строка|Идентификатор параметров удаленной помощи|
+|remoteAssistanceState|[remoteAssistanceState](../resources/intune-remoteassistance-remoteassistancestate.md)|Текущее состояние удаленной помощи для учетной записи. Возможные значения: отключено, включено. Этот параметр настраивается администратором. Параметры удаленной помощи, которые еще не настроены администратором, отключены. Возвращается по умолчанию. Возможные значения: `disabled`, `enabled`.|
+|allowSessionsToUnenrolledDevices|Boolean| Указывает, разрешены ли сеансы для незавершенных устройств для учетной записи. Этот параметр настраивается администратором. Значение по умолчанию является ложным.|
 
 
 
@@ -69,11 +69,11 @@ PATCH /deviceManagement/remoteAssistanceSettings
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/remoteAssistanceSettings
 Content-type: application/json
-Content-length: 151
+Content-length: 150
 
 {
   "@odata.type": "#microsoft.graph.remoteAssistanceSettings",
-  "remoteAssistanceState": "disabled",
+  "remoteAssistanceState": "enabled",
   "allowSessionsToUnenrolledDevices": true
 }
 ```
@@ -83,15 +83,16 @@ Content-length: 151
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 200
+Content-Length: 199
 
 {
   "@odata.type": "#microsoft.graph.remoteAssistanceSettings",
   "id": "cfef360e-360e-cfef-0e36-efcf0e36efcf",
-  "remoteAssistanceState": "disabled",
+  "remoteAssistanceState": "enabled",
   "allowSessionsToUnenrolledDevices": true
 }
 ```
+
 
 
 

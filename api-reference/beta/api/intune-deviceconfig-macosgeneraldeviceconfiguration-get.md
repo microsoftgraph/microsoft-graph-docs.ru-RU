@@ -2,15 +2,15 @@
 title: Get macOSGeneralDeviceConfiguration
 description: Чтение свойств и связей объекта macOSGeneralDeviceConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 72fda129976902cf8afa90891ad42a7f65293abf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 82bbe8efc135a116cb36b6afabadf08a401b1b0f
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138787"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343331"
 ---
 # <a name="get-macosgeneraldeviceconfiguration"></a>Get macOSGeneralDeviceConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "59138787"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5363
+Content-Length: 5436
 
 {
   "value": {
@@ -209,10 +209,13 @@ Content-Length: 5363
     "eraseContentAndSettingsBlocked": true,
     "softwareUpdateMajorOSDeferredInstallDelayInDays": 15,
     "softwareUpdateMinorOSDeferredInstallDelayInDays": 15,
-    "softwareUpdateNonOSDeferredInstallDelayInDays": 13
+    "softwareUpdateNonOSDeferredInstallDelayInDays": 13,
+    "touchIdTimeoutInHours": 5,
+    "iCloudPrivateRelayBlocked": true
   }
 }
 ```
+
 
 
 

@@ -2,15 +2,15 @@
 title: Создание userExperienceAnalyticsDeviceScores
 description: Создание нового объекта userExperienceAnalyticsDeviceScores.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f91e733bddc89c8122593e4ea461523db4da9873
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6e597dc9ec4598492f2f381c4ff2f2ff15551e23
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59116663"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61344115"
 ---
 # <a name="create-userexperienceanalyticsdevicescores"></a>Создание userExperienceAnalyticsDeviceScores
 
@@ -27,9 +27,9 @@ ms.locfileid: "59116663"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsDeviceScores
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,14 +53,14 @@ POST /deviceManagement/userExperienceAnalyticsDeviceScores
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор устройства аналитики пользовательских интерфейсов.|
+|id|Строка|Уникальный идентификатор устройства аналитики пользовательских интерфейсов.|
 |deviceName|String|Имя устройства аналитики пользовательского интерфейса.|
 |model|String|Модель устройства аналитики пользовательских интерфейсов.|
 |manufacturer|String|Производитель устройств аналитики пользовательских интерфейсов.|
-|endpointAnalyticsScore|Двойное с плавающей точкой|Оценка устройства аналитики пользовательского интерфейса. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
-|startupPerformanceScore|Двойное с плавающей точкой|Оценка производительности запуска устройства для аналитики пользовательского интерфейса. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
-|appReliabilityScore|Двойное с плавающей точкой|Оценка надежности приложения приложения для аналитики пользовательского интерфейса. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
-|workFromAnywhereScore|Двойное с плавающей точкой|Устройство аналитики пользовательских интерфейсов работает с любого балла. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|endpointAnalyticsScore|Double|Оценка устройства аналитики пользовательского интерфейса. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|startupPerformanceScore|Double|Оценка производительности запуска устройства для аналитики пользовательского интерфейса. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|appReliabilityScore|Double|Оценка надежности приложения приложения для аналитики пользовательского интерфейса. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|workFromAnywhereScore|Double|Устройство аналитики пользовательских интерфейсов работает с любого балла. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
 |healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Состояние здоровья устройства аналитики пользовательского интерфейса. Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 
@@ -110,6 +110,7 @@ Content-Length: 446
   "healthStatus": "insufficientData"
 }
 ```
+
 
 
 

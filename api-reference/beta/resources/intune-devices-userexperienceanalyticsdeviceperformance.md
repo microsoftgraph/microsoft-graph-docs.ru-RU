@@ -2,15 +2,15 @@
 title: тип ресурса userExperienceAnalyticsDevicePerformance
 description: Объект пользовательской аналитики производительности устройств содержит сведения о производительности загрузки устройств.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c79bbd7b12c82fec38cacf6835c5dd7675ad8558
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8b8c1e28b373780221c3cf06d7b36d9e6fd631e9
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59125815"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61344500"
 ---
 # <a name="userexperienceanalyticsdeviceperformance-resource-type"></a>тип ресурса userExperienceAnalyticsDevicePerformance
 
@@ -52,10 +52,10 @@ ms.locfileid: "59125815"
 |responsiveDesktopTimeInMs|Int32|Аналитика пользовательского интерфейса реагирует на время рабочего стола в миллисекунд.|
 |blueScreenCount|Int32|Количество синих экранов за последние 14 дней. Допустимые значения от 0 до 9999999|
 |restartCount|Int32|Количество перезапусков за последние 14 дней. Допустимые значения от 0 до 9999999|
-|averageBlueScreens|Двойное с плавающей точкой|Среднее (среднее) число синих экранов на устройство за последние 14 дней. Допустимые значения от 0 до 9999999|
-|averageRestarts|Двойное с плавающей точкой|Среднее (среднее) число перезапусков на устройство за последние 14 дней. Допустимые значения от 0 до 9999999|
-|startupPerformanceScore|Двойное с плавающей точкой|Оценка производительности запуска устройства для аналитики пользовательского интерфейса. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
-|modelStartupPerformanceScore|Двойное с плавающей точкой|Оценка производительности запуска модели аналитики пользовательской модели. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|averageBlueScreens|Double|Среднее (среднее) число синих экранов на устройство за последние 14 дней. Допустимые значения от 0 до 9999999|
+|averageRestarts|Double|Среднее (среднее) число перезапусков на устройство за последние 14 дней. Допустимые значения от 0 до 9999999|
+|startupPerformanceScore|Double|Оценка производительности запуска устройства для аналитики пользовательского интерфейса. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|modelStartupPerformanceScore|Double|Оценка производительности запуска модели аналитики пользовательской модели. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -94,6 +94,7 @@ ms.locfileid: "59125815"
   "modelStartupPerformanceScore": "4.2"
 }
 ```
+
 
 
 

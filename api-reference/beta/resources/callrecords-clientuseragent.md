@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса Клиентусеражент
-description: Тип Клиентусеражент
-localization_priority: Normal
+title: тип ресурса clientUserAgent
+description: Тип clientUserAgent
+ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: fad1f7fc7ced15df68d0c63b4e91597273a025a7
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 7c3c97e73d77f16f451c5096bad2105240bf7a9b
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601512"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343681"
 ---
-# <a name="clientuseragent-resource-type"></a>Тип ресурса Клиентусеражент
+# <a name="clientuseragent-resource-type"></a>тип ресурса clientUserAgent
 
 Пространство имен: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет агент пользователя клиента конечной точки в вызове. Наследуется от типа [UserAgent](callrecords-useragent.md) .
+Представляет клиентского агента пользователя конечной точки в вызове. Наследуется от [типа userAgent.](callrecords-useragent.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|applicationVersion|String|Определяет версию программного обеспечения приложения, используемого конечной точкой.|
-|headerValue|String|Значение заголовка User — Agent, указанное конечной точкой.|
-|платформа|Microsoft. Graph. Каллрекордс. Клиентплатформ|Определяет платформу, используемую этой конечной точкой. Возможные значения: `unknown`, `windows`, `macOS`, `iOS`, `android`, `web`, `ipPhone`, `roomSystem`, `surfaceHub`, `holoLens`, `unknownFutureValue`.|
-|продуктфамили|Microsoft. Graph. Каллрекордс. Продуктфамили|Определяет семейство программного обеспечения приложений, используемое этой конечной точкой. Возможные значения: `unknown`, `teams`, `skypeForBusiness`, `lync`, `unknownFutureValue`.|
+|applicationVersion|String|Определяет версию программного обеспечения приложения, используемого этой конечной точкой.|
+|headerValue|Строка|Значение заглавной точки пользователя-агента, сообщаемого этой конечной точкой.|
+|платформа|microsoft.graph.callRecords.clientPlatform|Определяет платформу, используемую этой конечной точкой. Возможные значения: `unknown`, `windows`, `macOS`, `iOS`, `android`, `web`, `ipPhone`, `roomSystem`, `surfaceHub`, `holoLens`, `unknownFutureValue`.|
+|productFamily|microsoft.graph.callRecords.productFamily|Определяет семейство программного обеспечения приложения, используемого этой конечной точкой. Возможные значения: `unknown`, `teams`, `skypeForBusiness`, `lync`, `unknownFutureValue`, `azureCommunicationServices`.  Обратите внимание, что вы должны использовать загон запроса, чтобы получить следующее значение `Prefer: include-unknown-enum-members` (ы) в этом [развиваемом переуме:](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `azureCommunicationServices` .|
 
 ## <a name="json-representation"></a>Представление JSON
 

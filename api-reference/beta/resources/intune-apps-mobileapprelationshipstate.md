@@ -2,15 +2,15 @@
 title: тип ресурса mobileAppRelationshipState
 description: Описывает сведения о состоянии установки детского приложения в контексте upN и id устройства.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a5b6576e7d1e32f53784568d3eaa51328be1b57b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7148a2f541ec9b37b6c61937134c904676b4e14e
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59124142"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343170"
 ---
 # <a name="mobileapprelationshipstate-resource-type"></a>тип ресурса mobileAppRelationshipState
 
@@ -25,9 +25,9 @@ ms.locfileid: "59124142"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|sourceIds|Коллекция объектов string|Коллекция исходных ids мобильного приложения.|
+|sourceIds|Коллекция String|Коллекция исходных ids мобильного приложения.|
 |targetId|String|ID связанного целевого приложения.|
-|targetDisplayName|String|Имя отображения связанного целевого приложения.|
+|targetDisplayName|Строка|Имя отображения связанного целевого приложения.|
 |deviceId|String|Соответствующий id устройства.|
 |installState|[resultantAppState](../resources/intune-apps-resultantappstate.md)|Состояние установки приложения целевого приложения. Возможные значения: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|Деталь состояния установки приложения. Возможные значения: `noAdditionalDetails` `dependencyFailedToInstall` , `dependencyWithRequirementsNotMet` `dependencyPendingReboot` `dependencyWithAutoInstallDisabled` `supersededAppUninstallFailed` `supersededAppUninstallPendingReboot` `removingSupersededApps` `iosAppStoreUpdateFailedToInstall` `vppAppHasUpdateAvailable` `userRejectedUpdate` `uninstallPendingReboot` `supersedingAppsDetected` `supersededAppsDetected` `seeInstallErrorCode` `autoInstallDisabled` `managedAppNoLongerPresent` `userRejectedInstall` `userIsNotLoggedIntoAppStore` `untargetedSupersedingAppsDetected` `appRemovedBySupersedence` `seeUninstallErrorCode` `pendingReboot` `installingDependencies` `contentDownloaded` `supersedingAppsNotApplicable` `powerShellScriptRequirementNotMet` `registryRequirementNotMet` `fileSystemRequirementNotMet` `platformNotApplicable` `minimumCpuSpeedNotMet` `minimumLogicalProcessorCountNotMet` `minimumPhysicalMemoryNotMet` `minimumOsVersionNotMet` `minimumDiskSpaceNotMet` . `processorArchitectureNotApplicable`|
@@ -59,6 +59,7 @@ ms.locfileid: "59124142"
   "targetLastSyncDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

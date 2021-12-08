@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b8dc3d2c2755902a1d7489afeacadbb272094728
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: d3472765c7c6ae7b6c3327f8e1e1b94b3680e2e6
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60491355"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342813"
 ---
 # <a name="devicemanagementconfigurationpolicytemplate-resource-type"></a>тип ресурса deviceManagementConfigurationPolicyTemplate
 
@@ -38,13 +38,13 @@ ms.locfileid: "60491355"
 |baseId|String|Идентификатор базы шаблонов|
 |version|Int32|Версия шаблона. Допустимые значения от 1 до 2147483647. Это свойство доступно только для чтения.|
 |displayName|String|Имя отображения шаблона|
-|description|String|Описание шаблона|
-|displayVersion|String|Описание версии шаблона|
+|description|Строка|Описание шаблона|
+|displayVersion|Строка|Описание версии шаблона|
 |lifecycleState|[deviceManagementTemplateLifecycleState](../resources/intune-deviceconfigv2-devicemanagementtemplatelifecyclestate.md)|Указать текущее состояние жизненного цикла шаблона. Возможные значения: `invalid`, `draft`, `active`, `superseded`, `deprecated`, `retired`.|
 |платформы|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Платформы для этого шаблона. Возможные значения: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`.|
 |технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Технологии для этого шаблона. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`, `linuxMdm`, `unknownFutureValue`.|
 |templateFamily|[deviceManagementConfigurationTemplateFamily](../resources/intune-deviceconfigv2-devicemanagementconfigurationtemplatefamily.md)|TemplateFamily для этого шаблона. Возможные значения: `none`, `endpointSecurityAntivirus`, `endpointSecurityDiskEncryption`, `endpointSecurityFirewall`, `endpointSecurityEndpointDetectionAndResponse`, `endpointSecurityAttackSurfaceReduction`, `endpointSecurityAccountProtection`, `endpointSecurityApplicationControl`, `baseline`.|
-|allowUnmanagedSettings|Логический|Разрешить неугодные шаблоны параметров|
+|allowUnmanagedSettings|Boolean|Разрешить неугодные шаблоны параметров|
 |settingTemplateCount|Int32|Количество шаблонов параметров. Допустимые значения от 0 до 2147483647. Это свойство доступно только для чтения.|
 
 ## <a name="relationships"></a>Связи
@@ -77,6 +77,7 @@ ms.locfileid: "60491355"
   "settingTemplateCount": 1024
 }
 ```
+
 
 
 

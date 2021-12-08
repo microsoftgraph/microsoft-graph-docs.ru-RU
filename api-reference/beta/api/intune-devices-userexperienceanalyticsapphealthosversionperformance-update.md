@@ -2,15 +2,15 @@
 title: Обновление userExperienceAnalyticsAppHealthOSVersionPerformance
 description: Обновление свойств объекта userExperienceAnalyticsAppHealthOSVersionPerformance.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 015c1863dfd50044460702adb512020b278ad9ec
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 601f9082e53e8a55c9de721755610e5f2e832444
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59034570"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346075"
 ---
 # <a name="update-userexperienceanalyticsapphealthosversionperformance"></a>Обновление userExperienceAnalyticsAppHealthOSVersionPerformance
 
@@ -27,9 +27,9 @@ ms.locfileid: "59034570"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthOSVersionPerformance/{us
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -58,7 +58,7 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthOSVersionPerformance/{us
 |osBuildNumber|Строка|Номер сборки ОС, установленный на устройстве.|
 |activeDeviceCount|Int32|Количество активных устройств для версии ОС. Допустимые значения 2147483648 2147483647|
 |meanTimeToFailureInMinutes|Int32|Время сбоя для версии ОС в минутах. Допустимые значения 2147483648 2147483647|
-|osVersionAppHealthScore|Двойное с плавающей точкой|Оценка состояния здоровья приложения в версии ОС. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|osVersionAppHealthScore|Double|Оценка состояния здоровья приложения в версии ОС. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
 |osVersionAppHealthStatus|Строка|Общее состояние состояния здоровья приложения в версии ОС.|
 
 
@@ -104,6 +104,7 @@ Content-Length: 406
   "osVersionAppHealthStatus": "Os Version App Health Status value"
 }
 ```
+
 
 
 

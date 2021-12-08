@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ae520e7123f14b48edbbb771d34a3bec0c9b76cd
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 02f3b336b3edce12d5f290d496fef440d959230e
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687836"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343149"
 ---
 # <a name="userexperienceanalyticsbatteryhealthmodelperformance-resource-type"></a>тип ресурса userExperienceAnalyticsBatteryHealthModelPerformance
 
@@ -65,6 +65,7 @@ ms.locfileid: "60687836"
   "averageBatteryAgeInDays": 1024
 }
 ```
+
 
 
 
