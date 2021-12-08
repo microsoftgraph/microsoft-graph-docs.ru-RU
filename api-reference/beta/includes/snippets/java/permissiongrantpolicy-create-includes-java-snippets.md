@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 74964da87eb49c4f1f6fac7cb009115086336fce4cf58f960bec3605e45ddc2a
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 7a76ee180cfbe243187b40d8e3ee63528b5867ef
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57247235"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61348911"
 ---
 ```java
 
@@ -13,7 +13,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 PermissionGrantConditionSet permissionGrantConditionSet = new PermissionGrantConditionSet();
 permissionGrantConditionSet.permissionType = PermissionType.DELEGATED;
-permissionGrantConditionSet.clientApplicationsFromVerifiedPublisherOnly = true;
+permissionGrantConditionSet.certifiedClientApplicationsOnly = true;
 
 graphClient.policies().permissionGrantPolicies("{id}").includes()
     .buildRequest()

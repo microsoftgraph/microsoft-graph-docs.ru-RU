@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 65d8af47d5b5a56eae6c450941ffb005f54c4e452707d26d098fdf28e53061ff
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 945e075799836423b41f41cc910de589ad7f3b42
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57305794"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61348917"
 ---
 ```javascript
 
@@ -18,7 +18,7 @@ const client = Client.init(options);
 const permission = {
   recipients: [
     {
-      email: 'ryan@contoso.org'
+      email: 'robin@contoso.org'
     }
   ],
   message: 'Here\'s the file that we\'re collaborating on.',
