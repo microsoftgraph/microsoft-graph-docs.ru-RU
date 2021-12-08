@@ -1,18 +1,18 @@
 ---
-title: Удаление организационнойbrandingLocalization
+title: Удаление organizationalBrandingLocalization
 description: Удаляет объект organizationalBrandingLocalization.
 author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 429e05a064a71e68823e3f0ede2c641ef5e2c6c7
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: 3e5a66e820022c57980656ca418463b529fa2d9c
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59995596"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343786"
 ---
-# <a name="delete-organizationalbrandinglocalization"></a>Удаление организационнойbrandingLocalization
+# <a name="delete-organizationalbrandinglocalization"></a>Удаление organizationalBrandingLocalization
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -41,7 +41,7 @@ DELETE /organization/{organizationId}/branding/localizations/{organizationalBran
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -63,7 +63,7 @@ DELETE /organization/{organizationId}/branding/localizations/{organizationalBran
   "name": "delete_organizationalbrandinglocalization"
 }-->
 
-```http
+```msgraph-interactive
 DELETE https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr-FR
 ```
 # <a name="c"></a>[C#](#tab/csharp)

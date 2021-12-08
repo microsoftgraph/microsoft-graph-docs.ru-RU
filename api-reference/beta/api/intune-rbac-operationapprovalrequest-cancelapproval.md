@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b17c6c41a960db8ae93eb76b799269f790947fb
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 1f5df21235330ffb32789312abbfb6e8fbb4d8ea
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688698"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61347419"
 ---
 # <a name="cancelapproval-action"></a>cancelApproval action
 
@@ -27,9 +27,9 @@ ms.locfileid: "60688698"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementRBAC.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementRBAC.Read.All|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementRBAC.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -86,6 +86,7 @@ Content-Length: 40
   "value": "Cancel Approval value"
 }
 ```
+
 
 
 

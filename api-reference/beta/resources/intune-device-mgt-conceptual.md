@@ -4,12 +4,12 @@ description: Списки microsoft Graph API для конечных точек
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 33592ed42a2147cb2b8ba861bf96cae88a334f05
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 314e4fd73b9495946aa2c056f307463c741f8bb0
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696786"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342946"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
@@ -192,7 +192,6 @@ ms.locfileid: "60696786"
 - [Результат действия "Отзыв VPP-лицензий Apple "](intune-devices-revokeapplevpplicensesactionresult.md)
 - [Сведения о теге области ролей](intune-auditing-rolescopetaginfo.md)
 - [Поворот результата действия устройства bitLocker клавиш](intune-devices-rotatebitlockerkeysdeviceactionresult.md)
-- [Состояние выполнения](intune-devices-runstate.md)
 - [Сводка состояния базовой категории безопасности](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [Состояние соответствия требованиям базового плана безопасности](intune-deviceintent-securitybaselinecompliancestate.md)
 - [Политика базового обеспечения безопасности](intune-deviceintent-securitybaselinecontributingpolicy.md)

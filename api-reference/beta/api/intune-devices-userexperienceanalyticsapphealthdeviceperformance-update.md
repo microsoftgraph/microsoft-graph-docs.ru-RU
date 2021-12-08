@@ -2,15 +2,15 @@
 title: Обновление userExperienceAnalyticsAppHealthDevicePerformance
 description: Обновление свойств объекта userExperienceAnalyticsAppHealthDevicePerformance.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: efbbcfd93d77b8facd76f1238e8255f3839ebc2f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9b502d1432225b670613aa9b9d2d86dcd36f0a26
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59034577"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61347657"
 ---
 # <a name="update-userexperienceanalyticsapphealthdeviceperformance"></a>Обновление userExperienceAnalyticsAppHealthDevicePerformance
 
@@ -27,9 +27,9 @@ ms.locfileid: "59034577"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,22 +53,23 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthDevicePerformance/{userE
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта производительности устройства для аналитики пользовательского интерфейса.|
+|id|Строка|Уникальный идентификатор объекта производительности устройства для аналитики пользовательского интерфейса.|
 |deviceModel|String|Имя модели устройства.|
-|deviceManufacturer|String|Имя производителя устройства.|
+|deviceManufacturer|Строка|Имя производителя устройства.|
 |appCrashCount|Int32|Количество сбоей приложения для устройства. Допустимые значения 2147483648 2147483647|
 |crashedAppCount|Int32|Количество различных сбоей приложения для устройства. Допустимые значения 2147483648 2147483647|
 |appHangCount|Int32|Для устройства зависает число приложений. Допустимые значения 2147483648 2147483647|
 |processedDateTime|DateTimeOffset|Дата и время последнего вычисления статистики.|
 |meanTimeToFailureInMinutes|Int32|Время сбоя устройства в минутах. Допустимые значения 2147483648 2147483647|
-|deviceAppHealthScore|Двойное с плавающей точкой|Оценка состояния приложения устройства. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
-|deviceAppHealthStatus|String|Общее состояние состояния здоровья приложения на устройстве.|
+|deviceAppHealthScore|Double|Оценка состояния приложения устройства. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|deviceAppHealthStatus|Строка|Общее состояние состояния здоровья приложения на устройстве.|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Состояние здоровья устройства аналитики пользовательского интерфейса. Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 |deviceId|String|ID устройства.|
 |deviceDisplayName|String|Имя устройства.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [userExperienceAnalyticsAppHealthDevicePerformance](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformance.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
@@ -78,7 +79,7 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthDevicePerformance/{userE
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthDevicePerformance/{userExperienceAnalyticsAppHealthDevicePerformanceId}
 Content-type: application/json
-Content-length: 551
+Content-length: 590
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthDevicePerformance",
@@ -91,6 +92,7 @@ Content-length: 551
   "meanTimeToFailureInMinutes": 10,
   "deviceAppHealthScore": 6.666666666666667,
   "deviceAppHealthStatus": "Device App Health Status value",
+  "healthStatus": "insufficientData",
   "deviceId": "Device Id value",
   "deviceDisplayName": "Device Display Name value"
 }
@@ -101,7 +103,7 @@ Content-length: 551
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 600
+Content-Length: 639
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthDevicePerformance",
@@ -115,10 +117,12 @@ Content-Length: 600
   "meanTimeToFailureInMinutes": 10,
   "deviceAppHealthScore": 6.666666666666667,
   "deviceAppHealthStatus": "Device App Health Status value",
+  "healthStatus": "insufficientData",
   "deviceId": "Device Id value",
   "deviceDisplayName": "Device Display Name value"
 }
 ```
+
 
 
 

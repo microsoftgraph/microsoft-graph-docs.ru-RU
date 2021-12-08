@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 795b300d5443cbd82e9c71c25af622e3af236f04
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 39ec64938f3a74c0e1b98bc63c84bcb8997a3357
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60489207"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61343555"
 ---
 # <a name="create-devicemanagementreusablepolicysetting"></a>Создание deviceManagementReusablePolicySetting
 
@@ -29,7 +29,7 @@ ms.locfileid: "60489207"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,8 +55,8 @@ POST /deviceManagement/reusablePolicySettings
 |:---|:---|:---|
 |id|String|система, генерируемая многоярусным и настраиваемым id.|
 |displayName|String|имя отображения для повторного параметров, предоставленное пользователем.|
-|description|String|повторное описание параметра, предоставленное пользователем.|
-|settingDefinitionId|String|параметр определения, связанный с этим многопользоваемым параметром.|
+|description|Строка|повторное описание параметра, предоставленное пользователем.|
+|settingDefinitionId|Строка|параметр определения, связанный с этим многопользоваемым параметром.|
 |settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|экземпляр конфигурации повторного параметров|
 |createdDateTime|DateTimeOffset|дата и время создания параметров повторного параметров. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|дата и время последнего изменения параметра повторного параметров. Это свойство доступно только для чтения.|
@@ -536,6 +536,7 @@ Content-Length: 16500
   "referencingConfigurationPolicyCount": 3
 }
 ```
+
 
 
 

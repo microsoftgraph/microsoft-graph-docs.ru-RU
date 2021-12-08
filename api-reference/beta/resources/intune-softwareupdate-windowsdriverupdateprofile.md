@@ -1,16 +1,16 @@
 ---
 title: тип ресурса windowsDriverUpdateProfile
-description: Windows Профиль обновления драйвера
+description: Windows профиля обновления драйвера
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d8c50188b941c7196e3f2771c64dbffb51efe7de
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 9f8e29d336a0b04af4e4e5f045c6541e592e6981
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60488607"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346978"
 ---
 # <a name="windowsdriverupdateprofile-resource-type"></a>тип ресурса windowsDriverUpdateProfile
 
@@ -20,7 +20,7 @@ ms.locfileid: "60488607"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Windows Профиль обновления драйвера
+Windows профиля обновления драйвера
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
@@ -38,14 +38,14 @@ Windows Профиль обновления драйвера
 |:---|:---|:---|
 |id|String|ID политики Intune.|
 |displayName|String|Имя отображения для профиля.|
-|description|String|Описание профиля, указанного пользователем.|
+|description|Строка|Описание профиля, указанного пользователем.|
 |approvalType|[driverUpdateProfileApprovalType](../resources/intune-softwareupdate-driverupdateprofileapprovaltype.md)|Тип утверждения профиля обновления драйвера. Например, ручное или автоматическое утверждение. Возможные значения: `manual`, `automatic`.|
 |deviceReporting|Int32|Количество устройств, сообщив об этом профиле|
 |newUpdates|Int32|Количество новых обновлений драйвера, доступных для этого профиля.|
 |deploymentDeferralInDays|Int32|Параметры отсрочки развертывания в днях, применимые только при автоматическом утверждении ApprovalType.|
 |createdDateTime|DateTimeOffset|Время создания профиля.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения профиля.|
-|roleScopeTagIds|Коллекция строк|Список тегов области для этого объекта обновления драйвера.|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого объекта обновления драйвера.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -78,6 +78,7 @@ Windows Профиль обновления драйвера
   ]
 }
 ```
+
 
 
 

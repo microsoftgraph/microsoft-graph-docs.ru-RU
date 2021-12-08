@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fe61d375d87cf24ed21e0a2024b66d6bc1271acb
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 76d91966bc9511f837d8c72f127ea682030d5681
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60489418"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61345109"
 ---
 # <a name="get-androidforworkmobileappconfiguration"></a>Получить androidForWorkMobileAppConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "60489418"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -99,6 +99,7 @@ Content-Length: 881
   }
 }
 ```
+
 
 
 

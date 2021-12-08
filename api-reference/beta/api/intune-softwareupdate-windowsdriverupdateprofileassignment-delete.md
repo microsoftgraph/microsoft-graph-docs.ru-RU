@@ -2,15 +2,15 @@
 title: Удаление windowsDriverUpdateProfileAssignment
 description: Удаляет windowsDriverUpdateProfileAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4759d6cc9280f7702b61ad6d20e7d685c25d3cf8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 80496e7d6ce05b18fe119a018e99d789699c5299
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138479"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346265"
 ---
 # <a name="delete-windowsdriverupdateprofileassignment"></a>Удаление windowsDriverUpdateProfileAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "59138479"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ DELETE /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfile
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,6 +65,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/windowsDriverUpdateProf
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

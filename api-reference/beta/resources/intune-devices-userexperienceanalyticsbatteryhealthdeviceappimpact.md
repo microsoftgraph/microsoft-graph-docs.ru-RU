@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9d6ea7bbec4f14daf98333e76d280d7d4b539e1b
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 6e1e9dafdc831528ff9d05115f86a68b1df328d4
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60697444"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61348070"
 ---
 # <a name="userexperienceanalyticsbatteryhealthdeviceappimpact-resource-type"></a>тип ресурса userExperienceAnalyticsBatteryHealthDeviceAppImpact
 
@@ -38,8 +38,8 @@ ms.locfileid: "60697444"
 |deviceId|String|Уникальный идентификатор устройства, идентификатор устройства Intune DeviceID или SCCM.|
 |appName|String|Имя приложения. Например: oltk.exe|
 |appDisplayName|String|Удобное для пользователя имя отображения приложения. Например: Outlook|
-|appPublisher|String|Издатель приложения. Например: корпорация Майкрософт|
-|isForegroundApp|Логический|верно, если у пользователя было активное взаимодействие с приложением.|
+|appPublisher|Строка|Издатель приложения. Например: корпорация Майкрософт|
+|isForegroundApp|Boolean|верно, если у пользователя было активное взаимодействие с приложением.|
 |batteryUsagePercentage|Double|Процент общей мощности батареи, используемой этим приложением, когда устройство не подключено к заряду переменного тока, составляет более 14 дней. Единица в процентах. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
 
 ## <a name="relationships"></a>Связи
@@ -65,6 +65,7 @@ ms.locfileid: "60697444"
   "batteryUsagePercentage": "4.2"
 }
 ```
+
 
 
 

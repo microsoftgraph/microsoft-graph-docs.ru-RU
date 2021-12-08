@@ -2,15 +2,15 @@
 title: тип ресурса userExperienceAnalyticsAppHealthDevicePerformance
 description: Объект аналитики производительности устройства пользовательского интерфейса содержит сведения о производительности устройства.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b57c6ca01d897b19d4bff06d2f6e92a13b47e7ff
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 97cf26e0c9885745be63a3221bb7b9fd9508c6db
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59086276"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61347335"
 ---
 # <a name="userexperienceanalyticsapphealthdeviceperformance-resource-type"></a>тип ресурса userExperienceAnalyticsAppHealthDevicePerformance
 
@@ -36,14 +36,15 @@ ms.locfileid: "59086276"
 |:---|:---|:---|
 |id|String|Уникальный идентификатор объекта производительности устройства для аналитики пользовательского интерфейса.|
 |deviceModel|String|Имя модели устройства.|
-|deviceManufacturer|String|Имя производителя устройства.|
+|deviceManufacturer|Строка|Имя производителя устройства.|
 |appCrashCount|Int32|Количество сбоей приложения для устройства. Допустимые значения 2147483648 2147483647|
 |crashedAppCount|Int32|Количество различных сбоей приложения для устройства. Допустимые значения 2147483648 2147483647|
 |appHangCount|Int32|Для устройства зависает число приложений. Допустимые значения 2147483648 2147483647|
 |processedDateTime|DateTimeOffset|Дата и время последнего вычисления статистики.|
 |meanTimeToFailureInMinutes|Int32|Время сбоя устройства в минутах. Допустимые значения 2147483648 2147483647|
-|deviceAppHealthScore|Двойное с плавающей точкой|Оценка состояния приложения устройства. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
-|deviceAppHealthStatus|String|Общее состояние состояния здоровья приложения на устройстве.|
+|deviceAppHealthScore|Double|Оценка состояния приложения устройства. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|deviceAppHealthStatus|Строка|Общее состояние состояния здоровья приложения на устройстве.|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Состояние здоровья устройства аналитики пользовательского интерфейса. Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 |deviceId|String|ID устройства.|
 |deviceDisplayName|String|Имя устройства.|
 
@@ -71,10 +72,12 @@ ms.locfileid: "59086276"
   "meanTimeToFailureInMinutes": 1024,
   "deviceAppHealthScore": "4.2",
   "deviceAppHealthStatus": "String",
+  "healthStatus": "String",
   "deviceId": "String",
   "deviceDisplayName": "String"
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 82a362cb22f3d4b23cf78d0e748f49510b4df25f
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: c658d65185ee6e7916f5b12f7c3f82b71901be5a
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688315"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61346502"
 ---
 # <a name="create-devicemanagementcomplianceactionitem"></a>Создание deviceManagementComplianceActionItem
 
@@ -29,7 +29,7 @@ ms.locfileid: "60688315"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +53,7 @@ POST /deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/s
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ этого параметра в политике, содержа которой он содержится. Автоматически созданный.|
+|id|Строка|Ключ этого параметра в политике, содержа которой он содержится. Автоматически созданный.|
 |gracePeriodHours|Int32|Время ожидания (в часах) до применения действия. Допустимые значения: от 0 до 8760|
 |actionType|[deviceManagementComplianceActionType](../resources/intune-deviceconfigv2-devicemanagementcomplianceactiontype.md)|Какие действия необходимо принять. Возможные значения: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`, `pushNotification`, `remoteLock`.|
 |notificationTemplateId|String|Используемый шаблон сообщения уведомления|
@@ -102,6 +102,7 @@ Content-Length: 330
   ]
 }
 ```
+
 
 
 
