@@ -1,12 +1,20 @@
 ---
 ms.localizationpriority: medium
-ms.openlocfilehash: 6c7ed4f818f7ce2e7780dfc37fac66549c53c5f5
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: 91a5d7042cbb336be47fd11a0846980bb49a0a0a
+ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266301"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61323858"
 ---
+### <a name="administrative-unit-properties"></a>Свойства административных единиц
+
+| Имя свойства | eq | startsWith | ge | le | Значение NULL |
+|--|--|--|--|--|--|
+| description | ![Требуются расширенные параметры запроса][AQP] | ![Требуются расширенные параметры запроса][AQP] |  |  | ![Не поддерживается][NS] |
+| displayName | ![Поддержка по умолчанию][RDS] | ![Поддержка по умолчанию][RDS] |  |  | ![Требуются расширенные параметры запроса][AQP] |
+
+
 ### <a name="application-properties"></a>Свойства приложения
 
 | Имя свойства                                 | eq                                         | startsWith                                 | ge                                         | le                                         | Значение NULL                                 |
