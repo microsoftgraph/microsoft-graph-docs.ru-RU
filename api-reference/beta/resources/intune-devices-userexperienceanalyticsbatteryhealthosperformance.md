@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2f0cbc451fb10d12672b60555a08a56803f010a5
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 33807a4b7c1d624f086317795479b344368bcf5a
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60697460"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337205"
 ---
 # <a name="userexperienceanalyticsbatteryhealthosperformance-resource-type"></a>тип ресурса userExperienceAnalyticsBatteryHealthOsPerformance
 
@@ -37,7 +37,7 @@ ms.locfileid: "60697460"
 |id|String|Уникальный идентификатор объекта производительности операционной системы работоспособности батареи для аналитики пользовательского интерфейса.|
 |activeDevices|Int32|Количество активных устройств для этой версии ос. Допустимые значения 2147483648 2147483647|
 |osVersion|String|Версия операционной системы.|
-|osBuildNumber|String|Создайте номер операционной системы.|
+|osBuildNumber|Строка|Создайте номер операционной системы.|
 |averageMaxCapacityPercentage|Int32|Значение максимальной емкости для всех устройств с определенной версией операционной системы. Максимальная емкость измеряет полную мощность заряда по сравнению с проектной мощностью для аккумуляторов устройства.. Допустимые значения 2147483648 2147483647|
 |averageEstimatedRuntimeInMinutes|Int32|Значение предполагаемого времени работы на полном заряде для всех устройств с определенной версией операционной системы. Единица в минутах. Допустимые значения 2147483648 2147483647|
 |averageBatteryAgeInDays|Int32|Значение времени автономной работы для всех устройств, работающих с определенной версией операционной системы в клиенте. Единица в днях. Допустимые значения 2147483648 2147483647|
@@ -65,6 +65,7 @@ ms.locfileid: "60697460"
   "averageBatteryAgeInDays": 1024
 }
 ```
+
 
 
 

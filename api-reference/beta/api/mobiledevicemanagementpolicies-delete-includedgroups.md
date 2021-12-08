@@ -2,15 +2,15 @@
 title: Удаление includeGroup
 description: Удаление группы из списка групп, включенных в политику управления мобильными устройствами.
 author: ravennMSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b6a397bb5e514271ae90dd692ee3a7231b200ee161a9b85319a5101547bedae7
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 755b12ec6865dea6304120d17b437ca1e5611c2c
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57367450"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338563"
 ---
 # <a name="delete-includedgroup"></a>Delete includedGroup
 
@@ -45,7 +45,7 @@ DELETE /policies/mobileDeviceManagementPolicies/{id}/includedGroups/{id}/$ref
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

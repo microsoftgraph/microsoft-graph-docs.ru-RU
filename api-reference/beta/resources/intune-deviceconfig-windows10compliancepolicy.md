@@ -2,15 +2,15 @@
 title: Тип ресурса windows10CompliancePolicy
 description: Этот класс содержит параметры обеспечения соответствия требованиям для Windows 10.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 622df0e9883874d484c1aa14b40aad3371e2087d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: de3ac6a3866a1133b44546804386c6614cdd0f2c
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59081187"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334265"
 ---
 # <a name="windows10compliancepolicy-resource-type"></a>Тип ресурса windows10CompliancePolicy
 
@@ -37,12 +37,12 @@ ms.locfileid: "59081187"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |id|String|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |passwordRequired|Boolean|Указывает на то, что для разблокировки устройства с Windows требуется пароль.|
 |passwordBlockSimple|Boolean|Указывает, требуется ли блокировать простой пароль.|
@@ -65,16 +65,16 @@ ms.locfileid: "59081187"
 |storageRequireEncryption|Boolean|Указывает, обязательно ли шифрование данных на устройствах с Windows.|
 |activeFirewallRequired|Boolean|Требуется активное брандмауэр на Windows устройствах.|
 |defenderEnabled|Boolean|Требуется Защитник Windows на Windows устройствах.|
-|defenderVersion|String|Требуется Защитник Windows минимальной версии antimalware на Windows устройствах.|
+|defenderVersion|Строка|Требуется Защитник Windows минимальной версии antimalware на Windows устройствах.|
 |signatureOutOfDate|Boolean|Требуется Защитник Windows подписи для антивирусных программ, чтобы они были в курсе Windows устройствах.|
-|rtpEnabled|Логический|Требуется Защитник Windows защиты Real-Time на Windows устройствах.|
-|antivirusRequired|Логический|Требуется, чтобы любое антивирусное решение, зарегистрированное в центре Windows decurity, было в центре мониторинга (например, Symantec, Защитник Windows).|
+|rtpEnabled|Boolean|Требуется Защитник Windows защиты Real-Time на Windows устройствах.|
+|antivirusRequired|Boolean|Требуется, чтобы любое антивирусное решение, зарегистрированное в центре Windows decurity, было в центре мониторинга (например, Symantec, Защитник Windows).|
 |antiSpywareRequired|Boolean|Требуется, чтобы любое решение AntiSpyware, зарегистрированное в центре Windows decurity, было в центре мониторинга и мониторинга (например, Symantec, Защитник Windows).|
 |validOperatingSystemBuildRanges|[коллекция operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md)|Допустимые диапазоны сборки операционной системы на Windows устройствах. Эта коллекция может содержать не более 10 000 элементов.|
 |deviceThreatProtectionEnabled|Boolean|Указывает, что защита от угроз для устройств должна быть включена.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Требуется минимальный уровень риска для защиты от угроз устройства, чтобы сообщить о несоблюдении. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
-|configurationManagerComplianceRequired|Логическое|Необходимо учитывать состояние соответствия ТРЕБОВАНИЯМ SCCM для состояния соответствия intune.|
-|tpmRequired|Логический|Требуется присутствовать доверенный модуль платформы (TPM).|
+|configurationManagerComplianceRequired|Boolean|Необходимо учитывать состояние соответствия ТРЕБОВАНИЯМ SCCM для состояния соответствия intune.|
+|tpmRequired|Boolean|Требуется присутствовать доверенный модуль платформы (TPM).|
 |deviceCompliancePolicyScript|[deviceCompliancePolicyScript](../resources/intune-deviceconfig-devicecompliancepolicyscript.md)|Н/Д|
 
 ## <a name="relationships"></a>Связи
@@ -153,6 +153,7 @@ ms.locfileid: "59081187"
   }
 }
 ```
+
 
 
 

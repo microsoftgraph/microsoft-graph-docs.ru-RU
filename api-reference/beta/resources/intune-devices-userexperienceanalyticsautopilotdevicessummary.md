@@ -2,15 +2,15 @@
 title: тип ресурса userExperienceAnalyticsAutopilotDevicesSummary
 description: Сводка аналитики пользовательского опыта о том, что устройства не готовы к автопилоту Windows.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3ec2b055c67a03f65acdd306f0f1f49b30f27663
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 72968a08c0a4918eb82c7a2e48537120a664b437
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59040052"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342498"
 ---
 # <a name="userexperienceanalyticsautopilotdevicessummary-resource-type"></a>тип ресурса userExperienceAnalyticsAutopilotDevicesSummary
 
@@ -47,6 +47,7 @@ ms.locfileid: "59040052"
   "totalWindows10DevicesWithoutTenantAttached": 1024
 }
 ```
+
 
 
 

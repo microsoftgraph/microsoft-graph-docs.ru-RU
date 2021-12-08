@@ -2,15 +2,15 @@
 title: тип ресурса groupPolicyDefinition
 description: Объект описывает всю информацию о единой групповой политике.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 465ac4aa679ea0be5c5bc4576e5bcac673480b95
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d1d4dc7c9e09e01c93805834bd6f087666662957
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59009016"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338493"
 ---
 # <a name="grouppolicydefinition-resource-type"></a>тип ресурса groupPolicyDefinition
 
@@ -34,15 +34,15 @@ ms.locfileid: "59009016"
 |classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Определяет тип групп, к которые можно применить политику. Возможные значения: `user`, `machine`.|
 |displayName|Строка|Имя локализованной политики.|
 |explainText|Строка|Локализованный текст объяснения или справки, связанные с политикой. По умолчанию это значение пусто.|
-|categoryPath|Строка|Путь к локализованным полным категориям для политики.|
-|supportedOn|Строка|Локализованная строка, используемая для указания того, на какую операционную систему или версию приложения влияет политика.|
+|categoryPath|String|Путь к локализованным полным категориям для политики.|
+|supportedOn|String|Локализованная строка, используемая для указания того, на какую операционную систему или версию приложения влияет политика.|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
-|hasRelatedDefinitions|Логический|Означает, есть ли связанные определения с этим определением или нет.|
+|hasRelatedDefinitions|Boolean|Означает, есть ли связанные определения с этим определением или нет.|
 |groupPolicyCategoryId|Guid|ID категории родительской категории|
 |minDeviceCspVersion|Строка|Минимальная требуемая версия CSP для конфигурации устройства в этом определении|
 |minUserCspVersion|Строка|Минимальная требуемая версия CSP для конфигурации пользователя в этом определении|
 |version|String|Настройка версии определения|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 ## <a name="relationships"></a>Связи
@@ -80,6 +80,7 @@ ms.locfileid: "59009016"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

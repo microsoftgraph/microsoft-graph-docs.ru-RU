@@ -2,15 +2,15 @@
 title: Создание certificateConnectorDetails
 description: Создайте новый объект certificateConnectorDetails.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ec640219d77c991804f3ab5680c956a203df755f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: fc35cfc346fd4e8ee60f51090cbc57f6137b5174
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59112001"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339096"
 ---
 # <a name="create-certificateconnectordetails"></a>Создание certificateConnectorDetails
 
@@ -29,7 +29,7 @@ ms.locfileid: "59112001"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/certificateConnectorDetails
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,9 +53,9 @@ POST /deviceManagement/certificateConnectorDetails
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для этого набора ConnectorDetails.|
-|connectorName|String|Имя соединитетеля (за набор во время регистрации).|
-|machineName|String|Имя компьютера, на которого размещена эта служба соединитела.|
+|id|Строка|Уникальный идентификатор для этого набора ConnectorDetails.|
+|connectorName|Строка|Имя соединитетеля (за набор во время регистрации).|
+|machineName|Строка|Имя компьютера, на которого размещена эта служба соединитела.|
 |enrollmentDateTime|DateTimeOffset|Дата и время регистрации этого соединитетеля.|
 |lastCheckinDateTime|DateTimeOffset|Дата и время последнего подключения этого соединитетеля к службе.|
 
@@ -98,6 +98,7 @@ Content-Length: 327
   "lastCheckinDateTime": "2017-01-01T00:02:46.0431416-08:00"
 }
 ```
+
 
 
 

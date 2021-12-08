@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c693ffc4f025934b49be5a245a162403703c9324
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 7ea049b097c9dd46f92164dd4861828dd45876f3
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60490542"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336253"
 ---
 # <a name="get-microsofttunnelserverlogcollectionresponse"></a>Получите microsoftTunnelServerLogCollectionResponse
 
@@ -29,7 +29,7 @@ ms.locfileid: "60490542"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -84,6 +84,7 @@ Content-Length: 481
   }
 }
 ```
+
 
 
 

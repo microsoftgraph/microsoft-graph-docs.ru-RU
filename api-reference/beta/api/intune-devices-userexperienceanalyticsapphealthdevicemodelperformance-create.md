@@ -2,15 +2,15 @@
 title: Создание userExperienceAnalyticsAppHealthDeviceModelPerformance
 description: Создайте новый объект userExperienceAnalyticsAppHealthDeviceModelPerformance.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8b4af784a758d383359e8a5d636a81b516b3c620
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: eb9a9a85427aa9e2e2216dd45f303f3f53f58285
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59102824"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339362"
 ---
 # <a name="create-userexperienceanalyticsapphealthdevicemodelperformance"></a>Создание userExperienceAnalyticsAppHealthDeviceModelPerformance
 
@@ -27,9 +27,9 @@ ms.locfileid: "59102824"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthDeviceModelPerformance
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,13 +53,14 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthDeviceModelPerformance
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта производительности модели пользовательского интерфейса для аналитики устройств.|
+|id|Строка|Уникальный идентификатор объекта производительности модели пользовательского интерфейса для аналитики устройств.|
 |deviceModel|String|Имя модели устройства.|
-|deviceManufacturer|String|Имя производителя устройства.|
+|deviceManufacturer|Строка|Имя производителя устройства.|
 |activeDeviceCount|Int32|Количество активных устройств для модели. Допустимые значения 2147483648 2147483647|
 |meanTimeToFailureInMinutes|Int32|Время сбоя для устройства модели в минутах. Допустимые значения 2147483648 2147483647|
-|modelAppHealthScore|Двойное с плавающей точкой|Оценка состояния здоровья приложения модели устройства. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
-|modelAppHealthStatus|String|Общее состояние состояния здоровья приложения модели устройства.|
+|modelAppHealthScore|Double|Оценка состояния здоровья приложения модели устройства. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|modelAppHealthStatus|Строка|Общее состояние состояния здоровья приложения модели устройства.|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Состояние состояния модели аналитики пользовательских интерфейсов. Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 
 
@@ -73,7 +74,7 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthDeviceModelPerformance
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthDeviceModelPerformance
 Content-type: application/json
-Content-length: 359
+Content-length: 398
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthDeviceModelPerformance",
@@ -82,7 +83,8 @@ Content-length: 359
   "activeDeviceCount": 1,
   "meanTimeToFailureInMinutes": 10,
   "modelAppHealthScore": 6.333333333333333,
-  "modelAppHealthStatus": "Model App Health Status value"
+  "modelAppHealthStatus": "Model App Health Status value",
+  "healthStatus": "insufficientData"
 }
 ```
 
@@ -91,7 +93,7 @@ Content-length: 359
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 408
+Content-Length: 447
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthDeviceModelPerformance",
@@ -101,9 +103,11 @@ Content-Length: 408
   "activeDeviceCount": 1,
   "meanTimeToFailureInMinutes": 10,
   "modelAppHealthScore": 6.333333333333333,
-  "modelAppHealthStatus": "Model App Health Status value"
+  "modelAppHealthStatus": "Model App Health Status value",
+  "healthStatus": "insufficientData"
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 author: gageames
-ms.openlocfilehash: 8ad5b6ce218d3dc3d116b29a01c86911dbf8b390
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1c3fc672f4197003212a972b8a6fc1e647e9bac2
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104210"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334013"
 ---
 # <a name="call-records-enum-values"></a>Значения записей вызовов
 
@@ -18,7 +18,7 @@ ms.locfileid: "59104210"
 
 ### <a name="calltype-values"></a>значения callType
 
-| Элемент
+| Member
 |:--------------
 | unknown
 | groupCall
@@ -27,7 +27,7 @@ ms.locfileid: "59104210"
 
 ### <a name="clientplatform-values"></a>значения clientPlatform
 
-| Элемент
+| Member
 |:--------------
 | unknown
 | Windows
@@ -43,7 +43,7 @@ ms.locfileid: "59104210"
 
 ### <a name="failurestage-values"></a>значения failureStage
 
-| Элемент
+| Member
 |:--------------
 | unknown
 | callSetup
@@ -52,14 +52,14 @@ ms.locfileid: "59104210"
 
 ### <a name="mediastreamdirection-values"></a>значения mediaStreamDirection
 
-| Элемент
+| Member
 |:--------------
 | callerToCallee
 | calleeToCaller
 
 ### <a name="modality-values"></a>значения модальности
 
-| Элемент
+| Member
 |:--------------
 | unknown
 | audio
@@ -71,7 +71,7 @@ ms.locfileid: "59104210"
 
 ### <a name="networkconnectiontype-values"></a>значения networkConnectionType
 
-| Элемент
+| Member
 |:--------------
 | unknown
 | проводной
@@ -82,17 +82,18 @@ ms.locfileid: "59104210"
 
 ### <a name="productfamily-values"></a>значения productFamily
 
-| Элемент
+| Member
 |:--------------
 | unknown
 | teams
 | SkypeForBusiness
 | lync
 | unknownFutureValue
+| azureCommunicationServices
 
 ### <a name="servicerole-values"></a>значения serviceRole
 
-| Элемент
+| Member
 |:--------------
 | unknown
 | customBot
@@ -119,7 +120,7 @@ ms.locfileid: "59104210"
 
 ### <a name="userfeedbackrating-values"></a>значения userFeedbackRating
 
-| Элемент
+| Member
 |:--------------
 | notRated
 | плохо
@@ -131,7 +132,7 @@ ms.locfileid: "59104210"
 
 ### <a name="wifiband-values"></a>значения wifiBand
 
-| Элемент
+| Member
 |:--------------
 | unknown
 | frequency24GHz
@@ -141,7 +142,7 @@ ms.locfileid: "59104210"
 
 ### <a name="wifiradiotype-values"></a>значения wifiRadioType
 
-| Элемент
+| Member
 |:--------------
 | unknown
 | wifi80211a
@@ -154,7 +155,7 @@ ms.locfileid: "59104210"
 
 ### <a name="pstncalldurationsource-values"></a>значения pstnCallDurationSource 
 
-|Элемент|
+|Member|
 |:---|
 |Microsoft|
 |operator|

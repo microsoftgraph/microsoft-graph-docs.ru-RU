@@ -2,15 +2,15 @@
 title: Сертификат ListConnectorDetailses
 description: Список свойств и связей объектов certificateConnectorDetails.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 72861252cc277824731f6455c250b5dab7cf25b8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6e6e37361252c3dffbd350ca5641bc2d09361c6d
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59009688"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339089"
 ---
 # <a name="list-certificateconnectordetailses"></a>Сертификат ListConnectorDetailses
 
@@ -29,7 +29,7 @@ ms.locfileid: "59009688"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -80,6 +80,7 @@ Content-Length: 384
   ]
 }
 ```
+
 
 
 

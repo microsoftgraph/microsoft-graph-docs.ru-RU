@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 85197afe4fe9ba994c74d593ba6081af0c28a313
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: c30e0a20e0e37d45932733b7416ba83c288f4fbc
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694969"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336883"
 ---
 # <a name="userexperienceanalyticsbatteryhealthdeviceperformance-resource-type"></a>тип ресурса userExperienceAnalyticsBatteryHealthDevicePerformance
 
@@ -42,7 +42,7 @@ ms.locfileid: "60694969"
 |estimatedRuntimeInMinutes|Int32|Предполагаемое время работы устройства при полной зарядке батареи. Единица в минутах. Допустимые значения 2147483648 2147483647|
 |batteryAgeInDays|Int32|Предполагаемое время автономной работы. Единица в днях. Допустимые значения 2147483648 2147483647|
 |deviceBatteryHealthScore|Int32|Средневзвешенное значение максимального балла мощности устройства и оценки времени работы. Значения варьируются от 0 до 100. Допустимые значения 2147483648 2147483647|
-|healthStatus|String|Общее состояние состояния заряда батареи устройства.|
+|healthStatus|Строка|Общее состояние состояния заряда батареи устройства.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -69,6 +69,7 @@ ms.locfileid: "60694969"
   "healthStatus": "String"
 }
 ```
+
 
 
 

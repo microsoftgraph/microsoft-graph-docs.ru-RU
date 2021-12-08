@@ -2,15 +2,15 @@
 title: Тип ресурса roleScopeTagAutoAssignment
 description: Содержит свойства автоматического присвоения тега области ролей группе, которая будет применяться к устройствам.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f56bba9d1ea1c18a9774575998be8854d9a39102
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 819691d3e8d9fbcc035836049f2afe4f60d3b6c6
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59063680"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337212"
 ---
 # <a name="rolescopetagautoassignment-resource-type"></a>Тип ресурса roleScopeTagAutoAssignment
 
@@ -37,7 +37,7 @@ ms.locfileid: "59063680"
 |id|String|Ключ объекта. Это свойство доступно только для чтения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель автоматического назначения для определенного тега области ролей.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -60,6 +60,7 @@ ms.locfileid: "59063680"
   }
 }
 ```
+
 
 
 

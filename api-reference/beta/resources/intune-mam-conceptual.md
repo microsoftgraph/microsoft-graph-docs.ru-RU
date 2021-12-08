@@ -4,12 +4,12 @@ description: Списки API Graph Microsoft для конечных точек
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 70164fe13a52ec574ed78cdae1320cc2d0bb234e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d71c275d6b40e5c71f2f7ca737c93f99480b71d1
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59075187"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336162"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -39,7 +39,6 @@ ms.locfileid: "59075187"
 - [Регистрация управляемых приложений для iOS](intune-mam-iosmanagedappregistration.md)
 - [Идентификатор мобильных приложений для iOS](intune-mam-iosmobileappidentifier.md)
 - [JSON](intune-mam-json.md)
-- [Пара "ключ-значение"](intune-mam-keyvaluepair.md)
 - [Идентификатор приложения Mac](intune-mam-macappidentifier.md)
 - [Уровень совместного доступа к буферу обмена управляемого приложения](intune-mam-managedappclipboardsharinglevel.md)
 - [Конфигурация управляемых приложений](intune-mam-managedappconfiguration.md)

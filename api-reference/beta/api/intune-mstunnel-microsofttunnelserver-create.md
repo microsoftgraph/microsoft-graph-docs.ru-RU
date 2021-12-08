@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b1030ed45e4ac30de34535a5361dc1e1d425f18
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 10267b72faa1ead73bc9952b4f4e1af7a05fef24
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60493242"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339292"
 ---
 # <a name="create-microsofttunnelserver"></a>Создание microsoftTunnelServer
 
@@ -29,7 +29,7 @@ ms.locfileid: "60493242"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,10 +54,10 @@ POST /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTun
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Id MicrosoftTunnelServer|
-|displayName|String|Имя отображения MicrosoftTunnelServer|
+|displayName|Строка|Имя отображения MicrosoftTunnelServer|
 |tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|Состояние здоровья MicrosoftTunnelServer. Возможные значения: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`.|
 |lastCheckinDateTime|DateTimeOffset|При последней регистрации в MicrosoftTunnelServer|
-|agentImageDigest|String|Дайджест текущего образа агента, запущенного на этом сервере |
+|agentImageDigest|Строка|Дайджест текущего образа агента, запущенного на этом сервере |
 |serverImageDigest|String|Дайджест текущего изображения сервера, запущенного на этом сервере |
 
 
@@ -101,6 +101,7 @@ Content-Length: 361
   "serverImageDigest": "Server Image Digest value"
 }
 ```
+
 
 
 

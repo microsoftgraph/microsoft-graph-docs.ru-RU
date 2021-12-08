@@ -2,15 +2,15 @@
 title: тип enum remoteAssistanceSessionType
 description: 'Тип сеанса удаленной помощи, который был проведен. Возможные значения: `viewOnly` , `fullControl`'
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fb9f988c566c8a6e6bfc44f228d23fee8b20a1a7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ca39d756bc134a7210c504dbf624f9267d0fc042
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59039471"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338136"
 ---
 # <a name="remoteassistancesessiontype-enum-type"></a>тип enum remoteAssistanceSessionType
 
@@ -28,6 +28,7 @@ ms.locfileid: "59039471"
 |viewOnly|0|Этот статус обозначает сеанс представления только между помощником и sharer.|
 |fullControl|1|Этот статус обозначает сеанс, в котором помощник мог полностью контролировать устройство sharer.|
 |высоты|2|Этот статус обозначает сеанс, в котором помощник мог принимать административные действия на устройстве sharer.|
+
 
 
 

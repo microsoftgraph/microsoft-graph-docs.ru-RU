@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 994eb01c19990722b08c5cc8cdb17035dd840307
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: c6c51435fe2323c53111a8ed8f102187da9f07e6
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695631"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341357"
 ---
 # <a name="update-devicemanagementcompliancescheduledactionforrule"></a>Обновление deviceManagementComplianceScheduledActionForRule
 
@@ -29,7 +29,7 @@ ms.locfileid: "60695631"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +53,7 @@ PATCH /deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ этого параметра в политике, содержа которой он содержится. Автоматически созданный.|
+|id|Строка|Ключ этого параметра в политике, содержа которой он содержится. Автоматически созданный.|
 |ruleName|String|Имя правила, к которому применяется это запланированное действие.|
 
 
@@ -89,6 +89,7 @@ Content-Length: 173
   "ruleName": "Rule Name value"
 }
 ```
+
 
 
 

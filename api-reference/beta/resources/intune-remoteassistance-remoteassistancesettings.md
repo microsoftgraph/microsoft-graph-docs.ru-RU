@@ -2,15 +2,15 @@
 title: тип ресурса remoteAssistanceSettings
 description: Параметры удаленной помощи для учетной записи
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0179aaeb870c49c89bbb7795a1cc7962011dac68
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 26c085a2acfe5299196e3784e9e9ed7b45af35a7
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59039457"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338108"
 ---
 # <a name="remoteassistancesettings-resource-type"></a>тип ресурса remoteAssistanceSettings
 
@@ -32,8 +32,8 @@ ms.locfileid: "59039457"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Идентификатор параметров удаленной помощи|
-|remoteAssistanceState|[remoteAssistanceState](../resources/intune-remoteassistance-remoteassistancestate.md)|Текущее состояние удаленной помощи для учетной записи. Возможные значения: неКонфигурационные, отключенные, включенные. Этот параметр настраивается администратором. Параметры удаленной помощи, которые еще не настроены администратором, имеют состояние notConfigured. Возвращается по умолчанию. Возможные значения: `notConfigured`, `disabled`, `enabled`.|
-|allowSessionsToUnenrolledDevices|Логическое| Указывает, разрешены ли сеансы для незавершенных устройств для учетной записи. Этот параметр настраивается администратором. Значение по умолчанию является ложным.|
+|remoteAssistanceState|[remoteAssistanceState](../resources/intune-remoteassistance-remoteassistancestate.md)|Текущее состояние удаленной помощи для учетной записи. Возможные значения: отключено, включено. Этот параметр настраивается администратором. Параметры удаленной помощи, которые еще не настроены администратором, отключены. Возвращается по умолчанию. Возможные значения: `disabled`, `enabled`.|
+|allowSessionsToUnenrolledDevices|Boolean| Указывает, разрешены ли сеансы для незавершенных устройств для учетной записи. Этот параметр настраивается администратором. Значение по умолчанию является ложным.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -54,6 +54,7 @@ ms.locfileid: "59039457"
   "allowSessionsToUnenrolledDevices": true
 }
 ```
+
 
 
 

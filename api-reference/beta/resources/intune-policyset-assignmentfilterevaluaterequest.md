@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7a3af607c2d809f32e064b45bfaef9d6057f241f
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: d7c8c747dea90883c7b5587a9d96ab4d40453ecc
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60697424"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341777"
 ---
 # <a name="assignmentfilterevaluaterequest-resource-type"></a>тип ресурса assignmentFilterEvaluateRequest
 
@@ -26,7 +26,7 @@ ms.locfileid: "60697424"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |платформа|[devicePlatformType](../resources/intune-policyset-deviceplatformtype.md)|Тип платформы устройств, на которых будет применяться фильтр назначения. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
-|правило|String|Определение правила фильтра назначения.|
+|правило|Строка|Определение правила фильтра назначения.|
 |top|Int32|Ограничение записей на запрос. Значение по умолчанию — 100, если предоставлено менее 0 или более 100|
 |skip|Int32|Количество записей, которые нужно пропустить. Значение по умолчанию — 0|
 
@@ -49,6 +49,7 @@ ms.locfileid: "60697424"
   "skip": 1024
 }
 ```
+
 
 
 

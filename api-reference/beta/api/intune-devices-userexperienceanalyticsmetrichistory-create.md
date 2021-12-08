@@ -2,15 +2,15 @@
 title: Создание userExperienceAnalyticsMetricHistory
 description: Создание нового объекта userExperienceAnalyticsMetricHistory.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c34b75726bea910d8dca1691beca5b056a651b83
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 07723ff6fa69890a155a3c6bcc4e4d0b5469b2d7
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59070435"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339747"
 ---
 # <a name="create-userexperienceanalyticsmetrichistory"></a>Создание userExperienceAnalyticsMetricHistory
 
@@ -27,9 +27,9 @@ ms.locfileid: "59070435"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ POST /deviceManagement/userExperienceAnalyticsDeviceMetricHistory
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,10 +54,10 @@ POST /deviceManagement/userExperienceAnalyticsDeviceMetricHistory
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор метрики аналитики пользовательского опыта.|
+|id|Строка|Уникальный идентификатор метрики аналитики пользовательского опыта.|
 |deviceId|String|ID устройства аналитики пользовательского интерфейса.|
 |metricDateTime|DateTimeOffset|Время даты даты аналитики пользовательского интерфейса.|
-|metricType|String|Тип метрики аналитики пользовательского опыта.|
+|metricType|Строка|Тип метрики аналитики пользовательского опыта.|
 
 
 
@@ -96,6 +96,7 @@ Content-Length: 257
   "metricType": "Metric Type value"
 }
 ```
+
 
 
 

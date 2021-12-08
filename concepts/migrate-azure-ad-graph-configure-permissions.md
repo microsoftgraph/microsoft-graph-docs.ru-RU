@@ -1,71 +1,57 @@
 ---
-title: Используйте microsoft Graph для настройки необходимых разрешений Azure AD Graph для регистрации приложений
-description: Используйте microsoft Graph для настройки необходимых разрешений Azure AD Graph для регистрации приложений.
+title: Настройка необходимых разрешений Azure AD Graph для регистрации приложений
+description: Настройка необходимых разрешений Azure AD Graph для регистрации приложений.
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 25fac773056238bde7c50158eb09daf3f5080552
-ms.sourcegitcommit: 6b5bee1a1cea92c1f3d6439110c4916eb8b249a5
+ms.openlocfilehash: 7a892bcf27da48673704f3596d9ca24cd31c8bd9
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60908587"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61344486"
 ---
-# <a name="use-microsoft-graph-to-configure-required-azure-ad-graph-permissions-for-an-app-registration"></a>Используйте microsoft Graph для настройки необходимых разрешений Azure AD Graph для регистрации приложений
+# <a name="configure-required-azure-ad-graph-permissions-for-an-app-registration"></a>Настройка необходимых разрешений Azure AD Graph для регистрации приложений
 
-Azure Active Directory (Azure AD) Graph и будет отменена 30 июня 2022 г. В рамках этого пути отключено добавление разрешений Azure AD Graph необходимых разрешений для регистрации приложений через портал Azure. Рекомендуется выполнять контрольный [](migrate-azure-ad-graph-planning-checklist.md) список планирования миграции приложений, чтобы помочь вам перейти к API [Graph](/graph/overview) Microsoft.
+Azure Active Directory (Azure AD) Graph и будет отменена 30 июня 2022 г. В рамках этого пути амортизации добавление разрешений Azure AD Graph для регистрации приложений через портал Azure теперь отключено. Рекомендуется следовать контрольным [](migrate-azure-ad-graph-planning-checklist.md) списком планирования миграции приложений, чтобы помочь вам перейти к API [Graph](/graph/overview) Microsoft.
 
-Однако может потребоваться добавить в приложение дополнительные Graph Azure AD. В этой статье приводится руководство по использованию microsoft Graph для настройки необходимых разрешений для Azure AD Graph регистрации приложения.
+Однако для доступа к ресурсам может потребоваться временное Graph Azure AD. В этой статье содержится руководство по настройке необходимых разрешений для Azure AD Graph регистрации приложения.
 
 > [!CAUTION]
 > Любое приложение с помощью Azure AD Graph будет по-прежнему работать после 30 июня 2022 г. Дополнительные сведения см. в Graph [Приложения Azure AD](migrate-azure-ad-graph-overview.md)в Microsoft Graph.
 
-## <a name="option-1-use-the-microsoft-graph-api"></a>Вариант 1. Использование API Graph Microsoft
+## <a name="option-1-use-the-azure-portal-to-find-the-apis-your-organization-uses"></a>Вариант 1. Используйте портал Azure, чтобы найти API, которые использует организация
 
-API Graph приложения [](/graph/api/resources/application) Майкрософт включает свойство **requiredResourceAccess,** которое является коллекцией объектов [requiredResourceAccess.](/graph/api/resources/requiredresourceaccess) Используйте это свойство для настройки необходимых разрешений Azure AD Graph, как описано в следующих действиях.
+1. Во входе на [портал Azure](https://portal.azure.com) в качестве глобального администратора или администратора приложений.
+1. Поиск и выбор **Azure Active Directory**.
+1. В разделе **Управление** выберите **Регистрация приложений**.
+1. В **окне Регистрации** приложений в вкладке **Все** приложения выберите приложение, для которого необходимо добавить Graph Azure AD. Это открывает области Обзор **регистрации** приложений.
+1. В левой области окна в группе **Управление** меню выберите **разрешения API.** В этом случае раскрываются **настроенные разрешения для** регистрации приложения. Выберите **Добавить разрешение**.
+1. В **раскрытом** окне разрешений API запроса переключение на **API** моя организация использует вкладку и поиск `Windows Azure Active Directory` или `00000002-0000-0000-c000-000000000000` . Выберите из фильтрованного списка, чтобы **показать окно Azure Active Directory Graph** разрешений.
 
-### <a name="prerequisites"></a>Предварительные требования
+    :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AzureADGraphPermissionsAPI.png" alt-text="API Graph Azure AD Windows Azure Active Directory и clientID 00000002-0000-0000-c000-000000000000000000000." border="true":::
 
-Для выполнения следующих действий необходимы следующие ресурсы и привилегии:
+1. Выберите **вкладку Делегирование** разрешений или разрешений приложений, чтобы выбрать из делегированного и приложения разрешений соответственно.  Выберите **Добавление разрешений** для добавления разрешения на регистрацию приложения.
+1. После добавления необходимых разрешений в  окне Настройка  разрешений выберите согласие администратора Гранта на предоставление разрешений Azure AD Graph регистрации приложения.
 
-+ Запустите запросы HTTP в инструменте по вашему выбору, например в [приложении, через Graph Explorer](https://aka.ms/ge)или Postman.
-+ Запустите API как пользователь в роли глобального администратора или администратора приложений или как владелец целевой регистрации приложения. Дополнительные сведения о действиях, поддерживаемых этими ролями, см. в встроенной роли [Azure AD.](/azure/active-directory/roles/permissions-reference)
-+ Приложению, используемом для внесения этих изменений, необходимо предоставить `Application.ReadWrite.All` разрешение.
+## <a name="option-2-update-the-application-manifest-on-the-azure-portal"></a>Вариант 2. Обновление манифеста приложения на портале Azure
 
-### <a name="step-1-identify-the-permission-ids-for-the-azure-ad-graph-permissions-your-app-requires"></a>Шаг 1. Определение идентификации разрешений для службы Azure AD Graph, необходимых вашему приложению
+1. Во входе на [портал Azure](https://portal.azure.com) в качестве глобального администратора или администратора приложений.
+1. Поиск и выбор **Azure Active Directory**.
+1. В разделе **Управление** выберите **Регистрация приложений**.
+1. В **окне Регистрации** приложений в вкладке **Все** приложения выберите приложение, для которого необходимо добавить Graph Azure AD. Это открывает области Обзор **регистрации** приложений.
+1. В левой области окна в группе **Управление** меню выберите **Манифест**. Это открывает редактор, который позволяет напрямую редактировать атрибуты объекта регистрации приложений.
 
-Определение разрешений Azure AD Graph, необходимых вашему приложению, их ID-разрешений, а также ролей приложений (разрешений приложений) или делегирования разрешений. Вы можете получить документы разрешений из существующей регистрации приложений, которая имеет разрешение, настроенное путем прочтения  его свойства **requiredResourceAccess** либо в манифесте приложения на портале Azure, либо через API microsoft Graph. 
+    :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/AppRegistrationManifest.png" alt-text="Файл манифеста регистрации приложений позволяет изменять атрибуты приложения." border="true":::
 
-Azure AD Graph является уникальным приложением Azure AD, которое идентифицировано  `00000002-0000-0000-c000-000000000000` **свойством resourceAppId** свойства **requiredResourceAccess.**
+1. Тщательно отредактировать **свойство requiredResourceAccess в** файле манифеста приложения, чтобы добавить следующие сведения:
+    >**Примечание:** Вы можете изменить манифест приложения на  портале Azure или выбрать Скачать  для локального редактирования манифеста, а затем использовать Upload для повторного его применения в приложении.
++ Добавьте свойство **resourceAppId** и назначьте значение, представляющее `00000002-0000-0000-c000-000000000000` Azure AD Graph
++ Добавьте **свойство resourceAccess и** назначьте необходимые разрешения.
 
-### <a name="request"></a>Запрос
+    В следующем фрагменте JSON показано свойство **requiredResourceAccess** с Azure AD Graph в качестве ресурса и назначено *user.Read* и *Application.Read.All* oauth2PermissionScope (делегированная разрешение) и appRole (разрешение приложения) соответственно.    
 
-В следующем запросе извлекается Graph Azure AD и типы разрешений из существующего приложения, идентифицированного **id.** `f7748341-825c-46e9-a111-5e3b56ae015b`
-
-<!-- {
-  "blockType": "request",
-  "name": "migrate-azureadgraph-get-serviceprincipal-azureadgraph"
-}-->
-
-```msgraph-interactive
-https://graph.microsoft.com/v1.0/applications/f7748341-825c-46e9-a111-5e3b56ae015b?$select=requiredResourceAccess
-```
-
-### <a name="response"></a>Отклик
-
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.servicePrincipal"
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications(requiredResourceAccess)/$entity",
+    ```JSON
     "requiredResourceAccess": [
         {
             "resourceAppId": "00000002-0000-0000-c000-000000000000",
@@ -80,15 +66,115 @@ Content-type: application/json
                 }
             ]
         }
+    ],
+    ```
+
+7. Сохраните изменения.
+8. Выберите **разрешения API** и  в настроенных разрешениях для  регистрации приложения выберите согласие администратора Grant для предоставления разрешений Azure AD Graph регистрации приложения.
+
+## <a name="option-3-use-the-microsoft-graph-api"></a>Вариант 3. Используйте API Graph Microsoft
+
+API Graph приложения [](/graph/api/resources/application) Майкрософт включает свойство **requiredResourceAccess,** которое является коллекцией объектов [requiredResourceAccess.](/graph/api/resources/requiredresourceaccess) Используйте это свойство для настройки необходимых разрешений Azure AD Graph, как описано в следующих действиях.
+
+### <a name="prerequisites"></a>Предварительные условия
+
+Для выполнения следующих действий необходимы следующие ресурсы и привилегии:
+
++ Запустите запросы HTTP в инструменте по вашему выбору, например в [приложении, через Graph Explorer](https://aka.ms/ge)или Postman.
++ Запустите API как пользователь в роли глобального администратора или администратора приложений или как владелец целевой регистрации приложения. Дополнительные сведения о действиях, поддерживаемых этими ролями, см. в встроенной роли [Azure AD.](/azure/active-directory/roles/permissions-reference)
++ Приложению, используемом для внесения этих изменений, необходимо предоставить `Application.ReadWrite.All` разрешение.
+
+### <a name="step-1-identify-the-permission-ids-for-the-azure-ad-graph-permissions-your-app-requires"></a>Шаг 1. Определение идентификации разрешений для службы Azure AD Graph, необходимых вашему приложению
+
+Определите разрешения Azure AD Graph, необходимые вашему приложению, их идентификации разрешений, а также роли приложений (разрешения приложений) или oauth2PermissionScopes (делегированные разрешения).
+
+Azure AD Graph как объект servicePrincipal с его уникальным во всем мире приложением и как его `00000002-0000-0000-c000-000000000000` `Windows Azure Active Directory` **displayName** и **appDisplayName**. Запустите следующий запрос для получения основного объекта службы для Azure AD Graph.
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "migrate-azureadgraph-get-serviceprincipal-azureadgraph"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=appId eq '00000002-0000-0000-c000-000000000000'
+```
+
+#### <a name="response"></a>Отклик
+
+В объекте ответа в объекте **appRoles** перечислены сведения о разрешениях azure AD Graph приложения, а в **объекте oauth2PermissionScopes** - сведения о делегирования разрешений.
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.servicePrincipal"
+} -->
+
+```http
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#servicePrincipals",
+    "value": [
+        {
+            "id": "1804a6f8-e623-4520-8f40-ba1b0c11c42d",
+            "accountEnabled": true,
+            "appDisplayName": "Windows Azure Active Directory",
+            "appDescription": null,
+            "appId": "00000002-0000-0000-c000-000000000000",
+            "appOwnerOrganizationId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+            "appRoleAssignmentRequired": false,
+            "displayName": "Windows Azure Active Directory",
+            "servicePrincipalNames": [
+                "https://graph.windows.net",
+                "00000002-0000-0000-c000-000000000000/graph.microsoftazure.us",
+                "00000002-0000-0000-c000-000000000000/graph.windows.net",
+                "00000002-0000-0000-c000-000000000000/directory.windows.net",
+                "00000002-0000-0000-c000-000000000000",
+                "https://graph.windows.net/",
+                "https://graph.microsoftazure.us"
+            ],
+            "servicePrincipalType": "Application",
+            "signInAudience": "AzureADMultipleOrgs",
+            "appRoles": [
+                {
+                    "allowedMemberTypes": [
+                        "Application"
+                    ],
+                    "description": "Allows the app to read applications and service principals without a signed-in user",
+                    "displayName": "Read all applications",
+                    "id": "3afa6a7d-9b1a-42eb-948e-1650a849e176",
+                    "isEnabled": true,
+                    "origin": "Application",
+                    "value": "Application.Read.All"
+                }
+            ],
+            "oauth2PermissionScopes": [
+                {
+                    "adminConsentDescription": "Allows users to sign in to the app, and allows the app to read the profile of signed-in users. It also allow the app to read basic company information of signed-in users.",
+                    "adminConsentDisplayName": "Sign in and read user profile",
+                    "id": "311a71cc-e848-46a1-bdf8-97ff7156d8e6",
+                    "isEnabled": true,
+                    "type": "User",
+                    "userConsentDescription": "Allows you to sign in to the app with your work account and let the app read your profile. It also allows the app to read basic company information.",
+                    "userConsentDisplayName": "Sign you in and read your profile",
+                    "value": "User.Read"
+                }
+            ]
+        }
     ]
 }
 ```
 
-Из этого вывода, это разрешение ID делегированного разрешения User.Read в то время как это разрешение `311a71cc-e848-46a1-bdf8-97ff7156d8e6`  `3afa6a7d-9b1a-42eb-948e-1650a849e176` ID роли приложения *Application.Read.All.*
+Из вышеуказанного усеченного вывода — это ID разрешений для делегированных разрешений User.Read, в то время как это разрешение ID для `311a71cc-e848-46a1-bdf8-97ff7156d8e6`  `3afa6a7d-9b1a-42eb-948e-1650a849e176` приложения *Application.Read.All.*
 
 ### <a name="step-2-add-required-azure-ad-graph-permissions-to-your-app"></a>Шаг 2. Добавление необходимых разрешений Azure AD Graph в приложение
 
-В следующем примере API приложения [Update](/graph/api/application-update) вызывается для добавления необходимых разрешений Azure AD Graph в регистрацию приложений, идентифицированную по объекту `581088ba-83c5-4975-b8af-11d2d7a76e98` ID. На шаге 1 эти разрешения были соответственно делегирована *разрешениями и* ролью приложения *User.Read и Application.Read.All.*
+В следующем примере API приложения [Update](/graph/api/application-update) вызывается для добавления необходимых разрешений Azure AD Graph в регистрацию приложений, идентифицированную по объекту `581088ba-83c5-4975-b8af-11d2d7a76e98` ID. На шаге 1 эти разрешения были *соответственно разрешениями User.Read* и *Application.Read.All.*
 
 > [!IMPORTANT]
 > Чтобы обновить **свойство requiredResourceAccess,** необходимо передать существующие и новые разрешения. Передача только новых разрешений переописывает и удаляет существующие разрешения.
@@ -147,11 +233,11 @@ GET https://graph.microsoft.com/v1.0/applications/581088ba-83c5-4975-b8af-11d2d7
 
 >**Примечание:** Несмотря на то, что вы настроили необходимые приложениям разрешения, эти разрешения не были предоставлены. Многие разрешения требуют согласия администратора, прежде чем они могут использоваться для доступа к данным организации.
 
-## <a name="option-2-use-microsoft-graph-powershell"></a>Вариант 2. Использование Microsoft Graph PowerShell
+## <a name="option-4-use-microsoft-graph-powershell"></a>Вариант 4. Использование Microsoft Graph PowerShell
 
 В [кодлет Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true) в Microsoft Graph PowerShell включен параметр **RequiredResourceAccess,** который является коллекцией объектов **IMicrosoftGraphRequiredResourceAccess.** Этот параметр используется для настройки необходимых разрешений Azure AD Graph, как описано в следующих действиях.
 
-### <a name="prerequisites"></a>Предварительные требования
+### <a name="prerequisites"></a>Предварительные условия
 
 Для выполнения следующих действий необходимы следующие привилегии:
 
@@ -161,20 +247,27 @@ GET https://graph.microsoft.com/v1.0/applications/581088ba-83c5-4975-b8af-11d2d7
 
 ### <a name="step-1-identify-the-permission-ids-for-the-azure-ad-graph-permissions-your-app-requires"></a>Шаг 1. Определение идентификации разрешений для службы Azure AD Graph, необходимых вашему приложению
 
-Определение разрешений Azure AD Graph, необходимых вашему приложению, их ID-разрешений, а также ролей приложений (разрешений приложений) или делегирования разрешений. Вы можете получить документы разрешений из существующей регистрации приложений, которая имеет разрешение, настроенное с помощью чтения  свойства **RequiredResourceAccess** либо в Манифесте приложения на портале Azure, либо с помощью скрипта PowerShell.
+Определите Graph Azure AD, необходимые вашему приложению, их идентификацию разрешений, а также роли приложений (разрешения приложений) или делегирование разрешений.
 
-### <a name="request"></a>Запрос
+Azure AD Graph как объект ServicePrincipal с его уникальным во всем мире Приложением и как `00000002-0000-0000-c000-000000000000` `Windows Azure Active Directory` его **DisplayName** и **AppDisplayName**. Запустите следующий запрос для получения объекта ServicePrincipal для Azure AD Graph.
 
-Создайте новый скрипт PowerShell с **fetchPermissions.ps1** и добавьте следующий код. Этот код извлекает Graph Azure AD и типы разрешений из существующей регистрации приложения, идентифицированной по объекту `f7748341-825c-46e9-a111-5e3b56ae015b` ID. Замените `f7748341-825c-46e9-a111-5e3b56ae015b` исходный код объекта приложения.
+#### <a name="request"></a>Запрос
+
+Создайте новый скрипт PowerShell с **fetchPermissions.ps1** и добавьте следующий код. В этом коде извлекаются Graph и типы разрешений Azure AD. Вывод отображает и форматирует выход объектов **AppRoles** и **Oauth2PermissionScopes.**
 
 ```powershell
 # Sign in with the required Application.ReadWrite.All scope
-Connect-Graph -Scopes "Application.ReadWrite.All" 
+Connect-Graph -Scopes "Application.ReadWrite.All"
 
-## Replace f7748341-825c-46e9-a111-5e3b56ae015b with the object ID of the existing app registration; then read and output the permission IDs and their types
-$sourceAppId= 'f7748341-825c-46e9-a111-5e3b56ae015b' 
-$sourceApp = Get-MgApplication -ApplicationId $sourceAppId 
-$sourceApp.RequiredResourceAccess.ResourceAccess
+# Retrieve the service principal details for Azure AD Graph API.
+$AADGraph = Get-MgServicePrincipal -Filter "appId eq '00000002-0000-0000-c000-000000000000'"
+
+# Format output of the request above and display AppRoles (application permissions) and oauth2PermissionScopes (delegated permissions)
+Echo "Azure AD Graph service principal object and its supported permissions:"
+Echo "Application permissions:"
+$AADGraph.AppRoles | Format-List
+Echo "Delegated permissions:"
+$AADGraph.Oauth2PermissionScopes | Format-List
 ```
 
 Запустите сценарий с помощью следующей команды
@@ -182,22 +275,45 @@ $sourceApp.RequiredResourceAccess.ResourceAccess
 .\fetchPermissions.ps1
 ```
 
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример результата.
 
 ```powershell
-Id                                   Type
---                                   ----
-311a71cc-e848-46a1-bdf8-97ff7156d8e6 Scope
-3afa6a7d-9b1a-42eb-948e-1650a849e176 Role
+Welcome To Microsoft Graph!
+Azure AD Graph service principal object and its supported permissions:
+Application permissions:
+
+
+AllowedMemberTypes   : {Application}
+Description          : Allows the app to read applications and service principals without a signed-in user
+DisplayName          : Read all applications
+Id                   : 3afa6a7d-9b1a-42eb-948e-1650a849e176
+IsEnabled            : True
+Origin               : Application
+Value                : Application.Read.All
+AdditionalProperties : {}
+
+Delegated permissions:
+
+
+AdminConsentDescription : Allows users to sign in to the app, and allows the app to read the profile of signed-in users. It also allow the app to read basic company information of signed-in users.
+AdminConsentDisplayName : Sign in and read user profile
+Id                      : 311a71cc-e848-46a1-bdf8-97ff7156d8e6
+IsEnabled               : True
+Origin                  :
+Type                    : User
+UserConsentDescription  : Allows you to sign in to the app with your work account and let the app read your profile. It also allows the app to read basic company information.
+UserConsentDisplayName  : Sign you in and read your profile
+Value                   : User.Read
+AdditionalProperties    : {}
 ```
 
-Из этого вывода, это разрешение ID делегированного разрешения User.Read в то время как это разрешение `311a71cc-e848-46a1-bdf8-97ff7156d8e6`  `3afa6a7d-9b1a-42eb-948e-1650a849e176` ID роли приложения *Application.Read.All.*
+Из этого вывода, это разрешение ID делегированного разрешения User.Read, в то время как это разрешение `311a71cc-e848-46a1-bdf8-97ff7156d8e6`  `3afa6a7d-9b1a-42eb-948e-1650a849e176` ID разрешения *application.Read.All* разрешения приложения.
 
 ### <a name="step-2-add-azure-ad-graph-permissions-to-your-app"></a>Шаг 2. Добавление разрешений Azure AD Graph в приложение
 
-Создайте новый скрипт PowerShell с **updatePermissions.ps1** и добавьте следующий код. Этот код добавляет необходимые разрешения Azure AD Graph для регистрации приложения, идентифицированного по объекту `581088ba-83c5-4975-b8af-11d2d7a76e98` ID. На шаге 1 эти разрешения были соответственно делегирована *разрешениями и* ролью приложения *User.Read и Application.Read.All.*
+Создайте новый скрипт PowerShell с **updatePermissions.ps1** и добавьте следующий код. Этот код добавляет необходимые разрешения Azure AD Graph для регистрации приложения, идентифицированного по объекту `581088ba-83c5-4975-b8af-11d2d7a76e98` ID. На шаге 1 эти разрешения были *соответственно разрешениями User.Read* и *Application.Read.All.*
 
 > [!IMPORTANT]
 > Чтобы обновить **свойство RequiredResourceAccess,** необходимо передать существующие и новые разрешения. Передача только новых разрешений переописывает и удаляет существующие разрешения.

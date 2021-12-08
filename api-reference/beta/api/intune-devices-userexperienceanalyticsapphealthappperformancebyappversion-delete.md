@@ -2,15 +2,15 @@
 title: Удаление userExperienceAnalyticsAppHealthAppPerformanceByAppVersion
 description: Удаляет пользователяExperienceAnalyticsAppHealthAppPerformanceByAppVersion.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9caa34bc32a5b51236bec513e3540adf372b0436
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 756b88f5125919baa4d4a1ed2594031dbe08555b
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59027836"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334746"
 ---
 # <a name="delete-userexperienceanalyticsapphealthappperformancebyappversion"></a>Удаление userExperienceAnalyticsAppHealthAppPerformanceByAppVersion
 
@@ -27,9 +27,9 @@ ms.locfileid: "59027836"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -65,6 +65,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalytics
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

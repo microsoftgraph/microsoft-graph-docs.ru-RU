@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9f43820e7c3956ee85ca48820445b9326f339b0f
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 1e5c5f1c3d9cbf7f6bc8c08b7baeba2c14d4c6bb
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60489278"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338731"
 ---
 # <a name="create-chromeosonboardingsettings"></a>Создание chromeOSOnboardingSettings
 
@@ -29,7 +29,7 @@ ms.locfileid: "60489278"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,9 +53,9 @@ POST /deviceManagement/chromeOSOnboardingSettings
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Id ChromebookTenant|
+|id|Строка|Id ChromebookTenant|
 |ownerUserPrincipalName|String|OwnerUserPrincipalName ChromebookTenant|
-|onboardingStatus|[onboardingStatus](../resources/intune-chromebooksync-onboardingstatus.md)|OnboardingStatus ChromebookTenant. Возможные значения: `unknown`, `inprogress`, `onboarded`, `failed`.|
+|onboardingStatus|[onboardingStatus](../resources/intune-chromebooksync-onboardingstatus.md)|OnboardingStatus ChromebookTenant. Возможные значения: `unknown`, `inprogress`, `onboarded`, `failed`, `offboarding`, `unknownFutureValue`.|
 |lastModifiedDateTime|DateTimeOffset|LastModifiedDateTime ChromebookTenant|
 |lastDirectorySyncDateTime|DateTimeOffset|LastDirectorySyncDateTime в ChromebookTenant|
 
@@ -97,6 +97,7 @@ Content-Length: 351
   "lastDirectorySyncDateTime": "2016-12-31T23:57:56.1183185-08:00"
 }
 ```
+
 
 
 

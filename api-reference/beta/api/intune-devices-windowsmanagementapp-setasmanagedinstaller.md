@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ff013eadd7492b99e2cd64b18d7482fd9e1ad77d
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 3637308d434597e5712e825c62ff8a3914696523
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687216"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61335315"
 ---
 # <a name="setasmanagedinstaller-action"></a>действие setAsManagedInstaller
 
@@ -27,9 +27,9 @@ ms.locfileid: "60687216"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.Read.All|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -65,6 +65,7 @@ POST https://graph.microsoft.com/beta/deviceAppManagement/windowsManagementApp/s
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

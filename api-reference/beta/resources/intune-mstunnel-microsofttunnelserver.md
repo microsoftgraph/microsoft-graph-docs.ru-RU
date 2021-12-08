@@ -2,15 +2,15 @@
 title: тип ресурсов microsoftTunnelServer
 description: Объект, Microsoft Tunnel представляю
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b7869ad1f32e791180d8e671422580d406b13615
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 507c3d7af22614b96235853e0f5e0351adaf1198
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59068665"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336134"
 ---
 # <a name="microsofttunnelserver-resource-type"></a>тип ресурсов microsoftTunnelServer
 
@@ -44,7 +44,7 @@ ms.locfileid: "59068665"
 |agentImageDigest|Строка|Дайджест текущего образа агента, запущенного на этом сервере |
 |serverImageDigest|Строка|Дайджест текущего изображения сервера, запущенного на этом сервере |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -66,6 +66,7 @@ ms.locfileid: "59068665"
   "serverImageDigest": "String"
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ceea9c04ef1a0b5f79fd966980ba9f207812b6a7
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 2529a34fa15ce15b0a2652ffeea9c99bb1dab9f5
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60691556"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341945"
 ---
 # <a name="devicemanagementconfigurationsettingdefinition-resource-type"></a>тип ресурса deviceManagementConfigurationSettingDefinition
 
@@ -36,12 +36,12 @@ ms.locfileid: "60691556"
 |:---|:---|:---|
 |применимость|[deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|Сведения о том, какие параметры устройства применимы к|
 |accessTypes|[deviceManagementConfigurationSettingAccessTypes](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingaccesstypes.md)|Режим доступа к режиму чтения и записи параметра. Возможные значения: `none`, `add`, `copy`, `delete`, `get`, `replace`, `execute`.|
-|keywords|Коллекция строк|Маркеры для поиска параметров на|
-|infoUrls|Коллекция строк|Список ссылок, дополнительные сведения о параметре можно найти по адресу|
+|keywords|Коллекция String|Маркеры для поиска параметров на|
+|infoUrls|Коллекция String|Список ссылок, дополнительные сведения о параметре можно найти по адресу|
 |возникновение|[deviceManagementConfigurationSettingOccurrence](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingoccurrence.md)|Указывает, требуется ли параметр или нет.|
-|baseUri|String|Базовый путь CSP|
-|offsetUri|String|Смещение пути CSP из базы|
-|rootDefinitionId|String|Определение корневого параметра, если это параметр ребенка.|
+|baseUri|Строка|Базовый путь CSP|
+|offsetUri|Строка|Смещение пути CSP из базы|
+|rootDefinitionId|Строка|Определение корневого параметра, если это параметр ребенка.|
 |categoryId|String|Указывает группу области, в которой параметр настроен в указанном поставщике служб конфигурации (CSP)|
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Параметр типа, например конфигурации и соответствия требованиям. Возможные значения: `none`, `configuration`, `compliance`.|
 |uxBehavior|[deviceManagementConfigurationControlType](../resources/intune-deviceconfigv2-devicemanagementconfigurationcontroltype.md)|Настройка представления типа управления в UX. Возможные значения: `default`, `dropdown`, `smallTextBox`, `largeTextBox`, `toggle`, `multiheaderGrid`, `contextPane`.|
@@ -49,7 +49,7 @@ ms.locfileid: "60691556"
 |referredSettingInformationList|[коллекция deviceManagementConfigurationReferredSettingInformation](../resources/intune-deviceconfigv2-devicemanagementconfigurationreferredsettinginformation.md)|Список переданных сведений о параметрах.|
 |id|String|Идентификатор элемента|
 |description|String|Описание элемента|
-|helpText|String|Справка текста элемента|
+|helpText|Строка|Справка текста элемента|
 |name|String|Имя элемента|
 |displayName|String|Отображение имени элемента|
 |version|String|Версия элемента|
@@ -108,6 +108,7 @@ ms.locfileid: "60691556"
   "version": "String"
 }
 ```
+
 
 
 

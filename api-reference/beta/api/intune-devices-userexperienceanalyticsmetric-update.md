@@ -2,15 +2,15 @@
 title: Обновление userExperienceAnalyticsMetric
 description: Обновление свойств объекта userExperienceAnalyticsMetric.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a72523528dabd899d37637cfc81ddaa6eb0a52d6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b39028a407b7cabaceb9b9b14fdbf9fda65f6c4c
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59070448"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341714"
 ---
 # <a name="update-userexperienceanalyticsmetric"></a>Обновление userExperienceAnalyticsMetric
 
@@ -27,9 +27,9 @@ ms.locfileid: "59070448"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -47,7 +47,7 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -58,7 +58,7 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Уникальный идентификатор метрики аналитики пользовательских интерфейсов.|
-|значение|Двойное с плавающей точкой|Значение метрики аналитики пользовательских интерфейсов.|
+|значение|Double|Значение метрики аналитики пользовательских интерфейсов.|
 |unit|Строка|Единица метрики аналитики пользовательского опыта.|
 
 
@@ -96,6 +96,7 @@ Content-Length: 177
   "unit": "Unit value"
 }
 ```
+
 
 
 

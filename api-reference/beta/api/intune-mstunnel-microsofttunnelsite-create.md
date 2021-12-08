@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c59f9d75ad1b751e52dd1c4a5b1369a336f41be
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 8db705b90d16bf46d03d94c0ba3d405b792ee87b
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60486483"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341971"
 ---
 # <a name="create-microsofttunnelsite"></a>Создание microsoftTunnelSite
 
@@ -29,7 +29,7 @@ ms.locfileid: "60486483"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,15 +55,15 @@ POST /deviceManagement/microsoftTunnelSites
 |:---|:---|:---|
 |id|String|Id MicrosoftTunnelSite|
 |displayName|String|Имя отображения MicrosoftTunnelSite|
-|description|String|Описание MicrosoftTunnelSite|
-|publicAddress|String|Имя или IP-адрес общественного домена MicrosoftTunnelSite|
+|description|Строка|Описание MicrosoftTunnelSite|
+|publicAddress|Строка|Имя или IP-адрес общественного домена MicrosoftTunnelSite|
 |upgradeWindowUtcOffsetInMinutes|Int32|Зона времени сайта, представленная в качестве минутного смещения от UTC|
 |upgradeWindowStartTime|TimeOfDay|Время запуска окна обновления сайта|
 |upgradeWindowEndTime|TimeOfDay|Время окончания дня окна обновления сайта|
-|upgradeAutomatically|Логический|Параметр автоматического обновления сайта. True для автоматических обновлений, false для ручного управления|
-|upgradeAvailable|Логический|True, если доступно обновление|
+|upgradeAutomatically|Boolean|Параметр автоматического обновления сайта. True для автоматических обновлений, false для ручного управления|
+|upgradeAvailable|Boolean|True, если доступно обновление|
 |internalNetworkProbeUrl|String|URL-адрес зонда внутреннего доступа к сети MicrosoftTunnelSite|
-|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity.|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
 
 
 
@@ -120,6 +120,7 @@ Content-Length: 573
   ]
 }
 ```
+
 
 
 

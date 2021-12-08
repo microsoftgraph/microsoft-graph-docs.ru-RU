@@ -2,15 +2,15 @@
 title: Создание userExperienceAnalyticsImpactingProcess
 description: Создание нового объекта userExperienceAnalyticsImpactingProcess.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0da159a410d7b550b535ec23875464edc557ee8f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b4e90c4656171ce0a58a957923188a1df49d9dd5
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59124919"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61335833"
 ---
 # <a name="create-userexperienceanalyticsimpactingprocess"></a>Создание userExperienceAnalyticsImpactingProcess
 
@@ -27,9 +27,9 @@ ms.locfileid: "59124919"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsImpactingProcess
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,9 +57,9 @@ POST /deviceManagement/userExperienceAnalyticsImpactingProcess
 |deviceId|String|Уникальный идентификатор влияемого устройства.|
 |category|String|Категория воздействия процесса.|
 |processName|String|Имя процесса.|
-|description|String|Описание процесса.|
+|description|Строка|Описание процесса.|
 |publisher|String|Издатель процесса.|
-|impactValue|Двойное с плавающей точкой|Значение влияния процесса. Допустимые значения от 0 до 1.79769313486232E+308|
+|impactValue|Double|Значение влияния процесса. Допустимые значения от 0 до 1.79769313486232E+308|
 
 
 
@@ -104,6 +104,7 @@ Content-Length: 349
   "impactValue": 3.6666666666666665
 }
 ```
+
 
 
 

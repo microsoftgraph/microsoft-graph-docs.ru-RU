@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8a2afa3243cc19b016430e2b9960f6aecc349cdf
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: c9f2ca823aff535ff0bcdb7323f61c08f81cc4e3
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60691542"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338479"
 ---
 # <a name="androidmanagedstoreappassignmentsettings-resource-type"></a>тип ресурса androidManagedStoreAssignmentSettings
 
@@ -28,7 +28,7 @@ ms.locfileid: "60691542"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|AndroidManagedStoreAppTrackIds|Коллекция строк|ID дорожки, чтобы включить для этого назначения приложения.|
+|AndroidManagedStoreAppTrackIds|Коллекция String|ID дорожки, чтобы включить для этого назначения приложения.|
 |autoUpdateMode|[AndroidManagedStoreAutoUpdateMode](../resources/intune-shared-androidmanagedstoreautoupdatemode.md)|Приоритизация автоматических обновлений для этого назначения приложения. Возможные значения: `default`, `postponed`, `priority`, `unknownFutureValue`.|
 
 ## <a name="relationships"></a>Связи
@@ -50,6 +50,7 @@ ms.locfileid: "60691542"
   "autoUpdateMode": "String"
 }
 ```
+
 
 
 

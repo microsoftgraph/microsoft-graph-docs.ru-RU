@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4119e49ce5fe85be5fd3c8880210f39e23b07225
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 8a4f5217bb90a0abd58b6f9175265ef8fd421922
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60693918"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342337"
 ---
 # <a name="cancelmyrequest-action"></a>cancelMyRequest action
 
@@ -27,9 +27,9 @@ ms.locfileid: "60693918"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementRBAC.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementRBAC.Read.All|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementRBAC.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +53,7 @@ POST /deviceManagement/operationApprovalRequests/cancelMyRequest
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Пока не задокументировано.|
+|id|Строка|Пока не задокументировано.|
 
 
 
@@ -80,6 +80,7 @@ Content-length: 24
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

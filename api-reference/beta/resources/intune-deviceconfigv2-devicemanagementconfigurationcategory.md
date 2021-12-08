@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 797474c152c0f791f4101769b8a955e45b520c31
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 2476d6b9c6fb4ea950048c9cad5a3904c5d1f0b5
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688446"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336631"
 ---
 # <a name="devicemanagementconfigurationcategory-resource-type"></a>тип ресурса deviceManagementConfigurationCategory
 
@@ -36,16 +36,16 @@ ms.locfileid: "60688446"
 |:---|:---|:---|
 |id|String|Идентификатор элемента|
 |description|String|Описание элемента|
-|categoryDescription|String|Описание загона категории|
-|helpText|String|Справка текста элемента|
+|categoryDescription|Строка|Описание загона категории|
+|helpText|Строка|Справка текста элемента|
 |name|String|Имя элемента|
-|displayName|String|Отображение имени элемента|
+|displayName|Строка|Отображение имени элемента|
 |платформы|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Типы платформ, которые имеются в этой категории. Возможные значения: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`.|
 |технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Типы технологий, которые имеют параметры в категории. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`, `linuxMdm`, `unknownFutureValue`.|
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Указывает, что категория содержит параметры, используемые для соответствия требованиям или конфигурации. Возможные значения: `none`, `configuration`, `compliance`.|
-|parentCategoryId|String|Родительский id категории.|
+|parentCategoryId|Строка|Родительский id категории.|
 |rootCategoryId|String|Корневой id категории.|
-|childCategoryIds|Коллекция строк|Список детских ids этой категории.|
+|childCategoryIds|Коллекция String|Список детских ids этой категории.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -77,6 +77,7 @@ ms.locfileid: "60688446"
   ]
 }
 ```
+
 
 
 

@@ -2,15 +2,15 @@
 title: Обновление userExperienceAnalyticsRemoteConnection
 description: Обновление свойств объекта userExperienceAnalyticsRemoteConnection.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dddd0f331ce75738fcaee1e0c229e39fbb895771
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 348ac248fcee12ef0fbfb8ac5c763f8af5e1e19e
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142112"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342008"
 ---
 # <a name="update-userexperienceanalyticsremoteconnection"></a>Обновление userExperienceAnalyticsRemoteConnection
 
@@ -27,9 +27,9 @@ ms.locfileid: "59142112"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsRemoteConnection/{userExperienceA
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,15 +57,15 @@ PATCH /deviceManagement/userExperienceAnalyticsRemoteConnection/{userExperienceA
 |deviceId|String|ID устройства.|
 |deviceName|String|Имя устройства.|
 |model|String|Модель устройства аналитики пользовательских интерфейсов.|
-|virtualNetwork|String|Виртуальная сеть аналитики пользовательских интерфейсов.|
+|virtualNetwork|Строка|Виртуальная сеть аналитики пользовательских интерфейсов.|
 |manufacturer|String|Производитель аналитики пользовательских интерфейсов.|
 |deviceCount|Int32|Количество удаленных подключений. Допустимые значения от 0 до 2147483647|
-|cloudPcRoundTripTime|Двойное с плавающей точкой|Время круговой оконечности устройства облачного ПК. Допустимые значения от 0 до 1.79769313486232E+308|
-|cloudPcSignInTime|Двойное с плавающей точкой|Вход во время устройства облачного ПК. Допустимые значения от 0 до 1.79769313486232E+308|
-|remoteSignInTime|Двойное с плавающей точкой|Удаленный вход во время устройства облачного ПК. Допустимые значения от 0 до 1.79769313486232E+308|
-|coreBootTime|Двойное с плавающей точкой|Основное время загрузки устройства облачного ПК. Допустимые значения от 0 до 1.79769313486232E+308|
-|coreSignInTime|Двойное с плавающей точкой|Основной знак во время устройства облачного ПК. Допустимые значения от 0 до 1.79769313486232E+308|
-|cloudPcFailurePercentage|Двойное с плавающей точкой|Вход в процент отказа облачного устройства PC. Допустимые значения: от 0 до 100|
+|cloudPcRoundTripTime|Double|Время круговой оконечности устройства облачного ПК. Допустимые значения от 0 до 1.79769313486232E+308|
+|cloudPcSignInTime|Double|Вход во время устройства облачного ПК. Допустимые значения от 0 до 1.79769313486232E+308|
+|remoteSignInTime|Double|Удаленный вход во время устройства облачного ПК. Допустимые значения от 0 до 1.79769313486232E+308|
+|coreBootTime|Double|Основное время загрузки устройства облачного ПК. Допустимые значения от 0 до 1.79769313486232E+308|
+|coreSignInTime|Double|Основной знак во время устройства облачного ПК. Допустимые значения от 0 до 1.79769313486232E+308|
+|cloudPcFailurePercentage|Double|Вход в процент отказа облачного устройства PC. Допустимые значения: от 0 до 100|
 |userPrincipalName|String|Пользователь с опытом аналитики userPrincipalName.|
 
 
@@ -125,6 +125,7 @@ Content-Length: 622
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

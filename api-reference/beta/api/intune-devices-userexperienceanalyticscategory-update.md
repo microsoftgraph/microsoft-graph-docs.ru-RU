@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b14b99cb84909eb563671e6ee3e1757db35c2cc
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: b7ec1fef36274e3916fcbdfe7d310789f71dc429
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60691647"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61335952"
 ---
 # <a name="update-userexperienceanalyticscategory"></a>Обновление userExperienceAnalyticsCategory
 
@@ -27,9 +27,9 @@ ms.locfileid: "60691647"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -61,7 +61,7 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор категории аналитики пользовательских интерфейсов.|
+|id|Строка|Уникальный идентификатор категории аналитики пользовательских интерфейсов.|
 |overallScore|Int32|Общая оценка категории аналитики пользовательских интерфейсов.|
 |totalDevices|Int32|Общее число устройств категории аналитики пользовательских интерфейсов.|
 |insights|[коллекция userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md)|Сведения о категории аналитики пользовательских интерфейсов.|
@@ -132,6 +132,7 @@ Content-Length: 625
   "state": "insufficientData"
 }
 ```
+
 
 
 

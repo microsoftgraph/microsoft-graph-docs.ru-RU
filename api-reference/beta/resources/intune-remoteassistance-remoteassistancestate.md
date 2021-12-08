@@ -2,15 +2,15 @@
 title: тип enum remoteAssistanceState
 description: Состояние удаленной помощи для учетной записи
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ee67be86f9b3144ba8a002814637939f4fe7bdc4
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5bcc2489d3504ad8e9f05c16c3b206f69fc5fe0c
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59039478"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338003"
 ---
 # <a name="remoteassistancestate-enum-type"></a>тип enum remoteAssistanceState
 
@@ -25,9 +25,9 @@ ms.locfileid: "59039478"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|0|Удаленная помощь не настроена для учетной записи. С этим значением предоставляются Быстрая поддержка функции удаленной помощи.|
 |отключено|1|Удаленная помощь отключена для учетной записи. С этим значением Быстрая поддержка сеансы удаленной помощи для учетной записи запрещены.|
 |включено|2|Для учетной записи включена удаленная помощь. С этим значением Быстрая поддержка возможности удаленной помощи.|
+
 
 
 

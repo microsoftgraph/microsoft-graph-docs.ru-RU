@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 376334679269bcfe34bf79af9925a886071023bb
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 7ed03526f01e73b30a8a199a6edc6bb5e5f8ef10
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60487977"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341084"
 ---
 # <a name="create-microsofttunnelserverlogcollectionresponse"></a>Создание microsoftTunnelServerLogCollectionResponse
 
@@ -29,7 +29,7 @@ ms.locfileid: "60487977"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,12 +53,12 @@ POST /deviceManagement/microsoftTunnelServerLogCollectionResponses
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный ID объекта|
+|id|Строка|Уникальный ID объекта|
 |status|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|Состояние коллекции журналов. Возможные значения: `pending`, `completed`, `failed`.|
 |startDateTime|DateTimeOffset|Время начала собранных журналов |
 |endDateTime|DateTimeOffset|Время окончания собранных журналов|
 |sizeInBytes|Int64|Размер журналов в bytes|
-|serverId|String|ID сервера, на который запрашивается коллекция журналов|
+|serverId|Строка|ID сервера, на который запрашивается коллекция журналов|
 |requestDateTime|DateTimeOffset|Время запроса коллекции журналов|
 |expiryDateTime|DateTimeOffset|Время истечения срока действия коллекции журналов|
 
@@ -107,6 +107,7 @@ Content-Length: 444
   "expiryDateTime": "2017-01-01T00:03:32.5199332-08:00"
 }
 ```
+
 
 
 

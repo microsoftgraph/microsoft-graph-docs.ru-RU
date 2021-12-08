@@ -2,15 +2,15 @@
 title: тип ресурса chromeOSOnboardingSettings
 description: Объект, представляю который представляет параметры клиента Chromebook
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e551a751ea5498d65d21974de6e7712e6a56ea11
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 76310cd79a16302c94e9bd2d0c407e82b197683c
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59081488"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336967"
 ---
 # <a name="chromeosonboardingsettings-resource-type"></a>тип ресурса chromeOSOnboardingSettings
 
@@ -31,13 +31,14 @@ ms.locfileid: "59081488"
 |[Удаление chromeOSOnboardingSettings](../api/intune-chromebooksync-chromeosonboardingsettings-delete.md)|Нет|Удаляет [chromeOSOnboardingSettings](../resources/intune-chromebooksync-chromeosonboardingsettings.md).|
 |[Обновление chromeOSOnboardingSettings](../api/intune-chromebooksync-chromeosonboardingsettings-update.md)|[chromeOSOnboardingSettings](../resources/intune-chromebooksync-chromeosonboardingsettings.md)|Обновление свойств объекта [chromeOSOnboardingSettings.](../resources/intune-chromebooksync-chromeosonboardingsettings.md)|
 |[подключение действия](../api/intune-chromebooksync-chromeosonboardingsettings-connect.md)|[chromeOSOnboardingStatus](../resources/intune-chromebooksync-chromeosonboardingstatus.md)|Н/Д|
+|[Действие disconnect](../api/intune-chromebooksync-chromeosonboardingsettings-disconnect.md)|[chromeOSOnboardingStatus](../resources/intune-chromebooksync-chromeosonboardingstatus.md)|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Id ChromebookTenant|
 |ownerUserPrincipalName|String|OwnerUserPrincipalName ChromebookTenant|
-|onboardingStatus|[onboardingStatus](../resources/intune-chromebooksync-onboardingstatus.md)|OnboardingStatus ChromebookTenant. Возможные значения: `unknown`, `inprogress`, `onboarded`, `failed`.|
+|onboardingStatus|[onboardingStatus](../resources/intune-chromebooksync-onboardingstatus.md)|OnboardingStatus ChromebookTenant. Возможные значения: `unknown`, `inprogress`, `onboarded`, `failed`, `offboarding`, `unknownFutureValue`.|
 |lastModifiedDateTime|DateTimeOffset|LastModifiedDateTime ChromebookTenant|
 |lastDirectorySyncDateTime|DateTimeOffset|LastDirectorySyncDateTime в ChromebookTenant|
 
@@ -62,6 +63,7 @@ ms.locfileid: "59081488"
   "lastDirectorySyncDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

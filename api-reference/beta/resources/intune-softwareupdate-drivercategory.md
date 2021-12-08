@@ -2,15 +2,15 @@
 title: тип enum driverCategory
 description: Тип переумыка для представления категории, к которой принадлежит драйвер.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 72cedb3d907ab2d868f3fa5f03b711df0edc8055
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9ec858c9f56896ee07fe17ecbbb6890c0d4a8185
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029963"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334545"
 ---
 # <a name="drivercategory-enum-type"></a>тип enum driverCategory
 
@@ -28,6 +28,7 @@ ms.locfileid: "59029963"
 |Рекомендуемый|0|Это означает, что драйвер рекомендуется Корпорацией Майкрософт.|
 |previouslyApproved|1|Это означает, что драйвер был рекомендован Корпорацией Майкрософт, и ИТ-администратор принял некоторые действия по утверждению.|
 |другие|2|Это означает, что драйвер никогда не рекомендуется Корпорацией Майкрософт.|
+
 
 
 

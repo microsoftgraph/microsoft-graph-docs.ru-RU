@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f07557fca9034636b0fc74f1a9fba4c38445e3ae
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 3a89796ed0539b7f40b81307dfabed3ff2dfcc10
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696632"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339880"
 ---
 # <a name="windows10vpnconnectiontype-enum-type"></a>тип enum windows10VpnConnectionType
 
@@ -29,7 +29,7 @@ ms.locfileid: "60696632"
 |f5EdgeClient|1|Клиент F5 Edge.|
 |dellSonicWallMobileConnect|2|Мобильное подключение Dell SonicWALL.|
 |checkPointCapsuleVpn|3|Check Point Capsule VPN.|
-|Автоматически|4 |Автоматически.|
+|Автоматически|4|Автоматически.|
 |ikEv2|5|IKEv2.|
 |l2tp|6 |L2TP.|
 |pptp|7 |PPTP.|
@@ -38,6 +38,7 @@ ms.locfileid: "60696632"
 |ciscoAnyConnect|10 |Cisco AnyConnect|
 |unknownFutureValue|11|Член Sentinel для случаев, когда клиент не может обрабатывать новые значения в переуме.|
 |microsoftTunnel|12 |Microsoft Tunnel типа подключения|
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1cf5fb48e676057cfcdf35dbe939ac7759460072
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 6ecb7dc37f81804c04851c54eb9e7d3d07add883
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60689342"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339936"
 ---
 # <a name="update-userexperienceanalyticsbatteryhealthappimpact"></a>Обновление userExperienceAnalyticsBatteryHealthAppImpact
 
@@ -27,9 +27,9 @@ ms.locfileid: "60689342"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -58,7 +58,7 @@ PATCH /deviceManagement/userExperienceAnalyticsBatteryHealthAppImpact/{userExper
 |appName|String|Имя приложения. Например: oltk.exe|
 |appDisplayName|String|Удобное для пользователя имя отображения приложения. Например: Outlook|
 |appPublisher|String|Издатель приложения. Например: корпорация Майкрософт|
-|isForegroundApp|Логический|верно, если у пользователя было активное взаимодействие с приложением.|
+|isForegroundApp|Boolean|верно, если у пользователя было активное взаимодействие с приложением.|
 |batteryUsagePercentage|Double|Процент общей мощности батареи, используемой этим приложением, когда устройство не подключено к мощности переменного тока, в течение 14 дней вычисляется на всех устройствах в клиенте. Единица в процентах. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
 
 
@@ -104,6 +104,7 @@ Content-Length: 357
   "batteryUsagePercentage": 7.333333333333333
 }
 ```
+
 
 
 

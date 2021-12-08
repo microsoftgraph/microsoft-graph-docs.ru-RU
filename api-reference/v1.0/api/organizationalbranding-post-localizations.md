@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 59df189572ed494b4d5cf7e17185edd988c61b98
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: 89f7e61ab47903b37d15a6620a90ebc098abfe2b
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59996966"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340678"
 ---
 # <a name="create-organizationalbrandinglocalization"></a>Создание organizationalBrandingLocalization
 Пространство имен: microsoft.graph
@@ -41,16 +41,16 @@ POST /organization/{organizationId}/branding/localizations
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В следующей таблице показаны свойства, необходимые при создании объекта [organizationalBrandingLocalization.](../resources/organizationalbrandinglocalization.md)
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| id | Строка | Идентификатор, который представляет локальный код, указанный в стандарте ISO 639-1, например `en-US` английский. Вы не можете создать брендинг по умолчанию, задав значение **id** типам String `0` или `default` .  <br/><br/>**ПРИМЕЧАНИЕ:** Несколько фирменных окей для одного локального уровня в настоящее время не поддерживаются. |
+| id | String | Идентификатор, который представляет локальный код, указанный в стандарте ISO 639-1, например `en-US` английский. Вы не можете создать брендинг по умолчанию, задав значение **id** типам String `0` или `default` .  <br/><br/>**ПРИМЕЧАНИЕ:** Несколько фирменных окей для одного локального уровня в настоящее время не поддерживаются. |
 
 ## <a name="response"></a>Отклик
 
@@ -70,7 +70,7 @@ POST /organization/{organizationId}/branding/localizations
   "blockType": "request",
   "name": "create_organizationalbrandinglocalization"
 }-->
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations
 Content-Type: application/json
 

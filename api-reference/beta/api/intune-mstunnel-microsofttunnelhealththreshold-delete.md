@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9879a912a116d8a2c6ea03a310e95be4dd1fd272
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: e2c6f0432a6170b05376b198c6eb5dfa3f3d0983
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60487809"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61335084"
 ---
 # <a name="delete-microsofttunnelhealththreshold"></a>Удаление microsoftTunnelHealthThreshold
 
@@ -29,7 +29,7 @@ ms.locfileid: "60487809"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -65,6 +65,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelHealthTh
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

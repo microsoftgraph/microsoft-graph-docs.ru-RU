@@ -2,15 +2,15 @@
 title: Получить windowsDriverUpdateProfile
 description: Чтение свойств и связей объекта WindowsDriverUpdateProfile.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a54318f9ed226bd118adeb0bbe536257810af745
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3e5146251417cabcb2bc5c11ccbe4e07e6f009da
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138493"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334293"
 ---
 # <a name="get-windowsdriverupdateprofile"></a>Получить windowsDriverUpdateProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "59138493"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ GET /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -88,6 +88,7 @@ Content-Length: 539
   }
 }
 ```
+
 
 
 

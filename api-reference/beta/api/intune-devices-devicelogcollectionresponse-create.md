@@ -2,15 +2,15 @@
 title: Создание deviceLogCollectionResponse
 description: Создайте новый объект deviceLogCollectionResponse.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bdde6664335c7449a60200b89d966a7f97094f6b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0db5b1e5665f962bc4ef7f42d5b52a3ef287df0b
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59065493"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61335112"
 ---
 # <a name="create-devicelogcollectionresponse"></a>Создание deviceLogCollectionResponse
 
@@ -27,9 +27,9 @@ ms.locfileid: "59065493"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -61,7 +61,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |receivedDateTimeUTC|DateTimeOffset|DateTime, в который был получен запрос|
 |initiatedByUserPrincipalName|String|UpN для тех, кто инициировал запрос|
 |expirationDateTimeUTC|DateTimeOffset|DateTime истечения срока действия журналов|
-|size|Двойное с плавающей точкой|Размер журналов. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|size|Double|Размер журналов. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
 
 
 
@@ -110,6 +110,7 @@ Content-Length: 528
   "size": 1.3333333333333333
 }
 ```
+
 
 
 

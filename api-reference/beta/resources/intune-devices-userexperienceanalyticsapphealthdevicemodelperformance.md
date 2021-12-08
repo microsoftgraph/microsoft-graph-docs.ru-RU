@@ -2,15 +2,15 @@
 title: тип ресурса userExperienceAnalyticsAppHealthDeviceModelPerformance
 description: Объект производительности модели модели пользовательского интерфейса содержит сведения о производительности модели устройства.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 71d8815d699af333a67ba0487138aa6052a72c07
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7cbeff4c4b89259edb0bfa4aa149156aba60434e
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59081047"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339614"
 ---
 # <a name="userexperienceanalyticsapphealthdevicemodelperformance-resource-type"></a>тип ресурса userExperienceAnalyticsAppHealthDeviceModelPerformance
 
@@ -36,11 +36,12 @@ ms.locfileid: "59081047"
 |:---|:---|:---|
 |id|String|Уникальный идентификатор объекта производительности модели пользовательского интерфейса для аналитики устройств.|
 |deviceModel|String|Имя модели устройства.|
-|deviceManufacturer|String|Имя производителя устройства.|
+|deviceManufacturer|Строка|Имя производителя устройства.|
 |activeDeviceCount|Int32|Количество активных устройств для модели. Допустимые значения 2147483648 2147483647|
 |meanTimeToFailureInMinutes|Int32|Время сбоя для устройства модели в минутах. Допустимые значения 2147483648 2147483647|
-|modelAppHealthScore|Двойное с плавающей точкой|Оценка состояния здоровья приложения модели устройства. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
-|modelAppHealthStatus|String|Общее состояние состояния здоровья приложения модели устройства.|
+|modelAppHealthScore|Double|Оценка состояния здоровья приложения модели устройства. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|modelAppHealthStatus|Строка|Общее состояние состояния здоровья приложения модели устройства.|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Состояние состояния модели аналитики пользовательских интерфейсов. Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -62,9 +63,11 @@ ms.locfileid: "59081047"
   "activeDeviceCount": 1024,
   "meanTimeToFailureInMinutes": 1024,
   "modelAppHealthScore": "4.2",
-  "modelAppHealthStatus": "String"
+  "modelAppHealthStatus": "String",
+  "healthStatus": "String"
 }
 ```
+
 
 
 

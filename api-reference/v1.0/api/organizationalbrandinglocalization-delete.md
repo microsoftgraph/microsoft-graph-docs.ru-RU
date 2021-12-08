@@ -1,18 +1,18 @@
 ---
-title: Удаление организационнойbrandingLocalization
+title: Удаление organizationalBrandingLocalization
 description: Удаляет объект organizationalBrandingLocalization.
 author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d0881fdc9d0559b38bf42d6c3c4686b5c1e13bc9
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: 30c330163d61471931866cd4227e052c0fe6fd24
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59995810"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340748"
 ---
-# <a name="delete-organizationalbrandinglocalization"></a>Удаление организационнойbrandingLocalization
+# <a name="delete-organizationalbrandinglocalization"></a>Удаление organizationalBrandingLocalization
 Пространство имен: microsoft.graph
 
 Удаление объекта локализованного брендинга. Чтобы удалить [объект organizationalBrandingLocalization,](../resources/organizationalbrandinglocalization.md) все изображения (типы потока) сначала должны быть удалены из объекта.
@@ -39,7 +39,7 @@ DELETE /organization/{organizationId}/branding/localizations/{organizationalBran
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -61,7 +61,7 @@ DELETE /organization/{organizationId}/branding/localizations/{organizationalBran
   "name": "delete_organizationalbrandinglocalization"
 }-->
 
-```http
+```msgraph-interactive
 DELETE https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr-FR
 ```
 # <a name="c"></a>[C#](#tab/csharp)

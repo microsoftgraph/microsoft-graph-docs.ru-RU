@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e2a94f510fe550bf7409f2f5e65512fb5bdd19ed
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 51c4158b46f4fb3cc9a3f90fb01817d019ec2105
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60697492"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61335098"
 ---
 # <a name="update-userexperienceanalyticsbatteryhealthruntimedetails"></a>Обновление userExperienceAnalyticsBatteryHealthRuntimeDetails
 
@@ -27,9 +27,9 @@ ms.locfileid: "60697492"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +53,7 @@ PATCH /deviceManagement/userExperienceAnalyticsBatteryHealthRuntimeDetails
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта для аналитики пользовательского интерфейса для запуска заряда батареи.|
+|id|Строка|Уникальный идентификатор объекта для аналитики пользовательского интерфейса для запуска заряда батареи.|
 |activeDevices|Int32|Количество активных устройств в клиенте. Допустимые значения 2147483648 2147483647|
 |batteryRuntimeGood|Int32|Количество устройств, время активного запуска которых превышает 5 часов. Допустимые значения 2147483648 2147483647|
 |batteryRuntimeFair|Int32|Количество устройств, время активного запуска которых превышает 3 часа, но меньше 5 часов. Допустимые значения 2147483648 2147483647|
@@ -98,6 +98,7 @@ Content-Length: 249
   "batteryRuntimePoor": 2
 }
 ```
+
 
 
 

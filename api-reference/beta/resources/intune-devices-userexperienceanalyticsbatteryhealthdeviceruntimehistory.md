@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: db4d43edf29e295a2fcae26b03f2dcfad83fde70
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 46c88e9bccacade261ca1dbe8f10e43a3e9b4d68
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695637"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338773"
 ---
 # <a name="userexperienceanalyticsbatteryhealthdeviceruntimehistory-resource-type"></a>тип ресурса userExperienceAnalyticsBatteryHealthDeviceRuntimeHistory
 
@@ -36,7 +36,7 @@ ms.locfileid: "60695637"
 |:---|:---|:---|
 |id|String|Уникальный идентификатор объекта для аналитики пользовательского интерфейса для запуска заряда батареи.|
 |deviceId|String|Уникальный идентификатор устройства, идентификатор устройства Intune DeviceID или SCCM.|
-|runtimeDateTime|String|Время даты для экземпляра истории запуска.|
+|runtimeDateTime|Строка|Время даты для экземпляра истории запуска.|
 |estimatedRuntimeInMinutes|Int32|Предполагаемое время работы устройства при полной зарядке батареи. Единица в минутах. Допустимые значения 2147483648 2147483647|
 
 ## <a name="relationships"></a>Связи
@@ -59,6 +59,7 @@ ms.locfileid: "60695637"
   "estimatedRuntimeInMinutes": 1024
 }
 ```
+
 
 
 

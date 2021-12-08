@@ -2,15 +2,15 @@
 title: Обновление windowsProtectionState
 description: Обновление свойств объекта WindowsProtectionState.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 92174fd5788a424ceaab08815d143ae229ef7e5e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: db2a4ff79635563d383ef4ffcbf797499a13adcb
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59024546"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341994"
 ---
 # <a name="update-windowsprotectionstate"></a>Обновление windowsProtectionState
 
@@ -27,9 +27,9 @@ ms.locfileid: "59024546"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -63,12 +63,12 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |signatureUpdateOverdue|Boolean|Подпись устарела или нет?|
 |rebootRequired|Boolean|Перезагрузка требуется или нет?|
 |fullScanRequired|Boolean|Полное сканирование требуется или нет?|
-|engineVersion|String|Версия двигателя защиты конечной точки|
+|engineVersion|Строка|Версия двигателя защиты конечной точки|
 |signatureVersion|String|Текущая версия определений вредоносных программ|
-|antiMalwareVersion|String|Текущая версия антивирусных программ|
+|antiMalwareVersion|Строка|Текущая версия антивирусных программ|
 |lastQuickScanDateTime|DateTimeOffset|Дата последнего быстрого сканирования|
 |lastFullScanDateTime|DateTimeOffset|Дата последнего быстрого сканирования|
-|lastQuickScanSignatureVersion|String|Последняя версия подписи быстрого сканирования|
+|lastQuickScanSignatureVersion|Строка|Последняя версия подписи быстрого сканирования|
 |lastFullScanSignatureVersion|String|Последняя версия подписи полного сканирования|
 |lastReportedDateTime|DateTimeOffset|Время последнего состояния состояния устройства|
 |productStatus|[windowsDefenderProductStatus](../resources/intune-devices-windowsdefenderproductstatus.md)|Состояние продукта антивирусная программа . Возможные значения: `noStatus` `serviceNotRunning` , `serviceStartedWithoutMalwareProtection` `pendingFullScanDueToThreatAction` `pendingRebootDueToThreatAction` `pendingManualStepsDueToThreatAction` `avSignaturesOutOfDate` `asSignaturesOutOfDate` `noQuickScanHappenedForSpecifiedPeriod` `noFullScanHappenedForSpecifiedPeriod` `systemInitiatedScanInProgress` `systemInitiatedCleanInProgress` `samplesPendingSubmission` `productRunningInEvaluationMode` `productRunningInNonGenuineMode` `productExpired` `offlineScanRequired` `serviceShutdownAsPartOfSystemShutdown` `threatRemediationFailedCritically` `threatRemediationFailedNonCritically` `noStatusFlagsSet` `platformOutOfDate` `platformUpdateInProgress` `platformAboutToBeOutdated` `signatureOrPlatformEndOfLifeIsPastOrIsImpending` . `windowsSModeSignaturesInUseOnNonWin10SInstall`|
@@ -77,7 +77,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект WindowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
@@ -146,6 +146,7 @@ Content-Length: 1020
   "tamperProtectionEnabled": true
 }
 ```
+
 
 
 

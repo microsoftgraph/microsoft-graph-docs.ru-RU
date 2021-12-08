@@ -1,21 +1,21 @@
 ---
-title: Запросить различия между Azure Active Directory (Azure AD) Graph и Microsoft Graph
+title: Запросить различия между Azure AD Graph Microsoft Graph
 description: Описывает, как Graph Microsoft отличаются от Azure Active Directory (Azure AD) Graph, что помогает перенести приложения в более новую службу..
 author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 2b253ee68cd0de691d173ebdeefadbe084c5dbc0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dc11e79faf3d2e1e0cc614fe9044eea7e41bb9a5
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59078562"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61344451"
 ---
-# <a name="request-differences-between-azure-active-directory-azure-ad-graph-and-microsoft-graph"></a>Запросить различия между Azure Active Directory (Azure AD) Graph и Microsoft Graph
+# <a name="request-differences-between-azure-ad-graph-and-microsoft-graph"></a>Запросить различия между Azure AD Graph Microsoft Graph
 
 Эта статья является *частью шага 1: просмотрите различия API* процесса переноса [приложений.](migrate-azure-ad-graph-planning-checklist.md)
 
-Microsoft Graph и API Azure AD Graph API являются API REST, и каждый из них поддерживает соглашения ODATA для параметров запросов. Однако синтаксис различается между этими двумя API.
+Microsoft Graph и Azure Active Directory (Azure AD) Graph API являются API REST, и каждый из них поддерживает соглашения OData для параметров запросов. Однако синтаксис различается между этими двумя API.
 
 Используйте [Graph Explorer,](https://aka.ms/ge) чтобы попробовать эти шаблоны запросов в отношении собственных данных, так как это отличный способ узнать о различиях запросов и ответов.
 
@@ -110,18 +110,18 @@ https://graph.microsoft.com/v1.0/me/?$select=displayName,streetAddress,city,stat
 
 Отношения также определяют членство, например группы, к которой принадлежит пользователь, члены, принадлежащие к группе или роли каталога, и так далее.
 
-Azure AD Graph для `$link` указать отношения между ресурсами.  В microsoft Graph вместо этого используется нотация ODATA 4.01. `$ref`
+Azure AD Graph для `$links` указать отношения между ресурсами.  В microsoft Graph вместо этого используется нотация OData v4.01. `$ref`
 
 В следующей таблице показано несколько примеров:
 
 | Задача | Azure AD Graph | Microsoft Graph |
 |------|----------------|-----------------|
-| Добавление участника        | ```POST /groups/{id}/$link/members```        | ```POST /groups/{id}/members/$ref```        |
-| Ссылки участников списка | ```GET /groups/{id}/$link/members```         | ```GET /groups/{id}/members/$ref```         |
-| Список участников      | ```GET /groups/{id}/members```                | ```GET /groups/{id}/members```               |
-| Удаление участника     | ```DELETE /groups/{id}/$link/members/{id}``` | ```DELETE /groups/{id}/members/{id}/$ref``` |
+| Добавление участника        | `POST /groups/{id}/$links/members`        | `POST /groups/{id}/members/$ref`        |
+| Ссылки участников списка | `GET /groups/{id}/$links/members`         | `GET /groups/{id}/members/$ref`         |
+| Список участников      | `GET /groups/{id}/members`                | `GET /groups/{id}/members`               |
+| Удаление участника     | `DELETE /groups/{id}/$links/members/{id}` | `DELETE /groups/{id}/members/{id}/$ref` |
 
-При переносе приложений в Microsoft Graph искать запросы, которые используются для связывания ресурсов; измените `$link` их, чтобы использовать `$ref` вместо них.
+При переносе приложений в Microsoft Graph искать запросы, которые используются для связывания ресурсов; измените `$links` их, чтобы использовать `$ref` вместо них.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

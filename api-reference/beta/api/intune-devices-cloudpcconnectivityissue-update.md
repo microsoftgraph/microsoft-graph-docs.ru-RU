@@ -2,15 +2,15 @@
 title: Обновление cloudPCConnectivityIssue
 description: Обновление свойств объекта cloudPCConnectivityIssue.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bb557c94ae51cb015a80c0fea10b07997321c7f5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a50748c9a83a1d2349ee8118236a9aa7798c2f50
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59122161"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339824"
 ---
 # <a name="update-cloudpcconnectivityissue"></a>Обновление cloudPCConnectivityIssue
 
@@ -27,9 +27,9 @@ ms.locfileid: "59122161"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/cloudPCConnectivityIssues/{cloudPCConnectivityIssueId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -59,7 +59,7 @@ PATCH /deviceManagement/cloudPCConnectivityIssues/{cloudPCConnectivityIssueId}
 |errorDateTime|DateTimeOffset|Время начала подключения. Время отображается в формате ISO 8601 и времени скоординированного универсального времени (UTC).|
 |userId|String|Уникальный id пользователя, который инициализирует подключение.|
 |errorDescription|String|Подробное описание того, что пошло не так.|
-|recommendedAction|String|Рекомендуемое действие для устранения соответствующей ошибки.|
+|recommendedAction|Строка|Рекомендуемое действие для устранения соответствующей ошибки.|
 
 
 
@@ -104,6 +104,7 @@ Content-Length: 374
   "recommendedAction": "Recommended Action value"
 }
 ```
+
 
 
 

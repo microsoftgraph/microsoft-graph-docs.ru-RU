@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b13fb358801d12538e9aef160c2fba46db21234a
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: d6c43518804c643318bf076ebbd6a5e46e6c0ba8
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60487419"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334006"
 ---
 # <a name="driverapprovalaction-enum-type"></a>тип enum driverApprovalAction
 
@@ -28,6 +28,7 @@ ms.locfileid: "60487419"
 |утверждение|0|Это указывает действие по утверждению одного или списка драйверов.|
 |decline|1|Это указывает действие по утверждению одного или списка драйверов.|
 |приостановка|2|Это указывает на действие по приостановке одного или списка драйверов.|
+
 
 
 

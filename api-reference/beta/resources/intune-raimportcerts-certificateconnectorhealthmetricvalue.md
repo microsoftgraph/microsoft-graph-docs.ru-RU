@@ -2,15 +2,15 @@
 title: тип ресурса certificateConnectorHealthMetricValue
 description: Значение моментального снимка метрики возвращается в ответ на запрос GetHealthMetricTimeSeries.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 47dc4eef94f3ca976ec71883d298fa90612699d0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e6201f79b302378d1452284ed52d14dab4eccc94
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59020310"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341007"
 ---
 # <a name="certificateconnectorhealthmetricvalue-resource-type"></a>тип ресурса certificateConnectorHealthMetricValue
 
@@ -47,6 +47,7 @@ ms.locfileid: "59020310"
   "failureCount": 1024
 }
 ```
+
 
 
 

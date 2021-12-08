@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d5daf586af1f04c27a66b0bdd12abca85291b04d
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 2d00636e9ef2f79202a87647d46b4ff64f10bd78
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696296"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339353"
 ---
 # <a name="update-userexperienceanalyticsbatteryhealthmodelperformance"></a>Обновление userExperienceAnalyticsBatteryHealthModelPerformance
 
@@ -27,9 +27,9 @@ ms.locfileid: "60696296"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +53,7 @@ PATCH /deviceManagement/userExperienceAnalyticsBatteryHealthModelPerformance/{us
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта производительности модели работоспособности модели работоспособности пользовательской аналитики.|
+|id|Строка|Уникальный идентификатор объекта производительности модели работоспособности модели работоспособности пользовательской аналитики.|
 |activeDevices|Int32|Количество активных устройств для этой модели. Допустимые значения 2147483648 2147483647|
 |model|String|Имя модели устройства.|
 |manufacturer|String|Имя производителя устройств.|
@@ -104,6 +104,7 @@ Content-Length: 349
   "averageBatteryAgeInDays": 7
 }
 ```
+
 
 
 

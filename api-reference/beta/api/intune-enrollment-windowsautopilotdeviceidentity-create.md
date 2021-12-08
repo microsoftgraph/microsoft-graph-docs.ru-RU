@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8adac3020fc3e8fd455c476db36c300c701c91cd
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: b6b7a86701c95bfdfbec6046c7985a5519a735ca
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695911"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340342"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>Создание объекта windowsAutopilotDeviceIdentity
 
@@ -29,7 +29,7 @@ ms.locfileid: "60695911"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -66,13 +66,13 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |model|String|Имя модели устройства Windows автопилота.|
 |enrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Состояние регистрации intune устройства Windows автопилота. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |lastContactedDateTime|DateTimeOffset|Intune Last Contacted Date Time of the Windows автопилота.|
-|addressableUserName|String|Адресное имя пользователя.|
+|addressableUserName|Строка|Адресное имя пользователя.|
 |userPrincipalName|String|Имя главного пользователя.|
 |resourceName|String|Имя ресурса.|
-|skuNumber|String|Номер SKU|
-|systemFamily|String|Семейство system|
-|azureActiveDirectoryDeviceId|String|AAD ID устройства , который будет обесценить|
-|azureAdDeviceId|String|AAD ID устройства|
+|skuNumber|Строка|Номер SKU|
+|systemFamily|Строка|Семейство system|
+|azureActiveDirectoryDeviceId|Строка|AAD устройства — необходимо отсутвить|
+|azureAdDeviceId|Строка|AAD ID устройства|
 |managedDeviceId|String|Управляемый ID устройства|
 |displayName|String|"Display Name" (Отображаемое имя);|
 
@@ -147,6 +147,7 @@ Content-Length: 1126
   "displayName": "Display Name value"
 }
 ```
+
 
 
 

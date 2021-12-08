@@ -2,15 +2,15 @@
 title: Создание windowsDriverUpdateInventory
 description: Создание нового объекта WindowsDriverUpdateInventory.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ae8ea34598bb8c908de22687707f1db20413b78c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 889e4e27e3fc8d80d7d98e15609ece9f896d0fe1
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59138605"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337331"
 ---
 # <a name="create-windowsdriverupdateinventory"></a>Создание windowsDriverUpdateInventory
 
@@ -29,7 +29,7 @@ ms.locfileid: "59138605"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -58,7 +58,7 @@ POST /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId
 |version|String|Версия драйвера.|
 |manufacturer|String|Производитель драйвера.|
 |releaseDateTime|DateTimeOffset|Время выпуска драйвера.|
-|driverClass|String|Класс драйвера.|
+|driverClass|Строка|Класс драйвера.|
 |applicableDeviceCount|Int32|Количество устройств, для которых применим этот драйвер.|
 |approvalStatus|[driverApprovalStatus](../resources/intune-softwareupdate-driverapprovalstatus.md)|Состояние утверждения для этого драйвера. Возможные значения: `needsReview`, `declined`, `approved`, `suspended`.|
 |category|[driverCategory](../resources/intune-softwareupdate-drivercategory.md)|Категория для этого драйвера. Возможные значения: `recommended`, `previouslyApproved`, `other`.|
@@ -113,6 +113,7 @@ Content-Length: 474
   "deployDateTime": "2017-01-01T00:01:14.7822152-08:00"
 }
 ```
+
 
 
 

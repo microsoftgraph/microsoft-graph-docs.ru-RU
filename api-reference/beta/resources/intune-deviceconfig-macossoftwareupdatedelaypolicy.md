@@ -2,15 +2,15 @@
 title: тип enum macOSSoftwareUpdateDelayPolicy
 description: Пометить переумен, чтобы определить, откладывать ли обновление программного обеспечения для macOS.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 18ce0f39150b4b551b33f7c13dfc96817237617b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: dc7fa44a86f4b10ca3f49172b86ee3bfdb336da8
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59054508"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339894"
 ---
 # <a name="macossoftwareupdatedelaypolicy-enum-type"></a>тип enum macOSSoftwareUpdateDelayPolicy
 
@@ -28,8 +28,9 @@ ms.locfileid: "59054508"
 |Нет|0|Задержки обновления программного обеспечения не будут применяться.|
 |delayOSUpdateVisibility|1|Принудительное затягивание обновлений программного обеспечения ОС.|
 |delayAppUpdateVisibility|2|Задержки усилий для обновлений программного обеспечения приложений.|
-|unknownFutureValue|4 |Член Sentinel для случаев, когда клиент не может обрабатывать новые значения в переуме.|
+|unknownFutureValue|4|Член Sentinel для случаев, когда клиент не может обрабатывать новые значения в переуме.|
 |delayMajorOsUpdateVisibility|8 |Форс-мажорные задержки для основных обновлений программного обеспечения ОС.|
+
 
 
 

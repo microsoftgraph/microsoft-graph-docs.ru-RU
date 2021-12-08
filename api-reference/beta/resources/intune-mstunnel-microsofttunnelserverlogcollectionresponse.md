@@ -2,15 +2,15 @@
 title: тип ресурса microsoftTunnelServerLogCollectionResponse
 description: Объект, который хранит состояние коллекции журнала сервера.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 99c788005d51c68e35684e62c906d60122a3625c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8b61d6fbec3dedbc61de8908dafc70ea7fea3497
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59039736"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341931"
 ---
 # <a name="microsofttunnelserverlogcollectionresponse-resource-type"></a>тип ресурса microsoftTunnelServerLogCollectionResponse
 
@@ -40,7 +40,7 @@ ms.locfileid: "59039736"
 |startDateTime|DateTimeOffset|Время начала собранных журналов |
 |endDateTime|DateTimeOffset|Время окончания собранных журналов|
 |sizeInBytes|Int64|Размер журналов в bytes|
-|serverId|String|ID сервера, на который запрашивается коллекция журналов|
+|serverId|Строка|ID сервера, на который запрашивается коллекция журналов|
 |requestDateTime|DateTimeOffset|Время запроса коллекции журналов|
 |expiryDateTime|DateTimeOffset|Время истечения срока действия коллекции журналов|
 
@@ -68,6 +68,7 @@ ms.locfileid: "59039736"
   "expiryDateTime": "String (timestamp)"
 }
 ```
+
 
 
 
