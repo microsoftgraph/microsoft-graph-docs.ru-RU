@@ -2,15 +2,15 @@
 title: тип ресурса deviceManagementReports
 description: Класс DeviceManagementReports для отчетности V2
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e3d743244ffd4d54703ff74426008835e62e0e0d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d0cb4dd0c8d2f24aafc597c9f54c50a135a33f9d
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59039492"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338157"
 ---
 # <a name="devicemanagementreports-resource-type"></a>тип ресурса deviceManagementReports
 
@@ -54,6 +54,7 @@ ms.locfileid: "59039492"
   "id": "String (identifier)"
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c4774ed5977db19e1300a369d75c4ee3eca0fae4
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 9a761791f969c66f966f6c0c9104e0068fbed2ae
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695643"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334438"
 ---
 # <a name="update-userexperienceanalyticsbatteryhealthdeviceappimpact"></a>Обновление userExperienceAnalyticsBatteryHealthDeviceAppImpact
 
@@ -27,9 +27,9 @@ ms.locfileid: "60695643"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -58,7 +58,7 @@ PATCH /deviceManagement/userExperienceAnalyticsBatteryHealthDeviceAppImpact/{use
 |appName|String|Имя приложения. Например: oltk.exe|
 |appDisplayName|String|Удобное для пользователя имя отображения приложения. Например: Outlook|
 |appPublisher|String|Издатель приложения. Например: корпорация Майкрософт|
-|isForegroundApp|Логический|верно, если у пользователя было активное взаимодействие с приложением.|
+|isForegroundApp|Boolean|верно, если у пользователя было активное взаимодействие с приложением.|
 |batteryUsagePercentage|Double|Процент общей мощности батареи, используемой этим приложением, когда устройство не подключено к заряду переменного тока, составляет более 14 дней. Единица в процентах. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
 
 
@@ -104,6 +104,7 @@ Content-Length: 373
   "batteryUsagePercentage": 7.333333333333333
 }
 ```
+
 
 
 

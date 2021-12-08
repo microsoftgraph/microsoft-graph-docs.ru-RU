@@ -2,15 +2,15 @@
 title: Создание userExperienceAnalyticsAppHealthApplicationPerformance
 description: Создание нового объекта userExperienceAnalyticsAppHealthApplicationPerformance.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f61a0e5126e29c3328becd6fd95590680e9f5bca
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 17a18e6eada9e4b2803dbe51120276c38237efd2
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59027920"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337744"
 ---
 # <a name="create-userexperienceanalyticsapphealthapplicationperformance"></a>Создание userExperienceAnalyticsAppHealthApplicationPerformance
 
@@ -27,9 +27,9 @@ ms.locfileid: "59027920"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,9 +55,9 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance
 |:---|:---|:---|
 |id|String|Уникальный идентификатор объекта производительности приложения для аналитики пользовательского интерфейса.|
 |appHangCount|Int32|Количество зависает для приложения. Допустимые значения 2147483648 2147483647|
-|appHealthScore|Двойное с плавающей точкой|Оценка состояния здоровья приложения. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
-|appHealthStatus|String|Общее состояние здоровья приложения.|
-|allOrgsHealthScore|Двойное с плавающей точкой|Медиана оценка состояния здоровья приложения во всех организациях. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|appHealthScore|Double|Оценка состояния здоровья приложения. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|appHealthStatus|Строка|Общее состояние здоровья приложения.|
+|allOrgsHealthScore|Double|Медиана оценка состояния здоровья приложения во всех организациях. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
 |activeDeviceCount|Int32|Количество устройств, на которых приложение было активным. Допустимые значения 2147483648 2147483647|
 |appName|String|Имя приложения.|
 |appDisplayName|String|Удобное имя приложения.|
@@ -119,6 +119,7 @@ Content-Length: 522
   "meanTimeToFailureInMinutes": 10
 }
 ```
+
 
 
 

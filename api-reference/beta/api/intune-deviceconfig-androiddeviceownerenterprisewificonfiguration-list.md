@@ -2,15 +2,15 @@
 title: Список androidDeviceOwnerEnterpriseWiFiConfigurations
 description: Список свойств и связей объектов AndroidDeviceOwnerEnterpriseWiFiConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3dbac28e51b5b8d304e6be0f3f4d6b23b773dd30
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f6933d0a4d4492b1b7ce29227df53c09e35d11c5
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59035088"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339467"
 ---
 # <a name="list-androiddeviceownerenterprisewificonfigurations"></a>Список androidDeviceOwnerEnterpriseWiFiConfigurations
 
@@ -29,7 +29,7 @@ ms.locfileid: "59035088"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1993
+Content-Length: 2095
 
 {
   "value": [
@@ -111,6 +111,9 @@ Content-Length: 1993
       "preSharedKey": "Pre Shared Key value",
       "preSharedKeyIsSet": true,
       "eapType": "eapTtls",
+      "trustedServerCertificateNames": [
+        "Trusted Server Certificate Names value"
+      ],
       "authenticationMethod": "usernameAndPassword",
       "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
       "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
@@ -119,6 +122,7 @@ Content-Length: 1993
   ]
 }
 ```
+
 
 
 

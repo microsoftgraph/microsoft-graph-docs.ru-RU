@@ -2,15 +2,15 @@
 title: Создание userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
 description: Создание нового объекта userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: abbb292a72c5767cbbb7cb347079f036687768dd
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7bf23c97785e7d9981c08c5ca47a9189da1558f4
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59027773"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342372"
 ---
 # <a name="create-userexperienceanalyticsapphealthappperformancebyappversiondetails"></a>Создание userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
 
@@ -27,9 +27,9 @@ ms.locfileid: "59027773"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -59,13 +59,13 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceByA
 |isLatestUsedVersion|Boolean|Является ли версия приложения последней версией для используемого приложения.|
 |appName|String|Имя приложения.|
 |appDisplayName|String|Удобное имя приложения.|
-|appPublisher|String|Издатель приложения.|
+|appPublisher|Строка|Издатель приложения.|
 |appVersion|String|Версия приложения.|
 |appCrashCount|Int32|Количество сбоей для приложения. Допустимые значения 2147483648 2147483647|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика и `201 Created` [объект userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversiondetails.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
@@ -110,6 +110,7 @@ Content-Length: 433
   "appCrashCount": 13
 }
 ```
+
 
 
 

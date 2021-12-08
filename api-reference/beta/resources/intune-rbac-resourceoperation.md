@@ -2,15 +2,15 @@
 title: Тип ресурса resourceOperation
 description: Описывает ресурс resourceOperation (сущность) API microsoft Graph (REST), который поддерживает процессы intune, связанные с управлением доступом на основе ролей (RBAC).
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 437c97f6af9ef68233054e547ca95ac08e062039
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2b70ccf88ab0563620c66b289ed0bcbfdef2b3d2
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59017158"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340167"
 ---
 # <a name="resourceoperation-resource-type"></a>Тип ресурса resourceOperation
 
@@ -35,12 +35,12 @@ ms.locfileid: "59017158"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ операции с ресурсом. Доступен только для чтения и создается автоматически.|
+|id|String|Ключ операции с ресурсом. Доступен только для чтения и создается автоматически.|
 |resource|Строка|Категория ресурсов, к которой относится эта операция. Это свойство доступно только для чтения.|
 |resourceName|String|Имя ресурса, с которым выполняется эта операция.|
 |actionName|String|Тип действия, которое выполнит эта операция. Свойство actionName должно быть максимально краткое (максимум несколько слов).|
 |description|Строка|Описание операции с ресурсом. Используется в тексте, который отображается над операцией при наведении указателя мыши на портале Azure.|
-|enabledForScopeValidation|Логический|Определяет, проверяется ли разрешение для областей, определенных для назначения ролей. Это свойство доступно только для чтения.|
+|enabledForScopeValidation|Boolean|Определяет, проверяется ли разрешение для областей, определенных для назначения ролей. Это свойство доступно только для чтения.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -64,6 +64,7 @@ ms.locfileid: "59017158"
   "enabledForScopeValidation": true
 }
 ```
+
 
 
 

@@ -2,15 +2,15 @@
 title: тип ресурса groupPolicyUploadedDefinition
 description: Объект описывает всю информацию о единой групповой политике.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3e8440504e0ccd2931ab6ca8bc8ab6b7debdd573
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c50b65d4d73b08cd68bac10631f427ff0a854fd9
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59030237"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340188"
 ---
 # <a name="grouppolicyuploadeddefinition-resource-type"></a>тип ресурса groupPolicyUploadedDefinition
 
@@ -38,17 +38,17 @@ ms.locfileid: "59030237"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Определяет тип групп, к которые можно применить политику. Унаследовано от [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md). Возможные значения: `user`, `machine`.|
-|displayName|String|Имя локализованной политики. Унаследованный от [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
+|displayName|Строка|Имя локализованной политики. Унаследованный от [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |explainText|String|Локализованный текст объяснения или справки, связанные с политикой. По умолчанию это значение пусто. Унаследованный от [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |categoryPath|String|Путь к локализованным полным категориям для политики. Унаследованный от [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |supportedOn|String|Локализованная строка, используемая для указания того, на какую операционную систему или версию приложения влияет политика. Унаследованный от [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Унаследовано от [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md). Возможные значения: `admxBacked`, `admxIngested`.|
-|hasRelatedDefinitions|Логический|Означает, есть ли связанные определения с этим определением, унаследованные от [groupPolicyDefinition.](../resources/intune-grouppolicy-grouppolicydefinition.md)|
+|hasRelatedDefinitions|Boolean|Означает, есть ли связанные определения с этим определением, унаследованные от [groupPolicyDefinition.](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |groupPolicyCategoryId|Guid|ID категории родительской категории, унаследованной от [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |minDeviceCspVersion|String|Минимальная требуемая версия CSP для конфигурации устройства в этом определении, унаследованной от [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
-|minUserCspVersion|String|Минимальная требуемая версия CSP для конфигурации пользователя в этом определении, унаследованной от [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
+|minUserCspVersion|Строка|Минимальная требуемая версия CSP для конфигурации пользователя в этом определении, унаследованной от [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |version|String|Настройка версии определения, унаследованной [от groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
-|id|String|Ключ объекта. Унаследованный от [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
+|id|Строка|Ключ объекта. Унаследованный от [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Унаследованный от [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 
 ## <a name="relationships"></a>Связи
@@ -86,6 +86,7 @@ ms.locfileid: "59030237"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

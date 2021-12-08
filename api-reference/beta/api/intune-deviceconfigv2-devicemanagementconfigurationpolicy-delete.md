@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 30b594e0a166fe2ef3623a9b448a7857d00b7ba5
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 4be607923374559de8d937ac331a1c462f2e5706
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60493756"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341504"
 ---
 # <a name="delete-devicemanagementconfigurationpolicy"></a>Удаление deviceManagementConfigurationPolicy
 
@@ -29,7 +29,7 @@ ms.locfileid: "60493756"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -66,6 +66,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

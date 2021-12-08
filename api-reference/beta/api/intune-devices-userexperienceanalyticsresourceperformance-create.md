@@ -2,15 +2,15 @@
 title: Создание userExperienceAnalyticsResourcePerformance
 description: Создание нового объекта userExperienceAnalyticsResourcePerformance.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a6d228a002ce71e42bb580c38152f3ccfb395744
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cd524b6fa70f59d21239e57238dbf58680d9c884
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59052225"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334699"
 ---
 # <a name="create-userexperienceanalyticsresourceperformance"></a>Создание userExperienceAnalyticsResourcePerformance
 
@@ -27,9 +27,9 @@ ms.locfileid: "59052225"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsResourcePerformance
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,18 +53,18 @@ POST /deviceManagement/userExperienceAnalyticsResourcePerformance
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор сущности производительности ресурсов аналитики пользовательских интерфейсов.|
+|id|Строка|Уникальный идентификатор сущности производительности ресурсов аналитики пользовательских интерфейсов.|
 |deviceId|String|ID устройства.|
 |deviceName|String|Имя устройства.|
 |model|String|Модель устройства аналитики пользовательских интерфейсов.|
 |deviceCount|Int64|Аналитика пользовательских интерфейсов суммирует количество устройств.|
 |manufacturer|String|Производитель устройств аналитики пользовательских интерфейсов.|
-|cpuSpikeTimePercentage|Двойное с плавающей точкой|Время пика ЦП в процентах. Допустимые значения: от 0 до 100|
-|ramSpikeTimePercentage|Двойное с плавающей точкой|Время пика оперативной памяти в процентах. Допустимые значения: от 0 до 100|
+|cpuSpikeTimePercentage|Double|Время пика ЦП в процентах. Допустимые значения: от 0 до 100|
+|ramSpikeTimePercentage|Double|Время пика оперативной памяти в процентах. Допустимые значения: от 0 до 100|
 |cpuSpikeTimeScore|Int32|Оценка времени пика пика ЦП для пользовательского интерфейса. Допустимые значения: от 0 до 100|
-|cpuSpikeTimePercentageThreshold|Двойное с плавающей точкой|Порог cpuSpikeTimeScore. Допустимые значения: от 0 до 100|
+|cpuSpikeTimePercentageThreshold|Double|Порог cpuSpikeTimeScore. Допустимые значения: от 0 до 100|
 |ramSpikeTimeScore|Int32|Оценка времени пика пика оперативной памяти устройства аналитики пользовательского интерфейса. Допустимые значения: от 0 до 100|
-|ramSpikeTimePercentageThreshold|Двойное с плавающей точкой|Порог ramSpikeTimeScore. Допустимые значения: от 0 до 100|
+|ramSpikeTimePercentageThreshold|Double|Порог ramSpikeTimeScore. Допустимые значения: от 0 до 100|
 |deviceResourcePerformanceScore|Int32|Оценка производительности ресурсов определенного устройства. Допустимые значения: от 0 до 100|
 |averageSpikeTimeScore|Int32|AverageSpikeTimeScore устройства или типа модели. Допустимые значения: от 0 до 100|
 
@@ -125,6 +125,7 @@ Content-Length: 633
   "averageSpikeTimeScore": 5
 }
 ```
+
 
 
 

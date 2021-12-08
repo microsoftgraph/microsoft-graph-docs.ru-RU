@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 92c71ddfc7b050370ab89cd42465f2e4eb84340d
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: fc305152f5e3f48465cde874a4236b6a81f0c570
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694311"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339810"
 ---
 # <a name="list-devicemanagementconfigurationredirectsettingdefinitions"></a>Список deviceManagementConfigurationRedirectSettingDefinitions
 
@@ -29,7 +29,7 @@ ms.locfileid: "60694311"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -120,6 +120,7 @@ Content-Length: 1646
   ]
 }
 ```
+
 
 
 

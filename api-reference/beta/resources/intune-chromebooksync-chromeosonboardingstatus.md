@@ -2,15 +2,15 @@
 title: тип enum chromeOSOnboardingStatus
 description: Состояние бортового клиента.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e174905ea1b04bbd0950f99045f8a0b3ba52692b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d7b84c8138c24623bdac9565fe0c36925ada5a84
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59081460"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340244"
 ---
 # <a name="chromeosonboardingstatus-enum-type"></a>тип enum chromeOSOnboardingStatus
 
@@ -29,6 +29,9 @@ ms.locfileid: "59081460"
 |inprogress|1|В процессе выполнения|
 |onboarded|2|Onboarded|
 |не удалось|3|Не выполнено|
+|offboarding|4|Offboarding|
+|unknownFutureValue|99|UnknownFutureValue|
+
 
 
 

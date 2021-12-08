@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b991a8b4eaa3135b82fdd97264f226f5f59055c0
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 95cb5a9bc6e85305ac3ebfcbac5c33063a3cc677
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694325"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340447"
 ---
 # <a name="update-deviceconfigurationassignment"></a>Обновление объекта deviceConfigurationAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "60694325"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -62,11 +62,11 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ назначения.|
+|id|Строка|Ключ назначения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения для конфигурации устройств.|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Источник назначения для конфигурации устройства, прямой или пакетной или политикиSet. Это свойство доступно только для чтения. Возможные значения: `direct`, `policySets`.|
-|sourceId|String|Идентификатор источника назначения. Это свойство доступно только для чтения.|
-|intent|[deviceConfigAssignmentIntent](../resources/intune-deviceconfig-deviceconfigassignmentintent.md)|Намерение администратора применить или удалить профиль. Это свойство доступно только для чтения. Возможные значения: `apply`, `remove`.|
+|sourceId|Строка|Идентификатор источника назначения. Это свойство доступно только для чтения.|
+|intent|[deviceConfigAssignmentIntent](../resources/intune-deviceconfig-deviceconfigassignmentintent.md)|Намерение администратора применить или удалить профиль. Возможные значения: `apply`, `remove`.|
 
 
 
@@ -117,6 +117,7 @@ Content-Length: 521
   "intent": "remove"
 }
 ```
+
 
 
 

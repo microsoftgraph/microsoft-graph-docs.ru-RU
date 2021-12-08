@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e369682fda379ce8d4b4905839be42ca4ff523c5
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: fce6de49edecfcdada7fbfa0af953bc3013e00bd
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60487214"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339663"
 ---
 # <a name="androiddeviceownerenrollmentmode-enum-type"></a>тип enum androidDeviceOwnerEnrollmentMode
 
@@ -29,7 +29,8 @@ ms.locfileid: "60487214"
 |corporateOwnedFullyManaged|1|Пока не задокументировано.|
 |corporateOwnedWorkProfile|2|Пока не задокументировано.|
 |corporateOwnedAOSPUserlessDevice|3|Корпоративное устройство с открытым исходным кодом Android без Project (AOSP) без google мобильные службы.|
-|corporateOwnedAOSPUserAssociatedDevice|4 |Корпоративное, связанное с пользователем устройство с открытым исходным кодом Android Project (AOSP) без google мобильные службы.|
+|corporateOwnedAOSPUserAssociatedDevice|4|Корпоративное, связанное с пользователем устройство с открытым исходным кодом Android Project (AOSP) без google мобильные службы.|
+
 
 
 

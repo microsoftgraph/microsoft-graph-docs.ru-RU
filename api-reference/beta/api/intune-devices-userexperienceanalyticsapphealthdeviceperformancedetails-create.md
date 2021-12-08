@@ -2,15 +2,15 @@
 title: Создание userExperienceAnalyticsAppHealthDevicePerformanceDetails
 description: Создание нового объекта userExperienceAnalyticsAppHealthDevicePerformanceDetails.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2b926bfe799204f7d13dfc84723ef32504586a52
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e627983171342c65cd40b40eaf2b7779a3d7acaa
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59082615"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338227"
 ---
 # <a name="create-userexperienceanalyticsapphealthdeviceperformancedetails"></a>Создание userExperienceAnalyticsAppHealthDevicePerformanceDetails
 
@@ -27,9 +27,9 @@ ms.locfileid: "59082615"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthDevicePerformanceDetails
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,9 +55,9 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthDevicePerformanceDetails
 |:---|:---|:---|
 |id|String|Уникальный идентификатор объекта производительности устройства для аналитики пользовательского интерфейса.|
 |eventDateTime|DateTimeOffset|Время события.|
-|eventType|String|Тип события.|
+|eventType|Строка|Тип события.|
 |appDisplayName|String|Удобное имя приложения, для которого произошло событие.|
-|appPublisher|String|Издатель приложения.|
+|appPublisher|Строка|Издатель приложения.|
 |appVersion|String|Версия приложения.|
 |deviceId|String|ID устройства.|
 |deviceDisplayName|String|Имя устройства.|
@@ -107,6 +107,7 @@ Content-Length: 454
   "deviceDisplayName": "Device Display Name value"
 }
 ```
+
 
 
 

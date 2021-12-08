@@ -2,15 +2,15 @@
 title: Создание устройстваCustomAttributeShellScript
 description: Создайте новый объект deviceCustomAttributeShellScript.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4ef0df071d08314a018289651cac903936c3bb62
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e0cbcfbb009f6eea2e6830e171f7ec17eef3173a
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59116684"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338899"
 ---
 # <a name="create-devicecustomattributeshellscript"></a>Создание устройстваCustomAttributeShellScript
 
@@ -27,9 +27,9 @@ ms.locfileid: "59116684"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceCustomAttributeShellScripts
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,16 +54,16 @@ POST /deviceManagement/deviceCustomAttributeShellScripts
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для настраиваемого объекта атрибута.|
-|customAttributeName|String|Имя настраиваемого атрибута.|
+|customAttributeName|Строка|Имя настраиваемого атрибута.|
 |customAttributeType|[deviceCustomAttributeValueType](../resources/intune-devices-devicecustomattributevaluetype.md)|Ожидаемый тип значения настраиваемого атрибута. Возможные значения: `integer`, `string`, `dateTime`.|
 |displayName|String|Имя сценария управления устройствами.|
-|description|String|Необязательное описание сценария управления устройствами.|
-|scriptContent|В двоичном формате|Содержимое скрипта.|
+|description|Строка|Необязательное описание сценария управления устройствами.|
+|scriptContent|Binary|Содержимое скрипта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сценария управления устройствами. Это свойство доступно только для чтения.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
 |fileName|String|Имя файла скрипта.|
-|roleScopeTagIds|Коллекция объектов string|Список ID-тегов области для этого экземпляра PowerShellScript.|
+|roleScopeTagIds|Коллекция String|Список ID-тегов области для этого экземпляра PowerShellScript.|
 
 
 
@@ -118,6 +118,7 @@ Content-Length: 585
   ]
 }
 ```
+
 
 
 

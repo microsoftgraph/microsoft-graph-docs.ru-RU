@@ -1,16 +1,16 @@
 ---
 title: тип ресурса windowsFeatureUpdateProfile
-description: Windows Профиль обновления функций
+description: Windows профиль обновления функций
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fb381ace09fc3ee788f7b5f7fec3212285f21ad3
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: b6bbc8a0d073172421e6b3837a677bcd0f84f3b1
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60691535"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339257"
 ---
 # <a name="windowsfeatureupdateprofile-resource-type"></a>тип ресурса windowsFeatureUpdateProfile
 
@@ -20,7 +20,7 @@ ms.locfileid: "60691535"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Windows Профиль обновления функций
+Windows профиль обновления функций
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
@@ -37,12 +37,12 @@ Windows Профиль обновления функций
 |:---|:---|:---|
 |id|String|Идентификатор объекта.|
 |displayName|String|Имя отображения профиля.|
-|description|String|Описание профиля, указанного пользователем.|
-|featureUpdateVersion|String|Версия обновления функций, которая будет развернута на устройствах, на которые ориентирован этот профиль. Версия может быть любой поддерживаемой версией, например 1709, 1803 или 1809 и так далее.|
+|description|Строка|Описание профиля, указанного пользователем.|
+|featureUpdateVersion|Строка|Версия обновления функций, которая будет развернута на устройствах, на которые ориентирован этот профиль. Версия может быть любой поддерживаемой версией, например 1709, 1803 или 1809 и так далее.|
 |rolloutSettings|[windowsUpdateRolloutSettings](../resources/intune-softwareupdate-windowsupdaterolloutsettings.md)|Параметры обновления windows, включая время начала предложения, время конечной даты предложения и дни между каждым набором предложений.|
 |createdDateTime|DateTimeOffset|Время создания профиля.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения профиля.|
-|roleScopeTagIds|Коллекция строк|Список тегов области для этого объекта обновления функций.|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого объекта обновления функций.|
 |deployableContentDisplayName|String|Удобное отображаемое имя развернутого контента профиля обновления качества|
 |endOfSupportDate|DateTimeOffset|Последняя поддерживаемая дата обновления функций|
 
@@ -81,6 +81,7 @@ Windows Профиль обновления функций
   "endOfSupportDate": "String (timestamp)"
 }
 ```
+
 
 
 

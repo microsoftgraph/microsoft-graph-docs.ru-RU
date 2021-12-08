@@ -2,15 +2,15 @@
 title: Удаление deviceManagementScriptDeviceState
 description: Удаляет устройствоManagementScriptDeviceState.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6ffc34862a255ea158aff39ea5c37bf5e1bdfc2d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: e075ea3ecc6778b243582d37edcbbf75e389f329
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59077141"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338367"
 ---
 # <a name="delete-devicemanagementscriptdevicestate"></a>Удаление deviceManagementScriptDeviceState
 
@@ -27,9 +27,9 @@ ms.locfileid: "59077141"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/user
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -68,6 +68,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

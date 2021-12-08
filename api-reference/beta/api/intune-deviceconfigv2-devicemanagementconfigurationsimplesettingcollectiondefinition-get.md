@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2616ee86bfeeef84b933ed28371a3982e757c4b7
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 927158d27e26e4969d1421b83bb6ba7a8f45293d
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696464"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339404"
 ---
 # <a name="get-devicemanagementconfigurationsimplesettingcollectiondefinition"></a>Get deviceManagementConfigurationSimpleSettingCollectionDefinition
 
@@ -29,7 +29,7 @@ ms.locfileid: "60696464"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -351,6 +351,7 @@ Content-Length: 18581
   }
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a1769396f35ba44c1ccf876529dc10758c2831e
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 3c84c50a4da63cf92360ccbb0fee7d9db3d6764b
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60674705"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334160"
 ---
 # <a name="update-devicemanagementconfigurationsetting"></a>Обновление deviceManagementConfigurationSetting
 
@@ -29,7 +29,7 @@ ms.locfileid: "60674705"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,7 +54,7 @@ PATCH /deviceManagement/configurationPolicies/{deviceManagementConfigurationPoli
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ этого параметра в политике, содержа которой он содержится. Автоматически созданный.|
+|id|Строка|Ключ этого параметра в политике, содержа которой он содержится. Автоматически созданный.|
 |settingInstance|[deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|Настройка экземпляра|
 
 
@@ -518,6 +518,7 @@ Content-Length: 16178
   }
 }
 ```
+
 
 
 

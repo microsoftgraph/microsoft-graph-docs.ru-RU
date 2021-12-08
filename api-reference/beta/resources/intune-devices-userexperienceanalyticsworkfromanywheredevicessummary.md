@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8be606cb2cc291adf878b5194c4b9063d993464e
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: f63c579739744f897dd0eaa20e4b53cc75aa966a
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60481057"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61335616"
 ---
 # <a name="userexperienceanalyticsworkfromanywheredevicessummary-resource-type"></a>тип ресурса userExperienceAnalyticsWorkFromAnywhereDevicesSummary
 
@@ -85,6 +85,7 @@ ms.locfileid: "60481057"
   "devicesWithoutAutopilotProfileAssigned": 1024
 }
 ```
+
 
 
 

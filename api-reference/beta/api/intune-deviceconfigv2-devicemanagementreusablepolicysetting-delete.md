@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 11bf0d641cb0ec178a1e8fea31f387c5b501dfd1
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 974474178f9d357cd757fa6e8d744d6fb1bc10e7
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60493153"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340405"
 ---
 # <a name="delete-devicemanagementreusablepolicysetting"></a>Удаление deviceManagementReusablePolicySetting
 
@@ -29,7 +29,7 @@ ms.locfileid: "60493153"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -65,6 +65,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/reusablePolicySettings/
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

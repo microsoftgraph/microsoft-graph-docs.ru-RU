@@ -2,15 +2,15 @@
 title: Обновление userExperienceAnalyticsDeviceWithoutCloudIdentity
 description: Обновление свойств объекта userExperienceAnalyticsDeviceWithoutCloudIdentity.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2868c769e7d358d674920b9c09acdb674470b993
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 471000d29bc011f00420b5c7f1b6943742386776
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59132934"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341462"
 ---
 # <a name="update-userexperienceanalyticsdevicewithoutcloudidentity"></a>Обновление userExperienceAnalyticsDeviceWithoutCloudIdentity
 
@@ -27,9 +27,9 @@ ms.locfileid: "59132934"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDevicesWithoutCloudIdentity/{user
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,9 +53,9 @@ PATCH /deviceManagement/userExperienceAnalyticsDevicesWithoutCloudIdentity/{user
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор устройства для клиентской аналитики пользовательского интерфейса.|
+|id|Строка|Уникальный идентификатор устройства для клиентской аналитики пользовательского интерфейса.|
 |deviceName|String|Клиент прикрепит имя устройства.|
-|azureAdDeviceId|String|Azure Active Directory Id устройства|
+|azureAdDeviceId|String|Azure Active Directory id устройства|
 
 
 
@@ -92,6 +92,7 @@ Content-Length: 228
   "azureAdDeviceId": "Azure Ad Device Id value"
 }
 ```
+
 
 
 

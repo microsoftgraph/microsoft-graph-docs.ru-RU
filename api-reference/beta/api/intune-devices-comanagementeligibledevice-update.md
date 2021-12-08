@@ -2,15 +2,15 @@
 title: Обновление comanagementEligibleDevice
 description: Обновление свойств объекта comanagementEligibleDevice.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: eeddddce85e0853bd4e0c8e15e624dc450902702
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4f79d661f2a0c9fb3f4e5517c144f71469f2eb32
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59122105"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338423"
 ---
 # <a name="update-comanagementeligibledevice"></a>Обновление comanagementEligibleDevice
 
@@ -27,9 +27,9 @@ ms.locfileid: "59122105"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/comanagementEligibleDevices/{comanagementEligibleDeviceI
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -60,8 +60,8 @@ PATCH /deviceManagement/comanagementEligibleDevices/{comanagementEligibleDeviceI
 |ownerType|[ownerType](../resources/intune-shared-ownertype.md)|OwnerType. Возможные значения: `unknown`, `company`, `personal`.|
 |managementAgents|[managementAgentType](../resources/intune-devices-managementagenttype.md)|ManagementAgents. Возможные значения: `eas` `mdm` , , , , , `easMdm` , `intuneClient` , `easIntuneClient` `configurationManagerClient` `configurationManagerClientMdm` `configurationManagerClientMdmEas` `unknown` `jamf` `googleCloudDevicePolicyController` `microsoft365ManagedMdm` `msSense` `intuneAosp` .|
 |managementState|[managementState](../resources/intune-devices-managementstate.md)|ManagementState. Возможные значения: `managed`, `retirePending`, `retireFailed`, `wipePending`, `wipeFailed`, `unhealthy`, `deletePending`, `retireIssued`, `wipeIssued`, `wipeCanceled`, `retireCanceled`, `discovered`.|
-|referenceId|String|ReferenceId|
-|mdmStatus|String|MDMStatus|
+|referenceId|Строка|ReferenceId|
+|mdmStatus|Строка|MDMStatus|
 |osVersion|String|OSVersion|
 |serialNumber|String|SerialNumber|
 |manufacturer|String|Производитель|
@@ -143,6 +143,7 @@ Content-Length: 763
   "status": "eligible"
 }
 ```
+
 
 
 

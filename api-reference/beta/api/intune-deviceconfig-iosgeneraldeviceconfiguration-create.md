@@ -2,15 +2,15 @@
 title: Create iosGeneralDeviceConfiguration
 description: Создание объекта iosGeneralDeviceConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f3f98a4e659054cdd452013bb2727d6d8b68914
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 977623c5fbe3e62fe2525b69fac265c06c7f3f1e
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59065801"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334167"
 ---
 # <a name="create-iosgeneraldeviceconfiguration"></a>Create iosGeneralDeviceConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "59065801"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -56,13 +56,13 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |supportsScopeTags|Boolean|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость к выпуску ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |accountBlockModification|Boolean|Указывает, можно ли изменять учетную запись, когда устройство находится в защищенном режиме.|
@@ -250,6 +250,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |wiFiConnectToAllowedNetworksOnlyForced|Boolean|Требуются устройства для Wi-Fi сетей, установленных с помощью профилей конфигурации. Доступно для устройств с версиями iOS и iPadOS 14.5 и более поздней версии.|
 |onDeviceOnlyTranslationForced|Boolean|При установке TRUE параметр отключает подключения к серверам Siri, чтобы пользователи не могли использовать Siri для перевода текста. При установке FALSE параметр позволяет подключения к серверам Siri для пользователей, которые могут использовать Siri для перевода текста. Доступно для устройств с версиями iOS и iPadOS 15.0 и более поздних версий.|
 |managedPasteboardRequired|Boolean|Управление открытыми приложениями контролирует, как люди делятся данными между неуправленными и управляемыми приложениями. Настройка этого параметра для true обеспечивает соблюдение ограничений копирования и вставлять в зависимости от настройки корпоративных документов block <b>viewing </b> в неугодных приложениях и блокировки просмотра не корпоративных документов в корпоративных <b> приложениях.</b>|
+|iCloudPrivateRelayBlocked|Boolean|Частный ретранслятор iCloud — это служба iCloud+, которая не позволяет сетям и серверам следить за деятельностью человека через Интернет. Блокируя частную ретранслятор iCloud, Apple не будет шифровать трафик, покидая устройство. Доступно для устройств под управлением iOS 15 и более поздней.|
 |kioskModeAppType|[iosKioskModeAppType](../resources/intune-deviceconfig-ioskioskmodeapptype.md)|Тип приложения для работы в режиме киоска. Возможные значения: `notConfigured`, `appStoreApp`, `managedApp`, `builtInApp`.|
 
 
@@ -264,7 +265,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 10907
+Content-length: 10945
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -562,6 +563,7 @@ Content-length: 10907
   "wiFiConnectToAllowedNetworksOnlyForced": true,
   "onDeviceOnlyTranslationForced": true,
   "managedPasteboardRequired": true,
+  "iCloudPrivateRelayBlocked": true,
   "kioskModeAppType": "appStoreApp"
 }
 ```
@@ -571,7 +573,7 @@ Content-length: 10907
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 11079
+Content-Length: 11117
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -872,9 +874,11 @@ Content-Length: 11079
   "wiFiConnectToAllowedNetworksOnlyForced": true,
   "onDeviceOnlyTranslationForced": true,
   "managedPasteboardRequired": true,
+  "iCloudPrivateRelayBlocked": true,
   "kioskModeAppType": "appStoreApp"
 }
 ```
+
 
 
 

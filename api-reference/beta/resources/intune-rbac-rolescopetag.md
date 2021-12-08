@@ -2,15 +2,15 @@
 title: Тип ресурса roleScopeTag
 description: Тег области ролей
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d504565cbc5f37a70fc813386024b1c32c4654e6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 31f0bcb6abc187379f559f71fcaa1b7d96ce8a94
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59063687"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337534"
 ---
 # <a name="rolescopetag-resource-type"></a>Тип ресурса roleScopeTag
 
@@ -42,7 +42,7 @@ ms.locfileid: "59063687"
 |description|Строка|Описание тега Область ролей.|
 |isBuiltIn|Boolean|Описание тега Область ролей. Это свойство доступно только для чтения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|[коллекция roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md)|Список назначений для этого тега области ролей.|
@@ -64,6 +64,7 @@ ms.locfileid: "59063687"
   "isBuiltIn": true
 }
 ```
+
 
 
 

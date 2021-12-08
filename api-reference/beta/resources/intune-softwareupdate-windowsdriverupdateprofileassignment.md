@@ -2,15 +2,15 @@
 title: тип ресурса windowsDriverUpdateProfileAssignment
 description: Эта сущность содержит свойства, используемые для назначения группе профиля обновления драйвера Windows.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6be1fe99e023e75c35cd6926afd23730684fa825
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f52b955dabdf87230afb939c96da806024aa25e9
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59029887"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338941"
 ---
 # <a name="windowsdriverupdateprofileassignment-resource-type"></a>тип ресурса windowsDriverUpdateProfileAssignment
 
@@ -37,7 +37,7 @@ ms.locfileid: "59029887"
 |id|String|Идентификатор сущности|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения, назначенная профилем обновления драйвера.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -59,6 +59,7 @@ ms.locfileid: "59029887"
   }
 }
 ```
+
 
 
 

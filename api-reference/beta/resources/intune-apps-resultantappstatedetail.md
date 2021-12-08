@@ -2,15 +2,15 @@
 title: тип enum resultantAppStateDetail
 description: Enum указывает дополнительные сведения о том, почему приложение имеет определенное состояние установки.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 58653891763433a6edc89986d6c076fa088142b9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b99d8cc0951692026809196ebd2f4f3613bac679
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59047207"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336183"
 ---
 # <a name="resultantappstatedetail-enum-type"></a>тип enum resultantAppStateDetail
 
@@ -29,8 +29,8 @@ Enum указывает дополнительные сведения о том,
 |dependencyFailedToInstall|1|Одна или несколько зависимостей приложения не удалось установить.|
 |dependencyWithRequirementsNotMet|2|Одна или несколько зависимостей приложения имеют требования, которые не выполнены.|
 |dependencyPendingReboot|3|Для одной или более зависимостей приложения требуется перезагрузка устройства для завершения установки.|
-|dependencyWithAutoInstallDisabled|4 |Одна или несколько зависимостей приложения настроены для автоматической установки.|
-|supersededAppUninstallFailed|5 |Выменив, приложение не удалось удалить.|
+|dependencyWithAutoInstallDisabled|4|Одна или несколько зависимостей приложения настроены для автоматической установки.|
+|supersededAppUninstallFailed|5|Выменив, приложение не удалось удалить.|
 |supersededAppUninstallPendingReboot|6 |Для полного сбоя в приложении требуется перезагрузка.|
 |removingSupersedApps|7 |Выдержаные приложения удаляются.|
 |iosAppStoreUpdateFailedToInstall|1000|Последняя версия приложения не обновлялась из более ранней версии.|
@@ -61,6 +61,7 @@ Enum указывает дополнительные сведения о том,
 |minimumOsVersionNotMet|-1002|Версия ОС на целевом устройстве меньше установленного минимума.|
 |minimumDiskSpaceNotMet|-1001|Доступное пространство диска на целевом устройстве меньше установленного минимума.|
 |processorArchitectureNotApplicable|-1000|Архитектура устройства (например, x86/amd64) не применима к приложению.|
+
 
 
 

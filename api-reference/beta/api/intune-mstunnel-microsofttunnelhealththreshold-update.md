@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 318ec9d93d995d29c357da02dc756ed34bc04e36
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 58f26bc2659341f57b6149418c841cf714d62810
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60494054"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339299"
 ---
 # <a name="update-microsofttunnelhealththreshold"></a>Обновление microsoftTunnelHealthThreshold
 
@@ -29,7 +29,7 @@ ms.locfileid: "60494054"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +53,7 @@ PATCH /deviceManagement/microsoftTunnelHealthThresholds/{microsoftTunnelHealthTh
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Имя метрик|
+|id|Строка|Имя метрик|
 |healthyThreshold|Int64|Пороговое значение для здоровья|
 |unhealthyThreshold|Int64|Порог для неработоспособного|
 |defaultHealthyThreshold|Int64|Пороговое значение по умолчанию для того, чтобы быть здоровым|
@@ -98,6 +98,7 @@ Content-Length: 243
   "defaultUnhealthyThreshold": 9
 }
 ```
+
 
 
 

@@ -2,15 +2,15 @@
 title: Обновление userExperienceAnalyticsWorkFromAnywhereMetric
 description: Обновление свойств объекта userExperienceAnalyticsWorkFromAnywhereMetric.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3e0487b8ab4c53d73c665a6e6f8a1e9b9fa607b5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 71f4cfec26c2a132ac38780bb10dbf1de2ab9618
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59042160"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336743"
 ---
 # <a name="update-userexperienceanalyticsworkfromanywheremetric"></a>Обновление userExperienceAnalyticsWorkFromAnywhereMetric
 
@@ -27,9 +27,9 @@ ms.locfileid: "59042160"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExpe
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ PATCH /deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExpe
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор аналитики пользовательских интерфейсов работает из любой метрики.|
+|id|Строка|Уникальный идентификатор аналитики пользовательских интерфейсов работает из любой метрики.|
 
 
 
@@ -86,6 +86,7 @@ Content-Length: 136
   "id": "7e6fda96-da96-7e6f-96da-6f7e96da6f7e"
 }
 ```
+
 
 
 

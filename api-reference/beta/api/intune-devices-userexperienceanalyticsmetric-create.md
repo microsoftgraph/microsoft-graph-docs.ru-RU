@@ -2,15 +2,15 @@
 title: Создание userExperienceAnalyticsMetric
 description: Создание нового объекта userExperienceAnalyticsMetric.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 82dbbdc85381a360524aec816d8583fccaede5eb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f48bf82db93f8166f1b2cc257384f70e3e7522a9
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59070505"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338640"
 ---
 # <a name="create-userexperienceanalyticsmetric"></a>Создание userExperienceAnalyticsMetric
 
@@ -27,9 +27,9 @@ ms.locfileid: "59070505"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ POST /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytics
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,7 +57,7 @@ POST /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytics
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Уникальный идентификатор метрики аналитики пользовательских интерфейсов.|
-|значение|Двойное с плавающей точкой|Значение метрики аналитики пользовательских интерфейсов.|
+|значение|Double|Значение метрики аналитики пользовательских интерфейсов.|
 |unit|Строка|Единица метрики аналитики пользовательского опыта.|
 
 
@@ -95,6 +95,7 @@ Content-Length: 177
   "unit": "Unit value"
 }
 ```
+
 
 
 

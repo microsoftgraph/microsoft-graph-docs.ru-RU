@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 84d393e276d5551e086e3419270df7cc5e4264dd
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 302f245fd19671ae8045640032c571b875b4abf1
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242902"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334956"
 ---
 # <a name="update-accesspackage"></a>Обновление accessPackage
 
@@ -26,7 +26,7 @@ ms.locfileid: "61242902"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | EntitlementManagement.ReadWrite.All |
+|Приложение                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,7 +41,7 @@ PATCH /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,7 +51,7 @@ PATCH /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|Строка|Имя пакета доступа.|
-|description|Строка|Описание пакета доступа.|
+|description|String|Описание пакета доступа.|
 |isHidden|Логический|Скрыт ли пакет доступа от запросителя.|
 
 
@@ -63,6 +63,8 @@ PATCH /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -78,6 +80,28 @@ Content-Type: application/json
   "displayName":"Access Package New Name"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-accesspackage-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-accesspackage-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-accesspackage-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-accesspackage-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Перейти](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-accesspackage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

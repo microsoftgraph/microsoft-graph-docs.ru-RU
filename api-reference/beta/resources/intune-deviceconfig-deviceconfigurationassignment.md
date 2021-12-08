@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 50ec850986b907acf91c2c9f0518e9f76d1aa7be
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 727bbfc8b0137331e3af42512c4e46ab6e6ed89a
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696065"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339047"
 ---
 # <a name="deviceconfigurationassignment-resource-type"></a>Тип ресурса deviceConfigurationAssignment
 
@@ -37,8 +37,8 @@ ms.locfileid: "60696065"
 |id|String|Ключ назначения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения для конфигурации устройств.|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Источник назначения для конфигурации устройства, прямой или пакетной или политикиSet. Это свойство доступно только для чтения. Возможные значения: `direct`, `policySets`.|
-|sourceId|String|Идентификатор источника назначения. Это свойство доступно только для чтения.|
-|intent|[deviceConfigAssignmentIntent](../resources/intune-deviceconfig-deviceconfigassignmentintent.md)|Намерение администратора применить или удалить профиль. Это свойство доступно только для чтения. Возможные значения: `apply`, `remove`.|
+|sourceId|Строка|Идентификатор источника назначения. Это свойство доступно только для чтения.|
+|intent|[deviceConfigAssignmentIntent](../resources/intune-deviceconfig-deviceconfigassignmentintent.md)|Намерение администратора применить или удалить профиль. Возможные значения: `apply`, `remove`.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -66,6 +66,7 @@ ms.locfileid: "60696065"
   "intent": "String"
 }
 ```
+
 
 
 

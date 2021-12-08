@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 41db800f2e14e5806b2354e9b59d95f9249da545
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: c8be1f18327a7573022c02b31d1699848f71f111
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60489747"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339670"
 ---
 # <a name="androiddeviceownerenrollmentprofile-resource-type"></a>тип ресурса androidDeviceOwnerEnrollmentProfile
 
@@ -39,7 +39,7 @@ ms.locfileid: "60489747"
 |accountId|String|GUID клиента, которому принадлежит профиль регистрации.|
 |id|String|Уникальный GUID профиля регистрации.|
 |displayName|String|Отображаемое имя для профиля регистрации.|
-|description|String|Описание профиля регистрации.|
+|description|Строка|Описание профиля регистрации.|
 |enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|Режим регистрации устройств, которые используют этот профиль регистрации. Возможные значения: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`, `corporateOwnedAOSPUserlessDevice`, `corporateOwnedAOSPUserAssociatedDevice`.|
 |enrollmentTokenType|[androidDeviceOwnerEnrollmentTokenType](../resources/intune-androidforwork-androiddeviceownerenrollmenttokentype.md)|Тип маркера регистрации для профиля регистрации. Возможные значения: `default`, `corporateOwnedDedicatedDeviceWithAzureADSharedMode`.|
 |createdDateTime|DateTimeOffset|Дата и время создания профиля регистрации.|
@@ -51,11 +51,11 @@ ms.locfileid: "60489747"
 |enrollmentTokenUsageCount|Int32|Общее число устройств AOSP, которые зарегистрировались с помощью текущего маркера.|
 |qrCodeContent|String|Строка, используемая для создания QR-кода маркера.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Строка, используемая для создания QR-кода маркера.|
-|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity.|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
 |wifiSsid|String|Строка, содержаная ssid входа wi-fi|
 |wifiPassword|String|Строка с паролем входа в Wi-Fi|
 |wifiSecurityType|[aospWifiSecurityType](../resources/intune-androidforwork-aospwifisecuritytype.md)|Строка, содержаная тип безопасности Wi-Fi. Возможные значения: `none`, `wpa`, `wep`.|
-|wifiHidden|Логический|Boolean, который указывает, включены ли скрытые сети Wi-Fi|
+|wifiHidden|Boolean|Boolean, который указывает, включены ли скрытые сети Wi-Fi|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -99,6 +99,7 @@ ms.locfileid: "60489747"
   "wifiHidden": true
 }
 ```
+
 
 
 

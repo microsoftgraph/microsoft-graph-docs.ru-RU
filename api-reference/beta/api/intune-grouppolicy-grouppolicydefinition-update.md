@@ -2,15 +2,15 @@
 title: Update groupPolicyDefinition
 description: Обновление свойств объекта groupPolicyDefinition.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 958e6a03b5f2e3e8c6700d7228782ba08f4a4dbf
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f2c6f23ba1799c6f3fa81c37779787c61dcc950f
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59124751"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334041"
 ---
 # <a name="update-grouppolicydefinition"></a>Update groupPolicyDefinition
 
@@ -29,7 +29,7 @@ ms.locfileid: "59124751"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -49,7 +49,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -60,15 +60,15 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Определяет тип групп, к которые можно применить политику. Возможные значения: `user`, `machine`.|
-|displayName|String|Имя локализованной политики.|
-|explainText|String|Локализованный текст объяснения или справки, связанные с политикой. По умолчанию это значение пусто.|
-|categoryPath|String|Путь к локализованным полным категориям для политики.|
-|supportedOn|String|Локализованная строка, используемая для указания того, на какую операционную систему или версию приложения влияет политика.|
+|displayName|Строка|Имя локализованной политики.|
+|explainText|Строка|Локализованный текст объяснения или справки, связанные с политикой. По умолчанию это значение пусто.|
+|categoryPath|Строка|Путь к локализованным полным категориям для политики.|
+|supportedOn|Строка|Локализованная строка, используемая для указания того, на какую операционную систему или версию приложения влияет политика.|
 |policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
-|hasRelatedDefinitions|Логическое|Означает, есть ли связанные определения с этим определением или нет.|
+|hasRelatedDefinitions|Boolean|Означает, есть ли связанные определения с этим определением или нет.|
 |groupPolicyCategoryId|Guid|ID категории родительской категории|
 |minDeviceCspVersion|String|Минимальная требуемая версия CSP для конфигурации устройства в этом определении|
-|minUserCspVersion|String|Минимальная требуемая версия CSP для конфигурации пользователя в этом определении|
+|minUserCspVersion|Строка|Минимальная требуемая версия CSP для конфигурации пользователя в этом определении|
 |version|String|Настройка версии определения|
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
@@ -127,6 +127,7 @@ Content-Length: 643
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

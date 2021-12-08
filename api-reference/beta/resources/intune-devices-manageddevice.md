@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 699c483a825c91fd5a4eb6c5416adf044ef714de
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 1539f442363465f3e49df23678c8b2ce6ef9797b
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60486982"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334195"
 ---
 # <a name="manageddevice-resource-type"></a>Тип ресурса managedDevice
 
@@ -28,7 +28,7 @@ ms.locfileid: "60486982"
 |[Получение объекта managedDevice](../api/intune-devices-manageddevice-get.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|Чтение свойств и связей объекта [managedDevice](../resources/intune-devices-manageddevice.md).|
 |[Обновление объекта managedDevice](../api/intune-devices-manageddevice-update.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|Обновление свойств объекта [managedDevice](../resources/intune-devices-manageddevice.md).|
 |[Действие executeAction](../api/intune-devices-manageddevice-executeaction.md)|[bulkManagedDeviceActionResult](../resources/intune-devices-bulkmanageddeviceactionresult.md);|Пока не задокументировано.|
-|[Действие enableLostMode](../api/intune-devices-manageddevice-enablelostmode.md)|Нет|Включить потерянный режим|
+|[Действие enableLostMode](../api/intune-devices-manageddevice-enablelostmode.md)|Нет|Включение режима пропажи|
 |[Действие playLostModeSound](../api/intune-devices-manageddevice-playlostmodesound.md)|Нет|Удаленная блокировка|
 |[Действие setDeviceName](../api/intune-devices-manageddevice-setdevicename.md)|Нет|Установите имя устройства.|
 |[activateDeviceEsim action](../api/intune-devices-manageddevice-activatedeviceesim.md)|Нет|Активируйте eSIM на устройстве.|
@@ -125,21 +125,21 @@ ms.locfileid: "60486982"
 |retireAfterDateTime|DateTimeOffset|Указывает время после автоматической отставку устройства из-за запланированных действий. Это свойство доступно только для чтения.|
 |usersLoggedOn|[коллекция loggedOnUser](../resources/intune-devices-loggedonuser.md)|Указывает последний вход в систему для пользователей устройства. Это свойство доступно только для чтения.|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Сообщает dateTime, задав параметр preferMdmOverGroupPolicy.  При задании параметры MDM Intune переопределяют параметры групповой политики в случае конфликта. Только для чтения. Это свойство доступно только для чтения.|
-|autopilotEnrolled|Логический|Отчеты о регистрации управляемого устройства с помощью автопилотирования. Это свойство доступно только для чтения.|
-|requireUserEnrollmentApproval|Логический|Отчеты о том, является ли управляемое устройство iOS регистрацией пользователя. Это свойство доступно только для чтения.|
+|autopilotEnrolled|Boolean|Отчеты о регистрации управляемого устройства с помощью автопилотирования. Это свойство доступно только для чтения.|
+|requireUserEnrollmentApproval|Boolean|Отчеты о том, является ли управляемое устройство iOS регистрацией пользователя. Это свойство доступно только для чтения.|
 |managementCertificateExpirationDate|DateTimeOffset|Отчеты о сроках действия сертификата управления устройствами. Это свойство доступно только для чтения.|
 |iccid|String|Интегрированный идентификатор карты схемы — уникальный идентификационный номер SIM-карты. Это свойство доступно только для чтения.|
 |udid|String|Уникальный идентификатор устройства для устройств с iOS и macOS. Это свойство доступно только для чтения.|
-|roleScopeTagIds|Коллекция строк|Список ID-тегов области для этого экземпляра устройства.|
+|roleScopeTagIds|Коллекция String|Список ID-тегов области для этого экземпляра устройства.|
 |windowsActiveMalwareCount|Int32|Количество активных вредоносных программ для этого устройства Windows. Это свойство доступно только для чтения.|
 |windowsRemediatedMalwareCount|Int32|Количество исправленных вредоносных программ для этого устройства Windows. Это свойство доступно только для чтения.|
 |notes|String|Заметки на устройстве, созданном ИТ-администратором|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|Состояние здоровья клиента диспетчера конфигурации, допустимо только для устройств, управляемых агентом MDM/ConfigMgr|
 |configurationManagerClientInformation|[configurationManagerClientInformation](../resources/intune-devices-configurationmanagerclientinformation.md)|Сведения о клиенте диспетчера конфигурации, допустимые только для устройств, управляемых, управляемых дуэлями или трехуправленных агентом ConfigMgr|
-|ethernetMacAddress|String|Mac Ethernet. Это свойство доступно только для чтения.|
+|ethernetMacAddress|Строка|Mac Ethernet. Это свойство доступно только для чтения.|
 |physicalMemoryInBytes|Int64|Общая память в bytes. Это свойство доступно только для чтения.|
 |processorArchitecture|[managedDeviceArchitecture](../resources/intune-devices-manageddevicearchitecture.md)|Архитектура процессора. Это свойство доступно только для чтения. Возможные значения: `unknown`, `x86`, `x64`, `arm`, `arM64`.|
-|specificationVersion|String|Версия спецификации. Это свойство доступно только для чтения.|
+|specificationVersion|Строка|Версия спецификации. Это свойство доступно только для чтения.|
 |joinType|[joinType](../resources/intune-devices-jointype.md)|Тип присоединиться к устройству. Возможные значения: `unknown`, `azureADJoined`, `azureADRegistered`, `hybridAzureADJoined`.|
 |skuFamily|String|Семейство устройств sku|
 |skuNumber|Int32|Номер sku устройства см. также: https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo . Допустимые значения от 0 до 2147483647. Это свойство доступно только для чтения.|
@@ -152,7 +152,7 @@ ms.locfileid: "60486982"
 |:---|:---|:---|
 |detectedApps|Коллекция [detectedApp](../resources/intune-devices-detectedapp.md)|Все приложения, установленные в настоящее время на устройстве|
 |deviceCategory|[deviceCategory](../resources/intune-shared-devicecategory.md)|Категория устройства|
-|windowsProtectionState|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|Состояние защиты устройств.|
+|windowsProtectionState|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|Состояние защиты устройств. Это свойство доступно только для чтения.|
 |users|Коллекция объектов [user](../resources/intune-shared-user.md)|Основные пользователи, связанные с управляемым устройством.|
 |logCollectionRequests|[коллекция deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Список запросов на коллекцию журналов|
 
@@ -368,6 +368,7 @@ ms.locfileid: "60486982"
   "enrollmentProfileName": "String"
 }
 ```
+
 
 
 

@@ -2,15 +2,15 @@
 title: Создание userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
 description: Создание нового объекта userExperienceAnalyticsAppHealthAppPerformanceByOSVersion.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ffa624a3d0300c8efa823118edd07eb9de9f096a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9224955e74e4540ea4d42e88f0a836c6bb3ecca3
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59070582"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341252"
 ---
 # <a name="create-userexperienceanalyticsapphealthappperformancebyosversion"></a>Создание userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
 
@@ -27,9 +27,9 @@ ms.locfileid: "59070582"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceByO
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,11 +55,11 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceByO
 |:---|:---|:---|
 |id|String|Уникальный идентификатор объекта производительности версии версии пользовательского интерфейса для аналитики приложений.|
 |osVersion|String|Версия ос приложения.|
-|osBuildNumber|String|Число сборки ос приложения.|
+|osBuildNumber|Строка|Число сборки ос приложения.|
 |activeDeviceCount|Int32|Количество устройств, на которых приложение было активным. Допустимые значения 2147483648 2147483647|
 |appName|String|Имя приложения.|
 |appDisplayName|String|Удобное имя приложения.|
-|appPublisher|String|Издатель приложения.|
+|appPublisher|Строка|Издатель приложения.|
 |appUsageDuration|Int32|Общее время использования приложения в минутах. Допустимые значения 2147483648 2147483647|
 |appCrashCount|Int32|Количество сбоей для приложения. Допустимые значения 2147483648 2147483647|
 |meanTimeToFailureInMinutes|Int32|Время сбоя для приложения в минутах. Допустимые значения 2147483648 2147483647|
@@ -113,6 +113,7 @@ Content-Length: 464
   "meanTimeToFailureInMinutes": 10
 }
 ```
+
 
 
 

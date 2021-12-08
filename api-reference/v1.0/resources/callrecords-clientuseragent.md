@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ba453f07d375fd95202446d66647d762ee4e5896
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: aec85e917c8029d80da64eea9d9dc45f0c5070e5
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104273"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61345905"
 ---
 # <a name="clientuseragent-resource-type"></a>тип ресурса clientUserAgent
 
@@ -25,7 +25,7 @@ ms.locfileid: "59104273"
 |applicationVersion|String|Определяет версию программного обеспечения приложения, используемого этой конечной точкой.|
 |headerValue|Строка|Значение заглавной точки пользователя-агента, сообщаемого этой конечной точкой.|
 |платформа|microsoft.graph.callRecords.clientPlatform|Определяет платформу, используемую этой конечной точкой. Возможные значения: `unknown`, `windows`, `macOS`, `iOS`, `android`, `web`, `ipPhone`, `roomSystem`, `surfaceHub`, `holoLens`, `unknownFutureValue`.|
-|productFamily|microsoft.graph.callRecords.productFamily|Определяет семейство программного обеспечения приложения, используемого этой конечной точкой. Возможные значения: `unknown`, `teams`, `skypeForBusiness`, `lync`, `unknownFutureValue`.|
+|productFamily|microsoft.graph.callRecords.productFamily|Определяет семейство программного обеспечения приложения, используемого этой конечной точкой. Возможные значения: `unknown`, `teams`, `skypeForBusiness`, `lync`, `unknownFutureValue`, `azureCommunicationServices`. Обратите внимание, что вы должны использовать загон запроса, чтобы получить следующее значение `Prefer: include-unknown-enum-members` (ы) в этом [развиваемом переуме:](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `azureCommunicationServices` .|
 
 ## <a name="json-representation"></a>Представление JSON
 

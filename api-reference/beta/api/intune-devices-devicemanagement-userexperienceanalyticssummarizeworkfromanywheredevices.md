@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b9ad5256f5c7110f2653ffaca6edc1710f3594bd
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 2de62f3f75e3c378bfedfcfa481cc043f8f6ac80
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60488981"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61337814"
 ---
 # <a name="userexperienceanalyticssummarizeworkfromanywheredevices-function"></a>функция userExperienceAnalyticsSummarizeWorkFromAnywhereDevices
 
@@ -27,9 +27,9 @@ ms.locfileid: "60488981"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -103,6 +103,7 @@ Content-Length: 1355
   }
 }
 ```
+
 
 
 

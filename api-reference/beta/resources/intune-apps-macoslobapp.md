@@ -2,15 +2,15 @@
 title: тип ресурса macOSLobApp
 description: Содержит свойства и унаследованные свойства для Приложения MacOS LOB.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 13ca73a59c9c617d112bf5da409b971bf089da9e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d9b95421a600eb053c3c0af363b12d9e69d7cf5b
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59020478"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339075"
 ---
 # <a name="macoslobapp-resource-type"></a>тип ресурса macOSLobApp
 
@@ -71,7 +71,7 @@ ms.locfileid: "59020478"
 |ignoreVersionDetection|Boolean|Логическое значение, позволяющее разрешить или запретить поиск установленного приложения по его версии. Установите это для приложений macOS Line of Business (LoB), которые используют функцию самостоятельного обновления.|
 |installAsManaged|Boolean|A boolean to control whether the app will be installed as managed (requires macOS 11.0 and other PKG restrictions).|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |categories|Коллекция [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
@@ -156,6 +156,7 @@ ms.locfileid: "59020478"
   "installAsManaged": true
 }
 ```
+
 
 
 

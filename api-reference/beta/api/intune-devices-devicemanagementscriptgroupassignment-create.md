@@ -2,15 +2,15 @@
 title: Создание deviceManagementScriptGroupAssignment
 description: Создание нового объекта deviceManagementScriptGroupAssignment.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b4f21e8bf4e318324389ccb19f0a8d978cd1df7d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3c0bdb47d748099f89a11dec4893559063fb7a5c
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59121951"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338682"
 ---
 # <a name="create-devicemanagementscriptgroupassignment"></a>Создание deviceManagementScriptGroupAssignment
 
@@ -27,9 +27,9 @@ ms.locfileid: "59121951"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -45,7 +45,7 @@ POST /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeS
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,8 +55,8 @@ POST /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeS
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта группового назначения скрипта управления устройствами. Это свойство доступно только для чтения.|
-|targetGroupId|String|Id группы Azure Active Directory, на который мы нацелим сценарий.|
+|id|Строка|Ключ объекта группового назначения скрипта управления устройствами. Это свойство доступно только для чтения.|
+|targetGroupId|Строка|Id группы Azure Active Directory, на который мы нацелим сценарий.|
 
 
 
@@ -91,6 +91,7 @@ Content-Length: 173
   "targetGroupId": "Target Group Id value"
 }
 ```
+
 
 
 

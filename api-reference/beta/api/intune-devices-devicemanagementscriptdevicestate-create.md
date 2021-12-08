@@ -2,15 +2,15 @@
 title: Создание deviceManagementScriptDeviceState
 description: Создайте новый объект deviceManagementScriptDeviceState.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 70abbd8cd72a3cd3dab13fb5ae4462d16473c7a7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: bd68f198420714683cdf9d9cae826066722c3b00
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59077155"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338381"
 ---
 # <a name="create-devicemanagementscriptdevicestate"></a>Создание deviceManagementScriptDeviceState
 
@@ -27,9 +27,9 @@ ms.locfileid: "59077155"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -56,8 +56,8 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта состояния скрипта устройства управления устройствами. Это свойство доступно только для чтения.|
-|runState|[runState](../resources/intune-devices-runstate.md)|Состояние последнего запуска сценария управления устройствами. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|id|Строка|Ключ объекта состояния скрипта устройства управления устройствами. Это свойство доступно только для чтения.|
+|runState|[runState](../resources/intune-shared-runstate.md)|Состояние последнего запуска сценария управления устройствами. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |resultMessage|String|Сведения о выходе выполнения.|
 |lastStateUpdateDateTime|DateTimeOffset|Последний раз, когда выполняется скрипт управления устройствами.|
 |errorCode|Int32|Код ошибки, соответствующий ошибочному исполнению сценария управления устройствами.|
@@ -104,6 +104,7 @@ Content-Length: 330
   "errorDescription": "Error Description value"
 }
 ```
+
 
 
 

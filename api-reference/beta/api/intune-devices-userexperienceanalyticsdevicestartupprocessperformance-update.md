@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a45f2f57017d2dafa86dd46519f31e222a0119e3
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 280520cc3631606fa75a34158b01997acea3d25a
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60488967"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341728"
 ---
 # <a name="update-userexperienceanalyticsdevicestartupprocessperformance"></a>Обновление userExperienceAnalyticsDeviceStartupProcessPerformance
 
@@ -27,9 +27,9 @@ ms.locfileid: "60488967"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,8 +53,8 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceStartupProcessPerformance/{
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор производительности процесса запуска устройства для аналитики пользовательского интерфейса.|
-|processName|String|Имя процесса запуска устройства для аналитики пользовательского интерфейса.|
+|id|Строка|Уникальный идентификатор производительности процесса запуска устройства для аналитики пользовательского интерфейса.|
+|processName|Строка|Имя процесса запуска устройства для аналитики пользовательского интерфейса.|
 |productName|String|Имя продукта процесса запуска устройства для аналитики пользовательского интерфейса.|
 |publisher|String|Издатель процесса запуска устройства для аналитики пользовательских интерфейсов.|
 |deviceCount|Int64|Процесс запуска устройства аналитики пользовательских интерфейсов суммирован.|
@@ -110,6 +110,7 @@ Content-Length: 387
   "totalImpactInMs2": 0
 }
 ```
+
 
 
 

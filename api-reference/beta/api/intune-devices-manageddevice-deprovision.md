@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bd5a191d5795552304e8685c4b38e9df4fa38b73
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: d52a990485ded3fa669aff95fd38ae7b17d1a9ad
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695785"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340804"
 ---
 # <a name="deprovision-action"></a>действие deprovision
 
@@ -27,9 +27,9 @@ ms.locfileid: "60695785"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementManagedDevices.Read.All|
+|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -86,6 +86,7 @@ Content-length: 55
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

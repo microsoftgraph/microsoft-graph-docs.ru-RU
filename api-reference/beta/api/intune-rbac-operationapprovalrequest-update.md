@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1ce96e13b791db9667cc1ea07fb3ee1d21182410
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: 68dd7303e9b444d35b4d3183043b498236d39393
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60485053"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339677"
 ---
 # <a name="update-operationapprovalrequest"></a>Обновление операцииApprovalRequest
 
@@ -27,9 +27,9 @@ ms.locfileid: "60485053"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementRBAC.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,14 +53,14 @@ PATCH /deviceManagement/operationApprovalRequests/{operationApprovalRequestId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|ID объекта|
+|id|Строка|ID объекта|
 |requestDateTime|DateTimeOffset|DateTime запроса. Это свойство доступно только для чтения.|
 |expirationDateTime|DateTimeOffset|DateTime, в котором действия по запросу больше не разрешены. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Последнее изменение DateTime. Это свойство доступно только для чтения.|
 |запросчик|[identitySet](../resources/intune-rbac-identityset.md)|Удостоверение запросителя. Это свойство доступно только для чтения.|
 |одобрение|[identitySet](../resources/intune-rbac-identityset.md)|Удостоверение утвержденного. Это свойство доступно только для чтения.|
 |status|[operationApprovalRequestStatus](../resources/intune-rbac-operationapprovalrequeststatus.md)|Текущий статус запроса на утверждение. Это свойство доступно только для чтения. Возможные значения: `unknown`, `needsApproval`, `approved`, `rejected`, `cancelled`, `completed`, `expired`.|
-|requestJustification|String|Обоснование запроса. Это свойство доступно только для чтения.|
+|requestJustification|Строка|Обоснование запроса. Это свойство доступно только для чтения.|
 |approvalJustification|String|Обоснование утверждения запроса. Это свойство доступно только для чтения.|
 
 
@@ -177,6 +177,7 @@ Content-Length: 1459
   "approvalJustification": "Approval Justification value"
 }
 ```
+
 
 
 

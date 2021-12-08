@@ -2,15 +2,15 @@
 title: Обновление deviceComplianceScriptRunSummary
 description: Обновление свойств объекта deviceComplianceScriptRunSummary.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 99770521bf349732fbf8fe3b6b35333fa6abb53e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 196d9e4ad502daf5c17fdb9bb993b06edfe57d43
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59108151"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61335735"
 ---
 # <a name="update-devicecompliancescriptrunsummary"></a>Обновление deviceComplianceScriptRunSummary
 
@@ -27,9 +27,9 @@ ms.locfileid: "59108151"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/runSu
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/runSu
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Клавиша скрипта соответствия устройству запускать сводную сущность. Это свойство доступно только для чтения.|
+|id|Строка|Клавиша скрипта соответствия устройству запускать сводную сущность. Это свойство доступно только для чтения.|
 |noIssueDetectedDeviceCount|Int32|Количество устройств, для которых сценарий обнаружения не нашел проблемы и устройство является здоровым. Допустимые значения 2147483648 2147483647|
 |issueDetectedDeviceCount|Int32|Количество устройств, для которых скрипт обнаружения обнаружил проблему. Допустимые значения 2147483648 2147483647|
 |detectionScriptErrorDeviceCount|Int32|Количество устройств, на которых при выполнении скрипта обнаружения произошла ошибка и не была завершена. Допустимые значения 2147483648 2147483647|
@@ -101,6 +101,7 @@ Content-Length: 344
   "lastScriptRunDateTime": "2017-01-01T00:01:17.4310553-08:00"
 }
 ```
+
 
 
 

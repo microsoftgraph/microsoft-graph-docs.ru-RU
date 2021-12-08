@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c0ecc24b6cb9069091fe9cbb51694c12f5a12b95
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: ef986108396bd1dbdb013be810aea01ebd1e6627
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60697399"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342414"
 ---
 # <a name="userexperienceanalyticsbatteryhealthappimpact-resource-type"></a>тип ресурса userExperienceAnalyticsBatteryHealthAppImpact
 
@@ -39,7 +39,7 @@ ms.locfileid: "60697399"
 |appName|String|Имя приложения. Например: oltk.exe|
 |appDisplayName|String|Удобное для пользователя имя отображения приложения. Например: Outlook|
 |appPublisher|String|Издатель приложения. Например: корпорация Майкрософт|
-|isForegroundApp|Логический|верно, если у пользователя было активное взаимодействие с приложением.|
+|isForegroundApp|Boolean|верно, если у пользователя было активное взаимодействие с приложением.|
 |batteryUsagePercentage|Double|Процент общей мощности батареи, используемой этим приложением, когда устройство не подключено к мощности переменного тока, в течение 14 дней вычисляется на всех устройствах в клиенте. Единица в процентах. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
 
 ## <a name="relationships"></a>Связи
@@ -65,6 +65,7 @@ ms.locfileid: "60697399"
   "batteryUsagePercentage": "4.2"
 }
 ```
+
 
 
 

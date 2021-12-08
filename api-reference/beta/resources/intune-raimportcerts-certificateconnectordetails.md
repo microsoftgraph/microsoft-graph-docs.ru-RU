@@ -2,15 +2,15 @@
 title: тип ресурса certificateConnectorDetails
 description: Объект используется для получения сведений о соединители сертификатов Intune.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5dbbb8029f4734e0ea02c1c940e2edba05d84727
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2dd74a003add77fffd029153fc9295b603ce3eef
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59020303"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338955"
 ---
 # <a name="certificateconnectordetails-resource-type"></a>тип ресурса certificateConnectorDetails
 
@@ -37,8 +37,8 @@ ms.locfileid: "59020303"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для этого набора ConnectorDetails.|
-|connectorName|String|Имя соединитетеля (за набор во время регистрации).|
-|machineName|String|Имя компьютера, на которого размещена эта служба соединитела.|
+|connectorName|Строка|Имя соединитетеля (за набор во время регистрации).|
+|machineName|Строка|Имя компьютера, на которого размещена эта служба соединитела.|
 |enrollmentDateTime|DateTimeOffset|Дата и время регистрации этого соединитетеля.|
 |lastCheckinDateTime|DateTimeOffset|Дата и время последнего подключения этого соединитетеля к службе.|
 
@@ -63,6 +63,7 @@ ms.locfileid: "59020303"
   "lastCheckinDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

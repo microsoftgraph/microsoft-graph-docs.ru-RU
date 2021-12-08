@@ -2,15 +2,15 @@
 title: тип enum managedDeviceRemoteAction
 description: Пока не задокументировано.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 119af695547ac4e79805dcfd2b15a346b03a10d8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 830f7a3958a298498644d46230ae0ad73292aef8
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59137758"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342519"
 ---
 # <a name="manageddeviceremoteaction-enum-type"></a>тип enum managedDeviceRemoteAction
 
@@ -29,8 +29,8 @@ ms.locfileid: "59137758"
 |delete|1|Пока не задокументировано.|
 |fullScan|2|Пока не задокументировано.|
 |quickScan|3|Пока не задокументировано.|
-|signatureUpdate|4 |Пока не задокументировано.|
-|wipe|5 |Пока не задокументировано.|
+|signatureUpdate|4|Пока не задокументировано.|
+|wipe|5|Пока не задокументировано.|
 |customTextNotification|6 |Пока не задокументировано.|
 |rebootNow|7 |Пока не задокументировано.|
 |setDeviceName|8 |Пока не задокументировано.|
@@ -41,6 +41,7 @@ ms.locfileid: "59137758"
 |moveDeviceToOrganizationalUnit|13|Имя действия moveDevicesToOU.|
 |activateDeviceEsim|14 |Имя действия для активации eSIM на устройстве.|
 |collectDiagnostics|15 |Имя действия collectDiagnostics.|
+
 
 
 

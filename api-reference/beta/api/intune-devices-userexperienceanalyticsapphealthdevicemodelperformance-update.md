@@ -2,15 +2,15 @@
 title: Обновление userExperienceAnalyticsAppHealthDeviceModelPerformance
 description: Обновление свойств объекта userExperienceAnalyticsAppHealthDeviceModelPerformance.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7e8907e33d0bc52efbbb0d5d973ffa7491f0f4fb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c22060dca6a2fa851f14da903f79ae94935d8dfd
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59065437"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61338241"
 ---
 # <a name="update-userexperienceanalyticsapphealthdevicemodelperformance"></a>Обновление userExperienceAnalyticsAppHealthDeviceModelPerformance
 
@@ -27,9 +27,9 @@ ms.locfileid: "59065437"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthDeviceModelPerformance/{
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -58,8 +58,9 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthDeviceModelPerformance/{
 |deviceManufacturer|Строка|Имя производителя устройства.|
 |activeDeviceCount|Int32|Количество активных устройств для модели. Допустимые значения 2147483648 2147483647|
 |meanTimeToFailureInMinutes|Int32|Время сбоя для устройства модели в минутах. Допустимые значения 2147483648 2147483647|
-|modelAppHealthScore|Двойное с плавающей точкой|Оценка состояния здоровья приложения модели устройства. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
+|modelAppHealthScore|Double|Оценка состояния здоровья приложения модели устройства. Допустимые значения -1.79769313486232E+308 до 1.797693133486232E+308|
 |modelAppHealthStatus|Строка|Общее состояние состояния здоровья приложения модели устройства.|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Состояние состояния модели аналитики пользовательских интерфейсов. Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 
 
@@ -73,7 +74,7 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthDeviceModelPerformance/{
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthDeviceModelPerformance/{userExperienceAnalyticsAppHealthDeviceModelPerformanceId}
 Content-type: application/json
-Content-length: 359
+Content-length: 398
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthDeviceModelPerformance",
@@ -82,7 +83,8 @@ Content-length: 359
   "activeDeviceCount": 1,
   "meanTimeToFailureInMinutes": 10,
   "modelAppHealthScore": 6.333333333333333,
-  "modelAppHealthStatus": "Model App Health Status value"
+  "modelAppHealthStatus": "Model App Health Status value",
+  "healthStatus": "insufficientData"
 }
 ```
 
@@ -91,7 +93,7 @@ Content-length: 359
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 408
+Content-Length: 447
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthDeviceModelPerformance",
@@ -101,9 +103,11 @@ Content-Length: 408
   "activeDeviceCount": 1,
   "meanTimeToFailureInMinutes": 10,
   "modelAppHealthScore": 6.333333333333333,
-  "modelAppHealthStatus": "Model App Health Status value"
+  "modelAppHealthStatus": "Model App Health Status value",
+  "healthStatus": "insufficientData"
 }
 ```
+
 
 
 

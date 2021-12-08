@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9d0d6849fcb41be6493f11a6d1b3d01c8409e9d6
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 76ca74fc580886463edada3bd63a056ca6d3aef4
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688295"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339481"
 ---
 # <a name="windowsupdaterolloutsettings-resource-type"></a>тип ресурса windowsUpdateRolloutSettings
 
@@ -47,6 +47,7 @@ ms.locfileid: "60688295"
   "offerIntervalInDays": 1024
 }
 ```
+
 
 
 

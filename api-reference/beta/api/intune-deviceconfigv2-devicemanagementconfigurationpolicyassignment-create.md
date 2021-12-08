@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e257675508bc1d92e9a7ee966da06f2245d5e121
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: a1215f16120794a1ae6ea1a3c563bd4d5760a9ad
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60689097"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340958"
 ---
 # <a name="create-devicemanagementconfigurationpolicyassignment"></a>Создание deviceManagementConfigurationPolicyAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "60689097"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,7 +54,7 @@ POST /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolic
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ назначения.|
+|id|Строка|Ключ назначения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения для DeviceManagementConfigurationPolicy.|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Источник назначения для политики соответствия требованиям устройств, прямой или пакетной или политикиSet. Возможные значения: `direct`, `policySets`.|
 |sourceId|String|Идентификатор источника назначения.|
@@ -106,6 +106,7 @@ Content-Length: 514
   "sourceId": "Source Id value"
 }
 ```
+
 
 
 

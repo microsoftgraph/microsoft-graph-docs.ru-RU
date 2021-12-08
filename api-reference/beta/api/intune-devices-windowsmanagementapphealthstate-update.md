@@ -2,15 +2,15 @@
 title: Обновление windowsManagementAppHealthState
 description: Обновление свойств объекта windowsManagementAppHealthState.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: af254521e32ab284d4c3f1406ee1c0368d52cf96
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 09ad1b23c328e755b77cbf3b7ba8656818613ce7
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59097091"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334034"
 ---
 # <a name="update-windowsmanagementapphealthstate"></a>Обновление windowsManagementAppHealthState
 
@@ -27,9 +27,9 @@ ms.locfileid: "59097091"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/windowsManagementApp/healthStates/{windowsManagementA
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,12 +53,12 @@ PATCH /deviceAppManagement/windowsManagementApp/healthStates/{windowsManagementA
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор состояния Windows приложения управления. Это свойство доступно только для чтения.|
+|id|Строка|Уникальный идентификатор состояния Windows приложения управления. Это свойство доступно только для чтения.|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows состояния здоровья приложения управления. Возможные значения: `unknown`, `healthy`, `unhealthy`.|
 |installedVersion|String|Windows установленной версии приложения управления.|
 |lastCheckInDateTime|DateTimeOffset|Windows последнего времени регистрации приложения управления.|
 |deviceName|String|Имя устройства, на котором Windows установлено приложение управления.|
-|deviceOSVersion|String|Windows 10 ВЕРСИЯ ОС устройства, на котором Windows установлено приложение управления.|
+|deviceOSVersion|String|Windows 10 оси устройства, на котором Windows установлено приложение управления.|
 
 
 
@@ -101,6 +101,7 @@ Content-Length: 349
   "deviceOSVersion": "Device OSVersion value"
 }
 ```
+
 
 
 

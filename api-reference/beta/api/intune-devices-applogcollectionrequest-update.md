@@ -2,15 +2,15 @@
 title: Обновление appLogCollectionRequest
 description: Обновление свойств объекта appLogCollectionRequest.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 945e6b2cbdaa79db3a426fb9e63d61ef62113e64
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 3db80065ff2e12351fd4bb2d8ef1c04a32c24ccd
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59020730"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61340951"
 ---
 # <a name="update-applogcollectionrequest"></a>Обновление appLogCollectionRequest
 
@@ -27,9 +27,9 @@ ms.locfileid: "59020730"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,15 +53,15 @@ PATCH /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshooting
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор. Это userId_DeviceId_AppId id.|
+|id|Строка|Уникальный идентификатор. Это userId_DeviceId_AppId id.|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Состояние загрузки журнала. Возможные значения: `pending`, `completed`, `failed`.|
-|errorMessage|String|Сообщение об ошибке, если таково сообщение во время процесса загрузки|
+|errorMessage|Строка|Сообщение об ошибке, если таково сообщение во время процесса загрузки|
 |customLogFolders|Коллекция String|Список папок журнала. |
 |completedDateTime|DateTimeOffset|Время, в течение которого запрос журнала загрузки достиг состояния терминала|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика и обновленный `200 OK` [объект appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
@@ -102,6 +102,7 @@ Content-Length: 306
   "completedDateTime": "2016-12-31T23:58:52.3534526-08:00"
 }
 ```
+
 
 
 

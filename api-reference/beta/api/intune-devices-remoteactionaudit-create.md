@@ -2,15 +2,15 @@
 title: Создание remoteActionAudit
 description: Создание нового объекта remoteActionAudit.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2fa77f1d1f2c2efc320c6872f4680b26d307ceff
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 77dac7ae0ba71999cb51ed1acc22709c860af8bb
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59102873"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334783"
 ---
 # <a name="create-remoteactionaudit"></a>Создание remoteActionAudit
 
@@ -27,9 +27,9 @@ ms.locfileid: "59102873"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/remoteActionAudits
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,16 +53,16 @@ POST /deviceManagement/remoteActionAudits
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Report Id.|
+|id|Строка|Report Id.|
 |deviceDisplayName|String|Имя устройства Intune.|
 |userName|String|\[deprecated \] Please use InitiatedByUserPrincipalName instead.|
-|initiatedByUserPrincipalName|String|Пользователь, который инициировал действие устройства, формат upN.|
+|initiatedByUserPrincipalName|Строка|Пользователь, который инициировал действие устройства, формат upN.|
 |action|[remoteAction](../resources/intune-devices-remoteaction.md)|Имя действия. Возможные значения: `unknown` `factoryReset` , , `removeCompanyData` `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser` `quickScan` `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown` `rotateBitLockerKeys` `rotateFileVaultKey` `getFileVaultKey` . `setDeviceName` `activateDeviceEsim`|
 |requestDateTime|DateTimeOffset|Время, когда действие было выдано, дано в UTC.|
 |deviceOwnerUserPrincipalName|String|Upn владельца устройства.|
 |deviceIMEI|String|IMEI устройства.|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Состояние действия. Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|managedDeviceId|String|Цель действия.|
+|managedDeviceId|Строка|Цель действия.|
 
 
 
@@ -113,6 +113,7 @@ Content-Length: 553
   "managedDeviceId": "Managed Device Id value"
 }
 ```
+
 
 
 

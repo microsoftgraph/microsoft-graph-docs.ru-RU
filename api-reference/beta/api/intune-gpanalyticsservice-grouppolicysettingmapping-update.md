@@ -2,15 +2,15 @@
 title: Update groupPolicySettingMapping
 description: Обновление свойств объекта groupPolicySettingMapping.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c0b40b3deb68dc406d030c4e2b3579df9215ed97
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2bdb1362998d4d50ba8ba2fc27e74e72a88d3789
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59124814"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334342"
 ---
 # <a name="update-grouppolicysettingmapping"></a>Update groupPolicySettingMapping
 
@@ -29,7 +29,7 @@ ms.locfileid: "59124814"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,25 +54,25 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Пока не задокументировано.|
-|parentId|String|Родительский Id параметра групповой политики.|
-|childIdList|Коллекция объектов string|Список детских ид параметра групповой политики.|
+|parentId|Строка|Родительский Id параметра групповой политики.|
+|childIdList|Коллекция String|Список детских ид параметра групповой политики.|
 |settingName|String|Имя этого параметра групповой политики.|
-|settingValue|String|Значение этого параметра групповой политики.|
-|settingValueType|String|Тип значения этого параметра групповой политики.|
+|settingValue|Строка|Значение этого параметра групповой политики.|
+|settingValueType|Строка|Тип значения этого параметра групповой политики.|
 |settingDisplayName|String|Отображение имени этого параметра групповой политики.|
-|settingDisplayValue|String|Отображение значения этого параметра групповой политики.|
+|settingDisplayValue|Строка|Отображение значения этого параметра групповой политики.|
 |settingDisplayValueType|String|Тип отображения значения этого параметра групповой политики.|
 |settingValueDisplayUnits|String|Отображаемая единица этого значения групповой политики|
-|settingCategory|String|Категория, в которая находится параметр групповой политики.|
-|mdmCspName|String|CSP назовет эту групповую политику, устанавливая карты.|
+|settingCategory|Строка|Категория, в которая находится параметр групповой политики.|
+|mdmCspName|Строка|CSP назовет эту групповую политику, устанавливая карты.|
 |mdmSettingUri|String|MDM CSP URI этой групповой политики, устанавливая карты.|
 |mdmMinimumOSVersion|Int32|Минимальная версия ОС, поддерживаемая этим параметром mdm.|
-|settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|Тип параметра (безопасность или admx) групповой политики. Возможные значения: `unknown`, `policy`, `account`, `securityOptions`, `userRightsAssignment`, `auditSetting`, `windowsFirewallSettings`.|
-|isMdmSupported|Логическое|Указывает, поддерживает ли параметр Intune или нет.|
+|settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|Тип параметра (безопасность или admx) групповой политики. Возможные значения: `unknown` `policy` , `account` `securityOptions` `userRightsAssignment` `auditSetting` `windowsFirewallSettings` `appLockerRuleCollection` `dataSourcesSettings` `devicesSettings` `driveMapSettings` `environmentVariables` `filesSettings` `folderOptions` `folders` `iniFiles` `internetOptions` `localUsersAndGroups` `networkOptions` `networkShares` `ntServices` `powerOptions` `printers` `regionalOptionsSettings` `registrySettings` `scheduledTasks` `shortcutSettings` . `startMenuSettings`|
+|isMdmSupported|Boolean|Указывает, поддерживает ли параметр Intune или нет.|
 |mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|Указывает, поддерживается ли параметр в Mdm или нет. Возможные значения: `unknown`, `supported`, `unsupported`, `deprecated`.|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|Область настройки. Возможные значения: `unknown`, `device`, `user`.|
-|intuneSettingUriList|Коллекция объектов string|Список URL-адресов intune Setting this group policy setting maps to|
-|intuneSettingDefinitionId|String|Id определения параметра Intune|
+|intuneSettingUriList|Коллекция String|Список URL-адресов intune Setting this group policy setting maps to|
+|intuneSettingDefinitionId|Строка|Id определения параметра Intune|
 |admxSettingDefinitionId|String|Admx Group Policy Id|
 
 
@@ -154,6 +154,7 @@ Content-Length: 1072
   "admxSettingDefinitionId": "Admx Setting Definition Id value"
 }
 ```
+
 
 
 

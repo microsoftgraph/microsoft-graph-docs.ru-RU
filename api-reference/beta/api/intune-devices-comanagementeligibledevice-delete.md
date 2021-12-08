@@ -2,15 +2,15 @@
 title: Удаление comanagementEligibleDevice
 description: Удаляет comanagementEligibleDevice.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2037c40f0a8f164322b7e04780a6ed24f1af681d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8a824801570bf9d68a9fbe03864e986c6a967a33
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59122140"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61335945"
 ---
 # <a name="delete-comanagementeligibledevice"></a>Удаление comanagementEligibleDevice
 
@@ -27,9 +27,9 @@ ms.locfileid: "59122140"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ DELETE /deviceManagement/comanagementEligibleDevices/{comanagementEligibleDevice
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,6 +65,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/comanagementEligibleDev
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

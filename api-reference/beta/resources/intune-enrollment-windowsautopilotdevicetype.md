@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 74f8d24db7550ba0c2e9f58c3591133d86e4bc68
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: d40dd15cf79a34309e46d2b1b602e8006c1e8ce8
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696191"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61334608"
 ---
 # <a name="windowsautopilotdevicetype-enum-type"></a>тип enum windowsAutopilotDeviceType
 
@@ -25,12 +25,13 @@ ms.locfileid: "60696191"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|WindowsPc|0|Windows PC|
+|WindowsPc|0|Windows ПК|
 |surfaceHub2|1|Surface Hub 2|
 |holoLens|2|HoloLens|
 |surfaceHub2S|3|SurfaceHub2S|
-|virtualMachine|4 |VirtualMachine|
+|virtualMachine|4|VirtualMachine|
 |unknownFutureValue|99|Местообладатель для эволюционирующего переумыка, но этот переумыватель никогда не возвращается вызываемой, поэтому она не должна быть обязательной.         |
+
 
 
 

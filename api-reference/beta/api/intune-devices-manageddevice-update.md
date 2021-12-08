@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a44f2d0c4f4148619a4290b066ce04edd7179e87
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: d99482ee00b95c8a4cef4d0d9bd019031cd336e8
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60494103"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61341336"
 ---
 # <a name="update-manageddevice"></a>Обновление managedDevice
 
@@ -27,9 +27,9 @@ ms.locfileid: "60494103"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -119,12 +119,12 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |retireAfterDateTime|DateTimeOffset|Указывает время после автоматической отставку устройства из-за запланированных действий. Это свойство доступно только для чтения.|
 |usersLoggedOn|[коллекция loggedOnUser](../resources/intune-devices-loggedonuser.md)|Указывает последний вход в систему для пользователей устройства. Это свойство доступно только для чтения.|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Сообщает dateTime, задав параметр preferMdmOverGroupPolicy.  При задании параметры MDM Intune переопределяют параметры групповой политики в случае конфликта. Только для чтения. Это свойство доступно только для чтения.|
-|autopilotEnrolled|Логический|Отчеты о регистрации управляемого устройства с помощью автопилотирования. Это свойство доступно только для чтения.|
-|requireUserEnrollmentApproval|Логический|Отчеты о том, является ли управляемое устройство iOS регистрацией пользователя. Это свойство доступно только для чтения.|
+|autopilotEnrolled|Boolean|Отчеты о регистрации управляемого устройства с помощью автопилотирования. Это свойство доступно только для чтения.|
+|requireUserEnrollmentApproval|Boolean|Отчеты о том, является ли управляемое устройство iOS регистрацией пользователя. Это свойство доступно только для чтения.|
 |managementCertificateExpirationDate|DateTimeOffset|Отчеты о сроках действия сертификата управления устройствами. Это свойство доступно только для чтения.|
 |iccid|String|Интегрированный идентификатор карты схемы — уникальный идентификационный номер SIM-карты. Это свойство доступно только для чтения.|
 |udid|String|Уникальный идентификатор устройства для устройств с iOS и macOS. Это свойство доступно только для чтения.|
-|roleScopeTagIds|Коллекция строк|Список ID-тегов области для этого экземпляра устройства.|
+|roleScopeTagIds|Коллекция String|Список ID-тегов области для этого экземпляра устройства.|
 |windowsActiveMalwareCount|Int32|Количество активных вредоносных программ для этого устройства Windows. Это свойство доступно только для чтения.|
 |windowsRemediatedMalwareCount|Int32|Количество исправленных вредоносных программ для этого устройства Windows. Это свойство доступно только для чтения.|
 |notes|String|Заметки на устройстве, созданном ИТ-администратором|
@@ -133,7 +133,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |ethernetMacAddress|String|Mac Ethernet. Это свойство доступно только для чтения.|
 |physicalMemoryInBytes|Int64|Общая память в bytes. Это свойство доступно только для чтения.|
 |processorArchitecture|[managedDeviceArchitecture](../resources/intune-devices-manageddevicearchitecture.md)|Архитектура процессора. Это свойство доступно только для чтения. Возможные значения: `unknown`, `x86`, `x64`, `arm`, `arM64`.|
-|specificationVersion|String|Версия спецификации. Это свойство доступно только для чтения.|
+|specificationVersion|Строка|Версия спецификации. Это свойство доступно только для чтения.|
 |joinType|[joinType](../resources/intune-devices-jointype.md)|Тип присоединиться к устройству. Возможные значения: `unknown`, `azureADJoined`, `azureADRegistered`, `hybridAzureADJoined`.|
 |skuFamily|String|Семейство устройств sku|
 |skuNumber|Int32|Номер sku устройства см. также: https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo . Допустимые значения от 0 до 2147483647. Это свойство доступно только для чтения.|
@@ -568,6 +568,7 @@ Content-Length: 8667
   "enrollmentProfileName": "Enrollment Profile Name value"
 }
 ```
+
 
 
 

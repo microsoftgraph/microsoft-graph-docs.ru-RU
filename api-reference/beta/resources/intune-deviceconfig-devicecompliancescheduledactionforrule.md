@@ -2,15 +2,15 @@
 title: Тип ресурса deviceComplianceScheduledActionForRule
 description: Запланированное действие для правила
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d1d6a293647ff3c704f07fcee2e2d0d755c291d6
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 41aea331430c5962dab2bf2c80e1a170127e44c1
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59023558"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342645"
 ---
 # <a name="devicecompliancescheduledactionforrule-resource-type"></a>Тип ресурса deviceComplianceScheduledActionForRule
 
@@ -34,7 +34,7 @@ ms.locfileid: "59023558"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |ruleName|String|Имя правила, к которому применяется это запланированное действие. В настоящее время запланированные действия создаются для политики, а не для каждого правила, поэтому значение RuleName всегда задалось значению PasswordRequired по умолчанию.|
 
 ## <a name="relationships"></a>Связи
@@ -57,6 +57,7 @@ ms.locfileid: "59023558"
   "ruleName": "String"
 }
 ```
+
 
 
 

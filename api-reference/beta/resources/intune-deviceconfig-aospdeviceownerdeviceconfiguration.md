@@ -2,15 +2,15 @@
 title: тип ресурса aospDeviceOwnerDeviceConfiguration
 description: В этом разделе описаны объявленные методы, свойства и связи, открытые ресурсом AndroidDeviceOwnerAOSPDeviceConfiguration.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5b08761f4e4da3fa71038a94e7098328d308bb47
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2d682af96e2d681c2b425972d33c985fde5bab9c
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59148006"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339621"
 ---
 # <a name="aospdeviceownerdeviceconfiguration-resource-type"></a>тип ресурса aospDeviceOwnerDeviceConfiguration
 
@@ -39,19 +39,19 @@ ms.locfileid: "59148006"
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|supportsScopeTags|Логическое|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|supportsScopeTags|Boolean|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость к выпуску ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|appsAllowInstallFromUnknownSources|Логическое|Указывает, разрешено ли пользователю включить параметр неизвестных источников.|
+|appsBlockInstallFromUnknownSources|Boolean|Указывает, разрешено ли пользователю включить параметр неизвестных источников. При установке true пользователю не разрешается включить параметры неизвестных источников.|
 |bluetoothBlocked|Boolean|Указывает, следует ли отключить использование Bluetooth. При наборе true bluetooth нельзя включить на устройстве.|
-|BluetoothBlockConfiguration|Логический|Указывает, следует ли блокировать пользователю настройку Bluetooth.|
-|BluetoothBlockContactSharing|Логический|Указывает, следует ли блокировать пользователю доступ к контактам по Bluetooth.|
+|BluetoothBlockConfiguration|Boolean|Указывает, следует ли блокировать пользователю настройку Bluetooth.|
+|BluetoothBlockContactSharing|Boolean|Указывает, следует ли блокировать пользователю доступ к контактам по Bluetooth.|
 |cameraBlocked|Boolean|Указывает, следует ли отключить использование камеры.|
 |cellularBlockWiFiTethering|Boolean|Указывает, следует ли заблокировать модем Wi-Fi.|
 |factoryResetBlocked|Boolean|Указывает, отключен ли параметр сброса фабрики в параметрах.|
@@ -60,12 +60,11 @@ ms.locfileid: "59148006"
 |passwordRequiredType|[AndroidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|Указывает минимальное качество пароля, необходимое на устройстве. Возможные значения: `deviceDefault`, `required`, `numeric`, `numericComplex`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `customPassword`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Указывает количество случаев, когда пользователь может ввести неправильный пароль до стирки устройства. Допустимые значения: от 4 до 11.|
 |screenCaptureBlocked|Boolean|Указывает, следует ли отключить возможность делать снимки экрана.|
-|securityAllowDebuggingFeatures|Логический|Указывает, следует ли блокировать пользователю включение функций отладки на устройстве.|
-|storageAllowUsb|Логический|Указывает, следует ли блокировать USB-хранилище.|
-|storageBlockExternalMedia|Логическое|Указывает, следует ли блокировать внешние носитли.|
-|storageBlockUsbFileTransfer|Логическое|Указывает, следует ли блокировать передачу usb-файлов.|
-|backupBlocked|Логический|Указывает, следует ли блокировать службу резервного копирования.|
-|wifiBlockEditConfigurations|Логический|Указывает, следует ли блокировать пользователю редактирование параметров подключения к Wi-Fi.|
+|securityAllowDebuggingFeatures|Boolean|Указывает, следует ли блокировать пользователю включение функций отладки на устройстве.|
+|storageBlockExternalMedia|Boolean|Указывает, следует ли блокировать внешние носитли.|
+|storageBlockUsbFileTransfer|Boolean|Указывает, следует ли блокировать передачу usb-файлов.|
+|backupBlocked|Boolean|Указывает, следует ли блокировать службу резервного копирования.|
+|wifiBlockEditConfigurations|Boolean|Указывает, следует ли блокировать пользователю редактирование параметров подключения к Wi-Fi.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -120,7 +119,7 @@ ms.locfileid: "59148006"
   "description": "String",
   "displayName": "String",
   "version": 1024,
-  "appsAllowInstallFromUnknownSources": true,
+  "appsBlockInstallFromUnknownSources": true,
   "bluetoothBlocked": true,
   "bluetoothBlockConfiguration": true,
   "bluetoothBlockContactSharing": true,
@@ -133,13 +132,13 @@ ms.locfileid: "59148006"
   "passwordSignInFailureCountBeforeFactoryReset": 1024,
   "screenCaptureBlocked": true,
   "securityAllowDebuggingFeatures": true,
-  "storageAllowUsb": true,
   "storageBlockExternalMedia": true,
   "storageBlockUsbFileTransfer": true,
   "backupBlocked": true,
   "wifiBlockEditConfigurations": true
 }
 ```
+
 
 
 

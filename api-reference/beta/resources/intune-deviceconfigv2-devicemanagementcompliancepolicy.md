@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cb7655aea442d23116ee45c94c3becc92676240f
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 9ed0a58a145cfc6a5a011b4a222def3c41a060a0
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60676827"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61339264"
 ---
 # <a name="devicemanagementcompliancepolicy-resource-type"></a>тип ресурса deviceManagementCompliancePolicy
 
@@ -36,16 +36,16 @@ ms.locfileid: "60676827"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ документа политики. Автоматически созданный.|
+|id|Строка|Ключ документа политики. Автоматически созданный.|
 |name|String|Имя политики|
-|description|String|Описание политики|
+|description|Строка|Описание политики|
 |платформы|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Платформы для этой политики. Возможные значения: `none`, `android`, `iOS`, `macOS`, `windows10X`, `windows10`.|
 |технологии|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Технологии для этой политики. Возможные значения: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`, `exchangeOnline`, `linuxMdm`, `unknownFutureValue`.|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Политика последней даты и времени изменения. Это свойство доступно только для чтения.|
 |settingCount|Int32|Количество параметров. Это свойство доступно только для чтения.|
-|creationSource|String|Источник создания политики|
-|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity.|
+|creationSource|Строка|Источник создания политики|
+|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity.|
 |isAssigned|Boolean|Состояние назначения политики. Это свойство доступно только для чтения.|
 
 ## <a name="relationships"></a>Связи
@@ -81,6 +81,7 @@ ms.locfileid: "60676827"
   "isAssigned": true
 }
 ```
+
 
 
 

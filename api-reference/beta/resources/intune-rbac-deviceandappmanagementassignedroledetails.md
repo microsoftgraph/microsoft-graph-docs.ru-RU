@@ -2,15 +2,15 @@
 title: тип ресурса deviceAndAppManagementAssignedRoleDetails
 description: Набор определений ролей и назначений ролей, присвоенных пользователю.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b82d762d5c20d64f917729a193f2914c87acf040
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9369faebceaabd27da230e4888914fee9c5e6133
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59030132"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342421"
 ---
 # <a name="deviceandappmanagementassignedroledetails-resource-type"></a>тип ресурса deviceAndAppManagementAssignedRoleDetails
 
@@ -49,6 +49,7 @@ ms.locfileid: "59030132"
   ]
 }
 ```
+
 
 
 

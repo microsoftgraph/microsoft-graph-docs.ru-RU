@@ -2,15 +2,15 @@
 title: Тип ресурса windows10MobileCompliancePolicy
 description: Этот класс содержит параметры обеспечения соответствия требованиям для Windows 10 Mobile.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bf930b7785ef685611ad3cf6ed5447ee75e96ea0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 8491cbe402aa2cfce9a8f10a1791315713e96318
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59064191"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61342533"
 ---
 # <a name="windows10mobilecompliancepolicy-resource-type"></a>Тип ресурса windows10MobileCompliancePolicy
 
@@ -60,10 +60,10 @@ ms.locfileid: "59064191"
 |secureBootEnabled|Boolean|Указывает на то, что служба подтверждения работоспособности устройства Windows должна сообщать о работоспособности (безопасная загрузка включена).|
 |codeIntegrityEnabled|Boolean|Указывает на то, что служба подтверждения работоспособности устройства Windows должна сообщать о работоспособности.|
 |storageRequireEncryption|Boolean|Указывает, обязательно ли шифрование данных на устройствах с Windows.|
-|activeFirewallRequired|Логический|Требуется активное брандмауэр на Windows устройствах.|
+|activeFirewallRequired|Boolean|Требуется активное брандмауэр на Windows устройствах.|
 |validOperatingSystemBuildRanges|[коллекция operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md)|Допустимые диапазоны сборки операционной системы на Windows устройствах. Эта коллекция может содержать не более 10 000 элементов.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |scheduledActionsForRule|Коллекция [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md)|Список запланированных действий для каждого правила для этой политики соответствия требованиям. Это обязательное свойство при создании отдельных политик соответствия требованиям на платформе. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
@@ -121,6 +121,7 @@ ms.locfileid: "59064191"
   ]
 }
 ```
+
 
 
 
