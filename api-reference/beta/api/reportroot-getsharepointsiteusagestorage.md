@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getSharePointSiteUsageStorage'
 description: Отслеживайте динамику выделенного и использованного объема хранилища за отчетный период.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 2e8767024f4ed65eb4ff9d39b5405769b8d0f5eb
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9b581909c6b9cda8c88dfc225c61b0066cb4ae7f
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052847"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390978"
 ---
 # <a name="reportroot-getsharepointsiteusagestorage"></a>reportRoot: getSharePointSiteUsageStorage
 
@@ -48,7 +48,7 @@ GET /reports/getSharePointSiteUsageStorage(period='{period_value}')
 
 | Параметр | Тип   | Описание                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
+| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
 
 Этот метод поддерживает [параметр запросов OData](/graph/query-parameters) `$format` для настройки отклика. Тип вывода по умолчанию — текст/csv. Однако, если требуется указать тип вывода, можно использовать параметр OData $format для параметра text/csv или application/json.
 
@@ -76,7 +76,7 @@ CSV-файл содержит столбцы со следующими заго�
 
 ### <a name="json"></a>JSON
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` **[объект siteUsageStorage](../resources/siteusagestorage.md)** в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` объект JSON в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -154,7 +154,7 @@ GET https://graph.microsoft.com/beta/reports/getSharePointSiteUsageStorage(perio
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.siteUsageStorage"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -163,7 +163,6 @@ Content-Type: application/json
 Content-Length: 248
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.siteUsageStorage)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

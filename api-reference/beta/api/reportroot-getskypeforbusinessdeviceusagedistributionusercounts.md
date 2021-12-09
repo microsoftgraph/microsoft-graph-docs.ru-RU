@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getSkypeForBusinessDeviceUsageDistributionUserCounts'
 description: Узнайте, сколько сотрудников организации используют уникальные устройства. В отчете будет показано количество пользователей устройств с Windows, телефонов с Windows, телефонов с Android, iPhone и iPad.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 4a842a378aabf55171b3ca69b0a114793ced4577
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3354f4eaeb4ee59c0ce7362c502ca8faa0202563
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52052833"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390678"
 ---
 # <a name="reportroot-getskypeforbusinessdeviceusagedistributionusercounts"></a>reportRoot: getSkypeForBusinessDeviceUsageDistributionUserCounts
 
@@ -48,7 +48,7 @@ GET /reports/getSkypeForBusinessDeviceUsageDistributionUserCounts(period='{perio
 
 | Параметр | Тип   | Описание                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
+| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
 
 Этот метод поддерживает [параметр запросов OData](/graph/query-parameters) `$format` для настройки отклика. Тип вывода по умолчанию — текст/csv. Однако, если требуется указать тип вывода, можно использовать параметр OData $format для параметра text/csv или application/json.
 
@@ -69,8 +69,8 @@ URL-адреса для скачивания, для которых выполн
 CSV-файл содержит столбцы со следующими заголовками:
 
 - "Report Refresh Date" (Дата обновления отчета);
-- "Windows";
-- "Windows Phone";
+- Windows
+- Windows Phone
 - "Android Phone" (Телефон с Android);
 - iPhone
 - iPad
@@ -78,7 +78,7 @@ CSV-файл содержит столбцы со следующими заго�
 
 ### <a name="json"></a>JSON
 
-В случае успеха этот метод возвращает код отклика и `200 OK` **[объект SkypeForBusinessDeviceUsageDistributionUserCounts](../resources/skypeforbusinessdeviceusagedistributionusercounts.md)** в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` объект JSON в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -156,7 +156,7 @@ GET https://graph.microsoft.com/beta/reports/getSkypeForBusinessDeviceUsageDistr
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.skypeForBusinessDeviceUsageDistributionUserCounts"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -165,7 +165,6 @@ Content-Type: application/json
 Content-Length: 275
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.skypeForBusinessDeviceUsageDistributionUserCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

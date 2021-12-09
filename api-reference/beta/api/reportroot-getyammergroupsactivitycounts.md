@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getYammerGroupsActivityCounts'
 description: Узнайте, сколько сообщений Yammer было опубликовано, прочитано и оценено в группах.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 8871ba7e354dc5cd20f3298f372d693e83f8308d
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: f8318977ce99539b99f23ccfd81b556b27cfa6ea
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054940"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390692"
 ---
 # <a name="reportroot-getyammergroupsactivitycounts"></a>reportRoot: getYammerGroupsActivityCounts
 
@@ -48,7 +48,7 @@ GET /reports/getYammerGroupsActivityCounts(period='{period_value}')
 
 | Параметр | Тип   | Описание                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
+| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. Обязательный. |
 
 Этот метод поддерживает [параметр запросов OData](/graph/query-parameters) `$format` для настройки отклика. Тип вывода по умолчанию — текст/csv. Однако, если требуется указать тип вывода, можно использовать параметр OData $format для параметра text/csv или application/json.
 
@@ -77,7 +77,7 @@ CSV-файл содержит столбцы со следующими заго�
 
 ### <a name="json"></a>JSON
 
-В случае успеха этот метод возвращает код отклика и `200 OK` **[объект yammerGroupsActivityCounts](../resources/yammergroupsactivitycounts.md)** в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` объект JSON в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -155,7 +155,7 @@ GET https://graph.microsoft.com/beta/reports/getYammerGroupsActivityCounts(perio
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.yammerGroupsActivityCounts"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -164,7 +164,6 @@ Content-Type: application/json
 Content-Length: 241
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.yammerGroupsActivityCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

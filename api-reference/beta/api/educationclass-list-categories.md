@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: afe5dc0863b138ee913e4d79015acabf8777c5a6
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d48ad6b3dfe81b83f2b8dee4c9b168f619b1e992
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60986607"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390734"
 ---
 # <a name="list-assignmentcategories"></a>Назначение спискаCategories
 
@@ -55,9 +55,9 @@ GET /education/classes/{id}/assignmentCategories
 
 В случае успешной работы этот метод возвращает код ответа и коллекцию `200 OK` [объектов educationCategory](../resources/educationcategory.md) в тексте ответа.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -88,14 +88,14 @@ GET https://graph.microsoft.com/beta/education/classes/4797d052-ebf5-4018-a088-e
 [!INCLUDE [sample-code](../includes/snippets/java/get-class-categories-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-class-categories-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа. 
 
@@ -113,7 +113,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/education/classes('4797d052-ebf5-4018-a088-e11adc6b2cbb')/assignmentCategories",
+    "@odata.context": "https://graph.microsoft.com/beta/education/classes('4797d052-ebf5-4018-a088-e11adc6b2cbb')/assignmentCategories",
     "value": [
       {
           "displayName": "Quizzes",

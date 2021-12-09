@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 04cd6378613ac47d50c3e6415f3daedbfd37b51a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 089b6831af5dd948d0738fd12302edba9a44bebd
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61010702"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390901"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -85,7 +85,7 @@ OneDrive для бизнеса и SharePoint поддерживают отпра
 
 ### <a name="presence"></a>presence
 
-**Подписки** на присутствие требуют [шифрования.](/graph/webhooks-with-resource-data) Создание подписки завершится сбоем, если не указан [encryptionCertificate](../resources/subscription.md).
+Подписки на **присутствие требуют** шифрования любых данных ресурсов, включенных в уведомление об изменении. Всегда укажите **параметр encryptionCertificate** при [создании подписки,](/graph/webhooks-with-resource-data#creating-a-subscription) чтобы избежать сбоя. Дополнительные сведения о [настройке уведомлений об изменении, чтобы включить данные ресурсов.](/graph/webhooks-with-resource-data)
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -150,7 +150,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-subscription-from-subscriptions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-subscription-from-subscriptions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

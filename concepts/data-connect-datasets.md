@@ -4,12 +4,12 @@ description: Описаны поддерживаемые наборы данны
 author: fercobo-msft
 ms.localizationpriority: high
 ms.prod: data-connect
-ms.openlocfilehash: 8e0aeffc6529737dbd89f759e8a9261d9989cad7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1ac242bf99707916e23f2cccfaba8a05cd62749d
+ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139179"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61336603"
 ---
 # <a name="datasets-regions-and-sinks-supported-by-microsoft-graph-data-connect"></a>Наборы данных, регионы и приемники, поддерживаемые подключением к данным Microsoft Graph
 
@@ -27,6 +27,7 @@ ms.locfileid: "59139179"
 | BasicDataSet_v0.DirectReport_v0    | Содержит сведения о сотрудниках, находящихся в непосредственном подчинении каждого пользователя.   | [DirectReport_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.DirectReport_v0.json)      | [Схема](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/DirectReport_v0.md) |
 | BasicDataSet_v0.Event_v0           | Содержит сведения из событий календаря пользователя.                            | [Event_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Event_v0.json)                    | [Схема](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/Event_v0.md) |
 | BasicDataSet_v0.Event_v1           | Содержит события из календаря каждого пользователя.                                       | [Event_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Event_v1.json)                    | [Схема](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/Event_v1.md) |
+| BasicDataSet_v0.Inbox_v1      | Содержит папки почты из папки "Входящие" каждого пользователя.                                | [Inbox_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Inbox_v1.json)          | [Схема](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/Inbox_v1.md) |
 | BasicDataSet_v0.MailboxSettings_v0 | Содержит параметры почтового ящика каждого пользователя.                                        | [MailboxSetting_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.MailboxSettings_v0.json) | [Схема](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/MailboxSettings_v0.md) |
 | BasicDataSet_v0.MailFolder_v0      | Содержит папки почты из почтового ящика каждого пользователя.                                | [MailFolder_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.MailFolder_v0.json)          | [Схема](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/MailFolder_v0.md) |
 | BasicDataSet_v0.Manager_v0         | Содержит сведения о пользователе для руководителя каждого пользователя.                            | [Manager_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Manager_v0.json)                | [Схема](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/Manager_v0.md) |
@@ -37,6 +38,7 @@ ms.locfileid: "59139179"
 | BasicDataSet_v0.TeamChat_v1        | Содержит [сообщения чата Teams](https://support.microsoft.com/office/first-things-to-know-about-chat-in-microsoft-teams-88ed0a06-6b59-43a3-8cf7-40c01f2f92f2) для личных и групповых чатов. Этот набор данных исключает сообщения чата, явно удаленные пользователями.     | [TeamChat_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.TeamChat_v1.json)              | [Схема](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/TeamChat_v1.md) |
 | BasicDataSet_v0.User_v0            | Содержит сведения о пользователе (DisplayName, UserPrincipalName и другую информацию). | [User_v0](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.User_v0.json)                      | [Схема](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/User_v0.md) |
 | BasicDataSet_v0.User_v1            | Содержит сведения о пользователе.                                                         | [User_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.User_v1.json)                      | [Схема](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/User_v1.md) |
+| DocumentSharingDataset_v0_Preview            | Содержит сведения о разрешении общего доступа к документам.                                                         | [DocumentSharingDataset_v0_Preview](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/DocumentSharingDataset_v0_Preview.json)                      | [Схема](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/DocumentSharingDataset_v0_Preview.md) |
 
 ## <a name="regions"></a>Регионы
 

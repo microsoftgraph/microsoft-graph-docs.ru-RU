@@ -1,16 +1,16 @@
 ---
 title: Отчеты о действиях в Yammer
-description: Вы можете понять уровень взаимодействия вашей организации с Yammer по уровню активности в организации и количеству уникальных пользователей, которые читают и читают сообщения в Yammer.
-localization_priority: Normal
+description: Вы можете понять уровень взаимодействия вашей организации с Yammer по количеству активностей, генерируемых в организации, и количеству уникальных пользователей, которые вывешиют, любят и читают сообщения в Yammer.
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: c0009949b5eb429f15155059768365b201078134
-ms.sourcegitcommit: 479b366f3265b666fdc024b0f90b8d29764bb4b2
+ms.openlocfilehash: 5d157217c94d35450929745a4f5bf0989bb2bf49
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49982469"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390831"
 ---
 # <a name="yammer-activity-reports"></a>Отчеты о действиях в Yammer
 
@@ -18,16 +18,16 @@ ms.locfileid: "49982469"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Вы можете понять уровень взаимодействия вашей организации с Yammer по уровню активности в организации и количеству уникальных пользователей, которые читают и читают сообщения в Yammer.
+Вы можете понять уровень взаимодействия вашей организации с Yammer по количеству активностей, генерируемых в организации, и количеству уникальных пользователей, которые вывешиют, любят и читают сообщения в Yammer.
 
-> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [отчетах Microsoft 365 - Yammer Activity.](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a)
+> **Примечание:** Подробные сведения о различных представлениях и именах [отчетов см. в Microsoft 365 отчеты - Yammer Activity](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a).
 
 ## <a name="reports"></a>Отчеты
 
-| Функция                                 | Тип возврата CSV | Тип возврата JSON                         | Описание                              |
-| :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
-| [Получение сведений о пользователях](../api/reportroot-getyammeractivityuserdetail.md) | Stream          | [yammerActivityUserDetail](../resources/yammeractivityuserdetail.md) | Получение сведений о действиях в Yammer с разбивкой по пользователям. |
-| [Получение количества действий](../api/reportroot-getyammeractivitycounts.md) | Stream          | [yammerActivitySummary](../resources/yammeractivitysummary.md) | Отследите динамику использования Yammer в организации по количеству опубликованных, прочитанных и понравившихся сообщений. |
-| [Получение количества пользователей](../api/reportroot-getyammeractivityusercounts.md) | Stream          | [yammerActivitySummary](../resources/yammeractivitysummary.md) | Отследите динамику по количеству уникальных пользователей, которые опубликовали, прочитали и оценили сообщения Yammer. |
+| Функция                                                     | Тип возврата CSV | Тип возврата JSON | Описание                                                  |
+| :----------------------------------------------------------- | :-------------- | :--------------- | ------------------------------------------------------------ |
+| [Получение сведений о пользователях](../api/reportroot-getyammeractivityuserdetail.md) | Stream          | Stream           | Получение сведений о действиях в Yammer с разбивкой по пользователям.                   |
+| [Получение количества действий](../api/reportroot-getyammeractivitycounts.md) | Stream          | Stream           | Отследите динамику использования Yammer в организации по количеству опубликованных, прочитанных и понравившихся сообщений. |
+| [Получение количества пользователей](../api/reportroot-getyammeractivityusercounts.md) | Stream          | Stream           | Отследите динамику по количеству уникальных пользователей, которые опубликовали, прочитали и оценили сообщения Yammer. |
 
 

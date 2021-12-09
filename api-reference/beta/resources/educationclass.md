@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 9d1b272689e1845d19ed657f26b36af608562942
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 973cb6ad47feb4d37030eb42d3bdca131c0bdd01
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61077644"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390671"
 ---
 # <a name="educationclass-resource-type"></a>Тип ресурса educationClass
 
@@ -40,10 +40,10 @@ ms.locfileid: "61077644"
 | [Перечисление заданий](../api/educationclass-list-assignments.md)           | [коллекция educationAssignment]                | Получите **коллекцию объектов educationAssignment.**                                         |
 | [Получение группы](../api/educationclass-get-group.md)                         | [group]                                        | Получите группу **Microsoft 365,** соответствующую данному **классу образования.**              |
 | [Создание educationCategory](../api/educationclass-post-category.md)      | [educationCategory]                            | Создайте **новую систему educationCategory** для этого класса.                                        |
-| [Перечисление категорий](../api/educationclass-list-categories.md)             | [коллекция educationCategory]                 | Получите список **объектов educationCategory,** которые принадлежат этому классу.                      |
+| [Перечисление категорий](../api/educationclass-list-categories.md)             | [коллекция educationCategory]                 | Получите список **объектов educationCategory,** принадлежащих этому классу.                      |
 | [Обновление](../api/educationclass-update.md)                               | [educationClass]                               | Обновление объекта **educationClass**.                                                         |
 | [удаление](../api/educationclass-delete.md);                               | Нет                                           | Удаление объекта **educationClass**.                                                         |
-| [Delta](../api/educationclass-delta.md)                                 | Коллекция [educationClass](educationclass.md) | Получить дополнительные изменения для **educationClasses**.                                          |
+| [Получение дельты](../api/educationclass-delta.md)                                 | Коллекция [educationClass](educationclass.md) | Получить дополнительные изменения для **educationClasses**.                                          |
 
 ## <a name="properties"></a>Свойства
 
@@ -54,7 +54,7 @@ ms.locfileid: "61077644"
 | курс               | [educationCourse](educationcourse.md) | Сведения о курсе для класса.                                                                                                                                     |
 | createdBy            | [identitySet]                         | Объект, создавший класс.                                                                                                                                         |
 | description          | Строка                                | Описание курса.                                                                                                                                            |
-| displayName          | Строка                                | Название курса.                                                                                                                                                   |
+| displayName          | String                                | Название курса.                                                                                                                                                   |
 | externalId           | String                                | Идентификатор курса из системы синхронизации.                                                                                                                             |
 | externalName         | String                                | Название курса в системе синхронизации.                                                                                                                             |
 | externalSource       | Строка                                | Тип внешнего источника, из который был создан этот ресурс (автоматически определяется `externalSourceDetail` из). Возможные значения: `sis`, `lms` или `manual`. |

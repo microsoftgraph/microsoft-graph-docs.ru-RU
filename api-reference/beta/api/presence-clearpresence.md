@@ -1,16 +1,16 @@
 ---
 title: 'присутствие: clearPresence'
 description: Очистка сведений о присутствии для сеанса присутствия приложения пользователя.
-author: jsandoval-msft
+author: mkhribech
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: af98bf701603acac022a0944c01937c2f0979641
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: af78f3718c45861b82428c6733c1dc8e7468bfc0
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60997365"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390880"
 ---
 # <a name="presence-clearpresence"></a>присутствие: clearPresence
 
@@ -18,16 +18,16 @@ ms.locfileid: "60997365"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Очистить сеанс присутствия приложения для пользователя. Если это единственный сеанс присутствия пользователя, его присутствие изменится на `Offline/Offline` .
+Очистить [сеанс присутствия](presence-setpresence.md#presence-sessions) приложения для пользователя. Если это единственный сеанс присутствия пользователя, успешное **clearPresence** меняет его присутствие на `Offline/Offline` .
 
-Сведения о сеансах присутствия см. в материале [presence: setPresence.](presence-setpresence.md#presence-sessions)
+Дополнительные новости о [сеансах присутствия](presence-setpresence.md#presence-sessions) и [их времени ожидания и истечения срока действия.](presence-setpresence.md#timeout-expiration-and-keep-alive) 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова API требуется следующее разрешение. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
+| Делегированные (рабочая или учебная учетная запись)     | Presence.ReadWrite                          |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
 | Для приложений                            | Presence.ReadWrite.All                      |
 
@@ -49,7 +49,7 @@ POST /users/{userId}/presence/clearPresence
 
 | Параметр | Тип   | Описание                                   |
 | :-------- | :----- | :-------------------------------------------- |
-| sessionId | Строка | ID сеанса присутствия приложения. |
+| sessionId | String | ID сеанса присутствия приложения. |
 
 
 > [!IMPORTANT]
@@ -57,7 +57,7 @@ POST /users/{userId}/presence/clearPresence
 > Предоставление ID приложения, как `sessionId` и в запросе.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
+При успешном выполнении этот метод возвращает код отклика `200 OK`.
 
 Если сеанс присутствия не существует, этот метод возвращает код `404 NotFound` ответа.
 
@@ -97,7 +97,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/clear--presence-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/clear--presence-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

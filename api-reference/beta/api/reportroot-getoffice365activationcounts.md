@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getOffice365ActivationCounts'
 description: Получите количество активаций Microsoft 365 на настольных компьютерах и устройствах.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 21444eddb72e12f52d1ab462e649be87436ff0ff
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 9f55a14bc7d001d694b5248b76a68cd746e59cd0
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049802"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61391048"
 ---
 # <a name="reportroot-getoffice365activationcounts"></a>reportRoot: getOffice365ActivationCounts
 
@@ -72,7 +72,7 @@ CSV-файл содержит столбцы со следующими заго�
 
 ### <a name="json"></a>JSON
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` **[объект Office365ActivationCounts](../resources/office365activationcounts.md)** в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` объект JSON в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -150,7 +150,7 @@ GET https://graph.microsoft.com/beta/reports/getOffice365ActivationCounts?$forma
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.office365ActivationCounts"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -159,7 +159,6 @@ Content-Type: application/json
 Content-Length: 268
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.office365ActivationCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

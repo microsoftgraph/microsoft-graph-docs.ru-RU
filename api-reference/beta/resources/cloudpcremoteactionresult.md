@@ -5,12 +5,12 @@ author: RuiHou105
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: ffbbae3fb66d396706391638e65acef1e8d7960f
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 377d2499857764d82c73620c16ee77f33ea33c26
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59763676"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61391013"
 ---
 # <a name="cloudpcremoteactionresult-resource-type"></a>тип ресурса cloudPcRemoteActionResult
 
@@ -30,7 +30,7 @@ ms.locfileid: "59763676"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|actionName|String|Указанное действие. Поддерживаемые значения: `Reprovision` , `Resize` .|
+|actionName|String|Указанное действие. Поддерживаемые значения на Microsoft Endpoint Manager: `Reprovision` , `Resize` . Поддерживаемые значения в корпоративных устройствах облачных ПК: `Rename` , `Reboot` , , `Reprovision` `Troubleshoot` .|
 |actionState|[actionState](#actionstate-values)|Состояние действия. Возможные значения: `None`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`. Только для чтения.|
 |cloudPcId|Строка|ID устройства облачного ПК, на котором выполняется удаленное действие. Только для чтения.|
 |managedDeviceId|Строка|ID управляемого устройства Intune, на котором выполняется удаленное действие. Только для чтения.|

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса присутствия
 description: Содержит сведения о присутствии пользователя, включая его доступность и активность пользователей.
-author: ananmishr
-localization_priority: Normal
+author: mkhribech
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 257167fe5b7d417751771650f8e5f03b3dd66296
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: 8589be83cc647952676b7f0059c60c1d60778b91
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53107692"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390992"
 ---
 # <a name="presence-resource-type"></a>Тип ресурса присутствия
 
@@ -26,25 +26,27 @@ ms.locfileid: "53107692"
 
 ## <a name="methods"></a>Методы
 
-| Метод                                                                               | Возвращаемый тип                                     | Описание                                      |
-| :----------------------------------------------------------------------------------- | :---------------------------------------------- | :----------------------------------------------- |
-| [Получить присутствие](../api/presence-get.md)                                               | [presence](../resources/presence.md)            | Получите сведения о присутствии пользователя.               |
-| [Наличие нескольких пользователей](../api/cloudcommunications-getpresencesbyuserid.md) | [Коллекция присутствия](../resources/presence.md) | Получите сведения о присутствии для нескольких пользователей. |
-| [Настройка присутствия](../api/presence-setpresence.md)                                               |                                                 | Установите сеанс присутствия приложения для пользователя.           |
-| [Четкое присутствие](../api/presence-clearpresence.md)                                           |                                                 | Очистить сеанс присутствия приложения для пользователя.         |
+| Метод                                                                               | Возвращаемый тип                                     | Описание                                                                       |
+| :----------------------------------------------------------------------------------- | :---------------------------------------------- | :-------------------------------------------------------------------------------- |
+| [Получить присутствие](../api/presence-get.md)                                               | [presence](../resources/presence.md)            | Получите сведения о присутствии пользователя.                                                |
+| [Наличие нескольких пользователей](../api/cloudcommunications-getpresencesbyuserid.md) | [Коллекция присутствия](../resources/presence.md) | Получите сведения о присутствии для нескольких пользователей.                                  |
+| [Настройка присутствия](../api/presence-setpresence.md)                                       |                                                 | Установите состояние доступности и активности [в](../api/presence-setpresence.md#presence-sessions) сеансе присутствия приложения для пользователя. |
+| [Четкое присутствие](../api/presence-clearpresence.md)                                   |                                                 | Очистить сеанс присутствия приложения для пользователя.                                       |
+| [Настройка предпочтительного присутствия пользователя](../api/presence-setuserpreferredpresence.md)           |                                                 | Установите предпочтительное состояние доступности и активности для пользователя.                    |
+| [Четкое предпочтительное присутствие пользователя](../api/presence-clearuserpreferredpresence.md)       |                                                 | Очистка предпочтительного состояния доступности и активности для пользователя.                  |
 
 ## <a name="properties"></a>Свойства
 
 | Связь        | Тип                                          | Описание                                                                                                                                                                                                                                                                                    |
 | :------------------ | :-------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | id                  | string                                        | ID объекта пользователя                                                                                                                                                                                                                                                                             |
-| availability        | Коллекция строк                             | Базовые сведения о присутствии пользователя. Возможные значения `Available` : , , , , `AvailableIdle` `Away` `BeRightBack` `Busy` `BusyIdle` `DoNotDisturb` , `Offline``PresenceUnknown`                                                                                                           |
-| действие            | Коллекция строк                             | Дополнительные сведения о доступности пользователя. Возможные `Available` значения: , , , , , , , , `Away` `BeRightBack` `Busy` `DoNotDisturb` `InACall` `InAConferenceCall` `Inactive` `InAMeeting` `Offline` `OffWork` `OutOfOffice` `PresenceUnknown` `Presenting` `UrgentInterruptionsOnly` . |
+| availability        | string collection                             | Базовые сведения о присутствии пользователя. Возможные значения `Available` : , , , , `AvailableIdle` `Away` `BeRightBack` `Busy` `BusyIdle` `DoNotDisturb` , `Offline``PresenceUnknown`                                                                                                           |
+| действие            | string collection                             | Дополнительные сведения о доступности пользователя. Возможные `Available` значения: , , , , , , , , `Away` `BeRightBack` `Busy` `DoNotDisturb` `InACall` `InAConferenceCall` `Inactive` `InAMeeting` `Offline` `OffWork` `OutOfOffice` `PresenceUnknown` `Presenting` `UrgentInterruptionsOnly` . |
 | outOfOfficeSettings | [outOfOfficeSettings](outOfOfficeSettings.md) | Параметры вне офиса для пользователя.                                                                                                                                                                                                                                                         |
 
 >**Примечание:** Дополнительные данные о различных состояниях присутствия см. в [Teams.](/microsoftteams/presence-admins) 
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

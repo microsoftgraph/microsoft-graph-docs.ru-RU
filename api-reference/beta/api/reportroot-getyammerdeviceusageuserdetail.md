@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getYammerDeviceUsageUserDetail function'
 description: Получение сведений об использовании устройства с Yammer с разбивкой по пользователям.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 776a217e0412d4556ef217ddb3caf165dc41da98
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: c4e6256667e9a51a642d30089d08ecec6561f05a
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52054954"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390699"
 ---
 # <a name="reportroot-getyammerdeviceusageuserdetail-function"></a>reportRoot: getYammerDeviceUsageUserDetail function
 
@@ -49,7 +49,7 @@ GET /reports/getYammerDeviceUsageUserDetail(date={date_value})
 
 | Параметр | Тип   | Описание                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. |
+| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D *n*, где *n* — количество дней в отчетном периоде. |
 | date      | Date   | Указывает дату, за которую вы хотите просмотреть пользователей, выполнивших какое-либо действие. Значение {date_value} указывается в формате ГГГГ-ММ-ДД. Так как этот отчет доступен только за последние 30 дней, значение {date_value} должно быть датой из этого диапазона. |
 
 > **Примечание.** В URL-адресе необходимо указать либо период, либо дату.
@@ -88,7 +88,7 @@ CSV-файл содержит столбцы со следующими заго�
 
 ### <a name="json"></a>JSON
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` **[объект yammerDeviceUsageUserDetail](../resources/yammerdeviceusageuserdetail.md)** в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` объект JSON в тексте ответа.
 
 Размер страницы по умолчанию для этого запроса составляет 200 элементов.
 
@@ -168,7 +168,7 @@ GET https://graph.microsoft.com/beta/reports/getYammerDeviceUsageUserDetail(peri
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.yammerDeviceUsageUserDetail"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -177,7 +177,6 @@ Content-Type: application/json
 Content-Length: 442
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.yammerDeviceUsageUserDetail)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-06", 

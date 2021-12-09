@@ -1611,6 +1611,10 @@ items:
                 href: api/presence-setpresence.md
               - name: Четкое присутствие
                 href: api/presence-clearpresence.md
+              - name: Настройка предпочтительного присутствия пользователя
+                href: api/presence-setuserpreferredpresence.md
+              - name: Четкое предпочтительное присутствие пользователя
+                href: api/presence-clearuserpreferredpresence.md
       - name: Соответствие требованиям
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
@@ -9352,7 +9356,7 @@ items:
                         href: api/intune-rbac-deviceandappmanagementroledefinition-delete.md
                       - name: Обновление
                         href: api/intune-rbac-deviceandappmanagementroledefinition-update.md
-                  - name: Identity
+                  - name: Удостоверение
                     href: resources/intune-rbac-identity.md
                   - name: Набор удостоверений
                     href: resources/intune-rbac-identityset.md
@@ -9934,6 +9938,12 @@ items:
                     href: api/cloudpc-reprovision.md
                   - name: Окончание льготного периода
                     href: api/cloudpc-endgraceperiod.md
+                  - name: Перезагрузка
+                    href: api/cloudpc-reboot.md
+                  - name: Переименовать
+                    href: api/cloudpc-rename.md
+                  - name: Устранение неполадок
+                    href: api/cloudpc-troubleshoot.md
                   - name: Удаленное действие reprovision
                     href: api/manageddevice-reprovisioncloudpc.md
                   - name: Массовое удаленное перепроизводство
@@ -10456,6 +10466,8 @@ items:
                 href: api/educationassignment-put-rubric.md
               - name: Удаление рубрики из назначения
                 href: api/educationassignment-delete-rubric.md
+              - name: Получение дельты
+                href: api/educationassignment-delta.md
           - name: Параметры назначения
             href: resources/educationassignmentsettings.md
             items:
@@ -10479,6 +10491,8 @@ items:
                 href: api/educationcategory-get.md
               - name: Удаление категории
                 href: api/educationcategory-delete.md
+              - name: Получение дельты
+                href: api/educationcategory-delta.md
           - name: Рубрики
             href: resources/educationrubric.md
             items:

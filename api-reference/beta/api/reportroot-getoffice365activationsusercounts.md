@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getOffice365ActivationsUserCounts'
 description: Получите количество пользователей, включенных, и пользователей, активировав подписку Office на настольных компьютерах или общих компьютерах.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: f8ec6ccaf9421994fad1585dd243ab7d6ba599c9
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: 3ab7e7f3572ecc2b86a9449e5fb8a489663c1af6
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52049795"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61391027"
 ---
 # <a name="reportroot-getoffice365activationsusercounts"></a>reportRoot: getOffice365ActivationsUserCounts
 
@@ -70,7 +70,7 @@ CSV-файл содержит столбцы со следующими заго�
 
 ### <a name="json"></a>JSON
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` **[объект Office365ActivationsUserCounts](../resources/office365activationsusercounts.md)** в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` объект JSON в тексте ответа.
 
 ## <a name="example"></a>Пример
 
@@ -148,7 +148,7 @@ GET https://graph.microsoft.com/beta/reports/getOffice365ActivationsUserCounts?$
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.office365ActivationsUserCounts"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -157,7 +157,6 @@ Content-Type: application/json
 Content-Length: 233
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.office365ActivationsUserCounts)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

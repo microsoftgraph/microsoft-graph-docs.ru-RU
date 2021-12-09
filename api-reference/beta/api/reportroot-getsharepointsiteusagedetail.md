@@ -1,16 +1,16 @@
 ---
 title: 'reportRoot: getSharePointSiteUsageDetail'
 description: Получение сведений об использовании сайтов SharePoint.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 7274d0b8425115afcfa7a7a18fd2ea2044e01e48
-ms.sourcegitcommit: dcf237b515e70302aec0d0c490feb1de7a60613e
+ms.openlocfilehash: e1cefa554ce07a403d2cecc3a1a59387d4ddfe54
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58804591"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390999"
 ---
 # <a name="reportroot-getsharepointsiteusagedetail"></a>reportRoot: getSharePointSiteUsageDetail
 
@@ -98,7 +98,7 @@ CSV-файл содержит столбцы со следующими заго�
 
 ### <a name="json"></a>JSON
 
-В случае успешной работы этот метод возвращает код ответа и `200 OK` **[объект sharePointSiteUsageDetail](../resources/sharepointsiteusagedetail.md)** в тексте ответа.
+В случае успешной работы этот метод возвращает код отклика и `200 OK` объект JSON в тексте ответа.
 
 Размер страницы по умолчанию для этого запроса составляет 200 элементов.
 
@@ -171,14 +171,14 @@ GET https://graph.microsoft.com/beta/reports/getSharePointSiteUsageDetail(period
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sharePointSiteUsageDetail"
+  "@odata.type": "stream"
 } -->
 
 ```http
@@ -187,7 +187,6 @@ Content-Type: application/json
 Content-Length: 484
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.sharePointSiteUsageDetail)", 
   "value": [
     {
       "reportRefreshDate": "2017-09-01", 

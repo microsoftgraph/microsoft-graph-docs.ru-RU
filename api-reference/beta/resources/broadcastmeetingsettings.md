@@ -1,16 +1,16 @@
 ---
 title: тип ресурса broadcastMeetingSettings
-description: Параметры, связанных с событием Teams в прямом эфире
+description: Представляет параметры, связанные с живым событием в Microsoft Teams.
 author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 36e5778761ac792e84096fd54f48c766e524149d
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: ca268c18f97db7609522a3bc6578acfd94d3ef0e
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696534"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390838"
 ---
 # <a name="broadcastmeetingsettings-resource-type"></a>тип ресурса broadcastMeetingSettings
 
@@ -18,7 +18,7 @@ ms.locfileid: "60696534"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Параметры, связанных [с Microsoft Teams событием в прямом эфире](/microsoftteams/teams-live-events/what-are-teams-live-events).
+Представляет параметры, связанные с живым [событием](/microsoftteams/teams-live-events/what-are-teams-live-events) в Microsoft Teams.
 
 ## <a name="properties"></a>Свойства
 

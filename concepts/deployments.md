@@ -3,12 +3,12 @@ title: Национальные облачные развертывания
 description: В дополнение к нашей глобальной сети центров обработки данных облачные службы Майкрософт доступны в трех отдельных национальных облачных службах.
 author: arpitha-dhanapathi
 ms.localizationpriority: medium
-ms.openlocfilehash: a6c3ecbcb5cbb48d76c678c2496349e562721b8d
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 9ee8d310017162035b8af5ea40c21f35e80d03a5
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226906"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390713"
 ---
 # <a name="national-cloud-deployments"></a>Национальные облачные развертывания
 
@@ -86,7 +86,7 @@ ms.locfileid: "61226906"
 | Почта Outlook | ✔ | ✔ | ✔ |
 | личные контакты; | ✔ | ✔ | ✔ |
 | Планировщик | ✔ | ✔ | ✔ |
-| Отчеты | ➖ | ✔ | ➖ |
+| Отчеты | ➖ | ➖ | ➖ |
 | Поиск (Поиск (Майкрософт)) | ➖ | ➖ | ➖ |
 | Безопасность | ✔ | ✔ | ✔ |
 | Работоспособность и взаимодействие служб | ✔ | ✔ | ✔ |
