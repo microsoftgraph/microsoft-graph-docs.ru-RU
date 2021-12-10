@@ -1,16 +1,16 @@
 ---
 title: Отправки списков
 description: Список всех отправлений, связанных с назначением.
-author: dipakboyed
+author: cristobal-buenrostro
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b686e2ee89015491bab0ed1a0be7f80425211ae8
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8ec7f25ef6c42c5a8b1d14c79e6d3c06adfcbba2
+ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60993976"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61403115"
 ---
 # <a name="list-submissions"></a>Отправки списков
 
@@ -18,9 +18,11 @@ ms.locfileid: "60993976"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список всех представлений, связанных с [назначением.](../resources/educationassignment.md)
+Список всех [представлений, связанных](../resources/educationsubmission.md) с [назначением.](../resources/educationassignment.md)
 
-Учитель или приложение с разрешениями на приложения могут получать все материалы, в то время как студент может получать только те материалы, с которые они связаны.
+Учитель или приложение с разрешениями на приложения могут получать все  **материалы,** студент может получать только те материалы, с которые они связаны.
+
+Предостереть `Prefer: include-unknown-enum-members` заглавную ссылку для **правильного списка отправлений** со `reassigned` статусом. Подробные сведения см. в разделе Примеры.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,12 +31,12 @@ ms.locfileid: "60993976"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All | 
+|Application | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /education/classes/{id}/assignments/{id}/submissions
+GET /education/classes/{class-id}/assignments/{assignment-id}/submissions
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -46,6 +48,7 @@ GET /education/classes/{id}/assignments/{id}/submissions
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
+| Prefer  | `include-unknown-enum-members`. Необязательно.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не поставляем тело запроса для этого метода.
@@ -84,10 +87,6 @@ GET https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0
 [!INCLUDE [sample-code](../includes/snippets/java/get-submissions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-submissions-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 #### <a name="response"></a>Отклик
@@ -104,6 +103,7 @@ GET https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 873
 
 {
     "value": [
@@ -175,10 +175,6 @@ GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-submissions-expand-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-submissions-expand-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -303,6 +299,134 @@ Content-length: 4492
                     ]
                 }
             ]
+        }
+    ]
+}
+```
+
+### <a name="example-3-get-submissions---request-with-optional-prefer-header"></a>Пример 3. Получить отправку — запрос с необязательным заготвом Prefer
+#### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_submissions_prefer"
+}-->
+```http
+GET https://graph.microsoft.com/beta/education/classes/59069eb2-2a09-4d90-bb19-2089cc69d613/assignments/80da1069-a635-4913-813f-d775a5470a8f/submissions
+Prefer: include-unknown-enum-members
+```
+---
+
+
+#### <a name="response"></a>Отклик
+Ниже приведен пример ответа. 
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationSubmission",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 4492
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('59069eb2-2a09-4d90-bb19-2089cc69d613')/assignments('80da1069-a635-4913-813f-d775a5470a8f')/submissions",
+    "value": [
+        {
+            "status": "working",
+            "submittedDateTime": null,
+            "unsubmittedDateTime": null,
+            "returnedDateTime": null,
+            "reassignedDateTime": null,
+            "resourcesFolderUrl": null,
+            "id": "f51a6687-a4a3-a8d9-ac4a-6ff81c5a8da7",
+            "recipient": {
+                "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
+                "userId": "0ca0dd79-57eb-4903-97dc-88c769dd2a3d"
+            },
+            "submittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "0ca0dd79-57eb-4903-97dc-88c769dd2a3d",
+                    "displayName": null
+                }
+            },
+            "unsubmittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "returnedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "reassignedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            }
+        },
+        {
+            "status": "reassigned",
+            "submittedDateTime": "2021-11-10T00:57:17.0495233Z",
+            "unsubmittedDateTime": null,
+            "returnedDateTime": null,
+            "reassignedDateTime": "2021-11-10T01:03:25.7812455Z",
+            "resourcesFolderUrl": null,
+            "id": "869369de-3e5a-89eb-6f2d-83cd88f860b5",
+            "recipient": {
+                "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
+                "userId": "723e2402-f503-4825-a4d5-5143fbe6f53d"
+            },
+            "submittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "723e2402-f503-4825-a4d5-5143fbe6f53d",
+                    "displayName": null
+                }
+            },
+            "unsubmittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "returnedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "reassignedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "afc58f1f-7c9e-4770-a448-e53ba43463a5",
+                    "displayName": null
+                }
+            }
         }
     ]
 }

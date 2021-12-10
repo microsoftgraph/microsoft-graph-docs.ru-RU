@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: 57419763ca3a35d41ecd871c83cc396f81936671
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 148a9d6d54ead703f32e4a3f27810fec11ebb711
+ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61335798"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61403129"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -156,12 +156,6 @@ GET /me/calendars/{id}/events
 ### <a name="view-meeting-details-menu-is-not-available-on-microsoft-teams-client"></a>Меню "Просмотр сведений о собрании" недоступно в клиенте Microsoft Teams
 
 Клиент Microsoft Teams не отображает меню **Просмотреть сведения о собрании** для собраний канала, созданных с помощью API коммуникаций из облака.
-
-## <a name="compliance"></a>Соответствие требованиям
-
-### <a name="subject-rights-request-api-permissions-are-not-currently-available"></a>Разрешения API запроса прав субъекта в настоящее время недоступны
-
-Объекты API запроса прав субъекта в API конфиденциальности Microsoft Graph в настоящее время не имеют доступных разрешений. Эта проблема может помешать пользователям видеть разрешения и давать согласие на использование API в своей среде. 
 
 ## <a name="contacts"></a>Контакты
 

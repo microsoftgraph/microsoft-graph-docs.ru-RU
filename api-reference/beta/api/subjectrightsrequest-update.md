@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 0500eb00ccaddb6233621164d72c903b83b0d255
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 007df34dfddc56344627f21419b37c3a9ea6937e
+ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61020333"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61403084"
 ---
 # <a name="update-subjectrightsrequest"></a>Обновление subjectRightsRequest
 Пространство имен: microsoft.graph
@@ -24,12 +24,9 @@ ms.locfileid: "61020333"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|SubjectRightsRequest.ReadWrite.All*|
+|Делегированные (рабочая или учебная учетная запись)|SubjectRightsRequest.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается|
-
->[!IMPORTANT]
->Разрешения, отмеченные звездочкой (*), в настоящее время недоступны. Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues#compliance).
+|Application|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -55,7 +52,7 @@ PATCH /privacy/subjectRightsRequests/{subjectRightsRequestId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |assignedTo|[microsoft.graph.identity](../resources/identity.md)|Сведения о удостоверениях пользователя, на который назначен запрос.|
-|description|Строка|Обновленное описание запроса.|
+|description|String|Обновленное описание запроса.|
 |displayName|String|Обновленное имя запроса.|
 |internalDueDateTime|DateTimeOffset|Обновлена внутренняя дата задатки запроса.|
 
@@ -98,7 +95,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-subjectrightsrequest-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-subjectrightsrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

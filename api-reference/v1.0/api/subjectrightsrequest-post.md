@@ -5,12 +5,12 @@ author: skadam-msft
 ms.localizationpriority: medium
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 3bd4335d3ce5161353e479cd6184e992b0d51c27
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1751778525d4ddcb4807bfeadfc5820841bc2eee
+ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60976209"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61403122"
 ---
 # <a name="create-subjectrightsrequest"></a>Создание subjectRightsRequest
 Пространство имен: microsoft.graph
@@ -22,12 +22,9 @@ ms.locfileid: "60976209"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|SubjectRightsRequest.ReadWrite.All*|
+|Делегированные (рабочая или учебная учетная запись)|SubjectRightsRequest.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается|
-
->[!IMPORTANT]
->Разрешения, отмеченные звездочкой (*), в настоящее время недоступны. Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues#compliance).
+|Application|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -54,10 +51,10 @@ POST /privacy/subjectRightsRequests
 |:---|:---|:---|
 |dataSubject|[microsoft.graph.dataSubject](../resources/datasubject.md)|Содержит свойства субъекта данных для запроса.|
 |dataSubjectType|dataSubjectType|Тип субъекта данных. Возможные значения: `customer`, `currentEmployee`, `formerEmployee`, `prospectiveEmployee`, `student`, `teacher`, `faculty`, `other`, `unknownFutureValue`.|
-|description|Строка|Описание запроса.|
-|displayName|Строка|Имя запроса.|
+|description|String|Описание запроса.|
+|displayName|String|Имя запроса.|
 |internalDueDateTime|DateTimeOffset|Внутренняя дата выполнения, используемая для отслеживания завершения запроса.|
-|нормативные акты|Коллекция String|Одно или несколько правил для запроса.|
+|нормативные акты|Коллекция строк|Одно или несколько правил для запроса.|
 |type|subjectRightsRequestType|Тип запроса. Возможные значения: `export`, `delete`, `access`, `tagForAction`, `unknownFutureValue`.|
 
 
@@ -108,7 +105,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-subjectrightsrequest-from--objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-subjectrightsrequest-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

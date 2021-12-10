@@ -1,16 +1,16 @@
 ---
 title: тип ресурса educationSubmission
 description: Представляет ресурсы, которые человек (или группа) передает для назначения, и результаты (например, оценки или отзывы), связанные с отправкой.
-author: dipakboyed
+author: cristobal-buenrostro
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 458d30bdf4955e2977903cbaf4ca384b63510bea
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 5cb697eec89d681d7c24acbffd95740368f18f6d
+ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767288"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61402972"
 ---
 # <a name="educationsubmission-resource-type"></a>тип ресурса educationSubmission
 
@@ -46,8 +46,8 @@ ms.locfileid: "59767288"
 |получатель;|[educationSubmissionRecipient](educationsubmissionrecipient.md)|Кто этому представлению назначено.|
 |returnedBy|[identitySet](identityset.md)|Пользователь, переместивший состояние этой отправки в возвращенный.|
 |returnedDateTime|DateTimeOffset|Момент, когда отправка была возвращена. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|resourcesFolderUrl|Строка|Папка, в которой необходимо хранить все ресурсы файла для этой отправки.|
-|status|string| Только для чтения. Возможные значения: `working` `submitted` , , , , `released` и `returned` `reassigned` . Обратите внимание, что вы должны использовать загон запроса, чтобы получить следующее значение `Prefer: include-unknown-enum-members` (ы) в этом [развиваемом переуме:](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `reassigned` .|
+|resourcesFolderUrl|String|Папка, в которой необходимо хранить все ресурсы файла для этой отправки.|
+|status|educationSubmissionStatus| Только для чтения. Возможные значения: `working` `submitted` , , , , `released` и `returned` `unknownFutureValue` `reassigned` . Обратите внимание, что вы должны использовать загон запроса, чтобы получить следующее значение `Prefer: include-unknown-enum-members` (ы) в этом [развиваемом переуме:](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `reassigned` .|
 |submittedBy|[identitySet](identityset.md)|Пользователь, переместивший ресурс в состояние отправленного.|
 |submittedDateTime|DateTimeOffset|Момент времени, когда отправка была перенесена в состояние отправленного. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |unsubmittedBy|[identitySet](identityset.md)|Пользователь, переместивший ресурс из отправленного в рабочее состояние.|

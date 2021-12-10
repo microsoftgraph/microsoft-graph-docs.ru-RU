@@ -4,12 +4,12 @@ description: Запросы изменений позволяют приложе
 author: davidmu1
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 8f0ba6ba59f1a9c538f8a467c35ca9bfcd4baeee
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9aead9c7a41acd7fc7f68bdd7575e8f9a318aeaa
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142388"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390943"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Отслеживание изменений в данных Microsoft Graph с помощью разностного запроса
 
@@ -63,9 +63,9 @@ ms.locfileid: "59142388"
 
     Число объектов на каждой странице зависит от типа ресурса и типа изменений, внесенных в ресурс.
 
-См. сведения о [поддержке параметров разностного запроса](delta-query-messages.md#use-query-parameters-in-a-delta-query-for-messages) для ресурса [message](/graph/api/resources/message?view=graph-rest-1.0).
+См. сведения о [поддержке параметров разностного запроса](delta-query-messages.md#use-query-parameters-in-a-delta-query-for-messages) для ресурса [message](/graph/api/resources/message).
 
-Для ресурсов [user](/graph/api/resources/user?view=graph-rest-1.0) и [group](/graph/api/resources/group?view=graph-rest-1.0) действуют ограничения на применение некоторых параметров запроса:
+Для ресурсов [user](/graph/api/resources/user) и [group](/graph/api/resources/group) действуют ограничения на применение некоторых параметров запроса:
 
 - Параметр `$expand` не поддерживается.
 - Параметр `$top` не поддерживается.
@@ -111,29 +111,31 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 | :------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Приложения                                                   | Функция [delta](/graph/api/application-delta) ресурса [application](/graph/api/resources/application)                                               |
 | Административные единицы (предварительная версия)                                 | Функция [delta](/graph/api/administrativeunit-delta) (предварительная версия) ресурса [administrativeUnit](/graph/api/resources/administrativeunit)                |
+| Категории заданий                                          | функция [delta](/graph/api/educationcategory-delta) ресурса [educationCategory](/graph/api/resources/educationcategory)                                    |
 | Сообщения чата в канале                                     | Функция [delta](/graph/api/chatmessage-delta) (предварительная версия) ресурса [chatMessage](/graph/api/resources/chatmessage)                                              |
 | Объекты каталога                                              | Функция [delta](/graph/api/directoryobject-delta) (предварительная версия) ресурса [directoryObject](/graph/api/resources/directoryobject)                         |
-| Перечисление ролей каталога                                                | Функция [delta](/graph/api/directoryrole-delta?view=graph-rest-1.0) ресурса [directoryObjects](/graph/api/resources/directoryrole?view=graph-rest-1.0) |
-| Элементы на диске\*                                                  | Функция [delta](/graph/api/driveitem-delta?view=graph-rest-1.0) ресурса [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0)             |
-| Классы образовательных учреждений                                              | Функция [delta](/graph/api/educationclass-delta) ресурса [educationClass](/graph/api/resources/educationclass)                                      |
+| Перечисление ролей каталога                                                | Функция [delta](/graph/api/directoryrole-delta) ресурса [directoryObjects](/graph/api/resources/directoryrole) |
+| Элементы на диске\*                                                  | Функция [delta](/graph/api/driveitem-delta) ресурса [driveItem](/graph/api/resources/driveitem)             |
+| Задания образовательных учреждений                                          | функция [delta](/graph/api/educationassignment-delta) ресурса [educationAssignment](/graph/api/resources/educationassignment)                                    |
+| Уроки в образовательных учреждениях                                              | Функция [delta](/graph/api/educationclass-delta) ресурса [educationClass](/graph/api/resources/educationclass)                                      |
 | Пользователи образовательных учреждений                                                | Функция [delta](/graph/api/educationuser-delta) ресурса [educationUser](/graph/api/resources/educationuser)                                         |
-| Учебные заведения                                              | Функция [delta](/graph/api/educationschool-delta) ресурса [educationSchool](/graph/api/resources/educationschool)                                   |
-| События в представлении (диапазоне дат) основного календаря | Функция [delta](/graph/api/event-delta?view=graph-rest-1.0) ресурса [event](/graph/api/resources/event?view=graph-rest-1.0)                         |
-| Группы                                                         | Функция [delta](/graph/api/group-delta?view=graph-rest-1.0) ресурса [group](/graph/api/resources/group?view=graph-rest-1.0)                         |
-| Папки почты                                                   | Функция [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) ресурса [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0)          |
-| Сообщения в папке                                           | Функция [delta](/graph/api/message-delta?view=graph-rest-1.0) ресурса [message](/graph/api/resources/message?view=graph-rest-1.0)                   |
-| Контакты организации                                        | функция[delta](/graph/api/orgcontact-delta?view=graph-rest-1.0) ресурса [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0)          |
+| Образовательная школа                                              | Функция [delta](/graph/api/educationschool-delta) ресурса [educationSchool](/graph/api/resources/educationschool)                                   |
+| События в представлении (диапазоне дат) основного календаря | Функция [delta](/graph/api/event-delta) ресурса [event](/graph/api/resources/event)                         |
+| Группы                                                         | Функция [delta](/graph/api/group-delta) ресурса [group](/graph/api/resources/group)                         |
+| Папки почты                                                   | Функция [delta](/graph/api/mailfolder-delta) ресурса [mailFolder](/graph/api/resources/mailfolder)          |
+| Сообщения в папке                                           | Функция [delta](/graph/api/message-delta) ресурса [message](/graph/api/resources/message)                   |
+| Контакты организации                                        | функция[delta](/graph/api/orgcontact-delta) ресурса [orgContact](/graph/api/resources/orgcontact)          |
 | OAuth2PermissionGrants                                         | Функция [delta](/graph/api/oauth2permissiongrant-delta) ресурса [oauth2permissiongrant](/graph/api/resources/oauth2permissiongrant)                 |
-| Папки личных контактов                                       | Функция [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) ресурса [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0) |
-| Личные контакты в папке                                  | Функция [delta](/graph/api/contact-delta?view=graph-rest-1.0) ресурса [contact](/graph/api/resources/contact?view=graph-rest-1.0)                   |
+| Папки личных контактов                                       | Функция [delta](/graph/api/contactfolder-delta) ресурса [contactFolder](/graph/api/resources/contactfolder) |
+| Личные контакты в папке                                  | Функция [delta](/graph/api/contact-delta) ресурса [contact](/graph/api/resources/contact)                   |
 | Элементы Planner\*\* (предварительная версия)                                    | Функция [delta](/graph/api/planneruser-list-delta) (предварительная версия) всего сегмента ресурса [plannerUser](/graph/api/resources/planneruser)                 |
 | Субъекты-службы                                             | Функция [delta](/graph/api/serviceprincipal-delta) ресурса [servicePrincipal](/graph/api/resources/serviceprincipal)                                |
 | Задачи в списке задач                                           | Функция [delta](/graph/api/todotask-delta) ресурса [todoTask](/graph/api/resources/todotask)                                                        |
 | Списки задач                                                     | Функция [delta](/graph/api/todotasklist-delta) ресурса [todoTaskList](/graph/api/resources/todotasklist)                                            |
-| Пользователи                                                          | Функция [delta](/graph/api/user-delta?view=graph-rest-1.0) ресурса [user](/graph/api/resources/user?view=graph-rest-1.0)                            |
+| Пользователи                                                          | Функция [delta](/graph/api/user-delta) ресурса [user](/graph/api/resources/user)                            |
 
 
-> \* Небольшие различия в использовании ресурсов OneDrive и других поддерживаемых ресурсов касаются синтаксиса. Разностный запрос для дисков будет обновлен в соответствии с запросами для других типов ресурсов. Дополнительные сведения о текущем синтаксисе см. в статье [Отслеживание изменений на диске](/graph/api/driveitem-delta?view=graph-rest-1.0).
+> \* Небольшие различия в использовании ресурсов OneDrive и других поддерживаемых ресурсов касаются синтаксиса. Разностный запрос для дисков будет обновлен в соответствии с запросами для других типов ресурсов. Дополнительные сведения о текущем синтаксисе см. в статье [Отслеживание изменений на диске](/graph/api/driveitem-delta).
 
 > \*\* Шаблон использования ресурсов Planner незначительно отличается от шаблонов использования других поддерживаемых ресурсов.  Дополнительные сведения см. в [этой статье](/graph/api/planneruser-list-delta).
 

@@ -5,12 +5,12 @@ author: besiler
 ms.localizationpriority: medium
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 4ae55af47254d48a002baa733e8ba8a1224db71a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: c826f3ffaa0a364aa3373823fa7c446f5557cf62
+ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59123071"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61402948"
 ---
 # <a name="signin-resource-type"></a>Тип ресурса signIn
 
@@ -33,7 +33,7 @@ ms.locfileid: "59123071"
 |appDisplayName|String|Имя приложения, отображаемая на портале Azure. Поддерживает `$filter` `eq` (и `startsWith` только операторов).|
 |appId|String|Уникальный GUID, представляющий ID приложения в Azure Active Directory. Поддерживает `$filter` `eq` (только оператор).|
 |appliedConditionalAccessPolicy|[appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md) collection|Предоставляет список политик условного доступа, запускаемых соответствующим действием входа.|
-|clientAppUsed|String|Определяет устаревший клиент, используемый для действий по входу.  Включает `Browser` , `Exchange Active Sync` `modern clients` , , , `IMAP` , , `MAPI` `SMTP` и `POP` . Поддерживает `$filter` `eq` (только оператор).|
+|clientAppUsed|String|Определяет клиента, используемого для действия входной записи. Современные клиенты проверки подлинности `Browser` включают и `modern clients` . Устаревшие клиенты проверки подлинности `Exchange Active Sync` включают , , , , и `IMAP` `MAPI` `SMTP` `POP` `other clients` . Поддерживает `$filter` `eq` (только оператор).|
 |conditionalAccessStatus|conditionalAccessStatus| Отчеты о состоянии активированной политики условного доступа. Возможные значения: `success`, `failure`, `notApplied` и `unknownFutureValue`. Поддерживает `$filter` `eq` (только оператор).|
 |correlationId|String|ID запроса, отправленный от клиента при входе; для устранения неполадок при входе. Поддерживает `$filter` `eq` (только оператор).|
 |createdDateTime|DateTimeOffset|Дата и время (UTC) началась входная точка. Пример: полночь 1 января 2014 г. сообщается как `2014-01-01T00:00:00Z` . Поддерживает `$orderby` и `$filter` `eq` `le` (и только `ge` операторов).|
@@ -46,7 +46,7 @@ ms.locfileid: "59123071"
 |resourceId|String|ID ресурса, в который подписан пользователь. Поддерживает `$filter` `eq` (только оператор).|
 |riskDetail|riskDetail|Предоставляет "причину" определенного состояния пользователя с риском, входа или события риска. Возможные значения: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. Значение `none` означает, что действия для пользователя или входа пока не выполнялись.  Поддерживает `$filter` `eq` (только оператор).<br>**Примечание:** Сведения об этом свойстве требуют Azure AD Premium P2 лицензии. Другие лицензии возвращают значение `hidden` .|
 |riskEventTypes|коллекция riskEventType|Типы событий риска, связанные с входом. Допустимые значения: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic` и `unknownFutureValue`. Поддерживает `$filter` `eq` (только оператор).|
-|riskEventTypes_v2|Коллекция String|Список типов событий риска, связанных с входом. Возможные значения: `unlikelyTravel` , , , , , , , , `anonymizedIPAddress` или `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence`  `generic` `unknownFutureValue` . Поддерживает `$filter` `eq` (и `startsWith` только операторов).|
+|riskEventTypes_v2|Коллекция строк|Список типов событий риска, связанных с входом. Возможные значения: `unlikelyTravel` , , , , , , , , `anonymizedIPAddress` или `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence`  `generic` `unknownFutureValue` . Поддерживает `$filter` `eq` (и `startsWith` только операторов).|
 |riskLevelAggregated|riskLevel|Совокупный уровень риска. Допустимые значения: `none`, `low`, `medium`, `high`, `hidden` и `unknownFutureValue`. Значение `hidden` означает, что пользователь или вход не разрешены в службе защиты идентификации Azure AD. Поддерживает `$filter` `eq` (только оператор). <br> **Примечание.** Сведения для этого свойства доступны только для пользователей Azure AD Premium P2. Для всех остальных пользователей возвращается значение `hidden`.|
 |riskLevelDuringSignIn|riskLevel|Уровень риска при входе. Допустимые значения: `none`, `low`, `medium`, `high`, `hidden` и `unknownFutureValue`. Значение `hidden` означает, что пользователь или вход не разрешены в службе защиты идентификации Azure AD.  Поддерживает `$filter` `eq` (только оператор). <br>**Примечание.** Сведения для этого свойства доступны только для пользователей Azure AD Premium P2. Для всех остальных пользователей возвращается значение `hidden`.|
 |riskState|riskState|Отчеты о состоянии рискованного пользователя, входе или событии риска. Возможные значения: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`. Поддерживает `$filter` `eq` (только оператор).|
@@ -55,7 +55,7 @@ ms.locfileid: "59123071"
 |userId|String|ID пользователя, который инициировал вход. Поддерживает `$filter` `eq` (только оператор).|
 |userPrincipalName|String|Имя пользователя, который инициировал вход. Поддерживает `$filter` `eq` (и `startsWith` только операторов).|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Нет
 

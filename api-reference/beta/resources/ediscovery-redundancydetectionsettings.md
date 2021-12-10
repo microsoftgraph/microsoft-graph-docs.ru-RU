@@ -1,16 +1,16 @@
 ---
 title: тип ресурса redundancyDetectionSettings
-description: Параметры избыточности для дела об обнаружении электронных данных
+description: Параметры избыточности для дела об обнаружении электронных данных.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: fd1ca1ea3faf03e2639896c79acd0629931c71c9
-ms.sourcegitcommit: e440d855f1106390d842905d97ceb16f143db2e5
+ms.openlocfilehash: ddd3d06e7d174509cae55fab0542a286fd4c1c70
+ms.sourcegitcommit: 33e0bbada1b47310a18d8f794914b1319d88e6f4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52080890"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61403172"
 ---
 # <a name="redundancydetectionsettings-resource-type"></a>тип ресурса redundancyDetectionSettings
 
@@ -25,9 +25,9 @@ ms.locfileid: "52080890"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |isEnabled|Boolean|Указывает, включена ли потоковая отправка электронной почты и обнаружение дубликата.|
-|maxWords|Int32|Узнайте [больше о минимальном](https://docs.microsoft.com/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#near-duplicates-and-email-threading) или максимальном количестве слов.|
-|minWords|Int32|Узнайте [больше о минимальном](https://docs.microsoft.com/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#near-duplicates-and-email-threading) или максимальном количестве слов.|
-|similarityThreshold|Int32|Подробнее [см. в сообщении о пороге сходства](https://docs.microsoft.com/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#near-duplicates-and-email-threading) документов и электронной почты.|
+|maxWords|Int32|Указывает максимальное количество слов, используемых для потоковой отправки электронной почты и обнаружения неподалеку от дубликата. Чтобы узнать больше, см. [в руб. Минимальное или максимальное количество слов.](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#near-duplicates-and-email-threading)|
+|minWords|Int32|Указывает минимальное количество слов, используемых для потоковой отправки электронной почты и обнаружения неподалеку от дубликата. Чтобы узнать больше, см. [в руб. Минимальное или максимальное количество слов.](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#near-duplicates-and-email-threading)|
+|similarityThreshold|Int32|Указывает уровень сходства для документов, которые будут помещаться в один и тот же рядом дубликат. Дополнительные дополнительные сообщения см. в [сообщении о пороге сходства документов и электронной почты.](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#near-duplicates-and-email-threading)|
 
 ## <a name="relationships"></a>Связи
 
