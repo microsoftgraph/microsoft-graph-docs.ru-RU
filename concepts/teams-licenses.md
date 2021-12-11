@@ -4,12 +4,12 @@ description: Узнайте о моделях лицензирования и о
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4f0f8c41d52ec54711e002253f691a3c298686f0
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: c59b13a68d16661212df21d9f710d0493e15c295
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688691"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390454"
 ---
 # <a name="licensing-and-payment-requirements-for-microsoft-teams-apis-in-microsoft-graph"></a>Требования к лицензированию и оплате для API Microsoft Teams в Microsoft Graph
 
@@ -37,6 +37,8 @@ ms.locfileid: "60688691"
 | [Обновление policyViolation для chatMessage](/graph/api/chatmessage-update) |  Отправитель сообщений |  800 сообщений на одного пользователя в месяц на приложение | 0,00075 доллара США за каждое сообщение |
 
 ## <a name="modelb-requirements"></a>Требования для `model=B`
+
+>**Примечание.** В данное время [`model=B`](#modelb-requirements) можно использовать бесплатно, однако в будущем за приложения будет взиматься плата в зависимости от количества потребляемых сообщений. 
 
 |API                   | Для кого нужна [лицензия](#required-licenses-for-modela)  | Заложенная емкость | Стоимость сверхлимитного использования | Заметки |
 |:-----------------------------|:--------------------------------------------|:----------------|:-------|:------|

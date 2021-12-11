@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: 35b9e3f515ec371216c785bd342de8d8285ceb88
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c3726459f31976bf687dd0a80f3cd3a8b4062116
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61032858"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390818"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -22,7 +22,7 @@ ms.locfileid: "61032858"
 
 ## <a name="permissions"></a>Разрешения
 
-Создание подписки требует наличия области чтения для ресурса. Например, чтобы получать уведомления об изменениях в сообщениях, приложению необходимо разрешение `Mail.Read`. 
+Создание подписки требует наличия области чтения для ресурса. Например, чтобы получать уведомления об изменениях в сообщениях, приложению необходимо `Mail.Read` разрешение. 
  
 В зависимости от ресурса и типа требующегося разрешения (делегированное или для приложения) разрешение, указанное в приведенной ниже таблице, является наименее привилегированным разрешением, необходимым для вызова этого API. Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference).
 
@@ -41,6 +41,7 @@ ms.locfileid: "61032858"
 |[group conversation](../resources/conversation.md) | Group.Read.All | Не поддерживается | Не поддерживается |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Не поддерживается | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
+|[presence](../resources/presence.md) | Presence.Read.All | Не поддерживается | Не поддерживается |
 |[printer](../resources/printer.md) | Не поддерживается | Не поддерживается | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Не поддерживается | Не поддерживается | PrintTaskDefinition.ReadWrite.All |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Не поддерживается | SecurityEvents.ReadWrite.All |
@@ -68,6 +69,10 @@ OneDrive для бизнеса и SharePoint поддерживают отпра
   - Используйте соответствующее разрешение приложения для подписки на изменения элементов в папке или почтовом ящике _любого_ пользователя в клиенте.
   - Не используйте разрешения Outlook на общий доступ (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared и их аналоги для чтения и записи), так как они **не** поддерживают подписку на уведомления об изменениях элементов в общих или делегированных папках.
 
+### <a name="presence"></a>presence
+
+Подписки на **присутствие** требуют шифрования любых данных ресурсов, включенных в уведомление об изменении. Всегда указывайте параметр **encryptionCertificate** при [создании подписки](/graph/webhooks-with-resource-data#creating-a-subscription), чтобы избежать сбоя. Дополнительные сведения о [настройке уведомлений об изменении, чтобы включить данные ресурсов](/graph/webhooks-with-resource-data).
+
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
@@ -80,7 +85,7 @@ POST /subscriptions
 
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
 ## <a name="response"></a>Отклик
 
@@ -128,7 +133,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-subscription-from-subscriptions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-subscription-from-subscriptions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -152,6 +157,7 @@ Content-type: application/json
 |[Группы](../resources/group.md)|`groups`|
 |[Список](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[Почта](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
+|[Присутствие](../resources/presence.md)| `/communications/presences/{id}` (один пользователь), `/communications/presences?$filter=id in ({id},{id}…)` (несколько пользователей)|
 |[printer](../resources/printer.md) |`print/printers/{id}/jobs`|
 |[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
 |[Оповещение безопасности](../resources/alert.md)|`security/alerts?$filter=status eq 'New'`|

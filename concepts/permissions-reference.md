@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: e2dcdaaa608ff0d75845e826424ad0482efafd7f
-ms.sourcegitcommit: e75969aa44a1aab722ac44d09c37508ffbad8738
+ms.openlocfilehash: f4e2929350b00fc2ba7180cd55652a161d6348bc
+ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2021
-ms.locfileid: "61307610"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61390461"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -230,7 +230,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 ### <a name="example-usage"></a>Примеры использования
 
-#### <a name="delegated"></a>Делегированные
+#### <a name="delegated"></a>Делегированное
 * _AppCatalog.ReadWrite.All_. [Составление списка всех приложений в каталоге](/graph/api/teamsapp-list?view=graph-rest-beta&preserve-view=true) (`GET /beta/appCatalogs/teamsApps`)
 * _AppCatalog.ReadWrite.All_. [Публикация приложения](/graph/api/teamsapp-publish?view=graph-rest-beta&preserve-view=true) (`POST /beta/appCatalogs/teamsApps`)
 * _AppCatalog.ReadWrite.All_. [Обновление опубликованного приложения](/graph/api/teamsapp-update?view=graph-rest-beta&preserve-view=true) (`PATCH /beta/appCatalogs/teamsApps/{id}`)
@@ -1328,7 +1328,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 В случае рабочих и учебных учетных записей разрешения _Notes.Read.All_ и _Notes.ReadWrite.All_ позволяют приложению получать доступ к содержимому OneNote других пользователей, которое доступно вошедшему пользователю в организации.
 
 ### <a name="example-usage"></a>Примеры использования
-#### <a name="delegated"></a>Делегированные разрешения
+#### <a name="delegated"></a>Delegated
 
 * _Notes.Create_. Создание записных книжек для вошедшего пользователя (`POST /me/onenote/notebooks`).
 * _Notes.Read_. Чтение записных книжек вошедшего пользователя (`GET /me/onenote/notebooks`).
@@ -1628,12 +1628,24 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Presence.Read_ | Чтение сведений о присутствии пользователя | Позволяет приложению считывать сведения о присутствии от имени вошедшего пользователя. Сведения о присутствии включают действия, доступность, подпись статуса, сообщение в календаре об отсутствии на работе, часовой пояс и расположение. | Нет |
 | _Presence.Read.All_ |   Чтение сведений о присутствии для всех пользователей в организации | Позволяет приложению считывать сведения о присутствии для всех пользователей в каталоге от имени вошедшего пользователя. Сведения о присутствии включают действия, доступность, подпись статуса, сообщение в календаре об отсутствии на работе, часовой пояс и расположение. | Нет |
+| _Presence.ReadWrite_ | Чтение и запись сведений о присутствии пользователя | Позволяет приложению считывать сведения о присутствии и записывать действия и сведения о доступности от имени вошедшего пользователя. Сведения о присутствии включают действия, доступность, подпись статуса, сообщение в календаре об отсутствии на работе, часовой пояс и расположение. | Да |
+
+#### <a name="application-permissions"></a>Разрешения приложений
+|   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Presence.ReadWrite.All_ | Чтение и запись сведений о присутствии для всех пользователей | Позволяет приложению считывать все сведения о присутствии и записывать действия и сведения о доступности всех пользователей в каталоге без вошедшего пользователя. Сведения о присутствии включают действия, доступность, подпись статуса, сообщение в календаре об отсутствии на работе, часовой пояс и расположение. | Да |
 
 ### <a name="example-usage"></a>Примеры использования
 
 * _Presence.Read_. Если вы выполнили вход, вы получите сведения о собственном присутствии (`GET /me/presence`)
 * _Presence.Read.All_. Получение сведений о присутствии другого пользователя (`GET /users/{id}/presence`)
 * _Presence.Read.All_. Получение сведений о присутствии нескольких пользователей (`POST /communications/getPresencesByUserId`)
+* _Presence.ReadWrite_:
+  * Если вы выполнили вход, задайте состояние сеанса своего присутствия (`POST /me/presence/setPresence`)
+  * Если вы выполнили вход, задайте свое предпочтительное присутствие (`POST /me/presence/setUserPreferredPresence`)
+* _Presence.ReadWrite.All:_
+  * Задание состояния сеанса присутствия пользователя как приложения (`POST /users/{id}/presence/setPresence`)
+  * Задание предпочтительного присутствия пользователя как приложения (`POST /users/{id}/presence/setUserPreferredPresence`)
 
 ---
 
