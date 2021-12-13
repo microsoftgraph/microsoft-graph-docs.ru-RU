@@ -1,0 +1,120 @@
+---
+title: 'baseTask: дельта'
+description: Получите набор ресурсов baseTask, которые были добавлены, удалены или обновлены в определенной базеTaskList.
+author: devindrajit
+ms.localizationpriority: medium
+ms.prod: outlook
+doc_type: apiPageType
+ms.openlocfilehash: 58f0514362776b064d3c47e3cd6dd1a50e5d19ae
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61425108"
+---
+# <a name="basetask-delta"></a>baseTask: дельта
+Пространство имен: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Получите набор ресурсов [baseTask,](../resources/basetask.md) которые были добавлены, удалены или обновлены в определенной [базеTaskList.](../resources/basetasklist.md)
+
+Вызов  функции дельты для **ресурсов baseTask** в **baseTaskList** похож на запрос [](/graph/delta-query-overview) GET, за исключением того, что при надлежащем применении маркеров состояния в одном или более из этих вызовов можно запрашивать дополнительные изменения в **baseTask** в этой **baseTaskList**. Это позволяет поддерживать и синхронизировать локальный магазин ресурсов **baseTask** пользователя без необходимости каждый раз получать весь набор с сервера.
+
+## <a name="permissions"></a>Разрешения
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
+|:---|:---|
+|Делегированное (рабочая или учебная учетная запись)|Tasks.Read, Tasks.ReadWrite|
+|Делегированное (личная учетная запись Майкрософт)|Tasks.Read, Tasks.ReadWrite|
+|Для приложений|Не поддерживается|
+
+## <a name="http-request"></a>HTTP-запрос
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /me/tasks/lists/{baseTaskListId}/tasks/delta
+GET /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/delta
+```
+
+## <a name="query-parameters"></a>Параметры запроса
+
+Отслеживание изменений **в коллекции baseTask** вызывает один или несколько вызовов функций **дельты.** Если вы используете параметры запроса, отличные от `$deltatoken` и `$skiptoken`, их необходимо указать в начальном запросе **delta**. Microsoft Graph автоматически кодирует указанные параметры в маркере, входящем в состав URL-адреса `nextLink` или `deltaLink`, включенного в отклик. Параметры запроса нужно указать только один раз в первом запросе. В последующих запросах просто скопируйте и примените URL-адрес из предыдущего ответа, так как этот URL-адрес уже содержит закодированные `nextLink` `deltaLink` и нужные параметры.
+
+| Параметр запроса    | Тип |Описание|
+|:---------------|:--------|:----------|
+| $deltatoken | string | Маркер [состояния,](/graph/delta-query-overview) возвращенный в URL-адрес предыдущей функции дельты, для той же коллекции baseTask, что указывает на завершение этого раунда `deltaLink` отслеживания  изменений. Сохраните URL-адрес `deltaLink` с этим токеном и примените его в первом запросе следующего цикла отслеживания изменений для этой коллекции.|
+| $skiptoken | string | Маркер [состояния,](/graph/delta-query-overview) возвращенный в URL-адрес предыдущего вызова функции дельты, указывает на то, что в той же коллекции baseTask необходимо отслеживать дальнейшие `nextLink` изменения.  |
+
+### <a name="odata-query-parameters"></a>Параметры запросов OData
+
+- Поддержка запросов Delta `$filter` `$top` и `$expand` параметры запросов **для baseTask.** 
+- Параметр `$search` не поддерживается.
+
+## <a name="request-headers"></a>Заголовки запросов
+| Имя       | Тип | Описание |
+|:---------------|:----------|:----------|
+| Authorization  | string  | Bearer {token}. Обязательный. |
+| Prefer | string  | odata.maxpagesize={x}. Необязательный параметр. |
+
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
+
+## <a name="response"></a>Отклик
+
+В случае успешной работы эта функция возвращает код ответа и `200 OK` [коллекцию baseTask](../resources/basetask.md) в тексте ответа.
+
+## <a name="examples"></a>Примеры
+
+### <a name="request"></a>Запрос
+<!-- {
+  "blockType": "request",
+  "name": "basetask_delta"
+}
+-->
+``` http
+GET /me/tasks/lists/AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQpLAt-6oC2JgAQCQ47jE5P--SoVECqTdM17RAAAB4mDIAAA=/tasks/delta
+```
+
+
+### <a name="response"></a>Отклик
+**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.baseTask)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(baseTask)",
+    "@odata.deltaLink": "https://graph.microsoft.com/beta/me/tasks/lists/AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQpLAt-6oC2JgAQCQ47jE5P--SoVECqTdM17RAAAB4mDIAAA=/tasks/delta?$deltatoken=AVCnFFj2r7PtnjtkD-g_6dgDSPbEboZhaMYEytpd57pcJMrR9oGkCIjK_dyVkhNB1EQn1zcQt7YZTwCS0V5MNQo6Iy0-T0csAkLZTMlbiII.lVEHqD5xdDrH30csYKP6tEvoYa3WtFhmYLtKBSxCPpQ",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.task",
+            "@odata.etag": "W/\"kOO4xOT//0qFRAqk3TNe0QAAAymRBQ==\"",
+            "importance": "normal",
+            "status": "notStarted",
+            "displayName": "Read documentation",
+            "createdDateTime": "2021-11-15T13:16:53.0831814Z",
+            "lastModifiedDateTime": "2021-11-15T13:17:08.8273666Z",
+            "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AkOO4xOT--0qFRAqk3TNe0QAAAy35RwAA",
+            "body": {
+                "content": "",
+                "contentType": "text"
+            },
+            "parentList": {
+                "id": "AAMkAGVjMzJmMWZjLTgyYjgtNGIyNi1hOGQ0LWRjMjNmMGRmOWNiYQAuAAAAAAAboFsPFj7gQpLAt-6oC2JgAQCQ47jE5P--SoVECqTdM17RAAAB4mDIAAA="
+            }
+        }
+    ]
+}
+```
+

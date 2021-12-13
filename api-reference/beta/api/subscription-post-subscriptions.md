@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 089b6831af5dd948d0738fd12302edba9a44bebd
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: 88629f81300284bebe3276b437b406ece1b10360
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61390901"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424664"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -59,6 +59,7 @@ ms.locfileid: "61390901"
 |[teams](../resources/team.md) (/teams — все команды в организации) | Не поддерживается | Не поддерживается | Team.ReadBasic.All, TeamSettings.Read.All |
 |[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All | Не поддерживается | Team.ReadBasic.All, TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
+|[baseTask](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
@@ -85,7 +86,7 @@ OneDrive для бизнеса и SharePoint поддерживают отпра
 
 ### <a name="presence"></a>presence
 
-Подписки на **присутствие требуют** шифрования любых данных ресурсов, включенных в уведомление об изменении. Всегда укажите **параметр encryptionCertificate** при [создании подписки,](/graph/webhooks-with-resource-data#creating-a-subscription) чтобы избежать сбоя. Дополнительные сведения о [настройке уведомлений об изменении, чтобы включить данные ресурсов.](/graph/webhooks-with-resource-data)
+Подписки на **присутствие** требуют шифрования любых данных ресурсов, включенных в уведомление об изменении. Всегда указывайте параметр **encryptionCertificate** при [создании подписки](/graph/webhooks-with-resource-data#creating-a-subscription), чтобы избежать сбоя. Дополнительные сведения о [настройке уведомлений об изменении, чтобы включить данные ресурсов](/graph/webhooks-with-resource-data).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -99,7 +100,7 @@ POST /subscriptions
 
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
 ## <a name="response"></a>Отклик
 
@@ -182,6 +183,7 @@ Content-type: application/json
 |[Teams](../resources/team.md)|`/teams`, `/teams/{id}`|
 |[Пользователи](../resources/user.md)|`users`|
 |[todoTask](../resources/todotask.md) | `/me/todo/lists/{todoTaskListId}/tasks`
+|[baseTask](../resources/basetask.md) | `/me/tasks/lists/{baseTaskListId}/tasks`, `/me/tasks/alltasks`
 |[Оповещение безопасности](../resources/alert.md)|`security/alerts?$filter=status eq 'NewAlert'`|
 
 > **Примечание.** Любой путь, начинающийся с `me`, также можно использовать с `users/{id}` вместо `me`, чтобы указать определенного пользователя, а не текущего пользователя.

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 8cd4f9bd8f65a84baf2a4d0109f68a779964f45b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d129c8dec54d25dcd2f03647141fafaedcb810f8
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61033747"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424541"
 ---
 # <a name="delete-subscription"></a>Удаление подписки
 
@@ -57,6 +57,7 @@ ms.locfileid: "61033747"
 |[teams](../resources/team.md) (/teams — все команды в организации) | Не поддерживается | Не поддерживается | Team.ReadBasic.All, TeamSettings.Read.All |
 |[teams](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All | Не поддерживается | Team.ReadBasic.All, TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
+|[baseTask](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
@@ -103,7 +104,7 @@ DELETE /subscriptions/{subscription-id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`.
 
 Подробнее о том, как возвращаются ошибки, см. в статье [Возвращение ошибок][error-response].
 
@@ -138,7 +139,7 @@ DELETE https://graph.microsoft.com/beta/subscriptions/7f105c7d-2dc5-4530-97cd-4e
 [!INCLUDE [sample-code](../includes/snippets/java/delete-subscription-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-subscription-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

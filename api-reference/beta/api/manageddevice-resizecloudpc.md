@@ -5,12 +5,12 @@ author: RuiHou105
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 952c6996d60058b94ff93fe352a047a52370a07a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3acd6adde7857dc4b28999843ffd858295bdf034
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019846"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424674"
 ---
 # <a name="manageddevice-resizecloudpc"></a>managedDevice: resizeCloudPc
 
@@ -26,9 +26,9 @@ ms.locfileid: "61019846"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|CloudPC.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Application|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,7 +49,13 @@ POST /deviceManagement/managedDevices/{managedDeviceId}/resizeCloudPc
 
 ## <a name="request-body"></a>Текст запроса
 
-Не указывайте текст запроса для этого метода.
+В тело запроса добавьте параметры в формате JSON.
+
+В следующей таблице указаны параметры, которые можно использовать с этим действием.
+
+|Параметр|Тип|Описание|
+|:---|:---|:---|
+|targetServicePlanId|Строка|ID плана целевой службы конфигурации размера с новым vCPU и размером хранилища.|
 
 ## <a name="response"></a>Отклик
 
@@ -59,8 +65,6 @@ POST /deviceManagement/managedDevices/{managedDeviceId}/resizeCloudPc
 
 ### <a name="request"></a>Запрос
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "managedDevice_resizeCloudPc"
@@ -69,29 +73,12 @@ POST /deviceManagement/managedDevices/{managedDeviceId}/resizeCloudPc
 
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/resizeCloudPc
+Content-Type: application/json
+
+{
+  "targetServicePlanId": "30d0e128-de93-41dc-89ec-33d84bb662a0"
+}
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/manageddevice-resizecloudpc-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/manageddevice-resizecloudpc-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/manageddevice-resizecloudpc-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/manageddevice-resizecloudpc-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/manageddevice-resizecloudpc-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>Отклик
 

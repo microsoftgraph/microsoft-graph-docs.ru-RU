@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: f840680e452f34deec639335759768a4f02bd7bb
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 34d056266af25bd1edcd460e40c012f883ca6660
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60980622"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424597"
 ---
 # <a name="update-open-extension"></a>Обновление открытого расширения
 
@@ -42,8 +42,8 @@ ms.locfileid: "60980622"
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Не поддерживается | Organization.ReadWrite.All |
 | [contact](../resources/contact.md) (личный контакт) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
-| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
-| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [task](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [tasklist](../resources/basetasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -61,8 +61,8 @@ PATCH /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
 PATCH /organization/{Id}/extensions/{extensionId}
 PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
 PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
-PATCH /users/me/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extensionId}
-PATCH /users/me/todo/lists/{todoTaskListId}/extensions/{extensionId}
+PATCH /users/me/tasks/lists/{baseTaskListId}/tasks/{taskId}/extensions/{extensionId}
+PATCH /users/me/tasks/lists/{baseTaskListId}/extensions/{extensionId}
 ```
 
 >**Примечание:** В вышеуказанном синтаксисе показано несколько распространенных способов идентификации экземпляра ресурса для обновления расширения в нем. Все остальные синтаксис, позволяющие идентифицировать эти экземпляры ресурсов, поддерживают обновление открытых расширений в них аналогичным образом.
@@ -232,7 +232,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/update-opentypeextension-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-opentypeextension-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -4,12 +4,12 @@ description: Предоставляет ответы на часто задам�
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 34bbf90b42d1b85acc5f768599c4b50a88b859b1
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 19f1691126317861d84e89fab44f9cdbaaaa7ea2
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241305"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424331"
 ---
 # <a name="azure-ad-graph-to-microsoft-graph-migration-faq"></a>Azure AD Graph microsoft Graph вопросы миграции
 
@@ -138,6 +138,8 @@ API Azure AD Graph предоставляет доступ только к сл�
 
 Если вам по-прежнему необходимо настроить Graph Azure AD для приложений, используйте одно из следующих обходных пути.
 
++ С помощью портала Azure можно найти API, которые использует организация
++ Обновление манифеста приложения на портале Azure
 + Используйте [API](/graph/api/resources/application) приложения в Microsoft Graph для обновления объекта [requiredResourceAccess](/graph/api/resources/requiredresourceaccess)
 + Используйте [комлет Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true)   в Microsoft Graph PowerShell
 

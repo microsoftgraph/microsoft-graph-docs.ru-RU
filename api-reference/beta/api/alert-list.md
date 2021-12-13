@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 68bee6316619da533a4e838e39db95524ab670a2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ac495739dbf563ba4395225ef8faaabed25bc4a8
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60991290"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424611"
 ---
 # <a name="list-alerts"></a>Перечисление оповещений
 
@@ -53,16 +53,16 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 - `$top` – Возвращает объединенные лучшие результаты от каждого поставщика API безопасности.
 - `$filter`
 
-В таблице ниже перечислены ключевые слова `$filter` по именам поставщиков.
+В таблице ниже перечислены ключевые слова `$filter` по именам поставщиков. Несмотря на то, что некоторые из этих продуктов были ребрендингом, API еще не обновлен. Ключевые слова фильтра будут продолжать использовать устаревшие имена до дальнейшего уведомления. См. [в переделе](https://developer.microsoft.com/en-us/graph/changelog) обновлений.
 
 | Наименование поставщика      |ключевое слово $filter|
 |:----------|:----------|
-| Расширенная защита от угроз Azure | Расширенная защита от угроз Azure | 
+| Microsoft Defender для удостоверений | Расширенная защита от угроз Azure | 
 | Центр безопасности Azure | ASC |
-| Microsoft Cloud App Security | MCAS |
+| Microsoft Defender for Cloud Apps | MCAS |
 | Защита идентификации Azure Active Directory | IPC |
 | Azure Sentinel | Azure Sentinel |
-| Advanced Threat Protection в Microsoft Defender | ATP в Защитнике Windows |
+| Microsoft Defender для конечной точки | ATP в Защитнике Windows |
 | Office 365 |  В настоящее время не поддерживается. |
 
 Чтобы возвратить альтернативный набор свойств, используйте параметр запроса OData `$select`, чтобы указать нужный набор свойств **alert**.  Например, чтобы вернуть свойства **assignedTo**, **category** и **severity**, добавьте в свой запрос следующее: `$select=assignedTo,category,severity`.
@@ -114,7 +114,7 @@ GET https://graph.microsoft.com/beta/security/alerts
 [!INCLUDE [sample-code](../includes/snippets/java/get-alerts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-alerts-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

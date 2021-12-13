@@ -5,12 +5,12 @@ author: harini84
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 74bf1c7e3a28280a0aca86aefb9e056befc29dff
-ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
+ms.openlocfilehash: 8f4b7b53ef18e5e777b0b154b00e4473ba0cce49
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240930"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424730"
 ---
 # <a name="event-resource-type"></a>Тип ресурса event
 
@@ -80,7 +80,7 @@ ms.locfileid: "60240930"
 |changeKey|String|Указывает версию объекта события. При каждом изменении события также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
 |end|[DateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс завершения события. По умолчанию время завершения указано в формате UTC.|
-|exceptionOccurrences|Коллекция String|Содержит значения свойства **id** экземпляров событий, которые являются исключениями в повторяющемся ряду.<br>Исключения могут отличаться от других вхождений в повторяющемся ряду, таких как тема, время начала или окончания и участники. Исключения не включают отмененные вхождения.<br><br>Возвращается только для $select и $expand в операции [GET](../api/event-get.md), в которой указывается идентификатор основного события в ряду (т. е. значение свойства seriesMasterId).|
+|exceptionOccurrences|Коллекция [event](event.md)|Содержит значения свойства **id** экземпляров событий, которые являются исключениями в повторяющемся ряду.<br>Исключения могут отличаться от других вхождений в повторяющемся ряду, таких как тема, время начала или окончания и участники. Исключения не включают отмененные вхождения.<br><br>Возвращается только для $select и $expand в операции [GET](../api/event-get.md), в которой указывается идентификатор основного события в ряду (т. е. значение свойства seriesMasterId).|
 |hasAttachments|Boolean|Задайте значение true, если у события есть вложения.|
 |hideAttendees|Boolean|Если присвоено значение `true`, каждый участник видит только себя в приглашении на собрание и списке собрания **Отслеживание**. Значение по умолчанию: false.|
 |id|String| Уникальный идентификатор события. [!INCLUDE [outlook-beta-id](../../includes/outlook-immutable-id.md)] С учетом регистра и только для чтения.|
@@ -169,7 +169,7 @@ ms.locfileid: "60240930"
   "changeKey": "string",
   "createdDateTime": "String (timestamp)",
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
-  "exceptionOccurrences":["string"],
+  "exceptionOccurrences":["microsoft.graph.event"],
   "hasAttachments": true,
   "hideAttendees": false,
   "uid": "string",

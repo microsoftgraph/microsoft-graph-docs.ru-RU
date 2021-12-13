@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 3190e107ed5b443f6a6d5944a124f3327353770e
-ms.sourcegitcommit: e75969aa44a1aab722ac44d09c37508ffbad8738
+ms.openlocfilehash: 0c71564588531094f7741f1bdf9ab22435816277
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2021
-ms.locfileid: "61307603"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424646"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -191,9 +191,9 @@ ms.locfileid: "61307603"
 
 |Member|
 |:---|
-|String|
+|Строка|
 |Целое число|
-|Справка|
+|Справочные материалы|
 |Binary|
 |Boolean|
 |DateTime|
@@ -371,7 +371,7 @@ ms.locfileid: "61307603"
 
 |Member|
 |:---|
-|userPrincipalName|
+|userPrincipalName.|
 |onPremisesUserPrincipalName|
 |userPrincipalUsername|
 |onPremisesUserPrincipalUsername|
@@ -437,7 +437,7 @@ ms.locfileid: "61307603"
 |:---|
 |email|
 |mobileSMS|
-|mobilePhone|
+|mobilePhone;|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -584,7 +584,7 @@ ms.locfileid: "61307603"
 |Member|
 |:---|
 |email|
-|mobilePhone|
+|mobilePhone;|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -898,7 +898,7 @@ ms.locfileid: "61307603"
 |Member|
 |:---|
 |email|
-|mobilePhone|
+|mobilePhone;|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -1665,7 +1665,7 @@ Enum для серьезности оповещений.
 
 ### <a name="chatmessagepolicyviolationdlpactiontype-values"></a>значения chatMessagePolicyViolationDlpActionType
 
-| Значение |
+| Value |
 |:-----------------|
 | Нет |
 | NotifySender |
@@ -2006,13 +2006,13 @@ Enum для серьезности оповещений.
 |:---|:---|
 |Нет|0|
 |High (Высокий)|1|
-|Низкие|2|
+|Низкая|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>значения threatAssessmentContentType
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| mail   | 1     | Угроза почты.            |
+| mail;   | 1     | Угроза почты.            |
 | url    | 2     | УГРОЗА URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 
@@ -2134,7 +2134,7 @@ Enum для серьезности оповещений.
 |валюта | столбец валюты. |
 |dateTime | Столбец dateTime. |
 |lookup | столбец lookup. |
-|логический | Столбец Да/Нет. |
+|boolean | Столбец Да/Нет. |
 |пользователь | столбец персоны или группы. |
 |url | гиперссылка или столбец изображения. |
 |вычисляется | вычислимый столбец. |
@@ -2159,7 +2159,7 @@ Enum для серьезности оповещений.
 | Элемент                | Значение | Описание                         |
 |:----------------------|:------|:------------------------------------|
 | string                | 1     | строковый тип данных                    |
-| логический               | 2     | тип данных Boolean                   |
+| boolean               | 2     | тип данных Boolean                   |
 | int64                 | 3     | Тип данных Int                       |
 | stringCollection      | 4     | Тип данных коллекции строк         |
 |dateTime|5||
@@ -2171,7 +2171,7 @@ Enum для серьезности оповещений.
 |:----------------------|:------|:-------------------------------------------------------------------|
 | builtIn               | 1     | Этот тип атрибута потока пользователей обозначает, что он был создан системой |
 | настраиваемый                | 2     | Этот тип атрибута потока пользователей обозначает, что он был создан пользователем   |
-|Обязательный|3||
+|обязательно|3||
 | unknownFutureValue    | 4     | Член-часовой.                                                 |
 
 ### <a name="permissionclassificationtype-values"></a>значения permissionClassificationType
@@ -2568,4 +2568,23 @@ Enum для серьезности оповещений.
 |teacher|
 |факультет|
 |другие|
+|unknownFutureValue|
+
+### <a name="taskstatus_v2-values"></a>taskStatus_v2 значения
+
+|Member|
+|:---|
+|notStarted|
+|inProgress|
+|завершено|
+|unknownFutureValue|
+
+
+### <a name="wellknownlistname_v2-values"></a>wellKnownListName_v2 значения
+
+|Member|
+|:---|
+|Нет|
+|defaultList|
+|flaggedEmail|
 |unknownFutureValue|

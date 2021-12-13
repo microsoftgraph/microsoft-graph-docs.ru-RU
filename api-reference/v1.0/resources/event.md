@@ -5,12 +5,12 @@ author: Harini84
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 355ecee7c0292d29059695631eeb7ae21736a4f5
-ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
+ms.openlocfilehash: efe5ff48c4459775c4355a5ddd93f253f0dd43ba
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240959"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424639"
 ---
 # <a name="event-resource-type"></a>Тип ресурса event
 
@@ -74,12 +74,10 @@ ms.locfileid: "60240959"
 |attendees|Коллекция [Attendee](attendee.md)|Коллекция участников события.|
 |body|[ItemBody](itembody.md)|Текст сообщения, связанного с событием. В формате HTML или текстовом формате.|
 |bodyPreview|Строка|Предварительный просмотр сообщения, связанного с событием. В текстовом формате.|
-|cancelledOccurrences|Коллекция String|Содержит значения свойства **occurrenceId** отмененных экземпляров в повторяющемся ряду, если событие является основным в этом ряду. Отмененные экземпляры в повторяющемся ряду называются cancelledOccurences.<br><br>Возвращается только для $select в операции [Get](../api/event-get.md), в которой указывается идентификатор основного события в ряду (т. е. значение свойства seriesMasterId).|
 |categories|Коллекция String|Категории, связанные с событием. Каждая категория соответствует свойству **displayName** объекта [outlookCategory](outlookcategory.md), определенного для пользователя.|
 |changeKey|String|Указывает версию объекта события. При каждом изменении события также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
 |end|[DateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс завершения события. По умолчанию время завершения указано в формате UTC.|
-|exceptionOccurrences|Коллекция String|Содержит значения свойства **id** экземпляров событий, которые являются исключениями в повторяющемся ряду.<br>Исключения могут отличаться от других вхождений в повторяющемся ряду, таких как тема, время начала или окончания и участники. Исключения не включают отмененные вхождения.<br><br>Возвращается только для $select и $expand в операции [GET](../api/event-get.md), в которой указывается идентификатор основного события в ряду (т. е. значение свойства seriesMasterId).|
 |hasAttachments|Boolean|Задайте значение true, если у события есть вложения.|
 |hideAttendees|Boolean|Если присвоено значение `true`, каждый участник видит только себя в приглашении на собрание и списке собрания **Отслеживание**. Значение по умолчанию: false.|
 |iCalUId|String|Уникальный идентификатор для события в календарях. Этот идентификатор отличается для каждого вхождения повторяющегося ряда. Только для чтения.|
@@ -94,7 +92,6 @@ ms.locfileid: "60240959"
 |lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`.|
 |location|[Location](location.md)|Место проведения события.|
 |locations|Коллекция [Location](location.md)|Места проведения события или участия в нем. Свойства **location** и **locations** всегда совпадают друг с другом. Если вы обновите свойство **location**, предыдущие места в коллекции **locations** будут удалены и заменены новым значением **location**. |
-|occurrenceId|String|Идентификатор вхождения в повторяющемся ряду событий. Значение NULL, если событие не является частью повторяющегося ряда.<br><br>Формат значения свойства — OID.{seriesMasterId-value}.{occurrence-start-date}. Часовым поясом для {occurrence-start-date} является свойство recurrenceTimeZone, определенное для соответствующего [recurrenceRange](recurrencerange.md).<br><br>Это свойство может определять вхождение в повторяющемся ряду, в том числе измененное или отмененное. Это свойство можно использовать для выполнения всех операций, которые поддерживаются вхождениями в повторяющемся ряду.|
 |onlineMeeting|[OnlineMeetingInfo](onlinemeetinginfo.md)| Сведения, необходимые участнику, чтобы присоединиться к собранию по сети. Значение по умолчанию — NULL. Только для чтения. <br>После настройки свойств **isOnlineMeeting** и **onlineMeetingProvider** для разрешения собрания по сети Microsoft Graph инициализирует **onlineMeeting**. После завершения настройки собрание останется доступным по сети, и вы не сможете изменить свойства **isOnlineMeeting**, **onlineMeetingProvider** и **onlneMeeting**.|
 |onlineMeetingProvider|onlineMeetingProviderType| Представляет поставщика службы собраний по сети. По умолчанию **onlineMeetingProvider** — `unknown`. Возможные значения: `unknown`, `teamsForBusiness`, `skypeForBusiness` и `skypeForConsumer`. Необязательное свойство. <br> После настройки **onlineMeetingProvider** Microsoft Graph инициализирует **onlineMeeting**. После этого вы не сможете изменить **onlineMeetingProvider** и собрание останется доступным по сети. |
 |onlineMeetingUrl|String|URL-адрес собрания. Свойство будет задано только в том случае, если организатор определяет в Outlook, что событие является собранием по сети, например в Skype. Только для чтения.<br>Чтобы получить доступ к URL-адресу и присоединиться к собранию по сети, воспользуйтесь **joinUrl**, который предоставляется через свойство **event**, **onlineMeeting**. В будущем свойство **onlineMeetingUrl** будет упразднено. |
@@ -113,7 +110,6 @@ ms.locfileid: "60240959"
 |subject|String|Текст в строке темы сообщения о событии.|
 |transactionId|Строка|Настраиваемый идентификатор, указанный клиентским приложением серверу во избежание лишних операций [POST](../api/calendar-post-events.md) в том случае, если клиент попробует снова создать одно и то же событие. Это полезно в тех случаях, когда из-за плохого сетевого подключения клиент отключается, не успев получить от сервера ответ на предыдущий запрос клиента на создание события. После того, как при создании события вы настроили **transactionId**, вы можете изменить **transactionId** в последующем обновлении. Это свойство возвращается только в полезных данных ответа, если такая настройка была сделана в приложении. Необязательное свойство.|
 |type|String|Тип события. Возможные значения: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Только для чтения|
-|uid|String|Уникальный идентификатор для событий календаря. В случае повторяющихся событий для главного события серии и всех его повторений (в том числе исключений) используется одно и то же значение. Это свойство заменит текущее свойство iCalUid, определенное в [ресурсе event](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true), для которого в каждом экземпляре серии задавались разные значения.|
 |webLink|String|URL-адрес для открытия события в Outlook в Интернете.<br/><br/>Outlook в Интернете открывает это событие в браузере, если выполнен вход в почтовый ящик. В противном случае Outlook в Интернете предлагает выполнить вход.<br/><br/>Доступ к этому URL-адресу невозможно получить из элемента iFrame.|
 
 > [!NOTE]
@@ -163,15 +159,12 @@ ms.locfileid: "60240959"
   "attendees": [{"@odata.type": "microsoft.graph.attendee"}],
   "body": {"@odata.type": "microsoft.graph.itemBody"},
   "bodyPreview": "string",
-  "cancelledOccurrences":["string"],
   "categories": ["string"],
   "changeKey": "string",
   "createdDateTime": "String (timestamp)",
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
-  "exceptionOccurrences":["string"],
   "hasAttachments": true,
   "hideAttendees": false,
-  "uid": "string",
   "id": "string (identifier)",
   "importance": "String",
   "isAllDay": true,
@@ -183,7 +176,6 @@ ms.locfileid: "60240959"
   "lastModifiedDateTime": "String (timestamp)",
   "location": {"@odata.type": "microsoft.graph.location"},
   "locations": [{"@odata.type": "microsoft.graph.location"}],
-  "occurrenceId":"string",
   "onlineMeeting": {"@odata.type": "microsoft.graph.onlineMeetingInfo"},
   "onlineMeetingProvider": "string",
   "onlineMeetingUrl": "string",

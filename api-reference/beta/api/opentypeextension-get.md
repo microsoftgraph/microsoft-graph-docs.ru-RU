@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 4ea12ffcd7d9b6fef214129f5817f284d3e038b3
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3241ebbedebfcdcfcf9ccd1d5fd36edc7e0ff9f6
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61034100"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424569"
 ---
 # <a name="get-open-extension"></a>Получение открытого расширения
 
@@ -26,7 +26,7 @@ ms.locfileid: "61034100"
 
 |**Сценарий GET**|**Поддерживаемые ресурсы**|**Текст ответа**|
 |:-----|:-----|:-----|
-|Получение определенного расширения из экземпляра известного ресурса.| [Административный блок](../resources/administrativeunit.md), [устройство](../resources/device.md), [событие](../resources/event.md), [группа](../resources/group.md) [,](../resources/event.md)групповое событие , [групповое](../resources/post.md)событие [,](../resources/message.md)сообщение [,](../resources/organization.md)организация [,](../resources/contact.md)личный контакт [,](../resources/user.md)пользователь [,](../resources/todotask.md)задача , [tasklist](../resources/todotasklist.md)  | Только открытое расширение.|
+|Получение определенного расширения из экземпляра известного ресурса.| [Административный блок](../resources/administrativeunit.md), [устройство](../resources/device.md), [событие](../resources/event.md), [группа](../resources/group.md) [,](../resources/event.md)групповое событие , [групповое](../resources/post.md)событие [,](../resources/message.md)сообщение [,](../resources/organization.md)организация [,](../resources/contact.md)личный контакт [,](../resources/user.md)пользователь [,](../resources/basetask.md)задача , [tasklist](../resources/basetasklist.md)  | Только открытое расширение.|
 |Получение экземпляра известного ресурса, дополненного определенным расширением.|Административный блок, устройство, событие, группа, групповое событие, групповое событие, должность группы, сообщение, организация, личный контакт, пользователь, задача, список задач. |Экземпляр известного ресурса, дополненный открытым расширением.|
 |Поиск экземпляров ресурсов и их дополнение определенным расширением. | Событие, групповое событие, должность группы, сообщение, личный контакт, задача, список задач |Экземпляры ресурса, дополненные открытым расширением.|
 
@@ -45,8 +45,8 @@ ms.locfileid: "61034100"
 | [organization](../resources/organization.md) | User.Read | Не поддерживается | Organization.Read.All |
 | [contact](../resources/contact.md) (личный контакт) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [user](../resources/user.md) | User.Read | User.Read | User.Read.All |
-| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
-| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [task](../resources/basetask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
+| [tasklist](../resources/basetasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -68,8 +68,8 @@ GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
 GET /organization/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/todo/lists/{todoTaskListId}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{taskId}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/tasks/lists/{baseTaskListId}/extensions/{extensionId}
 ```
 
 ### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a>Получение известного экземпляра ресурса с соответствующим расширением 
@@ -83,8 +83,8 @@ GET /groups/{Id}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/threads/{Id}/posts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/todo/lists/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/tasks/lists/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 ```
 
 
@@ -175,7 +175,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1
 [!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -245,7 +245,7 @@ GET https://graph.microsoft.com/beta/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a
 [!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -307,7 +307,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1
 [!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -428,7 +428,7 @@ GET https://graph.microsoft.com/beta/groups/37df2ff0-0de0-4c33-8aee-75289364aef6
 [!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -469,22 +469,14 @@ Content-Type: application/json
 
 В пятом примере показано, как найти в почтовом ящике вошедшего пользователя сообщения с расширениями, соответствующими фильтру, и дополнить их расширением. Фильтр возвращает расширения, свойство **id** которых совпадает с именем расширения `Com.Contoso.Referral`.
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_opentypeextension_5"
 }-->
-```msgraph-interactive
+
+```http
 GET https://graph.microsoft.com/beta/me/messages?$filter=Extensions/any(f:f/id%20eq%20'Com.Contoso.Referral')&$expand=Extensions($filter=id%20eq%20'Com.Contoso.Referral')
 ```
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-5-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 
 #### <a name="response-5"></a>Отклик 5
 
