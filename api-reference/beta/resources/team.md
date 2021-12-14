@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса team
-description: 'Команда в Microsoft Teams — это коллекция каналов. '
+description: Команда в Microsoft Teams — это коллекция каналов.
 author: AkJo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7769fd62e04010b0ba36a325f64a62363570aa78
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: fa0289079f274f206dd630079084eef683a882d7
+ms.sourcegitcommit: c99d3feb3ab5cae506c1f758bc277a637adc9111
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695303"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61432663"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
@@ -41,6 +41,7 @@ ms.locfileid: "58695303"
 |[Распаковка команды](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Восстановление команды в состояние чтения и записи. |
 |[Клонирование команды](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Копирование команды и ее связанной группы. |
 |[Перечисление ваших команд](../api/user-list-joinedteams.md) | Коллекция [team](team.md) | Перечисление команд, в которых вы являетесь участником. |
+|[Перечисление всех команд в организации](../api/teams-list.md) | Коллекция [team](team.md) | Перечисление всех команд в организации. |
 |[Получение фотографии команды](../api/team-get-photo.md) | Двоичные данные | Вы можете получить фотографию (изображение) для команды. |
 |[Завершение миграции](../api/team-completemigration.md)|[team](team.md)| Удаление режима миграции из команды, после чего команда становится доступной для публикации и чтения сообщений пользователями.|
 |[Перечисление приложений, установленных в команде](../api/team-list-installedapps.md) | Коллекция [teamsAppInstallation](teamsappinstallation.md) | Перечисление приложений, установленных в команде.|
@@ -79,7 +80,7 @@ ms.locfileid: "58695303"
 |:-----------------------|:-------|:-------------------------|
 |@microsoft.graph.teamCreationMode|Строка|Указывает, что команда находится в состоянии миграции и в настоящее время используется для миграции. Принимает одно значение: `migration`. **Примечание**. В дальнейшем корпорация Майкрософт может потребовать у вас или ваших клиентов оплаты дополнительных сборов на основе количества импортированных данных.|
 
-Пример запроса POST см. в разделе [Запрос (создание команды в состоянии миграции)](https://docs.microsoft.com/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+Пример запроса POST см. в разделе [Запрос (создание команды в состоянии миграции)](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
 ## <a name="relationships"></a>Связи
 

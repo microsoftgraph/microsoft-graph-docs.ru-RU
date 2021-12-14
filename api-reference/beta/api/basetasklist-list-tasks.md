@@ -5,12 +5,12 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e703e8a3e51263b833622e54a6c9d50576eb32cf
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 1a4df47f32a92d78bdd56bf1d1a786ddde83a64b
+ms.sourcegitcommit: c99d3feb3ab5cae506c1f758bc277a637adc9111
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/13/2021
-ms.locfileid: "61425033"
+ms.locfileid: "61432656"
 ---
 # <a name="list-basetasks"></a>Список baseTasks
 Пространство имен: microsoft.graph
@@ -40,7 +40,7 @@ GET /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$expand` параметры `$filter` `top` [запроса OData](/graph/query-parameters) для настройки ответа.  
+Этот метод поддерживает `$expand` параметры `$filter` `$top` [запроса OData](/graph/query-parameters) для настройки ответа.  
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|

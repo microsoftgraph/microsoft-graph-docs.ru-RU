@@ -5,12 +5,12 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5b3a6306ca565485bfc1eed775a8a4153fcecbb9
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 94ea95d30e3dddfe6cc4f050d05348de2c9498ee
+ms.sourcegitcommit: c99d3feb3ab5cae506c1f758bc277a637adc9111
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/13/2021
-ms.locfileid: "61425123"
+ms.locfileid: "61432652"
 ---
 # <a name="list-lists"></a>Перечисление списков
 Пространство имен: microsoft.graph
@@ -40,7 +40,7 @@ GET /users/{userId|userPrincipalName}/tasks/lists
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$expand` параметры `$filter` `top` [запроса OData](/graph/query-parameters) для настройки ответа.  
+Этот метод поддерживает `$expand` параметры `$filter` `$top` [запроса OData](/graph/query-parameters) для настройки ответа.  
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|

@@ -14285,6 +14285,8 @@ items:
                 href: api/team-clone.md
               - name: Список ваших команд
                 href: api/user-list-joinedteams.md
+              - name: Список всех групп в организации
+                href: api/teams-list.md
               - name: Получить основной канал
                 href: api/team-get-primarychannel.md
               - name: Как получить фотографию группы

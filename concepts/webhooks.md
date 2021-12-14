@@ -5,12 +5,12 @@ author: davidmu1
 ms.prod: non-product-specific
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 889c2e7de64069529ebf528dcd2a5aeb893854c1
-ms.sourcegitcommit: 84d9a50dfa9526a207696c69d92381c8763d986a
+ms.openlocfilehash: c98bb05b700ddabfda9544350e4be580ee818df6
+ms.sourcegitcommit: c99d3feb3ab5cae506c1f758bc277a637adc9111
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59979245"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61432635"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Настройка уведомлений об изменениях в пользовательских данных
 
@@ -264,7 +264,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
     Если ожидаемое время обработки превышает 3 секунды, следует сохранить уведомление, вернуть код состояния `202 - Accepted` в отклике для Microsoft Graph, а затем обработать уведомления. Если уведомление не сохранено, верните код класса 5xx для указания на ошибку, чтобы уведомление было удалено.
 
-    Если ожидаемое время обработки составляет менее 3 секунд, следует обработать уведомления и вернуть код состояния `200 - Accepted` в отклике для Microsoft Graph. Если уведомление не обрабатывается должным образом, верните код класса 5xx для указания на ошибку, чтобы уведомление было удалено.
+    Если ожидаемое время обработки составляет менее 3 секунд, следует обработать уведомления и вернуть код состояния `200 - OK` в отклике для Microsoft Graph. Если уведомление не обрабатывается должным образом, верните код класса 5xx для указания на ошибку, чтобы уведомление было удалено.
 
 1. Проверьте свойство `clientState`. Оно должно соответствовать значению, отправленному с запросом на создание подписки.
 
