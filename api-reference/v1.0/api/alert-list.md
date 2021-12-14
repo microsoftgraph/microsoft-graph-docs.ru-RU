@@ -5,12 +5,12 @@ author: preetikr
 ms.localizationpriority: high
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 898b0524b33a14072e25b7f5c919206f847cee09
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c5d8c65424aa92a316c32a8285cb7d757e098c45
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60988693"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424667"
 ---
 # <a name="list-alerts"></a>Перечисление оповещений
 
@@ -51,16 +51,16 @@ GET /security/alerts?$filter={property} eq '{property-value}' and {property} eq 
 - `$top` – Возвращает объединенные лучшие результаты от каждого поставщика API безопасности.  
 - `$filter`
 
-В таблице ниже перечислены ключевые слова `$filter` по именам поставщиков.
+В таблице ниже перечислены ключевые слова `$filter` по именам поставщиков. Несмотря на то, что некоторые из этих продуктов поменяли название в ходе ребрендинга, API еще не обновлен. Ключевые слова фильтра будут продолжать использовать устаревшие названия до дальнейшего уведомления. Подробности см. в [журнале изменений](https://developer.microsoft.com/en-us/graph/changelog).
 
 | Наименование поставщика      |ключевое слово $filter|
 |:----------|:----------|
-| Расширенная защита от угроз Azure | Расширенная защита от угроз Azure | 
+| Microsoft Defender для удостоверений | Расширенная защита от угроз Azure | 
 | Центр безопасности Azure | ASC |
-| Microsoft Cloud App Security | MCAS |
+| Microsoft Defender for Cloud Apps | MCAS |
 | Защита идентификации Azure Active Directory | IPC |
 | Azure Sentinel | Azure Sentinel |
-| Advanced Threat Protection в Microsoft Defender | ATP в Защитнике Windows |
+| Microsoft Defender для конечной точки | ATP в Защитнике Windows |
 | Office 365 | В настоящее время не поддерживается. |
 
 Чтобы возвратить альтернативный набор свойств, используйте параметр запроса OData `$select`, чтобы указать нужный набор свойств **alert**.  Например, чтобы вернуть свойства **assignedTo**, **category** и **severity**, добавьте в свой запрос следующее: `$select=assignedTo,category,severity`.
