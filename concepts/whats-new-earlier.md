@@ -3,14 +3,102 @@ title: Обзор предыдущих выпусков Microsoft Graph
 description: Новые возможности в предыдущих выпусках Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 7c8a3e646f311d5c8c26d6375a29fe8c1119ba90
-ms.sourcegitcommit: c6bbba6cb9aaa7ad35374d1b5d4466c49878ab43
+ms.openlocfilehash: 5c3fb965808cc899d40f39cab3082c66a14d5b72
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/22/2021
-ms.locfileid: "61135181"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424590"
 ---
 # <a name="highlights-of-earlier-releases"></a>Обзор предыдущих выпусков
+
+## <a name="october-2021-new-and-generally-available"></a>Октябрь 2021 г. Новые и общедоступные
+
+### <a name="cloud-communications--calls"></a>Облачные коммуникации | Звонки
+- [Передача](/graph/api/call-transfer) активного однорангового звонка.
+- Передача группового звонка указанному участнику (принимающему).
+
+### <a name="cloud-communications--online-meetings"></a>Облачные коммуникации | Онлайн-собрания
+Поддержка нескольких платных и бесплатных номеров для телефонного подключения к конференции ([аудиоконференции](/graph/api/resources/audioConferencing)) [виртуального собрания](/graph/api/resources/onlinemeeting).
+
+<!-- Hold off until permissions are deployed
+As part of [privacy management in Microsoft 365](/privacy/solutions/privacymanagement/privacy-management?view=o365-worldwide&preserve-view=true), subject rights request now debuts in both v1 and beta endpoints of Microsoft Graph. The [subject rights request API](/graph/api/resources/subjectrightsrequest) lets users make requests to review or manage their personal data in their organizations. It also lets organizations automate and scale managing these requests, helping them to meet industry regulations more efficiently.
+-->
+
+### <a name="education"></a>Образование
+Поддержка [мультимедийных](/graph/api/resources/educationMediaResource) файлов или другого [внешнего ролевого ресурса](/graph/api/resources/educationExternalResource) в качестве [ресурса назначения](/graph/api/resources/educationassignmentresource).
+
+### <a name="identity-and-access--applications"></a>Удостоверение и доступ | Приложения
+- Чтобы обеспечить согласованное взаимодействие с [приложением](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true), укажите [ресурсы, к которые приложение должно получить доступ](/graph/api/resources/requiredresourceaccess?view=graph-rest-beta&preserve-view=true), включая набор делегированных разрешений OAuth 2.0 и ролей приложения, которые ему требуются.
+- Ограничение числа необходимых API до 50, а необходимых разрешений — до 400 для каждого приложения.
+
+### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
+- Установите [атрибуты расширения](/graph/api/resources/onpremisesextensionattributes) для [устройства](/graph/api/resources/device) и управляйте ими в Azure Active Directory при [создании](/graph/api/device-post-devices) или [обновлении](/graph/api/device-update) устройства.
+- [Получите ключ восстановления BitLocker](/graph/api/bitlockerrecoverykey-get) от имени вошедшего пользователя, который является владельцем устройства или выполняет соответствующую роль. При получении ключа восстановления создается [журнал аудита](/azure/active-directory/reports-monitoring/concept-audit-logs) наравне с пользовательским интерфейсом.
+
+### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
+Укажите список дополнительных пользователей или участников группы, которых нужно уведомлять о ходе выполнения проверки доступа, в свойстве **additionalNotificationRecipients** в [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true).
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
+Укажите устройства в [политике условного доступа](/graph/api/resources/conditionalaccesspolicy) как часть [условий](/graph/api/resources/conditionalAccessConditionSet), которые управляют временем применения политики.
+
+### <a name="personal-contacts"></a>Личные контакты
+Включите поддержку делегированных разрешений (`Contacts.Read` или `Contacts.ReadWrite`) для ресурсов [profilePhoto](/graph/api/resources/profilephoto?view=graph-rest-beta&preserve-view=true) в персональных учетных записях Microsoft.
+
+### <a name="teamwork"></a>Teamwork
+- [Получение всех сообщений чатов во всех каналах](/graph/api/channel-getallmessages) в [команде](/graph/api/resources/team).
+- [Получение всех сообщений из всех чатов](/graph/api/chats-getallmessages), в которых участвует пользователь, включая приватные чаты, групповые чаты и чаты собраний.
+- Ознакомьтесь с [моделями лицензирования и оплаты](teams-licenses.md), которые применяются к API Microsoft Teams в Microsoft Graph.
+
+### <a name="users"></a>Пользователи
+В пользовательских лицензиях для служб Azure Active Directory (Azure AD) теперь поддерживаются метки времени последнего обновления [состояния назначения лицензии](/graph/api/resources/licenseassignmentstate). 
+
+## <a name="october-2021-new-in-preview-only"></a>Октябрь 2021 г.: новые возможности только в предварительном просмотре
+
+### <a name="applications"></a>Приложения
+Используйте [учетные данные федеративного удостоверения](/graph/api/resources/federatedidentitycredential?view=graph-rest-beta&preserve-view=true), чтобы управлять учетными данными приложения и разрешить облачным приложениям организации получать доступ к Azure AD без использования секретов и сертификатов.
+
+### <a name="cloud-communications--calls"></a>Облачные коммуникации | Звонки
+Определение [участника](/graph/api/resources/participantInfo?view=graph-rest-beta&preserve-view=true) звонка с помощью свойства **participantId** в типе ресурса [participantInfo](/graph/api/resources/participantInfo?view=graph-rest-beta&preserve-view=true).
+
+### <a name="cloud-communications--online-meetings"></a>Облачные коммуникации | Онлайн-собрания
+Включение [регистрации собрания](/graph/api/resources/meetingregistration?view=graph-rest-beta&preserve-view=true) и организация собраний по сети в виде [вебинара.](/office/get-started-with-teams-webinars-42f3f874-22dc-4289-b53f-bbc1a69013e3) Привязка собрания к странице регистрации и регистрация всех или только представителей организации как [зарегистрированных участников собрания](/graph/api/resources/meetingregistrant?view=graph-rest-beta&preserve-view=true). 
+
+### <a name="customer-booking"></a>Резервирование для пользователей
+- Поддержка следующих атрибутов для [службы бронирования](/graph/api/resources/bookingService?view=graph-rest-beta&preserve-view=true):
+  - Включение отправки SMS-уведомлений клиентам для их встреч (**свойство smsNotificationsEnabled**).
+  - URL-адрес, который клиенты могут использовать для доступа к службе (свойство **webUrl**).
+- Бронирование [встречи](/graph/api/resources/bookingappointment?view=graph-rest-beta&preserve-view=true) с использованием одного или нескольких следующих атрибутов:
+  - Указание часового пояса клиента (свойство **customerTimeZone**).
+  - Указание URL-адреса для встречи в сети (свойство **joinWebUrl**).
+  - Включение SMS-уведомлений клиенту для встречи (свойство **smsNotificationsEnabled**).
+- Указание одного или нескольких адресов или номеров телефона для [клиента](/graph/api/resources/bookingcustomer?view=graph-rest-beta&preserve-view=true).
+- Указание часового пояса для [сотрудника](/graph/api/resources/bookingStaffMember?view=graph-rest-beta&preserve-view=true).
+
+### <a name="devices-and-apps--cloud-pc"></a>Устройства и приложения | Облачный ПК
+[Составление списка](/graph/api/virtualendpoint-list-serviceplans?view=graph-rest-beta&preserve-view=true) [планов служб Windows 365](/graph/api/resources/cloudPcServicePlan?view=graph-rest-beta&preserve-view=true), на которые организация подписалась для своих облачных ПК. В соответствии с каждым [типом плана обслуживания](/graph/api/resources/cloudPcServicePlan?view=graph-rest-beta&preserve-view=true#cloudpcserviceplantype-values) (бизнес или предприятие) организация может выбрать подписку из ряда конфигураций плана, которые различаются по таким атрибутам, как виртуальный ЦП, ОЗУ и хранилище.
+
+### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
+Указание [параметров конфигурации учетных данных ключей](/graph/api/resources/keycredentialconfiguration?view=graph-rest-beta&preserve-view=true), которые можно [настроить для применения ограничений в приложении или субъект-службе](/graph/api/resources/appmanagementconfiguration?view=graph-rest-beta&preserve-view=true).
+
+### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
+Включение следующих дополнительных [параметров](/graph/api/resources/assignmentReviewSettings?view=graph-rest-beta&preserve-view=true) для проверки [политики назначения пакета для доступа](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta&preserve-view=true):
+- Поведение по умолчанию, если запрос не проверяется я в указанный срок (свойство **accessReviewTimeoutBehavior**).
+- Отображение рекомендаций проверяющему (свойство **isAccessRecommendationEnabled**).
+- Требование, чтобы проверяющий предоставил обоснование для утверждения (свойство **isApprovalJustificationRequired**).
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
+- Указание, нужно ли переносить или уже перенесли параметры [политики непрерывной оценки доступа](/graph/api/resources/continuousAccessEvaluationPolicy?view=graph-rest-beta&preserve-view=true) в [политику условного доступа](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta&preserve-view=true).
+- В рамках [условного доступа](/azure/active-directory/conditional-access/overview) Azure Active Directory используйте новое средство контроля сеанса, [continuousAccessEvaluationSessionControl](/graph/api/resources/continuousAccessEvaluationSessionControl?view=graph-rest-beta&preserve-view=true), для непрерывной оценки доступа и принятия решений о доступе.
+
+### <a name="search--index"></a>Поиск | Индекс
+- Указание [параметров](/graph/api/resources/externalconnectors-searchsettings?view=graph-rest-beta&preserve-view=true) для возможностей поиска контента во [внешнем подключении](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true). Например, [шаблон отображения](/graph/api/resources/externalconnectors-displaytemplate?view=graph-rest-beta&preserve-view=true) результатов поиска и [правило](/graph/api/resources/externalconnectors-propertyRule?view=graph-rest-beta&preserve-view=true) для выбора шаблона отображения.
+- Связывание одной или нескольких [внешних групп](/graph/api/resources/externalconnectors-externalgroup?view=graph-rest-beta&preserve-view=true) со внешним [подключением](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true). Например, внешняя группа, например бизнес-подразделение или рабочая группа, может определять разрешения на контент в источнике данных, представленном внешним подключением.
+- Можно дополнительно указать ID приложения Teams во [внешнем подключении](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true) в свойстве **connectorId**.
+
+### <a name="users"></a>Пользователи
+[Проверка пароля](/graph/api/user-validatePassword?view=graph-rest-beta&preserve-view=true) в реальном времени относительно политики проверки паролей в организации во время ввода пароля пользователем. Получение [подробных сведений о проверке](/graph/api/resources/passwordValidationInformation?view=graph-rest-beta&preserve-view=true) относительно правил в политике.
+
 
 ## <a name="september-2021-new-and-generally-available"></a>Сентябрь 2021 г.: новые и общедоступные возможности
 
@@ -1491,7 +1579,7 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 ### <a name="microsoft-graph-security-api"></a>Microsoft Graph Security API
 - Предварительная версия интеграции с RSA NetWitness, ServiceNow и Splunk для сопоставления и синхронизации [оповещений](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#alerts), улучшения защиты от угроз и реагирования.
 - Новые переключатели добавлены в [соединитель безопасности Microsoft Graph](/connectors/microsoftgraphsecurity/) и в [сборники схем](/azure/security-center/security-center-playbooks) для логических приложений и потоков. См. [примеры сборника схем](https://github.com/microsoftgraph/security-api-solutions/tree/master/Playbooks).
-- Поддержка отправки [индикаторов угроз](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#threat-indicators-preview) в Microsoft Defender ATP для блокирования или отправки оповещений об угрозах с использованием собственных источников аналитики. Интеграция с партнерами, такими как ThreatConnect, дает заказчикам возможность отправлять индикаторы непосредственно из решений аналитики угроз и автоматизации. 
+- Поддержка отправки [индикаторов угроз](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#threat-indicators-preview) в Microsoft Defender для конечной точки с целью блокирования или отправки оповещений об угрозах с использованием собственных источников аналитики. Интеграция с партнерами, такими как ThreatConnect, дает заказчикам возможность отправлять индикаторы непосредственно из решений аналитики угроз и автоматизации. 
 
 ### <a name="notifications"></a>Уведомления
 - [Создание и отправка уведомлений](/graph/api/user-post-notifications?view=graph-rest-beta&preserve-view=true) всем клиентам приложения во всех конечных точках устройств, где пользователи могли войти в систему, без необходимости управлять разрешениями, делегированными пользователями.

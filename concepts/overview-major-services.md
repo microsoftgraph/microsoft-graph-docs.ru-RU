@@ -4,12 +4,12 @@ description: 'Microsoft Graph позволяет интегрировать пр
 author: angelgolfer-ms
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e02bce5335561363788481f8bd205607eea48bf1
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: 7d2a3df6af87d9e3b9802e112bc429682a42d989
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123588"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424604"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Основные службы и компоненты в Microsoft Graph
 
@@ -97,7 +97,7 @@ _Группа_ Microsoft 365 — это фундаментальный объе�
 
 |Компонент     |Вспомогательные службы  |Описание |Дополнительная информация |
 |:-----------|:--------------------|:-----------|:----------------|
-| Интеграция с системой безопасности | Защита идентификации Azure AD, Azure Information Protection, центр безопасности Azure, безопасность приложений в Microsoft Cloud, Advanced Threat Protection в Защитнике Windows и [другие](/graph/api/resources/security-api-overview) | Предоставляет единый шлюз для аналитики безопасности и действий в корпорации Майкрософт и компаниях-партнерах по экосистеме. | [Безопасность в Microsoft Graph](security-concept-overview.md) |
+| Интеграция с системой безопасности | Защита идентификации Azure AD, Azure Information Protection, Центр безопасности Azure, Microsoft Defender for Cloud Apps, Advanced Threat Protection в Защитнике Windows и [другие](/graph/api/resources/security-api-overview) | Предоставляет единый шлюз для аналитики безопасности и действий в корпорации Майкрософт и компаниях-партнерах по экосистеме. | [Безопасность в Microsoft Graph](security-concept-overview.md) |
 
 
 
