@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: 09630986ac095d10145332a26d7588362aa0e133
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: ca0526b7eb1a044b3ba8ecf95d66a09b30b7d17d
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224491"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424695"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Использование Microsoft Graph Security API
 
@@ -35,7 +35,7 @@ Microsoft Graph Security API включает указанные ниже клю
 |:------------------|:---------|:-----------|:------------------|
 |[Microsoft Defender для облака](/azure/defender-for-cloud/alerts-overview)| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
 |[Защита идентификации Azure Active Directory](/azure/active-directory/identity-protection/playbook) | <p align="center">&#x2713;</p> | <p align="center">[Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
-| [Microsoft Cloud App Security](/cloud-app-security/monitor-alerts) | <p align="center">&#x2713;</p> | <p align="center">[Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
+| [Microsoft Defender for Cloud Apps](/cloud-app-security/monitor-alerts) | <p align="center">&#x2713;</p> | <p align="center">[Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
 |[Microsoft Defender для конечной точки](/windows/security/threat-protection/microsoft-defender-atp/attack-simulations) **| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
 |[Microsoft Defender для удостоверений](/defender-for-identity/understanding-security-alerts#security-alert-categories) ***| <p align="center">&#x2713;</p> | <p align="center">[Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
 |Microsoft 365 <ul><li> [По умолчанию](/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Cloud App Security](/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li><li>Пользовательское оповещение</li></ul> | <p align="center">&#x2713;</p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
@@ -47,7 +47,7 @@ Microsoft Graph Security API включает указанные ниже клю
 
 \*\* Microsoft Defender для конечной точки требует дополнительных [ролей пользователя](/windows/security/threat-protection/microsoft-defender-atp/user-roles) помимо ролей, необходимых для Microsoft Graph Security API. Только пользователи, которым назначены роли как в Microsoft Defender для конечной точки, так и в Microsoft Graph Security API, могут получить доступ к данным Microsoft Defender для конечной точки. Поскольку это ограничение не распространяется на проверку подлинности только для приложений, рекомендуется использовать маркер проверки подлинности только для приложений.
 
-\*\*\*Оповещения Microsoft Defender для удостоверений доступны в рамках интеграции с Microsoft Cloud App Security. Это означает, что вы будете получать оповещения Microsoft Defender для удостоверений только в том случае, если вы присоединились к комплексному решению SecOps и подключили Microsoft Defender для удостоверений к Microsoft Cloud App Security. Узнайте больше о том, [как интегрировать Microsoft Defender для удостоверений и Microsoft Cloud App Security](/defender-for-identity/mcas-integration).
+\*\*\* Оповещения Microsoft Defender для удостоверений доступны в рамках интеграции с Microsoft Defender for Cloud Apps. Это означает, что вы будете получать оповещения Microsoft Defender для удостоверений только в том случае, если вы присоединились к комплексному решению SecOps и подключили Microsoft Defender для удостоверений к Microsoft Defender for Cloud Apps. Узнайте больше о том, [как интегрировать Microsoft Defender для удостоверений и Microsoft Defender for Cloud Apps](/defender-for-identity/mcas-integration).
 
 ## <a name="information-protection"></a>Защита информации
 

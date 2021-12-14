@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 774b5bff351b9ba1d69ddd2a7ac2ddfc369e4d32
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: 636a09bb7d0836ab7b814f978ecf38ee14416f8e
+ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123890"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61424751"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Использование Microsoft Graph Security API
 
@@ -29,7 +29,7 @@ Microsoft Graph Security API включает указанные ниже клю
 
 ## <a name="actions-preview"></a>Действия (предварительная версия)
 
-Принимайте незамедлительные действия по защите от угроз с помощью объекта [securityAction](securityaction.md) Microsoft Graph Security. Если аналитик безопасности обнаруживает новый индикатор, например вредоносный файл, URL-адрес, домен или IP-адрес, можно сразу же включить защиту в решении по обеспечению безопасности от корпорации Майкрософт. Вызывайте действие для определенного поставщика услуг, просматривайте все выполненные действия и отменяйте действие при необходимости. Попробуйте выполнить действия по обеспечению безопасности с помощью [Advanced Threat Protection в Microsoft Defender](/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection), чтобы заблокировать вредоносную активность в конечных точках Windows с использованием свойств, отображаемых в оповещениях или выявленных при изучении.
+Принимайте незамедлительные действия по защите от угроз с помощью объекта [securityAction](securityaction.md) Microsoft Graph Security. Если аналитик безопасности обнаруживает новый индикатор, например вредоносный файл, URL-адрес, домен или IP-адрес, можно сразу же включить защиту в решении по обеспечению безопасности от корпорации Майкрософт. Вызывайте действие для определенного поставщика услуг, просматривайте все выполненные действия и отменяйте действие при необходимости. Попробуйте выполнить действия по обеспечению безопасности с помощью [Microsoft Defender для конечной точки](/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection), чтобы заблокировать вредоносную активность в конечных точках Windows с использованием свойств, отображаемых в оповещениях или выявленных при изучении.
 
   > **Примечание.** В настоящее время действия по обеспечению безопасности поддерживают только разрешения для приложений.
 
@@ -43,9 +43,9 @@ Microsoft Graph Security API включает указанные ниже клю
 |:------------------|:---------|:-----------|:------------------|
 |[Центр безопасности Azure](/azure/security-center/security-center-alerts-type)| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
 |[Защита идентификации Azure Active Directory](/azure/active-directory/identity-protection/playbook) | <p align="center">&#x2713;</p> | <p align="center">[Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
-| [Microsoft Cloud App Security](/cloud-app-security/monitor-alerts) | <p align="center">&#x2713;</p> | <p align="center">[Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
-|[Advanced Threat Protection в Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/attack-simulations) **| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
-|[Расширенная защита от угроз Azure](/azure-advanced-threat-protection/understanding-security-alerts#security-alert-categories) ***| <p align="center">&#x2713;</p> | <p align="center">[Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
+| [Microsoft Defender for Cloud Apps](/cloud-app-security/monitor-alerts) (ранее Microsoft Cloud App Security) | <p align="center">&#x2713;</p> | <p align="center">[Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
+|[Microsoft Defender для конечной точки](/windows/security/threat-protection/microsoft-defender-atp/attack-simulations) (ранее Microsoft Defender ATP) **| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|[Microsoft Defender для удостоверений](/azure-advanced-threat-protection/understanding-security-alerts#security-alert-categories) (ранее Azure Advanced Threat Protection) ***| <p align="center">&#x2713;</p> | <p align="center">[Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
 |Microsoft 365 <ul><li> [По умолчанию](/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Cloud App Security](/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li><li>Пользовательское оповещение</li></ul> | <p align="center">&#x2713;</p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
 |[Azure Information Protection](/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive) **(предварительная версия)**| <p align="center">&#x2713;</p> | <p align="center">[Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
 |[Azure Sentinel](/azure/sentinel/quickstart-get-visibility) **(предварительная версия)**| <p align="center">&#x2713;</p> | <p align="center">Не поддерживается в Azure Sentinel. </p> | <p align="center">&#x2713;</p> |
@@ -53,9 +53,9 @@ Microsoft Graph Security API включает указанные ниже клю
 
 \* Проблема с файлом: статус оповещения обновляется в интегрированных в API безопасности Microsoft Graph приложениях, но не отображается в интерфейсе управления провайдера.
 
-\*\* Advanced Threat Protection в Microsoft Defender требует дополнительных [ролей пользователя](/windows/security/threat-protection/microsoft-defender-atp/user-roles) помимо ролей, необходимых для Microsoft Graph Security API. Только пользователи, которым назначены роли как в Advanced Threat Protection в Microsoft Defender, так и в Microsoft Graph Security API, могут получить доступ к данным Advanced Threat Protection в Microsoft Defender. Поскольку это ограничение не распространяется на проверку подлинности только для приложений, рекомендуется использовать маркер проверки подлинности только для приложений.
+\*\* Microsoft Defender для конечной точки требует дополнительных [ролей пользователя](/windows/security/threat-protection/microsoft-defender-atp/user-roles) помимо ролей, необходимых для Microsoft Graph Security API. Только пользователи, которым назначены роли как в Microsoft Defender для конечной точки, так и в Microsoft Graph Security API, могут получить доступ к данным Microsoft Defender для конечной точки. Поскольку это ограничение не распространяется на проверку подлинности только для приложений, рекомендуется использовать маркер проверки подлинности только для приложений.
 
-\*\*\* Оповещения расширенной защиты от угроз Azure (Azure ATP) доступны в рамках интеграции Microsoft Cloud App Security. Это означает, что вы будете получать оповещения Azure ATP только в том случае, если вы присоединились к комплексному решению SecOps и подключили Azure ATP к Microsoft Cloud App Security. Узнайте больше о том, [как интегрировать Azure ATP и Microsoft Cloud App Security](/azure-advanced-threat-protection/atp-mcas-integration).
+\*\*\* Оповещения Microsoft Defender для удостоверений доступны в рамках интеграции с Microsoft Defender for Cloud Apps. Это означает, что вы будете получать оповещения Microsoft Defender для удостоверений только в том случае, если вы присоединились к комплексному решению SecOps и подключили Microsoft Defender для удостоверений к Microsoft Defender for Cloud Apps. Узнайте больше о том, [как интегрировать Microsoft Defender для удостоверений и Microsoft Defender for Cloud Apps](/azure-advanced-threat-protection/atp-mcas-integration).
 
 ## <a name="attack-simulation-and-training-preview"></a>Симуляция атак и обучение (предварительная версия)
 
@@ -85,7 +85,7 @@ Microsoft Graph Security API включает указанные ниже клю
 Индикаторы угроз, отправляемые с помощью Microsoft Graph Security API, в настоящее время доступны в следующих продуктах:
 
 - [Azure Sentinel](/azure/sentinel/overview): позволяет сопоставлять индикаторы угроз с данными журнала, чтобы получать оповещения о вредоносных действиях.
-- [ATP в Microsoft Defender (Advanced Threat Protection в Microsoft Defender)](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection): позволяет оповещать об индикаторах угроз, связанных с вредоносными действиями, а также блокировать их. Вы можете также разрешить индикатору игнорировать автоматические исследования. Подробнее о поддерживаемых типах индикаторов и ограничениях относительно количества индикаторов для каждого клиента см. в статье [Управление индикаторами](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
+- [Microsoft Defender для конечной точки](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) — позволяет создавать оповещения и/или блокировать индикаторы угроз, связанные с вредоносными действиями. Вы можете также разрешить индикатору игнорировать автоматические исследования. Подробнее о поддерживаемых типах индикаторов и ограничениях относительно количества индикаторов для каждого клиента см. в статье [Управление индикаторами](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
 Поддержка в других службах безопасности Майкрософт появится в ближайшее время.
 
