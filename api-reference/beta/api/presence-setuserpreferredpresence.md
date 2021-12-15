@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: f2edf4fd85c9bad4d2ee8b7a703a19340328c086
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: 005c0c6cd0f35455780c11650a10bab96280bc6d
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61391182"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61526097"
 ---
 # <a name="presence-setuserpreferredpresence"></a>присутствие: setUserPreferredPresence
 
@@ -26,14 +26,14 @@ ms.locfileid: "61391182"
 
 Дополнительные новости о [сеансах присутствия](presence-setpresence.md#presence-sessions) и [их времени ожидания и истечения срока действия.](presence-setpresence.md#timeout-expiration-and-keep-alive) 
 
-## <a name="permissions"></a>Разрешения
+## <a name="permissions"></a>Permissions
 Для вызова API требуется следующее разрешение. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Presence.ReadWrite                          |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | Presence.ReadWrite.All                      |
+| Приложение                            | Presence.ReadWrite.All                      |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -52,8 +52,8 @@ POST /users/{userId}/presence/setUserPreferredPresence
 
 | Параметр          | Тип     | Описание                                                                                                                                                                                                                                    |
 | :----------------- | :------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| availability       | String   | Сведения о базовом присутствии.                                                                                                                                                                                                                 |
-| действие           | String   | Дополнительные сведения о доступности.                                                                                                                                                                                                  |
+| availability       | строка   | Сведения о базовом присутствии.                                                                                                                                                                                                                 |
+| действие           | string   | Дополнительные сведения о доступности.                                                                                                                                                                                                  |
 | expirationDuration | duration | Срок действия сеанса присутствия приложения. Значение представлено в формате ISO 8601 для длительности.<br/>В случае невыполнения условий по умолчанию будет применено:<br/>DoNotDisturb или Busy: срок действия истекает через 1 день<br/>Все остальные: срок действия истекает через 7 дней |
 
 Поддерживаемые сочетания **доступности** и **активности:**
@@ -92,6 +92,28 @@ Content-Type: application/json
   "expirationDuration": "PT8H"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/setuserpreferredpresence-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/setuserpreferredpresence-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/setuserpreferredpresence-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/setuserpreferredpresence-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/setuserpreferredpresence-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 

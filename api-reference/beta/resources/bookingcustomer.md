@@ -1,16 +1,16 @@
 ---
 title: тип ресурса bookingCustomer
-description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
+description: Представляет клиента bookingBusiness.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 3d5eff9d0add4a0840e864b9f4caf1730be98e5a
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 6c8dae5ce7f541f45bc3856e1c3b4de83d5a5307
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696233"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61526151"
 ---
 # <a name="bookingcustomer-resource-type"></a>тип ресурса bookingCustomer
 
@@ -29,15 +29,15 @@ ms.locfileid: "60696233"
 |[Создание bookingCustomer](../api/bookingbusiness-post-customers.md) | [bookingCustomer](bookingcustomer.md) | Создайте новый **объект bookingCustomer.** |
 |[Get bookingCustomer](../api/bookingcustomer-get.md) | [bookingCustomer](bookingcustomer.md) |Ознакомьтесь с свойствами и отношениями объекта **bookingCustomer.**|
 |[Обновление](../api/bookingcustomer-update.md) | [bookingCustomer](bookingcustomer.md) |Обновление **объекта bookingCustomer.** |
-|[Удаление](../api/bookingcustomer-delete.md) | Нет |Удаление **объекта bookingCustomer.** |
+|[удаление](../api/bookingcustomer-delete.md); | Нет |Удаление **объекта bookingCustomer.** |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|String|Имя клиента.|
-|emailAddress|String|SMTP-адрес клиента.|
-|id|String| ID клиента. Только для чтения.|
 |addresses|[коллекция physicalAddress](../resources/physicaladdress.md)|Адреса, связанные с клиентом, включая домашние, бизнес и другие адреса.|
+|displayName|Строка|Имя клиента.|
+|emailAddress|String|SMTP-адрес клиента.|
+|id|Строка| ID клиента. Только для чтения.|
 |phones|Коллекция [phone](../resources/phone.md)|Телефон номеров, связанных с клиентом, включая домашние, деловые и мобильные номера.|
 
 ## <a name="relationships"></a>Связи

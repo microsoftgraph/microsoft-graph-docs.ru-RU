@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3b71abb8b8877686a20b1254011f082bcaa816e7
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 42cf86d1c898b1926cea21d75231e1fb7439315a
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61425015"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61524696"
 ---
 # <a name="get-linkedresource_v2"></a>Получить linkedResource_v2
 Пространство имен: microsoft.graph
@@ -24,9 +24,9 @@ ms.locfileid: "61425015"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|Tasks.Read, Tasks.ReadWrite|
-|Делегированное (личная учетная запись Майкрософт)|Tasks.Read, Tasks.ReadWrite|
-|Application|Tasks.Read, Tasks.ReadWrite|
+|Делегированные (рабочая или учебная учетная запись)|Tasks.Read, Tasks.ReadWrite|
+|Делегированные (личная учетная запись Майкрософт)|Tasks.Read, Tasks.ReadWrite|
+|Приложение|Tasks.Read, Tasks.ReadWrite|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -57,6 +57,8 @@ GET /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTask
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_linkedresource_v2"
@@ -65,6 +67,24 @@ GET /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTask
 ``` http
 GET https://graph.microsoft.com/beta/me/tasks/lists/AAMkADliMmU5YjJlLTVmMmQtNGQzNS1iYjA0LTdmZTA2NTI0MTE5YwAuAAAAAADdOMUbUmCfTKa7OC-fqjkdAQBnu3olF7NfToRyJ2f__TNcAAAAAAESAAA=/tasks/AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0AZ7t6JRezX06Ecidn-vkzXAABPDii4gAA/linkedResources/e2c5ed75-7aa4-4f8e-84ab-98b5e0b56ee8
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-linkedresource-v2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-linkedresource-v2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-linkedresource-v2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-linkedresource-v2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

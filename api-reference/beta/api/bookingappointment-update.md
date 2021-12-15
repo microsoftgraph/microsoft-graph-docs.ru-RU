@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: cfa8c1e1749735d535f4950075fd8667020db616
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e3505c94f9ef16e7e19846ceaae9a8cdc3fc10dc
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60990681"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525745"
 ---
 # <a name="update-bookingappointment"></a>Обновление bookingappointment
 
@@ -49,28 +49,31 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
 |имя клиента|Строка|Имя клиента.|
 |customerNotes|Строка|Заметки от клиента, связанного с этим назначением. Значение можно получить только при чтении этого **bookingAppointment** по его ID. <br> Это свойство можно установить только при первоначальном создании встречи с новым клиентом. После этого значение вычисляется от клиента, представленного **customerId.**|
 |customerPhone|Строка|Номер телефона клиента.|
+|клиенты|[коллекция bookingCustomerInformation](../resources/bookingcustomerinformation.md)|В нем перечислены свойства клиента для встречи. Встреча будет содержать список сведений о клиентах, и каждое подразделение будет указывать свойства клиента, который является частью этого назначения. Необязательное свойство.|
 |customerTimeZone|Строка|Часовой пояс клиента. Список возможных значений см. в [списке dateTimeTimeZone.](../resources/datetimetimezone.md)|
 |duration|Длительность|Продолжительность встречи, обозначаемая в [формате ISO8601.](https://www.iso.org/iso-8601-date-and-time-format.html) |
 |end|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата, время и часовой пояс, которые заканчивается встреча.|
 |invoiceAmount|Double|Выставленная на счету сумма.|
 |invoiceDate|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата, время и часовой пояс счета-фактуры для этого назначения.|
 |invoiceId|Строка|ID счета-фактуры.|
-|invoiceStatus|Строка| Состояние счета. Возможные значения: `draft`, `reviewing`, `open`, `canceled`, `paid`, `corrective`.|
+|invoiceStatus|string| Состояние счета. Возможные значения: `draft`, `reviewing`, `open`, `canceled`, `paid`, `corrective`.|
 |invoiceUrl|Строка|URL-адрес счета в Microsoft Bookings.|
-|isLocationOnline|Логическое|True указывает, что встреча будет проходить в Интернете. Значение по умолчанию − ложь.|
-|optOutOfCustomerEmail|Логический|True указывает, что [bookingCustomer](../resources/bookingcustomer.md) для этого назначения не желает получать подтверждение для этого назначения.|
+|filledAttendeesCount|Int32|Текущее число клиентов в записи. Обязательно.|
+|isLocationOnline|Boolean|True указывает, что встреча будет проходить в Интернете. Значение по умолчанию − ложь.|
+|maximumAttendeesCount|Int32|Максимальное количество клиентов, разрешенных при встрече. Обязательно.|
+|optOutOfCustomerEmail|Boolean|True указывает, что [bookingCustomer](../resources/bookingcustomer.md) для этого назначения не желает получать подтверждение для этого назначения.|
 |postBuffer|Длительность|Количество времени, необходимое для резерва после окончания встречи, для очистки в качестве примера. Значение выражается в [формате ISO8601.](https://www.iso.org/iso-8601-date-and-time-format.html) |
 |preBuffer|Длительность|Количество времени, необходимое для резерва перед началом встречи, для подготовки в качестве примера. Значение выражается в [формате ISO8601.](https://www.iso.org/iso-8601-date-and-time-format.html)|
 |цена|Double|Обычная цена встречи для указанного [bookingService.](../resources/bookingservice.md)|
-|priceType|Строка| Параметр, который обеспечивает гибкость структуры ценообразования служб. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
+|priceType|bookingPriceType| Параметр, который обеспечивает гибкость структуры ценообразования служб. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`, `unknownFutureValue`.|
 |напоминания|[коллекция bookingReminder](../resources/bookingreminder.md)|Коллекция напоминаний клиентов, отправленных для этого назначения. Значение этого свойства доступно только при чтении этого **bookingAppointment** по его ID.|
 |selfServiceAppointmentId|Строка|Дополнительный ИД отслеживания для встречи, если назначение было создано непосредственно клиентом на странице планирования, а не сотрудником от имени клиента.|
 |serviceId|Строка|ID службы [bookingService,](../resources/bookingservice.md) связанной с этим назначением.|
 |serviceLocation|[location](../resources/location.md)|Расположение, в котором доставляется служба.|
 |serviceName|Строка|Имя **bookingService, связанного** с этим назначением.<br>Это свойство является необязательным при создании новой встречи. Если не указано, оно вычисляется из службы, связанной с назначением **свойством serviceId.**|
-|serviceNotes|String|Заметки [из bookingStaffMember](../resources/bookingstaffmember.md). Значение этого свойства доступно только при чтении этого **bookingAppointment** по его ID.|
-|smsNotificationsEnabled|Логическое|True указывает, что sms-уведомления будут отправлены клиентам для встречи. Значение по умолчанию − ложь.|
-|staffMemberIds|Коллекция String|ID каждого [бронированияStaffMember,](../resources/bookingstaffmember.md) который запланирован в этом назначении.|
+|serviceNotes|Строка|Заметки [из bookingStaffMember](../resources/bookingstaffmember.md). Значение этого свойства доступно только при чтении этого **bookingAppointment** по его ID.|
+|smsNotificationsEnabled|Boolean|True указывает, что sms-уведомления будут отправлены клиентам для встречи. Значение по умолчанию − ложь.|
+|staffMemberIds|Коллекция строк|ID каждого [бронированияStaffMember,](../resources/bookingstaffmember.md) который запланирован в этом назначении.|
 |начать|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата, время и часовой пояс, в который начинается встреча.|
 
 
@@ -78,7 +81,7 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
 При успешном выполнении этот метод возвращает код отклика `204, No Content`. Метод не возвращает данные в теле отклика.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
-В следующем примере дата службы изменяется на день, а также обновляется дата счета.
+В следующем примере дата службы изменяется на день и обновляется.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -86,7 +89,7 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
   "name": "update_bookingappointment"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments/AAMkADKnAAA=
+PATCH https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKnAAA=
 Content-type: application/json
 
 {

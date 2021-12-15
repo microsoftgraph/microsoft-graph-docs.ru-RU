@@ -1,33 +1,35 @@
 ---
-title: Тип ресурса Букингперсон
-description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-localization_priority: Normal
+title: Тип ресурса bookingPerson
+description: Это базовый тип для человека в бизнесе Microsoft Bookings, который может быть bookingCustomer или bookingStaffMember.
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 04fabd62ee89c275d25075de7b489e512ebe3167
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0ad4cd1d587fb2ccd88727f24944bc4226e43b7f
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071775"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61526186"
 ---
-# <a name="bookingperson-resource-type"></a>Тип ресурса Букингперсон
+# <a name="bookingperson-resource-type"></a>Тип ресурса bookingPerson
 
 Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Это базовый тип для человека в Microsoft Books бизнеса, который может быть [букингкустомер](bookingcustomer.md) или [букингстаффмембер](bookingstaffmember.md).
+Это базовый тип для человека в бизнесе Microsoft Bookings, который может быть [bookingCustomer](bookingcustomer.md) или [bookingStaffMember](bookingstaffmember.md).
+
+Наследует [от bookingNamedEntity](bookingnamedentity.md)
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|String|Имя производной сущности, которая взаимодействует с клиентами.|
-|emailAddress|String|Адрес электронной почты пользователя.|
-|id|String| Идентификатор производной сущности. Только для чтения.|
+|displayName|Строка|Имя полученной сущности, которая взаимодействует с клиентами. Наследуется **от bookingNamedEntity**.|
+|emailAddress|String|Адрес электронной почты человека.|
+|id|Строка| ID для полученного объекта. Только для чтения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

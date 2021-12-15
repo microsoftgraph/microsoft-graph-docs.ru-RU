@@ -1,0 +1,46 @@
+---
+title: тип ресурса bookingQuestionAssignment
+description: Содержит набор пользовательских вопросов, связанных с определенной службой.
+ms.localizationpriority: medium
+author: razortbone
+ms.prod: bookings
+doc_type: resourcePageType
+ms.openlocfilehash: 8cab833de9bab5e07f72800e01816e437a747846
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525670"
+---
+# <a name="bookingquestionassignment-resource-type"></a>тип ресурса bookingQuestionAssignment
+
+Пространство имен: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Содержит набор пользовательских вопросов, связанных с определенной службой.
+
+## <a name="properties"></a>Свойства
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|isRequired|Boolean|Указывает, обязательно ли отвечать на настраиваемый вопрос. |
+|questionId|Строка|Если обязательный ответ на настраиваемый вопрос. |
+
+## <a name="relationships"></a>Связи
+Отсутствуют.
+
+## <a name="json-representation"></a>Представление в формате JSON
+Ниже указано представление ресурса в формате JSON.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.bookingQuestionAssignment"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.bookingQuestionAssignment",
+  "questionId": "String",
+  "isRequired": "Boolean"
+}
+```
+

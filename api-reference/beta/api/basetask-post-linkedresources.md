@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c16eb6927367b13cc8d0cdad5d5e815f3e758139
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 6d93e29b6808197be3a6937518107d5e49a9ce9c
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61425048"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61524770"
 ---
 # <a name="create-linkedresource_v2"></a>Создание linkedResource_v2
 Пространство имен: microsoft.graph
@@ -24,9 +24,9 @@ ms.locfileid: "61425048"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|Tasks.ReadWrite|
-|Делегированное (личная учетная запись Майкрософт)|Tasks.ReadWrite|
-|Application|Tasks.ReadWrite|
+|Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
+|Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
+|Приложение|Tasks.ReadWrite|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -63,6 +63,8 @@ POST /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTas
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_linkedresource_v2_from_"
@@ -79,6 +81,12 @@ Content-Type: application/json
     "externalId": "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-linkedresource-v2-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

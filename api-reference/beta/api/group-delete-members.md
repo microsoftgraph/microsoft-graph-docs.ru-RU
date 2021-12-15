@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ea903e7144891ed0591522d5ce146c3615cd6975
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: e20a4b730412129a1b68c5837bad000d7b6ca2b9
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289667"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525507"
 ---
 # <a name="remove-member"></a>Удаление участника
 
@@ -18,7 +18,7 @@ ms.locfileid: "60289667"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-С помощью этого API можно удалить участника из группы через свойство навигации **members**.
+С помощью этого API можно удалить участника из группы через свойство навигации **members**. Нельзя удалить участника из групп с динамическими членствами.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

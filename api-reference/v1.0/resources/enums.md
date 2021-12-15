@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 5e037aea9f5582760731fdc351b5b94bdd15a0d0
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: 1288bddd70c1ee82ed3f8056a295ecf3dfbc183c
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61322004"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525388"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -631,7 +631,7 @@ ms.locfileid: "61322004"
 
 | Member
 |:-------------------------
-| Обязательный
+| обязательно
 | необязательный
 | resource
 
@@ -1578,7 +1578,7 @@ Enum для серьезности оповещений.
 
 | Member                |
 |:----------------------|
-| string                |
+| строка                |
 | логический               |
 | int64                 |
 | stringCollection      |
@@ -1591,7 +1591,7 @@ Enum для серьезности оповещений.
 |:----------------------|
 | builtIn               |
 | настраиваемый                |
-| Обязательный              |
+| обязательно              |
 | unknownFutureValue    |
 
 ### <a name="identityuserflowattributeinputtype-values"></a>значения identityUserFlowAttributeInputType
@@ -1682,7 +1682,7 @@ Enum для серьезности оповещений.
 |Member|
 |:---|
 |team|
-|канал|
+|channel|
 |чат|
 |unknownFutureValue|
 
@@ -1845,4 +1845,45 @@ Enum для серьезности оповещений.
 |call|
 |собрание|
 |screenShare|
+|unknownFutureValue|
+
+### <a name="bookingreminderrecipients-values"></a>значения bookingReminderRecipients 
+
+|Member|
+|:---|
+|allAttendees|
+|персонал|
+|клиент|
+|unknownFutureValue|
+
+### <a name="bookingstaffrole-values"></a>значения bookingStaffRole 
+
+|Member|
+|:---|
+|гость|
+|администратор|
+|viewer|
+|externalGuest|
+|unknownFutureValue|
+
+### <a name="answerinputtype-values"></a>answerInputType values 
+
+|Member|
+|:---|
+|текст|
+|radioButton|
+|unknownFutureValue|
+
+### <a name="bookingpricetype-values"></a>значения bookingPriceType
+
+|Member|
+|:---|
+|неопределяемая|
+|fixedPrice|
+|startingAt|
+|почасовая|
+|бесплатно|
+|priceVaries|
+|callUs|
+|notSet|
 |unknownFutureValue|

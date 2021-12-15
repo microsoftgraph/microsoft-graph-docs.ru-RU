@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса Букингворкхаурс
-description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-localization_priority: Normal
+title: тип ресурса bookingWorkHours
+description: Представляет набор рабочих часов за один день недели для bookingBusiness или bookingStaffMember.
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 0c6eec989e4c5474115810dfefe6578d7fc5deec
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d503d23cd8f6652e4e25c4f03e73a348baecd310
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071677"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61526179"
 ---
-# <a name="bookingworkhours-resource-type"></a>Тип ресурса Букингворкхаурс
+# <a name="bookingworkhours-resource-type"></a>тип ресурса bookingWorkHours
 
 Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Представляет набор рабочих часов в один день недели для [букингбусинесс](bookingbusiness.md) или [букингстаффмембер](bookingstaffmember.md).
+Представляет набор рабочих часов за один день недели для [bookingBusiness](bookingbusiness.md) или [bookingStaffMember](bookingstaffmember.md).
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|открыт|String| День недели, представленный этим экземпляром. Возможные значения: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
-|тимеслотс|Коллекция [букингворктимеслот](bookingworktimeslot.md)|Список начальных и конечных моментов в течение дня.|
+|день|Строка| День недели, представленный этим экземпляром. Возможные значения: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
+|timeSlots|[коллекция bookingWorkTimeSlot](bookingworktimeslot.md)|Список времени начала и окончания в течение дня.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -5,12 +5,12 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9138ec9639bdfe2d1d372b008e6f83c12be9b03c
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 2448a287cd3b36edad9c338899d366e69c1685d6
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61425036"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525256"
 ---
 # <a name="basetasklist-delta"></a>baseTaskList: дельта
 Пространство имен: microsoft.graph
@@ -26,8 +26,8 @@ ms.locfileid: "61425036"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|Tasks.Read, Tasks.ReadWrite|
-|Делегированное (личная учетная запись Майкрософт)|Tasks.Read, Tasks.ReadWrite|
+|Делегированные (рабочая или учебная учетная запись)|Tasks.Read, Tasks.ReadWrite|
+|Делегированные (личная учетная запись Майкрософт)|Tasks.Read, Tasks.ReadWrite|
 |Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -48,7 +48,7 @@ GET /users/{userId|userPrincipalName}/tasks/lists/delta
 | Параметр запроса    | Тип |Описание|
 |:---------------|:--------|:----------|
 | $deltatoken | string | В [URL-адрес](/graph/delta-query-overview) предыдущей функции дельты возвращается маркер состояния для той же коллекции `deltaLink` **baseTaskList,** что указывает на завершение этого раунда отслеживания изменений.  Сохраните URL-адрес `deltaLink` с этим токеном и примените его в первом запросе следующего цикла отслеживания изменений для этой коллекции.|
-| $skiptoken | string | Маркер [состояния,](/graph/delta-query-overview) возвращенный в URL-адрес предыдущего вызова функции дельты, указывает на то, что в том же `nextLink` базовом  **собранииTaskList** необходимо отслеживать дальнейшие изменения. |
+| $skiptoken | строка | Маркер [состояния,](/graph/delta-query-overview) возвращенный в URL-адрес предыдущего вызова функции дельты, указывает на то, что в том же `nextLink` базовом  **собранииTaskList** необходимо отслеживать дальнейшие изменения. |
 
 ### <a name="odata-query-parameters"></a>Параметры запросов OData
 
@@ -71,6 +71,8 @@ GET /users/{userId|userPrincipalName}/tasks/lists/delta
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "basetasklist_delta"
@@ -79,6 +81,24 @@ GET /users/{userId|userPrincipalName}/tasks/lists/delta
 ``` http
 GET https://graph.microsoft.com/beta/me/tasks/lists/delta
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/basetasklist-delta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/basetasklist-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/basetasklist-delta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/basetasklist-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

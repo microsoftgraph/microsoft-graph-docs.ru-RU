@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f04ed12141ac5bbe50f7e0d668c3494bd7cdb724
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6669181c336d2f70268cd82eabd06cc7452ec001
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60988874"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525519"
 ---
 # <a name="delete-unifiedroledefinition"></a>Удаление unifiedRoleDefinition
 
@@ -21,31 +21,37 @@ ms.locfileid: "60988874"
 Удаление [объекта unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) для поставщика RBAC.
 
 В настоящее время поддерживаются следующие поставщики RBAC:
+- Облачный КОМПЬЮТЕР
 - управление устройствами (Intune)
 - каталог (Azure AD) 
 
-> [!NOTE]
-> Поставщик облачных ПК RBAC в настоящее время поддерживает только [список и](rbacapplication-list-roledefinitions.md) [получать](unifiedroledefinition-get.md) операции.
+## <a name="permissions"></a>Permissions
 
-## <a name="permissions"></a>Разрешения
+В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующих таблиц наименее привилегированное разрешение, необходимое для вызова этого API. Дополнительные новости, в том числе осторожность [перед](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) выбором более привилегированных разрешений, см. [в см. в руб. Permissions.](/graph/permissions-reference) 
 
-В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующей таблицы наименее привилегированное разрешение, необходимое для вызова этого API. Дополнительные новости, в том числе осторожность [перед](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) выбором более привилегированных разрешений, см. [в см. в руб. Permissions.](/graph/permissions-reference) 
+### <a name="for-a-cloud-pc-provider"></a>Поставщик облачных ПК
 
-### <a name="for-device-management-intune-provider"></a>Для поставщика управления устройствами (Intune)
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | CloudPC.ReadWrite.All   |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | CloudPC.ReadWrite.All  |
+
+### <a name="for-a-device-management-intune-provider"></a>Для поставщика управления устройствами (Intune)
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  DeviceManagementRBAC.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | DeviceManagementRBAC.ReadWrite.All |
+|Приложение | DeviceManagementRBAC.ReadWrite.All |
 
-### <a name="for-directory-azure-ad-provider"></a>Поставщик каталогов (Azure AD)
+### <a name="for-a-directory-azure-ad-provider"></a>Поставщик каталогов (Azure AD)
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Приложение | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -62,11 +68,18 @@ DELETE /roleManagement/directory/roleDefinitions/{id}
 
 ```
 
+Удаление определения роли для поставщика облачных ПК:
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /roleManagement/cloudPc/roleDefinitions/{id}
+
+```
+
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -76,11 +89,9 @@ DELETE /roleManagement/directory/roleDefinitions/{id}
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
-## <a name="example"></a>Пример
+## <a name="example-1-delete-a-unifiedroledefinition-resource-for-a-directory-provider"></a>Пример 1. Удаление **единого ресурсаRoleDefinition** для поставщика каталогов
 
 ### <a name="request"></a>Запрос
-
-В следующем примере **удаляется единоеroleDefinition** для поставщика каталогов.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -137,4 +148,27 @@ HTTP/1.1 204 No Content
   "tocPath": ""
 }-->
 
+## <a name="example-2-delete-a-unifiedroledefinition-resource-for-a-cloud-pc-provider"></a>Пример 2. Удаление **единого ресурсаRoleDefinition** для поставщика облачных ПК
+### <a name="request"></a>Запрос
 
+<!-- {
+  "blockType": "request",
+  "name": "delete_unifiedroledefinition_cloudpc"
+}-->
+
+```http
+DELETE https://graph.microsoft.com/beta/roleManagement/cloudPc/roleDefinitions/b7f5ddc1-b7dc-4d37-abce-b9d6fc15ffff
+```
+
+### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```

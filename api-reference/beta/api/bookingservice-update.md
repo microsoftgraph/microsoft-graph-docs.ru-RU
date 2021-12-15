@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 4a84a19f9af0ac8ad6144ccdf9091b94d3d4c9a7
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e226e77717c048cc0e8001506a4b5b3a497aeccf
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61005886"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525682"
 ---
 # <a name="update-bookingservice"></a>Обновление службы бронирования
 
@@ -54,20 +54,21 @@ PATCH /bookingBusinesses/{id}/services/{id}
 |defaultDuration|Длительность|Длина службы по умолчанию, представленная в числах дней, часов, минут и секунд. Например, P11D23H59M59.999999999999S. |
 |defaultLocation|[location](../resources/location.md)|Физическое расположение службы по умолчанию.|
 |defaultPrice|Double|Денежная цена по умолчанию для службы.|
-|defaultPriceType|Строка|Способ заряжания службы по умолчанию. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
+|defaultPriceType|bookingPriceType|Способ заряжания службы по умолчанию. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`, `unknownFutureValue`.|
 |defaultReminders|[коллекция bookingReminder](../resources/bookingreminder.md)|Набор напоминаний по умолчанию для назначения этой службы. Значение этого свойства доступно только при чтении этого **bookingService** по его ID.|
 |description|Строка|Текстовое описание службы.|
 |displayName|Строка|Имя службы.|
-|emailAddress|String|Адрес электронной почты|
 |id|String| Только для чтения.|
-|isHiddenFromCustomers|Логическое|True означает, что эта служба недоступна клиентам для бронирования.|
-|isLocationOnline|Логическое|True указывает, что встречи для службы будут проводиться онлайн. Значение по умолчанию − ложь.|
+|isHiddenFromCustomers|Boolean|True означает, что эта служба недоступна клиентам для бронирования.|
+|isLocationOnline|Boolean|True указывает, что встречи для службы будут проводиться онлайн. Значение по умолчанию − ложь.|
 |notes|String|Дополнительные сведения об этой службе.|
 |postBuffer|Длительность|Время буферизации после назначения для этой службы заканчивается, и до следующей встречи клиента можно заказать.|
 |preBuffer|Длительность|Время буферизации перед назначением для этой службы может начаться.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Набор политик, которые определяют, как следует создавать и управлять встречами для этого типа службы.|
-|smsNotificationsEnabled|Логическое|True указывает, что sms-уведомления можно отправить клиентам для назначения службы. Значение по умолчанию − ложь.|
-|staffMemberIds|Коллекция String|Представляет тех [сотрудников,](../resources/bookingstaffmember.md) которые предоставляют эту службу. |
+|smsNotificationsEnabled|Boolean|True указывает, что sms-уведомления можно отправить клиентам для назначения службы. Значение по умолчанию − ложь.|
+|staffMemberIds|Коллекция строк|Представляет тех [сотрудников,](../resources/bookingstaffmember.md) которые предоставляют эту службу. |
+|customQuestions|[коллекция bookingQuestionAssignment](../resources/bookingquestionassignment.md)|Это содержит набор пользовательских вопросов, связанных с определенной службой. Необязательное свойство.|
+|maximumAttendeesCount|Int32|Максимальное число клиентов, разрешенных в службе.  |
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204 No content`. Метод не возвращает данные в теле отклика.
@@ -81,7 +82,7 @@ PATCH /bookingBusinesses/{id}/services/{id}
   "name": "update_bookingservice"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/services/57da6774-a087-4d69-b0e6-6fb82c339976
+PATCH https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/services/57da6774-a087-4d69-b0e6-6fb82c339976
 Content-type: application/json
 
 {

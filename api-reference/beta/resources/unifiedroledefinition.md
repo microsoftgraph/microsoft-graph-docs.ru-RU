@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 19b9c84e9ecb30e57e1c6b870bb369a3821a1621
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: c1d9f11a71aa9b6a611cab259801f34cd889deb5
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766777"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61524632"
 ---
 # <a name="unifiedroledefinition-resource-type"></a>тип ресурса unifiedRoleDefinition
 
@@ -26,8 +26,6 @@ ms.locfileid: "59766777"
 - каталог (Azure AD) 
 - управление правами (Azure AD)
 
-> [!NOTE]
-> Поставщики облачных ПК и управления правами RBAC в настоящее время поддерживают только [список](../api/rbacapplication-list-roledefinitions.md) и [получают](../api/unifiedroledefinition-get.md) операции.
 
 ## <a name="methods"></a>Методы
 
@@ -44,8 +42,8 @@ ms.locfileid: "59766777"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |description|Строка| Описание единогоRoleDefinition. Только для чтения, **когда isBuiltIn** является правдой. |
-|displayName|String| Имя отображения для unifiedRoleDefinition. Только для чтения, **когда isBuiltIn** является правдой. Обязательно.  Поддерживает `$filter` `eq` (и `startsWith` только операторов).|
-|id|String| Уникальный идентификатор для единойRoleDefinition. Key, not nullable, Read-only.  Поддерживает `$filter` `eq` (только оператор). |
+|displayName|Строка| Имя отображения для unifiedRoleDefinition. Только для чтения, **когда isBuiltIn** является правдой. Обязательно.  Поддерживает `$filter` `eq` (и `startsWith` только операторов).|
+|id|Строка| Уникальный идентификатор для единойRoleDefinition. Key, not nullable, Read-only.  Поддерживает `$filter` `eq` (только оператор). |
 |isBuiltIn|Boolean| Флаг, указывающий, является ли unifiedRoleDefinition частью набора по умолчанию, включенного в продукт или настраиваемый. Только для чтения.  Поддерживает `$filter` `eq` (только оператор).|
 |isEnabled|Boolean| Флаг, указывающий, включена ли роль для назначения. Если значение false, роль недоступна для назначения. Только для чтения, **когда isBuiltIn** является правдой. |
 |resourceScopes|Коллекция String| К списку областей применяются разрешения, предоставленные определением ролей. В настоящее `/` время поддерживается только. Только для чтения, когда isBuiltIn является правдой. **НЕ ИСПОЛЬЗУЙТЕ. В ближайшее время это будет отохошено. Присоединение области к назначению ролей** | 

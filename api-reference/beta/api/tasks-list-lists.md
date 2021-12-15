@@ -5,12 +5,12 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 94ea95d30e3dddfe6cc4f050d05348de2c9498ee
-ms.sourcegitcommit: c99d3feb3ab5cae506c1f758bc277a637adc9111
+ms.openlocfilehash: e61c0ec384b959f69a046a64edce9df69cb4d477
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61432652"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525550"
 ---
 # <a name="list-lists"></a>Перечисление списков
 Пространство имен: microsoft.graph
@@ -24,8 +24,8 @@ ms.locfileid: "61432652"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|Tasks.Read, Tasks.ReadWrite|
-|Делегированное (личная учетная запись Майкрософт)|Tasks.Read, Tasks.ReadWrite|
+|Делегированные (рабочая или учебная учетная запись)|Tasks.Read, Tasks.ReadWrite|
+|Делегированные (личная учетная запись Майкрософт)|Tasks.Read, Tasks.ReadWrite|
 |Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -57,6 +57,8 @@ GET /users/{userId|userPrincipalName}/tasks/lists
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_basetasklist"
@@ -65,6 +67,24 @@ GET /users/{userId|userPrincipalName}/tasks/lists
 ``` http
 GET https://graph.microsoft.com/beta/me/tasks/lists
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-basetasklist-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-basetasklist-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-basetasklist-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-basetasklist-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

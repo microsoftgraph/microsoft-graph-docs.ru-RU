@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 8dd772c1a5913abd060c6349defbc206822f9274
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 36a0e78c15ae47d24e7ed4c7d7166207fc52e454
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60990492"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61524898"
 ---
 # <a name="update-bookingcustomer"></a>Обновление bookingcustomer
 
@@ -45,7 +45,7 @@ PATCH /bookingBusinesses/{id}/customers/{id}
 |:---------------|:--------|:----------|
 |displayName|Строка|Имя клиента.|
 |emailAddress|String|SMTP-адрес клиента.|
-|адреса|[коллекция physicalAddress](../resources/physicaladdress.md)|Адреса, связанные с клиентом, включая домашние, бизнес и другие адреса.|
+|addresses|[коллекция physicalAddress](../resources/physicaladdress.md)|Адреса, связанные с клиентом, включая домашние, бизнес и другие адреса.|
 |phones|Коллекция [phone](../resources/phone.md)|Телефон номеров, связанных с клиентом, включая домашние, деловые и мобильные номера.|
 
 ## <a name="response"></a>Отклик
@@ -60,7 +60,7 @@ PATCH /bookingBusinesses/{id}/customers/{id}
   "name": "update_bookingcustomer"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/customers/8bb19078-0f45-4efb-b2c5-da78b860f73a
+PATCH https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/customers/8bb19078-0f45-4efb-b2c5-da78b860f73a
 Content-type: application/json
 
 {
@@ -102,7 +102,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/customers/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/customers/$entity",
     "id": "8bb19078-0f45-4efb-b2c5-da78b860f73a",
     "displayName": "Adele",
     "emailAddress": "adele@relecloud.com"

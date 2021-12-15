@@ -1,41 +1,41 @@
 ---
-title: Тип ресурса Букингкурренци
-description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-localization_priority: Normal
+title: тип ресурса bookingCurrency
+description: Представляет денежную валюту, поддерживаемую bookingBusiness.
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: f4b5cc6a8fdb36c2e4543302ac32846a1b3c4388
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 80da1bddcc58965fc403f24b3242b34ca5c28f98
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071796"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525969"
 ---
-# <a name="bookingcurrency-resource-type"></a>Тип ресурса Букингкурренци
+# <a name="bookingcurrency-resource-type"></a>тип ресурса bookingCurrency
 
 Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Представляет денежную валюту, поддерживаемую [букингбусинесс](bookingbusiness.md).
+Представляет денежную валюту, поддерживаемую [bookingBusiness.](bookingbusiness.md)
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Список БукингкурренЦиес](../api/bookingcurrency-list.md) | Коллекция [букингкурренци](bookingcurrency.md) |Получение списка объектов **букингкурренци** , доступных для корпоративных книг Майкрософт.|
-|[Получение Букингкурренци](../api/bookingcurrency-get.md) | [bookingCurrency](bookingcurrency.md) |Получение свойств объекта **букингкурренци** .|
+|[Список bookingCurrencies](../api/bookingcurrency-list.md) | [коллекция bookingCurrency](bookingcurrency.md) |Получите список объектов **bookingCurrency,** доступных для бизнеса Microsoft Bookings.|
+|[Получить bookingCurrency](../api/bookingcurrency-get.md) | [bookingCurrency](bookingcurrency.md) |Получите свойства объекта **bookingCurrency.**|
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| 3-значный код валюты, основанный на [стандарте ISO 4217](https://www.iso.org/iso-4217-currency-codes.html). Например, код валюты для доллара США равен USD, а Австралийский доллар — ауд. Только для чтения.|
-|знаки|String| Символ валюты. Например, символ денежной единицы для доллара США и Австралийский доллар — $.  |
+|id|Строка| Код 3-символов валюты, основанный на [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html). Например, код валюты для доллара США — USD, а для австралийского доллара — AUD. Только для чтения.|
+|символ|Строка| Символ валюты. Например, символ валюты для доллара США и австралийского доллара — $.  |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

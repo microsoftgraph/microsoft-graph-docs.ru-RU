@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fa5360d26d84ea3c30e582da9258f353a0f56f48
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8af10f667045dbb2dc0c5ef0b684d4bc38f5e5ec
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61007347"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61524653"
 ---
 # <a name="list-unifiedroledefinitions"></a>Список унифицированныхRoleDefinitions
 
@@ -26,35 +26,35 @@ ms.locfileid: "61007347"
 - каталог (Azure AD) 
 - управление правами (Azure AD)
 
-## <a name="permissions"></a>Разрешения
+## <a name="permissions"></a>Permissions
 
-В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующей таблицы наименее привилегированное разрешение, необходимое для вызова этого API. Дополнительные новости, в том числе осторожность [перед](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) выбором более привилегированных разрешений, см. [в см. в руб. Permissions.](/graph/permissions-reference)
+В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующих таблиц наименее привилегированное разрешение, необходимое для вызова этого API. Дополнительные новости, в том числе осторожность [перед](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) выбором более привилегированных разрешений, см. [в см. в руб. Permissions.](/graph/permissions-reference)
 
-### <a name="for-cloud-pc-provider"></a>Поставщик облачных ПК
+### <a name="for-a-cloud-pc-provider"></a>Поставщик облачных ПК
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  CloudPC.Read.All, CloudPC.ReadWrite.All   |
+|Делегированные (рабочая или учебная учетная запись) |  CloudPC.Read.All, CloudPC.ReadWrite.All, RoleManagement.Read.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | CloudPC.Read.All, CloudPC.ReadWrite.All  |
+|Приложение | CloudPC.Read.All, CloudPC.ReadWrite.All, RoleManagement.Read.All  |
 
-### <a name="for-device-management-intune-provider"></a>Для поставщика управления устройствами (Intune)
+### <a name="for-a-device-management-intune-provider"></a>Для поставщика управления устройствами (Intune)
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
+|Приложение | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 
-### <a name="for-directory-azure-ad-provider"></a>Поставщик каталогов (Azure AD)
+### <a name="for-a-directory-azure-ad-provider"></a>Поставщик каталогов (Azure AD)
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Приложение | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
-### <a name="for-entitlement-management-provider"></a>Поставщик прав на управление правами
+### <a name="for-an-entitlement-management-provider"></a>Для поставщика прав на управление правами
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -95,7 +95,7 @@ GET /roleManagement/entitlementManagement/roleDefinitions
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 

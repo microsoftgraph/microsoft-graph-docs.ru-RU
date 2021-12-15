@@ -5,12 +5,12 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 03d3ab9a0a16f1f2b16cf3aed5321fed8c535c76
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: b450ed9e87af65fede3f8e850a55dcd41ac68897
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61425084"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525239"
 ---
 # <a name="create-basetask"></a>Создание baseTask
 Пространство имен: microsoft.graph
@@ -24,8 +24,8 @@ ms.locfileid: "61425084"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|Tasks.ReadWrite|
-|Делегированное (личная учетная запись Майкрософт)|Tasks.ReadWrite|
+|Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
+|Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
 |Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -62,7 +62,7 @@ POST /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks
 |importance|importance|Важность задачи. Допустимые значения: `low`, `normal`, `high`.|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|Расписание повторения задачи.|
 |displayName|Строка|Краткое описание задачи.|
-|status|taskStatus_v2|Указывает состояние или ход выполнения задачи. Допустимые значения: `notStarted`, `inProgress`, `completed`, `unknownFutureValue`. Обязательный.|
+|status|taskStatus_v2|Указывает состояние или ход выполнения задачи. Допустимые значения: `notStarted`, `inProgress`, `completed`, `unknownFutureValue`. Обязательно.|
 |personalProperties|[personalTaskProperties](../resources/personaltaskproperties.md)|Свойства, которые являются личными для пользователя, такие как reminderDateTime.|
 
 
@@ -74,6 +74,8 @@ POST /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_basetask_from_"
@@ -108,6 +110,12 @@ Content-length: 634
   }
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-basetask-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

@@ -4,18 +4,23 @@ description: Настройка необходимых разрешений Azur
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 7a892bcf27da48673704f3596d9ca24cd31c8bd9
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 916d368d880c615a7216b32e53946ff3b3554470
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61344486"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61526074"
 ---
 # <a name="configure-required-azure-ad-graph-permissions-for-an-app-registration"></a>Настройка необходимых разрешений Azure AD Graph для регистрации приложений
 
 Azure Active Directory (Azure AD) Graph и будет отменена 30 июня 2022 г. В рамках этого пути амортизации добавление разрешений Azure AD Graph для регистрации приложений через портал Azure теперь отключено. Рекомендуется следовать контрольным [](migrate-azure-ad-graph-planning-checklist.md) списком планирования миграции приложений, чтобы помочь вам перейти к API [Graph](/graph/overview) Microsoft.
 
-Однако для доступа к ресурсам может потребоваться временное Graph Azure AD. В этой статье содержится руководство по настройке необходимых разрешений для Azure AD Graph регистрации приложения.
+Однако для доступа к ресурсам может потребоваться временное Graph Azure AD. В этой статье описаны следующие четыре метода настройки необходимых разрешений Azure AD Graph для регистрации приложения:
+
+1. [С помощью портала Azure можно найти API, которые использует организация](#option-1-use-the-azure-portal-to-find-the-apis-your-organization-uses)
+1. [Обновление манифеста приложения на портале Azure](#option-2-update-the-application-manifest-on-the-azure-portal)
+1. [Использование API Microsoft Graph](#option-3-use-the-microsoft-graph-api)
+1. [Используйте SDK Graph PowerShell](#option-4-use-the-microsoft-graph-powershell-sdk)
 
 > [!CAUTION]
 > Любое приложение с помощью Azure AD Graph будет по-прежнему работать после 30 июня 2022 г. Дополнительные сведения см. в Graph [Приложения Azure AD](migrate-azure-ad-graph-overview.md)в Microsoft Graph.
@@ -76,7 +81,7 @@ Azure Active Directory (Azure AD) Graph и будет отменена 30 июн
 
 API Graph приложения [](/graph/api/resources/application) Майкрософт включает свойство **requiredResourceAccess,** которое является коллекцией объектов [requiredResourceAccess.](/graph/api/resources/requiredresourceaccess) Используйте это свойство для настройки необходимых разрешений Azure AD Graph, как описано в следующих действиях.
 
-### <a name="prerequisites"></a>Предварительные условия
+### <a name="prerequisites"></a>Необходимые условия
 
 Для выполнения следующих действий необходимы следующие ресурсы и привилегии:
 
@@ -221,7 +226,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="step-3-verify-that-the-required-azure-ad-graph-permissions-were-added-to-your-app"></a>Шаг 3. Убедитесь, что необходимые разрешения Azure AD Graph в приложение
 
-Убедитесь, что у регистрации приложения есть необходимые разрешения API, которые вы добавили в  шаге 2 с помощью API Microsoft Graph или с помощью страницы регистрации приложений на портале Azure.
+Убедитесь, что регистрация приложения имеет необходимые разрешения azure AD Graph API, которые вы добавили в шаге  2 с помощью API Microsoft Graph или проверив страницу регистрации приложений на портале Azure.
 
 #### <a name="use-the-microsoft-graph-get-applicationid-api"></a>Используйте API microsoft Graph GET /application/{id}
 
@@ -233,11 +238,11 @@ GET https://graph.microsoft.com/v1.0/applications/581088ba-83c5-4975-b8af-11d2d7
 
 >**Примечание:** Несмотря на то, что вы настроили необходимые приложениям разрешения, эти разрешения не были предоставлены. Многие разрешения требуют согласия администратора, прежде чем они могут использоваться для доступа к данным организации.
 
-## <a name="option-4-use-microsoft-graph-powershell"></a>Вариант 4. Использование Microsoft Graph PowerShell
+## <a name="option-4-use-the-microsoft-graph-powershell-sdk"></a>Вариант 4. Использование SDK Graph Microsoft Graph PowerShell
 
-В [кодлет Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true) в Microsoft Graph PowerShell включен параметр **RequiredResourceAccess,** который является коллекцией объектов **IMicrosoftGraphRequiredResourceAccess.** Этот параметр используется для настройки необходимых разрешений Azure AD Graph, как описано в следующих действиях.
+В [кодлете Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true) в Microsoft Graph PowerShell SDK включен параметр **RequiredResourceAccess,** который является коллекцией объектов **IMicrosoftGraphRequiredResourceAccess.** Этот параметр используется для настройки необходимых разрешений Azure AD Graph, как описано в следующих действиях.
 
-### <a name="prerequisites"></a>Предварительные условия
+### <a name="prerequisites"></a>Необходимые условия
 
 Для выполнения следующих действий необходимы следующие привилегии:
 

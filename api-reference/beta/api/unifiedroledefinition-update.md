@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 1b276ef09c72d4945b74fff5ee660c20ab95cb10
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3d6e727ad610594b1ba9997c81479fdd9dded2d9
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61017044"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61524625"
 ---
 # <a name="update-unifiedroledefinition"></a>Обновление unifiedRoleDefinition
 
@@ -20,32 +20,40 @@ ms.locfileid: "61017044"
 
 Обновление свойств объекта [unifiedRoleDefinition](../resources/unifiedroledefinition.md) для поставщика RBAC.
 
+
 В настоящее время поддерживаются следующие поставщики RBAC:
+- Облачный КОМПЬЮТЕР
 - управление устройствами (Intune)
 - каталог (Azure AD) 
 
-> [!NOTE]
-> Поставщик облачных ПК RBAC в настоящее время поддерживает только [список и](rbacapplication-list-roledefinitions.md) [получать](unifiedroledefinition-get.md) операции.
 
-## <a name="permissions"></a>Разрешения
+## <a name="permissions"></a>Permissions
 
-В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующей таблицы наименее привилегированное разрешение, необходимое для вызова этого API. Дополнительные данные, [](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) в том числе осторожность перед выбором более привилегированных разрешений, поиск следующих разрешений в ссылке [Permissions](/graph/permissions-reference). 
+В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующих таблиц наименее привилегированное разрешение, необходимое для вызова этого API. Дополнительные данные, [](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) в том числе осторожность перед выбором более привилегированных разрешений, поиск следующих разрешений в ссылке [Permissions](/graph/permissions-reference). 
 
-### <a name="for-device-management-intune-provider"></a>Для поставщика управления устройствами (Intune)
+### <a name="for-a-cloud-pc-provider"></a>Поставщик облачных ПК
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | CloudPC.ReadWrite.All   |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | CloudPC.ReadWrite.All  |
+
+### <a name="for-a-device-management-intune-provider"></a>Для поставщика управления устройствами (Intune)
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  DeviceManagementRBAC.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | DeviceManagementRBAC.ReadWrite.All |
+|Приложение | DeviceManagementRBAC.ReadWrite.All |
 
-### <a name="for-directory-azure-ad-provider"></a>Поставщик каталогов (Azure AD)
+### <a name="for-a-directory-azure-ad-provider"></a>Поставщик каталогов (Azure AD)
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Приложение | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -61,11 +69,17 @@ PATCH /roleManagement/deviceManagement/roleDefinitions/{id}
 PATCH /roleManagement/directory/roleDefinitions/{id}
 ```
 
+Обновление определения ролей для поставщика облачных ПК:
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /roleManagement/cloudPc/roleDefinitions/{id}
+```
+
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -74,25 +88,23 @@ PATCH /roleManagement/directory/roleDefinitions/{id}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |description|Строка| Описание определения роли. Только для чтения, когда isBuiltIn является правдой. |
-|displayName|String| Имя отображения для определения роли. Только для чтения, когда isBuiltIn является правдой. Обязательный.|
-|id|String| Уникальный идентификатор определения роли. Key, not nullable, Read-only. |
+|displayName|Строка| Имя отображения для определения роли. Только для чтения, когда isBuiltIn является правдой. Обязательный.|
+|id|Строка| Уникальный идентификатор определения роли. Key, not nullable, Read-only. |
 |isBuiltIn|Boolean| Флаг, указывающий, является ли определение роли частью набора по умолчанию, включенного в продукт или настраиваемый. Только для чтения. |
 |isEnabled|Boolean| Флаг, указывающий, включена ли роль для назначения. Если значение false, роль недоступна для назначения. Только для чтения, когда isBuiltIn является правдой. |
 |resourceScopes|Коллекция String| К списку областей применяются разрешения, предоставленные определением ролей. В настоящее время поддерживается только "/". Только для чтения, когда isBuiltIn является правдой. **НЕ ИСПОЛЬЗУЙТЕ. В ближайшее время это свойство будет обесценилось. Прикрепить область к назначению ролей.**|
-|rolePermissions|[коллекция unifiedRolePermission](../resources/unifiedrolepermission.md)| Список разрешений, включенных в роль. Только для чтения, когда isBuiltIn является правдой. Обязательный. |
+|rolePermissions|[коллекция unifiedRolePermission](../resources/unifiedrolepermission.md)| Список разрешений, включенных в роль. Только для чтения, когда isBuiltIn является правдой. Обязательно. |
 |templateId|Строка| Настраиваемый идентификатор шаблона, который можно установить, когда isBuiltIn является ложным. Этот идентификатор обычно используется, если требуется, чтобы идентификатор был одинаковым в разных каталогах. Только для чтения, когда isBuiltIn является правдой. |
 |inheritsPermissionsFrom| [коллекция unifiedRoleDefinition](../resources/unifiedroledefinition.md)| Только для чтения набор определений ролей, которые наследует заданное определение роли. Только встроенные роли Azure AD поддерживают этот атрибут. |
 |version|String| Указывает версию определения роли. Только для чтения, когда isBuiltIn является правдой.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+При успешном выполнении этот метод возвращает код отклика `204 No Content`.
 
-## <a name="example"></a>Пример
+## <a name="example-1-updates-a-unifiedroledefinition-for-a-directory-provider"></a>Пример 1. Обновление **единой системыRoleDefinition** для поставщика каталогов
 
 ### <a name="request"></a>Запрос
-
-В следующем примере **обновляется единоеroleDefinition** для поставщика каталогов.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -167,4 +179,46 @@ Content-type: application/json
   "tocPath": ""
 }-->
 
+## <a name="example-2-updates-a-unifiedroledefinition-for-a-cloudpc-provider"></a>Пример 2. Обновление **единогоroleDefinition** для поставщика CloudPC
 
+### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "update_unifiedroledefinition_cloudpc"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/roleManagement/cloudPc/roleDefinitions/b7f5ddc1-b7dc-4d37-abce-b9d6fc15ffff
+Content-type: application/json
+
+{
+  "description": "Update basic properties and permission of application registrations",
+  "displayName": "ExampleCustomRole",
+  "rolePermissions":
+    [
+        {
+            "allowedResourceActions": 
+            [
+                "Microsoft.CloudPC/CloudPCs/Read",
+                "Microsoft.CloudPC/CloudPCs/Reprovision"
+            ]
+        }
+    ]
+}
+```
+
+### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "response"
+} -->
+
+```http
+HTTP/1.1 204 No Content
+Content-type: application/json
+
+```

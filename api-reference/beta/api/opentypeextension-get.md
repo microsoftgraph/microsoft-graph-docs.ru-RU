@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 3241ebbedebfcdcfcf9ccd1d5fd36edc7e0ff9f6
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: af10ff07b6cc9a0248324354bc359da904c4f50f
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424569"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61524885"
 ---
 # <a name="get-open-extension"></a>Получение открытого расширения
 
@@ -469,12 +469,13 @@ Content-Type: application/json
 
 В пятом примере показано, как найти в почтовом ящике вошедшего пользователя сообщения с расширениями, соответствующими фильтру, и дополнить их расширением. Фильтр возвращает расширения, свойство **id** которых совпадает с именем расширения `Com.Contoso.Referral`.
 
+
 <!-- {
   "blockType": "request",
   "name": "get_opentypeextension_5"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages?$filter=Extensions/any(f:f/id%20eq%20'Com.Contoso.Referral')&$expand=Extensions($filter=id%20eq%20'Com.Contoso.Referral')
 ```
 

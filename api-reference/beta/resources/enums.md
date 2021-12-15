@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 0c71564588531094f7741f1bdf9ab22435816277
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: c4e9835e140daa63e5b0c6fac4886e0b58a59880
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424646"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525738"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -36,7 +36,7 @@ ms.locfileid: "61424646"
 | Элемент             | Значение | Описание |
 |:-------------------|:------| :------|
 | notRequired        | 0     | Для завершения регистрации устройства пользователю не требуется многофакторная проверка подлинности.|
-| Обязательный           | 1     | Для завершения регистрации устройства пользователю требуется многофакторная проверка подлинности.|
+| обязательно           | 1     | Для завершения регистрации устройства пользователю требуется многофакторная проверка подлинности.|
 | unknownFutureValue | 2     | Эволюционирующее значение sentinel. Не следует использовать.|
 
 ### <a name="policyscope-values"></a>значения policyScope
@@ -193,7 +193,7 @@ ms.locfileid: "61424646"
 |:---|
 |Строка|
 |Целое число|
-|Справочные материалы|
+|Справка|
 |Binary|
 |Boolean|
 |DateTime|
@@ -1088,7 +1088,7 @@ ms.locfileid: "61424646"
 
 | Member
 |:-------------------------
-| Обязательный
+| обязательно
 | необязательный
 | resource
 
@@ -1665,7 +1665,7 @@ Enum для серьезности оповещений.
 
 ### <a name="chatmessagepolicyviolationdlpactiontype-values"></a>значения chatMessagePolicyViolationDlpActionType
 
-| Value |
+| Значение |
 |:-----------------|
 | Нет |
 | NotifySender |
@@ -2134,7 +2134,7 @@ Enum для серьезности оповещений.
 |валюта | столбец валюты. |
 |dateTime | Столбец dateTime. |
 |lookup | столбец lookup. |
-|boolean | Столбец Да/Нет. |
+|логический | Столбец Да/Нет. |
 |пользователь | столбец персоны или группы. |
 |url | гиперссылка или столбец изображения. |
 |вычисляется | вычислимый столбец. |
@@ -2159,7 +2159,7 @@ Enum для серьезности оповещений.
 | Элемент                | Значение | Описание                         |
 |:----------------------|:------|:------------------------------------|
 | string                | 1     | строковый тип данных                    |
-| boolean               | 2     | тип данных Boolean                   |
+| логический               | 2     | тип данных Boolean                   |
 | int64                 | 3     | Тип данных Int                       |
 | stringCollection      | 4     | Тип данных коллекции строк         |
 |dateTime|5||
@@ -2435,7 +2435,7 @@ Enum для серьезности оповещений.
 |Member|
 |:---|
 |team|
-|канал|
+|channel|
 |чат|
 |unknownFutureValue|
 
@@ -2570,6 +2570,14 @@ Enum для серьезности оповещений.
 |другие|
 |unknownFutureValue|
 
+### <a name="answerinputtype-values"></a>answerInputType values
+
+|Элемент|Значение|Описание|
+|:---|:---|:---|
+|text|0|Текст.|
+|radioButton|1|RadioButton.|
+|unknownFutureValue|2|UnknownFutureValue.|
+
 ### <a name="taskstatus_v2-values"></a>taskStatus_v2 значения
 
 |Member|
@@ -2587,4 +2595,37 @@ Enum для серьезности оповещений.
 |Нет|
 |defaultList|
 |flaggedEmail|
+|unknownFutureValue|
+
+### <a name="bookingpricetype-values"></a>значения bookingPriceType
+
+|Member|
+|:---|
+|неопределяемая|
+|fixedPrice|
+|startingAt|
+|почасовая|
+|бесплатно|
+|priceVaries|
+|callUs|
+|notSet|
+|unknownFutureValue|
+
+### <a name="bookingstaffrole-values"></a>значения bookingStaffRole 
+
+|Member|
+|:---|
+|гость|
+|администратор|
+|viewer|
+|externalGuest|
+|unknownFutureValue|
+
+### <a name="bookingreminderrecipients-values"></a>значения bookingReminderRecipients 
+
+|Member|
+|:---|
+|allAttendees|
+|персонал|
+|клиент|
 |unknownFutureValue|

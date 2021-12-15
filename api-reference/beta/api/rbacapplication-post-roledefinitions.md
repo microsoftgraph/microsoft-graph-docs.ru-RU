@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: d0d3842702dc0c2e13270401f16ee3d2e3287cdd
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 798ab14a744618d6a65929bed1ccfb25a97d3154
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60996925"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61526158"
 ---
 # <a name="create-unifiedroledefinition"></a>Создание unifiedRoleDefinition
 
@@ -21,31 +21,37 @@ ms.locfileid: "60996925"
 Создание нового [единого объектаRoleDefinition](../resources/unifiedroledefinition.md) для поставщика RBAC.
 
 В настоящее время поддерживаются следующие поставщики RBAC:
+- Облачный КОМПЬЮТЕР
 - управление устройствами (Intune)
 - каталог (Azure AD)
 
-> [!NOTE]
-> Поставщик облачных ПК RBAC в настоящее время поддерживает только [список и](rbacapplication-list-roledefinitions.md) [получать](unifiedroledefinition-get.md) операции.
+## <a name="permissions"></a>Permissions
 
-## <a name="permissions"></a>Разрешения
+В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующих таблиц наименее привилегированное разрешение, необходимое для вызова этого API. Дополнительные новости, в том числе осторожность [перед](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) выбором более привилегированных разрешений, см. [в см. в руб. Permissions.](/graph/permissions-reference) 
 
-В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующей таблицы наименее привилегированное разрешение, необходимое для вызова этого API. Дополнительные новости, в том числе осторожность [перед](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) выбором более привилегированных разрешений, см. [в см. в руб. Permissions.](/graph/permissions-reference) 
+### <a name="for-a-cloud-pc-provider"></a>Поставщик облачных ПК
 
-### <a name="for-device-management-intune-provider"></a>Для поставщика управления устройствами (Intune)
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | CloudPC.ReadWrite.All   |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | CloudPC.ReadWrite.All  |
+
+### <a name="for-a-device-management-intune-provider"></a>Для поставщика управления устройствами (Intune)
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  DeviceManagementRBAC.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | DeviceManagementRBAC.ReadWrite.All |
+|Приложение | DeviceManagementRBAC.ReadWrite.All |
 
-### <a name="for-directory-azure-ad-provider"></a>Поставщик каталогов (Azure AD)
+### <a name="for-a-directory-azure-ad-provider"></a>Поставщик каталогов (Azure AD)
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Приложение | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -61,11 +67,17 @@ POST /roleManagement/deviceManagement/roleDefinitions
 POST /roleManagement/directory/roleDefinitions
 ```
 
+Чтобы создать определение ролей для поставщика облачных ПК:
+<!-- { "blockType": "ignored" } -->
+```http
+POST /roleManagement/cloudPc/roleDefinitions
+```
+
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
@@ -83,12 +95,9 @@ POST /roleManagement/directory/roleDefinitions
 
 В случае успеха этот метод возвращает код отклика и новый `201 Created` [объект unifiedRoleDefinition](../resources/unifiedroledefinition.md) в тексте ответа.
 
-## <a name="example"></a>Пример
+## <a name="example-1create-a-custom-role-for-a-directory-provider"></a>Пример 1:Создание настраиваемой роли для поставщика каталогов
 
 ### <a name="request"></a>Запрос
-
-Ниже приводится пример создания настраиваемой роли поставщика каталогов.
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -186,4 +195,67 @@ Content-type: application/json
   "tocPath": ""
 }-->
 
+### <a name="example-2-create-a-custom-role-for-a-cloud-pc-provider"></a>Пример 2. Создание настраиваемой роли для поставщика облачных ПК
 
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "create_unifiedroledefinition_from_rbacapplication_cloudpc"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/roleManagement/cloudPc/roleDefinitions
+Content-type: application/json
+
+{
+  "description": "An example custom role",
+  "displayName": "ExampleCustomRole",
+  "rolePermissions":
+    [
+        {
+            "allowedResourceActions": 
+            [
+                "Microsoft.CloudPC/CloudPCs/Read"
+            ]
+        }
+    ],
+    "condition" : "null"
+}
+```
+
+### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/cloudPc/roleDefinitions/$entity",
+    "id": "b7f5ddc1-b7dc-4d37-abce-b9d6fc15ffff",
+    "description": "An example custom role",
+    "displayName": "ExampleCustomRole",
+    "isBuiltIn": false,
+    "isEnabled": true,
+    "templateId": "b7f5ddc1-b7dc-4d37-abce-b9d6fc15ffff",
+    "version": null,
+    "rolePermissions": [
+        {
+            "allowedResourceActions": [
+                "Microsoft.CloudPC/CloudPCs/Read"
+            ],
+            "condition": null
+        }
+    ],
+    "resourceScopes":["/"]
+}
+```

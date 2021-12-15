@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: a6659791c201ad7c90f409bf87e15df6a8161d2f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b375d9c4788c6f129b177d8ddbe47e3675f5fcce
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61003485"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525752"
 ---
 # <a name="update-bookingbusiness"></a>Обновление bookingbusiness
 
@@ -65,7 +65,7 @@ PATCH /bookingBusinesses/{id}
   "name": "update_bookingbusiness"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/bookingBusinesses/fabrikam@M365B489948.onmicrosoft.com
+PATCH https://graph.microsoft.com/beta/bookingBusinesses/fabrikam@contoso.onmicrosoft.com
 Content-type: application/json
 
 {

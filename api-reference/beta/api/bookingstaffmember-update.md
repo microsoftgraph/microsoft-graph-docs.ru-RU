@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 423ad3b5d414249093c737b03a005d669379b753
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 3edc44a7de42cfde1e685bbe0479d578ad079f0d
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688614"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61524660"
 ---
 # <a name="update-bookingstaffmember"></a>Обновление bookingstaffmember
 
@@ -43,13 +43,13 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|availabilityIsAffectedByPersonalCalendar|Логический|True означает, что если сотрудник является пользователем Microsoft 365, API Bookings использует личный календарь сотрудника в Microsoft 365, а также свойство **workingHours** для определения доступности. |
+|availabilityIsAffectedByPersonalCalendar|Boolean|True означает, что если сотрудник является пользователем Microsoft 365, API Bookings использует личный календарь сотрудника в Microsoft 365, а также свойство **workingHours** для определения доступности. |
 |colorIndex|Int32|Определяет цвет для представления сотрудника. Цвет соответствует цветовой палитре на странице **Сведения о персонале** в приложении Bookings.|
-|displayName|String|Имя сотрудника, отображаемого клиентам.|
+|displayName|Строка|Имя сотрудника, отображаемого клиентам.|
 |emailAddress|String|Адрес электронной почты сотрудника. Это может быть в том же Microsoft 365 клиенте, что и бизнес, или в другом домене электронной почты. Этот адрес электронной почты используется, если свойство **sendConfirmationsToOwner** имеет свойство true в политике планирования бизнеса.|
 |role|string| Роль сотрудника в бизнесе. Возможные значения: `guest`, `administrator`, `viewer`, `externalGuest`.|
 |timeZone|String|Часовой пояс сотрудника. Список возможных значений см. в [списке dateTimeTimeZone.](../resources/datetimetimezone.md)|
-|useBusinessHours|Логический|True означает, что доступность сотрудника определяется **свойством businessHours** бизнеса. False означает, что доступность определяется параметром **свойства workingHouse** сотрудника.|
+|useBusinessHours|Boolean|True означает, что доступность сотрудника определяется **свойством businessHours** бизнеса. False означает, что доступность определяется параметром **свойства workingHouse** сотрудника.|
 |workingHours|[коллекция bookingWorkHours](../resources/bookingworkhours.md)|Диапазон часов, каждый день недели, когда сотрудник доступен для бронирования.|
 
 ## <a name="response"></a>Отклик
@@ -64,7 +64,7 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
   "name": "update_bookingstaffmember"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/staffmembers/8ee1c803-a1fa-406d-8259-7ab53233f148
+PATCH https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/staffmembers/8ee1c803-a1fa-406d-8259-7ab53233f148
 Content-type: application/json
 
 {

@@ -1,15 +1,15 @@
 ---
 title: Получение добавочных изменений для сообщений в папке
 description: Разностный запрос позволяет запрашивать добавления, удаления или обновления для сообщений в папке с помощью ряда
-author: davidmu1
+author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: f9c29b90ae187a957a86ba01e25ca61b2d21e17a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2df2a7bf61ed0985210e6fdbd404e38ced704b9c
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59137471"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525493"
 ---
 # <a name="get-incremental-changes-to-messages-in-a-folder"></a>Получение добавочных изменений для сообщений в папке
 

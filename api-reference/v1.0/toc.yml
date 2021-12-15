@@ -481,7 +481,7 @@ items:
             items:
               - name: Список задач
                 href: api/planneruser-list-tasks.md
-          - name: Командная работа
+          - name: Teamwork
             items:
               - name: Установленное приложение
                 href: resources/teamsappinstallation.md
@@ -525,7 +525,7 @@ items:
         items:
           - name: Обзор
             href: resources/groups-overview.md
-          - name: Группа
+          - name: Group
             href: resources/group.md
             items:
               - name: Список групп
@@ -873,7 +873,7 @@ items:
                 href: api/serviceprincipal-get.md
               - name: Обновление
                 href: api/serviceprincipal-update.md
-              - name: Удаление
+              - name: Delete
                 href: api/serviceprincipal-delete.md
               - name: Получение дельты
                 href: api/serviceprincipal-delta.md
@@ -974,7 +974,7 @@ items:
                         href: api/permissiongrantpolicy-get.md
                       - name: Обновление
                         href: api/permissiongrantpolicy-update.md
-                      - name: Удаление
+                      - name: Delete
                         href: api/permissiongrantpolicy-delete.md
                       - name: Наборы условий предоставления разрешений
                         href: resources/permissiongrantconditionset.md
@@ -1167,11 +1167,11 @@ items:
                 href: api/calendarpermission-get.md
               - name: Обновление
                 href: api/calendarpermission-update.md
-              - name: Удаление
+              - name: Delete
                 href: api/calendarpermission-delete.md
           - name: Категории
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -1336,7 +1336,7 @@ items:
                 href: api/onlinemeeting-get.md
               - name: Обновление
                 href: api/onlinemeeting-update.md
-              - name: Удаление
+              - name: Delete
                 href: api/onlinemeeting-delete.md
               - name: Создание или получить
                 href: api/onlinemeeting-createorget.md
@@ -1405,6 +1405,104 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: Удаление элемента журнала
                     href: api/projectrome-delete-historyitem.md
+      - name: Резервирование для пользователей
+        displayName: 'Bookings, Microsoft Bookings'
+        items:
+          - name: Обзор
+            href: resources/booking-api-overview.md
+          - name: Организация в Microsoft Bookings
+            href: resources/bookingbusiness.md
+            items:
+              - name: Перечисление
+                href: api/bookingbusiness-list.md
+              - name: Создание
+                href: api/bookingbusiness-post-bookingbusinesses.md
+              - name: Получение
+                href: api/bookingbusiness-get.md
+              - name: Обновление
+                href: api/bookingbusiness-update.md
+              - name: Удаление
+                href: api/bookingbusiness-delete.md
+              - name: Публикация
+                href: api/bookingbusiness-publish.md
+              - name: Отмена публикации
+                href: api/bookingbusiness-unpublish.md
+          - name: Резервирование
+            href: resources/bookingappointment.md
+            items:
+              - name: Список представлений календаря
+                href: api/bookingbusiness-list-calendarview.md
+              - name: Список встреч
+                href: api/bookingbusiness-list-appointments.md
+              - name: Создание встречи
+                href: api/bookingbusiness-post-appointments.md
+              - name: Получение встречи
+                href: api/bookingappointment-get.md
+              - name: Обновление встречи
+                href: api/bookingappointment-update.md
+              - name: Удаление встречи
+                href: api/bookingappointment-delete.md
+              - name: Отмена встречи
+                href: api/bookingappointment-cancel.md
+          - name: Валюта резервирования
+            href: resources/bookingcurrency.md
+            items:
+              - name: Перечисление
+                href: api/bookingcurrency-list.md
+              - name: Получение
+                href: api/bookingcurrency-get.md
+          - name: Заказ настраиваемой вопросы
+            href: resources/bookingcustomquestion.md
+            items:
+              - name: Список
+                href: api/bookingbusiness-list-customquestions.md
+              - name: Создание
+                href: api/bookingbusiness-post-customquestions.md
+              - name: Получение
+                href: api/bookingcustomquestion-get.md
+              - name: Обновление
+                href: api/bookingcustomquestion-update.md
+              - name: Delete
+                href: api/bookingcustomquestion-delete.md
+          - name: bookingCustomer
+            href: resources/bookingcustomer.md
+            items:
+              - name: Перечисление
+                href: api/bookingbusiness-list-customers.md
+              - name: Создание
+                href: api/bookingbusiness-post-customers.md
+              - name: Получение
+                href: api/bookingcustomer-get.md
+              - name: Обновление
+                href: api/bookingcustomer-update.md
+              - name: Удаление
+                href: api/bookingcustomer-delete.md
+          - name: bookingService
+            href: resources/bookingservice.md
+            items:
+              - name: Перечисление
+                href: api/bookingbusiness-list-services.md
+              - name: Создание
+                href: api/bookingbusiness-post-services.md
+              - name: Получение
+                href: api/bookingservice-get.md
+              - name: Обновление
+                href: api/bookingservice-update.md
+              - name: Удаление
+                href: api/bookingservice-delete.md
+          - name: bookingStaffMember
+            href: resources/bookingstaffmember.md
+            items:
+              - name: Перечисление
+                href: api/bookingbusiness-list-staffmembers.md
+              - name: Создание
+                href: api/bookingbusiness-post-staffmembers.md
+              - name: Получение
+                href: api/bookingstaffmember-get.md
+              - name: Обновление
+                href: api/bookingstaffmember-update.md
+              - name: Удаление
+                href: api/bookingstaffmember-delete.md
       - name: Устройства и приложения
         expanded: true
         items:
@@ -1422,7 +1520,7 @@ items:
                     href: api/printconnector-get.md
                   - name: Обновление
                     href: api/printconnector-update.md
-                  - name: Удаление
+                  - name: Delete
                     href: api/printconnector-delete.md
               - name: Распечатать документ
                 href: resources/printdocument.md
@@ -1470,7 +1568,7 @@ items:
                     href: api/printer-get.md
                   - name: Обновление
                     href: api/printer-update.md
-                  - name: Удаление
+                  - name: Delete
                     href: api/printer-delete.md
                   - name: Получить триггер задачи
                     href: api/printtasktrigger-get.md
@@ -1501,7 +1599,7 @@ items:
                     href: api/printershare-get.md
                   - name: Обновление
                     href: api/printershare-update.md
-                  - name: Удаление
+                  - name: Delete
                     href: api/printershare-delete.md
                   - name: Список разрешенных пользователей
                     href: api/printershare-list-allowedusers.md
@@ -1526,7 +1624,7 @@ items:
                     href: api/printtaskdefinition-get.md
                   - name: Обновление
                     href: api/print-update-taskdefinition.md
-                  - name: Удаление
+                  - name: Delete
                     href: api/print-delete-taskdefinition.md
                   - name: Перечисление задач
                     href: api/printtaskdefinition-list-tasks.md
@@ -4309,7 +4407,7 @@ items:
                 href: api/educationassignmentdefaults-get.md
               - name: Обновление по умолчанию назначения
                 href: api/educationassignmentdefaults-update.md
-          - name: Категория
+          - name: Category
             href: resources/educationcategory.md
             items:
               - name: Создание категории
@@ -4484,7 +4582,7 @@ items:
                 href: api/permission-update.md
               - name: Удаление разрешения
                 href: api/permission-delete.md
-      - name: Удостоверение и доступ
+      - name: Удостоверения и доступ
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: Обзор
@@ -4502,7 +4600,7 @@ items:
                     href: api/administrativeunit-get.md
                   - name: Обновление
                     href: api/administrativeunit-update.md
-                  - name: Удаление
+                  - name: Delete
                     href: api/administrativeunit-delete.md
                   - name: Добавление участника
                     href: api/administrativeunit-post-members.md
@@ -4703,7 +4801,7 @@ items:
                         href: api/unifiedroledefinition-get.md
                       - name: Обновление
                         href: api/unifiedroledefinition-update.md
-                      - name: Удаление
+                      - name: Delete
                         href: api/unifiedroledefinition-delete.md
                   - name: Назначение ролей
                     href: resources/unifiedroleassignment.md
@@ -4776,7 +4874,7 @@ items:
                         href: api/conditionalaccesspolicy-get.md
                       - name: Обновление
                         href: api/conditionalaccesspolicy-update.md
-                      - name: Удаление
+                      - name: Delete
                         href: api/conditionalaccesspolicy-delete.md
                   - name: Имена местоположений
                     items:
@@ -4802,7 +4900,7 @@ items:
                                 href: api/countrynamedlocation-get.md
                               - name: Обновление
                                 href: api/countrynamedlocation-update.md
-                              - name: Удаление
+                              - name: Delete
                                 href: api/countrynamedlocation-delete.md
                           - name: Расположение с именем IP
                             items:
@@ -4816,7 +4914,7 @@ items:
                                 href: api/ipnamedlocation-get.md
                               - name: Обновление
                                 href: api/ipnamedlocation-update.md
-                              - name: Удаление
+                              - name: Delete
                                 href: api/ipnamedlocation-delete.md
               - name: Операции с политикой данных
                 href: resources/datapolicyoperation.md
@@ -4834,7 +4932,7 @@ items:
                     href: api/oauth2permissiongrant-get.md
                   - name: Обновление
                     href: api/oauth2permissiongrant-update.md
-                  - name: Удаление
+                  - name: Delete
                     href: api/oauth2permissiongrant-delete.md
                   - name: Получение дельты
                     href: api/oauth2permissiongrant-delta.md
@@ -4881,7 +4979,7 @@ items:
                     href: api/identityproviderbase-get.md
                   - name: Обновление
                     href: api/identityproviderbase-update.md
-                  - name: Удаление
+                  - name: Delete
                     href: api/identityproviderbase-delete.md
                   - name: Перечисление доступных типов поставщиков
                     href: api/identityproviderbase-availableprovidertypes.md
@@ -4897,7 +4995,7 @@ items:
                     href: api/identityprovider-get.md
                   - name: Обновление
                     href: api/identityprovider-update.md
-                  - name: Удаление
+                  - name: Delete
                     href: api/identityprovider-delete.md
                   - name: Перечисление доступных типов поставщиков
                     href: api/identityprovider-list-availableprovidertypes.md
@@ -4924,7 +5022,7 @@ items:
                         href: api/organizationalbrandinglocalization-get.md
                       - name: Обновление
                         href: api/organizationalbrandinglocalization-update.md
-                      - name: Удаление
+                      - name: Delete
                         href: api/organizationalbrandinglocalization-delete.md
               - name: Политика
                 href: resources/policy-overview.md
@@ -4940,7 +5038,7 @@ items:
                         href: api/activitybasedtimeoutpolicy-get.md
                       - name: Обновление
                         href: api/activitybasedtimeoutpolicy-update.md
-                      - name: Удаление
+                      - name: Delete
                         href: api/activitybasedtimeoutpolicy-delete.md
                   - name: Политика потоков проверки подлинности
                     items:
@@ -4968,7 +5066,7 @@ items:
                             href: api/fido2authenticationmethodconfiguration-get.md
                           - name: Обновление
                             href: api/fido2authenticationmethodconfiguration-update.md
-                          - name: Удаление
+                          - name: Delete
                             href: api/fido2authenticationmethodconfiguration-delete.md
                       - name: Microsoft Authenticator политики
                         href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
@@ -4977,7 +5075,7 @@ items:
                             href: api/microsoftauthenticatorauthenticationmethodconfiguration-get.md
                           - name: Обновление
                             href: api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
-                          - name: Удаление
+                          - name: Delete
                             href: api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
                       - name: Политика электронной почты
                         href: resources/emailauthenticationmethodconfiguration.md
@@ -4986,7 +5084,7 @@ items:
                             href: api/emailauthenticationmethodconfiguration-get.md
                           - name: Обновление
                             href: api/emailauthenticationmethodconfiguration-update.md
-                          - name: Удаление
+                          - name: Delete
                             href: api/emailauthenticationmethodconfiguration-delete.md
                   - name: Политика авторизации
                     href: resources/authorizationpolicy.md
@@ -5006,7 +5104,7 @@ items:
                         href: api/claimsmappingpolicy-get.md
                       - name: Обновление
                         href: api/claimsmappingpolicy-update.md
-                      - name: Удаление
+                      - name: Delete
                         href: api/claimsmappingpolicy-delete.md
                       - name: Список субъектов-служб и приложений
                         href: api/claimsmappingpolicy-list-appliesto.md
@@ -5021,7 +5119,7 @@ items:
                         href: api/featurerolloutpolicy-get.md
                       - name: Обновление
                         href: api/featurerolloutpolicy-update.md
-                      - name: Удаление
+                      - name: Delete
                         href: api/featurerolloutpolicy-delete.md
                       - name: Create appliesTo
                         href: api/featurerolloutpolicy-post-appliesto.md
@@ -5038,7 +5136,7 @@ items:
                         href: api/homerealmdiscoverypolicy-get.md
                       - name: Обновление
                         href: api/homerealmdiscoverypolicy-update.md
-                      - name: Удаление
+                      - name: Delete
                         href: api/homerealmdiscoverypolicy-delete.md
                       - name: Список субъектов-служб и приложений
                         href: api/homerealmdiscoverypolicy-list-appliesto.md
@@ -5053,7 +5151,7 @@ items:
                         href: api/tokenissuancepolicy-get.md
                       - name: Обновление
                         href: api/tokenissuancepolicy-update.md
-                      - name: Удаление
+                      - name: Delete
                         href: api/tokenissuancepolicy-delete.md
                       - name: Список субъектов-служб и приложений
                         href: api/tokenissuancepolicy-list-appliesto.md
@@ -5068,7 +5166,7 @@ items:
                         href: api/tokenlifetimepolicy-get.md
                       - name: Обновление
                         href: api/tokenlifetimepolicy-update.md
-                      - name: Удаление
+                      - name: Delete
                         href: api/tokenlifetimepolicy-delete.md
                       - name: Список субъектов-служб и приложений
                         href: api/tokenlifetimepolicy-list-appliesto.md
@@ -5121,7 +5219,7 @@ items:
                         href: api/identityuserflowattribute-get.md
                       - name: Обновление
                         href: api/identityuserflowattribute-update.md
-                      - name: Удаление
+                      - name: Delete
                         href: api/identityuserflowattribute-delete.md
                   - name: Назначение атрибута потока пользователей
                     items:
@@ -5131,7 +5229,7 @@ items:
                         href: api/identityuserflowattributeassignment-get.md
                       - name: Обновление
                         href: api/identityuserflowattributeassignment-update.md
-                      - name: Удаление
+                      - name: Delete
                         href: api/identityuserflowattributeassignment-delete.md
                   - name: Конфигурация языка потока пользователей
                     items:
@@ -5149,7 +5247,7 @@ items:
                         href: api/userflowlanguagepage-get.md
                       - name: Обновление
                         href: api/userflowlanguagepage-put.md
-                      - name: Удаление
+                      - name: Delete
                         href: api/userflowlanguagepage-delete.md
                   - name: Соединители API
                     items:
@@ -5263,7 +5361,7 @@ items:
                         href: api/accesspackage-get.md
                       - name: Обновление
                         href: api/accesspackage-update.md
-                      - name: Удаление
+                      - name: Delete
                         href: api/accesspackage-delete.md
                       - name: Фильтр текущего пользователя
                         href: api/accesspackage-filterbycurrentuser.md
@@ -5302,7 +5400,7 @@ items:
                         href: api/accesspackagecatalog-get.md
                       - name: Обновление
                         href: api/accesspackagecatalog-update.md
-                      - name: Удаление
+                      - name: Delete
                         href: api/accesspackagecatalog-delete.md
                   - name: Подключенная организация
                     href: resources/connectedorganization.md
@@ -5315,7 +5413,7 @@ items:
                         href: api/connectedorganization-get.md
                       - name: Обновление
                         href: api/connectedorganization-update.md
-                      - name: Удаление
+                      - name: Delete
                         href: api/connectedorganization-delete.md
                       - name: Список внешних спонсоров
                         href: api/connectedorganization-list-externalsponsors.md
@@ -5348,7 +5446,7 @@ items:
                     href: api/agreement-get.md
                   - name: Обновление
                     href: api/agreement-update.md
-                  - name: Удаление
+                  - name: Delete
                     href: api/agreement-delete.md
                   - name: Список состояний принятия
                     href: api/user-list-agreementacceptances.md
@@ -5419,7 +5517,7 @@ items:
                 href: api/attachment-delete.md
           - name: Категории
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -5691,7 +5789,7 @@ items:
                 href: api/contact-delta.md
           - name: Категории
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -5801,7 +5899,7 @@ items:
                     href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
                   - name: Получение занятого объема хранилища
                     href: api/reportroot-getmailboxusagestorage.md
-              - name: Microsoft 365 активации
+              - name: Активации Microsoft 365
                 href: resources/office-365-activations-reports.md
                 items:
                   - name: Получение сведений о пользователе
@@ -5810,7 +5908,7 @@ items:
                     href: api/reportroot-getoffice365activationcounts.md
                   - name: Получение количества пользователей
                     href: api/reportroot-getoffice365activationsusercounts.md
-              - name: Microsoft 365 активных пользователей
+              - name: Активные пользователи Microsoft 365
                 href: resources/office-365-active-users-reports.md
                 items:
                   - name: Получение сведений о пользователе
@@ -5819,7 +5917,7 @@ items:
                     href: api/reportroot-getoffice365activeusercounts.md
                   - name: Получение количества пользователей служб
                     href: api/reportroot-getoffice365servicesusercounts.md
-              - name: Microsoft 365 групп
+              - name: Действия в группах Microsoft 365
                 href: resources/office-365-groups-activity-reports.md
                 items:
                   - name: Получение сведений о группе
@@ -5951,7 +6049,7 @@ items:
       - name: Поиск
         displayname: Microsoft Search API
         items:
-          - name: Query
+          - name: Запрос
             items:
               - name: Обзор
                 href: resources/search-api-overview.md
@@ -6113,7 +6211,7 @@ items:
                 href: api/site-list-subsites.md
               - name: Поиск сайтов
                 href: api/site-search.md
-              - name: Разрешения
+              - name: Permissions
                 href: resources/permission.md
                 items:
                   - name: Получить разрешение сайта
@@ -6154,7 +6252,7 @@ items:
                 href: api/columndefinition-get.md
               - name: Обновление
                 href: api/columndefinition-update.md
-              - name: Удаление
+              - name: Delete
                 href: api/columndefinition-delete.md
           - name: типы контента;
             items:
@@ -6164,7 +6262,7 @@ items:
                 href: api/contenttype-get.md
               - name: Обновление
                 href: api/contenttype-update.md
-              - name: Удаление
+              - name: Delete
                 href: api/contenttype-delete.md
               - name: Проверка состояния публикации
                 href: api/contenttype-ispublished.md
@@ -6207,7 +6305,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Обновление
                     href: api/termstore-store-update.md
-              - name: Группа
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: Список
@@ -6231,7 +6329,7 @@ items:
                     href: api/termstore-set-get.md
                   - name: Обновление
                     href: api/termstore-set-update.md
-                  - name: Удаление
+                  - name: Delete
                     href: api/termstore-set-delete.md
               - name: Term
                 href: resources/termstore-term.md
@@ -6244,7 +6342,7 @@ items:
                     href: api/termstore-term-get.md
                   - name: Обновление
                     href: api/termstore-term-update.md
-                  - name: Удаление
+                  - name: Delete
                     href: api/termstore-term-delete.md
               - name: Relation
                 href: resources/termstore-relation.md
@@ -6258,7 +6356,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: Планирование
+          - name: План
             href: resources/plannerplan.md
             items:
               - name: Создание плана
@@ -6699,7 +6797,7 @@ items:
                     href: api/openshift-get.md
                   - name: Обновление
                     href: api/openshift-update.md
-                  - name: Удаление
+                  - name: Delete
                     href: api/openshift-delete.md
               - name: Запрос на открытие смены
                 href: resources/openshiftchangerequest.md
@@ -6862,7 +6960,7 @@ items:
                 href: api/linkedresource-get.md
               - name: Обновление
                 href: api/linkedresource-update.md
-              - name: Удаление
+              - name: Delete
                 href: api/linkedresource-delete.md
       - name: Книги и диаграммы
         displayName: Excel

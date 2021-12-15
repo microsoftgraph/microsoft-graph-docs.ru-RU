@@ -1,15 +1,15 @@
 ---
 title: Получение добавочных изменений для групп
 description: Разностный запрос позволяет запрашивать добавления, удаления или обновления групп с помощью вызовов разностных функций. Разностный запрос позволяет обнаруживать изменения в группах
-author: davidmu1
+author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: cea4e335a02c2ebdf107cdfbca72072b0b18d2f3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 465f0f4b0ade12d71c0e07cdeb99de708c651a4b
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142391"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61524646"
 ---
 # <a name="get-incremental-changes-for-groups"></a>Получение добавочных изменений для групп
 

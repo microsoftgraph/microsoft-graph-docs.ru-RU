@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 89265615983458dc758f6242ce2b748e13c73cca
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 76c08ab05575b1f0c52b7af21db787396e8dba63
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59765230"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61524828"
 ---
 # <a name="bookingbusiness-resource-type"></a>Тип ресурса bookingBusiness
 
@@ -19,6 +19,8 @@ ms.locfileid: "59765230"
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
 Представляет бизнес в Microsoft Bookings. Это объект верхнего уровня в API Microsoft Bookings. Он содержит бизнес-информацию и связанные с ними бизнес-объекты, такие как встречи, клиенты, службы и сотрудники.
+
+Наследует [от bookingNamedEntity](bookingnamedentity.md)
 
 ## <a name="methods"></a>Методы
 
@@ -37,6 +39,8 @@ ms.locfileid: "59765230"
 |[Службы списка](../api/bookingbusiness-list-services.md) |[коллекция bookingService](bookingservice.md)| Получите коллекцию объектов bookingService.|
 |[Создание bookingStaffMember](../api/bookingbusiness-post-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md)| Создайте новое bookingStaffMember, разместив в коллекции staffMembers.|
 |[Список staffMembers](../api/bookingbusiness-list-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md) collection| Получите коллекцию объектов bookingStaffMember.|
+|[Список customQuestions](../api/bookingbusiness-list-customquestions.md)|[коллекция bookingCustomQuestion](../resources/bookingcustomquestion.md)|Получите ресурсы **bookingCustomQuestion** из свойства **навигации customQuestions.**|
+|[Создание bookingCustomQuestion](../api/bookingbusiness-post-customquestions.md)|[bookingCustomQuestion](../resources/bookingcustomquestion.md)|Создайте новый **объект bookingCustomQuestion.**|
 |[Список calendarView](../api/bookingbusiness-list-calendarview.md)|[коллекция bookingAppointment](bookingappointment.md)|Получите коллекцию **объектов bookingAppointment,** которая происходит в указанном диапазоне дат.|
 |[publish](../api/bookingbusiness-publish.md)|Нет|Сделайте страницу планирования этого бизнеса доступной для внешних клиентов. Установите **свойство isPublished** для true и **publicUrl** на URL-адрес страницы планирования.|
 |[unpublish](../api/bookingbusiness-unpublish.md)|Нет| Сделать страницу планирования этого бизнеса недоступным для внешних клиентов. Установите **свойство isPublished** false, **а свойство publicUrl** — null.|
@@ -46,12 +50,12 @@ ms.locfileid: "59765230"
 |:---------------|:--------|:----------|
 |address|[physicalAddress](physicaladdress.md)|Адрес улицы бизнеса. Свойство **адресов** вместе с **телефоном** **и webSiteUrl** отображаются в подножке страницы планирования бизнеса.|
 |businessHours|[коллекция bookingWorkHours](bookingworkhours.md)|Часы работы для бизнеса.|
-|businessType|String|Тип бизнеса.|
+|businessType|Строка|Тип бизнеса.|
 |defaultCurrencyIso|Строка|Код валюты, в которую бизнес работает в Microsoft Bookings.|
 |displayName|Строка|Имя бизнеса, которое взаимодействует с клиентами. Это имя отображается в верхней части страницы планирования бизнеса.|
 |email|String|Адрес электронной почты для бизнеса.|
-|id|String|Уникальный программный идентификатор для бизнеса. Только для чтения.|
-|isPublished|Логический|Страница планирования стала доступной для внешних клиентов. Для этого **свойства** используйте публикацию и неопубликованные действия.  Только для чтения.|
+|id|Строка|Уникальный программный идентификатор для бизнеса. Только для чтения.|
+|isPublished|Boolean|Страница планирования стала доступной для внешних клиентов. Для этого **свойства** используйте публикацию и неопубликованные действия.  Только для чтения.|
 |phone|String|Номер телефона для бизнеса. Свойство **телефона** вместе с **адресом** **и webSiteUrl** отображаются в подножке страницы планирования бизнеса.|
 |publicUrl|Строка|URL-адрес страницы планирования, заданный [](../api/bookingbusiness-publish.md) после публикации или публикации [страницы.](../api/bookingbusiness-unpublish.md) Только для чтения.|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Указывает, как можно создавать заказы для этого бизнеса.|
@@ -63,6 +67,7 @@ ms.locfileid: "59765230"
 |appointments|[коллекция bookingAppointment](bookingappointment.md)| Все встречи этого бизнеса. Только для чтения. Допускается значение null.|
 |calendarView|[коллекция bookingAppointment](bookingappointment.md)| Набор назначений этого бизнеса в указанном диапазоне дат. Только для чтения. Допускается значение null.|
 |клиенты|[коллекция bookingCustomer](bookingcustomer.md)| Все клиенты этого бизнеса. Только для чтения. Допускается значение null.|
+|customQuestions|[коллекция bookingCustomQuestion](../resources/bookingcustomquestion.md)| Все настраиваемые вопросы этого бизнеса. Только для чтения. Допускается значение null.|
 |службы|[коллекция bookingService](bookingservice.md)| Все службы, предлагаемые этим бизнесом. Только для чтения. Допускается значение null.|
 |staffMembers|[bookingStaffMember](bookingstaffmember.md) collection| Все сотрудники, которые предоставляют услуги в этом бизнесе. Только для чтения. Допускается значение null.|
 

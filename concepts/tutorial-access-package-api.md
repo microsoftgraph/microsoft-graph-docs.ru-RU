@@ -1,15 +1,15 @@
 ---
 title: Руководство. Управление доступом к ресурсам в управлении правами Active Directory с помощью API Graph Microsoft
 description: Узнайте, как управлять доступом к ресурсам в управлении правами Active Directory (Azure AD) с помощью API Graph Microsoft.
-author: davidmu1
+author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: ef171601ca5d0b91ddfd7ff58ca7ace1bc47ac1f
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.openlocfilehash: 461d3ed9bdbc7fa09f84514abe222cabf8519bcd
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60289121"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61526011"
 ---
 # <a name="tutorial-manage-access-to-resources-in-active-directory-entitlement-management-using-microsoft-graph-apis"></a>Руководство. Управление доступом к ресурсам в управлении правами Active Directory с помощью API Graph Microsoft
 
@@ -19,7 +19,7 @@ ms.locfileid: "60289121"
 
 >**Примечание:** Объекты отклика, показанные в этом руководстве, могут быть сокращены для чтения. 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые условия
 
 Чтобы успешно завершить этот учебник, убедитесь, что у вас есть необходимые предпосылки:
 - Управление правами Azure AD требует определенных лицензий. Дополнительные сведения см. в [дополнительных сведениях о требованиях к лицензии.](/azure/active-directory/governance/entitlement-management-overview#license-requirements) В вашем клиенте требуются следующие лицензии:

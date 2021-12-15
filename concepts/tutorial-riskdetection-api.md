@@ -1,15 +1,15 @@
 ---
 title: Руководство. Определение и исправление риска с помощью API Graph Microsoft
 description: Узнайте, как выявлять и устранять риски с помощью API Graph Microsoft.
-author: davidmu1
+author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 4c1f901199e1d5a1d68694e80522c5180810cf2d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5c32ea73d83366188954f4736e0a1cbd17064ddb
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143498"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61523260"
 ---
 # <a name="tutorial-identify-and-remediate-risks-using-microsoft-graph-apis"></a>Руководство. Определение и устранение рисков с помощью API Graph Microsoft
 
@@ -19,7 +19,7 @@ Azure AD Identity Protection предоставляет организациям
 
 >**Примечание:** Объекты отклика, показанные в этом руководстве, могут быть сокращены для чтения. 
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Необходимые условия
 
 Чтобы успешно завершить этот учебник, убедитесь, что у вас есть необходимые предпосылки:
 
@@ -42,7 +42,7 @@ Azure AD Identity Protection предоставляет организациям
     
     5. Нажмите **Согласие** и выберите **Принять**, чтобы согласиться принять разрешения. Вам не нужно предоставлять согласие от имени организации для этих разрешений.
 
-        ![Прием разрешений](./images/tutorial-riskdetection-api/accept-permissions.png)
+        ![Принятие запроса на разрешения](./images/tutorial-riskdetection-api/accept-permissions.png)
 
 ## <a name="step-1-create-a-user-account"></a>Шаг 1. Создание учетной записи пользователя
 

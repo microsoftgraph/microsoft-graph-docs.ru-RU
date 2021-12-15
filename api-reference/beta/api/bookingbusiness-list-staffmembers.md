@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: a3fd5919cbc571a3c6141f19ccfc3c0738f24459
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c41fb5b1baf7cd5c70cc807f99d0548f33028099
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60999614"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61524975"
 ---
 # <a name="list-staffmembers"></a>Список staffMembers
 
@@ -55,7 +55,7 @@ GET /bookingBusinesses/{id}/staffMembers
   "name": "get_staffmembers"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/staffMembers
+GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/staffMembers
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-staffmembers-csharp-snippets.md)]
@@ -94,7 +94,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40M365B489948.onmicrosoft.com')/staffMembers",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingBusinesses('Contosolunchdelivery%40contoso.onmicrosoft.com')/staffMembers",
     "value":[
         {
             "id":"8ee1c803-a1fa-406d-8259-7ab53233f148",
@@ -156,7 +156,7 @@ Content-type: application/json
         {
             "id":"71d64d0e-7225-49b6-b0b1-070d476cda51",
             "displayName":"Samantha Booth",
-            "emailAddress":"samanthab@M365B489948.OnMicrosoft.com",
+            "emailAddress":"samanthab@contoso.onmicrosoft.com",
             "availabilityIsAffectedByPersonalCalendar":true,
             "colorIndex":0,
             "role":"administrator",

@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Букингнамедентити
-description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-localization_priority: Normal
+title: тип ресурса bookingNamedEntity
+description: Это базовый тип для субъектов Microsoft Bookings, которые предоставляют имя отображения, например bookingBusiness, bookingPerson, bookingService.
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 3302f364b3f16dc6327b9a1e9ab74161e122ebfb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9d0700f6ac86d16ad00684d429a0f88fdb7a16a7
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071782"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61525290"
 ---
-# <a name="bookingnamedentity-resource-type"></a>Тип ресурса Букингнамедентити
+# <a name="bookingnamedentity-resource-type"></a>тип ресурса bookingNamedEntity
 
 Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Это базовый тип для сущностей Microsoft Books, предоставляющих отображаемое имя, например, [букингбусинесс](bookingbusiness.md), [букингперсон](bookingperson.md), [букингсервице](bookingservice.md).
+Это базовый тип для субъектов Microsoft Bookings, которые предоставляют имя отображения, например [bookingBusiness,](bookingbusiness.md) [bookingPerson,](bookingperson.md) [bookingService,](bookingservice.md) [bookingCustomQuestion.](bookingcustomquestion.md)
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|String|Имя производной сущности, которая взаимодействует с клиентами.|
-|id|String| Идентификатор производной сущности. Только для чтения.|
+|displayName|Строка|Имя полученной сущности, которая взаимодействует с клиентами.|
+|id|Строка| ID для полученного объекта. Только для чтения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

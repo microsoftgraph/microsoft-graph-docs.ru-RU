@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Букингреминдер
-description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
-localization_priority: Normal
+title: тип ресурса bookingReminder
+description: Представляет, когда и кому отправлять напоминание по электронной почте.
+ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: f12a794b6ca624d3ef41a61bc93a8a0c9a867e99
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 51dde51c25064edb0c6548676bb7921b7705dcf2
+ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071765"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61524681"
 ---
-# <a name="bookingreminder-resource-type"></a>Тип ресурса Букингреминдер
+# <a name="bookingreminder-resource-type"></a>тип ресурса bookingReminder
 
 Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Указывает, когда и кому отправлять напоминания по электронной почте.
+Представляет, когда и кому отправлять напоминание по электронной почте.
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|message|String|Сообщение в памятке.|
-|корреспондирующей|Длительность|Количество времени до начала встречи, в которое будет отправлено напоминание. Он отмечен в формате [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
-|recipients|String| Лица, шауолд получать напоминание. Возможные значения: `allAttendees`, `staff`, `customer`.|
+|message|String|Сообщение в напоминаниях.|
+|смещение|Длительность|Время, за которое необходимо отправить напоминание перед началом встречи. Он обозначается в [формате ISO 8601.](https://www.iso.org/iso-8601-date-and-time-format.html)|
+|recipients|bookingReminderRecipients| Лица, которые должны получать напоминание. Возможные значения: `allAttendees` , `staff` и `customer` `unknownFutureValue` .|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -44,7 +44,7 @@ ms.locfileid: "48071765"
 {
   "message": "String",
   "offset": "String (timestamp)",
-  "recipients": "String"
+  "recipients": {"@odata.type": "microsoft.graph.bookingReminderRecipients"}
 }
 
 ```
