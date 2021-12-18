@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c2133afc019878f0e0b461780486a1435acd9a51
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: edabeb0cee6148d55b1cf52052ababda367d9064
+ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61011730"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61561328"
 ---
 # <a name="create-meetingregistration"></a>Создание meetingRegistration
 
@@ -41,11 +41,14 @@ POST /me/onlineMeetings/{id}/registration
 | Имя            | Описание               |
 | :-------------- | :------------------------ |
 | Авторизация   | Bearer {token}. Обязательный. |
-| Принять-Язык | Язык. Необязательный параметр.       |
+| Принять-Язык | Язык. Необязательное свойство.       |
 
 ## <a name="request-body"></a>Текст запроса
 
 В теле запроса поставляют представление JSON объекта [meetingRegistration.](../resources/meetingregistration.md)
+
+> [!IMPORTANT]
+> Необходимо предоставить свойство **@odata.type,** чтобы указать тип регистрации. Дополнительные сведения см. в следующем [примере](#example).
 
 ## <a name="response"></a>Отклик
 
@@ -73,6 +76,7 @@ POST https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRh
 Content-Type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.meetingRegistration",
   "subject":"Microsoft Ignite",
   "description": "Join us November 2–4, 2021 to explore the latest tools, training sessions, technical expertise, networking opportunities, and more.",
   "startDateTime":"2021-11-02T08:00:00-08:00",
@@ -139,6 +143,7 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('16664f75-11dc-4870-bec6-38c1aaa81431')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ')/registration/$entity",
+  "@odata.type": "#microsoft.graph.meetingRegistration",
   "id": "gWWckDBR6UOI8_yzWCzeNw,6pAAiSU1bkGqzLnbHG_muA,bzLh6uR-5EGYsCvtvIvs6Q,2Hui7cZ3e0m1BblvyhKFaw,Bcn5itxWh0ui5zRxG26Akw,XCvoVSOmK0e9fivLeKuR_w",
   "registrationPageWebUrl": "https://teams.microsoft.com/registration/gWWckDBR6UOI8_yzWCzeNw,6pABiSU1bkGqzLnbHG_muA,bzLh6uR-5EGYsCvtvIvs6Q,luiTigKrcUGE6Cm33MyQgA,29OIGSH4skyQNu6mNxJr3w,m2bnpmqE_EqwV1Q8dr280E?mode=read&tenantId=eefc0b3a-a334-4fb7-ac60-2f1cf13ec00d",
   "allowedRegistrant": "everyone",

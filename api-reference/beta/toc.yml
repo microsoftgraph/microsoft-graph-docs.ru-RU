@@ -1600,6 +1600,24 @@ items:
                         href: api/meetingregistration-post-registrants.md
                       - name: Удалить
                         href: api/meetingregistrant-delete.md
+              - name: Регистрация внешних собраний
+                href: resources/externalmeetingregistration.md
+                items:
+                  - name: Создание
+                    href: api/externalmeetingregistration-post.md
+                  - name: Получение
+                    href: api/externalmeetingregistration-get.md
+                  - name: Удаление
+                    href: api/externalmeetingregistration-delete.md
+                  - name: Внешний регистратор собраний
+                    href: resources/externalmeetingregistrant.md
+                    items:
+                      - name: Список
+                        href: api/externalmeetingregistrant-list.md
+                      - name: Создание
+                        href: api/externalmeetingregistrant-post.md
+                      - name: Удалить
+                        href: api/externalmeetingregistrant-delete.md
           - name: Присутствие
             href: resources/presence.md
             items:
@@ -1833,7 +1851,7 @@ items:
                     href: api/projectrome-put-historyitem.md
                   - name: Удаление элемента журнала
                     href: api/projectrome-delete-historyitem.md
-      - name: Резервирование для клиентов (ознакомительная версия)
+      - name: Резервирование для пользователей
         displayName: 'Bookings, Microsoft Bookings'
         items:
           - name: Обзор
@@ -13983,7 +14001,7 @@ items:
                 href: api/site-list-subsites.md
               - name: Поиск сайтов
                 href: api/site-search.md
-              - name: Permissions
+              - name: Разрешения
                 items:
                   - name: Разрешение
                     href: resources/permission.md

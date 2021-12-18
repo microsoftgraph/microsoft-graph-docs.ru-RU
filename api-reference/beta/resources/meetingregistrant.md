@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: dbc90ecc79258ad150077d474fcdd8d4b29f6db6
-ms.sourcegitcommit: c3f849e5a052b1926373a4b316ec303250e6d09e
+ms.openlocfilehash: 9d3a55ddd14cb33b02a69fb09c0721f3c9986fdb
+ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60369526"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61561350"
 ---
 # <a name="meetingregistrant-resource-type"></a>тип ресурса meetingRegistrant
 
@@ -18,7 +18,9 @@ ms.locfileid: "60369526"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет регистратор собрания, который зарегистрировался на собрании [в Интернете.](onlinemeeting.md)
+Представляет регистратор собрания, который зарегистрировался на собрании [в Интернете.](onlinemeeting.md) 
+
+Наследует от [meetingRegistrantBase](meetingregistrantbase.md).
 
 ## <a name="methods"></a>Методы
 
@@ -26,7 +28,7 @@ ms.locfileid: "60369526"
 | :----- | :---------- | :---------- |
 |[Список](../api/meetingregistration-list-registrants.md) | [meetingRegistrant](meetingregistrant.md) | Список всех регистраторов, которые зарегистрировались на собрании. |
 |[Создание](../api/meetingregistration-post-registrants.md) | [meetingRegistrant](meetingregistrant.md) | Регистрация регистратора на собрании в Интернете. |
-|[Удаление](../api/meetingregistrant-delete.md) | [meetingRegistrant](meetingregistrant.md) | Отодинить регистратора от собрания в Интернете. |
+|[удаление](../api/meetingregistrant-delete.md); | [meetingRegistrant](meetingregistrant.md) | Отодинить регистратора от собрания в Интернете. |
 
 ## <a name="properties"></a>Свойства
 
@@ -34,11 +36,11 @@ ms.locfileid: "60369526"
 | :------- | :--- | :---------- |
 | customQuestionAnswers | [коллекция customQuestionAnswer](customQuestionAnswer.md) | Ответ регистратора на настраиваемые вопросы. |
 | email | String | Адрес электронной почты регистратора. |
-| firstName | String | Имя регистратора. |
-| id | String | ID регистратора. Только для чтения. |
-| joinWebUrl | String | Уникальный веб-URL-адрес для регистратора, который должен присоединиться к собранию. Только для чтения. |
-| lastName | String | Фамилия регистратора. |
-| registrationDateTime | String | Время в UTC, когда регистратор регистрирует собрание. Только для чтения. |
+| firstName | Строка | Имя регистратора. |
+| id | Строка | Уникальный идентификатор регистратора. Только для чтения. |
+| joinWebUrl | Строка | Уникальный веб-URL-адрес для регистратора, который должен присоединиться к собранию. Только для чтения. |
+| lastName | Строка | Фамилия регистратора. |
+| registrationDateTime | Строка | Время в UTC, когда регистратор регистрирует собрание. Только для чтения. |
 | status | [meetingRegistrantStatus](#meetingregistrantstatus-values) | Состояние регистрации регистратора. Только для чтения. |
 
 ### <a name="meetingregistrantstatus-values"></a>значения meetingRegistrantStatus

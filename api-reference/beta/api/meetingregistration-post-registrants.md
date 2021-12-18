@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 00fe202935a202b68da020a82c306a087dae340e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 0396c69dcdc3abe600d1b3c02146d5e7b19db0e8
+ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60980893"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61561491"
 ---
 # <a name="create-meetingregistrant"></a>Создание meetingRegistrant
 
@@ -58,6 +58,9 @@ POST /users/{userId}/onlineMeetings/{id}/registration/registrants
 
 В органе запроса поставляем представление JSON для редактируемых свойств объекта [meetingRegistrant.](../resources/meetingRegistrant.md)
 
+> [!IMPORTANT]
+> Необходимо предоставить свойство **@odata.type,** чтобы указать тип регистратора. Дополнительные сведения см. в следующем [примере](#examples).
+
 ## <a name="response"></a>Отклик
 
 В случае успешной работы этот метод возвращает код ответа и частичный `200 OK` [объект meetingRegistrant](../resources/meetingRegistrant.md) в тексте ответа.
@@ -88,6 +91,7 @@ POST https://graph.microsoft.com/beta/users/16664f75-11dc-4870-bec6-38c1aaa81431
 Content-Type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.meetingRegistrant",
   "firstName": "Frederick",
   "lastName": "Cormier",
   "email": "frederick.cormier@contoso.com",
@@ -140,6 +144,7 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('16664f75-11dc-4870-bec6-38c1aaa81431')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ')/registration/registrants/$entity",
+  "@odata.type": "#microsoft.graph.meetingRegistrant",
   "id": "gWWckDBR6UOI8_yzWCzeNw,6pAAiSU1bkGqzLnbHG_muA,bzLh6uR-5EGYsCvtvIvs6Q,E4jbleVFdE6BDf6ei3YBOA,KvXQzK4zfU-5LQj_ZLWgow,A7_SArco00S-Qr707l0vBA,UFakyZrk1K9vBacExW1muA",
   "registrationDateTime": null,
   "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MmE4Mzg1OTItYjg2Ni00ZmNmLWI5NjMtODNkZDJiMWNlNTVi%40thread.v2/0?context=%7b%22Tid%22%3a%22909c6581-5131-43e9-88f3-fcb3582cde37%22%2c%22Oid%22%3a%22dc17674c-81d9-4adb-bfb2-8f6a442e4622%22%2c%22prid%22%3a%22gWWckDBR6UOI8_yzWCzeNw%2c6pAAiSa1bkGqzLnbHG_muA%2cbzLh6uR-5EGdsCvtvIvs6Q%2cE4jbleVFdE6BDf6ei3YBOA%2cKvXQzK4zfU-5LQj_ZLWgow%2cA7_SArco00S-Qr707l0vBA%2cUFaiyZrk1K9vBacExW1muA%22%2c%22isPublic%22%3afalse%7d",
@@ -169,6 +174,7 @@ POST https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622
 Content-Type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.meetingRegistrant",
   "firstName": "Lisa",
   "lastName": "Adkins",
   "email": "lisa.adkins@contoso.com",
@@ -221,6 +227,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('16664f75-11dc-4870-bec6-38c1aaa81431')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ')/registration/registrants/$entity",
+    "@odata.type": "#microsoft.graph.meetingRegistrant",
     "id": "",
     "registrationDateTime": null,
     "joinWebUrl": "",

@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 788bc434e80d93cb0645a79448cadacabacf271f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 0dbbf42b3beaeb46538e2ea230a5e3a34892bb87
+ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61011772"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61561505"
 ---
 # <a name="create-meetingregistrationquestion"></a>Создание meetingRegistrationQuestion
 
@@ -36,8 +36,11 @@ ms.locfileid: "61011772"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/onlineMeetings/{id}/registration/customQuestions
+POST /me/onlineMeetings/{id}/registration/microsoft.graph.meetingRegistration/customQuestions
 ```
+
+> [!TIP]
+> Чтобы получить `/customQuestions` доступ, следуйте [примеру,](#example) чтобы ввести тип **регистрации** **в meetingRegistration.**
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -57,15 +60,13 @@ POST /me/onlineMeetings/{id}/registration/customQuestions
 
 ### <a name="request"></a>Запрос
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-custom-question"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/registration/customQuestions
+POST https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/registration/microsoft.graph.meetingRegistration/customQuestions
 Content-Type: application/json
 
 {
@@ -74,28 +75,6 @@ Content-Type: application/json
   "answerInputType": "text"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-custom-question-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-custom-question-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-custom-question-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-custom-question-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-custom-question-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>Отклик
 
@@ -112,7 +91,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('16664f75-11dc-4870-bec6-38c1aaa81431')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ')/registration/customQuestions/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('16664f75-11dc-4870-bec6-38c1aaa81431')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ')/registration/microsoft.graph.meetingRegistration/customQuestions/$entity",
   "id": "MSNhYjc5NWI4MC119zX3gwMDIwX3lvdXJfeDAwMjBfam8=",
   "displayName": "What's your job position?",
   "isRequired": false,
