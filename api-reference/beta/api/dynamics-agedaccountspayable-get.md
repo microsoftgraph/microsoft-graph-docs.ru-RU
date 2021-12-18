@@ -4,15 +4,15 @@ description: Получает объект для оплаты по возрас
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 717b2df6664ae712f2d9e4c273eac13abf88a930
-ms.sourcegitcommit: 71b5a96f14984a76c386934b648f730baa1b2357
+ms.openlocfilehash: b5a7aaa79522322c7bb21244aada3aaf8e98a49b
+ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52046183"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "61545282"
 ---
 # <a name="get-agedaccountspayable"></a>Get agedAccountsPayable
 
@@ -29,7 +29,7 @@ ms.locfileid: "52046183"
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
 |Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Financials.ReadWrite.All|
+|Приложение|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 ```http
@@ -41,7 +41,7 @@ GET /financials/companies/{id}/agedAccountsPayable
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок        |Значение                     |
 |--------------|--------------------------|
-|Авторизация |Bearer {токен}. Обязательный. |
+|Авторизация |Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -51,14 +51,14 @@ GET /financials/companies/{id}/agedAccountsPayable
 
 ## <a name="example"></a>Пример
 
-**Запрос**
+### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 ```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/agedAccountsPayable?$filter=periodLengthFilter eq '3M'
 ```
 
-**Отклик**
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. 
 

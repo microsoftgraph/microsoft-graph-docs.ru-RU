@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 82d7cfa6a4e966c7264be12fe23893c9cce2a8ef
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: c37ada5b19f915996e889e1f7dc91afec597c279
+ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60560109"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "61545107"
 ---
 # <a name="chat-resource-type"></a>Тип ресурса чата
 
@@ -61,7 +61,7 @@ ms.locfileid: "60560109"
 | id| Строка| Уникальный идентификатор чата. Только для чтения.|
 | lastUpdatedDateTime| dateTimeOffset|  Дата и время переименования чата или списка участников были изменены в последний раз. Только для чтения.|
 | topic| String|  (Необязательный) Тема или тема для чата. Доступно только для групповых чатов.|
-
+| webUrl | String| URL-адрес чата в Microsoft Teams. URL-адрес следует рассматривать как непрозрачной blob, а не размыкать. Только для чтения. |
 
 ### <a name="chattype-values"></a>значения chatType 
 
@@ -96,7 +96,8 @@ ms.locfileid: "60560109"
   "topic": "string",
   "createdDateTime": "dateTimeOffset",
   "lastUpdatedDateTime": "dateTimeOffset",
-  "chatType": "String"
+  "chatType": "string",
+  "webUrl": "string"
 }
 ```
 

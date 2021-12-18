@@ -12231,6 +12231,8 @@ items:
                         href: api/accessreviewinstance-list.md
                       - name: Получение
                         href: api/accessreviewinstance-get.md
+                      - name: Обновление
+                        href: api/accessreviewinstance-update.md
                       - name: Фильтр текущего пользователя
                         href: api/accessreviewinstance-filterbycurrentuser.md
                       - name: Список ожидающих утверждения (неподготовленных)

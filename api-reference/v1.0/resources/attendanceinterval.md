@@ -5,18 +5,16 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: a0d6c609a97f0837d3cb0e80a86fb8a178e7a1c2
+ms.openlocfilehash: 643dcfa2e7c032fba93af164271150c41b6693b2
 ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/16/2021
-ms.locfileid: "61547708"
+ms.locfileid: "61547570"
 ---
 # <a name="attendanceinterval-resource-type"></a>тип ресурса attendanceInterval
 
 Пространство имен: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Содержит сведения, связанные с интервалом посещаемости [в attendanceRecord](attendancerecord.md).
 
@@ -29,7 +27,7 @@ ms.locfileid: "61547708"
 | leaveDateTime | DateTime | Время, когда участник покинул UTC. |
 
 > [!TIP]
-> При отсутствии данных будет установлено значение **joinDateTime** или **leaveDateTime,** а значение длительностиInSeconds будет задавано в ответном органе метода `null` Get  `0` [meetingAttendanceReport.](/graph/api/onlinemeeting-get?view=graph-rest-beta&preserve-view=true)
+> При отсутствии данных будет установлено значение **joinDateTime** или **leaveDateTime,** а значение длительностиInSeconds будет задавано в ответном органе метода `null` Get  `0` [meetingAttendanceReport.](/graph/api/meetingattendancereport-get?view=graph-rest-v1.0&preserve-view=true)
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -48,5 +46,5 @@ ms.locfileid: "61547708"
     "joinDateTime": "String (timestamp)",
     "leaveDateTime": "String (timestamp)",
     "durationInSeconds": "Int32"
-}  
+}
 ```

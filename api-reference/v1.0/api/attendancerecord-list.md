@@ -1,24 +1,24 @@
 ---
-title: List meetingAttendanceReports
-description: Получите список отчетов о посещаемости для собрания в Интернете.
+title: Список посещаемостиRecords
+description: Получите список объектов attendanceRecord и их свойств.
 author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 959e40b24376b035c064f34f263b68c5c8c127e2
+ms.openlocfilehash: 8907d39fcc579d0cf8859e5729d5255c50a5aa4f
 ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/16/2021
-ms.locfileid: "61545233"
+ms.locfileid: "61547566"
 ---
-# <a name="list-meetingattendancereports"></a>List meetingAttendanceReports
-
+# <a name="list-attendancerecords"></a>Список посещаемостиRecords
 Пространство имен: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Получите список объектов [attendanceRecord](../resources/attendancerecord.md) и их свойств.
 
-Получите список объектов [meetingAttendanceReport](../resources/meetingAttendanceReport.md) для [onlineMeeting.](../resources/onlinemeeting.md) Каждый раз, когда собрание в Интернете заканчивается, для этого сеанса создается отчет о посещаемости.
+> [!TIP]
+> Более удобный способ получения записей о посещаемости — это соответствие их отчету о посещаемости с помощью `expand` параметра запроса. Дополнительные сведения см. в примере [Get meetingAttendanceReport.](meetingattendancereport-get.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -34,17 +34,18 @@ ms.locfileid: "61545233"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Чтобы получить все отчеты о посещаемости для онлайн-встречи с делегированной `/me` () и приложением `/users/{userId}` () разрешения:
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/onlineMeetings/{meetingId}/attendanceReports
-GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports
+Для получения записей о посещаемости отчета о посещаемости с делегированием () и `/me` разрешения приложения `/users/{userId}` ():
+<!-- {"blockType": "ignored"}-->
+``` http
+GET /me/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecords
+GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecords
 ```
 
 > [!TIP]
 >
 >- `userId` — это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в материале [Разрешить приложениям получать](/graph/cloud-communication-online-meeting-application-access-policy)доступ к собраниям в Интернете от имени пользователя.
 >- `meetingId`является **id** объекта [onlineMeeting.](../resources/onlinemeeting.md)
+>- `reportId`— **это id** объекта [meetingAttendanceReport.](../resources/meetingAttendanceReport.md)
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
@@ -62,79 +63,72 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и список объектов `200 OK` [meetingAttendanceReport](../resources/meetingAttendanceReport.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [attendanceRecord](../resources/attendancerecord.md) в тексте ответа.
 
-> [!TIP]
-> Свойство **attendanceRecords** пусто в ответе.
-
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get-attendanceReports"
-}-->
+  "name": "list_attendancerecord"
+}
+-->
 
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/attendanceReports
+``` http
+GET https://graph.microsoft.com/v1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/attendanceReports/c9b6db1c-d5eb-427d-a5c0-20088d9b22d7/attendanceRecords
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-attendancereports-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-attendancereports-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-attendancereports-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-attendancereports-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-attendancereports-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>Отклик
 
-> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
-
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
-  "name": "get-attendanceReports",
   "truncated": true,
-  "@odata.type": "microsoft.graph.meetingAttendanceReport"
-}-->
+  "@odata.type": "microsoft.graph.attendanceRecord",
+  "isCollection": true
+}
+-->
 
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('16664f75-11dc-4870-bec6-38c1aaa81431')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ')/attendanceReports",
   "value": [
     {
-      "id": "c9b6db1c-d5eb-427d-a5c0-20088d9b22d7",
-      "totalParticipantCount": 1,
-      "meetingStartDateTime": "2021-10-05T04:38:23.945Z",
-      "meetingEndDateTime": "2021-10-05T04:43:49.77Z",
-      "attendanceRecords": []
+      "emailAddress": "frederick.cormier@contoso.com",
+      "totalAttendanceInSeconds": 322,
+      "role": "Organizer",
+      "identity": {
+        "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4623",
+        "displayName": "Frederick Cormier",
+        "tenantId": null
+      },
+      "attendanceIntervals": [
+        {
+          "joinDateTime": "2021-10-05T04:38:27.6027225Z",
+          "leaveDateTime": "2021-10-05T04:43:49.7702391Z",
+          "durationInSeconds": 322
+        }
+      ]
     },
     {
-      "id": "2c2c2454-7613-4d6e-9c7c-4cf7a6cdce89",
-      "totalParticipantCount": 2,
-      "meetingStartDateTime": "2021-10-04T23:13:31.658Z",
-      "meetingEndDateTime": "2021-10-04T23:18:57.563Z",
-      "attendanceRecords": []
+      "emailAddress": "lisa.adkins@contoso.com",
+      "totalAttendanceInSeconds": 314,
+      "role": "Presenter",
+      "identity": {
+        "id": "57caaef9-5ed0-48d5-8862-e5abfa71b3e9",
+        "displayName": "Lisa Adkins",
+        "tenantId": null
+      },
+      "attendanceIntervals": [
+        {
+          "joinDateTime": "2021-10-04T23:13:43.3776519Z",
+          "leaveDateTime": "2021-10-04T23:18:57.5639338Z",
+          "durationInSeconds": 314
+        }
+      ]
     }
   ]
 }

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса patternedRecurrence
 description: Расписание и диапазон повторения.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: harini84
-ms.openlocfilehash: baff2147ee0a9e03e4e55a143341171707dee2d7
-ms.sourcegitcommit: db3d2c6db8dd8f8cc14bdcebb2904d5e056a73e7
+ms.openlocfilehash: 9be505b1c9de704f1113e6cac3daa0396ca0949e
+ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52579307"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "61545125"
 ---
 # <a name="patternedrecurrence-resource-type"></a>Тип ресурса patternedRecurrence
 
@@ -18,12 +18,12 @@ ms.locfileid: "52579307"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Расписание и диапазон повторения.
+Расписание и диапазон повторения. Этот общий объект используется для определения повторения [](event.md)обзоров [доступа,](accessreviewscheduledefinition.md)событий календаря и назначений пакетов доступа [в](accesspackageassignment.md) Azure AD.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|pattern|[recurrencePattern](recurrencepattern.md)|Частота события. Не указывая для разового просмотра доступа.|
+|pattern|[recurrencePattern](recurrencepattern.md)|Частота события. Не указывая для разового просмотра доступа. <br/><br/> Обзоры доступа: <li>Не укажите это свойство для разового просмотра доступа. <li>  **Поддерживаются** только **интервалы, dayOfMonth** и **тип** (, ) свойства `weekly` `absoluteMonthly` [recurrencePattern.](recurrencepattern.md)|
 |range|[recurrenceRange](recurrencerange.md)|Продолжительность события.|
 
 ## <a name="json-representation"></a>Представление JSON

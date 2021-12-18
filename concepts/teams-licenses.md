@@ -4,12 +4,12 @@ description: Узнайте о моделях лицензирования и о
 author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: c59b13a68d16661212df21d9f710d0493e15c295
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: ca09c2fbfe2256f7858e12ed3ac3566025bfca2a
+ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61390454"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "61545317"
 ---
 # <a name="licensing-and-payment-requirements-for-microsoft-teams-apis-in-microsoft-graph"></a>Требования к лицензированию и оплате для API Microsoft Teams в Microsoft Graph
 
@@ -17,7 +17,7 @@ ms.locfileid: "61390454"
 
 Некоторые интерфейсы API предоставляют возможность выбора модели лицензирования и оплаты с помощью параметра запроса `model`; другие поддерживают только одну модель или не поддерживают модели лицензирования и оплаты. Доступны следующие модели лицензирования.
 
-- [`model=A`](#modela-requirements) применяется только в приложениях, которые выполняют [функцию безопасности или соответствия требованиям](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzureServices/MCA#ServiceSpecificTerms), и требует наличия [поддерживаемой лицензии](#required-licenses-for-modela).
+- [`model=A`](#modela-requirements) применяется только в приложениях, которые выполняют [функцию безопасности или соответствия требованиям](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms), и требует наличия [поддерживаемой лицензии](#required-licenses-for-modela).
 В будущем приложения также будут должны оплачивать сообщения, потребляемые сверх [заложенной емкости](#seeded-capacity).
 
 - В данное время [`model=B`](#modelb-requirements) можно использовать бесплатно; однако в будущем за приложения будет взиматься плата в зависимости от количества потребляемых сообщений. `model=B` не требует лицензии и не ограничивается приложениями, которые выполняют функции безопасности или соответствия требованиям.

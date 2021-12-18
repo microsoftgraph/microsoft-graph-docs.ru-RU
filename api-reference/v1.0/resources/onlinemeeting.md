@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: d6f11bea8afcbb9a53f90789c32ea014bbee8f46
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 2f1984c26f0a79b493b11cd17accd20b304e4ec1
+ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696051"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "61545345"
 ---
 # <a name="onlinemeeting-resource-type"></a>Тип ресурса onlineMeeting
 
@@ -33,27 +33,27 @@ ms.locfileid: "60696051"
 | Свойство              | Тип                                          | Описание                                                                                                                |
 | :-------------------- | :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)                       | Указывает, кто может быть презентовщиком на собрании. Возможные значения перечислены в следующей таблице.                          |
-| allowAttendeeToEnableCamera     | Логический                       | Указывает, могут ли участники включить камеру.                          |
-| allowAttendeeToEnableMic     | Логический                       | Указывает, могут ли участники включить микрофон.                          |
+| allowAttendeeToEnableCamera     | Boolean                       | Указывает, могут ли участники включить камеру.                          |
+| allowAttendeeToEnableMic     | Boolean                       | Указывает, могут ли участники включить микрофон.                          |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Указывает режим чата собраний. |
-| allowTeamworkReactions | Логический | Указывает, Teams для собрания включены ли Teams реакции. |
+| allowTeamworkReactions | Boolean | Указывает, Teams для собрания включены ли Teams реакции. |
 | attendeeReport | Stream | Поток контента отчета участника о событии [Microsoft Teams в прямом эфире.](/microsoftteams/teams-live-events/what-are-teams-live-events) Только для чтения. |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | Сведения о доступе к телефону для собрания в Интернете. Только для чтения.                                                   |
 | broadcastSettings              | [broadcastMeetingSettings](broadcastMeetingSettings.md)                      | Параметры, связанных с живым событием.                                                                  |
 | chatInfo              | [chatInfo](chatinfo.md)                       | Сведения о чате, связанные с этой онлайн-встречей.                                                                  |
-| creationDateTime      | Даты и время                                      | Время создания собрания в UTC. Только для чтения.                                                                               |
-| endDateTime           | Даты и время                                      | Время окончания собрания в UTC.                                                                                               |
-| id                    | String                                        | ID по умолчанию, связанный с онлайн-собранием. Только для чтения.                                                              |
-| isBroadcast  | Логический                                       | Указывает, является ли это Teams событием в [прямом эфире.](/microsoftteams/teams-live-events/what-are-teams-live-events)                  |
-| isEntryExitAnnounced  | Логический                                       | Указывает, следует ли объявлять, когда звонители присоединяются или уходят.                                                                     |
+| creationDateTime      | DateTime                                      | Время создания собрания в UTC. Только для чтения.                                                                               |
+| endDateTime           | DateTime                                      | Время окончания собрания в UTC.                                                                                               |
+| id                    | Строка                                        | ID по умолчанию, связанный с онлайн-собранием. Только для чтения.                                                              |
+| isBroadcast  | Boolean                                       | Указывает, является ли это Teams событием в [прямом эфире.](/microsoftteams/teams-live-events/what-are-teams-live-events)                  |
+| isEntryExitAnnounced  | Boolean                                       | Указывает, следует ли объявлять, когда звонители присоединяются или уходят.                                                                     |
 | joinInformation       | [itemBody](itembody.md)                       | Сведения о присоединиться в варианте языка и языка, указанные в `Accept-Language` заглавной странице HTTP запроса. Только для чтения. |
-| joinWebUrl            | String                                        | URL-адрес присоединиться к собранию в Интернете. Только для чтения.                                                                             |
+| joinWebUrl            | Строка                                        | URL-адрес присоединиться к собранию в Интернете. Только для чтения.                                                                             |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Указывает, какие участники могут обойти вестибюль собрания.                                                               |
 | participants          | [meetingParticipants](meetingparticipants.md) | Участники, связанные с онлайн-собранием.  Это включает организатора и участников.                       |
-| recordAutomatically | Логический | Указывает, следует ли записывать собрание автоматически. |
-| startDateTime         | Даты и время                                      | Время начала собрания в UTC.                                                                                             |
+| recordAutomatically | Boolean | Указывает, следует ли записывать собрание автоматически. |
+| startDateTime         | DateTime                                      | Время начала собрания в UTC.                                                                                             |
 | subject               | String                                        | Тема собрания в Интернете.                                                                                         |
-| videoTeleconferenceId | String                                        | ID видеоконференции. Только для чтения.                                                                                  |
+| videoTeleconferenceId | Строка                                        | ID видеоконференции. Только для чтения.                                                                                  |
 
 ### <a name="onlinemeetingpresenters-values"></a>значения onlineMeetingPresenters
 
@@ -78,6 +78,12 @@ ms.locfileid: "60696051"
 | отключено           | Чат собраний отключен.                                              |
 | ограниченный            | Чат собрания включен, но только на время собрания. |
 | unknownFutureValue | Неизвестное будущее значение.                                                  |
+
+## <a name="relationships"></a>Связи
+
+| Связь | Тип | Описание |
+| ------------ | ---- | ----------- |
+| attendanceReports | [коллекция meetingAttendanceReport](meetingAttendanceReport.md) | Отчеты о посещаемости собрания в Интернете. Только для чтения. |
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ca268c18f97db7609522a3bc6578acfd94d3ef0e
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: c91dda07a2a339bdee40e5ea2f953c2eab65ad98
+ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61390838"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "61545359"
 ---
 # <a name="broadcastmeetingsettings-resource-type"></a>тип ресурса broadcastMeetingSettings
 
@@ -25,10 +25,11 @@ ms.locfileid: "61390838"
 | Свойство                   | Тип                     | Описание                                                                     |
 | -------------------------- | ------------------------ | ------------------------------------------------------------------------------- |
 | allowedAudience            | [broadcastMeetingAudience](#broadcastmeetingaudience-values) | Определяет, кто может присоединиться к Teams в прямом эфире. Возможные значения перечислены в следующей таблице. |
-| isRecordingEnabled         | Логический                  | Указывает, включена ли запись для этого Teams в прямом эфире. Значение по умолчанию — `false`.          |
-| isAttendeeReportEnabled    | Логический                  | Указывает, включен ли отчет участника для этого Teams в прямом эфире. Значение по умолчанию — `false`.    |
-| isQuestionAndAnswerEnabled | Логический                  | Указывает, включен ли Q&A для этого Teams в прямом эфире. Значение по умолчанию — `false`.                |
-| isVideoOnDemandEnabled     | Логический                  | Указывает, включено ли видео по запросу для этого Teams в прямом эфире. Значение по умолчанию — `false`.    |
+| подписи | [broadcastMeetingCaptionSettings](../resources/broadcastmeetingcaptionsettings.md) | Параметры подписи события Teams в прямом эфире. |
+| isRecordingEnabled         | Boolean                  | Указывает, включена ли запись для этого Teams в прямом эфире. Значение по умолчанию — `false`.          |
+| isAttendeeReportEnabled    | Boolean                  | Указывает, включен ли отчет участника для этого Teams в прямом эфире. Значение по умолчанию — `false`.    |
+| isQuestionAndAnswerEnabled | Boolean                  | Указывает, включен ли Q&A для этого Teams в прямом эфире. Значение по умолчанию — `false`.                |
+| isVideoOnDemandEnabled     | Boolean                  | Указывает, включено ли видео по запросу для этого Teams в прямом эфире. Значение по умолчанию — `false`.    |
 
 ### <a name="broadcastmeetingaudience-values"></a>значения broadcastMeetingAudience
 
@@ -45,16 +46,19 @@ ms.locfileid: "61390838"
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [],
   "@odata.type": "microsoft.graph.broadcastMeetingSettings"
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.broadcastMeetingSettings",
   "allowedAudience": "String",
   "isRecordingEnabled": "Boolean",
   "isAttendeeReportEnabled": "Boolean",
   "isQuestionAndAnswerEnabled": "Boolean",
-  "isVideoOnDemandEnabled": "Boolean"
+  "isVideoOnDemandEnabled": "Boolean",
+  "captions": {
+    "@odata.type": "microsoft.graph.broadcastMeetingCaptionSettings"
+  }
 }
 ```
 

@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 88b8dfa0da8e64272f4e03c8896d545bffcd1d58
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 89d94ea92be942ab35bf3a7e0bb4f85b4e7b9756
+ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226290"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "61545135"
 ---
 # <a name="get-meetingattendancereport"></a>Get meetingAttendanceReport
 
@@ -28,9 +28,9 @@ ms.locfileid: "61226290"
 |:----------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись) | OnlineMeetingArtifact.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Application | OnlineMeetingArtifact.Read.All |
+| Приложение | OnlineMeetingArtifact.Read.All |
 
-Чтобы использовать разрешение приложения для этого API, администраторы клиентов должны создать [политику](/graph/cloud-communication-online-meeting-application-access-policy) доступа к приложениям и предоставить ее пользователю. Это разрешает приложению, настроенное в политике, получать артефакты собраний и/или онлайн-собраний от имени этого пользователя (с ИД пользователя, указанного в пути запроса).
+Чтобы использовать разрешение приложения для этого API, администраторы клиентов должны создать политику доступа к приложениям и предоставить ее пользователю. Это разрешает приложению, настроенное в политике, получать артефакты собраний и/или онлайн-собраний от имени этого пользователя (с ИД пользователя, указанного в пути запроса). Дополнительные сведения см. в материале [Разрешить приложениям получать](/graph/cloud-communication-online-meeting-application-access-policy)доступ к собраниям в Интернете от имени пользователя.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,7 +50,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/meetingAttendanceReport
 
 > [!TIP]
 >
->- `userId` — это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в [политике доступа к приложениям.](/graph/cloud-communication-online-meeting-application-access-policy)
+>- `userId` — это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в материале [Разрешить приложениям получать](/graph/cloud-communication-online-meeting-application-access-policy)доступ к собраниям в Интернете от имени пользователя.
 >- `meetingId`является **id** объекта [onlineMeeting.](../resources/onlinemeeting.md)
 >- `reportId`— **это id** объекта [meetingAttendanceReport.](../resources/meetingAttendanceReport.md)
 
@@ -70,7 +70,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/meetingAttendanceReport
 
 | Имя            | Описание               |
 | :-------------- | :------------------------ |
-| Авторизация   | Bearer {токен}. Обязательный. |
+| Авторизация   | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 

@@ -2,15 +2,15 @@
 title: Создание educationCategory
 description: Создает новую категорию.
 ms.localizationpriority: medium
-author: mmast-msft
+author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 45e7bfd5affd70574ade93daba94caedc75735a6
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: fff998830261d8bc64dec12f87e9490679c322ad
+ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61223749"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "61545142"
 ---
 # <a name="create-educationcategory"></a>Создание educationCategory
 
@@ -30,12 +30,13 @@ ms.locfileid: "61223749"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /education/classes/{id}/assignmentCategories/$entity
+POST /education/classes/{id}/assignmentCategories
+
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -56,7 +57,7 @@ POST /education/classes/{id}/assignmentCategories/$entity
   "name": "create_educationcategory_from_educationclass"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/education/classes/60eaa744-aa87-4276-b985-1633683119f8/assignmentCategories/$entity
+POST https://graph.microsoft.com/v1.0/education/classes/60eaa744-aa87-4276-b985-1633683119f8/assignmentCategories
 Content-type: application/json
 
 { 
@@ -71,7 +72,7 @@ Content-type: application/json
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

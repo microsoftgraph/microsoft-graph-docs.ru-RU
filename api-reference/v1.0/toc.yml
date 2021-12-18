@@ -1330,16 +1330,29 @@ items:
             items:
               - name: Собрание по сети
                 href: resources/onlinemeeting.md
-              - name: Создание
-                href: api/application-post-onlinemeetings.md
-              - name: Получение
-                href: api/onlinemeeting-get.md
-              - name: Обновление
-                href: api/onlinemeeting-update.md
-              - name: Delete
-                href: api/onlinemeeting-delete.md
-              - name: Создание или получить
-                href: api/onlinemeeting-createorget.md
+                items:
+                  - name: Создание
+                    href: api/application-post-onlinemeetings.md
+                  - name: Получение
+                    href: api/onlinemeeting-get.md
+                  - name: Обновление
+                    href: api/onlinemeeting-update.md
+                  - name: Delete
+                    href: api/onlinemeeting-delete.md
+                  - name: Создание или получить
+                    href: api/onlinemeeting-createorget.md
+              - name: Отчет о посещаемости
+                href: resources/meetingAttendanceReport.md
+                items:
+                  - name: Список
+                    href: api/meetingattendancereport-list.md
+                  - name: Получение
+                    href: api/meetingattendancereport-get.md
+                  - name: Запись посещаемости
+                    href: resources/attendancerecord.md
+                    items:
+                      - name: Список
+                        href: api/attendancerecord-list.md
           - name: Присутствие
             href: resources/presence.md
             items:
@@ -5290,24 +5303,26 @@ items:
                     items:
                       - name: Список
                         href: api/accessreviewinstance-list.md
-                      - name: Список решений
-                        href: api/accessreviewinstance-list-decisions.md
                       - name: Получение
                         href: api/accessreviewinstance-get.md
+                      - name: Обновление
+                        href: api/accessreviewinstance-update.md
+                      - name: Фильтр текущего пользователя
+                        href: api/accessreviewinstance-filterbycurrentuser.md
+                      - name: Отправить напоминание
+                        href: api/accessreviewinstance-sendreminder.md
+                      - name: Остановить
+                        href: api/accessreviewinstance-stop.md
                       - name: Принятие рекомендаций
                         href: api/accessreviewinstance-acceptrecommendations.md
                       - name: Применение решений
                         href: api/accessreviewinstance-applydecisions.md
                       - name: Решения о пакетной записи
                         href: api/accessreviewinstance-batchrecorddecisions.md
-                      - name: Фильтр текущего пользователя
-                        href: api/accessreviewinstance-filterbycurrentuser.md
                       - name: Сброс решений
                         href: api/accessreviewinstance-resetdecisions.md
-                      - name: Отправить напоминание
-                        href: api/accessreviewinstance-sendreminder.md
-                      - name: Остановить
-                        href: api/accessreviewinstance-stop.md
+                      - name: Список решений
+                        href: api/accessreviewinstance-list-decisions.md
                   - name: Элемент решения экземпляра проверки доступа
                     href: resources/accessreviewinstancedecisionitem.md
                     items:

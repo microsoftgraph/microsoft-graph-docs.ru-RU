@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 86147e58d6e4e174858d5a9d4516f95198b894ae
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: 6249fcc8fd3bcc76d2d47328b5a0613e389c7aa5
+ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61285034"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "61545289"
 ---
 # <a name="list-attendancerecords"></a>Список посещаемостиRecords
 Пространство имен: microsoft.graph
@@ -30,9 +30,9 @@ ms.locfileid: "61285034"
 |:----------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись) | OnlineMeetingArtifact.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | OnlineMeetingArtifact.Read.All |
+| Приложение | OnlineMeetingArtifact.Read.All |
 
-Чтобы использовать разрешение приложения для этого API, администраторы клиентов должны создать [политику](/graph/cloud-communication-online-meeting-application-access-policy) доступа к приложениям и предоставить ее пользователю. Это разрешает приложению, настроенное в политике, получать артефакты собраний и/или онлайн-собраний от имени этого пользователя (с ИД пользователя, указанного в пути запроса).
+Чтобы использовать разрешение приложения для этого API, администраторы клиентов должны создать политику доступа к приложениям и предоставить ее пользователю. Это разрешает приложению, настроенное в политике, получать артефакты собраний и/или онлайн-собраний от имени этого пользователя (с ИД пользователя, указанного в пути запроса). Дополнительные сведения см. в материале [Разрешить приложениям получать](/graph/cloud-communication-online-meeting-application-access-policy)доступ к собраниям в Интернете от имени пользователя.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,7 +43,7 @@ GET /me/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecord
 GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecords
 ```
 
->- `userId` — это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в [политике доступа к приложениям.](/graph/cloud-communication-online-meeting-application-access-policy)
+>- `userId` — это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в материале [Разрешить приложениям получать](/graph/cloud-communication-online-meeting-application-access-policy)доступ к собраниям в Интернете от имени пользователя.
 >- `meetingId`является **id** объекта [onlineMeeting.](../resources/onlinemeeting.md)
 >- `reportId`— **это id** объекта [meetingAttendanceReport.](../resources/meetingAttendanceReport.md)
 
@@ -120,12 +120,12 @@ Content-Type: application/json
 {
   "value": [
     {
-      "emailAddress": "(email address)",
+      "emailAddress": "frederick.cormier@contoso.com",
       "totalAttendanceInSeconds": 322,
       "role": "Organizer",
       "identity": {
         "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4623",
-        "displayName": "(display name)",
+        "displayName": "Frederick Cormier",
         "tenantId": null
       },
       "attendanceIntervals": [
@@ -137,12 +137,12 @@ Content-Type: application/json
       ]
     },
     {
-      "emailAddress": "(email address)",
+      "emailAddress": "lisa.adkins@contoso.com",
       "totalAttendanceInSeconds": 314,
       "role": "Presenter",
       "identity": {
         "id": "57caaef9-5ed0-48d5-8862-e5abfa71b3e9",
-        "displayName": "(dispaly name)",
+        "displayName": "Lisa Adkins",
         "tenantId": null
       },
       "attendanceIntervals": [

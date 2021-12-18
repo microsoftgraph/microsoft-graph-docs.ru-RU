@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: dd0f57a197981ee41b887c824eddcbcf3a2b3814
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: 7d54fc29b73edac1039f041d4a3dd1a2a2bcafb8
+ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61390789"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "61545376"
 ---
 # <a name="sharepoint-site-usage-reports"></a>Отчеты об использовании сайтов SharePoint
 
@@ -28,7 +28,7 @@ ms.locfileid: "61390789"
 | :----------------------------------------------------------- | :-------------- | :--------------- | ------------------------------------------------------------ |
 | [Получение сведений о сайтах](../api/reportroot-getsharepointsiteusagedetail.md) | Поток          | Поток           | Получите сведения об использовании сайтов SharePoint.                     |
 | [Получение количества файлов](../api/reportroot-getsharepointsiteusagefilecounts.md) | Stream          | Поток           | Узнайте, сколько всего файлов на всех сайтах и сколько из них активны. Файл (пользователь или система) считается активным, если он был сохранен, синхронизирован, изменен или отправлен в указанный период. |
-| [Получение количества сайтов](../api/reportroot-getsharepointsiteusagesitecounts.md) | Поток          | Поток           | Узнайте, сколько всего файлов на всех сайтах и сколько из них активны. Файл (пользователь или система) считается активным, если он был сохранен, синхронизирован, изменен или отправлен в указанный период. |
+| [Получение количества сайтов](../api/reportroot-getsharepointsiteusagesitecounts.md) | Поток          | Stream           | Получите тенденцию общего и активного количества сайтов в отчетный период. |
 | [Получение занятого объема хранилища](../api/reportroot-getsharepointsiteusagestorage.md) | Поток          | Поток           | Отслеживайте динамику выделенного и использованного объема хранилища за отчетный период. |
 | [Получение количества страниц](../api/reportroot-getsharepointsiteusagepages.md) | Stream          | Поток           | Узнайте, сколько страниц было просмотрено на всех сайтах.             |
 

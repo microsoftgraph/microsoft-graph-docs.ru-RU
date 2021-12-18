@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 39ca89f94446bd33d4519242a0d830b40fc70322
-ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
+ms.openlocfilehash: 3b9c3d04db7a7d03a0f5d7f3926383e1af429a9b
+ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61131933"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "61545324"
 ---
 # <a name="chat-resource-type"></a>Тип ресурса чата
 
@@ -75,7 +75,7 @@ ms.locfileid: "61131933"
 | tenantId| String | Идентификатор клиента, в котором был создан чат. Только для чтения.|
 | topic| String|  (Необязательный) Тема или тема для чата. Доступно только для групповых чатов.|
 | точки зрения|[chatViewpoint](../resources/chatviewpoint.md)|Представляет сведения о чате, например дату и время чтения последнего сообщения. Это свойство заполняется только тогда, когда запрос выполнен в делегированном контексте.|
-| webUrl| String | Гиперссылка, которая будет переходить в чат в Microsoft Teams. Этот URL-адрес должен обрабатываться как непрозрачный BLOB-объект и не должен анализироваться. Только для чтения.|
+| webUrl| String | URL-адрес чата в Microsoft Teams. URL-адрес следует рассматривать как непрозрачной blob, а не размыкать. Только для чтения.|
 
 
 ### <a name="chattype-values"></a>значения chatType 
