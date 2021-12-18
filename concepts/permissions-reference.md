@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 6b042408d89c265f4689d3c32ed33046ba15baf6
-ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
+ms.openlocfilehash: 02a37f6a80c6bfa373583c7ceeaa06c026b11ce8
+ms.sourcegitcommit: 15dd0e98e69f872ed5a709600608b244759b0967
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "61545114"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61567351"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -212,7 +212,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 * _Analytics.Read_. [Перечисление соответствующих параметров для пользователя](/graph/api/useranalytics-get-settings?view=graph-rest-beta&preserve-view=true) (`GET /beta/me/analytics/settings`)
 
-#### <a name="application"></a>Приложение
+#### <a name="application"></a>Для приложений
 
 Отсутствуют.
 
@@ -247,7 +247,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 * _AppCatalog.ReadWrite.All_. [Обновление опубликованного приложения](/graph/api/teamsapp-update?view=graph-rest-beta&preserve-view=true) (`PATCH /beta/appCatalogs/teamsApps/{id}`)
 * _AppCatalog.ReadWrite.All_. [Удаление опубликованного приложения](/graph/api/teamsapp-delete?view=graph-rest-beta&preserve-view=true) (`DELETE /beta/appCatalogs/teamsApps/{id}`)
 
-#### <a name="application"></a>Приложение
+#### <a name="application"></a>Для приложений
 
 Отсутствуют.
 
@@ -425,7 +425,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 ### <a name="example-usage"></a>Примеры использования
 
-#### <a name="application"></a>Приложение
+#### <a name="application"></a>Для приложений
 
 * _Calls.Initiate.All_. Совершение однорангового звонка из приложения пользователю в организации (`POST /beta/communications/calls`).
 * _Calls.InitiateGroupCall.All_. Совершение группового звонка из приложения группе пользователей в организации (`POST /beta/communications/calls`).
@@ -961,6 +961,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 | _Group.ReadWrite.All_ |    Чтение и запись всех групп| Приложение сможет создавать группы, а также просматривать все их свойства и данные о членстве от имени вошедшего пользователя.  Оно также сможет просматривать и создавать календарь, беседы, файлы и другое содержимое всех групп, к которым у вошедшего пользователя есть доступ. Кроме того, владельцы групп смогут управлять своими группами, а участники групп — обновлять содержимое групп. | Да | Нет |
 | _GroupMember.Read.All_ |    Чтение сведений об участии в группе | Позволяет приложению перечислять группы, читать основные свойства групп и читать сведения об участии во всех группах, к которым у вошедшего пользователя есть доступ. | Да | Нет |
 | _GroupMember.ReadWrite.All_ |    Чтение и запись сведений об участии в группах | Позволяет приложению перечислять группы, читать основные свойства, читать и изменять сведения об участии в группах, к которым у пользователя есть доступ после выполнения входа. Свойства и владельцев групп нельзя изменять, а группы нельзя удалять. | Да | Нет |
+| _UnifiedGroupMember.Read.AsGuest_ |    Чтение участников единых групп (Microsoft 365) в качестве гостевого пользователя | Позволяет приложению считывать основные свойства единой группы, участников и владельцев группы, к которой относится вошедший гость. | Да | Нет |
 
 #### <a name="application-permissions"></a>Разрешения приложений
 
@@ -999,7 +1000,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 * _GroupMember.ReadWrite.All_. Обновление участников группы (`POST /groups/{id}/members/$ref`).
 > **Примечание.** При этом также необходимо разрешение _User.ReadBasic.All_ для чтения пользователя, чтобы добавить его как участника.
 
-#### <a name="application"></a>Приложение
+#### <a name="application"></a>Для приложений
 
 * _Group.Read.All_. Поиск всех групп, имена которых начинаются с "Sales" (`GET /groups?$filter=startswith(displayName,'Sales')`).
 * _Group.ReadWrite.All_. Управляющая служба создает события в календаре группы Microsoft 365 (`POST /groups/{id}/events`).
@@ -1339,7 +1340,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 В случае рабочих и учебных учетных записей разрешения _Notes.Read.All_ и _Notes.ReadWrite.All_ позволяют приложению получать доступ к содержимому OneNote других пользователей, которое доступно вошедшему пользователю в организации.
 
 ### <a name="example-usage"></a>Примеры использования
-#### <a name="delegated"></a>Delegated
+#### <a name="delegated"></a>Делегированные разрешения
 
 * _Notes.Create_. Создание записных книжек для вошедшего пользователя (`POST /me/onenote/notebooks`).
 * _Notes.Read_. Чтение записных книжек вошедшего пользователя (`GET /me/onenote/notebooks`).
@@ -2229,7 +2230,7 @@ SubjectRightsRequest.ReadWrite.All | Чтение и запись запросо
 
 * _ThreatAssessment.ReadWrite.All_: чтение и запись запросов на оценку угроз (`POST /informationProtection/threatAssessmentRequests`)
 
-#### <a name="application"></a>Приложение
+#### <a name="application"></a>Для приложений
 
 * _ThreatAssessment.Read.All_: чтение запросов на оценку угроз (`GET /informationProtection/threatAssessmentRequests`)
 
