@@ -4369,6 +4369,8 @@ items:
                 href: api/educationuser-list-taughtclasses.md
               - name: Создание рубрики
                 href: api/educationuser-post-rubrics.md
+              - name: Перечисление заданий
+                href: api/educationuser-list-assignments.md
           - name: Задание
             href: resources/educationassignment.md
             items:
@@ -4467,6 +4469,8 @@ items:
                 href: api/educationsubmittedsubmissionresource-get.md
               - name: Возврат работы
                 href: api/educationsubmission-return.md
+              - name: Повторное представление
+                href: api/educationsubmission-reassign.md
           - name: Outcome
             items:
               - name: Outcome
@@ -6226,7 +6230,7 @@ items:
                 href: api/site-list-subsites.md
               - name: Поиск сайтов
                 href: api/site-search.md
-              - name: Permissions
+              - name: Разрешения
                 href: resources/permission.md
                 items:
                   - name: Получить разрешение сайта

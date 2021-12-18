@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 1288bddd70c1ee82ed3f8056a295ecf3dfbc183c
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 2b0bf8890f4929d499b7a58f81d107f3b7c293d5
+ms.sourcegitcommit: 15dd0e98e69f872ed5a709600608b244759b0967
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525388"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61567379"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -440,6 +440,25 @@ ms.locfileid: "61525388"
 |groupCall|
 |peerToPeer|
 |unknownFutureValue|
+
+### <a name="educationaddtocalendaroptions-values"></a>значения educationAddToCalendarOptions
+|Member|
+|:---|
+|Нет|
+|studentsAndPublisher|
+|studentsAndTeamOwners|
+|unknownFutureValue|
+|studentsOnly|
+
+### <a name="educationsubmissionstatus-values"></a>значения educationSubmissionStatus
+|Member|
+|:---|
+|работа|
+|отправлено|
+|выпущено|
+|возвращено|
+|unknownFutureValue|
+|перенаписано|
 
 ### <a name="onlinemeetingrole-values"></a>значения onlineMeetingRole
 
@@ -1578,7 +1597,7 @@ Enum для серьезности оповещений.
 
 | Member                |
 |:----------------------|
-| строка                |
+| string                |
 | логический               |
 | int64                 |
 | stringCollection      |
@@ -1682,7 +1701,7 @@ Enum для серьезности оповещений.
 |Member|
 |:---|
 |team|
-|channel|
+|канал|
 |чат|
 |unknownFutureValue|
 

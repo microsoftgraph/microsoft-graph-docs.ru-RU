@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 260416be97b57fa19370b18a5fc9b213920c6e6a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 0593d5f1588c5737aff03357d5ab23348d87a164
+ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60988833"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61561526"
 ---
 # <a name="list-joinedteams"></a>Перечисление объектов joinedTeams
 
@@ -46,7 +46,7 @@ GET /users/{id | user-principal-name}/joinedTeams
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 | Accept  | application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,7 +54,7 @@ GET /users/{id | user-principal-name}/joinedTeams
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает `200 OK`код ответа и коллекцию объектов [team](../resources/team.md) в теле ответа.
+При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [team](../resources/team.md) в тексте отклика.
 
 > [!Note]
 > В настоящее время этот вызов API возвращает только свойства **id**, **displayName** и **description** [команды](../resources/team.md). Чтобы получить все свойства, воспользуйтесь операцией [Получение команды](../api/team-get.md). Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues#unable-to-return-all-values-for-properties-for-a-user-joined-teams).

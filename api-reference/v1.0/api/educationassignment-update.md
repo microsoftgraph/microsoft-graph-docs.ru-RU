@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: sharad-sharma-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e5b7115a936264cf1380cd7b515454099eddbdba
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 786d364847297edea5538251c5701502c3ced7f2
+ms.sourcegitcommit: 15dd0e98e69f872ed5a709600608b244759b0967
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031107"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61567310"
 ---
 # <a name="update-educationassignment"></a>Обновление системы образования
 
@@ -50,8 +50,9 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |addedStudentAction|Строка| Описывает, следует ли распределять назначение среди учащихся, добавленных после даты публикации назначения.|
-|allowLateSubmissions|Логический| Могут ли студенты отправлять отправку после срока.|
-|allowStudentsToAddResourcesToSubmission|Логическое| Может ли студент добавлять ресурсы в отправку или нет. Кроме того, указывает, соответствуют ли все ресурсы в представлении списку ресурсов назначения. |
+|addToCalendarAction|educationAddToCalendarOptions|Необязательное поле для управления **поведением** назначения для добавления **назначений** в календари учащихся и преподавателей при **публикации** назначения. Допустимые значения: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, `studentsOnly`. Обратите внимание, что вы должны использовать загон запроса, чтобы получить следующее значение `Prefer: include - unknown -enum-members` (ы) в этом [развиваемом переуме:](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `studentsOnly` . Необязательное свойство.|
+|allowLateSubmissions|Boolean| Могут ли студенты отправлять отправку после срока.|
+|allowStudentsToAddResourcesToSubmission|Boolean| Может ли студент добавлять ресурсы в отправку или нет. Кроме того, указывает, соответствуют ли все ресурсы в представлении списку ресурсов назначения. |
 |assignDateTime|DateTimeOffset| Указывает дату публикации назначения для учащихся. |
 |assignTo|educationAssignmentRecipient| Студенты, получаювшие назначение.|
 |closeDateTime|DateTimeOffset| Дата закрытия назначения для отправки. Это необязательный поле, которое может быть равно нуль, если назначение не позволяет использоватьLateSubmissions или closeDateTime то же самое, что и dueDateTime, но если указано, оно должно быть больше или равно dueDateTime.|

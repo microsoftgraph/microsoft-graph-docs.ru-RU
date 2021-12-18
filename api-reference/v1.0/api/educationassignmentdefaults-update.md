@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fe0fe8452e3a18ca2910a78276c79895e77e2f3d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 020b68061ed32ddcdaab801eef07e2422176440f
+ms.sourcegitcommit: 15dd0e98e69f872ed5a709600608b244759b0967
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61024729"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61567316"
 ---
 # <a name="update-educationassignmentdefaults"></a>Обновление educationAssignmentDefaults
 Пространство имен: microsoft.graph
@@ -52,8 +52,9 @@ PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentDefaults
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |addedStudentAction|educationAddedStudentAction| Действия по умолчанию класса для учащихся, добавленные после даты публикации назначения. Возможные значения: `none`, `assignIfOpen`. Значение по умолчанию — `none`.|
+|addToCalendarAction|educationAddToCalendarOptions|Необязательное поле для управления **поведением** назначения для добавления **назначений** в календари учащихся и преподавателей при **публикации** назначения. Допустимые значения: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, `studentsOnly`. Обратите внимание, что вы должны использовать загон запроса, чтобы получить следующее значение `Prefer: include - unknown -enum-members` (ы) в этом [развиваемом переуме:](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `studentsOnly` . Необязательное свойство.|
 |dueTime|TimeOfDay| Значение по умолчанию класса для должного поля времени. Значение по умолчанию: `23:59:00`.|
-|notificationChannelUrl|String| По умолчанию Teams канал для отправки уведомлений, связанных с назначением. Значение по умолчанию — `null`.|
+|notificationChannelUrl|Строка| По умолчанию Teams канал для отправки уведомлений, связанных с назначением. Значение по умолчанию — `null`.|
 
 
 

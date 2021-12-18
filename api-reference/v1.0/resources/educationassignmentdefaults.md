@@ -1,16 +1,16 @@
 ---
 title: тип ресурса educationAssignmentDefaults
 description: Указывает по умолчанию класса, которые соблюдаются новыми назначениями, созданными в классе.
-author: sharad-sharma-msft
+author: cristobal-buenrostro
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7a21494ca3bd039e0ac5ac28c5f02be3c802dea0
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 620798d001df51bff352bcca4dce891a76f22cea
+ms.sourcegitcommit: 15dd0e98e69f872ed5a709600608b244759b0967
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59021717"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "61567393"
 ---
 # <a name="educationassignmentdefaults-resource-type"></a>тип ресурса educationAssignmentDefaults
 
@@ -30,6 +30,7 @@ ms.locfileid: "59021717"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |addedStudentAction|educationAddedStudentAction|Поведение по умолчанию на уровне класса для обработки учащихся, добавленных после публикации назначения. Возможные значения: `none`, `assignIfOpen`.|
+|addToCalendarAction| educationAddToCalendarOptions|Необязательное поле для управления добавлением назначений в календари учащихся и преподавателей при публикации. Возможные значения: `none` `studentsAndPublisher` , , , , `studentsAndTeamOwners` и `unknownFutureValue` `studentsOnly` . Обратите внимание, что вы должны использовать загон запроса, чтобы получить следующее значение `Prefer: include-unknown-enum-members` (ы) в этом [развиваемом переуме:](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `studentsOnly` . Значение по умолчанию — `none`.|
 |dueTime|TimeOfDay|Значение по умолчанию класса для должного поля времени. Значение по умолчанию — `23:59:00`.|
 |notificationChannelUrl|Строка|По умолчанию Teams канал, в который будут отправлены уведомления. Значение по умолчанию — `null`.|
 
@@ -48,6 +49,7 @@ ms.locfileid: "59021717"
 ``` json
 {
   "addedStudentAction": "String",
+  "addToCalendarAction": "educationAddToCalendarOptions",  
   "dueTime": "String (timestamp)",
   "notificationChannelUrl": "String"
 }
