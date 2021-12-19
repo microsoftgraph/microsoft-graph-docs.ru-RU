@@ -1,18 +1,18 @@
 ---
-title: Настройка карточки профиля с помощью API профиля в Microsoft Graph (предварительная версия)
-description: В этой статье описано, как настроить карточку профиля, сделав видимыми дополнительные атрибуты или добавив настраиваемые атрибуты.
+title: Добавление или удаление настраиваемых свойств на карточке профиля с помощью API карточки профиля в Microsoft Graph (предварительная версия)
+description: Как настроить карточку профиля, сделав видимыми дополнительные атрибуты или добавив настраиваемые атрибуты. Вы также можете удалить настраиваемые атрибуты.
 author: PollyNincevic
 ms.localizationpriority: high
 ms.prod: users
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: a4d43cee6a2fb0d442a8dbf4db2f8283dc0c30be
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5e1b140f5e3c9612475bcf0a6e404168cced1c92
+ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59066970"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61561512"
 ---
-# <a name="add-additional-properties-to-the-profile-card-using-the-profile-card-api-in-microsoft-graph-preview"></a>Добавление свойств в карточку профиля с помощью API карточки профиля в Microsoft Graph (предварительная версия)
+# <a name="add-or-delete-custom-properties-from-the-profile-card-using-the-profile-card-api-in-microsoft-graph-preview"></a>Добавление или удаление настраиваемых свойств на карточке профиля с помощью API карточки профиля в Microsoft Graph (предварительная версия)
 
 На [карточке профиля](https://support.office.com/article/profile-cards-in-office-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) в Microsoft 365 находится информация о пользователях, сохраненная и управляемая вашей организацией, например **Должность** или **Местонахождение офиса**.
 
@@ -22,6 +22,8 @@ ms.locfileid: "59066970"
 * Добавление настраиваемых атрибутов
 
 Дополнительные свойства отображаются в разделе **Контакт** карточки профиля в Microsoft 365.
+
+Вы также можете [удалить](/graph/api/profilecardproperty-delete?view=graph-rest-beta&preserve-view=true) настраиваемые атрибуты из карточек профилей организации.
 
 > [!NOTE]
 > Операции в ресурсе **profileCardProperty**, использующем делегированные разрешения, требуют, чтобы у вошедшего пользователя была роль администратора клиента или глобального администратора.
@@ -78,7 +80,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="adding-custom-attributes"></a>Добавление настраиваемых атрибутов
+## <a name="adding-a-custom-attribute"></a>Добавление настраиваемого атрибута
 
 Вы можете добавлять в карточки профилей пользователей любой из 15 [настраиваемых атрибутов расширений](/graph/api/resources/onpremisesextensionattributes) Azure AD путем настройки параметров организации и [добавления соответствующего значения в качестве profileCardProperty](/graph/api/organizationsettings-post-profilecardproperties) в Microsoft Graph. Одновременно можно добавлять только один ресурс **profileCardProperty**.
 
@@ -110,6 +112,8 @@ Content-type: application/json
 
 В следующем примере в карточку профиля добавляется первый настраиваемый атрибут расширения Azure AD, используемый для отображения имени **Cost center**. Для пользователей, выбравших в языковых настройках немецкий язык, отображаемым именем будет **Kostenstelle**.
 
+#### <a name="request"></a>Запрос
+
 ``` http
 POST https://graph.microsoft.com/beta/organization/{tenantid}/settings/profileCardProperties
 Content-Type: application/json
@@ -134,6 +138,8 @@ Content-Type: application/json
 
 При успешном выполнении возвращается код отклика `201 OK` и объект **profileCardProperty** в тексте отклика. В этом примере вы можете предположить, что в карточке профиля отображается **Kostenstelle** для всех пользователей, выбравших в языковых настройках немецкий язык. Для всех остальных пользователей в карточке профиля отображается **Cost center**.
 
+#### <a name="response"></a>Отклик
+
 ``` http
 HTTP/1.1 201 OK
 Content-type: application/json
@@ -152,6 +158,25 @@ Content-type: application/json
     }
   ]
 }
+```
+## <a name="deleting-a-custom-attribute"></a>Удаление настраиваемого атрибута
+
+Следуя аналогичному сопоставлению между настраиваемыми атрибутами расширения Azure AD и настраиваемыми атрибутами карточки профиля (например, `customAttribute1`), как описано в предыдущем разделе [Добавление настраиваемого атрибута](/graph/add-properties-profilecard#adding-a-custom-attribute), вы можете удалить настраиваемый атрибут с помощью операции [удаления](/graph/api/profilecardproperty-delete?view=graph-rest-beta&preserve-view=true), как показано в примере ниже:
+
+### <a name="example"></a>Пример
+
+В следующем примере настраиваемый атрибут `customAttribute5` удаляется из параметров организации. После успешного удаления возвращается `HTTP 204`.
+
+#### <a name="request"></a>Запрос
+
+``` http
+DELETE https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties/customAttribute5
+```
+
+#### <a name="response"></a>Отклик
+
+``` http
+HTTP/1.1 204 No Content
 ```
 
 ## <a name="see-also"></a>См. также
