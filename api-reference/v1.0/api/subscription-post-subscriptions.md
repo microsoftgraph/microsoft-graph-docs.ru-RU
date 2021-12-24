@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: c3726459f31976bf687dd0a80f3cd3a8b4062116
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: 5ab0d5fcec2156f4b5f69e38594bc25a29b6b400
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61390818"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604408"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -87,6 +87,10 @@ POST /subscriptions
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Обязательный. |
 
+## <a name="request-body"></a>Текст запроса
+
+Предоставьте в тексте запроса описание объекта [subscription](../resources/subscription.md) в формате JSON.
+
 ## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `201 Created` и объект [subscription](../resources/subscription.md) в теле отклика.
@@ -94,7 +98,7 @@ POST /subscriptions
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 Ниже представлен пример запроса на отправку уведомления об изменениях при получении пользователем нового сообщения.
 
@@ -133,7 +137,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-subscription-from-subscriptions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-subscription-from-subscriptions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -142,7 +146,7 @@ Content-type: application/json
 
 Предоставьте в тексте запроса описание объекта [subscription](../resources/subscription.md) в формате JSON. Поля `clientState` и `latestSupportedTlsVersion` не являются обязательными.
 
-##### <a name="resources-examples"></a>Примеры ресурсов
+#### <a name="resources-examples"></a>Примеры ресурсов
 
 Ниже приведены допустимые значения свойства ресурса для подписки.
 
@@ -165,9 +169,10 @@ Content-type: application/json
 
 > **Примечание.** Любой путь, начинающийся с `me`, также можно использовать с `users/{id}` вместо `me`, чтобы указать определенного пользователя, а не текущего пользователя.
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
-Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
+Ниже приведен пример ответа. 
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -193,7 +198,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="notification-endpoint-validation"></a>Проверка конечной точки уведомлений
+#### <a name="notification-endpoint-validation"></a>Проверка конечной точки уведомлений
 
 Конечная точка уведомления подписки (указанная в свойстве `notificationUrl`) должна поддерживать ответ на запрос проверки, как описано в статье [Настройка уведомлений об изменениях в пользовательских данных](/graph/webhooks#notification-endpoint-validation). Если проверка завершилась сбоем, запрос на создание подписки возвращает ошибку 400 (неверный запрос).
 

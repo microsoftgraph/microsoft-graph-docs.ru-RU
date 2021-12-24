@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: fac57ae27845799f1d9e25b3ec0c437ed7de147c
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: d98f91b33cc13e874d8b3dce42ad9bb871349e9d
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61348217"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604352"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -61,11 +61,8 @@ ms.locfileid: "61348217"
 | [Удаление участника](../api/group-delete-members.md) | Нет | Удаление участника из группы Microsoft 365 или группы безопасности (в том числе с включенной поддержкой почты) с помощью свойства навигации **members**. Вы можете удалять пользователей или другие группы. |
 | [Обновление параметра](../api/directorysetting-update.md) | [directorySetting](directorysetting.md) | Обновление объекта setting. |
 | [assignLicense](../api/group-assignlicense.md) | [group](group.md) | Добавление или удаление подписок группы. Можно также включать и отключать отдельные планы, связанные с подпиской. |
-| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | Коллекция String | Проверка участия в списке групп. Это транзитивная функция. |
-| [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | Коллекция String | Проверка участия в списке группы, роли каталога или объектах административных единиц. Эта функция транзитивна. |
 | [evaluateDynamicMembership](../api/group-evaluatedynamicmembership.md) | [evaluateDynamicMembershipResult](evaluatedynamicmembershipresult.md) | Определите, может ли пользователь или устройство являться членом динамической группы. |
-| [getMemberGroups](../api/directoryobject-getmembergroups.md) | Коллекция String | Возврат всех групп, в которых состоит эта группа. Это транзитивная функция. |
-| [getMemberObjects](../api/directoryobject-getmemberobjects.md) | Коллекция String | Возвращение всех групп и административных единиц, в которых состоит группа. Это транзитивная функция. |
+| [renew](../api/group-renew.md) | Boolean | Обновление, продлевающее срок действия группы. Когда группа обновляется, срок ее действия продляется на количество дней, определенное политикой. |
 | [validateProperties](../api/group-validateproperties.md) | JSON | Проверка соответствия отображаемого имени или почтового псевдонима группы Microsoft 365 политикам именования. |
 | **Назначение ролей приложений** |||
 | [Перечисление appRoleAssignments](../api/group-list-approleassignments.md) | Коллекция [appRoleAssignment](approleassignment.md) | Получение приложений и ролей приложений, назначенных группе. |
@@ -94,6 +91,16 @@ ms.locfileid: "61348217"
 | [Список rejectedSenders](../api/group-list-rejectedsenders.md) | Коллекция [directoryObject](directoryobject.md) | Получение списка пользователей или групп, включенных в список запрещенных отправителей для этой группы. |
 | [Добавление rejectedSender](../api/group-post-rejectedsenders.md) | [directoryObject](directoryobject.md) | Добавление User или Group в коллекцию rejectedSenders. |
 | [Удаление rejectedSender](../api/group-delete-rejectedsenders.md) | [directoryObject](directoryobject.md) | Удаление нового объекта User или Group из коллекции объектов rejectedSender. |
+| **Объекты каталога** |||
+| [Перечисление удаленных групп](../api/directory-deleteditems-list.md) | Коллекция [directoryObject](directoryobject.md) | Получение групп, удаленных в клиенте за последние 30 дней. |
+| [Перечисление удаленных групп, принадлежащих пользователю](../api/directory-deleteditems-user-owned.md) | Коллекция [directoryObject](directoryobject.md) | Получение групп, принадлежащих пользователю, которые удалены в клиенте за последние 30 дней. |
+| [Получение удаленной группы](../api/directory-deleteditems-get.md) | Коллекция [directoryObject](directoryobject.md) | Получение удаленной группы по идентификатору. |
+| [Восстановление удаленной группы](../api/directory-deleteditems-delete.md) | Коллекция [directoryObject](directoryobject.md) | Восстановление группы, удаленной в клиенте за последние 30 дней. |
+| [Удаление группы без возможности восстановления](../api/directory-deleteditems-restore.md) | Коллекция [directoryObject](directoryobject.md) | Окончательное удаление группы из клиента. |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | Коллекция String | Проверка участия в списке групп. Это транзитивная функция. |
+| [getMemberGroups](../api/directoryobject-getmembergroups.md) | Коллекция String | Возврат всех групп, в которых состоит эта группа. Это транзитивная функция. |
+| [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | Коллекция String | Проверка участия в списке группы, роли каталога или объектах административных единиц. Эта функция транзитивна. |
+| [getMemberObjects](../api/directoryobject-getmemberobjects.md) | Коллекция String | Возвращение всех групп и административных единиц, в которых состоит группа. Это транзитивная функция. |
 | **Открытые расширения** |||
 | [Создание открытого расширения](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) | Создание открытого расширения и добавление настраиваемых свойств в новый или существующий ресурс. |
 | [Получение открытого расширения](../api/opentypeextension-get.md) | Коллекция объектов [openTypeExtension](opentypeextension.md) | Получение открытого расширения, определяемого именем расширения. |
@@ -151,7 +158,7 @@ ms.locfileid: "61348217"
 |onPremisesProvisioningErrors|Коллекция [onPremisesProvisioningError](onpremisesprovisioningerror.md)| Ошибки при использовании продукта синхронизации Майкрософт во время подготовки. <br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `not`). |
 |onPremisesSamAccountName|String|Содержит локальное **имя учетной записи SAM**, синхронизированное из локального каталога. Это свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect.<br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`). Только для чтения. |
 |onPremisesSecurityIdentifier|String|Содержит локальный идентификатор безопасности (SID) для локальной группы, синхронизированной с облаком. <br><br>Возвращается по умолчанию. Поддерживает `$filter` для значений `null`. Только для чтения. |
-|onPremisesSyncEnabled|Boolean|Значение `true` указывает, что эта группа синхронизируется из локального каталога. Значение `false` указывает, что эта группа ранее синхронизировалась из локального каталога, но синхронизация больше не выполняется. Значение **null** указывает, что этот объект никогда не синхронизировался из локального каталога (значение по умолчанию). <br><br>Возвращается по умолчанию. Только для чтения. Поддерживает `$filter` (`eq`, `ne`, `not`, `in` и `eq` по `null` значениям). |
+|onPremisesSyncEnabled|Boolean|Значение `true` указывает, что эта группа синхронизируется из локального каталога. Значение `false` указывает, что эта группа ранее синхронизировалась из локального каталога, но синхронизация больше не выполняется. Значение **null** указывает, что этот объект никогда не синхронизировался из локального каталога (значение по умолчанию). <br><br>Возвращается по умолчанию. Только для чтения. Поддерживает `$filter` (`eq`, `ne`, `not`, `in` и `eq` для значений `null`). |
 |preferredDataLocation|String|Предпочтительное расположение данных для группы Microsoft 365. По умолчанию группа наследует предпочтительное расположение данных создателя группы. Чтобы настроить это свойство, вызывающему пользователю должна быть назначена одна из указанных ниже [ролей Azure AD](/azure/active-directory/roles/permissions-reference). <br><ul><li> Глобальный администратор <li> Администратор учетных записей пользователей <li>Редактор каталогов <li> Администратор Exchange <li> Администратор SharePoint </ul><br/> Дополнительные сведения об этом свойстве см. в статье [OneDrive Online с поддержкой нескольких регионов](/sharepoint/dev/solution-guidance/multigeo-introduction). <br><br>Допускает значение NULL. Возвращается по умолчанию.|
 |preferredLanguage|String|Предпочтительный язык для группы Microsoft 365. Должен быть представлен в формате ISO 639-1, например `en-US`.<br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` для значений `null`). |
 |proxyAddresses|Коллекция String| Адреса электронной почты для группы, ведущие в один почтовый ящик группы. Пример: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. Для выражений фильтра в случае многозначных свойств требуется оператор **any**. <br><br>Возвращается по умолчанию. Только для чтения. Значение null не допускается. Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |

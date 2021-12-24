@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 2711368b46874616c8996cfb0a9125e0dc28d347
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 0d34bcb107c1b452bc175504ceda58a931f0c7c3
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61345935"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604310"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -70,7 +70,7 @@ ms.locfileid: "61345935"
 | [assignLicense](../api/user-assignlicense.md) | [user](user.md) | Добавление или удаление подписок пользователя. Вы также можете включать и отключать отдельные планы, связанные с подпиской. |
 | [exportPersonalData](../api/user-exportpersonaldata.md) | Нет | Отправка запроса операции политики данных, направленного администратором компании для экспорта данных пользователя организации. |
 | [getByIds](../api/directoryobject-getbyids.md) | Коллекция String | Возвращает объекты каталогов, указанные в списке идентификаторов. |
-| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | Коллекция String | Проверка членства в списке групп. Это транзитивная проверка. |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | Коллекция строк | Проверка членства в списке групп. Это транзитивная проверка. |
 | [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | Коллекция String | Проверка участия в списке группы, роли каталога или объектах административных единиц. Это транзитивная проверка. |
 | [getMemberGroups](../api/directoryobject-getmembergroups.md) | Коллекция строк | Возвращает все группы, в которых состоит пользователь. Это транзитивная проверка. |
 | [getMemberObjects](../api/directoryobject-getmemberobjects.md) | Коллекция строк | Возвращение всех групп, ролей каталога и административных единиц, в которых состоит пользователь. Это транзитивная проверка. |
@@ -84,6 +84,10 @@ ms.locfileid: "61345935"
 | [Список usageRights](../api/user-list-usagerights.md) | Коллекция [usageRight](usageright.md) | Получение коллекции прав использования, предоставленных пользователю. |
 | [reprocessLicense](../api/user-reprocesslicenseassignment.md) | [user](user.md) | Переработка назначенных подписок для пользователя. |
 | [revokeSignInSessions](../api/user-revokesigninsessions.md) | Нет | Отменяет все маркеры обновления и маркеры сеанса пользователя, выпущенные для приложений, сбрасывая значение свойства **signInSessionsValidFromDateTime** и указывая для него текущую дату и время. Это вынуждает пользователей повторно выполнить вход в эти приложения. Этот метод заменяет метод **invalidateAllRefreshTokens**. |
+| [Перечисление удаленных пользователей](../api/directory-deleteditems-list.md) | Коллекция [directoryObject](directoryobject.md) | Получение пользователей, удаленных в клиенте за последние 30 дней. |
+| [Получение удаленного пользователя](../api/directory-deleteditems-get.md) | Коллекция [directoryObject](directoryobject.md) | Получение удаленного пользователя по идентификатору. |
+| [Восстановление удаленного пользователя](../api/directory-deleteditems-delete.md) | Коллекция [directoryObject](directoryobject.md) | Восстановление пользователя, удаленного в клиенте за последние 30 дней. |
+| [Удаление пользователя без возможности восстановления](../api/directory-deleteditems-restore.md) | Коллекция [directoryObject](directoryobject.md) | Окончательное удаление пользователя из клиента. |
 | **Drive** |||
 | [Получение объекта drive](../api/drive-get.md) | [drive](drive.md) | Получение свойств и связей ресурса Drive. |
 | [Список дочерних элементов](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | Возвращает коллекцию DriveItems в дочерних элементах ресурса DriveItem. |
@@ -173,7 +177,7 @@ ms.locfileid: "61345935"
 | assignedLicenses | Коллекция [assignedLicense](assignedlicense.md) | Назначенные пользователю лицензии, в том числе наследуемые (на основе групп). <br><br>Значение null не допускается. Поддерживает `$filter` (`eq` и `not`). |
 | assignedPlans | Коллекция [assignedPlan](assignedplan.md) | Планы, назначенные пользователю. Только для чтения. Значение null не допускается.<br><br>Поддерживает `$filter` (`eq` и `not`). |
 | birthday | DateTimeOffset | День рождения пользователя. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601 и формата времени UTC. Например, полночь 1 января 2014 г. в формате UTC представляется в виде `2014-01-01T00:00:00Z`. <br><br>Возвращается только с помощью оператора `$select`. |
-| businessPhones | Коллекция String | Номера телефонов пользователя. Для этого свойства можно указать только один номер.<br><br>"Только для чтения" для пользователей, которые синхронизируются с локальным каталогом. Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
+| businessPhones | Коллекция строк | Номера телефонов пользователя. Для этого свойства можно указать только один номер.<br><br>"Только для чтения" для пользователей, которые синхронизируются с локальным каталогом. Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 | city | String | Город, в котором находится пользователь. Максимальная длина: 128 символов.<br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям). |
 | CompanyName | String | Название организации, с которой связан пользователь. Это свойство может быть полезно для описания компании внешнего пользователя. Длина имени компании не должна превышать 64 символов.<br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям).|
 | consentProvidedForMinor | [consentProvidedForMinor](#consentprovidedforminor-values) | Устанавливает, получено ли согласие для несовершеннолетних. Допустимые значения: `null`, `granted`, `denied` и `notRequired`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions). <br><br>Поддерживает `$filter` (`eq`, `ne`, `not` и `in`).|
@@ -183,7 +187,7 @@ ms.locfileid: "61345935"
 |customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|Открытый сложный тип, который содержит значение настраиваемого атрибута безопасности, назначенного объекту каталога. Допускается значение null. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `not`, `startsWith`).|
 | deletedDateTime | DateTimeOffset | Дата и время удаления пользователя. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le` и `in`) |
 | department | String | Название отдела, в котором работает пользователь. Максимальная длина: 64 символа.<br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `eq` и по `null` значениям). |
-| displayName | String | Имя пользователя, отображаемое в адресной книге. Это значение обычно является сочетанием имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. Максимальная длина 256 символов.<br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям), `$orderBy` и `$search`.|
+| displayName | Строка | Имя пользователя, отображаемое в адресной книге. Это значение обычно является сочетанием имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. Максимальная длина 256 символов.<br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям), `$orderBy` и `$search`.|
 | employeeHireDate | DateTimeOffset | Дата и время, когда пользователь был нанят или начнет работу в случае найма в будущем. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`).|
 | employeeId | String | Идентификатор сотрудника, назначенный пользователю организацией. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям).|
 |employeeOrgData|[employeeOrgData](employeeorgdata.md) |Представляет данные организации (например, подразделение и место возникновения затрат), связанные с пользователем. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`).|
@@ -211,7 +215,7 @@ ms.locfileid: "61345935"
 | officeLocation | String | Расположение офиса на месте работы пользователя. Максимальная длина: 128 символов. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям). |
 | onPremisesDistinguishedName | String | Содержит `distinguished name` или `DN` локальной службы Active Directory. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect. Только для чтения.  |
 | onPremisesDomainName | String | Содержит локальное `domainFQDN` (другое название — dnsDomainName), синхронизированное из локального каталога. Это свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect. Только для чтения. |
-| onPremisesExtensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | Содержит extensionAttributes1-15 для пользователя. Отдельные атрибуты расширения нельзя выбирать и фильтровать. <br><li>Для пользователей **onPremisesSyncEnabled** исходным центром управления для этого набора свойств является локальная среда, и он предназначен только для чтения. </li><li>Для исключительно облачных пользователей (где значением для **onPremisesSyncEnabled** является `false`) эти свойства можно настроить при создании или обновлении объекта пользователя.  </li><li>Для исключительно облачных пользователей, ранее синхронизированных из локальной службы Active Directory, эти свойства предназначены только для чтения в Microsoft Graph, но могут быть полностью управляемыми с помощью Центра администрирования Exchange или модуля Exchange Online V2 в PowerShell.</li><br> Эти атрибуты расширения также называются настраиваемыми атрибутами 1–15 Exchange. <br>Возвращается только с помощью оператора `$select`. |
+| onPremisesExtensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | Содержит extensionAttributes1-15 для пользователя. Отдельные атрибуты расширения нельзя выбирать и фильтровать. <br><li>Для пользователей **onPremisesSyncEnabled** исходным центром управления для этого набора свойств является локальная среда, и он предназначен только для чтения. </li><li>Для исключительно облачных пользователей (где значением для **onPremisesSyncEnabled** является `false`) эти свойства можно настроить при создании или обновлении объекта пользователя.  </li><li>Для исключительно облачных пользователей, ранее синхронизированных из локальной службы Active Directory, эти свойства предназначены только для чтения в Microsoft Graph, но могут быть полностью управляемыми с помощью Центра администрирования Exchange или модуля Exchange Online версии 2 в Windows PowerShell.</li><br> Эти атрибуты расширения также называются настраиваемыми атрибутами 1–15 Exchange. <br>Возвращается только с помощью оператора `$select`. |
 | onPremisesImmutableId | String | Это свойство используется для сопоставления учетной записи локальной службы Active Directory с объектом пользователя Azure AD. Его необходимо указывать при создании учетной записи пользователя в Graph, если для свойства пользователя `userPrincipalName` (UPN) используется федеративный домен. **Примечание.** При определении этого свойства не допускается использование символов **$** и **\_**.<br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`). |
 | onPremisesLastSyncDateTime | DateTimeOffset | Указывает время последней синхронизации объекта с локальным каталогом, например 2013-02-16T03:04:54Z. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 и формата времени UTC. Например, полночь 1 января 2014 г. в формате UTC представляется в виде `2014-01-01T00:00:00Z`. Только для чтения. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`). |
 | onPremisesProvisioningErrors | Коллекция [onPremisesProvisioningError](onpremisesprovisioningerror.md) | Ошибки при использовании продукта синхронизации Майкрософт во время подготовки. <br> Поддерживает `$filter` (`eq`, `not`, `ge`, `le`).|

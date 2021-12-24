@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ed4457a55c96b33faae433dc47e2be43f7951ebe
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ab879e0926012d51f131cd218211743ddde64579
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61032830"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604177"
 ---
 # <a name="archive-team"></a>Архивация команды
 
@@ -64,7 +64,7 @@ POST /teams/{id}/archive
 Если архивация начата успешно, этот метод возвращает код отклика `202 Accepted`. Отклик также будет содержать заголовок `Location`, в котором указывается расположение ресурса [teamsAsyncOperation](../resources/teamsasyncoperation.md), созданного для обработки архивации команды. Проверьте состояние операции архивации, выполнив запрос GET для этого расположения.
 
 ## <a name="example"></a>Пример
-#### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -97,7 +97,7 @@ POST https://graph.microsoft.com/v1.0/teams/{id}/archive
 
 ---
 
-#### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 
 <!-- {

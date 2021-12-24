@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: fd7c366a86e07214a4971326916c1eeb70e5a607
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: 8675aafcba991ebff4d62f221daa1af599eb2303
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61321829"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604317"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 
@@ -35,6 +35,7 @@ ms.locfileid: "61321829"
 |[Обновление приложения](../api/application-update.md) | [application](application.md) |Обновление объекта application. |
 |[Удаление приложения](../api/application-delete.md) | Нет |Удаление объекта application. |
 |[Список удаленных приложений](../api/directory-deleteditems-list.md) | Коллекция [directoryObject](directoryobject.md) | Получение списка недавно удаленных приложений. |
+| [Перечисление удаленных приложений, принадлежащих пользователю](../api/directory-deleteditems-user-owned.md) | Коллекция [directoryObject](directoryobject.md) | Получение приложений, принадлежащих пользователю, которые удалены в клиенте за последние 30 дней. |
 |[Получение удаленного приложения](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Получение свойств недавно удаленного приложения. |
 |[Окончательное удаление приложения](../api/directory-deleteditems-delete.md) | Нет | Окончательное удаление приложения. |
 |[Восстановление удаленного приложения](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Восстановление недавно удаленного приложения. |
