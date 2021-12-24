@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 doc_type: apiPageType
 ms.prod: change-notifications
-ms.openlocfilehash: 88629f81300284bebe3276b437b406ece1b10360
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 0513533031b7f8bc5bd35dd2cf080dfd7ff2d577
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424664"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604423"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -102,6 +102,10 @@ POST /subscriptions
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Обязательный. |
 
+## <a name="request-body"></a>Текст запроса
+
+В теле запроса поставляем представление JSON объекта [подписки.](../resources/subscription.md)
+
 ## <a name="response"></a>Отклик
 
 В случае успешного использования этот метод возвращает код отклика и объект подписки `201 Created` в тексте [](../resources/subscription.md) ответа.
@@ -151,7 +155,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-subscription-from-subscriptions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-subscription-from-subscriptions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -218,7 +222,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="notification-endpoint-validation"></a>Проверка конечной точки уведомлений
+#### <a name="notification-endpoint-validation"></a>Проверка конечной точки уведомлений
 
 Конечная точка уведомления о подписке (указанная в свойстве **notificationUrl)** должна быть способна отвечать на запрос проверки, как описано в настройках уведомлений об изменениях в пользовательских [данных.](/graph/webhooks#notification-endpoint-validation) Если проверка завершилась сбоем, запрос на создание подписки возвращает ошибку 400 (неверный запрос).
 

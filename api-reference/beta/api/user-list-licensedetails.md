@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: bc0b8e74c3b14f32ef5bfca0c875019a26376ea7
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 0327de074e102354e8e2ae9cb3e8e23f9e26fb8c
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61033453"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604205"
 ---
 # <a name="list-licensedetails"></a>Перечисление licenseDetails
 
@@ -41,16 +41,16 @@ GET /users/{id}/licenseDetails
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Код &lt; bearer&gt;|
+| Авторизация  | Код &lt; bearer&gt;|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию `200 OK` [объектов licenseDetails](../resources/licensedetails.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [licenseDetails](../resources/licensedetails.md) в тексте ответа.
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/me/licenseDetails
 
 ---
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Примечание. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

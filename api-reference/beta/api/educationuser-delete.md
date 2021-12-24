@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0098c54c04272ac453249e388847c16c11b49d44
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4faed46734550b9291baa0663c5f20e792d79bc6
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61032486"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604233"
 ---
 # <a name="delete-educationuser"></a>Удаление educationUser
 
@@ -28,7 +28,7 @@ ms.locfileid: "61032486"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | EduRoster.ReadWrite.All                     |
+| Приложение                            | EduRoster.ReadWrite.All                     |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -52,7 +52,7 @@ DELETE /education/users/{id}
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -86,7 +86,7 @@ DELETE https://graph.microsoft.com/beta/education/users/13019
 
 ---
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа. 
 <!-- {

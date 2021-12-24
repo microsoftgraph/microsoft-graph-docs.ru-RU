@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b4c710a0fd78a07de14c48b576084c3d12121525
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 99d1dda8a367b3f356a77a619ef6f73d8fb45ff8
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61026074"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604415"
 ---
 # <a name="archive-team"></a>Архивация команды
 
@@ -22,7 +22,7 @@ ms.locfileid: "61026074"
 
 Архивация — это асинхронная операция. Команда архивируется после успешного завершения асинхронной операции, которая может выполняться после отклика этого API.
 
-Чтобы архивировать команду, у команды и [группы](../resources/group.md) должен быть владелец.
+Чтобы архивировать команду, команда и [группа](../resources/group.md) должны иметь владельца.
 
 Чтобы восстановить команду из архивированного состояния, используйте API для [распаковки](team-unarchive.md).
 
@@ -63,7 +63,7 @@ POST /teams/{id}/archive
 Если архивация начата успешно, этот метод возвращает код отклика `202 Accepted`. Отклик также будет содержать заголовок `Location`, в котором указывается расположение ресурса [teamsAsyncOperation](../resources/teamsasyncoperation.md), созданного для обработки архивации команды. Проверьте состояние операции архивации, выполнив запрос GET для этого расположения.
 
 ## <a name="example"></a>Пример
-#### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -96,7 +96,7 @@ POST https://graph.microsoft.com/beta/teams/{id}/archive
 
 ---
 
-#### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 00b2db3298fb98eba0d70e676c757aab441d7a15
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 22782e009bf2c8bd866fccd004948b2dac39209d
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61338584"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604247"
 ---
 # <a name="create-group"></a>Создание группы
 
@@ -57,7 +57,7 @@ POST /groups
 
 | Свойство | Тип | Описание|
 |:---------------|:--------|:----------|
-| displayName | string | Имя, которое следует отобразить в адресной книге для группы. Обязательно. |
+| displayName | string | Имя, которое следует отобразить в адресной книге для группы. Максимальная длина: 256 символов. Обязательный. |
 | mailEnabled | boolean | Установите значение `true` для групп с включенной поддержкой почты. Обязательное поле. |
 | mailNickname | string | Почтовый псевдоним для группы, уникальный для групп Microsoft 365 в организации. Максимальная длина: 64 символа. Это свойство может содержать только символы из [набора символов ASCII от 0 до 127](/office/vba/language/reference/user-interface-help/character-set-0127), за исключением следующих: ` @ () \ [] " ; : . <> , SPACE`. Обязательный. |
 | securityEnabled | boolean | Установите значение `true` для групп с поддержкой безопасности, включая группы Microsoft 365. Обязательно. **Примечание.** В группах, созданных с помощью портала Microsoft Azure, для свойства **securityEnabled** всегда устанавливается значение `true`.|

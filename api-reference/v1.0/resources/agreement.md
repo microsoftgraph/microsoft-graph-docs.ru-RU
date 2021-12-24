@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: f77172c3ddae5799ce1c46dec09fe468b67606ce
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 21563f8a0c884c1b290a4dad8c807e7b2e9d3e81
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089986"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604401"
 ---
 # <a name="agreement-resource-type"></a>тип ресурса соглашения
 
 Пространство имен: microsoft.graph
 
-Представляет настраиваемые условия соглашения об использовании клиента, которое создается и управляется с Azure Active Directory (Azure AD). Вы можете использовать следующие методы для создания и управления функцией [Azure Active Directory терминов использования](/azure/active-directory/active-directory-tou) в соответствии с вашим сценарием.
+Представляет настраиваемые условия соглашения об использовании клиента, которое создается и управляется с Azure Active Directory (Azure AD). Вы можете использовать следующие методы для создания и управления функцией [Azure Active Directory терминов использования](/azure/active-directory/conditional-access/terms-of-use) в соответствии с вашим сценарием.
 
 ## <a name="methods"></a>Методы
 
@@ -34,12 +34,12 @@ ms.locfileid: "59089986"
 |displayName|Строка|Отображение имени соглашения. Имя отображения используется для внутреннего отслеживания соглашения, но не отображается конечным пользователям, которые просматривают соглашение.|
 |id|Строка| Идентификатор соглашения. Только для чтения.|
 |isPerDeviceAcceptanceRequired|Boolean|Указывает, должны ли конечные пользователи принимать это соглашение на каждом устройстве, с которое они имеют к нему доступ. Конечный пользователь должен зарегистрировать свое устройство в Azure AD, если он еще этого не сделал.|
-|isViewingBeforeAcceptanceRequired|Логический|Указывает, должен ли пользователь расширить соглашение перед принятием.|
+|isViewingBeforeAcceptanceRequired|Boolean|Указывает, должен ли пользователь расширить соглашение перед принятием.|
 |termsExpiration|[termsExpiration](termsexpiration.md)| Срок действия и периодичность соглашения для всех пользователей. |
 |userReacceptRequiredFrequency|Длительность|Продолжительность, после которой пользователь должен повторно принять условия использования. Значение представлено в формате ISO 8601 для длительности.|
 
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
 |приемки|Коллекция [agreementAcceptance](agreementacceptance.md)|Только для чтения. Сведения о принятии этого соглашения.|

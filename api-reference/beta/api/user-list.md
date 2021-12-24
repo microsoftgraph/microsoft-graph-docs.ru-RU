@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: c7748ba6ec8663274b030465126a3b8f66e7c7ea
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: 5b946f3c624acde3e30d2013a9b11e617fa7760f
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61322277"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604387"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 
@@ -204,7 +204,7 @@ Content-type: application/json
 
 Ниже приведен пример запроса. Сведения для свойства **signInActivity** требуют лицензии Azure AD Premium P1/P2 и разрешения AuditLog.Read.All. 
 
->**Примечание.** Существует [известная проблема](/graph//graph/known-issues#license-check-errors-for-azure-ad-activity-reports) с получением свойства **signInActivity**.
+>**Примечание.** Существует [известная проблема](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) с получением свойства **signInActivity**.
 
 
 # <a name="http"></a>[HTTP](#tab/http)

@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 5f6c46024fa1e867e35b8c4da4503eb8fc8e19b4
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 57084dbcb85dc8737ef73bcb0c7ac9f25f875dd8
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61003303"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604191"
 ---
 # <a name="get-deleted-item"></a>Получение удаленных элементов
 
@@ -22,6 +22,8 @@ ms.locfileid: "61003303"
 
 В настоящее время функции удаленных элементов поддерживаются только для [приложений,](../resources/application.md) [групповых и](../resources/group.md) [пользовательских](../resources/user.md) ресурсов.
 
+>**Примечание:** Удаленные группы безопасности и списки рассылки удаляются навсегда и не могут быть извлечены с помощью этого API.
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -31,7 +33,7 @@ ms.locfileid: "61003303"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All |
+|Приложение | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All |
 
 ### <a name="for-users"></a>Для пользователей:
 
@@ -61,7 +63,7 @@ GET /directory/deleteditems/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Bearer &lt;code&gt; *Обязательный*.|
+| Авторизация  | Bearer &lt;code&gt; *Обязательный*.|
 | Accept  | application/json |
 
 ## <a name="request-body"></a>Текст запроса

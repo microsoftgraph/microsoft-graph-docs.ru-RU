@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: conceptualPageType
-ms.openlocfilehash: dcf56949743c4442409eb6f7345410967e0db2c0
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: d3b1209d4ae7414233de44c8c51d62fd7bea751e
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526764"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604212"
 ---
 # <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>Использование API Microsoft Bookings в Microsoft Graph
 
@@ -25,7 +25,7 @@ Microsoft Bookings позволяет крупным организациям и
 
 ## <a name="using-the-bookings-rest-api"></a>Использование REST API Bookings
 
-Выполните указанные ниже действия перед первым резервированием встреч клиента с компанией. Убедитесь, что предоставлены подходящие [маркеры доступа](/graph/auth-overview) для соответствующих операций.
+Выполните указанные ниже действия перед первым резервированием встреч клиента с компанией. Убедитесь, что предоставлены подходящие [маркеры доступа](/graph/auth/auth-concepts#access-tokens) для соответствующих операций.
 
 1. Убедитесь, что у компании есть подписка на [Microsoft 365 бизнес премиум](https://products.office.com/en-us/business/office-365-business-premium).
 2. Создайте новый объект **bookingBusiness**, отправив операцию POST в набор объектов. Как минимум, следует указать имя новой компании, отображаемое для клиентов:

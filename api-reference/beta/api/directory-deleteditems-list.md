@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: fb0ce82629ae39c07f8f5d404e7d43dfa83f014c
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 4e8f7415ca2db77620e3b83a8f2aacc017b4cb00
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226549"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604268"
 ---
 # <a name="list-deleted-items"></a>Перечисление удаленных элементов
 
@@ -21,6 +21,8 @@ ms.locfileid: "61226549"
 Получение списка недавно [удаленных элементов](../resources/directory.md).
 
 В настоящее время функции удаленных элементов поддерживаются только для [приложений,](../resources/application.md) [групповых](../resources/group.md)и [пользовательских](../resources/user.md) ресурсов.
+
+>**Примечание:** Удаленные группы безопасности и списки рассылки удаляются навсегда и не могут быть извлечены с помощью этого API.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,7 +42,7 @@ ms.locfileid: "61226549"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложения | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Для приложений | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ### <a name="for-groups"></a>Для групп:
 
@@ -48,7 +50,7 @@ ms.locfileid: "61226549"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | Group.Read.All, Group.ReadWrite.All, Directory.Read.All |
+|Приложение | Group.Read.All, Group.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -60,7 +62,7 @@ GET /directory/deletedItems/microsoft.graph.user
 
 Этот API в настоящее время поддерживает получение типов объектов приложений (), групп () или пользователей `microsoft.graph.application` `microsoft.graph.group` `microsoft.graph.user` () из удаленных элементов. Тип литой OData является обязательной частью URI, и вызов без типа `GET /directory/deleteditems` **не поддерживается.**
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
 Этот метод поддерживает параметры запроса, поддерживаемые ресурсом, заданным литой OData. То есть, `$count` , , , , , и `$expand` `$filter` `$orderBy` `$search` `$select` `$top` параметры запроса. Некоторые запросы поддерживаются только при использовании заголовка **ConsistencyLevel** с присвоенным значением `eventual` и `$count`. Например:
 

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса соглашения
-description: Представляет настраиваемые условия соглашения об использовании клиента, созданного и управляемого с помощью Azure Active Directory (Azure AD).
-localization_priority: Normal
+description: Представляет настраиваемые условия соглашения об использовании клиента, которое создается и управляется с Azure Active Directory (Azure AD).
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: bb1de9d03de4d891ef91d076ccbd41e6b569e3f8
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: c3d4fae159ef6c4187d042b97c02d8332b0af0d9
+ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50433203"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "61604324"
 ---
 # <a name="agreement-resource-type"></a>тип ресурса соглашения
 
@@ -18,7 +18,7 @@ ms.locfileid: "50433203"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет настраиваемые условия соглашения об использовании клиента, созданного и управляемого с помощью Azure Active Directory (Azure AD). Вы можете использовать следующие методы для создания и управления функцией [Azure Active Directory Terms of Use](/azure/active-directory/active-directory-tou) в соответствии с вашим сценарием.
+Представляет настраиваемые условия соглашения об использовании клиента, которое создается и управляется с Azure Active Directory (Azure AD). Вы можете использовать следующие методы для создания и управления функцией [Azure Active Directory терминов использования](/azure/active-directory/conditional-access/terms-of-use) в соответствии с вашим сценарием.
 
 ## <a name="methods"></a>Методы
 
@@ -37,12 +37,12 @@ ms.locfileid: "50433203"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|String|Отображение имени соглашения. Имя отображения используется для внутреннего отслеживания соглашения, но не отображается конечным пользователям, которые просматривают соглашение.|
+|displayName|Строка|Отображение имени соглашения. Имя отображения используется для внутреннего отслеживания соглашения, но не отображается конечным пользователям, которые просматривают соглашение.|
 |id|String| Только для чтения.|
 |isPerDeviceAcceptanceRequired|Boolean|Этот параметр позволяет требовать от конечных пользователей принять это соглашение на каждом устройстве, с которое они имеют к нему доступ. Конечный пользователь должен будет зарегистрировать свое устройство в Azure AD, если он этого еще не сделал.|
 |isViewingBeforeAcceptanceRequired|Boolean|Указывает, должен ли пользователь расширить соглашение перед принятием.|
 |termsExpiration|[termsExpiration](termsexpiration.md)| Срок действия и периодичность соглашения для всех пользователей. |
-|userReacceptRequiredFrequency|Duration|Продолжительность, после которой пользователь должен повторно принять условия использования. Значение представлено в формате ISO 8601 для длительности.|
+|userReacceptRequiredFrequency|Длительность|Продолжительность, после которой пользователь должен повторно принять условия использования. Значение представлено в формате ISO 8601 для длительности.|
 
 
 ## <a name="relationships"></a>Связи
