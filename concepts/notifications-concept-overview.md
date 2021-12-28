@@ -1,18 +1,21 @@
 ---
-title: 'Включение интерфейсов уведомлений, ориентированных на человека, с использованием уведомлений Microsoft Graph '
+title: Включение интерфейсов уведомлений, ориентированных на человека, с использованием уведомлений Microsoft Graph (не рекомендуется)
 description: Платформа уведомлений Microsoft Graph предоставляет подход, ориентированный на человека и обеспечивающий возможность сосредоточиться на пользователях во всех конечных точках устройств.
 ms.localizationpriority: high
 ms.prod: notifications
 ms.custom: scenarios:getting-started
 author: merzink
-ms.openlocfilehash: d63b5367b481ce6826929034f46c5f530c40f32d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0979e2c780d0d589ec24575385113057e6a44066
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062343"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61609020"
 ---
-# <a name="enabling-human-centric-notification-experiences-using-microsoft-graph-notifications"></a>Включение интерфейсов уведомлений, ориентированных на человека, с использованием уведомлений Microsoft Graph
+# <a name="enabling-human-centric-notification-experiences-using-microsoft-graph-notifications-deprecated"></a>Включение интерфейсов уведомлений, ориентированных на человека, с использованием уведомлений Microsoft Graph (не рекомендуется)
+
+> [!IMPORTANT]
+> API уведомлений Microsoft Graph не рекомендуется и прекратит возвращать данные к концу января 2022 г. Дополнительные сведения см. в [Центрах уведомлений Microsoft Azure](/azure/notification-hubs) и в [этой записи блога](https://devblogs.microsoft.com/microsoft365dev/retiring-microsoft-graph-notifications/).
 
 Уведомления — один из наиболее эффективных способов взаимодействия с пользователями вашего приложения. Отличный интерфейс уведомлений может создать канал общения между вами и пользователями практически в режиме реального времени, что может повышать уровень взаимодействия с приложением в нужный момент, увеличивать производительность пользователей и уведомлять их о важных событиях или требующихся действиях.
 
@@ -55,4 +58,4 @@ ms.locfileid: "59062343"
 ## <a name="api-reference"></a>Справочные материалы по API
 Ищете справочные материалы по API для этой службы?
 
-- [Использование REST API уведомлений в Microsoft Graph](/graph/api/resources/notifications-api-overview?view=graph-rest-beta)
+- [Использование REST API уведомлений в Microsoft Graph](/graph/api/resources/notifications-api-overview?view=graph-rest-beta&preserve-view=true)
