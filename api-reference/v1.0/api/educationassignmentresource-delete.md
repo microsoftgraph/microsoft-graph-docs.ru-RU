@@ -5,18 +5,18 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 790c65c91ec02266715e84e62ea4ba9f1170edc3
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8ab5d36dd248df367ec7ff6168b0c921226117fb
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61006291"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608901"
 ---
 # <a name="delete-educationassignmentresource"></a>Удаление educationAssignmentResource
 
 Пространство имен: microsoft.graph
 
-Удалите определенный ресурс, присоединенный к назначению.
+Удаление определенного [образованияAssignmentResource,](../resources/educationassignmentresource.md) прикрепленного к назначению.
 
 В общем, удалить ресурс могут только преподаватели в классе. Однако после публикации задания преподаватели не могут удалять ресурсы, помеченные как "distributeToStudents".
 

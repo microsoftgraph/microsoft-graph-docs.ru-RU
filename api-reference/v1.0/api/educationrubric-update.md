@@ -2,15 +2,15 @@
 title: Обновление educationRubric
 description: Обновление свойств объекта educationRubric.
 ms.localizationpriority: medium
-author: sharad-sharma-msft
+author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b35a9e40f24fd52e7a16cffa3e60b1491e2e120f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 32a2d1f8a43282f69f1d6fb6ab0df2e936c8d299
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61006221"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608796"
 ---
 # <a name="update-educationrubric"></a>Обновление educationRubric
 
@@ -43,7 +43,7 @@ PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -53,7 +53,7 @@ PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005
 |:-------------|:------------|:------------|
 |description|itemBody|Описание этой рубрики.|
 |displayName|Строка|Название этой рубрики.|
-|классификация|educationAssignmentGradeType|Имеет ли эта рубрика очки или нет.|
+|классификация|[educationAssignmentGradeType](../resources/educationassignmentgradetype.md)|Тип классификации рубрики. `null` если это не пункты рубрики и [educationAssignmentPointsGradeType,](../resources/educationassignmentpointsgradetype.md) если это рубрика с точками.|
 |уровни|коллекция rubricLevel|Коллекция уровней, в которые состоит эта рубрика.|
 |качества|rubricQuality collection|Коллекция качеств, из которых состоит эта рубрика.|
 

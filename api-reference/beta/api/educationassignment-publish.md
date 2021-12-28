@@ -2,15 +2,15 @@
 title: 'educationAssignment: публикация'
 description: Измените состояние образованияAssignment с исходного состояния черновика на опубликованный.
 ms.localizationpriority: medium
-author: dipakboyed
+author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c466759baa053b4c205dfcebfc75bee1124e8d4d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: fd3daac7d17b4b88c5f17d3d2a1dca676cfa602b
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61015511"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608985"
 ---
 # <a name="educationassignment-publish"></a>educationAssignment: публикация
 
@@ -22,9 +22,13 @@ ms.locfileid: "61015511"
 
 Вы можете изменить состояние на `draft` `scheduled` то, назначено ли назначение на будущую дату.  
 
-Только учитель в классе может сделать этот вызов. Когда назначение находится в состоянии черновика, учащиеся не будут видеть назначение, равно как и объекты отправки. При вызове этого API [создаются объекты educationSubmission](../resources/educationsubmission.md) и назначение отображается в списке учащегося.
+Только учитель в классе может сделать этот вызов. Когда назначение **находится** в состоянии черновика, учащиеся не будут видеть **назначение,** равно как и объекты отправки. При вызове этого API [создаются объекты educationSubmission](../resources/educationsubmission.md) и назначение отображается в списке учащегося.
 
-Состояние назначения возвращается в случае сбоя при отступных во `draft` время публикации.
+Состояние назначения **возвращается** в случае сбоя при отступных во `draft` время публикации.
+
+Чтобы обновить свойства опубликованного **назначения,** см. [в публикации update an assignment.](../api/educationassignment-update.md)
+
+Чтобы обновить свойства опубликованного назначения, см. [в публикации обновление назначения.](../api/educationassignment-update.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

@@ -5,18 +5,18 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fa2734cdb241588c0d73a21c4710450a59f68bda
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b23bc5e05f1b6bf39ad41022bfd01fb542addc48
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61025562"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61609013"
 ---
 # <a name="list-submittedresources"></a>Список, представленныйРесурсеи
 
 Пространство имен: microsoft.graph
 
-Список ресурсов, официально отправленных для классификации. 
+Список [объектов educationSubmissionResource,](../resources/educationsubmissionresource.md) официально отправленных для классификации. 
 
 Учащийся, которому принадлежит отправка, не может изменить представленный список без повторного отправки задания. Это оболочка вокруг реального ресурса и может содержать указатель обратно на фактический ресурс назначения, если этот ресурс был скопирован из назначения.
 
@@ -27,7 +27,7 @@ ms.locfileid: "61025562"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All | 
+|Application | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

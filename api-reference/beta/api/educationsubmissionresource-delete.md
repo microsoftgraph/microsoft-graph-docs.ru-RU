@@ -5,12 +5,12 @@ author: dipakboyed
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 396490f7edb3c7d13d41ab1c311a0039aa8a0989
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 2bfaf3c3286f27d7168b26e8376a8da09a2bdd0b
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61005074"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608922"
 ---
 # <a name="delete-educationsubmissionresource"></a>Удаление educationSubmissionResource
 
@@ -18,7 +18,7 @@ ms.locfileid: "61005074"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаляет ресурс из отправки. Это может быть сделано только студентом. Если ресурс был скопирован из назначения, после удаления текущей копии будет создана новая копия ресурса. Это позволяет "сбросить" ресурс в исходное состояние. Если ресурс не был скопирован из назначения, а добавлен из студента, ресурс просто удаляется.
+Удаляет [educationSubmissionResource из](../resources/educationsubmissionresource.md) отправки. Это может быть сделано только студентом. Если ресурс был скопирован из назначения, после удаления текущей копии будет создана новая копия ресурса. Это позволяет "сбросить" ресурс в исходное состояние. Если ресурс не был скопирован из назначения, а добавлен из студента, ресурс просто удаляется.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

@@ -2,15 +2,15 @@
 title: Обновление системы образования
 description: Обновление объекта educationAssigment.
 ms.localizationpriority: medium
-author: sharad-sharma-msft
+author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 786d364847297edea5538251c5701502c3ced7f2
-ms.sourcegitcommit: 15dd0e98e69f872ed5a709600608b244759b0967
+ms.openlocfilehash: fe9cf434a5f26d6593cee8e8b39afe2150949e24
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "61567310"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608726"
 ---
 # <a name="update-educationassignment"></a>Обновление системы образования
 
@@ -50,15 +50,15 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |addedStudentAction|Строка| Описывает, следует ли распределять назначение среди учащихся, добавленных после даты публикации назначения.|
-|addToCalendarAction|educationAddToCalendarOptions|Необязательное поле для управления **поведением** назначения для добавления **назначений** в календари учащихся и преподавателей при **публикации** назначения. Допустимые значения: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, `studentsOnly`. Обратите внимание, что вы должны использовать загон запроса, чтобы получить следующее значение `Prefer: include - unknown -enum-members` (ы) в этом [развиваемом переуме:](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `studentsOnly` . Необязательное свойство.|
+|addToCalendarAction|educationAddToCalendarOptions|Необязательное поле для управления **поведением** назначения для добавления **назначений** в календари учащихся и преподавателей при **публикации** назначения. Допустимые значения: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, `studentsOnly`. Обратите внимание, что вы должны использовать загон запроса, чтобы получить следующее значение `Prefer: include - unknown -enum-members` (ы) в этом [развиваемом переуме:](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `studentsOnly` . Необязательный параметр.|
 |allowLateSubmissions|Boolean| Могут ли студенты отправлять отправку после срока.|
 |allowStudentsToAddResourcesToSubmission|Boolean| Может ли студент добавлять ресурсы в отправку или нет. Кроме того, указывает, соответствуют ли все ресурсы в представлении списку ресурсов назначения. |
-|assignDateTime|DateTimeOffset| Указывает дату публикации назначения для учащихся. |
-|assignTo|educationAssignmentRecipient| Студенты, получаювшие назначение.|
+|assignDateTime|DateTimeOffset| Указывает дату публикации назначения для учащихся. Невозможно изменить после публикации назначения.|
+|assignTo|[educationAssignmentRecipient](../resources/educationassignmentrecipient.md)| Студенты, получаювшие назначение.|
 |closeDateTime|DateTimeOffset| Дата закрытия назначения для отправки. Это необязательный поле, которое может быть равно нуль, если назначение не позволяет использоватьLateSubmissions или closeDateTime то же самое, что и dueDateTime, но если указано, оно должно быть больше или равно dueDateTime.|
-|displayName|Строка| Имя назначения. |
+|displayName|String| Имя назначения. |
 |dueDateTime|DateTimeOffset| Назначение даты должно быть. |
-|классификация|educationAssignmentGradeType| Оценка назначения.|
+|классификация|[educationAssignmentGradeType](../resources/educationassignmentgradetype.md)| Оценка назначения.|
 |инструкции|itemBody| Инструкции, которые будут даны учащимся вместе с назначением. |
 |notificationChannelUrl|Строка| Канал для связи уведомлений, связанных с назначением. Чтобы изменить URL-адрес, `assignTo` установите значение [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md). URL-адрес канала не может измениться после публикации назначения.|
 

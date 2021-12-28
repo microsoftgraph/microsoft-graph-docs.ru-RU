@@ -5,12 +5,12 @@ author: dipakboyed
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 9a4a074446123b5a291b4b7657b609da2ea3c85d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1798e7e06fb247c1c93e1f2bd09ed3031a43fa7a
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61034583"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608999"
 ---
 # <a name="create-educationsubmissionresource"></a>Создание educationSubmissionResource
 
@@ -18,7 +18,7 @@ ms.locfileid: "61034583"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавьте ресурс в список ресурсов отправки.
+Добавьте в список ресурсов отправки [educationSubmissionResource.](../resources/educationsubmissionresource.md)
 
 Выполнить эту операцию может только студент, назначенный для отправки.
 

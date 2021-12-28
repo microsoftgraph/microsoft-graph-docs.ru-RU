@@ -5,18 +5,18 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c1be38511befcf2621c9374a4eb418f8977f7986
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 92e4e55486259b0fe3950eb5455c14f022f6d4b0
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61000264"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61609027"
 ---
 # <a name="delete-educationsubmissionresource"></a>Удаление educationSubmissionResource
 
 Пространство имен: microsoft.graph
 
-Удаляет ресурс из отправки. Это может быть сделано только студентом. Если ресурс был скопирован из назначения, после удаления текущей копии будет создана новая копия ресурса. Это позволяет "сбросить" ресурс в исходное состояние. Если ресурс не был скопирован из назначения, а добавлен из студента, ресурс просто удаляется.
+Удаляет [educationSubmissionResource из](../resources/educationsubmissionresource.md) отправки. Это может быть сделано только студентом. Если ресурс был скопирован из назначения, после удаления текущей копии будет создана новая копия ресурса. Это позволяет "сбросить" ресурс в исходное состояние. Если ресурс не был скопирован из назначения, а добавлен из студента, ресурс просто удаляется.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

@@ -2,23 +2,25 @@
 title: тип ресурса educationAssignmentGradeType
 description: Представляет, как будет классифовка назначения.
 ms.localizationpriority: medium
-author: sharad-sharma-msft
+author: cristobal-buenrostro
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 96dc73880078c57856afb0dac0ac0c589babff83
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9794a379fbf230253027c41c22b6cf041696d777
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109187"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608747"
 ---
 # <a name="educationassignmentgradetype-resource-type"></a>тип ресурса educationAssignmentGradeType
 
 Пространство имен: microsoft.graph
 
-Представляет, как будет классифовка назначения.
+Представляет, как будет классифовка назначения. Это используется в **свойстве assignments.grading.** 
 
-Это используется в **свойстве assignments.grading.** Этот суперкласс нельзя использовать непосредственно в свойстве назначения. Она существует, чтобы разрешить несколько различных способов оценки назначений.
+Этот суперкласс нельзя использовать непосредственно в свойстве назначения. Она существует, чтобы разрешить несколько различных способов оценки назначений. 
+
+Базовый класс [для educationAssignmentPointsGradeType](../resources/educationassignmentpointsgradetype.md).
 
 
 ## <a name="properties"></a>Свойства

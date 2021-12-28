@@ -5,18 +5,18 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 64e560aafda79f67da3ec07f3b1c826677f49007
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 86b5927f6a679a6389f6ca619a3a5c2cf9ccd890
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61016347"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608768"
 ---
 # <a name="create-educationsubmissionresource"></a>Создание educationSubmissionResource
 
 Пространство имен: microsoft.graph
 
-Добавьте ресурс в список ресурсов отправки.
+Добавьте [educationSubmissionResource в](../resources/educationsubmissionresource.md) список ресурсов отправки.
 
 Выполнить эту операцию может только студент, назначенный для отправки.
 

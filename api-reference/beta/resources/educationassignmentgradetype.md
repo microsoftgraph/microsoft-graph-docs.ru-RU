@@ -1,26 +1,28 @@
 ---
-title: Тип ресурса Едукатионассигнментградетипе
-description: Указывает, как будет выполняться оценка назначения. Используется в свойстве **назначений. ступенчато** .
-localization_priority: Normal
-author: dipakboyed
+title: тип ресурса educationAssignmentGradeType
+description: Представляет, как будет классифовка назначения. Это используется в **свойстве assignments.grading.**
+ms.localizationpriority: medium
+author: cristobal-buenrostro
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: bf658fe2fa2b729a7e07d59613f86fe1f324798b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d0aa68b27c311c297b81e6007c01b2fa35c09e79
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013747"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608964"
 ---
-# <a name="educationassignmentgradetype-resource-type"></a>Тип ресурса Едукатионассигнментградетипе
+# <a name="educationassignmentgradetype-resource-type"></a>тип ресурса educationAssignmentGradeType
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Указывает, как будет выполняться оценка назначения. Используется в свойстве **назначений. ступенчато** .
+Представляет, как будет классифовка назначения. Это используется в **свойстве assignments.grading.**
 
-Этот суперкласс нельзя использовать непосредственно в свойстве присваивания. Он существует для того, чтобы иметь возможность использовать несколько различных способов оценки назначений.
+Этот суперкласс нельзя использовать непосредственно в свойстве назначения. Она существует, чтобы разрешить несколько различных способов оценки назначений.
+
+Базовый класс [для educationAssignmentPointsGradeType](../resources/educationassignmentpointsgradetype.md).
 
 
 ## <a name="properties"></a>Свойства

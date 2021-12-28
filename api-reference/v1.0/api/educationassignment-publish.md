@@ -2,15 +2,15 @@
 title: 'educationAssignment: публикация'
 description: Измените состояние образованияAssignment с исходного состояния черновика на опубликованный.
 ms.localizationpriority: medium
-author: sharad-sharma-msft
+author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: bc5c105157e671e25f36e75219a6e13af8a9f631
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5fab26d510efe5bc9b331b0a5c4d127026bc73a6
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61000362"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608714"
 ---
 # <a name="educationassignment-publish"></a>educationAssignment: публикация
 
@@ -25,6 +25,8 @@ ms.locfileid: "61000362"
 Только учитель в классе может сделать этот вызов. Когда назначение находится в состоянии черновика, учащиеся не будут видеть назначение, равно как и объекты отправки. Вызов этого API создает [объекты educationSubmission](../resources/educationsubmission.md) и отображает назначение в списке каждого учащегося.
 
 Состояние назначения возвращается в случае сбоя при отступных во `draft` время публикации.
+
+Чтобы обновить свойства опубликованного **назначения,** см. [в публикации update an assignment.](../api/educationassignment-update.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

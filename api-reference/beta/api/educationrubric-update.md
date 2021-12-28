@@ -2,15 +2,15 @@
 title: Обновление educationRubric
 description: Обновление свойств объекта educationRubric.
 ms.localizationpriority: medium
-author: dipakboyed
+author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 18542960b1af086a388b06ae6a6dfe04f96009c8
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 932e42786084e1de0a6dcab3c5eec3f2618e0bd0
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60975250"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608803"
 ---
 # <a name="update-educationrubric"></a>Обновление educationRubric
 
@@ -45,7 +45,7 @@ PATCH /education/classes/{id}/assignments/{id}/rubric
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -55,7 +55,7 @@ PATCH /education/classes/{id}/assignments/{id}/rubric
 |:-------------|:------------|:------------|
 |description|itemBody|Описание этой рубрики.|
 |displayName|Строка|Название этой рубрики.|
-|классификация|educationAssignmentGradeType|Имеет ли эта рубрика очки или нет.|
+|классификация|[educationAssignmentGradeType](../resources/educationassignmentgradetype.md)|Тип классификации рубрики. `null` для безочковой рубрики [и образованияAssignmentPointsGradeType](../resources/educationassignmentpointsgradetype.md) для рубрики с точками.|
 |уровни|коллекция rubricLevel|Коллекция уровней, в которые состоит эта рубрика.|
 |качества|rubricQuality collection|Коллекция качеств, из которых состоит эта рубрика.|
 

@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ac36dc04d6bd9d3ef07d2ef22f2cb37267d68789
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9f2f2aba23be255241f67e6c3a24383143962024
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60978988"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608724"
 ---
 # <a name="list-submission-resources"></a>Список ресурсов отправки
 
@@ -18,7 +18,7 @@ ms.locfileid: "60978988"
 
 Список ресурсов, связанных с [отправкой.](../resources/educationsubmission.md) 
 
-Объект **submissionResource** — это оболочка вокруг фактического объекта ресурса, над который работает студент. Оболочка также включает указатель на ресурсы назначения, если он был скопирован из назначения во время процесса назначения. Эти ресурсы являются рабочей копией назначения. **SubmittedResources —** это ресурсы, официально отправленные для оценки.
+Объект [educationSubmissionResource](../resources/educationsubmissionresource.md) — это оболочка вокруг фактического объекта ресурса, над который работает студент. Оболочка также включает указатель на ресурсы назначения, если он был скопирован из назначения во время процесса назначения. Эти ресурсы являются рабочей копией назначения. **SubmittedResources —** это ресурсы, официально отправленные для оценки.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "60978988"
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                         |
-| Для приложений                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
+| Application                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

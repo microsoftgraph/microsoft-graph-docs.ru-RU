@@ -5,12 +5,12 @@ author: dipakboyed
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e3b6c70ec61be792b0c0cd403be72cb791d981a2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 53f496d4680b3c2cefcf4b1ca5c3fff837c0b081
+ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61030184"
+ms.lasthandoff: 12/27/2021
+ms.locfileid: "61608971"
 ---
 # <a name="delete-educationassignmentresource"></a>Удаление educationAssignmentResource
 
@@ -18,7 +18,7 @@ ms.locfileid: "61030184"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите определенный ресурс, присоединенный к назначению. Удалить ресурс могут только преподаватели в классе. После публикации задания учащимся преподаватели не могут удалять ресурсы, помеченные как "distributeToStudents".
+Удаление определенного [образованияAssignmentResource,](../resources/educationassignmentresource.md) прикрепленного к назначению. Удалить ресурс могут только преподаватели в классе. После публикации задания учащимся преподаватели не могут удалять ресурсы, помеченные как "distributeToStudents".
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

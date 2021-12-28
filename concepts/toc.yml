@@ -346,7 +346,7 @@ items:
                 href: onenote-branding.md
               - name: Коды ошибок
                 href: onenote-error-codes.md
-      - name: Уведомления (предварительная версия)
+      - name: Уведомления (упразднено)
         displayName: Notifications
         items:
           - name: Обзор
