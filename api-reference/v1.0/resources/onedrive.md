@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: sharepoint
 author: jewan-microsoft
 doc_type: conceptualPageType
-ms.openlocfilehash: bc3b425a25cb55bdbebbf354a296ac4e9235f047
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: cc7c4554ebc877d87590547f14d2cfd0d52a01bb
+ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062434"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61647100"
 ---
 # <a name="working-with-files-in-microsoft-graph"></a>Работа с файлами в Microsoft Graph
 
@@ -83,6 +83,8 @@ ms.locfileid: "59062434"
 | `/me/drive/root:/path/to/folder:/children` | Получение списка дочерних экземпляров ресурса **DriveItem** по относительному пути для корневого каталога OneDrive пользователя. |
 | `/me/drive/items/{item-id}:/path/to/folder:/children` | Получение списка дочерних экземпляров ресурса **DriveItem** по относительному пути для другого элемента. |
 
+Дополнительные сведения см. в разделе об [адресации driveItems](/graph/concepts/onedrive-addressing-driveitems.md).
+
 ## <a name="drive-resource"></a>Ресурс Drive
 
 [Ресурс Drive](drive.md) — это объект верхнего уровня в хранилище OneDrive или библиотеке документов [SharePoint][] пользователя. Почти все операции с файлами начинаются с обращения к определенному ресурсу диска.
@@ -114,4 +116,3 @@ ms.locfileid: "59062434"
 
 [SharePoint]: sharepoint.md
 [site]: site.md
-
