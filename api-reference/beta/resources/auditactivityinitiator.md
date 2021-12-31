@@ -4,13 +4,13 @@ description: Identity the resource object that initiates the activity. Иниц�
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: identity-and-access-reports
-author: SarahBar
-ms.openlocfilehash: a018a6e74f9ee89b879577bec6f64a94ab15cdca
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+author: besiler
+ms.openlocfilehash: e681f56f3caf0792241a92ce5137ac8468b623d8
+ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59047487"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61647164"
 ---
 # <a name="auditactivityinitiator-resource-type"></a>Тип ресурса auditActivityInitiator
 
@@ -21,12 +21,12 @@ ms.locfileid: "59047487"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|приложение|[appIdentity](appidentity.md)|Если ресурс, инициируя действие, является приложением, это свойство указывает всю связанную с приложением информацию, например appId, Name, servicePrincipalId, Name.|
-|пользователь|[userIdentity](useridentity.md)|Если ресурс, инициирующее действие, является пользователем, это свойство указывает всю связанную с пользователем информацию, например userId, Name, UserPrinicpalName.|
+|приложение|[appIdentity](appidentity.md)|Если инициатором действия является приложение, это свойство указывает все его идентификационные данные, включая appId, displayName, servicePrincipalId и servicePrincipalName.|
+|пользователь|[auditUserIdentity](auditUserIdentity.md)|Если инициатором действия является пользователь, это свойство указывает его идентификационные данные, включая их id, displayName и userPrincipalName.|
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже представлено описание ресурса в формате JSON.
+Ниже указано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 1cedb6c2ab34511134716efe5c205a4738d10f0c
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 97e75c7ef87d47c0359d6b8d6a5e5db2bb21a518
+ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767343"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61647009"
 ---
 # <a name="states-transitions-and-limitations-for-assignments-and-submissions-in-microsoft-graph"></a>Состояния, переходы и ограничения для назначений и представлений в Microsoft Graph
 
@@ -26,7 +26,7 @@ ms.locfileid: "59767343"
 | Published | Состояние фоновой обработки при распределении назначения каждому назначенного учащемуся. | `POST /education/classes/{id}/assignments/{id}/publish` |
 | Scheduled | Состояние, когда учитель заплановал публикацию задания в будущем. | `PATCH /education/classes/{id}/assignments/{id}`<br/>`POST /education/classes/{id}/assignments/{id}/publish` |
 | Назначенное | После завершения публикации назначение перемещается в назначенное состояние и доступно для учащихся. | `POST /education/classes/{id}/assignments/{id}/publish` |
-| Рассмотрение | Состояние фоновой обработки при копировании нового назначения из существующего. | `POST /education/classes/{id}/assignments/{id}/copy`<br/>`PATCH /education/classes/{id}/assignments/{id}` |
+| Pending | Состояние фоновой обработки при копировании нового назначения из существующего. | `POST /education/classes/{id}/assignments/{id}/copy`<br/>`PATCH /education/classes/{id}/assignments/{id}` |
 
 На следующей схеме показаны переходы состояния, которые могут происходить для назначений.
 
@@ -36,7 +36,7 @@ ms.locfileid: "59767343"
 Вызывающий должен использовать операцию [назначения GET](/graph/api/educationassignment-get.md) для проверки текущего состояния назначения и проверки успешного процесса публикации.
 
 ### <a name="assignments-states-transitions-based-on-the-allowed-actions"></a>Назначения состояния переходов на основе разрешенных действий
-| Текущее состояние назначения | Action | Новое состояние |
+| Текущее состояние назначения | Действие | Новое состояние |
 |:--|:--|:--|
 | Draft | Учитель запланировать назначение | Scheduled |
 | Draft | Публикация | Published |
@@ -48,8 +48,8 @@ ms.locfileid: "59767343"
 | Scheduled | Отмена расписания | Draft |
 | Scheduled | Перенос | Scheduled |
 | Назначенное | Отбрасывается | |
-| Рассмотрение | Завершено копирование | Draft |
-| Рассмотрение | Отбрасывается | |   
+| Pending | Завершено копирование | Draft |
+| Pending | Отбрасывается | |   
 
 `Note: Any action and state transition not listed in the table is NOT allowed`
 
@@ -75,7 +75,7 @@ ms.locfileid: "59767343"
 | Состояние | Описание | Вызов API REST |
 |:--|:--|:--|
 | Выполняется | Начальное состояние после создания отправки. | `POST /education/classes/{id}/assignments`<br/>`POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit` |
-| Submitted | Это происходит после того, как студент повернул i n назначение. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit` |
+| Submitted | Это происходит после того, как учащийся включит задание. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/submit` |
 | Возвращено | После того как учитель возвращает задание ученику. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/return` |
 | Повторное присвоение | После того как учитель вернул задание учащемуся для пересмотра. | `POST /education/classes/{id}/assignments/{id}/submissions/{id}/reassign` |
 
@@ -84,7 +84,7 @@ ms.locfileid: "59767343"
 ![Схема переходов состояния отправки](images/states-transitions/diagram-submissions.PNG)
 
 ### <a name="submissions-states-transitions-based-on-allowed-actions"></a>Переходы состояния представлений на основе разрешенных действий
-| Текущее состояние отправки | Action | Новое состояние |
+| Текущее состояние отправки | Действие | Новое состояние |
 |:--|:--|:--|
 | Выполняется | Включаем | Submitted |
 | Выполняется | Возвращение для пересмотра | Повторное присвоение |

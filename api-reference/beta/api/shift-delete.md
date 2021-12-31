@@ -1,16 +1,16 @@
 ---
 title: Удаление смены
-description: Удаляет сдвиг из расписания.
+description: Удаление переноса из расписания.
 author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0d68c1e7a21fab9ffe29103381ec9016190f5591
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 83a163223614c07da0fa741a90aa866453fc19b9
+ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61020488"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61647157"
 ---
 # <a name="delete-shift"></a>Удаление смены
 
@@ -18,7 +18,7 @@ ms.locfileid: "61020488"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаляет сдвиг [из](../resources/shift.md) расписания.
+Удаление [переноса](../resources/shift.md) из расписания.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -42,7 +42,7 @@ DELETE /teams/{teamId}/schedule/shifts/{shiftId}
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {token}. Обязательный.  |
+| Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -53,7 +53,7 @@ DELETE /teams/{teamId}/schedule/shifts/{shiftId}
 
 ## <a name="example"></a>Пример
 
-#### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -88,11 +88,10 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts/{shiftId}
 ---
 
 
-#### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа. 
 
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response"
 } -->
@@ -106,7 +105,7 @@ HTTP/1.1 204 No Content
 <!--
 {
   "type": "#page.annotation",
-  "description": "Deletes a shift from the schedule",
+  "description": "Delete a shift from the schedule",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

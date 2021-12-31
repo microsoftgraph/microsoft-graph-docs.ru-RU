@@ -460,7 +460,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Примечания
+          - name: Заметки
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -561,7 +561,7 @@ items:
                 href: api/profile-get.md
               - name: Удаление профиля пользователя
                 href: api/profile-delete.md
-          - name: Teamwork
+          - name: Командная работа
             items:
               - name: Установленное приложение
                 href: resources/teamsappinstallation.md
@@ -10976,7 +10976,7 @@ items:
                 href: api/dynamics-vendor-update.md
               - name: Удаление поставщика
                 href: api/dynamics-vendor-delete.md
-      - name: Удостоверения и доступ
+      - name: Удостоверение и доступ
         displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: Обзор
@@ -12879,7 +12879,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Получение многозначного свойства
                     href: api/multivaluelegacyextendedproperty-get.md
-      - name: Примечания
+      - name: Заметки
         displayName: OneNote
         items:
           - name: Обзор
@@ -12972,7 +12972,7 @@ items:
             items:
               - name: Вывод ресурса
                 href: api/resource-get.md
-      - name: Уведомления (неподготовленные)
+      - name: Уведомления (упразднено)
         items:
           - name: Обзор
             href: resources/notifications-api-overview.md
@@ -13147,7 +13147,7 @@ items:
                     href: api/personname-update.md
                   - name: Delete
                     href: api/personname-delete.md
-              - name: Примечания
+              - name: Заметки
                 items:
                   - name: Аннотация для человека
                     href: resources/personannotation.md
@@ -13488,10 +13488,12 @@ items:
                     href: resources/applicationsigninsummary.md
                     items:
                       - name: Сводка о входе
-                        href: api/applicationsigninsummary-get.md
+                        href: api/reportroot-getazureadapplicationsigninsummary.md
                   - name: Сведения о входе
                     href: resources/applicationsignindetailedsummary.md
                     items:
+                      - name: Сведения о входе в список
+                        href: api/reportroot-list-applicationsignindetailedsummary.md
                       - name: Сведения о входе
                         href: api/applicationsignindetailedsummary-get.md
               - name: Регистрация и использование

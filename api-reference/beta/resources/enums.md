@@ -5,16 +5,38 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: c4e9835e140daa63e5b0c6fac4886e0b58a59880
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 507088d2c71137ab416ba39629c8607bf7554e83
+ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525738"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61646757"
 ---
 # <a name="enum-values"></a>Значения Enum
 
 Пространство имен: microsoft.graph
+
+### <a name="incomingtokentype-values"></a>значения incomingTokenType 
+
+|Member|
+|:---|
+|Нет|
+|primaryRefreshToken|
+|saml11|
+|saml20|
+|unknownFutureValue|
+
+### <a name="protocoltype-values"></a>Значения protocolType 
+
+|Member|
+|:---|
+|Нет|
+|oAuth2|
+|ropc|
+|wsFederation|
+|saml20|
+|deviceCode|
+|unknownFutureValue|
 
 ### <a name="accessreviewinstancedecisionitemfilterbycurrentuseroptions-values"></a>accessReviewInstanceDecisionItemFilterByCurrentUserOptions 
 
@@ -191,9 +213,9 @@ ms.locfileid: "61525738"
 
 |Member|
 |:---|
-|Строка|
+|String|
 |Целое число|
-|Справка|
+|Справочные материалы|
 |Binary|
 |Boolean|
 |DateTime|
@@ -371,7 +393,7 @@ ms.locfileid: "61525738"
 
 |Member|
 |:---|
-|userPrincipalName.|
+|userPrincipalName|
 |onPremisesUserPrincipalName|
 |userPrincipalUsername|
 |onPremisesUserPrincipalUsername|
@@ -437,7 +459,7 @@ ms.locfileid: "61525738"
 |:---|
 |email|
 |mobileSMS|
-|mobilePhone;|
+|mobilePhone|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -475,6 +497,11 @@ ms.locfileid: "61525738"
 |time|
 |deviceState|
 |клиент|
+|ipAddressSeenByAzureAD|
+|ipAddressSeenByResourceProvider|
+|unknownFutureValue|
+|servicePrincipals|
+|servicePrincipalRisk|
 
 ### <a name="conditionalaccessstatus-values"></a>значения conditionalAccessStatus
 
@@ -584,7 +611,7 @@ ms.locfileid: "61525738"
 |Member|
 |:---|
 |email|
-|mobilePhone;|
+|mobilePhone|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -604,12 +631,52 @@ ms.locfileid: "61525738"
 |mfaRegistered|
 |unknownFutureValue|
 
-### <a name="requirementprovider-values"></a>значения requirementProvider
+
+### <a name="signinidentifiertype-values"></a>значения signInIdentifierType 
 
 |Member|
 |:---|
-|Многофакторная проверка подлинности|
-|CA|
+|userPrincipalName|
+|phoneNumber|
+|proxyAddress|
+|qrCode|
+|onPremisesUserPrincipalName|
+|unknownFutureValue|
+
+
+### <a name="signinusertype-values"></a>signInUserType values 
+
+|Member|
+|:---|
+|участники|
+|гость|
+|unknownFutureValue|
+
+### <a name="requirementprovider-values"></a>значения requirementProvider 
+
+
+|Member|
+|:---|
+|пользователь|
+|запрос|
+|servicePrincipal|
+|v1ConditionalAccess|
+|multiConditionalAccess|
+|tenantSessionRiskPolicy|
+|accountCompromisePolicies|
+|v1ConditionalAccessDependency|
+|v1ConditionalAccessPolicyIdRequested|
+|mfaRegistrationRequiredByIdentityProtectionPolicy|
+|baselineProtection|
+|mfaRegistrationRequiredByBaselineProtection|
+|mfaRegistrationRequiredByMultiConditionalAccess|
+|enforcedForCspAdmins|
+|securityDefaults|
+|mfaRegistrationRequiredBySecurityDefaults|
+|proofUpCodeRequest|
+|crossTenantOutboundRule|
+|gpsLocationCondition|
+|riskBasedPolicy|
 |unknownFutureValue|
 
 
@@ -634,6 +701,8 @@ ms.locfileid: "61525738"
 |AdminConfirmedUserCompromised|
 |unknownFutureValue|
 
+
+<!-- maintenance comment: Do not delete enum delcaration for riskEventType until all properties of this type are marked as deleted. Dec 28, 2021: Pending eventTypes (in riskUserActivity) and riskType (in riskDetection)-->
 ### <a name="riskeventtype-values"></a>значения riskEventType
 
 |Member|
@@ -827,7 +896,7 @@ ms.locfileid: "61525738"
 
 |Member|
 |:---|
-|birthday;|
+|birthday|
 |свадьба|
 |unknownFutureValue|
 
@@ -898,7 +967,7 @@ ms.locfileid: "61525738"
 |Member|
 |:---|
 |email|
-|mobilePhone;|
+|mobilePhone|
 |OfficePhone|
 |securityQuestion|
 |appNotification|
@@ -1438,7 +1507,7 @@ ms.locfileid: "61525738"
 ### <a name="onenotesourceservice-values"></a>значения onenoteSourceService
 | Member
 |:---------------------
-| Unknown
+| Неизвестно
 | OneDrive
 | OneDriveForBusiness
 | OnPremOneDriveForBusiness
@@ -1821,6 +1890,7 @@ Enum для серьезности оповещений.
 |AzureAD|
 |ADFederationServices|
 |unknownFutureValue|
+|AzureADBackupAuth|
 
 ### <a name="riskdetectiontimingtype-values"></a>значения riskDetectionTimingType
 
@@ -1966,6 +2036,45 @@ Enum для серьезности оповещений.
 |passwordChange|
 |unknownFutureValue|
 
+### <a name="conditionalaccessrule-values"></a>значения conditionalAccessRule 
+
+|Member|
+|:---|
+|allApps|
+|firstPartyApps|
+|office365|
+|appId|
+|acr|
+|appFilter|
+|allUsers|
+|гость|
+|groupId|
+|roleId|
+|userId|
+|allDevicePlatforms|
+|devicePlatform|
+|allLocations|
+|insideCorpnet|
+|allTrustedLocations|
+|locationId|
+|allDevices|
+|deviceFilter|
+|deviceState|
+|unknownFutureValue|
+|deviceFilterIncludeRuleNotMatched|
+|allDeviceStates|
+
+### <a name="signinaccesstype-values"></a>значения signInAccessType 
+
+|Member|
+|:---|
+|Нет|
+|b2bCollaboration|
+|b2bDirectConnect|
+|MicrosoftSupport|
+|serviceProvider|
+|unknownFutureValue|
+
 ### <a name="signinfrequencytype-values"></a>значения signinFrequencyType
 
 | Member       |
@@ -2006,13 +2115,13 @@ Enum для серьезности оповещений.
 |:---|:---|
 |Нет|0|
 |High (Высокий)|1|
-|Низкая|2|
+|Низкие|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>значения threatAssessmentContentType
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| mail;   | 1     | Угроза почты.            |
+| почта;   | 1     | Угроза почты.            |
 | url    | 2     | УГРОЗА URL-адреса.             |
 | file   | 3     | Угроза файла вложения. |
 
@@ -2171,7 +2280,7 @@ Enum для серьезности оповещений.
 |:----------------------|:------|:-------------------------------------------------------------------|
 | builtIn               | 1     | Этот тип атрибута потока пользователей обозначает, что он был создан системой |
 | настраиваемый                | 2     | Этот тип атрибута потока пользователей обозначает, что он был создан пользователем   |
-|обязательно|3||
+|Обязательный|3||
 | unknownFutureValue    | 4     | Член-часовой.                                                 |
 
 ### <a name="permissionclassificationtype-values"></a>значения permissionClassificationType

@@ -1,16 +1,16 @@
 ---
-title: тип ресурса applicationSignInDetailedSummary — API Microsoft Graph
+title: тип ресурса applicationSignInDetailedSummary — API Graph Microsoft
 description: Представляет подробную сводку регистрации приложения.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: sureshja
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 8f53d1ebce8a7a578c067354ba7f89c6c27ea947
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: b929e35904af0ddec506a8b1b47e502456adb3c6
+ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50720832"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61647171"
 ---
 # <a name="applicationsignindetailedsummary-resource-type"></a>тип ресурса applicationSignInDetailedSummary
 
@@ -24,6 +24,7 @@ ms.locfileid: "50720832"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
+| [List applicationSignInDetailedSummary](../api/reportroot-list-applicationsignindetailedsummary.md) | [коллекция applicationSignInDetailedSummary](applicationsignindetailedsummary.md) | Получение **объектов applicationSignInDetailedSummary.** |
 | [Получение applicationSignInDetailedSummary](../api/applicationsignindetailedsummary-get.md) | [applicationSignInDetailedSummary](applicationsignindetailedsummary.md) | Ознакомьтесь с свойствами и отношениями **объекта applicationSignInDetailedSummary.** |
 
 ## <a name="properties"></a>Свойства
@@ -36,7 +37,7 @@ ms.locfileid: "50720832"
 |signInCount|Int64|Количество входов, сделанных приложением.|
 |status|[signInStatus](signinstatus.md)|Сведения о состоянии регистрации.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

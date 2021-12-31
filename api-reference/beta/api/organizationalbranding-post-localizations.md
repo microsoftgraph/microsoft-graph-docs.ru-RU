@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 54b515c113d768528357b46661c24538e9acc8ab
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: bcc093ed5487a2e2aeabcb230452b80a072411bd
+ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61343727"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61647037"
 ---
 # <a name="create-organizationalbrandinglocalization"></a>Создание organizationalBrandingLocalization
 Пространство имен: microsoft.graph
@@ -43,7 +43,7 @@ POST /organization/{organizationId}/branding/localizations
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -52,7 +52,7 @@ POST /organization/{organizationId}/branding/localizations
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| id | String | Идентификатор, который представляет локальный код, указанный в стандарте ISO 639-1, например `en-US` английский. Вы не можете создать брендинг по умолчанию, задав значение **id** типам String `0` или `default` .  <br/><br/>**ПРИМЕЧАНИЕ:** Несколько фирменных окей для одного локального уровня в настоящее время не поддерживаются. |
+| id | String | Идентификатор, который представляет указанный локальный код с использованием имен культуры. Имена культур следуют стандарту RFC 1766 в формате "languagecode2-country/regioncode2", где "languagecode2" — это код из двух букв более низкого уровня, полученный из ISO 639-1, а "country/regioncode2" — это код с двумя буквами верхнего уровня, полученный из ISO 3166. Например, американский английский язык `en-US` . Вы не можете создать брендинг по умолчанию, задав значение **id** типам String `0` или `default` .  <br/><br/>**ПРИМЕЧАНИЕ:** Несколько фирменных окей для одного локального уровня в настоящее время не поддерживаются. |
 
 ## <a name="response"></a>Отклик
 

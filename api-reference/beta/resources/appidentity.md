@@ -5,16 +5,18 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: identity-and-access-reports
 author: sureshja
-ms.openlocfilehash: 1a2314d76b1b51e0c1a1845f306b5d9a7e78caea
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7b1005b058508bdb128788836667c05dcc936dd6
+ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59057889"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61646981"
 ---
 # <a name="appidentity-resource-type"></a>Тип ресурса appIdentity
 
-Пространство имен: microsoft.graph указывает удостоверение приложения, которое выполнило действие или было изменено. Включает id приложения, имя, главный ИД службы и имя. Этот ресурс называется API [directoryAudit](../api/directoryaudit-get.md)
+Пространство имен: microsoft.graph
+
+Указывает удостоверение приложения, которое выполнило действие или было изменено. Этот ресурс называется API [directoryAudit.](../api/directoryaudit-get.md)
 
 
 ## <a name="properties"></a>Свойства

@@ -1,41 +1,43 @@
 ---
-title: Тип ресурса applicationSignInDetailedSummary
-description: Представляет сводку по входу в приложение.
-localization_priority: Normal
+title: тип ресурса applicationSignInDetailedSummary
+description: Представляет сводку регистрации приложения.
+ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: resourcePageType
-ms.openlocfilehash: 454c4e2e9e57b61194e6f3e6970e5db1ea414369
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 1c0f07f40ee2b03dd350ea918dc0b1fe43a1b1c5
+ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50137412"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61647143"
 ---
-# <a name="applicationsigninsummary-resource-type"></a>Тип ресурса applicationSignInSummary
+# <a name="applicationsigninsummary-resource-type"></a>тип ресурса applicationSignInSummary
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет сводку по входу в приложение.
+Представляет сводку регистрации приложения.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Получение applicationSignInSummary](../api/applicationsigninsummary-get.md) | [applicationSignInSummary](applicationsigninsummary.md) | Чтение свойств и связей объекта **applicationSignInSummary.** |
+| [getAzureADApplicationSignInSummary](../api/reportroot-getazureadapplicationsigninsummary.md) | [applicationSignInSummary](applicationsigninsummary.md) | Ознакомьтесь с свойствами и отношениями **объекта applicationSignInSummary.** |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|appDisplayName|String|Имя приложения, в которое вписались пользователи.|
-|appId|String|  ИД приложения, подписанного пользователем i nto.|
-|failedSignInCount|Int64|Количество неудачных входов в приложение.|
+|appDisplayName|String|Имя приложения, в которое пользователь подписался.|
+|failedSignInCount|Int64|Количество неудачных входов, сделанных приложением.|
 |successPercentage|Int32|Процент успешных входов, сделанных приложением.|
 |successfulSignInCount|Int64|Количество успешных входов, сделанных приложением.|
+<!--Hiding this because it's not in the metadata nor in public response objects
+|appId|String|  Identifier of the application that the user signed into.|
+-->
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

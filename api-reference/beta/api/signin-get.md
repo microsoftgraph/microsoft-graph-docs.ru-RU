@@ -5,12 +5,12 @@ description: Получите объект signIn, содержащий все �
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: 222cb54fbd9225db2d26385d19b3979477bcc394
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: 7a7b336a0c949141516e63e0e13bc13318ef70d8
+ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61321920"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61647150"
 ---
 # <a name="get-signin"></a>Получение объекта signIn
 
@@ -26,9 +26,9 @@ ms.locfileid: "61321920"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
+| Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-| Приложение | AuditLog.Read.All и Directory.Read.All | 
+| Для приложений | AuditLog.Read.All и Directory.Read.All | 
 
 > [!IMPORTANT]
 > Этот API имеет [известные](/graph//graph/known-issues#license-check-errors-for-azure-ad-activity-reports) проблемы и в настоящее время требует согласия на оба **auditLog.Read.All** и **Directory.Read.All** разрешений.
@@ -122,101 +122,96 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "66ea54eb-blah-4ee5-be62-ff5a759b0100",
-  "createdDateTime": "2020-03-13T19:15:41.6195833Z",
-  "userDisplayName": "Test contoso",
-  "userPrincipalName": "testaccount1@contoso.com",
-  "userId": "26be570a-1111-5555-b4e2-a37c6808512d",
-  "appId": "de8bc8b5-5555-6666-a8ad-b748da725064",
-  "appDisplayName": "Graph explorer",
-  "authenticationRequirement": "MultifactorAuthentication",
-  "ipAddress": "131.107.159.37",
-  "clientAppUsed": "Browser",
-  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36 Edg/80.0.361.66",
-  "correlationId": "d79f5bee-blah-4832-928f-3133e22ae912",
-  "conditionalAccessStatus": "notApplied",
-  "originalRequestId": "66ea54eb-blah-4ee5-be62-ff5a759b0100",
-  "isInteractive": true,
-  "tokenIssuerName": "",
-  "tokenIssuerType": "AzureAD",
-  "processingTimeInMilliseconds": 541,
-  "riskDetail": "none",
-  "riskLevelAggregated": "none",
-  "riskLevelDuringSignIn": "none",
-  "riskState": "none",
-  "riskEventTypes": [],
-  "riskEventTypes_v2": [],
-  "resourceDisplayName": "Microsoft Graph",
-  "resourceId": "00000003-0000-0000-c000-000000000000",
-  "authenticationMethodsUsed": [],
-  "alternateSignInName": "testaccount2@contoso.com",
-  "servicePrincipalName": null,
-  "servicePrincipalId": "",
-  "mfaDetail": null,
-  "status": {
-    "errorCode": 0,
-    "failureReason": null,
-    "additionalDetails": null
-  },
-  "deviceDetail": {
-    "deviceId": "",
-    "displayName": null,
-    "operatingSystem": "Windows 10",
-    "browser": "Edge 80.0.361",
-    "isCompliant": null,
-    "isManaged": null,
-    "trustType": null
-  },
-  "location": {
-    "city": "Redmond",
-    "state": "Washington",
-    "countryOrRegion": "US",
-    "geoCoordinates": {
-      "altitude": null,
-      "latitude": 47.68050003051758,
-      "longitude": -122.12094116210938
-    }
-  },
-  "appliedConditionalAccessPolicies": [
-    {
-      "id": "de7e60eb-ed89-4d73-8205-2227def6b7c9",
-      "displayName": "SharePoint limited access for guest workers",
-      "enforcedGrantControls": [],
-      "enforcedSessionControls": [],
-      "result": "notEnabled",
-      "conditionsSatisfied": "none",
-      "conditionsNotSatisfied": "none"
+  "id":"66ea54eb-blah-4ee5-be62-ff5a759b0100",
+  "createdDateTime":"2021-06-30T16:34:32Z",
+  "userDisplayName":"Test contoso",
+  "userPrincipalName":"testaccount1@contoso.com",
+  "userId":"26be570a-1111-5555-b4e2-a37c6808512d",
+  "appId":"c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+  "appDisplayName":"Azure Portal",
+  "authenticationProtocol": "oAuth2",
+  "incomingTokenType": "Primary Refresh Token",
+  "ipAddress":"131.107.159.37",
+  "clientAppUsed":"Browser",
+  "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 Edg/91.0.864.54",
+  "correlationId":"5d295068-919b-4017-85d8-44be2f5f5483",
+  "conditionalAccessStatus":"notApplied",
+  "originalRequestId":"7dccb0d7-1041-4d82-b785-d865272e1400",
+  "homeTenantId": "4f7a7bc2-28e2-46a3-b90e-5ade5bc90138",
+  "homeTenantName": "",
+  "isTenantRestricted": false,
+  "isInteractive":true,
+  "tokenIssuerName":"",
+  "tokenIssuerType":"AzureAD",
+  "processingTimeInMilliseconds":761,
+  "riskDetail":"none",
+  "riskLevelAggregated":"none",
+  "riskLevelDuringSignIn":"none",
+  "riskState":"none",
+  "riskEventTypes_v2":[],
+  "resourceDisplayName":"Windows Azure Service Management API",
+  "resourceId":"797f4846-ba00-4fd7-ba43-dac1f8f63013",
+  "uniqueTokenIdentifier": "ZTE0OTk3YTQtZjg5Mi00YjBiLWIwNTEtZmViZTA1YzJhNDli",
+  "resourceTenantId":"99081087-73c4-48d1-a112-f60ff75114f7",
+  "homeTenantId":"99081087-73c4-48d1-a112-f60ff75114f7",
+  "authenticationMethodsUsed":[],
+  "authenticationRequirement":"singleFactorAuthentication",
+  "signInIdentifier":"testaccount1@contoso.com",
+  "signInEventTypes":["interactiveUser"],
+  "servicePrincipalId":"",
+  "userType":"member",
+  "flaggedForReview":false,
+  "isTenantRestricted":false,
+  "autonomousSystemNumber":3598,
+  "crossTenantAccessType":"none",
+  "status":{
+      "errorCode":50126,
+      "failureReason":"Error validating credentials due to invalid username or password.",
+      "additionalDetails":"The user didn't enter the right credentials. \u00a0It's expected to see some number of these errors in your logs due to users making mistakes."
     },
-    {
-      "id": "6701123a-b4c6-48af-8565-565c8bf7cabc",
-      "displayName": "Medium signin risk block",
-      "enforcedGrantControls": [],
-      "enforcedSessionControls": [],
-      "result": "notEnabled",
-      "conditionsSatisfied": "none",
-      "conditionsNotSatisfied": "none"
+  "deviceDetail":{
+      "deviceId":"",
+      "displayName":"",
+      "operatingSystem":"Windows 10",
+      "browser":"Edge 91.0.864",
+      "isCompliant":false,
+      "isManaged":false,
+      "trustType":""
     },
-  ],
-  "authenticationProcessingDetails": [],
-  "networkLocationDetails": [],
-  "authenticationDetails": [
-    {
-      "authenticationStepDateTime": "2018-11-06T18:48:03.8313489Z",
-      "authenticationMethod": "FIDO2",
-      "authenticationMethodDetail": "1G54395783",
-      "succeeded": true,
-      "authenticationStepResultDetail": "methodSucceeded",
-      "authenticationStepRequirement": "Primary authentication"
+  "location":{
+      "city":"Redmond",
+      "state":"Washington",
+      "countryOrRegion":"US",
+      "geoCoordinates":{
+        "altitude":null,
+        "latitude":47.6807,
+        "longitude":-122.1231
+      }
     },
-    {
-      "authenticationStepDateTime": "2018-11-06T18:48:12.94725647Z",
-      "authenticationMethod": "Claim in access token",
-      "authenticationMethodDetail": null,
-      "succeeded": true,
-      "authenticationStepResultDetail": "methodSucceeded",
-      "authenticationStepRequirement": "MFA"
-    }
-  ],
-  "authenticationRequirementPolicies": []
+  "appliedConditionalAccessPolicies":[],
+  "authenticationProcessingDetails":[
+      {
+        "key":"Login Hint Present",
+        "value":"True"
+      }
+    ],
+  "networkLocationDetails":[
+      {
+        "networkType":"namedNetwork",
+        "networkNames":["North America"]
+      }
+    ],
+  "authenticationDetails":[
+      {
+        "authenticationStepDateTime":"2021-06-30T16:34:32Z",
+        "authenticationMethod":"Password",
+        "authenticationMethodDetail":"Password in the cloud",
+        "succeeded":false,
+        "authenticationStepResultDetail":"Invalid username or password or Invalid on-premise username or password.",
+        "authenticationStepRequirement":"Primary authentication"
+      }
+    ],
+  "authenticationRequirementPolicies":[],
+  "sessionLifetimePolicies":[]
 }
 ```

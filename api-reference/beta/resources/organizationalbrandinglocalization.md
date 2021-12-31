@@ -5,12 +5,12 @@ author: AlexanderMars
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 132a9dd8f59a0b73c29ca33ad82339123ec11e22
-ms.sourcegitcommit: 30fca91ed203a9ab7b0562833ce0c20c7fb7b7b1
+ms.openlocfilehash: abe625d5239ff1030714a7420471dbaf3daed873
+ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59932055"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61647121"
 ---
 # <a name="organizationalbrandinglocalization-resource-type"></a>тип ресурса organizationalBrandingLocalization
 
@@ -28,8 +28,8 @@ ms.locfileid: "59932055"
 |[Списки организационныхбрандингЛокализации](../api/organizationalbranding-list-localizations.md)|Коллекция [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md)|Получите список объектов [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) и их свойств.|
 |[Создание organizationalBrandingLocalization](../api/organizationalbranding-post-localizations.md)|[organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md)|Создайте новый [объект organizationalBrandingLocalization.](../resources/organizationalbrandinglocalization.md)|
 |[Получение organizationalBrandingLocalization](../api/organizationalbrandinglocalization-get.md)|[organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md)|Ознакомьтесь с свойствами и отношениями объекта [организационнойbrandingLocalization.](../resources/organizationalbrandinglocalization.md)|
-|[Обновление организационнойБрандингЛокализации](../api/organizationalbrandinglocalization-update.md)| None; |Обновление свойств объекта [organizationalBrandingLocalization.](../resources/organizationalbrandinglocalization.md)|
-|[Удаление организационнойbrandingLocalization](../api/organizationalbrandinglocalization-delete.md)|None;|Удаляет объект [organizationalBrandingLocalization.](../resources/organizationalbrandinglocalization.md)|
+|[Обновление organizationalBrandingLocalization](../api/organizationalbrandinglocalization-update.md)| Нет |Обновление свойств объекта [organizationalBrandingLocalization.](../resources/organizationalbrandinglocalization.md)|
+|[Удаление organizationalBrandingLocalization](../api/organizationalbrandinglocalization-delete.md)|Нет|Удаляет объект [organizationalBrandingLocalization.](../resources/organizationalbrandinglocalization.md)|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
@@ -40,7 +40,7 @@ ms.locfileid: "59932055"
 | bannerLogo | Stream | Баннерная версия логотипа вашей компании, которая отображается на странице входного знака. Допустимые типы PNG или JPEG не более 36 × 245 пикселей. Рекомендуется использовать прозрачное изображение без обивки вокруг логотипа. Наследуется [от organizationalBrandingProperties](../resources/organizationalbrandingproperties.md). |
 | bannerLogoRelativeUrl | String | Относительный URL-адрес свойства **bannerLogo,** который сочетается с базовым URL-адресом CDN из **cdnList,** чтобы предоставить только для чтения версию, обслуживаемую CDN. Только для чтения. Наследуется [от organizationalBrandingProperties](../resources/organizationalbrandingproperties.md). |
 | cdnList | Коллекция String | Список базовых URL-адресов для всех CDN поставщиков, обслуживающих активы текущего ресурса. Несколько CDN одновременно используются для обеспечения высокой доступности запросов на чтение. Только для чтения. Наследуется [от organizationalBrandingProperties](../resources/organizationalbrandingproperties.md). |
-| id | String | Идентификатор, который представляет локальный код, указанный в стандарте ISO 639-1, например `en-US` английский. **Id** для по умолчанию /branding всегда типы `0` строки или `default` . Только для чтения. <br/><br/>**ПРИМЕЧАНИЕ:** Несколько фирменных окей для одного локального уровня в настоящее время не поддерживаются. Наследуется [от organizationalBrandingProperties](../resources/organizationalbrandingproperties.md). |
+| id | String | Идентификатор, который представляет указанный локальный код с использованием имен культуры. Имена культур следуют стандарту RFC 1766 в формате "languagecode2-country/regioncode2", где "languagecode2" — это код из двух букв более низкого уровня, полученный из ISO 639-1, а "country/regioncode2" — это код с двумя буквами верхнего уровня, полученный из ISO 3166. Например, американский английский язык `en-US` . **Id** для по умолчанию /branding всегда типы `0` строки или `default` . Только для чтения. <br/><br/>**ПРИМЕЧАНИЕ:** Несколько фирменных окей для одного локального уровня в настоящее время не поддерживаются. Наследуется [от organizationalBrandingProperties](../resources/organizationalbrandingproperties.md). |
 | signInPageText | String | Текст, который отображается в нижней части окна для регистрации. С помощью этого можно сообщить дополнительные сведения, например номер телефона в службу поддержки или юридический отчет. Этот текст должен быть unicode и не превышать 1024 символов. Наследуется [от organizationalBrandingProperties](../resources/organizationalbrandingproperties.md). |
 | squareLogo | Stream | Квадратная версия логотипа вашей компании, которая отображается Windows 10 вне окна (OOBE) и когда Windows автопилот включен для развертывания. Разрешены типы PNG или JPEG размером не более 240 x 240 пикселей и размером не более 10 КБ. Рекомендуется использовать прозрачное изображение без обивки вокруг логотипа. Наследуется [от organizationalBrandingProperties](../resources/organizationalbrandingproperties.md).|
 | squareLogoRelativeUrl | String | Относительный URL-адрес для свойства **squareLogo,** который CDN базовый URL-адрес **из cdnList** для предоставления версии, обслуживаемой CDN. Только для чтения. Наследуется [от organizationalBrandingProperties](../resources/organizationalbrandingproperties.md). |
