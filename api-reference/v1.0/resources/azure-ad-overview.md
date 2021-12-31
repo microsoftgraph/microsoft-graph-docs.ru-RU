@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: dkershaw10
 ms.prod: identity-and-access
 doc_type: conceptualPageType
-ms.openlocfilehash: d914426725f32799cda2ab884fe531d47db5b940
-ms.sourcegitcommit: 7ce66321abb6a2cdca8685d3ce0a004c376ae33b
+ms.openlocfilehash: fd58ab506d7fe0df4c1802e004c51a25de52bdbd
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59777515"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650519"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Работа с ресурсами Azure Active Directory в Microsoft Graph
 
@@ -49,7 +49,7 @@ Microsoft Graph предоставляет доступ к ресурсам [Azu
 | Приглашайте внешних пользователей в организацию. | [invitation](../resources/invitation.md) | [Что такое служба совместной работы Azure AD B2B?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) |
 | Управляйте фирменной символикой для интерфейса входа организации. | [organizationalbranding](../resources/organizationalbranding.md) | [Добавление фирменной символики на страницу входа в Azure Active Directory вашей организации](/azure/active-directory/fundamentals/customize-branding)|
 | **Запросы согласия** | | |
-| Управление рабочим процессом запроса согласия для пользователей, пытающихся получить доступ к приложениям, для которых требуется авторизация администратора.  | [API запросов согласия](../resources/consentrequests-root.md) |[Настройка рабочего процесса согласия администратора](/azure/active-directory/manage-apps/configure-admin-consent-workflow) |
+| Управление рабочим процессом запроса согласия для пользователей, пытающихся получить доступ к приложениям, для которых требуется авторизация администратора.  | [API запросов согласия](../resources/consentrequests-overview.md) |[Настройка рабочего процесса согласия администратора](/azure/active-directory/manage-apps/configure-admin-consent-workflow) |
 
 ## <a name="whats-new"></a>Новые возможности
 Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.

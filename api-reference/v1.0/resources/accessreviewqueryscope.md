@@ -5,25 +5,25 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: a066bee441b23b581368c535999aae2c5da5b79e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f908b08bcff9e0148141fef2c4313f9b9063fe6d
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59072577"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651416"
 ---
 # <a name="accessreviewqueryscope-resource-type"></a>тип ресурса accessReviewQueryScope
 
 Пространство имен: microsoft.graph
 
-Объект accessReviewQueryScope определяет то, что просматривается в [обзоре доступа.](../resources/accessreviewsv2-root.md) Чтобы просмотреть обзор доступа для неактивных пользователей, см. [в примере accessReviewInactiveUserQueryScope.](../resources/accessreviewinactiveusersqueryscope.md) 
+Объект accessReviewQueryScope определяет то, что просматривается в [обзоре доступа.](../resources/accessreviewsv2-overview.md) Чтобы просмотреть обзор доступа для неактивных пользователей, см. [в примере accessReviewInactiveUserQueryScope.](../resources/accessreviewinactiveusersqueryscope.md) 
 
 Наследует [от accessReviewScope](../resources/accessreviewscope.md).
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Запрос|String|Запрос, представляющий то, что будет рассмотрено в обзоре доступа.|
+|Запрос|Строка|Запрос, представляющий то, что будет рассмотрено в обзоре доступа.|
 |queryRoot|Строка|В сценарии, в котором рецензенты должны быть указаны динамически, это свойство используется для указать относительный источник запроса. Это свойство необходимо только в том случае, если указан относительный запрос. Например, `./manager`.|
 |queryType|Строка|Указывает тип запроса. Типы включают `MicrosoftGraph` и `ARM` .|
 

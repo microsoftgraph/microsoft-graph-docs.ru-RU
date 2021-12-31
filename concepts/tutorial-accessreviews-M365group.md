@@ -4,12 +4,12 @@ description: Используйте API обзоров доступа, чтоб�
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: 7aab1a64f4bcd3d5f58a3a14e872098047cb3c00
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 4273c4d80d80c002265833fe14ba4492e9013fb4
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126515"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651430"
 ---
 # <a name="tutorial-use-the-access-reviews-api-to-review-guest-access-to-your-microsoft-365-groups"></a>Руководство. Используйте API обзоров доступа, чтобы просмотреть гостевой доступ к группам Microsoft 365.
 
@@ -18,7 +18,7 @@ ms.locfileid: "59126515"
 >[!NOTE]
 >Объекты отклика, показанные в этом руководстве, могут быть сокращены для чтения.
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Для завершения этого руководства необходимы следующие ресурсы и привилегии:
 
@@ -579,13 +579,13 @@ Content-type: text/plain
 
 ## <a name="see-also"></a>См. также
 
-+ [Ссылка на API обзоров доступа](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
++ [Ссылка на API обзоров доступа](/graph/api/resources/accessreviewsv2-overview?view=graph-rest-beta&preserve-view=true)
 + [Настройка области определения обзора доступа с помощью API microsoft Graph](/graph/accessreviews-scope-concept)
 + [Назначение рецензентов определению обзора доступа с помощью API Graph Microsoft](/graph/accessreviews-reviewers-concept)
 + [Обзор обзоров доступа и требования к лицензиям](/azure/active-directory/governance/access-reviews-overview)
 + [Создание обзора доступа групп & приложений](/azure/active-directory/governance/create-access-review)
 + [Приглашение и добавление гостевых пользователей в организацию](/graph/api/resources/invitation?view=graph-rest-beta&preserve-view=true)
-+ [Ссылка на API обзоров доступа](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
++ [Ссылка на API обзоров доступа](/graph/api/resources/accessreviewsv2-overview?view=graph-rest-beta&preserve-view=true)
 + [Создание accessReviewScheduleDefinition](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true)
 + [List accessReviewInstance](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true)
 + [List accessReviewInstanceDecisionItem](/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-beta&preserve-view=true)

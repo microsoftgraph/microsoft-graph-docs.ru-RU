@@ -5,19 +5,19 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 0d0b3cd342f5eaf7d017a3beb5bc34a9a634834e
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: d11fbd276e0995177ec6d56f795ff9fc5921bc66
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61337939"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651212"
 ---
 # <a name="create-accesspackageassignmentrequest"></a>Создание accessPackageAssignmentRequest
 
 Пространство имен: microsoft.graph
 
 
-В [Azure AD Entitlement Management](../resources/entitlementmanagement-root.md)создайте новый объект [accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)
+В [Azure AD Entitlement Management](../resources/entitlementmanagement-overview.md)создайте новый объект [accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)
 
 
 ## <a name="permissions"></a>Разрешения
@@ -28,7 +28,7 @@ ms.locfileid: "61337939"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | EntitlementManagement.ReadWrite.All |
+| Для приложений                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ POST /identityGovernance/entitlementManagement/assignmentRequests
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Носитель \{токен\}. Обязательный. |
+| Authorization | Носитель \{токен\}. Обязательный. |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса

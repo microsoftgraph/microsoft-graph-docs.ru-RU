@@ -3,12 +3,12 @@ title: Обзор предыдущих выпусков Microsoft Graph
 description: Новые возможности в предыдущих выпусках Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 5c3fb965808cc899d40f39cab3082c66a14d5b72
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: e46c1be767915769fde330b1bf58a359d3ed1a69
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424590"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650561"
 ---
 # <a name="highlights-of-earlier-releases"></a>Обзор предыдущих выпусков
 
@@ -301,7 +301,7 @@ As part of [privacy management in Microsoft 365](/privacy/solutions/privacymanag
 API-интерфейсы для [службы заданий](/graph/api/resources/educationassignment) в образовании теперь общедоступны. 
 
 ### <a name="identity-and-access--governance"></a>Удостоверения и доступ | Управление
-GA интерфейса API [просмотра доступа](/graph/api/resources/accessreviewsv2-root). Ознакомьтесь с [обзором](accessreviews-overview.md) и инструкциями по [просмотру доступа в группы безопасности](tutorial-accessreviews-securitygroup.md) и [доступа в группы Microsoft 365](tutorial-accessreviews-m365group.md). Обратите внимание на то, что поддержка [предыдущего API просмотра доступа](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true) прекращается, и он перестанет возвращать данные в мае 2023 г.
+GA интерфейса API [просмотра доступа](/graph/api/resources/accessreviewsv2-overview). Ознакомьтесь с [обзором](accessreviews-overview.md) и инструкциями по [просмотру доступа в группы безопасности](tutorial-accessreviews-securitygroup.md) и [доступа в группы Microsoft 365](tutorial-accessreviews-m365group.md). Обратите внимание на то, что поддержка [предыдущего API просмотра доступа](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true) прекращается, и он перестанет возвращать данные в мае 2023 г.
 
 
 ## <a name="june-2021-new-in-preview-only"></a>Июнь 2021 года: новые возможности только в предварительной версии
@@ -322,7 +322,7 @@ GA интерфейса API [просмотра доступа](/graph/api/resou
 Разрешение назначения роли Azure AD [группе](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) при ее создании путем настройки свойства **isAssignableToRole**. Если это свойство настроено, оно обеспечивает удобное управление ролями пользователей. Вместо назначения роли каждому пользователю соответствующим пользователям разрешается присоединиться к группе, и назначение роли группе будет по умолчанию означать присвоение этой роли каждому новому пользователю в ней. 
 
 ### <a name="identity-and-access--governance"></a>Удостоверения и доступ | Управление
-Настройка уведомлений пользователей или участников группы о ходе выполнения [проверки доступа](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) с помощью свойства **additionalNotificationRecipients** [определения расписания](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true).
+Настройка уведомлений пользователей или участников группы о ходе выполнения [проверки доступа](/graph/api/resources/accessreviewsv2-overview?view=graph-rest-beta&preserve-view=true) с помощью свойства **additionalNotificationRecipients** [определения расписания](/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверения и доступ | Удостоверения и вход
 Добавление фильтра для динамического включения и исключения устройств с использованием свойства **deviceFilter** ресурса [conditionalAccessDevices](/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta&preserve-view=true).
@@ -517,7 +517,7 @@ GA интерфейса API [просмотра доступа](/graph/api/resou
 Обновления Intune за [март](https://developer.microsoft.com/graph/changelog/?from=2021-03-01&to=2021-03-31&filterBy=Corporate%20management) для бета-версии.
 
 ### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
-Применение новой модели [проверок доступа](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) для участия в группах и всех других поддерживаемых типов ресурсов. Отказ от [устаревшей модели проверки доступа](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true).
+Применение новой модели [проверок доступа](/graph/api/resources/accessreviewsv2-overview?view=graph-rest-beta&preserve-view=true) для участия в группах и всех других поддерживаемых типов ресурсов. Отказ от [устаревшей модели проверки доступа](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="sites-and-lists"></a>Сайты и списки
 - Поддержка определенного типа контента или шаблона для документов или наборов документов в конкретных семействах веб-сайтов с помощью набора новых свойств и методов объекта [contentType](/graph/api/resources/contentType?view=graph-rest-beta&preserve-view=true). К методам относятся следующие:
@@ -685,7 +685,7 @@ GA интерфейса API [просмотра доступа](/graph/api/resou
 Получение или настройка метаданных версии и создания для [соглашения](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true) [об условиях использования](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true), [файла соглашения](/graph/api/resources/agreementfile?view=graph-rest-beta&preserve-view=true) и отношения [agreementfilelocalization](/graph/api/resources/agreementfilelocalization?view=graph-rest-beta&preserve-view=true) в Azure AD.
 
 ### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
-В рамках [управления правами](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta&preserve-view=true) Azure Active Directory, когда пользователи хотят получить доступ к группам или приложениям либо сайты SharePoint Online запрашивают назначение для [пакета доступа](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true), они теперь могут отвечать на [вопросы](/graph/api/resources/accesspackagequestion?view=graph-rest-beta&preserve-view=true), представленные [локализованном содержимом](/graph/api/resources/accesspackagelocalizedcontent?view=graph-rest-beta&preserve-view=true) [запросa на назначение пакета доступа](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true).
+В рамках [управления правами](/graph/api/resources/entitlementmanagement-overview?view=graph-rest-beta&preserve-view=true) Azure Active Directory, когда пользователи хотят получить доступ к группам или приложениям либо сайты SharePoint Online запрашивают назначение для [пакета доступа](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true), они теперь могут отвечать на [вопросы](/graph/api/resources/accesspackagequestion?view=graph-rest-beta&preserve-view=true), представленные [локализованном содержимом](/graph/api/resources/accesspackagelocalizedcontent?view=graph-rest-beta&preserve-view=true) [запросa на назначение пакета доступа](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
 - Администраторы могут связывать пользовательские потоки с приложениями, общий доступ к которым предоставлен внешним пользователям, и включить [самостоятельную регистрацию](/azure/active-directory/external-identities/self-service-sign-up-overview) в этих приложениях. Они могут настраивать пользовательские потоки самостоятельной регистрации и создавать персонализированные интерфейсы регистрации. В частности, они могут создать [прослушивателя для события начала регистрации, чтобы вызывать настраиваемый пользовательский поток](/graph/api/resources/invokeuserflowlistener?view=graph-rest-beta&preserve-view=true). После связи приложения с пользовательским потоком пользователи, переходящие в это приложение, смогут запускать поток регистрации, предоставляющий гостевую учетную запись.
@@ -754,7 +754,7 @@ GA интерфейса API [просмотра доступа](/graph/api/resou
 - Настройка внешнего вида и удобства использования экранов входа в Azure Active Directory посредством [свойств бренда организации](/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta&preserve-view=true). Организации могут выполнять настройку на основе региональных параметров для отдельных пользователей.
 
 ### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
-Дебютное представление интерфейса [API проверки доступа в целях предоставления членства в группе](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) для регулярной проверки доступа пользователей. Интерфейс позволяет обеспечивать постоянный доступ только нужным пользователям и эффективно управлять членством в группе.
+Дебютное представление интерфейса [API проверки доступа в целях предоставления членства в группе](/graph/api/resources/accessreviewsv2-overview?view=graph-rest-beta&preserve-view=true) для регулярной проверки доступа пользователей. Интерфейс позволяет обеспечивать постоянный доступ только нужным пользователям и эффективно управлять членством в группе.
 
 ### <a name="search"></a>Поиск
 Вы можете объединять числовые или строковые результаты поиска, импортированные [соединителями Microsoft Graph](/microsoftsearch/connectors-overview), которые настроены в качестве уточняемых в [схеме](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true). Ознакомьтесь с дополнительными сведениями об [уточнении результатов поиска с помощью агрегирования](search-concept-aggregation.md).
@@ -947,7 +947,7 @@ GA интерфейса API [просмотра доступа](/graph/api/resou
 ### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
 - Настройка [условий соглашения об использовании](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true) для поддержки срока действия и периодичности соглашения с обязательным принятием пользователем соглашения на отдельных устройствах или повторным принятием соглашения с установленной периодичностью. 
 - Используйте свойство **file** для перехода к [настраиваемому соглашению](/graph/api/resources/agreementfile?view=graph-rest-beta&preserve-view=true) условий. Не используйте **файлы** свойства.
-- Добавление, удаление и перечисление внутренних или внешних кураторов, которые могут утверждать запросы от [подключенной организации](/graph/api/resources/connectedorganization?view=graph-rest-beta&preserve-view=true) на доступ к группе, приложению или сайту SharePoint Online. Дополнительную информацию см. в разделе [Управление правами](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta&preserve-view=true).
+- Добавление, удаление и перечисление внутренних или внешних кураторов, которые могут утверждать запросы от [подключенной организации](/graph/api/resources/connectedorganization?view=graph-rest-beta&preserve-view=true) на доступ к группе, приложению или сайту SharePoint Online. Дополнительную информацию см. в разделе [Управление правами](/graph/api/resources/entitlementmanagement-overview?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
 - Разрешите дальнейшую настройку [политики авторизации](/graph/api/resources/authorizationpolicy?view=graph-rest-beta&preserve-view=true) для клиента, например разрешите [роли пользователя по умолчанию](/graph/api/resources/defaultuserrolepermissions?view=graph-rest-beta&preserve-view=true) создавать приложения или группы безопасности или читать других пользователей, разрешите пользователям возможность подписываться на подписки через электронную почту или присоединяться к клиенту через проверку электронной почты, а также предоставьте пользователям возможность самостоятельного сброса пароля.
@@ -1444,7 +1444,7 @@ API аналитики стал общедоступным. Используйт
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ 
 - Исправлено поведение отношений **appRoleAssignments** и **appRoleAssignedTo** в [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true).
-- Используйте [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta&preserve-view=true) в [функции управления правами в Azure AD](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta&preserve-view=true) для запроса добавления ресурса к [каталогу](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true), чтобы роли этого ресурса можно было использовать в [пакете для доступа](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true).
+- Используйте [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta&preserve-view=true) в [функции управления правами в Azure AD](/graph/api/resources/entitlementmanagement-overview?view=graph-rest-beta&preserve-view=true) для запроса добавления ресурса к [каталогу](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true), чтобы роли этого ресурса можно было использовать в [пакете для доступа](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true).
 - Используйте [API оценки угроз](/graph/api/resources/threatassessment-api-overview?view=graph-rest-beta&preserve-view=true), чтобы дать администраторам возможность сообщать о подозрительной почте, URL-адресах фишинга, вложениях электронной почты и других файлах. Вывод, сделанный при сканировании потока, может побудить их изменить политику организации соответствующим образом.
 
 ### <a name="teamwork"></a>Командная работа
@@ -1565,7 +1565,7 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 
 ### <a name="identity-and-access"></a>Идентификация и доступ
 - Использование [политик условного доступа](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta&preserve-view=true) для настройки правил доступа для организации. Эти правила учитывают сигналы о пользователях или об удостоверениях устройств, включая членство пользователей или групп, расположение IP-адреса, а также поведение, включая попытки доступа к определенным приложениям и опасное поведение при входе.
-- [Управление правами](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta&preserve-view=true) можно использовать для управления доступом к группам, приложениям и сайтам SharePoint Online для пользователей внутри организации и вне ее.
+- [Управление правами](/graph/api/resources/entitlementmanagement-overview?view=graph-rest-beta&preserve-view=true) можно использовать для управления доступом к группам, приложениям и сайтам SharePoint Online для пользователей внутри организации и вне ее.
 - Добавление и удаление [учетных данных с паролем](/graph/api/resources/passwordcredential?view=graph-rest-beta&preserve-view=true) для [приложений](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) и [субъектов-служб](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true).
 - Управление [ключами политики инфраструктуры доверия](/graph/api/resources/trustframeworkkeyset?view=graph-rest-beta&preserve-view=true) Azure AD B2C.
 - Можно определить политики [пользовательского процесса](/graph/api/resources/identityuserflow?view=graph-rest-beta&preserve-view=true) Azure AD B2C для входа, регистрации, объединенной процедуры регистрации и входа, сброса пароля и обновления профиля.

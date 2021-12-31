@@ -1,16 +1,16 @@
 ---
 title: тип ресурсов accessPackageSubject
 description: В управлении правами Azure AD субъект назначения пакета доступа.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 0adfca021ec463029a4b35c047ac85f8ce52921b
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 5092494b1c5f496a1ee3abf76800dbb8a05f49ff
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467066"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651184"
 ---
 # <a name="accesspackagesubject-resource-type"></a>тип ресурсов accessPackageSubject
 
@@ -18,21 +18,21 @@ ms.locfileid: "53467066"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В управлении правами [Azure AD](entitlementmanagement-root.md)субъект пакета доступа — это пользователь, руководитель службы или другая сущность, которую можно настроить для запроса или присвоения пакета доступа.  Он может представлять запросителя из связанной организации, который еще не находится в клиенте.
+В управлении правами [Azure AD](entitlementmanagement-overview.md)субъект пакета доступа — это пользователь, руководитель службы или другая сущность, которую можно настроить для запроса или присвоения пакета доступа.  Он может представлять запросителя из связанной организации, который еще не находится в клиенте.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|String|Отображение имени субъекта.|
+|displayName|Строка|Отображение имени субъекта.|
 |email|String|Адрес электронной почты субъекта.|
 |id|String| Только для чтения.|
 |objectId|String|Идентификатор объекта субъекта. `null` если субъект еще не является пользователем в клиенте.|
 |principalName|String|Основное имя, если известно, субъекта.|
-|type|String|Тип ресурса субъекта.|
-|connectedOrganizationId|String|Идентификатор связанной организации субъекта.|
+|type|Строка|Тип ресурса субъекта.|
+|connectedOrganizationId|Строка|Идентификатор связанной организации субъекта.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|

@@ -2,15 +2,15 @@
 title: тип ресурса appConsentRequest
 description: Запрос, представляюща коллекцию объектов userConsentRequest для определенного приложения.
 author: psignoret
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d9c01fd4e752bca0fe9518553f52312e523da3a3
-ms.sourcegitcommit: ad1e4d758d4fe6025987c1c3528ce644edb27062
+ms.openlocfilehash: 35372f06ae704136d81333bd36134f26aa1c1827
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697903"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61649784"
 ---
 # <a name="appconsentrequest-resource-type"></a>тип ресурса appConsentRequest
 
@@ -23,7 +23,7 @@ ms.locfileid: "51697903"
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список appConsentRequests](../api/appconsentrequest-list.md)|[коллекция appConsentRequest](../resources/appconsentrequest.md)|Извлечение коллекции [объектов appConsentRequest](appconsentrequest.md) и их свойств.|
+|[Список appConsentRequests](../api/appconsentapprovalroute-list-appconsentrequests.md)|[коллекция appConsentRequest](../resources/appconsentrequest.md)|Извлечение коллекции [объектов appConsentRequest](appconsentrequest.md) и их свойств.|
 |[Get appConsentRequest](../api/appconsentrequest-get.md)|[appConsentRequest](../resources/appconsentrequest.md)|Ознакомьтесь с свойствами и отношениями [объекта appConsentRequest.](../resources/appconsentrequest.md)|
 |[filterByCurrentUser](../api/appconsentrequest-filterByCurrentUser.md)|[appConsentRequest](../resources/appconsentrequest.md)|Ознакомьтесь с свойствами объектов [appConsentRequest,](../resources/appconsentrequest.md) для которых текущий пользователь является рецензентом, и состояние запроса на согласие пользователя `InProgress` .|
 

@@ -4,12 +4,12 @@ description: Описывает, как перенести приложения 
 author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: 15158d916166f26594c13c5dfc48942cef473c91
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 100fa23b9fdd7b82e201ed2fc6139f62ca93f74c
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61077609"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651283"
 ---
 # <a name="migrate-azure-ad-graph-apps-to-microsoft-graph"></a>Перенос приложений Azure AD Graph в Microsoft Graph
 
@@ -35,7 +35,7 @@ Microsoft Graph также более безопасна и устойчива, 
 - Расширенные функции управления лицензией, включая [групповое лицензирование.](/graph/api/group-assignlicense)
 - Функции управления удостоверением, такие как:
   - [Привилегированное управление удостоверениями](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta&preserve-view=true) (PIM) для повышения пользователей до привилегированных ролей только при необходимости и в течение ограниченного периода времени.
-  - [Доступ к](/graph/api/resources/accessreviewsv2-root) отзывам о разовом или повторяющихся обзорах доступа для проверки прав доступа пользователя.
+  - [Доступ к](/graph/api/resources/accessreviewsv2-overview) отзывам о разовом или повторяющихся обзорах доступа для проверки прав доступа пользователя.
   - [Условия использования, позволяющие](/graph/api/resources/agreement) организациям представлять сведения о юридических требованиях или требованиях соответствия требованиям, например уведомления об отказе от ответственности.
 - Функции безопасности, такие как:
   - [События риска удостоверения](/graph/api/resources/riskdetection).

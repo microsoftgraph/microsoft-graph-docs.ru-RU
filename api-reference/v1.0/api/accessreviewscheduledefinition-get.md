@@ -5,19 +5,19 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 344553abae352f962187068e3b680750762d2579
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 72e6ed93a56e39daeb74a9236314ccfe5b2fbfa6
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60979759"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650575"
 ---
 # <a name="get-accessreviewscheduledefinition"></a>Получить accessReviewScheduleDefinition
 Пространство имен: microsoft.graph
 
 Ознакомьтесь с свойствами и отношениями [объекта accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
 
-Чтобы получить экземпляры серии обзоров доступа, используйте [API accessReviewInstance.](accessreviewinstance-list.md)   
+Чтобы получить экземпляры серии обзоров доступа, используйте [API accessReviewInstance.](accessreviewscheduledefinition-list-instances.md)   
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "60979759"
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
-Чтобы вызвать этот API, входив в каталог, пользователь должен также быть в роли каталога, которая позволяет ему читать обзор доступа, или пользователь может быть назначен в качестве рецензента в обзоре доступа.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviewsv2-root.md)
+Чтобы вызвать этот API, входив в каталог, пользователь должен также быть в роли каталога, которая позволяет ему читать обзор доступа, или пользователь может быть назначен в качестве рецензента в обзоре доступа.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviewsv2-overview.md)
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,7 +46,7 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -160,6 +160,6 @@ Content-Type: application/json
 
 ## <a name="see-also"></a>См. также
 
-- [Создание accessReviewScheduleDefinition](accessreviewscheduledefinition-post.md)
-- [Список accessReviewScheduleDefinition](accessreviewscheduledefinition-list.md)
-- [List accessReviewInstance](accessreviewinstance-list.md)
+- [Создание accessReviewScheduleDefinition](accessreviewset-post-definitions.md)
+- [Список accessReviewScheduleDefinition](accessreviewset-list-definitions.md)
+- [List accessReviewInstance](accessreviewscheduledefinition-list-instances.md)

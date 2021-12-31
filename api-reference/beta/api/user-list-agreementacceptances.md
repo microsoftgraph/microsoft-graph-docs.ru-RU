@@ -2,15 +2,15 @@
 title: Перечисление agreementAcceptances
 description: Извлечение списка объектов agreementAcceptance пользователя.
 ms.localizationpriority: medium
-author: jpettere
+author: raprakasMSFT
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: f925fc332a3a524b601e6ffc3f533176e35e03ca
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 709bc5b05f3caa0aa3f7c09d649ca5d37bc666ff
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61009806"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650638"
 ---
 # <a name="list-agreementacceptances"></a>Перечисление agreementAcceptances
 
@@ -31,6 +31,7 @@ ms.locfileid: "61009806"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/agreementAcceptances
 GET /users/{id | userPrincipalName}/agreementAcceptances
 ```
 <!--
@@ -48,7 +49,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объектов agreementAcceptance](../resources/agreementacceptance.md) в тексте ответа.
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -80,7 +81,7 @@ GET https://graph.microsoft.com/beta/me/agreementAcceptances
 
 ---
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

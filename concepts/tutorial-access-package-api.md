@@ -4,12 +4,12 @@ description: Узнайте, как управлять доступом к ре�
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: governance
-ms.openlocfilehash: 461d3ed9bdbc7fa09f84514abe222cabf8519bcd
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 48b2661bdbd02eca6270616399d93d8318f61608
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526011"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651465"
 ---
 # <a name="tutorial-manage-access-to-resources-in-active-directory-entitlement-management-using-microsoft-graph-apis"></a>Руководство. Управление доступом к ресурсам в управлении правами Active Directory с помощью API Graph Microsoft
 
@@ -19,7 +19,7 @@ ms.locfileid: "61526011"
 
 >**Примечание:** Объекты отклика, показанные в этом руководстве, могут быть сокращены для чтения. 
 
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Чтобы успешно завершить этот учебник, убедитесь, что у вас есть необходимые предпосылки:
 - Управление правами Azure AD требует определенных лицензий. Дополнительные сведения см. в [дополнительных сведениях о требованиях к лицензии.](/azure/active-directory/governance/entitlement-management-overview#license-requirements) В вашем клиенте требуются следующие лицензии:
@@ -736,7 +736,7 @@ No Content - 204
 В этом руководстве вы использовали множество API для выполнения задач. Ознакомьтесь со ссылкой на API для этих API, чтобы узнать больше о том, что могут делать API.
 
 
-- [Работа с API управления правами Azure AD](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta&preserve-view=true)
+- [Работа с API управления правами Azure AD](/graph/api/resources/entitlementmanagement-overview?view=graph-rest-beta&preserve-view=true)
 - [accessPackageCatalog](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true)
 - [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta&preserve-view=true)
 - [accessPackage](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true)

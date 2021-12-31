@@ -561,7 +561,7 @@ items:
                 href: api/profile-get.md
               - name: Удаление профиля пользователя
                 href: api/profile-delete.md
-          - name: Командная работа
+          - name: Teamwork
             items:
               - name: Установленное приложение
                 href: resources/teamsappinstallation.md
@@ -1394,9 +1394,9 @@ items:
                 href: api/event-delta.md
               - name: Представление напоминаний
                 href: api/user-reminderview.md
-          - name: Category
+          - name: Категория
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -10528,7 +10528,7 @@ items:
                 href: api/educationassignmentdefaults-get.md
               - name: Обновление по умолчанию назначения
                 href: api/educationassignmentdefaults-update.md
-          - name: Category
+          - name: Категория
             href: resources/educationcategory.md
             items:
               - name: Создание категории
@@ -12240,36 +12240,34 @@ items:
           - name: Управление
             items:
               - name: Проверки доступа
-                href: resources/accessreviewsv2-root.md
+                href: resources/accessreviewsv2-overview.md
                 items:
                   - name: Определение расписания просмотра доступа
                     href: resources/accessreviewscheduledefinition.md
                     items:
                       - name: Список
-                        href: api/accessreviewscheduledefinition-list.md
+                        href: api/accessreviewset-list-definitions.md
                       - name: Получение
                         href: api/accessreviewscheduledefinition-get.md
                       - name: Создание
-                        href: api/accessreviewscheduledefinition-post.md
+                        href: api/accessreviewset-post-definitions.md
                       - name: Удалить
                         href: api/accessreviewscheduledefinition-delete.md
                       - name: Обновление
                         href: api/accessreviewscheduledefinition-update.md
                       - name: Фильтр текущего пользователя
-                        href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+                        href: api/accessreviewscheduledefinition-filterbycurrentuser.md
                   - name: Экземпляр проверки доступа
                     href: resources/accessreviewinstance.md
                     items:
                       - name: Список
-                        href: api/accessreviewinstance-list.md
+                        href: api/accessreviewscheduledefinition-list-instances.md
                       - name: Получение
                         href: api/accessreviewinstance-get.md
                       - name: Обновление
                         href: api/accessreviewinstance-update.md
                       - name: Фильтр текущего пользователя
                         href: api/accessreviewinstance-filterbycurrentuser.md
-                      - name: Список ожидающих утверждения (неподготовленных)
-                        href: api/accessreviewinstance-pendingaccessreviewinstances.md
                       - name: Отправить напоминание
                         href: api/accessreviewinstance-sendreminder.md
                       - name: Остановить
@@ -12284,19 +12282,21 @@ items:
                         href: api/accessreviewinstance-resetdecisions.md
                       - name: Список решений
                         href: api/accessreviewinstance-list-decisions.md
+                      - name: Список ожидающих утверждения (неподготовленных)
+                        href: api/accessreviewinstance-pendingaccessreviewinstances.md
                   - name: Элемент решения экземпляра проверки доступа
                     href: resources/accessreviewinstancedecisionitem.md
                     items:
                       - name: Список
-                        href: api/accessreviewinstancedecisionitem-list.md
+                        href: api/accessreviewinstance-list-decisions.md
                       - name: Получение
                         href: api/accessreviewinstancedecisionitem-get.md
                       - name: Фильтр текущего пользователя
                         href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
-                      - name: Список ожидающих утверждения (неподготовленных)
-                        href: api/accessreviewinstancedecisionitem-listpendingapproval.md
                       - name: Update
                         href: api/accessreviewinstancedecisionitem-update.md
+                      - name: Список ожидающих утверждения (неподготовленных)
+                        href: api/accessreviewinstancedecisionitem-listpendingapproval.md
                   - name: Политика проверки доступа
                     href: resources/accessreviewpolicy.md
                     items:
@@ -12310,9 +12310,9 @@ items:
                       - name: Получение
                         href: api/accessreviewhistorydefinition-get.md
                       - name: Список
-                        href: api/accessreviewhistorydefinition-list.md
+                        href: api/accessreviewset-list-historydefinitions.md
                       - name: Создание
-                        href: api/accessreviewhistorydefinition-post.md
+                        href: api/accessreviewset-post-historydefinitions.md
                       - name: Создание URI загрузки
                         href: api/accessreviewhistorydefinition-generatedownloaduri.md
               - name: Обзоры доступа (неподготовленные)
@@ -12380,7 +12380,7 @@ items:
                       - name: Список
                         href: api/programcontroltype-list.md
               - name: Запросы согласия
-                href: resources/consentrequests-root.md
+                href: resources/consentrequests-overview.md
                 items:
                   - name: Политика запроса на согласие администратора
                     href: resources/adminconsentrequestpolicy.md
@@ -12393,7 +12393,7 @@ items:
                     href: resources/appconsentrequest.md
                     items:
                       - name: Список
-                        href: api/appconsentrequest-list.md
+                        href: api/appconsentapprovalroute-list-appconsentrequests.md
                       - name: Получение
                         href: api/appconsentrequest-get.md
                       - name: Фильтр текущего пользователя
@@ -12402,21 +12402,21 @@ items:
                     href: resources/userconsentrequest.md
                     items:
                       - name: Список
-                        href: api/userconsentrequest-list.md
+                        href: api/appconsentrequest-list-userconsentrequests.md
                       - name: Получение
                         href: api/userconsentrequest-get.md
                       - name: Фильтр текущего пользователя
                         href: api/userconsentrequest-filterByCurrentUser.md
               - name: Управление правами
-                href: resources/entitlementmanagement-root.md
+                href: resources/entitlementmanagement-overview.md
                 items:
                   - name: Пакет доступа
                     href: resources/accesspackage.md
                     items:
                       - name: Список
-                        href: api/accesspackage-list.md
+                        href: api/entitlementmanagement-list-accesspackages.md
                       - name: Создание
-                        href: api/accesspackage-post.md
+                        href: api/entitlementmanagement-post-accesspackages.md
                       - name: Получение
                         href: api/accesspackage-get.md
                       - name: Обновление
@@ -12445,31 +12445,34 @@ items:
                     href: resources/accesspackageassignment.md
                     items:
                       - name: List
-                        href: api/accesspackageassignment-list.md
+                        href: api/entitlementmanagement-list-accesspackageassignments.md
                       - name: Фильтр текущего пользователя
                         href: api/accesspackageassignment-filterbycurrentuser.md
                       - name: Reprocess
                         href: api/accesspackageassignment-reprocess.md
                   - name: Утверждение назначения пакета доступа
-                    href: resources/approval.md
                     items:
-                      - name: Шаг утверждения
-                        href: resources/approvalstep.md
-                      - name: Получить утверждение
+                      - name: Утверждение
+                        href: resources/approval.md
+                      - name: Получение
                         href: api/approval-get.md
-                      - name: Шаги утверждения списка
-                        href: api/approval-list-steps.md
                       - name: Шаг утверждения
-                        href: api/approvalstep-get.md
-                      - name: Шаг утверждения обновления
-                        href: api/approvalstep-update.md
+                        items:
+                          - name: Утверждение
+                            href: resources/approvalstep.md
+                          - name: Список
+                            href: api/approval-list-steps.md
+                          - name: Получение
+                            href: api/approvalstep-get.md
+                          - name: Обновление
+                            href: api/approvalstep-update.md
                   - name: Политика назначения пакета доступа
                     href: resources/accesspackageassignmentpolicy.md
                     items:
                       - name: Список
-                        href: api/accesspackageassignmentpolicy-list.md
+                        href: api/entitlementmanagement-list-accesspackageassignmentpolicies.md
                       - name: Создание
-                        href: api/accesspackageassignmentpolicy-post.md
+                        href: api/entitlementmanagement-post-accesspackageassignmentpolicies.md
                       - name: Получение
                         href: api/accesspackageassignmentpolicy-get.md
                       - name: Обновление
@@ -12480,9 +12483,9 @@ items:
                     href: resources/accesspackageassignmentrequest.md
                     items:
                       - name: Список
-                        href: api/accesspackageassignmentrequest-list.md
+                        href: api/entitlementmanagement-list-accesspackageassignmentrequests.md
                       - name: Создание
-                        href: api/accesspackageassignmentrequest-post.md
+                        href: api/entitlementmanagement-post-accesspackageassignmentrequests
                       - name: Получение
                         href: api/accesspackageassignmentrequest-get.md
                       - name: Удаление
@@ -12497,16 +12500,16 @@ items:
                     href: resources/accesspackageassignmentresourcerole.md
                     items:
                       - name: Список
-                        href: api/accesspackageassignmentresourcerole-list.md
+                        href: api/entitlementmanagement-list-accesspackageassignmentresourceroles.md
                       - name: Получение
                         href: api/accesspackageassignmentresourcerole-get.md
                   - name: Каталог пакетов доступа
                     href: resources/accesspackagecatalog.md
                     items:
                       - name: Список
-                        href: api/accesspackagecatalog-list.md
+                        href: api/entitlementmanagement-list-accesspackagecatalogs.md
                       - name: Создание
-                        href: api/accesspackagecatalog-post.md
+                        href: api/entitlementmanagement-post-accesspackagecatalogs.md
                       - name: Получение
                         href: api/accesspackagecatalog-get.md
                       - name: Обновление
@@ -12521,14 +12524,14 @@ items:
                     href: resources/accesspackageresourcerequest.md
                     items:
                       - name: Список
-                        href: api/accesspackageresourcerequest-list.md
+                        href: api/entitlementmanagement-list-accesspackageresourcerequests.md
                       - name: Создание
-                        href: api/accesspackageresourcerequest-post.md
+                        href: api/entitlementmanagement-post-accesspackageresourcerequests.md
                   - name: Доступ к среде ресурсов пакета
                     href: resources/accesspackageresourceenvironment.md
                     items:
                       - name: Список
-                        href: api/accesspackageresourceenvironment-list.md
+                        href: api/entitlementmanagement-list-accesspackageresourceenvironment.md
                       - name: Получение
                         href: api/accesspackageresourceenvironment-get.md
                   - name: Доступ к области ролей ресурсов пакета
@@ -12542,9 +12545,9 @@ items:
                     href: resources/connectedorganization.md
                     items:
                       - name: Список
-                        href: api/connectedorganization-list.md
+                        href: api/entitlementmanagement-list-connectedorganizations.md
                       - name: Создание
-                        href: api/connectedorganization-post.md
+                        href: api/entitlementmanagement-post-connectedorganizations.md
                       - name: Получение
                         href: api/connectedorganization-get.md
                       - name: Обновление
@@ -12695,9 +12698,9 @@ items:
                   - name: Соглашение
                     href: resources/agreement.md
                   - name: Создание
-                    href: api/agreement-post-agreements.md
+                    href: api/termsofusecontainer-post-agreements.md
                   - name: Перечисление
-                    href: api/agreement-list.md
+                    href: api/termsofusecontainer-list-agreements.md
                   - name: Получение
                     href: api/agreement-get.md
                   - name: Обновление
@@ -12777,7 +12780,7 @@ items:
                 href: api/attachment-delete.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -13389,7 +13392,7 @@ items:
                 href: api/opentypeextension-get.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -15058,7 +15061,7 @@ items:
                     href: api/attachment-delete.md
               - name: Категории
                 items:
-                  - name: Category
+                  - name: Категория
                     href: resources/outlookcategory.md
                   - name: Перечисление категорий
                     href: api/outlookuser-list-mastercategories.md

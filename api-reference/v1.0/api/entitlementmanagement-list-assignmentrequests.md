@@ -5,18 +5,18 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: a4c4496fc3d9c5dfa2274c0e47222e77faa2556d
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 66d1ff97950847c6c421500f1f3ebc1b91d2a8a1
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61342846"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651514"
 ---
 # <a name="list-assignmentrequests"></a>Назначение спискаRequests
 
 Пространство имен: microsoft.graph
 
-В [управлении правами Azure AD](../resources/entitlementmanagement-root.md)извлекайте список объектов [accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)  В итоговом списке содержатся все запросы на назначение, текущие и просроченные, которые вызываемая имеет доступ к считывке во всех каталогах и пакетах доступа.
+В [управлении правами Azure AD](../resources/entitlementmanagement-overview.md)извлекайте список объектов [accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)  В итоговом списке содержатся все запросы на назначение, текущие и просроченные, которые вызываемая имеет доступ к считывке во всех каталогах и пакетах доступа.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "61342846"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
+| Для приложений                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/assignmentRequests
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметры `$expand` `$filter` запроса oData и OData для настройки ответа.
+Этот метод поддерживает параметры `$select` `$expand` `$filter` запроса OData и OData для настройки ответа.
 
 ### <a name="example-scenarios-for-using-query-parameters"></a>Примеры сценариев использования параметров запроса
 
@@ -55,7 +55,7 @@ GET /identityGovernance/entitlementManagement/assignmentRequests
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Носитель \{токен\}. Обязательный. |
+| Authorization | Носитель \{токен\}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

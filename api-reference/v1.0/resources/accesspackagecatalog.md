@@ -5,19 +5,19 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: caf556556100da6d53447c9576eb1674a20c9b02
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: fa2614c7cdc70622bdab85b3afdd43666e253472
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242763"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650680"
 ---
 # <a name="accesspackagecatalog-resource-type"></a>тип ресурса accessPackageCatalog
 
 Пространство имен: microsoft.graph
 
 
-В [управлении правами Azure AD](entitlementmanagement-root.md)каталог пакетов доступа — это контейнер для пакетов с нулевым или более доступом. Каталог пакетов доступа также может иметь связанные ресурсы, которые используются в этих пакетах доступа для обеспечения доступа. Чтобы просмотреть или изменить членство ролей в [](unifiedroleassignment.md) каталоге, используйте API назначений ролей с поставщиком управления правами RBAC.
+В [управлении правами Azure AD](entitlementmanagement-overview.md)каталог пакетов доступа — это контейнер для пакетов с нулевым или более доступом. Каталог пакетов доступа также может иметь связанные ресурсы, которые используются в этих пакетах доступа для обеспечения доступа. Чтобы просмотреть или изменить членство ролей в [](unifiedroleassignment.md) каталоге, используйте API назначений ролей с поставщиком управления правами RBAC.
 
 
 

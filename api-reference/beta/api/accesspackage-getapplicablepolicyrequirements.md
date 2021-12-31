@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 32850de6637d1d85c45f34a7fd93992a1f76730e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 598c33bb9e6de5f911c4db333fcecc717a08d1a2
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60983820"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650659"
 ---
 # <a name="accesspackage-getapplicablepolicyrequirements"></a>accessPackage: getApplicablePolicyRequirements
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В управлении правами [Azure AD](../resources/entitlementmanagement-root.md)это действие извлекает список объектов [accessPackageAssignmentRequestRequirements,](../resources/accesspackageassignmentrequestrequirements.md) которые в настоящее время подписан пользователь может использовать для создания [accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)  Каждый объект требования соответствует политике назначения пакетов доступа, для которых подписанное в настоящее время пользователь может запрашивать назначение.
+В управлении правами [Azure AD](../resources/entitlementmanagement-overview.md)это действие извлекает список объектов [accessPackageAssignmentRequestRequirements,](../resources/accesspackageassignmentrequestrequirements.md) которые в настоящее время подписан пользователь может использовать для создания [accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)  Каждый объект требования соответствует политике назначения пакетов доступа, для которых подписанное в настоящее время пользователь может запрашивать назначение.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,7 +45,7 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/getApplicable
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

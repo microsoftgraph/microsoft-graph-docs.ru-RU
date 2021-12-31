@@ -5,18 +5,18 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: aab29de91f37d04282b357e47d2fefdedf566a9f
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 7f63f9cfe3e1233407d0aaf966d9e2c0d933da26
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60562138"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61649692"
 ---
 # <a name="accessreviewnotificationrecipientitem-resource-type"></a>accessReviewNotificationRecipientItem resource type
 
 Пространство имен: microsoft.graph
 
-Представляет событие уведомления об уведомлении о просмотре доступа Azure [AD](accessreviewsv2-root.md) в экземпляре проверки. Этот элемент содержит тип шаблона электронной почты и свойства получателей, чтобы включить отправку определенных типов уведомлений для данного экземпляра [обзора доступа.](accessreviewinstance.md)
+Представляет событие уведомления об уведомлении о просмотре доступа Azure [AD](accessreviewsv2-overview.md) в экземпляре проверки. Этот элемент содержит тип шаблона электронной почты и свойства получателей, чтобы включить отправку определенных типов уведомлений для данного экземпляра [обзора доступа.](accessreviewinstance.md)
 
 ## <a name="properties"></a>Свойства
 
@@ -25,7 +25,7 @@ ms.locfileid: "60562138"
 | notificationTemplateType  |Строка  | Указывает тип отправки электронной почты для проверки доступа. Поддерживаемый тип шаблона , который отправляет уведомления о `CompletedAdditionalRecipients` завершении проверки получателям.|
 | notificationRecipientScope |[accessReviewNotificationRecipientScope](../resources/accessreviewnotificationrecipientscope.md)  | Определяет получателя сообщения уведомления.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 

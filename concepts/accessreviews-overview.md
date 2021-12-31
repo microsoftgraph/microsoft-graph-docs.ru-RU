@@ -5,16 +5,16 @@ author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 53e7d075323297b6e152cc9458266d571f26477b
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 128732f237a6a639152d9739e05b1cdbe389f00a
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766959"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651409"
 ---
 # <a name="overview-of-the-access-reviews-api"></a>Обзор API проверок доступа
 
-API [обзоров](/graph/api/resources/accessreviewsv2-root) доступа в Microsoft Graph позволяет программным образом просмотреть доступ к ресурсам Azure AD. Этот обзор помогает убедиться, что нужные люди имеют правильный доступ к нужным ресурсам в организации.
+API [обзоров](/graph/api/resources/accessreviewsv2-overview) доступа в Microsoft Graph позволяет программным образом просмотреть доступ к ресурсам Azure AD. Этот обзор помогает убедиться, что нужные люди имеют правильный доступ к нужным ресурсам в организации.
 
 С помощью API отзывов доступа можно сделать следующие действия:
 + Создание, чтение, обновление и удаление отзывов о доступе, параметров обзора доступа и расписания.

@@ -5,18 +5,18 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 5c8dc9dc895c82af5a79fab3622d32818097d18a
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 3412b6402232281f3bccde87a94add1cf44658cd
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61338044"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651353"
 ---
 # <a name="accesspackage-filterbycurrentuser"></a>accessPackage: filterByCurrentUser
 Пространство имен: microsoft.graph
 
 
-В [Azure AD Entitlement Management](../resources/entitlementmanagement-root.md)извлекайте список объектов [accessPackage,](../resources/accesspackage.md) фильтруемых на входе пользователя.
+В [Azure AD Entitlement Management](../resources/entitlementmanagement-overview.md)извлекайте список объектов [accessPackage,](../resources/accesspackage.md) фильтруемых на входе пользователя.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -34,7 +34,7 @@ ms.locfileid: "61338044"
 }
 -->
 ``` http
-GET /identityGovernance/entitlementManagement/accessPackages/filterByCurrentUser(on='parameterValue')
+GET /identityGovernance/entitlementManagement/accessPackages/filterByCurrentUser(on='allowedRequestor')
 ```
 
 ## <a name="function-parameters"></a>Параметры функции
@@ -42,14 +42,14 @@ GET /identityGovernance/entitlementManagement/accessPackages/filterByCurrentUser
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|on|accessPackageFilterByCurrentUserOptions|Список пользовательских параметров, которые можно использовать для фильтрации в списке пакетов доступа.|
+|on|accessPackageFilterByCurrentUserOptions|Список пользовательских параметров, которые можно использовать для фильтрации в списке пакетов доступа. Допустимо значение `allowedRequestor` .|
 
 - `allowedRequestor` используется для получения объектов, для которых входя в нее пользователь может `accessPackage` отправлять запросы доступа. В итоговом списке содержатся все пакеты доступа, которые могут запрашиваться вызываемой по всем каталогам.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

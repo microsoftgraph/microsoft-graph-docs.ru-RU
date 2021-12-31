@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 15bbdca1a126274f8e111f6236e2f5e35fa83f2a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c234d42bf6f0593829ff3a3ad0f47c4af8f138ca
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60983358"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650729"
 ---
 # <a name="list-accesspackageresourceroles"></a>Список accessPackageResourceRoles
 
@@ -18,7 +18,7 @@ ms.locfileid: "60983358"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение списка [объектов accessPackageResourceRole](../resources/accesspackageresourcerole.md) [accessPackageResource](../resources/accesspackageresource.md) в [accessPackageCatalog](../resources/accesspackagecatalog.md). Ресурс должен был быть добавлен в каталог путем [создания accessPackageResourceRequest.](accesspackageresourcerequest-post.md) Этот список ролей может быть использован звонивцом для выбора роли, которая необходима при создании [accessPackageResourceRoleScope.](accesspackage-post-accesspackageresourcerolescopes.md)
+Извлечение списка [объектов accessPackageResourceRole](../resources/accesspackageresourcerole.md) [accessPackageResource](../resources/accesspackageresource.md) в [accessPackageCatalog](../resources/accesspackagecatalog.md). Ресурс должен был быть добавлен в каталог путем [создания accessPackageResourceRequest.](entitlementmanagement-post-accesspackageresourcerequests.md) Этот список ролей может быть использован звонивцом для выбора роли, которая необходима при создании [accessPackageResourceRoleScope.](accesspackage-post-accesspackageresourcerolescopes.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,7 +46,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId}/
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token}. Обязательный. |
+| Авторизация | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 

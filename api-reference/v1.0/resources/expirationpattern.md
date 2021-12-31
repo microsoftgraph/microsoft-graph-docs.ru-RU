@@ -5,18 +5,18 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 413fde6006f8a7fdf9aa5175adbb2d57c957c817
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 83ec2f3cafc25787a979103f4edea5e6436b57a9
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242722"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650694"
 ---
 # <a name="expirationpattern-resource-type"></a>тип ресурса expirationPattern
 
 Пространство имен: microsoft.graph
 
-В [управлении правами Azure AD](entitlementmanagement-root.md)запрос на назначение пакета доступа создается пользователем, который хочет получить назначение пакета доступа. Этот запрос может включать расписание, когда пользователь хотел бы получить назначение.  Назначение пакета доступа, которое является результатом такого запроса, также имеет расписание.  Поле истечения срока действия [entitlementManagementSchedule](entitlementmanagementschedule.md) указывает, когда должно истекть назначение пакета доступа.
+В [управлении правами Azure AD](entitlementmanagement-overview.md)запрос на назначение пакета доступа создается пользователем, который хочет получить назначение пакета доступа. Этот запрос может включать расписание, когда пользователь хотел бы получить назначение.  Назначение пакета доступа, которое является результатом такого запроса, также имеет расписание.  Поле истечения срока действия [entitlementManagementSchedule](entitlementmanagementschedule.md) указывает, когда должно истекть назначение пакета доступа.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -34,7 +34,7 @@ ms.locfileid: "61242722"
 |afterDateTime|Срок доступа истекает после указанной даты и времени.|
 |afterDuration|Срок доступа истекает после указанной продолжительности, относительно предоставленного доступа. Требуется при **указании** свойства продолжительности.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

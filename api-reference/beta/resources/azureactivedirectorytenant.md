@@ -1,16 +1,16 @@
 ---
 title: тип ресурса azureActiveDirectoryTenant
 description: Тип azureActiveDirectoryTenant определяет другого клиента Azure Active Directory как источник удостоверений для связанной организации.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d7a36c8c737866b20585518e1dc34e6944c97885
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 9aeb699065a1e4bdf37dfd5f5a90985c47db24f7
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896587"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650603"
 ---
 # <a name="azureactivedirectorytenant-resource-type"></a>тип ресурса azureActiveDirectoryTenant
 
@@ -20,16 +20,16 @@ ms.locfileid: "52896587"
 
 Используется в источниках удостоверений [подключеннойорганизации.](connectedOrganization.md) Это значение указывает, что этот тип определяет другого клиента Azure Active Directory как источник удостоверений `@odata.type` `#microsoft.graph.azureActiveDirectoryTenant` для связанной организации.
 
-При [](../api/connectedorganization-post.md)создании новой подключеннойорганизации, если вызывающий вызов предоставляет в коллекции identitySources домен DomainIdentitySource и домен соответствует зарегистрированным доменам клиента Azure Active Directory, то создаемая подключеннаяорганизация будет иметь коллекцию identitySources, содержащую одного члена типа [azureActiveDirectoryTenant.](azureactivedirectorytenant.md)
+При [](../api/entitlementmanagement-post-connectedorganizations.md)создании новой подключеннойорганизации, если вызывающий вызов предоставляет в коллекции identitySources домен DomainIdentitySource и домен соответствует зарегистрированным доменам клиента Azure Active Directory, то создаемая подключеннаяорганизация будет иметь коллекцию identitySources, содержащую одного члена типа [azureActiveDirectoryTenant.](azureactivedirectorytenant.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                     | Тип                      | Описание |
 | :--------------------------- | :------------------------ | :---------- |
-| displayName |String | Имя клиента Azure Active Directory. Только для чтения. |
+| displayName |Строка | Имя клиента Azure Active Directory. Только для чтения. |
 | tenantId |String | ID клиента Azure Active Directory клиента. Только для чтения. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

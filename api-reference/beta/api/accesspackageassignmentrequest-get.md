@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9fd36b4eb9a4539d1bc24556ff2e6e1bd9adc6cd
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c3aab47f55f63795306cf031a339c693b8cdfef9
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60988252"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650750"
 ---
 # <a name="get-accesspackageassignmentrequest"></a>Получить accessPackageAssignmentRequest
 
@@ -18,7 +18,7 @@ ms.locfileid: "60988252"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [управлении правами Azure AD](../resources/entitlementmanagement-root.md)извлекайте свойства и связи объекта [accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)
+В [управлении правами Azure AD](../resources/entitlementmanagement-overview.md)извлекайте свойства и связи объекта [accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)
 
 ## <a name="permissions"></a>Разрешения
 

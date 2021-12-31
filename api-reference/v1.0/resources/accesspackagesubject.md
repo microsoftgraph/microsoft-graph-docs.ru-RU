@@ -5,19 +5,19 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d22ab7f69213625468b1cb5857a47147fbdd7889
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: d8c8a7bb8943f88657392f06ea78ec2ec502d436
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242842"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651444"
 ---
 # <a name="accesspackagesubject-resource-type"></a>тип ресурсов accessPackageSubject
 
 Пространство имен: microsoft.graph
 
 
-В управлении правами [Azure AD](entitlementmanagement-root.md)субъект пакета доступа — это пользователь, руководитель службы или другая сущность, которую можно настроить для запроса или присвоения пакета доступа.  Он может представлять запросителя из связанной организации, который еще не находится в клиенте.
+В управлении правами [Azure AD](entitlementmanagement-overview.md)субъект пакета доступа — это пользователь, руководитель службы или другая сущность, которую можно настроить для запроса или присвоения пакета доступа.  Он может представлять запросителя из связанной организации, который еще не находится в клиенте.
 
 ## <a name="methods"></a>Методы
 
@@ -33,7 +33,7 @@ ms.locfileid: "61242842"
 |principalName|String|Основное имя, если известно, субъекта.|
 |subjectType|accessPackageSubjectType|Тип ресурса субъекта. Допустимые значения: `notSpecified`, `user`, `servicePrincipal`, `unknownFutureValue`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |connectedOrganization|[connectedOrganization](connectedorganization.md)|Подключенная организация субъекта. Только для чтения. Допускается значение null.|

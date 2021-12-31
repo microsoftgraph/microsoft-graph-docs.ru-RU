@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: d426d76fcece1bfdf46b3d7dc80f68e48b0b40f4
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: be8c17fbab6b897d0057bd1db80006cb2bc06c04
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60983834"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650673"
 ---
 # <a name="get-accesspackage"></a>Получить accessPackage
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackages/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Например, чтобы получить политики пакета доступа, добавьте `$expand=accessPackageAssignmentPolicies` . Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметры `$select` `$expand` запроса oData и OData для настройки ответа. Например, чтобы получить политики пакета доступа, добавьте `$expand=accessPackageAssignmentPolicies` . Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 

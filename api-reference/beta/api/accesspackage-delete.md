@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 61db7e5baf0c639a3adae55c11ffe7f429263a06
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b6d3a30ca36cd31bc8134ab31f31b93d57e10e9a
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60983905"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650568"
 ---
 # <a name="delete-accesspackage"></a>Удаление accessPackage
 
@@ -20,7 +20,7 @@ ms.locfileid: "60983905"
 
 Удаление [объекта accessPackage.](../resources/accesspackage.md)
 
-Нельзя удалить пакет доступа, если у него есть **какой-либо accessPackageAssignment.** Чтобы удалить пакет доступа, сначала запросите, если есть назначения с фильтром, чтобы указать определенный пакет доступа, например: [](accesspackageassignment-list.md) `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'` . Дополнительные сведения о том, как удалить назначения, которые по-прежнему находятся в доставленных состояниях, см. в статью [Удалить назначение.](accesspackageassignmentrequest-post.md#example-4-remove-an-assignment)
+Нельзя удалить пакет доступа, если у него есть **какой-либо accessPackageAssignment.** Чтобы удалить пакет доступа, сначала запросите, если есть назначения с фильтром, чтобы указать определенный пакет доступа, например: [](entitlementmanagement-list-accesspackageassignments.md) `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'` . Дополнительные сведения о том, как удалить назначения, которые по-прежнему находятся в доставленных состояниях, см. в статью [Удалить назначение.](entitlementmanagement-post-accesspackageassignmentrequests.md#example-4-remove-an-assignment)
 
 
 ## <a name="permissions"></a>Разрешения

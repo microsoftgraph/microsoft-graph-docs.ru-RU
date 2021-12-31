@@ -5,19 +5,19 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 06fbb94ff6cdd363f2c8c1449db4267a0695b63c
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: ca963bd2a538cad8efe8692e82c6e1da678c0a21
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61322116"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651451"
 ---
 # <a name="accesspackageassignmentrequest-resource-type"></a>тип ресурса accessPackageAssignmentRequest
 
 Пространство имен: microsoft.graph
 
 
-В [Azure AD Entitlement Management](entitlementmanagement-root.md)запрос на назначение пакета доступа создается пользователем или от имени пользователя, который хочет получить назначение пакета доступа. Если запрос является успешным, с любыми необходимыми утверждениями, пользователь получает назначение пакета доступа и является субъектом этого назначения пакета доступа.  Azure AD также создает запросы на назначение пакетов доступа автоматически для отслеживания удаления доступа.
+В [Azure AD Entitlement Management](entitlementmanagement-overview.md)запрос на назначение пакета доступа создается пользователем или от имени пользователя, который хочет получить назначение пакета доступа. Если запрос является успешным, с любыми необходимыми утверждениями, пользователь получает назначение пакета доступа и является субъектом этого назначения пакета доступа.  Azure AD также создает запросы на назначение пакетов доступа автоматически для отслеживания удаления доступа.
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
@@ -40,7 +40,7 @@ ms.locfileid: "61322116"
 |state|accessPackageRequestState|Состояние запроса. Возможные значения: `submitted`, `pendingApproval`, `delivering`, `delivered`, `deliveryFailed`, `denied`, `scheduled`, `canceled`, `partiallyDelivered`, `unknownFutureValue`. Только для чтения.|
 |status|String|Дополнительные сведения о состоянии обработки запросов. Только для чтения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |accessPackage|[accessPackage](../resources/accesspackage.md)|Пакет доступа, связанный с accessPackageAssignmentRequest. Пакет доступа определяет коллекции ролей ресурсов и политики получения доступа к этим ресурсам для одного или более пользователей. Только для чтения. Допускается значение null. <br/><br/> Поддерживает `$expand`.|

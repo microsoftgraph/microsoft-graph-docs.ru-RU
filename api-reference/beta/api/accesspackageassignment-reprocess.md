@@ -1,16 +1,16 @@
 ---
 title: 'accessPackageAssignment: reprocess'
 description: Повторное выполнение объектов accesspackageassignment.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4ba699950b7c4ab54eca1a75a1a85f1e63c9c774
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 66356cd856906ba73b107c06cfd36cc52bf85acb
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257362"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650869"
 ---
 # <a name="accesspackageassignment-reprocess"></a>accessPackageAssignment: reprocess
 
@@ -18,7 +18,7 @@ ms.locfileid: "58257362"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В управлении правами [Azure AD](../resources/entitlementmanagement-root.md)звонители могут автоматически переоформить и принудить объект [accessPackageAssignment](../resources/accesspackageassignment.md) к назначениям пользователя для определенного пакета доступа. **НазначениеУправление** пакета доступа должно быть для администратора для повторной работы с `Delivered` назначением пользователя. Выполнить это действие могут только администраторы с ролью диспетчера назначения пакетов доступа или более высокой в управлении правами Azure AD.
+В управлении правами [Azure AD](../resources/entitlementmanagement-overview.md)звонители могут автоматически переоформить и принудить объект [accessPackageAssignment](../resources/accesspackageassignment.md) к назначениям пользователя для определенного пакета доступа. **НазначениеУправление** пакета доступа должно быть для администратора для повторной работы с `Delivered` назначением пользователя. Выполнить это действие могут только администраторы с ролью диспетчера назначения пакетов доступа или более высокой в управлении правами Azure AD.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "58257362"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись) | EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | EntitlementManagement.ReadWrite.All |
+| Для приложений | EntitlementManagement.ReadWrite.All |
   
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignments/{id}/rep
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Носитель \{токен\}. Обязательный. |
+| Authorization | Носитель \{токен\}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 

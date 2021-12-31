@@ -1,16 +1,16 @@
 ---
 title: 'accessPackageAssignmentRequest: reprocess'
 description: Reprocess accessPackageAssignmentRequest objects.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 36dd0d9d3e004d916e508b4f710728b214ac5a79
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: 39104bb29ba7b1f8a9e672775781a5303ab0fa81
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58257944"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650743"
 ---
 # <a name="accesspackageassignmentrequest-reprocess"></a>accessPackageAssignmentRequest: reprocess
 
@@ -18,7 +18,7 @@ ms.locfileid: "58257944"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [управлении правами Azure AD](../resources/entitlementmanagement-root.md)звонители могут автоматически повторить запрос пользователя на доступ к пакету доступа. Выполняется на [объекте accessPackageAssignmentRequest,](../resources/accesspackageassignmentrequest.md) запрос **которого** находится в состоянии или `DeliveryFailed` `PartiallyDelivered` состоянии. 
+В [управлении правами Azure AD](../resources/entitlementmanagement-overview.md)звонители могут автоматически повторить запрос пользователя на доступ к пакету доступа. Выполняется на [объекте accessPackageAssignmentRequest,](../resources/accesspackageassignmentrequest.md) запрос **которого** находится в состоянии или `DeliveryFailed` `PartiallyDelivered` состоянии. 
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "58257944"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись) | EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | EntitlementManagement.ReadWrite.All |
+| Для приложений | EntitlementManagement.ReadWrite.All |
   
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentsRequests/
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Носитель \{токен\}. Обязательный. |
+| Authorization | Носитель \{токен\}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 

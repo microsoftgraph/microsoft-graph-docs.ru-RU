@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b4c2dba33572c58866e0839248631c6f19e2234b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7500bc7f1bd0d9b8b2850b31c751b04b873f3165
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60982595"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650540"
 ---
 # <a name="list-approvalsteps"></a>Утверждение спискаSteps
 
@@ -18,7 +18,7 @@ ms.locfileid: "60982595"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [управлении правами Azure AD](../resources/entitlementmanagement-root.md)перечислены [объекты approvalStep,](../resources/approvalstep.md) связанные с объектом [утверждения.](../resources/approval.md)  Этот вызов может быть выполнен одобрением, предоставляя идентификатор запроса назначения пакета [доступа.](../resources/accesspackageassignmentrequest.md)
+В [управлении правами Azure AD](../resources/entitlementmanagement-overview.md)перечислены [объекты approvalStep,](../resources/approvalstep.md) связанные с объектом [утверждения.](../resources/approval.md)  Этот вызов может быть выполнен одобрением, предоставляя идентификатор запроса назначения пакета [доступа.](../resources/accesspackageassignmentrequest.md)
 
 ## <a name="permissions"></a>Разрешения
 

@@ -5,18 +5,18 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 352e1dfe309bfec51c7b5ca3f180775c3c55ac65
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 93044971b7d5ee41fcc23e79df2baa925e6bb15e
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61337966"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651332"
 ---
 # <a name="accesspackageassignmentrequest-cancel"></a>accessPackageAssignmentRequest: отмена
 Пространство имен: microsoft.graph
 
 
-В [Azure AD Entitlement Management](../resources/entitlementmanagement-root.md)отменяйте [объекты accessPackageAssignmentRequest,](../resources/accesspackageassignmentrequest.md) которые находятся в отменяемом состоянии: `accepted` , , , `pendingApproval` `pendingNotBefore` `pendingApprovalEscalated` .
+В [Azure AD Entitlement Management](../resources/entitlementmanagement-overview.md)отменяйте [объекты accessPackageAssignmentRequest,](../resources/accesspackageassignmentrequest.md) которые находятся в отменяемом состоянии: `accepted` , , , `pendingApproval` `pendingNotBefore` `pendingApprovalEscalated` .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -40,7 +40,7 @@ POST /identityGovernance/entitlementManagement/assignmentRequests/{accessPackage
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

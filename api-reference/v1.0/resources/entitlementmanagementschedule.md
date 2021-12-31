@@ -5,18 +5,18 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: f37a9f58cf6d2ede1393811901c64754d64fd467
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 18c814c0426deaa89709505816f21282c75b1757
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242811"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650904"
 ---
 # <a name="entitlementmanagementschedule-complex-type"></a>сложный тип entitlementManagementSchedule
 
 Пространство имен: microsoft.graph
 
-В [управлении правами Azure AD](entitlementmanagement-root.md)запрос на назначение пакета доступа создается пользователем, который хочет получить назначение пакета доступа. Этот запрос может включать расписание, когда пользователь хотел бы получить назначение.  Назначение пакета доступа, которое является результатом такого запроса, также имеет расписание.
+В [управлении правами Azure AD](entitlementmanagement-overview.md)запрос на назначение пакета доступа создается пользователем, который хочет получить назначение пакета доступа. Этот запрос может включать расписание, когда пользователь хотел бы получить назначение.  Назначение пакета доступа, которое является результатом такого запроса, также имеет расписание.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -25,7 +25,7 @@ ms.locfileid: "61242811"
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|Для повторного доступа. Не используется в настоящее время.|
 |startDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 ## <a name="json-representation"></a>Представление в формате JSON
 Ниже указано представление ресурса в формате JSON.

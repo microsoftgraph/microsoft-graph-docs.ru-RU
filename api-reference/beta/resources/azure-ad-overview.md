@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: identity-and-access
 author: dkershaw10
-ms.openlocfilehash: f5ae8eadb7b18d2091d06cd6a69d48afa78ccffa
-ms.sourcegitcommit: 6cea9bc17d3859e475a74c4a6f661f848e837e89
+ms.openlocfilehash: 79bb030b852e861fb3437f3ba90181703b0b735e
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60240945"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61649790"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Работа с ресурсами Azure Active Directory в Microsoft Graph
 
@@ -63,7 +63,7 @@ Microsoft Graph предоставляет доступ к ресурсам [Azu
 | **Проверки доступа** | | |
 | Проверяйте правильность участия в группах и права доступа к приложению с помощью проверок доступа. | [API проверки доступа](../resources/accessreviews-root.md) |[Проверки доступа Azure AD](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
 | **Запросы согласия** | | |
-| Управление рабочим процессом запроса согласия для пользователей, пытающихся получить доступ к приложениям, для которых требуется авторизация администратора.  | [API запросов согласия](../resources/consentrequests-root.md) |[Настройка рабочего процесса согласия администратора](/azure/active-directory/manage-apps/configure-admin-consent-workflow) |
+| Управление рабочим процессом запроса согласия для пользователей, пытающихся получить доступ к приложениям, для которых требуется авторизация администратора.  | [API запросов согласия](../resources/consentrequests-overview.md) |[Настройка рабочего процесса согласия администратора](/azure/active-directory/manage-apps/configure-admin-consent-workflow) |
 
 ## <a name="whats-new"></a>Новые возможности
 Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.

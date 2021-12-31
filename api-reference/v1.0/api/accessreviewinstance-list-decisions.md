@@ -5,17 +5,17 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9e4235fbbffe6bad1c9ec121201fb2f73a0c04d0
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a3c822d56d0e25209b66b531c47aa9b934d9a1d3
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61009217"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651170"
 ---
 # <a name="list-decisions"></a>Список решений
 Пространство имен: microsoft.graph
 
-Получите [ресурсы accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) из свойства навигации решений на заданном [accessReviewInstance.](../resources/accessreviewinstance.md)
+Получите [ресурсы accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) из свойства навигации решений на заданном [accessReviewInstance.](../resources/accessreviewinstance.md) Возвращается список объектов zero или more accessReviewInstanceDecisionItem, включая все вложенные свойства.
 
 >[!NOTE]
 >Размер страницы по умолчанию для этого API — 100 объектов accessReviewScheduleDefinition. Чтобы повысить эффективность и избежать периодов времени из-за больших наборов результатов, применяйте pagination с помощью `$skip` `$top` параметров запроса и запросов. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
@@ -45,7 +45,7 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

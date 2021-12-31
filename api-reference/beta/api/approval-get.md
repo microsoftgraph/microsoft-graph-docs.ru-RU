@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: f27318679775174f6163aea62ed15437174fc73a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a2a08f96b4ec93ec68c69fc41295347b640cac5c
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60982616"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650547"
 ---
 # <a name="get-approval"></a>Получить утверждение
 
@@ -18,7 +18,7 @@ ms.locfileid: "60982616"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [управлении правами Azure AD](../resources/entitlementmanagement-root.md)извлекает свойства объекта [утверждения.](../resources/approval.md)  Этот вызов может быть выполнен одобрением, предоставляя идентификатор запроса назначения пакета [доступа.](../resources/accesspackageassignmentrequest.md)
+В [управлении правами Azure AD](../resources/entitlementmanagement-overview.md)извлекает свойства объекта [утверждения.](../resources/approval.md)  Этот вызов может быть выполнен одобрением, предоставляя идентификатор запроса назначения пакета [доступа.](../resources/accesspackageassignmentrequest.md)
 
 ## <a name="permissions"></a>Разрешения
 

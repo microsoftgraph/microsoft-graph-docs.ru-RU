@@ -5,16 +5,16 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 78a8ce78337c2c2e00c96cea7dbb59a6df0e7a11
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 59acd960b0c3234262db05e05066bcef7ce98709
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59507755"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651297"
 ---
 # <a name="assign-reviewers-to-your-access-review-using-the-microsoft-graph-api"></a>Назначение рецензентов для проверки доступа с помощью API Graph Microsoft
 
-API обзоров доступа Azure [AD](/graph/api/resources/accessreviewsv2-root) позволяет программным образом просмотреть доступ пользователей, директоров служб или групп к ресурсам Azure AD.
+API обзоров доступа Azure [AD](/graph/api/resources/accessreviewsv2-overview) позволяет программным образом просмотреть доступ пользователей, директоров служб или групп к ресурсам Azure AD.
 
 Основные рецензенты настроены в свойстве **рецензентов** ресурса [accessReviewScheduleDefinition.](/graph/api/resources/accessreviewscheduledefinition)  Кроме того, вы можете указать рецензенты откатов с помощью **свойства fallbackReviewers.** Эти свойства не требуются при создании самообзора (когда пользователи просматривают собственный доступ).
 

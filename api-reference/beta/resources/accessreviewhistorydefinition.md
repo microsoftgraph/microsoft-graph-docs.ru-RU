@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 00b8881e14c30337e2513e2cb96fefa687e3115a
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 8175241c8760986cc821e167e75495cc7f843893
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226115"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650617"
 ---
 # <a name="accessreviewhistorydefinition-resource-type"></a>тип ресурса accessReviewHistoryDefinition
 
@@ -23,8 +23,8 @@ ms.locfileid: "61226115"
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список accessReviewHistoryDefinitions](../api/accessreviewhistorydefinition-list.md)|[accessReviewHistoryDefinition collection](accessreviewhistorydefinition.md)|Получите список объектов [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) и их свойств.|
-|[Создание accessReviewHistoryDefinition](../api/accessreviewhistorydefinition-post.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Создайте новый [объект accessReviewHistoryDefinition.](accessreviewhistorydefinition.md)|
+|[Список accessReviewHistoryDefinitions](../api/accessreviewset-list-historydefinitions.md)|[accessReviewHistoryDefinition collection](accessreviewhistorydefinition.md)|Получите список объектов [accessReviewHistoryDefinition](accessreviewhistorydefinition.md) и их свойств.|
+|[Создание accessReviewHistoryDefinition](../api/accessreviewset-post-historydefinitions.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Создайте новый [объект accessReviewHistoryDefinition.](accessreviewhistorydefinition.md)|
 |[Получить accessReviewHistoryDefinition](../api/accessreviewhistorydefinition-get.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Ознакомьтесь с свойствами и отношениями [объекта accessReviewHistoryDefinition.](accessreviewhistorydefinition.md)|
 |[generateDownloadUri](../api/accessreviewhistorydefinition-generatedownloaduri.md)|[accessReviewHistoryDefinition](accessreviewhistorydefinition.md)|Создание URI, который можно использовать для получения данных истории отзывов.|
 
@@ -40,7 +40,7 @@ ms.locfileid: "61226115"
 |id|Строка|Назначен уникальный идентификатор определения истории проверки доступа.|
 |reviewHistoryPeriodEndDateTime|DateTimeOffset|Timestamp, отзывы, начиная с этой даты или после нее, будут включены в извлеченные данные истории. Обязательный.|
 |reviewHistoryPeriodStartDateTime|DateTimeOffset|Timestamp, отзывы, начиная с этой даты или до этой даты, будут включены в извлеченные данные истории. Обязательный.|
-|scopes|[accessReviewQueryScope](accessreviewqueryscope.md) collection|Используется для области, включаемой отзывов в извлеченные данные истории. Извлекает отзывы, область которых совпадает с этой предоставленной областью. Обязательный.|
+|scopes|[accessReviewQueryScope](accessreviewqueryscope.md) collection|Используется для области, включаемой отзывов в извлеченные данные истории. Извлекает отзывы, область которых совпадает с этой предоставленной областью. Обязательное.|
 |status|Коллекция String|Представляет состояние коллекции данных истории отзывов. Возможные значения: `done`, `inprogress`, `error`, `requested`.|
 
 ## <a name="json-representation"></a>Представление JSON

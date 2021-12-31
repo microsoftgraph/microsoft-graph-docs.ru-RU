@@ -5,20 +5,20 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 3600d25e44e746f29c0a89950d1649ab5bef1a85
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 8a8a880882c0a9904484e97d8406bb971c2ff05e
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60560739"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651402"
 ---
 # <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>Настройка области обзора доступа с помощью API microsoft Graph
 
-API обзоров доступа Azure [AD](/graph/api/resources/accessreviewsv2-root) позволяет программным образом просмотреть доступ пользователей, директоров служб или групп к ресурсам Azure AD.
+API обзоров доступа Azure [AD](/graph/api/resources/accessreviewsv2-overview) позволяет программным образом просмотреть доступ пользователей, директоров служб или групп к ресурсам Azure AD.
 
 Ресурсы для проверки настроены в свойстве **области** доступа к [ресурсу accessReviewScheduleDefinition.](/graph/api/resources/accessreviewscheduledefinition) Это свойство имеет тип [accessReviewScope](/graph/api/resources/accessreviewscope), абстрактный тип, унаследованный следующими ресурсами, которые можно использовать для настройки ресурсов или групп ресурсов, доступ к которые будут рассмотрены.
 
-|Resource|Описание|Примеры сценариев|
+|Ресурс|Описание|Примеры сценариев|
 |:---    |:---       |:---             |
 |[accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope)|Наиболее применимо при просмотре полного набора или подмножества директоров, имеющих доступ к ресурсу или группе связанных ресурсов.|<ul><li>Членство пользователей, назначенных группе.</li><li>Гостевой доступ пользователя к одной группе.</li><li>Гостевой доступ пользователей ко всем Microsoft 365 группам в клиенте.</li><li>Директорам служб назначены привилегированные роли.</li><li>Основной доступ пользователей и служб к пакетам доступа к управлению правами.</li></ul>|
 |[accessReviewInactiveUsersQueryScope](/graph/api/resources/accessreviewinactiveusersqueryscope)|Наследуется от accessReviewQueryScope. Используется при просмотре только неактивных пользователей. Их неактивное состояние указывается **свойством inactiveDuration.** |<ul><li>Членство в группе только неактивных пользователей.</li><ul>|

@@ -2,15 +2,15 @@
 title: Перечисление agreementAcceptances
 description: Извлечение списка объектов agreementAcceptance пользователя.
 ms.localizationpriority: medium
-author: jpettere
+author: raprakasMSFT
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b475a185bdda9a06d96688f8181cd31865970e17
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: e1b507c29b71a5591fa4bbae02ccc8fe033e613a
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60946918"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651535"
 ---
 # <a name="list-agreementacceptances"></a>Перечисление agreementAcceptances
 
@@ -39,7 +39,7 @@ GET /users/{id | userPrincipalName}/agreementAcceptances
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token}. Обязательный. |
+| Авторизация | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

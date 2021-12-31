@@ -5,12 +5,12 @@ author: psignoret
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: ef5eed15ad094e35d4db49ee4e34def6de5f2861
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 36323f32276b609eeda2430c5a71f4bd5855599d
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094438"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651304"
 ---
 # <a name="appconsentrequest-resource-type"></a>тип ресурса appConsentRequest
 
@@ -22,7 +22,7 @@ ms.locfileid: "59094438"
 
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список appConsentRequests](../api/appconsentrequest-list.md)|[коллекция appConsentRequest](../resources/appconsentrequest.md)|Извлечение коллекции [объектов appConsentRequest](appconsentrequest.md) и их свойств.|
+|[Список appConsentRequests](../api/appconsentapprovalroute-list-appconsentrequests.md)|[коллекция appConsentRequest](../resources/appconsentrequest.md)|Извлечение коллекции [объектов appConsentRequest](appconsentrequest.md) и их свойств.|
 |[Get appConsentRequest](../api/appconsentrequest-get.md)|[appConsentRequest](../resources/appconsentrequest.md)|Ознакомьтесь с свойствами и отношениями [объекта appConsentRequest.](../resources/appconsentrequest.md)|
 |[filterByCurrentUser](../api/appconsentrequest-filterByCurrentUser.md)|[appConsentRequest](../resources/appconsentrequest.md)|Ознакомьтесь с свойствами объектов [appConsentRequest,](../resources/appconsentrequest.md) для которых текущий пользователь является рецензентом, и состояние запроса на согласие пользователя `InProgress` . |
 

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b83344d1fba1d7cb27e73458387e8cf1e29bd092
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 157a1ddfab6ae346b327e7f2efe264f0bb963988
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60983807"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650652"
 ---
 # <a name="list-accesspackageresourcerolescopes"></a>Список accessPackageResourceRoleScopes
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackages/{id}?$expand=access
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод использует параметры запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметры `$select` `$filter` запроса `$expand` OData и OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 

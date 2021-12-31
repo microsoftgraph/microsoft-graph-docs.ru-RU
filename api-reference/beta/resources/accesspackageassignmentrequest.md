@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 765c5259a4295160f7b776a883ef9cc29bb7dc52
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: b899199163541134bbae47749307348211464c24
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59767134"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651388"
 ---
 # <a name="accesspackageassignmentrequest-resource-type"></a>тип ресурса accessPackageAssignmentRequest
 
@@ -18,14 +18,14 @@ ms.locfileid: "59767134"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [Azure AD Entitlement Management](entitlementmanagement-root.md)запрос на назначение пакета доступа создается пользователем или от имени пользователя, который хочет получить назначение пакета доступа. Если запрос является успешным, с любыми необходимыми утверждениями, пользователь получает назначение пакета доступа и является субъектом этого назначения пакета доступа.  Azure AD также создает запросы на назначение пакетов доступа автоматически для отслеживания удаления доступа.
+В [Azure AD Entitlement Management](entitlementmanagement-overview.md)запрос на назначение пакета доступа создается пользователем или от имени пользователя, который хочет получить назначение пакета доступа. Если запрос является успешным, с любыми необходимыми утверждениями, пользователь получает назначение пакета доступа и является субъектом этого назначения пакета доступа.  Azure AD также создает запросы на назначение пакетов доступа автоматически для отслеживания удаления доступа.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список accessPackageAssignmentRequests](../api/accesspackageassignmentrequest-list.md) | [accessPackageAssignmentRequest collection](accesspackageassignmentrequest.md) | Извлечение списка **объектов accesspackageassignmentrequest.** |
-| [Создание accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Создание нового **accessPackageAssignmentRequest**. |
+| [Список accessPackageAssignmentRequests](../api/entitlementmanagement-list-accesspackageassignmentrequests.md) | [accessPackageAssignmentRequest collection](accesspackageassignmentrequest.md) | Извлечение списка **объектов accesspackageassignmentrequest.** |
+| [Создание accessPackageAssignmentRequest](../api/entitlementmanagement-post-accesspackageassignmentrequests.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Создание нового **accessPackageAssignmentRequest**. |
 | [Получить accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Чтение свойств и связей объекта **accessPackageAssignmentRequest.** |
 | [Удаление accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-delete.md) |Нет | Удаление **accessPackageAssignmentRequest**. |
 |[filterByCurrentUser](../api/accesspackageassignmentrequest-filterbycurrentuser.md)|[accessPackageAssignmentRequest collection](../resources/accesspackageassignmentrequest.md)|Извлечение списка **объектов accessPackageAssignmentRequest,** фильтруемых на входе пользователя.|
@@ -41,18 +41,18 @@ ms.locfileid: "59767134"
 |id|String| Только для чтения.|
 |isValidationOnly|Boolean|True, если запрос не обрабатывается для назначения.|
 |обоснование|Строка|Предоставлено обоснование запроса.|
-|requestState|Строка|Один `PendingApproval` из `Canceled` , , , , ,  `Denied` или `Delivering` `Delivered` `PartiallyDelivered` `DeliveryFailed` `Submitted` `Scheduled` . Только для чтения.|
-|requestStatus|String|Дополнительные сведения о состоянии обработки запросов. Только для чтения.|
-|requestType|String|Один `UserAdd` из `UserRemove` , , или `AdminAdd` `AdminRemove` `SystemRemove` . Запрос от самого пользователя будет иметь requestType или `UserAdd` `UserRemove` . Только для чтения.|
+|requestState|String|Один `PendingApproval` из `Canceled` , , , , ,  `Denied` или `Delivering` `Delivered` `PartiallyDelivered` `DeliveryFailed` `Submitted` `Scheduled` . Только для чтения.|
+|requestStatus|Строка|Дополнительные сведения о состоянии обработки запросов. Только для чтения.|
+|requestType|Строка|Один `UserAdd` из `UserRemove` , , или `AdminAdd` `AdminRemove` `SystemRemove` . Запрос от самого пользователя будет иметь requestType или `UserAdd` `UserRemove` . Только для чтения.|
 |schedule|[requestSchedule](requestschedule.md)| Диапазон дат, которые должен быть назначен запросчику. Только для чтения.|
 |ответы|[коллекция accessPackageAnswer](accesspackageanswer.md)|Ответы, предоставленные запрашивателем для [доступа кPackageQuestions,](accesspackagequestion.md) заданные им во время запроса.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|accessPackage|[accessPackage](../resources/accesspackage.md)|Пакет доступа, связанный с accessPackageAssignmentRequest. Пакет доступа определяет коллекции ролей ресурсов и политики получения доступа к этим ресурсам для одного или более пользователей. Только для чтения. Допускается значение null. <br/><br/> Поддерживает `$expand`.|
-|accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| Для **requestType** или , это назначение пакета `UserAdd` `AdminAdd` доступа, запрашиваемого для создания.  Для **requestType** или , это свойство существующего `UserRemove` `AdminRemove` `SystemRemove` `id` назначения, которые будут удалены.  <br/><br/> Поддерживает `$expand`.|
+|accessPackage|[accessPackage](../resources/accesspackage.md)|Пакет доступа, связанный с accessPackageAssignmentRequest. Пакет доступа определяет коллекции ролей ресурсов и политики получения доступа к этим ресурсам для одного или более пользователей. Только для чтения. Допускается значение null. Поддерживает `$expand`.|
+|accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| Для **requestType** или , это назначение пакета `UserAdd` `AdminAdd` доступа, запрашиваемого для создания.  Для **requestType** или , это свойство существующего `UserRemove` `AdminRemove` `SystemRemove` `id` назначения, которые будут удалены.  Поддерживает `$expand`.|
 |запросчик|[accessPackageSubject](accesspackagesubject.md)| Субъекту, который запрашивал или, если прямое назначение, было назначено. Только для чтения. Допускается значение null. Поддерживает `$expand`.|
 
 

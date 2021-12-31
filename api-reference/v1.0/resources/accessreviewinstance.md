@@ -5,18 +5,18 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 65a51568c16fb49cd96aee789061ba36e47c1e92
-ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
+ms.openlocfilehash: 0b41de1b2400a6bf980d230233cc419fb25bc877
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "61545247"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651318"
 ---
 # <a name="accessreviewinstance-resource-type"></a>тип ресурсов accessReviewInstance
 
 Пространство имен: microsoft.graph
 
-Представляет повторение проверки доступа Azure [AD.](accessreviewsv2-root.md) Система, созданная на основе родительского [доступаReviewScheduleDefinition](accessreviewscheduledefinition.md). Все свойства только для чтения.
+Представляет повторение проверки доступа Azure [AD.](accessreviewsv2-overview.md) Система, созданная на основе родительского [доступаReviewScheduleDefinition](accessreviewscheduledefinition.md). Все свойства только для чтения.
 
 Если экземпляр является частью повторного обзора доступа, экземпляры представляют каждое повторение. Обзор, который не повторяется, будет иметь точно один экземпляр. Экземпляры также представляют каждый уникальный ресурс, который просматривается в определении расписания. Если определение расписания проверяет несколько ресурсов, каждый ресурс будет иметь уникальный экземпляр для каждого повторения.
 
@@ -27,7 +27,7 @@ ms.locfileid: "61545247"
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список accessReviewInstances](../api/accessreviewinstance-list.md)|[accessReviewInstance](../resources/accessreviewinstance.md) collection|Получите список объектов [accessReviewInstance](../resources/accessreviewinstance.md) и их свойств.|
+|[Список accessReviewInstances](../api/accessreviewscheduledefinition-list-instances.md)|[accessReviewInstance](../resources/accessreviewinstance.md) collection|Получите список объектов [accessReviewInstance](../resources/accessreviewinstance.md) и их свойств.|
 |[Получить accessReviewInstance](../api/accessreviewinstance-get.md)|[accessReviewInstance](../resources/accessreviewinstance.md)|Ознакомьтесь с свойствами и отношениями [объекта accessReviewInstance.](../resources/accessreviewinstance.md)|
 |[Обновление accessReviewInstance](../api/accessreviewinstance-update.md)|[accessReviewInstance](../resources/accessreviewinstance.md)|Обновление рецензентов объекта [accessReviewInstance.](../resources/accessreviewinstance.md)|
 |[filterByCurrentUser](../api/accessreviewinstance-filterbycurrentuser.md)|[accessReviewInstance](../resources/accessreviewinstance.md) collection|Возвращает все объекты экземпляра в определение, для которого вызываемая пользователь является рецензентом.|
@@ -44,14 +44,14 @@ ms.locfileid: "61545247"
 |:---|:---|:---|
 | endDateTime | DateTimeOffset | DateTime, когда экземпляр проверки должен завершиться. Тип DatetimeOffset представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Поддерживает `$select`. Только для чтения.|
 | fallbackReviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| Эта коллекция областей рецензентов используется для определения списка рецензентов откатов. Эти рецензенты откатов будут уведомлены о необходимости принятия мер, если пользователи не будут найдены из указанного списка рецензентов. Это может произойти, если либо владелец группы указан в качестве рецензента, но владелец группы не существует, либо менеджер указан в качестве рецензента, но диспетчер пользователя не существует. Поддерживает `$select`.|
-| id | Строка | Уникальный идентификатор экземпляра. Наследуется от [сущности](../resources/entity.md). Поддерживает `$select`. Только для чтения.|
+| id | String | Уникальный идентификатор экземпляра. Наследуется от [сущности](../resources/entity.md). Поддерживает `$select`. Только для чтения.|
 | scope | [accessReviewScope](accessreviewscope.md) | Создан на **основе области** и **экземпляраEnumerationScope** на уровне accessReviewScheduleDefinition. Определяет область пользователей, рассмотренных в группе. Поддерживает `$select` и `$filter` `contains` (только). Только для чтения. |
 | startDateTime | DateTimeOffset | DateTime при запуске экземпляра проверки. Может быть в будущем. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Поддерживает `$select`. Только для чтения. |
 | status | String | Указывает состояние accessReview. Возможные значения: `Initializing` , , , , , , и `NotStarted` `Starting` `InProgress` `Completing` `Completed` `AutoReviewing` `AutoReviewed` . Поддерживает `$select` и `$orderby` `$filter` `eq` (только). Только для чтения.|
 | рецензенты   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| Эта коллекция областей обзора доступа используется для определения того, кто такие рецензенты. Поддерживает `$select`. Примеры вариантов назначения рецензентов см. в примере Назначение рецензентов определению обзора доступа с помощью [API microsoft Graph.](/graph/accessreviews-scope-concept)|
 
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |решения|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) collection|Каждый основной объект, рассмотренный в **accessReviewInstance,** имеет элемент решения, представляющий, были ли они утверждены, отклонены или еще не рассмотрены.|

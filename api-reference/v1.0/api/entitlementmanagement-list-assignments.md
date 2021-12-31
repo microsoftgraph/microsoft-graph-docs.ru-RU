@@ -5,18 +5,18 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 2304102961ce44f1bab74796394b8887803a985f
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 9d6b8aaeaf274f53354db77ca06988c19d928bdb
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61346619"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651507"
 ---
 # <a name="list-assignments"></a>Перечисление заданий
 
 Пространство имен: microsoft.graph
 
-В [управлении правами Azure AD](../resources/entitlementmanagement-root.md)извлекайте список [объектов accessPackageAssignment.](../resources/accesspackageassignment.md)
+В [управлении правами Azure AD](../resources/entitlementmanagement-overview.md)извлекайте список [объектов accessPackageAssignment.](../resources/accesspackageassignment.md)
 
 Для администраторов, доступных по каталогам, в итоговом списке содержатся все назначения, текущие и просроченные, которые вызываемая имеет доступ к считывке во всех каталогах и пакетах доступа.  Если звонивший от имени делегирования пользователя, которому назначены только делегированная административная роль в каталоге, запрос должен предоставить фильтр, чтобы указать определенный пакет доступа, например: `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'` .
 
@@ -29,7 +29,7 @@ ms.locfileid: "61346619"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
+| Для приложений                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -58,7 +58,7 @@ GET /identityGovernance/entitlementManagement/assignments
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Носитель \{токен\}. Обязательный. |
+| Authorization | Носитель \{токен\}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

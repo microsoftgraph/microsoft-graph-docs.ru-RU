@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 99252733e6356b729d3904da21e78cd3372a685f
-ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
+ms.openlocfilehash: 268ead24793467f268ce0833ae88fbefd575bd90
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "61545303"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650505"
 ---
 # <a name="accessreviewinstance-resource-type"></a>тип ресурсов accessReviewInstance
 
@@ -20,7 +20,7 @@ ms.locfileid: "61545303"
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Представляет повторение проверки доступа Azure [AD.](accessreviewsv2-root.md) Если родительский [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) является повторяемой проверкой доступа, экземпляры представляют каждое повторение. Обзор, который не повторяется, будет иметь точно один экземпляр. Экземпляры также представляют каждую уникальную группу, проверяемую в определении расписания. Если определение расписания проверяет несколько групп, каждая группа будет иметь уникальный экземпляр для каждого повторения.
+Представляет повторение проверки доступа Azure [AD.](accessreviewsv2-overview.md) Если родительский [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) является повторяемой проверкой доступа, экземпляры представляют каждое повторение. Обзор, который не повторяется, будет иметь точно один экземпляр. Экземпляры также представляют каждую уникальную группу, проверяемую в определении расписания. Если определение расписания проверяет несколько групп, каждая группа будет иметь уникальный экземпляр для каждого повторения.
 
 Каждый **accessReviewInstance содержит** список решений, которые могут приниматься рецензентами. [](accessreviewinstancedecisionitem.md) Существует одно решение для каждого проверяемого удостоверения.
 
@@ -28,7 +28,7 @@ ms.locfileid: "61545303"
 
 | Метод | Возвращаемый тип | Описание |
 |:---------------|:--------|:----------|
-|[Список accessReviewInstances](../api/accessreviewinstance-list.md) | [accessReviewInstance](accessreviewinstance.md) collection | Получите список объектов [accessReviewInstance](../resources/accessreviewinstance.md) и их свойств. |
+|[Список accessReviewInstances](../api/accessreviewscheduledefinition-list-instances.md) | [accessReviewInstance](accessreviewinstance.md) collection | Получите список объектов [accessReviewInstance](../resources/accessreviewinstance.md) и их свойств. |
 |[Получить accessReviewInstance](../api/accessreviewinstance-get.md) | [accessReviewInstance](accessreviewinstance.md) | Ознакомьтесь с свойствами и отношениями [объекта accessReviewInstance.](../resources/accessreviewinstance.md) |
 |[Обновление accessReviewInstance](../api/accessreviewinstance-update.md)|[accessReviewInstance](../resources/accessreviewinstance.md)|Обновление рецензентов объекта [accessReviewInstance.](../resources/accessreviewinstance.md)|
 |[filterByCurrentUser](../api/accessreviewinstance-filterbycurrentuser.md)|[accessReviewInstance](../resources/accessreviewinstance.md) collection|Возвращает все экземпляры в данном [accessReviewScheduleDefinition,](accessreviewscheduledefinition.md) для которого вызываемая пользователь является рецензентом одного или более решений.|
@@ -54,7 +54,7 @@ ms.locfileid: "61545303"
 | рецензенты   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| Эта коллекция областей обзора доступа используется для определения того, кто такие рецензенты. Поддерживает `$select`. Примеры вариантов назначения рецензентов см. в примере Назначение рецензентов определению обзора доступа с помощью [API microsoft Graph.](/graph/accessreviews-scope-concept)|
 
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|

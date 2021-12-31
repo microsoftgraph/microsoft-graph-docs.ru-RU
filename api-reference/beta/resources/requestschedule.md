@@ -1,16 +1,16 @@
 ---
 title: тип ресурса requestSchedule
 description: Расписание запросов может быть включено в запрос назначения пакета доступа и присутствует в назначении пакета доступа.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 8336366a1e6c63b6f76b293b6445f5583a7fd32f
-ms.sourcegitcommit: 01755ac7c0ab7becf28052e05e58567caa8364cd
+ms.openlocfilehash: 7abb130d39a63041386b1d36bded838a7d994f30
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58454033"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650687"
 ---
 # <a name="requestschedule-resource-type"></a>тип ресурса requestSchedule
 
@@ -18,7 +18,7 @@ ms.locfileid: "58454033"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [управлении правами Azure AD](entitlementmanagement-root.md)запрос на назначение пакета доступа создается пользователем, который хочет получить назначение пакета доступа. Этот запрос может включать расписание, когда пользователь хотел бы получить назначение.  Назначение пакета доступа, которое является результатом такого запроса, также имеет расписание.
+В [управлении правами Azure AD](entitlementmanagement-overview.md)запрос на назначение пакета доступа создается пользователем, который хочет получить назначение пакета доступа. Этот запрос может включать расписание, когда пользователь хотел бы получить назначение.  Назначение пакета доступа, которое является результатом такого запроса, также имеет расписание.
 
 ## <a name="properties"></a>Свойства
 

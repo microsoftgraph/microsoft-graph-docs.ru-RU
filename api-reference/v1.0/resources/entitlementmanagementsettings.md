@@ -5,19 +5,19 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d3b2e92db3119b302e280dd0f209af2e93a693c1
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 3f8ce8cdbc275ab32a5a84164716226fb6d2dddf
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242702"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61649699"
 ---
 # <a name="entitlementmanagementsettings-resource-type"></a>тип ресурса entitlementManagementSettings
 
 Пространство имен: microsoft.graph
 
 
-Представляет параметры, которые контролируют поведение управления правами [Azure AD.](entitlementmanagement-root.md)  Этот ресурс не включает параметр создателей каталога; чтобы просмотреть или изменить членство создателей каталога в роли, используйте [API](unifiedroleassignment.md) назначений ролей с поставщиком RBAC управления правами.
+Представляет параметры, которые контролируют поведение управления правами [Azure AD.](entitlementmanagement-overview.md) Этот ресурс не включает параметр создателей каталога; чтобы просмотреть или изменить членство создателей каталога в роли, используйте [API](unifiedroleassignment.md) назначений ролей с поставщиком RBAC управления правами.
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
@@ -32,7 +32,7 @@ ms.locfileid: "61242702"
 |externalUserLifecycleAction|accessPackageExternalUserLifecycleAction|Автоматическое действие, которое служба должна принять при удалении последнего назначения пакета доступа внешнего пользователя. Допустимые значения: `none`, `blockSignIn`, `blockSignInAndDelete`, `unknownFutureValue`.|
 |id|Строка|Константа. Только для чтения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 ## <a name="json-representation"></a>Представление в формате JSON
 Ниже указано представление ресурса в формате JSON.

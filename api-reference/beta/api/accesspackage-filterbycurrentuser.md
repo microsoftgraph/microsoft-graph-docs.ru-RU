@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b9d64d8132da95dc57ad973e65c2eb23b95b322d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ece5983ef77b0a8375571cc723a664deeb779258
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60983857"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650554"
 ---
 # <a name="accesspackage-filterbycurrentuser"></a>accessPackage: filterByCurrentUser
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [Azure AD Entitlement Management](../resources/entitlementmanagement-root.md)извлекайте список объектов [accessPackage,](../resources/accesspackage.md) фильтруемых на входе пользователя.
+В [Azure AD Entitlement Management](../resources/entitlementmanagement-overview.md)извлекайте список объектов [accessPackage,](../resources/accesspackage.md) фильтруемых на входе пользователя.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -35,7 +35,7 @@ ms.locfileid: "60983857"
 }
 -->
 ``` http
-GET /identityGovernance/entitlementManagement/accessPackages/filterByCurrentUser
+GET /identityGovernance/entitlementManagement/accessPackages/filterByCurrentUser(on='allowedRequestor')
 ```
 
 ## <a name="function-parameters"></a>Параметры функции
@@ -43,14 +43,14 @@ GET /identityGovernance/entitlementManagement/accessPackages/filterByCurrentUser
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|on|[accessPackageFilterByCurrentUserOptions](../resources/accesspackage-accesspackagefilterbycurrentuseroptions.md)|Список текущих пользовательских параметров, которые можно использовать для фильтрации в списке пакетов доступа.|
+|on|[accessPackageFilterByCurrentUserOptions](../resources/accesspackage-accesspackagefilterbycurrentuseroptions.md)|Список текущих пользовательских параметров, которые можно использовать для фильтрации в списке пакетов доступа. Допустимо значение `allowedRequestor` .|
 
 - `allowedRequestor` используется для получения объектов, для которых входя в нее пользователь может `accessPackage` отправлять запросы доступа. В итоговом списке содержатся все пакеты доступа, которые могут запрашиваться вызываемой по всем каталогам.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

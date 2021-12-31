@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: fe6b12617b1d36dd7f7dc1baec0aa4d804b18175
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 804ce875da9e2baffa5d8941d990b2a3beac8fc4
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61341818"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651346"
 ---
 # <a name="get-accesspackage"></a>Получить accessPackage
 
@@ -27,7 +27,7 @@ ms.locfileid: "61341818"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
+| Для приложений                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,13 +43,11 @@ GET /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}
 
 Этот метод поддерживает параметр `$select` [запроса OData для](/graph/query-parameters) получения определенных свойств.
 
-
-
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Носитель \{токен\}. Обязательный. |
+| Authorization | Носитель \{токен\}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

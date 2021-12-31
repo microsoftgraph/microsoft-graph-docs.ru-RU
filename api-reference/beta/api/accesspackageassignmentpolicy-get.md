@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 3a5bdbd436f6079bba7d1472f743b93226306649
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 97aff1760c207a2f6b6f3f32603acaef850e408a
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60988350"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650855"
 ---
 # <a name="get-accesspackageassignmentpolicy"></a>Получить accessPackageAssignmentPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "60988350"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [управлении правами Azure AD](../resources/entitlementmanagement-root.md)извлекайте свойства и связи объекта [accessPackageAssignmentPolicy.](../resources/accesspackageassignmentpolicy.md)
+В [управлении правами Azure AD](../resources/entitlementmanagement-overview.md)извлекайте свойства и связи объекта [accessPackageAssignmentPolicy.](../resources/accesspackageassignmentpolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{i
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр `$select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 

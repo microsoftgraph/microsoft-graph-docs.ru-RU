@@ -5,18 +5,18 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 82eaa0d9f95523829c0e0154d36cf8653116ee57
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: db302ae0990d3dd83d8f1d9a80da6f6628bae64f
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226920"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651423"
 ---
 # <a name="accessreviewinstancedecisionitem-resource-type"></a>accessReviewInstanceDecisionItem type
 
 Пространство имен: microsoft.graph
 
-Представляет решение о проверке доступа к Azure [AD](accessreviewsv2-root.md) в экземпляре проверки. Это решение является определением доступа удостоверения к ресурсу для данного [accessReviewInstance](accessreviewinstance.md). accessReviewInstanceDecisionItem является открытым типом и позволяет передавать другие свойства.
+Представляет решение о проверке доступа к Azure [AD](accessreviewsv2-overview.md) в экземпляре проверки. Это решение является определением доступа удостоверения к ресурсу для данного [accessReviewInstance](accessreviewinstance.md). accessReviewInstanceDecisionItem является открытым типом и позволяет передавать другие свойства.
 
 Каждый элемент решения является системным на основе родительского [accessReviewInstance.](accessreviewinstance.md)
 
@@ -25,7 +25,7 @@ ms.locfileid: "61226920"
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[List accessReviewInstanceDecisionItems](../api/accessreviewinstancedecisionitem-list.md)|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) collection|Получите список объектов [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) и их свойств.|
+|[List accessReviewInstanceDecisionItems](../api/accessreviewinstance-list-decisions.md)|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) collection|Получите список объектов [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) и их свойств.|
 |[Get accessReviewInstanceDecisionItem](../api/accessreviewinstancedecisionitem-get.md)|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)|Ознакомьтесь с свойствами и отношениями [объекта accessReviewInstanceDecisionItem.](../resources/accessreviewinstancedecisionitem.md)|
 |[Обновление accessReviewInstanceDecisionItem](../api/accessreviewinstancedecisionitem-update.md)|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md)|Обновление свойств объекта [accessReviewInstanceDecisionItem.](../resources/accessreviewinstancedecisionitem.md)|
 |[filterByCurrentUser](../api/accessreviewinstancedecisionitem-filterbycurrentuser.md)|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) collection|Возвращает элементы решения, для которых вызываемая пользователь является рецензентом.|
@@ -39,7 +39,7 @@ ms.locfileid: "61226920"
 |applyResult|Строка|Результат применения решения. Возможные значения: `New` `AppliedSuccessfully` , , и `AppliedWithUnknownFailure` `AppliedSuccessfullyButObjectNotFound` `ApplyNotSupported` . Поддерживает `$select` и `$orderby` `$filter` `eq` (только). Только для чтения.|
 |решение|Строка|Результат проверки. Возможные значения: `Approve` `Deny` , , или `NotReviewed` `DontKnow` . Поддерживает `$select` и `$orderby` `$filter` `eq` (только). |
 |id|Строка| Идентификатор решения. Наследуется от [сущности](../resources/entity.md). Поддерживает `$select`. Только для чтения.|
-|обоснование|Строка|Обоснование, оставленное рецензентом при принятии решения.|
+|обоснование|String|Обоснование, оставленное рецензентом при принятии решения.|
 |основной|[identity](../resources/identity.md)|Каждый элемент решения в обзоре доступа представляет доступ директора к ресурсу. Это свойство представляет сведения о принципе. Например, если элемент решения представляет доступ пользователя "Bob" к группе "Sales", то основным элементом является "Bob", а ресурсом является "Sales". Основные принципы могут быть двух типов : userIdentity и servicePrincipalIdentity. Поддерживает `$select`. Только для чтения.|
 |principalLink|Строка|Ссылка на основной объект. Например, `https://graph.microsoft.com/v1.0/users/a6c7aecb-cbfd-4763-87ef-e91b4bd509d9`. Только для чтения.|
 |рекомендация|Строка|Сгенерированная системой рекомендация для решения об утверждении, основанном на последнем интерактивном входе в клиент. Рекомендуется утвердить, если вход в нее находится в течение тридцати дней с начала проверки. Рекомендуется отказать, если вход превышает 30 дней с начала проверки. Рекомендация недоступна в противном случае. Возможные значения: `Approve` `Deny` , или `NoInfoAvailable` . Поддерживает `$select` и `$orderby` `$filter` `eq` (только). Только для чтения.|
@@ -48,7 +48,7 @@ ms.locfileid: "61226920"
 |reviewedBy|[userIdentity](../resources/useridentity.md)| Идентификатор рецензента. Поддерживает `$select`. Только для чтения.|
 |reviewedDateTime|DateTimeOffset| Время, за которое было принято решение о проверке. Поддерживает `$select`. Только для чтения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

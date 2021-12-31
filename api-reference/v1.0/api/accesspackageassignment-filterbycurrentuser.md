@@ -5,18 +5,18 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 74843c0b8ca2f47959e448f91a1c51df107cdeb7
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 0dd6eee1b8d5813e629eac036262add9271ade47
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61342889"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651219"
 ---
 # <a name="accesspackageassignment-filterbycurrentuser"></a>accessPackageAssignment: filterByCurrentUser
 Пространство имен: microsoft.graph
 
 
-В [Azure AD Entitlement Management](../resources/entitlementmanagement-root.md)вы можете получить список объектов [accessPackageAssignment,](../resources/accesspackageassignment.md) фильтруемых для пользователя, входив в него.
+В [Azure AD Entitlement Management](../resources/entitlementmanagement-overview.md)вы можете получить список объектов [accessPackageAssignment,](../resources/accesspackageassignment.md) фильтруемых для пользователя, входив в него.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -42,7 +42,7 @@ GET /identityGovernance/entitlementManagement/assignments/filterByCurrentUser(on
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|on|accessPackageAssignmentFilterByCurrentUserOptions|Список пользовательских параметров, которые можно использовать для фильтрации в списке назначений пакета доступа.|
+|on|accessPackageAssignmentFilterByCurrentUserOptions|Список пользовательских параметров, которые можно использовать для фильтрации в списке назначений пакета доступа. Возможные значения: `target` , `createdBy` . |
 
 - `target` используется для получения объектов, в которых целевым объектом является пользователь, заявив `accessPackageAssignment` о подписании. В итоговом списке содержатся все назначения, текущие и просроченные, для вызываемого во всех каталогах и пакетах доступа.
 
@@ -51,7 +51,7 @@ GET /identityGovernance/entitlementManagement/assignments/filterByCurrentUser(on
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

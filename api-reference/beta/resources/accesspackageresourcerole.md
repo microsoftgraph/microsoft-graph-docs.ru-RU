@@ -1,16 +1,16 @@
 ---
 title: тип ресурса accessPackageResourceRole
 description: Ссылка на роль, определенную в ресурсе.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 1194c27e929a14f738384441ab57f5090d8b1149
-ms.sourcegitcommit: 8b23038be1141d7f22eb61de6aafdb16d4f9c826
+ms.openlocfilehash: 5652e9c867b235bc87cf67584056ce4425f1da80
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53401609"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651191"
 ---
 # <a name="accesspackageresourcerole-resource-type"></a>тип ресурса accessPackageResourceRole
 
@@ -18,7 +18,7 @@ ms.locfileid: "53401609"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [управлении правами Azure AD](entitlementmanagement-root.md)роль ресурса пакета доступа является ссылкой на роль, определенную в ресурсе. Эта ссылка может быть использована после создания пакета доступа для указания ролей каждого из ресурсов каталога, в которые должен доставить пакет доступа, путем создания области ролей ресурсов пакета [доступа.](../api/accesspackage-post-accesspackageresourcerolescopes.md)
+В [управлении правами Azure AD](entitlementmanagement-overview.md)роль ресурса пакета доступа является ссылкой на роль, определенную в ресурсе. Эта ссылка может быть использована после создания пакета доступа для указания ролей каждого из ресурсов каталога, в которые должен доставить пакет доступа, путем создания области ролей ресурсов пакета [доступа.](../api/accesspackage-post-accesspackageresourcerolescopes.md)
 
 ## <a name="methods"></a>Методы
 
@@ -30,13 +30,13 @@ ms.locfileid: "53401609"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|description|String|Описание роли ресурса.|
-|displayName|String|Отображение имени роли ресурса, например роли, определенной приложением.|
+|description|Строка|Описание роли ресурса.|
+|displayName|Строка|Отображение имени роли ресурса, например роли, определенной приложением.|
 |id|String| Только для чтения.|
-|OriginId|String|Уникальный идентификатор роли ресурса в системе происхождения. Для сайта SharePoint Online originId будет номером последовательности роли на сайте. |
+|OriginId|Строка|Уникальный идентификатор роли ресурса в системе происхождения. Для сайта SharePoint Online originId будет номером последовательности роли на сайте. |
 |originSystem|String|Тип ресурса в системе происхождения, например `SharePointOnline` , `AadApplication` или `AadGroup` .|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|

@@ -5,12 +5,12 @@ author: psignoret
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: f4fd22b99e0d55a4caed31daed9d35e1ff345d6e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 320993875b7a4e528881fc437c772006f58f775b
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59083959"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650890"
 ---
 # <a name="userconsentrequest-resource-type"></a>тип ресурса userConsentRequest
 
@@ -22,7 +22,7 @@ ms.locfileid: "59083959"
 
 Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список userConsentRequests](../api/userconsentrequest-list.md)|[коллекция userConsentRequest](../resources/userconsentrequest.md)|Извлечение коллекции [объектов userConsentRequest](userconsentrequest.md) для [приложенияConsentRequest.](appconsentrequest.md)|
+|[Список userConsentRequests](../api/appconsentrequest-list-userconsentrequests.md)|[коллекция userConsentRequest](../resources/userconsentrequest.md)|Извлечение коллекции [объектов userConsentRequest](userconsentrequest.md) для [приложенияConsentRequest.](appconsentrequest.md)|
 |[Get userConsentRequest](../api/userconsentrequest-get.md)|[userConsentRequest](../resources/userconsentrequest.md)|Ознакомьтесь с свойствами и отношениями [объекта userConsentRequest.](../resources/userconsentrequest.md)|
 |[filterByCurrentUser](../api/userconsentrequest-filterByCurrentUser.md)|[коллекция userConsentRequest](../resources/userconsentrequest.md)|Ознакомьтесь с свойствами [объектов userConsentRequest](../resources/userconsentrequest.md) для [приложенияConsentRequest,](appconsentrequest.md) для которого текущий пользователь является рецензентом.|
 
@@ -35,8 +35,8 @@ ms.locfileid: "59083959"
 |createdBy|[identitySet](../resources/identityset.md)|Пользователь, создавший запрос.|
 |createdDateTime|DateTimeOffset|Дата и время создания запроса. Сведения о времени и дате представлены в формате ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Поддерживает `$filter` `eq` (только) и `$orderby` .|
 |customData|Строка|Свободное текстовое поле для определения настраиваемой информации для запроса согласия пользователя. Не используется.|
-|id|String|Идентификатор запроса. |
-|reason|Строка|Обоснование пользователем необходимости доступа к приложению. Поддерживает `$filter` `eq` (только) и `$orderby` .  |
+|id|Строка|Идентификатор запроса. |
+|reason|String|Обоснование пользователем необходимости доступа к приложению. Поддерживает `$filter` `eq` (только) и `$orderby` .  |
 |status|String|Состояние запроса на согласие приложения пользователя. Возможные значения: `Initializing` , `InProgress` и `Completed` . Поддерживает `$filter` `eq` (только) и `$orderby` . |
 
 ## <a name="relationships"></a>Отношения

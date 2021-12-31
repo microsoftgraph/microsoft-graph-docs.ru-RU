@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: isabelleatmsft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 44f8d08757b93836c58a2dbf73dbac88e9ff7909
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: cf22b9a31f04c4d08f70f887c6b6beea8c1468fa
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60987859"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650715"
 ---
 # <a name="get-accessreviewinstance"></a>Получить accessReviewInstance
 
@@ -20,7 +20,7 @@ ms.locfileid: "60987859"
 
 Извлечение [объекта accessReviewInstance](../resources/accessreviewinstance.md) с помощью идентификатора accessReviewInstance и родительского [доступаReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md) Это возвращает все свойства экземпляра, за исключением связанного [доступаReviewInstanceDecisionItems](../resources/accessreviewinstancedecisionitem.md).
 
-Чтобы получить решения в экземпляре, используйте [list accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem-list.md).
+Чтобы получить решения в экземпляре, используйте [list accessReviewInstanceDecisionItem](accessreviewinstance-list-decisions.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -31,7 +31,7 @@ ms.locfileid: "60987859"
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
-Чтобы вызвать этот API, подписанный пользователем должен также быть в роли каталога, который позволяет ему читать обзор доступа, или пользователь может быть назначен в качестве рецензента в обзоре доступа.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviewsv2-root.md)
+Чтобы вызвать этот API, подписанный пользователем должен также быть в роли каталога, который позволяет ему читать обзор доступа, или пользователь может быть назначен в качестве рецензента в обзоре доступа.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviewsv2-overview.md)
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -118,7 +118,7 @@ Content-type: application/json
 ## <a name="see-also"></a>См. также
 
 - [Получить accessReviewScheduleDefinition](accessreviewscheduledefinition-get.md)
-- [List accessReviewInstance](accessreviewinstance-list.md)
+- [List accessReviewInstance](accessreviewscheduledefinition-list-instances.md)
 
 
 <!--

@@ -2,15 +2,15 @@
 title: accessReviewNotificationRecipientItem resource type
 description: Определяет пользователей или группы, которые будут получать уведомления о просмотре доступа к уведомлениям.
 author: isabelleatmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 3d6ed767f1350f3e4a43a1b31363920ffb58a9b5
-ms.sourcegitcommit: 7abb0672a38a6d9b11a2e0d2cc221222cb8358bb
+ms.openlocfilehash: 00904cf1ac474d418629a0bba19d925698d72cf8
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52896744"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650491"
 ---
 # <a name="accessreviewnotificationrecipientitem-resource-type"></a>accessReviewNotificationRecipientItem resource type
 
@@ -21,16 +21,16 @@ ms.locfileid: "52896744"
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
 
-Представляет событие уведомления об уведомлении о просмотре доступа Azure [AD](accessreviewsv2-root.md) в экземпляре проверки. Этот элемент содержит тип шаблона электронной почты и свойства получателей, чтобы включить отправку определенных типов уведомлений для данного экземпляра [обзора доступа.](accessreviewinstance.md)
+Представляет событие уведомления об уведомлении о просмотре доступа Azure [AD](accessreviewsv2-overview.md) в экземпляре проверки. Этот элемент содержит тип шаблона электронной почты и свойства получателей, чтобы включить отправку определенных типов уведомлений для данного экземпляра [обзора доступа.](accessreviewinstance.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                     | Тип     | Описание                          |
 | :--------------------------- | :------  | :----------                          |
-| notificationTemplateType  |String  | Указывает тип отправки электронной почты для проверки доступа. Поддерживаемый тип шаблона — это отправка получателям уведомлений о `CompletedAdditionalRecipients` завершении проверки.|
+| notificationTemplateType  |Строка  | Указывает тип отправки электронной почты для проверки доступа. Поддерживаемый тип шаблона — это отправка получателям уведомлений о `CompletedAdditionalRecipients` завершении проверки.|
 | notificationRecipientScope |[accessReviewNotificationRecipientScope](../resources/accessreviewnotificationrecipientscope.md)  | Определяет получателя сообщения уведомления.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 

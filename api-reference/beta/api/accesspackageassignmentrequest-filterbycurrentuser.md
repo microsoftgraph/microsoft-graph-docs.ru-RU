@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: f86533c7d0d40e1ec99d8150b7df18a240547a65
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3e5380a15446e0d5454623444b47162e557939d5
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60983519"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650757"
 ---
 # <a name="accesspackageassignmentrequest-filterbycurrentuser"></a>accessPackageAssignmentRequest: filterByCurrentUser
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [Azure AD Entitlement Management](../resources/entitlementmanagement-root.md)вы можете получить список объектов [accessPackageAssignmentRequest,](../resources/accesspackageassignmentrequest.md) фильтруемых для пользователя, входив в него.
+В [Azure AD Entitlement Management](../resources/entitlementmanagement-overview.md)вы можете получить список объектов [accessPackageAssignmentRequest,](../resources/accesspackageassignmentrequest.md) фильтруемых для пользователя, входив в него.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -35,7 +35,7 @@ ms.locfileid: "60983519"
 }
 -->
 ``` http
-GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/filterByCurrentUser
+GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/filterByCurrentUser(on='parameterValue')
 ```
 
 ## <a name="function-parameters"></a>Параметры функции
@@ -43,7 +43,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/fi
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|on|[accessPackageAssignmentRequestFilterByCurrentUserOptions](../resources/accesspackageassignmentrequest-accesspackageassignmentrequestfilterbycurrentuseroptions.md)|Список текущих пользовательских параметров, которые можно использовать для фильтрации в списке запросов на назначение пакета доступа.|
+|on|[accessPackageAssignmentRequestFilterByCurrentUserOptions](../resources/accesspackageassignmentrequest-accesspackageassignmentrequestfilterbycurrentuseroptions.md)|Список текущих пользовательских параметров, которые можно использовать для фильтрации в списке запросов на назначение пакета доступа. Возможные значения `target` , `createdBy` `approver` .|
 
 - `target` используется для получения объектов, в которых целевым объектом является пользователь, заявив `accessPackageAssignmentRequest` о подписании. В итоговом списке содержатся все запросы назначения, текущие и просроченные, которые запрашивались вызываемой или вызываемой, во всех каталогах и пакетах доступа.
 
@@ -54,7 +54,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/fi
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

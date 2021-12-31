@@ -5,19 +5,19 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ffe74b64b41c6bf9aeea014d2aff83277aaa086d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1e3d5aa134eee073e9e5654f034f7609f3352929
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60983617"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650876"
 ---
 # <a name="accesspackageassignment-filterbycurrentuser"></a>accessPackageAssignment: filterByCurrentUser
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [Azure AD Entitlement Management](../resources/entitlementmanagement-root.md)вы можете получить список объектов [accessPackageAssignment,](../resources/accesspackageassignment.md) фильтруемых для пользователя, входив в него.
+В [Azure AD Entitlement Management](../resources/entitlementmanagement-overview.md)вы можете получить список объектов [accessPackageAssignment,](../resources/accesspackageassignment.md) фильтруемых для пользователя, входив в него.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -35,7 +35,7 @@ ms.locfileid: "60983617"
 }
 -->
 ``` http
-GET /identityGovernance/entitlementManagement/accessPackageAssignments/filterByCurrentUser
+GET /identityGovernance/entitlementManagement/accessPackageAssignments/filterByCurrentUser(on='parameterValue')
 ```
 
 ## <a name="function-parameters"></a>Параметры функции
@@ -43,7 +43,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments/filterByC
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|on|[accessPackageAssignmentFilterByCurrentUserOptions](../resources/accesspackageassignment-accesspackageassignmentfilterbycurrentuseroptions.md)|Список текущих пользовательских параметров, которые можно использовать для фильтрации в списке назначений пакетов доступа.|
+|on|[accessPackageAssignmentFilterByCurrentUserOptions](../resources/accesspackageassignment-accesspackageassignmentfilterbycurrentuseroptions.md)|Список текущих пользовательских параметров, которые можно использовать для фильтрации в списке назначений пакетов доступа. Возможные значения: `target` , `createdBy` . |
 
 - `target` используется для получения объектов, в которых целевым объектом является пользователь, заявив `accessPackageAssignment` о подписании. В итоговом списке содержатся все назначения, текущие и просроченные, для вызываемого во всех каталогах и пакетах доступа.
 
@@ -52,7 +52,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments/filterByC
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

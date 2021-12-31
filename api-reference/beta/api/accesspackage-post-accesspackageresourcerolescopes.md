@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 517406d67ba4892b45d9205056a69f553c0cccc7
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5662ba7b6f1c524a0f6c12684e59ff98a60d9da6
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60983749"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650883"
 ---
 # <a name="create-accesspackageresourcerolescope"></a>Создание accessPackageResourceRoleScope
 
@@ -42,7 +42,7 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/accessPackage
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token}. Обязательный. |
+| Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -59,7 +59,7 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/accessPackage
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса.  До этого запроса ресурс пакета доступа для группы уже должен быть добавлен в каталог пакета доступа, содержащий `1d08498d-72a1-403f-8511-6b1f875746a0` `b31fe1f1-3651-488f-bd9a-1711887fd4ca` этот пакет доступа.  Этот ресурс можно было бы добавить в каталог, [создав запрос ресурса](accesspackageresourcerequest-post.md)пакета доступа.
+Ниже приведен пример запроса.  До этого запроса ресурс пакета доступа для группы уже должен быть добавлен в каталог пакета доступа, содержащий `1d08498d-72a1-403f-8511-6b1f875746a0` `b31fe1f1-3651-488f-bd9a-1711887fd4ca` этот пакет доступа.  Этот ресурс можно было бы добавить в каталог, [создав запрос ресурса](entitlementmanagement-post-accesspackageresourcerequests.md)пакета доступа.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

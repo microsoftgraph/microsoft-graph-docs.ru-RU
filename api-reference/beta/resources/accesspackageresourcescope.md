@@ -1,16 +1,16 @@
 ---
 title: тип ресурса accessPackageResourceScope
 description: В управлении правами Azure AD область ресурсов пакета доступа является ссылкой на область в ресурсе.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 6da0211cad6dcca225f4c9848216eda2deaf7b0a
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: f403f6b2d7c88d1e24c579578c2c1b872bbbecdf
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467178"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651234"
 ---
 # <a name="accesspackageresourcescope-resource-type"></a>тип ресурса accessPackageResourceScope
 
@@ -18,7 +18,7 @@ ms.locfileid: "53467178"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В управлении правами [Azure AD](entitlementmanagement-root.md)область ресурсов пакета доступа является ссылкой на область в ресурсе для тех ресурсов, которые имеют несколько областей.
+В управлении правами [Azure AD](entitlementmanagement-overview.md)область ресурсов пакета доступа является ссылкой на область в ресурсе для тех ресурсов, которые имеют несколько областей.
 
 Область ресурсов пакета доступа для ресурса, который уже добавлен в пакет доступа, можно определить с помощью списка [accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) для возврата коллекции объектов [accessPackageResourceRoleScope.](accesspackageresourcerolescope.md)
 
@@ -28,16 +28,16 @@ ms.locfileid: "53467178"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|description|String|Описание области.|
-|displayName|String|Имя отображения области.|
+|description|Строка|Описание области.|
+|displayName|Строка|Имя отображения области.|
 |id|String| Только для чтения.|
-|isRootScope|Логический|Верно, если области расположены в иерархии и это верхняя или корневая область ресурса.|
-|OriginId|String|Уникальный идентификатор области в ресурсе, как определено в системе происхождения.|
-|originSystem|String|Система происхождения для области.|
-|roleOriginId|String|Система происхождения для роли, если отличается.|
+|isRootScope|Boolean|Верно, если области расположены в иерархии и это верхняя или корневая область ресурса.|
+|OriginId|Строка|Уникальный идентификатор области в ресурсе, как определено в системе происхождения.|
+|originSystem|Строка|Система происхождения для области.|
+|roleOriginId|Строка|Система происхождения для роли, если отличается.|
 |url|String|Локатор ресурсов для области.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|

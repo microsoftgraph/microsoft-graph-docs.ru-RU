@@ -1,16 +1,16 @@
 ---
 title: тип ресурса entitlementManagementSettings
 description: Представляет параметры для управления правами Azure AD для всех клиентов.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: d34a04d0f8eb3bdff16befd43870b75d473a8d0c
-ms.sourcegitcommit: 4888ac7504533344c4fc6828e2a06a002a1d72d3
+ms.openlocfilehash: d578781ed4b9b03d9a375a7cd9875df2f6fc4d0f
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53350980"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61649782"
 ---
 # <a name="entitlementmanagementsettings-resource-type"></a>тип ресурса entitlementManagementSettings
 
@@ -18,7 +18,7 @@ ms.locfileid: "53350980"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет параметры, которые контролируют поведение управления правами [Azure AD.](entitlementmanagement-root.md)  Этот ресурс не включает параметр создателей каталога; чтобы просмотреть или изменить членство создателей каталога в роли, используйте [API](unifiedroleassignment.md) назначений ролей с поставщиком RBAC управления правами.
+Представляет параметры, которые контролируют поведение управления правами [Azure AD.](entitlementmanagement-overview.md)  Этот ресурс не включает параметр создателей каталога; чтобы просмотреть или изменить членство создателей каталога в роли, используйте [API](unifiedroleassignment.md) назначений ролей с поставщиком RBAC управления правами.
 
 ## <a name="methods"></a>Методы
 
@@ -34,7 +34,7 @@ ms.locfileid: "53350980"
 |externalUserLifecycleAction|Строка|Один `None` из `BlockSignIn` , или `BlockSignInAndDelete` . |
 |daysUntilExternalUserDeletedAfterBlocked|Int64|Если **externalUserLifecycleAction** — количество дней после блокировки внешнего пользователя до удаления `BlockSignInAndDelete` учетной записи.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

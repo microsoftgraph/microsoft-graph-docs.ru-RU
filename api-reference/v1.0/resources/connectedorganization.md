@@ -5,19 +5,19 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 42ec49fd292f0e7c59002a57f7f4ccaff47c292d
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 30f8ed82aba6a9e4ab22f90dca8f9c912ba2e947
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61242883"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651205"
 ---
 # <a name="connectedorganization-resource-type"></a>тип ресурса connectedOrganization
 
 Пространство имен: microsoft.graph
 
 
-В [управлении правами Azure AD](entitlementmanagement-root.md)подключенная организация является ссылкой на каталог или домен другой организации, пользователи которой могут запрашивать доступ.
+В [управлении правами Azure AD](entitlementmanagement-overview.md)подключенная организация является ссылкой на каталог или домен другой организации, пользователи которой могут запрашивать доступ.
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
@@ -39,7 +39,7 @@ ms.locfileid: "61242883"
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
 |description|Строка|Описание связанной организации.|
-|displayName|Строка|Отображает имя подключенной организации.|
+|displayName|String|Отображает имя подключенной организации. Поддерживает `$filter` (`eq`).|
 |id|String|Только для чтения.|
 |identitySources|[коллекция identitySource](../resources/identitysource.md)|Источники удостоверений в этой связанной организации, один из [azureActiveDirectoryTenant,](azureactivedirectorytenant.md) [domainIdentitySource](domainidentitysource.md) или [externalDomainFederation.](externaldomainfederation.md) Допускается значение null.|
 |modifiedDateTime|DateTimeOffset|*Тип Timestamp представляет сведения о дате и времени с помощью формата ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|

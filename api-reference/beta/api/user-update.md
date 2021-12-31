@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 7dd368db8e59307d7d1598d74d23dcf3dae8b7ec
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 3bd63a0c5c168feba289a65f7830f9a0e03135ea
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226050"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651493"
 ---
 # <a name="update-user"></a>Обновление пользователя
 
@@ -91,7 +91,7 @@ PATCH /users/{id | userPrincipalName}
 |streetAddress|String|Почтовый адрес места работы пользователя.|
 |surname|String|Фамилия пользователя.|
 |usageLocation|String|Двухбуквенный код страны (по стандарту ISO 3166). Необходим для пользователей, которым будут назначены лицензии, в связи с юридическим требованием проверять доступность служб в разных странах. Примеры: `US`, `JP` и `GB`. Значение NULL не допускается. |
-|userPrincipalName|String|Имя субъекта-пользователя (UPN) для пользователя. Это имя используется в качестве имени пользователя для входа через Интернет по стандарту RFC 822. Как правило, оно должно указывать на имя пользователя для электронной почты. Общий формат: псевдоним@домен, при этом домен должен входить в семейство подтвержденных доменов клиента. Это свойство является обязательным при создании пользователя. Доступ к подтвержденным доменам клиента можно получить из свойства **verifiedDomains** объекта [организация](../resources/organization.md).
+|userPrincipalName|String|Имя участника-пользователя. Это имя для входа через Интернет по стандарту RFC 822. В соответствии с соглашением оно должно указывать на имя пользователя для электронной почты. Общий формат: псевдоним@домен. При этом домен должен входить в коллекцию проверенных доменов клиента. Доступ к проверенным доменам клиента можно получить с помощью свойства **verifiedDomains** объекта [organization](../resources/organization.md). <br>ПРИМЕЧАНИЕ. Это свойство не может содержать диакритические знаки. Разрешены только следующие символы `A - Z` `a - z` , , `0 - 9` ` ' . - _ ! # ^ ~` . Полный список разрешенных символов см. в [списке политик имени пользователя.](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts)|
 |userType|String|Строковое значение, с помощью которого можно классифицировать типы пользователей в каталоге, например `Member` и `Guest`.          |
 
 Поскольку ресурс **пользователя** поддерживает [расширения,](/graph/extensibility-overview)вы можете использовать операцию для добавления, обновления или удаления собственных данных, определенных для приложения, в настраиваемом свойстве расширения в существующем экземпляре `PATCH` пользователя. 
@@ -285,9 +285,6 @@ HTTP/1.1 204 No Content
 
 #### <a name="request"></a>Запрос
 
-
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "assign_user_customsecurityattribute_string"
@@ -307,20 +304,6 @@ Content-type: application/json
     }
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/assign-user-customsecurityattribute-string-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/assign-user-customsecurityattribute-string-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/assign-user-customsecurityattribute-string-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Отклик
 <!-- {

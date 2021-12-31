@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 9c247e450d5265083d54476852a07512543e11dd
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 658343132d16c2ad75a07c14e321953eb5372f5c
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60983324"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650722"
 ---
 # <a name="list-accesspackageresources"></a>Список accessPackageResources
 
@@ -18,7 +18,7 @@ ms.locfileid: "60983324"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение списка [объектов accessPackageResource](../resources/accesspackageresource.md) в [accessPackageCatalog](../resources/accesspackagecatalog.md).  Чтобы попросить добавить или удалить [accessPackageResource,](../resources/accesspackageresource.md)используйте [создание accessPackageResourceRequest.](accesspackageresourcerequest-post.md)
+Извлечение списка [объектов accessPackageResource](../resources/accesspackageresource.md) в [accessPackageCatalog](../resources/accesspackagecatalog.md).  Чтобы попросить добавить или удалить [accessPackageResource,](../resources/accesspackageresource.md)используйте [создание accessPackageResourceRequest.](entitlementmanagement-post-accesspackageresourcerequests.md)
 
 ## <a name="permissions"></a>Разрешения
 

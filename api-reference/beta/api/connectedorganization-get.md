@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.prod: governance
 ms.localizationpriority: medium
 doc_type: apiPageType
-ms.openlocfilehash: 9e9d4a877bce930446f0d1f118787472063ce937
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4de9cf6f20eed98b3fe49a6fa5358d27cac4d532
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61005731"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61650645"
 ---
 # <a name="get-connectedorganization"></a>ПодключениеОрганизация
 
@@ -42,13 +42,13 @@ GET /identityGovernance/entitlementManagement/connectedOrganizations/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Например, чтобы получить только источники удостоверений, добавьте `$select=identitySources` . Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр `$select` запроса OData для настройки ответа. Например, чтобы получить только источники удостоверений, добавьте `$select=identitySources` . Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 

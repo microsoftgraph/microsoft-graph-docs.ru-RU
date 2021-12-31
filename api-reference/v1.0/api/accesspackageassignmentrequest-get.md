@@ -5,19 +5,19 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: c4173a60c8d3d4f0a4f11af1c8880b57d6fcfcd0
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: b843849968cbc6f19948923bfceb1661fd45e725
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61340130"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651479"
 ---
 # <a name="get-accesspackageassignmentrequest"></a>Получить accessPackageAssignmentRequest
 
 Пространство имен: microsoft.graph
 
 
-В [управлении правами Azure AD](../resources/entitlementmanagement-root.md)извлекайте свойства и связи объекта [accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)
+В [управлении правами Azure AD](../resources/entitlementmanagement-overview.md)извлекайте свойства и связи объекта [accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,7 +27,7 @@ ms.locfileid: "61340130"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All  |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
+| Для приложений                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +47,7 @@ GET /identityGovernance/entitlementManagement/assignmentRequests/{accessPackageA
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Носитель \{токен\}. Обязательный. |
+| Authorization | Носитель \{токен\}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

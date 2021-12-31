@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 2df1803b8601635eba163aa3abd46d70ee0a5723
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 57165e25102b55bad73f43bcdee56baa8e2dd92e
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089972"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651311"
 ---
 # <a name="agreementacceptance-resource-type"></a>тип ресурса agreementAcceptance
 
 Пространство имен: microsoft.graph
 
-Представляет текущее состояние пользователя в пределах настраиваемых условий использования компании с Azure Active Directory (Azure AD).
+Представляет текущее состояние ответа пользователя на настраиваемые условия соглашения об использовании компании с Azure Active Directory (Azure AD).
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
@@ -26,7 +26,7 @@ ms.locfileid: "59089972"
 |deviceDisplayName|String|Отображающее имя устройства, используемого для принятие соглашения.|
 |deviceId|String|Уникальный идентификатор устройства, используемого для принятие соглашения.|
 |deviceOSType|Строка|Операционная система, используемая для принятие соглашения.|
-|deviceOSVersion|Строка|Версия операционной системы устройства, используемая для принятие соглашения.    |
+|deviceOSVersion|String|Версия операционной системы устройства, используемая для принятие соглашения.    |
 |expirationDateTime|DateTimeOffset|Срок действия даты принятия. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |id|Строка| Идентификатор принятия соглашения. Только для чтения.|
 |recordedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|

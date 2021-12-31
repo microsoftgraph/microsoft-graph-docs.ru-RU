@@ -1,16 +1,16 @@
 ---
 title: тип ресурса agreementFileLocalization
-description: Представляет локализованные файлы политик с условиями соглашения об использовании в Azure Active Directory (Azure AD). Он содержит метаданные о файле соглашения (например, имя, язык и является ли это файл по умолчанию).
-localization_priority: Normal
+description: Представляет локализованные файлы политик условий соглашения об использовании в Azure Active Directory Azure AD. Он содержит метаданные о файле соглашения (например, имя, язык и является ли это файл по умолчанию).
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: raprakasMSFT
-ms.openlocfilehash: 58769f65ceedfb55dc683ad2d014f70a1cc776c4
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: a12aed22d4b2c6678b270d99bcbc3e834d94ac6d
+ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761158"
+ms.lasthandoff: 12/31/2021
+ms.locfileid: "61651177"
 ---
 # <a name="agreementfilelocalization-resource-type"></a>тип ресурса agreementFileLocalization
 
@@ -18,38 +18,31 @@ ms.locfileid: "50761158"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет настраиваемый файл соглашений об использовании, который клиент управляет с Azure Active Directory (Azure AD). Он содержит метаданные о файле соглашения (например, имя, язык и является ли это файл по умолчанию).
+Представляет настраиваемый файл соглашений об использовании, который клиент управляет Azure Active Directory Azure AD. Он содержит метаданные о файле соглашения (например, имя, язык и является ли это файл по умолчанию).
 
-<!--
-## Methods
+Наследует от [agreementFileProperties](agreementfileproperties.md).
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-| [Create agreementFileLocalization](../api/agreementfilelocalization-post-agreementfilelocalizations.md) | [agreementfilelocalization](agreementfilelocalization.md) | Create a new agreementFileLocalization. |
-| [List agreementFileLocalizations](../api/agreementfilelocalization-list.md) | [agreementfilelocalization](agreementfilelocalization.md) collection | Get an agreementFileLocalization object collection. |
-| [Get agreementFileLocalization](../api/agreementfilelocalization-get.md) | [agreementfilelocalization](agreementfilelocalization.md) | Read properties and relationships of an agreementFileLocalization object. |
-| [List agreementFileVersions](../api/agreementfileversion-list.md) | [agreementfileversion](agreementfileversion.md) collection | Get an agreementFileVersion object collection. |
-| [Get agreementFileVersion](../api/agreementfileversion-get.md) | [agreementfileversion](agreementfileversion.md) | Read properties and relationships of an agreementFileVersion object. |
--->
+## <a name="methods"></a>Методы
+
+Нет.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|fileData|[agreementFileData](agreementfiledata.md)|Данные, представляющие условия использования документа PDF. Только для чтения.|
-|fileName|String|Имя файла соглашения (например, TOU.pdf). Только для чтения.|
-|id|String|Только для чтения.|
-|isDefault|Boolean|Указывает, является ли это файл соглашения по умолчанию, если ни одна из культур не соответствует предпочтениям клиента. Если ни один из файлов не помечен как по умолчанию, первый будет рассматриваться как по умолчанию. Только для чтения.|
-|language|String|Культура файла соглашения в формате languagecode2-country/regioncode2. languagecode2 — это код из двух букв более низкого уровня, полученный из ISO 639-1. country/regioncode2 является производным от ISO 3166 и обычно состоит из двух верхних букв или языкового тега BCP-47 (например, en-US). Только для чтения.|
-|isMajorVersion|Boolean|Указывает, является ли файл соглашения основным обновлением версии. Обновления основных версий недействительны для принятия соглашения на соответствующем языке. |
-|createdDateTime|DateTimeOffset|Время даты, представляющее момент создания файла. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, полночь UTC 1 января 2014 г. это: '2014-01-01T00:00:00Z'.|
-|displayName|String|Локализованное отображение имени файла политики соглашения. Локализованное имя отображения отображается конечным пользователям, которые просматривают соглашение.
+|createdDateTime|DateTimeOffset|Время даты, представляющее момент создания файла. Тип Timestamp представляет сведения о дате и времени в формате ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Наследуется [от agreementFileProperties](../resources/agreementfileproperties.md).|
+|displayName|Строка|Локализованное отображение имени файла политики соглашения. Локализованное имя отображения отображается конечным пользователям, которые просматривают соглашение. Наследуется [от agreementFileProperties](../resources/agreementfileproperties.md).|
+|fileData|[agreementFileData](agreementfiledata.md)|Данные, которые представляют условия использования документа PDF. Только для чтения. Наследуется [от agreementFileProperties](../resources/agreementfileproperties.md).|
+|fileName|String|Имя файла соглашения (например, TOU.pdf). Только для чтения. Наследуется [от agreementFileProperties](../resources/agreementfileproperties.md).|
+|id|String|Идентификатор объекта AgreementFileVersion. Только для чтения. Наследуется [от agreementFileProperties](../resources/agreementfileproperties.md).|
+|isDefault|Boolean|Если ни один из языков не соответствует предпочтениям клиента, указывает, является ли это файл соглашения по умолчанию. Если ни один из файлов не помечен как по умолчанию, первый из них рассматривается как по умолчанию. Только для чтения. Наследуется [от agreementFileProperties](../resources/agreementfileproperties.md).|
+|isMajorVersion|Boolean|Указывает, является ли файл соглашения основным обновлением версии. Обновления основных версий недействительны для принятия соглашения на соответствующем языке. Наследуется [от agreementFileProperties](../resources/agreementfileproperties.md).|
+|language|String|Язык файла соглашения в формате "languagecode2-country/regioncode2". "languagecode2" — это код из двух букв нижнего уровня, полученный из ISO 639-1, в то время как "country/regioncode2" является производным от ISO 3166 и обычно состоит из двух верхних букв или языкового тега BCP-47. Например, американский английский язык `en-US` . Только для чтения. Наследуется [от agreementFileProperties](../resources/agreementfileproperties.md).|
 
-<!--
-## Relationships
-| Relationship | Type        | Description |
+## <a name="relationships"></a>Отношения
+| Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|versions|[agreementFileVersion](agreementfileversion.md) collection|The version history for the localized agreement file.|
--->
+|versions|[коллекция agreementFileVersion](agreementfileversion.md)|Только для чтения. Настраиваемые версии условий соглашения об использовании в клиенте Azure AD.|
+
 
 ## <a name="json-representation"></a>Представление JSON
 
