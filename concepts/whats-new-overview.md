@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: 499fb9829c0f5b5eddc6f8b124fbf3d6375b5c12
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: fb160f96c2145c22f3f0da866b1a40410d116508
+ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424577"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61647002"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -36,7 +36,7 @@ ms.locfileid: "61424577"
 - [Включите](/graph/api/permissiongrantpolicy-post-includes?view=graph-rest-beta&preserve-view=true) или [исключите](/graph/api/permissiongrantpolicy-post-excludes?view=graph-rest-beta&preserve-view=true) сертификацию как [условие](/graph/api/resources/permissionGrantConditionSet?view=graph-rest-beta&preserve-view=true) в [политике предоставления разрешений](/graph/api/resources/permissiongrantpolicy?view=graph-rest-beta&preserve-view=true) посредством свойства **certifiedClientApplicationsOnly** в [permissionGrantConditionSet](/graph/api/resources/permissionGrantConditionSet?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="search--index"></a>Поиск | Индекс
-Используйте операцию [обновления](/graph/api/externalconnectors-schema-update?view=graph-rest-beta&preserve-view=true), чтобы обновить свойства элементов в схеме [подключения](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true), включая их псевдонимы и метки.
+Используйте операцию [обновления](/graph/api/externalconnectors-schema-update?view=graph-rest-beta&preserve-view=true) для обновления свойств элементов схемы [подключения](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true), включая их псевдонимы и метки.
 
 
 ## <a name="november-2021-new-and-generally-available"></a>Ноябрь 2021 г.: новые и общедоступные возможности

@@ -5,12 +5,12 @@ description: Элемент — это основная модель данны�
 ms.localizationpriority: high
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 1113752f33fe5cf1773359b940e15083a449a253
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9bf51634a9e3923b281fee2d35e9a920eb70f22a
+ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59094354"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61647136"
 ---
 # <a name="driveitem-resource-type"></a>Тип ресурса driveItem
 
@@ -24,6 +24,8 @@ ms.locfileid: "59094354"
 
 * по уникальному идентификатору **driveItem** с помощью `drive/items/{item-id}`;
 * по пути файловой системы с помощью `/drive/root:/path/to/file`.
+
+Дополнительные сведения см. в разделе об [адресации driveItems](/graph/concepts/onedrive-addressing-driveitems.md).
 
 У ресурсов **driveItem** есть аспекты, смоделированные как свойства, которые предоставляют данные об идентификаторах и возможностях объекта driveItem. Например:
 
