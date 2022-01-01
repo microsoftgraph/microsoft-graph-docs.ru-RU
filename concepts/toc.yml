@@ -257,8 +257,12 @@ items:
           - name: Смена состояния назначения и отправки
             href: assignments-submissions-states-transition.md
       - name: Файлы
-        href: onedrive-concept-overview.md
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
+        items:
+          - name: Обзор
+            href: onedrive-concept-overview.md
+          - name: Обращение к элементам диска
+            href: onedrive-addressing-driveitems.md
       - name: Финансовые показатели (предварительная версия)
         href: dynamics-business-central-concept-overview.md
         displayName: 'Dynamics, Dynamics 365 Business Central'
