@@ -2,15 +2,15 @@
 title: тип ресурса macOSSoftwareUpdateConfiguration
 description: Конфигурация обновления программного обеспечения MacOS
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f543054f557516b44bd8a580cc3e4adc28cb6411
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 642e33528c7beb29e4d7a4c65b281dc470e06a6e
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59054522"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61711965"
 ---
 # <a name="macossoftwareupdateconfiguration-resource-type"></a>тип ресурса macOSSoftwareUpdateConfiguration
 
@@ -39,8 +39,8 @@ ms.locfileid: "59054522"
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция объектов string|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|supportsScopeTags|Логическое|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость к выпуску ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -48,10 +48,10 @@ ms.locfileid: "59054522"
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|criticalUpdateBehavior|[macOSSoftwareUpdateBehavior](../resources/intune-deviceconfig-macossoftwareupdatebehavior.md)|Обновление поведения для критически важных обновлений. Возможные значения: `notConfigured`, `default`.|
-|configDataUpdateBehavior|[macOSSoftwareUpdateBehavior](../resources/intune-deviceconfig-macossoftwareupdatebehavior.md)|Обновление поведения для обновлений файлов данных конфигурации. Возможные значения: `notConfigured`, `default`.|
-|firmwareUpdateBehavior|[macOSSoftwareUpdateBehavior](../resources/intune-deviceconfig-macossoftwareupdatebehavior.md)|Обновление поведения для обновлений прошивки. Возможные значения: `notConfigured`, `default`.|
-|allOtherUpdateBehavior|[macOSSoftwareUpdateBehavior](../resources/intune-deviceconfig-macossoftwareupdatebehavior.md)|Обновление поведения для всех других обновлений. Возможные значения: `notConfigured`, `default`.|
+|criticalUpdateBehavior|[macOSSoftwareUpdateBehavior](../resources/intune-deviceconfig-macossoftwareupdatebehavior.md)|Обновление поведения для критически важных обновлений. Возможные значения: `notConfigured`, `default`, `downloadOnly`, `installASAP`, `notifyOnly`, `installLater`.|
+|configDataUpdateBehavior|[macOSSoftwareUpdateBehavior](../resources/intune-deviceconfig-macossoftwareupdatebehavior.md)|Обновление поведения для обновлений файлов данных конфигурации. Возможные значения: `notConfigured`, `default`, `downloadOnly`, `installASAP`, `notifyOnly`, `installLater`.|
+|firmwareUpdateBehavior|[macOSSoftwareUpdateBehavior](../resources/intune-deviceconfig-macossoftwareupdatebehavior.md)|Обновление поведения для обновлений прошивки. Возможные значения: `notConfigured`, `default`, `downloadOnly`, `installASAP`, `notifyOnly`, `installLater`.|
+|allOtherUpdateBehavior|[macOSSoftwareUpdateBehavior](../resources/intune-deviceconfig-macossoftwareupdatebehavior.md)|Обновление поведения для всех других обновлений. Возможные значения: `notConfigured`, `default`, `downloadOnly`, `installASAP`, `notifyOnly`, `installLater`.|
 |updateScheduleType|[macOSSoftwareUpdateScheduleType](../resources/intune-deviceconfig-macossoftwareupdatescheduletype.md)|Тип расписания обновления. Возможные значения: `alwaysUpdate`, `updateDuringTimeWindows`, `updateOutsideOfTimeWindows`.|
 |customUpdateTimeWindows|[настраиваемая коллекцияUpdateTimeWindow](../resources/intune-deviceconfig-customupdatetimewindow.md)|Настраиваемые окна времени, когда обновления будут разрешены или заблокированы. Эта коллекция может содержать не более 20 элементов.|
 |updateTimeWindowUtcOffsetInMinutes|Int32|Минуты, указывающие смещение UTC для каждого окна времени обновления|
@@ -126,6 +126,7 @@ ms.locfileid: "59054522"
   "updateTimeWindowUtcOffsetInMinutes": 1024
 }
 ```
+
 
 
 

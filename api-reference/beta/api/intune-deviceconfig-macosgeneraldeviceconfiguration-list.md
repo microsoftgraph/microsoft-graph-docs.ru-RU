@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e0b0ec6440f56b624d9c7f4b5bfd0d55a97c2be1
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 772b8bb31a96d32d992125ed3be36951208d8863
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61336547"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61711601"
 ---
 # <a name="list-macosgeneraldeviceconfigurations"></a>Перечисление объектов macOSGeneralDeviceConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "61336547"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5726
+Content-Length: 5775
 
 {
   "value": [
@@ -208,7 +208,8 @@ Content-Length: 5726
       "softwareUpdateMinorOSDeferredInstallDelayInDays": 15,
       "softwareUpdateNonOSDeferredInstallDelayInDays": 13,
       "touchIdTimeoutInHours": 5,
-      "iCloudPrivateRelayBlocked": true
+      "iCloudPrivateRelayBlocked": true,
+      "iCloudDesktopAndDocumentsBlocked": true
     }
   ]
 }

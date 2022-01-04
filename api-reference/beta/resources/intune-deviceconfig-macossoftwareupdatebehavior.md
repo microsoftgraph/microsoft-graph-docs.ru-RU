@@ -2,15 +2,15 @@
 title: тип enum macOSSoftwareUpdateBehavior
 description: Обновление параметров поведения для обновлений программного обеспечения macOS.
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5bfde3d153be43bbaa79f8ab059852ecce98be90
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: a0fa894d17e126287ccb1e1c63e36160cf2dcd3e
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59030440"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61712084"
 ---
 # <a name="macossoftwareupdatebehavior-enum-type"></a>тип enum macOSSoftwareUpdateBehavior
 
@@ -25,8 +25,13 @@ ms.locfileid: "59030440"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|0|Не настроен.|
+|notConfigured|0|Не настроено.|
 |default|1|Скачайте и/или установите обновление программного обеспечения в зависимости от текущего состояния устройства.|
+|downloadOnly|2|Скачайте обновление программного обеспечения без его установки.|
+|installASAP|3|Установка уже загруженного обновления программного обеспечения.|
+|notifyOnly|4|Скачайте обновление программного обеспечения и уведомите пользователя через App Store.|
+|installLater|5|Скачайте обновление программного обеспечения и установите его позже.|
+
 
 
 

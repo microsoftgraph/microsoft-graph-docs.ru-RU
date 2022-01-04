@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 194aafefc7325c65ef16fbc810a4eda03c2e8cb1
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 997436233394cb8fa36f172acb89cd726129b785
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61345680"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61712063"
 ---
 # <a name="create-hardwareconfigurationuserstate"></a>Создание hardwareConfigurationUserState
 
@@ -29,7 +29,7 @@ ms.locfileid: "61345680"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,13 +53,13 @@ POST /deviceManagement/hardwareConfigurations/{hardwareConfigurationId}/userRunS
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта состояния состояния скрипта конфигурации оборудования. Это свойство доступно только для чтения.|
-|upn|Строка|Имя участника-пользователя (UPN)|
-|userEmail|String|Адрес электронной почты пользователя|
+|id|String|Ключ объекта состояния состояния скрипта конфигурации оборудования. Это свойство доступно только для чтения.|
+|upn|String|Имя участника-пользователя (UPN).|
+|userEmail|String|Адрес электронной почты пользователя.|
 |userName|String|Имя пользователя|
 |lastStateUpdateDateTime|DateTimeOffset|Последний период времени при выполнении конфигурации оборудования|
-|successfulDeviceCount|Int32|Количество устройств успеха для конкретного пользователя|
-|failedDeviceCount|Int32|Неудалось количество устройств для конкретного пользователя|
+|successfulDeviceCount|Int32|Количество устройств успешности для определенного пользователя.|
+|failedDeviceCount|Int32|Неудалось количество устройств для определенного пользователя.|
 |pendingDeviceCount|Int32|Ожидание подсчета устройств для определенного пользователя.|
 |errorDeviceCount|Int32|Количество устройств ошибки для определенного пользователя.|
 |notApplicableDeviceCount|Int32|Не применимое количество устройств для конкретного пользователя.|

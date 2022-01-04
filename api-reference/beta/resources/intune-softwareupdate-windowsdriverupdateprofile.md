@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9f8e29d336a0b04af4e4e5f045c6541e592e6981
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: ee9304666ac2bc71485e25f8de16decc5c4d10fc
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61346978"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61712098"
 ---
 # <a name="windowsdriverupdateprofile-resource-type"></a>тип ресурса windowsDriverUpdateProfile
 
@@ -31,21 +31,22 @@ Windows профиля обновления драйвера
 |[Удаление windowsDriverUpdateProfile](../api/intune-softwareupdate-windowsdriverupdateprofile-delete.md)|Нет|Удаляет [windowsDriverUpdateProfile.](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)|
 |[Обновление windowsDriverUpdateProfile](../api/intune-softwareupdate-windowsdriverupdateprofile-update.md)|[windowsDriverUpdateProfile](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)|Обновление свойств объекта [WindowsDriverUpdateProfile.](../resources/intune-softwareupdate-windowsdriverupdateprofile.md)|
 |[Действие assign](../api/intune-softwareupdate-windowsdriverupdateprofile-assign.md)|Нет|Н/Д|
-|[Действие executeAction](../api/intune-softwareupdate-windowsdriverupdateprofile-executeaction.md)|[bulkDriverActionResult](../resources/intune-softwareupdate-bulkdriveractionresult.md)|Н/Д|
+|[Действие executeAction](../api/intune-softwareupdate-windowsdriverupdateprofile-executeaction.md)|[bulkDriverActionResult](../resources/intune-softwareupdate-bulkdriveractionresult.md)|Пока не задокументировано.|
+|[syncInventory action](../api/intune-softwareupdate-windowsdriverupdateprofile-syncinventory.md)|Нет|Синхронизация инвентаризации драйверов WindowsDriverUpdateProfile.|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|ID политики Intune.|
 |displayName|String|Имя отображения для профиля.|
-|description|Строка|Описание профиля, указанного пользователем.|
+|description|String|Описание профиля, указанного пользователем.|
 |approvalType|[driverUpdateProfileApprovalType](../resources/intune-softwareupdate-driverupdateprofileapprovaltype.md)|Тип утверждения профиля обновления драйвера. Например, ручное или автоматическое утверждение. Возможные значения: `manual`, `automatic`.|
 |deviceReporting|Int32|Количество устройств, сообщив об этом профиле|
 |newUpdates|Int32|Количество новых обновлений драйвера, доступных для этого профиля.|
 |deploymentDeferralInDays|Int32|Параметры отсрочки развертывания в днях, применимые только при автоматическом утверждении ApprovalType.|
 |createdDateTime|DateTimeOffset|Время создания профиля.|
 |lastModifiedDateTime|DateTimeOffset|Дата последнего изменения профиля.|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого объекта обновления драйвера.|
+|roleScopeTagIds|Коллекция строк|Список тегов области для этого объекта обновления драйвера.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

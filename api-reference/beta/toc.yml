@@ -460,7 +460,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Заметки
+          - name: Примечания
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -2547,6 +2547,21 @@ items:
                         href: api/intune-books-iosvppebookassignment-delete.md
                       - name: Обновление
                         href: api/intune-books-iosvppebookassignment-update.md
+                  - name: macOS dmg app
+                    href: resources/intune-apps-macosdmgapp.md
+                    items:
+                      - name: Список
+                        href: api/intune-apps-macosdmgapp-list.md
+                      - name: Получение
+                        href: api/intune-apps-macosdmgapp-get.md
+                      - name: Создание
+                        href: api/intune-apps-macosdmgapp-create.md
+                      - name: Удалить
+                        href: api/intune-apps-macosdmgapp-delete.md
+                      - name: Обновление
+                        href: api/intune-apps-macosdmgapp-update.md
+                  - name: macOS включено приложение
+                    href: resources/intune-apps-macosincludedapp.md
                   - name: Бизнес-приложение macOS
                     href: resources/intune-apps-macoslobapp.md
                     items:
@@ -3879,6 +3894,8 @@ items:
                         href: api/intune-deviceconfig-androiddeviceownerscepcertificateprofile-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-androiddeviceownerscepcertificateprofile-update.md
+                  - name: Период замораживания обновления системы владельцев android-устройств
+                    href: resources/intune-deviceconfig-androiddeviceownersystemupdatefreezeperiod.md
                   - name: Тип установки системного обновления для владельца устройства с Android
                     href: resources/intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md
                   - name: Владельцу android-устройств доверяли корневой сертификат
@@ -5362,6 +5379,8 @@ items:
                         href: api/intune-deviceconfig-hardwareconfiguration-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-hardwareconfiguration-update.md
+                      - name: назначение действияHardwareConfiguration
+                        href: api/intune-deviceconfig-hardwareconfiguration-assignhardwareconfiguration.md
                       - name: Действие назначения
                         href: api/intune-deviceconfig-hardwareconfiguration-assign.md
                   - name: Назначение конфигурации оборудования
@@ -9628,8 +9647,6 @@ items:
                         href: api/intune-shared-devicecompliancepolicy-get.md
                       - name: Действие назначения
                         href: api/intune-shared-devicecompliancepolicy-assign.md
-                      - name: Действие scheduleActionsForRules
-                        href: api/intune-shared-devicecompliancepolicy-scheduleactionsforrules.md
                       - name: Действие refreshDeviceComplianceReportSummarization
                         href: api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md
                       - name: действие hasPayloadLinks
@@ -12882,7 +12899,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Получение многозначного свойства
                     href: api/multivaluelegacyextendedproperty-get.md
-      - name: Заметки
+      - name: Примечания
         displayName: OneNote
         items:
           - name: Обзор
@@ -13150,7 +13167,7 @@ items:
                     href: api/personname-update.md
                   - name: Delete
                     href: api/personname-delete.md
-              - name: Заметки
+              - name: Примечания
                 items:
                   - name: Аннотация для человека
                     href: resources/personannotation.md

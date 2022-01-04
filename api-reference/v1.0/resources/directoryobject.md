@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: keylimesoda
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 4e82f30418a49dcc8becc2780da11b18249c24bc
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 545ab52782c8bec83f711faf3928d10d4c3105c1
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224288"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61711593"
 ---
 # <a name="directoryobject-resource-type"></a>Тип ресурса directoryObject
 
@@ -30,7 +30,7 @@ ms.locfileid: "61224288"
 |[checkMemberObjects](../api/directoryobject-checkmemberobjects.md)|Коллекция String|Проверка участия в списке ролей группы, административных единиц или каталога для указанного пользователя, группы, устройства, контакта организации или объекта каталога. Это транзитивный метод.|
 |[getMemberObjects](../api/directoryobject-getmemberobjects.md)|Коллекция String| Возвращение всех ролей групп, административных единиц и каталога, в которых состоит пользователь, группа, устройство, контакт организации или объект каталога. Это транзитивная проверка. |
 |[getByIds](../api/directoryobject-getbyids.md) | Коллекция [directoryObject](directoryobject.md) | Получение набора объектов каталога на основе указанных идентификаторов. |
-|[validateProperties](../api/directoryobject-validateproperties.md)|Json| Проверка соответствия отображаемого имени или почтового псевдонима группы Microsoft 365 политикам именования. |
+|[validateProperties](../api/directoryobject-validateproperties.md)|JSON| Проверка соответствия отображаемого имени или почтового псевдонима группы Microsoft 365 политикам именования. |
 |delta|Коллекция [directoryObject](directoryObject.md)| Получение добавочных изменений для объектов каталогов, например для [пользователей](../api/user-delta.md), [групп](../api/group-delta.md), [приложений](../api/application-delta.md) и [субъектов-служб](../api/serviceprincipal-delta.md). Каждый производный тип поддерживает фильтрацию по **id**. Дополнительные сведения о разностных запросах см. в статье [Отслеживание изменений данных Microsoft Graph с помощью разностного запроса](/graph/delta-query-overview).|
 
 ## <a name="properties"></a>Свойства
@@ -41,10 +41,10 @@ ms.locfileid: "61224288"
 
 ## <a name="relationships"></a>Связи
 
-Нет
+Отсутствуют.
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -73,7 +73,6 @@ ms.locfileid: "61224288"
 {
   "id": "string (identifier)"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

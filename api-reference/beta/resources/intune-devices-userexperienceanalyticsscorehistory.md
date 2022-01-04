@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 49e5390181c61c9817fa79f90073a7b355758e72
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 0f82ebe1a22f42829049cc4e855e96249f6ec7ae
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61348021"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61711902"
 ---
 # <a name="userexperienceanalyticsscorehistory-resource-type"></a>тип ресурса userExperienceAnalyticsScoreHistory
 
@@ -42,10 +42,12 @@ ms.locfileid: "61348021"
 |coreSigninScore|Int32|Оценка основного входного знака устройства для аналитики пользовательского интерфейса. Оценка будет в диапазоне 0-100, 100 является идеальным показателем.|
 |recommendedSoftwareScore|Int32|Оценка основного входного знака устройства для аналитики пользовательского интерфейса. Оценка будет в диапазоне 0-100, 100 является идеальным показателем.|
 |appHealthOverallScore|Int32|Общее состояние здоровья приложения для аналитики пользовательского интерфейса.|
+|workFromAnywhereScore|Int32|Аналитика пользовательских интерфейсов работает из любой точки.|
 |batteryHealthScore|Int32|Оценка состояния заряда батареи для аналитики пользовательского интерфейса.|
 |startupTotalDevices|Int32|Общее число устройств для производительности запуска для аналитики пользовательских интерфейсов.|
 |recommendedSoftwareTotalDevices|Int32|Общее число устройств категории аналитики пользовательских интерфейсов рекомендуемого программного обеспечения.|
 |appHealthTotalDevices|Int32|Общее число устройств для здоровья приложения для аналитики пользовательского интерфейса.|
+|workFromAnywhereTotalDevices|Int32|Общее число устройств категории аналитики пользовательских интерфейсов работает из любой точки мира.|
 |batteryHealthTotalDevices|Int32|Общее число устройств для здоровья батареи категории аналитики пользовательских интерфейсов.|
 |restartScore|Int32|Оценка перезапуска. Оценка будет в диапазоне 0-100, 100 является идеальным показателем, 0 указывает на чрезмерные перезапуски. Допустимые значения от 0 до 9999999|
 
@@ -71,10 +73,12 @@ ms.locfileid: "61348021"
   "coreSigninScore": 1024,
   "recommendedSoftwareScore": 1024,
   "appHealthOverallScore": 1024,
+  "workFromAnywhereScore": 1024,
   "batteryHealthScore": 1024,
   "startupTotalDevices": 1024,
   "recommendedSoftwareTotalDevices": 1024,
   "appHealthTotalDevices": 1024,
+  "workFromAnywhereTotalDevices": 1024,
   "batteryHealthTotalDevices": 1024,
   "restartScore": 1024
 }

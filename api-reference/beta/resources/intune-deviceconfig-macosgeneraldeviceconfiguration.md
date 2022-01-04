@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3e3744b905982e72230f07306c696a45731048b6
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 09d90672e3e77bc18087029f438fc7c011ea661a
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61338514"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61711972"
 ---
 # <a name="macosgeneraldeviceconfiguration-resource-type"></a>Тип ресурса macOSGeneralDeviceConfiguration
 
@@ -39,14 +39,14 @@ ms.locfileid: "61338514"
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|supportsScopeTags|Boolean|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость к выпуску ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |compliantAppsList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список приложений, соответствующих требованиям (список разрешений или блокировок, определяется свойством CompliantAppListType). Эта коллекция может содержать не более 10 000 элементов.|
 |compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|Список, включенный в CompliantAppsList. Возможные значения: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
@@ -62,50 +62,51 @@ ms.locfileid: "61338514"
 |passwordRequired|Boolean|Определяет, нужно ли запрашивать ввод пароля.|
 |passwordMaximumAttemptCount|Int32|Количество разрешенных неудачных попыток ввести пароль на экране блокировки устройства. Допустимые значения от 2 до 11|
 |passwordMinutesUntilFailedLoginReset|Int32|Количество минут до сброса входа после максимального количества неудачных попыток входа.|
-|keychainBlockCloudSync|Boolean|Указывает, заблокирована ли синхронизация ключей iCloud (macOS 10.12 и более поздней).|
+|keychainBlockCloudSync|Логический|Указывает, заблокирована ли синхронизация ключей iCloud (macOS 10.12 и более поздней).|
 |safariBlockAutofill|Boolean|Указывает, следует ли запретить использовать автозаполнение в Safari.|
 |cameraBlocked|Boolean|Указывает, следует ли запретить доступ к камере устройства.|
 |iTunesBlockMusicService|Boolean|Указывает, следует ли блокировать службу "Музыка" и перенаторять приложение Music в классический режим.|
 |spotlightBlockInternetResults|Boolean|Указывает, следует ли блокировать Spotlight для возврата результатов поиска в Интернете.|
 |keyboardBlockDictation|Boolean|Указывает, следует ли блокировать пользователю использование ввода диктанта.|
 |definitionLookupBlocked|Boolean|Указывает, следует ли блокировать просмотр определения.|
-|AppleWatchBlockAutoUnlock|Boolean|Указывает, следует ли блокировать пользователям разблокировку mac с помощью Apple Watch.|
-|iTunesBlockFileSharing|Boolean|Указывает, следует ли блокировать перенос файлов с помощью iTunes.|
+|AppleWatchBlockAutoUnlock|Логический|Указывает, следует ли блокировать пользователям разблокировку mac с помощью Apple Watch.|
+|iTunesBlockFileSharing|Логический|Указывает, следует ли блокировать перенос файлов с помощью iTunes.|
 |iCloudBlockDocumentSync|Boolean|Указывает, следует ли заблокировать синхронизацию документов iCloud.|
-|iCloudBlockMail|Boolean|Указывает, следует ли блокировать iCloud при синхронизации почты.|
-|iCloudBlockAddressBook|Boolean|Указывает, следует ли блокировать iCloud при синхронизации контактов.|
-|iCloudBlockCalendar|Boolean|Указывает, следует ли блокировать iCloud от синхронизации календарей.|
-|iCloudBlockReminders|Boolean|Указывает, следует ли блокировать iCloud при синхронизации напоминаний.|
-|iCloudBlockBookmarks|Boolean|Указывает, следует ли блокировать iCloud при синхронизации закладок.|
-|iCloudBlockNotes|Boolean|Указывает, следует ли блокировать iCloud при синхронизации заметок.|
+|iCloudBlockMail|Логический|Указывает, следует ли блокировать iCloud при синхронизации почты.|
+|iCloudBlockAddressBook|Логический|Указывает, следует ли блокировать iCloud при синхронизации контактов.|
+|iCloudBlockCalendar|Логический|Указывает, следует ли блокировать iCloud от синхронизации календарей.|
+|iCloudBlockReminders|Логический|Указывает, следует ли блокировать iCloud при синхронизации напоминаний.|
+|iCloudBlockBookmarks|Логический|Указывает, следует ли блокировать iCloud при синхронизации закладок.|
+|iCloudBlockNotes|Логический|Указывает, следует ли блокировать iCloud при синхронизации заметок.|
 |airDropBlocked|Boolean|Указывает, разрешить или не разрешить AirDrop.|
-|passwordBlockModification|Boolean|Указывает, следует ли разрешить изменение пароля.|
+|passwordBlockModification|Логический|Указывает, следует ли разрешить изменение пароля.|
 |passwordBlockFingerprintUnlock|Boolean|Указывает, следует ли запретить разблокировку с помощью отпечатка пальца.|
-|passwordBlockAutoFill|Boolean|Указывает, следует ли блокировать функцию AutoFill Passwords.|
-|passwordBlockProximityRequests|Boolean|Указывает, следует ли блокировать запрашивающие пароли с близлежащих устройств.|
-|passwordBlockAirDropSharing|Boolean|Указывает, следует ли блокировать совместное использование паролей с помощью функции паролей AirDrop.|
+|passwordBlockAutoFill|Логический|Указывает, следует ли блокировать функцию AutoFill Passwords.|
+|passwordBlockProximityRequests|Логический|Указывает, следует ли блокировать запрашивающие пароли с близлежащих устройств.|
+|passwordBlockAirDropSharing|Логический|Указывает, следует ли блокировать совместное использование паролей с помощью функции паролей AirDrop.|
 |softwareUpdatesEnforcedDelayInDays|Int32|Задает время, за которое будет отламывно обновление программного обеспечения для контролируемого устройства. Допустимые значения: от 0 до 90.|
 |updateDelayPolicy|[macOSSoftwareUpdateDelayPolicy](../resources/intune-deviceconfig-macossoftwareupdatedelaypolicy.md)|Определяет, откладывать ли обновления ОС и/или приложений для macOS. Возможные значения: `none`, `delayOSUpdateVisibility`, `delayAppUpdateVisibility`, `unknownFutureValue`, `delayMajorOsUpdateVisibility`.|
-|contentCachingBlocked|Boolean|Указывает, следует ли разрешить кэшинг контента.|
+|contentCachingBlocked|Логический|Указывает, следует ли разрешить кэшинг контента.|
 |iCloudBlockPhotoLibrary|Boolean|Указывает, следует ли заблокировать медиатеку iCloud.|
 |screenCaptureBlocked|Boolean|Указывает, следует ли запретить пользователю делать снимки экрана.|
 |classroomAppBlockRemoteScreenObservation|Boolean|Указывает, следует ли разрешить удаленное наблюдение экрана в приложении Classroom. Требуется регистрация MDM через менеджера школы Apple или Apple Business Manager.|
 |classroomAppForceUnpromptedScreenObservation|Boolean|Указывает, следует ли автоматически давать преподавателю управляемого курса в приложении Classroom разрешение на просмотр экрана учащегося без запроса. Требуется регистрация MDM через менеджера школы Apple или Apple Business Manager.|
-|classroomForceAutomaticallyJoinClasses|Boolean|Указывает, следует ли автоматически давать разрешения на запросы преподавателя без запроса учащегося. Требуется регистрация MDM через менеджера школы Apple или Apple Business Manager.|
-|classroomForceRequestPermissionToLeaveClasses|Boolean|Указывает, потребуется ли учащемуся, зарегистрированным на неугодном курсе через Класс, запрашивать разрешения у преподавателя при попытке покинуть курс. Требуется регистрация MDM через менеджера школы Apple или Apple Business Manager.|
-|classroomForceUnpromptedAppAndDeviceLock|Boolean|Указывает, следует ли разрешить преподавателю заблокировать приложения или устройство без запроса учащегося. Требуется регистрация MDM через менеджера школы Apple или Apple Business Manager.|
+|classroomForceAutomaticallyJoinClasses|Логический|Указывает, следует ли автоматически давать разрешения на запросы преподавателя без запроса учащегося. Требуется регистрация MDM через менеджера школы Apple или Apple Business Manager.|
+|classroomForceRequestPermissionToLeaveClasses|Логический|Указывает, потребуется ли учащемуся, зарегистрированным на неугодном курсе через Класс, запрашивать разрешения у преподавателя при попытке покинуть курс. Требуется регистрация MDM через менеджера школы Apple или Apple Business Manager.|
+|classroomForceUnpromptedAppAndDeviceLock|Логический|Указывает, следует ли разрешить преподавателю заблокировать приложения или устройство без запроса учащегося. Требуется регистрация MDM через менеджера школы Apple или Apple Business Manager.|
 |iCloudBlockActivityContinuation|Boolean|Указывает, следует ли блокировать пользователю продолжение работы, которую они начали на устройстве MacOS на другом устройстве iOS или MacOS (MacOS 10.15 или более поздней).|
 |privacyAccessControls|[коллекция macOSPrivacyAccessControlItem](../resources/intune-deviceconfig-macosprivacyaccesscontrolitem.md)|Список элементов управления политиками конфиденциальности. Эта коллекция может содержать не более 10 000 элементов.|
-|addingGameCenterFriendsBlocked|Boolean|Да, не позволяет пользователям добавлять друзей в Game Center. Доступно для устройств с macOS-версиями 10.13 и более поздней версии.|
+|addingGameCenterFriendsBlocked|Логический|Да, не позволяет пользователям добавлять друзей в Game Center. Доступно для устройств с macOS-версиями 10.13 и более поздней версии.|
 |gameCenterBlocked|Boolean|Да, отключает центр игры, и значок Центра игры удаляется с домашнего экрана. Доступно для устройств с macOS-версиями 10.13 и более поздней версии.|
-|multiplayerGamingBlocked|Boolean|TRUE предотвращает многопользовательские игры при использовании Game Center. FALSE позволяет многопользовательские игры при использовании Game Center. Доступно для устройств с macOS-версиями 10.13 и более поздней версии.|
-|wallpaperModificationBlocked|Boolean|TRUE не позволяет изменить обои. FALSE позволяет изменить обои. Доступно для устройств с macOS-версиями 10.13 и более поздней версии.|
-|eraseContentAndSettingsBlocked|Boolean|TRUE отключает параметр сброса на контролируемых устройствах. FALSE включает параметр сброса на контролируемых устройствах. Доступно для устройств с macOS-версиями 12.0 и более поздней версии.|
+|multiplayerGamingBlocked|Логический|TRUE предотвращает многопользовательские игры при использовании Game Center. FALSE позволяет многопользовательские игры при использовании Game Center. Доступно для устройств с macOS-версиями 10.13 и более поздней версии.|
+|wallpaperModificationBlocked|Логический|TRUE не позволяет изменить обои. FALSE позволяет изменить обои. Доступно для устройств с macOS-версиями 10.13 и более поздней версии.|
+|eraseContentAndSettingsBlocked|Логический|TRUE отключает параметр сброса на контролируемых устройствах. FALSE включает параметр сброса на контролируемых устройствах. Доступно для устройств с macOS-версиями 12.0 и более поздней версии.|
 |softwareUpdateMajorOSDeferredInstallDelayInDays|Int32|Укажите количество дней (1-90) для задержки видимости основных обновлений программного обеспечения ОС. Доступно для устройств с macOS-версиями 11.3 и более поздней версии. Допустимые значения: от 0 до 90.|
 |softwareUpdateMinorOSDeferredInstallDelayInDays|Int32|Укажите количество дней (1-90) для задержки видимости незначительных обновлений программного обеспечения ОС. Доступно для устройств с macOS-версиями 11.3 и более поздней версии. Допустимые значения: от 0 до 90.|
 |softwareUpdateNonOSDeferredInstallDelayInDays|Int32|Укажите количество дней (1-90) для задержки видимости обновлений программного обеспечения без ОС. Доступно для устройств с macOS-версиями 11.3 и более поздней версии. Допустимые значения: от 0 до 90.|
 |touchIdTimeoutInHours|Int32|Максимальное время, после которого пользователь должен ввести пароль, чтобы разблокировать устройство, а не использовать Touch ID. Доступно для устройств с macOS 12 и более поздней. Допустимые значения от 0 до 2147483647|
-|iCloudPrivateRelayBlocked|Boolean|Частный ретранслятор iCloud — это служба iCloud+, которая не позволяет сетям и серверам следить за деятельностью человека через Интернет. Блокируя частную ретранслятор iCloud, Apple не будет шифровать трафик, покидая устройство. Доступно для устройств с macOS 12 и более поздней.|
+|iCloudPrivateRelayBlocked|Логический|Частный ретранслятор iCloud — это служба iCloud+, которая не позволяет сетям и серверам следить за деятельностью человека через Интернет. Блокируя частную ретранслятор iCloud, Apple не будет шифровать трафик, покидая устройство. Доступно для устройств с macOS 12 и более поздней.|
+|iCloudDesktopAndDocumentsBlocked|Логический|При TRUE синхронизация облачного рабочего стола и документов блокируется. При FALSE допускается синхронизация облачного рабочего стола и документов. Доступно для устройств с macOS 10.12.4 и более поздней.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -265,7 +266,8 @@ ms.locfileid: "61338514"
   "softwareUpdateMinorOSDeferredInstallDelayInDays": 1024,
   "softwareUpdateNonOSDeferredInstallDelayInDays": 1024,
   "touchIdTimeoutInHours": 1024,
-  "iCloudPrivateRelayBlocked": true
+  "iCloudPrivateRelayBlocked": true,
+  "iCloudDesktopAndDocumentsBlocked": true
 }
 ```
 

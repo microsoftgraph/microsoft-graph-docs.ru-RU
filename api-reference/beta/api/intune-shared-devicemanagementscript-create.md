@@ -2,15 +2,15 @@
 title: Создание deviceManagementScript
 description: Создание нового объекта deviceManagementScript.
 author: rolyon
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 75a859b273b87a2b409377a7e8ca245b354b8134
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0c457bc23e2bcd6aa1ea8b44731189f96e539dc2
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59064757"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61712035"
 ---
 # <a name="create-devicemanagementscript"></a>Создание deviceManagementScript
 
@@ -47,7 +47,7 @@ POST /deviceManagement/deviceManagementScripts
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -59,15 +59,14 @@ POST /deviceManagement/deviceManagementScripts
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для сценария управления устройствами.|
 |displayName|String|Имя сценария управления устройствами.|
-|description|Строка|Необязательное описание сценария управления устройствами.|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Интервал для запуска скрипта. Если сценарий не определен, он будет работать один раз|
-|scriptContent|В двоичном формате|Содержимое скрипта.|
+|description|String|Необязательное описание сценария управления устройствами.|
+|scriptContent|Binary|Содержимое скрипта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сценария управления устройствами. Это свойство доступно только для чтения.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|enforceSignatureCheck|Boolean|Указать, нужно ли проверять подпись скрипта.|
+|enforceSignatureCheck|Логический|Указать, нужно ли проверять подпись скрипта.|
 |fileName|String|Имя файла скрипта.|
-|roleScopeTagIds|Коллекция String|Список ID-тегов области для этого экземпляра PowerShellScript.|
+|roleScopeTagIds|Коллекция строк|Список ID-тегов области для этого экземпляра PowerShellScript.|
 |runAs32Bit|Логический|Значение, указывающее, должен ли скрипт PowerShell работать как 32-битный|
 
 
@@ -111,6 +110,9 @@ Content-Length: 615
   "id": "59ea4525-4525-59ea-2545-ea592545ea59",
   "displayName": "Display Name value",
   "description": "Description value",
+  "runSchedule": {
+    "@odata.type": "microsoft.graph.runSchedule"
+  },
   "scriptContent": "c2NyaXB0Q29udGVudA==",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",

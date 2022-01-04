@@ -4,12 +4,12 @@ description: Списки microsoft Graph API для конечных точек
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 5cc9d43fb9f4bb7f4729bfecf5e8825a7c043caf
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 8372aa4c125f0b0e56423bb248fabcd0ee604005
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61338234"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61711951"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -78,6 +78,8 @@ ms.locfileid: "61338234"
 - [Результат действия "Отзыв лицензии для приложения iOS, приобретенного по программе VPP"](intune-apps-iosvppapprevokelicensesactionresult.md)
 - [Электронная книга VPP для iOS](intune-books-iosvppebook.md)
 - [Назначение электронной книги VPP для iOS](intune-books-iosvppebookassignment.md)
+- [macOS dmg app](intune-apps-macosdmgapp.md)
+- [macOS включено приложение](intune-apps-macosincludedapp.md)
 - [Бизнес-приложение macOS](intune-apps-macoslobapp.md)
 - [Дочернее бизнес-приложение для macOS](intune-apps-macoslobchildapp.md)
 - [приложение mdatp macOS](intune-apps-macosmdatpapp.md)

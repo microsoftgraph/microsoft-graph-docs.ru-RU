@@ -4,12 +4,12 @@ description: Списки microsoft Graph API для конечных точек
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
-ms.openlocfilehash: 2688a9499565d7c93f23cac331040d74987ec9cc
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: f59329e22a916582d13ee4da01179f31440d7f2d
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61343002"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61712028"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Конфигурация устройства в Microsoft Intune
 
@@ -61,6 +61,7 @@ ms.locfileid: "61343002"
 - [Режим воспроизведения владельцем android-устройства в магазине](intune-deviceconfig-androiddeviceownerplaystoremode.md)
 - [Требуемый тип пароля для владельца устройства с Android](intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)
 - [Профиль сертификата владельца android-устройства SCEP](intune-deviceconfig-androiddeviceownerscepcertificateprofile.md)
+- [Период замораживания обновления системы владельцев android-устройств](intune-deviceconfig-androiddeviceownersystemupdatefreezeperiod.md)
 - [Тип установки системного обновления для владельца устройства с Android](intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)
 - [Владельцу android-устройств доверяли корневой сертификат](intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)
 - [Тип кнопки виртуальной домашней кнопки владельца устройства Android](intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)

@@ -2,15 +2,15 @@
 title: тип enum configurationManagerActionType
 description: Тип действия клиента Configuration Manager
 author: dougeby
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 104bc95a7fdd7c9ad77786f0358a21054a972b5b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 6884ebcbe4e8c4c4b6f7b6cd6fc23246875ca7bf
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59040262"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61711909"
 ---
 # <a name="configurationmanageractiontype-enum-type"></a>тип enum configurationManagerActionType
 
@@ -29,6 +29,10 @@ ms.locfileid: "59040262"
 |refreshUserPolicy|1|Обновление политики пользователей в клиенте Configuration Manager|
 |wakeUpClient|2|Разбудить клиента Configuration Manager|
 |appEvaluation|3|Политика приложения для оценки клиента Configuration Manager|
+|quickScan|5|Политика приложения для оценки клиента Configuration Manager|
+|fullScan|6 |Политика приложения для оценки клиента Configuration Manager|
+|windowsDefenderUpdateSignatures|7 |Политика приложения для оценки клиента Configuration Manager|
+
 
 
 

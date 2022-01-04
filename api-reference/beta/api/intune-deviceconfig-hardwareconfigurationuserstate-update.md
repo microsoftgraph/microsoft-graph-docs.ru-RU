@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 502e007407fc8df86f2db41d7f99b6685b6c4f27
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 866048d91807ce74cb6c65f12c4330e096c77355
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61345601"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61712021"
 ---
 # <a name="update-hardwareconfigurationuserstate"></a>Обновление hardwareConfigurationUserState
 
@@ -29,7 +29,7 @@ ms.locfileid: "61345601"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,13 +53,13 @@ PATCH /deviceManagement/hardwareConfigurations/{hardwareConfigurationId}/userRun
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта состояния состояния скрипта конфигурации оборудования. Это свойство доступно только для чтения.|
-|upn|Строка|Имя участника-пользователя (UPN)|
-|userEmail|String|Адрес электронной почты пользователя|
+|id|String|Ключ объекта состояния состояния скрипта конфигурации оборудования. Это свойство доступно только для чтения.|
+|upn|String|Имя участника-пользователя (UPN).|
+|userEmail|String|Адрес электронной почты пользователя.|
 |userName|String|Имя пользователя|
 |lastStateUpdateDateTime|DateTimeOffset|Последний период времени при выполнении конфигурации оборудования|
-|successfulDeviceCount|Int32|Количество устройств успеха для конкретного пользователя|
-|failedDeviceCount|Int32|Неудалось количество устройств для конкретного пользователя|
+|successfulDeviceCount|Int32|Количество устройств успешности для определенного пользователя.|
+|failedDeviceCount|Int32|Неудалось количество устройств для определенного пользователя.|
 |pendingDeviceCount|Int32|Ожидание подсчета устройств для определенного пользователя.|
 |errorDeviceCount|Int32|Количество устройств ошибки для определенного пользователя.|
 |notApplicableDeviceCount|Int32|Не применимое количество устройств для конкретного пользователя.|

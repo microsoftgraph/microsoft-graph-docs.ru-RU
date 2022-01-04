@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ecd964d5c5f2d18ffef71e04ebba40de8f3759ff
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 3a9fab2a1b312e9b18ff38f5548e964a5256335f
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61345658"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61711979"
 ---
 # <a name="hardwareconfigurationuserstate-resource-type"></a>тип ресурса hardwareConfigurationUserState
 
@@ -35,12 +35,12 @@ ms.locfileid: "61345658"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта состояния состояния скрипта конфигурации оборудования. Это свойство доступно только для чтения.|
-|upn|Строка|Имя участника-пользователя (UPN)|
-|userEmail|String|Адрес электронной почты пользователя|
+|upn|String|Имя участника-пользователя (UPN).|
+|userEmail|String|Адрес электронной почты пользователя.|
 |userName|String|Имя пользователя|
 |lastStateUpdateDateTime|DateTimeOffset|Последний период времени при выполнении конфигурации оборудования|
-|successfulDeviceCount|Int32|Количество устройств успеха для конкретного пользователя|
-|failedDeviceCount|Int32|Неудалось количество устройств для конкретного пользователя|
+|successfulDeviceCount|Int32|Количество устройств успешности для определенного пользователя.|
+|failedDeviceCount|Int32|Неудалось количество устройств для определенного пользователя.|
 |pendingDeviceCount|Int32|Ожидание подсчета устройств для определенного пользователя.|
 |errorDeviceCount|Int32|Количество устройств ошибки для определенного пользователя.|
 |notApplicableDeviceCount|Int32|Не применимое количество устройств для конкретного пользователя.|

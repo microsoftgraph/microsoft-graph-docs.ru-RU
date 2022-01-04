@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 74af2a84c39bc8372bd54942e22cd2a9ae4c6f99
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 1ef8638a13c027d4b692d0c3743722c39255e244
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61344248"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61712007"
 ---
 # <a name="update-aospdeviceownerdeviceconfiguration"></a>Обновление aospDeviceOwnerDeviceConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "61344248"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -57,32 +57,29 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция String|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|supportsScopeTags|Boolean|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция строк|Список тегов области для этого экземпляра Entity. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|supportsScopeTags|Логический|Указывает, поддерживает ли вся конфигурация устройства назначение тегов области. Назначение свойства ScopeTags не допускается, если это значение является ложным и объекты не будут видны пользователям с охватом. Это происходит для политик Legacy, созданных в Silverlight, и их можно разрешить путем удаления и воссоздания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость к выпуску ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|appsBlockInstallFromUnknownSources|Boolean|Указывает, разрешено ли пользователю включить параметр неизвестных источников. При установке true пользователю не разрешается включить параметры неизвестных источников.|
+|appsBlockInstallFromUnknownSources|Логический|Указывает, разрешено ли пользователю включить параметр неизвестных источников. При установке true пользователю не разрешается включить параметры неизвестных источников.|
 |bluetoothBlocked|Boolean|Указывает, следует ли отключить использование Bluetooth. При наборе true bluetooth нельзя включить на устройстве.|
-|BluetoothBlockConfiguration|Boolean|Указывает, следует ли блокировать пользователю настройку Bluetooth.|
-|BluetoothBlockContactSharing|Boolean|Указывает, следует ли блокировать пользователю доступ к контактам по Bluetooth.|
+|BluetoothBlockConfiguration|Логический|Указывает, следует ли блокировать пользователю настройку Bluetooth.|
 |cameraBlocked|Boolean|Указывает, следует ли отключить использование камеры.|
-|cellularBlockWiFiTethering|Boolean|Указывает, следует ли заблокировать модем Wi-Fi.|
 |factoryResetBlocked|Boolean|Указывает, отключен ли параметр сброса фабрики в параметрах.|
 |passwordMinimumLength|Int32|Указывает минимальную длину пароля, необходимого на устройстве. Допустимые значения: от 4 до 16.|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Время с момента последнего действия до отключения экрана (в минутах).|
 |passwordRequiredType|[AndroidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|Указывает минимальное качество пароля, необходимое на устройстве. Возможные значения: `deviceDefault`, `required`, `numeric`, `numericComplex`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `customPassword`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Указывает количество случаев, когда пользователь может ввести неправильный пароль до стирки устройства. Допустимые значения: от 4 до 11.|
 |screenCaptureBlocked|Boolean|Указывает, следует ли отключить возможность делать снимки экрана.|
-|securityAllowDebuggingFeatures|Boolean|Указывает, следует ли блокировать пользователю включение функций отладки на устройстве.|
-|storageBlockExternalMedia|Boolean|Указывает, следует ли блокировать внешние носитли.|
-|storageBlockUsbFileTransfer|Boolean|Указывает, следует ли блокировать передачу usb-файлов.|
-|backupBlocked|Boolean|Указывает, следует ли блокировать службу резервного копирования.|
-|wifiBlockEditConfigurations|Boolean|Указывает, следует ли блокировать пользователю редактирование параметров подключения к Wi-Fi.|
+|securityAllowDebuggingFeatures|Логический|Указывает, следует ли блокировать пользователю включение функций отладки на устройстве.|
+|storageBlockExternalMedia|Логический|Указывает, следует ли блокировать внешние носитли.|
+|storageBlockUsbFileTransfer|Логический|Указывает, следует ли блокировать передачу usb-файлов.|
+|wifiBlockEditConfigurations|Логический|Указывает, следует ли блокировать пользователю редактирование параметров подключения к Wi-Fi.|
 
 
 
@@ -96,7 +93,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1693
+Content-length: 1587
 
 {
   "@odata.type": "#microsoft.graph.aospDeviceOwnerDeviceConfiguration",
@@ -131,9 +128,7 @@ Content-length: 1693
   "appsBlockInstallFromUnknownSources": true,
   "bluetoothBlocked": true,
   "bluetoothBlockConfiguration": true,
-  "bluetoothBlockContactSharing": true,
   "cameraBlocked": true,
-  "cellularBlockWiFiTethering": true,
   "factoryResetBlocked": true,
   "passwordMinimumLength": 5,
   "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
@@ -143,7 +138,6 @@ Content-length: 1693
   "securityAllowDebuggingFeatures": true,
   "storageBlockExternalMedia": true,
   "storageBlockUsbFileTransfer": true,
-  "backupBlocked": true,
   "wifiBlockEditConfigurations": true
 }
 ```
@@ -153,7 +147,7 @@ Content-length: 1693
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1865
+Content-Length: 1759
 
 {
   "@odata.type": "#microsoft.graph.aospDeviceOwnerDeviceConfiguration",
@@ -191,9 +185,7 @@ Content-Length: 1865
   "appsBlockInstallFromUnknownSources": true,
   "bluetoothBlocked": true,
   "bluetoothBlockConfiguration": true,
-  "bluetoothBlockContactSharing": true,
   "cameraBlocked": true,
-  "cellularBlockWiFiTethering": true,
   "factoryResetBlocked": true,
   "passwordMinimumLength": 5,
   "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
@@ -203,7 +195,6 @@ Content-Length: 1865
   "securityAllowDebuggingFeatures": true,
   "storageBlockExternalMedia": true,
   "storageBlockUsbFileTransfer": true,
-  "backupBlocked": true,
   "wifiBlockEditConfigurations": true
 }
 ```

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dc3c97d9572100c0126b694402161f0d92b318e1
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 7764f1f718e0d4980a9d73e49ed573f39d5eca6e
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696590"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61711930"
 ---
 # <a name="update-devicemanagementscript"></a>Обновление deviceManagementScript
 
@@ -31,7 +31,7 @@ ms.locfileid: "60696590"
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application||
+|Для приложений||
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementManagedDevices.ReadWrite.All|
 
@@ -60,7 +60,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 |id|String|Уникальный идентификатор для сценария управления устройствами.|
 |displayName|String|Имя сценария управления устройствами.|
 |description|String|Необязательное описание сценария управления устройствами.|
-|scriptContent|Двоичный|Содержимое скрипта.|
+|scriptContent|Binary|Содержимое скрипта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сценария управления устройствами. Это свойство доступно только для чтения.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
@@ -110,6 +110,9 @@ Content-Length: 615
   "id": "59ea4525-4525-59ea-2545-ea592545ea59",
   "displayName": "Display Name value",
   "description": "Description value",
+  "runSchedule": {
+    "@odata.type": "microsoft.graph.runSchedule"
+  },
   "scriptContent": "c2NyaXB0Q29udGVudA==",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",

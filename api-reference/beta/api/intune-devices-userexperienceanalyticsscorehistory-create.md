@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 16a79fb1480d06a3482a039ff36be583cec8e0c5
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: bd24c7cdca18aa304ab3de785b215f1dcd3fae0c
+ms.sourcegitcommit: 00ac72f7b1cdde4f71ff332c2e7953908ef9de52
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61344171"
+ms.lasthandoff: 01/04/2022
+ms.locfileid: "61712091"
 ---
 # <a name="create-userexperienceanalyticsscorehistory"></a>Создание userExperienceAnalyticsScoreHistory
 
@@ -29,7 +29,7 @@ ms.locfileid: "61344171"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +53,7 @@ POST /deviceManagement/userExperienceAnalyticsScoreHistory
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор процесса запуска устройства аналитики пользовательского интерфейса.|
+|id|String|Уникальный идентификатор процесса запуска устройства аналитики пользовательского интерфейса.|
 |startupDateTime|DateTimeOffset|Время запуска устройства аналитики пользовательского интерфейса.|
 |overallScore|Int32|Общая оценка аналитики пользовательского опыта. Оценка будет в диапазоне 0-100, 100 является идеальным показателем. Допустимые значения: от 0 до 100|
 |startupScore|Int32|Оценка запуска устройства аналитики пользовательских интерфейсов. Оценка будет в диапазоне 0-100, 100 является идеальным показателем.|
@@ -61,10 +61,12 @@ POST /deviceManagement/userExperienceAnalyticsScoreHistory
 |coreSigninScore|Int32|Оценка основного входного знака устройства для аналитики пользовательского интерфейса. Оценка будет в диапазоне 0-100, 100 является идеальным показателем.|
 |recommendedSoftwareScore|Int32|Оценка основного входного знака устройства для аналитики пользовательского интерфейса. Оценка будет в диапазоне 0-100, 100 является идеальным показателем.|
 |appHealthOverallScore|Int32|Общее состояние здоровья приложения для аналитики пользовательского интерфейса.|
+|workFromAnywhereScore|Int32|Аналитика пользовательских интерфейсов работает из любой точки.|
 |batteryHealthScore|Int32|Оценка состояния заряда батареи для аналитики пользовательского интерфейса.|
 |startupTotalDevices|Int32|Общее число устройств для производительности запуска для аналитики пользовательских интерфейсов.|
 |recommendedSoftwareTotalDevices|Int32|Общее число устройств категории аналитики пользовательских интерфейсов рекомендуемого программного обеспечения.|
 |appHealthTotalDevices|Int32|Общее число устройств для здоровья приложения для аналитики пользовательского интерфейса.|
+|workFromAnywhereTotalDevices|Int32|Общее число устройств категории аналитики пользовательских интерфейсов работает из любой точки мира.|
 |batteryHealthTotalDevices|Int32|Общее число устройств для здоровья батареи категории аналитики пользовательских интерфейсов.|
 |restartScore|Int32|Оценка перезапуска. Оценка будет в диапазоне 0-100, 100 является идеальным показателем, 0 указывает на чрезмерные перезапуски. Допустимые значения от 0 до 9999999|
 
@@ -80,7 +82,7 @@ POST /deviceManagement/userExperienceAnalyticsScoreHistory
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsScoreHistory
 Content-type: application/json
-Content-length: 485
+Content-length: 555
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
@@ -91,10 +93,12 @@ Content-length: 485
   "coreSigninScore": 15,
   "recommendedSoftwareScore": 8,
   "appHealthOverallScore": 5,
+  "workFromAnywhereScore": 5,
   "batteryHealthScore": 2,
   "startupTotalDevices": 3,
   "recommendedSoftwareTotalDevices": 15,
   "appHealthTotalDevices": 5,
+  "workFromAnywhereTotalDevices": 12,
   "batteryHealthTotalDevices": 9,
   "restartScore": 12
 }
@@ -105,7 +109,7 @@ Content-length: 485
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 534
+Content-Length: 604
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
@@ -117,10 +121,12 @@ Content-Length: 534
   "coreSigninScore": 15,
   "recommendedSoftwareScore": 8,
   "appHealthOverallScore": 5,
+  "workFromAnywhereScore": 5,
   "batteryHealthScore": 2,
   "startupTotalDevices": 3,
   "recommendedSoftwareTotalDevices": 15,
   "appHealthTotalDevices": 5,
+  "workFromAnywhereTotalDevices": 12,
   "batteryHealthTotalDevices": 9,
   "restartScore": 12
 }
