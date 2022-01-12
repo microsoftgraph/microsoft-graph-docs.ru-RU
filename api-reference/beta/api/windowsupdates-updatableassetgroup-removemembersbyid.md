@@ -1,16 +1,16 @@
 ---
 title: 'updatableAssetGroup: removeMembersById'
 description: Удалите членов одного типа из updatableAssetGroup.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 2a6b6c779c8dfaabf4329472988fb84d2f80d739
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5e187fadab110c3d8570c79736a3032ab7f41f5c
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61013235"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792150"
 ---
 # <a name="updatableassetgroup-removemembersbyid"></a>updatableAssetGroup: removeMembersById
 Пространство имен: microsoft.graph.windowsUpdates
@@ -28,7 +28,7 @@ ms.locfileid: "61013235"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|WindowsUpdates.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|WindowsUpdates.ReadWrite.All|
+|Application|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,7 +43,7 @@ POST /admin/windows/updates/updatableAssets/{updatableAssetGroupId}/removeMember
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,7 +54,7 @@ POST /admin/windows/updates/updatableAssets/{updatableAssetGroupId}/removeMember
 |Параметр|Тип|Описание|
 |:---|:---|:---|
 |ids|Коллекция String|Список идентификаторов, соответствующих [updatableAsset](../resources/windowsupdates-updatableasset.md) ресурсам, которые необходимо удалить в качестве членов **updatableAssetGroup.**|
-|memberEntityType|Строка|Полный тип **updatableAsset** ресурсов. Возможные значения: `#microsoft.graph.windowsUpdates.azureADDevice` .|
+|memberEntityType|String|Полный тип **updatableAsset** ресурсов. Возможные значения: `#microsoft.graph.windowsUpdates.azureADDevice` .|
 
 ## <a name="response"></a>Ответ
 

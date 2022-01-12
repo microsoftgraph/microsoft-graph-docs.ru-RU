@@ -1,16 +1,16 @@
 ---
 title: тип ресурса conditionalAccessPolicyCoverage
 description: Представляет сведения о любой политике Azure Active Directory, определяемой правилами доступа к ресурсу для данного управляемого клиента.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: a4bc4f336692166ff032727a6fb13222edd9d7d9
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 686e587378b0dd921dedac4aac80cacfeafb885f
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402543"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61798755"
 ---
 # <a name="conditionalaccesspolicycoverage-resource-type"></a>тип ресурса conditionalAccessPolicyCoverage
 
@@ -30,9 +30,9 @@ ms.locfileid: "53402543"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |conditionalAccessPolicyState|String|Состояние политики условного доступа. Возможные значения: `enabled`, `disabled`, `enabledForReportingButNotEnforced`. Обязательное. Только для чтения.|
-|id|String|Уникальный идентификатор для этого объекта. Обязательный. Только для чтения.|
+|id|String|Уникальный идентификатор для этого объекта. Обязательное. Только для чтения.|
 |latestPolicyModifiedDateTime|DateTimeOffset|Дата и время последнего изменения политики условного доступа. Обязательный. Только для чтения.|
-|requiresDeviceCompliance|Boolean|Флаг, указывающий, требуется ли политике условного доступа соответствие требованиям устройства. Обязательный. Только для чтения.|
+|requiresDeviceCompliance|Логический|Флаг, указывающий, требуется ли политике условного доступа соответствие требованиям устройства. Обязательное. Только для чтения.|
 |tenantDisplayName|String|Имя отображения управляемого клиента. Обязательный. Только для чтения.|
 
 ## <a name="relationships"></a>Связи

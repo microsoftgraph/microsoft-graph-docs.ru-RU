@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6b276b052331c872610809c950ecb8803d4b22a3
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8b6da105c163c1b901e43f21b90cd42d28de7d29
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61026822"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860083"
 ---
 # <a name="list-replies"></a>Ответы списка
 
@@ -52,7 +52,7 @@ GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {token}. Обязательный.  |
+| Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -148,6 +148,7 @@ Content-type: application/json
                 "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
                 "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
             },
+            "onBehalfOf": null,
             "attachments": [],
             "mentions": [],
             "reactions": []
@@ -186,6 +187,7 @@ Content-type: application/json
                 "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
                 "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
             },
+            "onBehalfOf": null,
             "attachments": [],
             "mentions": [],
             "reactions": []
@@ -224,6 +226,7 @@ Content-type: application/json
                 "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
                 "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
             },
+            "onBehalfOf": null,
             "attachments": [],
             "mentions": [],
             "reactions": []

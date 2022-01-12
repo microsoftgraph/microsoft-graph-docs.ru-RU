@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса развертывания
 description: Представляет развертывание контента на наборе устройств.
-author: Alice-at-Microsoft
-localization_priority: Normal
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: e34bca8fc1776c749e42e97caa1dd0d91fa51433
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: d4d34481b6a1d99d7c2a48b3becd7b8def764924
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52068104"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61841980"
 ---
 # <a name="deployment-resource-type"></a>Тип ресурса развертывания
 
@@ -47,7 +47,7 @@ ms.locfileid: "52068104"
 |:---|:---|:---|
 |аудитория|[microsoft.graph.windowsUpdates.deploymentAudience](../resources/windowsupdates-deploymentaudience.md)|Указывает аудиторию, к которой развернут контент.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

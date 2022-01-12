@@ -1,16 +1,16 @@
 ---
 title: тип ресурса cloudPcConnection
 description: Представляет облачное подключение к ПК для данного управляемого клиента.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 75af7be7633e43bc594f7185f196f40abca39883
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 4f7f306a54354d0c6d4860abd0866001f5e8626f
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402550"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860434"
 ---
 # <a name="cloudpcconnection-resource-type"></a>тип ресурса cloudPcConnection
 
@@ -32,8 +32,8 @@ ms.locfileid: "53402550"
 |displayName|String|Отображение имени облачного подключения к КОМПЬЮТЕРУ. Обязательный. Только для чтения.|
 |healthCheckStatus|String|Состояние здоровья облачного подключения к ПК. Возможные значения: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`.  Обязательный атрибут. Только для чтения.|
 |id|String|Уникальный идентификатор для облачного подключения к ПК. Обязательный. Только для чтения.|
-|lastRefreshedDateTime|DateTimeOffset|Дата и время последнего обновления объекта на платформе управления с несколькими клиентами. Обязательный. Только для чтения.|
-|tenantDisplayName|String|Имя отображения управляемого клиента. Обязательный. Только для чтения.|
+|lastRefreshedDateTime|DateTimeOffset|Дата и время последнего обновления объекта на платформе управления с несколькими клиентами. Обязательное. Только для чтения.|
+|tenantDisplayName|String|Имя отображения управляемого клиента. Обязательное. Только для чтения.|
 |tenantId|String|Идентификатор Azure Active Directory клиента для [управляемого клиента.](../resources/managedtenants-tenant.md) Обязательный. Только для чтения.|
 
 ## <a name="relationships"></a>Связи

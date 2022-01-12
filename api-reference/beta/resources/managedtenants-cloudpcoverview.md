@@ -1,16 +1,16 @@
 ---
 title: тип ресурса cloudPcOverview
 description: Представляет обзор облачных компьютеров для данного управляемого клиента.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: a527dea18db31c8d7598a5b04ba538fa9a5af1ab
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 1eb4349c16a529c1ae3a8a9f57c221dd129ba5cc
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402544"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61795559"
 ---
 # <a name="cloudpcoverview-resource-type"></a>тип ресурса cloudPcOverview
 

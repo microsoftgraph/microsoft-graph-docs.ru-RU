@@ -1,16 +1,16 @@
 ---
 title: 'managementActionTenantDeploymentStatus: changeDeploymentStatus'
 description: Изменение состояния развертывания уровня клиента для действия управления. Эти сведения используются для получения сведений о том, какие действия управления находятся в определенном состоянии. В качестве примера может быть план применения многофакторной проверки подлинности для администраторов, поэтому было бы идеально изменить состояние на запланированное, чтобы отразить соответствующий статус.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 9be7954a2f1446477470fdf7a89f1e30dfa1e7c5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3236033f099d02adb0a59dbd9d0ba565ee74eb74
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022067"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61790883"
 ---
 # <a name="managementactiontenantdeploymentstatus-changedeploymentstatus"></a>managementActionTenantDeploymentStatus: changeDeploymentStatus
 Пространство имен: microsoft.graph.managedTenants
@@ -41,7 +41,7 @@ POST /tenantRelationships/managedTenants/managementActionTenantDeploymentStatuse
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,9 +51,9 @@ POST /tenantRelationships/managedTenants/managementActionTenantDeploymentStatuse
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|tenantGroupId|Строка|Идентификатор группы клиента.|
+|tenantGroupId|String|Идентификатор группы клиента.|
 |tenantId|String|Идентификатор Azure Active Directory клиента для [управляемого клиента.](../resources/managedtenants-tenant.md)|
-|managementActionId|Строка|Идентификатор для действия [управления](../resources/managedtenants-managementaction.md).|
+|managementActionId|String|Идентификатор для действия [управления](../resources/managedtenants-managementaction.md).|
 |managementTemplateId|String|Идентификатор шаблона [управления.](../resources/managedtenants-managementtemplate.md)|
 |status|String|Новый статус развертывания клиента [действия](../resources/managedtenants-managementaction.md) управления.|
 

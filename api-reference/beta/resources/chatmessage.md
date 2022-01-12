@@ -5,12 +5,12 @@ doc_type: resourcePageType
 ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
-ms.openlocfilehash: 391a882876772930479c0b01079a138fe33ac81e
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: 8b449c28f8283096696a6d95704de46cadaa8cfb
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61321801"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860938"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
@@ -50,33 +50,33 @@ ms.locfileid: "61321801"
 |[Список всего содержимого, на которое было организовано](../api/chatmessage-list-hostedcontents.md) | [коллекция chatMessageHostedContent](../resources/chatmessagehostedcontent.md)| Получите все содержимое, связанное с сообщением.|
 |[Получить контент с хост-контентом](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | Получите у себя содержимое (и его bytes) для сообщения.|
 
-
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|id|String| Только для чтения. Уникальный идентификатор сообщения.|
-|replyToId| string | Только для чтения. ID родительского сообщения чата или корневого сообщения чата потока. (Применяется только к чатам в каналах, а не к чатам.) |
-|from|[chatMessageFromIdentitySet](chatmessagefromidentityset.md)| Сведения о отправителье сообщения чата. Можно установить только во время [миграции.](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)|
-|etag| string | Только для чтения. Номер версии сообщения чата. |
-|messageType|chatMessageType|Тип сообщения чата. Допустимые значения: `message`, `chatEvent`, `typing`, `unknownFutureValue`, `systemEventMessage`. Обратите внимание, что требуется использоваться заголовок запроса `Prefer: include-unknown-enum-members`, чтобы получить следующее значение в этом [расширяемом перечислении](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `systemEventMessage`.|
-|createdDateTime|dateTimeOffset|Время создания сообщения чата.|
-|lastModifiedDateTime|dateTimeOffset|Только для чтения. Timestamp, когда сообщение чата создается (начальный параметр) или изменено, в том числе при добавлении или удалении реакции. |
-|lastEditedDateTime|dateTimeOffset|Только для чтения. Timestamp, когда были сделаны изменения в сообщении чата. Вызывает флаг "Отредактирован" Teams пользовательского интерфейса. Если изменение не выполнено, значение `null` .|
-|deletedDateTime|dateTimeOffset|Только для чтения. Timestamp, при котором сообщение чата было удалено, или null, если не удалено. |
-|subject|string| Тема сообщения чата в plaintext.|
-|body|[itemBody](itembody.md)|Представление plaintext/HTML контента сообщения чата. Представление определяется параметром contentType в тексте. Содержимое всегда находится в HTML, если в сообщении чата [содержится chatMessageMention.](chatmessagemention.md) |
-|summary|string| Сводный текст сообщения чата, который можно использовать для push-уведомлений и сводных представлений или отпадения представлений. Применяется только к сообщениям чата, а не к чатам в чате. |
 |attachments|Коллекция [chatMessageAttachment](chatmessageattachment.md) |Ссылки на присоединенные объекты, такие как файлы, вкладки, собрания и т.д.|
-|mentions|Коллекция [chatMessageMention](chatmessagemention.md)| Список сущностями, упомянутыми в сообщении чата. Поддерживаемые сущности: пользователь, бот, команда, канал и теги.|
-|importance|string | Важность сообщения чата. Допустимые значения: `normal`, `high`, `urgent`.|
-|reactions| Коллекция [chatMessageReaction](chatmessagereaction.md) | Реакции на это сообщение чата (например, Like).|
-|языковые стандарты|string|Локализовать сообщение чата, за набором клиентом. Всегда задавайте значение `en-us`.|
-|policyViolation | [chatMessagePolicyViolation](chatmessagepolicyviolation.md) |Определяет свойства нарушения политики, установленные приложением для предотвращения потери данных (DLP).|
-|chatId|string|Если сообщение было отправлено в **чате,** представляет собой удостоверение **чата**.|
+|body|[itemBody](itembody.md)|Представление plaintext/HTML контента сообщения чата. Представление определяется параметром contentType в тексте. Содержимое всегда находится в HTML, если в сообщении чата [содержится chatMessageMention.](chatmessagemention.md) |
 |channelIdentity|[channelIdentity](channelidentity.md)|Если сообщение было отправлено в канале, представляет удостоверение канала.|
-|webUrl|string|Только для чтения. Ссылка на сообщение в Microsoft Teams.|
+|chatId|string|Если сообщение было отправлено в **чате,** представляет собой удостоверение **чата**.|
+|createdDateTime|dateTimeOffset|Время создания сообщения чата.|
+|deletedDateTime|dateTimeOffset|Только для чтения. Timestamp, при котором сообщение чата было удалено, или null, если не удалено. |
+|etag| string | Только для чтения. Номер версии сообщения чата. |
 |eventDetail|[eventMessageDetail](../resources/eventmessagedetail.md)|Только для чтения.  При этом представлены сведения о событии, произошедшем в чате, канале **или** **команде,** например добавление новых участников. Для сообщений событий будет установлено свойство **messageType** `systemEventMessage` .|
+|from|[chatMessageFromIdentitySet](chatmessagefromidentityset.md)| Сведения о отправителье сообщения чата. Можно установить только во время [миграции.](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)|
+|id|String| Только для чтения. Уникальный идентификатор сообщения.|
+|importance|string | Важность сообщения чата. Допустимые значения: `normal`, `high`, `urgent`.|
+|lastEditedDateTime|dateTimeOffset|Только для чтения. Timestamp, когда были сделаны изменения в сообщении чата. Вызывает флаг "Отредактирован" Teams пользовательского интерфейса. Если изменение не выполнено, значение `null` .|
+|lastModifiedDateTime|dateTimeOffset|Только для чтения. Timestamp, когда сообщение чата создается (начальный параметр) или изменено, в том числе при добавлении или удалении реакции. |
+|языковые стандарты|string|Локализовать сообщение чата, за набором клиентом. Всегда задавайте значение `en-us`.|
+|mentions|Коллекция [chatMessageMention](chatmessagemention.md)| Список сущностями, упомянутыми в сообщении чата. Поддерживаемые сущности: пользователь, бот, команда, канал и теги.|
+|messageType|chatMessageType|Тип сообщения чата. Допустимые значения: `message`, `chatEvent`, `typing`, `unknownFutureValue`, `systemEventMessage`. Обратите внимание, что требуется использоваться заголовок запроса `Prefer: include-unknown-enum-members`, чтобы получить следующее значение в этом [расширяемом перечислении](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `systemEventMessage`.|
+|onBehalfOf|[chatMessageFromIdentitySet](chatmessagefromidentityset.md)| Присвоение пользователем сообщения при [отправке](/microsoftteams/platform/messaging-extensions/how-to/action-commands/respond-to-task-module-submit?tabs=dotnet%2Cdotnet-1#user-attribution-for-bots-messages) ботом сообщения от имени пользователя.|
+|policyViolation | [chatMessagePolicyViolation](chatmessagepolicyviolation.md) |Определяет свойства нарушения политики, установленные приложением для предотвращения потери данных (DLP).|
+|reactions| Коллекция [chatMessageReaction](chatmessagereaction.md) | Реакции на это сообщение чата (например, Like).|
+|replyToId| string | Только для чтения. ID родительского сообщения чата или корневого сообщения чата потока. (Применяется только к чатам в каналах, а не к чатам.) |
+|subject|string| Тема сообщения чата в plaintext.|
+|summary|string| Сводный текст сообщения чата, который можно использовать для push-уведомлений и сводных представлений или отпадения представлений. Применяется только к сообщениям чата, а не к чатам в чате. |
+|webUrl|string|Только для чтения. Ссылка на сообщение в Microsoft Teams.|
 
 ## <a name="relationships"></a>Связи
 
@@ -108,7 +108,6 @@ ms.locfileid: "61321801"
   "@odata.type": "microsoft.graph.chatMessage"
 }-->
 
-
 ```json
 {
   "id": "string (identifier)",
@@ -125,6 +124,7 @@ ms.locfileid: "61321801"
   "summary": "string",
   "attachments": [{"@odata.type": "microsoft.graph.chatMessageAttachment"}],
   "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
+  "onBehalfOf": {"@odata.type": "microsoft.graph.chatMessageFromIdentitySet"},
   "importance": "string",
   "reactions": [{"@odata.type": "microsoft.graph.chatMessageReaction"}],
   "locale": "string",

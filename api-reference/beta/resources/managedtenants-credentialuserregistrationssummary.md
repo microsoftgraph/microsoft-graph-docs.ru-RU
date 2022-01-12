@@ -1,16 +1,16 @@
 ---
 title: тип ресурса credentialUserRegistrationsSummary
 description: Представляет сводку Azure Active Directory регистраций пользователей учетных данных для данного управляемого клиента.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 43a3f5cd39e8c151c71f976042e9bb33ae527dc4
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 4ffa029d74ea3ee459be9822b262e0963ec2cf9c
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402538"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791940"
 ---
 # <a name="credentialuserregistrationssummary-resource-type"></a>тип ресурса credentialUserRegistrationsSummary
 
@@ -34,7 +34,7 @@ ms.locfileid: "53402538"
 |mfaAndSsprCapableUserCount|Int32|Количество пользователей, способных выполнять многофакторную проверку подлинности или сброс пароля самообслуживления. Необязательно. Только для чтения.|
 |mfaConditionalAccessPolicyState|String|Состояние политики условного доступа, которая обеспечивает многофакторную проверку подлинности. Необязательно. Только для чтения.|
 |mfaRegisteredUserCount|Int32|Количество пользователей, зарегистрированных для многофакторной проверки подлинности. Необязательно. Только для чтения.|
-|securityDefaultsEnabled|Boolean|Флаг, указывающий, включен ли по умолчанию безопасность удостоверений. Необязательно. Только для чтения.|
+|securityDefaultsEnabled|Логический|Флаг, указывающий, включен ли по умолчанию безопасность удостоверений. Необязательно. Только для чтения.|
 |ssprEnabledUserCount|Int32|Число пользователей, включенных для сброса пароля самообслуживки. Необязательно. Только для чтения.|
 |ssprRegisteredUserCount|Int32|Число пользователей, зарегистрированных для сброса пароля самообслуживки. Необязательно. Только для чтения.|
 |tenantDisplayName|String|Имя отображения управляемого клиента. Обязательный. Только для чтения.|

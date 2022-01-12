@@ -1,16 +1,16 @@
 ---
 title: 'tenantTag: unassignTag'
 description: Un-assigns the tenant tag from the specified managed tenants.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: bf712ca7119a24d40ed0674e1ddf371d2fe7daf1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9f6743d561095dd5cdf5d4d24cc99d0d734c125d
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022027"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861729"
 ---
 # <a name="tenanttag-unassigntag"></a>tenantTag: unassignTag
 Пространство имен: microsoft.graph.managedTenants
@@ -41,7 +41,7 @@ POST /tenantRelationships/managedTenants/tenantTags/{tenantTagId}/unassignTag
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,7 +51,7 @@ POST /tenantRelationships/managedTenants/tenantTags/{tenantTagId}/unassignTag
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|tenantIds|Коллекция объектов string|Коллекция идентификаторов Azure Active Directory для управляемых клиентов.|
+|tenantIds|Коллекция строк|Коллекция идентификаторов Azure Active Directory для управляемых клиентов.|
 
 ## <a name="response"></a>Отклик
 

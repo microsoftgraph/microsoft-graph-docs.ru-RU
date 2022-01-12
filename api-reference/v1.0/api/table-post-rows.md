@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 32db28c90c4c3bed97daef72d05562edcdb01e89
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 546ef8a795683fbd53a850debc1fdc6349538524
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947495"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860931"
 ---
 # <a name="create-tablerow"></a>Создание объекта TableRow
 
@@ -38,17 +38,17 @@ ms.locfileid: "60947495"
 POST /me/drive/items/{id}/workbook/tables/{id|name}/rows
 POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows
 POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows
-POST /me/drive/root:/{item-path}:/workbookworksheets/{id|name}/tables/{id|name}/rows
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя | Описание |
 |:---------------|:----------|
-| Авторизация  | Bearer {token}. Обязательный. |
+| Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type | application/json. Обязательный.|
 | Prefer  | respond-async. Указывает, что запрос является запросом async. Необязательный параметр.  |
-| Workbook-Session-Id  | {Workbook-Session-Id}. Создан из **запроса createSession.** Необязательный параметр.|
+| Workbook-Session-Id  | {Workbook-Session-Id}. Создан из **запроса createSession.** Необязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 

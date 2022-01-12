@@ -5,12 +5,12 @@ author: kjyam98
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 21257dd6ea2783dc083aac841a93ab5abcee4c20
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b9e8739dc0ae0b8f3eddd11ff395911d01ee2552
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61034425"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860040"
 ---
 # <a name="update-federatedidentitycredential"></a>Обновление federatedIdentityCredential
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "61034425"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) |  Application.ReadWrite.All |
-|Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+|Приложение | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -36,13 +36,15 @@ ms.locfileid: "61034425"
 }
 -->
 ``` http
-PATCH /applications/{applicationsId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
+PATCH /applications/{applicationId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
+
+PATCH /applications/{applicationId}/federatedIdentityCredentials/{federatedIdentityCredentialName}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,8 +55,8 @@ PATCH /applications/{applicationsId}/federatedIdentityCredentials/{federatedIden
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|аудитории|Коллекция объектов string|Список аудиторий, которые могут отображаться в выданных маркерах. Рекомендуемое значение `api://AzureADTokenExchange` . |
-|description|Строка|Предоставленное пользователем описание того, для чего используется federatedIdentityCredential. |
+|аудитории|Коллекция строк|Список аудиторий, которые могут отображаться в выданных маркерах. Рекомендуемое значение `api://AzureADTokenExchange` . |
+|description|String|Предоставленное пользователем описание того, для чего используется federatedIdentityCredential. |
 |эмитент|String|URL-адрес входящих доверенных эмитентов (Secure Token Service). Соответствует утверждению эмитента о маркере доступа. Например, в сценарии "Управляемые ключи клиента" Azure AD является эмитентом и допустимым значением будет `https://login.microsoftonline.com/{tenantid}/v2.0` . Сочетание значений эмитента **и** субъекта должно **быть** уникальным в приложении. |
 |subject|String|<li>Для эмитента Azure AD службаPrincipal (может представлять управляемый идентификатор), которая может `objectId` олицетворять приложение. Объект, связанный с этим GUID, должен существовать в клиенте.</li><li>Для всех остальных эмитентов строка без дополнительной проверки</ul><br><br>Сочетание значений эмитента **и** субъекта должно **быть** уникальным в приложении.|
 

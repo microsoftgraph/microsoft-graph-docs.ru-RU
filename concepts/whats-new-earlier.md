@@ -3,12 +3,12 @@ title: Обзор предыдущих выпусков Microsoft Graph
 description: Новые возможности в предыдущих выпусках Microsoft Graph
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: e46c1be767915769fde330b1bf58a359d3ed1a69
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 9b31312e4592dcd9c09a50d4418a0dff64581075
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650561"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791821"
 ---
 # <a name="highlights-of-earlier-releases"></a>Обзор предыдущих выпусков
 
@@ -20,10 +20,6 @@ ms.locfileid: "61650561"
 
 ### <a name="cloud-communications--online-meetings"></a>Облачные коммуникации | Онлайн-собрания
 Поддержка нескольких платных и бесплатных номеров для телефонного подключения к конференции ([аудиоконференции](/graph/api/resources/audioConferencing)) [виртуального собрания](/graph/api/resources/onlinemeeting).
-
-<!-- Hold off until permissions are deployed
-As part of [privacy management in Microsoft 365](/privacy/solutions/privacymanagement/privacy-management?view=o365-worldwide&preserve-view=true), subject rights request now debuts in both v1 and beta endpoints of Microsoft Graph. The [subject rights request API](/graph/api/resources/subjectrightsrequest) lets users make requests to review or manage their personal data in their organizations. It also lets organizations automate and scale managing these requests, helping them to meet industry regulations more efficiently.
--->
 
 ### <a name="education"></a>Образование
 Поддержка [мультимедийных](/graph/api/resources/educationMediaResource) файлов или другого [внешнего ролевого ресурса](/graph/api/resources/educationExternalResource) в качестве [ресурса назначения](/graph/api/resources/educationassignmentresource).
@@ -911,7 +907,7 @@ GA интерфейса API [просмотра доступа](/graph/api/resou
 ### <a name="change-notifications"></a>Уведомления об изменениях
 [Отслеживание изменений](delta-query-overview.md) поддерживаемых ресурсов в национальном облаке Microsoft Graph для государственных организаций США.
 
-### <a name="cloud-communications"></a>Облачные коммуникации
+### <a name="cloud-communications"></a>Коммуникации из облака
 - [Отмените](/graph/api/call-cancelmediaprocessing) любые действия интерактивного голосового ответа (IVR), выполняемые или находящиеся в очереди, которые [воспроизводят звуковой сигнал](/graph/api/call-playprompt) или [записывают ответ](/graph/api/call-record).
 - Получите [сведения о расшифровке звонка](/graph/api/resources/calltranscriptioninfo) с помощью свойства **transcription**.
 

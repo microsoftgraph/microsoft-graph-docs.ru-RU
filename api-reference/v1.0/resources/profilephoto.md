@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса profilePhoto
 description: Фотография профиля пользователя, группы или контакта Outlook из Exchange Online. Это двоичные данные, не представленные в кодировке base-64.
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: kevinbellinger
-ms.prod: ''
+ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 1b5934eaca94c68e5e11e4131b2f684bb8cdd100
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
-ms.translationtype: HT
+ms.openlocfilehash: d384416efe6dd26999972954433964d6f2b8e77d
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59143827"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792101"
 ---
 # <a name="profilephoto-resource-type"></a>Тип ресурса profilePhoto
 
@@ -26,6 +26,10 @@ ms.locfileid: "59143827"
 |:---------------|:--------|:----------|
 |[Получение объекта profilePhoto](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) |Получение указанного объекта **profilePhoto** или его метаданных (свойств profilePhoto).|
 |[Обновление](../api/profilephoto-update.md) | [profilePhoto](profilephoto.md)  |Назначение фотографии указанному пользователю, группе или контакту. Фотография должна быть представлена в двоичном формате. Она заменяет текущую фотографию (если она существует).|
+
+> [!NOTE]
+>
+> Управление фотографиями пользователей с помощью API microsoft Graph в настоящее время не поддерживается в клиентах Azure AD B2C.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|

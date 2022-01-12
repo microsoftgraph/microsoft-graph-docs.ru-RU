@@ -1,16 +1,16 @@
 ---
 title: тип ресурса featureUpdateCatalogEntry
 description: Метаданные для обновления Windows 10, которое можно утвердить для развертывания.
-author: Alice-at-Microsoft
-localization_priority: Normal
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 64ad4c2506a2d8f90276e50e7fe5288e1af1d8db
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 94403127fdbc8c263df546c2dfd1359c87894a06
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067543"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861643"
 ---
 # <a name="featureupdatecatalogentry-resource-type"></a>тип ресурса featureUpdateCatalogEntry
 
@@ -20,7 +20,7 @@ ms.locfileid: "52067543"
 
 Метаданные для обновления Windows 10, которое можно утвердить для развертывания.
 
-Windows 10 обновления компонентов выпускаются раз в два года и содержат новые функции для Windows 10. Установка этих обновлений увеличивает Windows 10 сборки и, как правило, приводит к новому жизненному циклу обслуживания и концу даты службы. Корпорация Майкрософт рекомендует организациям регулярно развертывать новые обновления функций в рамках Windows в качестве службы.
+Windows 10 обновления компонентов выпускаются раз в два года и содержат новые функции для Windows 10. Установка этих обновлений увеличивает Windows 10 сборки и, как правило, приводит к новому жизненному циклу обслуживания и концу даты службы. Корпорация Майкрософт рекомендует организациям регулярно развертывать новые обновления функций в рамках принятия Windows как услуга.
 
 Наследует от [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).
 

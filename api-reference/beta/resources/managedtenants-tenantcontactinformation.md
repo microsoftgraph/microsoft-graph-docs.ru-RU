@@ -1,16 +1,16 @@
 ---
 title: тип ресурса tenantContactInformation
 description: Представляет контакт в управляемом клиенте.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: b60005cf60a9ac1b96a3b650a853f8b198d27e48
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: f852bbae5a08c00d101e122443b9e5b50382eb62
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53403157"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860462"
 ---
 # <a name="tenantcontactinformation-resource-type"></a>тип ресурса tenantContactInformation
 
@@ -23,10 +23,10 @@ ms.locfileid: "53403157"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|email|String|Адрес электронной почты для контакта. Необязательный|
+|email|String|Адрес электронной почты для контакта. Необязательна|
 |name|String|Имя контакта. Обязательный.|
 |notes|String|Заметки, связанные с контактом. Необязательный|
-|phone|String|Номер телефона для контакта. Необязательное.|
+|phone|String|Номер телефона для контакта. Необязательно.|
 |title|String|Название для контакта. Обязательный.|
 
 ## <a name="relationships"></a>Связи

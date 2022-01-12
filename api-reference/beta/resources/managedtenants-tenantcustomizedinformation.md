@@ -1,16 +1,16 @@
 ---
 title: tenantCustomizedInformation resource type
 description: Представляет настраиваемые сведения для управляемого клиента.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 580479e6fd710eef7a0907ea51cd5605ef445e40
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 4b6ad664b8b3bf42cf9fef2410ed0f9eac58e464
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53403156"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860952"
 ---
 # <a name="tenantcustomizedinformation-resource-type"></a>tenantCustomizedInformation resource type
 
@@ -31,8 +31,8 @@ ms.locfileid: "53403156"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |contacts|[коллекция microsoft.graph.managedTenants.tenantContactInformation](../resources/managedtenants-tenantcontactinformation.md)|Коллекция контактов для управляемого клиента. Необязательное свойство.|
-|displayName|String|Имя отображения управляемого клиента. Обязательный. Только для чтения.|
-|id|String|Идентификатор Azure Active Directory клиента для управляемого клиента. Обязательный. Только для чтения.|
+|displayName|String|Имя отображения управляемого клиента. Обязательное. Только для чтения.|
+|id|String|Идентификатор Azure Active Directory клиента для управляемого клиента. Обязательное. Только для чтения.|
 |tenantId|String|Идентификатор Azure Active Directory клиента для [управляемого клиента.](../resources/managedtenants-tenant.md) Необязательно. Только для чтения.|
 |веб-сайт|String|Веб-сайт управляемого клиента. Обязательный.|
 

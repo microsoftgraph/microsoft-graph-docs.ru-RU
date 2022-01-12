@@ -1,16 +1,16 @@
 ---
 title: тип ресурсов managementIntentInfo
 description: Представляет сведения о связи для намерения управления.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 9bc58ff4c850661b968e7b540de9038074406ac5
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 05442959aaa64ddc0fa1059ff599b18d421dcd7b
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402705"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61789987"
 ---
 # <a name="managementintentinfo-resource-type"></a>тип ресурсов managementIntentInfo
 
@@ -24,7 +24,7 @@ ms.locfileid: "53402705"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |managementIntentDisplayName|String|Имя отображения для намерения управления. Необязательно. Только для чтения.|
-|managementIntentId|String|Идентификатор для намерения управления. Обязательный. Только для чтения.|
+|managementIntentId|String|Идентификатор для намерения управления. Обязательное. Только для чтения.|
 |managementTemplates|[коллекция microsoft.graph.managedTenants.managementTemplateDetailedInfo](../resources/managedtenants-managementtemplatedetailedinfo.md)|Коллекция сведений о шаблонах управления, связанных с намерением управления. Необязательно. Только для чтения.|
 
 ## <a name="relationships"></a>Связи

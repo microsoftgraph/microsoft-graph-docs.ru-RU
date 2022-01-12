@@ -1,16 +1,16 @@
 ---
 title: Get managementAction
 description: Ознакомьтесь с свойствами и отношениями объекта managementAction.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 2fad5be2f4953c1fd5dfc40c3517cb917ef02812
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 75a1ffdb90bdc3e6eede540aa30e84813d5bf6ac
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019822"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61817299"
 ---
 # <a name="get-managementaction"></a>Get managementAction
 Пространство имен: microsoft.graph.managedTenants
@@ -44,7 +44,7 @@ GET /tenantRelationships/managedTenants/managementActions/{managementActionId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

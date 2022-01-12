@@ -1,16 +1,16 @@
 ---
 title: Список conditionalAccessPolicyCoverages
 description: Получите список объектов conditionalAccessPolicyCoverage и их свойств.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 83b00d85c9279c8874c2966722d97174851568d8
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b46d412dd37db96998c7f422b084e0357a33430b
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60981160"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61826745"
 ---
 # <a name="list-conditionalaccesspolicycoverages"></a>Список conditionalAccessPolicyCoverages
 Пространство имен: microsoft.graph.managedTenants
@@ -44,7 +44,7 @@ GET /tenantRelationships/managedTenants/conditionalAccessPolicyCoverages
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

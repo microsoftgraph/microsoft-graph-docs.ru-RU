@@ -1,16 +1,16 @@
 ---
 title: Обновление tenantTag
 description: Обновление свойств объекта tenantTag.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 9b08396a4e7fc569f3e9868367b80822bf036d03
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 19db255f70f0e0b9db8f18c2ffae9a5412608d7a
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61020697"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61862692"
 ---
 # <a name="update-tenanttag"></a>Обновление tenantTag
 Пространство имен: microsoft.graph.managedTenants
@@ -41,7 +41,7 @@ PATCH /tenantRelationships/managedTenants/tenantTags/{tenantTagId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,8 +51,8 @@ PATCH /tenantRelationships/managedTenants/tenantTags/{tenantTagId}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|Строка|Имя отображения тега клиента.|
-|description|Строка|Описание тега клиента.|
+|displayName|String|Имя отображения тега клиента.|
+|description|String|Описание тега клиента.|
 |клиенты|[коллекция microsoft.graph.managedTenants.tenantInfo](../resources/managedtenants-tenantinfo.md)|Коллекция управляемых клиентов, связанных с тегом клиента.|
 
 ## <a name="response"></a>Отклик

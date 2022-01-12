@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: simonhult
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: 17b0c03659e53685ff0644100f31dc7bd20df4d4
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 1ae0e4bd967238aa5566177b89c808231999f688
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695254"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861253"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-people-and-workplace-intelligence-in-an-app"></a>Использование API Microsoft Graph для интеграции функций социальной и рабочей аналитики в приложении
 
@@ -51,7 +51,7 @@ Microsoft Graph обеспечивает доступ к полезным дан
 - Список [популярных документов](../api/insights-list-trending.md) пользователя
 - Список документов, [используемых](../api/insights-list-used.md) пользователем
 - Список документов, [к которым пользователю предоставлен доступ или к которым пользователь предоставил доступ](../api/insights-list-shared.md)
-- Изучите способы [настройки параметров конфиденциальности для аналитики элементов](/graph/insights-customize-item-insights-privacy.md) в организации.
+- Изучите способы [настройки параметров конфиденциальности для аналитики элементов](/graph/insights-customize-item-insights-privacy) в организации.
 
 ## <a name="manage--mentions"></a>Управление @упоминаниями
 

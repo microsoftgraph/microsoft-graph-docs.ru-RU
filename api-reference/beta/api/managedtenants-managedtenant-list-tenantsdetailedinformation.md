@@ -1,16 +1,16 @@
 ---
 title: Список tenantDetailedInformation
 description: Получите список объектов tenantDetailedInformation и их свойств.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 77a0d5e5f064a8ab5ed47a21318bae11c5cc599a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1d77f2c96e56a49e263a5e8a19e8525157ac6b9c
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61028433"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61824059"
 ---
 # <a name="list-tenantdetailedinformation"></a>Список tenantDetailedInformation
 Пространство имен: microsoft.graph.managedTenants
@@ -44,7 +44,7 @@ GET /tenantRelationships/managedTenants/tenantsDetailedInformation
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

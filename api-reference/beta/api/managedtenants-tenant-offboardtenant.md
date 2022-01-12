@@ -1,16 +1,16 @@
 ---
 title: 'клиент: offboardTenant'
 description: Выполняет соответствующие процедуры по удалению управляемого клиента с платформы управления с несколькими арендаторами. Никакие отношения, такие как торговля и административные привилегии делегирования, не будут влиять. Единственным изменением, которое было внося это действие, является отсутствование клиента с платформы управления с несколькими клиентами.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 2e99740631880108a115612d59b5f50a8e3d4c82
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c42f04df0dae01db204169973fb71f128b648031
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61014656"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861865"
 ---
 # <a name="tenant-offboardtenant"></a>клиент: offboardTenant
 Пространство имен: microsoft.graph.managedTenants
@@ -41,7 +41,7 @@ POST /tenantRelationships/managedTenants/tenants/{tenantId}/offboardTenant
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

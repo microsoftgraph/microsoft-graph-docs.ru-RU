@@ -1,16 +1,16 @@
 ---
 title: тип ресурса rolloutSettings
 description: Параметры, как служба развертывает обновление со временем.
-author: Alice-at-Microsoft
-localization_priority: Normal
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 705eeae189d9159c07d3c115c77383a207eae6db
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 398bfdf0a33829f64a6b06de098cfc07a5df835e
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52068076"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792003"
 ---
 # <a name="rolloutsettings-resource-type"></a>тип ресурса rolloutSettings
 

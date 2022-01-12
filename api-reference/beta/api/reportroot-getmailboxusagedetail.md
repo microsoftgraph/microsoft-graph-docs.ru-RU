@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: 679b88fd2c998260b92bce61fcae99396a4029bc
-ms.sourcegitcommit: 42e0e15ff90815e0126c34b928405486cfb1ed86
+ms.openlocfilehash: eca31422646e61184b87d959cbf785a8aca466d4
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61044458"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792157"
 ---
 # <a name="reportroot-getmailboxusagedetail"></a>reportRoot: getMailboxUsageDetail
 
@@ -82,7 +82,9 @@ CSV-файл содержит столбцы со следующими заго�
 - Prohibit Send/Receive Quota (Byte) [объем, при котором блокируются отправка и получение (байт)]
 - Deleted Item Count (количество удаленных элементов)
 - Deleted Item Size (Byte) [размер удаленных элементов (байт)]
-- Report Period (отчетный период)
+- Deleted Item Size (Byte) [размер удаленных элементов (байт)]
+- Has Archive (Имеет архив)
+- "Report Period" (Отчетный период).
 
 ### <a name="json"></a>JSON
 
@@ -135,7 +137,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Created Date,Last Activity Date,Item Count,Storage Used (Byte),Issue Warning Quota (Byte),Prohibit Send Quota (Byte),Prohibit Send/Receive Quota (Byte),Deleted Item Count,Deleted Item Size (Byte),Report Period
+Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Created Date,Last Activity Date,Item Count,Storage Used (Byte),Issue Warning Quota (Byte),Prohibit Send Quota (Byte),Prohibit Send/Receive Quota (Byte),Deleted Item Count,Deleted Item Size (Byte),Deleted Item Quota (Byte),Has Archive,Report Period
 ```
 
 ### <a name="json"></a>JSON
@@ -158,7 +160,7 @@ GET https://graph.microsoft.com/beta/reports/getMailboxUsageDetail(period='D7')?
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -187,6 +189,8 @@ Content-Length: 526
       "storageUsedInBytes": 10414748704, 
       "deletedItemCount": 138481,
       "deletedItemSizeInBytes": 10414748704, 
+      "deletedItemQuota": 107374182400,
+      "hasArchive": true,
       "issueWarningQuotaInBytes": 10522698752, 
       "prohibitSendQuotaInBytes": 10630040576, 
       "prohibitSendReceiveQuotaInBytes": 10737418240, 

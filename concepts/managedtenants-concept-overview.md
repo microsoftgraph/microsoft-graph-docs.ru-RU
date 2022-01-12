@@ -1,15 +1,15 @@
 ---
-title: Microsoft 365 Lighthouse Обзор API
+title: Microsoft 365 Lighthouse API
 description: Microsoft 365 Lighthouse является порталом администрирования, который помогает управляемым поставщикам услуг (MSP) обеспечивать безопасность устройств, данных и пользователей в масштабе для клиентов малого и среднего бизнеса(SMB), использующих Microsoft 365 бизнес премиум.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
-ms.openlocfilehash: 9dee6ce8d29225dafa8e2e724b6896fa391c8e0d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 7ce7d5a12b73d0e67f4ecef35f6ff3465c362fa8
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59135993"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61841793"
 ---
 # <a name="overview-for-multi-tenant-management-using-the-microsoft-365-lighthouse-api"></a>Обзор управления несколькими клиентами с Microsoft 365 Lighthouse API
 

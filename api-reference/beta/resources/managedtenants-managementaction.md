@@ -1,16 +1,16 @@
 ---
 title: тип ресурса managementAction
 description: Представляет базовое действие управления для данного управляемого клиента.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 156d4ff0d7ffb9574793ccdd5d56bc2a89cd3b22
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: f45bcabe1ab488bc5c19e83d7d34e52b92742a43
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53403169"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61832606"
 ---
 # <a name="managementaction-resource-type"></a>тип ресурса managementAction
 
@@ -35,7 +35,7 @@ ms.locfileid: "53403169"
 |displayName|String|Отображает имя для действия управления. Необязательно. Только для чтения.|
 |id|String|Уникальный идентификатор для действия управления. Обязательный. Только для чтения.|
 |referenceTemplateId|String|Ссылка на шаблон управления, используемый для создания действия управления. Обязательный. Только для чтения.|
-|workloadActions|[коллекция microsoft.graph.managedTenants.workloadAction](../resources/managedtenants-workloadaction.md)|Набор действий рабочей нагрузки, связанных с действием управления. Обязательный. Только для чтения.|
+|workloadActions|[коллекция microsoft.graph.managedTenants.workloadAction](../resources/managedtenants-workloadaction.md)|Набор действий рабочей нагрузки, связанных с действием управления. Обязательное. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

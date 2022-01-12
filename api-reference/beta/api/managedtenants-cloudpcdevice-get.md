@@ -1,16 +1,16 @@
 ---
 title: Get cloudPcDevice
 description: Ознакомьтесь с свойствами и отношениями объекта cloudPcDevice.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: b6a31b90926b061e3f0c3d495b82e807faf65895
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c861a5f501ebc08509f8425287dee6b65a51882b
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61020725"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61862327"
 ---
 # <a name="get-cloudpcdevice"></a>Get cloudPcDevice
 Пространство имен: microsoft.graph.managedTenants
@@ -44,7 +44,7 @@ GET /tenantRelationships/managedTenants/cloudPcDevices/{cloudPcDeviceId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

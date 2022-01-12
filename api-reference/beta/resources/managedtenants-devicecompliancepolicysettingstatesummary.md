@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса deviceCompliancePolicySettingStateSummary
 description: Представляет сводку состояния политик соответствия требованиям к устройствам для данного управляемого клиента.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 02b69b5df1c6ae482c653960a0081bc078be815d
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 409e72591a75ee84159fb59d27e061ebbf8ae3a9
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402537"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61843398"
 ---
 # <a name="devicecompliancepolicysettingstatesummary-resource-type"></a>Тип ресурса deviceCompliancePolicySettingStateSummary
 
@@ -41,8 +41,8 @@ ms.locfileid: "53402537"
 |policyType|String|Тип для политики соответствия требованиям к устройству. Необязательно. Только для чтения.|
 |settingName|String|Имя параметра в политике соответствия требованиям к устройству. Необязательно. Только для чтения.|
 |succeededDeviceCount|Int32|Количество устройств в успешном состоянии. Необязательно. Только для чтения.|
-|tenantDisplayName|String|Имя отображения управляемого клиента. Обязательный. Только для чтения.|
-|tenantId|String|Идентификатор Azure Active Directory клиента для [управляемого клиента.](../resources/managedtenants-tenant.md) Обязательный. Только для чтения.|
+|tenantDisplayName|String|Имя отображения управляемого клиента. Обязательное. Только для чтения.|
+|tenantId|String|Идентификатор Azure Active Directory клиента для [управляемого клиента.](../resources/managedtenants-tenant.md) Обязательное. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

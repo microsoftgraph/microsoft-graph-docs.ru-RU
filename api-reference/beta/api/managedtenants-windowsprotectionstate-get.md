@@ -1,16 +1,16 @@
 ---
 title: Get windowsProtectionState
 description: Ознакомьтесь с свойствами и отношениями объекта windowsProtectionState.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: f16f389c1070d5bab295dbbb79186393bef52991
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ce7e5cc50164f423d009b2a4fb6c599abac50d25
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61011828"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791800"
 ---
 # <a name="get-windowsprotectionstate"></a>Get windowsProtectionState
 Пространство имен: microsoft.graph.managedTenants
@@ -44,7 +44,7 @@ GET /tenantRelationships/managedTenants/windowsProtectionStates/{windowsProtecti
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

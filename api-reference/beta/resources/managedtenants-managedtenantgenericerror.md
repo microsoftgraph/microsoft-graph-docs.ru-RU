@@ -1,16 +1,16 @@
 ---
 title: тип ресурса managedTenantGenericError
 description: Представляет общую ошибку для управляемого клиента.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: d9cb6ac80bb48e7d8afc91db2cf386a21c7318e9
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 167d8a581f2e8020ea4efabf951d07c409947ef3
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402411"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61789980"
 ---
 # <a name="managedtenantgenericerror-resource-type"></a>тип ресурса managedTenantGenericError
 

@@ -5,12 +5,12 @@ description: Получите список входных записей пол�
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: 4220efb471876ae8e2c9ace54bca688c3564e063
-ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
+ms.openlocfilehash: 8e024d3e0b1af52b5dcb63f8937cfc9495c22c59
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61647030"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791975"
 ---
 # <a name="list-signins"></a>Перечисление входов
 
@@ -30,10 +30,10 @@ ms.locfileid: "61647030"
 |:--------------- |:------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись) | AuditLog.Read.All и Directory.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-| Для приложений | AuditLog.Read.All и Directory.Read.All | 
+| Приложение | AuditLog.Read.All и Directory.Read.All | 
 
 > [!IMPORTANT]
-> Этот API имеет [известные](/graph//graph/known-issues#license-check-errors-for-azure-ad-activity-reports) проблемы и в настоящее время требует согласия на оба **auditLog.Read.All** и **Directory.Read.All** разрешений.
+> Этот API имеет [известные](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) проблемы и в настоящее время требует согласия на оба **auditLog.Read.All** и **Directory.Read.All** разрешений.
 
 Приложения должны быть [правильно зарегистрированы в](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) Azure AD.
 
@@ -59,7 +59,7 @@ GET auditLogs/signIns
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 

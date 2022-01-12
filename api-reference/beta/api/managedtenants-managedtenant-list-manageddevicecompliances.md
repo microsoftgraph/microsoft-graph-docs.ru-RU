@@ -1,16 +1,16 @@
 ---
 title: Список управляемыхDeviceCompliances
 description: Получите список объектов managedDeviceCompliance и их свойств.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 869f37bcfc17d0321ba47894906a42c32922d62c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ea9d76b24e6f2a46fa58eff0dbe2f88b4a6e8cde
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022125"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791492"
 ---
 # <a name="list-manageddevicecompliances"></a>Список управляемыхDeviceCompliances
 Пространство имен: microsoft.graph.managedTenants
@@ -44,7 +44,7 @@ GET /tenantRelationships/managedTenants/managedDeviceCompliances
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

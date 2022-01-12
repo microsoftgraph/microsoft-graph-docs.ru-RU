@@ -1,16 +1,16 @@
 ---
 title: тип ресурса tenantDetailedInformation
 description: Представляет подробные сведения для управляемого клиента.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 40aa157b12ccef64b6eb7ab6c92349a3e74745f8
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: d896492c05223fdf4711842340df5032589913d9
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402694"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61828847"
 ---
 # <a name="tenantdetailedinformation-resource-type"></a>тип ресурса tenantDetailedInformation
 
@@ -34,7 +34,7 @@ ms.locfileid: "53402694"
 |countryName|String|Имя страны, в которой расположен управляемый клиент. Необязательно. Только для чтения.|
 |defaultDomainName|String|Доменное имя по умолчанию для управляемого клиента. Необязательно. Только для чтения.|
 |displayName|String|Имя отображения управляемого клиента.|
-|id|String|Уникальный идентификатор для этого объекта. Обязательный. Только для чтения.|
+|id|String|Уникальный идентификатор для этого объекта. Обязательное. Только для чтения.|
 |industryName|String|Бизнес-индустрия, связанная с управляемым клиентом. Необязательно. Только для чтения.|
 |регион|String|Регион, в котором расположен управляемый клиент. Необязательно. Только для чтения.|
 |segmentName|String|Бизнес-сегмент, связанный с управляемым клиентом. Необязательно. Только для чтения.|

@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 5b946f3c624acde3e30d2013a9b11e617fa7760f
-ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
+ms.openlocfilehash: 62e9af2df54c711338c3df936b8ef9c91b7c6fc4
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "61604387"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861722"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 
@@ -285,7 +285,7 @@ Content-type: application/json
 
 Ниже приведен пример запроса. Сведения для свойства **signInActivity** требуют лицензии Azure AD Premium P1/P2 и разрешения AuditLog.Read.All. 
 
->**Примечание.** Существует [известная проблема](/graph//graph/known-issues#license-check-errors-for-azure-ad-activity-reports) с получением свойства **signInActivity**.
+>**Примечание.** Существует [известная проблема](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) с получением свойства **signInActivity**.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -355,7 +355,7 @@ Content-type: application/json
 
 Ниже приведен пример запроса. Сведения для свойства **signInActivity** требуют лицензии Azure AD Premium P1/P2 и разрешения AuditLog.Read.All. 
 
->**Примечание.** Существует [известная проблема](/graph//graph/known-issues#license-check-errors-for-azure-ad-activity-reports) с получением свойства **signInActivity**.
+>**Примечание.** Существует [известная проблема](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) с получением свойства **signInActivity**.
 
 <!-- {
   "blockType": "ignored",

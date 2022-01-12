@@ -1,16 +1,16 @@
 ---
 title: Управление гарантиями с помощью службы Windows обновления для бизнеса
 description: При развертывании обновлений в службе развертывания служба автоматически защищает развертывание, не мешая устройствам с известными или вероятными вопросами предлагать обновление Windows Update.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 22ce9a2e9e418ee5846881e72b98d213d9294247
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: ff3d8c594087253db85fb943bd34fe9478f45bb9
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60697020"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61855521"
 ---
 # <a name="manage-safeguards-using-the-windows-update-for-business-deployment-service"></a>Управление гарантиями с помощью службы Windows обновления для бизнеса
 
@@ -70,7 +70,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="opt-out-of-safeguards-against-likely-issues"></a>Отказ от защиты от вероятных проблем
+## <a name="opt-out-of-safeguards-against-likely-issues"></a>Отключение защиты от вероятных проблем
 
 Можно отказаться от защиты от вероятных проблем в развертывании, настроив [параметры защиты.](/graph/api/resources/windowsupdates-safeguardsettings) При необходимости вы также можете отказаться от сохранения для известных проблем с помощью политики [отключения гарантий.](/windows/deployment/update/safeguard-opt-out)
 

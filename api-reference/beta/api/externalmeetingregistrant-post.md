@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 226cb77bcc68612982769168945d1d1d556d4027
-ms.sourcegitcommit: ba46f9f77d1e0eb9c7f5b2f4366534bfcf99d9c0
+ms.openlocfilehash: b5c3bb05638325778188fcb265cb33198988d0a8
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61565204"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61832455"
 ---
 # <a name="create-externalmeetingregistrant"></a>Создание externalMeetingRegistrant
 
@@ -39,7 +39,7 @@ ms.locfileid: "61565204"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings/{meetingId}/registration/registrants
-POST /users/{userId}/onlineMeetings{meetingId}/registration/registrants
+POST /users/{userId}/onlineMeetings/{meetingId}/registration/registrants
 ```
 
 > [!TIP]
@@ -51,7 +51,7 @@ POST /users/{userId}/onlineMeetings{meetingId}/registration/registrants
 
 | Имя            | Описание               |
 | :-------------- | :------------------------ |
-| Авторизация   | Bearer {token}. Обязательный. |
+| Авторизация   | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса softwareUpdateCatalogEntry
 description: Метаданные для обновления программного обеспечения, которое можно утвердить для развертывания.
-author: Alice-at-Microsoft
-localization_priority: Normal
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 3e6d0017860acbfc1371c1555279566e808da1eb
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 7103fbb2f6ed62cec5a5e530a10e190ea46067e0
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52068149"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61862778"
 ---
 # <a name="softwareupdatecatalogentry-resource-type"></a>тип ресурса softwareUpdateCatalogEntry
 

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8224dbe78fd41201f66eab21bc45623a84304ac1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: de656d95776d41e9075c9c00ab6d19328e634bab
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61021075"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792164"
 ---
 # <a name="list-messages-in-a-chat"></a>Список сообщений в чате
 
@@ -55,7 +55,7 @@ GET /chats/{chat-id}/messages
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {token}. Обязательный.  |
+| Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -137,6 +137,7 @@ Content-type: application/json
             "locale": "en-us",
             "webUrl": null,
             "channelIdentity": null,
+            "onBehalfOf": null,
             "policyViolation": null,
             "eventDetail": null,
             "from": {
@@ -172,6 +173,7 @@ Content-type: application/json
             "locale": "en-us",
             "webUrl": null,
             "channelIdentity": null,
+            "onBehalfOf": null,
             "policyViolation": null,
             "eventDetail": null,
             "from": {
@@ -215,6 +217,15 @@ Content-type: application/json
             },
             "attachments": [],
             "mentions": [],
+            "onBehalfOf": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "6703568a-3b0e-4a3b-9d33-0e1bc5ff1521",
+                    "displayName": "Test User",
+                    "userIdentityType": "aadUser"
+                }
+            },
             "reactions": [],
             "eventDetail": {
                 "@odata.type": "#microsoft.graph.chatRenamedEventMessageDetail",

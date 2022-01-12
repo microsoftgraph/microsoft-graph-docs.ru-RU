@@ -1,16 +1,16 @@
 ---
 title: тип ресурсов managementTemplateDetailedInfo
 description: Представляет подробные сведения для шаблона управления.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: e98d2ca41bc972a5dca33c575363b1bac27d87a5
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 7ece5863f33f447a6e79ea75e1959ea7011b0c32
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53403096"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861353"
 ---
 # <a name="managementtemplatedetailedinfo-resource-type"></a>тип ресурсов managementTemplateDetailedInfo
 

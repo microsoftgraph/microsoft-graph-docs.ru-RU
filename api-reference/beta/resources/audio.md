@@ -3,15 +3,15 @@ author: ananmishr
 description: Ресурс Audio группирует свойства элемента, связанные со звуком, в единую структуру.
 ms.date: 09/10/2017
 title: "\"Audio\" (Аудио);"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 146d9730c0a1c4e73ac16815abddd37eb729545b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 436ff5a46dd83c3a736765515678a3e2e47f620f
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034205"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792066"
 ---
 # <a name="audio-facet"></a>Аспект Audio
 
@@ -23,7 +23,9 @@ ms.locfileid: "48034205"
 
 Если у элемента [**DriveItem**](driveitem.md) есть ненулевой аспект **audio**, то этот элемент представляет звуковой файл. Свойства ресурса **Audio** заполняются путем извлечения метаданных из такого файла. 
 
-## <a name="json-representation"></a>Представление в формате JSON
+Ресурс **Audio** поддерживается только в OneDrive Personal.
+
+## <a name="json-representation"></a>Представление JSON
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.audio" } -->
 ```json

@@ -5,12 +5,12 @@ author: snlraju-msft
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 21dc72a90dc863344380da4ece717bddba375cac
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: d5224481604e9fcdbe2ee0071c3cc8fea9d3f8d8
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688133"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792108"
 ---
 # <a name="create-externalitem"></a>Создание externalItem
 
@@ -34,13 +34,13 @@ ms.locfileid: "60688133"
 }
 -->
 ``` http
-POST /external/connections/{connectionsId}/items
+PUT /external/connections/{connection-id}/items/{item-id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -50,10 +50,10 @@ POST /external/connections/{connectionsId}/items
 
 |Свойство|Тип| Описание|
 |:---|:---|:---|
-|id|String|ID элемента. Обязательно.|
-|properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|Свойства элемента. Объект `properties` должен содержать по крайней мере одно свойство. Все `DateTime` свойства типа должны быть в формате ISO 8601. Обязательный.|
-|содержимое|[microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md)|Внешний контент элемента. Необязательный параметр.|
-|acl|[коллекция microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md)|Список управления доступом. Обязательно.|
+|id|String|ID элемента. Обязательное.|
+|properties|[microsoft.graph.externalConnectors.properties](../resources/externalconnectors-properties.md)|Свойства элемента. Объект `properties` должен содержать по крайней мере одно свойство. Все `DateTime` свойства типа должны быть в формате ISO 8601. Обязательное.|
+|содержимое|[microsoft.graph.externalConnectors.externalItemContent](../resources/externalconnectors-externalitemcontent.md)|Внешний контент элемента. Необязательное свойство.|
+|acl|[коллекция microsoft.graph.externalConnectors.acl](../resources/externalconnectors-acl.md)|Список управления доступом. Обязательное.|
 
 Свойства на объекте должны использовать указанные типы в полезной `externalItem` нагрузке в следующих сценариях:
 

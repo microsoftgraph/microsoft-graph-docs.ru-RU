@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 339b91c2828dfec7134cfc178353165f176f6b49
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e8ac0824febb26baa90d69c518c89d5042f04362
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60975894"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792031"
 ---
 # <a name="list-channel-messages"></a>Перечисление сообщений в каналах
 
@@ -32,7 +32,7 @@ ms.locfileid: "60975894"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)| ChannelMessage.Read.All, Group.Read.All **, Group.ReadWrite.All** |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| ChannelMessage.Read.Group *, ChannelMessage.Read.All, Group.Read.All**, Group.ReadWrite.All** |
+|Application| ChannelMessage.Read.Group *, ChannelMessage.Read.All, Group.Read.All**, Group.ReadWrite.All** |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc). Разрешения, помеченные **, не поддерживаются и не должны использоваться.
 
@@ -57,7 +57,7 @@ GET /teams/{team-id}/channels/{channel-id}/messages
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {token}. Обязательный.  |
+| Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -157,6 +157,7 @@ Content-type: application/json
                 "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
                 "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
             },
+            "onBehalfOf": null,
             "attachments": [],
             "mentions": [
                 {
@@ -210,6 +211,7 @@ Content-type: application/json
                 "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
                 "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
             },
+            "onBehalfOf": null,
             "attachments": [],
             "mentions": [],
             "reactions": []
@@ -241,6 +243,15 @@ Content-type: application/json
             },
             "attachments": [],
             "mentions": [],
+            "onBehalfOf": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "6703568a-3b0e-4a3b-9d33-0e1bc5ff1521",
+                    "displayName": "Test User",
+                    "userIdentityType": "aadUser"
+                }
+            },
             "reactions": [],
             "eventDetail": {
                 "@odata.type": "#microsoft.graph.teamDescriptionUpdatedEventMessageDetail",

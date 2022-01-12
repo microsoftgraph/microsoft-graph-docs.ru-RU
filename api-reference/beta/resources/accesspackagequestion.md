@@ -1,34 +1,35 @@
 ---
-title: Тип ресурса accessPackageQuestion
+title: тип ресурса accessPackageQuestion
 description: Сложный тип для вопросов, настроенных в политике назначения пакета доступа.
 author: markwahl-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 04849b79cfa6c58132360f8ec20c363ea21453ec
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: df4158f7869407772b0c7a8807366d03e2ef7a62
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132399"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791947"
 ---
-# <a name="accesspackagequestion-resource-type"></a>Тип ресурса accessPackageQuestion
+# <a name="accesspackagequestion-resource-type"></a>тип ресурса accessPackageQuestion
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используется для `accessPackageQuestion` свойства политики назначения пакета [доступа.](accesspackageassignmentpolicy.md) 
+Используется для свойства политики назначения `accessPackageQuestion` [пакета доступа.](accesspackageassignmentpolicy.md) 
 
 Подтипы включают [accessPackageTextInputQuestions](accesspackagetextinputquestion.md) и [accessPackageMultipleChoiceQuestions.](accesspackagemultiplechoicequestion.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка| ИД вопроса.|
-|isRequired|Boolean| Требуется ли запрашивать ответ.|
-|sequence|Int32| Относительное положение этого вопроса при отобралчику списка вопросов.|
-|текст|[accessPackageLocalizedContent](../resources/accesspackagelocalizedcontent.md)|Текст вопроса, который необходимо показать запрашиваемой информации.|
+|id|String| ID вопроса.|
+|isRequired|Boolean| Требуется ли запросчику предоставить ответ или нет.|
+|sequence|Int32| Относительное положение этого вопроса при отобраии списка вопросов для запросителя.|
+|текст|[accessPackageLocalizedContent](../resources/accesspackagelocalizedcontent.md)|Текст вопроса, который нужно показать запросчику.|
+|isAnswerEditable|Логический| Указывает, разрешено ли запросчику изменять ответы на вопросы.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.
@@ -51,4 +52,3 @@ ms.locfileid: "50132399"
   "sequence": "Integer"
 }
 ```
-

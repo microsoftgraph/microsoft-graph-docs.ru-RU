@@ -1,18 +1,18 @@
 ---
-title: Получение фотографии
-description: Получение указанного объекта profilePhoto или его метаданных (свойств **profilePhoto**).
-ms.localizationpriority: high
+title: Получение объекта profilePhoto
+description: Получение указанного объекта profilePhoto или его метаданных (свойств profilePhoto).
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: people
 author: kevinbellinger
-ms.openlocfilehash: 0e26a038b61bb565b5592a70687fd4bd9667cce6
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
-ms.translationtype: HT
+ms.openlocfilehash: 4f5ddbc309c874e49cd7595ed89517eff8a6585c
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61124051"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860716"
 ---
-# <a name="get-photo"></a>Получение фотографии
+# <a name="get-profilephoto"></a>Получение объекта profilePhoto
 
 Пространство имен: microsoft.graph
 
@@ -48,7 +48,7 @@ ms.locfileid: "61124051"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)      |   Group.Read.All, Group.ReadWrite.All           |
 |Делегированные (личная учетная запись Майкрософт)      |   Не поддерживается.            |
-|Для приложений      |    Group.Read.All, Group.ReadWrite.All           |
+|Приложение      |    Group.Read.All, Group.ReadWrite.All           |
 
 ### <a name="to-retrieve-the-profile-photo-of-a-contact"></a>Для получения фотографии профиля контакта
 
@@ -58,9 +58,11 @@ ms.locfileid: "61124051"
 |Делегированные (личная учетная запись Майкрософт)      |   Contacts.Read, Contacts.ReadWrite            |
 |Для приложений      |    Contacts.Read, Contacts.ReadWrite           |
 
-> **Примечание.**  
-> 1. Операция с метаданными не поддерживается для личных учетных записей Майкрософт. 
+> [!NOTE]
+> 
+> 1. Операция с метаданными не поддерживается для личных учетных записей Майкрософт.
 > 2. В настоящее время существует [известная проблема](/graph/known-issues#groups) c доступом к групповым фотографиям с помощью разрешений приложений.
+> 3. В настоящее время в клиентах Azure AD B2C не поддерживается Graph API пользователя с помощью API Майкрософт.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -111,7 +113,7 @@ GET /groups/{id}/photos/{size}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

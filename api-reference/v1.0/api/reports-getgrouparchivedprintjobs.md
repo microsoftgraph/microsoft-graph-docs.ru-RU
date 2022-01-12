@@ -5,12 +5,12 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 646d877525e0aebefe3ca0a67454d747cfda2305
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 9179827d9f46d468d384cb98a324832694ff15df
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60942697"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791926"
 ---
 # <a name="reportroot-getgrouparchivedprintjobs"></a>reportRoot: getGroupArchivedPrintJobs
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "60942697"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Reports.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Application|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -39,17 +39,19 @@ GET /reports/getGroupArchivedPrintJobs
 ```
 
 ## <a name="function-parameters"></a>Параметры функции
+В URL-адресе запроса укай следующие параметры функции со значениями:
 
 | Параметр     | Тип                 | Обязательный? | Описание                                                          |
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
 | `groupId`     | `Edm.String`         | Да       | ID группы для возврата данных.                              |
-| `startDateTime` | `Edm.DateTimeOffset` | Нет        | Дата начала (включительно) для периода времени с учетом данных. |
-| `endDateTime`   | `Edm.DateTimeOffset` | Нет        | Дата окончания (включительно) для периода времени с учетом данных.   |
+| `startDateTime` | `Edm.DateTimeOffset` | Нет        | Дата начала (включительно) для периода времени с учетом данных.|
+| `endDateTime`   | `Edm.DateTimeOffset` | Нет        | Дата окончания (включительно) для периода времени с учетом данных.|
 
+>**Примечание:** Если значение не требуется, передай параметру значение null.
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

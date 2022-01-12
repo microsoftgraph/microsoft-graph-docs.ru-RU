@@ -1,16 +1,16 @@
 ---
 title: 'managementAction: применить'
 description: Применяет действие управления к определенному управляемому клиенту. При выполнении этой операции будут созданы соответствующие конфигурации и созданы политики. В качестве примера при применении требуемой многофакторной проверки подлинности для действий управления администраторами создается политика условного доступа Azure Active Directory, которая требует многофакторной проверки подлинности для всех пользователей, на которых назначена роль административного каталога.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 25b60d217a312a28210106b62f609c07384de904
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 72ec7a55adf9566166307567a483497959a01750
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60980960"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61790967"
 ---
 # <a name="managementaction-apply"></a>managementAction: применить
 Пространство имен: microsoft.graph.managedTenants
@@ -41,7 +41,7 @@ POST /tenantRelationships/managedTenants/managementActions/{managementActionId}/
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -52,7 +52,7 @@ POST /tenantRelationships/managedTenants/managementActions/{managementActionId}/
 |Параметр|Тип|Описание|
 |:---|:---|:---|
 |tenantId|String|Идентификатор Azure Active Directory клиента для [управляемого клиента.](../resources/managedtenants-tenant.md)|
-|tenantGroupId|Строка|Идентификатор группы клиента.|
+|tenantGroupId|String|Идентификатор группы клиента.|
 |managementTemplateId|String|Идентификатор шаблона [управления](../resources/managedtenants-managementtemplate.md).|
 
 ## <a name="response"></a>Отклик

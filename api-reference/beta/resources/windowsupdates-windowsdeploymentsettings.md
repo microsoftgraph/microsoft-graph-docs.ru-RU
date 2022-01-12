@@ -1,16 +1,16 @@
 ---
 title: тип ресурса windowsDeploymentSettings
 description: Параметры, когда и как служба развертывает Windows 10 обновления.
-author: Alice-at-Microsoft
-localization_priority: Normal
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: bc55f0643e789c802254064797bf8a5c2047cb64
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 16aa8592dc03dda799ffbddf838520ca0f159192
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067496"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861374"
 ---
 # <a name="windowsdeploymentsettings-resource-type"></a>тип ресурса windowsDeploymentSettings
 

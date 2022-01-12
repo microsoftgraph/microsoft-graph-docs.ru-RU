@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 7f766f78361af3bd4bc1e5bd1eda81b035aa3a40
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 36547593028f1c6d8a5b7fe5afff058a38d313fa
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60946638"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792218"
 ---
 # <a name="reports-getuserarchivedprintjobs"></a>отчеты: getUserArchivedPrintJobs
 
@@ -29,7 +29,7 @@ ms.locfileid: "60946638"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Reports.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Application|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,16 +40,18 @@ GET /reports/getUserArchivedPrintJobs(userId=userId-value,startDateTime=startDat
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token}. Обязательный. |
+| Авторизация | Bearer {токен}. Обязательный. |
 
 ## <a name="function-parameters"></a>Параметры функции
+В URL-адресе запроса укай следующие параметры функции со значениями:
 
 | Параметр     | Тип                 | Обязательный? | Описание                                                          |
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
 | `userId`      | `Edm.String`         | Да       | ID пользователя для возврата данных.                               |
 | `startDateTime` | `Edm.DateTimeOffset` | Нет        | Дата начала (включительно) для периода времени с учетом данных. |
-| `endDateTime`   | `Edm.DateTimeOffset` | Нет        | Дата окончания (включительно) для периода времени с учетом данных.   |
+| `endDateTime`   | `Edm.DateTimeOffset` | Нет        | Дата окончания (включительно) для периода времени с учетом данных. |
 
+>**Примечание:** Если значение не требуется, передай параметру значение null.
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [archivedPrintJob](../resources/archivedprintjob.md) в тексте ответа.
 

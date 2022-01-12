@@ -1,16 +1,16 @@
 ---
 title: Get tenantGroup
 description: Ознакомьтесь с свойствами и отношениями объекта tenantGroup.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: c778a57421f9c3f916fe3c55c35ec040964be11b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b409b358ba4d27ab554c3e6da781321559b39630
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019808"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61790036"
 ---
 # <a name="get-tenantgroup"></a>Get tenantGroup
 Пространство имен: microsoft.graph.managedTenants
@@ -44,7 +44,7 @@ GET /tenantRelationships/managedTenants/tenantGroups/{tenantGroupId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

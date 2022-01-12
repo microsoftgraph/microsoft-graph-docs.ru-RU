@@ -1,18 +1,18 @@
 ---
-title: Развертывание в службе Windows обновления для бизнеса
+title: Развертывание в службе развертывания Центра обновления Windows для бизнеса
 description: Развертывание является основой службы Windows обновления для бизнеса. С помощью развертывания можно настроить набор устройств для получения определенного контента из Windows update, например обновления программного обеспечения.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 5b875a62b3fe8fe35b7d7f0b69acc3395e8ab67f
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: bd733513e9fe8f44b39c861281351ff18f419795
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60688621"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61858422"
 ---
-# <a name="deployments-in-the-windows-update-for-business-deployment-service"></a>Развертывание в службе Windows обновления для бизнеса
+# <a name="deployments-in-the-windows-update-for-business-deployment-service"></a>Развертывание в службе развертывания Центра обновления Windows для бизнеса
 
 Развертывание является основой службы Windows обновления для бизнеса. С помощью развертывания можно настроить набор устройств для получения определенного контента из Windows Update, например обновления [программного обеспечения.](windowsupdates-software-updates.md)
 

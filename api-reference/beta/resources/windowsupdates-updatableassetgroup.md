@@ -1,16 +1,16 @@
 ---
 title: тип ресурсов updatableAssetGroup
 description: Группа ресурсов azureADDevice, которые могут получать обновления.
-author: Alice-at-Microsoft
-localization_priority: Normal
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: a3aca42b69a906f167393cfd284d6756b3c4bb52
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 91e230fe3c158da0b02ce5af9df6f660855d253a
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067495"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861592"
 ---
 # <a name="updatableassetgroup-resource-type"></a>тип ресурсов updatableAssetGroup
 

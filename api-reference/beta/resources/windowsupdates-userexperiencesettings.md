@@ -1,16 +1,16 @@
 ---
 title: тип ресурса userExperienceSettings
 description: Параметры управлять опытом обновления пользователя на устройстве.
-author: Alice-at-Microsoft
-localization_priority: Normal
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: a5d920d1618cb6d212baf0487a39960638859cef
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: 889e771f34cc88244f79785cb29c388a88fcd61b
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067483"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792171"
 ---
 # <a name="userexperiencesettings-resource-type"></a>тип ресурса userExperienceSettings
 

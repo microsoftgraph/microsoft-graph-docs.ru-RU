@@ -1,16 +1,16 @@
 ---
 title: Список агрегированныхPolicyCompliances
 description: Получите список объектов aggregatedPolicyCompliance и их свойств.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: e29f727b7fc89687bde99f8fd2bb7be353891cdb
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7ba26a6ea4029184862feffac3e918d83b2b6827
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61014733"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791548"
 ---
 # <a name="list-aggregatedpolicycompliances"></a>Список агрегированныхPolicyCompliances
 Пространство имен: microsoft.graph.managedTenants
@@ -44,7 +44,7 @@ GET /tenantRelationships/managedTenants/aggregatedPolicyCompliances
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

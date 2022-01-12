@@ -1,16 +1,16 @@
 ---
 title: тип ресурса managedDeviceCompliance
 description: Представляет состояние соответствия требованиям устройства для каждого управляемого устройства, принадлежащего заданным управляемым клиентом.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 237bea472df044f36fb7fbfb740fdef43260e3b2
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: ce9f8ea1ed4e2a083daa053d17714569b4b2abfe
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402532"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61811166"
 ---
 # <a name="manageddevicecompliance-resource-type"></a>тип ресурса managedDeviceCompliance
 
@@ -31,7 +31,7 @@ ms.locfileid: "53402532"
 |:---|:---|:---|
 |complianceStatus|String|Состояние соответствия устройства требованиям. Это свойство доступно только для чтения. Возможные значения: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`. Необязательно. Только для чтения.|
 |deviceType|String|Платформа устройства. Это свойство доступно только для чтения. Возможные значения: `desktop` `windowsRT` , `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `chromeOS` `linux` `blackberry` `palm` , `unknown` `cloudPC` , .  Необязательно. Только для чтения.|
-|id|String|Уникальный идентификатор для этого объекта. Обязательный. Только для чтения.|
+|id|String|Уникальный идентификатор для этого объекта. Обязательное. Только для чтения.|
 |inGracePeriodUntilDateTime|DateTimeOffset|Дата и время истечения срока действия льготного периода. Необязательно. Только для чтения.|
 |lastRefreshedDateTime|DateTimeOffset|Дата и время последнего обновления объекта на платформе управления с несколькими клиентами. Необязательно. Только для чтения.|
 |lastSyncDateTime|DateTimeOffset|Дата и время успешной синхронизации устройства с Microsoft Endpoint Manager. Необязательно. Только для чтения.|

@@ -5,12 +5,12 @@ author: kjyam98
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 15eab45b2b06d527a40c5b2eaf4bb17f9ec9d9f2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: eff901289ba87b1f064458e5314b666e97130c8e
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60978309"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61803067"
 ---
 # <a name="get-federatedidentitycredential"></a>Получение federatedIdentityCredential
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "60978309"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) |  Application.ReadWrite.All |
-|Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+|Приложение | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -36,7 +36,9 @@ ms.locfileid: "60978309"
 }
 -->
 ``` http
-GET /applications/{applicationsId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
+GET /applications/{applicationId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
+
+GET /applications/{applicationId}/federatedIdentityCredentials/{federatedIdentityCredentialName}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -45,7 +47,7 @@ GET /applications/{applicationsId}/federatedIdentityCredentials/{federatedIdenti
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

@@ -3,12 +3,12 @@ title: Компонент пользователя в Microsoft Graph Toolkit
 description: Компонент пользователя используется для отображения пользователя или контакта с помощью его фотографии, имени и/или адреса электронной почты.
 ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: 0cb5c1306a9cec54df6ab6a9d3cbd1aa0995a64a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: ab941533b816d80c490c74e157f3d6aa09760928
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59103846"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61859955"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Компонент пользователя в Microsoft Graph Toolkit
 
@@ -67,7 +67,7 @@ ms.locfileid: "59103846"
 | person-presence | personPresence | Установка присутствия для пользователя. |
 | fetch-image     | fetchImage     | Установите флажок для автоматического получения `personImage` из Microsoft Graph на основе объекта `personDetails`, предоставленного пользователем. |
 | тип аватара     | avatarType     | Установите или `initials` `photo` отобразить состояние отображения по умолчанию — это фотография. |
-| представление            | представление           | Установите, чтобы настроить, как выглядит пользователь. Значение по умолчанию: `avatar` <br /> `avatar` — Показывать только аватар <br /> `oneline` — Показывать аватар и первую строку (`displayName` по умолчанию) <br /> `twolines` — Показывать аватар и две строки текста (`displayName` и `mail` по умолчанию)|
+| представление            | представление           | Установите, чтобы настроить, как выглядит пользователь. Значение по умолчанию: `avatar` <br /> `avatar` — Показывать только аватар <br /> `oneline` — Показывать аватар и первую строку (`displayName` по умолчанию) <br /> `twolines` — Показывать аватар и две строки текста (`displayName` и `mail` по умолчанию) <br /> `threelines` - показать аватар и три строки текста `displayName` (и `mail` по `jobTitle` умолчанию) |
 | line1-property  | line1Property  | Задает свойство personDetails для использования для первой строки текста. Значение по умолчанию: `displayName`.|
 | line2-property  | line2Property  | Задает свойство personDetails для использования для второй строки текста. Значение по умолчанию: `mail`.|
 | line3-property  | line3Property  | Задает свойство personDetails для использования для третьей строки текста. Значение по умолчанию: `jobTitle`.|
@@ -211,7 +211,7 @@ MgtPerson.config.useContactApis = false;
 
 Этот элемент управления использует следующие API и разрешения Microsoft Graph.
 
-| Настройка | Разрешение | API |
+| Конфигурация | Разрешение | API |
 | ------------- | ---------- | --- |
 | `personDetails` установить без изображения, `fetchImage` установить , установить , `true` извлекаемого `avatarType` человека является контакт и `photo` `useContactApis` установить `true` | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) |
 | `personDetails` установить без изображения, установить , установить и лицо не является `fetchImage` `true` `avatarType` `photo` контактом или `useContactApis` установлено, чтобы `false` | User.ReadBasic.All | [/users/{id}/photo/$value](/graph/api/profilephoto-get) |

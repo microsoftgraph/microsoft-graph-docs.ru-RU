@@ -1,16 +1,16 @@
 ---
 title: 'deploymentAudience: updateAudienceById'
 description: Обновление семейство участников и исключения развертыванияAudience с помощью updatableAsset ресурсов того же типа.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: b2aaa550769a96d5f21cabe5f57b28578ff13736
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 523e2d0585a3f3716cc5daf182a728340214f307
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61029953"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61862405"
 ---
 # <a name="deploymentaudience-updateaudiencebyid"></a>deploymentAudience: updateAudienceById
 
@@ -36,7 +36,7 @@ ms.locfileid: "61029953"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|WindowsUpdates.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|WindowsUpdates.ReadWrite.All|
+|Application|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ POST /admin/windows/updates/deployments/{deploymentId}/audience/updateAudienceBy
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -62,10 +62,10 @@ POST /admin/windows/updates/deployments/{deploymentId}/audience/updateAudienceBy
 |Параметр|Тип|Описание|
 |:---|:---|:---|
 |memberEntityType|String|Полный тип updatable активов. Возможные значения: `#microsoft.graph.windowsUpdates.azureADDevice`, `#microsoft.graph.windowsUpdates.updatableAssetGroup`.|
-|addMembers|Коллекция String|Список идентификаторов, соответствующих updatable активам, которые необходимо добавить в качестве участников аудитории развертывания.|
-|removeMembers|Коллекция String|Список идентификаторов, соответствующих updatable активам, которые необходимо удалить в качестве членов аудитории развертывания.|
-|addExclusions|Коллекция String|Список идентификаторов, соответствующих updatable активам, которые необходимо добавить в качестве исключений из аудитории развертывания.|
-|removeExclusions|Коллекция String|Список идентификаторов, соответствующих updatable активам, которые необходимо удалить в качестве исключений из аудитории развертывания.|
+|addMembers|Коллекция строк|Список идентификаторов, соответствующих updatable активам, которые необходимо добавить в качестве участников аудитории развертывания.|
+|removeMembers|Коллекция строк|Список идентификаторов, соответствующих updatable активам, которые необходимо удалить в качестве членов аудитории развертывания.|
+|addExclusions|Коллекция строк|Список идентификаторов, соответствующих updatable активам, которые необходимо добавить в качестве исключений из аудитории развертывания.|
+|removeExclusions|Коллекция строк|Список идентификаторов, соответствующих updatable активам, которые необходимо удалить в качестве исключений из аудитории развертывания.|
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: 'updatableAsset: unenrollAssetsById'
 description: Unenroll updatableAsset resources of the same type from update management by the deployment service.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 7e1fe5a6862cf28ad4cb1def1a7e5c3bf493a36d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 272371771afb58c29691e5a45d8334b75a898e39
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61016532"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791954"
 ---
 # <a name="updatableasset-unenrollassetsbyid"></a>updatableAsset: unenrollAssetsById
 Пространство имен: microsoft.graph.windowsUpdates
@@ -28,7 +28,7 @@ Unenroll [updatableAsset](../resources/windowsupdates-updatableasset.md) resourc
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|WindowsUpdates.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|WindowsUpdates.ReadWrite.All|
+|Application|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,7 +43,7 @@ POST /admin/windows/updates/updatableAssets/unenrollAssetsById
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,7 +54,7 @@ POST /admin/windows/updates/updatableAssets/unenrollAssetsById
 |Параметр|Тип|Описание|
 |:---|:---|:---|
 |updateCategory|microsoft.graph.windowsUpdates.updateCategory|Категория обновлений для службы для остановки управления. Поддерживает подмножество значений **для updateCategory.** Возможные значения: `feature`, `unknownFutureValue`.|
-|memberEntityType|Строка|Полный тип **updatableAsset** ресурсов. Возможные значения: `#microsoft.graph.windowsUpdates.azureADDevice` .|
+|memberEntityType|String|Полный тип **updatableAsset** ресурсов. Возможные значения: `#microsoft.graph.windowsUpdates.azureADDevice` .|
 |ids|Коллекция String|Список идентификаторов, соответствующих **updatableAsset** ресурсам, чтобы отстраить от управления обновлением службой данного **обновленияCategory.**|
 
 ## <a name="response"></a>Ответ

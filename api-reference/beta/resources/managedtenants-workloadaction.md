@@ -1,16 +1,16 @@
 ---
 title: тип ресурса workloadAction
 description: Представляет действие, которое будет выполняться для определенной рабочей нагрузки.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: e6dbbe1458aa6dba37a26af70ee0e64b92a52cf4
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: fe63c772abfffb85c12d7f753c03bb6a1f168ad4
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402598"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792017"
 ---
 # <a name="workloadaction-resource-type"></a>тип ресурса workloadAction
 
@@ -23,7 +23,7 @@ ms.locfileid: "53402598"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|actionId|String|Уникальный идентификатор для действия рабочей нагрузки. Обязательный. Только для чтения.|
+|actionId|String|Уникальный идентификатор для действия рабочей нагрузки. Обязательное. Только для чтения.|
 |category|workloadActionCategory|Категория действия рабочей нагрузки. Возможные значения: `automated`, `manual`, `unknownFutureValue`. Необязательно. Только для чтения.|
 |description|String|Описание действия рабочей нагрузки. Необязательно. Только для чтения.|
 |displayName|String|Отображает имя для действия рабочей нагрузки. Необязательно. Только для чтения.|

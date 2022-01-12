@@ -1,16 +1,16 @@
 ---
 title: тип ресурса tenantTag
 description: Представляет тег, который может быть назначен управляемому клиенту.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: e48ad25e2af3ac491c6affe4bbb4712ab45e42fc
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: fa62dd86f14a85f6a7a8c4eaf9d722909f03981e
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402652"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61862606"
 ---
 # <a name="tenanttag-resource-type"></a>тип ресурса tenantTag
 
@@ -34,15 +34,15 @@ ms.locfileid: "53402652"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|createdByUserId|String|Идентификатор учетной записи, создав тег клиента. Обязательный. Только для чтения.|
-|createdDateTime|DateTimeOffset|Дата и время создания тега клиента. Обязательный. Только для чтения.|
-|deletedDateTime|DateTimeOffset|Дата и время удаления тега клиента. Обязательный. Только для чтения.|
+|createdByUserId|String|Идентификатор учетной записи, создав тег клиента. Обязательное. Только для чтения.|
+|createdDateTime|DateTimeOffset|Дата и время создания тега клиента. Обязательное. Только для чтения.|
+|deletedDateTime|DateTimeOffset|Дата и время удаления тега клиента. Обязательное. Только для чтения.|
 |description|String|Описание тега клиента. Необязательно. Только для чтения.|
-|displayName|String|Имя отображения тега клиента. Обязательный. Только для чтения.|
+|displayName|String|Имя отображения тега клиента. Обязательное. Только для чтения.|
 |id|String|Уникальный идентификатор тега клиента. Обязательный. Только для чтения.|
 |lastActionByUserId|String|Идентификатор учетной записи, которая продолжалась на теге клиента. Необязательно. Только для чтения.|
 |lastActionDateTime|DateTimeOffset|Дата и время выполнения последнего действия по тегу клиента. Необязательно. Только для чтения.|
-|клиенты|[коллекция microsoft.graph.managedTenants.tenantInfo](../resources/managedtenants-tenantinfo.md)|Коллекция управляемых клиентов, связанных с тегом клиента. Необязательное.|
+|клиенты|[коллекция microsoft.graph.managedTenants.tenantInfo](../resources/managedtenants-tenantinfo.md)|Коллекция управляемых клиентов, связанных с тегом клиента. Необязательный параметр.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

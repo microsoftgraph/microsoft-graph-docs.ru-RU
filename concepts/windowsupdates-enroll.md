@@ -1,16 +1,16 @@
 ---
 title: Регистрация в управлении обновлениями службой Windows обновления для бизнеса
 description: Когда устройство зачислилось в управление обновлениями службой развертывания Windows для бизнеса, вы можете использовать службу развертывания для управления контентом, доставленным из Windows Update на это устройство.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: cfa1d9fe41acc0b8a872c8f0e8a9b64bb6750c90
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: d52bdc3c52fb4989f4c869491257ebf2fb857d61
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59117538"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61857227"
 ---
 # <a name="enroll-in-update-management-by-the-windows-update-for-business-deployment-service"></a>Регистрация в управлении обновлениями службой Windows обновления для бизнеса
 

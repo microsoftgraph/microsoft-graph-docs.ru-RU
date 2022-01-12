@@ -1,16 +1,16 @@
 ---
 title: тип ресурсов managementIntent
 description: Представляет метаданные для базового плана и какие шаблоны управления включены.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 7648da23e5d49a9bd2910c2ccbde7e676a1d7cd0
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: c3e4954e34768b711f621efe98b00eda5baae1d9
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402706"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791933"
 ---
 # <a name="managementintent-resource-type"></a>тип ресурсов managementIntent
 
@@ -30,8 +30,8 @@ ms.locfileid: "53402706"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|String|Имя отображения для намерения управления. Необязательно. Только для чтения.|
-|id|String|Уникальный идентификатор для намерения управления. Обязательный. Только для чтения.|
-|isGlobal|Boolean|Флаг, указывающий, является ли намерение управления глобальным. Обязательный. Только для чтения.|
+|id|String|Уникальный идентификатор для намерения управления. Обязательное. Только для чтения.|
+|isGlobal|Логический|Флаг, указывающий, является ли намерение управления глобальным. Обязательный. Только для чтения.|
 |managementTemplates|[коллекция microsoft.graph.managedTenants.managementTemplateDetailedInfo](../resources/managedtenants-managementtemplatedetailedinfo.md)|Коллекция шаблонов управления, связанных с намерением управления. Необязательно. Только для чтения.|
 
 ## <a name="relationships"></a>Связи

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2b9935aa878845311f40892d7979a0fa7c5b434b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 84d51a2e0e24da6c68cddc136ec96abfb859deb9
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60994538"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860448"
 ---
 # <a name="send-message-in-a-chat"></a>Отправка сообщения в чате
 
@@ -134,6 +134,7 @@ Content-type: application/json
     "locale": "en-us",
     "webUrl": null,
     "channelIdentity": null,
+    "onBehalfOf": null,
     "policyViolation": null,
     "eventDetail": null,
     "from": {

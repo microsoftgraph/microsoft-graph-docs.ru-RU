@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 66b891658858df417ae17ba256f7bccf9e4dfcc0
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 61bdbe1515132ad324938bc58eaa2f71cd18a29e
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61026867"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860126"
 ---
 # <a name="get-chatmessage-in-a-channel-or-chat"></a>Получение объекта chatMessage в канале или чате
 
@@ -70,7 +70,7 @@ GET /me/chats/{chat-id}/messages/{message-id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {token}. Обязательный.  |
+| Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -146,6 +146,7 @@ Content-type: application/json
     "locale": "en-us",
     "webUrl": null,
     "channelIdentity": null,
+    "onBehalfOf": null,
     "policyViolation": null,
     "eventDetail": null,
     "from": {
@@ -252,6 +253,7 @@ Content-type: application/json
         "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
         "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
     },
+    "onBehalfOf": null,
     "attachments": [],
     "mentions": [],
     "reactions": []
@@ -343,6 +345,7 @@ Content-type: application/json
         "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
         "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
     },
+    "onBehalfOf": null,
     "attachments": [],
     "mentions": [],
     "reactions": []

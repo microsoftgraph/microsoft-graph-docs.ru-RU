@@ -1,16 +1,16 @@
 ---
 title: тип ресурса managedDeviceComplianceTrend
 description: Представляет тенденцию совместимых и не совместимых устройств для данного управляемого клиента.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 70c3c84c5da6ffb2660a6289bc55c6ab3eef64be
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 671f54fb20f8ef3ecc94525061009a26e2f583f9
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402531"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61793932"
 ---
 # <a name="manageddevicecompliancetrend-resource-type"></a>тип ресурса managedDeviceComplianceTrend
 
@@ -30,15 +30,15 @@ ms.locfileid: "53402531"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |compliantDeviceCount|Int32|Количество устройств с соответствующим состоянием. Обязательный. Только для чтения.|
-|configManagerDeviceCount|Int32|Количество устройств, вмеяное диспетчером конфигурации. Обязательный. Только для чтения.|
-|countDateTime|String|Был выполнен снимок соответствия требованиям даты и времени. Обязательный. Только для чтения.|
+|configManagerDeviceCount|Int32|Количество устройств, вмеяное диспетчером конфигурации. Обязательное. Только для чтения.|
+|countDateTime|String|Был выполнен снимок соответствия требованиям даты и времени. Обязательное. Только для чтения.|
 |errorDeviceCount|Int32|Количество устройств с состоянием ошибки. Обязательный. Только для чтения.|
-|id|String|Уникальный идентификатор для этого объекта. Обязательный. Только для чтения.|
+|id|String|Уникальный идентификатор для этого объекта. Обязательное. Только для чтения.|
 |inGracePeriodDeviceCount|Int32|Количество устройств, которые находятся в состоянии льготного периода. Обязательный. Только для чтения.|
-|noncompliantDeviceCount|Int32|Количество устройств, которые находятся в состоянии, не удовлетворяемом требованиям. Обязательный. Только для чтения.|
+|noncompliantDeviceCount|Int32|Количество устройств, которые находятся в состоянии, не удовлетворяемом требованиям. Обязательное. Только для чтения.|
 |tenantDisplayName|String|Имя отображения управляемого клиента. Необязательно. Только для чтения.|
 |tenantId|String|Идентификатор Azure Active Directory клиента для [управляемого клиента.](../resources/managedtenants-tenant.md) Необязательно. Только для чтения.|
-|unknownDeviceCount|Int32|Количество устройств в неизвестном состоянии. Обязательный. Только для чтения.|
+|unknownDeviceCount|Int32|Количество устройств в неизвестном состоянии. Обязательное. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

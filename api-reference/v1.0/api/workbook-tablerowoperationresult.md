@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 23c3ec8776e621e9fda508ac75eed72fed6f5830
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 6f71b07dafba46cf99ee89c19e445dd315aa92f9
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59764194"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860924"
 ---
 # <a name="workbook-tablerowoperationresult"></a>книга: tableRowOperationResult
 Пространство имен: microsoft.graph
@@ -43,7 +43,8 @@ ms.locfileid: "59764194"
 }
 -->
 ``` http
-GET /driveItem/workbook/tableRowOperationResult(key={operation-id})
+GET /me/drive/items/{id}/workbook/tableRowOperationResult(key={operation-id})
+GET /me/drive/root:/{item-path}:/workbook/tableRowOperationResult(key={operation-id})
 ```
 
 ## <a name="function-parameters"></a>Параметры функции
@@ -58,7 +59,7 @@ URL-адрес запроса требует следующего парамет
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
-| Workbook-Session-Id  | ID сеанса книги, определяя, сохраняются ли изменения. Необязательное свойство.|
+| Workbook-Session-Id  | ID сеанса книги, определяя, сохраняются ли изменения. Необязательный параметр.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -79,13 +80,13 @@ URL-адрес запроса требует следующего парамет
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/driveItem/workbook/tableRowOperationResult(key='0195cfac-bd22-4f91-b276-dece0aa2378b')
+GET https://graph.microsoft.com/beta/me/drive/items/01CCETFLK7GVZTZHSQNRD2AEI5XWTCU6FJ/workbook/tableRowOperationResult(key='0195cfac-bd22-4f91-b276-dece0aa2378b')
 ```
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса managedTenantExecutionError
 description: Представляет исключение для управляемой операции клиента.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 5a1fd2d1524cad663ee6acef93ab20cc8e40fd24
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 92917d60cc3bd22da02a8d447c305e275bab51a3
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402429"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791898"
 ---
 # <a name="managedtenantexecutionerror-resource-type"></a>тип ресурса managedTenantExecutionError
 
@@ -27,9 +27,9 @@ ms.locfileid: "53402429"
 |:---|:---|:---|
 |error|String|Сообщение об ошибке для исключения. Наследуется [от managedTenantOperationError](../resources/managedtenants-managedtenantoperationerror.md). Обязательный. Только для чтения.|
 |errorDetails|String|Дополнительные сведения об ошибках для исключения. Необязательно. Только для чтения.|
-|nodeId|Int32|Идентификатор узла, в котором произошло исключение. Обязательный. Только для чтения.|
+|nodeId|Int32|Идентификатор узла, в котором произошло исключение. Обязательное. Только для чтения.|
 |rawToken|String|Маркер для исключения. Необязательно. Только для чтения.|
-|statementIndex|Int32|Индекс заявления для исключения. Обязательный. Только для чтения.|
+|statementIndex|Int32|Индекс заявления для исключения. Обязательное. Только для чтения.|
 |tenantId|String|Идентификатор Azure Active Directory клиента для управляемого клиента. Наследуется [от managedTenantOperationError](../resources/managedtenants-managedtenantoperationerror.md). Обязательный. Только для чтения.|
 
 ## <a name="relationships"></a>Связи

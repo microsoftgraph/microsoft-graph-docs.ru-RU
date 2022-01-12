@@ -1,16 +1,16 @@
 ---
 title: 'tenantTag: assignTag'
 description: Назначьте тег клиента указанным управляемым арендаторам.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: f1c2ae61e2df3265d4b8383fb428478f382d4bfb
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 05c5f16e905842acf2bee7e92fc7fb294754f850
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61014614"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861736"
 ---
 # <a name="tenanttag-assigntag"></a>tenantTag: assignTag
 Пространство имен: microsoft.graph.managedTenants
@@ -41,7 +41,7 @@ POST /tenantRelationships/managedTenants/tenantTags/{tenantTagId}/assignTag
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,7 +51,7 @@ POST /tenantRelationships/managedTenants/tenantTags/{tenantTagId}/assignTag
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|tenantIds|Коллекция объектов string|Коллекция идентификаторов Azure Active Directory, на которые должен быть назначен тег клиента.|
+|tenantIds|Коллекция строк|Коллекция идентификаторов Azure Active Directory, на которые должен быть назначен тег клиента.|
 
 ## <a name="response"></a>Отклик
 

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса клиента
 description: Представляет клиента, связанного с управляющей сущностью.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: ee4bd57aa4e7fa2ea15c86376389d3b6e12198ea
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 7094915b850161a14b8c5ba93bcebbfd15eedafb
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53403161"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61842455"
 ---
 # <a name="tenant-resource-type"></a>тип ресурса клиента
 
@@ -33,8 +33,8 @@ ms.locfileid: "53403161"
 |:---|:---|:---|
 |contract|[microsoft.graph.managedTenants.tenantContract](../resources/managedtenants-tenantcontract.md)|Сведения об отношениях клиента с управляющей сущностью.|
 |createdDateTime|DateTimeOffset|Дата и время создания клиента на платформе управления с несколькими арендаторами. Необязательно. Только для чтения.|
-|displayName|String|Отображаемое имя для клиента. Обязательный. Только для чтения.|
-|id|String|Идентификатор Azure Active Directory клиента для клиента. Обязательный. Только для чтения.|
+|displayName|String|Отображаемое имя для клиента. Обязательное. Только для чтения.|
+|id|String|Идентификатор Azure Active Directory клиента для клиента. Обязательное. Только для чтения.|
 |lastUpdatedDateTime|DateTimeOffset|Дата и время последнего обновления клиента в платформе управления с несколькими клиентами. Необязательно. Только для чтения.|
 |tenantId|String|Идентификатор Azure Active Directory клиента для [управляемого клиента.](../resources/managedtenants-tenant.md) Необязательно. Только для чтения.|
 |tenantStatusInformation|[microsoft.graph.managedTenants.tenantStatusInformation](../resources/managedtenants-tenantstatusinformation.md)|Сведения о состоянии на борту для клиента. Необязательно. Только для чтения.|

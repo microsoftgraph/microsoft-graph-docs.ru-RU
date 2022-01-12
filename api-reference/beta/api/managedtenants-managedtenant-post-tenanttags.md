@@ -1,16 +1,16 @@
 ---
 title: Создание tenantTag
 description: Создание нового объекта tenantTag.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 30cda4618023fc4258c439d1e3321346182a2421
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 2fb711f789434c9f66fbc4cfb895e78166f1628f
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61034215"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61818746"
 ---
 # <a name="create-tenanttag"></a>Создание tenantTag
 Пространство имен: microsoft.graph.managedTenants
@@ -41,7 +41,7 @@ POST /tenantRelationships/managedTenants/tenantTags
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,8 +51,8 @@ POST /tenantRelationships/managedTenants/tenantTags
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя отображения тега клиента.|
-|description|Строка|Описание тега клиента.|
+|displayName|String|Имя отображения тега клиента.|
+|description|String|Описание тега клиента.|
 
 ## <a name="response"></a>Отклик
 

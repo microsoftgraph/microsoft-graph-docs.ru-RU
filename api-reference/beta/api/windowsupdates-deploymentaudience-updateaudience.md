@@ -1,16 +1,16 @@
 ---
 title: 'deploymentAudience: updateAudience'
 description: Обновление коллекций участников и исключений развертыванияAudience.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: d8d4d238f2d03359a95f6498890fdd4c34321d22
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c1c8f1a837810af8bc8dd5c9787e3a16532a5dad
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61009399"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61800281"
 ---
 # <a name="deploymentaudience-updateaudience"></a>deploymentAudience: updateAudience
 
@@ -36,7 +36,7 @@ ms.locfileid: "61009399"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|WindowsUpdates.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|WindowsUpdates.ReadWrite.All|
+|Application|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ POST /admin/windows/updates/deployments/{deploymentId}/audience/updateAudience
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса

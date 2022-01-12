@@ -1,16 +1,16 @@
 ---
 title: УправлениеDeviceCompliance
 description: Ознакомьтесь с свойствами и отношениями объекта managedDeviceCompliance.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: e1411f22c91be595ecbc38a1f2ac9aa7fd76c718
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 26a2c77f0a312e96918fb0cf6f79b3ef5ba6cce1
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61002896"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791772"
 ---
 # <a name="get-manageddevicecompliance"></a>УправлениеDeviceCompliance
 Пространство имен: microsoft.graph.managedTenants
@@ -44,7 +44,7 @@ GET /tenantRelationships/managedTenants/managedDeviceCompliances/{managedDeviceC
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

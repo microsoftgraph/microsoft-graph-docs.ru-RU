@@ -1,16 +1,16 @@
 ---
 title: тип ресурса cloudPcDevice
 description: Представляет облачное компьютерное устройство, принадлежающее заданным управляемым клиентом.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 57eabb6720987a8a9bfca4c18e283057848b65cf
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: f45893c100f335c34d700ba4eef07074469fa97c
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402549"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61862348"
 ---
 # <a name="cloudpcdevice-resource-type"></a>тип ресурса cloudPcDevice
 
@@ -30,16 +30,16 @@ ms.locfileid: "53402549"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |cloudPcStatus|String|Состояние облачного КОМПЬЮТЕРА. Возможные значения: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `failed`. Обязательный. Только для чтения.|
-|displayName|String|Имя отображения облачного компьютера. Обязательный. Только для чтения.|
-|id|String|Уникальный идентификатор облачного компьютера. Обязательный. Только для чтения.|
-|lastRefreshedDateTime|DateTimeOffset|Дата и время последнего обновления объекта на платформе управления с несколькими клиентами. Обязательный. Только для чтения.|
+|displayName|String|Имя отображения облачного компьютера. Обязательное. Только для чтения.|
+|id|String|Уникальный идентификатор облачного компьютера. Обязательное. Только для чтения.|
+|lastRefreshedDateTime|DateTimeOffset|Дата и время последнего обновления объекта на платформе управления с несколькими клиентами. Обязательное. Только для чтения.|
 |managedDeviceId|String|Идентификатор управляемого устройства для облачного КОМПЬЮТЕРА. Необязательно. Только для чтения.|
 |managedDeviceName|String|Имя отображения управляемого устройства для облачного компьютера. Необязательно. Только для чтения.|
 |provisioningPolicyId|String|Идентификатор политики обеспечения для облачного компьютера. Обязательный. Только для чтения.|
-|servicePlanName|String|Имя плана службы для облачного компьютера. Обязательный. Только для чтения.|
-|tenantDisplayName|String|Имя отображения управляемого клиента. Обязательный. Только для чтения.|
+|servicePlanName|String|Имя плана службы для облачного компьютера. Обязательное. Только для чтения.|
+|tenantDisplayName|String|Имя отображения управляемого клиента. Обязательное. Только для чтения.|
 |tenantId|String|Идентификатор Azure Active Directory клиента для [управляемого клиента.](../resources/managedtenants-tenant.md) Обязательный. Только для чтения.|
-|userPrincipalName|String|Основное имя пользователя (UPN) пользователя, назначенного на облачный КОМПЬЮТЕР. Обязательный. Только для чтения.|
+|userPrincipalName|String|Основное имя пользователя (UPN) пользователя, назначенного на облачный КОМПЬЮТЕР. Обязательное. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

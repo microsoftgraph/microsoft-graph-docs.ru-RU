@@ -1,16 +1,16 @@
 ---
 title: Развертывание обновления функций с Windows службы развертывания для бизнеса
 description: С помощью Windows обновления для бизнеса можно развернуть обновления Windows на устройствах в клиенте Azure AD.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 11dbc40cb405b7b673fa02ba4845ced6e57c9986
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 872b0e0a4b8acc0d31821be7a21283c7dc2e70ca
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60696044"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61859905"
 ---
 # <a name="deploy-a-feature-update-using-the-windows-update-for-business-deployment-service"></a>Развертывание обновления функций с Windows службы развертывания для бизнеса
 
@@ -21,9 +21,9 @@ ms.locfileid: "60696044"
 Пока устройство остается зарегистрированным в управлении обновлениями функций, оно не получает других обновлений функций из Windows Update, если явно не развернуто с помощью службы развертывания.
 
 > [!IMPORTANT]
-> С помощью службы развертывания Windows Update for Business для обновления устройств до Windows 11 (установив параматер версии развертывания на "Windows 11 версии 21H2"), вы соглашаетесь, что при применении этой операционной системы к устройству либо (1) применимая лицензия Windows была приобретена при том лицензировании, или (2), что вы уполномочены связывать свой органи. zation и принимают от своего имени соответствующие условия лицензии microsoft Software, которые можно найти здесь: Условия лицензии [microsoft Software License](https://www.microsoft.com/Useterms).
+> Используя службу развертывания Windows для бизнеса для обновления устройств до Windows 11 (установив параматер версии развертывания на "Windows 11 версии 21H2"), вы соглашаетесь, что при применении этой операционной системы к устройству либо (1) применимый Windows  Лицензия была приобретена при томовом лицензировании или (2), которую вы уполномочены связывать свою организацию и принимаете от ее имени соответствующие условия лицензии microsoft Software, которые можно найти здесь: [Условия](https://www.microsoft.com/Useterms)лицензии на программное обеспечение Майкрософт .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Предварительные условия
 
 * Устройства отвечают [необходимым требованиям для службы развертывания.](windowsupdates-concept-overview.md#prerequisites)
 * Прежде чем использовать службу развертывания для развертывания обновлений функций, устройства должны быть зарегистрированы в управлении службой развертывания для категории обновления функций. [](windowsupdates-enroll.md)

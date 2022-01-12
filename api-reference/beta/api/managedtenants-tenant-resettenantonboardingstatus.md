@@ -1,16 +1,16 @@
 ---
 title: 'клиент: resetTenantOnboardingStatus'
 description: Выполняет соответствующие процедуры для сброса состояния onboarding для управляемого клиента, который был удален с платформы управления с несколькими арендаторами с помощью действия offboardTenant. Путем ссылки на это действие платформа будет пытаться установить на борт управляемого клиента для управления.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 9bd195b42f2daac4a0264e4a508947410bd3a496
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 49f16e1a232125644aec4bf537018921c4fc70e8
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60980873"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61790008"
 ---
 # <a name="tenant-resettenantonboardingstatus"></a>клиент: resetTenantOnboardingStatus
 Пространство имен: microsoft.graph.managedTenants
@@ -41,7 +41,7 @@ POST /tenantRelationships/managedTenants/tenants/{tenantId}/resetTenantOnboardin
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

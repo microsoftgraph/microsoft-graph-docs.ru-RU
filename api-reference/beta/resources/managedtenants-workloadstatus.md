@@ -1,16 +1,16 @@
 ---
 title: тип ресурса workloadStatus
 description: Представляет состояние рабочей нагрузки.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 50cbd9cdc59426f413333835c4418112401d8038
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: d85d7fd60a269c360185d8d4ffb5952a71bdd628
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53403132"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792269"
 ---
 # <a name="workloadstatus-resource-type"></a>тип ресурса workloadStatus
 

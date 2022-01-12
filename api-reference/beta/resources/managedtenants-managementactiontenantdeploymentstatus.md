@@ -1,16 +1,16 @@
 ---
 title: тип ресурса managementActionTenantDeploymentStatus
 description: Представляет состояние развертывания уровня клиента для действия управления.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 1967c3ad96cc9c4e76a718cafab7ba14207753a9
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: c06857bcdf492dc9779768df6fe09d08a6ec87b7
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402711"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860577"
 ---
 # <a name="managementactiontenantdeploymentstatus-resource-type"></a>тип ресурса managementActionTenantDeploymentStatus
 
@@ -31,9 +31,9 @@ ms.locfileid: "53402711"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор состояния развертывания уровня клиента. Обязательный. Только для чтения.|
-|состояния|[коллекция microsoft.graph.managedTenants.managementActionDeploymentStatus](../resources/managedtenants-managementactiondeploymentstatus.md)|Набор состояния развертывания для каждого экземпляра действия управления. Необязательное.|
-|tenantGroupId|String|Идентификатор группы клиента, связанной с действием управления. Обязательный. Только для чтения.|
-|tenantId|String|Идентификатор Azure Active Directory клиента для [управляемого клиента.](../resources/managedtenants-tenant.md) Обязательный. Только для чтения.|
+|состояния|[коллекция microsoft.graph.managedTenants.managementActionDeploymentStatus](../resources/managedtenants-managementactiondeploymentstatus.md)|Набор состояния развертывания для каждого экземпляра действия управления. Необязательное свойство.|
+|tenantGroupId|String|Идентификатор группы клиента, связанной с действием управления. Обязательное. Только для чтения.|
+|tenantId|String|Идентификатор Azure Active Directory клиента для [управляемого клиента.](../resources/managedtenants-tenant.md) Обязательное. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

@@ -5,12 +5,12 @@ title: driveItem
 ms.localizationpriority: medium
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: d4b26853f08745003d9f44ee7a237e0e293a9981
-ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
+ms.openlocfilehash: 9b1da27ce64f07c386efd146847da417faeefa60
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61646974"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792199"
 ---
 # <a name="driveitem-resource-type"></a>Тип ресурса driveItem
 
@@ -27,7 +27,7 @@ ms.locfileid: "61646974"
 * по уникальному идентификатору **driveItem** с помощью `drive/items/{item-id}`;
 * по пути файловой системы с помощью `/drive/root:/path/to/file`.
 
-Дополнительные сведения см. [в адрес driveItems.](/graph/concepts/onedrive-addressing-driveitems.md)
+Дополнительные сведения см. в разделе об [адресации driveItems](/graph/concepts/onedrive-addressing-driveitems.md).
 
 У ресурсов **DriveItem** есть аспекты, смоделированные как свойства, которые предоставляют данные об идентификаторах и возможностях объекта driveItem. Пример:
 
@@ -78,13 +78,13 @@ ms.locfileid: "61646974"
 
 | Свойство             | Тип               | Описание
 |:---------------------|:-------------------|:---------------------------------
-| audio                | [audio][]          | Метаданные звукового файла, если элемент — звуковой файл. Только для чтения.
+| audio                | [audio][]          | Метаданные звукового файла, если элемент — звуковой файл. Только для чтения. Только на OneDrive Personal.
 | содержимое              | Поток             | Поток содержимого, если элемент представляет файл.
 | createdBy            | [identitySet][]    | Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.
 | createdDateTime      | DateTimeOffset     | Дата и время создания элемента. Только для чтения.
 | cTag                 | String             | ETag для содержимого элемента. Такой тег сущности не изменяется, если изменяются только метаданные. **Примечание.** Это свойство не возвращается, если в роли элемента выступает папка. Только для чтения.
 | deleted              | [deleted][]        | Сведения о состоянии удаления элемента. Только для чтения.
-| description          | String             | Предоставляет видимое пользователю описание элемента. Чтение и запись. Только в личном хранилище OneDrive
+| description          | String             | Предоставляет видимое пользователю описание элемента. Чтение и запись. Только на OneDrive Personal.
 | eTag                 | String             | Тег сущности для всего элемента (метаданные и содержимое). Только для чтения.
 | file                 | [file][]           | Файл метаданных, если в роли элемента выступает файл. Только для чтения.
 | fileSystemInfo       | [fileSystemInfo][] | Сведения о файловой системе на клиенте. Чтение и запись.

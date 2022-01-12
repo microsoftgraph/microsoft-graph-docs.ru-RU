@@ -1,16 +1,16 @@
 ---
 title: тип ресурса updateManagementEnrollment
 description: Представляет регистрацию в управлении службой определенной категории обновлений.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 8d780894e90a1f6eec748a9f62f486b39d3c6cfb
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: 992cfc8ebf53db3b1f3aad7c3c997d02344a503b
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60890187"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861585"
 ---
 # <a name="updatemanagementenrollment-resource-type"></a>тип ресурса updateManagementEnrollment
 

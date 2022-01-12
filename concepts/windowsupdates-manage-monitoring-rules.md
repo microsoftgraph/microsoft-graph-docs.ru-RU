@@ -1,18 +1,18 @@
 ---
-title: Управление правилами мониторинга развертывания с помощью службы Windows обновления для бизнеса
+title: Управление правилами мониторинга с помощью службы Windows обновления для бизнеса
 description: Для развертывания, инициированного службой развертывания, можно использовать правила мониторинга, настраивая оповещения и автоматизированные действия на основе сигналов развертывания.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: eaef1105d5163bd0c0ab1e4859ef9d4979eb7bee
-ms.sourcegitcommit: 11be55b40804b07f4c422f09f601afa97c7d31ed
+ms.openlocfilehash: 0d0b76b2c5e29e164cce6a69bcdccbefd13033ad
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60255950"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61856752"
 ---
-# <a name="manage-monitoring-rules-for-a-feature-update-deployment-using-the-windows-update-for-business-deployment-service"></a>Управление правилами мониторинга развертывания обновления функций с Windows службы развертывания для бизнеса
+# <a name="manage-monitoring-rules-using-the-windows-update-for-business-deployment-service"></a>Управление правилами мониторинга с помощью службы Windows обновления для бизнеса
 
 Для развертывания, инициированного службой развертывания, можно использовать правило мониторинга для настройки оповещений и автоматизированных действий на основе сигналов развертывания.
 
@@ -46,7 +46,6 @@ Content-type: application/json
         "monitoring": {
             "monitoringRules": [
                 {
-                    "@odata.type": "#microsoft.graph.windowsUpdates.monitoringRule",
                     "signal": "rollback",
                     "threshold": 5,
                     "action": "pauseDeployment"
@@ -95,7 +94,8 @@ Content-Type: application/json
             ]
         },
         "rollout": null,
-        "userExperience": null
+        "userExperience": null,
+        "safeguard": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"
@@ -158,7 +158,8 @@ Content-Type: application/json
             "monitoringRules": []
         },
         "rollout": null,
-        "userExperience": null
+        "userExperience": null,
+        "safeguard": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"
@@ -183,7 +184,6 @@ Content-Type: application/json
         "monitoring": {
             "monitoringRules": [
                 {
-                    "@odata.type": "#microsoft.graph.windowsUpdates.monitoringRule",
                     "signal": "rollback",
                     "threshold": 10,
                     "action": "pauseDeployment"
@@ -232,7 +232,8 @@ Content-Type: application/json
             ]
         },
         "rollout": null,
-        "userExperience": null
+        "userExperience": null,
+        "safeguard": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"

@@ -1,16 +1,16 @@
 ---
 title: Обновление tenantCustomizedInformation
 description: Обновление свойств объекта tenantCustomizedInformation.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 4d9c21a79ff2e25052e37e146ebaf9a371b570b5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1b4ee2a024041080a690aab2096266ceab1d18a5
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61011843"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61790016"
 ---
 # <a name="update-tenantcustomizedinformation"></a>Обновление tenantCustomizedInformation
 Пространство имен: microsoft.graph.managedTenants
@@ -41,7 +41,7 @@ PATCH /tenantRelationships/managedTenants/tenantsCustomizedInformation/{tenantCu
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,7 +51,7 @@ PATCH /tenantRelationships/managedTenants/tenantsCustomizedInformation/{tenantCu
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор Azure Active Directory клиента для управляемого клиента.|
+|id|String|Идентификатор Azure Active Directory клиента для управляемого клиента.|
 |tenantId|String|Идентификатор Azure Active Directory клиента для [управляемого клиента.](../resources/managedtenants-tenant.md)|
 |contacts|[коллекция microsoft.graph.managedTenants.tenantContactInformation](../resources/managedtenants-tenantcontactinformation.md)|Коллекция контактов, связанных с управляемым клиентом.|
 |веб-сайт|String|Веб-сайт управляемого клиента.|
@@ -79,7 +79,12 @@ Content-Type: application/json
   "tenantId": "String",
   "contacts": [
     {
-      "@odata.type": "microsoft.graph.managedTenants.tenantContactInformation"
+      "@odata.type": "microsoft.graph.managedTenants.tenantContactInformation",
+      "name": "String",
+      "title": "String",
+      "email": "String",
+      "phone": "String",
+      "notes": "String"
     }
   ],
   "website": "String"

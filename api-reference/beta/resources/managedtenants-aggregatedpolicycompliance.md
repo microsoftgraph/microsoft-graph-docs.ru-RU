@@ -1,16 +1,16 @@
 ---
 title: тип ресурса aggregatedPolicyCompliance
 description: Представляет сводное представление соответствия требованиям устройств для управляемого клиента.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 8b2c6ce85c0ec6df361ddfeb13a851740efb2acb
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 9db12e1a86ee6953c81be839abee695d2ba3a55a
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402555"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61862341"
 ---
 # <a name="aggregatedpolicycompliance-resource-type"></a>тип ресурса aggregatedPolicyCompliance
 
@@ -32,7 +32,7 @@ ms.locfileid: "53402555"
 |compliancePolicyName|String|Имя политики соответствия требованиям к устройству. Необязательно. Только для чтения.|
 |compliancePolicyPlatform|String|Платформа для политики соответствия требованиям к устройствам. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `androidAOSP`, `all`. Необязательно. Только для чтения.|
 |compliancePolicyType|String|Тип политики соответствия требованиям. Необязательно. Только для чтения.|
-|id|String|Уникальный идентификатор для общей политики соответствия требованиям к устройствам. Обязательный. Только для чтения|
+|id|String|Уникальный идентификатор для общей политики соответствия требованиям к устройствам. Обязательное. Только для чтения|
 |lastRefreshedDateTime|DateTimeOffset|Дата и время последнего обновления объекта на платформе управления с несколькими клиентами. Необязательно. Только для чтения.|
 |numberOfCompliantDevices|Int64|Количество устройств, которые находятся в состоянии совместимых. Необязательно. Только для чтения.|
 |numberOfErrorDevices|Int64|Количество устройств, которые находятся в состоянии ошибки. Необязательно. Только для чтения.|

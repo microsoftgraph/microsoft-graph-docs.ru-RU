@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: eafd956cdbd973da74e8f07de54570fef15508c8
-ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
+ms.openlocfilehash: 8a27259e9d855a7e8166ae4416762d2bc12d89ee
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61131908"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792227"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>Отправка chatMessage в канале или чате
 
@@ -73,7 +73,7 @@ POST /chats/{chat-id}/messages
 | Авторизация | Bearer {код}. Обязательно. |
 | Content-Type | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса поставляем JSON-представление [объекта chatMessage.](../resources/chatmessage.md) Обязательным является только свойство body; другие свойства необязательны.
 
@@ -132,7 +132,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
@@ -178,6 +178,7 @@ Content-type: application/json
         "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
         "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
     },
+    "onBehalfOf": null,
     "attachments": [],
     "mentions": [],
     "reactions": []
@@ -244,7 +245,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -370,7 +371,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -425,6 +426,7 @@ Content-type: application/json
             "thumbnailUrl": null
         }
     ],
+    "onBehalfOf": null,
     "mentions": [],
     "reactions": []
 }
@@ -487,7 +489,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -542,6 +544,7 @@ Content-type: application/json
             "thumbnailUrl": null
         }
     ],
+    "onBehalfOf": null,
     "mentions": [],
     "reactions": []
 }
@@ -632,6 +635,7 @@ Content-type: application/json
     "locale": "en-us",
     "webUrl": null,
     "channelIdentity": null,
+    "onBehalfOf": null,
     "policyViolation": null,
     "eventDetail": null,
     "from": {
@@ -776,6 +780,7 @@ Content-type: application/json
             "thumbnailUrl": null
         }
     ],
+    "onBehalfOf": null,
     "mentions": [],
     "reactions": []
 }

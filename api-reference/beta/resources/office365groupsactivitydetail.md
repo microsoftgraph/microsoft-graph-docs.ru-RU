@@ -5,16 +5,18 @@ ms.localizationpriority: medium
 ms.prod: reports
 author: sarahwxy
 doc_type: resourcePageType
-ms.openlocfilehash: 57d51cf3f2d4f91270000618a18f70f3804208c3
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0d32d6c44c520f3dd7fe88494da4bfecc0d1ad14
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59142868"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61863531"
 ---
 # <a name="office365groupsactivitydetail-resource-type"></a>тип ресурса office365GroupsActivityDetail
 
 Пространство имен: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## <a name="properties"></a>Свойства
 
@@ -23,9 +25,9 @@ ms.locfileid: "59142868"
 | groupId                           | String  | ID группы.          |
 | reportRefreshDate                 | Дата    | Последняя дата контента.          |
 | groupDisplayName                  | String  | Отображает имя группы.           |
-| isDeleted                         | Логическое | Был ли этот пользователь удален или удален. |
+| isDeleted                         | Логический | Был ли этот пользователь удален или удален. |
 | ownerPrincipalName                | String  | Имя основного владельца группы.          |
-| lastActivityDate                  | Дата    | Последняя дата действий для следующих сценариев: почтовый ящик группы получил электронную почту; просмотр, редактирование, общий доступ или синхронизацию файлов в SharePoint документа; просмотр страниц SharePoint пользователя; сообщений, которые пользователи вывешив, прочитав или понравились в Yammer группах. |
+| lastActivityDate                  | Дата    | Последняя дата действий для следующих сценариев: почтовый ящик группы получил электронную почту; просмотр, редактирование, общий доступ или синхронизация файлов в библиотеке SharePoint документов; просмотр SharePoint страниц; публикация, чтение или просмотр сообщений в Yammer группах. |
 | groupType                         | String  | Тип группы. Возможные значения: **общедоступные или** **частные.** |
 | memberCount                       | Int64   | Количество членов группы.                  |
 | externalMemberCount               | Int64   | Количество внешних членов группы.         |

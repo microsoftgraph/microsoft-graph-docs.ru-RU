@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: people
 author: kevinbellinger
-ms.openlocfilehash: f64f87c18bd6e5752671a6dbb28b8464f07cfa3a
-ms.sourcegitcommit: 8ae180a32dbd5a2b12512aee64699a2c23b8678b
+ms.openlocfilehash: 7f88fc5f2d8f3ebedce9301124e266ef84adff13
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "60355549"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792010"
 ---
 # <a name="profilephoto-resource-type"></a>Тип ресурса profilePhoto
 
@@ -29,6 +29,10 @@ ms.locfileid: "60355549"
 |[Получение объекта profilePhoto](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) |Получение указанного объекта **profilePhoto** или его метаданных (свойств **profilePhoto**). |
 |[Обновление](../api/profilephoto-update.md) | [profilePhoto](profilephoto.md)  |Назначение фотографии указанному пользователю, группе или контакту. Фотография должна быть представлена в двоичном формате. Она заменяет текущую фотографию (если она существует). |
 
+> [!NOTE]
+> 
+> Управление фотографиями пользователей с помощью API microsoft Graph в настоящее время не поддерживается в клиентах Azure AD B2C.
+
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
@@ -42,7 +46,7 @@ ms.locfileid: "60355549"
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже представлено описание ресурса в формате JSON.
+Ниже указано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",

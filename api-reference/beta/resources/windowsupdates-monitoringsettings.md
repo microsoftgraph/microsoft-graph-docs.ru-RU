@@ -1,16 +1,16 @@
 ---
 title: monitoringSettings resource type
 description: Параметры автоматизированного мониторинга и реагирования в развертывании.
-author: Alice-at-Microsoft
-localization_priority: Normal
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: aff5fa9571628783521dcc5ae0113e767915c2c7
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: c00f7e714b68595ce1debbf155ec802f0f579f23
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52068085"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61810439"
 ---
 # <a name="monitoringsettings-resource-type"></a>monitoringSettings resource type
 

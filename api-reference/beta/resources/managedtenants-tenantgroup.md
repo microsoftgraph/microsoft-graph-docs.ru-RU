@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса tenantGroup
 description: Представляет логическую группу управляемых клиентов.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 2ab0d97afff68dca7d76b1ad6c4e461ad6af6233
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: fa731082fbfc32f323b15460780e2ff355a965f8
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53402693"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791873"
 ---
 # <a name="tenantgroup-resource-type"></a>Тип ресурса tenantGroup
 
@@ -30,12 +30,12 @@ ms.locfileid: "53402693"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|allTenantsIncluded|Boolean|Флаг, указывающий, включены ли все управляемые клиенты в группу клиента. Обязательный. Только для чтения.|
+|allTenantsIncluded|Логический|Флаг, указывающий, включены ли все управляемые клиенты в группу клиента. Обязательное. Только для чтения.|
 |displayName|String|Имя отображения для группы клиента. Необязательно. Только для чтения.|
-|id|String|Уникальный идентификатор для группы клиентов. Обязательный. Только для чтения.|
+|id|String|Уникальный идентификатор для группы клиентов. Обязательное. Только для чтения.|
 |managementActions|[коллекция microsoft.graph.managedTenants.managementActionInfo](../resources/managedtenants-managementactioninfo.md)|Коллекция действий управления, связанных с группой клиентов. Необязательно. Только для чтения.|
 |managementIntents|[коллекция microsoft.graph.managedTenants.managementIntentInfo](../resources/managedtenants-managementintentinfo.md)|Коллекция намерений управления, связанных с группой клиента. Необязательно. Только для чтения.|
-|tenantIds|Коллекция объектов string|Коллекция управляемых идентификаторов клиента включается в группу клиентов. Необязательно. Только для чтения.|
+|tenantIds|Коллекция строк|Коллекция управляемых идентификаторов клиента включается в группу клиентов. Необязательно. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

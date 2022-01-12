@@ -1,16 +1,16 @@
 ---
 title: Get managedDeviceComplianceTrend
 description: Ознакомьтесь с свойствами и отношениями объекта managedDeviceComplianceTrend.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 6fde46acaeb56a42c162e510322c814ff4d59ce2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 395500a5e427eefdc84b00c70af2b280227b7a61
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019847"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61862088"
 ---
 # <a name="get-manageddevicecompliancetrend"></a>Get managedDeviceComplianceTrend
 Пространство имен: microsoft.graph.managedTenants
@@ -44,7 +44,7 @@ GET /tenantRelationships/managedTenants/managedDeviceComplianceTrends/{managedDe
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

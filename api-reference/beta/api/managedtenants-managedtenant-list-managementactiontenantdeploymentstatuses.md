@@ -1,16 +1,16 @@
 ---
 title: Управление спискамиActionTenantDeploymentStatus
 description: Получите список объектов managementActionTenantDeploymentStatus и их свойств.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: a9681e5d6a5bc5537854971bd1e579e7bc8a6871
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3f51550c706cb1b269cbdf7dd2eed43a4e61737e
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60981111"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861952"
 ---
 # <a name="list-managementactiontenantdeploymentstatus"></a>Управление спискамиActionTenantDeploymentStatus
 Пространство имен: microsoft.graph.managedTenants
@@ -44,7 +44,7 @@ GET /tenantRelationships/managedTenants/managementActionTenantDeploymentStatuses
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

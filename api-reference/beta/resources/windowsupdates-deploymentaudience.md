@@ -1,16 +1,16 @@
 ---
 title: тип ресурса deploymentAudience
 description: Набор updatableAsset ресурсов, к которым может применяться развертывание.
-author: Alice-at-Microsoft
-localization_priority: Normal
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 98d295183f69012da6ea9fc5803bc440465854c8
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: ab436c0fa9f726528b190fa6fe2f638890447ce4
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52067526"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61863366"
 ---
 # <a name="deploymentaudience-resource-type"></a>тип ресурса deploymentAudience
 
@@ -41,7 +41,7 @@ ms.locfileid: "52067526"
 |исключения|[коллекция microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md)|Указывает ресурсы, которые необходимо исключить из аудитории.|
 |members|[коллекция microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md)|Указывает активы, которые необходимо включить в аудиторию.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",

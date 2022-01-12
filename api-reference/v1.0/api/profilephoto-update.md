@@ -1,18 +1,18 @@
 ---
-title: Обновление объекта profilephoto
-description: Обновление фотографии вошедшего **пользователя** либо указанной **группы** или **контакта**. Так как
-ms.localizationpriority: high
+title: Обновление профиляPhoto
+description: Обновление фотографии вошедшего пользователя либо указанной группы или контакта.
+ms.localizationpriority: medium
 author: kevinbellinger
-ms.prod: ''
+ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: fb813fbd135959f225d418fa94e7abe913612c15
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
-ms.translationtype: HT
+ms.openlocfilehash: 7f580dbce3bf83bc09403bd25a60cd00a01ab5d5
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59104812"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791842"
 ---
-# <a name="update-profilephoto"></a>Обновление объекта profilephoto
+# <a name="update-profilephoto"></a>Обновление профиляPhoto
 
 Пространство имен: microsoft.graph
 
@@ -49,9 +49,10 @@ ms.locfileid: "59104812"
 |Делегированные (личная учетная запись Майкрософт)      |   Не поддерживается.            |
 |Для приложений      |    Contacts.ReadWrite           |
 
-> **Примечание.** Чтобы обновить фотографию какого-либо пользователя в организации, ваше приложение должно получить разрешение User.ReadWrite.All приложения и вызвать этот API с его собственным идентификатором, а не от имени пользователя. Дополнительные сведения см. в статье [Получение доступа без пользователя](/graph/auth-v2-service).
->
-> В настоящее время существует [известная проблема](/graph/known-issues#groups) c доступом к групповым фотографиям с помощью разрешений приложений.
+> [!NOTE]
+> 1. Чтобы обновить фотографию любого пользователя в организации, приложение должно иметь разрешение *user.ReadWrite.All* и вызывать этот API под своим удостоверением, а не от имени пользователя. Дополнительные сведения см. в статье [Получение доступа без пользователя](/graph/auth-v2-service). Обновление фотографии подписанного пользователя требует только *разрешения User.ReadWrite.*
+> 2. В настоящее время существует [известная проблема](/graph/known-issues#groups) c доступом к групповым фотографиям с помощью разрешений приложений.
+> 3. Обновление фотографии пользователя с помощью API Microsoft Graph в настоящее время не поддерживается в клиентах Azure AD B2C.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -85,7 +86,7 @@ PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -114,8 +115,9 @@ Binary data for the image
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже представлен пример отклика. Примечание: показанный здесь объект отклика может быть сокращен для удобочитаемости.
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа. 
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response"
 } -->

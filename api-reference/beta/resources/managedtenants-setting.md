@@ -1,16 +1,16 @@
 ---
 title: параметр типа ресурса
 description: Представляет параметр, используемый в базовой линии.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 2545dc6aa11668359fa9dda636412d36f8d92de1
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 53eaf2dd4c3e97e183083f1a6c0d127ffbaefafd
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53403164"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861296"
 ---
 # <a name="setting-resource-type"></a>параметр типа ресурса
 
@@ -24,9 +24,9 @@ ms.locfileid: "53403164"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|String|Имя отображения для параметра. Обязательный. Только для чтения.|
-|jsonValue|String|Значение для параметра, сериализированного как строка JSON. Обязательный. Только для чтения.|
-|overwriteAllowed|Boolean|Флаг, указывающий, можно ли переопредить существующие конфигурации при применении. Обязательный. Только для чтения.|
-|valueType|managementParameterValueType|Тип данных для параметра. Возможные значения: `string`, `integer`, `boolean`, `guid`, `stringCollection`, `integerCollection`, `booleanCollection`, `guidCollection`, `unknownFutureValue`. Обязательный. Только для чтения.|
+|jsonValue|String|Значение для параметра, сериализированного как строка JSON. Обязательное. Только для чтения.|
+|overwriteAllowed|Логический|Флаг, указывающий, можно ли переопредить существующие конфигурации при применении. Обязательный. Только для чтения.|
+|valueType|managementParameterValueType|Тип данных для параметра. Возможные значения: `string`, `integer`, `boolean`, `guid`, `stringCollection`, `integerCollection`, `booleanCollection`, `guidCollection`, `unknownFutureValue`. Обязательное. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

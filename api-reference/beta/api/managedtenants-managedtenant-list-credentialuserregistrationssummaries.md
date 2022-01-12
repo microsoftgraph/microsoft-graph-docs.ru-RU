@@ -1,16 +1,16 @@
 ---
 title: Список credentialUserRegistrationsSummaries
 description: Получите список объектов credentialUserRegistrationsSummary и их свойств.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 20b3900022122f3cab9769b1b5c6cea0d0ee3800
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 0d17a2bccf9289d144d90efda970d97cd777c38a
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022139"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61862081"
 ---
 # <a name="list-credentialuserregistrationssummaries"></a>Список credentialUserRegistrationsSummaries
 Пространство имен: microsoft.graph.managedTenants
@@ -44,7 +44,7 @@ GET /tenantRelationships/managedTenants/credentialUserRegistrationsSummaries
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

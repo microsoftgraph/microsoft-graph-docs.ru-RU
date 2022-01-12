@@ -1,16 +1,16 @@
 ---
 title: Get tenantCustomizedInformation
 description: Ознакомьтесь с свойствами и отношениями объекта tenantCustomizedInformation.
-author: isaiahwilliams
+author: idwilliams
 ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: apiPageType
-ms.openlocfilehash: 9658e3862e2e64f0bae1e91efe668a80aa32b938
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 882f53579f59943f17f7caa0de30275fe5437b63
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61014628"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861858"
 ---
 # <a name="get-tenantcustomizedinformation"></a>Get tenantCustomizedInformation
 Пространство имен: microsoft.graph.managedTenants
@@ -44,7 +44,7 @@ GET /tenantRelationships/managedTenants/tenantsCustomizedInformation/{tenantCust
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

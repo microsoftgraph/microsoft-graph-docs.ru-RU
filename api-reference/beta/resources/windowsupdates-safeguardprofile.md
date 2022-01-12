@@ -1,16 +1,16 @@
 ---
 title: тип ресурса safeguardProfile
 description: Описывает проблему(ы), от которой служба защищает устройства.
-author: Alice-at-Microsoft
+author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: 8c528111af41ee3340a58402f66d2e4ac5410aca
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: 95ad3d053afa1fb27190407d359055c47afd4135
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60890124"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61861117"
 ---
 # <a name="safeguardprofile-resource-type"></a>тип ресурса safeguardProfile
 

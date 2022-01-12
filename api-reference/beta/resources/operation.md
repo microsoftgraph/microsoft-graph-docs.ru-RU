@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Operation
+title: Тип ресурса операции
 description: Состояние длительной операции.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: ''
 author: billbliss
-ms.openlocfilehash: f57b9f14603fdeae539e872d87b5af2645cedef0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 781dcf64cae103cd65f460edead13ca6995d2a51
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998521"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792262"
 ---
-# <a name="operation-resource-type"></a>Тип ресурса Operation
+# <a name="operation-resource-type"></a>Тип ресурса операции
 
 Пространство имен: microsoft.graph
 
@@ -22,22 +22,22 @@ ms.locfileid: "47998521"
 
 ## <a name="methods"></a>Методы
 
-Нет
+Нет.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство           | Тип            | Описание                                                                     |
 | :----------------- | :-------------- | :-------------------------------------------------------------------------------|
 | createdDateTime    | DateTimeOffset  | Время начала операции.                                                |
-| id                 | String          | Идентификатор операции. только для чтения. Создается сервером.                                  |
-| ластактиондатетиме | DateTimeOffset  | Время последнего действия операции.                                   |
+| id                 | String          | ID операции. Только для чтения. Создается сервером.                                  |
+| lastActionDateTime | DateTimeOffset  | Время последнего действия операции.                                   |
 | status             | String          | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
-Нет
+Отсутствуют.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

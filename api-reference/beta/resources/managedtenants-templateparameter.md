@@ -1,16 +1,16 @@
 ---
 title: тип ресурса templateParameter
 description: Представляет параметр, использованный в шаблоне управления.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: 4f533bc375e2d7e4a1e4ef2f7f801f248c1801c4
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: a2fe8cc543f60e2e862af65b9e47f6a84389e453
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53403160"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791877"
 ---
 # <a name="templateparameter-resource-type"></a>тип ресурса templateParameter
 
@@ -24,10 +24,10 @@ ms.locfileid: "53403160"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |description|String|Описание параметра шаблона. Необязательно. Только для чтения.|
-|displayName|String|Имя отображения параметра шаблона. Обязательный. Только для чтения.|
+|displayName|String|Имя отображения параметра шаблона. Обязательное. Только для чтения.|
 |jsonAllowedValues|String|Допустимые значения параметра шаблона, представленные сериализированной строкой JSON. Необязательно. Только для чтения.|
-|jsonDefaultValue|String|Значение по умолчанию для параметра шаблона, представленное последовательной строкой JSON. Обязательный. Только для чтения.|
-|valueType|managementParameterValueType|Тип данных для параметра шаблона.. Возможные значения: `string`, `integer`, `boolean`, `guid`, `stringCollection`, `integerCollection`, `booleanCollection`, `guidCollection`, `unknownFutureValue`. Обязательный. Только для чтения.|
+|jsonDefaultValue|String|Значение по умолчанию для параметра шаблона, представленное последовательной строкой JSON. Обязательное. Только для чтения.|
+|valueType|managementParameterValueType|Тип данных для параметра шаблона.. Возможные значения: `string`, `integer`, `boolean`, `guid`, `stringCollection`, `integerCollection`, `booleanCollection`, `guidCollection`, `unknownFutureValue`. Обязательное. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

@@ -1,16 +1,16 @@
 ---
 title: тип ресурса managedTenantOperationError
 description: Абстрактный тип, который представляет ошибку для управляемой операции клиента.
-author: isaiahwilliams
-localization_priority: Normal
+author: idwilliams
+ms.localizationpriority: medium
 ms.prod: microsoft-365-lighthouse
 doc_type: resourcePageType
-ms.openlocfilehash: d8dc51747ac63f6f8a719b0256c398d14d1c4034
-ms.sourcegitcommit: e372382019f1a136543eadab02ba70af3921e098
+ms.openlocfilehash: 3708f0a2727a59390dc0c91c26191d12a9f28b0e
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53403045"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791891"
 ---
 # <a name="managedtenantoperationerror-resource-type"></a>тип ресурса managedTenantOperationError
 

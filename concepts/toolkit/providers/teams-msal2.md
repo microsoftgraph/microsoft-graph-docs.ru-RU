@@ -1,16 +1,16 @@
 ---
-title: Microsoft Teams Поставщик MSAL2
+title: Microsoft Teams поставщика MSAL2
 description: Используйте поставщика Teams MSAL2 в вкладке Microsoft Teams для облегчения проверки подлинности и доступа microsoft Graph ко всем компонентам. Поставщик может использоваться для одно-входного (SSO) или интерактивного входного знака.
 ms.localizationpriority: medium
 author: simonagren
-ms.openlocfilehash: 658c79d2b8c709c940a4db7565677ceb88c2ad12
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f46bff605b0980ab71b5ae204e86d90949760117
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59130620"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61862842"
 ---
-# <a name="microsoft-teams-msal2-provider"></a>Microsoft Teams Поставщик MSAL2
+# <a name="microsoft-teams-msal2-provider"></a>Microsoft Teams поставщика MSAL2
 
 Используйте поставщик Microsoft Teams MSAL2 в вкладке Microsoft Teams для облегчения проверки подлинности и доступа microsoft Graph ко всем компонентам. Поставщик может использоваться для единого входного (SSO) или интерактивного входного знака.
 
@@ -34,7 +34,7 @@ ms.locfileid: "59130620"
 ### <a name="sso-authentication"></a>Проверка подлинности SSO
 Чтобы не запрашивать у пользователя проверку подлинности в приложении, Microsoft Teams также могут использовать [SSO](/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso) для автоматической проверки подлинности пользователей. Однако для этого процесса требуется резервная служба, которая используется для обмена маркера Microsoft Teams с маркером доступа, который можно использовать для доступа к Microsoft Graph.
 
-Teams Поставщик MSAL2 поддерживает режим SSO, который включен при наборе службы поддержки, способной `ssoUrl`  \  `sso-url` обмениваться маркерами. Резервная служба обязана выставить API (например), который получит маркер проверки подлинности из Microsoft Teams и использовать поток для обмена маркера для маркера доступа, который может получить доступ к `api/token` `on-behalf-of` Microsoft Graph. Для эталонной реализации службы backend узла см. пример [Microsoft Teams узла SSO.](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab)
+Teams MSAL2 поддерживает режим SSO, который включен, когда `ssoUrl`  \  `sso-url` настроены на службу backend, способную обмениваться маркерами. Резервная служба обязана выставить API (например), который получит маркер проверки подлинности из Microsoft Teams и использовать поток для обмена маркера для маркера доступа, который может получить доступ к `api/token` `on-behalf-of` Microsoft Graph. Для эталонной реализации службы backend узла см. пример [Microsoft Teams узла SSO.](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab)
 
 ### <a name="initialize-the-provider"></a>Инициализация поставщика
 Перед использованием Teams msAL2 убедитесь, что на странице [Microsoft Teams SDK.](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true#using-the-sdk)
@@ -55,7 +55,7 @@ import {Providers} from '@microsoft/mgt-element';
 import {TeamsMsal2Provider} from '@microsoft/mgt-teams-msal2-provider';
 import * as MicrosoftTeams from "@microsoft/teams-js";
 
-TeamsProvider.microsoftTeamsLib = MicrosoftTeams;
+TeamsMsal2Provider.microsoftTeamsLib = MicrosoftTeams;
 
 Providers.globalProvider = new TeamsMsal2Provider(config);
 ```
@@ -97,7 +97,7 @@ export interface TeamsMsal2Config {
 | auth-popup-url  | Абсолютный или относительный путь к странице, обрабатывающей проверку подлинности во всплывающем окне (см. раздел [Создание всплывающей страницы](#create-the-popup-page)). Обязательный. |
 | scopes  | Строки с разделителями-запятыми для областей, которым пользователь должен предоставить согласие при входе. Необязательный. |
 | authority    | Строка центра. По умолчанию используется общий центр. Для однотенантного приложения используйте идентификатор клиента или имя клиента. Например, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` или `https://login.microsoftonline.com/[your-tenant-id]`. Необязательный. |
-| sso-url  | Абсолютный или относительный путь к API-резерву, который обрабатывает обмен маркерами OBO. Необязательное. |
+| sso-url  | Абсолютный или относительный путь к API-резерву, который обрабатывает обмен маркерами OBO. Необязательно. |
 | http-method  | Тип метода HTTP, который используется для вызова API backend. `POST` или `GET`. Значение по умолчанию: `GET`. Необязательна |
 
 ---
@@ -163,12 +163,12 @@ TeamsMsal2Provider.handleAuth();
     ```html
     <mgt-teams-provider client-id="<YOUR_CLIENT_ID>" auth-popup-url="/AUTH-PATH" ... ></mgt-teams-provider>
     ``` 
-    с 
+     с  
     ```html
     <mgt-teams-msal2-provider client-id="<YOUR_CLIENT_ID>" auth-popup-url="/AUTH-PATH" ... ></mgt-teams-msal2-provider>
     ```
 
 ## <a name="see-also"></a>См. также
-* [Microsoft Teams Пример узла SSO](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab)
+* [Microsoft Teams SSO узла](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab)
 * [Создание вкладки Microsoft Teams](../get-started/build-a-microsoft-teams-tab.md)
 * [Создание вкладки Microsoft Teams с помощью SSO](../get-started/build-a-microsoft-teams-sso-tab.md)

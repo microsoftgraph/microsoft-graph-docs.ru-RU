@@ -5,12 +5,12 @@ author: kjyam98
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 869fd8646061843ee1455a0ee5d7fb46078c191f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9f0f61c12dcaa208e983584aef328f6d74ac73db
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60990239"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791982"
 ---
 # <a name="delete-federatedidentitycredential"></a>Удаление federatedIdentityCredential
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "60990239"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) |  Application.ReadWrite.All |
-|Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+|Приложение | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -36,14 +36,15 @@ ms.locfileid: "60990239"
 }
 -->
 ``` http
-DELETE /applications/{applicationsId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
+DELETE /applications/{applicationId}/federatedIdentityCredentials/{federatedIdentityCredentialId}
 
+DELETE /applications/{applicationId}/federatedIdentityCredentials/{federatedIdentityCredentialName}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {token}. Обязательный.|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

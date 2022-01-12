@@ -1,16 +1,16 @@
 ---
 title: тип ресурса azureADDevice
 description: Представляет устройство в Azure Active Directory Azure AD, которое регистрируется в службе развертывания.
-author: Alice-at-Microsoft
-localization_priority: Normal
+author: aarononeal
+ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: a9d7b68257895674530acfbafcd0fb6b6c9c7b02
-ms.sourcegitcommit: 1b09298649d5606b471b4cbe1055419bbe2fc7e5
+ms.openlocfilehash: a055c944c1b7a5f2bd4bbd23a9edc8d9c3b3ff88
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52068152"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792192"
 ---
 # <a name="azureaddevice-resource-type"></a>тип ресурса azureADDevice
 
