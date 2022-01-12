@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 29b3d33b140f40f61f6e9a1d31eec6ddeeb88bec
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 51362d1ab8b987445f9dba30b0fde3b0f6768ab5
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651542"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61791849"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -70,7 +70,7 @@ ms.locfileid: "61651542"
 | [assignLicense](../api/user-assignlicense.md) | [user](user.md) | Добавление или удаление подписок пользователя. Вы также можете включать и отключать отдельные планы, связанные с подпиской. |
 | [exportPersonalData](../api/user-exportpersonaldata.md) | Нет | Отправка запроса операции политики данных, направленного администратором компании для экспорта данных пользователя организации. |
 | [getByIds](../api/directoryobject-getbyids.md) | Коллекция String | Возвращает объекты каталогов, указанные в списке идентификаторов. |
-| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | Коллекция String | Проверка членства в списке групп. Это транзитивная проверка. |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | Коллекция строк | Проверка членства в списке групп. Это транзитивная проверка. |
 | [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | Коллекция String | Проверка участия в списке группы, роли каталога или объектах административных единиц. Это транзитивная проверка. |
 | [getMemberGroups](../api/directoryobject-getmembergroups.md) | Коллекция строк | Возвращает все группы, в которых состоит пользователь. Это транзитивная проверка. |
 | [getMemberObjects](../api/directoryobject-getmemberobjects.md) | Коллекция строк | Возвращение всех групп, ролей каталога и административных единиц, в которых состоит пользователь. Это транзитивная проверка. |
@@ -177,7 +177,7 @@ ms.locfileid: "61651542"
 | assignedLicenses | Коллекция [assignedLicense](assignedlicense.md) | Назначенные пользователю лицензии, в том числе наследуемые (на основе групп). <br><br>Значение null не допускается. Поддерживает `$filter` (`eq` и `not`). |
 | assignedPlans | Коллекция [assignedPlan](assignedplan.md) | Планы, назначенные пользователю. Только для чтения. Значение null не допускается.<br><br>Поддерживает `$filter` (`eq` и `not`). |
 | birthday | DateTimeOffset | День рождения пользователя. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601 и формата времени UTC. Например, полночь 1 января 2014 г. в формате UTC представляется в виде `2014-01-01T00:00:00Z`. <br><br>Возвращается только с помощью оператора `$select`. |
-| businessPhones | Коллекция String | Номера телефонов пользователя. Для этого свойства можно указать только один номер.<br><br>"Только для чтения" для пользователей, которые синхронизируются с локальным каталогом. Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
+| businessPhones | Коллекция строк | Номера телефонов пользователя. Для этого свойства можно указать только один номер.<br><br>"Только для чтения" для пользователей, которые синхронизируются с локальным каталогом. Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 | city | String | Город, в котором находится пользователь. Максимальная длина: 128 символов.<br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям). |
 | CompanyName | String | Название организации, с которой связан пользователь. Это свойство может быть полезно для описания компании внешнего пользователя. Длина имени компании не должна превышать 64 символов.<br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям).|
 | consentProvidedForMinor | [consentProvidedForMinor](#consentprovidedforminor-values) | Устанавливает, получено ли согласие для несовершеннолетних. Допустимые значения: `null`, `granted`, `denied` и `notRequired`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions). <br><br>Поддерживает `$filter` (`eq`, `ne`, `not` и `in`).|
@@ -187,7 +187,7 @@ ms.locfileid: "61651542"
 |customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|Открытый сложный тип, который содержит значение настраиваемого атрибута безопасности, назначенного объекту каталога. Допускается значение null. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `ne`, `not`, `startsWith`).|
 | deletedDateTime | DateTimeOffset | Дата и время удаления пользователя. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le` и `in`) |
 | department | String | Название отдела, в котором работает пользователь. Максимальная длина: 64 символа.<br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `eq` и по `null` значениям). |
-| displayName | Строка | Имя пользователя, отображаемое в адресной книге. Это значение обычно является сочетанием имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. Максимальная длина 256 символов.<br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям), `$orderBy` и `$search`.|
+| displayName | String | Имя пользователя, отображаемое в адресной книге. Это значение обычно является сочетанием имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. Максимальная длина 256 символов.<br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям), `$orderBy` и `$search`.|
 | employeeHireDate | DateTimeOffset | Дата и время, когда пользователь был нанят или начнет работу в случае найма в будущем. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`).|
 | employeeId | String | Идентификатор сотрудника, назначенный пользователю организацией. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям).|
 |employeeOrgData|[employeeOrgData](employeeorgdata.md) |Представляет данные организации (например, подразделение и место возникновения затрат), связанные с пользователем. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`).|
@@ -208,7 +208,7 @@ ms.locfileid: "61651542"
 | legalAgeGroupClassification | [legalAgeGroupClassification](#legalagegroupclassification-values) | Используется корпоративными приложениями для определения юридической возрастной группы пользователя. Это свойство предназначено только для чтения. Вычисляется на основе свойств **ageGroup** и **consentProvidedForMinor**. Допустимые значения: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` и `adult`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions). <br><br>Возвращается только на `$select`. |
 | licenseAssignmentStates | Коллекция [licenseAssignmentState](licenseassignmentstate.md) | Состояние назначений лицензий для пользователя. Только для чтения.<br><br>Возвращается только с помощью оператора `$select`. |
 | почта; | String | SMTP-адрес пользователя, например `admin@contoso.com`. Изменение этого свойства также приведет к обновлению коллекции пользователя **proxyAddresses**, которая будет включать это значение как SMTP-адрес. Для учетных записей Azure AD B2C это свойство можно обновить до десяти раз, используя уникальные адреса протокола SMTP. Это свойство не может содержать диакритические знаки. <br><br> Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith` и `eq` по `null` значениям). |
-| mailboxSettings | [mailboxSettings](mailboxsettings.md) | Параметры основного почтового ящика пользователя, выполнившего вход. Вы можете [получить](../api/user-get-mailboxsettings.md) или [обновить](../api/user-update-mailboxsettings.md) параметры языкового стандарта, часового пояса и отправки автоматических ответов на входящие сообщения.<br><br>Возвращается только с помощью оператора `$select`. |
+| mailboxSettings | [mailboxSettings](mailboxsettings.md) | Параметры основного почтового ящика вошедшего пользователя. Вы можете [получить](../api/user-get-mailboxsettings.md) или [обновить](../api/user-update-mailboxsettings.md) параметры языкового стандарта, часового пояса, отправки автоматических ответов на входящие сообщения. Дополнительные сведения см. в разделе [Пользовательские настройки языков и региональных форматов](#user-preferences-for-languages-and-regional-formats). <br><br>Возвращается только с помощью оператора `$select`. |
 | mailNickname | String | Псевдоним электронной почты пользователя. Это свойство должно быть указано при создании пользователя. Максимальная длина: 64 символа.<br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям). |
 | mobilePhone | String | Основной сотовый телефон пользователя. "Только для чтения" для пользователей, которые синхронизируются с локальным каталогом. <br><br> Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям).|
 | mySite | String | URL-адрес личного сайта пользователя. <br><br>Возвращается только с помощью оператора `$select`. |
@@ -232,7 +232,7 @@ ms.locfileid: "61651542"
 | preferredLanguage | String | Предпочитаемый язык для пользователя. Он должен быть представлен в формате ISO 639-1, например `en-US`. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` по `null` значениям). |
 | preferredName | String | Предпочитаемое имя пользователя. <br><br>Возвращается только с помощью оператора `$select`. |
 | provisionedPlans | Коллекция [provisionedPlan](provisionedplan.md) | Планы, подготовленные для пользователя. Только для чтения. Значение NULL не допускается. Поддерживает `$filter` (`eq`, `not`, `ge`, `le`).|
-| proxyAddresses | Коллекция String | Пример: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. Для учетных записей Azure AD B2C это свойство имеет ограничение в десять уникальных адресов. Только для чтения. Значение NULL не допускается. <br><br>Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
+| proxyAddresses | Коллекция String | Пример: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. Прокси-адрес с префиксом `SMTP` (прописными буквами) является основным прокси-адресом, а адреса с префиксом `smtp` являются вспомогательными прокси-адресами. Для учетных записей Azure AD B2C это свойство имеет ограничение в десять уникальных адресов. Только для чтения в Microsoft Graph. Вы можете обновить это свойство только с помощью [Центра администрирования Microsoft 365](/exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses). Значение null не допускается. <br><br>Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 | refreshTokensValidFromDateTime | DateTimeOffset | Все маркеры обновления или маркеры сеансов (файлы cookie сеанса), выпущенные до этого момента, являются недопустимыми. В приложениях возникает ошибка при использовании недопустимых маркеров обновления или маркеров сеансов для получения маркера делегированного доступа (для доступа к API, например Microsoft Graph).  В этом случае приложению потребуется получить новый маркер обновления, сделав запрос к конечной точке авторизации. Только для чтения. Сброс можно выполнить с помощью [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md).|
 | responsibilities | Коллекция строк | Список обязанностей пользователя. <br><br>Возвращается только с помощью оператора `$select`. |
 | schools | Коллекция строк | Список учебных заведений, которые посещал пользователь. <br><br>Возвращается только с помощью оператора `$select`. |
@@ -247,6 +247,11 @@ ms.locfileid: "61651542"
 | userPrincipalName | String | Имя субъекта-пользователя (UPN). Это имя используется для входа через Интернет по стандарту RFC 822. Как правило, оно должно указывать на имя пользователя для электронной почты. Общий формат: псевдоним@домен, при этом домен должен входить в совокупность проверенных доменов клиента. Это свойство необходимо указывать при создании пользователя. Доступ к проверенным доменам клиента можно получить с помощью свойства **verifiedDomains** объекта [organization](organization.md).<br>ПРИМЕЧАНИЕ. Это свойство не может содержать диакритические знаки. Разрешены только следующие символы: `A - Z`, `a - z`, `0 - 9`, ` ' . - _ ! # ^ ~`. Полный список разрешенных символов см. в [политиках имен пользователей](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts). <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith`) и `$orderBy`.
 | userType | Строка | Строковое значение, с помощью которого можно классифицировать типы пользователей в каталоге, например `Member` и `Guest`. <br><br>Поддерживает `$filter` (`eq`, `ne`, `not`, `in` и `eq` по `null` значениям). **ПРИМЕЧАНИЕ.** Дополнительные сведения о разрешениях для участников и гостевых пользователей см. в статье [Разрешения пользователя по умолчанию в Azure Active Directory](/azure/active-directory/fundamentals/users-default-permissions#member-and-guest-users). |
 
+### <a name="user-preferences-for-languages-and-regional-formats"></a>Пользовательские настройки языков и региональных форматов
+Ресурс **user** содержит свойство [mailboxSettings](../resources/mailboxsettings.md), включающее предпочитаемый язык пользователя, формат даты и времени, стандартный часовой пояс, и другие специальные параметры для основного почтового ящика Exchange. Эти настройки предназначены для почтовых клиентов и доступны только в том случае, если для пользователя подготовлен почтовый ящик. Вы можете использовать свойство **mailboxSettings**, если ваш сценарий предназначен только для почты, календаря, контактов и задач Outlook.
+
+В дополнение к **mailboxSettings** ресурс **user** включает связь посредством [userSettings](../resources/usersettings.md) с [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md) — надмножеством настроек языка и регионального формата, которые могут использоваться любым приложением, чтобы предоставить пользователю оптимальный языковой и региональный интерфейс. Используйте **userSettings** для обеспечения согласованного интерфейса в приложениях, имеющих доступ к профилю Azure AD, чтобы отображать одинаковые пользовательские настройки.
+
 ### <a name="legal-age-group-property-definitions"></a>Определения свойств юридических возрастных групп
 
 В этом разделе объясняется, как три свойства возрастных групп (**legalAgeGroupClassification**, **ageGroup** и **consentProvidedForMinor**) используются администраторами Azure AD и разработчиками корпоративных приложений для соблюдения нормативных требований, связанных с возрастом.
@@ -254,10 +259,8 @@ ms.locfileid: "61651542"
 - **ageGroup** и **consentProvidedForMinor** — это необязательные свойства, используемые администраторами Azure AD для обеспечения правильной обработки используемой учетной записи на основе связанных с возрастом нормативных требований, действующих в стране или регионе пользователя.
 
 Пример: Кэмерон — администратор каталога в начальной школе г. Холипорт в Соединенном Королевстве. В начале учебного года он использует документы приемной комиссии, чтобы получить согласие родителей несовершеннолетних учащихся на основе нормативных требований Соединенного Королевства, связанных с возрастом. Согласие, полученное от родителей, позволяет использовать учетные записи несовершеннолетних учащихся в школе г. Холипорт и приложениях Майкрософт. После этого Кэмерон создает все учетные записи и присваивает свойству ageGroup значение minor, а свойству consentProvidedForMinor значение granted. Приложения, используемые учащимися, могут скрывать функции, не подходящие несовершеннолетним.
-<!-- Note that the following 3 sub-sections are only documented like enums for a consistent user experience.
-For some reason they are not defined as enums in the CSDL.
-Hence the type of the corresponding 3 properties remain as String type in the Properties table.
--->
+
+<!-- Note that the following 3 sub-sections are only documented like enums for a consistent user experience but they are String types.-->
 
 #### <a name="legalagegroupclassification-values"></a>значения legalAgeGroupClassification
 
@@ -331,11 +334,6 @@ Hence the type of the corresponding 3 properties remain as String type in the Pr
 |todo|[todo](todo.md)|Представляет службы To Do, доступные пользователю. |
 |transitiveReports|Коллекция [directoryObject](directoryobject.md) | Транзитивные отчеты для пользователя. Только для чтения.|
 |usageRight|Коллекция [usageRight](usageright.md)|Представляет права использования, предоставленные пользователю. |
-
-### <a name="user-preferences-for-languages-and-regional-formats"></a>Пользовательские настройки языков и региональных форматов
-Ресурс **user** содержит свойство [mailboxSettings](../resources/mailboxsettings.md), включающее предпочитаемый язык пользователя, формат даты и времени, стандартный часовой пояс, и другие специальные параметры для основного почтового ящика Exchange. Эти настройки предназначены для почтовых клиентов и доступны только в том случае, если для пользователя подготовлен почтовый ящик. Вы можете использовать свойство **mailboxSettings**, если ваш сценарий предназначен только для почты, календаря, контактов и задач Outlook.
-
-В дополнение к **mailboxSettings** ресурс **user** включает связь посредством [userSettings](../resources/usersettings.md) с [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md) — надмножеством настроек языка и регионального формата, которые могут использоваться любым приложением, чтобы предоставить пользователю оптимальный языковой и региональный интерфейс. Используйте **userSettings** для обеспечения согласованного интерфейса в приложениях, имеющих доступ к профилю Azure AD, чтобы отображать одинаковые пользовательские настройки.
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -4,12 +4,12 @@ description: Запросы изменений позволяют приложе
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: 83f49d98145c4d795fac3c8df5eac0a7667bf06d
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: d18d429d611c05512196651644525ce4866d7831
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526165"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792234"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Отслеживание изменений в данных Microsoft Graph с помощью разностного запроса
 
@@ -117,7 +117,7 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 | Перечисление ролей каталога                                                | Функция [delta](/graph/api/directoryrole-delta) ресурса [directoryObjects](/graph/api/resources/directoryrole) |
 | Элементы на диске\*                                                  | Функция [delta](/graph/api/driveitem-delta) ресурса [driveItem](/graph/api/resources/driveitem)             |
 | Задания образовательных учреждений                                          | функция [delta](/graph/api/educationassignment-delta) ресурса [educationAssignment](/graph/api/resources/educationassignment)                                    |
-| Уроки в образовательных учреждениях                                              | Функция [delta](/graph/api/educationclass-delta) ресурса [educationClass](/graph/api/resources/educationclass)                                      |
+| Классы образовательных учреждений                                              | Функция [delta](/graph/api/educationclass-delta) ресурса [educationClass](/graph/api/resources/educationclass)                                      |
 | Пользователи образовательных учреждений                                                | Функция [delta](/graph/api/educationuser-delta) ресурса [educationUser](/graph/api/resources/educationuser)                                         |
 | Образовательная школа                                              | Функция [delta](/graph/api/educationschool-delta) ресурса [educationSchool](/graph/api/resources/educationschool)                                   |
 | События в представлении (диапазоне дат) основного календаря | Функция [delta](/graph/api/event-delta) ресурса [event](/graph/api/resources/event)                         |

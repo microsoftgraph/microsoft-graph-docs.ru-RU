@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: high
 ms.prod: cloud-printing
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 76379057b01aa0b7a0c037fb9cde5ef5ea2b3c77
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: d6fba6ddbf3611bd2c8b14dfdfcd91de67e2077f
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60946862"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61805241"
 ---
 # <a name="universal-print-cloud-printing-api-overview"></a>Обзор API облачной среды универсальной печати
 
@@ -90,7 +90,7 @@ API универсальной печати Microsoft Graph позволяет �
 ## <a name="api-reference"></a>Справочные материалы по API
 Ищете справочные материалы по API для этой службы?
 
-- [API универсальной печати в бета-версии Microsoft Graph](/graph/api/resources/print)
+- [API универсальной печати в Microsoft Graph](/graph/api/resources/print)
 
 ## <a name="provide-feedback"></a>Предоставление отзывов
 

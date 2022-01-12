@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: d49cc39b02e3d83dc35bf036e3da9cae53ab1798
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 6cb5bf2027a04617edfea52212a807bd0268bd1b
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61650897"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61792248"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -57,7 +57,7 @@ ms.locfileid: "61650897"
 | [Список объектов contactFolder](../api/user-list-contactfolders.md) | Коллекция [contactFolder](contactfolder.md) | Получение коллекции папок контактов в папке контактов по умолчанию для вошедшего пользователя. |
 | **Объекты каталога** |  |  |
 | [assignLicense](../api/user-assignlicense.md) | [user](user.md) | Добавление или удаление подписок пользователя. Вы также можете включать и отключать отдельные планы, связанные с подпиской. |
-| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | Коллекция String | Проверка членства в списке групп. Это транзитивная проверка. |
+| [checkMemberGroups](../api/directoryobject-checkmembergroups.md) | Коллекция строк | Проверка членства в списке групп. Это транзитивная проверка. |
 | [checkMemberObjects](../api/directoryobject-checkmemberobjects.md) | Коллекция String | Проверка участия в списке группы, роли каталога или объектах административных единиц. Эта функция транзитивна. |
 | [exportPersonalData](../api/user-exportpersonaldata.md) | Нет | Отправка запроса операции политики данных, направленного администратором компании для экспорта данных пользователя организации. |
 | [getByIds](../api/directoryobject-getbyids.md) | Коллекция String | Возвращает объекты каталогов, указанные в списке идентификаторов. |
@@ -201,7 +201,7 @@ ms.locfileid: "61650897"
 |preferredLanguage|String|Предпочитаемый язык для пользователя. Он должен быть представлен в формате ISO 639-1, например `en-US`. <br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`и `eq` для значений `null`).|
 |preferredName|String|Предпочитаемое имя пользователя. <br><br>Возвращается только с помощью оператора `$select`.|
 |provisionedPlans|Коллекция [provisionedPlan](provisionedplan.md)|Планы, подготовленные для пользователя. Только для чтения. Значение NULL не допускается.<br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `not`, `ge`, `le`).|
-|proxyAddresses|Коллекция String|Пример: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. Для учетных записей Azure AD B2C это свойство имеет ограничение в десять уникальных адресов. Только для чтения. Значение NULL не допускается. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
+|proxyAddresses|Коллекция String|Пример: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. Прокси-адрес с префиксом `SMTP` (заглавными буквами) являются основным прокси-адресом, а адреса с префиксом `smtp` являются дополнительными прокси-адресами. Для учетных записей Azure AD B2C это свойство имеет ограничение в десять уникальных адресов. Доступно только для чтения в Microsoft Graph. Обновить это свойство можно только с помощью [Центра администрирования Microsoft 365](/exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses). Значение null не допускается. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 |refreshTokensValidFromDateTime|DateTimeOffset|Все маркеры обновления или маркеры сеансов (файлы cookie сеанса), выпущенные до этого момента, являются недопустимыми. В приложениях возникает ошибка при использовании недопустимых маркеров обновления или маркеров сеансов для получения маркера делегированного доступа (для доступа к API, например Microsoft Graph).  В этом случае приложению потребуется получить новый маркер обновления, сделав запрос к конечной точке авторизации. <br><br>Возвращается только с помощью оператора `$select`. Только для чтения. |
 |responsibilities;|Коллекция строк|Список обязанностей пользователя. <br><br>Возвращается только с помощью оператора `$select`.|
 |schools|Коллекция строк|Список учебных заведений, которые посещал пользователь. <br><br>Возвращается только с помощью оператора `$select`.|
@@ -223,10 +223,7 @@ ms.locfileid: "61650897"
 
 Пример: Кэмерон — администратор каталога в начальной школе г. Холипорт в Соединенном Королевстве. В начале учебного года он использует документы приемной комиссии, чтобы получить согласие родителей несовершеннолетних учащихся на основе нормативных требований Соединенного Королевства, связанных с возрастом. Согласие, полученное от родителей, позволяет использовать учетные записи несовершеннолетних учащихся в школе г. Холипорт и приложениях Майкрософт. После этого Кэмерон создает все учетные записи и присваивает свойству **ageGroup** значение `minor`, а свойству **consentProvidedForMinor** значение `granted`. Приложения, используемые учащимися, могут скрывать функции, не подходящие несовершеннолетним.
 
-<!-- Note that the following 3 sub-sections are only documented like enums for a consistent user experience. 
-For some reason they are not defined as enums in the CSDL. 
-Hence the type of the corresponding 3 properties remain as string type in the Properties table.
--->
+<!-- Note that the following 3 sub-sections are only documented like enums for a consistent user experience but they are String types.-->
 
 #### <a name="legalagegroupclassification-values"></a>значения legalAgeGroupClassification
 
@@ -295,7 +292,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже этот ресурс представлен в формате JSON.
+Ниже указано представление ресурса в формате JSON.
 
 <!--{
   "blockType": "resource",

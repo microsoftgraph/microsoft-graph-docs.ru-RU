@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: 4bd125c401847a36271edebe6a6432343bd1f5f3
-ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
+ms.openlocfilehash: 3d1eebef73f4421f63af3834cfb6324cd4bf32be
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "60891139"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61860320"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Работа с Microsoft Teams при помощи API Microsoft Graph
 
@@ -26,7 +26,7 @@ Microsoft Teams — это рабочее пространство с чатам
 |[teamsTab](../resources/teamstab.md) |[Список](../api/channel-list-tabs.md), [создание](../api/channel-post-tabs.md), [чтение](../api/channel-get-tabs.md), [обновление](../api/channel-patch-tabs.md), [удаление](../api/channel-delete-tabs.md) |
 |[teamsApp](../resources/teamsapp.md)|[Список](../api/appcatalogs-list-teamsapps.md), [публикация](../api/teamsapp-publish.md), [обновление](../api/teamsapp-update.md), [удаление](../api/teamsapp-delete.md)|
 |[teamsAppInstallation](../resources/teamsappinstallation.md)| [Список](../api/team-list-installedapps.md), [установка](../api/team-post-installedapps.md), [обновление](../api/team-delete-installedapps.md), [удаление](../api/team-delete-installedapps.md) |
-|[chatMessage](../resources/chatmessage.md)| [список в канале](../api/channel-list-messages.md), [список в чате](../api/chat-list-messages.md), [отправка](../api/chatmessage-post.md), [чтение в канале](../api/chatmessage-get.md), [чтение в чате](../api/chatmessage-get.md)|
+|[chatMessage](../resources/chatmessage.md)| [Список в канале](../api/channel-list-messages.md), [список в чате](../api/chat-list-messages.md), [отправка](../api/chatmessage-post.md), [чтение в канале](../api/chatmessage-get.md), [чтение в чате](../api/chatmessage-get.md)|
 |[call](../resources/call.md)| [Ответ](../api/call-answer.md), [отклонение](../api/call-reject.md), [перенаправление](../api/call-redirect.md), [отключение звука](../api/call-mute.md), [включение звука](../api/call-unmute.md), [изменение роли при демонстрации экрана](../api/call-changescreensharingrole.md), [перечисление участников](../api/call-list-participants.md), [приглашение участников](../api/participant-invite.md) |
 |[schedule](../resources/schedule.md)| [Создание или замена](../api/team-put-schedule.md), [получение](../api/schedule-get.md), [предоставление общего доступа](../api/schedule-share.md) |
 |[schedulingGroup](../resources/schedulinggroup.md)| [Создание](../api/schedule-post-schedulinggroups.md), [список](../api/schedule-list-schedulinggroups.md), [получение](../api/schedulinggroup-get.md), [замена](../api/schedulinggroup-put.md), [удаление](../api/schedulinggroup-delete.md) |

@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: sureshja
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 8675aafcba991ebff4d62f221daa1af599eb2303
-ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
+ms.openlocfilehash: 5922b6f38e2c3543d61511a9e98bbd6ea304c74f
+ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "61604317"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61862685"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 
@@ -112,7 +112,7 @@ ms.locfileid: "61604317"
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | Указывает параметры для одностраничного приложения, в том числе URL-адреса выхода и URI перенаправления для кодов авторизации и маркеров доступа. |
 | tags |Коллекция String| Настраиваемые строки, которые можно использовать для классификации и определения приложения. Значение null не допускается.<br><br>Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 | tokenEncryptionKeyId |Guid|Задает значение открытого ключа keyId из коллекции keyCredentials. При настройке Azure AD шифрует все созданные маркеры с помощью ключа, на который указывает это свойство. Код приложения, получающий зашифрованный маркер, должен использовать соответствующий закрытый ключ для расшифровки маркера, прежде чем его можно будет применить для пользователя, выполнившего вход.|
-| verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | Указывает проверенного издателя приложения.|
+| verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | Указывает проверенного издателя приложения. Дополнительные сведения о том, как проверка издателя помогает поддерживать безопасность приложений, надежность и соответствие требованиям, см. в разделе [Проверка издателя](/azure/active-directory/develop/publisher-verification-overview).|
 | uniqueName | Строка | Уникальный идентификатор, который можно назначить приложению в качестве альтернативного идентификатора. Неизменяемый. Только для чтения. |
 | web |[webApplication](webapplication.md)| Указывает параметры для веб-приложения. |
 
