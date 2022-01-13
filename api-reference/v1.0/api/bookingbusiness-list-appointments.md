@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 14372560cc9946bca86ee93aa8ad5ab2d17a2692
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 2695fa895417ebb3d2e4bb793c4565cafdf06a64
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526719"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014273"
 ---
 # <a name="list-appointments"></a>Список встреч
 
@@ -29,7 +29,7 @@ ms.locfileid: "61526719"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /bookingBusinesses/{id}/appointments
+GET /solutions/bookingBusinesses/{id}/appointments
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает параметры $count и $expand [OData](/graph/query-parameters) для настройки ответа.
@@ -41,7 +41,7 @@ GET /bookingBusinesses/{id}/appointments
 |:----------|:----------|
 | Авторизация  | Bearer {код}. Обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика и коллекцию `200 OK` [объектов bookingAppointment](../resources/bookingappointment.md) в тексте ответа.
@@ -94,8 +94,6 @@ Content-type: application/json
                         "uniqueId": null,
                         "uniqueIdType": null,
                         "address": {
-                            "type": "home",
-                            "postOfficeBox": "",
                             "street": "",
                             "city": "",
                             "state": "",
@@ -141,8 +139,6 @@ Content-type: application/json
                 "uniqueId": null,
                 "uniqueIdType": null,
                 "address": {
-                    "type": "home",
-                    "postOfficeBox": "",
                     "street": "",
                     "city": "",
                     "state": "",
@@ -182,8 +178,6 @@ Content-type: application/json
                         "uniqueId": null,
                         "uniqueIdType": null,
                         "address": {
-                            "type": "home",
-                            "postOfficeBox": "",
                             "street": "",
                             "city": "",
                             "state": "",
@@ -240,8 +234,6 @@ Content-type: application/json
                 "uniqueId": null,
                 "uniqueIdType": null,
                 "address": {
-                    "type": "home",
-                    "postOfficeBox": "",
                     "street": "",
                     "city": "",
                     "state": "",

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 5a5dd4f986f30e5565299c9764b2e8ca5b0ea9ff
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 67007b24605b9adbb77b7454ec4f3b75ca016caa
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526909"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014210"
 ---
 # <a name="create-bookingcustomer"></a>Создание bookingCustomer
 
@@ -29,7 +29,7 @@ ms.locfileid: "61526909"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /bookingBusinesses/{id}/customers
+POST /solutions/bookingBusinesses/{id}/customers
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -37,7 +37,7 @@ POST /bookingBusinesses/{id}/customers
 |:---------------|:----------|
 | Авторизация  | Bearer {код}. Обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса указать JSON-представление [объекта bookingCustomer.](../resources/bookingcustomer.md)
 
 

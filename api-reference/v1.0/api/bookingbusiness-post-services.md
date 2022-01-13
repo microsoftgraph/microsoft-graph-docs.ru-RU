@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 23b2a8c8826db6d3359e7bf596f9359c61435cff
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 670e2015ab547915e16523f0aa019aab5e2b00e5
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525214"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014196"
 ---
 # <a name="create-bookingservice"></a>Создание bookingService
 
@@ -29,7 +29,7 @@ ms.locfileid: "61525214"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /bookingBusinesses/{id}/services
+POST /solutions/bookingBusinesses/{id}/services
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -37,7 +37,7 @@ POST /bookingBusinesses/{id}/services
 |:---------------|:----------|
 | Авторизация  | Bearer {код}. Обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса указать JSON-представление объекта [bookingService.](../resources/bookingservice.md)
 
 
@@ -155,8 +155,6 @@ Content-type: application/json
         "uniqueId": null,
         "uniqueIdType": null,
         "address": {
-            "type": "home",
-            "postOfficeBox": "",
             "street": "4567 First Street",
             "city": "Buffalo",
             "state": "NY",

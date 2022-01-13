@@ -5,12 +5,12 @@ author: razortbone
 ms.localizationpriority: medium
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 883821eff7433560938730a3e8b895e4011e0033
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 0dd66a2edc1416dd5cae89752063ae39fb41a319
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526674"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014112"
 ---
 # <a name="update-bookingcustomquestion"></a>Обновление bookingCustomQuestion
 
@@ -36,7 +36,7 @@ ms.locfileid: "61526674"
 -->
 
 ```http
-PATCH /bookingBusinesses/{bookingBusinessesId}/customQuestions/{bookingCustomQuestionId}
+PATCH /solutions/bookingBusinesses/{bookingBusinessesId}/customQuestions/{bookingCustomQuestionId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -52,9 +52,9 @@ PATCH /bookingBusinesses/{bookingBusinessesId}/customQuestions/{bookingCustomQue
 
 | Свойство        | Тип              | Описание                                                                                                         |
 | :-------------- | :---------------- | :------------------------------------------------------------------------------------------------------------------ |
-| answerInputType | answerInputType   | Ожидаемый тип ответа. Допустимые значения: `text`, `radioButton`, `unknownFutureValue`. Необязательное свойство.    |
+| answerInputType | answerInputType   | Ожидаемый тип ответа. Допустимые значения: `text`, `radioButton`, `unknownFutureValue`. Необязательный параметр.    |
 | answerOptions   | Коллекция строк | Список возможных значений ответов. Необязательное свойство.                                                                   |
-| displayName     | Строка            | Вопрос. Обязательный. |
+| displayName     | String            | Вопрос. Обязательный. |
 
 ## <a name="response"></a>Отклик
 

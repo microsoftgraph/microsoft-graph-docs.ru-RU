@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 263149f5cd21f6640a2308606cb7af593cb7cf45
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 0fc8837911d46f56ae577b599a860d6a0722872a
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526671"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014105"
 ---
 # <a name="delete-bookingservice"></a>Удаление bookingService
 
@@ -29,7 +29,7 @@ ms.locfileid: "61526671"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /bookingBusinesses/{id}/services/{id}
+DELETE /solutions/bookingBusinesses/{id}/services/{id}
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов

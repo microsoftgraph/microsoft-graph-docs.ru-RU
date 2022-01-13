@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 49e1358de576d27c6e961f71c35c8948cfe19c22
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: c7756e775e53256ff51c9a980618f82ba4d4f29f
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526698"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014238"
 ---
 # <a name="list-staffmembers"></a>Список staffMembers
 
@@ -29,7 +29,7 @@ ms.locfileid: "61526698"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /bookingBusinesses/{id}/staffMembers
+GET /solutions/bookingBusinesses/{id}/staffMembers
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает параметры $count и $expand [OData](/graph/query-parameters) для настройки ответа.
@@ -39,7 +39,7 @@ GET /bookingBusinesses/{id}/staffMembers
 |:----------|:----------|
 | Авторизация  | Bearer {код}. Обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объектов bookingStaffMember](../resources/bookingstaffmember.md) в тексте ответа.

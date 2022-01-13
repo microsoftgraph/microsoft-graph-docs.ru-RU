@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 34f2b0f0c166e6dfeb4981ffcf0ad1cc780305b8
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: dca80f86162ac9ac60105b5b8452d63bc84ebefa
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526695"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014154"
 ---
 # <a name="list-bookingcurrencies"></a>Список bookingCurrencies
 
@@ -29,7 +29,7 @@ ms.locfileid: "61526695"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /bookingCurrencies
+GET /solutions/bookingCurrencies
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает параметры запроса $count и $expand [OData](/graph/query-parameters) для настройки ответа, включая $count, $filter, $select, $skip и $top.

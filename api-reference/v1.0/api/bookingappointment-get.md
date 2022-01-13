@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: ead758b5faec2b2d89ce9326bcf44335f26f715c
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: d733ac9e593e3a53fd57be283884646441f49c8e
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526734"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014315"
 ---
 # <a name="get-bookingappointment"></a>Получить bookingAppointment
 
@@ -31,7 +31,7 @@ ms.locfileid: "61526734"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /bookingBusinesses/{id}/appointments/{id}
+GET /solutions/bookingBusinesses/{id}/appointments/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает параметры $count и $expand [OData](/graph/query-parameters) для настройки ответа.
@@ -104,8 +104,6 @@ Content-type: application/json
         "uniqueId": null,
         "uniqueIdType": null,
         "address": {
-            "type": "home",
-            "postOfficeBox": "",
             "street": "",
             "city": "",
             "state": "",
@@ -157,8 +155,6 @@ Content-type: application/json
                 "uniqueIdType": null,
                 "address": 
                 {
-                    "type": "home",
-                    "postOfficeBox": "",
                     "street": "",
                     "city": "",
                     "state": "",

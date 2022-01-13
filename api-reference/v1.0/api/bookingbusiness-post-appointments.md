@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: c119fddb298b8d5debecdb7c2df336505c23ae48
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 0262ab76e127f2104bdf2edc2e896b8f4a2873b8
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525187"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014224"
 ---
 # <a name="create-bookingappointment"></a>Создание bookingAppointment
 
@@ -29,7 +29,7 @@ ms.locfileid: "61525187"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /bookingBusinesses/{id}/appointments
+POST /solutions/bookingBusinesses/{id}/appointments
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -37,7 +37,7 @@ POST /bookingBusinesses/{id}/appointments
 |:---------------|:----------|
 | Авторизация  | Bearer {код}. Обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса указать JSON-представление [объекта bookingAppointment.](../resources/bookingappointment.md)
 
 
@@ -147,8 +147,6 @@ Content-type: application/json
                 "uniqueIdType": null,
                 "address": {
                     "@odata.type": "#microsoft.graph.physicalAddress",
-                    "type": "home",
-                    "postOfficeBox": "",
                     "street": "",
                     "city": "",
                     "state": "",
@@ -228,8 +226,6 @@ Content-type: application/json
         "uniqueId": null,
         "uniqueIdType": null,
         "address": {
-            "type": "home",
-            "postOfficeBox": "",
             "street": "",
             "city": "",
             "state": "",
@@ -281,8 +277,6 @@ Content-type: application/json
                 "uniqueIdType": null,
                 "address": {
                     "@odata.type": "#microsoft.graph.physicalAddress",
-                    "type": "home",
-                    "postOfficeBox": "",
                     "street": "",
                     "city": "",
                     "state": "",

@@ -5,12 +5,12 @@ author: razortbone
 ms.localizationpriority: medium
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: aff86534505575fc047118890abc936d78072743
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: aeac18a40b718724e3d7e7ab3516096024d204f9
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525166"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014252"
 ---
 # <a name="list-customquestions"></a>Список customQuestions
 
@@ -35,7 +35,7 @@ ms.locfileid: "61525166"
 }-->
 
 ```http
-GET /bookingBusinesses/{bookingBusinessesId}/customQuestions
+GET /solutions/bookingBusinesses/{bookingBusinessesId}/customQuestions
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -48,7 +48,7 @@ GET /bookingBusinesses/{bookingBusinessesId}/customQuestions
 | :------------ | :------------------------ |
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

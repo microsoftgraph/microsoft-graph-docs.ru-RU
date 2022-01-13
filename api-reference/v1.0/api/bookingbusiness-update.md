@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 2ff072b07a3d1812f9fc80954507020d5be4eef1
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 3e86b5815999dc4c7388f00dd8077bed0fb1b906
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526799"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014168"
 ---
 # <a name="update-bookingbusiness"></a>Обновление bookingbusiness
 
@@ -29,7 +29,7 @@ ms.locfileid: "61526799"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /bookingBusinesses/{id}
+PATCH /solutions/bookingBusinesses/{id}
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
@@ -45,7 +45,7 @@ PATCH /bookingBusinesses/{id}
 |businessHours|[коллекция bookingWorkHours](../resources/bookingworkhours.md)|Часы работы для бизнеса.|
 |businessType|Строка|Тип бизнеса.|
 |defaultCurrencyIso|Строка|Код валюты, в которую бизнес работает в Microsoft Bookings.|
-|displayName|Строка|Имя для бизнеса, который взаимодействует с клиентами.|
+|displayName|String|Имя для бизнеса, который взаимодействует с клиентами.|
 |email|String|Адрес электронной почты для бизнеса.|
 |phone|String|Номер телефона для бизнеса.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Указывает, как можно создавать заказы для этого бизнеса.|

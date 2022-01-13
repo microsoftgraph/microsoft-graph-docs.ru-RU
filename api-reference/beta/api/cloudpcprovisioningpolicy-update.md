@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 21917afff35e605e591b3a12c6f8126a20eea8ca
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: cfca4ffbbe56fcc9a7688c312e910150daf4d162
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022587"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014056"
 ---
 # <a name="update-cloudpcprovisioningpolicy"></a>Обновление cloudPcProvisioningPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "61022587"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|CloudPC.ReadWrite.All|
+|Application|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,20 +52,20 @@ PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 В теле запроса поставляем представление JSON объекта [cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)
 
-В следующей таблице показаны свойства, необходимые при создании [cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)
+В следующей таблице показаны свойства, которые можно обновить для [cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|Строка|Имя отображения политики обеспечения. |
 |description|Строка|Описание политики обеспечения.|
 |onPremisesConnectionId|Строка|ID cloudPcOnPremisesConnection. Чтобы обеспечить подключение к облачным компьютерам и подключение к домену, выберите подключение к виртуальной сети, проверенной службой облачных ПК.|
-|imageId|Строка|ID изображения ОС, которое необходимо уладить на облачных ПК. Формат изображения типа галереи: {publisher_offer_sku}. Поддерживаемые значения для каждого из параметров: <ul><li>издатель: Microsoftwindowsdesktop.</li> <li>предложение: windows-ent-cpc.</li> <li>sku: 21h1-ent-cpc-m365, 21h1-ent-cpc-os, 20h2-ent-cpc-m365, 20h2-ent-cpc-os, 20h1-ent-cpc-m365, 20h1-ent-cpc-os, 19h2-ent-cpc-os.</li></ul>|
-|imageDisplayName|Строка|Имя отображения образа ОС, которое вы закаповыватель.|
+|imageId|String|ID изображения ОС, которое необходимо уладить на облачных ПК. Формат изображения типа галереи: {publisher_offer_sku}. Поддерживаемые значения для каждого из параметров: <ul><li>издатель: Microsoftwindowsdesktop.</li> <li>предложение: windows-ent-cpc.</li> <li>sku: 21h1-ent-cpc-m365, 21h1-ent-cpc-os, 20h2-ent-cpc-m365, 20h2-ent-cpc-os, 20h1-ent-cpc-m365, 20h1-ent-cpc-os, 19h2-ent-cpc-os.</li></ul>|
+|imageDisplayName|String|Имя отображения образа ОС, которое вы закаповыватель.|
 |imageType|cloudPcProvisioningPolicyImageType|Тип изображения ОС (настраиваемый или галерейный) для предоставления на облачных ПК. Возможные значения: `gallery`, `custom`.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и обновленный `200 OK` [объект cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="examples"></a>Примеры
 
@@ -84,13 +84,9 @@ PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisio
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-  "displayName": "Display Name value",
-  "description": "Description value",
-  "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
-  "imageId": "Image ID value",
-  "imageDisplayName": "Image Display Name value",
-  "imageType": "custom"
+  "displayName": "HR provisioning policy",
+  "description": "Provisioning policy for India HR employees",
+  "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701b553"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -118,26 +114,11 @@ Content-Type: application/json
 
 ### <a name="response"></a>Отклик
 
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.cloudPcProvisioningPolicy"
 }
 -->
-
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.cloudPcProvisioningPolicy",
-  "id": "8931f750-f750-8931-50f7-318950f7ffff",
-  "displayName": "Display Name value",
-  "description": "Description value",
-  "onPremisesConnectionId": "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
-  "imageId": "Image ID value",
-  "imageDisplayName": "Image Display Name value",
-  "imageType": "custom"
-}
+HTTP/1.1 204 No Content
 ```

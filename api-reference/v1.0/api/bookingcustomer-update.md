@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: d1576887ff634aa955246e63c3f57b560fc263d3
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 23af89229a3280a725deb3c756e9e790dbccd5e5
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525169"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014133"
 ---
 # <a name="update-bookingcustomer"></a>Обновление bookingCustomer
 
@@ -29,7 +29,7 @@ ms.locfileid: "61525169"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /bookingBusinesses/{id}/customers/{id}
+PATCH /solutions/bookingBusinesses/{id}/customers/{id}
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|

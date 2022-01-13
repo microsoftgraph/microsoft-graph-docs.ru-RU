@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 320f2d35a56f182ff5b4f32cbe1ba4e4b957e409
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: a18e289f275a2bb6bfa4ddf9e71173927436eb25
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526677"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014245"
 ---
 # <a name="list-services"></a>Службы списка
 
@@ -29,7 +29,7 @@ ms.locfileid: "61526677"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /bookingBusinesses/{id}/services
+GET /solutions/bookingBusinesses/{id}/services
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает параметры $count и $expand [OData](/graph/query-parameters) для настройки ответа.
@@ -39,7 +39,7 @@ GET /bookingBusinesses/{id}/services
 |:----------|:----------|
 | Авторизация  | Bearer {код}. Обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [bookingService](../resources/bookingservice.md) в тексте ответа.
@@ -95,8 +95,6 @@ Content-type: application/json
                 "uniqueId": null,
                 "uniqueIdType": null,
                 "address": {
-                    "type": "home",
-                    "postOfficeBox": "",
                     "street": "4567 First Street",
                     "city": "Buffalo",
                     "state": "NY",
@@ -136,8 +134,6 @@ Content-type: application/json
                 "uniqueId": null,
                 "uniqueIdType": null,
                 "address": {
-                    "type": "home",
-                    "postOfficeBox": "",
                     "street": "4567 First Street",
                     "city": "Buffalo",
                     "state": "NY",
@@ -184,8 +180,6 @@ Content-type: application/json
                 "uniqueId": null,
                 "uniqueIdType": null,
                 "address": {
-                    "type": "home",
-                    "postOfficeBox": "",
                     "street": "4567 First Street",
                     "city": "Buffalo",
                     "state": "NY",

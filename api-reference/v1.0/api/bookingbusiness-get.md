@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 117994d1a678f2eaef22aee4fecfc678fe25bda3
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 828b8d316149aa462f33b6d0fce3a6d2ae886f9e
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526725"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014336"
 ---
 # <a name="get-bookingbusiness"></a>Get bookingBusiness
 
@@ -29,7 +29,7 @@ ms.locfileid: "61526725"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /bookingBusinesses/{id}
+GET /solutions/bookingBusinesses/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает параметры $count и $expand [OData](/graph/query-parameters) для настройки ответа.
