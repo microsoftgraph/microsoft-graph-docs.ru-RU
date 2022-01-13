@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 67661f92c323911886289227846a4aa104251d53
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 920be4a7ce84f6f3c1b5ce7ae073f7b3f712cb7f
+ms.sourcegitcommit: 54e19ec90dc5441e1b93f713889ddc831782789e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60993880"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61995965"
 ---
 # <a name="list-shifts"></a>Перечисление смен
 
@@ -27,7 +27,7 @@ ms.locfileid: "60993880"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Schedule.Read.All, Group.Read.All,Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Schedule.Read.All, Schedule.ReadWrite.All |
+|Приложение | Schedule.Read.All, Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ GET /teams/{teamId}/schedule/shifts
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {token}. Обязательный.  |
+| Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -55,7 +55,7 @@ GET /teams/{teamId}/schedule/shifts
 
 ## <a name="example"></a>Пример
 
-#### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 Ниже приводится пример запроса,  который получает все объекты переноса, которые имеют общую версию и черновик версии в период с 11 марта по 18 марта 2019 г.
 
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts?$filter=shar
 ---
 
 
-#### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа. 
 

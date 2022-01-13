@@ -3,12 +3,12 @@ title: Компонент People в Microsoft Graph Toolkit
 description: Вы можете использовать веб-компонент `mgt-people`, чтобы отображать группу людей или контактов с помощью фотографий и инициалов.
 ms.localizationpriority: medium
 author: nmetulev
-ms.openlocfilehash: 44c97680d85d06f5f65703f68f33845f41514278
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: f2f20a524575ab8f7d5ad19e35f29d581a46a0a7
+ms.sourcegitcommit: 54e19ec90dc5441e1b93f713889ddc831782789e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123407"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61995937"
 ---
 # <a name="people-component-in-the-microsoft-graph-toolkit"></a>Компонент People в Microsoft Graph Toolkit
 
@@ -35,8 +35,8 @@ ms.locfileid: "61123407"
 | group-id | groupId | Получает людей из определенного интерфейса Microsoft Graph по соответствующему идентификатору. |
 | user-ids | userIds | При наличии массива пользовательских `ids` Microsoft Graph компонент отображает этих пользователей.  |
 | people-queries | peopleQueries | При наличии массива запросов пользователей (имена, UPN, адреса электронной почты) компонент отображает этих пользователей. |
-| person-card | personCard | Перечисление для определения пользовательского действия, необходимого для активации всплывающей панели — `hover` или `click`. Значение по умолчанию: `none`. |
-| show-presence | showPresence | Логическое значение, определяющее, нужно ли отображать значок присутствия пользователя на изображении пользователя. |
+| person-card | personCard | Переумеление для определения действий пользователя, необходимых для активации панели вылетов , `hover` `click` или `none` . Значение по умолчанию: `hover`. |
+| show-presence | showPresence | A Boolean, чтобы определить, следует ли показывать значок присутствия человека на изображении человека. |
 | resource | resource | Ресурс, который требуется получить из Microsoft Graph (например, `/me/people`). |
 | scopes | scopes | Необязательный массив строк, если используется свойство либо область с разделителями-запятыми, при использовании атрибута. Эти области используются компонентом (с поддерживаемым поставщиком), чтобы убедиться в том, что пользователь дал согласие на нужное разрешение. |
 | version | version | Необязательная версия API, используемая при выполнении GET-запроса. Значение по умолчанию: `v1.0`.  |
@@ -95,7 +95,7 @@ mgt-people {
 
 | Конфигурация | Разрешение | API
 | --- | ---------- | ------- |
-| `groupId` set | User.Read.All, People.Read | [/groups/\${groupId}/members](/graph/api/group-list-members) |
+| `groupId` set | GroupMember.Read.All | [/groups/\${groupId}/members](/graph/api/group-list-members) |
 | `userIds` set | User.ReadBasic.All | [/users/${userId}](/graph/api/user-get) |
 | `peopleQueries` set | People.Read | [/me/people](/graph/api/user-list-people) |
 | `resource` set | Разрешения, указанные в `scopes` | Указанный в `resource` |
@@ -119,7 +119,7 @@ mgt-people {
 > [!NOTE]
 > По умолчанию компонент `mgt-people` использует компонент для отображения [`mgt-person`](./person.md) сведений о человеке. Компонент `mgt-person` автоматически загружает и кэшируется фотографию для каждого человека.
 
-Дополнительные сведения о настройке кэша см. в [caching.](../customize-components/cache.md)
+Сведения о настройке кэша см. в материале [Caching.](../customize-components/cache.md)
 ## <a name="extend-for-more-control"></a>Расширение для дополнительного управления
 
 В более сложных сценариях или настраиваемых пользовательских интерфейсах этот компонент предоставляет несколько методов `protected render*` для переопределения в расширениях компонента.

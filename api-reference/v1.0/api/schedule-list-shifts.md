@@ -5,12 +5,12 @@ author: akumar39
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: dbb7d9b164bee8cabee34f922dead3d40344c65f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6b5c0c82b89709f6dfe86b66087d0a5bc3430261
+ms.sourcegitcommit: 54e19ec90dc5441e1b93f713889ddc831782789e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61024428"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61995958"
 ---
 # <a name="list-shifts"></a>Перечисление смен
 
@@ -26,7 +26,7 @@ ms.locfileid: "61024428"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Schedule.Read.All, Group.Read.All,Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Schedule.Read.All, Schedule.ReadWrite.All |
+|Приложение | Schedule.Read.All, Schedule.ReadWrite.All |
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами.
 
@@ -45,7 +45,7 @@ GET /teams/{teamId}/schedule/shifts
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {token}. Обязательный.  |
+| Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -56,7 +56,7 @@ GET /teams/{teamId}/schedule/shifts
 
 ## <a name="example"></a>Пример
 
-#### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 Ниже приводится пример запроса,  который получает все объекты переноса, которые имеют общую версию и черновик версии в период с 11 марта по 18 марта 2019 г.
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts?$filter=shar
 ---
 
 
-#### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа. 
 

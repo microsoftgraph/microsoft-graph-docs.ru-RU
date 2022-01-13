@@ -2,15 +2,15 @@
 title: Тип ресурса shift
 description: Смена — это единица запланированных трудозатрат в расписании.
 author: nkramer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 2152c8c4f612c55e7523bbc2000170c4e982bd5f
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: ae5e89d2d483219157d5f2e82b051cee751b02d4
+ms.sourcegitcommit: 54e19ec90dc5441e1b93f713889ddc831782789e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50721161"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61995951"
 ---
 # <a name="shift-resource-type"></a>Тип ресурса shift
 
@@ -44,7 +44,7 @@ ms.locfileid: "50721161"
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
-Ниже представлено описание ресурса в формате JSON.
+Ниже указано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
