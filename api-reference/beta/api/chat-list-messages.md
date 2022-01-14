@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: de656d95776d41e9075c9c00ab6d19328e634bab
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 6a2ce5a2c92a2f2b09191976c5c3e496d1f2e44e
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61792164"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014322"
 ---
 # <a name="list-messages-in-a-chat"></a>Список сообщений в чате
 
@@ -48,16 +48,22 @@ GET /chats/{chat-id}/messages
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Вы можете использовать параметр запроса [$top](/graph/query-parameters#top-parameter) для управления количеством элементов в одном отклике. Максимальное значение `$top`: 50.
+Этот метод поддерживает указанные ниже [параметры запросов OData](/graph/query-parameters).
+
+| Имя      | Описание          |
+|:----------|:---------------------|
+| [$top](/graph/query-parameters#top-parameter)| Управляет количеством элементов в отклике. Максимальное значение `$top`: 50. |
+| [$orderBy](/graph/query-parameters#orderBy)  | В настоящее время поддерживает **LastModifiedDateTime (по умолчанию)** и **CreatedDateTime**. |
+
 Другие [параметры запроса OData](/graph/query-parameters) в настоящее время не поддерживаются.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -69,7 +75,7 @@ GET /chats/{chat-id}/messages
 
 ### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса. `$top=2` передается для получения двух сообщений.
+Ниже приведен пример запроса. `$top=2` передается для получения двух сообщений, а `$orderBy=createdDateTime` передается для сортировки сообщений с помощью createdDateTime.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -78,7 +84,7 @@ GET /chats/{chat-id}/messages
   "name": "get_allchatmessages_1"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages?$top=2
+GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages?$top=2&$orderBy=createdDateTime
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-allchatmessages-1-csharp-snippets.md)]

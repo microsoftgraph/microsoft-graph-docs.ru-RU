@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: c527b9c25a038e7440c4136b339bcc52b43b8958
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 2d2622fe78ffedbddf60ab990fb89293845bdd3e
+ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59049662"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62014308"
 ---
 # <a name="contact-resource-type"></a>Тип ресурса contact
 
@@ -56,7 +56,7 @@ ms.locfileid: "59049662"
 |categories|Коллекция String|Категории, связанные с контактом.|
 |changeKey|Строка|Указывает версию контакта. При каждом изменении контакта также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
 |children|Коллекция String|Имена детей контакта.|
-|companyName|String|Название компании контакта.|
+|CompanyName|String|Название компании контакта.|
 |createdDateTime|DateTimeOffset|Время создания контакта. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, полночь 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |department|String|Отдел контакта.|
 |displayName|String|Отображаемое имя контакта. Отображаемое имя можно указать в операции [создания](../api/user-post-contacts.md) или [обновления](../api/contact-update.md). Обратите внимание, что последующие обновления других свойств могут привести к тому, что автоматически созданное значение перезапишет указанное значение displayName. Чтобы сохранить существующее значение, всегда добавляйте его как displayName в операцию [обновления](../api/contact-update.md).|
@@ -66,7 +66,7 @@ ms.locfileid: "59049662"
 |givenName|String|Имя контакта.|
 |homeAddress|[PhysicalAddress](physicaladdress.md)|Домашний адрес контакта.|
 |homePhones|Коллекция String|Номера домашних телефонов контакта.|
-|id|String|Уникальный идентификатор контакта. Только для чтения.|
+|id|Строка|Уникальный идентификатор контакта. [!INCLUDE [outlook-beta-id](../../includes/outlook-immutable-id.md)] Только для чтения.|
 |imAddresses|Коллекция String|Адреса контакта для обмена мгновенными сообщениями.|
 |initials|String|Инициалы контакта.|
 |jobTitle|String|Должность контакта.|
@@ -98,7 +98,7 @@ ms.locfileid: "59049662"
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже этот ресурс представлен в формате JSON.
+Ниже указано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -176,7 +176,6 @@ ms.locfileid: "59049662"
 
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" }
 }
-
 ```
 
 ## <a name="see-also"></a>См. также
