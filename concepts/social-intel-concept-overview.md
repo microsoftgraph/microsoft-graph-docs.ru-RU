@@ -5,12 +5,12 @@ author: simonhult
 ms.localizationpriority: high
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 7769bbce057dd387bdc7494c98f069f6a4d06c9b
-ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
+ms.openlocfilehash: 10bffe31804048328eac1ab1e8f080a2ef3ed263
+ms.sourcegitcommit: 94741ff7f61f20a39dacfa6ce451a77ca02dd68a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60780865"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62047149"
 ---
 # <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Обзор социальной и рабочей аналитики в Microsoft Graph
 
