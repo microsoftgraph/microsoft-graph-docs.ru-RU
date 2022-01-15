@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса conversationMember
 description: Представляет пользователя в беседе.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: akjo
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 679ab696c0f5752d8e59a2cb9de560c11bcc4ca9
-ms.sourcegitcommit: 456ec9510807d05623c0ed1dd049c9676f53f56b
+ms.openlocfilehash: fd0a85bb14d6b205e81a47259dbdc7616fc86a9f
+ms.sourcegitcommit: 096bad7aaaa5d9b5ce698a524cb21f4070c7b4d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53060036"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62056339"
 ---
 # <a name="conversationmember-resource-type"></a>Тип ресурса conversationMember
 
@@ -19,7 +19,6 @@ ms.locfileid: "53060036"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет пользователя в [команде,](team.md) [канале или](channel.md) [чате.](chat.md)
-См. [также aadUserConversationMember](aaduserconversationmember.md).
 
 ## <a name="methods"></a>Методы
 
@@ -73,6 +72,14 @@ ms.locfileid: "53060036"
   "visibleHistoryStartDateTime": "String (timestamp)"
 }
 ```
+
+## <a name="see-also"></a>См. также
+
+- [aadUserConversationMember](aaduserconversationmember.md)
+- [SkypeForBusinessUserConversationMember](skypeForBusinessUserConversationMember.md)
+- [anonymousGuestConversationMember](anonymousGuestConversationMember.md)
+- [SkypeUserConversationMember](skypeUserConversationMember.md)
+- [MicrosoftAccountUserConversationMember](microsoftAccountUserConversationMember.md)
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

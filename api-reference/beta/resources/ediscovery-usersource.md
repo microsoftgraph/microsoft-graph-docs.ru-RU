@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса userSource
-description: Контейнер для почтового ящика хранителя и сайта OneDrive для бизнеса.
+description: Контейнер для почтового ящика хранителя и OneDrive для бизнеса сайта.
 author: mahage-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: f0d98ac894d3d60bed2bb249ef9daec707f6f7ba
-ms.sourcegitcommit: 3b583d7baa9ae81b796fd30bc24c65d26b2cdf43
+ms.openlocfilehash: 291a860b0e83f0b6103b4f9e104c5af71ed92e3d
+ms.sourcegitcommit: 096bad7aaaa5d9b5ce698a524cb21f4070c7b4d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50447538"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62056276"
 ---
 # <a name="usersource-resource-type"></a>Тип ресурса userSource
 
@@ -18,7 +18,7 @@ ms.locfileid: "50447538"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Контейнер для [почтового ящика хранителя](ediscovery-custodian.md) и сайта OneDrive для бизнеса.
+Контейнер для [почтового ящика](ediscovery-custodian.md) хранителя и OneDrive для бизнеса сайта.
 
 ## <a name="methods"></a>Методы
 
@@ -37,8 +37,9 @@ ms.locfileid: "50447538"
 |createdDateTime|DateTimeOffset|Дата и время создания **userSource**|
 |displayName|String|Имя отображения, связанное с почтовым ящиком и сайтом.|
 |email|String|Адрес электронной почты почтового ящика пользователя.|
-|id|String|ID **пользователяSource**. Это не ID фактической группы|
+|id|Строка|ID **пользователяSource**. Это не ID фактической группы|
 |includedSources|microsoft.graph.ediscovery.sourceType|Указывает, какие источники включены в эту группу. Возможные значения: `mailbox`, `site`.|
+|siteWebUrl|Строка|URL-адрес веб-OneDrive для бизнеса пользователя. Только для чтения.|
 
 ### <a name="sourcetype-values"></a>значения sourceType
 

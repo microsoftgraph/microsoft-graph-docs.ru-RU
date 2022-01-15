@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 1b930f741c7724a55f9904595de45cfa9874db02
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7d8b64ae0f1a34f927cfb93944cfa4a7d8770a9b
+ms.sourcegitcommit: 94741ff7f61f20a39dacfa6ce451a77ca02dd68a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61033718"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62047128"
 ---
 # <a name="restart-synchronizationjob"></a>Перезапуск синхронизацииJob
 
@@ -18,7 +18,7 @@ ms.locfileid: "61033718"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Перезапустите задание синхронизации, заставив его перепроцесизировать все объекты каталога. Необязательно очищает существующее состояние синхронизации и предыдущие ошибки.
+Перезапустите остановленное задание синхронизации, заставив его перепроцесизировать все объекты каталога. Необязательно очищает существующее состояние синхронизации и предыдущие ошибки.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,7 +27,7 @@ ms.locfileid: "61033718"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается. |
-|Для приложений                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All  | 
+|Приложение                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All  | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/restart
 |:---------------|:--------|:-----------|
 | Authorization  | string  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В теле запроса укажи объект JSON со следующим параметром.
 
@@ -55,7 +55,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/restart
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -97,7 +97,7 @@ Content-type: application/json
 ---
 
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 
 <!-- {

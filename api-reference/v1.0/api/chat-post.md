@@ -1,16 +1,16 @@
 ---
 title: Создание чата
 description: Создайте новый объект чата.
-author: bhartono
+author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a0d4eae41b485fea88f8073ed93eaeaefca69e3f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 241997a380ced1c0548dbad9db5728e19f440bdf
+ms.sourcegitcommit: 096bad7aaaa5d9b5ce698a524cb21f4070c7b4d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60993749"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62056290"
 ---
 # <a name="create-chat"></a>Создание чата
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "60993749"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Chat.Create, Chat.ReadWrite|
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений | Не поддерживается. |
+|Приложение | Chat.Create |
 
 ## <a name="http-request"></a>HTTP-запрос
 

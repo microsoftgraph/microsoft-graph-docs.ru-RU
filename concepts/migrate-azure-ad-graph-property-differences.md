@@ -4,12 +4,12 @@ description: Описывает различия свойств между ре�
 author: dkershaw10
 ms.localizationpriority: medium
 ms.prod: applications
-ms.openlocfilehash: fece47dfea3afd007ce148c2a13294b6a89e790d
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 3f80a54a3dd887293dff22f6ceb976b6d8c9e780
+ms.sourcegitcommit: 096bad7aaaa5d9b5ce698a524cb21f4070c7b4d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61077658"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62056325"
 ---
 # <a name="property-differences-between-azure-ad-graph-and-microsoft-graph"></a>Различия свойств между Azure AD Graph Microsoft Graph
 
@@ -21,11 +21,13 @@ ms.locfileid: "61077658"
 - [Метаданные Graph Microsoft](https://graph.microsoft.com/beta/$metadata)
 - [Метаданные microsoft Graph v1.0](https://graph.microsoft.com/v1.0/$metadata)
 
-Здесь выделяются различия свойств между ресурсами. Если свойство не отображается в этом списке, оно уже доступно в [версии v1.0](/graph/api/overview) Microsoft Graph, с точно таким же именем, как в Azure AD Graph.
+В этой статье освещаются различия свойств между ресурсами. Если свойство не отображается в этом списке, оно уже доступно в [версии v1.0](/graph/api/overview) Microsoft Graph, с точно таким же именем, как в Azure AD Graph.
 
-Так как пользователи и группы используются так часто, эти ресурсы отображаются в первую очередь.  Другие ресурсы отображаются в алфавитном порядке.
+Так как [пользовательские](#user-property-differences) и [групповые](#group-property-differences) ресурсы используются так часто, они перечислены в первую очередь. Другие ресурсы перечислены в алфавитном порядке.
 
 ## <a name="user-property-differences"></a>Различия свойств пользователя
+
+Ресурс Azure AD Graph  наследуется от **DirectoryObject;** он был  переименован пользователю в Microsoft Graph и наследуется из **directoryObject**. Вот различия свойств:
 
 |Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br>свойство|Комментарии|
 |---|---|---|
@@ -47,6 +49,8 @@ ms.locfileid: "61077658"
 
 ## <a name="group-property-differences"></a>Различия свойств группы
 
+Ресурс Azure AD Graph **группы** наследуется от **DirectoryObject;** он  был переименован в группу в Microsoft Graph и наследуется от **directoryObject**. Вот различия свойств:
+
 |Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
 | **dirSyncEnabled** | &nbsp; - &nbsp; **бета-версия onPremisesSyncEnabled** <br> v1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled** | |
@@ -55,6 +59,9 @@ ms.locfileid: "61077658"
 | **provisioningErrors** | &nbsp; - &nbsp; _бета-версия недоступна_ <br> v1.0 &nbsp; - &nbsp; _Недоступны_ | Это свойство и его сведения неподготовлены.  Однако в **onPremisesProvisioningErrors** можно найти новое свойство, описывающие все ошибки, связанные с Подключение AD. |
 
 ## <a name="application-property-differences"></a>Различия свойств приложений
+
+Ресурс приложения Azure AD Graph наследуется от **DirectoryObject;**  он был переименован в приложение в Microsoft Graph и наследуется от **directoryObject.**  Вот различия свойств:
+
 
 | Azure AD Graph <br>(v1.6) свойство | Microsoft Graph<br> свойство                                                                                                                          | Комментарии                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -79,6 +86,9 @@ ms.locfileid: "61077658"
 
 ## <a name="approleassignment-differences"></a>Различия appRoleAssignment
 
+Ресурс Azure AD Graph **AppRoleAssignment** наследуется от **DirectoryObject;** он был переименован в **appRoleAssignment** в Microsoft Graph и наследуется от **directoryObject**. Вот различия свойств:
+
+
 |Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
 | **creationTimestamp** | &nbsp; - &nbsp; **бета-созданиеTimestamp** <br> v1.0 &nbsp; - &nbsp; **createdDateTime** | |
@@ -86,11 +96,11 @@ ms.locfileid: "61077658"
 
 ## <a name="contact-property-differences"></a>Различия свойств контактов
 
-Ресурс Azure AD Graph Contact переименован в orgContact в Microsoft Graph.  Вот различия свойств:
+Ресурс Azure AD Graph **contact** наследуется от **DirectoryObject;** он был переименован в **orgContact** в Microsoft Graph и наследуется от **directoryObject**. Вот различия свойств:
 
 |Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
-| **город** | &nbsp; - &nbsp; **бета-адреса (город)** <br> v1.0 &nbsp; - &nbsp; **адреса (город)**  | Свойство city является частью коллекции ресурсов адресов. |
+| **city** | &nbsp; - &nbsp; **бета-адреса (город)** <br> v1.0 &nbsp; - &nbsp; **адреса (город)**  | Свойство city является частью коллекции ресурсов адресов. |
 | **country** | &nbsp; - &nbsp; **бета-адреса** &nbsp; **(countryOrRegion)**<br> v1.0 &nbsp; - &nbsp; **адреса** &nbsp; **(countryOrRegion)**  | Свойство countryOrRegion является частью коллекции ресурсов адресов. |
 | **dirSyncEnabled** | &nbsp; - &nbsp; **бета-версия onPremisesSyncEnabled** <br> v1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled**   | |
 | **facsimileTelephoneNumber** | &nbsp; - &nbsp; **бета-телефоны** &nbsp; **(businessFax)** <br> v1.0 &nbsp; - &nbsp; **телефоны** &nbsp; **(businessFax)** | Теперь часть коллекции телефонов, которая поддерживает мобильные, бизнес и businessFax. |
@@ -105,11 +115,17 @@ ms.locfileid: "61077658"
 
 ## <a name="contract-property-differences"></a>Различия свойств контрактов
 
+Ресурс Azure AD Graph  контракт наследуется от **DirectoryObject;** он  был переименован в контракт в Microsoft Graph и наследуется от **directoryObject**. Вот различия свойств:
+
+
 |Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
 | **customerContextId** | beta &nbsp; - &nbsp; **customerId** <br> v1.0 &nbsp; - &nbsp; **customerId**  |  |
 
 ## <a name="device-property-differences"></a>Различия свойств устройства
+
+Ресурс Azure AD Graph **устройства** наследуется от **DirectoryObject;** он  был переименован в устройство в Microsoft Graph и наследуется от **directoryObject**. Вот различия свойств:
+
 
 |Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
@@ -123,15 +139,27 @@ ms.locfileid: "61077658"
 | **dirSyncEnabled** |  &nbsp; - &nbsp; **бета-версия onPremisesSyncEnabled** <br> v1.0 &nbsp; - &nbsp; **onPremisesSyncEnabled** |  |
 | **lastDirSyncTime** |  &nbsp; - &nbsp; **бета-версия наPremisesLastSyncDateTime** <br> v1.0 &nbsp; - &nbsp; **onPremisesLastSyncDateTime** |  |
 
+## <a name="directoryobject-property-differences"></a>Различия свойств DirectoryObject
+
+Ресурс Azure AD Graph **DirectoryObject** переименован в **directoryObject** в Microsoft Graph. Изменения его свойств также будут видны в других ресурсах, унаследованных от **DirectoryObject.** Вот различия свойств:
+
+|Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
+|---|---|---|
+| **deletionTimestamp** | &nbsp; - &nbsp; **бета-версия deletedDateTime** <br> v1.0 &nbsp; - &nbsp; **deletedDateTime** | Хотя **удалениеTimestamp** было типом DateTime, **deletedDateTime** — это тип DateTimeOffset.  |
+| **objectId** | &nbsp; - &nbsp; **бета-версия** <br> v1.0 &nbsp; - &nbsp; **id** | Свойство **id** в Microsoft Graph наследуется от ресурса [сущности.](/graph/api/resources/entity) |
+| **objectType** | &nbsp; - &nbsp; *бета-версия недоступна* <br> v1.0 &nbsp; - &nbsp; *Недоступны* | Это свойство не используется в Microsoft Graph. Вместо этого microsoft Graph возвращает **свойство @odata.type,** но только для API, которые могут возвращать объекты разных типов или производные типы. Например, API членов группы Списка может возвращать участников, которые являются пользователями, группами, директорами [служб,](/graph/api/resources/serviceprincipal)организационными контактами [или](/graph/api/resources/orgcontact) [](/graph/api/group-list-members) [устройствами.](/graph/api/resources/device) [](/graph/api/resources/user) [](/graph/api/resources/group) Для пользователей **@odata.type** `#microsoft.graph.user` . |
+
 ## <a name="directoryobjectreference-property-differences"></a>Различия свойств DirectoryObjectReference
 
-Ресурс Azure AD Graph directoryObjectReference переименован в directoryObjectPartnerReference в Microsoft Graph.  Вот различия свойств:
+Ресурс Azure AD Graph **DirectoryObjectReference** наследуется от **DirectoryObject;** он был переименован в **directoryObjectPartnerReference** в Microsoft Graph и наследуется от **directoryObject**. Вот различия свойств:
 
 |Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
 | **externalContextId** | beta &nbsp; - &nbsp; **externalPartnerTenantId** <br> v1.0 &nbsp; - &nbsp; **externalPartnerTenantId** |  |
 
 ## <a name="domain-property-differences"></a>Различия свойств домена
+
+Ресурс Azure AD Graph **домен** был переименован в **домен** в Microsoft Graph. Вот различия свойств:
 
 |Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
@@ -141,6 +169,8 @@ ms.locfileid: "61077658"
 
 ## <a name="oauth2permissionsgrant-property-differences"></a>Различия свойств OAuth2PermissionsGrant
 
+Ресурс Azure AD Graph **OAuth2PermissionsGrant** переименован в **oAuth2PermissionsGrant** в Microsoft Graph. Вот различия свойств:
+
 |Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
 | **expiryTime** | beta &nbsp; - &nbsp; **expiryTime** <br> v1.0 &nbsp; - &nbsp; _Удален_ | Это свойство не используется и удаляется в Microsoft Graph v1.0. |
@@ -148,11 +178,11 @@ ms.locfileid: "61077658"
 
 ## <a name="policy-property-differences"></a>Различия свойств политики
 
-В microsoft Graph существуют типы политик (например tokenIssuancePolicy или tokenLifetimePolicy), а не тип общих ресурсов политики. Дополнительные сведения доступны в [обзоре политики.](/graph/api/resources/policy-overview)
+В microsoft Graph существуют типы политик (например **tokenIssuancePolicy** или **tokenLifetimePolicy),** а не тип общих ресурсов политики. Дополнительные сведения доступны в [обзоре политики.](/graph/api/resources/policy-overview)
 
 ## <a name="serviceendpoint-property-differences"></a>Различия свойств ServiceEndpoint
 
-Ресурс Azure AD Graph ServiceEndpoint переименован в конечную точку в Microsoft Graph.
+Ресурс Azure AD Graph **ServiceEndpoint** наследуется от **DirectoryObject;** он  был переименован в конечную точку в Microsoft Graph и наследуется от **directoryObject**. Вот различия свойств:
 
 |Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
@@ -161,6 +191,8 @@ ms.locfileid: "61077658"
 | **resourceId** | &nbsp; - &nbsp; **бета-провайдерResourceId**<br> v1.0 &nbsp; - &nbsp; **providerResourceId** | |
 
 ## <a name="serviceprincipal-property-differences"></a>Различия свойств ServicePrincipal
+
+Ресурс Azure AD Graph **ServicePrincipal** наследуется от **DirectoryObject;** он был переименован в **servicePrincipal** в Microsoft Graph и наследуется из **directoryObject**. Вот различия свойств:
 
 |Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
@@ -173,7 +205,7 @@ ms.locfileid: "61077658"
 
 ## <a name="tenantdetails-property-differences"></a>TenantDetails property differences
 
-Ресурс Azure AD Graph TenantDetails переименован в организацию в Microsoft Graph.  Вот различия свойств:
+Ресурс Azure AD Graph **TenantDetail** наследуется от **DirectoryObject;** он  был переименован в организацию в Microsoft Graph и наследуется от **directoryObject**. Вот различия свойств:
 
 |Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|
@@ -184,11 +216,11 @@ ms.locfileid: "61077658"
 
 ## <a name="trustedcasforpasswordlessauth-property-differences"></a>Различия свойств TrustedCasForPasswordlessAuth
 
-Ресурс Azure AD Graph TrustedCasForPasswordlessAuth переименован в [certificateBasedAuthConfiguration.](/graph/api/resources/certificatebasedauthconfiguration) Не существует различий в свойствах; однако существуют различия в типе ресурса **certificateAuthority,** используемом **свойством certificateAuthorities.**
+Ресурс Azure AD Graph **TrustedCasForPasswordlessAuth** переименован в [certificateBasedAuthConfiguration.](/graph/api/resources/certificatebasedauthconfiguration) Не существует различий в свойствах; однако существуют различия в типе ресурса **certificateAuthority,** используемом **свойством certificateAuthorities.**
 
-### <a name="certificateauthorityinformation"></a>CertificateAuthorityInformation
+### <a name="certificateauthorityinformation-property-differences"></a>Различия свойств CertificateAuthorityInformation
 
-Azure AD Graph CertificateAuthorityInformation переименована в **certificateAuthority** в Microsoft Graph. Ниже приводится различие свойств.
+Azure AD Graph **CertificateAuthorityInformation** переименована в **certificateAuthority** в Microsoft Graph. Ниже приводится различие свойств.
 
 |Azure AD Graph <br>(v1.6) свойство |Microsoft Graph<br> свойство|Комментарии|
 |---|---|---|

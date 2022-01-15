@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 7ab4aae4ce9bfddfb0e588b95e11e030bf7639a1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5793ba708808b22abdbfc3b2285beded115f6dc6
+ms.sourcegitcommit: 096bad7aaaa5d9b5ce698a524cb21f4070c7b4d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60986984"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62056311"
 ---
 # <a name="list-custodian-usersources"></a>Список хранителя userSources
 
@@ -51,7 +51,7 @@ GET /compliance/ediscovery/cases/{caseId}/custodians/{custodianId}/userSources
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -120,6 +120,7 @@ Content-Type: application/json
             "id": "46384443-4137-3032-3437-363939433735",
             "email": "megan@contoso.com",
             "includedSources": "mailbox,site",
+            "siteWebUrl": "https://contoso.sharepoint.com/personal/megan_contoso_com/",
             "createdBy": {
                 "user": {
                     "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",

@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 954a38b88f659c7049dfca162e292fa5f035090a
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 8c78950129ccb0c469b505970c696a4b57236e9d
+ms.sourcegitcommit: 94741ff7f61f20a39dacfa6ce451a77ca02dd68a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60946890"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62047107"
 ---
 # <a name="update-settings"></a>Обновление параметров
 
@@ -23,7 +23,7 @@ ms.locfileid: "60946890"
 Кроме того, можно отключать несколько пользователей от Delve и отключить их вклад в доступ к контенту для всей организации с помощью пакетного запроса.
 Дополнительные дополнительные информации см. в серии [JSON.](/graph/json-batching)
 
->**Важно.** Только члены группы [ролей](https://support.office.com/article/permissions-in-the-office-365-security-compliance-center-d10608af-7934-490a-818e-e68f17d0e9c1?ui=en-US&rs=en-US&ad=US) управления организацией могут обновлять несколько пользователей. 
+>**Важно.** Только члены группы [ролей](/exchange/permissions/permissions?view=exchserver-2019#role-groups) управления организацией могут обновлять несколько пользователей. 
 
 
 
@@ -56,7 +56,7 @@ PATCH /users/{id | userPrincipalName}/settings/
 | Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 

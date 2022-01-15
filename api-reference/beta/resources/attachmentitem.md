@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса attachmentItem
-description: Представляет атрибуты вложенного элемента.
-localization_priority: Normal
+description: Представляет атрибуты элемента, который необходимо прикрепить.
+ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: a469ff035b63c16b422a23d4ffad91dbc361157f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 236e2ed7cb26f0c8c5cd3e4ed086ab58f77087d6
+ms.sourcegitcommit: 94741ff7f61f20a39dacfa6ce451a77ca02dd68a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50130292"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "62047236"
 ---
 # <a name="attachmentitem-resource-type"></a>Тип ресурса attachmentItem
 
@@ -18,16 +18,17 @@ ms.locfileid: "50130292"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет атрибуты вложенного элемента.
+Представляет атрибуты элемента, который необходимо прикрепить.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|attachmentType|Строка| Тип вложения. Возможные значения: `file`, `item`, `reference`. Обязательное.|
-|contentType|String|Характер данных во вложении. Необязательный параметр.|
-|isInline|Boolean|Значение `true`, если вложение является встроенным. В противном случае — значение `false`. Необязательный параметр.|
-|name|String|Отображаемое имя вложения. Это может быть описательная строка, которая не должна быть фактическим именем файла. Обязательный элемент.|
+|attachmentType|String| Тип вложения. Возможные значения: `file`, `item`, `reference`. Обязательное.|
+|contentId|String| CiD или Content-Id вложения для ссылок в случае вложений в строке с помощью тега `<img src="cid:contentId">` в HTML-сообщениях. Необязательно.|
+|contentType|String|Характер данных в приложении. Необязательно.|
+|isInline|Boolean|Значение `true`, если вложение является встроенным. В противном случае — значение `false`. Необязательно.|
+|name|String|Отображаемое имя вложения. Это может быть описательная строка и не должна быть фактическим именем файла. Обязательное.|
 |size|Int64|Размер вложения в байтах. Обязательный элемент.|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -37,6 +38,7 @@ ms.locfileid: "50130292"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+    "contentId",
     "contentType",
     "isInline"
   ],
@@ -47,6 +49,7 @@ ms.locfileid: "50130292"
 ```json
 {
   "attachmentType": "String",
+  "contentId": "String",
   "contentType": "String",
   "isInline": true,
   "name": "String",
