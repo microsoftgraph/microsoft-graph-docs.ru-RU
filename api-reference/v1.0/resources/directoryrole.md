@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 3effb90d2ddeffccd59de35b04295fc83b86e5f8
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 051278a83d0d45a87ec397ca3c7fdf2fb80b1a24
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59089748"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072665"
 ---
 # <a name="directoryrole-resource-type"></a>Тип ресурса directoryRole
 
@@ -38,15 +38,15 @@ ms.locfileid: "59089748"
 ## <a name="properties"></a>Свойства
 | Свойство   | Тип | Описание |
 |:---------------|:--------|:----------|
-|description|String|Описание роли каталога. Только для чтения. |
-|displayName|Строка|Отображаемое имя роли каталога. Только для чтения. |
-|id|Строка|Уникальный идентификатор роли каталога. Наследуется из [directoryObject](directoryobject.md). Ключ, значение null не допускается, только для чтения.|
-|roleTemplateId|String| Свойство **id** ресурса [directoryRoleTemplate](directoryroletemplate.md), определяющего значения свойств для этой роли. При активации роли каталога на клиенте следует указать свойство с помощью операции POST. После активации роли каталога свойство доступно только для чтения. |
+|description|Строка|Описание роли каталога. Только для чтения. Поддерживает `$filter` (`eq`), `$search`, `$select`. |
+|displayName|Строка|Отображаемое имя роли каталога. Только для чтения. Поддерживает `$filter` (`eq`), `$search`, `$select`. |
+|id|String|Уникальный идентификатор роли каталога. Наследуется из [directoryObject](directoryobject.md). Ключ, значение null не допускается, только для чтения. Поддерживает `$filter` (`eq`), `$select`.|
+|roleTemplateId|String| Свойство **id** ресурса [directoryRoleTemplate](directoryroletemplate.md), определяющего значения свойств для этой роли. При активации роли каталога на клиенте следует указать свойство с помощью операции POST. После активации роли каталога свойство доступно только для чтения. Поддерживает `$filter` (`eq`), `$select`. |
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип |Описание|
 |:---------------|:--------|:----------|
-|members|Коллекция [directoryObject](directoryobject.md)|Пользователи, которые относятся к членам этой роли каталога. Методы HTTP: GET, POST, DELETE. Только для чтения. Допускается значение null.|
+|members|Коллекция [directoryObject](directoryobject.md)|Пользователи, которые относятся к членам этой роли каталога. Методы HTTP: GET, POST, DELETE. Только для чтения. Допускается значение null. Поддерживает `$expand`.|
 |scopedMembers|Коллекция [scopedRoleMembership](scopedrolemembership.md)| Участники роли каталога, относящихся к области [административных единиц](administrativeunit.md). Только для чтения. Допускается значение NULL.|
 
 ## <a name="json-representation"></a>Представление JSON

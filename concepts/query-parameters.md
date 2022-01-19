@@ -4,12 +4,12 @@ description: В Microsoft Graph предусмотрены необязател�
 author: mumbi-o
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 4e2c0cc59f47e02b7bc9a1f0496bbbd06f1ffe4a
-ms.sourcegitcommit: 1cf7a82df17afc6291e2c93d8b2c277bf3382e6a
+ms.openlocfilehash: 358fa02a09c1ded92fd86596b634d59783b2ee16
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61130208"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072063"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Настройка ответов с помощью параметров запроса
 
@@ -97,7 +97,8 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet
 GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 ```
 
-Параметр запроса `$count` поддерживается для таких коллекций ресурсов и их связей, которые являются производными от [directoryObject](/graph/api/resources/directoryobject), и только в [расширенных запросах](/graph/aad-advanced-queries).
+Параметр запроса `$count` поддерживается для коллекций ресурсов и их связей, производных от [directoryObject](/graph/api/resources/directoryobject), причем только в [расширенных запросах](/graph/aad-advanced-queries):
+- [administrativeUnit](/graph/api/resources/administrativeunit)
 - [application](/graph/api/resources/application)
 - [orgContact](/graph/api/resources/orgcontact)
 - [device](/graph/api/resources/device)
@@ -143,11 +144,11 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startsWith(displayName,'J')
 
 | Тип оператора | Оператор |
 | --- | --- |
-| Операторы равенства | <ul><li> равно `eq` </li><li> не равно `ne`</li><li> Отрицание `not`</li><li> в `in`</li></ul> |
-| Операторы отношения | <ul><li> меньше `lt` </li><li> больше `gt`</li><li> меньше или равно `le`</li><li> больше или равно `ge`</li></ul> |
-| Лямбда-операторы | <ul><li> любой `any` </li><li> все `all`</li></ul>|
-| Условные операторы | <ul><li> и `and` </li><li> или `or`</li> |
-| Функции | <ul><li> Начинается с `startsWith` </li><li> Заканчивается на `endsWith`</li><li> Содержит `contains`</li></ul>|
+| Операторы равенства | <ul><li> Равно (`eq`) </li><li> Не равно (`ne`)</li><li> Логическое отрицание (`not`)</li><li> В (`in`)</li></ul> |
+| Операторы отношения | <ul><li> Меньше (`lt`) </li><li> Больше (`gt`)</li><li> Меньше или равно (`le`)</li><li> Больше или равно (`ge`)</li></ul> |
+| Лямбда-операторы | <ul><li> Любой (`any`) </li><li> Все (`all`)</li></ul>|
+| Условные операторы | <ul><li> И (`and`) </li><li> Или (`or`)</li> |
+| Functions | <ul><li> Начинается с (`startsWith`) </li><li> Оканчивается на (`endsWith`)</li><li> Содержит (`contains`)</li></ul>|
 
 
 > **Примечание.** Поддержка этих операторов различается для разных сущностей. Некоторые свойства поддерживают `$filter` только в [расширенных запросах](/graph/aad-advanced-queries). Дополнительные сведения см. в документации по конкретным сущностям.
@@ -205,8 +206,7 @@ ConsistencyLevel: eventual
 | Получение всех сообщений с определенного адреса, полученных вошедшим пользователем. | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) `../me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'` |
 | Получение всех сообщений, полученных вошедшим пользователем в апреле 2017 г. | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) `../me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01` |
 | Получение всех непрочитанных сообщений в папке "Входящие" вошедшего пользователя. | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) `../me/mailFolders/inbox/messages?$filter=isRead eq false` |
-| Получение всех пользователей в отделах розничной торговли и продаж. | 
-  [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3Ddepartment%20in%20('Retail'%2C%20'Sales')&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com) `../users?$filter=department in ('Retail', 'Sales')`| 
+| Получение всех пользователей в отделах розничной торговли и продаж. | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3Ddepartment%20in%20('Retail'%2C%20'Sales')&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com) `../users?$filter=department in ('Retail', 'Sales')`| 
 | Перечисление пользователей с определенным планом обслуживания,находящимся в приостановленном состоянии. | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DassignedPlans%2Fany(a%3Aa%2FservicePlanId%20eq%202e2ddb96-6af9-4b1d-a3f0-d6ecfd22edb2%20and%20a%2FcapabilityStatus%20eq%20'Suspended')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=assignedPlans/any(a:a/servicePlanId eq 2e2ddb96-6af9-4b1d-a3f0-d6ecfd22edb2 and a/capabilityStatus eq 'Suspended')&$count=true`. Это [расширенный запрос](/graph/aad-advanced-queries). |
 | Перечисление всех групп, не входящих в Microsoft 365, в организации. | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=groups%3F%24filter%3DNOT%20groupTypes%2Fany(c%3Ac%20eq%20'Unified')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../groups?$filter=NOT groupTypes/any(c:c eq 'Unified')&$count=true`. Это [расширенный запрос](/graph/aad-advanced-queries). |
 | Перечисление всех пользователей, у которых название компании не определено (т. е. не является значением `null`) или равно Microsoft. | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DcompanyName%20ne%20null%20and%20NOT(companyName%20eq%20'Microsoft')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=companyName ne null and NOT(companyName eq 'Microsoft')&$count=true`. Это [расширенный запрос](/graph/aad-advanced-queries). |
