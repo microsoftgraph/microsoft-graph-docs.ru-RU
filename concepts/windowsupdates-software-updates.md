@@ -5,12 +5,12 @@ author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: conceptualPageType
-ms.openlocfilehash: 47347e9d476b2a8c73a04d84ab83298140da001f
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 3f3dd0a1da1c6426c8415fe3c6f37767d1613627
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61854715"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072238"
 ---
 # <a name="software-updates-with-the-windows-update-for-business-deployment-service"></a>Обновления программного обеспечения с помощью Windows службы развертывания для бизнеса
 
@@ -26,7 +26,7 @@ ms.locfileid: "61854715"
 
 Фактически служба развертывания в настоящее время развертывает только обновления функций и обновления качества безопасности, как это определено в каталоге.  В настоящее время служба не развертывает обновления качества без обеспечения безопасности или обновления драйвера.
 
-Дополнительные дополнительные Windows 10 обновления и обслуживание см. в кратком руководстве [по Windows как услуга.](https://docs.microsoft.com/windows/deployment/update/waas-quick-start)
+Дополнительные дополнительные Windows 10 обновления и обслуживание см. в кратком руководстве [по Windows как услуга.](/windows/deployment/update/waas-quick-start)
 
 ## <a name="identifying-updates-for-deployment"></a>Определение обновлений для развертывания
 
@@ -41,7 +41,7 @@ ms.locfileid: "61854715"
 
 В каталоге, предоставленном службой развертывания Windows для бизнеса, эти обновления объединяются в одну запись.
 
-| Отображаемое имя                                           | Type                                                     |
+| Отображаемое имя                                           | Тип                                                     |
 |--------------------------------------------------------|----------------------------------------------------------|
 | 03.09.2021 - 2021.03 B Обновления безопасности для Windows 10 | microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry |
 

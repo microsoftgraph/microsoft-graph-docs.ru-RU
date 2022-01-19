@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса directoryRole
 description: Представляет роль каталога Azure AD. Роли каталога Azure AD также известны как *роли администратора*.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 701920b532e0c7003e624466c2d8d0614f47989f
-ms.sourcegitcommit: d0d2d17a31cbcb01b1ae18bd6a18c39d7077069a
+ms.openlocfilehash: 012dd2dd0eb703e962e75156760322c15e72c6a0
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53118702"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072673"
 ---
 # <a name="directoryrole-resource-type"></a>Тип ресурса directoryRole
 
@@ -36,22 +36,22 @@ ms.locfileid: "53118702"
 |[Список членов](../api/directoryrole-list-members.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей, которые относятся к членам роли каталога, из свойства навигации members.|
 |[Удаление члена](../api/directoryrole-delete-member.md) |[directoryObject](directoryobject.md)| Удаление ресурса user из роли каталога.|
 |[Активация directoryRole](../api/directoryrole-post-directoryroles.md) |[directoryRole](directoryrole.md) | Активация роли каталога.|
-|[Список scopeMembers](../api/directoryrole-list-scopedmembers.md) |Коллекция [scopedRoleMembership](scopedrolemembership.md)| Список членов этой роли каталога, которые [](administrativeunit.md)являются административными единицами, с помощью коллекции ресурсов scopedRoleMembership.|
+|[Список scopeMembers](../api/directoryrole-list-scopedmembers.md) |Коллекция [scopedRoleMembership](scopedrolemembership.md)| Перечисление участников этой роли каталога, относящихся к области [административных единиц](administrativeunit.md), с помощью коллекции ресурсов scopedRoleMembership.|
 |[delta](../api/directoryrole-delta.md)|Коллекция объектов directoryRole| Получение добавочных изменений для ролей каталога. |
 
 ## <a name="properties"></a>Свойства
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|description|String|Описание роли каталога. Только для чтения. |
-|displayName|Строка|Отображаемое имя роли каталога. Только для чтения. |
-|id|Строка|Уникальный идентификатор роли каталога. Наследуется из [directoryObject](directoryobject.md). Ключ, значение null не допускается, только для чтения.|
-|roleTemplateId|String| Свойство **id** ресурса [directoryRoleTemplate](directoryroletemplate.md), определяющего значения свойств для этой роли. При активации роли каталога на клиенте следует указать свойство с помощью операции POST. После активации роли каталога свойство доступно только для чтения. |
+|description|Строка|Описание роли каталога. Только для чтения. Supports `$filter` ( `eq` ), `$search` `$select` .|
+|displayName|String|Отображаемое имя роли каталога. Только для чтения. Supports `$filter` ( `eq` ), `$search` `$select` . |
+|id|String|Уникальный идентификатор роли каталога. Наследуется из [directoryObject](directoryobject.md). Ключ, значение null не допускается, только для чтения. Поддерживает `$filter` `eq` (), `$select` .|
+|roleTemplateId|String| Свойство **id** ресурса [directoryRoleTemplate](directoryroletemplate.md), определяющего значения свойств для этой роли. При активации роли каталога на клиенте следует указать свойство с помощью операции POST. После активации роли каталога свойство доступно только для чтения. Поддерживает `$filter` `eq` (), `$select` . |
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип |Описание|
 |:---------------|:--------|:----------|
-|members|Коллекция [directoryObject](directoryobject.md)|Пользователи, которые относятся к членам этой роли каталога. Методы HTTP: GET, POST, DELETE. Только для чтения. Допускается значение null.|
-|scopedMembers|Коллекция [scopedRoleMembership](scopedrolemembership.md)| Члены этой роли каталога, которые имеют область применения к [административным единицам.](administrativeunit.md) Только для чтения. Допускается значение null.|
+|members|Коллекция [directoryObject](directoryobject.md)|Пользователи, которые относятся к членам этой роли каталога. Методы HTTP: GET, POST, DELETE. Только для чтения. Допускается значение null. Поддерживает `$expand`.|
+|scopedMembers|Коллекция [scopedRoleMembership](scopedrolemembership.md)| Участники роли каталога, относящихся к области [административных единиц](administrativeunit.md). Только для чтения. Допускается значение NULL.|
 
 ## <a name="json-representation"></a>Представление JSON
 

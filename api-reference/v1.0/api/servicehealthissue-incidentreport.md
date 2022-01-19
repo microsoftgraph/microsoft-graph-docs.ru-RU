@@ -5,19 +5,19 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: b14b8deba65ac1aefba9d5af3d4ae1fd3e48b7a5
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 830323ea57d7932d0f8d95750e5d217d892c10a8
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59113943"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072588"
 ---
 # <a name="servicehealthissue-incidentreport"></a>serviceHealthIssue: incidentReport
 Пространство имен: microsoft.graph
 
-Предосмотрить документ по проверке после инцидента (PIR) указанной проблемы службы для клиента.
+Предосмотрить документ по проверке после инцидента (PIR) указанной проблемы службы для клиента. 
 
-Операция возвращает ошибку, если указанная проблема не существует для клиента.
+Проблема только со статусом указывает, что для проблемы существует документ `PostIncidentReviewPublished` PIR. Операция возвращает ошибку, если указанная проблема не существует для клиента или если для проблемы не существует документа PIR.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "59113943"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|ServiceHealth.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|ServiceHealth.Read.All|
+|Приложение|ServiceHealth.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,9 +41,9 @@ GET /admin/serviceAnnouncement/issues/{serviceHealthIssueId}/incidentReport
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

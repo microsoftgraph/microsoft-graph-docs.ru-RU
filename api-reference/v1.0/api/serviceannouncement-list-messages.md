@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2964bd3a0bb243030051c4b745117fb7d9ce5570
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6e8448e1aaf56ee0e251919d546d7d41acbfd48a
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61013046"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072084"
 ---
 # <a name="list-serviceannouncement-messages"></a>List serviceAnnouncement messages
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "61013046"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|ServiceMessage.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|ServiceMessage.Read.All|
+|Приложение|ServiceMessage.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,12 +46,12 @@ GET /admin/serviceAnnouncement/messages
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [serviceUpdateMessage](../resources/serviceupdatemessage.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию объектов `200 OK` [serviceUpdateMessage](../resources/serviceupdatemessage.md) в тексте отклика. Ответ paginated и каждая страница содержит 100 объектов.
 
 ## <a name="example"></a>Пример
 
@@ -105,6 +105,7 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#admin/serviceAnnouncement/messages",
+  "@odata.nextLink": "https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/messages?$skip=100",
   "value": [
     {
       "startDateTime": "2019-02-01T18:51:00Z",

@@ -3,12 +3,12 @@ title: Национальные облачные развертывания
 description: В дополнение к нашей глобальной сети центров обработки данных облачные службы Майкрософт доступны в трех отдельных национальных облачных службах.
 author: arpitha-dhanapathi
 ms.localizationpriority: medium
-ms.openlocfilehash: 9ee8d310017162035b8af5ea40c21f35e80d03a5
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: 28e8e422d121651787dca2f4adf0a153baed072a
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61390713"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072532"
 ---
 # <a name="national-cloud-deployments"></a>Национальные облачные развертывания
 
@@ -71,8 +71,9 @@ ms.locfileid: "61390713"
 
 Следующие функции Microsoft Graph доступны в конечной точке во всех национальных облачных развертываниях, за исключением `/v1.0` отмеченных.
 
-| Функции Graph Microsoft | Microsoft Cloud for US Government | Microsoft Cloud China управляется 21Vianet | Microsoft Cloud для Германии |
+| Функции Graph Microsoft | Microsoft Cloud for US Government | Microsoft Cloud China под управлением 21Vianet | Microsoft Cloud для Германии |
 | ------------------------ | --------------------------------- | ------------------------------------------ | ----------------------- |
+| Проверки доступа | ✔ | ✔ | ➖ |
 | Приложения | ✔ | ➖ | ➖ |
 | Уведомления об изменениях (веб-перехватчики) | ✔ | ✔ | ✔\* |
 | Разностный запрос | ✔ | ✔ | ➖ |
@@ -95,7 +96,7 @@ ms.locfileid: "61390713"
 | Teams | ✔ | ✔ | ✔ |
 | Пользователи | ✔ | ✔ | ✔ |
 
-Следующие функции Microsoft Graph доступны в предварительном просмотре (на конечной точке) в Microsoft Cloud China и Microsoft Cloud Germany (конечные точки V1.0 для этих функций доступны только в `/beta` Microsoft Cloud for US Government):
+Следующие функции Microsoft Graph доступны в предварительной версии (на конечной точке) в Microsoft Cloud China и Microsoft Cloud Germany (конечные точки v1.0 для этих функций доступны только в `/beta` Microsoft Cloud for US Government):
 
 * Контакты организации
 * Приложения

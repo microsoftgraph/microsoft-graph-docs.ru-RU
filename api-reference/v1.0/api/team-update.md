@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8fc77ed9dedb0c0a2ae9206510ecafbb130d989f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7caf3235af94b11469f6cdd17c30d758c8c094ef
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60988469"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072329"
 ---
 # <a name="update-team"></a>Обновление объекта команды
 
@@ -30,7 +30,7 @@ ms.locfileid: "60988469"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Application | TeamSettings.ReadWrite.Group *, TeamSettings.ReadWrite.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc). Разрешения, отмеченные **, не используются и не должны использоваться.
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). Разрешения, отмеченные **, не используются и не должны использоваться.
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
@@ -46,7 +46,7 @@ PATCH /teams/{team-id}
 | Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса поставляют представление JSON объекта [группы.](../resources/team.md)
 
 ## <a name="response"></a>Отклик
@@ -121,4 +121,3 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
-

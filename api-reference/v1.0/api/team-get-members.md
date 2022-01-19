@@ -5,12 +5,12 @@ author: akjo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cb51ea3407dba2b1155837508ba3442d9ce3d4b5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4f97bf36ade7d546d520be9325acd140d5c79f2a
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61027068"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072707"
 ---
 # <a name="get-member-of-team"></a>Получение участника команды
 
@@ -28,7 +28,7 @@ ms.locfileid: "61027068"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение| TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 > [!NOTE]
 > Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).
@@ -49,7 +49,7 @@ GET /teams/{team-id}/members/{membership-id}
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -137,4 +137,3 @@ Content-type: application/json
 ## <a name="see-also"></a>Дополнительные материалы
 
 - [Получение участника канала](channel-get-members.md)
-

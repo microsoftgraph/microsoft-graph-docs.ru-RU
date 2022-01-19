@@ -5,12 +5,12 @@ author: payiAzure
 ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 22316a479f312b2e7364b4f2bef97b34b779191c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 765769ae610ccdde3440737be9219b45ffcf8311
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61014264"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072644"
 ---
 # <a name="list-issues"></a>Проблемы со списком
 Пространство имен: microsoft.graph
@@ -28,7 +28,7 @@ ms.locfileid: "61014264"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|ServiceHealth.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|ServiceHealth.Read.All|
+|Приложение|ServiceHealth.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,12 +48,12 @@ GET /admin/serviceAnnouncement/issues
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [serviceHealthIssue](../resources/servicehealthissue.md) в тексте ответа.
+В случае успешной работы этот метод возвращает код ответа и коллекцию объектов `200 OK` [serviceHealthIssue](../resources/servicehealthissue.md) в тексте ответа. Ответ paginated и каждая страница содержит 100 объектов.
 
 ## <a name="example"></a>Пример
 
@@ -107,6 +107,7 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/serviceAnnouncement/issues",
+  "@odata.nextLink": "https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues?$skip=100",
   "value": [
     {
       "startDateTime": "2020-11-13T21:00:00Z",

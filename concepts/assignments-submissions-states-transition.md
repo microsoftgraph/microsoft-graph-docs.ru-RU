@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 97e75c7ef87d47c0359d6b8d6a5e5db2bb21a518
-ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
+ms.openlocfilehash: 456c2c8351521146f7160d65b6b0d2dff37d31dc
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61647009"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072070"
 ---
 # <a name="states-transitions-and-limitations-for-assignments-and-submissions-in-microsoft-graph"></a>Состояния, переходы и ограничения для назначений и представлений в Microsoft Graph
 
@@ -23,7 +23,7 @@ ms.locfileid: "61647009"
 | Состояние | Описание | Вызов API REST |
 |:--|:--|:--|
 | Draft | Начальный статус, когда новое назначение создается или копируется из существующего назначения. | `POST /education/classes/{id}/assignments` |
-| Published | Состояние фоновой обработки при распределении назначения каждому назначенного учащемуся. | `POST /education/classes/{id}/assignments/{id}/publish` |
+| Опубликовано. | Состояние фоновой обработки при распределении назначения каждому назначенного учащемуся. | `POST /education/classes/{id}/assignments/{id}/publish` |
 | Scheduled | Состояние, когда учитель заплановал публикацию задания в будущем. | `PATCH /education/classes/{id}/assignments/{id}`<br/>`POST /education/classes/{id}/assignments/{id}/publish` |
 | Назначенное | После завершения публикации назначение перемещается в назначенное состояние и доступно для учащихся. | `POST /education/classes/{id}/assignments/{id}/publish` |
 | Pending | Состояние фоновой обработки при копировании нового назначения из существующего. | `POST /education/classes/{id}/assignments/{id}/copy`<br/>`PATCH /education/classes/{id}/assignments/{id}` |
@@ -39,12 +39,12 @@ ms.locfileid: "61647009"
 | Текущее состояние назначения | Действие | Новое состояние |
 |:--|:--|:--|
 | Draft | Учитель запланировать назначение | Scheduled |
-| Draft | Публикация | Published |
+| Draft | Публикация | Опубликовано. |
 | Draft | Отредактирован | Draft |
 | Draft | Отбрасывается | | 
-| Published | Публикация завершена | Назначенное |
-| Published | Отбрасывается | |
-| Scheduled | Дата достижения срока | Published |
+| Опубликовано. | Публикация завершена | Назначенное |
+| Опубликовано. | Отбрасывается | |
+| Scheduled | Дата достижения срока | Опубликовано. |
 | Scheduled | Отмена расписания | Draft |
 | Scheduled | Перенос | Scheduled |
 | Назначенное | Отбрасывается | |
@@ -118,4 +118,4 @@ ms.locfileid: "61647009"
 
 * Максимальное количество назначений и ресурсов отправки — 10 для преподавателя и плюс 10 для учащегося.
 * Максимальный допустимый размер ресурсов — 50 МБ в целом или 10 ресурсов.
-* Применяются ограничения регулирования; подробные сведения см. в Graph руководства по [регулированием.](https://docs.microsoft.com/graph/throttling)
+* Применяются ограничения регулирования; подробные сведения см. в Graph руководства по [регулированием.](/graph/throttling)

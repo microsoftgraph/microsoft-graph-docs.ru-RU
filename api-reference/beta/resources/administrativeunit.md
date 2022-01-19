@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: DougKirschner
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: 1dc8844506a7610f6f52b84cfc8abaf4f00d7182
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: 3f9e2c8df4d7f633e42997b4e1e5bb06ec8f7baf
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61322123"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072113"
 ---
 # <a name="administrativeunit-resource-type"></a>тип ресурса administrativeUnit
 
@@ -34,10 +34,10 @@ ms.locfileid: "61322123"
 | Метод   | Возвращаемый тип | Описание |
 |:---------------|:--------|:----------|
 |[Создание](../api/administrativeunit-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | Создание нового административного подразделения.|
-|[Перечисление](../api/administrativeunit-list.md) | [коллекция administrativeUnit](administrativeunit.md) |Список свойств всех административных объектов.|
+|[Список](../api/administrativeunit-list.md) | [коллекция administrativeUnit](administrativeunit.md) |Список свойств всех административных объектов.|
 |[Получение](../api/administrativeunit-get.md); | [administrativeUnit](administrativeunit.md) |Чтение свойств и связей определенного объекта administrativeUnit.|
 |[Обновление](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)    |Обновление объекта administrativeUnit. |
-|[удаление](../api/administrativeunit-delete.md); | Нет |Удаление объекта administrativeUnit. |
+|[Удаление](../api/administrativeunit-delete.md) | Нет |Удаление объекта administrativeUnit. |
 |[Получение дельты](../api/administrativeunit-delta.md)|[administrativeUnit](administrativeunit.md)|Создайте заново созданные, обновленные или удаленные **административные** подразделения, не выполняя полное чтение всей коллекции ресурсов.|
 |[Добавить участника](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| Добавление участника (пользователя или группы).|
 |[Перечисление участников](../api/administrativeunit-list-members.md) |Коллекция [directoryObject](directoryobject.md)| Получите список участников (пользователей и групп).|
@@ -53,6 +53,9 @@ ms.locfileid: "61322123"
 |**Расширения схемы**| | |
 |[Добавление значений расширений для схемы](/graph/extensibility-schema-groups) || Создание определения расширения схемы и его дальнейшее использование для добавления в ресурс введенных пользовательских данных.|
 
+> [!NOTE]
+> Конечная точка URL-адреса для вызова API **administrativeUnits** находится в конечной `/administrativeUnits` `beta` точке, но `/directory/administrativeUnits` в `v1.0` конечной точке.
+
 ## <a name="properties"></a>Свойства
 
 > [!IMPORTANT]
@@ -60,7 +63,7 @@ ms.locfileid: "61322123"
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|description|string|Необязательное описание административного подразделения. Поддерживает `$filter` (`eq`, `ne`, `in`, `startsWith`).|
+|description|string|Необязательное описание административного подразделения. Поддерживает `$filter` `eq` `ne` (, `in` , , `startsWith` ), `$search` .|
 |displayName|string|Отображение имени административного подразделения. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` для значений `null`), `$search` и `$orderBy`.|
 |id|string|Уникальный идентификатор для административного подразделения. Только для чтения. Поддерживает `$filter` (`eq`).|
 |visibility|string|Контролирует, скрыта ли административная единица и ее члены. Можно установить `HiddenMembership` или `Public` . Если не установлено, по умолчанию поведение `Public` . При наборе только члены административного подразделения могут перечислять других членов `HiddenMembership` административного подразделения.|
@@ -68,9 +71,9 @@ ms.locfileid: "61322123"
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|extensions|Коллекция объектов [extension](extension.md)|Коллекция открытых расширений, определенных для этого административного подразделения. Допускается значение null.|
-|members|Коллекция [directoryObject](directoryobject.md)|Пользователи и группы, которые являются членами этого административного подразделения. МЕТОДЫ HTTP: GET (участники списка), POST (добавление участников), DELETE (удаление участников).|
-|scopedRoleMembers|Коллекция [scopedRoleMembership](scopedrolemembership.md)| Члены этого административного подразделения с масштабной ролью.  МЕТОДЫ HTTP: GET (список scopedRoleMemberships), POST (добавление scopedRoleMembership), DELETE (remove scopedRoleMembership). |
+|extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для этого административного подразделения. Допускается значение null.|
+|members|Коллекция [directoryObject](directoryobject.md)|Пользователи и группы, которые являются членами этого административного подразделения. Поддерживает `$expand`.|
+|scopedRoleMembers|Коллекция [scopedRoleMembership](scopedrolemembership.md)| Члены этого административного подразделения с масштабной ролью.|
 
 ## <a name="json-representation"></a>Представление JSON
 

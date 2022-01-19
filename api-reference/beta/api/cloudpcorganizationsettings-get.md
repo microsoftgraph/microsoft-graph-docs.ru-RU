@@ -1,0 +1,89 @@
+---
+title: Get cloudPcOrganizationSettings
+description: Ознакомьтесь с свойствами и отношениями объекта cloudPcOrganizationSettings.
+author: AshleyYangSZ
+ms.localizationpriority: medium
+ms.prod: cloud-pc
+doc_type: apiPageType
+ms.openlocfilehash: 36a8bbf804a82bca50806c82cc4cc648712e96a8
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072846"
+---
+# <a name="get-cloudpcorganizationsettings"></a>Get cloudPcOrganizationSettings
+Пространство имен: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Ознакомьтесь с свойствами и отношениями [cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) от текущего клиента. У клиента есть только один **объект cloudPcOrganizationSettings.**
+
+## <a name="permissions"></a>Разрешения
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
+|:---|:---|
+|Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение|CloudPC.Read.All, CloudPC.ReadWrite.All|
+
+## <a name="http-request"></a>HTTP-запрос
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /deviceManagement/virtualEndpoint/cloudPcOrganizationSettings
+```
+
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает параметр `$select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+
+## <a name="request-headers"></a>Заголовки запросов
+|Имя|Описание|
+|:---|:---|
+|Авторизация|Bearer {token}. Обязательный.|
+
+## <a name="request-body"></a>Тело запроса
+Не указывайте текст запроса для этого метода.
+
+## <a name="response"></a>Отклик
+
+В случае успешной работы этот метод возвращает код ответа и `200 OK` [объект cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) в тексте ответа.
+
+## <a name="examples"></a>Примеры
+
+### <a name="request"></a>Запрос
+<!-- {
+  "blockType": "request",
+  "name": "get_cloudpcorganizationsettings"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPcOrganizationSettings
+```
+
+
+### <a name="response"></a>Отклик
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.cloudPcOrganizationSettings"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.cloudPcOrganizationSettings",
+    "id": "8660bf17-bf17-8660-17bf-608617bfffff",
+    "userAccountType": "standardUser",
+    "osVersion": "windows11"
+  }
+}
+```

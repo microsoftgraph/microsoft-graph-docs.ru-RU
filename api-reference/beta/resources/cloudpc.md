@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: e2cc53304b7fea3336e8c52874e6c2bcf772b272
-ms.sourcegitcommit: f336c5c49fbcebe55312656aa8b50511fd99a657
+ms.openlocfilehash: 7245834371200a869290badcf054a054896dfcf6
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61391055"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072385"
 ---
 # <a name="cloudpc-resource-type"></a>Тип ресурса cloudPC
 
@@ -26,22 +26,23 @@ ms.locfileid: "61391055"
 |:---|:---|:---|
 |[CloudPCs списка](../api/virtualendpoint-list-cloudpcs.md)|[коллекция cloudPC](../resources/cloudpc.md)|Список свойств и связей объектов [cloudPC.](../resources/cloudpc.md)|
 |[Get cloudPC](../api/cloudpc-get.md)|[cloudPC](../resources/cloudpc.md)|Ознакомьтесь с свойствами и отношениями объекта [cloudPC.](../resources/cloudpc.md)|
-|[Reprovision](../api/cloudpc-reprovision.md)|Нет|Reprovision a [cloudPC](../resources/cloudpc.md) object.|
+|[Изменение типа учетной записи пользователя](../api/cloudpc-changeuseraccounttype.md)|Нет|Измените тип учетной записи пользователя на определенном облачном компьютере.|
 |[Окончание льготного периода](../api/cloudpc-endgraceperiod.md)|Нет|Окончание периода благодати для [объекта cloudPC.](../resources/cloudpc.md)|
+|[Получить удаленные результаты действий](../api/manageddevice-getcloudpcremoteactionresults.md)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|Проверьте удаленные результаты действий, [заданные](../resources/cloudpcremoteactionresult.md) облачным КОМПЬЮТЕРом, для устройства облачного ПК.|
 |[Перезагрузка](../api/cloudpc-reboot.md)|Нет|Перезагрузка определенного [объекта cloudPC.](../resources/cloudpc.md)|
 |[Rename](../api/cloudpc-rename.md)|Нет|Переименование определенного [объекта cloudPC.](../resources/cloudpc.md) Используйте этот API для обновления **displayName** для объекта облачного ПК.|
-|[Устранение неполадок](../api/cloudpc-troubleshoot.md)|Нет|Устранение неполадок определенного [объекта cloudPC.](../resources/cloudpc.md) Используйте этот API для проверки состояния здоровья облачного компьютера и хоста сеанса.|
+|[Reprovision](../api/cloudpc-reprovision.md)|Нет|Reprovision a [cloudPC](../resources/cloudpc.md) object.|
 |[Удаленное действие reprovision](../api/manageddevice-reprovisioncloudpc.md)|Нет|Перенастройка облачного компьютера [](../resources/cloudpc.md) с управляемым ИД устройства Intune.|
 |[Массовое удаленное перепроизводство](../api/manageddevice-bulkreprovisioncloudpc.md)|Нет|Массовое перепроизводение набора устройств облачного ПК с управляемыми ID-устройствами Intune.|
 |[Повторное удаленное действие](../api/manageddevice-resizecloudpc.md)|Нет|Обновление или понижение существующего облачного компьютера до другой конфигурации с новым vCPU и размером хранилища с помощью ID управляемого устройства Intune.|
-|[Получить удаленные результаты действий](../api/manageddevice-getcloudpcremoteactionresults.md)|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|Проверьте удаленные результаты действий, [заданные](../resources/cloudpcremoteactionresult.md) облачным КОМПЬЮТЕРом, для устройства облачного ПК.|
+|[Устранение неполадок](../api/cloudpc-troubleshoot.md)|Нет|Устранение неполадок определенного [объекта cloudPC.](../resources/cloudpc.md) Используйте этот API для проверки состояния здоровья облачного компьютера и хоста сеанса.|
 
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |aadDeviceId|Строка|ID устройства Azure Active Directory Azure AD на облачном компьютере.|
-|displayName|String|Имя отображения облачного компьютера.|
+|displayName|Строка|Имя отображения облачного компьютера.|
 |gracePeriodEndDateTime|DateTimeOffset|Дата и время окончания льготного периода и переделки/депрограммивинга. Требуется только в том случае, если состояние `inGracePeriod` . Timestamp отображается в формате ISO 8601 и Скоординированное универсальное время (UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |id|Строка|Уникальный идентификатор облачного компьютера. Только для чтения.|
 |imageDisplayName|Строка|Имя изображения ОС, которое на облачном компьютере.|
@@ -51,6 +52,7 @@ ms.locfileid: "61391055"
 |managedDeviceId|Строка|ID устройства Intune облачного компьютера.|
 |managedDeviceName|String|Имя устройства Intune облачного КОМПЬЮТЕРА.|
 |onPremisesConnectionName|Строка|Локальное подключение, применяемого при обеспечении облачных компьютеров.|
+|osVersion|[cloudPcOperatingSystem](../resources/cloudpcorganizationsettings.md#cloudpcoperatingsystem-values)|Версия операционной системы (ОС) для обеспечения на облачных ПК. Возможные значения: `windows10` , `windows11` и `unknownFutureValue` .|
 |provisioningPolicyId|Строка|ID политики обеспечения облачного компьютера.|
 |provisioningPolicyName|Строка|Политика обеспечения, применяемая при подготовках облачных компьютеров.|
 |servicePlanId|Строка|ID плана службы облачного компьютера.|
@@ -58,6 +60,7 @@ ms.locfileid: "61391055"
 |servicePlanType|[cloudPcServicePlanType](../resources/cloudpcserviceplan.md#cloudpcserviceplantype-values)|Тип плана службы облачного компьютера.|
 |status|[cloudPcStatus](#cloudpcstatus-values)|Состояние облачного КОМПЬЮТЕРА. Возможные значения: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `failed`.|
 |statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|Сведения о состоянии облачного КОМПЬЮТЕРА.|
+|userAccountType|[cloudPcUserAccountType](../resources/cloudpcorganizationsettings.md#cloudpcuseraccounttype-values)|Тип учетной записи пользователя на предварительных облачных компьютерах. Возможные значения: `standardUser` , `administrator` и `unknownFutureValue` .|
 |userPrincipalName|String|Основное имя пользователя (UPN) пользователя, назначенного на облачный компьютер.|
 
 ### <a name="cloudpcstatus-values"></a>значения cloudPcStatus
@@ -72,6 +75,7 @@ ms.locfileid: "61391055"
 |не удалось|Операция на облачном компьютере не удалась.|
 |provisionedWithWarnings|Облачный компьютер является предостережением и может быть доступ к конечным пользователям, но с некоторыми предупреждениями. Пользователь может продолжать использовать этот облачный КОМПЬЮТЕР.|
 |resizing|Облачный КОМПЬЮТЕР имеет размер.|
+|pendingProvision|Подготовка ожидается на облачном компьютере. В этом случае количество облачных компьютеров в льготный период превышает общее количество доступных лицензий. |
 |unknownFutureValue|Эволюционирующее значение sentinel. Не следует использовать.|
 
 ## <a name="relationships"></a>Связи
@@ -109,6 +113,8 @@ ms.locfileid: "61391055"
   "userPrincipalName": "String",
   "lastModifiedDateTime": "String (timestamp)",
   "gracePeriodEndDateTime": "String (timestamp)",
+  "userAccountType": "String",
+  "osVersion": "String",
   "lastRemoteActionResult": "String",
   "lastLoginResult": "String"
 }

@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: bbca6eaa30d28a20d17b2b502357e9eb55abc59a
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 0321ad71dd1f9604f70eed5c4602610e867ed2fa
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61791828"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072567"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -406,7 +406,7 @@ API [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy) может �
 Вызов API [me/joinedTeams](/graph/api/user-list-joinedteams) возвращает только свойства **id**, **displayName** и **description** [команды](/graph/api/resources/team). Чтобы получить все свойства, воспользуйтесь операцией [Получение команды](/graph/api/team-get).
 
 ### <a name="installation-of-apps-that-require-resource-specific-consent-permissions-is-not-supported"></a>Установка приложений, требующих разрешений на согласие для определенных ресурсов, не поддерживается
-Следующие вызовы API не поддерживают установку приложений, требующих разрешений на [согласие для определенных ресурсов](https://aka.ms/teams-rsc).
+Следующие вызовы API не поддерживают установку приложений, требующих разрешений на [согласие для определенных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 - [Добавление приложения в команду](/graph/api/team-post-installedapps.md)
 - [Обновление приложения, установленного в команде](/graph/api/team-teamsappinstallation-upgrade.md)
 - [Добавление приложения в чат](/graph/api/chat-post-installedapps.md)

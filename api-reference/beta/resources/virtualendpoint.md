@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 395919dd0ee9b0a2399f991e58d9d10ec81fee5a
-ms.sourcegitcommit: c00c61ce35a6f204a9907aa6f2644ea7a86a5b6e
+ms.openlocfilehash: c616d3894b5c9efaf356e28879edc067d7d3ffcd
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2021
-ms.locfileid: "60805397"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072259"
 ---
 # <a name="virtualendpoint-resource-type"></a>тип ресурса virtualEndpoint
 
@@ -45,7 +45,7 @@ ms.locfileid: "60805397"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для идентификатора виртуальной конечной точки. Только для чтения.|
+|id|String|Уникальный идентификатор для идентификатора виртуальной конечной точки. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 
@@ -60,6 +60,7 @@ ms.locfileid: "60805397"
 |auditEvents|[коллекция cloudPcAuditEvent](../resources/cloudpcauditevent.md)|Событие аудита облачного компьютера.|
 |supportedRegions|[коллекция cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md)|Области, поддерживаемые облачным компьютером.|
 |servicePlans|[коллекция cloudPcServicePlan](../resources/cloudpcserviceplan.md)|Планы службы облачных ПК.|
+|organisationSettings|[cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) |Параметры организации облачного ПК для клиента. |
 
 ## <a name="json-representation"></a>Представление JSON
 

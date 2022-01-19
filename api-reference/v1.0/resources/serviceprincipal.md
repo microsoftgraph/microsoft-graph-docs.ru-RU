@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: 2cbdb61db0e1aa787401d6f819d722a8a1db2d39
-ms.sourcegitcommit: f65eee432cc903324b5f9b31710fdc6100590f36
+ms.openlocfilehash: 063a42de506b0e7885ffb1ebef12d1a68d7c4803
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61322264"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072301"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -85,7 +85,7 @@ ms.locfileid: "61322264"
 |:---------------|:--------|:----------|
 | accountEnabled |Логический| Значение `true`, если учетная запись субъекта-службы включена. В противном случае используется значение `false`. Поддерживает `$filter` (`eq`, `ne`, `not`, `in`).|
 | addIns | Коллекция [addIn](addin.md) | Определяет пользовательское поведение, которое служба может использовать для вызова приложения в определенных контекстах. Например, приложения, которые способны визуализировать файловые потоки, [могут установить свойство addIns](/onedrive/developer/file-handlers/?view=odsp-graph-online&preserve-view=true) для его функции "FileHandler". Это позволит таким службам, как Microsoft 365, вызывать приложение в контексте документов, над которыми работает пользователь.|
-|alternativeNames|Коллекция строк| Используется для получения субъектов-служб по подпискам, для идентификации групп ресурсов и полных идентификаторов ресурсов для [управляемых удостоверений](https://aka.ms/azuremanagedidentity). Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
+|alternativeNames|Коллекция строк| Используется для получения субъектов-служб по подпискам, для идентификации групп ресурсов и полных идентификаторов ресурсов для [управляемых удостоверений](/azure/active-directory/managed-identities-azure-resources/overview). Поддерживает `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 |appDescription|Строка|Описание, предоставляемое связанным приложением.|
 |appDisplayName|String|Отображаемое имя, предоставляемое связанным приложением.|
 |appId|String|Уникальный идентификатор для связанного приложения (его свойство **appId**). Поддерживает `$filter` (`eq`, `ne`, `not`, `in`, `startsWith`).|

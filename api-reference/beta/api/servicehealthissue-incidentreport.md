@@ -2,15 +2,15 @@
 title: 'serviceHealthIssue: incidentReport'
 description: Предосмотрить документ по проверке после инцидента (PIR) указанной проблемы службы для клиента.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: apiPageType
-ms.openlocfilehash: 1cf516a081108ba6588a93210e7d6c60967d8380
-ms.sourcegitcommit: 7f674112f5b95446fac86d829509f889c60f1693
+ms.openlocfilehash: 122ec4726d3dc89483d76d80e3848526e67a099a
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53209239"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072406"
 ---
 # <a name="servicehealthissue-incidentreport"></a>serviceHealthIssue: incidentReport
 Пространство имен: microsoft.graph
@@ -19,7 +19,7 @@ ms.locfileid: "53209239"
 
 Предосмотрить документ по проверке после инцидента (PIR) указанной проблемы службы для клиента.
 
-Операция возвращает ошибку, если указанная проблема не существует для клиента.
+Проблема только со статусом указывает, что для проблемы существует документ `PostIncidentReviewPublished` PIR. Операция возвращает ошибку, если указанная проблема не существует для клиента или если для проблемы не существует документа PIR.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,9 +43,9 @@ GET /admin/serviceAnnouncement/issues/{serviceHealthIssueId}/incidentReport
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

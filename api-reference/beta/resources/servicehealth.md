@@ -2,15 +2,15 @@
 title: тип ресурса serviceHealth
 description: Представляет сведения о состоянии здоровья службы.
 author: payiAzure
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: service-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 31affa96ab07fa5fd15dd19fd7877f0bc10af228
-ms.sourcegitcommit: 0116750a01323bc9bedd192d4a780edbe7ce0fdc
+ms.openlocfilehash: fa489ce3251a9b6b3fb344bdbabdb0e8252c4c93
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58260854"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072616"
 ---
 # <a name="servicehealth-resource-type"></a>тип ресурса serviceHealth
 
@@ -30,12 +30,12 @@ ms.locfileid: "58260854"
 |:---|:---|:---|
 |id|Строка|ID службы.|
 |service|String|Имя службы. Используйте операцию [healthOverviews списка,](../api/serviceannouncement-list-healthoverviews.md) чтобы получить точные имена строк для служб, подписываемых клиентом.|
-|status|serviceHealthStatus|Покажите состояние состояния службы overral. Возможные значения: `serviceOperational` `investigating` , , , , `restoringService` , `verifyingService` , `serviceRestored` `postIncidentReviewPublished` `serviceDegradation` , `serviceInterruption` `extendedRecovery` `falsePositive` `investigationSuspended` `resolved` `mitigatedExternal` `mitigated` `resolvedExternal` `confirmed` `reported` `unknownFutureValue` .|
+|status|serviceHealthStatus|Показать общее состояние здоровья службы. Возможные значения: `serviceOperational` `investigating` , , , , `restoringService` , `verifyingService` , `serviceRestored` `postIncidentReviewPublished` `serviceDegradation` , `serviceInterruption` `extendedRecovery` `falsePositive` `investigationSuspended` `resolved` `mitigatedExternal` `mitigated` `resolvedExternal` `confirmed` `reported` `unknownFutureValue` . Дополнительные сведения см. [в материале serviceHealthStatus values.](../resources/servicehealthissue.md#servicehealthstatus-values)|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|проблемы|[Collection(serviceHealthIssue)](../resources/servicehealthissue.md)|В службе произошел набор проблем с подробными сведениями по каждой проблеме.|
+|проблемы|[Collection(serviceHealthIssue)](../resources/servicehealthissue.md)|Коллекция проблем, которые произошли в службе, с подробными сведениями по каждой проблеме.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

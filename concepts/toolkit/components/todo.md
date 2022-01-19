@@ -3,12 +3,12 @@ title: Компонент To Do в Microsoft Graph Toolkit
 description: Компонент To Do позволяет пользователю просматривать, добавлять, удалять, выполнять или изменять задачи To Do. Он поддерживает любые задачи в Microsoft To-Do.
 ms.localizationpriority: medium
 author: shweaver-MSFT
-ms.openlocfilehash: 4c2b54d0c6b5307762d38a9cb204a896aaaa4e9d
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: de9c49937b3db76c2d93c308b88d03ec577f76ed
+ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129630"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62072693"
 ---
 # <a name="to-do-component-in-the-microsoft-graph-toolkit"></a>Компонент To Do в Microsoft Graph Toolkit
 
@@ -93,7 +93,7 @@ mgt-todo {
 }
 ````
 
-Дополнительные сведения см. в статье [Компоненты стиля](https://docs.microsoft.com/graph/toolkit/style.md).
+Дополнительные сведения см. в статье [Компоненты стиля](/graph/toolkit/style.md).
 
 ## <a name="events"></a>События
 
@@ -130,7 +130,7 @@ mgt-todo {
 
 Этот элемент управления использует следующие API и разрешения Microsoft Graph.
 
-| Настройка | Разрешение | API |
+| Конфигурация | Разрешение | API |
 | ------------- | ---------- | --- |
 | `targetId` set | Tasks.Read | [/me/todo/lists/${listId}](/graph/api/todotasklist-get?view=graph-rest-1.0&tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
 | `targetId` не установлено | Tasks.Read | [/me/todo/lists](/graph/api/todo-list-lists?view=graph-rest-1.0&tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
