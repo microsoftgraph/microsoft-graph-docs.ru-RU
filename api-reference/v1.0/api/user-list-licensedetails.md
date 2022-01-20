@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: f5c52b75fb9da0bae73a903cf667e5a1d18813ff
-ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
+ms.openlocfilehash: 2c0b0d81afd190fc1ceddf4c2cd4be8f46bd40bf
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "61604240"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62121589"
 ---
 # <a name="list-licensedetails"></a>Перечисление licenseDetails
 
@@ -41,7 +41,7 @@ GET /users/{id}/licenseDetails
 |:----------|:----------|
 | Авторизация  | Код &lt; bearer&gt;|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/v1.0/me/licenseDetails
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-licensedetails-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-licensedetails-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

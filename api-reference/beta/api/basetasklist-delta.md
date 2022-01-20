@@ -5,12 +5,12 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2448a287cd3b36edad9c338899d366e69c1685d6
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: c8c321bf4b3f09e38fe1d53318d6ff9e89b5e7c6
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525256"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62094896"
 ---
 # <a name="basetasklist-delta"></a>baseTaskList: дельта
 Пространство имен: microsoft.graph
@@ -48,7 +48,7 @@ GET /users/{userId|userPrincipalName}/tasks/lists/delta
 | Параметр запроса    | Тип |Описание|
 |:---------------|:--------|:----------|
 | $deltatoken | string | В [URL-адрес](/graph/delta-query-overview) предыдущей функции дельты возвращается маркер состояния для той же коллекции `deltaLink` **baseTaskList,** что указывает на завершение этого раунда отслеживания изменений.  Сохраните URL-адрес `deltaLink` с этим токеном и примените его в первом запросе следующего цикла отслеживания изменений для этой коллекции.|
-| $skiptoken | строка | Маркер [состояния,](/graph/delta-query-overview) возвращенный в URL-адрес предыдущего вызова функции дельты, указывает на то, что в том же `nextLink` базовом  **собранииTaskList** необходимо отслеживать дальнейшие изменения. |
+| $skiptoken | string | Маркер [состояния,](/graph/delta-query-overview) возвращенный в URL-адрес предыдущего вызова функции дельты, указывает на то, что в том же `nextLink` базовом  **собранииTaskList** необходимо отслеживать дальнейшие изменения. |
 
 ### <a name="odata-query-parameters"></a>Параметры запросов OData
 
@@ -61,7 +61,7 @@ GET /users/{userId|userPrincipalName}/tasks/lists/delta
 | Authorization  | string  | Bearer {token}. Обязательный. |
 | Prefer | string  | odata.maxpagesize={x}. Необязательный параметр. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/beta/me/tasks/lists/delta
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/basetasklist-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/basetasklist-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,18 +5,18 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a1c56a9218dddf50cded46b263b18dd08ba5acd4
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8a396dd4a99abf8dbaed5e43b32bd35024f614f1
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61008573"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62134181"
 ---
 # <a name="delete-unifiedroledefinition"></a>Удаление unifiedRoleDefinition
 
 Пространство имен: microsoft.graph
 
-Удаление [объекта unifiedRoleDefinition.](../resources/unifiedRoleDefinition.md) Невозможно удалить встроенные роли.
+Удаление [объекта unifiedRoleDefinition.](../resources/unifiedRoleDefinition.md) Встроенные роли не удаляются.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "61008573"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | RoleManagement.ReadWrite.Directory |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | RoleManagement.ReadWrite.Directory |
+| Приложение                            | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,9 +41,9 @@ DELETE /roleManagement/directory/roleDefinitions/{id}
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -85,6 +85,10 @@ DELETE https://graph.microsoft.com/v1.0/roleManagement/directory/roleDefinitions
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-unifiedroledefinition-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-unifiedroledefinition-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

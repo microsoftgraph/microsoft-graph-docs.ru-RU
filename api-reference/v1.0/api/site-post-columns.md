@@ -6,12 +6,12 @@ description: Создание столбца сайта.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 5e6ce855c01601a0f2ddc993f2b3babf99967662
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b3787145e2c7b2d6391664507da05f494cf2e705
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61027137"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62134307"
 ---
 # <a name="create-a-columndefinition-in-a-site"></a>Создание столбцаDefinition на сайте
 Пространство имен: microsoft.graph
@@ -28,7 +28,7 @@ ms.locfileid: "61027137"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.Manage.All, Sites.FullControl.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений | Sites.Manage.All, Sites.FullControl.All |
+|Приложение | Sites.Manage.All, Sites.FullControl.All |
 
   
 
@@ -39,7 +39,7 @@ ms.locfileid: "61027137"
 POST /sites/{site-id}/columns
 ```
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В теле запроса добавьте представление JSON ресурса [columnDefinition.][]  
 
@@ -89,6 +89,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/site-post-columns-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/site-post-columns-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

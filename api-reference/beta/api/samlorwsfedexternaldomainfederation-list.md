@@ -5,12 +5,12 @@ author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ca562148b20f2953a7c3cd33332a07c7c8877d46
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7c8ad07b44a4bb724e9b58645ac053df58a34a02
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60979934"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62132725"
 ---
 # <a name="list-samlorwsfedexternaldomainfederations"></a>Список samlOrWsFedExternalDomainFederations
 Пространство имен: microsoft.graph
@@ -27,7 +27,7 @@ ms.locfileid: "60979934"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Domain.Read.All, Domain.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|Domain.Read.All, Domain.ReadWrite.All|
+|Приложение|Domain.Read.All, Domain.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 
@@ -51,7 +51,7 @@ GET /directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederatio
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/directory/federationConfigurations/graph.sa
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-samlorwsfedexternaldomainfederation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-samlorwsfedexternaldomainfederation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

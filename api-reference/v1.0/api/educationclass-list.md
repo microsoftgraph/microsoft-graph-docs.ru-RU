@@ -5,12 +5,12 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f05ba22b30ecd879c693238b640ae6020df5f0d1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 765e6c29e34d8fd8570af2c27ec989c78a43a778
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61000306"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62128751"
 ---
 # <a name="list-educationclasses"></a>Перечисление educationClasses
 
@@ -26,7 +26,7 @@ ms.locfileid: "61000306"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic                         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложений                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+| Приложение                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
 | :------------ | :------------------------ |
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -102,6 +102,10 @@ GET https://graph.microsoft.com/v1.0/education/classes
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-educationclass-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-educationclass-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

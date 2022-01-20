@@ -1,16 +1,16 @@
 ---
 title: тип ресурсов connectorGroup
 description: Представляет соединители прокси-приложения.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 author: japere
 doc_type: resourcePageType
-ms.openlocfilehash: df3a80c6dfd4004daccfe33045c8775c2e2e6e48
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: b5fc35d95479d8671ba4fd15f47f6beb857b9448
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50958810"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62088923"
 ---
 # <a name="connectorgroup-resource-type"></a>тип ресурсов connectorGroup
 
@@ -18,7 +18,7 @@ ms.locfileid: "50958810"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Каждый [соединитатель прокси-сервера приложения Azure AD](https://aka.ms/whyappproxy) всегда является частью группы соединители. Все соединители, принадлежащие к одной группе соединитетелей, выступают в качестве отдельного блока для балансировки высокой доступности и нагрузки. Если вы не создаете соединители группы, все соединители будут частью группы по умолчанию. При настройке приложения с помощью прокси-сервера приложения необходимо также указать группу соединители для назначения приложения.
+Каждый [соединитатель прокси-сервера приложения Azure AD](/azure/active-directory/app-proxy/what-is-application-proxy) всегда является частью группы соединители. Все соединители, принадлежащие к одной группе соединитетелей, выступают в качестве отдельного блока для балансировки высокой доступности и нагрузки. Если вы не создаете соединители группы, все соединители будут частью группы по умолчанию. При настройке приложения с помощью прокси-сервера приложения необходимо также указать группу соединители для назначения приложения.
 
 После создания группы соединителю можно добавить или переместить соединители в группу соединителю с помощью [соединитетеля Add.](../api/connectorgroup-post-members.md) Вы также можете использовать [приложение Add для](../api/connectorgroup-post-applications.md) назначения приложения группе соединителю.
 
@@ -31,7 +31,7 @@ ms.locfileid: "50958810"
 |[Получение connectorGroup](../api/connectorgroup-get.md) | [connectorGroup](connectorgroup.md) | Чтение свойств и связей объекта connectorGroup. |
 |[Обновление connectorGroup](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)| Обновление объекта connectorGroup. |
 |[Удаление connectorGroup](../api/connectorgroup-delete.md) | Нет | Удаление объекта connectorGroup. Все соединители должны быть удалены из соединителиГруппы, прежде чем соединителиGroup можно удалить. |
-|[Перечисление участников](../api/connectorgroup-list-members.md) |[коллекция соединители](connector.md)| Получите коллекцию объектов соединители. |
+|[Список членов](../api/connectorgroup-list-members.md) |[коллекция соединители](connector.md)| Получите коллекцию объектов соединители. |
 |[Перечисление приложений](../api/connectorgroup-list-applications.md) |Коллекция [application](application.md)| Получение коллекции объектов приложения, связанной с соединитетелемGroup. |
 |[Добавление приложения](../api/connectorgroup-post-applications.md) |[application](application.md)| Связать приложение с соединителягруппой, разместив в коллекции приложений. |
 |[Добавление соединителя](../api/connectorgroup-post-members.md) |[connector](connector.md)| Добавьте соединителю в соединителюGroup, разместив его в коллекции connectorGroup. |
@@ -86,6 +86,3 @@ ms.locfileid: "50958810"
   "suppressions": []
 }
 -->
-
-
-

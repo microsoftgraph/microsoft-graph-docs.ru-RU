@@ -5,12 +5,12 @@ author: abheek-das
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e39ac8a3b532bf973252511297c65867d7f0707b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8261b5931f936a48a5e19c28ce053a22f6248641
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61004052"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62126349"
 ---
 # <a name="create-rule"></a>Создание правила
 
@@ -43,7 +43,7 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 | Авторизация  | Bearer {token}. Обязательный. |
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите параметры, применимые к вашему правилу. Ниже представлены параметры текста, которые обычно используются при создании правил. Можно соответствующим образом указать любые другие записываемые свойства **messageRule** в тексте запроса.
 
 | Имя       | Тип|Описание|
@@ -113,6 +113,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-messagerule-from-mailfolder-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-messagerule-from-mailfolder-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

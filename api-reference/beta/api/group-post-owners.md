@@ -1,16 +1,16 @@
 ---
 title: Добавление владельцев
-description: Добавьте пользователя или директора службы в Microsoft 365 или владельцев группы безопасности.
+description: Добавьте пользователя или субъект-службу к владельцам группы Microsoft 365 или группы безопасности.
 ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a47720e97a729aa061382938e6b4a88bf246a1d9
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: 089fd49744a0ab07cd2b26f5fbc9cb5fb51e6c17
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61124114"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62127672"
 ---
 # <a name="add-owners"></a>Добавление владельцев
 
@@ -18,7 +18,7 @@ ms.locfileid: "61124114"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавьте пользователя или директора службы в Microsoft 365 или владельцев группы безопасности. Владельцы — это группа пользователей или субъектов-служб, которым разрешено изменять этот групповой объект.
+Добавьте пользователя или субъект-службу к владельцам группы Microsoft 365 или группы безопасности. Владельцы — это группа пользователей или субъектов-служб, которым разрешено изменять этот групповой объект.
 
 >**Важно!** При обновлении владельцев группы и создании команды для группы может потребоваться до 2 часов для синхронизации владельцев с Microsoft Teams. Кроме того, если нужно, чтобы владелец мог вносить изменения в команду, например путем создания плана Планировщика, владельца также требуется добавить в качестве участника группы или команды. 
 
@@ -83,6 +83,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-owner-from-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-owner-from-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

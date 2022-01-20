@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: paulgarn
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: cbc6b65631db29e228e248d6abb67c620a7ff86b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 30c4296616f6ffab300d73cdcceb56a94835c245
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60975712"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62121343"
 ---
 # <a name="list-claimsmappingpolicies"></a>Перечисление типов ресурсов claimsMappingPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "60975712"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
+| Приложение                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 
 > [!IMPORTANT]
 > Этот метод имеет [известные проблемы разрешений и](/graph/known-issues#claims-mapping-policy) может требовать согласия на оба разрешения.
@@ -49,9 +49,9 @@ GET /policies/claimsMappingPolicies
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/policies/claimsMappingPolicies
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-claimsmappingpolicies-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-claimsmappingpolicies-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

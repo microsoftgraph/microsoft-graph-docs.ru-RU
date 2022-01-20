@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fc573261a7b69625814e1d1fcea0006e69dad8a3
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 104373fed43a645c1417ebe48ab20e1e2e61a8ad
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61028651"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62106262"
 ---
 # <a name="update-educationclass-properties"></a>Обновление свойств educationclass
 
@@ -27,7 +27,7 @@ ms.locfileid: "61028651"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
-|Для приложений | EduRoster.ReadWrite.All |
+|Приложение | EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ PATCH /education/classes/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|description|Строка| Описание курса.|
+|description|String| Описание курса.|
 |displayName|Строка| Название курса.|
 |mailNickname|String| Почтовый псевдоним для отправки электронных сообщений всем пользователям, если это возможно. |
 |classCode|String| Код класса, используемый школой.|
@@ -91,6 +91,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-educationclass-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-educationclass-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

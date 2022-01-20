@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 9c7a0e3ee6fa5c39345e45eca7f364ba95661fde
-ms.sourcegitcommit: 1a607ea5bee096944e0fea14167d372f1ff652f6
+ms.openlocfilehash: 8372dd95c290af52e23b8ba62064b1e1aad8c836
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "61545128"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62126504"
 ---
 # <a name="accessreviewschedulesettings-resource-type"></a>тип ресурса accessReviewScheduleSettings
 
@@ -25,17 +25,18 @@ ms.locfileid: "61545128"
 ## <a name="properties"></a>Свойства
 | Свойство    | Тип   | Описание |
 | :---------------| :---------- | :---------- |
-| mailNotificationsEnabled|Boolean | Указывает, включена ли электронная почта или отключена. Значение по умолчанию — `false`.               |
-| reminderNotificationsEnabled|Boolean  | Указывает, включены или отключены напоминания. Значение по умолчанию — `false`.  |
-| justificationRequiredOnApproval|Boolean | Указывает, требуются ли рецензенты для обоснования своего решения. Значение по умолчанию — `false`. |
-| defaultDecisionEnabled|Boolean | Указывает, включено или отключено решение по умолчанию, если рецензенты не отвечают. Значение по умолчанию — `false`. |
+| mailNotificationsEnabled|Логический | Указывает, включена ли электронная почта или отключена. Значение по умолчанию — `false`.               |
+| reminderNotificationsEnabled|Логический  | Указывает, включены или отключены напоминания. Значение по умолчанию — `false`.  |
+| justificationRequiredOnApproval|Логическое | Указывает, требуются ли рецензенты для обоснования своего решения. Значение по умолчанию — `false`. |
+| defaultDecisionEnabled|Логический | Указывает, включено или отключено решение по умолчанию, если рецензенты не отвечают. Значение по умолчанию — `false`. |
 | defaultDecision|Строка | Решение, `defaultDecisionEnabled` выбранное, если включено. Может быть одним из `Approve` `Deny` , или `Recommendation` . |
 | instanceDurationInDays|Int32 | Продолжительность каждого повторения обзора `accessReviewInstance` () в количестве дней. |
 | recurrence|[patternedRecurrence](../resources/patternedrecurrence.md) | Подробные параметры для повторения с помощью стандартного объекта Outlook повторения. <br/><br/>**Примечание:** Поддерживаются **только свойства dayOfMonth,** **интервал** и **тип** `weekly` (, ). `absoluteMonthly` Используйте свойство **startDate на** **recurrenceRange,** чтобы определить день начала проверки. |
-| autoApplyDecisionsEnabled|Boolean | Указывает, применяются ли решения автоматически. Если установлено, администратор должен применять решения вручную, как только рецензент завершит `false` обзор доступа. При наборе решения применяются автоматически после окончания срока действия экземпляра проверки доступа независимо от того, откликнулись ли `true` рецензенты. Значение по умолчанию — `false`. |
+| autoApplyDecisionsEnabled|Логический | Указывает, применяются ли решения автоматически. Если установлено, администратор должен применять решения вручную, как только рецензент завершит `false` обзор доступа. При наборе решения применяются автоматически после окончания срока действия экземпляра проверки доступа независимо от того, откликнулись ли `true` рецензенты. Значение по умолчанию — `false`. |
 | applyActions|[accessReviewApplyAction collection](../resources/accessreviewapplyaction.md) | Необязательное поле. Описывает действия, которые необходимо выполнить после завершения проверки. В настоящее время поддерживается два типа: `removeAccessApplyAction` (по умолчанию) и `disableAndDeleteUserApplyAction` . Поле должно быть указано только в случае `disableAndDeleteUserApplyAction` . |
-| recommendationsEnabled|Boolean | Указывает, включены или отключены рекомендации по принятию решений. |
+| recommendationsEnabled|Логический | Указывает, включены или отключены рекомендации по принятию решений. |
 | recommendationLookBackDuration | Длительность| Необязательное поле. Указывает период времени бездействия (в отношении даты начала экземпляра обзора), из чего будут настроены рекомендации. Рекомендация будет в том `deny` случае, если пользователь неактивно во время периода обратного назад. Для обзоров групп и ролей Azure AD принимается любая продолжительность. Для отзывов приложений максимальная продолжительность — 30 дней. Если не указано, продолжительность — 30 дней. |
+| recommendationInsightSettings|[accessReviewRecommendationInsightSetting](../resources/accessReviewRecommendationInsightSetting.md) collection | Необязательно. Описывает типы анализов, которые проверяют для принятия решений по обзору доступа. |
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.
@@ -66,7 +67,12 @@ ms.locfileid: "61545128"
     }
   ],
   "recommendationsEnabled": "Boolean",
-  "recommendationLookBackDuration": "Duration"
+  "recommendationLookBackDuration": "Duration",
+  "recommendationInsightSettings": [
+    {
+      "@odata.type": "microsoft.graph.accessReviewRecommendationInsightSetting"
+    }
+  ]
 }
 ```
 

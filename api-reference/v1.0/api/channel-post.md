@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3bcbc92148b9c4d4d01dcdcbf3dc93b920bc8dba
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8b23b63dcccba6945e60f13d87590f6bc81ae9ce
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61006905"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62101604"
 ---
 # <a name="create-channel"></a>Создание канала
 
@@ -26,7 +26,7 @@ ms.locfileid: "61006905"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Channel.Create, Group.ReadWrite.All **, Directory.ReadWrite.All** |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Channel.Create.Group,*Channel.Create, Teamwork.Migrate.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
+|Приложение | Channel.Create.Group,*Channel.Create, Teamwork.Migrate.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
 
 > **Примечания.** Разрешения, отмеченные * использование [согласия, определенного для ресурсов.]( https://aka.ms/teams-rsc) Разрешения, отмеченные **, не используются и не должны использоваться.
 >
@@ -97,6 +97,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-channel-from-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-channel-from-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -178,6 +182,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-channel-from-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-channel-from-user-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -185,7 +193,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже показан пример отклика.
+Ниже приводится пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -254,13 +262,17 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-channel-for-migration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-channel-for-migration-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 
 #### <a name="response"></a>Отклик
 
-Ниже показан пример отклика. Заглавный заглавный пункт Content-Location в ответе указывает путь к каналу, который будет задан.
+Ниже приводится пример отклика. Заглавный заглавный пункт Content-Location в ответе указывает путь к каналу, который будет задан.
 После предварительного использования этот канал можно использовать для [импорта сообщений.](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
 <!-- {
   "blockType": "response",
@@ -337,6 +349,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-private-channel-upn-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-private-channel-upn-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

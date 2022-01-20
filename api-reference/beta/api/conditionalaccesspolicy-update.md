@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 8e01e9dfadc1babc022d0a258c71980d29ee09ff
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: beb7f91615654a19562b7852454643553bdf962a
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60975559"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62121252"
 ---
 # <a name="update-conditionalaccesspolicy"></a>Обновление conditionalAccessPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "60975559"
 |:--------------------------------------|:---------------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All, Policy.ReadWrite.ConditionalAccess и Application.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess и Application.Read.All |
+|Приложение                            | Policy.Read.All, Policy.ReadWrite.ConditionalAccess и Application.Read.All |
 
 > [!NOTE]
 > Этот API имеет [известные проблемы, связанные](/graph/known-issues##conditional-access-policy) с разрешениями.
@@ -102,6 +102,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-conditionalaccesspolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-conditionalaccesspolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a46d19e39b90551248571b13b916a7e6c2760091
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 55aafbd516ba3bdb31ef5a37cd0a2351ac6bea5f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60986516"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62120574"
 ---
 # <a name="get-educationuser"></a>Получение educationUser
 
@@ -31,7 +31,7 @@ ms.locfileid: "60986516"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic                         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+| Приложение                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 > [!IMPORTANT]
 > При использовании областей делегирования разрешений Graph возвращает только ограниченный набор свойств: `id` `primaryRole` , , `accountEnabled` `displayName` `givenName` `surname` `userPrincipalName` `userType` `onPremisesInfo` `student/externalId` `teacher/externalId` . Если вашему приложению необходимы дополнительные свойства, необходимо использовать области разрешений приложения.
@@ -55,7 +55,7 @@ GET /education/users/{id}
 | :------------ | :------------------------ |
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -101,6 +101,10 @@ GET https://graph.microsoft.com/beta/education/users/13012
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationuser-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationuser-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

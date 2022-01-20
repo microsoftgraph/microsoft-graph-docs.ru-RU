@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: f484d5a67fde2b1e90a7dfd13ac3c0ffb67d82cc
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 2fbf1eecad7267ce17ead81dd6573cf885a2ae5b
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61005466"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62121141"
 ---
 # <a name="assign-a-connectorgroup-to-an-application"></a>Назначение соединителиГруп приложению
 
@@ -38,7 +38,7 @@ PUT /applications/{id}/connectorGroup/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Носителер. Обязательный параметр.|
+| Авторизация  | Носителер. Обязательный параметр.|
 | Content-Type | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -83,6 +83,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-application-from-connectorgroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-application-from-connectorgroup-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

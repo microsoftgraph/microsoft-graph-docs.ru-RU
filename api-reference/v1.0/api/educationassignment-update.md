@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fe9cf434a5f26d6593cee8e8b39afe2150949e24
-ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
+ms.openlocfilehash: faca28843e5e9b6c6f4eadea6f9be265ff56bd9e
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2021
-ms.locfileid: "61608726"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62092366"
 ---
 # <a name="update-educationassignment"></a>Обновление системы образования
 
@@ -42,7 +42,7 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}
 | Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса поставляют только значения полей, которые необходимо обновить. 
 
 Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
@@ -50,17 +50,17 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |addedStudentAction|Строка| Описывает, следует ли распределять назначение среди учащихся, добавленных после даты публикации назначения.|
-|addToCalendarAction|educationAddToCalendarOptions|Необязательное поле для управления **поведением** назначения для добавления **назначений** в календари учащихся и преподавателей при **публикации** назначения. Допустимые значения: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, `studentsOnly`. Обратите внимание, что вы должны использовать загон запроса, чтобы получить следующее значение `Prefer: include - unknown -enum-members` (ы) в этом [развиваемом переуме:](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `studentsOnly` . Необязательный параметр.|
-|allowLateSubmissions|Boolean| Могут ли студенты отправлять отправку после срока.|
-|allowStudentsToAddResourcesToSubmission|Boolean| Может ли студент добавлять ресурсы в отправку или нет. Кроме того, указывает, соответствуют ли все ресурсы в представлении списку ресурсов назначения. |
+|addToCalendarAction|educationAddToCalendarOptions|Необязательное поле для управления **поведением** назначения для добавления **назначений** в календари учащихся и преподавателей при **публикации** назначения. Допустимые значения: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, `studentsOnly`. Обратите внимание, что вы должны использовать загон запроса, чтобы получить следующее значение `Prefer: include - unknown -enum-members` (ы) в этом [развиваемом переуме:](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `studentsOnly` . Необязательно.|
+|allowLateSubmissions|Логическое| Могут ли студенты отправлять отправку после срока.|
+|allowStudentsToAddResourcesToSubmission|Логический| Может ли студент добавлять ресурсы в отправку или нет. Кроме того, указывает, соответствуют ли все ресурсы в представлении списку ресурсов назначения. |
 |assignDateTime|DateTimeOffset| Указывает дату публикации назначения для учащихся. Невозможно изменить после публикации назначения.|
 |assignTo|[educationAssignmentRecipient](../resources/educationassignmentrecipient.md)| Студенты, получаювшие назначение.|
 |closeDateTime|DateTimeOffset| Дата закрытия назначения для отправки. Это необязательный поле, которое может быть равно нуль, если назначение не позволяет использоватьLateSubmissions или closeDateTime то же самое, что и dueDateTime, но если указано, оно должно быть больше или равно dueDateTime.|
-|displayName|String| Имя назначения. |
+|displayName|Строка| Имя назначения. |
 |dueDateTime|DateTimeOffset| Назначение даты должно быть. |
 |классификация|[educationAssignmentGradeType](../resources/educationassignmentgradetype.md)| Оценка назначения.|
 |инструкции|itemBody| Инструкции, которые будут даны учащимся вместе с назначением. |
-|notificationChannelUrl|Строка| Канал для связи уведомлений, связанных с назначением. Чтобы изменить URL-адрес, `assignTo` установите значение [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md). URL-адрес канала не может измениться после публикации назначения.|
+|notificationChannelUrl|String| Канал для связи уведомлений, связанных с назначением. Чтобы изменить URL-адрес, `assignTo` установите значение [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md). URL-адрес канала не может измениться после публикации назначения.|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа и обновленный объект `200 OK` [educationAssignment](../resources/educationassignment.md) в тексте ответа.
@@ -109,6 +109,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-educationassignment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-educationassignment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

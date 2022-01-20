@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: e664a71c073a9846ad7fa31d69f62deab7827f8c5c716cd0bdc61844464dc28f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 8b7e1bb61b7c62ce5191c269258ba3361d410062
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57199239"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62094512"
 ---
 ```java
 
@@ -14,7 +14,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 BookingService bookingService = new BookingService();
 bookingService.defaultDuration = DatatypeFactory.newInstance().newDuration("PT30M");
 
-graphClient.bookingBusinesses("Contosolunchdelivery@M365B489948.onmicrosoft.com").services("57da6774-a087-4d69-b0e6-6fb82c339976")
+graphClient.bookingBusinesses("Contosolunchdelivery@contoso.onmicrosoft.com").services("57da6774-a087-4d69-b0e6-6fb82c339976")
     .buildRequest()
     .patch(bookingService);
 

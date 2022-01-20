@@ -5,12 +5,12 @@ author: sureshja
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 38a56d02e97dae6d813b57d6c6e46e98ace2894a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c6d1e15b764521f1f078c88e1862efed0467dc33
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60982799"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62126181"
 ---
 # <a name="update-application"></a>Обновление приложения
 
@@ -58,7 +58,7 @@ PATCH /applications/{id}
 | isFallbackPublicClient  | Boolean                                                                     | Указывает резервный тип приложения как общедоступный клиент, например установленное приложение, запущенное на мобильном устройстве. Значение по умолчанию означает, что тип приложения-отката — это `false` конфиденциальный клиент, например веб-приложение. Существуют определенные сценарии, в которых Azure AD не может определить тип клиентского приложения (например, поток [ROPC,](https://tools.ietf.org/html/rfc6749#section-4.3) где он настроен без указания URI перенаправления). В этих случаях Azure AD будет интерпретировать тип приложения в зависимости от значения этого свойства. |
 | keyCredentials          | Коллекция [keyCredential](../resources/keycredential.md)                   | Коллекция ключевых учетных данных, связанных с приложением. Значение NULL не допускается.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | logo                    | Stream                                                                      | Основной логотип для приложения. Значение NULL не допускается.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| onPremisesPublishing    | [onPremisesPublishing](../resources/onpremisespublishing.md)                | Представляет набор свойств для настройки [прокси-сервера приложения Azure AD](https://aka.ms/whyappproxy) для локального приложения. Это свойство можно установить только после создания приложения.                                                                                                                                                                                                                                                                                                                                                        |
+| onPremisesPublishing    | [onPremisesPublishing](../resources/onpremisespublishing.md)                | Представляет набор свойств для настройки [прокси-сервера приложения Azure AD](/azure/active-directory/app-proxy/what-is-application-proxy) для локального приложения. Это свойство можно установить только после создания приложения.                                                                                                                                                                                                                                                                                                                                                        |
 | optionalClaims          | optionalClaims                                                              | Разработчики приложений могут настраивать необязательные утверждения в своих приложениях Azure AD, чтобы указать, какие утверждения им нужны в маркерах, отправляемых в приложения службой маркеров безопасности (Майкрософт). Дополнительные [сведения см. в дополнительных](/azure/active-directory/develop/active-directory-optional-claims) утверждениях.                                                                                                                                                                                                                                                               |
 | parentalControlSettings | [parentalControlSettings](../resources/parentalcontrolsettings.md)          | Указывает параметры родительского контроля для приложения.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | publicClient            | [publicClientApplication](../resources/publicclientapplication.md)          | Указывает параметры для установленных клиентов, например классических или мобильных устройств.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -110,6 +110,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/update-application-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-application-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### <a name="response"></a>Отклик
@@ -134,6 +138,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-
-

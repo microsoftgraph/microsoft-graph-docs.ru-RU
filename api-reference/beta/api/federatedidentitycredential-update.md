@@ -5,12 +5,12 @@ author: kjyam98
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: b9e8739dc0ae0b8f3eddd11ff395911d01ee2552
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 4ed503883bca7da4a1e141684f373f932d07b2db
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61860040"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62127874"
 ---
 # <a name="update-federatedidentitycredential"></a>Обновление federatedIdentityCredential
 Пространство имен: microsoft.graph
@@ -44,7 +44,7 @@ PATCH /applications/{applicationId}/federatedIdentityCredentials/{federatedIdent
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -56,8 +56,8 @@ PATCH /applications/{applicationId}/federatedIdentityCredentials/{federatedIdent
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |аудитории|Коллекция строк|Список аудиторий, которые могут отображаться в выданных маркерах. Рекомендуемое значение `api://AzureADTokenExchange` . |
-|description|String|Предоставленное пользователем описание того, для чего используется federatedIdentityCredential. |
-|эмитент|String|URL-адрес входящих доверенных эмитентов (Secure Token Service). Соответствует утверждению эмитента о маркере доступа. Например, в сценарии "Управляемые ключи клиента" Azure AD является эмитентом и допустимым значением будет `https://login.microsoftonline.com/{tenantid}/v2.0` . Сочетание значений эмитента **и** субъекта должно **быть** уникальным в приложении. |
+|description|Строка|Предоставленное пользователем описание того, для чего используется federatedIdentityCredential. |
+|эмитент|Строка|URL-адрес входящих доверенных эмитентов (Secure Token Service). Соответствует утверждению эмитента о маркере доступа. Например, в сценарии "Управляемые ключи клиента" Azure AD является эмитентом и допустимым значением будет `https://login.microsoftonline.com/{tenantid}/v2.0` . Сочетание значений эмитента **и** субъекта должно **быть** уникальным в приложении. |
 |subject|String|<li>Для эмитента Azure AD службаPrincipal (может представлять управляемый идентификатор), которая может `objectId` олицетворять приложение. Объект, связанный с этим GUID, должен существовать в клиенте.</li><li>Для всех остальных эмитентов строка без дополнительной проверки</ul><br><br>Сочетание значений эмитента **и** субъекта должно **быть** уникальным в приложении.|
 
 
@@ -108,6 +108,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-federatedidentitycredential-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-federatedidentitycredential-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

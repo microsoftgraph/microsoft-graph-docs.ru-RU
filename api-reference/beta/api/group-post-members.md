@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 45fcfd9ab14e87d179264b276c79e26e46b66829
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: ad454155b471eee5338c1efffc670a56dc820689
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61223306"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62113392"
 ---
 # <a name="add-members"></a>Добавление участников
 
@@ -23,7 +23,7 @@ ms.locfileid: "61223306"
 Можно добавить пользователей, директоров служб или другие группы. 
 
 > [!IMPORTANT]
-> + Можно добавлять только членов в группы безопасности и Microsoft 365.
+> + Можно добавить участников только в группы безопасности и Microsoft 365.
 > + Вы не можете добавлять группы безопасности в группы Microsoft 365.
 > + Вы не можете добавлять группы Microsoft 365 в группы безопасности или другие группы Microsoft 365.
 
@@ -45,7 +45,7 @@ POST /groups/{group-id}/members/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя | Описание|
 |:---- |:-----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание добавляемого объекта [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) или [group](../resources/group.md) в формате JSON.
@@ -88,6 +88,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/add-group-member-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/add-group-member-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

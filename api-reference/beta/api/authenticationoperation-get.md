@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmcla
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c574a3450b70211a997243673973a18080391aef
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 18244c3f0e4350bdfdcfc8405746c4a69f12542f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61223311"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62094915"
 ---
 # <a name="get-authentication-operation"></a>Операция проверки подлинности
 
@@ -21,7 +21,7 @@ ms.locfileid: "61223311"
 Извлечение свойств и связей [объекта](../resources/operation.md) операции. В настоящее время эти операции создаются путем инициации сброса пароля с помощью метода [сброса](passwordauthenticationmethod-resetpassword.md) пароля. Объект операции сообщает звониму о текущем состоянии операции сброса пароля. Возможные состояния:
 
 * NotStarted
-* Работает
+* Выполняется
 * Succeeded
 * Не выполнено
 
@@ -52,7 +52,7 @@ ms.locfileid: "61223311"
 GET /users/{id | userPrincipalName}/authentication/operations/{id}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
 Этот метод не поддерживает необязательные параметры запроса для настройки ответа.
 
@@ -60,9 +60,9 @@ GET /users/{id | userPrincipalName}/authentication/operations/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -103,6 +103,10 @@ GET /users/{id | userPrincipalName}/authentication/operations/{id}
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-operation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-operation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

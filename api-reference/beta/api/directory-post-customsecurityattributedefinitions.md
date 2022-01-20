@@ -5,12 +5,12 @@ author: rolyon
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b7f49cbddc27a3681882fa9756ff0b46dd2fdb8f
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 5cb5cb06d50b001514b1c27f3eb68b0024b558cf
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226804"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62106344"
 ---
 # <a name="create-customsecurityattributedefinition"></a>Создание customSecurityAttributeDefinition
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "61226804"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CustomSecAttributeDefinition.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|CustomSecAttributeDefinition.ReadWrite.All|
+|Приложение|CustomSecAttributeDefinition.ReadWrite.All|
 
 Пользователю, заявляемого в службу, также необходимо уписать администратору определения атрибутов [роль каталога](/azure/active-directory/roles/permissions-reference. По умолчанию глобальные роли администратора и других администраторов не имеют разрешений на чтение, определение или назначение настраиваемого атрибута безопасности.
 
@@ -43,7 +43,7 @@ POST /directory/customSecurityAttributeDefinitions
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,12 +55,12 @@ POST /directory/customSecurityAttributeDefinitions
 |:---|:---|:---|
 |attributeSet|Строка|Имя набора атрибутов. Случай нечувствительный. Обязательный.|
 |description|Строка|Описание настраиваемого атрибута безопасности. Может иметь длину до 128 символов и включать символы Unicode. Не может содержать пробелы или специальные символы. Можно изменить позже. Необязательный параметр.|
-|isCollection|Логическое|Указывает, можно ли наказать несколько значений к настраиваемой атрибуту безопасности. Не удается изменить позже. Если `type` задана настройка Boolean, `isCollection` не может быть задана истина. Обязательный.|
-|isSearchable|Boolean|Указывает, будут ли индексироваться пользовательские значения атрибутов безопасности для поиска объектов, за которые назначены значения атрибутов. Не удается изменить позже. Обязательный.|
-|name|String|Имя настраиваемого атрибута безопасности. Должно быть уникальным в наборе атрибутов. Может иметь длину до 32 символов и включать символы Unicode. Не может содержать пробелы или специальные символы. Не удается изменить позже. Случай нечувствительный. Обязательный.|
+|isCollection|Логическое|Указывает, можно ли наказать несколько значений к настраиваемой атрибуту безопасности. Не удается изменить позже. Если `type` задана настройка Boolean, `isCollection` не может быть задана истина. Обязательное.|
+|isSearchable|Логический|Указывает, будут ли индексироваться пользовательские значения атрибутов безопасности для поиска объектов, за которые назначены значения атрибутов. Не удается изменить позже. Обязательное.|
+|name|String|Имя настраиваемого атрибута безопасности. Должно быть уникальным в наборе атрибутов. Может иметь длину до 32 символов и включать символы Unicode. Не может содержать пробелы или специальные символы. Не удается изменить позже. Случай нечувствительный. Обязательное.|
 |status|String|Указывает, активен ли настраиваемый атрибут безопасности или отключен. Допустимые значения `Available` и `Deprecated` . Можно изменить позже. Обязательное.|
-|type|Строка|Тип данных для пользовательских значений атрибута безопасности. Поддерживаемые типы `Boolean` , `Integer` и `String` . Не удается изменить позже. Обязательный.|
-|usePreDefinedValuesOnly|Логическое|Указывает, могут ли быть назначены только предопределяемые значения атрибуту настраиваемой безопасности. Если установлено значение false, разрешены значения свободной формы. Позже может быть изменено с true на false, но не может быть изменено с false на true. Если `type` задана настройка Boolean, `usePreDefinedValuesOnly` не может быть задана истина. Обязательный.|
+|type|Строка|Тип данных для пользовательских значений атрибута безопасности. Поддерживаемые типы `Boolean` , `Integer` и `String` . Не удается изменить позже. Обязательное.|
+|usePreDefinedValuesOnly|Логический|Указывает, могут ли быть назначены только предопределяемые значения атрибуту настраиваемой безопасности. Если установлено значение false, разрешены значения свободной формы. Позже может быть изменено с true на false, но не может быть изменено с false на true. Если `type` задана настройка Boolean, `usePreDefinedValuesOnly` не может быть задана истина. Обязательное.|
 
 Свойство `id` автогенерировано и не может быть установлено.
 
@@ -118,6 +118,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-customsecurityattributedefinition-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-customsecurityattributedefinition-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -198,6 +202,10 @@ Content-length: 310
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-customsecurityattributedefinition-v2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-customsecurityattributedefinition-v2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: RuiHou105
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: cd47cf2c04bad5ffc0428516182829aa7ecb0ebf
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: de8ac29ba5212702633a1fab9110a5aff0e84b37
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766811"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62127377"
 ---
 # <a name="manageddevice-getcloudpcremoteactionresults"></a>managedDevice: getCloudPcRemoteActionResults
 
@@ -28,7 +28,7 @@ ms.locfileid: "59766811"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|CloudPC.ReadWrite.All|
+|Приложение|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,9 +45,9 @@ GET /deviceManagement/managedDevices/{managedDeviceId}/getCloudPcRemoteActionRes
 
 | Имя          | Описание               |
 | :------------ | :------------------------ |
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDev
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/manageddevice-getcloudpcremoteactionresults-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/manageddevice-getcloudpcremoteactionresults-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
