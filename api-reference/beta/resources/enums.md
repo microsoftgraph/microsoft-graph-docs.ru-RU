@@ -5,16 +5,23 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 507088d2c71137ab416ba39629c8607bf7554e83
-ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
+ms.openlocfilehash: 17fd1b8df73c16dea859fc9a35ae12c19a0b381a
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61646757"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62104969"
 ---
 # <a name="enum-values"></a>Значения Enum
 
 Пространство имен: microsoft.graph
+
+### <a name="usersigninrecommendationscope-values"></a>значения userSignInRecommendationScope 
+
+|Member|
+|:---|
+|клиент|
+|приложение|
 
 ### <a name="incomingtokentype-values"></a>значения incomingTokenType 
 
@@ -213,12 +220,12 @@ ms.locfileid: "61646757"
 
 |Member|
 |:---|
-|String|
+|Строка|
 |Целое число|
-|Справочные материалы|
+|Справка|
 |Binary|
-|Boolean|
-|DateTime|
+|Логическое|
+|Даты и время|
 
 ### <a name="mutability-values"></a>значения мутируемости
 
@@ -747,6 +754,15 @@ ms.locfileid: "61646757"
 |слабый|
 |unknown|
 
+### <a name="authenticationcontextdetail-values"></a>значения authenticationContextDetail
+
+|Member|
+|:---|
+|обязательно|
+|previouslySatisfied|
+|notApplicable|
+|unknownFutureValue|
+
 ### <a name="educationaddedstudentaction-values"></a>значения educationAddedStudentAction
 
 |Member|
@@ -790,6 +806,19 @@ ms.locfileid: "61646757"
 |включено|
 |отключено|
 |unknownFutureValue|
+
+### <a name="expirationrequirement-values"></a>значения expirationRequirement
+
+|Member|
+|:---|
+|rememberMultifactorAuthenticationOnTrustedDevices|
+|tenantTokenLifetimePolicy|
+|audienceTokenLifetimePolicy|
+|signInFrequencyPeriodicReauthentication|
+|ngcMfa|
+|signInFrequencyEveryTime|
+|unknownFutureValue|
+
 
 ### <a name="replyrestriction-values"></a>значения replyRestriction
 
@@ -979,7 +1008,7 @@ ms.locfileid: "61646757"
 |Member|
 |:---|
 |event|
-|message|
+|сообщение|
 |driveItem|
 |externalItem|
 |site|
@@ -1140,7 +1169,7 @@ ms.locfileid: "61646757"
 | занят             | 2     |
 | oof              | 3     |
 | workingElsewhere | 4     |
-| unknown          | –1    |
+| unknown          | -1    |
 
 
 ### <a name="physicaladdresstype-values"></a>значения physicalAddressType
@@ -1157,7 +1186,7 @@ ms.locfileid: "61646757"
 
 | Member
 |:-------------------------
-| обязательно
+| Обязательный
 | необязательный
 | resource
 
@@ -1184,7 +1213,7 @@ ms.locfileid: "61646757"
 
 | Элемент      | Значение |
 | :---------- | :---- |
-| Авто        | –1    |
+| Авто        | -1    |
 | lightBlue   | 0     |
 | lightGreen  | 1     |
 | lightOrange | 2     |
@@ -1391,7 +1420,7 @@ ms.locfileid: "61646757"
 | Владелец       | 0     |
 | Участник | 1     |
 | Reader      | 2     |
-| Нет        | –1    |
+| Нет        | -1    |
 
 
 ### <a name="operationstatus-values"></a>значения operationStatus
@@ -1399,7 +1428,7 @@ ms.locfileid: "61646757"
 | Member
 |:-----------------
 |NotStarted
-|Работает
+|Выполняется
 |Завершено
 |Не выполнено
 
@@ -1550,7 +1579,7 @@ ms.locfileid: "61646757"
 
 | Элемент   | Значение |
 | :------- | :---- |
-| Нет     | –1    |
+| Нет     | -1    |
 | preset0  | 0     |
 | preset1  | 1     |
 | preset2  | 2     |
@@ -1714,7 +1743,7 @@ Enum для серьезности оповещений.
 
 | Элемент            | Значение | Описание                  |
 | :---------------- | :---- | :--------------------------- |
-| unknown           | –1    | Неизвестно.                     |
+| unknown           | -1    | Неизвестно.                     |
 | интерактивный       | 0     | Logon является интерактивным.        |
 | remoteInteractive | 1     | Logon — это удаленный интерактивный. |
 | сеть           | 2     | Logon — это сеть.            |
@@ -1727,7 +1756,7 @@ Enum для серьезности оповещений.
 
 | Элемент        | Значение | Описание                     |
 | :------------ | :---- | :------------------------------ |
-| unknown       | –1    | Неизвестно.                        |
+| unknown       | -1    | Неизвестно.                        |
 | стандартный      | 0     | Член группы стандартных пользователей. |
 | power         | 1     | Член группы Power Users.    |
 | администратор | 2     | Член группы Администраторы. |
@@ -1850,7 +1879,7 @@ Enum для серьезности оповещений.
 
 |Member|
 |:---|
-|message|
+|сообщение|
 |chatEvent |
 |ввод текста |
 |unknownFutureValue|
@@ -1891,6 +1920,9 @@ Enum для серьезности оповещений.
 |ADFederationServices|
 |unknownFutureValue|
 |AzureADBackupAuth|
+|ADFederationServicesMFAAdapter|
+|NPSExtension|
+
 
 ### <a name="riskdetectiontimingtype-values"></a>значения riskDetectionTimingType
 
@@ -1932,7 +1964,7 @@ Enum для серьезности оповещений.
 | Member       |
 |:--------------|
 |event|
-|message|
+|сообщение|
 |driveItem|
 |externalFile|
 |externalItem|
@@ -2115,7 +2147,7 @@ Enum для серьезности оповещений.
 |:---|:---|
 |Нет|0|
 |High (Высокий)|1|
-|Низкие|2|
+|Низкий|2|
 
 ### <a name="threatassessmentcontenttype-values"></a>значения threatAssessmentContentType
 
@@ -2243,7 +2275,7 @@ Enum для серьезности оповещений.
 |валюта | столбец валюты. |
 |dateTime | Столбец dateTime. |
 |lookup | столбец lookup. |
-|логический | Столбец Да/Нет. |
+|boolean | Столбец Да/Нет. |
 |пользователь | столбец персоны или группы. |
 |url | гиперссылка или столбец изображения. |
 |вычисляется | вычислимый столбец. |
@@ -2268,7 +2300,7 @@ Enum для серьезности оповещений.
 | Элемент                | Значение | Описание                         |
 |:----------------------|:------|:------------------------------------|
 | string                | 1     | строковый тип данных                    |
-| логический               | 2     | тип данных Boolean                   |
+| boolean               | 2     | тип данных Boolean                   |
 | int64                 | 3     | Тип данных Int                       |
 | stringCollection      | 4     | Тип данных коллекции строк         |
 |dateTime|5||
@@ -2370,7 +2402,7 @@ Enum для серьезности оповещений.
 
 |Элемент    |Значение    |Описание |
 |:---------|:--------|:----------- |
-|team      |0        |Указывает, что Teams приложение может быть установлено в команде и уполномочено получать доступ к данным этой группы.|
+|команда      |0        |Указывает, что Teams приложение может быть установлено в команде и уполномочено получать доступ к данным этой группы.|
 |groupChat |1        |Указывает, что Teams приложение может быть установлено в групповом чате и уполномочено получать доступ к данным группового чата.|
 |personal  |2        |Указывает, что Teams приложение может быть установлено в личной области пользователя и уполномочено получать доступ к данным этого пользователя.|
 
@@ -2543,8 +2575,8 @@ Enum для серьезности оповещений.
 
 |Member|
 |:---|
-|team|
-|channel|
+|команда|
+|канал|
 |чат|
 |unknownFutureValue|
 

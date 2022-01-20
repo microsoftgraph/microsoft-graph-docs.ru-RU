@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 6772fb415184ab7d7d9fb234c237f0fbaf8b3805
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e710927e5f67d45ceeb60692a05fb449c482e48d
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60988182"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62091100"
 ---
 # <a name="add-accessreview-reviewer"></a>Добавление рецензента accessReview
 
@@ -28,7 +28,7 @@ ms.locfileid: "60988182"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | AccessReview.ReadWrite.Membership |
+|Приложение                            | AccessReview.ReadWrite.Membership |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,14 +40,14 @@ POST /accessReviews/{reviewId}/reviewers
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса укажи JSON представление ID пользователя, который будет рецензентом.
 
 В следующей таблице показаны свойства, которые можно получить при обновлении accessReview.
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| id        | Строка   | Идентификатор пользователя.|
+| id        | String   | Идентификатор пользователя.|
 
 
 ## <a name="response"></a>Отклик
@@ -92,6 +92,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/add-accessreview-reviewer-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/add-accessreview-reviewer-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

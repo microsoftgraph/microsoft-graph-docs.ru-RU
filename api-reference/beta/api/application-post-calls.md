@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b6f9fa8d57671e4704caa77cc9575ff425e12e75
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 64429fe78238f9b3a5dc9da8fdab5119b783c5a2
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60983192"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62119520"
 ---
 <!-- markdownlint-disable MD001 MD022 MD024 -->
 
@@ -30,7 +30,7 @@ ms.locfileid: "60983192"
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                                                                           |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                                                                           |
-| Для приложений                            | Calls.JoinGroupCalls.Chat*, Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All |
+| Приложение                            | Calls.JoinGroupCalls.Chat*, Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All |
 
 > **Примечания:** Для вызова с носители, на которые есть приложения, помимо одного из перечисленных разрешений, требуется разрешение Calls.AccessMedia.All или Calls.AccessMedia.Chat*.
 >
@@ -125,6 +125,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-call-service-hosted-media-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-call-service-hosted-media-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -360,6 +364,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-call-app-hosted-media-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-call-app-hosted-media-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 `<Media Session Configuration>` — это конфигурация сеанса сеанса мультимедиа, которая содержит сведения о сеансах стека мультимедиа. Конкретные сведения о аудио, видео, сведения о Ssession VBSS должны быть переданы здесь.
@@ -593,7 +601,7 @@ Content-Type: application/json
 
 Значения маркера авторизации, URL-адреса вызова, id приложения, имени приложения, пользовательского именем пользователя и id клиента должны быть заменены вместе с сведениями, полученными из API Get  [Online Meetings,](../api/onlinemeeting-get.md) фактическими значениями для работы в примере.
 
-> **Примечание:** В этом примере `Calls.JoinGroupCalls.All` необходимо разрешение или `Calls.JoinGroupCalls.Chat` [разрешение, определенное для ресурсов.](https://aka.ms/teams-rsc)
+> **Примечание:** В этом примере `Calls.JoinGroupCalls.All` необходимо разрешение или `Calls.JoinGroupCalls.Chat` [разрешение, определенное для ресурсов.](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
 
 ##### <a name="request"></a>Запрос
 
@@ -664,6 +672,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/join-meeting-service-hosted-media-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/join-meeting-service-hosted-media-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -955,7 +967,7 @@ Content-Type: application/json
 ### <a name="example-6-join-scheduled-meeting-with-app-hosted-media"></a>Пример 6. Присоединяйтесь к запланированной встрече с средствами массовой информации, на которые было организовано приложение
 Чтобы присоединиться к собранию с помощью носители приложения, обновим конфигурацию мультимедиа с [помощью appHostedMediaConfig,](../resources/apphostedmediaconfig.md) как показано в следующем примере.
 
->**Примечание:** В этом примере `Calls.AccessMedia.All` необходимо разрешение или `Calls.AccessMedia.Chat` [разрешение, определенное для ресурсов.](https://aka.ms/teams-rsc)
+>**Примечание:** В этом примере `Calls.AccessMedia.All` необходимо разрешение или `Calls.AccessMedia.Chat` [разрешение, определенное для ресурсов.](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
 
 <!-- {
   "blockType": "example",
@@ -1260,6 +1272,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-call-service-hosted-media-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-call-service-hosted-media-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>Отклик
@@ -1423,6 +1439,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-call-service-hosted-media-3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-call-service-hosted-media-3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,16 +1,16 @@
 ---
 title: Список calendarView
-description: Получите случаи, исключения и отдельные экземпляры событий в представлении календаря, определенном диапазоном времени,
+description: Получение исключений, повторяемых или единичных экземпляров событий в представлении календаря, которое определяется заданным диапазоном времени,
 ms.localizationpriority: medium
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 57bece413ef8841a57adaefb0dcfadc00d3fa666
-ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
+ms.openlocfilehash: 73c64648ce02d63e4d8d6f6979b0c45e0164ddbd
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2021
-ms.locfileid: "61608740"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62106774"
 ---
 # <a name="list-calendarview"></a>Список calendarView
 
@@ -18,7 +18,7 @@ ms.locfileid: "61608740"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите случаи, исключения и отдельные экземпляры событий в представлении календаря, определенном диапазоном времени, из календаря пользователя по умолчанию или другого календаря `(../me/calendarview)` пользователя.
+Получение в представлении календаря исключений, повторяемых или единичных экземпляров событий за определенный диапазон времени, указанных в стандартном календаре `(../me/calendarview)` или любом другом календаре пользователя.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -62,7 +62,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 
 Этот метод также поддерживает некоторые [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
-**CalendarView** с `$top` минимальным значением 1 и максимум 1000.
+**CalendarView** с `$top` имеет минимальное значение 1 и максимальное значение 1000.
 
 > [!NOTE]
 > Свойства **createdDateTime** и **lastModifiedDateTime** [события](../resources/event.md) не поддерживают `$select`. Чтобы получить их значения, просто запросите **calendarView**, не применяя `$select`.
@@ -80,7 +80,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [event](../resources/event.md) в теле отклика.
 
-Если набор результатов охватывает несколько страниц, **calendarView** возвращает **свойство @odata.nextLink** в ответ, содержащий URL-адрес следующей страницы результатов. Подробные [сведения см. в paging.](/graph/concepts/paging.md)
+Если набор результатов занимает несколько страниц, **calendarView** возвращает в ответе свойство **@odata.nextLink**, содержащее URL-адрес следующей страницы результатов. Дополнительные сведения см. в разделе о [разбиении на страницы](/graph/concepts/paging.md).
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -112,6 +112,10 @@ GET https://graph.microsoft.com/beta/me/calendar/calendarView?startDateTime=2017
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-calendarview-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-calendarview-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

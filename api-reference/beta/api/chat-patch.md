@@ -5,12 +5,12 @@ author: bhartono
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 01c63854541085f015969a580a289d6d00f5eee9
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6be52649f2015f649046edac8d88bf11f2862c17
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60994551"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62123954"
 ---
 # <a name="update-chat"></a>Обновление чата
 Пространство имен: microsoft.graph
@@ -26,9 +26,9 @@ ms.locfileid: "60994551"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Chat.ReadWrite|
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений | ChatSettings.ReadWrite.Chat*, Chat.ReadWrite.All |
+|Приложение | ChatSettings.ReadWrite.Chat*, Chat.ReadWrite.All |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -98,6 +98,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/update-chat-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-chat-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -124,4 +128,3 @@ Content-Type: application/json
     "webUrl": "https://teams.microsoft.com/l/chat/19%3A1c5b01696d2e4a179c292bc9cf04e63b@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
 }
 ```
-

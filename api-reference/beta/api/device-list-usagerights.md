@@ -5,12 +5,12 @@ author: jeeshnair
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 769f78239993311d662a3a7439182df6ad9281af
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 212647c7607698e782824380f072c7e519a7db1f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61015732"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62090712"
 ---
 # <a name="list-device-usagerights"></a>Список использования устройствRights
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "61015732"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Device.Read.All, Directory.Read.All, Directory.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
+|Приложение|Device.Read.All, Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,9 +52,9 @@ GET /devices/{objectId}/usageRights
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
-|odata.maxpagesize|Установите переоценку размера страницы максимального результата. Необязательный параметр.|
+|odata.maxpagesize|Установите переоценку размера страницы максимального результата. Необязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/beta/devices/{objectId}/usageRights
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-usageright-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-usageright-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -157,6 +161,10 @@ GET https://graph.microsoft.com/beta/devices/{objectId}/usageRights?$filter=stat
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-usageright-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-usageright-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

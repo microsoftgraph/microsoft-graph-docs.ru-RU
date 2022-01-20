@@ -1,19 +1,25 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: e3fbbd637a6118978edf82c1eef124152c9cee15
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: 585acc4cda3166990cd7339986e4ae46aaf87bfb
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61294812"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62096899"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+requestBody := msgraphsdk.NewCustomSecurityAttributeDefinition()
+description := "Target completion date (YYYY/MM/DD)"
+requestBody.SetDescription(&description)
+options := &msgraphsdk.CustomSecurityAttributeDefinitionRequestBuilderPatchOptions{
+    Body: requestBody,
+}
 customSecurityAttributeDefinitionId := "customSecurityAttributeDefinition-id"
-graphClient.Directory().CustomSecurityAttributeDefinitionsById(&customSecurityAttributeDefinitionId).Patch(nil)
+graphClient.Directory().CustomSecurityAttributeDefinitionsById(&customSecurityAttributeDefinitionId).Patch(options)
 
 
 ```

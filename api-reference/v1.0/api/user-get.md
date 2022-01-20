@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e90c88e38077a1c13c4b0c36faed00b0efa9af6b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d372ef2cc2e10f5476b91b5426b1654e6302ff38
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022867"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62121658"
 ---
 # <a name="get-a-user"></a>Получение пользователя
 
@@ -61,7 +61,7 @@ GET /me
 | Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type   | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -150,6 +150,10 @@ GET https://graph.microsoft.com/v1.0/me
 [!INCLUDE [sample-code](../includes/snippets/go/get-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-user-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>Отклик
@@ -182,7 +186,7 @@ Content-type: application/json
 
 ### <a name="example-3-use-select-to-retrieve-specific-properties-of-a-user"></a>Пример 3. Использование $select для получения определенных свойств пользователя
 
-Чтобы получить определенные свойства, используйте параметр запроса `$select` OData. Например, чтобы вернуть _displayName_, _givenName_, _postalCode_ и _удостоверения_, можно использовать следующее добавление в запрос `$select=displayName,givenName,postalCode,identities`
+Чтобы получить определенные свойства, используйте параметр запроса `$select` OData. Например, чтобы возвратить свойства _displayName_, _givenName,_ _postalCode_ и _удостоверения,_ в запрос следует добавить следующее: `$select=displayName,givenName,postalCode,identities`
 
 #### <a name="request"></a>Запрос
 
@@ -195,23 +199,27 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode,identities
 ```
 # <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-user-2-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-user-select-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-2-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-select-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-user-2-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-user-select-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-user-2-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-user-select-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-user-2-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/get-user-select-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-user-select-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

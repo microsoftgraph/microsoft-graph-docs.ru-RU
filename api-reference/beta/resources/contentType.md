@@ -2,15 +2,15 @@
 author: daspek
 description: Ресурс contentType представляет тип контента в SharePoint.
 title: contentType
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: bcd888d01f47b98fa5a55a4b6da2fdfe2028e05b
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: 5a0f8fb70900e4498a17db4bc7ba75337c3e4c4d
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50962660"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62111558"
 ---
 # <a name="contenttype-resource-type"></a>тип ресурса contentType
 
@@ -30,7 +30,7 @@ ms.locfileid: "50962660"
 |[Get contentType](../api/contenttype-get.md)|[contentType](../resources/contenttype.md)|Ознакомьтесь с свойствами и отношениями объекта [contentType.](../resources/contenttype.md)|
 |[Обновление contentType](../api/contenttype-update.md)|[contentType](../resources/contenttype.md)|Обновление свойств объекта [contentType.](../resources/contenttype.md)|
 |[Удаление contentType](../api/contenttype-delete.md)|Нет|Удаляет объект [contentType.](../resources/contenttype.md)|
-|[isPublished](../api/contenttype-ispublished.md)|Boolean| Проверка [публикации contentType.](../resources/contenttype.md)|
+|[isPublished](../api/contenttype-ispublished.md)|Логическое| Проверка [публикации contentType.](../resources/contenttype.md)|
 |[publish](../api/contenttype-publish.md)|[contentType](../resources/contenttype.md)| Публикация [контентаType](../resources/contenttype.md).|
 |[unpublish](../api/contenttype-unpublish.md)|[contentType](../resources/contenttype.md)|Unpublish a [contentType](../resources/contenttype.md).|
 |[addCopy](../api/contenttype-addcopy.md)|[contentType](../resources/contenttype.md)|Добавьте копию [contentType](../resources/contenttype.md) с [сайта](../resources/site.md) в [список).](../resources/list.md)|
@@ -52,13 +52,13 @@ ms.locfileid: "50962660"
 | **name**          | string               | Имя типа контента.
 | **order**         | [contentTypeOrder][] | Указывает порядок, в котором тип контента отображается в пользовательском интерфейсе выбора.
 | **parentId**      | string               | Уникальный идентификатор типа контента.
-| **readOnly**      | Boolean              | Если это свойство имеет значение `true`, вам не удастся изменить тип контента. Чтобы изменить тип контента, потребуется сначала присвоить этому свойству значение `false`.
-| **sealed**        | Boolean              | Если это свойство имеет значение `true`, пользователям не удастся изменить тип контента. Кроме того, вам не удастся изменить тип контента с помощью операции сдвига вниз. Только администраторы семейств веб-сайтов могут блокировать или разблокировать типы контента.
-| **isBuiltIn**            | Boolean| Указывает, является ли тип контента встроенным типом контента. 
-| **documentSet**       | [documentSet][]      | [Метаданные набора](https://docs.microsoft.com/sharepoint/governance/document-set-planning#about-document-sets) документов.
-| **documentTemplate**  | [documentSetContent][] | Метаданные шаблона документов. Чтобы убедиться, что документы имеют согласованный контент на сайте и его подмышках, можно связать шаблон Word, Excel или PowerPoint с типом контента сайта.
+| **readOnly**      | Логическое              | Если это свойство имеет значение `true`, вам не удастся изменить тип контента. Чтобы изменить тип контента, потребуется сначала присвоить этому свойству значение `false`.
+| **sealed**        | Логическое              | Если это свойство имеет значение `true`, пользователям не удастся изменить тип контента. Кроме того, вам не удастся изменить тип контента с помощью операции сдвига вниз. Только администраторы семейств веб-сайтов могут блокировать или разблокировать типы контента.
+| **isBuiltIn**            | Логический| Указывает, является ли тип контента встроенным типом контента. 
+| **documentSet**       | [documentSet][]      | [Метаданные набора](/sharepoint/governance/document-set-planning#about-document-sets) документов.
+| **documentTemplate**  | [documentSetContent][] | Метаданные шаблона документов. Чтобы убедиться, что документы имеют согласованное содержимое на сайте и его подмышках, можно связать шаблон Word, Excel или PowerPoint с типом контента сайта.
 | **associatedHubsUrls**       | Коллекция (строка) | Список канонических URL-адресов для сайтов-концентраторов, с которыми связан этот тип контента. Это будет содержать все концентраторы, где этот тип контента находится в очереди для принудительного или уже принудительного. Применение типа контента означает, что тип контента будет применяться к спискам на принудительном сайте.
-| **propagateChanges**   | Boolean              | Если какие-либо изменения, внесенные в тип контента, будут нажаты на унаследованные типы контента и списки, которые `true` реализуют тип контента.
+| **propagateChanges**   | Логическое              | Если какие-либо изменения, внесенные в тип контента, будут нажаты на унаследованные типы контента и списки, которые `true` реализуют тип контента.
 
 
 
@@ -68,9 +68,9 @@ ms.locfileid: "50962660"
 |:----------------|:--------------------------|:-------------------------------
 | **база**   | [contentType][]  | Родительский contentType, из которого получен этот тип контента. 
 | **columnLinks** | Коллекция [columnLink][] | Коллекция столбцов, необходимых для этого типа контента
-| **baseTypes**   | Коллекция ([contentType][])     | Коллекция типов контента, которые являются предками этого типа контента.
-| **columnPositions**       | Коллекция ([columnDefinition][]) | Сведения о порядке столбца в типе контента.
-| **columns**     | Коллекция ([columnDefinition][])  | Коллекция определений столбцов для этого contentType.
+| **baseTypes**   | Collection([contentType][])     | Коллекция типов контента, которые являются предками этого типа контента.
+| **columnPositions**       | Collection([columnDefinition][]) | Сведения о порядке столбца в типе контента.
+| **columns**     | Collection([columnDefinition][])  | Коллекция определений столбцов для этого contentType.
 
 Дополнительные сведения см. в статье [Общие сведения о типах контента и их публикации][contentTypeIntro].
 
@@ -126,5 +126,3 @@ ms.locfileid: "50962660"
   "suppressions": []
 }
 -->
-
-

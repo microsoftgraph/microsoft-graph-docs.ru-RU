@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 636a09bb7d0836ab7b814f978ecf38ee14416f8e
-ms.sourcegitcommit: c900d22144429ac7aecae3355a4cdc1987cc4234
+ms.openlocfilehash: 86a26afb9bba3421fa2ceaa8fbad035e2f47b6fa
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61424751"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62129269"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Использование Microsoft Graph Security API
 
@@ -148,12 +148,10 @@ Microsoft Graph Security API раскрывает новые способы вз
 
 Ознакомьтесь с другими возможностями подключения с помощью Microsoft Graph Security API:
 
-- [Соединители Microsoft Graph Security для Logic Apps, Flow и Power Apps](https://aka.ms/graphsecurityconnectors)
+- [Соединители Microsoft Graph Security для Logic Apps, Flow и Power Apps](/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security)
 - [Примеры записных книжек Jupyter](https://aka.ms/graphsecurityjupyternotebooks)
 
 Взаимодействие с сообществом:
 
 - [Присоединяйтесь к сообществу Tech Community](https://techcommunity.microsoft.com/t5/microsoft-graph-security-api/bd-p/SecurityGraphAPI)
 - [Обсуждения на сайте StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
-
-

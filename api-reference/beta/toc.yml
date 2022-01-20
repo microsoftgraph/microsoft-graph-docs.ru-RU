@@ -1898,15 +1898,15 @@ items:
             items:
               - name: Список представлений календаря
                 href: api/bookingbusiness-list-calendarview.md
-              - name: Список встреч
+              - name: Список
                 href: api/bookingbusiness-list-appointments.md
-              - name: Создание встречи
+              - name: Создание
                 href: api/bookingbusiness-post-appointments.md
-              - name: Получение встречи
+              - name: Получение
                 href: api/bookingappointment-get.md
-              - name: Обновление встречи
+              - name: Обновление
                 href: api/bookingappointment-update.md
-              - name: Удаление встречи
+              - name: Delete
                 href: api/bookingappointment-delete.md
               - name: Отмена встречи
                 href: api/bookingappointment-cancel.md
@@ -12597,7 +12597,7 @@ items:
                         href: api/entitlementmanagementsettings-update.md
               - name: Управление привилегированными пользователями
                 items:
-                  - name: Управление привилегированными пользователями
+                  - name: Служба Privileged Identity Management
                     href: resources/privilegedidentitymanagement-root.md
                   - name: Azure AD (неподготовленная))
                     items:
@@ -14043,7 +14043,7 @@ items:
                 href: api/site-list-subsites.md
               - name: Поиск сайтов
                 href: api/site-search.md
-              - name: Разрешения.
+              - name: Разрешения
                 items:
                   - name: Разрешение
                     href: resources/permission.md

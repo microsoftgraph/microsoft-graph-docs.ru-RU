@@ -5,12 +5,12 @@ author: tarkansevilmis
 ms.localizationpriority: medium
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: a1688a176c192b660e3d63da3d20a473a91b8662
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: dd84a36bde4edef85f53a58c7dd938ad9721c032
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60990064"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62108418"
 ---
 # <a name="create-plannerrostermember"></a>Создание plannerRosterMember
 Пространство имен: microsoft.graph
@@ -52,8 +52,8 @@ POST /planner/rosters/{plannerRosterId}/members
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |userId|String|Идентификатор .|
-|tenantId|String|Идентификатор клиента, к котором принадлежит пользователь. Необязательный параметр. В настоящее время члены реестра не могут быть из разных клиентов.|
-|roles|Набор строк|Дополнительные роли, назначенные пользователю. Необязательный параметр. В настоящее время для пользователей нет дополнительных ролей.|
+|tenantId|String|Идентификатор клиента, к котором принадлежит пользователь. Необязательно. В настоящее время члены реестра не могут быть из разных клиентов.|
+|roles|Набор строк|Дополнительные роли, назначенные пользователю. Необязательно. В настоящее время для пользователей нет дополнительных ролей.|
 
 
 
@@ -98,6 +98,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-plannerrostermember-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-plannerrostermember-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

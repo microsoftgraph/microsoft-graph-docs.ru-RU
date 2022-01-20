@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 68378704aff1d178ef0dd32102969b843ba8ac88
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8a193f2dcc83953d7f98d462d92f01136a241004
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60984884"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62092758"
 ---
 # <a name="update-useraccountinformation"></a>Обновление useraccountinformation
 
@@ -44,7 +44,7 @@ PATCH /users/{id | userPrincipalName}/profile/account/{id}
 | Имя           |Описание                 |
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {token}. Обязательный.  |
-| Content-Type   | application/json. Обязательно |
+| Content-Type   | application/json. Обязательный |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -53,7 +53,7 @@ PATCH /users/{id | userPrincipalName}/profile/account/{id}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |allowedAudiences|Строка|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|countryCode|Строка|Содержит код страны с двумя символами, связанный с учетной записью пользователей.  |
+|countryCode|String|Содержит код страны с двумя символами, связанный с учетной записью пользователей.  |
 |вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |preferredLanguageTag|[localeInfo](../resources/localeinfo.md)|Содержит язык, который пользователь связал в качестве предпочтительного для учетной записи.   |
 
@@ -99,6 +99,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-useraccountinformation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-useraccountinformation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6183cd8c17aacc359f8780f9606c1bdcaacc6145
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 334ff06f7471c6d7367b02c773a493313ba189e5
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61020081"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62104134"
 ---
 # <a name="update-workforceintegration"></a>Обновление рабочей силыИнтеграция
 
@@ -42,7 +42,7 @@ PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -54,7 +54,7 @@ PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 |displayName|Строка|Имя интеграции рабочей силы.|
 |шифрование|workforceIntegrationEncryption|Ресурс шифрования интеграции рабочей силы. |
 |isActive|Логическое|Указывает, является ли эта интеграция рабочей силы активной и доступной в настоящее время.|
-|supportedEntities|Строка| Возможные значения: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. Если выбрано несколько значений, все значения должны начинаться с первой буквы в верхнем шкафу.|
+|supportedEntities|string| Возможные значения: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. Если выбрано несколько значений, все значения должны начинаться с первой буквы в верхнем шкафу.|
 |url|String| URL-адрес интеграции рабочей силы для вызовов из службы переноса. |
 
 ## <a name="response"></a>Отклик
@@ -108,6 +108,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-workforceintegration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-workforceintegration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

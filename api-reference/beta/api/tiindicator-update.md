@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 0cec69b3c56702ad99779dc7941da2b6b59bbf4c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d3e4c65971ad240e5b8ede46a7562f102a4c8ece
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60989476"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62115573"
 ---
 # <a name="update-tiindicator"></a>Обновление объекта tiIndicator
 
@@ -28,7 +28,7 @@ ms.locfileid: "60989476"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | ThreatIndicators.ReadWrite.OwnedBy |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | ThreatIndicators.ReadWrite.OwnedBy |
+| Приложение                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ PATCH /security/tiIndicators/{id}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization | Bearer {code} **Required** |
+| Авторизация | Bearer {code} **Required** |
 |Prefer | return=representation |
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,20 +51,20 @@ PATCH /security/tiIndicators/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|action|Строка| Действие, применяемая, если индикатор соответствует из средства безопасности targetProduct. Возможные значения: `unknown`, `allow`, `block`, `alert`.|
-|activityGroupNames|Коллекция String|Имя разведки киберугроз для сторон, ответственных за вредоносную деятельность, подпадаемую под индикатор угрозы.|
+|action|string| Действие, применяемая, если индикатор соответствует из средства безопасности targetProduct. Возможные значения: `unknown`, `allow`, `block`, `alert`.|
+|activityGroupNames|Коллекция строк|Имя разведки киберугроз для сторон, ответственных за вредоносную деятельность, подпадаемую под индикатор угрозы.|
 |additionalInformation|Строка|Область catchall, в которую могут быть помещены дополнительные данные из индикатора, не охваченного другими свойствами tiIndicator. Данные, помещенные в дополнительнуюinformation, как правило, не будут использоваться средством безопасности targetProduct.|
 |confidence|Int32|Integer, представляющий доверие к данным в индикаторе, точно определяет вредоносное поведение. Допустимые значения : 0 — 100, а 100 — самые высокие.|
 |description|Строка|Краткое описание (100 символов или менее) угрозы, представленной индикатором.|
 |diamondModel|[diamondModel](../resources/tiindicator.md#diamondmodel-values)|Область бриллиантовой модели, в которой существует этот индикатор. Возможные значения: `unknown`, `adversary`, `capability`, `infrastructure`, `victim`.|
 |expirationDateTime|DateTimeOffset| Строка DateTime, указывающая, когда истекает срок действия индикатора. Чтобы избежать сохраняющихся в системе устаревших индикаторов, все индикаторы должны иметь дату истечения срока действия. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |externalId|String|Идентификационный номер, который связывает индикатор с системой поставщика индикаторов (например, с иностранным ключом).|
-|isActive|Логическое|Используется для отключения индикаторов внутри системы. По умолчанию любой представленный индикатор задан как активный. Однако для отключения индикаторов в системе поставщики могут отправлять существующие индикаторы с этим набором в "False".|
+|isActive|Логический|Используется для отключения индикаторов внутри системы. По умолчанию любой представленный индикатор задан как активный. Однако для отключения индикаторов в системе поставщики могут отправлять существующие индикаторы с этим набором в "False".|
 |killChain|[коллекция killChain](../resources/tiindicator.md#killchain-values)|Массив строк JSON, который описывает, какие точки или точки на цепочке убийств этот индикатор цели. Для точных значений см. ниже "killChain values".|
 |knownFalsePositives|Строка|Сценарии, в которых индикатор может вызывать ложные срабатыва- Это должен быть текст, читаемый для человека.|
 |lastReportedDateTime|DateTimeOffset|Последний раз индикатор был замечен. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
-|malwareFamilyNames|Коллекция объектов string|Семейство вредоносных программ, связанное с индикатором, если оно существует. Корпорация Майкрософт предпочитает семейство вредоносных программ Майкрософт, если это возможно, которое можно найти в энциклопедии угрозы Защитник Windows security [Intelligence](https://www.microsoft.com/wdsi/threats).|
-|passiveOnly|Логическое|Определяет, должен ли индикатор вызвать событие, которое видно конечному пользователю. При наборе "true" средства безопасности не будут уведомлять конечного пользователя о том, что произошло "попадание". Это чаще всего рассматривается как режим аудита или бесшумного режима с помощью продуктов безопасности, в которых они просто регистрировали совпадение, но не выполняли действие. Значение по умолчанию − ложь.|
+|malwareFamilyNames|Коллекция строк|Семейство вредоносных программ, связанное с индикатором, если оно существует. Корпорация Майкрософт предпочитает семейство вредоносных программ Майкрософт, если это возможно, которое можно найти в энциклопедии угрозы Защитник Windows security [Intelligence](https://www.microsoft.com/wdsi/threats).|
+|passiveOnly|Логический|Определяет, должен ли индикатор вызвать событие, которое видно конечному пользователю. При наборе "true" средства безопасности не будут уведомлять конечного пользователя о том, что произошло "попадание". Это чаще всего рассматривается как режим аудита или бесшумного режима с помощью продуктов безопасности, в которых они просто регистрировали совпадение, но не выполняли действие. Значение по умолчанию − ложь.|
 |severity|Int32|Набор, представляющий серьезность вредоносного поведения, определяемого данными в индикаторе. Допустимые значения : 0 — 5, где 5 является самым строгим, а нуль — не очень серьезным. Значение по умолчанию: 3.|
 |tags|Коллекция String|Массив строк JSON, который хранит произвольные теги и ключевые слова.|
 |tlpLevel|[tlpLevel](../resources/tiindicator.md#tlplevel-values)| Значение Протокола светофора для индикатора. Возможные значения: `unknown`, `white`, `green`, `amber`, `red`.|
@@ -116,6 +116,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-tiindicator-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-tiindicator-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -175,6 +179,10 @@ Prefer: return=representation
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-tiindicator-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-tiindicator-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
