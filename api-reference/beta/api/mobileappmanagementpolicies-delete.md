@@ -5,12 +5,12 @@ author: michaelrm97
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: a8fac50773d79712e5b330e82f5e89e2eea1982d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 04bb1b93982cca45db7109200979fb0143603910
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61011646"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62099415"
 ---
 # <a name="delete-mobileappmanagementpolicy"></a>Удаление mobileAppManagementPolicy
 
@@ -50,7 +50,7 @@ DELETE /policies/mobileAppManagementPolicies/{id}
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -91,6 +91,10 @@ DELETE https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/ab9
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-mobilitymanagementpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-mobilitymanagementpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

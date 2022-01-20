@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 52ff5d416909d5e88ea56354a772e9c74126f890
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1d115d00fc4c34ec1ba167064116417980ef6165
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61013780"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62122898"
 ---
 # <a name="team-sendactivitynotification"></a>команда: sendActivityNotification
 Пространство имен: microsoft.graph
@@ -26,9 +26,9 @@ ms.locfileid: "61013780"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|TeamsActivity.Send|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|TeamsActivity.Send.Group*, TeamsActivity.Send|
+|Приложение|TeamsActivity.Send.Group*, TeamsActivity.Send|
 
->**Примечание:** Разрешения, отмеченные * [использованием согласия, определенного для ресурсов.](https://aka.ms/teams-rsc)
+>**Примечание:** Разрешения, отмеченные * [использованием согласия, определенного для ресурсов.](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -55,7 +55,7 @@ POST /teams/{teamId}/sendActivityNotification
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Тема уведомления. Указывает обсуждаемый ресурс.|
 |activityType|String|Тип действия. Это должно быть объявлено в [манифесте Teams приложения](/microsoftteams/platform/overview).|
-|chainId|Int64|Необязательный параметр. Используется для переопределения предыдущего уведомления. Используйте то же `chainId` самое в последующих запросах для переопределения предыдущего уведомления.|
+|chainId|Int64|Необязательное свойство. Используется для переопределения предыдущего уведомления. Используйте то же `chainId` самое в последующих запросах для переопределения предыдущего уведомления.|
 |previewText|[itemBody](../resources/itembody.md)|Предварительный текст уведомления. Microsoft Teams только первые 150 символов.|
 |templateParameters|Коллекция [keyValuePair](../resources/keyvaluepair.md)|Значения переменных шаблонов, определенных в записи ленты действий, соответствующие манифесту `activityType` [Teams приложения.](/microsoftteams/platform/overview)|
 |получатель;|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Получатель уведомления. См. [также aadUserNotificationRecipient,](../resources/aadusernotificationrecipient.md) [teamMembersNotificationRecipient](../resources/teammembersnotificationrecipient.md)и [channelMembersNotificationRecipient](../resources/channelmembersnotificationrecipient.md). |

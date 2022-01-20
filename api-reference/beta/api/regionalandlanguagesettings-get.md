@@ -5,12 +5,12 @@ author: jasonbro
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b9e9a58bfe18bccba925c4aca7ba32143d6b0281
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4cf8952b33703f682fa2afd1546059091051367d
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60996875"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62112025"
 ---
 # <a name="get-regionalandlanguagesettings"></a>Get regionalAndLanguageSettings
 
@@ -27,7 +27,7 @@ ms.locfileid: "60996875"
 |----------------------------------|---------------------------------------------- |
 |Делегированные (рабочая или учебная учетная запись)|User.Read, User.Read.All                        |
 |Делегированная (личная учетная запись)      |User.Read, User.Read.All              |
-|Для приложений                       |User.Read, User.Read.All              |
+|Приложение                       |User.Read, User.Read.All              |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +44,7 @@ GET /settings/regionalAndLanguageSettings
 |:-----------|:------|
 | Авторизация  | Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/me/settings/regionalAndLanguageSettings
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-regionalandlanguagesettings-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-regionalandlanguagesettings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: Gopal-MSFT
 ms.localizationpriority: medium
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: ce449178da32f31a3d9ffc644eff7d78171559b0
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: d0fb681c1f1d1e6eb1b4eff9eaf293e6c142e8b9
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61223693"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62114315"
 ---
 # <a name="list-simulations"></a>Перечисление симуляций
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "61223693"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | SecurityEvents.Read.All                     |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Application                            | SecurityEvents.Read.All                     |
+| Приложение                            | SecurityEvents.Read.All                     |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -38,7 +38,7 @@ ms.locfileid: "61223693"
 GET /security/attackSimulation/simulations
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает следующие параметры запроса OData, чтобы помочь настроить ответ: `$count` , , , , , `$filter` `$orderby` `$skiptoken` `$top` `$select` .
 
 Поддержка следующих свойств `$filter` `$orderby` и: **attackTechnique**, **attackType**, **completionDateTime**, **displayName**, **isAutomated**, **launchDateTime**, **состояние**.
@@ -65,9 +65,9 @@ GET /security/attackSimulation/simulations?$select={property}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -105,6 +105,10 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/simulations
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-simulation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-simulation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

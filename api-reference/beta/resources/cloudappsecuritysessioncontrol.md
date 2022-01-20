@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 689b065a6156f009d2425a294aaec8e49c4bee93
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: d2206ea95d4c1d719193ef1ec9aba167c42d79c1
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60488614"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62136696"
 ---
 # <a name="cloudappsecuritysessioncontrol-resource-type"></a>тип ресурса cloudAppSecuritySessionControl
 
@@ -25,7 +25,7 @@ ms.locfileid: "60488614"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |isEnabled     |Boolean      | Указывает, включено ли управление сеансом. |
-|cloudAppSecurityType|cloudAppSecuritySessionControlType| Возможные значения: `mcasConfigured`, `monitorOnly`, `blockDownloads`. Чтобы узнать больше об этих значениях, разверни управление приложениями условного доступа [для рекомендуемых приложений.](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#step-1--configure-your-idp-to-work-with-cloud-app-security) |
+|cloudAppSecurityType|cloudAppSecuritySessionControlType| Возможные значения: `mcasConfigured`, `monitorOnly`, `blockDownloads`. Чтобы узнать больше об этих значениях, разверни управление приложениями условного доступа [для рекомендуемых приложений.](/cloud-app-security/proxy-deployment-aad#step-1--configure-your-idp-to-work-with-cloud-app-security) |
 
 ## <a name="relationships"></a>Связи
 
@@ -60,4 +60,3 @@ ms.locfileid: "60488614"
   "section": "documentation",
   "tocPath": ""
 }-->
-

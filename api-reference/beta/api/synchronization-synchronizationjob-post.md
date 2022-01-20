@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 58db52c4a510cc50d01b8c464c2475b417e15f22
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 54c62c804a136620ca11a3625723afcdbcd0703b
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61020362"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62105304"
 ---
 # <a name="create-synchronizationjob"></a>Создание синхронизацииJob
 
@@ -27,7 +27,7 @@ ms.locfileid: "61020362"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается.|
-|Для приложений                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All  | 
+|Приложение                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All  | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/
 |:---------------|:--------|:-----------|
 | Authorization  | string  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В корпусе запроса создадим JSON-представление создаваемого объекта [синхронизацииJob.](../resources/synchronization-synchronizationjob.md) Единственное необходимое свойство `templateId` . Свойство `templateId` должно соответствовать одному из шаблонов, созданных для этого основного приложения или службы. Чтобы найти доступные шаблоны, используйте [шаблоны List.](synchronization-synchronizationtemplate-list.md)
 
@@ -85,6 +85,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-synchronizationjob-from-synchronization-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-synchronizationjob-from-synchronization-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

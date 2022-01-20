@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2893b693cef6eda28e6debf29d9777f6e7e60b0d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 603a31a3a35a9a02110a56460e034e2633d6c2ee
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60993341"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62122205"
 ---
 # <a name="list-classes-of-an-educationuser"></a>Список классов educationUser
 
@@ -27,7 +27,7 @@ ms.locfileid: "60993341"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EduRoster.ReadBasic  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | EduRoster.Read.All, EduRoster.ReadWrite.All | 
+|Приложение | EduRoster.Read.All, EduRoster.ReadWrite.All | 
 
 > [!NOTE]
 > Примечание. Если используется делегированный маркер, участники могут видеть сведения только о своих курсах.
@@ -46,7 +46,7 @@ GET /education/users/{id}/classes
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [educationClass](../resources/educationclass.md) в теле отклика.
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/v1.0/education/me/classes
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-classes-3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-classes-3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

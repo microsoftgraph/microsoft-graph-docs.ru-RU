@@ -6,12 +6,12 @@ ms.localizationpriority: high
 ms.prod: sharepoint
 description: Вы можете получить коллекцию дочерних сайтов, определенных для сайта.
 doc_type: apiPageType
-ms.openlocfilehash: d7b4adefca368be21957c74468f9aa3471fb48b9
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 70a17527dc5caa98b2f1301a36cae8fca4feb3da
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61027151"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62110640"
 ---
 # <a name="enumerate-subsites"></a>Перечисление дочерних сайтов
 
@@ -58,6 +58,10 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/sites
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-subsites-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-subsites-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

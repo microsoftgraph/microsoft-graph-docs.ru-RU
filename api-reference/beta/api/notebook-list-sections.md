@@ -5,12 +5,12 @@ author: jewan-microsoft
 ms.localizationpriority: medium
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: fa8e29d032fc4260323f3c28e77d54e0dc340b1d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c276038d0fdc8bcd44b98aa0131adf64ba25fee7
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61021804"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62125859"
 ---
 # <a name="list-sections"></a>Вывод списка разделов
 
@@ -47,7 +47,7 @@ GET /sites/{id}/onenote/notebooks/{id}/sections
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 | Accept | строка | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/me/onenote/notebooks/{id}/sections
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/notebook-get-sections-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/notebook-get-sections-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

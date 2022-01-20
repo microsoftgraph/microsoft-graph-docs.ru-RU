@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c00f6e3e6191a6572fbf005b776d33aed37ac921
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5150a70e4b41c637c884ce43665c6f613cf80780
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60979108"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62117704"
 ---
 # <a name="list-members-of-an-educationclass"></a>Список участников образовательного класса
 
@@ -25,7 +25,7 @@ ms.locfileid: "60979108"
 | :------------------------------------- | :------------------------------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic                                                 |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                                                       |
-| Для приложений                            | EduRoster.Read.All, EduRoster.ReadWrite.All plus Member.Read.Hidden |
+| Приложение                            | EduRoster.Read.All, EduRoster.ReadWrite.All plus Member.Read.Hidden |
 
 > [!NOTE]
 > Примечание. Если используется делегированный маркер, участники могут видеть сведения только о своих курсах.
@@ -49,7 +49,7 @@ GET /education/classes/{id}/members
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [educationUser](../resources/educationuser.md) в теле отклика.
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/members
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationclass-members-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationclass-members-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

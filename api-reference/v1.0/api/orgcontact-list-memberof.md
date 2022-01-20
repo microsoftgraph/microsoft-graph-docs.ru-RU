@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 7474e60bf6a4ddf6462f08d469bd5d1fbf1b9606
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4f318c1c3aa6c73316c1d7c2d4da3a9bdcb3958d
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60996127"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62092191"
 ---
 # <a name="list-memberof"></a>Список memberOf
 
@@ -25,7 +25,7 @@ ms.locfileid: "60996127"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | OrgContact.Read.All и Group.Read.All, Directory.Read.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | OrgContact.Read.All и Group.Read.All, Directory.Read.All |
+|Приложение | OrgContact.Read.All и Group.Read.All, Directory.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -35,14 +35,14 @@ ms.locfileid: "60996127"
 GET /contacts/{id}/memberOf
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запроса OData для](/graph/query-parameters) `$select` настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$select` для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:-----------|:----------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/v1.0/contacts/{id}/memberOf
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/contact-get-memberof-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/contact-get-memberof-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ description: Обновление типа контента.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: d4a5199682d4b4c7e52901997c55a7bcc6ed6f85
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: bd7e298add779e5f363ab3e5fe7ea6af81fa27f2
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60996280"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62126425"
 ---
 # <a name="update-contenttype"></a>Обновление contentType
 Пространство имен: microsoft.graph
@@ -31,7 +31,7 @@ ms.locfileid: "60996280"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.Manage.All, Sites.FullControl.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений |Sites.Manage.All, Sites.FullControl.All |
+|Приложение |Sites.Manage.All, Sites.FullControl.All |
 
   
 
@@ -124,6 +124,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-contenttype-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-contenttype-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

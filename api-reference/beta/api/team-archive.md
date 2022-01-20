@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 99d1dda8a367b3f356a77a619ef6f73d8fb45ff8
-ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
+ms.openlocfilehash: 2f06ea5d16e67aaecf6d43717875c01427eccc5b
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "61604415"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62105284"
 ---
 # <a name="archive-team"></a>Архивация команды
 
@@ -22,7 +22,7 @@ ms.locfileid: "61604415"
 
 Архивация — это асинхронная операция. Команда архивируется после успешного завершения асинхронной операции, которая может выполняться после отклика этого API.
 
-Чтобы архивировать команду, команда и [группа](../resources/group.md) должны иметь владельца.
+Чтобы архивировать команду, у команды и [группы](../resources/group.md) должен быть владелец.
 
 Чтобы восстановить команду из архивированного состояния, используйте API для [распаковки](team-unarchive.md).
 
@@ -35,7 +35,7 @@ ms.locfileid: "61604415"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Application | TeamSettings.ReadWrite.Group *, TeamSettings.ReadWrite.All, Group.ReadWrite.All**, Directory.ReadWrite.All** |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc). Разрешения, отмеченные **, не используются и не должны использоваться.
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). Разрешения, отмеченные **, не используются и не должны использоваться.
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
@@ -120,5 +120,3 @@ Content-Length: 0
   "suppressions": []
 }
 -->
-
-

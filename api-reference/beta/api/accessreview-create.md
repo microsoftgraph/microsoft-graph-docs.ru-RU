@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 516a1567921089f1285d639f4e12f8747e92de91
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4c2ac0c265675516f985a36d29d1b0f2ec76bfd2
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60988161"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62100767"
 ---
 # <a name="create-accessreview"></a>Создание accessReview
 
@@ -32,7 +32,7 @@ ms.locfileid: "60988161"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | AccessReview.ReadWrite.Membership |
+|Приложение                            | AccessReview.ReadWrite.Membership |
 
 Вызываемая должна также иметь разрешение ProgramControl.ReadWrite.All, чтобы после создания обзора доступа вызываемая мог создать [программуControl](../resources/programcontrol.md).
 Кроме того, подписанный пользователь также должен быть в роли каталога, что позволяет им создавать обзор доступа.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviews-root.md)
@@ -45,7 +45,7 @@ POST /accessReviews
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Описание |
 |:-------------|:------------|
-| Authorization | Носитель \{токен\}. Обязательный. |
+| Авторизация | Носитель \{токен\}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -58,8 +58,8 @@ POST /accessReviews
 | displayName             |Строка                                                        | Имя обзора доступа.  |
 | startDateTime           |DateTimeOffset                                                | DateTime, когда планируется начать проверку.  Это должна быть дата в будущем.   |
 | endDateTime             |DateTimeOffset                                                | DateTime, когда проверка должна завершиться. Это должно быть по крайней мере на один день позже даты начала.   |
-| description             |Строка                                                        | Описание, чтобы показать рецензентам. |
-| businessFlowTemplateId  |Строка                                                        | Идентификатор шаблона бизнес-потока, полученный из [businessFlowTemplate.](../resources/businessflowtemplate.md)  |
+| description             |String                                                        | Описание, чтобы показать рецензентам. |
+| businessFlowTemplateId  |String                                                        | Идентификатор шаблона бизнес-потока, полученный из [businessFlowTemplate.](../resources/businessflowtemplate.md)  |
 | reviewerType            |Строка                                                        | Тип отношения рецензента к правам доступа к рассмотренного объекта, одного из `self` , `delegated` или `entityOwners` . | 
 | reviewedEntity          |[identity](../resources/identity.md)                                     | Объект, для которого создается обзор доступа, например членство в группе или назначения пользователей приложению. | 
 
@@ -149,6 +149,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accessreview-from-accessreviews-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-accessreview-from-accessreviews-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

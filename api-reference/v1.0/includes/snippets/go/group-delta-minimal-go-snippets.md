@@ -1,29 +1,28 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: dbc45d10212be7190277e38743f6e710271b805d
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 50c86240d94228f69a80896ab6459aa97b10fc84
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61104095"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62138372"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.GroupRequestBuilderGetQueryParameters{
+requestParameters := &msgraphsdk.DeltaRequestBuilderGetQueryParameters{
     Select: "displayName,description,mailNickname",
 }
 headers := map[string]string{
     "Prefer": "return=minimal"
 }
-options := &msgraphsdk.GroupRequestBuilderGetOptions{
+options := &msgraphsdk.DeltaRequestBuilderGetOptions{
     Q: requestParameters,
     H: headers,
 }
-groupId := "group-id"
-result, err := graphClient.GroupsById(&groupId).Get(options)
+result, err := graphClient.Groups().Delta()().Get(options)
 
 
 ```

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0c854d5341cfdd6c73e55ac55bbb37006416a070
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b8adf0744e474fa6b9cedf01ff99f0339ba722ab
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60981385"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62096398"
 ---
 # <a name="update-ipnamedlocation"></a>Обновление ipNamedlocation
 
@@ -28,7 +28,7 @@ ms.locfileid: "60981385"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All и Policy.ReadWrite.ConditionalAccess |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy.Read.All и Policy.ReadWrite.ConditionalAccess |
+| Приложение                            | Policy.Read.All и Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -55,7 +55,7 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 |:-------------|:------------|:------------|
 |displayName|Строка|Понятное человеку имя расположения.|
 |ipRanges|Коллекция объектов [ipRange](../resources/iprange.md)|Список диапазонов IP-адресов в формате CIDR IPv4 (1.2.3.4/32) или любого допустимого формата IPv6 от IETF RFC5962.|
-|isTrusted|Логическое|Значение, если `true` это расположение явно доверяется.|
+|isTrusted|Логический|Значение, если `true` это расположение явно доверяется.|
 
 ## <a name="response"></a>Отклик
 
@@ -108,6 +108,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-ipnamedlocation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-ipnamedlocation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

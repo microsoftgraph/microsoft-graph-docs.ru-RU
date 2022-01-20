@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: fec318d4c154b68a7b84cc54c386772cd658dc9c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 89114c2d85d2f9f998b821f0cb4cea67c326e301
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61012269"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62090314"
 ---
 # <a name="delete-tag"></a>Удаление тега
 
@@ -47,7 +47,7 @@ DELETE /compliance/ediscovery/cases/{caseId}/tags/{tagId}?forcedelete=true
 
 | Параметр     | Тип    | Описание                                                                              |
 |:--------------|:--------|:-----------------------------------------------------------------------------------------|
-| forcedelete   | Логическое | Если задайте true, тег и дети будут удалены, если ложные, а тег имеет детей, удаление не удастся. |
+| forcedelete   | Логический | Если задайте true, тег и дети будут удалены, если ложные, а тег имеет детей, удаление не удастся. |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -55,7 +55,7 @@ DELETE /compliance/ediscovery/cases/{caseId}/tags/{tagId}?forcedelete=true
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -96,6 +96,10 @@ DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-tag-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-tag-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

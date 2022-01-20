@@ -5,12 +5,12 @@ author: BarrySh
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 7ae87a556dcd19b99bc268d6a39e8d1ba528d12d
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 2f9f615f1f2898d9c6b2e8ef0725621f2087a152
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241627"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62111717"
 ---
 # <a name="create-permission"></a>Создание разрешений
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "61241627"
 |:--------------------------------------|:-------------------------------------
 |Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.
-|Для приложений                            | Sites.FullControl.All
+|Приложение                            | Sites.FullControl.All
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,7 +41,7 @@ POST /sites/{sitesId}/permissions
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -97,6 +97,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-permission-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-permission-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

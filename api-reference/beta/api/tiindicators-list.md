@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 3bf0ecaa3fb3edadfca8f758caac6fb8b6bd7e52
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a847b2bc9ecc115eadaf8810fe5d3d263dafe781
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60989343"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62095811"
 ---
 # <a name="list-threat-intelligence-indicators"></a>Список показателей сведении об угрозах
 
@@ -28,7 +28,7 @@ ms.locfileid: "60989343"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | ThreatIndicators.ReadWrite.OwnedBy  |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | ThreatIndicators.ReadWrite.OwnedBy |
+| Приложение                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/security/tiIndicators
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-tiindicators-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-tiindicators-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

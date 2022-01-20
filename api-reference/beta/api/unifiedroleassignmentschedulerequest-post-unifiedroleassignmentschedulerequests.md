@@ -5,12 +5,12 @@ author: carolinetempleton
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: ff9f8a5ac0c57b3b0906c8972d4208535f7f5c8a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3caaa5a39542555f6cc89d2385fd56721bb55beb
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031553"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62098421"
 ---
 # <a name="create-unifiedroleassignmentschedulerequest"></a>Создание unifiedRoleAssignmentScheduleRequest
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "61031553"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|RoleAssignmentSchedule.ReadWrite.Directory|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений|Не поддерживается|
+|Приложение|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,13 +51,13 @@ POST /roleManagement/directory/roleAssignmentScheduleRequests
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для unifiedRoleAssignmentScheduleRequest. Key, not nullable, Read-only.|
+|id|String|Уникальный идентификатор для unifiedRoleAssignmentScheduleRequest. Key, not nullable, Read-only.|
 |action|Строка|Представляет тип операции при назначении ролей. Возможные значения: <ul><li>`AdminAssign`: Чтобы администраторы назначали роли пользователям или группам.</li><li>`AdminRemove`: Чтобы администраторы удаляли пользователей или группы из ролей.</li><li> `AdminUpdate`: Чтобы администраторы изменили существующие назначения ролей.</li><li>`AdminExtend`: Чтобы администраторы продлили назначения по истечении срока действия.</li><li>`AdminRenew`. Чтобы администраторы возобновляли истекаемы назначения.</li><li>`SelfActivate`: Чтобы пользователи активировали свои назначения.</li><li>`SelfDeactivate`: Чтобы пользователи отключались от активных назначений.</li><li>`SelfExtend`. Чтобы пользователи просили продлить срок действия назначений.</li><li>`SelfRenew`: Чтобы пользователи запрашивали продление истеканий назначений.</li></ul>
 |principalId|Строка|Идентификатор основного, которому предоставляется назначение.|
 |roleDefinitionId|Строка|Идентификатор унифицированногоRoleDefinition для назначения. Только для чтения.|
-|directoryScopeId|Строка|Идентификатор объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте `/` для области для клиента. Используйте **appScopeId,** чтобы ограничить область только приложения. |
-|appScopeId|String|Идентификатор области, определенной для приложения, когда область назначения является конкретной для приложения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области приложений — это области, которые определяются и понимаются только этим приложением. Используйте `/` для областей приложений для всех клиентов. Используйте **directoryScopeId,** чтобы ограничить область для определенных объектов каталогов, например административных единиц.|
-|isValidationOnly|Логическое|Указывает, является ли вызов проверкой или фактическим вызовом. Только задайте это свойство, если необходимо проверить, подчиняется ли активация дополнительным правилам, таким как MFA, перед отправкой запроса.|
+|directoryScopeId|String|Идентификатор объекта каталога, представляющего область назначения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте `/` для области для клиента. Используйте **appScopeId,** чтобы ограничить область только приложения. |
+|appScopeId|Строка|Идентификатор области, определенной для приложения, когда область назначения является конкретной для приложения. Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области приложений — это области, которые определяются и понимаются только этим приложением. Используйте `/` для областей приложений для всех клиентов. Используйте **directoryScopeId,** чтобы ограничить область для определенных объектов каталогов, например административных единиц.|
+|isValidationOnly|Логический|Указывает, является ли вызов проверкой или фактическим вызовом. Только задайте это свойство, если необходимо проверить, подчиняется ли активация дополнительным правилам, таким как MFA, перед отправкой запроса.|
 |targetScheduleId|Строка|ID объекта расписания, прикрепленного к назначению.|
 |обоснование|Строка|Сообщение, предоставленное пользователями и администраторами при создании запроса о необходимости.|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|Объект расписания запроса назначения ролей.|
@@ -119,6 +119,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignmentschedulerequest-from-unifiedroleassignmentschedulerequests-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedroleassignmentschedulerequest-from-unifiedroleassignmentschedulerequests-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -235,13 +239,17 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignmentschedulerequest-from-unifiedroleassignmentschedulerequests-selfactivate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedroleassignmentschedulerequest-from-unifiedroleassignmentschedulerequests-selfactivate-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",

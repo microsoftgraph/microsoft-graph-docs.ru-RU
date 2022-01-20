@@ -5,12 +5,12 @@ author: hafowler
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: b92ca31c75b13592322f48ed0832bd29a12469ab
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 26aa268f1be5a0b8bcf35041ab7e898a1e97ad9c
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60999765"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62130091"
 ---
 # <a name="list-recoverykeys"></a>Список recoveryKeys
 Пространство имен: microsoft.graph
@@ -28,7 +28,7 @@ ms.locfileid: "60999765"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|BitLockerKey.ReadBasic.All, BitLockerKey.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений|Не поддерживается|
+|Приложение|Не поддерживается|
 
 Для делегирования разрешений, позволяющих приложениям получать ресурсы BitLockerRecoveryKey от имени подписанного пользователя, пользователь должен быть зарегистрированным владельцем устройства, на которое изначально был восстановлен ключ восстановления BitLocker, или вызывающее пользователь должно быть в одной из следующих ролей каталога:
 
@@ -70,10 +70,10 @@ GET /informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
-|ocp-client-name|Имя клиентского приложения, которое выполняет вызов API. Этот загон используется для отладки. Необязательный параметр.|
-|ocp-client-version|Версия клиентского приложения с вызовом API. Этот загон используется для отладки. Необязательный параметр.|
+|ocp-client-name|Имя клиентского приложения, которое выполняет вызов API. Этот загон используется для отладки. Необязательно.|
+|ocp-client-version|Версия клиентского приложения с вызовом API. Этот загон используется для отладки. Необязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -117,6 +117,10 @@ ocp-client-version: "1.2"
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-bitlockerrecoverykey-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-bitlockerrecoverykey-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -192,6 +196,10 @@ ocp-client-version: "1.2"
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-bitlockerrecoverykey-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-bitlockerrecoverykey-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

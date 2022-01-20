@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: madansr7
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: ff9749f2506ac281171c841ea2e89d09a4159c0b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 13c1cd4cb2067e6620b579a8c35d564ab2700c59
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61017512"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62098519"
 ---
 # <a name="get-tenantappmanagementpolicy"></a>Get tenantAppManagementPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "61017512"
 | :------------------------------------- | :--------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                             |
-| Для приложений                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
+| Приложение                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ GET /policies/defaultAppManagementPolicy
 | :------------ | :------------------------ |
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/beta/policies/defaultAppManagementPolicy
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-tenantappmanagementpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-tenantappmanagementpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

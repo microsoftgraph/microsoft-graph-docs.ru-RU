@@ -2,15 +2,15 @@
 author: swapnil1993
 title: 'contentType: isPublished'
 description: Проверьте состояние публикации типа контента на веб-узбе типа контента.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: e61d488dddc9797c3f0623a3e534f54b1bab4708
-ms.sourcegitcommit: 486fe9c77d4d89c5416bb83e8c716e6918c47370
+ms.openlocfilehash: aab304fed276e9794cc1bb2d0536f19e82ef22ac
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53439436"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62100360"
 ---
 # <a name="contenttype-ispublished"></a>contentType: isPublished
 Пространство имен: microsoft.graph
@@ -40,12 +40,12 @@ GET /sites/{siteId}/contentTypes/{contentTypeId}/isPublished
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="response"></a>Отклик
 В случае успешной работы этот вызов возвращает ответ и значение boolean, которое указывает состояние публикации `200 OK` типа контента.
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="example"></a>Пример
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/sites/{siteId}/contentTypes/{contentTypeId}
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/contenttype-ispublished-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/contenttype-ispublished-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: ravennMSFT
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 71dadfa45b09ec40e3ffa43720e2e7e42a55f770
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: eb8f9fdb1c07ed95da0f49149d590b403d211748
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61011688"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62105837"
 ---
 # <a name="update-mobileappmanagementpolicy"></a>Обновление mobileAppManagementPolicy
 
@@ -59,7 +59,7 @@ PATCH /policies/mobileAppManagementPolicies/{id}
 |appliesTo|policyScope|Определяет группы, к которые применяется этот параметр политики. Возможные значения: `none` , `all` , `selected` **Важно: не** может использоваться при `selected` указании этого свойства. Используйте [includedGroups для](../api/mobileappmanagementpolicies-post-includedgroups.md) добавления определенных групп.|
 |complianceUrl|Строка|URL-адрес соответствия приложению управления мобильностью|
 |discoveryUrl|Строка|Обнаружение URL-адреса приложения для управления мобильностью|
-|termsOfUseUrl|String|Условия использования URL-адреса приложения для управления мобильностью|
+|termsOfUseUrl|Строка|Условия использования URL-адреса приложения для управления мобильностью|
 
 ## <a name="response"></a>Отклик
 
@@ -106,6 +106,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-mobilitymanagementpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-mobilitymanagementpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

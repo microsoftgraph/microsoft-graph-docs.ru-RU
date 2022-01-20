@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 7440326ca0d95ff2d631ab67311f62b9ab917bc3
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e06627d9d3e4070e5fa7e63be7f0ee4a820d779b
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60979991"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62123038"
 ---
 # <a name="list-programcontroltypes"></a>List programControlTypes
 
@@ -26,7 +26,7 @@ ms.locfileid: "60979991"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | ProgramControl.Read.All,ProgramControl.ReadWrite.All  |
+|Приложение                            | ProgramControl.Read.All,ProgramControl.ReadWrite.All  |
 
 Подписанный пользователь также должен быть в роли каталога, которая позволяет им читать программу.
 
@@ -40,7 +40,7 @@ GET /programControlTypes
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не следует поставлять тело запроса.
 
 ## <a name="response"></a>Отклик
@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/beta/programControlTypes
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-programcontroltype-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-programcontroltype-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
