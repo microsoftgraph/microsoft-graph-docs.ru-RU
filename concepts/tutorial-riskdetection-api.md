@@ -4,12 +4,12 @@ description: Узнайте, как выявлять и устранять ри�
 author: FaithOmbongi
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 5c32ea73d83366188954f4736e0a1cbd17064ddb
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 4402c6d2873f1405199a0c32701c5d48526bb4d5
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61523260"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161748"
 ---
 # <a name="tutorial-identify-and-remediate-risks-using-microsoft-graph-apis"></a>Руководство. Определение и устранение рисков с помощью API Graph Microsoft
 
@@ -19,7 +19,7 @@ Azure AD Identity Protection предоставляет организациям
 
 >**Примечание:** Объекты отклика, показанные в этом руководстве, могут быть сокращены для чтения. 
 
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="prerequisites"></a>Предварительные требования
 
 Чтобы успешно завершить этот учебник, убедитесь, что у вас есть необходимые предпосылки:
 
@@ -488,7 +488,8 @@ No Content - 204
 - [Что такое защита удостоверений?](/azure/active-directory/identity-protection/overview-identity-protection)
 - [Что такое условный доступ?](/azure/active-directory/conditional-access/overview)
 - [Как это работает: многофакторная проверка подлинности Azure](/azure/active-directory/authentication/concept-mfa-howitworks)
-- [conditionalAccessPolicy](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-1.0)
-- [riskDetection](/graph/api/resources/riskdetection?view=graph-rest-1.0)
-- [riskyUser](/graph/api/resources/riskyuser?view=graph-rest-1.0)
-- [user](/graph/api/resources/user?view=graph-rest-1.0)
+- [Моделирование обнаружения рисков в области защиты удостоверений](/azure/active-directory/identity-protection/howto-identity-protection-simulate-risk)
+- [conditionalAccessPolicy](/graph/api/resources/conditionalaccesspolicy)
+- [riskDetection](/graph/api/resources/riskdetection)
+- [riskyUser](/graph/api/resources/riskyuser)
+- [user](/graph/api/resources/user)

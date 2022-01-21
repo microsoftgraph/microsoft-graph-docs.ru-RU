@@ -1,34 +1,36 @@
 ---
-title: Тип ресурса conditionalAccessSessionControls
-description: Представляет сложный тип элементов управления сеансом, которые применяются после регистрации.
-localization_priority: Normal
-author: videor
+title: тип ресурса conditionalAccessSessionControls
+description: Представляет сложный тип элементов управления сеансами, которые применяются после регистрации.
+ms.localizationpriority: medium
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: bf50399a26999c35730e2ce0c171c1be8777841d
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: c60d87cfab617bea22df27e8a289e90fb889b78a
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50134892"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161634"
 ---
-# <a name="conditionalaccesssessioncontrols-resource-type"></a>Тип ресурса conditionalAccessSessionControls
+# <a name="conditionalaccesssessioncontrols-resource-type"></a>тип ресурса conditionalAccessSessionControls
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет элементы управления сеансом, которые применяются после регистрации.
-Все элементы управления сеансом наследуются [от conditionalAccessSessionControl.](conditionalaccesssessioncontrol.md)
+Представляет элементы управления сеансами, которые применяются после регистрации.
+Все элементы управления сеансом [наследуются из conditionalAccesssesionControl.](conditionalaccesssessioncontrol.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|applicationEnforcedRestrictions|[applicationEnforcedRestrictionsSessionControl](applicationenforcedrestrictionssessioncontrol.md)| Управление сеансом для применения ограничений приложений. Этот контроль сеансов поддерживается только в Exchange Online и Sharepoint Online. |
-|cloudAppSecurity|[cloudAppSecuritySessionControl](cloudappsecuritysessioncontrol.md)| Управление сеансом для применения безопасности облачных приложений.|
-|persistentBrowser|[persistentBrowserSessionControl](persistentbrowsersessioncontrol.md)| Управление сеансом для определения того, следует ли сохранять файлы cookie. Для правильной работы этого сеанса необходимо выбрать все приложения. |
-|signInFrequency|[signInFrequencySessionControl](signinfrequencysessioncontrol.md)| Управление сеансом для принудительной регистрации.|
+|applicationEnforcedRestrictions|[applicationEnforcedRestrictionsSessionControl](applicationenforcedrestrictionssessioncontrol.md)| Управление сеансами для применения ограничений приложения. Только Exchange Online и Sharepoint Online поддерживают управление этим сеансом. |
+|cloudAppSecurity|[cloudAppSecuritySessionControl](cloudappsecuritysessioncontrol.md)| Управление сеансами для применения безопасности облачных приложений.|
+|continuousAccessEvaluation|[continuousAccessEvaluationSessionControl](../resources/continuousaccessevaluationsessioncontrol.md)|Управление сеансами для параметров непрерывной оценки доступа.|
+|disableResilienceDefaults|Логическое| Управление сеансами, определяющая, допустимо ли для Azure AD расширение существующих сеансов на основе сведений, собранных до отключения или нет.|
+|persistentBrowser|[persistentBrowserSessionControl](persistentbrowsersessioncontrol.md)| Управление сеансом, чтобы определить, следует ли сохранять файлы cookie или нет. Все приложения должны быть выбраны для правильной работы управления сеансом. |
+|signInFrequency|[signInFrequencySessionControl](signinfrequencysessioncontrol.md)| Управление сеансом для обеспечения частоты подписей.|
 
 ## <a name="relationships"></a>Связи
 
@@ -44,7 +46,9 @@ ms.locfileid: "50134892"
     "applicationEnforcedRestrictions",
     "persistentBrowser",
     "cloudAppSecurity",
-    "signInFrequency"
+    "signInFrequency",
+    "continuousAccessEvaluation",
+    "disableResilienceDefaults"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessSessionControls",
   "baseType": null
@@ -54,8 +58,10 @@ ms.locfileid: "50134892"
 {
   "applicationEnforcedRestrictions": {"@odata.type": "microsoft.graph.applicationEnforcedRestrictionsSessionControl"},
   "cloudAppSecurity": {"@odata.type": "microsoft.graph.cloudAppSecuritySessionControl"},
+  "continuousAccessEvaluation": {"@odata.type": "microsoft.graph.continuousAccessEvaluationSessionControl"},
   "persistentBrowser": {"@odata.type": "microsoft.graph.persistentBrowserSessionControl"},
-  "signInFrequency": {"@odata.type": "microsoft.graph.signInFrequencySessionControl"}
+  "signInFrequency": {"@odata.type": "microsoft.graph.signInFrequencySessionControl"},
+  "disableResilienceDefaults": false
 }
 ```
 

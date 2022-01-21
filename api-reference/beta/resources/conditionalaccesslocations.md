@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса conditionalAccessLocations
-description: Представляет расположения, включенные в область политики и исключенные из нее.
-localization_priority: Normal
-author: videor
+title: тип ресурса conditionalAccessLocations
+description: Представляет расположения, включенные и исключенные из области политики.
+ms.localizationpriority: medium
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 153d64d32015fcd6119a4d880bbc786905c39b9f
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: 58103e6cc1e81044fb07fa574773ef40b306b69b
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50132404"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161699"
 ---
-# <a name="conditionalaccesslocations-resource-type"></a>Тип ресурса conditionalAccessLocations
+# <a name="conditionalaccesslocations-resource-type"></a>тип ресурса conditionalAccessLocations
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет расположения, включенные в область политики и исключенные из нее.
+Представляет расположения, включенные и исключенные из области политики.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| includeLocations | Коллекция объектов string | ИД расположения в области политики, если явно не исключены, `All` или `AllTrusted` . |
-| excludeLocations | Коллекция объектов string | ИД расположения, исключенные из области действия политики. |
+| includeLocations | Коллекция строк | Определения местоположения в области политики, если явно не исключены, `All` или `AllTrusted` . |
+| excludeLocations | Коллекция строк | ИД расположения исключены из области политики. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

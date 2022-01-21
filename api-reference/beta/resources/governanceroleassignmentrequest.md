@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 8bee3a0abe303d1fe14e592104388b229e4d6424
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: 01bcb98c2dfb8e74ae89494d0e8b6ca9da749369
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694276"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161973"
 ---
 # <a name="governanceroleassignmentrequest-resource-type"></a>тип ресурса governanceRoleAssignmentRequest
 
@@ -37,17 +37,17 @@ ms.locfileid: "60694276"
 ## <a name="properties"></a>Свойства
 | Свойство                  | Тип          |Описание|
 |:--------------------------|:--------------|:----------|
-|id                         |String         |ID запроса на назначение ролей.|
-|resourceId                 |String         |Обязательный. ID ресурса, с которым связан запрос на назначение ролей.|
-|roleDefinitionId           |String         |Обязательный. Id определения роли, с которым связан запрос назначения ролей.|
-|subjectId                  |String         |Обязательный. ID субъекта, с которым связан запрос на назначение ролей.|
-|type                       |String        |Обязательный. Представление типа операции при назначении ролей. Возможные значения: `AdminAdd` `UserAdd` , , , , , , `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `AdminExtend` `UserRenew` `AdminRenew` .|
-|assignmentState|String  |Обязательный. Состояние назначения. Возможные значения: (для назначения, назначенного по назначению), (если оно непосредственно назначено) (администраторами или активировано при назначении, назначенное `Eligible`  `Active` `Active` пользователями).|
+|id                         |Строка         |Идентификатор запроса на назначение ролей.|
+|resourceId                 |String         |Обязательный. Уникальный идентификатор ресурса Azure, связанный с запросом на назначение ролей. Ресурсы Azure могут включать подписки, группы ресурсов, виртуальные машины и SQL базы данных.|
+|roleDefinitionId           |Строка         |Обязательный. Идентификатор определения роли Azure, с котором связан запрос на назначение ролей.|
+|subjectId                  |Строка         |Обязательный. Уникальный идентификатор основного или субъекта, с который связан запрос на назначение ролей. Директорами могут быть пользователи, группы или директора службы.|
+|type                       |Строка        |Обязательный. Представление типа операции при назначении ролей. Возможные значения: `AdminAdd` `UserAdd` , , , , , , `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `AdminExtend` `UserRenew` `AdminRenew` .|
+|assignmentState|Строка  |Обязательный. Состояние назначения. Возможные значения: (для назначения, назначенного по назначению), (если оно непосредственно назначено) (администраторами или активировано при назначении, назначенное `Eligible`  `Active` `Active` пользователями).|
 |requestedDateTime          |DateTimeOffset |Только для чтения. Время создания запроса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`.|
 |schedule                   |[governanceSchedule](governanceschedule.md)|Объект расписания запроса назначения ролей.|
-|reason                     |String         |Сообщение, предоставленное пользователями и администраторами при создании запроса о необходимости.|
+|reason                     |Строка         |Сообщение, предоставленное пользователями и администраторами при создании запроса о необходимости.|
 |status                     |[governanceRoleAssignmentRequestStatus](governanceroleassignmentrequeststatus.md)         |Состояние запроса на назначение ролей.|
-|linkedEligibleRoleAssignmentId|String        |Если это запрос на активацию роли, он представляет id `eligible assignment` переданного; В противном случае значение `null` . |
+|linkedEligibleRoleAssignmentId|Строка        |Если это запрос на активацию роли, он представляет id `eligible assignment` переданного; В противном случае значение `null` . |
 
 |Member|Описание|
 |:---|:---|

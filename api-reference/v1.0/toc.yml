@@ -1336,9 +1336,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Запись вызова
                     href: api/callrecords-callrecord-get.md
-              - name: Session
+              - name: Сеанс
                 items:
-                  - name: Session
+                  - name: Сеанс
                     href: resources/callrecords-session.md
                   - name: Перечисление сеансов
                     href: api/callrecords-session-list.md
@@ -4988,7 +4988,7 @@ items:
                   - name: Получение дельты
                     href: api/oauth2permissiongrant-delta.md
               - name: Защита удостоверений
-                href: resources/identityprotectionroot.md
+                href: resources/identityprotection-overview.md
                 items:
                   - name: Обнаружение рисков
                     href: resources/riskdetection.md
@@ -5359,8 +5359,8 @@ items:
                         href: api/accessreviewinstance-batchrecorddecisions.md
                       - name: Сброс решений
                         href: api/accessreviewinstance-resetdecisions.md
-                      - name: Список решений
-                        href: api/accessreviewinstance-list-decisions.md
+                      - name: Список контактных рецензентов
+                        href: api/accessreviewinstance-list-contactedreviewers.md
                       - name: Элемент решения экземпляра проверки доступа
                         href: resources/accessreviewinstancedecisionitem.md
                         items:
@@ -6120,15 +6120,15 @@ items:
                 items:
                   - name: Внешнее подключение
                     href: resources/externalconnectors-externalconnection.md
-                  - name: Список внешних подключений
+                  - name: Список
                     href: api/externalconnectors-externalconnection-list.md
-                  - name: Создание внешнего подключения
+                  - name: Создание
                     href: api/externalconnectors-external-post-connections.md
-                  - name: Внешние подключения
+                  - name: Получение
                     href: api/externalconnectors-externalconnection-get.md
-                  - name: Обновление внешнего подключения
+                  - name: Обновление
                     href: api/externalconnectors-externalconnection-update.md
-                  - name: Удаление внешнего подключения
+                  - name: Delete
                     href: api/externalconnectors-externalconnection-delete.md
                   - name: Получить операцию
                     href: api/externalconnectors-connectionoperation-get.md
@@ -6136,41 +6136,41 @@ items:
                 items:
                   - name: Схема
                     href: resources/externalconnectors-schema.md
-                  - name: Создание схемы
+                  - name: Создание
                     href: api/externalconnectors-schema-create.md
-                  - name: Получение схемы
+                  - name: Получение
                     href: api/externalconnectors-schema-get.md
               - name: Внешний элемент
                 items:
                   - name: Внешний элемент
                     href: resources/externalconnectors-externalitem.md
-                  - name: Создание внешнего элемента
+                  - name: Создание
                     href: api/externalconnectors-externalitem-create.md
-                  - name: Получить внешний элемент
+                  - name: Получение
                     href: api/externalconnectors-externalitem-get.md
-                  - name: Обновление внешнего элемента
+                  - name: Обновление
                     href: api/externalconnectors-externalitem-update.md
-                  - name: Удаление внешнего элемента
+                  - name: Delete
                     href: api/externalconnectors-externalitem-delete.md
               - name: Внешняя группа
                 items:
                   - name: Внешняя группа
                     href: resources/externalconnectors-externalgroup.md
-                  - name: Создание внешней группы
+                  - name: Создание
                     href: api/externalconnectors-externalconnection-post-groups.md
-                  - name: Получить внешнюю группу
+                  - name: Получение
                     href: api/externalconnectors-externalgroup-get.md
-                  - name: Обновление внешней группы
+                  - name: Обновление
                     href: api/externalconnectors-externalgroup-update.md
-                  - name: Удаление внешней группы
+                  - name: Delete
                     href: api/externalconnectors-externalgroup-delete.md
               - name: Внешний член группы
                 items:
                   - name: Удостоверение
                     href: resources/externalconnectors-identity.md
-                  - name: Создание удостоверений для участника
+                  - name: Создание
                     href: api/externalconnectors-externalgroup-post-members.md
-                  - name: Удаление удостоверения участника
+                  - name: Удалить
                     href: api/externalconnectors-identity-delete.md
       - name: Безопасность
         displayname: 'Security API, Microsoft Intelligent Security Graph'

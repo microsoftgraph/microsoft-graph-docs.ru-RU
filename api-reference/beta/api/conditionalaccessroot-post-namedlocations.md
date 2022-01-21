@@ -2,15 +2,15 @@
 title: Создание namedLocation
 description: Создайте новое имяLocation.
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4bedd0b4204984634efc0e88dcfbd9fc9822e7cc
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 4433d9c754b195c83a15df5fab4c73b17de0c263
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62103763"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161811"
 ---
 # <a name="create-namedlocation"></a>Создание namedLocation
 
@@ -53,7 +53,7 @@ POST /identity/conditionalAccess/namedLocations
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|String|Понятное человеку имя расположения. Обязательный.|
+|displayName|Строка|Понятное человеку имя расположения. Обязательный.|
 |ipRanges|Коллекция объектов [ipRange](../resources/iprange.md)|Список диапазонов IP-адресов в формате CIDR IPv4 (например, 1.2.3.4/32) или любого допустимого формата IPv6 от IETF RFC596. Обязательное. Также **@odata.type** ipRange.|
 
 В следующей таблице перечислены свойства, необходимые для создания [объекта countryNamedLocation.](../resources/countrynamedlocation.md)
@@ -61,7 +61,7 @@ POST /identity/conditionalAccess/namedLocations
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |countriesAndRegions|Коллекция строк|Список стран и/или регионов в формате двух букв, заданный ISO 3166-2. Обязательный.|
-|displayName|String|Понятное человеку имя расположения. Обязательный.|
+|displayName|Строка|Понятное человеку имя расположения. Обязательный.|
 ## <a name="response"></a>Отклик
 
 В случае успешной работы этот метод возвращает код отклика и новый `201 Created` [объект ipNamedLocation](../resources/ipnamedlocation.md) или [объект countryNamedLocation](../resources/countrynamedlocation.md) в тексте ответа.

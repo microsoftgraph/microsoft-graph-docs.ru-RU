@@ -2,15 +2,15 @@
 title: тип ресурса conditionalAccessSGrantControls
 description: Представляет элементы управления грантами, которые необходимо выполнить для выполнения политики.
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 68346c835acb3ad46353fe4a48f6a426861484c8
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 4148f1b7474c619c1dc614847e0b5772df2397e8
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59763627"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161636"
 ---
 # <a name="conditionalaccessgrantcontrols-resource-type"></a>тип ресурса conditionalAccessSGrantControls
 
@@ -26,8 +26,8 @@ ms.locfileid: "59763627"
 |:-------- |:---- |:----------- |
 | operator | Строка | Определяет связь элементов управления грантами. Возможные значения: `AND` , `OR` . |
 | builtInControls | коллекция conditionalAccessGrantControl | Список значений встроенных элементов управления, необходимых политике. Возможные значения: `block` , , , , , `mfa` `compliantDevice` `domainJoinedDevice` `approvedApplication` `compliantApplication` `passwordChange` `unknownFutureValue` . |
-| customAuthenticationFactors | Коллекция объектов string | Список пользовательских ID-элементов элементов управления, необходимых политике. Дополнительные информацию о настраиваемом контроле см. в [специальном элементе управления (предварительный просмотр).](/azure/active-directory/conditional-access/controls#custom-controls-preview) |
-| termsOfUse | Коллекция объектов string | Список [условий использования](agreement.md) ID, необходимых политике. |
+| customAuthenticationFactors | Коллекция строк | Список пользовательских ID-элементов элементов управления, необходимых политике. Дополнительные информацию о настраиваемом контроле см. в [специальном элементе управления (предварительный просмотр).](/azure/active-directory/conditional-access/controls#custom-controls-preview) |
+| termsOfUse | Коллекция строк | Список [условий использования](agreement.md) ID, необходимых политике. |
 
 ### <a name="special-considerations-when-using-passwordchange-as-a-control"></a>Особые соображения при использовании `passwordChange` в качестве управления
 

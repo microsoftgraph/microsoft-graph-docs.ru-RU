@@ -1,16 +1,16 @@
 ---
 title: conditionalAccessDeviceStates Тип ресурса
 description: Представляет состояния устройств в области политики.
-localization_priority: Normal
-author: videor
+ms.localizationpriority: medium
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 152c4edbd641d68f6211111cb29e9794e2a88260
-ms.sourcegitcommit: 9d98d9e9cc1e193850ab9b82aaaf906d70e1378b
+ms.openlocfilehash: baeb5bd02534cd700af50d9f4984ef7e1baf4eb6
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50761802"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62162001"
 ---
 # <a name="conditionalaccessdevicestates-resource-type"></a>conditionalAccessDeviceStates Тип ресурса
 
@@ -24,10 +24,10 @@ ms.locfileid: "50761802"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| includeStates | Коллекция String | Состояния в области политики. `All` является единственным допустимым значением. |
-| excludeStates | Коллекция String | Государства, исключенные из сферы действия политики. Возможные значения: `Compliant` , `DomainJoined` . |
+| includeStates | Коллекция строк | Состояния в области политики. `All` является единственным допустимым значением. |
+| excludeStates | Коллекция строк | Государства, исключенные из сферы действия политики. Возможные значения: `Compliant` , `DomainJoined` . |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

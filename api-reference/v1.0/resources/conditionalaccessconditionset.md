@@ -2,15 +2,15 @@
 title: тип ресурса conditionalAccessConditionSet
 description: Представляет тип условий, которые регулируются при применяемой политике.
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ece6ab6984cf6d6feaf76955a666297e9f15a935
-ms.sourcegitcommit: 4a960067cf2cd7d3c605550150eb3c9259adfe92
+ms.openlocfilehash: d331a2e1995b6c33ab45f1a99f680b772d090dec
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "60482877"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161706"
 ---
 # <a name="conditionalaccessconditionset-resource-type"></a>тип ресурса conditionalAccessConditionSet
 
@@ -22,13 +22,13 @@ ms.locfileid: "60482877"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|приложения|[conditionalAccessApplications](conditionalaccessapplications.md)| Приложения и действия пользователей, включенные и исключенные из политики. Обязательно. |
-|users|[conditionalAccessUsers](conditionalaccessusers.md)| Пользователи, группы и роли, включенные в политику и исключенные из нее. Обязательно. |
-|clientAppTypes|коллекция conditionalAccessClientApp| Типы клиентских приложений, включенные в политику. Возможные значения: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`. Обязательно.|
-|устройства|[conditionalAccessDevices](conditionalaccessdevices.md)| Устройства в политике. |
+|приложения|[conditionalAccessApplications](conditionalaccessapplications.md)| Приложения и действия пользователей, включенные и исключенные из политики. Обязательный. |
+|users|[conditionalAccessUsers](conditionalaccessusers.md)| Пользователи, группы и роли, включенные в политику и исключенные из нее. Обязательное. |
+|clientAppTypes|коллекция conditionalAccessClientApp| Типы клиентских приложений, включенные в политику. Возможные значения: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`. Обязательное.|
+|devices|[conditionalAccessDevices](conditionalaccessdevices.md)| Устройства в политике. |
 |locations|[conditionalAccessLocations](conditionalaccesslocations.md)| Расположения, включенные и исключенные из политики. |
 |платформы|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Платформы, включенные и исключенные из политики. |
-|signInRiskLevels|коллекция riskLevel| Уровни риска для входов, включенные в политику. Возможные значения: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Обязательно.|
+|signInRiskLevels|коллекция riskLevel| Уровни риска для входов, включенные в политику. Возможные значения: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Обязательное.|
 |userRiskLevels|коллекция riskLevel| Уровни риска пользователей, включенные в политику. Возможные значения: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`. Обязательный.|
 
 ## <a name="relationships"></a>Связи

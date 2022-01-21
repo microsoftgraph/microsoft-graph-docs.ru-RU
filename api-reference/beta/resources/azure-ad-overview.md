@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: identity-and-access
 author: dkershaw10
-ms.openlocfilehash: 79bb030b852e861fb3437f3ba90181703b0b735e
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 566b748d76b5947d9807d212d15aeb299f2364b1
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61649790"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62162085"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Работа с ресурсами Azure Active Directory в Microsoft Graph
 
@@ -44,7 +44,7 @@ Microsoft Graph предоставляет доступ к ресурсам [Azu
 | Применение политики Azure AD к приложениям, субъектам-службам, группам или всей организации. Поддерживаются политики для сопоставления утверждений, выдачи маркеров, времени существования маркеров, обнаружения в домашней области и других функций.  | [Доступные политики](../resources/policy-overview.md) | Недоступно |
 | **Защита привилегированного доступа к Azure AD** | | |
 | Отслеживание и управление ограниченным по времени привилегированным доступом к каталогу и ресурсам Azure для администраторов и ИТ-специалистов с помощью службы Privileged Identity Management (PIM). | [Privileged Identity Management API](../resources/privilegedidentitymanagement-root.md) | [Что такое Azure AD Privileged Identity Management?](/azure/active-directory/active-directory-privileged-identity-management-configure)|
-| Отслеживание событий с риском для идентификации, например входа пользователей с устройств, зараженных вредоносными программами, или из незнакомых расположений. | [API службы защиты идентификации](../resources/identityprotection-root.md) | [Защита идентификации Azure Active Directory](/azure/active-directory/active-directory-identityprotection)<br/><br/>[События с риском Azure Active Directory](/azure/active-directory/active-directory-reporting-risk-events) |
+| Отслеживание событий с риском для идентификации, например входа пользователей с устройств, зараженных вредоносными программами, или из незнакомых расположений. | [API службы защиты идентификации](../resources/identityprotection-overview.md) | [Защита идентификации Azure Active Directory](/azure/active-directory/active-directory-identityprotection)<br/><br/>[События с риском Azure Active Directory](/azure/active-directory/active-directory-reporting-risk-events) |
 | **Управление устройствами** | | |
 | Управляйте устройствами, зарегистрированными в организации. Устройства (ноутбуки, настольные компьютеры, планшеты и мобильные телефоны) регистрируются на пользователей. Устройства обычно создаются в облаке с помощью службы регистрации устройств или Microsoft Intune. Они используются политиками условного доступа для многофакторной аутентификации. | [device](../resources/device.md) | [Знакомство с регистрацией устройств в Azure Active Directory](/azure/active-directory/active-directory-device-registration-overview) |
 | **Управление приложениями** | | |

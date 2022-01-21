@@ -2,15 +2,15 @@
 title: signInFrequencySessionControl type
 description: Управление сеансом для обеспечения частоты подписей.
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: f144a2b41b9b2cc9c1675c075d43b1add647b0c2
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 63af931a797d9faef3b0520cf097a03ed44a3302
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59139613"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161692"
 ---
 # <a name="signinfrequencysessioncontrol-resource-type"></a>signInFrequencySessionControl type
 
@@ -26,7 +26,7 @@ ms.locfileid: "59139613"
 |type          |signinFrequencyType| Возможные значения: `days`, `hours`.|
 |value         |Int32        | Количество `days` или `hours` .|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

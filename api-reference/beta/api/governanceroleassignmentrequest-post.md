@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: eef93119d2f8ddad51b15b6de66fbffe1f4744d1
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: f4a28ef2450411cd9d9f2a03c8ba418982ebee9d
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62113709"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161902"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Создание governanceRoleAssignmentRequest
 
@@ -35,7 +35,7 @@ ms.locfileid: "62113709"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
 
 ### <a name="azure-resources"></a>Ресурсы Azure
 
@@ -82,9 +82,9 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 | Свойство         | Тип                                                     | Описание |
 |:-----------------|:---------------------------------------------------------|:--|
-| resourceId       | String                                                   | Идентификатор ресурса. Обязательный. |
-| roleDefinitionId | Строка                                                   | ID определения роли. Обязательное. |
-| subjectId        | Строка                                                   | ID субъекта. Обязательное. |
+| resourceId       | String                                                   | Уникальный идентификатор ресурса Azure, связанный с запросом на назначение ролей. Ресурсы Azure могут включать подписки, группы ресурсов, виртуальные машины и SQL базы данных. Обязательный. |
+| roleDefinitionId | Строка                                                   | Идентификатор определения роли Azure, с котором связан запрос на назначение ролей. Обязательное. |
+| subjectId        | Строка                                                   | Уникальный идентификатор основного или субъекта, с который связан запрос на назначение ролей. Директорами могут быть пользователи, группы или директора службы. Обязательное. |
 | assignmentState  | Строка                                                   | Состояние назначения. Значение может быть `Eligible` и `Active` . Обязательное. |
 | type             | Строка                                                   | Тип запроса. Значение может быть `AdminAdd` , , , , , , и `UserAdd` `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `UserRenew` `AdminRenew` `AdminExtend` . Обязательное. |
 | reason           | Строка                                                   | Причина должна быть предоставлена для запроса назначения ролей для целей аудита и проверки. |

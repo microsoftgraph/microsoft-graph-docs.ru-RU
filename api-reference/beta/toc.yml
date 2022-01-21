@@ -1555,9 +1555,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Получение
                     href: api/callrecords-callrecord-get.md
-              - name: Session
+              - name: Сеанс
                 items:
-                  - name: Session
+                  - name: Сеанс
                     href: resources/callrecords-session.md
                   - name: List
                     href: api/callrecords-session-list.md
@@ -11685,7 +11685,7 @@ items:
                           - name: Обновление сведений об организации
                             href: api/organization-update.md
               - name: Защита удостоверений
-                href: resources/identityprotection-root.md
+                href: resources/identityprotection-overview.md
                 items:
                   - name: Обнаружение рисков
                     items:
@@ -12302,8 +12302,8 @@ items:
                         href: api/accessreviewinstance-batchrecorddecisions.md
                       - name: Сброс решений
                         href: api/accessreviewinstance-resetdecisions.md
-                      - name: Список решений
-                        href: api/accessreviewinstance-list-decisions.md
+                      - name: Список контактных рецензентов
+                        href: api/accessreviewinstance-list-contactedreviewers.md
                       - name: Список ожидающих утверждения (неподготовленных)
                         href: api/accessreviewinstance-pendingaccessreviewinstances.md
                       - name: Элемент решения экземпляра проверки доступа
@@ -12317,6 +12317,8 @@ items:
                             href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
                           - name: Update
                             href: api/accessreviewinstancedecisionitem-update.md
+                          - name: Запись всех решений
+                            href: api/accessreviewinstancedecisionitem-recordalldecisions.md
                           - name: Список ожидающих утверждения (неподготовленных)
                             href: api/accessreviewinstancedecisionitem-listpendingapproval.md
                   - name: Политика проверки доступа
@@ -12595,7 +12597,7 @@ items:
                         href: api/entitlementmanagementsettings-get.md
                       - name: Обновление
                         href: api/entitlementmanagementsettings-update.md
-              - name: Управление привилегированными пользователями
+              - name: Служба Privileged Identity Management
                 items:
                   - name: Служба Privileged Identity Management
                     href: resources/privilegedidentitymanagement-root.md
@@ -13820,15 +13822,15 @@ items:
                 items:
                   - name: Внешнее подключение
                     href: resources/externalconnectors-externalconnection.md
-                  - name: Список внешних подключений
+                  - name: Список
                     href: api/externalconnectors-externalconnection-list.md
-                  - name: Создание внешнего подключения
+                  - name: Создание
                     href: api/externalconnectors-external-post-connections.md
-                  - name: Внешние подключения
+                  - name: Получение
                     href: api/externalconnectors-externalconnection-get.md
-                  - name: Обновление внешнего подключения
+                  - name: Обновление
                     href: api/externalconnectors-externalconnection-update.md
-                  - name: Удаление внешнего подключения
+                  - name: Delete
                     href: api/externalconnectors-externalconnection-delete.md
                   - name: Получить операцию
                     href: api/externalconnectors-connectionoperation-get.md
@@ -13836,39 +13838,39 @@ items:
                 items:
                   - name: Схема
                     href: resources/externalconnectors-schema.md
-                  - name: Создание схемы
+                  - name: Создание
                     href: api/externalconnectors-externalconnection-post-schema.md
-                  - name: Получение схемы
+                  - name: Получение
                     href: api/externalconnectors-schema-get.md
-                  - name: Обновление схемы
+                  - name: Обновление
                     href: api/externalconnectors-schema-update.md
               - name: Внешний элемент
                 items:
                   - name: Внешний элемент
                     href: resources/externalconnectors-externalitem.md
-                  - name: Создание внешнего элемента
+                  - name: Создание
                     href: api/externalconnectors-externalconnection-put-items.md
-                  - name: Получить внешний элемент
+                  - name: Получение
                     href: api/externalconnectors-externalitem-get.md
-                  - name: Обновление внешнего элемента
+                  - name: Обновление
                     href: api/externalconnectors-externalitem-update.md
-                  - name: Удаление внешнего элемента
+                  - name: Delete
                     href: api/externalconnectors-externalitem-delete.md
               - name: Внешняя группа
                 items:
                   - name: Внешняя группа
                     href: resources/externalconnectors-externalgroup.md
-                  - name: Создание внешней группы
+                  - name: Создание
                     href: api/externalconnectors-externalconnection-post-groups.md
-                  - name: Удаление внешней группы
+                  - name: Удалить
                     href: api/externalconnectors-externalgroup-delete.md
               - name: Внешний член группы
                 items:
                   - name: Внешний член группы
                     href: resources/externalconnectors-externalgroupmember.md
-                  - name: Создание внешнего участника группы
+                  - name: Создание
                     href: api/externalconnectors-externalgroup-post-members.md
-                  - name: Удаление внешнего члена группы
+                  - name: Удалить
                     href: api/externalconnectors-externalgroupmember-delete.md
       - name: Безопасность
         displayname: 'Security API, Microsoft Graph Security API'
@@ -14043,6 +14045,8 @@ items:
                 href: api/site-list-subsites.md
               - name: Поиск сайтов
                 href: api/site-search.md
+              - name: Операции списка
+                href: api/site-list-operations.md
               - name: Разрешения
                 items:
                   - name: Разрешение
@@ -14077,6 +14081,8 @@ items:
                 href: api/list-list-contenttypes.md
               - name: Добавление копии типа контента
                 href: api/contenttype-addcopy.md
+              - name: Операции списка
+                href: api/list-list-operations.md
           - name: Столбцы
             items:
               - name: Определение столбца
@@ -14113,6 +14119,10 @@ items:
                 href: api/contenttype-list-columns.md
               - name: Создание столбца
                 href: api/contenttype-post-columns.md
+              - name: Получить совместимые концентраторы
+                href: api/contenttype-getcompatiblehubcontenttypes.md
+              - name: Добавление копии из концентраторов
+                href: api/contenttype-addcopyfromcontenttypehub.md
           - name: Элементы списка
             items:
               - name: Элемент списка
@@ -14205,6 +14215,12 @@ items:
                     href: api/termStore-term-list-relations.md
                   - name: Создание
                     href: api/termStore-relation-post.md
+          - name: Богатая долгосрочная операция
+            items:
+              - name: Богатая долгосрочная операция
+                href: resources/richLongRunningOperation.md
+              - name: Получение
+                href: api/richlongrunningoperation-get.md
       - name: Задачи и планы
         displayName: Planner
         items:

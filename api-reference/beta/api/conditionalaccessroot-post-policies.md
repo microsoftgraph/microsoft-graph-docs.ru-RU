@@ -2,15 +2,15 @@
 title: Создание conditionalAccessPolicy
 description: Создайте новый conditionalAccessPolicy.
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 54d87f5f295fd6c0b17cdf0add9c1c62e02fa69a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3b717280287a479672f30d6ee813aad7411ebb2d
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135654"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62162064"
 ---
 # <a name="create-conditionalaccesspolicy"></a>Создание conditionalAccessPolicy
 

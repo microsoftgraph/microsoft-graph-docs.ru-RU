@@ -2,15 +2,15 @@
 title: тип ресурса countryNamedLocation
 description: Представляет расположение Azure Active Directory, определенное странами и регионами. Именуемые расположения — это настраиваемые правила, определяемые расположениями сети, которые затем можно использовать в политике условного доступа.
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 9b1fc9867e1447cb955aa85670cb88931fb6f52b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: f80a31798e30ae91c0179c420323e71ff31afebf
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053135"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62162092"
 ---
 # <a name="countrynamedlocation-resource-type"></a>тип ресурса countryNamedLocation
 
@@ -34,15 +34,15 @@ ms.locfileid: "59053135"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|countriesAndRegions|Коллекция String|Список стран и/или регионов в формате двух букв, заданный ISO 3166-2. Обязательный.|
+|countriesAndRegions|Коллекция строк|Список стран и/или регионов в формате двух букв, заданный ISO 3166-2. Обязательный.|
 |countryLookupMethod|countryLookupMethodType|Определяет, какой метод используется для определения страны, в которой находится пользователь. Возможные значения `clientIpAddress` ( по умолчанию) и `authenticatorAppGps` . Примечание. `authenticatorAppGps` Еще не поддерживается в Microsoft Cloud for US Government.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет дату создания и время расположения с помощью формата ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. Наследуется [от namedLocation](../resources/namedLocation.md).|
 |displayName|Строка|Понятное человеку имя расположения. Обязательный. Наследуется [от namedLocation](../resources/namedLocation.md).|
-|id|String|Идентификатор объекта namedLocation. Только для чтения. Наследуется [от namedLocation](../resources/namedLocation.md).|
-|includeUnknownCountriesAndRegions|Boolean|`true` если IP-адреса, которые не относятся к стране или региону, должны быть включены в именоваемом расположении. Необязательное. Значение по умолчанию — `false`.|
+|id|Строка|Идентификатор объекта namedLocation. Только для чтения. Наследуется [от namedLocation](../resources/namedLocation.md).|
+|includeUnknownCountriesAndRegions|Логический|`true` если IP-адреса, которые не относятся к стране или региону, должны быть включены в именоваемом расположении. Необязательно. Значение по умолчанию — `false`.|
 |modifiedDateTime|DateTimeOffset|Тип Timestamp представляет последнюю измененную дату и время расположения с помощью формата ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. Наследуется [от namedLocation](../resources/namedLocation.md).|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

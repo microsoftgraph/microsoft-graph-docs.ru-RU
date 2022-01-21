@@ -5,12 +5,12 @@ title: contentType
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: 5a0f8fb70900e4498a17db4bc7ba75337c3e4c4d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b2c4cc3e7fe2b9e516936cf4eb28cdb14193e0fc
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62111558"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161650"
 ---
 # <a name="contenttype-resource-type"></a>тип ресурса contentType
 
@@ -38,7 +38,8 @@ ms.locfileid: "62111558"
 |[copyToDefaultContentLocation](../api/contenttype-copytodefaultcontentlocation.md)|[contentType](../resources/contenttype.md)| Скопируйте файл в расположение контента по умолчанию в [contentType.](../resources/contenttype.md)|
 |[Список столбцов](../api/contenttype-list-columns.md)|[коллекция columnDefinition](../resources/columnDefinition.md)|Получите коллекцию столбцов, представленных в [качестве ресурсов columnDefinition,](../resources/columnDefinition.md) в **contentType.**|
 |[Создание столбца](../api/contenttype-post-columns.md)|[columnDefinition](../resources/columnDefinition.md)|Добавление столбца к **типу контента** на сайте или в списке.|
-
+|[getCompatibleHubContentTypes](../api/contenttype-getcompatiblehubcontenttypes.md)|[коллекция contentType](../resources/contenttype.md)| Извлечение опубликованных типов контента из концентратора типов контента, который можно добавить на сайт или в список.|
+|[addCopyFromContentTypeHub](../api/contenttype-addcopyfromcontenttypehub.md)|[contentType](../resources/contenttype.md)| Добавьте или синхронизируйте совместимый тип контента из концентратора типа контента на сайт или список.|
 
 ## <a name="properties"></a>Свойства
 

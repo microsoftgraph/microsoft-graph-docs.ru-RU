@@ -1,16 +1,16 @@
 ---
 title: тип ресурса namedLocation
-description: Это базовый класс, который представляет расположение Azure Active Directory с именем. Именуемые расположения — это настраиваемые правила, определяемые расположениями сети, которые затем можно использовать в политике условного доступа.
-localization_priority: Normal
-author: videor
+description: Это базовый класс, который представляет расположение Azure Active Directory имени. Именуемые расположения — это настраиваемые правила, определяемые расположениями сети, которые затем можно использовать в политике условного доступа.
+ms.localizationpriority: medium
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: ae3ec6235259001a453bac50e45d2b142cdbaa8f
-ms.sourcegitcommit: 14648839f2feac2e5d6c8f876b7ae43e996ea6a0
+ms.openlocfilehash: 16958fd48e2020cb5a59f496c64f1c4fe0fbd9f0
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50722120"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161734"
 ---
 # <a name="namedlocation-resource-type"></a>тип ресурса namedLocation
 
@@ -18,7 +18,7 @@ ms.locfileid: "50722120"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Это базовый класс, который представляет расположение Azure Active Directory с именем. Именуемые расположения — это настраиваемые правила, определяемые расположениями сети, которые затем можно использовать в политике условного доступа.
+Это базовый класс, который представляет расположение Azure Active Directory имени. Именуемые расположения — это настраиваемые правила, определяемые расположениями сети, которые затем можно использовать в политике условного доступа (CA).
 
 ## <a name="methods"></a>Методы
 
@@ -33,8 +33,8 @@ ms.locfileid: "50722120"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет дату создания и время расположения с помощью формата ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
-|displayName|String|Понятное человеку имя расположения.|
-|id|String|Идентификатор объекта namedLocation. Только для чтения.|
+|displayName|Строка|Понятное человеку имя расположения.|
+|id|Строка|Идентификатор объекта namedLocation. Только для чтения.|
 |modifiedDateTime|DateTimeOffset|Тип Timestamp представляет последнюю измененную дату и время расположения с помощью формата ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
@@ -62,6 +62,12 @@ ms.locfileid: "50722120"
   "modifiedDateTime": "String (timestamp)"
 }
 ```
+
+## <a name="see-also"></a>См. также
+
++ [Что такое условный доступ?](/azure/active-directory/conditional-access/overview)
++ [Использование условия расположения в политике условного доступа](/azure/active-directory/conditional-access/location-condition)
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

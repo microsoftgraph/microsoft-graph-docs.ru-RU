@@ -2,15 +2,15 @@
 title: тип ресурса iPv6CidrRange
 description: Представляет диапазон IPv6 с помощью нотации CIDR.
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: d36d19d3d0d10da58a3223c146be542c9f57878c
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 545feee2df04be38c22853b96d19a81ef99d29ec
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59062483"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62162022"
 ---
 # <a name="ipv6cidrrange-resource-type"></a>тип ресурса iPv6CidrRange
 
@@ -24,9 +24,9 @@ ms.locfileid: "59062483"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|cidrAddress|String|Адрес IPv6 в нотации CIDR. Значение null не допускается.|
+|cidrAddress|Строка|Адрес IPv6 в нотации CIDR. Значение null не допускается.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

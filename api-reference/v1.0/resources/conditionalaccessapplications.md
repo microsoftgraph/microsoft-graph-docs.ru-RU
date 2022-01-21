@@ -2,15 +2,15 @@
 title: тип ресурса conditionalAccessApplications
 description: Представляет приложения и действия пользователей, включенные и исключенные из области политики.
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: bd1b478b3bb77617d132a38217e43e4b053a2772
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: df2802c605bb4cbc8874e08d1bd9c9a63a47257f
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084617"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161895"
 ---
 # <a name="conditionalaccessapplications-resource-type"></a>тип ресурса conditionalAccessApplications
 
@@ -22,11 +22,11 @@ ms.locfileid: "59084617"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| includeApplications | Коллекция String | Список ID приложений, к который применяется политика, если явно не исключено (в исключенииApplications). Также можно установить `All` . |
-| excludeApplications | Коллекция String | Список ID приложений явно исключен из политики. |
-| includeUserActions | Коллекция String | Действия пользователя, которые необходимо включить. Поддерживаемые значения `urn:user:registersecurityinfo` и `urn:user:registerdevice` |
+| includeApplications | Коллекция строк | Список ID приложений, к который применяется политика, если явно не исключено (в исключенииApplications). Также можно установить `All` . |
+| excludeApplications | Коллекция строк | Список ID приложений явно исключен из политики. |
+| includeUserActions | Коллекция строк | Действия пользователя, которые необходимо включить. Поддерживаемые значения `urn:user:registersecurityinfo` и `urn:user:registerdevice` |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

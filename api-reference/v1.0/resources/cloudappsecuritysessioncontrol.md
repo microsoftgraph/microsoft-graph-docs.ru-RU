@@ -2,15 +2,15 @@
 title: тип ресурса cloudAppSecuritySessionControl
 description: Управление сеансами, используемая для обеспечения проверки безопасности облачных приложений.
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 953e9960712061ed2dc1dd777f43424a62d481f7
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 93306ef1644a1887593f7ceb85a92c6d0348d831
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59007322"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161952"
 ---
 # <a name="cloudappsecuritysessioncontrol-resource-type"></a>тип ресурса cloudAppSecuritySessionControl
 

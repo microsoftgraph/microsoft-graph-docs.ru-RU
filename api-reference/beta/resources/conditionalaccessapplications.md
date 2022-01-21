@@ -1,16 +1,16 @@
 ---
 title: тип ресурса conditionalAccessApplications
 description: Представляет приложения и действия пользователей, включенные и исключенные из области политики.
-localization_priority: Normal
-author: videor
+ms.localizationpriority: medium
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: d688b529e32390c2330cf8cb3558994c3e752a25
-ms.sourcegitcommit: d700b7e3b411e3226b5adf1f213539f05fe802e8
+ms.openlocfilehash: a25b574968fcad4adcbe3e53c0b800eb0ebf4a71
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52547685"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161923"
 ---
 # <a name="conditionalaccessapplications-resource-type"></a>тип ресурса conditionalAccessApplications
 

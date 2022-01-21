@@ -2,15 +2,15 @@
 title: тип ресурса conditionalAccessLocations
 description: Представляет расположения, включенные и исключенные из области политики.
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 68804b5728fd058d2502ac041a24c3a218692b93
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 0e5e7de8a751c118a4d1a260a348a04ec1da2fb5
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59109249"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161216"
 ---
 # <a name="conditionalaccesslocations-resource-type"></a>тип ресурса conditionalAccessLocations
 
@@ -22,14 +22,14 @@ ms.locfileid: "59109249"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| includeLocations | Коллекция String | Определения местоположения в области политики, если явно не исключены, `All` или `AllTrusted` . |
-| excludeLocations | Коллекция String | ИД расположения исключены из области политики. |
+| includeLocations | Коллекция строк | Определения местоположения в области политики, если явно не исключены, `All` или `AllTrusted` . |
+| excludeLocations | Коллекция строк | ИД расположения исключены из области политики. |
 
 ## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

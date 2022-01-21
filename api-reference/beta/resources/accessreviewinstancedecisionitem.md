@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: resourcePageType
-ms.openlocfilehash: 214396b8d551009d831e64017424d6d20c00d316
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 2870732152bbb19cc2145b9dd54d7020ac01e6c0
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62107790"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161937"
 ---
 # <a name="accessreviewinstancedecisionitem-resource-type"></a>accessReviewInstanceDecisionItem type
 
@@ -20,7 +20,7 @@ ms.locfileid: "62107790"
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Представляет решение о проверке доступа к Azure [AD](accessreviewsv2-overview.md) в экземпляре проверки. Это решение является определением доступа пользователя или директора службы для данного [экземпляра обзора доступа.](accessreviewinstance.md) accessReviewInstanceDecisionItem является открытым типом и позволяет передавать другие свойства.
+Представляет решение о проверке доступа к Azure [AD](accessreviewsv2-overview.md) в экземпляре проверки. Это решение представляет определение доступа пользователя или директора службы для данного экземпляра [обзора доступа.](accessreviewinstance.md)  Этот ресурс относится к открытому типу, который позволяет передавать другие свойства.
 
 ## <a name="methods"></a>Методы
 

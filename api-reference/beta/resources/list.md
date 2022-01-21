@@ -3,15 +3,15 @@ author: JeremyKelley
 description: Ресурс list представляет список на сайте.
 ms.date: 09/11/2017
 title: List
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 30d26dfd3e140f302c6535cd6603a90568dbb567
-ms.sourcegitcommit: ada6eab637b9b318129aefb98edbe7316399d9ba
+ms.openlocfilehash: 0703f3df00f97391f7f06785bebc880b29bbefbd
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53317100"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161867"
 ---
 # <a name="list-resource"></a>Ресурс List
 
@@ -28,7 +28,7 @@ ms.locfileid: "53317100"
 **Примечание.** В этой бета-версии разрешается только навигация по спискам. Их создание и обновление не поддерживаются.
 Однако вы можете создавать и менять [элементы списков][listItem].
 
-Все примеры ниже относились к сайту, `https://graph.microsoft.com/beta/sites/{site-id}` например.
+Все приведенные ниже примеры относятся к сайту, например `https://graph.microsoft.com/beta/sites/{site-id}`.
 
 | Стандартная задача               | Метод HTTP
 |:--------------------------|:------------------------------
@@ -43,8 +43,9 @@ ms.locfileid: "53317100"
 | [Получение канала WebSocket][] | GET /lists/{list-id}/subscriptions/socketIo
 |[Перечисление типов контента][]          | GET /lists/{list-id}/contentTypes
 |[Добавление копии типа контента с сайта][] | POST /lists/{list-id}/contentTypes/addCopy
-|[Перечисление столбцов][]               | GET /lists/{list-id}/columns
+|[Список столбцов][]               | GET /lists/{list-id}/columns
 |[Создание столбца][]              | POST /lists/{list-id}/columns
+|[Операции списка](../api/list-list-operations.md)|GET /lists/{list-id}/operations
 
 [Получить списки на сайте]: ../api/list-list.md
 [Получение списка]: ../api/list-get.md
@@ -59,6 +60,7 @@ ms.locfileid: "53317100"
 [Добавление копии типа контента с сайта]: ../api/contenttype-addCopy.md
 [Перечисление столбцов]: ../api/list-list-columns.md
 [Создание столбца]: ../api/list-post-columns.md
+
 ## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление ресурса **list** в формате JSON.
@@ -132,6 +134,7 @@ ms.locfileid: "53317100"
 | **drive**         | [drive][]                   | Доступна только для библиотек документов. Разрешает доступ к списку как к ресурсу [drive][] с объектами [driveItem][driveItem].
 | **items**         | Коллекция ([listItem][])    | Все элементы, содержащиеся в списке.
 | subscriptions      | Коллекция [subscription][] | Набор подписок на список.
+|**operations**|[richLongRunningOperation](../resources/richlongrunningoperation.md) collection| Коллекция длительных операций для списка.
 
 [baseItem]: baseitem.md
 [contentType]: contenttype.md

@@ -2,15 +2,15 @@
 title: тип ресурса namedLocation
 description: Это базовый класс, который представляет расположение Azure Active Directory имени. Именуемые расположения — это настраиваемые правила, определяемые расположениями сети, которые затем можно использовать в политике условного доступа.
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 01825465c415ef3a769812896dbc80105c50ed68
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 9431c576d43aa521316d74fe1cb4265c408ed8bb
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084274"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62162015"
 ---
 # <a name="namedlocation-resource-type"></a>тип ресурса namedLocation
 
@@ -31,11 +31,11 @@ ms.locfileid: "59084274"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет дату создания и время расположения с помощью формата ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
-|displayName|String|Понятное человеку имя расположения.|
+|displayName|Строка|Понятное человеку имя расположения.|
 |id|Строка|Идентификатор объекта namedLocation. Только для чтения.|
 |modifiedDateTime|DateTimeOffset|Тип Timestamp представляет последнюю измененную дату и время расположения с помощью формата ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

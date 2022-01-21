@@ -2,15 +2,15 @@
 title: тип ресурса conditionalAccessUsers
 description: Представляет пользователей, группы и роли, включенные в область политики и исключенные из нее.
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 0b4c3298f233fbd47838b9eeaf12230445c0f6cc
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 5d425a2c5387f940c1e6d475a5bac26c85ebfaaf
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084582"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62162099"
 ---
 # <a name="conditionalaccessusers-resource-type"></a>тип ресурса conditionalAccessUsers
 
@@ -22,14 +22,14 @@ ms.locfileid: "59084582"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| includeUsers | Коллекция String | Пользовательские ИД в области политики, если явно не исключены, `None` или `All` или или `GuestsOrExternalUsers` . |
-| excludeUsers | Коллекция String | Пользовательские ИД, исключенные из области политики и/или `GuestsOrExternalUsers` . |
-| includeGroups | Коллекция String | Групповые ID в области политики, если явно не исключены, или `All` . |
-| excludeGroups | Коллекция String | Групповые ID исключены из области политики. |
-| includeRoles | Коллекция String | Role IDs in scope of policy unless explicitly excluded, or `All` . |
-| excludeRoles | Коллекция String | ID роли, исключенные из области политики. |
+| includeUsers | Коллекция строк | Пользовательские ИД в области политики, если явно не исключены, `None` или `All` или или `GuestsOrExternalUsers` . |
+| excludeUsers | Коллекция строк | Пользовательские ИД, исключенные из области политики и/или `GuestsOrExternalUsers` . |
+| includeGroups | Коллекция строк | Групповые ID в области политики, если явно не исключены, или `All` . |
+| excludeGroups | Коллекция строк | Групповые ID исключены из области политики. |
+| includeRoles | Коллекция строк | Role IDs in scope of policy unless explicitly excluded, or `All` . |
+| excludeRoles | Коллекция строк | ID роли, исключенные из области политики. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

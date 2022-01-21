@@ -1,48 +1,49 @@
 ---
-title: API защиты удостоверений
-description: тип ресурса identityProtectionRoot
+title: тип ресурса identityProtectionRoot
+description: Контейнер для свойств навигации для ресурсов microsoft Graph защиты удостоверений.
 author: cloudhandler
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 23a356597092a6bf7f75de3cf359c2026979489b
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1d1ea31820743a0c132ee5f179b0917900a32e1a
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056083"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161987"
 ---
 # <a name="identityprotectionroot-resource-type"></a>тип ресурса identityProtectionRoot
 
 Пространство имен: microsoft.graph
 
-Защита удостоверений — это средство, которое позволяет организациям обнаруживть, исследовать и устранять риски, основанные на удостоверениях, в своей среде. Вы можете использовать следующие API microsoft Graph для запроса рисков, обнаруженных службой защиты удостоверений: 
+Контейнер для свойств навигации для ресурсов защиты Graph удостоверений.
 
-* [riskDetection](riskdetection.md) — запрос microsoft Graph список обнаружения связанных с риском пользователей и входных данных, а также связанных сведений об обнаружении. Обнаружение рисков в Azure AD Identity Protection включает любые выявленные подозрительные действия, связанные с учетными записями пользователей в каталоге.
+## <a name="methods"></a>Методы
 
-* [riskyUsers](riskyuser.md) — запрос microsoft Graph сведения о пользователях, которые защита удостоверений была обнаружена как рискованные. Риск пользователя представляет вероятность того, что скомпрометирована индивидуальность или учетная запись. Эти риски вычисляются в автономном режиме с помощью внутренних и внешних источников разведки угроз Майкрософт, в том числе исследователей безопасности, специалистов правоохранительных органов, групп безопасности в Microsoft и других надежных источников.
+Нет.
 
-* [signIn](signin.md) . Запрос microsoft Graph сведения о входных знаках Azure AD с определенными свойствами, связанными с состоянием риска, детализацией и уровнем. Риск регистрации представляет вероятность того, что данный запрос на проверку подлинности не разрешен владельцем удостоверений. Эти риски можно вычислять в режиме реального времени или вычислять в автономном режиме с помощью внутренних и внешних источников разведки угроз Майкрософт, включая исследователей безопасности, специалистов правоохранительных органов, групп безопасности в Microsoft и других надежных источников.
+## <a name="properties"></a>Свойства
 
-## <a name="what-can-i-do-with-identity-protection-apis-in-microsoft-graph"></a>Что можно сделать с API защиты удостоверений в Microsoft Graph?
+Нет
 
-Ниже приведены популярные запросы для работы с данными журнала аудита.
+## <a name="relationships"></a>Связи
+|Связь|Тип|Описание|
+|:---|:---|:---|
+|riskDetections|[коллекция riskDetection](../resources/riskdetection.md)| Обнаружение рисков в Azure AD Identity Protection и связанных с этим сведений об обнаружении.|
+|riskyUsers|[коллекция riskyUser](../resources/riskyuser.md)|Пользователи, помеченные как "под угрозой" в Azure AD Identity Protection. |
 
-Operation | URL-адрес
-:----------|:----
-Get risky users | [GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers](https://developer.microsoft.com/graph/graph-explorer?request=identityProtection/riskyUsers&version=v1.0)
-ОБНАРУЖЕНИЕ рисков GET | [GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections](https://developer.microsoft.com/graph/graph-explorer?request=identityProtection/riskDetections&version=v1.0)
-Get a user's risk history | [GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/{riskyUserId}/history](https://developer.microsoft.com/graph/graph-explorer?request=identityProtection/riskyUsers/{riskyUserId}/history&version=v1.0)
-ПОДТВЕРЖДЕНИЕ пользователя в качестве скомпрометированного | [ПОМЕСТИТЬ https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/confirmCompromised](https://developer.microsoft.com/graph/graph-explorer?request=/identityProtection/riskyUsers/confirmCompromised&version=v1.0)
-УВОЛЬНЕНИЕ рискованного пользователя | [ПОМЕСТИТЬ https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/dismiss](https://developer.microsoft.com/graph/graph-explorer?request=/identityProtection/riskyUsers/dismiss&version=v1.0)
+## <a name="json-representation"></a>Представление JSON
+Ниже указано представление ресурса в формате JSON.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.identityProtectionRoot",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.identityProtectionRoot"
+}
+```
 
-Дополнительные рекомендации и дополнительные сведения см. в инструкциях по выявлению и исправлению рисков с помощью [API Graph Microsoft.](/graph/tutorial-riskdetection-api)
-
-## <a name="what-licenses-do-i-need"></a>Какие лицензии нужны?
-
-Azure AD Identity Protection — это функция премиум-класса. Чтобы получить доступ к API riskDetection (примечание: лицензии P1 получают ограниченную информацию о рисках), вам нужна лицензия Azure AD Premium P1 или P2). API riskyUsers доступен только для Azure AD Premium P2 лицензий.
-
-## <a name="see-also"></a>См. также
-
-* [Защита Azure Active Directory удостоверений](/azure/active-directory/identity-protection/overview-identity-protection)
-* [Начало работы с Azure Active Directory и Microsoft Graph](/azure/active-directory/identity-protection/howto-identity-protection-graph-api)

@@ -2,15 +2,15 @@
 title: тип ресурса ipNamedLocation
 description: Представляет расположение Azure Active Directory, определенное диапазонами IP. Именуемые расположения — это настраиваемые правила, определяемые расположениями сети, которые затем можно использовать в политике условного доступа.
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: f8e2763b5b10b64a1e7e22807a31f24a7303d13a
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 48660aeed7d58b8d1a8723e1cbf7ae0cbf58c2f5
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59084379"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161881"
 ---
 # <a name="ipnamedlocation-resource-type"></a>тип ресурса ipNamedLocation
 
@@ -35,13 +35,13 @@ ms.locfileid: "59084379"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет дату создания и время расположения с помощью формата ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. Наследуется [от namedLocation](../resources/namedLocation.md).|
-|displayName|String|Понятное человеку имя расположения. Обязательный.|
+|displayName|Строка|Понятное человеку имя расположения. Обязательный.|
 |id|Строка|Идентификатор объекта namedLocation. Только для чтения. Наследуется [от namedLocation](../resources/namedLocation.md).|
 |ipRanges|Коллекция объектов [ipRange](iprange.md)|Список диапазонов IP-адресов в формате CIDR IPv4 (например, 1.2.3.4/32) или любого допустимого формата IPv6 от IETF RFC596. Обязательный.|
-|isTrusted|Логический|`true` если это расположение явно доверяется. Необязательное. Значение по умолчанию — `false`.|
+|isTrusted|Логическое|`true` если это расположение явно доверяется. Необязательно. Значение по умолчанию — `false`.|
 |modifiedDateTime|DateTimeOffset|Тип Timestamp представляет последнюю измененную дату и время расположения с помощью формата ISO 8601 и всегда находится во времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC: `2014-01-01T00:00:00Z`. Только для чтения. Наследуется [от namedLocation](../resources/namedLocation.md).|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 17fd1b8df73c16dea859fc9a35ae12c19a0b381a
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3ab14e8814be6145cf19adffde1a37aec0811b6b
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62104969"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161643"
 ---
 # <a name="enum-values"></a>Значения Enum
 
@@ -222,7 +222,7 @@ ms.locfileid: "62104969"
 |:---|
 |Строка|
 |Целое число|
-|Справка|
+|Справочные материалы|
 |Binary|
 |Логическое|
 |Даты и время|
@@ -1536,7 +1536,7 @@ ms.locfileid: "62104969"
 ### <a name="onenotesourceservice-values"></a>значения onenoteSourceService
 | Member
 |:---------------------
-| Неизвестно
+| Unknown
 | OneDrive
 | OneDriveForBusiness
 | OnPremOneDriveForBusiness
@@ -2769,4 +2769,14 @@ Enum для серьезности оповещений.
 |allAttendees|
 |персонал|
 |клиент|
+|unknownFutureValue|
+
+### <a name="longrunningoperationstatus-values"></a>значения longRunningOperationStatus
+
+| Member|
+|:-----------------|
+|notStarted|
+|запуск|
+|успешно|
+|не удалось|
 |unknownFutureValue|

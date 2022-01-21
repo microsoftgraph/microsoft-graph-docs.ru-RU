@@ -2,15 +2,15 @@
 title: тип ресурса conditionalAccessDevices
 description: Представляет устройства в области политики.
 ms.localizationpriority: medium
-author: videor
+author: davidspooner
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 0c4bc7721566bd8210830e51dbe820b1b44813e1
-ms.sourcegitcommit: 36bae3615df41876493b25da478e589d1974f97b
+ms.openlocfilehash: e5e16500dbecaa133e11f14ff7d2690ffbc2a64e
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59996369"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161631"
 ---
 # <a name="conditionalaccessdevices-resource-type"></a>тип ресурса conditionalAccessDevices
 
@@ -24,11 +24,11 @@ ms.locfileid: "59996369"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| includeDevices | Коллекция String | Состояния в области политики. `All` является единственным допустимым значением. Невозможно установить, если *установлено устройствоFIlter.* |
-| excludeDevices | Коллекция String | Государства, исключенные из сферы действия политики. Возможные значения: `Compliant` , `DomainJoined` . Невозможно установить, если **установлено устройствоFIlter.** |
+| includeDevices | Коллекция строк | Состояния в области политики. `All` является единственным допустимым значением. Невозможно установить, если *установлено устройствоFIlter.* |
+| excludeDevices | Коллекция строк | Государства, исключенные из сферы действия политики. Возможные значения: `Compliant` , `DomainJoined` . Невозможно установить, если **установлено устройствоFIlter.** |
 | deviceFilter | [conditionalAccessFilter](conditionalaccessfilter.md) | Фильтр, определяющее правило динамического устройства и синтаксиса для включаемых и исключаемых устройств. Фильтр может использовать свойства устройств (например, атрибуты расширения), чтобы включить или исключить их. Невозможно установить, **если задают includeDevices** или **excludeDevices.** |
-| includeDeviceStates (deprecated)| Коллекция String | Состояния в области политики. `All` является единственным допустимым значением. |
-| excludeDeviceStates (deprecated)| Коллекция String | Государства, исключенные из сферы действия политики. Возможные значения: `Compliant` , `DomainJoined` . |
+| includeDeviceStates (deprecated)| Коллекция строк | Состояния в области политики. `All` является единственным допустимым значением. |
+| excludeDeviceStates (deprecated)| Коллекция строк | Государства, исключенные из сферы действия политики. Возможные значения: `Compliant` , `DomainJoined` . |
 
 ## <a name="relationships"></a>Связи
 
