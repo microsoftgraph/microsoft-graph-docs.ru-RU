@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: be4829c5d3a0c9a5d2e107dc7546120285b0bec0
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 1508674390df6175070af4b00cb38cd772f20c10
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61224974"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62133593"
 ---
 # <a name="create-emailauthenticationmethod"></a>Создание emailAuthenticationMethod
 Пространство имен: microsoft.graph
@@ -36,7 +36,7 @@ ms.locfileid: "61224974"
 |:---------------------------------------|:-------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Application                            | UserAuthenticationMethod.ReadWrite.All |
+| Приложение                            | UserAuthenticationMethod.ReadWrite.All |
 
 Для делегирования сценариев, в которых администратор действует на другого пользователя, администратору требуется одна из следующих [ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
@@ -57,7 +57,7 @@ POST /users/{id | userPrincipalName}/authentication/emailMethods
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -67,7 +67,7 @@ POST /users/{id | userPrincipalName}/authentication/emailMethods
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|emailAddress|String|адрес электронной почты;|
+|emailAddress|String|Адрес электронной почты|
 
 
 
@@ -111,6 +111,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-emailauthenticationmethod-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-emailauthenticationmethod-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

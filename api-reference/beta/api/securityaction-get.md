@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: b43948035ead63cdf7ef9d0b9c89e80f3620c675
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 35e3a7aef5547f74870e9863172a5f2fcbf177d3
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61026340"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62098981"
 ---
 # <a name="get-securityaction"></a>Получение объекта securityAction
 
@@ -28,7 +28,7 @@ ms.locfileid: "61026340"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | SecurityActions.Read.All, SecurityActions.ReadWrite.All |
+| Приложение                            | SecurityActions.Read.All, SecurityActions.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/security/securityActions/{id}
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-securityaction-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-securityaction-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

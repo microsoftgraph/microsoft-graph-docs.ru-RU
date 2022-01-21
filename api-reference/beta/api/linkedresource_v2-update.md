@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 70554d1d64be0d3c497225ee25a124b3d52681d5
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 0709b060f69c426c83d35e3c8b9c9d38306f9c19
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526135"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62089943"
 ---
 # <a name="update-linkedresource_v2"></a>Обновление linkedResource_v2
 Пространство имен: microsoft.graph
@@ -52,7 +52,7 @@ PATCH /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTa
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |applicationName|String|Поле, указывающее имя приложения источника, отправляющее **linkedResource.**|
-|displayName|Строка|Поле, указывающее название **linkedResource**.|
+|displayName|String|Поле, указывающее название **linkedResource**.|
 |externalId|String|Id объекта, связанного с этой задачей в стороной или партнерской системе.|
 |webUrl|String|Глубокая ссылка на **linkedResource**.|
 
@@ -84,6 +84,22 @@ Content-Type: application/json
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-linkedresource-v2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-linkedresource-v2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-linkedresource-v2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-linkedresource-v2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-linkedresource-v2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

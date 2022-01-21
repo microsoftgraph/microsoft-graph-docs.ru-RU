@@ -5,12 +5,12 @@ author: BarrySh
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: fc0404641a01cc3f435abf2975a204e6f133ec5f
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 0de93bbb2caa2344b61060f2018445dbec274dea
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241585"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62125361"
 ---
 # <a name="list-permissions"></a>Разрешения списка
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "61241585"
 |:--------------------------------------|:-------------------------------------
 |Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.
-|Для приложений                            | Sites.FullControl.All
+|Приложение                            | Sites.FullControl.All
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,9 +44,9 @@ GET /sites/{sitesId}/permissions
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -84,6 +84,10 @@ GET https://graph.microsoft.com/beta/sites/{sitesId}/permissions
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-permission-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-permission-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

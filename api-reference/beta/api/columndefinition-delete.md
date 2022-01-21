@@ -5,12 +5,12 @@ description: Удаление столбца с сайта, списка или 
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: b0118150b9ea5582bc38c0299c5946de93ce2f3f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 707ce3f7bed5af83493f3e522331224f7f1cd93a
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61024015"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62113804"
 ---
 # <a name="delete-columndefinition"></a>Удаление columnDefinition
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "61024015"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.Manage.All, Sites.FullControl.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Sites.Manage.All, Sites.FullControl.All |
+|Приложение | Sites.Manage.All, Sites.FullControl.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,7 +43,7 @@ DELETE /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns/{c
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -82,6 +82,10 @@ DELETE https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentTyp
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-columns-from-contenttype-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-columns-from-contenttype-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

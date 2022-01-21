@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: bc001761fe31db8106ac3df658fa9c18c7505beb
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 2e592512316b2f18c689c93d8674024f4955e3c8
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61020306"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62118194"
 ---
 # <a name="list-existing-synchronization-templates"></a>Список существующих шаблонов синхронизации
 
@@ -27,7 +27,7 @@ ms.locfileid: "61020306"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     |Directory.Read.All  |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается.|
-|Для приложений                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
+|Приложение                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ### <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ GET applications/{id}/synchronization/templates
 |:---------------|:--------|:-----------|
 | Authorization  | string  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/temp
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-synchronizationtemplate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-synchronizationtemplate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

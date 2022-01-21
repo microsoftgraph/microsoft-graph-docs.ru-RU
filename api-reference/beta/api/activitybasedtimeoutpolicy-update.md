@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: lujiangfeng666
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a302fd9262978f84432bf474fb73ffbcac443e84
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 0f79d659df7872e7518499bd89e7331f594dc020
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60991584"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62116926"
 ---
 # <a name="update-activitybasedtimeoutpolicy"></a>Обновление activitybasedtimeoutpolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "60991584"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.ApplicationConfiguration |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy.ReadWrite.ApplicationConfiguration |
+| Приложение                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ PATCH /policies/activityBasedTimeoutPolicies/{id}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,9 +51,9 @@ PATCH /policies/activityBasedTimeoutPolicies/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|определение|Коллекция String| Коллекция строк, содержащая строку JSON, определяемую правилами и настройками этой политики.  Обязательный.|
+|определение|Коллекция строк| Коллекция строк, содержащая строку JSON, определяемую правилами и настройками этой политики.  Обязательный.|
 |description|Строка| Описание этой политики.|
-|displayName|String| Отображение имени для этой политики. Обязательный.|
+|displayName|Строка| Отображение имени для этой политики. Обязательное.|
 |isOrganizationDefault|Логическое|Если заданной для true, активирует эту политику. Для одного типа политики может быть много политик, но только одна может быть активирована по умолчанию организации. Необязательный, значение по умолчанию является ложным.|
 
 ## <a name="response"></a>Отклик
@@ -102,6 +102,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-activitybasedtimeoutpolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-activitybasedtimeoutpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

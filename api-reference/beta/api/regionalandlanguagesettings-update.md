@@ -5,12 +5,12 @@ author: jasonbro
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: eed6912edd9252f73cec917098111024a634d5e0
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5be6239d350e8964583967f9647396f921b2a1e3
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60996894"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62102425"
 ---
 # <a name="update-regionalandlanguagesettings"></a>Обновление regionalAndLanguageSettings
 
@@ -27,7 +27,7 @@ ms.locfileid: "60996894"
 |----------------------------------|---------------------------------------------- |
 |Делегированные (рабочая или учебная учетная запись)|User.ReadWrite, User.ReadWrite.All             |
 |Делегированная (личная учетная запись)      |User.ReadWrite, User.ReadWrite.All             |
-|Для приложений                       |User.ReadWrite, User.ReadWrite.All             |
+|Приложение                       |User.ReadWrite, User.ReadWrite.All             |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -197,6 +197,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/patch-regionalandlanguagesettings-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/patch-regionalandlanguagesettings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

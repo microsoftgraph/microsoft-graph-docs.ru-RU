@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jecha
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d0cbb26840e894eaddf87696e93290553da0486f
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 2fbadb3cd7c5a413aca98cff3e3856287a100d07
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226614"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62115666"
 ---
 # <a name="get-teamworkhostedcontent"></a>Get teamworkHostedContent
 
@@ -29,7 +29,7 @@ ms.locfileid: "61226614"
 | :------------------------------------- | :--------------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | AppCatalog.Read.All, AppCatalog.ReadWrite.All, AppCatalog.Submit |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                   |
-| Application                            | AppCatalog.Read.All, AppCatalog.ReadWrite.All                    |
+| Приложение                            | AppCatalog.Read.All, AppCatalog.ReadWrite.All                    |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,7 +43,7 @@ GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/out
 GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/outlineIcon/hostedContent/$value
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
 Эта операция поддерживает `$select` [параметры запроса OData](/graph/query-parameter) для настройки ответа.
 
@@ -51,9 +51,9 @@ GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/out
 
 | Заголовок           | Значение                      |
 | :--------------- | :------------------------- |
-| Авторизация    | Bearer {токен}. Обязательный.  |
+| Авторизация    | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -98,13 +98,17 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 [!INCLUDE [sample-code](../includes/snippets/go/teamsappicon-get-hostedcontent-coloricon-value-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/teamsappicon-get-hostedcontent-coloricon-value-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 
 #### <a name="response"></a>Отклик
 
-Ниже показан пример отклика.
+Ниже приводится пример отклика.
 
 > **Примечание:** `contentBytes` и `contentType` всегда настроены на нуль.
 <!-- {

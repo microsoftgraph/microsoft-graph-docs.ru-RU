@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 352d46dd46bdcc7e4082bb7286ee8fed4e9bcc96
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b88bd741736bb0263d34a09e88af73dab8036166
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60984266"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62117148"
 ---
 # <a name="get-place"></a>Получить место
 
@@ -33,7 +33,7 @@ ms.locfileid: "60984266"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Place.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-| Для приложений                            | Place.Read.All |
+| Приложение                            | Place.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -54,7 +54,7 @@ GET /places/{id}
 |:--------------|:--------------------------|
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -97,6 +97,10 @@ GET https://graph.microsoft.com/v1.0/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-room-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-room-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -187,6 +191,10 @@ GET https://graph.microsoft.com/v1.0/places/bldg1@contoso.com
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-roomlist-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-roomlist-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

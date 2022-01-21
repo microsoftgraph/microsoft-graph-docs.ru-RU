@@ -5,12 +5,12 @@ author: BarrySh
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 46994201f7b1093d42e6cefb26692454ca3ee04d
-ms.sourcegitcommit: e1dd9860906e0b415fd376d70df1f928d1f3d29e
+ms.openlocfilehash: 76d4533abe1267add08744bf2b25aea8fe21c84f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61241669"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62121840"
 ---
 # <a name="update-permission"></a>Обновление разрешения
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "61241669"
 |:--------------------------------------|:-------------------------------------
 |Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.
-|Для приложений                            | Sites.FullControl.All
+|Приложение                            | Sites.FullControl.All
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -39,7 +39,7 @@ PATCH /sites/{sitesId}/permissions/{permissionId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -85,6 +85,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-permission-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-permission-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

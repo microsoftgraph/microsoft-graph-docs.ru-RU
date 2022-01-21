@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: c4a7e6136f17c42fa04beedd8cff22c3e879561b
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 55327cc257b3ba697ea3fee5802d0b6630cb0e80
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61027914"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62135252"
 ---
 # <a name="create-workposition"></a>Создание workPosition
 
@@ -59,7 +59,7 @@ POST /users/{id | userPrincipalName}/profile/positions
 |коллеги|[коллекция relatedPerson](../resources/relatedperson.md)|Коллеги, связанные с этой позицией.|
 |подробные|[positionDetail](../resources/positiondetail.md)|Содержит подробные сведения о позиции. |
 |вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
-|isCurrent|Логическое|Обозначает, является ли позиция текущей.|
+|isCurrent|Логический|Обозначает, является ли позиция текущей.|
 |manager|[relatedPerson](../resources/relatedperson.md)|Содержит сведения о менеджере пользователя в этой позиции.|
 |source|[personDataSource](../resources/persondatasource.md)|Где значения возникли, если синхронизированы с другой службы. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 
@@ -122,6 +122,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-workposition-from-profile-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-workposition-from-profile-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

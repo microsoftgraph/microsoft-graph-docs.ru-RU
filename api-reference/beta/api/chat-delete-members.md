@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f5f177d33d510f475ec5f2e798da002e67faf1d5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 476c2d040aa2a9d14659a7acd10d625798e9bc79
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60978519"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62119230"
 ---
 # <a name="remove-member-from-chat"></a>Удаление участника из чата
 Пространство имен: microsoft.graph
@@ -28,7 +28,7 @@ ms.locfileid: "60978519"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение| Chat.Manage.Chat*, ChatMember.ReadWrite.All |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ DELETE /chats/{chat-id}/members/{membership-id}
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -85,6 +85,10 @@ DELETE https://graph.microsoft.com/beta/chats/19:cf66807577b149cca1b7af0c32eec12
 [!INCLUDE [sample-code](../includes/snippets/go/delete-members-from-chat-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-members-from-chat-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -103,4 +107,3 @@ HTTP/1.1 204 No Content
 
 - [Удаление участника из канала](channel-delete-members.md)
 - [Удаление участника из чата](team-delete-members.md)
-

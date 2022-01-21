@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: f8b95255a8927e27e5a1ff0d23decfd4472adea3
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 3d6d80f048fbaa7765fbf884e28afa5f00796826
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61335488"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62114987"
 ---
 # <a name="create-accesspackagecatalog"></a>Создание accessPackageCatalog
 
@@ -46,7 +46,7 @@ POST /identityGovernance/entitlementManagement/catalogs
 | Авторизация | Носитель \{токен\}. Обязательный. |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса поставляем представление JSON объекта [accessPackageCatalog.](../resources/accesspackagecatalog.md)
 
 При создании **accessPackageCatalog** можно указать следующие свойства.
@@ -54,9 +54,9 @@ POST /identityGovernance/entitlementManagement/catalogs
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|Строка|Отображение имени каталога пакетов доступа.|
-|description|String|Описание каталога пакетов доступа.|
+|description|Строка|Описание каталога пакетов доступа.|
 |state|accessPackageCatalogState|Имеет `published` значение, если пакеты доступа доступны для управления. Возможные значения: `unpublished` и `published` .|
-|isExternallyVisible|Boolean|Могут ли пакеты доступа в этом каталоге запрашиваться пользователями за пределами клиента.|
+|isExternallyVisible|Логическое|Могут ли пакеты доступа в этом каталоге запрашиваться пользователями за пределами клиента.|
 
 ## <a name="response"></a>Отклик
 
@@ -101,6 +101,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accesspackagecatalog-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackagecatalog-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mahage-msft
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: e7a51c89995c223e9474d818dde8366d911a10df
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5ffaee182af1c7af80cb6ceaf19bb05049ecd321
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61018681"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62090384"
 ---
 # <a name="create-reviewsetquery"></a>Создание reviewSetQuery
 
@@ -44,7 +44,7 @@ POST /compliance/ediscovery/cases/{id}/reviewSets/{id}/queries
 |:--------------|:--------------|
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В теле запроса поставляем представление JSON объекта [reviewSetQuery.](../resources/ediscovery-reviewsetquery.md) В следующей таблице перечислены необходимые свойства.
 
@@ -95,6 +95,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-reviewsetquery-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-reviewsetquery-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 43f3dce9bdb15334188baebb1e397f974509085d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3d9a05d9f9e6acd69b28a39c4325a6d170ab76ff
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60996943"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62123056"
 ---
 # <a name="list-unifiedroleassignmentmultiple"></a>Перечисление объектов unifiedRoleAssignmentMultiple
 
@@ -36,7 +36,7 @@ ms.locfileid: "60996943"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  CloudPC.Read.All, CloudPC.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | CloudPC.Read.All, CloudPC.ReadWrite.All  |
+|Приложение | CloudPC.Read.All, CloudPC.ReadWrite.All  |
 
 ### <a name="for-device-management-intune-provider"></a>Для поставщика управления устройствами (Intune)
 
@@ -44,7 +44,7 @@ ms.locfileid: "60996943"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
+|Приложение | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -74,7 +74,7 @@ GET /roleManagement/deviceManagement/roleAssignments
 |:---- |:----------- |
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -168,6 +168,10 @@ GET  https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments
 [!INCLUDE [sample-code](../includes/snippets/go/list-cloudpcunifiedroleassignmentmultiple-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-cloudpcunifiedroleassignmentmultiple-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -251,6 +255,10 @@ GET  https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments?$fi
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-cloudpcunifiedroleassignmentmultiple-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-cloudpcunifiedroleassignmentmultiple-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

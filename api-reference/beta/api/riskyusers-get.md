@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: cloudhandler
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: c80e2de1bbffebabcbd56e26d1ae39a7a45d5b4d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b182624016bb6de6413236b729f5cb760c88860f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60993907"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62129506"
 ---
 # <a name="get-riskyuser"></a>Get riskyUser
 
@@ -29,7 +29,7 @@ ms.locfileid: "60993907"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskyUser.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | IdentityRiskyUser.Read.All |
+|Приложение | IdentityRiskyUser.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ GET /identityProtection/riskyUsers/{id}
 | Авторизация  | Bearer {token}. Обязательный. |
 | Workbook-Session-Id  | ID сеанса книги, определяя, сохраняются ли изменения. Необязательный параметр.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/riskyUsers/c2b6c2b9-dddc-acd0-2b39-d519d803
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-riskyuser-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-riskyuser-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

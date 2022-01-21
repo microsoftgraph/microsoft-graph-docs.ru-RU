@@ -1,0 +1,47 @@
+---
+description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
+ms.openlocfilehash: 439222e0215af42ca8cd13ef7c3b99ae7c205043
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62102390"
+---
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+$params = @{
+    "Template@odata.bind" = "https://graph.microsoft.com/beta/teamsTemplates('educationClass')"
+    DisplayName = "My Class Team"
+    Description = "My Class Team’s Description"
+    Channels = @(
+        @{
+            DisplayName = "Class Announcements 📢"
+            IsFavoriteByDefault = $true
+        }
+        @{
+            DisplayName = "Homework 🏋️"
+            IsFavoriteByDefault = $true
+        }
+    )
+    MemberSettings = @{
+        AllowCreateUpdateChannels = $false
+        AllowDeleteChannels = $false
+        AllowAddRemoveApps = $false
+        AllowCreateUpdateRemoveTabs = $false
+        AllowCreateUpdateRemoveConnectors = $false
+    }
+    InstalledApps = @(
+        @{
+            "TeamsApp@odata.bind" = "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
+        }
+        @{
+            "TeamsApp@odata.bind" = "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
+        }
+    )
+}
+
+New-MgTeam -BodyParameter $params
+
+```

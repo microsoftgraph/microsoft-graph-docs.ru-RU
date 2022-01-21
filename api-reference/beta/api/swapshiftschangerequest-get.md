@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9ae672be32654432660e273310169a5e5dfbdc37
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 4956422771fe2fd3d7f98d01302e76ba3a3258c5
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61010645"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62130787"
 ---
 # <a name="get-swapshiftschangerequest"></a>Get swapShiftsChangeRequest
 
@@ -28,7 +28,7 @@ ms.locfileid: "61010645"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | Schedule.Read.All *, Schedule.ReadWrite.All* |
+| Приложение | Schedule.Read.All *, Schedule.ReadWrite.All* |
 
 >\***Важно:** Разрешения приложения в настоящее время доступны только в закрытом режиме и недоступны для общего пользования.
 
@@ -50,7 +50,7 @@ GET /teams/{teamId}/schedule/swapShiftsChangeRequests
 |:----------|:----------|
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/swapShiftsChangeReq
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-swapshiftschangerequest-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-swapshiftschangerequest-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

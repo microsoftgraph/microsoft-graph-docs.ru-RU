@@ -5,12 +5,12 @@ author: emzho
 ms.localizationpriority: normal
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 5138bb43bea3aec216dcb86ffc2f09eaec96e315
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: cd18d8ec9b38e0011436dad13a97d8f09fe87ba2
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214949"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62132594"
 ---
 # <a name="displaytemplate-resource-type"></a>тип ресурса displayTemplate
 
@@ -23,10 +23,10 @@ ms.locfileid: "60214949"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор текста для шаблона отображения; например, `contosoTickets` .|
-|макет|[microsoft.graph.Json](../resources/intune-mam-json.md)|Определение внешнего вида контента, представленное адаптивной картой [,](https://docs.microsoft.com/adaptive-cards/authoring-cards/getting-started)которая представляет собой объектную модель объекта JSON-serialized.|
+|id|Строка|Идентификатор текста для шаблона отображения; например, `contosoTickets` .|
+|макет|[microsoft.graph.Json](../resources/intune-mam-json.md)|Определение внешнего вида контента, представленное адаптивной картой [,](/adaptive-cards/authoring-cards/getting-started)которая представляет собой объектную модель объекта JSON-serialized.|
 |priority|Int32|Определяет приоритет шаблона отображения. Шаблон отображения с приоритетом 1 оценивается перед шаблоном с приоритетом 4. Поддерживаются пробелы в значениях приоритетов.|
-|правила|[коллекция microsoft.graph.externalConnectors.propertyRule](../resources/externalconnectors-propertyrule.md)|Указывает дополнительные правила выбора этого шаблона отображения на основе схемы элемента. Необязательный параметр.|
+|правила|[коллекция microsoft.graph.externalConnectors.propertyRule](../resources/externalconnectors-propertyrule.md)|Указывает дополнительные правила выбора этого шаблона отображения на основе схемы элемента. Необязательно.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.
@@ -56,4 +56,3 @@ ms.locfileid: "60214949"
       "priority": 0
     }
 ```
-

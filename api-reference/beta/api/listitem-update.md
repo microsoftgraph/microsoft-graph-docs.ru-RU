@@ -6,12 +6,12 @@ title: Изменение записи в списке SharePoint
 ms.localizationpriority: medium
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1ca4ebfe0fc417470d96a4fedda75a37c7bd7a9c
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: afb1b6837d28ad9c101909e43018126064aa0964
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61123939"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62099556"
 ---
 # <a name="update-an-item-in-a-list"></a>Изменение элемента в списке
 
@@ -84,10 +84,14 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-listitem-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-listitem-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 При успешном выполнении этот метод возвращает объект [fieldValueSet][] для обновленного элемента списка в теле ответа.
 

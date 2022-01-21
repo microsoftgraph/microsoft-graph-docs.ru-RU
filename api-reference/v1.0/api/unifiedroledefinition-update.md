@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: bd7ceb47c3a1d95264405a3d72ef140742c63933
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: c53d2913442ee94ddb8560b4a57a87cea827889c
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61008496"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62091470"
 ---
 # <a name="update-unifiedroledefinition"></a>Обновление unifiedRoleDefinition
 
@@ -26,7 +26,7 @@ ms.locfileid: "61008496"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | RoleManagement.ReadWrite.Directory |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | RoleManagement.ReadWrite.Directory |
+| Приложение                            | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,7 @@ PATCH /roleManagement/directory/roleDefinitions/{id}
     
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 | Content-Type | application/json. Обязательный. |
     
 ## <a name="request-body"></a>Текст запроса
@@ -51,11 +51,11 @@ PATCH /roleManagement/directory/roleDefinitions/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|description|Строка| Описание определения роли. Только для чтения, **когда isBuiltIn** `true` является . |
-|displayName|Строка| Имя отображения для определения роли. Только для чтения, **когда isBuiltIn** `true` является . Обязательный.|
+|description|String| Описание определения роли. Только для чтения, **когда isBuiltIn** `true` является . |
+|displayName|Строка| Имя отображения для определения роли. Только для чтения, **когда isBuiltIn** `true` является . Обязательное.|
 |isEnabled|Boolean| Флаг, указывающий, включена ли роль для назначения. Если `false` роль недоступна для назначения. Только для чтения, **когда isBuiltIn** является правдой. |
 |resourceScopes|Коллекция String| Список областей и разрешений, к которые применяется определение роли. В настоящее `/` время поддерживается только. Только для чтения, **когда isBuiltIn** является правдой. **НЕ ИСПОЛЬЗУЙТЕ. В ближайшее время это свойство будет обесценилось. Прикрепить область к назначению ролей.**|
-|rolePermissions|[коллекция unifiedRolePermission](../resources/unifiedrolepermission.md)| Список разрешений, включенных в роль. Только для чтения, **когда isBuiltIn** `true` является . Обязательный. |
+|rolePermissions|[коллекция unifiedRolePermission](../resources/unifiedrolepermission.md)| Список разрешений, включенных в роль. Только для чтения, **когда isBuiltIn** `true` является . Обязательное. |
 |templateId|String| Настраиваемый идентификатор шаблона, который можно установить, **когда isBuiltIn** `false` . Этот идентификатор обычно используется, если требуется, чтобы идентификатор был одинаковым в разных каталогах. Только для чтения, **когда isBuiltIn** `true` является . |
 |version|String| Указывает версию определения роли. Только для чтения, **когда isBuiltIn** `true` является .|
 
@@ -113,6 +113,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-unifiedroledefinition-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-unifiedroledefinition-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

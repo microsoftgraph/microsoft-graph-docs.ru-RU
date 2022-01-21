@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3011a13d3acf20a3cbfb6b7a25ebaaadd53f03c7
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 0ebb86c14414a4bd7d10c05b119597fd21f0ba02
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61028692"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62109126"
 ---
 # <a name="create-educationassignment"></a>Создание educationAssignment
 
@@ -42,7 +42,7 @@ POST /education/classes/{class-id}/assignments
 | Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса поставляют представление JSON объекта [educationAssignment.](../resources/educationassignment.md)
 
 
@@ -100,12 +100,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-educationassignment-from-educationclass-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-educationassignment-from-educationclass-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 В теле запроса поставляют представление JSON объекта [educationAssignment.](../resources/educationassignment.md)
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

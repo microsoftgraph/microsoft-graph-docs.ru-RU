@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 94a31f0efb2ff406fc49c6ef2c066292b9842fc2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 43b165eed9ddb2af085c9fa045d681a8ad03f1a7
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61008812"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62134959"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>Ответ на сообщение в канале
 
@@ -44,7 +44,7 @@ POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса поставляем представление JSON объекта [сообщения.](../resources/chatmessage.md) Обязательным является только свойство body, другие свойства необязательны.
 
@@ -94,6 +94,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-reply-message-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-reply-message-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

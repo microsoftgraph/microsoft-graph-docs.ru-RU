@@ -1,20 +1,28 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 8cc2c241fa185d9aa8a18e7bb45b2f947be9219a
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: ddfe7302c0bec113b9ff799ed4316c6fa1093c27
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61294599"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62138237"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+requestBody := msgraphsdk.NewAccessReviewInstanceDecisionItem()
+decision := "Approve"
+requestBody.SetDecision(&decision)
+justification := "This person is still on my team"
+requestBody.SetJustification(&justification)
+options := &msgraphsdk.AccessReviewInstanceDecisionItemRequestBuilderPatchOptions{
+    Body: requestBody,
+}
 accessReviewInstanceId := "accessReviewInstance-id"
 accessReviewInstanceDecisionItemId := "accessReviewInstanceDecisionItem-id"
-graphClient.Me().PendingAccessReviewInstancesById(&accessReviewInstanceId).DecisionsById(&accessReviewInstanceDecisionItemId).Patch(nil)
+graphClient.Me().PendingAccessReviewInstancesById(&accessReviewInstanceId).DecisionsById(&accessReviewInstanceDecisionItemId).Patch(options)
 
 
 ```

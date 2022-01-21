@@ -5,12 +5,12 @@ author: jewan-microsoft
 ms.localizationpriority: high
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 6a1172597668704bcbbc6ed0808a5f367fa9c43f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a580dd9358f264b11b2a5e1138b0504de8344917
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61003870"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62117214"
 ---
 # <a name="list-notebooks"></a>Список записных книжек
 
@@ -44,7 +44,7 @@ GET /sites/{id}/onenote/notebooks
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 | Accept | строка | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/v1.0/me/onenote/notebooks
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-notebooks-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-notebooks-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

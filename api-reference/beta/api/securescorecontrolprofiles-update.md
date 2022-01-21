@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 2c02d91ef7c774975c28b125bcbc4fb9432d1504
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ed359e0282e352a773e33c8d912bb0753e3e352e
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61002596"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62089363"
 ---
 # <a name="update-securescorecontrolprofiles"></a>Обновление объектов secureScoreControlProfiles
 
@@ -28,7 +28,7 @@ ms.locfileid: "61002596"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |   SecurityEvents.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | SecurityEvents.ReadWrite.All |
+|Приложение | SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ PATCH /security/secureScoreControlProfiles/{id}
 | Авторизация  | Bearer {код}. Обязательно.|
 |Prefer | return=representation. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В теле запроса поставляем представление JSON значений для соответствующих полей, которые должны быть обновлены. В следующей таблице перечислены поля, которые можно обновить для secureScoreControlProfile. Значения для существующих свойств, не включенных в тело запроса, не изменятся. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
@@ -100,6 +100,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/securescorecontrolprofiles-update-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/securescorecontrolprofiles-update-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

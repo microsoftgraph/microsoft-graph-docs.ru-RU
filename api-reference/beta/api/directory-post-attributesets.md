@@ -5,12 +5,12 @@ author: rolyon
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 33a8c33e68df4df9cb141b9d098a2663f452cbbb
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: f7bb48303234d2cfddd72700048af9cb7e1c3e3f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226515"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62106318"
 ---
 # <a name="create-attributeset"></a>Создание attributeSet
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "61226515"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CustomSecAttributeDefinition.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|CustomSecAttributeDefinition.ReadWrite.All|
+|Приложение|CustomSecAttributeDefinition.ReadWrite.All|
 
 Пользователю, заявиму, также должна быть назначена роль администратора [определения атрибутов.](/azure/active-directory/roles/permissions-reference) По умолчанию глобальные роли администратора и других администраторов не имеют разрешений на чтение, определение или назначение настраиваемого атрибута безопасности.
 
@@ -43,7 +43,7 @@ POST /directory/attributeSets
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,8 +53,8 @@ POST /directory/attributeSets
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|description|Строка|Описание набора атрибутов. Может иметь длину до 128 символов и включать символы Unicode. Можно изменить позже. Необязательный параметр.|
-|id|Строка|Идентификатор для уникального набора атрибутов в клиенте. Может иметь длину до 32 символов и включать символы Unicode. Не может содержать пробелы или специальные символы. Не удается изменить позже. Случай нечувствительный. Обязательный.|
+|description|String|Описание набора атрибутов. Может иметь длину до 128 символов и включать символы Unicode. Можно изменить позже. Необязательно.|
+|id|String|Идентификатор для уникального набора атрибутов в клиенте. Может иметь длину до 32 символов и включать символы Unicode. Не может содержать пробелы или специальные символы. Не удается изменить позже. Случай нечувствительный. Обязательный.|
 |maxAttributesPerSet|Int32|Максимальное количество пользовательских атрибутов безопасности, которые можно определить в этом наборе атрибутов. Значение по умолчанию — `null`. Если не указано, администратор может добавить не более 500 активных атрибутов на каждого клиента. Можно изменить позже. Необязательный параметр.|
 
 
@@ -104,6 +104,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-attributeset-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-attributeset-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

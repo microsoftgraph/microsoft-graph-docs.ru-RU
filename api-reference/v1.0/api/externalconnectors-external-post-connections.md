@@ -5,12 +5,12 @@ author: mecampos
 ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 48eb565e9d306f03cb71b79e5564540eb6adb4f2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 437359ac65a0fe53ea0dafc6704935b3337c6ffd
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60984744"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62107466"
 ---
 # <a name="create-externalconnection"></a>Создание externalConnection
 Пространство имен: microsoft.graph.externalConnectors
@@ -26,7 +26,7 @@ ms.locfileid: "60984744"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Неприменимо|
 |Делегированные (личная учетная запись Майкрософт)|Неприменимо|
-|Для приложений| ExternalConnection.ReadWrite.OwnedBy|
+|Приложение| ExternalConnection.ReadWrite.OwnedBy|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ POST /external/connections
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|ID подключения. Обязательный.|
+|id|String|ID подключения. Обязательное.|
 |name|String|Имя подключения. Обязательный.|
 |description|Строка|Описание подключения. Обязательный.|
 |configuration|[microsoft.graph.externalConnectors.configuration](../resources/externalconnectors-configuration.md)|Конфигурации подключения. Необязательный параметр.|
@@ -100,6 +100,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-externalconnection-from-connections-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-externalconnection-from-connections-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

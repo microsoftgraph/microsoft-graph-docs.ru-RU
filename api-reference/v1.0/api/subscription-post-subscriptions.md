@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: 5ab0d5fcec2156f4b5f69e38594bc25a29b6b400
-ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
+ms.openlocfilehash: 5baabb8797f5a2e1a815155d6126b720c4cbe462
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "61604408"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62091667"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -141,6 +141,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-subscription-from-subscriptions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-subscription-from-subscriptions-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -161,7 +165,7 @@ Content-type: application/json
 |[Группы](../resources/group.md)|`groups`|
 |[Список](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[Почта](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
-|[Присутствие](../resources/presence.md)| `/communications/presences/{id}` (один пользователь), `/communications/presences?$filter=id in ({id},{id}…)` (несколько пользователей)|
+|[Присутствие](../resources/presence.md)| `/communications/presences/{id}` (один пользователь), `/communications/presences?$filter=id in ('{id}','{id}',…)` (несколько пользователей)|
 |[printer](../resources/printer.md) |`print/printers/{id}/jobs`|
 |[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
 |[Оповещение безопасности](../resources/alert.md)|`security/alerts?$filter=status eq 'New'`|

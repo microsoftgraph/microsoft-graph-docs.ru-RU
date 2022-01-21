@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 53dfd4da50f178adf5f897aa27aa00d49c5caff8
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: 957ab0dabf49d9fdfe5e55fd4922db2d116db4e2
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266385"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62123261"
 ---
 # <a name="create-permissiongrantconditionset-in-excludes-collection-of-permissiongrantpolicy"></a>Создание permissionGrantConditionSet исключает коллекцию разрешенийGrantPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "61266385"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Policy.ReadWrite.PermissionGrant |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Policy.ReadWrite.PermissionGrant |
+|Приложение | Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ POST /policies/permissionGrantPolicies/{id}/excludes
 
 | Имя       | Описание|
 |:-----------|:----------|
-| Авторизация | Bearer {токен}. Обязательный.  |
+| Авторизация | Bearer {token}. Обязательный.  |
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -96,12 +96,16 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/permissiongrantpolicy-create-excludes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/permissiongrantpolicy-create-excludes-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
