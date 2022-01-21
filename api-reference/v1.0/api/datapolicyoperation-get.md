@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: dkershaw10
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: dca2a29edce201d8e565c06d67d69f8863c9f9e9
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3e5d3a264eda4a6f39eac34684291eaece129db2
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031150"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62128869"
 ---
 # <a name="get-datapolicyoperation"></a>Get dataPolicyOperation
 
@@ -25,7 +25,7 @@ ms.locfileid: "61031150"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  User.Export.All, User.Read.All  |
 |Делегированные (личная учетная запись Майкрософт) |  Неприменимо  |
-|Для приложений | User.Export.All, User.Read.All | 
+|Приложение | User.Export.All, User.Read.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -36,9 +36,9 @@ GET /dataPolicyOperations/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Bearer {token}|
+| Авторизация  | Bearer {token}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект dataPolicyOperation](../resources/datapolicyoperation.md) в тексте ответа.
@@ -71,6 +71,10 @@ GET https://graph.microsoft.com/v1.0/dataPolicyOperations/{id}
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-datapolicyoperation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-datapolicyoperation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

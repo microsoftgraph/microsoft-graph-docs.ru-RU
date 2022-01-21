@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ca4bcc2084ee3dceaee8a1b10c475b117584a6fb
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 486ca36f6d0ab40a201a6fd861d338aa087d9291
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60993411"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62111395"
 ---
 # <a name="get-domain"></a>Получение домена
 
@@ -27,7 +27,7 @@ ms.locfileid: "60993411"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All  |
+|Приложение | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,7 +49,7 @@ GET /domains/{id}
 | Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/v1.0/domains/contoso.com
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-domain-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-domain-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

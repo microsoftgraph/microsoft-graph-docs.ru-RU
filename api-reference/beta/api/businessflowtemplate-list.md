@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 76e974126839b0227f3b3369d4c791f3c138ed0c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 0fefb1b789b3d13995d93c5acfe09362faa3e600
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61015756"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62124130"
 ---
 # <a name="list-businessflowtemplates"></a>Список businessFlowTemplates
 
@@ -26,7 +26,7 @@ ms.locfileid: "61015756"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership |
+|Приложение                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership |
 
 Подписанный пользователь также должен быть в роли каталога, что позволяет им читать обзор доступа.
 
@@ -40,7 +40,7 @@ GET /businessFlowTemplates
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не следует поставлять тело запроса.
 
 ## <a name="response"></a>Отклик
@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/beta/businessFlowTemplates
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-businessflowtemplate-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-businessflowtemplate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

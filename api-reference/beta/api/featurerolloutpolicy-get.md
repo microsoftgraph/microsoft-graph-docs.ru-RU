@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: madhavpatel6
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 51afaad5df85bdb5cf4d6185589f990966fc82ea
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e658c14a632cf6bf7b9aa3425d29d303fd189e49
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61012157"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62118879"
 ---
 # <a name="get-featurerolloutpolicy"></a>Get featureRolloutPolicy
 
@@ -48,9 +48,9 @@ GET /policies/featureRolloutPolicies/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token}. Обязательно |
+| Авторизация | Bearer {token}. Обязательный |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/policies/featureRolloutPolicies/df85e4d9-e8
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-featurerolloutpolicy-policies-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-featurerolloutpolicy-policies-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -158,6 +162,10 @@ GET https://graph.microsoft.com/beta/policies/featureRolloutPolicies/df85e4d9-e8
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-featurerolloutpolicy-expandappliesto-policies-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-featurerolloutpolicy-expandappliesto-policies-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: e226e77717c048cc0e8001506a4b5b3a497aeccf
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 4a31643464159f7578619eb318ea186a988d6023
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525682"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62094513"
 ---
 # <a name="update-bookingservice"></a>Обновление службы бронирования
 
@@ -57,17 +57,17 @@ PATCH /bookingBusinesses/{id}/services/{id}
 |defaultPriceType|bookingPriceType|Способ заряжания службы по умолчанию. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`, `unknownFutureValue`.|
 |defaultReminders|[коллекция bookingReminder](../resources/bookingreminder.md)|Набор напоминаний по умолчанию для назначения этой службы. Значение этого свойства доступно только при чтении этого **bookingService** по его ID.|
 |description|Строка|Текстовое описание службы.|
-|displayName|Строка|Имя службы.|
+|displayName|String|Имя службы.|
 |id|String| Только для чтения.|
-|isHiddenFromCustomers|Boolean|True означает, что эта служба недоступна клиентам для бронирования.|
-|isLocationOnline|Boolean|True указывает, что встречи для службы будут проводиться онлайн. Значение по умолчанию − ложь.|
+|isHiddenFromCustomers|Логический|True означает, что эта служба недоступна клиентам для бронирования.|
+|isLocationOnline|Логическое|True указывает, что встречи для службы будут проводиться онлайн. Значение по умолчанию − ложь.|
 |notes|String|Дополнительные сведения об этой службе.|
 |postBuffer|Длительность|Время буферизации после назначения для этой службы заканчивается, и до следующей встречи клиента можно заказать.|
 |preBuffer|Длительность|Время буферизации перед назначением для этой службы может начаться.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Набор политик, которые определяют, как следует создавать и управлять встречами для этого типа службы.|
-|smsNotificationsEnabled|Boolean|True указывает, что sms-уведомления можно отправить клиентам для назначения службы. Значение по умолчанию − ложь.|
+|smsNotificationsEnabled|Логический|True указывает, что sms-уведомления можно отправить клиентам для назначения службы. Значение по умолчанию − ложь.|
 |staffMemberIds|Коллекция строк|Представляет тех [сотрудников,](../resources/bookingstaffmember.md) которые предоставляют эту службу. |
-|customQuestions|[коллекция bookingQuestionAssignment](../resources/bookingquestionassignment.md)|Это содержит набор пользовательских вопросов, связанных с определенной службой. Необязательное свойство.|
+|customQuestions|[коллекция bookingQuestionAssignment](../resources/bookingquestionassignment.md)|Это содержит набор пользовательских вопросов, связанных с определенной службой. Необязательно.|
 |maximumAttendeesCount|Int32|Максимальное число клиентов, разрешенных в службе.  |
 
 ## <a name="response"></a>Отклик
@@ -108,6 +108,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-bookingservice-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-bookingservice-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

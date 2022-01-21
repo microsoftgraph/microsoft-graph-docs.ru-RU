@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 43498c75b23b8b809e04f7e02c3d1db33e0be957
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 84c5c22f6a22dc23e176c94a2332cd8a82488206
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031814"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62129421"
 ---
 # <a name="get-skillproficiency"></a>Получить skillProficiency
 
@@ -28,7 +28,7 @@ ms.locfileid: "61031814"
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Для приложений                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
+| Приложение                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/me/profile/skills/{id}
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-skillproficiency-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-skillproficiency-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

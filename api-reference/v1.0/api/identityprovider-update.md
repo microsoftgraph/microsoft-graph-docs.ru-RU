@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: namkedia
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2793552faccab4e10416e6f782c9ba9a1fe461f2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8f1689988c5d51d913eca37958e7be96f5353227
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61024512"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62128743"
 ---
 # <a name="update-identityprovider-deprecated"></a>Обновление identityProvider (не рекомендуется)
 Пространство имен: microsoft.graph
@@ -98,6 +98,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-identityprovider-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-identityprovider-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

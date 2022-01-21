@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 098d62fb7d2142903bf01c3b9a4b0c27e7c028cc
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 71fc980df141b010a74bbc950ad444f240b3ae37
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61030786"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62134735"
 ---
 # <a name="create-inferenceclassificationoverride"></a>Создание объекта inferenceClassificationOverride
 
@@ -91,6 +91,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-inferenceclassificationoverride-from-inferenceclassification-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-inferenceclassificationoverride-from-inferenceclassification-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

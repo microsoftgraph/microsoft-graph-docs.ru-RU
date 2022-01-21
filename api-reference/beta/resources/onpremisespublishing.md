@@ -1,16 +1,16 @@
 ---
 title: onPremisesPublishing resource type
 description: Представляет прокси-сервер приложения на объектеPremisesPublishing.
-localization_priority: Normal
+ms.localizationpriority: medium
 author: japere
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: d91eae080f46fd43e5ac9cc8d083681e12da8d12
-ms.sourcegitcommit: d586ddb253d27f9ccb621bd128f6a6b4b1933918
+ms.openlocfilehash: f357432a8967ef639f91f59b134e73ba40d465b1
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108812"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62122444"
 ---
 # <a name="onpremisespublishing-resource-type"></a>onPremisesPublishing resource type
 
@@ -18,7 +18,7 @@ ms.locfileid: "53108812"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Локальное приложение, опубликованное через [Прокси-сервер приложения Azure AD,](https://aka.ms/whyappproxy) представлено объектом приложения и связанным с ним **свойствомPremisesPublishing.** [](application.md) Application Proxy предоставляет безопасный удаленный доступ к локальному приложению.
+Локальное приложение, опубликованное через [Прокси-сервер приложения Azure AD,](/azure/active-directory/app-proxy/what-is-application-proxy) представлено объектом приложения и связанным с ним **свойствомPremisesPublishing.** [](application.md) Application Proxy предоставляет безопасный удаленный доступ к локальному приложению.
 
 Объект **onPremisesPublishing** представляет набор свойств для настройки прокси-сервера приложения для локального [приложения.](application.md) 
 
@@ -36,13 +36,13 @@ ms.locfileid: "53108812"
 |externalAuthenticationType|externalAuthenticationType| Сведения о параметре предварительной проверки подлинности для приложения. Предварительная проверка подлинности обеспечивает, чтобы пользователи должны пройти проверку подлинности перед доступом к приложению. Passthru не требует проверки подлинности. Возможные значения: `passthru`, `aadPreAuthentication`. |
 |externalUrl|Строка| Опубликованный внешний URL-адрес приложения. Например, https://intranet-contoso.msappproxy.net/.  |
 |internalUrl|Строка| Внутренний URL-адрес приложения. Например, https://intranet/. |
-|isBackendCertificateValidationEnabled|Boolean| Указывает, включена ли проверка сертификата SSL для приложения. Для всех новых приложений-прокси-приложений свойство будет установлено по `true` умолчанию. Для всех существующих приложений будет установлено свойство `false` . |
-|isHttpOnlyCookieEnabled|Boolean| Указывает, следует ли установить флаг cookie HTTPOnly в загонах ответов HTTP. Установите это значение, `true` чтобы cookie-файлы прокси-серверов приложений включали флаг HTTPOnly в заглавных главах ответов HTTP. Если используется служба удаленного рабочего стола, установите это значение false. Значение по умолчанию — `false`. |
-|isOnPremPublishingEnabled|Boolean| Указывает, публикуется ли приложение в настоящее время с помощью прокси-сервера приложения или нет. Это заранее заданной системой. Только для чтения. |
-|isPersistentCookieEnabled|Boolean| Указывает, следует ли установить флаг сохраняемой файлы cookie в загонах http-ответа. Сохраняй это `false` значение. Используйте этот параметр только для приложений, которые не могут обмениваться файлами cookie между процессами. Дополнительные сведения о параметрах cookie см. в приложении Cookie для доступа к локальному приложению в [Azure Active Directory.](/azure/active-directory/manage-apps/application-proxy-configure-cookie-settings) Значение по умолчанию — `false`. |
-|isSecureCookieEnabled|Boolean| Указывает, следует ли установить флаг "Безопасное cookie" в загонах http-ответа. Установите это значение для `true` передачи файлов cookie по защищенному каналу, например зашифрованному запросу HTTPS. Значение по умолчанию — `true`.|
-|isTranslateHostHeaderEnabled|Boolean| Указывает, следует ли приложению переводить URL-адреса в загонах reponse. Храните это значение так, как если в запросе на проверку подлинности вашему приложению не требуется исходный загон `true` хост. Значение по умолчанию — `true`.|
-|isTranslateLinksInBodyEnabled|Boolean| Указывает, следует ли приложению переводить URL-адреса в теле приложения. Храните это значение как если у вас нет жестких HTML-ссылок на другие локальное приложение и не `false` используйте настраиваемые домены. Дополнительные сведения см. в [приложении Link translation with Application Proxy.](/azure/active-directory/manage-apps/application-proxy-configure-hard-coded-link-translation) Значение по умолчанию — `false`.|
+|isBackendCertificateValidationEnabled|Логический| Указывает, включена ли проверка сертификата SSL для приложения. Для всех новых приложений-прокси-приложений свойство будет установлено по `true` умолчанию. Для всех существующих приложений будет установлено свойство `false` . |
+|isHttpOnlyCookieEnabled|Логическое| Указывает, следует ли установить флаг cookie HTTPOnly в загонах ответов HTTP. Установите это значение, `true` чтобы cookie-файлы прокси-серверов приложений включали флаг HTTPOnly в заглавных главах ответов HTTP. Если используется служба удаленного рабочего стола, установите это значение false. Значение по умолчанию — `false`. |
+|isOnPremPublishingEnabled|Логический| Указывает, публикуется ли приложение в настоящее время с помощью прокси-сервера приложения или нет. Это заранее заданной системой. Только для чтения. |
+|isPersistentCookieEnabled|Логическое| Указывает, следует ли установить флаг сохраняемой файлы cookie в загонах http-ответа. Сохраняй это `false` значение. Используйте этот параметр только для приложений, которые не могут обмениваться файлами cookie между процессами. Дополнительные сведения о параметрах cookie см. в приложении Cookie для доступа к локальному приложению в [Azure Active Directory.](/azure/active-directory/manage-apps/application-proxy-configure-cookie-settings) Значение по умолчанию — `false`. |
+|isSecureCookieEnabled|Логическое| Указывает, следует ли установить флаг "Безопасное cookie" в загонах http-ответа. Установите это значение для `true` передачи файлов cookie по защищенному каналу, например зашифрованному запросу HTTPS. Значение по умолчанию — `true`.|
+|isTranslateHostHeaderEnabled|Логический| Указывает, следует ли приложению переводить URL-адреса в загонах reponse. Храните это значение так, как если в запросе на проверку подлинности вашему приложению не требуется исходный загон `true` хост. Значение по умолчанию — `true`.|
+|isTranslateLinksInBodyEnabled|Логический| Указывает, следует ли приложению переводить URL-адреса в теле приложения. Храните это значение как если у вас нет жестких HTML-ссылок на другие локальное приложение и не `false` используйте настраиваемые домены. Дополнительные сведения см. в [приложении Link translation with Application Proxy.](/azure/active-directory/manage-apps/application-proxy-configure-hard-coded-link-translation) Значение по умолчанию — `false`.|
 |singleSignOnSettings|[onPremisesPublishingSingleSignOn](onpremisespublishingsinglesignon.md)| Представляет единую конфигурацию входов для локального приложения. |
 |verifiedCustomDomainCertificatesMetadata|[verifiedCustomDomainCertificatesMetadata](verifiedcustomdomaincertificatesmetadata.md)| Сведения о сертификате, связанном с приложением при использовании настраиваемого домена. `null` при использовании домена по умолчанию. Только для чтения.|
 |verifiedCustomDomainKeyCredential|[keyCredential](keycredential.md)| Связанные учетные данные ключей для используемой настраиваемой области. |
@@ -95,5 +95,3 @@ ms.locfileid: "53108812"
   "suppressions": []
 }
 -->
-
-

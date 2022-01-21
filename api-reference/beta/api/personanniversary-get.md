@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: bafee76de8f6216700201afae4626839d40e2730
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 973576f5a38f43fe0c0184cfe4ba860d787e0ea1
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61011296"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62118767"
 ---
 # <a name="get-personanniversary"></a>Get personAnniversary
 
@@ -28,7 +28,7 @@ ms.locfileid: "61011296"
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Для приложений                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
+| Приложение                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,7 +49,7 @@ GET /users/{id | userPrincipalName}/profile/anniversaries/{id}
 |:---------------|:----------------------------|
 | Авторизация  | Bearer {token}. Обязательный.   |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/me/profile/anniversaries/{id}
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-personanniversary-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-personanniversary-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

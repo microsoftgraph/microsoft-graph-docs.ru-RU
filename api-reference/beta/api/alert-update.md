@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 8bce0980bb89a8140a19e5fc58658930d31059de
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6315e793b68da85ba4169bd04fa985383533e2e2
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60995811"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62121448"
 ---
 # <a name="update-alert"></a>Обновление оповещения
 
@@ -28,7 +28,7 @@ ms.locfileid: "60995811"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |   SecurityEvents.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | SecurityEvents.ReadWrite.All |
+|Приложение | SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,9 +44,9 @@ PATCH /security/alerts/{alert_id}
 | Имя       | Описание|
 |:-----------|:-----------|
 | Авторизация  | Bearer {код}. Обязательно.|
-|Prefer | return=representation. Необязательный параметр. |
+|Prefer | return=representation. Необязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В теле запроса поставляем представление JSON значений для соответствующих полей, которые должны быть обновлены. Тело должно **содержать** свойство **vendorInformation** с допустимым и `provider` `vendor` полями. В следующей таблице перечислены поля, которые можно обновить для оповещения. Значения для существующих свойств, не включенных в тело запроса, не изменятся. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
@@ -57,7 +57,7 @@ PATCH /security/alerts/{alert_id}
 |comments|Коллекция String|Аналитик комментирует оповещение (для управления оповещениями клиентов). Этот метод может обновлять поле комментариев только с помощью следующих значений: `Closed in IPC` , `Closed in MCAS` .|
 |feedback|enum alertFeedback|Отзыв аналитика об оповещении. Возможные значения: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
 |status|alertStatus enum|Оповещение состояния жизненного цикла (этап). Возможные значения: `unknown`, `newAlert`, `inProgress`, `resolved`.|
-|tags|Коллекция объектов string|Метки, вызываемые пользователем, которые можно применить к оповещению и могут служить условиями фильтра (например, "HVA", "SAW").|
+|tags|Коллекция String|Метки, вызываемые пользователем, которые можно применить к оповещению и могут служить условиями фильтра (например, "HVA", "SAW").|
 |vendorInformation |[securityVendorInformation](../resources/securityvendorinformation.md)|Сложный тип, содержащий подробные сведения о безопасности продавца продукта или услуги, поставщика субпоставщика (например, продавец = Майкрософт; поставщик = ATP в Защитнике Windows; субпоставщик = AppLocker). **Требуются поля поставщика и поставщика.**|
 
 ## <a name="response"></a>Отклик
@@ -116,6 +116,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-alert-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-alert-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -184,6 +188,10 @@ Prefer: return=representation
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-alert-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-alert-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: be4c37b2550857dbf6675e282051461669d9eb7c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3a7739b80e80125a295f6f3aeae051e4e6c6ad27
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019465"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62123093"
 ---
 # <a name="list-languages"></a>Перечисление языков
 
@@ -28,7 +28,7 @@ ms.locfileid: "61019465"
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Для приложений                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Приложение                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -57,7 +57,7 @@ GET /users/{id | userPrincipalName}/profile/languages
 |:---------------|:----------------------------|
 | Авторизация  | Bearer {token}. Обязательный.   |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -98,6 +98,10 @@ GET https://graph.microsoft.com/beta/me/profile/languages
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-languages-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-languages-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

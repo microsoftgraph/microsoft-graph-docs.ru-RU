@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 7bd603b1c57fdad30d46906aa8246b630d8da278e4ad51b6342cda62879ae36f
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: e88986d90e38144900ac5cd6edd84a59900a59d0
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57142643"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62094861"
 ---
 ```javascript
 
@@ -34,7 +34,7 @@ const bookingAppointment = {
     }
 };
 
-await client.api('/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments/AAMkADKnAAA=')
+await client.api('/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/appointments/AAMkADKnAAA=')
     .version('beta')
     .update(bookingAppointment);
 

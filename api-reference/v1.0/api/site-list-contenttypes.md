@@ -5,12 +5,12 @@ description: Получите коллекцию типов контента н�
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: b96a8173b0b76e34c3eaa25a74b3fa0e6c1ef2ce
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 292dd475ff4a1a9d2cc4717f4d06029d913e6dc4
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61027167"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62121851"
 ---
 # <a name="list-contenttypes-in-a-site"></a>Список contentTypes на сайте
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "61027167"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+|Приложение | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ GET /sites/{site-id}/contentTypes
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/enum-contenttypes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/enum-contenttypes-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

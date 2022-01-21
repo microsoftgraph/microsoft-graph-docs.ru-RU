@@ -5,12 +5,12 @@ author: razortbone
 ms.localizationpriority: medium
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 1e4f16585de42fb094c404283870c348d0579fe9
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 06128a16ee5f720e88a679cf2da0188375de9182
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526965"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62094561"
 ---
 # <a name="update-bookingcustomquestion"></a>Обновление bookingCustomQuestion
 
@@ -54,7 +54,7 @@ PATCH /bookingBusinesses/{bookingBusinessesId}/customQuestions/{bookingCustomQue
 
 | Свойство        | Тип              | Описание                                                                                                         |
 | :-------------- | :---------------- | :------------------------------------------------------------------------------------------------------------------ |
-| answerInputType | answerInputType   | Ожидаемый тип ответа. Допустимые значения: `text`, `radioButton`, `unknownFutureValue`. Необязательное свойство.    |
+| answerInputType | answerInputType   | Ожидаемый тип ответа. Допустимые значения: `text`, `radioButton`, `unknownFutureValue`. Необязательно.    |
 | answerOptions   | Коллекция строк | Список возможных значений ответов. Необязательное свойство.                                                                   |
 | displayName     | Строка            | Вопрос. Наследуется [от bookingNamedEntity](../resources/bookingnamedentity.md). Обязательный. |
 
@@ -66,6 +66,8 @@ PATCH /bookingBusinesses/{bookingBusinessesId}/customQuestions/{bookingCustomQue
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_bookingcustomquestion"
@@ -83,6 +85,32 @@ Content-Type: application/json
   "answerOptions": []
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-bookingcustomquestion-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-bookingcustomquestion-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-bookingcustomquestion-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-bookingcustomquestion-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-bookingcustomquestion-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-bookingcustomquestion-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

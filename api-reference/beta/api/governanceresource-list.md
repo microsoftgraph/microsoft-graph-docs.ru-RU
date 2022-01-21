@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: carolinetempleton
-ms.openlocfilehash: 7949edfe6f7078016656fc94b6e5dd88c2e9f247
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: bf6ce207c535a4ebae6d8b30bb9f40401dcc54d5
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61020908"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62125929"
 ---
 # <a name="list-governanceresources"></a>Список governanceResources
 
@@ -31,7 +31,7 @@ ms.locfileid: "61020908"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | PrivilegedAccess.Read.AzureResources |
+| Приложение | PrivilegedAccess.Read.AzureResources |
 
 ### <a name="azure-ad"></a>Azure AD
 
@@ -39,7 +39,7 @@ ms.locfileid: "61020908"
 |:--------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | PrivilegedAccess.Read.AzureAD |
+| Приложение | PrivilegedAccess.Read.AzureAD |
 
 ### <a name="groups"></a>Группы
 
@@ -47,7 +47,7 @@ ms.locfileid: "61020908"
 |:-------------- |:----------- |
 | Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroup |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | PrivilegedAccess.Read.AzureADGroup |
+| Приложение | PrivilegedAccess.Read.AzureADGroup |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -97,6 +97,10 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-governanceresources-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-governanceresources-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

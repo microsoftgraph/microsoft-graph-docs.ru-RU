@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 6b378053c339fdad4791f066f3d98a5f7d1a7d03
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d020b4babd2b43012cc3f02d7c0e382e2abb0216
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61032689"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62134111"
 ---
 # <a name="delete-cloudpconpremisesconnection"></a>Удаление cloudPcOnPremisesConnection
 
@@ -53,7 +53,7 @@ DELETE /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -94,6 +94,10 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremi
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-onpremisesconnections-from-virtualendpoint-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-onpremisesconnections-from-virtualendpoint-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

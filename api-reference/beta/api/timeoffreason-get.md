@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f8a09031f383f258e67b718f71f34960d3e554fb
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a140dd05c71f4142c5bdda37c858f8e74db29e66
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60977414"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62130745"
 ---
 # <a name="get-timeoffreason"></a>Get timeOffReason
 
@@ -28,7 +28,7 @@ ms.locfileid: "60977414"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Schedule.Read.All *, Schedule.ReadWrite.All*  |
+|Приложение | Schedule.Read.All *, Schedule.ReadWrite.All*  |
 
 >\***Важно:** Разрешения приложения в настоящее время доступны только в закрытом режиме и недоступны для общего пользования.
 
@@ -52,7 +52,7 @@ GET /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons/{tim
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/timeoffreason-get-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/timeoffreason-get-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

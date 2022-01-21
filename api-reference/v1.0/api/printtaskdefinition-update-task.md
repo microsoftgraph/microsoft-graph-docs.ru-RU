@@ -5,12 +5,12 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: f43cf2b3d681595fd6d53696812eeca92815931e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1c70450a5e7a30948aa5f887d18464c2ac527874
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60983876"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62088278"
 ---
 # <a name="update-printtask"></a>Обновление printTask
 Пространство имен: microsoft.graph
@@ -28,7 +28,7 @@ ms.locfileid: "60983876"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Не поддерживается. |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| PrintTaskDefinition.ReadWrite.All |
+|Приложение| PrintTaskDefinition.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -97,6 +97,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-printtask-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-printtask-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

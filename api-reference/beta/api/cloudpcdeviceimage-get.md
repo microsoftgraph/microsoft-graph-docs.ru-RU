@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 99242cd25fd99946f5dc3268d77b39e8198a0a64
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b67ac59fa64f26c524265b743f0b2aadf85fe77a
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61032717"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62121273"
 ---
 # <a name="get-cloudpcdeviceimage"></a>Get cloudPcDeviceImage
 
@@ -28,7 +28,7 @@ ms.locfileid: "61032717"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Приложение|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ GET /deviceManagement/virtualEndpoint/deviceImages/{id}
 | :------------ | :------------------------ |
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImag
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-cloudpcdeviceimage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpcdeviceimage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

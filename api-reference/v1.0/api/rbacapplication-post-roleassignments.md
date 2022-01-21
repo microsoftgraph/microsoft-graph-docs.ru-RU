@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 591da78a005b720ad5c247e7fd46b4e9706ac99a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: d964aa9dda53533a82384af60369db3b8fe120c5
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61006133"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62134422"
 ---
 # <a name="create-unifiedroleassignment"></a>Создание unifiedRoleAssignment
 
@@ -26,7 +26,7 @@ ms.locfileid: "61006133"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | RoleManagement.ReadWrite.Directory |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | RoleManagement.ReadWrite.Directory |
+| Приложение                            | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,7 @@ POST /roleManagement/directory/roleAssignments
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
@@ -51,9 +51,9 @@ POST /roleManagement/directory/roleAssignments
 | Параметр | Тип | Описание|
 |:---------------|:--------|:----------|
 |roleDefinitionId|Строка| Идентификатор определения роли для назначения.|
-|principalId|String| Идентификатор основного, которому предоставляется назначение. |
+|principalId|Строка| Идентификатор основного, которому предоставляется назначение. |
 |directoryScopeId|Строка|Идентификатор объекта каталога, представляющего область назначения. Требуется либо это свойство, либо **appScopeId.** Область назначения определяет набор ресурсов, к которым доверителем был предоставлен доступ. Области каталогов — это общие области, хранимые в каталоге, понятные нескольким приложениям. Используйте `/` для области для клиента. Используйте **appScopeId,** чтобы ограничить область только приложения.|
-|appScopeId|String|Идентификатор области, определенной для приложения, когда область назначения является конкретной для приложения. Требуется либо это **свойство, либо directoryScopeId.** Области приложений — это области, которые определяются и понимаются только этим приложением. Используйте `/` для областей приложений для всех клиентов. Используйте **directoryScopeId,** чтобы ограничить область для определенных объектов каталогов, например административных единиц.|
+|appScopeId|Строка|Идентификатор области, определенной для приложения, когда область назначения является конкретной для приложения. Требуется либо это **свойство, либо directoryScopeId.** Области приложений — это области, которые определяются и понимаются только этим приложением. Используйте `/` для областей приложений для всех клиентов. Используйте **directoryScopeId,** чтобы ограничить область для определенных объектов каталогов, например административных единиц.|
 
 ## <a name="response"></a>Отклик
 
@@ -104,6 +104,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignment-from-rbacapplication-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedroleassignment-from-rbacapplication-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -180,6 +184,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignment-over-administrativeunit-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedroleassignment-over-administrativeunit-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -252,6 +260,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignment-over-application-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedroleassignment-over-application-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

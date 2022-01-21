@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
 description: Ресурс site предоставляет метаданные и связи для сайта SharePoint.
-ms.date: 09/10/2017
-title: Site
+title: Тип ресурса site
 ms.localizationpriority: high
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 7959908fb0bfe74cb4cbf1ba242988e3ecbf5848
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 67b482b268c871e6e9b99d2812172551918807ab
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58696199"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62104997"
 ---
 # <a name="site-resource-type"></a>Тип ресурса site
 
@@ -131,7 +130,7 @@ ms.locfileid: "58696199"
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже показано представление ресурса **site** в формате JSON.
+Ниже указано представление ресурса в формате JSON.
 
 Ресурс **site** является производным от ресурса [**baseItem**](baseitem.md) и наследует его свойства.
 

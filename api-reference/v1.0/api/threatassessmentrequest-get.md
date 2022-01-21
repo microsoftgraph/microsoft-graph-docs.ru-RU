@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: hafen-ms
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: aff1df12de203acdc46ea406097d73b1f9ee4366
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 35eb114903bc9512763139fa6af4878b51ccd69b
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61029167"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62128321"
 ---
 # <a name="get-threatassessmentrequest"></a>Получение объекта threatAssessmentRequest
 
@@ -31,7 +31,7 @@ ms.locfileid: "61029167"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | ThreatAssessment.ReadWrite.All             |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | ThreatAssessment.Read.All                  |
+| Приложение                            | ThreatAssessment.Read.All                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -56,7 +56,7 @@ GET /informationProtection/threatAssessmentRequests/{id}
 |:----------|:----------|
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -100,6 +100,10 @@ GET https://graph.microsoft.com/v1.0/informationProtection/threatAssessmentReque
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-mailassessmentrequest-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-mailassessmentrequest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -179,6 +183,10 @@ GET https://graph.microsoft.com/v1.0/informationProtection/threatAssessmentReque
 [!INCLUDE [sample-code](../includes/snippets/go/get-emailfileassessmentrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-emailfileassessmentrequest-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -254,6 +262,10 @@ GET https://graph.microsoft.com/v1.0/informationProtection/threatAssessmentReque
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-fileassessmentrequest-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-fileassessmentrequest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -332,6 +344,10 @@ GET https://graph.microsoft.com/v1.0/informationProtection/threatAssessmentReque
 [!INCLUDE [sample-code](../includes/snippets/go/get-urlassessmentrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-urlassessmentrequest-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -405,6 +421,10 @@ GET https://graph.microsoft.com/v1.0/informationProtection/threatAssessmentReque
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-threatassessmentrequest-expand-results-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-threatassessmentrequest-expand-results-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

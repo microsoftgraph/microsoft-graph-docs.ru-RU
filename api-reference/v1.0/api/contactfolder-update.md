@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4ad894ad65453a4f510bfe2f5d4b4bba249da792
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6c73590cf71c05b839b69957283cf662ca13eb3f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60974236"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62098149"
 ---
 # <a name="update-contactfolder"></a>Обновление объекта contactFolder
 
@@ -43,8 +43,8 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|Строка|Отображаемое имя папки.|
-|parentFolderId|String|Идентификатор родительской папки для папки.|
+|displayName|String|Отображаемое имя папки.|
+|parentFolderId|Строка|Идентификатор родительской папки для папки.|
 
 ## <a name="response"></a>Отклик
 
@@ -85,6 +85,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-contactfolder-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-contactfolder-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

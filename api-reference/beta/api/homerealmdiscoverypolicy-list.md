@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: hpsin
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 20c49bc8869ce127287aaa96d963bb93014b22d3
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 36c7ea1a43c8e55fd4b6cbe92360a7f088f19da9
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60986326"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62127623"
 ---
 # <a name="list-homerealmdiscoverypolicies"></a>Перечисление типов ресурсов homeRealmDiscoveryPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "60986326"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
+| Приложение                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,9 +46,9 @@ GET policies/homeRealmDiscoveryPolicies
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/policies/homeRealmDiscoveryPolicies
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-homerealmdiscoverypolicies-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-homerealmdiscoverypolicies-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: governance
 author: markwahl-msft
-ms.openlocfilehash: 95c4f7c3c637f5a84b258aa12be695fb359873df
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1c3883fa2d3a902d2e5f6d8ee086065b71e16874
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60980005"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62105668"
 ---
 # <a name="list-programcontrols"></a>List programControls
 
@@ -26,7 +26,7 @@ ms.locfileid: "60980005"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
+|Приложение                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
 
 Подписанный пользователь также должен быть в роли каталога, которая позволяет им читать программу.
 
@@ -40,7 +40,7 @@ GET /programControls
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не следует поставлять тело запроса.
 
 ## <a name="response"></a>Отклик
@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/beta/programControls
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-programcontrol-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-programcontrol-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

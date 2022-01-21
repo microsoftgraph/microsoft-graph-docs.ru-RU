@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e16e62941b3aacdcf6954829ee4ca0fe5d5780a5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9c712ea0a3f167fcf63de7bc4d82891c96fd2621
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60986530"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62109049"
 ---
 # <a name="get-the-status-of-an-educationsynchronizationprofile"></a>Получить статус educationSynchronizationProfile
 
@@ -28,7 +28,7 @@ ms.locfileid: "60986530"
 | :------------------------------------ | :---------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)    | EduAdministration.Read, EduAdministration.ReadWrite         |
 | Делегированная (личная учетная запись Майкрософт) | Не поддерживается.                                              |
-| Для приложений                           | EduAdministration.Read.All, EduAdministration.ReadWrite.All |
+| Приложение                           | EduAdministration.Read.All, EduAdministration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,7 +43,7 @@ GET /education/synchronizationProfiles/{id}/profileStatus
 | :------------ | :----- | :------------------------ |
 | Authorization | string | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/prof
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationsynchronizationprofile-status-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationsynchronizationprofile-status-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

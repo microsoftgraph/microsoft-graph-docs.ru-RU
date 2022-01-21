@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: a20d44fa0cca26ac78ab7bccc0092a55fd49ea72
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 385a7bb22d88eb7e18dca4a5791c553092f1ae75
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61018233"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62137114"
 ---
 # <a name="delete-permissiongrantconditionset-from-excludes-collection-of-permissiongrantpolicy"></a>Удаление permissionGrantConditionSet из исключения коллекции разрешенийGrantPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "61018233"
 |:--------------------|:---------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись) | PermissionGrantPolicy.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-| Для приложений | PermissionGrantPolicy.ReadWrite.All |
+| Приложение | PermissionGrantPolicy.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ DELETE /policies/permissionGrantPolicies/{permissiongrantpolicy-id}/excludes/{ex
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -86,6 +86,10 @@ DELETE https://graph.microsoft.com/beta/policies/permissionGrantPolicies/my-cust
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/permissiongrantpolicy-delete-excludes-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/permissiongrantpolicy-delete-excludes-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

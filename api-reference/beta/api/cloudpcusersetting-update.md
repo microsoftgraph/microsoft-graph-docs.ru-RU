@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: fe4386a810cdf4ed1a094f7b92edb003c81e3cab
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 34ac23f83984aa685a0cca4699042bd0051ea574
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022573"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62109237"
 ---
 # <a name="update-cloudpcusersetting"></a>Обновление cloudPcUserSetting
 
@@ -28,7 +28,7 @@ ms.locfileid: "61022573"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|CloudPC.ReadWrite.All|
+|Приложение|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -57,8 +57,8 @@ PATCH /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|Строка|Имя параметра, отображаемая в пользовательском интерфейсе.|
-|localAdminEnabled|Логическое|Чтобы включить локальный параметр администрирования, измените этот параметр на `True` .  |
-|selfServiceEnabled|Логическое|Чтобы включить параметр самообслуживки, измените этот параметр на `True` . |
+|localAdminEnabled|Логический|Чтобы включить локальный параметр администрирования, измените этот параметр на `True` .  |
+|selfServiceEnabled|Логический|Чтобы включить параметр самообслуживки, измените этот параметр на `True` . |
 |lastModifiedDateTime|DateTimeOffset|Последняя дата и время изменения параметра. Тип Timestamp представляет сведения о дате и времени с помощью формата ISO 8601 и всегда находится во времени UTC. Например, полночь UTC 1 января 2014 г. выглядит так: '2014-01-01T00:00:00Z'. |
 
 
@@ -106,6 +106,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-cloudpcusersetting-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-cloudpcusersetting-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

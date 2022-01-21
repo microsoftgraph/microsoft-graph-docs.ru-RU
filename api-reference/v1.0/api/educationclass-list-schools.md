@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3fb668046b8cb3686a32b14e0feb0f1844b0065f
-ms.sourcegitcommit: 70b3caded085ba8ef15e389f81fa005506f1e2fb
+ms.openlocfilehash: dd108a6d81b5855b9ec6144a77b0c6e4b9710341
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61131884"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62111326"
 ---
 # <a name="list-schools"></a>Перечисление учебных заведений
 
@@ -26,7 +26,7 @@ ms.locfileid: "61131884"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic                         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложения                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+| Приложение                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -35,7 +35,7 @@ ms.locfileid: "61131884"
 GET /education/classes/{id}/schools
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
@@ -45,7 +45,7 @@ GET /education/classes/{id}/schools
 | :------------ | :------------------------ |
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/schools
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-schools-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-schools-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

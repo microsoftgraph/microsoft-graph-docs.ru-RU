@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b640615a75c8677d867f11b8f1793e1a16602cff
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9dc9587afa5c7423702f3d60a846f9ec774c14a6
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61016042"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62104345"
 ---
 # <a name="get-timeoffrequest"></a>Get timeOffRequest
 
@@ -26,7 +26,7 @@ ms.locfileid: "61016042"
 |:---------------------------------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Schedule.Read.All, Schedule.ReadWrite.All |
+|Приложение | Schedule.Read.All, Schedule.ReadWrite.All |
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, в которых они не являются членами. в настоящее время только в закрытом предварительном просмотре и недоступны для общего пользования.
 
@@ -48,7 +48,7 @@ GET /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}
 |:----------|:----------|
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timeOffRequests/{ti
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-timeoffrequest-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-timeoffrequest-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

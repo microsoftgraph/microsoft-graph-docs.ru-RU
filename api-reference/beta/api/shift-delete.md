@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 83a163223614c07da0fa741a90aa866453fc19b9
-ms.sourcegitcommit: 12f07c009c57db3cc9174b165b5ec30195c00996
+ms.openlocfilehash: 13ab5b3e6fd9550ca8647f182221e298df420676
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61647157"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62123017"
 ---
 # <a name="delete-shift"></a>Удаление смены
 
@@ -28,7 +28,7 @@ ms.locfileid: "61647157"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Schedule.Read.All, Schedule.ReadWrite.All |
+|Приложение | Schedule.Read.All, Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,9 +42,9 @@ DELETE /teams/{teamId}/schedule/shifts/{shiftId}
 
 | Заголовок       | Значение |
 |:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -83,6 +83,10 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts/{shiftId}
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/shift-delete-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/shift-delete-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

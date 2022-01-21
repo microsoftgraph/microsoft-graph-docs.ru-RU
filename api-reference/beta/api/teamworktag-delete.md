@@ -5,12 +5,12 @@ author: anniecolonna
 ms.localizationpriority: medium
 ms.prod: teamwork
 doc_type: apiPageType
-ms.openlocfilehash: 6c417010688417477eebef949cb64415767f5f13
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 0b00934fdc88db7a805b5eaabb60ec4b955c10ba
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61017890"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62115589"
 ---
 # <a name="delete-teamworktag"></a>Удаление командной работы
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "61017890"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Не поддерживается.|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|TeamworkTag.ReadWrite.All|
+|Приложение|TeamworkTag.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,7 +43,7 @@ DELETE /teams/{team-Id}/tags/{teamworkTag-Id}
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/teams/53c53217-fe77-4383-bc5a-ed4937a1ae
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-teamworktag-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-teamworktag-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

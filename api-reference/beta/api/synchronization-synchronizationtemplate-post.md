@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 893407344022bb93bf47e58374471d053abd7e29
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a67e44993c2484eac2a1815e1ed5451a5ceeb6f7
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031682"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62095846"
 ---
 # <a name="create-synchronizationtemplate"></a>Создание синхронизацииTemplate
 
@@ -27,7 +27,7 @@ ms.locfileid: "61031682"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается.|
-|Для приложений                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
+|Приложение                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ### <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ POST /applications/{id}/synchronization/templates/
 |:---------------|:--------|:-----------|
 | Authorization  | string  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В корпусе запроса поставляем созданный [объект синхронизацииTemplate.](../resources/synchronization-synchronizationtemplate.md) Необходимы `id` свойства `applicationId` и `factoryTag` свойства. Если шаблон не предоставляется, будет использоваться схема по умолчанию, связанная `schema` с `factoryTag` свойством.
 
@@ -87,6 +87,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-synchronizationtemplate-from-synchronization-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-synchronizationtemplate-from-synchronization-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

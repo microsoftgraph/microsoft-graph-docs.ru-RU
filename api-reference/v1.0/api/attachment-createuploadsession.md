@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d6b4e3598bd341a447694fdc35caee0c09eea1bf
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: bbb1aa1924283096e9caf41915c430ffe96212d1
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61001272"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62111546"
 ---
 # <a name="attachment-createuploadsession"></a>вложение: createUploadSession
 
@@ -45,7 +45,7 @@ ms.locfileid: "61001272"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Calendars.ReadWrite, Mail.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Calendars.ReadWrite, Mail.ReadWrite |
-| Для приложений                            | Calendars.ReadWrite, Mail.ReadWrite |
+| Приложение                            | Calendars.ReadWrite, Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -69,10 +69,10 @@ POST /users/{id | userPrincipalName}/messages/{id}/attachments/createUploadSessi
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -95,10 +95,10 @@ POST /users/{id | userPrincipalName}/messages/{id}/attachments/createUploadSessi
 
 ## <a name="examples"></a>Примеры
 
+### <a name="example-1-create-an-upload-session-to-add-a-large-attachment-to-a-draft-message"></a>Пример 1. Создание сеанса загрузки для добавления большого вложения в черновик сообщения
 В следующем примере показано, как создать сеанс загрузки, который можно использовать в последующих операциях по отправке файлов в указанное сообщение.
 
-### <a name="request"></a>Запрос
-
+#### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -141,8 +141,7 @@ Content-type: application/json
 
 ---
 
-
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -161,6 +160,83 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.uploadSession",
     "uploadUrl": "https://outlook.office.com/api/v1.0/Users('a8e8e219-4931-95c1-b73d-62626fd79c32@72aa88bf-76f0-494f-91ab-2d7cd730db47')/Messages('AAMkADI5MAAIT3drCAAA=')/AttachmentSessions('AAMkADI5MAAIT3k0uAAA=')?authtoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IktmYUNIUlN6bllHMmNI",
     "expirationDateTime": "2019-09-25T01:09:30.7671707Z",
+    "nextExpectedRanges": [
+        "0-"
+    ]
+}
+```
+
+### <a name="example-2-create-an-upload-session-to-add-a-large-in-line-attachment-to-a-draft-message"></a>Пример 2. Создание сеанса загрузки для добавления большого вложения в строку в черновик сообщения
+
+В следующем примере показано, как создать сеанс загрузки, который можно использовать для добавления большого вложения в черновик сообщения.
+
+Для вложения на линии установите _свойствоInline,_ чтобы и использовать свойство contentId, чтобы указать CID для `true` вложения, как показано ниже.  В тексте черновика сообщения используйте одно и то же значение CID, чтобы указать позицию, в которой необходимо включить вложение с помощью эталонного тега CID HTML, например `<img src="cid:my_inline_picture">` . После успешной загрузки файла отрисовка сообщения будет включать вложение как часть тела сообщения в указанном расположении.
+
+#### <a name="request"></a>Запрос
+
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "attachment_createuploadsession_inline",
+  "sampleKeys": ["AAMkAGUwNjQ4ZjIxLTQ3Y2YtNDViMi1iZjc4LTMA="]
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/me/messages/AAMkAGUwNjQ4ZjIxLTQ3Y2YtNDViMi1iZjc4LTMA=/attachments/createUploadSession
+Content-type: application/json
+
+{
+  "AttachmentItem": {
+    "attachmentType": "file",
+    "name": "scenary", 
+    "size": 7208534,
+    "isInline": true,
+    "contentId": "my_inline_picture"
+  }
+}
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/attachment-createuploadsession-inline-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/attachment-createuploadsession-inline-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/attachment-createuploadsession-inline-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/attachment-createuploadsession-inline-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/attachment-createuploadsession-inline-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### <a name="response"></a>Отклик
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "response",
+  "name": "attachment_createuploadsession_inline",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.uploadSession"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.uploadSession",
+    "uploadUrl": "https://outlook.office.com/api/gv1.0/users('a8e8e219-4931-95c1-b73d-62626fd79c32@72aa88bf-76f0-494f-91ab-2d7cd730db47')/messages('AAMkAGUwNjQ4ZjIxLTQ3Y2YtNDViMi1iZjc4LTMA=')/AttachmentSessions('AAMkAGUwNjQ4ZjIxLTAAA=')?authtoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IjFTeXQ1bXdXYVh5UFJ",
+    "expirationDateTime": "2021-12-27T14:20:12.9708933Z",
     "nextExpectedRanges": [
         "0-"
     ]

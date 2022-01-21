@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 3d6e727ad610594b1ba9997c81479fdd9dded2d9
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: d35db8a0463b1b86b77f694221c28fca88b3d7d2
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61524625"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62089157"
 ---
 # <a name="update-unifiedroledefinition"></a>Обновление unifiedRoleDefinition
 
@@ -27,7 +27,7 @@ ms.locfileid: "61524625"
 - каталог (Azure AD) 
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Разрешения
 
 В зависимости от поставщика RBAC и необходимого типа разрешений (делегирования или приложения) выберите из следующих таблиц наименее привилегированное разрешение, необходимое для вызова этого API. Дополнительные данные, [](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) в том числе осторожность перед выбором более привилегированных разрешений, поиск следующих разрешений в ссылке [Permissions](/graph/permissions-reference). 
 
@@ -88,19 +88,19 @@ PATCH /roleManagement/cloudPc/roleDefinitions/{id}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |description|Строка| Описание определения роли. Только для чтения, когда isBuiltIn является правдой. |
-|displayName|Строка| Имя отображения для определения роли. Только для чтения, когда isBuiltIn является правдой. Обязательный.|
+|displayName|String| Имя отображения для определения роли. Только для чтения, когда isBuiltIn является правдой. Обязательный.|
 |id|Строка| Уникальный идентификатор определения роли. Key, not nullable, Read-only. |
 |isBuiltIn|Boolean| Флаг, указывающий, является ли определение роли частью набора по умолчанию, включенного в продукт или настраиваемый. Только для чтения. |
 |isEnabled|Boolean| Флаг, указывающий, включена ли роль для назначения. Если значение false, роль недоступна для назначения. Только для чтения, когда isBuiltIn является правдой. |
 |resourceScopes|Коллекция String| К списку областей применяются разрешения, предоставленные определением ролей. В настоящее время поддерживается только "/". Только для чтения, когда isBuiltIn является правдой. **НЕ ИСПОЛЬЗУЙТЕ. В ближайшее время это свойство будет обесценилось. Прикрепить область к назначению ролей.**|
-|rolePermissions|[коллекция unifiedRolePermission](../resources/unifiedrolepermission.md)| Список разрешений, включенных в роль. Только для чтения, когда isBuiltIn является правдой. Обязательно. |
-|templateId|Строка| Настраиваемый идентификатор шаблона, который можно установить, когда isBuiltIn является ложным. Этот идентификатор обычно используется, если требуется, чтобы идентификатор был одинаковым в разных каталогах. Только для чтения, когда isBuiltIn является правдой. |
+|rolePermissions|[коллекция unifiedRolePermission](../resources/unifiedrolepermission.md)| Список разрешений, включенных в роль. Только для чтения, когда isBuiltIn является правдой. Обязательное. |
+|templateId|String| Настраиваемый идентификатор шаблона, который можно установить, когда isBuiltIn является ложным. Этот идентификатор обычно используется, если требуется, чтобы идентификатор был одинаковым в разных каталогах. Только для чтения, когда isBuiltIn является правдой. |
 |inheritsPermissionsFrom| [коллекция unifiedRoleDefinition](../resources/unifiedroledefinition.md)| Только для чтения набор определений ролей, которые наследует заданное определение роли. Только встроенные роли Azure AD поддерживают этот атрибут. |
 |version|String| Указывает версию определения роли. Только для чтения, когда isBuiltIn является правдой.|
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `204 No Content`.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example-1-updates-a-unifiedroledefinition-for-a-directory-provider"></a>Пример 1. Обновление **единой системыRoleDefinition** для поставщика каталогов
 
@@ -151,6 +151,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/update-unifiedroledefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-unifiedroledefinition-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -183,6 +187,8 @@ Content-type: application/json
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_unifiedroledefinition_cloudpc"
@@ -207,6 +213,32 @@ Content-type: application/json
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-unifiedroledefinition-cloudpc-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-unifiedroledefinition-cloudpc-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-unifiedroledefinition-cloudpc-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-unifiedroledefinition-cloudpc-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-unifiedroledefinition-cloudpc-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-unifiedroledefinition-cloudpc-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

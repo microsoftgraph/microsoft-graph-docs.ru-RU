@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 66d1ff97950847c6c421500f1f3ebc1b91d2a8a1
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 448a35b90f8ee3e8f8ef42d7187fb7064ffadf86
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651514"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62130429"
 ---
 # <a name="list-assignmentrequests"></a>Назначение спискаRequests
 
@@ -26,7 +26,7 @@ ms.locfileid: "61651514"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
+| Приложение                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -55,9 +55,9 @@ GET /identityGovernance/entitlementManagement/assignmentRequests
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Носитель \{токен\}. Обязательный. |
+| Авторизация | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/as
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-accesspackageassignmentrequest-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-accesspackageassignmentrequest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

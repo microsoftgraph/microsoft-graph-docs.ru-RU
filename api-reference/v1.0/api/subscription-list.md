@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: e8f61274860a95664b3e1437bc09697b6c40e96c
-ms.sourcegitcommit: e75969aa44a1aab722ac44d09c37508ffbad8738
+ms.openlocfilehash: 892a118e95d5de0b3045baedf6da6aa412e489cc
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2021
-ms.locfileid: "61307631"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62087843"
 ---
 # <a name="list-subscriptions"></a>Перечисление подписок
 
@@ -98,7 +98,7 @@ GET /subscriptions
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -138,6 +138,10 @@ GET https://graph.microsoft.com/v1.0/subscriptions
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-subscriptions-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-subscriptions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

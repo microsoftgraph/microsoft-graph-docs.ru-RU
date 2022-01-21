@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: high
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4d0c351b4438b9dbc21668def9811fe94cce2f67
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 7effbad16582aac43ec55292e6d63289b6b812bb
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61008434"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62110423"
 ---
 # <a name="list-contacts"></a>Список контактов
 
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/v1.0/me/contacts?$filter=emailAddresses/any(a:a/
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -108,6 +108,10 @@ GET https://graph.microsoft.com/v1.0/me/contacts
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-get-contacts-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-get-contacts-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9e421089116709daec23b5e03da13331b151586a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e8436f74c7ba3c7ebca94cb01cc2a82156995fa3
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60977357"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62130730"
 ---
 # <a name="delete-timeoffrequest"></a>Удаление timeOffRequest
 
@@ -28,7 +28,7 @@ ms.locfileid: "60977357"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений | Schedule.ReadWrite.All* |
+|Приложение | Schedule.ReadWrite.All* |
 
 >\***Важно:** Разрешения приложения в настоящее время доступны только в закрытом режиме и недоступны для общего пользования.
 
@@ -46,7 +46,7 @@ DELETE /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}
 |:--------------|:--------------|
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -87,6 +87,10 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffRequests/
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-timeoffrequest-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-timeoffrequest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

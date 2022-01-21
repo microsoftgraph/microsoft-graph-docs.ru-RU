@@ -5,12 +5,12 @@ author: tarkansevilmis
 ms.localizationpriority: medium
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 2751d8fcd5f220456fa7b65608e3a53016b41031
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 81ecf2e0be4d315da48a8b1e139c94982027e408
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60985430"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62120230"
 ---
 # <a name="get-plannerrostermember"></a>Get plannerRosterMember
 Пространство имен: microsoft.graph
@@ -50,7 +50,7 @@ GET /planner/rosters/{plannerRosterId}/members/{plannerRosterMemberId}
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/planner/rosters/523a9d5a-f9d5-45c1-929f-b85
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-plannerrostermember-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-plannerrostermember-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

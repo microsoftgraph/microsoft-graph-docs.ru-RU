@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: hpsin
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2c0ec9303005fe629426a7841568407a3a7ce1c1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8eb5e2dd7132bad4cd0229e70dbdadd91f32ea86
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019024"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62134762"
 ---
 # <a name="delete-homerealmdiscoverypolicy"></a>Удаление homeRealmDiscoveryPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "61019024"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.ApplicationConfiguration |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy.ReadWrite.ApplicationConfiguration |
+| Приложение                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ DELETE /policies/homeRealmDiscoveryPolicies/{id}
 |:--------------|:--------------|
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -86,6 +86,10 @@ DELETE https://graph.microsoft.com/v1.0/policies/homeRealmDiscoveryPolicies/{id}
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-homerealmdiscoverypolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-homerealmdiscoverypolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

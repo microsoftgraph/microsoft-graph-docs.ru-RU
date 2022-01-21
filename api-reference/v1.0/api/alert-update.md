@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: ff8eac9c91bf403a1fb5a55ddfe5f7587b1cc77c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: ff2cc5ea082dbec30bdd790f5e473cd371d35d57
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61007131"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62136547"
 ---
 # <a name="update-alert"></a>Обновление оповещения
 
@@ -26,7 +26,7 @@ ms.locfileid: "61007131"
 |:---------------------------------------|:------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | SecurityEvents.ReadWrite.All        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                      |
-| Для приложений                            | SecurityEvents.ReadWrite.All        |
+| Приложение                            | SecurityEvents.ReadWrite.All        |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ PATCH /security/alerts/{alert_id}
 | Авторизация | Bearer {код}. Обязательно. |
 | Prefer        | return=representation. Необязательный параметр.   |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В теле запроса поставляем представление JSON значений для соответствующих полей, которые должны быть обновлены. Тело должно **содержать** свойство **vendorInformation** с допустимым и `provider` `vendor` полями. В следующей таблице перечислены поля, которые можно обновить для оповещения. Значения для существующих свойств, не включенных в тело запроса, не изменятся. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
@@ -120,6 +120,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/go/update-alert-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-alert-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -190,6 +194,10 @@ Prefer: return=representation
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-alert-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-alert-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

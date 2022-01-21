@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: cloudhandler
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: a89134646de3f31bf5c8ebe5c1c1c77a3e118360
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: f154cb396285b350309b5f4257f0ac329c9f21cb
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61026448"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62135113"
 ---
 # <a name="list-riskdetection"></a>List riskDetection
 
@@ -31,7 +31,7 @@ ms.locfileid: "61026448"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskEvent.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | IdentityRiskEvent.Read.All |
+|Приложение | IdentityRiskEvent.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +51,7 @@ GET /identityProtection/riskDetections
 | Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/beta/riskDetections
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-riskdetection-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-riskdetection-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

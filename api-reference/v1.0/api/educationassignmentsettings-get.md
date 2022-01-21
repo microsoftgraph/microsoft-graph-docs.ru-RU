@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: def89b3006545503708c6574bf2f70f938ad24ec
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1bf1a1cc1264a0a7f633f5e81780211034527944
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61016287"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62111339"
 ---
 # <a name="get-educationassignmentsettings"></a>Get educationAssignmentSettings
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "61016287"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
+|Приложение| EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ GET /education/classes/{id}/assignmentSettings
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не поставляем тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationassignmentsettings-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationassignmentsettings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: 8672ad3ef35516f9e1e849d548618170abd2453e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: dc32f5ba7ff9ed0ac412bc0257e9dc4c0d345dca
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61021761"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62129666"
 ---
 # <a name="create-oauth2permissiongrant-a-delegated-permission-grant"></a>Создание oAuth2PermissionGrant (делегированная субсидия на разрешение)
 
@@ -30,7 +30,7 @@ ms.locfileid: "61021761"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.ReadWrite.All |
+|Приложение | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,7 +46,7 @@ POST /oauth2PermissionGrants
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В теле запроса поставляем представление JSON объекта [oAuth2PermissionGrant.](../resources/oauth2permissiongrant.md)
 
@@ -54,12 +54,12 @@ POST /oauth2PermissionGrants
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-| clientId | String | ID **директора** клиентской службы для приложения, которому разрешено действовать от имени пользователя, входишего в него, при доступе к API. [](../resources/serviceprincipal.md) Обязательный.  |
-| consentType | String | Указывает, предоставляется ли авторизация клиентского приложения для выдают себя за всех пользователей или только определенного пользователя. *AllPrincipals* указывает авторизацию, чтобы выдать себя за всех пользователей. *Principal* указывает авторизацию, чтобы выдать себя за конкретного пользователя. Согласие от имени всех пользователей может быть предоставлено администратором. В некоторых случаях для некоторых делегированных разрешений пользователям, не относя правительственным администраторам, может быть разрешено согласие от имени самих себя. Обязательный.  |
+| clientId | String | ID **директора** клиентской службы для приложения, которому разрешено действовать от имени пользователя, входишего в него, при доступе к API. [](../resources/serviceprincipal.md) Обязательное.  |
+| consentType | Строка | Указывает, предоставляется ли авторизация клиентского приложения для выдают себя за всех пользователей или только определенного пользователя. *AllPrincipals* указывает авторизацию, чтобы выдать себя за всех пользователей. *Principal* указывает авторизацию, чтобы выдать себя за конкретного пользователя. Согласие от имени всех пользователей может быть предоставлено администратором. В некоторых случаях для некоторых делегированных разрешений пользователям, не относя правительственным администраторам, может быть разрешено согласие от имени самих себя. Обязательный.  |
 | principalId | Строка | ID **пользователя,** от имени которого клиент уполномочен получать доступ к ресурсу, если **consentType** является [](../resources/user.md) *основным.* Если **consentType** *— это AllPrincipals,* это значение является null. Обязательно, когда **consentType** является *основным*. |
 | resourceId | String | ID **главного** ресурса [службы,](../resources/serviceprincipal.md) к которому разрешен доступ. При этом определяется API, который клиент уполномочен пытаться вызвать от имени подписанного пользователя. |
 | scope | String | Разделенный пробелом список значений утверждений для делегирования разрешений, которые должны быть включены в маркеры доступа для приложения-ресурса (API). Например, `openid User.Read GroupMember.Read.All`. Каждое значение утверждения  должно совпадать с полем значения одного из делегированных разрешений, определенных API, перечисленным в свойстве **publishedPermissionScopes** директора [службы ресурсов.](../resources/serviceprincipal.md) |
-| startTime | DateTimeOffset | В настоящее время значение времени начала игнорируется, но требуется значение. Обязательный. |
+| startTime | DateTimeOffset | В настоящее время значение времени начала игнорируется, но требуется значение. Обязательное. |
 | expiryTime | DateTimeOffset | В настоящее время значение конца времени игнорируется, но требуется значение. Обязательный. |
 
 ## <a name="response"></a>Отклик
@@ -108,6 +108,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-oauth2permissiongrant-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-oauth2permissiongrant-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -6,12 +6,12 @@ ms.localizationpriority: medium
 ms.prod: sharepoint
 description: Создание списка на сайте.
 doc_type: apiPageType
-ms.openlocfilehash: 9bd060de75c06d28d9379968e6f57a5362aa056f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 438465d0243ce28ccd547f209a4a4b0d7841bb43
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61023421"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62132516"
 ---
 # <a name="create-a-new-list"></a>Создание списка
 
@@ -27,7 +27,7 @@ ms.locfileid: "61023421"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Sites.Manage.All                            |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | Sites.Manage.All                            |
+| Приложение                            | Sites.Manage.All                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -37,7 +37,7 @@ ms.locfileid: "61023421"
 POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В теле запроса укажите представление ресурса [списка][], который необходимо создать, в формате JSON.
 
@@ -88,6 +88,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-list-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-list-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

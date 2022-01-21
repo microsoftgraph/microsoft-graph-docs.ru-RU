@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 105fac27b11d118596e1a1f82473e13b0623be14
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: 89d2db4318ec18176396001488941542e984d44f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651088"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62108978"
 ---
 # <a name="create-accesspackagecatalog"></a>Создание accessPackageCatalog
 
@@ -28,7 +28,7 @@ ms.locfileid: "61651088"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | EntitlementManagement.ReadWrite.All |
+| Приложение                            | EntitlementManagement.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,10 +42,10 @@ POST /identityGovernance/entitlementManagement/accessPackageCatalogs
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Носитель \{токен\}. Обязательный. |
+| Авторизация | Носитель \{токен\}. Обязательный. |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В теле запроса поставляем представление JSON объекта [accessPackageCatalog.](../resources/accesspackagecatalog.md)  **Включай имя отображения,** **описание** и **свойства isExternallyVisible.**
 
@@ -93,6 +93,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accesspackagecatalog-from-accesspackagecatalogs-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackagecatalog-from-accesspackagecatalogs-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

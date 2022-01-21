@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 85644248015ee4a55591ddee23231f04a82d7a52
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9911b925b4f6f93cf50d316bbfc8da6f25e3e96f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60980418"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62112320"
 ---
 # <a name="update-printer"></a>Обновление принтера
 
@@ -31,7 +31,7 @@ ms.locfileid: "60980418"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Printer.ReadWrite.All, Printer.FullControl.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| Printer.ReadWrite.All |
+|Приложение| Printer.ReadWrite.All |
 
 >**Примечание:** В настоящее время только принтеры, не оснащенные физическим устройством, могут обновляться с помощью разрешений приложений.
 
@@ -46,7 +46,7 @@ PATCH /print/printers/{id}
 | Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | `application/json` при использовании делегирования разрешений или `application/ipp` `application/json` при использовании разрешений приложений. Обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 ### <a name="delegated-permissions-and-json-payload"></a>Делегирование разрешений и полезной нагрузки JSON
 
@@ -73,7 +73,7 @@ PATCH /print/printers/{id}
 |manufacturer|String|Производитель принтера.|
 |model|String|Имя модели принтера.|
 |status|[printerStatus](../resources/printerstatus.md)|Состояние обработки принтера, включая ошибки.|
-|isAcceptingJobs|Boolean|Принимает ли принтер новые задания печати.|
+|isAcceptingJobs|Логическое|Принимает ли принтер новые задания печати.|
 
 ### <a name="application-permissions-and-ipp-payload"></a>Разрешения приложений и полезной нагрузки IPP
 
@@ -143,6 +143,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-printer-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-printer-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
