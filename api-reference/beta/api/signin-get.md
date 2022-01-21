@@ -5,12 +5,12 @@ description: Получите объект signIn, содержащий все �
 ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
-ms.openlocfilehash: 536714b4fbc666d2edd399ae54c6de86502b4dc4
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: ce2fa2046e563e2d294d9022e08354af37038436
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61861360"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62125376"
 ---
 # <a name="get-signin"></a>Получение объекта signIn
 
@@ -60,7 +60,7 @@ GET /auditLogs/signIns/{id}
 |:----------|:----------|
 | Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -102,6 +102,10 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns/66ea54eb-blah-4ee5-be62-f
 [!INCLUDE [sample-code](../includes/snippets/go/get-signin-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-signin-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -129,6 +133,12 @@ Content-type: application/json
   "userId":"26be570a-1111-5555-b4e2-a37c6808512d",
   "appId":"c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
   "appDisplayName":"Azure Portal",
+  "authenticationContextClassReferences": [
+      {
+        "id":"C1",
+        "details":"required"
+      }
+  ],
   "authenticationProtocol": "oAuth2",
   "incomingTokenType": "Primary Refresh Token",
   "ipAddress":"131.107.159.37",
@@ -151,14 +161,23 @@ Content-type: application/json
   "riskEventTypes_v2":[],
   "resourceDisplayName":"Windows Azure Service Management API",
   "resourceId":"797f4846-ba00-4fd7-ba43-dac1f8f63013",
+  "resourceServicePrincipalId": "a6033f22-27f9-45cb-8f63-7dd8a0590e4e",
   "uniqueTokenIdentifier": "ZTE0OTk3YTQtZjg5Mi00YjBiLWIwNTEtZmViZTA1YzJhNDli",
   "resourceTenantId":"99081087-73c4-48d1-a112-f60ff75114f7",
   "homeTenantId":"99081087-73c4-48d1-a112-f60ff75114f7",
   "authenticationMethodsUsed":[],
   "authenticationRequirement":"singleFactorAuthentication",
+  "azureResourceId": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/testRG/providers/Microsoft.Compute/virtualMachines/testVM",
+  "federatedCredentialId": "729ab02a-edd5-4ef5-a285-2d91a3c772ab",
   "signInIdentifier":"testaccount1@contoso.com",
   "signInEventTypes":["interactiveUser"],
   "servicePrincipalId":"",
+  "sessionLifetimePolicies": [
+    {
+      "expirationRequirement": "tenantTokenLifetimePolicy",
+      "detail": "The user was required to sign in again according to the tenant session lifetime policy"
+    }
+  ],
   "userType":"member",
   "flaggedForReview":false,
   "isTenantRestricted":false,

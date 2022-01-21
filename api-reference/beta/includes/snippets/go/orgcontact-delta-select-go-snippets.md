@@ -1,25 +1,24 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 22b39e37b502eae8f70140ca4cc9276febada8e5
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 14fd6d4fad7bcd1b21495e44568f971f8439dab0
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61099778"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62138234"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.OrgContactRequestBuilderGetQueryParameters{
+requestParameters := &msgraphsdk.DeltaRequestBuilderGetQueryParameters{
     Select: "displayName,jobTitle,mail",
 }
-options := &msgraphsdk.OrgContactRequestBuilderGetOptions{
+options := &msgraphsdk.DeltaRequestBuilderGetOptions{
     Q: requestParameters,
 }
-orgContactId := "orgContact-id"
-result, err := graphClient.ContactsById(&orgContactId).Get(options)
+result, err := graphClient.Contacts().Delta()().Get(options)
 
 
 ```

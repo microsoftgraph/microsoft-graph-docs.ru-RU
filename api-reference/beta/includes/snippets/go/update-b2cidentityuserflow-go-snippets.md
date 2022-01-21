@@ -1,19 +1,27 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: e27affd8dee18c2d97f80c14fbc754d6eeed2173
-ms.sourcegitcommit: b16e230f4347f23d8e1bda0681daa93025a39a6d
+ms.openlocfilehash: 367a4d7e77c31bb3b59c676b066a442e794d7e9a
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61294723"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62138285"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
+requestBody := msgraphsdk.NewB2cIdentityUserFlow()
+isLanguageCustomizationEnabled := true
+requestBody.SetIsLanguageCustomizationEnabled(&isLanguageCustomizationEnabled)
+defaultLanguageTag := "en"
+requestBody.SetDefaultLanguageTag(&defaultLanguageTag)
+options := &msgraphsdk.B2cIdentityUserFlowRequestBuilderPatchOptions{
+    Body: requestBody,
+}
 b2cIdentityUserFlowId := "b2cIdentityUserFlow-id"
-graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).Patch(nil)
+graphClient.Identity().B2cUserFlowsById(&b2cIdentityUserFlowId).Patch(options)
 
 
 ```

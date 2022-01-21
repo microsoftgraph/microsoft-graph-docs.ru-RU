@@ -5,12 +5,12 @@ author: devindrajit
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b450ed9e87af65fede3f8e850a55dcd41ac68897
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 0814b150c20f6651379800eeefad25bd4c4ffe9f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525239"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62130127"
 ---
 # <a name="create-basetask"></a>Создание baseTask
 Пространство имен: microsoft.graph
@@ -62,7 +62,7 @@ POST /users/{userId|userPrincipalName}/tasks/lists/{baseTaskListId}/tasks
 |importance|importance|Важность задачи. Допустимые значения: `low`, `normal`, `high`.|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|Расписание повторения задачи.|
 |displayName|Строка|Краткое описание задачи.|
-|status|taskStatus_v2|Указывает состояние или ход выполнения задачи. Допустимые значения: `notStarted`, `inProgress`, `completed`, `unknownFutureValue`. Обязательно.|
+|status|taskStatus_v2|Указывает состояние или ход выполнения задачи. Допустимые значения: `notStarted`, `inProgress`, `completed`, `unknownFutureValue`. Обязательное.|
 |personalProperties|[personalTaskProperties](../resources/personaltaskproperties.md)|Свойства, которые являются личными для пользователя, такие как reminderDateTime.|
 
 
@@ -112,6 +112,22 @@ Content-length: 634
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-basetask-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-basetask-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-basetask-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-basetask-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-basetask-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: cc0dc1df792846211b75efaaa0bb5ccdbd241e7f903b8b5fe8fb2517cc09b8e3
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: d480473a794074d168b5cae9fa4f42c4b3953e3e
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57265416"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62131473"
 ---
 ```csharp
 
@@ -13,12 +13,9 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var cloudPcProvisioningPolicy = new CloudPcProvisioningPolicy
 {
-    DisplayName = "Display Name value",
-    Description = "Description value",
-    OnPremisesConnectionId = "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",
-    ImageId = "Image ID value",
-    ImageDisplayName = "Image Display Name value",
-    ImageType = CloudPcProvisioningPolicyImageType.Custom
+    DisplayName = "HR provisioning policy",
+    Description = "Provisioning policy for India HR employees",
+    OnPremisesConnectionId = "4e47d0f6-6f77-44f0-8893-c0fe1701b553"
 };
 
 await graphClient.DeviceManagement.VirtualEndpoint.ProvisioningPolicies["{cloudPcProvisioningPolicy-id}"]

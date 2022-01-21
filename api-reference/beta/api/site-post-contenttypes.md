@@ -5,12 +5,12 @@ description: Создание типа контента для сайта.
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: sites-and-lists
-ms.openlocfilehash: da2a98741edb197319c497b1da4423e47d6ee6da
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 81155a9f51dedf9d40d2682c811c1610a339348f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61020459"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62125233"
 ---
 # <a name="create-contenttype"></a>Создание contentType
 Пространство имен: microsoft.graph
@@ -27,7 +27,7 @@ ms.locfileid: "61020459"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |Sites.Manage.All, Sites.FullControl.All    |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается    |
-|Для приложений |Sites.Manage.All, Sites.FullControl.All |
+|Приложение |Sites.Manage.All, Sites.FullControl.All |
 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -99,6 +99,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-contenttype-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-contenttype-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

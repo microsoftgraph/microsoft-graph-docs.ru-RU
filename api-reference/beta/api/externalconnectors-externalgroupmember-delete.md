@@ -2,15 +2,15 @@
 title: Удаление externalGroupMember
 description: Удаление внешнего объектаGroupMember.
 author: snlraju-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 2e72739cb637593e2a846536e3b92a40dde693f4
-ms.sourcegitcommit: 1940be9846055aa650c6c03982b74a961f1e316a
+ms.openlocfilehash: 01cfa286d6074732bb11fc4db9ae277e34087526
+ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "53467672"
+ms.lasthandoff: 09/12/2021
+ms.locfileid: "62125914"
 ---
 # <a name="delete-externalgroupmember"></a>Удаление externalGroupMember
 
@@ -45,9 +45,9 @@ DELETE /external/connections/{connectionId}/groups/{externalGroupId}/members/{ex
 
 | Имя          | Описание               |
 |:--------------|:--------------------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

@@ -2,15 +2,15 @@
 title: тип ресурса соединитетеля
 description: Представляет соединители прокси-сервер приложений.
 author: japere
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: applications
 doc_type: resourcePageType
-ms.openlocfilehash: 567b67576c5300419c9671de8bd82df84bf49685
-ms.sourcegitcommit: 68b49fc847ceb1032a9cc9821a9ec0f7ac4abe44
+ms.openlocfilehash: d88d7468872fb4e0e6b8d6ae5dd84346ba7de36a
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50945699"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62136689"
 ---
 # <a name="connector-resource-type"></a>тип ресурса соединитетеля
 
@@ -18,7 +18,7 @@ ms.locfileid: "50945699"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Соединители — это легкие агенты, которые находятся на месте и облегчают исходящие подключения к прокси-службе [приложения Azure AD.](https://aka.ms/whyappproxy) Каждый соединитектор является частью [соединителиГруп](connectorgroup.md).
+Соединители — это легкие агенты, которые находятся на месте и облегчают исходящие подключения к прокси-службе [приложения Azure AD.](/azure/active-directory/app-proxy/what-is-application-proxy) Каждый соединитектор является частью [соединителиГруп](connectorgroup.md).
 
 ## <a name="methods"></a>Методы
 
@@ -26,7 +26,7 @@ ms.locfileid: "50945699"
 |:-------------|:------------|:------------|
 | [Перечисление соединителей](../api/connector-list.md) | [коллекция соединители](connector.md) | Извлечение списка объектов соединители. | 
 | [Получение соединителя](../api/connector-get.md) | [connector](connector.md) | Чтение свойств и связей соединитеного объекта. |
-| [Перечисление memberOf](../api/connector-list-memberof.md) | [коллекция connectorGroup](connectorgroup.md) | Укажете коллекцию объектов connectorGroup, членом в которая является соедините. |
+| [Список memberOf](../api/connector-list-memberof.md) | [коллекция connectorGroup](connectorgroup.md) | Укажете коллекцию объектов connectorGroup, членом в которая является соедините. |
 | [Добавление соединителя для connectorGroup](../api/connector-post-memberof.md)| [connectorGroup](connectorgroup.md) | Добавьте соединителю в соединителюGroup. |
 
 
@@ -78,6 +78,3 @@ ms.locfileid: "50945699"
   "suppressions": []
 }
 -->
-
-
-

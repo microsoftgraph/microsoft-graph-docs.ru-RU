@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: b8feb9506c16c7fb51b0e9a97943e3323ec0d761
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: 8a93c491af2fc5bca3aa08f4468b48bca940e384
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61348901"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62135131"
 ---
 ```go
 
@@ -13,24 +13,14 @@ ms.locfileid: "61348901"
 graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
 requestBody := msgraphsdk.NewEducationUser()
-requestBody.SetRelatedContacts( []RelatedContact {
-    msgraphsdk.NewRelatedContact(),
-    SetAdditionalData(map[string]interface{}{
-        "displayName": "Father Time",
-        "emailAddress": "father@time.com",
-        "mobilePhone": "4251231234",
-        "relationship": "guardian",
-        "accessConsent": true,
-    }
-    msgraphsdk.NewRelatedContact(),
-    SetAdditionalData(map[string]interface{}{
-        "displayName": "Mother Nature",
-        "emailAddress": "mother@nature.co.uk",
-        "mobilePhone": "3251231234",
-        "relationship": "parent",
-        "accessConsent": true,
-    }
-}
+displayName := "Rogelio Cazares"
+requestBody.SetDisplayName(&displayName)
+givenName := "Rogelio"
+requestBody.SetGivenName(&givenName)
+middleName := "Fernando"
+requestBody.SetMiddleName(&middleName)
+surname := "Cazares"
+requestBody.SetSurname(&surname)
 options := &msgraphsdk.EducationUserRequestBuilderPatchOptions{
     Body: requestBody,
 }
