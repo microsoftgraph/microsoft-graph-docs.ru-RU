@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: d34f86f7599d20cdc69b4a2e885043e62f263c0f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5122219dd4c648c00e5078b58578f00238d9adca
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60996987"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62132795"
 ---
 # <a name="create-projectparticipation"></a>Создание projectParticipation
 
@@ -57,7 +57,7 @@ POST /users/{id | userPrincipalName}/profile/projects
 |allowedAudiences|Строка|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |categories|Коллекция String|Содержит категории, которые пользователь связал с проектом (например, цифровая трансформация, нефтяная вышка). |
 |клиент|[companyDetail](../resources/companydetail.md)|Содержит подробные сведения о клиенте, для который был проект. |
-|collaborationTags|Коллекция объектов string|Содержит теги сценариев работы, которые пользователь связал с интересом. Допустимые значения в коллекции: `askMeAbout` , `ableToMentor` , `wantsToLearn` `wantsToImprove` .|
+|collaborationTags|Коллекция строк|Содержит теги сценариев работы, которые пользователь связал с интересом. Допустимые значения в коллекции: `askMeAbout` , `ableToMentor` , `wantsToLearn` `wantsToImprove` .|
 |коллеги|[коллекция relatedPerson](../resources/relatedperson.md)|Списки людей, которые также работали над проектом. |
 |подробные|[positionDetail](../resources/positiondetail.md)|Содержит сведения о роли пользователя в проекте.|
 |displayName|Строка|Содержит удобное имя для проекта.|
@@ -128,6 +128,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-projectparticipation-from-profile-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-projectparticipation-from-profile-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

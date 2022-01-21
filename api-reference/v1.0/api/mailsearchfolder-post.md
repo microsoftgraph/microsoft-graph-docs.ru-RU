@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 81b1402c28401721e5fa52bc19966b00e1f3473f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: a3fdc0dbfd03787dbe3da6dab4e01d74673dd7bb
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60984556"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62126300"
 ---
 # <a name="create-mailsearchfolder"></a>Создание mailSearchFolder
 
@@ -46,7 +46,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 | Авторизация | `Bearer {token}`. Обязательно. |
 | Content-Type | `application/json`. Обязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -55,7 +55,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 | @odata.type | Строка | Тип создаемой папки. Установите "microsoft.graph.mailSearchFolder". |
 | displayName | Строка | Отображаемое имя новой папки.|
 | includeNestedFolders | Логическое | Указывает, как должна проходить иерархия папок почтовых ящиков в поиске. `true` означает, что следует сделать глубокий поиск, чтобы включить детские папки в иерархию каждой папки, явно указанной в **sourceFolderIds**. `false`означает неглубокий поиск только каждой из папок, явно указанных в **sourceFolderIds.** |
-| sourceFolderIds | Коллекция String | Папки почтовых ящиков, которые необходимо добыть. |
+| sourceFolderIds | Коллекция строк | Папки почтовых ящиков, которые необходимо добыть. |
 | filterQuery | Строка | Запрос OData для фильтрации сообщений. |
 
 ## <a name="response"></a>Отклик
@@ -105,6 +105,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-mailsearchfolder-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-mailsearchfolder-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
