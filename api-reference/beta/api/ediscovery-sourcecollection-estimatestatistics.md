@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: b6c72951e745c0b36c486155c9caf319f34abe62
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 6ee1df20a0047077f459e4512b88c7d6efa1c019
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61003218"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62090337"
 ---
 # <a name="sourcecollection-estimatestatistics"></a>sourceCollection: estimateStatistics
 
@@ -18,7 +18,7 @@ ms.locfileid: "61003218"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Запустите оценку количества электронных писем и документов в коллекции исходных данных. Дополнительные сведения о исходных коллекциях (также известных как поиски в eDiscovery) см. в примере Сбор данных по делу [в Advanced eDiscovery.](https://docs.microsoft.com/microsoft-365/compliance/collecting-data-for-ediscovery)
+Запустите оценку количества электронных писем и документов в коллекции исходных данных. Дополнительные сведения о исходных коллекциях (также известных как поиски в eDiscovery) см. в примере Сбор данных по делу [в Advanced eDiscovery.](/microsoft-365/compliance/collecting-data-for-ediscovery)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,7 +47,7 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

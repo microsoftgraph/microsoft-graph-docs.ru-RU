@@ -5,12 +5,12 @@ author: kjyam98
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 32c78ddb7525c2331dd16cbb5bc4661f49e260df
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 09c06d30a39755b7b0d04fba29352d4f4a94da64
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60983036"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62097280"
 ---
 # <a name="create-federatedidentitycredential"></a>Создание federatedIdentityCredential
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "60983036"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) |  Application.ReadWrite.All |
-|Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+|Приложение | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ POST /applications/{applicationsId}/federatedIdentityCredentials
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|аудитории|Коллекция объектов string|Списки аудиторий, которые могут отображаться во внешнем маркере. Это поле является обязательным и по умолчанию "api://AzureADTokenExchange". В нем платформа удостоверений Майкрософт, что следует принять в `aud` утверждении в входящих маркерах. Это значение представляет Azure AD во внешнем поставщике удостоверений и не имеет фиксированного значения для поставщиков удостоверений , возможно, потребуется создать новую регистрацию приложений в поставщике удостоверений, чтобы служить аудиторией этого маркера. Обязательный.|
+|аудитории|Коллекция строк|Списки аудиторий, которые могут отображаться во внешнем маркере. Это поле является обязательным и по умолчанию "api://AzureADTokenExchange". В нем платформа удостоверений Майкрософт, что следует принять в `aud` утверждении в входящих маркерах. Это значение представляет Azure AD во внешнем поставщике удостоверений и не имеет фиксированного значения для поставщиков удостоверений , возможно, потребуется создать новую регистрацию приложений в поставщике удостоверений, чтобы служить аудиторией этого маркера. Обязательный.|
 |эмитент|String|TThe URL-адрес внешнего поставщика удостоверений и должен соответствовать утверждению эмитента об обмене внешнего маркера. Сочетание значений эмитента **и** субъекта должно **быть** уникальным в приложении. Обязательный.|
 |name|String|Уникальный идентификатор для учетных данных федерательных удостоверений, который имеет ограничение символов в 120 символов и должен быть удобным URL-адресом. Это неуменяемо после создания|
 |subject|String|Обязательный. Идентификатор рабочей нагрузки внешнего программного обеспечения во внешнем поставщике удостоверений. Как и значение аудитории, он не имеет фиксированного формата, так как каждый поставщик удостоверений использует свои собственные — иногда GUID, иногда идентификатор двоеточия, иногда произвольные строки. Значение здесь должно соответствовать утверждению sub в маркере, представленном Azure AD. Сочетание **эмитента и** **субъекта должно** быть уникальным в приложении.|
@@ -103,6 +103,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-federatedidentitycredential-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-federatedidentitycredential-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

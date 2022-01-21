@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6fcfe75b2ee2d39a3142c952d6218da31c8b36df
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 0786f0a80825b77cd5021ad1c978bdf053aa9c16
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031226"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62101964"
 ---
 # <a name="update-workforceintegration"></a>Обновление реинтеграции рабочей силы
 
@@ -42,7 +42,7 @@ PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -51,9 +51,9 @@ PATCH /teamwork/workforceIntegrations/{workforceIntegrationId}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |apiVersion|Int32|Версия API для URL-адреса обратного вызова. Начните с 1.|
-|displayName|Строка|Имя интеграции рабочей силы.|
+|displayName|String|Имя интеграции рабочей силы.|
 |шифрование|workforceIntegrationEncryption|Ресурс шифрования интеграции рабочей силы. |
-|isActive|Логическое|Указывает, является ли эта интеграция рабочей силы активной и доступной в настоящее время.|
+|isActive|Логический|Указывает, является ли эта интеграция рабочей силы активной и доступной в настоящее время.|
 |поддерживает|string| Возможные значения `none` , , , , `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Если выбрано несколько значений, все значения должны начинаться с первой буквы в верхнем шкафу.|
 |supportedEntities|string| Это свойство заменит **поддержки** в v1.0. Рекомендуется использовать это свойство вместо **поддержки.** Свойство **поддерживается** в бета-версии в настоящее время. Возможные значения `none` , , , , `shift` `swapRequest` `openshift` `openShiftRequest` `userShiftPreferences` . Если выбрано несколько значений, все значения должны начинаться с первой буквы в верхнем шкафу.|
 |url|String| URL-адрес интеграции рабочей силы для вызовов из службы Shift. |
@@ -112,6 +112,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-workforceintegration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-workforceintegration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -174,7 +178,7 @@ Content-type: application/json
 ```
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 ```
 HTTP/1.1 200 OK
 {

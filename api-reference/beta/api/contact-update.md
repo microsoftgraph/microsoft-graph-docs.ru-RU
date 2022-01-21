@@ -5,12 +5,12 @@ author: kevinbellinger
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bfd80a3b3fb465854f80479614437f8890d4948d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b04d26c2e09cacd2982bab50e8be27033e296980
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60990296"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62097092"
 ---
 # <a name="update-contact"></a>Обновление контакта
 
@@ -60,12 +60,12 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |birthday|DateTimeOffset|Дата рождения контакта.|
 |categories|String|Категории, связанные с контактом.|
 |children|String||
-|companyName|String|Название компании контакта.|
+|CompanyName|String|Название компании контакта.|
 |department|String|Отдел контакта.|
 |displayName|String|Отображаемое имя контакта. Обратите внимание, что последующие обновления других свойств могут привести к тому, что автоматически созданное значение перезапишет указанное значение displayName. Чтобы сохранить существующее значение, всегда добавляйте его как displayName в операцию обновления.|
 |emailAddresses|[коллекция typedEmailAddress](../resources/typedemailaddress.md)|Электронные адреса контакта.|
 |fileAs|String|Имя, под которым хранится контакт.|
-|gender |String |Пол контакта. |
+|gender |Строка |Пол контакта. |
 |generation|String|Поколение контакта.|
 |givenName|String|Имя контакта.|
 |imAddresses|String|Адреса контакта для обмена мгновенными сообщениями.|
@@ -141,6 +141,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-contact-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-contact-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

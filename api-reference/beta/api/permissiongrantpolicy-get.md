@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: identity-and-sign-in
 author: psignoret
-ms.openlocfilehash: dc26fecfb85adb7801f55665794f47f9643d8a57
-ms.sourcegitcommit: 3e2239e60b6dc53997b7d4356a20fc3d365d6238
+ms.openlocfilehash: 3f03bca84fa82bd7b9763906696baa23ad2168ca
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61266126"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62112543"
 ---
 # <a name="get-permissiongrantpolicy"></a>Получить permissionGrantPolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "61266126"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant |
+| Приложение                            | Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,9 +46,9 @@ GET /policies/permissionGrantPolicies/{id}
 
 | Имя           | Описание                |
 |:---------------|:---------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
+| Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -92,12 +92,16 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-
 [!INCLUDE [sample-code](../includes/snippets/go/get-permissiongrantpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-permissiongrantpolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Политика имеет два набора условий, один из которых совпадает с делегированным разрешением, классифицированным для клиентских приложений, зарегистрированных в этом клиенте, и другой, который соответствует делегированию разрешений, классифицированных для приложений от проверенных издателей (независимо от того, в каком клиенте зарегистрировано `includes` `low` `low` приложение).
+Ниже приведен пример ответа. Политика имеет два набора условий, один из которых совпадает с делегированным разрешением, классифицированным для клиентских приложений, зарегистрированных в этом клиенте, и другой, который соответствует делегированию разрешений, классифицированных для приложений от проверенных издателей (независимо от того, в каком клиенте зарегистрировано `includes` `low` `low` приложение).
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

@@ -5,12 +5,12 @@ author: simonhult
 ms.localizationpriority: medium
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: d4ff6298e6266d24a8b490bcbefc4ea30eea1d3c
-ms.sourcegitcommit: 65f4e128f96783c18d607a6dcffbc914291285d4
+ms.openlocfilehash: dcf841ce7b5da1b5796d8a86fb6e6be5e0e58bf5
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61339533"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62096424"
 ---
 # <a name="update-insightssettings"></a>Обновление insightsSettings
 
@@ -59,14 +59,14 @@ PATCH /organization/{organizationId}/settings/peopleInsights
 | Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|isEnabledInOrganization|Boolean| `true` если для организации включен указанный тип анализа; если указанный тип анализа отключен для `false` всех пользователей без исключений. Значение по умолчанию: `true`. Необязательно.|
-|disabledForGroup|Строка| ID группы Azure AD, в которой указанный тип данных отключен для ее участников. Значение по умолчанию: `empty`. Необязательно.|
+|isEnabledInOrganization|Логический| `true` если для организации включен указанный тип анализа; если указанный тип анализа отключен для `false` всех пользователей без исключений. Значение по умолчанию: `true`. Необязательно.|
+|disabledForGroup|Строка| ID группы Azure AD, в которой указанный тип данных отключен для ее участников. Значение по умолчанию: `empty`. Необязательный параметр.|
 
 >**Примечание:** Эта операция не проверяет значение **свойства disabledForGroup,** если оно включено в тело запроса. Если задайте **свойство disabledForGroup** строке, эта операция не проверяет наличие соответствующей группы Azure AD. Это означает, что если вы установите **disabledForGroup** в группу Azure AD, которая не существует или удаляется после этого, эта операция не сможет идентифицировать членство в группе и отключить сведения о элементе или пользователях для определенных пользователей. Если **установлено isEnabledInOrganization,** операция позволит получить указанный тип данных для всех пользователей `true` организации.  
 ## <a name="response"></a>Отклик
@@ -114,6 +114,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-insightssettings-iteminsightrequest-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-insightssettings-iteminsightrequest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -180,6 +184,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-insightssettings-peopleinsightsrequest-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-insightssettings-peopleinsightsrequest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

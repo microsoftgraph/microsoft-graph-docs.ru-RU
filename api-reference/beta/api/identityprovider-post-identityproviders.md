@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: namkedia
 ms.prod: identity-and-sign-in
-ms.openlocfilehash: 73ccec79e3c68ccc35d8d81261de9f80d2d0411f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 2d813d6010ddef57afa3aa6ed369cbc805740d11
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60978169"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62090041"
 ---
 # <a name="create-identityprovider-deprecated"></a>Создание identityProvider (не рекомендуется)
 
@@ -29,7 +29,7 @@ ms.locfileid: "60978169"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|IdentityProvider.ReadWrite.All|
+|Приложение|IdentityProvider.ReadWrite.All|
 
 Учетная запись для работы или школы должна принадлежать к одной из следующих ролей:
 * Глобальный администратор
@@ -72,7 +72,7 @@ POST /identityProviders
 |name|String|Отображаемое имя поставщика удостоверений.|
 |type|String|Тип поставщика удостоверений Значение должно быть `OpenIdConnect` .|
 |claimsMapping|[claimsMapping](../resources/claimsmapping.md)|Свойства `userId` и свойства необходимы в `displayname` объекте claimsMapping.|
-|metadataUrl|String|URL-адрес для документа метаданных поставщика удостоверений Open Id Подключение идентификатора.|
+|metadataUrl|Строка|URL-адрес для документа метаданных поставщика удостоверений Open Id Подключение идентификатора.|
 |responseMode|String|Определяет метод, который следует использовать для отправки данных от поставщика пользовательских удостоверений в Azure AD B2C. Можно использовать следующие режимы ответа: <ul><li/>`form_post` . Этот режим ответа рекомендуется для лучшей безопасности. Ответ передается методом HTTP POST, код или маркер кодируются в теле с помощью формата application/x-www-form-urlencoded.<li/>`query` Код или маркер возвращаются в качестве параметра запроса.</ul>|
 |responseType|String|Описывает, какие сведения отправляются в исходном вызове в authorization_endpoint поставщика пользовательских удостоверений. Можно использовать следующие типы ответов:<ul><li/> `code` . В результате потока кода авторизации код возвращается обратно в Azure AD B2C. Azure AD B2C продолжает вызывать token_endpoint, чтобы обменять код на маркер.<li/> `id_token` . Маркер ID возвращается обратно в Azure AD B2C от настраиваемого поставщика удостоверений. <li/>`token` . Маркер доступа возвращается обратно в Azure AD B2C от настраиваемого поставщика удостоверений. (На данный момент это значение не поддерживается Azure AD B2C)</ul>|
 |scope|String|Область определяет сведения и разрешения, которые вы хотите получить от настраиваемого поставщика удостоверений.|
@@ -126,6 +126,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-identityprovider-from-identityproviders-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-identityprovider-from-identityproviders-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -212,6 +216,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-openidconnectprovider-from-identityproviders-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-openidconnectprovider-from-identityproviders-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
