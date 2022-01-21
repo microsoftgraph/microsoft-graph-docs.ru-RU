@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 673d917bdd7550146c516fb1d6ba5a904cde1b53
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: b05cff2bc7b2708bbef6715beee582b323391f56
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60986872"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62120915"
 ---
 # <a name="update-custodian"></a>Хранители обновлений
 
@@ -54,7 +54,7 @@ PATCH /compliance/ediscovery/cases/{caseId}/custodians/{custodianId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|applyHoldToSources|Логическое|Определяет, были ли приодержится источники хранителя во время создания.|
+|applyHoldToSources|Логический|Определяет, были ли приодержится источники хранителя во время создания.|
 
 ## <a name="response"></a>Ответ
 
@@ -98,6 +98,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-custodian-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-custodian-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

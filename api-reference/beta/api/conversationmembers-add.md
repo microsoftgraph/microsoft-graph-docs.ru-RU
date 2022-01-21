@@ -5,12 +5,12 @@ author: nkramer
 doc_type: apiPageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 21aa2fdad8d96db43519251306667252407b5699
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: fd821d8379d827c0197b0b729fac70070a6a331b
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60694675"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62096911"
 ---
 # <a name="conversationmember-add"></a>conversationMember: add
 
@@ -47,7 +47,7 @@ POST /teams/{team-id}/members/add
 | Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите в формате JSON представление списка производных `conversationMember`, которые необходимо добавить.
+В тексте запроса укажите в формате JSON представление списка производных `conversationMember`, которые необходимо добавить. В один запрос можно добавить не более 200 производных `conversationMember`.
 
 В следующей таблице указаны параметры, которые можно использовать с этим действием.
 

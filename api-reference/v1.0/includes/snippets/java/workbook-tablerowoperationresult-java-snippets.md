@@ -1,17 +1,21 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 2f25ad5066526493dff909b7146bb271e26740da
+ms.openlocfilehash: 39426950c94952934cfe8903035a0fa5b6c5b495
 ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/20/2022
-ms.locfileid: "62137149"
+ms.locfileid: "62121536"
 ---
 ```java
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-DeviceCompliancePolicySettingStateSummaryCollectionPage deviceCompliancePolicySettingStateSummaries = graphClient.tenantRelationships().managedTenants().deviceCompliancePolicySettingStateSummaries()
+WorkbookTableRow workbookTableRow = graphClient.me().drive().items("01CCETFLK7GVZTZHSQNRD2AEI5XWTCU6FJ").workbook()
+    .tableRowOperationResult(WorkbookTableRowOperationResultParameterSet
+        .newBuilder()
+        .withKey("0195cfac-bd22-4f91-b276-dece0aa2378b")
+        .build())
     .buildRequest()
     .get();
 
