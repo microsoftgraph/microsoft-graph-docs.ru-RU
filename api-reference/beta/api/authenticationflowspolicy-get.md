@@ -5,12 +5,12 @@ author: linkhp
 ms.localizationpriority: high
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4127a5e85a2916feb43aaded1bdd52279ba2bfe2
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3794d7cc8646ba42d96617bdb0e0c219f1b66897
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60995104"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62114280"
 ---
 # <a name="get-authenticationflowspolicy"></a>Получение authenticationFlowsPolicy
 
@@ -44,7 +44,7 @@ GET /policies/authenticationFlowsPolicy
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/policies/authenticationFlowsPolicy
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-authenticationflowspolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-authenticationflowspolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

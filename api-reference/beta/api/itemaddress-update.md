@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 3738e14af6e6b99b4ea17a279c6f0a167efc8d9a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 9fd3ee587f42c5d21c868104b300e42f6d39f0f3
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61012052"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62116218"
 ---
 # <a name="update-itemaddress"></a>Обновление itemAddress
 Пространство имен: microsoft.graph
@@ -50,7 +50,7 @@ PATCH /users/{id | userPrincipalName}/profile/addresses/{id}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|allowedAudiences|String|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|Строка|Аудитории, которые могут видеть значения, содержащиеся в объекте. Унаследовано от [itemFacet](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |подробные|[physicalAddress](../resources/physicaladdress.md)|Сведения о самом адресе.|
 |displayName|Строка|Удобное имя, назначенное пользователю по этому адресу. |
 |geoCoordinates|[geoCoordinates](../resources/geocoordinates.md)|Геокоординирует адрес.|
@@ -97,6 +97,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-itemaddress-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-itemaddress-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

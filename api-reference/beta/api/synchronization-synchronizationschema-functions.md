@@ -1,16 +1,16 @@
 ---
 title: 'синхронизацияSchema: функции'
 description: Список всех функций, поддерживаемых в атрибутеMappingSource.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: ff6d231f8f20d96262530230304028368554e41b
-ms.sourcegitcommit: cde4a3386b08a67cb476df6d46b51885c643d94f
+ms.openlocfilehash: 8f18c10c87a3ed3c2cd2410bcf580f3daf6e217e
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50625967"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62122975"
 ---
 # <a name="synchronizationschema-functions"></a>синхронизацияSchema: функции
 
@@ -41,9 +41,9 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema/functions
 
 | Имя           | Тип    | Описание|
 |:---------------|:--------|:-----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 
 # <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/synchronizationschema-functions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/synchronizationschema-functions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

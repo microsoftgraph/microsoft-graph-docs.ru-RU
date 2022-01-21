@@ -5,12 +5,12 @@ author: dipakboyed
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 28982071f75999e595dd48f82f3be2f23605561e
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 3b905198eee032e422a7882afb4bedfbe3f2be28
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61030197"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62113818"
 ---
 # <a name="update-educationassignmentdefaults"></a>Обновление educationAssignmentDefaults
 Пространство имен: microsoft.graph
@@ -51,7 +51,7 @@ PATCH /education/classes/{id}/assignmentDefaults
 |:---|:---|:---|
 |addedStudentAction|educationAddedStudentAction|Поведение по умолчанию на уровне класса для обработки учащихся, добавленных после публикации назначения. Возможные значения: `none`, `assignIfOpen`. Значение по умолчанию — `none`.|
 |dueTime|TimeOfDay|Значение по умолчанию класса для должного поля времени. Значение по умолчанию: `23:59:00`.|
-|notificationChannelUrl|String|По умолчанию Teams канал, в который будут отправлены уведомления. Значение по умолчанию — `null`.|
+|notificationChannelUrl|Строка|По умолчанию Teams канал, в который будут отправлены уведомления. Значение по умолчанию — `null`.|
 
 
 
@@ -97,6 +97,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-educationassignmentdefaults-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-educationassignmentdefaults-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

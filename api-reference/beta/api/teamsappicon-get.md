@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: jecha
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 49de08a8e1dd062f944f3f6c27e02d914c6c3956
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: ff380f17ee983f9bc1be2456f4cd28d24aeaa15c
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226091"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62115746"
 ---
 # <a name="get-teamsappicon"></a>Get teamsAppIcon
 
@@ -28,7 +28,7 @@ ms.locfileid: "61226091"
 | :------------------------------------- | :--------------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | AppCatalog.Read.All, AppCatalog.ReadWrite.All, AppCatalog.Submit |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                   |
-| Application                            | AppCatalog.Read.All, AppCatalog.ReadWrite.All                    |
+| Приложение                            | AppCatalog.Read.All, AppCatalog.ReadWrite.All                    |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,7 +46,7 @@ GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/col
 GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/outlineIcon
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
 Эта операция поддерживает параметры `$select` `$expand` [запроса oData и OData](/graph/query-parameters) для настройки ответа.
 
@@ -54,9 +54,9 @@ GET /appCatalogs/teamsApps/{teams-app-id}/appDefinitions/{app-definition-id}/out
 
 | Заголовок           | Значение                      |
 | :--------------- | :------------------------- |
-| Авторизация    | Bearer {токен}. Обязательный.  |
+| Авторизация    | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -99,6 +99,10 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-teamsappicon-coloricon-customapp-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-teamsappicon-coloricon-customapp-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -158,6 +162,10 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-teamsappicon-outlineicon-customapp-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-teamsappicon-outlineicon-customapp-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -221,6 +229,10 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/95de633a-083e-42f5-b4
 [!INCLUDE [sample-code](../includes/snippets/go/get-teamsappicon-outlineicon-publicapp-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-teamsappicon-outlineicon-publicapp-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -278,6 +290,10 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/95de633a-083e-42f5-b4
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-teamsappicon-outlineicon-publicapp-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-teamsappicon-outlineicon-publicapp-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: apiPageType
-ms.openlocfilehash: 4b2e3899452783d6141822189f3ed58bfcfe9d13
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 5af52686d7d36e808899657992c104507b4a9c85
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61863208"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62115219"
 ---
 # <a name="create-deployment"></a>Создание развертывания
 Пространство имен: microsoft.graph.windowsUpdates
@@ -26,7 +26,7 @@ ms.locfileid: "61863208"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|WindowsUpdates.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Application|WindowsUpdates.ReadWrite.All|
+|Приложение|WindowsUpdates.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,7 +41,7 @@ POST /admin/windows/updates/deployments
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -115,6 +115,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-deployment-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-deployment-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

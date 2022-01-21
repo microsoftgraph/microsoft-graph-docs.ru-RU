@@ -5,12 +5,12 @@ author: mlafleur
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 23f3da431b4a547091ae7dde4cd6802f748a414a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 1deb24885d29ee081260219a6aedb39cb1a3911b
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61025515"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62117612"
 ---
 # <a name="list-taughtclasses"></a>Список taughtClasses
 
@@ -26,7 +26,7 @@ ms.locfileid: "61025515"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic                         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложений                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+| Приложение                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 > [!NOTE]
 > Обратите внимание, что при делегировании маркера пользователи могут видеть только сведения о своих классах.
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
 | :------------ | :------------------------ |
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -106,6 +106,10 @@ GET https://graph.microsoft.com/v1.0/education/users/{educationUserId}/taughtCla
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-educationclass-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-educationclass-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 70103c2beaa1dde3ea4fc50f1c67d0ec1435e666
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 2ed3a285c515a0afa0f8823fbc77e4bbbae5d67a
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61003051"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62119174"
 ---
 # <a name="get-user"></a>Получение пользователя
 
@@ -31,7 +31,7 @@ ms.locfileid: "61003051"
 | :------------------------------------- | :-------------------------------------------------------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic, EduRoster.Read или EduRoster.Write плюс Directory.Read.All или User.Read |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                            |
-| Для приложений                            | EduRoster.Read.All, EduRoster.ReadWrite.All и Directory.Read.All                                       |
+| Приложение                            | EduRoster.Read.All, EduRoster.ReadWrite.All и Directory.Read.All                                       |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,7 +48,7 @@ GET /education/users/{id}/user
 | :------------ | :------------------------ |
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/education/me/user
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationuser-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationuser-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

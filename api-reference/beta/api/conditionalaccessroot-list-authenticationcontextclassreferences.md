@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: calebb
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: d1eefae33e7db2b89cac1f7db7fdefe2c92d7dff
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 884dd5da628c7b0acb0ecae5c358c7a7c4000c7b
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61003857"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62121231"
 ---
 # <a name="list-authenticationcontextclassreferences"></a>Проверка подлинности спискаContextClassReferences
 
@@ -28,7 +28,7 @@ ms.locfileid: "61003857"
 |:--------------------------------------|:----------------------------------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Policy.Read.ConditionalAccess, Policy.ReadWrite.ConditionalAccess |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Policy.Read.ConditionalAccess, Policy.ReadWrite.ConditionalAccess |
+|Приложение                            | Policy.Read.ConditionalAccess, Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,9 +45,9 @@ GET /identity/conditionalAccess/authenticationContextClassReferences
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -88,6 +88,10 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationCo
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-authenticationcontextclassreference-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-authenticationcontextclassreference-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

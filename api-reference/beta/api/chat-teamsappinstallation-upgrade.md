@@ -5,12 +5,12 @@ author: subray
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 83485838cd34651d3cc224772b750fe001fa842e
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: 94d25224eb97e67d9753ccd2abfd061f00dec95d
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61124048"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62113841"
 ---
 # <a name="teamsappinstallation-upgrade"></a>teamsAppInstallation: обновление
 
@@ -34,7 +34,7 @@ ms.locfileid: "61124048"
 |Делегированное (личная учетная запись Майкрософт) | Не поддерживается.   |
 |Приложение | Chat.Manage.Chat*, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

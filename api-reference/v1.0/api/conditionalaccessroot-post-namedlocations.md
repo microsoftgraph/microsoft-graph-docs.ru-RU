@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: videor
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c296034a0c3a61918bb6c4269686139d0f69db75
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: be21066b7f317f6b76ba2f4cd9ce51807320303c
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60993674"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62122279"
 ---
 # <a name="create-namedlocation"></a>Создание namedLocation
 
@@ -26,7 +26,7 @@ ms.locfileid: "60993674"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All и Policy.ReadWrite.ConditionalAccess |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy.Read.All и Policy.ReadWrite.ConditionalAccess |
+| Приложение                            | Policy.Read.All и Policy.ReadWrite.ConditionalAccess |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,14 +51,14 @@ POST /identity/conditionalAccess/namedLocations
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|Строка|Понятное человеку имя расположения. Обязательный.|
-|ipRanges|Коллекция объектов [ipRange](../resources/iprange.md)|Список диапазонов IP-адресов в формате CIDR IPv4 (например, 1.2.3.4/32) или любого допустимого формата IPv6 от IETF RFC596. Обязательный. Также **@odata.type** ipRange.|
+|displayName|String|Понятное человеку имя расположения. Обязательный.|
+|ipRanges|Коллекция объектов [ipRange](../resources/iprange.md)|Список диапазонов IP-адресов в формате CIDR IPv4 (например, 1.2.3.4/32) или любого допустимого формата IPv6 от IETF RFC596. Обязательное. Также **@odata.type** ipRange.|
 
 В следующей таблице перечислены свойства, необходимые для создания [объекта countryNamedLocation.](../resources/countrynamedlocation.md)
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|countriesAndRegions|Коллекция объектов string|Список стран и/или регионов в формате двух букв, заданный ISO 3166-2. Обязательный.|
+|countriesAndRegions|Коллекция строк|Список стран и/или регионов в формате двух букв, заданный ISO 3166-2. Обязательный.|
 |displayName|String|Понятное человеку имя расположения. Обязательный.|
 
 ## <a name="response"></a>Отклик
@@ -118,6 +118,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-namedlocation-from-conditionalaccessroot-1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-namedlocation-from-conditionalaccessroot-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -203,6 +207,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-namedlocation-from-conditionalaccessroot-2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-namedlocation-from-conditionalaccessroot-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

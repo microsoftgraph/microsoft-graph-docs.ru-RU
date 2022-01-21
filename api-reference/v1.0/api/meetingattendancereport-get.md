@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: af9fa6e85082c7dbc16808e5852205cab6227af6
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 8eb7409a62e8fbbb9ebf8179bbe17c387605199b
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61861002"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62117252"
 ---
 # <a name="get-meetingattendancereport"></a>Get meetingAttendanceReport
 
@@ -26,7 +26,7 @@ ms.locfileid: "61861002"
 |:----------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись) | OnlineMeetingArtifact.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Application | OnlineMeetingArtifact.Read.All |
+| Приложение | OnlineMeetingArtifact.Read.All |
 
 Чтобы использовать разрешение приложения для этого API, администраторы клиентов должны создать политику доступа к приложениям и предоставить ее пользователю. Это разрешает приложению, настроенное в политике, получать артефакты собраний и/или онлайн-собраний от имени этого пользователя (с ИД пользователя, указанного в пути запроса). Дополнительные сведения см. в материале [Разрешить приложениям получать](/graph/cloud-communication-online-meeting-application-access-policy)доступ к собраниям в Интернете от имени пользователя.
 
@@ -58,9 +58,9 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}
 
 | Имя            | Описание               |
 | :-------------- | :------------------------ |
-| Авторизация   | Bearer {токен}. Обязательный. |
+| Авторизация   | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -74,14 +74,42 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-attendanceReport-by-id"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZ/attendanceReports/c9b6db1c-d5eb-427d-a5c0-20088d9b22d7?$expand=attendanceRecords
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-attendancereport-by-id-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-attendancereport-by-id-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-attendancereport-by-id-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-attendancereport-by-id-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-attendancereport-by-id-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-attendancereport-by-id-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

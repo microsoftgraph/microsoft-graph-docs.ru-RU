@@ -5,12 +5,12 @@ author: AshleyYangSZ
 ms.localizationpriority: medium
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 17b919a4378d95a87a6fc30baa525ed6439c2830
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 174cb16055f1979ac322b2c2bd667ddcd941038e
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61019276"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62122540"
 ---
 # <a name="create-cloudpcdeviceimage"></a>Создание cloudPcDeviceImage
 
@@ -28,7 +28,7 @@ ms.locfileid: "61019276"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|CloudPC.ReadWrite.All|
+|Приложение|CloudPC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -59,7 +59,7 @@ POST /deviceManagement/virtualEndpoint/deviceImages
 |displayName|Строка|Имя отображения изображения.|
 |sourceImageResourceId|Строка|ID источника ресурса изображений в Azure. Необходимый формат: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
 |operatingSystem|String|Операционная система изображения. Например: Windows 10 Корпоративная.|
-|osBuildNumber|String|Версия сборки ОС изображения. Например: 1909.|
+|osBuildNumber|Строка|Версия сборки ОС изображения. Например: 1909.|
 |version|String|Версия изображения. Например: 0.0.1, 1.5.13.|
 
 ## <a name="response"></a>Отклик
@@ -109,6 +109,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-cloudpcdeviceimage-from-cloudpcdeviceimage-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-cloudpcdeviceimage-from-cloudpcdeviceimage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

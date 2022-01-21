@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: d98f91b33cc13e874d8b3dce42ad9bb871349e9d
-ms.sourcegitcommit: 9759b647acfbed99d5675a6f512aaa33932a723f
+ms.openlocfilehash: c33bc52028fb87fe807b282ace7e30ea7c0cec48
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "61604352"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62117957"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -149,7 +149,7 @@ ms.locfileid: "61604352"
 |почта;|String|SMTP-адрес группы, например "serviceadmins@contoso.onmicrosoft.com". <br><br>Возвращается по умолчанию. Только для чтения. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith` и `eq` для значений `null`).|
 |mailEnabled|Логический|Указывает, включена ли для этой группы поддержка почты. Обязательно.<br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not` и `eq` по `null` значениям).|
 |mailNickname|String|Почтовый псевдоним для группы, уникальный для групп Microsoft 365 в организации. Максимальная длина: 64 символа. Это свойство может содержать только символы из [набора символов ASCII от 0 до 127](/office/vba/language/reference/user-interface-help/character-set-0127), за исключением следующих: ` @ () \ [] " ; : . <> , SPACE`. <br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`).|
-|membershipRule|String|Правило, определяющее участников этой группы, если группа является динамической (groupTypes содержит `DynamicMembership`). Дополнительные сведения о синтаксисе правила участия см. в [здесь](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/). <br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`). |
+|membershipRule|String|Правило, определяющее участников этой группы, если группа является динамической (groupTypes содержит `DynamicMembership`). Дополнительные сведения о синтаксисе правила участия см. в [здесь](/azure/active-directory/enterprise-users/groups-dynamic-membership). <br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`). |
 |membershipRuleProcessingState|String|Указывает, включена или приостановлена динамическая обработка участия. Возможные значения: `On` и `Paused`.<br><br>Возвращается по умолчанию. Поддерживает `$filter` (`eq`, `ne`, `not`, `in`). |
 |membershipRuleProcessingStatus|[membershipRuleProcessingStatus](membershipruleprocessingstatus.md) |Описывает состояние обработки для динамических групп на основе правил. Значение свойства равно `null` для динамических групп не на основе правил или в случае, если обработка динамических групп приостановлена. <br><br>Возвращается только в `$select`. Поддерживается только для API получения группы (`GET /groups/{ID}`). Только для чтения. |
 |onPremisesDomainName|String|Содержит локальное **полное доменное имя** (оно также называется **dnsDomainName**), синхронизированное из локального каталога. Это свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect.<br><br>Возвращается по умолчанию. Только для чтения. |
@@ -341,4 +341,3 @@ ms.locfileid: "61604352"
   "suppressions": []
 }
 -->
-

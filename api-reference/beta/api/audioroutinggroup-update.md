@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c5aafe6f290af213fba6d2bc9f0fac835d75c512
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 5dfa772c0f4377af17dbec7e554cce99522f7b74
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60995336"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62116843"
 ---
 # <a name="update-audio-routing-group"></a>Обновление группы маршрутизации звука
 
@@ -27,7 +27,7 @@ ms.locfileid: "60995336"
 | :-------------- | :--------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                       |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
-| Для приложений     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Приложение     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -47,9 +47,9 @@ PATCH /communications/calls/{id}/audioRoutingGroups/{id}
 
 | Свойство       | Тип    |Описание|
 |:---------------|:--------|:----------|
-| приемники | Коллекция объектов string | Целевые участники audioRoutingGroup. |
+| приемники | Коллекция строк | Целевые участники audioRoutingGroup. |
 | routingMode | String | Возможные значения: `oneToOne`, `multicast`. |
-| sources | Коллекция String | Исходный участник в audioRoutingGroup. |
+| sources | Коллекция строк | Исходный участник в audioRoutingGroup. |
 
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код отклика и обновленный `200 OK` [объект audioRoutingGroup](../resources/audioroutinggroup.md) в тексте ответа.
@@ -99,6 +99,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-audioroutinggroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-audioroutinggroup-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
