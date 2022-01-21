@@ -5,12 +5,12 @@ author: sharad-sharma-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 020b68061ed32ddcdaab801eef07e2422176440f
-ms.sourcegitcommit: 15dd0e98e69f872ed5a709600608b244759b0967
+ms.openlocfilehash: ac354e9e373b7c733652fb22fab326dd1a0010be
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "61567316"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62111367"
 ---
 # <a name="update-educationassignmentdefaults"></a>Обновление educationAssignmentDefaults
 Пространство имен: microsoft.graph
@@ -52,9 +52,9 @@ PATCH /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignmentDefaults
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |addedStudentAction|educationAddedStudentAction| Действия по умолчанию класса для учащихся, добавленные после даты публикации назначения. Возможные значения: `none`, `assignIfOpen`. Значение по умолчанию — `none`.|
-|addToCalendarAction|educationAddToCalendarOptions|Необязательное поле для управления **поведением** назначения для добавления **назначений** в календари учащихся и преподавателей при **публикации** назначения. Допустимые значения: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, `studentsOnly`. Обратите внимание, что вы должны использовать загон запроса, чтобы получить следующее значение `Prefer: include - unknown -enum-members` (ы) в этом [развиваемом переуме:](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `studentsOnly` . Необязательное свойство.|
+|addToCalendarAction|educationAddToCalendarOptions|Необязательное поле для управления **поведением** назначения для добавления **назначений** в календари учащихся и преподавателей при **публикации** назначения. Допустимые значения: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, `studentsOnly`. Обратите внимание, что вы должны использовать загон запроса, чтобы получить следующее значение `Prefer: include - unknown -enum-members` (ы) в этом [развиваемом переуме:](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) `studentsOnly` . Необязательно.|
 |dueTime|TimeOfDay| Значение по умолчанию класса для должного поля времени. Значение по умолчанию: `23:59:00`.|
-|notificationChannelUrl|Строка| По умолчанию Teams канал для отправки уведомлений, связанных с назначением. Значение по умолчанию — `null`.|
+|notificationChannelUrl|String| По умолчанию Teams канал для отправки уведомлений, связанных с назначением. Значение по умолчанию — `null`.|
 
 
 
@@ -100,6 +100,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-educationassignmentdefaults-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-educationassignmentdefaults-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: mahage-msft
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 13d98f74ce4ce0c734f4950ec028b038a9819a30
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: a67599c4a813e1ac7e354d1fd2b0c26c8eb366bb
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60687994"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62101888"
 ---
 # <a name="sourcecollection-resource-type"></a>тип ресурса sourceCollection
 
@@ -41,12 +41,12 @@ ms.locfileid: "60687994"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|contentQuery|String|Строка запроса в запросе KQL (Язык запросов ключевых слов). Подробные сведения см. в [статье Ключевые запросы и условия поиска для поиска контента и поиска электронных данных.](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions) Поиск можно уточнить с помощью полей в паре со значениями; например, *subject:"Quarterly Financials" And Date>=06/01/2016 and Date<=07/01/2016*.|
+|contentQuery|Строка|Строка запроса в запросе KQL (Язык запросов ключевых слов). Подробные сведения см. в [статье Ключевые запросы и условия поиска для поиска контента и поиска электронных данных.](/microsoft-365/compliance/keyword-queries-and-search-conditions) Поиск можно уточнить с помощью полей в паре со значениями; например, *subject:"Quarterly Financials" And Date>=06/01/2016 and Date<=07/01/2016*.|
 |createdBy|[identitySet](../resources/identityset.md)|Пользователь, создавший **sourceCollection.**|
 |createdDateTime|DateTimeOffset|Дата и время создания **sourceCollection.**|
 |dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|При указании коллекция будет охватывать всю службу для всей рабочей нагрузки. Возможные значения: `none`, `allTenantMailboxes`, `allTenantSites`, `allCaseCustodians`, `allCaseNoncustodialDataSources`.|
 |description|String|Описание **sourceCollection**.|
-|displayName|String|Имя отображения **sourceCollection**.|
+|displayName|Строка|Имя отображения **sourceCollection**.|
 |id|String| ID для **sourceCollection**. Только для чтения. |
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Последний пользователь, который изменил **sourceCollection**.|
 |lastModifiedDateTime|DateTimeOffset|Последняя дата и время изменения **sourceCollection.**|

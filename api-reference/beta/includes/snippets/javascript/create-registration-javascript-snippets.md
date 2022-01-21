@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 7bfc10521ef2716f2530bf44c46228a0a1fa313a
-ms.sourcegitcommit: 0eb843a6f61f384bc28c0cce1ccb74f64bdb1fa6
+ms.openlocfilehash: 249b4c6f75a4f795278027201fe52684c5cc9963
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "60559318"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62138258"
 ---
 ```javascript
 
@@ -16,6 +16,7 @@ const options = {
 const client = Client.init(options);
 
 const meetingRegistration = {
+  '@odata.type': '#microsoft.graph.meetingRegistration',
   subject: 'Microsoft Ignite',
   description: 'Join us November 2–4, 2021 to explore the latest tools, training sessions, technical expertise, networking opportunities, and more.',
   startDateTime: '2021-11-02T08:00:00-08:00',

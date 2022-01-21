@@ -5,12 +5,12 @@ author: vishriv
 ms.localizationpriority: medium
 ms.prod: taxonomy
 doc_type: apiPageType
-ms.openlocfilehash: 540170e5e89a603feb94da6edbff58ac3eaf0e2d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 54329bad1cce7ba6eade01a58907640d049f3487
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61032815"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62104372"
 ---
 # <a name="update-store"></a>Магазин обновлений
 Пространство имен: microsoft.graph.termStore
@@ -50,7 +50,7 @@ PATCH sites/{site-id}/termStore
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |defaultLanguageTag|Строка|Язык по умолчанию [microsoft.graph.termstore.store](../resources/termstore-store.md).|
-|LanguageTags|Коллекция String|Доступные языки в [microsoft.graph.termstore.store](../resources/termstore-store.md).|
+|LanguageTags|Коллекция строк|Доступные языки в [microsoft.graph.termstore.store](../resources/termstore-store.md).|
 
 
 
@@ -95,6 +95,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-store-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-store-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

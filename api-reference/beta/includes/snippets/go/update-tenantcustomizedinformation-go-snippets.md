@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 786a2c638b05991656e278212593c73961a75660
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: 512d79d8e22f3acdec46a0d4e68dfb6b40f3351a
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61100879"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62138293"
 ---
 ```go
 
@@ -19,6 +19,11 @@ requestBody.SetContacts( []TenantContactInformation {
     msgraphsdk.NewTenantContactInformation(),
     SetAdditionalData(map[string]interface{}{
         "@odata.type": "microsoft.graph.managedTenants.tenantContactInformation",
+        "name": "String",
+        "title": "String",
+        "email": "String",
+        "phone": "String",
+        "notes": "String",
     }
 }
 website := "String"

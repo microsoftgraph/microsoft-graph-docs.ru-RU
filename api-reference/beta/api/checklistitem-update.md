@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 32688f08f4ceb61da42c18be5228d4115859526d
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 1fbb109645dec087b16d4738b363a9ddcff2997c
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61523687"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62090819"
 ---
 # <a name="update-checklistitem"></a>Обновление контрольного спискаItem
 Пространство имен: microsoft.graph
@@ -53,8 +53,8 @@ PATCH /users/{id | userPrincipalName}/tasks/lists/{baseTaskListId}/tasks/{baseTa
 |:---|:---|:---|
 |checkedDateTime|DateTimeOffset|Дата и время завершения **контрольного спискаItem.**|
 |createdDateTime|DateTimeOffset|Дата и время создания **контрольного спискаItem.**|
-|displayName|Строка|Поле, указывающее название **checklistItem**.|
-|isChecked|Boolean|Состояние, указывающее, отключается элемент или нет.|
+|displayName|String|Поле, указывающее название **checklistItem**.|
+|isChecked|Логический|Состояние, указывающее, отключается элемент или нет.|
 
 
 
@@ -82,6 +82,22 @@ Content-Type: application/json
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-checklistitem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-checklistitem-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-checklistitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-checklistitem-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="go"></a>[Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-checklistitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

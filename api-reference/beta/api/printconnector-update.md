@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 44e6777fcddad77d7747abb49e953ad0881561e1
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 30ff66010ce761ca231f4fa4d62c572cb345822a
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60985298"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62130871"
 ---
 # <a name="update-printconnector"></a>Обновление printConnector
 
@@ -29,7 +29,7 @@ ms.locfileid: "60985298"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| PrintConnector.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Приложение|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ PATCH /print/connectors/{id}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |name|String|Имя соединитетеля.|
-|fullyQualifiedDomainName|String|Имя хост-имени соединители.|
+|fullyQualifiedDomainName|Строка|Имя хост-имени соединители.|
 |operatingSystem|String|Версия операционной системы соединитетеля.|
 |appVersion|Строка|Версия соединиттеля.|
 |расположение|[printerLocation](../resources/printerlocation.md)|Физическое и/или организационное расположение соединитетеля.|
@@ -100,6 +100,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-connector-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-connector-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

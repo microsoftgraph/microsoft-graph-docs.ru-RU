@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e2bcabc61e832204fae87646b30d7c7c0bf49e34
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 2ccc88f9ea2cb94db1eff8dc00c8729d4f5c5e0e
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61014549"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62133362"
 ---
 # <a name="update-onlinemeeting"></a>Обновление onlineMeeting
 
@@ -69,13 +69,13 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 | endDateTime                 | Даты и время                                                   | Время окончания собрания в UTC.                                                        | Нет                           |
 | subject                     | String                                                     | Тема собрания в Интернете.                                                  | Нет                           |
 | participants                | [meetingParticipants](../resources/meetingparticipants.md) | Участники, связанные с онлайн-собранием. Обновления могут быть только у участников. | Нет                           |
-| isEntryExitAnnounced        | Логическое                                                    | Следует ли объявлять о том, когда звонители присоединяются или уходят.                              | Да                          |
+| isEntryExitAnnounced        | Логический                                                    | Следует ли объявлять о том, когда звонители присоединяются или уходят.                              | Да                          |
 | lobbyBypassSettings         | [lobbyBypassSettings](../resources/lobbyBypassSettings.md) | Указывает, какие участники могут обойти вестибюль собрания.                          | Да                          |
 | allowedPresenters           | onlineMeetingPresenters                                    | Указывает, кто может быть презентовщиком на собрании.                                      | Да |
-| allowAttendeeToEnableCamera | Логический                                                    | Указывает, могут ли участники включить камеру.                               | Да                          |
-| allowAttendeeToEnableMic    | Логическое                                                    | Указывает, могут ли участники включить микрофон.                           | Да                          |
+| allowAttendeeToEnableCamera | Логическое                                                    | Указывает, могут ли участники включить камеру.                               | Да                          |
+| allowAttendeeToEnableMic    | Логический                                                    | Указывает, могут ли участники включить микрофон.                           | Да                          |
 | allowMeetingChat            | meetingChatMode                                            | Указывает режим чата собраний.                                                 | Да                          |
-| allowTeamworkReactions      | Логическое                                                    | Указывает, Teams для собрания включены ли Teams реакции.                      | Да                          |
+| allowTeamworkReactions      | Логический                                                    | Указывает, Teams для собрания включены ли Teams реакции.                      | Да                          |
 
 > [!NOTE]
 >
@@ -129,6 +129,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-start-end-subject-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-start-end-subject-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -223,6 +227,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-lobbybypasssettings-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-lobbybypasssettings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

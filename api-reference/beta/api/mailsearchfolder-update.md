@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abheek-das
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bb69662efdaa4c3327644ade7a12c183f122e1db
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 705e9fb08d5f9df6b7ad067b0d6069f4504c987e
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61022154"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62127426"
 ---
 # <a name="update-mailsearchfolder"></a>Обновление mailSearchFolder
 
@@ -48,9 +48,9 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 | displayName | Строка | Имя отображения [почтыFolder](../resources/mailfolder.md).|
-| includeNestedFolders | Логическое | Как должна проходить иерархия папок почтовых ящиков. `true` означает, что глубокий поиск должен быть сделан, а значит, неглубокий `false` поиск должен быть сделан вместо. |
-| sourceFolderIds | Коллекция String | Папки почтовых ящиков, которые необходимо добыть. |
-| filterQuery | String | Запрос OData для фильтрации сообщений. |
+| includeNestedFolders | Логический | Как должна проходить иерархия папок почтовых ящиков. `true` означает, что глубокий поиск должен быть сделан, а значит, неглубокий `false` поиск должен быть сделан вместо. |
+| sourceFolderIds | Коллекция строк | Папки почтовых ящиков, которые необходимо добыть. |
+| filterQuery | Строка | Запрос OData для фильтрации сообщений. |
 
 ## <a name="response"></a>Отклик
 В случае успешной работы этот метод возвращает код ответа и обновленный объект `200 OK` [mailFolder](../resources/mailfolder.md) в тексте ответа.
@@ -92,6 +92,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-mailsearchfolder-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-mailsearchfolder-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

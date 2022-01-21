@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: cristobal-buenrostro
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 9bd6260629da8399acc761f4e2df570db45a7c56
-ms.sourcegitcommit: 7a0f9f1a535795c6f77c80e02fd97581c36f1273
+ms.openlocfilehash: cb1cc349ae7787e5daf95e50b882f2045605129f
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/27/2021
-ms.locfileid: "61608978"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62090245"
 ---
 # <a name="update-educationassignment"></a>Обновление системы образования
 
@@ -49,8 +49,8 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}
 |:---------------|:--------|:----------|
 |addedStudentAction|Строка| Управление поведением учащихся, добавленных после публикации задания.|
 |addToCalendarAction|educationAddToCalendarOptions|Необязательное поле для управления поведением назначения для добавления назначений в календари учащихся и преподавателей при публикации назначения. Возможные значения: `none` , , и `studentsAndPublisher` `studentsAndTeamOwners` `studentsOnly` `unknownFutureValue` . Значение по умолчанию — `none`. Невозможно изменить назначение при назначении в **опубликованном** состоянии. |
-|allowLateSubmissions|Boolean| Можно ли отправку представлений после даты.|
-|allowStudentsToAddResourcesToSubmission|Boolean| Может ли учащийся добавлять ресурсы в отправку. Указано, поступили ли из списка ресурсов назначения только элементы, указанные в представлении. |
+|allowLateSubmissions|Логическое| Можно ли отправку представлений после даты.|
+|allowStudentsToAddResourcesToSubmission|Логический| Может ли учащийся добавлять ресурсы в отправку. Указано, поступили ли из списка ресурсов назначения только элементы, указанные в представлении. |
 |assignDateTime|DateTimeOffset| Дата публикации назначения учащимся. Невозможно изменить после публикации назначения. |
 |assignTo|[educationAssignmentRecipient](../resources/educationassignmentrecipient.md)| Студенты, получаювшие назначение.|
 |closeDateTime|DateTimeOffset| Дата закрытия назначения для отправки. Это необязательный поле, которое может быть равно нуль, если назначение не позволяет использоватьLateSubmissions или closeDateTime то же самое, что и dueDateTime, но если указано, оно должно быть больше или равно dueDateTime.|
@@ -105,6 +105,10 @@ Content-type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-educationassignment-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-educationassignment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

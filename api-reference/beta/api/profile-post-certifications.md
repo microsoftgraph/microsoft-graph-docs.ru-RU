@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 6886aab7793d0e24abb9aaf58518f7a783cb6795
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 41efade5e1d79c2277b5e27f55fae0697e9e600a
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61027942"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62132872"
 ---
 # <a name="create-personcertification"></a>Создание personCertification
 Пространство имен: microsoft.graph
@@ -57,11 +57,11 @@ POST /users/{id | userPrincipalName}/profile/certifications
 |endDate          |Date        |Дата истечения срока сертификации.            |
 |вывод|[inferenceData](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или модифицируют приложение. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |issuedDate       |Дата        |Дата выдачи сертификата.         |
-|issuingAuthority |String      |Орган, который предоставил сертификацию.          |
+|issuingAuthority |Строка      |Орган, который предоставил сертификацию.          |
 |issuingCompany   |Строка      |Орган, который предоставил сертификацию.          |
 |source|[personDataSource](../resources/persondatasource.md)|Где значения возникли, если синхронизированы с другой службы. Унаследовано от [itemFacet](../resources/itemfacet.md).|
 |startDate        |Date        |Дата, когда сертификация стала допустимой.       |
-|thumbnailUrl     |String      |URL-адрес, ссылающийся на эскиз сертификата.   |
+|thumbnailUrl     |Строка      |URL-адрес, ссылающийся на эскиз сертификата.   |
 |webUrl           |String      |URL-адрес, ссылающийся на сертификацию.                  |
 
 ## <a name="response"></a>Отклик
@@ -106,6 +106,10 @@ Content-Type: application/json
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-personcertification-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-personcertification-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

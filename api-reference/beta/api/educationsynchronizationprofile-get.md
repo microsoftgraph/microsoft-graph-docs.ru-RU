@@ -5,12 +5,12 @@ author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fee479f27801b8f4bac6370234667d083c49572f
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 64facc35e9809d17cc2a89dfd5e2a48b7d9cdf09
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61012172"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62103127"
 ---
 # <a name="get-an-educationsynchronizationprofile"></a>Get an educationSynchronizationProfile
 
@@ -27,7 +27,7 @@ ms.locfileid: "61012172"
 |:-----------|:----------|
 | Делегированные (рабочая или учебная учетная запись) | EduAdministration.Read, EduAdministration.ReadWrite |
 |Делегированная (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| EduAdministration.Read.All, EduAdministration.ReadWrite.All |
+|Приложение| EduAdministration.Read.All, EduAdministration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ GET /education/synchronizationProfiles/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика и `200 OK` [объект educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) в тексте ответа.
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
 
 # <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationsynchronizationprofile-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="powershell"></a>[PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationsynchronizationprofile-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

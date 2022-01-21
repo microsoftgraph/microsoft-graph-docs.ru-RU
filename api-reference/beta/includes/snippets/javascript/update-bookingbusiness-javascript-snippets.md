@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: e510655794007163baf33c063f55b699017cca19f6bd5cfcb531d54f6c6ff42d
-ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+ms.openlocfilehash: 503c14c6f5df385616e106bb44dbde30d6bfc75a
+ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "57140520"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62130012"
 ---
 ```javascript
 
@@ -26,7 +26,7 @@ const bookingBusiness = {
   }
 };
 
-await client.api('/bookingBusinesses/fabrikam@M365B489948.onmicrosoft.com')
+await client.api('/bookingBusinesses/fabrikam@contoso.onmicrosoft.com')
     .version('beta')
     .update(bookingBusiness);
 
