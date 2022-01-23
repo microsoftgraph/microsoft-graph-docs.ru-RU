@@ -5,12 +5,12 @@ title: Тип ресурса site
 ms.localizationpriority: high
 ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 67b482b268c871e6e9b99d2812172551918807ab
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 496796c5d7d2667b41ca97f31f81c3c79fc5de96
+ms.sourcegitcommit: 3f3975916b5c531ee63d92340ccd6e73e879e8d7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62104997"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62162071"
 ---
 # <a name="site-resource-type"></a>Тип ресурса site
 
@@ -45,6 +45,7 @@ ms.locfileid: "62104997"
 |[Создание contentType][]        | POST /sites/{site-id}/contentTypes
 |[Перечисление столбцов][]               | GET /sites/{site-id}/columns
 |[Создание столбца][]              | POST /sites/{site-id}/columns
+|[Операции со списком](../api/site-list-operations.md)|GET /sites/{site-id}/operations
 
 [Получение сайта]: ../api/site-get.md
 [Получение корневого сайта]: ../api/site-get.md
@@ -107,6 +108,7 @@ ms.locfileid: "62104997"
 | **drives**        | Collection([drive][])            | Коллекция дисков (библиотек документов) на этом сайте.
 | **items**         | Collection([baseItem][])         | Используется для адресации любого элемента, содержащегося на этом сайте. Вам не удастся выполнить перечисление этой коллекции.
 | **lists**         | Collection([list][])             | Коллекция списков на этом сайте.
+|**operations**|Коллекция [richLongRunningOperation](../resources/richlongrunningoperation.md)| Коллекция длительных операций для сайта.
 | **pages**         | Collection([sitePage][])         | Коллекция страниц в списке SitePages на этом сайте.
 | **permissions**   | Collection([permission][])         | Разрешения, связанные с сайтом. Допускается значение NULL.
 | **sites**         | Collection([site][])             | Коллекция дочерних сайтов этого сайта.
