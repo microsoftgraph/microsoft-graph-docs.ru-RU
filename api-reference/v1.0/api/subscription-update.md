@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: apiPageType
-ms.openlocfilehash: 12621eb426100f97e746172f64287d95a0742132
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a218ed4905974facab316bbc6c57cd6df0a47255
+ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62128385"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62184012"
 ---
 # <a name="update-subscription"></a>Обновление подписки
 
@@ -79,6 +79,14 @@ PATCH /subscriptions/{id}
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Обязательный. |
+
+## <a name="request-body"></a>Тело запроса
+
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+| Имя       | Тип | Описание|
+|:-----------|:------|:----------|
+| expirationDateTime  | DateTimeOffset  | Указывает дату и время в UTC по истечении срока действия подписки. Для максимального поддерживаемого времени подписки зависит от ресурса. |
 
 ## <a name="response"></a>Отклик
 

@@ -5,12 +5,12 @@ author: rolyon
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.prod: directory-management
-ms.openlocfilehash: 74603d7d39203134151928243de98624fc7a0dad
-ms.sourcegitcommit: 2456cf3c4117b88afefef139593796a2f919e7cc
+ms.openlocfilehash: fa046c1e55055ed1d8c00fdda67ea8be71c5d804
+ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "61077668"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62184005"
 ---
 # <a name="assign-update-or-remove-custom-security-attributes-using-the-microsoft-graph-api-preview"></a>Назначение, обновление или удаление настраиваемой атрибуты безопасности с помощью API microsoft Graph (Preview)
 
@@ -21,15 +21,18 @@ ms.locfileid: "61077668"
 
 В этой статье приводится пример назначения, обновления или удаления различных типов настраиваемого атрибута безопасности для пользователей и приложений (директоров служб). Настраиваемые атрибуты безопасности могут быть назначены или обновлены только с помощью операции в запросе `PATCH` [пользователя update](/graph/api/user-update?view=graph-rest-beta&preserve-view=true) или [update servicePrincipal.](/graph/api/serviceprincipal-update?view=graph-rest-beta&preserve-view=true)
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Разрешения
 
 Чтобы управлять настраиваемой атрибутами безопасности, основной вызов должен быть назначен следующей роли Azure AD. По умолчанию глобальные роли администратора и других администраторов не имеют разрешений на чтение, определение или назначение настраиваемого атрибута безопасности.
 
 - [Администратор назначения атрибутов](/azure/active-directory/roles/permissions-reference#attribute-assignment-administrator)
 
-Кроме того, директору по вызову должно быть предоставлено следующее разрешение.
+Кроме того, директору по вызову должны быть предоставлены следующие разрешения.
 
 - [CustomSecAttributeAssignment.ReadWrite.All](permissions-reference.md#custom-security-attributes-permissions)
+- [User.Read.All](permissions-reference.md#user-permissions)
+
+Разрешения на чтение, назначение, обновление или удаление атрибутов для приложения выданы *CustomSecAttributeAssignment.ReadWrite.All*. Разрешения на чтение объекта ресурса, например пользователей, выданы отдельно с помощью разрешений объектов ресурсов, таких как *User.Read.All.*
 
 ## <a name="assign-custom-security-attributes"></a>Назначение настраиваемой атрибуты безопасности
 
@@ -39,7 +42,7 @@ ms.locfileid: "61077668"
 
 - Набор атрибутов: `Engineering`
 - Атрибут: `ProjectDate`
-- Тип данных атрибута: String
+- Тип данных атрибута: строка
 - Значение атрибута: `"2022-10-01"`
 
 #### <a name="request"></a>Запрос
@@ -73,13 +76,13 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-assign-a-custom-security-attribute-with-a-string-value-to-a-service-principal"></a>Пример 2. Назначьте настраиваемый атрибут безопасности со значением строки директору службы
+### <a name="example-2-assign-a-custom-security-attribute-with-a-string-value-to-a-service-principal"></a>Пример 2. Назначение настраиваемого атрибута безопасности со строковым значением субъекту-службе
 
-В следующем примере показано, как назначить доверителу службы настраиваемый атрибут безопасности со значением строки.
+В следующем примере показано, как назначить субъекту-службе настраиваемый атрибут безопасности со строковым значением.
 
 - Набор атрибутов: `Engineering`
 - Атрибут: `ProjectDate`
-- Тип данных атрибута: String
+- Тип данных атрибута: строка
 - Значение атрибута: `"2022-10-01"`
 
 #### <a name="request"></a>Запрос
@@ -201,7 +204,7 @@ HTTP/1.1 204 No Content
 
 - Набор атрибутов: `Engineering`
 - Атрибут: `CostCenter`
-- Тип данных атрибута: коллекция integers
+- Тип данных атрибута: коллекция целых чисел
 - Значение атрибута: `[1001,1003]`
 
 #### <a name="request"></a>Запрос
@@ -242,7 +245,7 @@ HTTP/1.1 204 No Content
 
 - Набор атрибутов: `Engineering`
 - Атрибут: `Certification`
-- Тип данных атрибута: Boolean
+- Тип данных атрибута: логический
 - Значение атрибута: `true`
 
 #### <a name="request"></a>Запрос
@@ -326,7 +329,7 @@ HTTP/1.1 204 No Content
 
 - Набор атрибутов: `Engineering`
 - Атрибут: `Certification`
-- Тип данных атрибута: Boolean
+- Тип данных атрибута: логический
 - Значение атрибута: `false`
 
 #### <a name="request"></a>Запрос

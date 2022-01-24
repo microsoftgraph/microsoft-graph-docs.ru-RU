@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 089fd49744a0ab07cd2b26f5fbc9cb5fb51e6c17
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: bf7ee86fe521d876448dae2a8c92ac99b5e1f558
+ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62127672"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62184033"
 ---
 # <a name="add-owners"></a>Добавление владельцев
 
@@ -43,14 +43,14 @@ POST /groups/{id}/owners/$ref
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Предоставьте в тексте запроса описание добавляемого объекта [user](../resources/user.md) в формате JSON.
+В теле запроса поставляем представление JSON с **odata.id** [](../resources/user.md) пользователя или объекта [servicePrincipal,](../resources/user.md) который будет добавлен.
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика. Если объект уже является членом группы, этот метод возвращает код отклика `400 Bad Request`. Если добавляемый объект не существует, этот метод возвращает код отклика `404 Not Found`.
 
 ## <a name="example"></a>Пример
-#### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+### <a name="request"></a>Запрос
+Ниже приводится пример запроса, который добавляет пользователя в качестве владельца группы.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -91,9 +91,9 @@ Content-type: application/json
 
 ---
 
-Предоставьте в тексте запроса описание добавляемого объекта [user](../resources/user.md) в формате JSON.
+В теле запроса поставляем представление JSON с **odata.id** [](../resources/user.md) пользователя или объекта [servicePrincipal,](../resources/user.md) который будет добавлен.
 
-#### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

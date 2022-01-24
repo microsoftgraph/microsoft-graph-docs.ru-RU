@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: c33bc52028fb87fe807b282ace7e30ea7c0cec48
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: df1ff2cef0083ec35fa4495e17a10befc67b2544
+ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62117957"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62184061"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -198,10 +198,10 @@ ms.locfileid: "62117957"
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для группы. Только для чтения. Допускается значение null.|
 |groupLifecyclePolicies|Коллекция [groupLifecyclePolicy](grouplifecyclepolicy.md)|Коллекция политик жизненного цикла для этой группы. Только для чтения. Допускается значение NULL.|
 |memberOf|Коллекция [directoryObject](directoryobject.md)|Группы и административные единицы, в которых состоит группа. Методы HTTP: GET (поддерживается для всех групп). Только для чтения. Допускается значение NULL. Поддерживает `$expand`.|
-|members|Коллекция [directoryObject](directoryobject.md)| Пользователи, контакты и группы, состоящие в этой группе. Методы HTTP: GET (поддерживается для всех групп), POST (поддерживается для групп безопасности, в том числе с включенной поддержкой почты), DELETE (поддерживается только для групп безопасности). Только для чтения. Допускается значение NULL. Поддерживает `$expand`.|
+|members|Коллекция [directoryObject](directoryobject.md)| Пользователи, контакты и группы, состоящие в этой группе. Методы HTTP: GET (поддерживается для всех групп), POST (поддерживается для групп безопасности, в том числе с включенной поддержкой почты), DELETE (поддерживается только для групп безопасности). Только для чтения. Допускается значение NULL.<br/>Поддерживает `$expand`, включая вложенные `$select`. Например, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName)`.|
 |membersWithLicenseErrors|Коллекция объектов [user](user.md)|Список участников группы с ошибками лицензий в этом групповом назначении лицензий. Только для чтения. |
 |onenote|[onenote](onenote.md)| Только для чтения.|
-|owners|Коллекция [directoryObject](directoryobject.md)|Владельцы группы. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект. Допускается значение null. Если это свойство не указано при создании группы Microsoft 365, вызывающий пользователь автоматически назначается владельцем группы. Поддерживает `$expand`.|
+|owners|Коллекция [directoryObject](directoryobject.md)|Владельцы группы. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект. Допускается значение null. Если это свойство не указано при создании группы Microsoft 365, вызывающий пользователь автоматически назначается владельцем группы. <br/>Поддерживает `$expand`, включая вложенные `$select`. Например, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName)`.|
 |permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)|Разрешения, предоставленные группе для определенного приложения. Поддерживает `$expand`.|
 |photo|[profilePhoto](profilephoto.md)| Фотография профиля группы. |
 |photos|Коллекция объектов [profilePhoto](profilephoto.md)| Фотографии профиля, принадлежащие группе. Только для чтения. Допускается значение null.|
