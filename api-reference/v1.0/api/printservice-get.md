@@ -5,20 +5,31 @@ author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: b6b0d0cd1dddf22f235bc40d18532145894d39bd
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: e575f2bb49d40f99ff36798859c6c260ea1e984f
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62135714"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201724"
 ---
 # <a name="get-printservice"></a>Get printService
+
 Пространство имен: microsoft.graph
 
 Извлечение свойств и связей службы печати.
 
+> [!NOTE]
+> Чтобы использовать службу универсальной печати, пользователь или клиент приложения должен иметь активную подписку на универсальную печать.
+
 ## <a name="permissions"></a>Разрешения
-Для вызова **этого API** требуется одно из делегированных разрешений универсальной печати. [](/graph/permissions-reference#universal-print-permissions)
+
+Для вызова этих API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
+|:---------------------------------------|:------------------------------------|
+| Делегированные (рабочая или учебная учетная запись)     | PrintJob.ReadBasic, PrintJob.Read, PrintJob.ReadBasic.All, PrinterShare.ReadBasic.All, PrintJob.Read.All, Printer.Read.All, PrinterShare.Read.All, PrintConnector.Read.All, PrintSettings.Read.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, Printer.ReadWrite.All, PrinterShare.ReadWrite.All, PrintJob.ReadWrite.All, PrintConnector.ReadWrite.All, PrintSettings.ReadWrite.All, Printer.Create, PrintJob.Create |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                      |
+| Для приложений                            | Не поддерживается.                      |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -26,19 +37,23 @@ ms.locfileid: "62135714"
   "blockType": "ignored"
 }
 -->
+
 ``` http
 GET /print/services/{printServiceId}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
 Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
+
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Тело запроса
+
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -84,16 +99,16 @@ GET https://graph.microsoft.com/v1.0/print/services/{printServiceId}
 
 ---
 
-
-
 ### <a name="response"></a>Отклик
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.printService"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -110,4 +125,3 @@ Content-Type: application/json
   ]
 }
 ```
-

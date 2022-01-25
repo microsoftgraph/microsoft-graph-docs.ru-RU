@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fbcf86e2c2ff087d5b2ece680ecd50c140a61edf
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 109208672ea8c16336171d41a3587ba48a30e207
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62117388"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201362"
 ---
 # <a name="add-members"></a>Добавление участников
 
@@ -21,9 +21,10 @@ ms.locfileid: "62117388"
 Вы можете добавлять пользователей, контакты организации, cубъект-службы или другие группы. 
 
 > [!IMPORTANT]
-> + Можно добавить участников только в группы безопасности и Microsoft 365.
+> + Вы можете добавить участников только в группы безопасности и группы Microsoft 365. Дополнительные сведения см. в разделе [Только типы групп в Azure AD и Microsoft Graph](/graph/api/resources/groups-overview#group-types-in-azure-ad-and-microsoft-graph).
 > + Вы не можете добавлять группы безопасности в группы Microsoft 365.
 > + Вы не можете добавлять группы Microsoft 365 в группы безопасности или другие группы Microsoft 365.
+> + Группа безопасности может содержать пользователей, устройства, группы или субъекты-службы в качестве участников, а группа Microsoft 365 может содержать в качестве участников только пользователей.
 
 ## <a name="permissions"></a>Разрешения
 

@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph.
 author: MSGraphDocsVTeam
 ms.localizationpriority: high
-ms.openlocfilehash: 0321ad71dd1f9604f70eed5c4602610e867ed2fa
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: c7cb3143124a3f5f1820b47391c6011a5417ce1a
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072567"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201598"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -291,7 +291,7 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 
 В настоящее время существует проблема, из-за которой невозможно установить свойство **allowExternalSenders** группы в операции POST или PATCH как в `/v1.0`, так и в `/beta`.
 
-Доступ к свойству **allowExternalSenders** можно получить только в объединенных группах. Доступ к этому свойству в списках рассылки или группах безопасности, в том числе с помощью операций GET, приведет к ошибке.
+Доступ к свойству **allowExternalSenders** можно получить только в объединенных группах. Доступ к этому свойству в группах безопасности, в том числе с помощью операций GET, приведет к ошибке.
 
 ### <a name="removing-a-group-owner-also-removes-the-user-as-a-group-member"></a>Удаление владельца группы также удаляет пользователя как участника группы
 

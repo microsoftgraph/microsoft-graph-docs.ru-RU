@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: abhijeetsinha
 ms.prod: directory-management
 doc_type: resourcePageType
-ms.openlocfilehash: a989896dbf3ae71daade9e4feee07f3ea2bcd94b
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 963a4194b66bf901c5e724df097957272a64e2de
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766350"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201752"
 ---
 # <a name="rbacapplicationmultiple-resource-type"></a>Тип ресурса rbacApplicationMultiple
 
@@ -18,14 +18,13 @@ ms.locfileid: "59766350"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Контейнер управления ролью для унифицированных определений ролей и назначений ролей для Microsoft 365 поставщиков RBAC, которые поддерживают несколько принципов и несколько областей в одном назначении ролей. 
-
-Это отличается от типа ресурса [rbacApplication.](rbacapplication.md) 
+Контейнер управления ролью для унифицированных определений ролей и назначений ролей для Microsoft 365 поставщиков RBAC, которые поддерживают несколько принципов и несколько областей в одном назначении ролей. Это отличается от типа [ресурса rbacApplication.](rbacapplication.md)
 
 Облачные пк и Microsoft Intune являются примерами таких поставщиков RBAC. Назначение ролей в этих поставщиках может иметь массив принципов и массив групп областей.
 
 Для определений ролей поставщик облачных ПК в настоящее время поддерживает [операцию](../api/rbacapplication-list-roledefinitions.md) списка, но не [создание](../api/rbacapplication-post-roledefinitions.md).
 
+Наследует от [объекта](entity.md).
 
 ## <a name="methods"></a>Методы
 
@@ -42,7 +41,10 @@ ms.locfileid: "59766350"
 
 ## <a name="relationships"></a>Связи
 
-Нет
+|Связь|Тип|Описание|
+|:---|:---|:---|
+|roleAssignments|[коллекция unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md)| Ресурс для предоставления доступа пользователям или группам. |
+|roleDefinitions|[коллекция unifiedRoleDefinition](../resources/unifiedroledefinition.md)| Ресурс, представляющий роли, разрешенные поставщиками RBAC, и разрешения, присвоенные ролям. |
 
 ## <a name="json-representation"></a>Представление JSON
 

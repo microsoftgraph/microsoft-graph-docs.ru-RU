@@ -1,16 +1,16 @@
 ---
 title: Удаление участника
-description: Используйте этот API, чтобы удалить участника из группы Microsoft 365, группы безопасности или группы  безопасности с поддержкой почты через свойство навигации членов. Вы можете удалять пользователей или другие группы.
+description: Удаление участника из Microsoft 365 группы или группы безопасности через свойство навигации участников.
 ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e20a4b730412129a1b68c5837bad000d7b6ca2b9
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 20d51cee2eb4fc0ab9d53b9e178c04f2c851b966
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61525507"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201703"
 ---
 # <a name="remove-member"></a>Удаление участника
 
@@ -18,7 +18,7 @@ ms.locfileid: "61525507"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-С помощью этого API можно удалить участника из группы через свойство навигации **members**. Нельзя удалить участника из групп с динамическими членствами.
+Удаление участника из группы с помощью свойства **навигации** участников. Вы не можете удалить участника из групп с динамическим членством.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -40,7 +40,7 @@ DELETE /groups/{id}/members/{id}/$ref
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

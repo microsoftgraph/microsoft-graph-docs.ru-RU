@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 0268b5247999cf01f38fbe87879933e228a2c22d
-ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
+ms.openlocfilehash: 25c2570fa39159c34d8c38c90bd4f7fe7e96ed4e
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62183928"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201430"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -46,13 +46,13 @@ ms.locfileid: "62183928"
 | [Удаление параметра](../api/groupsetting-delete.md) | Нет | Удаление объекта setting. |
 | [Получение параметра](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Считывание свойств определенного объекта setting. |
 | [Перечисление groupLifecyclePolicies](../api/group-list-grouplifecyclepolicies.md)  | Коллекция [groupLifecyclePolicy](grouplifecyclepolicy.md) | Перечисление политик жизненного цикла для групп. |
-| [Перечисление участников](../api/group-list-members.md) | Коллекция [directoryObject](directoryobject.md) | Получение пользователей и групп, являющихся непосредственными участниками этой группы, из свойства навигации **members**. |
-| [Список владельцев](../api/group-list-owners.md) | Коллекция [directoryObject](directoryobject.md) | Получение владельцев группы из свойства навигации **owners**. |
+| [Перечисление участников](../api/group-list-members.md) | Коллекция [directoryObject](directoryobject.md) | Получение непосредственных участников этой группы из свойства навигации **members**. |
+| [Перечисление владельцев](../api/group-list-owners.md) | Коллекция [directoryObject](directoryobject.md) | Получение владельцев группы из свойства навигации **owners**. |
 | [Перечисление параметров](../api/groupsetting-list.md) | Коллекция объектов [groupSetting](groupsetting.md) | Перечисление свойств всех объектов setting. |
 | [Перечисление транзитивных участников](../api/group-list-transitivemembers.md) | Коллекция [directoryObject](directoryobject.md) | Получение пользователей, групп и устройств, являющихся участниками, включая вложенных участников этой группы. |
 | [Перечисление транзитивных свойств memberOf](../api/group-list-transitivememberof.md) | Коллекция [directoryObject](directoryobject.md) | Перечисление групп, в которых состоит эта группа. Эта операция является транзитивной и включает группы, в которых эта группа является вложенным элементом. |
-| [Удаление участника](../api/group-delete-members.md) | Нет | Удаление участника из группы Microsoft 365 или группы безопасности (в том числе с включенной поддержкой почты) с помощью свойства навигации **members**. Вы можете удалять пользователей или другие группы. |
-| [Удаление владельца](../api/group-delete-owners.md) | Нет | Удаление владельца из группы Microsoft 365 или группы безопасности (в том числе с включенной поддержкой почты) с помощью свойства навигации **owners**. |
+| [Удаление участника](../api/group-delete-members.md) | Нет | Удаление участника из группы Microsoft 365 или группы безопасности с помощью свойства навигации **members**.|
+| [Удаление владельца](../api/group-delete-owners.md) | Нет | Удаление владельца из группы Microsoft 365 или группы безопасности с помощью свойства навигации **owners**. |
 | [Обновление параметра](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Обновление объекта setting. |
 | [assignLicense](../api/group-assignlicense.md) | [group](group.md) | Добавление или удаление подписок группы. Можно также включать и отключать отдельные планы, связанные с подпиской. |
 | [renew](../api/group-renew.md) | Boolean | Обновление, продлевающее срок действия группы. Когда группа обновляется, срок ее действия продляется на количество дней, определенное политикой. |
@@ -190,10 +190,10 @@ ms.locfileid: "62183928"
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для группы. Только для чтения. Допускается значение null.|
 |groupLifecyclePolicies|Коллекция [groupLifecyclePolicy](grouplifecyclepolicy.md)|Коллекция политик жизненного цикла для этой группы. Только для чтения. Допускается значение NULL.|
 |memberOf|Коллекция [directoryObject](directoryobject.md)|Группы, в которых состоит эта группа. Методы HTTP: GET (поддерживается для всех групп). Только для чтения. Допускается значение NULL. Поддерживает `$expand`.|
-|members|Коллекция [directoryObject](directoryobject.md)| Пользователи и группы, состоящие в этой группе. Методы HTTP: GET (поддерживается для всех групп), POST (поддерживается для групп Microsoft 365 и групп безопасности, в том числе с включенной поддержкой почты), DELETE (поддерживается для групп Microsoft 365 и групп безопасности). Допускается значение NULL.<br/>Поддерживает `$expand`, включая вложенные `$select`. Например, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName)`.|
+|members|Коллекция [directoryObject](directoryobject.md)| Участники этой группы, которые могут быть пользователями, устройствами, другими группами или субъектами-службами. Поддерживает операции [Перечисление участников](../api/group-list-members.md), [Добавление участника](../api/group-post-members.md) и [Удаление участника](../api/group-delete-members.md). Допускается значение null. <br/>Поддерживает `$expand`, включая вложенные `$select`. Например, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName)`.|
 |membersWithLicenseErrors|Коллекция [User](user.md)|Список участников группы с ошибками лицензий в этом групповом назначении лицензий. Только для чтения. |
 |onenote|[Onenote](onenote.md)| Только для чтения.|
-|owners|Коллекция [directoryObject](directoryobject.md)|Владельцы группы. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект. Максимальное количество владельцев: 100. Допускается значение null. Если это свойство не указано при создании группы Microsoft 365, вызывающий пользователь автоматически назначается владельцем группы. <br/>Поддерживает `$expand`, включая вложенные `$select`. Например, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName)`.|
+|owners|Коллекция [directoryObject](directoryobject.md)|Владельцы группы. Максимальное количество владельцев: 100. Допускается значение null. Если это свойство не указано при создании группы Microsoft 365, вызывающий пользователь автоматически назначается владельцем группы. <br/>Поддерживает `$expand`, включая вложенные `$select`. Например, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName)`.|
 |permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)|Разрешение, предоставленное группе для определенного приложения. Поддерживает `$expand`.|
 |photo;|[profilePhoto](profilephoto.md)| Фотография профиля группы. |
 |photos|Коллекция объектов [profilePhoto](profilephoto.md)| Фотографии профиля, принадлежащие группе. Только для чтения. Допускается значение null.|

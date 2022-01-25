@@ -3,14 +3,14 @@ title: Get printService
 description: Извлечение свойств и связей службы печати.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 7158bf34efc55f83873aba7468f10920d329b31e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 62dbee61fc7d24a336e3b35c9e5341003f4f58ac
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129561"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201647"
 ---
 # <a name="get-printservice"></a>Get printService
 
@@ -20,14 +20,18 @@ ms.locfileid: "62129561"
 
 Извлечение свойств и связей службы печати.
 
-## <a name="permissions"></a>Разрешения
-Для вызова этого API не требуется никаких разрешений, но для использования службы универсальной печати клиент пользователя или клиента приложения должен иметь активную подписку универсальной печати.
+> [!NOTE]
+> Чтобы использовать службу универсальной печати, пользователь или клиент приложения должен иметь активную подписку на универсальную печать.
 
-|Тип разрешения | Разрешения (в порядке повышения привилегий) |
-|:---------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|Нет.|
-|Делегированные (личная учетная запись Майкрософт)|Нет.|
-|Приложение|Нет.|
+## <a name="permissions"></a>Разрешения
+
+Для вызова этих API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
+|:---------------------------------------|:------------------------------------|
+| Делегированные (рабочая или учебная учетная запись)     | PrintJob.ReadBasic, PrintJob.Read, PrintJob.ReadBasic.All, PrinterShare.ReadBasic.All, PrintJob.Read.All, Printer.Read.All, PrinterShare.Read.All, PrintConnector.Read.All, PrintSettings.Read.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, Printer.ReadWrite.All, PrinterShare.ReadWrite.All, PrintJob.ReadWrite.All, PrintConnector.ReadWrite.All, PrintSettings.ReadWrite.All, Printer.Create, PrintJob.Create |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                      |
+| Для приложений                            | Не поддерживается.                      |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -36,19 +40,27 @@ GET /print/services/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
 Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
+
 Не указывайте текст запроса для этого метода.
+
 ## <a name="response"></a>Отклик
+
 В случае успешной работы этот метод возвращает код отклика и `200 OK` объект [printService](../resources/printservice.md) в тексте отклика.
+
 ## <a name="example"></a>Пример
+
 ##### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -86,13 +98,16 @@ GET https://graph.microsoft.com/beta/print/services/{id}
 ---
 
 ##### <a name="response"></a>Отклик
+
 Ниже приведен пример ответа.
+
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.printService"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -119,5 +134,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

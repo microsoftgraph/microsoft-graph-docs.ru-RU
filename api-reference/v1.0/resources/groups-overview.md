@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: 4fba8ecca0fd82c5e7e45bd5aa0e1c05d4ef84e0
-ms.sourcegitcommit: 2e94beae05043a88b389349f0767e3a657415e4c
+ms.openlocfilehash: bb455ffde8ab93ed0c93fcb35cdb088f2ce6979f
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61124030"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201696"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>Работа с группами в Microsoft Graph
 
@@ -18,12 +18,26 @@ ms.locfileid: "61124030"
 
 > **Примечание.** Создавать группы можно только с помощью рабочих или учебных учетных записей. Личные учетные записи Майкрософт не поддерживают группы.
 
-| Тип              | Вариант использования | groupTypes | mailEnabled | securityEnabled | Создано и управляется с помощью API |
+## <a name="group-types-in-azure-ad-and-microsoft-graph"></a>Типы групп в Azure AD и Microsoft Graph
+
+Azure AD поддерживает следующие типы групп.
+
++ Группы Microsoft 365
++ Группы безопасности
++ группы безопасности с включенной поддержкой почты.
++ Группы рассылки
+
+Дополнительные сведения о группах Azure AD см. в разделе [Сравнение групп в Azure AD](/microsoft-365/admin/create-groups/compare-groups).
+
+В Microsoft Graph тип группы можно определить с помощью параметров ее свойств **groupType**, **mailEnabled** и **securityEnabled**, как указано в таблице ниже.
+
+| Тип              | Вариант использования | groupType | mailEnabled | securityEnabled | Создано и управляется с помощью API |
 |-------------------|----------|-----------|--------------|------------------|--------------------------------|
 | [Группы Microsoft 365](#microsoft-365-groups) | Обеспечение совместной работы пользователей с общими ресурсами Майкрософт в Интернете. | `["Unified"]` | `true` | `true` или `false` | Да |
 | [Группы безопасности](#security-groups-and-mail-enabled-security-groups) | Управление доступом пользователей к ресурсам в приложении. | `[]` | `false` | `true` | Да |
 | [Группы безопасности, поддерживающие почту](#security-groups-and-mail-enabled-security-groups) | Управление доступом пользователей к ресурсам в приложении с общим почтовым ящиком группы. | `[]` | `true` | `true` | Нет |
 | Группы рассылки | Рассылка почты участникам группы. Рекомендуем использовать группы Microsoft 365, так как они предоставляют более широкий выбор ресурсов. | `[]` | `true` | `false` | Нет |
+
 
 ## <a name="microsoft-365-groups"></a>Группы Microsoft 365
 Группы Microsoft 365 лучше всего проявляют себя при совместной работе над проектом или в команде. Они создаются с ресурсами, доступными всем участникам, включая:

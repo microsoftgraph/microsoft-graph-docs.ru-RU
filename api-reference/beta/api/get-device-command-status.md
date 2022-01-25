@@ -1,24 +1,27 @@
 ---
-title: Получение состояния команд для устройства
+title: Получить состояние команды устройства (неподготовленное)
 description: Получите состояние команды на устройстве. Полный список кодов состояния см. в списке actionStatus.
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: apiPageType
 author: ailae
 ms.prod: ''
-ms.openlocfilehash: c0747438a9921f2ed6f3ccf1ee551f4aced70fcb
-ms.sourcegitcommit: 3edf187fe4b42f81c09610782671776a27161126
+ms.openlocfilehash: bbe26243c9779e7917e4014038b26473a7cd17f7
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515970"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201322"
 ---
-# <a name="get-device-command-status"></a>Получение состояния команд для устройства
+# <a name="get-device-command-status-deprecated"></a>Получить состояние команды устройства (неподготовленное)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получите состояние команды на устройстве. Полный список кодов состояния см. [в списке actionStatus.](#list-of-actionstatus)
+
+> [!CAUTION]
+> Этот API обесценилось и перестал возвращать данные 30 сентября 2020 г.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -42,7 +45,7 @@ GET me/devices/{id}/commands/{id}
 
 | Заголовок |Значение
 |:----|:------|
-|Авторизация| Bearer {токен}. Обязательный. |
+|Авторизация| Bearer {token}. Обязательный. |
 |Accept | application/json |
 
 ## <a name="response"></a>Отклик
@@ -159,7 +162,7 @@ GET me/devices/{id}/commands/{id}/responsePayload
 
 | Заголовок |Значение
 |:----|:------|
-|Авторизация| Bearer {токен}. Обязательный. |
+|Авторизация| Bearer {token}. Обязательный. |
 |Accept | application/json |
 
 ### <a name="response"></a>Отклик

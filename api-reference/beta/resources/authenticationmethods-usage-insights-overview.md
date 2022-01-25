@@ -1,16 +1,16 @@
 ---
 title: Работа с API отчета об использовании методов проверки подлинности
 description: Отчет об использовании методов проверки подлинности помогает организации понять, как конечные пользователи используют Azure Active Directory, такие как сброс пароля самообслуживления и многофакторная проверка подлинности (MFA).
-localization_priority: Normal
+ms.localizationpriority: medium
 author: besiler
 ms.prod: identity-and-access-reports
 doc_type: conceptualPageType
-ms.openlocfilehash: 451d1abc82be09f37933dce7bbacdfc4931252d3
-ms.sourcegitcommit: 22bd45d272681658d46a8b99af3c3eabc7b05cb1
+ms.openlocfilehash: 6af5d1805b09add23cfc6c36c7d10acc1e31dc75
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58384368"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201612"
 ---
 # <a name="working-with-the-authentication-methods-usage-report-api"></a>Работа с API отчета об использовании методов проверки подлинности
 
@@ -59,6 +59,7 @@ ms.locfileid: "58384368"
 | [userCredentialUsageDetails](/graph/api/resources/usercredentialusagedetails?view=graph-rest-beta&preserve-view=true) | [GET /usercredentialusagedetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/userCredentialUsageDetails&version=beta) | Сведения о пользователях для всех действий по сбросу пароля самообслуживаемой. |
 | [usersRegisteredByFeature](/graph/api/resources/userregistrationfeaturesummary?view=graph-rest-beta&preserve-view=true) | [GET /authenticationMethods/usersRegisteredByFeature](https://developer.microsoft.com/graph/graph-explorer?request=reports/authenticationMethods/usersRegisteredByFeature(includedUserTypes='all',includedUserRoles='all')&version=beta) | Получите число пользователей, способных выполнять многофакторную проверку подлинности, сброс пароля самообслуживления и проверку подлинности без паролей. |
 | [usersRegisteredByMethod](/graph/api/resources/userregistrationmethodsummary?view=graph-rest-beta&preserve-view=true) | [GET /authenticationMethods/usersRegisteredByMethod](https://developer.microsoft.com/graph/graph-explorer?request=reports/authenticationMethods/usersRegisteredByMethod(includedUserTypes='all',includedUserRoles='all')&version=beta) | Получите число пользователей, зарегистрированных для каждого метода проверки подлинности. |
+| [userRegistrationDetails](/graph/api/resources/userRegistrationDetails?view=graph-rest-beta&preserve-view=true) | [GET /authenticationMethods/userRegistrationDetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/authenticationMethods/userRegistrationDetails&version=beta) | Получите сведения о регистрации MFA для всех пользователей. |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

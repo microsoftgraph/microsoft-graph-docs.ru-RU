@@ -5,12 +5,12 @@ author: Jordanndahl
 ms.localizationpriority: high
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1bc8d1ffce7c94ce00b710df0a232f7a23792c09
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 445ec62fb5c134f29bb423d98ec7ff76740902cf
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136079"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201346"
 ---
 # <a name="create-event"></a>Создание события
 
@@ -39,14 +39,14 @@ POST /groups/{id}/calendar/events
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код ответа `201 Created` и объект [event](../resources/event.md) в тексте ответа.
+При успешном выполнении этот метод возвратит код отклика `201 Created` и объект [event](../resources/event.md) в теле отклика.
 
 ## <a name="example"></a>Пример
-#### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -113,9 +113,7 @@ Content-type: application/json
 
 ---
 
-Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
-
-#### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

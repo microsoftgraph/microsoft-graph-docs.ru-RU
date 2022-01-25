@@ -1,16 +1,16 @@
 ---
 title: Добавление владельцев
-description: Добавьте пользователя или субъект-службу к владельцам группы Microsoft 365 или группы безопасности.
+description: Добавьте пользователя или субъект-службу к владельцам группы Microsoft 365 или группы безопасности. Владельцы — это группа пользователей или субъектов-служб, которым разрешено изменять этот групповой объект.
 ms.localizationpriority: medium
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: bf7ee86fe521d876448dae2a8c92ac99b5e1f558
-ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
+ms.openlocfilehash: 191ed9f6d5c28e2eef172cf508e1e3924d3237b5
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62184033"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201654"
 ---
 # <a name="add-owners"></a>Добавление владельцев
 

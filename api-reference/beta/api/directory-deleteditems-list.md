@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f0e33bccc600175d4aebb877dde1c5a33fcb0dfb
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: dfbf2e33622a6f127afa45e511140df7834b05e1
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62090693"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201416"
 ---
 # <a name="list-deleted-items"></a>Перечисление удаленных элементов
 
@@ -22,11 +22,11 @@ ms.locfileid: "62090693"
 
 В настоящее время функции удаленных элементов поддерживаются только для [приложений,](../resources/application.md) [групповых](../resources/group.md)и [пользовательских](../resources/user.md) ресурсов.
 
->**Примечание:** Удаленные группы безопасности и списки рассылки удаляются навсегда и не могут быть извлечены с помощью этого API.
+>**Примечание:** Удаленные группы безопасности удаляются постоянно и не могут быть извлечены с помощью этого API.
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
 ### <a name="for-applications"></a>Для приложений:
 

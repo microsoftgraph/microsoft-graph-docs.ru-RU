@@ -1,22 +1,25 @@
 ---
-title: Перечисление пользовательских устройств
+title: Список устройств пользователей (неподготовленных)
 description: Получите список пользовательских устройств, поддерживаю Project возможностей Рима. Это включает возможность запуска приложения, сообщения или отправки данных в приложение. После вызова GET для меня или устройств передайте в ID устройства команду на устройство.
 ms.localizationpriority: medium
 author: jpettere
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: dd47f2f9cd3edfb1b45db833857e0a3f2cc0820b
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: d7c04421c87f6ec4e8c4ccc571790aaf1e3ed786
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60940905"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201314"
 ---
-# <a name="list-user-devices"></a>Перечисление пользовательских устройств
+# <a name="list-user-devices-deprecated"></a>Список устройств пользователей (неподготовленных)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> Этот API обесценилось и перестал возвращать данные 30 сентября 2020 г.
 
 Получите список пользовательских устройств, поддерживаю Project возможностей Рима. Это включает возможность запуска приложения, сообщения или отправки данных в приложение. После вызова GET для меня или устройств передайте в ID устройства команду [на](send-device-command.md) устройство.
 
@@ -43,10 +46,10 @@ GET me/devices
 
 | Заголовок |Значение
 |:----|:------|
-|Авторизация| Bearer {токен}. Обязательный. |
+|Авторизация| Bearer {token}. Обязательный. |
 |Accept | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

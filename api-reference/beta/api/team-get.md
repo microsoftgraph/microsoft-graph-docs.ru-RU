@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f866f0855b06e7ecba3e554b058a6a84ea4f45dd
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5c85618df16d6aea4bd9a82514666bd58b0c6bad
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62129408"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201353"
 ---
 # <a name="get-team"></a>Получение команды
 
@@ -39,7 +39,7 @@ GET /teams/{team-id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) $select и $expand для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$select` и `$expand` для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
@@ -53,7 +53,7 @@ GET /teams/{team-id}
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [team](../resources/team.md) в тексте отклика.
 ## <a name="example"></a>Пример
-#### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265
 ---
 
 
-#### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.

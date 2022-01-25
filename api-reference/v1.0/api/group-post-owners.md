@@ -1,16 +1,16 @@
 ---
 title: Добавление владельцев
-description: Добавьте пользователя или субъект-службу к владельцам группы Microsoft 365 или группы безопасности. Владельцы — это пользователи, которые не являются администраторами и которым разрешено изменять объект группы.
+description: Добавьте пользователя или субъект-службу к владельцам группы Microsoft 365 или группы безопасности. Владельцы — это группа пользователей или субъектов-служб, которым разрешено изменять этот групповой объект.
 ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4da378ccc4c5386764711995b62ad327c28cf664
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6d30d60e0bd0e15b4649cbd2ed298fa863a6fc7a
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62114799"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201444"
 ---
 # <a name="add-owners"></a>Добавление владельцев
 
@@ -41,14 +41,14 @@ POST /groups/{id}/owners/$ref
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Предоставьте в тексте запроса описание добавляемого объекта [user](../resources/user.md) в формате JSON.
+Предоставьте в тексте запроса описание добавляемого объекта [user](../resources/user.md) или [servicePrincipal](../resources/user.md) в формате JSON с **@odata.id**.
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика. Если объект уже является членом группы, этот метод возвращает код отклика `400 Bad Request`. Если добавляемый объект не существует, этот метод возвращает код отклика `404 Not Found`.
 
 ## <a name="example"></a>Пример
-#### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+### <a name="request"></a>Запрос
+Ниже приводится пример запроса, который добавляет пользователя в качестве владельца группы.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -89,9 +89,9 @@ Content-type: application/json
 
 ---
 
-Предоставьте в тексте запроса описание добавляемого объекта [user](../resources/user.md) в формате JSON.
+Предоставьте в тексте запроса описание добавляемого объекта [user](../resources/user.md) или [servicePrincipal](../resources/user.md) в формате JSON с **@odata.id**.
 
-#### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

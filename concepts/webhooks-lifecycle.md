@@ -4,12 +4,12 @@ description: У приложений, подписывающихся на уве
 author: FaithOmbongi
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: fed0c61d8cdf933d126c3ae880494afef51530a5
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 2bbce70adc5de7b1b1f17cf63d679a6d116680fd
+ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61523246"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62184068"
 ---
 # <a name="reduce-missing-subscriptions-and-change-notifications"></a>Уменьшение количества пропущенных уведомлений о подписках и изменениях
 
@@ -162,10 +162,29 @@ Content-Type: application/json
 
 Получив уведомление о жизненном цикле `reauthorizationRequired`, необходимо выполнить повторную авторизацию подписки, чтобы поток данных не прекращался.
 
-Вы можете создавать длительные подписки (на 3 дня), таким образом уведомления об изменениях начнут поступать в **notificationUrl**. В случае изменений в условия доступа Microsoft Graph может потребовать повторную авторизацию подписки, чтобы подтвердить наличие у вас доступа к данным ресурсов. Ниже приведены примеры изменений, влияющих на доступ к данным.
+Вы можете создать долгосрочную подписку в зависимости от [максимального срока службы подписки для ресурса](/graph/api/resources/subscription#maximum-length-of-subscription-per-resource-type), что позволяет получать уведомления об изменениях в **notificationUrl**. Если условия доступа изменились после создания подписки или Microsoft Graph обнаружит, что поток уведомлений может быть прерван в ближайшем будущем, Microsoft Graph может потребовать повторной авторизации подписки, чтобы доказать, что у вас по-прежнему есть доступ к данным ресурса. Ниже приведены примеры условий, которые могут влиять на доступ к данным.
 
 - Администратор клиента может отозвать разрешения приложения на чтение ресурса.
 - В интерактивном сценарии к пользователю, предоставляющему маркер проверки подлинности для вашего приложения, могут применяться динамические политики на основе различных факторов, например их расположения, состояния устройства или оценки риска. Например, если пользователь изменяет свое физическое расположение, ему может быть запрещен доступ к данным, и ваше приложение не сможет повторно авторизовать подписку. Дополнительные сведения о динамических политиках, управляющих доступом, см. в статье [Политики условного доступа Azure AD](/azure/active-directory/conditional-access/overview). 
+- Срок действия маркера доступа истекает. Это относится только к уведомлениям, которые включают данные ресурсов.
+- Срок действия подписки истекает до его продления.
+
+Прежде чем все эти условия вступят в силу, Microsoft Graph отправит запрос на авторизацию в **lifecycleNotificationUrl**. Интервал этих уведомлений иллюстрирован ниже:
+
+```csharp
+    //The following code is for illustrative purposes only
+    var TokenTimeToExpirationInMinutes=(TokenExpirationTime-CurrentTime)/4;
+    if((TokenTimeToExpirationInMinutes)<=180 && TokenTimeToExpirationInMinutes>60){
+        //Microsoft Graph will send reauthorizationRequired notification
+        TokenTimeToExpirationInMinutes=TokenTimeToExpirationInMinutes/2;
+    }
+    elseif(TokenTimeToExpirationInMinutes<60 && TokenTimeToExpirationInMinutes>=0){
+            //Microsoft Graph will send reauthorizationRequired notification every 15 mins
+            TokenTimeToExpirationInMinutes=TokenTimeToExpirationInMinutes-15;
+    }else{
+      //Microsoft Graph will stop sending reauthorizationRequired notifications
+    }
+```
 
 Ниже указаны шаги, которые представляют собой поток запроса авторизации для активной подписки.
 
@@ -178,14 +197,14 @@ Content-Type: application/json
     Обратите внимание, что поток уведомлений об изменениях может некоторое время продолжаться, предоставляя вам дополнительное время для ответа. Однако в конечном итоге доставка уведомлений об изменениях приостанавливается, пока вы не выполните требуемое действие.
 
 3. Ответьте на это уведомление жизненного цикла одним из указанных ниже двух способов.
-    - Проведите повторную авторизацию подписки. Это действие не продлит срок ее действия.
-    - Возобновите подписку. Это действие одновременно повторно авторизует и продлит срок действия подписки.
+    - Повторная авторизация подписки. Это не продлевает срок действия подписки.
+    - Возобновление подписки. Это повторно авторизует подписку и продлевает срок ее действия.
 
-    Примечание. Оба действия требуют предоставление действительного маркера проверки подлинности по аналогии с [созданием новой подписки](webhooks.md#creating-a-subscription) или [продлением подписки до истечения срока ее действия](webhooks.md#renewing-a-subscription).
+    Примечание. Оба действия требуют предоставить действительный маркер проверки подлинности по аналогии с [созданием новой подписки](webhooks.md#creating-a-subscription) или [продлением подписки до истечения срока ее действия](webhooks.md#renewing-a-subscription).
 
-4. Если вы выполните повторную авторизацию или возобновление подписки, то поступление уведомлений об изменениях продолжится. Если же вы этого не сделаете, то уведомления об изменениях по-прежнему не будут поступать.
+4. Если вы успешно выполнили повторную авторизацию или возобновление подписки, уведомления об изменениях продолжать поступать. В противном случае уведомления об изменениях не будут возобновлены. Обратите внимание, что Microsoft Graph отменит уведомления через четыре часа после их приостановки.
 
-### <a name="reauthorizationrequired-notification-example"></a>Пример уведомления reauthorizationRequired
+### <a name="reauthorizationrequired-notification-payload-example"></a>Пример полезных данных уведомления reauthorizationRequired
 
 ```json
 {
@@ -203,9 +222,8 @@ Content-Type: application/json
 
 Обратите внимание на указанные ниже моменты для этого типа уведомления.
 
-- Поле `"lifecycleEvent": "reauthorizationRequired"` назначает это уведомление запросом на авторизацию. Также возможны другие типы уведомлений жизненного цикла. В будущем будут добавлены новые типы.
+- Поле `"lifecycleEvent": "reauthorizationRequired"` назначает это уведомление запросом на авторизацию. Также поддерживаются уведомления `missed` и `subscriptionRemoved` **lifecycleEvent**.
 - Это уведомление жизненного цикла не содержит никаких сведений о конкретном ресурсе, так как оно связано не с изменением ресурса, а с изменением состояния подписки.
-- Как и уведомления об изменениях, уведомления жизненного цикла можно объединять (в коллекции **value**), каждое с возможно разными значениями **lifecycleEvent**. Обрабатывайте каждое уведомление жизненного цикла в пакете соответствующим образом.
 
 > **Примечание.** Полное описание данных, отправленных при доставке уведомлений об изменениях, см. в [changeNotificationCollection](/graph/api/resources/changenotificationcollection).
 
@@ -265,14 +283,14 @@ Content-Type: application/json
 
 ## <a name="see-also"></a>См. также
 
-- [Тип ресурса subscription](/graph/api/resources/subscription?view=graph-rest-1.0)
-- [Получение подписки](/graph/api/subscription-get?view=graph-rest-1.0)
-- [Создание подписки](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
-- [Удаление подписки](/graph/api/subscription-delete?view=graph-rest-1.0)
-- [Обновление подписки](/graph/api/subscription-update?view=graph-rest-1.0)
+- [Тип ресурса subscription](/graph/api/resources/subscription)
+- [Получение подписки](/graph/api/subscription-get)
+- [Создание подписки](/graph/api/subscription-post-subscriptions)
+- [Удаление подписки](/graph/api/subscription-delete)
+- [Обновление подписки](/graph/api/subscription-update)
 
 
-[contact]: /graph/api/resources/contact?view=graph-rest-1.0
-[event]: /graph/api/resources/event?view=graph-rest-1.0
-[message]: /graph/api/resources/message?view=graph-rest-1.0
+[contact]: /graph/api/resources/contact
+[event]: /graph/api/resources/event
+[message]: /graph/api/resources/message
 [chatMessage]: /graph/api/resources/chatmessage
