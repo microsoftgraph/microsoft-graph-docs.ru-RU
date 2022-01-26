@@ -5,12 +5,12 @@ author: subray
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a4f56ea0ca58bbcb9b0bfac8984657d105117cc1
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 22b2319e753b93d85f59f89884f7e0829ddc3acb
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119243"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225576"
 ---
 # <a name="delete-tab-from-chat"></a>Удаление вкладки из чата
 
@@ -29,7 +29,7 @@ ms.locfileid: "62119243"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | TeamsTab.Delete.Chat,*TeamsTab.ReadWrite.Chat,* TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
+|Для приложения | TeamsTab.Delete.Chat,*TeamsTab.ReadWrite.Chat,* TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -44,7 +44,7 @@ DELETE /chats/{chat-id}/tabs/{tab-id}
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

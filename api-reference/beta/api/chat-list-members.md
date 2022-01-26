@@ -5,12 +5,12 @@ author: bhartono
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 03be3f9a267e0cdd0f3bda41e3c26fd283175991
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 5f831e3762e61e915f65a49a4f0bdadb71f6062f
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62100593"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225569"
 ---
 # <a name="list-members-of-a-chat"></a>Список участников чата
 
@@ -57,7 +57,7 @@ GET /users/{user-id | user-principal-name}/chats/{chat-id}/members
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

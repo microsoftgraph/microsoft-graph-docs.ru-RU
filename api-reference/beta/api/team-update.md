@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 10603cbd1e5fc2fccefb2c4235cec5d008b04d91
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 4bae011e62b16399cb036548204d08d07cfeb836
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62126825"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62226031"
 ---
 # <a name="update-team"></a>Обновление объекта команды
 
@@ -45,7 +45,7 @@ PATCH /teams/{team-id}
 | Авторизация  | Bearer {token}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса поставляют представление JSON объекта [группы.](../resources/team.md)
 
 ## <a name="response"></a>Отклик

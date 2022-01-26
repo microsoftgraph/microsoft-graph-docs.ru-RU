@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: b348f889eb9a04d10c186e9ce7364d56e8d8edea
-ms.sourcegitcommit: fd609cb401ff862c3f5c21847bac9af967c6bf82
+ms.openlocfilehash: d8a6b1d34b21e28ec5ec52bfc83afdc81261d68a
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61651118"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225289"
 ---
 # <a name="create-historydefinitions"></a>Создание historyDefinitions
 
@@ -28,7 +28,7 @@ ms.locfileid: "61651118"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|AccessReview.ReadWrite.All|
+|Для приложения|AccessReview.ReadWrite.All|
 
 В роли каталога должен также быть подписан пользователь, который позволяет им читать обзор доступа для получения любых данных.  Дополнительные сведения см. в дополнительных сведениях о требованиях к роли и разрешению для [отзывов о доступе.](../resources/accessreviewsv2-overview.md)
 
@@ -38,6 +38,7 @@ ms.locfileid: "61651118"
   "blockType": "ignored"
 }
 -->
+
 ``` http
 POST /identityGovernance/accessReviews/historyDefinitions
 ```
@@ -46,10 +47,10 @@ POST /identityGovernance/accessReviews/historyDefinitions
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
 В теле запроса поставляют представление JSON объекта [accessReviewHistoryDefinition.](../resources/accessreviewhistorydefinition.md)
 
@@ -57,14 +58,15 @@ POST /identityGovernance/accessReviews/historyDefinitions
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName | Строка  | Имя для сбора данных истории проверки доступа. Обязательное. |
-|reviewHistoryPeriodStartDateTime  | DateTimeOffset  | Timestamp, отзывы, начиная с этой даты или после нее, будут включены в извлеченные данные истории. Обязательный.  |
-|reviewHistoryPeriodEndDateTime  | DateTimeOffset  | Timestamp, отзывы, начиная с этой даты или до этой даты, будут включены в извлеченные данные истории. Обязательный.  |
-|scopes|[accessReviewQueryScope](../resources/accessreviewqueryscope.md) collection| Используется для фильтрации отзывов, включенных в извлеченные данные истории. Извлекает отзывы, область которых совпадает с этой предоставленной областью. Обязательное. <br> Дополнительные возможности [см. в разделах Поддерживаемые запросы области для accessReviewHistoryDefinition.](#supported-scope-queries-for-accessreviewhistorydefinition) |
+|displayName | Строка  | Имя для сбора данных истории проверки доступа. Обязательный. |
+|reviewHistoryPeriodStartDateTime  | DateTimeOffset  | Timestamp. Отзывы, начиная с этой даты или после нее, будут включены в извлеченные данные истории. Только если **расписаниеSettings** не определено.  |
+|reviewHistoryPeriodEndDateTime  | DateTimeOffset  | Timestamp. Обзоры, начиная с этой даты или до этой даты, будут включены в извлеченные данные истории. Только если **расписаниеSettings** не определено.  |
+|scopes|[accessReviewQueryScope](../resources/accessreviewqueryscope.md) collection| Используется для фильтрации отзывов, включенных в извлеченные данные истории. Извлекает отзывы, область которых совпадает с этой предоставленной областью. Обязательный. <br> Дополнительные возможности [см. в разделах Поддерживаемые запросы области для accessReviewHistoryDefinition.](#supported-scope-queries-for-accessreviewhistorydefinition) |
+| scheduleSettings  |[accessReviewHistoryScheduleSettings](../resources/accessReviewHistoryScheduleSettings.md)| Параметры для серии определений истории повторного просмотра доступа. Только если не определены **reviewHistoryPeriodStartDateTime** или **reviewHistoryPeriodEndDateTime.**|
 
 ### <a name="supported-scope-queries-for-accessreviewhistorydefinition"></a>Поддерживаемые запросы области для accessReviewHistoryDefinition
 
-Свойство **областей** [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) основано на **accessReviewQueryScope**, ресурсе, который позволяет настраивать различные ресурсы в свойстве **запроса.** Эти ресурсы затем представляют область определения истории и диктуют тип данных истории отзывов, которые включаются в загружаемый CSV-файл, который создается при создания определения истории.
+Свойство **областей** [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) основано на **accessReviewQueryScope**, ресурсе, который позволяет настраивать различные ресурсы в свойстве **запроса.** Эти ресурсы затем представляют область определения истории и диктуют тип данных истории отзывов, включенных в загружаемый CSV-файл, который создается при создания [accessReviewHistoryInstances](../resources/accessreviewhistoryinstance.md) определения истории.
 
 Используйте следующий формат для свойства **запроса:**
 
@@ -96,6 +98,7 @@ POST /identityGovernance/accessReviews/historyDefinitions
   "name": "create_accessreviewhistorydefinition_from_"
 }
 -->
+
 ``` http
 POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions
 Content-Type: application/json
@@ -109,8 +112,20 @@ Content-Type: application/json
     "notReviewed",
     "notNotified"
   ],
-  "reviewHistoryPeriodStartDateTime": "2021-01-01T00:00:00Z",
-  "reviewHistoryPeriodEndDateTime": "2021-04-05T00:00:00Z",
+  "scheduleSettings": {
+      "reportRange": "P1M",
+      "recurrence": {
+          "pattern": {
+              "type": "monthly",
+              "interval": 1
+          },
+          "range": {
+              "type": "noEnd",
+              "startDate": "2018-08-03T21:02:30.667Z",
+              "count": 0
+          }
+        }
+  },
   "scopes": [
     {
       "@odata.type": "#microsoft.graph.accessReviewQueryScope",
@@ -127,6 +142,7 @@ Content-Type: application/json
   ]
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreviewhistorydefinition-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -149,9 +165,8 @@ Content-Type: application/json
 
 ---
 
-
-
 ### <a name="response"></a>Отклик
+
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -159,45 +174,56 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.accessReviewHistoryDefinition"
 }
 -->
+
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.accessReviewHistoryDefinition",
-  "id": "b2cb022f-b7e1-40f3-9854-c65a40861c38",
-  "displayName": "Last quarter's group reviews April 2021",
-  "reviewHistoryPeriodStartDateTime": "2021-01-01T00:00:00Z",
-  "reviewHistoryPeriodEndDateTime": "2021-04-05T00:00:00Z",
-  "decisions": [
-    "approve",
-    "deny",
-    "dontKnow",
-    "notReviewed",
-    "notNotified"
-  ],
-  "status": "requested",
-  "createdDateTime": "2021-04-14T00:22:48.9392594Z",
-  "fulfilledDateTime": null,
-  "downloadUri": null,
-  "createdBy": {
-      "id": "957f1027-c0ee-460d-9269-b8444459e0fe",
-      "displayName": "MOD Administrator",
-      "userPrincipalName": "admin@contoso.com"
-  },
-  "scopes": [
-    {
-      "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-      "queryType": "MicrosoftGraph",     
-      "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')",
-      "queryRoot": null
-    },  
-    {
-      "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-      "queryType": "MicrosoftGraph",     
-      "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')",
-      "queryRoot": null
-    }
-  ]
+    "@odata.type": "#microsoft.graph.accessReviewHistoryDefinition",
+    "id": "b2cb022f-b7e1-40f3-9854-c65a40861c38",
+    "displayName": "Last quarter's group reviews April 2021",
+    "scheduleSettings": {
+        "reportRange": "P1M",
+        "recurrence": {
+            "pattern": {
+                "type": "monthly",
+                "interval": 1
+            },
+            "range": {
+                "type": "noEnd",
+                "startDate": "2018-08-03T21:02:30.667Z",
+                "count": 0
+            }
+        }
+    },
+    "decisions": [
+        "approve",
+        "deny",
+        "dontKnow",
+        "notReviewed",
+        "notNotified"
+    ],
+    "status": "requested",
+    "createdDateTime": "2021-04-14T00:22:48.9392594Z",
+    "createdBy": {
+        "id": "957f1027-c0ee-460d-9269-b8444459e0fe",
+        "displayName": "MOD Administrator",
+        "userPrincipalName": "admin@contoso.com"
+    },
+    "scopes": [
+        {
+            "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "queryType": "MicrosoftGraph",
+            "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')",
+            "queryRoot": null
+        },
+        {
+            "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "queryType": "MicrosoftGraph",
+            "query": "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')",
+            "queryRoot": null
+        }
+    ]
 }
 ```

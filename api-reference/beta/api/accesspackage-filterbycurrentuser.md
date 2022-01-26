@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: markwahl-msft
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 19ec2e0451b45284c8146b35aff62f046d515754
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: cf8ad468a0b496c20c57815fe6c4ed8d9593bec7
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62107258"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225064"
 ---
 # <a name="accesspackage-filterbycurrentuser"></a>accessPackage: filterByCurrentUser
 Пространство имен: microsoft.graph
@@ -43,7 +43,7 @@ GET /identityGovernance/entitlementManagement/accessPackages/filterByCurrentUser
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|on|[accessPackageFilterByCurrentUserOptions](../resources/accesspackage-accesspackagefilterbycurrentuseroptions.md)|Список текущих пользовательских параметров, которые можно использовать для фильтрации в списке пакетов доступа. Допустимо значение `allowedRequestor` .|
+|on|accessPackageFilterByCurrentUserOptions|Список текущих пользовательских параметров, которые можно использовать для фильтрации в списке пакетов доступа. Допустимо значение `allowedRequestor` .|
 
 - `allowedRequestor` используется для получения объектов, для которых входя в нее пользователь может `accessPackage` отправлять запросы доступа. В итоговом списке содержатся все пакеты доступа, которые могут запрашиваться вызываемой по всем каталогам.
 
@@ -52,7 +52,7 @@ GET /identityGovernance/entitlementManagement/accessPackages/filterByCurrentUser
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

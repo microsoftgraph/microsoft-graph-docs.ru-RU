@@ -5,12 +5,12 @@ author: ArvindHarinder1
 ms.localizationpriority: medium
 ms.prod: applications
 doc_type: apiPageType
-ms.openlocfilehash: 0b4e145c0e5dec833909426a634f4ff3a0eb1bf5
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 27e405bdd6374975058a5fa5bbb0c673f8f0a5b6
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61010589"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225373"
 ---
 # <a name="acquireaccesstoken"></a>acquireAccessToken
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "61010589"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Directory.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Application.ReadWrite.OwnedBy, Directory.ReadWrite.All|
+|Для приложения|Application.ReadWrite.OwnedBy, Directory.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,14 +43,14 @@ POST /servicePrincipals/{servicePrincipalsId}/synchronization/acquireAccessToken
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В следующей таблице указаны параметры, которые можно использовать с этим действием.
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|учетные данные|[синхронизацияSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md) коллекция|Представляет одно секретное значение.|
+|учетные данные|[синхронизацияSecretKeyStringValuePair](../resources/synchronization-synchronizationsecretkeystringvaluepair.md) коллекция|Представляет одно секретное значение.|
 
 
 

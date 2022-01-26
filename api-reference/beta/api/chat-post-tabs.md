@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4932dd60f739102968c63286a5a707a21a2fc956
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b5a8b3787f8938bd639a7bec0ca17b5e0ff0dfd2
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62100486"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225436"
 ---
 # <a name="add-tab-to-chat"></a>Добавление вкладки в чат
 
@@ -29,7 +29,7 @@ ms.locfileid: "62100486"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | TeamsTab.Create, TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-| Приложение                            | TeamsTab.Create.Chat,*TeamsTab.ReadWrite.Chat,* TeamsTab.Create, TeamsTab.ReadWriteForChat.All, TeamsTab.ReadWrite.All |
+| Для приложения                            | TeamsTab.Create.Chat,*TeamsTab.ReadWrite.Chat,* TeamsTab.Create, TeamsTab.ReadWriteForChat.All, TeamsTab.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -44,7 +44,7 @@ POST /chats/{chat-id}/tabs
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В орган запроса включаем представление JSON [teamsTab](../resources/teamstab.md).
 

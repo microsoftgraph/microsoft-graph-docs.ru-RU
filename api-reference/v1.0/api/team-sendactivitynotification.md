@@ -5,12 +5,12 @@ author: eddie-lee-msft
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bf872f5609b7af3d0a47bdf4a88022d47438d948
-ms.sourcegitcommit: bfd1ab7e015ef04cb2ca3fb85d308ba2ce830a89
+ms.openlocfilehash: 8e197cfbceeb63a2a132025f570f9baaaec4a9f1
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62072357"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225688"
 ---
 # <a name="team-sendactivitynotification"></a>команда: sendActivityNotification
 Пространство имен: microsoft.graph
@@ -24,7 +24,7 @@ ms.locfileid: "62072357"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|TeamsActivity.Send|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|TeamsActivity.Send.Group*, TeamsActivity.Send|
+|Для приложения|TeamsActivity.Send.Group*, TeamsActivity.Send|
 
 >**Примечание:** Разрешения, отмеченные * [использованием согласия, определенного для ресурсов.](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
 
@@ -44,7 +44,7 @@ POST /teams/{teamId}/sendActivityNotification
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В следующей таблице указаны параметры, которые можно использовать с этим действием.

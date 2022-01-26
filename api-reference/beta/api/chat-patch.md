@@ -5,12 +5,12 @@ author: bhartono
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6be52649f2015f649046edac8d88bf11f2862c17
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 23260bb99b509a2039aec249feb392a757c4b942
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62123954"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225450"
 ---
 # <a name="update-chat"></a>Обновление чата
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "62123954"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Chat.ReadWrite|
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение | ChatSettings.ReadWrite.Chat*, Chat.ReadWrite.All |
+|Для приложения | ChatSettings.ReadWrite.Chat*, Chat.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -46,7 +46,7 @@ PATCH /chats/{chat-id}
 |Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В теле запроса поставляем JSON-представление объекта [чата.](../resources/chat.md)
 
 В следующей таблице показаны свойства, которые можно использовать в этом действии.

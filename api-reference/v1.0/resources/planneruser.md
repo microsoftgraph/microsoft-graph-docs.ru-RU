@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 5a2220ced0459118a6be00ee03a2b9282b6635cb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1c921b11c54075a8ff844f7ef932cc9c34172b44
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59129805"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225212"
 ---
 # <a name="planneruser-resource-type"></a>Тип ресурса plannerUser
 
@@ -29,9 +29,9 @@ ms.locfileid: "59129805"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Только для чтения. Идентификатор planenrUser|
+|id|String| Только для чтения. Идентификатор plannerUser|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |планы|Коллекция объектов [plannerPlan](plannerplan.md)| Только для чтения. Допускается значение null. Возвращает [планировщикTasks,](plannertask.md) назначенного пользователю.|

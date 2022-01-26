@@ -5,12 +5,12 @@ author: isabelleatmsft
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: apiPageType
-ms.openlocfilehash: 4c9daf4b156d4de58703a151f1d692391c071b1d
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: e88cfc3dd1e11f42feb3ede56594461a5f9d0b59
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "60987967"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62224946"
 ---
 # <a name="get-accessreviewhistorydefinition"></a>Получить accessReviewHistoryDefinition
 
@@ -18,7 +18,7 @@ ms.locfileid: "60987967"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение [объекта accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) по его идентификатору. Возвращаются все свойства объекта определения истории просмотра доступа. Если ссылка загрузки по-прежнему действительна, она возвращается вместе с определением. Если определение составляет 30 дней или старше, возвращается ошибка 404.
+Извлечение [объекта accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) по его идентификатору. Возвращаются все свойства объекта определения истории просмотра доступа. Если определение составляет 30 дней или старше, возвращается ошибка 404.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "60987967"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|AccessReview.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|AccessReview.ReadWrite.All|
+|Для приложения|AccessReview.ReadWrite.All|
 
 Для получения определения пользователь, заверяемый в записи, также должен быть создателем связанного определения истории отзывов, членом роли глобального каталога администратора или участником роли глобального каталога чтения.
 
@@ -38,16 +38,22 @@ ms.locfileid: "60987967"
   "blockType": "ignored"
 }
 -->
+
 ``` http
 GET /identityGovernance/accessReviews/historyDefinitions/{definition-id}
 ```
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
+Этот метод поддерживает параметры `$select` `$expand` запроса oData и OData для настройки ответа. В том `?$expand=instances` числе будут включены в объект ответа экземпляры, связанные с [объектом accessReviewHistoryDefinition.](../resources/accessreviewhistorydefinition.md) Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
+
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
+
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -59,14 +65,17 @@ GET /identityGovernance/accessReviews/historyDefinitions/{definition-id}
 ### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_accessreviewhistorydefinition"
 }
 -->
+
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions/b2cb022f-b7e1-40f3-9854-c65a40861c38
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accessreviewhistorydefinition-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -89,9 +98,8 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDef
 
 ---
 
-
-
 ### <a name="response"></a>Отклик
+
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
@@ -99,6 +107,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDef
   "@odata.type": "microsoft.graph.accessReviewHistoryDefinition"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -118,8 +127,6 @@ Content-Type: application/json
   ],
   "status": "done",
   "createdDateTime": "2021-04-14T00:22:48.9392594Z",
-  "fulfilledDateTime": "2021-04-14T00:22:58.5276552Z",
-  "downloadUri": "https://contoso.com/df-erm-reports/Last quarter's group reviews April 2021-22be232e-a93d-42a3-8ac5-313cfd29a0eb.csv?sv=2015-04-05&ss=b&srt=o&sp=rl&st=2021-04-15T00:22:58.5276552Z&se=2021-03-23T19:41:38.0000000Z&spr=https&sig=84rlGCIgU4ToMn%2FFLncBXq95O8a8RsFlwQY1Knl%2Fo%2FI%3D",
   "createdBy": {
     "id": "957f1027-c0ee-460d-9269-b8444459e0fe",
     "displayName": "MOD Administrator",

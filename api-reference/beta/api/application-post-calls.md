@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 64429fe78238f9b3a5dc9da8fdab5119b783c5a2
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 830a9c9bd41b885e6c2a3c19f5e0f4a981e1ff74
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62119520"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225457"
 ---
 <!-- markdownlint-disable MD001 MD022 MD024 -->
 
@@ -30,7 +30,7 @@ ms.locfileid: "62119520"
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                                                                           |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                                                                           |
-| Приложение                            | Calls.JoinGroupCalls.Chat*, Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All |
+| Для приложений                            | Calls.JoinGroupCalls.Chat*, Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All |
 
 > **Примечания:** Для вызова с носители, на которые есть приложения, помимо одного из перечисленных разрешений, требуется разрешение Calls.AccessMedia.All или Calls.AccessMedia.Chat*.
 >
@@ -52,7 +52,7 @@ POST /communications/calls
 | Авторизация | Bearer {token}. Обязательный. |
 | Content-Type  | application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
 В теле запроса поставляем JSON-представление объекта [вызова.](../resources/call.md)
 

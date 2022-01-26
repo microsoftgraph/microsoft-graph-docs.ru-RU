@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: applications
-ms.openlocfilehash: 8b84d54769f872ff3a0b2e534d9861a360cf045c
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: 8f6ffceae611f532d12f83538ac70ca668aebea2
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61031695"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62224995"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>synchronizationJob: validateCredentials
 
@@ -27,7 +27,7 @@ ms.locfileid: "61031695"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается. |
-|Для приложений                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
+|Для приложения                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,8 +45,8 @@ POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|useSavedCredentials|Логическое|Когда параметр будет проигнорирован, а ранее сохраненные учетные данные (если таковые есть) будут `true` `credentials` проверены. |
-|учетные данные|[синхронизацияSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md) коллекция|Учетные данные для проверки. Игнорируется при `useSavedCredentials` параметре `true` .|
+|useSavedCredentials|Логический|Когда параметр будет проигнорирован, а ранее сохраненные учетные данные (если таковые есть) будут `true` `credentials` проверены. |
+|учетные данные|[синхронизацияSecretKeyStringValuePair](../resources/synchronization-synchronizationsecretkeystringvaluepair.md) коллекция|Учетные данные для проверки. Игнорируется при `useSavedCredentials` параметре `true` .|
 
 ## <a name="response"></a>Отклик
 Если проверка будет успешной, этот метод возвращает `204, No Content` код ответа. Метод не возвращает данные в теле отклика.

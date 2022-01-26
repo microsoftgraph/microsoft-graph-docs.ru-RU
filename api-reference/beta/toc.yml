@@ -1182,35 +1182,36 @@ items:
                   - name: Удаление единого входа пароля в учетных данных
                     href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
           - name: Синхронизация
-            href: resources/synchronization-overview.md
             items:
-              - name: Синхронизация собственных целевых атрибутов
-                href: resources/synchronization-configure-with-custom-target-attributes.md
-              - name: Синхронизации атрибутов расширения каталога
-                href: resources/synchronization-configure-with-directory-extension-attributes.md
-              - name: Приобретение маркера доступа
-                href: api/synchronization-synchronization-acquireaccesstoken.md
-              - name: Определение каталога
-                href: resources/synchronization-directorydefinition.md
+              - name: Обзор
+                href: resources/synchronization-overview.md
+              - name: Синхронизация
+                href: resources/synchronization-synchronization.md
                 items:
-                  - name: Обнаружение
-                    href: api/directorydefinition-discover.md
+                  - name: Приобретение маркера доступа
+                    href: api/synchronization-synchronization-acquireaccesstoken.md
+                  - name: Добавление секретов
+                    href: api/synchronization-synchronization-secrets.md
+                  - name: Синхронизация собственных целевых атрибутов
+                    href: resources/synchronization-configure-with-custom-target-attributes.md
+                  - name: Синхронизации атрибутов расширения каталога
+                    href: resources/synchronization-configure-with-directory-extension-attributes.md
               - name: Задание
                 href: resources/synchronization-synchronizationjob.md
                 items:
-                  - name: Список заданий
+                  - name: Список
                     href: api/synchronization-synchronizationjob-list.md
-                  - name: Создание задания
+                  - name: Создание
                     href: api/synchronization-synchronizationjob-post.md
-                  - name: Получение задания
+                  - name: Получение
                     href: api/synchronization-synchronizationjob-get.md
-                  - name: Запуск задания
+                  - name: Начало
                     href: api/synchronization-synchronizationjob-start.md
-                  - name: Приостановка задания
+                  - name: Пауза
                     href: api/synchronization-synchronizationjob-pause.md
-                  - name: Перезапуск задания
+                  - name: Перезапуск
                     href: api/synchronization-synchronizationjob-restart.md
-                  - name: Удаление задания
+                  - name: Удалить
                     href: api/synchronization-synchronizationjob-delete.md
                   - name: Предоставление по запросу
                     href: api/synchronization-synchronizationjob-provision-on-demand.md
@@ -1229,12 +1230,17 @@ items:
                     href: api/synchronization-synchronizationschema-update.md
                   - name: Сброс схемы
                     href: api/synchronization-synchronizationschema-delete.md
+                  - name: Определение каталога
+                    href: resources/synchronization-directorydefinition.md
+                    items:
+                      - name: Обнаружение
+                        href: api/directorydefinition-discover.md
               - name: Шаблон
                 href: resources/synchronization-synchronizationtemplate.md
                 items:
-                  - name: Список шаблонов
+                  - name: Список
                     href: api/synchronization-synchronizationtemplate-list.md
-                  - name: Получение шаблона
+                  - name: Получение
                     href: api/synchronization-synchronizationtemplate-get.md
       - name: Календарь
         href: resources/calendar.md
@@ -12337,8 +12343,13 @@ items:
                         href: api/accessreviewset-list-historydefinitions.md
                       - name: Создание
                         href: api/accessreviewset-post-historydefinitions.md
-                      - name: Создание URI загрузки
-                        href: api/accessreviewhistorydefinition-generatedownloaduri.md
+                      - name: Экземпляр истории проверки доступа
+                        href: resources/accessreviewhistoryinstance.md
+                        items:
+                          - name: List
+                            href: api/accessreviewhistorydefinition-list-instances.md
+                          - name: Создание URI загрузки
+                            href: api/accessreviewhistoryinstance-generatedownloaduri.md
               - name: Обзоры доступа (неподготовленные)
                 href: resources/accessreviews-root.md
                 items:

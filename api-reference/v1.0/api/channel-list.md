@@ -5,12 +5,12 @@ author: nkramer
 doc_type: apiPageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 685decce94aef4006edf8031ea71ab78ed983564
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 0f67a28819a6c9dd700f28dd7f2730e4b72aae7f
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62101641"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62224953"
 ---
 # <a name="list-channels"></a>Перечисление каналов
 
@@ -49,7 +49,7 @@ GET /teams/{team-id}/channels
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

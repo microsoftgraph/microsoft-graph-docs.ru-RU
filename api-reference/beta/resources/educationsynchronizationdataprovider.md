@@ -1,40 +1,60 @@
 ---
-title: Тип ресурса Едукатионсинчронизатиондатапровидер
-description: 'Представляет исходную схему SIS. Это позволяет системе узнать, как сопоставить входящие данные с схемой Azure Active Directory (Azure AD). '
+title: тип ресурса educationSynchronizationDataProvider
+description: 'Представляет схему источника SIS. Это позволяет системе составить карту входящих данных с схемой Azure Active Directory Azure AD. '
 author: mmast-msft
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 952d0a7f9a40f41ad87d632386d9d567036cfec7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 869b24f5db8619caf3d60c17538f7ed4f8d932a5
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989656"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62225758"
 ---
-# <a name="educationsynchronizationdataprovider-resource-type"></a>Тип ресурса Едукатионсинчронизатиондатапровидер
+# <a name="educationsynchronizationdataprovider-resource-type"></a>тип ресурса educationSynchronizationDataProvider
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет поставщика данных, который будет использоваться в качестве источника синхронизации для объекта [едукатионсинчронизатионпрофиле].
+Представляет поставщика данных, который будет использовать в качестве источника синхронизации [для educationSynchronizationProfile.]
 
 > [!NOTE]
-> Этот сложный тип является абстрактным. Ознакомьтесь со списками определенных типов поставщиков данных.
+> Этот сложный тип абстрактный. Обратитесь к определенным типам перечисленных поставщиков данных.
 
-## <a name="providers"></a>Поставщики
+
+**Поставщики**
 
 | Поставщик данных                                                             | Описание                                                                                        |
 | :------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------- |
-| [едукатионксвдатапровидер]                                                | CSV-файлы, отправленные на [URL-адрес профиля SAS](../api/educationsynchronizationprofile-uploadurl.md) |
-| [едукатиононеростерапидатапровидер](educationonerosterapidataprovider.md) | API OneRoster 1.1                                                                                 |
-| [едукатионповерсчулдатапровидер]                                        | API PowerSchool                                                                                    |
+| [educationCsvDataProvider]                                                | CSV-файлы, загруженные на [URL-адрес SAS профиля](../api/educationsynchronizationprofile-uploadurl.md) |
+| [educationOneRosterApiDataProvider](educationonerosterapidataprovider.md) | OneRoster v1.1 API                                                                                 |
+| [educationPowerSchoolDataProvider]                                        | API PowerSchool                                                                                    |
 
-[едукатионсинчронизатионпрофиле]: educationsynchronizationprofile.md
-[едукатионксвдатапровидер]: educationCsvDataProvider.md
+## <a name="properties"></a>Свойства
+
+Нет
+
+## <a name="relationships"></a>Связи
+Отсутствуют.
+
+## <a name="json-representation"></a>Представление в формате JSON
+Ниже указано представление ресурса в формате JSON.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.educationSynchronizationDataProvider"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.educationSynchronizationDataProvider"
+}
+```
+
+
+[educationsynchronizationprofile]: educationsynchronizationprofile.md
+[educationcsvdataprovider]: educationCsvDataProvider.md
 [educationsynchronizationdataprovider]: educationSynchronizationDataProvider.md
-[едукатионповерсчулдатапровидер]: educationPowerSchoolDataProvider.md
-[едукатионксвдатапровидер]: educationCsvDataProvider.md
-
-
+[educationpowerschooldataprovider]: educationPowerSchoolDataProvider.md
+[educationcsvdataprovider]: educationCsvDataProvider.md
