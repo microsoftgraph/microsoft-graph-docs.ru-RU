@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jordanndahl
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: df1ff2cef0083ec35fa4495e17a10befc67b2544
-ms.sourcegitcommit: 709d2e3069765c2e570ac1128847c165ab233aa8
+ms.openlocfilehash: 51ccf93866153b088d9c2b9170ee38dd0217e35d
+ms.sourcegitcommit: 9adf70c5da7c5b65f7d20f571d101ee06f023bc3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62184061"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62201465"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -57,8 +57,8 @@ ms.locfileid: "62184061"
 | [Перечисление параметров](../api/directorysetting-list.md) | Коллекция [directorySetting](directorysetting.md) | Перечисление свойств всех объектов setting. |
 | [Перечисление транзитивных участников](../api/group-list-transitivemembers.md) | Коллекция [directoryObject](directoryobject.md) | Получение пользователей, групп, устройств и субъектов-служб, являющихся участниками, включая вложенных участников этой группы |
 | [Перечисление транзитивных свойств memberOf](../api/group-list-transitivememberof.md) | Коллекция [directoryObject](directoryobject.md) | Перечисление групп и административных единиц, в которых состоит группа. Эта операция является транзитивной и включает группы, в которых эта группа является вложенным элементом. |
-| [Удаление владельца](../api/group-delete-owners.md) | Нет | Удаление владельца из группы Microsoft 365 или группы безопасности (в том числе с включенной поддержкой почты) с помощью свойства навигации **owners**. |
-| [Удаление участника](../api/group-delete-members.md) | Нет | Удаление участника из группы Microsoft 365 или группы безопасности (в том числе с включенной поддержкой почты) с помощью свойства навигации **members**. Вы можете удалять пользователей или другие группы. |
+| [Удаление владельца](../api/group-delete-owners.md) | Нет | Удаление владельца из группы Microsoft 365 или группы безопасности с помощью свойства навигации **owners**. |
+| [Удаление участника](../api/group-delete-members.md) | Нет | Удаление участника из группы Microsoft 365 или группы безопасности с помощью свойства навигации **members**. |
 | [Обновление параметра](../api/directorysetting-update.md) | [directorySetting](directorysetting.md) | Обновление объекта setting. |
 | [assignLicense](../api/group-assignlicense.md) | [group](group.md) | Добавление или удаление подписок группы. Можно также включать и отключать отдельные планы, связанные с подпиской. |
 | [evaluateDynamicMembership](../api/group-evaluatedynamicmembership.md) | [evaluateDynamicMembershipResult](evaluatedynamicmembershipresult.md) | Определите, может ли пользователь или устройство являться членом динамической группы. |
@@ -198,10 +198,10 @@ ms.locfileid: "62184061"
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для группы. Только для чтения. Допускается значение null.|
 |groupLifecyclePolicies|Коллекция [groupLifecyclePolicy](grouplifecyclepolicy.md)|Коллекция политик жизненного цикла для этой группы. Только для чтения. Допускается значение NULL.|
 |memberOf|Коллекция [directoryObject](directoryobject.md)|Группы и административные единицы, в которых состоит группа. Методы HTTP: GET (поддерживается для всех групп). Только для чтения. Допускается значение NULL. Поддерживает `$expand`.|
-|members|Коллекция [directoryObject](directoryobject.md)| Пользователи, контакты и группы, состоящие в этой группе. Методы HTTP: GET (поддерживается для всех групп), POST (поддерживается для групп безопасности, в том числе с включенной поддержкой почты), DELETE (поддерживается только для групп безопасности). Только для чтения. Допускается значение NULL.<br/>Поддерживает `$expand`, включая вложенные `$select`. Например, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName)`.|
+|members|Коллекция [directoryObject](directoryobject.md)| Участники этой группы, которые могут быть пользователями, устройствами, другими группами или субъектами-службами. Поддерживает операции [Перечисление участников](../api/group-list-members.md), [Добавление участника](../api/group-post-members.md) и [Удаление участника](../api/group-delete-members.md). Допускается значение null. <br/>Поддерживает `$expand`, включая вложенные `$select`. Например, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName)`.|
 |membersWithLicenseErrors|Коллекция объектов [user](user.md)|Список участников группы с ошибками лицензий в этом групповом назначении лицензий. Только для чтения. |
 |onenote|[onenote](onenote.md)| Только для чтения.|
-|owners|Коллекция [directoryObject](directoryobject.md)|Владельцы группы. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект. Допускается значение null. Если это свойство не указано при создании группы Microsoft 365, вызывающий пользователь автоматически назначается владельцем группы. <br/>Поддерживает `$expand`, включая вложенные `$select`. Например, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName)`.|
+|owners|Коллекция [directoryObject](directoryobject.md)|Владельцы группы, которые могут быть пользователями или субъектами-службами. Допускается значение null. Если это свойство не указано при создании группы Microsoft 365, вызывающий пользователь автоматически назначается владельцем группы. <br/>Поддерживает `$expand`, включая вложенные `$select`. Например, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName)`.|
 |permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)|Разрешения, предоставленные группе для определенного приложения. Поддерживает `$expand`.|
 |photo|[profilePhoto](profilephoto.md)| Фотография профиля группы. |
 |photos|Коллекция объектов [profilePhoto](profilephoto.md)| Фотографии профиля, принадлежащие группе. Только для чтения. Допускается значение null.|
