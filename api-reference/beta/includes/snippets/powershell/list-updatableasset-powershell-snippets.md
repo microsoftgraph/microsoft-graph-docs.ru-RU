@@ -1,16 +1,16 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: df51c2a61a310dfeae45a6745aa3a3f176ca4d24
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: ca71e5b52e5ac6efadfc6f5d3b88eb38ca0a5a85
+ms.sourcegitcommit: 871db8b3f68489d24e2aeafe694725579ee44c47
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62111599"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62227591"
 ---
 ```powershell
 
 Import-Module Microsoft.Graph.WindowsUpdates
 
-Get-MgWindowsUpdatesDeploymentAudienceMember -DeploymentId $deploymentId
+Get-MgWindowsUpdatesDeploymentAudienceExclusion -DeploymentId $deploymentId
 
 ```
