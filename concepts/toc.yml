@@ -273,7 +273,7 @@ items:
             href: azuread-identity-access-management-concept-overview.md
           - name: Управление каталогом
             items:
-              - name: Назначение настраиваемых атрибутов безопасности (предварительная версия)
+              - name: Управление настраиваемыми атрибутами безопасности (предварительная версия)
                 href: custom-security-attributes-examples.md
               - name: Назначение ролей с помощью PIM для Azure AD
                 href: tutorial-assign-azureadroles.md

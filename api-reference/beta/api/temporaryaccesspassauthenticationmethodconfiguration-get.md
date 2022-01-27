@@ -5,12 +5,12 @@ author: inbarckms
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 4fd5d8274c203ba6be5f063aa41cc295f998628b
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 1058b313eb447d8abe61d5bc25a06b688c58e887
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61225898"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239241"
 ---
 # <a name="get-temporaryaccesspassauthenticationmethodconfiguration"></a>Получить temporaryAccessPassAuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
@@ -46,7 +46,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/Tem
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -69,11 +69,11 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodConfigurations/$entity",
     "@odata.type": "#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration",
     "id": "TemporaryAccessPass",
-    "state": "enabled",
+    "state": "disabled",
     "defaultLifetimeInMinutes": 60,
-    "defaultLength": 12,
+    "defaultLength": 8,
     "minimumLifetimeInMinutes": 60,
-    "maximumLifetimeInMinutes": 1440,
+    "maximumLifetimeInMinutes": 480,
     "isUsableOnce": false,
     "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('TemporaryAccessPass')/microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration/includeTargets",
     "includeTargets": [

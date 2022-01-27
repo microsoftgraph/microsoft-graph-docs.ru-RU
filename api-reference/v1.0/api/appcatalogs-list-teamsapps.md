@@ -5,12 +5,12 @@ author: nkramer
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 185f162caa685eea4403bb237a9f2c92b9b9fb2d
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b64b01907e98ab7d52a18993c78ae274acf545ca
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62101941"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239360"
 ---
 # <a name="list-teamsapp"></a>List teamsApp
 
@@ -30,7 +30,7 @@ ms.locfileid: "62101941"
 |:---------------------------------------|:------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | AppCatalog.Submit, AppCatalog.Read.All, AppCatalog.ReadWrite.All,**Directory.Read.All, Directory.ReadWrite.All** |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Приложение                            | AppCatalog.Read.All, AppCatalog.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные **, не поддерживаются и не должны использоваться.
 
@@ -56,7 +56,7 @@ GET /appCatalogs/teamsApps
 |:--------------|:--------------------------|
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

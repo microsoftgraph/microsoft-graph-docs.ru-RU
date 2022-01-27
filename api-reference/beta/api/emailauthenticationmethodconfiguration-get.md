@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2afb695cf8368484ccbe65d0bcc9d57b016d5786
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: 4d691753000e50c397b2dfadbb937c26eb356827
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61223299"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239133"
 ---
 # <a name="get-emailauthenticationmethodconfiguration"></a>Получить emailAuthenticationMethodConfiguration
 
@@ -51,7 +51,7 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -109,19 +109,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-   "value":{
-      "@odata.type":"#microsoft.graph.emailAuthenticationMethodConfiguration",
-      "id":"Email",
-      "state":"enabled",
-      "allowExternalIdToUseEmailOtp":"enabled",
-      "includeTargets":[
-         {
-            "targetType":"group",
-            "id":"all_users",
-            "isRegistrationRequired":false
-         }
-      ]
-   }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodConfigurations/$entity",
+    "@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",
+    "id": "Email",
+    "state": "enabled",
+    "allowExternalIdToUseEmailOtp": "default",
+    "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Email')/microsoft.graph.emailAuthenticationMethodConfiguration/includeTargets",
+    "includeTargets": []
 }
 ```
 

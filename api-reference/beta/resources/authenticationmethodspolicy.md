@@ -2,15 +2,15 @@
 title: тип ресурса authenticationMethodsPolicy
 description: Определяет методы проверки подлинности и пользователей, которые могут использовать их для регистрации и выполнения многофакторной проверки подлинности (MFA).
 author: mmcla
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: fdf86929b4098d9fb62f1426883b55d95c669f32
-ms.sourcegitcommit: 4fa6fcc058c7f8d8cad58c0b82db23d6c7da37d2
+ms.openlocfilehash: 470e9cb94fc6145fde98aaa6e35a3b99aef66f8e
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52682936"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239367"
 ---
 # <a name="authenticationmethodspolicy-resource-type"></a>тип ресурса authenticationMethodsPolicy
 
@@ -29,8 +29,8 @@ ms.locfileid: "52682936"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|description|String|Описание политики.|
-|displayName|String|Имя политики.|
+|description|Строка|Описание политики.|
+|displayName|Строка|Имя политики.|
 |id|String|Идентификатор политики. Наследуется от [сущности](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего обновления политики.|
 |policyVersion|String|Версия используемой политики.|
@@ -39,7 +39,7 @@ ms.locfileid: "52682936"
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|authenticationMethodConfigurations|[коллекция authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md)|Представляет параметры для каждого метода проверки подлинности.|
+|authenticationMethodConfigurations|[коллекция authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md)|Представляет параметры для каждого метода проверки подлинности. Автоматически расширяется в `GET /policies/authenticationMethodsPolicy`.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

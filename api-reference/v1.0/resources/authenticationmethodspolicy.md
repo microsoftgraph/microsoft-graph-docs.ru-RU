@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: resourcePageType
-ms.openlocfilehash: 036f4dce3d3192005a9b99124965830a5b38194a
-ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.openlocfilehash: cea7a72bce9a87d199b71d7e5c91d8f91f9c8e51
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "61015806"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239101"
 ---
 # <a name="authenticationmethodspolicy-resource-type"></a>тип ресурса authenticationMethodsPolicy
 
@@ -29,15 +29,15 @@ ms.locfileid: "61015806"
 |:---|:---|:---|
 |description|Строка|Описание политики. Только для чтения.|
 |displayName|Строка|Имя политики. Только для чтения.|
-|id|Строка|Идентификатор политики. Наследуется от [сущности](../resources/entity.md).|
+|id|String|Идентификатор политики. Наследуется от [сущности](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего обновления политики. Только для чтения.|
-|policyVersion|String|Версия используемой политики. Только для чтения.|
+|policyVersion|Строка|Версия используемой политики. Только для чтения.|
 |registrationEnforcement|[registrationEnforcement](../resources/registrationenforcement.md)|Принудительное выполнение регистрации во время регистрации. Это свойство можно использовать для напоминания пользователям о том, как настроить целевые методы проверки подлинности.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|authenticationMethodConfigurations|[коллекция authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md)|Представляет параметры для каждого метода проверки подлинности.|
+|authenticationMethodConfigurations|[коллекция authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md)|Представляет параметры для каждого метода проверки подлинности. Автоматически расширяется в `GET /policies/authenticationMethodsPolicy`.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

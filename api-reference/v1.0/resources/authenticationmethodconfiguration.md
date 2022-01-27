@@ -5,17 +5,22 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 27f0c8e809b88ad77a12a0f5e28acb9eeed953c9
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b7dee4297fb00dd54e9f9b8edf19da00c866a0f4
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59126991"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62238975"
 ---
 # <a name="authenticationmethodconfiguration-resource-type"></a>тип ресурса authenticationMethodConfiguration
 Пространство имен: microsoft.graph
 
-Представляет политику метода проверки подлинности.
+Это абстрактный тип, который представляет параметры для каждого метода проверки подлинности. Он имеет конфигурацию включения или отключения определенного метода проверки подлинности для клиента, а также возможности регистрации и использования этого метода пользователями и группами.
+
+Следующие методы проверки подлинности вытекают из типа ресурса **authenticationMethodConfiguration:**
++ [emailAuthenticationMethodConfiguration](emailauthenticationmethodconfiguration.md)
++ [fido2AuthenticationMethodConfiguration](fido2authenticationmethodconfiguration.md)
++ [MicrosoftAuthenticatorAuthenticationMethodConfiguration](microsoftauthenticatorauthenticationmethodconfiguration.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -23,7 +28,7 @@ ms.locfileid: "59126991"
 |id|String|Имя политики.|
 |state|authenticationMethodState|Состояние политики. Возможные значения: `enabled`, `disabled`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

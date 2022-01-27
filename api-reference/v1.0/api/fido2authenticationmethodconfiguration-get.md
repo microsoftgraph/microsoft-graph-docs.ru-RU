@@ -5,12 +5,12 @@ author: mmcla
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 73129245233a6d9d9e69e04000cc062b3a814ba9
-ms.sourcegitcommit: e497ed9bb56400bdd2bb53d52ddf057d9966220b
+ms.openlocfilehash: d579c3b868640d4f8919c156baffb283fce7223e
+ms.sourcegitcommit: de9df4bf6313b49afba74b6e9ef819907669c662
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61226178"
+ms.lasthandoff: 01/27/2022
+ms.locfileid: "62239339"
 ---
 # <a name="get-fido2authenticationmethodconfiguration"></a>Get fido2AuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
@@ -46,7 +46,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/fid
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -103,28 +103,25 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-   "value":{
-      "@odata.type":"#microsoft.graph.fido2AuthenticationMethodConfiguration",
-      "id":"Fido2",
-      "state":"enabled",
-      "isSelfServiceRegistrationAllowed":true,
-      "isAttestationEnforced":true,
-      "keyRestrictions":{
-         "isEnforced":false,
-         "enforcementType":"block",
-         "aaGuids":[
-            
-         ]
-      },
-      "includeTargets":[
-         {
-            "targetType":"group",
-            "id":"all_users",
-            "isRegistrationRequired":false,
-            "useForSignIn":true
-         }
-      ]
-   }
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#authenticationMethodConfigurations/$entity",
+    "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
+    "id": "Fido2",
+    "state": "disabled",
+    "isSelfServiceRegistrationAllowed": true,
+    "isAttestationEnforced": true,
+    "keyRestrictions": {
+        "isEnforced": false,
+        "enforcementType": "block",
+        "aaGuids": []
+    },
+    "includeTargets@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Fido2')/microsoft.graph.fido2AuthenticationMethodConfiguration/includeTargets",
+    "includeTargets": [
+        {
+            "targetType": "group",
+            "id": "all_users",
+            "isRegistrationRequired": false
+        }
+    ]
 }
 ```
 

@@ -1561,9 +1561,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Получение
                     href: api/callrecords-callrecord-get.md
-              - name: Сеанс
+              - name: Session
                 items:
-                  - name: Сеанс
+                  - name: Session
                     href: resources/callrecords-session.md
                   - name: List
                     href: api/callrecords-session-list.md
@@ -9432,7 +9432,7 @@ items:
                         href: api/intune-rbac-deviceandappmanagementroledefinition-delete.md
                       - name: Обновление
                         href: api/intune-rbac-deviceandappmanagementroledefinition-update.md
-                  - name: Удостоверение
+                  - name: Identity
                     href: resources/intune-rbac-identity.md
                   - name: Набор удостоверений
                     href: resources/intune-rbac-identityset.md
@@ -12221,21 +12221,21 @@ items:
                         href: api/identityuserflowattribute-delete.md
                   - name: Назначение атрибута потока пользователей
                     items:
-                      - name: Назначение атрибута потока пользователей
+                      - name: Пользователь
                         href: resources/identityuserflowattributeassignment.md
-                      - name: Назначение атрибута потока пользователей
+                      - name: Получение
                         href: api/identityuserflowattributeassignment-get.md
-                      - name: Обновление назначения атрибута потока пользователей
+                      - name: Обновление
                         href: api/identityuserflowattributeassignment-update.md
-                      - name: Удаление назначения атрибута потока пользователей
+                      - name: Delete
                         href: api/identityuserflowattributeassignment-delete.md
                   - name: Конфигурация языка потока пользователей
                     items:
                       - name: Конфигурация языка потока пользователей
                         href: resources/userflowlanguageconfiguration.md
-                      - name: Get userFlowLanguageConfiguration
+                      - name: Настройка языка потока пользователей
                         href: api/userflowlanguageconfiguration-get.md
-                      - name: Удаление userFlowLanguageConfiguration
+                      - name: Удаление конфигурации языка потока пользователей
                         href: api/userflowlanguageconfiguration-delete.md
                       - name: Список defaultPages
                         href: api/userflowlanguageconfiguration-list-defaultpages.md
@@ -12243,11 +12243,11 @@ items:
                         href: api/userflowlanguageconfiguration-list-overridespages.md
                       - name: Языковая страница потока пользователей
                         href: resources/userflowlanguagepage.md
-                      - name: Get userFlowLanguagePage
+                      - name: Получить страницу языка потока пользователей
                         href: api/userflowlanguagepage-get.md
-                      - name: Обновление userFlowLanguagePage
+                      - name: Обновление языковой страницы потока пользователей
                         href: api/userflowlanguagepage-put.md
-                      - name: Удаление userFlowLanguagePage
+                      - name: Удаление языковой страницы потока пользователей
                         href: api/userflowlanguagepage-delete.md
                   - name: Соединители API
                     items:
