@@ -5,12 +5,12 @@ author: akjo
 doc_type: resourcePageType
 ms.localizationpriority: high
 ms.prod: microsoft-teams
-ms.openlocfilehash: 012286f43a6ab31f29062317077042ce43b587e9
-ms.sourcegitcommit: c333953a9188b4cd4a9ab94cbe68871e8f3563e5
+ms.openlocfilehash: 63199426ae498a4fa79a6f419d49b0eaa257a181
+ms.sourcegitcommit: e4796212a2e8bbec61b6da8336f776c0305c49df
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58695905"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62262101"
 ---
 # <a name="teamwork-resource-type"></a>Тип ресурса teamwork
 
@@ -30,7 +30,8 @@ ms.locfileid: "58695905"
 
 | Связь | Тип | Описание |
 |:---------------|:--------|:----------|
-|installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|Приложения, установленные в личной области пользователя.|
+|devices|коллекция [teamworkDevice](../resources/teamworkdevice.md)|Устройства Teams, подготовленные для клиента.|
+|workforceIntegrations|коллекция [workforceIntegration](../resources/workforceintegration.md)| Интеграция рабочих ресурсов со сменами.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -65,5 +66,3 @@ ms.locfileid: "58695905"
 ## <a name="see-also"></a>См. также
 
 - [Ресурс userTeamwork](userteamwork.md)
-
-
